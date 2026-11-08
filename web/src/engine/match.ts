@@ -21,7 +21,9 @@ export interface Respuesta {
 
 export interface ResultadoAfinidad {
   partido: string;
-  afinidad: number | null; // 0–1; null si no hay ítems comunes suficientes
+  afinidad: number | null; // 0–1; null si hay menos de MIN_COMUNES ítems comunes
+  /** true si la cobertura permite compararlo con el resto (≥ MIN_COBERTURA). */
+  comparable: boolean;
   comunes: number; // ítems con respuesta y posición
   respondidas: number; // ítems respondidos por el usuario
   cobertura: number; // comunes / respondidas
@@ -56,17 +58,19 @@ export function afinidad(
     }
     const comunes = porItem.length;
     const cobertura = respondidas.length ? comunes / respondidas.length : 0;
-    const valido = comunes >= MIN_COMUNES && cobertura >= MIN_COBERTURA;
+    const calculable = comunes >= MIN_COMUNES && den > 0;
     out.push({
       partido,
-      afinidad: valido && den > 0 ? 1 - num / den : null,
+      afinidad: calculable ? 1 - num / den : null,
+      comparable: calculable && cobertura >= MIN_COBERTURA,
       comunes,
       respondidas: respondidas.length,
       cobertura,
       porItem,
     });
   }
-  // Orden: afinidad desc; los no evaluables al final.
-  out.sort((a, b) => (b.afinidad ?? -1) - (a.afinidad ?? -1) || b.cobertura - a.cobertura || a.partido.localeCompare(b.partido));
+  // Orden: primero los comparables por afinidad; después los de pocos datos; al final los no calculables.
+  const grupo = (r: ResultadoAfinidad) => (r.comparable ? 0 : r.afinidad !== null ? 1 : 2);
+  out.sort((a, b) => grupo(a) - grupo(b) || (b.afinidad ?? -1) - (a.afinidad ?? -1) || b.cobertura - a.cobertura || a.partido.localeCompare(b.partido));
   return out;
 }

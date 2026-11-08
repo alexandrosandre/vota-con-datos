@@ -1,0 +1,46 @@
+{
+ "grupo": "g1",
+ "verificador": "Claude (Anthropic) — verificación independiente",
+ "fecha": "2026-11-08",
+ "aprobado": true,
+ "revisadas": 19,
+ "cambios": [
+  {
+   "partido": "psoe",
+   "pregunta": "q26",
+   "antes": -1,
+   "despues": null,
+   "motivo": "La fuente (Infobae/Europa Press, 8-nov, mitin en Bilbao) solo recoge el rechazo de Sánchez al 5 % del PIB que pidió Trump; no menciona la OTAN, el 3,5 % ni 2035. El 5 % aliado incluye el 3,5 % de defensa básica, pero rechazar la cifra total no implica de forma inequívoca rechazar el 3,5 %: medida relacionada pero distinta, y ante la duda null. No se halló otra declaración de campaña (desde el 6-oct) sobre el 3,5 %."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q05",
+   "antes": 2,
+   "despues": 2,
+   "motivo": "Solo fuente: el artículo citado (elDiario.es, 8-oct) dice que Figaredo lo repitió «esta semana», lo que no garantiza fecha ≥ 6-oct (la semana empezó el 5-oct). Se sustituye por 101TV Sevilla (6-nov), donde Figaredo propone expresamente los tipos del 15 % y el 25 %. Valor sin cambios."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q07",
+   "antes": 2,
+   "despues": 2,
+   "motivo": "Solo fuente: la fuente principal era la síntesis periodística de El Debate (24-oct), que atribuye la medida a un programa económico anterior sin fecha, el mismo tipo de fuente que las notas del codificador descartan para otras celdas. Se sustituye por la declaración directa y fechada de Figaredo en 101TV Sevilla (6-nov, no de precampaña como decía la nota). Valor sin cambios."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q03",
+   "antes": 2,
+   "despues": 2,
+   "motivo": "Solo nota: la frase citada es de Maribel Cerezo, candidata de Vox por Baleares, no de Abascal (Press Digital/Europa Press, 24-oct). Es candidata del partido en estas elecciones, así que la fuente vale. Valor sin cambios."
+  }
+ ],
+ "dudas": [
+  "PP q01 (-1 mantenido): la oposición a los topes de alquiler no es expresa; se deduce de que el PP propone derogar la Ley de Vivienda de 2023, única base legal de los límites en zonas tensionadas, y ofrece como alternativa deducciones fiscales voluntarias. Si el programa del 10-nov incluye una ley de vivienda sustitutiva, hay que recodificar.",
+  "PP q18 (-1 mantenido): «cada comunidad responderá de su deuda» va contra la condonación, pero la «reestructuración» propuesta no se detalla; si el programa la concreta como quita, la celda debe pasar a null o cambiar.",
+  "PP q25 (+2 mantenido): el compromiso se refiere a «políticos» condenados por corrupción, no a cualquier persona condenada por esos delitos. Se considera el caso central de la afirmación.",
+  "PSOE q21 (+2 mantenido): el compromiso de reformar la Constitución está en estilo indirecto de EFE («aseguró que… blindará en la Constitución el derecho al aborto»), no entrecomillado.",
+  "Vox q27 (+2 mantenido): exigencia al Gobierno actual de «militarizar» la frontera; la fuente no nombra a las Fuerzas Armadas.",
+  "Vox q05 (+2 mantenido): Figaredo admite que la aplicación depende de acuerdos y lo presentó como planteamiento «de máximo»; se mantiene +2 porque la propuesta es expresa y central.",
+  "Todo el grupo debe recodificarse cuando se publiquen los programas (el del PP se anuncia para el 10-nov). UPN y PSC quedan sin ninguna posición conocida."
+ ]
+}

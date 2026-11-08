@@ -18,6 +18,13 @@ ROOT = Path(__file__).resolve().parent.parent
 D = ROOT / "data"
 OUT = ROOT / "web" / "public" / "data"
 ALIAS_PROMESAS = {"coalicion_canaria": "cc"}
+# Nombre corto para mostrar (las siglas exactas del BOE se conservan en "siglas_boe").
+NOMBRE_CORTO = {
+    "pp": "PP", "upn": "UPN-PP", "psoe": "PSOE", "psc": "PSC", "vox": "Vox", "frente_amplio": "Frente Amplio",
+    "podemos": "Podemos", "compromis": "Compromís", "upc": "UPC", "ara_mes_fa": "Ara Més-Front Ampli", "erc": "ERC",
+    "junts": "Junts", "eh_bildu": "EH Bildu", "pnv": "PNV", "bng": "BNG", "cc": "CC", "adelante_andalucia": "Adelante Andalucía",
+    "salf": "SALF",
+}
 
 
 def load(p):
@@ -42,7 +49,8 @@ def main():
         partidos.append({
             "id": p["id"],
             "nombre": p["nombre"],
-            "siglas": p["siglas"],
+            "siglas": NOMBRE_CORTO.get(p["id"], p["siglas"]),
+            "siglas_boe": p["siglas"],
             "ambito": p["ambito"],
             "comunidades": p.get("comunidades") or [],
             "candidato": p.get("candidato"),
@@ -77,6 +85,7 @@ def main():
     n_camp = sum(1 for qs in fase1.get("posiciones", {}).values() for x in qs.values() if x.get("fuente") == "campaña")
     fase1["meta"] = {
         "actualizado": date.today().isoformat(),
+        "provisional": len(publicados) < len(partidos) / 2,
         "nota": (f"Posiciones documentadas: {n_prog} desde programas oficiales y {n_camp} desde compromisos de campaña. "
                  f"Programas publicados: {len(publicados)} de {len(partidos)}; se recodifica cada vez que se publica uno."),
     }

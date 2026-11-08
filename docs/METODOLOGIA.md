@@ -50,7 +50,7 @@ posteriores a la convocatoria (cita, medio, fecha, URL), codificadas según
 `docs/prompts/2_codificacion_posiciones.md` y verificadas una a una por un segundo agente
 independiente (`data/fase1/verificacion_g*.json`); `pipeline/build_fase1.py` rechaza citas de
 programa no literales y fuentes de campaña sin URL o anteriores al 6-oct; afinidad = distancia de Manhattan
-normalizada; cobertura mínima 50 % (aviso < 70 %); empate técnico < 5 puntos. Se recodifica cada vez
+normalizada; partidos comparables si cobertura ≥ 50 %; con 5+ temas comunes pero menos cobertura, grupo aparte "con pocos datos"; empate técnico < 5 puntos. Se recodifica cada vez
 que se publica un programa.
 
 ## Paso 2 · Contrasta (análisis de programas)

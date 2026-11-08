@@ -62,8 +62,16 @@ export function EstadoProgramas() {
 }
 
 function Intro({ n, onStart, hechas }: { n: number; onStart: () => void; hechas: number }) {
+  const meta = fase1.value?.meta;
   return (
     <div class="card stack">
+      {meta?.provisional && (
+        <div class="note">
+          <strong>Versión provisional.</strong> La mayoría de partidos aún no ha publicado su programa, así que de muchos solo conocemos su
+          posición en algunos temas (por sus compromisos de campaña). Lo indicamos en los resultados y lo actualizamos cada vez que se publica
+          un programa. {meta.nota}
+        </div>
+      )}
       <p style={{ fontSize: '1.05rem' }}>
         Vas a ver <strong>{n} afirmaciones</strong>. Cada una sale de una propuesta real de esta campaña, de un programa oficial o de un
         compromiso público de un cabeza de lista. No te decimos de quién es hasta el final, para que juzgues la idea y no las siglas.
@@ -207,7 +215,6 @@ function Resultados() {
   const respondidas = Object.values(e.respuestas).filter((r) => r.valor !== null).length;
   const [abierto, setAbierto] = useState<string | null>(null);
   const evaluables = res.filter((r) => r.afinidad !== null);
-  const top = evaluables[0]?.afinidad ?? 0;
   const sinPosiciones = (partidos.value ?? []).filter((p) => !d.posiciones[p.id]);
 
   const guardar = () => actualizar({ ranking: evaluables.map((r) => r.partido), rankingOrigen: 'fase1', partido: evaluables[0]?.partido ?? null });
@@ -226,39 +233,56 @@ function Resultados() {
         que respondiste. No es una recomendación de voto: es un espejo. Diferencias de menos de {Math.round(UMBRAL_EMPATE * 100)} puntos son un
         empate técnico. <span class="muted">{d.meta.nota}</span>
       </div>
-      <div class="card">
-        {res.map((r, idx) => {
-          const p = partido(r.partido);
-          const empate = r.afinidad !== null && idx > 0 && top - r.afinidad < UMBRAL_EMPATE;
-          return (
-            <div key={r.partido}>
-              <div class="rank-item">
-                <div class="rank-pos">{r.afinidad !== null ? idx + 1 : '–'}</div>
-                <div>
-                  <div class="row" style={{ gap: 6 }}>
-                    <strong>{p?.siglas ?? r.partido}</strong>
-                    {empate && <span class="pill">empate técnico con el primero</span>}
-                    {r.afinidad !== null && r.cobertura < AVISO_COBERTURA && (
-                      <span class="pill" title="Sin posición conocida en muchas de tus respuestas">
-                        posición conocida en {fmt.pct(r.cobertura)} de tus respuestas
-                      </span>
-                    )}
-                    {p?.ambito === 'autonómico' && <span class="pill">solo en {p.comunidades?.join(', ')}</span>}
+      {[
+        { t: 'Comparables', d: 'Conocemos su posición en al menos la mitad de tus respuestas.', filas: res.filter((r) => r.comparable) },
+        {
+          t: 'Con pocos datos',
+          d: 'Conocemos su posición en menos de la mitad de tus respuestas (normalmente porque aún no han publicado programa). Su porcentaje se basa en pocos temas: tómalo como orientativo.',
+          filas: res.filter((r) => !r.comparable && r.afinidad !== null),
+        },
+        { t: 'Sin datos suficientes', d: 'Menos de 5 temas en común con tus respuestas.', filas: res.filter((r) => r.afinidad === null) },
+      ]
+        .filter((g) => g.filas.length > 0)
+        .map((g) => (
+          <section class="card" key={g.t}>
+            <h3 style={{ marginBottom: 2 }}>{g.t}</h3>
+            <p class="muted" style={{ fontSize: '0.88rem' }}>{g.d}</p>
+            {g.filas.map((r, idx) => {
+              const p = partido(r.partido);
+              const topG = g.filas[0].afinidad ?? 0;
+              const empate = r.afinidad !== null && idx > 0 && topG - r.afinidad < UMBRAL_EMPATE;
+              return (
+                <div key={r.partido}>
+                  <div class="rank-item">
+                    <div class="rank-pos">{r.afinidad !== null ? idx + 1 : '–'}</div>
+                    <div>
+                      <div class="row" style={{ gap: 6 }}>
+                        <strong>{p?.siglas ?? r.partido}</strong>
+                        {empate && <span class="pill">empate técnico con el primero</span>}
+                        {r.afinidad !== null && r.cobertura < AVISO_COBERTURA && (
+                          <span class="pill">basado en {r.comunes} de tus {r.respondidas} respuestas</span>
+                        )}
+                        {p?.ambito === 'autonómico' && <span class="pill">solo en {p.comunidades?.join(', ')}</span>}
+                      </div>
+                      {r.afinidad !== null && (
+                        <div class="bar" style={{ marginTop: 8, opacity: r.comparable ? 1 : 0.55 }}>
+                          <i style={{ width: `${r.afinidad * 100}%` }} />
+                        </div>
+                      )}
+                      {r.comunes > 0 && (
+                        <button class="btn ghost" style={{ padding: '6px 0', fontSize: '0.88rem' }} onClick={() => setAbierto(abierto === r.partido ? null : r.partido)}>
+                          {abierto === r.partido ? 'Ocultar detalle' : `Ver en qué coincidís (${r.comunes} ${r.comunes === 1 ? 'tema' : 'temas'})`}
+                        </button>
+                      )}
+                    </div>
+                    <div class="rank-val">{r.afinidad !== null ? fmt.pct(r.afinidad) : <small>{r.comunes} {r.comunes === 1 ? 'tema' : 'temas'}</small>}</div>
                   </div>
-                  <div class="bar" style={{ marginTop: 8 }}>
-                    <i style={{ width: `${(r.afinidad ?? 0) * 100}%` }} />
-                  </div>
-                  <button class="btn ghost" style={{ padding: '6px 0', fontSize: '0.88rem' }} onClick={() => setAbierto(abierto === r.partido ? null : r.partido)}>
-                    {abierto === r.partido ? 'Ocultar detalle' : `Ver en qué coincidís (${r.comunes} temas comparables)`}
-                  </button>
+                  {abierto === r.partido && <Detalle partidoId={r.partido} />}
                 </div>
-                <div class="rank-val">{r.afinidad !== null ? fmt.pct(r.afinidad) : <small>datos insuficientes</small>}</div>
-              </div>
-              {abierto === r.partido && <Detalle partidoId={r.partido} />}
-            </div>
-          );
-        })}
-      </div>
+              );
+            })}
+          </section>
+        ))}
       {sinPosiciones.length > 0 && (
         <div class="note">Sin posiciones documentadas todavía (no puntúan): {sinPosiciones.map((p) => p.siglas).join(', ')}.</div>
       )}

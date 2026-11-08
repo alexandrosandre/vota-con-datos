@@ -1,0 +1,46 @@
+{
+ "grupo": "g3",
+ "verificador": "Claude (Anthropic) — verificación independiente",
+ "fecha": "2026-11-08",
+ "aprobado": true,
+ "revisadas": 33,
+ "alcance": "Revisadas las 33 celdas con valor del codificador (ERC 13, Junts 1, BNG 18, CC 1): para cada una se releyó la página del programa (trozos separados por \\f) o la URL de campaña y se decidió el valor antes de compararlo. Búsqueda de posiciones omitidas en 13 celdas nulas de ERC (q01, q02, q08, q11, q14, q15, q19, q21, q23, q25, q26, q27, q30) y 11 de BNG (q03, q07, q12, q13, q14, q20, q21, q22, q23, q25, q27): ninguna posición literal y pertinente omitida. Junts, EH Bildu y PNV sin programa publicado a 2026-11-08; no se buscaron nuevas posiciones de campaña para ellos.",
+ "cambios": [
+  {
+   "partido": "bng",
+   "pregunta": "q02",
+   "antes": 2,
+   "despues": 1,
+   "motivo": "La expropiación forzosa que propone (p. 12) se limita a viviendas de promoción pública compradas por fondos, y la de p. 14 es «temporal» y para viviendas vacías 5+ años, aplicada por las CCAA. Apoya la idea con un alcance más estrecho que la afirmación: ±2 no procede."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q18",
+   "antes": 1,
+   "despues": null,
+   "motivo": "La cita (p. 5, introducción) presenta como logro pasado la condonación de 4.000 M€ de deuda gallega; el programa no propone continuar ni ampliar condonaciones. Un logro pasado no es una propuesta para la legislatura. Lo de p. 40 es la deuda del Estado con Galicia (relación inversa)."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q30",
+   "antes": 2,
+   "despues": 1,
+   "motivo": "«Regular legalmente os prezos dos produtos básicos de alimentación» (p. 21) busca precios accesibles y también retribuciones justas a productores; no menciona expresamente un precio máximo. A favor con matices, no expreso."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q17",
+   "antes": 2,
+   "despues": 2,
+   "motivo": "Valor mantenido; cambiada la fuente. La cita anterior ponía entre comillas «que Cataluña gestione sus impuestos» como frase literal de Nogueras, pero Infobae/Europa Press la recoge en estilo indirecto. Se usa la crónica de Crónica Global (2026-10-27, posterior a la convocatoria), con el titular literal sobre el concierto económico «como el del País Vasco» como condición de investidura."
+  }
+ ],
+ "dudas": [
+  "Cifras sin cuantificar codificadas +1: ERC q03 (rebajar IVA/ITP de la primera residencia, sin decir cuánto), ERC q10 y BNG q10 (más gasto sanitario público sin el 7 % del PIB; BNG lo fija en la media UE por habitante). Se mantienen en +1 porque es la misma medida y va en la misma dirección, sin la magnitud; un criterio más estricto los dejaría en null. Conviene aplicar la misma regla en todos los grupos.",
+  "Posiciones indirectas en −1: BNG q05 (pide «incrementar a progresividade» del IRPF; dos tipos del 15 % y 25 % la reducen) se mantiene. ERC q05 se mantiene porque sube el tipo del IRPF sobre ganancias de capital al 35 %, que no cabe en un IRPF de solo dos tipos con máximo del 25 %; en p. 20 también defiende una reforma del IRPF «que penalitzi les rendes més altes». ERC q09 se mantiene porque propone reducir las listas de espera reforzando la capacidad pública, con un modelo «amb gestió pública» y frenando la privatización; no habla expresamente de conciertos.",
+  "BNG q15 (+1): promueve la regularización administrativa «como vía para eliminar a irregularidade» (p. 22) y facilitar esos procesos (p. 23), pero no dice que sea extraordinaria. Se mantiene en +1 por ser el mismo objeto con un matiz en el mecanismo.",
+  "Alcance territorial: q17 (ERC, BNG, Junts en +2) lo piden para su propia comunidad, que es el caso que plantea la afirmación («cada comunidad que lo pida»). q19 (BNG −1, CC +1) solo se refiere a la costa gallega y a Gran Canaria, por eso queda en ±1. ERC q16 (+2) pide un referéndum negociado con el Estado, no necesariamente a petición del Parlament.",
+  "ERC q12: la cita junta texto de las pp. 10 y 11 (medida 17); se marca p. 10 y la nota lo explica. build_fase1.py no comprueba páginas: se verificaron a mano y todas son correctas.",
+  "Junts q17 se apoya en una paráfrasis periodística (titular), no en palabras textuales del partido; conviene sustituirla por su programa cuando lo publique."
+ ]
+}

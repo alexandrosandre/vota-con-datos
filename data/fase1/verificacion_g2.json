@@ -1,0 +1,74 @@
+{
+  "grupo": "g2",
+  "verificador": "Claude (Anthropic) — verificación independiente",
+  "fecha": "2026-11-08",
+  "aprobado": true,
+  "revisadas": 21,
+  "cambios": [
+    {
+      "partido": "frente_amplio",
+      "pregunta": "q08",
+      "antes": 2,
+      "despues": 1,
+      "motivo": "La nota de prensa propone «recuperar la jubilación a los 65 años» y «fijar de forma efectiva la jubilación en los 65 años», pero no dice que se modifique la edad legal u ordinaria para todos los trabajadores; el texto se apoya en la edad media real de jubilación (65,4 años). La dirección (rebajar la edad de retiro a 65) es inequívoca, pero la medida concreta no es expresa: +1, no +2."
+    },
+    {
+      "partido": "podemos",
+      "pregunta": "q06",
+      "antes": 2,
+      "despues": 1,
+      "motivo": "La fuente recoge la propuesta de bajar la jornada a 30 horas semanales, pero no menciona que sea sin rebajar el salario (parte de la afirmación) ni el instrumento legal. Dirección inequívoca (reducir la jornada por debajo de 40 h), con matices no expresos: +1."
+    },
+    {
+      "partido": "podemos",
+      "pregunta": "q08",
+      "antes": 2,
+      "despues": 1,
+      "motivo": "Montero propone bajar la edad de jubilación a 63 años, una medida distinta de fijarla en 65; la fuente no precisa si se trata de la edad ordinaria para todos. Coincide en la dirección (rebajar la edad), no en la medida: +1 con nota."
+    },
+    {
+      "partido": "compromis",
+      "pregunta": "q13",
+      "antes": -2,
+      "despues": -1,
+      "motivo": "Micó menciona «la prioridad nacional aplicada a todos los ámbitos de la vida» como crítica de pasada al Gobierno valenciano de PP y Vox, sin referirse a la vivienda social ni formularlo como compromiso propio; el rechazo expreso en vivienda pública procede del eurodiputado Marzà, que no es candidato. Rechazo indirecto pero inequívoco: −1, no −2."
+    },
+    {
+      "partido": "compromis",
+      "pregunta": "q29",
+      "antes": 1,
+      "despues": null,
+      "motivo": "La única fuente es una nota sobre una pregunta parlamentaria del eurodiputado Vicent Marzà en el Parlamento Europeo, que no es candidato ni portavoz de la coalición Compromís-Front Valencià (Compromís, Podem, EU, ERPV) en el 29N. La candidata Micó (compromis.net, 5-nov) solo pide cláusulas de salvaguarda y aranceles, compatibles con ratificar el acuerdo, y no menciona Mercosur. No consta posición de campaña de la coalición sobre la ratificación: null."
+    },
+    {
+      "partido": "podemos",
+      "pregunta": "q01",
+      "antes": 2,
+      "despues": 2,
+      "motivo": "Valor confirmado (condición de investidura: rebajar los alquileres por ley, una forma de tope legal más amplia que la afirmación). La cita no era literal (paráfrasis); se sustituye por el texto literal del artículo."
+    },
+    {
+      "partido": "podemos",
+      "pregunta": "q30",
+      "antes": 2,
+      "despues": 2,
+      "motivo": "Valor confirmado (condición de investidura: «limitar los precios de los alimentos por ley», «topar los precios de los alimentos»). La cita no era literal (paráfrasis); se sustituye por el texto literal del artículo."
+    },
+    {
+      "partido": "podemos",
+      "pregunta": "q26",
+      "antes": -2,
+      "despues": -2,
+      "motivo": "Valor confirmado (rechazo expreso y central a seguir aumentando el gasto militar). La nota atribuía la cita sobre la OTAN a la URL citada, pero procede de otra nota de Infobae/EP del mismo día; se corrige la referencia."
+    }
+  ],
+  "dudas": [
+    "podemos/q01: «rebajar los alquileres por ley» no nombra un precio máximo ni zonas; se mantiene 2 porque es condición de investidura y una rebaja legal de rentas implica un tope legal más amplio que el de la afirmación. Alternativa razonable: 1.",
+    "podemos/q02: Montero propone expropiar el uso (no la propiedad) de las viviendas de fondos para alquiler social; se mantiene 2 al tratarse de una expropiación forzosa con la misma finalidad.",
+    "frente_amplio/q02: la nota oficial no precisa el destino de las viviendas expropiadas (solo las de la SAREB irán al parque público); el destino a alquiler público asequible consta en elDiario.es 6-nov según el codificador. Se mantiene 2.",
+    "frente_amplio/q04: el impuesto anual del 2-3 % sobre el patrimonio neto no se califica expresamente de «permanente», pero es anual, estatal y parte del programa; se mantiene 2.",
+    "compromis/q30: una sola fuente (Alicante Plaza, 6-nov: «topar el precio de la energía y los alimentos básicos»); expresa, se mantiene 2.",
+    "upc: el Manifiesto electoral no lleva fecha impresa; se acepta 2026-11-03 (Last-Modified HTTP, ModDate del PDF 2026-10-30), ambas posteriores a la convocatoria. SHA-256 verificado (502ce157…). Páginas 3 y 4 comprobadas.",
+    "upc/q16: el eje 1 («derecho a decidir», «capacidad para decidir su futuro») no menciona referéndum ni independencia: null confirmado."
+  ]
+}

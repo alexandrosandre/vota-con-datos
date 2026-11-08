@@ -87,5 +87,19 @@ describe('afinidad', () => {
     // distancias: 4*2 + 4 + 0 + 2 + 2 = 16; den = 4*2 + 4*4 = 24
     expect(op.afinidad).toBeCloseTo(1 - 16 / 24, 10);
     expect(r.find((x) => x.partido === 'callado')!.afinidad).toBeNull();
+    expect(r[0].comparable).toBe(true);
+  });
+
+  it('separa los partidos con poca cobertura de los comparables', () => {
+    const resp = Object.fromEntries(Array.from({ length: 12 }, (_, i) => [`q${i}`, { valor: 1 as const }]));
+    const pos = {
+      completo: Object.fromEntries(Array.from({ length: 12 }, (_, i) => [`q${i}`, -1])),
+      parcial: Object.fromEntries(Array.from({ length: 5 }, (_, i) => [`q${i}`, 1])),
+    };
+    const r = afinidad(resp, pos as any);
+    expect(r[0].partido).toBe('completo'); // comparable va antes aunque su afinidad sea menor
+    expect(r[1].partido).toBe('parcial');
+    expect(r[1].afinidad).toBe(1);
+    expect(r[1].comparable).toBe(false);
   });
 });
