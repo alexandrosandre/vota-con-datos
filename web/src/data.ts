@@ -10,7 +10,7 @@ export const fase3 = signal<DatosFase3 | null>(null);
 export const errorCarga = signal<string | null>(null);
 
 async function j<T>(f: string): Promise<T> {
-  const r = await fetch(`${import.meta.env.BASE_URL}data/${f}`);
+  const r = await fetch(`${import.meta.env.BASE_URL}data/${f}`, { cache: 'no-cache' });
   if (!r.ok) throw new Error(`${f}: ${r.status}`);
   return r.json();
 }

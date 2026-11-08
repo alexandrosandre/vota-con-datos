@@ -91,7 +91,12 @@ def main():
             e = json.loads(ev.read_text())
             if e.get("programa_sha256") != p["programa"]["sha256"]:
                 sys.exit(f"{p['id']}: la evaluación no corresponde al programa publicado (sha256)")
-            fase3["partidos"][p["id"]] = {"estado": "evaluado", "propuestas": e["propuestas"]}
+            for pr in e["propuestas"]:
+                c = pr["evaluacion"].get("concrecion")
+                # La concreción se juzga sobre el propio programa: su fuente es el documento oficial.
+                if c is not None and not c.get("fuentes") and p["programa"]["url"]:
+                    c["fuentes"] = [{"url": p["programa"]["url"], "titulo": f"Programa oficial, p. {pr.get('pagina')}"}]
+            fase3["partidos"][p["id"]] = {"estado": "evaluado", "propuestas": e["propuestas"], "revision": json.loads(rev.read_text()).get("cambios", []).__len__()}
         else:
             fase3["partidos"][p["id"]] = {
                 "estado": "pendiente",

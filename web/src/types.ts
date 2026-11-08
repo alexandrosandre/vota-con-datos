@@ -36,13 +36,19 @@ export interface Pregunta {
   /** Contexto neutral de 1–2 frases para entender la afirmación. */
   contexto?: string;
   /** De qué propuestas reales nace (se muestra al final, no durante, para no sesgar). */
-  origen: { partido: string; cita: string; pagina?: string | number | null; url?: string }[];
+  origen: { partido: string; tipo?: 'programa' | 'campaña'; cita: string; pagina?: string | number | null; url?: string }[];
+  contexto_fuente?: string | null;
 }
 
 export interface PosicionPartido {
   valor: Valor | null;
+  /** De dónde sale la posición: programa oficial 29-N o compromiso público de campaña. */
+  fuente?: 'programa' | 'campaña' | null;
   cita?: string | null;
   pagina?: string | number | null;
+  url?: string | null;
+  medio?: string | null;
+  fecha?: string | null;
   nota?: string | null;
 }
 
@@ -128,5 +134,5 @@ export interface Propuesta {
 export interface DatosFase3 {
   meta: { actualizado: string; modelo: string; nota?: string };
   criterios: Criterio[];
-  partidos: Record<string, { estado: 'evaluado' | 'pendiente'; motivo?: string; propuestas: Propuesta[] }>;
+  partidos: Record<string, { estado: 'evaluado' | 'pendiente'; motivo?: string; revision?: number; propuestas: Propuesta[] }>;
 }

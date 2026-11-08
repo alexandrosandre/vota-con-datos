@@ -15,6 +15,8 @@ propuesta y cada criterio de `data/fase3/criterios.json`:
 * `valoracion`: `favorable` (la evidencia o el marco legal la respaldan) · `mixta` (evidencia en
   ambos sentidos o depende del diseño) · `desfavorable` (la evidencia o el marco legal la
   contradicen, o falta lo esencial) · `no_verificable` (no hay base suficiente: dilo, no opines).
+* Aplica la `rubrica` de `criterios.json` cuando exista (concreción y financiación): mismos hechos,
+  misma valoración, en todos los partidos.
 * `texto`: 2–4 frases claras para cualquier ciudadano, con datos concretos y sin adjetivos de valor.
 * `fuentes`: URLs que has leído y que sostienen el texto. Sin fuente → `no_verificable`.
 

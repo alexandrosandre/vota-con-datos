@@ -3,6 +3,7 @@ import { actualizar, estado } from '../store';
 import { fase2, fmt, partido } from '../data';
 import { NIVELES_INCERTIDUMBRE, simular, veredicto, type ResultadoSim } from '../engine/seats';
 import type { CandidaturaCirc, Circunscripcion, Escenario } from '../types';
+import { CabeceraPaso } from '../brand';
 
 const TEXTO_VEREDICTO: Record<string, string> = {
   casi_seguro: 'Escaño casi seguro',
@@ -59,9 +60,9 @@ function Ordenar({ circ }: { circ: Circunscripcion }) {
     actualizar({ ranking: [...l, ...fuera], rankingOrigen: 'manual' });
   };
   return (
-    <details>
+    <details class="card desplegable">
       <summary>
-        {e.rankingOrigen === 'fase1' ? 'Tu orden de preferencia viene de la fase 1 (puedes cambiarlo)' : 'Ordena tus preferencias para que podamos sugerirte alternativa'}
+        {e.rankingOrigen === 'fase1' ? 'Tu orden de preferencia viene del paso 1 (puedes cambiarlo)' : 'Ordena tus preferencias para que podamos sugerirte alternativa'}
       </summary>
       <ol class="orden" style={{ paddingLeft: 18 }}>
         {lista.map((p, i) => (
@@ -76,7 +77,7 @@ function Ordenar({ circ }: { circ: Circunscripcion }) {
   );
 }
 
-export function Fase2() {
+export function Cuenta() {
   const d = fase2.value!;
   const e = estado.value;
   const circs = useMemo(() => [...d.circunscripciones].sort((a, b) => a.nombre.localeCompare(b.nombre, 'es')), [d]);
@@ -107,16 +108,12 @@ export function Fase2() {
   const coste = e.partido ? d.coste_nacional_2023?.[e.partido] : undefined;
 
   return (
-    <div class="wrap page c2">
-      <div class="narrow" style={{ padding: 0 }}>
-        <div class="page-head">
-          <div class="num">Fase 2</div>
-          <h1>¿Tu voto tendrá escaño?</h1>
-          <p class="lead">
-            En el Congreso cada provincia es una circunscripción con sus propios escaños. Un voto solo se convierte en diputado si su
-            candidatura supera el 3 % en esa provincia y le alcanza en el reparto D'Hondt.
-          </p>
-        </div>
+    <div class="wrap page p3">
+      <div class="narrow" style={{ padding: 0, marginLeft: 0 }}>
+        <CabeceraPaso id="cuenta">
+          En el Congreso cada provincia elige sus propios escaños. Un voto solo se convierte en diputado si su candidatura supera el 3 % en esa
+          provincia y le alcanza en el reparto D'Hondt. Aquí lo calculas con las listas oficiales del BOE.
+        </CabeceraPaso>
       </div>
 
       <div class="card">
@@ -194,7 +191,7 @@ export function Fase2() {
                   probabilidad de escaño).
                 </p>
               ) : (
-                <p class="muted">Ordena tus preferencias abajo o haz la fase 1 para que te sugiramos alternativa.</p>
+                <p class="muted">Ordena tus preferencias abajo o haz el <a href="#/coincide">paso 1</a> para que te sugiramos una alternativa.</p>
               )}
             </div>
           )}
@@ -248,13 +245,13 @@ export function Fase2() {
               )}
               {filaElegida.pEscano < UMBRAL_RECOMENDACION && !alternativa && !filaElegida.sinBase && (
                 <div class="note" style={{ marginTop: 16 }}>
-                  Para sugerirte una alternativa, ordena tus preferencias (abajo) o haz la <a href="#/afinidad">fase 1</a>.
+                  Para sugerirte una alternativa, ordena tus preferencias (abajo) o haz el <a href="#/coincide">paso 1</a>.
                 </div>
               )}
               <div class="row" style={{ marginTop: 16 }}>
                 {elegida?.partido && (
-                  <a class="btn primary" style={{ '--c': 'var(--f3)' } as any} href={`#/rigor/${elegida.partido}`}>
-                    Analizar su programa (fase 3) →
+                  <a class="btn" href={`#/contrasta/${elegida.partido}`}>
+                    ← Contrastar su programa (paso 2)
                   </a>
                 )}
               </div>
@@ -310,7 +307,7 @@ export function Fase2() {
             </div>
             <p class="muted" style={{ fontSize: '0.85rem', marginTop: 12 }}>
               Probabilidades de {4000} simulaciones del escenario con error estadístico ({e.incertidumbre}). Son estimaciones, no
-              predicciones: el resultado real depende de lo que vote la gente. <a href="#/metodologia#fase2">Cómo se calcula</a>.
+              predicciones: el resultado real depende de lo que vote la gente. <a href="#/metodologia">Cómo se calcula</a>.
             </p>
           </div>
         </div>

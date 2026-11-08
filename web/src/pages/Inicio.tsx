@@ -1,96 +1,144 @@
 import { estado } from '../store';
-import { fase1, fase3, partidos, REPO } from '../data';
+import { fase1, fase2, fase3, partidos, REPO } from '../data';
+import { PASOS } from '../brand';
 
-function cuenta() {
+export function Inicio() {
   const ps = partidos.value ?? [];
   const publicados = ps.filter((p) => p.programa.estado === 'publicado').length;
   const preguntas = fase1.value?.preguntas.length ?? 0;
   const evaluados = Object.values(fase3.value?.partidos ?? {}).filter((p) => p.estado === 'evaluado').length;
-  return { total: ps.length, publicados, preguntas, evaluados };
-}
+  const candidaturas = fase2.value?.circunscripciones.reduce((s, c) => s + c.candidaturas.length, 0) ?? 0;
+  const promesas = ps.reduce((s, p) => s + (p.promesas?.length ?? 0), 0);
+  const hechas = Object.values(estado.value.respuestas).filter((r) => r.valor !== null).length;
 
-export function Inicio() {
-  const c = cuenta();
-  const e = estado.value;
-  const hechas = Object.values(e.respuestas).filter((r) => r.valor !== null).length;
+  const estadoPaso: Record<string, string> = {
+    coincide: preguntas === 0 ? 'Preparando el cuestionario' : hechas > 0 ? `${hechas} de ${preguntas} respondidas` : `${preguntas} afirmaciones · unos 10 minutos`,
+    contrasta: evaluados > 0 ? `${evaluados} programas analizados · se amplía según publican` : 'Se completa según publican los programas',
+    cuenta: `52 circunscripciones · ${candidaturas} candidaturas del BOE`,
+  };
+
   return (
     <div class="wrap">
       <section class="hero">
         <div class="kicker">Elecciones generales · 29 de noviembre de 2026</div>
         <h1>
-          Vota <em>con datos</em>.<br />
-          Sabiendo a qué votas y a dónde llega tu voto.
+          <span class="l1">Coincide.</span> <span class="l2">Contrasta.</span> <span class="l3">Cuenta.</span>
+          <br />
+          Vota sabiendo a qué votas.
         </h1>
         <p class="lead">
-          Tres pasos, independientes entre sí, para pasar de la intuición a un voto informado: con qué partido coincides de verdad, si tu
-          voto tendrá escaño en tu provincia, y qué hay detrás de lo que promete. Todo con fuentes oficiales, algoritmos abiertos y sin
-          guardar ni un dato tuyo.
+          Tres pasos para pasar de la intuición a un voto informado: con quién coincides de verdad, qué hay detrás de lo que promete, y si tu
+          voto llegará a escaño en tu provincia. Con fuentes oficiales, algoritmos abiertos y sin guardar ningún dato tuyo.
         </p>
+        <div class="row">
+          <a class="btn primary p1" href="#/coincide">
+            Empezar por el paso 1
+          </a>
+          <a class="btn" href="#/metodologia">
+            Cómo funciona
+          </a>
+        </div>
       </section>
 
-      <section class="fases" aria-label="Las tres fases">
-        <a class="fase c1" href="#/afinidad">
-          <span class="tag">{c.preguntas === 0 ? 'esperando programas' : hechas > 0 ? `${hechas} respuestas` : `${c.preguntas} preguntas · 10 min`}</span>
-          <div class="num">1</div>
-          <h2>¿Con quién coincides?</h2>
-          <p>
-            Valora propuestas reales de los programas del 29-N y de lo prometido en campaña, sin saber de quién son. Te decimos con qué
-            partidos coincides más y en qué, con la cita exacta de cada programa.
-          </p>
-          <span class="go">Empezar la encuesta →</span>
-        </a>
-        <a class="fase c2" href="#/tu-voto">
-          <span class="tag">52 circunscripciones</span>
-          <div class="num">2</div>
-          <h2>¿Tu voto tendrá escaño?</h2>
-          <p>
-            Elige tu provincia y tu partido. Calculamos con la ley electoral (umbral del 3 % y D'Hondt) la probabilidad de que obtenga
-            escaño, cuántos votos cuesta cada diputado y, si no llega, cuál es tu siguiente opción con opciones reales.
-          </p>
-          <span class="go">Calcular →</span>
-        </a>
-        <a class="fase c3" href="#/rigor">
-          <span class="tag">{c.evaluados > 0 ? `${c.evaluados} partidos analizados` : 'según publiquen programas'}</span>
-          <div class="num">3</div>
-          <h2>¿Qué hay detrás?</h2>
-          <p>
-            Las 12 propuestas principales de cada programa, contrastadas con criterios verificables: encaje legal, coste, evidencia,
-            experiencia en otros países, a quién beneficia y qué pasó cuando se intentó antes.
-          </p>
-          <span class="go">Ver el análisis →</span>
-        </a>
+      <section class="trayecto" aria-label="Los tres pasos">
+        {PASOS.map((p) => (
+          <a key={p.id} class={`etapa ${p.clase}`} href={`#${p.ruta}`}>
+            <div class="num">
+              <b>{p.n}</b>
+              <span>{p.verbo}</span>
+            </div>
+            <h2>{p.pregunta}</h2>
+            <p>{p.resumen}</p>
+            <span class="go">{p.cta} →</span>
+            <span class="estado">{estadoPaso[p.id]}</span>
+          </a>
+        ))}
+      </section>
+      <p class="muted" style={{ fontSize: '0.9rem' }}>
+        Cada paso funciona por sí solo: puedes empezar por cualquiera. Hechos en orden, cada uno aprovecha lo anterior.
+      </p>
+
+      <section class="cifras" aria-label="Datos de partida">
+        <div>
+          <b>{candidaturas}</b>
+          <span>candidaturas proclamadas en el BOE</span>
+        </div>
+        <div>
+          <b>
+            {publicados}/{ps.length}
+          </b>
+          <span>programas oficiales publicados y leídos</span>
+        </div>
+        <div>
+          <b>{promesas}</b>
+          <span>compromisos de campaña verificados</span>
+        </div>
+        <div>
+          <b>0</b>
+          <span>datos tuyos que salen de tu navegador</span>
+        </div>
       </section>
 
-      <section class="principios">
-        <div>
-          <h3>Solo fuentes oficiales</h3>
-          <p>Programas descargados de cada partido, listas proclamadas del BOE, resultados del Ministerio del Interior. Cada dato enlaza a su origen.</p>
-        </div>
-        <div>
-          <h3>Algoritmos abiertos</h3>
-          <p>
-            Todo el código y los datos están en <a href={REPO} target="_blank" rel="noopener">GitHub</a>. Puedes comprobar cada cálculo y
-            reproducirlo.
-          </p>
-        </div>
-        <div>
-          <h3>Tu privacidad, intacta</h3>
-          <p>No hay cuentas ni analítica. Tus respuestas no salen de tu navegador; puedes borrarlas cuando quieras.</p>
-        </div>
-        <div>
-          <h3>Lo que no sabemos, lo decimos</h3>
-          <p>
-            Si un partido no ha publicado programa o una afirmación no se puede verificar, aparece así, sin rellenar huecos.{' '}
-            <a href="#/metodologia">Metodología</a>.
-          </p>
+      <section class="seccion">
+        <div class="principios">
+          <div>
+            <h3>Fuentes oficiales</h3>
+            <p>Programas de cada partido, listas del BOE, resultados del Ministerio del Interior, encuestas en su publicación original.</p>
+          </div>
+          <div>
+            <h3>Algoritmos abiertos</h3>
+            <p>
+              Código, datos y prompts de IA en <a href={REPO} target="_blank" rel="noopener">GitHub</a>. Cualquiera puede revisar y reproducir
+              cada cálculo.
+            </p>
+          </div>
+          <div>
+            <h3>Neutralidad</h3>
+            <p>Mismos criterios para todos los partidos. Juzgamos el fundamento de las propuestas, no su ideología. Las afirmaciones no dicen de quién son.</p>
+          </div>
+          <div>
+            <h3>Lo que no sabemos, lo decimos</h3>
+            <p>Si un programa no está publicado o un dato no se puede verificar, aparece así. No rellenamos huecos.</p>
+          </div>
         </div>
       </section>
-      {c.total > 0 && c.publicados < c.total && (
-        <div class="note" style={{ marginBottom: 48 }}>
-          Programas oficiales publicados: <strong>{c.publicados}</strong> de {c.total} partidos. Las fases 1 y 3 se completan a medida que
-          cada partido publica el suyo; la fase 2 ya funciona con las listas oficiales del BOE.
-        </div>
-      )}
+
+      <section class="seccion faq">
+        <h2>Preguntas frecuentes</h2>
+        <details>
+          <summary>¿Quién está detrás?</summary>
+          <p>
+            Un proyecto ciudadano independiente, sin vínculo con ningún partido, medio ni empresa demoscópica. Todo el trabajo es público en
+            GitHub y cualquier persona puede proponer correcciones.
+          </p>
+        </details>
+        <details>
+          <summary>¿Me decís a quién votar?</summary>
+          <p>
+            No. El paso 1 te muestra con quién coincides; el 2, qué fundamento tienen sus propuestas; el 3, si tu voto se convertirá en escaño.
+            La decisión es tuya, y votar a quien prefieres siempre es legítimo.
+          </p>
+        </details>
+        <details>
+          <summary>¿Por qué no aparece el análisis de algunos partidos?</summary>
+          <p>
+            Solo analizamos programas oficiales completos, y varios partidos los publican durante la campaña. La web se actualiza a medida que
+            aparecen. Mientras tanto mostramos sus compromisos de campaña con fuente.
+          </p>
+        </details>
+        <details>
+          <summary>¿Cómo se usa la inteligencia artificial?</summary>
+          <p>
+            Un modelo de IA (Claude, de Anthropic) lee los programas completos y contrasta las propuestas con fuentes públicas; un segundo
+            análisis independiente revisa cada valoración y cada fuente, y todas las citas se comprueban automáticamente contra el texto
+            oficial. Las instrucciones exactas están publicadas.
+          </p>
+        </details>
+        <details>
+          <summary>¿Guardáis mis respuestas?</summary>
+          <p>No. Todo se calcula en tu navegador y solo se guarda en él, para que puedas volver. Puedes borrarlo cuando quieras.</p>
+        </details>
+      </section>
     </div>
   );
 }
