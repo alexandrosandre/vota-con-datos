@@ -95,7 +95,7 @@ def main():
         else:
             fase3["partidos"][p["id"]] = {
                 "estado": "pendiente",
-                "motivo": "Análisis en curso." if p["programa"]["estado"] == "publicado" else "",
+                "motivo": "",
                 "propuestas": [],
             }
     write("fase3.json", fase3)
