@@ -1,0 +1,7637 @@
+{
+ "meta": {
+  "eleccion": "Elecciones generales 23 de julio de 2023 - Congreso de los Diputados",
+  "tipo_proceso": "02",
+  "fecha_proceso": "202307",
+  "escrutinio": "definitivo (escrutinio general de las Juntas Electorales Provinciales, incluye voto CERA)",
+  "sources": [
+   {
+    "description": "Ministerio del Interior. Congreso julio 2023, resultados por circunscripción (incluye CERA y diputados)",
+    "url": "https://infoelectoral.interior.gob.es/estaticos/docxl/PROV_02_202307_1.zip",
+    "file": "data/sources/resultados/infoelectoral/PROV_02_202307_1.zip",
+    "direct_download_error": "HTTP Error 403: Forbidden",
+    "retrieved_from": "https://web.archive.org/web/20251220144907id_/https://infoelectoral.interior.gob.es/estaticos/docxl/PROV_02_202307_1.zip",
+    "note": "infoelectoral blocks non-browser clients (Cloudflare challenge); byte-for-byte Internet Archive capture of the official URL used",
+    "sha256": "b2eeed9c63527aec4fb7ffbc1896e935b6628eb6f21b00954762e62a3ed720a0",
+    "bytes": 53474,
+    "fetched_at": "2026-11-08T20:59:17+00:00",
+    "id": "infoelectoral_congreso_2023_prov"
+   },
+   {
+    "description": "BOE-A-2023-18907. Resolución JEC 30/08/2023, resumen de resultados Congreso y Senado 23J (XML)",
+    "url": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2023-18907",
+    "file": "data/sources/resultados/boe/BOE-A-2023-18907.xml",
+    "retrieved_from": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2023-18907",
+    "sha256": "15950447a4cfe1b07ed44ead8514ed83ed87d859b2dcd7c03a47fd6a00f40323",
+    "bytes": 271706,
+    "fetched_at": "2026-11-08T20:59:19+00:00",
+    "id": "boe_jec_generales_2023_xml"
+   },
+   {
+    "description": "BOE-A-2023-18907 (PDF; Cuadro I is an image in the XML but text in the PDF)",
+    "url": "https://www.boe.es/boe/dias/2023/09/01/pdfs/BOE-A-2023-18907.pdf",
+    "file": "data/sources/resultados/boe/BOE-A-2023-18907.pdf",
+    "retrieved_from": "https://www.boe.es/boe/dias/2023/09/01/pdfs/BOE-A-2023-18907.pdf",
+    "sha256": "f2146cfbf00d2b6eb6f8dd0dcdebc1e10298019589b2254e244e0ebc513d2f8a",
+    "bytes": 1915000,
+    "fetched_at": "2026-11-08T20:59:19+00:00",
+    "id": "boe_jec_generales_2023_pdf"
+   },
+   {
+    "description": "BOE-A-2023-19537. Corrección de errores de BOE-A-2023-18907 (solo afecta a Senado, Madrid)",
+    "url": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2023-19537",
+    "file": "data/sources/resultados/boe/BOE-A-2023-19537.xml",
+    "retrieved_from": "https://www.boe.es/diario_boe/xml.php?id=BOE-A-2023-19537",
+    "sha256": "21fdefa117c9509c81bfea37151240df3099ec15c378bb535de5a6cd001828ad",
+    "bytes": 3427,
+    "fetched_at": "2026-11-08T20:59:19+00:00",
+    "id": "boe_jec_generales_2023_correccion"
+   }
+  ],
+  "xlsx_member": "PROV_02_202307_1.xlsx",
+  "built_by": "pipeline/results_build.py",
+  "notes": [
+   "censo/votantes/validos/blancos/nulos y votos+escaños por agrupación: Ministerio del Interior (PROV_02_202307_1.xlsx).",
+   "Desglose por candidatura (p. ej. PSC separado de PSOE), denominación y siglas: Junta Electoral Central, BOE-A-2023-18907 Cuadros II y III. Todos los votos y escaños coinciden exactamente con el fichero del Ministerio.",
+   "validos = votos a candidaturas + votos en blanco. censo incluye CERA (censo_cera); votantes incluye CERA (votantes_cera).",
+   "codigo: los ficheros de texto de ancho fijo (con códigos de candidatura y de cabecera de agrupación) no son descargables sin navegador (infoelectoral está tras un desafío Cloudflare); los ficheros Excel usados no traen códigos, por eso codigo es null. Para agrupar por partido nacional use 'agrupacion' (agrupación nacional del Ministerio).",
+   "La corrección BOE-A-2023-19537 solo afecta al Senado (Madrid); no altera datos del Congreso.",
+   "Denominaciones a nivel de formación: ni el BOE ni el Excel del Ministerio distinguen las marcas regionales registradas en cada provincia (p. ej. las listas de Sumar en Cataluña, Galicia o Comunitat Valenciana aparecen como 'Sumar'). PSC sí aparece separado (agrupación PSOE).",
+   "El BOE agrupa 'Asturias Existe-España Vaciada' (Asturias) dentro de 'España Vaciada'; el Ministerio la trata como agrupación propia (ver boe_vs_ministerio_agrupacion_distinta). Siglas del BOE 'EVR' para Entre Veïns Catalunya; el Ministerio usa 'EVC'."
+  ],
+  "boe_vs_ministerio_agrupacion_distinta": [
+   {
+    "formacion_boe": "España Vaciada",
+    "agrupaciones_ministerio": {
+     "24": "ESPAÑA VACIADA",
+     "33": "ASTURIAS EXISTE-ESPAÑA VACIADA",
+     "34": "ESPAÑA VACIADA",
+     "37": "ESPAÑA VACIADA",
+     "47": "ESPAÑA VACIADA"
+    }
+   }
+  ],
+  "official_totals": {
+   "fuente": "BOE-A-2023-18907 (Cuadro I PDF y fila 'Total estatal' de Cuadros II/III); coincide con la fila 'España' de PROV_02_202307_1.xlsx",
+   "escanos": 350,
+   "censo": 37469458,
+   "votantes": 24952447,
+   "validos": 24688087,
+   "votos_candidaturas": 24487414,
+   "blancos": 200673,
+   "nulos": 264360,
+   "formaciones": [
+    {
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 8160837,
+     "escanos": 137
+    },
+    {
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 6600383,
+     "escanos": 102
+    },
+    {
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 3057000,
+     "escanos": 33
+    },
+    {
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 3044996,
+     "escanos": 31
+    },
+    {
+     "siglas": "PSC",
+     "denominacion": "Partit dels Socialistes de Catalunya (PSC-PSOE)",
+     "votos": 1221335,
+     "escanos": 19
+    },
+    {
+     "siglas": "ERC",
+     "denominacion": "Esquerra Republicana de Catalunya",
+     "votos": 466020,
+     "escanos": 7
+    },
+    {
+     "siglas": "JUNTS",
+     "denominacion": "Junts",
+     "votos": 395429,
+     "escanos": 7
+    },
+    {
+     "siglas": "EH Bildu",
+     "denominacion": "Euskal Herria Bildu",
+     "votos": 335129,
+     "escanos": 6
+    },
+    {
+     "siglas": "EAJ-PNV",
+     "denominacion": "Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco",
+     "votos": 277289,
+     "escanos": 5
+    },
+    {
+     "siglas": "BNG",
+     "denominacion": "Bloque Nacionalista Galego",
+     "votos": 153995,
+     "escanos": 1
+    },
+    {
+     "siglas": "CCa",
+     "denominacion": "Coalición Canaria",
+     "votos": 116363,
+     "escanos": 1
+    },
+    {
+     "siglas": "UPN",
+     "denominacion": "Unión del Pueblo Navarro",
+     "votos": 52188,
+     "escanos": 1
+    },
+    {
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 169237,
+     "escanos": 0
+    },
+    {
+     "siglas": "CUP-PR",
+     "denominacion": "Candidatura D'Unitat Popular-Per La Ruptura",
+     "votos": 99644,
+     "escanos": 0
+    },
+    {
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 46274,
+     "escanos": 0
+    },
+    {
+     "siglas": "NC-bc",
+     "denominacion": "Nueva Canarias-Bloque Canarista",
+     "votos": 45595,
+     "escanos": 0
+    },
+    {
+     "siglas": "PDeCAT-E-CiU",
+     "denominacion": "Partit Demòcrata Europeu Català-Espai CIU",
+     "votos": 32016,
+     "escanos": 0
+    },
+    {
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 23421,
+     "escanos": 0
+    },
+    {
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 23290,
+     "escanos": 0
+    },
+    {
+     "siglas": "UPL",
+     "denominacion": "Unión del Pueblo Leones",
+     "votos": 23201,
+     "escanos": 0
+    },
+    {
+     "siglas": "EXISTE",
+     "denominacion": "Coalición Existe",
+     "votos": 20440,
+     "escanos": 0
+    },
+    {
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 18218,
+     "escanos": 0
+    },
+    {
+     "siglas": "GBAI",
+     "denominacion": "Geroa Bai",
+     "votos": 9938,
+     "escanos": 0
+    },
+    {
+     "siglas": "SY",
+     "denominacion": "Soria ¡Ya!",
+     "votos": 9697,
+     "escanos": 0
+    },
+    {
+     "siglas": "ADELANTE ANDALUCÍA",
+     "denominacion": "Adelante Andalucía",
+     "votos": 9191,
+     "escanos": 0
+    },
+    {
+     "siglas": "ESCAÑOS EN BLANCO",
+     "denominacion": "Escaños en Blanco para dejar Escaños Vacíos",
+     "votos": 8448,
+     "escanos": 0
+    },
+    {
+     "siglas": "JM+",
+     "denominacion": "Jaén Merece Más",
+     "votos": 8293,
+     "escanos": 0
+    },
+    {
+     "siglas": "XAV",
+     "denominacion": "Por Ávila",
+     "votos": 7362,
+     "escanos": 0
+    },
+    {
+     "siglas": "BQEX",
+     "denominacion": "Bloque Extremeño",
+     "votos": 5807,
+     "escanos": 0
+    },
+    {
+     "siglas": "CJ",
+     "denominacion": "Caminando Juntos",
+     "votos": 5620,
+     "escanos": 0
+    },
+    {
+     "siglas": "ESPAÑA VACIADA",
+     "denominacion": "España Vaciada",
+     "votos": 5472,
+     "escanos": 0
+    },
+    {
+     "siglas": "FE de las JONS",
+     "denominacion": "Falange Española de las JONS",
+     "votos": 4683,
+     "escanos": 0
+    },
+    {
+     "siglas": "PAR",
+     "denominacion": "Partido Aragonés",
+     "votos": 4173,
+     "escanos": 0
+    },
+    {
+     "siglas": "PH",
+     "denominacion": "Partido Humanista",
+     "votos": 2902,
+     "escanos": 0
+    },
+    {
+     "siglas": "XH",
+     "denominacion": "Por Huelva",
+     "votos": 1931,
+     "escanos": 0
+    },
+    {
+     "siglas": "VP",
+     "denominacion": "Vamos Palencia",
+     "votos": 1917,
+     "escanos": 0
+    },
+    {
+     "siglas": "Zsi",
+     "denominacion": "Zamora Sí",
+     "votos": 1843,
+     "escanos": 0
+    },
+    {
+     "siglas": "VB",
+     "denominacion": "Vía Burgalesa",
+     "votos": 1774,
+     "escanos": 0
+    },
+    {
+     "siglas": "POR MI REGIÓN",
+     "denominacion": "Por Mi Región",
+     "votos": 1698,
+     "escanos": 0
+    },
+    {
+     "siglas": "AHORA CANARIAS-PCPC",
+     "denominacion": "Ahora Canarias-Partido Comunista del Pueblo Canario",
+     "votos": 1674,
+     "escanos": 0
+    },
+    {
+     "siglas": "PARTIDO AUTÓNOMOS",
+     "denominacion": "Partido Autónomos",
+     "votos": 1446,
+     "escanos": 0
+    },
+    {
+     "siglas": "EVB",
+     "denominacion": "Estat Valencià del Benestar",
+     "votos": 1442,
+     "escanos": 0
+    },
+    {
+     "siglas": "CpM",
+     "denominacion": "Coalición por Melilla",
+     "votos": 1298,
+     "escanos": 0
+    },
+    {
+     "siglas": "JxG",
+     "denominacion": "Juntos por Granada",
+     "votos": 1218,
+     "escanos": 0
+    },
+    {
+     "siglas": "EV-PCAS-TC",
+     "denominacion": "España Vaciada-Partido Castellano-Tierra Comunera",
+     "votos": 1184,
+     "escanos": 0
+    },
+    {
+     "siglas": "PREPAL",
+     "denominacion": "Partido Regionalista del País Leonés",
+     "votos": 964,
+     "escanos": 0
+    },
+    {
+     "siglas": "Somos Cc",
+     "denominacion": "Somos Cáceres",
+     "votos": 963,
+     "escanos": 0
+    },
+    {
+     "siglas": "ALM",
+     "denominacion": "Almerienses-Regionalistas Pro Almería",
+     "votos": 874,
+     "escanos": 0
+    },
+    {
+     "siglas": "FIA",
+     "denominacion": "Federación de los Independientes de Aragón",
+     "votos": 506,
+     "escanos": 0
+    },
+    {
+     "siglas": "3e",
+     "denominacion": "Tercera Edad en Acción",
+     "votos": 484,
+     "escanos": 0
+    },
+    {
+     "siglas": "Ud.Ca",
+     "denominacion": "Unidad Castellana",
+     "votos": 463,
+     "escanos": 0
+    },
+    {
+     "siglas": "GITV",
+     "denominacion": "Grupo Independiente Palencia Tierra Viva",
+     "votos": 366,
+     "escanos": 0
+    },
+    {
+     "siglas": "PUEDE",
+     "denominacion": "Partido Unionista Estado de España",
+     "votos": 269,
+     "escanos": 0
+    },
+    {
+     "siglas": "EVR",
+     "denominacion": "Entre Veïns Catalunya",
+     "votos": 265,
+     "escanos": 0
+    },
+    {
+     "siglas": "LB",
+     "denominacion": "Libres",
+     "votos": 263,
+     "escanos": 0
+    },
+    {
+     "siglas": "UNIDOS SI",
+     "denominacion": "Unidos por la Solidaridad Internacional",
+     "votos": 253,
+     "escanos": 0
+    },
+    {
+     "siglas": "+RDS+",
+     "denominacion": "Referéndum Sistema Dinero",
+     "votos": 165,
+     "escanos": 0
+    },
+    {
+     "siglas": "CCD",
+     "denominacion": "Coalición de Centro Democrático",
+     "votos": 153,
+     "escanos": 0
+    },
+    {
+     "siglas": "FUERZA CÍVICA",
+     "denominacion": "Fuerza Cívica",
+     "votos": 115,
+     "escanos": 0
+    }
+   ],
+   "ministerio_espana": {
+    "censo": 37469458,
+    "votantes": 24952447,
+    "validos": 24688087,
+    "votos_candidaturas": 24487414,
+    "blancos": 200673,
+    "nulos": 264360
+   },
+   "ministerio_agrupaciones": [
+    {
+     "siglas": "PP",
+     "denominacion": "PARTIDO POPULAR",
+     "votos": 8160837,
+     "escanos": 137
+    },
+    {
+     "siglas": "PSOE",
+     "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 7821718,
+     "escanos": 121
+    },
+    {
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 3057000,
+     "escanos": 33
+    },
+    {
+     "siglas": "SUMAR",
+     "denominacion": "SUMAR",
+     "votos": 3044996,
+     "escanos": 31
+    },
+    {
+     "siglas": "ERC",
+     "denominacion": "ESQUERRA REPUBLICANA DE CATALUNYA",
+     "votos": 466020,
+     "escanos": 7
+    },
+    {
+     "siglas": "JxCAT - JUNTS",
+     "denominacion": "JUNTS PER CATALUNYA - JUNTS",
+     "votos": 395429,
+     "escanos": 7
+    },
+    {
+     "siglas": "EH Bildu",
+     "denominacion": "EUSKAL HERRIA BILDU",
+     "votos": 335129,
+     "escanos": 6
+    },
+    {
+     "siglas": "EAJ-PNV",
+     "denominacion": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO",
+     "votos": 277289,
+     "escanos": 5
+    },
+    {
+     "siglas": "B.N.G.",
+     "denominacion": "BLOQUE NACIONALISTA GALEGO",
+     "votos": 153995,
+     "escanos": 1
+    },
+    {
+     "siglas": "CCa",
+     "denominacion": "COALICIÓN CANARIA",
+     "votos": 116363,
+     "escanos": 1
+    },
+    {
+     "siglas": "U.P.N.",
+     "denominacion": "UNION DEL PUEBLO NAVARRO",
+     "votos": 52188,
+     "escanos": 1
+    },
+    {
+     "siglas": "PACMA",
+     "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 169237,
+     "escanos": 0
+    },
+    {
+     "siglas": "CUP-PR",
+     "denominacion": "CANDIDATURA D'UNITAT POPULAR-PER LA RUPTURA",
+     "votos": 99644,
+     "escanos": 0
+    },
+    {
+     "siglas": "FO",
+     "denominacion": "FRENTE OBRERO",
+     "votos": 46274,
+     "escanos": 0
+    },
+    {
+     "siglas": "NC-bc",
+     "denominacion": "NUEVA CANARIAS - BLOQUE CANARISTA",
+     "votos": 45595,
+     "escanos": 0
+    },
+    {
+     "siglas": "PDeCAT-E-CiU",
+     "denominacion": "PARTIT DEMÒCRATA EUROPEU CATALÀ-ESPAI CIU",
+     "votos": 32016,
+     "escanos": 0
+    },
+    {
+     "siglas": "RECORTES CERO",
+     "denominacion": "RECORTES CERO",
+     "votos": 23421,
+     "escanos": 0
+    },
+    {
+     "siglas": "PUM+J",
+     "denominacion": "POR UN MUNDO MÁS JUSTO",
+     "votos": 23290,
+     "escanos": 0
+    },
+    {
+     "siglas": "U.P.L.",
+     "denominacion": "UNIÓN DEL PUEBLO LEONÉS",
+     "votos": 23201,
+     "escanos": 0
+    },
+    {
+     "siglas": "EXISTE",
+     "denominacion": "ARAGÓN EXISTE - COALICIÓN EXISTE",
+     "votos": 20440,
+     "escanos": 0
+    },
+    {
+     "siglas": "PCTE",
+     "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 18218,
+     "escanos": 0
+    },
+    {
+     "siglas": "GBAI",
+     "denominacion": "GEROA BAI",
+     "votos": 9938,
+     "escanos": 0
+    },
+    {
+     "siglas": "SY",
+     "denominacion": "SORIA ¡YA!",
+     "votos": 9697,
+     "escanos": 0
+    },
+    {
+     "siglas": "ADELANTE ANDALUCÍA",
+     "denominacion": "ADELANTE ANDALUCÍA",
+     "votos": 9191,
+     "escanos": 0
+    },
+    {
+     "siglas": "ESCAÑOS EN BLANCO",
+     "denominacion": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 8448,
+     "escanos": 0
+    },
+    {
+     "siglas": "JM+",
+     "denominacion": "JAÉN MERECE MÁS",
+     "votos": 8293,
+     "escanos": 0
+    },
+    {
+     "siglas": "XAV",
+     "denominacion": "POR ÁVILA",
+     "votos": 7362,
+     "escanos": 0
+    },
+    {
+     "siglas": "BQEX",
+     "denominacion": "BLOQUE EXTREMEÑO",
+     "votos": 5807,
+     "escanos": 0
+    },
+    {
+     "siglas": "CJ",
+     "denominacion": "CAMINANDO JUNTOS",
+     "votos": 5620,
+     "escanos": 0
+    },
+    {
+     "siglas": "FE de las JONS",
+     "denominacion": "FALANGE ESPAÑOLA DE LAS J.O.N.S.",
+     "votos": 4683,
+     "escanos": 0
+    },
+    {
+     "siglas": "PAR",
+     "denominacion": "PARTIDO ARAGONÉS",
+     "votos": 4173,
+     "escanos": 0
+    },
+    {
+     "siglas": "ESPAÑA VACIADA",
+     "denominacion": "ESPAÑA VACIADA",
+     "votos": 3158,
+     "escanos": 0
+    },
+    {
+     "siglas": "PH",
+     "denominacion": "PARTIDO HUMANISTA",
+     "votos": 2902,
+     "escanos": 0
+    },
+    {
+     "siglas": "ASTURIAS EXISTE EV",
+     "denominacion": "ASTURIAS EXISTE-ESPAÑA VACIADA",
+     "votos": 2314,
+     "escanos": 0
+    },
+    {
+     "siglas": "XH",
+     "denominacion": "POR HUELVA",
+     "votos": 1931,
+     "escanos": 0
+    },
+    {
+     "siglas": "VP",
+     "denominacion": "VAMOS PALENCIA",
+     "votos": 1917,
+     "escanos": 0
+    },
+    {
+     "siglas": "Zsi",
+     "denominacion": "ZAMORA SÍ",
+     "votos": 1843,
+     "escanos": 0
+    },
+    {
+     "siglas": "VB",
+     "denominacion": "VÍA BURGALESA",
+     "votos": 1774,
+     "escanos": 0
+    },
+    {
+     "siglas": "POR MI REGIÓN",
+     "denominacion": "POR MI REGIÓN",
+     "votos": 1698,
+     "escanos": 0
+    },
+    {
+     "siglas": "AHORA CANARIAS-PCPC",
+     "denominacion": "AHORA CANARIAS-PARTIDO COMUNISTA DEL PUEBLO CANARIO",
+     "votos": 1674,
+     "escanos": 0
+    },
+    {
+     "siglas": "PARTIDO AUTÓNOMOS",
+     "denominacion": "PARTIDO AUTÓNOMOS",
+     "votos": 1446,
+     "escanos": 0
+    },
+    {
+     "siglas": "EVB",
+     "denominacion": "ESTAT VALENCIÀ DEL BENESTAR",
+     "votos": 1442,
+     "escanos": 0
+    },
+    {
+     "siglas": "CpM",
+     "denominacion": "COALICIÓN POR MELILLA",
+     "votos": 1298,
+     "escanos": 0
+    },
+    {
+     "siglas": "JxG",
+     "denominacion": "JUNTOS POR GRANADA",
+     "votos": 1218,
+     "escanos": 0
+    },
+    {
+     "siglas": "EV-PCAS-TC",
+     "denominacion": "ESPAÑA VACIADA-PARTIDO CASTELLANO-TIERRA COMUNERA",
+     "votos": 1184,
+     "escanos": 0
+    },
+    {
+     "siglas": "PREPAL",
+     "denominacion": "PARTIDO REGIONALISTA DEL PAÍS LEONÉS",
+     "votos": 964,
+     "escanos": 0
+    },
+    {
+     "siglas": "Somos Cc",
+     "denominacion": "SOMOS CÁCERES",
+     "votos": 963,
+     "escanos": 0
+    },
+    {
+     "siglas": "ALM",
+     "denominacion": "ALMERIENSES - REGIONALISTAS PRO ALMERÍA",
+     "votos": 874,
+     "escanos": 0
+    },
+    {
+     "siglas": "F.I.A.",
+     "denominacion": "FEDERACIÓN DE LOS INDEPENDIENTES DE ARAGÓN",
+     "votos": 506,
+     "escanos": 0
+    },
+    {
+     "siglas": "3e",
+     "denominacion": "TERCERA EDAD EN ACCIÓN",
+     "votos": 484,
+     "escanos": 0
+    },
+    {
+     "siglas": "Ud.Ca",
+     "denominacion": "UNIDAD CASTELLANA",
+     "votos": 463,
+     "escanos": 0
+    },
+    {
+     "siglas": "GITV",
+     "denominacion": "GRUPO INDEPENDIENTE PALENCIA TIERRA VIVA",
+     "votos": 366,
+     "escanos": 0
+    },
+    {
+     "siglas": "PUEDE",
+     "denominacion": "PARTIDO UNIONISTA ESTADO DE ESPAÑA",
+     "votos": 269,
+     "escanos": 0
+    },
+    {
+     "siglas": "EVC",
+     "denominacion": "ENTRE VEÏNS CATALUNYA",
+     "votos": 265,
+     "escanos": 0
+    },
+    {
+     "siglas": "LB",
+     "denominacion": "LIBRES",
+     "votos": 263,
+     "escanos": 0
+    },
+    {
+     "siglas": "UNIDOS SI",
+     "denominacion": "UNIDOS POR LA SOLIDARIDAD INTERNACIONAL",
+     "votos": 253,
+     "escanos": 0
+    },
+    {
+     "siglas": "+RDS+",
+     "denominacion": "REFERÉNDUM SISTEMA DINERO",
+     "votos": 165,
+     "escanos": 0
+    },
+    {
+     "siglas": "CCD",
+     "denominacion": "COALICIÓN DE CENTRO DEMOCRÁTICO",
+     "votos": 153,
+     "escanos": 0
+    },
+    {
+     "siglas": "FUERZA CÍVICA",
+     "denominacion": "FUERZA CÍVICA",
+     "votos": 115,
+     "escanos": 0
+    }
+   ]
+  }
+ },
+ "circunscripciones": {
+  "01": {
+   "nombre": "Araba/Álava",
+   "comunidad": "País Vasco",
+   "escanos": 4,
+   "censo": 260214,
+   "censo_cera": 8156,
+   "votantes": 170538,
+   "votantes_cera": 1097,
+   "nulos": 1431,
+   "blancos": 722,
+   "validos": 169107,
+   "votos_candidaturas": 168385,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 46775,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "EH Bildu",
+     "denominacion": "Euskal Herria Bildu",
+     "votos": 32987,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "EH Bildu",
+      "denominacion": "EUSKAL HERRIA BILDU"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 30212,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "EAJ-PNV",
+     "denominacion": "Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco",
+     "votos": 28075,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "EAJ-PNV",
+      "denominacion": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 21561,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 6573,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 773,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ESCAÑOS EN BLANCO",
+     "denominacion": "Escaños en Blanco para dejar Escaños Vacíos",
+     "votos": 619,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "ESCAÑOS EN BLANCO",
+      "denominacion": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 354,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 185,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 165,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 106,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    }
+   ]
+  },
+  "02": {
+   "nombre": "Albacete",
+   "comunidad": "Castilla - La Mancha",
+   "escanos": 4,
+   "censo": 307988,
+   "censo_cera": 8064,
+   "votantes": 223917,
+   "votantes_cera": 860,
+   "nulos": 2726,
+   "blancos": 1834,
+   "validos": 221191,
+   "votos_candidaturas": 219357,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 88299,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 76322,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 36750,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 15834,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 1261,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 381,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 325,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 185,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "03": {
+   "nombre": "Alacant/Alicante",
+   "comunidad": "Comunitat Valenciana",
+   "escanos": 12,
+   "censo": 1306311,
+   "censo_cera": 45301,
+   "votantes": 908842,
+   "votantes_cera": 4461,
+   "nulos": 9650,
+   "blancos": 6575,
+   "validos": 899192,
+   "votos_candidaturas": 892617,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 330293,
+     "escanos": 5,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 287737,
+     "escanos": 4,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 146133,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 115787,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 7335,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 1724,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PARTIDO AUTÓNOMOS",
+     "denominacion": "Partido Autónomos",
+     "votos": 1446,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PARTIDO AUTÓNOMOS",
+      "denominacion": "PARTIDO AUTÓNOMOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 1135,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "CJ",
+     "denominacion": "Caminando Juntos",
+     "votos": 1027,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "CJ",
+      "denominacion": "CAMINANDO JUNTOS"
+     }
+    }
+   ]
+  },
+  "04": {
+   "nombre": "Almería",
+   "comunidad": "Andalucía",
+   "escanos": 6,
+   "censo": 516114,
+   "censo_cera": 44687,
+   "votantes": 324405,
+   "votantes_cera": 2981,
+   "nulos": 3163,
+   "blancos": 2464,
+   "validos": 321242,
+   "votos_candidaturas": 318778,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 131524,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 93282,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 68364,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 21485,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 1962,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ALM",
+     "denominacion": "Almerienses-Regionalistas Pro Almería",
+     "votos": 874,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "ALM",
+      "denominacion": "ALMERIENSES - REGIONALISTAS PRO ALMERÍA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 500,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 371,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "LB",
+     "denominacion": "Libres",
+     "votos": 210,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "LB",
+      "denominacion": "LIBRES"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 206,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "05": {
+   "nombre": "Ávila",
+   "comunidad": "Castilla y León",
+   "escanos": 3,
+   "censo": 136669,
+   "censo_cera": 8369,
+   "votantes": 99120,
+   "votantes_cera": 883,
+   "nulos": 1164,
+   "blancos": 632,
+   "validos": 97956,
+   "votos_candidaturas": 97324,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 42369,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 26828,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 15068,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "XAV",
+     "denominacion": "Por Ávila",
+     "votos": 7362,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "XAV",
+      "denominacion": "POR ÁVILA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 5027,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 275,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 100,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 91,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 85,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FE de las JONS",
+     "denominacion": "Falange Española de las JONS",
+     "votos": 77,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FE de las JONS",
+      "denominacion": "FALANGE ESPAÑOLA DE LAS J.O.N.S."
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 42,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "06": {
+   "nombre": "Badajoz",
+   "comunidad": "Extremadura",
+   "escanos": 5,
+   "censo": 550702,
+   "censo_cera": 12128,
+   "votantes": 398233,
+   "votantes_cera": 1512,
+   "nulos": 6772,
+   "blancos": 3225,
+   "validos": 391461,
+   "votos_candidaturas": 388236,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 153473,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 148068,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 53492,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 26778,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "BQEX",
+     "denominacion": "Bloque Extremeño",
+     "votos": 3885,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "BQEX",
+      "denominacion": "BLOQUE EXTREMEÑO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 1395,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 477,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 464,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 204,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "07": {
+   "nombre": "Illes Balears",
+   "comunidad": "Illes Balears",
+   "escanos": 8,
+   "censo": 828755,
+   "censo_cera": 32840,
+   "votantes": 508233,
+   "votantes_cera": 2382,
+   "nulos": 4953,
+   "blancos": 4704,
+   "validos": 503280,
+   "votos_candidaturas": 498576,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 179303,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 151786,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 83487,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 76547,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 4969,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 1039,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 726,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 719,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    }
+   ]
+  },
+  "08": {
+   "nombre": "Barcelona",
+   "comunidad": "Cataluña",
+   "escanos": 32,
+   "censo": 4243500,
+   "censo_cera": 217682,
+   "votantes": 2688720,
+   "votantes_cera": 21434,
+   "nulos": 21242,
+   "blancos": 21059,
+   "validos": 2667478,
+   "votos_candidaturas": 2646419,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PSC",
+     "denominacion": "Partit dels Socialistes de Catalunya (PSC-PSOE)",
+     "votos": 952347,
+     "escanos": 13,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 405993,
+     "escanos": 5,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 367519,
+     "escanos": 5,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ERC",
+     "denominacion": "Esquerra Republicana de Catalunya",
+     "votos": 328697,
+     "escanos": 4,
+     "agrupacion": {
+      "siglas": "ERC",
+      "denominacion": "ESQUERRA REPUBLICANA DE CATALUNYA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "JUNTS",
+     "denominacion": "Junts",
+     "votos": 258159,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "JxCAT - JUNTS",
+      "denominacion": "JUNTS PER CATALUNYA - JUNTS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 201775,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "CUP-PR",
+     "denominacion": "Candidatura D'Unitat Popular-Per La Ruptura",
+     "votos": 67266,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "CUP-PR",
+      "denominacion": "CANDIDATURA D'UNITAT POPULAR-PER LA RUPTURA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 28201,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PDeCAT-E-CiU",
+     "denominacion": "Partit Demòcrata Europeu Català-Espai CIU",
+     "votos": 24452,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PDeCAT-E-CiU",
+      "denominacion": "PARTIT DEMÒCRATA EUROPEU CATALÀ-ESPAI CIU"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 6048,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 3104,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 2858,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    }
+   ]
+  },
+  "09": {
+   "nombre": "Burgos",
+   "comunidad": "Castilla y León",
+   "escanos": 4,
+   "censo": 296401,
+   "censo_cera": 18864,
+   "votantes": 204886,
+   "votantes_cera": 2146,
+   "nulos": 2317,
+   "blancos": 1851,
+   "validos": 202569,
+   "votos_candidaturas": 200718,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 82329,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 69775,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 25858,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 17508,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VB",
+     "denominacion": "Vía Burgalesa",
+     "votos": 1774,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VB",
+      "denominacion": "VÍA BURGALESA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "EV-PCAS-TC",
+     "denominacion": "España Vaciada-Partido Castellano-Tierra Comunera",
+     "votos": 1184,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "EV-PCAS-TC",
+      "denominacion": "ESPAÑA VACIADA-PARTIDO CASTELLANO-TIERRA COMUNERA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 943,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 490,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 354,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 349,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 154,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "10": {
+   "nombre": "Cáceres",
+   "comunidad": "Extremadura",
+   "escanos": 4,
+   "censo": 339491,
+   "censo_cera": 16726,
+   "votantes": 239747,
+   "votantes_cera": 1536,
+   "nulos": 3896,
+   "blancos": 1721,
+   "validos": 235851,
+   "votos_candidaturas": 234130,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 91692,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 89633,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 32076,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 16354,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "BQEX",
+     "denominacion": "Bloque Extremeño",
+     "votos": 1922,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "BQEX",
+      "denominacion": "BLOQUE EXTREMEÑO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "Somos Cc",
+     "denominacion": "Somos Cáceres",
+     "votos": 963,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "Somos Cc",
+      "denominacion": "SOMOS CÁCERES"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 814,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 316,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 249,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 111,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "11": {
+   "nombre": "Cádiz",
+   "comunidad": "Andalucía",
+   "escanos": 9,
+   "censo": 1017958,
+   "censo_cera": 31101,
+   "votantes": 644801,
+   "votantes_cera": 2868,
+   "nulos": 7703,
+   "blancos": 7103,
+   "validos": 637098,
+   "votos_candidaturas": 629995,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 221703,
+     "escanos": 4,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 211200,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 96720,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 82115,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ADELANTE ANDALUCÍA",
+     "denominacion": "Adelante Andalucía",
+     "votos": 9191,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "ADELANTE ANDALUCÍA",
+      "denominacion": "ADELANTE ANDALUCÍA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 5937,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 1225,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "CJ",
+     "denominacion": "Caminando Juntos",
+     "votos": 745,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "CJ",
+      "denominacion": "CAMINANDO JUNTOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 673,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 486,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "12": {
+   "nombre": "Castelló/Castellón",
+   "comunidad": "Comunitat Valenciana",
+   "escanos": 5,
+   "censo": 430830,
+   "censo_cera": 10927,
+   "votantes": 311581,
+   "votantes_cera": 1447,
+   "nulos": 3651,
+   "blancos": 2655,
+   "validos": 307930,
+   "votos_candidaturas": 305275,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 108302,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 100530,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 48913,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 44187,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 1968,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 721,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 493,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FE de las JONS",
+     "denominacion": "Falange Española de las JONS",
+     "votos": 161,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FE de las JONS",
+      "denominacion": "FALANGE ESPAÑOLA DE LAS J.O.N.S."
+     }
+    }
+   ]
+  },
+  "13": {
+   "nombre": "Ciudad Real",
+   "comunidad": "Castilla - La Mancha",
+   "escanos": 5,
+   "censo": 391495,
+   "censo_cera": 7016,
+   "votantes": 286895,
+   "votantes_cera": 952,
+   "nulos": 3916,
+   "blancos": 2353,
+   "validos": 282979,
+   "votos_candidaturas": 280626,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 114709,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 100102,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 46046,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 17405,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 1319,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 447,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 365,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 233,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "14": {
+   "nombre": "Córdoba",
+   "comunidad": "Andalucía",
+   "escanos": 6,
+   "censo": 645288,
+   "censo_cera": 19165,
+   "votantes": 455564,
+   "votantes_cera": 2132,
+   "nulos": 6962,
+   "blancos": 4348,
+   "validos": 448602,
+   "votos_candidaturas": 444254,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 169976,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 144080,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 62526,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 61594,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 2699,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ESCAÑOS EN BLANCO",
+     "denominacion": "Escaños en Blanco para dejar Escaños Vacíos",
+     "votos": 942,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "ESCAÑOS EN BLANCO",
+      "denominacion": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 746,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 701,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 598,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 392,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "15": {
+   "nombre": "A Coruña",
+   "comunidad": "Galicia",
+   "escanos": 8,
+   "censo": 1085673,
+   "censo_cera": 163367,
+   "votantes": 683187,
+   "votantes_cera": 10402,
+   "nulos": 5485,
+   "blancos": 5197,
+   "validos": 677702,
+   "votos_candidaturas": 672505,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 292272,
+     "escanos": 4,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 190897,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 82618,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "BNG",
+     "denominacion": "Bloque Nacionalista Galego",
+     "votos": 67653,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "B.N.G.",
+      "denominacion": "BLOQUE NACIONALISTA GALEGO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 34410,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 3096,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 1011,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 548,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "16": {
+   "nombre": "Cuenca",
+   "comunidad": "Castilla - La Mancha",
+   "escanos": 3,
+   "censo": 152694,
+   "censo_cera": 3256,
+   "votantes": 115280,
+   "votantes_cera": 370,
+   "nulos": 1472,
+   "blancos": 969,
+   "validos": 113808,
+   "votos_candidaturas": 112839,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 45255,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 42528,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 17700,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 6325,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 387,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 207,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ESCAÑOS EN BLANCO",
+     "denominacion": "Escaños en Blanco para dejar Escaños Vacíos",
+     "votos": 168,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "ESCAÑOS EN BLANCO",
+      "denominacion": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 111,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 100,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 58,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "17": {
+   "nombre": "Girona",
+   "comunidad": "Cataluña",
+   "escanos": 6,
+   "censo": 546370,
+   "censo_cera": 24016,
+   "votantes": 327159,
+   "votantes_cera": 2335,
+   "nulos": 4171,
+   "blancos": 2981,
+   "validos": 322988,
+   "votos_candidaturas": 320007,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PSC",
+     "denominacion": "Partit dels Socialistes de Catalunya (PSC-PSOE)",
+     "votos": 93448,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "JUNTS",
+     "denominacion": "Junts",
+     "votos": 63251,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "JxCAT - JUNTS",
+      "denominacion": "JUNTS PER CATALUNYA - JUNTS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ERC",
+     "denominacion": "Esquerra Republicana de Catalunya",
+     "votos": 47531,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "ERC",
+      "denominacion": "ESQUERRA REPUBLICANA DE CATALUNYA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 35344,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 31341,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 22706,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "CUP-PR",
+     "denominacion": "Candidatura D'Unitat Popular-Per La Ruptura",
+     "votos": 18229,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "CUP-PR",
+      "denominacion": "CANDIDATURA D'UNITAT POPULAR-PER LA RUPTURA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 3531,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PDeCAT-E-CiU",
+     "denominacion": "Partit Demòcrata Europeu Català-Espai CIU",
+     "votos": 3388,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PDeCAT-E-CiU",
+      "denominacion": "PARTIT DEMÒCRATA EUROPEU CATALÀ-ESPAI CIU"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 570,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 420,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 248,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "18": {
+   "nombre": "Granada",
+   "comunidad": "Andalucía",
+   "escanos": 7,
+   "censo": 765478,
+   "censo_cera": 53300,
+   "votantes": 509486,
+   "votantes_cera": 4656,
+   "nulos": 6641,
+   "blancos": 4057,
+   "validos": 502845,
+   "votos_candidaturas": 498788,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 185996,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 165862,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 81080,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 58567,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 3143,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "JxG",
+     "denominacion": "Juntos por Granada",
+     "votos": 1218,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "JxG",
+      "denominacion": "JUNTOS POR GRANADA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 765,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 695,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 658,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "CJ",
+     "denominacion": "Caminando Juntos",
+     "votos": 461,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "CJ",
+      "denominacion": "CAMINANDO JUNTOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 343,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "19": {
+   "nombre": "Guadalajara",
+   "comunidad": "Castilla - La Mancha",
+   "escanos": 3,
+   "censo": 196983,
+   "censo_cera": 5187,
+   "votantes": 142744,
+   "votantes_cera": 757,
+   "nulos": 1831,
+   "blancos": 1143,
+   "validos": 140913,
+   "votos_candidaturas": 139770,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 51195,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 46479,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 27126,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 12907,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 1039,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 304,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 249,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 191,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 162,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FE de las JONS",
+     "denominacion": "Falange Española de las JONS",
+     "votos": 118,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FE de las JONS",
+      "denominacion": "FALANGE ESPAÑOLA DE LAS J.O.N.S."
+     }
+    }
+   ]
+  },
+  "20": {
+   "nombre": "Gipuzkoa",
+   "comunidad": "País Vasco",
+   "escanos": 6,
+   "censo": 585873,
+   "censo_cera": 29798,
+   "votantes": 378965,
+   "votantes_cera": 4337,
+   "nulos": 2344,
+   "blancos": 2005,
+   "validos": 376621,
+   "votos_candidaturas": 374616,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "EH Bildu",
+     "denominacion": "Euskal Herria Bildu",
+     "votos": 117321,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "EH Bildu",
+      "denominacion": "EUSKAL HERRIA BILDU"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 87709,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "EAJ-PNV",
+     "denominacion": "Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco",
+     "votos": 85026,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "EAJ-PNV",
+      "denominacion": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 40081,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 32721,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 7877,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 1568,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ESCAÑOS EN BLANCO",
+     "denominacion": "Escaños en Blanco para dejar Escaños Vacíos",
+     "votos": 933,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "ESCAÑOS EN BLANCO",
+      "denominacion": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 530,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 442,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 259,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 149,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    }
+   ]
+  },
+  "21": {
+   "nombre": "Huelva",
+   "comunidad": "Andalucía",
+   "escanos": 5,
+   "censo": 402504,
+   "censo_cera": 8194,
+   "votantes": 260861,
+   "votantes_cera": 689,
+   "nulos": 4057,
+   "blancos": 2410,
+   "validos": 256804,
+   "votos_candidaturas": 254394,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 93565,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 92326,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 37572,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 26752,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "XH",
+     "denominacion": "Por Huelva",
+     "votos": 1931,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "XH",
+      "denominacion": "POR HUELVA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 1663,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 368,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 217,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "22": {
+   "nombre": "Huesca",
+   "comunidad": "Aragón",
+   "escanos": 3,
+   "censo": 173391,
+   "censo_cera": 8142,
+   "votantes": 121148,
+   "votantes_cera": 958,
+   "nulos": 1253,
+   "blancos": 1217,
+   "validos": 119895,
+   "votos_candidaturas": 118678,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 45783,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 40307,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 15155,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 13774,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "EXISTE",
+     "denominacion": "Coalición Existe",
+     "votos": 1312,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "EXISTE",
+      "denominacion": "ARAGÓN EXISTE - COALICIÓN EXISTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PAR",
+     "denominacion": "Partido Aragonés",
+     "votos": 717,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PAR",
+      "denominacion": "PARTIDO ARAGONÉS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 498,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ESCAÑOS EN BLANCO",
+     "denominacion": "Escaños en Blanco para dejar Escaños Vacíos",
+     "votos": 475,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "ESCAÑOS EN BLANCO",
+      "denominacion": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 258,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 137,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 114,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FIA",
+     "denominacion": "Federación de los Independientes de Aragón",
+     "votos": 84,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "F.I.A.",
+      "denominacion": "FEDERACIÓN DE LOS INDEPENDIENTES DE ARAGÓN"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 64,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "23": {
+   "nombre": "Jaén",
+   "comunidad": "Andalucía",
+   "escanos": 5,
+   "censo": 518371,
+   "censo_cera": 13546,
+   "votantes": 373657,
+   "votantes_cera": 1560,
+   "nulos": 4926,
+   "blancos": 2497,
+   "validos": 368731,
+   "votos_candidaturas": 366234,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 137617,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 133819,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 54400,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 29461,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "JM+",
+     "denominacion": "Jaén Merece Más",
+     "votos": 8293,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "JM+",
+      "denominacion": "JAÉN MERECE MÁS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 1671,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 410,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 360,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 203,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "24": {
+   "nombre": "León",
+   "comunidad": "Castilla y León",
+   "escanos": 4,
+   "censo": 422917,
+   "censo_cera": 48645,
+   "votantes": 277726,
+   "votantes_cera": 3984,
+   "nulos": 2486,
+   "blancos": 1577,
+   "validos": 275240,
+   "votos_candidaturas": 273663,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 101605,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 92578,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 35451,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "UPL",
+     "denominacion": "Unión del Pueblo Leones",
+     "votos": 22675,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "U.P.L.",
+      "denominacion": "UNIÓN DEL PUEBLO LEONÉS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 18577,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 895,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 541,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ESPAÑA VACIADA",
+     "denominacion": "España Vaciada",
+     "votos": 486,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "ESPAÑA VACIADA",
+      "denominacion": "ESPAÑA VACIADA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 319,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PREPAL",
+     "denominacion": "Partido Regionalista del País Leonés",
+     "votos": 309,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PREPAL",
+      "denominacion": "PARTIDO REGIONALISTA DEL PAÍS LEONÉS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 155,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 72,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "25": {
+   "nombre": "Lleida",
+   "comunidad": "Cataluña",
+   "escanos": 4,
+   "censo": 317225,
+   "censo_cera": 18277,
+   "votantes": 186929,
+   "votantes_cera": 1758,
+   "nulos": 2390,
+   "blancos": 2059,
+   "validos": 184539,
+   "votos_candidaturas": 182480,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PSC",
+     "denominacion": "Partit dels Socialistes de Catalunya (PSC-PSOE)",
+     "votos": 54414,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ERC",
+     "denominacion": "Esquerra Republicana de Catalunya",
+     "votos": 34331,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "ERC",
+      "denominacion": "ESQUERRA REPUBLICANA DE CATALUNYA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "JUNTS",
+     "denominacion": "Junts",
+     "votos": 33228,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "JxCAT - JUNTS",
+      "denominacion": "JUNTS PER CATALUNYA - JUNTS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 23699,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 14561,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 12560,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "CUP-PR",
+     "denominacion": "Candidatura D'Unitat Popular-Per La Ruptura",
+     "votos": 5449,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "CUP-PR",
+      "denominacion": "CANDIDATURA D'UNITAT POPULAR-PER LA RUPTURA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PDeCAT-E-CiU",
+     "denominacion": "Partit Demòcrata Europeu Català-Espai CIU",
+     "votos": 1865,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PDeCAT-E-CiU",
+      "denominacion": "PARTIT DEMÒCRATA EUROPEU CATALÀ-ESPAI CIU"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 1352,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ESCAÑOS EN BLANCO",
+     "denominacion": "Escaños en Blanco para dejar Escaños Vacíos",
+     "votos": 462,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "ESCAÑOS EN BLANCO",
+      "denominacion": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 247,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 192,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 120,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "26": {
+   "nombre": "La Rioja",
+   "comunidad": "La Rioja",
+   "escanos": 4,
+   "censo": 252091,
+   "censo_cera": 17708,
+   "votantes": 176945,
+   "votantes_cera": 1487,
+   "nulos": 2282,
+   "blancos": 1608,
+   "validos": 174663,
+   "votos_candidaturas": 173055,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 79715,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 62322,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 17056,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 11470,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 723,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ESCAÑOS EN BLANCO",
+     "denominacion": "Escaños en Blanco para dejar Escaños Vacíos",
+     "votos": 608,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "ESCAÑOS EN BLANCO",
+      "denominacion": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 295,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "3e",
+     "denominacion": "Tercera Edad en Acción",
+     "votos": 286,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "3e",
+      "denominacion": "TERCERA EDAD EN ACCIÓN"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 232,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 224,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 124,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "27": {
+   "nombre": "Lugo",
+   "comunidad": "Galicia",
+   "escanos": 4,
+   "censo": 337755,
+   "censo_cera": 69098,
+   "votantes": 200709,
+   "votantes_cera": 3737,
+   "nulos": 2143,
+   "blancos": 1251,
+   "validos": 198566,
+   "votos_candidaturas": 197315,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 99769,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 60163,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "BNG",
+     "denominacion": "Bloque Nacionalista Galego",
+     "votos": 17197,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "B.N.G.",
+      "denominacion": "BLOQUE NACIONALISTA GALEGO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 10287,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 8643,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 645,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 233,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 149,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 116,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 113,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "28": {
+   "nombre": "Madrid",
+   "comunidad": "Comunidad de Madrid",
+   "escanos": 37,
+   "censo": 5224561,
+   "censo_cera": 376504,
+   "votantes": 3639500,
+   "votantes_cera": 44807,
+   "nulos": 30827,
+   "blancos": 28960,
+   "validos": 3608673,
+   "votos_candidaturas": 3579713,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 1463183,
+     "escanos": 16,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 1004599,
+     "escanos": 10,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 557780,
+     "escanos": 6,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 506164,
+     "escanos": 5,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 21742,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 7652,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 6749,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 3784,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 3407,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PH",
+     "denominacion": "Partido Humanista",
+     "votos": 2902,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PH",
+      "denominacion": "PARTIDO HUMANISTA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FE de las JONS",
+     "denominacion": "Falange Española de las JONS",
+     "votos": 1751,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FE de las JONS",
+      "denominacion": "FALANGE ESPAÑOLA DE LAS J.O.N.S."
+     }
+    }
+   ]
+  },
+  "29": {
+   "nombre": "Málaga",
+   "comunidad": "Andalucía",
+   "escanos": 11,
+   "censo": 1239846,
+   "censo_cera": 60853,
+   "votantes": 798557,
+   "votantes_cera": 5615,
+   "nulos": 10219,
+   "blancos": 7509,
+   "validos": 788338,
+   "votos_candidaturas": 780829,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 302000,
+     "escanos": 5,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 239172,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 129758,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 96652,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 8487,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 1662,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 1519,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 888,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "CJ",
+     "denominacion": "Caminando Juntos",
+     "votos": 691,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "CJ",
+      "denominacion": "CAMINANDO JUNTOS"
+     }
+    }
+   ]
+  },
+  "30": {
+   "nombre": "Murcia",
+   "comunidad": "Región de Murcia",
+   "escanos": 10,
+   "censo": 1099703,
+   "censo_cera": 37760,
+   "votantes": 755255,
+   "votantes_cera": 3544,
+   "nulos": 7458,
+   "blancos": 5034,
+   "validos": 747797,
+   "votos_candidaturas": 742763,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 307972,
+     "escanos": 4,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 189210,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 163124,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 71578,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 5063,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "POR MI REGIÓN",
+     "denominacion": "Por Mi Región",
+     "votos": 1698,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "POR MI REGIÓN",
+      "denominacion": "POR MI REGIÓN"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ESCAÑOS EN BLANCO",
+     "denominacion": "Escaños en Blanco para dejar Escaños Vacíos",
+     "votos": 1377,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "ESCAÑOS EN BLANCO",
+      "denominacion": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 1201,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 546,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "CJ",
+     "denominacion": "Caminando Juntos",
+     "votos": 453,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "CJ",
+      "denominacion": "CAMINANDO JUNTOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FE de las JONS",
+     "denominacion": "Falange Española de las JONS",
+     "votos": 376,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FE de las JONS",
+      "denominacion": "FALANGE ESPAÑOLA DE LAS J.O.N.S."
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "+RDS+",
+     "denominacion": "Referéndum Sistema Dinero",
+     "votos": 165,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "+RDS+",
+      "denominacion": "REFERÉNDUM SISTEMA DINERO"
+     }
+    }
+   ]
+  },
+  "31": {
+   "nombre": "Navarra",
+   "comunidad": "Comunidad Foral de Navarra",
+   "escanos": 5,
+   "censo": 519918,
+   "censo_cera": 29940,
+   "votantes": 345095,
+   "votantes_cera": 2811,
+   "nulos": 3251,
+   "blancos": 2890,
+   "validos": 341844,
+   "votos_candidaturas": 338954,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 93553,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "EH Bildu",
+     "denominacion": "Euskal Herria Bildu",
+     "votos": 58954,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "EH Bildu",
+      "denominacion": "EUSKAL HERRIA BILDU"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 57134,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "UPN",
+     "denominacion": "Unión del Pueblo Navarro",
+     "votos": 52188,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "U.P.N.",
+      "denominacion": "UNION DEL PUEBLO NAVARRO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 43922,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 19491,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "GBAI",
+     "denominacion": "Geroa Bai",
+     "votos": 9938,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "GBAI",
+      "denominacion": "GEROA BAI"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 1530,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 1002,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 679,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 311,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 252,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "32": {
+   "nombre": "Ourense",
+   "comunidad": "Galicia",
+   "escanos": 4,
+   "censo": 355765,
+   "censo_cera": 102938,
+   "votantes": 188065,
+   "votantes_cera": 5849,
+   "nulos": 1794,
+   "blancos": 1109,
+   "validos": 186271,
+   "votos_candidaturas": 185162,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 93182,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 56035,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "BNG",
+     "denominacion": "Bloque Nacionalista Galego",
+     "votos": 15317,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "B.N.G.",
+      "denominacion": "BLOQUE NACIONALISTA GALEGO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 10171,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 9080,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 700,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 182,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "CCD",
+     "denominacion": "Coalición de Centro Democrático",
+     "votos": 153,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "CCD",
+      "denominacion": "COALICIÓN DE CENTRO DEMOCRÁTICO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 144,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 101,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 97,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "33": {
+   "nombre": "Asturias",
+   "comunidad": "Principado de Asturias",
+   "escanos": 7,
+   "censo": 959023,
+   "censo_cera": 123430,
+   "votantes": 603183,
+   "votantes_cera": 8766,
+   "nulos": 6151,
+   "blancos": 6079,
+   "validos": 597032,
+   "votos_candidaturas": 590953,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 212816,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 205049,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 88630,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 74571,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 3167,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ESPAÑA VACIADA",
+     "denominacion": "España Vaciada",
+     "votos": 2314,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "ASTURIAS EXISTE EV",
+      "denominacion": "ASTURIAS EXISTE-ESPAÑA VACIADA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 1598,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 1176,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 773,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 590,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUEDE",
+     "denominacion": "Partido Unionista Estado de España",
+     "votos": 269,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUEDE",
+      "denominacion": "PARTIDO UNIONISTA ESTADO DE ESPAÑA"
+     }
+    }
+   ]
+  },
+  "34": {
+   "nombre": "Palencia",
+   "comunidad": "Castilla y León",
+   "escanos": 3,
+   "censo": 137642,
+   "censo_cera": 7513,
+   "votantes": 98079,
+   "votantes_cera": 770,
+   "nulos": 1117,
+   "blancos": 833,
+   "validos": 96962,
+   "votos_candidaturas": 96129,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 40709,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 33613,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 12504,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 5877,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VP",
+     "denominacion": "Vamos Palencia",
+     "votos": 1917,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VP",
+      "denominacion": "VAMOS PALENCIA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ESPAÑA VACIADA",
+     "denominacion": "España Vaciada",
+     "votos": 384,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "ESPAÑA VACIADA",
+      "denominacion": "ESPAÑA VACIADA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "GITV",
+     "denominacion": "Grupo Independiente Palencia Tierra Viva",
+     "votos": 366,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "GITV",
+      "denominacion": "GRUPO INDEPENDIENTE PALENCIA TIERRA VIVA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 295,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 139,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 99,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 80,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FE de las JONS",
+     "denominacion": "Falange Española de las JONS",
+     "votos": 71,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FE de las JONS",
+      "denominacion": "FALANGE ESPAÑOLA DE LAS J.O.N.S."
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 42,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "CJ",
+     "denominacion": "Caminando Juntos",
+     "votos": 33,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "CJ",
+      "denominacion": "CAMINANDO JUNTOS"
+     }
+    }
+   ]
+  },
+  "35": {
+   "nombre": "Las Palmas",
+   "comunidad": "Canarias",
+   "escanos": 8,
+   "censo": 898882,
+   "censo_cera": 55641,
+   "votantes": 534912,
+   "votantes_cera": 2627,
+   "nulos": 5575,
+   "blancos": 3062,
+   "validos": 529337,
+   "votos_candidaturas": 526275,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 175671,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 136857,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 77343,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 54369,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "NC-bc",
+     "denominacion": "Nueva Canarias-Bloque Canarista",
+     "votos": 42430,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "NC-bc",
+      "denominacion": "NUEVA CANARIAS - BLOQUE CANARISTA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "CCa",
+     "denominacion": "Coalición Canaria",
+     "votos": 33558,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "CCa",
+      "denominacion": "COALICIÓN CANARIA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 3570,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "AHORA CANARIAS-PCPC",
+     "denominacion": "Ahora Canarias-Partido Comunista del Pueblo Canario",
+     "votos": 883,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "AHORA CANARIAS-PCPC",
+      "denominacion": "AHORA CANARIAS-PARTIDO COMUNISTA DEL PUEBLO CANARIO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 635,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 563,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 396,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "36": {
+   "nombre": "Pontevedra",
+   "comunidad": "Galicia",
+   "escanos": 7,
+   "censo": 909434,
+   "censo_cera": 136739,
+   "votantes": 579125,
+   "votantes_cera": 9830,
+   "nulos": 6001,
+   "blancos": 3865,
+   "validos": 573124,
+   "votos_candidaturas": 569259,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 227658,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 179737,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 75615,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "BNG",
+     "denominacion": "Bloque Nacionalista Galego",
+     "votos": 53828,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "B.N.G.",
+      "denominacion": "BLOQUE NACIONALISTA GALEGO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 27539,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 3003,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 884,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 510,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 485,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    }
+   ]
+  },
+  "37": {
+   "nombre": "Salamanca",
+   "comunidad": "Castilla y León",
+   "escanos": 4,
+   "censo": 300506,
+   "censo_cera": 31638,
+   "votantes": 201419,
+   "votantes_cera": 2522,
+   "nulos": 2309,
+   "blancos": 1649,
+   "validos": 199110,
+   "votos_candidaturas": 197461,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 93318,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 60718,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 29203,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 11012,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ESPAÑA VACIADA",
+     "denominacion": "España Vaciada",
+     "votos": 1062,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "ESPAÑA VACIADA",
+      "denominacion": "ESPAÑA VACIADA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 631,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PREPAL",
+     "denominacion": "Partido Regionalista del País Leonés",
+     "votos": 489,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PREPAL",
+      "denominacion": "PARTIDO REGIONALISTA DEL PAÍS LEONÉS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 325,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 278,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 205,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "CJ",
+     "denominacion": "Caminando Juntos",
+     "votos": 140,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "CJ",
+      "denominacion": "CAMINANDO JUNTOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 80,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "38": {
+   "nombre": "Santa Cruz de Tenerife",
+   "comunidad": "Canarias",
+   "escanos": 7,
+   "censo": 881217,
+   "censo_cera": 107213,
+   "votantes": 500777,
+   "votantes_cera": 4658,
+   "nulos": 6404,
+   "blancos": 5088,
+   "validos": 494373,
+   "votos_candidaturas": 489285,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 174770,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 165590,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "CCa",
+     "denominacion": "Coalición Canaria",
+     "votos": 82805,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "CCa",
+      "denominacion": "COALICIÓN CANARIA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 53632,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 6147,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "NC-bc",
+     "denominacion": "Nueva Canarias-Bloque Canarista",
+     "votos": 3165,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "NC-bc",
+      "denominacion": "NUEVA CANARIAS - BLOQUE CANARISTA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 1619,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "AHORA CANARIAS-PCPC",
+     "denominacion": "Ahora Canarias-Partido Comunista del Pueblo Canario",
+     "votos": 791,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "AHORA CANARIAS-PCPC",
+      "denominacion": "AHORA CANARIAS-PARTIDO COMUNISTA DEL PUEBLO CANARIO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 766,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "39": {
+   "nombre": "Cantabria",
+   "comunidad": "Cantabria",
+   "escanos": 5,
+   "censo": 507818,
+   "censo_cera": 41229,
+   "votantes": 355145,
+   "votantes_cera": 3463,
+   "nulos": 4995,
+   "blancos": 3262,
+   "validos": 350150,
+   "votos_candidaturas": 346888,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 147326,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 116596,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 49243,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 29713,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 2089,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 790,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 598,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 533,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "40": {
+   "nombre": "Segovia",
+   "comunidad": "Castilla y León",
+   "escanos": 3,
+   "censo": 119454,
+   "censo_cera": 3645,
+   "votantes": 89945,
+   "votantes_cera": 564,
+   "nulos": 1332,
+   "blancos": 875,
+   "validos": 88613,
+   "votos_candidaturas": 87738,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 39894,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 27113,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 12510,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 7137,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 307,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "3e",
+     "denominacion": "Tercera Edad en Acción",
+     "votos": 198,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "3e",
+      "denominacion": "TERCERA EDAD EN ACCIÓN"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 183,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 136,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "CJ",
+     "denominacion": "Caminando Juntos",
+     "votos": 102,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "CJ",
+      "denominacion": "CAMINANDO JUNTOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 94,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 64,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "41": {
+   "nombre": "Sevilla",
+   "comunidad": "Andalucía",
+   "escanos": 12,
+   "censo": 1564082,
+   "censo_cera": 38534,
+   "votantes": 1075133,
+   "votantes_cera": 4697,
+   "nulos": 15775,
+   "blancos": 10951,
+   "validos": 1059358,
+   "votos_candidaturas": 1048407,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 387760,
+     "escanos": 5,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 353663,
+     "escanos": 4,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 148745,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 141087,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 9288,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 1950,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 1765,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 1522,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 1034,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "CJ",
+     "denominacion": "Caminando Juntos",
+     "votos": 912,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "CJ",
+      "denominacion": "CAMINANDO JUNTOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FE de las JONS",
+     "denominacion": "Falange Española de las JONS",
+     "votos": 681,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FE de las JONS",
+      "denominacion": "FALANGE ESPAÑOLA DE LAS J.O.N.S."
+     }
+    }
+   ]
+  },
+  "42": {
+   "nombre": "Soria",
+   "comunidad": "Castilla y León",
+   "escanos": 2,
+   "censo": 75768,
+   "censo_cera": 7305,
+   "votantes": 51157,
+   "votantes_cera": 678,
+   "nulos": 388,
+   "blancos": 285,
+   "validos": 50769,
+   "votos_candidaturas": 50484,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 18895,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 14966,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SY",
+     "denominacion": "Soria ¡Ya!",
+     "votos": 9697,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SY",
+      "denominacion": "SORIA ¡YA!"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 4978,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 1711,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 94,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 68,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 43,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 23,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 9,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "43": {
+   "nombre": "Tarragona",
+   "comunidad": "Cataluña",
+   "escanos": 6,
+   "censo": 596689,
+   "censo_cera": 21576,
+   "votantes": 372426,
+   "votantes_cera": 1992,
+   "nulos": 4402,
+   "blancos": 3168,
+   "validos": 368024,
+   "votos_candidaturas": 364856,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PSC",
+     "denominacion": "Partit dels Socialistes de Catalunya (PSC-PSOE)",
+     "votos": 121126,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ERC",
+     "denominacion": "Esquerra Republicana de Catalunya",
+     "votos": 55461,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "ERC",
+      "denominacion": "ESQUERRA REPUBLICANA DE CATALUNYA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 51061,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 41719,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "JUNTS",
+     "denominacion": "Junts",
+     "votos": 40791,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "JxCAT - JUNTS",
+      "denominacion": "JUNTS PER CATALUNYA - JUNTS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 38039,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "CUP-PR",
+     "denominacion": "Candidatura D'Unitat Popular-Per La Ruptura",
+     "votos": 8700,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "CUP-PR",
+      "denominacion": "CANDIDATURA D'UNITAT POPULAR-PER LA RUPTURA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 3797,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PDeCAT-E-CiU",
+     "denominacion": "Partit Demòcrata Europeu Català-Espai CIU",
+     "votos": 2311,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PDeCAT-E-CiU",
+      "denominacion": "PARTIT DEMÒCRATA EUROPEU CATALÀ-ESPAI CIU"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 661,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 405,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 267,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "EVR",
+     "denominacion": "Entre Veïns Catalunya",
+     "votos": 265,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "EVC",
+      "denominacion": "ENTRE VEÏNS CATALUNYA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "UNIDOS SI",
+     "denominacion": "Unidos por la Solidaridad Internacional",
+     "votos": 253,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "UNIDOS SI",
+      "denominacion": "UNIDOS POR LA SOLIDARIDAD INTERNACIONAL"
+     }
+    }
+   ]
+  },
+  "44": {
+   "nombre": "Teruel",
+   "comunidad": "Aragón",
+   "escanos": 3,
+   "censo": 106352,
+   "censo_cera": 5103,
+   "votantes": 76561,
+   "votantes_cera": 443,
+   "nulos": 648,
+   "blancos": 410,
+   "validos": 75913,
+   "votos_candidaturas": 75503,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 26586,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 22226,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "EXISTE",
+     "denominacion": "Coalición Existe",
+     "votos": 11348,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "EXISTE",
+      "denominacion": "ARAGÓN EXISTE - COALICIÓN EXISTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 9932,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 4126,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PAR",
+     "denominacion": "Partido Aragonés",
+     "votos": 711,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PAR",
+      "denominacion": "PARTIDO ARAGONÉS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 172,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ESCAÑOS EN BLANCO",
+     "denominacion": "Escaños en Blanco para dejar Escaños Vacíos",
+     "votos": 135,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "ESCAÑOS EN BLANCO",
+      "denominacion": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 94,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 60,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 49,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 36,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FIA",
+     "denominacion": "Federación de los Independientes de Aragón",
+     "votos": 28,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "F.I.A.",
+      "denominacion": "FEDERACIÓN DE LOS INDEPENDIENTES DE ARAGÓN"
+     }
+    }
+   ]
+  },
+  "45": {
+   "nombre": "Toledo",
+   "comunidad": "Castilla - La Mancha",
+   "escanos": 6,
+   "censo": 542567,
+   "censo_cera": 13256,
+   "votantes": 392988,
+   "votantes_cera": 1711,
+   "nulos": 5788,
+   "blancos": 2611,
+   "validos": 387200,
+   "votos_candidaturas": 384589,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 146533,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 126072,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 76044,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 31876,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 2024,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 985,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 499,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FE de las JONS",
+     "denominacion": "Falange Española de las JONS",
+     "votos": 281,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FE de las JONS",
+      "denominacion": "FALANGE ESPAÑOLA DE LAS J.O.N.S."
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 275,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "46": {
+   "nombre": "València/Valencia",
+   "comunidad": "Comunitat Valenciana",
+   "escanos": 16,
+   "censo": 1999340,
+   "censo_cera": 70391,
+   "votantes": 1451187,
+   "votantes_cera": 7519,
+   "nulos": 14026,
+   "blancos": 10810,
+   "validos": 1437161,
+   "votos_candidaturas": 1426351,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 483469,
+     "escanos": 6,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 461353,
+     "escanos": 5,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 242839,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 218657,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 10334,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 2919,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 1778,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 1773,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "EVB",
+     "denominacion": "Estat Valencià del Benestar",
+     "votos": 1442,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "EVB",
+      "denominacion": "ESTAT VALENCIÀ DEL BENESTAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "CJ",
+     "denominacion": "Caminando Juntos",
+     "votos": 1056,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "CJ",
+      "denominacion": "CAMINANDO JUNTOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FE de las JONS",
+     "denominacion": "Falange Española de las JONS",
+     "votos": 731,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FE de las JONS",
+      "denominacion": "FALANGE ESPAÑOLA DE LAS J.O.N.S."
+     }
+    }
+   ]
+  },
+  "47": {
+   "nombre": "Valladolid",
+   "comunidad": "Castilla y León",
+   "escanos": 5,
+   "censo": 431381,
+   "censo_cera": 14735,
+   "votantes": 319312,
+   "votantes_cera": 2165,
+   "nulos": 3003,
+   "blancos": 2419,
+   "validos": 316309,
+   "votos_candidaturas": 313890,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 129170,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 103596,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 47948,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 28049,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ESPAÑA VACIADA",
+     "denominacion": "España Vaciada",
+     "votos": 1226,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "ESPAÑA VACIADA",
+      "denominacion": "ESPAÑA VACIADA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 1105,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 601,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ESCAÑOS EN BLANCO",
+     "denominacion": "Escaños en Blanco para dejar Escaños Vacíos",
+     "votos": 583,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "ESCAÑOS EN BLANCO",
+      "denominacion": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "Ud.Ca",
+     "denominacion": "Unidad Castellana",
+     "votos": 463,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "Ud.Ca",
+      "denominacion": "UNIDAD CASTELLANA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 376,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 335,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FE de las JONS",
+     "denominacion": "Falange Española de las JONS",
+     "votos": 164,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FE de las JONS",
+      "denominacion": "FALANGE ESPAÑOLA DE LAS J.O.N.S."
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 159,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FUERZA CÍVICA",
+     "denominacion": "Fuerza Cívica",
+     "votos": 115,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FUERZA CÍVICA",
+      "denominacion": "FUERZA CÍVICA"
+     }
+    }
+   ]
+  },
+  "48": {
+   "nombre": "Bizkaia",
+   "comunidad": "País Vasco",
+   "escanos": 8,
+   "censo": 942983,
+   "censo_cera": 42420,
+   "votantes": 614944,
+   "votantes_cera": 3596,
+   "nulos": 5251,
+   "blancos": 3391,
+   "validos": 609693,
+   "votos_candidaturas": 606302,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "EAJ-PNV",
+     "denominacion": "Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco",
+     "votos": 164188,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "EAJ-PNV",
+      "denominacion": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 157448,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "EH Bildu",
+     "denominacion": "Euskal Herria Bildu",
+     "votos": 125867,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "EH Bildu",
+      "denominacion": "EUSKAL HERRIA BILDU"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 70533,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 66592,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 16069,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 2729,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 929,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 804,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 618,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 525,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "49": {
+   "nombre": "Zamora",
+   "comunidad": "Castilla y León",
+   "escanos": 3,
+   "censo": 162998,
+   "censo_cera": 20839,
+   "votantes": 104671,
+   "votantes_cera": 1746,
+   "nulos": 1261,
+   "blancos": 922,
+   "validos": 103410,
+   "votos_candidaturas": 102488,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 46196,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 33601,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 13652,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 5839,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "Zsi",
+     "denominacion": "Zamora Sí",
+     "votos": 1843,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "Zsi",
+      "denominacion": "ZAMORA SÍ"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "UPL",
+     "denominacion": "Unión del Pueblo Leones",
+     "votos": 526,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "U.P.L.",
+      "denominacion": "UNIÓN DEL PUEBLO LEONÉS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 313,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PREPAL",
+     "denominacion": "Partido Regionalista del País Leonés",
+     "votos": 166,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PREPAL",
+      "denominacion": "PARTIDO REGIONALISTA DEL PAÍS LEONÉS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 121,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 100,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 81,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 50,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  },
+  "50": {
+   "nombre": "Zaragoza",
+   "comunidad": "Aragón",
+   "escanos": 7,
+   "censo": 740060,
+   "censo_cera": 26555,
+   "votantes": 523410,
+   "votantes_cera": 4071,
+   "nulos": 4705,
+   "blancos": 4693,
+   "validos": 518705,
+   "votos_candidaturas": 514012,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 186776,
+     "escanos": 3,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 159858,
+     "escanos": 2,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 79376,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 69925,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "EXISTE",
+     "denominacion": "Coalición Existe",
+     "votos": 7780,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "EXISTE",
+      "denominacion": "ARAGÓN EXISTE - COALICIÓN EXISTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PAR",
+     "denominacion": "Partido Aragonés",
+     "votos": 2745,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PAR",
+      "denominacion": "PARTIDO ARAGONÉS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 2428,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "ESCAÑOS EN BLANCO",
+     "denominacion": "Escaños en Blanco para dejar Escaños Vacíos",
+     "votos": 2146,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "ESCAÑOS EN BLANCO",
+      "denominacion": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 1026,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PCTE",
+     "denominacion": "Partido Comunista de los Trabajadores de España",
+     "votos": 561,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PCTE",
+      "denominacion": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 419,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FIA",
+     "denominacion": "Federación de los Independientes de Aragón",
+     "votos": 394,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "F.I.A.",
+      "denominacion": "FEDERACIÓN DE LOS INDEPENDIENTES DE ARAGÓN"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 306,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FE de las JONS",
+     "denominacion": "Falange Española de las JONS",
+     "votos": 272,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FE de las JONS",
+      "denominacion": "FALANGE ESPAÑOLA DE LAS J.O.N.S."
+     }
+    }
+   ]
+  },
+  "51": {
+   "nombre": "Ceuta",
+   "comunidad": "Ciudad de Ceuta",
+   "escanos": 1,
+   "censo": 63310,
+   "censo_cera": 2975,
+   "votantes": 33674,
+   "votantes_cera": 89,
+   "nulos": 353,
+   "blancos": 328,
+   "validos": 33321,
+   "votos_candidaturas": 32993,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 12918,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 11332,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 7752,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 821,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "FO",
+     "denominacion": "Frente Obrero",
+     "votos": 53,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "FO",
+      "denominacion": "FRENTE OBRERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "LB",
+     "denominacion": "Libres",
+     "votos": 53,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "LB",
+      "denominacion": "LIBRES"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 33,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 31,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    }
+   ]
+  },
+  "52": {
+   "nombre": "Melilla",
+   "comunidad": "Ciudad de Melilla",
+   "escanos": 1,
+   "censo": 61118,
+   "censo_cera": 5968,
+   "votantes": 27649,
+   "votantes_cera": 177,
+   "nulos": 300,
+   "blancos": 253,
+   "validos": 27349,
+   "votos_candidaturas": 27096,
+   "candidaturas": [
+    {
+     "codigo": null,
+     "siglas": "PP",
+     "denominacion": "Partido Popular",
+     "votos": 13446,
+     "escanos": 1,
+     "agrupacion": {
+      "siglas": "PP",
+      "denominacion": "PARTIDO POPULAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PSOE",
+     "denominacion": "Partido Socialista Obrero Español",
+     "votos": 6943,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PSOE",
+      "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "votos": 4359,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "VOX",
+      "denominacion": "VOX"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "CpM",
+     "denominacion": "Coalición por Melilla",
+     "votos": 1298,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "CpM",
+      "denominacion": "COALICIÓN POR MELILLA"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "SUMAR",
+     "denominacion": "Sumar",
+     "votos": 827,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "SUMAR",
+      "denominacion": "SUMAR"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PACMA",
+     "denominacion": "Partido Animalista con el Medio Ambiente",
+     "votos": 160,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PACMA",
+      "denominacion": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "PUM+J",
+     "denominacion": "Por un Mundo más Justo",
+     "votos": 40,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "PUM+J",
+      "denominacion": "POR UN MUNDO MÁS JUSTO"
+     }
+    },
+    {
+     "codigo": null,
+     "siglas": "RECORTES CERO",
+     "denominacion": "Recortes Cero",
+     "votos": 23,
+     "escanos": 0,
+     "agrupacion": {
+      "siglas": "RECORTES CERO",
+      "denominacion": "RECORTES CERO"
+     }
+    }
+   ]
+  }
+ }
+}

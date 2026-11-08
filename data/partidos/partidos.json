@@ -1,0 +1,1375 @@
+{
+  "meta": {
+    "checked_at": "2026-11-08T22:05:00+01:00",
+    "eleccion": "Elecciones generales 29-11-2026 (RD 806/2026, BOE 6-10-2026)",
+    "universo": "Candidaturas al Congreso con escaños en la XV legislatura (elegida el 23-J 2023) o sus sucesoras, más las proyectadas con ≥1 escaño en al menos una encuesta reciente de un instituto reconocido. Detalle y exclusiones en data/partidos/NOTAS.md.",
+    "candidaturas_fuente": "BOE-A-2026-23103 (3-11-2026) y corrección BOE-A-2026-23383 (7-11-2026)",
+    "escanos_2023_fuente": "Resultados 23-J 2023 (JEC, BOE-A-2023-18907)"
+  },
+  "partidos": [
+    {
+      "id": "pp",
+      "nombre": "Partido Popular",
+      "siglas": "PP",
+      "candidaturas_boe": [
+        "PARTIDO POPULAR (PP)",
+        "PARTIT POPULAR / PARTIDO POPULAR (PP) (Barcelona, Girona, Tarragona)"
+      ],
+      "ambito": "estatal",
+      "comunidades": [
+        "Andalucía",
+        "Aragón",
+        "Asturias",
+        "Illes Balears",
+        "Canarias",
+        "Cantabria",
+        "Castilla-La Mancha",
+        "Castilla y León",
+        "Cataluña",
+        "Comunitat Valenciana",
+        "Extremadura",
+        "Galicia",
+        "Comunidad de Madrid",
+        "Región de Murcia",
+        "País Vasco",
+        "La Rioja",
+        "Ceuta",
+        "Melilla"
+      ],
+      "circunscripciones": [
+        "ALMERÍA",
+        "CÁDIZ",
+        "CÓRDOBA",
+        "GRANADA",
+        "HUELVA",
+        "JAÉN",
+        "MÁLAGA",
+        "SEVILLA",
+        "HUESCA",
+        "TERUEL",
+        "ZARAGOZA",
+        "ASTURIAS",
+        "ILLES BALEARS",
+        "LAS PALMAS",
+        "SANTA CRUZ DE TENERIFE",
+        "CANTABRIA",
+        "ALBACETE",
+        "CIUDAD REAL",
+        "CUENCA",
+        "GUADALAJARA",
+        "TOLEDO",
+        "ÁVILA",
+        "BURGOS",
+        "LEÓN",
+        "PALENCIA",
+        "SALAMANCA",
+        "SEGOVIA",
+        "SORIA",
+        "VALLADOLID",
+        "ZAMORA",
+        "BARCELONA",
+        "GIRONA",
+        "LLEIDA",
+        "TARRAGONA",
+        "ALICANTE",
+        "CASTELLÓN",
+        "VALENCIA",
+        "BADAJOZ",
+        "CÁCERES",
+        "A CORUÑA",
+        "LUGO",
+        "OURENSE",
+        "PONTEVEDRA",
+        "MADRID",
+        "MURCIA",
+        "ÁLAVA",
+        "BIZKAIA",
+        "GIPUZKOA",
+        "LA RIOJA",
+        "CEUTA",
+        "MELILLA"
+      ],
+      "coalicion": [],
+      "candidato": "Alberto Núñez Feijóo",
+      "cabezas_de_lista": {
+        "MADRID": "Alberto Núñez Feijóo",
+        "BARCELONA": "Xavier García Albiol"
+      },
+      "web": "https://www.pp.es/",
+      "en_congreso_xv": true,
+      "escanos_2023": 137,
+      "escanos_2023_nota": "137 escaños del PP en 2023; UPN (1) se contabiliza aparte (entrada upn).",
+      "proyeccion_motivo": "Escaños en el Congreso de la XV legislatura (elegido el 23-J 2023).",
+      "programa": {
+        "estado": "no_publicado",
+        "url": null,
+        "fecha": null,
+        "titulo": null,
+        "paginas": null,
+        "sha256": null,
+        "fichero": null,
+        "texto": null,
+        "checked_at": "2026-11-08T21:52:00+01:00",
+        "anunciado": {
+          "fecha": "2026-11-10",
+          "detalle": "Según Europa Press (7-nov, reproducido por Periódico de Ibiza), Feijóo y Alma Ezcurra presentarán el programa «el martes» en Madrid. Anuncio en medios; no consta en pp.es.",
+          "fuente": "https://www.periodicodeibiza.es/noticias/elecciones-29n/2026/11/07/2745009/ninguna-ccaa-tendra-financiacion-singular-estos-son-principales-puntos-del-programa-del-para-elecciones-generales.html"
+        }
+      },
+      "programa_aplicable": "Programa nacional del PP en las 51 circunscripciones donde concurre como PP (incluida Cataluña). En Navarra concurre la coalición UPN-PP (ver upn).",
+      "notas": "pp.es/actualidad/documentos solo publica argumentarios diarios «Hablemos Claro». El «Contrato con España» (12 compromisos, firmado el 19-oct según medios) no es el programa y no se encontró en pp.es.",
+      "fuentes": [
+        "https://www.pp.es/",
+        "https://www.pp.es/actualidad/documentos/",
+        "https://www.pp.es/wp-content/uploads/2026/10/LISTAS-PP-CONGRESO-Y-SENADO-29N.pdf",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ]
+    },
+    {
+      "id": "upn",
+      "nombre": "Unión del Pueblo Navarro en coalición con el Partido Popular",
+      "siglas": "UPN-PP",
+      "candidaturas_boe": [
+        "UNIÓN DEL PUEBLO NAVARRO EN COALICIÓN CON EL PARTIDO POPULAR (UPN-PP)"
+      ],
+      "ambito": "autonómico",
+      "comunidades": [
+        "Navarra"
+      ],
+      "circunscripciones": [
+        "NAVARRA"
+      ],
+      "coalicion": [
+        "Unión del Pueblo Navarro (UPN)",
+        "Partido Popular (PP)"
+      ],
+      "candidato": "Leticia San Martín Rodríguez (UPN), cabeza de lista por Navarra; candidato a la Presidencia de la coalición: Alberto Núñez Feijóo",
+      "cabezas_de_lista": {
+        "NAVARRA": "Leticia San Martín Rodríguez (UPN)"
+      },
+      "web": "https://www.upn.org/",
+      "en_congreso_xv": true,
+      "escanos_2023": 1,
+      "escanos_2023_nota": "UPN concurrió en solitario en 2023 y obtuvo 1 escaño (Navarra).",
+      "proyeccion_motivo": "Escaño de UPN en el Congreso de la XV legislatura.",
+      "programa": {
+        "estado": "no_publicado",
+        "url": null,
+        "fecha": null,
+        "titulo": null,
+        "paginas": null,
+        "sha256": null,
+        "fichero": null,
+        "texto": null,
+        "checked_at": "2026-11-08T21:54:00+01:00",
+        "anunciado": null
+      },
+      "programa_aplicable": "Según el preacuerdo UPN-PP (13-oct-2026), el programa de la coalición lo redacta una comisión conjunta de ambos partidos: en Navarra aplica ese programa conjunto, no solo el del PP. Sin fecha anunciada.",
+      "notas": "Los electos de UPN irán al Grupo Mixto según el acuerdo. ppnavarra.es no muestra contenido del 29N.",
+      "fuentes": [
+        "https://www.upn.org/upn-y-pp-alcanzan-un-principio-de-acuerdo-para-concurrir-juntos-a-las-elecciones-generales/",
+        "https://www.upn.org/el-consejo-politico-de-upn-aprueba-el-acuerdo-para-concurrir-con-el-pp-a-las-elecciones-generales/",
+        "https://www.upn.org/el-consejo-politico-de-upn-designa-a-los-candidatos-al-congreso-y-senado-dentro-de-la-coalicion-con-el-pp/",
+        "https://www.juntaelectoralcentral.es/cs/jec/documentos/Navarra_UPN-PP.pdf",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ]
+    },
+    {
+      "id": "psoe",
+      "nombre": "Partido Socialista Obrero Español",
+      "siglas": "PSOE",
+      "candidaturas_boe": [
+        "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+        "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) PSE-EE (Álava, Bizkaia, Gipuzkoa)",
+        "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE (PSdeG-PSOE) (A Coruña, Lugo, Ourense, Pontevedra)",
+        "PARTIDO SOCIALISTA DE NAVARRA-PSOE (PSN-PSOE)",
+        "PARTIDO SOCIALISTA DE LAS ISLAS BALEARES (PSIB-PSOE)",
+        "PARTIDO SOCIALISTA DE HUELVA (PSOE) (así figura en el BOE)"
+      ],
+      "ambito": "estatal",
+      "comunidades": [
+        "Andalucía",
+        "Aragón",
+        "Asturias",
+        "Illes Balears",
+        "Canarias",
+        "Cantabria",
+        "Castilla-La Mancha",
+        "Castilla y León",
+        "Comunitat Valenciana",
+        "Extremadura",
+        "Galicia",
+        "Comunidad de Madrid",
+        "Región de Murcia",
+        "Navarra",
+        "País Vasco",
+        "La Rioja",
+        "Ceuta",
+        "Melilla"
+      ],
+      "circunscripciones": [
+        "ALMERÍA",
+        "CÁDIZ",
+        "CÓRDOBA",
+        "GRANADA",
+        "HUELVA",
+        "JAÉN",
+        "MÁLAGA",
+        "SEVILLA",
+        "HUESCA",
+        "TERUEL",
+        "ZARAGOZA",
+        "ASTURIAS",
+        "ILLES BALEARS",
+        "LAS PALMAS",
+        "SANTA CRUZ DE TENERIFE",
+        "CANTABRIA",
+        "ALBACETE",
+        "CIUDAD REAL",
+        "CUENCA",
+        "GUADALAJARA",
+        "TOLEDO",
+        "ÁVILA",
+        "BURGOS",
+        "LEÓN",
+        "PALENCIA",
+        "SALAMANCA",
+        "SEGOVIA",
+        "SORIA",
+        "VALLADOLID",
+        "ZAMORA",
+        "ALICANTE",
+        "CASTELLÓN",
+        "VALENCIA",
+        "BADAJOZ",
+        "CÁCERES",
+        "A CORUÑA",
+        "LUGO",
+        "OURENSE",
+        "PONTEVEDRA",
+        "MADRID",
+        "MURCIA",
+        "NAVARRA",
+        "ÁLAVA",
+        "BIZKAIA",
+        "GIPUZKOA",
+        "LA RIOJA",
+        "CEUTA",
+        "MELILLA"
+      ],
+      "coalicion": [],
+      "candidato": "Pedro Sánchez Pérez-Castejón",
+      "cabezas_de_lista": {
+        "MADRID": "Pedro Sánchez Pérez-Castejón"
+      },
+      "web": "https://www.psoe.es/",
+      "en_congreso_xv": true,
+      "escanos_2023": 102,
+      "escanos_2023_nota": "102 escaños de las candidaturas del PSOE fuera de Cataluña; con los 19 del PSC el Grupo Socialista sumó 121.",
+      "proyeccion_motivo": "Escaños en el Congreso de la XV legislatura.",
+      "programa": {
+        "estado": "no_publicado",
+        "url": null,
+        "fecha": null,
+        "titulo": null,
+        "paginas": null,
+        "sha256": null,
+        "fichero": null,
+        "texto": null,
+        "checked_at": "2026-11-08T21:55:00+01:00",
+        "anunciado": null,
+        "verificacion": "No verificado de primera mano: psoe.es devuelve un desafío anti-bots de Imperva/Incapsula (no se ha intentado sortear). Estado basado en webs de federaciones (psn-psoe.org, socialistas.gal) y fuentes secundarias."
+      },
+      "programa_aplicable": "Programa federal del PSOE en las 48 circunscripciones fuera de Cataluña (incluidas las listas con marca PSE-EE, PSdeG, PSN, PSIB). En Cataluña concurre el PSC (ver psc).",
+      "notas": "Sin fecha de publicación anunciada encontrada; Demócrata (21-oct) indica que Cristina Narbona coordina el programa: https://www.democrata.es/elecciones-generales-espana/29n-como-elaboran-programas-electorales-fases-plazos-quien-decide-propuestas-partidos/",
+      "fuentes": [
+        "https://www.psoe.es/",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ]
+    },
+    {
+      "id": "psc",
+      "nombre": "Partit dels Socialistes de Catalunya",
+      "siglas": "PSC",
+      "candidaturas_boe": [
+        "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE) (PSC)"
+      ],
+      "ambito": "autonómico",
+      "comunidades": [
+        "Cataluña"
+      ],
+      "circunscripciones": [
+        "BARCELONA",
+        "GIRONA",
+        "LLEIDA",
+        "TARRAGONA"
+      ],
+      "coalicion": [],
+      "candidato": "Jordi Hereu Boher (cabeza de lista por Barcelona)",
+      "cabezas_de_lista": {
+        "BARCELONA": "Jordi Hereu Boher",
+        "GIRONA": "Marc Lamuà Estañol",
+        "LLEIDA": "Cristina Morón Molina",
+        "TARRAGONA": "Ione Montalvo Aguirrezabala"
+      },
+      "web": "https://www.socialistes.cat/",
+      "en_congreso_xv": true,
+      "escanos_2023": 19,
+      "escanos_2023_nota": "19 escaños en Cataluña en 2023, integrados en el Grupo Socialista (121 con el PSOE).",
+      "proyeccion_motivo": "Escaños en el Congreso de la XV legislatura.",
+      "programa": {
+        "estado": "no_publicado",
+        "url": null,
+        "fecha": null,
+        "titulo": null,
+        "paginas": null,
+        "sha256": null,
+        "fichero": null,
+        "texto": null,
+        "checked_at": "2026-11-08T21:53:00+01:00",
+        "anunciado": null
+      },
+      "programa_aplicable": "No determinado: el PSC es candidatura propia (no coalición con el PSOE). En generales anteriores ha publicado programa propio (p. ej. 2011), por lo que puede publicar uno o asumir el del PSOE. Sin confirmar.",
+      "notas": "Revisadas entradas y archivos de socialistes.cat desde octubre de 2026: sin programa del 29N.",
+      "fuentes": [
+        "https://www.socialistes.cat/",
+        "https://www.socialistes.cat/wp-content/uploads/2022/03/2011_programa_electoral_psc_eleccions_generals_espanya_2011_cat.pdf",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ]
+    },
+    {
+      "id": "vox",
+      "nombre": "Vox",
+      "siglas": "VOX",
+      "candidaturas_boe": [
+        "VOX (VOX)"
+      ],
+      "ambito": "estatal",
+      "comunidades": [
+        "Andalucía",
+        "Aragón",
+        "Asturias",
+        "Illes Balears",
+        "Canarias",
+        "Cantabria",
+        "Castilla-La Mancha",
+        "Castilla y León",
+        "Cataluña",
+        "Comunitat Valenciana",
+        "Extremadura",
+        "Galicia",
+        "Comunidad de Madrid",
+        "Región de Murcia",
+        "Navarra",
+        "País Vasco",
+        "La Rioja",
+        "Ceuta",
+        "Melilla"
+      ],
+      "circunscripciones": [
+        "ALMERÍA",
+        "CÁDIZ",
+        "CÓRDOBA",
+        "GRANADA",
+        "HUELVA",
+        "JAÉN",
+        "MÁLAGA",
+        "SEVILLA",
+        "HUESCA",
+        "TERUEL",
+        "ZARAGOZA",
+        "ASTURIAS",
+        "ILLES BALEARS",
+        "LAS PALMAS",
+        "SANTA CRUZ DE TENERIFE",
+        "CANTABRIA",
+        "ALBACETE",
+        "CIUDAD REAL",
+        "CUENCA",
+        "GUADALAJARA",
+        "TOLEDO",
+        "ÁVILA",
+        "BURGOS",
+        "LEÓN",
+        "PALENCIA",
+        "SALAMANCA",
+        "SEGOVIA",
+        "SORIA",
+        "VALLADOLID",
+        "ZAMORA",
+        "BARCELONA",
+        "GIRONA",
+        "LLEIDA",
+        "TARRAGONA",
+        "ALICANTE",
+        "CASTELLÓN",
+        "VALENCIA",
+        "BADAJOZ",
+        "CÁCERES",
+        "A CORUÑA",
+        "LUGO",
+        "OURENSE",
+        "PONTEVEDRA",
+        "MADRID",
+        "MURCIA",
+        "NAVARRA",
+        "ÁLAVA",
+        "BIZKAIA",
+        "GIPUZKOA",
+        "LA RIOJA",
+        "CEUTA",
+        "MELILLA"
+      ],
+      "coalicion": [],
+      "candidato": "Santiago Abascal Conde",
+      "cabezas_de_lista": {
+        "MADRID": "Santiago Abascal Conde",
+        "BARCELONA": "Juan José Aizcorbe Torra"
+      },
+      "web": "https://www.voxespana.es/",
+      "en_congreso_xv": true,
+      "escanos_2023": 33,
+      "escanos_2023_nota": null,
+      "proyeccion_motivo": "Escaños en el Congreso de la XV legislatura.",
+      "programa": {
+        "estado": "no_publicado",
+        "url": null,
+        "fecha": null,
+        "titulo": null,
+        "paginas": null,
+        "sha256": null,
+        "fichero": null,
+        "texto": null,
+        "checked_at": "2026-11-08T22:01:00+01:00",
+        "anunciado": null
+      },
+      "programa_aplicable": "Programa único estatal.",
+      "notas": "voxespana.es/programa solo enlaza programas de 2019; voxespana.es/programa/programa-electoral-vox devuelve «No se ha encontrado la página». Portada sin programa ni fecha anunciada.",
+      "fuentes": [
+        "https://www.voxespana.es/",
+        "https://www.voxespana.es/programa",
+        "https://www.voxespana.es/programa/programa-electoral-vox",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ]
+    },
+    {
+      "id": "frente_amplio",
+      "nombre": "Frente Amplio",
+      "siglas": "FA",
+      "candidaturas_boe": [
+        "Frente Amplio (FA)",
+        "Comuns-Front Ampli (COMUNS-FRONT AMPLI) (Cataluña)",
+        "Chunta Aragonesista-Frente Amplio Aragón (CHA-IU-MS-FRENTE AMPLIO) (Huesca, Zaragoza)",
+        "Frente Amplio Andaluz (FA) (Cádiz, Córdoba, Granada, Huelva, Sevilla; en Almería, Jaén y Málaga figura como Frente Amplio (FA))",
+        "Frente Amplio-Fronte Ampla (Galicia)",
+        "FRENTE AMPLIO-FRONTE ZABALA (Álava, Navarra; en Bizkaia y Gipuzkoa figura como Frente Amplio (FA))",
+        "FRENTE AMPLIU POR ASTURIES (FA)"
+      ],
+      "ambito": "estatal",
+      "comunidades": [
+        "Andalucía",
+        "Aragón",
+        "Asturias",
+        "Cantabria",
+        "Castilla-La Mancha",
+        "Castilla y León",
+        "Cataluña",
+        "Extremadura",
+        "Galicia",
+        "Comunidad de Madrid",
+        "Región de Murcia",
+        "Navarra",
+        "País Vasco",
+        "La Rioja"
+      ],
+      "circunscripciones": [
+        "ALMERÍA",
+        "CÁDIZ",
+        "CÓRDOBA",
+        "GRANADA",
+        "HUELVA",
+        "JAÉN",
+        "MÁLAGA",
+        "SEVILLA",
+        "HUESCA",
+        "ZARAGOZA",
+        "ASTURIAS",
+        "CANTABRIA",
+        "ALBACETE",
+        "CIUDAD REAL",
+        "CUENCA",
+        "GUADALAJARA",
+        "TOLEDO",
+        "ÁVILA",
+        "BURGOS",
+        "LEÓN",
+        "PALENCIA",
+        "SALAMANCA",
+        "SEGOVIA",
+        "SORIA",
+        "VALLADOLID",
+        "ZAMORA",
+        "BARCELONA",
+        "GIRONA",
+        "LLEIDA",
+        "TARRAGONA",
+        "BADAJOZ",
+        "CÁCERES",
+        "A CORUÑA",
+        "LUGO",
+        "OURENSE",
+        "PONTEVEDRA",
+        "MADRID",
+        "MURCIA",
+        "NAVARRA",
+        "ÁLAVA",
+        "BIZKAIA",
+        "GIPUZKOA",
+        "LA RIOJA"
+      ],
+      "coalicion": [
+        "Izquierda Unida",
+        "Movimiento Sumar",
+        "Catalunya en Comú (Comuns)",
+        "Más Madrid",
+        "Chunta Aragonesista",
+        "Izquierda Asturiana",
+        "Recortes Cero",
+        "Batzarre",
+        "Verdes Equo",
+        "Iniciativa del Pueblo Andaluz",
+        "Somos"
+      ],
+      "candidato": "Ada Colau Ballano (cabeza de lista por Barcelona, Comuns-Front Ampli)",
+      "cabezas_de_lista": {
+        "BARCELONA": "Ada Colau Ballano",
+        "MADRID": "Emilio Delgado Orgaz",
+        "ZARAGOZA": "Marina Rodríguez Hernando (CHA)",
+        "HUESCA": "José Luis Parra Pascau (CHA)"
+      },
+      "web": "https://frenteamplio.info/",
+      "en_congreso_xv": true,
+      "escanos_2023": null,
+      "escanos_2023_nota": "En 2023 se eligió dentro de la coalición Sumar (31 escaños en total); no hay cifra propia de 2023 para esta candidatura. Wikipedia atribuye 22 de esos 31 a las formaciones hoy en Frente Amplio (atribución no oficial).",
+      "proyeccion_motivo": "Sus integrantes (Sumar, IU, Comuns, Más Madrid, CHA) tienen escaños en la XV legislatura.",
+      "programa": {
+        "estado": "no_publicado",
+        "url": null,
+        "fecha": null,
+        "titulo": null,
+        "paginas": null,
+        "sha256": null,
+        "fichero": null,
+        "texto": null,
+        "checked_at": "2026-11-08T21:57:00+01:00",
+        "anunciado": null
+      },
+      "programa_aplicable": "No consta si habrá programa marco común con anexos territoriales. En Baleares la marca es Ara Més-Front Ampli (entrada propia); en Comunitat Valenciana y Canarias no concurre (Compromís: Front Valencià y UPC); no concurre en Teruel, Ceuta ni Melilla.",
+      "notas": "frenteamplio.info (portada, sitemap, noticias hasta el 6-nov): sin programa; nota del 5-nov adelanta tres impuestos «que formarán parte del programa económico» (avance parcial, no programa). Revisados también comuns.cat, izquierdaunida.org, movimientosumar.es, masmadrid.org y chunta.org: sin programa del 29N. Dominios sumar.info, frenteamplio.es no son oficiales.",
+      "fuentes": [
+        "https://frenteamplio.info/",
+        "https://frenteamplio.info/noticias/frente-amplio-propone-subir-impuestos-grandes-fortunas-empresas-mejorar-servicios/",
+        "https://comuns.cat/transparencia/programes-electorals/",
+        "https://izquierdaunida.org/",
+        "https://www.chunta.org/chunta-aragonesista-y-frente-amplio-aragon-alcanzan-un-acuerdo-para-presentar-candidaturas-conjuntas-en-las-elecciones-generales/",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ]
+    },
+    {
+      "id": "podemos",
+      "nombre": "Podemos",
+      "siglas": "PODEMOS",
+      "candidaturas_boe": [
+        "PODEMOS (PODEMOS)",
+        "PODEMOS (PAZ,CASA Y TRABAJO) (Ceuta, así figura en el BOE)"
+      ],
+      "ambito": "estatal",
+      "comunidades": [
+        "Andalucía",
+        "Aragón",
+        "Asturias",
+        "Cantabria",
+        "Castilla-La Mancha",
+        "Castilla y León",
+        "Extremadura",
+        "Galicia",
+        "Comunidad de Madrid",
+        "Región de Murcia",
+        "Navarra",
+        "País Vasco",
+        "La Rioja",
+        "Ceuta"
+      ],
+      "circunscripciones": [
+        "ALMERÍA",
+        "CÁDIZ",
+        "CÓRDOBA",
+        "GRANADA",
+        "HUELVA",
+        "JAÉN",
+        "MÁLAGA",
+        "SEVILLA",
+        "HUESCA",
+        "TERUEL",
+        "ZARAGOZA",
+        "ASTURIAS",
+        "CANTABRIA",
+        "ALBACETE",
+        "CIUDAD REAL",
+        "CUENCA",
+        "GUADALAJARA",
+        "TOLEDO",
+        "ÁVILA",
+        "BURGOS",
+        "LEÓN",
+        "PALENCIA",
+        "SALAMANCA",
+        "SEGOVIA",
+        "SORIA",
+        "VALLADOLID",
+        "ZAMORA",
+        "BADAJOZ",
+        "CÁCERES",
+        "A CORUÑA",
+        "LUGO",
+        "OURENSE",
+        "PONTEVEDRA",
+        "MADRID",
+        "MURCIA",
+        "NAVARRA",
+        "ÁLAVA",
+        "BIZKAIA",
+        "GIPUZKOA",
+        "LA RIOJA",
+        "CEUTA"
+      ],
+      "coalicion": [],
+      "candidato": "Irene Montero Gil (cabeza de lista por Madrid)",
+      "cabezas_de_lista": {
+        "MADRID": "Irene Montero Gil"
+      },
+      "web": "https://podemos.info/",
+      "en_congreso_xv": true,
+      "escanos_2023": null,
+      "escanos_2023_nota": "En 2023 se eligió dentro de la coalición Sumar (31 escaños en total); no hay cifra propia de 2023 para esta candidatura. Podemos tenía 4 diputados de esa lista en la XV legislatura (Grupo Mixto).",
+      "proyeccion_motivo": "Diputados en la XV legislatura; además, 1 escaño en ElectoPanel/Electomanía (1-nov) y 0-1 en Sigma Dos/El Mundo (1-nov).",
+      "programa": {
+        "estado": "no_publicado",
+        "url": null,
+        "fecha": null,
+        "titulo": null,
+        "paginas": null,
+        "sha256": null,
+        "fichero": null,
+        "texto": null,
+        "checked_at": "2026-11-08T21:59:35+01:00",
+        "anunciado": null
+      },
+      "programa_aplicable": "Programa de Podemos en sus 41 circunscripciones. En la Comunitat Valenciana va dentro de Compromís: Front Valencià y en Canarias dentro de UPC (aplican los de esas coaliciones). En Cataluña no presenta lista y apoya a ERC; tampoco en Baleares ni Melilla.",
+      "notas": "Últimos archivos en podemos.info (19-oct): ninguno es programa del 29N (los «Programa» son de europeas 2024 y 2025). Consulta a la Asamblea del 16-oct aprobó la estrategia electoral. Civio indica que la lista de León no fue proclamada, pero el BOE de 3-nov (y su corrección de 7-nov) sí la recoge: se cuenta León.",
+      "fuentes": [
+        "https://podemos.info/",
+        "https://podemos.info/wp-content/uploads/2026/10/Consulta-a-la-Asamblea-Elecciones-Generales-26.pdf",
+        "https://podemos.info/resultados-de-la-consulta-a-la-asamblea-ciudadana-del-16-de-octubre/",
+        "https://electomania.es/electopanel-1-nov-el-psoe-baja-y-vuelve-a-minimos/",
+        "https://www.elmundo.es/espana/encuestas/2026/11/01/6ae77446e4d4d8f3698b458a.html",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
+        "https://civio.es/el-boe-nuestro-de-cada-dia/2026/11/03/candidaturas-proclamadas/",
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ]
+    },
+    {
+      "id": "compromis",
+      "nombre": "Compromís: Front Valencià",
+      "siglas": "COMPROMIS-EUPV-PODEM-ERPV",
+      "candidaturas_boe": [
+        "COMPROMÍS: FRONT VALENCIÀ (COMPROMIS-EUPV-PODEM-ERPV)"
+      ],
+      "ambito": "autonómico",
+      "comunidades": [
+        "Comunitat Valenciana"
+      ],
+      "circunscripciones": [
+        "ALICANTE",
+        "CASTELLÓN",
+        "VALENCIA"
+      ],
+      "coalicion": [
+        "Més-Compromís",
+        "Iniciativa del Poble Valencià",
+        "Verds Equo del País Valencià",
+        "Coalició Compromís",
+        "Podem",
+        "Esquerra Unida del País Valencià",
+        "Esquerra Republicana del País Valencià",
+        "Recortes Cero"
+      ],
+      "candidato": "Àgueda Micó Micó (cabeza de lista por Valencia)",
+      "cabezas_de_lista": {
+        "VALENCIA": "Àgueda Micó Micó",
+        "CASTELLÓN": "Ignasi García Felip",
+        "ALICANTE": "María Teresa Pérez Díaz"
+      },
+      "web": "https://compromis.net/",
+      "en_congreso_xv": true,
+      "escanos_2023": null,
+      "escanos_2023_nota": "En 2023 se eligió dentro de la coalición Sumar (31 escaños en total); no hay cifra propia de 2023 para esta candidatura. Wikipedia atribuye 4 de esos escaños a formaciones hoy en esta coalición (atribución no oficial).",
+      "proyeccion_motivo": "Diputados de Compromís en la XV legislatura.",
+      "programa": {
+        "estado": "no_publicado",
+        "url": null,
+        "fecha": null,
+        "titulo": null,
+        "paginas": null,
+        "sha256": null,
+        "fichero": null,
+        "texto": null,
+        "checked_at": "2026-11-08T21:58:00+01:00",
+        "anunciado": null
+      },
+      "programa_aplicable": "Programa único de la coalición (no consta programa propio de los socios).",
+      "notas": "compromis.net/info/programes sin entrada del 29N. La web frontvalencia.net muestra propuestas y un enlace «programa completo» pendiente; no está enlazada desde compromis.net y no se ha usado como fuente. Lista de socios según Wikipedia y siglas del BOE (no contrastada con el acta de la JEC).",
+      "fuentes": [
+        "https://compromis.net/info/programes",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ]
+    },
+    {
+      "id": "upc",
+      "nombre": "Unidad del Pueblo Canario",
+      "siglas": "UPC",
+      "candidaturas_boe": [
+        "UNIDAD DEL PUEBLO CANARIO UPC (NC-BC, PODEMOS, IU, SUMAR)"
+      ],
+      "ambito": "autonómico",
+      "comunidades": [
+        "Canarias"
+      ],
+      "circunscripciones": [
+        "LAS PALMAS",
+        "SANTA CRUZ DE TENERIFE"
+      ],
+      "coalicion": [
+        "Nueva Canarias-Bloque Canarista",
+        "Podemos Canarias",
+        "Izquierda Unida Canaria",
+        "Movimiento Sumar"
+      ],
+      "candidato": "Luis Alberto Campos Jiménez (cabeza de lista por Las Palmas)",
+      "cabezas_de_lista": {
+        "LAS PALMAS": "Luis Alberto Campos Jiménez",
+        "SANTA CRUZ DE TENERIFE": "María Soledad Collado Mirabal"
+      },
+      "web": "https://www.unidadpueblocanario.org/",
+      "en_congreso_xv": true,
+      "escanos_2023": null,
+      "escanos_2023_nota": "En 2023 se eligió dentro de la coalición Sumar (31 escaños en total); no hay cifra propia de 2023 para esta candidatura. La diputada Noemí Santana (Podemos Canarias) fue elegida en la lista de Sumar por Las Palmas; Wikipedia atribuye ese escaño a UPC.",
+      "proyeccion_motivo": "Escaño de un integrante (Podemos Canarias) en la XV legislatura; Sigma Dos/El Mundo (1-nov) da «un escaño en Canarias para CC o UPC».",
+      "programa": {
+        "estado": "no_publicado",
+        "url": null,
+        "fecha": null,
+        "titulo": null,
+        "paginas": null,
+        "sha256": null,
+        "fichero": null,
+        "texto": null,
+        "checked_at": "2026-11-08T21:58:26+01:00",
+        "anunciado": null,
+        "documento_programatico": {
+          "tipo": "Manifiesto electoral (16 ejes); no se denomina programa",
+          "url": "https://www.unidadpueblocanario.org/documentos/manifiesto-upc.pdf",
+          "fecha": "2026-11-03",
+          "fecha_fuente": "Cabecera HTTP Last-Modified (Tue, 03 Nov 2026 13:33:36 GMT); PDF ModDate 2026-10-30",
+          "titulo": "Manifiesto electoral de la Unidad del Pueblo Canario (UPC) – Una sola papeleta. Todo un pueblo",
+          "paginas": 6,
+          "sha256": "502ce157ba499fb959e5ed735f593f903c2e5f17c79ee28bf2daad8ca18c941b",
+          "fichero": "data/sources/programas/upc/manifiesto-upc.pdf",
+          "texto": "data/sources/programas/upc/manifiesto-upc.txt",
+          "pagina_html": "data/sources/programas/upc/manifiesto-page.html"
+        }
+      },
+      "programa_aplicable": "Documento de la coalición para ambas circunscripciones canarias.",
+      "notas": "Se marca no_publicado porque el único documento es un «Manifiesto electoral» breve (~1.340 palabras) y la web lo presenta como «Manifiesto», no como programa. Decisión editorial revisable. Los dominios unidaddelpueblocanario.es (en venta) no son oficiales.",
+      "fuentes": [
+        "https://www.unidadpueblocanario.org/manifiesto",
+        "https://www.unidadpueblocanario.org/coalicion",
+        "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77000",
+        "https://www.elmundo.es/espana/encuestas/2026/11/01/6ae77446e4d4d8f3698b458a.html",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ]
+    },
+    {
+      "id": "ara_mes_fa",
+      "nombre": "Ara Més-Front Ampli",
+      "siglas": "ARAMÉS-EU-MS",
+      "candidaturas_boe": [
+        "ARAMÉS-FRONT AMPLI (ARAMÉS-EU-MS)"
+      ],
+      "ambito": "autonómico",
+      "comunidades": [
+        "Illes Balears"
+      ],
+      "circunscripciones": [
+        "ILLES BALEARS"
+      ],
+      "coalicion": [
+        "Ara Més",
+        "Esquerra Unida de les Illes Balears",
+        "Moviment Sumar Illes Balears",
+        "Progreso en Verde",
+        "Recortes Cero"
+      ],
+      "candidato": "Carme Gomila Domínguez",
+      "cabezas_de_lista": {
+        "ILLES BALEARS": "Carme Gomila Domínguez"
+      },
+      "web": "https://aramesfrontampli.cat/",
+      "en_congreso_xv": true,
+      "escanos_2023": null,
+      "escanos_2023_nota": "En 2023 se eligió dentro de la coalición Sumar (31 escaños en total); no hay cifra propia de 2023 para esta candidatura. Vicenç Vidal (Més per Mallorca) fue elegido en la lista de Sumar por Baleares.",
+      "proyeccion_motivo": "Escaño de un integrante (Més per Mallorca) en la XV legislatura.",
+      "programa": {
+        "estado": "no_publicado",
+        "url": null,
+        "fecha": null,
+        "titulo": null,
+        "paginas": null,
+        "sha256": null,
+        "fichero": null,
+        "texto": null,
+        "checked_at": "2026-11-08T21:57:00+01:00",
+        "anunciado": {
+          "fecha": null,
+          "detalle": "Programa en elaboración participativa desde el 3-nov-2026; sin fecha de publicación anunciada.",
+          "fuente": "https://aramesfrontampli.cat/noticies/ara-mes-front-ampli-obre-el-seu-programa-electoral-a-la-ciutadania-per-portar-les-preocupacions-reals-de-les-illes-balears-al-congres"
+        }
+      },
+      "programa_aplicable": "Programa propio de la coalición balear (pendiente).",
+      "notas": "Marca balear del espacio Frente Amplio, pero coalición electoral distinta en el BOE.",
+      "fuentes": [
+        "https://aramesfrontampli.cat/noticies/ara-mes-front-ampli-obre-el-seu-programa-electoral-a-la-ciutadania-per-portar-les-preocupacions-reals-de-les-illes-balears-al-congres",
+        "https://aramesfrontampli.cat/noticies/aramesfront-ampli-presenta-viure-be-viure-aqui-com-a-lema-de-campanya-per-a-les-eleccions-del-29-de-novembre",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ]
+    },
+    {
+      "id": "erc",
+      "nombre": "Esquerra Republicana de Catalunya",
+      "siglas": "ERC",
+      "candidaturas_boe": [
+        "ESQUERRA REPUBLICANA DE CATALUNYA (ERC)"
+      ],
+      "ambito": "autonómico",
+      "comunidades": [
+        "Cataluña"
+      ],
+      "circunscripciones": [
+        "BARCELONA",
+        "GIRONA",
+        "LLEIDA",
+        "TARRAGONA"
+      ],
+      "coalicion": [],
+      "candidato": "Gabriel Rufián Romero",
+      "cabezas_de_lista": {
+        "BARCELONA": "Gabriel Rufián Romero",
+        "GIRONA": "Teresa Jordà Roura",
+        "LLEIDA": "Inés Granollers i Cunillera",
+        "TARRAGONA": "Norma Pujol Farré"
+      },
+      "web": "https://www.esquerra.cat/",
+      "en_congreso_xv": true,
+      "escanos_2023": 7,
+      "escanos_2023_nota": null,
+      "proyeccion_motivo": "Escaños en el Congreso de la XV legislatura.",
+      "programa": {
+        "estado": "publicado",
+        "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+        "fecha": "2026-11-05",
+        "fecha_fuente": "HTTP Last-Modified (Thu, 05 Nov 2026 15:33:49 GMT) y CreationDate del PDF (2026-11-05 16:31 CET); no se encontró nota de prensa en esquerra.cat",
+        "titulo": "Eleccions al Congrés 2026 – Programa electoral («Pel país. Per la gent. Pel futur.»)",
+        "idioma": "ca",
+        "paginas": 48,
+        "sha256": "528ac115c09d5d60089ca85344678b211aaccbbde5f1699321a1660131f2b087",
+        "fichero": "data/sources/programas/erc/e2026-programa.pdf",
+        "texto": "data/sources/programas/erc/e2026-programa.txt",
+        "checked_at": "2026-11-08T21:55:00+01:00"
+      },
+      "programa_aplicable": "Programa único para las cuatro circunscripciones catalanas. Solo en catalán (no se encontró versión en castellano).",
+      "notas": "esquerrarepublicana.cat es dominio propio de ERC (redirige a esquerra.cat). Cabecera de cada página: «Eleccions al Congrés 2026». En el Senado concurre en coalición ERC-EH Bildu. Podemos no presenta lista en Cataluña y pide el voto para ERC.",
+      "fuentes": [
+        "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+        "https://www.esquerra.cat/",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ]
+    },
+    {
+      "id": "junts",
+      "nombre": "Junts per Catalunya",
+      "siglas": "JxCat",
+      "candidaturas_boe": [
+        "JUNTS PER CATALUNYA (JxCat)"
+      ],
+      "ambito": "autonómico",
+      "comunidades": [
+        "Cataluña"
+      ],
+      "circunscripciones": [
+        "BARCELONA",
+        "GIRONA",
+        "LLEIDA",
+        "TARRAGONA"
+      ],
+      "coalicion": [],
+      "candidato": "Míriam Nogueras i Camero",
+      "cabezas_de_lista": {
+        "BARCELONA": "Míriam Nogueras i Camero",
+        "GIRONA": "Marta Madrenas i Mir",
+        "LLEIDA": "Isidre Gavín i Valls",
+        "TARRAGONA": "Josep Maria Cruset i Domènech"
+      },
+      "web": "https://junts.cat/",
+      "en_congreso_xv": true,
+      "escanos_2023": 7,
+      "escanos_2023_nota": null,
+      "proyeccion_motivo": "Escaños en el Congreso de la XV legislatura.",
+      "programa": {
+        "estado": "no_publicado",
+        "url": null,
+        "fecha": null,
+        "titulo": null,
+        "paginas": null,
+        "sha256": null,
+        "fichero": null,
+        "texto": null,
+        "checked_at": "2026-11-08T21:56:00+01:00",
+        "anunciado": null
+      },
+      "programa_aplicable": "Programa único para Cataluña (pendiente).",
+      "notas": "El último programa en la sección de transparencia es el de las autonómicas 12M 2024.",
+      "fuentes": [
+        "https://junts.cat/actualitat/nogueras-cruset-madrenas-i-gavin-encapcalaran-les-llistes-a-les-eleccions-generals-del-29n/",
+        "https://junts.cat/actualitat/documents-transparen/programa-electoral-12m-2024/",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ]
+    },
+    {
+      "id": "eh_bildu",
+      "nombre": "Euskal Herria Bildu",
+      "siglas": "EH Bildu",
+      "candidaturas_boe": [
+        "EUSKAL HERRIA BILDU (EH BILDU)"
+      ],
+      "ambito": "autonómico",
+      "comunidades": [
+        "Navarra",
+        "País Vasco"
+      ],
+      "circunscripciones": [
+        "NAVARRA",
+        "ÁLAVA",
+        "BIZKAIA",
+        "GIPUZKOA"
+      ],
+      "coalicion": [],
+      "candidato": "Oskar Matute García de Jalón (cabeza de lista por Bizkaia)",
+      "cabezas_de_lista": {
+        "ÁLAVA": "Mikel Otero Gabirondo",
+        "BIZKAIA": "Oskar Matute Garcia de Jalón",
+        "GIPUZKOA": "Oihana Etxebarrieta Legrand",
+        "NAVARRA": "Eneka Maiz Ulaiar"
+      },
+      "web": "https://ehbildu.eus/",
+      "en_congreso_xv": true,
+      "escanos_2023": 6,
+      "escanos_2023_nota": null,
+      "proyeccion_motivo": "Escaños en el Congreso de la XV legislatura.",
+      "programa": {
+        "estado": "no_publicado",
+        "url": null,
+        "fecha": null,
+        "titulo": null,
+        "paginas": null,
+        "sha256": null,
+        "fichero": null,
+        "texto": null,
+        "checked_at": "2026-11-08T21:57:00+01:00",
+        "anunciado": null
+      },
+      "programa_aplicable": "No consta programa navarro separado; comprobar cuando se publique.",
+      "notas": "En Navarra el BOE de 3-nov la nombraba «EH Bildu-ERC»; la corrección BOE-A-2026-23383 (7-nov) la deja como «EUSKAL HERRIA BILDU (EH BILDU)». En el Senado va en coalición con ERC. El 8-nov presentó el lema «Posible Egin», sin programa.",
+      "fuentes": [
+        "https://ehbildu.eus/es/documentos",
+        "https://ehbildu.eus/es/noticias/eh-bildu-va-a-celebrar-el-mayor-acto-politico-jamas-celebrado-en-este-pais-en-una-campana-electoral-el-14-de-noviembre-en-bilbao",
+        "https://www.boe.es/boe/dias/2026/11/07/pdfs/BOE-A-2026-23383.pdf",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ]
+    },
+    {
+      "id": "pnv",
+      "nombre": "Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco",
+      "siglas": "EAJ-PNV",
+      "candidaturas_boe": [
+        "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO (EAJ-PNV)"
+      ],
+      "ambito": "autonómico",
+      "comunidades": [
+        "País Vasco"
+      ],
+      "circunscripciones": [
+        "ÁLAVA",
+        "BIZKAIA",
+        "GIPUZKOA"
+      ],
+      "coalicion": [],
+      "candidato": "Maribel Vaquero Montero (cabeza de lista por Gipuzkoa)",
+      "cabezas_de_lista": {
+        "ÁLAVA": "Gorka Urtaran Agirre",
+        "BIZKAIA": "Idoia Sagastizabal Unzetabarrenetxea",
+        "GIPUZKOA": "Maribel Vaquero Montero"
+      },
+      "web": "https://www.eaj-pnv.eus/",
+      "en_congreso_xv": true,
+      "escanos_2023": 5,
+      "escanos_2023_nota": null,
+      "proyeccion_motivo": "Escaños en el Congreso de la XV legislatura.",
+      "programa": {
+        "estado": "no_publicado",
+        "url": null,
+        "fecha": null,
+        "titulo": null,
+        "paginas": null,
+        "sha256": null,
+        "fichero": null,
+        "texto": null,
+        "checked_at": "2026-11-08T21:57:00+01:00",
+        "anunciado": {
+          "fecha": "2026-11-09T16:00:00+01:00",
+          "detalle": "Presentación del programa electoral para el 29-N en Sabin Etxea (Bilbao) por Vaquero, Sagastizabal y Urtaran (agenda oficial del partido).",
+          "fuente": "https://www.eaj-pnv.eus/es/agenda/35660/actos/presentacion-del-programa-electoral-de-eaj-pnv-par"
+        }
+      },
+      "programa_aplicable": "Programa único (no concurre en Navarra).",
+      "notas": "El último programa en /es/documentos es el de europeas 2024. Volver a comprobar tras el 9-nov.",
+      "fuentes": [
+        "https://www.eaj-pnv.eus/es/agenda/35660/actos/presentacion-del-programa-electoral-de-eaj-pnv-par",
+        "https://www.eaj-pnv.eus/es/documentos",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ]
+    },
+    {
+      "id": "bng",
+      "nombre": "Bloque Nacionalista Galego",
+      "siglas": "BNG",
+      "candidaturas_boe": [
+        "BLOQUE NACIONALISTA GALEGO (BNG)",
+        "BLOQUE NACIONALISTA GALEGO (B.N.G.) (A Coruña)"
+      ],
+      "ambito": "autonómico",
+      "comunidades": [
+        "Galicia"
+      ],
+      "circunscripciones": [
+        "A CORUÑA",
+        "LUGO",
+        "OURENSE",
+        "PONTEVEDRA"
+      ],
+      "coalicion": [],
+      "candidato": "Néstor Rego Candamil (cabeza de lista por A Coruña)",
+      "cabezas_de_lista": {
+        "A CORUÑA": "Néstor Rego Candamil",
+        "LUGO": "Olalla Rodil Fernández",
+        "OURENSE": "Noa Presas Bergantiños",
+        "PONTEVEDRA": "María Carme da Silva Méndez"
+      },
+      "web": "https://www.bng.gal/",
+      "en_congreso_xv": true,
+      "escanos_2023": 1,
+      "escanos_2023_nota": null,
+      "proyeccion_motivo": "Escaño en el Congreso de la XV legislatura.",
+      "programa": {
+        "estado": "publicado",
+        "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+        "fecha": "2026-11-03",
+        "fecha_fuente": "Ruta de subida /2026/11/03/ y HTTP Last-Modified (Tue, 03 Nov 2026 15:01:27 GMT); PDF creado el 2-nov; no se encontró nota de prensa del lanzamiento",
+        "titulo": "Programa electoral 29N. Xerais 2026",
+        "idioma": "gl",
+        "paginas": 91,
+        "sha256": "fd5aef260b9c66d030b57b7b0e18914c8ad79384e2c46b2346d9fb4f6514a97d",
+        "fichero": "data/sources/programas/bng/26_bng_xerais_documentos_programa_electoral.pdf",
+        "texto": "data/sources/programas/bng/26_bng_xerais_documentos_programa_electoral.txt",
+        "checked_at": "2026-11-08T21:54:00+01:00",
+        "otros_documentos": [
+          {
+            "tipo": "Decálogo complementario (no es el programa), presentado el 7-nov como «Axenda Galega»",
+            "titulo": "Dez compromisos do BNG – 29N Xerais 2026",
+            "paginas": 13,
+            "sha256": "59132ef7a28c7569f2a7ef90ce4ec6ea5cb771cce31775f834f1611fd4f2e552",
+            "fichero": "data/sources/programas/bng/29N_Decalogo_de_compromisos_BNG.pdf",
+            "texto": "data/sources/programas/bng/29N_Decalogo_de_compromisos_BNG.txt"
+          }
+        ]
+      },
+      "programa_aplicable": "Programa único para las cuatro circunscripciones gallegas. Solo en gallego.",
+      "notas": "Enlazado desde la página oficial de programas del BNG.",
+      "fuentes": [
+        "https://www.bng.gal/estaticas/programas-eleitorais.html",
+        "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+        "https://www.bng.gal/articulo/novas/bng-presenta-axenda-galega-defender-galiza-madrid-avanzar-dereitos-mellorar-vida-das-persoas/20261107154118043809.html",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ]
+    },
+    {
+      "id": "cc",
+      "nombre": "Coalición Canaria-Municipalistas Primero Canarias",
+      "siglas": "CCa-1.ºCAN",
+      "candidaturas_boe": [
+        "Coalición Canaria-Municipalistas Primero Canarias (CCa-1.ºCAN) (Santa Cruz de Tenerife)",
+        "MUNICIPALISTAS PRIMERO CANARIAS-COALICIÓN CANARIA (1.ºCAN-CCa) (Las Palmas)"
+      ],
+      "ambito": "autonómico",
+      "comunidades": [
+        "Canarias"
+      ],
+      "circunscripciones": [
+        "LAS PALMAS",
+        "SANTA CRUZ DE TENERIFE"
+      ],
+      "coalicion": [
+        "Coalición Canaria",
+        "Municipalistas Primero Canarias"
+      ],
+      "candidato": "Cristina Valido García (cabeza de lista por Santa Cruz de Tenerife)",
+      "cabezas_de_lista": {
+        "SANTA CRUZ DE TENERIFE": "Cristina Valido García",
+        "LAS PALMAS": "Teodoro Claret Sosa Monzón"
+      },
+      "web": "https://coalicioncanaria.org/",
+      "en_congreso_xv": true,
+      "escanos_2023": 1,
+      "escanos_2023_nota": "Escaño obtenido por Coalición Canaria en 2023.",
+      "proyeccion_motivo": "Escaño en el Congreso de la XV legislatura.",
+      "programa": {
+        "estado": "publicado",
+        "url": "https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf",
+        "fecha": "2026-11-08",
+        "fecha_fuente": "Sin nota de prensa; fecha de subida a WordPress y HTTP Last-Modified (Sun, 08 Nov 2026 17:10:10 GMT); ModDate del PDF 2026-11-08 18:03 CET (CreationDate 27-oct = borrador de diseño)",
+        "titulo": "Bases del programa electoral de Coalición Canaria y Municipalistas Primero Canarias para las elecciones generales 29N – «Defiende Canarias»",
+        "paginas": 23,
+        "sha256": "3c40c0a6e38d8dd80ae1061d94b614f4e3f1b6492ec8c801834fb497f337044e",
+        "fichero": "data/sources/programas/cc/CCA-26-Programa_Electoral-29NOV.pdf",
+        "texto": "data/sources/programas/cc/CCA-26-Programa_Electoral-29NOV.txt",
+        "checked_at": "2026-11-08T21:56:00+01:00"
+      },
+      "programa_aplicable": "Programa conjunto para las dos circunscripciones canarias. El propio documento se titula «Bases del programa»; la portada de coalicioncanaria.org lo enlaza como «Descargar Programa electoral».",
+      "notas": "PDF de 69,2 MB. Texto: «29 DE NOVIEMBRE DE 2026». primerocanarias.com no muestra programa propio.",
+      "fuentes": [
+        "https://coalicioncanaria.org/",
+        "https://coalicioncanaria.org/programas-electorales/",
+        "https://coalicioncanaria.org/coalicion-canaria-primero-canarias-y-una-veintena-de-fuerzas-sellan-la-unidad-para-defender-canarias-en-madrid/",
+        "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=76990",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
+        "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ]
+    },
+    {
+      "id": "adelante_andalucia",
+      "nombre": "Adelante Andalucía",
+      "siglas": "ADELANTE ANDALUCÍA",
+      "candidaturas_boe": [
+        "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)"
+      ],
+      "ambito": "autonómico",
+      "comunidades": [
+        "Andalucía"
+      ],
+      "circunscripciones": [
+        "ALMERÍA",
+        "CÁDIZ",
+        "CÓRDOBA",
+        "GRANADA",
+        "HUELVA",
+        "JAÉN",
+        "MÁLAGA",
+        "SEVILLA"
+      ],
+      "coalicion": [],
+      "candidato": "Luis María de los Santos Castillo (cabeza de lista por Sevilla)",
+      "cabezas_de_lista": {
+        "ALMERÍA": "Tania Ferre Carrión",
+        "CÁDIZ": "María Sánchez Barrada",
+        "CÓRDOBA": "María del Carmen Sánchez Solís",
+        "GRANADA": "María Alcantud López",
+        "HUELVA": "Carmen María Martín Carrasco",
+        "JAÉN": "Silvia Cano Contreras",
+        "MÁLAGA": "Ana María Jiménez Navarro",
+        "SEVILLA": "Luis María de los Santos Castillo"
+      },
+      "web": "https://adelanteandalucia.org/",
+      "en_congreso_xv": false,
+      "escanos_2023": null,
+      "escanos_2023_nota": "No concurrió con escaño en 2023.",
+      "proyeccion_motivo": "Proyectado con escaños: Sigma Dos/El Mundo (29–30 oct, publicado 1-nov) 3–4; ElectoPanel/Electomanía (1-nov) 2.",
+      "programa": {
+        "estado": "no_publicado",
+        "url": null,
+        "fecha": null,
+        "titulo": null,
+        "paginas": null,
+        "sha256": null,
+        "fichero": null,
+        "texto": null,
+        "checked_at": "2026-11-08T21:57:00+01:00",
+        "anunciado": null
+      },
+      "programa_aplicable": "Programa único para las ocho provincias andaluzas (pendiente).",
+      "notas": "adelanteandalucia.org/programa contiene el programa de las autonómicas andaluzas de 2026 (PROGRAMA-AA-2026-DEF.pdf), no el del 29N. Comprobación limitada a la web del partido (presupuesto de búsquedas agotado).",
+      "fuentes": [
+        "https://adelanteandalucia.org/",
+        "https://adelanteandalucia.org/programa/",
+        "https://www.elmundo.es/espana/encuestas/2026/11/01/6ae77446e4d4d8f3698b458a.html",
+        "https://electomania.es/electopanel-1-nov-el-psoe-baja-y-vuelve-a-minimos/",
+        "https://es.wikipedia.org/wiki/Encuestas_de_opini%C3%B3n_para_las_elecciones_generales_de_Espa%C3%B1a_de_2026",
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ]
+    },
+    {
+      "id": "salf",
+      "nombre": "Se Acabó La Fiesta",
+      "siglas": "SALF",
+      "candidaturas_boe": [
+        "SE ACABÓ LA FIESTA (SALF)"
+      ],
+      "ambito": "estatal",
+      "comunidades": [
+        "Andalucía",
+        "Aragón",
+        "Asturias",
+        "Illes Balears",
+        "Canarias",
+        "Castilla-La Mancha",
+        "Castilla y León",
+        "Cataluña",
+        "Comunitat Valenciana",
+        "Extremadura",
+        "Galicia",
+        "Comunidad de Madrid",
+        "Región de Murcia",
+        "Navarra",
+        "País Vasco",
+        "La Rioja",
+        "Ceuta",
+        "Melilla"
+      ],
+      "circunscripciones": [
+        "ALMERÍA",
+        "CÁDIZ",
+        "CÓRDOBA",
+        "GRANADA",
+        "HUELVA",
+        "JAÉN",
+        "MÁLAGA",
+        "SEVILLA",
+        "HUESCA",
+        "TERUEL",
+        "ZARAGOZA",
+        "ASTURIAS",
+        "ILLES BALEARS",
+        "LAS PALMAS",
+        "SANTA CRUZ DE TENERIFE",
+        "ALBACETE",
+        "CUENCA",
+        "GUADALAJARA",
+        "TOLEDO",
+        "ÁVILA",
+        "BURGOS",
+        "LEÓN",
+        "PALENCIA",
+        "SALAMANCA",
+        "SEGOVIA",
+        "SORIA",
+        "VALLADOLID",
+        "ZAMORA",
+        "BARCELONA",
+        "TARRAGONA",
+        "ALICANTE",
+        "CASTELLÓN",
+        "VALENCIA",
+        "BADAJOZ",
+        "CÁCERES",
+        "A CORUÑA",
+        "LUGO",
+        "OURENSE",
+        "PONTEVEDRA",
+        "MADRID",
+        "MURCIA",
+        "NAVARRA",
+        "ÁLAVA",
+        "LA RIOJA",
+        "CEUTA",
+        "MELILLA"
+      ],
+      "coalicion": [],
+      "candidato": "Luis «Alvise» Pérez Fernández (cabeza de lista por Madrid)",
+      "cabezas_de_lista": {
+        "MADRID": "Luis Alvise Pérez Fernández",
+        "BARCELONA": "Yolanda López Carreño"
+      },
+      "web": "https://www.seacabolafiesta.com/",
+      "en_congreso_xv": false,
+      "escanos_2023": null,
+      "escanos_2023_nota": "No concurrió a las generales de 2023.",
+      "proyeccion_motivo": "GESOP/El Periódico (6–8 oct, publicado 12-oct): 2% y «podría hacerse incluso con un escaño por Madrid» (0–1). Las encuestas posteriores consultadas le dan 0 escaños.",
+      "programa": {
+        "estado": "no_publicado",
+        "url": null,
+        "fecha": null,
+        "titulo": null,
+        "paginas": null,
+        "sha256": null,
+        "fichero": null,
+        "texto": null,
+        "checked_at": "2026-11-08T21:57:00+01:00",
+        "anunciado": null
+      },
+      "programa_aplicable": "Programa único estatal (pendiente).",
+      "notas": "salf.es es solo una página «próximo lanzamiento». En seacabolafiesta.com solo hay un díptico de campaña de 2 páginas («Díptico Precintado», diez compromisos) que el partido no llama programa, y un contrato electoral de Castilla y León 2026 (autonómicas). No se guardaron.",
+      "fuentes": [
+        "https://www.seacabolafiesta.com/",
+        "https://www.seacabolafiesta.com/images/diptico.pdf",
+        "https://www.elperiodico.com/es/politica/20261012/encuesta-elecciones-generales-espana-2026-29n-135212729",
+        "https://electomania.es/electopanel-1-nov-el-psoe-baja-y-vuelve-a-minimos/",
+        "https://www.elespanol.com/espana/politica/20261101/primer-sondeo-tragedia-pp-vox-amplian-ventaja-sanchez-sigue-cayendo-pese-vaciar-frente-amplio/1003744442810_0.html",
+        "https://es.wikipedia.org/wiki/Encuestas_de_opini%C3%B3n_para_las_elecciones_generales_de_Espa%C3%B1a_de_2026",
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+# Metodología
+
+La versión para el público está en la web (página *Metodología*). Aquí, el detalle técnico.
+
+## Fase 2 · Escaños
+
+**Reparto** (LOREG art. 163): umbral del 3 % sobre votos válidos (candidaturas + blancos) de la
+circunscripción; D'Hondt; empate de cocientes → más votos totales. Implementado dos veces, de forma
+idéntica: `web/src/engine/seats.ts` (web, con tests) y `pipeline/dhondt.py` (validación). Con los
+resultados oficiales de 2023 reproduce los 350 escaños en las 52 circunscripciones.
+
+**Candidaturas**: solo las proclamadas en el BOE (BOE-A-2026-23103, con la corrección
+BOE-A-2026-23383). Asignación candidatura → partido y → votos de 2023 en
+`data/mapeo/candidaturas_2026.json`, con reglas por siglas exactas del BOE.
+
+**Escenario base (2023)**: voto de 2023 de la candidatura predecesora en la misma circunscripción.
+Casos especiales, todos explícitos en el fichero de mapeo:
+
+* SUMAR 2023 → Frente Amplio y Podemos (concurren por separado en 2026): reparto por el peso relativo
+  de SUMAR y PODEMOS en las europeas de 2024 en esa provincia. Donde solo se presenta uno, hereda todo.
+* SUMAR 2023 → Compromís (C. Valenciana), Ara Més-Front Ampli (Baleares) y UPC (Canarias, + NC-bc).
+* PSC y PSOE se tratan como candidaturas distintas (PSC en Cataluña), afines entre sí.
+* UPN-PP (Navarra) = UPN + PP de 2023.
+* Candidaturas sin predecesora (p. ej. SALF, que no concurrió en 2023): *sin base* en este escenario.
+* El voto de 2023 de candidaturas que no concurren en 2026 queda en "otros" (no puede obtener escaño).
+
+**Escenarios de encuesta**: *swing* proporcional. `cuota_prov = cuota_base_prov × encuesta_nac /
+base_nac`. La etiqueta genérica "Sumar" de las encuestas se aplica como bloque a Frente Amplio,
+Ara Més-FA, Compromís y UPC (y "PSOE" a PSOE + PSC), con un único factor. Partidos sin base 2023 pero
+con dato en la encuesta (SALF): perfil provincial de las europeas de 2024. Partidos que la encuesta
+no recoge: conservan su cuota base. UPN-PP sigue el factor del PP. Se renormaliza a 100 % con el
+voto en blanco de 2023 de la provincia. El informe `data/build/fase2_validacion.txt` compara los
+escaños nacionales resultantes con los publicados por cada encuesta (diferencias de ±0–5 escaños
+en los grandes partidos).
+
+**Incertidumbre**: 4.000 simulaciones con error log-normal independiente por candidatura,
+σ = k/√cuota; k = 0,04 (encuestas) y 0,05 (base 2023, que tiene tres años); el usuario puede elegir
+baja (×0,625) o alta (×1,5). Semilla fija por circunscripción y escenario: resultados reproducibles.
+
+**Sugerencia**: si P(≥ 1 escaño) < 50 %, se propone la primera preferencia siguiente (ranking de la
+fase 1 u orden manual; las coaliciones cuentan para sus partidos integrantes) con P ≥ 50 % en esa
+circunscripción.
+
+## Fase 1 · Afinidad
+
+Ver `docs/research/vaa_estado_del_arte.md`. 30 afirmaciones aprox. a partir de propuestas reales
+(programas 29-N y compromisos del candidato verificados en `data/promesas/`); 5 niveles + saltar;
+pesos 0,5/1/2; posiciones de partido por doble codificación independiente desde el programa con cita
+y página (`docs/prompts/2_codificacion_posiciones.md`); afinidad = distancia de Manhattan
+normalizada; cobertura mínima 50 % (aviso < 70 %); empate técnico < 5 puntos. Se activa cuando haya
+programas suficientes para una comparación justa.
+
+## Fase 3 · Rigor
+
+Prompts: `docs/prompts/1_lectura_programa.md` y `docs/prompts/3_evaluacion_propuestas.md`; criterios
+en `data/fase3/criterios.json`. Cada programa lo lee entero un agente que deja constancia de las
+páginas leídas (`data/programas/<id>/lectura.md`); las citas se comprueban automáticamente contra el
+texto (`pipeline/verify_quotes.py`); un segundo agente independiente revisa valoraciones y fuentes
+(`revision.json`). Solo se publica lo aprobado en la revisión y cuyo SHA-256 coincide con el
+programa catalogado.

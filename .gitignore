@@ -1,0 +1,13 @@
+node_modules/
+web/dist/
+.DS_Store
+__pycache__/
+*.pyc
+# Copias de páginas de prensa: se citan por URL, no se redistribuyen
+data/sources/promesas/
+# Los PDF de los programas no se redistribuyen: se identifican por URL oficial + SHA-256
+# (data/partidos/partidos.json); el texto extraído sí se versiona para poder auditar las citas.
+data/sources/programas/**/*.pdf
+data/sources/encuestas/agregadores/
+web/public/data/
+data/promesas/_parts/

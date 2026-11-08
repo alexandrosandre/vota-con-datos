@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondeo de arranque de campaña - Estimación de voto para las Elecciones Generales 29-N | Sigma Dos</title>
+    <meta name="description" content="La nueva encuesta de octubre de Sigma Dos para El Mundo corresponde a la estimación de voto para las Elecciones Generales en el arranque de la precampaña....">
+    <link rel="icon" href="img/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-noticias">
+<div class="topbar" id="top">
+    <div>
+        <a href="#newsletter-modal" class="newsletter-modal-trigger" aria-haspopup="dialog" aria-controls="newsletter-modal"><i class="fa-regular fa-envelope"></i> Apúntate a nuestra newsletter</a>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/SigmaDos" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sigma_dos?igsh=MXRvMG16cjl0N29oYQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/sigma-dos/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://x.com/sigmados" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.whatsapp.com/channel/0029Vb7oqI4KmCPGlTuNNb2P" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+</div>
+
+<nav class="navbar" aria-label="Navegación principal">
+    <a href="index.php?lang=es" aria-label="Inicio Sigma Dos">
+        <img src="img/logo_sigmados.svg" alt="Sigma Dos" class="logo">
+    </a>
+
+    <button class="hamburger" id="hamburger-btn" type="button" aria-label="Abrir menú" aria-controls="nav-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul class="menu" id="nav-menu">
+        <li><a href="index.php?lang=es#quienes-somos">Quiénes Somos</a></li>
+        <li><a href="index.php?lang=es#servicios">Servicios</a></li>
+        <li><a href="panel.php?lang=es" class="">El Panel</a></li>
+        <!-- <li><a href="trustsurvey.php?lang=es" class="">TrustSurvey</a></li> -->
+        <li><a href="noticias.php?lang=es" class="active">Noticias</a></li>
+        <li><a href="trabaja-con-nosotros.php?lang=es" class="">Trabaja con nosotros</a></li>
+        <li><a href="index.php?lang=es#contacto">Contactar</a></li>
+        <li><a href="titulopropio.php?lang=es" class="btn-titulo-propio">Título propio 2027</a></li>
+        <li class="language-switcher" aria-label="Language selector">
+            <a href="/noticia?id=wp_news_13139&amp;lang=es" class="active">ES</a>
+            <span>/</span>
+            <a href="/noticia?id=wp_news_13139&amp;lang=en" class="">EN</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="newsletter-modal" id="newsletter-modal" aria-hidden="true">
+    <div class="newsletter-modal-backdrop" data-newsletter-close></div>
+    <div class="newsletter-modal-panel" role="dialog" aria-modal="true" aria-labelledby="newsletter-modal-title">
+        <button class="newsletter-modal-close" type="button" aria-label="Cerrar newsletter" data-newsletter-close>
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="newsletter-modal-content">
+            <div class="newsletter-modal-copy">
+                <img src="img/logo_sigmados.svg" alt="Sigma Dos" class="newsletter-modal-logo">
+                <h2 id="newsletter-modal-title">Conecta con el pulso de la opinión pública</h2>
+                <p>Recibe en tu correo las novedades de Sigma Dos: barómetros, estudios, análisis de tendencias y contenidos sobre investigación social aplicada.</p>
+
+                <form class="newsletter-form" id="newsletter-form" method="post" action="/noticia?id=wp_news_13139">
+                    <input type="hidden" name="newsletter_form" value="1">
+                    <div class="newsletter-field">
+                        <label for="newsletter-email">Correo electrónico</label>
+                        <input type="email" id="newsletter-email" name="newsletter_email" placeholder="Introduce tu correo electrónico" value="" required>
+                    </div>
+
+                    <div class="newsletter-field">
+                        <label for="newsletter-interest">Área de interés (opcional)</label>
+                        <select id="newsletter-interest" name="newsletter_interest">
+                            <option value="">Selecciona una temática</option>
+                            <option value="opinion" >Opinión pública y barómetros</option>
+                            <option value="markets" >Investigación de mercados</option>
+                            <option value="training" >Formación y eventos</option>
+                        </select>
+                    </div>
+
+                    <label class="newsletter-consent">
+                        <input type="checkbox" name="newsletter_consent" required>
+                        <span>Acepto recibir comunicaciones de Sigma Dos y confirmo que he leído la <a href="politica-privacidad.php">Política de Privacidad</a>.</span>
+                    </label>
+
+                    <button type="submit" class="newsletter-submit">Suscríbete</button>
+                    <p class="newsletter-form-message " id="newsletter-form-message" aria-live="polite"></p>
+                </form>
+            </div>
+
+            <div class="newsletter-modal-brand" aria-hidden="true">
+                <img src="img/logo_sigmados.svg" alt="">
+                <span>Más de 40 años convirtiendo datos en conocimiento social.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="news-detail-page">
+                    <article>
+            <header class="news-detail-hero">
+                <div class="news-detail-copy">
+                    <a class="news-back-link" href="noticias.php"><i class="fa-solid fa-arrow-left"></i> Noticias</a>
+                    <time datetime="2026-10-12">12 de octubre de 2026</time>
+                                            <div class="news-category-tags">
+                                                            <span>Sin categorizar</span>
+                                                    </div>
+                                        <h1>Sondeo de arranque de campaña - Estimación de voto para las Elecciones Generales 29-N</h1>
+                </div>
+                                    <img src="img/uploads/2026/10/PORTADAS-NOTICIAS-BLOG-DE-SIGMA-DOS-16.png" alt="Sondeo de arranque de campaña - Estimación de voto para las Elecciones Generales 29-N">
+                            </header>
+
+            <section class="news-detail-content">
+                <div class="news-body">
+                    <h4 class="wp-block-heading"><em>La nueva encuesta de octubre de Sigma Dos para El Mundo corresponde a la estimación de voto para las Elecciones Generales en el arranque de la precampaña.</em></h4>
+
+
+
+<p>Nuestra estimación sitúa al <strong>Partido Popular (PP)</strong> como primera fuerza política con un <strong>31,9 %</strong> de los sufragios, lo que le otorgaría <strong>135 escaños</strong>.</p>
+
+
+
+<p>El <strong>PSOE</strong> registraría el <strong>25,3 %</strong> de la intención de voto y <strong>103 escaños</strong>, seguido por <strong>Vox</strong>, que obtendría el <strong>19,1 %</strong> de los apoyos y <strong>68 representantes</strong>. Por su parte, <strong>Sumar</strong> sumaría el <strong>7,6 %</strong> de las papeletas logrando <strong>9 parlamentarios</strong>, mientras que <strong>Podemos</strong> cosecharía el <strong>3,1 %</strong> de los votos, traduciéndose en <strong>2 asientos</strong> en el Congreso.</p>
+
+
+
+<p>En cuanto al resto de formaciones, <strong>ERC</strong> obtendría <strong>9 escaños</strong> (<strong>2,6 %</strong>), seguida por <strong>Junts</strong> con <strong>7 asientos</strong> (<strong>1,2 %</strong>) y <strong>EH Bildu</strong> con <strong>6 diputados</strong> (<strong>1,1 %</strong>). El <strong>PNV</strong> lograría <strong>5 representantes</strong> (<strong>0,9 %</strong>), mientras que el <strong>BNG</strong> (<strong>0,9 %</strong>) y <strong>Adelante Andalucía (AA)</strong> (<strong>0,8 %</strong>) conseguirían <strong>2 diputados</strong> cada uno. Finalmente, <strong>Coalición Canaria (CCA)</strong> (<strong>0,5 %</strong>) y <strong>UPN</strong> (<strong>0,2 %</strong>) cerrarían la representación parlamentaria con <strong>1 escaño</strong> cada una.</p>
+
+
+
+<h5 class="wp-block-heading"><strong>Lectura de tendencias en el arranque de precampaña</strong></h5>
+
+
+
+<p>Respecto al barómetro de octubre , el principal movimiento se detecta en la reconfiguración del bloque de la derecha. El <strong>PP</strong> sufre un ligero retroceso bajando a los <strong>135 escaños</strong> (cediendo 5 respecto al último sondeo), una caída que capitaliza <strong>Vox</strong>, que protagoniza un crecimiento al escalar hasta los <strong>68 representantes</strong> con el 19,1 % de los votos.</p>
+
+
+
+<p>Por su parte, el bloque progresista se muestra más estático, con el <strong>PSOE</strong> blindando y manteniendo intactos sus <strong>103 escaños</strong>. En el ámbito nacionalista e independentista, observamos un fortalecimiento de las formaciones catalanas en este inicio de precampaña, con <strong>ERC</strong> subiendo a <strong>9 escaños</strong> y <strong>Junts</strong> escalando de forma importante hasta los <strong>7 asientos</strong>, pudiendo haber recabado apoyos tras la confirmación de que Aliança Catalana no concurrirá a las Elecciones Generales del 29 de noviembre.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="img/uploads/2026/10/438-819x1024.jpg" alt="" class="wp-image-13141" style="aspect-ratio:0.799801632715343;width:608px;height:auto"/></figure>
+
+
+
+<h2 class="wp-block-heading"><strong>FICHA TÉCNICA</strong></h2>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Universo:</strong> Personas con 18 y más años residentes en España con derecho a voto.</li>
+
+
+
+<li><strong>Técnica de recogida de información:</strong> A través del Panel Sigma Dos by Trust Survey. Metodología mixta telefónica (CATI) / <em>online</em> (CAWI) / RRSS.</li>
+
+
+
+<li><strong>Muestra:</strong> 2.017 entrevistas.</li>
+
+
+
+<li><strong>Selección de las unidades muestrales:</strong> En la entrevista telefónica mediante selección aleatoria de hogar y aplicación de cuotas de sexo y edad en la selección de la unidad última. En el caso del panel se ha aplicado asignación proporcional por sexo y grupo de edad. La distribución de la muestra ha sido proporcional por comunidad autónoma en ambas muestras.</li>
+</ul>
+
+
+
+<p></p>                </div>
+
+                            </section>
+        </article>
+    </main>
+
+<script src="js/news-image-viewer.js" defer></script>
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h5 class="footer-brand">SIGMA DOS</h5>
+            <div class="footer-social-box">
+                <a href="https://www.facebook.com/SigmaDos" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/sigma_dos?igsh=MXRvMG16cjl0N29oYQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/sigma-dos/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://x.com/sigmados" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.whatsapp.com/channel/0029Vb7oqI4KmCPGlTuNNb2P" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h5>Secciones</h5>
+            <ul>
+                <li><a href="index.php?lang=es#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="index.php?lang=es#servicios">Servicios</a></li>
+                <li><a href="panel.php?lang=es">El Panel</a></li>
+                <li><a href="noticias.php?lang=es">Noticias</a></li>
+                <li><a href="trabaja-con-nosotros.php?lang=es">Trabaja con nosotros</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h5>Legal</h5>
+            <ul>
+                <li><a href="aviso-legal.php?lang=es">Aviso Legal</a></li>
+                <li><a href="politica-privacidad.php?lang=es">Política de Privacidad</a></li>
+                <li><a href="politica-cookies.php?lang=es">Política de Cookies</a></li>
+                <li><a href="terminos-y-condiciones-generales.php?lang=es">Términos y Condiciones Generales</a></li>
+                <li><a href="declaracion-de-aplicabilidad.php?lang=es">Declaración de Aplicabilidad</a></li>
+                <li><a href="politica-de-calidad.php?lang=es">Política de Calidad</a></li>
+                <li><a href="sistema-interno-de-informacion.php?lang=es">Sistema Interno de Información</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Sigma Dos. Todos los derechos reservados.</p>
+        <a href="#top" class="scroll-link"><i class="fa-solid fa-arrow-up"></i> Volver arriba</a>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,2689 @@
+{
+  "meta": {
+    "descripcion": "Encuestas recientes de elecciones generales para estimar escaños como alternativa a los resultados de 2023 ('CIS, Sigma Dos, top 3').",
+    "eleccion": "Elecciones generales (Congreso y Senado), 29 de noviembre de 2026",
+    "convocatoria": "Real Decreto 806/2026, de 5 de octubre, de disolución del Congreso de los Diputados y del Senado y de convocatoria de elecciones (BOE 6-10-2026, BOE-A-2026-20742)",
+    "generado": "2026-11-08",
+    "criterio_seleccion": "Por encuestadora, la última estimación publicada antes del 2026-11-08 con trabajo de campo tras la convocatoria (6-10-2026). Si no existe, se indica y se usa la más reciente (CIS).",
+    "seleccion_top3": [
+      "cis-2026-10",
+      "sigmados-2026-11-02",
+      "gad3-2026-10"
+    ],
+    "alternativa_si_se_excluye_gad3": "40db-2026-10",
+    "desgloses_regionales_disponibles": [
+      "sigmados-2026-10-19 (escaños por provincia)",
+      "sigmados-2026-10-12 (escaños por CCAA)"
+    ],
+    "prohibicion_publicacion": "LOREG art. 69.7: durante los cinco días anteriores al de la votación queda prohibida la publicación y difusión de sondeos electorales por cualquier medio. Para el 29-11-2026 la veda abarca del martes 24-11-2026 al sábado 28-11-2026. La app no debe publicar ni difundir sondeos en ese periodo; si se quiere mantener visible esta opción durante la veda, consultarlo jurídicamente (y con la doctrina de la JEC) antes.",
+    "cis_preelectoral": "El estudio CIS 3584 'Preelectoral elecciones generales 2026' (macroencuesta, ~45.000 entrevistas según prensa; campo 7-oct a 7-nov) NO está publicado a 8-11-2026. Cuando se publique (forzosamente antes del 24-11), debe sustituir a cis-2026-10 y probablemente incluirá estimaciones por CCAA/provincia.",
+    "campos": {
+      "pct": "porcentaje de voto estimado tal como lo publica la fuente (base indicada en base_porcentajes)",
+      "partido": "denominación exacta publicada por la fuente (sin el asterisco de nota, que se conserva en nombre_publicado cuando existe)",
+      "escanos_min/escanos_max": "horquilla de escaños publicada; si la fuente da un valor puntual, min = max",
+      "verificado_en_fuente_primaria": "true si cada cifra se ha comprobado contra la publicación de la encuestadora o del medio que la encarga (archivos en data/sources/encuestas/)"
+    },
+    "advertencia": "Las encuestas no son resultados. No sumar ni promediar encuestas con bases distintas (CIS: método de escenarios con fuerte efecto casa; ver NOTAS.md).",
+    "fuentes_crudas": "data/sources/encuestas/",
+    "otras_encuestas_contexto_nota": "Listado solo para contexto: cifras (PP, PSOE, Vox, Frente Amplio/Sumar) tomadas del agregador Wikipedia y NO verificadas en la fuente primaria. No usar para cálculos. Excluidas: Data10/Okdiario (campo 2-oct, previo a la convocatoria) y SocioMétrica para el PP (encuesta interna de partido)."
+  },
+  "encuestas": [
+    {
+      "id": "cis-2026-10",
+      "rol": "principal",
+      "encuestadora": "Centro de Investigaciones Sociológicas (CIS)",
+      "cliente_medio": "CIS (estudio propio, organismo público)",
+      "estudio": "Estudio nº 3582 – Barómetro de octubre 2026",
+      "fecha_publicacion": "2026-10-14",
+      "fecha_publicacion_nota": "Avance de resultados 14/10/2026; publicación completa del estudio 20/10/2026 (ficha del catálogo CIS).",
+      "trabajo_campo": {
+        "inicio": "2026-10-01",
+        "fin": "2026-10-06"
+      },
+      "campo_posterior_a_convocatoria": false,
+      "campo_posterior_a_convocatoria_nota": "Campo del 1 al 6 de octubre: anterior o coincidente con la publicación del RD 806/2026 (BOE 6-10-2026). Es la estimación de voto del CIS más reciente publicada a 8-11-2026; la macroencuesta preelectoral (estudio 3584) no está publicada todavía.",
+      "muestra_n": 5025,
+      "muestra_nota": "La tabla de estimación indica (N) = 5.025; la ficha técnica (FT3582.pdf) dice 'Realizada: 5.024 entrevistas'. Discrepancia de 1 entrevista en la propia fuente.",
+      "metodo": "Entrevista telefónica asistida por ordenador (CATI); teléfonos fijos 14,3% y móviles 85,7%; cuotas de sexo y edad; afijación no proporcional por CCAA (mín. 125 entrevistas por comunidad, 20 en Ceuta y en Melilla); 1.369 municipios y 50 provincias.",
+      "margen_error": "±1,4% (95,5%, P=Q, muestreo aleatorio simple) para el conjunto de la muestra",
+      "metodo_estimacion": "Método de escenarios, 'modelo bidimensional inercia-incertidumbre Alaminos-Tezanos'",
+      "base_porcentajes": "% sobre voto válido (estimación); voto directo en % sobre censo",
+      "estimacion_voto": [
+        {
+          "partido": "PSOE",
+          "pct": 34.0,
+          "voto_directo_pct_censo": 25.3
+        },
+        {
+          "partido": "PP",
+          "pct": 22.2,
+          "voto_directo_pct_censo": 14.7
+        },
+        {
+          "partido": "VOX",
+          "pct": 17.1,
+          "voto_directo_pct_censo": 11.6
+        },
+        {
+          "partido": "SUMAR / Frente Amplio",
+          "pct": 6.1,
+          "voto_directo_pct_censo": 4.5,
+          "nota": "Según nota del CIS: el voto estimado de SUMAR agrupa a los partidos que firmaron la coalición excepto Podemos."
+        },
+        {
+          "partido": "Podemos",
+          "pct": 3.1,
+          "voto_directo_pct_censo": 2.2
+        },
+        {
+          "partido": "ERC",
+          "pct": 3.0,
+          "voto_directo_pct_censo": 1.8
+        },
+        {
+          "partido": "Se Acabó la Fiesta",
+          "pct": 1.8,
+          "voto_directo_pct_censo": 1.1
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.6,
+          "voto_directo_pct_censo": 0.9
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.1,
+          "voto_directo_pct_censo": 0.8
+        },
+        {
+          "partido": "BNG",
+          "pct": 0.9,
+          "voto_directo_pct_censo": 0.7
+        },
+        {
+          "partido": "EAJ-PNV",
+          "pct": 0.6,
+          "voto_directo_pct_censo": 0.4
+        },
+        {
+          "partido": "CCa",
+          "pct": 0.2,
+          "voto_directo_pct_censo": 0.1
+        },
+        {
+          "partido": "UPN",
+          "pct": 0.1,
+          "voto_directo_pct_censo": 0.04,
+          "nota": "El CIS le imputa el estimado medio de referencia 0,1 por volatilidad muestral (partido uniprovincial)."
+        },
+        {
+          "partido": "Otros partidos",
+          "pct": 7.9,
+          "voto_directo_pct_censo": 5.7,
+          "tipo": "otros"
+        },
+        {
+          "partido": "En blanco",
+          "pct": 0.3,
+          "voto_directo_pct_censo": 3.2,
+          "tipo": "blanco"
+        }
+      ],
+      "suma_pct_publicada": 100.0,
+      "proyeccion_escanos": null,
+      "proyeccion_escanos_nota": "El CIS no publica proyección de escaños en el barómetro. Las cifras de escaños atribuidas al CIS en prensa/agregadores (p. ej. Electomanía) son cálculos de terceros.",
+      "desglose_regional": null,
+      "desglose_regional_nota": "El barómetro no publica estimaciones por CCAA ni por provincia. Los microdatos incluyen la ponderación PESOCCAA, pero el CIS no publica estimación autonómica en este estudio.",
+      "urls": {
+        "primarias": [
+          "https://www.cis.es/en/surveys/barometro-de-octubre-2026",
+          "https://www.cis.es/documents/20117/14396821/3582_Estimacion.pdf/2bcc5f28-7a97-d5be-6b29-fd3fa778c60a?version=1.0&t=1791970151290",
+          "https://www.cis.es/documents/20117/14396821/FT3582.pdf/6b4de0bb-72e1-fabb-0212-26d71315d356?version=1.0&t=1792494200396",
+          "https://www.cis.es/documents/20117/14396821/es3582mar.pdf/49717326-7aad-cfc5-9460-e889f1d43193?version=1.0&t=1792653744506"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/cis/3582_Estimacion.pdf",
+        "data/sources/encuestas/cis/FT3582.pdf",
+        "data/sources/encuestas/cis/es3582mar.pdf",
+        "data/sources/encuestas/cis/barometro_octubre_2026.html"
+      ],
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "sigmados-2026-11-02",
+      "rol": "principal",
+      "encuestadora": "Sigma Dos",
+      "cliente_medio": "El Mundo",
+      "fecha_publicacion": "2026-11-01",
+      "fecha_publicacion_nota": "El Mundo lo publicó en su web el 1-11-2026 (datePublished 2026-11-01T21:44:28Z); sigmados.com lo fecha el 2-11-2026.",
+      "trabajo_campo": {
+        "inicio": "2026-10-29",
+        "fin": "2026-10-30"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 2505,
+      "metodo": "Mixto: telefónico (CATI, selección aleatoria de hogar y cuotas de sexo y edad) y online (CAWI, Panel Sigma Dos by Trust Survey, asignación proporcional por sexo y edad); distribución proporcional por CCAA.",
+      "margen_error": "±2,1% (95,5%, P=Q)",
+      "base_porcentajes": "% de voto estimado (Sigma Dos no indica explícitamente la base; se asume voto válido)",
+      "estimacion_voto": [
+        {
+          "partido": "Partido Popular (PP)",
+          "pct": 31.1,
+          "escanos_min": 133,
+          "escanos_max": 139
+        },
+        {
+          "partido": "PSOE",
+          "pct": 24.6,
+          "escanos_min": 97,
+          "escanos_max": 103
+        },
+        {
+          "partido": "Vox",
+          "pct": 19.3,
+          "escanos_min": 63,
+          "escanos_max": 69
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 7.1,
+          "escanos_min": 9,
+          "escanos_max": 11
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.9,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "nota": "Texto: 'la posibilidad de conseguir un asiento'; la infografía oficial indica 'Podemos 0-1'."
+        },
+        {
+          "partido": "ERC",
+          "pct": 3.0,
+          "escanos_min": 9,
+          "escanos_max": 11
+        },
+        {
+          "partido": "Adelante Andalucía (AA)",
+          "pct": 1.4,
+          "escanos_min": 3,
+          "escanos_max": 4
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.3,
+          "escanos_min": 7,
+          "escanos_max": 8
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.1,
+          "escanos_min": 6,
+          "escanos_max": 6,
+          "nota": "Texto: 'entre 6 diputados'; la infografía oficial indica 'JUNTS 6'."
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.0,
+          "escanos_min": 2,
+          "escanos_max": 2
+        },
+        {
+          "partido": "PNV",
+          "pct": 0.9,
+          "escanos_min": 5,
+          "escanos_max": 6
+        },
+        {
+          "partido": "Front Valencià (FV)",
+          "pct": 0.9,
+          "escanos_min": 3,
+          "escanos_max": 4,
+          "nota": "En los sondeos Sigma Dos del 19 y 26 de octubre esta formación figuraba como 'Compromís'. Sigma Dos no explica el cambio de denominación."
+        },
+        {
+          "partido": "Coalición Canaria (CCA)",
+          "pct": 0.4,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "nota": "Texto: 'un hipotético escaño en disputa'; la infografía oficial indica 'CCA 0-1'."
+        }
+      ],
+      "suma_pct_publicada": 94.0,
+      "suma_pct_nota": "Las formaciones publicadas suman 94,0%; Sigma Dos no publica 'otros' ni 'en blanco'.",
+      "proyeccion_escanos": "horquillas (ver estimacion_voto)",
+      "proyeccion_escanos_nota": "El Mundo añade que el resultado 'probable' del PSOE dentro de su horquilla sería 99 escaños; no publica puntos centrales para el resto.",
+      "contexto": "Trabajo de campo realizado tras el accidente ferroviario de Urda (según Sigma Dos y El Mundo).",
+      "desglose_regional": null,
+      "desglose_regional_nota": "Este sondeo no publica desglose territorial. El último desglose provincial de Sigma Dos es el del sondeo del 19-10-2026 (id sigmados-2026-10-19) y el autonómico el del 13-10-2026 (id sigmados-2026-10-12).",
+      "urls": {
+        "primarias": [
+          "https://www.sigmados.com/noticia.php?id=sa0OT7jgxEjay6E",
+          "https://www.elmundo.es/espana/encuestas/2026/11/01/6ae77446e4d4d8f3698b458a.html"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/sigmados/sondeo_20261102.html",
+        "data/sources/encuestas/sigmados/img_news_d5d77f50ef4e10df_1793616613.png",
+        "data/sources/encuestas/sigmados/elmundo_20261101.html"
+      ],
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "gad3-2026-10",
+      "rol": "principal",
+      "encuestadora": "GAD3 (Gabinete de Análisis Demoscópico, S.L.)",
+      "cliente_medio": "ABC (Vocento)",
+      "estudio": "Barómetro ABC | Estimación de voto nacional. Octubre 2026",
+      "fecha_publicacion": "2026-10-12",
+      "trabajo_campo": {
+        "inicio": "2026-10-06",
+        "fin": "2026-10-08"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "campo_posterior_a_convocatoria_nota": "El campo empieza el 6-10-2026, el mismo día en que el BOE publica el RD 806/2026 (firmado el 5-10). Es la única encuesta de GAD3 posterior a la convocatoria publicada a 8-11-2026 (no hay sondeo GAD3 de noviembre en gad3.com). Si se exige campo estrictamente posterior al 6-10, usar 40dB (id 40db-2026-10, campo 7-8 oct).",
+      "muestra_n": 1077,
+      "metodo": "Encuesta telefónica asistida por ordenador (CATI): 926 entrevistas a móviles y 151 a fijos; cuotas por sexo, edad y ámbito geográfico (censo electoral INE); duración 4-5 minutos; cuestionario propuesto por Vocento y ABC.",
+      "margen_error": "±3,1% (n=1.077; 95,5%, P=Q=0,5)",
+      "base_porcentajes": "% sobre el voto válido (gráfico 'Evolución de voto' de ABC, columna 'octubre 2026')",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "nombre_publicado": "PP",
+          "pct": 31.4,
+          "escanos_min": 133,
+          "escanos_max": 133
+        },
+        {
+          "partido": "PSOE",
+          "nombre_publicado": "PSOE",
+          "pct": 26.4,
+          "escanos_min": 107,
+          "escanos_max": 107
+        },
+        {
+          "partido": "Vox",
+          "nombre_publicado": "Vox",
+          "pct": 18.2,
+          "escanos_min": 65,
+          "escanos_max": 65
+        },
+        {
+          "partido": "Sumar",
+          "nombre_publicado": "Sumar",
+          "pct": 7.4,
+          "escanos_min": 10,
+          "escanos_max": 10
+        },
+        {
+          "partido": "Podemos",
+          "nombre_publicado": "Podemos",
+          "pct": 2.3,
+          "escanos_min": 2,
+          "escanos_max": 2
+        },
+        {
+          "partido": "A.Adelante",
+          "nombre_publicado": "A.Adelante",
+          "pct": 1.0,
+          "escanos_min": 1,
+          "escanos_max": 1
+        },
+        {
+          "partido": "SALF",
+          "nombre_publicado": "SALF",
+          "pct": 1.8
+        },
+        {
+          "partido": "ERC",
+          "nombre_publicado": "ERC*",
+          "pct": 2.6,
+          "estimado_con_historico": true,
+          "escanos_min": 10,
+          "escanos_max": 10
+        },
+        {
+          "partido": "JuntsxCat",
+          "nombre_publicado": "JuntsxCat*",
+          "pct": 1.5,
+          "estimado_con_historico": true,
+          "escanos_min": 5,
+          "escanos_max": 5
+        },
+        {
+          "partido": "Cup",
+          "nombre_publicado": "Cup*",
+          "pct": 0.4,
+          "estimado_con_historico": true
+        },
+        {
+          "partido": "PNV",
+          "nombre_publicado": "PNV*",
+          "pct": 1.0,
+          "estimado_con_historico": true,
+          "escanos_min": 6,
+          "escanos_max": 6
+        },
+        {
+          "partido": "Bildu",
+          "nombre_publicado": "Bildu*",
+          "pct": 1.5,
+          "estimado_con_historico": true,
+          "escanos_min": 8,
+          "escanos_max": 8
+        },
+        {
+          "partido": "BNG",
+          "nombre_publicado": "BNG*",
+          "pct": 0.9,
+          "estimado_con_historico": true,
+          "escanos_min": 2,
+          "escanos_max": 2
+        },
+        {
+          "partido": "CC",
+          "nombre_publicado": "CC*",
+          "pct": 0.4,
+          "estimado_con_historico": true,
+          "escanos_min": 1,
+          "escanos_max": 1
+        },
+        {
+          "partido": "UPN",
+          "nombre_publicado": "UPN*",
+          "pct": 0.1,
+          "estimado_con_historico": true,
+          "escanos_min": 0,
+          "escanos_max": 0
+        },
+        {
+          "partido": "PACMA",
+          "nombre_publicado": "PACMA*",
+          "pct": 0.7,
+          "estimado_con_historico": true
+        },
+        {
+          "partido": "Otro",
+          "nombre_publicado": "Otro*",
+          "pct": 1.4,
+          "estimado_con_historico": true,
+          "tipo": "otros"
+        },
+        {
+          "partido": "En blanco",
+          "nombre_publicado": "En blanco",
+          "pct": 1.0,
+          "tipo": "blanco"
+        }
+      ],
+      "suma_pct_publicada": 100.0,
+      "proyeccion_escanos": "puntual (sin horquillas)",
+      "proyeccion_escanos_nota": "Escaños de la tabla 'Escaños por partido' de ABC (fuente GAD3). Nota de ABC: '*Partidos políticos con muestra insuficiente estimados en base al histórico de las elecciones'. CUP, SALF, PACMA y 'Otro' no aparecen en la tabla de escaños (0).",
+      "discrepancias_fuente": "La web de GAD3 dice que el bloque 'Otros' reúne 35 escaños y el 11,2% (incluyendo Podemos, PNV, ERC, Adelante Andalucía...). Los escaños cuadran (35), pero la suma de porcentajes de esos partidos en el gráfico de ABC no da 11,2% (Podemos+AA+ERC+Junts+CUP+PNV+Bildu+BNG+CC+UPN = 11,7%). Se registran los porcentajes por partido del gráfico de ABC tal cual.",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://www.gad3.com/barometro-abc-estimacion-de-voto-nacional-octubre-2026/",
+          "https://www.abc.es/espana/derecha-mantiene-mayoria-absoluta-pese-agitacion-callejera-20261012015025-nt.html",
+          "https://datawrapper.dwcdn.net/9xmFD/6/"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/gad3/abc_octubre_2026.html",
+        "data/sources/encuestas/gad3/abc_20261012.html",
+        "data/sources/encuestas/gad3/dw_9xmFD_dataset.csv",
+        "data/sources/encuestas/gad3/dw_9xmFD.html"
+      ],
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "40db-2026-10",
+      "rol": "alternativa_a_gad3",
+      "encuestadora": "40dB.",
+      "cliente_medio": "El País y Cadena SER (Prisa)",
+      "estudio": "Encuesta flash. Octubre 2026",
+      "fecha_publicacion": "2026-10-09",
+      "fecha_publicacion_nota": "Fecha del artículo de El País según su URL (/2026-10-09/); el PDF del informe se creó el 8-10-2026. elpais.com no fue accesible (403) para releer el artículo; los datos se toman del informe PDF de 40dB alojado en el servidor de El País (ep00.epimg.net).",
+      "trabajo_campo": {
+        "inicio": "2026-10-07",
+        "fin": "2026-10-08"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 800,
+      "metodo": "Entrevista online (CAWI). Universo: población general residente en España (excepto Ceuta y Melilla) de 18 años o más con derecho a voto.",
+      "margen_error": "±3,5% (95% de confianza)",
+      "base_porcentajes": "% sobre el total de votos válidos",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.9,
+          "escanos_min": 123,
+          "escanos_max": 140,
+          "escanos_central": 132
+        },
+        {
+          "partido": "PSOE",
+          "pct": 28.1,
+          "escanos_min": 105,
+          "escanos_max": 117,
+          "escanos_central": 112
+        },
+        {
+          "partido": "Vox",
+          "pct": 18.9,
+          "escanos_min": 63,
+          "escanos_max": 74,
+          "escanos_central": 66
+        },
+        {
+          "partido": "Sumar",
+          "pct": 5.3,
+          "escanos_min": 5,
+          "escanos_max": 7,
+          "escanos_central": 5,
+          "nota": "En el gráfico de escaños figura como 'Sumar/ Frente amplio'."
+        },
+        {
+          "partido": "Podemos",
+          "pct": 2.3,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_central": 2
+        },
+        {
+          "partido": "SALF",
+          "pct": 1.8
+        },
+        {
+          "partido": "Otro + Blanco",
+          "pct": 11.7,
+          "tipo": "otros_y_blanco"
+        }
+      ],
+      "escanos_otros": {
+        "total_central": 33,
+        "min": 32,
+        "max": 34,
+        "desglose_central": [
+          {
+            "partido": "ERC",
+            "escanos": 8
+          },
+          {
+            "partido": "JxC",
+            "escanos": 7
+          },
+          {
+            "partido": "Bildu",
+            "escanos": 7
+          },
+          {
+            "partido": "PNV",
+            "escanos": 6
+          },
+          {
+            "partido": "BNG",
+            "escanos": 2
+          },
+          {
+            "partido": "Coalición Canaria",
+            "escanos": 1
+          },
+          {
+            "partido": "UPN",
+            "escanos": 1
+          },
+          {
+            "partido": "AA",
+            "escanos": 1
+          }
+        ]
+      },
+      "escenario_alternativo": {
+        "nombre": "Escenario con candidatura unitaria (Sumar/Frente Amplio + Podemos)",
+        "estimacion_voto": [
+          {
+            "partido": "PP",
+            "pct": 31.9,
+            "escanos_min": 119,
+            "escanos_max": 134,
+            "escanos_central": 129
+          },
+          {
+            "partido": "PSOE",
+            "pct": 27.3,
+            "escanos_min": 102,
+            "escanos_max": 112,
+            "escanos_central": 106
+          },
+          {
+            "partido": "Vox",
+            "pct": 19.1,
+            "escanos_min": 63,
+            "escanos_max": 72,
+            "escanos_central": 67
+          },
+          {
+            "partido": "Sumar / Frente Amplio + Podemos",
+            "pct": 9.5,
+            "escanos_min": 15,
+            "escanos_max": 19,
+            "escanos_central": 15
+          },
+          {
+            "partido": "SALF",
+            "pct": 1.8
+          },
+          {
+            "partido": "Otro + Blanco",
+            "pct": 10.4,
+            "tipo": "otros_y_blanco"
+          }
+        ],
+        "escanos_otros": {
+          "total_central": 33,
+          "min": 32,
+          "max": 34,
+          "desglose_central": [
+            {
+              "partido": "ERC",
+              "escanos": 8
+            },
+            {
+              "partido": "JxC",
+              "escanos": 7
+            },
+            {
+              "partido": "Bildu",
+              "escanos": 7
+            },
+            {
+              "partido": "PNV",
+              "escanos": 6
+            },
+            {
+              "partido": "BNG",
+              "escanos": 2
+            },
+            {
+              "partido": "Coalición Canaria",
+              "escanos": 1
+            },
+            {
+              "partido": "UPN",
+              "escanos": 1
+            },
+            {
+              "partido": "AA",
+              "escanos": 1
+            }
+          ]
+        }
+      },
+      "suma_pct_publicada": 100.0,
+      "proyeccion_escanos": "central + horquilla",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://ep00.epimg.net/infografias/encuestas40db/2026/10-08-barometro-flash/2026_10_informe_voto_barometro_flash.pdf",
+          "https://elpais.com/espana/2026-10-09/el-pp-y-vox-mantienen-la-mayoria-absoluta-tras-el-adelanto-electoral.html"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/40db/2026_10_informe_voto_barometro_flash.pdf"
+      ],
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "sigmados-2026-10-19",
+      "rol": "desglose_regional",
+      "encuestadora": "Sigma Dos",
+      "cliente_medio": "El Mundo",
+      "fecha_publicacion": "2026-10-19",
+      "fecha_publicacion_nota": "Estimación nacional publicada el 19-10-2026; mapa de escaños por provincia publicado en sigmados.com el 20-10-2026 (misma encuesta).",
+      "trabajo_campo": {
+        "inicio": "2026-10-01",
+        "fin": "2026-10-14"
+      },
+      "campo_posterior_a_convocatoria": false,
+      "campo_posterior_a_convocatoria_nota": "El campo empieza el 1-10, antes de la convocatoria (6-10), y termina el 14-10. Sigma Dos indica que el mapa provincial se hizo antes de los anuncios de coalición del viernes previo, aunque la estimación nacional dice incorporar el pacto ERC-Podemos, el Frente Amplio y el acuerdo PP-UPN.",
+      "muestra_n": 3007,
+      "metodo": "Mixto CATI + CAWI (Panel Sigma Dos by Trust Survey)",
+      "margen_error": "±2,1% (95,5%, P=Q)",
+      "estimacion_voto": [
+        {
+          "partido": "Partido Popular (PP)",
+          "pct": 31.5,
+          "escanos_min": 132,
+          "escanos_max": 137
+        },
+        {
+          "partido": "PSOE",
+          "pct": 25.3,
+          "escanos_min": 101,
+          "escanos_max": 106
+        },
+        {
+          "partido": "Vox",
+          "pct": 19.5,
+          "escanos_min": 65,
+          "escanos_max": 68
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 7.2,
+          "escanos_min": 9,
+          "escanos_max": 10
+        },
+        {
+          "partido": "Podemos",
+          "pct": 2.8,
+          "escanos_min": 1,
+          "escanos_max": 1
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.5,
+          "escanos_min": 9,
+          "escanos_max": 9
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.2,
+          "escanos_min": 6,
+          "escanos_max": 7
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.2,
+          "escanos_min": 6,
+          "escanos_max": 7
+        },
+        {
+          "partido": "PNV",
+          "pct": 0.9,
+          "escanos_min": 5,
+          "escanos_max": 6
+        },
+        {
+          "partido": "Compromís",
+          "pct": 0.9,
+          "escanos_min": 3,
+          "escanos_max": 4
+        },
+        {
+          "partido": "BNG",
+          "pct": 0.8,
+          "escanos_min": 2,
+          "escanos_max": 2
+        },
+        {
+          "partido": "Adelante Andalucía (AA)",
+          "pct": 0.8,
+          "escanos_min": 1,
+          "escanos_max": 2
+        },
+        {
+          "partido": "Coalición Canaria (CCA)",
+          "pct": 0.5,
+          "escanos_min": 1,
+          "escanos_max": 1
+        }
+      ],
+      "desglose_regional": {
+        "nivel": "provincia",
+        "tipo": "escaños (horquillas)",
+        "circunscripciones": [
+          {
+            "circunscripcion": "Almería",
+            "escanos_en_juego_rd_806_2026": 6,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 3,
+                "max": 3
+              },
+              {
+                "partido": "Vox",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Almería: PP (3), Vox (2) y PSOE (1)."
+          },
+          {
+            "circunscripcion": "Cádiz",
+            "escanos_en_juego_rd_806_2026": 8,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 5,
+                "max": 5
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 3
+              },
+              {
+                "partido": "Vox",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "Adelante Andalucía",
+                "min": 0,
+                "max": 1
+              }
+            ],
+            "texto_original": "Cádiz: PP (5), PSOE (2-3), Vox (2) y y Adelante Andalucía (0-1).",
+            "incoherencia": "Las horquillas publicadas suman 9-11 pero la circunscripción elige 8 diputados (RD 806/2026). Error de la fuente; no corregido."
+          },
+          {
+            "circunscripcion": "Córdoba",
+            "escanos_en_juego_rd_806_2026": 6,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 3,
+                "max": 3
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Córdoba: PP (3), PSOE (2) y Vox (1)."
+          },
+          {
+            "circunscripcion": "Granada",
+            "escanos_en_juego_rd_806_2026": 7,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 3,
+                "max": 3
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "Vox",
+                "min": 2,
+                "max": 2
+              }
+            ],
+            "texto_original": "Granada: PP (3), PSOE (2) y Vox (2)."
+          },
+          {
+            "circunscripcion": "Huelva",
+            "escanos_en_juego_rd_806_2026": 5,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Huelva: PP (2), PSOE (2) y Vox (1)."
+          },
+          {
+            "circunscripcion": "Jaén",
+            "escanos_en_juego_rd_806_2026": 5,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Jaén: PP (2), PSOE (2) y Vox (1)."
+          },
+          {
+            "circunscripcion": "Málaga",
+            "escanos_en_juego_rd_806_2026": 11,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 5,
+                "max": 5
+              },
+              {
+                "partido": "PSOE",
+                "min": 3,
+                "max": 3
+              },
+              {
+                "partido": "Vox",
+                "min": 3,
+                "max": 3
+              }
+            ],
+            "texto_original": "Málaga: PP (5), PSOE (3), Vox (3)"
+          },
+          {
+            "circunscripcion": "Sevilla",
+            "escanos_en_juego_rd_806_2026": 12,
+            "escanos": [
+              {
+                "partido": "PSOE",
+                "min": 4,
+                "max": 5
+              },
+              {
+                "partido": "PP",
+                "min": 4,
+                "max": 4
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 2
+              },
+              {
+                "partido": "Frente Amplio",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Adelante Andalucía",
+                "min": 0,
+                "max": 1
+              }
+            ],
+            "texto_original": "Sevilla: PSOE (4-5), PP (4), Vox (1-2), Frente Amplio (1) y Adelante Andalucía (0-1)."
+          },
+          {
+            "circunscripcion": "Huesca",
+            "escanos_en_juego_rd_806_2026": 3,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Huesca: PP (1), PSOE (1) y Vox (1)."
+          },
+          {
+            "circunscripcion": "Teruel",
+            "escanos_en_juego_rd_806_2026": 3,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 1,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Vox",
+                "min": 0,
+                "max": 1
+              }
+            ],
+            "texto_original": "Teruel: PP (1-2), PSOE (1) y Vox (0-1)"
+          },
+          {
+            "circunscripcion": "Zaragoza",
+            "escanos_en_juego_rd_806_2026": 7,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 3,
+                "max": 3
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 2
+              },
+              {
+                "partido": "Frente Amplio",
+                "min": 0,
+                "max": 1
+              }
+            ],
+            "texto_original": "Zaragoza: PP (3), PSOE (2), Vox (1-2) y Frente Amplio (0-1)."
+          },
+          {
+            "circunscripcion": "Las Palmas",
+            "escanos_en_juego_rd_806_2026": 8,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 3,
+                "max": 3
+              },
+              {
+                "partido": "PSOE",
+                "min": 3,
+                "max": 3
+              },
+              {
+                "partido": "Vox",
+                "min": 2,
+                "max": 2
+              }
+            ],
+            "texto_original": "Las Palmas: PP (3), PSOE (3) y Vox (2)."
+          },
+          {
+            "circunscripcion": "Santa Cruz de Tenerife",
+            "escanos_en_juego_rd_806_2026": 7,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 3,
+                "max": 3
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "CCa",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Santa Cruz de Tenerife: PP (3), PSOE (2), CCa (1) y Vox (1)."
+          },
+          {
+            "circunscripcion": "Cantabria",
+            "escanos_en_juego_rd_806_2026": 5,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 2,
+                "max": 3
+              },
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 2
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Cantabria: PP (2-3), PSOE (1-2) y Vox (1)."
+          },
+          {
+            "circunscripcion": "Albacete",
+            "escanos_en_juego_rd_806_2026": 4,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Albacete: PP (2), PSOE (1) y Vox (1)."
+          },
+          {
+            "circunscripcion": "Ciudad Real",
+            "escanos_en_juego_rd_806_2026": 5,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Ciudad Real: PP (2), PSOE (2) y Vox (1)."
+          },
+          {
+            "circunscripcion": "Cuenca",
+            "escanos_en_juego_rd_806_2026": 3,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Cuenca: PP (1), PSOE (1) y Vox (1)."
+          },
+          {
+            "circunscripcion": "Guadalajara",
+            "escanos_en_juego_rd_806_2026": 3,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Guadalajara: PP (1), PSOE (1) y Vox (1)."
+          },
+          {
+            "circunscripcion": "Toledo",
+            "escanos_en_juego_rd_806_2026": 6,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "Vox",
+                "min": 2,
+                "max": 2
+              }
+            ],
+            "texto_original": "Toledo: PP (2), PSOE (2) y Vox (2)."
+          },
+          {
+            "circunscripcion": "Ávila",
+            "escanos_en_juego_rd_806_2026": 3,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 1,
+                "max": 2
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "PSOE",
+                "min": 0,
+                "max": 1
+              }
+            ],
+            "texto_original": "Ávila: PP (1-2), Vox (1) y PSOE (0-1)."
+          },
+          {
+            "circunscripcion": "Burgos",
+            "escanos_en_juego_rd_806_2026": 4,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Burgos: PP (2), PSOE (1) y Vox (1)."
+          },
+          {
+            "circunscripcion": "León",
+            "escanos_en_juego_rd_806_2026": 4,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "León: PP (2), PSOE (1) y Vox (1)."
+          },
+          {
+            "circunscripcion": "Palencia",
+            "escanos_en_juego_rd_806_2026": 3,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 1,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Vox",
+                "min": 0,
+                "max": 1
+              }
+            ],
+            "texto_original": "Palencia: PP (1-2), PSOE (1) y Vox (0-1)."
+          },
+          {
+            "circunscripcion": "Salamanca",
+            "escanos_en_juego_rd_806_2026": 4,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Salamanca: PP (2), PSOE (1) y Vox (1)."
+          },
+          {
+            "circunscripcion": "Segovia",
+            "escanos_en_juego_rd_806_2026": 3,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 1,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Vox",
+                "min": 0,
+                "max": 1
+              }
+            ],
+            "texto_original": "Segovia: PP (1-2), PSOE (1) y Vox (0-1)."
+          },
+          {
+            "circunscripcion": "Soria",
+            "escanos_en_juego_rd_806_2026": 2,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Soria: PP (1), PSOE (1)"
+          },
+          {
+            "circunscripcion": "Valladolid",
+            "escanos_en_juego_rd_806_2026": 5,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Valladolid: PP (2), PSOE (2) y Vox (1)."
+          },
+          {
+            "circunscripcion": "Zamora",
+            "escanos_en_juego_rd_806_2026": 3,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 1,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Vox",
+                "min": 0,
+                "max": 1
+              }
+            ],
+            "texto_original": "Zamora: PP (1-2), PSOE (1) y Vox (0-1)."
+          },
+          {
+            "circunscripcion": "Barcelona",
+            "escanos_en_juego_rd_806_2026": 32,
+            "escanos": [
+              {
+                "partido": "PSOE",
+                "min": 11,
+                "max": 11
+              },
+              {
+                "partido": "ERC",
+                "min": 6,
+                "max": 6
+              },
+              {
+                "partido": "PP",
+                "min": 5,
+                "max": 5
+              },
+              {
+                "partido": "Vox",
+                "min": 4,
+                "max": 4
+              },
+              {
+                "partido": "Frente Amplio",
+                "min": 3,
+                "max": 3
+              },
+              {
+                "partido": "Junts",
+                "min": 3,
+                "max": 3
+              }
+            ],
+            "texto_original": "Barcelona: PSOE (11), ERC (6), PP (5), Vox (4), Frente Amplio (3) y Junts (3)."
+          },
+          {
+            "circunscripcion": "Girona",
+            "escanos_en_juego_rd_806_2026": 6,
+            "escanos": [
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "Junts",
+                "min": 1,
+                "max": 2
+              },
+              {
+                "partido": "ERC",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "PP",
+                "min": 0,
+                "max": 1
+              }
+            ],
+            "texto_original": "Girona: PSOE (2), Junts (1-2), ERC (1), Vox (1) y PP (0-1)."
+          },
+          {
+            "circunscripcion": "Lleida",
+            "escanos_en_juego_rd_806_2026": 4,
+            "escanos": [
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 2
+              },
+              {
+                "partido": "ERC",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Junts",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "PP",
+                "min": 0,
+                "max": 1
+              }
+            ],
+            "texto_original": "Lleida: PSOE (1-2), ERC (1), Junts (1) y PP (0-1)."
+          },
+          {
+            "circunscripcion": "Tarragona",
+            "escanos_en_juego_rd_806_2026": 6,
+            "escanos": [
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "PP",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "ERC",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Junts",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Tarragona: PSOE (2), PP (1), Vox (1), ERC (1) y Junts (1)."
+          },
+          {
+            "circunscripcion": "Ceuta",
+            "escanos_en_juego_rd_806_2026": 1,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Ceuta: PP (1)."
+          },
+          {
+            "circunscripcion": "Comunidad de Madrid",
+            "escanos_en_juego_rd_806_2026": 38,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 15,
+                "max": 15
+              },
+              {
+                "partido": "PSOE",
+                "min": 9,
+                "max": 9
+              },
+              {
+                "partido": "Vox",
+                "min": 9,
+                "max": 9
+              },
+              {
+                "partido": "Frente Amplio",
+                "min": 4,
+                "max": 4
+              },
+              {
+                "partido": "Podemos",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Comunidad de Madrid: PP (15), PSOE (9), Vox (9), Frente Amplio (4) y Podemos (1)."
+          },
+          {
+            "circunscripcion": "Comunidad Foral de Navarra",
+            "escanos_en_juego_rd_806_2026": 5,
+            "escanos": [
+              {
+                "partido": "PP-UPN",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "EH Bildu",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Comunidad Foral de Navarra: PP-UPN (2), PSOE (2) y EH Bildu (1)."
+          },
+          {
+            "circunscripcion": "Valencia",
+            "escanos_en_juego_rd_806_2026": 16,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 5,
+                "max": 5
+              },
+              {
+                "partido": "PSOE",
+                "min": 5,
+                "max": 5
+              },
+              {
+                "partido": "Vox",
+                "min": 4,
+                "max": 4
+              },
+              {
+                "partido": "Compromís",
+                "min": 2,
+                "max": 2
+              }
+            ],
+            "texto_original": "Valencia: PP (5), PSOE (5), Vox (4) y Compromís (2)."
+          },
+          {
+            "circunscripcion": "Castellón",
+            "escanos_en_juego_rd_806_2026": 5,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Castellón: PP (2), PSOE (2) y Vox (1)."
+          },
+          {
+            "circunscripcion": "Alicante",
+            "escanos_en_juego_rd_806_2026": 12,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 4,
+                "max": 5
+              },
+              {
+                "partido": "PSOE",
+                "min": 3,
+                "max": 3
+              },
+              {
+                "partido": "Vox",
+                "min": 3,
+                "max": 3
+              },
+              {
+                "partido": "Frente Amplio",
+                "min": 1,
+                "max": 2
+              }
+            ],
+            "texto_original": "Alicante: PP (4-5), PSOE (3), Vox (3) y Frente Amplio (1-2)."
+          },
+          {
+            "circunscripcion": "Badajoz",
+            "escanos_en_juego_rd_806_2026": 5,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Badajoz: PP (2), PSOE (2) y Vox (1)."
+          },
+          {
+            "circunscripcion": "Cáceres",
+            "escanos_en_juego_rd_806_2026": 4,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Cáceres: PP (2), PSOE (1) y Vox (1)."
+          },
+          {
+            "circunscripcion": "A Coruña",
+            "escanos_en_juego_rd_806_2026": 8,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 4,
+                "max": 5
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "BNG",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Vox",
+                "min": 0,
+                "max": 1
+              }
+            ],
+            "texto_original": "A Coruña: PP (4-5), PSOE (2), BNG (1) y Vox (0-1)."
+          },
+          {
+            "circunscripcion": "Lugo",
+            "escanos_en_juego_rd_806_2026": 4,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 3,
+                "max": 3
+              },
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Lugo: PP (3) y PSOE (1)."
+          },
+          {
+            "circunscripcion": "Ourense",
+            "escanos_en_juego_rd_806_2026": 4,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 3,
+                "max": 3
+              },
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Ourense: PP (3) y PSOE (1)."
+          },
+          {
+            "circunscripcion": "Pontevedra",
+            "escanos_en_juego_rd_806_2026": 7,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 4,
+                "max": 4
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "BNG",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Pontevedra: PP (4), PSOE (2) y BNG (1)."
+          },
+          {
+            "circunscripcion": "Illes Balears",
+            "escanos_en_juego_rd_806_2026": 8,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 3,
+                "max": 3
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "Vox",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "Frente Amplio",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Illes Balears: PP (3), PSOE (2), Vox (2) y Frente Amplio (1)."
+          },
+          {
+            "circunscripcion": "La Rioja",
+            "escanos_en_juego_rd_806_2026": 4,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 2,
+                "max": 3
+              },
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "Vox",
+                "min": 0,
+                "max": 1
+              }
+            ],
+            "texto_original": "La Rioja: PP (2-3), PSOE (1) y Vox (0-1)."
+          },
+          {
+            "circunscripcion": "Melilla",
+            "escanos_en_juego_rd_806_2026": 1,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Melilla: PP (1)."
+          },
+          {
+            "circunscripcion": "Araba / Álava",
+            "escanos_en_juego_rd_806_2026": 4,
+            "escanos": [
+              {
+                "partido": "PSOE",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "EH Bildu",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "PNV",
+                "min": 1,
+                "max": 1
+              },
+              {
+                "partido": "PP",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Araba / Álava: PSOE (1), EH Bildu (1), PNV (1) y PP (1)."
+          },
+          {
+            "circunscripcion": "Bizkaia",
+            "escanos_en_juego_rd_806_2026": 8,
+            "escanos": [
+              {
+                "partido": "PNV",
+                "min": 2,
+                "max": 3
+              },
+              {
+                "partido": "EH Bildu",
+                "min": 2,
+                "max": 3
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "PP",
+                "min": 1,
+                "max": 1
+              }
+            ],
+            "texto_original": "Bizkaia: PNV (2-3), EH Bildu (2-3), PSOE (2),  y PP (1)."
+          },
+          {
+            "circunscripcion": "Gipuzkoa",
+            "escanos_en_juego_rd_806_2026": 6,
+            "escanos": [
+              {
+                "partido": "EH Bildu",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "PNV",
+                "min": 2,
+                "max": 2
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              }
+            ],
+            "texto_original": "Gipuzkoa: EH Bildu (2), PNV (2) y PSOE (2)."
+          },
+          {
+            "circunscripcion": "Principado de Asturias",
+            "escanos_en_juego_rd_806_2026": 7,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 3,
+                "max": 3
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 3
+              },
+              {
+                "partido": "Vox",
+                "min": 1,
+                "max": 2
+              }
+            ],
+            "texto_original": "Principado de Asturias: PP (3), PSOE (2-3) y Vox (1-2)."
+          },
+          {
+            "circunscripcion": "Región de Murcia",
+            "escanos_en_juego_rd_806_2026": 10,
+            "escanos": [
+              {
+                "partido": "PP",
+                "min": 4,
+                "max": 4
+              },
+              {
+                "partido": "Vox",
+                "min": 4,
+                "max": 4
+              },
+              {
+                "partido": "PSOE",
+                "min": 2,
+                "max": 2
+              }
+            ],
+            "texto_original": "Región de Murcia: PP (4), Vox (4) y PSOE (2)."
+          }
+        ]
+      },
+      "desglose_regional_nota": "Parseado automáticamente del texto de sigmados.com (52 circunscripciones) y validado contra los diputados por circunscripción del RD 806/2026. Única incoherencia: Cádiz.",
+      "urls": {
+        "primarias": [
+          "https://www.sigmados.com/noticia.php?id=EIJOKGN2GFZmhHt",
+          "https://www.sigmados.com/noticia.php?id=rivzEnwHgHaatUC"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/sigmados/sondeo_20261019.html",
+        "data/sources/encuestas/sigmados/mapa_provincias_20261020.html",
+        "data/sources/encuestas/sigmados/img_news_4ec6b415b988c719_1792491126.png"
+      ],
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "sigmados-2026-10-12",
+      "rol": "desglose_regional",
+      "encuestadora": "Sigma Dos",
+      "cliente_medio": "El Mundo",
+      "fecha_publicacion": "2026-10-12",
+      "fecha_publicacion_nota": "Estimación nacional publicada el 12-10-2026; desglose por comunidades autónomas el 13-10-2026 (misma encuesta).",
+      "trabajo_campo": {
+        "inicio": "2026-10-01",
+        "fin": "2026-10-08"
+      },
+      "campo_posterior_a_convocatoria": false,
+      "campo_posterior_a_convocatoria_nota": "Campo 1-8 de octubre (empieza antes de la convocatoria). Anterior al pacto ERC-Podemos y a la oficialización del Frente Amplio: aún usa la etiqueta 'Sumar'.",
+      "muestra_n": 2017,
+      "metodo": "Mixto CATI / CAWI / RRSS (Panel Sigma Dos by Trust Survey)",
+      "margen_error": "±2,2% (95,5%, P=Q) según la página del desglose autonómico",
+      "estimacion_voto": [
+        {
+          "partido": "Partido Popular (PP)",
+          "pct": 31.9,
+          "escanos_min": 135,
+          "escanos_max": 135
+        },
+        {
+          "partido": "PSOE",
+          "pct": 25.3,
+          "escanos_min": 103,
+          "escanos_max": 103
+        },
+        {
+          "partido": "Vox",
+          "pct": 19.1,
+          "escanos_min": 68,
+          "escanos_max": 68
+        },
+        {
+          "partido": "Sumar",
+          "pct": 7.6,
+          "escanos_min": 9,
+          "escanos_max": 9
+        },
+        {
+          "partido": "Podemos",
+          "pct": 3.1,
+          "escanos_min": 2,
+          "escanos_max": 2
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.6,
+          "escanos_min": 9,
+          "escanos_max": 9
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.2,
+          "escanos_min": 7,
+          "escanos_max": 7
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.1,
+          "escanos_min": 6,
+          "escanos_max": 6
+        },
+        {
+          "partido": "PNV",
+          "pct": 0.9,
+          "escanos_min": 5,
+          "escanos_max": 5
+        },
+        {
+          "partido": "BNG",
+          "pct": 0.9,
+          "escanos_min": 2,
+          "escanos_max": 2
+        },
+        {
+          "partido": "Adelante Andalucía (AA)",
+          "pct": 0.8,
+          "escanos_min": 2,
+          "escanos_max": 2
+        },
+        {
+          "partido": "Coalición Canaria (CCA)",
+          "pct": 0.5,
+          "escanos_min": 1,
+          "escanos_max": 1
+        },
+        {
+          "partido": "UPN",
+          "pct": 0.2,
+          "escanos_min": 1,
+          "escanos_max": 1
+        }
+      ],
+      "desglose_regional": {
+        "nivel": "comunidad autónoma",
+        "tipo": "escaños (puntuales)",
+        "comunidades": [
+          {
+            "ccaa": "Andalucía",
+            "escanos_en_juego_rd_806_2026": 60,
+            "escanos": [
+              {
+                "partido": "PP",
+                "escanos": 25
+              },
+              {
+                "partido": "PSOE",
+                "escanos": 17
+              },
+              {
+                "partido": "Vox",
+                "escanos": 16
+              },
+              {
+                "partido": "Adelante Andalucía (AA)",
+                "escanos": 2
+              }
+            ],
+            "fuente_dato": "texto"
+          },
+          {
+            "ccaa": "Cataluña",
+            "escanos_en_juego_rd_806_2026": 48,
+            "escanos": [
+              {
+                "partido": "PSOE",
+                "escanos": 16
+              },
+              {
+                "partido": "ERC",
+                "escanos": 9
+              },
+              {
+                "partido": "Vox",
+                "escanos": 7
+              },
+              {
+                "partido": "Junts",
+                "escanos": 7
+              },
+              {
+                "partido": "PP",
+                "escanos": 6
+              },
+              {
+                "partido": "Sumar",
+                "escanos": 2
+              },
+              {
+                "partido": "Podemos",
+                "escanos": 1
+              }
+            ],
+            "fuente_dato": "texto"
+          },
+          {
+            "ccaa": "Comunidad de Madrid",
+            "escanos_en_juego_rd_806_2026": 38,
+            "escanos": [
+              {
+                "partido": "PP",
+                "escanos": 16
+              },
+              {
+                "partido": "PSOE",
+                "escanos": 9
+              },
+              {
+                "partido": "Vox",
+                "escanos": 9
+              },
+              {
+                "partido": "Sumar",
+                "escanos": 3
+              },
+              {
+                "partido": "Podemos",
+                "escanos": 1
+              }
+            ],
+            "fuente_dato": "texto"
+          },
+          {
+            "ccaa": "Comunidad Valenciana",
+            "escanos_en_juego_rd_806_2026": 33,
+            "escanos": [
+              {
+                "partido": "PP",
+                "escanos": 12
+              },
+              {
+                "partido": "PSOE",
+                "escanos": 10
+              },
+              {
+                "partido": "Vox",
+                "escanos": 9
+              },
+              {
+                "partido": "Sumar",
+                "escanos": 2
+              }
+            ],
+            "fuente_dato": "texto"
+          },
+          {
+            "ccaa": "Galicia",
+            "escanos_en_juego_rd_806_2026": 23,
+            "escanos": [
+              {
+                "partido": "PP",
+                "escanos": 15
+              },
+              {
+                "partido": "PSOE",
+                "escanos": 6
+              },
+              {
+                "partido": "BNG",
+                "escanos": 2
+              }
+            ],
+            "fuente_dato": "texto"
+          },
+          {
+            "ccaa": "Castilla y León",
+            "escanos_en_juego_rd_806_2026": 31,
+            "escanos": [
+              {
+                "partido": "PP",
+                "escanos": 16
+              },
+              {
+                "partido": "PSOE",
+                "escanos": 8
+              },
+              {
+                "partido": "Vox",
+                "escanos": 7
+              }
+            ],
+            "fuente_dato": "texto"
+          },
+          {
+            "ccaa": "País Vasco",
+            "escanos_en_juego_rd_806_2026": 18,
+            "escanos": [
+              {
+                "partido": "PSOE",
+                "escanos": 6
+              },
+              {
+                "partido": "PNV",
+                "escanos": 5
+              },
+              {
+                "partido": "EH Bildu",
+                "escanos": 5
+              },
+              {
+                "partido": "PP",
+                "escanos": 2
+              }
+            ],
+            "fuente_dato": "texto"
+          },
+          {
+            "ccaa": "Canarias",
+            "escanos_en_juego_rd_806_2026": 15,
+            "escanos": [
+              {
+                "partido": "PP",
+                "escanos": 6
+              },
+              {
+                "partido": "PSOE",
+                "escanos": 6
+              },
+              {
+                "partido": "Vox",
+                "escanos": 2
+              },
+              {
+                "partido": "Coalición Canaria (CCa)",
+                "escanos": 1
+              }
+            ],
+            "fuente_dato": "texto"
+          },
+          {
+            "ccaa": "Aragón",
+            "escanos_en_juego_rd_806_2026": 13,
+            "escanos": [
+              {
+                "partido": "PP",
+                "escanos": 7
+              },
+              {
+                "partido": "PSOE",
+                "escanos": 3
+              },
+              {
+                "partido": "Vox",
+                "escanos": 2
+              },
+              {
+                "partido": "Sumar",
+                "escanos": 1
+              }
+            ],
+            "fuente_dato": "texto"
+          },
+          {
+            "ccaa": "Castilla-La Mancha",
+            "escanos_en_juego_rd_806_2026": 21,
+            "escanos": [
+              {
+                "partido": "PP",
+                "escanos": 8
+              },
+              {
+                "partido": "PSOE",
+                "escanos": 7
+              },
+              {
+                "partido": "Vox",
+                "escanos": 6
+              }
+            ],
+            "fuente_dato": "texto"
+          },
+          {
+            "ccaa": "Región de Murcia",
+            "escanos_en_juego_rd_806_2026": 10,
+            "escanos": [
+              {
+                "partido": "PP",
+                "escanos": 5
+              },
+              {
+                "partido": "Vox",
+                "escanos": 3
+              },
+              {
+                "partido": "PSOE",
+                "escanos": 2
+              }
+            ],
+            "fuente_dato": "texto"
+          },
+          {
+            "ccaa": "Extremadura",
+            "escanos_en_juego_rd_806_2026": 9,
+            "escanos": [
+              {
+                "partido": "PP",
+                "escanos": 4
+              },
+              {
+                "partido": "PSOE",
+                "escanos": 3
+              },
+              {
+                "partido": "Vox",
+                "escanos": 2
+              }
+            ],
+            "fuente_dato": "texto"
+          },
+          {
+            "ccaa": "Asturias",
+            "escanos_en_juego_rd_806_2026": 7,
+            "escanos": [
+              {
+                "partido": "PP",
+                "escanos": 3
+              },
+              {
+                "partido": "PSOE",
+                "escanos": 3
+              },
+              {
+                "partido": "Vox",
+                "escanos": 1
+              }
+            ],
+            "fuente_dato": "texto"
+          },
+          {
+            "ccaa": "Cantabria",
+            "escanos_en_juego_rd_806_2026": 5,
+            "escanos": [
+              {
+                "partido": "PP",
+                "escanos": 2
+              },
+              {
+                "partido": "PSOE",
+                "escanos": 2
+              },
+              {
+                "partido": "Vox",
+                "escanos": 1
+              }
+            ],
+            "fuente_dato": "texto"
+          },
+          {
+            "ccaa": "Illes Balears",
+            "escanos_en_juego_rd_806_2026": 8,
+            "escanos": [
+              {
+                "partido": "PP",
+                "escanos": 3
+              },
+              {
+                "partido": "PSOE",
+                "escanos": 2
+              },
+              {
+                "partido": "Vox",
+                "escanos": 2
+              },
+              {
+                "partido": "Sumar",
+                "escanos": 1
+              }
+            ],
+            "fuente_dato": "infografía"
+          },
+          {
+            "ccaa": "Navarra",
+            "escanos_en_juego_rd_806_2026": 5,
+            "escanos": [
+              {
+                "partido": "PSOE",
+                "escanos": 2
+              },
+              {
+                "partido": "PP",
+                "escanos": 1
+              },
+              {
+                "partido": "Bildu",
+                "escanos": 1
+              },
+              {
+                "partido": "UPN",
+                "escanos": 1
+              }
+            ],
+            "fuente_dato": "infografía"
+          },
+          {
+            "ccaa": "La Rioja",
+            "escanos_en_juego_rd_806_2026": 4,
+            "escanos": [
+              {
+                "partido": "PP",
+                "escanos": 2
+              },
+              {
+                "partido": "PSOE",
+                "escanos": 1
+              },
+              {
+                "partido": "Vox",
+                "escanos": 1
+              }
+            ],
+            "fuente_dato": "infografía"
+          },
+          {
+            "ccaa": "Ceuta",
+            "escanos_en_juego_rd_806_2026": 1,
+            "escanos": [
+              {
+                "partido": "PP",
+                "escanos": 1
+              }
+            ],
+            "fuente_dato": "infografía"
+          },
+          {
+            "ccaa": "Melilla",
+            "escanos_en_juego_rd_806_2026": 1,
+            "escanos": [
+              {
+                "partido": "PP",
+                "escanos": 1
+              }
+            ],
+            "fuente_dato": "infografía"
+          }
+        ]
+      },
+      "desglose_regional_nota": "14 CCAA del texto de sigmados.com; Illes Balears, Navarra, La Rioja, Ceuta y Melilla transcritas a mano de la infografía oficial (SIGMADOS-POSTS-16). Todas las sumas cuadran con los diputados del RD 806/2026. Sin porcentajes por CCAA.",
+      "urls": {
+        "primarias": [
+          "https://www.sigmados.com/noticia.php?id=wp_news_13139",
+          "https://www.sigmados.com/noticia.php?id=wp_news_13144"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/sigmados/sondeo_20261012.html",
+        "data/sources/encuestas/sigmados/ccaa_20261013.html",
+        "data/sources/encuestas/sigmados/img_SIGMADOS-POSTS-16-819x1024.png"
+      ],
+      "verificado_en_fuente_primaria": true
+    }
+  ],
+  "otras_encuestas_contexto": [
+    {
+      "encuestadora_cliente": "IMOP/El Confidencial",
+      "trabajo_campo_texto": "2–6 Nov 2026",
+      "muestra_n_texto": "1,000",
+      "pct_PP": 29.8,
+      "pct_PSOE": 25.9,
+      "pct_Vox": 19.9,
+      "pct_Frente_Amplio_Sumar": 8.1,
+      "url_publicacion_citada": "https://www.elconfidencial.com/espana/2026-11-08/derecha-recupera-seis-escanos-izquierda-castigo-psoe-urda-cbtr_4460900/",
+      "fecha_publicacion_citada": "8 November 2026",
+      "fuente_cifras": "Wikipedia 'Opinion polling for the 2026 Spanish general election' (agregador), descargada 2026-11-08",
+      "verificado_en_fuente_primaria": false
+    },
+    {
+      "encuestadora_cliente": "EM-Analytics/Electomanía",
+      "trabajo_campo_texto": "1–6 Nov 2026",
+      "muestra_n_texto": "1,860",
+      "pct_PP": 31.1,
+      "pct_PSOE": 25.3,
+      "pct_Vox": 19.2,
+      "pct_Frente_Amplio_Sumar": 6.1,
+      "url_publicacion_citada": "https://electomania.es/electopanel-8-nov-el-bipartidismo-cede-terreno-vox-sube-en-escanos-y-eh-bildu-se-distancia-del-pnv/",
+      "fecha_publicacion_citada": "8 November 2026",
+      "fuente_cifras": "Wikipedia 'Opinion polling for the 2026 Spanish general election' (agregador), descargada 2026-11-08",
+      "verificado_en_fuente_primaria": false,
+      "nota": "Panel propio de Electomanía (agregador); no es una encuestadora independiente."
+    },
+    {
+      "encuestadora_cliente": "SW Demoscopia/La Séptima",
+      "trabajo_campo_texto": "26 Oct–6 Nov 2026",
+      "muestra_n_texto": "4,500",
+      "pct_PP": 28.8,
+      "pct_PSOE": 30.8,
+      "pct_Vox": 17.2,
+      "pct_Frente_Amplio_Sumar": 7.7,
+      "url_publicacion_citada": "https://media.licdn.com/dms/document/media/v2/D4E1FAQFZ9M82yro8Iw/feedshare-document-pdf-analyzed/B4EaG33yQBJgAY-/0/1794086218465?e=1795046400&v=beta&t=uNJl1bSK3Zmv5CVdrgdgbmkjbm9Bt4Fz_MHtKH6S8dw",
+      "fecha_publicacion_citada": "7 November 2026",
+      "fuente_cifras": "Wikipedia 'Opinion polling for the 2026 Spanish general election' (agregador), descargada 2026-11-08",
+      "verificado_en_fuente_primaria": false
+    },
+    {
+      "encuestadora_cliente": "Sondaxe/La Voz de Galicia",
+      "trabajo_campo_texto": "2–4 Nov 2026",
+      "muestra_n_texto": "1,200",
+      "pct_PP": 29.7,
+      "pct_PSOE": 27.3,
+      "pct_Vox": 18.6,
+      "pct_Frente_Amplio_Sumar": 7.1,
+      "url_publicacion_citada": "https://www.lavozdegalicia.es/noticia/espana/2026/11/06/feijoo-adelanta-pedro-sanchez-candidato-preferido-gobernar/00031793992905957222982.htm",
+      "fecha_publicacion_citada": "8 November 2026",
+      "fuente_cifras": "Wikipedia 'Opinion polling for the 2026 Spanish general election' (agregador), descargada 2026-11-08",
+      "verificado_en_fuente_primaria": false
+    },
+    {
+      "encuestadora_cliente": "Celeste-Tel/Onda Cero",
+      "trabajo_campo_texto": "29 Oct–3 Nov 2026",
+      "muestra_n_texto": "1,100",
+      "pct_PP": 31.8,
+      "pct_PSOE": 25.7,
+      "pct_Vox": 19.2,
+      "pct_Frente_Amplio_Sumar": 6.8,
+      "url_publicacion_citada": "https://www.ondacero.es/elecciones/generales/encuestas-vox-lograrian-absolutisima-segun-celeste-tel_202611066aedd355ea8d8979977bbe63.html",
+      "fecha_publicacion_citada": "6 November 2026",
+      "fuente_cifras": "Wikipedia 'Opinion polling for the 2026 Spanish general election' (agregador), descargada 2026-11-08",
+      "verificado_en_fuente_primaria": false
+    },
+    {
+      "encuestadora_cliente": "SocioMétrica/El Español",
+      "trabajo_campo_texto": "1 Sep–1 Nov 2026",
+      "muestra_n_texto": "4,893",
+      "pct_PP": 32.7,
+      "pct_PSOE": 26.6,
+      "pct_Vox": 19.1,
+      "pct_Frente_Amplio_Sumar": 5.2,
+      "url_publicacion_citada": "https://www.elespanol.com/espana/politica/20261101/primer-sondeo-tragedia-pp-vox-amplian-ventaja-sanchez-sigue-cayendo-pese-vaciar-frente-amplio/1003744442810_0.html",
+      "fecha_publicacion_citada": "1 November 2026",
+      "fuente_cifras": "Wikipedia 'Opinion polling for the 2026 Spanish general election' (agregador), descargada 2026-11-08",
+      "verificado_en_fuente_primaria": false
+    },
+    {
+      "encuestadora_cliente": "Target Point/El Debate",
+      "trabajo_campo_texto": "28–30 Oct 2026",
+      "muestra_n_texto": "1,024",
+      "pct_PP": 31.8,
+      "pct_PSOE": 25.5,
+      "pct_Vox": 19.9,
+      "pct_Frente_Amplio_Sumar": 6.6,
+      "url_publicacion_citada": "http://eldebate.com/espana/20261102/accidente-frena-psoe-amplia-apoyo-pp-mayoria-absolutisima-derecha_475640.html",
+      "fecha_publicacion_citada": "2 November 2026",
+      "fuente_cifras": "Wikipedia 'Opinion polling for the 2026 Spanish general election' (agregador), descargada 2026-11-08",
+      "verificado_en_fuente_primaria": false
+    },
+    {
+      "encuestadora_cliente": "NC Report/La Razón",
+      "trabajo_campo_texto": "26–29 Oct 2026",
+      "muestra_n_texto": "1,000",
+      "pct_PP": 33.0,
+      "pct_PSOE": 25.6,
+      "pct_Vox": 19.3,
+      "pct_Frente_Amplio_Sumar": 6.9,
+      "url_publicacion_citada": "https://www.larazon.es/espana/psoe-frena-efecto-remontada-derecha-consolida-mayoria-absoluta_202611026ae783220250123215703bb1.html",
+      "fecha_publicacion_citada": "2 November 2026",
+      "fuente_cifras": "Wikipedia 'Opinion polling for the 2026 Spanish general election' (agregador), descargada 2026-11-08",
+      "verificado_en_fuente_primaria": false
+    },
+    {
+      "encuestadora_cliente": "Hamalgama Métrica/Vozpópuli",
+      "trabajo_campo_texto": "22–28 Oct 2026",
+      "muestra_n_texto": "1,000",
+      "pct_PP": 32.4,
+      "pct_PSOE": 26.4,
+      "pct_Vox": 19.9,
+      "pct_Frente_Amplio_Sumar": 5.4,
+      "url_publicacion_citada": "https://www.vozpopuli.com/espana/politica/pp-y-vox-suman-ya-un-techo-historico-de-127-millones-de-votos-y-lograrian-205-escanos.html",
+      "fecha_publicacion_citada": "2 November 2026",
+      "fuente_cifras": "Wikipedia 'Opinion polling for the 2026 Spanish general election' (agregador), descargada 2026-11-08",
+      "verificado_en_fuente_primaria": false
+    },
+    {
+      "encuestadora_cliente": "More in Common",
+      "trabajo_campo_texto": "21–25 Oct 2026",
+      "muestra_n_texto": "2,210",
+      "pct_PP": 28.3,
+      "pct_PSOE": 27.6,
+      "pct_Vox": 20.8,
+      "pct_Frente_Amplio_Sumar": 7.8,
+      "url_publicacion_citada": "https://moreincommones.substack.com/p/rumbo-al-29n-una-radiografia-de-la",
+      "fecha_publicacion_citada": "3 November 2026",
+      "fuente_cifras": "Wikipedia 'Opinion polling for the 2026 Spanish general election' (agregador), descargada 2026-11-08",
+      "verificado_en_fuente_primaria": false
+    },
+    {
+      "encuestadora_cliente": "Winston/Artículo14",
+      "trabajo_campo_texto": "21–23 Oct 2026",
+      "muestra_n_texto": "1,200",
+      "pct_PP": 29.4,
+      "pct_PSOE": 27.1,
+      "pct_Vox": 19.2,
+      "pct_Frente_Amplio_Sumar": 5.6,
+      "url_publicacion_citada": "https://www.articulo14.es/politica/encuesta-articulo14-el-psoe-se-coloca-6-escanos-del-pp-que-mantiene-una-mayoria-de-190-escanos-con-vox-20261026.html",
+      "fecha_publicacion_citada": "26 October 2026",
+      "fuente_cifras": "Wikipedia 'Opinion polling for the 2026 Spanish general election' (agregador), descargada 2026-11-08",
+      "verificado_en_fuente_primaria": false
+    },
+    {
+      "encuestadora_cliente": "Ateneo del Dato/elDiario.es",
+      "trabajo_campo_texto": "20–22 Oct 2026",
+      "muestra_n_texto": "2,000",
+      "pct_PP": 31.1,
+      "pct_PSOE": 27.6,
+      "pct_Vox": 19.8,
+      "pct_Frente_Amplio_Sumar": 6.8,
+      "url_publicacion_citada": "https://www.eldiario.es/politica/bloque-izquierdas-recorta-distancias-pp-vox-mantienen-mayoria-absoluta_1_13611052.html",
+      "fecha_publicacion_citada": "25 October 2026",
+      "fuente_cifras": "Wikipedia 'Opinion polling for the 2026 Spanish general election' (agregador), descargada 2026-11-08",
+      "verificado_en_fuente_primaria": false
+    },
+    {
+      "encuestadora_cliente": "GESOP/Prensa Ibérica",
+      "trabajo_campo_texto": "6–8 Oct 2026",
+      "muestra_n_texto": "1,000",
+      "pct_PP": 28.7,
+      "pct_PSOE": 26.1,
+      "pct_Vox": 18.9,
+      "pct_Frente_Amplio_Sumar": 8.0,
+      "url_publicacion_citada": "https://www.elperiodico.com/es/politica/20261012/encuesta-elecciones-generales-espana-2026-29n-135212729",
+      "fecha_publicacion_citada": "12 October 2026",
+      "fuente_cifras": "Wikipedia 'Opinion polling for the 2026 Spanish general election' (agregador), descargada 2026-11-08",
+      "verificado_en_fuente_primaria": false
+    },
+    {
+      "encuestadora_cliente": "InvyMark/laSexta",
+      "trabajo_campo_texto": "5–8 Oct 2026",
+      "muestra_n_texto": "?",
+      "pct_PP": 32.8,
+      "pct_PSOE": 28.0,
+      "pct_Vox": 18.8,
+      "pct_Frente_Amplio_Sumar": 6.3,
+      "url_publicacion_citada": "https://www.lasexta.com/elecciones/generales/barometro-lasexta-protestas-vivienda-impactan-encuestas-que-hunden-bloque-izquierda-disparan-vox_202610096ac8ae9bb79b18452fc08907.html",
+      "fecha_publicacion_citada": "9 October 2026",
+      "fuente_cifras": "Wikipedia 'Opinion polling for the 2026 Spanish general election' (agregador), descargada 2026-11-08",
+      "verificado_en_fuente_primaria": false,
+      "nota": "Campo 5-7/5-8 oct: empieza antes de la convocatoria."
+    },
+    {
+      "encuestadora_cliente": "DYM/Henneo",
+      "trabajo_campo_texto": "5–7 Oct 2026",
+      "muestra_n_texto": "1,011",
+      "pct_PP": 34.0,
+      "pct_PSOE": 28.2,
+      "pct_Vox": 18.2,
+      "pct_Frente_Amplio_Sumar": 3.6,
+      "url_publicacion_citada": "https://www.20minutos.es/nacional/psoe-absorbe-intencion-votos-sumar-podemos-mientras-pp-vox-consolidan-su-mayoria_7046598_0.html",
+      "fecha_publicacion_citada": "9 October 2026",
+      "fuente_cifras": "Wikipedia 'Opinion polling for the 2026 Spanish general election' (agregador), descargada 2026-11-08",
+      "verificado_en_fuente_primaria": false,
+      "nota": "Campo 5-7/5-8 oct: empieza antes de la convocatoria."
+    }
+  ]
+}

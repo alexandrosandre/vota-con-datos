@@ -1,0 +1,110 @@
+#!/usr/bin/env python3
+"""Genera los JSON que consume la web (web/public/data/) a partir de data/.
+
+  partidos.json  catálogo + estado de cada programa + compromisos de campaña verificados
+  fase1.json     preguntas y posiciones (data/fase1/), vacío hasta que haya programas suficientes
+  fase2.json     ver pipeline/build_fase2.py
+  fase3.json     evaluaciones revisadas (data/programas/<id>/evaluacion.json)
+
+Uso: python3 -I pipeline/build_web.py
+"""
+import json
+import subprocess
+import sys
+from datetime import date
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+D = ROOT / "data"
+OUT = ROOT / "web" / "public" / "data"
+ALIAS_PROMESAS = {"coalicion_canaria": "cc"}
+# Mínimo de programas publicados para que la fase 1 tenga sentido comparativo (ver docs/METODOLOGIA.md)
+MIN_PROGRAMAS_FASE1 = 8
+
+
+def load(p):
+    return json.loads((D / p).read_text())
+
+
+def write(name, obj):
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / name).write_text(json.dumps(obj, ensure_ascii=False, separators=(",", ":")))
+
+
+def main():
+    cat = load("partidos/partidos.json")
+    prom = load("promesas/promesas.json")["partidos"]
+    prom = {ALIAS_PROMESAS.get(k, k): v for k, v in prom.items()}
+    comprobado = cat["meta"].get("checked_at") or cat["meta"].get("comprobado")
+
+    partidos = []
+    for p in cat["partidos"]:
+        pr = p.get("programa") or {}
+        pm = prom.get(p["id"], {})
+        partidos.append({
+            "id": p["id"],
+            "nombre": p["nombre"],
+            "siglas": p["siglas"],
+            "ambito": p["ambito"],
+            "comunidades": p.get("comunidades") or [],
+            "candidato": p.get("candidato"),
+            "web": p.get("web"),
+            "en_congreso_xv": p.get("en_congreso_xv"),
+            "programa": {
+                "estado": pr.get("estado"),
+                "url": pr.get("url"),
+                "fecha": pr.get("fecha"),
+                "paginas": pr.get("paginas"),
+                "sha256": pr.get("sha256"),
+                "comprobado": pr.get("comprobado") or comprobado,
+            },
+            "promesas": [
+                {"texto": x["texto"], "tipo": x["tipo"], "area": x["area"], "fecha": x.get("fecha"), "quien": x.get("quien"),
+                 "fuentes": [{"url": f["url"], "medio": f.get("medio"), "fecha": f.get("fecha")} for f in x.get("fuentes", [])]}
+                for x in pm.get("promesas", [])
+            ],
+        })
+    write("partidos.json", {"meta": {"actualizado": date.today().isoformat()}, "partidos": partidos})
+
+    # ---- Fase 1 ----
+    publicados = [p for p in partidos if p["programa"]["estado"] == "publicado"]
+    f1 = D / "fase1" / "fase1.json"
+    if f1.exists():
+        fase1 = json.loads(f1.read_text())
+    else:
+        fase1 = {"preguntas": [], "posiciones": {}}
+    fase1["meta"] = {
+        "actualizado": date.today().isoformat(),
+        "nota": (f"Hoy hay {len(publicados)} de {len(partidos)} programas publicados. El cuestionario se activa cuando haya al "
+                 f"menos {MIN_PROGRAMAS_FASE1}, incluidos los de los partidos de ámbito estatal con más apoyo, para que la "
+                 "comparación sea justa."),
+    }
+    write("fase1.json", fase1)
+
+    # ---- Fase 3 ----
+    criterios = load("fase3/criterios.json")
+    fase3 = {"meta": {"actualizado": date.today().isoformat(), "modelo": "Claude (Anthropic)"}, "criterios": criterios, "partidos": {}}
+    for p in partidos:
+        ev = D / "programas" / p["id"] / "evaluacion.json"
+        rev = D / "programas" / p["id"] / "revision.json"
+        if ev.exists() and rev.exists() and json.loads(rev.read_text()).get("aprobado"):
+            e = json.loads(ev.read_text())
+            if e.get("programa_sha256") != p["programa"]["sha256"]:
+                sys.exit(f"{p['id']}: la evaluación no corresponde al programa publicado (sha256)")
+            fase3["partidos"][p["id"]] = {"estado": "evaluado", "propuestas": e["propuestas"]}
+        else:
+            fase3["partidos"][p["id"]] = {
+                "estado": "pendiente",
+                "motivo": "Análisis en curso." if p["programa"]["estado"] == "publicado" else "",
+                "propuestas": [],
+            }
+    write("fase3.json", fase3)
+
+    # ---- Fase 2 ----
+    subprocess.run([sys.executable, "-I", str(ROOT / "pipeline" / "build_fase2.py")], check=True, stdout=subprocess.DEVNULL)
+    print(f"partidos: {len(partidos)} · programas publicados: {len(publicados)} · fase1 preguntas: {len(fase1['preguntas'])} · "
+          f"fase3 evaluados: {sum(1 for v in fase3['partidos'].values() if v['estado'] == 'evaluado')}")
+
+
+if __name__ == "__main__":
+    main()

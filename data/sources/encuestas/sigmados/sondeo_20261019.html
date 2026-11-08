@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondeo 19 de octubre - Estimación de voto para las Elecciones Generales 29-N | Sigma Dos</title>
+    <meta name="description" content="La nueva encuesta del 19 de octubre de Sigma Dos para El Mundo corresponde a la estimación de voto para las Elecciones Generales del 29 de noviembre, incor...">
+    <link rel="icon" href="img/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-noticias">
+<div class="topbar" id="top">
+    <div>
+        <a href="#newsletter-modal" class="newsletter-modal-trigger" aria-haspopup="dialog" aria-controls="newsletter-modal"><i class="fa-regular fa-envelope"></i> Apúntate a nuestra newsletter</a>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/SigmaDos" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sigma_dos?igsh=MXRvMG16cjl0N29oYQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/sigma-dos/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://x.com/sigmados" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.whatsapp.com/channel/0029Vb7oqI4KmCPGlTuNNb2P" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+</div>
+
+<nav class="navbar" aria-label="Navegación principal">
+    <a href="index.php?lang=es" aria-label="Inicio Sigma Dos">
+        <img src="img/logo_sigmados.svg" alt="Sigma Dos" class="logo">
+    </a>
+
+    <button class="hamburger" id="hamburger-btn" type="button" aria-label="Abrir menú" aria-controls="nav-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul class="menu" id="nav-menu">
+        <li><a href="index.php?lang=es#quienes-somos">Quiénes Somos</a></li>
+        <li><a href="index.php?lang=es#servicios">Servicios</a></li>
+        <li><a href="panel.php?lang=es" class="">El Panel</a></li>
+        <!-- <li><a href="trustsurvey.php?lang=es" class="">TrustSurvey</a></li> -->
+        <li><a href="noticias.php?lang=es" class="active">Noticias</a></li>
+        <li><a href="trabaja-con-nosotros.php?lang=es" class="">Trabaja con nosotros</a></li>
+        <li><a href="index.php?lang=es#contacto">Contactar</a></li>
+        <li><a href="titulopropio.php?lang=es" class="btn-titulo-propio">Título propio 2027</a></li>
+        <li class="language-switcher" aria-label="Language selector">
+            <a href="/noticia?id=EIJOKGN2GFZmhHt&amp;lang=es" class="active">ES</a>
+            <span>/</span>
+            <a href="/noticia?id=EIJOKGN2GFZmhHt&amp;lang=en" class="">EN</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="newsletter-modal" id="newsletter-modal" aria-hidden="true">
+    <div class="newsletter-modal-backdrop" data-newsletter-close></div>
+    <div class="newsletter-modal-panel" role="dialog" aria-modal="true" aria-labelledby="newsletter-modal-title">
+        <button class="newsletter-modal-close" type="button" aria-label="Cerrar newsletter" data-newsletter-close>
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="newsletter-modal-content">
+            <div class="newsletter-modal-copy">
+                <img src="img/logo_sigmados.svg" alt="Sigma Dos" class="newsletter-modal-logo">
+                <h2 id="newsletter-modal-title">Conecta con el pulso de la opinión pública</h2>
+                <p>Recibe en tu correo las novedades de Sigma Dos: barómetros, estudios, análisis de tendencias y contenidos sobre investigación social aplicada.</p>
+
+                <form class="newsletter-form" id="newsletter-form" method="post" action="/noticia?id=EIJOKGN2GFZmhHt">
+                    <input type="hidden" name="newsletter_form" value="1">
+                    <div class="newsletter-field">
+                        <label for="newsletter-email">Correo electrónico</label>
+                        <input type="email" id="newsletter-email" name="newsletter_email" placeholder="Introduce tu correo electrónico" value="" required>
+                    </div>
+
+                    <div class="newsletter-field">
+                        <label for="newsletter-interest">Área de interés (opcional)</label>
+                        <select id="newsletter-interest" name="newsletter_interest">
+                            <option value="">Selecciona una temática</option>
+                            <option value="opinion" >Opinión pública y barómetros</option>
+                            <option value="markets" >Investigación de mercados</option>
+                            <option value="training" >Formación y eventos</option>
+                        </select>
+                    </div>
+
+                    <label class="newsletter-consent">
+                        <input type="checkbox" name="newsletter_consent" required>
+                        <span>Acepto recibir comunicaciones de Sigma Dos y confirmo que he leído la <a href="politica-privacidad.php">Política de Privacidad</a>.</span>
+                    </label>
+
+                    <button type="submit" class="newsletter-submit">Suscríbete</button>
+                    <p class="newsletter-form-message " id="newsletter-form-message" aria-live="polite"></p>
+                </form>
+            </div>
+
+            <div class="newsletter-modal-brand" aria-hidden="true">
+                <img src="img/logo_sigmados.svg" alt="">
+                <span>Más de 40 años convirtiendo datos en conocimiento social.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="news-detail-page">
+                    <article>
+            <header class="news-detail-hero">
+                <div class="news-detail-copy">
+                    <a class="news-back-link" href="noticias.php"><i class="fa-solid fa-arrow-left"></i> Noticias</a>
+                    <time datetime="2026-10-19">19 de octubre de 2026</time>
+                                            <div class="news-category-tags">
+                                                            <span>Actualidad</span>
+                                                    </div>
+                                        <h1>Sondeo 19 de octubre - Estimación de voto para las Elecciones Generales 29-N</h1>
+                </div>
+                                    <img src="img/uploads/2026/10/19/news_d53761ecfc7d8afb_1792400676.png" alt="Sondeo 19 de octubre - Estimación de voto para las Elecciones Generales 29-N">
+                            </header>
+
+            <section class="news-detail-content">
+                <div class="news-body">
+                    <h3><i><font size="4">La nueva encuesta del 19 de octubre de <b>Sigma Dos</b> para <b>El Mundo</b> corresponde a la estimación de voto para las <b>Elecciones Generales del 29 de noviembre</b>, incorporando ya el impacto del pacto entre ERC y Podemos, la oficialización del Frente Amplio y el acuerdo entre PP y UPN en Navarra.</font></i></h3><p data-path-to-node="0"><br></p><p data-path-to-node="1"><font size="4">Nuestra estimación sitúa al <b data-path-to-node="1" data-index-in-node="28" style="">Partido Popular (PP)</b> como primera fuerza política con un <b data-path-to-node="1" data-index-in-node="85" style="">31,5 %</b> de los sufragios, lo que le otorgaría una horquilla de entre <b data-path-to-node="1" data-index-in-node="153" style="">132 y 137 escaños</b>.</font></p><p data-path-to-node="1"><font size="4"><br></font></p><p data-path-to-node="2"><font size="4">El <b data-path-to-node="2" data-index-in-node="3">PSOE</b> registraría el <b data-path-to-node="2" data-index-in-node="23">25,3 %</b> de la intención de voto y entre <b data-path-to-node="2" data-index-in-node="62">101 y 106 escaños</b>, seguido por <b data-path-to-node="2" data-index-in-node="93">Vox</b>, que obtendría el <b data-path-to-node="2" data-index-in-node="115">19,5 %</b> de los apoyos y entre <b data-path-to-node="2" data-index-in-node="144">65 y 68 representantes</b>. Por su parte, el <b data-path-to-node="2" data-index-in-node="185">Frente Amplio</b> sumaría el <b data-path-to-node="2" data-index-in-node="210">7,2 %</b> de las papeletas logrando entre <b data-path-to-node="2" data-index-in-node="248">9 y 10 parlamentarios</b>, mientras que <b data-path-to-node="2" data-index-in-node="284">Podemos</b> cosecharía el <b data-path-to-node="2" data-index-in-node="306">2,8 %</b> de los votos, traduciéndose en <b data-path-to-node="2" data-index-in-node="343">1 asiento</b> en el Congreso.</font></p><p data-path-to-node="2"><font size="4"><br></font></p><p data-path-to-node="3"><font size="4">En cuanto al resto de formaciones, <b data-path-to-node="3" data-index-in-node="35" style="">ERC</b> obtendría <b data-path-to-node="3" data-index-in-node="49" style="">9 escaños</b> (<b data-path-to-node="3" data-index-in-node="60" style="">2,5 %</b>), seguida por <b data-path-to-node="3" data-index-in-node="80" style="">Junts</b> (<b data-path-to-node="3" data-index-in-node="87" style="">1,2 %</b>) y <b data-path-to-node="3" data-index-in-node="96" style="">EH Bildu</b> (<b data-path-to-node="3" data-index-in-node="106" style="">1,2 %</b>), ambas con una estimación de entre <b data-path-to-node="3" data-index-in-node="148" style="">6 y 7 asientos</b>. El <b data-path-to-node="3" data-index-in-node="167" style="">PNV</b> lograría entre <b data-path-to-node="3" data-index-in-node="186" style="">5 y 6 representantes</b> (<b data-path-to-node="3" data-index-in-node="208" style="">0,9 %</b>), mientras que <b data-path-to-node="3" data-index-in-node="229" style="">Compromís</b> obtendría entre <b data-path-to-node="3" data-index-in-node="255" style="">3 y 4 diputados</b> (<b data-path-to-node="3" data-index-in-node="272" style="">0,9 %</b>) y el <b data-path-to-node="3" data-index-in-node="284" style="">BNG</b> alcanzaría <b data-path-to-node="3" data-index-in-node="299" style="">2 escaños</b> (<b data-path-to-node="3" data-index-in-node="310" style="">0,8 %</b>). <b data-path-to-node="3" data-index-in-node="318" style="">Adelante Andalucía (AA)</b> lograría entre <b data-path-to-node="3" data-index-in-node="357" style="">1 y 2 representantes</b> (<b data-path-to-node="3" data-index-in-node="379" style="">0,8 %</b>) y <b data-path-to-node="3" data-index-in-node="388" style="">Coalición Canaria (CCA)</b> cerraría la representación parlamentaria con <b data-path-to-node="3" data-index-in-node="457" style="">1 escaño</b> (<b data-path-to-node="3" data-index-in-node="467" style="">0,5 %</b>).</font></p><figure class="wp-block-image aligncenter"><img src="img/uploads/2026/10/19/news_aef69eaffad389f4_1792404585.png" alt="Sondeo 19 de octubre - Estimación de voto para las Elecciones Generales 29-N"></figure><p><br></p><figure class="wp-block-image aligncenter"><b data-path-to-node="4" data-index-in-node="0"><font size="4">Tendencias</font></b></figure><p data-path-to-node="5"><font size="4">Respecto al sondeo de arranque de precampaña, los movimientos reflejan la configuración de los nuevos acuerdos y coaliciones en el tablero electoral:</font></p><ul data-path-to-node="6"><li><p data-path-to-node="6,0,0"><font size="4"><b data-path-to-node="6,0,0" data-index-in-node="0">Bloque de la derecha:</b> El <b data-path-to-node="6,0,0" data-index-in-node="25">PP</b> se sitúa en una horquilla de <b data-path-to-node="6,0,0" data-index-in-node="57">132-137 escaños</b> (frente a los 135 fijos del sondeo anterior), integrando el acuerdo estratégico con UPN. Por su parte, <b data-path-to-node="6,0,0" data-index-in-node="176">Vox</b> ajusta su estimación a <b data-path-to-node="6,0,0" data-index-in-node="203">65-68 representantes</b> con el <b data-path-to-node="6,0,0" data-index-in-node="231">19,5 %</b> del voto.</font></p></li></ul><div><font size="4"><br></font></div><ul data-path-to-node="6"><li><p data-path-to-node="6,1,0"><font size="4"><b data-path-to-node="6,1,0" data-index-in-node="0">Espacio de la izquierda y alianzas:</b> El <b data-path-to-node="6,1,0" data-index-in-node="39">PSOE</b> flexibiliza su horquilla a <b data-path-to-node="6,1,0" data-index-in-node="71">101-106 representantes</b> manteniendo el <b data-path-to-node="6,1,0" data-index-in-node="109">25,3 %</b> de la intención de voto. La oficialización del <b data-path-to-node="6,1,0" data-index-in-node="163">Frente Amplio</b> irrumpiría con <b data-path-to-node="6,1,0" data-index-in-node="192">9-10 escaños</b> (<b data-path-to-node="6,1,0" data-index-in-node="206">7,2 %</b>), mientras que <b data-path-to-node="6,1,0" data-index-in-node="227">Podemos</b> obtendría <b data-path-to-node="6,1,0" data-index-in-node="245">1 escaño</b> (<b data-path-to-node="6,1,0" data-index-in-node="255">2,8 %</b>).</font></p></li></ul><div><font size="4"><br></font></div><ul data-path-to-node="6"><li><p data-path-to-node="6,2,0"><font size="4"><b data-path-to-node="6,2,0" data-index-in-node="0">Fuerzas autonómicas y nacionalistas:</b> <b data-path-to-node="6,2,0" data-index-in-node="37">ERC</b> mantiene la proyección de <b data-path-to-node="6,2,0" data-index-in-node="67">9 escaños</b> (<b data-path-to-node="6,2,0" data-index-in-node="78">2,5 %</b>) tras su acuerdo con Podemos. <b data-path-to-node="6,2,0" data-index-in-node="114">Junts</b> y <b data-path-to-node="6,2,0" data-index-in-node="122">EH Bildu</b> se sitúan en <b data-path-to-node="6,2,0" data-index-in-node="144">6-7 representantes</b> cada una, mientras que <b data-path-to-node="6,2,0" data-index-in-node="186">Compromís</b> se mide con candidatura propia en <b data-path-to-node="6,2,0" data-index-in-node="230">3-4 asientos</b>.</font></p></li></ul><div><font size="4"><br></font></div><div><div class="ue-c-article__card-header" style="position: relative; border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; padding: 0px; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;;"><h2 class="ue-c-article__card-title" style="max-width: 90%; font-family: Mundo, &quot;Times New Roman&quot;, Times, serif; font-weight: 800; text-transform: uppercase; line-height: 1.375rem; letter-spacing: 0px; padding-right: 2.5rem;"><font size="4">FICHA TÉCNICA</font></h2><div class="ue-c-article__card-byline" style="max-width: 85%; font-family: Mundo, &quot;Times New Roman&quot;, Times, serif; color: rgb(121, 118, 118); line-height: 0.875rem; letter-spacing: 0px; margin-top: 0.5rem;"></div></div><div class="ue-c-article__card-body" style="transition: max-height 0.1s; overflow: hidden; margin: 0.5rem 0px 0px; font-family: Mundo, &quot;Times New Roman&quot;, Times, serif; font-variant: oldstyle-nums; line-height: 1.6875rem; color: rgb(0, 0, 0); padding: 1rem 0px 0px; background: transparent; border-top: 1px solid rgb(206, 206, 206);"><p data-mrf-recirculation="Links Párrafos" style="margin: 0px 0px 1rem;"><font size="4"><br><strong>Población de referencia y ámbito geográfico:</strong> Personas de 18 y más años residentes en España con derecho a voto.</font></p><p data-mrf-recirculation="Links Párrafos" style="margin: 0px 0px 1rem;"><font size="4"><strong>Técnica de recogida de información: </strong>Metodología mixta: telefónica (CATI) y on line (CAWI) a través del Panel Sigma Dos by Trust Survey.</font></p><p data-mrf-recirculation="Links Párrafos" style="margin: 0px 0px 1rem;"><font size="4"><strong>Tamaños muestrales: </strong>3.007 entrevistas.</font></p><p data-mrf-recirculation="Links Párrafos" style="margin: 0px 0px 1rem;"><font size="4"><strong>Selección de las unidades muestrales: </strong>En la entrevista telefónica mediante selección aleatoria de hogar y aplicación de cuotas de sexo y edad en la selección de la unidad última. En el caso del panel se ha aplicado asignación proporcional por sexo y grupo de edad. La distribución de la muestra ha sido proporcional por comunidad autónoma en ambas muestras.</font></p><p data-mrf-recirculation="Links Párrafos" style="margin: 0px 0px 1rem;"><font size="4"><strong>Margen de error:</strong> El error de muestreo absoluto se puede acotar por ±2,1% para un nivel de confianza del 95.5%, y en el supuesto de variables con dos categorías igualmente distribuidas.</font></p><p data-mrf-recirculation="Links Párrafos" style="margin: 0px 0px 1rem;"><font size="4"><strong>Fecha del trabajo de campo:</strong> 1 a 14 de octubre de 2026</font></p><p data-mrf-recirculation="Links Párrafos" style="margin: 0px 0px 1rem;"><font size="4"><strong style="">Realización:</strong> SIGMA DOS SL. Calle Velázquez 50, 2ª Planta (28001-Madrid)</font></p></div></div>                </div>
+
+                            </section>
+        </article>
+    </main>
+
+<script src="js/news-image-viewer.js" defer></script>
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h5 class="footer-brand">SIGMA DOS</h5>
+            <div class="footer-social-box">
+                <a href="https://www.facebook.com/SigmaDos" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/sigma_dos?igsh=MXRvMG16cjl0N29oYQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/sigma-dos/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://x.com/sigmados" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.whatsapp.com/channel/0029Vb7oqI4KmCPGlTuNNb2P" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h5>Secciones</h5>
+            <ul>
+                <li><a href="index.php?lang=es#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="index.php?lang=es#servicios">Servicios</a></li>
+                <li><a href="panel.php?lang=es">El Panel</a></li>
+                <li><a href="noticias.php?lang=es">Noticias</a></li>
+                <li><a href="trabaja-con-nosotros.php?lang=es">Trabaja con nosotros</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h5>Legal</h5>
+            <ul>
+                <li><a href="aviso-legal.php?lang=es">Aviso Legal</a></li>
+                <li><a href="politica-privacidad.php?lang=es">Política de Privacidad</a></li>
+                <li><a href="politica-cookies.php?lang=es">Política de Cookies</a></li>
+                <li><a href="terminos-y-condiciones-generales.php?lang=es">Términos y Condiciones Generales</a></li>
+                <li><a href="declaracion-de-aplicabilidad.php?lang=es">Declaración de Aplicabilidad</a></li>
+                <li><a href="politica-de-calidad.php?lang=es">Política de Calidad</a></li>
+                <li><a href="sistema-interno-de-informacion.php?lang=es">Sistema Interno de Información</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Sigma Dos. Todos los derechos reservados.</p>
+        <a href="#top" class="scroll-link"><i class="fa-solid fa-arrow-up"></i> Volver arriba</a>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

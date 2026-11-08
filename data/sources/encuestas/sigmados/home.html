@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Dos | Investigación Social y Opinión Pública</title>
+    <meta name="description" content="Sigma Dos: investigación social, opinión pública, marketing, comunicación y metodologías avanzadas de recogida de datos.">
+    <link rel="icon" href="img/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-home">
+<div class="topbar" id="top">
+    <div>
+        <a href="#newsletter-modal" class="newsletter-modal-trigger" aria-haspopup="dialog" aria-controls="newsletter-modal"><i class="fa-regular fa-envelope"></i> Apúntate a nuestra newsletter</a>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/SigmaDos" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sigma_dos?igsh=MXRvMG16cjl0N29oYQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/sigma-dos/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://x.com/sigmados" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.whatsapp.com/channel/0029Vb7oqI4KmCPGlTuNNb2P" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+</div>
+
+<nav class="navbar" aria-label="Navegación principal">
+    <a href="index.php?lang=es" aria-label="Inicio Sigma Dos">
+        <img src="img/logo_sigmados.svg" alt="Sigma Dos" class="logo">
+    </a>
+
+    <button class="hamburger" id="hamburger-btn" type="button" aria-label="Abrir menú" aria-controls="nav-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul class="menu" id="nav-menu">
+        <li><a href="index.php?lang=es#quienes-somos">Quiénes Somos</a></li>
+        <li><a href="index.php?lang=es#servicios">Servicios</a></li>
+        <li><a href="panel.php?lang=es" class="">El Panel</a></li>
+        <!-- <li><a href="trustsurvey.php?lang=es" class="">TrustSurvey</a></li> -->
+        <li><a href="noticias.php?lang=es" class="">Noticias</a></li>
+        <li><a href="trabaja-con-nosotros.php?lang=es" class="">Trabaja con nosotros</a></li>
+        <li><a href="index.php?lang=es#contacto">Contactar</a></li>
+        <li><a href="titulopropio.php?lang=es" class="btn-titulo-propio">Título propio 2027</a></li>
+        <li class="language-switcher" aria-label="Language selector">
+            <a href="/?lang=es" class="active">ES</a>
+            <span>/</span>
+            <a href="/?lang=en" class="">EN</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="newsletter-modal" id="newsletter-modal" aria-hidden="true">
+    <div class="newsletter-modal-backdrop" data-newsletter-close></div>
+    <div class="newsletter-modal-panel" role="dialog" aria-modal="true" aria-labelledby="newsletter-modal-title">
+        <button class="newsletter-modal-close" type="button" aria-label="Cerrar newsletter" data-newsletter-close>
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="newsletter-modal-content">
+            <div class="newsletter-modal-copy">
+                <img src="img/logo_sigmados.svg" alt="Sigma Dos" class="newsletter-modal-logo">
+                <h2 id="newsletter-modal-title">Conecta con el pulso de la opinión pública</h2>
+                <p>Recibe en tu correo las novedades de Sigma Dos: barómetros, estudios, análisis de tendencias y contenidos sobre investigación social aplicada.</p>
+
+                <form class="newsletter-form" id="newsletter-form" method="post" action="/">
+                    <input type="hidden" name="newsletter_form" value="1">
+                    <div class="newsletter-field">
+                        <label for="newsletter-email">Correo electrónico</label>
+                        <input type="email" id="newsletter-email" name="newsletter_email" placeholder="Introduce tu correo electrónico" value="" required>
+                    </div>
+
+                    <div class="newsletter-field">
+                        <label for="newsletter-interest">Área de interés (opcional)</label>
+                        <select id="newsletter-interest" name="newsletter_interest">
+                            <option value="">Selecciona una temática</option>
+                            <option value="opinion" >Opinión pública y barómetros</option>
+                            <option value="markets" >Investigación de mercados</option>
+                            <option value="training" >Formación y eventos</option>
+                        </select>
+                    </div>
+
+                    <label class="newsletter-consent">
+                        <input type="checkbox" name="newsletter_consent" required>
+                        <span>Acepto recibir comunicaciones de Sigma Dos y confirmo que he leído la <a href="politica-privacidad.php">Política de Privacidad</a>.</span>
+                    </label>
+
+                    <button type="submit" class="newsletter-submit">Suscríbete</button>
+                    <p class="newsletter-form-message " id="newsletter-form-message" aria-live="polite"></p>
+                </form>
+            </div>
+
+            <div class="newsletter-modal-brand" aria-hidden="true">
+                <img src="img/logo_sigmados.svg" alt="">
+                <span>Más de 40 años convirtiendo datos en conocimiento social.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main>
+    <section class="slider-container" aria-label="Slider principal">
+        <button class="slider-arrow arrow-prev" onclick="changeSlide(-1)" aria-label="Slide anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="slider-arrow arrow-next" onclick="changeSlide(1)" aria-label="Slide siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <article class="slide active">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80" alt="Demoscopia y análisis de datos" class="slide-bg-img">
+            <div class="slider-overlay"></div>
+            <div class="slide-content">
+                <h2>Rigor y Vanguardia en Demoscopia</h2>
+                <p>Convertimos los datos de opinión pública e investigación de mercados en conocimiento estratégico imprescindible para optimizar decisiones.</p>
+                <a href="#quienes-somos" class="btn-slider-premium scroll-link">Saber más</a>
+            </div>
+        </article>
+
+        <article class="slide">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1920&q=80" alt="Panel de opinión" class="slide-bg-img">
+            <div class="slider-overlay"></div>
+            <div class="slide-content">
+                <h2>Tu opinión define el futuro</h2>
+                <p>Forma parte de nuestro panel de opinión exclusivo, colabora en los estudios sociales más relevantes y obtén recompensas por tu participación activa.</p>
+                <a href="panel.php" class="btn-slider-premium">Saber más</a>
+            </div>
+        </article>
+
+        <article class="slide">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1920&q=80" alt="Formación avanzada" class="slide-bg-img">
+            <div class="slider-overlay"></div>
+            <div class="slide-content">
+                <h2>Especialización Profesional 2026</h2>
+                <p>Matriculación abierta para nuestro Título Propio en Investigación Social y Comunicación Política.</p>
+                <a href="titulopropio.php" class="btn-slider-premium">Saber más</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="nosotros-section reveal" id="quienes-somos">
+        <div class="nosotros-texto">
+            <h4>Quiénes Somos</h4>
+            <h3>Más de 40 años descifrando la realidad social</h3>
+            <p>Desde 1982, en Sigma Dos convertimos el comportamiento humano en datos imprescindibles para instituciones y empresas privadas. Analizamos tendencias combinando la excelencia metodológica tradicional con herramientas innovadoras.</p>
+            <p>Fieles a nuestra apuesta por el futuro, inauguramos unas nuevas instalaciones corporativas preparadas para potenciar el análisis colaborativo y tecnológico de nuestro equipo multidisciplinar.</p>
+        </div>
+        <div class="nosotros-container-fotos">
+            <img src="img/foto3.png" alt="Nuevas oficinas de Sigma Dos" class="foto-oficina foto-principal">
+            <img src="img/foto2.png" alt="Sala de reuniones de Sigma Dos" class="foto-oficina foto-secundaria">
+        </div>
+    </section>
+
+    <section class="servicios-section reveal" id="servicios">
+        <div class="section-title">
+            <h4>Nuestras Soluciones</h4>
+            <h3>Áreas de Especialización Estratégica</h3>
+        </div>
+
+        <div class="acordeon-wrapper">
+            <article class="acordeon-item">
+                <div class="acordeon-header" onclick="toggleAcordeon(this)">
+                    <span><i class="fa-solid fa-square-poll-horizontal"></i> Opinión Pública</span>
+                </div>
+                <div class="acordeon-content">
+                    <div class="acordeon-content-inner">
+                        <h3>Estudios Sociológicos y Opinión Pública</h3>
+                        <p>Ayudamos a instituciones públicas y medios de comunicación a conocer con precisión la realidad social, transformando las corrientes de opinión en conocimiento científico estratégico.</p>
+                        <ul class="subservicios-list">
+                            <li><i class="fa-solid fa-check"></i> Estudios de Opinión Pública</li>
+                            <li><i class="fa-solid fa-check"></i> Sondeos Pre y Post Electorales</li>
+                            <li><i class="fa-solid fa-check"></i> Barómetros para Medios</li>
+                            <li><i class="fa-solid fa-check"></i> Investigación de Tendencias</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="acordeon-item">
+                <div class="acordeon-header" onclick="toggleAcordeon(this)">
+                    <span><i class="fa-solid fa-users-viewfinder"></i> Sigma Dos by TrustSurvey</span>
+                </div>
+                <div class="acordeon-content">
+                    <div class="acordeon-content-inner">
+                        <h3>Panel de Encuestas Online</h3>
+                        <p>Sigma Dos by TrustSurvey es nuestro panel de encuestas online: una comunidad de personas que participan en estudios de opinión e investigación social. Combinamos la experiencia demoscópica de Sigma Dos con tecnología basada en inteligencia artificial para obtener resultados más precisos, representativos y de mayor valor analítico.</p>
+                        <ul class="subservicios-list">
+                            <li><i class="fa-solid fa-check"></i> Comunidad de panelistas comprometidos y representativos.</li>
+                            <li><i class="fa-solid fa-check"></i> Metodología demoscópica avalada por más de 40 años de experiencia.</li>
+                            <li><i class="fa-solid fa-check"></i> Inteligencia Artificial aplicada al análisis y procesamiento de datos.</li>
+                            <li><i class="fa-solid fa-check"></i> Algoritmos de aprendizaje profundo y procesamiento del lenguaje natural.</li>
+                            <li><i class="fa-solid fa-check"></i> Sistema de incentivos que fomenta la participación continuada.</li>
+                            <li><i class="fa-solid fa-check"></i> Protección y tratamiento seguro de los datos personales.</li>
+                            <li><i class="fa-solid fa-check"></i> Estudios online rápidos, fiables y de alta calidad.</li>
+                        </ul>
+                        <a href="panel.php" class="btn-acordeon-link">Descubrir el Panel</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="acordeon-item">
+                <div class="acordeon-header" onclick="toggleAcordeon(this)">
+                    <span><i class="fa-solid fa-chart-pie"></i> Publicidad y Marketing</span>
+                </div>
+                <div class="acordeon-content">
+                    <div class="acordeon-content-inner">
+                        <h3>Publicidad, Marketing e Insights</h3>
+                        <p>Analizamos el comportamiento del consumidor y la salud de las marcas. Generamos insights de alto valor para optimizar la experiencia de cliente y el lanzamiento de productos.</p>
+                        <ul class="subservicios-list">
+                            <li><i class="fa-solid fa-check"></i> Imagen y Posicionamiento</li>
+                            <li><i class="fa-solid fa-check"></i> Mystery Shopping</li>
+                            <li><i class="fa-solid fa-check"></i> Satisfacción de Cliente</li>
+                            <li><i class="fa-solid fa-check"></i> Test de Concepto y Producto</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="acordeon-item">
+                <div class="acordeon-header" onclick="toggleAcordeon(this)">
+                    <span><i class="fa-solid fa-bullhorn"></i> Comunicación</span>
+                </div>
+                <div class="acordeon-content">
+                    <div class="acordeon-content-inner">
+                        <h3>Dirección y Consultoría de Comunicación</h3>
+                        <p>Diseñamos estrategias de comunicación basadas en datos y potenciamos la proyección corporativa mediante herramientas avanzadas de segmentación analítica.</p>
+                        <ul class="subservicios-list">
+                            <li><i class="fa-solid fa-check"></i> Microtargeting Analítico</li>
+                            <li><i class="fa-solid fa-check"></i> Campañas Inteligentes</li>
+                            <li><i class="fa-solid fa-check"></i> Desarrollo de Contenidos</li>
+                            <li><i class="fa-solid fa-check"></i> Creación de Eventos</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="acordeon-item">
+                <div class="acordeon-header" onclick="toggleAcordeon(this)">
+                    <span><i class="fa-solid fa-hashtag"></i> Escucha Digital y RRSS</span>
+                </div>
+                <div class="acordeon-content">
+                    <div class="acordeon-content-inner">
+                        <h3>Gestión de Escucha Activa y Redes Sociales</h3>
+                        <p>Monitorizamos la conversación digital e inteligencia artificial aplicada a redes sociales para proteger y potenciar la reputación corporativa de las marcas.</p>
+                        <ul class="subservicios-list">
+                            <li><i class="fa-solid fa-check"></i> Monitorización en Tiempo Real</li>
+                            <li><i class="fa-solid fa-check"></i> Reputación Social Corporativa</li>
+                            <li><i class="fa-solid fa-check"></i> Identificación de Influencers</li>
+                            <li><i class="fa-solid fa-check"></i> Medición de Canales Propios</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="acordeon-item">
+                <div class="acordeon-header" onclick="toggleAcordeon(this)">
+                    <span><i class="fa-solid fa-gears"></i> Metodología de recogida de datos</span>
+                </div>
+                <div class="acordeon-content">
+                    <div class="acordeon-content-inner">
+                        <h3>Infraestructura Tecnológica Metodológica</h3>
+                        <p>Implementamos sistemas avanzados de recolección de datos garantizando el rigor y la representatividad estadística.</p>
+
+                        <div class="metodologia-block">
+                            <strong>CAWI:</strong>
+                            <p>Encuestas realizadas a través de internet mediante ordenador, tablet o dispositivo móvil.</p>
+                        </div>
+
+                        <div class="metodologia-block">
+                            <strong>CAPI:</strong>
+                            <p>Entrevistas personales presenciales con dispositivos electrónicos para registrar respuestas de forma ágil y consistente.</p>
+                        </div>
+
+                        <div class="metodologia-block">
+                            <strong>CATI:</strong>
+                            <p>Encuestas telefónicas guiadas por ordenador, combinables con metodologías mixtas para ampliar el alcance de los estudios.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="panel-section reveal" id="el-panel">
+        <div class="panel-content">
+            <h3>Comunidad TrustSurvey</h3>
+            <p>Tu voz ayuda a configurar el panorama social y empresarial. Súmate a nuestra plataforma de encuestas y comparte tu punto de vista.</p>
+            <a href="https://www.sigmados.com/panel/#/register?origin=SDM" class="btn-panel-white">Únete a Sigma Dos By Trustsurvey</a>
+        </div>
+    </section>
+
+    <section class="noticias-section reveal" id="noticias">
+        <div class="noticias-header">
+            <div>
+                <h4>Actualidad</h4>
+                <h3>Barómetros y Noticias</h3>
+            </div>
+            <a href="noticias.php">Ir a la sección noticias <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+                    <div class="noticias-grid">
+                                                        <article class="noticia-card">
+                        <a class="noticia-img-link" href="noticia.php?id=sa0OT7jgxEjay6E" aria-label="Leer Sondeo 2 de noviembre - Estimación de voto para las Elecciones Generales 29-N">
+                                                            <img src="img/uploads/2026/11/02/news_ed0b07a49a260a39_1793616512.png" alt="Sondeo 2 de noviembre - Estimación de voto para las Elecciones Generales 29-N" class="noticia-img">
+                                                    </a>
+                        <div class="noticia-info">
+                                                            <div class="date">2 de noviembre de 2026</div>
+                                                        <h4><a href="noticia.php?id=sa0OT7jgxEjay6E">Sondeo 2 de noviembre - Estimación de voto para las Elecciones Generales 29-N</a></h4>
+                            <p>La nueva encuesta del 2 de noviembre de Sigma Dos para El Mundo recoge la estimación de voto para las Elecciones Generales del 29 de noviembre, cuyo trabajo de campo...</p>
+                        </div>
+                    </article>
+                                                        <article class="noticia-card">
+                        <a class="noticia-img-link" href="noticia.php?id=wn9dETSQdpOC1qJ6" aria-label="Leer Dos de cada tres españoles reclaman neutralidad tecnológica para acelerar la renovación del parque móvil">
+                                                            <img src="img/uploads/2026/10/27/news_ade7ee283c705003_1793124702.jpg" alt="Dos de cada tres españoles reclaman neutralidad tecnológica para acelerar la renovación del parque móvil" class="noticia-img">
+                                                    </a>
+                        <div class="noticia-info">
+                                                            <div class="date">27 de octubre de 2026</div>
+                                                        <h4><a href="noticia.php?id=wn9dETSQdpOC1qJ6">Dos de cada tres españoles reclaman neutralidad tecnológica para acelerar la renovación del parque móvil</a></h4>
+                            <p>Sigma Dos ha elaborado este estudio pionero en España sobre el impacto de la renovación del parque automovilístico.La mayoría de los españoles apuesta por una transi...</p>
+                        </div>
+                    </article>
+                                                        <article class="noticia-card">
+                        <a class="noticia-img-link" href="noticia.php?id=pWkCUfcAelcJsb7A" aria-label="Leer Entre la percha y la pantalla: ¿Nuestra manera de comprar ha cambiado?">
+                                                            <img src="img/uploads/2026/10/27/news_b033507072883f31_1793120506.png" alt="Entre la percha y la pantalla: ¿Nuestra manera de comprar ha cambiado?" class="noticia-img">
+                                                    </a>
+                        <div class="noticia-info">
+                                                            <div class="date">27 de octubre de 2026</div>
+                                                        <h4><a href="noticia.php?id=pWkCUfcAelcJsb7A">Entre la percha y la pantalla: ¿Nuestra manera de comprar ha cambiado?</a></h4>
+                            <p>El sector de la moda y nuestros hábitos de consumo atraviesan un momento de profunda dualidad. Según los datos del estudio que hemos elaborado desde Sigma Dos para l...</p>
+                        </div>
+                    </article>
+                            </div>
+            </section>
+
+    <hr class="separador-bloque">
+
+    <section class="contacto-section reveal" id="contacto">
+        <div class="contacto-info">
+            <h4>Contacto</h4>
+            <h3>¿Hablamos?</h3>
+            <p>Si deseas solicitar una propuesta personalizada o necesitas más información sobre nuestras soluciones metodológicas, ponte en contacto con nuestro equipo.</p>
+
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <h5>Sede Central - Madrid</h5>
+                    <p>Calle Velázquez, 50 · 2ª planta | 28001 Madrid</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fa-solid fa-building-flag"></i>
+                <div>
+                    <h5>Delegación Internacional</h5>
+                    <p><p>Blvd. Saint-Michel 65 bte. 6 1040 Bruselas, Bélgica</p></p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <h5>Correo Electrónico</h5>
+                    <p>info@sigmados.com</p>
+                </div>
+            </div>
+        </div>
+
+        <form class="contacto-form" method="post" action="index.php#contacto">
+            <input type="hidden" name="contact_form" value="1">
+            <div class="contact-honeypot" aria-hidden="true">
+                <label for="contact-extra-field">No rellenar</label>
+                <input type="text" id="contact-extra-field" name="contact_extra_field" tabindex="-1" autocomplete="new-password">
+            </div>
+
+                        <div class="form-group"><input type="text" name="name" placeholder="Nombre completo" value="" required></div>
+            <div class="form-group"><input type="email" name="email" placeholder="Correo electrónico" value="" required></div>
+            <div class="form-group"><textarea name="message" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea></div>
+            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h5 class="footer-brand">SIGMA DOS</h5>
+            <div class="footer-social-box">
+                <a href="https://www.facebook.com/SigmaDos" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/sigma_dos?igsh=MXRvMG16cjl0N29oYQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/sigma-dos/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://x.com/sigmados" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.whatsapp.com/channel/0029Vb7oqI4KmCPGlTuNNb2P" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h5>Secciones</h5>
+            <ul>
+                <li><a href="index.php?lang=es#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="index.php?lang=es#servicios">Servicios</a></li>
+                <li><a href="panel.php?lang=es">El Panel</a></li>
+                <li><a href="noticias.php?lang=es">Noticias</a></li>
+                <li><a href="trabaja-con-nosotros.php?lang=es">Trabaja con nosotros</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h5>Legal</h5>
+            <ul>
+                <li><a href="aviso-legal.php?lang=es">Aviso Legal</a></li>
+                <li><a href="politica-privacidad.php?lang=es">Política de Privacidad</a></li>
+                <li><a href="politica-cookies.php?lang=es">Política de Cookies</a></li>
+                <li><a href="terminos-y-condiciones-generales.php?lang=es">Términos y Condiciones Generales</a></li>
+                <li><a href="declaracion-de-aplicabilidad.php?lang=es">Declaración de Aplicabilidad</a></li>
+                <li><a href="politica-de-calidad.php?lang=es">Política de Calidad</a></li>
+                <li><a href="sistema-interno-de-informacion.php?lang=es">Sistema Interno de Información</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Sigma Dos. Todos los derechos reservados.</p>
+        <a href="#top" class="scroll-link"><i class="fa-solid fa-arrow-up"></i> Volver arriba</a>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
