@@ -243,3 +243,8 @@ details > summary { cursor: pointer; }
 .muestra i { display: block; height: 64px; }
 .muestra div { padding: 8px 10px; }
 .lienzo { display: grid; place-items: center; padding: 36px; border-radius: var(--r); border: 1px solid var(--line); }
+@media (max-width: 760px) {
+  .top .wrap { gap: 10px; }
+  .nav a { padding: 6px 7px; font-size: 0.82rem; gap: 4px; }
+  .nav a .dot { width: 6px; height: 6px; }
+}

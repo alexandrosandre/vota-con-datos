@@ -24,7 +24,7 @@ function Cabecera() {
           {PASOS.map((p) => (
             <a key={p.id} class={`${p.clase} ${r.startsWith(p.ruta) ? 'on' : ''}`} href={`#${p.ruta}`}>
               <span class="dot" aria-hidden="true" />
-              {p.n} · {p.verbo}
+              {p.n} {p.verbo}
             </a>
           ))}
           <a class={`hide-m ${r.startsWith('/metodologia') ? 'on' : ''}`} href="#/metodologia">
