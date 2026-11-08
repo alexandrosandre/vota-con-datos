@@ -18,8 +18,6 @@ ROOT = Path(__file__).resolve().parent.parent
 D = ROOT / "data"
 OUT = ROOT / "web" / "public" / "data"
 ALIAS_PROMESAS = {"coalicion_canaria": "cc"}
-# Mínimo de programas publicados para que la fase 1 tenga sentido comparativo (ver docs/METODOLOGIA.md)
-MIN_PROGRAMAS_FASE1 = 8
 
 
 def load(p):
@@ -68,16 +66,19 @@ def main():
 
     # ---- Fase 1 ----
     publicados = [p for p in partidos if p["programa"]["estado"] == "publicado"]
+    if list((D / "fase1").glob("codificacion_g*.json")):
+        subprocess.run([sys.executable, "-I", str(ROOT / "pipeline" / "build_fase1.py")], check=True)
     f1 = D / "fase1" / "fase1.json"
     if f1.exists():
         fase1 = json.loads(f1.read_text())
     else:
         fase1 = {"preguntas": [], "posiciones": {}}
+    n_prog = sum(1 for qs in fase1.get("posiciones", {}).values() for x in qs.values() if x.get("fuente") == "programa")
+    n_camp = sum(1 for qs in fase1.get("posiciones", {}).values() for x in qs.values() if x.get("fuente") == "campaña")
     fase1["meta"] = {
         "actualizado": date.today().isoformat(),
-        "nota": (f"Hoy hay {len(publicados)} de {len(partidos)} programas publicados. El cuestionario se activa cuando haya al "
-                 f"menos {MIN_PROGRAMAS_FASE1}, incluidos los de los partidos de ámbito estatal con más apoyo, para que la "
-                 "comparación sea justa."),
+        "nota": (f"Posiciones documentadas: {n_prog} desde programas oficiales y {n_camp} desde compromisos de campaña. "
+                 f"Programas publicados: {len(publicados)} de {len(partidos)}; se recodifica cada vez que se publica uno."),
     }
     write("fase1.json", fase1)
 

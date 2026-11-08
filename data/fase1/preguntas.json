@@ -1,0 +1,1721 @@
+{
+  "meta": {
+    "titulo": "Afirmaciones de la fase 1 de Vota con datos (elecciones generales 29-11-2026)",
+    "generado": "2026-11-08",
+    "entradas": [
+      "docs/research/vaa_estado_del_arte.md",
+      "data/promesas/promesas.json",
+      "data/programas/erc/extraccion.json",
+      "data/programas/cc/extraccion.json",
+      "data/programas/bng/extraccion.json",
+      "data/sources/programas/erc/e2026-programa.txt",
+      "data/sources/programas/cc/CCA-26-Programa_Electoral-29NOV.txt",
+      "data/partidos/partidos.json"
+    ],
+    "nota": "Borrador para piloto de comprensión (recomendación 2 del estado del arte). Cada afirmación parte de al menos una propuesta real de este proceso electoral; se espera revisar la cobertura cuando publiquen sus programas los partidos estatales."
+  },
+  "preguntas": [
+    {
+      "id": "q01",
+      "tema": "Vivienda",
+      "texto": "Fijar por ley un precio máximo del alquiler de vivienda en las zonas donde los alquileres son más caros.",
+      "contexto": "La Ley de Vivienda de 2023 permite declarar «zonas de mercado residencial tensionado», donde se limitan las rentas de algunos contratos nuevos; aplicarla depende de que lo pida cada comunidad autónoma.",
+      "contexto_fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203",
+      "polaridad": "progresista",
+      "origen": [
+        {
+          "partido": "podemos",
+          "tipo": "campaña",
+          "cita": "Rebajar los alquileres por ley.",
+          "pagina": null,
+          "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
+          "sentido": "a_favor",
+          "ref": "promesas:podemos#0"
+        },
+        {
+          "partido": "bng",
+          "tipo": "campaña",
+          "cita": "Limitar por ley los precios de los alquileres.",
+          "pagina": null,
+          "url": "https://www.bng.gal/articulo/novas/bng-presenta-axenda-galega-defender-galiza-madrid-avanzar-dereitos-mellorar-vida-das-persoas/20261107154118043809.html",
+          "sentido": "a_favor",
+          "ref": "promesas:bng#0"
+        },
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "Topar por lei os prezos dos alugueiros e prohibir os desafiuzamentos de persoas en situación de vulnerabilidade, así como decretar a suspensión automática e indefinida de calquera lanzamento sen alternativa habitacional",
+          "pagina": 12,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:bng-p017"
+        },
+        {
+          "partido": "compromis",
+          "tipo": "campaña",
+          "cita": "Hay que regular los alquileres en las zonas tensionadas y reducirlos, no limitarse a impedir que sigan subiendo.",
+          "pagina": null,
+          "url": "https://www.eldiario.es/comunitat-valenciana/politica/agueda-mico-cabeza-lista-compromis-front-valencia-hay-limitar-compra-vivienda_128_13608690.html",
+          "sentido": "a_favor",
+          "ref": "promesas:compromis#1"
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "tema": "Vivienda",
+      "texto": "Permitir expropiar viviendas a las empresas y fondos de inversión que son grandes propietarios para destinarlas a alquiler público asequible.",
+      "contexto": "La ley considera «gran tenedor» a quien posee más de diez viviendas (umbral que puede bajar a cinco en zonas tensionadas). La expropiación exige pagar un justiprecio al propietario.",
+      "contexto_fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203",
+      "polaridad": "progresista",
+      "origen": [
+        {
+          "partido": "frente_amplio",
+          "tipo": "campaña",
+          "cita": "Aprobar una ley de expropiación de viviendas a propietarios corporativos privados (fondos), aplicada por fases: primero a entidades con más de 1.000 viviendas, después a las de más de 700 y finalmente a las de más de 50, a precios inferiores a los de mercado, para incorporarlas al parque público de alquiler asequible. Excluye a personas físicas y familias.",
+          "pagina": null,
+          "url": "https://www.eldiario.es/politica/frente-amplio-plantea-ley-expropiar-viviendas-fondos-buitre_1_13643839.html",
+          "sentido": "a_favor",
+          "ref": "promesas:frente_amplio#0"
+        },
+        {
+          "partido": "podemos",
+          "tipo": "campaña",
+          "cita": "Expropiar el uso de las miles de viviendas que acumulan los fondos buitre para destinarlas a alquiler social.",
+          "pagina": null,
+          "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
+          "sentido": "a_favor",
+          "ref": "promesas:podemos#2"
+        },
+        {
+          "partido": "compromis",
+          "tipo": "campaña",
+          "cita": "Aprobar una ley que permita expropiar las viviendas de los fondos buitre para ampliar el parque público de vivienda.",
+          "pagina": null,
+          "url": "https://valenciaplaza.com/valenciaplaza/comunitat-valenciana1/compromis-front-valencia-pedira-reabrir-la-investigacion-de-la-dana-en-el-nuevo-congreso",
+          "sentido": "a_favor",
+          "ref": "promesas:compromis#3"
+        },
+        {
+          "partido": "upc",
+          "tipo": "campaña",
+          "cita": "Aumentar los impuestos a los fondos buitre y a los grandes tenedores de vivienda, sin descartar expropiaciones.",
+          "pagina": null,
+          "url": "https://diariodeavisos.elespanol.com/2026/11/upc-viviendaderechos-sociales-y-laborales/",
+          "sentido": "a_favor",
+          "ref": "promesas:upc#1"
+        },
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "mecanismos como o alugueiro forzoso, a expropiación temporal ou o estabelecemento de canon á vivenda desocupada (importe de como mínimo 10 euros por metro cadrado, incrementándose un 10% anual até o triplo do importe inicial) para as vivendas baleiras desde hai 5 ou máis anos e en mans de grandes propietarios.",
+          "pagina": 14,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:bng-p039"
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "tema": "Vivienda",
+      "texto": "Reducir al menos a la mitad los impuestos que se pagan al comprar la primera vivienda.",
+      "contexto": "Al comprar una vivienda nueva se paga un 10 % de IVA; si es de segunda mano, el Impuesto de Transmisiones Patrimoniales, cuyo tipo fija cada comunidad autónoma.",
+      "contexto_fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+      "polaridad": "conservadora",
+      "origen": [
+        {
+          "partido": "pp",
+          "tipo": "campaña",
+          "cita": "Para la compra de la primera vivienda por menores de 40 años: avales públicos de hasta el 100% del precio y una reducción del 60% del IVA y del Impuesto de Transmisiones Patrimoniales.",
+          "pagina": null,
+          "url": "https://www.infobae.com/espana/2026/10/05/feijoo-anuncia-sus-propuestas-en-vivienda-de-construir-250000-casas-al-ano-a-rebajar-el-iva-al-4-para-jovenes/",
+          "sentido": "a_favor",
+          "ref": "promesas:pp#2"
+        },
+        {
+          "partido": "salf",
+          "tipo": "campaña",
+          "cita": "Eliminar el 100% de los impuestos sobre la compra de la primera vivienda para los españoles que no tengan ninguna.",
+          "pagina": null,
+          "url": "https://www.eldiario.es/castilla-la-mancha/politica/ultra-alvise-perez-visita-toledo-guadajara-quiere-recoger-avales-concurrir-elecciones-generales_1_13587164.html",
+          "sentido": "a_favor",
+          "ref": "promesas:salf#1"
+        },
+        {
+          "partido": "vox",
+          "tipo": "campaña",
+          "cita": "Liberalizar suelo, bajar impuestos a la construcción y dar ayudas directas a los jóvenes para comprar su primera vivienda, permitiendo además pagar a plazos ciertos impuestos de la compraventa.",
+          "pagina": null,
+          "url": "https://www.infobae.com/espana/agencias/2026/10/11/vox-propone-construir-masivamente-vivienda-social-y-adjudicarla-con-prioridad-nacional/",
+          "sentido": "parcial",
+          "ref": "promesas:vox#4"
+        },
+        {
+          "partido": "erc",
+          "tipo": "programa",
+          "cita": "Alhora, cal que es redueixin els tipus impositius quan l’ús final de l’habitatge sigui la primera residència, del propietari o de l’arrendatari",
+          "pagina": 19,
+          "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+          "sentido": "parcial",
+          "ref": "extraccion:erc-m059"
+        },
+        {
+          "partido": "cc",
+          "tipo": "programa",
+          "cita": "Reclamaremos incentivos fiscales estatales a la primera vivienda para jóvenes y familias con ingresos medios y bajos",
+          "pagina": 11,
+          "url": "https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf",
+          "sentido": "parcial",
+          "ref": "extraccion:cc-a028"
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "tema": "Fiscalidad",
+      "texto": "Mantener de forma permanente un impuesto estatal sobre las grandes fortunas.",
+      "contexto": "Desde 2022 existe un Impuesto Temporal de Solidaridad de las Grandes Fortunas para patrimonios netos de más de 3 millones de euros, que complementa al Impuesto sobre el Patrimonio que gestionan las comunidades autónomas.",
+      "contexto_fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22684",
+      "polaridad": "progresista",
+      "origen": [
+        {
+          "partido": "frente_amplio",
+          "tipo": "campaña",
+          "cita": "Crear un impuesto sobre grandes patrimonios ('tax the rich'): un 2% anual del patrimonio total para fortunas de más de un millón de euros y un 3% para las de más de 50 millones.",
+          "pagina": null,
+          "url": "https://www.eldiario.es/politica/colau-propone-impuesto-tax-the-rich-gravar-patrimonios-millon-euros_1_13639759.html",
+          "sentido": "a_favor",
+          "ref": "promesas:frente_amplio#4"
+        },
+        {
+          "partido": "erc",
+          "tipo": "programa",
+          "cita": "Fiscalitat dels multimilionaris. Fer permanent l’impost temporal de solidaritat de les grans fortunes, augmentant el tipus per a fortunes de més de 10 milions d’euros i creant un tram nou a partir de 100 milions d’euros.",
+          "pagina": 22,
+          "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:erc-m074"
+        },
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "Blindar a permanencia dos impostos específicos aos beneficios da banca, das grandes enerxéticas e ás grandes fortunas, reducir os límites de exención, aumentar a súa progresividade e traspasar a súa xestión á Galiza.",
+          "pagina": 44,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:bng-p213"
+        },
+        {
+          "partido": "bng",
+          "tipo": "campaña",
+          "cita": "Garantizar que las pensiones suban cada año al menos conforme al IPC y que ninguna pensión mínima sea inferior al salario mínimo interprofesional, reforzando la financiación del sistema público con impuestos específicos a las grandes fortunas.",
+          "pagina": null,
+          "url": "https://www.nosdiario.gal/politica/bng-quere-sacar-pensions-galegas-do-furgon-cola-do-estado-2600E-menos-ao-ano-discriminacion-intolerabel/20261105130510271054.html",
+          "sentido": "parcial",
+          "ref": "promesas:bng#4"
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "tema": "Fiscalidad",
+      "texto": "Sustituir los tramos actuales del IRPF por solo dos tipos: un 15 % y un 25 %.",
+      "contexto": "El IRPF sube por tramos a medida que aumentan los ingresos: la escala estatal va del 9,5 % al 24,5 % y cada comunidad autónoma añade la suya.",
+      "contexto_fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "polaridad": "conservadora",
+      "origen": [
+        {
+          "partido": "vox",
+          "tipo": "campaña",
+          "cita": "Sustituir la escala del IRPF por un mínimo exento de 22.000 euros anuales, un tipo del 15% hasta 70.000 euros y del 25% a partir de 70.001 euros, con una rebaja de cuatro puntos en el tipo por cada hijo a cargo.",
+          "pagina": null,
+          "url": "https://www.eldiario.es/economia/recetas-responsable-economico-vox-rumbo-privatizacion-pensiones-irpf-medida-ricos_1_13572527.html",
+          "sentido": "a_favor",
+          "ref": "promesas:vox#0"
+        },
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "Incrementar a súa progresividade: que pague máis quen máis renda obtén.",
+          "pagina": 43,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "en_contra",
+          "ref": "extraccion:bng-p201"
+        },
+        {
+          "partido": "erc",
+          "tipo": "programa",
+          "cita": "Dur a terme una reforma social de l’IRPF. Augmentar el tipus màxim de l’IRPF sobre els guanys de capital del 30 % al 35 % per acabar amb el tracte de favor respecte a les rendes del treball.",
+          "pagina": 21,
+          "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+          "sentido": "en_contra",
+          "ref": "extraccion:erc-m069"
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "tema": "Empleo y salarios",
+      "texto": "Reducir por ley la jornada laboral máxima por debajo de las 40 horas semanales, sin rebajar el salario.",
+      "contexto": "La jornada máxima legal es de 40 horas semanales de promedio anual. En 2025 el Congreso rechazó un proyecto de ley que la bajaba a 37,5 horas.",
+      "contexto_fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430",
+      "polaridad": "progresista",
+      "origen": [
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "Promover a implantación da xornada laboral de 35 horas semanais sen redución salarial, e avanzar no horizonte da xornada de 32 horas semanais en 4 xornadas.",
+          "pagina": 15,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:bng-p050"
+        },
+        {
+          "partido": "bng",
+          "tipo": "campaña",
+          "cita": "Avanzar hacia la jornada laboral de 35 horas semanales sin reducción salarial.",
+          "pagina": null,
+          "url": "https://www.galiciaconfidencial.com/noticia/6083014-bng-reclama-no-seu-decalogo-compromisos-mais-autogoberno-unha-fiscalidade-mais-xusta-e-unha-vida-digna",
+          "sentido": "a_favor",
+          "ref": "promesas:bng#3"
+        },
+        {
+          "partido": "erc",
+          "tipo": "programa",
+          "cita": "Reduir la durada màxima de la jornada laboral setmanal a 37 hores i mitja sense reducció salarial. Modificar l’article 34 de l’Estatut dels Treballadors per garantir aquesta reducció legal de la jornada, respectant les jornades inferiors establertes per conveni col·lectiu.",
+          "pagina": 26,
+          "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:erc-m105"
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "tema": "Empleo y salarios",
+      "texto": "Que los autónomos que ingresen menos del salario mínimo no paguen cuota a la Seguridad Social.",
+      "contexto": "Desde 2023 los autónomos pagan una cuota mensual que depende de sus rendimientos netos; también pagan cuota, la más baja, quienes ganan menos del salario mínimo.",
+      "contexto_fuente": null,
+      "polaridad": "conservadora",
+      "origen": [
+        {
+          "partido": "vox",
+          "tipo": "campaña",
+          "cita": "Cuota cero de cotización para los autónomos que facturen por debajo del salario mínimo interprofesional, mientras se mantengan bajo ese umbral.",
+          "pagina": null,
+          "url": "https://www.eldebate.com/espana/20261024/diez-propuestas-clave-vox-espana-ante-29n_471660.html",
+          "sentido": "a_favor",
+          "ref": "promesas:vox#1"
+        },
+        {
+          "partido": "erc",
+          "tipo": "programa",
+          "cita": "Garantir un sistema de cotització just i progressiu per als treballadors autònoms. Adaptar les quotes als ingressos reals i a la capacitat econòmica de cada professional, establint trams progressius que garanteixin que qui menys ingressi, menys cotitzi.",
+          "pagina": 26,
+          "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+          "sentido": "parcial",
+          "ref": "extraccion:erc-m112"
+        },
+        {
+          "partido": "cc",
+          "tipo": "programa",
+          "cita": "Apoyo a los autónomos. Reforzaremos las ayudas estatales a quienes empiezan una actividad por cuenta propia y a los autónomos con menores rendimientos. Los instrumentos de apoyo deben ajustarse a las condiciones en las que se trabaja y se emprende en las islas.",
+          "pagina": 12,
+          "url": "https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf",
+          "sentido": "parcial",
+          "ref": "extraccion:cc-a032"
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "tema": "Pensiones",
+      "texto": "Volver a fijar en 65 años la edad ordinaria de jubilación para todos los trabajadores.",
+      "contexto": "La edad de jubilación sube de forma gradual hasta los 67 años en 2027. En 2026 es de 66 años y 10 meses, o 65 años con al menos 38 años y 3 meses cotizados.",
+      "contexto_fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+      "polaridad": "progresista",
+      "origen": [
+        {
+          "partido": "bng",
+          "tipo": "campaña",
+          "cita": "Recuperar la jubilación ordinaria a los 65 años y deshacer la reforma de las pensiones.",
+          "pagina": null,
+          "url": "https://www.galiciaconfidencial.com/noticia/6080276-bng-defende-unha-axenda-galega-das-pensions-blindar-sistema-e-mellorar-as-prestacions-galicia",
+          "sentido": "a_favor",
+          "ref": "promesas:bng#5"
+        },
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "Recuperación da xubilación ordinaria aos 65 anos e a parcial aos 61 anos.",
+          "pagina": 19,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:bng-p079"
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "tema": "Sanidad",
+      "texto": "Que la sanidad pública pueda pagar a clínicas privadas para atender a sus pacientes y reducir las listas de espera.",
+      "contexto": "La ley permite que el sistema público de salud contrate servicios con centros privados (conciertos); las comunidades autónomas los usan, entre otras cosas, para operaciones con lista de espera.",
+      "contexto_fuente": null,
+      "polaridad": "conservadora",
+      "origen": [
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "Garantir o carácter público da sanidade e reducir as súas posibilidades de privatización, mediante unha modificación da Lei 15/97, sobre habilitación de novas formas de xestión do Sistema de Saúde, que asegure que a titularidade, o financiamento, a xestión e a provisión de servizos sanitarios se fará con entidades exclusivamente públicas.",
+          "pagina": 37,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "en_contra",
+          "ref": "extraccion:bng-p172"
+        },
+        {
+          "partido": "erc",
+          "tipo": "programa",
+          "cita": "Defensar i enfortir el sistema sanitari públic. Blindar una sanitat pública, universal i de qualitat, reforçant la capacitat assistencial del sistema per reduir les llistes d’espera, garantir una atenció equitativa i frenar la privatització de la sanitat.",
+          "pagina": 41,
+          "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+          "sentido": "en_contra",
+          "ref": "extraccion:erc-m233"
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "tema": "Sanidad",
+      "texto": "Elevar el gasto en sanidad pública hasta al menos el 7 % del PIB.",
+      "contexto": "La sanidad pública la gestionan las comunidades autónomas, que la financian sobre todo con los recursos que reciben del sistema de financiación autonómica.",
+      "contexto_fuente": null,
+      "polaridad": "progresista",
+      "origen": [
+        {
+          "partido": "psoe",
+          "tipo": "campaña",
+          "cita": "Destinar al menos el 7% del PIB al gasto sanitario, compromiso que se incluirá en el programa electoral.",
+          "pagina": null,
+          "url": "https://infobae.com/america/agencias/2026/11/06/el-psoe-propone-que-el-85-de-los-pacientes-consiga-cita-en-atencion-primaria-en-menos-de-48-horas",
+          "sentido": "a_favor",
+          "ref": "promesas:psoe#6"
+        },
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "Aumentar o financiamento da sanidade pública, até como mínimo a media de investimento por habitante da UE",
+          "pagina": 37,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "parcial",
+          "ref": "extraccion:bng-p171"
+        },
+        {
+          "partido": "erc",
+          "tipo": "programa",
+          "cita": "Incrementar el finançament estatal del sistema públic de salut per garantir una atenció sanitària de qualitat i unes condicions laborals dignes. Augmentar de manera estructural i suficient els recursos que l’Administració General de l’Estat transfereix a les administracions sanitàries competents per afrontar la situació de saturació del sistema, reduir les llistes d’espera i garantir una atenció sanitària universal.",
+          "pagina": 41,
+          "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+          "sentido": "parcial",
+          "ref": "extraccion:erc-m234"
+        },
+        {
+          "partido": "podemos",
+          "tipo": "campaña",
+          "cita": "Contratar 40.000 profesionales sanitarios.",
+          "pagina": null,
+          "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
+          "sentido": "parcial",
+          "ref": "promesas:podemos#6"
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "tema": "Educación",
+      "texto": "Retirar de forma progresiva la financiación pública a los colegios privados concertados.",
+      "contexto": "Los colegios concertados son de titularidad privada pero reciben fondos públicos a cambio de ser gratuitos en las etapas obligatorias y seguir las reglas de admisión públicas.",
+      "contexto_fuente": null,
+      "polaridad": "progresista",
+      "origen": [
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "No camiño da supresión dos concertos en todos os niveis educativos, eliminación destes no ensino non-obrigatorio e control do financiamento alleo aos concertos nos centros sostidos con fondos públicos.",
+          "pagina": 35,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:bng-p160"
+        },
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "eliminación dos concertos educativos dos centros que segregan",
+          "pagina": 35,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "parcial",
+          "ref": "extraccion:bng-p159"
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "tema": "Educación",
+      "texto": "Que las comunidades con lengua propia puedan impartir todas las asignaturas en ella, sin un porcentaje mínimo obligatorio en castellano.",
+      "contexto": "Castellano y lenguas cooficiales son lenguas de enseñanza en sus comunidades. Algunos tribunales han fijado porcentajes mínimos de clases en castellano en centros con modelo de inmersión lingüística.",
+      "contexto_fuente": null,
+      "polaridad": "territorial",
+      "origen": [
+        {
+          "partido": "erc",
+          "tipo": "programa",
+          "cita": "Modificar la legislació educativa estatal per impedir les ingerències de l’Estat, la imposició de percentatges lingüístics als centres i qualsevol vulneració dels projectes lingüístics i del model d’immersió de Catalunya.",
+          "pagina": 11,
+          "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:erc-m017"
+        },
+        {
+          "partido": "erc",
+          "tipo": "programa",
+          "cita": "Impulsar una resposta de país en defensa de l’escola catalana.",
+          "pagina": 10,
+          "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:erc-m016"
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "tema": "Inmigración",
+      "texto": "Dar prioridad a las personas de nacionalidad española en la adjudicación de viviendas sociales.",
+      "contexto": "Hoy las viviendas protegidas se adjudican según requisitos de ingresos, empadronamiento o años de residencia que fija cada comunidad autónoma o ayuntamiento, no según la nacionalidad.",
+      "contexto_fuente": null,
+      "polaridad": "conservadora",
+      "origen": [
+        {
+          "partido": "vox",
+          "tipo": "campaña",
+          "cita": "Construir vivienda social de forma masiva y adjudicarla con el criterio de 'prioridad nacional', de modo que los españoles sean los primeros en las listas.",
+          "pagina": null,
+          "url": "https://www.infobae.com/espana/agencias/2026/10/11/vox-propone-construir-masivamente-vivienda-social-y-adjudicarla-con-prioridad-nacional/",
+          "sentido": "a_favor",
+          "ref": "promesas:vox#3"
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "tema": "Inmigración",
+      "texto": "Expulsar a su país a todos los extranjeros condenados por un delito en España, para que cumplan allí la pena.",
+      "contexto": "El Código Penal ya sustituye por la expulsión las penas de prisión de más de un año impuestas a extranjeros, con excepciones que valora el juez.",
+      "contexto_fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444",
+      "polaridad": "conservadora",
+      "origen": [
+        {
+          "partido": "vox",
+          "tipo": "campaña",
+          "cita": "El que viene ilegalmente a España tiene que ser repatriado. El que viene a España a cometer delitos tiene que irse a su propio país a cumplir la pena.",
+          "pagina": null,
+          "url": "https://www.infobae.com/espana/agencias/2026/10/11/abascal-dice-que-con-vox-las-pensiones-se-pagaran-y-habra-vivienda-como-sea-y-sigue-llamando-al-voto-presencial/",
+          "sentido": "a_favor",
+          "ref": "promesas:vox#5"
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "tema": "Inmigración",
+      "texto": "Aprobar una regularización extraordinaria de los inmigrantes que viven en España sin permiso de residencia.",
+      "contexto": "La vía ordinaria para que un extranjero en situación irregular obtenga la residencia es el «arraigo», que exige acreditar un tiempo previo de estancia en España y otros requisitos.",
+      "contexto_fuente": null,
+      "polaridad": "progresista",
+      "origen": [
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "Promover a regularización administrativa como vía para eliminar a irregularidade como ferramenta de explotación.",
+          "pagina": 22,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:bng-p104"
+        },
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "Impulsar as reformas lexislativas necesarias para garantir os dereitos da poboación inmigrante (vivenda, traballo, atención sanitaria, educación...) así como favorecer e facilitar os procesos de regularización administrativa.",
+          "pagina": 23,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:bng-p107"
+        },
+        {
+          "partido": "vox",
+          "tipo": "campaña",
+          "cita": "El que viene ilegalmente a España tiene que ser repatriado. El que viene a España a cometer delitos tiene que irse a su propio país a cumplir la pena.",
+          "pagina": null,
+          "url": "https://www.infobae.com/espana/agencias/2026/10/11/abascal-dice-que-con-vox-las-pensiones-se-pagaran-y-habra-vivienda-como-sea-y-sigue-llamando-al-voto-presencial/",
+          "sentido": "en_contra",
+          "ref": "promesas:vox#5"
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "tema": "Modelo territorial",
+      "texto": "Permitir que una comunidad autónoma celebre un referéndum sobre su independencia si lo pide su parlamento.",
+      "contexto": "La Constitución reserva al Estado la autorización de referendos, y el Tribunal Constitucional ha considerado que una consulta sobre la secesión exigiría reformar antes la Constitución.",
+      "contexto_fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "polaridad": "territorial",
+      "origen": [
+        {
+          "partido": "erc",
+          "tipo": "campaña",
+          "cita": "Reclamar un referéndum de autodeterminación en Cataluña con aval de organismos internacionales.",
+          "pagina": null,
+          "url": "https://www.democrata.es/elecciones-generales-espana/programa-electoral-erc-29n-referendum/",
+          "sentido": "a_favor",
+          "ref": "promesas:erc#0"
+        },
+        {
+          "partido": "erc",
+          "tipo": "programa",
+          "cita": "Dret d’autodeterminació. Negociar la convocatòria d’un referèndum d’autodeterminació a Catalunya amb acompanyament internacional, amb la Unió Europea i el Consell d’Europa com a facilitadors, en línia amb la resolució Cilevičs del Consell d’Europa i les bones pràctiques determinades per la Comissió de Venècia (2007).",
+          "pagina": 8,
+          "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:erc-m001"
+        },
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "promoveremos e apoiaremos as mudanzas legais precisas que posibilitaren a convocatoria de referendos vinculantes en asuntos de interese, incluído o dereito de autodeterminación",
+          "pagina": 32,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:bng-p150"
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "tema": "Modelo territorial",
+      "texto": "Que cada comunidad autónoma que lo pida recaude y gestione todos sus impuestos, como ya hacen el País Vasco y Navarra.",
+      "contexto": "El País Vasco y Navarra tienen un régimen propio (concierto y convenio económico): recaudan casi todos los impuestos y pagan al Estado una cantidad por los servicios estatales.",
+      "contexto_fuente": null,
+      "polaridad": "territorial",
+      "origen": [
+        {
+          "partido": "junts",
+          "tipo": "campaña",
+          "cita": "Que Cataluña recaude, gestione y decida sobre la totalidad de los impuestos generados en su territorio mediante un concierto económico como el del País Vasco.",
+          "pagina": null,
+          "url": "https://cronicaglobal.elespanol.com/politica/20261027/junts-reivindica-concierto-economico-condicion-apoyar-investidura/1003742806616_0.html",
+          "sentido": "a_favor",
+          "ref": "promesas:junts#0"
+        },
+        {
+          "partido": "erc",
+          "tipo": "programa",
+          "cita": "Fer efectiu el traspàs de les competències en la recaptació d’impostos estatals a l’Agència Tributària de Catalunya.",
+          "pagina": 14,
+          "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:erc-m034"
+        },
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "Un novo modelo de financiamento baseado no concerto económico e na bilateralidade co Estado. Trátase de que Galiza recade todos os impostos e teña capacidade para decidir como os inviste",
+          "pagina": 8,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:bng-p001"
+        },
+        {
+          "partido": "upn",
+          "tipo": "campaña",
+          "cita": "Defender el Régimen Foral de Navarra, mantener el Convenio Económico como instrumento clave de su autogobierno y apoyar el Amejoramiento del Fuero.",
+          "pagina": null,
+          "url": "https://www.upn.org/upn-y-pp-alcanzan-un-principio-de-acuerdo-para-concurrir-juntos-a-las-elecciones-generales/",
+          "sentido": "parcial",
+          "ref": "promesas:upn#1"
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "tema": "Modelo territorial",
+      "texto": "Perdonar a las comunidades autónomas parte de la deuda que tienen con el Estado.",
+      "contexto": "Desde 2012 el Estado presta dinero a las comunidades a través del Fondo de Liquidez Autonómica y otros mecanismos; en 2025 el Gobierno presentó un proyecto de ley para condonar parte de esa deuda.",
+      "contexto_fuente": null,
+      "polaridad": "territorial",
+      "origen": [
+        {
+          "partido": "erc",
+          "tipo": "programa",
+          "cita": "Condonar de forma efectiva els més de 17.100 milions d’euros del FLA. Dur a terme la tramitació del projecte de llei impulsat per Esquerra Republicana, que suposa una reducció de deute de la Generalitat equivalent a la inversió que fa en quatre anys.",
+          "pagina": 12,
+          "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:erc-m024"
+        },
+        {
+          "partido": "compromis",
+          "tipo": "campaña",
+          "cita": "Reformar la financiación autonómica y lograr la condonación de la deuda de la Generalitat Valenciana.",
+          "pagina": null,
+          "url": "https://www.eldiario.es/comunitat-valenciana/politica/agueda-mico-cabeza-lista-compromis-front-valencia-hay-limitar-compra-vivienda_128_13608690.html",
+          "sentido": "a_favor",
+          "ref": "promesas:compromis#7"
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "tema": "Energía y clima",
+      "texto": "Impulsar la instalación de parques eólicos marinos frente a la costa española.",
+      "contexto": "España aún no tiene parques eólicos marinos comerciales. En 2023 el Gobierno aprobó los planes que delimitan las zonas del mar donde podrían instalarse.",
+      "contexto_fuente": null,
+      "polaridad": "neutral",
+      "origen": [
+        {
+          "partido": "cc",
+          "tipo": "campaña",
+          "cita": "Impulsar la eólica marina en Gran Canaria con planificación, subastas, conexión y retribución adaptadas a los sistemas insulares, condicionada a un consenso social, político e institucional suficiente.",
+          "pagina": null,
+          "url": "https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf",
+          "sentido": "a_favor",
+          "ref": "promesas:coalicion_canaria#10"
+        },
+        {
+          "partido": "cc",
+          "tipo": "programa",
+          "cita": "Desarrollar la eólica marina con garantías. Impulsaremos la eólica marina en Gran Canaria con planificación, subastas, conexión y retribución adaptadas a los sistemas insulares. Cualquier proyecto en las islas requerirá suficiente consenso social, político e institucional, además de compatibilidad ambiental y territorial.",
+          "pagina": 15,
+          "url": "https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:cc-a054"
+        },
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "A necesidade de que Galiza fique libre de eólica mariña que en calquera caso debera estar sempre fora da plataforma continental da costa galega e da minaría submarina",
+          "pagina": 50,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "en_contra",
+          "ref": "extraccion:bng-p234"
+        },
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "Retirar os POEM e declarar o litoral galego como espazo non apto para a instalación de parques eólicos mariños offshore, tanto en augas interiores como na plataforma continental",
+          "pagina": 54,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "en_contra",
+          "ref": "extraccion:bng-p251"
+        }
+      ]
+    },
+    {
+      "id": "q20",
+      "tema": "Energía y clima",
+      "texto": "Comprometerse a reducir las emisiones de gases de efecto invernadero un 65 % en 2030 respecto a 1990.",
+      "contexto": "El objetivo vigente del Plan Nacional Integrado de Energía y Clima es reducirlas un 32 % en 2030 respecto a 1990.",
+      "contexto_fuente": "https://www.miteco.gob.es/es/ministerio/planes-estrategias/plan-nacional-integrado-energia-clima.html",
+      "polaridad": "progresista",
+      "origen": [
+        {
+          "partido": "erc",
+          "tipo": "programa",
+          "cita": "Alinear la planificació energètica i climàtica amb els objectius científics. Cal assegurar el compliment amb els objectius de reducció d’emissions de CO2 d’almenys el 65 % el 2030 i del 95 % el 2040, respecte a 1990.",
+          "pagina": 32,
+          "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:erc-m153"
+        }
+      ]
+    },
+    {
+      "id": "q21",
+      "tema": "Igualdad y derechos",
+      "texto": "Reformar la Constitución para reconocer expresamente el derecho al aborto.",
+      "contexto": "Desde 2010 una ley orgánica permite interrumpir el embarazo a petición de la mujer durante las primeras 14 semanas; la Constitución no menciona el aborto.",
+      "contexto_fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-3514",
+      "polaridad": "progresista",
+      "origen": [
+        {
+          "partido": "psoe",
+          "tipo": "campaña",
+          "cita": "Reformar la Constitución en la próxima legislatura para blindar el derecho al aborto.",
+          "pagina": null,
+          "url": "https://theobjective.com/espana/politica/2026-10-24/sanchez-se-compromete-a-blindar-el-aborto-en-la-constitucion-si-vuelve-a-gobernar/",
+          "sentido": "a_favor",
+          "ref": "promesas:psoe#3"
+        },
+        {
+          "partido": "compromis",
+          "tipo": "campaña",
+          "cita": "Blindar en la Constitución las pensiones, el derecho al aborto y los derechos de las mujeres y de la comunidad LGTBI.",
+          "pagina": null,
+          "url": "https://www.eldiario.es/comunitat-valenciana/politica/agueda-mico-cabeza-lista-compromis-front-valencia-hay-limitar-compra-vivienda_128_13608690.html",
+          "sentido": "a_favor",
+          "ref": "promesas:compromis#8"
+        }
+      ]
+    },
+    {
+      "id": "q22",
+      "tema": "Igualdad y derechos",
+      "texto": "Suprimir el Ministerio de Igualdad y pasar sus funciones a otro ministerio.",
+      "contexto": "El Ministerio de Igualdad existe como departamento propio desde 2020 (antes, entre 2008 y 2010) y se ocupa, entre otras cosas, de las políticas contra la violencia de género.",
+      "contexto_fuente": null,
+      "polaridad": "conservadora",
+      "origen": [
+        {
+          "partido": "pp",
+          "tipo": "campaña",
+          "cita": "No tener un Ministerio de Igualdad propio, pasando sus competencias a otro ministerio, y reducir el número de ministerios por debajo de los 22 actuales.",
+          "pagina": null,
+          "url": "https://www.infobae.com/espana/agencias/2026/10/23/feijoo-reabrira-el-debate-sobre-el-papel-de-los-padres-en-el-aborto-de-menores-de-16-anos/",
+          "sentido": "a_favor",
+          "ref": "promesas:pp#8"
+        }
+      ]
+    },
+    {
+      "id": "q23",
+      "tema": "Seguridad y justicia",
+      "texto": "Aprobar una ley que permita desalojar en un máximo de 48 horas a quienes ocupen sin permiso una vivienda ajena.",
+      "contexto": "Hoy recuperar una vivienda ocupada exige normalmente un procedimiento judicial, cuya duración varía según el caso y el juzgado.",
+      "contexto_fuente": null,
+      "polaridad": "conservadora",
+      "origen": [
+        {
+          "partido": "pp",
+          "tipo": "campaña",
+          "cita": "Aprobar en los primeros 100 días de gobierno una ley antiokupación que permita desalojar a los ocupantes ilegales de una vivienda en 48 horas.",
+          "pagina": null,
+          "url": "https://es.ara.cat/politica/feijoo-encarga-albiol-liderar-ley-antiocupacion-29-n-elegir-colau_1_5882739.html",
+          "sentido": "a_favor",
+          "ref": "promesas:pp#1"
+        }
+      ]
+    },
+    {
+      "id": "q24",
+      "tema": "Seguridad y justicia",
+      "texto": "Derogar la Ley de Seguridad Ciudadana de 2015.",
+      "contexto": "La Ley Orgánica 4/2015 regula las multas por alterar la seguridad en la vía pública, incluidas conductas en manifestaciones y frente a agentes; sus críticos la llaman «ley mordaza».",
+      "contexto_fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-3442",
+      "polaridad": "progresista",
+      "origen": [
+        {
+          "partido": "erc",
+          "tipo": "programa",
+          "cita": "Derogar la Llei mordassa. La Llei Orgànica 4/2015 de protecció de la seguretat ciutadana es va dissenyar per reprimir, principalment, els moviments socials, les persones i les organitzacions que lluiten i protesten per drets i llibertats que mereix la població.",
+          "pagina": 8,
+          "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:erc-m002"
+        },
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "Derrogación íntegra da Lei Mordaza por favorecer a discrecionalidade policial, a criminalización do dereito de reunión e manifestación e afondar na indefensión das e dos cidadáns. [...] Debe tamén prohibirse o uso de pelotas de goma, as devolucións en quente e eliminarse o principio de presunción de veracidade",
+          "pagina": 30,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:bng-p138"
+        },
+        {
+          "partido": "bng",
+          "tipo": "campaña",
+          "cita": "Derogar la 'ley mordaza' y derogar los aspectos pendientes de la Ley de Amnistía de 1977 para avanzar en memoria histórica.",
+          "pagina": null,
+          "url": "https://www.bng.gal/articulo/novas/bng-presenta-axenda-galega-defender-galiza-madrid-avanzar-dereitos-mellorar-vida-das-persoas/20261107154118043809.html",
+          "sentido": "a_favor",
+          "ref": "promesas:bng#9"
+        }
+      ]
+    },
+    {
+      "id": "q25",
+      "tema": "Instituciones",
+      "texto": "Que el Gobierno no conceda indultos a personas condenadas por delitos de corrupción.",
+      "contexto": "El indulto es una medida de gracia que concede el Gobierno caso a caso; la ley que lo regula, de 1870, no excluye los delitos de corrupción.",
+      "contexto_fuente": null,
+      "polaridad": "conservadora",
+      "origen": [
+        {
+          "partido": "pp",
+          "tipo": "campaña",
+          "cita": "No conceder indultos a políticos condenados por corrupción.",
+          "pagina": null,
+          "url": "https://www.campogibraltar24h.es/sociedad/feijoo-promete-malaga-gobierno-indultos-corrupcion-mas-seguridad-frente-narcotrafico/20261108161541019938.html",
+          "sentido": "a_favor",
+          "ref": "promesas:pp#7"
+        },
+        {
+          "partido": "salf",
+          "tipo": "campaña",
+          "cita": "Que los delitos de corrupción no prescriban.",
+          "pagina": null,
+          "url": "https://www.eldiario.es/castilla-la-mancha/politica/alvise-perez-pide-toledo-macrocarceles-estilo-salvador-avisa-llegan-anos-violencia_1_13597393.html",
+          "sentido": "parcial",
+          "ref": "promesas:salf#3"
+        }
+      ]
+    },
+    {
+      "id": "q26",
+      "tema": "Exterior y defensa",
+      "texto": "Aumentar el gasto en defensa hasta el 3,5 % del PIB en 2035, como acordaron los aliados de la OTAN.",
+      "contexto": "En la cumbre de 2025 los aliados se comprometieron a dedicar al menos un 3,5 % del PIB a defensa en 2035; el Gobierno español sostiene que le basta con alrededor del 2,1 %.",
+      "contexto_fuente": "https://www.nato.int/cps/en/natohq/official_texts_236705.htm",
+      "polaridad": "conservadora",
+      "origen": [
+        {
+          "partido": "bng",
+          "tipo": "campaña",
+          "cita": "Frenar el 'desorbitado' incremento del gasto militar, que según el BNG impide que esos recursos vayan a vivienda, dependencia o atención a las personas mayores.",
+          "pagina": null,
+          "url": "https://www.bng.gal/articulo/novas/bng-presenta-axenda-galega-defender-galiza-madrid-avanzar-dereitos-mellorar-vida-das-persoas/20261107154118043809.html",
+          "sentido": "en_contra",
+          "ref": "promesas:bng#10"
+        },
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "Rexeitamento ao incremento do gasto militar e ao acatamento das directrices OTAN e Estados Unidos neste ámbito. Redución progresiva das cantidades millonarias dilapidadas nesta materia",
+          "pagina": 90,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "en_contra",
+          "ref": "extraccion:bng-p410"
+        }
+      ]
+    },
+    {
+      "id": "q27",
+      "tema": "Exterior y defensa",
+      "texto": "Desplegar a las Fuerzas Armadas para reforzar la vigilancia de la frontera de Ceuta con Marruecos.",
+      "contexto": "La vigilancia de las fronteras terrestres de Ceuta y Melilla corresponde a la Guardia Civil y la Policía Nacional, no a las Fuerzas Armadas.",
+      "contexto_fuente": null,
+      "polaridad": "conservadora",
+      "origen": [
+        {
+          "partido": "vox",
+          "tipo": "campaña",
+          "cita": "Militarizar y reforzar estructuralmente la frontera de Ceuta con Marruecos, con los recursos humanos y materiales necesarios, y expulsar a todos los inmigrantes que entraron irregularmente en la crisis de finales de julio.",
+          "pagina": null,
+          "url": "https://www.infobae.com/espana/agencias/2026/10/12/abascal-exige-desde-ceuta-militarizar-la-frontera-y-expulsar-a-los-migrantes-irregulares/",
+          "sentido": "a_favor",
+          "ref": "promesas:vox#8"
+        }
+      ]
+    },
+    {
+      "id": "q28",
+      "tema": "Medio rural",
+      "texto": "Eliminar las obligaciones legales españolas para agricultores y ganaderos que vayan más allá de lo que exige la Unión Europea.",
+      "contexto": "Buena parte de las normas agrarias (ambientales, de bienestar animal o sobre fitosanitarios) vienen de la UE, pero España puede añadir requisitos propios más exigentes.",
+      "contexto_fuente": null,
+      "polaridad": "conservadora",
+      "origen": [
+        {
+          "partido": "pp",
+          "tipo": "campaña",
+          "cita": "Suprimir toda obligación legal española a agricultores y ganaderos que vaya más allá de lo que exige la normativa europea, y pedir en la UE una moratoria regulatoria.",
+          "pagina": null,
+          "url": "https://www.vozpopuli.com/espana/politica/feijoo-promete-suprimir-todas-las-exigencias-a-los-agricultores-que-no-imponga-la-ue.html",
+          "sentido": "a_favor",
+          "ref": "promesas:pp#5"
+        }
+      ]
+    },
+    {
+      "id": "q29",
+      "tema": "Medio rural",
+      "texto": "Que España se oponga a la ratificación del acuerdo comercial entre la Unión Europea y Mercosur.",
+      "contexto": "El acuerdo con Mercosur (Argentina, Brasil, Paraguay y Uruguay) suprime la mayoría de aranceles entre ambos bloques; parte del sector agrario teme su competencia y la industria exportadora lo apoya.",
+      "contexto_fuente": null,
+      "polaridad": "neutral",
+      "origen": [
+        {
+          "partido": "erc",
+          "tipo": "programa",
+          "cita": "Revertir els acords comercials lesius per a la sobirania alimentària i el sector primari català. El govern espanyol ha de rebutjar la ratificació de l’acord de lliure comerç UE-Mercosur i oposar-se a l’aplicació provisional mentre no es pronunciï el TJUE. Alhora, cal garantir clàusules de salvaguarda i reciprocitat de normes per als productes agroalimentaris importats en els tractats comercials.",
+          "pagina": 32,
+          "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:erc-m157"
+        },
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "Rexeitamento de acordos comerciais multilaterais prexudiciais para o sector agrario de Galiza, en particular o UE-Mercosur",
+          "pagina": 48,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:bng-p226"
+        }
+      ]
+    },
+    {
+      "id": "q30",
+      "tema": "Economía",
+      "texto": "Fijar por ley un precio máximo para los alimentos básicos.",
+      "contexto": "Hoy los precios de los alimentos los fija libremente el mercado. Entre 2023 y 2024 el Gobierno rebajó temporalmente el IVA de los alimentos básicos para contener su subida.",
+      "contexto_fuente": null,
+      "polaridad": "progresista",
+      "origen": [
+        {
+          "partido": "podemos",
+          "tipo": "campaña",
+          "cita": "Topar por ley el precio de los alimentos.",
+          "pagina": null,
+          "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
+          "sentido": "a_favor",
+          "ref": "promesas:podemos#3"
+        },
+        {
+          "partido": "compromis",
+          "tipo": "campaña",
+          "cita": "Topar el precio de la energía y de los alimentos básicos.",
+          "pagina": null,
+          "url": "https://alicanteplaza.es/alicanteplaza/elcheplaza/arranca-compromis-front-valencia-en-elche-con-propuestas-en-vivienda-y-transporte",
+          "sentido": "a_favor",
+          "ref": "promesas:compromis#6"
+        },
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "Regular legalmente os prezos dos produtos básicos de alimentación, garantindo simultaneamente prezos accesíbeis para a maioría social e retribucións xustas para quen os produce.",
+          "pagina": 21,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:bng-p100"
+        }
+      ]
+    }
+  ],
+  "reservas": [
+    {
+      "id": "r01",
+      "tema": "Instituciones",
+      "texto": "Permitir votar desde los 16 años en las elecciones generales.",
+      "contexto": "Hoy solo pueden votar los mayores de edad, es decir, desde los 18 años.",
+      "contexto_fuente": null,
+      "polaridad": "progresista",
+      "origen": [
+        {
+          "partido": "erc",
+          "tipo": "programa",
+          "cita": "Promoure la transposició de la Llei Electoral Europea, assegurant que garanteixi la pluralitat i la representativitat i que no s’utilitzen els llindars electorals i la configuració de circumscripcions com a minories de bloqueig contra minories nacionals ni contra la pluralitat política. En aquest marc, promoure també l’exercici del dret de vot a partir dels 16 anys.",
+          "pagina": 17,
+          "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:erc-m053"
+        },
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "Recoñecer o dereito das mozas e dos mozos de 16 e 17 anos a poderen votar nas diferentes convocatorias electorais.",
+          "pagina": 86,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:bng-p395"
+        }
+      ]
+    },
+    {
+      "id": "r02",
+      "tema": "Exterior y defensa",
+      "texto": "Pedir que la Unión Europea suspenda su acuerdo de asociación con Israel.",
+      "contexto": "El acuerdo de asociación entre la UE e Israel regula sus relaciones comerciales y políticas e incluye una cláusula de respeto a los derechos humanos.",
+      "contexto_fuente": null,
+      "polaridad": "progresista",
+      "origen": [
+        {
+          "partido": "erc",
+          "tipo": "programa",
+          "cita": "Promoure un embargament complet d’armes a Israel per part de l’Estat. Donar suport a la Cort Internacional de Justícia i a la Cort Penal Internacional i exigir a l’Estat que pressioni perquè la Unió Europea suspengui els acords d’associació amb Israel mentre duri el genocidi i l’ocupació il·legal de Palestina.",
+          "pagina": 16,
+          "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:erc-m042"
+        },
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "Recoñecemento real e efectivo do Estado palestino.",
+          "pagina": 90,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "parcial",
+          "ref": "extraccion:bng-p414"
+        }
+      ]
+    },
+    {
+      "id": "r03",
+      "tema": "Seguridad y justicia",
+      "texto": "Mantener en el Código Penal la prisión permanente revisable.",
+      "contexto": "Desde 2015 el Código Penal prevé la prisión permanente revisable para delitos muy graves, como algunos asesinatos; la condena se revisa tras cumplir entre 25 y 35 años.",
+      "contexto_fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444",
+      "polaridad": "conservadora",
+      "origen": [
+        {
+          "partido": "bng",
+          "tipo": "programa",
+          "cita": "Derrogación da prisión permanente revisábel, por ser unha forma encuberta de manter a cadea perpetua",
+          "pagina": 30,
+          "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+          "sentido": "en_contra",
+          "ref": "extraccion:bng-p139"
+        }
+      ]
+    },
+    {
+      "id": "r04",
+      "tema": "Vivienda",
+      "texto": "Liberalizar el suelo para que se pueda construir vivienda en cualquier terreno que no esté protegido.",
+      "contexto": "Hoy son los planes urbanísticos de ayuntamientos y comunidades autónomas los que deciden qué terrenos se pueden urbanizar.",
+      "contexto_fuente": null,
+      "polaridad": "conservadora",
+      "origen": [
+        {
+          "partido": "vox",
+          "tipo": "campaña",
+          "cita": "Liberalizar suelo, bajar impuestos a la construcción y dar ayudas directas a los jóvenes para comprar su primera vivienda, permitiendo además pagar a plazos ciertos impuestos de la compraventa.",
+          "pagina": null,
+          "url": "https://www.infobae.com/espana/agencias/2026/10/11/vox-propone-construir-masivamente-vivienda-social-y-adjudicarla-con-prioridad-nacional/",
+          "sentido": "a_favor",
+          "ref": "promesas:vox#4"
+        },
+        {
+          "partido": "pp",
+          "tipo": "campaña",
+          "cita": "Construir un millón de viviendas en la próxima legislatura, a un ritmo de unas 250.000 al año.",
+          "pagina": null,
+          "url": "https://www.infobae.com/espana/2026/10/05/feijoo-anuncia-sus-propuestas-en-vivienda-de-construir-250000-casas-al-ano-a-rebajar-el-iva-al-4-para-jovenes/",
+          "sentido": "parcial",
+          "ref": "promesas:pp#0"
+        }
+      ]
+    },
+    {
+      "id": "r05",
+      "tema": "Inmigración",
+      "texto": "Que el reparto entre comunidades autónomas de los migrantes acogidos sea obligatorio cuando una comunidad supere su capacidad de acogida.",
+      "contexto": "Desde 2025 la Ley de Extranjería prevé trasladar menores migrantes no acompañados a otras comunidades cuando una supera su capacidad; varias comunidades lo recurrieron.",
+      "contexto_fuente": null,
+      "polaridad": "progresista",
+      "origen": [
+        {
+          "partido": "cc",
+          "tipo": "campaña",
+          "cita": "Que los mecanismos estatales de solidaridad territorial en la acogida de migrantes (el 'Cupo de Solidaridad') se activen de forma obligatoria y automática cuando un territorio de primera acogida supere los umbrales, sin negociaciones caso a caso.",
+          "pagina": null,
+          "url": "https://diariodeavisos.elespanol.com/2026/10/primero-canarias-y-coalicion-canaria-cierran-el-acuerdo-para-la-candidatura-del-29-n/",
+          "sentido": "a_favor",
+          "ref": "promesas:coalicion_canaria#7"
+        },
+        {
+          "partido": "cc",
+          "tipo": "programa",
+          "cita": "Solidaridad obligatoria y automática. Exigiremos que los mecanismos estatales de solidaridad territorial funcionen con indicadores de capacidad, plazos y financiación conocidos. Cuando un territorio de primera acogida supere los umbrales previstos, deberán activarse los traslados y la participación de otras comunidades autónomas sin depender de negociaciones caso a caso. Impulsaremos los ajustes legales necesarios para que esa respuesta sea efectiva.",
+          "pagina": 19,
+          "url": "https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf",
+          "sentido": "a_favor",
+          "ref": "extraccion:cc-a083"
+        }
+      ]
+    },
+    {
+      "id": "r06",
+      "tema": "Pensiones",
+      "texto": "Reformar la Constitución para garantizar que las pensiones suban cada año al menos lo mismo que los precios (IPC).",
+      "contexto": "Desde 2021 una ley obliga a revalorizar las pensiones cada año según la inflación media; esa regla puede cambiarse con otra ley, mientras que reformar la Constitución exige mayorías amplias.",
+      "contexto_fuente": null,
+      "polaridad": "progresista",
+      "origen": [
+        {
+          "partido": "psoe",
+          "tipo": "campaña",
+          "cita": "La próxima legislatura reformaremos la Constitución para blindar las pensiones y su revalorización conforme al IPC",
+          "pagina": null,
+          "url": "https://theobjective.com/espana/politica/2026-10-26/sanchez-promete-reformara-consitucion-pensiones/",
+          "sentido": "a_favor",
+          "ref": "promesas:psoe#1"
+        },
+        {
+          "partido": "compromis",
+          "tipo": "campaña",
+          "cita": "Blindar en la Constitución las pensiones, el derecho al aborto y los derechos de las mujeres y de la comunidad LGTBI.",
+          "pagina": null,
+          "url": "https://www.eldiario.es/comunitat-valenciana/politica/agueda-mico-cabeza-lista-compromis-front-valencia-hay-limitar-compra-vivienda_128_13608690.html",
+          "sentido": "parcial",
+          "ref": "promesas:compromis#8"
+        },
+        {
+          "partido": "pp",
+          "tipo": "campaña",
+          "cita": "Revalorizar las pensiones cada año conforme al Índice de Precios de Consumo (IPC).",
+          "pagina": null,
+          "url": "https://www.tribunaavila.com/noticias/463166/feijoo-presenta-su-contrato-con-espana-basada-en-la-verdad-la-ley-el-esfuerzo-y-la-unidad",
+          "sentido": "parcial",
+          "ref": "promesas:pp#4"
+        },
+        {
+          "partido": "pnv",
+          "tipo": "campaña",
+          "cita": "Garantizar la revalorización de las pensiones conforme al IPC y oponerse a cualquier paso atrás en el sistema público de pensiones.",
+          "pagina": null,
+          "url": "https://www.eaj-pnv.eus/es/noticias/58615/vaquero-advierte-al-pp-si-quieren-dar-un-paso-atra/",
+          "sentido": "parcial",
+          "ref": "promesas:pnv#0"
+        },
+        {
+          "partido": "bng",
+          "tipo": "campaña",
+          "cita": "Garantizar que las pensiones suban cada año al menos conforme al IPC y que ninguna pensión mínima sea inferior al salario mínimo interprofesional, reforzando la financiación del sistema público con impuestos específicos a las grandes fortunas.",
+          "pagina": null,
+          "url": "https://www.nosdiario.gal/politica/bng-quere-sacar-pensions-galegas-do-furgon-cola-do-estado-2600E-menos-ao-ano-discriminacion-intolerabel/20261105130510271054.html",
+          "sentido": "parcial",
+          "ref": "promesas:bng#4"
+        },
+        {
+          "partido": "upc",
+          "tipo": "campaña",
+          "cita": "Garantizar pensiones públicas revalorizadas conforme al coste de la vida y oponerse a su privatización.",
+          "pagina": null,
+          "url": "https://diariodeavisos.elespanol.com/2026/11/upc-viviendaderechos-sociales-y-laborales/",
+          "sentido": "parcial",
+          "ref": "promesas:upc#3"
+        },
+        {
+          "partido": "erc",
+          "tipo": "programa",
+          "cita": "Blindar la revaloració de les pensions per evitar la pèrdua de capacitat adquisitiva de les persones pensionistes. Cal garantir l’actualització de pensions públiques d’acord amb la inflació.",
+          "pagina": 26,
+          "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+          "sentido": "parcial",
+          "ref": "extraccion:erc-m106"
+        }
+      ]
+    }
+  ],
+  "auditoria": {
+    "fecha": "2026-11-08",
+    "recuento_temas": {
+      "Vivienda": 3,
+      "Fiscalidad": 2,
+      "Empleo y salarios": 2,
+      "Pensiones": 1,
+      "Sanidad": 2,
+      "Educación": 2,
+      "Inmigración": 3,
+      "Modelo territorial": 3,
+      "Energía y clima": 2,
+      "Igualdad y derechos": 2,
+      "Seguridad y justicia": 2,
+      "Instituciones": 1,
+      "Exterior y defensa": 2,
+      "Medio rural": 2,
+      "Economía": 1
+    },
+    "recuento_polaridad": {
+      "progresista": 12,
+      "conservadora": 12,
+      "territorial": 4,
+      "neutral": 2
+    },
+    "recuento_polaridad_reservas": {
+      "progresista": 4,
+      "conservadora": 2
+    },
+    "afirmaciones_redactadas_en_contra_de_su_origen": [
+      "q09",
+      "q26"
+    ],
+    "cobertura_por_partido": {
+      "pp": {
+        "documentada": 5,
+        "parcial": 0,
+        "de": 30
+      },
+      "upn": {
+        "documentada": 0,
+        "parcial": 1,
+        "de": 30
+      },
+      "psoe": {
+        "documentada": 2,
+        "parcial": 0,
+        "de": 30
+      },
+      "psc": {
+        "documentada": 0,
+        "parcial": 0,
+        "de": 30
+      },
+      "vox": {
+        "documentada": 6,
+        "parcial": 1,
+        "de": 30
+      },
+      "frente_amplio": {
+        "documentada": 2,
+        "parcial": 0,
+        "de": 30
+      },
+      "podemos": {
+        "documentada": 3,
+        "parcial": 1,
+        "de": 30
+      },
+      "compromis": {
+        "documentada": 5,
+        "parcial": 0,
+        "de": 30
+      },
+      "upc": {
+        "documentada": 1,
+        "parcial": 0,
+        "de": 30
+      },
+      "ara_mes_fa": {
+        "documentada": 0,
+        "parcial": 0,
+        "de": 30
+      },
+      "erc": {
+        "documentada": 11,
+        "parcial": 3,
+        "de": 30
+      },
+      "junts": {
+        "documentada": 1,
+        "parcial": 0,
+        "de": 30
+      },
+      "eh_bildu": {
+        "documentada": 0,
+        "parcial": 0,
+        "de": 30
+      },
+      "pnv": {
+        "documentada": 0,
+        "parcial": 0,
+        "de": 30
+      },
+      "bng": {
+        "documentada": 16,
+        "parcial": 1,
+        "de": 30
+      },
+      "cc": {
+        "documentada": 1,
+        "parcial": 2,
+        "de": 30
+      },
+      "adelante_andalucia": {
+        "documentada": 0,
+        "parcial": 0,
+        "de": 30
+      },
+      "salf": {
+        "documentada": 1,
+        "parcial": 1,
+        "de": 30
+      }
+    },
+    "por_afirmacion": [
+      {
+        "id": "q01",
+        "tema": "Vivienda",
+        "polaridad": "progresista",
+        "partidos_posicion_documentada": [
+          "bng",
+          "compromis",
+          "podemos"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q02",
+        "tema": "Vivienda",
+        "polaridad": "progresista",
+        "partidos_posicion_documentada": [
+          "bng",
+          "compromis",
+          "frente_amplio",
+          "podemos",
+          "upc"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q03",
+        "tema": "Vivienda",
+        "polaridad": "conservadora",
+        "partidos_posicion_documentada": [
+          "pp",
+          "salf"
+        ],
+        "partidos_posicion_parcial": [
+          "cc",
+          "erc",
+          "vox"
+        ]
+      },
+      {
+        "id": "q04",
+        "tema": "Fiscalidad",
+        "polaridad": "progresista",
+        "partidos_posicion_documentada": [
+          "bng",
+          "erc",
+          "frente_amplio"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q05",
+        "tema": "Fiscalidad",
+        "polaridad": "conservadora",
+        "partidos_posicion_documentada": [
+          "bng",
+          "erc",
+          "vox"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q06",
+        "tema": "Empleo y salarios",
+        "polaridad": "progresista",
+        "partidos_posicion_documentada": [
+          "bng",
+          "erc"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q07",
+        "tema": "Empleo y salarios",
+        "polaridad": "conservadora",
+        "partidos_posicion_documentada": [
+          "vox"
+        ],
+        "partidos_posicion_parcial": [
+          "cc",
+          "erc"
+        ]
+      },
+      {
+        "id": "q08",
+        "tema": "Pensiones",
+        "polaridad": "progresista",
+        "partidos_posicion_documentada": [
+          "bng"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q09",
+        "tema": "Sanidad",
+        "polaridad": "conservadora",
+        "partidos_posicion_documentada": [
+          "bng",
+          "erc"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q10",
+        "tema": "Sanidad",
+        "polaridad": "progresista",
+        "partidos_posicion_documentada": [
+          "psoe"
+        ],
+        "partidos_posicion_parcial": [
+          "bng",
+          "erc",
+          "podemos"
+        ]
+      },
+      {
+        "id": "q11",
+        "tema": "Educación",
+        "polaridad": "progresista",
+        "partidos_posicion_documentada": [
+          "bng"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q12",
+        "tema": "Educación",
+        "polaridad": "territorial",
+        "partidos_posicion_documentada": [
+          "erc"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q13",
+        "tema": "Inmigración",
+        "polaridad": "conservadora",
+        "partidos_posicion_documentada": [
+          "vox"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q14",
+        "tema": "Inmigración",
+        "polaridad": "conservadora",
+        "partidos_posicion_documentada": [
+          "vox"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q15",
+        "tema": "Inmigración",
+        "polaridad": "progresista",
+        "partidos_posicion_documentada": [
+          "bng",
+          "vox"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q16",
+        "tema": "Modelo territorial",
+        "polaridad": "territorial",
+        "partidos_posicion_documentada": [
+          "bng",
+          "erc"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q17",
+        "tema": "Modelo territorial",
+        "polaridad": "territorial",
+        "partidos_posicion_documentada": [
+          "bng",
+          "erc",
+          "junts"
+        ],
+        "partidos_posicion_parcial": [
+          "upn"
+        ]
+      },
+      {
+        "id": "q18",
+        "tema": "Modelo territorial",
+        "polaridad": "territorial",
+        "partidos_posicion_documentada": [
+          "compromis",
+          "erc"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q19",
+        "tema": "Energía y clima",
+        "polaridad": "neutral",
+        "partidos_posicion_documentada": [
+          "bng",
+          "cc"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q20",
+        "tema": "Energía y clima",
+        "polaridad": "progresista",
+        "partidos_posicion_documentada": [
+          "erc"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q21",
+        "tema": "Igualdad y derechos",
+        "polaridad": "progresista",
+        "partidos_posicion_documentada": [
+          "compromis",
+          "psoe"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q22",
+        "tema": "Igualdad y derechos",
+        "polaridad": "conservadora",
+        "partidos_posicion_documentada": [
+          "pp"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q23",
+        "tema": "Seguridad y justicia",
+        "polaridad": "conservadora",
+        "partidos_posicion_documentada": [
+          "pp"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q24",
+        "tema": "Seguridad y justicia",
+        "polaridad": "progresista",
+        "partidos_posicion_documentada": [
+          "bng",
+          "erc"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q25",
+        "tema": "Instituciones",
+        "polaridad": "conservadora",
+        "partidos_posicion_documentada": [
+          "pp"
+        ],
+        "partidos_posicion_parcial": [
+          "salf"
+        ]
+      },
+      {
+        "id": "q26",
+        "tema": "Exterior y defensa",
+        "polaridad": "conservadora",
+        "partidos_posicion_documentada": [
+          "bng"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q27",
+        "tema": "Exterior y defensa",
+        "polaridad": "conservadora",
+        "partidos_posicion_documentada": [
+          "vox"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q28",
+        "tema": "Medio rural",
+        "polaridad": "conservadora",
+        "partidos_posicion_documentada": [
+          "pp"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q29",
+        "tema": "Medio rural",
+        "polaridad": "neutral",
+        "partidos_posicion_documentada": [
+          "bng",
+          "erc"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "q30",
+        "tema": "Economía",
+        "polaridad": "progresista",
+        "partidos_posicion_documentada": [
+          "bng",
+          "compromis",
+          "podemos"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "r01",
+        "tema": "Instituciones",
+        "polaridad": "progresista",
+        "partidos_posicion_documentada": [
+          "bng",
+          "erc"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "r02",
+        "tema": "Exterior y defensa",
+        "polaridad": "progresista",
+        "partidos_posicion_documentada": [
+          "erc"
+        ],
+        "partidos_posicion_parcial": [
+          "bng"
+        ]
+      },
+      {
+        "id": "r03",
+        "tema": "Seguridad y justicia",
+        "polaridad": "conservadora",
+        "partidos_posicion_documentada": [
+          "bng"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "r04",
+        "tema": "Vivienda",
+        "polaridad": "conservadora",
+        "partidos_posicion_documentada": [
+          "vox"
+        ],
+        "partidos_posicion_parcial": [
+          "pp"
+        ]
+      },
+      {
+        "id": "r05",
+        "tema": "Inmigración",
+        "polaridad": "progresista",
+        "partidos_posicion_documentada": [
+          "cc"
+        ],
+        "partidos_posicion_parcial": []
+      },
+      {
+        "id": "r06",
+        "tema": "Pensiones",
+        "polaridad": "progresista",
+        "partidos_posicion_documentada": [
+          "psoe"
+        ],
+        "partidos_posicion_parcial": [
+          "bng",
+          "compromis",
+          "erc",
+          "pnv",
+          "pp",
+          "upc"
+        ]
+      }
+    ],
+    "criterios": [
+      "polaridad: «progresista» = estar de acuerdo es la opción más expansiva o de izquierda; «conservadora» = la más restrictiva o de derecha; «territorial» = estar de acuerdo amplía el autogobierno de las comunidades; «neutral» = la división no sigue el eje izquierda-derecha. Solo para auditar el equilibrio; no se muestra.",
+      "origen.sentido (campo añadido): «a_favor» = la cita propone lo que dice la afirmación; «en_contra» = propone lo contrario (afirmación redactada en sentido opuesto para equilibrar); «parcial» = propuesta relacionada que apunta en la misma dirección sin coincidir del todo (cifra, alcance o instrumento distintos). La posición final la fijan los codificadores.",
+      "partidos_posicion_documentada cuenta solo citas a_favor/en_contra; partidos_posicion_parcial, las parciales. Los partidos sin cita no tienen posición documentada todavía (programas de PSOE, PP, Vox, Frente Amplio, Podemos, SALF, Junts, EH Bildu, PNV y otros pendientes a 8-11-2026).",
+      "origen.ref apunta al registro de entrada (promesas:<clave>#<índice> o extraccion:<id>). En promesas.json Coalición Canaria figura como «coalicion_canaria»; aquí se usa el id «cc» de partidos.json.",
+      "Las citas de programa son literales en el idioma del original (catalán en ERC, gallego en BNG); las de campaña reproducen el texto de la promesa tal como está registrado (cita literal o paráfrasis, según promesas.json).",
+      "contexto_fuente: abiertas y comprobadas el 8-11-2026 las URL del BOE (título y cifra citada), la página del PNIEC 2023-2030 del MITECO (32 %) y la declaración de la cumbre de la OTAN de La Haya (3,5 % en 2035). Sin URL (null) van los contextos sin cifras; las afirmaciones de hechos recientes sin fuente (rechazo de la jornada de 37,5 h en 2025, proyecto de condonación de deuda de 2025, rebaja del IVA de alimentos en 2023-2024, planes de ordenación del espacio marítimo de 2023, reforma de la Ley de Extranjería de 2025, «alrededor del 2,1 %» de la OTAN) conviene comprobarlas antes de publicar.",
+      "Sin cobertura documentada de: EH Bildu, PNV (salvo una parcial en reserva), PSC, Ara Més-Front Ampli y Adelante Andalucía. Teruel Existe tiene promesas en promesas.json pero no está en partidos.json; no se usa."
+    ]
+  }
+}

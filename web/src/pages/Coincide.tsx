@@ -224,7 +224,7 @@ function Resultados() {
       <div class="note">
         <strong>Afinidad</strong> = cuánto se parecen tus respuestas a la posición documentada de cada partido en las {respondidas} afirmaciones
         que respondiste. No es una recomendación de voto: es un espejo. Diferencias de menos de {Math.round(UMBRAL_EMPATE * 100)} puntos son un
-        empate técnico.
+        empate técnico. <span class="muted">{d.meta.nota}</span>
       </div>
       <div class="card">
         {res.map((r, idx) => {

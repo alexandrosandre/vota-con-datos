@@ -167,7 +167,7 @@ export function Cuenta() {
           <select
             value={e.incertidumbre}
             onChange={(ev) => actualizar({ incertidumbre: (ev.target as HTMLSelectElement).value as any })}
-            style={{ padding: '2px 6px' }}
+            style={{ padding: '2px 6px', width: 'auto', display: 'inline-block' }}
           >
             <option value="baja">baja</option>
             <option value="media">media</option>

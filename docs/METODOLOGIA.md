@@ -2,7 +2,7 @@
 
 La versión para el público está en la web (página *Metodología*). Aquí, el detalle técnico.
 
-## Fase 2 · Escaños
+## Paso 3 · Cuenta (escaños)
 
 **Reparto** (LOREG art. 163): umbral del 3 % sobre votos válidos (candidaturas + blancos) de la
 circunscripción; D'Hondt; empate de cocientes → más votos totales. Implementado dos veces, de forma
@@ -37,20 +37,23 @@ en los grandes partidos).
 σ = k/√cuota; k = 0,04 (encuestas) y 0,05 (base 2023, que tiene tres años); el usuario puede elegir
 baja (×0,625) o alta (×1,5). Semilla fija por circunscripción y escenario: resultados reproducibles.
 
-**Sugerencia**: si P(≥ 1 escaño) < 50 %, se propone la primera preferencia siguiente (ranking de la
-fase 1 u orden manual; las coaliciones cuentan para sus partidos integrantes) con P ≥ 50 % en esa
+**Sugerencia**: si P(≥ 1 escaño) < 50 %, se propone la primera preferencia siguiente (ranking del
+paso 1 u orden manual; las coaliciones cuentan para sus partidos integrantes) con P ≥ 50 % en esa
 circunscripción.
 
-## Fase 1 · Afinidad
+## Paso 1 · Coincide (afinidad)
 
 Ver `docs/research/vaa_estado_del_arte.md`. 30 afirmaciones aprox. a partir de propuestas reales
 (programas 29-N y compromisos del candidato verificados en `data/promesas/`); 5 niveles + saltar;
-pesos 0,5/1/2; posiciones de partido por doble codificación independiente desde el programa con cita
-y página (`docs/prompts/2_codificacion_posiciones.md`); afinidad = distancia de Manhattan
-normalizada; cobertura mínima 50 % (aviso < 70 %); empate técnico < 5 puntos. Se activa cuando haya
-programas suficientes para una comparación justa.
+pesos 0,5/1/2; posiciones de partido desde el programa (cita y página) o compromisos de campaña
+posteriores a la convocatoria (cita, medio, fecha, URL), codificadas según
+`docs/prompts/2_codificacion_posiciones.md` y verificadas una a una por un segundo agente
+independiente (`data/fase1/verificacion_g*.json`); `pipeline/build_fase1.py` rechaza citas de
+programa no literales y fuentes de campaña sin URL o anteriores al 6-oct; afinidad = distancia de Manhattan
+normalizada; cobertura mínima 50 % (aviso < 70 %); empate técnico < 5 puntos. Se recodifica cada vez
+que se publica un programa.
 
-## Fase 3 · Rigor
+## Paso 2 · Contrasta (análisis de programas)
 
 Prompts: `docs/prompts/1_lectura_programa.md` y `docs/prompts/3_evaluacion_propuestas.md`; criterios
 en `data/fase3/criterios.json`. Cada programa lo lee entero un agente que deja constancia de las

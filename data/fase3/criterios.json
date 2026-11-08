@@ -24,7 +24,8 @@
       "favorable": "Coste conocido o estimable con fuentes públicas y el programa identifica una financiación verosímil.",
       "mixta": "Coste conocido o estimable, pero el programa no explica cómo se paga (o lo explica sin cuantificar).",
       "desfavorable": "La financiación que propone el programa está contradicha por fuentes oficiales, o el coste documentado es incompatible con las reglas fiscales vigentes sin explicar cómo se cubriría.",
-      "no_verificable": "No hay base pública para estimar el coste."
+      "no_verificable": "No hay base pública para estimar el coste.",
+      "nota": "Medidas sin coste presupuestario directo relevante (p. ej. regulatorias), si las fuentes lo documentan: favorable, explicándolo."
     }
   },
   {
@@ -35,7 +36,13 @@
   {
     "id": "internacional",
     "nombre": "Experiencia internacional",
-    "pregunta": "¿Se ha aplicado en otros países comparables y con qué resultados documentados?"
+    "pregunta": "¿Se ha aplicado en otros países comparables y con qué resultados documentados?",
+    "rubrica": {
+      "favorable": "Aplicada en países comparables con evaluaciones que muestran que logró su objetivo.",
+      "mixta": "Aplicada fuera con resultados dispares, o aplicada sin evaluación publicada de resultados (dígase).",
+      "desfavorable": "Aplicada fuera con evaluaciones que muestran que no logró su objetivo o tuvo efectos contrarios.",
+      "no_verificable": "No se conoce aplicación comparable."
+    }
   },
   {
     "id": "antecedentes",
@@ -45,7 +52,13 @@
   {
     "id": "beneficiarios",
     "nombre": "A quién beneficia",
-    "pregunta": "¿Beneficia a la mayoría de la población o a un grupo concreto (¿cuál y cuántos?), y quién asume el coste?"
+    "pregunta": "¿A quién beneficia (la mayoría o un grupo concreto: cuál y cuántos) y quién asume el coste? La valoración mide si eso está identificado y documentado, no si es bueno beneficiar a unos u otros.",
+    "rubrica": {
+      "favorable": "Beneficiarios y quién paga identificados y cuantificados con fuentes.",
+      "mixta": "Identificados pero sin cuantificar, o sin saber quién asume el coste.",
+      "desfavorable": "La evidencia indica que beneficiaría sobre todo a un grupo distinto del que declara el programa.",
+      "no_verificable": "No se puede determinar con fuentes públicas."
+    }
   },
   {
     "id": "largo_plazo",

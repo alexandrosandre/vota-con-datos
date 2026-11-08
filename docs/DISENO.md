@@ -30,42 +30,36 @@ docs/            diseño, metodología, investigación
 
 Publicación: GitHub Pages (gratuito) desde el repositorio público; despliegue con GitHub Actions.
 
-## Las tres fases
+## Los tres pasos: Coincide → Contrasta → Cuenta
 
-Pantalla de inicio con **tres columnas**; se pueden recorrer en orden (1 → 2 → 3) o empezar por
-cualquiera. El estado pasa de una fase a la siguiente (ranking de la fase 1 → calculadora; partido
-elegido en la fase 2 → análisis).
+Portada con **tres columnas**; se pueden recorrer en orden o empezar por cualquiera. Cada paso
+aprovecha lo anterior: el ranking de afinidad lleva a contrastar a los partidos más afines, y ese
+orden de preferencia alimenta la alternativa que sugiere el cálculo de escaños.
 
-### Fase 1 — Afinidad ("¿Qué partido se parece a ti?")
-* ~30 afirmaciones construidas a partir de **propuestas reales** de los programas 29N y de
-  compromisos públicos de los cabezas de lista (con cita y fuente).
-* Respuesta en 5 niveles + "prefiero no contestar"; marca de "me importa mucho" (peso ×2).
-* Posición de cada partido codificada desde su programa con **cita literal y página**; doble
-  codificación independiente y resolución de discrepancias; "sin posición" si el programa calla.
-* Afinidad = distancia de Manhattan normalizada sobre ítems comunes; se muestra la cobertura.
-* Incluye todos los partidos con representación actual o esperada, se presenten o no en la
-  circunscripción del usuario. Resultado: ranking + desglose por tema + fuentes.
-* Si un partido no ha publicado programa, aparece como "programa pendiente" y no se puntúa.
+**Por qué este orden (cambio respecto al planteamiento inicial 1-afinidad, 2-escaños, 3-análisis).**
+Es el orden de una decisión informada: qué quiero → si se sostiene → si mi voto llega. Con el
+cálculo de escaños en segundo lugar, la viabilidad condicionaba la preferencia antes de haberla
+contrastado, y el análisis solo se hacía del partido "útil", no de los afines. Al final, la
+sugerencia de alternativa se basa en una preferencia ya contrastada y la decisión estratégica
+queda donde se toma: al final.
 
-### Fase 2 — Utilidad del voto ("¿Tu voto tendrá escaño?")
-* El usuario elige circunscripción y partido (o usa el ranking de la fase 1).
-* Solo aparecen las **candidaturas proclamadas en el BOE** en esa circunscripción.
-* Escenario por defecto: **resultados de 2023**; alternativos: últimas encuestas (CIS, Sigma Dos,
-  GAD3/40dB) proyectadas por provincia con *swing* proporcional.
-* Reparto legal (umbral 3 % + D'Hondt) y simulación Monte Carlo → probabilidad de ≥ 1 escaño,
-  escaños esperados, votos por escaño y votos que faltan para el siguiente escaño.
-* Si la probabilidad es baja, propone la siguiente opción del ranking (fase 1) o del orden manual
-  que sí tenga representación probable.
+### 1 · Coincide ("¿Con quién coincides?")
+* 30 afirmaciones construidas a partir de **propuestas reales de esta campaña**: programas oficiales
+  del 29-N y compromisos públicos de los cabezas de lista (con cita y fuente).
+* 5 niveles + "Saltar"; peso de importancia ×0,5/×1/×2.
+* Posición de cada partido desde su programa (cita y página) o sus compromisos de campaña (cita,
+  medio, fecha); codificación + verificación independiente de cada posición contra su fuente; "sin posición conocida" si no hay fuente.
+* Afinidad = distancia de Manhattan normalizada; cobertura visible; empate técnico < 5 puntos.
 
-### Fase 3 — Rigor ("¿Qué hay detrás de sus propuestas?")
-* Las 12 propuestas principales del programa del partido elegido (criterio de selección
-  documentado: peso en el programa y en la campaña).
-* Evaluación por un modelo de IA con investigación documental y fuentes, en criterios
-  verificables: concreción, encaje legal (CE, competencias, UE), coste y financiación, evidencia
-  académica, experiencia internacional, antecedentes en España, a quién beneficia, efectos a
-  largo plazo. Cada criterio: valoración, explicación breve y fuentes; "no verificable" cuando no
-  hay base suficiente.
-* Generado de antemano (no en vivo) para que sea revisable, reproducible y sin coste por visita.
+### 2 · Contrasta ("¿Qué hay detrás?")
+* 12 propuestas centrales por programa oficial, evaluadas en 8 criterios verificables con rúbrica,
+  fuentes enlazadas, comprobación automática de citas y revisión independiente.
+* Atajos a los partidos más afines del paso 1. Compromisos de campaña visibles (no evaluados).
+
+### 3 · Cuenta ("¿Tu voto tendrá escaño?")
+* Candidaturas proclamadas en el BOE en tu circunscripción; escenarios 2023 (por defecto) y
+  encuestas (CIS, Sigma Dos, GAD3, 40dB); D'Hondt + umbral + Monte Carlo.
+* Probabilidad de escaño, coste en votos por escaño, votos que faltan; alternativa según tu orden.
 
 ## Calendario de datos
 * Listas BOE: 3-nov (y correcciones posteriores).
