@@ -4,20 +4,52 @@
  * Cada tema es una hoja de estilos independiente en web/public/temas/<id>.css, con todas sus reglas
  * bajo html[data-tema="<id>"], que se carga solo cuando se elige. El tema base ("cívico") es
  * src/index.css. Se elige con ?tema=<id> en la URL (se recuerda en este navegador) y el modo con
- * ?modo=claro|oscuro (útil para capturas).
+ * ?modo=claro|oscuro (útil para capturas). Valoración completa: docs/research/disenos.md.
  */
 export interface Tema {
   id: string;
   nombre: string;
   idea: string;
+  fortalezas: string;
+  riesgos: string;
 }
 
 export const TEMAS: Tema[] = [
-  { id: 'civico', nombre: 'Cívico', idea: 'El diseño actual: papel y tinta, serif editorial, un color por paso.' },
-  { id: 'fuerte', nombre: 'Color fuerte', idea: 'Un color principal saturado y rotundo, como las webs de los partidos, pero que no se identifica con ninguno.' },
-  { id: 'campana', nombre: 'Campaña', idea: 'El lenguaje de las webs de campaña: héroe grande, tipografía rotunda, llamadas a la acción claras.' },
-  { id: 'datos', nombre: 'Datos', idea: 'Moderno y analítico: rejilla, contraste y la comparación como motivo gráfico.' },
-  { id: 'editorial', nombre: 'Editorial', idea: 'Como un buen diario digital: jerarquía tipográfica, columnas y sobriedad periodística.' },
+  {
+    id: 'civico',
+    nombre: 'Cívico (actual)',
+    idea: 'Papel cálido y tinta, serif editorial en titulares, un color por paso.',
+    fortalezas: 'El más equilibrado: tranquilo, legible, con identidad propia; los tres colores orientan en el recorrido.',
+    riesgos: 'Puede parecer poco enérgico al lado de una campaña real.',
+  },
+  {
+    id: 'fuerte',
+    nombre: 'Color fuerte',
+    idea: 'Un único ultramar eléctrico a sangre, tipografía muy negra; los pasos son tonos del mismo color.',
+    fortalezas: 'El que más «marca» tiene: se reconoce de lejos y transmite seguridad.',
+    riesgos: 'Elegido entre el azul del PP y el morado de Podemos: según la pantalla, alguien puede asociarlo a uno u otro.',
+  },
+  {
+    id: 'campana',
+    nombre: 'Campaña',
+    idea: 'Negro y papel, titulares condensados en mayúsculas, bandas de color y botones rectos.',
+    fortalezas: 'El de más energía y llamada a la acción; la portada funciona como un cartel.',
+    riesgos: 'Adopta el lenguaje de la propaganda electoral, lo que puede restar credibilidad a una herramienta neutral.',
+  },
+  {
+    id: 'datos',
+    nombre: 'Datos',
+    idea: 'Grafito, rejilla, cifras en monoespaciada; comparar y contrastar como motivo gráfico.',
+    fortalezas: 'Los mejores componentes de datos (color + forma, cifras tabulares); moderno y preciso.',
+    riesgos: 'El aire técnico puede alejar a quien no se siente cómodo con los números.',
+  },
+  {
+    id: 'editorial',
+    nombre: 'Editorial',
+    idea: 'El especial electoral de un buen diario: serif de prensa, filetes, columnas, tintas sobrias.',
+    fortalezas: 'El más sobrio y creíble; el mejor para leer textos largos (metodología, análisis, citas).',
+    riesgos: 'Puede recordar a un medio concreto y es el menos llamativo para público joven.',
+  },
 ];
 
 const CLAVE = 'vcd-tema';

@@ -8,7 +8,7 @@
   --card: #ffffff;
   --ink: #16161a;
   --ink-2: #46464f;
-  --ink-3: #777782;
+  --ink-3: #696973; /* ≥ 4,5:1 sobre papel, tarjeta y --paper-2 */
   --line: #e3dfd5;
   /* Pasos */
   --p1: #c2502b; /* Coincide — terracota */
@@ -34,14 +34,14 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --paper: #121214; --paper-2: #1b1b1f; --card: #1a1a1e; --ink: #f2f0ea; --ink-2: #c4c2bc; --ink-3: #8f8d88; --line: #2e2e33;
+    --paper: #121214; --paper-2: #1b1b1f; --card: #1a1a1e; --ink: #f2f0ea; --ink-2: #c4c2bc; --ink-3: #a19f99; --line: #2e2e33;
     --p1: #ef8a63; --p1-soft: #3a2219; --p2: #a9a6f2; --p2-soft: #26254a; --p3: #5cc4ad; --p3-soft: #163a33;
     --ok: #6cc28e; --ok-soft: #183323; --mid: #e3b55c; --mid-soft: #3a2e15; --bad: #ef8378; --bad-soft: #3d1f1b; --na: #a3a19b; --na-soft: #2a2a2e;
     --on-c: #121214; color-scheme: dark;
   }
 }
 :root[data-theme='dark'] {
-  --paper: #121214; --paper-2: #1b1b1f; --card: #1a1a1e; --ink: #f2f0ea; --ink-2: #c4c2bc; --ink-3: #8f8d88; --line: #2e2e33;
+  --paper: #121214; --paper-2: #1b1b1f; --card: #1a1a1e; --ink: #f2f0ea; --ink-2: #c4c2bc; --ink-3: #a19f99; --line: #2e2e33;
   --p1: #ef8a63; --p1-soft: #3a2219; --p2: #a9a6f2; --p2-soft: #26254a; --p3: #5cc4ad; --p3-soft: #163a33;
   --ok: #6cc28e; --ok-soft: #183323; --mid: #e3b55c; --mid-soft: #3a2e15; --bad: #ef8378; --bad-soft: #3d1f1b; --na: #a3a19b; --na-soft: #2a2a2e;
   --on-c: #121214; color-scheme: dark;
@@ -66,6 +66,10 @@ button { font: inherit; cursor: pointer; color: inherit; }
 .sr-only:focus { left: 16px; top: 8px; z-index: 20; background: var(--card); padding: 8px 12px; border-radius: 8px; }
 
 .p1 { --c: var(--p1); --cs: var(--p1-soft); }
+/* Cívico claro: el terracota de marca (#c2502b) da 3,8:1 sobre su fondo suave; como color de paso
+   (texto, chips, botones) se usa un tono algo más profundo. El símbolo y la portada mantienen --p1. */
+html[data-tema='civico']:not([data-theme='dark']) .p1 { --c: #b04322; }
+@media (prefers-color-scheme: dark) { html[data-tema='civico']:not([data-theme='light']) .p1 { --c: var(--p1); } }
 .p2 { --c: var(--p2); --cs: var(--p2-soft); }
 .p3 { --c: var(--p3); --cs: var(--p3-soft); }
 
@@ -198,7 +202,7 @@ footer a { color: var(--ink-2); }
 .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-top: 18px; }
 .kpi { background: var(--paper-2); border-radius: var(--r-s); padding: 12px 14px; }
 .kpi b { display: block; font-family: var(--serif); font-size: 1.35rem; font-variant-numeric: tabular-nums; }
-.kpi span { font-size: 0.8rem; color: var(--ink-3); }
+.kpi span { display: block; font-size: 0.8rem; line-height: 1.4; color: var(--ink-3); }
 .tr-me td { background: var(--cs); }
 .reco { border: 2px solid var(--c); }
 .orden li { display: flex; align-items: center; gap: 8px; padding: 5px 0; }
@@ -250,4 +254,16 @@ details > summary { cursor: pointer; }
   .top .wrap { gap: 10px; }
   .nav a { padding: 6px 7px; font-size: 0.82rem; gap: 4px; }
   .nav a .dot { width: 6px; height: 6px; }
+  /* Objetivos táctiles de al menos 40 px */
+  .nav a, .pasos a, .star, .chip-btn { min-height: 40px; }
+  .orden button { min-width: 40px; min-height: 40px; }
+}
+@media (max-width: 600px) {
+  /* La cifra grande de Cuenta cae bajo el nombre: alineada a la izquierda con su etiqueta */
+  .card .row > div[style*='text-align: right'] { text-align: left !important; }
+  /* Matriz 12×8: las ocho columnas caben en 390 px sin desplazamiento lateral */
+  .mapa td:first-child { min-width: 118px !important; font-size: 0.76rem; padding-right: 8px; }
+  .mapa td { padding: 3px 1px; }
+  .mapa .sq { width: 18px; height: 18px; border-radius: 4px; }
+  .mapa th.v { height: 150px; padding: 4px 1px; font-size: 0.72rem; }
 }
