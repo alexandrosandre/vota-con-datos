@@ -1,6 +1,6 @@
 # Checklist · vota con datos (29-N)
 
-Actualizado: 9-nov-2026. La web ya está en línea; aquí «bloquea» significa **no difundirla ni
+Actualizado: 9-nov-2026 (mañana). La web ya está en línea; aquí «bloquea» significa **no difundirla ni
 anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que esté hecho.
 
 **Quién lo desbloquea**
@@ -58,10 +58,11 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   ≈12-nov y ante el TS (art. 44.4 LOREG) del 13 al 19-nov: vuelvo a descargar y validar el BOE después
   de cada fecha. Pendiente de confirmar oficialmente: el recurso de Drago Canarias contra UPC (solo hay
   prensa).
-- [ ] **9. [Yo] ⚠️ 24-nov 00:00 — retirar los escenarios de encuestas del paso 3 hasta el 29-nov.** El
+- [x] **9. [Yo] ⚠️ 24-nov 00:00 — retirar los escenarios de encuestas del paso 3 hasta el 29-nov.** El
   art. 69.7 de la LOREG prohíbe publicar, difundir o reproducir sondeos los cinco días anteriores a la
   votación, y la web reproduce estimaciones de encuestas. Queda solo el escenario de resultados de 2023
-  con un aviso. Lo programo por fecha en el código para que no dependa de nadie.
+  con un aviso. Hecho (9-nov): filtro por fecha en el build y en el navegador, y despliegues
+  programados en GitHub Actions el 23-nov 22:05 y el 29-nov 20:10; probado con fechas simuladas.
 
 ## B. No bloquea — mejoras y mantenimiento, por prioridad
 
@@ -82,7 +83,8 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   NEX, Adelante Andalucía fuera de Cádiz…): valorar un perfil de las europeas 2024 u otra referencia
   documentada.
 - [ ] **16. [Yo] Tests del pipeline** (mapeo candidaturas → partidos, escenarios por encuesta) y
-  pruebas de extremo a extremo de la web.
+  pruebas de extremo a extremo de la web. Hecho en parte (9-nov): 10 tests de invariantes en CI
+  (D'Hondt, reproducción de 2023, cuotas, reparto de Sumar, veda, citas); faltan los de extremo a extremo.
 - [ ] **17. [Yo] Auditoría de accesibilidad** (lector de pantalla, teclado, contraste en modo oscuro).
 - [ ] **18. [Tú] Dominio propio** (p. ej. votacondatos.es): requiere que lo compres; hoy funciona en el
   dominio gratuito de GitHub Pages. Si lo compras, la configuración la hago yo.
