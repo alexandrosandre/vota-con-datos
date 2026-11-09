@@ -79,6 +79,7 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   (antes del 24-nov): sustituye al barómetro de octubre, cuyo trabajo de campo fue anterior a la
   convocatoria.
 - [ ] **11. [Externo → Yo] Encuestas nuevas de Sigma Dos, GAD3 y 40dB** publicadas antes del 24-nov.
+  Al día el 9-nov: Sigma Dos 8-nov, GAD3 9-nov y 40dB 9-nov (la revisión programada sigue buscando).
 - [ ] **12. [Yo] Compromisos de campaña desde el 13-nov** (inicio de campaña), sobre todo para EH
   Bildu, PNV, PSC, UPN-PP y Adelante Andalucía, que hoy tienen cero posiciones en el paso 1.
 - [x] **13. [Yo] Resolver las dudas abiertas de los revisores** (detalle en
