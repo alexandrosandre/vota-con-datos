@@ -41,7 +41,7 @@ export const TEMAS: Tema[] = [
     nombre: 'Campaña · amarillo (contrapropuesta)',
     idea: 'Tu elegido, solo en oscuro: negro profundo, un amarillo rotundo y los tres pasos como tres pilares verticales.',
     fortalezas: 'Máximo contraste y energía; los tres pilares hacen evidente el recorrido Coincide · Contrasta · Cuenta.',
-    riesgos: 'Pendiente de la revisión del diseñador (asociación del amarillo con partidos concretos).',
+    riesgos: 'El amarillo ácido elegido (#E9F542) se aleja del dorado de Coalición Canaria y del ámbar de ERC (la CUP, de amarillo limón, no se presenta), pero el amarillo evoca para algunos el lazo del independentismo catalán.',
   },
   {
     id: 'datos',
@@ -60,6 +60,8 @@ export const TEMAS: Tema[] = [
 ];
 
 const CLAVE = 'vcd-tema';
+/** Diseño que ve quien no ha elegido otro en la galería. */
+export const TEMA_POR_DEFECTO = 'civico';
 
 function param(n: string): string | null {
   return new URLSearchParams(location.search).get(n);
@@ -81,7 +83,7 @@ export function temaActual(): string {
   } catch {
     /* sin almacenamiento */
   }
-  return 'civico';
+  return TEMA_POR_DEFECTO;
 }
 
 export function aplicarTema(id = temaActual()) {
