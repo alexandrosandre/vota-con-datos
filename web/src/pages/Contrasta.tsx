@@ -31,7 +31,7 @@ function Resumen({ props }: { props: Propuesta[] }) {
   const total = Object.values(n).reduce((a, b) => a + b, 0) || 1;
   return (
     <div>
-      <div style={{ display: 'flex', height: 12, borderRadius: 99, overflow: 'hidden' }} role="img" aria-label="Reparto de valoraciones">
+      <div class="reparto" style={{ display: 'flex', height: 12, borderRadius: 99, overflow: 'hidden' }} role="img" aria-label="Reparto de valoraciones">
         {(Object.keys(n) as Valoracion[]).map((v) => (
           <i key={v} style={{ width: `${(n[v] / total) * 100}%`, background: `var(--${COLOR[v]})` }} />
         ))}

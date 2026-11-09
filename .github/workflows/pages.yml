@@ -40,6 +40,8 @@ jobs:
           python3 -I pipeline/verify_quotes.py
       - name: Construir datos de la web
         run: python3 -I pipeline/build_web.py
+      - name: Tests del pipeline
+        run: python3 -I -m unittest discover -s tests -v
       - name: Tests y build
         working-directory: web
         run: |

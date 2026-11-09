@@ -7,9 +7,9 @@ const COLORES = [
   { n: 'Coincide', v: '--p1', hex: '#C2502B / #EF8A63', uso: 'Paso 1 · terracota' },
   { n: 'Contrasta', v: '--p2', hex: '#4A47A3 / #A9A6F2', uso: 'Paso 2 · índigo' },
   { n: 'Cuenta', v: '--p3', hex: '#13715F / #5CC4AD', uso: 'Paso 3 · verde datos' },
-  { n: 'Sólida', v: '--ok', hex: '#2C7A4B', uso: 'Valoración' },
-  { n: 'Matizable', v: '--mid', hex: '#9A6A0F', uso: 'Valoración' },
-  { n: 'Débil', v: '--bad', hex: '#B03A2E', uso: 'Valoración' },
+  { n: 'Sólida', v: '--ok', hex: '#1D6A3C', uso: 'Valoración' },
+  { n: 'Matizable', v: '--mid', hex: '#7A5205', uso: 'Valoración' },
+  { n: 'Débil', v: '--bad', hex: '#962A20', uso: 'Valoración' },
 ];
 
 export function Marca() {
@@ -23,7 +23,7 @@ export function Marca() {
       </p>
 
       <h2 style={{ marginTop: 40 }}>Símbolo y logotipo</h2>
-      <div class="grid-3" style={{ gridTemplateColumns: '1fr 1fr' }}>
+      <div class="grid-2">
         <div class="lienzo" style={{ background: 'var(--card)' }}>
           <Logotipo size={44} />
         </div>

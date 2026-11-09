@@ -19,10 +19,11 @@
   --p3-soft: #d9efe9;
   --accent: var(--p3);
   /* Semánticos */
-  --ok: #2c7a4b; --ok-soft: #ddf0e3;
-  --mid: #9a6a0f; --mid-soft: #f6ead0;
-  --bad: #b03a2e; --bad-soft: #f8dfdb;
-  --na: #6e6e78; --na-soft: #ebeae6;
+  /* Texto de valoraciones sobre su fondo suave: ≥ 4,5:1 (WCAG AA) */
+  --ok: #1d6a3c; --ok-soft: #ddf0e3;
+  --mid: #7a5205; --mid-soft: #f6ead0;
+  --bad: #962a20; --bad-soft: #f8dfdb;
+  --na: #55555e; --na-soft: #ebeae6;
   --on-c: #ffffff;
   /* Tipografía */
   --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
@@ -150,6 +151,8 @@ button { font: inherit; cursor: pointer; color: inherit; }
 .pill { display: inline-block; font-size: 0.74rem; font-weight: 600; padding: 2px 9px; border-radius: 99px; background: var(--paper-2); color: var(--ink-2); white-space: nowrap; }
 label.field { display: flex; flex-direction: column; gap: 6px; font-size: 0.82rem; font-weight: 600; color: var(--ink-2); min-width: 0; }
 select, input[type='text'] { font: inherit; font-size: 0.97rem; padding: 10px 12px; border: 1px solid var(--line); border-radius: var(--r-s); background: var(--card); color: var(--ink); max-width: 100%; width: 100%; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+@media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
 .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
 @media (max-width: 760px) { .grid-3 { grid-template-columns: 1fr; } }
 .bar { height: 8px; background: var(--paper-2); border-radius: 99px; overflow: hidden; }

@@ -25,7 +25,7 @@ redes 1200×630 (`og.png`). Área de respeto: la altura de la ranura.
 | 1 · Coincide (terracota) | `#C2502B` | `#EF8A63` |
 | 2 · Contrasta (índigo) | `#4A47A3` | `#A9A6F2` |
 | 3 · Cuenta (verde datos) | `#13715F` | `#5CC4AD` |
-| Sólida / Matizable / Débil / No verificable | `#2C7A4B` / `#9A6A0F` / `#B03A2E` / `#6E6E78` | aclarados |
+| Sólida / Matizable / Débil / No verificable | `#1D6A3C` / `#7A5205` / `#962A20` / `#55555E` | aclarados |
 
 Nunca se usan los colores corporativos de los partidos; en gráficos se distinguen por nombre.
 

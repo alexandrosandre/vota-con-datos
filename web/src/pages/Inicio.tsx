@@ -24,7 +24,7 @@ export function Inicio() {
         <h1>
           <span class="l1">Coincide.</span> <span class="l2">Contrasta.</span> <span class="l3">Cuenta.</span>
           <br />
-          Vota sabiendo a qué votas.
+          <span class="eslogan">Vota sabiendo a qué votas.</span>
         </h1>
         <p class="lead">
           Tres pasos para pasar de la intuición a un voto informado: con quién coincides de verdad, qué hay detrás de lo que promete, y si tu
