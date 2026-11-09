@@ -34,7 +34,17 @@ function cargar(): Estado {
   return inicial;
 }
 
-export const estado = signal<Estado>(cargar());
+function desdeUrl(e: Estado): Estado {
+  // Enlaces compartibles y capturas: ?circ=28&partido=psoe&escenario=g2023
+  const q = new URLSearchParams(location.search);
+  const out = { ...e };
+  if (q.get('circ')) out.circ = q.get('circ');
+  if (q.get('partido')) out.partido = q.get('partido');
+  if (q.get('escenario')) out.escenario = q.get('escenario')!;
+  return out;
+}
+
+export const estado = signal<Estado>(desdeUrl(cargar()));
 
 effect(() => {
   try {

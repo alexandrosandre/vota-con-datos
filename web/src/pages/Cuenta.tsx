@@ -82,7 +82,12 @@ export function Cuenta() {
   const e = estado.value;
   const circs = useMemo(() => [...d.circunscripciones].sort((a, b) => a.nombre.localeCompare(b.nombre, 'es')), [d]);
   const circ = circs.find((c) => c.ine === e.circ) ?? null;
-  const esc = d.escenarios.find((x) => x.id === e.escenario) ?? d.escenarios[0];
+  // Veda de encuestas (LOREG art. 69.7): también en el navegador, por si los datos en caché son anteriores.
+  const v = d.meta.veda_encuestas;
+  const ahora = Date.now();
+  const enVeda = !!v && ahora >= Date.parse(v.inicio) && ahora < Date.parse(v.fin);
+  const escenarios = enVeda ? d.escenarios.filter((x) => x.id === 'g2023') : d.escenarios;
+  const esc = escenarios.find((x) => x.id === e.escenario) ?? escenarios[0];
   const k = NIVELES_INCERTIDUMBRE[e.incertidumbre] * (esc.k / NIVELES_INCERTIDUMBRE.media);
   const filas = useMemo(() => (circ ? calcular(circ, esc, k) : []), [circ, esc, k]);
 
@@ -148,7 +153,7 @@ export function Cuenta() {
           <label class="field">
             Escenario
             <select value={esc.id} onChange={(ev) => actualizar({ escenario: (ev.target as HTMLSelectElement).value })}>
-              {d.escenarios.map((x) => (
+              {escenarios.map((x) => (
                 <option key={x.id} value={x.id}>
                   {x.nombre}
                 </option>
@@ -176,6 +181,12 @@ export function Cuenta() {
         </p>
       </div>
 
+      {enVeda && (
+        <div class="note" style={{ marginTop: 14 }}>
+          Del 24 de noviembre hasta el cierre de los colegios electorales, la ley electoral (art. 69.7 LOREG) prohíbe publicar o reproducir
+          encuestas. Por eso ahora solo puedes calcular con los resultados de 2023.
+        </div>
+      )}
       {circ && (
         <div class="stack" style={{ marginTop: 18 }}>
           {noSePresenta && (

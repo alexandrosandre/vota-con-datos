@@ -8,6 +8,7 @@ import { Contrasta } from './pages/Contrasta';
 import { Cuenta } from './pages/Cuenta';
 import { Metodologia } from './pages/Metodologia';
 import { Marca } from './pages/Marca';
+import { Disenos } from './pages/Disenos';
 
 /** Rutas antiguas (primera versión publicada) → nuevas. */
 const REDIRECCIONES: Record<string, string> = { '/afinidad': '/coincide', '/tu-voto': '/cuenta', '/rigor': '/contrasta' };
@@ -72,6 +73,7 @@ export function App() {
   if (errorCarga.value) page = <div class="narrow page"><div class="note">No se pudieron cargar los datos: {errorCarga.value}</div></div>;
   else if (r.startsWith('/metodologia')) page = <Metodologia />;
   else if (r.startsWith('/marca')) page = <Marca />;
+  else if (r.startsWith('/disenos')) page = <Disenos />;
   else if (!partidos.value) page = <div class="narrow page muted">Cargando datos…</div>;
   else if (r.startsWith('/coincide')) page = <Coincide />;
   else if (r.startsWith('/contrasta')) page = <Contrasta />;

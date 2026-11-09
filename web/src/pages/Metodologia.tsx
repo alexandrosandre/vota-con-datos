@@ -143,7 +143,7 @@ export function Metodologia() {
           <ul>
             <li>Un cuestionario de 30 temas simplifica: dos partidos pueden coincidir contigo por razones distintas.</li>
             <li>Los compromisos de campaña son más escuetos que un programa; por eso indicamos siempre de dónde sale cada posición.</li>
-            <li>La probabilidad de escaño depende del escenario: ni el pasado ni las encuestas garantizan el resultado. Desde el 24 de noviembre la ley prohíbe publicar encuestas nuevas.</li>
+            <li>La probabilidad de escaño depende del escenario: ni el pasado ni las encuestas garantizan el resultado. Del 24 de noviembre al cierre de los colegios la ley prohíbe publicar o reproducir encuestas: en ese periodo la web solo calcula con los resultados de 2023.</li>
             <li>Los modelos de IA pueden equivocarse. Por eso todo es revisable y cualquier persona puede <a href={`${REPO}/issues`}>avisar de un error</a>.</li>
           </ul>
 

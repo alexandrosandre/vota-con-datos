@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap');
+/* ==========================================================================
+   Tema "campana" — Campaña.
+   El lenguaje de las webs de campaña (héroe a sangre, titulares condensados en
+   mayúsculas, llamadas a la acción rotundas, bandas de color) sin el color de
+   ningún partido: tinta negra + papel cálido, y los tres colores de los pasos
+   (óxido, índigo, verde datos) como bandas. Todas las reglas bajo
+   html[data-tema="campana"].
+   ========================================================================== */
+
+/* ---------- Tokens (claro) ---------- */
+html[data-tema="campana"] {
+  --paper: #f4f2ec;
+  --paper-2: #e9e6dd;
+  --card: #ffffff;
+  --ink: #111114;
+  --ink-2: #3d3d45;
+  --ink-3: #64646d;
+  --line: #d9d5c9;
+  /* Pasos: tono profundo (bandas, texto sobre papel) y tono vivo (sobre negro) */
+  --p1-deep: #a93f1c; --p1-hi: #ff9670;
+  --p2-deep: #3f3c9a; --p2-hi: #b1aeff;
+  --p3-deep: #0e6654; --p3-hi: #5ccfb4;
+  --p1: var(--p1-deep); --p1-soft: #f6e0d6;
+  --p2: var(--p2-deep); --p2-soft: #e3e2f5;
+  --p3: var(--p3-deep); --p3-soft: #d6ece6;
+  --accent: var(--ink);
+  /* Semánticos (texto) y su versión de relleno para gráficos */
+  --ok: #1f7a45; --ok-soft: #dff1e5;
+  --mid: #8a5d00; --mid-soft: #f6ead0;
+  --bad: #b0302a; --bad-soft: #f8dfdb;
+  --na: #5f5f67; --na-soft: #e6e4de;
+  --ok-fill: #23804b; --mid-fill: #d9a21b; --bad-fill: #cf3b2f; --na-fill: #a9a7a0;
+  --on-c: #ffffff;
+  /* Bandas */
+  --band: #111114;
+  --band-ink: #ffffff;
+  --band-ink-2: #d4d2cb;
+  --band-line: rgba(255, 255, 255, 0.16);
+  /* Tipografía */
+  --serif: 'Archivo', 'Arial Narrow', system-ui, sans-serif;
+  --sans: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --r: 4px;
+  --r-s: 3px;
+  --cond: 68%;
+  color-scheme: light;
+}
+
+/* ---------- Tokens (oscuro) ---------- */
+html[data-tema="campana"][data-theme="dark"] {
+  --paper: #0d0d0f; --paper-2: #18181c; --card: #141417;
+  --ink: #f4f2eb; --ink-2: #cac8c1; --ink-3: #9d9b94; --line: #2c2c32;
+  --p1: var(--p1-hi); --p1-soft: #3a2219;
+  --p2: var(--p2-hi); --p2-soft: #25244a;
+  --p3: var(--p3-hi); --p3-soft: #123a31;
+  --ok: #6fd39a; --ok-soft: #15301f;
+  --mid: #f0c060; --mid-soft: #362b12;
+  --bad: #ff8b7e; --bad-soft: #3d1d1a;
+  --na: #aeaca5; --na-soft: #2a2a2e;
+  --ok-fill: #2d9159; --mid-fill: #e3ad2c; --bad-fill: #e5574a; --na-fill: #6d6c68;
+  --on-c: #0d0d0f;
+  --band: #000000; --band-2: #1c1c21; --band-line: rgba(255, 255, 255, 0.14);
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  html[data-tema="campana"]:not([data-theme="light"]) {
+    --paper: #0d0d0f; --paper-2: #18181c; --card: #141417;
+    --ink: #f4f2eb; --ink-2: #cac8c1; --ink-3: #9d9b94; --line: #2c2c32;
+    --p1: var(--p1-hi); --p1-soft: #3a2219;
+    --p2: var(--p2-hi); --p2-soft: #25244a;
+    --p3: var(--p3-hi); --p3-soft: #123a31;
+    --ok: #6fd39a; --ok-soft: #15301f;
+    --mid: #f0c060; --mid-soft: #362b12;
+    --bad: #ff8b7e; --bad-soft: #3d1d1a;
+    --na: #aeaca5; --na-soft: #2a2a2e;
+    --ok-fill: #2d9159; --mid-fill: #e3ad2c; --bad-fill: #e5574a; --na-fill: #6d6c68;
+    --on-c: #0d0d0f;
+    --band: #000000; --band-2: #1c1c21; --band-line: rgba(255, 255, 255, 0.14);
+    color-scheme: dark;
+  }
+}
+
+html[data-tema="campana"] .p1 { --c-deep: var(--p1-deep); --c-hi: var(--p1-hi); }
+html[data-tema="campana"] .p2 { --c-deep: var(--p2-deep); --c-hi: var(--p2-hi); }
+html[data-tema="campana"] .p3 { --c-deep: var(--p3-deep); --c-hi: var(--p3-hi); }
+
+/* ---------- Base ---------- */
+html[data-tema="campana"] body { font-family: var(--sans); font-size: 16.5px; line-height: 1.6; overflow-x: clip; }
+html[data-tema="campana"] h1,
+html[data-tema="campana"] h2,
+html[data-tema="campana"] h3 { font-family: var(--serif); font-stretch: var(--cond); font-weight: 800; letter-spacing: -0.005em; line-height: 1; }
+html[data-tema="campana"] h1,
+html[data-tema="campana"] h2 { text-transform: uppercase; }
+html[data-tema="campana"] h1 { font-size: clamp(2.6rem, 7vw, 4.6rem); font-weight: 900; line-height: 0.92; }
+html[data-tema="campana"] h2 { font-size: clamp(1.7rem, 3.6vw, 2.5rem); line-height: 0.98; }
+html[data-tema="campana"] h3 { font-size: 1.32rem; line-height: 1.15; }
+html[data-tema="campana"] :focus-visible { outline: 3px solid var(--c, var(--ink)); outline-offset: 3px; border-radius: 2px; }
+html[data-tema="campana"] .kicker { font-stretch: 85%; font-weight: 800; letter-spacing: 0.14em; font-size: 0.78rem; color: var(--c, var(--ink-2)); }
+html[data-tema="campana"] .lead { font-size: 1.15rem; line-height: 1.55; }
+html[data-tema="campana"] ::selection { background: var(--ink); color: var(--paper); }
+
+/* Banda a sangre: el fondo se extiende a todo el ancho sin provocar scroll. */
+html[data-tema="campana"] .hero,
+html[data-tema="campana"] .cifras,
+html[data-tema="campana"] .cab-paso {
+  box-shadow: 0 0 0 100vmax var(--bandbg);
+  clip-path: inset(0 -100vmax);
+  background: var(--bandbg);
+}
+
+/* ---------- Marca ---------- */
+html[data-tema="campana"] .wordmark { font-family: var(--serif); font-stretch: 75%; font-weight: 900; text-transform: uppercase; letter-spacing: 0.01em; font-size: 1.28rem; }
+html[data-tema="campana"] .wordmark .con { font-style: normal; font-weight: 500; color: inherit; opacity: 0.62; }
+
+/* ---------- Cabecera ---------- */
+html[data-tema="campana"] .top {
+  --p1: var(--p1-hi); --p2: var(--p2-hi); --p3: var(--p3-hi);
+  background: var(--band); color: #fff; backdrop-filter: none; border-bottom: 1px solid var(--band-line);
+}
+html[data-tema="campana"] .top .home { color: #fff; }
+html[data-tema="campana"] .top .wrap { height: 64px; }
+html[data-tema="campana"] .nav { gap: 4px; }
+html[data-tema="campana"] .nav a {
+  color: #d4d2cb; border-radius: 0; padding: 8px 12px; font-stretch: 80%; font-weight: 800; font-size: 0.92rem;
+  text-transform: uppercase; letter-spacing: 0.06em; box-shadow: inset 0 -3px 0 transparent;
+}
+html[data-tema="campana"] .nav a:hover { background: rgba(255, 255, 255, 0.08); color: #fff; }
+html[data-tema="campana"] .nav a.on { background: transparent; color: #fff; box-shadow: inset 0 -3px 0 var(--c, #fff); }
+html[data-tema="campana"] .nav a .dot { width: 9px; height: 9px; border-radius: 1px; }
+
+/* ---------- Portada: héroe ---------- */
+html[data-tema="campana"] .hero {
+  --bandbg: var(--band);
+  position: relative; color: var(--band-ink); padding: 60px 0 116px;
+}
+html[data-tema="campana"] .hero > * { position: relative; }
+html[data-tema="campana"] .hero::before {
+  content: '29N'; position: absolute; right: -6px; bottom: 84px; z-index: 0;
+  font: 900 clamp(8rem, 19vw, 15rem) / 0.8 var(--serif); font-stretch: 62%; letter-spacing: -0.02em;
+  color: transparent; -webkit-text-stroke: 2px rgba(255, 255, 255, 0.13); pointer-events: none;
+}
+html[data-tema="campana"] .hero .kicker {
+  display: inline-block; color: #111114; background: #fff; padding: 7px 12px 6px; margin-bottom: 26px; letter-spacing: 0.12em;
+}
+html[data-tema="campana"] .hero h1 {
+  max-width: none; font-size: clamp(3.1rem, 7.1vw, 5.75rem); font-stretch: 62%; line-height: 0.88; text-wrap: balance; letter-spacing: -0.005em; margin-bottom: 30px; color: #fff;
+}
+html[data-tema="campana"] .hero h1 .l1 { color: var(--p1-hi); }
+html[data-tema="campana"] .hero h1 .l2 { color: var(--p2-hi); }
+html[data-tema="campana"] .hero h1 .l3 { color: var(--p3-hi); }
+html[data-tema="campana"] .hero .lead { color: var(--band-ink-2); font-size: 1.2rem; max-width: 640px; }
+html[data-tema="campana"] .hero .row { margin-top: 34px; gap: 12px; }
+html[data-tema="campana"] .hero .btn { border-color: #fff; color: #fff; background: transparent; }
+html[data-tema="campana"] .hero .btn:hover { background: #fff; color: #111114; }
+html[data-tema="campana"] .hero .btn.primary { background: var(--p1-hi); border-color: var(--p1-hi); color: #111114; }
+html[data-tema="campana"] .hero .btn.primary:hover { background: #fff; border-color: #fff; filter: none; }
+
+/* ---------- Portada: los tres pasos como paneles de color ---------- */
+html[data-tema="campana"] .trayecto { gap: 0; margin: -64px 0 22px; position: relative; z-index: 1; }
+html[data-tema="campana"] a.etapa {
+  background: var(--c-deep); color: #fff; border: 0; border-radius: 0; padding: 30px 30px 26px; min-height: 380px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+html[data-tema="campana"] a.etapa::before { content: none; }
+html[data-tema="campana"] a.etapa:hover { transform: translateY(-6px); box-shadow: 0 16px 0 -8px rgba(0, 0, 0, 0.18); border-color: transparent; }
+html[data-tema="campana"] a.etapa:focus-visible { outline-color: var(--ink); outline-offset: 4px; }
+html[data-tema="campana"] a.etapa .num { display: block; margin-bottom: 18px; }
+html[data-tema="campana"] a.etapa .num b {
+  display: block; font: 900 6.2rem / 0.8 var(--serif); font-stretch: 62%; color: #fff; margin-bottom: 14px;
+}
+html[data-tema="campana"] a.etapa .num span {
+  display: inline-block; color: #fff; font-weight: 800; font-stretch: 85%; text-transform: uppercase; letter-spacing: 0.14em;
+  font-size: 0.8rem; border: 1.5px solid rgba(255, 255, 255, 0.7); padding: 3px 9px;
+}
+html[data-tema="campana"] a.etapa h2 { color: #fff; font-size: clamp(1.8rem, 2.7vw, 2.25rem); margin-bottom: 12px; }
+html[data-tema="campana"] a.etapa p { color: rgba(255, 255, 255, 0.92); font-size: 1rem; }
+html[data-tema="campana"] a.etapa .go {
+  color: #fff; font-weight: 800; font-stretch: 80%; text-transform: uppercase; letter-spacing: 0.06em; font-size: 1.02rem;
+  text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 6px; text-decoration-color: rgba(255, 255, 255, 0.55);
+}
+html[data-tema="campana"] a.etapa:hover .go { text-decoration-color: #fff; }
+html[data-tema="campana"] a.etapa .estado { color: rgba(255, 255, 255, 0.86); font-size: 0.84rem; margin-top: 10px; }
+html[data-tema="campana"][data-theme="dark"] a.etapa { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06); }
+
+/* ---------- Portada: cifras en banda negra ---------- */
+html[data-tema="campana"] .cifras {
+  --bandbg: var(--band-2, var(--band));
+  color: var(--band-ink); border: 0; border-radius: 0; gap: 0; overflow: visible; margin: 56px 0 0; padding: 44px 0;
+}
+html[data-tema="campana"] .cifras div { background: transparent; padding: 6px 24px 8px; border-left: 1px solid var(--band-line); }
+html[data-tema="campana"] .cifras div:first-child { border-left: 0; padding-left: 0; }
+html[data-tema="campana"] .cifras b { font: 900 clamp(3rem, 6vw, 4.6rem) / 0.95 var(--serif); font-stretch: 62%; color: #fff; margin-bottom: 8px; font-variant-numeric: tabular-nums; }
+html[data-tema="campana"] .cifras div:nth-child(1) b { color: var(--p1-hi); }
+html[data-tema="campana"] .cifras div:nth-child(2) b { color: var(--p2-hi); }
+html[data-tema="campana"] .cifras div:nth-child(3) b { color: var(--p3-hi); }
+html[data-tema="campana"] .cifras span { color: var(--band-ink-2); font-size: 0.92rem; display: block; max-width: 210px; }
+
+/* ---------- Portada: principios y FAQ ---------- */
+html[data-tema="campana"] .seccion { border-top: 0; padding: 72px 0 24px; }
+html[data-tema="campana"] .principios { gap: 36px; }
+html[data-tema="campana"] .principios > div { border-top: 6px solid var(--ink); padding-top: 18px; }
+html[data-tema="campana"] .principios > div:nth-child(1) { border-top-color: var(--p1); }
+html[data-tema="campana"] .principios > div:nth-child(2) { border-top-color: var(--p2); }
+html[data-tema="campana"] .principios > div:nth-child(3) { border-top-color: var(--p3); }
+html[data-tema="campana"] .principios h3 {
+  font-family: var(--serif); font-stretch: 72%; font-weight: 900; text-transform: uppercase; font-size: 1.5rem; line-height: 1; margin-bottom: 10px;
+}
+html[data-tema="campana"] .principios p { font-size: 0.98rem; }
+html[data-tema="campana"] .faq h2 { font-size: clamp(2.4rem, 6vw, 4.2rem); margin-bottom: 18px; }
+html[data-tema="campana"] .faq details { border-bottom: 2px solid var(--ink); padding: 20px 0; }
+html[data-tema="campana"] .faq details:first-of-type { border-top: 2px solid var(--ink); }
+html[data-tema="campana"] .faq summary { font-size: 1.22rem; font-weight: 800; font-stretch: 85%; display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+html[data-tema="campana"] .faq summary::after {
+  float: none; flex: none; content: '+'; width: 34px; height: 34px; display: grid; place-items: center;
+  background: var(--ink); color: var(--paper); font-weight: 700; font-size: 1.3rem; line-height: 1;
+}
+html[data-tema="campana"] .faq details[open] summary::after { content: '–'; background: var(--p1); color: var(--on-c); }
+html[data-tema="campana"] .faq details p { font-size: 1.04rem; max-width: 760px; margin-top: 12px; }
+
+/* ---------- Cabecera de cada paso: banda de color ---------- */
+html[data-tema="campana"] .cab-paso {
+  --bandbg: var(--c-deep);
+  color: #fff; margin: -32px 0 36px; padding: 34px 0 44px;
+}
+html[data-tema="campana"] .cab-paso .kicker { color: #fff; opacity: 0.9; margin-bottom: 14px; }
+html[data-tema="campana"] .cab-paso h1 { color: #fff; font-size: clamp(2.8rem, 7.4vw, 5rem); margin-bottom: 18px; }
+html[data-tema="campana"] .cab-paso .lead { color: rgba(255, 255, 255, 0.92); margin: 0; }
+html[data-tema="campana"] .cab-paso .lead a { color: #fff; }
+html[data-tema="campana"] .cab-paso .pasos { margin-bottom: 30px; gap: 8px; }
+html[data-tema="campana"] .cab-paso .pasos a {
+  background: transparent; border: 1.5px solid rgba(255, 255, 255, 0.55); color: #fff; border-radius: 0; padding: 4px 12px 4px 4px;
+  font-weight: 700; font-stretch: 85%; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.8rem; text-decoration: none;
+}
+html[data-tema="campana"] .cab-paso .pasos a:hover { border-color: #fff; }
+html[data-tema="campana"] .cab-paso .pasos .pn { border-radius: 0; background: rgba(255, 255, 255, 0.18); color: #fff; }
+html[data-tema="campana"] .cab-paso .pasos li.on a { background: #fff; border-color: #fff; color: #111114; }
+html[data-tema="campana"] .cab-paso .pasos li.on .pn { background: var(--c-deep); color: #fff; }
+html[data-tema="campana"] .cab-paso :focus-visible { outline-color: #fff; }
+
+/* ---------- Componentes ---------- */
+html[data-tema="campana"] .card { border-radius: var(--r); border: 1px solid var(--line); }
+html[data-tema="campana"] .btn {
+  border: 2px solid var(--ink); background: transparent; color: var(--ink); border-radius: 0; padding: 11px 20px 10px;
+  font-weight: 800; font-stretch: 80%; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.95rem; line-height: 1.2;
+  transition: background 0.12s ease, color 0.12s ease;
+}
+html[data-tema="campana"] .btn:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+html[data-tema="campana"] .btn.primary { background: var(--c, var(--ink)); border-color: var(--c, var(--ink)); color: var(--on-c); }
+html[data-tema="campana"] .btn.primary:hover { filter: none; background: var(--ink); border-color: var(--ink); color: var(--paper); }
+html[data-tema="campana"] .btn.ghost { border-color: transparent; background: transparent; color: var(--ink-2); padding-left: 8px; padding-right: 8px; }
+html[data-tema="campana"] .btn.ghost:hover { color: var(--ink); background: transparent; text-decoration: underline; text-underline-offset: 4px; }
+html[data-tema="campana"] .btn:disabled,
+html[data-tema="campana"] .btn:disabled:hover { opacity: 0.35; background: transparent; color: var(--ink-2); }
+html[data-tema="campana"] .note { border-radius: 0; border-left: 5px solid var(--c, var(--ink)); background: var(--cs, var(--paper-2)); color: var(--ink-2); }
+html[data-tema="campana"] .pill { border-radius: 0; font-weight: 700; font-stretch: 85%; text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.7rem; padding: 3px 8px; background: var(--paper-2); color: var(--ink-2); }
+html[data-tema="campana"] label.field { font-stretch: 85%; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.76rem; color: var(--ink-2); }
+html[data-tema="campana"] select,
+html[data-tema="campana"] input[type='text'] { border: 2px solid var(--ink); border-radius: 0; font-weight: 600; text-transform: none; letter-spacing: 0; font-stretch: 100%; }
+html[data-tema="campana"] .bar { height: 10px; border-radius: 0; background: var(--paper-2); }
+html[data-tema="campana"] .bar > i { border-radius: 0; }
+html[data-tema="campana"] th { font-stretch: 85%; font-weight: 800; letter-spacing: 0.08em; color: var(--ink-2); border-bottom: 2px solid var(--ink); }
+html[data-tema="campana"] td { border-bottom-color: var(--line); }
+html[data-tema="campana"] .tr-me td { background: var(--cs); box-shadow: inset 0 2px 0 var(--c), inset 0 -2px 0 var(--c); }
+html[data-tema="campana"] .tr-me td:first-child { box-shadow: inset 5px 0 0 var(--c), inset 0 2px 0 var(--c), inset 0 -2px 0 var(--c); }
+
+/* Siguiente paso: llamada a la acción a todo color */
+html[data-tema="campana"] .siguiente {
+  background: var(--c-deep); border: 0; border-radius: 0; color: #fff; padding: 26px 28px; margin-top: 48px; gap: 6px 18px;
+  transition: transform 0.15s ease;
+}
+html[data-tema="campana"] .siguiente:hover { transform: translateY(-3px); }
+html[data-tema="campana"] .siguiente .muted {
+  color: #fff; opacity: 0.88; flex-basis: 100%; font-weight: 800; font-stretch: 85%; text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.76rem;
+}
+html[data-tema="campana"] .siguiente strong { font: 900 clamp(1.5rem, 3.4vw, 2.2rem) / 1 var(--serif); font-stretch: 68%; text-transform: uppercase; }
+html[data-tema="campana"] .siguiente > span:last-child { color: #fff; font-size: 2rem; font-weight: 900; line-height: 1; }
+html[data-tema="campana"] .siguiente:focus-visible { outline-color: var(--ink); }
+
+/* Pie: banda negra */
+html[data-tema="campana"] footer {
+  --p1: var(--p1-hi); --p2: var(--p2-hi); --p3: var(--p3-hi);
+  background: var(--band-2, var(--band)); color: var(--band-ink-2); border-top: 0; padding: 44px 0 52px; margin-top: 24px;
+}
+html[data-tema="campana"] footer .logotipo { color: #fff; }
+html[data-tema="campana"] footer a { color: #fff; }
+html[data-tema="campana"] footer :focus-visible { outline-color: #fff; }
+
+/* ---------- Paso 1 · Coincide ---------- */
+html[data-tema="campana"] .q-card { padding: 32px; }
+html[data-tema="campana"] .q-tema { font-stretch: 85%; font-weight: 800; letter-spacing: 0.14em; }
+html[data-tema="campana"] .q-text { font-family: var(--serif); font-stretch: 78%; font-weight: 800; font-size: clamp(1.55rem, 3.4vw, 2.1rem); line-height: 1.12; letter-spacing: -0.005em; }
+html[data-tema="campana"] .likert { gap: 6px; }
+html[data-tema="campana"] .likert button {
+  border: 2px solid var(--line); border-radius: 0; background: var(--card); padding: 14px 6px; font-weight: 700; font-stretch: 88%; font-size: 0.95rem; color: var(--ink);
+}
+html[data-tema="campana"] .likert button:hover { border-color: var(--c); }
+html[data-tema="campana"] .likert button.on { background: var(--c); border-color: var(--c); color: var(--on-c); font-weight: 800; }
+html[data-tema="campana"] .progress { height: 8px; border-radius: 0; background: var(--paper-2); }
+html[data-tema="campana"] .star { border-radius: 0; border: 1.5px solid var(--line); font-weight: 600; color: var(--ink-2); }
+html[data-tema="campana"] .star.on { background: var(--cs); color: var(--ink); border-color: var(--c); font-weight: 800; }
+html[data-tema="campana"] .rank-item { grid-template-columns: 46px 1fr auto; border-bottom: 1px solid var(--line); }
+html[data-tema="campana"] .rank-pos { font: 900 2rem / 1 var(--serif); font-stretch: 62%; color: var(--ink-3); }
+html[data-tema="campana"] .rank-item:first-child .rank-pos { color: var(--c); }
+html[data-tema="campana"] .rank-val { font: 900 2rem / 1 var(--serif); font-stretch: 62%; font-variant-numeric: tabular-nums; }
+html[data-tema="campana"] .quote { border-left: 4px solid var(--c, var(--line)); font-style: normal; color: var(--ink-2); }
+html[data-tema="campana"] .fuente-tag { color: var(--ink-2); letter-spacing: 0.1em; }
+
+/* ---------- Paso 3 · Cuenta ---------- */
+html[data-tema="campana"] .big { font-family: var(--serif); font-stretch: 62%; font-weight: 900; font-size: clamp(3.8rem, 10vw, 6rem); line-height: 0.85; letter-spacing: -0.01em; color: var(--c, var(--ink)); }
+html[data-tema="campana"] .verdict { border-radius: 0; font-weight: 800; font-stretch: 85%; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.82rem; padding: 6px 12px; box-shadow: inset 4px 0 0 currentColor; }
+html[data-tema="campana"] .kpis { gap: 0; border: 2px solid var(--ink); }
+html[data-tema="campana"] .kpi { background: var(--card); border-radius: 0; padding: 14px 16px; border-right: 1px solid var(--line); }
+html[data-tema="campana"] .kpi:last-child { border-right: 0; }
+html[data-tema="campana"] .kpi b { font: 900 1.9rem / 1.05 var(--serif); font-stretch: 66%; font-variant-numeric: tabular-nums; margin-bottom: 4px; }
+html[data-tema="campana"] .kpi span { color: var(--ink-2); font-size: 0.82rem; }
+html[data-tema="campana"] .reco { border: 3px solid var(--c); }
+html[data-tema="campana"] .orden button { border-radius: 0; border: 1.5px solid var(--line); }
+html[data-tema="campana"] .desplegable > summary { color: var(--ink); font-weight: 800; font-stretch: 88%; font-size: 1rem; }
+html[data-tema="campana"] .desplegable > summary::marker { color: var(--c, var(--ink)); }
+
+/* ---------- Paso 2 · Contrasta ---------- */
+html[data-tema="campana"] .chip { border-radius: 0; font-weight: 700; font-size: 0.75rem; padding: 3px 8px 3px 7px; box-shadow: inset 3px 0 0 currentColor; }
+html[data-tema="campana"] .chip-btn { border-radius: 0; border: 2px solid var(--ink); background: transparent; font-weight: 800; font-stretch: 85%; text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.82rem; }
+html[data-tema="campana"] .chip-btn.on { background: var(--c); border-color: var(--c); color: var(--on-c); }
+html[data-tema="campana"] .prop { border-top: 5px solid var(--c, var(--ink)); }
+html[data-tema="campana"] .prop-head { padding: 26px; }
+html[data-tema="campana"] .prop-head h3 { font-size: 1.55rem; }
+html[data-tema="campana"] .prop-body { background: var(--paper-2); }
+html[data-tema="campana"] .crit h4 { font-weight: 800; font-stretch: 88%; font-size: 1rem; }
+html[data-tema="campana"] .srcs a { font-weight: 600; }
+
+/* Rellenos de gráfico más vivos y con símbolo: se distinguen sin depender del color. */
+html[data-tema="campana"] .legend,
+html[data-tema="campana"] .mapa,
+html[data-tema="campana"] [role="img"][aria-label="Reparto de valoraciones"] {
+  --ok: var(--ok-fill); --mid: var(--mid-fill); --bad: var(--bad-fill); --na: var(--na-fill);
+}
+html[data-tema="campana"] .legend { font-weight: 600; color: var(--ink-2); }
+html[data-tema="campana"] .legend i { width: 16px; height: 16px; border-radius: 0; display: inline-grid; place-items: center; }
+html[data-tema="campana"] .mapa .sq { width: 24px; height: 24px; border-radius: 0; opacity: 1 !important; display: grid; place-items: center; }
+html[data-tema="campana"] .mapa .sq::after,
+html[data-tema="campana"] .legend i::after { font: 800 13px/1 var(--sans); color: #fff; }
+html[data-tema="campana"] .legend i::after { font-size: 11px; }
+html[data-tema="campana"] .mapa .sq[style*="--ok"]::after,
+html[data-tema="campana"] .legend i[style*="--ok"]::after { content: '✓'; }
+html[data-tema="campana"] .mapa .sq[style*="--mid"]::after,
+html[data-tema="campana"] .legend i[style*="--mid"]::after { content: '~'; color: #111114; }
+html[data-tema="campana"] .mapa .sq[style*="--bad"]::after,
+html[data-tema="campana"] .legend i[style*="--bad"]::after { content: '✕'; }
+html[data-tema="campana"] .mapa .sq[style*="--na"]::after,
+html[data-tema="campana"] .legend i[style*="--na"]::after { content: '?'; color: #111114; }
+html[data-tema="campana"] [role="img"][aria-label="Reparto de valoraciones"] { border-radius: 0 !important; height: 16px !important; }
+html[data-tema="campana"] .mapa th.v { font-weight: 700; font-stretch: 88%; color: var(--ink-2); border-bottom: 2px solid var(--ink); }
+html[data-tema="campana"] .mapa td { border-bottom-color: var(--line); }
+html[data-tema="campana"] .mapa td a { font-weight: 600; text-decoration: none; }
+html[data-tema="campana"] .mapa td a:hover { text-decoration: underline; }
+
+/* ---------- Metodología y marca ---------- */
+html[data-tema="campana"] .prose h2 { margin-top: 1.6em; font-size: clamp(1.7rem, 3.4vw, 2.3rem); }
+html[data-tema="campana"] .prose h3 { text-transform: none; }
+html[data-tema="campana"] .toc a { font-weight: 700; font-stretch: 85%; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.8rem; padding: 7px 0 7px 12px; border-left: 3px solid var(--line); }
+html[data-tema="campana"] .toc a:hover { border-left-color: var(--ink); }
+html[data-tema="campana"] .muestra,
+html[data-tema="campana"] .lienzo { border-radius: 0; }
+
+/* ---------- Móvil ---------- */
+@media (max-width: 900px) {
+  html[data-tema="campana"] .trayecto { margin-top: -48px; }
+  html[data-tema="campana"] a.etapa { min-height: 0; padding: 26px 22px 22px; }
+  html[data-tema="campana"] a.etapa .num b { font-size: 4.6rem; }
+}
+@media (max-width: 760px) {
+  html[data-tema="campana"] .top .wrap { height: 58px; }
+  html[data-tema="campana"] .nav a { padding: 8px 7px; font-size: 0.8rem; letter-spacing: 0.03em; }
+  html[data-tema="campana"] .hero { padding: 44px 0 92px; }
+  html[data-tema="campana"] .hero::before { content: none; }
+  html[data-tema="campana"] .hero .kicker { font-size: 0.7rem; letter-spacing: 0.08em; padding: 6px 9px 5px; }
+  html[data-tema="campana"] .hero .lead { font-size: 1.08rem; }
+  html[data-tema="campana"] .hero .btn { flex: 1 1 100%; justify-content: center; padding: 15px 18px 14px; }
+  html[data-tema="campana"] .cifras { padding: 30px 0; row-gap: 26px; }
+  html[data-tema="campana"] .cifras div,
+  html[data-tema="campana"] .cifras div:first-child { padding: 0 0 0 14px; border-left: 3px solid var(--band-line); }
+  html[data-tema="campana"] .cifras div:nth-child(1) { border-left-color: var(--p1-hi); }
+  html[data-tema="campana"] .cifras div:nth-child(2) { border-left-color: var(--p2-hi); }
+  html[data-tema="campana"] .cifras div:nth-child(3) { border-left-color: var(--p3-hi); }
+  html[data-tema="campana"] .cifras div:nth-child(4) { border-left-color: #fff; }
+  html[data-tema="campana"] .seccion { padding-top: 52px; }
+  html[data-tema="campana"] .cab-paso { padding: 26px 0 34px; }
+  html[data-tema="campana"] .q-card { padding: 22px 18px; }
+  html[data-tema="campana"] .kpi { border-right: 0; border-bottom: 1px solid var(--line); }
+  html[data-tema="campana"] .siguiente { padding: 22px 20px; }
+  html[data-tema="campana"] .card:not(.prop) { padding: 18px; }
+  html[data-tema="campana"] .prop-head { padding: 20px 18px; }
+  html[data-tema="campana"] td.num { white-space: nowrap; }
+  html[data-tema="campana"] th { letter-spacing: 0.04em; }
+}

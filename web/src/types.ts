@@ -96,7 +96,7 @@ export interface Escenario {
 }
 
 export interface DatosFase2 {
-  meta: { actualizado: string; boe: Fuente[]; resultados: Fuente[]; nota?: string };
+  meta: { actualizado: string; boe: Fuente[]; resultados: Fuente[]; nota?: string; veda_encuestas?: { activa: boolean; inicio: string; fin: string } };
   circunscripciones: Circunscripcion[];
   escenarios: Escenario[];
   /** Votos por diputado a nivel nacional en 2023 por partido (id fase 1). */

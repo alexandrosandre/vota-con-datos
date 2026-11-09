@@ -63,6 +63,27 @@ NOMBRES = {
     "gad3-2026-10": "Encuesta GAD3 · ABC (12-oct)",
     "40db-2026-10": "Encuesta 40dB · El País-SER (9-oct)",
 }
+# Veda de encuestas (LOREG art. 69.7): prohibido publicar, difundir o reproducir sondeos durante los
+# cinco días anteriores a la votación. Se retiran desde el 24-nov 00:00 hasta el cierre de los
+# colegios el 29-nov a las 20:00 (hora peninsular). La web aplica la misma regla en el navegador.
+from datetime import datetime  # noqa: E402
+from zoneinfo import ZoneInfo  # noqa: E402
+
+VEDA_INICIO = datetime(2026, 11, 24, 0, 0, tzinfo=ZoneInfo("Europe/Madrid"))
+VEDA_FIN = datetime(2026, 11, 29, 20, 0, tzinfo=ZoneInfo("Europe/Madrid"))
+
+
+def en_veda(ahora=None):
+    import os
+    if os.environ.get("VCD_AHORA"):  # para pruebas: VCD_AHORA=2026-11-25T12:00:00+01:00
+        ahora = datetime.fromisoformat(os.environ["VCD_AHORA"])
+    ahora = ahora or datetime.now(ZoneInfo("Europe/Madrid"))
+    # Margen de 2 h antes del inicio: el despliegue programado sale el 23-nov a las 22:05 y así el
+    # fichero publicado ya no contiene encuestas cuando empieza la veda.
+    from datetime import timedelta
+    return VEDA_INICIO - timedelta(hours=2) <= ahora < VEDA_FIN
+
+
 K_BASE = 0.05  # 2023 queda a tres años: algo más de incertidumbre que una encuesta reciente
 K_ENCUESTA = 0.04
 
@@ -221,7 +242,8 @@ def main():
         "sin_base": sin_base(),
     }]
 
-    for eid in ESCENARIOS_ENCUESTA:
+    veda = en_veda()
+    for eid in ([] if veda else ESCENARIOS_ENCUESTA):
         e = enc[eid]
         poll = {}
         for p in e["estimacion_voto"]:
@@ -308,6 +330,7 @@ def main():
             "boe": [{"url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23103", "titulo": "Candidaturas proclamadas (BOE-A-2026-23103)"},
                     {"url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23383", "titulo": "Corrección de errores (BOE-A-2026-23383)"},
                     {"url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742", "titulo": "RD 806/2026 (escaños)"}],
+            "veda_encuestas": {"activa": veda, "inicio": VEDA_INICIO.isoformat(), "fin": VEDA_FIN.isoformat()},
             "resultados": [{"url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-18907", "titulo": "Resultados 2023 (JEC)"},
                            {"url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-13092", "titulo": "Resultados europeas 2024 (JEC)"}],
         },
