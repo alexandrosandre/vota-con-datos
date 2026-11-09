@@ -14,10 +14,13 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
 - [ ] **1. [Tú] Sacar el proyecto de la carpeta temporal de la sesión** a una carpeta permanente del
   Mac. Lo muevo yo, pero tienes que aprobar la carpeta. Si se borra la sesión se pierde el checkout
   local que usa la actualización automática (GitHub conserva el código y los datos).
-- [ ] **2. [Yo → Tú] Hacer duradera la actualización automática.** Hoy es una tarea de esta sesión
-  (hacia las 9:15 y las 20:15): muere si se cierra la app o la sesión y caduca a los 7 días (se
-  renueva sola si sigue viva). Compruebo yo la primera ejecución (9-nov); pasarla a una rutina
-  persistente en tu Mac necesita que confirmes el entorno.
+- [ ] **2. [Tú] Hacer duradera la actualización automática.** Hoy es una tarea de esta sesión (hacia
+  las 9:15 y las 20:15): muere si se cierra la app o la sesión y caduca a los 7 días (se renueva sola
+  si sigue viva). Comprobado el 9-nov: tus rutinas solo tienen entornos para el repositorio de
+  Trackingplan; para una rutina persistente de «vota con datos» hace falta que crees un entorno
+  (bridge en tu Mac) para este repositorio, mejor tras el punto 1. Con el entorno creado, la rutina la
+  configuro yo. Lo mecánico (veda de encuestas, validaciones) ya corre en GitHub Actions sin depender
+  de nadie.
 - [ ] **3. [Yo → Tú] 3–5 diseños alternativos, refinados y pulidos, para que elijas uno.** Mismo
   contenido y misma marca de base (nombre, lema, tres pasos), con direcciones visuales distintas:
   - un color principal fuerte y saturado, como las webs de los partidos, pero que no se identifique
@@ -107,7 +110,7 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
 | # | Qué | Cuándo |
 |---|---|---|
 | 1 | Aprobar la carpeta permanente del proyecto | Cuanto antes |
-| 2 | Confirmar el entorno de la rutina persistente | Cuanto antes |
+| 2 | Crear el entorno de rutinas (bridge) para este repositorio | Tras el punto 1 |
 | 3 | Elegir uno de los 3–5 diseños | Cuando te los presente |
 | 7 | Revisar una muestra de contenidos | Antes de anunciar la web |
 | 18 | Comprar dominio (opcional) | Cuando quieras |
