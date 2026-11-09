@@ -39,7 +39,7 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   apartado: **«Elige · Contrasta · Suma»** (9-nov).
 - [ ] **4. [Externo → Yo] Programas de los partidos estatales.** Cuando salgan: lectura completa,
   evaluación, revisión independiente, auditoría de coherencia y recodificación del paso 1.
-  - [ ] PNV — presentación anunciada 9-nov 16:00
+  - [x] PNV — publicado el 9-nov (43 págs.): analizado, revisado (39 correcciones) y publicado; 0/30 en el paso 1
   - [ ] PP — 10-nov según prensa (Europa Press, 7-nov)
   - [ ] PSOE / PSC, Vox, Frente Amplio, Podemos, SALF — sin fecha conocida
   - [ ] Junts, EH Bildu, Compromís, UPC, Ara Més-FA, UPN-PP, Adelante Andalucía — sin fecha conocida
