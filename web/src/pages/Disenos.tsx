@@ -23,9 +23,9 @@ export function Disenos() {
                 <img src={img(t.id, 'escritorio')} alt={`Portada en escritorio, diseño ${t.nombre}`} loading="lazy" onError={oculta}
                   style={{ width: '100%', display: 'block', aspectRatio: '1280 / 860', objectFit: 'cover', objectPosition: 'top' }} />
               </a>
-              <a href={`${base}?tema=${t.id}#/`} aria-hidden="true" tabIndex={-1}>
+              <a href={`${base}?tema=${t.id}#/`} aria-hidden="true" tabIndex={-1} style={{ position: 'relative', display: 'block' }}>
                 <img src={img(t.id, 'movil')} alt="" loading="lazy" onError={oculta}
-                  style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover', objectPosition: 'top', borderLeft: '1px solid var(--line)' }} />
+                  style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top', borderLeft: '1px solid var(--line)' }} />
               </a>
             </div>
             <div style={{ padding: 22 }}>

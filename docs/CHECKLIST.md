@@ -33,6 +33,8 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
 
   Cada uno navegable con las tres fases reales, en claro y oscuro, móvil y escritorio, y con contraste
   AA. Eliges tú; aplico el elegido antes de difundir.
+  Listos (9-nov): galería en https://alexandrosandre.github.io/vota-con-datos/#/disenos — Cívico (actual),
+  Color fuerte, Campaña, Datos y Editorial, con valoración en docs/research/disenos.md. **Falta tu elección.**
 - [ ] **4. [Externo → Yo] Programas de los partidos estatales.** Cuando salgan: lectura completa,
   evaluación, revisión independiente, auditoría de coherencia y recodificación del paso 1.
   - [ ] PNV — presentación anunciada 9-nov 16:00
