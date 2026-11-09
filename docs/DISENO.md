@@ -30,7 +30,10 @@ docs/            diseño, metodología, investigación
 
 Publicación: GitHub Pages (gratuito) desde el repositorio público; despliegue con GitHub Actions.
 
-## Los tres pasos: Coincide → Contrasta → Cuenta
+## Los tres pasos: Elige → Contrasta → Suma
+
+(Lema elegido el 9-nov-2026 entre «Coincide · Contrasta · Cuenta» y «Elige · Contrasta · Descarta»;
+«Suma» sustituye a «Descarta» para no sugerir que se dejen de lado los partidos pequeños.)
 
 Portada con **tres columnas**; se pueden recorrer en orden o empezar por cualquiera. Cada paso
 aprovecha lo anterior: el ranking de afinidad lleva a contrastar a los partidos más afines, y ese
@@ -43,7 +46,7 @@ contrastado, y el análisis solo se hacía del partido "útil", no de los afines
 sugerencia de alternativa se basa en una preferencia ya contrastada y la decisión estratégica
 queda donde se toma: al final.
 
-### 1 · Coincide ("¿Con quién coincides?")
+### 1 · Elige ("¿Con quién coincides?")
 * 30 afirmaciones construidas a partir de **propuestas reales de esta campaña**: programas oficiales
   del 29-N y compromisos públicos de los cabezas de lista (con cita y fuente).
 * 5 niveles + "Saltar"; peso de importancia ×0,5/×1/×2.
@@ -56,7 +59,7 @@ queda donde se toma: al final.
   fuentes enlazadas, comprobación automática de citas y revisión independiente.
 * Atajos a los partidos más afines del paso 1. Compromisos de campaña visibles (no evaluados).
 
-### 3 · Cuenta ("¿Tu voto tendrá escaño?")
+### 3 · Suma ("¿Tu voto tendrá escaño?")
 * Candidaturas proclamadas en el BOE en tu circunscripción; escenarios 2023 (por defecto) y
   encuestas (CIS, Sigma Dos, GAD3, 40dB); D'Hondt + umbral + Monte Carlo.
 * Probabilidad de escaño, coste en votos por escaño, votos que faltan; alternativa según tu orden.

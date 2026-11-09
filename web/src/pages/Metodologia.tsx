@@ -13,9 +13,9 @@ export function Metodologia() {
     ['intencion', 'Intención'],
     ['orden', 'Por qué este orden'],
     ['fuentes', 'Fuentes'],
-    ['coincide', '1 · Coincide'],
+    ['coincide', '1 · Elige'],
     ['contrasta', '2 · Contrasta'],
-    ['cuenta', '3 · Cuenta'],
+    ['cuenta', '3 · Suma'],
     ['ia', 'Uso de IA'],
     ['limites', 'Límites'],
     ['codigo', 'Código y datos'],
@@ -44,7 +44,7 @@ export function Metodologia() {
             ningún partido, no hay publicidad ni recogida de datos.
           </p>
 
-          <h2 id="orden">Por qué este orden: Coincide → Contrasta → Cuenta</h2>
+          <h2 id="orden">Por qué este orden: Elige → Contrasta → Suma</h2>
           <p>
             Es el orden en que se toma una decisión informada: primero <em>qué quiero</em> (afinidad sincera, sin siglas), después{' '}
             <em>si se sostiene</em> (el fundamento de lo que proponen los partidos con los que coincides) y por último <em>si mi voto llega</em>{' '}
@@ -69,7 +69,7 @@ export function Metodologia() {
           <h3>Estado de los programas</h3>
           <EstadoProgramas />
 
-          <h2 id="coincide">Paso 1 · Coincide</h2>
+          <h2 id="coincide">Paso 1 · Elige: ¿con quién coincides?</h2>
           <p>
             Seguimos el estado del arte de los cuestionarios de orientación de voto (Wahl-O-Mat, StemWijzer, smartvote, euandi) y su literatura
             académica (<a href={gh('docs/research/vaa_estado_del_arte.md')}>resumen con referencias</a>):
@@ -82,7 +82,7 @@ export function Metodologia() {
             <li>Están todos los partidos con representación actual o esperada, se presenten o no en tu provincia (eso se filtra en el paso 3).</li>
           </ul>
 
-          <h2 id="contrasta">Paso 2 · Contrasta</h2>
+          <h2 id="contrasta">Paso 2 · Contrasta: ¿qué hay detrás?</h2>
           <p>
             Para cada partido con programa publicado, un modelo de IA lee el documento completo (deja constancia de cada página leída), extrae sus
             medidas concretas con cita literal y selecciona las 12 que el propio programa presenta como centrales. Después las evalúa con fuentes
@@ -108,7 +108,7 @@ export function Metodologia() {
             coincide con el programa catalogado.
           </p>
 
-          <h2 id="cuenta">Paso 3 · Cuenta</h2>
+          <h2 id="cuenta">Paso 3 · Suma: ¿tu voto tendrá escaño?</h2>
           <ol>
             <li><strong>Reparto legal</strong> (art. 163 LOREG): fuera las candidaturas por debajo del 3 % de los votos válidos de la provincia (los blancos cuentan como válidos); el resto, por D'Hondt; los empates se deciden por más votos.</li>
             <li>

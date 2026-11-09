@@ -12,7 +12,7 @@ Deja que mande el contenido.
 ## Nombre y lema
 * **vota con datos**, en minúsculas en el texto corrido. En el logotipo se compone en mayúsculas
   condensadas («VOTA CON DATOS») con *con* más suave, para que se lea «vota · datos».
-* Lema: **Coincide. Contrasta. Cuenta.** Un verbo por paso, en imperativo: lo que hace la persona.
+* Lema: **Elige. Contrasta. Suma.** Un verbo por paso, en imperativo: lo que hace la persona («Suma»: tu voto suma para un escaño).
 * Promesa: *Vota sabiendo a qué votas.*
 
 ## Símbolo
@@ -40,9 +40,9 @@ nombres de los pasos, hay que actualizar `og.svg` y volver a renderizar `og.png`
 | Superficie | `#151518` | Tarjetas |
 | Banda | `#19191D` | Banda de cifras, pie |
 | Tinta / Tinta 2 / Tinta 3 | `#F4F2EB` / `#CAC8C1` / `#A09E97` | Texto principal, secundario, terciario |
-| 1 · Coincide (óxido) | banda `#A93F1C` · vivo `#FF9670` | |
+| 1 · Elige (óxido) | banda `#A93F1C` · vivo `#FF9670` | |
 | 2 · Contrasta (índigo) | banda `#3F3C9A` · vivo `#B1AEFF` | |
-| 3 · Cuenta (verde datos) | banda `#0E6654` · vivo `#5CCFB4` | |
+| 3 · Suma (verde datos) | banda `#0E6654` · vivo `#5CCFB4` | |
 | Sólida / Matizable / Débil / No verificable | `#2FAE66` ✓ / `#F0B43C` ~ / `#FF6B5E` ✕ / `#8A8983` ? | Rellenos de gráfico, con símbolo oscuro |
 
 Reglas de uso en oscuro:

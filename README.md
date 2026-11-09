@@ -6,13 +6,13 @@ noviembre de 2026** en España. Objetivo: que cada persona vote **sabiendo a qu�
 
 **Web:** https://alexandrosandre.github.io/vota-con-datos/
 
-**Coincide. Contrasta. Cuenta.**
+**Elige. Contrasta. Suma.**
 
 | Paso | Qué hace | Estado |
 |---|---|---|
-| 1 · Coincide | Cuestionario de 30 afirmaciones nacidas de propuestas reales del 29-N (programas oficiales y compromisos de campaña); afinidad con cada partido con la cita de cada posición | Se recodifica cada vez que se publica un programa |
+| 1 · Elige | Cuestionario de 30 afirmaciones nacidas de propuestas reales del 29-N (programas oficiales y compromisos de campaña); afinidad con cada partido con la cita de cada posición | Se recodifica cada vez que se publica un programa |
 | 2 · Contrasta | Las 12 propuestas principales de cada programa oficial evaluadas en 8 criterios verificables, con fuentes y revisión independiente | Se completa partido a partido según publican programa |
-| 3 · Cuenta | Probabilidad de que tu candidatura obtenga escaño en tu provincia (umbral 3 % + D'Hondt + Monte Carlo), coste en votos por escaño y alternativa con opciones reales | Operativo: listas proclamadas del BOE, resultados de 2023 y 4 encuestas |
+| 3 · Suma | Probabilidad de que tu candidatura obtenga escaño en tu provincia (umbral 3 % + D'Hondt + Monte Carlo), coste en votos por escaño y alternativa con opciones reales | Operativo: listas proclamadas del BOE, resultados de 2023 y 4 encuestas |
 
 ## Principios
 

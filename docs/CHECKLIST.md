@@ -35,7 +35,8 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   AA. Eliges tú; aplico el elegido antes de difundir.
   Listos (9-nov): galería en https://alexandrosandre.github.io/vota-con-datos/#/disenos — Cívico (actual),
   Color fuerte, Campaña, Datos y Editorial, con valoración en docs/research/disenos.md. **Elegido (9-nov): **Campaña,
-  solo en modo oscuro**, ya aplicado como diseño de la web. En curso: último pulido y marca adaptada.
+  solo en modo oscuro**, aplicado con su último pulido y la marca adaptada. Lema elegido apartado por
+  apartado: **«Elige · Contrasta · Suma»** (9-nov).
 - [ ] **4. [Externo → Yo] Programas de los partidos estatales.** Cuando salgan: lectura completa,
   evaluación, revisión independiente, auditoría de coherencia y recodificación del paso 1.
   - [ ] PNV — presentación anunciada 9-nov 16:00

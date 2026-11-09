@@ -19,13 +19,14 @@ type TextoPaso = { verbo: string; pregunta: string; resumen: string; cta: string
  * (Las rutas internas /coincide, /contrasta, /cuenta no cambian.)
  */
 export const LEMAS: Record<string, { lema: [string, string, string]; eslogan: string; lead: string; pasos: Record<string, TextoPaso> }> = {
+  // Elegido el 9-nov-2026, apartado por apartado (ver docs/propuestas-lema/).
   actual: {
-    lema: ['Coincide.', 'Contrasta.', 'Cuenta.'],
+    lema: ['Elige.', 'Contrasta.', 'Suma.'],
     eslogan: 'Vota sabiendo a qué votas.',
     lead: 'Tres pasos para pasar de la intuición a un voto informado: con quién coincides de verdad, qué hay detrás de lo que promete, y si tu voto llegará a escaño en tu provincia. Con fuentes oficiales, algoritmos abiertos y sin guardar ningún dato tuyo.',
     pasos: {
       coincide: {
-        verbo: 'Coincide',
+        verbo: 'Elige',
         pregunta: '¿Con quién coincides?',
         resumen:
           'Valora propuestas reales del 29-N, de sus programas y de lo que han dicho sus líderes, sin saber de quién son. Descubre con qué partidos coincides y en qué, con la cita exacta.',
@@ -35,43 +36,15 @@ export const LEMAS: Record<string, { lema: [string, string, string]; eslogan: st
         verbo: 'Contrasta',
         pregunta: '¿Qué hay detrás?',
         resumen:
-          'Las 12 propuestas centrales de cada programa, contrastadas con criterios verificables: encaje legal, coste, evidencia, experiencia en otros países, a quién benefician.',
-        cta: 'Ver el análisis',
-      },
-      cuenta: {
-        verbo: 'Cuenta',
-        pregunta: '¿Tu voto tendrá escaño?',
-        resumen:
-          'Con la ley electoral y las listas oficiales del BOE, calcula la probabilidad de que tu opción obtenga escaño en tu provincia y, si no llega, cuál es tu siguiente opción real.',
-        cta: 'Calcular',
-      },
-    },
-  },
-  ecd: {
-    lema: ['Elige.', 'Contrasta.', 'Descarta.'],
-    eslogan: 'Vota sabiendo a qué votas.',
-    lead: 'Tres pasos para llegar a un voto que sea tuyo y que cuente: elige entre propuestas reales sin saber de quién son, contrasta qué hay detrás de las de tus partidos más afines y descarta lo que no llega a escaño en tu provincia. Con fuentes oficiales, algoritmos abiertos y sin guardar ningún dato tuyo.',
-    pasos: {
-      coincide: {
-        verbo: 'Elige',
-        pregunta: '¿Con quién coincides?',
-        resumen:
-          'Elige entre 30 propuestas reales del 29-N, de los programas y de lo que han dicho sus líderes, sin saber de quién son. Al final ves con qué partidos coincides y en qué, con la cita exacta.',
-        cta: 'Empezar a elegir',
-      },
-      contrasta: {
-        verbo: 'Contrasta',
-        pregunta: '¿Qué hay detrás?',
-        resumen:
           'Pon a prueba las 12 propuestas centrales de cada programa: encaje legal, coste, evidencia, experiencia en otros países y a quién benefician, con las fuentes a la vista.',
         cta: 'Contrastar programas',
       },
       cuenta: {
-        verbo: 'Descarta',
+        verbo: 'Suma',
         pregunta: '¿Tu voto tendrá escaño?',
         resumen:
-          'Descarta lo que no llega: con la ley electoral y las listas del BOE, comprueba si tu opción obtiene escaño en tu provincia y, si no, cuál es tu siguiente opción real. Votar a quien prefieres siempre es legítimo.',
-        cta: 'Comprobar mi provincia',
+          'Con la ley electoral y las listas oficiales del BOE, calcula la probabilidad de que tu opción obtenga escaño en tu provincia y, si no llega, cuál es tu siguiente opción.',
+        cta: 'Calcular',
       },
     },
   },

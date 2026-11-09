@@ -11,7 +11,11 @@ import { Marca } from './pages/Marca';
 import { Disenos } from './pages/Disenos';
 
 /** Rutas antiguas (primera versión publicada) → nuevas. */
-const REDIRECCIONES: Record<string, string> = { '/afinidad': '/coincide', '/tu-voto': '/cuenta', '/rigor': '/contrasta' };
+const REDIRECCIONES: Record<string, string> = {
+  '/afinidad': '/coincide', '/tu-voto': '/cuenta', '/rigor': '/contrasta',
+  // Nombres de los pasos (lema «Elige · Contrasta · Suma»)
+  '/elige': '/coincide', '/suma': '/cuenta',
+};
 
 function Cabecera() {
   const r = ruta.value;

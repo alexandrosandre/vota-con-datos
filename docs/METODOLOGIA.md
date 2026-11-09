@@ -2,7 +2,7 @@
 
 La versión para el público está en la web (página *Metodología*). Aquí, el detalle técnico.
 
-## Paso 3 · Cuenta (escaños)
+## Paso 3 · Suma (escaños)
 
 **Reparto** (LOREG art. 163): umbral del 3 % sobre votos válidos (candidaturas + blancos) de la
 circunscripción; D'Hondt; empate de cocientes → más votos totales. Implementado dos veces, de forma
@@ -46,7 +46,7 @@ la base). Semilla fija por circunscripción y escenario: resultados reproducible
 paso 1 u orden manual; las coaliciones cuentan para sus partidos integrantes) con P ≥ 50 % en esa
 circunscripción.
 
-## Paso 1 · Coincide (afinidad)
+## Paso 1 · Elige (afinidad)
 
 Ver `docs/research/vaa_estado_del_arte.md`. 30 afirmaciones aprox. a partir de propuestas reales
 (programas 29-N y compromisos del candidato verificados en `data/promesas/`); 5 niveles + saltar;

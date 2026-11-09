@@ -1,4 +1,4 @@
-# Prompt 2 — Codificación de posiciones (paso 1 · Coincide)
+# Prompt 2 — Codificación de posiciones (paso 1 · Elige)
 
 Protocolo: un **codificador** asigna cada posición con su fuente; un **verificador independiente**
 abre cada fuente, decide sin mirar el valor del codificador y corrige o descarta lo que no se

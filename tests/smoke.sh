@@ -25,7 +25,8 @@ comprueba() { # ruta texto...
     if grep -qF "$t" <<<"$html"; then echo "ok   $ruta · $t"; else echo "FALLO $ruta · $t"; FALLOS=$((FALLOS + 1)); fi
   done
 }
-comprueba "#/" "Coincide." "candidaturas proclamadas en el BOE"
+comprueba "#/" "Elige." "Suma." "candidaturas proclamadas en el BOE"
+comprueba "#/suma" "votar a quien prefieres siempre es legítimo"   # alias del paso 3
 comprueba "#/coincide" "afirmaciones"
 comprueba "#/contrasta/erc" "el programa de un vistazo" "Programa oficial"
 comprueba "?circ=28&partido=pp#/cuenta" "probabilidad de ≥ 1 escaño" "Todas las candidaturas en Madrid"

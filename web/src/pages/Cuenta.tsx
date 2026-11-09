@@ -187,7 +187,8 @@ export function Cuenta() {
       <div class="narrow" style={{ padding: 0, marginLeft: 0 }}>
         <CabeceraPaso id="cuenta">
           En el Congreso cada provincia elige sus propios escaños. Un voto solo se convierte en diputado si su candidatura supera el 3 % en esa
-          provincia y le alcanza en el reparto D'Hondt. Aquí lo calculas con las listas oficiales del BOE.
+          provincia y le alcanza en el reparto D'Hondt. Aquí lo calculas con las listas oficiales del BOE. Es información, no una
+          recomendación: votar a quien prefieres siempre es legítimo.
         </CabeceraPaso>
       </div>
 
