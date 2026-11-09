@@ -84,9 +84,10 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   documentada. Hecho en parte (9-nov): la web ofrece con un clic los escenarios que sí la estiman (p. ej.
   SALF → CIS, GAD3, 40dB); se descarta usar las europeas como «resultado de 2023» porque mezclaría
   elecciones con participación muy distinta. Las que ningún escenario estima lo dicen explícitamente.
-- [ ] **16. [Yo] Tests del pipeline** (mapeo candidaturas → partidos, escenarios por encuesta) y
-  pruebas de extremo a extremo de la web. Hecho en parte (9-nov): 10 tests de invariantes en CI
-  (D'Hondt, reproducción de 2023, cuotas, reparto de Sumar, veda, citas); faltan los de extremo a extremo.
+- [x] **16. [Yo] Tests del pipeline** (mapeo candidaturas → partidos, escenarios por encuesta) y
+  pruebas de extremo a extremo de la web. Hecho (9-nov): 10 tests de invariantes en CI
+  (D'Hondt, reproducción de 2023, cuotas, reparto de Sumar, veda, citas) y prueba de humo de extremo a
+  extremo con Chrome sin interfaz en cada despliegue.
 - [ ] **17. [Yo] Auditoría de accesibilidad** (lector de pantalla, teclado, contraste en modo oscuro).
 - [ ] **18. [Tú] Dominio propio** (p. ej. votacondatos.es): requiere que lo compres; hoy funciona en el
   dominio gratuito de GitHub Pages. Si lo compras, la configuración la hago yo.
