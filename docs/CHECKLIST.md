@@ -52,8 +52,10 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
     (de las listas proclamadas del BOE), partido de afiliación dentro de la coalición y enlace a su
     página de Wikipedia o a una página oficial del partido. Si la afiliación no consta en una fuente
     fiable, se dice («afiliación no publicada»), sin suponerla.
-  - Requiere extraer del BOE las listas completas (hoy solo guardamos el cabeza de lista y el número
-    de titulares) y documentar la fuente de cada afiliación y enlace.
+  - Hecho en parte (9-nov): listas completas del BOE extraídas y validadas (3.820 titulares),
+    composición oficial de las coaliciones (pactos JEC/JEP) y nombres de quien ocuparía cada escaño,
+    ya publicados. En curso: afiliación y enlaces de las 747 personas en puestos relevantes. Sin
+    documento oficial: vínculo PSdeG/PSIB/PSN/PSC/PSE con el PSOE, Teruel Existe, PANCAL-URCI, NEX.
 - [ ] **7. [Tú] Revisar tú una muestra antes de anunciar** (con el diseño ya elegido): 2–3 propuestas
   por partido analizado en el paso 2 (cita, valoración y fuentes) y una pasada completa por el
   cuestionario del paso 1 buscando redacciones que no sean neutrales. La web sale bajo tu nombre.
