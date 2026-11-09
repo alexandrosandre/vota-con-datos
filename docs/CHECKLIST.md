@@ -106,8 +106,17 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   (D'Hondt, reproducción de 2023, cuotas, reparto de Sumar, veda, citas) y prueba de humo de extremo a
   extremo con Chrome sin interfaz en cada despliegue.
 - [ ] **17. [Yo] Auditoría de accesibilidad** (lector de pantalla, teclado, contraste en modo oscuro).
-- [ ] **18. [Tú] Dominio propio** (p. ej. votacondatos.es): requiere que lo compres; hoy funciona en el
-  dominio gratuito de GitHub Pages. Si lo compras, la configuración la hago yo.
+- [ ] **18. [Tú] Dominio propio: votacondatos.org** (elegido el 9-nov; sin renovación). Precio en
+  Porkbun el 9-nov: 7,98 USD el primer año (sin IVA). Pasos tuyos:
+  1. Comprarlo en el registrador que prefieras, con la **renovación automática desactivada** y la
+     privacidad del WHOIS activada.
+  2. En el DNS del dominio: registros **A** de `votacondatos.org` → 185.199.108.153, 185.199.109.153,
+     185.199.110.153 y 185.199.111.153; **AAAA** → 2606:50c0:8000::153, 2606:50c0:8001::153,
+     2606:50c0:8002::153 y 2606:50c0:8003::153; **CNAME** de `www` → `alexandrosandre.github.io`.
+  3. (Recomendado) Verificar el dominio en GitHub → Settings → Pages → «Add a domain», con el registro
+     TXT que te indique, para que nadie más pueda usarlo en GitHub Pages.
+  Después lo activo yo con `pipeline/activar_dominio.sh` (solo actúa cuando el DNS ya apunta a GitHub,
+  para no dejar la web caída), y activo HTTPS.
 - [ ] **19. [Tú] Revisión de posiciones por los propios partidos** (práctica recomendada en la
   literatura de estos cuestionarios): solo si decides contactar con ellos.
 - [ ] **20. [Yo] Avisos menores**: el runner `ubuntu-latest` de GitHub Actions migra a Ubuntu 26
@@ -115,7 +124,9 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
 
 ## C. Después del 29-N
 
-- [ ] **21. [Yo] Congelar la web** con un aviso de «elección celebrada» y borrar la tarea programada.
+- [ ] **21. [Yo] Antes de que caduque votacondatos.org (nov-2027): quitar el dominio de GitHub Pages**
+  para que la web vuelva a github.io y no apunte a un dominio caducado.
+- [ ] **21b. [Yo] Congelar la web** con un aviso de «elección celebrada» y borrar la tarea programada.
 - [ ] **22. [Yo] Opcional: comparar las probabilidades del paso 3 con el resultado real** y publicar el
   balance (calibración honesta del modelo).
 
@@ -126,5 +137,5 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
 | 1 | Aprobar la carpeta permanente del proyecto | Cuanto antes |
 | 2 | Crear el entorno de rutinas (bridge) para este repositorio | Tras el punto 1 |
 | 7 | Revisar una muestra de contenidos | Antes de anunciar la web |
-| 18 | Comprar dominio (opcional) | Cuando quieras |
+| 18 | Comprar votacondatos.org y poner sus registros DNS | Cuando puedas |
 | 19 | Decidir si contactar con los partidos (opcional) | Cuando quieras |
