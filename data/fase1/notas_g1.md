@@ -81,3 +81,23 @@ Cobertura antes→después: PP 8→9, UPN 0→0, PSOE 2→2, PSC 0→0, Vox 7→
 - PSC, UPN y SALF: no se halló nada nuevo. El PSC no tiene declaraciones de Hereu o Illa sobre
   medidas concretas, y no consta que UPN asuma el «contrato» de Feijóo.
 - Recodificar el PP con el programa del 10-nov, sobre todo q17 y q18.
+
+## Recodificación por la nueva redacción (2026-11-09)
+
+Se recodificaron q01, q02, q03, q04, q06, q09, q15, q17, q25 y q29 con el texto nuevo de
+`preguntas.json` (ver `revision_redaccion_2026-11-09.md`). Se reabrieron todas las fuentes de las
+celdas con valor. Sigue sin haber programa del 29N de ningún partido del grupo.
+
+- **Cambios** (todos en q03, que ahora recoge la medida del PP: 60 % del IVA y del ITP para menores
+  de 40):
+  - PP q03 +1 → +2: es su propia propuesta, presentada como «la mayor ayuda de la historia».
+  - Vox q03 +2 → +1 y SALF q03 +2 → +1: piden eliminar el 100 % de los impuestos de la primera
+    vivienda, sin límite de edad (SALF, solo para españoles). Es una medida más amplia, no la misma.
+- **Se mantienen**: PP q01 (-1), q15 (-2), q17 (-1) y q25 (+2); Vox q15 (-2) y q29 (+1). UPN q17 y
+  SALF q25 siguen en null, coherentes con su retirada del origen.
+- **Nuevas búsquedas sin resultado** para las celdas en null: impuesto a las grandes fortunas,
+  jornada de 37,5 h, regularización, sanidad privada, Mercosur y concierto (Feijóo, Sánchez y
+  Abascal), y el directo de Vozpópuli del 24-oct. Lo hallado era anterior al 6-oct o no estaba en
+  primera persona.
+- **Dudas**: Vox y SALF q03 (+1; podrían leerse como medida distinta → null); PP q01 y q17 (-1,
+  indirectas); Vox q29 (+1: oposición a Mercosur sin formularla como pedir en la UE que se frene).

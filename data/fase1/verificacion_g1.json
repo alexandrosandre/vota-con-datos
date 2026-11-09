@@ -3,7 +3,7 @@
  "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2",
  "fecha": "2026-11-09",
  "aprobado": true,
- "revisadas": 21,
+ "revisadas": 30,
  "cambios": [
   {
    "partido": "pp",
@@ -53,6 +53,69 @@
    "antes": null,
    "despues": -2,
    "motivo": "q05 reformulada. Fuente reabierta (Forbes España/Europa Press, 13-oct): Arcadi España, ministro de Hacienda y número dos del PSPV-PSOE por Valencia (Demócrata, 21-oct), rechaza en primera persona la propuesta de IRPF de Vox, descrita con los mismos umbrales que la nueva afirmación (22.000 € exentos, 15 % hasta 70.000 €, 25 % por encima), por su coste (85.000 millones) y porque beneficia a las rentas altas; elDiario.es (8-oct) recoge el mismo rechazo («desmantelar» el IRPF). Rechazo expreso y reiterado: -2."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q01",
+   "antes": -1,
+   "despues": -1,
+   "motivo": "verificación tras reformulación 9-nov: fuente reabierta (Infobae/EP, mitin de Vigo, 24-oct; Feijóo, candidato). Decisión independiente: rechaza el «planteamiento sectario del Gobierno que intenta controlar los precios» de la vivienda y propone «aumentar la oferta para que baje el precio»; un tope estatal en toda España es control de precios por el Gobierno. Indirecta (no nombra los topes de alquiler): -1 confirmado."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q03",
+   "antes": 2,
+   "despues": 2,
+   "motivo": "verificación tras reformulación 9-nov: fuente reabierta (pp.es, 21-oct, Sevilla; Feijóo, candidato). La nueva afirmación reproduce su medida: «rebajas del 60% del IVA y del ITP para menores de 40 años» para la primera vivienda, presentada como «la mayor ayuda de la historia». Propuesta expresa y prioritaria: +2 confirmado. Cita nueva cotejada con la nota."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q15",
+   "antes": -2,
+   "despues": -2,
+   "motivo": "verificación tras reformulación 9-nov: fuente reabierta (The Objective, «Contrato con España», 19-oct, firmado por Feijóo). «Se establecerá por ley la prohibición de regulaciones [regularizaciones] colectivas»: rechazo expreso a repetir una regularización extraordinaria como la de 2026: -2 confirmado."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q17",
+   "antes": -1,
+   "despues": -1,
+   "motivo": "verificación tras reformulación 9-nov: fuente reabierta (Infobae/EP, Vigo, 24-oct). «Se reparte lo que es de todos entre todos» y «fin a [...] los privilegios de unos pocos» se oponen a que cada comunidad que lo pida regule y recaude sus impuestos y pague un cupo, pero Feijóo no nombra el concierto ni el cupo. Indirecta: -1 confirmado (alternativa null; recodificar con el programa del 10-nov)."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q25",
+   "antes": 2,
+   "despues": 2,
+   "motivo": "verificación tras reformulación 9-nov: fuente reabierta (pp.es, 8-nov, Málaga). Feijóo: su Gobierno «jamás indultará a un político condenado por corrupción», que es literalmente la nueva afirmación: +2 confirmado."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q03",
+   "antes": 1,
+   "despues": 1,
+   "motivo": "verificación tras reformulación 9-nov: fuente reabierta (Press Digital/EP, Palma, 24-oct; Maribel Cerezo, cabeza de lista por Baleares, cita literal). «Que la primera vivienda esté libre de carga impositiva» actúa sobre los mismos impuestos y en la misma dirección, pero va más allá (100 %, sin límite de edad); la rebaja del 60 % para menores de 40 queda contenida en su propuesta. Es una medida más amplia, no distinta: +1 (no +2, porque no propone esta medida; no null, porque quien suprime el impuesto apoya a fortiori rebajarlo para ese grupo)."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q15",
+   "antes": -2,
+   "despues": -2,
+   "motivo": "verificación tras reformulación 9-nov: fuente reabierta (Infobae/EP, Estepona, 11-oct; Abascal). Cita directa «El que viene ilegalmente a España tiene que ser repatriado» y, en estilo indirecto atribuido, rechazo a regularizar «de golpe» «a todo el que entra ilegal». Rechazo expreso y eje de campaña: -2 confirmado."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q29",
+   "antes": 1,
+   "despues": 1,
+   "motivo": "verificación tras reformulación 9-nov: fuente reabierta (Infobae/EP, entrevista en Onda Cero, 4-nov; Abascal, estilo indirecto atribuido con cita parcial). Vox «no podía apoyar» Mercosur porque «iba contra los intereses» de agricultores y ganaderos: oposición expresa al acuerdo, en la dirección de pedir que se frene, pero sin formularla como iniciativa en la UE ni como medida de gobierno: +1 confirmado."
+  },
+  {
+   "partido": "salf",
+   "pregunta": "q03",
+   "antes": 1,
+   "despues": 1,
+   "motivo": "verificación tras reformulación 9-nov: fuente reabierta (elDiario.es, Toledo, 18-oct; Alvise Pérez, líder, en el marco del 29N). Pide la «eliminación del 100% de impuestos a la primera vivienda» de todo español que no tenga una: mismo criterio que Vox q03 (medida más amplia que contiene la rebaja, aquí además limitada a españoles): +1 confirmado."
   }
  ],
  "dudas": [
@@ -64,6 +127,7 @@
   "PP q18 (null): retirada confirmada. La única fuente era el texto del programa adelantado por Europa Press el 7-nov (filtración previa a la presentación oficial). Las declaraciones de Feijóo sobre la quita de deuda halladas son de 2025, fuera de plazo.",
   "Todo el grupo debe recodificarse con los programas oficiales (el del PP se presenta el 10-nov). UPN y PSC siguen sin ninguna posición conocida.",
   "PSOE q05 (-2): Arcadi España habla en la rueda de prensa del Consejo de Ministros y no es cabeza de lista (es el número dos por Valencia); se acepta como dirigente nacional del PSOE con el mismo criterio que Kilian Sánchez (q10). Si se exige cabeza de lista o cargo orgánico, la alternativa es null.",
-  "Vox q05 (+2, mantenido tras la reformulación): 101TV Sevilla (6-nov), reabierta, recoge en estilo indirecto atribuido a Figaredo los tres elementos de la nueva afirmación (exento bajo 22.000 €, 15 % hasta 70.000 €, 25 % por encima), sin entrecomillados; la cita directa de elDiario.es (8-oct, «esta semana») coincide pero no tiene fecha cierta."
+  "Vox q05 (+2, mantenido tras la reformulación): 101TV Sevilla (6-nov), reabierta, recoge en estilo indirecto atribuido a Figaredo los tres elementos de la nueva afirmación (exento bajo 22.000 €, 15 % hasta 70.000 €, 25 % por encima), sin entrecomillados; la cita directa de elDiario.es (8-oct, «esta semana») coincide pero no tiene fecha cierta.",
+  "Vox y SALF q03 (+1 tras la reformulación del 9-nov): proponen suprimir el 100 % de los impuestos de la primera vivienda (sin límite de edad; SALF, solo españoles). Se lee como la misma medida llevada más lejos, que contiene la rebaja del 60 % para menores de 40, y no como medida distinta. Alternativa: null."
  ]
 }

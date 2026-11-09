@@ -4,7 +4,7 @@
  "fecha": "2026-11-09",
  "aprobado": true,
  "revisadas": 1,
- "alcance": "Comparado con la versión verificada el 2026-11-08 (git HEAD): la única celda con valor nueva o cambiada es Junts q17 (fuente, cita, url, medio, fecha, quien, formato). El resto de cambios solo añade los campos quien/formato/marco a null en celdas de programa y reescribe notas de celdas nulas; las 31 celdas de programa con valor (ERC 13, BNG 17, CC 1) no cambian y no se reverificaron. No hay otras celdas de campaña. Revisión del 9-nov (q05 reformulada): ERC y BNG pasan de -1 a null; el resto de celdas q05 del grupo siguen en null.",
+ "alcance": "Comparado con la versión verificada el 2026-11-08 (git HEAD): la única celda con valor nueva o cambiada es Junts q17 (fuente, cita, url, medio, fecha, quien, formato). El resto de cambios solo añade los campos quien/formato/marco a null en celdas de programa y reescribe notas de celdas nulas; las 31 celdas de programa con valor (ERC 13, BNG 17, CC 1) no cambian y no se reverificaron. No hay otras celdas de campaña. Revisión del 9-nov (q05 reformulada): ERC y BNG pasan de -1 a null; el resto de celdas q05 del grupo siguen en null. Verificación tras la reformulación del 9-nov (q01, q02, q03, q04, q06, q09, q15, q17, q25, q29): se reverificaron las 16 celdas con valor de esas afirmaciones; ERC q09 y BNG q15 pasan de 1 a null.",
  "cambios": [
   {
    "partido": "erc",
@@ -19,10 +19,28 @@
    "antes": -1,
    "despues": null,
    "motivo": "q05 reformulada. El programa (p. 43) pide más progresividad («que pague máis quen máis renda obtén») y también rebajar la tributación del trabajo; ante una medida que exime a quien ingresa menos de 22.000 € y baja el máximo al 25 %, coincide con una parte y choca con la otra, y no menciona una escala de dos tipos ni la propuesta de Vox: sin posición inequívoca, null."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q09",
+   "antes": 1,
+   "despues": null,
+   "motivo": "verificación tras reformulación 9-nov. Nueva afirmación: prohibir que la sanidad pública pague a clínicas y hospitales privados. El programa (p. 41, medida 233) solo pide «frenar la privatització de la sanitat» y un modelo «amb gestió pública»; no propone prohibir ni revertir los conciertos. Frenar nuevas privatizaciones es una medida relacionada pero distinta (UPC, +1, sí pide revertir externalizaciones). Ante la duda, null."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q15",
+   "antes": 1,
+   "despues": null,
+   "motivo": "verificación tras reformulación 9-nov. Nueva afirmación: aprobar OTRA regularización extraordinaria como la de 2026. El programa (p. 22-23) pide «favorecer e facilitar os procesos de regularización administrativa», sin mencionar una regularización extraordinaria ni repetir la de 2026: medida relacionada pero distinta. Mismo criterio que Frente Amplio q15 (null). Ante la duda, null."
   }
  ],
  "dudas": [
   "Junts q17 (+2), verificada: la crónica de ElNacional.cat (Vicenç Pagès, 2026-11-08) del acto de presentación de candidatos de Junts en Vilanova i la Geltrú recoge entre comillas a Nogueras: «Queremos recaudar, gestionar y decidir nuestros impuestos. Si lo hacen los vascos, nosotros también», y añade que será una de las condiciones para quien quiera negociar con Junts (esto último en estilo indirecto). Primera persona, posterior a la convocatoria, cita literal. Decisión independiente: +2 (propuesta expresa y prioritaria, condición de negociación), coincide con el codificador. Lo pide para Cataluña, como ERC y BNG (+2) para su comunidad.",
-  "Junts q17, cargo: el artículo la llama «candidata de Junts per Catalunya al Congreso»; que es número uno por Barcelona y portavoz en el Congreso lo confirman otras crónicas (Diario de León 8-oct, Demócrata). «Acto de precampaña» es correcto: 8-nov es posterior a la convocatoria pero anterior al inicio formal de la campaña (13-nov)."
+  "Junts q17, cargo: el artículo la llama «candidata de Junts per Catalunya al Congreso»; que es número uno por Barcelona y portavoz en el Congreso lo confirman otras crónicas (Diario de León 8-oct, Demócrata). «Acto de precampaña» es correcto: 8-nov es posterior a la convocatoria pero anterior al inicio formal de la campaña (13-nov).",
+  "verificación tras reformulación 9-nov: releídas en su fuente las 16 celdas con valor de q01, q02, q03, q04, q06, q09, q15, q17, q25 y q29 (ERC 7, BNG 8, Junts 1; CC, EH Bildu y PNV, todas null) y decididas antes de ver el valor del codificador. Coinciden: ERC q03 1, q04 2, q06 2, q17 1, q29 2; BNG q01 2, q02 1, q04 2, q06 1, q09 2, q17 2, q29 2; Junts q17 2. Se corrigen a null ERC q09 y BNG q15. Citas literales comprobadas en el texto y la página indicada (ERC q17 con la nueva cita de la medida 23, p. 12).",
+  "ERC q03 (+1), dudosa pero se mantiene: la medida 59 (p. 19) pide reducir el IVA y el ITP cuando la vivienda sea «primera residència» (residencia habitual, del propietario o del arrendatario), sin cifra ni límite de edad. Cubre a los menores de 40 que compran su primera vivienda y va en la misma dirección; mismo criterio que SALF (100 %, sin edad) y Vox (+1).",
+  "BNG q04 (+2), límite entre 1 y 2: «blindar a permanencia» del impuesto a las grandes fortunas es expreso, pero añade bajar el mínimo exento (hoy 3 M€) y traspasar su gestión a Galicia. Se acepta +2 porque es el mismo impuesto, a diferencia de Frente Amplio (+1, otro impuesto). BNG q01 (+2) y Junts q17 (+2): mismo criterio que Podemos q01 (+2, tope por ley general sin mencionar a las comunidades) y que BNG q17 (concierto); +1 también sería defendible.",
+  "ERC q17 (+1): la medida 23 (p. 12) propone que Cataluña recaude todos los impuestos y pague al Estado un porcentaje, y la p. 11, avanzar «en la línia d'un concert econòmic solidari». Falta la capacidad de regular todos los impuestos y un cupo anual: a favor con matices, se mantiene 1. BNG q02 (+1): expropiación acotada (viviendas de promoción pública compradas por fondos, p. 12; expropiación temporal de vacías por las CCAA, p. 14), mismo sentido, sin umbral de 50 viviendas: 1."
  ]
 }

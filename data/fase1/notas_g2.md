@@ -39,3 +39,17 @@ Ningún partido del grupo ha publicado un programa del 29N. `partidos.json` no s
   - Las tres son dudosas.
 - **Sin celdas nuevas** para Podemos, Compromís, Ara Més, UPC y Adelante Andalucía. Las declaraciones encontradas son genéricas, anteriores a la convocatoria sin referencia al 29N, o columnas de opinión.
 - Europa Press (europapress.es) no se pudo abrir. Se usaron sus despachos en Infobae y Demócrata.
+
+## Recodificación por la nueva redacción (9-nov)
+
+Se revisaron con el texto nuevo las 60 celdas de q01, q02, q03, q04, q06, q09, q15, q17, q25 y q29. Se releyeron las fuentes de cada celda con valor y el Manifiesto de UPC. También se buscaron fuentes nuevas: frenteamplio.info/noticias (sin novedades después del 6-nov), adelanteandalucia.org/programa (solo el de las autonómicas) y prensa sobre Podemos, Frente Amplio, Compromís y Adelante Andalucía. No apareció ninguna fuente nueva válida. Las demás afirmaciones no se tocaron.
+
+- **Cambios de valor**:
+  - Frente Amplio q04: +2 → +1. Propone otro impuesto (desde 1 M€) que descuenta el vigente, pero no pide que este sea permanente.
+  - Frente Amplio q15: +1 → null. Delgado defiende la regularización ya aprobada, no repetirla.
+  - Podemos q02: +2 → +1. Propone expropiar el uso, no la propiedad.
+  - Compromís q01: +2 → +1. Pide topes solo en zonas tensionadas.
+  - Ara Més q01: +2 → +1. Pide topes sin decir que sea por ley estatal ni para toda España.
+  - UPC q09: −1 → +1. La afirmación ahora tiene el sentido contrario. UPC defiende la gestión «prioritariamente directa», así que no apoya una prohibición total.
+- **Celdas dudosas**: Frente Amplio q06 (+1, sin cifra), Podemos q04 y UPC q04 (+1, apoyo genérico a gravar las grandes fortunas) y Ara Més q01 (+1).
+- **UPC q02**: `preguntas.json` cita a UPC como «parcial» con «sin descartar expropiaciones», tomado de Diario de Avisos (8-nov). Esa pieza es una tribuna de Román Rodríguez (NC-bc), una columna de opinión que no vale como fuente. Aquí sigue null, y conviene revisar ese `origen`.

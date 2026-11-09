@@ -3,7 +3,7 @@
   "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2",
   "fecha": "2026-11-09",
   "aprobado": true,
-  "revisadas": 23,
+  "revisadas": 37,
   "cambios": [
     {
       "partido": "frente_amplio",
@@ -46,12 +46,110 @@
       "antes": 2,
       "despues": 2,
       "motivo": "Valor confirmado. Solo cambia el formato, de «acto de campaña (Elche)» a «acto de precampaña (presentación de la candidatura en Elche)», porque Alicante Plaza dice que la coalición «ha elegido Elche para iniciar su precampaña» el 6-nov."
+    },
+    {
+      "partido": "frente_amplio",
+      "pregunta": "q02",
+      "antes": 2,
+      "despues": 2,
+      "motivo": "verificación tras reformulación 9-nov: fuentes reabiertas (nota oficial frenteamplio.info, 6-nov; Público/EFE, 6-nov, declaraciones de Colau). Ley de expropiación a propietarios corporativos por fases hasta las «empresas propietarias de más de 50 inmuebles», con destino al «parque público de vivienda» a precio «asequible para la ciudadanía». Es la medida de la afirmación, propuesta como «medida estrella»: +2 confirmado."
+    },
+    {
+      "partido": "frente_amplio",
+      "pregunta": "q04",
+      "antes": 1,
+      "despues": 1,
+      "motivo": "verificación tras reformulación 9-nov: fuente reabierta (nota oficial, 5-nov). Propone otro impuesto (anual, 2 % desde 1 M€, 3 % desde 50 M€) cuya cuota «se reduciría en función de lo ya abonado por los impuestos de Patrimonio y Grandes Fortunas»: presupone que el vigente sigue, pero no pide hacerlo permanente. Medida relacionada en la misma dirección: +1 confirmado (sustituye el +2 de la verificación anterior, decidido con el texto antiguo)."
+    },
+    {
+      "partido": "frente_amplio",
+      "pregunta": "q06",
+      "antes": 1,
+      "despues": 1,
+      "motivo": "verificación tras reformulación 9-nov: fuente reabierta (Infobae/EP, 8-nov; Emilio Delgado, cabeza de lista por Madrid). Defiende «reducir la jornada laboral en España» para «trabajar menos y vivir mejor», sin cifra, instrumento ni mención al salario. Misma dirección que bajar de 40 a 37,5 h, sin concreción: +1 confirmado (alternativa null)."
+    },
+    {
+      "partido": "frente_amplio",
+      "pregunta": "q15",
+      "antes": null,
+      "despues": null,
+      "motivo": "verificación tras reformulación 9-nov: texto nuevo (repetir una regularización). Delgado defendía la regularización ya aprobada frente al «efecto llamada»; no propone otra: null confirmado (el +1 anterior se decidió con el texto antiguo)."
+    },
+    {
+      "partido": "podemos",
+      "pregunta": "q01",
+      "antes": 2,
+      "despues": 2,
+      "motivo": "verificación tras reformulación 9-nov: fuente reabierta (elDiario.es, 6-nov, desayuno de Europa Press; Montero, candidata). Condición de investidura al Gobierno central: «rebajar los alquileres por ley», sin limitarlo a zonas; Montero: «bajar el precio de los alquileres». Un tope legal general exigido al Estado como condición prioritaria: +2 confirmado. No menciona expresamente a las comunidades."
+    },
+    {
+      "partido": "podemos",
+      "pregunta": "q02",
+      "antes": 1,
+      "despues": 1,
+      "motivo": "verificación tras reformulación 9-nov: fuentes reabiertas (Infobae/EP y elDiario.es, 6-nov). Montero: «expropiar el uso de las viviendas que, por miles, acumulan los fondos buitre» para alquiler social. Misma finalidad, pero expropia el uso y no la propiedad, sin umbral: +1 confirmado."
+    },
+    {
+      "partido": "podemos",
+      "pregunta": "q04",
+      "antes": 1,
+      "despues": 1,
+      "motivo": "verificación tras reformulación 9-nov: fuente reabierta (Infobae/EP, 6-nov). Preguntada por el impuesto a los superricos de Colau: «hay que freírles a impuestos, evidentemente, para que pague más quien más tiene». Apoyo inequívoco a gravar más las grandes fortunas, incompatible con dejar caer el impuesto vigente, pero sin hablar de él ni de su permanencia: +1 confirmado (mismo criterio que Frente Amplio y UPC q04)."
+    },
+    {
+      "partido": "podemos",
+      "pregunta": "q06",
+      "antes": 1,
+      "despues": 1,
+      "motivo": "verificación tras reformulación 9-nov: fuente reabierta (Infobae/EP, 5-nov, presentación de candidaturas; estilo indirecto atribuido). Defiende «bajar hasta las 30 horas semanales la jornada laboral»: misma dirección que bajar a 37,5 h, más allá de la cifra y sin mención al salario: +1 confirmado (como el BNG, «parcial»)."
+    },
+    {
+      "partido": "compromis",
+      "pregunta": "q01",
+      "antes": 1,
+      "despues": 1,
+      "motivo": "verificación tras reformulación 9-nov: fuente reabierta (entrevista de elDiario.es, 25-oct; Micó, cabeza de lista). «Hay que regular los alquileres en las zonas tensionadas y reducirlos»: apoya el tope, pero en zonas tensionadas, no en toda España por ley estatal: +1 confirmado."
+    },
+    {
+      "partido": "compromis",
+      "pregunta": "q02",
+      "antes": 2,
+      "despues": 2,
+      "motivo": "verificación tras reformulación 9-nov: fuentes reabiertas (Valencia Plaza/EFE, 4-nov, rueda de prensa de la candidatura; Alicante Plaza, 6-nov, Micó en Elche, estilo indirecto: «incluida la expropiación de viviendas a estos fondos»). Compromiso de «una ley que expropie a los 'fondos buitre' sus viviendas» para ampliar el parque público: es la medida de la afirmación (expropiar por ley la propiedad a grandes tenedores corporativos para vivienda pública); el umbral de 50 es un detalle que no contradice: +2 confirmado. Alternativa: +1 si se exige el umbral."
+    },
+    {
+      "partido": "ara_mes_fa",
+      "pregunta": "q01",
+      "antes": 1,
+      "despues": 1,
+      "motivo": "verificación tras reformulación 9-nov: fuente reabierta (nota oficial, 6-nov, presentación de campaña del 29N). Defiende «posar topalls als preus dels lloguers» en el contexto balear, sin decir qué administración lo fija ni con qué alcance: apoyo al tope sin el elemento estatal y general: +1 confirmado (mismo criterio que Compromís y UPC q01)."
+    },
+    {
+      "partido": "upc",
+      "pregunta": "q01",
+      "antes": 1,
+      "despues": 1,
+      "motivo": "verificación tras reformulación 9-nov: fuente reabierta (Manifiesto electoral, p. 3, eje 5). «Regular los precios del alquiler en zonas tensionadas, la intervención del mercado»: apoyo al tope limitado a zonas tensionadas: +1 confirmado."
+    },
+    {
+      "partido": "upc",
+      "pregunta": "q04",
+      "antes": 1,
+      "despues": 1,
+      "motivo": "verificación tras reformulación 9-nov: fuente reabierta (Manifiesto electoral, p. 4, eje 9). «Proponemos reforzar la tributación de las grandes fortunas»: reforzarla implica mantener el impuesto estatal sobre ellas, aunque no se cita ni su permanencia: +1 confirmado."
+    },
+    {
+      "partido": "upc",
+      "pregunta": "q09",
+      "antes": 1,
+      "despues": 1,
+      "motivo": "verificación tras reformulación 9-nov: fuente reabierta (Manifiesto electoral, p. 3, eje 6). «Gestión prioritariamente directa, avanzando en la reversión de privatizaciones y externalizaciones» en sanidad: misma dirección que la afirmación invertida, pero «prioritariamente» no llega a prohibir: +1 confirmado (como ERC, «parcial»)."
     }
   ],
   "dudas": [
-    "frente_amplio/q04: el impuesto no se califica literalmente de «permanente». El +2 se apoya en que es un impuesto anual, estatal y central en la campaña, que además financia una medida estructural de pensiones. Alternativa razonable: +1.",
+    "frente_amplio/q04 (+1 tras la reformulación del 9-nov): el texto nuevo pide hacer permanente el impuesto vigente sobre más de 3 M€; el Frente Amplio propone otro impuesto que descuenta el vigente sin pedir su permanencia. Alternativa: null, si se lee como medida distinta.",
     "frente_amplio/q06: «reducir la jornada laboral en España» no concreta las horas, el instrumento legal ni si se mantiene el salario. El +1 sigue el mismo criterio que Podemos q06. Alternativa: null, si se exige la medida concreta.",
-    "frente_amplio/q15: la crónica de Europa Press parafrasea a Delgado, con atribución, y su defensa de la regularización parece referirse a la regularización extraordinaria ya en marcha. No es un compromiso de aprobar otra. Se mantiene +1 como apoyo indirecto; la alternativa sería null.",
+    "frente_amplio/q15 (null tras la reformulación del 9-nov): Delgado defiende la regularización ya aprobada, no repetirla.",
     "frente_amplio/q13 y compromis/q13: ambos rechazan la «prioridad nacional» en general, sin mencionar la vivienda social. Micó la rechaza (elDiario.es 25-oct) como «aplicada a todos los ámbitos de la vida» por el Consell de PP y Vox y añade «no queremos que esto pase en el Congreso». Se mantiene −1 en los dos, no −2.",
     "compromis/q02: el compromiso de destinar lo expropiado «al parque público» lo atribuye EFE al conjunto de candidatos en la rueda de prensa, y en palabras textuales solo a Ibáñez. Micó, cabeza de lista, estaba presente y repitió la expropiación en Elche, pero sin mencionar el destino.",
     "Campo «quien» y «formato» comprobados en todas las celdas de campaña sin cambios: Podemos q01, q02, q04, q08, q26 y q30 (desayuno informativo de Europa Press, 6-nov, Hotel InterContinental, Madrid) y q06 (presentación de candidaturas en la sede, 5-nov); Compromís q01, q13, q18 y q21 (entrevista de elDiario.es, publicada el 25-oct); Frente Amplio q02, q04 y q08 y Ara Més q01 (notas oficiales); UPC q01, q04 y q09 (Manifiesto electoral, documento oficial). Todos son correctos.",
