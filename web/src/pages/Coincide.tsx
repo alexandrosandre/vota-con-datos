@@ -179,47 +179,65 @@ function Detalle({ partidoId }: { partidoId: string }) {
   const d = fase1.value!;
   const e = estado.value;
   const pos = d.posiciones[partidoId] ?? {};
+  const siglas = partido(partidoId)?.siglas ?? partidoId;
+  // Solo los temas comparables: los que respondiste y en los que conocemos la posición del partido.
+  const respondidas = d.preguntas.filter((q) => e.respuestas[q.id]?.valor !== null && e.respuestas[q.id]?.valor !== undefined);
+  const comunes = respondidas
+    .filter((q) => pos[q.id]?.valor !== null && pos[q.id]?.valor !== undefined)
+    .map((q) => ({ q, u: e.respuestas[q.id]!.valor as number, p: pos[q.id]!, dist: Math.abs((e.respuestas[q.id]!.valor as number) - (pos[q.id]!.valor as number)) }))
+    .sort((a, b) => a.dist - b.dist);
+  const sinPosicion = respondidas.length - comunes.length;
+  const grado = (dist: number) => (dist <= 1 ? 'Coincidís' : dist >= 3 ? 'Discrepáis' : 'A medias');
+  const n = { Coincidís: 0, 'A medias': 0, Discrepáis: 0 } as Record<string, number>;
+  comunes.forEach((c) => n[grado(c.dist)]++);
   return (
     <div class="prop-body" style={{ margin: '0 0 12px', borderRadius: 10 }}>
-      {d.preguntas.map((q) => {
-        const u = e.respuestas[q.id]?.valor;
-        const p = pos[q.id];
-        if (u === null || u === undefined) return null;
-        return (
-          <div class="crit" key={q.id}>
-            <h3 class="h4">{q.texto}</h3>
-            <p>
-              Tú: <strong>{etiqueta(u)}</strong> · {partido(partidoId)?.siglas}: <strong>{etiqueta(p?.valor)}</strong>
-            </p>
-            {p?.cita && (
-              <>
-                <span class="fuente-tag">{p.fuente === 'campaña' ? 'Lo dijo en público' : 'Programa oficial'}</span>
-                <p class="quote">
-                  «{p.cita}»{' '}
-                  {p.fuente !== 'campaña' && p.pagina ? <span class="muted">(p. {p.pagina})</span> : null}
+      <p style={{ marginTop: 12 }}>
+        <strong>
+          {comunes.length} {comunes.length === 1 ? 'tema comparable' : 'temas comparables'}
+        </strong>
+        : coincidís en {n['Coincidís']}, a medias en {n['A medias']} y discrepáis en {n['Discrepáis']}.
+        {sinPosicion > 0 && (
+          <span class="muted">
+            {' '}
+            En {sinPosicion} de tus otras respuestas no conocemos la posición de {siglas}.
+          </span>
+        )}
+      </p>
+      {comunes.map(({ q, u, p, dist }) => (
+        <div class="crit" key={q.id}>
+          <h3 class="h4">{q.texto}</h3>
+          <p>
+            <span class="pill">{grado(dist)}</span> Tú: <strong>{etiqueta(u)}</strong> · {siglas}: <strong>{etiqueta(p.valor)}</strong>
+          </p>
+          {p.cita && (
+            <>
+              <span class="fuente-tag">{p.fuente === 'campaña' ? 'Lo dijo en público' : 'Programa oficial'}</span>
+              <p class="quote">
+                «{p.cita}»{' '}
+                {p.fuente !== 'campaña' && p.pagina ? <span class="muted">(p. {p.pagina})</span> : null}
+              </p>
+              {p.fuente === 'campaña' && (
+                <p class="muted" style={{ fontSize: '0.85rem' }}>
+                  — {p.quien}
+                  {p.formato ? `, ${p.formato}` : ''}
+                  {p.fecha ? `, ${fmt.fecha(p.fecha)}` : ''}
+                  {p.url && (
+                    <>
+                      {' · '}
+                      <a href={p.url} target="_blank" rel="noopener">
+                        {p.medio ?? 'fuente'}
+                      </a>
+                    </>
+                  )}
+                  {p.marco ? ` · Precampaña, referida a estas elecciones: «${p.marco}»` : ''}
                 </p>
-                {p.fuente === 'campaña' && (
-                  <p class="muted" style={{ fontSize: '0.85rem' }}>
-                    — {p.quien}
-                    {p.formato ? `, ${p.formato}` : ''}
-                    {p.fecha ? `, ${fmt.fecha(p.fecha)}` : ''}
-                    {p.url && (
-                      <>
-                        {' · '}
-                        <a href={p.url} target="_blank" rel="noopener">
-                          {p.medio ?? 'fuente'}
-                        </a>
-                      </>
-                    )}
-                    {p.marco ? ` · Precampaña, referida a estas elecciones: «${p.marco}»` : ''}
-                  </p>
-                )}
-              </>
-            )}
-            {p?.nota && <p class="muted">{p.nota}</p>}
-          </div>
-        );
-      })}
+              )}
+            </>
+          )}
+          {p.nota && <p class="muted">{p.nota}</p>}
+        </div>
+      ))}
     </div>
   );
 }
@@ -302,7 +320,7 @@ function Resultados() {
                           aria-expanded={abierto === r.partido}
                           onClick={() => setAbierto(abierto === r.partido ? null : r.partido)}
                         >
-                          {abierto === r.partido ? 'Ocultar detalle' : `Ver en qué coincidís (${r.comunes} ${r.comunes === 1 ? 'tema' : 'temas'})`}
+                          {abierto === r.partido ? 'Ocultar detalle' : `Ver los ${r.comunes} ${r.comunes === 1 ? 'tema comparable' : 'temas comparables'}`}
                         </button>
                       )}
                     </div>
