@@ -1,7 +1,7 @@
 {
   "aprobado": true,
   "revisor": "Claude (Anthropic), pasada independiente",
-  "fecha": "2026-11-08",
+  "fecha": "2026-11-09",
   "cambios": [
     {
       "propuesta": "bng-02",
@@ -282,18 +282,114 @@
       "antes": "fuentes: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229, https://www.boe.es/eli/es/l/2002/05/23/12",
       "despues": "fuentes: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229, https://www.boe.es/eli/es/l/2002/05/23/12, https://www.boe.es/buscar/doc.php?id=BOE-A-2020-404, https://hj.tribunalconstitucional.es/es/Resolucion/Show/1017",
       "motivo": "auditoría de coherencia: comparado con erc-10 (recaudación de todos los impuestos por la Agencia Tributaria de Cataluña, «mixta»). Se mantiene «desfavorable» porque el diseño es distinto y la duda que señalaba el propio texto («según cómo se interprete la disposición adicional primera») la ha resuelto el Tribunal Constitucional: la STC 158/2019 (FJ 4) declara que los derechos históricos de la DA 1.ª solo corresponden al País Vasco y Navarra y que extenderlos a otra comunidad es inviable con cualquier instrumento normativo; la STC 76/1988 (FJ 9) sitúa los conciertos en el núcleo de esa garantía. erc-10 solo pide que una administración autonómica recaude como delegada del Estado, supuesto que el art. 156.2 CE prevé expresamente; por eso allí «mixta» (requiere reformas legales y no tiene precedente) y aquí «desfavorable» (exige reforma constitucional). Se añade al texto que la parte de recaudación sí cabe en el art. 156.2."
+    },
+    {
+      "propuesta": "bng-11",
+      "criterio": "financiacion",
+      "antes": "Según el Anuario Estadístico del Ministerio del Interior (recogido por Europa Press), en 2023 se impusieron con esta ley 284.512 sanciones por 174 M€, el 74% por tenencia de drogas;",
+      "despues": "Según el Anuario Estadístico del Ministerio del Interior, en 2023 se impusieron con esta ley 284.512 sanciones por 174,8 M€, el 75% del importe por consumo o tenencia de drogas en lugares públicos;",
+      "motivo": "fuente primaria: Anuario Estadístico del Ministerio del Interior (tablas 3-3-1 y 3-3-2): 174.764.289 € en 2023, de ellos 130.467.787 € por el art. 36.16 (74,7 %, se redondea a 75 %). Mismo cambio que en erc-05."
+    },
+    {
+      "propuesta": "bng-11",
+      "criterio": "financiacion",
+      "antes": "fuentes: https://elderecho.com/las-multas-por-la-ley-mordaza-aumentan-un-17-en-2023",
+      "despues": "fuentes: https://www.interior.gob.es/opencms/pdf/archivos-y-documentacion/documentacion-y-publicaciones/anuarios-y-estadisticas/ultimo-anuario-estadistico/Anuario-Estadistico-2024_web.pdf",
+      "motivo": "fuente primaria: se sustituye Europa Press/El Derecho por el Anuario Estadístico del Ministerio del Interior 2024 (copia de web.archive.org de la URL oficial, idéntica byte a byte en las capturas de 18-5-2026 y 12-10-2026)."
+    },
+    {
+      "propuesta": "bng-11",
+      "criterio": "beneficiarios",
+      "antes": "en 2023 se impusieron con esta ley 284.512 sanciones, 18.893 de ellas por desobediencia y 22.260 por faltas de respeto a los agentes,",
+      "despues": "en 2023 se impusieron con esta ley 284.512 sanciones (327.761 en 2024), 18.893 de ellas por desobediencia o resistencia y 22.260 por faltas de respeto a los agentes,",
+      "motivo": "fuente primaria: Anuario del Ministerio del Interior: importe exacto (174.764.289 €), denominación del art. 36.6 («desobediencia o resistencia»), cifra de 2024 y salvedad territorial (solo expedientes de la Administración General del Estado en Cataluña, Navarra y el País Vasco). Mismo cambio que en erc-05."
+    },
+    {
+      "propuesta": "bng-11",
+      "criterio": "beneficiarios",
+      "antes": "El coste recae en la recaudación por multas (174 M€ en 2023) y depende del régimen que sustituya a la ley.",
+      "despues": "El coste recae en la recaudación por multas (174,8 M€ en 2023) y depende del régimen que sustituya a la ley. En Cataluña, Navarra y el País Vasco el anuario solo recoge los expedientes de la Administración General del Estado.",
+      "motivo": "fuente primaria: Anuario del Ministerio del Interior: importe exacto (174.764.289 €), denominación del art. 36.6 («desobediencia o resistencia»), cifra de 2024 y salvedad territorial (solo expedientes de la Administración General del Estado en Cataluña, Navarra y el País Vasco). Mismo cambio que en erc-05."
+    },
+    {
+      "propuesta": "bng-11",
+      "criterio": "beneficiarios",
+      "antes": "fuentes: https://elderecho.com/las-multas-por-la-ley-mordaza-aumentan-un-17-en-2023",
+      "despues": "fuentes: https://www.interior.gob.es/opencms/pdf/archivos-y-documentacion/documentacion-y-publicaciones/anuarios-y-estadisticas/ultimo-anuario-estadistico/Anuario-Estadistico-2024_web.pdf",
+      "motivo": "fuente primaria: se sustituye Europa Press/El Derecho por el Anuario Estadístico del Ministerio del Interior 2024."
+    },
+    {
+      "propuesta": "bng-11",
+      "criterio": "largo_plazo",
+      "antes": "fuentes: https://elderecho.com/las-multas-por-la-ley-mordaza-aumentan-un-17-en-2023",
+      "despues": "fuentes: https://www.interior.gob.es/opencms/pdf/archivos-y-documentacion/documentacion-y-publicaciones/anuarios-y-estadisticas/ultimo-anuario-estadistico/Anuario-Estadistico-2024_web.pdf",
+      "motivo": "fuente primaria: se sustituye Europa Press/El Derecho por el Anuario Estadístico del Ministerio del Interior 2024 (armas y explosivos: 20.456.160 €; art. 36.16: 130.467.787 € en 2023)."
+    },
+    {
+      "propuesta": "bng-12",
+      "criterio": "evidencia",
+      "antes": "La investigación en ciencia política (Leeds, 2003) concluye que los compromisos de alianza que obligan a defender a un posible objetivo reducen la probabilidad de que se le inicie un conflicto militarizado. No hemos localizado evidencia empírica de que abandonar una alianza defensiva reduzca el riesgo de conflicto para el país que sale.",
+      "despues": "La investigación cuantitativa en ciencia política está en parte dividida, pero no hemos localizado ningún estudio que muestre que abandonar una alianza defensiva reduzca el riesgo de conflicto para el país que sale. Con datos de 1816-2000, Leeds (2003) y Johnson y Leeds (2011) hallan que los pactos de defensa reducen la probabilidad de que se inicie una disputa militarizada contra sus miembros, y no encuentran que lleven a los aliados a iniciar o escalar más disputas, que es el riesgo de arrastre que alega el programa. Kenwick, Vasquez y Powers (2015) hallan que antes de la era nuclear formar alianzas se asociaba a más disputas y guerras, y que después formar ciertos tipos de alianzas reduce el inicio de disputas pero no afecta a que estalle una guerra; Leeds y Johnson (2017) responden que el efecto disuasorio se mantiene con la mayoría de esos cambios de diseño.",
+      "motivo": "fuente primaria: se buscó más evidencia revisada por pares (resúmenes de las revistas leídos en la página de UKnowledge y en los metadatos del editor vía OpenAlex; la web de la revista devolvió 403). Johnson y Leeds (2011) confirma el efecto disuasorio y no halla que los aliados inicien o escalen más disputas; Kenwick, Vasquez y Powers (2015) lo matiza (sin efecto sobre el estallido de guerras en la era nuclear, efecto contrario antes de 1945), y Leeds y Johnson (2017) responden. Ningún estudio respalda que salir reduzca el riesgo. Se mantiene «desfavorable» y el texto recoge el debate."
+    },
+    {
+      "propuesta": "bng-12",
+      "criterio": "evidencia",
+      "antes": "fuentes: https://ideas.repec.org/a/wly/amposc/v47y2003i3p427-439.html",
+      "despues": "fuentes: https://ideas.repec.org/a/wly/amposc/v47y2003i3p427-439.html, https://doi.org/10.1111/j.1743-8594.2010.00122.x, https://doi.org/10.1086/681958, https://uknowledge.uky.edu/polsci_facpub/7",
+      "motivo": "fuente primaria: se añaden Johnson y Leeds (2011), Kenwick, Vasquez y Powers (2015) y Leeds y Johnson (2017)."
+    },
+    {
+      "propuesta": "bng-12",
+      "criterio": "financiacion",
+      "antes": "(33.123 M€ en 2025 según la OTAN)",
+      "despues": "(33.123 M€ en 2025, según la estimación de la OTAN)",
+      "motivo": "fuente primaria: informe de la OTAN Defence Expenditure of NATO Countries (2014-2025), tabla 1: 33.123 M€ para España en 2025, cifra estimada (corte de datos: 3-6-2025). Se indica que es una estimación."
+    },
+    {
+      "propuesta": "bng-12",
+      "criterio": "financiacion",
+      "antes": "fuentes: https://en.ara.cat/politics/nato-estimates-that-spain-has-reached-2-of-its-gdp-in-defense_1_5480989.html",
+      "despues": "fuentes: https://nato.int/content/dam/nato/webready/documents/finance/def-exp-2025-en.pdf",
+      "motivo": "fuente primaria: se sustituye Ara por el informe de la OTAN (nato.int)."
+    },
+    {
+      "propuesta": "bng-12",
+      "criterio": "antecedentes",
+      "antes": "fuentes: https://www.eldebate.com/historia/20260312/40-anos-referendum-otan-giro-psoe-debate-vuelve-criticas-trump_395084_amp.html, https://www.nato.int/cps/en/natohq/topics_52044.htm, https://en.ara.cat/politics/nato-estimates-that-spain-has-reached-2-of-its-gdp-in-defense_1_5480989.html",
+      "despues": "fuentes: https://www.eldebate.com/historia/20260312/40-anos-referendum-otan-giro-psoe-debate-vuelve-criticas-trump_395084_amp.html, https://www.nato.int/cps/en/natohq/topics_52044.htm, https://en.ara.cat/politics/nato-estimates-that-spain-has-reached-2-of-its-gdp-in-defense_1_5480989.html, https://nato.int/content/dam/nato/webready/documents/finance/def-exp-2025-en.pdf",
+      "motivo": "fuente primaria: se añade el informe de la OTAN (tabla 3: 2,00 % del PIB estimado para 2025), que respalda «en torno al 2 % del PIB»; Ara se mantiene para el objetivo del 5 %."
+    },
+    {
+      "propuesta": "bng-06",
+      "criterio": "legal",
+      "antes": "fuentes: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229, https://expertorrhh.lefebvre.es/wp-content/uploads/2024/07/cc-207-2022-dmerits-en.pdf, https://noticias.juridicas.com/actualidad/noticias/20441-el-tribunal-supremo-niega-otra-vez-las-indemnizaciones-extras-por-despido-improcedente/",
+      "despues": "fuentes: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229, https://expertorrhh.lefebvre.es/wp-content/uploads/2024/07/cc-207-2022-dmerits-en.pdf, https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Tribunal-Supremo/Noticias-Judiciales/El-Tribunal-Supremo-establece-que-la-indemnizacion-por-despido-improcedente-no-puede-verse-incrementada-en-la-via-judicial-",
+      "motivo": "fuente primaria: nota del CGPJ de 16-7-2025 sobre la sentencia del Pleno de la Sala de lo Social del Tribunal Supremo (indemnización tasada adecuada; art. 24 de la Carta Social Europea revisada como declaración programática que exigiría intervención legislativa; decisiones del CEDS no ejecutivas ni directamente aplicables). Confirma la fecha y el contenido; sustituye a Noticias Jurídicas."
+    },
+    {
+      "propuesta": "bng-06",
+      "criterio": "antecedentes",
+      "antes": "fuentes: https://expertorrhh.lefebvre.es/wp-content/uploads/2024/07/cc-207-2022-dmerits-en.pdf, https://noticias.juridicas.com/actualidad/noticias/20441-el-tribunal-supremo-niega-otra-vez-las-indemnizaciones-extras-por-despido-improcedente/, https://www.bde.es/f/webbe/SES/Secciones/Publicaciones/PublicacionesAnuales/InformesAnuales/23/Fich/InfAnual_2023_Cap3.pdf",
+      "despues": "fuentes: https://expertorrhh.lefebvre.es/wp-content/uploads/2024/07/cc-207-2022-dmerits-en.pdf, https://www.bde.es/f/webbe/SES/Secciones/Publicaciones/PublicacionesAnuales/InformesAnuales/23/Fich/InfAnual_2023_Cap3.pdf, https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Tribunal-Supremo/Noticias-Judiciales/El-Tribunal-Supremo-establece-que-la-indemnizacion-por-despido-improcedente-no-puede-verse-incrementada-en-la-via-judicial-",
+      "motivo": "fuente primaria: se sustituye Noticias Jurídicas por la nota del CGPJ de 16-7-2025 sobre la sentencia del Pleno de la Sala de lo Social del Tribunal Supremo."
+    },
+    {
+      "propuesta": "bng-11",
+      "criterio": "beneficiarios (resumen de la propuesta)",
+      "antes": "(174 M€ en 2023)",
+      "despues": "(174,8 M€ en 2023)",
+      "motivo": "fuente primaria: Anuario Estadístico del Ministerio del Interior 2024 (tablas 3-3-1 y 3-3-2): 174.764.289 € en 2023; el art. 36.16 (consumo o tenencia de drogas en lugares públicos) supone el 74,7 % del importe; en Cataluña, Navarra y el País Vasco solo se publican los expedientes de la Administración General del Estado. Mismo ajuste en erc-05 y bng-11."
     }
   ],
   "dudas": [
-    "bng-01 (encaje legal): se mantiene «desfavorable». Extender el concierto a una comunidad no foral choca con la disposición adicional primera (derechos históricos de los territorios forales) y con el art. 138.2 CE, pero el propio texto admite que la necesidad de reforma constitucional depende de la interpretación. Otro programa (erc-10) recibió «mixta» por recaudar todos los impuestos; no es la misma medida (allí la comunidad actúa como delegada en la recaudación, art. 156.2 CE; aquí hay concierto con cupo y capacidad normativa plena), pero conviene revisar ambas juntas.",
-    "bng-12 (evidencia): la valoración «desfavorable» se apoya en un solo estudio (Leeds, 2003), que concluye que las alianzas defensivas disuaden de agresiones a sus miembros. No se ha revisado la literatura sobre el riesgo de verse arrastrado a conflictos de los aliados, que es el argumento del programa. Se mantiene porque no se ha localizado evidencia en contra.",
-    "bng-11: los datos de sanciones proceden del Anuario Estadístico del Ministerio del Interior, citado por Europa Press (El Derecho, 30-8-2024). La web de Interior devolvió 403 (Cloudflare) a la descarga automática y no se pudo abrir el documento primario. Para la misma medida, erc-05 usa estos datos con financiación «mixta»; con la nota nueva de la rúbrica debería pasar a «favorable», como aquí.",
     "bng-02 (financiación): se mantiene «no_verificable». erc-06 (solo regulación del alquiler) es «favorable»; la diferencia es que aquí la suspensión indefinida de lanzamientos tiene un precedente de compensación pública a propietarios (RDL 37/2020, disposición adicional segunda) cuyo importe no es público.",
     "bng-05 (SMI): con el salario medio bruto del INE y con el cálculo del Gobierno, el objetivo del 60% podría estar ya cumplido. El alcance real de la propuesta depende de una definición que el programa no da; por eso concreción y beneficiarios son «mixta» y financiación «no_verificable».",
-    "bng-06: el gallego («contrarreformas laborais que consolidaron a mudanza aprobada en 2021») admite dos lecturas. Se ha dejado la traducción literal; el resumen interpreta, de acuerdo con la p. 6, que se trata de derogar las reformas anteriores que la reforma de 2021 mantuvo. Tampoco se ha verificado la fecha exacta de la sentencia del Supremo: la fuente es una noticia de 16-7-2025.",
+    "bng-06: el gallego («contrarreformas laborais que consolidaron a mudanza aprobada en 2021») admite dos lecturas. Se ha dejado la traducción literal; el resumen interpreta, de acuerdo con la p. 6, que se trata de derogar las reformas anteriores que la reforma de 2021 mantuvo.",
     "bng-07 (internacional): no se analiza ningún caso de rebaja efectiva de la edad de jubilación en otro país; solo la congelación francesa, aún sin evaluar. Una búsqueda adicional podría cambiar la valoración.",
     "bng-10 (internacional): el caso de los servicios urbanos de CP en Oporto se documenta con el informe del regulador portugués (AMT), que solo publica puntualidad y regularidad, no una evaluación de resultados.",
-    "Algunas fuentes secundarias de prensa se han mantenido porque respaldan el dato citado: El Debate (población del INE y referéndum de 1986), Ara (gasto en defensa según la OTAN; consorcio tributario catalán), El Salto, Infobae/EFE, elDiario.es, ECRE, KPMG, Noticias Jurídicas y Maldita. La decisión del Comité Europeo de Derechos Sociales se lee en una copia alojada por Lefebvre. No se han sustituido por documentos primarios.",
-    "Auditoría de coherencia (2026-11-08): resuelta la duda sobre bng-01 frente a erc-10 (véase el cambio en «Encaje legal» y data/fase3/auditoria_coherencia.md)."
+    "Algunas fuentes secundarias de prensa se han mantenido porque respaldan el dato citado: El Debate (población del INE y referéndum de 1986), Ara (objetivo del 5 % acordado en La Haya; consorcio tributario catalán), El Salto, Infobae/EFE, elDiario.es, ECRE, KPMG y Maldita. La decisión del Comité Europeo de Derechos Sociales se lee en una copia alojada por Lefebvre. No se han sustituido por documentos primarios.",
+    "Auditoría de coherencia (2026-11-08): resuelta la duda sobre bng-01 frente a erc-10 (véase el cambio en «Encaje legal» y data/fase3/auditoria_coherencia.md).",
+    "bng-12 (evidencia): Johnson y Leeds (2011), Kenwick, Vasquez y Powers (2015) y Leeds y Johnson (2017) se han leído en su resumen (metadatos del editor y UKnowledge), no en el texto completo; la web de The Journal of Politics devolvió 403."
   ]
 }

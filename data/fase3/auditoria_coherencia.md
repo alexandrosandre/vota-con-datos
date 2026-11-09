@@ -194,3 +194,75 @@ impacto puede dimensionarse con datos de Idescat; el BNG no define qué salario 
 referencia y, con el salario medio bruto del INE de 2023, el 60 % ya sería inferior al SMI de 2026,
 de modo que no hay base para estimar su coste. Mismos hechos → misma valoración; hechos distintos
 → valoraciones distintas, explicadas en cada texto.
+
+## Revisión con fuentes primarias (2026-11-09)
+
+Se resolvieron con documentos primarios las dudas abiertas de los revisores y de esta auditoría. Cada
+cambio figura en el `revision.json` del partido con el motivo «fuente primaria: …». `verify_quotes`:
+790 citas, 0 no encontradas.
+
+### Resueltas
+
+- **AIReF y la condonación (erc-02).** airef.es ya es accesible. El Observatorio de deuda de
+  noviembre de 2025 sustituye a ElDerecho.com y El Independiente. Confirma 2.532 M€ y 15.657 M€, y
+  aporta una cifra para Cataluña que antes faltaba: unos 457 M€ de ahorro el primer año y 3.226 M€
+  hasta 2030, alrededor de un tercio de los 1.500 M€ anuales del programa. El 29,3 % → 23,8 % es la
+  ratio del segundo trimestre de 2025 antes y después de la quita, no una proyección. La financiación
+  sigue en «mixta»: el 1.500 es un ahorro atribuido, no la financiación propuesta.
+- **Otras cifras de la AIReF citadas por prensa.** Se cita el estudio original en erc-03 (Cercanías;
+  sustituye a El Español, como ya hacía bng-10) y en cc-07 (incentivos a la contratación; sustituye a El
+  Derecho). Las cifras coinciden.
+- **STC 31/2010 (erc-01, encaje legal).** El FJ 134 no califica el art. 206.5 del Estatuto de
+  «aspiración política». Lo declara constitucional con un alcance limitado: es la expresión de un deber
+  que la Constitución ya impone al Estado, y la garantía solo opera si Cataluña pierde posición por su
+  propia aportación a la nivelación. Se corrige el texto, se cita la sentencia en el BOE y se comprueba
+  que la LOFCA y la Ley 22/2009 no recogen la ordinalidad. Sigue en «mixta». Por tanto, en el grupo 1,
+  la diferencia entre erc-01 y cc-03 en encaje legal se explica porque la ordinalidad no está en la
+  legislación del sistema y exige reformarla, no porque el TC la considerase no vinculante.
+- **Sanciones de la Ley de Seguridad Ciudadana (erc-05, bng-11).** Se cita el Anuario Estadístico
+  del Ministerio del Interior 2024, que confirma las cifras de 2023 y añade las de 2024. interior.gob.es
+  devuelve 403 a la descarga automática, así que se leyó en web.archive.org: dos capturas de la URL
+  oficial (mayo y octubre de 2026) son idénticas byte a byte. Se hicieron tres correcciones iguales en los
+  dos partidos: el importe es 174,8 M€; el 75 % (no el 74 %) del importe corresponde al art. 36.16; y en
+  Cataluña, Navarra y el País Vasco el anuario solo recoge los expedientes de la Administración General
+  del Estado.
+- **Evidencia de bng-12.** Se añaden Johnson y Leeds (2011), Kenwick, Vasquez y Powers (2015) y Leeds y
+  Johnson (2017). Kenwick et al. matizan el efecto disuasorio: en la era nuclear las alianzas no afectan a
+  que estalle una guerra, y antes de 1945 se asociaban a más conflictos. Ningún estudio muestra que salir
+  de una alianza reduzca el riesgo para quien sale, y Johnson y Leeds no hallan que las alianzas lleven a
+  sus miembros a iniciar o escalar disputas. Se mantiene «desfavorable» con el debate expuesto.
+- **Casos frontera de «Evidencia».** Se aplica la lectura que ya seguían cc-01, cc-02 y cc-10: sin
+  ninguna evaluación de efectos, «no_verificable».
+  - erc-05 pasa de «mixta» a «no_verificable»: solo hay datos de aplicación.
+  - bng-11 sigue en «mixta», porque tiene evidencia revisada por pares sobre un componente propio, las
+    pelotas de goma.
+  - cc-11 sigue en «mixta», ahora con base. El informe del Gobierno federal alemán al Bundestag
+    (Drucksache 18/11540, 2017) evalúa el reparto obligatorio de menores no acompañados entre Länder. Concluye
+    que alivió a los municipios más cargados, pero también recoge problemas de aplicación. Es una valoración
+    institucional y no independiente, así que no basta para «favorable». El mismo informe completa cc-11
+    «internacional», que sigue en «mixta».
+- **Otras fuentes secundarias sustituidas.**
+  - cc-10: el informe del Auditor General neozelandés (ahora accesible) sustituye a RNZ.
+  - bng-12: el informe de gasto de la OTAN (33.123 M€ en 2025, cifra estimada) sustituye a Ara.
+  - bng-06: la nota del CGPJ de 16-7-2025 sobre la sentencia del Pleno de la Sala de lo Social sustituye a
+    Noticias Jurídicas y confirma su fecha y su contenido.
+
+### Siguen abiertas
+
+- **erc-08 frente a bng-05 (financiación).** Los informes de la Generalitat sobre el salario mínimo de
+  referencia catalán siguen sin leerse: su repositorio exige superar una comprobación antibots, que no
+  se ha intentado eludir.
+- **cc-02, financiación.** Sigue sin cifra de los recursos del REF.
+- **cc-09.** El porcentaje estatal en los trayectos interinsulares sigue sin comprobarse.
+- **Prensa sin documento primario.** Siguen citadas por prensa las fuentes señaladas en las dudas de
+  cada `revision.json`: Vozpópuli, Hawái, El Debate y la copia de Lefebvre de la decisión del CEDS.
+- **Lectura de los artículos académicos.** Johnson y Leeds (2011) y Kenwick et al. (2015) se han leído en
+  su resumen.
+
+### Recuento tras esta revisión
+
+| Partido | Favorable | Mixta | Desfavorable | No verificable |
+|---|---|---|---|---|
+| CC | 12 | 70 | 4 | 10 |
+| ERC | 8 | 80 | 2 | 6 |
+| BNG | 11 | 70 | 3 | 12 |

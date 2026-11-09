@@ -77,10 +77,13 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
 - [ ] **11. [Externo → Yo] Encuestas nuevas de Sigma Dos, GAD3 y 40dB** publicadas antes del 24-nov.
 - [ ] **12. [Yo] Compromisos de campaña desde el 13-nov** (inicio de campaña), sobre todo para EH
   Bildu, PNV, PSC, UPN-PP y Adelante Andalucía, que hoy tienen cero posiciones en el paso 1.
-- [ ] **13. [Yo] Resolver las dudas abiertas de los revisores** (detalle en
+- [x] **13. [Yo] Resolver las dudas abiertas de los revisores** (detalle en
   `data/programas/*/revision.json` y `data/fase3/auditoria_coherencia.md`): cifras de AIReF citadas a
   través de prensa en ERC (airef.es no fue accesible para ese revisor), STC 31/2010 citada vía El Salto,
   datos de Interior vía Europa Press, evidencia de bng-12 apoyada en un solo estudio.
+  Hecho (9-nov): AIReF, STC 31/2010 (BOE), anuario de Interior y estudios revisados por pares sustituyen a
+  la prensa; corrigieron cifras de erc-02, erc-01, erc-05 y bng-11. Quedan erc-08 (web de la Generalitat
+  bloquea lectores automáticos), cc-02, cc-09 y algunas fuentes de prensa menores.
 - [ ] **14. [Yo] Calibrar la incertidumbre del paso 3 con datos históricos** (error de encuestas y
   cambios entre elecciones por provincia) en lugar de los parámetros razonados actuales (k = 0,04 /
   0,05).

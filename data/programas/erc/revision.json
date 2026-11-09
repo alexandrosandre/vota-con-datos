@@ -1,7 +1,7 @@
 {
  "aprobado": true,
  "revisor": "Claude (Anthropic), pasada independiente",
- "fecha": "2026-11-08",
+ "fecha": "2026-11-09",
  "cambios": [
   {
    "propuesta": "erc-01",
@@ -471,12 +471,171 @@
    "antes": "El coste recae en personas con patrimonio neto superior a 3 M€ residentes en comunidades que bonifican el Impuesto sobre el Patrimonio; en 2023 el 89 % de la recaudación procedió de Madrid. El beneficio es la recaudación para el Estado (619 M€ en 2023).",
    "despues": "El coste recae en personas con patrimonio neto superior a 3 M€ residentes en comunidades que bonifican el Impuesto sobre el Patrimonio: según Hacienda, 12.010 declarantes en 2023; el 89 % de la recaudación procedió de Madrid. El beneficio es la recaudación para el Estado (619 M€ en 2023 según la IGAE; 623 M€ según Hacienda en septiembre de 2023).",
    "motivo": "auditoría de coherencia: se añade el número de declarantes (12.010, nota de Hacienda de 20-9-2023) al campo «beneficiarios»."
+  },
+  {
+   "propuesta": "erc-01",
+   "criterio": "legal",
+   "antes": "La ordinalidad no figura en la normativa vigente y, según El Salto, el Tribunal Constitucional interpretó en 2010 un principio similar del Estatuto de 2006 como una aspiración política y no como una obligación.",
+   "despues": "La ordinalidad que pide el programa no figura en la LOFCA ni en la Ley 22/2009 del sistema vigente. El Estatuto de 2006 recoge un principio parecido (art. 206.5: la nivelación no puede alterar la posición de Cataluña en renta por habitante), y el Tribunal Constitucional (STC 31/2010, FJ 134) lo declaró constitucional solo con un alcance limitado: no es una condición que el Estatuto pueda imponer al Estado, sino la expresión de un deber que ya le impone la Constitución, y la garantía solo opera si Cataluña pierde posición por su propia aportación a la nivelación, no por la aplicación general de esos mecanismos.",
+   "motivo": "fuente primaria: STC 31/2010 (BOE núm. 172, FJ 134 y fallo). El TC no calificó el art. 206.5 EAC de «aspiración política»: lo declaró constitucional interpretado con un alcance limitado (deber constitucional del Estado; la garantía solo opera cuando la pérdida de posición se debe a la aportación de Cataluña a la nivelación). Se corrige el texto atribuido a El Salto y se comprueba en la LOFCA y la Ley 22/2009 (texto consolidado) que no recogen la ordinalidad."
+  },
+  {
+   "propuesta": "erc-01",
+   "criterio": "legal",
+   "antes": "fuentes: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229, https://www.elsaltodiario.com/economia/nuevo-modelo-financiacion-autonomica-propone-gobierno-se-congelo-puede-pasar-ahora",
+   "despues": "fuentes: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229, https://www.boe.es/diario_boe/txt.php?id=BOE-A-2010-11409, https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087, https://www.boe.es/buscar/act.php?id=BOE-A-2009-20375, https://www.boe.es/buscar/act.php?id=BOE-A-1980-21166",
+   "motivo": "fuente primaria: se sustituye El Salto por la STC 31/2010 publicada en el BOE y se añaden el Estatuto, la Ley 22/2009 y la LOFCA (textos consolidados)."
+  },
+  {
+   "propuesta": "erc-02",
+   "criterio": "financiacion",
+   "antes": "La AIReF calcula 2.532 M€ el primer año y 15.657 M€ acumulados hasta 2030 para el conjunto (cifras de su Observatorio de deuda recogidas por ElDerecho.com y El Independiente; airef.es no fue accesible). No se ha localizado una cifra oficial por comunidad que respalde los 1.500 M€ anuales que el programa atribuye a Cataluña: un cálculo proporcional propio, con su peso en la condonación (20,5 %), daría del orden de 520 M€ el primer año.",
+   "despues": "La AIReF (Observatorio de deuda, noviembre de 2025) calcula 2.532 M€ el primer año y 15.657 M€ acumulados hasta 2030 para el conjunto. Para Cataluña, con una condonación de 17.104 M€, estima unos 457 M€ de ahorro en intereses el primer año y 3.226 M€ acumulados hasta 2030, alrededor de un tercio de los 1.500 M€ anuales que cita el programa.",
+   "motivo": "fuente primaria: Observatorio de deuda de la AIReF (noviembre de 2025), ficha de Cataluña: la AIReF sí publica una cifra por comunidad (457 M€ el primer año, 3.226 M€ hasta 2030 sobre 17.104 M€ condonados). Sustituye al cálculo proporcional propio (520 M€). La valoración no cambia: la cifra del programa es un ahorro atribuido, no la financiación propuesta."
+  },
+  {
+   "propuesta": "erc-02",
+   "criterio": "financiacion",
+   "antes": "fuentes: https://www.hacienda.gob.es/es-es/prensa/noticias/documents/09-12-25%20presentaci%c3%93n%20proyecto%20de%20ley%20condonaci%c3%93n%20deuda%20ccaa.pdf, https://elderecho.com/implicaciones-de-la-propuesta-de-condonacion-de-deuda-autonomica-y-reforma-de-mecanismos-de-financiacio, https://www.elindependiente.com/economia/2025/11/05/cataluna-comunidad-valenciana-murcia-seguiran-fuera-limite-legal-deuda-2050-condonacion/",
+   "despues": "fuentes: https://www.hacienda.gob.es/es-es/prensa/noticias/documents/09-12-25%20presentaci%c3%93n%20proyecto%20de%20ley%20condonaci%c3%93n%20deuda%20ccaa.pdf, https://www.airef.es/wp-content/uploads/2025/11/Observatorio-de-deuda/Observatorio.pdf, https://www.airef.es/es/noticias/la-airef-analiza-las-implicaciones-de-la-propuesta-de-condonacion-de-la-deuda-autonomica-y-la-reforma-de-los-mecanismos-de-financiacion-en-el-observatorio-de-deuda/",
+   "motivo": "fuente primaria: Observatorio de deuda de la AIReF (noviembre de 2025, PDF en airef.es, ahora accesible) y su nota de 5-11-2025, que sustituyen a ElDerecho.com y El Independiente."
+  },
+  {
+   "propuesta": "erc-02",
+   "criterio": "evidencia",
+   "antes": "La AIReF advierte de riesgos de incentivos fiscales inadecuados y pide que la condonación vaya acompañada de condicionalidad y se integre en una reforma de la financiación.",
+   "despues": "La AIReF advierte de riesgos de incentivos fiscales inadecuados si la condonación no se acompaña de condicionalidad vinculada a las reglas fiscales, y pide integrarla en una reforma de la financiación autonómica.",
+   "motivo": "fuente primaria: Observatorio de deuda de la AIReF (noviembre de 2025). El 29,3 % y el 23,8 % son la ratio del segundo trimestre de 2025 antes y después de la quita (no una proyección), y la ficha de Cataluña dice que el 13 % no se alcanza en el horizonte proyectado hasta 2050. Se precisa el texto."
+  },
+  {
+   "propuesta": "erc-02",
+   "criterio": "evidencia",
+   "antes": "Según sus proyecciones, la deuda de Cataluña pasaría del 29,3 % al 23,8 % del PIB y seguiría por encima del límite legal del 13 % hasta al menos 2050.",
+   "despues": "Con datos del segundo trimestre de 2025, la condonación bajaría la deuda de Cataluña del 29,3 % al 23,8 % del PIB, y según sus proyecciones seguiría por encima del límite legal del 13 % en todo el horizonte proyectado, hasta 2050.",
+   "motivo": "fuente primaria: Observatorio de deuda de la AIReF (noviembre de 2025). El 29,3 % y el 23,8 % son la ratio del segundo trimestre de 2025 antes y después de la quita (no una proyección), y la ficha de Cataluña dice que el 13 % no se alcanza en el horizonte proyectado hasta 2050. Se precisa el texto."
+  },
+  {
+   "propuesta": "erc-02",
+   "criterio": "evidencia",
+   "antes": "fuentes: https://elderecho.com/implicaciones-de-la-propuesta-de-condonacion-de-deuda-autonomica-y-reforma-de-mecanismos-de-financiacio, https://www.elindependiente.com/economia/2025/11/05/cataluna-comunidad-valenciana-murcia-seguiran-fuera-limite-legal-deuda-2050-condonacion/",
+   "despues": "fuentes: https://www.airef.es/wp-content/uploads/2025/11/Observatorio-de-deuda/Observatorio.pdf, https://www.airef.es/es/noticias/la-airef-analiza-las-implicaciones-de-la-propuesta-de-condonacion-de-la-deuda-autonomica-y-la-reforma-de-los-mecanismos-de-financiacion-en-el-observatorio-de-deuda/",
+   "motivo": "fuente primaria: Observatorio de deuda de la AIReF (noviembre de 2025, PDF en airef.es, ahora accesible) y su nota de 5-11-2025, que sustituyen a ElDerecho.com y El Independiente."
+  },
+  {
+   "propuesta": "erc-02",
+   "criterio": "largo_plazo",
+   "antes": "usar el ahorro en gasto corriente debilitaría la posición fiscal del conjunto.",
+   "despues": "usar el ahorro en gasto corriente podría debilitar la posición fiscal del conjunto.",
+   "motivo": "fuente primaria: Observatorio de deuda de la AIReF (noviembre de 2025): la AIReF dice que ese uso del ahorro «podría deteriorar» la posición fiscal agregada; se ajusta el condicional."
+  },
+  {
+   "propuesta": "erc-02",
+   "criterio": "largo_plazo",
+   "antes": "fuentes: https://elderecho.com/implicaciones-de-la-propuesta-de-condonacion-de-deuda-autonomica-y-reforma-de-mecanismos-de-financiacio, https://www.elindependiente.com/economia/2025/11/05/cataluna-comunidad-valenciana-murcia-seguiran-fuera-limite-legal-deuda-2050-condonacion/, https://ideas.repec.org/a/bla/kyklos/v61y2008i3p425-446.html",
+   "despues": "fuentes: https://ideas.repec.org/a/bla/kyklos/v61y2008i3p425-446.html, https://www.airef.es/wp-content/uploads/2025/11/Observatorio-de-deuda/Observatorio.pdf, https://www.airef.es/es/noticias/la-airef-analiza-las-implicaciones-de-la-propuesta-de-condonacion-de-la-deuda-autonomica-y-la-reforma-de-los-mecanismos-de-financiacion-en-el-observatorio-de-deuda/",
+   "motivo": "fuente primaria: Observatorio de deuda de la AIReF (noviembre de 2025, PDF en airef.es, ahora accesible) y su nota de 5-11-2025, que sustituyen a ElDerecho.com y El Independiente."
+  },
+  {
+   "propuesta": "erc-03",
+   "criterio": "evidencia",
+   "antes": "y recomendó integrar la planificación de Cercanías en las autoridades metropolitanas de transporte.",
+   "despues": "y recomendó integrar la gestión y la planificación de Cercanías y de sus infraestructuras en las autoridades de transporte público de cada área metropolitana.",
+   "motivo": "fuente primaria: Estudio de Infraestructuras de transporte de la AIReF (2020), pp. 11 y recomendación 16: confirma 3.600 M€ en Cercanías frente a 55.888 M€ en alta velocidad (1990-2018) y precisa el alcance de la recomendación."
+  },
+  {
+   "propuesta": "erc-03",
+   "criterio": "evidencia",
+   "antes": "fuentes: https://www.elespanol.com/invertia/empresas/construccion-infraestructuras/20200730/airef-denuncia-rentabilidad-socioeconomica-minima-corredores-velocidad/509199770_0.html",
+   "despues": "fuentes: https://www.airef.es/wp-content/uploads/2020/07/INFRAESTRUCTURAS/ESTUDIO_INFRAESTRUCTURAS_SPENDINGREVIEW.pdf",
+   "motivo": "fuente primaria: se sustituye El Español por el estudio de la AIReF (airef.es)."
+  },
+  {
+   "propuesta": "erc-03",
+   "criterio": "largo_plazo",
+   "antes": "fuentes: https://www.elespanol.com/invertia/empresas/construccion-infraestructuras/20200730/airef-denuncia-rentabilidad-socioeconomica-minima-corredores-velocidad/509199770_0.html, https://www.diaridetarragona.com/catalunya/274138/generalitat-renfe-firman-contrato-rodalies-1-407-millones-2028_amp.html",
+   "despues": "fuentes: https://www.diaridetarragona.com/catalunya/274138/generalitat-renfe-firman-contrato-rodalies-1-407-millones-2028_amp.html, https://www.airef.es/wp-content/uploads/2020/07/INFRAESTRUCTURAS/ESTUDIO_INFRAESTRUCTURAS_SPENDINGREVIEW.pdf",
+   "motivo": "fuente primaria: se sustituye El Español por el Estudio de Infraestructuras de transporte de la AIReF (2020), que contiene la recomendación citada."
+  },
+  {
+   "propuesta": "erc-05",
+   "criterio": "concrecion",
+   "antes": "fuentes: https://elderecho.com/las-multas-por-la-ley-mordaza-aumentan-un-17-en-2023, https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf#page=8",
+   "despues": "fuentes: https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf#page=8, https://www.interior.gob.es/opencms/pdf/archivos-y-documentacion/documentacion-y-publicaciones/anuarios-y-estadisticas/ultimo-anuario-estadistico/Anuario-Estadistico-2024_web.pdf",
+   "motivo": "fuente primaria: Anuario Estadístico del Ministerio del Interior 2024 (tablas 3-3-1 y 3-3-2, con 2023 y 2024), leído en copias de web.archive.org de la URL oficial (interior.gob.es devuelve 403 a la descarga automática); sustituye a ElDerecho.com/Europa Press."
+  },
+  {
+   "propuesta": "erc-05",
+   "criterio": "financiacion",
+   "antes": "Según el Anuario Estadístico del Ministerio del Interior (recogido por Europa Press), en 2023 se impusieron con esta ley 284.512 sanciones por 174 M€, el 74 % por tenencia de drogas;",
+   "despues": "Según el Anuario Estadístico del Ministerio del Interior, en 2023 se impusieron con esta ley 284.512 sanciones por 174,8 M€, el 75 % del importe por consumo o tenencia de drogas en lugares públicos;",
+   "motivo": "fuente primaria: Anuario Estadístico del Ministerio del Interior (tablas 3-3-1 y 3-3-2): 174.764.289 € en 2023, de ellos 130.467.787 € por el art. 36.16 (74,7 %, se redondea a 75 %). Se corrige el redondeo y se precisa que el porcentaje es del importe."
+  },
+  {
+   "propuesta": "erc-05",
+   "criterio": "financiacion",
+   "antes": "fuentes: https://elderecho.com/las-multas-por-la-ley-mordaza-aumentan-un-17-en-2023",
+   "despues": "fuentes: https://www.interior.gob.es/opencms/pdf/archivos-y-documentacion/documentacion-y-publicaciones/anuarios-y-estadisticas/ultimo-anuario-estadistico/Anuario-Estadistico-2024_web.pdf",
+   "motivo": "fuente primaria: se sustituye ElDerecho.com/Europa Press por el Anuario Estadístico del Ministerio del Interior 2024 (copia de web.archive.org de la URL oficial, idéntica byte a byte en las capturas de 18-5-2026 y 12-10-2026)."
+  },
+  {
+   "propuesta": "erc-05",
+   "criterio": "evidencia",
+   "antes": "mixta",
+   "despues": "no_verificable",
+   "motivo": "fuente primaria: Anuario del Ministerio del Interior (tabla 3-3-2; 75 % del importe por el art. 36.16; el art. 36.6 es «desobediencia o resistencia»). Decisión sobre el caso frontera de la auditoría: los datos solo describen la aplicación de la ley y no hay evaluación de sus efectos, de modo que no hay base para valorar si la medida consigue su objetivo. Se aplica la misma lectura que en cc-01, cc-02 y cc-10 (sin evaluación → «no_verificable»). bng-11 sigue en «mixta» por un hecho distinto: evidencia revisada por pares sobre las pelotas de goma, componente que solo propone el BNG."
+  },
+  {
+   "propuesta": "erc-05",
+   "criterio": "evidencia",
+   "antes": "Los datos del Ministerio del Interior muestran que en 2023 el 74 % del importe de las multas correspondió a tenencia de drogas, mientras que las sanciones por desobediencia (18.893) y por faltas de respeto a agentes (22.260) fueron una parte menor. No se ha localizado una evaluación académica del efecto de la ley sobre el ejercicio del derecho de protesta.",
+   "despues": "No se ha localizado una evaluación académica ni institucional del efecto de la ley sobre el ejercicio del derecho de protesta o sobre la seguridad, y sin ella no se puede valorar si la derogación conseguiría su objetivo. Los datos del Ministerio del Interior solo describen su aplicación: en 2023 el 75 % del importe de las multas correspondió a consumo o tenencia de drogas en lugares públicos, y las sanciones por desobediencia o resistencia a la autoridad (18.893) y por faltas de respeto a agentes (22.260) fueron una parte menor.",
+   "motivo": "fuente primaria: Anuario del Ministerio del Interior (tabla 3-3-2; 75 % del importe por el art. 36.16; el art. 36.6 es «desobediencia o resistencia»). Decisión sobre el caso frontera de la auditoría: los datos solo describen la aplicación de la ley y no hay evaluación de sus efectos, de modo que no hay base para valorar si la medida consigue su objetivo. Se aplica la misma lectura que en cc-01, cc-02 y cc-10 (sin evaluación → «no_verificable»). bng-11 sigue en «mixta» por un hecho distinto: evidencia revisada por pares sobre las pelotas de goma, componente que solo propone el BNG."
+  },
+  {
+   "propuesta": "erc-05",
+   "criterio": "evidencia",
+   "antes": "fuentes: https://elderecho.com/las-multas-por-la-ley-mordaza-aumentan-un-17-en-2023",
+   "despues": "fuentes: https://www.interior.gob.es/opencms/pdf/archivos-y-documentacion/documentacion-y-publicaciones/anuarios-y-estadisticas/ultimo-anuario-estadistico/Anuario-Estadistico-2024_web.pdf",
+   "motivo": "fuente primaria: se sustituye ElDerecho.com/Europa Press por el Anuario Estadístico del Ministerio del Interior 2024."
+  },
+  {
+   "propuesta": "erc-05",
+   "criterio": "beneficiarios",
+   "antes": "Beneficia a las personas que serían sancionadas con la norma actual (284.512 sanciones en 2023, en su mayoría por drogas).",
+   "despues": "Beneficia a las personas que serían sancionadas con la norma actual (284.512 sanciones en 2023 y 327.761 en 2024, en su mayoría por drogas). En Cataluña, Navarra y el País Vasco el anuario solo recoge los expedientes de la Administración General del Estado, no los de las policías autonómicas.",
+   "motivo": "fuente primaria: el Anuario del Ministerio del Interior advierte que en Cataluña, Navarra y el País Vasco solo publica los expedientes tramitados por la Administración General del Estado; se añade esa salvedad y la cifra de 2024 (327.761)."
+  },
+  {
+   "propuesta": "erc-05",
+   "criterio": "beneficiarios",
+   "antes": "fuentes: https://elderecho.com/las-multas-por-la-ley-mordaza-aumentan-un-17-en-2023",
+   "despues": "fuentes: https://www.interior.gob.es/opencms/pdf/archivos-y-documentacion/documentacion-y-publicaciones/anuarios-y-estadisticas/ultimo-anuario-estadistico/Anuario-Estadistico-2024_web.pdf",
+   "motivo": "fuente primaria: se sustituye ElDerecho.com/Europa Press por el Anuario Estadístico del Ministerio del Interior 2024."
+  },
+  {
+   "propuesta": "erc-05",
+   "criterio": "largo_plazo",
+   "antes": "fuentes: https://elderecho.com/las-multas-por-la-ley-mordaza-aumentan-un-17-en-2023",
+   "despues": "fuentes: https://www.interior.gob.es/opencms/pdf/archivos-y-documentacion/documentacion-y-publicaciones/anuarios-y-estadisticas/ultimo-anuario-estadistico/Anuario-Estadistico-2024_web.pdf",
+   "motivo": "fuente primaria: se sustituye ElDerecho.com/Europa Press por el Anuario Estadístico del Ministerio del Interior 2024."
+  },
+  {
+   "propuesta": "erc-03",
+   "criterio": "beneficiarios",
+   "antes": "fuentes: https://www.elespanol.com/invertia/empresas/construccion-infraestructuras/20200730/airef-denuncia-rentabilidad-socioeconomica-minima-corredores-velocidad/509199770_0.html, https://www.diaridetarragona.com/catalunya/274138/generalitat-renfe-firman-contrato-rodalies-1-407-millones-2028_amp.html",
+   "despues": "fuentes: https://www.airef.es/wp-content/uploads/2020/07/INFRAESTRUCTURAS/ESTUDIO_INFRAESTRUCTURAS_SPENDINGREVIEW.pdf, https://www.diaridetarragona.com/catalunya/274138/generalitat-renfe-firman-contrato-rodalies-1-407-millones-2028_amp.html",
+   "motivo": "fuente primaria: Estudio de Infraestructuras de transporte de la AIReF (2020), p. 11: Cercanías transportó 562,2 millones de viajeros en 2018, el 89 % de los usuarios del ferrocarril. Sustituye a El Español."
+  },
+  {
+   "propuesta": "erc-05",
+   "criterio": "beneficiarios (resumen de la propuesta)",
+   "antes": "284.512 sanciones en 2023 por 174 M€, sin contar la mayoría de expedientes de Cataluña y el País Vasco. El 74 % del importe correspondió a tenencia de drogas.",
+   "despues": "284.512 sanciones en 2023 por 174,8 M€, sin contar los expedientes de las policías autonómicas de Cataluña, Navarra y el País Vasco. El 75 % del importe correspondió a consumo o tenencia de drogas en lugares públicos.",
+   "motivo": "fuente primaria: Anuario Estadístico del Ministerio del Interior 2024 (tablas 3-3-1 y 3-3-2): 174.764.289 € en 2023; el art. 36.16 (consumo o tenencia de drogas en lugares públicos) supone el 74,7 % del importe; en Cataluña, Navarra y el País Vasco solo se publican los expedientes de la Administración General del Estado. Mismo ajuste en erc-05 y bng-11."
   }
  ],
  "dudas": [
   "Comprobación realizada: las 12 citas son literales y de la página indicada (verify_quotes: 239 citas, 0 no encontradas) y las traducciones al castellano son fieles; la selección de las 12 prioridades coincide con extraccion.json y con lo que destacan las introducciones de los bloques (pp. 7, 9, 11, 14, 18-20, 22, 37, 39). Se abrieron las 51 URL citadas (los PDF y DOCX, extrayendo su texto): todas existen y, tras las correcciones, respaldan lo que se afirma. También se abrieron todas las fuentes nuevas.",
-  "airef.es devolvió error de certificado en esta revisión. Las cifras de la AIReF sobre la condonación (2.532 M€ y 15.657 M€; deuda catalana del 29,3 % al 23,8 % del PIB) se mantienen citadas a través de ElDerecho.com y El Independiente, y el texto lo indica.",
-  "erc-01 «Encaje legal»: no se pudo leer el FJ de la STC 31/2010 sobre el art. 206.5 del Estatut (la página del buscador del TC se corta antes de los fundamentos). La afirmación se mantiene atribuida a El Salto.",
   "Peso de «mixta» (82 de 96): 12 de concreción salen de la rúbrica (ninguna medida fija plazo), 8 de financiación también (coste estimable y el programa no dice cómo se paga) y 11 de largo plazo describen ventajas y riesgos a la vez. En los demás casos, cada «mixta» cita ahora evidencia en ambos sentidos o la dependencia del diseño. Hay dos casos frontera en «Evidencia»: en erc-09 la única fuente (EE. UU.) respalda que subir el tipo aumenta la recaudación, pero no se evalúa la rebaja a las rentas del trabajo; en erc-11 el informe europeo respalda el diagnóstico, pero no el efecto de las medidas.",
   "«A quién beneficia»: se pasaron erc-01 y erc-02 a «favorable» para aplicar el mismo criterio que la evaluación de CC (cc-02, cc-03), que da «favorable» cuando la medida financia los servicios de toda la población de una comunidad y el tamaño y el pagador están documentados. Convendría añadir a criterios.json una rúbrica para este criterio que se aplique igual a todos los partidos.",
   "erc-06 «Coste y financiación» se mantiene en «favorable» porque delegar la competencia no tiene coste presupuestario directo. La rúbrica pide, para «favorable», que el programa identifique una financiación, algo que no aplica a una medida sin gasto público. Conviene fijar una regla para las medidas regulatorias; erc-08, también regulatoria, está en «mixta» porque se cita un coste para las administraciones como empleadoras.",
@@ -484,7 +643,6 @@
   "erc-08 «Encaje legal»: la afirmación de que el art. 150.2 CE no tiene precedentes en materia laboral se formula como «sin precedentes conocidos», sin haberla contrastado con la lista completa de leyes orgánicas de transferencia.",
   "Las fuentes académicas añadidas (Germann 2022; Esteller-Moré 2005; Baretti, Huber y Lichtblau 2002; Heppke-Falk y Wolff 2008) se han leído en su resumen o en la versión de documento de trabajo, no en el texto completo de la revista.",
   "Las 12 fuentes de «Concreción» enlazan al PDF del programa en la web de ERC con el ancla #page=N, según la rúbrica nueva. La página coincide con la numeración por saltos de página del texto catalogado (SHA-256 528ac115…).",
-  "Auditoría de coherencia (2026-11-08): erc-08 «Coste y financiación» se mantiene en «mixta» frente a bng-05 («no_verificable»). La diferencia de diseño lo justifica en parte (ERC fija una cuantía, 1.460 €; el BNG no define su referencia), pero el texto no cifra el coste ni cita una estimación pública. La Generalitat publicó informes sobre un «salari mínim de referència català» y su incidencia potencial (2019, actualizado en 2025), que podrían cuantificarlo; el repositorio de la Biblioteca Digital de la Generalitat bloqueó la descarga automática y no se ha podido leer.",
-  "Auditoría de coherencia: erc-05 «Evidencia» es «mixta» con datos descriptivos de sanciones y sin evaluación del efecto de la ley; bng-11 es «mixta» por evidencia revisada por pares sobre pelotas de goma, un componente que solo propone el BNG. Es un caso frontera con «no_verificable» que no se ha cambiado."
+  "Auditoría de coherencia (2026-11-08): erc-08 «Coste y financiación» se mantiene en «mixta» frente a bng-05 («no_verificable»). La diferencia de diseño lo justifica en parte (ERC fija una cuantía, 1.460 €; el BNG no define su referencia), pero el texto no cifra el coste ni cita una estimación pública. La Generalitat publicó informes sobre un «salari mínim de referència català» y su incidencia potencial (2019, actualizado en 2025), que podrían cuantificarlo; el repositorio de la Biblioteca Digital de la Generalitat bloqueó la descarga automática y no se ha podido leer."
  ]
 }
