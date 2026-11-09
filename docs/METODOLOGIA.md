@@ -50,11 +50,12 @@ circunscripción.
 
 Ver `docs/research/vaa_estado_del_arte.md`. 30 afirmaciones aprox. a partir de propuestas reales
 (programas 29-N y compromisos del candidato verificados en `data/promesas/`); 5 niveles + saltar;
-pesos 0,5/1/2; posiciones de partido desde el programa (cita y página) o compromisos de campaña
-posteriores a la convocatoria (cita, medio, fecha, URL), codificadas según
+pesos 0,5/1/2; posiciones de partido desde el programa del 29-N (cita y página) o propuestas públicas
+en primera persona de sus líderes nacionales o regionales para estas elecciones o la próxima
+legislatura, incluida la precampaña (cita, quién, formato, medio, fecha, URL), codificadas según
 `docs/prompts/2_codificacion_posiciones.md` y verificadas una a una por un segundo agente
 independiente (`data/fase1/verificacion_g*.json`); `pipeline/build_fase1.py` rechaza citas de
-programa no literales y fuentes de campaña sin URL o anteriores al 6-oct; afinidad = distancia de Manhattan
+programa no literales, declaraciones sin autor, URL o fecha, y las de precampaña sin 'marco'; afinidad = distancia de Manhattan
 normalizada; partidos comparables si cobertura ≥ 50 %; con 5+ temas comunes pero menos cobertura, grupo aparte "con pocos datos"; empate técnico < 5 puntos. Se recodifica cada vez
 que se publica un programa.
 

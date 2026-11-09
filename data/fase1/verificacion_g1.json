@@ -1,46 +1,60 @@
 {
  "grupo": "g1",
- "verificador": "Claude (Anthropic) — verificación independiente",
- "fecha": "2026-11-08",
+ "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2",
+ "fecha": "2026-11-09",
  "aprobado": true,
- "revisadas": 19,
+ "revisadas": 20,
  "cambios": [
   {
+   "partido": "pp",
+   "pregunta": "q14",
+   "antes": 1,
+   "despues": 1,
+   "motivo": "Solo formato y quien: el «Contrato con España» (The Objective, 19-oct, texto íntegro) es un compromiso personal firmado por Feijóo y presentado por él en un acto público en Madrid («Es, ante todo, mi compromiso personal con los españoles»), no un documento oficial del partido; vale como declaración pública en primera persona del candidato, pero no debe etiquetarse «documento oficial» (reservado a textos del partido con quien = partido). El título es «Contrato con España», no «Mi contrato con España», y el texto no contiene «Me comprometo a…» (sí «En ello empeño mi firma y mi palabra»): se corrige la nota. Valor decidido de forma independiente: «Quien venga a delinquir, deberá marcharse» apoya la expulsión de extranjeros que delinquen, pero no habla de todos los condenados ni de cumplir la pena en su país: +1."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q15",
+   "antes": -2,
+   "despues": -2,
+   "motivo": "Solo formato y quien (mismo motivo que q14). Cita literal verificada: «se establecerá por ley la prohibición de regulaciones colectivas»; rechazo expreso como compromiso de gobierno: -2."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q23",
+   "antes": 2,
+   "despues": 2,
+   "motivo": "Solo nota: el documento se titula «Contrato con España»."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q25",
+   "antes": 2,
+   "despues": 2,
+   "motivo": "Solo formato: la crónica de pp.es (8-nov) sitúa el acto en Málaga pero no dice que fuera un mitin; se deja «acto de campaña (Málaga)»."
+  },
+  {
    "partido": "psoe",
-   "pregunta": "q26",
-   "antes": -1,
-   "despues": null,
-   "motivo": "La fuente (Infobae/Europa Press, 8-nov, mitin en Bilbao) solo recoge el rechazo de Sánchez al 5 % del PIB que pidió Trump; no menciona la OTAN, el 3,5 % ni 2035. El 5 % aliado incluye el 3,5 % de defensa básica, pero rechazar la cifra total no implica de forma inequívoca rechazar el 3,5 %: medida relacionada pero distinta, y ante la duda null. No se halló otra declaración de campaña (desde el 6-oct) sobre el 3,5 %."
+   "pregunta": "q10",
+   "antes": 2,
+   "despues": 2,
+   "motivo": "Solo cita y nota: la cita ponía entre comillas «el compromiso de destinar al menos el 7 por ciento del PIB en materia sanitaria» como si fueran palabras textuales, pero en Infobae (6-nov) es estilo indirecto de la crónica («Sánchez ha anunciado que el PSOE incluirá en su programa electoral el compromiso…»). Se sustituye por esa frase literal sin comillas internas. La fuente vale: anuncio público, con nombre, fecha y acto (Diálogos ID), de Kilian Sánchez, secretario de Sanidad de la Ejecutiva Federal (dirigente nacional), con el mismo criterio aplicado a Figaredo (Vox q05/q07) y a la crónica en estilo indirecto de Sánchez (PSOE q21). Coincide exactamente con la afirmación: +2."
   },
   {
    "partido": "vox",
-   "pregunta": "q05",
+   "pregunta": "q27",
    "antes": 2,
    "despues": 2,
-   "motivo": "Solo fuente: el artículo citado (elDiario.es, 8-oct) dice que Figaredo lo repitió «esta semana», lo que no garantiza fecha ≥ 6-oct (la semana empezó el 5-oct). Se sustituye por 101TV Sevilla (6-nov), donde Figaredo propone expresamente los tipos del 15 % y el 25 %. Valor sin cambios."
-  },
-  {
-   "partido": "vox",
-   "pregunta": "q07",
-   "antes": 2,
-   "despues": 2,
-   "motivo": "Solo fuente: la fuente principal era la síntesis periodística de El Debate (24-oct), que atribuye la medida a un programa económico anterior sin fecha, el mismo tipo de fuente que las notas del codificador descartan para otras celdas. Se sustituye por la declaración directa y fechada de Figaredo en 101TV Sevilla (6-nov, no de precampaña como decía la nota). Valor sin cambios."
-  },
-  {
-   "partido": "vox",
-   "pregunta": "q03",
-   "antes": 2,
-   "despues": 2,
-   "motivo": "Solo nota: la frase citada es de Maribel Cerezo, candidata de Vox por Baleares, no de Abascal (Press Digital/Europa Press, 24-oct). Es candidata del partido en estas elecciones, así que la fuente vale. Valor sin cambios."
+   "motivo": "Solo formato: EFE (12-oct) lo describe como «comparecencia en el Mirador de Isabel II». Valor decidido de forma independiente: Abascal exige en primera persona que la frontera sea «militarizada y reforzada estructuralmente»; militarizar la frontera es desplegar en ella a las Fuerzas Armadas, y lo plantea de forma expresa y prioritaria: +2."
   }
  ],
  "dudas": [
-  "PP q01 (-1 mantenido): la oposición a los topes de alquiler no es expresa; se deduce de que el PP propone derogar la Ley de Vivienda de 2023, única base legal de los límites en zonas tensionadas, y ofrece como alternativa deducciones fiscales voluntarias. Si el programa del 10-nov incluye una ley de vivienda sustitutiva, hay que recodificar.",
-  "PP q18 (-1 mantenido): «cada comunidad responderá de su deuda» va contra la condonación, pero la «reestructuración» propuesta no se detalla; si el programa la concreta como quita, la celda debe pasar a null o cambiar.",
-  "PP q25 (+2 mantenido): el compromiso se refiere a «políticos» condenados por corrupción, no a cualquier persona condenada por esos delitos. Se considera el caso central de la afirmación.",
-  "PSOE q21 (+2 mantenido): el compromiso de reformar la Constitución está en estilo indirecto de EFE («aseguró que… blindará en la Constitución el derecho al aborto»), no entrecomillado.",
-  "Vox q27 (+2 mantenido): exigencia al Gobierno actual de «militarizar» la frontera; la fuente no nombra a las Fuerzas Armadas.",
-  "Vox q05 (+2 mantenido): Figaredo admite que la aplicación depende de acuerdos y lo presentó como planteamiento «de máximo»; se mantiene +2 porque la propuesta es expresa y central.",
-  "Todo el grupo debe recodificarse cuando se publiquen los programas (el del PP se anuncia para el 10-nov). UPN y PSC quedan sin ninguna posición conocida."
+  "PP q17 (-1 mantenido): las palabras de Feijóo en Vigo (24-oct) —«se reparte lo que es de todos entre todos», «la financiación autonómica no es la moneda con la que se compra un gobierno», «fin a las discriminaciones y a los privilegios de unos pocos»— rechazan la financiación singular negociada bilateralmente; que una comunidad recaude todos sus impuestos contradice el reparto común, pero la frase no menciona la recaudación propia y su objeción a los «privilegios de unos pocos» no cubre por sí sola un modelo generalizable. Indirecta: -1. Recodificar con el programa del 10-nov.",
+  "PP q01 (-1 mantenido): Feijóo critica el «planteamiento sectario del Gobierno que intenta controlar los precios» de la vivienda (Infobae, 24-oct, Vigo) y propone aumentar la oferta; no nombra los topes de alquiler. Indirecta: -1.",
+  "PP q14/q15: el «Contrato con España» es un texto personal del candidato, no un documento del partido; se acepta como declaración pública en primera persona (presentado y firmado por él, 19-oct). No consta que UPN lo asuma.",
+  "PSOE q10 y Vox q05/q07: crónicas en estilo indirecto, pero atribuidas con nombre, cargo, fecha y acto a dirigentes nacionales con cartera (Kilian Sánchez, secretario federal de Sanidad; José María Figaredo, portavoz de Economía y secretario general del Grupo Parlamentario). Se aceptan como «crónica que recoge sus palabras»; no son síntesis periodísticas sin atribución. En 101TV las cifras de IRPF y la cuota cero se atribuyen expresamente a Figaredo («La primera medida planteada por Figaredo…», «Figaredo señaló que el mecanismo…»).",
+  "Vox q29 (+1 mantenido): Abascal en Onda Cero (4-nov) cuenta que explicó a Milei que Vox no podía apoyar Mercosur porque «iba contra los intereses» de agricultores y ganaderos; oposición expresa al acuerdo, pero como anécdota y sin formularla como medida (oponerse a la ratificación): +1.",
+  "PP q18 (null): retirada confirmada. La única fuente era el texto del programa adelantado por Europa Press el 7-nov (filtración previa a la presentación oficial). Las declaraciones de Feijóo sobre la quita de deuda halladas son de 2025, fuera de plazo.",
+  "Todo el grupo debe recodificarse con los programas oficiales (el del PP se presenta el 10-nov). UPN y PSC siguen sin ninguna posición conocida."
  ]
 }

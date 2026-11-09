@@ -49,6 +49,11 @@ export interface PosicionPartido {
   url?: string | null;
   medio?: string | null;
   fecha?: string | null;
+  /** Líder que lo dijo en primera persona (o el partido, si es un documento oficial). */
+  quien?: string | null;
+  formato?: string | null;
+  /** Para declaraciones de precampaña: por qué se refieren a estas elecciones. */
+  marco?: string | null;
   nota?: string | null;
 }
 

@@ -26,3 +26,16 @@ Ningún partido del grupo ha publicado un programa del 29N. `partidos.json` no s
   - Podemos q06: la fuente no menciona el salario.
   - Compromís q29: la fuente no es un candidato.
   - UPC q16: «derecho a decidir», codificado como null.
+
+## Protocolo v2 (9-nov)
+
+- Todas las celdas con fuente «campaña» llevan ahora `quien` y `formato`. Ninguna es anterior al 6-oct, así que ninguna necesita `marco`.
+- Las notas oficiales de frenteamplio.info y aramesfrontampli.cat y el Manifiesto de UPC se tratan como documento oficial del partido.
+- **Cambio de valor**: Frente Amplio q04 baja de +2 a +1. La permanencia del impuesto no es expresa y EFE (7-nov) lo llama «impuesto extraordinario».
+- **Celdas nuevas** (Frente Amplio; Emilio Delgado, cabeza de lista por Madrid, entrevista de Europa Press del 8-nov):
+  - q06 = +1: reducir la jornada, sin cifra.
+  - q13 = −1: rechaza la «prioridad nacional» de Vox.
+  - q15 = +1: defiende la regularización frente al «efecto llamada».
+  - Las tres son dudosas.
+- **Sin celdas nuevas** para Podemos, Compromís, Ara Més, UPC y Adelante Andalucía. Las declaraciones encontradas son genéricas, anteriores a la convocatoria sin referencia al 29N, o columnas de opinión.
+- Europa Press (europapress.es) no se pudo abrir. Se usaron sus despachos en Infobae y Demócrata.

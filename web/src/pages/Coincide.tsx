@@ -73,8 +73,8 @@ function Intro({ n, onStart, hechas }: { n: number; onStart: () => void; hechas:
         </div>
       )}
       <p style={{ fontSize: '1.05rem' }}>
-        Vas a ver <strong>{n} afirmaciones</strong>. Cada una sale de una propuesta real de esta campaña, de un programa oficial o de un
-        compromiso público de un cabeza de lista. No te decimos de quién es hasta el final, para que juzgues la idea y no las siglas.
+        Vas a ver <strong>{n} afirmaciones</strong>. Cada una sale de una propuesta real de estas elecciones: de un programa oficial o de lo que
+        sus líderes han propuesto en público. No te decimos de quién es hasta el final, para que juzgues la idea y no las siglas.
       </p>
       <ul style={{ margin: 0, paddingLeft: 20, color: 'var(--ink-2)' }}>
         <li>Responde en cinco niveles, o pulsa <em>Saltar</em> si no lo sabes, no quieres contestar o no te importa. Lo que saltas no cuenta.</li>
@@ -176,20 +176,27 @@ function Detalle({ partidoId }: { partidoId: string }) {
             </p>
             {p?.cita && (
               <>
-                <span class="fuente-tag">{p.fuente === 'campaña' ? 'Compromiso de campaña' : 'Programa oficial'}</span>
+                <span class="fuente-tag">{p.fuente === 'campaña' ? 'Lo dijo en público' : 'Programa oficial'}</span>
                 <p class="quote">
                   «{p.cita}»{' '}
-                  {p.fuente === 'campaña' ? (
-                    p.url && (
-                      <a href={p.url} target="_blank" rel="noopener" class="muted">
-                        ({p.medio ?? 'fuente'}
-                        {p.fecha ? `, ${fmt.fecha(p.fecha)}` : ''})
-                      </a>
-                    )
-                  ) : p.pagina ? (
-                    <span class="muted">(p. {p.pagina})</span>
-                  ) : null}
+                  {p.fuente !== 'campaña' && p.pagina ? <span class="muted">(p. {p.pagina})</span> : null}
                 </p>
+                {p.fuente === 'campaña' && (
+                  <p class="muted" style={{ fontSize: '0.85rem' }}>
+                    — {p.quien}
+                    {p.formato ? `, ${p.formato}` : ''}
+                    {p.fecha ? `, ${fmt.fecha(p.fecha)}` : ''}
+                    {p.url && (
+                      <>
+                        {' · '}
+                        <a href={p.url} target="_blank" rel="noopener">
+                          {p.medio ?? 'fuente'}
+                        </a>
+                      </>
+                    )}
+                    {p.marco ? ` · Precampaña, referida a estas elecciones: «${p.marco}»` : ''}
+                  </p>
+                )}
               </>
             )}
             {p?.nota && <p class="muted">{p.nota}</p>}

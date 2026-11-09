@@ -8,7 +8,8 @@
 Comprobaciones (si falla alguna, termina con error y no se publica nada):
   * cada posición con fuente "programa" cita texto LITERAL del programa oficial del partido
     (misma normalización que verify_quotes.py);
-  * cada posición con fuente "campaña" tiene URL y fecha igual o posterior al 2026-10-06 (convocatoria);
+  * cada posición con fuente "campaña" tiene URL, fecha y autor (líder en primera persona); si es
+    anterior a la convocatoria (2026-10-06), un 'marco' que la refiera a estas elecciones;
   * valores en {-2..2} o null; afirmaciones y partidos conocidos.
 
 Uso: python3 -I pipeline/build_fase1.py
@@ -72,13 +73,17 @@ def main():
                         errores.append(f"{pid}/{qid}: cita de programa no literal: {(c.get('cita') or '')[:90]}")
                         continue
                 elif f == "campaña":
-                    if not c.get("url") or not (c.get("fecha") or "") >= CONVOCATORIA:
-                        errores.append(f"{pid}/{qid}: fuente de campaña sin URL o anterior a la convocatoria ({c.get('fecha')})")
+                    # Declaración pública en primera persona de un líder (docs/prompts/2_codificacion_posiciones.md)
+                    if not c.get("url") or not c.get("fecha") or not (c.get("quien") or "").strip():
+                        errores.append(f"{pid}/{qid}: declaración sin URL, fecha o autor identificado")
+                        continue
+                    if c["fecha"] < CONVOCATORIA and not (c.get("marco") or "").strip():
+                        errores.append(f"{pid}/{qid}: declaración de precampaña ({c['fecha']}) sin 'marco' que la refiera a estas elecciones")
                         continue
                 else:
                     errores.append(f"{pid}/{qid}: fuente desconocida {f}")
                     continue
-                out[qid] = {k: c.get(k) for k in ("valor", "fuente", "cita", "pagina", "url", "medio", "fecha", "nota")}
+                out[qid] = {k: c.get(k) for k in ("valor", "fuente", "cita", "pagina", "url", "medio", "fecha", "quien", "formato", "marco", "nota")}
                 if f == "programa" and not out[qid]["url"]:
                     out[qid]["url"] = partidos[pid]["programa"].get("url")
 

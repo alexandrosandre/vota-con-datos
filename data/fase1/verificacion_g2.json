@@ -1,74 +1,60 @@
 {
   "grupo": "g2",
-  "verificador": "Claude (Anthropic) — verificación independiente",
-  "fecha": "2026-11-08",
+  "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2",
+  "fecha": "2026-11-09",
   "aprobado": true,
-  "revisadas": 21,
+  "revisadas": 23,
   "cambios": [
     {
       "partido": "frente_amplio",
-      "pregunta": "q08",
-      "antes": 2,
-      "despues": 1,
-      "motivo": "La nota de prensa propone «recuperar la jubilación a los 65 años» y «fijar de forma efectiva la jubilación en los 65 años», pero no dice que se modifique la edad legal u ordinaria para todos los trabajadores; el texto se apoya en la edad media real de jubilación (65,4 años). La dirección (rebajar la edad de retiro a 65) es inequívoca, pero la medida concreta no es expresa: +1, no +2."
-    },
-    {
-      "partido": "podemos",
-      "pregunta": "q06",
-      "antes": 2,
-      "despues": 1,
-      "motivo": "La fuente recoge la propuesta de bajar la jornada a 30 horas semanales, pero no menciona que sea sin rebajar el salario (parte de la afirmación) ni el instrumento legal. Dirección inequívoca (reducir la jornada por debajo de 40 h), con matices no expresos: +1."
-    },
-    {
-      "partido": "podemos",
-      "pregunta": "q08",
-      "antes": 2,
-      "despues": 1,
-      "motivo": "Montero propone bajar la edad de jubilación a 63 años, una medida distinta de fijarla en 65; la fuente no precisa si se trata de la edad ordinaria para todos. Coincide en la dirección (rebajar la edad), no en la medida: +1 con nota."
-    },
-    {
-      "partido": "compromis",
-      "pregunta": "q13",
-      "antes": -2,
-      "despues": -1,
-      "motivo": "Micó menciona «la prioridad nacional aplicada a todos los ámbitos de la vida» como crítica de pasada al Gobierno valenciano de PP y Vox, sin referirse a la vivienda social ni formularlo como compromiso propio; el rechazo expreso en vivienda pública procede del eurodiputado Marzà, que no es candidato. Rechazo indirecto pero inequívoco: −1, no −2."
-    },
-    {
-      "partido": "compromis",
-      "pregunta": "q29",
+      "pregunta": "q04",
       "antes": 1,
-      "despues": null,
-      "motivo": "La única fuente es una nota sobre una pregunta parlamentaria del eurodiputado Vicent Marzà en el Parlamento Europeo, que no es candidato ni portavoz de la coalición Compromís-Front Valencià (Compromís, Podem, EU, ERPV) en el 29N. La candidata Micó (compromis.net, 5-nov) solo pide cláusulas de salvaguarda y aranceles, compatibles con ratificar el acuerdo, y no menciona Mercosur. No consta posición de campaña de la coalición sobre la ratificación: null."
+      "despues": 2,
+      "motivo": "La rebaja del codificador a +1 se apoyaba en que EFE (Infobae 7-nov) llama a la propuesta de Delgado «impuesto extraordinario». Es una paráfrasis del periodista, no palabras de Delgado, y la fuente oficial dice lo contrario: un «impuesto anual sobre el patrimonio neto», que recaudaría «10.000 millones de euros más al año». Además, la nota oficial del 24-oct financia con ese mismo impuesto del 2 % una medida estructural: que ninguna pensión quede por debajo del SMI. Es una propuesta estatal, expresa, central en la campaña y sin carácter temporal: +2 (la alternativa razonable, +1, queda en dudas)."
     },
     {
-      "partido": "podemos",
-      "pregunta": "q01",
+      "partido": "frente_amplio",
+      "pregunta": "q06",
+      "antes": 1,
+      "despues": 1,
+      "motivo": "Fuente válida: Emilio Delgado, cabeza de lista por Madrid, en entrevista con Europa Press del 8-nov (Infobae y Demócrata). Defiende reducir la jornada laboral en España, sin cifra, sin instrumento y sin hablar del salario: +1 confirmado. La cita no era literal: recortaba dentro de las comillas «O aprovechamos la tecnología [...] para trabajar menos» sin marcarlo. Se sustituye por el texto literal. El formato pasa a «entrevista con Europa Press»."
+    },
+    {
+      "partido": "frente_amplio",
+      "pregunta": "q13",
+      "antes": -1,
+      "despues": -1,
+      "motivo": "Delgado, cabeza de lista y en primera persona, califica la «prioridad nacional» de Vox de «abyección realmente bochornosa» e «indecente». No menciona la vivienda social. Pero en esta campaña Vox aplica la «prioridad nacional» precisamente a la adjudicación de vivienda social (Infobae/EP 11-oct), así que el rechazo es indirecto e inequívoco: −1 confirmado. Se amplía la cita con la frase literal «Eso es indecente y España no es un país indecente»."
+    },
+    {
+      "partido": "frente_amplio",
+      "pregunta": "q15",
+      "antes": 1,
+      "despues": 1,
+      "motivo": "Europa Press recoge, atribuyéndolo a Delgado, que «la regularización de migrantes en situación irregular no provoca un efecto llamada», en respuesta a PP y Vox. Defiende la regularización como política, aunque no se compromete expresamente a aprobar una nueva en la próxima legislatura: +1 confirmado, con nota."
+    },
+    {
+      "partido": "compromis",
+      "pregunta": "q02",
       "antes": 2,
       "despues": 2,
-      "motivo": "Valor confirmado (condición de investidura: rebajar los alquileres por ley, una forma de tope legal más amplia que la afirmación). La cita no era literal (paráfrasis); se sustituye por el texto literal del artículo."
+      "motivo": "Valor confirmado, pero cambian la fuente atribuida y el formato. Alberto Ibáñez es el nº 2 por Valencia y diputado. Desde marzo de 2026 ya no es coportavoz de Iniciativa, y no es cabeza de lista ni portavoz de la coalición, así que solo no basta como líder. La misma crónica de EFE (Valencia Plaza, 4-nov) dice que los candidatos, en una rueda de prensa conjunta encabezada por Àgueda Micó, cabeza de lista por Valencia, «se han comprometido» a «expropiar a estos sus viviendas para el parque público». Micó lo repitió el 6-nov en Elche. Se cambia «quien» a Micó con Pérez e Ibáñez, el formato a «rueda de prensa de la candidatura (Madrid)» y la cita para incluir el compromiso conjunto."
     },
     {
-      "partido": "podemos",
+      "partido": "compromis",
       "pregunta": "q30",
       "antes": 2,
       "despues": 2,
-      "motivo": "Valor confirmado (condición de investidura: «limitar los precios de los alimentos por ley», «topar los precios de los alimentos»). La cita no era literal (paráfrasis); se sustituye por el texto literal del artículo."
-    },
-    {
-      "partido": "podemos",
-      "pregunta": "q26",
-      "antes": -2,
-      "despues": -2,
-      "motivo": "Valor confirmado (rechazo expreso y central a seguir aumentando el gasto militar). La nota atribuía la cita sobre la OTAN a la URL citada, pero procede de otra nota de Infobae/EP del mismo día; se corrige la referencia."
+      "motivo": "Valor confirmado. Solo cambia el formato, de «acto de campaña (Elche)» a «acto de precampaña (presentación de la candidatura en Elche)», porque Alicante Plaza dice que la coalición «ha elegido Elche para iniciar su precampaña» el 6-nov."
     }
   ],
   "dudas": [
-    "podemos/q01: «rebajar los alquileres por ley» no nombra un precio máximo ni zonas; se mantiene 2 porque es condición de investidura y una rebaja legal de rentas implica un tope legal más amplio que el de la afirmación. Alternativa razonable: 1.",
-    "podemos/q02: Montero propone expropiar el uso (no la propiedad) de las viviendas de fondos para alquiler social; se mantiene 2 al tratarse de una expropiación forzosa con la misma finalidad.",
-    "frente_amplio/q02: la nota oficial no precisa el destino de las viviendas expropiadas (solo las de la SAREB irán al parque público); el destino a alquiler público asequible consta en elDiario.es 6-nov según el codificador. Se mantiene 2.",
-    "frente_amplio/q04: el impuesto anual del 2-3 % sobre el patrimonio neto no se califica expresamente de «permanente», pero es anual, estatal y parte del programa; se mantiene 2.",
-    "compromis/q30: una sola fuente (Alicante Plaza, 6-nov: «topar el precio de la energía y los alimentos básicos»); expresa, se mantiene 2.",
-    "upc: el Manifiesto electoral no lleva fecha impresa; se acepta 2026-11-03 (Last-Modified HTTP, ModDate del PDF 2026-10-30), ambas posteriores a la convocatoria. SHA-256 verificado (502ce157…). Páginas 3 y 4 comprobadas.",
-    "upc/q16: el eje 1 («derecho a decidir», «capacidad para decidir su futuro») no menciona referéndum ni independencia: null confirmado."
+    "frente_amplio/q04: el impuesto no se califica literalmente de «permanente». El +2 se apoya en que es un impuesto anual, estatal y central en la campaña, que además financia una medida estructural de pensiones. Alternativa razonable: +1.",
+    "frente_amplio/q06: «reducir la jornada laboral en España» no concreta las horas, el instrumento legal ni si se mantiene el salario. El +1 sigue el mismo criterio que Podemos q06. Alternativa: null, si se exige la medida concreta.",
+    "frente_amplio/q15: la crónica de Europa Press parafrasea a Delgado, con atribución, y su defensa de la regularización parece referirse a la regularización extraordinaria ya en marcha. No es un compromiso de aprobar otra. Se mantiene +1 como apoyo indirecto; la alternativa sería null.",
+    "frente_amplio/q13 y compromis/q13: ambos rechazan la «prioridad nacional» en general, sin mencionar la vivienda social. Micó la rechaza (elDiario.es 25-oct) como «aplicada a todos los ámbitos de la vida» por el Consell de PP y Vox y añade «no queremos que esto pase en el Congreso». Se mantiene −1 en los dos, no −2.",
+    "compromis/q02: el compromiso de destinar lo expropiado «al parque público» lo atribuye EFE al conjunto de candidatos en la rueda de prensa, y en palabras textuales solo a Ibáñez. Micó, cabeza de lista, estaba presente y repitió la expropiación en Elche, pero sin mencionar el destino.",
+    "Campo «quien» y «formato» comprobados en todas las celdas de campaña sin cambios: Podemos q01, q02, q04, q08, q26 y q30 (desayuno informativo de Europa Press, 6-nov, Hotel InterContinental, Madrid) y q06 (presentación de candidaturas en la sede, 5-nov); Compromís q01, q13, q18 y q21 (entrevista de elDiario.es, publicada el 25-oct); Frente Amplio q02, q04 y q08 y Ara Més q01 (notas oficiales); UPC q01, q04 y q09 (Manifiesto electoral, documento oficial). Todos son correctos.",
+    "Programas: siguen sin publicarse los programas del 29N de los seis partidos del grupo, según las comprobaciones del codificador del 8-nov. No se ha vuelto a comprobar en esta verificación."
   ]
 }

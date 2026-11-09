@@ -48,3 +48,36 @@ lo codificado tiene `fuente: "campaña"`. No se ha tocado `partidos.json`.
   de un futuro Gobierno de Vox.
 - **Vox q05 (+2)**: Figaredo lo presenta como planteamiento «de máximo» y acepta
   acercamientos parciales.
+
+## Protocolo v2 (2026-11-09): solo líderes en primera persona
+
+Todas las celdas con valor llevan ahora `quien` y `formato`. Ninguna es anterior al 6-oct, así
+que ninguna necesita `marco`.
+
+Cobertura antes→después: PP 8→9, UPN 0→0, PSOE 2→2, PSC 0→0, Vox 7→8, SALF 1→1.
+
+- **Retiradas**: PP q18 pasa a null. Su única fuente era el texto del programa que Europa Press
+  adelantó el 7-nov («al que ha tenido acceso Europa Press»), una filtración anterior a la
+  presentación oficial.
+- **Fuente sustituida**:
+  - PP q17 (-2→-1): pasa a apoyarse en el mitin de Feijóo en Vigo (24-oct), donde dice «lo que es
+    de todos entre todos» y pide «fin a… los privilegios de unos pocos». Es indirecta.
+  - PP q01 (-1): la narración de Vozpópuli se sustituye por la frase de Feijóo en Vigo contra el
+    «planteamiento sectario del Gobierno que intenta controlar los precios».
+- **Nuevas**:
+  - PP q14 (+1) y q15 (-2), del documento firmado por Feijóo «Mi contrato con España» (19-oct).
+    Texto íntegro en The Objective: «Quien venga a delinquir, deberá marcharse»; «se establecerá
+    por ley la prohibición de regulaciones colectivas».
+  - Vox q29 (+1): Abascal en Onda Cero (4-nov).
+- **Dudas**:
+  - PSOE q10: lo anuncia el secretario de Sanidad de la Ejecutiva Federal, en estilo indirecto.
+  - Vox q05 y q07: la crónica de la entrevista a Figaredo en 101TV no tiene entrecomillados.
+  - Vox q27: «militarizar» la frontera.
+  - PP q17: es indirecta.
+  - Vox q03: Cerezo es cabeza de lista por Baleares.
+- Las tomas de postura de Vox (Mercosur, febrero-abril) y de Alvise (deportaciones, octubre de
+  2025) son anteriores a la convocatoria y no se refieren a estas elecciones, así que se
+  descartan.
+- PSC, UPN y SALF: no se halló nada nuevo. El PSC no tiene declaraciones de Hereu o Illa sobre
+  medidas concretas, y no consta que UPN asuma el «contrato» de Feijóo.
+- Recodificar el PP con el programa del 10-nov, sobre todo q17 y q18.
