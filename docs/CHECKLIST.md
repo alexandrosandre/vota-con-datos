@@ -39,50 +39,62 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
 - [ ] **5. [Yo] Quitar la etiqueta «versión provisional» del paso 1** solo cuando PP, PSOE, Vox,
   Frente Amplio y Podemos tengan posición documentada en al menos la mitad de las 30 afirmaciones
   (hoy: PP 8, Vox 7, Podemos 7, FA 3, PSOE 2). Mientras no, el paso 1 no debe ser lo que se promocione.
-- [ ] **6. [Tú] Revisar tú una muestra antes de anunciar** (con el diseño ya elegido): 2–3 propuestas
+- [ ] **6. [Yo] Paso 3: decir a quién elige tu voto y qué hay dentro de cada papeleta.**
+  - Composición de las coaliciones explicada en lenguaje claro: p. ej. en Alicante la papeleta
+    «Compromís: Front Valencià» (COMPROMIS-EUPV-PODEM-ERPV) incluye a Podemos y a Esquerra Unida, algo
+    que no es evidente para el electorado. Igual con UPC en Canarias (NC-BC, Podemos, IU, Sumar),
+    UPN-PP en Navarra, las marcas de Frente Amplio, PSC/PSOE, etc.
+  - Junto a la probabilidad de escaño, **quién lo ocuparía**: el candidato o candidata que está en el
+    puesto de la lista que entraría (el 1.º para el primer escaño, el n.º para el n-ésimo), con nombre
+    (de las listas proclamadas del BOE), partido de afiliación dentro de la coalición y enlace a su
+    página de Wikipedia o a una página oficial del partido. Si la afiliación no consta en una fuente
+    fiable, se dice («afiliación no publicada»), sin suponerla.
+  - Requiere extraer del BOE las listas completas (hoy solo guardamos el cabeza de lista y el número
+    de titulares) y documentar la fuente de cada afiliación y enlace.
+- [ ] **7. [Tú] Revisar tú una muestra antes de anunciar** (con el diseño ya elegido): 2–3 propuestas
   por partido analizado en el paso 2 (cita, valoración y fuentes) y una pasada completa por el
   cuestionario del paso 1 buscando redacciones que no sean neutrales. La web sale bajo tu nombre.
-- [ ] **7. [Externo → Yo] Listas del BOE tras los recursos.** Recursos de amparo ante el TC hasta
+- [ ] **8. [Externo → Yo] Listas del BOE tras los recursos.** Recursos de amparo ante el TC hasta
   ≈12-nov y ante el TS (art. 44.4 LOREG) del 13 al 19-nov: vuelvo a descargar y validar el BOE después
   de cada fecha. Pendiente de confirmar oficialmente: el recurso de Drago Canarias contra UPC (solo hay
   prensa).
-- [ ] **8. [Yo] ⚠️ 24-nov 00:00 — retirar los escenarios de encuestas del paso 3 hasta el 29-nov.** El
+- [ ] **9. [Yo] ⚠️ 24-nov 00:00 — retirar los escenarios de encuestas del paso 3 hasta el 29-nov.** El
   art. 69.7 de la LOREG prohíbe publicar, difundir o reproducir sondeos los cinco días anteriores a la
   votación, y la web reproduce estimaciones de encuestas. Queda solo el escenario de resultados de 2023
   con un aviso. Lo programo por fecha en el código para que no dependa de nadie.
 
 ## B. No bloquea — mejoras y mantenimiento, por prioridad
 
-- [ ] **9. [Externo → Yo] Macroencuesta preelectoral del CIS (estudio 3584)** cuando se publique
+- [ ] **10. [Externo → Yo] Macroencuesta preelectoral del CIS (estudio 3584)** cuando se publique
   (antes del 24-nov): sustituye al barómetro de octubre, cuyo trabajo de campo fue anterior a la
   convocatoria.
-- [ ] **10. [Externo → Yo] Encuestas nuevas de Sigma Dos, GAD3 y 40dB** publicadas antes del 24-nov.
-- [ ] **11. [Yo] Compromisos de campaña desde el 13-nov** (inicio de campaña), sobre todo para EH
+- [ ] **11. [Externo → Yo] Encuestas nuevas de Sigma Dos, GAD3 y 40dB** publicadas antes del 24-nov.
+- [ ] **12. [Yo] Compromisos de campaña desde el 13-nov** (inicio de campaña), sobre todo para EH
   Bildu, PNV, PSC, UPN-PP y Adelante Andalucía, que hoy tienen cero posiciones en el paso 1.
-- [ ] **12. [Yo] Resolver las dudas abiertas de los revisores** (detalle en
+- [ ] **13. [Yo] Resolver las dudas abiertas de los revisores** (detalle en
   `data/programas/*/revision.json` y `data/fase3/auditoria_coherencia.md`): cifras de AIReF citadas a
   través de prensa en ERC (airef.es no fue accesible para ese revisor), STC 31/2010 citada vía El Salto,
   datos de Interior vía Europa Press, evidencia de bng-12 apoyada en un solo estudio.
-- [ ] **13. [Yo] Calibrar la incertidumbre del paso 3 con datos históricos** (error de encuestas y
+- [ ] **14. [Yo] Calibrar la incertidumbre del paso 3 con datos históricos** (error de encuestas y
   cambios entre elecciones por provincia) en lugar de los parámetros razonados actuales (k = 0,04 /
   0,05).
-- [ ] **14. [Yo] Candidaturas «sin base» en el paso 3** (SALF en el escenario 2023, Alhora, Drago,
+- [ ] **15. [Yo] Candidaturas «sin base» en el paso 3** (SALF en el escenario 2023, Alhora, Drago,
   NEX, Adelante Andalucía fuera de Cádiz…): valorar un perfil de las europeas 2024 u otra referencia
   documentada.
-- [ ] **15. [Yo] Tests del pipeline** (mapeo candidaturas → partidos, escenarios por encuesta) y
+- [ ] **16. [Yo] Tests del pipeline** (mapeo candidaturas → partidos, escenarios por encuesta) y
   pruebas de extremo a extremo de la web.
-- [ ] **16. [Yo] Auditoría de accesibilidad** (lector de pantalla, teclado, contraste en modo oscuro).
-- [ ] **17. [Tú] Dominio propio** (p. ej. votacondatos.es): requiere que lo compres; hoy funciona en el
+- [ ] **17. [Yo] Auditoría de accesibilidad** (lector de pantalla, teclado, contraste en modo oscuro).
+- [ ] **18. [Tú] Dominio propio** (p. ej. votacondatos.es): requiere que lo compres; hoy funciona en el
   dominio gratuito de GitHub Pages. Si lo compras, la configuración la hago yo.
-- [ ] **18. [Tú] Revisión de posiciones por los propios partidos** (práctica recomendada en la
+- [ ] **19. [Tú] Revisión de posiciones por los propios partidos** (práctica recomendada en la
   literatura de estos cuestionarios): solo si decides contactar con ellos.
-- [ ] **19. [Yo] Avisos menores**: el runner `ubuntu-latest` de GitHub Actions migra a Ubuntu 26
+- [ ] **20. [Yo] Avisos menores**: el runner `ubuntu-latest` de GitHub Actions migra a Ubuntu 26
   (revisar que el despliegue sigue en verde).
 
 ## C. Después del 29-N
 
-- [ ] **20. [Yo] Congelar la web** con un aviso de «elección celebrada» y borrar la tarea programada.
-- [ ] **21. [Yo] Opcional: comparar las probabilidades del paso 3 con el resultado real** y publicar el
+- [ ] **21. [Yo] Congelar la web** con un aviso de «elección celebrada» y borrar la tarea programada.
+- [ ] **22. [Yo] Opcional: comparar las probabilidades del paso 3 con el resultado real** y publicar el
   balance (calibración honesta del modelo).
 
 ## Resumen: lo que espera de ti
@@ -92,6 +104,6 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
 | 1 | Aprobar la carpeta permanente del proyecto | Cuanto antes |
 | 2 | Confirmar el entorno de la rutina persistente | Cuanto antes |
 | 3 | Elegir uno de los 3–5 diseños | Cuando te los presente |
-| 6 | Revisar una muestra de contenidos | Antes de anunciar la web |
-| 17 | Comprar dominio (opcional) | Cuando quieras |
-| 18 | Decidir si contactar con los partidos (opcional) | Cuando quieras |
+| 7 | Revisar una muestra de contenidos | Antes de anunciar la web |
+| 18 | Comprar dominio (opcional) | Cuando quieras |
+| 19 | Decidir si contactar con los partidos (opcional) | Cuando quieras |
