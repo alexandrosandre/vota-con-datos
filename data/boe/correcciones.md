@@ -2,11 +2,13 @@
 
 Estado a 8 de noviembre de 2026 (revisión hecha el domingo 8; ese día no hay BOE).
 
+**Revisión del 9-XI-2026: sin cambios oficiales nuevos.** El sumario del BOE núm. 279 (9-XI) no contiene ninguna disposición de Juntas Electorales, de la Junta Electoral Central ni del Tribunal Constitucional, ni corrección de BOE-A-2026-23103 (su XML sigue con `referencias/posteriores` vacío). La página de candidaturas de la JEC no ha cambiado y su PDF de proclamadas tiene el mismo sha256 (`4f437d2d…74dc`) que la copia del 8-XI. El caso UPC (apartado 3) sigue sin documento oficial. (El sumario del 9-XI no se ha guardado en `data/sources/boe/`; se obtiene con `python3 -I pipeline/boe_fetch.py sumario 20261109`.)
+
 ## Qué se ha revisado
 
 | Fuente | Alcance | Fichero bruto |
 |---|---|---|
-| Sumarios del BOE (API de datos abiertos) | 6-X, 23–24-X, 26–31-X, 2–7-XI-2026 (el 1-XI y el 8-XI son domingo, sin edición: la API devuelve 404) | `data/sources/boe/sumario_*.json` |
+| Sumarios del BOE (API de datos abiertos) | 6-X, 23–24-X, 26–31-X, 2–7-XI y 9-XI-2026 (el 1-XI y el 8-XI son domingo, sin edición: la API devuelve 404) | `data/sources/boe/sumario_*.json` |
 | Web de la Junta Electoral Central, página «Elecciones generales 2026 · Candidaturas» | copia del 8-XI-2026 | `data/sources/boe/jec_eg2026_candidaturas_20261108.html` |
 | Calendario electoral oficial de la JEC | plazos de los recursos | `data/sources/boe/jec_eg2026_calendario.pdf` |
 

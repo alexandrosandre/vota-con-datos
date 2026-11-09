@@ -4,7 +4,7 @@ Herramienta cívica, gratuita y de código abierto para las **elecciones general
 noviembre de 2026** en España. Objetivo: que cada persona vote **sabiendo a qué vota** y que su voto
 **llegue a donde quería**.
 
-**Web:** https://alexandrosandre.github.io/vota-con-datos/
+**Web:** https://votacondatos.org/
 
 **Elige. Contrasta. Suma.**
 

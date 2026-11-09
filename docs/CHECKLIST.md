@@ -33,7 +33,7 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
 
   Cada uno navegable con las tres fases reales, en claro y oscuro, móvil y escritorio, y con contraste
   AA. Eliges tú; aplico el elegido antes de difundir.
-  Listos (9-nov): galería en https://alexandrosandre.github.io/vota-con-datos/#/disenos — Cívico (actual),
+  Listos (9-nov): galería en https://votacondatos.org/#/disenos — Cívico (actual),
   Color fuerte, Campaña, Datos y Editorial, con valoración en docs/research/disenos.md. **Elegido (9-nov): **Campaña,
   solo en modo oscuro**, aplicado con su último pulido y la marca adaptada. Lema elegido apartado por
   apartado: **«Elige · Contrasta · Suma»** (9-nov).

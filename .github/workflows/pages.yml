@@ -47,9 +47,9 @@ jobs:
         run: |
           npm ci
           npm test
-          npm run build
+          VCD_BASE=/ npm run build
       - name: Prueba de humo (Chrome sin interfaz)
-        run: bash tests/smoke.sh
+        run: VCD_BASE=/ bash tests/smoke.sh
       - uses: actions/upload-pages-artifact@v3
         with:
           path: web/dist

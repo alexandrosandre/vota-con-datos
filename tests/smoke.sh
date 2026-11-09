@@ -4,10 +4,11 @@
 set -u
 cd "$(dirname "$0")/../web"
 PORT=4179
+B="${VCD_BASE:-/vota-con-datos/}"   # ruta base del build (/ con dominio propio)
 npx vite preview --port $PORT --strictPort >/dev/null 2>&1 &
 PID=$!
 trap 'kill $PID 2>/dev/null' EXIT
-for _ in $(seq 1 40); do curl -sf "http://localhost:$PORT/vota-con-datos/" >/dev/null && break; sleep 0.5; done
+for _ in $(seq 1 40); do curl -sf "http://localhost:$PORT$B" >/dev/null && break; sleep 0.5; done
 
 CH="${CHROME:-}"
 for c in "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" google-chrome google-chrome-stable chromium chromium-browser; do
@@ -20,7 +21,7 @@ FALLOS=0
 comprueba() { # ruta texto...
   local ruta="$1"; shift
   local html
-  html=$("$CH" --headless=new --disable-gpu --no-sandbox --virtual-time-budget=8000 --dump-dom "http://localhost:$PORT/vota-con-datos/$ruta" 2>/dev/null)
+  html=$("$CH" --headless=new --disable-gpu --no-sandbox --virtual-time-budget=8000 --dump-dom "http://localhost:$PORT$B$ruta" 2>/dev/null)
   for t in "$@"; do
     if grep -qF "$t" <<<"$html"; then echo "ok   $ruta · $t"; else echo "FALLO $ruta · $t"; FALLOS=$((FALLOS + 1)); fi
   done
