@@ -34,14 +34,17 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   Cada uno navegable con las tres fases reales, en claro y oscuro, móvil y escritorio, y con contraste
   AA. Eliges tú; aplico el elegido antes de difundir.
   Listos (9-nov): galería en https://alexandrosandre.github.io/vota-con-datos/#/disenos — Cívico (actual),
-  Color fuerte, Campaña, Datos y Editorial, con valoración en docs/research/disenos.md. **Falta tu elección.**
+  Color fuerte, Campaña, Datos y Editorial, con valoración en docs/research/disenos.md. **Elegido (9-nov):
+  Campaña, solo en modo oscuro.** En curso: última contrapropuesta «Campaña · amarillo» (amarillo poco
+  usado por los partidos, tres pilares verticales). Después: aplicar el elegido como diseño por defecto.
 - [ ] **4. [Externo → Yo] Programas de los partidos estatales.** Cuando salgan: lectura completa,
   evaluación, revisión independiente, auditoría de coherencia y recodificación del paso 1.
   - [ ] PNV — presentación anunciada 9-nov 16:00
   - [ ] PP — 10-nov según prensa (Europa Press, 7-nov)
   - [ ] PSOE / PSC, Vox, Frente Amplio, Podemos, SALF — sin fecha conocida
   - [ ] Junts, EH Bildu, Compromís, UPC, Ara Més-FA, UPN-PP, Adelante Andalucía — sin fecha conocida
-- [ ] **5. [Yo] Quitar la etiqueta «versión provisional» del paso 1** solo cuando PP, PSOE, Vox,
+- [ ] **5. [Yo] Quitar la etiqueta «versión provisional» del paso 1** (9-nov: protocolo v2 con
+  propuestas públicas en primera persona de líderes nacionales y regionales, incl. precampaña; 75 posiciones) solo cuando PP, PSOE, Vox,
   Frente Amplio y Podemos tengan posición documentada en al menos la mitad de las 30 afirmaciones
   (hoy: PP 8, Vox 7, Podemos 7, FA 3, PSOE 2). Mientras no, el paso 1 no debe ser lo que se promocione.
 - [x] **6. [Yo] Paso 3: decir a quién elige tu voto y qué hay dentro de cada papeleta.**

@@ -37,6 +37,13 @@ export const TEMAS: Tema[] = [
     riesgos: 'Adopta el lenguaje de la propaganda electoral, lo que puede restar credibilidad a una herramienta neutral.',
   },
   {
+    id: 'campana-amarillo',
+    nombre: 'Campaña · amarillo (contrapropuesta)',
+    idea: 'Tu elegido, solo en oscuro: negro profundo, un amarillo rotundo y los tres pasos como tres pilares verticales.',
+    fortalezas: 'Máximo contraste y energía; los tres pilares hacen evidente el recorrido Coincide · Contrasta · Cuenta.',
+    riesgos: 'Pendiente de la revisión del diseñador (asociación del amarillo con partidos concretos).',
+  },
+  {
     id: 'datos',
     nombre: 'Datos',
     idea: 'Grafito, rejilla, cifras en monoespaciada; comparar y contrastar como motivo gráfico.',
