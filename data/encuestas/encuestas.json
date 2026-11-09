@@ -25,7 +25,8 @@
     },
     "advertencia": "Las encuestas no son resultados. No sumar ni promediar encuestas con bases distintas (CIS: método de escenarios con fuerte efecto casa; ver NOTAS.md).",
     "fuentes_crudas": "data/sources/encuestas/",
-    "otras_encuestas_contexto_nota": "Listado solo para contexto: cifras (PP, PSOE, Vox, Frente Amplio/Sumar) tomadas del agregador Wikipedia y NO verificadas en la fuente primaria. No usar para cálculos. Excluidas: Data10/Okdiario (campo 2-oct, previo a la convocatoria) y SocioMétrica para el PP (encuesta interna de partido)."
+    "otras_encuestas_contexto_nota": "Listado solo para contexto: cifras (PP, PSOE, Vox, Frente Amplio/Sumar) tomadas del agregador Wikipedia y NO verificadas en la fuente primaria. No usar para cálculos. Excluidas: Data10/Okdiario (campo 2-oct, previo a la convocatoria) y SocioMétrica para el PP (encuesta interna de partido).",
+    "revision_2026_11_09_tarde": "Revisión del 9-11-2026 (tarde): ninguna estimación nueva. CIS 3584 sin publicar (catálogo de cis.es: último estudio con estimación, 3582; la URL del preelectoral da 404). sigmados.com y gad3.com publicaron el 9-11 los mismos sondeos ya recogidos (sigmados-2026-11-08, gad3-2026-11); se añaden como fuentes primarias. El País/SER: sin sondeo posterior a 40db-2026-11."
   },
   "encuestas": [
     {
@@ -158,7 +159,7 @@
       "encuestadora": "Sigma Dos",
       "cliente_medio": "El Mundo",
       "fecha_publicacion": "2026-11-08",
-      "fecha_publicacion_nota": "El Mundo lo publicó en su web el 8-11-2026 a las 22:43 (datePublished 2026-11-08T21:43:36Z); la infografía lo rotula 'Encuesta 9 de noviembre de 2026' (edición impresa). A 9-11-2026 sigmados.com aún no lo había publicado (noticias.php: último sondeo, 2-11).",
+      "fecha_publicacion_nota": "El Mundo lo publicó en su web el 8-11-2026 a las 22:43 (datePublished 2026-11-08T21:43:36Z); la infografía lo rotula 'Encuesta 9 de noviembre de 2026' (edición impresa). sigmados.com lo publicó el 9-11-2026 ('Sondeo 9 de noviembre - Estimación de voto para las Elecciones Generales del 29-N', noticia.php?id=Zr7XEKTN9GLN00s), con la misma ficha técnica (n=4.172, campo 30-10 a 6-11, ±2,1%) y las mismas cifras de PP, PSOE, Vox y resto, pero con Frente Amplio desglosado (ver frente_amplio_incluye_compromis).",
       "trabajo_campo": {
         "inicio": "2026-10-30",
         "fin": "2026-11-06"
@@ -192,8 +193,32 @@
           "pct": 8.1,
           "escanos_min": 13,
           "escanos_max": 16,
-          "nota": "8,1% y horquilla 13-16 según la infografía vigente del artículo (voto646b.jpg, 'F. Amplio 8,1% (13-16)'); el texto de El Mundo da 8,1% y 'un grupo de 15 parlamentarios' (resultado más probable) y la serie Datawrapper UgEA1 v10 da FA 8,1 para 09/11/2026. La cifra 6,5% (9-11) era de una versión anterior de la infografía, sustituida por El Mundo (ver nota_conflicto). No consta si incluye a Compromís/Front Valencià (ver frente_amplio_incluye_compromis).",
-          "escanos_probable": 15
+          "nota": "8,1% y horquilla 13-16 según la infografía vigente del artículo de El Mundo (voto646b.jpg, 'F. Amplio 8,1% (13-16)'); el texto de El Mundo da 8,1% y 'un grupo de 15 parlamentarios' (resultado más probable) y la serie Datawrapper UgEA1 v10 da FA 8,1 para 09/11/2026. Sigma Dos (sigmados.com, 9-11) desglosa esa cifra en tres filas (ver componentes): Frente Amplio 6,5% (9-11), Front Valencià (FV) 1,2% (3-4) y UPC 0,4% (1); suman 8,1% y 13-16 escaños. Esta fila es, por tanto, el bloque completo; no sumar los componentes además de esta fila.",
+          "escanos_probable": 15,
+          "componentes": [
+            {
+              "partido": "Frente Amplio",
+              "pct": 6.5,
+              "escanos_min": 9,
+              "escanos_max": 11,
+              "fuente": "sigmados.com 9-11 (texto e infografía)"
+            },
+            {
+              "partido": "Front Valencià (FV)",
+              "pct": 1.2,
+              "escanos_min": 3,
+              "escanos_max": 4,
+              "nombre_publicado_escanos": "FV",
+              "fuente": "sigmados.com 9-11 (texto e infografía)"
+            },
+            {
+              "partido": "UPC",
+              "pct": 0.4,
+              "escanos_min": 1,
+              "escanos_max": 1,
+              "fuente": "sigmados.com 9-11 (texto e infografía)"
+            }
+          ]
         },
         {
           "partido": "Podemos",
@@ -258,7 +283,9 @@
         "primarias": [
           "https://www.elmundo.es/espana/encuestas/2026/11/08/6af066bee85eceae5a8b4598.html",
           "https://e01-elmundo.uecdn.es/elmundo/2026/graficos/nov/sigmados/voto646b.jpg",
-          "https://datawrapper.dwcdn.net/UgEA1/10/"
+          "https://datawrapper.dwcdn.net/UgEA1/10/",
+          "https://www.sigmados.com/noticia.php?id=Zr7XEKTN9GLN00s",
+          "https://www.sigmados.com/img/uploads/2026/11/09/news_bfe8246dd4862f82_1794222157.png"
         ],
         "secundarias": [],
         "retiradas": [
@@ -275,7 +302,10 @@
         "data/sources/encuestas/sigmados/elmundo_20261108.html",
         "data/sources/encuestas/sigmados/img_elmundo_voto646_20261109.jpg",
         "data/sources/encuestas/sigmados/img_elmundo_og_1794164225_20261109.jpg",
-        "data/sources/encuestas/sigmados/noticias_20261109.html"
+        "data/sources/encuestas/sigmados/noticias_20261109.html",
+        "data/sources/encuestas/sigmados/sigmados_20261109.html",
+        "data/sources/encuestas/sigmados/img_news_bfe8246dd4862f82_1794222157.png",
+        "data/sources/encuestas/sigmados/noticias_20261109b.html"
       ],
       "archivos_fuente_sha256": {
         "data/sources/encuestas/sigmados/elmundo_20261108_rev20261109.html": "35f2162a1ba663d5665b5c24eaa946ca74b89ef2aa93b546f90633a69b0b06f8",
@@ -285,18 +315,21 @@
         "data/sources/encuestas/sigmados/elmundo_20261108.html": "67b9e9c6c1af052490dba2c0f2f3b70f2517da895bf16007a6510fb2ad418b2c",
         "data/sources/encuestas/sigmados/img_elmundo_voto646_20261109.jpg": "ae5943f1d9fee2b97dcb5f247a5a7b82d6c97dcf6167275442c74234691e06fd",
         "data/sources/encuestas/sigmados/img_elmundo_og_1794164225_20261109.jpg": "aad00bcfb2325bbc42d8379fe2c9bc61685eeee9a27dddea16dc3e9149de2182",
-        "data/sources/encuestas/sigmados/noticias_20261109.html": "2c461eada9618801552ab97e58cbf42332b1b7aa460b4f4175d6b2eaffcaf84a"
+        "data/sources/encuestas/sigmados/noticias_20261109.html": "2c461eada9618801552ab97e58cbf42332b1b7aa460b4f4175d6b2eaffcaf84a",
+        "data/sources/encuestas/sigmados/sigmados_20261109.html": "9fc72a77e0ff93213cc92f9655c3372f66c1bb30766805f8cc2dc227d266ac02",
+        "data/sources/encuestas/sigmados/img_news_bfe8246dd4862f82_1794222157.png": "72d4c7806e2ce5250d356ef8796e3f836e2b40966c3536cf70e4ee5dea6f3b25",
+        "data/sources/encuestas/sigmados/noticias_20261109b.html": "437a027ac3279d2ee18ebe9c05d3e5f46635f7875aa0eac3294fde124361843a"
       },
       "verificado_en_fuente_primaria": true,
       "nota_conflicto": "Conflicto: Frente Amplio 8,1% / 15 escaños (texto y Datawrapper) frente a 6,5% (9-11) (infografía). Evidencia: (1) La copia del artículo guardada el 9-11 (elmundo_20261108.html) incrustaba en la figura 'graphic-6af0c98421efa017118b458b' (pie: 'Sigma Dos 9 de Noviembre 2026. Intencion de voto') la imagen voto646.jpg, con 'F. Amplio 6,5% (9-11)'. (2) La misma página descargada de nuevo el 9-11 a las 09:41 (elmundo_20261108_rev20261109.html) incrusta en esa misma figura voto646b.jpg, con 'F. Amplio 8,1% (13-16)'. Una comparación píxel a píxel de las dos imágenes (1292x1086) solo encuentra diferencias en la zona de la etiqueta de Frente Amplio (x 925-998, y 431-488); el resto de cifras es idéntico. (3) El texto del artículo no cambió (solo el contador de comentarios; dateModified sigue en 2026-11-08T21:43:36Z) y dice '8,1% del respaldo ciudadano y un grupo de 15 parlamentarios'. (4) La serie Datawrapper UgEA1 (versión pública 10, la vigente) da FA 8,1 para 09/11/2026. (5) El reparto 'más probable' del texto suma 350 solo con FA 15, que cae en 13-16 pero no en 9-11. No hay fe de errores publicada; El Mundo sustituyó la imagen sin aviso. sigmados.com no ha publicado aún este sondeo (noticias.php a 9-11: último, 2-11). Conclusión: la estimación publicada es 8,1% con horquilla 13-16 (probable 15). 'AA' es Adelante Andalucía (ver nota del partido). Queda sin resolver si Frente Amplio incluye a Compromís/Front Valencià (ver frente_amplio_incluye_compromis).",
       "resuelto": true,
-      "resuelto_alcance": "true se refiere a la cifra de Frente Amplio (8,1%, 13-16) y a la etiqueta 'AA'. La inclusión de Compromís/Front Valencià en Frente Amplio NO está resuelta (frente_amplio_incluye_compromis.resuelto = false).",
+      "resuelto_alcance": "true se refiere a la cifra de Frente Amplio (8,1%, 13-16), a la etiqueta 'AA' y, desde la publicación de sigmados.com del 9-11, a la inclusión de Front Valencià y UPC en esa cifra (frente_amplio_incluye_compromis.resuelto = true).",
       "frente_amplio_incluye_compromis": {
-        "valor": null,
-        "resuelto": false,
-        "nota": "Ni el texto, ni la infografía, ni la serie Datawrapper de este sondeo mencionan Compromís ni Front Valencià; tampoco lo aclara Sigma Dos, que aún no lo ha publicado. Indicios a favor de que está incluido: el sondeo del 2-11 publicaba 'Front Valencià (FV)' aparte (0,9%; 3-4 escaños en la infografía, 'dos-tres' en el texto) y este ya no lo lista; FA pasa de 7,1% (9-11) a 8,1% (13-16), cerca de la suma anterior FA+FV (8,0%; 12-15); y el reparto más probable suma 350 sin FV. Contexto que no es de Sigma Dos: según data/boe/coaliciones.json, la coalición 'Frente Amplio' (JEC C9) no se presenta en la C. Valenciana, donde concurre aparte 'COMPROMÍS: FRONT VALENCIÀ' (Compromís, EUPV, Podem, ERPV); GAD3/ABC y 40dB/El País cuentan esa candidatura dentro de Frente Amplio en sus sondeos del 9-11. Revisar cuando sigmados.com publique el sondeo."
+        "valor": true,
+        "resuelto": true,
+        "nota": "Resuelto con la publicación de Sigma Dos en sigmados.com (9-11-2026): da Frente Amplio 6,5% (9-11), Front Valencià (FV) 1,2% (3-4) y UPC 0,4% (1) por separado, y su suma (8,1%; 13-16) coincide exactamente con la fila 'Frente Amplio' de El Mundo. La cifra de El Mundo (8,1%) incluye, por tanto, a Front Valencià/Compromís y a UPC. La primera infografía de El Mundo (6,5%, 9-11) correspondía a Frente Amplio solo."
       },
-      "archivos_fuente_nota": "elmundo_20261108.html e img_elmundo_voto646_20261109.jpg (y la og:image) son la versión anterior, guardada como prueba de la sustitución de la infografía; las cifras salen de elmundo_20261108_rev20261109.html, img_elmundo_voto646b_20261109.jpg y dw_UgEA1_v10_dataset.csv."
+      "archivos_fuente_nota": "elmundo_20261108.html e img_elmundo_voto646_20261109.jpg (y la og:image) son la versión anterior, guardada como prueba de la sustitución de la infografía; las cifras salen de elmundo_20261108_rev20261109.html, img_elmundo_voto646b_20261109.jpg y dw_UgEA1_v10_dataset.csv. sigmados_20261109.html, img_news_bfe8246dd4862f82_1794222157.png y noticias_20261109b.html son la publicación de Sigma Dos del 9-11 (descargada el 9-11 por la tarde), fuente del desglose de Frente Amplio."
     },
     {
       "id": "sigmados-2026-11-02",
@@ -427,7 +460,7 @@
       "cliente_medio": "ABC (Vocento)",
       "estudio": "Barómetro de GAD3 para ABC, noviembre 2026 (ABC: 'Encuesta ABC | GAD3 (II)')",
       "fecha_publicacion": "2026-11-09",
-      "fecha_publicacion_nota": "Artículo de ABC con datePublished 2026-11-09T02:30:04+01:00 (actualizado 02:40). A 9-11 gad3.com aún no lo ha publicado (feed: último barómetro ABC, el de octubre).",
+      "fecha_publicacion_nota": "Artículo de ABC con datePublished 2026-11-09T02:30:04+01:00 (actualizado 02:40). gad3.com lo publicó el 9-11 a las 10:44 UTC ('Barómetro ABC I Estimación de voto nacional. Noviembre 2026'), con la misma ficha técnica (n=1.502, campo 3-5 nov) y cifras redondeadas coherentes con las de ABC (PP 136 / 32%, PSOE 103 / 26%, Vox 63 / 19%, Frente Amplio 5% y 6 escaños, Compromís 1,5% y 5, Adelante Andalucía 1,6% y 3, Ara Més 0,3% y 1, ERC 12 / 2,7%, Junts 5 / 1,4%, PNV 4 / 0,9%, Bildu 8 / 1,5%, BNG 2 / 0,9%, CC 1 / 0,4%). Las cifras de esta entrada siguen saliendo del gráfico y la tabla de ABC.",
       "trabajo_campo": {
         "inicio": "2026-11-03",
         "fin": "2026-11-05"
@@ -600,7 +633,8 @@
         "primarias": [
           "https://www.abc.es/espana/accidente-urda-apenas-altera-bloques-29n-derecha-20261108023004-nt.html",
           "https://datawrapper.dwcdn.net/Pj6ea/11/",
-          "https://datawrapper.dwcdn.net/Pj6ea/5/"
+          "https://datawrapper.dwcdn.net/Pj6ea/5/",
+          "https://www.gad3.com/barometro-abc-i-estimacion-de-voto-nacional-noviembre-2026/"
         ],
         "secundarias": []
       },
@@ -609,14 +643,18 @@
         "data/sources/encuestas/gad3/dw_Pj6ea_v11_dataset.csv",
         "data/sources/encuestas/gad3/dw_Pj6ea_v11.html",
         "data/sources/encuestas/gad3/dw_Pj6ea_v5_dataset.csv",
-        "data/sources/encuestas/gad3/feed_20261109.xml"
+        "data/sources/encuestas/gad3/feed_20261109.xml",
+        "data/sources/encuestas/gad3/gad3_20261109.html",
+        "data/sources/encuestas/gad3/feed_20261109b.xml"
       ],
       "archivos_fuente_sha256": {
         "data/sources/encuestas/gad3/abc_20261109.html": "ae13414b4fd5266725bf64e385bc18b3ecc095b9383005fdd94fd9e61d0afb7d",
         "data/sources/encuestas/gad3/dw_Pj6ea_v11_dataset.csv": "5b69116f1f06928c61ad525ef0e54c1bdd36c0633d82f884f7adc08c004d6c0b",
         "data/sources/encuestas/gad3/dw_Pj6ea_v11.html": "f5392445eb5f3ba4f5eac73714e9e5602657b8813d0f059cd153b0efdfd853ff",
         "data/sources/encuestas/gad3/dw_Pj6ea_v5_dataset.csv": "591bdb32e5764293c5a2ba2231c3b0f7453f1b978e79dc8e2ef2b0dd14a66494",
-        "data/sources/encuestas/gad3/feed_20261109.xml": "3a291c444375822dc3bb4cc677daa5762bb84d4346870c35046049f8261749c0"
+        "data/sources/encuestas/gad3/feed_20261109.xml": "3a291c444375822dc3bb4cc677daa5762bb84d4346870c35046049f8261749c0",
+        "data/sources/encuestas/gad3/gad3_20261109.html": "38942a9a6afa3f3bc65ef9f0004b7adcb578eb431299bb214616beebb26698ec",
+        "data/sources/encuestas/gad3/feed_20261109b.xml": "1d7a3ee4118f4dbb0292968bb1975d513a8eb948486b422abd8bb10641adf5dc"
       },
       "verificado_en_fuente_primaria": true
     },

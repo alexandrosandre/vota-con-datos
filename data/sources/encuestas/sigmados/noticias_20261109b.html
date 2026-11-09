@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias | Sigma Dos</title>
+    <meta name="description" content="Actualidad, estudios, barómetros y noticias publicadas por Sigma Dos.">
+    <link rel="icon" href="img/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-noticias">
+<div class="topbar" id="top">
+    <div>
+        <a href="#newsletter-modal" class="newsletter-modal-trigger" aria-haspopup="dialog" aria-controls="newsletter-modal"><i class="fa-regular fa-envelope"></i> Apúntate a nuestra newsletter</a>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/SigmaDos" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sigma_dos?igsh=MXRvMG16cjl0N29oYQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/sigma-dos/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://x.com/sigmados" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.whatsapp.com/channel/0029Vb7oqI4KmCPGlTuNNb2P" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+</div>
+
+<nav class="navbar" aria-label="Navegación principal">
+    <a href="index.php?lang=es" aria-label="Inicio Sigma Dos">
+        <img src="img/logo_sigmados.svg" alt="Sigma Dos" class="logo">
+    </a>
+
+    <button class="hamburger" id="hamburger-btn" type="button" aria-label="Abrir menú" aria-controls="nav-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul class="menu" id="nav-menu">
+        <li><a href="index.php?lang=es#quienes-somos">Quiénes Somos</a></li>
+        <li><a href="index.php?lang=es#servicios">Servicios</a></li>
+        <li><a href="panel.php?lang=es" class="">El Panel</a></li>
+        <!-- <li><a href="trustsurvey.php?lang=es" class="">TrustSurvey</a></li> -->
+        <li><a href="noticias.php?lang=es" class="active">Noticias</a></li>
+        <li><a href="trabaja-con-nosotros.php?lang=es" class="">Trabaja con nosotros</a></li>
+        <li><a href="index.php?lang=es#contacto">Contactar</a></li>
+        <li><a href="titulopropio.php?lang=es" class="btn-titulo-propio">Título propio 2027</a></li>
+        <li class="language-switcher" aria-label="Language selector">
+            <a href="/noticias?lang=es" class="active">ES</a>
+            <span>/</span>
+            <a href="/noticias?lang=en" class="">EN</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="newsletter-modal" id="newsletter-modal" aria-hidden="true">
+    <div class="newsletter-modal-backdrop" data-newsletter-close></div>
+    <div class="newsletter-modal-panel" role="dialog" aria-modal="true" aria-labelledby="newsletter-modal-title">
+        <button class="newsletter-modal-close" type="button" aria-label="Cerrar newsletter" data-newsletter-close>
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="newsletter-modal-content">
+            <div class="newsletter-modal-copy">
+                <img src="img/logo_sigmados.svg" alt="Sigma Dos" class="newsletter-modal-logo">
+                <h2 id="newsletter-modal-title">Conecta con el pulso de la opinión pública</h2>
+                <p>Recibe en tu correo las novedades de Sigma Dos: barómetros, estudios, análisis de tendencias y contenidos sobre investigación social aplicada.</p>
+
+                <form class="newsletter-form" id="newsletter-form" method="post" action="/noticias">
+                    <input type="hidden" name="newsletter_form" value="1">
+                    <div class="newsletter-field">
+                        <label for="newsletter-email">Correo electrónico</label>
+                        <input type="email" id="newsletter-email" name="newsletter_email" placeholder="Introduce tu correo electrónico" value="" required>
+                    </div>
+
+                    <div class="newsletter-field">
+                        <label for="newsletter-interest">Área de interés (opcional)</label>
+                        <select id="newsletter-interest" name="newsletter_interest">
+                            <option value="">Selecciona una temática</option>
+                            <option value="opinion" >Opinión pública y barómetros</option>
+                            <option value="markets" >Investigación de mercados</option>
+                            <option value="training" >Formación y eventos</option>
+                        </select>
+                    </div>
+
+                    <label class="newsletter-consent">
+                        <input type="checkbox" name="newsletter_consent" required>
+                        <span>Acepto recibir comunicaciones de Sigma Dos y confirmo que he leído la <a href="politica-privacidad.php">Política de Privacidad</a>.</span>
+                    </label>
+
+                    <button type="submit" class="newsletter-submit">Suscríbete</button>
+                    <p class="newsletter-form-message " id="newsletter-form-message" aria-live="polite"></p>
+                </form>
+            </div>
+
+            <div class="newsletter-modal-brand" aria-hidden="true">
+                <img src="img/logo_sigmados.svg" alt="">
+                <span>Más de 40 años convirtiendo datos en conocimiento social.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="news-page">
+    <section class="news-hero">
+        <div class="news-hero-content">
+            <span class="news-eyebrow">Actualidad Sigma Dos</span>
+            <h1>Últimas noticias</h1>
+            <p>Estudios, barómetros, análisis y contenidos corporativos publicados por nuestro equipo.</p>
+        </div>
+    </section>
+
+    <section class="news-list-section">
+        <div class="news-list-heading">
+            <div>
+                <h2>Noticias</h2>
+                <p>Consulta las publicaciones más recientes de Sigma Dos.</p>
+            </div>
+            <div class="news-filter-pills" aria-label="Categorías de noticias">
+                <a class="active" href="noticias.php">Artículos</a>
+                <a class="" href="noticias.php?categoria=videoblog">Videoblog</a>
+                <a href="trustsurvey.php">TrustSurvey</a>
+            </div>
+        </div>
+
+                    <div class="news-public-grid">
+                                                        <article class="news-public-card">
+                        <a class="news-card-media" href="noticia.php?id=Zr7XEKTN9GLN00s" aria-label="Leer Sondeo 9 de noviembre - Estimación de voto para las Elecciones Generales del 29-N">
+                                                            <img src="img/uploads/2026/11/09/news_4bbb4e56c1358141_1794222157.png" alt="Sondeo 9 de noviembre - Estimación de voto para las Elecciones Generales del 29-N">
+                                                    </a>
+                        <div class="news-public-info">
+                            <time datetime="2026-11-09">9 de noviembre de 2026</time>
+                                                            <div class="news-category-tags">
+                                                                            <span>Actualidad</span>
+                                                                    </div>
+                                                        <h3><a href="noticia.php?id=Zr7XEKTN9GLN00s">Sondeo 9 de noviembre - Estimación de voto para las Elecciones Generales del 29-N</a></h3>
+                            <p>La nueva encuesta del 9 de noviembre de Sigma Dos para El Mundo recoge la estimación de voto para las Elecciones Generales del 29 de noviembre en una semana que da i...</p>
+                            <a class="news-read-more" href="noticia.php?id=Zr7XEKTN9GLN00s">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                                                        <article class="news-public-card">
+                        <a class="news-card-media" href="noticia.php?id=sa0OT7jgxEjay6E" aria-label="Leer Sondeo 2 de noviembre - Estimación de voto para las Elecciones Generales 29-N">
+                                                            <img src="img/uploads/2026/11/02/news_ed0b07a49a260a39_1793616512.png" alt="Sondeo 2 de noviembre - Estimación de voto para las Elecciones Generales 29-N">
+                                                    </a>
+                        <div class="news-public-info">
+                            <time datetime="2026-11-02">2 de noviembre de 2026</time>
+                                                            <div class="news-category-tags">
+                                                                            <span>Actualidad</span>
+                                                                    </div>
+                                                        <h3><a href="noticia.php?id=sa0OT7jgxEjay6E">Sondeo 2 de noviembre - Estimación de voto para las Elecciones Generales 29-N</a></h3>
+                            <p>La nueva encuesta del 2 de noviembre de Sigma Dos para El Mundo recoge la estimación de voto para las Elecciones Generales del 29 de noviembre, cuyo trabajo de campo...</p>
+                            <a class="news-read-more" href="noticia.php?id=sa0OT7jgxEjay6E">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                                                        <article class="news-public-card">
+                        <a class="news-card-media" href="noticia.php?id=wn9dETSQdpOC1qJ6" aria-label="Leer Dos de cada tres españoles reclaman neutralidad tecnológica para acelerar la renovación del parque móvil">
+                                                            <img src="img/uploads/2026/10/27/news_ade7ee283c705003_1793124702.jpg" alt="Dos de cada tres españoles reclaman neutralidad tecnológica para acelerar la renovación del parque móvil">
+                                                    </a>
+                        <div class="news-public-info">
+                            <time datetime="2026-10-27">27 de octubre de 2026</time>
+                                                        <h3><a href="noticia.php?id=wn9dETSQdpOC1qJ6">Dos de cada tres españoles reclaman neutralidad tecnológica para acelerar la renovación del parque móvil</a></h3>
+                            <p>Sigma Dos ha elaborado este estudio pionero en España sobre el impacto de la renovación del parque automovilístico.La mayoría de los españoles apuesta por una transi...</p>
+                            <a class="news-read-more" href="noticia.php?id=wn9dETSQdpOC1qJ6">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                                                        <article class="news-public-card">
+                        <a class="news-card-media" href="noticia.php?id=pWkCUfcAelcJsb7A" aria-label="Leer Entre la percha y la pantalla: ¿Nuestra manera de comprar ha cambiado?">
+                                                            <img src="img/uploads/2026/10/27/news_b033507072883f31_1793120506.png" alt="Entre la percha y la pantalla: ¿Nuestra manera de comprar ha cambiado?">
+                                                    </a>
+                        <div class="news-public-info">
+                            <time datetime="2026-10-27">27 de octubre de 2026</time>
+                                                        <h3><a href="noticia.php?id=pWkCUfcAelcJsb7A">Entre la percha y la pantalla: ¿Nuestra manera de comprar ha cambiado?</a></h3>
+                            <p>El sector de la moda y nuestros hábitos de consumo atraviesan un momento de profunda dualidad. Según los datos del estudio que hemos elaborado desde Sigma Dos para l...</p>
+                            <a class="news-read-more" href="noticia.php?id=pWkCUfcAelcJsb7A">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                                                        <article class="news-public-card">
+                        <a class="news-card-media" href="noticia.php?id=OUze2FxEIVfARtu3" aria-label="Leer Sondeo 26 de octubre - Estimación de voto para las Elecciones Generales 29-N">
+                                                            <img src="img/uploads/2026/10/26/news_a44b53b6a4d5d44e_1793007346.png" alt="Sondeo 26 de octubre - Estimación de voto para las Elecciones Generales 29-N">
+                                                    </a>
+                        <div class="news-public-info">
+                            <time datetime="2026-10-26">26 de octubre de 2026</time>
+                                                        <h3><a href="noticia.php?id=OUze2FxEIVfARtu3">Sondeo 26 de octubre - Estimación de voto para las Elecciones Generales 29-N</a></h3>
+                            <p>La nueva encuesta del 26 de octubre de Sigma Dos para El Mundo recoge la estimación de voto para las Elecciones Generales del 29 de noviembre.Nuestra estimación sitú...</p>
+                            <a class="news-read-more" href="noticia.php?id=OUze2FxEIVfARtu3">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                                                        <article class="news-public-card">
+                        <a class="news-card-media" href="noticia.php?id=rivzEnwHgHaatUC" aria-label="Leer Sondeo 19 de octubre - Mapa de escaños por provincia para las Elecciones Generales del 29-N">
+                                                            <img src="img/uploads/2026/10/20/news_75d391ec29b9cc61_1792486887.png" alt="Sondeo 19 de octubre - Mapa de escaños por provincia para las Elecciones Generales del 29-N">
+                                                    </a>
+                        <div class="news-public-info">
+                            <time datetime="2026-10-20">20 de octubre de 2026</time>
+                                                        <h3><a href="noticia.php?id=rivzEnwHgHaatUC">Sondeo 19 de octubre - Mapa de escaños por provincia para las Elecciones Generales del 29-N</a></h3>
+                            <p>La encuesta del 19 de octubre de Sigma Dos para El Mundo muestra la estimación de representación parlamentaria desglosada por provincias para las Elecciones Generale...</p>
+                            <a class="news-read-more" href="noticia.php?id=rivzEnwHgHaatUC">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                                                        <article class="news-public-card">
+                        <a class="news-card-media" href="noticia.php?id=EIJOKGN2GFZmhHt" aria-label="Leer Sondeo 19 de octubre - Estimación de voto para las Elecciones Generales 29-N">
+                                                            <img src="img/uploads/2026/10/19/news_d53761ecfc7d8afb_1792400676.png" alt="Sondeo 19 de octubre - Estimación de voto para las Elecciones Generales 29-N">
+                                                    </a>
+                        <div class="news-public-info">
+                            <time datetime="2026-10-19">19 de octubre de 2026</time>
+                                                            <div class="news-category-tags">
+                                                                            <span>Actualidad</span>
+                                                                    </div>
+                                                        <h3><a href="noticia.php?id=EIJOKGN2GFZmhHt">Sondeo 19 de octubre - Estimación de voto para las Elecciones Generales 29-N</a></h3>
+                            <p>La nueva encuesta del 19 de octubre de Sigma Dos para El Mundo corresponde a la estimación de voto para las Elecciones Generales del 29 de noviembre, incorporando ya...</p>
+                            <a class="news-read-more" href="noticia.php?id=EIJOKGN2GFZmhHt">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                                                        <article class="news-public-card">
+                        <a class="news-card-media" href="noticia.php?id=wp_news_13144" aria-label="Leer Sondeo de arranque de campaña – Estimación de voto para las Elecciones Generales 29-N por comunidad autónoma">
+                                                            <img src="img/uploads/2026/10/SIGMADOS-POSTS-15.png" alt="Sondeo de arranque de campaña – Estimación de voto para las Elecciones Generales 29-N por comunidad autónoma">
+                                                    </a>
+                        <div class="news-public-info">
+                            <time datetime="2026-10-13">13 de octubre de 2026</time>
+                                                            <div class="news-category-tags">
+                                                                            <span>Sin categorizar</span>
+                                                                    </div>
+                                                        <h3><a href="noticia.php?id=wp_news_13144">Sondeo de arranque de campaña – Estimación de voto para las Elecciones Generales 29-N por comunidad autónoma</a></h3>
+                            <p>Con la mirada puesta en las Elecciones Generales del próximo 29 de noviembre, el panorama político afronta el arranque oficial de la precampaña. A menos de 50 días p...</p>
+                            <a class="news-read-more" href="noticia.php?id=wp_news_13144">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                                                        <article class="news-public-card">
+                        <a class="news-card-media" href="noticia.php?id=wp_news_13139" aria-label="Leer Sondeo de arranque de campaña - Estimación de voto para las Elecciones Generales 29-N">
+                                                            <img src="img/uploads/2026/10/PORTADAS-NOTICIAS-BLOG-DE-SIGMA-DOS-16.png" alt="Sondeo de arranque de campaña - Estimación de voto para las Elecciones Generales 29-N">
+                                                    </a>
+                        <div class="news-public-info">
+                            <time datetime="2026-10-12">12 de octubre de 2026</time>
+                                                            <div class="news-category-tags">
+                                                                            <span>Sin categorizar</span>
+                                                                    </div>
+                                                        <h3><a href="noticia.php?id=wp_news_13139">Sondeo de arranque de campaña - Estimación de voto para las Elecciones Generales 29-N</a></h3>
+                            <p>La nueva encuesta de octubre de Sigma Dos para El Mundo corresponde a la estimación de voto para las Elecciones Generales en el arranque de la precampaña. Nuestra es...</p>
+                            <a class="news-read-more" href="noticia.php?id=wp_news_13139">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                            </div>
+
+                            <nav class="news-pagination" aria-label="Paginación de noticias">
+                    <a class="disabled" href="noticias.php?page=1" aria-label="Página anterior"><i class="fa-solid fa-chevron-left"></i></a>
+                                                                        <a class="active" href="noticias.php?page=1">1</a>
+                                                                                                <a class="" href="noticias.php?page=2">2</a>
+                                                                                                <span class="pagination-ellipsis" aria-hidden="true">...</span>
+                                                                                                <a class="" href="noticias.php?page=104">104</a>
+                                                                <a class="" href="noticias.php?page=2" aria-label="Página siguiente"><i class="fa-solid fa-chevron-right"></i></a>
+                </nav>
+                        </section>
+</main>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h5 class="footer-brand">SIGMA DOS</h5>
+            <div class="footer-social-box">
+                <a href="https://www.facebook.com/SigmaDos" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/sigma_dos?igsh=MXRvMG16cjl0N29oYQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/sigma-dos/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://x.com/sigmados" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.whatsapp.com/channel/0029Vb7oqI4KmCPGlTuNNb2P" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h5>Secciones</h5>
+            <ul>
+                <li><a href="index.php?lang=es#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="index.php?lang=es#servicios">Servicios</a></li>
+                <li><a href="panel.php?lang=es">El Panel</a></li>
+                <li><a href="noticias.php?lang=es">Noticias</a></li>
+                <li><a href="trabaja-con-nosotros.php?lang=es">Trabaja con nosotros</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h5>Legal</h5>
+            <ul>
+                <li><a href="aviso-legal.php?lang=es">Aviso Legal</a></li>
+                <li><a href="politica-privacidad.php?lang=es">Política de Privacidad</a></li>
+                <li><a href="politica-cookies.php?lang=es">Política de Cookies</a></li>
+                <li><a href="terminos-y-condiciones-generales.php?lang=es">Términos y Condiciones Generales</a></li>
+                <li><a href="declaracion-de-aplicabilidad.php?lang=es">Declaración de Aplicabilidad</a></li>
+                <li><a href="politica-de-calidad.php?lang=es">Política de Calidad</a></li>
+                <li><a href="sistema-interno-de-informacion.php?lang=es">Sistema Interno de Información</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Sigma Dos. Todos los derechos reservados.</p>
+        <a href="#top" class="scroll-link"><i class="fa-solid fa-arrow-up"></i> Volver arriba</a>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

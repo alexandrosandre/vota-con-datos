@@ -1,6 +1,6 @@
 # Checklist · vota con datos (29-N)
 
-Actualizado: 9-nov-2026 (mañana). La web ya está en línea; aquí «bloquea» significa **no difundirla ni
+Actualizado: 9-nov-2026 (noche). La web ya está en línea; aquí «bloquea» significa **no difundirla ni
 anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que esté hecho.
 
 **Quién lo desbloquea**

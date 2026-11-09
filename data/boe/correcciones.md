@@ -4,6 +4,8 @@ Estado a 8 de noviembre de 2026 (revisión hecha el domingo 8; ese día no hay B
 
 **Revisión del 9-XI-2026: sin cambios oficiales nuevos.** El sumario del BOE núm. 279 (9-XI) no contiene ninguna disposición de Juntas Electorales, de la Junta Electoral Central ni del Tribunal Constitucional, ni corrección de BOE-A-2026-23103 (su XML sigue con `referencias/posteriores` vacío). La página de candidaturas de la JEC no ha cambiado y su PDF de proclamadas tiene el mismo sha256 (`4f437d2d…74dc`) que la copia del 8-XI. El caso UPC (apartado 3) sigue sin documento oficial. (El sumario del 9-XI no se ha guardado en `data/sources/boe/`; se obtiene con `python3 -I pipeline/boe_fetch.py sumario 20261109`.)
 
+**Revisión del 9-XI-2026 por la tarde (20:45): sin cambios oficiales nuevos.** El sumario del 10-XI aún no está publicado (la API devuelve 404). Se ha vuelto a filtrar el del 9-XI (núm. 279): ninguna disposición electoral. En los XML de BOE-A-2026-23103 y BOE-A-2026-23383, `referencias/posteriores` sigue vacío. La página de candidaturas de la JEC solo difiere de la copia del 8-XI en el script de medición de Akamai, y su PDF de proclamadas conserva el mismo sha256 (`4f437d2d…74dc`). La portada de la JEC no publica ningún acuerdo nuevo sobre candidaturas; las últimas novedades son del 6-XI (impedimentos y excusas). El caso UPC (apartado 3) sigue sin documento oficial ni noticia nueva. (Copias de esta revisión no guardadas en `data/sources/boe/`.)
+
 ## Qué se ha revisado
 
 | Fuente | Alcance | Fichero bruto |

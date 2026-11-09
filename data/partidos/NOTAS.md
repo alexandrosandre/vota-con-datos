@@ -4,6 +4,8 @@
 
 Comprobación de los programas no publicados: 9 de noviembre de 2026, hacia las 09:30 (+01:00). Sin cambios: ningún programa nuevo y ninguna fecha nueva anunciada. La agenda de eaj-pnv.eus mantiene la presentación del PNV hoy a las 16:00. La del PP sigue anunciada para el martes 10-nov solo en prensa (también Demócrata: https://www.democrata.es/politica/feijoo-apuesta-por-el-cambio-necesario-como-lema-para-la-campana-que-iniciara-el-jueves-12-en-badalona/); no consta en pp.es. psoe.es (desafío anti-bots) y voxespana.es (HTTP 403) no se pudieron leer.
 
+Nueva comprobación: 9 de noviembre de 2026, hacia las 20:45 (+01:00). Sin cambios en los 14 no publicados: ningún programa nuevo y ninguna fecha nueva anunciada en webs oficiales. La agenda de pp.es del día no incluye la presentación; la prensa la sigue situando el martes 10-nov, ahora con «249 medidas» (Infobae, directo del 9-nov, 15:55: https://www.infobae.com/espana/2026/11/09/elecciones-generales-29-n-en-directo-feijoo-confia-en-que-los-sindicatos-acepten-el-resultado-electoral-si-hay-cambio-de-gobierno/). En voxespana.es la portada sigue dando 403, pero /noticias se lee: nada sobre el programa, y el enlace «Programa electoral de VOX» del menú da 404. La página «Programa» de adelanteandalucia.org es la de las autonómicas andaluzas de 2026, no la del 29-N. psoe.es sigue tras el desafío anti-bots.
+
 ## 1. Universo de partidos
 
 Se incluyen las candidaturas al Congreso que cumplen al menos uno de estos criterios:
