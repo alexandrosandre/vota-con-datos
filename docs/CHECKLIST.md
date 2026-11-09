@@ -106,17 +106,11 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   (D'Hondt, reproducción de 2023, cuotas, reparto de Sumar, veda, citas) y prueba de humo de extremo a
   extremo con Chrome sin interfaz en cada despliegue.
 - [ ] **17. [Yo] Auditoría de accesibilidad** (lector de pantalla, teclado, contraste en modo oscuro).
-- [ ] **18. [Tú] Dominio propio: votacondatos.org** (elegido el 9-nov; sin renovación). Precio en
-  Porkbun el 9-nov: 7,98 USD el primer año (sin IVA). Pasos tuyos:
-  1. Comprarlo en el registrador que prefieras, con la **renovación automática desactivada** y la
-     privacidad del WHOIS activada.
-  2. En el DNS del dominio: registros **A** de `votacondatos.org` → 185.199.108.153, 185.199.109.153,
-     185.199.110.153 y 185.199.111.153; **AAAA** → 2606:50c0:8000::153, 2606:50c0:8001::153,
-     2606:50c0:8002::153 y 2606:50c0:8003::153; **CNAME** de `www` → `alexandrosandre.github.io`.
-  3. (Recomendado) Verificar el dominio en GitHub → Settings → Pages → «Add a domain», con el registro
-     TXT que te indique, para que nadie más pueda usarlo en GitHub Pages.
-  Después lo activo yo con `pipeline/activar_dominio.sh` (solo actúa cuando el DNS ya apunta a GitHub,
-  para no dejar la web caída), y activo HTTPS.
+- [x] **18. Dominio propio: votacondatos.org** — comprado en Porkbun el 9-nov (7,98 USD, caduca el
+  9-11-2027, **renovación automática desactivada**, privacidad WHOIS activa). DNS con los registros de
+  GitHub Pages (4 A, 4 AAAA, CNAME www), dominio activado en Pages con HTTPS obligatorio; github.io y
+  www redirigen a https://votacondatos.org. Pendiente opcional [Tú]: verificar el dominio en GitHub
+  (Settings → Pages) y activar la verificación en dos pasos en Porkbun.
 - [ ] **19. [Tú] Revisión de posiciones por los propios partidos** (práctica recomendada en la
   literatura de estos cuestionarios): solo si decides contactar con ellos.
 - [ ] **20. [Yo] Avisos menores**: el runner `ubuntu-latest` de GitHub Actions migra a Ubuntu 26
@@ -137,5 +131,5 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
 | 1 | Aprobar la carpeta permanente del proyecto | Cuanto antes |
 | 2 | Crear el entorno de rutinas (bridge) para este repositorio | Tras el punto 1 |
 | 7 | Revisar una muestra de contenidos | Antes de anunciar la web |
-| 18 | Comprar votacondatos.org y poner sus registros DNS | Cuando puedas |
+| 18 | (Opcional) verificar el dominio en GitHub y activar 2FA en Porkbun | Cuando quieras |
 | 19 | Decidir si contactar con los partidos (opcional) | Cuando quieras |
