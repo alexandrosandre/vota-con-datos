@@ -119,10 +119,12 @@ export function Metodologia() {
               su voto de 2023.
             </li>
             <li>
-              <strong>Incertidumbre:</strong> 4.000 simulaciones en las que el voto de cada candidatura varía con un error log-normal σ = k/√cuota
-              (k = 0,04 con encuestas y 0,05 con la base de 2023, que tiene tres años; ±2,2 puntos para un partido del 30 % y ±0,7 para uno del
-              3 % con k = 0,04). La probabilidad de escaño es la fracción de simulaciones en que lo obtiene.
-            </li>
+              <strong>Incertidumbre:</strong> 4.000 simulaciones en las que el voto de cada candidatura varía con un error log-normal σ = k/√cuota.
+              k está <a href={gh('docs/research/calibracion_incertidumbre.md')}>calibrado con las elecciones de 2015 a 2023</a>: 0,08 con
+              encuestas (error real de las encuestas finales más la desviación provincial) y 0,15 con la base de 2023 (cuánto cambia el voto de
+              una elección a otra). Con k = 0,08, un partido del 30 % varía ±4,4 puntos y uno del 3 % ±1,4. En una prueba retrospectiva sobre
+              las elecciones de 2015 a 2023, los casos a los que el modelo calibrado daba alrededor de un 84 % ganaron escaño el 84 % de las veces. La probabilidad de escaño es la
+              fracción de simulaciones en que lo obtiene.</li>
             <li><strong>Coste de un escaño:</strong> votos de la candidatura entre sus escaños, en tu provincia y en toda España en 2023, y votos adicionales que le faltarían para el primer o el siguiente escaño.</li>
             <li><strong>Alternativa:</strong> si tu opción tiene menos de un 50 % de probabilidad, te mostramos la primera de tus siguientes preferencias (del paso 1 o de tu orden manual; las coaliciones cuentan para los partidos que las integran) que supera ese 50 % en tu provincia. Votar a quien prefieres siempre es legítimo: los votos cuentan también para la financiación pública y como señal política.</li>
           </ol>

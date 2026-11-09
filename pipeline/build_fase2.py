@@ -84,8 +84,8 @@ def en_veda(ahora=None):
     return VEDA_INICIO - timedelta(hours=2) <= ahora < VEDA_FIN
 
 
-K_BASE = 0.05  # 2023 queda a tres años: algo más de incertidumbre que una encuesta reciente
-K_ENCUESTA = 0.04
+K_BASE = 0.15  # calibrado: docs/research/calibracion_incertidumbre.md (repetir la elección anterior)
+K_ENCUESTA = 0.08  # calibrado: error de encuestas finales + desviación provincial del swing (2015–2023)
 
 
 def slug(s):

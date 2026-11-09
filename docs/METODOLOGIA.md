@@ -34,8 +34,12 @@ escaños nacionales resultantes con los publicados por cada encuesta (diferencia
 en los grandes partidos).
 
 **Incertidumbre**: 4.000 simulaciones con error log-normal independiente por candidatura,
-σ = k/√cuota; k = 0,04 (encuestas) y 0,05 (base 2023, que tiene tres años); el usuario puede elegir
-baja (×0,625) o alta (×1,5). Semilla fija por circunscripción y escenario: resultados reproducibles.
+σ = k/√max(cuota, 0,5 %); k calibrado con las generales de 2015–2023
+(`pipeline/calibracion.py`, `docs/research/calibracion_incertidumbre.md`): 0,08 con encuestas y 0,15
+con la base de 2023; el usuario puede elegir baja (×0,625) o alta (×1,5). Prueba retrospectiva sobre
+2023: con k = 0,04 el modelo era demasiado confiado; con el calibrado, las probabilidades anunciadas
+coinciden con las frecuencias observadas (Brier 0,0696 → 0,0673 con encuestas; 0,0743 → 0,0646 con
+la base). Semilla fija por circunscripción y escenario: resultados reproducibles.
 
 **Sugerencia**: si P(≥ 1 escaño) < 50 %, se propone la primera preferencia siguiente (ranking del
 paso 1 u orden manual; las coaliciones cuentan para sus partidos integrantes) con P ≥ 50 % en esa

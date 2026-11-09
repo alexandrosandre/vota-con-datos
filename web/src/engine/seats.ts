@@ -135,8 +135,9 @@ export interface ResultadoSim {
 
 /**
  * Incertidumbre: error multiplicativo log-normal por candidatura,
- * σ_i = k / sqrt(max(cuota_i, 0.5 %)). Para k = 0,04: un partido del 30 % tiene
- * ±2,2 puntos (1σ), uno del 10 % ±1,3 y uno del 3 % ±0,7. Ver docs/METODOLOGIA.md.
+ * σ_i = k / sqrt(max(cuota_i, 0.5 %)). k lo fija cada escenario (calibrado con 2015–2023:
+ * 0,08 con encuestas, 0,15 con la base de 2023; docs/research/calibracion_incertidumbre.md).
+ * Estos niveles solo dan el multiplicador relativo (baja ×0,625, media ×1, alta ×1,5).
  */
 export const NIVELES_INCERTIDUMBRE = { baja: 0.025, media: 0.04, alta: 0.06 } as const;
 export type NivelIncertidumbre = keyof typeof NIVELES_INCERTIDUMBRE;

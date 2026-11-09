@@ -1,0 +1,6149 @@
+{
+ "avisos": [
+  "PROV_02_201512_1.xlsx prov 25: 316 votos a candidaturas sin desglose por lista en el fichero del Ministerio",
+  "PROV_02_201512_1.xlsx prov 08: 5493 votos a candidaturas sin desglose por lista en el fichero del Ministerio",
+  "PROV_02_201512_1.xlsx prov 43: 705 votos a candidaturas sin desglose por lista en el fichero del Ministerio",
+  "PROV_02_201512_1.xlsx prov 17: 602 votos a candidaturas sin desglose por lista en el fichero del Ministerio",
+  "PROV_02_201512_1.xlsx prov 46: 13 votos a candidaturas sin desglose por lista en el fichero del Ministerio"
+ ],
+ "contraste_boe": [
+  {
+   "eleccion": "2015",
+   "boe": "BOE-A-2016-867.pdf",
+   "validos_ministerio": 25211313,
+   "validos_boe": 25211313,
+   "blancos_ministerio": 188132,
+   "blancos_boe": 188132,
+   "coincide": true
+  },
+  {
+   "eleccion": "2019a",
+   "boe": "BOE-A-2019-8070.pdf",
+   "validos_ministerio": 26201371,
+   "validos_boe": 26201371,
+   "blancos_ministerio": 199836,
+   "blancos_boe": 199836,
+   "coincide": true
+  },
+  {
+   "eleccion": "2019n",
+   "boe": "BOE-A-2019-17344.pdf",
+   "validos_ministerio": 24258228,
+   "validos_boe": 24258228,
+   "blancos_ministerio": 217227,
+   "blancos_boe": 217227,
+   "coincide": true
+  }
+ ],
+ "nacional": {
+  "2015": {
+   "PP": 0.28299680385547554,
+   "PSOE": 0.21995343915646123,
+   "PODEMOS15": 0.20676079028490107,
+   "CS": 0.13940281491884218,
+   "IU": 0.036760600290829754,
+   "ERC": 0.02386952238465327,
+   "JUNTS": 0.02249993881714927,
+   "PNV": 0.011991283436923733,
+   "PACMA": 0.00874087755762661,
+   "BILDU": 0.008691534629711669,
+   "UPYD": 0.0061541023269989946,
+   "UPN-PP": 0.0040554809660250535,
+   "CC": 0.0032492159373056057
+  },
+  "2016": {
+   "PP": 0.325698004324065,
+   "PSOE": 0.22632000700098592,
+   "UP": 0.1840779953067619,
+   "CS": 0.1306062192784453,
+   "UP+COMPROMIS": 0.027429023036112242,
+   "ERC": 0.02628421217394124,
+   "JUNTS": 0.020100312820181297,
+   "PNV": 0.011932191044599897,
+   "PACMA": 0.011919220096820641,
+   "BILDU": 0.0076791752472742825,
+   "UPN-PP": 0.004447372146261571,
+   "CC": 0.0032532550531091716
+  },
+  "2019a": {
+   "PSOE": 0.2867461401161031,
+   "PP": 0.16692458574018895,
+   "CS": 0.1586048684246332,
+   "UP": 0.1431659816579827,
+   "VOX": 0.10259356275669697,
+   "ERC": 0.038944221659240656,
+   "JUNTS": 0.019113007483463364,
+   "PNV": 0.015109285693485276,
+   "PACMA": 0.012529840518650722,
+   "BILDU": 0.009909672283942699,
+   "COMPROMIS": 0.006634042165198149,
+   "CC": 0.005254076208454894,
+   "x:FRONTREPUBLICA": 0.004343551335538892,
+   "NA+": 0.004107380487837831,
+   "BNG": 0.0036041243795983044
+  },
+  "2019n": {
+   "PSOE": 0.27999567816742427,
+   "PP": 0.20805476805643017,
+   "VOX": 0.15075210769723163,
+   "UP": 0.1285899365773955,
+   "CS": 0.06803126757651054,
+   "ERC": 0.03606442317221192,
+   "JUNTS": 0.02185753221546108,
+   "MASPAIS": 0.016737372573132712,
+   "PNV": 0.015623647366163762,
+   "BILDU": 0.011444405584777256,
+   "CUP": 0.010180916759459924,
+   "PACMA": 0.009434159824039908,
+   "MES-COMPROMIS": 0.007267101290333325,
+   "CC-NC": 0.005123581161822702,
+   "BNG": 0.004965572918186769,
+   "NA+": 0.004084304921200345
+  },
+  "2023": {
+   "PP": 0.3305576896257697,
+   "PSOE": 0.3168215504101229,
+   "VOX": 0.12382490388988017,
+   "SUMAR": 0.1233386774763067,
+   "ERC": 0.018876310667570152,
+   "JUNTS": 0.016016996375620356,
+   "BILDU": 0.013574522805270413,
+   "PNV": 0.011231692435302905,
+   "PACMA": 0.00685500662728546,
+   "BNG": 0.006237623838574451,
+   "CC": 0.004713325904919243,
+   "CUP": 0.004036116690612764
+  }
+ },
+ "base": {
+  "pares": [
+   {
+    "par": "2015→2016",
+    "anos": 0.5174537987679672,
+    "n": 255,
+    "unidades": 14,
+    "k": 0.05337852880301525,
+    "k_bloques": 0.05979926975470361,
+    "n_bloques": 307,
+    "sigma_constante": 0.36282606127481043,
+    "k_residuo_provincial": 0.018810601395549985,
+    "swing_nacional": {
+     "PP": {
+      "S": 0.28299680385547554,
+      "log": 0.14053498113687735
+     },
+     "PSOE": {
+      "S": 0.21995343915646123,
+      "log": 0.02853407417181374
+     },
+     "CS": {
+      "S": 0.13940281491884218,
+      "log": -0.06518085470403888
+     },
+     "ERC": {
+      "S": 0.02386952238465327,
+      "log": 0.09636603023531154
+     },
+     "JUNTS": {
+      "S": 0.02249993881714927,
+      "log": -0.11277721183184286
+     },
+     "PNV": {
+      "S": 0.011991283436923733,
+      "log": -0.0049401279523933785
+     },
+     "PACMA": {
+      "S": 0.00874087755762661,
+      "log": 0.31014163969952424
+     },
+     "BILDU": {
+      "S": 0.008691534629711669,
+      "log": -0.12383736917580637
+     },
+     "UPYD": {
+      "S": 0.0061541023269989946,
+      "log": -1.080459178239218
+     },
+     "UPN-PP": {
+      "S": 0.0040554809660250535,
+      "log": 0.0922441016732172
+     },
+     "CC": {
+      "S": 0.0032492159373056057,
+      "log": 0.0012423327467402906
+     },
+     "BNG": {
+      "S": 0.0028107619781643266,
+      "log": -0.401499862549343
+     },
+     "VOX": {
+      "S": 0.0023050762965022885,
+      "log": -0.16139242983140256
+     },
+     "GBAI": {
+      "S": 0.0012154067501363376,
+      "log": -0.7121078936513687
+     }
+    }
+   },
+   {
+    "par": "2016→2019a",
+    "anos": 2.836413415468857,
+    "n": 274,
+    "unidades": 12,
+    "k": 0.19562570103524504,
+    "k_bloques": 0.19625691887088892,
+    "n_bloques": 229,
+    "sigma_constante": 0.39556019315100543,
+    "k_residuo_provincial": 0.06462189083702716,
+    "swing_nacional": {
+     "PP": {
+      "S": 0.325698004324065,
+      "log": -0.6684284568907927
+     },
+     "PSOE": {
+      "S": 0.22632000700098592,
+      "log": 0.23664733719331252
+     },
+     "UP": {
+      "S": 0.1840779953067619,
+      "log": -0.25135488727999045
+     },
+     "CS": {
+      "S": 0.1306062192784453,
+      "log": 0.1942291684521946
+     },
+     "ERC": {
+      "S": 0.02628421217394124,
+      "log": 0.3931619471677317
+     },
+     "JUNTS": {
+      "S": 0.020100312820181297,
+      "log": -0.05036625479676707
+     },
+     "PNV": {
+      "S": 0.011932191044599897,
+      "log": 0.2360696237698439
+     },
+     "PACMA": {
+      "S": 0.011919220096820641,
+      "log": 0.04996080948852217
+     },
+     "BILDU": {
+      "S": 0.0076791752472742825,
+      "log": 0.25499912685123977
+     },
+     "CC": {
+      "S": 0.0032532550531091716,
+      "log": 0.47934814607991794
+     },
+     "BNG": {
+      "S": 0.0018812863105989064,
+      "log": 0.6501231000490276
+     },
+     "GBAI": {
+      "S": 0.0005962894358905709,
+      "log": 0.3562075459565917
+     }
+    }
+   },
+   {
+    "par": "2019a→2019n",
+    "anos": 0.5366187542778919,
+    "n": 335,
+    "unidades": 19,
+    "k": 0.159284327551896,
+    "k_bloques": 0.15829114555427065,
+    "n_bloques": 340,
+    "sigma_constante": 0.4402208624348932,
+    "k_residuo_provincial": 0.037697635252034276,
+    "swing_nacional": {
+     "PSOE": {
+      "S": 0.2867461401161031,
+      "log": -0.023823127186852224
+     },
+     "PP": {
+      "S": 0.16692458574018895,
+      "log": 0.22025922497682604
+     },
+     "CS": {
+      "S": 0.1586048684246332,
+      "log": -0.8464485881815861
+     },
+     "UP": {
+      "S": 0.1431659816579827,
+      "log": -0.10737611298425832
+     },
+     "VOX": {
+      "S": 0.10259356275669697,
+      "log": 0.38486162731183166
+     },
+     "ERC": {
+      "S": 0.038944221659240656,
+      "log": -0.07682353682007123
+     },
+     "JUNTS": {
+      "S": 0.019113007483463364,
+      "log": 0.13417646261746663
+     },
+     "PNV": {
+      "S": 0.015109285693485276,
+      "log": 0.03347612190253692
+     },
+     "PACMA": {
+      "S": 0.012529840518650722,
+      "log": -0.28377591486710635
+     },
+     "BILDU": {
+      "S": 0.009909672283942699,
+      "log": 0.14398973681644328
+     },
+     "NA+": {
+      "S": 0.004107380487837831,
+      "log": -0.005633914517463445
+     },
+     "BNG": {
+      "S": 0.0036041243795983044,
+      "log": 0.3204498315242142
+     },
+     "PRC": {
+      "S": 0.0019947811127898614,
+      "log": 0.35234951118402763
+     },
+     "GBAI": {
+      "S": 0.0008514439950489613,
+      "log": -0.4856239017520145
+     },
+     "x:AXSI": {
+      "S": 0.0004353588978225605,
+      "log": 0.2851663345296328
+     },
+     "x:CPM": {
+      "S": 0.00026170386274825084,
+      "log": 0.3439978860490126
+     },
+     "x:SOMOSREGION": {
+      "S": 0.000189913726270278,
+      "log": -0.6825609467291222
+     },
+     "x:PPSO": {
+      "S": 0.00010163590294568937,
+      "log": -0.5198598245287706
+     },
+     "x:PREPAL": {
+      "S": 8.358341248631608e-05,
+      "log": -0.767657804386602
+     }
+    }
+   },
+   {
+    "par": "2019n→2023",
+    "anos": 3.698836413415469,
+    "n": 226,
+    "unidades": 15,
+    "k": 0.14298134576963864,
+    "k_bloques": 0.11735781042500779,
+    "n_bloques": 230,
+    "sigma_constante": 0.3709788733601048,
+    "k_residuo_provincial": 0.06652546022424903,
+    "swing_nacional": {
+     "PSOE": {
+      "S": 0.27999567816742427,
+      "log": 0.12356451497734985
+     },
+     "PP": {
+      "S": 0.20805476805643017,
+      "log": 0.4629798436279361
+     },
+     "VOX": {
+      "S": 0.15075210769723163,
+      "log": -0.19676831462041663
+     },
+     "ERC": {
+      "S": 0.03606442317221192,
+      "log": -0.647399139646126
+     },
+     "JUNTS": {
+      "S": 0.02185753221546108,
+      "log": -0.31089515405489215
+     },
+     "PNV": {
+      "S": 0.015623647366163762,
+      "log": -0.33004615929795567
+     },
+     "BILDU": {
+      "S": 0.011444405584777256,
+      "log": 0.17069369735311715
+     },
+     "CUP": {
+      "S": 0.010180916759459924,
+      "log": -0.925232047509817
+     },
+     "PACMA": {
+      "S": 0.009434159824039908,
+      "log": -0.31935784620397417
+     },
+     "BNG": {
+      "S": 0.004965572918186769,
+      "log": 0.22807063254316684
+     },
+     "EXISTE": {
+      "S": 0.0008146102015365673,
+      "log": 0.016218506218667335
+     },
+     "GBAI": {
+      "S": 0.0005239047138974866,
+      "log": -0.2635095715099751
+     },
+     "x:UPL": {
+      "S": 0.0004222484841019715,
+      "log": 0.800035874947045
+     },
+     "x:CPM": {
+      "S": 0.00036915309725013714,
+      "log": -1.9489523780209475
+     },
+     "x:XAV": {
+      "S": 0.00022326445278690596,
+      "log": 0.2894091385566848
+     }
+    }
+   }
+  ],
+  "formas": {
+   "k/sqrt(s)": {
+    "params": {
+     "k": 0.14940893546081144
+    },
+    "ll": -753.7891087167712,
+    "np": 1,
+    "aic": 1509.5782174335425
+   },
+   "constante": {
+    "params": {
+     "sigma": 0.3977754042809515
+    },
+    "ll": -541.8071604152593,
+    "np": 1,
+    "aic": 1085.6143208305186
+   },
+   "c*s^-a": {
+    "params": {
+     "c": 0.32614306995820164,
+     "a": 0.08
+    },
+    "ll": -530.0758217246986,
+    "np": 2,
+    "aic": 1064.1516434493972
+   },
+   "sqrt(a^2+b^2/s)": {
+    "params": {
+     "a": 0.3,
+     "b": 0.04
+    },
+    "ll": -565.344138685952,
+    "np": 2,
+    "aic": 1134.688277371904
+   }
+  },
+  "tramos": [
+   {
+    "desde": 0.005,
+    "hasta": 0.01,
+    "n": 154,
+    "rms_log": 0.48851829843736616,
+    "sigma_robusta": 0.4024668421561734,
+    "k_implicita": 0.0406403822029067,
+    "k_robusta": 0.0337062504151191,
+    "error_pts_rms": 0.25169124722841146
+   },
+   {
+    "desde": 0.01,
+    "hasta": 0.02,
+    "n": 71,
+    "rms_log": 0.3360087693848492,
+    "sigma_robusta": 0.33618907036042195,
+    "k_implicita": 0.03750295208234982,
+    "k_robusta": 0.03864454938979765,
+    "error_pts_rms": 0.33596018275616235
+   },
+   {
+    "desde": 0.02,
+    "hasta": 0.05,
+    "n": 40,
+    "rms_log": 0.4998593687986289,
+    "sigma_robusta": 0.6137841193925063,
+    "k_implicita": 0.09433707359778461,
+    "k_robusta": 0.12527529148491945,
+    "error_pts_rms": 2.084168016456326
+   },
+   {
+    "desde": 0.05,
+    "hasta": 0.1,
+    "n": 76,
+    "rms_log": 0.41458013911073843,
+    "sigma_robusta": 0.3797975308460855,
+    "k_implicita": 0.11483467264084975,
+    "k_robusta": 0.1060457877099078,
+    "error_pts_rms": 2.9171911133164583
+   },
+   {
+    "desde": 0.1,
+    "hasta": 0.2,
+    "n": 345,
+    "rms_log": 0.431895388478676,
+    "sigma_robusta": 0.3543205403460119,
+    "k_implicita": 0.1698994243647791,
+    "k_robusta": 0.14111668143340153,
+    "error_pts_rms": 5.52114771017294
+   },
+   {
+    "desde": 0.2,
+    "hasta": 0.35,
+    "n": 321,
+    "rms_log": 0.29080834996251004,
+    "sigma_robusta": 0.21113568359876322,
+    "k_implicita": 0.14932462521037057,
+    "k_robusta": 0.1151821459291572,
+    "error_pts_rms": 7.075614214678266
+   },
+   {
+    "desde": 0.35,
+    "hasta": 1.0,
+    "n": 83,
+    "rms_log": 0.3978780919035613,
+    "sigma_robusta": 0.22037829190594438,
+    "k_implicita": 0.2574992168715605,
+    "k_robusta": 0.137752657968417,
+    "error_pts_rms": 12.78357641447719
+   }
+  ],
+  "tramos_residuo": [
+   {
+    "desde": 0.005,
+    "hasta": 0.01,
+    "n": 154,
+    "rms_log": 0.1517503130537496,
+    "sigma_robusta": 0.12093430508958637,
+    "k_implicita": 0.01244542868906114,
+    "k_robusta": 0.010170145314084156,
+    "error_pts_rms": 0.10977205876450337
+   },
+   {
+    "desde": 0.01,
+    "hasta": 0.02,
+    "n": 71,
+    "rms_log": 0.12851956938187636,
+    "sigma_robusta": 0.09793357211453194,
+    "k_implicita": 0.014468954133363071,
+    "k_robusta": 0.011385060423578541,
+    "error_pts_rms": 0.1701125142257645
+   },
+   {
+    "desde": 0.02,
+    "hasta": 0.05,
+    "n": 40,
+    "rms_log": 0.20077563337895926,
+    "sigma_robusta": 0.21136893189592862,
+    "k_implicita": 0.03946294397040434,
+    "k_robusta": 0.043525685751436796,
+    "error_pts_rms": 0.8775917293602371
+   },
+   {
+    "desde": 0.05,
+    "hasta": 0.1,
+    "n": 76,
+    "rms_log": 0.1751017741255227,
+    "sigma_robusta": 0.08349242127610138,
+    "k_implicita": 0.04945416058577821,
+    "k_robusta": 0.024105923694790667,
+    "error_pts_rms": 1.4154395959763346
+   },
+   {
+    "desde": 0.1,
+    "hasta": 0.2,
+    "n": 345,
+    "rms_log": 0.1410032068555256,
+    "sigma_robusta": 0.0864628425983573,
+    "k_implicita": 0.05326969395492729,
+    "k_robusta": 0.03351594271019579,
+    "error_pts_rms": 2.012069180268906
+   },
+   {
+    "desde": 0.2,
+    "hasta": 0.35,
+    "n": 321,
+    "rms_log": 0.10421923420183889,
+    "sigma_robusta": 0.06805825401359678,
+    "k_implicita": 0.05452132415537938,
+    "k_robusta": 0.03457782222566122,
+    "error_pts_rms": 2.6683416121114085
+   },
+   {
+    "desde": 0.35,
+    "hasta": 1.0,
+    "n": 83,
+    "rms_log": 0.11875257845647547,
+    "sigma_robusta": 0.0860508773525487,
+    "k_implicita": 0.07688536810260363,
+    "k_robusta": 0.052280887255967946,
+    "error_pts_rms": 5.26809013396415
+   }
+  ],
+  "k_residuo_provincial": 0.0498687833256037,
+  "formas_largo_plazo": {
+   "k/sqrt(s)": {
+    "params": {
+     "k": 0.173816501103465
+    },
+    "ll": -390.87611661903344,
+    "np": 1,
+    "aic": 783.7522332380669
+   },
+   "constante": {
+    "params": {
+     "sigma": 0.3846440399317931
+    },
+    "ll": -231.75079461231323,
+    "np": 1,
+    "aic": 465.50158922462646
+   },
+   "c*s^-a": {
+    "params": {
+     "c": 0.3846440399317931,
+     "a": 0.0
+    },
+    "ll": -231.75079461231323,
+    "np": 2,
+    "aic": 467.50158922462646
+   },
+   "sqrt(a^2+b^2/s)": {
+    "params": {
+     "a": 0.3,
+     "b": 0.018000000000000002
+    },
+    "ll": -266.3386038125233,
+    "np": 2,
+    "aic": 536.6772076250465
+   }
+  },
+  "n": 1090
+ },
+ "encuestas": {
+  "elecciones": [
+   {
+    "eleccion": "2016",
+    "n_encuestas": 14,
+    "k_nacional": 0.04635835038574382,
+    "k_swing_real": 0.02250744366301769,
+    "k_total": 0.06253323392916649,
+    "n_total": 3050,
+    "rms_pts_nacional": 2.258536354540814,
+    "por_partido": [
+     {
+      "col": "PP",
+      "resultado": 33.014537647032654,
+      "sesgo_medio_pts": -3.114537647032655,
+      "rms_pts": 3.216973139980366
+     },
+     {
+      "col": "PSOE",
+      "resultado": 22.632000700098594,
+      "sesgo_medio_pts": -1.5034292715271642,
+      "rms_pts": 1.6727386755035936
+     },
+     {
+      "col": "Unidos Podemos",
+      "resultado": 21.150701834287414,
+      "sesgo_medio_pts": 3.835012451426872,
+      "rms_pts": 3.933551919916754
+     },
+     {
+      "col": "C's",
+      "resultado": 13.06062192784453,
+      "sesgo_medio_pts": 1.0465209292983282,
+      "rms_pts": 1.3763868458166066
+     },
+     {
+      "col": "ERC–CatSí",
+      "resultado": 2.628421217394124,
+      "sesgo_medio_pts": -0.32842121739412405,
+      "rms_pts": 0.348129041259088
+     },
+     {
+      "col": "CDC",
+      "resultado": 2.01003128201813,
+      "sesgo_medio_pts": -0.16003128201812958,
+      "rms_pts": 0.20357638506884693
+     },
+     {
+      "col": "PNV",
+      "resultado": 1.1932191044599896,
+      "sesgo_medio_pts": -0.05988577112665625,
+      "rms_pts": 0.13835411500562536
+     },
+     {
+      "col": "PACMA",
+      "resultado": 1.1919220096820642,
+      "sesgo_medio_pts": -0.3919220096820641,
+      "rms_pts": 0.3919220096820641
+     },
+     {
+      "col": "EH Bildu",
+      "resultado": 0.7679175247274282,
+      "sesgo_medio_pts": 0.05208247527257178,
+      "rms_pts": 0.06567026899989108
+     },
+     {
+      "col": "CC",
+      "resultado": 0.32532550531091714,
+      "sesgo_medio_pts": -0.05032550531091715,
+      "rms_pts": 0.06639018364787938
+     }
+    ]
+   },
+   {
+    "eleccion": "2019a",
+    "n_encuestas": 14,
+    "k_nacional": 0.04501672667585758,
+    "k_swing_real": 0.07337115142662076,
+    "k_total": 0.0970246972156518,
+    "n_total": 3798,
+    "rms_pts_nacional": 1.6010446557287312,
+    "por_partido": [
+     {
+      "col": "PSOE",
+      "resultado": 28.67461401161031,
+      "sesgo_medio_pts": 0.7825288455325465,
+      "rms_pts": 1.2946926064170234
+     },
+     {
+      "col": "PP",
+      "resultado": 16.692458574018897,
+      "sesgo_medio_pts": 3.5075414259811053,
+      "rms_pts": 4.065357618864455
+     },
+     {
+      "col": "Cs",
+      "resultado": 15.86048684246332,
+      "sesgo_medio_pts": -1.2104868424633202,
+      "rms_pts": 1.387930050236051
+     },
+     {
+      "col": "Unidas Podemos",
+      "resultado": 14.31659816579827,
+      "sesgo_medio_pts": -1.0451695943696977,
+      "rms_pts": 1.2895703648474859
+     },
+     {
+      "col": "Vox",
+      "resultado": 10.259356275669697,
+      "sesgo_medio_pts": 0.3692151529017318,
+      "rms_pts": 1.3658343613343593
+     },
+     {
+      "col": "ERC–Sobiranistes",
+      "resultado": 3.8944221659240656,
+      "sesgo_medio_pts": -0.6944221659240657,
+      "rms_pts": 0.7498147401369691
+     },
+     {
+      "col": "JxCat",
+      "resultado": 1.9113007483463365,
+      "sesgo_medio_pts": -0.5113007483463364,
+      "rms_pts": 0.5440348424549463
+     },
+     {
+      "col": "PNV",
+      "resultado": 1.5109285693485277,
+      "sesgo_medio_pts": -0.20183766025761846,
+      "rms_pts": 0.3380712352545456
+     },
+     {
+      "col": "PACMA",
+      "resultado": 1.2529840518650721,
+      "sesgo_medio_pts": 0.4303492814682612,
+      "rms_pts": 0.7370590611449018
+     },
+     {
+      "col": "EH Bildu",
+      "resultado": 0.9909672283942699,
+      "sesgo_medio_pts": -0.1576338950609365,
+      "rms_pts": 0.1775249603260032
+     },
+     {
+      "col": "CCa",
+      "resultado": 0.5254076208454894,
+      "sesgo_medio_pts": -0.21429650973437825,
+      "rms_pts": 0.22165935718472693
+     },
+     {
+      "col": "NA+",
+      "resultado": 0.41073804878378306,
+      "sesgo_medio_pts": -0.08573804878378308,
+      "rms_pts": 0.13865789919528698
+     }
+    ]
+   },
+   {
+    "eleccion": "2019n",
+    "n_encuestas": 14,
+    "k_nacional": 0.04735463197365212,
+    "k_swing_real": 0.03809043469316092,
+    "k_total": 0.07807210513314415,
+    "n_total": 3771,
+    "rms_pts_nacional": 1.495085738352408,
+    "por_partido": [
+     {
+      "col": "PSOE",
+      "resultado": 27.999567816742427,
+      "sesgo_medio_pts": -0.5067106738852837,
+      "rms_pts": 1.6032080698376436
+     },
+     {
+      "col": "PP",
+      "resultado": 20.805476805643018,
+      "sesgo_medio_pts": -0.16976251992873112,
+      "rms_pts": 1.3048156202960135
+     },
+     {
+      "col": "Vox",
+      "resultado": 15.075210769723164,
+      "sesgo_medio_pts": -2.2323536268660202,
+      "rms_pts": 2.8405472778728496
+     },
+     {
+      "col": "Unidas Podemos",
+      "resultado": 12.858993657739552,
+      "sesgo_medio_pts": -0.24470794345383642,
+      "rms_pts": 0.8862235506186003
+     },
+     {
+      "col": "Cs",
+      "resultado": 6.803126757651054,
+      "sesgo_medio_pts": 2.3683018137775176,
+      "rms_pts": 2.5021779108345616
+     },
+     {
+      "col": "ERC–Sobiranistes",
+      "resultado": 3.6064423172211915,
+      "sesgo_medio_pts": 0.22355768277880847,
+      "rms_pts": 0.36342542223877283
+     },
+     {
+      "col": "JxCat",
+      "resultado": 2.1857532215461077,
+      "sesgo_medio_pts": -0.5557532215461078,
+      "rms_pts": 0.6024629808202967
+     },
+     {
+      "col": "PNV",
+      "resultado": 1.5623647366163762,
+      "sesgo_medio_pts": -0.07347584772748732,
+      "rms_pts": 0.11424981919866316
+     },
+     {
+      "col": "EH Bildu",
+      "resultado": 1.1444405584777255,
+      "sesgo_medio_pts": -0.0730119870491541,
+      "rms_pts": 0.2539968970720973
+     },
+     {
+      "col": "CC–NCa",
+      "resultado": 0.5123581161822702,
+      "sesgo_medio_pts": 0.03764188381772978,
+      "rms_pts": 0.17488161162344695
+     },
+     {
+      "col": "NA+",
+      "resultado": 0.40843049212003446,
+      "sesgo_medio_pts": -0.008430492120034463,
+      "rms_pts": 0.008430492120034463
+     },
+     {
+      "col": "PRC",
+      "resultado": 0.28373877927109925,
+      "sesgo_medio_pts": -0.08373877927109925,
+      "rms_pts": 0.08373877927109925
+     }
+    ]
+   },
+   {
+    "eleccion": "2023",
+    "n_encuestas": 18,
+    "k_nacional": 0.038596894652269745,
+    "k_swing_real": 0.05729174084210698,
+    "k_total": 0.07820023593326936,
+    "n_total": 3942,
+    "rms_pts_nacional": 1.7518664509023123,
+    "por_partido": [
+     {
+      "col": "PP",
+      "resultado": 33.05576896257697,
+      "sesgo_medio_pts": 1.3108977040896963,
+      "rms_pts": 2.4910077192281643
+     },
+     {
+      "col": "PSOE",
+      "resultado": 31.68215504101229,
+      "sesgo_medio_pts": -3.4710439299011773,
+      "rms_pts": 3.5944741936388844
+     },
+     {
+      "col": "Vox",
+      "resultado": 12.382490388988018,
+      "sesgo_medio_pts": 0.46750961101198296,
+      "rms_pts": 1.2337651103430047
+     },
+     {
+      "col": "Sumar",
+      "resultado": 12.33386774763067,
+      "sesgo_medio_pts": 0.7327989190359974,
+      "rms_pts": 1.2992710905932747
+     },
+     {
+      "col": "ERC",
+      "resultado": 1.8876310667570153,
+      "sesgo_medio_pts": 0.28736893324298485,
+      "rms_pts": 0.3930087833537707
+     },
+     {
+      "col": "Junts",
+      "resultado": 1.6016996375620356,
+      "sesgo_medio_pts": 0.3399670291046311,
+      "rms_pts": 0.4651252194486104
+     },
+     {
+      "col": "EH Bildu",
+      "resultado": 1.3574522805270413,
+      "sesgo_medio_pts": -0.05745228052704129,
+      "rms_pts": 0.15264587953088626
+     },
+     {
+      "col": "PNV",
+      "resultado": 1.1231692435302905,
+      "sesgo_medio_pts": 0.16683075646970952,
+      "rms_pts": 0.22075439135893876
+     },
+     {
+      "col": "BNG",
+      "resultado": 0.6237623838574451,
+      "sesgo_medio_pts": 0.12623761614255496,
+      "rms_pts": 0.16104637757290616
+     },
+     {
+      "col": "CUP",
+      "resultado": 0.40361166906127643,
+      "sesgo_medio_pts": 0.26305499760539025,
+      "rms_pts": 0.29112452201889044
+     }
+    ]
+   }
+  ],
+  "encuestas": {
+   "2016": [
+    {
+     "firma": "Celeste-Tel",
+     "fila_wikipedia": "Celeste-Tel/eldiario.es",
+     "fin_campo": "2016-06-17",
+     "dias_antes": 9,
+     "valores": {
+      "PP": 30.5,
+      "PSOE": 21.8,
+      "C's": 13.3,
+      "ERC–CatSí": 2.4,
+      "CDC": 1.7,
+      "PNV": 1.1,
+      "PACMA": 0.8,
+      "EH Bildu": 0.8,
+      "CC": 0.3,
+      "Unidos Podemos": 25.3
+     }
+    },
+    {
+     "firma": "DYM",
+     "fila_wikipedia": "DYM/El Confidencial",
+     "fin_campo": "2016-06-15",
+     "dias_antes": 11,
+     "valores": {
+      "PP": 29.0,
+      "PSOE": 21.0,
+      "C's": 15.2,
+      "Unidos Podemos": 24.9
+     }
+    },
+    {
+     "firma": "Encuestamos",
+     "fila_wikipedia": "Encuestamos",
+     "fin_campo": "2016-06-19",
+     "dias_antes": 7,
+     "valores": {
+      "PP": 30.6,
+      "PSOE": 22.0,
+      "C's": 13.6,
+      "ERC–CatSí": 2.2,
+      "CDC": 2.0,
+      "PNV": 1.2,
+      "EH Bildu": 0.8,
+      "CC": 0.2,
+      "Unidos Podemos": 23.9
+     }
+    },
+    {
+     "firma": "GAD3",
+     "fila_wikipedia": "GAD3/ABC",
+     "fin_campo": "2016-06-20",
+     "dias_antes": 6,
+     "valores": {
+      "PP": 30.7,
+      "PSOE": 21.2,
+      "C's": 14.1,
+      "Unidos Podemos": 24.9
+     }
+    },
+    {
+     "firma": "GESOP",
+     "fila_wikipedia": "GESOP/El Periódico",
+     "fin_campo": "2016-06-19",
+     "dias_antes": 7,
+     "valores": {
+      "PP": 28.3,
+      "PSOE": 21.9,
+      "C's": 14.9,
+      "Unidos Podemos": 24.0
+     }
+    },
+    {
+     "firma": "Hamalgama Métrica",
+     "fila_wikipedia": "Hamalgama Métrica/La Provincia",
+     "fin_campo": "2016-06-17",
+     "dias_antes": 9,
+     "valores": {
+      "PP": 30.4,
+      "PSOE": 21.0,
+      "C's": 12.5,
+      "ERC–CatSí": 2.1,
+      "CDC": 2.0,
+      "PNV": 1.3,
+      "EH Bildu": 0.8,
+      "CC": 0.3,
+      "Unidos Podemos": 26.2
+     }
+    },
+    {
+     "firma": "Invymark",
+     "fila_wikipedia": "InvyMark/laSexta",
+     "fin_campo": "2016-06-19",
+     "dias_antes": 7,
+     "valores": {
+      "PP": 30.1,
+      "PSOE": 19.9,
+      "C's": 13.8,
+      "Unidos Podemos": 26.1
+     }
+    },
+    {
+     "firma": "Metroscopia",
+     "fila_wikipedia": "Metroscopia/El País",
+     "fin_campo": "2016-06-15",
+     "dias_antes": 11,
+     "valores": {
+      "PP": 29.0,
+      "PSOE": 20.5,
+      "C's": 14.5,
+      "Unidos Podemos": 26.0
+     }
+    },
+    {
+     "firma": "NC Report",
+     "fila_wikipedia": "NC Report/La Razón",
+     "fin_campo": "2016-06-17",
+     "dias_antes": 9,
+     "valores": {
+      "PP": 31.1,
+      "PSOE": 21.2,
+      "C's": 13.2,
+      "ERC–CatSí": 2.3,
+      "CDC": 1.7,
+      "PNV": 1.1,
+      "EH Bildu": 0.8,
+      "CC": 0.3,
+      "Unidos Podemos": 25.4
+     }
+    },
+    {
+     "firma": "Netquest",
+     "fila_wikipedia": "Netquest/El Español",
+     "fin_campo": "2016-06-17",
+     "dias_antes": 9,
+     "valores": {
+      "PP": 30.4,
+      "PSOE": 20.4,
+      "C's": 15.2,
+      "Unidos Podemos": 24.0
+     }
+    },
+    {
+     "firma": "Sigma Dos",
+     "fila_wikipedia": "Sigma Dos/El Mundo",
+     "fin_campo": "2016-06-16",
+     "dias_antes": 10,
+     "valores": {
+      "PP": 30.5,
+      "PSOE": 20.0,
+      "C's": 14.1,
+      "ERC–CatSí": 2.4,
+      "CDC": 1.8,
+      "PNV": 1.2,
+      "Unidos Podemos": 24.8
+     }
+    },
+    {
+     "firma": "Simple Lógica",
+     "fila_wikipedia": "Simple Lógica",
+     "fin_campo": "2016-06-15",
+     "dias_antes": 11,
+     "valores": {
+      "PP": 29.2,
+      "PSOE": 22.5,
+      "C's": 15.4,
+      "Unidos Podemos": 23.5
+     }
+    },
+    {
+     "firma": "Sondaxe",
+     "fila_wikipedia": "Sondaxe/La Voz de Galicia",
+     "fin_campo": "2016-06-09",
+     "dias_antes": 17,
+     "valores": {
+      "PP": 29.2,
+      "PSOE": 21.4,
+      "C's": 12.9,
+      "ERC–CatSí": 2.4,
+      "CDC": 1.9,
+      "PNV": 0.9,
+      "EH Bildu": 0.9,
+      "Unidos Podemos": 26.1
+     }
+    },
+    {
+     "firma": "TNS Demoscopia",
+     "fila_wikipedia": "TNS Demoscopia",
+     "fin_campo": "2016-06-19",
+     "dias_antes": 7,
+     "valores": {
+      "PP": 29.6,
+      "PSOE": 21.0,
+      "C's": 14.8,
+      "Unidos Podemos": 24.7
+     }
+    }
+   ],
+   "2019a": [
+    {
+     "firma": "40dB",
+     "fila_wikipedia": "40dB/El País",
+     "fin_campo": "2019-04-18",
+     "dias_antes": 10,
+     "valores": {
+      "PP": 17.8,
+      "PSOE": 28.8,
+      "Unidas Podemos": 13.2,
+      "Cs": 14.1,
+      "ERC–Sobiranistes": 3.3,
+      "PNV": 1.0,
+      "PACMA": 2.8,
+      "EH Bildu": 1.0,
+      "CCa": 0.4,
+      "Vox": 12.5,
+      "Compromís": 0.9,
+      "JxCat": 1.9
+     }
+    },
+    {
+     "firma": "Celeste-Tel",
+     "fila_wikipedia": "Celeste-Tel/eldiario.es",
+     "fin_campo": "2019-04-20",
+     "dias_antes": 8,
+     "valores": {
+      "PP": 23.5,
+      "PSOE": 28.9,
+      "Unidas Podemos": 13.5,
+      "Cs": 15.1,
+      "ERC–Sobiranistes": 2.9,
+      "PNV": 1.2,
+      "PACMA": 1.3,
+      "EH Bildu": 0.8,
+      "CCa": 0.3,
+      "Vox": 7.9,
+      "Compromís": 1.3,
+      "JxCat": 1.5,
+      "NA+": 0.4
+     }
+    },
+    {
+     "firma": "DYM",
+     "fila_wikipedia": "DYM/El Independiente",
+     "fin_campo": "2019-04-17",
+     "dias_antes": 11,
+     "valores": {
+      "PP": 20.4,
+      "PSOE": 29.0,
+      "Unidas Podemos": 13.7,
+      "Cs": 15.5,
+      "Vox": 10.4
+     }
+    },
+    {
+     "firma": "GAD3",
+     "fila_wikipedia": "GAD3/ABC",
+     "fin_campo": "2019-04-19",
+     "dias_antes": 9,
+     "valores": {
+      "PP": 20.1,
+      "PSOE": 31.5,
+      "Unidas Podemos": 12.1,
+      "Cs": 13.9,
+      "ERC–Sobiranistes": 3.3,
+      "PNV": 1.2,
+      "PACMA": 1.9,
+      "EH Bildu": 0.9,
+      "CCa": 0.3,
+      "Vox": 11.4,
+      "Compromís": 0.4,
+      "JxCat": 1.2,
+      "NA+": 0.5
+     }
+    },
+    {
+     "firma": "GESOP",
+     "fila_wikipedia": "GESOP/El Periódico",
+     "fin_campo": "2019-04-05",
+     "dias_antes": 23,
+     "valores": {
+      "PP": 21.0,
+      "PSOE": 29.8,
+      "Unidas Podemos": 12.0,
+      "Cs": 14.5,
+      "Vox": 10.6
+     }
+    },
+    {
+     "firma": "Hamalgama Métrica",
+     "fila_wikipedia": "Hamalgama Métrica/Espiral21",
+     "fin_campo": "2019-04-22",
+     "dias_antes": 6,
+     "valores": {
+      "PP": 23.1,
+      "PSOE": 28.1,
+      "Unidas Podemos": 12.1,
+      "Cs": 13.2,
+      "ERC–Sobiranistes": 3.1,
+      "PNV": 1.3,
+      "PACMA": 1.4,
+      "EH Bildu": 0.8,
+      "CCa": 0.3,
+      "Vox": 10.1,
+      "Compromís": 0.9,
+      "JxCat": 1.4,
+      "NA+": 0.1
+     }
+    },
+    {
+     "firma": "IMOP",
+     "fila_wikipedia": "IMOP/El Confidencial",
+     "fin_campo": "2019-04-20",
+     "dias_antes": 8,
+     "valores": {
+      "PP": 19.8,
+      "PSOE": 29.8,
+      "Unidas Podemos": 14.1,
+      "Cs": 15.1,
+      "ERC–Sobiranistes": 3.0,
+      "PNV": 1.2,
+      "PACMA": 1.8,
+      "EH Bildu": 0.8,
+      "CCa": 0.3,
+      "Vox": 10.0,
+      "Compromís": 0.8,
+      "JxCat": 1.2,
+      "NA+": 0.3
+     }
+    },
+    {
+     "firma": "Invymark",
+     "fila_wikipedia": "InvyMark/laSexta",
+     "fin_campo": "2019-04-19",
+     "dias_antes": 9,
+     "valores": {
+      "PP": 20.4,
+      "PSOE": 28.1,
+      "Unidas Podemos": 13.0,
+      "Cs": 15.2,
+      "ERC–Sobiranistes": 3.3,
+      "PNV": 1.3,
+      "Vox": 12.7,
+      "JxCat": 1.3
+     }
+    },
+    {
+     "firma": "Metroscopia",
+     "fila_wikipedia": "Metroscopia/Henneo",
+     "fin_campo": "2019-04-16",
+     "dias_antes": 12,
+     "valores": {
+      "PP": 19.6,
+      "PSOE": 29.1,
+      "Unidas Podemos": 14.3,
+      "Cs": 14.2,
+      "ERC–Sobiranistes": 3.5,
+      "PNV": 1.4,
+      "EH Bildu": 0.7,
+      "CCa": 0.3,
+      "Vox": 11.1,
+      "Compromís": 1.1,
+      "JxCat": 1.4,
+      "NA+": 0.3
+     }
+    },
+    {
+     "firma": "NC Report",
+     "fila_wikipedia": "NC Report/La Razón",
+     "fin_campo": "2019-04-19",
+     "dias_antes": 9,
+     "valores": {
+      "PP": 23.8,
+      "PSOE": 28.1,
+      "Unidas Podemos": 13.0,
+      "Cs": 14.9,
+      "ERC–Sobiranistes": 2.9,
+      "PNV": 1.3,
+      "EH Bildu": 0.8,
+      "CCa": 0.3,
+      "Vox": 9.0,
+      "Compromís": 1.5,
+      "JxCat": 1.4,
+      "NA+": 0.4
+     }
+    },
+    {
+     "firma": "Sigma Dos",
+     "fila_wikipedia": "Sigma Dos/El Mundo",
+     "fin_campo": "2019-04-17",
+     "dias_antes": 11,
+     "valores": {
+      "PP": 20.1,
+      "PSOE": 30.3,
+      "Unidas Podemos": 13.2,
+      "Cs": 15.0,
+      "ERC–Sobiranistes": 3.8,
+      "PNV": 1.3,
+      "Vox": 10.2,
+      "JxCat": 1.3
+     }
+    },
+    {
+     "firma": "Simple Lógica",
+     "fila_wikipedia": "Simple Lógica",
+     "fin_campo": "2019-04-05",
+     "dias_antes": 23,
+     "valores": {
+      "PP": 16.7,
+      "PSOE": 30.5,
+      "Unidas Podemos": 14.4,
+      "Cs": 15.5,
+      "Vox": 9.8
+     }
+    },
+    {
+     "firma": "SocioMétrica",
+     "fila_wikipedia": "SocioMétrica/El Español",
+     "fin_campo": "2019-04-21",
+     "dias_antes": 7,
+     "valores": {
+      "PP": 18.2,
+      "PSOE": 29.5,
+      "Unidas Podemos": 13.6,
+      "Cs": 15.1,
+      "ERC–Sobiranistes": 3.3,
+      "PNV": 1.1,
+      "PACMA": 0.9,
+      "EH Bildu": 0.9,
+      "CCa": 0.2,
+      "Vox": 12.6,
+      "Compromís": 1.1,
+      "JxCat": 1.3,
+      "NA+": 0.3
+     }
+    },
+    {
+     "firma": "Sondaxe",
+     "fila_wikipedia": "Sondaxe/La Voz de Galicia",
+     "fin_campo": "2019-04-18",
+     "dias_antes": 10,
+     "valores": {
+      "PP": 18.3,
+      "PSOE": 30.9,
+      "Unidas Podemos": 13.6,
+      "Cs": 13.8,
+      "ERC–Sobiranistes": 2.8,
+      "PNV": 2.1,
+      "EH Bildu": 0.8,
+      "CCa": 0.4,
+      "Vox": 10.5,
+      "JxCat": 1.5,
+      "NA+": 0.3
+     }
+    }
+   ],
+   "2019n": [
+    {
+     "firma": "40dB",
+     "fila_wikipedia": "40dB/El País",
+     "fin_campo": "2019-10-29",
+     "dias_antes": 12,
+     "valores": {
+      "PSOE": 27.3,
+      "PP": 21.2,
+      "Cs": 8.3,
+      "Unidas Podemos": 12.4,
+      "Vox": 13.7,
+      "Más País": 4.4
+     }
+    },
+    {
+     "firma": "CIS",
+     "fila_wikipedia": "CIS",
+     "fin_campo": "2019-10-13",
+     "dias_antes": 28,
+     "valores": {
+      "PSOE": 32.2,
+      "PP": 18.1,
+      "Cs": 10.6,
+      "Unidas Podemos": 14.6,
+      "Vox": 7.9,
+      "ERC–Sobiranistes": 4.4,
+      "JxCat": 1.8,
+      "PNV": 1.5,
+      "EH Bildu": 1.2,
+      "CC–NCa": 0.3,
+      "NA+": 0.4,
+      "PRC": 0.2,
+      "Más País": 2.9,
+      "CUP": 0.6
+     }
+    },
+    {
+     "firma": "Celeste-Tel",
+     "fila_wikipedia": "Celeste-Tel/eldiario.es",
+     "fin_campo": "2019-10-31",
+     "dias_antes": 10,
+     "valores": {
+      "PSOE": 27.6,
+      "PP": 21.9,
+      "Cs": 9.2,
+      "Unidas Podemos": 12.9,
+      "Vox": 12.0,
+      "ERC–Sobiranistes": 3.9,
+      "JxCat": 1.7,
+      "PNV": 1.6,
+      "EH Bildu": 1.0,
+      "CC–NCa": 0.8,
+      "NA+": 0.4,
+      "PRC": 0.2,
+      "Más País": 3.2,
+      "CUP": 0.9
+     }
+    },
+    {
+     "firma": "DYM",
+     "fila_wikipedia": "DYM/Prensa Ibérica",
+     "fin_campo": "2019-10-30",
+     "dias_antes": 11,
+     "valores": {
+      "PSOE": 26.8,
+      "PP": 19.4,
+      "Cs": 10.0,
+      "Unidas Podemos": 12.5,
+      "Vox": 13.6,
+      "Más País": 3.3
+     }
+    },
+    {
+     "firma": "GAD3",
+     "fila_wikipedia": "GAD3/ABC",
+     "fin_campo": "2019-10-31",
+     "dias_antes": 10,
+     "valores": {
+      "PSOE": 27.4,
+      "PP": 21.6,
+      "Cs": 8.0,
+      "Unidas Podemos": 11.2,
+      "Vox": 14.9,
+      "ERC–Sobiranistes": 3.5,
+      "JxCat": 1.4,
+      "PNV": 1.5,
+      "EH Bildu": 0.8,
+      "CC–NCa": 0.4,
+      "NA+": 0.4,
+      "PRC": 0.2,
+      "Más País": 2.8,
+      "CUP": 1.6
+     }
+    },
+    {
+     "firma": "GESOP",
+     "fila_wikipedia": "GESOP/El Periódico",
+     "fin_campo": "2019-10-31",
+     "dias_antes": 10,
+     "valores": {
+      "PSOE": 27.7,
+      "PP": 19.5,
+      "Cs": 8.0,
+      "Unidas Podemos": 13.4,
+      "Vox": 14.2,
+      "ERC–Sobiranistes": 3.6,
+      "JxCat": 1.5,
+      "Más País": 2.6,
+      "CUP": 1.5
+     }
+    },
+    {
+     "firma": "Hamalgama Métrica",
+     "fila_wikipedia": "Hamalgama Métrica/Okdiario",
+     "fin_campo": "2019-10-31",
+     "dias_antes": 10,
+     "valores": {
+      "PSOE": 27.2,
+      "PP": 22.2,
+      "Cs": 8.8,
+      "Unidas Podemos": 12.7,
+      "Vox": 12.8,
+      "ERC–Sobiranistes": 3.9,
+      "JxCat": 1.6,
+      "PNV": 1.5,
+      "EH Bildu": 1.0,
+      "CC–NCa": 0.7,
+      "NA+": 0.4,
+      "PRC": 0.2,
+      "Más País": 3.7,
+      "CUP": 1.1
+     }
+    },
+    {
+     "firma": "IMOP",
+     "fila_wikipedia": "IMOP/El Confidencial",
+     "fin_campo": "2019-11-02",
+     "dias_antes": 8,
+     "valores": {
+      "PSOE": 28.0,
+      "PP": 19.6,
+      "Cs": 10.1,
+      "Unidas Podemos": 11.5,
+      "Vox": 13.9,
+      "Más País": 3.3
+     }
+    },
+    {
+     "firma": "Invymark",
+     "fila_wikipedia": "InvyMark/laSexta",
+     "fin_campo": "2019-10-31",
+     "dias_antes": 10,
+     "valores": {
+      "PSOE": 27.9,
+      "PP": 22.0,
+      "Cs": 9.9,
+      "Unidas Podemos": 11.8,
+      "Vox": 10.5,
+      "Más País": 3.8
+     }
+    },
+    {
+     "firma": "Ipsos",
+     "fila_wikipedia": "Ipsos/Henneo",
+     "fin_campo": "2019-10-29",
+     "dias_antes": 12,
+     "valores": {
+      "PSOE": 26.0,
+      "PP": 19.4,
+      "Cs": 10.0,
+      "Unidas Podemos": 13.0,
+      "Vox": 14.0,
+      "ERC–Sobiranistes": 3.5,
+      "JxCat": 2.1,
+      "PNV": 1.5,
+      "Más País": 4.7
+     }
+    },
+    {
+     "firma": "NC Report",
+     "fila_wikipedia": "NC Report/La Razón",
+     "fin_campo": "2019-10-31",
+     "dias_antes": 10,
+     "valores": {
+      "PSOE": 27.3,
+      "PP": 22.7,
+      "Cs": 8.8,
+      "Unidas Podemos": 12.1,
+      "Vox": 12.2,
+      "ERC–Sobiranistes": 3.9,
+      "JxCat": 1.6,
+      "PNV": 1.6,
+      "EH Bildu": 1.0,
+      "Más País": 3.5
+     }
+    },
+    {
+     "firma": "Sigma Dos",
+     "fila_wikipedia": "Sigma Dos/El Mundo",
+     "fin_campo": "2019-10-31",
+     "dias_antes": 10,
+     "valores": {
+      "PSOE": 27.9,
+      "PP": 20.3,
+      "Cs": 8.9,
+      "Unidas Podemos": 13.5,
+      "Vox": 13.2,
+      "ERC–Sobiranistes": 4.0,
+      "JxCat": 1.2,
+      "PNV": 1.4,
+      "Más País": 4.0
+     }
+    },
+    {
+     "firma": "SocioMétrica",
+     "fila_wikipedia": "SocioMétrica/El Español",
+     "fin_campo": "2019-11-02",
+     "dias_antes": 8,
+     "valores": {
+      "PSOE": 25.1,
+      "PP": 20.6,
+      "Cs": 8.5,
+      "Unidas Podemos": 12.9,
+      "Vox": 14.3,
+      "ERC–Sobiranistes": 3.5,
+      "JxCat": 1.6,
+      "PNV": 1.3,
+      "EH Bildu": 0.9,
+      "CC–NCa": 0.6,
+      "NA+": 0.4,
+      "PRC": 0.2,
+      "Más País": 3.9,
+      "CUP": 1.4
+     }
+    },
+    {
+     "firma": "Sondaxe",
+     "fila_wikipedia": "Sondaxe/La Voz de Galicia",
+     "fin_campo": "2019-10-31",
+     "dias_antes": 10,
+     "valores": {
+      "PSOE": 26.5,
+      "PP": 20.4,
+      "Cs": 9.3,
+      "Unidas Podemos": 12.1,
+      "Vox": 12.6,
+      "ERC–Sobiranistes": 4.1,
+      "JxCat": 1.8,
+      "PNV": 1.5,
+      "EH Bildu": 1.6,
+      "CC–NCa": 0.5,
+      "NA+": 0.4,
+      "PRC": 0.2,
+      "Más País": 3.7,
+      "CUP": 1.2
+     }
+    }
+   ],
+   "2023": [
+    {
+     "firma": "40dB",
+     "fila_wikipedia": "40dB/Prisa",
+     "fin_campo": "2023-07-16",
+     "dias_antes": 7,
+     "valores": {
+      "PSOE": 28.7,
+      "PP": 32.9,
+      "Vox": 13.5,
+      "Sumar": 13.7
+     }
+    },
+    {
+     "firma": "CIS",
+     "fila_wikipedia": "CIS",
+     "fin_campo": "2023-07-05",
+     "dias_antes": 18,
+     "valores": {
+      "PSOE": 31.0,
+      "PP": 29.6,
+      "Vox": 11.7,
+      "Sumar": 15.5,
+      "ERC": 1.7,
+      "Junts": 1.1,
+      "PNV": 1.1,
+      "EH Bildu": 1.2,
+      "CUP": 0.6,
+      "CCa": 0.1,
+      "BNG": 0.8,
+      "UPN": 0.2,
+      "EV": 0.1
+     }
+    },
+    {
+     "firma": "Celeste-Tel",
+     "fila_wikipedia": "Celeste-Tel/Onda Cero",
+     "fin_campo": "2023-07-12",
+     "dias_antes": 11,
+     "valores": {
+      "PSOE": 28.4,
+      "PP": 36.5,
+      "Vox": 11.4,
+      "Sumar": 11.5,
+      "ERC": 2.3,
+      "Junts": 2.1,
+      "PNV": 1.4,
+      "EH Bildu": 1.5,
+      "CUP": 0.9,
+      "CCa": 0.4,
+      "BNG": 0.8,
+      "UPN": 0.2,
+      "EV": 0.1
+     }
+    },
+    {
+     "firma": "Cluster17",
+     "fila_wikipedia": "Cluster17/El Grand Continent",
+     "fin_campo": "2023-07-14",
+     "dias_antes": 9,
+     "valores": {
+      "PSOE": 28.9,
+      "PP": 33.6,
+      "Vox": 13.7,
+      "Sumar": 13.5,
+      "ERC": 2.3,
+      "Junts": 2.3,
+      "PNV": 1.1,
+      "EH Bildu": 1.3,
+      "CUP": 0.7,
+      "CCa": 0.3,
+      "BNG": 0.8,
+      "UPN": 0.3,
+      "EV": 0.5
+     }
+    },
+    {
+     "firma": "DYM",
+     "fila_wikipedia": "DYM/Henneo",
+     "fin_campo": "2023-07-13",
+     "dias_antes": 10,
+     "valores": {
+      "PSOE": 27.1,
+      "PP": 35.5,
+      "Vox": 12.3,
+      "Sumar": 13.1
+     }
+    },
+    {
+     "firma": "Data10",
+     "fila_wikipedia": "Data10/Okdiario",
+     "fin_campo": "2023-07-17",
+     "dias_antes": 6,
+     "valores": {
+      "PSOE": 27.5,
+      "PP": 36.0,
+      "Vox": 12.5,
+      "Sumar": 12.5,
+      "ERC": 2.1,
+      "Junts": 2.0
+     }
+    },
+    {
+     "firma": "GAD3",
+     "fila_wikipedia": "GAD3/ABC",
+     "fin_campo": "2023-07-17",
+     "dias_antes": 6,
+     "valores": {
+      "PSOE": 28.6,
+      "PP": 36.9,
+      "Vox": 11.7,
+      "Sumar": 11.5,
+      "ERC": 2.3,
+      "Junts": 2.0,
+      "PNV": 1.3,
+      "EH Bildu": 1.3,
+      "CUP": 0.5,
+      "CCa": 0.4,
+      "BNG": 0.6,
+      "UPN": 0.1,
+      "EV": 0.1
+     }
+    },
+    {
+     "firma": "GESOP",
+     "fila_wikipedia": "GESOP/Prensa Ibérica",
+     "fin_campo": "2023-07-15",
+     "dias_antes": 8,
+     "valores": {
+      "PSOE": 27.4,
+      "PP": 30.6,
+      "Vox": 15.0,
+      "Sumar": 14.4,
+      "ERC": 2.1,
+      "Junts": 1.7
+     }
+    },
+    {
+     "firma": "Hamalgama Métrica",
+     "fila_wikipedia": "Hamalgama Métrica/Vozpópuli",
+     "fin_campo": "2023-07-13",
+     "dias_antes": 10,
+     "valores": {
+      "PSOE": 27.5,
+      "PP": 36.3,
+      "Vox": 13.8,
+      "Sumar": 12.1,
+      "ERC": 2.2,
+      "Junts": 2.0,
+      "PNV": 1.4,
+      "EH Bildu": 1.5,
+      "CUP": 0.7,
+      "CCa": 0.3,
+      "BNG": 0.7,
+      "UPN": 0.2,
+      "EV": 0.1
+     }
+    },
+    {
+     "firma": "IMOP",
+     "fila_wikipedia": "IMOP/El Confidencial",
+     "fin_campo": "2023-07-14",
+     "dias_antes": 9,
+     "valores": {
+      "PSOE": 28.2,
+      "PP": 32.9,
+      "Vox": 14.5,
+      "Sumar": 12.8,
+      "ERC": 2.2,
+      "Junts": 2.0,
+      "PNV": 1.4,
+      "EH Bildu": 1.2,
+      "CUP": 0.8,
+      "CCa": 0.3,
+      "BNG": 0.9,
+      "UPN": 0.2,
+      "EV": 0.1
+     }
+    },
+    {
+     "firma": "Invymark",
+     "fila_wikipedia": "InvyMark/laSexta",
+     "fin_campo": "2023-07-14",
+     "dias_antes": 9,
+     "valores": {
+      "PSOE": 26.3,
+      "PP": 33.5,
+      "Vox": 13.8,
+      "Sumar": 13.7
+     }
+    },
+    {
+     "firma": "Ipsos",
+     "fila_wikipedia": "Ipsos/La Vanguardia",
+     "fin_campo": "2023-07-06",
+     "dias_antes": 17,
+     "valores": {
+      "PSOE": 28.2,
+      "PP": 35.3,
+      "Vox": 12.6,
+      "Sumar": 12.9,
+      "ERC": 1.6,
+      "Junts": 1.8,
+      "PNV": 1.2,
+      "EH Bildu": 1.3,
+      "CUP": 0.5,
+      "CCa": 0.3,
+      "BNG": 0.6,
+      "EV": 0.3
+     }
+    },
+    {
+     "firma": "NC Report",
+     "fila_wikipedia": "NC Report/La Razón",
+     "fin_campo": "2023-07-16",
+     "dias_antes": 7,
+     "valores": {
+      "PSOE": 28.3,
+      "PP": 37.2,
+      "Vox": 11.1,
+      "Sumar": 11.3,
+      "ERC": 2.4,
+      "Junts": 2.1,
+      "PNV": 1.5,
+      "EH Bildu": 1.4,
+      "CUP": 0.7
+     }
+    },
+    {
+     "firma": "Sigma Dos",
+     "fila_wikipedia": "Sigma Dos/El Mundo",
+     "fin_campo": "2023-07-17",
+     "dias_antes": 6,
+     "valores": {
+      "PSOE": 28.0,
+      "PP": 35.4,
+      "Vox": 11.2,
+      "Sumar": 13.6,
+      "ERC": 2.6,
+      "Junts": 2.4,
+      "PNV": 1.1,
+      "EH Bildu": 1.0
+     }
+    },
+    {
+     "firma": "Simple Lógica",
+     "fila_wikipedia": "Simple Lógica/elDiario.es",
+     "fin_campo": "2023-07-16",
+     "dias_antes": 7,
+     "valores": {
+      "PSOE": 28.6,
+      "PP": 32.2,
+      "Vox": 13.9,
+      "Sumar": 13.8
+     }
+    },
+    {
+     "firma": "SocioMétrica",
+     "fila_wikipedia": "SocioMétrica/El Español",
+     "fin_campo": "2023-07-16",
+     "dias_antes": 7,
+     "valores": {
+      "PSOE": 28.3,
+      "PP": 33.5,
+      "Vox": 13.7,
+      "Sumar": 13.2,
+      "ERC": 2.3,
+      "Junts": 1.8,
+      "PNV": 1.4,
+      "EH Bildu": 1.3,
+      "CUP": 0.6,
+      "CCa": 0.4,
+      "BNG": 0.8
+     }
+    },
+    {
+     "firma": "Sondaxe",
+     "fila_wikipedia": "Sondaxe/La Voz de Galicia",
+     "fin_campo": "2023-07-16",
+     "dias_antes": 7,
+     "valores": {
+      "PSOE": 28.7,
+      "PP": 34.3,
+      "Vox": 12.5,
+      "Sumar": 14.0
+     }
+    },
+    {
+     "firma": "Target Point",
+     "fila_wikipedia": "Target Point/El Debate",
+     "fin_campo": "2023-07-16",
+     "dias_antes": 7,
+     "valores": {
+      "PSOE": 28.1,
+      "PP": 36.4,
+      "Vox": 12.4,
+      "Sumar": 12.1
+     }
+    }
+   ]
+  },
+  "k_nacional": 0.044208738236058136,
+  "k_swing_real": 0.05196491126675461,
+  "k_total": 0.0806759867642429,
+  "k_combinado_cuadratico": 0.06822583483832198,
+  "formas_total": {
+   "k/sqrt(s)": {
+    "params": {
+     "k": 0.0806759867642429
+    },
+    "ll": 2830.161041579012,
+    "np": 1,
+    "aic": -5658.322083158024
+   },
+   "constante": {
+    "params": {
+     "sigma": 0.2215144785603994
+    },
+    "ll": 1286.1555471172915,
+    "np": 1,
+    "aic": -2570.311094234583
+   },
+   "c*s^-a": {
+    "params": {
+     "c": 0.08979274997485312,
+     "a": 0.44
+    },
+    "ll": 2850.8074391447053,
+    "np": 2,
+    "aic": -5697.614878289411
+   },
+   "sqrt(a^2+b^2/s)": {
+    "params": {
+     "a": 0.06,
+     "b": 0.076
+    },
+    "ll": 2842.9081278262092,
+    "np": 2,
+    "aic": -5681.8162556524185
+   }
+  },
+  "dos_componentes_total": {
+   "params": {
+    "kn": 0.017,
+    "kp": 0.078
+   },
+   "ll": 2860.7016907468474,
+   "np": 2,
+   "aic": -5717.403381493695
+  },
+  "formas_nacional": {
+   "k/sqrt(s)": {
+    "params": {
+     "k": 0.044208738236058136
+    },
+    "ll": 121.18027455093939,
+    "np": 1,
+    "aic": -240.36054910187877
+   },
+   "constante": {
+    "params": {
+     "sigma": 0.2171600693800948
+    },
+    "ll": 51.494640211901284,
+    "np": 1,
+    "aic": -100.98928042380257
+   },
+   "c*s^-a": {
+    "params": {
+     "c": 0.07007128925023867,
+     "a": 0.32
+    },
+    "ll": 149.60809823757629,
+    "np": 2,
+    "aic": -295.21619647515257
+   },
+   "sqrt(a^2+b^2/s)": {
+    "params": {
+     "a": 0.1,
+     "b": 0.03
+    },
+    "ll": 144.8603984018025,
+    "np": 2,
+    "aic": -285.720796803605
+   }
+  },
+  "formas_swing": {
+   "k/sqrt(s)": {
+    "params": {
+     "k": 0.05196491126675461
+    },
+    "ll": 572.4833333282251,
+    "np": 1,
+    "aic": -1142.9666666564501
+   },
+   "constante": {
+    "params": {
+     "sigma": 0.14069897343842627
+    },
+    "ll": 589.3649625532695,
+    "np": 1,
+    "aic": -1176.729925106539
+   },
+   "c*s^-a": {
+    "params": {
+     "c": 0.08899049938489978,
+     "a": 0.21
+    },
+    "ll": 625.4833511514315,
+    "np": 2,
+    "aic": -1246.966702302863
+   },
+   "sqrt(a^2+b^2/s)": {
+    "params": {
+     "a": 0.1,
+     "b": 0.032
+    },
+    "ll": 600.7737523905819,
+    "np": 2,
+    "aic": -1197.5475047811638
+   }
+  },
+  "tramos_total": [
+   {
+    "desde": 0.005,
+    "hasta": 0.01,
+    "n": 116,
+    "rms_log": 0.3011515641869974,
+    "sigma_robusta": 0.39957136731289716,
+    "k_implicita": 0.0259100764223707,
+    "k_robusta": 0.032930476523634504,
+    "error_pts_rms": 0.2519661023829283
+   },
+   {
+    "desde": 0.01,
+    "hasta": 0.02,
+    "n": 232,
+    "rms_log": 0.4366836283481073,
+    "sigma_robusta": 0.5377655623023024,
+    "k_implicita": 0.055183844152262206,
+    "k_robusta": 0.06413246497196633,
+    "error_pts_rms": 0.5864350071247014
+   },
+   {
+    "desde": 0.02,
+    "hasta": 0.05,
+    "n": 425,
+    "rms_log": 0.41267832424823775,
+    "sigma_robusta": 0.3990879736004887,
+    "k_implicita": 0.0748114058624525,
+    "k_robusta": 0.0733622116765281,
+    "error_pts_rms": 1.3404045877126867
+   },
+   {
+    "desde": 0.05,
+    "hasta": 0.1,
+    "n": 2089,
+    "rms_log": 0.3044927178707099,
+    "sigma_robusta": 0.22496418430424892,
+    "k_implicita": 0.08408744290227425,
+    "k_robusta": 0.06212252325114499,
+    "error_pts_rms": 2.2306042002584583
+   },
+   {
+    "desde": 0.1,
+    "hasta": 0.2,
+    "n": 5428,
+    "rms_log": 0.21477902662594722,
+    "sigma_robusta": 0.18208116990749104,
+    "k_implicita": 0.0790547222335449,
+    "k_robusta": 0.0691610410904119,
+    "error_pts_rms": 2.91036876261231
+   },
+   {
+    "desde": 0.2,
+    "hasta": 0.35,
+    "n": 4558,
+    "rms_log": 0.15362712386452604,
+    "sigma_robusta": 0.13703185240777838,
+    "k_implicita": 0.07860645262435809,
+    "k_robusta": 0.07173916646660933,
+    "error_pts_rms": 3.8042592093089302
+   },
+   {
+    "desde": 0.35,
+    "hasta": 1.0,
+    "n": 1713,
+    "rms_log": 0.1443568870976156,
+    "sigma_robusta": 0.141371536740867,
+    "k_implicita": 0.09279785672202528,
+    "k_robusta": 0.09150879796300056,
+    "error_pts_rms": 5.385906631638438
+   }
+  ],
+  "tramos_nacional": [
+   {
+    "desde": 0.005,
+    "hasta": 0.01,
+    "n": 37,
+    "rms_log": 0.34617489682664854,
+    "sigma_robusta": 0.36702635893536384,
+    "k_implicita": 0.026197923075202603,
+    "k_robusta": 0.02930670753376724,
+    "error_pts_rms": 0.26175268814948033
+   },
+   {
+    "desde": 0.01,
+    "hasta": 0.02,
+    "n": 95,
+    "rms_log": 0.2374817625127058,
+    "sigma_robusta": 0.24509860611708337,
+    "k_implicita": 0.02940717842925433,
+    "k_robusta": 0.03367436381004551,
+    "error_pts_rms": 0.39503869137321823
+   },
+   {
+    "desde": 0.02,
+    "hasta": 0.05,
+    "n": 43,
+    "rms_log": 0.2124303610052458,
+    "sigma_robusta": 0.2455490690370213,
+    "k_implicita": 0.03512435878181504,
+    "k_robusta": 0.03611323274496264,
+    "error_pts_rms": 0.7028767653552686
+   },
+   {
+    "desde": 0.05,
+    "hasta": 0.1,
+    "n": 14,
+    "rms_log": 0.3076960075416535,
+    "sigma_robusta": 0.42289852720005594,
+    "k_implicita": 0.08025574722723831,
+    "k_robusta": 0.11030379488152611,
+    "error_pts_rms": 1.7746933624363588
+   },
+   {
+    "desde": 0.1,
+    "hasta": 0.2,
+    "n": 134,
+    "rms_log": 0.13422316571984858,
+    "sigma_robusta": 0.12499183432421174,
+    "k_implicita": 0.051056275562366506,
+    "k_robusta": 0.045567681117251034,
+    "error_pts_rms": 2.100624703237409
+   },
+   {
+    "desde": 0.2,
+    "hasta": 0.35,
+    "n": 120,
+    "rms_log": 0.0968259583953271,
+    "sigma_robusta": 0.11177940509237862,
+    "k_implicita": 0.050080878079712655,
+    "k_robusta": 0.06136257450547695,
+    "error_pts_rms": 2.684406399654194
+   }
+  ],
+  "tramos_swing": [
+   {
+    "desde": 0.005,
+    "hasta": 0.01,
+    "n": 44,
+    "rms_log": 0.11896186491515903,
+    "sigma_robusta": 0.12246122631914384,
+    "k_implicita": 0.010603739261064069,
+    "k_robusta": 0.01126765723531681,
+    "error_pts_rms": 0.08834783563753751
+   },
+   {
+    "desde": 0.01,
+    "hasta": 0.02,
+    "n": 61,
+    "rms_log": 0.15797375315936846,
+    "sigma_robusta": 0.10114320795691588,
+    "k_implicita": 0.01867121321071508,
+    "k_robusta": 0.012504268777985907,
+    "error_pts_rms": 0.23033817922430436
+   },
+   {
+    "desde": 0.02,
+    "hasta": 0.05,
+    "n": 33,
+    "rms_log": 0.20409875527225696,
+    "sigma_robusta": 0.26755913489199734,
+    "k_implicita": 0.040242157747163235,
+    "k_robusta": 0.050692729997538,
+    "error_pts_rms": 0.7859469975603248
+   },
+   {
+    "desde": 0.05,
+    "hasta": 0.1,
+    "n": 153,
+    "rms_log": 0.22452523350416556,
+    "sigma_robusta": 0.1108856556316462,
+    "k_implicita": 0.06208616407264411,
+    "k_robusta": 0.03000387332697005,
+    "error_pts_rms": 1.6351358200442645
+   },
+   {
+    "desde": 0.1,
+    "hasta": 0.2,
+    "n": 368,
+    "rms_log": 0.12401142196850443,
+    "sigma_robusta": 0.09549253711202878,
+    "k_implicita": 0.04724743965193507,
+    "k_robusta": 0.03666509056711446,
+    "error_pts_rms": 1.7368518858499062
+   },
+   {
+    "desde": 0.2,
+    "hasta": 0.35,
+    "n": 309,
+    "rms_log": 0.09814598991174836,
+    "sigma_robusta": 0.06613098758903363,
+    "k_implicita": 0.05020681924843435,
+    "k_robusta": 0.03539069922697206,
+    "error_pts_rms": 2.47334298361051
+   },
+   {
+    "desde": 0.35,
+    "hasta": 1.0,
+    "n": 119,
+    "rms_log": 0.11775074250052543,
+    "sigma_robusta": 0.054801732940347514,
+    "k_implicita": 0.07478051156153394,
+    "k_robusta": 0.03652282856248071,
+    "error_pts_rms": 4.173775852263338
+   }
+  ]
+ },
+ "backtest": {
+  "n_simulaciones": 2000,
+  "elecciones": {
+   "2023": {
+    "desde": "2019n",
+    "base": [
+     {
+      "ajuste": "sin error (k=0)",
+      "spec": [
+       "k",
+       0.0
+      ],
+      "brier": 0.04513064133016627,
+      "n": 421,
+      "brier_disputados": 0.08796296296296297,
+      "n_disputados": 216,
+      "brier_disputados_cuota_menor_5": 0.0,
+      "n_disputados_cuota_menor_5": 25,
+      "p_media_disputados": 0.625,
+      "frecuencia_disputados": 0.5648148148148148,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 249,
+        "p_media": 0.0,
+        "frecuencia": 0.012048192771084338
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 172,
+        "p_media": 1.0,
+        "frecuencia": 0.9069767441860465
+       }
+      ]
+     },
+     {
+      "ajuste": "actual baja (k=0,031)",
+      "spec": [
+       "k",
+       0.03125
+      ],
+      "brier": 0.04068948040380047,
+      "n": 421,
+      "brier_disputados": 0.0793068113425926,
+      "n_disputados": 216,
+      "brier_disputados_cuota_menor_5": 0.0,
+      "n_disputados_cuota_menor_5": 25,
+      "p_media_disputados": 0.622650462962963,
+      "frecuencia_disputados": 0.5648148148148148,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 239,
+        "p_media": 0.0005209205020920502,
+        "frecuencia": 0.008368200836820083
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 5,
+        "p_media": 0.14679999999999999,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 10,
+        "p_media": 0.48529999999999995,
+        "frecuencia": 0.4
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 8,
+        "p_media": 0.852,
+        "frecuencia": 0.25
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 159,
+        "p_media": 0.9997798742138365,
+        "frecuencia": 0.949685534591195
+       }
+      ]
+     },
+     {
+      "ajuste": "actual media (k=0,05)",
+      "spec": [
+       "k",
+       0.05
+      ],
+      "brier": 0.03813794239904988,
+      "n": 421,
+      "brier_disputados": 0.07433367476851852,
+      "n_disputados": 216,
+      "brier_disputados_cuota_menor_5": 4.43e-06,
+      "n_disputados_cuota_menor_5": 25,
+      "p_media_disputados": 0.6217939814814815,
+      "frecuencia_disputados": 0.5648148148148148,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 232,
+        "p_media": 0.0007629310344827587,
+        "frecuencia": 0.004310344827586207
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 12,
+        "p_media": 0.14049999999999999,
+        "frecuencia": 0.08333333333333333
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 10,
+        "p_media": 0.47465,
+        "frecuencia": 0.4
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 10,
+        "p_media": 0.78575,
+        "frecuencia": 0.3
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 157,
+        "p_media": 0.9989840764331209,
+        "frecuencia": 0.9554140127388535
+       }
+      ]
+     },
+     {
+      "ajuste": "actual alta (k=0,075)",
+      "spec": [
+       "k",
+       0.075
+      ],
+      "brier": 0.0360119851543943,
+      "n": 421,
+      "brier_disputados": 0.07019000578703703,
+      "n_disputados": 216,
+      "brier_disputados_cuota_menor_5": 9.793000000000002e-05,
+      "n_disputados_cuota_menor_5": 25,
+      "p_media_disputados": 0.620275462962963,
+      "frecuencia_disputados": 0.5648148148148148,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 225,
+        "p_media": 0.001671111111111111,
+        "frecuencia": 0.0044444444444444444
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 18,
+        "p_media": 0.14672222222222223,
+        "frecuencia": 0.05555555555555555
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 13,
+        "p_media": 0.47115384615384615,
+        "frecuencia": 0.38461538461538464
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 15,
+        "p_media": 0.8148666666666667,
+        "frecuencia": 0.4666666666666667
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 150,
+        "p_media": 0.9974900000000001,
+        "frecuencia": 0.9666666666666667
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,10",
+      "spec": [
+       "k",
+       0.1
+      ],
+      "brier": 0.034480925771971496,
+      "n": 421,
+      "brier_disputados": 0.06720558796296296,
+      "n_disputados": 216,
+      "brier_disputados_cuota_menor_5": 0.00035979,
+      "n_disputados_cuota_menor_5": 25,
+      "p_media_disputados": 0.6166527777777778,
+      "frecuencia_disputados": 0.5648148148148148,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 217,
+        "p_media": 0.0029493087557603687,
+        "frecuencia": 0.004608294930875576
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 26,
+        "p_media": 0.15025,
+        "frecuencia": 0.038461538461538464
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 17,
+        "p_media": 0.4944411764705882,
+        "frecuencia": 0.35294117647058826
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 23,
+        "p_media": 0.8627173913043479,
+        "frecuencia": 0.6956521739130435
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 138,
+        "p_media": 0.9960000000000001,
+        "frecuencia": 0.9782608695652174
+       }
+      ]
+     },
+     {
+      "ajuste": "k ajustada sin 2023 (0.151)",
+      "spec": [
+       "k",
+       0.151
+      ],
+      "brier": 0.0331402054631829,
+      "n": 421,
+      "brier_disputados": 0.06458711921296297,
+      "n_disputados": 216,
+      "brier_disputados_cuota_menor_5": 0.00106375,
+      "n_disputados_cuota_menor_5": 25,
+      "p_media_disputados": 0.6009097222222223,
+      "frecuencia_disputados": 0.5648148148148148,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 201,
+        "p_media": 0.004736318407960198,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 41,
+        "p_media": 0.1471951219512195,
+        "frecuencia": 0.04878048780487805
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 23,
+        "p_media": 0.48006521739130437,
+        "frecuencia": 0.34782608695652173
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 45,
+        "p_media": 0.8596333333333334,
+        "frecuencia": 0.8444444444444444
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 111,
+        "p_media": 0.9940090090090091,
+        "frecuencia": 1.0
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,15",
+      "spec": [
+       "k",
+       0.15
+      ],
+      "brier": 0.03314510035629454,
+      "n": 421,
+      "brier_disputados": 0.06459687731481481,
+      "n_disputados": 216,
+      "brier_disputados_cuota_menor_5": 0.00104485,
+      "n_disputados_cuota_menor_5": 25,
+      "p_media_disputados": 0.6013564814814815,
+      "frecuencia_disputados": 0.5648148148148148,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 201,
+        "p_media": 0.004626865671641792,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 41,
+        "p_media": 0.14658536585365853,
+        "frecuencia": 0.04878048780487805
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 23,
+        "p_media": 0.48115217391304343,
+        "frecuencia": 0.34782608695652173
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 45,
+        "p_media": 0.8614444444444445,
+        "frecuencia": 0.8444444444444444
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 111,
+        "p_media": 0.9942882882882883,
+        "frecuencia": 1.0
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,20",
+      "spec": [
+       "k",
+       0.2
+      ],
+      "brier": 0.034164109263657955,
+      "n": 421,
+      "brier_disputados": 0.06657872569444444,
+      "n_disputados": 216,
+      "brier_disputados_cuota_menor_5": 0.00143792,
+      "n_disputados_cuota_menor_5": 25,
+      "p_media_disputados": 0.5770300925925926,
+      "frecuencia_disputados": 0.5648148148148148,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 195,
+        "p_media": 0.005694871794871795,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 47,
+        "p_media": 0.1568404255319149,
+        "frecuencia": 0.0425531914893617
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 28,
+        "p_media": 0.48075,
+        "frecuencia": 0.42857142857142855
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 60,
+        "p_media": 0.8351916666666667,
+        "frecuencia": 0.9
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 91,
+        "p_media": 0.9879285714285714,
+        "frecuencia": 1.0
+       }
+      ]
+     },
+     {
+      "ajuste": "σ=0,25 constante",
+      "spec": [
+       "const",
+       0.25
+      ],
+      "brier": 0.03403861045130641,
+      "n": 421,
+      "brier_disputados": 0.06634377314814816,
+      "n_disputados": 216,
+      "brier_disputados_cuota_menor_5": 1.7e-07,
+      "n_disputados_cuota_menor_5": 25,
+      "p_media_disputados": 0.6118472222222222,
+      "frecuencia_disputados": 0.5648148148148148,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 223,
+        "p_media": 0.0017600896860986547,
+        "frecuencia": 0.004484304932735426
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 19,
+        "p_media": 0.16113157894736843,
+        "frecuencia": 0.05263157894736842
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 18,
+        "p_media": 0.4890277777777778,
+        "frecuencia": 0.3333333333333333
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 25,
+        "p_media": 0.8669,
+        "frecuencia": 0.72
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 136,
+        "p_media": 0.9943382352941176,
+        "frecuencia": 0.9779411764705882
+       }
+      ]
+     },
+     {
+      "ajuste": "σ constante ajustada sin 2023 (0.40)",
+      "spec": [
+       "const",
+       0.4045
+      ],
+      "brier": 0.03364211460807601,
+      "n": 421,
+      "brier_disputados": 0.06557056481481481,
+      "n_disputados": 216,
+      "brier_disputados_cuota_menor_5": 6.097e-05,
+      "n_disputados_cuota_menor_5": 25,
+      "p_media_disputados": 0.5866018518518519,
+      "frecuencia_disputados": 0.5648148148148148,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 204,
+        "p_media": 0.0010955882352941177,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 37,
+        "p_media": 0.15333783783783783,
+        "frecuencia": 0.05405405405405406
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 23,
+        "p_media": 0.4777391304347826,
+        "frecuencia": 0.30434782608695654
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 59,
+        "p_media": 0.8497881355932204,
+        "frecuencia": 0.8813559322033898
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 98,
+        "p_media": 0.9862244897959185,
+        "frecuencia": 1.0
+       }
+      ]
+     },
+     {
+      "ajuste": "σ=0,45 constante",
+      "spec": [
+       "const",
+       0.45
+      ],
+      "brier": 0.03448636282660333,
+      "n": 421,
+      "brier_disputados": 0.06721390972222221,
+      "n_disputados": 216,
+      "brier_disputados_cuota_menor_5": 0.00012632,
+      "n_disputados_cuota_menor_5": 25,
+      "p_media_disputados": 0.5766111111111111,
+      "frecuencia_disputados": 0.5648148148148148,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 202,
+        "p_media": 0.0011584158415841586,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 39,
+        "p_media": 0.16305128205128205,
+        "frecuencia": 0.05128205128205128
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 24,
+        "p_media": 0.4760625,
+        "frecuencia": 0.3333333333333333
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 73,
+        "p_media": 0.8465890410958904,
+        "frecuencia": 0.9041095890410958
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 83,
+        "p_media": 0.9834216867469879,
+        "frecuencia": 1.0
+       }
+      ]
+     },
+     {
+      "ajuste": "σ=c·s^-a (todo)",
+      "spec": [
+       "pow",
+       0.3261,
+       0.08
+      ],
+      "brier": 0.03323858135391924,
+      "n": 421,
+      "brier_disputados": 0.06478440393518518,
+      "n_disputados": 216,
+      "brier_disputados_cuota_menor_5": 6.86e-05,
+      "n_disputados_cuota_menor_5": 25,
+      "p_media_disputados": 0.5936550925925926,
+      "frecuencia_disputados": 0.5648148148148148,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 208,
+        "p_media": 0.0018557692307692307,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 33,
+        "p_media": 0.15384848484848485,
+        "frecuencia": 0.06060606060606061
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 23,
+        "p_media": 0.4817173913043478,
+        "frecuencia": 0.30434782608695654
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 50,
+        "p_media": 0.85613,
+        "frecuencia": 0.86
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 107,
+        "p_media": 0.9894345794392524,
+        "frecuencia": 1.0
+       }
+      ]
+     }
+    ],
+    "encuestas": [
+     {
+      "ajuste": "sin error (k=0)",
+      "spec": [
+       "k",
+       0.0
+      ],
+      "brier": 0.03070175438596491,
+      "n": 7524,
+      "brier_disputados": 0.08974358974358974,
+      "n_disputados": 2574,
+      "brier_disputados_cuota_menor_5": 0.018867924528301886,
+      "n_disputados_cuota_menor_5": 318,
+      "p_media_disputados": 0.506993006993007,
+      "frecuencia_disputados": 0.47707847707847706,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 4621,
+        "p_media": 0.0,
+        "frecuencia": 0.016663059943735122
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2903,
+        "p_media": 1.0,
+        "frecuencia": 0.946951429555632
+       }
+      ]
+     },
+     {
+      "ajuste": "actual baja (k=0,025)",
+      "spec": [
+       "k",
+       0.025
+      ],
+      "brier": 0.025356486044657095,
+      "n": 7524,
+      "brier_disputados": 0.0741189592074592,
+      "n_disputados": 2574,
+      "brier_disputados_cuota_menor_5": 0.018144720125786162,
+      "n_disputados_cuota_menor_5": 318,
+      "p_media_disputados": 0.5034137529137529,
+      "frecuencia_disputados": 0.47707847707847706,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 4502,
+        "p_media": 0.0002507774322523323,
+        "frecuencia": 0.0019991115059973343
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 89,
+        "p_media": 0.1628876404494382,
+        "frecuencia": 0.550561797752809
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 63,
+        "p_media": 0.48265079365079366,
+        "frecuencia": 0.5714285714285714
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 129,
+        "p_media": 0.8408217054263566,
+        "frecuencia": 0.7674418604651163
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2741,
+        "p_media": 0.9993754104341481,
+        "frecuencia": 0.9605983217803721
+       }
+      ]
+     },
+     {
+      "ajuste": "actual media (k=0,04)",
+      "spec": [
+       "k",
+       0.04
+      ],
+      "brier": 0.02381037028176502,
+      "n": 7524,
+      "brier_disputados": 0.0695995439005439,
+      "n_disputados": 2574,
+      "brier_disputados_cuota_menor_5": 0.016534757861635222,
+      "n_disputados_cuota_menor_5": 318,
+      "p_media_disputados": 0.497960372960373,
+      "frecuencia_disputados": 0.47707847707847706,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 4453,
+        "p_media": 0.0003887267011003818,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 131,
+        "p_media": 0.17860305343511448,
+        "frecuencia": 0.3969465648854962
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 100,
+        "p_media": 0.50259,
+        "frecuencia": 0.63
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 188,
+        "p_media": 0.8292553191489362,
+        "frecuencia": 0.776595744680851
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2652,
+        "p_media": 0.9986662895927603,
+        "frecuencia": 0.9671945701357466
+       }
+      ]
+     },
+     {
+      "ajuste": "actual alta / k=0,06",
+      "spec": [
+       "k",
+       0.06
+      ],
+      "brier": 0.023008383705475813,
+      "n": 7524,
+      "brier_disputados": 0.06725527544677545,
+      "n_disputados": 2574,
+      "brier_disputados_cuota_menor_5": 0.01389,
+      "n_disputados_cuota_menor_5": 318,
+      "p_media_disputados": 0.4899024864024864,
+      "frecuencia_disputados": 0.47707847707847706,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 4392,
+        "p_media": 0.0010234517304189435,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 181,
+        "p_media": 0.1797292817679558,
+        "frecuencia": 0.2430939226519337
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 160,
+        "p_media": 0.51158125,
+        "frecuencia": 0.66875
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 278,
+        "p_media": 0.834748201438849,
+        "frecuencia": 0.8201438848920863
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2513,
+        "p_media": 0.9980382013529646,
+        "frecuencia": 0.9737365698368484
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,08",
+      "spec": [
+       "k",
+       0.08
+      ],
+      "brier": 0.023036597288676238,
+      "n": 7524,
+      "brier_disputados": 0.06733773581973583,
+      "n_disputados": 2574,
+      "brier_disputados_cuota_menor_5": 0.011885544025157232,
+      "n_disputados_cuota_menor_5": 318,
+      "p_media_disputados": 0.48225951825951824,
+      "frecuencia_disputados": 0.47707847707847706,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 4296,
+        "p_media": 0.0018286778398510241,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 271,
+        "p_media": 0.16511439114391144,
+        "frecuencia": 0.14760147601476015
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 214,
+        "p_media": 0.5134626168224299,
+        "frecuencia": 0.6869158878504673
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 360,
+        "p_media": 0.8347361111111111,
+        "frecuencia": 0.8472222222222222
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2383,
+        "p_media": 0.9972186319765002,
+        "frecuencia": 0.9794376835921108
+       }
+      ]
+     },
+     {
+      "ajuste": "k ajustada sin 2023 (0.082)",
+      "spec": [
+       "k",
+       0.0816
+      ],
+      "brier": 0.023075459197235512,
+      "n": 7524,
+      "brier_disputados": 0.06745132012432012,
+      "n_disputados": 2574,
+      "brier_disputados_cuota_menor_5": 0.01172180503144654,
+      "n_disputados_cuota_menor_5": 318,
+      "p_media_disputados": 0.48166200466200465,
+      "frecuencia_disputados": 0.47707847707847706,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 4291,
+        "p_media": 0.001954089955721277,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 276,
+        "p_media": 0.16561231884057973,
+        "frecuencia": 0.14492753623188406
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 217,
+        "p_media": 0.5132995391705069,
+        "frecuencia": 0.6912442396313364
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 366,
+        "p_media": 0.8339098360655738,
+        "frecuencia": 0.8442622950819673
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2374,
+        "p_media": 0.9971162594776748,
+        "frecuencia": 0.9802021903959562
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,10",
+      "spec": [
+       "k",
+       0.1
+      ],
+      "brier": 0.023580595427963848,
+      "n": 7524,
+      "brier_disputados": 0.06892738461538461,
+      "n_disputados": 2574,
+      "brier_disputados_cuota_menor_5": 0.01025951572327044,
+      "n_disputados_cuota_menor_5": 318,
+      "p_media_disputados": 0.474989121989122,
+      "frecuencia_disputados": 0.47707847707847706,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 4171,
+        "p_media": 0.0026940781587149365,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 391,
+        "p_media": 0.15174936061381075,
+        "frecuencia": 0.09462915601023018
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 266,
+        "p_media": 0.5109887218045113,
+        "frecuencia": 0.6992481203007519
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 443,
+        "p_media": 0.8351264108352144,
+        "frecuencia": 0.871331828442438
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2253,
+        "p_media": 0.9963581890812251,
+        "frecuencia": 0.9840213049267643
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,12",
+      "spec": [
+       "k",
+       0.12
+      ],
+      "brier": 0.024454909755449228,
+      "n": 7524,
+      "brier_disputados": 0.07147964607614607,
+      "n_disputados": 2574,
+      "brier_disputados_cuota_menor_5": 0.009113216981132075,
+      "n_disputados_cuota_menor_5": 318,
+      "p_media_disputados": 0.46719930069930066,
+      "frecuencia_disputados": 0.47707847707847706,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 4055,
+        "p_media": 0.0038041923551171393,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 497,
+        "p_media": 0.14564587525150904,
+        "frecuencia": 0.06841046277665996
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 325,
+        "p_media": 0.50568,
+        "frecuencia": 0.7046153846153846
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 536,
+        "p_media": 0.8366921641791044,
+        "frecuencia": 0.878731343283582
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2111,
+        "p_media": 0.9958758882046422,
+        "frecuencia": 0.9909995262908574
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,15",
+      "spec": [
+       "k",
+       0.15
+      ],
+      "brier": 0.026197034157363103,
+      "n": 7524,
+      "brier_disputados": 0.07655832245532246,
+      "n_disputados": 2574,
+      "brier_disputados_cuota_menor_5": 0.007878632075471698,
+      "n_disputados_cuota_menor_5": 318,
+      "p_media_disputados": 0.45402253302253304,
+      "frecuencia_disputados": 0.47707847707847706,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 3884,
+        "p_media": 0.00492173017507724,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 660,
+        "p_media": 0.14258939393939393,
+        "frecuencia": 0.04696969696969697
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 398,
+        "p_media": 0.4985326633165829,
+        "frecuencia": 0.7261306532663316
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 661,
+        "p_media": 0.8306928895612707,
+        "frecuencia": 0.8910741301059002
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 1921,
+        "p_media": 0.9946475793857367,
+        "frecuencia": 0.9979177511712649
+       }
+      ]
+     }
+    ],
+    "n_casos_base": 421,
+    "n_casos_encuestas": 7524,
+    "n_encuestas": 18
+   },
+   "2019n": {
+    "desde": "2019a",
+    "base": [
+     {
+      "ajuste": "sin error (k=0)",
+      "spec": [
+       "k",
+       0.0
+      ],
+      "brier": 0.1016949152542373,
+      "n": 531,
+      "brier_disputados": 0.18620689655172415,
+      "n_disputados": 290,
+      "brier_disputados_cuota_menor_5": 0.0,
+      "n_disputados_cuota_menor_5": 53,
+      "p_media_disputados": 0.5724137931034483,
+      "frecuencia_disputados": 0.5172413793103449,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 335,
+        "p_media": 0.0,
+        "frecuencia": 0.056716417910447764
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 196,
+        "p_media": 1.0,
+        "frecuencia": 0.8214285714285714
+       }
+      ]
+     },
+     {
+      "ajuste": "actual baja (k=0,031)",
+      "spec": [
+       "k",
+       0.03125
+      ],
+      "brier": 0.09174010781544256,
+      "n": 531,
+      "brier_disputados": 0.16797930086206897,
+      "n_disputados": 290,
+      "brier_disputados_cuota_menor_5": 0.00046280188679245266,
+      "n_disputados_cuota_menor_5": 53,
+      "p_media_disputados": 0.5719568965517242,
+      "frecuencia_disputados": 0.5172413793103449,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 319,
+        "p_media": 0.0008040752351097178,
+        "frecuencia": 0.03134796238244514
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 12,
+        "p_media": 0.12658333333333335,
+        "frecuencia": 0.5
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 7,
+        "p_media": 0.45221428571428574,
+        "frecuencia": 0.5714285714285714
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 12,
+        "p_media": 0.8454583333333333,
+        "frecuencia": 0.75
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 181,
+        "p_media": 0.9987900552486189,
+        "frecuencia": 0.8342541436464088
+       }
+      ]
+     },
+     {
+      "ajuste": "actual media (k=0,05)",
+      "spec": [
+       "k",
+       0.05
+      ],
+      "brier": 0.08643729143126176,
+      "n": 531,
+      "brier_disputados": 0.15826966120689653,
+      "n_disputados": 290,
+      "brier_disputados_cuota_menor_5": 0.0017086556603773588,
+      "n_disputados_cuota_menor_5": 53,
+      "p_media_disputados": 0.5694327586206896,
+      "frecuencia_disputados": 0.5172413793103449,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 311,
+        "p_media": 0.0015064308681672024,
+        "frecuencia": 0.022508038585209004
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 20,
+        "p_media": 0.1656,
+        "frecuencia": 0.45
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 10,
+        "p_media": 0.48445,
+        "frecuencia": 0.6
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 18,
+        "p_media": 0.8363888888888888,
+        "frecuencia": 0.6666666666666666
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 172,
+        "p_media": 0.9968343023255813,
+        "frecuencia": 0.8488372093023255
+       }
+      ]
+     },
+     {
+      "ajuste": "actual alta (k=0,075)",
+      "spec": [
+       "k",
+       0.075
+      ],
+      "brier": 0.07952312288135593,
+      "n": 531,
+      "brier_disputados": 0.14560956810344827,
+      "n_disputados": 290,
+      "brier_disputados_cuota_menor_5": 0.003620849056603773,
+      "n_disputados_cuota_menor_5": 53,
+      "p_media_disputados": 0.5637155172413792,
+      "frecuencia_disputados": 0.5172413793103449,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 298,
+        "p_media": 0.0023338926174496645,
+        "frecuencia": 0.016778523489932886
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 30,
+        "p_media": 0.1548,
+        "frecuencia": 0.3
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 17,
+        "p_media": 0.4696470588235294,
+        "frecuencia": 0.7058823529411765
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 35,
+        "p_media": 0.8465,
+        "frecuencia": 0.5142857142857142
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 151,
+        "p_media": 0.9969039735099338,
+        "frecuencia": 0.9006622516556292
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,10",
+      "spec": [
+       "k",
+       0.1
+      ],
+      "brier": 0.07401721421845574,
+      "n": 531,
+      "brier_disputados": 0.1355278146551724,
+      "n_disputados": 290,
+      "brier_disputados_cuota_menor_5": 0.005765433962264151,
+      "n_disputados_cuota_menor_5": 53,
+      "p_media_disputados": 0.556198275862069,
+      "frecuencia_disputados": 0.5172413793103449,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 285,
+        "p_media": 0.0031473684210526318,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 41,
+        "p_media": 0.14769512195121953,
+        "frecuencia": 0.2926829268292683
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 23,
+        "p_media": 0.47100000000000003,
+        "frecuencia": 0.6521739130434783
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 45,
+        "p_media": 0.8306555555555556,
+        "frecuencia": 0.5777777777777777
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 137,
+        "p_media": 0.9940109489051094,
+        "frecuencia": 0.927007299270073
+       }
+      ]
+     },
+     {
+      "ajuste": "k ajustada sin 2019n (0.145)",
+      "spec": [
+       "k",
+       0.1448
+      ],
+      "brier": 0.06798184557438795,
+      "n": 531,
+      "brier_disputados": 0.1244738301724138,
+      "n_disputados": 290,
+      "brier_disputados_cuota_menor_5": 0.00967634433962264,
+      "n_disputados_cuota_menor_5": 53,
+      "p_media_disputados": 0.53715,
+      "frecuencia_disputados": 0.5172413793103449,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 268,
+        "p_media": 0.0049682835820895515,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 57,
+        "p_media": 0.15485964912280703,
+        "frecuencia": 0.19298245614035087
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 36,
+        "p_media": 0.4935277777777778,
+        "frecuencia": 0.6111111111111112
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 68,
+        "p_media": 0.8398161764705883,
+        "frecuencia": 0.7058823529411765
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 102,
+        "p_media": 0.9902745098039215,
+        "frecuencia": 0.9705882352941176
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,15",
+      "spec": [
+       "k",
+       0.15
+      ],
+      "brier": 0.06753477401129944,
+      "n": 531,
+      "brier_disputados": 0.12365469568965518,
+      "n_disputados": 290,
+      "brier_disputados_cuota_menor_5": 0.010137778301886793,
+      "n_disputados_cuota_menor_5": 53,
+      "p_media_disputados": 0.5345120689655173,
+      "frecuencia_disputados": 0.5172413793103449,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 267,
+        "p_media": 0.0052902621722846445,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 58,
+        "p_media": 0.1565603448275862,
+        "frecuencia": 0.1896551724137931
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 38,
+        "p_media": 0.4967368421052632,
+        "frecuencia": 0.6052631578947368
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 69,
+        "p_media": 0.8398333333333333,
+        "frecuencia": 0.7246376811594203
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 99,
+        "p_media": 0.9897323232323233,
+        "frecuencia": 0.9696969696969697
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,20",
+      "spec": [
+       "k",
+       0.2
+      ],
+      "brier": 0.06574396233521657,
+      "n": 531,
+      "brier_disputados": 0.12037128534482758,
+      "n_disputados": 290,
+      "brier_disputados_cuota_menor_5": 0.014125353773584905,
+      "n_disputados_cuota_menor_5": 53,
+      "p_media_disputados": 0.5065844827586207,
+      "frecuencia_disputados": 0.5172413793103449,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 256,
+        "p_media": 0.00617578125,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 70,
+        "p_media": 0.16340714285714286,
+        "frecuencia": 0.15714285714285714
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 53,
+        "p_media": 0.5061792452830188,
+        "frecuencia": 0.6226415094339622
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 81,
+        "p_media": 0.8337777777777778,
+        "frecuencia": 0.8148148148148148
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 71,
+        "p_media": 0.9854084507042253,
+        "frecuencia": 0.9859154929577465
+       }
+      ]
+     },
+     {
+      "ajuste": "σ=0,25 constante",
+      "spec": [
+       "const",
+       0.25
+      ],
+      "brier": 0.0726665852165725,
+      "n": 531,
+      "brier_disputados": 0.13305502327586208,
+      "n_disputados": 290,
+      "brier_disputados_cuota_menor_5": 0.0016917735849056603,
+      "n_disputados_cuota_menor_5": 53,
+      "p_media_disputados": 0.552146551724138,
+      "frecuencia_disputados": 0.5172413793103449,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 291,
+        "p_media": 0.0014484536082474226,
+        "frecuencia": 0.003436426116838488
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 35,
+        "p_media": 0.15162857142857145,
+        "frecuencia": 0.3142857142857143
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 21,
+        "p_media": 0.4678571428571428,
+        "frecuencia": 0.6666666666666666
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 49,
+        "p_media": 0.8301938775510204,
+        "frecuencia": 0.5510204081632653
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 135,
+        "p_media": 0.991774074074074,
+        "frecuencia": 0.9407407407407408
+       }
+      ]
+     },
+     {
+      "ajuste": "σ constante ajustada sin 2019n (0.38)",
+      "spec": [
+       "const",
+       0.3774
+      ],
+      "brier": 0.06549758898305086,
+      "n": 531,
+      "brier_disputados": 0.11992824827586207,
+      "n_disputados": 290,
+      "brier_disputados_cuota_menor_5": 0.0034275000000000004,
+      "n_disputados_cuota_menor_5": 53,
+      "p_media_disputados": 0.5277,
+      "frecuencia_disputados": 0.5172413793103449,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 279,
+        "p_media": 0.0018387096774193548,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 46,
+        "p_media": 0.17713043478260868,
+        "frecuencia": 0.2391304347826087
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 36,
+        "p_media": 0.5099166666666667,
+        "frecuencia": 0.6111111111111112
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 82,
+        "p_media": 0.8431768292682927,
+        "frecuencia": 0.7560975609756098
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 88,
+        "p_media": 0.9870454545454546,
+        "frecuencia": 0.9659090909090909
+       }
+      ]
+     },
+     {
+      "ajuste": "σ=0,45 constante",
+      "spec": [
+       "const",
+       0.45
+      ],
+      "brier": 0.06414508945386063,
+      "n": 531,
+      "brier_disputados": 0.11745010172413793,
+      "n_disputados": 290,
+      "brier_disputados_cuota_menor_5": 0.004522995283018869,
+      "n_disputados_cuota_menor_5": 53,
+      "p_media_disputados": 0.5119482758620689,
+      "frecuencia_disputados": 0.5172413793103449,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 273,
+        "p_media": 0.0021135531135531133,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 52,
+        "p_media": 0.18521153846153846,
+        "frecuencia": 0.21153846153846154
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 43,
+        "p_media": 0.5128372093023256,
+        "frecuencia": 0.5581395348837209
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 98,
+        "p_media": 0.8371530612244897,
+        "frecuencia": 0.826530612244898
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 65,
+        "p_media": 0.9858461538461538,
+        "frecuencia": 0.9846153846153847
+       }
+      ]
+     },
+     {
+      "ajuste": "σ=c·s^-a (todo)",
+      "spec": [
+       "pow",
+       0.3261,
+       0.08
+      ],
+      "brier": 0.06579119821092279,
+      "n": 531,
+      "brier_disputados": 0.12046589310344827,
+      "n_disputados": 290,
+      "brier_disputados_cuota_menor_5": 0.004037301886792452,
+      "n_disputados_cuota_menor_5": 53,
+      "p_media_disputados": 0.5285413793103447,
+      "frecuencia_disputados": 0.5172413793103449,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 277,
+        "p_media": 0.0018285198555956677,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 48,
+        "p_media": 0.17218750000000002,
+        "frecuencia": 0.22916666666666666
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 36,
+        "p_media": 0.5055972222222223,
+        "frecuencia": 0.6111111111111112
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 80,
+        "p_media": 0.8425687500000001,
+        "frecuencia": 0.75
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 90,
+        "p_media": 0.9876444444444445,
+        "frecuencia": 0.9666666666666667
+       }
+      ]
+     }
+    ],
+    "encuestas": [
+     {
+      "ajuste": "sin error (k=0)",
+      "spec": [
+       "k",
+       0.0
+      ],
+      "brier": 0.03714750542299349,
+      "n": 7376,
+      "brier_disputados": 0.0953375086986778,
+      "n_disputados": 2874,
+      "brier_disputados_cuota_menor_5": 0.002421307506053269,
+      "n_disputados_cuota_menor_5": 413,
+      "p_media_disputados": 0.4321503131524008,
+      "frecuencia_disputados": 0.4363256784968685,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 4898,
+        "p_media": 0.0,
+        "frecuencia": 0.029195590036749694
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2478,
+        "p_media": 1.0,
+        "frecuencia": 0.947134786117837
+       }
+      ]
+     },
+     {
+      "ajuste": "actual baja (k=0,025)",
+      "spec": [
+       "k",
+       0.025
+      ],
+      "brier": 0.03154524905097614,
+      "n": 7376,
+      "brier_disputados": 0.08095955358385525,
+      "n_disputados": 2874,
+      "brier_disputados_cuota_menor_5": 0.001146508474576271,
+      "n_disputados_cuota_menor_5": 413,
+      "p_media_disputados": 0.43278601252609605,
+      "frecuencia_disputados": 0.4363256784968685,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 4717,
+        "p_media": 0.0005885096459614162,
+        "frecuencia": 0.016111935552257792
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 134,
+        "p_media": 0.16134328358208955,
+        "frecuencia": 0.373134328358209
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 90,
+        "p_media": 0.48800000000000004,
+        "frecuencia": 0.45555555555555555
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 128,
+        "p_media": 0.8326015625,
+        "frecuencia": 0.65625
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2307,
+        "p_media": 0.9991061985262246,
+        "frecuencia": 0.9705244906805375
+       }
+      ]
+     },
+     {
+      "ajuste": "actual media (k=0,04)",
+      "spec": [
+       "k",
+       0.04
+      ],
+      "brier": 0.02910115374186551,
+      "n": 7376,
+      "brier_disputados": 0.07468688587334725,
+      "n_disputados": 2874,
+      "brier_disputados_cuota_menor_5": 0.0010335399515738499,
+      "n_disputados_cuota_menor_5": 413,
+      "p_media_disputados": 0.43384968684759917,
+      "frecuencia_disputados": 0.4363256784968685,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 4592,
+        "p_media": 0.0012770034843205575,
+        "frecuencia": 0.009146341463414634
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 240,
+        "p_media": 0.15697916666666664,
+        "frecuencia": 0.2916666666666667
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 137,
+        "p_media": 0.49302189781021893,
+        "frecuencia": 0.5328467153284672
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 199,
+        "p_media": 0.8364472361809046,
+        "frecuencia": 0.6884422110552764
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2208,
+        "p_media": 0.9987989130434782,
+        "frecuencia": 0.9818840579710145
+       }
+      ]
+     },
+     {
+      "ajuste": "actual alta / k=0,06",
+      "spec": [
+       "k",
+       0.06
+      ],
+      "brier": 0.027343101681127982,
+      "n": 7376,
+      "brier_disputados": 0.07017491927627001,
+      "n_disputados": 2874,
+      "brier_disputados_cuota_menor_5": 0.0012807869249394674,
+      "n_disputados_cuota_menor_5": 413,
+      "p_media_disputados": 0.4355038274182324,
+      "frecuencia_disputados": 0.4363256784968685,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 4386,
+        "p_media": 0.0018502051983584132,
+        "frecuencia": 0.003875968992248062
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 424,
+        "p_media": 0.14849056603773586,
+        "frecuencia": 0.19339622641509435
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 197,
+        "p_media": 0.4926040609137056,
+        "frecuencia": 0.5685279187817259
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 259,
+        "p_media": 0.8271196911196911,
+        "frecuencia": 0.7413127413127413
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2110,
+        "p_media": 0.997770616113744,
+        "frecuencia": 0.9890995260663508
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,08",
+      "spec": [
+       "k",
+       0.08
+      ],
+      "brier": 0.026843943736442517,
+      "n": 7376,
+      "brier_disputados": 0.06889376965901184,
+      "n_disputados": 2874,
+      "brier_disputados_cuota_menor_5": 0.0017576125907990316,
+      "n_disputados_cuota_menor_5": 413,
+      "p_media_disputados": 0.4354231036882394,
+      "frecuencia_disputados": 0.4363256784968685,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 4205,
+        "p_media": 0.002177645659928656,
+        "frecuencia": 0.002615933412604043
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 586,
+        "p_media": 0.15049317406143345,
+        "frecuencia": 0.1348122866894198
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 260,
+        "p_media": 0.4934769230769231,
+        "frecuencia": 0.573076923076923
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 341,
+        "p_media": 0.832,
+        "frecuencia": 0.8093841642228738
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 1984,
+        "p_media": 0.9970670362903226,
+        "frecuencia": 0.9954637096774194
+       }
+      ]
+     },
+     {
+      "ajuste": "k ajustada sin 2019n (0.082)",
+      "spec": [
+       "k",
+       0.0816
+      ],
+      "brier": 0.026853283893709327,
+      "n": 7376,
+      "brier_disputados": 0.06891771990257481,
+      "n_disputados": 2874,
+      "brier_disputados_cuota_menor_5": 0.001807491525423729,
+      "n_disputados_cuota_menor_5": 413,
+      "p_media_disputados": 0.4352954070981211,
+      "frecuencia_disputados": 0.4363256784968685,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 4194,
+        "p_media": 0.0022262756318550308,
+        "frecuencia": 0.002384358607534573
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 597,
+        "p_media": 0.15142378559463987,
+        "frecuencia": 0.13400335008375208
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 265,
+        "p_media": 0.4951849056603773,
+        "frecuencia": 0.5735849056603773
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 342,
+        "p_media": 0.83146783625731,
+        "frecuencia": 0.8128654970760234
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 1978,
+        "p_media": 0.9969014155712842,
+        "frecuencia": 0.9959555106167847
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,10",
+      "spec": [
+       "k",
+       0.1
+      ],
+      "brier": 0.027254378253796094,
+      "n": 7376,
+      "brier_disputados": 0.0699465431454419,
+      "n_disputados": 2874,
+      "brier_disputados_cuota_menor_5": 0.0024626174334140436,
+      "n_disputados_cuota_menor_5": 413,
+      "p_media_disputados": 0.433089422407794,
+      "frecuencia_disputados": 0.4363256784968685,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 4073,
+        "p_media": 0.0028971274245028237,
+        "frecuencia": 0.001718634912840658
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 707,
+        "p_media": 0.1576973125884017,
+        "frecuencia": 0.11315417256011315
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 318,
+        "p_media": 0.49395283018867925,
+        "frecuencia": 0.5691823899371069
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 431,
+        "p_media": 0.8367424593967518,
+        "frecuencia": 0.877030162412993
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 1847,
+        "p_media": 0.9964867352463455,
+        "frecuencia": 0.9983757444504602
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,12",
+      "spec": [
+       "k",
+       0.12
+      ],
+      "brier": 0.028239380965292844,
+      "n": 7376,
+      "brier_disputados": 0.07247138239387614,
+      "n_disputados": 2874,
+      "brier_disputados_cuota_menor_5": 0.0031806634382566586,
+      "n_disputados_cuota_menor_5": 413,
+      "p_media_disputados": 0.42830584551148226,
+      "frecuencia_disputados": 0.4363256784968685,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 3962,
+        "p_media": 0.00384452296819788,
+        "frecuencia": 0.000757193336698637
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 812,
+        "p_media": 0.16269950738916256,
+        "frecuencia": 0.10098522167487685
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 371,
+        "p_media": 0.4928059299191374,
+        "frecuencia": 0.5929919137466307
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 495,
+        "p_media": 0.8313757575757575,
+        "frecuencia": 0.9111111111111111
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 1736,
+        "p_media": 0.9952880184331797,
+        "frecuencia": 0.9988479262672811
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,15",
+      "spec": [
+       "k",
+       0.15
+      ],
+      "brier": 0.030419962039045553,
+      "n": 7376,
+      "brier_disputados": 0.07805576931106471,
+      "n_disputados": 2874,
+      "brier_disputados_cuota_menor_5": 0.004293268765133172,
+      "n_disputados_cuota_menor_5": 413,
+      "p_media_disputados": 0.4179418928322895,
+      "frecuencia_disputados": 0.4363256784968685,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 3806,
+        "p_media": 0.004990803993694167,
+        "frecuencia": 0.0002627430373095113
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 968,
+        "p_media": 0.16636363636363635,
+        "frecuencia": 0.08884297520661157
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 453,
+        "p_media": 0.49407726269315677,
+        "frecuencia": 0.6401766004415012
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 610,
+        "p_media": 0.8329360655737705,
+        "frecuencia": 0.940983606557377
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 1539,
+        "p_media": 0.9939499675113711,
+        "frecuencia": 1.0
+       }
+      ]
+     }
+    ],
+    "n_casos_base": 531,
+    "n_casos_encuestas": 7376,
+    "n_encuestas": 14
+   },
+   "2019a": {
+    "desde": "2016",
+    "base": [
+     {
+      "ajuste": "sin error (k=0)",
+      "spec": [
+       "k",
+       0.0
+      ],
+      "brier": 0.15342465753424658,
+      "n": 365,
+      "brier_disputados": 0.20588235294117646,
+      "n_disputados": 204,
+      "brier_disputados_cuota_menor_5": 0.030303030303030304,
+      "n_disputados_cuota_menor_5": 33,
+      "p_media_disputados": 0.6127450980392157,
+      "frecuencia_disputados": 0.6421568627450981,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 195,
+        "p_media": 0.0,
+        "frecuencia": 0.19487179487179487
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 170,
+        "p_media": 1.0,
+        "frecuencia": 0.8941176470588236
+       }
+      ]
+     },
+     {
+      "ajuste": "actual baja (k=0,031)",
+      "spec": [
+       "k",
+       0.03125
+      ],
+      "brier": 0.13963648493150685,
+      "n": 365,
+      "brier_disputados": 0.18121233823529412,
+      "n_disputados": 204,
+      "brier_disputados_cuota_menor_5": 0.03030669696969697,
+      "n_disputados_cuota_menor_5": 33,
+      "p_media_disputados": 0.6058431372549019,
+      "frecuencia_disputados": 0.6421568627450981,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 180,
+        "p_media": 0.0007416666666666667,
+        "frecuencia": 0.16666666666666666
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 12,
+        "p_media": 0.161875,
+        "frecuencia": 0.5
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 8,
+        "p_media": 0.553875,
+        "frecuencia": 0.625
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 15,
+        "p_media": 0.8205333333333333,
+        "frecuencia": 0.5333333333333333
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 150,
+        "p_media": 0.9985133333333333,
+        "frecuencia": 0.94
+       }
+      ]
+     },
+     {
+      "ajuste": "actual media (k=0,05)",
+      "spec": [
+       "k",
+       0.05
+      ],
+      "brier": 0.13212000479452055,
+      "n": 365,
+      "brier_disputados": 0.16776373406862746,
+      "n_disputados": 204,
+      "brier_disputados_cuota_menor_5": 0.03031408333333334,
+      "n_disputados_cuota_menor_5": 33,
+      "p_media_disputados": 0.6015808823529412,
+      "frecuencia_disputados": 0.6421568627450981,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 175,
+        "p_media": 0.0018085714285714287,
+        "frecuencia": 0.15428571428571428
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 14,
+        "p_media": 0.16164285714285714,
+        "frecuencia": 0.5714285714285714
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 15,
+        "p_media": 0.5205333333333333,
+        "frecuencia": 0.5333333333333333
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 20,
+        "p_media": 0.828525,
+        "frecuencia": 0.65
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 141,
+        "p_media": 0.9983297872340425,
+        "frecuencia": 0.950354609929078
+       }
+      ]
+     },
+     {
+      "ajuste": "actual alta (k=0,075)",
+      "spec": [
+       "k",
+       0.075
+      ],
+      "brier": 0.12481170753424659,
+      "n": 365,
+      "brier_disputados": 0.15468761397058825,
+      "n_disputados": 204,
+      "brier_disputados_cuota_menor_5": 0.030058977272727272,
+      "n_disputados_cuota_menor_5": 33,
+      "p_media_disputados": 0.5944877450980391,
+      "frecuencia_disputados": 0.6421568627450981,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 165,
+        "p_media": 0.0015757575757575758,
+        "frecuencia": 0.12727272727272726
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 22,
+        "p_media": 0.15413636363636363,
+        "frecuencia": 0.6363636363636364
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 22,
+        "p_media": 0.5157045454545455,
+        "frecuencia": 0.45454545454545453
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 23,
+        "p_media": 0.8100434782608695,
+        "frecuencia": 0.6521739130434783
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 133,
+        "p_media": 0.9973533834586465,
+        "frecuencia": 0.9774436090225563
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,10",
+      "spec": [
+       "k",
+       0.1
+      ],
+      "brier": 0.12044117397260273,
+      "n": 365,
+      "brier_disputados": 0.14690196078431372,
+      "n_disputados": 204,
+      "brier_disputados_cuota_menor_5": 0.02973309090909091,
+      "n_disputados_cuota_menor_5": 33,
+      "p_media_disputados": 0.5871372549019608,
+      "frecuencia_disputados": 0.6421568627450981,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 159,
+        "p_media": 0.002644654088050314,
+        "frecuencia": 0.11949685534591195
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 28,
+        "p_media": 0.17023214285714286,
+        "frecuencia": 0.5714285714285714
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 27,
+        "p_media": 0.5160555555555556,
+        "frecuencia": 0.5185185185185185
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 28,
+        "p_media": 0.8243392857142858,
+        "frecuencia": 0.7142857142857143
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 123,
+        "p_media": 0.9966829268292683,
+        "frecuencia": 0.983739837398374
+       }
+      ]
+     },
+     {
+      "ajuste": "k ajustada sin 2019a (0.130)",
+      "spec": [
+       "k",
+       0.1303
+      ],
+      "brier": 0.11764962054794521,
+      "n": 365,
+      "brier_disputados": 0.14209698651960787,
+      "n_disputados": 204,
+      "brier_disputados_cuota_menor_5": 0.02966037121212121,
+      "n_disputados_cuota_menor_5": 33,
+      "p_media_disputados": 0.576482843137255,
+      "frecuencia_disputados": 0.6421568627450981,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 154,
+        "p_media": 0.004366883116883117,
+        "frecuencia": 0.1038961038961039
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 33,
+        "p_media": 0.1845757575757576,
+        "frecuencia": 0.5757575757575758
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 31,
+        "p_media": 0.5050967741935484,
+        "frecuencia": 0.5483870967741935
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 35,
+        "p_media": 0.8229857142857143,
+        "frecuencia": 0.7714285714285715
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 112,
+        "p_media": 0.9954821428571429,
+        "frecuencia": 0.9910714285714286
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,15",
+      "spec": [
+       "k",
+       0.15
+      ],
+      "brier": 0.11674935136986303,
+      "n": 365,
+      "brier_disputados": 0.14058215931372547,
+      "n_disputados": 204,
+      "brier_disputados_cuota_menor_5": 0.02986926515151515,
+      "n_disputados_cuota_menor_5": 33,
+      "p_media_disputados": 0.5683529411764706,
+      "frecuencia_disputados": 0.6421568627450981,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 152,
+        "p_media": 0.005822368421052632,
+        "frecuencia": 0.10526315789473684
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 35,
+        "p_media": 0.192,
+        "frecuencia": 0.5428571428571428
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 39,
+        "p_media": 0.5194487179487179,
+        "frecuencia": 0.5641025641025641
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 37,
+        "p_media": 0.8555135135135135,
+        "frecuencia": 0.8648648648648649
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 102,
+        "p_media": 0.9963921568627452,
+        "frecuencia": 0.9901960784313726
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,20",
+      "spec": [
+       "k",
+       0.2
+      ],
+      "brier": 0.11738750547945206,
+      "n": 365,
+      "brier_disputados": 0.14179704044117647,
+      "n_disputados": 204,
+      "brier_disputados_cuota_menor_5": 0.03094562878787879,
+      "n_disputados_cuota_menor_5": 33,
+      "p_media_disputados": 0.5448651960784314,
+      "frecuencia_disputados": 0.6421568627450981,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 146,
+        "p_media": 0.007496575342465754,
+        "frecuencia": 0.1095890410958904
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 40,
+        "p_media": 0.18916249999999998,
+        "frecuencia": 0.45
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 45,
+        "p_media": 0.49065555555555557,
+        "frecuencia": 0.6
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 44,
+        "p_media": 0.8294431818181818,
+        "frecuencia": 0.9090909090909091
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 90,
+        "p_media": 0.9913111111111111,
+        "frecuencia": 0.9888888888888889
+       }
+      ]
+     },
+     {
+      "ajuste": "σ=0,25 constante",
+      "spec": [
+       "const",
+       0.25
+      ],
+      "brier": 0.1198794191780822,
+      "n": 365,
+      "brier_disputados": 0.1458626862745098,
+      "n_disputados": 204,
+      "brier_disputados_cuota_menor_5": 0.030318378787878787,
+      "n_disputados_cuota_menor_5": 33,
+      "p_media_disputados": 0.5846127450980392,
+      "frecuencia_disputados": 0.6421568627450981,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 161,
+        "p_media": 0.0015962732919254658,
+        "frecuencia": 0.12422360248447205
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 26,
+        "p_media": 0.18457692307692308,
+        "frecuencia": 0.5769230769230769
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 27,
+        "p_media": 0.525074074074074,
+        "frecuencia": 0.5185185185185185
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 32,
+        "p_media": 0.8305781250000001,
+        "frecuencia": 0.75
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 119,
+        "p_media": 0.9953739495798319,
+        "frecuencia": 0.9831932773109243
+       }
+      ]
+     },
+     {
+      "ajuste": "σ constante ajustada sin 2019a (0.40)",
+      "spec": [
+       "const",
+       0.3985
+      ],
+      "brier": 0.11578353561643835,
+      "n": 365,
+      "brier_disputados": 0.1385337818627451,
+      "n_disputados": 204,
+      "brier_disputados_cuota_menor_5": 0.03050510606060606,
+      "n_disputados_cuota_menor_5": 33,
+      "p_media_disputados": 0.5590147058823529,
+      "frecuencia_disputados": 0.6421568627450981,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 153,
+        "p_media": 0.001261437908496732,
+        "frecuencia": 0.09803921568627451
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 30,
+        "p_media": 0.20045000000000002,
+        "frecuencia": 0.6
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 43,
+        "p_media": 0.5131046511627907,
+        "frecuencia": 0.5581395348837209
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 43,
+        "p_media": 0.830593023255814,
+        "frecuencia": 0.8604651162790697
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 96,
+        "p_media": 0.9898072916666667,
+        "frecuencia": 1.0
+       }
+      ]
+     },
+     {
+      "ajuste": "σ=0,45 constante",
+      "spec": [
+       "const",
+       0.45
+      ],
+      "brier": 0.1156016198630137,
+      "n": 365,
+      "brier_disputados": 0.13820495588235293,
+      "n_disputados": 204,
+      "brier_disputados_cuota_menor_5": 0.030667901515151513,
+      "n_disputados_cuota_menor_5": 33,
+      "p_media_disputados": 0.5487450980392157,
+      "frecuencia_disputados": 0.6421568627450981,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 153,
+        "p_media": 0.0019052287581699345,
+        "frecuencia": 0.09803921568627451
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 28,
+        "p_media": 0.21044642857142856,
+        "frecuencia": 0.6071428571428571
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 48,
+        "p_media": 0.5026145833333333,
+        "frecuencia": 0.5833333333333334
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 52,
+        "p_media": 0.839173076923077,
+        "frecuencia": 0.8846153846153846
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 84,
+        "p_media": 0.9868214285714286,
+        "frecuencia": 1.0
+       }
+      ]
+     },
+     {
+      "ajuste": "σ=c·s^-a (todo)",
+      "spec": [
+       "pow",
+       0.3261,
+       0.08
+      ],
+      "brier": 0.1162482109589041,
+      "n": 365,
+      "brier_disputados": 0.1393655649509804,
+      "n_disputados": 204,
+      "brier_disputados_cuota_menor_5": 0.03057353787878788,
+      "n_disputados_cuota_menor_5": 33,
+      "p_media_disputados": 0.5635612745098039,
+      "frecuencia_disputados": 0.6421568627450981,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 154,
+        "p_media": 0.0014740259740259741,
+        "frecuencia": 0.1038961038961039
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 30,
+        "p_media": 0.19790000000000002,
+        "frecuencia": 0.5666666666666667
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 40,
+        "p_media": 0.5130250000000001,
+        "frecuencia": 0.575
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 42,
+        "p_media": 0.8334285714285714,
+        "frecuencia": 0.8571428571428571
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 99,
+        "p_media": 0.9926262626262626,
+        "frecuencia": 0.98989898989899
+       }
+      ]
+     }
+    ],
+    "encuestas": [
+     {
+      "ajuste": "sin error (k=0)",
+      "spec": [
+       "k",
+       0.0
+      ],
+      "brier": 0.07210031347962383,
+      "n": 5104,
+      "brier_disputados": 0.1347985347985348,
+      "n_disputados": 2730,
+      "brier_disputados_cuota_menor_5": 0.005988023952095809,
+      "n_disputados_cuota_menor_5": 334,
+      "p_media_disputados": 0.5208791208791209,
+      "frecuencia_disputados": 0.5582417582417583,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 2552,
+        "p_media": 0.0,
+        "frecuencia": 0.0920846394984326
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2552,
+        "p_media": 1.0,
+        "frecuencia": 0.947884012539185
+       }
+      ]
+     },
+     {
+      "ajuste": "actual baja (k=0,025)",
+      "spec": [
+       "k",
+       0.025
+      ],
+      "brier": 0.0617499224137931,
+      "n": 5104,
+      "brier_disputados": 0.115447473992674,
+      "n_disputados": 2730,
+      "brier_disputados_cuota_menor_5": 0.0046034461077844304,
+      "n_disputados_cuota_menor_5": 334,
+      "p_media_disputados": 0.5191157509157509,
+      "frecuencia_disputados": 0.5582417582417583,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 2386,
+        "p_media": 0.0010389773679798826,
+        "frecuencia": 0.06119027661357921
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 127,
+        "p_media": 0.15951181102362205,
+        "frecuencia": 0.47244094488188976
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 81,
+        "p_media": 0.48997530864197536,
+        "frecuencia": 0.6790123456790124
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 152,
+        "p_media": 0.8504868421052632,
+        "frecuencia": 0.6513157894736842
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2358,
+        "p_media": 0.9989342663273961,
+        "frecuencia": 0.9728583545377438
+       }
+      ]
+     },
+     {
+      "ajuste": "actual media (k=0,04)",
+      "spec": [
+       "k",
+       0.04
+      ],
+      "brier": 0.056696744318181815,
+      "n": 5104,
+      "brier_disputados": 0.10600006703296704,
+      "n_disputados": 2730,
+      "brier_disputados_cuota_menor_5": 0.004290589820359281,
+      "n_disputados_cuota_menor_5": 334,
+      "p_media_disputados": 0.5161043956043956,
+      "frecuencia_disputados": 0.5582417582417583,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 2275,
+        "p_media": 0.001992527472527473,
+        "frecuencia": 0.04087912087912088
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 220,
+        "p_media": 0.15703636363636364,
+        "frecuencia": 0.4681818181818182
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 128,
+        "p_media": 0.4973671875,
+        "frecuencia": 0.640625
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 243,
+        "p_media": 0.8345144032921811,
+        "frecuencia": 0.7366255144032922
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2238,
+        "p_media": 0.9979597855227883,
+        "frecuencia": 0.9816800714924039
+       }
+      ]
+     },
+     {
+      "ajuste": "actual alta / k=0,06",
+      "spec": [
+       "k",
+       0.06
+      ],
+      "brier": 0.0522989157523511,
+      "n": 5104,
+      "brier_disputados": 0.09777789963369964,
+      "n_disputados": 2730,
+      "brier_disputados_cuota_menor_5": 0.0040026167664670665,
+      "n_disputados_cuota_menor_5": 334,
+      "p_media_disputados": 0.5116212454212454,
+      "frecuencia_disputados": 0.5582417582417583,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 2112,
+        "p_media": 0.0031695075757575755,
+        "frecuencia": 0.017992424242424244
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 364,
+        "p_media": 0.15447802197802196,
+        "frecuencia": 0.4065934065934066
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 198,
+        "p_media": 0.5030757575757575,
+        "frecuencia": 0.6262626262626263
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 362,
+        "p_media": 0.8331988950276243,
+        "frecuencia": 0.7983425414364641
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2068,
+        "p_media": 0.9973766924564796,
+        "frecuencia": 0.9937137330754352
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,08",
+      "spec": [
+       "k",
+       0.08
+      ],
+      "brier": 0.05039923079937304,
+      "n": 5104,
+      "brier_disputados": 0.09422625384615385,
+      "n_disputados": 2730,
+      "brier_disputados_cuota_menor_5": 0.003869233532934132,
+      "n_disputados_cuota_menor_5": 334,
+      "p_media_disputados": 0.5069373626373627,
+      "frecuencia_disputados": 0.5582417582417583,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 1965,
+        "p_media": 0.004121119592875319,
+        "frecuencia": 0.004580152671755725
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 487,
+        "p_media": 0.15480492813141683,
+        "frecuencia": 0.3470225872689938
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 287,
+        "p_media": 0.4999442508710802,
+        "frecuencia": 0.6132404181184669
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 439,
+        "p_media": 0.8337198177676537,
+        "frecuencia": 0.8610478359908884
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 1926,
+        "p_media": 0.9973857736240913,
+        "frecuencia": 0.9979231568016614
+       }
+      ]
+     },
+     {
+      "ajuste": "k ajustada sin 2019a (0.074)",
+      "spec": [
+       "k",
+       0.0741
+      ],
+      "brier": 0.0507492321708464,
+      "n": 5104,
+      "brier_disputados": 0.09488061575091576,
+      "n_disputados": 2730,
+      "brier_disputados_cuota_menor_5": 0.003891395209580838,
+      "n_disputados_cuota_menor_5": 334,
+      "p_media_disputados": 0.5083358974358975,
+      "frecuencia_disputados": 0.5582417582417583,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 1996,
+        "p_media": 0.0035781563126252506,
+        "frecuencia": 0.0070140280561122245
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 462,
+        "p_media": 0.1518290043290043,
+        "frecuencia": 0.35714285714285715
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 266,
+        "p_media": 0.5031466165413534,
+        "frecuencia": 0.6203007518796992
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 421,
+        "p_media": 0.8372850356294537,
+        "frecuencia": 0.8479809976247031
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 1959,
+        "p_media": 0.997517100561511,
+        "frecuencia": 0.996937212863706
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,10",
+      "spec": [
+       "k",
+       0.1
+      ],
+      "brier": 0.05015561246081505,
+      "n": 5104,
+      "brier_disputados": 0.09377062307692308,
+      "n_disputados": 2730,
+      "brier_disputados_cuota_menor_5": 0.003899805389221557,
+      "n_disputados_cuota_menor_5": 334,
+      "p_media_disputados": 0.5013930402930402,
+      "frecuencia_disputados": 0.5582417582417583,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 1830,
+        "p_media": 0.005099453551912569,
+        "frecuencia": 0.002185792349726776
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 602,
+        "p_media": 0.15445348837209302,
+        "frecuencia": 0.2691029900332226
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 362,
+        "p_media": 0.49422928176795583,
+        "frecuencia": 0.6243093922651933
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 487,
+        "p_media": 0.8251334702258727,
+        "frecuencia": 0.9034907597535934
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 1823,
+        "p_media": 0.9961656609983544,
+        "frecuencia": 0.9994514536478333
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,12",
+      "spec": [
+       "k",
+       0.12
+      ],
+      "brier": 0.05108553898902821,
+      "n": 5104,
+      "brier_disputados": 0.09550793406593408,
+      "n_disputados": 2730,
+      "brier_disputados_cuota_menor_5": 0.003967829341317366,
+      "n_disputados_cuota_menor_5": 334,
+      "p_media_disputados": 0.49438754578754573,
+      "frecuencia_disputados": 0.5582417582417583,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 1718,
+        "p_media": 0.006118160651920838,
+        "frecuencia": 0.0005820721769499418
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 707,
+        "p_media": 0.15846251768033948,
+        "frecuencia": 0.22772277227722773
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 422,
+        "p_media": 0.49356398104265403,
+        "frecuencia": 0.6516587677725119
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 547,
+        "p_media": 0.8210639853747715,
+        "frecuencia": 0.926873857404022
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 1710,
+        "p_media": 0.9946099415204678,
+        "frecuencia": 1.0
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,15",
+      "spec": [
+       "k",
+       0.15
+      ],
+      "brier": 0.05394413048589342,
+      "n": 5104,
+      "brier_disputados": 0.10084296117216117,
+      "n_disputados": 2730,
+      "brier_disputados_cuota_menor_5": 0.004414326347305389,
+      "n_disputados_cuota_menor_5": 334,
+      "p_media_disputados": 0.4808981684981685,
+      "frecuencia_disputados": 0.5582417582417583,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 1584,
+        "p_media": 0.007574494949494949,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 823,
+        "p_media": 0.16015309842041314,
+        "frecuencia": 0.1822600243013366
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 526,
+        "p_media": 0.48926615969581744,
+        "frecuencia": 0.6768060836501901
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 666,
+        "p_media": 0.825602102102102,
+        "frecuencia": 0.9654654654654654
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 1505,
+        "p_media": 0.9924139534883721,
+        "frecuencia": 1.0
+       }
+      ]
+     }
+    ],
+    "n_casos_base": 365,
+    "n_casos_encuestas": 5104,
+    "n_encuestas": 14
+   },
+   "2016": {
+    "desde": "2015",
+    "base": [
+     {
+      "ajuste": "sin error (k=0)",
+      "spec": [
+       "k",
+       0.0
+      ],
+      "brier": 0.029850746268656716,
+      "n": 402,
+      "brier_disputados": 0.0547945205479452,
+      "n_disputados": 219,
+      "brier_disputados_cuota_menor_5": 0.0,
+      "n_disputados_cuota_menor_5": 44,
+      "p_media_disputados": 0.5844748858447488,
+      "frecuencia_disputados": 0.5570776255707762,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 226,
+        "p_media": 0.0,
+        "frecuencia": 0.01327433628318584
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 176,
+        "p_media": 1.0,
+        "frecuencia": 0.9488636363636364
+       }
+      ]
+     },
+     {
+      "ajuste": "actual baja (k=0,031)",
+      "spec": [
+       "k",
+       0.03125
+      ],
+      "brier": 0.022101975124378108,
+      "n": 402,
+      "brier_disputados": 0.04057074885844748,
+      "n_disputados": 219,
+      "brier_disputados_cuota_menor_5": 0.0,
+      "n_disputados_cuota_menor_5": 44,
+      "p_media_disputados": 0.5851187214611872,
+      "frecuencia_disputados": 0.5570776255707762,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 215,
+        "p_media": 0.0013069767441860464,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 9,
+        "p_media": 0.15988888888888889,
+        "frecuencia": 0.2222222222222222
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 4,
+        "p_media": 0.5,
+        "frecuencia": 0.5
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 8,
+        "p_media": 0.8475625,
+        "frecuencia": 0.5
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 166,
+        "p_media": 0.9978343373493976,
+        "frecuencia": 0.9759036144578314
+       }
+      ]
+     },
+     {
+      "ajuste": "actual media (k=0,05)",
+      "spec": [
+       "k",
+       0.05
+      ],
+      "brier": 0.020034966417910447,
+      "n": 402,
+      "brier_disputados": 0.03677651369863014,
+      "n_disputados": 219,
+      "brier_disputados_cuota_menor_5": 8.977272727272727e-06,
+      "n_disputados_cuota_menor_5": 44,
+      "p_media_disputados": 0.5827031963470319,
+      "frecuencia_disputados": 0.5570776255707762,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 202,
+        "p_media": 0.0010198019801980198,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 19,
+        "p_media": 0.13397368421052633,
+        "frecuencia": 0.05263157894736842
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 9,
+        "p_media": 0.46861111111111114,
+        "frecuencia": 0.3333333333333333
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 22,
+        "p_media": 0.8647954545454546,
+        "frecuencia": 0.7727272727272727
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 150,
+        "p_media": 0.9974500000000001,
+        "frecuencia": 0.9933333333333333
+       }
+      ]
+     },
+     {
+      "ajuste": "actual alta (k=0,075)",
+      "spec": [
+       "k",
+       0.075
+      ],
+      "brier": 0.02084309577114428,
+      "n": 402,
+      "brier_disputados": 0.0382599098173516,
+      "n_disputados": 219,
+      "brier_disputados_cuota_menor_5": 0.00011714204545454545,
+      "n_disputados_cuota_menor_5": 44,
+      "p_media_disputados": 0.5769155251141552,
+      "frecuencia_disputados": 0.5570776255707762,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 194,
+        "p_media": 0.001634020618556701,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 26,
+        "p_media": 0.17048076923076924,
+        "frecuencia": 0.038461538461538464
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 10,
+        "p_media": 0.45185,
+        "frecuencia": 0.3
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 37,
+        "p_media": 0.8248243243243243,
+        "frecuencia": 0.8378378378378378
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 135,
+        "p_media": 0.9967888888888888,
+        "frecuencia": 1.0
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,10",
+      "spec": [
+       "k",
+       0.1
+      ],
+      "brier": 0.02313161567164179,
+      "n": 402,
+      "brier_disputados": 0.04246045319634703,
+      "n_disputados": 219,
+      "brier_disputados_cuota_menor_5": 0.0003639886363636363,
+      "n_disputados_cuota_menor_5": 44,
+      "p_media_disputados": 0.5695730593607307,
+      "frecuencia_disputados": 0.5570776255707762,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 190,
+        "p_media": 0.0029236842105263157,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 27,
+        "p_media": 0.18544444444444444,
+        "frecuencia": 0.037037037037037035
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 20,
+        "p_media": 0.49647500000000006,
+        "frecuencia": 0.4
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 39,
+        "p_media": 0.8132435897435898,
+        "frecuencia": 0.8974358974358975
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 126,
+        "p_media": 0.9966309523809525,
+        "frecuencia": 1.0
+       }
+      ]
+     },
+     {
+      "ajuste": "k ajustada sin 2016 (0.168)",
+      "spec": [
+       "k",
+       0.1681
+      ],
+      "brier": 0.03087215422885572,
+      "n": 402,
+      "brier_disputados": 0.05666074885844749,
+      "n_disputados": 219,
+      "brier_disputados_cuota_menor_5": 0.0012042613636363637,
+      "n_disputados_cuota_menor_5": 44,
+      "p_media_disputados": 0.5411050228310502,
+      "frecuencia_disputados": 0.5570776255707762,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 178,
+        "p_media": 0.006247191011235956,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 36,
+        "p_media": 0.18070833333333333,
+        "frecuencia": 0.027777777777777776
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 39,
+        "p_media": 0.5048076923076923,
+        "frecuencia": 0.5384615384615384
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 43,
+        "p_media": 0.7992209302325581,
+        "frecuencia": 0.9767441860465116
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 106,
+        "p_media": 0.9924009433962264,
+        "frecuencia": 1.0
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,15",
+      "spec": [
+       "k",
+       0.15
+      ],
+      "brier": 0.02876370771144279,
+      "n": 402,
+      "brier_disputados": 0.052793099315068495,
+      "n_disputados": 219,
+      "brier_disputados_cuota_menor_5": 0.0010121875,
+      "n_disputados_cuota_menor_5": 44,
+      "p_media_disputados": 0.5495639269406393,
+      "frecuencia_disputados": 0.5570776255707762,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 180,
+        "p_media": 0.005688888888888889,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 35,
+        "p_media": 0.18234285714285714,
+        "frecuencia": 0.02857142857142857
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 34,
+        "p_media": 0.5085588235294117,
+        "frecuencia": 0.5
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 45,
+        "p_media": 0.8106222222222222,
+        "frecuencia": 0.9777777777777777
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 108,
+        "p_media": 0.9952222222222223,
+        "frecuencia": 1.0
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,20",
+      "spec": [
+       "k",
+       0.2
+      ],
+      "brier": 0.034660941542288555,
+      "n": 402,
+      "brier_disputados": 0.06361245205479452,
+      "n_disputados": 219,
+      "brier_disputados_cuota_menor_5": 0.0014028352272727274,
+      "n_disputados_cuota_menor_5": 44,
+      "p_media_disputados": 0.5247716894977169,
+      "frecuencia_disputados": 0.5570776255707762,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 176,
+        "p_media": 0.006565340909090909,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 39,
+        "p_media": 0.19032051282051282,
+        "frecuencia": 0.02564102564102564
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 46,
+        "p_media": 0.5089239130434783,
+        "frecuencia": 0.6304347826086957
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 48,
+        "p_media": 0.8170625,
+        "frecuencia": 0.9791666666666666
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 93,
+        "p_media": 0.9901021505376344,
+        "frecuencia": 1.0
+       }
+      ]
+     },
+     {
+      "ajuste": "σ=0,25 constante",
+      "spec": [
+       "const",
+       0.25
+      ],
+      "brier": 0.023869968283582087,
+      "n": 402,
+      "brier_disputados": 0.043816106164383556,
+      "n_disputados": 219,
+      "brier_disputados_cuota_menor_5": 3.3522727272727273e-07,
+      "n_disputados_cuota_menor_5": 44,
+      "p_media_disputados": 0.5655958904109589,
+      "frecuencia_disputados": 0.5570776255707762,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 192,
+        "p_media": 0.0010989583333333333,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 25,
+        "p_media": 0.19914,
+        "frecuencia": 0.04
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 19,
+        "p_media": 0.5020526315789473,
+        "frecuencia": 0.3157894736842105
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 45,
+        "p_media": 0.8155666666666667,
+        "frecuencia": 0.9333333333333333
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 121,
+        "p_media": 0.9953429752066115,
+        "frecuencia": 1.0
+       }
+      ]
+     },
+     {
+      "ajuste": "σ constante ajustada sin 2016 (0.41)",
+      "spec": [
+       "const",
+       0.4079
+      ],
+      "brier": 0.03166393097014925,
+      "n": 402,
+      "brier_disputados": 0.05812154337899544,
+      "n_disputados": 219,
+      "brier_disputados_cuota_menor_5": 7.510227272727273e-05,
+      "n_disputados_cuota_menor_5": 44,
+      "p_media_disputados": 0.5347990867579908,
+      "frecuencia_disputados": 0.5570776255707762,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 186,
+        "p_media": 0.0016720430107526882,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 27,
+        "p_media": 0.2210740740740741,
+        "frecuencia": 0.037037037037037035
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 38,
+        "p_media": 0.5116447368421052,
+        "frecuencia": 0.5
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 56,
+        "p_media": 0.810125,
+        "frecuencia": 0.9821428571428571
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 95,
+        "p_media": 0.9889052631578947,
+        "frecuencia": 1.0
+       }
+      ]
+     },
+     {
+      "ajuste": "σ=0,45 constante",
+      "spec": [
+       "const",
+       0.45
+      ],
+      "brier": 0.03377023507462686,
+      "n": 402,
+      "brier_disputados": 0.06198184703196347,
+      "n_disputados": 219,
+      "brier_disputados_cuota_menor_5": 0.00016336931818181817,
+      "n_disputados_cuota_menor_5": 44,
+      "p_media_disputados": 0.5258401826484018,
+      "frecuencia_disputados": 0.5570776255707762,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 183,
+        "p_media": 0.0016147540983606557,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 28,
+        "p_media": 0.206,
+        "frecuencia": 0.03571428571428571
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 46,
+        "p_media": 0.5138804347826087,
+        "frecuencia": 0.5434782608695652
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 57,
+        "p_media": 0.8170964912280702,
+        "frecuencia": 0.9824561403508771
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 88,
+        "p_media": 0.9848465909090909,
+        "frecuencia": 1.0
+       }
+      ]
+     },
+     {
+      "ajuste": "σ=c·s^-a (todo)",
+      "spec": [
+       "pow",
+       0.3261,
+       0.08
+      ],
+      "brier": 0.02981491355721393,
+      "n": 402,
+      "brier_disputados": 0.05472851712328767,
+      "n_disputados": 219,
+      "brier_disputados_cuota_menor_5": 8.071022727272727e-05,
+      "n_disputados_cuota_menor_5": 44,
+      "p_media_disputados": 0.5424360730593607,
+      "frecuencia_disputados": 0.5570776255707762,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 187,
+        "p_media": 0.0017058823529411764,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 27,
+        "p_media": 0.21875925925925926,
+        "frecuencia": 0.037037037037037035
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 35,
+        "p_media": 0.5145428571428572,
+        "frecuencia": 0.4857142857142857
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 50,
+        "p_media": 0.8070999999999999,
+        "frecuencia": 0.98
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 103,
+        "p_media": 0.9919805825242719,
+        "frecuencia": 1.0
+       }
+      ]
+     }
+    ],
+    "encuestas": [
+     {
+      "ajuste": "sin error (k=0)",
+      "spec": [
+       "k",
+       0.0
+      ],
+      "brier": 0.029673063255152808,
+      "n": 5628,
+      "brier_disputados": 0.07553143374038897,
+      "n_disputados": 2211,
+      "brier_disputados_cuota_menor_5": 0.0,
+      "n_disputados_cuota_menor_5": 397,
+      "p_media_disputados": 0.5486205336951605,
+      "frecuencia_disputados": 0.5101763907734057,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 3163,
+        "p_media": 0.0,
+        "frecuencia": 0.012962377489724945
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2465,
+        "p_media": 1.0,
+        "frecuencia": 0.9488843813387424
+       }
+      ]
+     },
+     {
+      "ajuste": "actual baja (k=0,025)",
+      "spec": [
+       "k",
+       0.025
+      ],
+      "brier": 0.02464341222459133,
+      "n": 5628,
+      "brier_disputados": 0.06272868566259611,
+      "n_disputados": 2211,
+      "brier_disputados_cuota_menor_5": 0.0,
+      "n_disputados_cuota_menor_5": 397,
+      "p_media_disputados": 0.5498480325644505,
+      "frecuencia_disputados": 0.5101763907734057,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 3000,
+        "p_media": 0.0007376666666666667,
+        "frecuencia": 0.0026666666666666666
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 128,
+        "p_media": 0.1553046875,
+        "frecuencia": 0.171875
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 63,
+        "p_media": 0.4867619047619048,
+        "frecuencia": 0.38095238095238093
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 126,
+        "p_media": 0.851,
+        "frecuencia": 0.6746031746031746
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2311,
+        "p_media": 0.9985850281263522,
+        "frecuencia": 0.9697100822154912
+       }
+      ]
+     },
+     {
+      "ajuste": "actual media (k=0,04)",
+      "spec": [
+       "k",
+       0.04
+      ],
+      "brier": 0.023228234186211796,
+      "n": 5628,
+      "brier_disputados": 0.05912641429217548,
+      "n_disputados": 2211,
+      "brier_disputados_cuota_menor_5": 7.052896725440806e-07,
+      "n_disputados_cuota_menor_5": 397,
+      "p_media_disputados": 0.5468376300316599,
+      "frecuencia_disputados": 0.5101763907734057,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 2906,
+        "p_media": 0.0009525120440467998,
+        "frecuencia": 0.00034411562284927734
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 205,
+        "p_media": 0.1715219512195122,
+        "frecuencia": 0.11219512195121951
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 101,
+        "p_media": 0.48774257425742573,
+        "frecuencia": 0.4158415841584158
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 246,
+        "p_media": 0.8471382113821139,
+        "frecuencia": 0.7032520325203252
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2170,
+        "p_media": 0.9979124423963133,
+        "frecuencia": 0.9866359447004608
+       }
+      ]
+     },
+     {
+      "ajuste": "actual alta / k=0,06",
+      "spec": [
+       "k",
+       0.06
+      ],
+      "brier": 0.023173388237384504,
+      "n": 5628,
+      "brier_disputados": 0.058986806422433286,
+      "n_disputados": 2211,
+      "brier_disputados_cuota_menor_5": 4.245088161209068e-05,
+      "n_disputados_cuota_menor_5": 397,
+      "p_media_disputados": 0.5413527815468114,
+      "frecuencia_disputados": 0.5101763907734057,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 2793,
+        "p_media": 0.001393483709273183,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 280,
+        "p_media": 0.1705357142857143,
+        "frecuencia": 0.08214285714285714
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 179,
+        "p_media": 0.4848938547486034,
+        "frecuencia": 0.40782122905027934
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 376,
+        "p_media": 0.8419255319148937,
+        "frecuencia": 0.7845744680851063
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 2000,
+        "p_media": 0.9969645,
+        "frecuencia": 0.9945
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,08",
+      "spec": [
+       "k",
+       0.08
+      ],
+      "brier": 0.024377762793176973,
+      "n": 5628,
+      "brier_disputados": 0.062052458163726815,
+      "n_disputados": 2211,
+      "brier_disputados_cuota_menor_5": 0.0002768816120906801,
+      "n_disputados_cuota_menor_5": 397,
+      "p_media_disputados": 0.5346481230212573,
+      "frecuencia_disputados": 0.5101763907734057,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 2697,
+        "p_media": 0.0016318131256952168,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 345,
+        "p_media": 0.17274492753623188,
+        "frecuencia": 0.043478260869565216
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 253,
+        "p_media": 0.48770355731225296,
+        "frecuencia": 0.43478260869565216
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 488,
+        "p_media": 0.8345020491803279,
+        "frecuencia": 0.8483606557377049
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 1845,
+        "p_media": 0.9970292682926829,
+        "frecuencia": 0.9978319783197832
+       }
+      ]
+     },
+     {
+      "ajuste": "k ajustada sin 2016 (0.085)",
+      "spec": [
+       "k",
+       0.0848
+      ],
+      "brier": 0.024767124555792466,
+      "n": 5628,
+      "brier_disputados": 0.06304345545002261,
+      "n_disputados": 2211,
+      "brier_disputados_cuota_menor_5": 0.0003611889168765743,
+      "n_disputados_cuota_menor_5": 397,
+      "p_media_disputados": 0.5327788331071913,
+      "frecuencia_disputados": 0.5101763907734057,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 2672,
+        "p_media": 0.0016085329341317366,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 364,
+        "p_media": 0.17195054945054947,
+        "frecuencia": 0.04120879120879121
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 266,
+        "p_media": 0.4859511278195489,
+        "frecuencia": 0.42857142857142855
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 505,
+        "p_media": 0.8288475247524753,
+        "frecuencia": 0.8594059405940594
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 1821,
+        "p_media": 0.9969181768259198,
+        "frecuencia": 0.9978034047226798
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,10",
+      "spec": [
+       "k",
+       0.1
+      ],
+      "brier": 0.02621773933901919,
+      "n": 5628,
+      "brier_disputados": 0.06673517186793307,
+      "n_disputados": 2211,
+      "brier_disputados_cuota_menor_5": 0.0005988513853904282,
+      "n_disputados_cuota_menor_5": 397,
+      "p_media_disputados": 0.5260058796924468,
+      "frecuencia_disputados": 0.5101763907734057,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 2641,
+        "p_media": 0.0024146156758803484,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 378,
+        "p_media": 0.1819100529100529,
+        "frecuencia": 0.03439153439153439
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 323,
+        "p_media": 0.4901547987616099,
+        "frecuencia": 0.44272445820433437
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 540,
+        "p_media": 0.819374074074074,
+        "frecuencia": 0.8851851851851852
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 1746,
+        "p_media": 0.9965349369988545,
+        "frecuencia": 1.0
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,12",
+      "spec": [
+       "k",
+       0.12
+      ],
+      "brier": 0.02824838983653163,
+      "n": 5628,
+      "brier_disputados": 0.07190084441429218,
+      "n_disputados": 2211,
+      "brier_disputados_cuota_menor_5": 0.0010410680100755667,
+      "n_disputados_cuota_menor_5": 397,
+      "p_media_disputados": 0.5160764360018092,
+      "frecuencia_disputados": 0.5101763907734057,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 2595,
+        "p_media": 0.00386897880539499,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 406,
+        "p_media": 0.18573645320197046,
+        "frecuencia": 0.029556650246305417
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 405,
+        "p_media": 0.4966123456790123,
+        "frecuencia": 0.47160493827160493
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 579,
+        "p_media": 0.815692573402418,
+        "frecuencia": 0.9222797927461139
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 1643,
+        "p_media": 0.9963645769933049,
+        "frecuencia": 1.0
+       }
+      ]
+     },
+     {
+      "ajuste": "k=0,15",
+      "spec": [
+       "k",
+       0.15
+      ],
+      "brier": 0.03144675373134328,
+      "n": 5628,
+      "brier_disputados": 0.08002989190411579,
+      "n_disputados": 2211,
+      "brier_disputados_cuota_menor_5": 0.001682146095717884,
+      "n_disputados_cuota_menor_5": 397,
+      "p_media_disputados": 0.4990144730890999,
+      "frecuencia_disputados": 0.5101763907734057,
+      "fiabilidad": [
+       {
+        "tramo": "muy improbable (<5 %)",
+        "n": 2536,
+        "p_media": 0.0055449526813880125,
+        "frecuencia": 0.0
+       },
+       {
+        "tramo": "improbable (5–33 %)",
+        "n": 449,
+        "p_media": 0.18829621380846326,
+        "frecuencia": 0.022271714922048998
+       },
+       {
+        "tramo": "en disputa (33–66 %)",
+        "n": 535,
+        "p_media": 0.5047831775700935,
+        "frecuencia": 0.5327102803738317
+       },
+       {
+        "tramo": "probable (66–95 %)",
+        "n": 583,
+        "p_media": 0.8132315608919382,
+        "frecuencia": 0.9605488850771869
+       },
+       {
+        "tramo": "casi seguro (≥95 %)",
+        "n": 1525,
+        "p_media": 0.9950308196721311,
+        "frecuencia": 1.0
+       }
+      ]
+     }
+    ],
+    "n_casos_base": 402,
+    "n_casos_encuestas": 5628,
+    "n_encuestas": 14
+   }
+  }
+ },
+ "k_ajustada": {
+  "base_k": 0.14940893546081144,
+  "base_sigma_constante": 0.3977754042809515,
+  "base_potencia": {
+   "c": 0.32614306995820164,
+   "a": 0.08
+  },
+  "encuestas_k": 0.0806759867642429
+ }
+}

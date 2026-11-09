@@ -84,9 +84,10 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   Hecho (9-nov): AIReF, STC 31/2010 (BOE), anuario de Interior y estudios revisados por pares sustituyen a
   la prensa; corrigieron cifras de erc-02, erc-01, erc-05 y bng-11. Quedan erc-08 (web de la Generalitat
   bloquea lectores automáticos), cc-02, cc-09 y algunas fuentes de prensa menores.
-- [ ] **14. [Yo] Calibrar la incertidumbre del paso 3 con datos históricos** (error de encuestas y
+- [x] **14. [Yo] Calibrar la incertidumbre del paso 3 con datos históricos** (error de encuestas y
   cambios entre elecciones por provincia) en lugar de los parámetros razonados actuales (k = 0,04 /
-  0,05).
+  0,05). Hecho (9-nov): k = 0,08 con encuestas y 0,15 con la base de 2023, calibrado con 2015–2023;
+  el modelo anterior era demasiado confiado (lo «improbable» salía el 40 % de las veces en 2023).
 - [ ] **15. [Yo] Candidaturas «sin base» en el paso 3** (SALF en el escenario 2023, Alhora, Drago,
   NEX, Adelante Andalucía fuera de Cádiz…): valorar un perfil de las europeas 2024 u otra referencia
   documentada. Hecho en parte (9-nov): la web ofrece con un clic los escenarios que sí la estiman (p. ej.

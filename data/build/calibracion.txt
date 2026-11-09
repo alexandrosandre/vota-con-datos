@@ -1,0 +1,298 @@
+CALIBRACIÓN DE k — generado por pipeline/calibracion.py (no editar a mano)
+
+Contraste Ministerio vs BOE (total estatal) 2015: válidos 25211313 / 25211313, blancos 188132 / 188132 -> OK
+Contraste Ministerio vs BOE (total estatal) 2019a: válidos 26201371 / 26201371, blancos 199836 / 199836 -> OK
+Contraste Ministerio vs BOE (total estatal) 2019n: válidos 24258228 / 24258228, blancos 217227 / 217227 -> OK
+Aviso: PROV_02_201512_1.xlsx prov 25: 316 votos a candidaturas sin desglose por lista en el fichero del Ministerio
+Aviso: PROV_02_201512_1.xlsx prov 08: 5493 votos a candidaturas sin desglose por lista en el fichero del Ministerio
+Aviso: PROV_02_201512_1.xlsx prov 43: 705 votos a candidaturas sin desglose por lista en el fichero del Ministerio
+Aviso: PROV_02_201512_1.xlsx prov 17: 602 votos a candidaturas sin desglose por lista en el fichero del Ministerio
+Aviso: PROV_02_201512_1.xlsx prov 46: 13 votos a candidaturas sin desglose por lista en el fichero del Ministerio
+
+== 2. Base: log(s_t/s_t-1) por provincia y partido (etiquetas comparables, s_t-1 >= 0,5 %)
+par             años     n       k  σ const k bloques   k residuo
+2015→2016        0.5   255   0.053    0.363     0.060       0.019
+2016→2019a       2.8   274   0.196    0.396     0.196       0.065
+2019a→2019n      0.5   335   0.159    0.440     0.158       0.038
+2019n→2023       3.7   226   0.143    0.371     0.117       0.067
+Formas (todos los pares, n=1090):
+  k/sqrt(s)          {"k": 0.1494}                            AIC 1509.6
+  constante          {"sigma": 0.3978}                        AIC 1085.6
+  c*s^-a             {"c": 0.3261, "a": 0.08}                 AIC 1064.2
+  sqrt(a^2+b^2/s)    {"a": 0.3, "b": 0.04}                    AIC 1134.7
+Formas (solo pares de ~3 años):
+  k/sqrt(s)          {"k": 0.1738}                            AIC 783.8
+  constante          {"sigma": 0.3846}                        AIC 465.5
+  c*s^-a             {"c": 0.3846, "a": 0.0}                  AIC 467.5
+  sqrt(a^2+b^2/s)    {"a": 0.3, "b": 0.018}                   AIC 536.7
+Por tramos de cuota (total):
+  cuota            n  rms log σ robust  k impl. k robust   rms pts
+   0.5– 1.0 %   154    0.489    0.402    0.041    0.034      0.25
+   1.0– 2.0 %    71    0.336    0.336    0.038    0.039      0.34
+   2.0– 5.0 %    40    0.500    0.614    0.094    0.125      2.08
+   5.0–10.0 %    76    0.415    0.380    0.115    0.106      2.92
+  10.0–20.0 %   345    0.432    0.354    0.170    0.141      5.52
+  20.0–35.0 %   321    0.291    0.211    0.149    0.115      7.08
+  35.0–100.0 %    83    0.398    0.220    0.257    0.138     12.78
+Por tramos de cuota (residuo tras swing nacional real):
+  cuota            n  rms log σ robust  k impl. k robust   rms pts
+   0.5– 1.0 %   154    0.152    0.121    0.012    0.010      0.11
+   1.0– 2.0 %    71    0.129    0.098    0.014    0.011      0.17
+   2.0– 5.0 %    40    0.201    0.211    0.039    0.044      0.88
+   5.0–10.0 %    76    0.175    0.083    0.049    0.024      1.42
+  10.0–20.0 %   345    0.141    0.086    0.053    0.034      2.01
+  20.0–35.0 %   321    0.104    0.068    0.055    0.035      2.67
+  35.0–100.0 %    83    0.119    0.086    0.077    0.052      5.27
+
+== 3. Escenarios de encuesta
+elecc. enc.   k nac.    k swing  k total      n rms pts nac
+2016     14    0.046      0.023    0.063   3050       2.26
+2019a    14    0.045      0.073    0.097   3798       1.60
+2019n    14    0.047      0.038    0.078   3771       1.50
+2023     18    0.039      0.057    0.078   3942       1.75
+Todas: k nacional 0.044, k swing real 0.052, combinación cuadrática 0.068, k total directa 0.081
+  k/sqrt(s)          {"k": 0.0807}                            AIC -5658.3
+  constante          {"sigma": 0.2215}                        AIC -2570.3
+  c*s^-a             {"c": 0.0898, "a": 0.44}                 AIC -5697.6
+  sqrt(a^2+b^2/s)    {"a": 0.06, "b": 0.076}                  AIC -5681.8
+  kn²/S+kp²/s        {"kn": 0.017, "kp": 0.078}               AIC -5717.4
+Tramos (error total del escenario de encuesta):
+   0.5– 1.0 %   116 rms log 0.301  k impl. 0.026  k robusta 0.033  rms 0.25 pts
+   1.0– 2.0 %   232 rms log 0.437  k impl. 0.055  k robusta 0.064  rms 0.59 pts
+   2.0– 5.0 %   425 rms log 0.413  k impl. 0.075  k robusta 0.073  rms 1.34 pts
+   5.0–10.0 %  2089 rms log 0.304  k impl. 0.084  k robusta 0.062  rms 2.23 pts
+  10.0–20.0 %  5428 rms log 0.215  k impl. 0.079  k robusta 0.069  rms 2.91 pts
+  20.0–35.0 %  4558 rms log 0.154  k impl. 0.079  k robusta 0.072  rms 3.80 pts
+  35.0–100.0 %  1713 rms log 0.144  k impl. 0.093  k robusta 0.092  rms 5.39 pts
+Sesgo medio de las encuestas 2016 (pts, encuesta − resultado): PP -3.1, PSOE -1.5, Unidos Podemos +3.8, C's +1.0, ERC–CatSí -0.3, CDC -0.2, PNV -0.1, PACMA -0.4, EH Bildu +0.1, CC -0.1
+Sesgo medio de las encuestas 2019a (pts, encuesta − resultado): PSOE +0.8, PP +3.5, Cs -1.2, Unidas Podemos -1.0, Vox +0.4, ERC–Sobiranistes -0.7, JxCat -0.5, PNV -0.2, PACMA +0.4, EH Bildu -0.2, CCa -0.2, NA+ -0.1
+Sesgo medio de las encuestas 2019n (pts, encuesta − resultado): PSOE -0.5, PP -0.2, Vox -2.2, Unidas Podemos -0.2, Cs +2.4, ERC–Sobiranistes +0.2, JxCat -0.6, PNV -0.1, EH Bildu -0.1, CC–NCa +0.0, NA+ -0.0, PRC -0.1
+Sesgo medio de las encuestas 2023 (pts, encuesta − resultado): PP +1.3, PSOE -3.5, Vox +0.5, Sumar +0.7, ERC +0.3, Junts +0.3, EH Bildu -0.1, PNV +0.2, BNG +0.1, CUP +0.3
+Encuestas 2016: Celeste-Tel (2016-06-17, 9 d); DYM (2016-06-15, 11 d); Encuestamos (2016-06-19, 7 d); GAD3 (2016-06-20, 6 d); GESOP (2016-06-19, 7 d); Hamalgama Métrica (2016-06-17, 9 d); Invymark (2016-06-19, 7 d); Metroscopia (2016-06-15, 11 d); NC Report (2016-06-17, 9 d); Netquest (2016-06-17, 9 d); Sigma Dos (2016-06-16, 10 d); Simple Lógica (2016-06-15, 11 d); Sondaxe (2016-06-09, 17 d); TNS Demoscopia (2016-06-19, 7 d)
+Encuestas 2019a: 40dB (2019-04-18, 10 d); Celeste-Tel (2019-04-20, 8 d); DYM (2019-04-17, 11 d); GAD3 (2019-04-19, 9 d); GESOP (2019-04-05, 23 d); Hamalgama Métrica (2019-04-22, 6 d); IMOP (2019-04-20, 8 d); Invymark (2019-04-19, 9 d); Metroscopia (2019-04-16, 12 d); NC Report (2019-04-19, 9 d); Sigma Dos (2019-04-17, 11 d); Simple Lógica (2019-04-05, 23 d); SocioMétrica (2019-04-21, 7 d); Sondaxe (2019-04-18, 10 d)
+Encuestas 2019n: 40dB (2019-10-29, 12 d); CIS (2019-10-13, 28 d); Celeste-Tel (2019-10-31, 10 d); DYM (2019-10-30, 11 d); GAD3 (2019-10-31, 10 d); GESOP (2019-10-31, 10 d); Hamalgama Métrica (2019-10-31, 10 d); IMOP (2019-11-02, 8 d); Invymark (2019-10-31, 10 d); Ipsos (2019-10-29, 12 d); NC Report (2019-10-31, 10 d); Sigma Dos (2019-10-31, 10 d); SocioMétrica (2019-11-02, 8 d); Sondaxe (2019-10-31, 10 d)
+Encuestas 2023: 40dB (2023-07-16, 7 d); CIS (2023-07-05, 18 d); Celeste-Tel (2023-07-12, 11 d); Cluster17 (2023-07-14, 9 d); DYM (2023-07-13, 10 d); Data10 (2023-07-17, 6 d); GAD3 (2023-07-17, 6 d); GESOP (2023-07-15, 8 d); Hamalgama Métrica (2023-07-13, 10 d); IMOP (2023-07-14, 9 d); Invymark (2023-07-14, 9 d); Ipsos (2023-07-06, 17 d); NC Report (2023-07-16, 7 d); Sigma Dos (2023-07-17, 6 d); Simple Lógica (2023-07-16, 7 d); SocioMétrica (2023-07-16, 7 d); Sondaxe (2023-07-16, 7 d); Target Point (2023-07-16, 7 d)
+
+== 4. Backtest (2000 simulaciones por circunscripción; encuestas: la mitad)
+-- 2023 desde 2019n, escenario base (casos 421)
+   ajuste                                  Brier Brier disp.     n  p media    frec.   Brier <5 %    n
+   sin error (k=0)                        0.0451     0.0880   216    0.625    0.565       0.0000   25
+   actual baja (k=0,031)                  0.0407     0.0793   216    0.623    0.565       0.0000   25
+   actual media (k=0,05)                  0.0381     0.0743   216    0.622    0.565       0.0000   25
+   actual alta (k=0,075)                  0.0360     0.0702   216    0.620    0.565       0.0001   25
+   k=0,10                                 0.0345     0.0672   216    0.617    0.565       0.0004   25
+   k ajustada sin 2023 (0.151)            0.0331     0.0646   216    0.601    0.565       0.0011   25
+   k=0,15                                 0.0331     0.0646   216    0.601    0.565       0.0010   25
+   k=0,20                                 0.0342     0.0666   216    0.577    0.565       0.0014   25
+   σ=0,25 constante                       0.0340     0.0663   216    0.612    0.565       0.0000   25
+   σ constante ajustada sin 2023 (0.40)   0.0336     0.0656   216    0.587    0.565       0.0001   25
+   σ=0,45 constante                       0.0345     0.0672   216    0.577    0.565       0.0001   25
+   σ=c·s^-a (todo)                        0.0332     0.0648   216    0.594    0.565       0.0001   25
+   fiabilidad sin error (k=0)                muy improbable: n=249 p=0.00 obs=0.01 | casi seguro: n=172 p=1.00 obs=0.91
+   fiabilidad actual baja (k=0,031)          muy improbable: n=239 p=0.00 obs=0.01 | improbable: n=5 p=0.15 obs=0.00 | en disputa: n=10 p=0.49 obs=0.40 | probable: n=8 p=0.85 obs=0.25 | casi seguro: n=159 p=1.00 obs=0.95
+   fiabilidad actual media (k=0,05)          muy improbable: n=232 p=0.00 obs=0.00 | improbable: n=12 p=0.14 obs=0.08 | en disputa: n=10 p=0.47 obs=0.40 | probable: n=10 p=0.79 obs=0.30 | casi seguro: n=157 p=1.00 obs=0.96
+   fiabilidad actual alta (k=0,075)          muy improbable: n=225 p=0.00 obs=0.00 | improbable: n=18 p=0.15 obs=0.06 | en disputa: n=13 p=0.47 obs=0.38 | probable: n=15 p=0.81 obs=0.47 | casi seguro: n=150 p=1.00 obs=0.97
+   fiabilidad k=0,10                         muy improbable: n=217 p=0.00 obs=0.00 | improbable: n=26 p=0.15 obs=0.04 | en disputa: n=17 p=0.49 obs=0.35 | probable: n=23 p=0.86 obs=0.70 | casi seguro: n=138 p=1.00 obs=0.98
+   fiabilidad k ajustada sin 2023 (0.151)    muy improbable: n=201 p=0.00 obs=0.00 | improbable: n=41 p=0.15 obs=0.05 | en disputa: n=23 p=0.48 obs=0.35 | probable: n=45 p=0.86 obs=0.84 | casi seguro: n=111 p=0.99 obs=1.00
+   fiabilidad k=0,15                         muy improbable: n=201 p=0.00 obs=0.00 | improbable: n=41 p=0.15 obs=0.05 | en disputa: n=23 p=0.48 obs=0.35 | probable: n=45 p=0.86 obs=0.84 | casi seguro: n=111 p=0.99 obs=1.00
+   fiabilidad k=0,20                         muy improbable: n=195 p=0.01 obs=0.00 | improbable: n=47 p=0.16 obs=0.04 | en disputa: n=28 p=0.48 obs=0.43 | probable: n=60 p=0.84 obs=0.90 | casi seguro: n=91 p=0.99 obs=1.00
+   fiabilidad σ=0,25 constante               muy improbable: n=223 p=0.00 obs=0.00 | improbable: n=19 p=0.16 obs=0.05 | en disputa: n=18 p=0.49 obs=0.33 | probable: n=25 p=0.87 obs=0.72 | casi seguro: n=136 p=0.99 obs=0.98
+   fiabilidad σ constante ajustada sin 2023 (0.40) muy improbable: n=204 p=0.00 obs=0.00 | improbable: n=37 p=0.15 obs=0.05 | en disputa: n=23 p=0.48 obs=0.30 | probable: n=59 p=0.85 obs=0.88 | casi seguro: n=98 p=0.99 obs=1.00
+   fiabilidad σ=0,45 constante               muy improbable: n=202 p=0.00 obs=0.00 | improbable: n=39 p=0.16 obs=0.05 | en disputa: n=24 p=0.48 obs=0.33 | probable: n=73 p=0.85 obs=0.90 | casi seguro: n=83 p=0.98 obs=1.00
+   fiabilidad σ=c·s^-a (todo)                muy improbable: n=208 p=0.00 obs=0.00 | improbable: n=33 p=0.15 obs=0.06 | en disputa: n=23 p=0.48 obs=0.30 | probable: n=50 p=0.86 obs=0.86 | casi seguro: n=107 p=0.99 obs=1.00
+-- 2023 desde 2019n, escenario encuestas (casos 7524, 18 encuestas)
+   ajuste                                  Brier Brier disp.     n  p media    frec.   Brier <5 %    n
+   sin error (k=0)                        0.0307     0.0897  2574    0.507    0.477       0.0189  318
+   actual baja (k=0,025)                  0.0254     0.0741  2574    0.503    0.477       0.0181  318
+   actual media (k=0,04)                  0.0238     0.0696  2574    0.498    0.477       0.0165  318
+   actual alta / k=0,06                   0.0230     0.0673  2574    0.490    0.477       0.0139  318
+   k=0,08                                 0.0230     0.0673  2574    0.482    0.477       0.0119  318
+   k ajustada sin 2023 (0.082)            0.0231     0.0675  2574    0.482    0.477       0.0117  318
+   k=0,10                                 0.0236     0.0689  2574    0.475    0.477       0.0103  318
+   k=0,12                                 0.0245     0.0715  2574    0.467    0.477       0.0091  318
+   k=0,15                                 0.0262     0.0766  2574    0.454    0.477       0.0079  318
+   fiabilidad sin error (k=0)                muy improbable: n=4621 p=0.00 obs=0.02 | casi seguro: n=2903 p=1.00 obs=0.95
+   fiabilidad actual baja (k=0,025)          muy improbable: n=4502 p=0.00 obs=0.00 | improbable: n=89 p=0.16 obs=0.55 | en disputa: n=63 p=0.48 obs=0.57 | probable: n=129 p=0.84 obs=0.77 | casi seguro: n=2741 p=1.00 obs=0.96
+   fiabilidad actual media (k=0,04)          muy improbable: n=4453 p=0.00 obs=0.00 | improbable: n=131 p=0.18 obs=0.40 | en disputa: n=100 p=0.50 obs=0.63 | probable: n=188 p=0.83 obs=0.78 | casi seguro: n=2652 p=1.00 obs=0.97
+   fiabilidad actual alta / k=0,06           muy improbable: n=4392 p=0.00 obs=0.00 | improbable: n=181 p=0.18 obs=0.24 | en disputa: n=160 p=0.51 obs=0.67 | probable: n=278 p=0.83 obs=0.82 | casi seguro: n=2513 p=1.00 obs=0.97
+   fiabilidad k=0,08                         muy improbable: n=4296 p=0.00 obs=0.00 | improbable: n=271 p=0.17 obs=0.15 | en disputa: n=214 p=0.51 obs=0.69 | probable: n=360 p=0.83 obs=0.85 | casi seguro: n=2383 p=1.00 obs=0.98
+   fiabilidad k ajustada sin 2023 (0.082)    muy improbable: n=4291 p=0.00 obs=0.00 | improbable: n=276 p=0.17 obs=0.14 | en disputa: n=217 p=0.51 obs=0.69 | probable: n=366 p=0.83 obs=0.84 | casi seguro: n=2374 p=1.00 obs=0.98
+   fiabilidad k=0,10                         muy improbable: n=4171 p=0.00 obs=0.00 | improbable: n=391 p=0.15 obs=0.09 | en disputa: n=266 p=0.51 obs=0.70 | probable: n=443 p=0.84 obs=0.87 | casi seguro: n=2253 p=1.00 obs=0.98
+   fiabilidad k=0,12                         muy improbable: n=4055 p=0.00 obs=0.00 | improbable: n=497 p=0.15 obs=0.07 | en disputa: n=325 p=0.51 obs=0.70 | probable: n=536 p=0.84 obs=0.88 | casi seguro: n=2111 p=1.00 obs=0.99
+   fiabilidad k=0,15                         muy improbable: n=3884 p=0.00 obs=0.00 | improbable: n=660 p=0.14 obs=0.05 | en disputa: n=398 p=0.50 obs=0.73 | probable: n=661 p=0.83 obs=0.89 | casi seguro: n=1921 p=0.99 obs=1.00
+-- 2019n desde 2019a, escenario base (casos 531)
+   ajuste                                  Brier Brier disp.     n  p media    frec.   Brier <5 %    n
+   sin error (k=0)                        0.1017     0.1862   290    0.572    0.517       0.0000   53
+   actual baja (k=0,031)                  0.0917     0.1680   290    0.572    0.517       0.0005   53
+   actual media (k=0,05)                  0.0864     0.1583   290    0.569    0.517       0.0017   53
+   actual alta (k=0,075)                  0.0795     0.1456   290    0.564    0.517       0.0036   53
+   k=0,10                                 0.0740     0.1355   290    0.556    0.517       0.0058   53
+   k ajustada sin 2019n (0.145)           0.0680     0.1245   290    0.537    0.517       0.0097   53
+   k=0,15                                 0.0675     0.1237   290    0.535    0.517       0.0101   53
+   k=0,20                                 0.0657     0.1204   290    0.507    0.517       0.0141   53
+   σ=0,25 constante                       0.0727     0.1331   290    0.552    0.517       0.0017   53
+   σ constante ajustada sin 2019n (0.38)   0.0655     0.1199   290    0.528    0.517       0.0034   53
+   σ=0,45 constante                       0.0641     0.1175   290    0.512    0.517       0.0045   53
+   σ=c·s^-a (todo)                        0.0658     0.1205   290    0.529    0.517       0.0040   53
+   fiabilidad sin error (k=0)                muy improbable: n=335 p=0.00 obs=0.06 | casi seguro: n=196 p=1.00 obs=0.82
+   fiabilidad actual baja (k=0,031)          muy improbable: n=319 p=0.00 obs=0.03 | improbable: n=12 p=0.13 obs=0.50 | en disputa: n=7 p=0.45 obs=0.57 | probable: n=12 p=0.85 obs=0.75 | casi seguro: n=181 p=1.00 obs=0.83
+   fiabilidad actual media (k=0,05)          muy improbable: n=311 p=0.00 obs=0.02 | improbable: n=20 p=0.17 obs=0.45 | en disputa: n=10 p=0.48 obs=0.60 | probable: n=18 p=0.84 obs=0.67 | casi seguro: n=172 p=1.00 obs=0.85
+   fiabilidad actual alta (k=0,075)          muy improbable: n=298 p=0.00 obs=0.02 | improbable: n=30 p=0.15 obs=0.30 | en disputa: n=17 p=0.47 obs=0.71 | probable: n=35 p=0.85 obs=0.51 | casi seguro: n=151 p=1.00 obs=0.90
+   fiabilidad k=0,10                         muy improbable: n=285 p=0.00 obs=0.00 | improbable: n=41 p=0.15 obs=0.29 | en disputa: n=23 p=0.47 obs=0.65 | probable: n=45 p=0.83 obs=0.58 | casi seguro: n=137 p=0.99 obs=0.93
+   fiabilidad k ajustada sin 2019n (0.145)   muy improbable: n=268 p=0.00 obs=0.00 | improbable: n=57 p=0.15 obs=0.19 | en disputa: n=36 p=0.49 obs=0.61 | probable: n=68 p=0.84 obs=0.71 | casi seguro: n=102 p=0.99 obs=0.97
+   fiabilidad k=0,15                         muy improbable: n=267 p=0.01 obs=0.00 | improbable: n=58 p=0.16 obs=0.19 | en disputa: n=38 p=0.50 obs=0.61 | probable: n=69 p=0.84 obs=0.72 | casi seguro: n=99 p=0.99 obs=0.97
+   fiabilidad k=0,20                         muy improbable: n=256 p=0.01 obs=0.00 | improbable: n=70 p=0.16 obs=0.16 | en disputa: n=53 p=0.51 obs=0.62 | probable: n=81 p=0.83 obs=0.81 | casi seguro: n=71 p=0.99 obs=0.99
+   fiabilidad σ=0,25 constante               muy improbable: n=291 p=0.00 obs=0.00 | improbable: n=35 p=0.15 obs=0.31 | en disputa: n=21 p=0.47 obs=0.67 | probable: n=49 p=0.83 obs=0.55 | casi seguro: n=135 p=0.99 obs=0.94
+   fiabilidad σ constante ajustada sin 2019n (0.38) muy improbable: n=279 p=0.00 obs=0.00 | improbable: n=46 p=0.18 obs=0.24 | en disputa: n=36 p=0.51 obs=0.61 | probable: n=82 p=0.84 obs=0.76 | casi seguro: n=88 p=0.99 obs=0.97
+   fiabilidad σ=0,45 constante               muy improbable: n=273 p=0.00 obs=0.00 | improbable: n=52 p=0.19 obs=0.21 | en disputa: n=43 p=0.51 obs=0.56 | probable: n=98 p=0.84 obs=0.83 | casi seguro: n=65 p=0.99 obs=0.98
+   fiabilidad σ=c·s^-a (todo)                muy improbable: n=277 p=0.00 obs=0.00 | improbable: n=48 p=0.17 obs=0.23 | en disputa: n=36 p=0.51 obs=0.61 | probable: n=80 p=0.84 obs=0.75 | casi seguro: n=90 p=0.99 obs=0.97
+-- 2019n desde 2019a, escenario encuestas (casos 7376, 14 encuestas)
+   ajuste                                  Brier Brier disp.     n  p media    frec.   Brier <5 %    n
+   sin error (k=0)                        0.0371     0.0953  2874    0.432    0.436       0.0024  413
+   actual baja (k=0,025)                  0.0315     0.0810  2874    0.433    0.436       0.0011  413
+   actual media (k=0,04)                  0.0291     0.0747  2874    0.434    0.436       0.0010  413
+   actual alta / k=0,06                   0.0273     0.0702  2874    0.436    0.436       0.0013  413
+   k=0,08                                 0.0268     0.0689  2874    0.435    0.436       0.0018  413
+   k ajustada sin 2019n (0.082)           0.0269     0.0689  2874    0.435    0.436       0.0018  413
+   k=0,10                                 0.0273     0.0699  2874    0.433    0.436       0.0025  413
+   k=0,12                                 0.0282     0.0725  2874    0.428    0.436       0.0032  413
+   k=0,15                                 0.0304     0.0781  2874    0.418    0.436       0.0043  413
+   fiabilidad sin error (k=0)                muy improbable: n=4898 p=0.00 obs=0.03 | casi seguro: n=2478 p=1.00 obs=0.95
+   fiabilidad actual baja (k=0,025)          muy improbable: n=4717 p=0.00 obs=0.02 | improbable: n=134 p=0.16 obs=0.37 | en disputa: n=90 p=0.49 obs=0.46 | probable: n=128 p=0.83 obs=0.66 | casi seguro: n=2307 p=1.00 obs=0.97
+   fiabilidad actual media (k=0,04)          muy improbable: n=4592 p=0.00 obs=0.01 | improbable: n=240 p=0.16 obs=0.29 | en disputa: n=137 p=0.49 obs=0.53 | probable: n=199 p=0.84 obs=0.69 | casi seguro: n=2208 p=1.00 obs=0.98
+   fiabilidad actual alta / k=0,06           muy improbable: n=4386 p=0.00 obs=0.00 | improbable: n=424 p=0.15 obs=0.19 | en disputa: n=197 p=0.49 obs=0.57 | probable: n=259 p=0.83 obs=0.74 | casi seguro: n=2110 p=1.00 obs=0.99
+   fiabilidad k=0,08                         muy improbable: n=4205 p=0.00 obs=0.00 | improbable: n=586 p=0.15 obs=0.13 | en disputa: n=260 p=0.49 obs=0.57 | probable: n=341 p=0.83 obs=0.81 | casi seguro: n=1984 p=1.00 obs=1.00
+   fiabilidad k ajustada sin 2019n (0.082)   muy improbable: n=4194 p=0.00 obs=0.00 | improbable: n=597 p=0.15 obs=0.13 | en disputa: n=265 p=0.50 obs=0.57 | probable: n=342 p=0.83 obs=0.81 | casi seguro: n=1978 p=1.00 obs=1.00
+   fiabilidad k=0,10                         muy improbable: n=4073 p=0.00 obs=0.00 | improbable: n=707 p=0.16 obs=0.11 | en disputa: n=318 p=0.49 obs=0.57 | probable: n=431 p=0.84 obs=0.88 | casi seguro: n=1847 p=1.00 obs=1.00
+   fiabilidad k=0,12                         muy improbable: n=3962 p=0.00 obs=0.00 | improbable: n=812 p=0.16 obs=0.10 | en disputa: n=371 p=0.49 obs=0.59 | probable: n=495 p=0.83 obs=0.91 | casi seguro: n=1736 p=1.00 obs=1.00
+   fiabilidad k=0,15                         muy improbable: n=3806 p=0.00 obs=0.00 | improbable: n=968 p=0.17 obs=0.09 | en disputa: n=453 p=0.49 obs=0.64 | probable: n=610 p=0.83 obs=0.94 | casi seguro: n=1539 p=0.99 obs=1.00
+-- 2019a desde 2016, escenario base (casos 365)
+   ajuste                                  Brier Brier disp.     n  p media    frec.   Brier <5 %    n
+   sin error (k=0)                        0.1534     0.2059   204    0.613    0.642       0.0303   33
+   actual baja (k=0,031)                  0.1396     0.1812   204    0.606    0.642       0.0303   33
+   actual media (k=0,05)                  0.1321     0.1678   204    0.602    0.642       0.0303   33
+   actual alta (k=0,075)                  0.1248     0.1547   204    0.594    0.642       0.0301   33
+   k=0,10                                 0.1204     0.1469   204    0.587    0.642       0.0297   33
+   k ajustada sin 2019a (0.130)           0.1176     0.1421   204    0.576    0.642       0.0297   33
+   k=0,15                                 0.1167     0.1406   204    0.568    0.642       0.0299   33
+   k=0,20                                 0.1174     0.1418   204    0.545    0.642       0.0309   33
+   σ=0,25 constante                       0.1199     0.1459   204    0.585    0.642       0.0303   33
+   σ constante ajustada sin 2019a (0.40)   0.1158     0.1385   204    0.559    0.642       0.0305   33
+   σ=0,45 constante                       0.1156     0.1382   204    0.549    0.642       0.0307   33
+   σ=c·s^-a (todo)                        0.1162     0.1394   204    0.564    0.642       0.0306   33
+   fiabilidad sin error (k=0)                muy improbable: n=195 p=0.00 obs=0.19 | casi seguro: n=170 p=1.00 obs=0.89
+   fiabilidad actual baja (k=0,031)          muy improbable: n=180 p=0.00 obs=0.17 | improbable: n=12 p=0.16 obs=0.50 | en disputa: n=8 p=0.55 obs=0.62 | probable: n=15 p=0.82 obs=0.53 | casi seguro: n=150 p=1.00 obs=0.94
+   fiabilidad actual media (k=0,05)          muy improbable: n=175 p=0.00 obs=0.15 | improbable: n=14 p=0.16 obs=0.57 | en disputa: n=15 p=0.52 obs=0.53 | probable: n=20 p=0.83 obs=0.65 | casi seguro: n=141 p=1.00 obs=0.95
+   fiabilidad actual alta (k=0,075)          muy improbable: n=165 p=0.00 obs=0.13 | improbable: n=22 p=0.15 obs=0.64 | en disputa: n=22 p=0.52 obs=0.45 | probable: n=23 p=0.81 obs=0.65 | casi seguro: n=133 p=1.00 obs=0.98
+   fiabilidad k=0,10                         muy improbable: n=159 p=0.00 obs=0.12 | improbable: n=28 p=0.17 obs=0.57 | en disputa: n=27 p=0.52 obs=0.52 | probable: n=28 p=0.82 obs=0.71 | casi seguro: n=123 p=1.00 obs=0.98
+   fiabilidad k ajustada sin 2019a (0.130)   muy improbable: n=154 p=0.00 obs=0.10 | improbable: n=33 p=0.18 obs=0.58 | en disputa: n=31 p=0.51 obs=0.55 | probable: n=35 p=0.82 obs=0.77 | casi seguro: n=112 p=1.00 obs=0.99
+   fiabilidad k=0,15                         muy improbable: n=152 p=0.01 obs=0.11 | improbable: n=35 p=0.19 obs=0.54 | en disputa: n=39 p=0.52 obs=0.56 | probable: n=37 p=0.86 obs=0.86 | casi seguro: n=102 p=1.00 obs=0.99
+   fiabilidad k=0,20                         muy improbable: n=146 p=0.01 obs=0.11 | improbable: n=40 p=0.19 obs=0.45 | en disputa: n=45 p=0.49 obs=0.60 | probable: n=44 p=0.83 obs=0.91 | casi seguro: n=90 p=0.99 obs=0.99
+   fiabilidad σ=0,25 constante               muy improbable: n=161 p=0.00 obs=0.12 | improbable: n=26 p=0.18 obs=0.58 | en disputa: n=27 p=0.53 obs=0.52 | probable: n=32 p=0.83 obs=0.75 | casi seguro: n=119 p=1.00 obs=0.98
+   fiabilidad σ constante ajustada sin 2019a (0.40) muy improbable: n=153 p=0.00 obs=0.10 | improbable: n=30 p=0.20 obs=0.60 | en disputa: n=43 p=0.51 obs=0.56 | probable: n=43 p=0.83 obs=0.86 | casi seguro: n=96 p=0.99 obs=1.00
+   fiabilidad σ=0,45 constante               muy improbable: n=153 p=0.00 obs=0.10 | improbable: n=28 p=0.21 obs=0.61 | en disputa: n=48 p=0.50 obs=0.58 | probable: n=52 p=0.84 obs=0.88 | casi seguro: n=84 p=0.99 obs=1.00
+   fiabilidad σ=c·s^-a (todo)                muy improbable: n=154 p=0.00 obs=0.10 | improbable: n=30 p=0.20 obs=0.57 | en disputa: n=40 p=0.51 obs=0.57 | probable: n=42 p=0.83 obs=0.86 | casi seguro: n=99 p=0.99 obs=0.99
+-- 2019a desde 2016, escenario encuestas (casos 5104, 14 encuestas)
+   ajuste                                  Brier Brier disp.     n  p media    frec.   Brier <5 %    n
+   sin error (k=0)                        0.0721     0.1348  2730    0.521    0.558       0.0060  334
+   actual baja (k=0,025)                  0.0617     0.1154  2730    0.519    0.558       0.0046  334
+   actual media (k=0,04)                  0.0567     0.1060  2730    0.516    0.558       0.0043  334
+   actual alta / k=0,06                   0.0523     0.0978  2730    0.512    0.558       0.0040  334
+   k=0,08                                 0.0504     0.0942  2730    0.507    0.558       0.0039  334
+   k ajustada sin 2019a (0.074)           0.0507     0.0949  2730    0.508    0.558       0.0039  334
+   k=0,10                                 0.0502     0.0938  2730    0.501    0.558       0.0039  334
+   k=0,12                                 0.0511     0.0955  2730    0.494    0.558       0.0040  334
+   k=0,15                                 0.0539     0.1008  2730    0.481    0.558       0.0044  334
+   fiabilidad sin error (k=0)                muy improbable: n=2552 p=0.00 obs=0.09 | casi seguro: n=2552 p=1.00 obs=0.95
+   fiabilidad actual baja (k=0,025)          muy improbable: n=2386 p=0.00 obs=0.06 | improbable: n=127 p=0.16 obs=0.47 | en disputa: n=81 p=0.49 obs=0.68 | probable: n=152 p=0.85 obs=0.65 | casi seguro: n=2358 p=1.00 obs=0.97
+   fiabilidad actual media (k=0,04)          muy improbable: n=2275 p=0.00 obs=0.04 | improbable: n=220 p=0.16 obs=0.47 | en disputa: n=128 p=0.50 obs=0.64 | probable: n=243 p=0.83 obs=0.74 | casi seguro: n=2238 p=1.00 obs=0.98
+   fiabilidad actual alta / k=0,06           muy improbable: n=2112 p=0.00 obs=0.02 | improbable: n=364 p=0.15 obs=0.41 | en disputa: n=198 p=0.50 obs=0.63 | probable: n=362 p=0.83 obs=0.80 | casi seguro: n=2068 p=1.00 obs=0.99
+   fiabilidad k=0,08                         muy improbable: n=1965 p=0.00 obs=0.00 | improbable: n=487 p=0.15 obs=0.35 | en disputa: n=287 p=0.50 obs=0.61 | probable: n=439 p=0.83 obs=0.86 | casi seguro: n=1926 p=1.00 obs=1.00
+   fiabilidad k ajustada sin 2019a (0.074)   muy improbable: n=1996 p=0.00 obs=0.01 | improbable: n=462 p=0.15 obs=0.36 | en disputa: n=266 p=0.50 obs=0.62 | probable: n=421 p=0.84 obs=0.85 | casi seguro: n=1959 p=1.00 obs=1.00
+   fiabilidad k=0,10                         muy improbable: n=1830 p=0.01 obs=0.00 | improbable: n=602 p=0.15 obs=0.27 | en disputa: n=362 p=0.49 obs=0.62 | probable: n=487 p=0.83 obs=0.90 | casi seguro: n=1823 p=1.00 obs=1.00
+   fiabilidad k=0,12                         muy improbable: n=1718 p=0.01 obs=0.00 | improbable: n=707 p=0.16 obs=0.23 | en disputa: n=422 p=0.49 obs=0.65 | probable: n=547 p=0.82 obs=0.93 | casi seguro: n=1710 p=0.99 obs=1.00
+   fiabilidad k=0,15                         muy improbable: n=1584 p=0.01 obs=0.00 | improbable: n=823 p=0.16 obs=0.18 | en disputa: n=526 p=0.49 obs=0.68 | probable: n=666 p=0.83 obs=0.97 | casi seguro: n=1505 p=0.99 obs=1.00
+-- 2016 desde 2015, escenario base (casos 402)
+   ajuste                                  Brier Brier disp.     n  p media    frec.   Brier <5 %    n
+   sin error (k=0)                        0.0299     0.0548   219    0.584    0.557       0.0000   44
+   actual baja (k=0,031)                  0.0221     0.0406   219    0.585    0.557       0.0000   44
+   actual media (k=0,05)                  0.0200     0.0368   219    0.583    0.557       0.0000   44
+   actual alta (k=0,075)                  0.0208     0.0383   219    0.577    0.557       0.0001   44
+   k=0,10                                 0.0231     0.0425   219    0.570    0.557       0.0004   44
+   k ajustada sin 2016 (0.168)            0.0309     0.0567   219    0.541    0.557       0.0012   44
+   k=0,15                                 0.0288     0.0528   219    0.550    0.557       0.0010   44
+   k=0,20                                 0.0347     0.0636   219    0.525    0.557       0.0014   44
+   σ=0,25 constante                       0.0239     0.0438   219    0.566    0.557       0.0000   44
+   σ constante ajustada sin 2016 (0.41)   0.0317     0.0581   219    0.535    0.557       0.0001   44
+   σ=0,45 constante                       0.0338     0.0620   219    0.526    0.557       0.0002   44
+   σ=c·s^-a (todo)                        0.0298     0.0547   219    0.542    0.557       0.0001   44
+   fiabilidad sin error (k=0)                muy improbable: n=226 p=0.00 obs=0.01 | casi seguro: n=176 p=1.00 obs=0.95
+   fiabilidad actual baja (k=0,031)          muy improbable: n=215 p=0.00 obs=0.00 | improbable: n=9 p=0.16 obs=0.22 | en disputa: n=4 p=0.50 obs=0.50 | probable: n=8 p=0.85 obs=0.50 | casi seguro: n=166 p=1.00 obs=0.98
+   fiabilidad actual media (k=0,05)          muy improbable: n=202 p=0.00 obs=0.00 | improbable: n=19 p=0.13 obs=0.05 | en disputa: n=9 p=0.47 obs=0.33 | probable: n=22 p=0.86 obs=0.77 | casi seguro: n=150 p=1.00 obs=0.99
+   fiabilidad actual alta (k=0,075)          muy improbable: n=194 p=0.00 obs=0.00 | improbable: n=26 p=0.17 obs=0.04 | en disputa: n=10 p=0.45 obs=0.30 | probable: n=37 p=0.82 obs=0.84 | casi seguro: n=135 p=1.00 obs=1.00
+   fiabilidad k=0,10                         muy improbable: n=190 p=0.00 obs=0.00 | improbable: n=27 p=0.19 obs=0.04 | en disputa: n=20 p=0.50 obs=0.40 | probable: n=39 p=0.81 obs=0.90 | casi seguro: n=126 p=1.00 obs=1.00
+   fiabilidad k ajustada sin 2016 (0.168)    muy improbable: n=178 p=0.01 obs=0.00 | improbable: n=36 p=0.18 obs=0.03 | en disputa: n=39 p=0.50 obs=0.54 | probable: n=43 p=0.80 obs=0.98 | casi seguro: n=106 p=0.99 obs=1.00
+   fiabilidad k=0,15                         muy improbable: n=180 p=0.01 obs=0.00 | improbable: n=35 p=0.18 obs=0.03 | en disputa: n=34 p=0.51 obs=0.50 | probable: n=45 p=0.81 obs=0.98 | casi seguro: n=108 p=1.00 obs=1.00
+   fiabilidad k=0,20                         muy improbable: n=176 p=0.01 obs=0.00 | improbable: n=39 p=0.19 obs=0.03 | en disputa: n=46 p=0.51 obs=0.63 | probable: n=48 p=0.82 obs=0.98 | casi seguro: n=93 p=0.99 obs=1.00
+   fiabilidad σ=0,25 constante               muy improbable: n=192 p=0.00 obs=0.00 | improbable: n=25 p=0.20 obs=0.04 | en disputa: n=19 p=0.50 obs=0.32 | probable: n=45 p=0.82 obs=0.93 | casi seguro: n=121 p=1.00 obs=1.00
+   fiabilidad σ constante ajustada sin 2016 (0.41) muy improbable: n=186 p=0.00 obs=0.00 | improbable: n=27 p=0.22 obs=0.04 | en disputa: n=38 p=0.51 obs=0.50 | probable: n=56 p=0.81 obs=0.98 | casi seguro: n=95 p=0.99 obs=1.00
+   fiabilidad σ=0,45 constante               muy improbable: n=183 p=0.00 obs=0.00 | improbable: n=28 p=0.21 obs=0.04 | en disputa: n=46 p=0.51 obs=0.54 | probable: n=57 p=0.82 obs=0.98 | casi seguro: n=88 p=0.98 obs=1.00
+   fiabilidad σ=c·s^-a (todo)                muy improbable: n=187 p=0.00 obs=0.00 | improbable: n=27 p=0.22 obs=0.04 | en disputa: n=35 p=0.51 obs=0.49 | probable: n=50 p=0.81 obs=0.98 | casi seguro: n=103 p=0.99 obs=1.00
+-- 2016 desde 2015, escenario encuestas (casos 5628, 14 encuestas)
+   ajuste                                  Brier Brier disp.     n  p media    frec.   Brier <5 %    n
+   sin error (k=0)                        0.0297     0.0755  2211    0.549    0.510       0.0000  397
+   actual baja (k=0,025)                  0.0246     0.0627  2211    0.550    0.510       0.0000  397
+   actual media (k=0,04)                  0.0232     0.0591  2211    0.547    0.510       0.0000  397
+   actual alta / k=0,06                   0.0232     0.0590  2211    0.541    0.510       0.0000  397
+   k=0,08                                 0.0244     0.0621  2211    0.535    0.510       0.0003  397
+   k ajustada sin 2016 (0.085)            0.0248     0.0630  2211    0.533    0.510       0.0004  397
+   k=0,10                                 0.0262     0.0667  2211    0.526    0.510       0.0006  397
+   k=0,12                                 0.0282     0.0719  2211    0.516    0.510       0.0010  397
+   k=0,15                                 0.0314     0.0800  2211    0.499    0.510       0.0017  397
+   fiabilidad sin error (k=0)                muy improbable: n=3163 p=0.00 obs=0.01 | casi seguro: n=2465 p=1.00 obs=0.95
+   fiabilidad actual baja (k=0,025)          muy improbable: n=3000 p=0.00 obs=0.00 | improbable: n=128 p=0.16 obs=0.17 | en disputa: n=63 p=0.49 obs=0.38 | probable: n=126 p=0.85 obs=0.67 | casi seguro: n=2311 p=1.00 obs=0.97
+   fiabilidad actual media (k=0,04)          muy improbable: n=2906 p=0.00 obs=0.00 | improbable: n=205 p=0.17 obs=0.11 | en disputa: n=101 p=0.49 obs=0.42 | probable: n=246 p=0.85 obs=0.70 | casi seguro: n=2170 p=1.00 obs=0.99
+   fiabilidad actual alta / k=0,06           muy improbable: n=2793 p=0.00 obs=0.00 | improbable: n=280 p=0.17 obs=0.08 | en disputa: n=179 p=0.48 obs=0.41 | probable: n=376 p=0.84 obs=0.78 | casi seguro: n=2000 p=1.00 obs=0.99
+   fiabilidad k=0,08                         muy improbable: n=2697 p=0.00 obs=0.00 | improbable: n=345 p=0.17 obs=0.04 | en disputa: n=253 p=0.49 obs=0.43 | probable: n=488 p=0.83 obs=0.85 | casi seguro: n=1845 p=1.00 obs=1.00
+   fiabilidad k ajustada sin 2016 (0.085)    muy improbable: n=2672 p=0.00 obs=0.00 | improbable: n=364 p=0.17 obs=0.04 | en disputa: n=266 p=0.49 obs=0.43 | probable: n=505 p=0.83 obs=0.86 | casi seguro: n=1821 p=1.00 obs=1.00
+   fiabilidad k=0,10                         muy improbable: n=2641 p=0.00 obs=0.00 | improbable: n=378 p=0.18 obs=0.03 | en disputa: n=323 p=0.49 obs=0.44 | probable: n=540 p=0.82 obs=0.89 | casi seguro: n=1746 p=1.00 obs=1.00
+   fiabilidad k=0,12                         muy improbable: n=2595 p=0.00 obs=0.00 | improbable: n=406 p=0.19 obs=0.03 | en disputa: n=405 p=0.50 obs=0.47 | probable: n=579 p=0.82 obs=0.92 | casi seguro: n=1643 p=1.00 obs=1.00
+   fiabilidad k=0,15                         muy improbable: n=2536 p=0.01 obs=0.00 | improbable: n=449 p=0.19 obs=0.02 | en disputa: n=535 p=0.50 obs=0.53 | probable: n=583 p=0.81 obs=0.96 | casi seguro: n=1525 p=1.00 obs=1.00
+
+== 4b. Backtest agregado (media ponderada por número de casos)
+-- encuestas, elecciones 2016+2019a+2019n+2023
+   sin error (k=0)                        Brier disp. 0.1001 (n=10389) | muy improbable: n=15234 p=0.00 obs=0.03 | casi seguro: n=10398 p=1.00 obs=0.95
+   actual baja (k=0,025)                  Brier disp. 0.0844 (n=10389) | muy improbable: n=14605 p=0.00 obs=0.02 | improbable: n=478 p=0.16 obs=0.38 | en disputa: n=297 p=0.49 obs=0.53 | probable: n=535 p=0.84 obs=0.69 | casi seguro: n=9717 p=1.00 obs=0.97
+   actual media (k=0,04)                  Brier disp. 0.0783 (n=10389) | muy improbable: n=14226 p=0.00 obs=0.01 | improbable: n=796 p=0.16 obs=0.31 | en disputa: n=466 p=0.50 obs=0.56 | probable: n=876 p=0.84 obs=0.72 | casi seguro: n=9268 p=1.00 obs=0.98
+   actual alta / k=0,06                   Brier disp. 0.0743 (n=10389) | muy improbable: n=13683 p=0.00 obs=0.00 | improbable: n=1249 p=0.16 obs=0.24 | en disputa: n=734 p=0.50 obs=0.57 | probable: n=1275 p=0.83 obs=0.79 | casi seguro: n=8691 p=1.00 obs=0.99
+   k=0,08                                 Brier disp. 0.0737 (n=10389) | muy improbable: n=13163 p=0.00 obs=0.00 | improbable: n=1689 p=0.16 obs=0.18 | en disputa: n=1014 p=0.50 obs=0.57 | probable: n=1628 p=0.83 obs=0.84 | casi seguro: n=8138 p=1.00 obs=0.99
+   k ajustada dejando fuera la elección   Brier disp. 0.0741 (n=10389) | muy improbable: n=13153 p=0.00 obs=0.00 | improbable: n=1699 p=0.16 obs=0.18 | en disputa: n=1014 p=0.50 obs=0.57 | probable: n=1634 p=0.83 obs=0.84 | casi seguro: n=8132 p=1.00 obs=0.99
+   k=0,10                                 Brier disp. 0.0753 (n=10389) | muy improbable: n=12715 p=0.00 obs=0.00 | improbable: n=2078 p=0.16 obs=0.14 | en disputa: n=1269 p=0.50 obs=0.58 | probable: n=1901 p=0.83 obs=0.88 | casi seguro: n=7669 p=1.00 obs=0.99
+   k=0,12                                 Brier disp. 0.0782 (n=10389) | muy improbable: n=12330 p=0.00 obs=0.00 | improbable: n=2422 p=0.16 obs=0.12 | en disputa: n=1523 p=0.50 obs=0.60 | probable: n=2157 p=0.83 obs=0.91 | casi seguro: n=7200 p=1.00 obs=1.00
+   k=0,15                                 Brier disp. 0.0841 (n=10389) | muy improbable: n=11810 p=0.01 obs=0.00 | improbable: n=2900 p=0.16 obs=0.10 | en disputa: n=1912 p=0.50 obs=0.64 | probable: n=2520 p=0.83 obs=0.94 | casi seguro: n=6490 p=0.99 obs=1.00
+-- base, elecciones 2019a+2023
+   sin error (k=0)                        Brier disp. 0.1452 (n=420) | muy improbable: n=444 p=0.00 obs=0.09 | casi seguro: n=342 p=1.00 obs=0.90
+   actual baja (k=0,031)                  Brier disp. 0.1288 (n=420) | muy improbable: n=419 p=0.00 obs=0.08 | improbable: n=17 p=0.16 obs=0.35 | en disputa: n=18 p=0.52 obs=0.50 | probable: n=23 p=0.83 obs=0.43 | casi seguro: n=309 p=1.00 obs=0.94
+   actual media (k=0,05)                  Brier disp. 0.1197 (n=420) | muy improbable: n=407 p=0.00 obs=0.07 | improbable: n=26 p=0.15 obs=0.35 | en disputa: n=25 p=0.50 obs=0.48 | probable: n=30 p=0.81 obs=0.53 | casi seguro: n=298 p=1.00 obs=0.95
+   actual alta (k=0,075)                  Brier disp. 0.1112 (n=420) | muy improbable: n=390 p=0.00 obs=0.06 | improbable: n=40 p=0.15 obs=0.38 | en disputa: n=35 p=0.50 obs=0.43 | probable: n=38 p=0.81 obs=0.58 | casi seguro: n=283 p=1.00 obs=0.97
+   k=0,10                                 Brier disp. 0.1059 (n=420) | muy improbable: n=376 p=0.00 obs=0.05 | improbable: n=54 p=0.16 obs=0.31 | en disputa: n=44 p=0.51 obs=0.45 | probable: n=51 p=0.84 obs=0.71 | casi seguro: n=261 p=1.00 obs=0.98
+   k ajustada dejando fuera la elección   Brier disp. 0.1022 (n=420) | muy improbable: n=355 p=0.00 obs=0.05 | improbable: n=74 p=0.16 obs=0.28 | en disputa: n=54 p=0.49 obs=0.46 | probable: n=80 p=0.84 obs=0.81 | casi seguro: n=223 p=0.99 obs=1.00
+   k=0,15                                 Brier disp. 0.1015 (n=420) | muy improbable: n=353 p=0.01 obs=0.05 | improbable: n=76 p=0.17 obs=0.28 | en disputa: n=62 p=0.51 obs=0.48 | probable: n=82 p=0.86 obs=0.85 | casi seguro: n=213 p=1.00 obs=1.00
+   k=0,20                                 Brier disp. 0.1031 (n=420) | muy improbable: n=341 p=0.01 obs=0.05 | improbable: n=87 p=0.17 obs=0.23 | en disputa: n=73 p=0.49 obs=0.53 | probable: n=104 p=0.83 obs=0.90 | casi seguro: n=181 p=0.99 obs=0.99
+   σ=0,25 constante                       Brier disp. 0.1050 (n=420) | muy improbable: n=384 p=0.00 obs=0.05 | improbable: n=45 p=0.17 obs=0.36 | en disputa: n=45 p=0.51 obs=0.44 | probable: n=57 p=0.85 obs=0.74 | casi seguro: n=255 p=0.99 obs=0.98
+   σ constante ajustada dejando fuera la elección Brier disp. 0.1010 (n=420) | muy improbable: n=357 p=0.00 obs=0.04 | improbable: n=67 p=0.17 obs=0.30 | en disputa: n=66 p=0.50 obs=0.47 | probable: n=102 p=0.84 obs=0.87 | casi seguro: n=194 p=0.99 obs=1.00
+   σ=0,45 constante                       Brier disp. 0.1017 (n=420) | muy improbable: n=355 p=0.00 obs=0.04 | improbable: n=67 p=0.18 obs=0.28 | en disputa: n=72 p=0.49 obs=0.50 | probable: n=125 p=0.84 obs=0.90 | casi seguro: n=167 p=0.99 obs=1.00
+   σ=c·s^-a (todo)                        Brier disp. 0.1010 (n=420) | muy improbable: n=362 p=0.00 obs=0.04 | improbable: n=63 p=0.17 obs=0.30 | en disputa: n=63 p=0.50 obs=0.48 | probable: n=92 p=0.85 obs=0.86 | casi seguro: n=206 p=0.99 obs=1.00
+-- base, elecciones 2016+2019a+2019n+2023
+   sin error (k=0)                        Brier disp. 0.1367 (n=929) | muy improbable: n=1005 p=0.00 obs=0.06 | casi seguro: n=714 p=1.00 obs=0.89
+   actual baja (k=0,031)                  Brier disp. 0.1202 (n=929) | muy improbable: n=953 p=0.00 obs=0.04 | improbable: n=38 p=0.15 obs=0.37 | en disputa: n=29 p=0.50 obs=0.52 | probable: n=43 p=0.84 obs=0.53 | casi seguro: n=656 p=1.00 obs=0.92
+   actual media (k=0,05)                  Brier disp. 0.1122 (n=929) | muy improbable: n=920 p=0.00 obs=0.04 | improbable: n=65 p=0.15 obs=0.29 | en disputa: n=44 p=0.49 obs=0.48 | probable: n=70 p=0.84 obs=0.64 | casi seguro: n=620 p=1.00 obs=0.93
+   actual alta (k=0,075)                  Brier disp. 0.1048 (n=929) | muy improbable: n=882 p=0.00 obs=0.03 | improbable: n=96 p=0.16 obs=0.26 | en disputa: n=62 p=0.48 obs=0.48 | probable: n=110 p=0.83 obs=0.65 | casi seguro: n=569 p=1.00 obs=0.96
+   k=0,10                                 Brier disp. 0.1002 (n=929) | muy improbable: n=851 p=0.00 obs=0.02 | improbable: n=122 p=0.16 obs=0.25 | en disputa: n=87 p=0.50 obs=0.49 | probable: n=135 p=0.83 obs=0.72 | casi seguro: n=524 p=1.00 obs=0.97
+   k ajustada dejando fuera la elección   Brier disp. 0.0984 (n=929) | muy improbable: n=801 p=0.01 obs=0.02 | improbable: n=167 p=0.16 obs=0.20 | en disputa: n=129 p=0.50 obs=0.53 | probable: n=191 p=0.83 obs=0.81 | casi seguro: n=431 p=0.99 obs=0.99
+   k=0,15                                 Brier disp. 0.0969 (n=929) | muy improbable: n=800 p=0.01 obs=0.02 | improbable: n=169 p=0.17 obs=0.20 | en disputa: n=134 p=0.50 obs=0.52 | probable: n=196 p=0.84 obs=0.84 | casi seguro: n=420 p=0.99 obs=0.99
+   k=0,20                                 Brier disp. 0.0992 (n=929) | muy improbable: n=773 p=0.01 obs=0.02 | improbable: n=196 p=0.17 obs=0.16 | en disputa: n=172 p=0.50 obs=0.59 | probable: n=233 p=0.83 obs=0.89 | casi seguro: n=345 p=0.99 obs=0.99
+   σ=0,25 constante                       Brier disp. 0.0993 (n=929) | muy improbable: n=867 p=0.00 obs=0.03 | improbable: n=105 p=0.17 obs=0.27 | en disputa: n=85 p=0.50 obs=0.47 | probable: n=151 p=0.83 obs=0.74 | casi seguro: n=511 p=0.99 obs=0.97
+   σ constante ajustada dejando fuera la elección Brier disp. 0.0968 (n=929) | muy improbable: n=822 p=0.00 obs=0.02 | improbable: n=140 p=0.18 obs=0.23 | en disputa: n=140 p=0.51 obs=0.51 | probable: n=240 p=0.83 obs=0.86 | casi seguro: n=377 p=0.99 obs=0.99
+   σ=0,45 constante                       Brier disp. 0.0973 (n=929) | muy improbable: n=811 p=0.00 obs=0.02 | improbable: n=147 p=0.19 obs=0.21 | en disputa: n=161 p=0.50 obs=0.53 | probable: n=280 p=0.84 obs=0.89 | casi seguro: n=320 p=0.99 obs=1.00
+   σ=c·s^-a (todo)                        Brier disp. 0.0962 (n=929) | muy improbable: n=826 p=0.00 obs=0.02 | improbable: n=138 p=0.18 obs=0.22 | en disputa: n=134 p=0.51 obs=0.51 | probable: n=222 p=0.84 obs=0.85 | casi seguro: n=399 p=0.99 obs=0.99
