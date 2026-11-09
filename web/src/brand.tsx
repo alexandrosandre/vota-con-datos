@@ -6,43 +6,86 @@
  */
 import { ruta } from './store';
 
-export const PASOS = [
-  {
-    n: 1,
-    id: 'coincide',
-    ruta: '/coincide',
-    verbo: 'Coincide',
-    pregunta: '¿Con quién coincides?',
-    clase: 'p1',
-    resumen:
-      'Valora propuestas reales del 29-N, de sus programas y de lo prometido en campaña, sin saber de quién son. Descubre con qué partidos coincides y en qué, con la cita exacta.',
-    cta: 'Empezar el cuestionario',
-  },
-  {
-    n: 2,
-    id: 'contrasta',
-    ruta: '/contrasta',
-    verbo: 'Contrasta',
-    pregunta: '¿Qué hay detrás?',
-    clase: 'p2',
-    resumen:
-      'Las 12 propuestas centrales de cada programa, contrastadas con criterios verificables: encaje legal, coste, evidencia, experiencia en otros países, a quién benefician.',
-    cta: 'Ver el análisis',
-  },
-  {
-    n: 3,
-    id: 'cuenta',
-    ruta: '/cuenta',
-    verbo: 'Cuenta',
-    pregunta: '¿Tu voto tendrá escaño?',
-    clase: 'p3',
-    resumen:
-      'Con la ley electoral y las listas oficiales del BOE, calcula la probabilidad de que tu opción obtenga escaño en tu provincia y, si no llega, cuál es tu siguiente opción real.',
-    cta: 'Calcular',
-  },
+const PASOS_BASE = [
+  { n: 1, id: 'coincide', ruta: '/coincide', clase: 'p1' },
+  { n: 2, id: 'contrasta', ruta: '/contrasta', clase: 'p2' },
+  { n: 3, id: 'cuenta', ruta: '/cuenta', clase: 'p3' },
 ] as const;
 
-export type PasoId = (typeof PASOS)[number]['id'];
+type TextoPaso = { verbo: string; pregunta: string; resumen: string; cta: string };
+
+/**
+ * Nombres y lema de los tres pasos. Se puede previsualizar otra versión con ?lema=<id>.
+ * (Las rutas internas /coincide, /contrasta, /cuenta no cambian.)
+ */
+export const LEMAS: Record<string, { lema: [string, string, string]; eslogan: string; lead: string; pasos: Record<string, TextoPaso> }> = {
+  actual: {
+    lema: ['Coincide.', 'Contrasta.', 'Cuenta.'],
+    eslogan: 'Vota sabiendo a qué votas.',
+    lead: 'Tres pasos para pasar de la intuición a un voto informado: con quién coincides de verdad, qué hay detrás de lo que promete, y si tu voto llegará a escaño en tu provincia. Con fuentes oficiales, algoritmos abiertos y sin guardar ningún dato tuyo.',
+    pasos: {
+      coincide: {
+        verbo: 'Coincide',
+        pregunta: '¿Con quién coincides?',
+        resumen:
+          'Valora propuestas reales del 29-N, de sus programas y de lo que han dicho sus líderes, sin saber de quién son. Descubre con qué partidos coincides y en qué, con la cita exacta.',
+        cta: 'Empezar el cuestionario',
+      },
+      contrasta: {
+        verbo: 'Contrasta',
+        pregunta: '¿Qué hay detrás?',
+        resumen:
+          'Las 12 propuestas centrales de cada programa, contrastadas con criterios verificables: encaje legal, coste, evidencia, experiencia en otros países, a quién benefician.',
+        cta: 'Ver el análisis',
+      },
+      cuenta: {
+        verbo: 'Cuenta',
+        pregunta: '¿Tu voto tendrá escaño?',
+        resumen:
+          'Con la ley electoral y las listas oficiales del BOE, calcula la probabilidad de que tu opción obtenga escaño en tu provincia y, si no llega, cuál es tu siguiente opción real.',
+        cta: 'Calcular',
+      },
+    },
+  },
+  ecd: {
+    lema: ['Elige.', 'Contrasta.', 'Descarta.'],
+    eslogan: 'Vota sabiendo a qué votas.',
+    lead: 'Tres pasos para llegar a un voto que sea tuyo y que cuente: elige entre propuestas reales sin saber de quién son, contrasta qué hay detrás de las de tus partidos más afines y descarta lo que no llega a escaño en tu provincia. Con fuentes oficiales, algoritmos abiertos y sin guardar ningún dato tuyo.',
+    pasos: {
+      coincide: {
+        verbo: 'Elige',
+        pregunta: '¿Con quién coincides?',
+        resumen:
+          'Elige entre 30 propuestas reales del 29-N, de los programas y de lo que han dicho sus líderes, sin saber de quién son. Al final ves con qué partidos coincides y en qué, con la cita exacta.',
+        cta: 'Empezar a elegir',
+      },
+      contrasta: {
+        verbo: 'Contrasta',
+        pregunta: '¿Qué hay detrás?',
+        resumen:
+          'Pon a prueba las 12 propuestas centrales de cada programa: encaje legal, coste, evidencia, experiencia en otros países y a quién benefician, con las fuentes a la vista.',
+        cta: 'Contrastar programas',
+      },
+      cuenta: {
+        verbo: 'Descarta',
+        pregunta: '¿Tu voto tendrá escaño?',
+        resumen:
+          'Descarta lo que no llega: con la ley electoral y las listas del BOE, comprueba si tu opción obtiene escaño en tu provincia y, si no, cuál es tu siguiente opción real. Votar a quien prefieres siempre es legítimo.',
+        cta: 'Comprobar mi provincia',
+      },
+    },
+  },
+};
+
+export const LEMA_ID: string = (() => {
+  const q = new URLSearchParams(location.search).get('lema');
+  return q && LEMAS[q] ? q : 'actual';
+})();
+export const LEMA = LEMAS[LEMA_ID];
+
+export const PASOS = PASOS_BASE.map((p) => ({ ...p, ...LEMA.pasos[p.id] }));
+
+export type PasoId = (typeof PASOS_BASE)[number]['id'];
 
 export function Simbolo({ size = 28, mono = false }: { size?: number; mono?: boolean }) {
   const c = (v: string) => (mono ? 'currentColor' : v);

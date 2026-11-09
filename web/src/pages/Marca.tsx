@@ -1,16 +1,26 @@
-import { Logotipo, PASOS, Simbolo } from '../brand';
+import { Logotipo, PASOS } from '../brand';
 import { REPO } from '../data';
 
-const COLORES = [
-  { n: 'Tinta', v: '--ink', hex: '#16161A / #F2F0EA', uso: 'Texto y símbolo' },
-  { n: 'Papel', v: '--paper', hex: '#F7F5F0 / #121214', uso: 'Fondo' },
-  { n: 'Coincide', v: '--p1', hex: '#C2502B / #EF8A63', uso: 'Paso 1 · terracota' },
-  { n: 'Contrasta', v: '--p2', hex: '#4A47A3 / #A9A6F2', uso: 'Paso 2 · índigo' },
-  { n: 'Cuenta', v: '--p3', hex: '#13715F / #5CC4AD', uso: 'Paso 3 · verde datos' },
-  { n: 'Sólida', v: '--ok', hex: '#1D6A3C', uso: 'Valoración' },
-  { n: 'Matizable', v: '--mid', hex: '#7A5205', uso: 'Valoración' },
-  { n: 'Débil', v: '--bad', hex: '#962A20', uso: 'Valoración' },
+/** Paleta del diseño «Campaña» (siempre oscuro). Fuente de verdad: web/public/temas/campana.css. */
+const NEUTROS = [
+  { n: 'Negro', hex: '#000000', uso: 'Cabecera y héroe' },
+  { n: 'Fondo', hex: '#0E0E10', uso: 'Fondo de página' },
+  { n: 'Superficie', hex: '#151518', uso: 'Tarjetas' },
+  { n: 'Banda', hex: '#19191D', uso: 'Cifras y pie' },
+  { n: 'Tinta', hex: '#F4F2EB', uso: 'Texto principal' },
+  { n: 'Tinta 2', hex: '#CAC8C1', uso: 'Texto secundario' },
 ];
+const VALORACIONES = [
+  { n: 'Sólida', hex: '#2FAE66', s: '✓' },
+  { n: 'Matizable', hex: '#F0B43C', s: '~' },
+  { n: 'Débil', hex: '#FF6B5E', s: '✕' },
+  { n: 'No verificable', hex: '#8A8983', s: '?' },
+];
+const PASO_HEX: Record<string, { vivo: string; banda: string; nombre: string }> = {
+  p1: { vivo: '#FF9670', banda: '#A93F1C', nombre: 'óxido' },
+  p2: { vivo: '#B1AEFF', banda: '#3F3C9A', nombre: 'índigo' },
+  p3: { vivo: '#5CCFB4', banda: '#0E6654', nombre: 'verde datos' },
+};
 
 export function Marca() {
   return (
@@ -18,77 +28,118 @@ export function Marca() {
       <div class="kicker">Marca</div>
       <h1>vota con datos</h1>
       <p class="lead">
-        Una herramienta cívica tiene que parecer lo que es: clara, sobria y fiable. La marca no pertenece a ningún color político y se apoya en
-        el contenido.
+        Una herramienta cívica con la energía de una campaña y la neutralidad de un servicio público: negro, tipografía rotunda y tres colores
+        que no pertenecen a ningún partido.
       </p>
 
       <h2 style={{ marginTop: 40 }}>Símbolo y logotipo</h2>
       <div class="grid-2">
-        <div class="lienzo" style={{ background: 'var(--card)' }}>
+        <div class="lienzo" style={{ background: '#000', color: '#fff' }}>
           <Logotipo size={44} />
         </div>
-        <div class="lienzo" style={{ background: '#16161a', color: '#f2f0ea', ['--p1' as any]: '#ef8a63', ['--p2' as any]: '#a9a6f2', ['--p3' as any]: '#5cc4ad' }}>
-          <span class="logotipo">
-            <Simbolo size={44} />
-            <span class="wordmark" style={{ color: '#f2f0ea' }}>
-              vota <span class="con" style={{ color: '#8f8d88' }}>con</span> datos
-            </span>
-          </span>
+        <div
+          class="lienzo"
+          style={{ background: '#F4F2EC', color: '#111114', borderColor: '#F4F2EC', ['--p1' as any]: '#A93F1C', ['--p2' as any]: '#3F3C9A', ['--p3' as any]: '#0E6654' }}
+        >
+          <Logotipo size={44} />
         </div>
       </div>
       <p style={{ marginTop: 14 }}>
         El símbolo es una <strong>urna</strong> vista de frente —marco redondeado y ranura— llena de <strong>tres barras crecientes</strong>, una
-        por paso y en su color: el voto, hecho de datos. El logotipo se escribe siempre en minúsculas, con <em>con</em> en cursiva y más suave,
-        para que se lea «vota · datos». Versión monocroma para un solo color. Área de respeto: la altura de la ranura alrededor del símbolo.
+        por paso y en su color: el voto, hecho de datos. El logotipo compone «vota con datos» en Archivo condensada, negra y en mayúsculas, con{' '}
+        <em>con</em> más suave para que se lea «vota · datos». Sobre negro, barras en tono vivo; sobre claro, en tono profundo. Área de respeto:
+        la altura de la ranura alrededor del símbolo. Fuera de la web (favicon, icono, redes) el símbolo va sobre su propio cuadrado negro, que se
+        lee igual en pestañas claras y oscuras.
       </p>
       <p>
-        Ficheros: <a href={`${REPO}/tree/main/web/public/marca`}>web/public/marca</a> (SVG del símbolo, logotipo horizontal, monocromo e imagen
-        para redes).
+        Ficheros: <a href={`${REPO}/tree/main/web/public/marca`}>web/public/marca</a> (símbolo en color y monocromo, logotipo horizontal, favicon,
+        icono de aplicación e imagen para redes).
       </p>
 
       <h2 style={{ marginTop: 40 }}>Los tres pasos</h2>
-      <div class="trayecto" style={{ margin: '12px 0' }}>
+      <div class="pasos-marca">
         {PASOS.map((p) => (
-          <div key={p.id} class={`etapa ${p.clase}`}>
-            <div class="num">
-              <b>{p.n}</b>
-              <span>{p.verbo}</span>
-            </div>
+          <div key={p.id} class={p.clase}>
+            <b>{p.n}</b>
+            <span>{p.verbo}</span>
             <p>{p.pregunta}</p>
           </div>
         ))}
       </div>
       <p>
-        Lema: <strong>Coincide. Contrasta. Cuenta.</strong> Tres verbos en imperativo, uno por paso, que dicen lo que hace la persona, no lo que
-        hace la herramienta. Cada paso tiene un color propio que se usa con moderación: números, barras, botón principal y acentos.
+        Tres verbos en imperativo, uno por paso, que dicen lo que hace la persona, no lo que hace la herramienta. Cada paso tiene su color: a
+        sangre en las bandas (portada, cabecera de cada paso, enlace al siguiente) y en tono vivo para cifras, barras y acentos sobre negro.
       </p>
 
       <h2 style={{ marginTop: 40 }}>Color</h2>
+      <h3>Neutros</h3>
       <div class="muestras">
-        {COLORES.map((c) => (
+        {NEUTROS.map((c) => (
           <div class="muestra" key={c.n}>
-            <i style={{ background: `var(${c.v})` }} />
+            <i style={{ background: c.hex, boxShadow: 'inset 0 0 0 1px var(--line)' }} />
             <div>
               <strong>{c.n}</strong>
               <br />
-              <span class="muted">{c.hex}</span>
+              <code>{c.hex}</code>
               <br />
               {c.uso}
             </div>
           </div>
         ))}
       </div>
+      <h3 style={{ marginTop: 24 }}>Pasos</h3>
+      <div class="muestras">
+        {PASOS.map((p) => {
+          const h = PASO_HEX[p.clase];
+          return (
+            <div class="muestra" key={p.id}>
+              <i style={{ background: `linear-gradient(90deg, ${h.banda} 50%, ${h.vivo} 50%)` }} />
+              <div>
+                <strong>
+                  {p.n} · {p.verbo}
+                </strong>
+                <br />
+                <code>{h.banda}</code> banda · <code>{h.vivo}</code> vivo
+                <br />
+                {h.nombre}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <h3 style={{ marginTop: 24 }}>Valoraciones</h3>
+      <div class="muestras">
+        {VALORACIONES.map((c) => (
+          <div class="muestra" key={c.n}>
+            <i style={{ background: c.hex, display: 'grid', placeItems: 'center', color: '#0E0E10', fontWeight: 900, fontSize: '1.6rem' }} aria-hidden="true">
+              {c.s}
+            </i>
+            <div>
+              <strong>{c.n}</strong>
+              <br />
+              <code>{c.hex}</code>
+            </div>
+          </div>
+        ))}
+      </div>
       <p style={{ marginTop: 14 }}>
-        Neutros cálidos de papel y tinta para que el contenido mande. No se usan nunca los colores corporativos de los partidos: en gráficos,
-        los partidos se distinguen por nombre y posición, no por color. Todos los pares texto/fondo cumplen contraste WCAG AA; hay modo oscuro.
+        Ni el rojo, el azul, el verde, el magenta, el morado, el amarillo, el naranja ni el turquesa de los partidos: los tres colores de paso solo
+        aparecen juntos y en ese orden. En gráficos, los partidos se distinguen por nombre y posición, nunca por color. Las valoraciones llevan
+        color y símbolo (✓ ~ ✕ ?) para leerse también sin distinguir colores. Todos los pares de texto cumplen WCAG AA (texto blanco sobre las
+        bandas: 6,2:1, 9:1 y 6,9:1; tinta sobre fondo: 17:1).
       </p>
 
       <h2 style={{ marginTop: 40 }}>Tipografía</h2>
       <div class="card">
-        <p style={{ fontFamily: 'var(--serif)', fontSize: '2rem', lineHeight: 1.15, margin: '0 0 6px' }}>Fraunces — titulares y cifras</p>
-        <p class="muted">Serif editorial con calidez; transmite seriedad sin solemnidad. Pesos 500–600.</p>
-        <p style={{ fontSize: '1.2rem', margin: '18px 0 6px', fontWeight: 600 }}>Inter — texto e interfaz</p>
-        <p class="muted" style={{ margin: 0 }}>Sans-serif de máxima legibilidad en pantalla, con cifras tabulares para los datos. Pesos 400–700.</p>
+        <p class="tipo-muestra">Vota sabiendo a qué votas.</p>
+        <p class="muted">Archivo condensada (anchura 62–68 %), pesos 800–900, en mayúsculas: titulares cortos, lema y cifras grandes.</p>
+        <p style={{ fontSize: '1.15rem', margin: '22px 0 6px' }}>
+          Archivo a anchura normal para el texto y la interfaz: legible en pantalla, con cifras tabulares para los datos.
+        </p>
+        <p class="muted" style={{ margin: 0 }}>
+          Pesos 400–700. Textos largos (metodología, análisis) en minúsculas y sin condensar; las mayúsculas condensadas se reservan para
+          titulares breves, botones y etiquetas.
+        </p>
       </div>
 
       <h2 style={{ marginTop: 40 }}>Voz</h2>

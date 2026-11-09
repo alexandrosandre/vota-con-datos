@@ -7,6 +7,6 @@ const b = await puppeteer.launch({ executablePath: exe, headless: true, args: ['
 const p = await b.newPage();
 await p.setViewport({ width: +w, height: +h, deviceScaleFactor: 1, isMobile: !!movil, hasTouch: !!movil });
 await p.goto(url, { waitUntil: 'networkidle0', timeout: 30000 });
-await new Promise((r) => setTimeout(r, 800));
+await new Promise((r) => setTimeout(r, +(process.env.CAPTURA_ESPERA || 800)));
 await p.screenshot({ path: out, fullPage: false });
 await b.close();

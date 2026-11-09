@@ -1,10 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
-<rect width="1200" height="630" fill="#F7F5F0"/>
-<g transform="translate(80 78) scale(2.6)"><rect x="2.5" y="2.5" width="27" height="27" rx="8" fill="none" stroke="#16161A" stroke-width="2.4"/><path d="M11 8.5h10" stroke="#16161A" stroke-width="2.4" stroke-linecap="round"/><rect x="8" y="17" width="4" height="7.5" rx="2" fill="#C2502B"/><rect x="14" y="13.5" width="4" height="11" rx="2" fill="#4A47A3"/><rect x="20" y="10" width="4" height="14.5" rx="2" fill="#13715F"/></g>
-<text x="185" y="137" font-family="Fraunces, Georgia, serif" font-size="46" font-weight="600" fill="#16161A">vota <tspan font-style="italic" font-weight="500" fill="#777782">con</tspan> datos</text>
-<text x="80" y="300" font-family="Fraunces, Georgia, serif" font-size="70" font-weight="600" letter-spacing="-1.5"><tspan fill="#C2502B">Coincide.</tspan> <tspan fill="#4A47A3">Contrasta.</tspan> <tspan fill="#13715F">Cuenta.</tspan></text>
-<text x="80" y="390" font-family="Fraunces, Georgia, serif" font-size="56" font-weight="600" fill="#16161A">Vota sabiendo a qué votas.</text>
-<text x="80" y="520" font-family="Inter, Helvetica, Arial, sans-serif" font-size="28" fill="#46464F">Elecciones generales 29-N · Fuentes oficiales · Código abierto · Sin recoger datos</text>
-<rect x="80" y="556" width="1040" height="6" rx="3" fill="#E3DFD5"/>
-<rect x="80" y="556" width="346" height="6" rx="3" fill="#C2502B"/><rect x="427" y="556" width="346" height="6" fill="#4A47A3"/><rect x="774" y="556" width="346" height="6" rx="3" fill="#13715F"/>
+<style>@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;display=swap');
+text{font-family:Archivo,'Arial Narrow','Helvetica Neue',Arial,sans-serif}
+.h{font-stretch:62%;font-weight:900;font-size:88px;letter-spacing:-0.5px}
+.wm{font-stretch:75%;font-weight:900;font-size:34px}
+.k{font-stretch:85%;font-weight:800;font-size:17px;letter-spacing:2.4px}
+.n{font-stretch:62%;font-weight:900;font-size:96px}
+.v{font-stretch:85%;font-weight:800;font-size:18px;letter-spacing:2.6px}
+.s{font-weight:500;font-size:22px}</style>
+<rect width="1200" height="630" fill="#000000"/>
+<g transform="translate(72 58) scale(1.75)"><rect x="2.5" y="2.5" width="27" height="27" rx="8" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M11 8.5h10" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/><rect x="8" y="17" width="4" height="7.5" rx="2" fill="#FF9670"/><rect x="14" y="13.5" width="4" height="11" rx="2" fill="#B1AEFF"/><rect x="20" y="10" width="4" height="14.5" rx="2" fill="#5CCFB4"/></g>
+<text class="wm" x="140" y="99" fill="#FFFFFF" textLength="244" lengthAdjust="spacingAndGlyphs">VOTA <tspan font-weight="500" fill-opacity="0.62">CON</tspan> DATOS</text>
+<rect x="72" y="146" width="560" height="38" fill="#FFFFFF"/>
+<text class="k" x="86" y="171" fill="#111114" textLength="532" lengthAdjust="spacingAndGlyphs">ELECCIONES GENERALES · 29 DE NOVIEMBRE DE 2026</text>
+<text class="h" x="68" y="290" textLength="1036" lengthAdjust="spacingAndGlyphs"><tspan fill="#FF9670">COINCIDE.</tspan> <tspan fill="#B1AEFF">CONTRASTA.</tspan> <tspan fill="#5CCFB4">CUENTA.</tspan></text>
+<text class="h" x="68" y="374" fill="#FFFFFF" textLength="940" lengthAdjust="spacingAndGlyphs">VOTA SABIENDO A QUÉ VOTAS.</text>
+<rect x="0" y="440" width="400" height="190" fill="#A93F1C"/>
+<rect x="400" y="440" width="400" height="190" fill="#3F3C9A"/>
+<rect x="800" y="440" width="400" height="190" fill="#0E6654"/>
+<text class="n" x="72" y="560" fill="#FFFFFF">1</text><text class="v" x="132" y="532" fill="#FFFFFF">COINCIDE</text><text class="s" x="132" y="562" fill="#FFFFFF" fill-opacity="0.92">¿Con quién coincides?</text>
+<text class="n" x="472" y="560" fill="#FFFFFF">2</text><text class="v" x="532" y="532" fill="#FFFFFF">CONTRASTA</text><text class="s" x="532" y="562" fill="#FFFFFF" fill-opacity="0.92">¿Qué hay detrás?</text>
+<text class="n" x="872" y="560" fill="#FFFFFF">3</text><text class="v" x="932" y="532" fill="#FFFFFF">CUENTA</text><text class="s" x="932" y="562" fill="#FFFFFF" fill-opacity="0.92">¿Tu voto tendrá escaño?</text>
 </svg>

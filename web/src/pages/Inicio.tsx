@@ -1,6 +1,6 @@
 import { estado } from '../store';
 import { fase1, fase2, fase3, partidos, REPO } from '../data';
-import { PASOS } from '../brand';
+import { LEMA, PASOS } from '../brand';
 
 export function Inicio() {
   const ps = partidos.value ?? [];
@@ -22,14 +22,11 @@ export function Inicio() {
       <section class="hero">
         <div class="kicker">Elecciones generales · 29 de noviembre de 2026</div>
         <h1>
-          <span class="l1">Coincide.</span> <span class="l2">Contrasta.</span> <span class="l3">Cuenta.</span>
+          <span class="l1">{LEMA.lema[0]}</span> <span class="l2">{LEMA.lema[1]}</span> <span class="l3">{LEMA.lema[2]}</span>
           <br />
-          <span class="eslogan">Vota sabiendo a qué votas.</span>
+          <span class="eslogan">{LEMA.eslogan}</span>
         </h1>
-        <p class="lead">
-          Tres pasos para pasar de la intuición a un voto informado: con quién coincides de verdad, qué hay detrás de lo que promete, y si tu
-          voto llegará a escaño en tu provincia. Con fuentes oficiales, algoritmos abiertos y sin guardar ningún dato tuyo.
-        </p>
+        <p class="lead">{LEMA.lead}</p>
         <div class="row">
           <a class="btn primary p1" href="#/coincide">
             Empezar por el paso 1
