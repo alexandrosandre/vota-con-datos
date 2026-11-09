@@ -63,6 +63,9 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
     229 enlaces verificados (211 Wikipedia, 18 fichas del Congreso comprobadas automáticamente) y
     afiliación con fuente en coaliciones; homónimos descartados. Sin
     documento oficial: vínculo PSdeG/PSIB/PSN/PSC/PSE con el PSOE, Teruel Existe, PANCAL-URCI, NEX.
+- [x] **6b. [Yo] Auditoría de redacción del cuestionario** (9-nov, a raíz de q05): 25 afirmaciones
+  reformuladas con la propuesta real completa (dirección, umbrales, a quién afecta), contexto verificado
+  en fuentes oficiales, q15 y q29 actualizadas a 2026, posiciones recodificadas y verificadas.
 - [ ] **7. [Tú] Revisar tú una muestra antes de anunciar** (con el diseño ya elegido): 2–3 propuestas
   por partido analizado en el paso 2 (cita, valoración y fuentes) y una pasada completa por el
   cuestionario del paso 1 buscando redacciones que no sean neutrales. La web sale bajo tu nombre.
