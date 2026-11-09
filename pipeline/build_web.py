@@ -62,7 +62,7 @@ def main():
                 "fecha": pr.get("fecha"),
                 "paginas": pr.get("paginas"),
                 "sha256": pr.get("sha256"),
-                "comprobado": pr.get("comprobado") or comprobado,
+                "comprobado": pr.get("comprobado") or pr.get("checked_at") or comprobado,
             },
             "promesas": [
                 {"texto": x["texto"], "tipo": x["tipo"], "area": x["area"], "fecha": x.get("fecha"), "quien": x.get("quien"),

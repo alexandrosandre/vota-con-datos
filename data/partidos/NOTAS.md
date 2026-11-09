@@ -2,6 +2,8 @@
 
 Última comprobación: 8 de noviembre de 2026, entre las 21:50 y las 22:05 (+01:00). Los datos estructurados están en `partidos.json`.
 
+Comprobación de los programas no publicados: 9 de noviembre de 2026, hacia las 09:30 (+01:00). Sin cambios: ningún programa nuevo y ninguna fecha nueva anunciada. La agenda de eaj-pnv.eus mantiene la presentación del PNV hoy a las 16:00. La del PP sigue anunciada para el martes 10-nov solo en prensa (también Demócrata: https://www.democrata.es/politica/feijoo-apuesta-por-el-cambio-necesario-como-lema-para-la-campana-que-iniciara-el-jueves-12-en-badalona/); no consta en pp.es. psoe.es (desafío anti-bots) y voxespana.es (HTTP 403) no se pudieron leer.
+
 ## 1. Universo de partidos
 
 Se incluyen las candidaturas al Congreso que cumplen al menos uno de estos criterios:
