@@ -44,7 +44,7 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
 - [ ] **5. [Yo] Quitar la etiqueta «versión provisional» del paso 1** solo cuando PP, PSOE, Vox,
   Frente Amplio y Podemos tengan posición documentada en al menos la mitad de las 30 afirmaciones
   (hoy: PP 8, Vox 7, Podemos 7, FA 3, PSOE 2). Mientras no, el paso 1 no debe ser lo que se promocione.
-- [ ] **6. [Yo] Paso 3: decir a quién elige tu voto y qué hay dentro de cada papeleta.**
+- [x] **6. [Yo] Paso 3: decir a quién elige tu voto y qué hay dentro de cada papeleta.**
   - Composición de las coaliciones explicada en lenguaje claro: p. ej. en Alicante la papeleta
     «Compromís: Front Valencià» (COMPROMIS-EUPV-PODEM-ERPV) incluye a Podemos y a Esquerra Unida, algo
     que no es evidente para el electorado. Igual con UPC en Canarias (NC-BC, Podemos, IU, Sumar),
@@ -56,7 +56,9 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
     fiable, se dice («afiliación no publicada»), sin suponerla.
   - Hecho en parte (9-nov): listas completas del BOE extraídas y validadas (3.820 titulares),
     composición oficial de las coaliciones (pactos JEC/JEP) y nombres de quien ocuparía cada escaño,
-    ya publicados. En curso: afiliación y enlaces de las 747 personas en puestos relevantes. Sin
+    ya publicados. Afiliación y enlaces de las 747 personas en puestos relevantes publicados (9-nov):
+    229 enlaces verificados (211 Wikipedia, 18 fichas del Congreso comprobadas automáticamente) y
+    afiliación con fuente en coaliciones; homónimos descartados. Sin
     documento oficial: vínculo PSdeG/PSIB/PSN/PSC/PSE con el PSOE, Teruel Existe, PANCAL-URCI, NEX.
 - [ ] **7. [Tú] Revisar tú una muestra antes de anunciar** (con el diseño ya elegido): 2–3 propuestas
   por partido analizado en el paso 2 (cita, valoración y fuentes) y una pasada completa por el
