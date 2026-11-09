@@ -12,6 +12,8 @@ export interface Tema {
   idea: string;
   fortalezas: string;
   riesgos: string;
+  /** Se muestra siempre en oscuro, sea cual sea la preferencia del sistema. */
+  soloOscuro?: boolean;
 }
 
 export const TEMAS: Tema[] = [
@@ -31,17 +33,18 @@ export const TEMAS: Tema[] = [
   },
   {
     id: 'campana',
-    nombre: 'Campaña',
+    nombre: 'Campaña (tu favorito, solo oscuro)',
+    soloOscuro: true,
     idea: 'Negro y papel, titulares condensados en mayúsculas, bandas de color y botones rectos.',
     fortalezas: 'El de más energía y llamada a la acción; la portada funciona como un cartel.',
     riesgos: 'Adopta el lenguaje de la propaganda electoral, lo que puede restar credibilidad a una herramienta neutral.',
   },
   {
-    id: 'campana-amarillo',
-    nombre: 'Campaña · amarillo (contrapropuesta)',
-    idea: 'Tu elegido, solo en oscuro: negro profundo, un amarillo rotundo y los tres pasos como tres pilares verticales.',
-    fortalezas: 'Máximo contraste y energía; los tres pilares hacen evidente el recorrido Coincide · Contrasta · Cuenta.',
-    riesgos: 'El amarillo ácido elegido (#E9F542) se aleja del dorado de Coalición Canaria y del ámbar de ERC (la CUP, de amarillo limón, no se presenta), pero el amarillo evoca para algunos el lazo del independentismo catalán.',
+    id: 'pilares',
+    nombre: 'Pilares (contrapropuesta)',
+    idea: 'Propuesta nueva desde cero: blanco y gris, un amarillo rotundo (#F7E25A) y los tres pasos como tres pilares amarillos numerados sobre una línea de suelo; titulares altos y estrechos (Big Shoulders).',
+    fortalezas: 'Los tres pilares estructuran toda la web (portada, cabecera de cada paso, menú, enlace al siguiente paso); luminoso y muy legible (tinta sobre amarillo 13,8:1); cada valoración tiene color y forma.',
+    riesgos: 'Amarillo más pálido y menos saturado que el de Coalición Canaria, ERC, SALF o el lazo amarillo, siempre junto a gris y tinta y sin formas de lazo; aun así, alguien puede asociar el amarillo a alguno de ellos.',
   },
   {
     id: 'datos',
@@ -92,6 +95,7 @@ export function aplicarTema(id = temaActual()) {
   const modo = param('modo');
   if (modo === 'oscuro') html.dataset.theme = 'dark';
   if (modo === 'claro') html.dataset.theme = 'light';
+  if (TEMAS.find((t) => t.id === id)?.soloOscuro) html.dataset.theme = 'dark';
   let link = document.getElementById('tema-css') as HTMLLinkElement | null;
   if (id === 'civico') {
     link?.remove();

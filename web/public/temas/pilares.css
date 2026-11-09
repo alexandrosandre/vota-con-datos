@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..800;1,62..125,400..800&family=Big+Shoulders+Display:wght@600..900&display=swap');
+/* ==========================================================================
+   Tema «pilares» — contrapropuesta desde cero.
+   Todas las reglas bajo html[data-tema="pilares"]. Solo claro (ignora ?modo=oscuro y el modo oscuro del sistema).
+
+   CONCEPTO. Los tres pasos son tres pilares: tres columnas amarillas iguales, altas, numeradas 1 · 2 · 3,
+   apoyadas sobre una misma línea de tierra en tinta. El motivo ordena el resto: la cabecera de cada paso es
+   una fila de tres pilares (el actual, más alto y en amarillo), el bloque «siguiente paso» es un tramo de
+   pilar, el símbolo pone las tres barras a la misma altura, los indicadores de la navegación son pilares
+   pequeños y la tabla 12×8 alterna columnas como una columnata.
+
+   AMARILLO #F7E25A — por qué este tono exacto (CIELCh ≈ 89 / 67 / 97):
+   · Colores amarillos de partidos que concurren el 29-N (los que usan agregadores y sus webs):
+       Coalición Canaria  ≈ #E8C400 / #FFD700 (oro; solo se presenta en Canarias)  → ΔE₇₆ 18 / 21
+       SALF               ≈ #F5A800 (ámbar; estatal)                                   → ΔE₇₆ 32
+       ERC                ≈ #FFB232 (ámbar; solo Cataluña)                             → ΔE₇₆ 29
+       Compromís          ≈ #E96B1C (naranja)                                          → muy lejos
+     CUP usa amarillo limón (#FFED00) pero NO se presenta el 29-N (listas del BOE).    → ΔE₇₆ 25
+   · Los amarillos de partido son oros y ámbares muy saturados (croma 75–92). Este es más claro, menos
+     saturado (croma 67) y algo más frío que el oro de CC: un amarillo «de rotulador / señalética», sin
+     dueño político. Es el tono con más distancia media a todos ellos sin caer en el limón verdoso.
+   · Lazo amarillo (independentismo catalán, ≈ #FFE100, croma 89): ΔE₇₆ 22. Mitigación: tono pálido y
+     no puro, siempre acompañado de tinta y gris; se usa en campos rectangulares verticales (pilares) y
+     nunca en forma de lazo, cinta o banda diagonal, ni como único color de un emblema.
+   · Contraste: tinta #161616 sobre el amarillo 13,8:1; texto secundario #3A3A37 sobre amarillo 8,7:1.
+     Nunca hay texto amarillo sobre blanco (1,3:1); el amarillo solo va como fondo, o sobre tinta (13,8:1).
+
+   GRISES: papel #FFFFFF, gris claro #F0F0EC (bandas, pie), línea #DCDCD6, borde de control #84847E
+   (3,8:1 sobre blanco, AA para componentes), texto atenuado #5A5A56 (6,9:1 sobre blanco, 6,1:1 sobre gris,
+   6,0:1 sobre el amarillo suave de las filas resaltadas). Valoraciones sobre su fondo suave: 5,4–6,1:1.
+
+   TIPOGRAFÍA: Big Shoulders Display (titulares y cifras): grotesca condensada de rotulación cívica, de
+   letras altas — refuerza la verticalidad de los pilares y hace las cifras grandes muy legibles.
+   Archivo (texto e interfaz): grotesca neutra con eje de anchura, muy legible en tamaño pequeño y en tablas.
+   ========================================================================== */
+
+/* ---------- Tokens (también sobre [data-theme="dark"] y prefers-color-scheme: dark) ----------
+   El selector con :not([data-theme="light"]) y el de [data-theme] pesan (0,2,1): ganan a
+   :root[data-theme='dark'] y a :root:not([data-theme='light']) (0,2,0) del tema base, con o sin
+   modo oscuro del sistema. Así este tema siempre muestra la paleta clara. */
+html[data-tema="pilares"],
+html[data-tema="pilares"]:not([data-theme="light"]),
+html[data-tema="pilares"][data-theme] {
+  --y: #f7e25a;          /* amarillo de marca: solo fondos (texto encima en tinta) */
+  --y-deep: #ebd03c;     /* amarillo hundido: hover y estrías sobre amarillo */
+  --y-soft: #fbf0b4;     /* fila resaltada, tu candidatura */
+  --y-pale: #fdf8de;     /* notas */
+  --paper: #ffffff;
+  --paper-2: #f0f0ec;
+  --card: #ffffff;
+  --ink: #161616;
+  --ink-2: #3a3a37;
+  --ink-3: #5a5a56;
+  --line: #dcdcd6;
+  --ctl: #84847e;        /* borde de controles: ≥ 3:1 sobre blanco */
+  --p1: var(--y); --p2: var(--y); --p3: var(--y);
+  --p1-soft: var(--y-soft); --p2-soft: var(--y-soft); --p3-soft: var(--y-soft);
+  --accent: var(--ink);
+  --on-c: #ffffff;
+  /* Valoraciones: color + forma (✓ ◐ ✕ ?). Texto sobre su fondo suave ≥ 4,5:1 */
+  --ok: #1b6b40; --ok-soft: #ddefe3;
+  --mid: #8c4a0b; --mid-soft: #f6e5d4;
+  --bad: #a3241b; --bad-soft: #f9dedb;
+  --na: #56564f; --na-soft: #e9e9e4;
+  --display: 'Big Shoulders Display', 'Arial Narrow', 'Roboto Condensed', Impact, sans-serif;
+  --serif: var(--display);
+  --sans: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --r: 4px;
+  --r-s: 3px;
+  color-scheme: light;
+}
+
+/* ---------- Base ---------- */
+html[data-tema="pilares"] body { background: var(--paper); color: var(--ink); font: 16.5px/1.6 var(--sans); }
+html[data-tema="pilares"] a { text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+html[data-tema="pilares"] a:hover { text-decoration-color: var(--ink); }
+html[data-tema="pilares"] .prose a,
+html[data-tema="pilares"] .note a,
+html[data-tema="pilares"] .muted a,
+html[data-tema="pilares"] p a,
+html[data-tema="pilares"] .srcs a { color: var(--ink); text-decoration-color: color-mix(in srgb, var(--ink) 55%, transparent); }
+html[data-tema="pilares"] .prose a:hover,
+html[data-tema="pilares"] p a:hover,
+html[data-tema="pilares"] .srcs a:hover { background: var(--y); text-decoration-color: var(--ink); }
+html[data-tema="pilares"] h1,
+html[data-tema="pilares"] h2 { font-family: var(--display); font-weight: 800; letter-spacing: 0; line-height: 0.98; }
+html[data-tema="pilares"] h1 { font-size: clamp(2.7rem, 6.4vw, 4.6rem); font-weight: 900; }
+html[data-tema="pilares"] h2 { font-size: clamp(1.9rem, 3.6vw, 2.5rem); }
+html[data-tema="pilares"] h3 { font-family: var(--sans); font-weight: 800; letter-spacing: -0.01em; line-height: 1.2; font-size: 1.2rem; }
+html[data-tema="pilares"] h4 { font-weight: 700; }
+html[data-tema="pilares"] small,
+html[data-tema="pilares"] .muted { color: var(--ink-3); }
+html[data-tema="pilares"] :focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; box-shadow: 0 0 0 7px var(--y); border-radius: 2px; }
+html[data-tema="pilares"] ::selection { background: var(--y); color: var(--ink); }
+html[data-tema="pilares"] .p1,
+html[data-tema="pilares"] .p2,
+html[data-tema="pilares"] .p3 { --c: var(--ink); --cs: var(--y-soft); }
+
+/* ---------- Marca ---------- */
+html[data-tema="pilares"] .simbolo { background: var(--y); border-radius: 7px; color: var(--ink); --p1: var(--ink); --p2: var(--ink); --p3: var(--ink); }
+/* Las tres barras, iguales: tres pilares dentro de la urna */
+html[data-tema="pilares"] .simbolo rect:nth-of-type(n + 2) { y: 12px; height: 12.5px; rx: 1px; }
+html[data-tema="pilares"] .wordmark { font-family: var(--display); font-weight: 800; font-size: 1.62rem; letter-spacing: 0.01em; line-height: 1; }
+html[data-tema="pilares"] .wordmark .con { font-style: normal; font-weight: 600; color: var(--ink-3); }
+
+/* ---------- Cabecera ---------- */
+html[data-tema="pilares"] .top { background: color-mix(in srgb, #fff 94%, transparent); border-bottom: 2px solid var(--ink); }
+html[data-tema="pilares"] .top .wrap { height: 66px; }
+html[data-tema="pilares"] .nav { gap: 4px; align-self: stretch; align-items: center; }
+html[data-tema="pilares"] .nav a { border-radius: 2px; color: var(--ink-2); font-weight: 600; font-size: 0.94rem; padding: 0 12px; min-height: 40px; gap: 8px; }
+html[data-tema="pilares"] .nav a:hover { background: var(--y-pale); color: var(--ink); }
+html[data-tema="pilares"] .nav a.on { background: var(--y); color: var(--ink); box-shadow: inset 0 -3px 0 var(--ink); font-weight: 700; }
+/* El punto de cada paso es un pilar pequeño */
+html[data-tema="pilares"] .nav a .dot { width: 7px; height: 17px; border-radius: 1px; background: var(--y); box-shadow: inset 0 0 0 1.5px var(--ink); }
+html[data-tema="pilares"] .nav a.on .dot { background: var(--ink); }
+
+/* ---------- Botones y controles ---------- */
+html[data-tema="pilares"] .btn { min-height: 46px; padding: 10px 20px; border: 2px solid var(--ink); border-radius: var(--r-s); background: var(--card); color: var(--ink); font-weight: 700; font-size: 0.97rem; letter-spacing: 0.005em; }
+html[data-tema="pilares"] .btn:hover { background: var(--y-pale); border-color: var(--ink); }
+html[data-tema="pilares"] .btn.primary { background: var(--y); border-color: var(--ink); color: var(--ink); box-shadow: inset 0 -4px 0 var(--y-deep); }
+html[data-tema="pilares"] .btn.primary:hover { filter: none; background: var(--y-deep); box-shadow: none; }
+html[data-tema="pilares"] .btn.ghost { background: transparent; border-color: transparent; color: var(--ink-2); min-height: 40px; text-decoration: underline; text-decoration-color: var(--ctl); text-underline-offset: 4px; }
+html[data-tema="pilares"] .btn.ghost:hover { color: var(--ink); background: var(--y-pale); }
+html[data-tema="pilares"] select,
+html[data-tema="pilares"] input[type='text'] { min-height: 46px; border: 1.5px solid var(--ctl); border-radius: var(--r-s); background-color: var(--card); color: var(--ink); }
+html[data-tema="pilares"] select:hover { border-color: var(--ink); }
+html[data-tema="pilares"] label.field { font-size: 0.8rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
+html[data-tema="pilares"] .card { background: var(--card); border: 1.5px solid var(--line); border-radius: var(--r); padding: 24px; }
+html[data-tema="pilares"] .note { background: var(--y-pale); border-left: 5px solid var(--y-deep); border-radius: 0 var(--r-s) var(--r-s) 0; color: var(--ink-2); }
+html[data-tema="pilares"] .pill { border-radius: 2px; background: var(--paper-2); color: var(--ink-2); font-weight: 700; padding: 2px 8px; }
+html[data-tema="pilares"] .kicker { display: inline-block; background: var(--y); color: var(--ink); padding: 5px 10px 4px; border-radius: 2px; font-size: 0.74rem; font-weight: 800; letter-spacing: 0.14em; margin-bottom: 14px; }
+html[data-tema="pilares"] .lead { color: var(--ink-2); font-size: 1.14rem; }
+
+/* ---------- Portada: titular ---------- */
+html[data-tema="pilares"] .hero { padding: 44px 0 8px; }
+html[data-tema="pilares"] .hero h1 { max-width: none; font-size: clamp(3.3rem, 7vw, 5.6rem); line-height: 0.92; margin: 0 0 20px; }
+html[data-tema="pilares"] .hero h1 br { display: none; }
+html[data-tema="pilares"] .hero h1 .l1,
+html[data-tema="pilares"] .hero h1 .l2,
+html[data-tema="pilares"] .hero h1 .l3 { display: flex; align-items: center; gap: 0.16em; color: var(--ink); }
+/* Cada verbo lleva su pilar numerado: rectángulo amarillo vertical con el número arriba */
+html[data-tema="pilares"] .hero h1 .l1::before,
+html[data-tema="pilares"] .hero h1 .l2::before,
+html[data-tema="pilares"] .hero h1 .l3::before { flex: 0 0 auto; display: flex; justify-content: center; align-items: flex-start; box-sizing: border-box; width: 1.25em; height: 2.15em; padding-top: 0.14em; margin-top: 0.1em; background: var(--y); color: var(--ink); font-size: 0.32em; font-weight: 900; line-height: 1; border-bottom: 0.2em solid var(--ink); }
+html[data-tema="pilares"] .hero h1 .l1::before { content: '1'; }
+html[data-tema="pilares"] .hero h1 .l2::before { content: '2'; }
+html[data-tema="pilares"] .hero h1 .l3::before { content: '3'; }
+html[data-tema="pilares"] .hero h1 .eslogan { display: inline-block; margin-top: 18px; font-family: var(--sans); font-weight: 800; font-size: clamp(1.25rem, 2.2vw, 1.6rem); line-height: 1.25; letter-spacing: -0.01em; color: var(--ink); background: linear-gradient(transparent 55%, var(--y) 55%); padding: 0 4px; }
+html[data-tema="pilares"] .hero .lead { font-size: 1.16rem; margin: 0; }
+html[data-tema="pilares"] .hero .row { margin-top: 24px; }
+@media (min-width: 900px) {
+  html[data-tema="pilares"] .hero { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); column-gap: 64px; align-items: end; }
+  html[data-tema="pilares"] .hero .kicker { grid-column: 1 / -1; justify-self: start; }
+  html[data-tema="pilares"] .hero h1 { grid-column: 1; grid-row: 2 / span 2; margin: 0; }
+  html[data-tema="pilares"] .hero .lead { grid-column: 2; grid-row: 2; }
+  html[data-tema="pilares"] .hero .row { grid-column: 2; grid-row: 3; }
+}
+
+/* ---------- Portada: los tres pilares ---------- */
+html[data-tema="pilares"] .trayecto { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 40px 0 18px; padding-bottom: 8px; border-bottom: 5px solid var(--ink); }
+html[data-tema="pilares"] .etapa {
+  --ink-3: var(--ink-2); /* sobre amarillo, el atenuado sube a 8,7:1 */
+  border: 0; border-radius: 0; color: var(--ink); padding: 26px 26px 22px;
+  background-color: var(--y);
+  /* Estrías verticales muy suaves: columna, no cinta */
+  background-image: repeating-linear-gradient(90deg, transparent 0 30px, rgb(22 22 22 / 0.045) 30px 32px);
+  transition: background-color 0.15s ease;
+}
+html[data-tema="pilares"] .etapa::before { display: none; }
+html[data-tema="pilares"] .etapa:hover { transform: none; background-color: var(--y-deep); }
+html[data-tema="pilares"] .etapa .num { display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; border-bottom: 3px solid var(--ink); padding-bottom: 12px; margin-bottom: 22px; }
+html[data-tema="pilares"] .etapa .num b { font-family: var(--display); font-weight: 900; font-size: 8.4rem; line-height: 0.74; color: var(--ink); }
+html[data-tema="pilares"] .etapa .num span { color: var(--ink); font-weight: 800; font-size: 0.86rem; letter-spacing: 0.16em; text-transform: uppercase; }
+html[data-tema="pilares"] .etapa h2 { font-size: clamp(2rem, 3.1vw, 2.55rem); line-height: 0.98; margin-bottom: 16px; }
+html[data-tema="pilares"] .etapa p { color: var(--ink-2); font-size: 1rem; flex: 0 0 auto; margin-bottom: 18px; }
+html[data-tema="pilares"] .etapa .estado { order: 4; margin-top: auto; padding: 12px 0; border-top: 1.5px solid rgb(22 22 22 / 0.35); color: var(--ink-2); font-size: 0.84rem; font-weight: 600; }
+/* El zócalo del pilar: la llamada a la acción */
+html[data-tema="pilares"] a.etapa { min-height: 590px; padding-bottom: 0; }
+html[data-tema="pilares"] a.etapa .go { order: 5; display: flex; justify-content: space-between; align-items: center; margin: 0 -26px; padding: 0 26px; min-height: 62px; background: var(--ink); color: #fff; font-weight: 700; font-size: 1rem; }
+html[data-tema="pilares"] a.etapa:hover .go { background: #000; }
+html[data-tema="pilares"] a.etapa:focus-visible { outline-offset: 4px; }
+html[data-tema="pilares"] .trayecto + p.muted { color: var(--ink-3); }
+@media (max-width: 900px) and (min-width: 721px) {
+  html[data-tema="pilares"] .trayecto { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  html[data-tema="pilares"] .etapa { padding: 20px 18px 18px; }
+  html[data-tema="pilares"] a.etapa .go { margin: 0 -18px; padding: 0 18px; }
+  html[data-tema="pilares"] .etapa .num b { font-size: 6rem; }
+}
+@media (max-width: 720px) {
+  /* Apilados, pero cada uno sigue siendo un pilar: fuste vertical con el número y el verbo en vertical */
+  html[data-tema="pilares"] .trayecto { grid-template-columns: 1fr; gap: 12px; margin-top: 32px; }
+  html[data-tema="pilares"] a.etapa { display: grid; grid-template-columns: 74px minmax(0, 1fr); grid-template-rows: auto auto 1fr auto; column-gap: 18px; min-height: 0; padding: 0; }
+  html[data-tema="pilares"] a.etapa .num { grid-column: 1; grid-row: 1 / 4; flex-direction: column; align-items: center; justify-content: flex-start; gap: 14px; margin: 0; padding: 20px 0 18px; border-bottom: 0; border-right: 3px solid var(--ink); background: rgb(22 22 22 / 0.05); }
+  html[data-tema="pilares"] a.etapa .num b { font-size: 4.6rem; }
+  html[data-tema="pilares"] a.etapa .num span { writing-mode: vertical-rl; transform: rotate(180deg); font-size: 0.84rem; letter-spacing: 0.2em; }
+  html[data-tema="pilares"] a.etapa h2 { grid-column: 2; grid-row: 1; padding: 20px 16px 0 0; font-size: 1.95rem; margin-bottom: 10px; }
+  html[data-tema="pilares"] a.etapa p { grid-column: 2; grid-row: 2; padding-right: 16px; font-size: 0.97rem; margin-bottom: 12px; }
+  html[data-tema="pilares"] a.etapa .estado { grid-column: 2; grid-row: 3; align-self: end; margin: 0 16px 0 0; }
+  html[data-tema="pilares"] a.etapa .go { grid-column: 1 / -1; grid-row: 4; margin: 0; padding: 0 18px; min-height: 56px; }
+}
+
+/* ---------- Portada: cifras, principios, preguntas ---------- */
+html[data-tema="pilares"] .cifras { gap: 0; background: transparent; border: 0; border-top: 3px solid var(--ink); border-bottom: 1.5px solid var(--line); border-radius: 0; margin: 44px 0; }
+html[data-tema="pilares"] .cifras div { background: transparent; padding: 22px 22px 22px 20px; border-left: 1.5px solid var(--line); }
+html[data-tema="pilares"] .cifras div:first-child { border-left: 0; padding-left: 0; }
+html[data-tema="pilares"] .cifras b { display: inline-block; font-family: var(--display); font-weight: 900; font-size: 3.2rem; line-height: 1; padding: 0 4px; margin: 0 0 8px -4px; background: linear-gradient(transparent 58%, var(--y) 58%); }
+html[data-tema="pilares"] .cifras span { display: block; font-size: 0.9rem; color: var(--ink-2); max-width: 22ch; }
+@media (max-width: 760px) {
+  html[data-tema="pilares"] .cifras div { padding: 18px 12px 18px 16px; }
+  html[data-tema="pilares"] .cifras div:nth-child(odd) { border-left: 0; padding-left: 0; }
+  html[data-tema="pilares"] .cifras div:nth-child(n + 3) { border-top: 1.5px solid var(--line); }
+  html[data-tema="pilares"] .cifras b { font-size: 2.6rem; }
+}
+html[data-tema="pilares"] .seccion { position: relative; border-top: 1.5px solid var(--line); padding: 48px 0; }
+html[data-tema="pilares"] .seccion::before { content: ''; position: absolute; left: 0; top: -1.5px; width: 96px; height: 6px; background: var(--ink); }
+html[data-tema="pilares"] .principios { gap: 28px 24px; }
+html[data-tema="pilares"] .principios > div { border-left: 6px solid var(--y); padding: 2px 0 4px 16px; }
+html[data-tema="pilares"] .principios h3 { font-family: var(--sans); font-weight: 800; font-size: 1.04rem; }
+html[data-tema="pilares"] .principios p { color: var(--ink-2); margin: 0; }
+html[data-tema="pilares"] .faq h2 { margin-bottom: 18px; }
+html[data-tema="pilares"] .faq details { border-bottom: 1.5px solid var(--line); padding: 0; }
+html[data-tema="pilares"] .faq details:first-of-type { border-top: 3px solid var(--ink); }
+html[data-tema="pilares"] .faq summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 58px; padding: 10px 0; font-weight: 700; font-size: 1.04rem; }
+html[data-tema="pilares"] .faq summary::after { content: '+'; float: none; flex: 0 0 auto; display: grid; place-items: center; width: 34px; height: 34px; background: var(--y); color: var(--ink); font-weight: 800; font-size: 1.25rem; line-height: 1; border-radius: 2px; }
+html[data-tema="pilares"] .faq details[open] summary::after { content: '–'; background: var(--ink); color: var(--y); }
+html[data-tema="pilares"] .faq summary:hover { background: var(--y-pale); }
+html[data-tema="pilares"] .faq details p { margin: 0 0 18px; max-width: 70ch; color: var(--ink-2); }
+
+/* ---------- Cabecera de paso: fila de tres pilares ---------- */
+html[data-tema="pilares"] .cab-paso { margin-bottom: 32px; }
+html[data-tema="pilares"] .pasos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: end; gap: 8px; margin: 0 0 30px; padding: 0 0 6px; border-bottom: 4px solid var(--ink); }
+html[data-tema="pilares"] .pasos li { min-width: 0; }
+html[data-tema="pilares"] .pasos a { display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; gap: 2px; height: 70px; padding: 8px 14px 10px; border: 0; border-radius: 0; background: var(--paper-2); color: var(--ink-2); font-size: 0.92rem; font-weight: 600; }
+html[data-tema="pilares"] .pasos a:hover { background: var(--y-pale); color: var(--ink); }
+html[data-tema="pilares"] .pasos .pn { width: auto; height: auto; display: block; background: none; color: var(--ink-2); font-family: var(--display); font-weight: 900; font-size: 1.9rem; line-height: 0.9; }
+html[data-tema="pilares"] .pasos .pv { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+html[data-tema="pilares"] .pasos li.on a { height: 104px; background-color: var(--y); background-image: repeating-linear-gradient(90deg, transparent 0 22px, rgb(22 22 22 / 0.05) 22px 24px); color: var(--ink); font-weight: 800; }
+html[data-tema="pilares"] .pasos li.on .pn { background: none; color: var(--ink); font-size: 3rem; }
+html[data-tema="pilares"] .cab-paso .kicker { margin-bottom: 14px; }
+html[data-tema="pilares"] .cab-paso h1 { font-size: clamp(2.9rem, 8vw, 4.8rem); margin-bottom: 16px; }
+html[data-tema="pilares"] .cab-paso .lead { font-size: 1.1rem; }
+
+/* ---------- Siguiente paso: un tramo de pilar ---------- */
+html[data-tema="pilares"] .siguiente {
+  --ink-3: var(--ink-2);
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 18px; row-gap: 4px; align-items: center;
+  margin-top: 44px; padding: 22px 22px 22px 26px; border: 0; border-left: 10px solid var(--ink); border-radius: 0;
+  background-color: var(--y);
+  background-image: repeating-linear-gradient(90deg, transparent 0 30px, rgb(22 22 22 / 0.045) 30px 32px);
+  color: var(--ink);
+}
+html[data-tema="pilares"] .siguiente:hover { background-color: var(--y-deep); }
+html[data-tema="pilares"] .siguiente > .muted { grid-column: 1; color: var(--ink-2); font-size: 0.76rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
+html[data-tema="pilares"] .siguiente strong { grid-column: 1; font-family: var(--display); font-weight: 800; font-size: clamp(1.6rem, 3.6vw, 2.1rem); line-height: 1.02; }
+html[data-tema="pilares"] .siguiente > span:last-child { grid-column: 2; grid-row: 1 / span 2; display: grid; place-items: center; width: 54px; height: 54px; background: var(--ink); color: var(--y); font-size: 1.5rem; font-weight: 700; border-radius: 2px; }
+
+/* ---------- Tablas ---------- */
+html[data-tema="pilares"] table { font-size: 0.94rem; }
+html[data-tema="pilares"] th { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; color: var(--ink-3); border-bottom: 2px solid var(--ink); }
+html[data-tema="pilares"] td { border-bottom: 1px solid var(--line); }
+html[data-tema="pilares"] .bar { height: 12px; background: var(--card); border: 1.5px solid var(--ink); border-radius: 0; }
+html[data-tema="pilares"] .bar > i { background: var(--y); border-radius: 0; box-shadow: inset -2px 0 0 var(--ink); }
+
+/* ---------- Paso 1 · Coincide ---------- */
+html[data-tema="pilares"] .progress { height: 12px; background: var(--card); border: 1.5px solid var(--ink); border-radius: 0; margin-bottom: 20px; }
+html[data-tema="pilares"] .progress > i { background: var(--y); box-shadow: inset -2px 0 0 var(--ink); }
+html[data-tema="pilares"] .q-card { padding: 30px; border-left: 10px solid var(--y); }
+html[data-tema="pilares"] .q-tema { display: inline-block; color: var(--ink); background: var(--y-soft); padding: 3px 8px; border-radius: 2px; font-size: 0.74rem; font-weight: 800; letter-spacing: 0.12em; }
+html[data-tema="pilares"] .q-text { font-family: var(--sans); font-weight: 700; font-size: clamp(1.3rem, 2.8vw, 1.62rem); line-height: 1.32; letter-spacing: -0.012em; }
+html[data-tema="pilares"] .likert { gap: 8px; }
+html[data-tema="pilares"] .likert button { min-height: 54px; padding: 10px 6px; border: 1.5px solid var(--ctl); border-radius: var(--r-s); background: var(--card); font-weight: 600; color: var(--ink); }
+html[data-tema="pilares"] .likert button:hover { border-color: var(--ink); background: var(--y-pale); }
+html[data-tema="pilares"] .likert button.on { background: var(--y); border: 2px solid var(--ink); color: var(--ink); font-weight: 800; }
+html[data-tema="pilares"] .likert button.on::before { content: '✓ '; }
+html[data-tema="pilares"] .star { min-height: 40px; border: 1.5px solid var(--ctl); border-radius: var(--r-s); color: var(--ink-2); font-weight: 600; padding: 6px 12px; }
+html[data-tema="pilares"] .star:hover { border-color: var(--ink); }
+html[data-tema="pilares"] .star.on { background: var(--y); border-color: var(--ink); color: var(--ink); font-weight: 800; }
+html[data-tema="pilares"] .rank-item { grid-template-columns: 40px 1fr auto; padding: 16px 0; }
+html[data-tema="pilares"] .rank-pos { font-family: var(--display); font-weight: 900; font-size: 2.1rem; line-height: 1; color: var(--ink-3); }
+html[data-tema="pilares"] .rank-val { font-family: var(--display); font-weight: 900; font-size: 2.1rem; line-height: 1; }
+html[data-tema="pilares"] .quote { border-left: 4px solid var(--y-deep); color: var(--ink-2); }
+html[data-tema="pilares"] .fuente-tag { color: var(--ink-3); font-weight: 800; }
+
+/* ---------- Paso 2 · Contrasta ---------- */
+html[data-tema="pilares"] .chip { border-radius: 2px; padding: 3px 8px; font-weight: 700; }
+html[data-tema="pilares"] .chip-btn { min-height: 40px; border: 1.5px solid var(--ctl); border-radius: var(--r-s); background: var(--card); color: var(--ink); font-weight: 700; }
+html[data-tema="pilares"] .chip-btn:hover { border-color: var(--ink); }
+html[data-tema="pilares"] .chip-btn.on { background: var(--y); border-color: var(--ink); color: var(--ink); }
+html[data-tema="pilares"] .val-favorable::before { content: '✓ '; }
+html[data-tema="pilares"] .val-mixta::before { content: '◐ '; }
+html[data-tema="pilares"] .val-desfavorable::before { content: '✕ '; }
+html[data-tema="pilares"] .val-no_verificable::before { content: '? '; }
+html[data-tema="pilares"] .val-no_verificable { background: var(--card); box-shadow: inset 0 0 0 1.5px var(--na); }
+html[data-tema="pilares"] .card.prop { padding: 0; overflow: hidden; }
+html[data-tema="pilares"] .prop-head { padding: 24px; }
+html[data-tema="pilares"] .prop .q-tema { background: var(--y); }
+html[data-tema="pilares"] .prop-body { background: var(--paper-2); border-top: 1.5px solid var(--line); }
+html[data-tema="pilares"] .desplegable > summary { color: var(--ink); font-weight: 800; min-height: 40px; display: list-item; padding-top: 6px; }
+html[data-tema="pilares"] .desplegable > summary::marker { color: var(--ink); }
+/* Reparto: barra con borde; «matizable» rayada y «no verificable» tramada, además del color */
+html[data-tema="pilares"] .reparto { height: 16px !important; border-radius: 0 !important; box-shadow: 0 0 0 1.5px var(--ink); }
+html[data-tema="pilares"] .reparto i { display: block; }
+html[data-tema="pilares"] .reparto i + i { box-shadow: inset 1.5px 0 0 #fff; }
+html[data-tema="pilares"] .reparto i:nth-child(2) { background-image: repeating-linear-gradient(135deg, transparent 0 4px, rgb(255 255 255 / 0.55) 4px 7px) !important; }
+html[data-tema="pilares"] .reparto i:nth-child(4) { background-image: repeating-linear-gradient(90deg, transparent 0 3px, rgb(255 255 255 / 0.45) 3px 5px) !important; }
+/* Leyenda y matriz 12×8: cuatro estados con color + forma */
+html[data-tema="pilares"] .legend { gap: 6px 14px; color: var(--ink-2); font-weight: 600; }
+html[data-tema="pilares"] .legend i,
+html[data-tema="pilares"] .mapa .sq { position: relative; display: grid; place-items: center; border-radius: 2px; opacity: 1 !important; }
+html[data-tema="pilares"] .legend i { width: 16px; height: 16px; }
+html[data-tema="pilares"] .legend span:nth-child(1) i::after,
+html[data-tema="pilares"] .mapa .sq--favorable::after { content: '✓'; color: #fff; font-weight: 900; }
+html[data-tema="pilares"] .legend span:nth-child(2) i,
+html[data-tema="pilares"] .mapa .sq--mixta { background: linear-gradient(135deg, var(--mid) 0 50%, #fff 50% 100%) !important; box-shadow: inset 0 0 0 1.5px var(--mid); }
+html[data-tema="pilares"] .legend span:nth-child(3) i::after,
+html[data-tema="pilares"] .mapa .sq--desfavorable::after { content: '✕'; color: #fff; font-weight: 900; }
+html[data-tema="pilares"] .legend span:nth-child(4) i,
+html[data-tema="pilares"] .mapa .sq--no_verificable { background: #fff !important; box-shadow: inset 0 0 0 1.5px var(--na); }
+html[data-tema="pilares"] .legend span:nth-child(4) i::after,
+html[data-tema="pilares"] .mapa .sq--no_verificable::after { content: '?'; color: var(--na); font-weight: 800; }
+html[data-tema="pilares"] .legend i::after { font-size: 10px; line-height: 1; font-family: var(--sans); }
+html[data-tema="pilares"] .mapa .sq::after { font-size: 13px; line-height: 1; font-family: var(--sans); }
+html[data-tema="pilares"] .mapa .sq { width: 24px; height: 24px; }
+/* Columnas alternas: la matriz como columnata */
+html[data-tema="pilares"] .mapa td:nth-child(even),
+html[data-tema="pilares"] .mapa th:nth-child(even) { background: var(--paper-2); }
+html[data-tema="pilares"] .mapa th { border-bottom: 2px solid var(--ink); }
+html[data-tema="pilares"] .mapa th.v { color: var(--ink-2); font-weight: 700; font-size: 0.8rem; padding: 8px 4px; }
+html[data-tema="pilares"] .mapa td { border-bottom: 1px solid var(--line); }
+html[data-tema="pilares"] .mapa td:first-child a { color: var(--ink); text-decoration-color: var(--ctl); }
+
+/* ---------- Paso 3 · Cuenta ---------- */
+html[data-tema="pilares"] .big { font-family: var(--display); font-weight: 900; font-size: clamp(3.6rem, 9vw, 5.6rem); line-height: 0.9; }
+html[data-tema="pilares"] .verdict { display: inline-flex; align-items: center; gap: 7px; padding: 6px 12px; border-radius: 2px; font-weight: 800; font-size: 0.9rem; box-shadow: inset 0 0 0 1.5px currentColor; }
+html[data-tema="pilares"] .v-casi_seguro::before,
+html[data-tema="pilares"] .v-probable::before { content: '✓'; }
+html[data-tema="pilares"] .v-en_disputa::before { content: '◐'; }
+html[data-tema="pilares"] .v-improbable::before,
+html[data-tema="pilares"] .v-muy_improbable::before { content: '✕'; }
+html[data-tema="pilares"] .kpis { gap: 10px; }
+html[data-tema="pilares"] .kpi { background: var(--card); border: 1.5px solid var(--line); border-left: 6px solid var(--y); border-radius: 0; padding: 12px 14px 14px; }
+html[data-tema="pilares"] .kpi b { font-family: var(--display); font-weight: 900; font-size: 2.1rem; line-height: 1.05; }
+html[data-tema="pilares"] .kpi span { color: var(--ink-3); font-size: 0.82rem; }
+html[data-tema="pilares"] .tr-me td { background: var(--y-soft); }
+html[data-tema="pilares"] .tr-me td:first-child { box-shadow: inset 6px 0 0 var(--ink); padding-left: 14px; }
+html[data-tema="pilares"] .reco { border: 2px solid var(--ink); background: var(--y-pale); }
+html[data-tema="pilares"] .orden li { padding: 4px 0; }
+html[data-tema="pilares"] .orden button { min-width: 40px; min-height: 40px; border: 1.5px solid var(--ctl); border-radius: var(--r-s); background: var(--card); color: var(--ink); font-weight: 700; }
+html[data-tema="pilares"] .orden button:hover:not(:disabled) { border-color: var(--ink); background: var(--y-pale); }
+html[data-tema="pilares"] .orden button:disabled { opacity: 0.35; }
+
+/* ---------- Metodología, marca, galería ---------- */
+html[data-tema="pilares"] .prose h2 { padding-top: 14px; border-top: 3px solid var(--ink); }
+html[data-tema="pilares"] .prose code { background: var(--paper-2); border-radius: 2px; }
+html[data-tema="pilares"] .toc a { border-left: 3px solid var(--line); padding: 5px 0 5px 12px; color: var(--ink-2); }
+html[data-tema="pilares"] .toc a:hover { border-left-color: var(--y-deep); background: var(--y-pale); color: var(--ink); }
+html[data-tema="pilares"] .muestra,
+html[data-tema="pilares"] .lienzo { border: 1.5px solid var(--line); border-radius: var(--r); }
+
+/* ---------- Pie ---------- */
+html[data-tema="pilares"] footer { background: var(--paper-2); border-top: 0; padding: 0 0 48px; color: var(--ink-2); }
+/* Tres bases de pilar como remate superior */
+html[data-tema="pilares"] footer { border-top: 4px solid var(--ink); }
+/* Remate: las tres bases de pilar, alineadas con la rejilla de la portada (3 columnas, 16 px de calle) */
+html[data-tema="pilares"] footer::before { content: ''; display: block; width: min(1088px, calc(100% - 32px)); height: 12px; margin: 0 auto 36px; background: linear-gradient(90deg, var(--y) 0 calc((100% - 32px) / 3), transparent 0 calc((100% - 32px) / 3 + 16px), var(--y) 0 calc((100% - 32px) / 3 * 2 + 16px), transparent 0 calc((100% - 32px) / 3 * 2 + 32px), var(--y) 0 100%); }
+html[data-tema="pilares"] footer a { color: var(--ink); }
+
+html[data-tema="pilares"] .top .home { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; }
+html[data-tema="pilares"] .sr-only:focus { background: var(--y); color: var(--ink); padding: 12px 16px; border-radius: 2px; font-weight: 700; }
+@media (max-width: 760px) {
+  html[data-tema="pilares"] .top .wrap { height: 60px; gap: 8px; }
+  html[data-tema="pilares"] footer .wrap > div:last-child { line-height: 1.9; }
+  html[data-tema="pilares"] footer .wrap > div:last-child a { display: inline-block; min-height: 40px; line-height: 40px; }
+  html[data-tema="pilares"] .nav { gap: 2px; }
+  html[data-tema="pilares"] .nav a { padding: 0 8px; font-size: 0.86rem; gap: 6px; min-height: 42px; }
+  html[data-tema="pilares"] .nav a .dot { width: 6px; height: 14px; }
+  html[data-tema="pilares"] .hero { padding-top: 36px; }
+  html[data-tema="pilares"] .card { padding: 20px 18px; }
+  html[data-tema="pilares"] .q-card { padding: 22px 18px; border-left-width: 8px; }
+  html[data-tema="pilares"] .pasos a { height: 62px; padding: 8px 10px; font-size: 0.86rem; }
+  html[data-tema="pilares"] .pasos li.on a { height: 88px; }
+  html[data-tema="pilares"] .pasos li.on .pn { font-size: 2.5rem; }
+  html[data-tema="pilares"] .siguiente { padding: 18px 16px 18px 18px; border-left-width: 8px; }
+}
+@media (max-width: 600px) {
+  html[data-tema="pilares"] .likert button { min-height: 48px; }
+  html[data-tema="pilares"] .mapa .sq { width: 18px; height: 18px; }
+  html[data-tema="pilares"] .mapa .sq::after { font-size: 11px; }
+  html[data-tema="pilares"] .mapa th.v { font-size: 0.72rem; padding: 4px 1px; }
+}
