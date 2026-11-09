@@ -81,7 +81,9 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   0,05).
 - [ ] **15. [Yo] Candidaturas «sin base» en el paso 3** (SALF en el escenario 2023, Alhora, Drago,
   NEX, Adelante Andalucía fuera de Cádiz…): valorar un perfil de las europeas 2024 u otra referencia
-  documentada.
+  documentada. Hecho en parte (9-nov): la web ofrece con un clic los escenarios que sí la estiman (p. ej.
+  SALF → CIS, GAD3, 40dB); se descarta usar las europeas como «resultado de 2023» porque mezclaría
+  elecciones con participación muy distinta. Las que ningún escenario estima lo dicen explícitamente.
 - [ ] **16. [Yo] Tests del pipeline** (mapeo candidaturas → partidos, escenarios por encuesta) y
   pruebas de extremo a extremo de la web. Hecho en parte (9-nov): 10 tests de invariantes en CI
   (D'Hondt, reproducción de 2023, cuotas, reparto de Sumar, veda, citas); faltan los de extremo a extremo.

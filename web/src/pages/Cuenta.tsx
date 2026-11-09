@@ -224,8 +224,23 @@ export function Cuenta() {
               </div>
               {filaElegida.sinBase ? (
                 <p class="note" style={{ marginTop: 14 }}>
-                  No hay base para estimar esta candidatura en el escenario «{esc.nombre}» (no concurrió así en la elección de referencia o la
-                  encuesta no la recoge). Prueba otro escenario.
+                  No hay base para estimar esta candidatura en el escenario «{esc.nombre}»: no concurrió así en 2023 o la encuesta no la
+                  recoge.{' '}
+                  {(() => {
+                    const otros = escenarios.filter((x) => x.id !== esc.id && !(x.sin_base?.[circ.ine] ?? []).includes(elegida!.id));
+                    return otros.length ? (
+                      <>
+                        La estiman:{' '}
+                        {otros.map((x) => (
+                          <button key={x.id} class="chip-btn" style={{ margin: '4px 6px 0 0' }} onClick={() => actualizar({ escenario: x.id })}>
+                            {x.nombre}
+                          </button>
+                        ))}
+                      </>
+                    ) : (
+                      <>Ningún escenario disponible la estima, así que no podemos calcular su probabilidad de escaño.</>
+                    );
+                  })()}
                 </p>
               ) : (
                 <div class="kpis">
