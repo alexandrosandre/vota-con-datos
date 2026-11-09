@@ -66,6 +66,10 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
 - [x] **6b. [Yo] Auditoría de redacción del cuestionario** (9-nov, a raíz de q05): 25 afirmaciones
   reformuladas con la propuesta real completa (dirección, umbrales, a quién afecta), contexto verificado
   en fuentes oficiales, q15 y q29 actualizadas a 2026, posiciones recodificadas y verificadas.
+- [ ] **6c. [Yo → Tú] Revisar la selección de afirmaciones** cuando publiquen PP, PSOE, Vox y Frente Amplio:
+  se eligieron con solo 3 programas y hoy dejan a algunos partidos sin posición en ningún tema (PNV 0/30
+  con su programa ya publicado, porque propone medidas distintas). Proponer qué afirmaciones sustituir
+  por reservas o por propuestas de los nuevos programas para cubrir a todos; lo decides tú.
 - [ ] **7. [Tú] Revisar tú una muestra antes de anunciar** (con el diseño ya elegido): 2–3 propuestas
   por partido analizado en el paso 2 (cita, valoración y fuentes) y una pasada completa por el
   cuestionario del paso 1 buscando redacciones que no sean neutrales. La web sale bajo tu nombre.
