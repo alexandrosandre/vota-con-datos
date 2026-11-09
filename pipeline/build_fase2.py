@@ -47,8 +47,9 @@ ETIQUETAS = {
     "EH Bildu": "eh_bildu", "Bildu": "eh_bildu", "Junts": "junts", "JuntsxCat": "junts", "BNG": "bng",
     "EAJ-PNV": "pnv", "PNV": "pnv", "CCa": "cc", "Coalición Canaria (CCA)": "cc", "CC": "cc",
     "Front Valencià (FV)": "compromis", "PACMA": "PACMA",
+    "Sumar/Frente Amplio + confluencias": "bloque_sumar", "CCa": "cc",
 }
-IGNORADAS = {"UPN", "Otros partidos", "En blanco", "Otro", "Otro + Blanco", "Cup", "Adelante Andalucía (AA)", "A.Adelante"}
+IGNORADAS = {"UPN", "Otros partidos", "En blanco", "Otro", "Otro + Blanco", "Cup", "Adelante Andalucía (AA)", "A.Adelante", "AA"}
 SWING_DE = {"upn": "pp"}
 # La etiqueta genérica "Sumar" de las encuestas corresponde al espacio que en 2023 fue Sumar sin
 # Podemos (que ahora se mide aparte): Frente Amplio y sus marcas, Compromís (incluye EUPV) y la
@@ -56,12 +57,15 @@ SWING_DE = {"upn": "pp"}
 # la etiqueta "Frente Amplio" cubre solo Frente Amplio y UPC.
 BLOQUES = {"bloque_sumar": ["frente_amplio", "ara_mes_fa", "compromis", "upc"], "bloque_fa": ["frente_amplio", "ara_mes_fa", "upc"],
            "bloque_psoe": ["psoe", "psc"]}  # las encuestas dan PSOE incluyendo al PSC  # coalición UPN-PP sigue el swing del PP
-ESCENARIOS_ENCUESTA = ["cis-2026-10", "sigmados-2026-11-02", "gad3-2026-10", "40db-2026-10"]
+ESCENARIOS_ENCUESTA = ["cis-2026-10", "sigmados-2026-11-08", "gad3-2026-11", "40db-2026-11"]
 NOMBRES = {
     "cis-2026-10": "Encuesta CIS · barómetro de octubre (14-oct)",
     "sigmados-2026-11-02": "Encuesta Sigma Dos · El Mundo (1-nov)",
+    "sigmados-2026-11-08": "Encuesta Sigma Dos · El Mundo (8-nov)",
     "gad3-2026-10": "Encuesta GAD3 · ABC (12-oct)",
+    "gad3-2026-11": "Encuesta GAD3 · ABC (9-nov)",
     "40db-2026-10": "Encuesta 40dB · El País-SER (9-oct)",
+    "40db-2026-11": "Encuesta 40dB · El País-SER (9-nov)",
 }
 # Veda de encuestas (LOREG art. 69.7): prohibido publicar, difundir o reproducir sondeos durante los
 # cinco días anteriores a la votación. Se retiran desde el 24-nov 00:00 hasta el cierre de los
@@ -285,6 +289,10 @@ def main():
                 errores.append(f"{eid}: etiqueta sin mapear {lab}")
                 continue
             poll[ETIQUETAS[lab]] = p["pct"] / 100
+        # Si la encuesta no da Compromís por separado, su "Frente Amplio" se interpreta como el
+        # bloque completo (FA + confluencias, Compromís incluido): ver docs/METODOLOGIA.md.
+        if "bloque_fa" in poll and "compromis" not in poll:
+            poll["bloque_sumar"] = poll.pop("bloque_fa")
         # Factor de swing por clave (los bloques comparten un mismo factor)
         factor = {}
         for kp, val in poll.items():

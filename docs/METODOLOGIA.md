@@ -26,7 +26,8 @@ Casos especiales, todos explícitos en el fichero de mapeo:
 
 **Escenarios de encuesta**: *swing* proporcional. `cuota_prov = cuota_base_prov × encuesta_nac /
 base_nac`. La etiqueta genérica "Sumar" de las encuestas se aplica como bloque a Frente Amplio,
-Ara Més-FA, Compromís y UPC (y "PSOE" a PSOE + PSC), con un único factor. Partidos sin base 2023 pero
+Ara Més-FA, Compromís y UPC (y "PSOE" a PSOE + PSC), con un único factor; si la encuesta no da
+Compromís por separado, su "Frente Amplio" se interpreta igualmente como ese bloque completo. Partidos sin base 2023 pero
 con dato en la encuesta (SALF): perfil provincial de las europeas de 2024. Partidos que la encuesta
 no recoge: conservan su cuota base. UPN-PP sigue el factor del PP. Se renormaliza a 100 % con el
 voto en blanco de 2023 de la provincia. El informe `data/build/fase2_validacion.txt` compara los

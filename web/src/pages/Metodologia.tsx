@@ -116,7 +116,8 @@ export function Metodologia() {
               reparten ese voto según su peso en las europeas de 2024 en esa provincia; las candidaturas que no concurrieron en 2023 aparecen
               "sin base". <strong>Con una encuesta:</strong> el voto de cada partido en tu provincia es el de 2023 multiplicado por el cociente
               entre su estimación nacional y su resultado nacional (<em>swing</em> proporcional); los partidos que la encuesta no recoge conservan
-              su voto de 2023.
+              su voto de 2023. Si una encuestadora no da Compromís por separado, su cifra de «Frente Amplio» se toma como el espacio completo
+              (Frente Amplio y sus confluencias, Compromís incluido).
             </li>
             <li>
               <strong>Incertidumbre:</strong> 4.000 simulaciones en las que el voto de cada candidatura varía con un error log-normal σ = k/√cuota.
@@ -129,8 +130,8 @@ export function Metodologia() {
             <li><strong>Alternativa:</strong> si tu opción tiene menos de un 50 % de probabilidad, te mostramos la primera de tus siguientes preferencias (del paso 1 o de tu orden manual; las coaliciones cuentan para los partidos que las integran) que supera ese 50 % en tu provincia. Votar a quien prefieres siempre es legítimo: los votos cuentan también para la financiación pública y como señal política.</li>
           </ol>
           <p>
-            Comprobación: con cada encuesta, el total de escaños de nuestro modelo queda a menos de 5 escaños de la proyección publicada por la
-            propia encuestadora en los grandes partidos (<a href={gh('data/build/fase2_validacion.txt')}>informe</a>).
+            Comprobación: con cada encuesta, el total de escaños de nuestro modelo en el escenario central queda a 0–6 escaños de la proyección
+            publicada por la propia encuestadora en los grandes partidos (la diferencia viene de proyectar a cada provincia) (<a href={gh('data/build/fase2_validacion.txt')}>informe</a>).
           </p>
 
           <h2 id="ia">Uso de inteligencia artificial</h2>
