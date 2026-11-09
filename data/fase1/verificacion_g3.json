@@ -4,8 +4,23 @@
  "fecha": "2026-11-09",
  "aprobado": true,
  "revisadas": 1,
- "alcance": "Comparado con la versión verificada el 2026-11-08 (git HEAD): la única celda con valor nueva o cambiada es Junts q17 (fuente, cita, url, medio, fecha, quien, formato). El resto de cambios solo añade los campos quien/formato/marco a null en celdas de programa y reescribe notas de celdas nulas; las 31 celdas de programa con valor (ERC 13, BNG 17, CC 1) no cambian y no se reverificaron. No hay otras celdas de campaña.",
- "cambios": [],
+ "alcance": "Comparado con la versión verificada el 2026-11-08 (git HEAD): la única celda con valor nueva o cambiada es Junts q17 (fuente, cita, url, medio, fecha, quien, formato). El resto de cambios solo añade los campos quien/formato/marco a null en celdas de programa y reescribe notas de celdas nulas; las 31 celdas de programa con valor (ERC 13, BNG 17, CC 1) no cambian y no se reverificaron. No hay otras celdas de campaña. Revisión del 9-nov (q05 reformulada): ERC y BNG pasan de -1 a null; el resto de celdas q05 del grupo siguen en null.",
+ "cambios": [
+  {
+   "partido": "erc",
+   "pregunta": "q05",
+   "antes": -1,
+   "despues": null,
+   "motivo": "q05 reformulada. La nueva afirmación exime del IRPF a quien ingrese menos de 22.000 € y baja el tipo máximo al 25 %. El programa (p. 21) pide bajar el IRPF a las rentas del trabajo inferiores a 35.000 € y penalizar las rentas más altas; la cita usada (subir del 30 % al 35 % el tipo de las ganancias de capital) trata la base del ahorro, que la afirmación no toca. Coincide con una parte y choca con la otra: sin posición inequívoca, null."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q05",
+   "antes": -1,
+   "despues": null,
+   "motivo": "q05 reformulada. El programa (p. 43) pide más progresividad («que pague máis quen máis renda obtén») y también rebajar la tributación del trabajo; ante una medida que exime a quien ingresa menos de 22.000 € y baja el máximo al 25 %, coincide con una parte y choca con la otra, y no menciona una escala de dos tipos ni la propuesta de Vox: sin posición inequívoca, null."
+  }
+ ],
  "dudas": [
   "Junts q17 (+2), verificada: la crónica de ElNacional.cat (Vicenç Pagès, 2026-11-08) del acto de presentación de candidatos de Junts en Vilanova i la Geltrú recoge entre comillas a Nogueras: «Queremos recaudar, gestionar y decidir nuestros impuestos. Si lo hacen los vascos, nosotros también», y añade que será una de las condiciones para quien quiera negociar con Junts (esto último en estilo indirecto). Primera persona, posterior a la convocatoria, cita literal. Decisión independiente: +2 (propuesta expresa y prioritaria, condición de negociación), coincide con el codificador. Lo pide para Cataluña, como ERC y BNG (+2) para su comunidad.",
   "Junts q17, cargo: el artículo la llama «candidata de Junts per Catalunya al Congreso»; que es número uno por Barcelona y portavoz en el Congreso lo confirman otras crónicas (Diario de León 8-oct, Demócrata). «Acto de precampaña» es correcto: 8-nov es posterior a la convocatoria pero anterior al inicio formal de la campaña (13-nov)."
