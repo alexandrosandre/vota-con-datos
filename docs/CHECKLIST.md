@@ -21,7 +21,7 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   (bridge en tu Mac) para este repositorio, mejor tras el punto 1. Con el entorno creado, la rutina la
   configuro yo. Lo mecánico (veda de encuestas, validaciones) ya corre en GitHub Actions sin depender
   de nadie.
-- [ ] **3. [Yo → Tú] 3–5 diseños alternativos, refinados y pulidos, para que elijas uno.** Mismo
+- [x] **3. [Yo → Tú] 3–5 diseños alternativos, refinados y pulidos, para que elijas uno.** Mismo
   contenido y misma marca de base (nombre, lema, tres pasos), con direcciones visuales distintas:
   - un color principal fuerte y saturado, como las webs de los partidos, pero que no se identifique
     con ninguno (fuera de rojo PSOE, azul PP, verde Vox, morado Podemos, etc.);
@@ -34,9 +34,8 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   Cada uno navegable con las tres fases reales, en claro y oscuro, móvil y escritorio, y con contraste
   AA. Eliges tú; aplico el elegido antes de difundir.
   Listos (9-nov): galería en https://alexandrosandre.github.io/vota-con-datos/#/disenos — Cívico (actual),
-  Color fuerte, Campaña, Datos y Editorial, con valoración en docs/research/disenos.md. **Elegido (9-nov):
-  Campaña, solo en modo oscuro.** En curso: última contrapropuesta «Campaña · amarillo» (amarillo poco
-  usado por los partidos, tres pilares verticales). Después: aplicar el elegido como diseño por defecto.
+  Color fuerte, Campaña, Datos y Editorial, con valoración en docs/research/disenos.md. **Elegido (9-nov): **Campaña,
+  solo en modo oscuro**, ya aplicado como diseño de la web. En curso: último pulido y marca adaptada.
 - [ ] **4. [Externo → Yo] Programas de los partidos estatales.** Cuando salgan: lectura completa,
   evaluación, revisión independiente, auditoría de coherencia y recodificación del paso 1.
   - [ ] PNV — presentación anunciada 9-nov 16:00
@@ -125,7 +124,6 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
 |---|---|---|
 | 1 | Aprobar la carpeta permanente del proyecto | Cuanto antes |
 | 2 | Crear el entorno de rutinas (bridge) para este repositorio | Tras el punto 1 |
-| 3 | Elegir uno de los 3–5 diseños | Cuando te los presente |
 | 7 | Revisar una muestra de contenidos | Antes de anunciar la web |
 | 18 | Comprar dominio (opcional) | Cuando quieras |
 | 19 | Decidir si contactar con los partidos (opcional) | Cuando quieras |

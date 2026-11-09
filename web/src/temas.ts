@@ -64,7 +64,7 @@ export const TEMAS: Tema[] = [
 
 const CLAVE = 'vcd-tema';
 /** Diseño que ve quien no ha elegido otro en la galería. */
-export const TEMA_POR_DEFECTO = 'civico';
+export const TEMA_POR_DEFECTO = 'campana';
 
 function param(n: string): string | null {
   return new URLSearchParams(location.search).get(n);
@@ -97,10 +97,6 @@ export function aplicarTema(id = temaActual()) {
   if (modo === 'claro') html.dataset.theme = 'light';
   if (TEMAS.find((t) => t.id === id)?.soloOscuro) html.dataset.theme = 'dark';
   let link = document.getElementById('tema-css') as HTMLLinkElement | null;
-  if (id === 'civico') {
-    link?.remove();
-    return;
-  }
   if (!link) {
     link = document.createElement('link');
     link.id = 'tema-css';
