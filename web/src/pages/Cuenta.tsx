@@ -65,13 +65,16 @@ function Ordenar({ circ }: { circ: Circunscripcion }) {
         {e.rankingOrigen === 'fase1' ? 'Tu orden de preferencia viene del paso 1 (puedes cambiarlo)' : 'Ordena tus preferencias para que podamos sugerirte alternativa'}
       </summary>
       <ol class="orden" style={{ paddingLeft: 18 }}>
-        {lista.map((p, i) => (
-          <li key={p}>
-            <button aria-label="Subir" onClick={() => mover(i, -1)} disabled={i === 0}>↑</button>
-            <button aria-label="Bajar" onClick={() => mover(i, 1)} disabled={i === lista.length - 1}>↓</button>
-            {partido(p)?.siglas ?? p}
-          </li>
-        ))}
+        {lista.map((p, i) => {
+          const siglas = partido(p)?.siglas ?? p;
+          return (
+            <li key={p}>
+              <button aria-label={`Subir ${siglas}`} onClick={() => mover(i, -1)} disabled={i === 0}>↑</button>
+              <button aria-label={`Bajar ${siglas}`} onClick={() => mover(i, 1)} disabled={i === lista.length - 1}>↓</button>
+              {siglas}
+            </li>
+          );
+        })}
       </ol>
     </details>
   );
@@ -119,7 +122,9 @@ function QuienElige({ cand, escanos }: { cand: CandidaturaCirc; escanos: number 
       )}
       {tit.length > 0 && (
         <div>
-          <h4 style={{ marginBottom: 6 }}>¿A quién elegiría tu voto?</h4>
+          <h3 class="h4" style={{ marginBottom: 6 }}>
+            ¿A quién elegiría tu voto?
+          </h3>
           {elegidos.length > 0 && (
             <>
               <div class="muted" style={{ fontSize: '0.85rem' }}>Escaños de {cand.siglas} en el escenario central:</div>
@@ -239,16 +244,19 @@ export function Cuenta() {
               {f.titulo ?? 'fuente'}
             </a>
           ))}
-          · Incertidumbre:{' '}
-          <select
-            value={e.incertidumbre}
-            onChange={(ev) => actualizar({ incertidumbre: (ev.target as HTMLSelectElement).value as any })}
-            style={{ padding: '2px 6px', width: 'auto', display: 'inline-block' }}
-          >
-            <option value="baja">baja</option>
-            <option value="media">media</option>
-            <option value="alta">alta</option>
-          </select>
+          ·{' '}
+          <label>
+            Incertidumbre:{' '}
+            <select
+              value={e.incertidumbre}
+              onChange={(ev) => actualizar({ incertidumbre: (ev.target as HTMLSelectElement).value as any })}
+              style={{ padding: '2px 6px', width: 'auto', display: 'inline-block' }}
+            >
+              <option value="baja">baja</option>
+              <option value="media">media</option>
+              <option value="alta">alta</option>
+            </select>
+          </label>
         </p>
       </div>
 
@@ -262,7 +270,9 @@ export function Cuenta() {
         <div class="stack" style={{ marginTop: 18 }}>
           {noSePresenta && (
             <div class="card reco">
-              <h3>{partido(e.partido)?.siglas ?? e.partido} no se presenta en {circ.nombre}</h3>
+              <h2 class="h3">
+                {partido(e.partido)?.siglas ?? e.partido} no se presenta en {circ.nombre}
+              </h2>
               <p>
                 No figura entre las candidaturas proclamadas para esta circunscripción en el{' '}
                 <a href={circ.boe_url} target="_blank" rel="noopener">BOE ({circ.boe_id})</a>. Un voto a esa candidatura no es posible aquí.
@@ -278,6 +288,13 @@ export function Cuenta() {
             </div>
           )}
 
+          <p class="sr-only" aria-live="polite">
+            {filaElegida && elegida
+              ? filaElegida.sinBase
+                ? `${elegida.siglas} en ${circ.nombre}: sin estimación en este escenario.`
+                : `${elegida.siglas} en ${circ.nombre}: ${fmt.pct(filaElegida.pEscano)} de probabilidad de obtener al menos un escaño.`
+              : ''}
+          </p>
           {filaElegida && (
             <div class="card">
               <div class="row" style={{ justifyContent: 'space-between', alignItems: 'flex-start' }}>
@@ -360,12 +377,15 @@ export function Cuenta() {
           <Ordenar circ={circ} />
 
           <div class="card">
-            <h3>Todas las candidaturas en {circ.nombre}</h3>
+            <h2 class="h3" id="tabla-candidaturas">
+              Todas las candidaturas en {circ.nombre}
+            </h2>
             <p class="muted" style={{ fontSize: '0.9rem' }}>
               {circ.candidaturas.length} candidaturas proclamadas · {circ.escanos} escaños · fuente:{' '}
               <a href={circ.boe_url} target="_blank" rel="noopener">BOE {circ.boe_id}</a>
             </p>
-            <div class="scroll-x">
+            {/* Desplazable con el teclado cuando la tabla no cabe (móvil). */}
+            <div class="scroll-x" tabIndex={0} role="region" aria-labelledby="tabla-candidaturas">
               <table>
                 <thead>
                   <tr>

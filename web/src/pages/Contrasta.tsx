@@ -11,13 +11,18 @@ const VAL: Record<Valoracion, string> = {
   no_verificable: 'No verificable',
 };
 const COLOR: Record<Valoracion, string> = { favorable: 'ok', mixta: 'mid', desfavorable: 'bad', no_verificable: 'na' };
+/** Idioma de las citas que se muestran con traducción (para que el lector de pantalla las pronuncie bien). */
+const IDIOMA_CITA: Record<string, string> = {
+  erc: 'ca', junts: 'ca', psc: 'ca', ara_mes_fa: 'ca', compromis: 'ca', bng: 'gl', eh_bildu: 'eu', pnv: 'eu',
+};
+const sinMovimiento = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
 function Leyenda() {
   return (
     <div class="legend">
       {(Object.keys(VAL) as Valoracion[]).map((v) => (
         <span key={v}>
-          <i style={{ background: `var(--${COLOR[v]})` }} />
+          <i style={{ background: `var(--${COLOR[v]})` }} aria-hidden="true" />
           {VAL[v]}
         </span>
       ))}
@@ -31,7 +36,7 @@ function Resumen({ props }: { props: Propuesta[] }) {
   const total = Object.values(n).reduce((a, b) => a + b, 0) || 1;
   return (
     <div>
-      <div class="reparto" style={{ display: 'flex', height: 12, borderRadius: 99, overflow: 'hidden' }} role="img" aria-label="Reparto de valoraciones">
+      <div class="reparto" style={{ display: 'flex', height: 12, borderRadius: 99, overflow: 'hidden' }} aria-hidden="true">
         {(Object.keys(n) as Valoracion[]).map((v) => (
           <i key={v} style={{ width: `${(n[v] / total) * 100}%`, background: `var(--${COLOR[v]})` }} />
         ))}
@@ -48,11 +53,14 @@ function Mapa({ props }: { props: Propuesta[] }) {
   return (
     <div class="scroll-x">
       <table class="mapa" style={{ fontSize: '0.82rem' }}>
+        <caption class="sr-only">Valoración de cada propuesta en cada criterio</caption>
         <thead>
           <tr>
-            <th style={{ verticalAlign: 'bottom' }}>Propuesta</th>
+            <th scope="col" style={{ verticalAlign: 'bottom' }}>
+              Propuesta
+            </th>
             {crit.map((c) => (
-              <th key={c.id} class="v" title={c.pregunta}>
+              <th key={c.id} scope="col" class="v" title={c.pregunta}>
                 {c.nombre}
               </th>
             ))}
@@ -61,16 +69,25 @@ function Mapa({ props }: { props: Propuesta[] }) {
         <tbody>
           {props.map((p, i) => (
             <tr key={p.id}>
-              <td style={{ minWidth: 180 }}>
-                <a href={`#/contrasta/${ruta.value.split('/')[2]}`} onClick={(e) => { e.preventDefault(); document.getElementById(`prop-${p.id}`)?.scrollIntoView({ behavior: 'smooth' }); }}>
+              <th scope="row" style={{ minWidth: 180 }}>
+                <a
+                  href={`#/contrasta/${ruta.value.split('/')[2]}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const destino = document.getElementById(`prop-${p.id}`);
+                    destino?.scrollIntoView({ behavior: sinMovimiento() ? 'auto' : 'smooth' });
+                    destino?.focus({ preventScroll: true });
+                  }}
+                >
                   {i + 1}. {p.titulo}
                 </a>
-              </td>
+              </th>
               {crit.map((c) => {
                 const v = p.evaluacion[c.id]?.valoracion ?? 'no_verificable';
                 return (
                   <td key={c.id} title={`${c.nombre}: ${VAL[v]}`}>
-                    <div class={`sq sq--${v}`} style={{ background: `var(--${COLOR[v]})`, opacity: 0.85 }} />
+                    <div class={`sq sq--${v}`} style={{ background: `var(--${COLOR[v]})`, opacity: 0.85 }} aria-hidden="true" />
+                    <span class="sr-only">{VAL[v]}</span>
                   </td>
                 );
               })}
@@ -82,11 +99,12 @@ function Mapa({ props }: { props: Propuesta[] }) {
   );
 }
 
-function TarjetaPropuesta({ p, n }: { p: Propuesta; n: number }) {
+function TarjetaPropuesta({ p, n, partidoId }: { p: Propuesta; n: number; partidoId: string }) {
   const [open, setOpen] = useState(false);
   const crit = fase3.value!.criterios;
+  const lang = p.cita_traduccion ? IDIOMA_CITA[partidoId] : undefined;
   return (
-    <article class="card prop" id={`prop-${p.id}`}>
+    <article class="card prop" id={`prop-${p.id}`} tabIndex={-1}>
       <div class="prop-head">
         <span class="q-tema">
           {n} · {p.area}
@@ -94,7 +112,7 @@ function TarjetaPropuesta({ p, n }: { p: Propuesta; n: number }) {
         <h3 style={{ margin: '6px 0 8px' }}>{p.titulo}</h3>
         <p style={{ color: 'var(--ink-2)' }}>{p.resumen}</p>
         <p class="quote">
-          «{p.cita}» {p.pagina ? <span class="muted">(programa, p. {p.pagina})</span> : null}
+          <span lang={lang}>«{p.cita}»</span> {p.pagina ? <span class="muted">(programa, p. {p.pagina})</span> : null}
         </p>
         {p.cita_traduccion && <p class="muted" style={{ fontSize: '0.88rem' }}>Traducción: «{p.cita_traduccion}»</p>}
         <div class="chips" style={{ margin: '12px 0' }}>
@@ -211,7 +229,7 @@ export function Contrasta() {
           </div>
           <div class="chips">
             {afines.map((id) => (
-              <button key={id} class={`chip-btn ${id === sel ? 'on' : ''}`} onClick={() => elegir(id)}>
+              <button key={id} class={`chip-btn ${id === sel ? 'on' : ''}`} aria-pressed={id === sel} onClick={() => elegir(id)}>
                 {partido(id)?.siglas ?? id}
                 {evaluados.has(id) ? '' : ' · pendiente'}
               </button>
@@ -255,7 +273,9 @@ export function Contrasta() {
           <>
             <div class="card stack">
               <div class="row between">
-                <h3 style={{ margin: 0 }}>{p.siglas}: el programa de un vistazo</h3>
+                <h2 class="h3" style={{ margin: 0 }}>
+                  {p.siglas}: el programa de un vistazo
+                </h2>
                 <Leyenda />
               </div>
               <Resumen props={datos.propuestas} />
@@ -270,7 +290,7 @@ export function Contrasta() {
               </p>
             </div>
             {datos.propuestas.map((x, i) => (
-              <TarjetaPropuesta key={x.id} p={x} n={i + 1} />
+              <TarjetaPropuesta key={x.id} p={x} n={i + 1} partidoId={sel} />
             ))}
           </>
         )}

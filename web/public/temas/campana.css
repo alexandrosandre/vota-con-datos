@@ -19,7 +19,7 @@ html[data-tema="campana"][data-tema] {
   --paper-2: #19191d;
   --card: #151518;
   --line: #2c2c32;
-  --line-2: #4a4a52;      /* bordes de controles */
+  --line-2: #6b6b73;      /* bordes de controles: ≥ 3:1 sobre fondo y tarjeta (WCAG 1.4.11) */
   /* Texto */
   --ink: #f4f2eb;
   --ink-2: #cac8c1;
@@ -61,6 +61,8 @@ html[data-tema="campana"] h2 { text-transform: uppercase; }
 html[data-tema="campana"] h1 { font-size: clamp(2.6rem, 7vw, 4.6rem); font-weight: 900; line-height: 0.92; }
 html[data-tema="campana"] h2 { font-size: clamp(1.7rem, 3.6vw, 2.5rem); line-height: 0.98; }
 html[data-tema="campana"] h3 { font-size: 1.32rem; line-height: 1.15; }
+html[data-tema="campana"] h2.h3 { text-transform: none; font-size: 1.32rem; line-height: 1.15; }
+html[data-tema="campana"] h3.h4 { font-stretch: 88%; font-weight: 800; font-size: 1.02rem; line-height: 1.3; letter-spacing: 0; }
 html[data-tema="campana"] h4 { font-family: var(--serif); font-stretch: 88%; font-weight: 800; font-size: 1.02rem; line-height: 1.3; }
 html[data-tema="campana"] :focus-visible { outline: 3px solid var(--c, var(--ink)); outline-offset: 3px; border-radius: 2px; }
 html[data-tema="campana"] .kicker { font-stretch: 85%; font-weight: 800; letter-spacing: 0.14em; font-size: 0.78rem; color: var(--c, var(--ink-2)); }
@@ -99,7 +101,8 @@ html[data-tema="campana"] .nav a .dot { width: 9px; height: 9px; border-radius: 
 html[data-tema="campana"] .hero { --bandbg: var(--band); position: relative; color: #fff; padding: 60px 0 116px; }
 html[data-tema="campana"] .hero > * { position: relative; }
 html[data-tema="campana"] .hero::before {
-  content: '29N'; position: absolute; right: -6px; bottom: 84px; z-index: 0;
+  content: '29N'; content: '29N' / ''; /* decorativo: sin texto alternativo para lectores de pantalla */
+  position: absolute; right: -6px; bottom: 84px; z-index: 0;
   font: 900 clamp(8rem, 19vw, 15rem) / 0.8 var(--serif); font-stretch: 62%; letter-spacing: -0.02em;
   color: transparent; -webkit-text-stroke: 2px rgba(255, 255, 255, 0.12); pointer-events: none;
 }
@@ -229,7 +232,8 @@ html[data-tema="campana"] .cab-paso :focus-visible { outline-color: #fff; }
 
 /* ---------- Componentes ---------- */
 html[data-tema="campana"] .card { background: var(--card); border-radius: var(--r); border: 1px solid var(--line); }
-html[data-tema="campana"] .card > h3:first-child { margin-bottom: 6px; }
+html[data-tema="campana"] .card > h3:first-child,
+html[data-tema="campana"] .card > .h3:first-child { margin-bottom: 6px; }
 html[data-tema="campana"] .btn {
   border: 2px solid var(--ink); background: transparent; color: var(--ink); border-radius: 0; padding: 11px 20px 10px; min-height: 40px;
   font-weight: 800; font-stretch: 80%; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.95rem; line-height: 1.2;
@@ -288,7 +292,7 @@ html[data-tema="campana"] .likert button.on { background: var(--c); border-color
 html[data-tema="campana"] .progress { height: 8px; border-radius: 0; background: #2a2a30; }
 html[data-tema="campana"] .star { border-radius: 0; border: 1.5px solid var(--line-2); font-weight: 600; color: var(--ink-2); min-height: 40px; }
 html[data-tema="campana"] .star.on { background: var(--cs); color: var(--ink); border-color: var(--c); font-weight: 800; }
-html[data-tema="campana"] .rank-item { grid-template-columns: 46px 1fr auto; }
+html[data-tema="campana"] .rank-item { grid-template-columns: 46px minmax(0, 1fr) auto; }
 html[data-tema="campana"] .rank-item strong { font-size: 1.05rem; }
 html[data-tema="campana"] .rank-pos { font: 900 2rem / 1 var(--serif); font-stretch: 62%; color: var(--ink-3); }
 html[data-tema="campana"] .rank-item .btn.ghost { padding-left: 0 !important; }
@@ -332,7 +336,8 @@ html[data-tema="campana"] .prop { border-top: 5px solid var(--c, var(--ink)); }
 html[data-tema="campana"] .prop-head { padding: 26px; }
 html[data-tema="campana"] .prop-head h3 { font-size: 1.55rem; color: #fff; }
 html[data-tema="campana"] .prop-body { background: #111113; border-top-color: var(--line); }
-html[data-tema="campana"] .crit h4 { color: #fff; }
+html[data-tema="campana"] .crit h4,
+html[data-tema="campana"] .crit .h4 { color: #fff; }
 html[data-tema="campana"] .crit p { color: var(--ink-2); }
 html[data-tema="campana"] .srcs a { font-weight: 600; color: var(--c, var(--ink)); }
 
@@ -356,9 +361,10 @@ html[data-tema="campana"] .legend i[style*="--bad"]::after { content: '✕'; }
 html[data-tema="campana"] .mapa .sq--no_verificable::after,
 html[data-tema="campana"] .legend i[style*="--na"]::after { content: '?'; }
 html[data-tema="campana"] .mapa th.v { font-weight: 700; font-stretch: 88%; color: var(--ink-2); border-bottom: 2px solid var(--ink-3); }
-html[data-tema="campana"] .mapa td a { font-weight: 600; text-decoration: none; color: var(--ink); }
-html[data-tema="campana"] .mapa td a:hover { text-decoration: underline; }
-html[data-tema="campana"] .mapa tbody tr:hover td { background: #1c1c21; }
+html[data-tema="campana"] .mapa tbody th { font-stretch: 100%; letter-spacing: 0; color: inherit; font-weight: inherit; border-bottom: 1px solid var(--line); }
+html[data-tema="campana"] .mapa tbody a { font-weight: 600; text-decoration: none; color: var(--ink); }
+html[data-tema="campana"] .mapa tbody a:hover { text-decoration: underline; }
+html[data-tema="campana"] .mapa tbody tr:hover > * { background: #1c1c21; }
 
 /* ---------- Textos largos (metodología): sin mayúsculas condensadas ---------- */
 html[data-tema="campana"] .prose { font-size: 1.04rem; line-height: 1.7; }
@@ -414,7 +420,10 @@ html[data-tema="campana"] div.etapa { border-radius: 0; background: var(--card);
   html[data-tema="campana"] .cab-paso .pasos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-bottom: 24px; }
   html[data-tema="campana"] .cab-paso .pasos a { padding: 4px 6px 4px 4px; gap: 6px; font-size: 0.7rem; letter-spacing: 0.02em; min-width: 0; }
   html[data-tema="campana"] .cab-paso .pasos .pn { width: 22px; height: 22px; flex: none; }
-  html[data-tema="campana"] .cab-paso .pasos .pv { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  html[data-tema="campana"] .cab-paso .pasos .pv { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+  /* Que cada paso no invada el siguiente en pantallas muy estrechas (320 px) */
+  html[data-tema="campana"] .cab-paso .pasos li { min-width: 0; }
+  html[data-tema="campana"] .cab-paso .pasos a { max-width: 100%; }
   html[data-tema="campana"] .rank-val { font-size: 1.6rem; }
   html[data-tema="campana"] .card:not(.prop) { padding: 18px; }
   html[data-tema="campana"] .prop-head { padding: 20px 18px; }
@@ -424,6 +433,9 @@ html[data-tema="campana"] div.etapa { border-radius: 0; background: var(--card);
   html[data-tema="campana"] th { letter-spacing: 0.04em; }
   html[data-tema="campana"] .siguiente { padding: 22px 20px; }
   html[data-tema="campana"] .pasos-marca { grid-template-columns: 1fr; }
+}
+@media (max-width: 360px) {
+  html[data-tema="campana"] .cab-paso .pasos a { gap: 4px; padding-right: 4px; letter-spacing: 0; }
 }
 @media (max-width: 600px) {
   html[data-tema="campana"] .mapa .sq { width: 20px; height: 20px; }

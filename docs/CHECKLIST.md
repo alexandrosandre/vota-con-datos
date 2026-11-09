@@ -105,7 +105,9 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   pruebas de extremo a extremo de la web. Hecho (9-nov): 10 tests de invariantes en CI
   (D'Hondt, reproducción de 2023, cuotas, reparto de Sumar, veda, citas) y prueba de humo de extremo a
   extremo con Chrome sin interfaz en cada despliegue.
-- [ ] **17. [Yo] Auditoría de accesibilidad** (lector de pantalla, teclado, contraste en modo oscuro).
+- [x] **17. [Yo] Auditoría de accesibilidad** (lector de pantalla, teclado, contraste en modo oscuro).
+  Hecho (9-nov): WCAG 2.2 AA, axe-core sin incidencias en todas las rutas a 1280 y 320 px; detalle en
+  docs/research/accesibilidad.md. Pendiente: prueba con lectores de pantalla reales.
 - [x] **18. Dominio propio: votacondatos.org** — comprado en Porkbun el 9-nov (7,98 USD, caduca el
   9-11-2027, **renovación automática desactivada**, privacidad WHOIS activa). DNS con los registros de
   GitHub Pages (4 A, 4 AAAA, CNAME www), dominio activado en Pages con HTTPS obligatorio; github.io y

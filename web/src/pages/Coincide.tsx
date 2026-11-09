@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'preact/hooks';
+import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { actualizar, estado, ir, ruta } from '../store';
 import { fase1, fmt, partido, partidos } from '../data';
 import { afinidad, AVISO_COBERTURA, UMBRAL_EMPATE, type Valor } from '../engine/match';
@@ -103,9 +103,23 @@ function Tarjeta({ q, i, n, onNext, onPrev }: { q: Pregunta; i: number; n: numbe
   };
   const setPeso = (peso: 0.5 | 1 | 2) =>
     actualizar({ respuestas: { ...estado.value.respuestas, [q.id]: { valor: r?.valor ?? null, peso } } });
+  // Al empezar, el foco va al texto de la primera afirmación. Al pasar a la siguiente, el foco se queda en los
+  // botones de respuesta (sin pulsar Tab de más en cada una) y la nueva afirmación se anuncia por la región viva.
+  const texto = useRef<HTMLParagraphElement>(null);
+  useEffect(() => {
+    texto.current?.focus({ preventScroll: true });
+  }, []);
   return (
     <div>
-      <div class="progress" role="progressbar" aria-valuenow={i + 1} aria-valuemin={1} aria-valuemax={n}>
+      <div
+        class="progress"
+        role="progressbar"
+        aria-label="Progreso del cuestionario"
+        aria-valuenow={i + 1}
+        aria-valuemin={1}
+        aria-valuemax={n}
+        aria-valuetext={`Afirmación ${i + 1} de ${n}`}
+      >
         <i style={{ width: `${((i + 1) / n) * 100}%` }} />
       </div>
       <div class="card q-card">
@@ -115,7 +129,10 @@ function Tarjeta({ q, i, n, onNext, onPrev }: { q: Pregunta; i: number; n: numbe
             {i + 1} / {n}
           </span>
         </div>
-        <p class="q-text">{q.texto}</p>
+        <p class="q-text" ref={texto} tabIndex={-1}>
+          {q.texto}
+        </p>
+        <p class="sr-only" aria-live="polite">{`Afirmación ${i + 1} de ${n}: ${q.texto}`}</p>
         {q.contexto && (
           <p class="muted" style={{ fontSize: '0.93rem' }}>
             {q.contexto}{' '}
@@ -170,7 +187,7 @@ function Detalle({ partidoId }: { partidoId: string }) {
         if (u === null || u === undefined) return null;
         return (
           <div class="crit" key={q.id}>
-            <h4>{q.texto}</h4>
+            <h3 class="h4">{q.texto}</h3>
             <p>
               Tú: <strong>{etiqueta(u)}</strong> · {partido(partidoId)?.siglas}: <strong>{etiqueta(p?.valor)}</strong>
             </p>
@@ -252,7 +269,9 @@ function Resultados() {
         .filter((g) => g.filas.length > 0)
         .map((g) => (
           <section class="card" key={g.t}>
-            <h3 style={{ marginBottom: 2 }}>{g.t}</h3>
+            <h2 class="h3" style={{ marginBottom: 2 }}>
+              {g.t}
+            </h2>
             <p class="muted" style={{ fontSize: '0.88rem' }}>{g.d}</p>
             {g.filas.map((r, idx) => {
               const p = partido(r.partido);
@@ -277,7 +296,12 @@ function Resultados() {
                         </div>
                       )}
                       {r.comunes > 0 && (
-                        <button class="btn ghost" style={{ padding: '6px 0', fontSize: '0.88rem' }} onClick={() => setAbierto(abierto === r.partido ? null : r.partido)}>
+                        <button
+                          class="btn ghost"
+                          style={{ padding: '6px 0', fontSize: '0.88rem' }}
+                          aria-expanded={abierto === r.partido}
+                          onClick={() => setAbierto(abierto === r.partido ? null : r.partido)}
+                        >
                           {abierto === r.partido ? 'Ocultar detalle' : `Ver en qué coincidís (${r.comunes} ${r.comunes === 1 ? 'tema' : 'temas'})`}
                         </button>
                       )}

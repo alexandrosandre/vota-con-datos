@@ -4,7 +4,13 @@ import { EstadoProgramas } from './Coincide';
 const gh = (p: string) => `${REPO}/blob/main/${p}`;
 const ir = (id: string) => (e: Event) => {
   e.preventDefault();
-  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  const h = document.getElementById(id);
+  if (!h) return;
+  const reducido = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+  h.scrollIntoView({ behavior: reducido ? 'auto' : 'smooth' });
+  // El foco acompaña al desplazamiento: el siguiente Tab sigue desde esa sección.
+  h.setAttribute('tabindex', '-1');
+  h.focus({ preventScroll: true });
 };
 
 export function Metodologia() {

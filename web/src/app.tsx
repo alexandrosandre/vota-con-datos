@@ -1,6 +1,6 @@
-import { useEffect } from 'preact/hooks';
+import { useEffect, useRef } from 'preact/hooks';
 import { ruta } from './store';
-import { cargarDatos, errorCarga, partidos, REPO } from './data';
+import { cargarDatos, errorCarga, partido, partidos, REPO } from './data';
 import { Logotipo, PASOS } from './brand';
 import { Inicio } from './pages/Inicio';
 import { Coincide } from './pages/Coincide';
@@ -27,12 +27,21 @@ function Cabecera() {
         </a>
         <nav class="nav" aria-label="Principal">
           {PASOS.map((p) => (
-            <a key={p.id} class={`${p.clase} ${r.startsWith(p.ruta) ? 'on' : ''}`} href={`#${p.ruta}`}>
+            <a
+              key={p.id}
+              class={`${p.clase} ${r.startsWith(p.ruta) ? 'on' : ''}`}
+              href={`#${p.ruta}`}
+              aria-current={r.startsWith(p.ruta) ? 'page' : undefined}
+            >
               <span class="dot" aria-hidden="true" />
               {p.n} {p.verbo}
             </a>
           ))}
-          <a class={`hide-m ${r.startsWith('/metodologia') ? 'on' : ''}`} href="#/metodologia">
+          <a
+            class={`hide-m ${r.startsWith('/metodologia') ? 'on' : ''}`}
+            href="#/metodologia"
+            aria-current={r.startsWith('/metodologia') ? 'page' : undefined}
+          >
             Metodología
           </a>
         </nav>
@@ -63,11 +72,49 @@ function Pie() {
   );
 }
 
+const TITULO_INICIO = document.title;
+
+/** Título de la pestaña para cada ruta (lo primero que anuncia un lector de pantalla). */
+function tituloDe(r: string): string {
+  const paso = PASOS.find((p) => r.startsWith(p.ruta));
+  let t: string | null = null;
+  if (paso) {
+    const sel = paso.id === 'contrasta' ? partido(r.split('/')[2])?.siglas : undefined;
+    t = r.startsWith('/coincide/resultados') ? `Tus resultados · ${paso.verbo}` : sel ? `${paso.verbo}: ${sel}` : `${paso.verbo}: ${paso.pregunta}`;
+  } else if (r.startsWith('/metodologia')) t = 'Metodología';
+  else if (r.startsWith('/marca')) t = 'Marca';
+  else if (r.startsWith('/disenos')) t = 'Diseños';
+  return t ? `${t} · vota con datos` : TITULO_INICIO;
+}
+
+/** Lleva el foco al contenido principal (enlace de salto y cambios de página). */
+function enfocarContenido(desplazar = false) {
+  const main = document.getElementById('main');
+  const destino = (main?.querySelector('h1') as HTMLElement | null) ?? main;
+  if (!destino) return;
+  if (!destino.hasAttribute('tabindex')) destino.setAttribute('tabindex', '-1');
+  destino.focus({ preventScroll: !desplazar });
+}
+
 export function App() {
   useEffect(() => {
     cargarDatos();
   }, []);
   const r = ruta.value;
+  const primera = useRef(true);
+  useEffect(() => {
+    document.title = tituloDe(r);
+  }, [r, partidos.value]);
+  useEffect(() => {
+    if (primera.current) {
+      primera.current = false;
+      return;
+    }
+    // Tras navegar con un enlace (o si el control pulsado ha desaparecido), el foco pasa al título de
+    // la nueva página. Si se navega desde un desplegable o un botón que sigue en pantalla, no se mueve.
+    const a = document.activeElement;
+    if (!a || a === document.body || a.tagName === 'A') requestAnimationFrame(() => enfocarContenido());
+  }, [r]);
   const viejo = Object.keys(REDIRECCIONES).find((k) => r.startsWith(k));
   if (viejo) {
     location.replace(`#${REDIRECCIONES[viejo]}${r.slice(viejo.length)}`);
@@ -85,7 +132,16 @@ export function App() {
   else page = <Inicio />;
   return (
     <>
-      <a class="sr-only" href="#main">Saltar al contenido</a>
+      <a
+        class="sr-only"
+        href="#main"
+        onClick={(ev) => {
+          ev.preventDefault(); // el hash es la ruta: «#main» cambiaría de página
+          enfocarContenido(true);
+        }}
+      >
+        Saltar al contenido
+      </a>
       <Cabecera />
       <main id="main">{page}</main>
       <Pie />
