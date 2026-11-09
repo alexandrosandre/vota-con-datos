@@ -96,7 +96,7 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   cambios entre elecciones por provincia) en lugar de los parámetros razonados actuales (k = 0,04 /
   0,05). Hecho (9-nov): k = 0,08 con encuestas y 0,15 con la base de 2023, calibrado con 2015–2023;
   el modelo anterior era demasiado confiado (lo «improbable» salía el 40 % de las veces en 2023).
-- [ ] **15. [Yo] Candidaturas «sin base» en el paso 3** (SALF en el escenario 2023, Alhora, Drago,
+- [x] **15. [Yo] Candidaturas «sin base» en el paso 3** (SALF en el escenario 2023, Alhora, Drago,
   NEX, Adelante Andalucía fuera de Cádiz…): valorar un perfil de las europeas 2024 u otra referencia
   documentada. Hecho en parte (9-nov): la web ofrece con un clic los escenarios que sí la estiman (p. ej.
   SALF → CIS, GAD3, 40dB); se descarta usar las europeas como «resultado de 2023» porque mezclaría
@@ -113,8 +113,8 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   (Settings → Pages) y activar la verificación en dos pasos en Porkbun.
 - [ ] **19. [Tú] Revisión de posiciones por los propios partidos** (práctica recomendada en la
   literatura de estos cuestionarios): solo si decides contactar con ellos.
-- [ ] **20. [Yo] Avisos menores**: el runner `ubuntu-latest` de GitHub Actions migra a Ubuntu 26
-  (revisar que el despliegue sigue en verde).
+- [x] **20. [Yo] Avisos menores**: el runner `ubuntu-latest` de GitHub Actions migra a Ubuntu 26
+  (revisar que el despliegue sigue en verde). Hecho (9-nov): fijado `ubuntu-24.04` hasta después del 29-N.
 
 ## C. Después del 29-N
 
