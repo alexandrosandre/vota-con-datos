@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:java="http://xml.apache.org/xalan/java" lang="es">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Registro de Partidos Pol&iacute;ticos</title>
+<meta content="Ministerio del Interior" name="author">
+<meta content="mir.es" name="publisher">
+<meta content="http://www.mir.es/index.html" name="relation">
+<meta content="Ministerio del Interior" name="owner">
+<meta content="no-store" http-equiv="Cache-Control">
+<meta content="no-cache" http-equiv="Pragma">
+<meta content="0" http-equiv="Expires">
+<link type="text/css" rel="stylesheet" href="/nfrontal/estilos/frontal.css">
+<script src="/nfrontal/jss/frontal.js" type="text/javascript"> </script>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<script src="/nfrontal/jss/jsexcel/frontal_excel.js" type="text/javascript"> </script><script src="https://cdn.jsdelivr.net/alasql/0.3/alasql.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script><script type="text/javascript">
+       
+         function cargarTodo(){
+            //tamPag es el número máximo de registros
+            tamPag = 100000;
+            document.getElementsByName("tamPag")[0].value = tamPag;
+            alert('Por favor, a continuación, espere a que cargue el listado completo antes de generar la Excel.');
+            //llamando a la búsqueda para obtener todos los registros
+            document.forms[0].submit();
+        }
+        
+        function generarExcel(){
+            document.getElementById("botonexcel").value="Espere, generando Excel ...";
+            document.getElementById("botonexcel").disabled=true;
+            generar();
+            document.getElementById("botonexcel").value="Generar Excel";
+            document.getElementById("botonexcel").disabled=false;
+        }
+        
+        function formatCadena(tabla) {
+            var primerosTD = document.getElementsByClassName("firstTD");
+            
+            var i=0;
+            while (i != primerosTD.length-1) {    
+                var item = primerosTD[i];
+                var temp = item.textContent;
+                tabla = tabla.replace(item.innerHTML,temp)
+                i++;
+            }
+
+            return tabla;
+        }
+        
+                
+        function generar(){
+            cantidadRegistros();
+            if (identificarNavegador()==0){
+                alert(    'Por favor, compruebe que su navegador no tiene bloqueadas ' +
+                        'las ventanas emergentes para este sitio, así el fichero ' +
+                        'Excel generado se descargará completo a su ordenador.');
+                generarExcelChrome('webpartido_politico.xls');
+                alert('Ha finalizado la exportación a Excel. Encontrará el fichero en la carpeta de descargas de su navegador ');        
+            } else {
+                alert(    'Para que pueda exportar esta Excel en Internet Explorer, '+
+                        'la opción de seguridad de "Inicializar y generar scripts de los ' + 
+                        'controles ActiveX no marcados como seguros para ' + 
+                        'scripts" deberá estar "Habilitada".');
+                generarExcelExplorer('webpartido_politico.xls');
+                alert('Ha finalizado la exportación a Excel. Compruebe el fichero descargado.');
+            }    
+        }
+        
+        function generarExcelChrome(nombreFichero){
+            var tab_text = document.getElementsByTagName("table")[0].outerHTML;
+            var textRange; var j = 0;
+            var sa;
+            tab_text = formatCadena(tab_text);
+
+            sa = window.open('data:application/vnd.ms-excel,' + escape(tab_text)+';filename='+nombreFichero+';base64data');
+            //sa = window.open('data:application/vnd.ms-excel,' + encodeURIComponent(tab_text)+';filename='+nombreFichero+';base64data');
+            //Ojo que la función encodeURIComponent no codifica bien los caracteres UTF-8
+            if (sa != null) {
+                return (sa);
+            } else {
+                alert('El navegador ha bloqueado la ventana emergente');
+            }
+        }
+        
+        
+        function generarExcelExplorer(nombreFichero){
+            var numElementos = parseInt(document.getElementById('numElementos').value);
+            numElementos++;
+            var xls = new ActiveXObject('Excel.Application');
+            //xls.visible=true;
+            var newBook = xls.Workbooks.Add;
+            newBook.Worksheets.Add;
+            newBook.Worksheets(1).Activate;
+            
+            // se pone el titulo
+            newBook.Worksheets(1).Cells(2, 2).value = 'WebPartido Politico';
+                    
+            var i = 1;
+            var j = 1;
+            var fil = 4;
+            var col = 0;
+            
+            var table = document.getElementsByTagName('table')[0];
+            var headers = document.getElementsByTagName("th");
+         
+            var f = 1;
+            var th = ''; 
+            
+            while (f != 5) {    
+                th=headers[f-1].innerHTML;
+                newBook.Worksheets(1).Cells(fil, f).value = th;
+                f++;
+            }
+            
+            
+            fil=fil+2;
+            
+            var rows = document.getElementsByTagName("tbody")[0].rows;
+            
+            f=0;
+            var td1;
+            var td2;
+            var td3;
+            var td4;
+            while (f != numElementos-1) {    
+                var row = rows[f];
+                if (row != null){                 
+                    var tds = row.getElementsByTagName("td");
+                    //newBook.Worksheets(1).Cells(fil, 1).value = tds.innerHTML;
+                    //Formateamos el primer campo 
+                    var tdFirst = tds[0].innerHTML;
+                    var temp = document.createElement('div');
+                    temp.innerHTML = tdFirst;
+                    td1 = temp.textContent || temp.innerText;
+                    td1 = td1.replace('\t','');
+                    td1 = td1.replace('\n','');
+                    newBook.Worksheets(1).Cells(fil, 1).value = td1;
+                    td2 = tds[1].innerHTML;
+                    newBook.Worksheets(1).Cells(fil, 2).value = td2;
+                    td3 = tds[2].innerHTML;
+                    newBook.Worksheets(1).Cells(fil, 3).value = td3;
+                    var td4 = tds[3].innerHTML;
+                    newBook.Worksheets(1).Cells(fil, 4).value = td4;
+                    fil++;
+                    f++;
+                }
+            }
+            
+            newBook.Worksheets(1).Rows(2).EntireColumn.font.bold = true;
+
+            newBook.Worksheets(1).Cells(2, 1).EntireColumn.AutoFit();
+            if (newBook.Worksheets(1).Cells(2, 2).ColumnWidth > 80) {
+                newBook.Worksheets(1).Cells(2, 2).ColumnWidth = 80;
+            } 
+            newBook.Worksheets(1).Cells(2, 2).EntireColumn.AutoFit();
+            if (newBook.Worksheets(1).Cells(2, 2).ColumnWidth > 80) {
+                newBook.Worksheets(1).Cells(2, 2).ColumnWidth = 80;
+            } 
+            newBook.Worksheets(1).Cells(2, 3).EntireColumn.AutoFit();
+            if (newBook.Worksheets(1).Cells(2, 3).ColumnWidth > 100) {
+                newBook.Worksheets(1).Cells(2, 3).ColumnWidth = 100;
+            } 
+            newBook.Worksheets(1).Cells(2, 4).EntireColumn.AutoFit();
+            if (newBook.Worksheets(1).Cells(2, 4).ColumnWidth > 80) {
+                newBook.Worksheets(1).Cells(2, 4).ColumnWidth = 80;
+            }
+            xls.visible=true; 
+             
+        }
+
+        function identificarNavegador(){
+            var ua = window.navigator.userAgent;
+            var msie = ua.indexOf("MSIE ");
+            if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))      // If Internet Explorer
+            {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+        
+        function cantidadRegistros(){
+            var table = document.getElementsByTagName("table")[0];
+            var tbodyRowCount = table.tBodies[0].rows.length;
+            document.getElementById("numElementos").value = tbodyRowCount; 
+        } 
+        
+       </script>
+</head>
+<body>
+<div class="principal">
+<div class="pestanas">
+<ul>
+<li>
+<a href="webpartido_politico/partido_politico.html">Inicio</a>
+</li>
+<li>
+<a href="webpartido_politico/partido_politicoAyuda.html">Ayuda</a>
+</li>
+</ul>
+</div>
+<div class="cuerpo">
+<h1>.: Registro de Partidos Pol&iacute;ticos :...</h1>
+<form action="webpartido_politico/partido_politicoBuscar.html" method="post">
+<div style="white-space:nowrap;display:block;padding: 0.25em;width:98%;">
+<span style="display:inline-block;width:500px"><label style="float:left;width:25em;" for="formacionPolitica">Formaci&oacute;n Pol&iacute;tica (que contenga): </label><input id="formacionPolitica" name="formacionPolitica" maxlength="200" value="SOCIALISTES DE CATALUNYA" size="40" type="text"></span><span style="display:inline-block;margin-left:250px;"><label style="float:left;width:25em;" for="siglas">Siglas (que contenga): </label><input id="siglas" name="siglas" maxlength="200" value="" size="40" type="text"></span>
+</div>
+<div style="white-space:nowrap;display:block-inline;padding: 0.25em;width:98%;">
+<span style="display:inline-block;width:500px"><label style="float:left;width:25em;" for="tipoFormacion">Tipo de formaci&oacute;n:</label><select id="tipoFormacion" name="tipoFormacion"><option value=""></option><option value="P">PARTIDO POLITICO</option><option value="F">FEDERACI&Oacute;N</option><option value="U">UNI&Oacute;N</option></select></span><span style="display:inline-block;margin-left:250px;"><label style="float:left;width:25em;" for="ordenacion">Ordenado por:</label><select id="ordenacion" name="ordenacion"><option value="FECHA">Fecha</option><option value="DENOMINACION" selected>Denominaci&oacute;n</option></select></span>
+</div>
+<div style="white-space:nowrap;display:block-inline;padding: 0.25em;width:98%;">
+<span style="display:inline-block;width:500px"><label style="float:left;width:25em;" for="fechaInscripcion">Fecha de inscripci&oacute;n (d&iacute;a/mes/a&ntilde;o):</label><span id="fechaInscripcion"><input type="text" name="fecInsDesdeDia" id="fecInsDesdeDia" value="" style="width: 3em;" maxlength="2">/
+                    <input type="text" name="fecInsDesdeMes" id="fecInsDesdeMes" value="" style="width: 3em;" maxlength="2">/
+                    <input type="text" name="fecInsDesdeAnyo" id="fecInsDesdeAnyo" value="" style="width: 4em;" maxlength="4"></span></span><span style="display:inline-block;margin-left:250px;"><label style="float:left;width:25em;" for="fechaHasta">Fecha hasta (d&iacute;a/mes/a&ntilde;o):</label><span id="fechaHasta"><input type="text" name="fecInsHastaDia" id="fecInsHastaDia" value="" style="width: 3em;" maxlength="2">/
+                    <input type="text" name="fecInsHastaMes" id="fecInsHastaMes" value="" style="width: 3em;" maxlength="2">/
+                    <input type="text" name="fecInsHastaAnyo" id="fecInsHastaAnyo" value="" style="width: 4em;" maxlength="4"></span></span>
+</div>
+<div class="clear"></div>
+<hr>
+<div class="botonera">
+<div style="float:right; text-align: right;">
+<input id="botonexcel" type="button" value="Generar Excel" target="_blank" onclick="javascript:generarExcel()">
+</div>
+<input type="submit" value="Buscar" onClick="javascript:buscar()">
+</div>
+<input value="1" name="pagActual" type="hidden"><input value="25" name="tamPag" type="hidden"><input value="" id="numElementos" type="hidden"><span class="banner">1 datos encontrados, mostrando desde el 1 hasta el 1</span><span class="enlaces">
+			[Primera / 
+					Anterior]
+			1
+			[Siguiente / 
+					&Uacute;ltima]
+		</span>
+<table id="resultado" class="tabla">
+<thead>
+<th>Formaci&oacute;n Pol&iacute;tica (Siglas)</th><th>Direcci&oacute;n</th><th>Poblaci&oacute;n (Provincia)</th><th>Fecha de Inscripci&oacute;n</th>
+</thead>
+<tbody>
+<tr class="impar">
+<td class="firstTD"><a style="font-weight:bold;" href="webpartido_politico/partido_politicoDatos.html?nmformacion=351">PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)</a>
+<br>(PSC)     
+                                 </td><td>C/ Pallars n&ordm; 191</td><td>Barcelona
+                               (Barcelona)
+                            </td><td>18/10/1978</td>
+</tr>
+</tbody>
+</table>
+</form>
+</div>
+</div>
+</body>
+</html>

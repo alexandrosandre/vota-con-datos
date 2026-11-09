@@ -116,6 +116,35 @@ def main():
     def clave(r, c):
         return r["partido"] if r and r["partido"] else (r["siglas"][0] if r and r.get("siglas") else c["siglas"] or c["denominacion"])
 
+    # Coaliciones (pactos oficiales), titulares relevantes (BOE) y afiliaciones/enlaces documentados.
+    coal = load("boe/coaliciones.json") if (D / "boe/coaliciones.json").exists() else {}
+    relevantes = defaultdict(list)
+    if (D / "build/candidatos_relevantes.json").exists():
+        for x in load("build/candidatos_relevantes.json")["personas"]:
+            relevantes[(x["ine"], x["siglas"])].append(x)
+    afil = {}
+    for f in sorted((D / "boe").glob("afiliaciones_g*.json")):
+        for x in json.loads(f.read_text())["personas"]:
+            afil[(x["ine"], x["siglas"], x["orden"])] = x
+
+    def coalicion_de(siglas):
+        c = coal.get(siglas)
+        if not c or c.get("tipo") != "coalición" or len(c.get("miembros", [])) < 2:
+            return None
+        f = c.get("fuente") or {}
+        return {"tipo": "coalición", "miembros": [{"nombre": m["nombre"], "siglas": m.get("siglas")} for m in c["miembros"]],
+                "fuente": {"url": f.get("url"), "documento": f.get("documento")}, "nota": c.get("nota")}
+
+    def titulares_de(ine, siglas):
+        out = []
+        for x in sorted(relevantes.get((ine, siglas), []), key=lambda y: y["orden"]):
+            a = afil.get((ine, siglas, x["orden"]), {})
+            afiliacion = a.get("afiliacion") or (x["marca_boe"] if x.get("marca_boe") else None)
+            out.append({"orden": x["orden"], "nombre": x["nombre"], "afiliacion": afiliacion,
+                        "fuente_afiliacion": a.get("fuente_afiliacion") if a.get("afiliacion") else None,
+                        "enlace": a.get("enlace")})
+        return out
+
     circs = []
     base = {}  # ine -> cand_id -> votos base (float)
     clave_de = {}  # (ine, cand_id) -> clave de regla
@@ -166,6 +195,8 @@ def main():
                 "partido": r["partido"] if r else None,
                 "afines": r.get("afines", []) if r else [],
                 "cabeza_lista": c.get("cabeza_lista"),
+                "coalicion": coalicion_de(c["siglas"]) if c["siglas"] else None,
+                "titulares": titulares_de(ine, c["siglas"]),
             })
             if r is None:
                 log.append(f"{ine} sin regla (sin base): {c['siglas']} | {c['denominacion']}")

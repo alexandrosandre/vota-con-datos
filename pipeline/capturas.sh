@@ -9,7 +9,10 @@ shot() { "$CH" --headless=new --disable-gpu --hide-scrollbars --virtual-time-bud
 shot escritorio 1280,860 "${BASE}?tema=$T&modo=claro#/"
 shot escritorio-largo 1280,2600 "${BASE}?tema=$T&modo=claro#/"
 shot oscuro 1280,860 "${BASE}?tema=$T&modo=oscuro#/"
-shot movil 390,1600 "${BASE}?tema=$T&modo=claro#/"
+# Móvil con emulación de dispositivo (Chrome sin interfaz no baja de ~500 px de ventana)
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+node "$ROOT/tools/captura.mjs" "${BASE}?tema=$T&modo=claro#/" "$OUT/$T-movil.png" 390 1600 movil && echo "$OUT/$T-movil.png"
+node "$ROOT/tools/captura.mjs" "${BASE}?tema=$T&modo=claro&circ=28&partido=podemos#/cuenta" "$OUT/$T-movil-cuenta.png" 390 1600 movil && echo "$OUT/$T-movil-cuenta.png"
 shot contrasta 1280,1800 "${BASE}?tema=$T&modo=claro#/contrasta/erc"
 shot cuenta 1280,1600 "${BASE}?tema=$T&modo=claro&circ=28&partido=podemos#/cuenta"
 shot coincide 1280,1100 "${BASE}?tema=$T&modo=claro#/coincide"

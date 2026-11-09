@@ -70,7 +70,7 @@ function Mapa({ props }: { props: Propuesta[] }) {
                 const v = p.evaluacion[c.id]?.valoracion ?? 'no_verificable';
                 return (
                   <td key={c.id} title={`${c.nombre}: ${VAL[v]}`}>
-                    <div class="sq" style={{ background: `var(--${COLOR[v]})`, opacity: 0.85 }} />
+                    <div class={`sq sq--${v}`} style={{ background: `var(--${COLOR[v]})`, opacity: 0.85 }} />
                   </td>
                 );
               })}

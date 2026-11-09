@@ -1,0 +1,1303 @@
+{
+ "_meta": {
+  "descripcion": "Composición de las candidaturas al Congreso que son coaliciones o denominaciones de partido, solo según documentos oficiales. Claves = siglas exactamente como en el BOE (listas_congreso.json).",
+  "generated_at": "2026-11-09T07:59:30+00:00",
+  "generated_by": "build_coaliciones.py (scratch, ver nota) a partir de los PDF de data/sources/boe/",
+  "notas": [
+   "Las relaciones de coaliciones de la JEC (ámbito JEC: 9 coaliciones; ámbito JEP: Illes Balears, Navarra y Valencia) se descargaron el 9-XI-2026: jec_coaliciones_jec_20261109.html y jec_coaliciones_jep_20261109.html.",
+   "Coaliciones solo al Senado (no incluidas): ERC-EH BILDU (JEC C3), C-DEM (JEC C6), SDP (JEC C8) y las cinco coaliciones insulares de Illes Balears.",
+   "miembros = formaciones firmantes del pacto, con el nombre tal como figura en el documento; siglas = null porque los bloques de firmantes no las indican.",
+   "Los pactos de la JEC y de las JEP de Navarra y Valencia son PDF escaneados sin texto. Se extrajeron con OCR (Apple Vision, sin corrección lingüística) y se compararon visualmente con la imagen. Única diferencia corregida: 'MÉS-COMPROMIS' (OCR) -> 'MÉS-COMPROMÍS' (imagen).",
+   "tipo = null significa que no se ha podido confirmar con documento oficial.",
+   "No se encontró en el BOE ninguna publicación de coaliciones; la publicación de candidaturas presentadas (BOE-A-2026-22607) no enumera partidos integrantes."
+  ]
+ },
+ "D21": {
+  "tipo": "coalición",
+  "ambito": [
+   "08",
+   "28"
+  ],
+  "denominaciones_boe": {
+   "DEMOCRACIA para el siglo 21": [
+    "08"
+   ],
+   "DEMOCRACIA PARA EL SIGLO 21": [
+    "28"
+   ]
+  },
+  "miembros": [
+   {
+    "nombre": "DEMOCRACIA 21",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "CIUDADANOS - PARTIDO DE LA CIUDADANÍA",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "UNIÓN DE CIUDADANOS INDEPENDIENTES",
+    "siglas": null,
+    "pagina_pacto": 1
+   }
+  ],
+  "coalicion_registrada": {
+   "registro": "JEC C1",
+   "denominacion": "DEMOCRACIA para el siglo 21",
+   "siglas": "D21",
+   "ambito_registro": "Congreso y Senado: Madrid y Barcelona"
+  },
+  "fuente": {
+   "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=76967",
+   "archivo": "data/sources/boe/jec_pacto_coalicion_76967.pdf",
+   "sha256": "8ebc674b088f523db74f3d6d602005c9e5b2a9916cf3b8e1453fa827f23e5f67",
+   "documento": "Pacto de coalición (escrito de constitución) enlazado como C1 en la relación 'Coaliciones electorales válidamente constituidas ante la Junta Electoral Central', Elecciones Generales 29-XI-2026",
+   "fecha": "2026-10-13",
+   "paginas_miembros": [
+    1
+   ],
+   "relacion_url": "https://www.juntaelectoralcentral.es/cs/jec/elecciones/coalicionesJECGenerales",
+   "relacion_archivo": "data/sources/boe/jec_coaliciones_jec_20261109.html",
+   "metodo": "PDF escaneado: OCR (Apple Vision) + verificación visual de las páginas de firmantes"
+  },
+  "nota": null
+ },
+ "CCa-1.ºCAN": {
+  "tipo": "coalición",
+  "ambito": [
+   "38"
+  ],
+  "denominaciones_boe": {
+   "Coalición Canaria-Municipalistas Primero Canarias": [
+    "38"
+   ]
+  },
+  "miembros": [
+   {
+    "nombre": "COALICIÓN CANARIA",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "MUNICIPALISTAS PRIMERO CANARIAS",
+    "siglas": null,
+    "pagina_pacto": 1
+   }
+  ],
+  "coalicion_registrada": {
+   "registro": "JEC C2",
+   "denominacion": "COALICIÓN CANARIA-MUNICIPALISTAS PRIMERO CANARIAS",
+   "siglas": "CCa-1ºCAN",
+   "ambito_registro": "Congreso: Canarias; Senado: Tenerife, Gran Canaria, Fuerteventura, Lanzarote, La Palma y La Gomera"
+  },
+  "fuente": {
+   "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=76990",
+   "archivo": "data/sources/boe/jec_pacto_coalicion_76990.pdf",
+   "sha256": "6c76e2a01c3523835a78d33b4a3de9c76b2a65ee846d395a67bbd3bff3a2cd79",
+   "documento": "Pacto de coalición (escrito de constitución) enlazado como C2 en la relación 'Coaliciones electorales válidamente constituidas ante la Junta Electoral Central', Elecciones Generales 29-XI-2026",
+   "fecha": "2026-10-14",
+   "paginas_miembros": [
+    1
+   ],
+   "relacion_url": "https://www.juntaelectoralcentral.es/cs/jec/elecciones/coalicionesJECGenerales",
+   "relacion_archivo": "data/sources/boe/jec_coaliciones_jec_20261109.html",
+   "metodo": "PDF escaneado: OCR (Apple Vision) + verificación visual de las páginas de firmantes"
+  },
+  "nota": "El pacto (pág. 3) asigna la denominación 'Coalición Canaria-Municipalistas Primero Canarias' a la provincia de Santa Cruz de Tenerife."
+ },
+ "1.ºCAN-CCa": {
+  "tipo": "coalición",
+  "ambito": [
+   "35"
+  ],
+  "denominaciones_boe": {
+   "MUNICIPALISTAS PRIMERO CANARIAS-COALICIÓN CANARIA": [
+    "35"
+   ]
+  },
+  "miembros": [
+   {
+    "nombre": "COALICIÓN CANARIA",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "MUNICIPALISTAS PRIMERO CANARIAS",
+    "siglas": null,
+    "pagina_pacto": 1
+   }
+  ],
+  "coalicion_registrada": {
+   "registro": "JEC C2",
+   "denominacion": "COALICIÓN CANARIA-MUNICIPALISTAS PRIMERO CANARIAS",
+   "siglas": "CCa-1ºCAN",
+   "ambito_registro": "Congreso: Canarias; Senado: Tenerife, Gran Canaria, Fuerteventura, Lanzarote, La Palma y La Gomera"
+  },
+  "fuente": {
+   "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=76990",
+   "archivo": "data/sources/boe/jec_pacto_coalicion_76990.pdf",
+   "sha256": "6c76e2a01c3523835a78d33b4a3de9c76b2a65ee846d395a67bbd3bff3a2cd79",
+   "documento": "Pacto de coalición (escrito de constitución) enlazado como C2 en la relación 'Coaliciones electorales válidamente constituidas ante la Junta Electoral Central', Elecciones Generales 29-XI-2026",
+   "fecha": "2026-10-14",
+   "paginas_miembros": [
+    1
+   ],
+   "relacion_url": "https://www.juntaelectoralcentral.es/cs/jec/elecciones/coalicionesJECGenerales",
+   "relacion_archivo": "data/sources/boe/jec_coaliciones_jec_20261109.html",
+   "metodo": "PDF escaneado: OCR (Apple Vision) + verificación visual de las páginas de firmantes"
+  },
+  "nota": "Misma coalición que CCa-1.ºCAN. El pacto (pág. 3) asigna a la provincia de Las Palmas la denominación 'Municipalistas Primero Canarias-Coalición Canaria' con siglas invertidas."
+ },
+ "COMPROMIS-EUPV-PODEM-ERPV": {
+  "tipo": "coalición",
+  "ambito": [
+   "03",
+   "12",
+   "46"
+  ],
+  "denominaciones_boe": {
+   "COMPROMÍS: FRONT VALENCIÀ": [
+    "03",
+    "12",
+    "46"
+   ]
+  },
+  "miembros": [
+   {
+    "nombre": "MÉS-COMPROMÍS",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "INICIATIVA DEL POBLE VALENCIÀ",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "VERDS EQUO DEL PAÍS VALENCIÀ (VERDSEQUO)",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "COALICIÓ COMPROMÍS",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "PODEMOS",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "ESQUERRA UNIDA DEL PAÍS VALENCIÀ",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "ESQUERRA REPUBLICANA DEL PAÍS VALENCIÀ",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "RECORTES CERO",
+    "siglas": null,
+    "pagina_pacto": 2
+   }
+  ],
+  "coalicion_registrada": {
+   "registro": "JEC C5",
+   "denominacion": "COMPROMÍS: FRONT VALENCIÀ",
+   "siglas": "COMPROMIS-EUPV-PODEM-ERPV",
+   "ambito_registro": "Congreso: Comunitat Valenciana"
+  },
+  "fuente": {
+   "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=76997",
+   "archivo": "data/sources/boe/jec_pacto_coalicion_76997.pdf",
+   "sha256": "1cf02e068977e8456375b30ef09186b6a0819e7729c9609ea3d075f18bd0275c",
+   "documento": "Pacto de coalición (escrito de constitución) enlazado como C5 en la relación 'Coaliciones electorales válidamente constituidas ante la Junta Electoral Central', Elecciones Generales 29-XI-2026",
+   "fecha": "2026-10-16",
+   "paginas_miembros": [
+    1,
+    2
+   ],
+   "relacion_url": "https://www.juntaelectoralcentral.es/cs/jec/elecciones/coalicionesJECGenerales",
+   "relacion_archivo": "data/sources/boe/jec_coaliciones_jec_20261109.html",
+   "metodo": "PDF escaneado: OCR (Apple Vision) + verificación visual de las páginas de firmantes"
+  },
+  "nota": "Firmantes: 8 formaciones. El apartado 7 del pacto (pág. 6) reparte la subvención entre 'COMPROMÍS (MÉS, INICIATIVA Y VERDS-EQUO)', EUPV, PODEM y ERPV; Recortes Cero firma pero no aparece en ese reparto. El apartado 8, cláusula 2 'LISTAS ELECTORALES' (pág. 6), asigna puestos de lista del Congreso por partido (tabla no extraída: el OCR no conserva sus columnas)."
+ },
+ "NC-BC, PODEMOS, IU, SUMAR": {
+  "tipo": "coalición",
+  "ambito": [
+   "35",
+   "38"
+  ],
+  "denominaciones_boe": {
+   "UNIDAD DEL PUEBLO CANARIO UPC": [
+    "35",
+    "38"
+   ]
+  },
+  "miembros": [
+   {
+    "nombre": "Nueva Canrias Bloque Canarista",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "PODEMOS",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "MOVIMIENTO SUMAR",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Izquierda Unida Canaria",
+    "siglas": null,
+    "pagina_pacto": 1
+   }
+  ],
+  "coalicion_registrada": {
+   "registro": "JEC C7",
+   "denominacion": "UNIDAD DEL PUEBLO CANARIO UPC",
+   "siglas": "NC-BC, PODEMOS, IU, SUMAR",
+   "ambito_registro": "Congreso y Senado: Canarias"
+  },
+  "fuente": {
+   "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77000",
+   "archivo": "data/sources/boe/jec_pacto_coalicion_77000.pdf",
+   "sha256": "238d6f5819190d1c83491f6121dd0a734c2588316efc11b06883850c867240ce",
+   "documento": "Pacto de coalición (escrito de constitución) enlazado como C7 en la relación 'Coaliciones electorales válidamente constituidas ante la Junta Electoral Central', Elecciones Generales 29-XI-2026",
+   "fecha": "2026-10-15",
+   "paginas_miembros": [
+    1
+   ],
+   "relacion_url": "https://www.juntaelectoralcentral.es/cs/jec/elecciones/coalicionesJECGenerales",
+   "relacion_archivo": "data/sources/boe/jec_coaliciones_jec_20261109.html",
+   "metodo": "PDF escaneado: OCR (Apple Vision) + verificación visual de las páginas de firmantes"
+  },
+  "nota": "'Nueva Canrias Bloque Canarista' se transcribe tal como aparece escrito en el pacto. El apartado 8, cláusulas 5 y 6 (pág. 5), atribuye los puestos 1-4 de cada lista al Congreso: Las Palmas 1 NC-BC, 2 PODEMOS Canarias, 3 Izquierda Unida, 4 Movimiento Sumar; Santa Cruz de Tenerife 1 Movimiento Sumar, 2 Izquierda Unida, 3 Podemos Canarias, 4 NC-BC. Candidatura recurrida según prensa (ver data/boe/correcciones.md); sigue proclamada en el BOE."
+ },
+ "FA": {
+  "tipo": "coalición",
+  "ambito": [
+   "02",
+   "04",
+   "05",
+   "06",
+   "09",
+   "10",
+   "11",
+   "13",
+   "14",
+   "16",
+   "18",
+   "19",
+   "20",
+   "21",
+   "23",
+   "24",
+   "26",
+   "28",
+   "29",
+   "30",
+   "33",
+   "34",
+   "37",
+   "39",
+   "40",
+   "41",
+   "42",
+   "45",
+   "47",
+   "48",
+   "49"
+  ],
+  "denominaciones_boe": {
+   "Frente Amplio": [
+    "02",
+    "04",
+    "05",
+    "06",
+    "09",
+    "10",
+    "13",
+    "20",
+    "24",
+    "28",
+    "29",
+    "30",
+    "34",
+    "37",
+    "40",
+    "42",
+    "45",
+    "47",
+    "49"
+   ],
+   "Frente Amplio Andaluz": [
+    "11",
+    "18",
+    "21",
+    "41"
+   ],
+   "FRENTE AMPLIO ANDALUZ": [
+    "14"
+   ],
+   "FRENTE AMPLIO": [
+    "16",
+    "19",
+    "23",
+    "26",
+    "39",
+    "48"
+   ],
+   "FRENTE AMPLIU POR ASTURIES": [
+    "33"
+   ]
+  },
+  "miembros": [
+   {
+    "nombre": "Izquierda Unida",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Movimiento Sumar",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Catalunya en Comú",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Más Madrid",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Chunta Aragonesista",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Izquierda Asturiana",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Recortes Cero",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Baztzarre - Asamblea de Izquierdas",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Verdes Equo",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Iniciativa del Pueblo Andaluz",
+    "siglas": null,
+    "pagina_pacto": 3
+   },
+   {
+    "nombre": "Somos Partido Progresista",
+    "siglas": null,
+    "pagina_pacto": 3
+   }
+  ],
+  "coalicion_registrada": {
+   "registro": "JEC C9",
+   "denominacion": "Frente Amplio",
+   "siglas": "FA",
+   "ambito_registro": "Congreso: excepto Canarias, Illes Balears y C. Valenciana"
+  },
+  "fuente": {
+   "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77002",
+   "archivo": "data/sources/boe/jec_pacto_coalicion_77002.pdf",
+   "sha256": "adde443cc1f13ad52766ecadec6b67d9a235456cee7439dc423a938293532a9e",
+   "documento": "Pacto de coalición (escrito de constitución) enlazado como C9 en la relación 'Coaliciones electorales válidamente constituidas ante la Junta Electoral Central', Elecciones Generales 29-XI-2026",
+   "fecha": "2026-10-16",
+   "paginas_miembros": [
+    1,
+    2,
+    3
+   ],
+   "relacion_url": "https://www.juntaelectoralcentral.es/cs/jec/elecciones/coalicionesJECGenerales",
+   "relacion_archivo": "data/sources/boe/jec_coaliciones_jec_20261109.html",
+   "metodo": "PDF escaneado: OCR (Apple Vision) + verificación visual de las páginas de firmantes"
+  },
+  "nota": "Coalición única 'Frente Amplio' (JEC C9) firmada por 11 formaciones (Catalunya en Comú firma con dos representantes); el pacto no dice qué formaciones concurren en cada circunscripción. 'Baztzarre - Asamblea de Izquierdas' se transcribe tal como aparece escrito en el pacto. Denominaciones por circunscripción según el pacto (págs. 5-8): 'Frente Amplio' (FA) en todas salvo las listadas aparte; 'Frente Ampliu por Asturies' (FA) en Asturias; 'Frente Amplio Andaluz' (FA) en Sevilla, Cádiz, Granada, Málaga, Jaén, Almería, Huelva y Córdoba. Discrepancias con el BOE: en Almería (04), Jaén (23) y Málaga (29) el BOE publica la denominación 'Frente Amplio'/'FRENTE AMPLIO'; en Gipuzkoa (20) y Bizkaia (48) el BOE publica 'Frente Amplio'/'FRENTE AMPLIO' con siglas FA, aunque el pacto asigna a esas provincias 'Frente Amplio - Fronte Zabala'."
+ },
+ "CHA-IU-MS-FRENTE AMPLIO": {
+  "tipo": "coalición",
+  "ambito": [
+   "22",
+   "50"
+  ],
+  "denominaciones_boe": {
+   "CHUNTA ARAGONESISTA-FRENTE AMPLIO ARAGÓN": [
+    "22"
+   ],
+   "Chunta Aragonesista-Frente Amplio Aragón": [
+    "50"
+   ]
+  },
+  "miembros": [
+   {
+    "nombre": "Izquierda Unida",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Movimiento Sumar",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Catalunya en Comú",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Más Madrid",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Chunta Aragonesista",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Izquierda Asturiana",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Recortes Cero",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Baztzarre - Asamblea de Izquierdas",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Verdes Equo",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Iniciativa del Pueblo Andaluz",
+    "siglas": null,
+    "pagina_pacto": 3
+   },
+   {
+    "nombre": "Somos Partido Progresista",
+    "siglas": null,
+    "pagina_pacto": 3
+   }
+  ],
+  "coalicion_registrada": {
+   "registro": "JEC C9",
+   "denominacion": "Frente Amplio",
+   "siglas": "FA",
+   "ambito_registro": "Congreso: excepto Canarias, Illes Balears y C. Valenciana"
+  },
+  "fuente": {
+   "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77002",
+   "archivo": "data/sources/boe/jec_pacto_coalicion_77002.pdf",
+   "sha256": "adde443cc1f13ad52766ecadec6b67d9a235456cee7439dc423a938293532a9e",
+   "documento": "Pacto de coalición (escrito de constitución) enlazado como C9 en la relación 'Coaliciones electorales válidamente constituidas ante la Junta Electoral Central', Elecciones Generales 29-XI-2026",
+   "fecha": "2026-10-16",
+   "paginas_miembros": [
+    1,
+    2,
+    3
+   ],
+   "relacion_url": "https://www.juntaelectoralcentral.es/cs/jec/elecciones/coalicionesJECGenerales",
+   "relacion_archivo": "data/sources/boe/jec_coaliciones_jec_20261109.html",
+   "metodo": "PDF escaneado: OCR (Apple Vision) + verificación visual de las páginas de firmantes"
+  },
+  "nota": "Coalición única 'Frente Amplio' (JEC C9) firmada por 11 formaciones (Catalunya en Comú firma con dos representantes); el pacto no dice qué formaciones concurren en cada circunscripción. 'Baztzarre - Asamblea de Izquierdas' se transcribe tal como aparece escrito en el pacto. Denominaciones por circunscripción según el pacto (págs. 5-8): 'Chunta Aragonesista - Frente Amplio Aragón' (CHA - IU - MS - FRENTE AMPLIO) en Huesca, Zaragoza y Teruel. En Teruel (44) el BOE no publica ninguna candidatura con esta denominación. El BOE imprime tras cada candidato su formación: CHA, Izquierda Unida, Movimiento Sumar, Partido Verde, Recortes Cero (ver marca_boe en listas_congreso.json); 'Partido Verde' no figura entre los firmantes del pacto."
+ },
+ "COMUNS-FRONT AMPLI": {
+  "tipo": "coalición",
+  "ambito": [
+   "08",
+   "17",
+   "25",
+   "43"
+  ],
+  "denominaciones_boe": {
+   "Comuns-Front Ampli": [
+    "08",
+    "17",
+    "25",
+    "43"
+   ]
+  },
+  "miembros": [
+   {
+    "nombre": "Izquierda Unida",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Movimiento Sumar",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Catalunya en Comú",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Más Madrid",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Chunta Aragonesista",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Izquierda Asturiana",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Recortes Cero",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Baztzarre - Asamblea de Izquierdas",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Verdes Equo",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Iniciativa del Pueblo Andaluz",
+    "siglas": null,
+    "pagina_pacto": 3
+   },
+   {
+    "nombre": "Somos Partido Progresista",
+    "siglas": null,
+    "pagina_pacto": 3
+   }
+  ],
+  "coalicion_registrada": {
+   "registro": "JEC C9",
+   "denominacion": "Frente Amplio",
+   "siglas": "FA",
+   "ambito_registro": "Congreso: excepto Canarias, Illes Balears y C. Valenciana"
+  },
+  "fuente": {
+   "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77002",
+   "archivo": "data/sources/boe/jec_pacto_coalicion_77002.pdf",
+   "sha256": "adde443cc1f13ad52766ecadec6b67d9a235456cee7439dc423a938293532a9e",
+   "documento": "Pacto de coalición (escrito de constitución) enlazado como C9 en la relación 'Coaliciones electorales válidamente constituidas ante la Junta Electoral Central', Elecciones Generales 29-XI-2026",
+   "fecha": "2026-10-16",
+   "paginas_miembros": [
+    1,
+    2,
+    3
+   ],
+   "relacion_url": "https://www.juntaelectoralcentral.es/cs/jec/elecciones/coalicionesJECGenerales",
+   "relacion_archivo": "data/sources/boe/jec_coaliciones_jec_20261109.html",
+   "metodo": "PDF escaneado: OCR (Apple Vision) + verificación visual de las páginas de firmantes"
+  },
+  "nota": "Coalición única 'Frente Amplio' (JEC C9) firmada por 11 formaciones (Catalunya en Comú firma con dos representantes); el pacto no dice qué formaciones concurren en cada circunscripción. 'Baztzarre - Asamblea de Izquierdas' se transcribe tal como aparece escrito en el pacto. Denominaciones por circunscripción según el pacto (págs. 5-8): 'Comuns - Front Ampli' (COMUNS - FRONT AMPLI) en Barcelona, Girona, Lleida y Tarragona."
+ },
+ "FRENTE AMPLIO-FRONTE AMPLA": {
+  "tipo": "coalición",
+  "ambito": [
+   "15",
+   "27",
+   "32"
+  ],
+  "denominaciones_boe": {
+   "Frente Amplio-Fronte Ampla": [
+    "15",
+    "32"
+   ],
+   "FRENTE AMPLIO-FRONTE AMPLA": [
+    "27"
+   ]
+  },
+  "miembros": [
+   {
+    "nombre": "Izquierda Unida",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Movimiento Sumar",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Catalunya en Comú",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Más Madrid",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Chunta Aragonesista",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Izquierda Asturiana",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Recortes Cero",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Baztzarre - Asamblea de Izquierdas",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Verdes Equo",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Iniciativa del Pueblo Andaluz",
+    "siglas": null,
+    "pagina_pacto": 3
+   },
+   {
+    "nombre": "Somos Partido Progresista",
+    "siglas": null,
+    "pagina_pacto": 3
+   }
+  ],
+  "coalicion_registrada": {
+   "registro": "JEC C9",
+   "denominacion": "Frente Amplio",
+   "siglas": "FA",
+   "ambito_registro": "Congreso: excepto Canarias, Illes Balears y C. Valenciana"
+  },
+  "fuente": {
+   "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77002",
+   "archivo": "data/sources/boe/jec_pacto_coalicion_77002.pdf",
+   "sha256": "adde443cc1f13ad52766ecadec6b67d9a235456cee7439dc423a938293532a9e",
+   "documento": "Pacto de coalición (escrito de constitución) enlazado como C9 en la relación 'Coaliciones electorales válidamente constituidas ante la Junta Electoral Central', Elecciones Generales 29-XI-2026",
+   "fecha": "2026-10-16",
+   "paginas_miembros": [
+    1,
+    2,
+    3
+   ],
+   "relacion_url": "https://www.juntaelectoralcentral.es/cs/jec/elecciones/coalicionesJECGenerales",
+   "relacion_archivo": "data/sources/boe/jec_coaliciones_jec_20261109.html",
+   "metodo": "PDF escaneado: OCR (Apple Vision) + verificación visual de las páginas de firmantes"
+  },
+  "nota": "Coalición única 'Frente Amplio' (JEC C9) firmada por 11 formaciones (Catalunya en Comú firma con dos representantes); el pacto no dice qué formaciones concurren en cada circunscripción. 'Baztzarre - Asamblea de Izquierdas' se transcribe tal como aparece escrito en el pacto. Denominaciones por circunscripción según el pacto (págs. 5-8): 'Frente Amplio - Fronte Ampla' (FRENTE AMPLIO - FRONTE AMPLA) en A Coruña, Ourense, Lugo y Pontevedra. El BOE escribe las siglas sin espacios en 15, 27 y 32 y con espacios en 36."
+ },
+ "FRENTE AMPLIO - FRONTE AMPLA": {
+  "tipo": "coalición",
+  "ambito": [
+   "36"
+  ],
+  "denominaciones_boe": {
+   "Frente Amplio - Fronte Ampla": [
+    "36"
+   ]
+  },
+  "miembros": [
+   {
+    "nombre": "Izquierda Unida",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Movimiento Sumar",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Catalunya en Comú",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Más Madrid",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Chunta Aragonesista",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Izquierda Asturiana",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Recortes Cero",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Baztzarre - Asamblea de Izquierdas",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Verdes Equo",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Iniciativa del Pueblo Andaluz",
+    "siglas": null,
+    "pagina_pacto": 3
+   },
+   {
+    "nombre": "Somos Partido Progresista",
+    "siglas": null,
+    "pagina_pacto": 3
+   }
+  ],
+  "coalicion_registrada": {
+   "registro": "JEC C9",
+   "denominacion": "Frente Amplio",
+   "siglas": "FA",
+   "ambito_registro": "Congreso: excepto Canarias, Illes Balears y C. Valenciana"
+  },
+  "fuente": {
+   "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77002",
+   "archivo": "data/sources/boe/jec_pacto_coalicion_77002.pdf",
+   "sha256": "adde443cc1f13ad52766ecadec6b67d9a235456cee7439dc423a938293532a9e",
+   "documento": "Pacto de coalición (escrito de constitución) enlazado como C9 en la relación 'Coaliciones electorales válidamente constituidas ante la Junta Electoral Central', Elecciones Generales 29-XI-2026",
+   "fecha": "2026-10-16",
+   "paginas_miembros": [
+    1,
+    2,
+    3
+   ],
+   "relacion_url": "https://www.juntaelectoralcentral.es/cs/jec/elecciones/coalicionesJECGenerales",
+   "relacion_archivo": "data/sources/boe/jec_coaliciones_jec_20261109.html",
+   "metodo": "PDF escaneado: OCR (Apple Vision) + verificación visual de las páginas de firmantes"
+  },
+  "nota": "Coalición única 'Frente Amplio' (JEC C9) firmada por 11 formaciones (Catalunya en Comú firma con dos representantes); el pacto no dice qué formaciones concurren en cada circunscripción. 'Baztzarre - Asamblea de Izquierdas' se transcribe tal como aparece escrito en el pacto. Denominaciones por circunscripción según el pacto (págs. 5-8): 'Frente Amplio - Fronte Ampla' (FRENTE AMPLIO - FRONTE AMPLA) en A Coruña, Ourense, Lugo y Pontevedra. El BOE escribe las siglas sin espacios en 15, 27 y 32 y con espacios en 36."
+ },
+ "FRENTE AMPLIO-FRONTE ZABALA": {
+  "tipo": "coalición",
+  "ambito": [
+   "01",
+   "31"
+  ],
+  "denominaciones_boe": {
+   "FRENTE AMPLIO-FRONTE ZABALA": [
+    "01",
+    "31"
+   ]
+  },
+  "miembros": [
+   {
+    "nombre": "Izquierda Unida",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Movimiento Sumar",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Catalunya en Comú",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Más Madrid",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "Chunta Aragonesista",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Izquierda Asturiana",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Recortes Cero",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Baztzarre - Asamblea de Izquierdas",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Verdes Equo",
+    "siglas": null,
+    "pagina_pacto": 2
+   },
+   {
+    "nombre": "Iniciativa del Pueblo Andaluz",
+    "siglas": null,
+    "pagina_pacto": 3
+   },
+   {
+    "nombre": "Somos Partido Progresista",
+    "siglas": null,
+    "pagina_pacto": 3
+   }
+  ],
+  "coalicion_registrada": {
+   "registro": "JEC C9",
+   "denominacion": "Frente Amplio",
+   "siglas": "FA",
+   "ambito_registro": "Congreso: excepto Canarias, Illes Balears y C. Valenciana"
+  },
+  "fuente": {
+   "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77002",
+   "archivo": "data/sources/boe/jec_pacto_coalicion_77002.pdf",
+   "sha256": "adde443cc1f13ad52766ecadec6b67d9a235456cee7439dc423a938293532a9e",
+   "documento": "Pacto de coalición (escrito de constitución) enlazado como C9 en la relación 'Coaliciones electorales válidamente constituidas ante la Junta Electoral Central', Elecciones Generales 29-XI-2026",
+   "fecha": "2026-10-16",
+   "paginas_miembros": [
+    1,
+    2,
+    3
+   ],
+   "relacion_url": "https://www.juntaelectoralcentral.es/cs/jec/elecciones/coalicionesJECGenerales",
+   "relacion_archivo": "data/sources/boe/jec_coaliciones_jec_20261109.html",
+   "metodo": "PDF escaneado: OCR (Apple Vision) + verificación visual de las páginas de firmantes"
+  },
+  "nota": "Coalición única 'Frente Amplio' (JEC C9) firmada por 11 formaciones (Catalunya en Comú firma con dos representantes); el pacto no dice qué formaciones concurren en cada circunscripción. 'Baztzarre - Asamblea de Izquierdas' se transcribe tal como aparece escrito en el pacto. Denominaciones por circunscripción según el pacto (págs. 5-8): 'Frente Amplio - Fronte Zabala' (FRENTE AMPLIO - FRONTE ZABALA) en Araba, Bizkaia, Gipuzkoa y Navarra; en el BOE solo aparece en Araba (01) y Navarra (31)."
+ },
+ "TERUEL EXISTE": {
+  "tipo": null,
+  "ambito": [
+   "44"
+  ],
+  "denominaciones_boe": {
+   "TERUEL EXISTE": [
+    "44"
+   ]
+  },
+  "miembros": [],
+  "coalicion_relacionada": {
+   "registro": "JEC C4",
+   "denominacion": "COALICIÓN *EXISTE*",
+   "siglas": "EXISTE",
+   "ambito_registro": "Congreso y Senado: Aragón",
+   "denominacion_pacto_teruel": "TERUEL EXISTE - Coalición EXISTE",
+   "siglas_pacto_teruel": "EXISTE",
+   "miembros": [
+    {
+     "nombre": "TERUEL EXISTE",
+     "siglas": null,
+     "pagina_pacto": 1
+    },
+    {
+     "nombre": "ARAGÓN EXISTE",
+     "siglas": null,
+     "pagina_pacto": 1
+    }
+   ]
+  },
+  "fuente": {
+   "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=76998",
+   "archivo": "data/sources/boe/jec_pacto_coalicion_76998.pdf",
+   "sha256": "72b04a3073ffb3a396f75b1b4c03b2a739b37a9af9005c025bd860a6ee883e9f",
+   "documento": "Pacto de coalición (escrito de constitución) enlazado como C4 en la relación 'Coaliciones electorales válidamente constituidas ante la Junta Electoral Central', Elecciones Generales 29-XI-2026",
+   "fecha": "2026-10-16",
+   "paginas_miembros": [
+    1
+   ],
+   "relacion_url": "https://www.juntaelectoralcentral.es/cs/jec/elecciones/coalicionesJECGenerales",
+   "relacion_archivo": "data/sources/boe/jec_coaliciones_jec_20261109.html",
+   "metodo": "PDF escaneado: OCR (Apple Vision) + verificación visual de las páginas de firmantes"
+  },
+  "nota": "NO CONFIRMADO. La JEC registra la coalición EXISTE (TERUEL EXISTE + ARAGÓN EXISTE), cuyo pacto (pág. 3) prevé en Teruel la denominación 'TERUEL EXISTE - Coalición EXISTE' con siglas 'EXISTE', pero el BOE proclama en Teruel '6. TERUEL EXISTE (TERUEL EXISTE)'. Ningún documento oficial consultado dice si esta candidatura es la de la coalición o la del partido; en Huesca y Zaragoza no hay candidatura EXISTE proclamada."
+ },
+ "ARAMÉS-EU-MS": {
+  "tipo": "coalición",
+  "ambito": [
+   "07"
+  ],
+  "denominaciones_boe": {
+   "ARAMÉS-FRONT AMPLI": [
+    "07"
+   ]
+  },
+  "miembros": [
+   {
+    "nombre": "ARAMÉS",
+    "siglas": null
+   },
+   {
+    "nombre": "MOVIMIENTO SUMAR",
+    "siglas": null
+   },
+   {
+    "nombre": "IZQUIERDA UNIDA",
+    "siglas": null
+   },
+   {
+    "nombre": "PROGRESO EN VERDE",
+    "siglas": null
+   },
+   {
+    "nombre": "RECORTES CERO",
+    "siglas": null
+   }
+  ],
+  "coalicion_registrada": {
+   "registro": "JEP Illes Balears",
+   "denominacion": "ARAMÉS-FRONT AMPLI",
+   "siglas": "ARAMÉS-EU-MS",
+   "ambito_registro": "Illes Balears (Congreso de los Diputados)"
+  },
+  "fuente": {
+   "url": "https://www.juntaelectoralcentral.es/cs/jec/documentos/comunicaci%C3%B3n_jep_Baleares-2.pdf",
+   "archivo": "data/sources/boe/jep_baleares_comunicacion_coaliciones.pdf",
+   "sha256": "57122d319bb25bc3b00dd32feb183da5993343e8308c494efb4a9976061d7dea",
+   "documento": "Comunicación de la Junta Electoral Provincial de Illes Balears a la JEC de constitución válida de coaliciones electorales (apartado 6, 'Para el CONGRESO')",
+   "fecha": "2026-10-21",
+   "relacion_url": "https://www.juntaelectoralcentral.es/cs/jec/informacion/enlaces/GENERALES_2026Nov_CoalicionesJEP",
+   "relacion_archivo": "data/sources/boe/jec_coaliciones_jep_20261109.html",
+   "metodo": "PDF con texto: pdftotext"
+  },
+  "fuentes_adicionales": [
+   {
+    "url": "https://www.juntaelectoralcentral.es/cs/jec/documentos/Baleares_COALICION%20ARAMES-FRONT%20AMPLI.pdf",
+    "archivo": "data/sources/boe/jep_baleares_pacto_arames_front_ampli.pdf",
+    "sha256": "18b5cd012e0741dc6b816dc55a87efb3a85754365d014e7a3bb518e1ab788630",
+    "documento": "Pacto de coalición ARAMÉS-FRONT AMPLI",
+    "fecha": "2026-10-16",
+    "relacion_url": "https://www.juntaelectoralcentral.es/cs/jec/informacion/enlaces/GENERALES_2026Nov_CoalicionesJEP",
+    "relacion_archivo": "data/sources/boe/jec_coaliciones_jep_20261109.html",
+    "metodo": "PDF con capa de texto; firmantes coinciden con la comunicación (uno de los bloques de firmante tiene el nombre del partido en blanco en la capa de texto)"
+   }
+  ],
+  "nota": "El BOE imprime tras cada candidato su formación: ARAMÉS-EU-MS, Independent, Progreso en Verde, Recortes Cero."
+ },
+ "UPN-PP": {
+  "tipo": "coalición",
+  "ambito": [
+   "31"
+  ],
+  "denominaciones_boe": {
+   "UNIÓN DEL PUEBLO NAVARRO EN COALICIÓN CON EL PARTIDO POPULAR": [
+    "31"
+   ]
+  },
+  "miembros": [
+   {
+    "nombre": "UNIÓN DEL PUEBLO NAVARRO",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "PARTIDO POPULAR",
+    "siglas": null,
+    "pagina_pacto": 1
+   }
+  ],
+  "coalicion_registrada": {
+   "registro": "JEP Navarra",
+   "denominacion": "UNIÓN DEL PUEBLO NAVARRO EN COALICIÓN CON EL PARTIDO POPULAR",
+   "siglas": "UPN-PP",
+   "ambito_registro": "Navarra"
+  },
+  "fuente": {
+   "url": "https://www.juntaelectoralcentral.es/cs/jec/documentos/Navarra_UPN-PP.pdf",
+   "archivo": "data/sources/boe/jep_navarra_pacto_upn_pp.pdf",
+   "sha256": "7dd6a6129168539b257004762b50b38a4b0ff1f83d0cdf776278e57492a08453",
+   "documento": "Pacto de coalición UPN-PP (sello de presentación en la JEP de Navarra: 16-X-2026)",
+   "fecha": "2026-10-14",
+   "relacion_url": "https://www.juntaelectoralcentral.es/cs/jec/informacion/enlaces/GENERALES_2026Nov_CoalicionesJEP",
+   "relacion_archivo": "data/sources/boe/jec_coaliciones_jep_20261109.html",
+   "metodo": "PDF escaneado: OCR (Apple Vision)",
+   "paginas_miembros": [
+    1
+   ]
+  },
+  "nota": "El BOE imprime tras cada candidato su partido (UPN o PP); ver marca_boe en listas_congreso.json."
+ },
+ "GBAI": {
+  "tipo": "coalición",
+  "ambito": [
+   "31"
+  ],
+  "denominaciones_boe": {
+   "GEROA BAI": [
+    "31"
+   ]
+  },
+  "miembros": [
+   {
+    "nombre": "GEROA SOCIALVERDES DE NAVARRA EN EUROPA - GEROA NAFARROAKO SOZIALBERDEAK EUROPAN",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "EUZKO ALDERDI JELTZALEA - PARTIDO NACIONALISTA VASCO",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "AGRUPACION ATARRABIA - ATARRABIA TALDEA",
+    "siglas": null,
+    "pagina_pacto": 1
+   }
+  ],
+  "coalicion_registrada": {
+   "registro": "JEP Navarra",
+   "denominacion": "GEROA BAI",
+   "siglas": "GBAI",
+   "ambito_registro": "Navarra"
+  },
+  "fuente": {
+   "url": "https://www.juntaelectoralcentral.es/cs/jec/documentos/Navarra_coalicion_Geora_Bai.pdf",
+   "archivo": "data/sources/boe/jep_navarra_pacto_geroa_bai.pdf",
+   "sha256": "b277a4fe932c6cc52982f06f34064fecd3369db8cbf9cf1734c27ca52d7d9ad6",
+   "documento": "Pacto de coalición GEROA BAI (sello de presentación en la JEP de Navarra: 15-X-2026)",
+   "fecha": "2026-10-14",
+   "relacion_url": "https://www.juntaelectoralcentral.es/cs/jec/informacion/enlaces/GENERALES_2026Nov_CoalicionesJEP",
+   "relacion_archivo": "data/sources/boe/jec_coaliciones_jep_20261109.html",
+   "metodo": "PDF escaneado: OCR (Apple Vision) + verificación visual",
+   "paginas_miembros": [
+    1
+   ]
+  },
+  "nota": "En el original los nombres llevan guion largo (–); aquí, guion simple como lo devuelve el OCR. El BOE imprime '(GEROA BAI)' tras cada candidato."
+ },
+ "AGENDA VALENCIANA": {
+  "tipo": "coalición",
+  "ambito": [
+   "46"
+  ],
+  "denominaciones_boe": {
+   "AGENDA VALENCIANA": [
+    "46"
+   ]
+  },
+  "miembros": [
+   {
+    "nombre": "UNITS PER CARCAIXENT",
+    "siglas": null,
+    "pagina_pacto": 1
+   },
+   {
+    "nombre": "UNITS PER BENICULL",
+    "siglas": null,
+    "pagina_pacto": 1
+   }
+  ],
+  "coalicion_registrada": {
+   "registro": "JEP Valencia",
+   "denominacion": "AGENDA VALENCIANA",
+   "siglas_relacion_jec": "AV",
+   "siglas_pacto": "AGENDA VALENCIANA",
+   "ambito_registro": "Valencia"
+  },
+  "fuente": {
+   "url": "https://www.juntaelectoralcentral.es/cs/jec/documentos/jep_valencia_AV.pdf",
+   "archivo": "data/sources/boe/jep_valencia_pacto_av.pdf",
+   "sha256": "2efea335ead83171619873b67b8dcbca1e2c4b307ef1040cbdf43a8d368aad41",
+   "documento": "Pacto de coalición AGENDA VALENCIANA (sello de entrada en la JEP de Valencia: 15-X-2026)",
+   "fecha": "2026-10-13",
+   "relacion_url": "https://www.juntaelectoralcentral.es/cs/jec/informacion/enlaces/GENERALES_2026Nov_CoalicionesJEP",
+   "relacion_archivo": "data/sources/boe/jec_coaliciones_jep_20261109.html",
+   "metodo": "PDF escaneado: OCR (Apple Vision) + verificación visual",
+   "paginas_miembros": [
+    1
+   ]
+  },
+  "nota": "La relación de la JEC da las siglas 'AV'; el pacto y el BOE, 'AGENDA VALENCIANA'."
+ },
+ "PSC": {
+  "tipo": "partido",
+  "ambito": [
+   "08",
+   "17",
+   "25",
+   "43"
+  ],
+  "denominaciones_boe": {
+   "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)": [
+    "08",
+    "17",
+    "25",
+    "43"
+   ]
+  },
+  "miembros": [],
+  "fuente": {
+   "url": "https://servicio.mir.es/nfrontal/webpartido_politico/partido_politicoBuscar.html",
+   "archivo": "data/sources/boe/rpp_busqueda_socialistes_de_catalunya.html",
+   "sha256": "0793cc61b7f26a8cbd482f0991443825c687998a3ed0df6c0cb5fa10533595b1",
+   "documento": "Registro de Partidos Políticos (Ministerio del Interior), resultado de búsqueda por denominación 'SOCIALISTES DE CATALUNYA'",
+   "fecha": "2026-11-09"
+  },
+  "nota": "No figura en las relaciones de coaliciones publicadas por la JEC (ámbito JEC y JEP), consultadas el 9-XI-2026. Inscrito en el Registro de Partidos Políticos como partido con la denominación 'PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)' (fecha de inscripción 18/10/1978). Ningún documento oficial consultado describe su relación con el PSOE (federación, protocolo de unidad, grupo parlamentario)."
+ },
+ "PSE-EE (PSOE)": {
+  "tipo": "partido",
+  "ambito": [
+   "01",
+   "20",
+   "48"
+  ],
+  "denominaciones_boe": {
+   "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE)": [
+    "01",
+    "20",
+    "48"
+   ]
+  },
+  "miembros": [],
+  "fuente": {
+   "url": "https://servicio.mir.es/nfrontal/webpartido_politico/partido_politicoBuscar.html",
+   "archivo": "data/sources/boe/rpp_busqueda_socialista_de_euskadi.html",
+   "sha256": "7228af8a90c5d9825bf6d023ceb204cbd6568ebe9247db03055bf47ff5d8d141",
+   "documento": "Registro de Partidos Políticos (Ministerio del Interior), resultado de búsqueda por denominación 'SOCIALISTA DE EUSKADI'",
+   "fecha": "2026-11-09"
+  },
+  "nota": "No figura en las relaciones de coaliciones publicadas por la JEC (ámbito JEC y JEP), consultadas el 9-XI-2026. Inscrito en el Registro de Partidos Políticos como partido con la denominación 'PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE)'. Ningún documento oficial consultado describe su relación con el PSOE."
+ },
+ "PSdeG-PSOE": {
+  "tipo": null,
+  "ambito": [
+   "15",
+   "27",
+   "32",
+   "36"
+  ],
+  "denominaciones_boe": {
+   "Partido dos Socialistas de Galicia-PSOE": [
+    "15",
+    "32",
+    "36"
+   ],
+   "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE": [
+    "27"
+   ]
+  },
+  "miembros": [],
+  "fuente": {
+   "url": "https://servicio.mir.es/nfrontal/webpartido_politico/partido_politicoBuscar.html",
+   "archivo": "data/sources/boe/rpp_busqueda_socialistas_de_galicia.html",
+   "sha256": "45fc25081a513aee47c7cce30baa6fc0b72eb57f6252823adee5f08efd5dfaba",
+   "documento": "Registro de Partidos Políticos (Ministerio del Interior), resultado de búsqueda por denominación 'SOCIALISTAS DE GALICIA'",
+   "fecha": "2026-11-09"
+  },
+  "nota": "No figura en las relaciones de coaliciones publicadas por la JEC (ámbito JEC y JEP), consultadas el 9-XI-2026. La búsqueda por denominación en el Registro de Partidos Políticos no devuelve ningún partido inscrito con ese nombre, lo que es compatible con una denominación territorial del PSOE, pero ningún documento oficial consultado lo afirma. NO CONFIRMADO."
+ },
+ "PSIB-PSOE": {
+  "tipo": null,
+  "ambito": [
+   "07"
+  ],
+  "denominaciones_boe": {
+   "PARTIDO SOCIALISTA DE LAS ISLAS BALEARES": [
+    "07"
+   ]
+  },
+  "miembros": [],
+  "fuente": {
+   "url": "https://servicio.mir.es/nfrontal/webpartido_politico/partido_politicoBuscar.html",
+   "archivo": "data/sources/boe/rpp_busqueda_socialista_de_las_islas_baleares.html",
+   "sha256": "a91c8f229d4068c98a3c71f1123d9311e4ced650d55901cb7ec5664d600f0f0d",
+   "documento": "Registro de Partidos Políticos (Ministerio del Interior), resultado de búsqueda por denominación 'SOCIALISTA DE LAS ISLAS BALEARES'",
+   "fecha": "2026-11-09"
+  },
+  "nota": "No figura en las relaciones de coaliciones publicadas por la JEC (ámbito JEC y JEP), consultadas el 9-XI-2026. La búsqueda por denominación en el Registro de Partidos Políticos no devuelve ningún partido inscrito con ese nombre, lo que es compatible con una denominación territorial del PSOE, pero ningún documento oficial consultado lo afirma. NO CONFIRMADO."
+ },
+ "PSN-PSOE": {
+  "tipo": null,
+  "ambito": [
+   "31"
+  ],
+  "denominaciones_boe": {
+   "PARTIDO SOCIALISTA DE NAVARRA-PSOE": [
+    "31"
+   ]
+  },
+  "miembros": [],
+  "fuente": {
+   "url": "https://servicio.mir.es/nfrontal/webpartido_politico/partido_politicoBuscar.html",
+   "archivo": "data/sources/boe/rpp_busqueda_socialista_de_navarra.html",
+   "sha256": "d35249a27cad7309e9b1bae254e858d6e3bcd9d4b7218e82c217c35eaa535605",
+   "documento": "Registro de Partidos Políticos (Ministerio del Interior), resultado de búsqueda por denominación 'SOCIALISTA DE NAVARRA'",
+   "fecha": "2026-11-09"
+  },
+  "nota": "No figura en las relaciones de coaliciones publicadas por la JEC (ámbito JEC y JEP), consultadas el 9-XI-2026. La búsqueda por denominación en el Registro de Partidos Políticos no devuelve ningún partido inscrito con ese nombre, lo que es compatible con una denominación territorial del PSOE, pero ningún documento oficial consultado lo afirma. NO CONFIRMADO."
+ },
+ "PANCAL-URCI": {
+  "tipo": null,
+  "ambito": [
+   "47"
+  ],
+  "denominaciones_boe": {
+   "PARTIDO NACIONALISTA DE CASTILLA Y LEÓN - UNION REFORMISTA CIUDADANA": [
+    "47"
+   ]
+  },
+  "miembros": [],
+  "fuente": null,
+  "nota": "No figura en las relaciones de coaliciones publicadas por la JEC (ámbito JEC y JEP), consultadas el 9-XI-2026. La denominación del BOE parece compuesta, pero no se ha encontrado documento oficial sobre su naturaleza. NO CONFIRMADO."
+ },
+ "NEX": {
+  "tipo": null,
+  "ambito": [
+   "06",
+   "10"
+  ],
+  "denominaciones_boe": {
+   "NUEVO EXTREMEÑISMO - ADELANTE EXTREMADURA": [
+    "06",
+    "10"
+   ]
+  },
+  "miembros": [],
+  "fuente": null,
+  "nota": "No figura en las relaciones de coaliciones publicadas por la JEC (ámbito JEC y JEP), consultadas el 9-XI-2026. La denominación del BOE parece compuesta, pero no se ha encontrado documento oficial sobre su naturaleza. NO CONFIRMADO."
+ }
+}

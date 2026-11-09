@@ -69,6 +69,10 @@ export interface CandidaturaCirc {
   /** Otros partidos de la fase 1 integrados en esta candidatura (coaliciones, federaciones). */
   afines?: string[];
   cabeza_lista?: string | null;
+  /** Titulares de la lista en los puestos relevantes (BOE), con afiliación y enlace si constan en fuente fiable. */
+  titulares?: { orden: number; nombre: string; afiliacion?: string | null; enlace?: string | null; fuente_afiliacion?: string | null }[];
+  /** Composición de la papeleta si es coalición, federación o marca (fuente oficial). */
+  coalicion?: { tipo: string; miembros: { nombre: string; siglas?: string | null }[]; fuente?: { url?: string; documento?: string } | null; nota?: string | null } | null;
 }
 
 export interface Circunscripcion {

@@ -77,6 +77,76 @@ function Ordenar({ circ }: { circ: Circunscripcion }) {
   );
 }
 
+function Persona({ t, cand }: { t: NonNullable<CandidaturaCirc['titulares']>[number]; cand: CandidaturaCirc }) {
+  const esCoalicion = (cand.coalicion?.miembros.length ?? 0) >= 2;
+  return (
+    <li style={{ margin: '4px 0' }}>
+      <strong>{t.orden}.</strong> {t.enlace ? <a href={t.enlace} target="_blank" rel="noopener">{t.nombre}</a> : t.nombre}
+      <span class="muted">
+        {' · '}
+        {t.afiliacion ? (
+          t.fuente_afiliacion ? <a href={t.fuente_afiliacion} target="_blank" rel="noopener">{t.afiliacion}</a> : t.afiliacion
+        ) : esCoalicion ? (
+          'partido dentro de la coalición no publicado'
+        ) : (
+          `en la lista de ${cand.siglas}`
+        )}
+      </span>
+    </li>
+  );
+}
+
+/** Qué hay dentro de la papeleta y a quién elegiría el voto (listas del BOE). */
+function QuienElige({ cand, escanos }: { cand: CandidaturaCirc; escanos: number }) {
+  const miembros = cand.coalicion?.miembros ?? [];
+  const tit = cand.titulares ?? [];
+  const elegidos = tit.filter((t) => t.orden <= escanos);
+  const siguiente = tit.find((t) => t.orden === escanos + 1);
+  if (miembros.length < 2 && tit.length === 0) return null;
+  return (
+    <div class="stack" style={{ marginTop: 16 }}>
+      {miembros.length >= 2 && (
+        <div class="note">
+          <strong>Esta papeleta es una {cand.coalicion!.tipo === 'coalición' ? 'coalición' : cand.coalicion!.tipo}</strong> de:{' '}
+          {miembros.map((m) => m.nombre + (m.siglas && m.siglas !== m.nombre ? ` (${m.siglas})` : '')).join(', ')}.{' '}
+          Tu voto cuenta para la lista conjunta: los escaños los ocupan sus candidatos por orden, sean del partido que sean.{' '}
+          {cand.coalicion!.fuente?.url && (
+            <a href={cand.coalicion!.fuente.url} target="_blank" rel="noopener">
+              Fuente oficial
+            </a>
+          )}
+        </div>
+      )}
+      {tit.length > 0 && (
+        <div>
+          <h4 style={{ marginBottom: 6 }}>¿A quién elegiría tu voto?</h4>
+          {elegidos.length > 0 && (
+            <>
+              <div class="muted" style={{ fontSize: '0.85rem' }}>Escaños de {cand.siglas} en el escenario central:</div>
+              <ul style={{ listStyle: 'none', padding: 0, margin: '4px 0 10px' }}>
+                {elegidos.map((t) => (
+                  <Persona key={t.orden} t={t} cand={cand} />
+                ))}
+              </ul>
+            </>
+          )}
+          {siguiente && (
+            <>
+              <div class="muted" style={{ fontSize: '0.85rem' }}>Siguiente en entrar si gana un escaño más:</div>
+              <ul style={{ listStyle: 'none', padding: 0, margin: '4px 0 0' }}>
+                <Persona t={siguiente} cand={cand} />
+              </ul>
+            </>
+          )}
+          <p class="muted" style={{ fontSize: '0.8rem', marginTop: 8 }}>
+            Nombres y orden: listas proclamadas en el BOE. Afiliación y enlaces: fuentes oficiales o Wikipedia; si no constan, lo indicamos.
+          </p>
+        </div>
+      )}
+    </div>
+  );
+}
+
 export function Cuenta() {
   const d = fase2.value!;
   const e = estado.value;
@@ -262,6 +332,8 @@ export function Cuenta() {
                   )}
                 </div>
               )}
+              {!filaElegida.sinBase && <QuienElige cand={elegida!} escanos={filaElegida.escanosCentral} />}
+              {filaElegida.sinBase && <QuienElige cand={elegida!} escanos={0} />}
               {alternativa && !noSePresenta && (
                 <div class="note" style={{ marginTop: 16 }}>
                   Con este escenario, tu voto a {elegida!.siglas} tiene pocas opciones de convertirse en escaño en {circ.nombre}. Tu siguiente
@@ -310,6 +382,12 @@ export function Cuenta() {
                         <div class="muted" style={{ fontSize: '0.8rem' }}>
                           {f.cand.denominacion}
                           {f.cand.cabeza_lista ? ` · encabeza: ${f.cand.cabeza_lista}` : ''}
+                          {(f.cand.coalicion?.miembros.length ?? 0) >= 2 && (
+                            <>
+                              <br />
+                              Incluye: {f.cand.coalicion!.miembros.map((m) => m.siglas || m.nombre).join(', ')}
+                            </>
+                          )}
                         </div>
                       </td>
                       <td class="num">{f.sinBase ? '—' : fmt.pct(f.cuota, 1)}</td>
