@@ -6,6 +6,13 @@ Comprobación de los programas no publicados: 9 de noviembre de 2026, hacia las 
 
 Nueva comprobación: 9 de noviembre de 2026, hacia las 20:45 (+01:00). Sin cambios en los 14 no publicados: ningún programa nuevo y ninguna fecha nueva anunciada en webs oficiales. La agenda de pp.es del día no incluye la presentación; la prensa la sigue situando el martes 10-nov, ahora con «249 medidas» (Infobae, directo del 9-nov, 15:55: https://www.infobae.com/espana/2026/11/09/elecciones-generales-29-n-en-directo-feijoo-confia-en-que-los-sindicatos-acepten-el-resultado-electoral-si-hay-cambio-de-gobierno/). En voxespana.es la portada sigue dando 403, pero /noticias se lee: nada sobre el programa, y el enlace «Programa electoral de VOX» del menú da 404. La página «Programa» de adelanteandalucia.org es la de las autonómicas andaluzas de 2026, no la del 29-N. psoe.es sigue tras el desafío anti-bots.
 
+Nueva comprobación: 10 de noviembre de 2026, hacia las 09:50 (+01:00). Ningún programa nuevo publicado en las webs oficiales de los 14 pendientes. Novedades en fechas anunciadas:
+
+- **PP:** la agenda oficial del partido (https://www.pp.es/actualidad/agenda/) ya confirma la presentación: «Alberto Núñez Feijóo presenta el programa electoral para el 29-N», con intervención de Alma Ezcurra, hoy 10-nov a las 12:00 en Madrid. A las 09:50 no hay programa en pp.es: ni en /actualidad/documentos/ (solo argumentarios diarios «HC»), ni en la API de WordPress (entradas, páginas y ficheros subidos), y /programa y /programa-electoral dan 404.
+- **UPN-PP:** la misma agenda de pp.es anuncia hoy a las 11:30, en Pamplona, la «presentación del lema y de los compromisos de la coalición UPN-PP» (con Sergio Sayas). No dice que sea el programa electoral; no consta en upn.org.
+
+Sin cambios en el resto: psoe.es sigue tras el desafío anti-bots, la página de programa de Vox sigue en 404, la página «Programa» de adelanteandalucia.org sigue siendo la de las autonómicas y seacabolafiesta.com bloquea su API (403).
+
 ## 1. Universo de partidos
 
 Se incluyen las candidaturas al Congreso que cumplen al menos uno de estos criterios:
