@@ -228,6 +228,13 @@
       "antes": 2,
       "despues": 1,
       "motivo": "Auditoría de igual estándar 12-nov: Igual estándar con PSC q18 (verificado hoy: +1 porque solo nombra la parte de Cataluña y no la cifra total). La cita literal de Micó, «la condonación de la deuda», va en una enumeración de prioridades y se refiere a la deuda de la Generalitat Valenciana, sin cifra ni la quita general de 83.000 M€. +2 → +1."
+    },
+    {
+      "partido": "adelante_andalucia",
+      "pregunta": "*",
+      "antes": null,
+      "despues": null,
+      "motivo": "12-nov: 18 posiciones desde el programa oficial del 29-N (10-nov), verificadas de forma independiente (aprobado=True, 0 cambios); detalle en verificacion_adelante_andalucia_2026-11-12.json"
     }
   ],
   "dudas": [
@@ -237,6 +244,10 @@
     "frente_amplio/q13 y compromis/q13: ambos rechazan la «prioridad nacional» en general, sin mencionar la vivienda social. Micó la rechaza (elDiario.es 25-oct) como «aplicada a todos los ámbitos de la vida» por el Consell de PP y Vox y añade «no queremos que esto pase en el Congreso». Se mantiene −1 en los dos, no −2.",
     "compromis/q02: el compromiso de destinar lo expropiado «al parque público» lo atribuye EFE al conjunto de candidatos en la rueda de prensa, y en palabras textuales solo a Ibáñez. Micó, cabeza de lista, estaba presente y repitió la expropiación en Elche, pero sin mencionar el destino.",
     "Campo «quien» y «formato» comprobados en todas las celdas de campaña sin cambios: Podemos q01, q02, q04, q08, q26 y q30 (desayuno informativo de Europa Press, 6-nov, Hotel InterContinental, Madrid) y q06 (presentación de candidaturas en la sede, 5-nov); Compromís q01, q13, q18 y q21 (entrevista de elDiario.es, publicada el 25-oct); Frente Amplio q02, q04 y q08 y Ara Més q01 (notas oficiales); UPC q01, q04 y q09 (Manifiesto electoral, documento oficial). Todos son correctos.",
-    "Programas: siguen sin publicarse los programas del 29N de los seis partidos del grupo, según las comprobaciones del codificador del 8-nov. No se ha vuelto a comprobar en esta verificación."
+    "Programas: siguen sin publicarse los programas del 29N de los seis partidos del grupo, según las comprobaciones del codificador del 8-nov. No se ha vuelto a comprobar en esta verificación.",
+    "adelante_andalucia: q02 (+1): «Desprivatización de todas las viviendas de bancos y fondos de inversión» (p. 4) no dice «expropiar», pero pasar al parque público todas las viviendas de bancos y fondos no es posible solo con compras voluntarias. Se mantiene +1, como en Podemos (expropiar el uso), y no +2, porque el programa no nombra el mecanismo ni el umbral de 50 viviendas.",
+    "adelante_andalucia: q07 (+1): cuota cero solo «cuando no hay rendimientos netos» e «hiperreducida» para quien factura poco (p. 67), frente a cuota cero por debajo del salario mínimo. Se mantiene +1 con la regla de «misma dirección con otro diseño» (q06, q08, q10), pero queda cerca del límite de «medida relacionada pero distinta».",
+    "adelante_andalucia: q23 (−2): el programa pide derogar «la ley de desalojos rápidos» (propuesta 495, p. 94), es decir, la vía rápida vigente desde 2025, y ese rechazo es expreso, aunque no figura entre las 29 medidas principales. La ilegalización de las empresas de «desokupación» sí está en la medida 1 (p. 4), lo que sostiene la prioridad.",
+    "adelante_andalucia: Comprobado para las 18 codificadas: las citas son literales y la página es correcta en todas (cotejo página a página con pdftotext); en la maquetación a dos columnas, los «[...]» de q05, q06 y q07 saltan solo texto de la otra columna. También se comprobaron las 12 null buscando en todo el programa: IVA o ITP de primera vivienda, lengua vehicular, prioridad nacional en vivienda, expulsión de condenados, referéndum, concierto o cupo, eólica marina, reducción de emisiones a 2030, Ministerio de Igualdad, Fuerzas Armadas en Ceuta, exigencias agrarias por encima de la UE y Mercosur. No hay ninguna posición explícita omitida; las menciones encontradas (p. ej., «industria auxiliar de la eólica marina», p. 125, o «modelo confederal», p. 73) no son posiciones inequívocas sobre la afirmación."
   ]
 }

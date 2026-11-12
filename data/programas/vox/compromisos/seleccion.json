@@ -1,0 +1,713 @@
+{
+ "partido": "vox",
+ "base": "compromisos",
+ "fecha": "2026-11-12",
+ "modelo": "Claude (Anthropic)",
+ "prompt": "docs/prompts/1b_seleccion_compromisos.md",
+ "nota": "Vox presentó su programa del 29-N el 12-nov, pero no está disponible en una web oficial accesible (voxespana.es devuelve 403). Este análisis se basa en compromisos de sus líderes y se sustituirá por el del programa cuando se catalogue.",
+ "compromisos": [
+  {
+   "id": "vox-c01",
+   "area": "exterior y defensa",
+   "resumen": "Desplegar de forma permanente al Ejército en la frontera de Ceuta (y reforzar los medios en Ceuta y Melilla si son insuficientes).",
+   "cita": "Hay que desplegar al Ejército permanentemente. Si los medios que hay ahora en Ceuta y Melilla son insuficientes, hay que llevar más",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "formato": "entrevista (ABC), recogida por Diario de León",
+   "fecha": "2026-10-11",
+   "url": "https://www.diariodeleon.es/nacional/261011/2099950/abascal-voluntad-entendimiento-aun-mayor-partido-popular.html",
+   "medio": "Diario de León (entrevista de ABC)",
+   "fuente_local": "data/sources/compromisos/vox/2026-10-11_diariodeleon_entrevista_abc.txt",
+   "sha256": "8b8bb5112a6f10cff2eeebc620f64a798a86cf8c40f16cda491b648704364c3e",
+   "cuantificado": false,
+   "veces": {
+    "n": 3,
+    "ocasiones": [
+     {
+      "fecha": "2026-10-11",
+      "medio": "Diario de León (entrevista de ABC)",
+      "url": "https://www.diariodeleon.es/nacional/261011/2099950/abascal-voluntad-entendimiento-aun-mayor-partido-popular.html",
+      "formato": "entrevista",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-11_diariodeleon_entrevista_abc.txt"
+     },
+     {
+      "fecha": "2026-10-12",
+      "medio": "Infobae (EFE)",
+      "url": "https://www.infobae.com/espana/agencias/2026/10/12/abascal-exige-desde-ceuta-militarizar-la-frontera-y-expulsar-a-los-migrantes-irregulares/",
+      "formato": "comparecencia ante los medios en Ceuta",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-12_infobae_efe_ceuta.txt",
+      "nota": "Exige que la frontera sea «militarizada y reforzada estructuralmente» (cita parcial en crónica de EFE)."
+     },
+     {
+      "fecha": "2026-11-04",
+      "medio": "Vozpópuli",
+      "url": "https://www.vozpopuli.com/espana/abascal-ignora-a-puente-y-se-centra-en-sanchez-lo-unico-importante-es-lo-que-esta-en-juego-el-29-n.html",
+      "formato": "entrevista (Onda Cero)",
+      "fuente_local": "data/sources/compromisos/vox/2026-11-04_vozpopuli_ondacero_latorre.txt",
+      "nota": "Paráfrasis: lo que él habría hecho sería desplegar el Ejército, construir muros fronterizos y poner la presencia de la Armada."
+     }
+    ]
+   },
+   "nota": "Moncloa.com (11-oct) recoge de la misma entrevista de ABC la Armada vigilando las costas, ‘muros altos’ y espigones ‘mucho más grandes’. La declaración del 2-8-2026 en Ceuta («militarizar permanentemente la frontera») es anterior a la convocatoria y no se cuenta."
+  },
+  {
+   "id": "vox-c02",
+   "area": "inmigración",
+   "resumen": "Expulsar a todas las personas que entraron irregularmente en Ceuta en la crisis de finales de julio de 2026.",
+   "cita": "todos los invasores sean expulsados de la ciudad, expulsados de tierra española, todos y cada uno de ellos",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "formato": "comparecencia ante los medios (Mirador de Isabel II, Ceuta)",
+   "fecha": "2026-10-12",
+   "url": "https://www.infobae.com/espana/agencias/2026/10/12/abascal-exige-desde-ceuta-militarizar-la-frontera-y-expulsar-a-los-migrantes-irregulares/",
+   "medio": "Infobae (EFE)",
+   "fuente_local": "data/sources/compromisos/vox/2026-10-12_infobae_efe_ceuta.txt",
+   "sha256": "bc9a261b9ef6d0e4d3d7c7ded75e71a9e4755a1ebc8c42781e5ec78f228b1fe7",
+   "cuantificado": false,
+   "veces": {
+    "n": 1,
+    "ocasiones": [
+     {
+      "fecha": "2026-10-12",
+      "medio": "Infobae (EFE)",
+      "url": "https://www.infobae.com/espana/agencias/2026/10/12/abascal-exige-desde-ceuta-militarizar-la-frontera-y-expulsar-a-los-migrantes-irregulares/",
+      "formato": "comparecencia ante los medios",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-12_infobae_efe_ceuta.txt"
+     }
+    ]
+   },
+   "nota": "Formulada como exigencia al Gobierno actual; se incluye porque Abascal sitúa la recuperación de Ceuta como su principal prioridad de gobierno (vox-c01) y el programa del 12-nov la recoge en su primer bloque."
+  },
+  {
+   "id": "vox-c03",
+   "area": "inmigración",
+   "resumen": "Repatriar a todas las personas que entran o permanecen en España de forma irregular, sin regularizaciones.",
+   "cita": "El que viene ilegalmente a España tiene que ser repatriado.",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "formato": "mitin de precampaña (Estepona)",
+   "fecha": "2026-10-11",
+   "url": "https://www.infobae.com/espana/agencias/2026/10/11/abascal-dice-que-con-vox-las-pensiones-se-pagaran-y-habra-vivienda-como-sea-y-sigue-llamando-al-voto-presencial/",
+   "medio": "Infobae (Europa Press)",
+   "fuente_local": "data/sources/compromisos/vox/2026-10-11_infobae_ep_estepona.txt",
+   "sha256": "bd01db2c2a6784c95970845a669d3fa4e40ceefb8e6a779a63dbcc92bac5f857",
+   "cuantificado": false,
+   "veces": {
+    "n": 5,
+    "ocasiones": [
+     {
+      "fecha": "2026-10-11",
+      "medio": "Infobae (Europa Press)",
+      "url": "https://www.infobae.com/espana/agencias/2026/10/11/abascal-dice-que-con-vox-las-pensiones-se-pagaran-y-habra-vivienda-como-sea-y-sigue-llamando-al-voto-presencial/",
+      "formato": "mitin (Estepona)",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-11_infobae_ep_estepona.txt"
+     },
+     {
+      "fecha": "2026-10-18",
+      "medio": "RTVC (entrevista en La Razón)",
+      "url": "https://rtvc.es/feijoo-promete-una-ley-antiocupaciones-mientras-que-abascal-declara-que-no-seran-unos-comicios-limpios-18-de-octubre-de-2026/",
+      "formato": "entrevista",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-18_rtvc_entrevista_larazon.txt",
+      "nota": "La remigración incluye a «aquellos que han entrado ilegalmente»."
+     },
+     {
+      "fecha": "2026-10-21",
+      "medio": "Demócrata",
+      "url": "https://www.democrata.es/elecciones-generales-espana/visita-abascal-aviles-desata-protestas-obliga-establecer-cordon-policial/",
+      "formato": "mitin (Avilés)",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-21_democrata_aviles.txt",
+      "nota": "«Nuestro mensaje es muy claro: repatriación, se les va a invitar a irse a sus países»."
+     },
+     {
+      "fecha": "2026-11-08",
+      "medio": "Demócrata (Europa Press, entrevista en El Periódico)",
+      "url": "https://www.democrata.es/politica/abascal-alerta-de-que-las-pensiones-estan-en-riesgo-con-sanchez-y-reivindica-garantizarlas/",
+      "formato": "entrevista",
+      "fuente_local": "data/sources/compromisos/vox/2026-11-08_democrata_ep_elperiodico.txt",
+      "nota": "«quienes están ilegalmente, que deben ser repatriados»."
+     },
+     {
+      "fecha": "2026-11-09",
+      "medio": "Última Hora (agencias)",
+      "url": "https://www.ultimahora.es/noticias/elecciones-29n/2026/11/10/2746681/abascal-broncano-protagonizan-tenso-debate-revuelta.html",
+      "formato": "entrevista televisiva (La Revuelta, RTVE)",
+      "fuente_local": "data/sources/compromisos/vox/2026-11-10_ultimahora_revuelta.txt",
+      "nota": "Paráfrasis: defiende «la repatriación inmediata» de quien acceda ilegalmente y rechaza regularizaciones."
+     }
+    ]
+   }
+  },
+  {
+   "id": "vox-c04",
+   "area": "inmigración",
+   "resumen": "Expulsar a los extranjeros que cometan delitos para que cumplan la pena en su país de origen mediante convenios con esos países.",
+   "cita": "Los que están cometiendo delitos se tienen que ir todos a través de convenios internacionales con los países de origen a cumplir las penas de prisión en sus propias naciones",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "formato": "entrevista (La Razón), recogida por Moncloa.com",
+   "fecha": "2026-10-18",
+   "url": "https://www.moncloa.com/2026/10/18/abascal-prioridad-nacional-vox-ayudas-3450744/",
+   "medio": "Moncloa.com (entrevista de La Razón)",
+   "fuente_local": "data/sources/compromisos/vox/2026-10-18_moncloacom_entrevista_larazon.txt",
+   "sha256": "f2fb732cf62c0ff18f3a0d0142832382566ddeff04b0fb4bbc453ba949e76255",
+   "cuantificado": false,
+   "veces": {
+    "n": 5,
+    "ocasiones": [
+     {
+      "fecha": "2026-10-11",
+      "medio": "Infobae (Europa Press)",
+      "url": "https://www.infobae.com/espana/agencias/2026/10/11/abascal-dice-que-con-vox-las-pensiones-se-pagaran-y-habra-vivienda-como-sea-y-sigue-llamando-al-voto-presencial/",
+      "formato": "mitin (Estepona)",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-11_infobae_ep_estepona.txt",
+      "nota": "«El que viene a España a cometer delitos tiene que irse a su propio país a cumplir la pena»."
+     },
+     {
+      "fecha": "2026-10-18",
+      "medio": "Moncloa.com (entrevista de La Razón)",
+      "url": "https://www.moncloa.com/2026/10/18/abascal-prioridad-nacional-vox-ayudas-3450744/",
+      "formato": "entrevista",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-18_moncloacom_entrevista_larazon.txt"
+     },
+     {
+      "fecha": "2026-10-24",
+      "medio": "Infobae (Europa Press)",
+      "url": "https://www.infobae.com/espana/agencias/2026/10/24/abascal-pide-una-gran-mayoria-para-presidir-el-gobierno-no-es-imposible-ganar-unas-elecciones/",
+      "formato": "mitin (Palma)",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-24_infobae_ep_palma.txt",
+      "nota": "Expulsión «por la vía rápida»: «Los queremos en las cárceles de sus países»."
+     },
+     {
+      "fecha": "2026-11-04",
+      "medio": "Vozpópuli",
+      "url": "https://www.vozpopuli.com/espana/abascal-ignora-a-puente-y-se-centra-en-sanchez-lo-unico-importante-es-lo-que-esta-en-juego-el-29-n.html",
+      "formato": "entrevista (Onda Cero)",
+      "fuente_local": "data/sources/compromisos/vox/2026-11-04_vozpopuli_ondacero_latorre.txt",
+      "nota": "Paráfrasis: deportación de los inmigrantes que cometan delitos."
+     },
+     {
+      "fecha": "2026-11-09",
+      "medio": "Última Hora (agencias)",
+      "url": "https://www.ultimahora.es/noticias/elecciones-29n/2026/11/10/2746681/abascal-broncano-protagonizan-tenso-debate-revuelta.html",
+      "formato": "entrevista televisiva (La Revuelta, RTVE)",
+      "fuente_local": "data/sources/compromisos/vox/2026-11-10_ultimahora_revuelta.txt",
+      "nota": "«No creo que debamos tener delincuentes extranjeros en España»; deportación con independencia de su situación legal."
+     }
+    ]
+   }
+  },
+  {
+   "id": "vox-c05",
+   "area": "inmigración",
+   "resumen": "«Remigración»: que los extranjeros que viven de ayudas públicas sin trabajar ni cotizar abandonen España.",
+   "cita": "Cuando uno va a un país y no pretende pagar sino vivir de las ayudas públicas debe irse",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "formato": "mitin (Palma)",
+   "fecha": "2026-10-24",
+   "url": "https://www.infobae.com/espana/agencias/2026/10/24/abascal-pide-una-gran-mayoria-para-presidir-el-gobierno-no-es-imposible-ganar-unas-elecciones/",
+   "medio": "Infobae (Europa Press)",
+   "fuente_local": "data/sources/compromisos/vox/2026-10-24_infobae_ep_palma.txt",
+   "sha256": "ea215141f0b826c05782916835e0ff3fbb1ed3be392dc0d87754e38ddeda2d23",
+   "cuantificado": false,
+   "veces": {
+    "n": 6,
+    "ocasiones": [
+     {
+      "fecha": "2026-10-11",
+      "medio": "Infobae (Europa Press)",
+      "url": "https://www.infobae.com/espana/agencias/2026/10/11/abascal-dice-que-con-vox-las-pensiones-se-pagaran-y-habra-vivienda-como-sea-y-sigue-llamando-al-voto-presencial/",
+      "formato": "mitin (Estepona)",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-11_infobae_ep_estepona.txt",
+      "nota": "Quienes han venido «a vivir de las ayudas sociales que no alcanzan a los españoles» tienen que «reemigrar a su propio país»."
+     },
+     {
+      "fecha": "2026-10-11",
+      "medio": "Diario de León (entrevista de ABC)",
+      "url": "https://www.diariodeleon.es/nacional/261011/2099950/abascal-voluntad-entendimiento-aun-mayor-partido-popular.html",
+      "formato": "entrevista",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-11_diariodeleon_entrevista_abc.txt",
+      "nota": "«Hay que iniciar un proceso de remigración de quien está en España y no tiene que estar»."
+     },
+     {
+      "fecha": "2026-10-18",
+      "medio": "RTVC (entrevista en La Razón)",
+      "url": "https://rtvc.es/feijoo-promete-una-ley-antiocupaciones-mientras-que-abascal-declara-que-no-seran-unos-comicios-limpios-18-de-octubre-de-2026/",
+      "formato": "entrevista",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-18_rtvc_entrevista_larazon.txt",
+      "nota": "Condición para un acuerdo de gobierno con el PP: remigración de «los que están viviendo de ayudas sociales sin trabajar y sin aportar»."
+     },
+     {
+      "fecha": "2026-10-21",
+      "medio": "Demócrata",
+      "url": "https://www.democrata.es/elecciones-generales-espana/visita-abascal-aviles-desata-protestas-obliga-establecer-cordon-policial/",
+      "formato": "mitin (Avilés)",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-21_democrata_aviles.txt",
+      "nota": "«Ya no cabe nadie más, hace falta un proceso de remigración»."
+     },
+     {
+      "fecha": "2026-10-24",
+      "medio": "Infobae (Europa Press)",
+      "url": "https://www.infobae.com/espana/agencias/2026/10/24/abascal-pide-una-gran-mayoria-para-presidir-el-gobierno-no-es-imposible-ganar-unas-elecciones/",
+      "formato": "mitin (Palma)",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-24_infobae_ep_palma.txt",
+      "nota": "Incluye a quienes «pasan por una mala racha» prolongada: «hay que hacer que remigren»."
+     },
+     {
+      "fecha": "2026-11-04",
+      "medio": "Vozpópuli",
+      "url": "https://www.vozpopuli.com/espana/abascal-ignora-a-puente-y-se-centra-en-sanchez-lo-unico-importante-es-lo-que-esta-en-juego-el-29-n.html",
+      "formato": "entrevista (Onda Cero)",
+      "fuente_local": "data/sources/compromisos/vox/2026-11-04_vozpopuli_ondacero_latorre.txt",
+      "nota": "Paráfrasis: procesos de remigración para quienes «están en España viviendo de las ayudas»."
+     }
+    ]
+   },
+   "nota": "No precisa instrumento (retorno voluntario incentivado o expulsión), plazo ni número de personas afectadas."
+  },
+  {
+   "id": "vox-c06",
+   "area": "inmigración",
+   "resumen": "Llevar a la frontera y entregar a las autoridades marroquíes a los menores extranjeros no acompañados que permanecen en Ceuta.",
+   "cita": "lo primero que hay que hacer es ponerlos en la frontera",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "formato": "entrevista (El Periódico), recogida por Europa Press",
+   "fecha": "2026-11-08",
+   "url": "https://www.democrata.es/politica/abascal-alerta-de-que-las-pensiones-estan-en-riesgo-con-sanchez-y-reivindica-garantizarlas/",
+   "medio": "Demócrata (Europa Press)",
+   "fuente_local": "data/sources/compromisos/vox/2026-11-08_democrata_ep_elperiodico.txt",
+   "sha256": "2d99c179fe0ad7bfbedf88a1dcf13df36e325f0393857acd56e9c4cc3c16702d",
+   "cuantificado": false,
+   "veces": {
+    "n": 2,
+    "ocasiones": [
+     {
+      "fecha": "2026-10-24",
+      "medio": "Infobae (Europa Press)",
+      "url": "https://www.infobae.com/espana/agencias/2026/10/24/abascal-pide-una-gran-mayoria-para-presidir-el-gobierno-no-es-imposible-ganar-unas-elecciones/",
+      "formato": "mitin (Palma)",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-24_infobae_ep_palma.txt",
+      "nota": "Paráfrasis: los menores extranjeros no acompañados «deben regresar con sus familias»."
+     },
+     {
+      "fecha": "2026-11-08",
+      "medio": "Demócrata (Europa Press)",
+      "url": "https://www.democrata.es/politica/abascal-alerta-de-que-las-pensiones-estan-en-riesgo-con-sanchez-y-reivindica-garantizarlas/",
+      "formato": "entrevista",
+      "fuente_local": "data/sources/compromisos/vox/2026-11-08_democrata_ep_elperiodico.txt"
+     }
+    ]
+   },
+   "nota": "La crónica añade, en estilo indirecto, «y entregarlos a las autoridades marroquíes»."
+  },
+  {
+   "id": "vox-c07",
+   "area": "inmigración",
+   "resumen": "Dar preferencia a los españoles en el acceso a las ayudas sociales («prioridad nacional»), salvo derechos ya generados por quienes llevan años trabajando y cotizando.",
+   "cita": "Las ayudas sociales tienen que ser prioritariamente para los españoles",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "formato": "entrevista (La Razón), recogida por Moncloa.com",
+   "fecha": "2026-10-18",
+   "url": "https://www.moncloa.com/2026/10/18/abascal-prioridad-nacional-vox-ayudas-3450744/",
+   "medio": "Moncloa.com (entrevista de La Razón)",
+   "fuente_local": "data/sources/compromisos/vox/2026-10-18_moncloacom_entrevista_larazon.txt",
+   "sha256": "f2fb732cf62c0ff18f3a0d0142832382566ddeff04b0fb4bbc453ba949e76255",
+   "cuantificado": false,
+   "veces": {
+    "n": 2,
+    "ocasiones": [
+     {
+      "fecha": "2026-10-18",
+      "medio": "Moncloa.com (entrevista de La Razón)",
+      "url": "https://www.moncloa.com/2026/10/18/abascal-prioridad-nacional-vox-ayudas-3450744/",
+      "formato": "entrevista",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-18_moncloacom_entrevista_larazon.txt"
+     },
+     {
+      "fecha": "2026-11-09",
+      "medio": "Última Hora (agencias)",
+      "url": "https://www.ultimahora.es/noticias/elecciones-29n/2026/11/10/2746681/abascal-broncano-protagonizan-tenso-debate-revuelta.html",
+      "formato": "entrevista televisiva (La Revuelta, RTVE)",
+      "fuente_local": "data/sources/compromisos/vox/2026-11-10_ultimahora_revuelta.txt",
+      "nota": "Paráfrasis: el Ingreso Mínimo Vital no debería concederse a ciudadanos extranjeros."
+     }
+    ]
+   },
+   "nota": "En la misma entrevista matiza que quien lleva años trabajando y cotizando ha adquirido derechos. No concreta qué prestaciones ni el criterio (nacionalidad o años de residencia)."
+  },
+  {
+   "id": "vox-c09",
+   "area": "vivienda",
+   "resumen": "Eliminar los impuestos sobre la compra de la primera vivienda, con más suelo y plazos cerrados de tramitación.",
+   "cita": "Proponemos más suelo y plazos cerrados, y que la primera vivienda esté libre de carga impositiva",
+   "quien": "Maribel Cerezo, cabeza de lista de Vox al Congreso por Illes Balears",
+   "formato": "mitin (Palma, acto de Abascal)",
+   "fecha": "2026-10-24",
+   "url": "https://www.infobae.com/espana/agencias/2026/10/24/abascal-pide-una-gran-mayoria-para-presidir-el-gobierno-no-es-imposible-ganar-unas-elecciones/",
+   "medio": "Infobae (Europa Press)",
+   "fuente_local": "data/sources/compromisos/vox/2026-10-24_infobae_ep_palma.txt",
+   "sha256": "ea215141f0b826c05782916835e0ff3fbb1ed3be392dc0d87754e38ddeda2d23",
+   "cuantificado": false,
+   "veces": {
+    "n": 1,
+    "ocasiones": [
+     {
+      "fecha": "2026-10-24",
+      "medio": "Infobae (Europa Press)",
+      "url": "https://www.infobae.com/espana/agencias/2026/10/24/abascal-pide-una-gran-mayoria-para-presidir-el-gobierno-no-es-imposible-ganar-unas-elecciones/",
+      "formato": "mitin (Palma)",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-24_infobae_ep_palma.txt"
+     }
+    ]
+   },
+   "nota": "Abascal pidió el 8-nov «enfrentarse a la sobrerregulación y a los impuestos sobre la vivienda» (El Periódico, vía Europa Press), sin concretar."
+  },
+  {
+   "id": "vox-c11",
+   "area": "fiscalidad",
+   "resumen": "Sustituir la escala del IRPF por un mínimo exento de 22.000 euros, un tipo del 15 % hasta 70.000 euros y del 25 % por encima, con cuatro puntos menos por cada hijo.",
+   "cita": "un mínimo exento de 22.000 euros. Hasta 70.000 euros se tributaría al 15% y de 70.001 en adelante al 25%. Sencillo",
+   "quien": "José María Figaredo, portavoz nacional de Economía de Vox y secretario general de su Grupo Parlamentario",
+   "formato": "declaraciones recogidas por elDiario.es",
+   "fecha": "2026-10-08",
+   "url": "https://www.eldiario.es/economia/recetas-responsable-economico-vox-rumbo-privatizacion-pensiones-irpf-medida-ricos_1_13572527.html",
+   "medio": "elDiario.es",
+   "fuente_local": "data/sources/compromisos/vox/2026-10-08_eldiario_figaredo_irpf.txt",
+   "sha256": "efa1d2da977d6044a2423646ff4923e967757d06d0b4d11f2a8f86986bd9a1a7",
+   "cuantificado": true,
+   "veces": {
+    "n": 3,
+    "ocasiones": [
+     {
+      "fecha": "2026-10-08",
+      "medio": "elDiario.es",
+      "url": "https://www.eldiario.es/economia/recetas-responsable-economico-vox-rumbo-privatizacion-pensiones-irpf-medida-ricos_1_13572527.html",
+      "formato": "declaraciones",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-08_eldiario_figaredo_irpf.txt",
+      "nota": "Figaredo lo presenta como reforma «de máximo» y cifra su coste en 46.000 millones."
+     },
+     {
+      "fecha": "2026-10-11",
+      "medio": "Moncloa.com",
+      "url": "https://www.moncloa.com/2026/10/11/figaredo-vox-pensiones-gasto-3446390/",
+      "formato": "declaraciones",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-11_moncloacom_figaredo_irpf.txt",
+      "nota": "Paráfrasis; recoge el coste de 46.000 millones que reconoce Figaredo."
+     },
+     {
+      "fecha": "2026-11-06",
+      "medio": "101TV Sevilla",
+      "url": "https://101tvsevilla.es/vox-plantea-eliminar-el-irpf-hasta-los-22-000-euros-y-rebajar-el-iva-al-18/",
+      "formato": "entrevista",
+      "fuente_local": "data/sources/compromisos/vox/2026-11-06_101tv_figaredo.txt",
+      "nota": "Paráfrasis: cuatro puntos menos por hijo; financiación con revisión de subvenciones."
+     }
+    ]
+   },
+   "nota": "La rebaja de cuatro puntos por hijo solo consta en paráfrasis (101TV). elDiario.es (8-oct) sitúa la declaración «esta semana», sin fecha exacta; la convocatoria es del 6-oct. Las repeticiones del 11-oct y 6-nov son posteriores, y el ministro de Hacienda la trató como propuesta de Vox para el 29-N (13-oct)."
+  },
+  {
+   "id": "vox-c12",
+   "area": "fiscalidad",
+   "resumen": "Dejar de gravar las propinas que reciben los trabajadores de la hostelería.",
+   "cita": "Si llegamos, tenemos la intención de acabar con el saqueo a las propinas, una injusticia absoluta",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "formato": "mitin (Palma)",
+   "fecha": "2026-10-24",
+   "url": "https://www.infobae.com/espana/agencias/2026/10/24/abascal-pide-una-gran-mayoria-para-presidir-el-gobierno-no-es-imposible-ganar-unas-elecciones/",
+   "medio": "Infobae (Europa Press)",
+   "fuente_local": "data/sources/compromisos/vox/2026-10-24_infobae_ep_palma.txt",
+   "sha256": "ea215141f0b826c05782916835e0ff3fbb1ed3be392dc0d87754e38ddeda2d23",
+   "cuantificado": false,
+   "veces": {
+    "n": 1,
+    "ocasiones": [
+     {
+      "fecha": "2026-10-24",
+      "medio": "Infobae (Europa Press)",
+      "url": "https://www.infobae.com/espana/agencias/2026/10/24/abascal-pide-una-gran-mayoria-para-presidir-el-gobierno-no-es-imposible-ganar-unas-elecciones/",
+      "formato": "mitin (Palma)",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-24_infobae_ep_palma.txt"
+     }
+    ]
+   },
+   "nota": "Recogido también por Vozpópuli y Press Digital del mismo mitin. No precisa si se refiere al IRPF, a las cotizaciones o a ambos."
+  },
+  {
+   "id": "vox-c15",
+   "area": "inmigración",
+   "resumen": "Hacer una «gran auditoría» de las nacionalidades españolas concedidas.",
+   "cita": "Habrá que hacer una gran auditoría para saber quiénes son esas personas",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "formato": "entrevista (La Razón), recogida por Moncloa.com",
+   "fecha": "2026-10-18",
+   "url": "https://www.moncloa.com/2026/10/18/abascal-prioridad-nacional-vox-ayudas-3450744/",
+   "medio": "Moncloa.com (entrevista de La Razón)",
+   "fuente_local": "data/sources/compromisos/vox/2026-10-18_moncloacom_entrevista_larazon.txt",
+   "sha256": "f2fb732cf62c0ff18f3a0d0142832382566ddeff04b0fb4bbc453ba949e76255",
+   "cuantificado": false,
+   "veces": {
+    "n": 1,
+    "ocasiones": [
+     {
+      "fecha": "2026-10-18",
+      "medio": "Moncloa.com (entrevista de La Razón)",
+      "url": "https://www.moncloa.com/2026/10/18/abascal-prioridad-nacional-vox-ayudas-3450744/",
+      "formato": "entrevista",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-18_moncloacom_entrevista_larazon.txt"
+     }
+    ]
+   },
+   "nota": "Moncloa.com lo presenta como el «tercer eje» de la entrevista. La propuesta de revisar las nacionalidades concedidas desde 2018 (La Estrella de Panamá, 3-2-2026) es anterior a la convocatoria y no se cuenta. La crónica no reproduce la comilla de apertura ni la frase anterior; que el objeto son las concesiones de nacionalidad lo dice el periodista («El tercer eje es la revisión de las concesiones de nacionalidad española»). Abascal no dice qué consecuencias tendría la auditoría (p. ej., revocaciones)."
+  },
+  {
+   "id": "vox-c16",
+   "area": "inmigración",
+   "resumen": "Auditar todas las ayudas sociales para que no se dirijan a extranjeros en situación irregular.",
+   "cita": "auditoría completa de todas las ayudas sociales",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "formato": "entrevista (El Periódico), recogida por Europa Press",
+   "fecha": "2026-11-08",
+   "url": "https://www.democrata.es/politica/abascal-alerta-de-que-las-pensiones-estan-en-riesgo-con-sanchez-y-reivindica-garantizarlas/",
+   "medio": "Demócrata (Europa Press)",
+   "fuente_local": "data/sources/compromisos/vox/2026-11-08_democrata_ep_elperiodico.txt",
+   "sha256": "2d99c179fe0ad7bfbedf88a1dcf13df36e325f0393857acd56e9c4cc3c16702d",
+   "cuantificado": false,
+   "veces": {
+    "n": 1,
+    "ocasiones": [
+     {
+      "fecha": "2026-11-08",
+      "medio": "Demócrata (Europa Press)",
+      "url": "https://www.democrata.es/politica/abascal-alerta-de-que-las-pensiones-estan-en-riesgo-con-sanchez-y-reivindica-garantizarlas/",
+      "formato": "entrevista",
+      "fuente_local": "data/sources/compromisos/vox/2026-11-08_democrata_ep_elperiodico.txt"
+     }
+    ]
+   }
+  },
+  {
+   "id": "vox-c17",
+   "area": "educación",
+   "resumen": "Que sean los padres quienes elijan la lengua y la proporción de enseñanza en cada lengua, sin porcentajes fijados por sistema.",
+   "cita": "Lo que queremos es que los padres tengan la capacidad de elegir exactamente cuál es la educación de sus hijos",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "formato": "entrevista (La Vanguardia), recogida por ACN",
+   "fecha": "2026-10-25",
+   "url": "https://www.diaridetarragona.com/catalunya/273953/vox-ve-posible-colaborar-alianca-defender-identidad-catalana-invasion-migratoria.html",
+   "medio": "Diari de Tarragona (ACN)",
+   "fuente_local": "data/sources/compromisos/vox/2026-10-25_diaridetarragona_acn_lavanguardia.txt",
+   "sha256": "c4eeebca53453c1ea58789a553b6579984fea4ee32601f5215439e5fadb5bda4",
+   "cuantificado": false,
+   "veces": {
+    "n": 1,
+    "ocasiones": [
+     {
+      "fecha": "2026-10-25",
+      "medio": "Diari de Tarragona (ACN)",
+      "url": "https://www.diaridetarragona.com/catalunya/273953/vox-ve-posible-colaborar-alianca-defender-identidad-catalana-invasion-migratoria.html",
+      "formato": "entrevista",
+      "fuente_local": "data/sources/compromisos/vox/2026-10-25_diaridetarragona_acn_lavanguardia.txt"
+     }
+    ]
+   }
+  }
+ ],
+ "prioridades": [
+  {
+   "id": "vox-c01",
+   "justificacion": "Abascal la presenta como su primera prioridad: «Tenemos muchas prioridades, pero la principal es recuperar Ceuta» (mitin de Palma, 24-oct); en ABC (11-oct), «lo más urgente es recuperar Ceuta»; y en La Razón (18-oct) la primera condición para pactar con el PP es «prioridad nacional, que significa recuperar Ceuta al precio que sea». Repetida en tres ocasiones; el programa difundido el 12-nov abre con el bloque de Ceuta y Melilla (El Debate)."
+  },
+  {
+   "id": "vox-c02",
+   "justificacion": "Forma parte de la misma prioridad declarada (recuperar Ceuta) y la anunció Abascal en Ceuta el 12-oct; el programa del 12-nov la sitúa en su primer bloque («expulsar de inmediato a todos los invasores», según OKDiario)."
+  },
+  {
+   "id": "vox-c03",
+   "justificacion": "La «remigración» es uno de los tres ejes oficiales de la campaña («Es sentido común»: prioridad nacional, desregulación y remigración) y la repatriación de quien entra ilegalmente es su primer componente; Abascal lo ha repetido en cinco ocasiones (Estepona, La Razón, Avilés, El Periódico, La Revuelta)."
+  },
+  {
+   "id": "vox-c04",
+   "justificacion": "Segundo componente del eje de remigración; Abascal lo repite en cinco ocasiones y lo presenta como el «segundo eje» de su entrevista en La Razón (18-oct)."
+  },
+  {
+   "id": "vox-c05",
+   "justificacion": "Eje de campaña (remigración) y condición para un acuerdo de gobierno con el PP (La Razón, 18-oct); repetida en seis ocasiones por el candidato."
+  },
+  {
+   "id": "vox-c06",
+   "justificacion": "Abascal la ha planteado en dos ocasiones (Palma, 24-oct; El Periódico, 8-nov), ligada a la prioridad de Ceuta; el programa del 12-nov incluye el retorno de los menores no acompañados con sus familias."
+  },
+  {
+   "id": "vox-c07",
+   "justificacion": "La «prioridad nacional» es el primer eje oficial de la campaña; Abascal la define en La Razón (18-oct) como preferencia de los españoles en las ayudas sociales y, según la crónica de La Revuelta (9-nov), la aplicó al Ingreso Mínimo Vital."
+  },
+  {
+   "id": "vox-c11",
+   "justificacion": "Las rebajas fiscales son la segunda condición de Abascal para pactar con el PP (La Razón, 18-oct); Figaredo, portavoz económico, presenta esta reforma como eje de su plan económico y la ha repetido en tres ocasiones (8-oct, 11-oct, 6-nov)."
+  },
+  {
+   "id": "vox-c12",
+   "justificacion": "Medida fiscal concreta anunciada por el propio candidato nacional en un mitin (Palma, 24-oct), formulada como compromiso de gobierno («Si llegamos…»); Europa Press la destaca entre las propuestas del acto."
+  },
+  {
+   "id": "vox-c15",
+   "justificacion": "Abascal la enumera como uno de los tres ejes de su entrevista en La Razón (18-oct); el programa del 12-nov incluye «revisar las concesiones fraudulentas» de nacionalidad."
+  }
+ ],
+ "descartados": [
+  {
+   "tema": "Rebajar el IVA general del 21 % al 18 % (y el reducido al 8 %)",
+   "quien": "José María Figaredo, portavoz nacional de Economía de Vox y secretario general de su Grupo Parlamentario",
+   "fecha": "2026-11-04",
+   "url": "https://www.democrata.es/economia/vox-propone-bajar-el-iva-al-18-recortar-cotizaciones-y-revisar-52-000-millones-en-subvenciones/",
+   "fuente_local": "data/sources/compromisos/vox/2026-11-04_democrata_figaredo_madridforo.txt",
+   "motivo": "Estilo indirecto: las crónicas de Europa Press (Alicante Plaza, Demócrata) y 101TV solo recogen entre comillas «bajada masiva de impuestos»; el 18 % no aparece en palabras literales de Figaredo. elDiario.es (8-oct) escribió además que Vox quería «dejar el IVA en el 16%». Lo recoge el programa del 12-nov, que se analizará con el prompt 1."
+  },
+  {
+   "tema": "Cuota cero de autónomos para quien facture menos del SMI",
+   "quien": "José María Figaredo, portavoz nacional de Economía de Vox y secretario general de su Grupo Parlamentario",
+   "fecha": "2026-11-06",
+   "url": "https://101tvsevilla.es/vox-plantea-eliminar-el-irpf-hasta-los-22-000-euros-y-rebajar-el-iva-al-18/",
+   "fuente_local": "data/sources/compromisos/vox/2026-11-06_101tv_figaredo.txt",
+   "motivo": "Estilo indirecto: 101TV la resume sin cita literal y no se ha localizado otra fuente primaria o de agencia con sus palabras. Figura en el programa del 12-nov."
+  },
+  {
+   "tema": "Revisar 52.000 millones de subvenciones directas para financiar las rebajas fiscales",
+   "quien": "José María Figaredo, portavoz nacional de Economía de Vox y secretario general de su Grupo Parlamentario",
+   "fecha": "2026-11-04",
+   "url": "https://alicanteplaza.es/alicanteplaza/espana/vox-plantea-bajar-el-iva-al-18-reducir-cotizaciones-sociales-y-revisar-52000-millones-de-subvenciones",
+   "fuente_local": "data/sources/compromisos/vox/2026-11-04_alicanteplaza_ep_figaredo.txt",
+   "motivo": "Estilo indirecto y no es una medida autónoma: es la vía de financiación que Figaredo atribuye a las rebajas fiscales; se tiene en cuenta en la evaluación de vox-c11."
+  },
+  {
+   "tema": "Aplicar las normas europeas en su nivel mínimo y desregulación en general",
+   "quien": "José María Figaredo, portavoz nacional de Economía de Vox y secretario general de su Grupo Parlamentario; Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-11-04",
+   "url": "https://www.democrata.es/economia/vox-propone-bajar-el-iva-al-18-recortar-cotizaciones-y-revisar-52-000-millones-en-subvenciones/",
+   "fuente_local": "data/sources/compromisos/vox/2026-11-04_democrata_figaredo_madridforo.txt",
+   "motivo": "No concreto y en estilo indirecto: Figaredo (Madrid Foro) y Abascal (ABC, 11-oct: «detectar todas las regulaciones excesivas, todos los impuestos abusivos y todo el gasto político desorbitado») no identifican normas ni procedimientos. La regla de derogar tres normas por cada ley nueva solo consta en el programa."
+  },
+  {
+   "tema": "Crear un ministerio de Desregulación",
+   "quien": "fuentes de Vox",
+   "fecha": "2026-11-10",
+   "url": "https://www.articulo14.es/politica/abascal-contempla-exigir-a-feijoo-un-ministerio-de-desregulacion-20261110.html",
+   "fuente_local": "data/sources/compromisos/vox/2026-11-10_articulo14_desregulacion.txt",
+   "motivo": "Procede de «fuentes consultadas en Bambú», no de un líder en primera persona."
+  },
+  {
+   "tema": "Garantizar el pago de las pensiones y capitalizar el sistema",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno; José María Figaredo, portavoz nacional de Economía de Vox y secretario general de su Grupo Parlamentario",
+   "fecha": "2026-11-08",
+   "url": "https://www.democrata.es/politica/abascal-alerta-de-que-las-pensiones-estan-en-riesgo-con-sanchez-y-reivindica-garantizarlas/",
+   "fuente_local": "data/sources/compromisos/vox/2026-11-08_democrata_ep_elperiodico.txt",
+   "motivo": "No concreto: Abascal dice «Yo no me voy a comprometer con un sistema o con otro» y promete que se pagarán «como sea»; el componente de capitalización de Figaredo solo consta en paráfrasis (Moncloa.com, 11-oct) y el programa del 12-nov no lo incluye, según Infobae."
+  },
+  {
+   "tema": "Revisar la ley de violencia de género y que los violadores no salgan de prisión",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-11-09",
+   "url": "https://www.ultimahora.es/noticias/elecciones-29n/2026/11/10/2746681/abascal-broncano-protagonizan-tenso-debate-revuelta.html",
+   "fuente_local": "data/sources/compromisos/vox/2026-11-10_ultimahora_revuelta.txt",
+   "motivo": "No concreto: plantea la revisión como pregunta («¿Crees que esa ley debe seguir o tiene que ser discutida y ha de cambiar?») y no concreta reforma penal ni instrumento."
+  },
+  {
+   "tema": "Cuestionar la relación con Marruecos, el acuerdo preferencial UE-Marruecos y el Mundial de 2030",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-11-09",
+   "url": "https://www.diaridetarragona.com/espana/275326/abascal-admite-revuelta-debe-intervenir-vivienda.html",
+   "fuente_local": "data/sources/compromisos/vox/2026-11-10_diaridetarragona_revuelta.txt",
+   "motivo": "No es una medida: «Debemos cuestionar» no concreta qué se haría; las sanciones a países que no acepten devoluciones solo constan en estilo indirecto (Última Hora)."
+  },
+  {
+   "tema": "Rechazo al acuerdo UE-Mercosur",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-11-04",
+   "url": "https://www.infobae.com/america/agencias/2026/11/04/abascal-vera-esta-noche-a-milei-y-dice-estar-bastante-ocupado-con-las-elecciones-del-29n-como-para-preocuparse-de-eeuu/",
+   "fuente_local": "data/sources/compromisos/vox/2026-11-04_infobae_ep_ondacero_milei.txt",
+   "motivo": "Contado como anécdota de una conversación con Milei, no formulado como medida de gobierno."
+  },
+  {
+   "tema": "Acabar con las okupaciones (desalojo en menos de 24 horas)",
+   "quien": "Ignacio Garriga, secretario general de Vox",
+   "fecha": "2026-10-25",
+   "url": "https://www.vozpopuli.com/espana/politica/vox-fia-el-29-n-a-la-prioridad-nacional-en-la-vivienda-y-acusa-a-sanchez-de-silenciar-la-violencia-contra-sus-actos.html",
+   "fuente_local": "data/sources/compromisos/vox/2026-10-25_vozpopuli_garriga_zaragoza.txt",
+   "motivo": "No concreto: «acabar con las okupaciones» sin ley ni plazo, en un contexto referido a Aragón; el plazo de 24 horas solo consta en el programa."
+  },
+  {
+   "tema": "IVA del 0 % y bonificación del 100 % del ITP en la primera vivienda de familias españolas",
+   "quien": "Vox (programa)",
+   "fecha": "2026-11-12",
+   "url": "https://okdiario.com/espana/13-medidas-vox-29n-prioridad-nacional-desregulacion-remigracion-20825904",
+   "fuente_local": "data/sources/compromisos/vox/2026-11-12_okdiario_programa.txt",
+   "motivo": "Procede del programa del 12-nov (citado por OKDiario e Infobae), que no está publicado en una web oficial de Vox accesible y se analizará con el prompt 1; ningún líder lo ha formulado así en primera persona (lo más próximo es vox-c09)."
+  },
+  {
+   "tema": "Revisar las nacionalidades concedidas desde 2018",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-02-03",
+   "url": "https://www.laestrella.com.pa/mundo/vox-propone-revisar-nacionalidades-otorgadas-durante-gobierno-de-sanchez-DM19626342",
+   "fuente_local": null,
+   "motivo": "Anterior a la convocatoria (6-oct) y sin referencia a estas elecciones; la propuesta queda recogida con la declaración del 18-oct (vox-c15)."
+  },
+  {
+   "tema": "Militarizar permanentemente la frontera de Ceuta (Ceuta, agosto de 2026)",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-08-02",
+   "url": "https://elfarodeceuta.es/abascal-vox-aboga-militarizar-permanentemente-frontera-llama-mafioso-gobierno-sanchez/",
+   "fuente_local": null,
+   "motivo": "Anterior a la convocatoria y dirigida al Gobierno actual; la medida queda recogida con declaraciones posteriores (vox-c01)."
+  },
+  {
+   "tema": "Simulador de sueldo «VOX» (sueldovox.es)",
+   "quien": "desconocido",
+   "fecha": "2026-10-10",
+   "url": "https://www.sueldovox.es/",
+   "fuente_local": null,
+   "motivo": "No se ha podido verificar que sea una web oficial del partido (se describe a Vox en tercera persona y Libertad Digital lo atribuye a una difusión en redes); no se usa como fuente."
+  },
+  {
+   "tema": "Construir vivienda social de forma masiva y adjudicarla con «prioridad nacional»",
+   "quien": "Ignacio Garriga, secretario general de Vox",
+   "fecha": "2026-10-11",
+   "url": "https://www.infobae.com/espana/agencias/2026/10/11/vox-propone-construir-masivamente-vivienda-social-y-adjudicarla-con-prioridad-nacional/",
+   "fuente_local": "data/sources/compromisos/vox/2026-10-11_infobae_efe_garriga_vivienda.txt",
+   "motivo": "Estilo indirecto: la frase es de la agencia EFE; de Garriga solo constan literalmente «masivamente», «prioridad nacional» y «los primeros», que por sí solas no enuncian la medida. El Debate (EFE) tampoco recoge más palabras literales, y en Zaragoza (25-oct) sus frases literales («Vamos a construir y aumentar el parque de vivienda pública») se refieren a la futura Ley de Vivienda de Aragón. Si el programa la recoge, se analizará con el prompt 1."
+  },
+  {
+   "tema": "Liberalizar suelo, ayudas directas a los jóvenes para comprar vivienda y pago aplazado de impuestos",
+   "quien": "Ignacio Garriga, secretario general de Vox",
+   "fecha": "2026-10-11",
+   "url": "https://www.infobae.com/espana/agencias/2026/10/11/vox-propone-construir-masivamente-vivienda-social-y-adjudicarla-con-prioridad-nacional/",
+   "fuente_local": "data/sources/compromisos/vox/2026-10-11_infobae_efe_garriga_vivienda.txt",
+   "motivo": "Estilo indirecto: la frase es de la agencia EFE; de Garriga solo constan «liberalizar suelo» y «ayudas directas a los jóvenes», sin decir qué ayudas, para qué ni con qué norma (el pago a plazos lo resume la agencia). Mismo criterio que «desregulación en general»."
+  },
+  {
+   "tema": "Auditoría completa de la red ferroviaria como primera decisión de gobierno",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-11-04",
+   "url": "https://www.vozpopuli.com/espana/abascal-ignora-a-puente-y-se-centra-en-sanchez-lo-unico-importante-es-lo-que-esta-en-juego-el-29-n.html",
+   "fuente_local": "data/sources/compromisos/vox/2026-11-04_vozpopuli_ondacero_latorre.txt",
+   "motivo": "Estilo indirecto: Vozpópuli, Infobae (Europa Press), Demócrata y Moncloa.com (4-nov) cuentan con sus palabras que Abascal haría una auditoría; la única cita literal («cuál ha sido la inversión en las infraestructuras ferroviarias en todos estos años») no enuncia la medida. No se ha localizado la transcripción de la entrevista de Onda Cero. El programa del 12-nov incluye una auditoría de la red ferroviaria y se analizará con el prompt 1."
+  },
+  {
+   "tema": "Suprimir el Ministerio de Igualdad",
+   "quien": "Santiago Abascal, presidente de Vox y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-11-12",
+   "url": "https://www.infobae.com/espana/agencias/2026/11/12/abascal-sobre-el-presunto-fraude-en-las-pulseras-antimaltrato-no-hay-asunto-en-el-que-no-hayan-metido-las-zarpas/",
+   "fuente_local": "data/sources/compromisos/vox/2026-11-12_infobae_ep_logrono.txt",
+   "motivo": "Estilo indirecto: de Abascal solo consta literalmente «desaparezca»; el resto de la frase es de Europa Press, y se dijo como reacción a la investigación sobre las pulseras antimaltrato."
+  }
+ ],
+ "busqueda": {
+  "hasta": "2026-11-12",
+  "web_oficial": "voxespana.es y voxespana.es/programa devuelven HTTP 403 a una petición normal (12-nov); no se ha intentado sortear el bloqueo.",
+  "programa": "Vox difundió el 12-nov su programa («Es sentido común», 115 medidas en 13 bloques; El Debate, OKDiario, Infobae, Demócrata). La única copia localizada es la que enlaza Demócrata (https://www.democrata.es/uploads/s1/35/26/90/2/programa-elecct-vox.pdf, PDF de 55 páginas creado el 5-11-2026); no se ha encontrado en una web oficial de Vox. No se ha usado como fuente de compromisos: cuando se catalogue, su análisis con el prompt 1 sustituirá a este.",
+  "fuentes": [
+   "Entradas de Vox en data/promesas/promesas.json y codificaciones «campaña» de data/fase1/codificacion_g*.json y data/fase1/lideres_2026-11-12/vox.json (copias en data/sources/promesas/vox/)",
+   "Agencias vía medios: Europa Press (Infobae, Press Digital, Diario Siglo XXI, Alicante Plaza, Demócrata), EFE (Infobae, El Debate), ACN (Diari de Tarragona)",
+   "Entrevistas: ABC (11-oct), La Razón (18-oct), La Vanguardia (25-oct), Onda Cero (4-nov), El Periódico (8-nov), La Revuelta de RTVE (9-nov)",
+   "Mítines y actos: Estepona (11-oct), Ceuta (12-oct), Avilés (21-oct), Palma (24-oct), Zaragoza (25-oct, Garriga), Madrid Foro Empresarial (4-nov, Figaredo), Logroño (12-nov)",
+   "Búsquedas web sobre Abascal, Garriga, Figaredo, Millán y cabezas de lista (vivienda, okupación, IMV, nacionalidad, desregulación, Ceuta, autónomos, IVA); no se hallaron propuestas de Pepa Millán en esta campaña"
+  ],
+  "limitaciones": "El presupuesto de búsquedas web se agotó durante la investigación; pueden existir declaraciones adicionales no localizadas. En la revisión independiente se descartaron vox-c08, vox-c10, vox-c13 y vox-c14, cuyas citas eran frases de crónica con palabras sueltas del líder."
+ },
+ "nota_prioridades": "Diez prioridades: tras la revisión independiente solo diez compromisos concretos verificables tienen evidencia de que el partido los presenta como centrales. vox-c08 (vivienda social con prioridad nacional) y vox-c13 (auditoría ferroviaria) se descartaron por falta de cita literal."
+}

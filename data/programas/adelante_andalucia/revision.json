@@ -1,0 +1,197 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-12",
+ "alcance": "12 propuestas × 8 criterios. Se cotejaron las 12 citas y sus páginas con el PDF (pdftotext por página y con -layout para la numeración de las propuestas) y se abrieron las 131 URL externas citadas: todas existen y corresponden al título. Seis devolvieron 403 a peticiones automáticas (dos del FMI, dos del DIW y dos de Légifrance) y se leyeron con otro cliente; el Anuario Estadístico 2024 del Ministerio del Interior está detrás de un control anti-bots que no se sorteó (véase dudas). Selección de prioridades conforme con extraccion.json y con «Las 29 del 29N» (pp. 2-32) y las introducciones de área (pp. 35, 57, 71, 77, 81, 89 y 97). verify_quotes: 727 citas comprobadas, 0 no encontradas.",
+ "igual_estandar": "Antes de la revisión el reparto era 7F/83M/0D/6N. Se comprobó cada valoración contra las rúbricas y contra las propuestas equivalentes ya revisadas. Financiación: adelante_andalucia-01 (tope de alquiler) y -09 (regla de reparto sin ordinalidad) siguen en «favorable» como medidas regulatorias sin coste presupuestario directo, igual que pp-09, erc-06 y pnv-01; -12 es «mixta» y no «favorable» como erc-05 y bng-11 porque añade la anulación y devolución de multas, con un coste estimable que el programa no explica cómo pagar; -02, -06, -07, -08 y -10 son «no_verificable» porque no hay base para estimar el coste, como bng-10 y bng-07. Encaje legal: -11 (reforma constitucional) es «mixta» y no «desfavorable» como erc-04, bng-01 o salf-11, porque la propuesta es la propia reforma y no choca con la Constitución vigente; el procedimiento (art. 167 o 168) depende de un diseño no definido. Internacional: -06, -10, -11 y -12 son «mixta» por aplicación parcial o sin evaluación, la regla de bng-01, pp-10 y salf-11. Único cambio de valoración: -03 concreción pasa a «favorable», porque el programa da los cuatro elementos de la rúbrica (qué, a quién, 32 horas y plazos de dos y cuatro años), como salf-04 y cc-09; bng-04 es «mixta» porque no tiene calendario. -01, -02, -04 a -12 mantienen «mixta» en concreción porque les falta plazo o cuantía. No se encontraron adjetivos de valor ni comparaciones entre partidos en los textos.",
+ "recuento_final": {
+  "favorable": 8,
+  "mixta": 82,
+  "desfavorable": 0,
+  "no_verificable": 6
+ },
+ "cambios": [
+  {
+   "propuesta": "adelante_andalucia-02",
+   "criterio": "largo_plazo",
+   "antes": "Los riesgos que documenta la AIReF son una demanda baja fuera de las grandes áreas metropolitanas, que no compense los costes fijos de construcción y explotación, y el incumplimiento de la planificación:",
+   "despues": "Los riesgos que documenta la AIReF son la pérdida de viajeros entre 2013 y 2018 en la mayoría de los núcleos de Cercanías fuera de Madrid y Barcelona, beneficios que en los corredores de alta velocidad no compensan los costes fijos de construcción, y el incumplimiento de la planificación:",
+   "motivo": "la AIReF no dice que la demanda de Cercanías fuera de las grandes áreas no compense los costes fijos de construcción y explotación: esa frase se refiere a los corredores de alta velocidad y no menciona la explotación; para Cercanías solo documenta la pérdida de viajeros fuera de Madrid y Barcelona entre 2013 y 2018. Se ajusta a lo que dice la fuente"
+  },
+  {
+   "propuesta": "adelante_andalucia-03",
+   "criterio": "concrecion",
+   "antes": "valoracion: mixta",
+   "despues": "valoracion: favorable",
+   "motivo": "igual estándar (rúbrica de concreción): el programa dice qué se hará (32 horas semanales sin rebaja de sueldo y prohibición del turno partido sin rebaja salarial), a quién afecta, con qué cuantía (32 horas) y en qué plazo (dos años en grandes empresas y cuatro en pymes), que son los cuatro elementos de «favorable». El «apoyo público» sin cuantificar es un elemento accesorio, como la supervisión de tarifas en cc-09 o la reducción entre 35.000 y 50.000 € en salf-04, ambas «favorable»; bng-04 es «mixta» porque no fija calendario, que aquí sí consta. Los vacíos siguen explicados en el texto"
+  },
+  {
+   "propuesta": "adelante_andalucia-03",
+   "criterio": "concrecion",
+   "antes": "El programa (p. 63) dice qué hará (32 horas semanales sin rebaja de sueldo y prohibición del turno partido sin rebaja salarial), a quién afecta y en qué plazo (dos años en las grandes empresas y cuatro en las pymes). No cuantifica",
+   "despues": "El programa (p. 63) dice qué hará (32 horas semanales sin rebaja de sueldo y prohibición del turno partido sin rebaja salarial), a quién afecta, con qué cuantía (32 horas) y en qué plazo (dos años en las grandes empresas y cuatro en las pymes). Como aspectos accesorios, no cuantifica",
+   "motivo": "texto ajustado al cambio de valoración a «favorable» (rúbrica de concreción)"
+  },
+  {
+   "propuesta": "adelante_andalucia-03",
+   "criterio": "internacional",
+   "antes": "Varios países europeos redujeron la jornada legal entre 1995 y 2007, entre ellos Portugal: los trabajadores mantuvieron el salario mensual y el empleo no aumentó, aunque tampoco se redujo.",
+   "despues": "Varios países europeos (Francia, Italia, Bélgica, Portugal y Eslovenia) redujeron la jornada legal entre 1995 y 2007: en el conjunto de esas reformas el empleo no aumentó (Batut y otros, 2022), y en Portugal los trabajadores afectados mantuvieron el salario mensual sin más pérdidas de empleo (Raposo y van Ours).",
+   "motivo": "Raposo y van Ours (IZA DP 3723) solo concluyen para Portugal que no hubo más pérdidas de empleo y que el salario mensual se mantuvo; que «el empleo no aumentó» es el resultado agregado de las cinco reformas de Batut y otros (2022), no un resultado de Portugal"
+  },
+  {
+   "propuesta": "adelante_andalucia-03",
+   "criterio": "largo_plazo",
+   "antes": "Riesgos: un aumento del coste laboral por hora del orden del 19-25 %, más intenso, según la memoria de 2025, en los sectores con mayor jornada media y menor tamaño de empresa, como la hostelería o el comercio minorista;",
+   "despues": "Riesgos: un aumento del coste laboral por hora del orden del 19-25 % (cálculo propio), que afectaría más a los sectores con mayor jornada media y empresas más pequeñas, como la hostelería o el comercio minorista, donde la memoria de 2025 preveía el mayor impacto de la reducción de jornada;",
+   "motivo": "la memoria de 2025 dice que el impacto de la medida será más intenso en esos sectores, pero lo presenta en relación con el consumo, no como un riesgo de coste; se reformula sin atribuirle esa valoración"
+  },
+  {
+   "propuesta": "adelante_andalucia-04",
+   "criterio": "beneficiarios",
+   "antes": "19,12 millones de ocupados en el sector privado y 3,74 millones en el público (INE, tercer trimestre de 2026)",
+   "despues": "el sector privado sumaba 19,12 millones de ocupados, incluidos los no asalariados, y el público 3,74 millones (INE, tercer trimestre de 2026)",
+   "motivo": "la cifra del INE (19.115.800) es el total de ocupados del sector privado, incluidos los trabajadores por cuenta propia, no solo las personas asalariadas"
+  },
+  {
+   "propuesta": "adelante_andalucia-04",
+   "criterio": "beneficiarios (campo de la propuesta)",
+   "antes": "el empleo privado sumaba 19,12 millones de ocupados y el público 3,74 millones",
+   "despues": "el empleo privado sumaba 19,12 millones de ocupados (incluidos los no asalariados) y el público 3,74 millones",
+   "motivo": "la cifra del INE es el total de ocupados del sector privado, incluidos los trabajadores por cuenta propia"
+  },
+  {
+   "propuesta": "adelante_andalucia-05",
+   "criterio": "antecedentes",
+   "antes": "se restableció en 2011 (Real Decreto-ley 13/2011) y tiene vigencia indefinida desde 2014;",
+   "despues": "se restableció en 2011 (Real Decreto-ley 13/2011), se prorrogó año a año y tiene vigencia indefinida desde 2021 (Ley 11/2020);",
+   "motivo": "error de dato: el impuesto se prorrogó cada año desde 2011 y pasó a tener vigencia indefinida con efectos de 1-1-2021, por la disposición derogatoria primera de la Ley 11/2020 de Presupuestos para 2021, según el texto consolidado de la Ley 19/1991 (BOE)"
+  },
+  {
+   "propuesta": "adelante_andalucia-05",
+   "criterio": "antecedentes",
+   "antes": "fuente: (ninguna para ese dato)",
+   "despues": "fuente añadida: https://www.boe.es/buscar/act.php?id=BOE-A-1991-14392",
+   "motivo": "la fecha de vigencia indefinida no tenía fuente citada"
+  },
+  {
+   "propuesta": "adelante_andalucia-05",
+   "criterio": "evidencia",
+   "antes": "sobre todo por evasión y cambios de residencia y poco por más ahorro (Brülhart y otros, 2022)",
+   "despues": "en buena parte por evasión y, en menor medida, por cambios de residencia y la evolución del precio de la vivienda, y poco por más ahorro (Brülhart y otros, 2022)",
+   "motivo": "el estudio atribuye un 24 % del efecto a la movilidad y un 21 % a los precios de la vivienda, una parte pequeña al ahorro y el resto a una evasión considerable; «sobre todo por cambios de residencia» sobrevaloraba la movilidad"
+  },
+  {
+   "propuesta": "adelante_andalucia-05",
+   "criterio": "evidencia",
+   "antes": "En España, tras la cesión del impuesto, los grandes patrimonios residentes en Madrid, donde en la práctica no se pagaba, crecieron un 10 % en cinco años frente al resto,",
+   "despues": "En España, tras su restablecimiento en 2011, el número de grandes patrimonios residentes en Madrid, la única comunidad que no lo exigía en la práctica, creció un 10 % en cinco años frente al resto,",
+   "motivo": "el estudio analiza el restablecimiento de 2011, tras el que todas las comunidades salvo Madrid aplicaron tipos positivos, no la cesión; y mide el número de contribuyentes ricos residentes («the stock of wealthy individuals»), no el importe de su patrimonio"
+  },
+  {
+   "propuesta": "adelante_andalucia-05",
+   "criterio": "beneficiarios",
+   "antes": "en 2024 declararon el Impuesto sobre el Patrimonio 227.424 personas",
+   "despues": "por el ejercicio 2024 declararon el Impuesto sobre el Patrimonio 227.424 personas",
+   "motivo": "la estadística de la AEAT se refiere a las declaraciones del ejercicio 2024 (presentadas en 2025)"
+  },
+  {
+   "propuesta": "adelante_andalucia-05",
+   "criterio": "beneficiarios (campo de la propuesta)",
+   "antes": "227.424 personas declararon el Impuesto sobre el Patrimonio en 2024",
+   "despues": "227.424 personas declararon el Impuesto sobre el Patrimonio por el ejercicio 2024",
+   "motivo": "la estadística de la AEAT se refiere a las declaraciones del ejercicio 2024 (presentadas en 2025)"
+  },
+  {
+   "propuesta": "adelante_andalucia-05",
+   "criterio": "fuentes (legal y antecedentes)",
+   "antes": "https://hj.tribunalconstitucional.es/es/Resolucion/GetDocumentResolucion/769",
+   "despues": "https://hj.tribunalconstitucional.es/es/Resolucion/Show/769",
+   "motivo": "el enlace anterior descarga un .docx; se sustituye por la página HTML de la misma sentencia"
+  },
+  {
+   "propuesta": "adelante_andalucia-06",
+   "criterio": "financiacion",
+   "antes": " Como referencia parcial, las reversiones valencianas conllevaron pagos complementarios a la concesionaria de 25,11 M€ (Alzira), 45,9 M€ (Torrevieja) y 47,6 M€ (Dénia), según la prensa.",
+   "despues": "",
+   "motivo": "error de atribución: según elDiario.es, esos 25,11, 45,9 y 47,6 M€ fueron pagos complementarios de la Generalitat a la concesionaria durante las concesiones, por obligaciones no previstas en los contratos (expedientes de enriquecimiento injusto), no el coste de revertirlas; no sirven como referencia del coste de la medida"
+  },
+  {
+   "propuesta": "adelante_andalucia-07",
+   "criterio": "largo_plazo",
+   "antes": "Los riesgos documentados son la asignación del crédito por criterios no financieros y la gobernanza, que en España contribuyeron a las pérdidas de las cajas de ahorros (Cuñat y Garicano, 2010),",
+   "despues": "Los riesgos documentados son la asignación del crédito por criterios no financieros y el perfil de los gestores: en las cajas de ahorros españolas, las presididas por antiguos cargos políticos o por personas sin experiencia bancaria tuvieron peores resultados en sus préstamos (Cuñat y Garicano, 2010),",
+   "motivo": "Cuñat y Garicano no hallan que la gobernanza formal o el papel de los partidos se correlacione con los resultados de los préstamos; lo que hallan es el efecto del perfil de los presidentes (cargos políticos, sin experiencia bancaria)"
+  },
+  {
+   "propuesta": "adelante_andalucia-08",
+   "criterio": "legal",
+   "antes": "El derecho de la UE admite la propiedad pública, pero exige que el control de la red de transporte y el de la generación o el suministro estén en organismos públicos distintos (Directiva 2019/944, art. 43)",
+   "despues": "El derecho de la UE admite la propiedad pública, pero exige separar la propiedad de la red de transporte de la generación y el suministro; si ambas son públicas, la separación se cumple cuando dependen de organismos públicos distintos (Directiva 2019/944, art. 43)",
+   "motivo": "precisión: el art. 43 exige la separación patrimonial y su apartado 5 admite como forma de cumplirla que dos organismos públicos distintos controlen la red y la generación o el suministro; no lo impone como única vía"
+  },
+  {
+   "propuesta": "adelante_andalucia-08",
+   "criterio": "largo_plazo",
+   "antes": "la menor eficiencia en generación que la literatura asocia a la propiedad pública (Kwoka, 2005; Megginson y Netter, 2001)",
+   "despues": "la menor eficiencia en generación que se ha observado en empresas públicas de Estados Unidos (Kwoka, 2005) y la mayor eficiencia que la literatura general sobre privatizaciones atribuye a la gestión privada (Megginson y Netter, 2001)",
+   "motivo": "Megginson y Netter (2001) es una revisión general de privatizaciones, no específica de la generación eléctrica; solo Kwoka (2005) respalda el dato sobre generación"
+  },
+  {
+   "propuesta": "adelante_andalucia-10",
+   "criterio": "internacional",
+   "antes": "y algunas personas sin empleo que atienden un hogar reciben una cantidad fija por hora",
+   "despues": "y quienes no trabajan o trabajan menos de 20 horas semanales y llevan un hogar de varias personas reciben una cantidad fija por hora",
+   "motivo": "el § 45 de la ley municipal de Renania del Norte-Westfalia incluye también a quienes trabajan menos de 20 horas semanales y exige un hogar de al menos tres personas (o dos con una que necesite cuidados)"
+  },
+  {
+   "propuesta": "adelante_andalucia-11",
+   "criterio": "largo_plazo",
+   "antes": "Los estudios comparados indican que incluir un derecho individual en la Constitución no garantiza por sí solo su protección efectiva (Chilton y Versteeg, 2016).",
+   "despues": "Un estudio comparado sobre seis derechos políticos indica que recoger derechos individuales en la Constitución no garantiza por sí solo su protección efectiva (Chilton y Versteeg, 2016); no analiza el aborto.",
+   "motivo": "el estudio solo analiza seis derechos políticos; se acota la generalización, como ya hacía el texto de evidencia"
+  },
+  {
+   "propuesta": "adelante_andalucia-12",
+   "criterio": "financiacion",
+   "antes": "En 2023 las sanciones por los apartados que mencionan expresamente reuniones o manifestaciones (arts. 36.2, 36.7, 36.8, 37.1 y 37.3)",
+   "despues": "En 2023 las sanciones por los apartados referidos específicamente a reuniones o manifestaciones del derecho de reunión (arts. 36.2, 36.7, 36.8, 37.1 y 37.3)",
+   "motivo": "el art. 36.1 también menciona «reuniones» (las «otras reuniones a las que asistan numerosas personas»), aunque no se refiere al derecho de reunión; «mencionan expresamente» era inexacto"
+  },
+  {
+   "propuesta": "adelante_andalucia-12",
+   "criterio": "evidencia",
+   "antes": "220 de las 284.512 sanciones correspondieron a apartados que mencionan expresamente reuniones o manifestaciones.",
+   "despues": "220 de las 284.512 sanciones correspondieron a apartados referidos específicamente a reuniones o manifestaciones del derecho de reunión.",
+   "motivo": "mismo motivo: el art. 36.1 también menciona reuniones"
+  },
+  {
+   "propuesta": "adelante_andalucia-12",
+   "criterio": "beneficiarios",
+   "antes": "220 sanciones por apartados que mencionan expresamente reuniones o manifestaciones",
+   "despues": "220 sanciones por apartados referidos específicamente a reuniones o manifestaciones del derecho de reunión",
+   "motivo": "mismo motivo: el art. 36.1 también menciona reuniones"
+  },
+  {
+   "propuesta": "adelante_andalucia-12",
+   "criterio": "beneficiarios (campo de la propuesta)",
+   "antes": "220 sanciones por los apartados que mencionan expresamente reuniones o manifestaciones",
+   "despues": "220 sanciones por los apartados referidos específicamente a reuniones o manifestaciones del derecho de reunión",
+   "motivo": "mismo motivo: el art. 36.1 también menciona reuniones"
+  },
+  {
+   "propuesta": "adelante_andalucia-12",
+   "criterio": "antecedentes",
+   "antes": "con el voto en contra de PP, Vox, Ciudadanos, ERC, Junts, UPN y EH Bildu, estos dos últimos por considerarla insuficiente;",
+   "despues": "con el voto en contra de PP, Vox, Ciudadanos, UPN, Junts, ERC y EH Bildu, estos dos últimos por considerarla insuficiente;",
+   "motivo": "error: por el orden de la lista, «estos dos últimos» señalaba a UPN y EH Bildu; según Orain (14-3-2023), los que la consideraron insuficiente fueron ERC y EH Bildu"
+  }
+ ],
+ "dudas": [
+  "adelante_andalucia-12 (financiación, evidencia, beneficiarios, concreción y largo plazo): las cifras de 2023 y 2024 por apartado de la LO 4/2015 (220 sanciones por 73.467 €, 588 por 385.109 €, 47.646 por 20,8 M€ y el 81 % de armas y drogas) proceden del Anuario Estadístico del Ministerio del Interior, cuyo PDF está protegido por un control anti-bots que no se sorteó. El total de 284.512 sanciones y 174,8 M€ de 2023 coincide con la prensa (El Derecho) y con lo citado en erc-05 y bng-11, ya revisadas. Las cifras por apartado conviene comprobarlas a mano en un navegador (pp. 195-199 del anuario).",
+  "Selección de prioridades: la introducción del área 1 (p. 35) menciona «plantillas suficientes», que también figura en la medida principal 14 (propuesta 78). Con el criterio de lectura.md, la medida 14 podría haber entrado como candidata, y entonces habría más de 12 y haría falta un desempate. No se cambia porque la mención es genérica y se refiere a todos los servicios públicos, no a una medida concreta de la 14.",
+  "adelante_andalucia-01 beneficiarios: la tabla del INE se cita con un enlace (DATOS_TABLA/9997?nult=1) que siempre devuelve el último año, de modo que el 16,7 % y el 11,9 % cambiarán cuando se publique la ECV 2026. Conviene fijar el año en el enlace.",
+  "adelante_andalucia-04 beneficiarios: el enlace de La Moncloa sobre el SMI (…/2023/140223-salario-minimo-interprofesional.aspx) muestra hoy la nota de 20-2-2026 con los 2,5 millones de beneficiarios. La ruta de 2023 se ha reutilizado, así que el contenido podría volver a cambiar.",
+  "adelante_andalucia-09 financiación «favorable»: la regla de no garantizar la ordinalidad no tiene coste propio, pero la concreción se apoya en propuestas acompañantes (55 % del IRPF, 70 % del IVA, fondo transitorio) que sí tienen coste sin cifrar. Se mantiene porque la prioridad evaluada es la regla, como en erc-06, pero es un caso frontera."
+ ]
+}
