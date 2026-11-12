@@ -1,0 +1,56 @@
+{
+  "partido": "psc",
+  "codificador": "Claude, búsqueda de líderes 12-nov",
+  "fecha": "2026-11-12",
+  "posiciones": {
+    "q17": {
+      "valor": -1,
+      "fuente": "campaña",
+      "cita": "«Existen propuestas llamativas que funcionan como fuegos de artificio de cara a una campaña electoral, pero que carecen de viabilidad real» [...] «Implicaría transformaciones incompatibles con el marco común. Nosotros defendemos un régimen general».",
+      "pagina": null,
+      "url": "https://cronicaglobal.elespanol.com/politica/20261110/jordi-hereu-gobierno-pp-vox-resucitaria-independentismo/1003742810446_0.html",
+      "medio": "Crónica Global (entrevista)",
+      "fecha": "2026-11-09",
+      "quien": "Jordi Hereu, cabeza de lista del PSC al Congreso por Barcelona y ministro de Industria y Turismo",
+      "formato": "entrevista (grabada el lunes 9-nov en la sede del PSC, publicada el 10-nov)",
+      "marco": null,
+      "nota": "La pregunta es literal sobre la medida: «Si la gobernabilidad volviese a depender de Junts, ¿su partido se abriría a negociar un concierto económico a cambio de su apoyo?». Hereu lo descarta: lo llama «fuegos de artificio» sin «viabilidad real», y al repreguntarle por qué no es factible responde que «implicaría transformaciones incompatibles con el marco común» y que el PSC defiende «un régimen general». Es un rechazo expreso a que Cataluña tenga un concierto como el vasco o el navarro, que es lo que plantea la afirmación. Se codifica -1 y no -2 porque el PSC defiende a la vez una financiación singular con más autonomía fiscal dentro del régimen común, que va en parte en la dirección de la afirmación, y porque el rechazo se formula como inviabilidad en una negociación, no como prioridad de campaña. La crónica de Crónica Global sobre la misma entrevista (https://cronicaglobal.elespanol.com/politica/20261110/jordi-hereu-concierto-economico-cataluna-inviable-artificio/1003742810481_0.html) recoge el mismo rechazo."
+    },
+    "q18": {
+      "valor": 1,
+      "fuente": "campaña",
+      "cita": "«Lo que resulta efectivo, riguroso y tangible son acuerdos como la condonación de 17.000 millones de euros de deuda a Cataluña y un modelo de financiación que reporte cerca de 5.000 millones adicionales».",
+      "pagina": null,
+      "url": "https://cronicaglobal.elespanol.com/politica/20261110/jordi-hereu-gobierno-pp-vox-resucitaria-independentismo/1003742810446_0.html",
+      "medio": "Crónica Global (entrevista)",
+      "fecha": "2026-11-09",
+      "quien": "Jordi Hereu, cabeza de lista del PSC al Congreso por Barcelona y ministro de Industria y Turismo",
+      "formato": "entrevista (grabada el lunes 9-nov en la sede del PSC, publicada el 10-nov)",
+      "marco": null,
+      "nota": "Hereu presenta la condonación de 17.000 millones de deuda de Cataluña como el acuerdo «efectivo, riguroso y tangible» que el PSC defiende frente al concierto. Esa cifra es la parte catalana de la quita general de 83.252 millones a todas las comunidades que aprobó el Gobierno y que decayó con el adelanto electoral (eldiario.es: https://www.eldiario.es/economia/gobierno-aprueba-quita-deuda-comunidades-83-252-millones-son-claves_1_12572067.html; según Artículo14, a Cataluña le corresponden 17.104 millones: https://www.articulo14.es/economia/que-comunidades-salen-mas-beneficiadas-de-la-condonacion-de-la-deuda-20250902.html). Es apoyo a la medida, pero indirecto: habla solo de la parte de Cataluña y no de la cifra total. Por eso es +1 y no +2. Lo corrobora el debate de Pimec del mismo día, donde, según la crónica de Demócrata (en estilo indirecto, sin entrecomillado), Hereu reprochó a Albiol que el PP se oponga a la condonación de la deuda del FLA: https://www.democrata.es/en/catalunya/nogueras-warns-that-pp-and-vox-will-ban-catalan-in-congress-and-albiol-denies-it/"
+    }
+  },
+  "descartados": [
+    {
+      "q": "q05",
+      "url": "https://www.pressdigital.es/articulo/economia/2026-11-09/6084360-impuestos-absentismo-laboral-centran-debate-candidatos-catalanes-pimec",
+      "motivo": "Debate de Pimec (9-nov, Europa Press): Hereu rechaza deflactar todos los tramos del IRPF («No me apuntaré a una subasta a ver quién hace una rebaja más grande, porque me parece irreal y una falta de respeto»). Es un rechazo a rebajas fiscales en general, no a la reforma concreta de la afirmación (22.000 € exentos, tipos del 15 % y del 25 %). Medida relacionada pero distinta: null."
+    },
+    {
+      "q": "q14",
+      "url": "https://cronicaglobal.elespanol.com/politica/20261110/jordi-hereu-gobierno-pp-vox-resucitaria-independentismo/1003742810446_0.html",
+      "motivo": "En la misma entrevista Hereu dice que «quien cometa un delito, se llame Puigdollers o se llame Mohamed, debe responder exactamente igual ante la ley». No habla de que los extranjeros condenados cumplan la pena en su país: null."
+    },
+    {
+      "q": "q16",
+      "url": "https://cronicaglobal.elespanol.com/politica/20261110/jordi-hereu-gobierno-pp-vox-resucitaria-independentismo/1003742810446_0.html",
+      "motivo": "Hereu respalda «todo lo que contribuya a la agenda del reencuentro» y no quiere volver a 2017, pero no se pronuncia sobre pactar un referéndum. No se halló otra declaración de Hereu o Illa desde el 6-oct sobre el referéndum."
+    },
+    {
+      "q": "q12",
+      "url": "https://www.diaridetarragona.com/tarragona/275180/jordi-hereu-gigafactoria-mora-nova-radar-ayuso-vox.html",
+      "motivo": "En la entrevista con Diari de Tarragona (9-nov) Hereu habla del uso del catalán en el Congreso y en Bruselas, no de qué parte de las clases se da en castellano: null."
+    }
+  ],
+  "observaciones": "Fuente principal: la entrevista de Crónica Global a Jordi Hereu, cabeza de lista por Barcelona (grabada el 9-nov y publicada el 10-nov), con preguntas y respuestas literales. Revisados además el debate de RTVE Catalunya (8-nov, crónica de El Món), el debate de Pimec (9-nov: Europa Press, NacióDigital y Demócrata), la entrevista de Diari de Tarragona (9-nov) y las crónicas de Illa (5 y 7-nov). Sigue sin haber programa del PSC del 29-N y no consta que asuma el del PSOE, así que no se trasladan las posiciones del PSOE (q05, q10, q21, q22). El dominio cronicaglobal.elespanol.com respondió sin bloqueo el 12-nov, pero es de pago parcial: el texto citado se muestra antes del muro."
+}
