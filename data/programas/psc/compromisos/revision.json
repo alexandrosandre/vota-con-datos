@@ -1,0 +1,77 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-12",
+ "base": "compromisos",
+ "alcance": "11 compromisos (4 seleccionados y 11 descartes) y 4 prioridades × 8 criterios. Se abrieron con una petición normal las 49 URL citadas en seleccion.json y evaluacion.json, más la fuente añadida (Ara, 23-7-2026): 45 respondieron 200. Las 5 notas de socialistes.cat devuelven 403 a peticiones automáticas; su texto se comprobó en el canal RSS oficial (socialistes.cat/feed/, páginas 1 a 8, notas del 9-10 al 11-11-2026), que coincide con las copias locales. No se sorteó ninguna protección. Se comprobaron en fuente primaria las cifras: condonación (83.252 y 17.104 M€, Hacienda), CPFF (20.975 y 19.000 M€), propuesta de enero (4.686 M€, El Salto), AIReF (5,1 puntos, 2029, 2.532 M€, Cataluña por encima de 2.000 €/hab. y en el 13 % hacia 2050), SMI (RD 126/2026: 40,70 €/día o 1.221 €/mes; 2,5 millones y 66 %, La Moncloa), IVE 2024 (106.172; 78,74 % y 21,25 %), Parador (estudio de 9-4-2026: 59 habitaciones, 20,1 M€, apertura a finales de 2030; Paradores 2024: 97+1, 39,7 M€, 73,55 %, Molina 22 M€ aplazada a 2025). Citas: las 4 coinciden con su copia local (verify_quotes: 0 no encontradas).",
+ "seleccion": "Criterio sobre Pedro Sánchez: cuenta. El prompt 1b admite como fuente al «candidato a la Presidencia» y a los documentos oficiales del partido con quien = el partido. El PSC no presenta candidato propio a la Presidencia: su candidatura pide la investidura de Sánchez, y el acto del 7-11 en Tarragona era un acto de precampaña de la candidatura del PSC (cabezas de lista Hereu y Montalvo, primer secretario Illa). La nota oficial del PSC sobre ese acto recoge el SMI y el aborto como compromisos («s'ha compromès a...»), es decir, el propio partido los asume en su canal oficial. Se limita, como hace la selección, a ese acto: los compromisos de Sánchez en actos del PSOE no se trasladan, el mismo criterio que la selección de UPN-PP aplica a Feijóo. c02 lleva cita literal de Sánchez (Diari de Tarragona) y c03, el texto literal de la nota oficial del PSC (quien = PSC). Las cuatro prioridades son los cuatro compromisos concretos encontrados; la selección lo dice. c04 (Parador) solo tiene una ocasión y no lo destaca el partido, y entra por esa razón. Se revisaron los descartes: son diagnósticos, rechazos de propuestas ajenas, estilo indirecto o medidas de la Generalitat, y no se halló en el RSS ningún otro compromiso concreto.",
+ "igual_estandar": "psc-02 y psc-03 tienen las mismas valoraciones que psoe-03 y psoe-04 en los 8 criterios, y los textos solo difieren en lo dicho en el acto del PSC. SMI: la financiación es «no_verificable» sin cuantía, como en psoe-03 y bng-05, a diferencia de erc-08 y podemos-05, que dan una cuantía. Los antecedentes son «favorable», como en bng-05. Aborto: el encaje legal es «mixta» por la duda entre los arts. 167 y 168 y el dictamen del Consejo de Estado, y la financiación es «favorable» (sin coste directo). Condonación y modelo: las valoraciones coinciden con erc-02 (legal «favorable», financiación «mixta», beneficiarios «favorable») y con psoe-05 (legal «favorable»). erc-01 es «mixta» en encaje legal por la ordinalidad, que el PSC no pide. La concreción es «mixta» por falta de plazo, como en erc-02; psoe-05 es «favorable» porque fija 2027. psc-04, encaje legal «mixta»: depende de la cesión municipal del inmueble, que no está aprobada. Es el mismo caso que erc-07, que depende de una cesión de inmuebles estatales.",
+ "recuento_inicial": {
+  "favorable": 5,
+  "mixta": 24,
+  "desfavorable": 0,
+  "no_verificable": 3
+ },
+ "recuento_final": {
+  "favorable": 5,
+  "mixta": 24,
+  "desfavorable": 0,
+  "no_verificable": 3
+ },
+ "cambios": [
+  {
+   "propuesta": "psc-01",
+   "criterio": "antecedentes",
+   "antes": "según Crónica Global, ninguna de las dos medidas llegó a votarse en las Cortes por el adelanto electoral",
+   "despues": "el Congreso rechazó en julio de 2026 las enmiendas a la totalidad de PP y Vox [...] Ninguna de las dos medidas llegó a aprobarse en las Cortes antes del adelanto electoral (fuente añadida: Ara, 23-7-2026)",
+   "motivo": "Dato erróneo. El proyecto de condonación sí se votó en el Congreso: el debate de totalidad de julio de 2026 (Ara, ya usado en erc-02). Lo que no llegó fue la aprobación. Crónica Global lo resume mal."
+  },
+  {
+   "propuesta": "psc-04",
+   "criterio": "legal",
+   "antes": "según el Diari, el alcalde retiró el punto del orden del día",
+   "despues": "según Hereu en la entrevista con el Diari, el alcalde tuvo que retirar el punto del orden del día",
+   "motivo": "Atribución: lo dice Hereu en la entrevista, no el periódico."
+  },
+  {
+   "propuesta": "seleccion psc-c01",
+   "criterio": "veces",
+   "antes": "3",
+   "despues": "2 (Hereu en Crónica Global, 9-11; Illa en elDiario.es, 5-11)",
+   "motivo": "«veces» cuenta ocasiones en que un líder repite el compromiso. En la entrevista del Diari de Tarragona (9-11), Hereu cita el acuerdo de 4.686 M€ como un logro pasado, y la propia selección lo describía «sin formularlo como compromiso». La ocasión se mantiene con una nota que lo explica."
+  },
+  {
+   "propuesta": "seleccion psc-01",
+   "criterio": "justificación",
+   "antes": "su cabeza de lista nacional [...] y que la financiación es el gran acuerdo pendiente con Cataluña",
+   "despues": "su cabeza de lista por Barcelona [...] en una precampaña cuyo mensaje central es que el 29-N «està en risc l'autogovern»",
+   "motivo": "Hereu encabeza la lista por Barcelona: el PSC no tiene lista nacional. La afirmación sobre «el gran acuerdo pendiente» no tenía fuente."
+  },
+  {
+   "propuesta": "seleccion psc-02",
+   "criterio": "justificación",
+   "antes": "en el principal acto de precampaña del PSC (Tarragona, 7-11, unas 2.000 personas según la organización)",
+   "despues": "en el acto de precampaña del PSC en Tarragona (7-11, unas 2.000 personas según el Diari de Tarragona)",
+   "motivo": "La cifra es del Diari de Tarragona, no de la organización. Que fuera el «principal» acto no tenía fuente."
+  },
+  {
+   "propuesta": "seleccion psc-04",
+   "criterio": "justificación",
+   "antes": "del cabeza de lista nacional",
+   "despues": "del cabeza de lista por Barcelona",
+   "motivo": "Cargo exacto."
+  },
+  {
+   "propuesta": "evaluacion",
+   "criterio": "seleccion_sha256",
+   "antes": "e3579b09da50d4d2dadce29f78c312db06f4f041c50d9e87ff56c23d10f6619e",
+   "despues": "95c71f99cf57c48ea752621ae9c1d2c5506a18c2857c066ab1964d727b9c32f5",
+   "motivo": "Se recalcula tras los cambios en seleccion.json."
+  }
+ ],
+ "dudas": [
+  "Criterio sobre Sánchez en actos del PSC: aplicado y explicado arriba. Si se decidiera que el PSC solo cuenta con dirigentes propios, psc-02 y psc-03 caerían (c02 conserva la frase de Morón «seguir apostant per la pujada», sin periodicidad), y el PSC quedaría con 2 prioridades.",
+  "psc-04, internacional («no_verificable»): Portugal tiene una red de pousadas en edificios históricos, que podría contar como aplicación comparable sin evaluación publicada («mixta»). No se halló una fuente oficial sobre su titularidad y gestión que permitiera documentarlo, y se mantiene.",
+  "La campaña oficial empieza el 13-11 y el PSC abre en Barcelona: la selección debe revisarse con los compromisos que se anuncien."
+ ]
+}

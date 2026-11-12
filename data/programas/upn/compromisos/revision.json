@@ -1,0 +1,98 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-12",
+ "base": "compromisos",
+ "alcance": "3 compromisos (y 8 descartes) y 3 prioridades × 8 criterios. Se abrieron con una petición normal las 27 URL citadas en seleccion.json y evaluacion.json y las 2 fuentes añadidas (Tribunal de Cuentas Europeo y art. 108 de la Ley Fundamental): todas respondieron 200, incluidas las dos de Noticias de Navarra. Se comprobaron en fuente primaria: el texto del acuerdo (notas de UPN del 13-10-2026, idénticas en los tres puntos), la Constitución (art. 167, DA 1.ª y DT 4.ª), la LORAFNA (arts. 45 y 71, DA 2.ª y reformas de 2001, 2010 y 2024), la LOFCA (DA 2.ª), la Ley 28/1990 (aportación quinquenal y reformas de 2003, 2007, 2015, 2022, 2023 y 2025), el INE (683.854 habitantes a 1-1-2025, tabla 56940), Fedea (ocho comunidades con superávit en 2025; solo Navarra y el País Vasco mejoran su saldo), el MITECO (373.731.170 €, 20.214 ha, 48 meses, más de 22.000 ha en la primera fase), Aena (233.528 pasajeros en 2025), la AIReF (2.526 M€ para Zaragoza-Pamplona-Y vasca e infravaloración de al menos el 30 %), el comisionado del TAV (1.500-1.600 M€; 50 %, 30 % y 20 %; más de 2.000 alegaciones), el BEI, el BOE-B-2026-34264 y La Moncloa (29-12-2022). Citas: las 3 coinciden con su copia local (verify_quotes: 0 no encontradas).",
+ "seleccion": "El acuerdo de coalición es un documento oficial: consta en dos notas de UPN del 13-10-2026, el principio de acuerdo y su aprobación por el Consejo Político con el 93,5 % de apoyo. Ambas son posteriores a la convocatoria, se refieren a estas elecciones y su texto es el mismo. Es una nota de UPN que resume el acuerdo (no se publicó el texto íntegro). Se admite como documento oficial con quien = UPN y PP, porque recoge los compromisos de «ambas formaciones». Es correcto que sean las prioridades: son los únicos compromisos concretos y el partido los presenta como el contenido programático del pacto. No es exacto que la candidatura los «repitiera» al presentar la campaña. El 10-11, Esparza anunció la supresión de la DT 4.ª (OKDiario Navarra, en estilo indirecto, con su justificación literal) y Sayas aludió al Canal y al TAV. El blindaje foral y el Convenio no se mencionaron, y en el inicio de campaña del 12-11 (Europa Press) no se repitió ninguna medida. Se corrigen la nota y el recuento de upn-c02. El criterio sobre Feijóo es el mismo que se aplica a Sánchez en el PSC. Los descartes son correctos: la escuela de 0-3 años no se halló en ninguna fuente legible, tampoco en una búsqueda nueva.",
+ "igual_estandar": "upn-01 (reforma constitucional por el art. 167, sin dudas de procedimiento): encaje legal «favorable», como psoe-02. psoe-04 y psc-03 son «mixta» por la duda entre los arts. 167 y 168, que aquí no existe. upn-02 se comparó con pnv-11 («bilateralidad con garantías frente a cambios unilaterales»), que tiene concreción «desfavorable» y encaje legal «mixta». La concreción ya era «desfavorable». El encaje legal pasa a «mixta» por la regla de la auditoría de coherencia del 12-11: «mixta» para las medidas con una parte viable y otra de diseño no definido. upn-02, internacional, pasa a «mixta» por la regla de bng-01: la gestión tributaria de los Länder (art. 108 de la Ley Fundamental) es una aplicación parcial comparable del mismo modelo. upn-03 se comparó con pnv-04 (Y vasca). Internacional pasa a «mixta» con el informe del Tribunal de Cuentas Europeo de 2018, como en pnv-04. Encaje legal, financiación y evidencia coinciden. Beneficiarios es «mixta» frente a «favorable» en pnv-04, porque aquí no hay cifra de beneficiarios del tren ni de coste del aeropuerto y de la red eléctrica.",
+ "recuento_inicial": {
+  "favorable": 6,
+  "mixta": 13,
+  "desfavorable": 1,
+  "no_verificable": 4
+ },
+ "recuento_final": {
+  "favorable": 5,
+  "mixta": 16,
+  "desfavorable": 1,
+  "no_verificable": 2
+ },
+ "cambios": [
+  {
+   "propuesta": "upn-02",
+   "criterio": "legal",
+   "antes": "valoracion: favorable («Mantenerlo no exige cambios legales»)",
+   "despues": "valoracion: mixta (mantenerlo no exige cambios, pero el «blindaje» no se define, y una garantía de rango superior a la LORAFNA y al Convenio exigiría reformar la Constitución, art. 167)",
+   "motivo": "El texto solo valoraba «mantener» y omitía «blindar», que la propia concreción califica de indefinido. Igual estándar: es el caso de pnv-11 y de la regla de la auditoría de coherencia («mixta» si hay una parte viable y otra de diseño no definido)."
+  },
+  {
+   "propuesta": "upn-02",
+   "criterio": "internacional",
+   "antes": "valoracion: no_verificable («el Concierto y el Convenio son específicos del sistema español»)",
+   "despues": "valoracion: mixta (gestión tributaria de los Länder, art. 108 de la Ley Fundamental; sin evaluación de resultados; el elemento clave, la aportación negociada, no tiene equivalente)",
+   "motivo": "Igual estándar con bng-01, que la auditoría del 12-11 pasó a «mixta» con la misma aplicación parcial para el mismo modelo de recaudación propia más cuota al Estado."
+  },
+  {
+   "propuesta": "upn-03",
+   "criterio": "internacional",
+   "antes": "valoracion: no_verificable, sin fuentes",
+   "despues": "valoracion: mixta (Tribunal de Cuentas Europeo, Informe Especial 19/2018)",
+   "motivo": "Igual estándar con pnv-04: la alta velocidad tiene evaluaciones internacionales con resultados dispares según la demanda. Cubre una parte del compromiso, y por la regla de aplicación parcial corresponde «mixta». Cifras comprobadas en el informe."
+  },
+  {
+   "propuesta": "upn-01",
+   "criterio": "internacional",
+   "antes": "No conocemos una cláusula comparable en otros países",
+   "despues": "No hemos localizado ningún país que haya suprimido una cláusula de este tipo ni evaluaciones de sus efectos [...] sin paralelo en el sistema autonómico español",
+   "motivo": "La afirmación absoluta no tenía fuente: la de Orain habla del sistema autonómico español, no de otros países. La valoración no cambia."
+  },
+  {
+   "propuesta": "upn-01",
+   "criterio": "concrecion",
+   "antes": "sin comprometerse a iniciarla ni dar plazo",
+   "despues": "sin precisar si la coalición la iniciaría ni en qué plazo",
+   "motivo": "El acuerdo dice «promover y votar a favor»: no consta que descarte iniciarla. La valoración no cambia. Se corrige igual la nota de upn-c01 en seleccion.json."
+  },
+  {
+   "propuesta": "upn-02",
+   "criterio": "concrecion",
+   "antes": "Ninguna de las otras ocasiones registradas (Ibarrola, 27-10-2026; Esparza, 10-11-2026)",
+   "despues": "Ibarrola (27-10-2026), la otra ocasión registrada",
+   "motivo": "Coherencia con el nuevo recuento de upn-c02."
+  },
+  {
+   "propuesta": "upn-02",
+   "criterio": "antecedentes",
+   "antes": "la LORAFNA se reformó [...] en 2001 y 2010",
+   "despues": "en 2001, 2010 y 2024",
+   "motivo": "El BOE consolidado recoge también la Ley Orgánica 6/2024 (tráfico)."
+  },
+  {
+   "propuesta": "seleccion upn-c02",
+   "criterio": "veces",
+   "antes": "3",
+   "despues": "2 (acuerdo, 13-10; Ibarrola, 27-10)",
+   "motivo": "Las palabras de Esparza del 10-11 aparecen en Diario de Navarra bajo el epígrafe de la transitoria cuarta y en OKDiario como justificación de ese compromiso. No mencionan el régimen foral, el Convenio ni su blindaje, y contarlas suponía contar dos veces la DT 4.ª. La ocasión se mantiene con una nota."
+  },
+  {
+   "propuesta": "seleccion",
+   "criterio": "nota y justificación de upn-02",
+   "antes": "los tres puntos [...] que la candidatura repitió al presentar su campaña el 10-11-2026; [upn-02] eje de la presentación de campaña («foralidad», Diario de Navarra)",
+   "despues": "la candidatura anunció de nuevo la supresión de la DT 4.ª y aludió al Canal y al TAV; en el inicio de campaña del 12-11 no se repitió ninguna medida; el titular de Diario de Navarra se cita como tal",
+   "motivo": "Lo afirmado no lo sostenían las fuentes del 10-11 ni del 12-11."
+  },
+  {
+   "propuesta": "evaluacion",
+   "criterio": "seleccion_sha256",
+   "antes": "493fb85d228546b409460c5cd2082c91ac9a83d25912a4859cbddf32fc036b07",
+   "despues": "3316763330fd3d7ec750c65a55a450e9de7984336d9a67e094a0047cef0e055d",
+   "motivo": "Se recalcula tras los cambios en seleccion.json."
+  }
+ ],
+ "dudas": [
+  "upn-01, internacional («no_verificable»): Alemania prevé en su Ley Fundamental reorganizar el territorio o fusionar Länder con referéndum (arts. 29 y 118a; Berlín-Brandeburgo, rechazada en 1996). Esas cláusulas son comparables a la DT 4.ª, pero no a su supresión, que es la medida, y se mantiene «no_verificable».",
+  "El acuerdo solo se conoce por las notas de UPN, sin el texto íntegro ni una publicación del PP. Si el programa conjunto se publica, sustituye a este análisis.",
+  "La campaña oficial empieza el 13-11; no se hallaron entrevistas de la cabeza de lista al Congreso."
+ ]
+}
