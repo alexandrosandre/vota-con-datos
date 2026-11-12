@@ -1,0 +1,211 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-12",
+ "alcance": "Base «compromisos» (prompts 1b, 3 y 4): 11 prioridades × 8 criterios y las 18 entradas de seleccion.json. Se abrieron las 81 URL citadas en seleccion.json y evaluacion.json (80 con respuesta 200; teleprensa.com devolvió 403, y solo figura en «descartados», donde ya se anota). Se comprobó que las 11 notas de /noticias/ de frenteamplio.info son todas las que lista la web oficial, y que los SHA-256 de las 27 copias locales coinciden. Las 11 prioridades se apoyan en notas oficiales del partido (quien = el partido), publicadas tras la convocatoria y referidas a esta elección. Sus citas son literales (verify_quotes: 29 citas, 0 no encontradas) y son medidas concretas. Las justificaciones de prioridad se apoyan en lo que el partido destaca: titular de nota, «medida estrella», «programa económico» o repetición por la candidata. Se comprobaron todas las cifras, normas y sentencias del texto contra sus fuentes.",
+ "igual_estandar": "Se comparó con PP, SALF, ERC, BNG, PNV y la auditoría de coherencia del 12-11. Hay un solo cambio de valoración. frente_amplio-10 (legal) pasa de «desfavorable» a «mixta»: el obstáculo es una ley ordinaria (Ley 18/2014) y el diseño no está definido, y «desfavorable» se reserva a reforma constitucional o choque con el Derecho de la UE. Se mantienen las otras dos «desfavorable». La primera es frente_amplio-06 (largo plazo), con el mismo hecho y el mismo criterio que bng-07 y pnv-08 (AIReF: +3,1 puntos de PIB en 2050, 2,4 sin cotizaciones). La segunda es frente_amplio-10 (financiación): las fuentes oficiales (Aena, Consejo de Ministros) muestran que el DORA se paga con tarifas y no con los Presupuestos, como salf-03 con los decomisos. Las medidas de ingreso (frente_amplio-02, -03 y -04) tienen financiación «mixta», como adelante_andalucia-05, bng-09 y erc-12. En frente_amplio-02 legal y beneficiarios son «favorable», como en erc-12: hay umbral y cifra de contribuyentes. La financiación «mixta» de frente_amplio-05 y -06, con coste y financiación cuantificados por el partido sin respaldo ni contradicción oficial, sigue la rúbrica aplicada a SALF. Los «no_verificable» sin precedente o sin evaluación siguen la regla general (bng-08, vox-10). El caso de Berlín en frente_amplio-01 coincide con podemos-04.",
+ "recuento_final": {
+  "favorable": 7,
+  "mixta": 69,
+  "desfavorable": 2,
+  "no_verificable": 10
+ },
+ "cambios": [
+  {
+   "propuesta": "fa-c01",
+   "criterio": "veces.n (seleccion.json)",
+   "antes": "6",
+   "despues": "4",
+   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas; n contaba fuentes, y varias recogen el mismo acto: Málaga (6-nov: nota, elDiario.es y EFE recogen el mismo acto), Barcelona (7-nov), Palma (8-nov) y «La Revuelta» (10-nov). La lista de URL se mantiene"
+  },
+  {
+   "propuesta": "fa-c02",
+   "criterio": "veces.n (seleccion.json)",
+   "antes": "2",
+   "despues": "1",
+   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas; n contaba fuentes, y varias recogen el mismo acto: una sola ocasión (6-nov): elDiario.es recoge la misma nota de Málaga. La lista de URL se mantiene"
+  },
+  {
+   "propuesta": "fa-c03",
+   "criterio": "veces.n (seleccion.json)",
+   "antes": "4",
+   "despues": "3",
+   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas; n contaba fuentes, y varias recogen el mismo acto: 28-oct (Cadena SER y nota oficial del mismo anuncio), 5-nov y 8-nov. La lista de URL se mantiene"
+  },
+  {
+   "propuesta": "fa-c04",
+   "criterio": "veces.n (seleccion.json)",
+   "antes": "3",
+   "despues": "2",
+   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas; n contaba fuentes, y varias recogen el mismo acto: 28-oct (nota y Cadena SER, mismo anuncio) y 8-nov. La lista de URL se mantiene"
+  },
+  {
+   "propuesta": "fa-c05",
+   "criterio": "veces.n (seleccion.json)",
+   "antes": "6",
+   "despues": "5",
+   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas; n contaba fuentes, y varias recogen el mismo acto: 24-oct, 5-nov (nota y elDiario.es, mismo acto), 7-nov, 8-nov y 10-nov. La lista de URL se mantiene"
+  },
+  {
+   "propuesta": "fa-c06",
+   "criterio": "veces.n (seleccion.json)",
+   "antes": "4",
+   "despues": "3",
+   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas; n contaba fuentes, y varias recogen el mismo acto: 24-oct, 5-nov (nota y elDiario.es, mismo acto) y 10-nov. La lista de URL se mantiene"
+  },
+  {
+   "propuesta": "fa-c10",
+   "criterio": "veces.n (seleccion.json)",
+   "antes": "3",
+   "despues": "2",
+   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas; n contaba fuentes, y varias recogen el mismo acto: 2-nov y 6-nov (web de Comuns y Europa Press, mismo acto). La lista de URL se mantiene"
+  },
+  {
+   "propuesta": "fa-c12",
+   "criterio": "veces.n (seleccion.json)",
+   "antes": "3",
+   "despues": "2",
+   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas; n contaba fuentes, y varias recogen el mismo acto: 6-nov (Europa Press y web de Comuns, mismo acto) y 8-nov. La lista de URL se mantiene"
+  },
+  {
+   "propuesta": "fa-c13",
+   "criterio": "veces.n (seleccion.json)",
+   "antes": "2",
+   "despues": "1",
+   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas; n contaba fuentes, y varias recogen el mismo acto: 6-nov (web de Comuns y Europa Press, mismo acto). La lista de URL se mantiene"
+  },
+  {
+   "propuesta": "fa-c15",
+   "criterio": "veces.n (seleccion.json)",
+   "antes": "3",
+   "despues": "2",
+   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas; n contaba fuentes, y varias recogen el mismo acto: 12-nov (Nós Diario y GCDiario, misma presentación) y 8-nov (Delgado, sin cifra). La lista de URL se mantiene"
+  },
+  {
+   "propuesta": "fa-c16",
+   "criterio": "veces.n (seleccion.json)",
+   "antes": "2",
+   "despues": "1",
+   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas; n contaba fuentes, y varias recogen el mismo acto: 12-nov (Nós Diario y GCDiario, misma presentación). La lista de URL se mantiene"
+  },
+  {
+   "propuesta": "fa-c17",
+   "criterio": "veces.n (seleccion.json)",
+   "antes": "2",
+   "despues": "1",
+   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas; n contaba fuentes, y varias recogen el mismo acto: 12-nov (Nós Diario y GCDiario, misma presentación). La lista de URL se mantiene"
+  },
+  {
+   "propuesta": "fa-c18",
+   "criterio": "veces.n (seleccion.json)",
+   "antes": "2",
+   "despues": "1",
+   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas; n contaba fuentes, y varias recogen el mismo acto: 12-nov (Nós Diario y GCDiario, misma presentación). La lista de URL se mantiene"
+  },
+  {
+   "propuesta": "fa-c01",
+   "criterio": "prioridades.justificacion (seleccion.json)",
+   "antes": "La vivienda es el eje declarado de la campaña (lema «Un voto como una casa», Bustinduy, 9-nov).",
+   "despues": "La vivienda es uno de los dos «grandes ejes de campaña» que expuso el portavoz Pablo Bustinduy el 9-nov (Demócrata, estilo indirecto), con el lema «Un voto como una casa» según fuentes de la candidatura.",
+   "motivo": "la fuente (Demócrata, 9-nov) atribuye el lema a «fuentes de la candidatura», no a Bustinduy; Bustinduy expuso que la vivienda y la desigualdad son los dos ejes de campaña"
+  },
+  {
+   "propuesta": "frente_amplio-01",
+   "criterio": "veces (campo de la propuesta)",
+   "antes": "6",
+   "despues": "4",
+   "motivo": "copia del valor corregido en seleccion.json"
+  },
+  {
+   "propuesta": "frente_amplio-02",
+   "criterio": "veces (campo de la propuesta)",
+   "antes": "6",
+   "despues": "5",
+   "motivo": "copia del valor corregido en seleccion.json"
+  },
+  {
+   "propuesta": "frente_amplio-03",
+   "criterio": "veces (campo de la propuesta)",
+   "antes": "4",
+   "despues": "3",
+   "motivo": "copia del valor corregido en seleccion.json"
+  },
+  {
+   "propuesta": "frente_amplio-04",
+   "criterio": "veces (campo de la propuesta)",
+   "antes": "4",
+   "despues": "3",
+   "motivo": "copia del valor corregido en seleccion.json"
+  },
+  {
+   "propuesta": "frente_amplio-07",
+   "criterio": "veces (campo de la propuesta)",
+   "antes": "3",
+   "despues": "2",
+   "motivo": "copia del valor corregido en seleccion.json"
+  },
+  {
+   "propuesta": "frente_amplio-08",
+   "criterio": "veces (campo de la propuesta)",
+   "antes": "2",
+   "despues": "1",
+   "motivo": "copia del valor corregido en seleccion.json"
+  },
+  {
+   "propuesta": "frente_amplio-09",
+   "criterio": "veces (campo de la propuesta)",
+   "antes": "3",
+   "despues": "2",
+   "motivo": "copia del valor corregido en seleccion.json"
+  },
+  {
+   "propuesta": "frente_amplio-09",
+   "criterio": "internacional",
+   "antes": "(Alemania, Austria, Francia, Italia, Suiza, según el partido)",
+   "despues": "(Francia, Italia, Austria y Suiza, según el partido)",
+   "motivo": "la nota oficial del 2-nov cita «Francia, Italia, Austria y Suiza»; Alemania no figura en ella ni en otra fuente citada"
+  },
+  {
+   "propuesta": "frente_amplio-09",
+   "criterio": "evidencia",
+   "antes": "halla que la separación vertical aumenta los costes en redes con mucho tráfico y los reduce en las de poco tráfico, y que con densidad media el modelo de grupo («holding») cuesta menos que la separación completa. No encuentra que ningún modelo aumente de forma significativa la cuota del ferrocarril.",
+   "despues": "halla que la separación vertical aumenta los costes en redes con mucho tráfico y parece reducirlos en las de poco tráfico, y que con densidad media la separación no cambia de forma significativa los costes, mientras que el modelo de grupo («holding») los reduce, frente a la integración completa. No encuentra que la separación mejore la cuota del ferrocarril frente al modelo de grupo, aunque, combinada con la apertura del mercado, sí mejora la cuota de viajeros frente a la integración completa.",
+   "motivo": "fidelidad a la fuente: el resumen de EVES-Rail compara ambos modelos con la integración completa y sí encuentra una mejora de la cuota de viajeros con separación y apertura del mercado; el texto decía que ningún modelo la aumentaba"
+  },
+  {
+   "propuesta": "frente_amplio-04",
+   "criterio": "internacional",
+   "antes": "Aún no hay evaluaciones publicadas de sus resultados.",
+   "despues": "No hemos localizado evaluaciones publicadas de sus resultados.",
+   "motivo": "afirmación absoluta sin fuente: se formula como alcance de la búsqueda (mismo criterio que en la revisión de SALF)"
+  },
+  {
+   "propuesta": "frente_amplio-10",
+   "criterio": "antecedentes",
+   "antes": "No consta ningún intento previo.",
+   "despues": "No hemos localizado ningún intento previo.",
+   "motivo": "afirmación absoluta sin fuente: se formula como alcance de la búsqueda"
+  },
+  {
+   "propuesta": "frente_amplio-10",
+   "criterio": "legal",
+   "antes": "valoracion: desfavorable",
+   "despues": "valoracion: mixta",
+   "motivo": "igual estándar (auditoría de coherencia del 12-11): «desfavorable» en encaje legal se reserva a medidas cuyo diseño exige reforma constitucional (erc-04, bng-01, salf-11) o choca con el Derecho de la UE en su núcleo (cc-06, salf-06, vox-07). Aquí el obstáculo citado es una ley ordinaria (Ley 18/2014), que puede modificarse por ley, y el diseño no está definido: corresponde «mixta», como salf-03 o salf-05. La financiación sigue en «desfavorable», porque las fuentes oficiales contradicen que haya fondos públicos disponibles"
+  },
+  {
+   "propuesta": "frente_amplio-10",
+   "criterio": "legal",
+   "antes": "El DORA no es una partida de los Presupuestos: es el documento regulatorio que fija las inversiones de Aena y su ingreso máximo por pasajero, que la Ley 18/2014 calcula para recuperar los costes eficientes de los servicios aeroportuarios con tarifas que son prestaciones patrimoniales públicas. Destinar esos ingresos al ferrocarril contradice ese marco y exigiría cambiar la ley y el régimen de Aena, una empresa mixta (semipública).",
+   "despues": "El DORA no es una partida de los Presupuestos: es el documento regulatorio que fija las inversiones de Aena y su ingreso máximo por pasajero, que la Ley 18/2014 basa en la recuperación de los costes eficientes de los servicios aeroportuarios, con tarifas que son prestaciones patrimoniales públicas. Destinar esos ingresos al ferrocarril no cabe en ese marco: exigiría modificar la Ley 18/2014 y el régimen de Aena, una empresa mixta (semipública). Es un cambio de rango legal cuyo encaje depende de un diseño que el partido no concreta.",
+   "motivo": "coherencia del texto con la valoración; «costes eficientes» y «empresa mixta (semipública)» constan en la Ley 18/2014 y en Diario de Avisos, ya citados"
+  }
+ ],
+ "dudas": [
+  "frente_amplio-05 (pensión mínima igual al SMI): el coste de 10.000 M€ anuales es la cifra del partido. Con los tramos de la Seguridad Social que recoge El Debate (casi 2 millones de pensiones por debajo de 900 € y otros 2,6 millones entre 900 y 1.221 €), cubrir la diferencia hasta el SMI en 14 pagas podría superar esa cifra. Depende de si el suelo se aplica por pensión o por pensionista y de si hay prueba de ingresos, y el partido no lo concreta. No se ha añadido un cálculo propio. El texto ya dice que no hay estimación oficial y que el partido asigna esos ingresos también a otras medidas.",
+  "frente_amplio-10, financiación «desfavorable»: es un caso frontera. Una ley podría reasignar ingresos de Aena, pero las fuentes oficiales contradicen la premisa del partido, que da por hecho que hay «fondos» públicos disponibles «de forma inmediata». Se mantiene por el precedente de salf-03.",
+  "Selección: Ernest Urtasun (fa-c12, fa-c13 y dos ocasiones de fa-c10) figura como número 2 por Barcelona. Ese papel no está en la lista de líderes del prompt 1b, el mismo motivo por el que se descartó a Eva García Sempere, número 2 por Málaga. fa-c13 y una de las ocasiones de fa-c10 se apoyan además en la web oficial de Comuns, un documento oficial del socio catalán. No afecta a las 11 prioridades evaluadas. fa-c10 sigue apoyada en la nota oficial del 2-nov.",
+  "Selección: el criterio de dejar fuera las medidas de Comuns (Cataluña) y de Fronte Ampla (Galicia) porque «la candidatura estatal no las ha destacado» es razonable, pero es una decisión del analista. Si se publica el documento «100+15» de Fronte Ampla, o un programa estatal, debe analizarse con el prompt 1, y ese análisis sustituye a este.",
+  "veces: en junts/compromisos/seleccion.json la lista de ocasiones también cuenta como entradas distintas dos crónicas de un mismo acto. No se ha tocado, porque queda fuera del alcance. En Frente Amplio, n se ha corregido a ocasiones públicas distintas, como define el prompt 1b."
+ ]
+}
