@@ -1,0 +1,34 @@
+{
+  "verificador": "Claude, verificación independiente 12-nov (noche)",
+  "fecha": "2026-11-12",
+  "resultados": [
+    {
+      "partido": "podemos",
+      "q": "q06",
+      "veredicto": "aprobada",
+      "valor_final": 1,
+      "motivo": "La cita es literal en la copia local (pazcasaytrabajo_web.txt) y en la web en vivo (pazcasaytrabajo.es, consultada hoy): medida 04 de 05, «Trabajar menos para vivir mejor», «Jornada laboral de 30 horas semanales. Es lo mínimo». Es la web oficial de campaña de la candidata («Irene Montero • Candidata a las elecciones generales»): canal oficial de la candidatura para estas elecciones, que el protocolo admite como documento oficial (quien = el partido) y, a la vez, como canal propio de la candidata. Ya no es una paráfrasis de agencia: queda resuelto el motivo de la auditoría. Fecha válida: la web no se data, pero Diario Red (21-oct, copia diariored_2026-10-21_web_campana.txt) documenta su lanzamiento con estas cinco medidas, ya después de la convocatoria. La fecha de consulta (12-nov) también es válida; 2026-10-21 sería la fecha más precisa de la declaración, si se prefiere. Valor decidido de forma independiente: es una propuesta propia, expresa y prioritaria (una de las cinco medidas de la web), pero con otra cifra (30 h, más allá de las 37,5 h de la afirmación). No menciona el mantenimiento del salario: «por Ley» va con el salario mínimo, no con la jornada. Con la misma vara que BNG (35 h, +1) y Adelante Andalucía (32 h, +1): +1. La celda está hoy a null en codificacion_g2.json."
+    },
+    {
+      "partido": "frente_amplio",
+      "q": "q06",
+      "veredicto": "aprobada",
+      "valor_final": 1,
+      "motivo": "La cita es literal en la copia local de Nós Diario y en la página en vivo (12-nov, Redacción): la formación mantiene su apuesta «pola redución da xornada laboral a 37,5 horas semanais, novas subas do Salario Mínimo Interprofesional (SMI)…». Las comillas son del medio y atribuyen el texto a la formación, no a una persona. Europa Press (Galicia Confidencial, 12-nov) y GCDiario dan lo mismo en estilo indirecto. Se acepta porque las palabras entre comillas llevan la medida con su cifra y salen del programa «100+15» que el partido presentó para estas elecciones, en rueda de prensa de su portavoz gallego y candidato al Senado (Paulo Carlos López, líder autonómico). Frente Amplio-Fronte Ampla (Galicia) es una de las candidaturas del BOE de frente_amplio (partidos.json). Equivale a citar un documento oficial del partido (quien = el partido), que el protocolo admite. Es un caso límite: el programa no está publicado en ninguna web oficial (fronteampla.gal redirige a frenteamplio.info/gal/, que hoy no tiene nota del acto), así que no se puede cotejar el texto original ni dar la página. Si se exige el documento mismo, la celda debe quedar en null. Valor decidido de forma independiente: la misma cifra que la afirmación (37,5 h), pero sin mencionar el salario ni el instrumento legal. Va al final, en una enumeración («Finalmente, no plano social e laboral…»), sin presentarla como prioridad. Es de la federación gallega: Delgado (Madrid) solo habla de «trabajar menos» sin cifra. Por eso +1 y no +2: ERC tiene +2 porque su programa recoge literalmente la ley, las 37,5 h y el salario. Coherente con Podemos q06 (+1). La celda está hoy a null en codificacion_g2.json."
+    },
+    {
+      "partido": "ara_mes_fa",
+      "q": "q30",
+      "veredicto": "aprobada",
+      "valor_final": 2,
+      "motivo": "La cita es literal y entre comillas como palabras de Carme Gomila, en la copia local (democrata_20261108_miting_palma.txt, línea 676) y en la página en vivo de Demócrata (8-nov). La autora vale: es cabeza de lista de Ara Més-Front Ampli al Congreso por Illes Balears. Fecha válida: mitin de Palma, 8-nov. NacióDigital (8-nov) recoge lo mismo en estilo indirecto («posar límits als preus dels aliments bàsics»). Valor decidido de forma independiente: es un compromiso propio, en primera persona y en futuro («limitarem els preus dels aliments bàsics»), dirigido a PP y Vox, pero no reactivo, porque propone la medida ella misma (regla b no aplicable). Es expreso y prioritario: el día anterior (Sóller, 7-nov) la coalición lo llevó como titular de su jornada. Última Hora/Europa Press, reabierta: «propone topar los precios de alimentos básicos», aunque en paráfrasis; lo único entrecomillado allí es «poner límites a los abusos y garantizar precios asequibles», así que esa fuente sirve solo de contexto, no de cita. «Limitar los precios» de los alimentos básicos equivale a topar o fijar un máximo. Con la misma vara que Compromís q30 («topar el precio de la energía y los alimentos básicos», +2) y Podemos q30 (+2): +2. La celda está hoy a null en codificacion_g2.json."
+    },
+    {
+      "partido": "psc",
+      "q": "q21",
+      "veredicto": "rechazada",
+      "valor_final": null,
+      "motivo": "El texto es literal en la copia local (RSS de socialistes.cat, 7-nov). La página da 403 y no se ha intentado sortear. Pero la frase es la narración que hace el PSC, en tercera persona, de lo que dijo otro dirigente: «Pedro Sánchez s'ha compromès a blindar el dret a l'avortament a la Constitució». La nota no presenta la medida como compromiso del PSC. Ninguno de sus dirigentes en el acto (Illa, Hereu, Montalvo, Viñuales) la formula, ni consta en otra fuente del PSC (revisadas las copias locales: Morón, Lleida 26-oct, habla de que «una dona pugui decidir amb garanties», sin reforma constitucional). Aceptarla sería trasladar al PSC el compromiso de Sánchez por otra vía, cuando la nota de la celda en codificacion_g1.json deja dicho que los compromisos del PSOE no se trasladan. Además, la falta de atribución no se resuelve con un valor menor: ±1 es para posiciones con matices o condiciones, no para una autoría dudosa. Si la posición fuera del PSC, sería tan expresa como la del PSOE (+2). Si no lo es, es null. Ante la duda, null. Pendiente de decisión de diseño (no del verificador): la candidatura del PSC se presenta como «PSC-PSOE» y respalda a Sánchez como candidato a la Presidencia. Si se decide que Sánchez cuenta como líder de esa candidatura (la regla de dirigentes nacionales de partidos de la coalición), la fuente correcta no es esta nota, sino la misma cita parcial de Sánchez en Diari de Tarragona que usa PSOE q21 («blindar el derecho al aborto» en la Constitución), con +2. La celda sigue a null en codificacion_g1.json."
+    }
+  ]
+}

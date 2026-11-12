@@ -1,0 +1,81 @@
+{
+ "codificador": "Claude, codificador (revisión de promesas 12-nov noche y de las selecciones de compromisos)",
+ "fecha": "2026-11-12",
+ "alcance": "Fuentes revisadas: las 16 promesas añadidas hoy a data/promesas/promesas.json (cambios_2026-11-12b.md) y data/programas/{psoe,vox,frente_amplio,podemos,junts,eh_bildu,psc,upn}/compromisos/seleccion.json (compromisos y descartados), con sus copias locales. Solo se proponen celdas que hoy son null en codificacion_g*.json. Reglas: docs/prompts/2_codificacion_posiciones.md y data/fase1/auditoria_estandar_2026-11-12.md.",
+ "posiciones": {
+  "podemos": {
+   "q06": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "No podemos pasarnos la vida en el trabajo. 1.800€ de salario mínimo por Ley. Jornada laboral de 30 horas semanales. Es lo mínimo.",
+    "pagina": null,
+    "url": "https://pazcasaytrabajo.es/",
+    "medio": "Web oficial de campaña de Irene Montero (pazcasaytrabajo.es)",
+    "fecha": "2026-11-12",
+    "quien": "Podemos (web oficial de la candidatura de Irene Montero, «Candidata a las elecciones generales»)",
+    "formato": "documento oficial (web de campaña, medida 04 de 05, «Trabajar menos para vivir mejor»)",
+    "marco": null,
+    "nota": "Copia local: data/sources/compromisos/podemos/pazcasaytrabajo_web.txt (descargada el 12-nov; la selección de compromisos la data el 20-oct, pero la página no muestra fecha, así que se usa la de consulta). Es un documento oficial de la candidatura para estas elecciones (protocolo: quien = el partido), lo que resuelve el motivo de la auditoría (solo había paráfrasis de Europa Press y podemos.info daba 403). Propone 30 horas, más allá de las 37,5 de la afirmación, y no menciona el salario ni el instrumento legal: a favor con matices, +1, como BNG (35 h) y Adelante Andalucía (32 h)."
+   }
+  },
+  "frente_amplio": {
+   "q06": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "a formación mantén a súa aposta «pola redución da xornada laboral a 37,5 horas semanais, novas subas do Salario Mínimo Interprofesional (SMI) e a implantación dunha prestación universal de 200 euros ao mes por cada menor de idade»",
+    "pagina": null,
+    "url": "https://www.nosdiario.gal/politica/fronte-ampla-presenta-seu-programa-electoral-100-15-centrado-vivenda-salarios-autogoberno-da-galiza/20261112165631271586.html",
+    "medio": "Nós Diario",
+    "fecha": "2026-11-12",
+    "quien": "Fronte Ampla (Frente Amplio-Fronte Ampla, candidatura de Frente Amplio en Galicia): presentación del programa «100+15» por Paulo Carlos López, portavoz de la formación y candidato al Senado, y Rocío Núñez, cabeza de lista al Senado por A Coruña",
+    "formato": "rueda de prensa de presentación del programa electoral (Santiago de Compostela)",
+    "marco": null,
+    "nota": "Copia local: data/sources/compromisos/frente_amplio/nosdiario_2026-11-12_fronte_ampla_programa.txt. Traducción: «por la reducción de la jornada laboral a 37,5 horas semanales». Lo entrecomillado por el medio lleva la medida (cifra incluida); GCDiario (12-nov) lo recoge igual en estilo indirecto. Lo presenta el portavoz de la federación gallega (líder autonómico según el protocolo) como parte del programa para el Congreso y el Senado. Misma cifra que la afirmación, pero sin mencionar el salario ni presentarlo como prioridad, y solo de la federación gallega (los líderes estatales no le han puesto cifra): +1. Dudosa en cuanto a la atribución: el medio atribuye las comillas a «a formación», no a una persona concreta."
+   }
+  },
+  "ara_mes_fa": {
+   "q30": {
+    "valor": 2,
+    "fuente": "campaña",
+    "cita": "«Feijóo, Abascal, Prohens, feu-vos a la idea que apujarem el salari mínim, que acabarem amb l'especulació, millorarem les condicions dels treballadors, limitarem la compra a no residents i limitarem els preus dels aliments bàsics».",
+    "pagina": null,
+    "url": "https://www.democrata.es/ca/politica/ampliacio-ada-colau-adverteix-que-al-psoe-li-falten-forces-per-plantar-cara-a-les-elits/",
+    "medio": "Demócrata (Agencias)",
+    "fecha": "2026-11-08",
+    "quien": "Carme Gomila, cabeza de lista de Ara Més-Front Ampli al Congreso por Illes Balears",
+    "formato": "mitin (Palma)",
+    "marco": null,
+    "nota": "Copia local: data/sources/compromisos/ara_mes_fa/democrata_20261108_miting_palma.txt. Traducción: «…limitaremos los precios de los alimentos básicos». Compromiso literal en primera persona del plural. El día anterior (Sóller, 7-nov; Última Hora/Europa Press, promesa añadida hoy) lo había presentado como propuesta propia y titular de su jornada («topar los precios de los alimentos básicos» y gravar los márgenes excesivos de la distribución), aunque allí solo en estilo indirecto: las comillas de Gomila son la justificación. Propuesta propia, expresa y repetida en dos actos: +2, misma vara que Compromís q30 («topar el precio de la energía y los alimentos básicos», +2)."
+   }
+  },
+  "psc": {
+   "q21": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "Per la seva banda, Pedro Sánchez s'ha compromès a blindar el dret a l'avortament a la Constitució espanyola durant la pròxima legislatura.",
+    "pagina": null,
+    "url": "https://www.socialistes.cat/actualitat/el-vot-de-cada-ciutada-val-mes-que-qualsevol-algoritme/",
+    "medio": "PSC (nota oficial, socialistes.cat, canal RSS)",
+    "fecha": "2026-11-07",
+    "quien": "PSC (nota oficial del acto de precampaña de la candidatura del PSC en Tarragona, con Pedro Sánchez, candidato a la Presidencia que respalda el PSC)",
+    "formato": "documento oficial (nota de prensa del partido)",
+    "marco": null,
+    "nota": "Copia local: data/sources/compromisos/psc/socialistes_20261107_acto_tarragona.txt (texto del RSS; la página da 403). Traducción: «Pedro Sánchez se ha comprometido a blindar el derecho al aborto en la Constitución española durante la próxima legislatura». Es el propio PSC quien, en su nota oficial del acto de su candidatura, difunde el compromiso; ningún dirigente del PSC lo formula en primera persona (Diari de Tarragona solo entrecomilla «blindar el derecho al aborto», de Sánchez). La nota de la celda dice que los compromisos del PSOE no se trasladan al PSC; aquí no se trasladan del PSOE, sino de un documento del PSC. Apoyo claro pero relatado, no presentado como compromiso propio ni prioritario de la candidatura: +1. Caso límite: si se entiende que un documento del partido que narra lo que dice un tercero no es posición del partido, null."
+   }
+  }
+ },
+ "sin_propuesta": [
+  "frente_amplio q01: Verónica Barbero (Vallecas, 12-nov, Infobae/EP) — bajar alquileres y contratos indefinidos solo en estilo indirecto; lo entrecomillado («proteger las pensiones y el derecho a la vivienda no son políticas que compitan entre sí») no lleva la medida. Regla (a): null.",
+  "ara_mes_fa q30, fuente de Sóller (Última Hora/EP, 7-nov): la propuesta va en paráfrasis; se usa la cita literal del mitin de Palma del 8-nov.",
+  "psoe q10: Kilian Sánchez y María Sáinz (7 % del PIB) siguen solo en estilo indirecto (descartados en la selección); null hasta el programa del 15-nov.",
+  "psoe q26: «decir no al 5 %» es reivindicación de una decisión pasada, no compromiso; null.",
+  "eh_bildu q06: el paquete laboral de Aizpurua es anterior a la convocatoria y para la legislatura anterior; null.",
+  "eh_bildu q02 / frente_amplio q02 / compromis q02: prohibir la compra de vivienda a fondos o gravar la acumulación son medidas distintas de expropiar; null.",
+  "upn q17: blindar el Convenio navarro no es pronunciarse sobre extender el modelo a otras comunidades; null.",
+  "junts q06: la oposición a las 37,5 horas solo consta como balance de la legislatura anterior (votaciones pasadas); null.",
+  "compromis: contratos indefinidos y renacionalizar la alta velocidad (Ibáñez, no líder; sin afirmación), gravar la acumulación de viviendas (Micó; no es q04): sin celda.",
+  "pp: profesión de riesgo y endurecer penas por desórdenes públicos: no corresponden a q24 (derogar la Ley de Seguridad Ciudadana); sin celda.",
+  "upc, adelante_andalucia, junts (cuartel del Bruc), eh_bildu (prórroga): sin relación con las 30 afirmaciones o celda ya con programa."
+ ],
+ "desacuerdos_con_codificacion_existente": []
+}
