@@ -1,0 +1,466 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-12",
+ "cambios": [
+  {
+   "propuesta": "pp-01",
+   "criterio": "legal",
+   "antes": "a iniciar en el cuarto trimestre de 2026 un nuevo ciclo",
+   "despues": "a aprobar en el cuarto trimestre de 2026 un nuevo ciclo",
+   "motivo": "Dato: el anexo II del doc. 5014/25 fija «By Q4 2026, adoption of a new cycle by the Ministry of Finance», es decir, la aprobación del ciclo, no su inicio."
+  },
+  {
+   "propuesta": "pp-01",
+   "criterio": "evidencia",
+   "antes": "y advierte de que las revisiones integrales suelen durar más de un año y de que los ministerios tienden a pedir excepciones, lo que contrasta con una auditoría completa en cien días.",
+   "despues": "advierte de que una revisión integral puede durar más de un año, lo que contrasta con una auditoría completa en cien días, y recomienda que las decisiones no puedan renegociarse para aplazarlas o pedir exenciones temporales.",
+   "motivo": "Fidelidad a la fuente: la nota del FMI dice que una revisión integral «could take more than a year» y recomienda que las decisiones «are not subject to renegotiation for the purpose of postponement or temporary exemption»; no afirma que los ministerios «tiendan» a pedir excepciones."
+  },
+  {
+   "propuesta": "pp-01",
+   "criterio": "largo_plazo",
+   "antes": "y el FMI señala que los ministerios tienden a renegociar los recortes.",
+   "despues": "y el FMI recomienda blindar las decisiones frente a renegociaciones para aplazarlas o pedir exenciones temporales.",
+   "motivo": "Misma corrección de fidelidad a la nota del FMI que en «evidencia»."
+  },
+  {
+   "propuesta": "pp-02",
+   "criterio": "antecedentes",
+   "antes": "España ha hecho seis regularizaciones extraordinarias desde 1978; en 2005 se regularizó a 576.506 personas, y la de 2026 (RD 316/2026) recibió 1.174.978 solicitudes.",
+   "despues": "Según la prensa, España ha hecho seis regularizaciones extraordinarias desde 1978, la mayor en 2005 con 576.506 personas regularizadas; la de 2026 (RD 316/2026) recibió 1.174.978 solicitudes, según el Gobierno.",
+   "motivo": "Fuentes: el recuento de regularizaciones y la cifra de 2005 solo constan en prensa (Euronews; no se localizó documento oficial y las cifras de prensa varían entre 572.961 y 576.506), por lo que se atribuyen; las 1.174.978 solicitudes constan en la nota oficial de La Moncloa de 2-7-2026, ya citada."
+  },
+  {
+   "propuesta": "pp-04",
+   "criterio": "legal",
+   "antes": "y el TJUE resolvió el 16-7-2026 que el derecho de la UE no se opone a ella.",
+   "despues": "y el TJUE (Gran Sala) resolvió el 16-7-2026 que el derecho de la UE no se opone a ella, salvo en que no puede impedir a un juez esperar la respuesta a una cuestión prejudicial.",
+   "motivo": "Fuente primaria: se sustituye Noticias Jurídicas por el comunicado oficial del TJUE 112/26 (asuntos C-523/24 y C-666/24) y se añade la única salvedad de la sentencia."
+  },
+  {
+   "propuesta": "pp-04",
+   "criterio": "legal",
+   "antes": "fuente: https://noticias.juridicas.com/actualidad/noticias/21170-el-tjue-avala-la-ley-de-amnistia/",
+   "despues": "fuente: https://curia.europa.eu/site/upload/docs/application/pdf/2026-09/cp260112es.pdf",
+   "motivo": "Fuente primaria (curia.europa.eu) en lugar de prensa jurídica, como pidió el encargo."
+  },
+  {
+   "propuesta": "pp-04",
+   "criterio": "legal",
+   "antes": "los procesos ya cerrados terminaron en sobreseimiento libre, por lo que la derogación no reabriría esas causas y su efecto sobre los casos pendientes no ha sido resuelto por ningún tribunal.",
+   "despues": "las amnistías ya aplicadas se acordaron por resoluciones firmes (la STC 137/2025 recuerda que el sobreseimiento libre produce efectos de cosa juzgada), por lo que la derogación no reabriría esas causas. El Código Penal da efecto retroactivo a las leyes penales que favorezcan al reo (art. 2.2), y ningún tribunal ha resuelto qué efecto tendría la derogación sobre los casos pendientes. El programa no dice que pretenda revertir amnistías ya aplicadas, de modo que el marco legal limita el alcance de la medida pero no la contradice.",
+   "motivo": "Precisión y mismo estándar: no todos los casos cerrados terminaron en sobreseimiento (también hubo extinción de condenas firmes); se añade el principio de retroactividad favorable (art. 2.2 CP) y se explica por qué la valoración es «mixta» y no «desfavorable»: a diferencia de bng-01 o erc-04, ninguna norma ni sentencia impide derogar la ley; solo limita sus efectos hacia atrás. Una derogación por ley orgánica sin problemas de retroactividad recibió «favorable» (bng-11)."
+  },
+  {
+   "propuesta": "pp-04",
+   "criterio": "legal",
+   "antes": "(sin fuente)",
+   "despues": "fuente: https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444",
+   "motivo": "Respaldo del art. 2.2 del Código Penal citado en el texto."
+  },
+  {
+   "propuesta": "pp-04",
+   "criterio": "antecedentes",
+   "antes": "y el Supremo rechazó en 2023 los recursos por falta de legitimación.",
+   "despues": "y el Supremo rechazó los recursos por falta de legitimación, según la prensa.",
+   "motivo": "Atribución: el dato procede solo de prensa (The Objective); no se localizó nota oficial del Supremo."
+  },
+  {
+   "propuesta": "pp-04",
+   "criterio": "antecedentes",
+   "antes": "el Tribunal Constitucional ordenó en octubre de 2026 al Supremo aplicar la amnistía a la malversación, con votos particulares.",
+   "despues": "el Tribunal Constitucional ordenó en octubre de 2026 al Supremo aplicar la amnistía a la malversación en el amparo de Dolors Bassa, con un voto particular de cinco magistrados, según la prensa; la sentencia aún no figura en la base de jurisprudencia del TC.",
+   "motivo": "Atribución: no se localizó la sentencia ni nota oficial del TC (la base hj.tribunalconstitucional.es solo muestra el ATC 121/2025 de ese amparo); se mantiene la prensa jurídica (Legal Today/Europa Press) indicándolo."
+  },
+  {
+   "propuesta": "pp-04",
+   "criterio": "beneficiarios",
+   "antes": "a julio de 2026 quedaban 89 activistas y 93 cargos por resolver, y se había amnistiado a 403 personas, entre ellas 158 policías.",
+   "despues": "a julio de 2026 se había amnistiado a 403 personas, entre ellas 158 policías, y quedaban 93 cargos y 89 activistas pendientes de resolución (otros 75 activistas tenían la amnistía denegada); son cifras anteriores a las resoluciones de octubre de 2026.",
+   "motivo": "Dato: Ara cifra en 164 los casos de activistas sin resolver (89 pendientes y 75 denegados); se precisa y se advierte de que las cifras son previas a la sentencia del TC de octubre."
+  },
+  {
+   "propuesta": "pp-04",
+   "criterio": "beneficiarios (campo resumen)",
+   "antes": "y quedaban 89 activistas y 93 cargos por resolver;",
+   "despues": "y quedaban 93 cargos y 89 activistas pendientes (más 75 activistas con la amnistía denegada);",
+   "motivo": "Misma precisión que en el criterio «beneficiarios»."
+  },
+  {
+   "propuesta": "pp-05",
+   "criterio": "antecedentes",
+   "antes": "el Consejo remitió en febrero de 2025 dos alternativas porque ninguna alcanzó los tres quintos, y el Gobierno no las tramitó.",
+   "despues": "el Consejo remitió en febrero de 2025, por unanimidad, una propuesta con dos modelos alternativos (elección directa por los jueces o con intervención de las Cortes); la Comisión de Venecia consideró en octubre de 2025 que solo el primero se ajusta al estándar europeo de elección por los pares, y la reforma no se ha aprobado.",
+   "motivo": "Afirmación sin respaldo: ninguna fuente dice que las alternativas se remitieran «porque ninguna alcanzó los tres quintos»; la nota del CGPJ (vía Legal Today) dice que el Pleno acordó remitir la propuesta por unanimidad con varias alternativas, y el informe europeo de 2026 describe los dos modelos y la opinión de la Comisión de Venecia."
+  },
+  {
+   "propuesta": "pp-05",
+   "criterio": "antecedentes",
+   "antes": "fuente: https://www.legaltoday.com/actualidad-juridica/noticias-de-derecho/el-cgpj-cumple-en-plazo-el-mandato-del-legislador-y-acuerda-por-unanimidad-remitir-al-gobierno-y-a-las-cortes-una-propuesta-sobre-la-reforma-del-sistema-de-eleccion-de-los-vocales-de-procedencia-judic-2025-02-05/",
+   "despues": "fuente: https://www.cdep.ro/afaceri_europene/CE/2026/SWD(2026)%20909_EN_autre_document_travail_service_part1_v5.pdf",
+   "motivo": "Fuente primaria: el informe de la Comisión Europea (SWD(2026) 909) documenta la propuesta de febrero de 2025, sus dos modelos y la opinión de la Comisión de Venecia; sustituye a la prensa."
+  },
+  {
+   "propuesta": "pp-06",
+   "criterio": "financiacion",
+   "antes": "Fedea propuso en 2024 un fondo transitorio de unos 3.000 M€ anuales para las comunidades peor financiadas",
+   "despues": "Fedea propuso en 2024 un fondo transitorio de nivelación a cargo del Estado con un coste estimado de 3.000 M€, a repartir entre Murcia, Comunitat Valenciana, Andalucía y Castilla-La Mancha",
+   "motivo": "Fuente primaria: la presentación de Fedea (enero de 2024) da «Coste estimado: 3.000 millones» sin decir «anuales»; sustituye a Crónica Económica."
+  },
+  {
+   "propuesta": "pp-06",
+   "criterio": "financiacion",
+   "antes": "fuente: https://cronicaeconomica.com/fedea-propone-la-reforma-del-sistema-autonomico",
+   "despues": "fuente: https://policy.fedea.net/wp-content/uploads/2024/01/presentacion_FFT_ene2024.pdf",
+   "motivo": "Fuente primaria (documento de Fedea) en lugar de prensa."
+  },
+  {
+   "propuesta": "pp-06",
+   "criterio": "antecedentes",
+   "antes": "fuente: https://www.legaltoday.com/actualidad-juridica/noticias-de-derecho/el-congreso-reactiva-la-ley-para-condonar-deuda-a-las-comunidades-autonomas-tras-casi-un-ano-guardada-en-un-cajon-2026-09-29/",
+   "despues": "fuente: https://www.airef.es/es/noticias/la-airef-analiza-las-implicaciones-de-la-propuesta-de-condonacion-de-la-deuda-autonomica-y-la-reforma-de-los-mecanismos-de-financiacion-en-el-observatorio-de-deuda/",
+   "motivo": "Fuente primaria: la AIReF (5-11-2025) recoge la asunción por el Estado de 83.252 M€ prevista en el anteproyecto; sustituye a la prensa. El decaimiento por la disolución sigue respaldado por Ara y El Salto (prensa) y por el Real Decreto 806/2026 de disolución."
+  },
+  {
+   "propuesta": "pp-06",
+   "criterio": "largo_plazo",
+   "antes": "La AIReF recomendó en 2025 vincular cualquier alivio de deuda autonómica al cumplimiento de las reglas fiscales y a una reforma global del sistema,",
+   "despues": "La AIReF recomendó en 2025 que la condonación de deuda autonómica fuera acompañada de condicionalidad vinculada al cumplimiento de las reglas fiscales y se enmarcara en una reforma integral del sistema de financiación,",
+   "motivo": "Fidelidad a la fuente primaria (nota de la AIReF de 5-11-2025), que sustituye a El Derecho."
+  },
+  {
+   "propuesta": "pp-06",
+   "criterio": "largo_plazo",
+   "antes": "fuente: https://elderecho.com/implicaciones-de-la-propuesta-de-condonacion-de-deuda-autonomica-y-reforma-de-mecanismos-de-financiacio",
+   "despues": "fuente: https://www.airef.es/es/noticias/la-airef-analiza-las-implicaciones-de-la-propuesta-de-condonacion-de-la-deuda-autonomica-y-la-reforma-de-los-mecanismos-de-financiacion-en-el-observatorio-de-deuda/",
+   "motivo": "Fuente primaria (AIReF) en lugar de prensa."
+  },
+  {
+   "propuesta": "pp-07",
+   "criterio": "evidencia",
+   "antes": "era «nula o mínima»",
+   "despues": "estaba «entre nulas y mínimas»",
+   "motivo": "Cita no literal: el informe de seguimiento de Hacienda reproduce la conclusión de la AIReF como «rentabilidades socioeconómicas entre nulas y mínimas en todos los corredores»."
+  },
+  {
+   "propuesta": "pp-07",
+   "criterio": "internacional",
+   "antes": ", unos 1.500 M€ de dinero público adicional para terminar cinco autopistas en Grecia y España y un tráfico un 35 % inferior al previsto en las españolas.",
+   "despues": " y unos 1.500 M€ de dinero público adicional para terminar cinco autopistas en Grecia y España.",
+   "motivo": "Dato sin respaldo en la fuente citada: la nota de prensa del Tribunal de Cuentas Europeo no menciona un tráfico un 35 % inferior; se retira."
+  },
+  {
+   "propuesta": "pp-08",
+   "criterio": "antecedentes",
+   "antes": "El Gobierno retiró en mayo de 2024 la reforma de la Ley del Suelo por falta de apoyos, y de las viviendas protegidas anunciadas desde 2021 se habían calificado definitivamente unas 49.000, según datos citados por la prensa.",
+   "despues": "Según la prensa, el Gobierno retiró en mayo de 2024 la reforma de la Ley del Suelo por falta de apoyos.",
+   "motivo": "Dato de prensa sin documento primario: la cifra de 49.000 viviendas protegidas procede solo de El Español (que habla de viviendas «entregadas», no «calificadas definitivamente»); se retira. La retirada de la Ley del Suelo se atribuye a la prensa."
+  },
+  {
+   "propuesta": "pp-08",
+   "criterio": "antecedentes",
+   "antes": "fuente: https://www.elespanol.com/invertia/observatorios/vivienda/20260422/sanchez-prometido-millones-viviendas-protegidas-anos-solo-entregado/1003744214034_0.html",
+   "despues": "(fuente retirada)",
+   "motivo": "Se retira la fuente del dato eliminado."
+  },
+  {
+   "propuesta": "pp-09",
+   "criterio": "legal",
+   "antes": "fuente: https://cbeh.cat/wp-content/uploads/2025/02/STC-29-enero-2025-limites-legales-precios-alquiler-jponce.pdf",
+   "despues": "fuente: https://boe.es/boe/dias/2025/02/28/pdfs/BOE-A-2025-4079.pdf",
+   "motivo": "Fuente primaria: la STC 26/2025 publicada en el BOE (desestima el recurso salvo en preceptos procesales de la LEC) sustituye al comentario académico."
+  },
+  {
+   "propuesta": "pp-10",
+   "criterio": "legal",
+   "antes": "En 2026 la exención del SMI se instrumentó con una deducción aprobada por el Real Decreto-ley 5/2026.",
+   "despues": "En 2026 la exención del SMI se instrumentó ampliando la deducción para rentas bajas de 340 a 591 euros, aprobada por el Consejo de Ministros el 17-2-2026.",
+   "motivo": "Dato sin respaldo: la nota de Hacienda citada no menciona el «Real Decreto-ley 5/2026» y no se ha podido verificar ese número; se describe la medida como la recoge la fuente."
+  },
+  {
+   "propuesta": "pp-10",
+   "criterio": "legal",
+   "antes": "(sin fuente)",
+   "despues": "fuente: https://www.boe.es/buscar/act.php?id=BOE-A-2009-20375",
+   "motivo": "Respaldo de la cesión del 50 % del IRPF a las CCAA citada en el texto."
+  },
+  {
+   "propuesta": "pp-10",
+   "criterio": "financiacion",
+   "antes": "El coste es estimable en parte: según lo comunicado por el Gobierno a Bruselas, no deflactar aporta más de 2.200 M€ anuales (unos 2.300 M€ en 2025), y la deducción del SMI cuesta unos 200 M€ según Gestha.",
+   "despues": "El coste es estimable en parte: según el Informe de Progreso Anual 2026 remitido a la Comisión Europea, no deflactar la tarifa aportó en 2025 un 0,1 % del PIB de recaudación, que España computa para cumplir el compromiso de reforma fiscal de su plan aprobado por el Consejo de la UE (que admite hasta un 0,1 % del PIB por esa vía); deflactar exigiría sustituir ese ingreso con otras medidas. La exención del SMI ya se aplica mediante la deducción para rentas bajas, por lo que fijarla por ley no añade coste respecto a 2026.",
+   "motivo": "Fuente primaria: el informe oficial de progreso y la recomendación del Consejo sustituyen a El Español (Gobierno a Bruselas y Gestha). La cifra primaria es un 0,1 % del PIB; las de 2.200-2.300 M€ solo constaban en prensa. Se mantiene «mixta»: el coste es estimable y el programa explica la financiación (lucha contra el fraude) sin cuantificarla, que es la definición de la rúbrica; no hay fuente oficial que la contradiga."
+  },
+  {
+   "propuesta": "pp-10",
+   "criterio": "financiacion",
+   "antes": "fuente: https://www.elespanol.com/invertia/economia/macroeconomia/20260502/gobierno-avanza-bruselas-no-ajustara-irpf-inflacion-ingresara-anuales-extra-via/1003744230492_0.html",
+   "despues": "fuente: https://www.hacienda.gob.es/cdi/estabilidad%20presupuestaria/planfiscalestructural/informe-progreso-2026.pdf",
+   "motivo": "Fuente primaria en lugar de prensa."
+  },
+  {
+   "propuesta": "pp-10",
+   "criterio": "financiacion",
+   "antes": "fuente: https://www.elespanol.com/sociedad/20260304/confirmado-hacienda-millones-trabajadores-beneficiaran-rebaja-fiscal-proxima-renta/1003744147485_0.html",
+   "despues": "fuente: https://data.consilium.europa.eu/doc/document/ST-5014-2025-INIT/en/pdf",
+   "motivo": "Se retira la cifra de Gestha (prensa) y se cita el compromiso del plan fiscal aprobado por el Consejo de la UE."
+  },
+  {
+   "propuesta": "pp-10",
+   "criterio": "internacional",
+   "antes": "valoracion: favorable",
+   "despues": "valoracion: mixta",
+   "motivo": "Mismo estándar (regla fijada en la auditoría de coherencia para cc-07 y erc-03): si la experiencia extranjera solo cubre parte del diseño, corresponde «mixta». La indexación de tramos está evaluada (Immervoll), pero el elemento que encabeza la medida, la rebaja del IRPF a rentas medias y bajas, no está definido ni tiene evaluación comparable, y la fuente de Tax Foundation es descriptiva."
+  },
+  {
+   "propuesta": "pp-10",
+   "criterio": "internacional",
+   "antes": "que es el objetivo de la medida.",
+   "despues": "que es el objetivo de esa parte de la medida. No hay experiencia comparable evaluada para la rebaja a rentas medias y bajas, que el programa no define.",
+   "motivo": "Coherencia del texto con el cambio de valoración."
+  },
+  {
+   "propuesta": "pp-10",
+   "criterio": "antecedentes",
+   "antes": "La tarifa estatal solo se deflactó en 2008 y 2015 en los últimos veinte años, según la prensa;",
+   "despues": "Según la prensa, la tarifa estatal solo se deflactó en 2008 y 2015 en los últimos veinte años;",
+   "motivo": "Atribución explícita del dato de prensa (Ara) al inicio de la frase."
+  },
+  {
+   "propuesta": "pp-10",
+   "criterio": "antecedentes",
+   "antes": "Madrid, Andalucía, Aragón y la Comunitat Valenciana deflactaron parcialmente su tarifa autonómica en 2022-2025.",
+   "despues": "Según la misma fuente, Madrid, Andalucía, Aragón y la Comunitat Valenciana deflactaron parcialmente su tarifa autonómica en 2022-2025.",
+   "motivo": "Atribución: el dato procede solo de Ara."
+  },
+  {
+   "propuesta": "pp-10",
+   "criterio": "antecedentes",
+   "antes": "En 2026 la deducción del SMI subió a 590,89 euros.",
+   "despues": "En 2026 la deducción para rentas bajas subió de 340 a 591 euros.",
+   "motivo": "Dato: la nota de Hacienda citada da 591 euros (redondeo) y el importe anterior de 340."
+  },
+  {
+   "propuesta": "pp-10",
+   "criterio": "beneficiarios",
+   "antes": "El coste de la deflactación (unos 2.300 M€ en 2025)",
+   "despues": "El coste de la deflactación (un 0,1 % del PIB en 2025, según el Gobierno)",
+   "motivo": "Cifra primaria (Informe de Progreso Anual 2026) en lugar de prensa."
+  },
+  {
+   "propuesta": "pp-10",
+   "criterio": "beneficiarios",
+   "antes": "fuente: https://www.elespanol.com/invertia/economia/macroeconomia/20260502/gobierno-avanza-bruselas-no-ajustara-irpf-inflacion-ingresara-anuales-extra-via/1003744230492_0.html",
+   "despues": "fuente: https://www.hacienda.gob.es/cdi/estabilidad%20presupuestaria/planfiscalestructural/informe-progreso-2026.pdf",
+   "motivo": "Fuente primaria en lugar de prensa."
+  },
+  {
+   "propuesta": "pp-10",
+   "criterio": "beneficiarios (campo resumen)",
+   "antes": " y los perceptores del SMI (unos 2,98 millones de beneficiarios de la deducción actual, según Gestha).",
+   "despues": " y los perceptores del SMI, que ya están exentos mediante la deducción para rentas bajas.",
+   "motivo": "Se retira la cifra de Gestha, que solo constaba en prensa."
+  },
+  {
+   "propuesta": "pp-10",
+   "criterio": "beneficiarios (campo resumen)",
+   "antes": "la no deflactación aportó unos 2.300 M€ en 2025 según el Gobierno;",
+   "despues": "la no deflactación aportó un 0,1 % del PIB en 2025 según el Informe de Progreso Anual 2026;",
+   "motivo": "Cifra primaria en lugar de prensa."
+  },
+  {
+   "propuesta": "pp-11",
+   "criterio": "financiacion",
+   "antes": "El coste por beneficiario es estimable: la cuota mínima de 2026 ronda los 206 euros mensuales y la reducida es de 80 euros, por lo que la exención supone unos 960 euros más al año por persona en cada año de exención. La AIReF estimó que los incentivos al nuevo trabajo autónomo suponían en 2018 en torno al 32 % de unos 2.000 M€ de incentivos evaluados.",
+   "despues": "El coste por beneficiario es estimable: con la cuota reducida de 80 euros mensuales que el Real Decreto-ley 13/2022 fijó para 2023-2025 (desde 2026 la cuantía corresponde a la Ley de Presupuestos), la exención supone unos 960 euros más al año por persona en cada año de exención. Como orden de magnitud, la AIReF cifró en 634,6 M€ el coste de la tarifa plana de autónomos en 2018.",
+   "motivo": "Datos: la página de la Seguridad Social citada (régimen general, en inglés) no contiene la cuota mínima de 206 euros, y el Real Decreto-ley 13/2022 fija los 80 euros solo para 2023-2025; se usa la cifra de coste de la tarifa plana del estudio original de la AIReF en lugar del porcentaje recogido por prensa."
+  },
+  {
+   "propuesta": "pp-11",
+   "criterio": "financiacion",
+   "antes": "fuente: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/36537",
+   "despues": "(fuente retirada)",
+   "motivo": "La página no respalda la cifra citada (es la de bases del régimen general)."
+  },
+  {
+   "propuesta": "pp-11",
+   "criterio": "financiacion",
+   "antes": "fuente: https://elderecho.com/la-airef-senala-los-incentivos-la-contratacion-no-pueden-sustituir-las-reformas-estructurales-combatir-la-temporalidad-desempleo",
+   "despues": "fuente: https://www.airef.es/wp-content/uploads/2022/01/CORRECION-ENLACES/PDF-Web-Incentivos-a-la-contratacion-3.pdf",
+   "motivo": "Fuente primaria (estudio de la AIReF) en lugar de prensa."
+  },
+  {
+   "propuesta": "pp-11",
+   "criterio": "evidencia",
+   "antes": "y que llega sobre todo a personas con formación media-alta y poco tiempo en paro.",
+   "despues": "y que solo cumple su objetivo en personas con formación media-alta que llevaban poco tiempo en desempleo.",
+   "motivo": "Lectura errónea de la fuente: la AIReF concluye que la tarifa plana cumple su objetivo «SÍ, pero en personas con nivel de formación medio-alto y que llevaban poco tiempo en desempleo», no que llegue sobre todo a ellas."
+  },
+  {
+   "propuesta": "pp-11",
+   "criterio": "evidencia",
+   "antes": "fuente: https://elderecho.com/la-airef-senala-los-incentivos-la-contratacion-no-pueden-sustituir-las-reformas-estructurales-combatir-la-temporalidad-desempleo",
+   "despues": "fuente: https://www.airef.es/wp-content/uploads/2022/01/CORRECION-ENLACES/PDF-Web-Incentivos-a-la-contratacion-3.pdf",
+   "motivo": "Fuente primaria (estudio de la AIReF) en lugar de prensa."
+  },
+  {
+   "propuesta": "pp-11",
+   "criterio": "antecedentes",
+   "antes": "desde 2023 (Real Decreto-ley 13/2022) es de 80 euros mensuales durante 12 meses, prorrogables otros 12 si los rendimientos netos no superan el SMI,",
+   "despues": "el Real Decreto-ley 13/2022 la fijó en 80 euros mensuales para 2023-2025 (desde 2026 la cuantía corresponde a la Ley de Presupuestos) durante 12 meses, prorrogables otros 12 si los rendimientos netos no superan el SMI,",
+   "motivo": "Dato: la disposición transitoria quinta del Real Decreto-ley 13/2022 fija los 80 euros solo para 2023-2025."
+  },
+  {
+   "propuesta": "pp-11",
+   "criterio": "antecedentes",
+   "antes": "fuente: https://elderecho.com/la-airef-senala-los-incentivos-la-contratacion-no-pueden-sustituir-las-reformas-estructurales-combatir-la-temporalidad-desempleo",
+   "despues": "fuente: https://www.airef.es/wp-content/uploads/2022/01/CORRECION-ENLACES/PDF-Web-Incentivos-a-la-contratacion-3.pdf",
+   "motivo": "Fuente primaria (estudio de la AIReF) en lugar de prensa."
+  },
+  {
+   "propuesta": "pp-11",
+   "criterio": "largo_plazo",
+   "antes": "Según la AIReF, el efecto sobre la supervivencia desaparece al terminar el incentivo y parte de las ayudas va a personas que habrían emprendido igualmente.",
+   "despues": "Según la AIReF, el efecto sobre la supervivencia desaparece al terminar el incentivo y solo se observa en personas con formación media-alta y poco tiempo en desempleo.",
+   "motivo": "Afirmación sin respaldo: el estudio de la AIReF no estima qué parte de la tarifa plana va a quien habría emprendido igualmente (menciona el riesgo de peso muerto en general); se sustituye por su conclusión literal."
+  },
+  {
+   "propuesta": "pp-11",
+   "criterio": "largo_plazo",
+   "antes": "fuente: https://elderecho.com/la-airef-senala-los-incentivos-la-contratacion-no-pueden-sustituir-las-reformas-estructurales-combatir-la-temporalidad-desempleo",
+   "despues": "fuente: https://www.airef.es/wp-content/uploads/2022/01/CORRECION-ENLACES/PDF-Web-Incentivos-a-la-contratacion-3.pdf",
+   "motivo": "Fuente primaria (estudio de la AIReF) en lugar de prensa."
+  },
+  {
+   "propuesta": "pp-11",
+   "criterio": "beneficiarios",
+   "antes": "fuente: https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/36537",
+   "despues": "fuente: https://www.boe.es/buscar/doc.php?id=BOE-A-2022-12482",
+   "motivo": "La página de la Seguridad Social no respalda la cifra; los 80 euros constan en el Real Decreto-ley 13/2022."
+  },
+  {
+   "propuesta": "pp-11",
+   "criterio": "beneficiarios (campo resumen)",
+   "antes": "frente a la cuota reducida actual de 80 euros mensuales.",
+   "despues": "frente a la cuota reducida de 80 euros mensuales fijada para 2023-2025.",
+   "motivo": "Precisión temporal (Real Decreto-ley 13/2022, DT 5.ª)."
+  },
+  {
+   "propuesta": "pp-12",
+   "criterio": "legal",
+   "antes": "que solo es vinculante si es desfavorable (Real Decreto 1217/2024, aplicado en la Orden TED/864/2026).",
+   "despues": "que es vinculante cuando es negativo y, si es favorable, en cuanto a las condiciones que impone (art. 2.b de la Ley 15/1980; Real Decreto 1217/2024, aplicados en la Orden TED/864/2026).",
+   "motivo": "Precisión legal: el art. 2.b de la Ley 15/1980 hace vinculantes los informes del CSN cuando son negativos «y, asimismo, en cuanto a las condiciones que establezcan, caso de ser positivos»."
+  },
+  {
+   "propuesta": "pp-12",
+   "criterio": "legal",
+   "antes": "fuente: https://www.moncloa.com/2026/07/17/almaraz-ampliacion-2030-csn-3401004/",
+   "despues": "fuente: https://www.boe.es/eli/es/l/1980/04/22/15/con",
+   "motivo": "Fuente primaria: el informe favorable del CSN de 16-7-2026 consta en la Orden TED/864/2026 (BOE); se sustituye la prensa por la Ley 15/1980."
+  },
+  {
+   "propuesta": "pp-12",
+   "criterio": "evidencia",
+   "antes": "el operador del sistema considera limitada la aportación de Almaraz a la estabilidad de la red,",
+   "despues": "el operador del sistema considera que Almaraz aporta al sistema, aunque de forma limitada en algunos aspectos, y que esa aportación se refuerza en el contexto de incertidumbre actual,",
+   "motivo": "Fidelidad a la fuente: la consideración octava de la Orden TED/864/2026 recoge ambas partes de la opinión del operador; el texto solo recogía la limitación."
+  },
+  {
+   "propuesta": "pp-12",
+   "criterio": "evidencia",
+   "antes": "fuente: https://econpapers.repec.org/RePEc:oup:jeurec:v:20:y:2022:i:3:p:1311-1346",
+   "despues": "fuente: https://academic.oup.com/jeea/article/20/3/1311/6449524",
+   "motivo": "Enlace roto (404 en econpapers); se cita la página del artículo en la revista, cuyo resumen da la cifra de 3.000 a 8.000 M€ anuales."
+  },
+  {
+   "propuesta": "pp-12",
+   "criterio": "internacional",
+   "antes": "fuente: https://econpapers.repec.org/RePEc:oup:jeurec:v:20:y:2022:i:3:p:1311-1346",
+   "despues": "fuente: https://academic.oup.com/jeea/article/20/3/1311/6449524",
+   "motivo": "Enlace roto (404); misma sustitución."
+  },
+  {
+   "propuesta": "pp-12",
+   "criterio": "antecedentes",
+   "antes": "El calendario vigente procede del protocolo de 2019 y del 7.º Plan General de Residuos Radiactivos: Ascó I y Cofrentes en 2030, Ascó II en 2032, Vandellós II y Trillo en 2035.",
+   "despues": "El calendario vigente procede del protocolo de cese ordenado firmado en marzo de 2019 entre Enresa y los propietarios y del 7.º Plan General de Residuos Radiactivos (2023), que prevé el cese de las centrales entre 2027 y 2035. Hay también un precedente en sentido contrario: Garoña estaba parada desde 2012 porque su titular no pidió la renovación, y en 2017 el Gobierno denegó la que pidió después, pese al informe favorable del CSN, por la incertidumbre sobre las inversiones necesarias y su disponibilidad (Orden ETU/754/2017).",
+   "motivo": "Antecedente omitido y fuentes de prensa: Garoña (Orden ETU/754/2017, BOE) es el precedente directo de una prórroga que dependía de la voluntad y las inversiones del titular y no prosperó; el calendario se documenta con la nota oficial del MITECO sobre el 7.º PGRR en lugar de NEI Magazine (403), y se retiran las fechas por central, que solo constaban en esa revista."
+  },
+  {
+   "propuesta": "pp-12",
+   "criterio": "antecedentes",
+   "antes": "valoracion: favorable",
+   "despues": "valoracion: mixta",
+   "motivo": "Con el antecedente de Garoña, la experiencia española es dispar: renovaciones repetidas (Almaraz en 2026, a petición de los propietarios) y una prórroga denegada en 2017 cuando el titular no aseguraba la operación. Además, eliminar el calendario de cierre de todo el parque no se ha intentado antes. Con el mismo criterio que erc-08 (sin precedente del diseño propuesto → «mixta»), no procede «favorable»."
+  },
+  {
+   "propuesta": "pp-12",
+   "criterio": "antecedentes",
+   "antes": "fuente: https://es.euronews.com/my-europe/2026/08/14/el-gobierno-de-espana-prorroga-la-central-nuclear-de-almaraz-hasta-2030-y-aplaza-su-cierre",
+   "despues": "fuente: https://www.boe.es/diario_boe/txt.php?id=BOE-A-2017-9250",
+   "motivo": "Euronews (406, prensa) es redundante con la orden del BOE; se añade la Orden ETU/754/2017."
+  },
+  {
+   "propuesta": "pp-12",
+   "criterio": "antecedentes",
+   "antes": "fuente: https://www.neimagazine.com/news/spains-new-radwaste-plan-supports-nuclear-phase-out-11406788/",
+   "despues": "fuente: https://www.miteco.gob.es/content/dam/miteco/es/prensa/23.12.27_NdP_El%20Gobierno%20aprueba%20el%207%C2%BA%20PGRR.pdf",
+   "motivo": "NEI Magazine devuelve 403 y es prensa sectorial; se sustituye por la nota oficial del MITECO."
+  },
+  {
+   "propuesta": "pp-12",
+   "criterio": "beneficiarios",
+   "antes": "Beneficiaría a los propietarios de las centrales (en Almaraz, Iberdrola, Endesa y Naturgy)",
+   "despues": "Beneficiaría a los propietarios de las centrales (en Almaraz, la titular de la autorización es Centrales Nucleares Almaraz-Trillo, AIE)",
+   "motivo": "Se retira el reparto accionarial, que solo constaba en prensa (Roams); la titular consta en la Orden TED/864/2026."
+  },
+  {
+   "propuesta": "pp-12",
+   "criterio": "beneficiarios",
+   "antes": "fuente: https://roams.es/actualidad/energia/gobierno-almaraz-2030-mantiene-cierre-nuclear-2035/",
+   "despues": "(fuente retirada)",
+   "motivo": "Prensa sin dato necesario tras la corrección."
+  },
+  {
+   "propuesta": "pp-12",
+   "criterio": "beneficiarios (campo resumen)",
+   "antes": "(en Almaraz, Iberdrola 53 %, Endesa 36 % y Naturgy 11 %, según la prensa)",
+   "despues": "(en Almaraz, la agrupación Centrales Nucleares Almaraz-Trillo, AIE, titular de la autorización)",
+   "motivo": "Misma corrección que en el criterio «beneficiarios»."
+  },
+  {
+   "propuesta": "pp-12",
+   "criterio": "largo_plazo",
+   "antes": "fuente: https://www.moncloa.com/2026/07/17/almaraz-ampliacion-2030-csn-3401004/",
+   "despues": "(fuente retirada)",
+   "motivo": "Prensa redundante: el texto se apoya en la Orden TED/864/2026."
+  },
+  {
+   "propuesta": "pp-07",
+   "criterio": "internacional",
+   "antes": "En su informe sobre la alta velocidad, solo la línea Madrid-Barcelona superaba el umbral de unos 9 millones de pasajeros anuales.",
+   "despues": "En su informe sobre la alta velocidad, de las siete líneas terminadas auditadas solo tres transportaban en 2016 más de los 9 millones de pasajeros anuales que toma como referencia, y entre las españolas solo la Madrid-Barcelona.",
+   "motivo": "Precisión: el Tribunal de Cuentas Europeo señala que en 2016 tres líneas superaban los nueve millones (Madrid-Barcelona, Turín-Salerno y LGV Est-Européenne); la frase anterior podía leerse como que solo lo hacía la Madrid-Barcelona."
+  }
+ ],
+ "dudas": [
+  "Comprobación realizada: las 12 citas son literales y de la página indicada (comprobado por página, no solo en el texto completo; verify_quotes: 1394 citas en el repositorio, 243 de pp, 0 no encontradas). La selección de las 12 prioridades coincide con extraccion.json y con lo que destacan el índice, las introducciones de bloque (pp. 12, 28, 38, 52) y los títulos de las medidas. Se descargaron las 117 URL distintas citadas; las que bloquean la descarga automática (FMI, revista JEEA, NRC, Euronews) se leyeron con otro cliente; el enlace de econpapers a Jarvis et al. (404) y el de NEI Magazine (403) se sustituyeron.",
+  "Mismo estándar, «desfavorable»: se probó cada propuesta contra la barra aplicada a otros partidos (bng-01 y erc-04: una sentencia del TC o la Constitución impiden el núcleo de la medida; cc-06: el Derecho de la UE la prohíbe; bng-07 y pnv-08: la medida agrava directamente un desequilibrio que la AIReF cuantifica; bng-12: la evidencia contradice su objetivo). Ninguna de las 12 la alcanza con las fuentes disponibles, por lo que el recuento sigue sin «desfavorable». El motivo de cada caso figura en los puntos siguientes.",
+  "pp-04 (amnistía), encaje legal «mixta»: ninguna norma ni sentencia impide derogar la LO 1/2024 por ley orgánica (la STC 137/2025 y el TJUE, comunicado 112/26, solo avalan la ley vigente). Lo que el marco impide es revertir amnistías ya aplicadas (cosa juzgada; art. 9.3 y 25.1 CE) y el art. 2.2 CP da efecto retroactivo a la ley penal favorable, lo que deja en duda el efecto sobre los casos pendientes. El programa no dice que vaya a revertir amnistías, así que el marco limita la medida pero no la contradice. Una derogación por ley orgánica sin estos problemas recibió «favorable» (bng-11).",
+  "pp-03 (desalojo en 48 horas), «mixta»: la orden judicial que exige el programa cumple el art. 18.2 CE; la STC 32/2019 avaló el plazo de cinco días de la Ley 5/2018 y exige comunicar el caso a los servicios sociales, pero no hay doctrina sobre un plazo de 48 horas ni sobre el derecho a ser oído (art. 24 CE) en ese plazo; el juicio rápido penal ya existe desde la LO 1/2025. Anular el padrón o eximir del IBI exige cambiar la LBRL y el TRLRHL, lo que está al alcance del legislador estatal. No hay contradicción documentada.",
+  "pp-02 (regularizaciones, puntos, cupos), «mixta»: no hay norma de la UE que prohíba las regularizaciones nacionales y el art. 79.5 TFUE reserva a los Estados fijar volúmenes de admisión de trabajadores (este artículo no se añadió como fuente porque EUR-Lex no devolvió el texto para su comprobación). En evidencia, la evaluación de la regularización de 2005 no halla efecto llamada y sí más recaudación, lo que va en contra de prohibirlas, pero los visados por puntos con oferta de empleo tienen evidencia favorable (MAC); la propuesta reúne ambos componentes y el programa no declara que el objetivo de la prohibición sea evitar un efecto llamada. Caso frontera: si se evaluara solo la prohibición de regularizaciones, la evidencia disponible apuntaría a «desfavorable».",
+  "pp-05 (CGPJ), encaje legal «favorable»: el art. 122.3 CE remite a una ley orgánica; la STC 108/1986 avaló la elección parlamentaria sin excluir la judicial, que ya rigió con la LO 1/1980. Se mantiene.",
+  "pp-07 (300.000 M€) y pp-08 (un millón de viviendas), financiación: «desfavorable» exige un coste documentado incompatible con las reglas fiscales. En pp-07 el coste total está cifrado, pero el programa no dice qué parte es pública, por lo que no puede documentarse la incompatibilidad con la senda de gasto neto (3,0 %-3,7 % anual en 2025-2028): «mixta». En pp-08 no hay cifra de gasto público: «no_verificable», como cc-08 y bng-08.",
+  "pp-10 (IRPF), financiación y largo plazo «mixta»: según el Informe de Progreso Anual 2026, la no deflactación aportó un 0,1 % del PIB en 2025 y España la computa para un compromiso del plan fiscal aprobado por el Consejo de la UE; deflactar exige sustituir ese ingreso. El programa dice que lo financiará con la lucha contra el fraude sin cuantificarlo, que es la definición de «mixta» en la rúbrica; ninguna fuente oficial contradice esa vía. En largo plazo no se aplicó el criterio de bng-07/pnv-08 porque la indexación no agrava un desequilibrio cuantificado por la AIReF de forma comparable y la literatura (Immervoll; Banco de España) le atribuye también efectos favorables (evitar subidas de carga no votadas). Caso frontera.",
+  "pp-12 (nucleares), encaje legal «mixta»: suprimir el calendario (protocolo de 2019 y 7.º PGRR) está en manos del Gobierno, pero la renovación la pide el titular y el CSN informa con carácter vinculante si es negativo (Ley 15/1980, art. 2.b). No hay contradicción; sí dependencia de los propietarios (Garoña, 2017).",
+  "pp-11 (cuota cero), «mixta» en evidencia y largo plazo: la AIReF concluye que la tarifa plana cumple su objetivo solo en parte y que su efecto desaparece al terminar; no hay evaluación que muestre que una exención total no lo logra, por lo que no procede «desfavorable».",
+  "Mismo estándar, «favorable»: se rebajaron dos que no cumplían la rúbrica o la regla de la auditoría de coherencia (pp-10 internacional y pp-12 antecedentes; véanse los motivos en «cambios»). Se mantienen las 12 restantes: 7 de encaje legal (pp-01, 05, 06, 07, 09, 10, 11) y 5 de financiación de medidas regulatorias sin coste directo documentado (pp-01, 04, 05, 09, 12), conforme a la nota de la rúbrica y a cómo se valoraron erc-05 y bng-11.",
+  "Recuento final: 12 favorable, 79 mixta, 0 desfavorable, 5 no_verificable (antes 14, 77, 0, 5).",
+  "Fuentes que siguen siendo prensa, sin documento primario localizado, y que el texto atribuye: Euronews (seis regularizaciones y 576.506 en 2005; las cifras de prensa varían); The Objective (rechazo de los recursos contra los indultos); Legal Today/Europa Press (sentencia del TC de octubre de 2026 en el amparo de Bassa, que aún no figura en hj.tribunalconstitucional.es); Ara (recuento de amnistías de Alerta Solidària y deflactaciones de 2008 y 2015 y autonómicas); RTVC/EFE (voto de las CCAA en el CPFF), Ara y El Salto (decaimiento por la disolución); El Independiente (retirada de la Ley del Suelo en 2024); Chequeado (alquileres en Argentina); World Nuclear News (Bélgica). Se recomienda sustituirlas cuando haya documento oficial.",
+  "Prensa sustituida por fuente primaria en esta revisión: TJUE (curia, comunicado 112/26), AIReF (nota de 5-11-2025 y estudio de incentivos de 2020), Fedea (presentación de enero de 2024), informe europeo SWD(2026) 909, STC 26/2025 (BOE), Informe de Progreso Anual 2026 (Hacienda), Ley 15/1980, Orden ETU/754/2017 y nota del MITECO sobre el 7.º PGRR. Se retiraron por no tener fuente primaria y no ser necesarios: las 49.000 viviendas protegidas (El Español), las cifras de Gestha (El Español), el reparto accionarial de Almaraz (Roams) y las fechas de cierre por central (NEI).",
+  "Cifras corregidas que el evaluador atribuía a fuentes que no las contienen: «Real Decreto-ley 5/2026» (la nota de Hacienda no da el instrumento), cuota mínima de autónomos de 206 euros (la página citada es la del régimen general), tráfico un 35 % inferior en autopistas españolas (no está en la nota del Tribunal de Cuentas Europeo) y la remisión del CGPJ «porque ninguna alcanzó los tres quintos». La cuantía de la cuota reducida de autónomos en 2026 no se ha podido verificar en fuente oficial (el Real Decreto-ley 13/2022 fija 80 euros para 2023-2025 y remite después a la Ley de Presupuestos).",
+  "El PDF del programa en pp.es se descargó truncado en el primer intento por tiempo de espera; el fichero catalogado (82 págs., SHA-256 cea8f2a0…) es el que se usó para las citas y no se ha modificado."
+ ]
+}
