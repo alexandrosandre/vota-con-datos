@@ -50,7 +50,7 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
 - [ ] **5. [Yo] Quitar la etiqueta «versión provisional» del paso 1** (9-nov: protocolo v2 con
   propuestas públicas en primera persona de líderes nacionales y regionales, incl. precampaña; 75 posiciones) solo cuando PP, PSOE, Vox,
   Frente Amplio y Podemos tengan posición documentada en al menos la mitad de las 30 afirmaciones
-  (12-nov: PP 15, Vox 8, Podemos 7, FA 5, PSOE 3; búsqueda de propuestas de líderes en curso). Mientras no, el paso 1 no debe ser lo que se promocione.
+  (12-nov, tras la búsqueda de líderes y la auditoría de igual estándar: PP 15, Vox 10, Podemos 8, FA 5, PSOE 3; el PSOE presenta programa el 15-nov). Mientras no, el paso 1 no debe ser lo que se promocione.
 - [x] **6. [Yo] Paso 3: decir a quién elige tu voto y qué hay dentro de cada papeleta.**
   - Composición de las coaliciones explicada en lenguaje claro: p. ej. en Alicante la papeleta
     «Compromís: Front Valencià» (COMPROMIS-EUPV-PODEM-ERPV) incluye a Podemos y a Esquerra Unida, algo
