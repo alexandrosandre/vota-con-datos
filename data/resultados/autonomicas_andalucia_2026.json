@@ -1,0 +1,360 @@
+{
+ "meta": {
+  "eleccion": "Elecciones al Parlamento de Andalucía, 17 de mayo de 2026 (8 circunscripciones provinciales)",
+  "escrutinio": "definitivo: actas de proclamación de las Juntas Electorales Provinciales (incluye CERA)",
+  "sources": [
+   {
+    "id": "boja_jea_andalucia_2026",
+    "description": "Resolución de 2 de junio de 2026, de la Junta Electoral de Andalucía, de publicación de los resultados generales y por circunscripciones (BOJA núm. 108, 8-jun-2026, texto 7541)",
+    "url": "https://www.juntadeandalucia.es/boja/2026/108/BOJA26-108-00091-7541-01_00338776.pdf",
+    "file": "data/sources/resultados/boja/BOJA26-108-00091-7541-01_00338776.pdf",
+    "sha256": "402ca0c986268767ebcb9056c859850053fb6d1aa472b486cee5f02a7733ec6c",
+    "bytes": 2149130
+   }
+  ],
+  "built_by": "pipeline/results_andalucia.py",
+  "notes": [
+   "Solo se extraen el Cuadro I y el Cuadro II (formaciones que obtuvieron escaño). Las sumas por provincia coinciden con la fila TOTAL publicada.",
+   "Granada: votantes 485961 != válidos + nulos 485958 (dato publicado, se conserva)"
+  ],
+  "generado": "2026-11-12"
+ },
+ "circunscripciones": {
+  "04": {
+   "nombre": "Almería",
+   "electores": 484646,
+   "votantes": 305312,
+   "validos": 302997,
+   "votos_candidaturas": 300328,
+   "blancos": 2669,
+   "nulos": 2315,
+   "escanos": 12,
+   "candidaturas": [
+    {
+     "siglas": "PP",
+     "denominacion": "PARTIDO POPULAR",
+     "escanos": 6,
+     "votos": 129506
+    },
+    {
+     "siglas": "PSOE-A",
+     "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL DE ANDALUCÍA",
+     "escanos": 3,
+     "votos": 65738
+    },
+    {
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "escanos": 3,
+     "votos": 70201
+    },
+    {
+     "siglas": "ADELANTE ANDALUCÍA",
+     "denominacion": "ADELANTE ANDALUCIA",
+     "escanos": 0,
+     "votos": 9366
+    },
+    {
+     "siglas": "POR ANDALUCÍA",
+     "denominacion": "POR ANDALUCIA-IZQUIERDA UNIDA-PODEMOS-MOVIMIENTO SUMAR-INICIATIVA DEL PUEBLO ANDALUZ-VERDES EQUO-ALTERNATIVA REPUBLICANA-ALIANZA VERDE",
+     "escanos": 0,
+     "votos": 11409
+    }
+   ]
+  },
+  "11": {
+   "nombre": "Cádiz",
+   "electores": 1003943,
+   "votantes": 606017,
+   "validos": 600974,
+   "votos_candidaturas": 594914,
+   "blancos": 6060,
+   "nulos": 5043,
+   "escanos": 15,
+   "candidaturas": [
+    {
+     "siglas": "PP",
+     "denominacion": "PARTIDO POPULAR",
+     "escanos": 7,
+     "votos": 233929
+    },
+    {
+     "siglas": "PSOE-A",
+     "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL DE ANDALUCÍA",
+     "escanos": 3,
+     "votos": 121417
+    },
+    {
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "escanos": 2,
+     "votos": 78307
+    },
+    {
+     "siglas": "ADELANTE ANDALUCÍA",
+     "denominacion": "ADELANTE ANDALUCIA",
+     "escanos": 2,
+     "votos": 86227
+    },
+    {
+     "siglas": "POR ANDALUCÍA",
+     "denominacion": "POR ANDALUCIA-IZQUIERDA UNIDA-PODEMOS-MOVIMIENTO SUMAR-INICIATIVA DEL PUEBLO ANDALUZ-VERDES EQUO-ALTERNATIVA REPUBLICANA-ALIANZA VERDE",
+     "escanos": 1,
+     "votos": 31827
+    }
+   ]
+  },
+  "14": {
+   "nombre": "Córdoba",
+   "electores": 627115,
+   "votantes": 433430,
+   "validos": 427632,
+   "votos_candidaturas": 423143,
+   "blancos": 4489,
+   "nulos": 5798,
+   "escanos": 12,
+   "candidaturas": [
+    {
+     "siglas": "PP",
+     "denominacion": "PARTIDO POPULAR",
+     "escanos": 6,
+     "votos": 184803
+    },
+    {
+     "siglas": "PSOE-A",
+     "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL DE ANDALUCÍA",
+     "escanos": 3,
+     "votos": 95241
+    },
+    {
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "escanos": 1,
+     "votos": 53997
+    },
+    {
+     "siglas": "ADELANTE ANDALUCÍA",
+     "denominacion": "ADELANTE ANDALUCIA",
+     "escanos": 1,
+     "votos": 35682
+    },
+    {
+     "siglas": "POR ANDALUCÍA",
+     "denominacion": "POR ANDALUCIA-IZQUIERDA UNIDA-PODEMOS-MOVIMIENTO SUMAR-INICIATIVA DEL PUEBLO ANDALUZ-VERDES EQUO-ALTERNATIVA REPUBLICANA-ALIANZA VERDE",
+     "escanos": 1,
+     "votos": 37636
+    }
+   ]
+  },
+  "18": {
+   "nombre": "Granada",
+   "electores": 726521,
+   "votantes": 485961,
+   "validos": 480675,
+   "votos_candidaturas": 476342,
+   "blancos": 4333,
+   "nulos": 5283,
+   "escanos": 13,
+   "candidaturas": [
+    {
+     "siglas": "PP",
+     "denominacion": "PARTIDO POPULAR",
+     "escanos": 6,
+     "votos": 203701
+    },
+    {
+     "siglas": "PSOE-A",
+     "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL DE ANDALUCÍA",
+     "escanos": 3,
+     "votos": 116786
+    },
+    {
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "escanos": 2,
+     "votos": 72553
+    },
+    {
+     "siglas": "ADELANTE ANDALUCÍA",
+     "denominacion": "ADELANTE ANDALUCIA",
+     "escanos": 1,
+     "votos": 32811
+    },
+    {
+     "siglas": "POR ANDALUCÍA",
+     "denominacion": "POR ANDALUCIA-IZQUIERDA UNIDA-PODEMOS-MOVIMIENTO SUMAR-INICIATIVA DEL PUEBLO ANDALUZ-VERDES EQUO-ALTERNATIVA REPUBLICANA-ALIANZA VERDE",
+     "escanos": 1,
+     "votos": 31015
+    }
+   ]
+  },
+  "21": {
+   "nombre": "Huelva",
+   "electores": 398836,
+   "votantes": 248844,
+   "validos": 245371,
+   "votos_candidaturas": 242889,
+   "blancos": 2482,
+   "nulos": 3473,
+   "escanos": 11,
+   "candidaturas": [
+    {
+     "siglas": "PP",
+     "denominacion": "PARTIDO POPULAR",
+     "escanos": 5,
+     "votos": 100140
+    },
+    {
+     "siglas": "PSOE-A",
+     "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL DE ANDALUCÍA",
+     "escanos": 3,
+     "votos": 61795
+    },
+    {
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "escanos": 2,
+     "votos": 36466
+    },
+    {
+     "siglas": "ADELANTE ANDALUCÍA",
+     "denominacion": "ADELANTE ANDALUCIA",
+     "escanos": 1,
+     "votos": 19669
+    },
+    {
+     "siglas": "POR ANDALUCÍA",
+     "denominacion": "POR ANDALUCIA-IZQUIERDA UNIDA-PODEMOS-MOVIMIENTO SUMAR-INICIATIVA DEL PUEBLO ANDALUZ-VERDES EQUO-ALTERNATIVA REPUBLICANA-ALIANZA VERDE",
+     "escanos": 0,
+     "votos": 13690
+    }
+   ]
+  },
+  "23": {
+   "nombre": "Jaén",
+   "electores": 500805,
+   "votantes": 344783,
+   "validos": 340174,
+   "votos_candidaturas": 337665,
+   "blancos": 2509,
+   "nulos": 4609,
+   "escanos": 11,
+   "candidaturas": [
+    {
+     "siglas": "PP",
+     "denominacion": "PARTIDO POPULAR",
+     "escanos": 6,
+     "votos": 148600
+    },
+    {
+     "siglas": "PSOE-A",
+     "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL DE ANDALUCÍA",
+     "escanos": 4,
+     "votos": 92882
+    },
+    {
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "escanos": 1,
+     "votos": 46165
+    },
+    {
+     "siglas": "ADELANTE ANDALUCÍA",
+     "denominacion": "ADELANTE ANDALUCIA",
+     "escanos": 0,
+     "votos": 14864
+    },
+    {
+     "siglas": "POR ANDALUCÍA",
+     "denominacion": "POR ANDALUCIA-IZQUIERDA UNIDA-PODEMOS-MOVIMIENTO SUMAR-INICIATIVA DEL PUEBLO ANDALUZ-VERDES EQUO-ALTERNATIVA REPUBLICANA-ALIANZA VERDE",
+     "escanos": 0,
+     "votos": 17379
+    }
+   ]
+  },
+  "29": {
+   "nombre": "Málaga",
+   "electores": 1213384,
+   "votantes": 762107,
+   "validos": 754796,
+   "votos_candidaturas": 747706,
+   "blancos": 7090,
+   "nulos": 7311,
+   "escanos": 17,
+   "candidaturas": [
+    {
+     "siglas": "PP",
+     "denominacion": "PARTIDO POPULAR",
+     "escanos": 9,
+     "votos": 332319
+    },
+    {
+     "siglas": "PSOE-A",
+     "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL DE ANDALUCÍA",
+     "escanos": 4,
+     "votos": 151277
+    },
+    {
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "escanos": 2,
+     "votos": 109913
+    },
+    {
+     "siglas": "ADELANTE ANDALUCÍA",
+     "denominacion": "ADELANTE ANDALUCIA",
+     "escanos": 1,
+     "votos": 70287
+    },
+    {
+     "siglas": "POR ANDALUCÍA",
+     "denominacion": "POR ANDALUCIA-IZQUIERDA UNIDA-PODEMOS-MOVIMIENTO SUMAR-INICIATIVA DEL PUEBLO ANDALUZ-VERDES EQUO-ALTERNATIVA REPUBLICANA-ALIANZA VERDE",
+     "escanos": 1,
+     "votos": 45160
+    }
+   ]
+  },
+  "41": {
+   "nombre": "Sevilla",
+   "electores": 1555621,
+   "votantes": 1057960,
+   "validos": 1045611,
+   "votos_candidaturas": 1034549,
+   "blancos": 11062,
+   "nulos": 12349,
+   "escanos": 18,
+   "candidaturas": [
+    {
+     "siglas": "PP",
+     "denominacion": "PARTIDO POPULAR",
+     "escanos": 8,
+     "votos": 411730
+    },
+    {
+     "siglas": "PSOE-A",
+     "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL DE ANDALUCÍA",
+     "escanos": 5,
+     "votos": 250448
+    },
+    {
+     "siglas": "VOX",
+     "denominacion": "VOX",
+     "escanos": 2,
+     "votos": 112691
+    },
+    {
+     "siglas": "ADELANTE ANDALUCÍA",
+     "denominacion": "ADELANTE ANDALUCIA",
+     "escanos": 2,
+     "votos": 134654
+    },
+    {
+     "siglas": "POR ANDALUCÍA",
+     "denominacion": "POR ANDALUCIA-IZQUIERDA UNIDA-PODEMOS-MOVIMIENTO SUMAR-INICIATIVA DEL PUEBLO ANDALUZ-VERDES EQUO-ALTERNATIVA REPUBLICANA-ALIANZA VERDE",
+     "escanos": 1,
+     "votos": 78097
+    }
+   ]
+  }
+ }
+}

@@ -80,6 +80,29 @@ class TestEscenarios(unittest.TestCase):
             comprobadas += 1
         self.assertGreater(comprobadas, 20)
 
+    def test_adelante_andalucia_perfil_autonomicas(self):
+        # Base 2023: solo Cádiz (único sitio donde concurrió). Encuestas que la recogen: las 8 provincias,
+        # proporcional a su cuota en las autonómicas andaluzas de 2026. Encuestas que no: sin estimación.
+        and26 = json.loads((ROOT / "data/resultados/autonomicas_andalucia_2026.json").read_text())["circunscripciones"]
+        enc = {e["id"]: e for e in json.loads((ROOT / "data/encuestas/encuestas.json").read_text())["encuestas"]}
+        aa = {c["ine"]: k["id"] for c in F2["circunscripciones"] for k in c["candidaturas"] if k["partido"] == "adelante_andalucia"}
+        self.assertEqual(sorted(aa), sorted(and26))
+        self.assertEqual([i for i in aa if aa[i] in BASE["cuotas"][i]], ["11"])
+        perfil = {i: sum(k["votos"] for k in r["candidaturas"] if k["siglas"] == "ADELANTE ANDALUCÍA") / r["validos"]
+                  for i, r in and26.items()}
+        con = 0
+        for esc in F2["escenarios"]:
+            if esc["id"] not in enc:
+                continue
+            labs = {p["partido"] for p in enc[esc["id"]]["estimacion_voto"]}
+            if any(build_fase2.ETIQUETAS.get(lab) == "adelante_andalucia" for lab in labs):
+                r = [esc["cuotas"][i][aa[i]] / perfil[i] for i in aa]
+                self.assertLess(max(r) / min(r), 1.1, esc["id"])  # solo difiere por la renormalización
+                con += 1
+            else:
+                self.assertTrue(all(aa[i] in esc["sin_base"][i] for i in aa), esc["id"])
+        self.assertGreater(con, 0)
+
     def test_solo_candidaturas_del_boe(self):
         boe = json.loads((ROOT / "data/boe/candidaturas_congreso.json").read_text())["circunscripciones"]
         for c in F2["circunscripciones"]:

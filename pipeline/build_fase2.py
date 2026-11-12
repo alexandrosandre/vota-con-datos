@@ -5,6 +5,7 @@ Entradas (todas verificadas por sus propios scripts de validación):
   data/boe/candidaturas_congreso.json   listas proclamadas 29N (BOE)
   data/resultados/generales_2023.json   resultados oficiales 23J por circunscripción
   data/resultados/europeas_2024.json    resultados oficiales europeas por provincia
+  data/resultados/autonomicas_andalucia_2026.json  autonómicas andaluzas 17-may-2026 (BOJA)
   data/encuestas/encuestas.json         últimas encuestas (fuente primaria)
   data/mapeo/candidaturas_2026.json     reglas candidatura 2026 -> partido y base 2023
 
@@ -15,7 +16,8 @@ Modelo (ver docs/METODOLOGIA.md):
     2024 en esa provincia. Candidaturas sin predecesora: "sin base".
   * Escenarios de encuesta: swing proporcional. cuota_prov = cuota_base_prov * (encuesta_nac /
     base_nac). Partidos sin base 2023 pero con dato en la encuesta: perfil provincial de las
-    europeas 2024. Partidos que la encuesta no recoge: conservan su cuota base. Se renormaliza
+    europeas 2024 (SALF) o de las autonómicas andaluzas de 2026 (Adelante Andalucía, también en Cádiz,
+    donde sí tiene base 2023). Partidos que la encuesta no recoge: conservan su cuota base. Se renormaliza
     para que candidaturas + otros + blanco = 100 %.
 
 Uso: python3 -I pipeline/build_fase2.py
@@ -39,7 +41,8 @@ REPORT = D / "build" / "fase2_validacion.txt"
 # Etiquetas de cada encuesta -> clave de regla (partido de la fase 1 o grupo).
 # Ver data/encuestas/NOTAS.md. Las etiquetas no listadas (otros, blanco, CUP — que no concurre)
 # se ignoran. UPN no se usa: concurre en coalición con el PP y hereda el swing del PP.
-# Adelante Andalucía no se usa: en 2023 solo concurrió en una provincia (sin referencia nacional).
+# Adelante Andalucía: en 2023 solo concurrió en Cádiz (sin referencia nacional para el swing); su cifra
+# nacional se reparte con el perfil provincial de las autonómicas andaluzas de 2026 (PERFIL_AUTONOMICAS).
 ETIQUETAS = {
     "PSOE": "bloque_psoe", "PP": "pp", "Partido Popular (PP)": "pp", "VOX": "vox", "Vox": "vox",
     "SUMAR / Frente Amplio": "bloque_sumar", "Frente Amplio": "bloque_fa", "Sumar": "bloque_sumar",
@@ -56,11 +59,20 @@ ETIQUETAS = {
     # CIS 3584 (preelectoral): da UPC y Ara Més por separado de "Frente Amplio" (ver BLOQUES).
     "EH-Bildu": "eh_bildu", "Compromís: Front Valencià": "compromis", "UPC": "upc",
     "Ara Més-Front Ampli": "ara_mes_fa", "CC-Municipalistas Primero Canarias": "cc",
+    "Adelante Andalucía": "adelante_andalucia", "Adelante Andalucía (AA)": "adelante_andalucia",
+    "A.Adelante": "adelante_andalucia", "AA": "adelante_andalucia", "Adelante And.": "adelante_andalucia",
 }
-IGNORADAS = {"UPN", "Otros partidos", "En blanco", "Otro", "Otro + Blanco", "Cup", "Adelante Andalucía (AA)", "A.Adelante", "AA",
-             "Adelante Andalucía", "Adelante And.", "PP–UPN (Navarra)", "Otros", "Otros*", "Otras candidaturas",
+IGNORADAS = {"UPN", "Otros partidos", "En blanco", "Otro", "Otro + Blanco", "Cup",
+             "PP–UPN (Navarra)", "Otros", "Otros*", "Otras candidaturas",
              "Otros+Blanco", "Regionales**", "CHA", "Més per Mallorca", "Teruel Existe"}
 SWING_DE = {"upn": "pp"}
+# Partidos de ámbito autonómico cuya cifra nacional de la encuesta se reparte por provincias según su
+# voto en las últimas autonómicas (fichero de resultados, siglas en ese fichero). Se usa en todas las
+# provincias donde concurren, aunque tengan base 2023 en alguna (AA en Cádiz): su base 2023 no sirve
+# de referencia nacional para el swing. Si la encuesta no los recoge, quedan sin estimación en todas
+# las provincias (también en Cádiz: su 1,4 % de 2023 no es una estimación para 2026 y, en la media,
+# rebajaría su cuota solo allí).
+PERFIL_AUTONOMICAS = {"adelante_andalucia": ("resultados/autonomicas_andalucia_2026.json", ["ADELANTE ANDALUCÍA"])}
 # La etiqueta genérica "Sumar" de las encuestas corresponde al espacio que en 2023 fue Sumar sin
 # Podemos (que ahora se mide aparte): Frente Amplio y sus marcas, Compromís (incluye EUPV) y la
 # parte de UPC en Canarias. Si la encuesta da Compromís/Front Valencià por separado (Sigma Dos),
@@ -134,6 +146,28 @@ def slug(s):
 
 def load(p):
     return json.loads((D / p).read_text())
+
+
+def horquillas_provinciales(dr, prov_esc):
+    """Compara los escaños por provincia con las horquillas provinciales publicadas (CIS 3584): celdas
+    partido × provincia dentro de la horquilla (las celdas omitidas valen [0-0]). Cada etiqueta cuenta
+    sus miembros (bloques sin los que la encuesta da aparte; UPN-PP cuenta como PP)."""
+    cols = dr["etiquetas_columnas"]
+    en_poll = {ETIQUETAS[lab] for lab in cols}
+    dentro, fuera = 0, []
+    for c in dr["circunscripciones"]:
+        rng = {x["partido"]: (x["min"], x["max"]) for x in c["escanos"]}
+        for lab in cols:
+            k = ETIQUETAS[lab]
+            miembros = [m for m in BLOQUES.get(k, [k]) if m == k or m not in en_poll]
+            miembros += [m for m, d in SWING_DE.items() if d in miembros]
+            v = sum(prov_esc.get((c["ine"], m), 0) for m in miembros)
+            lo, hi = rng.get(lab, (0, 0))
+            if lo <= v <= hi:
+                dentro += 1
+            else:
+                fuera.append(f"{c['circunscripcion']} {lab} {v} [{lo}-{hi}]")
+    return f"dentro de la horquilla provincial publicada: {dentro} de {dentro + len(fuera)} celdas; fuera: " + "; ".join(fuera)
 
 
 def main():
@@ -294,6 +328,25 @@ def main():
                 base_nac[clave_de[(ine, cid)]] += v
     base_nac = {k: v / total_validos for k, v in base_nac.items()}
 
+    # Perfil autonómico (ver PERFIL_AUTONOMICAS): cuota del partido en cada provincia en las autonómicas
+    # (votos / válidos). La referencia nacional se calcula sobre los válidos de 2023 de cada provincia y
+    # el total de España, para que la suma nacional proyectada sea la cifra de la encuesta.
+    def perfil_autonomicas(clave_r):
+        if clave_r not in PERFIL_AUTONOMICAS:
+            return None
+        fichero, siglas = PERFIL_AUTONOMICAS[clave_r]
+        res = load(fichero)["circunscripciones"]
+        sh = {}
+        for c in circs:
+            ine = c["ine"]
+            if ine not in res or not any(clave_de[(ine, k["id"])] == clave_r for k in c["candidaturas"]):
+                continue
+            sh[ine] = sum(k["votos"] for k in res[ine]["candidaturas"] if k["siglas"] in siglas) / res[ine]["validos"]
+        return sh, sum(v * validos[ine] for ine, v in sh.items()) / total_validos
+
+    def perfil(clave_r):
+        return perfil_autonomicas(clave_r) or perfil_eu(clave_r)
+
     # Perfil europeas para partidos sin base (solo SALF en la práctica)
     def perfil_eu(clave_r):
         etiquetas = {"salf": ['AGRUPACIÓN DE ELECTORES "SE ACABÓ LA FIESTA"']}.get(clave_r)
@@ -323,6 +376,7 @@ def main():
     }]
 
     veda = en_veda()
+    perfiles = {}  # clave -> perfil provincial (autonómicas o europeas), calculado una vez
 
     def proyectar(eid):
         """Cuotas por provincia de una encuesta nacional: cada partido sube o baja en cada provincia
@@ -344,6 +398,8 @@ def main():
         # Factor de swing por clave (los bloques comparten un mismo factor)
         factor = {}
         for kp, val in poll.items():
+            if kp in PERFIL_AUTONOMICAS:  # se reparte con su perfil, no con swing
+                continue
             # Un bloque no incluye a los miembros que la encuesta da por separado (CIS 3584: UPC, Ara Més).
             miembros = [m for m in BLOQUES.get(kp, [kp]) if m == kp or m not in poll]
             ref = sum(base_nac.get(m, 0) for m in miembros)
@@ -360,17 +416,21 @@ def main():
                 cl = clave_de[(ine, k["id"])]
                 cl_sw = SWING_DE.get(cl, cl)
                 b = base[ine].get(k["id"])
-                if b is not None:
-                    s = b / validos[ine]
-                    if cl_sw in factor:
-                        s *= factor[cl_sw]
-                    q[k["id"]] = s
-                elif cl in poll:
-                    pf = perfil_eu(cl)
+                if cl in PERFIL_AUTONOMICAS and cl not in poll:
+                    sbi.append(k["id"])
+                elif cl in poll and (b is None or cl in PERFIL_AUTONOMICAS):
+                    if cl not in perfiles:
+                        perfiles[cl] = perfil(cl)
+                    pf = perfiles[cl]
                     if pf and ine in pf[0]:
                         q[k["id"]] = pf[0][ine] * poll[cl] / pf[1]
                     else:
                         sbi.append(k["id"])
+                elif b is not None:
+                    s = b / validos[ine]
+                    if cl_sw in factor:
+                        s *= factor[cl_sw]
+                    q[k["id"]] = s
                 else:
                     sbi.append(k["id"])
             q["_otros"] = base[ine]["_otros"] / validos[ine]
@@ -474,7 +534,9 @@ def main():
                     {"url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742", "titulo": "RD 806/2026 (escaños)"}],
             "veda_encuestas": {"activa": veda, "inicio": VEDA_INICIO.isoformat(), "fin": VEDA_FIN.isoformat()},
             "resultados": [{"url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-18907", "titulo": "Resultados 2023 (JEC)"},
-                           {"url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-13092", "titulo": "Resultados europeas 2024 (JEC)"}],
+                           {"url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-13092", "titulo": "Resultados europeas 2024 (JEC)"},
+                           {"url": "https://www.juntadeandalucia.es/boja/2026/108/BOJA26-108-00091-7541-01_00338776.pdf",
+                            "titulo": "Resultados autonómicas andaluzas 2026 (Junta Electoral de Andalucía, BOJA núm. 108)"}],
         },
         "circunscripciones": circs,
         "escenarios": escenarios,
@@ -490,6 +552,7 @@ def main():
     rep.append(f"Circunscripciones: {len(circs)}; escaños: {sum(c['escanos'] for c in circs)}; candidaturas: {sum(len(c['candidaturas']) for c in circs)}")
     for esc in escenarios:
         tot_esc = defaultdict(int)
+        prov_esc = defaultdict(int)  # (ine, clave) -> escaños
         for c in circs:
             q = esc["cuotas"][c["ine"]]
             ids = [k["id"] for k in c["candidaturas"] if k["id"] in q]
@@ -497,6 +560,7 @@ def main():
             s = dhondt(v, c["escanos"], c["validos_ref"])
             for i, n in zip(ids, s):
                 tot_esc[clave_de[(c["ine"], i)]] += n
+                prov_esc[(c["ine"], clave_de[(c["ine"], i)])] += n
             suma = sum(q.values())
             assert abs(suma - 1) < 1e-6, (esc["id"], c["ine"], suma)
         assert sum(tot_esc.values()) == 350, esc["id"]
@@ -505,6 +569,9 @@ def main():
         if esc["id"] in enc:
             pe = enc[esc["id"]].get("proyeccion_escanos")
             rep.append(f"  publicado por la encuesta: {json.dumps(pe, ensure_ascii=False)[:400]}")
+            dr = enc[esc["id"]].get("desglose_regional")
+            if dr and dr.get("nivel") == "provincia" and all(lab in ETIQUETAS for lab in dr.get("etiquetas_columnas") or [None]):
+                rep.append("  " + horquillas_provinciales(dr, prov_esc))
     rep.append("\nCuota base nacional por clave: " + ", ".join(f"{k} {v*100:.2f}%" for k, v in sorted(base_nac.items(), key=lambda kv: -kv[1])[:25]))
     rep.append("\nAvisos:\n" + "\n".join(log))
     REPORT.parent.mkdir(parents=True, exist_ok=True)

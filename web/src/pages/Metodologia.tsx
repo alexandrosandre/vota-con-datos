@@ -80,7 +80,8 @@ export function Metodologia() {
             </li>
             <li>
               <strong>Resultados de 2023 y de las europeas de 2024:</strong> recuento oficial (Junta Electoral Central, en el BOE, y ficheros del
-              Ministerio del Interior).
+              Ministerio del Interior). Para Adelante Andalucía, también las elecciones andaluzas de mayo de 2026 (Junta Electoral de
+              Andalucía, en el BOJA).
             </li>
             <li>
               <strong>Encuestas:</strong> la publicación original de la empresa que la hace o del medio que la encarga, con su ficha técnica
@@ -210,7 +211,8 @@ export function Metodologia() {
               <br />
               <strong>Trasladar una encuesta a tu provincia:</strong> si un partido tiene en la encuesta un 10 % más de voto que en 2023 en toda
               España (por ejemplo, pasa del 20 % al 22 %), le damos un 10 % más de voto en cada provincia. Los partidos que la encuesta no
-              recoge conservan su voto de 2023. Si una encuesta no da Compromís por separado, su cifra de «Frente Amplio» se toma como la de todo
+              recoge conservan su voto de 2023. Adelante Andalucía, que en 2023 solo se presentó en Cádiz, reparte su cifra de la encuesta
+              entre las provincias andaluzas según el voto que sacó en cada una en las elecciones andaluzas de mayo de 2026. Si una encuesta no da Compromís por separado, su cifra de «Frente Amplio» se toma como la de todo
               ese espacio (Frente Amplio y los partidos que van con él en algunas comunidades, Compromís incluido).
               <br />
               <strong>Resultados de 2023:</strong> el voto real de 2023 en tu provincia. Frente Amplio y Podemos, que en 2023 iban juntos en
@@ -250,7 +252,7 @@ export function Metodologia() {
           </ol>
           <p>
             Comprobación: cuando una empresa publica su propio reparto de escaños, lo comparamos con el nuestro. Por ejemplo, con la
-            macroencuesta del CIS, nuestro reparto cae dentro de la horquilla del CIS en 714 de 728 casos (cada partido en cada provincia). Las
+            macroencuesta del CIS, nuestro reparto cae dentro de la horquilla del CIS en 716 de 728 casos (cada partido en cada provincia). Las
             diferencias vienen de trasladar la encuesta nacional a cada provincia (<a href={gh('data/build/fase2_validacion.txt')}>informe</a>).
           </p>
 

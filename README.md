@@ -17,7 +17,8 @@ y si su voto puede ayudar a lograr un escaño en su provincia.
 ## Principios
 
 * **Solo fuentes primarias**: BOE (RD 806/2026, BOE-A-2026-23103 y su corrección BOE-A-2026-23383),
-  Ministerio del Interior/JEC (resultados 2023 y europeas 2024), publicaciones originales de las
+  Ministerio del Interior/JEC (resultados 2023 y europeas 2024), Junta Electoral de Andalucía (BOJA,
+  autonómicas 2026), publicaciones originales de las
   encuestas, programas oficiales descargados de la web de cada partido (identificados por SHA-256).
 * **Nada se teclea a mano**: todo se extrae con scripts de `pipeline/` y se valida
   automáticamente en cada publicación (GitHub Actions).

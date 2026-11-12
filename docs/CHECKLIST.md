@@ -109,7 +109,7 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   licencia libre, servidos desde la web, con página de créditos.
 - [x] **11c. [Yo] Ampliar la media con más empresas** — 12-nov: 14 empresas en la media (CIS incluido); SW Demoscopia y SocioMétrica fuera de la media por no tener publicación original verificable o fechas de campo. (NC Report, DYM, Opina 360, Target Point,
   Hamalgama, Simple Lógica, Cluster17, Ipsos…), siempre desde su publicación original.
-- [ ] **11d. [Yo] Adelante Andalucía en los escenarios de encuesta**: hoy no se proyecta (en 2023 solo se presentó en Cádiz; sin perfil provincial), aunque el CIS le da 1–2 escaños en Cádiz, Málaga y Sevilla. Buscar una base provincial defendible (p. ej. autonómicas andaluzas) y documentarla.
+- [x] **11d. [Yo] Adelante Andalucía en los escenarios de encuesta** — 12-nov: perfil provincial de las autonómicas andaluzas del 17-may-2026 (BOJA 108); 3 escaños en la media, dentro de las horquillas del CIS.: hoy no se proyecta (en 2023 solo se presentó en Cádiz; sin perfil provincial), aunque el CIS le da 1–2 escaños en Cádiz, Málaga y Sevilla. Buscar una base provincial defendible (p. ej. autonómicas andaluzas) y documentarla.
 - [ ] **12. [Yo] Compromisos de campaña desde el 13-nov** (inicio de campaña), sobre todo para EH
   Bildu, PNV, PSC, UPN-PP y Adelante Andalucía, que hoy tienen cero posiciones en el paso 1.
 - [x] **13. [Yo] Resolver las dudas abiertas de los revisores** (detalle en

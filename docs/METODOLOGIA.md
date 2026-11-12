@@ -35,10 +35,23 @@ base_nac`. La etiqueta genérica "Sumar" de las encuestas se aplica como bloque 
 Ara Més-FA, Compromís y UPC (y "PSOE" a PSOE + PSC), con un único factor; si la encuesta no da
 Compromís por separado, su "Frente Amplio" se interpreta igualmente como ese bloque completo. Partidos sin base 2023 pero
 con dato en la encuesta (SALF): perfil provincial de las europeas de 2024. Partidos que la encuesta
-no recoge: conservan su cuota base. UPN-PP sigue el factor del PP. Se renormaliza a 100 % con el
+no recoge: conservan su cuota base.
+
+**Adelante Andalucía: perfil de las autonómicas andaluzas de 2026.** En 2023 solo concurrió en Cádiz
+(1,4 %), así que no tiene referencia nacional para el swing; el 29-N concurre en las 8 provincias
+andaluzas. Su cifra nacional de cada encuesta se reparte según su cuota en cada provincia en las
+elecciones al Parlamento de Andalucía del 17-may-2026 (Junta Electoral de Andalucía, BOJA núm. 108,
+8-jun-2026; `data/resultados/autonomicas_andalucia_2026.json`, de `pipeline/results_andalucia.py`):
+`cuota_prov = cuota_aut_prov × encuesta_nac / ref`, con `ref = Σ cuota_aut_prov × válidos_2023_prov /
+válidos_2023_España`, de modo que la suma nacional proyectada es la de la encuesta (antes de
+renormalizar). Se usa en las 8 provincias, también en Cádiz (`PERFIL_AUTONOMICAS` en
+`build_fase2.py`). Si la encuesta no la recoge, queda *sin base* en todas (también en Cádiz: su
+1,4 % de 2023 no es una estimación para 2026 y en la media rebajaría su cuota solo allí). El
+escenario de 2023 no cambia. Se prefiere a las autonómicas de 2022 (concurría como Adelante
+Andalucía-Andalucistas, 4,6 %) por ser reciente y con la misma marca. UPN-PP sigue el factor del PP. Se renormaliza a 100 % con el
 voto en blanco de 2023 de la provincia. El informe `data/build/fase2_validacion.txt` compara los
 escaños nacionales resultantes con los publicados por cada encuesta cuando los publica (con el CIS
-3584, nuestro reparto cae dentro de su horquilla en 714 de 728 casos partido × provincia). Un bloque no incluye a los miembros que la encuesta da por separado: el
+3584, nuestro reparto cae dentro de su horquilla en 716 de 728 casos partido × provincia). Un bloque no incluye a los miembros que la encuesta da por separado: el
 CIS 3584 publica UPC y Ara Més-Front Ampli aparte, así que su "Frente Amplio" se aplica solo a
 Frente Amplio (y "ERC-Podemos" al factor de ERC).
 
@@ -47,10 +60,12 @@ publica estimación de voto por provincia en los PDF del avance, solo horquillas
 (percentiles 5–95) en las 52 circunscripciones, guardadas en `desglose_regional`. El Excel que
 anuncia con la estimación por provincia devolvía HTTP 410 el 12-nov. El modelo necesita cuotas
 de voto (para D'Hondt y la incertidumbre), y unas horquillas de escaños no permiten deducirlas
-sin inventar datos. Comprobación: la proyección cae dentro de la horquilla del CIS en 714 de 728
-celdas partido × provincia (42 de 52 provincias enteras). Las diferencias son Adelante Andalucía,
-que no se proyecta (0 frente a 1–2 en Cádiz, Málaga y Sevilla), algo más de Vox (Madrid, Murcia,
-Asturias, Zaragoza), menos Frente Amplio en Madrid y Zaragoza, y Ceuta y Santa Cruz de Tenerife.
+sin inventar datos. Comprobación (en `fase2_validacion.txt`): la proyección cae dentro de la horquilla del CIS en
+716 de 728 celdas partido × provincia. Adelante Andalucía cae dentro en todas (1 en Cádiz, Málaga y
+Sevilla; 0 en Córdoba, horquilla 0–1); antes de usar el perfil autonómico eran 714 (0 frente a 1–2
+en esas tres). Las diferencias son algo más de Vox (Madrid, Murcia, Asturias, Zaragoza), menos
+Frente Amplio en Madrid y Zaragoza, un PP menos en Málaga (3 frente a 4, el escaño que gana
+Adelante), Compromís en Valencia, y Ceuta y Santa Cruz de Tenerife.
 Si el CIS publica el Excel con estimación provincial, convendrá revisarlo.
 
 **Incertidumbre**: 4.000 simulaciones con error log-normal independiente por candidatura,
