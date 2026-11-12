@@ -54,6 +54,10 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   independiente y auditoría de coherencia con los programas ya analizados.
   12-nov noche: publicados con revisión independiente FA, Vox, Junts, EH Bildu, Podemos, PSOE, PSC y UPN-PP;
   pendientes Compromís, Ara Més-FA y UPC, y la auditoría de coherencia entre todos (incl. recuento de «veces» de Vox).
+- [x] **4b-fin.** 12-nov noche: los 18 partidos tienen análisis en el paso 2 (7 por programa, 11 por compromisos),
+  con auditoría de coherencia conjunta (data/fase3/coherencia_2026-11-12b.md).
+- [ ] **4c. [Yo] Compromisos de líderes fuera del programa** para los 7 partidos con programa (PP, ERC, BNG,
+  PNV, CC, SALF, Adelante Andalucía): hasta 4 por partido, sección aparte en Contrasta. En curso 12-nov.
 - [ ] **5. [Yo] Quitar la etiqueta «versión provisional» del paso 1** (9-nov: protocolo v2 con
   propuestas públicas en primera persona de líderes nacionales y regionales, incl. precampaña; 75 posiciones) solo cuando PP, PSOE, Vox,
   Frente Amplio y Podemos tengan posición documentada en al menos la mitad de las 30 afirmaciones
