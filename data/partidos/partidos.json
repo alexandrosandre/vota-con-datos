@@ -101,20 +101,35 @@
       "escanos_2023_nota": "137 escaños del PP en 2023; UPN (1) se contabiliza aparte (entrada upn).",
       "proyeccion_motivo": "Escaños en el Congreso de la XV legislatura (elegido el 23-J 2023).",
       "programa": {
-        "estado": "no_publicado",
-        "url": null,
-        "fecha": null,
-        "titulo": null,
-        "paginas": null,
-        "sha256": null,
-        "fichero": null,
-        "texto": null,
-        "checked_at": "2026-11-10T09:50:00+01:00",
+        "estado": "publicado",
+        "url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+        "fecha": "2026-11-10",
+        "fecha_fuente": "Anuncio del partido: presentación por Feijóo y Alma Ezcurra el 10-nov a las 12:00 en Madrid (agenda oficial de pp.es) y nota «Feijóo presenta el programa del PP…» publicada en pp.es el 10-nov a las 13:57 CET. Coincide con HTTP Last-Modified (Tue, 10 Nov 2026 11:19:20 GMT); CreationDate del PDF 2026-11-09 18:39 CET",
+        "titulo": "La Reconstrucción Nacional. Programa electoral 2026 («Reconstrucción Nacional. El programa del cambio necesario para España»)",
+        "idioma": "es",
+        "paginas": 82,
+        "sha256": "cea8f2a052278e51ad682d19444eb0e9089997adbde8df76babf7f236bb5ffbe",
+        "fichero": "data/sources/programas/pp/LA-RECONSTRUCCION-NACIONAL.pdf",
+        "texto": "data/sources/programas/pp/LA-RECONSTRUCCION-NACIONAL.txt",
+        "checked_at": "2026-11-12T14:15:00+01:00",
+        "otros_documentos": [
+          {
+            "tipo": "Reedición del mismo programa con otra maquetación (mismo texto; 64 págs. en lugar de 82). Subida el 11-nov (HTTP Last-Modified Wed, 11 Nov 2026 09:54:47 GMT; CreationDate del PDF 2026-11-10 17:13 CET) y listada también en pp.es/actualidad/documentos/ como «PROGRAMA ELECTORAL PP 2026 – LA RECONSTRUCCION NACIONAL». La portada de pp.es sigue enlazando la versión de 82 págs. Su extracción de texto sale más limpia (sin cortes por los destacados)",
+            "titulo": "Programa electoral PP 2026 – La Reconstrucción Nacional",
+            "url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf",
+            "idioma": "es",
+            "paginas": 64,
+            "sha256": "ae0c35d7ef3faf540acaa79d47abbe3ae2bf56a3a755c4e78a8f5bf3ea49789c",
+            "fichero": "data/sources/programas/pp/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf",
+            "texto": "data/sources/programas/pp/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.txt"
+          }
+        ],
         "anunciado": {
-          "fecha": "2026-11-10",
-          "detalle": "Según Europa Press (7-nov, reproducido por Periódico de Ibiza), Feijóo y Alma Ezcurra presentarán el programa «el martes» en Madrid. Anuncio en medios; no consta en pp.es.",
-          "fuente": "https://www.periodicodeibiza.es/noticias/elecciones-29n/2026/11/07/2745009/ninguna-ccaa-tendra-financiacion-singular-estos-son-principales-puntos-del-programa-del-para-elecciones-generales.html"
-        }
+          "fecha": "2026-11-10T12:00:00+01:00",
+          "detalle": "Presentación del programa electoral para el 29-N por Alberto Núñez Feijóo, con intervención de Alma Ezcurra, en Madrid (agenda oficial del partido).",
+          "fuente": "https://www.pp.es/actualidad/agenda/"
+        },
+        "presentacion": "https://www.pp.es/actualidad/articulos/feijoo-presenta-el-programa-del-pp-como-la-cura-con-la-que-sanar-una-espana-herida-y-la-respuesta-para-reconstruir-el-pais/"
       },
       "programa_aplicable": "Programa nacional del PP en las 51 circunscripciones donde concurre como PP (incluida Cataluña). En Navarra concurre la coalición UPN-PP (ver upn).",
       "notas": "pp.es/actualidad/documentos solo publica argumentarios diarios «Hablemos Claro». El «Contrato con España» (12 compromisos, firmado el 19-oct según medios) no es el programa y no se encontró en pp.es.",
@@ -163,7 +178,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-10T09:50:00+01:00",
+        "checked_at": "2026-11-12T14:15:00+01:00",
         "anunciado": null
       },
       "programa_aplicable": "Según el preacuerdo UPN-PP (13-oct-2026), el programa de la coalición lo redacta una comisión conjunta de ambos partidos: en Navarra aplica ese programa conjunto, no solo el del PP. Sin fecha anunciada.",
@@ -279,7 +294,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-10T09:50:00+01:00",
+        "checked_at": "2026-11-12T14:15:00+01:00",
         "anunciado": null,
         "verificacion": "No verificado de primera mano: psoe.es devuelve un desafío anti-bots de Imperva/Incapsula (no se ha intentado sortear). Estado basado en webs de federaciones (psn-psoe.org, socialistas.gal) y fuentes secundarias."
       },
@@ -331,7 +346,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-10T09:50:00+01:00",
+        "checked_at": "2026-11-12T14:15:00+01:00",
         "anunciado": null
       },
       "programa_aplicable": "No determinado: el PSC es candidatura propia (no coalición con el PSOE). En generales anteriores ha publicado programa propio (p. ej. 2011), por lo que puede publicar uno o asumir el del PSOE. Sin confirmar.",
@@ -447,7 +462,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-10T09:50:00+01:00",
+        "checked_at": "2026-11-12T14:15:00+01:00",
         "anunciado": null
       },
       "programa_aplicable": "Programa único estatal.",
@@ -570,7 +585,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-10T09:50:00+01:00",
+        "checked_at": "2026-11-12T14:15:00+01:00",
         "anunciado": null
       },
       "programa_aplicable": "No consta si habrá programa marco común con anexos territoriales. En Baleares la marca es Ara Més-Front Ampli (entrada propia); en Comunitat Valenciana y Canarias no concurre (Compromís: Front Valencià y UPC); no concurre en Teruel, Ceuta ni Melilla.",
@@ -673,7 +688,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-10T09:50:00+01:00",
+        "checked_at": "2026-11-12T14:15:00+01:00",
         "anunciado": null
       },
       "programa_aplicable": "Programa de Podemos en sus 41 circunscripciones. En la Comunitat Valenciana va dentro de Compromís: Front Valencià y en Canarias dentro de UPC (aplican los de esas coaliciones). En Cataluña no presenta lista y apoya a ERC; tampoco en Baleares ni Melilla.",
@@ -735,7 +750,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-10T09:50:00+01:00",
+        "checked_at": "2026-11-12T14:15:00+01:00",
         "anunciado": null
       },
       "programa_aplicable": "Programa único de la coalición (no consta programa propio de los socios).",
@@ -786,7 +801,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-10T09:50:00+01:00",
+        "checked_at": "2026-11-12T14:15:00+01:00",
         "anunciado": null,
         "documento_programatico": {
           "tipo": "Manifiesto electoral (16 ejes); no se denomina programa",
@@ -851,7 +866,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-10T09:50:00+01:00",
+        "checked_at": "2026-11-12T14:15:00+01:00",
         "anunciado": {
           "fecha": null,
           "detalle": "Programa en elaboración participativa desde el 3-nov-2026; sin fecha de publicación anunciada.",
@@ -959,7 +974,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-10T09:50:00+01:00",
+        "checked_at": "2026-11-12T14:15:00+01:00",
         "anunciado": null
       },
       "programa_aplicable": "Programa único para Cataluña (pendiente).",
@@ -1012,7 +1027,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-10T09:50:00+01:00",
+        "checked_at": "2026-11-12T14:15:00+01:00",
         "anunciado": null
       },
       "programa_aplicable": "No consta programa navarro separado; comprobar cuando se publique.",
@@ -1260,7 +1275,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-10T09:50:00+01:00",
+        "checked_at": "2026-11-12T14:15:00+01:00",
         "anunciado": null
       },
       "programa_aplicable": "Programa único para las ocho provincias andaluzas (pendiente).",
@@ -1362,16 +1377,19 @@
       "escanos_2023_nota": "No concurrió a las generales de 2023.",
       "proyeccion_motivo": "GESOP/El Periódico (6–8 oct, publicado 12-oct): 2% y «podría hacerse incluso con un escaño por Madrid» (0–1). Las encuestas posteriores consultadas le dan 0 escaños.",
       "programa": {
-        "estado": "no_publicado",
-        "url": null,
-        "fecha": null,
-        "titulo": null,
-        "paginas": null,
-        "sha256": null,
-        "fichero": null,
-        "texto": null,
-        "checked_at": "2026-11-10T09:50:00+01:00",
-        "anunciado": null
+        "estado": "publicado",
+        "url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf",
+        "fecha": "2026-11-10",
+        "fecha_fuente": "Anuncio del partido: el canal oficial de Telegram de Alvise Pérez (enlazado desde seacabolafiesta.com) anunció el 8-nov la presentación del «contrato electoral nacional» el martes 10-nov a las 11:00 en Madrid, y el 10-nov a las 16:43 CET informó de su firma. Coincide con HTTP Last-Modified (Tue, 10 Nov 2026 15:54:08 GMT). El PDF no tiene fechas de creación (XMP MetadataDate 2026-11-04, procesado con pikepdf)",
+        "titulo": "Contrato electoral simplificado. Generales 2026 – 29 de noviembre de 2026 (119 medidas, diez compromisos)",
+        "idioma": "es",
+        "paginas": 40,
+        "sha256": "073425b9522da77608a0399923c2e0d3b9153776e8a0436ac8f0aea794b7893b",
+        "fichero": "data/sources/programas/salf/SALF_Contrato_Electoral_29N.pdf",
+        "texto": "data/sources/programas/salf/SALF_Contrato_Electoral_29N.txt",
+        "checked_at": "2026-11-12T14:15:00+01:00",
+        "nota": "El partido no lo titula «programa», sino «contrato electoral», pero lo presenta como su programa del 29-N: en seacabolafiesta.com/29n figura en la sección «01 El programa» («El contrato. Completo. PDF · 40 páginas»), y su comunicación oficial habla de «si no cumple su programa». La portada dice «simplificado», aunque la web lo ofrece como el contrato completo; no se ha encontrado otra versión más extensa.",
+        "pagina_campana": "https://www.seacabolafiesta.com/29n"
       },
       "programa_aplicable": "Programa único estatal (pendiente).",
       "notas": "salf.es es solo una página «próximo lanzamiento». En seacabolafiesta.com solo hay un díptico de campaña de 2 páginas («Díptico Precintado», diez compromisos) que el partido no llama programa, y un contrato electoral de Castilla y León 2026 (autonómicas). No se guardaron.",

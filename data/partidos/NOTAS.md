@@ -13,6 +13,19 @@ Nueva comprobación: 10 de noviembre de 2026, hacia las 09:50 (+01:00). Ningún 
 
 Sin cambios en el resto: psoe.es sigue tras el desafío anti-bots, la página de programa de Vox sigue en 404, la página «Programa» de adelanteandalucia.org sigue siendo la de las autonómicas y seacabolafiesta.com bloquea su API (403).
 
+Nueva comprobación: 12 de noviembre de 2026, hacia las 14:15 (+01:00). Dos programas nuevos, ya en `partidos.json`:
+
+- **PP:** «La Reconstrucción Nacional. Programa electoral 2026», presentado el 10-nov. Enlazado desde la portada de pp.es y desde /actualidad/documentos/. Se guarda la versión de 82 págs. que enlaza la portada (`pp/LA-RECONSTRUCCION-NACIONAL.pdf`). El 11-nov el partido subió una reedición de 64 págs. con el mismo texto y otra maquetación (`pp/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf`), guardada en `otros_documentos`; su extracción de texto sale más limpia.
+- **SALF:** «Contrato electoral simplificado. Generales 2026» (40 págs., 119 medidas), presentado el 10-nov en Madrid. Se cuenta como programa porque seacabolafiesta.com/29n lo publica en la sección «01 El programa» como «El contrato. Completo», y el canal oficial de Telegram habla de «su programa». Fichero: `salf/SALF_Contrato_Electoral_29N.pdf`.
+
+Pendientes (12), sin programa en las webs oficiales:
+
+- **UPN-PP:** el 10-nov presentó el lema «Por España, por Navarra, por fin». Su canal oficial de Telegram enlaza unos «compromisos con Navarra» publicados solo en Instagram, que no se llaman programa electoral. La web de la coalición, upn-pp.es (enlazada desde upn.org), solo dice «Próximamente».
+- **Compromís: Front Valencià:** compromis.net enlaza ahora a frontvalencia.org («Entra al programa»). Esa web resume el programa en 6 ejes, pero el botón «Programa sencer» dice «Enllaç pendent». No hay fecha anunciada.
+- **EH Bildu:** anuncia un gran acto de campaña el 14-nov en Bilbao. No dice que vaya a presentar el programa.
+- **UPC:** mitin el 14-nov en Las Palmas de Gran Canaria. Solo tiene el manifiesto ya guardado.
+- **Sin novedades:** PSOE (psoe.es y sus subpáginas siguen tras el desafío anti-bots de Incapsula; nada en socialistas.gal ni en psn-psoe.org), PSC, Vox (la página «Programa electoral de VOX» sigue en 404), Frente Amplio (arranca campaña el 12-nov en Vallecas), Podemos (podemos.info sin entradas desde octubre), Ara Més-Front Ampli (sigue sin fecha), Junts («Propostes» es la sección general del partido, no un programa del 29-N) y Adelante Andalucía (la página «Programa» sigue siendo la de las autonómicas).
+
 ## 1. Universo de partidos
 
 Se incluyen las candidaturas al Congreso que cumplen al menos uno de estos criterios:
