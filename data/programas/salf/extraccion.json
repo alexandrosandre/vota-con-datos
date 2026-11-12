@@ -1,0 +1,1232 @@
+{
+ "partido": "salf",
+ "programa": "data/sources/programas/salf/SALF_Contrato_Electoral_29N.pdf",
+ "programa_sha256": "073425b9522da77608a0399923c2e0d3b9153776e8a0436ac8f0aea794b7893b",
+ "paginas": 40,
+ "idioma": "es",
+ "nota": "Documento: «Contrato electoral simplificado. Generales 2026» de SALF (10-11-2026), que el partido ofrece como su programa del 29-N. Página = n-ésimo bloque separado por salto de página (\\f) del texto extraído; coincide con el número impreso en el pie de página (el bloque 41 es el salto final vacío). El documento numera 119 medidas en diez secciones. Se extraen 118 medidas numeradas; se excluye III.11 («Financiación autonómica justa, solidaria y responsable», p. 14), que es una declaración de posición sin medida identificable («Nos batiremos», «defenderemos», «Nos opondremos a las condonaciones»). Se añaden tres medidas concretas que el documento enuncia fuera de la lista numerada: la reducción del Gobierno a diez ministerios (p. 3) y, en la tabla «Cómo se paga» (p. 16), la supresión de las diputaciones provinciales y la gestión mancomunada obligatoria en municipios de menos de 5.000 habitantes. No se extrae la «cláusula de penalización» (p. 4: bloqueo del sueldo público del candidato en una cuenta del Banco de España), porque es un compromiso personal del candidato y no una medida de política pública. VIII.3 repite la cuota cero de autónomos de III.4; se extrae por su elemento nuevo (licencia de actividad en 24 horas). El campo «apartado» indica sección (número romano) y número de la medida. Las citas usan [...] cuando el texto extraído intercala, en mitad de una frase, cifras de los recuadros laterales o palabras partidas con guion a final de línea; en esos casos se omite el fragmento interrumpido y no se altera el resto.",
+ "indice": [
+  {
+   "seccion": "Portada",
+   "paginas": "1"
+  },
+  {
+   "seccion": "El Gobierno: «Así está el Gobierno hoy» y «Así estará con SALF»",
+   "paginas": "2-3"
+  },
+  {
+   "seccion": "10 compromisos y cláusula de penalización",
+   "paginas": "4"
+  },
+  {
+   "seccion": "I. Vivienda (medidas 1-10)",
+   "paginas": "5-7"
+  },
+  {
+   "seccion": "II. Seguridad (medidas 1-14)",
+   "paginas": "8-11"
+  },
+  {
+   "seccion": "III. Impuestos (medidas 1-14)",
+   "paginas": "12-15"
+  },
+  {
+   "seccion": "III. Impuestos: «Cómo se paga» (tabla de financiación)",
+   "paginas": "16"
+  },
+  {
+   "seccion": "IV. Inmigración (medidas 1-10)",
+   "paginas": "17-19"
+  },
+  {
+   "seccion": "V. Pensiones (medidas 1-10)",
+   "paginas": "20-21"
+  },
+  {
+   "seccion": "VI. Sanidad (medidas 1-12)",
+   "paginas": "22-24"
+  },
+  {
+   "seccion": "VII. Corrupción (medidas 1-15)",
+   "paginas": "25-29"
+  },
+  {
+   "seccion": "VIII. Empleo (medidas 1-10)",
+   "paginas": "30-32"
+  },
+  {
+   "seccion": "IX. Educación (medidas 1-10)",
+   "paginas": "33-34"
+  },
+  {
+   "seccion": "X. Geopolítica (medidas 1-14)",
+   "paginas": "35-39"
+  },
+  {
+   "seccion": "Contraportada",
+   "paginas": "40"
+  }
+ ],
+ "propuestas": [
+  {
+   "id": "salf-p001",
+   "area": "justicia e instituciones",
+   "resumen": "Reducir el Gobierno de 22 a 10 ministerios y de 3 a 1 vicepresidencias, con la mitad de altos cargos y 400 asesores.",
+   "cita": "La mitad de los altos cargos y 400 asesores. Doce ministerios desaparecen el primer día; sus funciones útiles pasan a los diez que quedan. [...] Ahorro directo mínimo de 300 millones de euros.",
+   "pagina": 3,
+   "cuantificada": true,
+   "apartado": "El Gobierno"
+  },
+  {
+   "id": "salf-p002",
+   "area": "vivienda",
+   "resumen": "Suprimir ITP y AJD y devolver en el IRPF el IVA (al 4 %) en la compra de la primera vivienda, con el objetivo legal de que cueste al menos un 35 % menos.",
+   "cita": "Cero impuestos (ITP y AJD al 0 %; IVA al 4 % devuelto [...] en la renta), licencia en plazo y suelo público sin coste. Resultado garantizado por ley: el comprador de primera [...] paga, como mínimo, un 35 % menos que hoy. Coste: ≈ 5.000 M€/año. Lo paga el sobrecoste autonómico.",
+   "pagina": 5,
+   "cuantificada": true,
+   "apartado": "I.1"
+  },
+  {
+   "id": "salf-p003",
+   "area": "vivienda",
+   "resumen": "Ley de neutralidad que limite el crecimiento de la recaudación ligada a la vivienda al IPC y obligue a quien legisle sobre vivienda a publicar sus inmuebles.",
+   "cita": "Ley de neutralidad: la recaudación [...] no puede crecer más que el IPC y el exceso",
+   "pagina": 5,
+   "cuantificada": true,
+   "apartado": "I.2"
+  },
+  {
+   "id": "salf-p004",
+   "area": "vivienda",
+   "resumen": "Desalojo policial de ocupantes en 48 horas con denuncia y título de propiedad, y lanzamiento en 30 días por impago sin suspensión por vulnerabilidad.",
+   "cita": "Con denuncia y título de propiedad, la Policía desaloja [...] 48 horas. Al que deja de pagar, juicio verbal y lanzamiento en 30 días, sin excusas de 'vulnerabilidad' [...] los atiende el Estado, no tu casa.",
+   "pagina": 5,
+   "cuantificada": true,
+   "apartado": "I.3"
+  },
+  {
+   "id": "salf-p005",
+   "area": "vivienda",
+   "resumen": "Sacar a concurso en 12 meses todo el suelo de la Sareb y del Estado para vivienda protegida en propiedad a precio tasado.",
+   "cita": "Todo el suelo de la Sareb y del Estado, en 12 meses [...] para construir vivienda protegida en propiedad",
+   "pagina": 6,
+   "cuantificada": true,
+   "apartado": "I.4"
+  },
+  {
+   "id": "salf-p006",
+   "area": "vivienda",
+   "resumen": "Plazos máximos de licencia (uno, dos y tres meses) con silencio positivo y responsabilidad del ayuntamiento por el retraso.",
+   "cita": "Un mes obra menor, dos obra mayor, tres grandes [...] Pasado el plazo, licencia concedida y el ayuntamiento [...] paga el retraso.",
+   "pagina": 6,
+   "cuantificada": true,
+   "apartado": "I.5"
+  },
+  {
+   "id": "salf-p007",
+   "area": "fiscalidad",
+   "resumen": "Que las SOCIMI con más de 100 viviendas en alquiler tributen al 25 % en Sociedades.",
+   "cita": "Las SOCIMI con más de 100 viviendas en alquiler tributan al 25 %, como cualquier empresa. Y el Estado deja [...] contratar a los fondos que dice combatir.",
+   "pagina": 6,
+   "cuantificada": true,
+   "apartado": "I.6"
+  },
+  {
+   "id": "salf-p008",
+   "area": "vivienda",
+   "resumen": "Aval público del 20 % de la entrada para menores de 40 años en su primera vivienda.",
+   "cita": "Aval público del 20 % de entrada para menores de 40 [...] primera vivienda. Con un 35 % de ahorro y la entrada [...] comprar vuelve a ser posible con un sueldo normal. Garantía de 2.000 M€; no es gasto.",
+   "pagina": 6,
+   "cuantificada": true,
+   "apartado": "I.7"
+  },
+  {
+   "id": "salf-p009",
+   "area": "vivienda",
+   "resumen": "Seguro público de impago de alquiler de doce meses de renta y daños.",
+   "cita": "Seguro público de impago: doce meses de renta y daños garantizados; después, el Estado persigue al moroso. A cambio, se alquila sin exigir tres nóminas y un aval [...] Prioridad a menores de 45 y familias con hijos. Coste: ≈ 150 M€/año.",
+   "pagina": 7,
+   "cuantificada": true,
+   "apartado": "I.8"
+  },
+  {
+   "id": "salf-p010",
+   "area": "vivienda",
+   "resumen": "Licencia automática en 15 días para vivienda industrializada en suelo público y urbano consolidado, estándar técnico único y registro único de alquiler turístico.",
+   "cita": "Vivienda industrializada en suelo público y urbano [...] con licencia automática y estándar técnico único: lo que vale en Sevilla vale en Bilbao. Registro único de alquiler turístico con cumplimiento fiscal, sin prohibiciones.",
+   "pagina": 7,
+   "cuantificada": true,
+   "apartado": "I.9"
+  },
+  {
+   "id": "salf-p011",
+   "area": "fiscalidad",
+   "resumen": "Suprimir el IBI para todos sin compensación a los ayuntamientos.",
+   "cita": "El IBI se elimina por completo, para todos. [...] a nadie: el impuesto desaparece y punto. [...] Menos ingresos municipales: ≈ 13.400 M€/año; los ayuntamientos lo absorben con ahorro, no con otros impuestos.",
+   "pagina": 7,
+   "cuantificada": true,
+   "apartado": "I.10"
+  },
+  {
+   "id": "salf-p012",
+   "area": "seguridad",
+   "resumen": "Construir una macrocárcel de máxima seguridad sin permisos ni tercer grado para delitos graves y corrupción.",
+   "cita": "Máxima seguridad para asesinos, agresores sexuales [...] crimen organizado, terroristas [...] violentos y políticos corruptos. Sin permisos [...] grado, sin teléfono. Donde se ha hecho, los homicidios cayeron de 105 a 1 por 100.000 habitantes. Coste de obra: ≈ 3.000 M€, pagados con lo decomisado al narco y al crimen organizado.",
+   "pagina": 8,
+   "cuantificada": true,
+   "apartado": "II.1"
+  },
+  {
+   "id": "salf-p013",
+   "area": "seguridad",
+   "resumen": "Cumplimiento íntegro de penas sin permisos para delitos graves y ampliar la prisión permanente revisable.",
+   "cita": "Violadores, asesinos, narcos y corruptos: cumplimiento [...] sin reducción ninguna ni permisos. Prisión permanente revisable por violación a menores o con lesiones graves. Tres condenas: prisión sin suspensión.",
+   "pagina": 8,
+   "cuantificada": false,
+   "apartado": "II.2"
+  },
+  {
+   "id": "salf-p014",
+   "area": "seguridad",
+   "resumen": "Registro público de agresores sexuales reincidentes, pulsera telemática de por vida y castración química voluntaria como condición de beneficios penitenciarios.",
+   "cita": "Registro público de reincidentes, pulsera telemática [...] vida y castración química voluntaria como condición de cualquier beneficio penitenciario.",
+   "pagina": 8,
+   "cuantificada": false,
+   "apartado": "II.3"
+  },
+  {
+   "id": "salf-p015",
+   "area": "seguridad",
+   "resumen": "Convenios para que los extranjeros condenados cumplan la pena en su país y veto de entrada de por vida.",
+   "cita": "Convenios con terceros países para que los extranjeros [...] condenados cumplan la pena allí, en prisiones de máxima dureza, no en una celda con televisión y permisos. [...] veto de por vida del acceso a España. Ahorro: ≈ 500 M€/año.",
+   "pagina": 9,
+   "cuantificada": true,
+   "apartado": "II.4"
+  },
+  {
+   "id": "salf-p016",
+   "area": "seguridad",
+   "resumen": "Equiparación salarial de Guardia Civil y Policía Nacional con los Mossos en dos años, jubilación a los 60 y profesión de riesgo.",
+   "cita": "Equiparación salarial real en dos años, jubilación a los 60 sin penalización y reconocimiento de profesión de riesgo.",
+   "pagina": 9,
+   "cuantificada": true,
+   "apartado": "II.5"
+  },
+  {
+   "id": "salf-p017",
+   "area": "seguridad",
+   "resumen": "Plan Estrecho: apoyo de la Armada y el Ejército del Aire contra el narcotráfico, 180 M€ en medios y decomiso civil.",
+   "cita": "Apoyo permanente de la Armada y el Ejército del Aire, 180 [...] millones en lanchas, drones y medios aéreos, y decomiso [...] civil de todo bien del narcotráfico.",
+   "pagina": 9,
+   "cuantificada": true,
+   "apartado": "II.6"
+  },
+  {
+   "id": "salf-p018",
+   "area": "exterior y defensa",
+   "resumen": "Servicio voluntario (militar o civil) de seis a doce meses para jóvenes de 18 a 30 años con 1.600 euros netos al mes.",
+   "cita": "De seis a doce meses, militar o civil, entre 18 y 30 años [...] 1.600 euros netos, formación oficial, puntos en todas las oposiciones, vivienda protegida preferente y 5.000 euros al terminar. Coste: ≈ 1.200 M€/año.",
+   "pagina": 9,
+   "cuantificada": true,
+   "apartado": "II.7"
+  },
+  {
+   "id": "salf-p019",
+   "area": "fiscalidad",
+   "resumen": "Mínimo exento de IRPF de 50.000 euros durante diez años y otras ventajas para quien complete el servicio voluntario.",
+   "cita": "Quien complete la mili voluntaria tendrá un mínimo exento [...] de IRPF de 50.000 euros durante diez años (15.000 más que el resto), cero cotización del trabajador en sus tres primeros años de contrato y matrícula gratuita en universidad y FP. [...] Coste: ≈ 250 M€/año con 30.000 plazas anuales.",
+   "pagina": 9,
+   "cuantificada": true,
+   "apartado": "II.8"
+  },
+  {
+   "id": "salf-p020",
+   "area": "justicia e instituciones",
+   "resumen": "2.000 jueces y 1.500 fiscales más, juicios rápidos en 72 horas y expediente digital único.",
+   "cita": "2.000 jueces y 1.500 fiscales más. Juicios rápidos en 72 [...] para multirreincidentes y delitos flagrantes. Expediente [...] digital único en toda España. Coste: ≈ 400 M€/año.",
+   "pagina": 10,
+   "cuantificada": true,
+   "apartado": "II.9"
+  },
+  {
+   "id": "salf-p021",
+   "area": "seguridad",
+   "resumen": "Presunción legal de legítima defensa en el domicilio o negocio y licencia de arma para defensa del domicilio.",
+   "cita": "Presunción legal de legítima defensa en tu vivienda [...] incluido el uso de armas de fuego legalmente tenidas: quien irrumpe por la fuerza o de noche asume [...] La acusación tiene que probar el exceso, no la víctima. Licencia de arma para defensa del domicilio sin trabas para ciudadanos sin antecedentes.",
+   "pagina": 10,
+   "cuantificada": false,
+   "apartado": "II.10"
+  },
+  {
+   "id": "salf-p022",
+   "area": "justicia e instituciones",
+   "resumen": "Policía judicial dependiente del juez y tipificar como delito la injerencia política en las investigaciones.",
+   "cita": "El agente que investiga a un político obedece al juez, no [...] ministro. La injerencia política es delito. Ningún policía vuelve a fichar periodistas por encargo.",
+   "pagina": 10,
+   "cuantificada": false,
+   "apartado": "II.11"
+  },
+  {
+   "id": "salf-p023",
+   "area": "seguridad",
+   "resumen": "Triplicar UCO, UDEF y UDYCO en 2027-2029 (3.000 investigadores más) con partida finalista blindada por ley.",
+   "cita": "Plan 2027-2029: UCO de 580 a 1.800 agentes, UDEF de 320 a 1.000, 1.200 más en UDYCO y Vigilancia Aduanera, peritos contables y laboratorio [...] propio. Partida finalista blindada por ley: ningún ministro puede recortarla ni apartar a un investigador. Coste: ≈ 400 M€/año. Lo paga el decomiso al narco y al corrupto.",
+   "pagina": 10,
+   "cuantificada": true,
+   "apartado": "II.12"
+  },
+  {
+   "id": "salf-p024",
+   "area": "seguridad",
+   "resumen": "Reforma de la Ley de Seguridad Privada para dar a los vigilantes la protección penal de bomberos y sanitarios y nuevo reglamento en seis meses.",
+   "cita": "Reforma de la Ley de Seguridad Privada [...] de colaborador de la seguridad pública, con la misma protección penal que bomberos y personal sanitario [...] es atentado, sin ser agentes de la autoridad ni invadir una sola competencia de la Policía y la Guardia Civil.",
+   "pagina": 11,
+   "cuantificada": true,
+   "apartado": "II.13"
+  },
+  {
+   "id": "salf-p025",
+   "area": "empleo",
+   "resumen": "Precio mínimo de licitación igual al coste del convenio en vigilancia, plus de peligrosidad de 150 euros y jubilación a los 60 con coeficientes reductores.",
+   "cita": "precio mínimo de licitación igual al coste del convenio más estructura, pago directo al trabajador si la empresa no paga y exclusión de la contratación pública a quien incumpla. Plus de peligrosidad de 150 euros en todo contrato público. Coeficientes reductores para jubilarse a los 60 con 35 años cotizados, financiados con cotización adicional, como la policía local.",
+   "pagina": 11,
+   "cuantificada": true,
+   "apartado": "II.14"
+  },
+  {
+   "id": "salf-p026",
+   "area": "fiscalidad",
+   "resumen": "Elevar el mínimo exento del IRPF a 35.000 euros en 2030, con calendario anual y retirada gradual hasta 50.000 euros.",
+   "cita": "Mínimo exento de 35.000 euros (hoy, 5.550), con reducción [...] gradual hasta 50.000 para que ganar un euro más nunca [...] cueste dinero. Calendario: 15.000 en 2027, 22.000 en 2028, 28.000 en 2029 y 35.000 en 2030. Coste: ≈ 43.000 M€/año en 2030. Ver 'Cómo se paga'.",
+   "pagina": 12,
+   "cuantificada": true,
+   "apartado": "III.1"
+  },
+  {
+   "id": "salf-p027",
+   "area": "fiscalidad",
+   "resumen": "Sumar 5.000 euros por hijo al mínimo exento del IRPF de cada progenitor.",
+   "cita": "Cada hijo suma 5.000 euros al mínimo exento de cada [...] ni el padre ni la madre pagan IRPF por esa parte. Una pareja con dos hijos no paga hasta 45.000 euros cada uno. [...] Coste: ≈ 5.500 M€/año.",
+   "pagina": 12,
+   "cuantificada": true,
+   "apartado": "III.2"
+  },
+  {
+   "id": "salf-p028",
+   "area": "fiscalidad",
+   "resumen": "Deflactar por ley cada año la tarifa, mínimos y deducciones del IRPF con el IPC.",
+   "cita": "Tarifa, mínimos y deducciones del IRPF actualizados cada [...] año con el IPC, por ley.",
+   "pagina": 12,
+   "cuantificada": false,
+   "apartado": "III.3"
+  },
+  {
+   "id": "salf-p029",
+   "area": "empleo",
+   "resumen": "Eliminar por completo la cuota de autónomos y aplicar el IVA de caja.",
+   "cita": "Cuota cero, total y para siempre: ningún autónomo vuelve a pagar cuota. IVA de caja: si no cobras, no adelantas. [...] Coste: ≈ 12.000 M€/año, lo que hoy recauda el RETA.",
+   "pagina": 12,
+   "cuantificada": true,
+   "apartado": "III.4"
+  },
+  {
+   "id": "salf-p030",
+   "area": "fiscalidad",
+   "resumen": "Bajar el Impuesto sobre Sociedades al 20 % (15 % si se reinvierte, 10 % para empresas nuevas).",
+   "cita": "Del 25 al 20 % en dos años; 15 % sobre el beneficio [...] 10 % los tres primeros años de una empresa nueva. Coste: ≈ 6.000 M€/año.",
+   "pagina": 13,
+   "cuantificada": true,
+   "apartado": "III.5"
+  },
+  {
+   "id": "salf-p031",
+   "area": "fiscalidad",
+   "resumen": "Suprimir los impuestos de Sucesiones, Donaciones, Patrimonio y Grandes Fortunas.",
+   "cita": "Heredar la casa de tus padres no es un hecho imponible. [...] un duelo. Fuera también el impuesto a las grandes fortunas. Coste: ≈ 3.500 M€/año.",
+   "pagina": 13,
+   "cuantificada": true,
+   "apartado": "III.6"
+  },
+  {
+   "id": "salf-p032",
+   "area": "energía y clima",
+   "resumen": "IVA del 4 % para la luz y el agua y supresión del impuesto a la producción eléctrica.",
+   "cita": "La luz, del 21 al 4 %; el agua, del 10 al 4 %. Y fuera [...] producción eléctrica que va directo a tu factura. [...] Coste: ≈ 2.600 M€/año.",
+   "pagina": 13,
+   "cuantificada": true,
+   "apartado": "III.7"
+  },
+  {
+   "id": "salf-p033",
+   "area": "fiscalidad",
+   "resumen": "Ninguna bajada de impuestos sin ahorro estructural certificado por la AIReF y déficit cero en 2030.",
+   "cita": "Ninguna bajada entra en vigor sin ahorro estructural [...] por la AIReF. Techo de gasto real. Déficit cero en 2030.",
+   "pagina": 13,
+   "cuantificada": true,
+   "apartado": "III.8"
+  },
+  {
+   "id": "salf-p034",
+   "area": "fiscalidad",
+   "resumen": "Carga de la prueba para Hacienda, intereses de demora simétricos y la mitad de los inspectores dedicados a políticos y empresas subvencionadas.",
+   "cita": "Renta en una página, liquidación en 30 días, carga de la prueba para la Administración e intereses de demora [...] el 50 % de los inspectores fiscales se dedicarán en exclusiva a la investigación de políticos, cargos públicos y empresas subvencionadas directa o indirectamente.",
+   "pagina": 13,
+   "cuantificada": true,
+   "apartado": "III.9"
+  },
+  {
+   "id": "salf-p035",
+   "area": "fiscalidad",
+   "resumen": "Reforma constitucional para exigir tres quintos del Congreso para subir impuestos e informe fiscal anual a cada contribuyente.",
+   "cita": "Toda subida de impuestos exigirá tres quintos del Congreso [...] (reforma constitucional). Cada contribuyente recibirá cada año cuánto pagó en total y en qué se gastó, euro a euro.",
+   "pagina": 13,
+   "cuantificada": false,
+   "apartado": "III.10"
+  },
+  {
+   "id": "salf-p036",
+   "area": "fiscalidad",
+   "resumen": "Reforma constitucional con límites a la presión fiscal y al endeudamiento y delitos por superarlos.",
+   "cita": "Reforma constitucional para establecer límites claramente definidos a la presión fiscal y al endeudamiento. Creación de tipos penales constitucionalmente blindados",
+   "pagina": 14,
+   "cuantificada": false,
+   "apartado": "III.12"
+  },
+  {
+   "id": "salf-p037",
+   "area": "fiscalidad",
+   "resumen": "Derecho a pagar en efectivo sin límite, derogando el tope de 1.000 euros, y veto al límite europeo de 10.000.",
+   "cita": "Derecho a pagar y cobrar en efectivo sin límite de importe [...] se deroga el tope de 1.000 euros y España vetará [...] 10.000 que impone Bruselas desde 2027. Comercios [...] y administraciones estarán obligados a aceptarlo.",
+   "pagina": 15,
+   "cuantificada": true,
+   "apartado": "III.13"
+  },
+  {
+   "id": "salf-p038",
+   "area": "fiscalidad",
+   "resumen": "Ley de Devolución del Rescate: cinco entidades pagan 4.700 M€ al año durante 15 años.",
+   "cita": "Ley de Devolución del Rescate: las entidades [...] con las cajas rescatadas (CaixaBank, BBVA, Sabadell, Unicaja y Abanca) pagan 4.700 millones al año durante 15 años, en proporción a las ayudas que absorbieron, con tope del 40 % de su beneficio anual y el exceso aplazado con interés.",
+   "pagina": 15,
+   "cuantificada": true,
+   "apartado": "III.14"
+  },
+  {
+   "id": "salf-p039",
+   "area": "modelo territorial",
+   "resumen": "Suprimir las diputaciones provinciales (ahorro estimado de 1.500 M€ al año).",
+   "cita": "Supresión de las diputaciones provinciales 1.500",
+   "pagina": 16,
+   "cuantificada": true,
+   "apartado": "III. Cómo se paga"
+  },
+  {
+   "id": "salf-p040",
+   "area": "modelo territorial",
+   "resumen": "Gestión mancomunada obligatoria en municipios de menos de 5.000 habitantes (ahorro estimado de 3.000 M€ al año).",
+   "cita": "Gestión mancomunada obligatoria en municipios de menos de 5.000 habitantes 3.000",
+   "pagina": 16,
+   "cuantificada": true,
+   "apartado": "III. Cómo se paga"
+  },
+  {
+   "id": "salf-p041",
+   "area": "inmigración",
+   "resumen": "Ejecutar las órdenes de expulsión en 48 horas y el 100 % en 90 días, con internamiento hasta la expulsión.",
+   "cita": "Identificación, orden y salida en 48 horas. El 100 % [...] órdenes ejecutadas en 90 días. Internamiento hasta [...] Coste: ≈ 300 M€/año; se recupera en acogida.",
+   "pagina": 17,
+   "cuantificada": true,
+   "apartado": "IV.1"
+  },
+  {
+   "id": "salf-p042",
+   "area": "inmigración",
+   "resumen": "Derogar la regularización de 2026, revisar las concesiones y prohibir por ley orgánica las regularizaciones masivas.",
+   "cita": "Derogación de la regularización de 2026, revisión [...] una de las concesiones y prohibición por ley orgánica de cualquier regularización masiva.",
+   "pagina": 17,
+   "cuantificada": false,
+   "apartado": "IV.2"
+  },
+  {
+   "id": "salf-p043",
+   "area": "inmigración",
+   "resumen": "Condicionar ayudas, visados y preferencias comerciales a Marruecos, Argelia, Senegal y Mauritania a la readmisión en 72 horas.",
+   "cita": "Ni un euro, ni un visado, ni una preferencia comercial [...] Argelia, Senegal o Mauritania si no readmiten a sus nacionales en 72 horas. Veto español a cualquier acuerdo europeo que no lo exija.",
+   "pagina": 17,
+   "cuantificada": true,
+   "apartado": "IV.3"
+  },
+  {
+   "id": "salf-p044",
+   "area": "inmigración",
+   "resumen": "Moratoria de inmigración durante la legislatura para países que no colaboren contra la trata ni readmitan, y para el resto solo visados con contrato previo y cupo anual votado en el Congreso.",
+   "cita": "Moratoria total, durante toda la legislatura, a la inmigración procedente de países que no colaboran contra las mafias de trata de personas ni readmiten a sus nacionales. Para el resto, solo visados con contrato previo y cupo anual votado en el Congreso. Primero integramos a los que ya están.",
+   "pagina": 18,
+   "cuantificada": true,
+   "apartado": "IV.4"
+  },
+  {
+   "id": "salf-p045",
+   "area": "inmigración",
+   "resumen": "Cupos preferentes para Hispanoamérica y nacionalidad con diez años de residencia legal y examen.",
+   "cita": "Cupos preferentes para Hispanoamérica. Nacionalidad: diez años de residencia legal, examen de cultura y Constitución, sin antecedentes y sin depender de ayudas. Revisión de todas las obtenidas con fraude.",
+   "pagina": 18,
+   "cuantificada": true,
+   "apartado": "IV.5"
+  },
+  {
+   "id": "salf-p046",
+   "area": "inmigración",
+   "resumen": "Pérdida de la residencia por condena de más de un año y de la nacionalidad para dobles nacionales por delitos graves.",
+   "cita": "Condena de más de un año: pérdida de la residencia. [...] crimen organizado o delitos sexuales graves: pérdida de la nacionalidad para dobles nacionales.",
+   "pagina": 18,
+   "cuantificada": true,
+   "apartado": "IV.6"
+  },
+  {
+   "id": "salf-p047",
+   "area": "inmigración",
+   "resumen": "Prueba radiológica y dental de edad obligatoria antes de entrar en un centro de menores.",
+   "cita": "Prueba radiológica y dental obligatoria antes de entrar en un centro de menores. Repatriación con la familia como [...] opción. Ni un adulto en un centro con niños.",
+   "pagina": 18,
+   "cuantificada": false,
+   "apartado": "IV.7"
+  },
+  {
+   "id": "salf-p048",
+   "area": "seguridad",
+   "resumen": "Ilegalizar a los Hermanos Musulmanes, prohibir la financiación extranjera del culto y expulsar a imanes que prediquen contra la Constitución.",
+   "cita": "Ilegalización e inclusión en la lista terrorista: Hamás [...] rama, ya está. Prohibición de la financiación extranjera del culto, registro público de donaciones y cierre de quien no cumpla.",
+   "pagina": 19,
+   "cuantificada": false,
+   "apartado": "IV.8"
+  },
+  {
+   "id": "salf-p049",
+   "area": "inmigración",
+   "resumen": "Prohibir el burka y el niqab en el espacio público.",
+   "cita": "Burka y niqab fuera del espacio público, como en Francia [...] Bélgica, Austria, Dinamarca, Países Bajos y Suiza.",
+   "pagina": 19,
+   "cuantificada": false,
+   "apartado": "IV.9"
+  },
+  {
+   "id": "salf-p050",
+   "area": "inmigración",
+   "resumen": "Exigir cinco años de residencia legal y cotización para prestaciones no contributivas, ayudas al alquiler y vivienda pública, y tasa del 2 % a remesas.",
+   "cita": "Ninguna prestación no contributiva, ayuda al alquiler [...] pública sin cinco años de residencia legal [...] Tasa del 2 % a las remesas hacia países que no [...] Ahorro: ≈ 1.000 M€/año.",
+   "pagina": 19,
+   "cuantificada": true,
+   "apartado": "IV.10"
+  },
+  {
+   "id": "salf-p051",
+   "area": "pensiones",
+   "resumen": "Dar rango constitucional a la revalorización de las pensiones con el IPC y a la prohibición de recortes.",
+   "cita": "Revalorización con el IPC y prohibición de recortes [...] rango constitucional. A quien ya cobra no se le toca un euro.",
+   "pagina": 20,
+   "cuantificada": false,
+   "apartado": "V.1"
+  },
+  {
+   "id": "salf-p052",
+   "area": "pensiones",
+   "resumen": "Enviar cada año a cada cotizante su pensión estimada y el saldo de su cuenta individual.",
+   "cita": "Cada año recibes tu pensión estimada y el saldo",
+   "pagina": 20,
+   "cuantificada": false,
+   "apartado": "V.2"
+  },
+  {
+   "id": "salf-p053",
+   "area": "pensiones",
+   "resumen": "Cuenta individual obligatoria y heredable con el 2 % del salario para menores de 45 años.",
+   "cita": "Menores de 45 años: el 2 % del salario a una cuenta [...] obligatoria, tuya, heredable, con comisión máxima del 0,3 %. El 0,9 % ya lo pagas y hoy va a una hucha común. Coste de transición: ≈ 6.000 M€/año hasta 2030.",
+   "pagina": 20,
+   "cuantificada": true,
+   "apartado": "V.3"
+  },
+  {
+   "id": "salf-p054",
+   "area": "empleo",
+   "resumen": "Mochila austriaca: aportación empresarial del 1,53 % del salario a una cuenta del trabajador.",
+   "cita": "El 1,53 % del salario, a cargo de la empresa, a tu cuenta [...] desde el primer día. Te la llevas al cambiar de trabajo y la cobras al jubilarte si no la usas.",
+   "pagina": 20,
+   "cuantificada": true,
+   "apartado": "V.4"
+  },
+  {
+   "id": "salf-p055",
+   "area": "pensiones",
+   "resumen": "Compatibilizar el 100 % de la pensión con el trabajo y jubilación sin penalización con 40 años cotizados.",
+   "cita": "Cobra el 100 % de la pensión y sigue trabajando [...] ni cotizaciones extra. Con 40 años cotizados te jubilas cuando quieras, sin penalización.",
+   "pagina": 20,
+   "cuantificada": true,
+   "apartado": "V.5"
+  },
+  {
+   "id": "salf-p056",
+   "area": "pensiones",
+   "resumen": "Pensión mínima de 1.000 euros en 14 pagas con 35 años cotizados.",
+   "cita": "Nadie que haya cotizado 35 años cobrará menos de 1.000 [...] euros en 14 pagas. Coste: ≈ 2.000 M€/año.",
+   "pagina": 21,
+   "cuantificada": true,
+   "apartado": "V.6"
+  },
+  {
+   "id": "salf-p057",
+   "area": "justicia e instituciones",
+   "resumen": "Suprimir el complemento de pensión de los parlamentarios, las cesantías y los medios vitalicios de expresidentes.",
+   "cita": "Sin complemento parlamentario (la pensión máxima [...] años de escaño), sin cesantías, sin oficinas, coches [...] escoltas vitalicios para expresidentes.",
+   "pagina": 21,
+   "cuantificada": false,
+   "apartado": "V.7"
+  },
+  {
+   "id": "salf-p058",
+   "area": "pensiones",
+   "resumen": "Convertir el Fondo de Reserva en un fondo soberano con gestión profesional independiente.",
+   "cita": "Fondo soberano con gestión profesional independiente [...] mandato de rentabilidad. Ningún ministro vuelve a usar [...] hucha para cuadrar un presupuesto.",
+   "pagina": 21,
+   "cuantificada": false,
+   "apartado": "V.8"
+  },
+  {
+   "id": "salf-p059",
+   "area": "pensiones",
+   "resumen": "Libertad de elección de la base de cotización de los autónomos.",
+   "cita": "Libertad de base de cotización. Quien quiera más pensión [...] cotiza más, sin tramos impuestos.",
+   "pagina": 21,
+   "cuantificada": false,
+   "apartado": "V.9"
+  },
+  {
+   "id": "salf-p060",
+   "area": "pensiones",
+   "resumen": "Publicar por separado cotizaciones y transferencias del Estado y reconocer la deuda de la Seguridad Social con calendario de pago.",
+   "cita": "Cotizaciones por un lado, transferencias del Estado [...] otro, publicadas con cada nómina. La deuda [...] Social, reconocida y con calendario de pago.",
+   "pagina": 21,
+   "cuantificada": false,
+   "apartado": "V.10"
+  },
+  {
+   "id": "salf-p061",
+   "area": "sanidad",
+   "resumen": "Central de compras sanitarias única y obligatoria con precios netos públicos y un 15 % de ahorro destinado a personal.",
+   "cita": "Diecisiete servicios compran lo mismo a precios distintos. [...] Central única obligatoria con precios netos públicos: 15 % de ahorro, íntegro para sueldos y plazas.",
+   "pagina": 22,
+   "cuantificada": true,
+   "apartado": "VI.1"
+  },
+  {
+   "id": "salf-p062",
+   "area": "sanidad",
+   "resumen": "Plazos máximos de 60 días para cirugía, 30 para especialista y 7 para pruebas; superados, el paciente elige centro pagado por la sanidad pública.",
+   "cita": "60 días para cirugía, 30 para especialista, 7 para pruebas prioritarias. Superado el plazo, eliges centro, público o privado, y lo paga la sanidad pública. Coste: ≈ 1.500 M€/año.",
+   "pagina": 22,
+   "cuantificada": true,
+   "apartado": "VI.2"
+  },
+  {
+   "id": "salf-p063",
+   "area": "sanidad",
+   "resumen": "Subir un 20 % el sueldo de los médicos y un 10 % el del resto de profesionales sanitarios en cuatro años.",
+   "cita": "Subida del 20 % a médicos y del 10 % a enfermería y al resto de profesionales [...] en cuatro años, 30.000 euros de complemento en plazas rurales y contratos estables desde [...] día. Coste: ≈ 5.500 M€/año; lo paga la central de compras.",
+   "pagina": 22,
+   "cuantificada": true,
+   "apartado": "VI.3"
+  },
+  {
+   "id": "salf-p064",
+   "area": "sanidad",
+   "resumen": "Tarjeta sanitaria, historia clínica y receta únicas válidas en toda España.",
+   "cita": "Válidas en toda España. Tu analítica de Sevilla se ve [...] Coste: 300 M€, una sola vez.",
+   "pagina": 23,
+   "cuantificada": true,
+   "apartado": "VI.4"
+  },
+  {
+   "id": "salf-p065",
+   "area": "sanidad",
+   "resumen": "10.000 camas y 1.500 camas de UCI más en cuatro años.",
+   "cita": "España tiene 2,8 camas por cada 1.000 habitantes [...] 5,1. Inversión: ≈ 3.000 M€ en la legislatura.",
+   "pagina": 23,
+   "cuantificada": true,
+   "apartado": "VI.5"
+  },
+  {
+   "id": "salf-p066",
+   "area": "sanidad",
+   "resumen": "Cita con el médico de familia en 48 horas o consulta privada pagada por el sistema.",
+   "cita": "Si no la hay, consulta privada pagada por el Sistema. [...] para crónicos, enfermería que prescribe [...] para que el médico no rellene papeles. Coste: ≈ 800 M€/año.",
+   "pagina": 23,
+   "cuantificada": true,
+   "apartado": "VI.6"
+  },
+  {
+   "id": "salf-p067",
+   "area": "sanidad",
+   "resumen": "Limitar la tarjeta sanitaria a españoles y residentes legales con cotización o cobertura, con urgencias para todos.",
+   "cita": "Tarjeta para españoles y residentes legales con cotización [...] o cobertura. Urgencias para todos, siempre. Facturación [...] real a los países y aseguradoras de terceros.",
+   "pagina": 23,
+   "cuantificada": false,
+   "apartado": "VI.7"
+  },
+  {
+   "id": "salf-p068",
+   "area": "sanidad",
+   "resumen": "Subasta nacional de genéricos y biosimilares y copago cero para pensiones mínimas y enfermos crónicos.",
+   "cita": "Subasta nacional de genéricos y biosimilares. Copago cero [...] para pensiones mínimas y enfermos crónicos. Coste: ≈ 200 M€/año.",
+   "pagina": 23,
+   "cuantificada": true,
+   "apartado": "VI.8"
+  },
+  {
+   "id": "salf-p069",
+   "area": "sanidad",
+   "resumen": "Copago farmacéutico cero para menores de 3 años en toda España.",
+   "cita": "Copago cero en farmacia para todos los menores [...] 3 años, en toda España. Hoy, en muchas comunidades, la gratuidad se acaba al cumplir un año. [...] Coste: ≈ 30 M€/año.",
+   "pagina": 23,
+   "cuantificada": true,
+   "apartado": "VI.9"
+  },
+  {
+   "id": "salf-p070",
+   "area": "sanidad",
+   "resumen": "Un psicólogo clínico por cada 10.000 habitantes en atención primaria y atención en 15 días.",
+   "cita": "Un psicólogo clínico por cada 10.000 habitantes [...] centros de salud y atención en 15 días. Coste: ≈ 500 M€/año.",
+   "pagina": 24,
+   "cuantificada": true,
+   "apartado": "VI.10"
+  },
+  {
+   "id": "salf-p071",
+   "area": "sanidad",
+   "resumen": "Gerentes de hospital por concurso con mandato de cinco años y datos de cada hospital públicos en tiempo real.",
+   "cita": "Dirección de hospitales por méritos con mandato de cinco [...] años. Cuentas, listas de espera y resultados de cada hospital, públicos [...] en tiempo real.",
+   "pagina": 24,
+   "cuantificada": true,
+   "apartado": "VI.11"
+  },
+  {
+   "id": "salf-p072",
+   "area": "sanidad",
+   "resumen": "Prueba de paternidad gratuita al nacer salvo renuncia de ambos progenitores.",
+   "cita": "Derecho a una prueba de paternidad gratuita e inmediata [...] el propio hospital, al nacer, salvo renuncia expresa [...] progenitores. Coste: ≈ 30 M€/año.",
+   "pagina": 24,
+   "cuantificada": true,
+   "apartado": "VI.12"
+  },
+  {
+   "id": "salf-p073",
+   "area": "justicia e instituciones",
+   "resumen": "Declarar imprescriptibles los delitos de corrupción cometidos por cargos públicos.",
+   "cita": "Cohecho, malversación, prevaricación, tráfico [...] y financiación ilegal cometidos por cargos públicos [...] Hoy prescriben entre 5 y 15 años: el ladrón solo tiene que esperar.",
+   "pagina": 25,
+   "cuantificada": false,
+   "apartado": "VII.1"
+  },
+  {
+   "id": "salf-p074",
+   "area": "justicia e instituciones",
+   "resumen": "Cumplimiento íntegro y prohibición legal del indulto para condenados por corrupción.",
+   "cita": "Cumplimiento íntegro para condenados por corrupción [...] prohibición legal de indulto. El poder no puede perdonar a los que robaron para el poder.",
+   "pagina": 25,
+   "cuantificada": false,
+   "apartado": "VII.2"
+  },
+  {
+   "id": "salf-p075",
+   "area": "justicia e instituciones",
+   "resumen": "Reforma constitucional para prohibir las amnistías y condicionar los indultos.",
+   "cita": "Reforma de la Constitución para prohibir expresamente [...] amnistías y condicionar los indultos a requisitos [...] su utilización política: solicitud por el órgano [...] en la misma sentencia condenatoria e informe favorable del CGPJ o de un órgano ad hoc sin influencia política en su composición.",
+   "pagina": 26,
+   "cuantificada": false,
+   "apartado": "VII.3"
+  },
+  {
+   "id": "salf-p076",
+   "area": "justicia e instituciones",
+   "resumen": "Responsabilidad civil del triple, decomiso del patrimonio no justificado e inhabilitación de empresas corruptoras durante quince años.",
+   "cita": "Responsabilidad civil del triple, decomiso de todo [...] no justificado y ningún beneficio hasta restituir. [...] condenado pierde la plaza para siempre [...] corruptora, quince años sin contratar con el Estado.",
+   "pagina": 26,
+   "cuantificada": true,
+   "apartado": "VII.4"
+  },
+  {
+   "id": "salf-p077",
+   "area": "justicia e instituciones",
+   "resumen": "Recompensa del 15 % de lo recuperado para quien denuncie corrupción, con anonimato y protección.",
+   "cita": "El 15 % de lo recuperado, libre de impuestos [...] protección laboral y una autoridad independiente con capacidad de sancionar.",
+   "pagina": 26,
+   "cuantificada": true,
+   "apartado": "VII.5"
+  },
+  {
+   "id": "salf-p078",
+   "area": "justicia e instituciones",
+   "resumen": "Fiscal General elegido por tres quintos del Congreso con mandato de seis años.",
+   "cita": "Elegido por tres quintos del Congreso entre fiscales [...] 25 años de carrera, mandato de seis años no coincidente [...] con la legislatura.",
+   "pagina": 27,
+   "cuantificada": true,
+   "apartado": "VII.6"
+  },
+  {
+   "id": "salf-p079",
+   "area": "justicia e instituciones",
+   "resumen": "Ampliar Anticorrupción a 100 fiscales, Antidroga a 40, cubrir Vigilancia Aduanera y duplicar el SEPBLAC.",
+   "cita": "pasa a 100 fiscales con unidad propia de peritos [...] Antidroga, a 40; Vigilancia Aduanera cubre todas sus vacantes en dos años y el SEPBLAC duplica su plantilla. Presupuesto propio por ley, fuera del alcance del ministro.",
+   "pagina": 27,
+   "cuantificada": true,
+   "apartado": "VII.7"
+  },
+  {
+   "id": "salf-p080",
+   "area": "justicia e instituciones",
+   "resumen": "Suprimir el Tribunal Constitucional y trasladar el control de constitucionalidad a una sala del Tribunal Supremo.",
+   "cita": "Reforma de la Constitución para suprimir el Tribunal [...] y atribuir la potestad de control [...] de las leyes y de las actuaciones de los poderes [...] a una sala especial del Tribunal Supremo.",
+   "pagina": 27,
+   "cuantificada": false,
+   "apartado": "VII.8"
+  },
+  {
+   "id": "salf-p081",
+   "area": "justicia e instituciones",
+   "resumen": "Reforma constitucional para que el CGPJ se elija por jueces, antigüedad o sorteo y nuevos delitos contra la independencia judicial.",
+   "cita": "Reforma de la Constitución para garantizar [...] del Consejo General del Poder Judicial [...] determinada por criterios excluyentes de cualquier [...] política: elección por jueces y magistrados",
+   "pagina": 28,
+   "cuantificada": false,
+   "apartado": "VII.9"
+  },
+  {
+   "id": "salf-p082",
+   "area": "justicia e instituciones",
+   "resumen": "Blindar en la Constitución la acción popular sin restricciones.",
+   "cita": "La ley no podrá vetar ni restringir el ejercicio de la acción [...] popular a ninguna persona física o jurídica, y podrá [...] la posibilidad de ejercerla a entes sin personalidad.",
+   "pagina": 28,
+   "cuantificada": false,
+   "apartado": "VII.10"
+  },
+  {
+   "id": "salf-p083",
+   "area": "justicia e instituciones",
+   "resumen": "Suprimir los aforamientos con una reforma constitucional presentada el primer día.",
+   "cita": "Los 17.621 aforados, juzgados por el mismo juez que tú. [...] Reforma constitucional presentada el primer día.",
+   "pagina": 28,
+   "cuantificada": true,
+   "apartado": "VII.11"
+  },
+  {
+   "id": "salf-p084",
+   "area": "justicia e instituciones",
+   "resumen": "Cinco años de incompatibilidad para pasar a empresas reguladas o a presidir órganos de control.",
+   "cita": "Cinco años de incompatibilidad para pasar a empresas [...] y cinco para que un exministro o dirigente [...] presida el Poder Judicial, la sala constitucional [...] el Banco de España, la CNMC",
+   "pagina": 28,
+   "cuantificada": true,
+   "apartado": "VII.12"
+  },
+  {
+   "id": "salf-p085",
+   "area": "justicia e instituciones",
+   "resumen": "Contratación pública en plataforma única con subasta inversa y auditoría de emergencias en 30 días.",
+   "cita": "Plataforma única, subasta inversa y precios de referencia en tiempo real. Toda emergencia auditada en 30 días [...] íntegra en 24 horas con los beneficiarios reales.",
+   "pagina": 29,
+   "cuantificada": true,
+   "apartado": "VII.13"
+  },
+  {
+   "id": "salf-p086",
+   "area": "justicia e instituciones",
+   "resumen": "Publicar en 24 horas todo gasto público mayor de 1.000 euros en un portal único.",
+   "cita": "Portal único de todas las administraciones: pagos [...] subvenciones, nóminas de altos cargos y asesores, agendas y regalos.",
+   "pagina": 29,
+   "cuantificada": true,
+   "apartado": "VII.14"
+  },
+  {
+   "id": "salf-p087",
+   "area": "justicia e instituciones",
+   "resumen": "Límite de 15 años en cargos públicos y supresión del Senado, el Consejo de Estado y los Consejos Económicos y Sociales.",
+   "cita": "Límite de 15 años en cargos públicos remunerados. Fuera [...] Senado, el Consejo de Estado, los Consejos Económicos [...] Sociales, la publicidad institucional y las subvenciones a sindicatos y patronal. Partidos: 50 % menos. Asesores: de 1.255 a 400.",
+   "pagina": 29,
+   "cuantificada": true,
+   "apartado": "VII.15"
+  },
+  {
+   "id": "salf-p088",
+   "area": "empleo",
+   "resumen": "Reducir la cuña fiscal del 41 % al 29 %, con cotización cero del trabajador en el salario mínimo.",
+   "cita": "Mínimo exento de 35.000, deflactación, el 0,9 % a tu cuenta [...] y cero cotización del trabajador en el salario mínimo. [...] entre lo que cuestas y lo que cobras, doce [...] menos. Coste: ≈ 2.600 M€/año.",
+   "pagina": 30,
+   "cuantificada": true,
+   "apartado": "VIII.1"
+  },
+  {
+   "id": "salf-p089",
+   "area": "empleo",
+   "resumen": "Contrato indefinido único con indemnización creciente de 12 a 33 días más la mochila del 1,53 %.",
+   "cita": "Un solo contrato indefinido con indemnización creciente [...] 12 a 33 días, más la mochila del 1,53 %. Fin de la dualidad y del miedo a cambiar de trabajo.",
+   "pagina": 30,
+   "cuantificada": true,
+   "apartado": "VIII.2"
+  },
+  {
+   "id": "salf-p090",
+   "area": "empleo",
+   "resumen": "Licencia de actividad en 24 horas por declaración responsable (además de la cuota cero de autónomos).",
+   "cita": "Cuota cero, total y para siempre. Licencia de actividad en 24 horas por declaración responsable.",
+   "pagina": 30,
+   "cuantificada": true,
+   "apartado": "VIII.3"
+  },
+  {
+   "id": "salf-p091",
+   "area": "empleo",
+   "resumen": "Que las mutuas den el alta en contingencias comunes a los 15 días con revisión del INSS en 72 horas.",
+   "cita": "Las mutuas dan el alta en contingencias comunes [...] 15 días, con revisión del INSS en 72 horas. Protección total [...] al enfermo de verdad, que es la primera víctima [...] Ahorro: ≈ 2.000 M€/año.",
+   "pagina": 30,
+   "cuantificada": true,
+   "apartado": "VIII.4"
+  },
+  {
+   "id": "salf-p092",
+   "area": "empleo",
+   "resumen": "FP dual con contrato y salario del 50 % del convenio y cotización cero dos años por contratar a menores de 30 y mayores de 50.",
+   "cita": "FP dual con contrato y salario del 50 % del convenio [...] a medias por empresa y Estado. Cotización cero durante [...] dos años por contratar a menores de 30 y mayores de 50. Coste: ≈ 1.500 M€/año.",
+   "pagina": 31,
+   "cuantificada": true,
+   "apartado": "VIII.5"
+  },
+  {
+   "id": "salf-p093",
+   "area": "empleo",
+   "resumen": "Derogar dos normas por cada nueva regulación que afecte a empresas.",
+   "cita": "Por cada regulación nueva que afecte a empresas, dos [...] Unidad de mercado real: lo que vale en una comunidad vale en todas.",
+   "pagina": 31,
+   "cuantificada": false,
+   "apartado": "VIII.6"
+  },
+  {
+   "id": "salf-p094",
+   "area": "empleo",
+   "resumen": "Que la Seguridad Social pague las bajas por enfermedad desde el primer día.",
+   "cita": "Las bajas por enfermedad las paga la Seguridad Social [...] el primer día, no la empresa, que hoy carga [...] Coste: ≈ 3.000 M€/año; lo compensa la reducción del absentismo.",
+   "pagina": 31,
+   "cuantificada": true,
+   "apartado": "VIII.7"
+  },
+  {
+   "id": "salf-p095",
+   "area": "empleo",
+   "resumen": "Contar a los fijos discontinuos sin actividad como parados.",
+   "cita": "Un fijo discontinuo cuenta como [...] solo cuando trabaja; el resto del tiempo, como lo que es: un parado. Se acabó la trampa estadística.",
+   "pagina": 32,
+   "cuantificada": false,
+   "apartado": "VIII.8"
+  },
+  {
+   "id": "salf-p096",
+   "area": "justicia e instituciones",
+   "resumen": "Oposiciones anónimas y digitales con tribunales sorteados y grabados.",
+   "cita": "Todas las oposiciones y concursos 100 % anónimos [...] con tribunales sorteados y grabados.",
+   "pagina": 32,
+   "cuantificada": false,
+   "apartado": "VIII.9"
+  },
+  {
+   "id": "salf-p097",
+   "area": "empleo",
+   "resumen": "Fin de la prestación tras rechazar dos ofertas y complemento para que el Ingreso Mínimo baje 50 céntimos por euro ganado.",
+   "cita": "Rechazar dos ofertas adecuadas: fin de la prestación. [...] complemento salarial para que el Ingreso Mínimo baje 50 céntimos por cada euro ganado, no uno a uno.",
+   "pagina": 32,
+   "cuantificada": true,
+   "apartado": "VIII.10"
+  },
+  {
+   "id": "salf-p098",
+   "area": "educación",
+   "resumen": "Ley educativa aprobada por dos tercios y solo reformable con esa mayoría, con contenidos comunes al 100 % y selectividad única en castellano.",
+   "cita": "Aprobada por dos tercios y blindada: no se cambia [...] misma mayoría. Contenidos mínimos comunes al 100 % [...] evaluaciones externas al final de cada etapa y selectividad única y en castellano en toda España.",
+   "pagina": 33,
+   "cuantificada": true,
+   "apartado": "IX.1"
+  },
+  {
+   "id": "salf-p099",
+   "area": "educación",
+   "resumen": "Derecho exigible a la enseñanza en castellano en toda España con Alta Inspección sancionadora.",
+   "cita": "Derecho a la enseñanza en castellano en toda España [...] por la familia, con Alta Inspección estatal",
+   "pagina": 33,
+   "cuantificada": false,
+   "apartado": "IX.2"
+  },
+  {
+   "id": "salf-p100",
+   "area": "educación",
+   "resumen": "MIR docente: dos años de prácticas remuneradas con tutor y examen nacional de acceso.",
+   "cita": "Dos años de prácticas remuneradas con tutor y examen [...] de acceso. El mejor profesor de España enseña [...] quiera. Coste: ≈ 400 M€/año.",
+   "pagina": 33,
+   "cuantificada": true,
+   "apartado": "IX.3"
+  },
+  {
+   "id": "salf-p101",
+   "area": "educación",
+   "resumen": "Profesor autoridad pública y subida salarial del 10 % en la legislatura.",
+   "cita": "Autoridad pública en toda España, 10 % más de sueldo en la legislatura y menos burocracia: un profesor está [...] Coste: ≈ 2.500 M€/año.",
+   "pagina": 33,
+   "cuantificada": true,
+   "apartado": "IX.4"
+  },
+  {
+   "id": "salf-p102",
+   "area": "educación",
+   "resumen": "Aprendizaje remunerado desde los 15 años, tutor individual para alumnos en riesgo y fin del aprobado automático.",
+   "cita": "Aprendizaje remunerado desde los 15, tutor individual y fin [...] del aprobado automático: se titula cuando se ha aprendido.",
+   "pagina": 33,
+   "cuantificada": false,
+   "apartado": "IX.5"
+  },
+  {
+   "id": "salf-p103",
+   "area": "educación",
+   "resumen": "Cheque escolar del mismo importe por alumno válido en centros públicos, concertados y privados.",
+   "cita": "Cheque escolar válido en pública, concertada y privada [...] con el mismo importe por alumno y resultados públicos [...] cada centro. Elegir colegio no puede ser un lujo.",
+   "pagina": 34,
+   "cuantificada": true,
+   "apartado": "IX.6"
+  },
+  {
+   "id": "salf-p104",
+   "area": "educación",
+   "resumen": "Contenidos fijados por un Consejo Académico independiente y neutralidad ideológica obligatoria en el aula con sanción.",
+   "cita": "Los contenidos los fija un Consejo Académico [...] no el Gobierno de turno. Neutralidad ideológica [...] en el aula, prohibición de propaganda de partidos [...] en horario lectivo, libros de texto revisados [...] inspección y sanción.",
+   "pagina": 34,
+   "cuantificada": false,
+   "apartado": "IX.7"
+  },
+  {
+   "id": "salf-p105",
+   "area": "educación",
+   "resumen": "Mismo temario de Historia en toda España y Economía y Constitución obligatorias en Secundaria.",
+   "cita": "El mismo temario de Historia en toda España. Economía [...] Constitución obligatorias en Secundaria: qué es un impuesto, una hipoteca, una pensión.",
+   "pagina": 34,
+   "cuantificada": false,
+   "apartado": "IX.8"
+  },
+  {
+   "id": "salf-p106",
+   "area": "educación",
+   "resumen": "Beca-salario de 2.000 euros para FP superior en sectores con déficit y financiación universitaria ligada a la inserción laboral.",
+   "cita": "Industria, construcción, energía, sanidad, digital. [...] financiadas en parte por la inserción laboral de sus [...] Coste: ≈ 400 M€/año.",
+   "pagina": 34,
+   "cuantificada": true,
+   "apartado": "IX.9"
+  },
+  {
+   "id": "salf-p107",
+   "area": "educación",
+   "resumen": "5.000 auxiliares nativos más y certificación B2 de inglés pagada por el Estado al terminar Bachillerato.",
+   "cita": "5.000 auxiliares nativos más, certificación B2 al terminar [...] Bachillerato pagada por el Estado y versión original [...] televisión pública infantil. Coste: ≈ 250 M€/año.",
+   "pagina": 34,
+   "cuantificada": true,
+   "apartado": "IX.10"
+  },
+  {
+   "id": "salf-p108",
+   "area": "exterior y defensa",
+   "resumen": "Referéndum para renegociar la pertenencia a la UE y, si se rechaza la renegociación, segundo referéndum de salida.",
+   "cita": "justifica un referéndum de renegociación. Si Bruselas rechaza renegociar, segundo referéndum: la salida.",
+   "pagina": 35,
+   "cuantificada": false,
+   "apartado": "X.1"
+  },
+  {
+   "id": "salf-p109",
+   "area": "agricultura y medio rural",
+   "resumen": "Vetar en el Consejo de la UE el acuerdo con Mercosur, el recorte de la PAC y el Pacto Verde.",
+   "cita": "Mercosur se aplica desde mayo de 2026 contra el voto [...] Francia; el recorte del 20 % de la PAC quita 877 millones al año al campo español; la Ley de Restauración deja [...] hasta el 40 % de la Red Natura. España lo veta en el Consejo",
+   "pagina": 35,
+   "cuantificada": false,
+   "apartado": "X.2"
+  },
+  {
+   "id": "salf-p110",
+   "area": "seguridad",
+   "resumen": "Aplicar la legislación antiterrorista con penas máximas por la mera pertenencia a los Hermanos Musulmanes y redes de radicalización.",
+   "cita": "Persecución total contra sus miembros, bloqueo económico total y aplicación de la ley del terrorismo, con sus penas máximas, por la mera pertenencia a esta y otras redes de radicalización islámica.",
+   "pagina": 35,
+   "cuantificada": false,
+   "apartado": "X.3"
+  },
+  {
+   "id": "salf-p111",
+   "area": "exterior y defensa",
+   "resumen": "Bloqueo comercial total a Marruecos si bloquea un puerto español o usa la inmigración como ataque híbrido.",
+   "cita": "Bloqueo comercial total a todo puerto marroquí si el país [...] alauí sigue bloqueando un solo puerto español. [...] de los territorios del Rif si el Parlamento marroquí no rechaza la exigencia de soberanía sobre Ceuta, Melilla, las Islas Canarias y cualquier otro territorio español.",
+   "pagina": 36,
+   "cuantificada": false,
+   "apartado": "X.4"
+  },
+  {
+   "id": "salf-p112",
+   "area": "modelo territorial",
+   "resumen": "IRPF, Sociedades y cotizaciones empresariales al 0 % en Ceuta y Melilla.",
+   "cita": "no paga IRPF, la empresa que crea empleo allí no paga Sociedades durante diez años y la cotización [...] queda al 0 %. Puerto franco y aduana comercial abierta por España, con o sin Marruecos. [...] Coste: ≈ 280 M€/año (156 de IRPF, 44 de Sociedades, 73 de cotizaciones)",
+   "pagina": 36,
+   "cuantificada": true,
+   "apartado": "X.5"
+  },
+  {
+   "id": "salf-p113",
+   "area": "modelo territorial",
+   "resumen": "Deducción de 1.000 euros en el IRPF para residentes en Canarias y ZEC al 0 %.",
+   "cita": "Deducción de 1.000 euros en la cuota del IRPF para cada [...] contribuyente residente en Canarias desde la renta de 2027: 1,09 millones de canarios. Zona Especial Canaria al 0 % de Sociedades (hoy, 4 %) para la empresa que cree cinco empleos en las islas. [...] Coste: ≈ 880 M€/año (870 de IRPF, 11 de la ZEC).",
+   "pagina": 36,
+   "cuantificada": true,
+   "apartado": "X.6"
+  },
+  {
+   "id": "salf-p114",
+   "area": "exterior y defensa",
+   "resumen": "5.000 militares y 1.000 guardias civiles más en Ceuta y Melilla y defensa antiaérea y antidrón en Ceuta, Melilla y Canarias.",
+   "cita": "brigada completa en cada ciudad, con la V Bandera de la Legión [...] 5.000 militares y 1.000 guardias civiles más en las dos plazas; baterías NASAMS y red antidrón en Ceuta, Melilla y cada isla canaria [...] Coste: ≈ 500 M€/año, dentro del 2 % del PIB de Defensa.",
+   "pagina": 37,
+   "cuantificada": true,
+   "apartado": "X.7"
+  },
+  {
+   "id": "salf-p115",
+   "area": "exterior y defensa",
+   "resumen": "Duplicar la indemnización por residencia, exenta de IRPF, para personal del Estado en Canarias, Ceuta y Melilla.",
+   "cita": "Se duplica para militares [...] civiles, policías y funcionarios del Estado destinados en los tres territorios, exenta de IRPF y con vivienda militar o alquiler pagado en Ceuta y Melilla. [...] Coste: ≈ 150 M€/año.",
+   "pagina": 37,
+   "cuantificada": true,
+   "apartado": "X.8"
+  },
+  {
+   "id": "salf-p116",
+   "area": "exterior y defensa",
+   "resumen": "Negociar con el Reino Unido la cosoberanía de Gibraltar y el fin de su régimen fiscal.",
+   "cita": "Negociación bilateral con Londres [...] como primer paso y fin del paraíso fiscal, como pide la ONU desde 1965.",
+   "pagina": 37,
+   "cuantificada": false,
+   "apartado": "X.9"
+  },
+  {
+   "id": "salf-p117",
+   "area": "exterior y defensa",
+   "resumen": "Volver a la posición de la ONU sobre el Sáhara y firmar un tratado de amistad y contratos de gas con Argelia.",
+   "cita": "Vuelta a la posición de la ONU, tratado de amistad con Argelia y contratos de gas a largo plazo",
+   "pagina": 38,
+   "cuantificada": false,
+   "apartado": "X.10"
+  },
+  {
+   "id": "salf-p118",
+   "area": "exterior y defensa",
+   "resumen": "Comunidad Hispánica de naciones con libre comercio, reconocimiento de títulos y cupos preferentes.",
+   "cita": "Libre comercio, reconocimiento de títulos y cupos [...] con las naciones hispanas que lo quieran; cumbre anual en Madrid",
+   "pagina": 38,
+   "cuantificada": false,
+   "apartado": "X.11"
+  },
+  {
+   "id": "salf-p119",
+   "area": "exterior y defensa",
+   "resumen": "Gasto de defensa del 2 % con prioridad a la industria nacional y retribuciones militares equiparadas a la Guardia Civil.",
+   "cita": "equiparadas a la Guardia Civil (un soldado cobra hoy 1.300 euros netos); profesión de riesgo para todos los militares, también los de Clases Pasivas, con jubilación [...] nueva Ley de derechos y deberes, con libertad de expresión y asociaciones profesionales con capacidad de negociar [...] Coste: ≈ 1.200 M€/año en retribuciones, dentro del 2 % del PIB.",
+   "pagina": 38,
+   "cuantificada": true,
+   "apartado": "X.12"
+  },
+  {
+   "id": "salf-p120",
+   "area": "exterior y defensa",
+   "resumen": "Registro de agentes extranjeros y prohibición de financiación extranjera de partidos, medios y ONG que hagan política.",
+   "cita": "Ley de agentes extranjeros: quien trabaje para un gobierno [...] fundación o empresa extranjera se inscribe o comete delito. Prohibida la financiación extranjera de partidos [...] políticas, medios y ONG que hagan política.",
+   "pagina": 39,
+   "cuantificada": false,
+   "apartado": "X.13"
+  },
+  {
+   "id": "salf-p121",
+   "area": "exterior y defensa",
+   "resumen": "Recortar la ayuda oficial al desarrollo salvo emergencias humanitarias y programas condicionados a readmisión.",
+   "cita": "4.550 millones al año de ayuda oficial al desarrollo. [...] salvo emergencias humanitarias y programas [...] para España: readmisión de nacionales en 72 horas, respeto a la soberanía (quien reclame Ceuta, Melilla [...] no cobra) y cooperación contra el narcotráfico y el yihadismo. [...] Ahorro: ≈ 4.500 M€/año, ya contado en 'Cómo se paga'.",
+   "pagina": 39,
+   "cuantificada": true,
+   "apartado": "X.14"
+  }
+ ],
+ "prioridades": [
+  {
+   "id": "salf-01",
+   "propuesta": "salf-p002",
+   "justificacion": "Primer elemento del compromiso 1 en la página de los «10 compromisos» («Tu primera casa, un 35 % más barata», p. 4); es el lema de la sección I (p. 5) y se repite en la cabecera de las pp. 6-7. Es la medida n.º 1 de vivienda y la única de la sección con coste asignado a una fuente concreta («Lo paga el sobrecoste autonómico»)."
+  },
+  {
+   "id": "salf-02",
+   "propuesta": "salf-p004",
+   "justificacion": "Segundo elemento del compromiso 1 («Okupa fuera en 48 horas», p. 4) y segunda frase del lema de la sección I (p. 5: «Y el okupa, fuera en 48 horas»), repetida en la cabecera de las pp. 6-7. Se selecciona como segunda prioridad del compromiso 1 por aparecer a la vez en los compromisos y en el lema de sección."
+  },
+  {
+   "id": "salf-03",
+   "propuesta": "salf-p012",
+   "justificacion": "Único elemento del compromiso 2 («Macrocárcel sin tercer grado para corruptos y criminales», p. 4). Es la medida n.º 1 de seguridad (p. 8) y se repite en la sección de corrupción con un recuadro propio («Modelo de macrocárcel SALF», p. 25)."
+  },
+  {
+   "id": "salf-04",
+   "propuesta": "salf-p026",
+   "justificacion": "Único elemento del compromiso 3 («Nadie paga IRPF por los primeros 35.000 euros», p. 4) y lema de la sección III (p. 12), repetido en la cabecera de las pp. 13-15. Es la partida mayor de la tabla «Cómo se paga» (p. 16) y vuelve a aparecer en la medida n.º 1 de empleo (p. 30)."
+  },
+  {
+   "id": "salf-05",
+   "propuesta": "salf-p041",
+   "justificacion": "Primer elemento del compromiso 4 («Solo legal. Expulsión en 48 horas», p. 4), lema de la sección IV (p. 17) y cabecera de las pp. 18-19; medida n.º 1 de inmigración."
+  },
+  {
+   "id": "salf-06",
+   "propuesta": "salf-p044",
+   "justificacion": "Segundo elemento del compromiso 4 («Paralización total de inmigración de países no colaboradores contra las mafias de trata de personas», p. 4), que es también el lema de la sección IV (p. 17) y la cabecera de las pp. 18-19. Se evalúa junto con la medida n.º 3 de la misma sección (condicionar visados, ayudas y preferencias comerciales a la readmisión), que define qué es un país no colaborador.",
+   "propuestas_relacionadas": [
+    "salf-p043"
+   ]
+  },
+  {
+   "id": "salf-07",
+   "propuesta": "salf-p053",
+   "justificacion": "Compromiso 5: «Reforma urgente contra el sistema fraudulento actual» (p. 4). El compromiso no nombra la medida; la sección V la concreta en su lema («Las de mañana, a tu nombre», p. 20) y la única reforma estructural de la sección es esta cuenta individual (medida n.º 3), con coste de transición propio."
+  },
+  {
+   "id": "salf-08",
+   "propuesta": "salf-p061",
+   "justificacion": "Primer elemento del compromiso 6 («Una central de compras», p. 4), lema de la sección VI (p. 22) y cita de cierre de la sección («Con lo que se pierde comprando se pagan los médicos», p. 24). Financia, según el programa, la medida n.º 3 de sanidad (subida salarial de 5.500 M€), que se evalúa junto a ella.",
+   "propuestas_relacionadas": [
+    "salf-p063"
+   ]
+  },
+  {
+   "id": "salf-09",
+   "propuesta": "salf-p073",
+   "justificacion": "Primer elemento del compromiso 7 («Imprescriptible», p. 4), lema de la sección VII (p. 25) y cabecera de las pp. 26-29; medida n.º 1 de corrupción."
+  },
+  {
+   "id": "salf-10",
+   "propuesta": "salf-p029",
+   "justificacion": "Compromiso 8 («Eliminación total de la cuota de autónomos», p. 4). Es la única medida que aparece dos veces en el documento (impuestos n.º 4, p. 12, y empleo n.º 3, p. 30). El primer elemento del compromiso 8, la cuña fiscal del 41 al 29 % (p. 30), se compone del mínimo exento de 35.000 € (ya prioridad salf-04) y de otras medidas, por lo que no se selecciona por separado.",
+   "propuestas_relacionadas": [
+    "salf-p090"
+   ]
+  },
+  {
+   "id": "salf-11",
+   "propuesta": "salf-p098",
+   "justificacion": "Primer elemento del compromiso 9 («Ley de 20 años», p. 4) y medida n.º 1 de educación (p. 33); incluye el segundo elemento del compromiso («Castellano garantizado») en la selectividad «única y en castellano»."
+  },
+  {
+   "id": "salf-12",
+   "propuesta": "salf-p108",
+   "justificacion": "Primer elemento del compromiso 10 («Referéndum de renegociación europea», p. 4) y medida n.º 1 de geopolítica (p. 35); el lema de la sección empieza por «Ni Bruselas» (p. 35) y se repite en las cabeceras de las pp. 36-39."
+  }
+ ]
+}
