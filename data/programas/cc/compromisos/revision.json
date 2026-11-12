@@ -1,0 +1,50 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-12",
+ "base": "complemento",
+ "alcance": "1 prioridad (cc-c01) × 8 criterios. Se abrieron las 25 URL distintas de seleccion.json y evaluacion.json: 24 respondieron 200 con petición normal; el BOCG 113-1 del Congreso devolvió 403 a curl y se leyó con otra petición normal (WebFetch): la disposición transitoria cuarta lleva al personal del art. 6.2.b).2.º de la Ley 55/2003 al Grupo 4 y la quinta supedita los efectos retributivos a un acuerdo y a la Ley de Presupuestos, como dice el texto. Cifras comprobadas en sus fuentes: UGT 133.738 TCAE, 3.241 € y 433.444.858 € (Redacción Médica, 26-2-2024); Mesa de la Profesión Enfermera 600 M€ y 12.000 M€ (nota de 19-4-2021); SAE 200-300 € y 1.600→1.900 € en Canarias; moción del 23-9-2026 (15/39/294); Cantabria (unanimidad, mayo de 2026). verify_quotes: 0 no encontradas.",
+ "seleccion": "La cita es literal en la nota oficial del 26-oct, entre comillas y atribuida a Cristina Valido (cabeza de lista), posterior a la convocatoria y referida a la próxima legislatura (la reforma del Estatuto Marco decayó con la disolución). Es una medida identificable (reclasificar en el Estatuto Marco) y no está en el programa (sin «Estatuto Marco», «clasificación», «técnicos» ni «cuidados de enfermería»; la medida 10 trata de financiación y plantillas). La nota la titula como «compromiso» del partido. Las cifras sindicales y colegiales se presentan como estimaciones no oficiales con su autor.",
+ "igual_estandar": "Financiación «mixta» (coste estimable, sin explicar cómo se paga), igual que otras medidas de gasto con coste estimable y sin financiación (upc-07). Legal «favorable»: ley ordinaria estatal sobre legislación básica.",
+ "recuento_inicial": {
+  "favorable": 1,
+  "mixta": 6,
+  "desfavorable": 0,
+  "no_verificable": 1
+ },
+ "recuento_final": {
+  "favorable": 1,
+  "mixta": 6,
+  "desfavorable": 0,
+  "no_verificable": 1
+ },
+ "recuento_final_nota": "Sin cambios de valoración; seleccion_sha256 recalculado tras corregir el resumen.",
+ "cambios": [
+  {
+   "propuesta": "cc-c01",
+   "criterio": "resumen (seleccion.json y evaluacion.json)",
+   "antes": "técnicos en cuidados de enfermería (al subgrupo C1)",
+   "despues": "técnicos en cuidados de enfermería (que el colectivo pide al subgrupo C1)",
+   "motivo": "El subgrupo C1 lo pide la Plataforma de TCAE en la nota del 26-oct; Valido no lo menciona (tampoco su moción del 23-sep). Se atribuye como en el texto de concreción."
+  },
+  {
+   "propuesta": "cc-c01",
+   "criterio": "beneficiarios (campo de la propuesta)",
+   "antes": "El coste, estimado por los sindicatos en 430-600 millones de euros al año, recaería",
+   "despues": "El coste, estimado en 433 millones de euros al año por UGT (2024) y en 600 millones por la Mesa de la Profesión Enfermera (2021), cifras no oficiales, recaería",
+   "motivo": "La cifra de 600 M€ es de la Mesa de la Profesión Enfermera (Consejo General de Enfermería, colegio profesional, y SATSE), no solo de sindicatos; se presentan como estimaciones no oficiales, con su autor, como en el texto de financiación."
+  },
+  {
+   "propuesta": "cc-c01",
+   "criterio": "financiacion",
+   "antes": "El coste es estimable con datos sindicales, no oficiales: … la Mesa de la Profesión Enfermera lo cifró en 2021 en 600 millones.",
+   "despues": "El coste es estimable con cálculos de organizaciones del sector, no oficiales: … la Mesa de la Profesión Enfermera (Consejo General de Enfermería y el sindicato SATSE), contraria a la medida, lo cifró en 2021 en 600 millones.",
+   "motivo": "atribución exacta: el CGE es un colegio profesional, no un sindicato, y la nota de 2021 se opone a la reclasificación aislada"
+  }
+ ],
+ "dudas": [
+  "La segunda ocasión (balance del 22-oct) es una nota en estilo indirecto que repasa la moción de la legislatura anterior y cita «la reclasificación de los profesionales sanitarios» entre los asuntos pendientes. Se mantiene en «veces» porque la sitúa como asunto pendiente para el 29-N, a diferencia del balance de pnv-c01 (10-oct), que solo describía lo hecho; es una repetición débil.",
+  "Mismo estándar en «descartados»: la equiparación de la Policía Canaria y las instalaciones permanentes de contingencia se descartan por constar solo en estilo indirecto de la nota oficial, pero el proyecto acepta notas oficiales en estilo indirecto como documento del partido (upc, psc-c03, ara_mes_fa, frente_amplio, junts-c03). Ambas tienen además otros motivos de descarte (se exigen al Gobierno en funciones o su financiación ya está en el programa), así que el resultado no cambia, pero el motivo «estilo indirecto» no basta por sí solo."
+ ],
+ "complementos_vacios_comprobados": "Partidos con programa y complemento vacío (comprobado por esta misma revisión): ERC, SALF y Adelante Andalucía descartan bien; se cotejaron contra el texto del programa al menos tres «ya está en el programa, p. N» por partido y todos coinciden (ERC: ITP p. 19 medida 59, fiscalidad de banca y grandes patrimonios p. 22 medidas 74-76, 180 plazas judiciales por reincidencia p. 43; SALF: macrocárcel p. 8, «La corrupción no prescribe» p. 25, 35.000 € libres de IRPF p. 12, cero impuestos primera vivienda p. 5, cláusula de penalización p. 4; Adelante Andalucía: Sareb p. 49, red de supermercados públicos p. 68 medida 313, peaje de la AP-7 p. 131 medida 695, fin del turno partido)."
+}

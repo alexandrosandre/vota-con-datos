@@ -1,0 +1,199 @@
+{
+ "partido": "pnv",
+ "base": "complemento",
+ "modelo": "Claude (Anthropic)",
+ "fecha": "2026-11-12",
+ "nota": "EAJ-PNV publicó su programa para el 29-N el 9-nov-2026 (data/programas/pnv, 43 páginas). Este fichero recoge, con el protocolo del prompt 1b, los compromisos de sus líderes (Aitor Esteban, presidente del EBB; Maribel Vaquero, Idoia Sagastizabal y Gorka Urtaran, cabezas de lista al Congreso por Gipuzkoa, Bizkaia y Araba) y de los documentos oficiales del partido que NO figuran en el programa. Cada medida encontrada se buscó en el texto del programa, también con otras palabras. El programa es amplio y casi todo lo que los líderes han concretado en público ya está en él (vivienda, pensiones, salario mínimo propio, Y vasca y soterramiento, Foronda, Aiaraldea, Treviño, desclasificaciones): esas medidas se descartan con su página. Solo un compromiso queda fuera del programa: volver a presentar la reforma de la Ley Orgánica del Tribunal Constitucional que suprime el recurso previo de inconstitucionalidad contra los Estatutos de Autonomía. Consta en una sola ocasión desde la convocatoria (nota del partido del 25-oct), por lo que es una prioridad con apoyo limitado (véase la justificación). La campaña oficial empezó la noche del 12-nov; los discursos de apertura se han revisado.",
+ "compromisos": [
+  {
+   "id": "pnv-c01",
+   "area": "modelo territorial",
+   "resumen": "Volver a presentar en la próxima legislatura la reforma de la Ley Orgánica del Tribunal Constitucional que suprime el recurso previo de inconstitucionalidad contra los Estatutos de Autonomía y sus reformas (reintroducido en 2015), para que un nuevo Estatuto vasco aprobado por las Cortes no pueda quedar suspendido por ese recurso.",
+   "cita": "ha recordado que el Grupo Vasco presentó en esta última legislatura una modificación de la Ley Orgánica del Tribunal Constitucional para suprimir los recursos previos de inconstitucionalidad de los estatutos de autonomía [...] La intención de los jeltzales es volver a presentar esta iniciativa en la próxima legislatura.",
+   "quien": "EAJ-PNV (nota de prensa sobre la comparecencia de Maribel Vaquero, cabeza de lista por Gipuzkoa, con Idoia Sagastizabal y Gorka Urtaran, cabezas de lista por Bizkaia y Araba)",
+   "formato": "declaraciones a los medios en Donostia en el 47.º aniversario del Estatuto de Gernika, recogidas en nota de prensa del partido",
+   "fecha": "2026-10-25",
+   "url": "https://www.eaj-pnv.eus/es/noticias/58640/vaquero-advierte-de-que-el-pnv-no-permitira-pasos/",
+   "medio": "EAJ-PNV (nota de prensa)",
+   "fuente_local": "data/sources/compromisos/pnv/eajpnv_estatuto_20261025.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 1,
+    "nota": "Una sola ocasión pública desde la convocatoria (25-oct). Las otras dos menciones localizadas no cuentan: el balance del 10-oct describe el trabajo de la legislatura anterior y la entrevista de febrero es anterior a la convocatoria y se refiere a la tramitación de entonces.",
+    "ocasiones": [
+     {
+      "fecha": "2026-10-25",
+      "ocasion": "comparecencia de los tres cabezas de lista en Donostia por el aniversario del Estatuto (nota del partido)",
+      "url": "https://www.eaj-pnv.eus/es/noticias/58640/vaquero-advierte-de-que-el-pnv-no-permitira-pasos/",
+      "medio": "EAJ-PNV (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/pnv/eajpnv_estatuto_20261025.txt",
+      "sha256": "106d6b58b7475d86bfd438d1cd8a12b03c648a34c46c11e4221620b0af753dad",
+      "cuenta": true
+     },
+     {
+      "fecha": "2026-10-10",
+      "ocasion": "balance de la legislatura del Grupo Vasco presentado por Maribel Vaquero (nota del partido); atribuye la iniciativa a Mikel Legarda, que no repite como candidato",
+      "url": "https://www.eaj-pnv.eus/es/noticias/58574/el-grupo-vasco-cierra-la-legislatura-con-mas-de-1/",
+      "medio": "EAJ-PNV (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/pnv/eajpnv_balance_20261010.txt",
+      "cita": "Ha encabezado la propuesta y defensa de la reforma de la Ley Orgánica del Tribunal Constitucional para resolver las cuestiones competenciales vinculadas a las transferencias, y para eliminar la cuestión previa de inconstitucionalidad para los estatutos de Autonomía",
+      "sha256": "83ee1a299f11a9a1117d8bfd579f53095c0b3847be256d0df64f216c4d402b18",
+      "cuenta": false,
+      "nota_revision": "balance de lo hecho en la legislatura anterior, no compromiso para el 29-N"
+     },
+     {
+      "fecha": "2026-02-22",
+      "ocasion": "entrevista a Maribel Vaquero en El Correo (PDF publicado por el partido)",
+      "url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21673/pdf/2026-02-22_maribel-vaquerori-elkarrizketa-el-corre",
+      "medio": "El Correo (vía eaj-pnv.eus)",
+      "fuente_local": "data/sources/compromisos/pnv/elcorreo_vaquero_20260222.txt",
+      "cita": "hemos presentado la modificación de la ley orgánica del Constitucional para que caiga el recurso previo de inconstitucionalidad",
+      "sha256": "28b0968a31df1d6502b2e7ebebc449262843563102e2ae8bfcae2f5f84be15aa",
+      "cuenta": false,
+      "nota_revision": "anterior a la convocatoria (6-oct) y referida a la tramitación de la legislatura anterior"
+     }
+    ]
+   },
+   "sha256": "106d6b58b7475d86bfd438d1cd8a12b03c648a34c46c11e4221620b0af753dad",
+   "comprobacion_programa": "No figura en el programa. Se buscaron «Tribunal Constitucional», «constitucional», «recurso», «previo», «inconstitucional», «veto» y «Estatuto». El programa pide un «nuevo estatus», el cumplimiento del Estatuto, mecanismos bilaterales (p. 38, medidas 01-04) y «mecanismos de prevención y resolución de conflictos entre Euskadi y el Estado, con garantías imparciales» (p. 39, medida 05), pero no menciona la Ley Orgánica del Tribunal Constitucional ni el recurso previo."
+  }
+ ],
+ "prioridades": [
+  {
+   "id": "pnv-c01",
+   "justificacion": "La anuncia el partido en la comparecencia conjunta de sus tres cabezas de lista al Congreso por el aniversario del Estatuto (25-oct), como instrumento del mensaje que la nota destaca en su entradilla: que «el Congreso no sea un muro» y acepte el nuevo Estatuto «que se acuerde en Euskadi». Es la iniciativa legislativa propia sobre autogobierno que el partido destaca en su balance de legislatura (10-oct) y que Vaquero defendía en febrero como paso para el nuevo estatus; el autogobierno es la primera «cláusula» con la que el PNV abre la campaña (12-nov). Es una prioridad con apoyo limitado: una sola ocasión desde la convocatoria, en una nota del partido y no en una cita directa de un líder.",
+   "fuentes": [
+    {
+     "url": "https://www.eaj-pnv.eus/es/noticias/58640/vaquero-advierte-de-que-el-pnv-no-permitira-pasos/",
+     "medio": "EAJ-PNV (nota de prensa)",
+     "fecha": "2026-10-25",
+     "fuente_local": "data/sources/compromisos/pnv/eajpnv_estatuto_20261025.txt",
+     "sha256": "106d6b58b7475d86bfd438d1cd8a12b03c648a34c46c11e4221620b0af753dad"
+    },
+    {
+     "url": "https://www.eaj-pnv.eus/es/noticias/58574/el-grupo-vasco-cierra-la-legislatura-con-mas-de-1/",
+     "medio": "EAJ-PNV (nota de prensa)",
+     "fecha": "2026-10-10",
+     "fuente_local": "data/sources/compromisos/pnv/eajpnv_balance_20261010.txt",
+     "sha256": "83ee1a299f11a9a1117d8bfd579f53095c0b3847be256d0df64f216c4d402b18"
+    },
+    {
+     "url": "https://www.eaj-pnv.eus/es/noticias/58723/eaj-pnv-se-presenta-ante-la-ciudadania-de-euskadi-/",
+     "medio": "EAJ-PNV (nota de prensa)",
+     "fecha": "2026-11-12",
+     "fuente_local": "data/sources/compromisos/pnv/eajpnv_gasteiz_20261112.txt",
+     "sha256": "6d5795fd98417b039ff45e7a132222bc1e4d4fb760338541b1b795d09b26c2da"
+    }
+   ]
+  }
+ ],
+ "descartados": [
+  {
+   "medida": "Reformar la Ley del Suelo para que un defecto subsanable no obligue a anular todo un planeamiento urbanístico (Maribel Vaquero)",
+   "url": "https://www.eaj-pnv.eus/es/noticias/58720/eaj-pnv-vota-a-favor-del-decreto-que-protege-a-inq/",
+   "fuente_local": "data/sources/compromisos/pnv/eajpnv_vivienda_20261112.txt",
+   "sha256": "06a770eb51f428d80a0fe9acf7411007c8730be9845133f2319b0ffb930c9e65",
+   "motivo": "Ya está en el programa, p. 7 (medida 01: «Agilizar los trámites urbanísticos para facilitar la construcción de nuevas viviendas, con plazos razonables y garantías legales»): el propio PNV describe su reforma de la Ley del Suelo como una forma de dar «seguridad jurídica y agilidad a los planeamientos urbanísticos» (Onda Vasca, 22-jul). Además, en campaña solo consta en estilo indirecto (nota del 12-nov); la cita literal de Vaquero es del 22-jul, anterior a la convocatoria y referida al decreto de vivienda de entonces."
+  },
+  {
+   "medida": "Soterramiento de la llegada de la alta velocidad a Vitoria-Gasteiz, «la primera medida» que impulsaría Gorka Urtaran",
+   "url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21763/pdf/2026-11-02_entrevista-a-gorka-urtaran-en-diario-de",
+   "fuente_local": "data/sources/compromisos/pnv/dna_urtaran_20261102.txt",
+   "sha256": "50b8ac6655941f266f5d40b1ec4a957bf59e5a6e437140aac67b6af6d3c65e65",
+   "motivo": "Ya está en el programa, p. 19 (medida 01: terminar la Y vasca «respetando los acuerdos sobre los accesos soterrados a Bilbao y Vitoria-Gasteiz»)."
+  },
+  {
+   "medida": "Que no se abra el centro de acogida de Arana en Vitoria-Gasteiz (Gorka Urtaran: «Si depende del PNV, el centro de Arana no se va a abrir»)",
+   "url": "https://www.gasteizhoy.com/urtaran-pnv-entrevista-29n/",
+   "fuente_local": "data/sources/compromisos/pnv/gasteizhoy_urtaran_20261104.txt",
+   "sha256": "b6049d72af06d9f33ebcff12e38e16f34e388d934cd6315e3a7fd788030c8028",
+   "motivo": "El programa trata el mismo centro con otra medida, p. 25 (medida 05: un acuerdo entre el Estado y las instituciones vascas para gestionar los centros de acogida «incluido el centro de Arana»). Si un líder y el programa difieren, prevalece el programa (prompt 2). Además, solo consta en una entrevista local y el partido no lo ha repetido."
+  },
+  {
+   "medida": "Reestructuración y quita parcial de la deuda de Tubos Reunidos (Gorka Urtaran)",
+   "url": "https://www.gasteizhoy.com/urtaran-pnv-entrevista-29n/",
+   "fuente_local": "data/sources/compromisos/pnv/gasteizhoy_urtaran_20261104.txt",
+   "sha256": "b6049d72af06d9f33ebcff12e38e16f34e388d934cd6315e3a7fd788030c8028",
+   "motivo": "Solo consta en estilo indirecto del periodista; el apoyo a la industria de Aiaraldea ya está en el programa, p. 14 (medida 03)."
+  },
+  {
+   "medida": "Otras demandas de Urtaran para Álava: aeropuerto de Foronda, plataforma de Jundiz, Aiaraldea, Rioja Alavesa, consulta en Treviño y desclasificación de los documentos del 3 de marzo de 1976",
+   "url": "https://www.gasteizhoy.com/urtaran-pnv-entrevista-29n/",
+   "fuente_local": "data/sources/compromisos/pnv/gasteizhoy_urtaran_20261104.txt",
+   "sha256": "b6049d72af06d9f33ebcff12e38e16f34e388d934cd6315e3a7fd788030c8028",
+   "motivo": "Ya están en el programa: Foronda p. 20 (medida 12), Jundiz p. 19, Aiaraldea p. 14 (medida 03), Rioja Alavesa p. 18, Treviño p. 38 (medida 06) y 3 de marzo p. 40 (medida 02)."
+  },
+  {
+   "medida": "Pensiones: mantener su poder adquisitivo, mejorar las más bajas, reducir la brecha de género y corregir las penalizaciones a quien cotizó más de 40 años (Idoia Sagastizabal, 12-nov; Maribel Vaquero, 19-oct)",
+   "url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21769/pdf/discurso-idoia-sagastizabal-gasteiz-29n",
+   "fuente_local": "data/sources/compromisos/pnv/discurso_sagastizabal_gasteiz_20261112.txt",
+   "sha256": "d3119e0acb923e667eefc3353596b0c5b161db9852995b088366e86322b8d5ce",
+   "motivo": "Ya está en el programa, p. 31 (medidas 01 a 04)."
+  },
+  {
+   "medida": "Coeficientes reductores para que las personas cuidadoras de grandes dependientes puedan jubilarse antes (Maribel Vaquero, 29-oct)",
+   "url": "https://www.eaj-pnv.eus/es/noticias/58659/los-candidatos-de-eaj-pnv-a-las-cortes-generales-s/",
+   "fuente_local": "data/sources/compromisos/pnv/eajpnv_cuidadoras_20261029.txt",
+   "sha256": "b0f84819baa386ac1508f13eac30f7752de92d7ee19cf0985ac411fd01242b35",
+   "motivo": "Ya está en el programa, p. 31 (medida 06)."
+  },
+  {
+   "medida": "Que el salario mínimo responda al coste de vida vasco y que las mejoras de productividad lleguen a las nóminas (Idoia Sagastizabal, 12-nov)",
+   "url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21769/pdf/discurso-idoia-sagastizabal-gasteiz-29n",
+   "fuente_local": "data/sources/compromisos/pnv/discurso_sagastizabal_gasteiz_20261112.txt",
+   "sha256": "d3119e0acb923e667eefc3353596b0c5b161db9852995b088366e86322b8d5ce",
+   "motivo": "Ya está en el programa, p. 9 (medidas 01 y 03)."
+  },
+  {
+   "medida": "Más suelo y menos trabas para construir vivienda; alternativas habitacionales para familias vulnerables sin cargar el coste a los pequeños propietarios (Sagastizabal, 12-nov; artículo del partido, 11-nov)",
+   "url": "https://www.eaj-pnv.eus/es/noticias/58713/vivienda-y-demagogia-de-brocha-gorda/",
+   "fuente_local": "data/sources/compromisos/pnv/eajpnv_vivienda_opinion_20261111.txt",
+   "sha256": "72401d6f0a265644bc4f3720f549a84c325d3726af7b4b11ffbb2ae79afc22c9",
+   "motivo": "Ya está en el programa, p. 7 (medida 01) y p. 8 (medidas 06 y 07)."
+  },
+  {
+   "medida": "Cumplimiento íntegro del Estatuto de Gernika y respeto al «nuevo estatus» que se acuerde en Euskadi (Vaquero, 25-oct y 12-nov)",
+   "url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21767/pdf/discurso-maribel-vaquero-gasteiz-29n",
+   "fuente_local": "data/sources/compromisos/pnv/discurso_vaquero_gasteiz_20261112.txt",
+   "sha256": "d8070bc481827136db6d8bb85bceef8c254b97d41128d149a27b4eafc619be6c",
+   "motivo": "Ya está en el programa, p. 38 (medidas 01 a 04) y p. 39 (medidas 03 a 05)."
+  },
+  {
+   "medida": "IVA del 10 % para el alquiler turístico y limitar la prórroga de alquileres hasta 2028 a los inquilinos al corriente de pago (Maribel Vaquero)",
+   "url": "https://www.ondavasca.com/el-pnv-pide-limitar-la-prorroga-de-alquileres-hasta-2028-a-los-inquilinos-que-esten-al-dia-en-los-pagos/",
+   "fuente_local": "data/sources/compromisos/pnv/ondavasca_vivienda_20260722.txt",
+   "sha256": "9e20972663a9d19f2aa9634ddea9b63108035992f1d90bee0dbe7b499a2340e6",
+   "motivo": "Declaraciones del 22-jul, anteriores a la convocatoria, sobre la negociación del decreto de vivienda de la legislatura anterior; no se refieren a esta elección ni se han repetido en campaña. El 12-nov Vaquero presenta el IVA de los pisos turísticos como contenido del decreto ya apoyado, no como propuesta para la legislatura."
+  },
+  {
+   "medida": "Reconocimiento oficial de la Federación Vasca de Fútbol (Euskal Futbol Federakundea) para competir internacionalmente",
+   "url": "https://www.eaj-pnv.eus/es/noticias/58702/eaj-pnv-respalda-la-peticion-de-reconocimiento-ofi/",
+   "fuente_local": "data/sources/compromisos/pnv/eajpnv_futbol_20261110.txt",
+   "sha256": "66cfec39dd2d4ea0710c79316507a83f7a7604f773927d4800df4f6cf7df8a2f",
+   "motivo": "No es una medida para la legislatura: el partido respalda la solicitud que la propia federación dirige al Consejo Superior de Deportes al amparo de la Ley del Deporte ya reformada; no hay compromiso en primera persona de un líder."
+  },
+  {
+   "medida": "Revisar periódicamente las pensiones para equilibrar ingresos y gastos, y acelerar la aplicación de la amnistía (Aitor Esteban en RNE)",
+   "url": "https://www.moncloa.com/2026/10/22/pnv-investidura-pp-vox-29n-3453092/",
+   "fuente_local": "data/sources/compromisos/pnv/moncloa_esteban_rne_20261022.txt",
+   "sha256": "bf90486f58ab289563a1db2d58fba3f9853c57bd09b6110452c268087b8f9983",
+   "motivo": "Solo constan en estilo indirecto del periodista. La sostenibilidad de las pensiones en el Pacto de Toledo ya está en el programa, p. 31 (medida 07); la aplicación de la amnistía corresponde a los tribunales y no es una medida legislativa."
+  },
+  {
+   "medida": "No apoyar en ningún caso un Gobierno del PP con Vox (Esteban, Vaquero, Urtaran)",
+   "url": "https://www.eaj-pnv.eus/es/noticias/58723/eaj-pnv-se-presenta-ante-la-ciudadania-de-euskadi-/",
+   "fuente_local": "data/sources/compromisos/pnv/eajpnv_gasteiz_20261112.txt",
+   "sha256": "6d5795fd98417b039ff45e7a132222bc1e4d4fb760338541b1b795d09b26c2da",
+   "motivo": "Declaración sobre pactos, no una medida; además figura en el programa, p. 3."
+  }
+ ],
+ "busqueda": {
+  "hasta": "2026-11-12",
+  "fuentes": [
+   "eaj-pnv.eus: todas las notas de la sección de noticias con identificadores 58560 a 58730 (de finales de septiembre al 12-nov-2026), leídas las de ámbito estatal y de campaña (Esteban, Vaquero, Sagastizabal, Urtaran, Grupo Vasco); descargadas con una petición normal (HTTP 200).",
+   "eaj-pnv.eus, sección Documentos (21740 a 21770): entrevistas publicadas por el partido (Urtaran en Diario de Noticias de Álava, 2-nov; Vaquero en El Correo, 22-feb), discursos de Esteban en Artxanda (8-nov) y discursos de apertura de campaña en Gasteiz (12-nov) de Esteban, Vaquero, Sagastizabal y Urtaran.",
+   "Prensa: Gasteiz Hoy (entrevista a Urtaran, 4-nov), Onda Vasca (3-nov y 22-jul), Moncloa.com (Esteban en RNE, 22-oct; acto del 17-oct), Demócrata y Orain/EITB (solo vídeos y resúmenes, sin citas adicionales). Búsquedas abiertas sobre Deia, El Correo, Naiz y Europa Press sin entrevistas de noviembre localizadas.",
+   "Cada medida se buscó en data/sources/programas/pnv/programa-electoral-29n.txt por palabras clave y sinónimos (páginas citadas en «descartados»)."
+  ]
+ }
+}

@@ -1,0 +1,216 @@
+{
+ "partido": "bng",
+ "base": "complemento",
+ "modelo": "Claude (Anthropic)",
+ "fecha": "2026-11-12",
+ "nota": "El BNG tiene programa oficial analizado (data/programas/bng/, 91 páginas). Aquí se buscan compromisos de sus líderes (Néstor Rego, cabeza de lista por A Coruña y diputado; Ana Pontón, portavoz nacional; Carme da Silva, Olalla Rodil y Noa Presas, cabezas de lista por Pontevedra, Lugo y Ourense) que el partido presente como importantes y que NO estén en el programa. Cada medida candidata se buscó en el texto del programa (data/sources/programas/bng/26_bng_xerais_documentos_programa_electoral.txt), también con otras palabras. El programa es muy amplio: los diez puntos del decálogo «Axenda Galega» del 7-nov y casi todo lo que los líderes han anunciado en campaña (pensiones, salario mínimo, jornada, trenes de Lugo, A-56, AP-9, topes a los combustibles, vivienda de la Sareb) ya figuran en él. Solo un compromiso cumple las tres condiciones (cita literal en primera persona, repetido en campaña, ausente del programa): el tope al precio de las hipotecas que reclama Rego. Las propuestas para la Xunta (compra de 1.400 pisos vacíos con 240 M€) son del ámbito autonómico y no de esta legislatura de las Cortes. Hay una sola prioridad porque no se encontraron más compromisos que cumplan esas condiciones.",
+ "compromisos": [
+  {
+   "id": "bng-c01",
+   "area": "vivienda",
+   "resumen": "Limitar por ley el precio de las hipotecas, junto al de los alquileres, como parte de las medidas de vivienda que el BNG defenderá en el Congreso.",
+   "cita": "Levamos anos defendendo medidas eficaces para garantir o acceso a unha vivenda digna: topar os prezos dos alugueiros e das hipotecas",
+   "cita_traduccion": "Llevamos años defendiendo medidas eficaces para garantizar el acceso a una vivienda digna: topar los precios de los alquileres y de las hipotecas",
+   "quien": "Néstor Rego (cabeza de lista del BNG al Congreso por A Coruña y diputado)",
+   "formato": "entrevista (El Salto, edición Galiza)",
+   "fecha": "2026-11-10",
+   "url": "https://www.elsaltodiario.com/politica/nestor-rego-alianzas-pasado-forzas-estatais-debilitaron-capacidade-politica-galiza",
+   "medio": "El Salto",
+   "fuente_local": "data/sources/compromisos/bng/elsalto_rego_20261110.txt",
+   "sha256": "87c28065052926c8539f9c521108c23039696852825dbf2daf7f5dbbe18ecb56",
+   "cuantificado": false,
+   "no_en_programa": {
+    "busqueda": "Términos buscados en el programa: «hipotec», «euribor», «xuro», «tipo de interese», «préstamo», «crédito», «banca», «top(ar/e)», «prezo máximo», «limitar os prezos».",
+    "resultado": "El programa topa por ley los alquileres (p. 12) y fija un precio máximo para gasolina y diésel (p. 21), pero sobre hipotecas solo propone «facilitar a portabilidade das hipotecas de tipo variábel a tipo fixo e endurecer o marco legal para evitar os abusos bancarios» (p. 14): ninguna limitación del precio, el tipo de interés o la cuota."
+   },
+   "veces": {
+    "n": 3,
+    "nota": "Ocasiones públicas distintas en campaña, incluida la de la cita principal: entrevista de El Salto (10-nov), encuentro sobre vivienda en A Coruña (10-nov) y comparecencia del 12-nov. En las dos últimas solo consta en estilo indirecto (nota del partido).",
+    "ocasiones": [
+     {
+      "fecha": "2026-11-10",
+      "ocasion": "entrevista en El Salto (misma ocasión que la cita principal; segunda mención)",
+      "url": "https://www.elsaltodiario.com/politica/nestor-rego-alianzas-pasado-forzas-estatais-debilitaron-capacidade-politica-galiza",
+      "medio": "El Salto",
+      "fuente_local": "data/sources/compromisos/bng/elsalto_rego_20261110.txt",
+      "cita": "Tamén hai que limitar os prezos das subministracións básicas, dos alugueiros e das hipotecas",
+      "sha256": "87c28065052926c8539f9c521108c23039696852825dbf2daf7f5dbbe18ecb56",
+      "cuenta": true
+     },
+     {
+      "fecha": "2026-11-10",
+      "ocasion": "encuentro sobre vivienda con vecinos de la Agra do Orzán (A Coruña), con Ana Pontón; nota del BNG en estilo indirecto",
+      "url": "https://www.bng.gal/novas/ana-ponton-propon-compra-masiva-vivenda-baleira-crear-gran-parque-publico-pisos-alugueiro-social/20261110170713043856.html",
+      "medio": "BNG (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/bng/bng_vivenda_coruna_20261110.txt",
+      "cita": "enumerou outras propostas como a de topar os prezos dos alugueiros e das hipotecas",
+      "sha256": "b48881b627b0e289dd3445f83e7f51a6dc9f3939a0f56c8cff604778dce06308",
+      "cuenta": true
+     },
+     {
+      "fecha": "2026-11-12",
+      "ocasion": "comparecencia tras la huelga general; nota del BNG en estilo indirecto",
+      "url": "https://www.bng.gal/novas/nestor-rego-reclama-medidas-acceso-vivenda-garante-que-bng-mais-forte-loitara/20261112135521043888.html",
+      "medio": "BNG (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/bng/bng_rego_vivenda_20261112.txt",
+      "cita": "Reclamou topar os prezos dos alugueiros e das hipotecas",
+      "sha256": "49f898a71847a767a3175f676fd66f5abcd796982cad1bdd08fb4acbc5d7c7c7",
+      "cuenta": true
+     }
+    ]
+   }
+  }
+ ],
+ "prioridades": [
+  {
+   "id": "bng-c01",
+   "justificacion": "El cabeza de lista por A Coruña, el único diputado saliente del BNG, lo incluye en las tres ocasiones de campaña en que expone las medidas de vivienda del partido (entrevista del 10-nov, encuentro de A Coruña del 10-nov y comparecencia del 12-nov), y la nota oficial del 12-nov lo destaca en un ladillo («Topar os prezos, prohibir a compra para especulación...»). La vivienda es uno de los ejes de la campaña del BNG (encuentro monográfico con Pontón el 10-nov). Es la única medida de ese paquete que no figura en el programa.",
+   "fuentes": [
+    {
+     "url": "https://www.bng.gal/novas/nestor-rego-reclama-medidas-acceso-vivenda-garante-que-bng-mais-forte-loitara/20261112135521043888.html",
+     "medio": "BNG (nota de prensa)",
+     "fecha": "2026-11-12",
+     "fuente_local": "data/sources/compromisos/bng/bng_rego_vivenda_20261112.txt",
+     "sha256": "49f898a71847a767a3175f676fd66f5abcd796982cad1bdd08fb4acbc5d7c7c7"
+    },
+    {
+     "url": "https://www.bng.gal/novas/ana-ponton-propon-compra-masiva-vivenda-baleira-crear-gran-parque-publico-pisos-alugueiro-social/20261110170713043856.html",
+     "medio": "BNG (nota de prensa)",
+     "fecha": "2026-11-10",
+     "fuente_local": "data/sources/compromisos/bng/bng_vivenda_coruna_20261110.txt",
+     "sha256": "b48881b627b0e289dd3445f83e7f51a6dc9f3939a0f56c8cff604778dce06308"
+    }
+   ]
+  }
+ ],
+ "descartados": [
+  {
+   "medida": "Prohibir por ley la compra de vivienda con fines especulativos (Rego, 10 y 12-nov)",
+   "url": "https://www.bng.gal/novas/nestor-rego-reclama-medidas-acceso-vivenda-garante-que-bng-mais-forte-loitara/20261112135521043888.html",
+   "fuente_local": "data/sources/compromisos/bng/bng_rego_vivenda_20261112.txt",
+   "sha256": "49f898a71847a767a3175f676fd66f5abcd796982cad1bdd08fb4acbc5d7c7c7",
+   "motivo": "Solo consta en estilo indirecto en las notas del BNG («que se prohiba por lei a especulación da vivenda», «prohibir por lei a compra para a especulación»); no se encontró cita literal de un líder en la entrevista de El Salto ni en otras fuentes. Sin cita en primera persona no entra (prompt 1b)."
+  },
+  {
+   "medida": "Compra masiva de vivienda vacía para alquiler social (Pontón, 10-nov; 240 M€ para comprar unos 1.400 pisos)",
+   "url": "https://www.bng.gal/novas/ana-ponton-propon-compra-masiva-vivenda-baleira-crear-gran-parque-publico-pisos-alugueiro-social/20261110170713043856.html",
+   "fuente_local": "data/sources/compromisos/bng/bng_vivenda_coruna_20261110.txt",
+   "sha256": "b48881b627b0e289dd3445f83e7f51a6dc9f3939a0f56c8cff604778dce06308",
+   "motivo": "Es una propuesta para la Xunta: el BNG la presenta como enmienda a los presupuestos gallegos de 2027 y la debate el Parlamento de Galicia (nota del 10-nov sobre el pleno; Pontón, 21-oct), no como compromiso para la legislatura de las Cortes. Además, la movilización de vivienda vacía ya está en el programa con otros instrumentos: alquiler forzoso, expropiación temporal y canon a viviendas vacías de grandes propietarios (p. 14), y el 3% de los PGE para un parque público de alquiler (p. 12)."
+  },
+  {
+   "medida": "Expropiar las viviendas vacías de fondos buitre y grandes inmobiliarias (Rego, El Salto 10-nov y nota del 12-nov)",
+   "url": "https://www.elsaltodiario.com/politica/nestor-rego-alianzas-pasado-forzas-estatais-debilitaron-capacidade-politica-galiza",
+   "fuente_local": "data/sources/compromisos/bng/elsalto_rego_20261110.txt",
+   "sha256": "87c28065052926c8539f9c521108c23039696852825dbf2daf7f5dbbe18ecb56",
+   "motivo": "Ya está en el programa, p. 14 (facilitar a las CCAA el alquiler forzoso, la expropiación temporal o un canon a las viviendas vacías desde hace 5 o más años en manos de grandes propietarios) y p. 12 (expropiación forzosa de viviendas de promoción pública adquiridas por fondos)."
+  },
+  {
+   "medida": "Poner las viviendas de la Sareb a disposición del alquiler social y traspasarlas a Galicia (Rego y Pontón, 10 y 12-nov)",
+   "url": "https://www.bng.gal/novas/ana-ponton-propon-compra-masiva-vivenda-baleira-crear-gran-parque-publico-pisos-alugueiro-social/20261110170713043856.html",
+   "fuente_local": "data/sources/compromisos/bng/bng_vivenda_coruna_20261110.txt",
+   "sha256": "b48881b627b0e289dd3445f83e7f51a6dc9f3939a0f56c8cff604778dce06308",
+   "motivo": "Ya está en el programa, p. 13 («Transferir gratuitamente os solos e vivendas da Sareb ao IGVS»), y en el decálogo."
+  },
+  {
+   "medida": "Limitar los precios de los suministros básicos y topes a los combustibles y la energía (Rego, El Salto 10-nov; Carme da Silva, mitin de Vigo 12-nov)",
+   "url": "https://www.bng.gal/novas/ana-ponton-rebeldia-que-vimos-folga-non-pode-quedar-nas-ruas-ten-que-chegar-urnas-29n-apoio-masivo-ao-bng/20261112205927043902.html",
+   "fuente_local": "data/sources/compromisos/bng/bng_apertura_vigo_20261112.txt",
+   "sha256": "4b6f07a50cc2ff11bbfca8a23986a69d5c7035bc1a6f8e5e6b54d4031aaf51b2",
+   "motivo": "Ya está en el programa con otras palabras: precio máximo legal para gasolina y diésel y regulación de precios de los alimentos básicos (p. 21), retribución eléctrica según costes reconocidos (p. 54) y tarifa eléctrica gallega (p. 9 y 54)."
+  },
+  {
+   "medida": "Agenda gallega de las pensiones: subida mínima conforme al IPC, pensiones mínimas no inferiores al SMI, más complemento de brecha de género y adelanto de la jubilación en profesiones feminizadas como el marisqueo (Pontón y Rego, 5-nov)",
+   "url": "https://www.bng.gal/novas/bng-quere-sacar-pensions-galegas-do-furgon-cola-do-estado-2600E-menos-ao-ano-discriminacion-intolerable/20261105131549043780.html",
+   "fuente_local": "data/sources/compromisos/bng/bng_pensions_20261105.txt",
+   "sha256": "e26c0586ecbe675f37de9d62179e0f1a248035efe80838441552c1b97c343b47",
+   "motivo": "Ya está en el programa, p. 18 (revalorización conforme al IPC real; pensiones mínimas como mínimo iguales al SMI) y p. 19 (incremento del complemento de brecha de género; coeficientes reductores para el marisqueo y profesiones penosas; jubilación sin penalización con 35 años cotizados; financiación con impuestos a la riqueza)."
+  },
+  {
+   "medida": "Conexión ferroviaria directa Lugo-Santiago, electrificación Lugo-A Coruña y cercanías («Lugo Quere Tren», Pontón, 2-nov)",
+   "url": "https://www.bng.gal/novas/ana-ponton-avanza-entre-prioridades-da-axenda-do-bng-madrid-lina-ferroviaria-lugo-coruna-conexion-directa-lugo-santiago/20261102170622043748.html",
+   "fuente_local": "data/sources/compromisos/bng/bng_lugo_tren_20261102.txt",
+   "sha256": "f57a63ec02ac81777d0c706eff7a6dd7fe54ad07265675cf28a32ae01ce1ea7b",
+   "motivo": "Ya está en el programa, p. 61 («inicio efectivo da construción da conexión ferroviaria directa entre Santiago de Compostela e Lugo»; actuaciones en el tramo A Coruña–Lugo) y p. 60 (servicio de cercanías)."
+  },
+  {
+   "medida": "Autovías A-56 (Lugo-Ourense) y A-85 (Barreiros-San Cibrao) (Olalla Rodil, 2-nov; Noa Presas, 4-nov)",
+   "url": "https://www.bng.gal/novas/ana-ponton-avanza-entre-prioridades-da-axenda-do-bng-madrid-lina-ferroviaria-lugo-coruna-conexion-directa-lugo-santiago/20261102170622043748.html",
+   "fuente_local": "data/sources/compromisos/bng/bng_lugo_tren_20261102.txt",
+   "sha256": "f57a63ec02ac81777d0c706eff7a6dd7fe54ad07265675cf28a32ae01ce1ea7b",
+   "motivo": "La A-56 ya está en el programa, p. 63. La A-85 no figura, pero solo la cita una vez Rodil en un acto provincial, y el fragmento literal («un calendario concreto de execución») no la nombra: la mención de la A-85 es del redactor de la nota."
+  },
+  {
+   "medida": "Puente internacional de la Plataforma Logística PLISAN (Salvaterra-As Neves) con Portugal (Carme da Silva, 2-nov)",
+   "url": "https://www.bng.gal/novas/carme-da-silva-comprometese-impulsar-dende-madrid-ponte-internacional-da-plisan/20261102132842043745.html",
+   "fuente_local": "data/sources/compromisos/bng/bng_plisan_20261102.txt",
+   "sha256": "1a4b780dbc5a916fa47e937b25a7d6356a948b57bcc024807df5e20853620111",
+   "motivo": "No está en el programa, pero el compromiso de impulsarlo solo consta en palabras del redactor («comprometeuse a defender e impulsar a ponte internacional dende Madrid»); las frases literales de la candidata describen la necesidad. Una sola visita comarcal; no lo repite ningún otro líder ni figura en el decálogo."
+  },
+  {
+   "medida": "Metro ligero de superficie O Carballiño-Ourense (Noa Presas, 7-nov)",
+   "url": "https://www.bng.gal/novas/bng-impulsara-apos-29n-metro-lixeiro-que-conecte-carballino-ourense-rematar-coa-discriminacion-ferroviaria/20261107120300043807.html",
+   "fuente_local": "data/sources/compromisos/bng/bng_metrolixeiro_20261107.txt",
+   "sha256": "1fb7bc491bd7027614e9fcdb539b9ebfb436efbf837e1131aa4dc7348e5263e8",
+   "motivo": "El compromiso de Presas está en estilo indirecto; la única frase literal sobre el servicio es del candidato a la alcaldía de O Carballiño (no es líder en el sentido del prompt 2). Además, el programa ya incluye implantar «un servizo de proximidades ferroviarias nas principais cidades galegas [...] creando aquelas novas [infraestruturas] que foren necesarias» (p. 60)."
+  },
+  {
+   "medida": "Seguridad vial en la N-550 (Vilaboa) y reforma de la N-120 (Ponteareas) (Carme da Silva, 7 y 10-nov)",
+   "url": "https://www.bng.gal/novas/carme-da-silva-reforma-da-n-120-non-pode-quedar-vez-mais-nun-anuncio-executar/20261110182950043865.html",
+   "fuente_local": "data/sources/compromisos/bng/bng_n120_20261110.txt",
+   "sha256": "b5221ddd2b2f73339b82fc987970ba31a6caaac5571a2dfd5c02bead3f67c175",
+   "motivo": "Ya está en el programa con otras palabras, p. 62 (actuaciones integrales en las carreteras del Estado que atraviesan villas y ciudades «destinadas á mellora da seguridade viaria»); son además reivindicaciones de obras concretas en actos comarcales, no presentadas como prioridad del partido."
+  },
+  {
+   "medida": "Saneamiento integral y plan director de regeneración del río Barbaña (Noa Presas, 3-nov)",
+   "url": "https://www.bng.gal/novas/noa-presas-exemplifica-co-rio-barbana-abandono-das-forzas-estatais-ourense/20261103123155043752.html",
+   "fuente_local": "data/sources/compromisos/bng/bng_barbana_20261103.txt",
+   "sha256": "f504efd3a280fcc2ee344d7a4d7087103859a2eceb9b76ac57171eeb3a8286b5",
+   "motivo": "Reivindicación local de un solo acto provincial. El programa recoge el saneamiento integral con redes separativas (p. 68) y la transferencia de la Confederación Hidrográfica Miño-Sil (p. 10), que Presas también pide."
+  },
+  {
+   "medida": "Que el Estado financie más el sistema científico gallego y Estatuto del Personal de Investigación (Pontón, 23-oct)",
+   "url": "https://www.bng.gal/novas/ana-ponton-fronte-ao-negacionismo-cientifico-da-dereita-reaccionaria-bng-propon-mais-ciencia-mais-investigacion/20261023151247043690.html",
+   "fuente_local": "data/sources/compromisos/bng/bng_ciencia_20261023.txt",
+   "sha256": "1dc973a09c4a75d6749200eafa79d69a428ff3d6f6d765c4f25431cf8a763136",
+   "motivo": "Ya está en el programa, p. 52 (3% del PIB en I+D+i en 2030; transferencia de los centros del CSIC e IEO) y p. 53 (Estatuto del Persoal de Investigación). El 3% del presupuesto de la Xunta para ciencia es una propuesta autonómica."
+  },
+  {
+   "medida": "Anular la prórroga de la concesión de la AP-9 (Luís Bará, 10-nov; Pontón)",
+   "url": "https://www.bng.gal/novas/bng-defende-acordo-galego-esixir-anulacion-da-prorroga-da-ap-9-ir-via-xudicial-estado-non-acepta/20261110150212043860.html",
+   "fuente_local": "data/sources/compromisos/bng/bng_parlamento_ap9_20261110.txt",
+   "sha256": "75fc8682e6652ad24de2906ac71fce87ce21563ffc3f051f23e7613155b5a41a",
+   "motivo": "Ya está en el programa, p. 62 («o BNG reclamará a anulación da prórroga concedida no ano 2000»). La vía judicial que propone Bará correspondería a la Xunta (iniciativa en el Parlamento de Galicia)."
+  },
+  {
+   "medida": "Votar en contra y enmendar a la totalidad la reforma del sistema de financiación autonómica (Rego, El Salto 10-nov)",
+   "url": "https://www.elsaltodiario.com/politica/nestor-rego-alianzas-pasado-forzas-estatais-debilitaron-capacidade-politica-galiza",
+   "fuente_local": "data/sources/compromisos/bng/elsalto_rego_20261110.txt",
+   "sha256": "87c28065052926c8539f9c521108c23039696852825dbf2daf7f5dbbe18ecb56",
+   "motivo": "Es una posición de voto sobre una iniciativa ajena, no una medida; la alternativa que defiende (concierto económico) ya está en el programa, p. 8."
+  },
+  {
+   "medida": "Llevar el gallego al Congreso «con más fuerza» (Carme da Silva, 12-nov)",
+   "url": "https://www.bng.gal/novas/ana-ponton-rebeldia-que-vimos-folga-non-pode-quedar-nas-ruas-ten-que-chegar-urnas-29n-apoio-masivo-ao-bng/20261112205927043902.html",
+   "fuente_local": "data/sources/compromisos/bng/bng_apertura_vigo_20261112.txt",
+   "sha256": "4b6f07a50cc2ff11bbfca8a23986a69d5c7035bc1a6f8e5e6b54d4031aaf51b2",
+   "motivo": "Es una aspiración sin medida identificable (el gallego ya puede usarse en el Congreso desde la reforma del Reglamento de 2023), no un compromiso concreto."
+  },
+  {
+   "medida": "Los diez compromisos del decálogo «Axenda Galega» (7-nov)",
+   "url": "https://www.bng.gal/novas/bng-presenta-axenda-galega-defender-galiza-madrid-avanzar-dereitos-mellorar-vida-das-persoas/20261107154118043809.html",
+   "fuente_local": "data/sources/programas/bng/29N_Decalogo_de_compromisos_BNG.txt",
+   "sha256": "c77cbdd545cf572e578a846c79d9caaea1001aefa0bf232735f56db53db92a43",
+   "motivo": "Todas sus medidas ya están en el programa, entre ellas: tope a los alquileres y 3% de los PGE para vivienda pública (p. 12), Sareb (p. 13), SMI al 60% y 35 horas (p. 15), jubilación a los 65 (p. 19), IMV (p. 21), familias monoparentales y escuelas infantiles (p. 27), tramos del IRPF (p. 43), IVA de los productos del mar (p. 44), devolución de ayudas por deslocalización (p. 46), estabilidad relativa (p. 49), CSIC (p. 52), POEM (p. 54), cortes de suministro (p. 55), auditoría ferroviaria (p. 61), AP-53 (p. 62), voto a los 16 años (p. 86) y abolición del servicio militar obligatorio (p. 86)."
+  }
+ ],
+ "busqueda": {
+  "hasta": "2026-11-12",
+  "fuentes": [
+   "bng.gal: todas las noticias accesibles en /novas/ (páginas 1 a 8, del 14-oct al 12-nov-2026, 120 notas) y el RSS, descargados con una petición normal (HTTP 200) y revisados en busca de propuestas de Néstor Rego, Ana Pontón, Carme da Silva, Olalla Rodil y Noa Presas. La paginación de la web no muestra notas anteriores al 14-oct; para el 6-13 de octubre se hicieron búsquedas abiertas, sin hallar compromisos concretos.",
+   "Decálogo «Dez compromisos do BNG» (7-nov) y programa oficial (data/sources/programas/bng/), cotejados medida a medida.",
+   "Entrevistas y prensa: El Salto (entrevista a Rego, 10-nov), Demócrata (arranque de campaña, 8-nov), búsquedas abiertas sobre entrevistas de Pontón y Rego en noviembre de 2026 y sobre condiciones de investidura; no se halló otra entrevista de campaña con compromisos nuevos.",
+   "Pistas previas: data/promesas/promesas.json (bng) y data/fase1/codificacion_g*.json (todas las posiciones del BNG proceden del programa; ninguna de campaña)."
+  ]
+ }
+}

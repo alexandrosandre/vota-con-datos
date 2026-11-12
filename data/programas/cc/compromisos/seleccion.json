@@ -1,0 +1,208 @@
+{
+ "partido": "cc",
+ "base": "complemento",
+ "fecha": "2026-11-12",
+ "modelo": "Claude (Anthropic)",
+ "prompt": "docs/prompts/1b_seleccion_compromisos.md (sección «Partidos con programa: complemento»)",
+ "nota": "Complemento del análisis del programa «Defiende Canarias» (data/programas/cc/evaluacion.json): compromisos de los líderes de CC-Primero Canarias, posteriores a la convocatoria, que el partido presenta como importantes y que NO figuran en el programa. Cada candidato se ha comprobado contra el texto completo del programa (100 medidas, 23 pp.), también con otras palabras. Solo uno cumple todas las condiciones.",
+ "programa_comprobado": {
+  "texto": "data/sources/programas/cc/CCA-26-Programa_Electoral-29NOV.txt",
+  "sha256": "30eac6e3fcddb0fcebe1137b993008b5689230f51fe9de66c6f5610c00f654f0",
+  "metodo": "Lectura completa de las 100 medidas y búsqueda de términos (Estatuto Marco, clasificación, técnicos, cuidados de enfermería, personal sanitario, plantillas, Frontex, contingencia, Policía Canaria, suelo, superávit, universidades, artesanía, residuos, entre otros)."
+ },
+ "compromisos": [
+  {
+   "id": "cc-c01",
+   "area": "sanidad",
+   "resumen": "Retomar en la próxima legislatura la reclasificación profesional y retributiva de los técnicos en cuidados de enfermería (que el colectivo pide al subgrupo C1) y del resto del personal sanitario de formación profesional y de gestión y servicios, que estaba en la reforma del Estatuto Marco decaída con la disolución de las Cortes.",
+   "cita": "habrá que retomar esa reclasificación y ese trabajo que el sector sanitario lleva muchos años pidiendo",
+   "quien": "Cristina Valido, cabeza de lista de Coalición Canaria-Primero Canarias al Congreso por Santa Cruz de Tenerife",
+   "formato": "reunión con la Plataforma Estatal de Técnicos en Cuidados de Enfermería (nota oficial del partido)",
+   "fecha": "2026-10-26",
+   "url": "https://coalicioncanaria.org/valido-y-leon-reafirman-el-compromiso-de-coalicion-canaria-primero-canarias-con-los-tecnicos-en-cuidados-de-enfermeria/",
+   "medio": "Coalición Canaria (nota oficial)",
+   "fuente_local": "data/sources/compromisos/cc/2026-10-26_cc_valido_tcae.txt",
+   "sha256": "f7973090bf27fdad393e4f1af76e56b2b2e3a445cf489f933d2d2e7a26135017",
+   "cuantificado": false,
+   "veces": {
+    "n": 2,
+    "ocasiones": [
+     {
+      "fecha": "2026-10-26",
+      "medio": "Coalición Canaria (nota oficial)",
+      "url": "https://coalicioncanaria.org/valido-y-leon-reafirman-el-compromiso-de-coalicion-canaria-primero-canarias-con-los-tecnicos-en-cuidados-de-enfermeria/",
+      "formato": "reunión con la Plataforma Estatal de TCAE",
+      "fuente_local": "data/sources/compromisos/cc/2026-10-26_cc_valido_tcae.txt",
+      "nota": "La plataforma pide mantener el compromiso con «su reclasificación en el subgrupo C1»; Valido responde con la cita."
+     },
+     {
+      "fecha": "2026-10-22",
+      "medio": "Coalición Canaria (nota oficial)",
+      "url": "https://coalicioncanaria.org/valido-puedo-rendir-cuentas-del-trabajo-hecho-por-cc-en-el-congreso-a-traves-de-nuestras-513-iniciativas-presentadas/",
+      "formato": "rueda de prensa de balance de la legislatura (Santa Cruz de Tenerife)",
+      "fuente_local": "data/sources/compromisos/cc/2026-10-22_cc_valido_balance.txt",
+      "nota": "Paráfrasis de la nota: la moción para reclasificar al personal sanitario de formación profesional y de gestión y servicios «podría haber beneficiado a más de 20.000 profesionales en Canarias», «según recordó Valido»."
+     }
+    ]
+   },
+   "nota": "El programa «Defiende Canarias» no menciona el Estatuto Marco, la clasificación profesional ni a los técnicos en cuidados de enfermería; su medida 10 (p. 9) trata de la financiación sanitaria y de planificar plantillas y centros, no de la clasificación. Antecedente: el 23-9-2026, antes de la convocatoria, el Congreso rechazó la moción de Valido para que el Estatuto Marco actualizara esa clasificación (15 votos a favor, 39 en contra y 294 abstenciones; data/sources/compromisos/cc/2026-09-23_diarioestrategia_ep_mocion_cc.txt); no se cuenta en «veces» por ser anterior al 6-oct."
+  }
+ ],
+ "prioridades": [
+  {
+   "id": "cc-c01",
+   "justificacion": "Lo anuncia la cabeza de lista, Cristina Valido, en un acto de precampaña dedicado al colectivo (26-oct), que la nota oficial del partido titula como reafirmación del «compromiso» de CC-Primero Canarias con los técnicos en cuidados de enfermería; en su rueda de prensa de balance (22-oct) lo presentó como la iniciativa del tramo final de la legislatura que habría beneficiado a más de 20.000 profesionales en Canarias. Dos ocasiones públicas. No figura entre las medidas que Valido y Sosa destacaron al presentar el programa (9-nov)."
+  }
+ ],
+ "nota_prioridades": "Una sola prioridad: es el único compromiso concreto de los líderes, con cita literal, posterior a la convocatoria y presentado como propio por la candidata, que no está en el programa. Todo lo demás que han anunciado Valido, Sosa y Clavijo figura en «Defiende Canarias» o no es una medida para la próxima legislatura (ver «descartados»).",
+ "descartados": [
+  {
+   "tema": "Limitar la compra de vivienda por extranjeros no residentes y hacer viable una Ley Canaria de Residencia (límite de población)",
+   "quien": "Cristina Valido, cabeza de lista de Coalición Canaria-Primero Canarias al Congreso por Santa Cruz de Tenerife",
+   "fecha": "2026-11-04",
+   "url": "https://coalicioncanaria.org/cristina-valido-exige-limitar-la-compra-de-vivienda-por-extranjeros-para-garantizar-el-acceso-a-un-hogar-a-quienes-viven-en-canarias/",
+   "fuente_local": "data/sources/compromisos/cc/2026-11-12_cc_feed_notas.txt",
+   "motivo": "Ya está en el programa, p. 11 (medida 26). Valido lo repite en Demócrata (5-nov) como «límite de población»."
+  },
+  {
+   "tema": "Fondo estatal para cofinanciar vivienda pública con asignación específica para Canarias; convenio bilateral de vivienda con recursos del superávit (Teodoro Sosa, 7-nov)",
+   "quien": "Cristina Valido, cabeza de lista de Coalición Canaria-Primero Canarias al Congreso por Santa Cruz de Tenerife; Teodoro Sosa, cabeza de lista por Las Palmas",
+   "fecha": "2026-11-04",
+   "url": "https://coalicioncanaria.org/cristina-valido-exige-limitar-la-compra-de-vivienda-por-extranjeros-para-garantizar-el-acceso-a-un-hogar-a-quienes-viven-en-canarias/",
+   "fuente_local": "data/sources/compromisos/cc/2026-11-12_cc_feed_notas.txt",
+   "motivo": "Ya está en el programa, p. 10 (medida 22, fondo estatal de vivienda a ocho años) y p. 20 (medida 97, uso de los remanentes en vivienda). Lo de Sosa procede de Canarias7 (7-nov, en data/promesas/promesas.json) y es paráfrasis."
+  },
+  {
+   "tema": "Reformar la Ley del Suelo estatal para que la vivienda pública no se atasque en la tramitación; incentivos fiscales a pequeños propietarios que alquilen; seguridad jurídica para el pequeño propietario (Clavijo)",
+   "quien": "Cristina Valido, cabeza de lista de Coalición Canaria-Primero Canarias al Congreso por Santa Cruz de Tenerife; Fernando Clavijo, secretario general de CC",
+   "fecha": "2026-11-04",
+   "url": "https://coalicioncanaria.org/cristina-valido-exige-limitar-la-compra-de-vivienda-por-extranjeros-para-garantizar-el-acceso-a-un-hogar-a-quienes-viven-en-canarias/",
+   "fuente_local": "data/sources/compromisos/cc/2026-11-12_cc_feed_notas.txt",
+   "motivo": "Ya está en el programa, p. 11 (medida 28, reformas de los procedimientos estatales para acortar plazos; medida 24, incentivos fiscales y regulación estable para pequeños propietarios). La reforma de la Ley del Suelo además es paráfrasis de la nota."
+  },
+  {
+   "tema": "Regular la vivienda vacacional en zonas tensionadas",
+   "quien": "Cristina Valido, cabeza de lista de Coalición Canaria-Primero Canarias al Congreso por Santa Cruz de Tenerife",
+   "fecha": "2026-11-04",
+   "url": "https://coalicioncanaria.org/cristina-valido-exige-limitar-la-compra-de-vivienda-por-extranjeros-para-garantizar-el-acceso-a-un-hogar-a-quienes-viven-en-canarias/",
+   "fuente_local": "data/sources/compromisos/cc/2026-11-12_cc_feed_notas.txt",
+   "motivo": "Ya está en el programa, p. 11 (medida 27)."
+  },
+  {
+   "tema": "Blindar el descuento del 75 % para residentes, guaguas y tranvía gratis y el «decreto canario» como condiciones para la investidura",
+   "quien": "Fernando Clavijo, secretario general de CC y presidente de Canarias (entrevista en Atlántico TV); Cristina Valido, cabeza de lista de Coalición Canaria-Primero Canarias al Congreso por Santa Cruz de Tenerife",
+   "fecha": "2026-10",
+   "url": "https://diariodeavisos.elespanol.com/2026/10/fernando-clavijo-vox-migrantes-canarias/",
+   "fuente_local": "data/sources/compromisos/cc/2026-10_dda_entrevista_clavijo.txt",
+   "motivo": "Ya está en el programa, pp. 17-18 (medidas 75 y 78) y p. 21 (medida 99, Agenda Canaria y Decreto Canarias)."
+  },
+  {
+   "tema": "Compensar el 100 % del coste real del transporte de mercancías",
+   "quien": "Teodoro Sosa, cabeza de lista por Las Palmas",
+   "fecha": "2026-11-09",
+   "url": "https://coalicioncanaria.org/cc-y-primero-canarias-presentan-diez-grandes-causas-y-cien-medidas-para-defender-canarias-en-madrid/",
+   "fuente_local": "data/sources/compromisos/cc/2026-11-12_cc_feed_notas.txt",
+   "motivo": "Ya está en el programa, p. 18 (medida 80)."
+  },
+  {
+   "tema": "Reclamar cada año el 100 % de la aportación estatal al POSEI y que las ayudas europeas sigan llegando directamente al campo canario; financiación estatal contra plagas; evaluar los acuerdos comerciales",
+   "quien": "Cristina Valido, cabeza de lista de Coalición Canaria-Primero Canarias al Congreso por Santa Cruz de Tenerife",
+   "fecha": "2026-11-05",
+   "url": "https://coalicioncanaria.org/valido-y-cabello-exigen-un-aumento-de-las-ayudas-para-el-sector-primario-para-reducir-la-dependencia-del-exterior/",
+   "fuente_local": "data/sources/compromisos/cc/2026-11-12_cc_feed_notas.txt",
+   "motivo": "Ya está en el programa, p. 13 (medidas 39, 40 y 42). Repetido el 12-nov (CASMI)."
+  },
+  {
+   "tema": "Mayor financiación estatal para las universidades canarias, becas de movilidad y alojamiento de estudiantes",
+   "quien": "Cristina Valido, cabeza de lista de Coalición Canaria-Primero Canarias al Congreso por Santa Cruz de Tenerife",
+   "fecha": "2026-11-10",
+   "url": "https://coalicioncanaria.org/valido-exige-al-estado-una-financiacion-justa-para-las-universidades-canarias-que-compense-los-sobrecostes-de-la-ultraperiferia/",
+   "fuente_local": "data/sources/compromisos/cc/2026-11-12_cc_feed_notas.txt",
+   "motivo": "Ya está en el programa, p. 14 (medidas 47 y 48: becas del REF para quien se desplaza y financiación plurianual de las universidades públicas canarias) y p. 11 (medida 25: fórmulas residenciales para estudiantes)."
+  },
+  {
+   "tema": "Medidas del Estado para que la artesanía y la cultura canaria puedan promocionarse fuera sin sobrecoste",
+   "quien": "Cristina Valido, cabeza de lista de Coalición Canaria-Primero Canarias al Congreso por Santa Cruz de Tenerife",
+   "fecha": "2026-11-11",
+   "url": "https://coalicioncanaria.org/valido-exige-al-estado-medidas-para-que-la-artesania-y-la-cultura-canaria-no-compitan-en-desigualdad-por-la-lejania/",
+   "fuente_local": "data/sources/compromisos/cc/2026-11-12_cc_feed_notas.txt",
+   "motivo": "No es una medida concreta («qué medidas [...] podemos plantear») y lo esencial ya está en el programa, p. 19 (medida 88, ayudas a la circulación de la creación canaria)."
+  },
+  {
+   "tema": "Real decreto-ley con medidas extraordinarias de seguridad eléctrica para Canarias; almacenamiento de renovables; renovación de centrales",
+   "quien": "Cristina Valido, cabeza de lista de Coalición Canaria-Primero Canarias al Congreso por Santa Cruz de Tenerife; Alfonso Cabello, candidato al Senado por Tenerife",
+   "fecha": "2026-11-02",
+   "url": "https://coalicioncanaria.org/valido-denuncia-que-canarias-siga-sufriendo-apagones-como-el-de-hoy-en-la-palma/",
+   "fuente_local": "data/sources/compromisos/cc/2026-11-12_cc_feed_notas.txt",
+   "motivo": "El real decreto-ley se exige al Gobierno en funciones «antes de que concluya la legislatura» (no es un compromiso para la próxima). Renovar centrales y almacenar energía ya está en el programa, p. 15 (medidas 53 y 56)."
+  },
+  {
+   "tema": "Deducción del 60 % del IRPF en La Palma en 2027, continuidad del plan de empleo y Centro Nacional de Vulcanología con el 50 % del mantenimiento a cargo del Estado",
+   "quien": "Cristina Valido, cabeza de lista de Coalición Canaria-Primero Canarias al Congreso por Santa Cruz de Tenerife",
+   "fecha": "2026-11-01",
+   "url": "https://coalicioncanaria.org/valido-insiste-en-que-se-garantice-la-bonificacion-del-irpf-para-la-palma-en-2027-antes-del-29n/",
+   "fuente_local": "data/sources/compromisos/cc/2026-11-12_cc_feed_notas.txt",
+   "motivo": "Ya está en el programa, p. 13 (medida 38), p. 16 (medida 67) y p. 18 (medida 81)."
+  },
+  {
+   "tema": "Modificar la Ley General de la Seguridad Social para que los complementos autonómicos no computen en las pensiones no contributivas",
+   "quien": "Cristina Valido, cabeza de lista de Coalición Canaria-Primero Canarias al Congreso por Santa Cruz de Tenerife",
+   "fecha": "2026-10-21",
+   "url": "https://coalicioncanaria.org/valido-reclama-a-los-grandes-partidos-que-no-olviden-la-situacion-de-las-personas-que-viven-con-una-pension-no-contributiva/",
+   "fuente_local": "data/sources/compromisos/cc/2026-11-12_cc_feed_notas.txt",
+   "motivo": "Ya está en el programa, p. 10 (medida 19)."
+  },
+  {
+   "tema": "Financiación de las nuevas exigencias a las escuelas infantiles de 0 a 3 años",
+   "quien": "Cristina Valido, cabeza de lista de Coalición Canaria-Primero Canarias al Congreso por Santa Cruz de Tenerife",
+   "fecha": "2026-10-06",
+   "url": "https://coalicioncanaria.org/cristina-valido-destaca-la-importancia-de-garantizar-una-oferta-de-plazas-de-0-a-3-anos-de-calidad/",
+   "fuente_local": "data/sources/compromisos/cc/2026-11-12_cc_feed_notas.txt",
+   "motivo": "No es una medida concreta (pide escuchar al sector y acompañar de financiación cualquier nueva exigencia); la financiación estatal del 0-3 ya está en el programa, p. 9 (medida 14)."
+  },
+  {
+   "tema": "Despliegue pleno de la Policía Canaria con competencias equiparables a las de Cataluña, Navarra y el País Vasco",
+   "quien": "Cristina Valido, cabeza de lista de Coalición Canaria-Primero Canarias al Congreso por Santa Cruz de Tenerife",
+   "fecha": "2026-11-03",
+   "url": "https://coalicioncanaria.org/valido-exige-al-gobierno-central-que-ejerza-de-forma-definitiva-sus-competencias-migratorias-ante-el-repunte-de-llegadas-a-canarias/",
+   "fuente_local": "data/sources/compromisos/cc/2026-11-12_cc_feed_notas.txt",
+   "motivo": "La financiación del despliegue ya está en el programa, p. 10 (medida 18). La equiparación de competencias solo aparece en estilo indirecto de la nota; la frase literal de Valido («lo responsable es dotar presupuestariamente a nuestra policía autonómica») se refiere a la financiación."
+  },
+  {
+   "tema": "Instalaciones permanentes de contingencia en las zonas fronterizas, traslados automáticos a la Península, personal estatal de triaje y partida estatal sanitaria para la atención a migrantes",
+   "quien": "Cristina Valido, cabeza de lista de Coalición Canaria-Primero Canarias al Congreso por Santa Cruz de Tenerife",
+   "fecha": "2026-11-03",
+   "url": "https://coalicioncanaria.org/valido-exige-al-gobierno-central-que-ejerza-de-forma-definitiva-sus-competencias-migratorias-ante-el-repunte-de-llegadas-a-canarias/",
+   "fuente_local": "data/sources/compromisos/cc/2026-11-12_cc_feed_notas.txt",
+   "motivo": "Los traslados automáticos y los costes de acogida y atención humanitaria ya están en el programa, p. 18-19 (medidas 82 y 83). De las instalaciones permanentes solo hay en palabras de Valido un diagnóstico («No se pueden improvisar campamentos cada otoño»); la medida es estilo indirecto. Además se exigen al Gobierno actual ante el repunte de octubre."
+  },
+  {
+   "tema": "Dispositivo extraordinario de vigilancia de la ruta atlántica, operativo reforzado de Frontex, activar la solidaridad del Pacto Europeo y una operación policial internacional contra las redes",
+   "quien": "Coalición Canaria (nota oficial) y Cristina Valido, cabeza de lista de Coalición Canaria-Primero Canarias al Congreso por Santa Cruz de Tenerife",
+   "fecha": "2026-10-13",
+   "url": "https://coalicioncanaria.org/cristina-valido-reclama-mas-informacion-y-medidas-concretas-ante-el-riesgo-de-un-repunte-migratorio-en-canarias/",
+   "fuente_local": "data/sources/compromisos/cc/2026-11-12_cc_feed_notas.txt",
+   "motivo": "Son «medidas inmediatas» exigidas al Gobierno en funciones, no compromisos para la próxima legislatura; las frases literales de Valido son generales. La cooperación con los países de origen y la lucha contra las redes ya están en el programa, p. 19 (medida 85). Valido repite en Demócrata (5-nov) el refuerzo de Salvamento y la solidaridad del Pacto, que figuran en las medidas 82 y 83."
+  },
+  {
+   "tema": "Que el Estado no transponga igual en Canarias normas europeas como la tasa de residuos",
+   "quien": "Cristina Valido, cabeza de lista de Coalición Canaria-Primero Canarias al Congreso por Santa Cruz de Tenerife",
+   "fecha": "2026-11-05",
+   "url": "https://www.democrata.es/elecciones-generales-espana/cristina-valido-apoyo-gobierno-pp-vox-psoe/",
+   "fuente_local": "data/sources/compromisos/cc/2026-11-05_democrata_entrevista_valido.txt",
+   "motivo": "Es una crítica con un ejemplo, no una medida; la adaptación de las normas europeas sobre residuos a las regiones ultraperiféricas ya está en el programa, p. 20 (medida 91)."
+  }
+ ],
+ "busqueda": {
+  "hasta": "2026-11-12",
+  "web_oficial": "coalicioncanaria.org: las 20 notas publicadas entre el 5-oct y el 12-nov-2026 (feed RSS, copia en data/sources/compromisos/cc/2026-11-12_cc_feed_notas.txt). primerocanarias.com no publica notas propias de campaña.",
+  "programa": "«Defiende Canarias» (data/sources/programas/cc/CCA-26-Programa_Electoral-29NOV.txt), leído entero para comprobar cada candidato.",
+  "fuentes": [
+   "Entradas de «coalicion_canaria» en data/promesas/promesas.json y data/fase1/lideres_2026-11-12/cc.json (las codificaciones de fase 1 de CC proceden del programa; no hay codificaciones «campaña» en data/fase1/codificacion_g3.json)",
+   "Entrevistas: Cristina Valido en Demócrata (5-nov); Fernando Clavijo en Atlántico TV, recogida por Diario de Avisos (octubre)",
+   "Prensa: RTVC (Sosa, 17-oct), Canarias Ahora/elDiario.es (presentación de candidaturas, 7-nov), Europa Press vía Diario Estrategia (moción del 23-sep)",
+   "Búsquedas web sobre Valido, Sosa y Clavijo (campaña 29N, migración, técnicos en cuidados de enfermería, Policía Canaria, condiciones de investidura)"
+  ],
+  "limitaciones": "El buscador web devolvió poca prensa canaria de octubre y noviembre de 2026; la fuente principal son las notas oficiales del partido, que recogen las palabras de sus candidatos. Pueden existir declaraciones en radio o televisión no localizadas."
+ }
+}

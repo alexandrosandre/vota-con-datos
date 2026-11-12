@@ -1,0 +1,133 @@
+{
+ "partido": "adelante_andalucia",
+ "base": "complemento",
+ "fecha": "2026-11-12",
+ "modelo": "Claude (Anthropic)",
+ "prompt": "docs/prompts/1b_seleccion_compromisos.md (sección «Partidos con programa: complemento»)",
+ "nota": "Complemento del análisis del programa del 29N (data/programas/adelante_andalucia/evaluacion.json): se han buscado compromisos de los líderes de Adelante Andalucía, posteriores a la convocatoria, que el partido presente como importantes y que no figuren en su programa. No hay ninguno: todas las medidas concretas que han anunciado José Ignacio García y las cabezas de lista están en el programa de 719 medidas (10-nov), y el resto de sus declaraciones no son medidas. Por eso no hay prioridades ni evaluación.",
+ "programa_comprobado": {
+  "texto": "data/sources/programas/adelante_andalucia/programa-29n-adelante-andalucia.txt",
+  "sha256": "0a7e88a61b5814ca8807aadc9474d7fa550b2694497694d04cacd3c6de0b0ec7",
+  "metodo": "Búsqueda en el texto completo (134 pp.) de cada medida anunciada por los líderes, también con otras palabras."
+ },
+ "compromisos": [],
+ "prioridades": [],
+ "nota_prioridades": "Sin prioridades: no se ha encontrado ningún compromiso concreto de los líderes, en primera persona y posterior al 6-oct, que no esté ya en el programa.",
+ "descartados": [
+  {
+   "tema": "Limitar los alquileres al 20 % de la renta y contratos de alquiler indefinidos",
+   "quien": "José Ignacio García, portavoz de Adelante Andalucía; María Sánchez, cabeza de lista de Adelante Andalucía al Congreso por Cádiz",
+   "fecha": "2026-11-10",
+   "url": "https://www.ultimahora.es/noticias/comunidades/2026/11/10/2746931/adelante-presenta-programa-electoral-limites-alquiler-desprivatizacion-ferroviaria-jornada-horas.html",
+   "fuente_local": "data/sources/compromisos/adelante_andalucia/2026-11-10_ultimahora_ep_programa.txt",
+   "motivo": "Ya está en el programa, p. 4 (primera de «Las 29») y p. 49 (alquiler ligado a la renta y medida 168, contratos indefinidos)."
+  },
+  {
+   "tema": "Prohibir la compra especulativa de vivienda, retirar licencias de pisos turísticos, más impuestos a la vivienda vacía e ilegalizar las empresas de «desokupación»",
+   "quien": "María Sánchez, cabeza de lista de Adelante Andalucía al Congreso por Cádiz",
+   "fecha": "2026-11-10",
+   "url": "https://www.eldiario.es/andalucia/29-29-adelante-andalucia-propone-frenar-derechas-poniendo-foco-vida-real_1_13651726.html",
+   "fuente_local": "data/sources/compromisos/adelante_andalucia/2026-11-10_eldiario_programa.txt",
+   "motivo": "Ya está en el programa, p. 4, p. 49 y p. 50."
+  },
+  {
+   "tema": "Tren 100 % público y andaluz, desprivatizar el sistema ferroviario y cercanías en las ocho provincias",
+   "quien": "José Ignacio García, portavoz de Adelante Andalucía",
+   "fecha": "2026-11-10",
+   "url": "https://www.ultimahora.es/noticias/comunidades/2026/11/10/2746931/adelante-presenta-programa-electoral-limites-alquiler-desprivatizacion-ferroviaria-jornada-horas.html",
+   "fuente_local": "data/sources/compromisos/adelante_andalucia/2026-11-10_ultimahora_ep_programa.txt",
+   "motivo": "Ya está en el programa, p. 3, p. 6 y p. 78."
+  },
+  {
+   "tema": "Jornada de 32 horas y prohibir por ley los turnos partidos",
+   "quien": "José Ignacio García, portavoz de Adelante Andalucía",
+   "fecha": "2026-11-10",
+   "url": "https://www.eldiario.es/andalucia/29-29-adelante-andalucia-propone-frenar-derechas-poniendo-foco-vida-real_1_13651726.html",
+   "fuente_local": "data/sources/compromisos/adelante_andalucia/2026-11-10_eldiario_programa.txt",
+   "motivo": "Ya está en el programa, p. 3, p. 8, p. 63 y p. 64."
+  },
+  {
+   "tema": "Blindar las pensiones públicas y un plan de protección para los pequeños autónomos",
+   "quien": "José Ignacio García, portavoz de Adelante Andalucía",
+   "fecha": "2026-11-10",
+   "url": "https://www.ultimahora.es/noticias/comunidades/2026/11/10/2746931/adelante-presenta-programa-electoral-limites-alquiler-desprivatizacion-ferroviaria-jornada-horas.html",
+   "fuente_local": "data/sources/compromisos/adelante_andalucia/2026-11-10_ultimahora_ep_programa.txt",
+   "motivo": "Ya está en el programa, p. 3, p. 11 y p. 55 (apartado 1.7, pensiones)."
+  },
+  {
+   "tema": "Red de supermercados públicos",
+   "quien": "José Ignacio García, portavoz de Adelante Andalucía",
+   "fecha": "2026-11-10",
+   "url": "https://www.ultimahora.es/noticias/comunidades/2026/11/10/2746931/adelante-presenta-programa-electoral-limites-alquiler-desprivatizacion-ferroviaria-jornada-horas.html",
+   "fuente_local": "data/sources/compromisos/adelante_andalucia/2026-11-10_ultimahora_ep_programa.txt",
+   "motivo": "Ya está en el programa, p. 12 y p. 68 (medida 313)."
+  },
+  {
+   "tema": "Impuesto a la sanidad privada destinado a la investigación contra el cáncer y ley de garantías de atención primaria con 10 minutos por consulta",
+   "quien": "Adelante Andalucía (presentación del programa)",
+   "fecha": "2026-11-10",
+   "url": "https://www.ultimahora.es/noticias/comunidades/2026/11/10/2746931/adelante-presenta-programa-electoral-limites-alquiler-desprivatizacion-ferroviaria-jornada-horas.html",
+   "fuente_local": "data/sources/compromisos/adelante_andalucia/2026-11-10_ultimahora_ep_programa.txt",
+   "motivo": "Ya está en el programa, p. 15, p. 16, p. 36 y p. 58. Además, las crónicas lo atribuyen al partido sin cita en primera persona de un líder."
+  },
+  {
+   "tema": "Que las viviendas de la Sareb sean públicas y accesibles",
+   "quien": "Ana Jiménez, cabeza de lista de Adelante Andalucía al Congreso por Málaga",
+   "fecha": "2026-11-09",
+   "url": "https://adelanteandalucia.org/adelante-andalucia-marca-terreno-en-la-precampana-de-malaga-con-un-acto-abierto-en-el-parque-de-huelin/",
+   "fuente_local": "data/sources/compromisos/adelante_andalucia/2026-11-12_adelante_feed_notas.txt",
+   "motivo": "Ya está en el programa, p. 49 («La Sareb, al parque público»)."
+  },
+  {
+   "tema": "Liberar los peajes, ampliar el cercanías de Málaga y llevar el tren por toda la costa (Costa del Sol y Axarquía)",
+   "quien": "Ana Jiménez, cabeza de lista de Adelante Andalucía al Congreso por Málaga",
+   "fecha": "2026-11-09",
+   "url": "https://adelanteandalucia.org/adelante-andalucia-marca-terreno-en-la-precampana-de-malaga-con-un-acto-abierto-en-el-parque-de-huelin/",
+   "fuente_local": "data/sources/compromisos/adelante_andalucia/2026-11-12_adelante_feed_notas.txt",
+   "motivo": "Ya está en el programa, p. 131 (reclamaciones para Málaga: corredor litoral Algeciras-Nerja y medida 695, liberación del peaje de la AP-7). Repetido el 6-nov."
+  },
+  {
+   "tema": "Financiación autonómica sin ordinalidad y con fondo de nivelación",
+   "quien": "Adelante Andalucía (presentación del programa)",
+   "fecha": "2026-11-10",
+   "url": "https://www.ultimahora.es/noticias/comunidades/2026/11/10/2746931/adelante-presenta-programa-electoral-limites-alquiler-desprivatizacion-ferroviaria-jornada-horas.html",
+   "fuente_local": "data/sources/compromisos/adelante_andalucia/2026-11-10_ultimahora_ep_programa.txt",
+   "motivo": "Ya está en el programa, p. 72 (evaluada como adelante_andalucia-09)."
+  },
+  {
+   "tema": "Dimisión del ministro de Transportes, Óscar Puente, tras el accidente de Urda",
+   "quien": "José Ignacio García, portavoz de Adelante Andalucía",
+   "fecha": "2026-10-28",
+   "url": "https://www.elplural.com/autonomias/andalucia/adelante-andalucia-pide-dimision-oscar-puente-dos-veces-linea-andalucia-ano_802669102",
+   "fuente_local": "data/sources/compromisos/adelante_andalucia/2026-10-28_elplural_garcia_puente.txt",
+   "motivo": "No es una medida para la legislatura, sino una exigencia al Gobierno en funciones. Lo mismo vale para la petición de cese del ministro del Interior (12-nov, Teleprensa; la web devolvió HTTP 403 y no se descargó)."
+  },
+  {
+   "tema": "Candidatura en solitario, «caras nuevas» y «parar a las derechas»",
+   "quien": "José Ignacio García, portavoz de Adelante Andalucía",
+   "fecha": "2026-10-13",
+   "url": "https://www.ultimahora.es/noticias/comunidades/2026/10/13/2727979/adelante-andalucia-defiende-papeleta-29n-frente-lio-izquierda-problema-division.html",
+   "fuente_local": "data/sources/compromisos/adelante_andalucia/2026-10-13_ultimahora_ep_garcia_jerez.txt",
+   "motivo": "Estrategia electoral, no medidas. Igual en la presentación de las cabezas de lista (Demócrata, data/sources/compromisos/adelante_andalucia/2026-10_democrata_cabezas_lista.txt)."
+  },
+  {
+   "tema": "Romper relaciones con el régimen de Marruecos y acoger de inmediato a los menores migrantes de Ceuta",
+   "quien": "José Ignacio García, portavoz de Adelante Andalucía",
+   "fecha": "2026-09",
+   "url": "https://www.esdiario.com/andalucia/260907/197128/adelante-pone-lado-moreno-sobre-financiacion-sigue-ataque-ceuta.html",
+   "fuente_local": null,
+   "motivo": "Anterior a la convocatoria (agosto-septiembre de 2026) y sin referencia a estas elecciones; solo localizado en resumen de buscador, no descargado. El programa recoge la «solidaridad con el pueblo marroquí frente al régimen» (p. 32 y p. 109), no la ruptura."
+  }
+ ],
+ "busqueda": {
+  "hasta": "2026-11-12",
+  "web_oficial": "adelanteandalucia.org: notas del 14-oct al 12-nov-2026 (feed RSS, copia en data/sources/compromisos/adelante_andalucia/2026-11-12_adelante_feed_notas.txt; casi todas de Adelante Málaga). programa.adelanteandalucia.org (programa y «Las 29 del 29N»).",
+  "programa": "Programa del 29N (data/sources/programas/adelante_andalucia/programa-29n-adelante-andalucia.txt), 719 medidas; cada candidato se ha buscado en el texto completo.",
+  "fuentes": [
+   "Entradas de «adelante_andalucia» en data/promesas/promesas.json y data/fase1/lideres_2026-11-12/adelante_andalucia.json (las posiciones de fase 1 proceden del programa; no hay codificaciones «campaña» en data/fase1/codificacion_g2.json)",
+   "Europa Press vía Última Hora (13-oct y 10-nov), SevillaPress (10-nov), elDiario.es Andalucía (10-nov), Demócrata (cabezas de lista), El Plural (28-oct)",
+   "Búsquedas web sobre José Ignacio García, Luis de los Santos, María Sánchez y Ana Jiménez (propuestas, entrevistas, inicio de campaña, Ceuta y Marruecos)"
+  ],
+  "limitaciones": "La entrevista de Europa Press a García en Granada (Andalucía Información, 4-nov) y la nota de Teleprensa (12-nov) devolvieron HTTP 403 y no se descargaron. El buscador devolvió poca cobertura del acto de inicio de campaña del 12-nov. Pueden existir declaraciones en radio o televisión no localizadas."
+ }
+}

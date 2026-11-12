@@ -1,0 +1,186 @@
+{
+ "partido": "erc",
+ "base": "complemento",
+ "modelo": "Claude (Anthropic)",
+ "fecha": "2026-11-12",
+ "nota": "ERC tiene programa analizado (data/programas/erc/evaluacion.json; programa de 48 páginas publicado el 5-nov). Siguiendo el prompt 1b (sección «Partidos con programa: complemento»), se buscaron compromisos concretos, en primera persona y para esta legislatura, de Gabriel Rufián (cabeza de lista por Barcelona), Oriol Junqueras (presidente), Elisenda Alamany (secretaria general) y los cabezas de lista (Norma Pujol por Tarragona, Teresa Jordà por Girona e Inés Granollers por Lleida; Francesc-Marc Álvaro al Senado por Barcelona) que el partido presente como importantes y que no figuren en el programa. No se encontró ninguno: lo que ERC destaca en precampaña y en el arranque de campaña (la ley «Una família, una casa» sobre el ITP, la fiscalidad de grandes fortunas y banca, Rodalies y el mantenimiento ferroviario, la financiación) ya está en el programa, y el resto son diagnósticos, críticas a rivales o aspiraciones sin medida. Por eso «prioridades» está vacío y no hay evaluación.",
+ "compromisos": [],
+ "prioridades": [],
+ "no_priorizados": [],
+ "descartados": [
+  {
+   "medida": "Ley «Una família, una casa»: bajar el impuesto de transmisiones patrimoniales (ITP) a quien compra vivienda para vivir en ella y subirlo a quien acumula viviendas o las compra para especular",
+   "quien": "Gabriel Rufián (cabeza de lista por Barcelona) la enuncia el 24-oct, el 8-nov y el 12-nov; Jordi Albert (número 3 por Barcelona) la presenta el 10-nov como la primera ley que ERC registrará en el nuevo Congreso",
+   "fecha": "2026-11-10",
+   "url": "https://naciodigital.cat/politica/erc-portara-al-nou-congres-una-llei-per-abaixar-impostos-al-primer-habitatge-i-apujar-los-a-qui-nacumuli.html",
+   "medio": "NacióDigital",
+   "fuente_local": "data/sources/compromisos/erc/naciodigital_unafamilia_20261110.txt",
+   "sha256": "667f7a6c9fccffe58be21360f7d2c16872957c0ec85ab76146f776fb737ec373",
+   "cita": "Volem prioritzar l'habitatge residencial i la manera és molt senzilla: abaixar els impostos a aquells que adquireixin habitatge per viure-hi, i incrementar-los a aquells que utilitzin l’habitatge per especular",
+   "cita_traduccion": "Queremos priorizar la vivienda residencial y la manera es muy sencilla: bajar los impuestos a quienes adquieran vivienda para vivir en ella e incrementarlos a quienes utilicen la vivienda para especular",
+   "otras_fuentes": [
+    {
+     "fecha": "2026-11-10",
+     "url": "https://www.elnacional.cat/ca/politica/erc-proposa-rebaixes-fiscals-llei-qui-compri-habitatge-us-residencial_1723583_102.html",
+     "medio": "ElNacional.cat",
+     "fuente_local": "data/sources/compromisos/erc/elnacional_unafamilia_20261110.txt",
+     "sha256": "08574243bb355630a31d39103e6d39731f55314e67daf91913df9925aa10eee3",
+     "nota": "Albert precisa que el ITP es el elemento central y que no concreta la rebaja."
+    },
+    {
+     "fecha": "2026-10-24",
+     "url": "https://www.elnacional.cat/ca/politica/tandem-rufian-montero-estrena-titllant-junts-miseria-humana-cridant-sotmetre-psoe_1714450_102.html",
+     "medio": "ElNacional.cat",
+     "fuente_local": "data/sources/compromisos/erc/elnacional_noubarris_20261024.txt",
+     "sha256": "2abc09e47ba2fe8dbd88e38616bd2000aac4708e015973ae552b868c78f3309e",
+     "nota": "Acto con Irene Montero en Nou Barris: la crónica atribuye a Rufián, en estilo indirecto, una ley «Una família, una casa» que prohíba la especulación."
+    },
+    {
+     "fecha": "2026-11-08",
+     "url": "https://naciodigital.cat/politica/rufian-i-junqueras-entren-al-xoc-amb-psc-i-junts-no-es-mereixen-el-vostre-vot.html",
+     "medio": "NacióDigital",
+     "fuente_local": "data/sources/compromisos/erc/naciodigital_badalona_20261108.txt",
+     "sha256": "125a94efb325c25c554b93371dde68b79b34a33d8e9a0e1cf60f9191f1c501c4",
+     "nota": "Badalona: «Amb els pisos no. Una família, una casa»."
+    }
+   ],
+   "programa": {
+    "pagina": 19,
+    "texto": "59. Incrementar els tipus de l’IVA i l’ITP sobre la compra d’habitatge quan aquest es destini a usos diferents a l’habitatge habitual. [...] cal que es redueixin els tipus impositius quan l’ús final de l’habitatge sigui la primera residència"
+   },
+   "motivo": "Ya está en el programa, p. 19 (medida 59): subir el IVA y el ITP de la compra de vivienda para usos distintos de la residencia habitual y reducirlos cuando sea primera residencia. La ley anunciada es el instrumento legislativo de esa misma medida, no una medida nueva."
+  },
+  {
+   "medida": "Prohibir la especulación inmobiliaria («cal prohibir l'especulació»)",
+   "quien": "Gabriel Rufián (cabeza de lista por Barcelona)",
+   "fecha": "2026-11-12",
+   "url": "https://naciodigital.cat/politica/erc-serigeix-en-lopcio-ambiciosa-i-responsable-per-arrossegar-sanchez.html",
+   "medio": "NacióDigital",
+   "fuente_local": "data/sources/compromisos/erc/naciodigital_tarragona_20261112.txt",
+   "sha256": "a6c9ae8fe1ac99a67adf6aef8b69912b650ce8fd834f92f9e1486b29e695e3c3",
+   "cita": "cal prohibir l’especulació i fregir a impostos als que volen fer-se rics amb l’habitatge",
+   "cita_traduccion": "hay que prohibir la especulación y freír a impuestos a los que quieren hacerse ricos con la vivienda",
+   "programa": {
+    "pagina": 19,
+    "texto": "es planteja que es limiti els usos especulatius i efectuï una reforma fiscal que incentivi que els habitatges es destinin a primera residència"
+   },
+   "motivo": "No es una medida concreta: Rufián no dice qué se prohibiría ni con qué instrumento, y el número 3 de la lista lo descarta expresamente al presentar la ley del partido («no de prohibir l'especulació, en cap cas», ElNacional.cat, 10-nov, fuente elnacional_unafamilia_20261110.txt). La parte fiscal y la limitación de usos especulativos ya están en el programa, p. 19."
+  },
+  {
+   "medida": "Más impuestos a la banca y a las grandes empresas («No pot ser que un treballador de Mercadona pagui més impostos que Joan Roig»)",
+   "quien": "Gabriel Rufián (cabeza de lista por Barcelona)",
+   "fecha": "2026-11-08",
+   "url": "https://www.elnacional.cat/ca/politica/rufian-esclata-contra-junts-votar-pp-vox-voten-contra-classe-treballadora-catalana_1722404_102.html",
+   "medio": "ElNacional.cat",
+   "fuente_local": "data/sources/compromisos/erc/elnacional_badalona_20261108.txt",
+   "sha256": "37e3522d230dd8948bb67e270ccd109334743bd3f6bdbc244a832d74456585f8",
+   "cita": "No pot ser que un treballador de Mercadona pagui més impostos que Joan Roig",
+   "cita_traduccion": "No puede ser que un trabajador de Mercadona pague más impuestos que Joan Roig",
+   "programa": {
+    "pagina": 22,
+    "texto": "74. Fiscalitat dels multimilionaris. Fer permanent l’impost temporal de solidaritat de les grans fortunes [...] 76. Convertir l’impost extraordinari a la banca en un tribut permanent."
+   },
+   "motivo": "Ya está en el programa, p. 22 (medidas 74 a 76: impuesto permanente a las grandes fortunas, a las energéticas y a la banca). Además, la subida de impuestos a banca y grandes empresas solo consta en estilo indirecto del periodista; la frase literal es un diagnóstico, no una medida."
+  },
+  {
+   "medida": "Plan integral e independiente y «inversión masiva» en mantenimiento ferroviario; racionalizar Adif",
+   "quien": "Gabriel Rufián (portavoz en el Congreso y cabeza de lista por Barcelona), en la comparecencia del ministro de Transportes ante la Diputación Permanente por el accidente de Urda",
+   "fecha": "2026-11-03",
+   "url": "https://www.elnacional.cat/ca/politica/erc-junts-responsabilitzen-pp-psoe-manca-manteniment-ferroviari-pulla-mutua-nogueras-rufian_1720083_102.html",
+   "medio": "ElNacional.cat",
+   "fuente_local": "data/sources/compromisos/erc/elnacional_trens_20261103.txt",
+   "sha256": "076b35eded1c58ce449c150ae5817e2777a4eacbc49c7a5ac97b943c24e7afc4",
+   "cita": "L'important és si el sistema ferroviari espanyol és sostenible, segur i eficient, o no ho és. I la resposta és inequívocament que no",
+   "cita_traduccion": "Lo importante es si el sistema ferroviario español es sostenible, seguro y eficiente, o no lo es. Y la respuesta es inequívocamente que no",
+   "programa": {
+    "pagina": 40,
+    "texto": "223. Garantir la seguretat i la fiabilitat de l’alta velocitat ferroviària. Exigir a Adif un manteniment preventiu adequat de les infraestructures d’alta velocitat, amb les inspeccions, les renovacions i les inversions necessàries per garantir-ne la seguretat"
+   },
+   "motivo": "La exigencia del plan y de la inversión solo consta en estilo indirecto del periodista y va dirigida al Gobierno en funciones, no como compromiso para la próxima legislatura. El mantenimiento preventivo e inversiones en la red ferroviaria ya están en el programa, p. 39-40 (medidas 223 a 225). Junqueras pidió lo mismo el 30-oct («Amb la vida de les persones no s’hi juga», fuente elnacional_adif_20261030.txt), sin medida concreta."
+  },
+  {
+   "medida": "Obligar al PSOE a invertir en trenes («obligar al PSOE que posi pasta»)",
+   "quien": "Gabriel Rufián (cabeza de lista por Barcelona)",
+   "fecha": "2026-11-12",
+   "url": "https://naciodigital.cat/politica/erc-serigeix-en-lopcio-ambiciosa-i-responsable-per-arrossegar-sanchez.html",
+   "medio": "NacióDigital",
+   "fuente_local": "data/sources/compromisos/erc/naciodigital_tarragona_20261112.txt",
+   "sha256": "a6c9ae8fe1ac99a67adf6aef8b69912b650ce8fd834f92f9e1486b29e695e3c3",
+   "cita": "obligar al PSOE que posi pasta",
+   "cita_traduccion": "obligar al PSOE a que ponga dinero",
+   "programa": {
+    "pagina": 40,
+    "texto": "225. Garantir el finançament i l’execució íntegra del Pla de Rodalies 2026-2030."
+   },
+   "motivo": "Sin cuantía, plazo ni instrumento: es una aspiración. La financiación y ejecución del Plan de Rodalies y el traspaso ya están en el programa, p. 40 (medidas 222 a 225)."
+  },
+  {
+   "medida": "Actuar contra la multirreincidencia («parlar de seguretat sense manies»)",
+   "quien": "Gabriel Rufián (cabeza de lista por Barcelona)",
+   "fecha": "2026-11-12",
+   "url": "https://www.elnacional.cat/ca/politica/rufian-posa-rumb-29n-avisant-efectes-majoria-pp-vox-acusant-junts-collaboracionisme_1724819_102.html",
+   "medio": "ElNacional.cat",
+   "fuente_local": "data/sources/compromisos/erc/elnacional_tarragona_20261112.txt",
+   "sha256": "7452bfc1e95122ab72482a649b161e9051ca16acb4eba64a2b04b1d0288e7246",
+   "cita": "En aquest país hi ha un problema amb la multireincidència, no amb la delinqüència",
+   "cita_traduccion": "En este país hay un problema con la multirreincidencia, no con la delincuencia",
+   "programa": {
+    "pagina": 43,
+    "texto": "180 places entre 2026 i 2027 per accelerar els tràmits judicials, especialment els derivats de processos de reincidència"
+   },
+   "motivo": "Es un diagnóstico, sin medida identificable. La única medida de ERC sobre reincidencia (180 plazas judiciales) ya está en el programa, p. 43."
+  },
+  {
+   "medida": "Control de fronteras y recuperar las vías legales de entrada",
+   "quien": "Gabriel Rufián (portavoz de ERC en el Congreso), entrevista en Salvados (laSexta)",
+   "fecha": "2026-09-27",
+   "url": "https://es.ara.cat/politica/rufian-reclama-control-fronteras-pesar-reivindicar-llegada-padres-lamine-yamal_1_5862652.html",
+   "medio": "Ara",
+   "fuente_local": "data/sources/compromisos/erc/ara_salvados_20260927.txt",
+   "sha256": "2de4776e3b57329fa7162781479e552944b345c5810c64fe38ce23bf19750b4e",
+   "cita": "Un país debe controlar sus fronteras",
+   "motivo": "Anterior a la convocatoria (6-oct) y sin referencia expresa a estas elecciones o a la próxima legislatura (prompt 2); además es una posición general, no una medida concreta. No se ha repetido en campaña con una medida."
+  },
+  {
+   "medida": "Rehabilitación de vivienda («rehabilitació capil·lar»), con el plan Regenera de 250 millones pactado en los presupuestos de la Generalitat",
+   "quien": "Oriol Junqueras (presidente de ERC)",
+   "fecha": "2026-11-08",
+   "url": "https://naciodigital.cat/politica/rufian-i-junqueras-entren-al-xoc-amb-psc-i-junts-no-es-mereixen-el-vostre-vot.html",
+   "medio": "NacióDigital",
+   "fuente_local": "data/sources/compromisos/erc/naciodigital_badalona_20261108.txt",
+   "sha256": "125a94efb325c25c554b93371dde68b79b34a33d8e9a0e1cf60f9191f1c501c4",
+   "cita": "Per generar riquesa, cal fer una rehabilitació capil·lar",
+   "cita_traduccion": "Para generar riqueza, hay que hacer una rehabilitación capilar",
+   "programa": {
+    "pagina": 19,
+    "texto": "61. Aplicar deduccions i incentius fiscals sobre la rehabilitació d’habitatge"
+   },
+   "motivo": "El plan Regenera es un acuerdo ya cerrado en los presupuestos autonómicos, no un compromiso para el Congreso; la rehabilitación en el ámbito estatal ya está en el programa, p. 19 (medida 61)."
+  },
+  {
+   "medida": "Seis propuestas para «recuperar la credibilidad de la política», entre ellas regular las plataformas digitales y sus algoritmos",
+   "quien": "Francesc-Marc Álvaro (cabeza de lista de ERC al Senado por Barcelona)",
+   "fecha": "2026-11-11",
+   "url": "https://www.elnacional.cat/ca/politica/alvaro-crida-fer-grans-acords-en-llengua-infraestructures-autogovern-davant-lamenaca-pp-vox_1723910_102.html",
+   "medio": "ElNacional.cat",
+   "fuente_local": "data/sources/compromisos/erc/elnacional_alvaro_20261111.txt",
+   "sha256": "320ffe89a2aca9223d3d23112660c3e3a3e1ed44c31caec863371016994ff134",
+   "programa": {
+    "pagina": 35,
+    "texto": "201. Obligar les grans plataformes a establir mesures de prevenció, detecció i denúncia de pràctiques manipuladores o addictives."
+   },
+   "motivo": "Solo constan en estilo indirecto del periodista. La regulación de las plataformas y la transparencia de los algoritmos ya están en el programa, p. 34-35 (medidas 198 a 204); las demás (decir la verdad, grandes acuerdos de país, moderación) son aspiraciones sin medida."
+  }
+ ],
+ "busqueda": {
+  "hasta": "2026-11-12",
+  "fuentes": [
+   "esquerra.cat y esquerrarepublicana.cat: la web de noticias del partido devuelve HTTP 403 a una petición normal (protección anti-bots); no se intentó sortearla.",
+   "Prensa catalana con cobertura diaria de ERC: NacióDigital (sección política, etiqueta ERC y especial 29-N), ElNacional.cat (etiquetas Gabriel Rufián, Oriol Junqueras y Esquerra Republicana, del 6-oct al 12-nov), Ara (sección eleccions generals), Demócrata (Europa Press), beteve.",
+   "Actos revisados: Nou Barris con Irene Montero (24-oct), Madrid con Montero (7-nov), Badalona (8-nov, primer acto propio de precampaña), rueda de prensa de Junqueras (9-nov), anuncio de la ley «Una família, una casa» (10-nov), conferencia de Francesc-Marc Álvaro (11-nov), Diputación Permanente del 3-nov y del 12-nov, debate de RTVE Catalunya (8-nov) y acto de inicio de campaña en Tarragona (12-nov, noche).",
+   "Búsquedas abiertas sobre Norma Pujol, Teresa Jordà e Inés Granollers: no se localizaron compromisos suyos para el 29-N distintos de los del programa (de Pujol solo una advertencia, según Canal 21 Ebre, de que PP y Vox quieren suprimir el impuesto del Fondo de Transición Nuclear, asunto que el programa recoge en la p. 31, medida 147).",
+   "Pistas previas: data/promesas/promesas.json (todas las medidas de ERC proceden de su programa) y data/fase1/codificacion_g*.json (ERC no tiene codificaciones de fuente «campaña»).",
+   "Cada medida candidata se buscó en el texto del programa (data/sources/programas/erc/e2026-programa.txt) con sus términos y sinónimos (ITP, especulació, acumul-, grans tenidors, banca, Adif, manteniment, reincidència, plataformes, algoritmes, rehabilitació, migració)."
+  ]
+ }
+}

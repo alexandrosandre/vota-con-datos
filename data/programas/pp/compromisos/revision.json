@@ -1,0 +1,78 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-12",
+ "base": "complemento",
+ "alcance": "2 prioridades (pp-c01 y pp-c02) × 8 criterios. Se abrieron las 39 URL distintas de seleccion.json y evaluacion.json con una petición normal: 38 respondieron 200; revista.seg-social.es devolvió 403 (las cifras del IMV de octubre, 911.274 hogares, 2,8 millones de personas y 748,2 M€, constan también en Libre Mercado, fuente citada). Las citas son literales en las copias locales (Vozpópuli y Demócrata/Europa Press para pp-c01; Libre Mercado, con Tododisca y Fuentes Informadas, para pp-c02), en primera persona de Feijóo, en público y para esta legislatura. Se buscó cada medida en el programa de 82 págs. (texto completo, también con sinónimos). verify_quotes: 0 citas no encontradas.",
+ "seleccion": "pp-c01 y pp-c02 no están en el programa: la Renta de Activación no aparece (ni IMV, renta, subsidio ni búsqueda de empleo; la medida 173 es un hueco «Permanezca atento a la campaña», p. 59), y la supresión de obligaciones nacionales al campo que superen el estándar europeo tampoco (medidas 7, 187, 196 y 232 son de simplificación general o climática). Pero la «moratoria regulatoria en Europa» de la cita de pp-c01 sí está en la medida 7 (p. 14) y se saca del compromiso. Ambas las presenta el partido como importantes: la nota oficial del PP del 7-nov las titula como compromiso y la del 10-nov sitúa la Renta de Activación como primera medida del resumen del acto.",
+ "igual_estandar": "pp-c02 financiación pasa de «mixta» a «no_verificable», como las reformas de prestaciones sin cuantía ya aprobadas (ara_mes_fa-05, vox-07) y la regla del 8-11 («no_verificable» sin cuantía). Legal «favorable» (ley ordinaria estatal; las condiciones de activación ya existen en el art. 47 LISOS) y concreción «mixta» se mantienen. pp-c01 financiación «favorable» es la regla de medidas regulatorias sin gasto (topes de alquiler, compromis-01, podemos-02).",
+ "recuento_inicial": {
+  "favorable": 2,
+  "mixta": 14,
+  "desfavorable": 0,
+  "no_verificable": 0
+ },
+ "recuento_final": {
+  "favorable": 2,
+  "mixta": 13,
+  "desfavorable": 0,
+  "no_verificable": 1
+ },
+ "recuento_final_nota": "seleccion_sha256 recalculado tras cambiar el resumen y la nota de pp-c01.",
+ "cambios": [
+  {
+   "propuesta": "pp-c01",
+   "criterio": "resumen y nota (seleccion.json y evaluacion.json)",
+   "antes": "Suprimir toda obligación legal española al sector agrario que vaya más allá de lo que exige la normativa europea y pedir en la UE una moratoria regulatoria.",
+   "despues": "Suprimir toda obligación legal española al sector agrario que vaya más allá de lo que exige la normativa europea. Se añade a la nota: La petición de una «moratoria regulatoria en Europa» con la que empieza la cita ya está en el programa (medida 7, p. 14: sumarse a la petición de varios países europeos de una pausa de un año para que la Unión no genere nuevas normas) y no forma parte de este compromiso.",
+   "motivo": "La moratoria regulatoria europea de la cita es la medida 7 del programa (p. 14), que la búsqueda de sinónimos no detectó; el complemento solo puede recoger lo que no está en el programa."
+  },
+  {
+   "propuesta": "pp-c01",
+   "criterio": "concrecion",
+   "antes": "suprimir toda obligación legal española al campo que supere el estándar europeo y pedir en la UE una moratoria regulatoria.",
+   "despues": "suprimir toda obligación legal española al campo que supere el estándar europeo (la moratoria regulatoria que pide en la UE ya figura en el programa, medida 7, p. 14).",
+   "motivo": "misma corrección: la moratoria está en el programa"
+  },
+  {
+   "propuesta": "pp-c01",
+   "criterio": "legal",
+   "antes": "La moratoria europea dependería del Consejo y del Parlamento Europeo.",
+   "despues": "(eliminada)",
+   "motivo": "la moratoria no forma parte del compromiso evaluado (está en el programa, medida 7)"
+  },
+  {
+   "propuesta": "pp-c01",
+   "criterio": "evidencia",
+   "antes": "autoridades y asesores atribuyen el 60 % o más de la carga administrativa de la PAC a decisiones de los Estados miembros. El estudio concluye que una parte sustancial de sus requisitos es excesiva o innecesaria («gold-plating»).",
+   "despues": "autoridades y asesores atribuyen el 60 % o más de la carga administrativa de la PAC a decisiones de las que los Estados miembros son responsables en exclusiva, principalmente o a partes iguales con la UE. El estudio concluye que una parte sustancial de los requisitos nacionales puede ser excesiva o innecesaria («gold-plating»), aunque advierte de que el margen real de reducción es probablemente más limitado.",
+   "motivo": "el estudio de la Red PAC (p. resumen ejecutivo) incluye en el 60 % la responsabilidad compartida con la UE y matiza que el gold-plating real y el margen de reducción «are likely to be more limited»; el texto omitía ambas cosas"
+  },
+  {
+   "propuesta": "pp-c01",
+   "criterio": "internacional",
+   "antes": "Dinamarca aprobó en 2016 un paquete agroalimentario que permitía a los agricultores usar más fertilizante.",
+   "despues": "Dinamarca aprobó un paquete agroalimentario con una ley que permitía a los agricultores usar más fertilizante.",
+   "motivo": "la fuente (AP, 27-2-2016) no da el año de aprobación; se elimina la fecha no respaldada"
+  },
+  {
+   "propuesta": "pp-c02",
+   "criterio": "financiacion",
+   "antes": "mixta: El coste de partida es conocido. La nómina del IMV fue de 748,2 millones de euros en octubre de 2026, unos 9.000 millones en términos anuales (Libre Mercado, con datos de la Seguridad Social). El gasto total en prestaciones por desempleo fue de 2.141,6 millones en marzo de 2026, con 848.912 perceptores del subsidio. Feijóo no dice si la nueva renta costaría más o menos que las prestaciones que sustituye ni cómo se pagaría. El saldo depende de cuantías y reglas de compatibilidad que no ha detallado.",
+   "despues": "no_verificable: No hay base para estimar el coste de la medida: Feijóo no da cuantías, umbrales ni reglas de compatibilidad, de modo que no se sabe si la nueva renta costaría más o menos que las prestaciones que sustituye, ni dice cómo se pagaría. Como referencia, la nómina del IMV fue de 748,2 millones de euros en octubre de 2026 (Libre Mercado, con datos de la Seguridad Social) y el gasto total en prestaciones por desempleo, de 2.141,6 millones en marzo de 2026, con 848.912 perceptores del subsidio.",
+   "motivo": "Mismo estándar que las reformas de prestaciones aprobadas: ara_mes_fa-05 (complemento a las pensiones sin cuantía) y vox-07 (acceso a ayudas sin definir) son «no_verificable» aunque el gasto actual sea conocido, y la regla del 8-11 da «no_verificable» a las medidas sin cuantía. Conocer el gasto de las prestaciones que se sustituyen no permite estimar el coste de la nueva renta, cuyo saldo depende de cuantías no definidas; el propio texto lo decía."
+  },
+  {
+   "propuesta": "pp-c02",
+   "criterio": "largo_plazo",
+   "antes": "Según la AIReF, el 46 % de los hogares sigue en el IMV 60 meses después de entrar, y el efecto negativo sobre el empleo persiste meses después de dejar la ayuda.",
+   "despues": "Según la AIReF, el 46 % de los hogares sigue en el IMV 60 meses después de entrar.",
+   "motivo": "ninguna de las fuentes citadas (El Español 23-7-2026, Forbes/Europa Press 9-7-2025, Arni y otros 2013) dice que el efecto negativo persista tras dejar la ayuda"
+  }
+ ],
+ "dudas": [
+  "pp-c01 y pp-c02 tienen una sola ocasión pública cada una; la prioridad descansa en que el candidato las anunció y la nota oficial las destaca. Si el PP rellena los huecos 173 y 200 del programa con estas medidas, pasarían a evaluarse por el programa (prompt 1) y saldrían del complemento.",
+  "pp-c02: las excepciones (incapacidad, dependencia, ayuda a la infancia) solo constan en paráfrasis de Moncloa.com; la frase literal de Tododisca («quien lamentablemente no puede trabajar, ha de tener la mayor protección») no las concreta. La evaluación no las usa."
+ ],
+ "complementos_vacios_comprobados": "Partidos con programa y complemento vacío (comprobado por esta misma revisión): ERC, SALF y Adelante Andalucía descartan bien; se cotejaron contra el texto del programa al menos tres «ya está en el programa, p. N» por partido y todos coinciden (ERC: ITP p. 19 medida 59, fiscalidad de banca y grandes patrimonios p. 22 medidas 74-76, 180 plazas judiciales por reincidencia p. 43; SALF: macrocárcel p. 8, «La corrupción no prescribe» p. 25, 35.000 € libres de IRPF p. 12, cero impuestos primera vivienda p. 5, cláusula de penalización p. 4; Adelante Andalucía: Sareb p. 49, red de supermercados públicos p. 68 medida 313, peaje de la AP-7 p. 131 medida 695, fin del turno partido)."
+}

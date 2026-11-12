@@ -1,0 +1,36 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-12",
+ "base": "complemento",
+ "alcance": "1 prioridad (bng-c01) × 8 criterios. Se abrieron las 27 URL distintas de seleccion.json y evaluacion.json: 26 respondieron 200; bbj.hu devolvió 403 a curl y se leyó con otra petición normal (WebFetch): MNB, 24/25-11-2022, pérdidas bancarias, peor transmisión monetaria y ventaja injustificada a los préstamos variables, como dice el texto. Comprobado: 24,4 % y 17,3 % de hogares con hipoteca (INE, ECV 2025, API de la tabla 9997); AHE T1-2026 (variables >40 % de la cartera, 7 % de las nuevas; Euribor +70 pb interanual); Portfolio (291.000 contratos, 35 %, de ~6 % a ~10 %); FMI Artículo IV de 2026 («Eliminate loan interest rate caps»); taux d'usure mensual desde el 1-2-2023; RDL 19/2022 (euríbor −0,10, carencia de cinco años) y CBP de 22-11-2022 (4,5 IPREM, doce meses, siete años, hasta 31-12-2024); idealista (diferencial del 0,10 %). verify_quotes: 0 no encontradas.",
+ "seleccion": "La cita es literal en la entrevista de El Salto (10-nov), en primera persona de Néstor Rego (cabeza de lista), y se repite en la misma entrevista («Tamén hai que limitar os prezos [...] das hipotecas») y en dos notas oficiales (10 y 12-nov, estilo indirecto; la del 12-nov la destaca en un ladillo y garantiza que el BNG «loitará» por ellas en Madrid). No está en el programa: sobre hipotecas solo «facilitar a portabilidade [...] a tipo fixo e endurecer o marco legal» (p. 14); sin «euribor», «xuro» ni topes de crédito.",
+ "igual_estandar": "Financiación «favorable» como medida regulatoria sin gasto, igual que los topes de alquiler y podemos-01 (rebajar alquileres «por ley», sin instrumento detallado); no es el caso de cc-06/ara_mes_fa-01, donde la forma (prohibición, autorización o impuesto) podía tener coste. Encaje legal «mixta» como los topes de alquiler; concreción «mixta»: identifica el instrumento (tope) pero no qué se limita.",
+ "recuento_inicial": {
+  "favorable": 1,
+  "mixta": 7,
+  "desfavorable": 0,
+  "no_verificable": 0
+ },
+ "recuento_final": {
+  "favorable": 1,
+  "mixta": 7,
+  "desfavorable": 0,
+  "no_verificable": 0
+ },
+ "recuento_final_nota": "Sin cambios de valoración ni de seleccion.json.",
+ "cambios": [
+  {
+   "propuesta": "bng-c01",
+   "criterio": "financiacion",
+   "antes": "(más de 400.000 millones de forintos hasta noviembre de 2024, según datos del banco central recogidos por Portfolio)",
+   "despues": "(más de 400.000 millones de forintos hasta noviembre de 2024, según Portfolio)",
+   "motivo": "Portfolio atribuye al banco central (MNB) el número de contratos y su peso (291.000, 35 %), pero da la cifra de coste para la banca sin atribuirla al MNB"
+  }
+ ],
+ "dudas": [
+  "Selección, mismo estándar entre partidos: «prohibir por lei a compra para a especulación» (Rego, notas oficiales del BNG del 10 y 12-nov, destacada en el ladillo del 12-nov) se descarta porque solo consta en estilo indirecto. No está en el programa (que solo prevé medidas fiscales contra el uso especulativo, p. 13). El proyecto acepta notas oficiales en estilo indirecto como documento del partido (upc-c01, upc-c03, ara_mes_fa-c05/c06, fa-c03, junts-c03, psc-c03), y medidas equivalentes se evaluaron en otros partidos (podemos-02, compromis-01, eh_bildu-05). Con ese criterio sería una segunda prioridad del complemento. No se añade en esta revisión porque exige una evaluación completa; decisión editorial pendiente.",
+  "bng-c01: «topar os prezos das hipotecas» no precisa si se limita el tipo, el diferencial o la cuota; la evaluación lo dice en cada criterio y se basa en las formas aplicadas (Hungría, Francia)."
+ ],
+ "complementos_vacios_comprobados": "Partidos con programa y complemento vacío (comprobado por esta misma revisión): ERC, SALF y Adelante Andalucía descartan bien; se cotejaron contra el texto del programa al menos tres «ya está en el programa, p. N» por partido y todos coinciden (ERC: ITP p. 19 medida 59, fiscalidad de banca y grandes patrimonios p. 22 medidas 74-76, 180 plazas judiciales por reincidencia p. 43; SALF: macrocárcel p. 8, «La corrupción no prescribe» p. 25, 35.000 € libres de IRPF p. 12, cero impuestos primera vivienda p. 5, cláusula de penalización p. 4; Adelante Andalucía: Sareb p. 49, red de supermercados públicos p. 68 medida 313, peaje de la AP-7 p. 131 medida 695, fin del turno partido)."
+}

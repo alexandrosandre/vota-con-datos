@@ -1,0 +1,29 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-12",
+ "base": "complemento",
+ "alcance": "1 prioridad (pnv-c01) × 8 criterios. Se abrieron las 26 URL distintas de seleccion.json y evaluacion.json: 23 respondieron 200; los tres documentos del Congreso (BOCG B-3-1, B-3-3 y DSCD-15-PL-168) devolvieron 403 a curl; B-3-1 y el Diario de Sesiones se leyeron con otra petición normal (WebFetch): la proposición 122/000004 del Grupo Vasco reforma la LO 2/1979 y deroga la LO 12/2015, y el 24-2-2026 se tomó en consideración por 175 a favor y 171 en contra, con el PSOE defendiendo en el debate la utilidad del recurso previo. Comprobados en BOE/TC: art. 79 LOTC (suspensión automática, seis meses), STC 66/1985 (desestima), LO 4/1985, LO 12/2015 (cita del Consejo de Estado de 2006); Moncloa.com 2021 (toma en consideración a finales de 2016). verify_quotes: 0 no encontradas.",
+ "seleccion": "Decisión sobre la fuente: cuenta. La única fuente es la nota oficial de EAJ-PNV del 25-oct, y el compromiso no está entrecomillado: «La intención de los jeltzales es volver a presentar esta iniciativa en la próxima legislatura». El prompt 1b admite expresamente «un documento oficial del partido (nota de prensa [...]) con quien = el partido», y esa frase no es estilo indirecto de un periodista sino una declaración del propio partido en su nota, posterior a la convocatoria y referida a la próxima legislatura. El proyecto ya acepta notas oficiales en estilo indirecto con quien = el partido (upc-c01, upc-c03, ara_mes_fa-c05/c06, fa-c03, junts-c03, psc-c03). Es una medida concreta (reintroducir una proposición de ley orgánica definida) y no está en el programa (sin «Tribunal Constitucional», «recurso» ni «previo»; la medida 05 de la p. 39 habla de mecanismos de resolución de conflictos en general). Se mantiene la prioridad, con apoyo limitado: una ocasión, en el cuerpo de la nota de la comparecencia de los tres cabezas de lista, ligada a su entradilla («que el Congreso no sea un muro» para el nuevo Estatuto).",
+ "igual_estandar": "Legal «favorable» (ley orgánica, STC 66/1985 avala la supresión); financiación «favorable» (reforma procesal sin gasto); evidencia e internacional «no_verificable» por falta de estudios y de casos comparables evaluados, dicho en el texto.",
+ "recuento_inicial": {
+  "favorable": 2,
+  "mixta": 4,
+  "desfavorable": 0,
+  "no_verificable": 2
+ },
+ "recuento_final": {
+  "favorable": 2,
+  "mixta": 4,
+  "desfavorable": 0,
+  "no_verificable": 2
+ },
+ "recuento_final_nota": "Sin cambios; pnv-c01 se mantiene y evaluacion.json no se borra.",
+ "cambios": [],
+ "dudas": [
+  "pnv-c01, importancia: una sola ocasión y no la destaca la entradilla ni el titular de la nota, sino el cuerpo; la justificación se apoya también en el balance del 10-oct (anterior a la campaña) y en que el autogobierno abre la campaña. Es el caso más débil de los complementos.",
+  "pnv-c01, concreción «mixta»: el compromiso remite a un texto definido (la proposición 122/000004) y fija el momento («la próxima legislatura»), como eh_bildu-01, que es «favorable». Se mantiene «mixta» porque la nota no aclara si se reintroduciría la proposición entera, incluida la derogación de las facultades de ejecución del Tribunal, y ningún líder lo ha detallado; caso frontera.",
+  "BOCG B-3-3 (toma en consideración y envío a la Comisión Constitucional, 13-3-2026) no se pudo leer (403); el hecho está respaldado por el Diario de Sesiones del 24-2-2026 y la nota del 25-oct."
+ ],
+ "complementos_vacios_comprobados": "Partidos con programa y complemento vacío (comprobado por esta misma revisión): ERC, SALF y Adelante Andalucía descartan bien; se cotejaron contra el texto del programa al menos tres «ya está en el programa, p. N» por partido y todos coinciden (ERC: ITP p. 19 medida 59, fiscalidad de banca y grandes patrimonios p. 22 medidas 74-76, 180 plazas judiciales por reincidencia p. 43; SALF: macrocárcel p. 8, «La corrupción no prescribe» p. 25, 35.000 € libres de IRPF p. 12, cero impuestos primera vivienda p. 5, cláusula de penalización p. 4; Adelante Andalucía: Sareb p. 49, red de supermercados públicos p. 68 medida 313, peaje de la AP-7 p. 131 medida 695, fin del turno partido)."
+}

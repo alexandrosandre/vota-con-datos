@@ -1,0 +1,227 @@
+{
+ "partido": "pp",
+ "base": "complemento",
+ "fecha": "2026-11-12",
+ "modelo": "Claude (Anthropic)",
+ "prompt": "docs/prompts/1b_seleccion_compromisos.md (sección «Partidos con programa: complemento»)",
+ "nota": "Compromisos de Alberto Núñez Feijóo que no figuran en el programa «La Reconstrucción Nacional» (10-nov; data/sources/programas/pp/LA-RECONSTRUCCION-NACIONAL.txt, páginas del PDF de 82 págs.) y que el partido presenta como importantes. Complementan las 12 prioridades del programa. El programa deja ocho medidas en blanco («Permanezca atento a la campaña para conocer esta nueva medida»: 83, 109, 132, 164, 167, 173, 200 y 210); hasta el 12-nov solo se han localizado anuncios que encajan en dos de esos huecos.",
+ "compromisos": [
+  {
+   "id": "pp-c01",
+   "area": "agricultura y medio rural",
+   "resumen": "Suprimir toda obligación legal española al sector agrario que vaya más allá de lo que exige la normativa europea.",
+   "cita": "Pediremos una moratoria regulatoria en Europa. ninguna ley española exigirá al campo más de lo que ya exige Europa. Toda obligación por encima del estándar europeo será suprimida",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+   "formato": "mitin de precampaña (Feria de Valladolid)",
+   "fecha": "2026-11-07",
+   "url": "https://www.vozpopuli.com/espana/politica/feijoo-promete-suprimir-todas-las-exigencias-a-los-agricultores-que-no-imponga-la-ue.html",
+   "medio": "Vozpópuli",
+   "fuente_local": "data/sources/compromisos/pp/2026-11-07_vozpopuli_valladolid_campo.txt",
+   "sha256": "7d1ec7f9c645de09ff65cfa538cccc3a402fa87a63db589c2153814f2e3190ec",
+   "cuantificado": false,
+   "veces": {
+    "n": 1,
+    "ocasiones": [
+     {
+      "fecha": "2026-11-07",
+      "medio": "Vozpópuli",
+      "url": "https://www.vozpopuli.com/espana/politica/feijoo-promete-suprimir-todas-las-exigencias-a-los-agricultores-que-no-imponga-la-ue.html",
+      "formato": "mitin (Valladolid)",
+      "fuente_local": "data/sources/compromisos/pp/2026-11-07_vozpopuli_valladolid_campo.txt"
+     },
+     {
+      "fecha": "2026-11-07",
+      "medio": "Demócrata (foto y crónica de Europa Press)",
+      "url": "https://www.democrata.es/politica/feijoo-se-compromete-a-derogar-las-normas-que-exijan-al-campo-mas-que-europa-por-respeto-al-mundo-rural/",
+      "formato": "mitin (Valladolid), misma ocasión",
+      "fuente_local": "data/sources/compromisos/pp/2026-11-07_democrata_ep_valladolid_campo.txt",
+      "nota": "Recoge la frase como «Toda obligación por encima del estándar europeo será suprimida» y «Pediremos una moratoria regulatoria en Europa»."
+     },
+     {
+      "fecha": "2026-11-07",
+      "medio": "Partido Popular (nota de prensa)",
+      "url": "https://www.pp.es/actualidad/articulos/feijoo-al-psoe-si-han-robado-el-dinero-destinado-a-proteger-la-vida-de-los-espanoles-tendran-que-salir-del-poder-para-entrar-en-la-carcel/",
+      "formato": "mitin (Valladolid), misma ocasión",
+      "fuente_local": "data/sources/compromisos/pp/2026-11-07_pp_nota_valladolid.txt",
+      "nota": "La nota oficial lo titula como compromiso: «Se compromete a pedir una moratoria regulatoria en Europa» y cita «Toda obligación añadida será suprimida»."
+     }
+    ]
+   },
+   "nota": "No figura en el programa del 10-nov: el bloque 4.6 («El mundo rural volverá a ser atractivo y rentable», pp. 64-66) no la recoge y su medida 200 es un hueco «Permanezca atento a la campaña para conocer esta nueva medida» (p. 65). Lo más próximo son el Mecanismo Rural de Garantía (evaluar el impacto rural de cada norma, medida 196, p. 64) y, en política climática, «retiraremos las [obligaciones] que perjudiquen la competitividad» (medida 232, p. 72), que no suprimen las obligaciones nacionales que superan el mínimo europeo. La petición de una «moratoria regulatoria en Europa» con la que empieza la cita ya está en el programa (medida 7, p. 14: sumarse a la petición de varios países europeos de una pausa de un año para que la Unión no genere nuevas normas) y no forma parte de este compromiso."
+  },
+  {
+   "id": "pp-c02",
+   "area": "empleo",
+   "resumen": "Sustituir el Ingreso Mínimo Vital y los subsidios por desempleo por una única «Renta de Activación», compatible con el empleo, con un acuerdo de formación y búsqueda de empleo y pérdida gradual de la ayuda si se rechazan empleos adecuados.",
+   "cita": "Crearemos una Renta de Activación que reúna el Ingreso Mínimo Vital y los diferentes subsidios en un solo camino hacia el empleo [...] cada beneficiario firmará un acuerdo de formación y búsqueda de empleo. Con seguimiento verificable. Y rechazar empleos adecuados, de forma reiterada y sin causa justificada supondrá la pérdida graduada de las ayudas",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+   "formato": "discurso en el acto de presentación del programa electoral (Madrid)",
+   "fecha": "2026-11-10",
+   "url": "https://www.libertaddigital.com/libremercado/2026-11-10/feijoo-quiere-sustituir-el-imv-por-otro-subsidio-que-se-le-retire-a-los-que-eliminar-empleos-a-los-que-rechacen-empleos-7489119/",
+   "medio": "Libre Mercado (Libertad Digital)",
+   "fuente_local": "data/sources/compromisos/pp/2026-11-10_libertaddigital_renta_activacion.txt",
+   "sha256": "a20d1c1a96171cafae4007774005f0b8d173b34d881442200f3f54f44aa7a8ab",
+   "cuantificado": false,
+   "veces": {
+    "n": 1,
+    "ocasiones": [
+     {
+      "fecha": "2026-11-10",
+      "medio": "Libre Mercado (Libertad Digital)",
+      "url": "https://www.libertaddigital.com/libremercado/2026-11-10/feijoo-quiere-sustituir-el-imv-por-otro-subsidio-que-se-le-retire-a-los-que-eliminar-empleos-a-los-que-rechacen-empleos-7489119/",
+      "formato": "presentación del programa (Madrid)",
+      "fuente_local": "data/sources/compromisos/pp/2026-11-10_libertaddigital_renta_activacion.txt",
+      "nota": "Añade: «la haremos en colaboración con las comunidades y será compatible con el trabajo desde el primer día»."
+     },
+     {
+      "fecha": "2026-11-10",
+      "medio": "Partido Popular (nota de prensa)",
+      "url": "https://www.pp.es/actualidad/articulos/feijoo-presenta-el-programa-del-pp-como-la-cura-con-la-que-sanar-una-espana-herida-y-la-respuesta-para-reconstruir-el-pais/",
+      "formato": "presentación del programa, misma ocasión",
+      "fuente_local": "data/sources/compromisos/pp/2026-11-10_pp_nota_presentacion_programa.txt",
+      "nota": "La nota oficial la sitúa en su resumen: «crear una sola renta de activación que reúna el IMV y los diferentes subsidios en un solo camino hacia el empleo, compatible con el trabajo desde el primer día»."
+     },
+     {
+      "fecha": "2026-11-10",
+      "medio": "Tododisca",
+      "url": "https://tododisca.es/prestaciones/feijoo-anuncia-sustituira-ingreso-minimo-vital-subsidios-renta-de-activacion-perdera-caso-rechazar-empleo/",
+      "formato": "presentación del programa, misma ocasión",
+      "fuente_local": "data/sources/compromisos/pp/2026-11-10_tododisca_renta_activacion.txt"
+     },
+     {
+      "fecha": "2026-11-10",
+      "medio": "Moncloa.com",
+      "url": "https://www.moncloa.com/2026/11/10/feijoo-renta-activacion-imv-subsidios-3465297",
+      "formato": "presentación del programa, misma ocasión",
+      "fuente_local": "data/sources/compromisos/pp/2026-11-10_moncloacom_renta_activacion.txt",
+      "nota": "Paráfrasis: según este medio, quedarían fuera la protección por incapacidad o dependencia y la ayuda a la infancia; no hay cita literal de esas excepciones."
+     }
+    ]
+   },
+   "nota": "No figura en el programa difundido el mismo día: ni el texto de 82 páginas ni la reedición de 64 mencionan el Ingreso Mínimo Vital ni una renta de activación; la sección 4.3 (pp. 58-60) deja en blanco la medida 173 («Permanezca atento a la campaña», p. 59). Fuentes Informadas (10-nov) señala que la medida «no está en el programa». El plan contra el absentismo fraudulento anunciado en el mismo acto sí está (medida 175, p. 60) y no se incluye aquí."
+  }
+ ],
+ "prioridades": [
+  {
+   "id": "pp-c01",
+   "justificacion": "La anunció el candidato nacional en su mitin de Valladolid (7-nov), formulada como compromiso de gobierno («si logra llegar a La Moncloa», Demócrata), y la nota oficial del PP la recoge como compromiso del acto. Ocupa el hueco que el programa reserva en su bloque rural (medida 200) para «la campaña». Una sola ocasión localizada."
+  },
+  {
+   "id": "pp-c02",
+   "justificacion": "Feijóo la anunció en su discurso de presentación del programa (10-nov) y la nota oficial del PP la destaca como primera medida del resumen del acto («Entre las medidas propuestas, incluye crear una sola renta de activación…»); fue titular en varios medios (Libre Mercado, Moncloa.com, Tododisca, Fuentes Informadas). Una sola ocasión localizada."
+  }
+ ],
+ "nota_prioridades": "Dos prioridades: son los únicos compromisos concretos, con cita literal en primera persona, ausentes del programa y presentados por el propio partido como compromisos de gobierno. El resto de compromisos de campaña localizados ya están en el programa o no son medidas concretas (ver «descartados»).",
+ "descartados": [
+  {
+   "tema": "«Mi contrato con España» (19-oct): doce compromisos firmados por Feijóo",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-10-19",
+   "url": "https://www.eldebate.com/uploads/files/2026/10/19/CONTRATO%20CON%20ESPANA%20.pdf",
+   "fuente_local": "data/sources/compromisos/pp/2026-10-19_eldebate_contrato_con_espana.txt",
+   "motivo": "Ya está en el programa: cada punto concreto tiene su medida. Fronteras (p. 21, medida 36); jueces que eligen a los jueces (p. 32), elecciones tras prórroga presupuestaria (p. 30) y libertad de prensa (p. 33); auditoría y menos ministerios, altos cargos y asesores (pp. 12-13); un millón de viviendas y desalojo de okupas en 48 horas (pp. 53-55); prohibición por ley de las regularizaciones (p. 22) y nacionalidad (pp. 49-50); pensiones con el IPC (p. 43); más médicos (p. 69); contenidos con las Reales Academias, castellano y lenguas cooficiales (pp. 39, 47-48); seguridad y violencia contra las mujeres (pp. 17-20); bajada de impuestos (pp. 60-61). «Subir el salario medio» y «recuperar el prestigio internacional» son objetivos sin medida identificable."
+  },
+  {
+   "tema": "«Todo cargo político responderá por la corrupción de sus subordinados» (punto 3 del Contrato con España)",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-10-19",
+   "url": "https://www.eldebate.com/uploads/files/2026/10/19/CONTRATO%20CON%20ESPANA%20.pdf",
+   "fuente_local": "data/sources/compromisos/pp/2026-10-19_eldebate_contrato_con_espana.txt",
+   "motivo": "No figura en el programa, pero no es una medida concreta: no dice con qué norma ni qué tipo de responsabilidad (penal, disciplinaria o política), y no se ha localizado otra declaración que la concrete."
+  },
+  {
+   "tema": "Integrar el Ministerio de Igualdad en otros ministerios",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno (entrevista en la Cadena SER)",
+   "fecha": "2026-10-23",
+   "url": "https://que.es/2026/10/23/feijoo-aborto-igualdad-smi",
+   "fuente_local": "data/sources/compromisos/pp/2026-10-23_quees_entrevista_ser.txt",
+   "motivo": "Ya está en el programa, p. 13 (medida 3: «Habrá menos ministerios, altos cargos y asesores»). Feijóo lo presenta como aplicación de esa reducción («Yo no voy a mantener 22 ministerios», Qué!; Artículo 14 añade que descartó que desaparezca el departamento)."
+  },
+  {
+   "tema": "Pactar el salario mínimo con sindicatos y agentes sociales",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno (entrevista en la Cadena SER)",
+   "fecha": "2026-10-23",
+   "url": "https://que.es/2026/10/23/feijoo-aborto-igualdad-smi",
+   "fuente_local": "data/sources/compromisos/pp/2026-10-23_quees_entrevista_ser.txt",
+   "motivo": "No figura en el programa, pero no consta que el partido la presente como importante: fue la respuesta a una pregunta en una entrevista, no se ha repetido en mítines ni notas del PP y solo la recoge un medio menor (Qué!)."
+  },
+  {
+   "tema": "Comparecer cuatro veces al año en Cataluña para explicar la ejecución de las inversiones en Rodalies",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno (entrevista en La Vanguardia)",
+   "fecha": "2026-11-01",
+   "url": "https://www.democrata.es/elecciones-generales-espana/feijoo-catalunya-inversiones-vox-entrevista-la-vanguardia-29n/",
+   "fuente_local": "data/sources/compromisos/pp/2026-11-01_democrata_entrevista_lavanguardia.txt",
+   "motivo": "Es un compromiso de rendición de cuentas, no una medida de política pública; la inversión en Rodalies ya está en el programa, p. 45 (medida 120)."
+  },
+  {
+   "tema": "Reabrir el debate sobre el consentimiento paterno para el aborto de las menores de 16 y 17 años",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno (entrevista en la Cadena SER)",
+   "fecha": "2026-10-23",
+   "url": "https://www.articulo14.es/politica/feijoo-metera-igualdad-dentro-de-otros-ministerios-el-ministro-que-lo-lleve-se-encargara-de-otras-cosas-20261023.html",
+   "fuente_local": "data/sources/compromisos/pp/2026-10-23_articulo14_entrevista_ser.txt",
+   "motivo": "No es una medida: Feijóo lo planteó como un debate y opinión personal (así lo registró ya data/promesas/promesas.json), sin comprometer una reforma."
+  },
+  {
+   "tema": "Reconocer a Policía Nacional y Guardia Civil como profesión de riesgo (Cuatro, 10-nov; Girona, 12-nov)",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-11-10",
+   "url": "https://www.infobae.com/espana/agencias/2026/11/10/feijoo-reafirma-su-compromiso-para-que-policia-y-guardia-civil-sean-profesiones-de-riesgo/",
+   "motivo": "Ya está en el programa, p. 20 (medida 32: «Profesión de riesgo para policías y guardias civiles»)."
+  },
+  {
+   "tema": "Endurecer las penas por desórdenes públicos, agravante de rostro cubierto y multas de hasta 3.000 euros por vandalismo (Girona, 12-nov)",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-11-12",
+   "url": "https://www.democrata.es/politica/feijoo-garantiza-en-cataluna-a-sindicatos-policiales-y-de-guardia-civil-que-elevara-las-penas-contra-los-violentos/",
+   "motivo": "Ya está en el programa, p. 18 (medidas sobre desórdenes públicos, rostro cubierto y multas de 3.000 euros)."
+  },
+  {
+   "tema": "Litoral andaluz zona de especial singularidad frente al narcotráfico y unidad permanente en la frontera sur (Málaga, 8-nov)",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-11-08",
+   "url": "https://www.campogibraltar24h.es/sociedad/feijoo-promete-malaga-gobierno-indultos-corrupcion-mas-seguridad-frente-narcotrafico/20261108161541019938.html",
+   "motivo": "Ya está en el programa, p. 17 (medida 19)."
+  },
+  {
+   "tema": "Revisar y auditar toda la red ferroviaria",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-11-03",
+   "url": "https://www.pp.es/actualidad/articulos/feijoo-se-compromete-a-devolver-la-calidad-a-los-servicios-publicos-tras-remarcar-que-puente-no-tiene-ninguna-credibilidad/",
+   "motivo": "Ya está en el programa, p. 24 (medida 47, «con especial atención al ferrocarril») y p. 45 (medida 118, limitaciones temporales de velocidad)."
+  },
+  {
+   "tema": "No indultar la corrupción; un millón de viviendas; desalojo de okupas en 48 horas; avales e IVA reducido para jóvenes; deducciones al alquiler por debajo del IPC; pensiones con el IPC",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-10-05",
+   "url": "https://www.pp.es/actualidad/articulos/feijoo-anuncia-deducciones-para-alquileres-y-aprobara-en-sus-cien-dias-las-leyes-para-construir-un-millon-de-viviendas-y-desalojar-okupas/",
+   "motivo": "Ya están en el programa: indulto, p. 29; vivienda, okupación, IVA del 4 % y «Tres años+», pp. 53-55; pensiones con el IPC, p. 43 (promesas de data/promesas/promesas.json)."
+  },
+  {
+   "tema": "«Auditoría del saqueo» (Badalona, 12-nov) y plan de choque en la ruta Argelia-Baleares con Frontex permanente (Palma, 8-nov)",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-11-12",
+   "url": "https://www.infobae.com/espana/agencias/2026/11/12/feijoo-promete-desde-cataluna-una-auditoria-del-saqueo-vengo-a-ofrecer-un-gobierno-que-no-robe/",
+   "motivo": "Ya están en el programa: auditoría en cien días, pp. 12-13 (medida 1); Baleares, refuerzo permanente y Frontex, p. 21 (medida 36); Argelia, p. 74."
+  },
+  {
+   "tema": "Ley estatal del «concebido no nacido» (Antena 3, 6-jul)",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-07-06",
+   "url": "https://www.elespanol.com/espana/politica/20260706/feijoo-promete-ley-concebido-no-nacido-nivel-nacional-aprobada-ayuso-madrid/1003744301447_0.html",
+   "motivo": "Anterior a la convocatoria y ya en el programa, p. 56 (medida 159: «El concebido no nacido computará para determinar las ayudas y beneficios que correspondan a la familia»)."
+  }
+ ],
+ "busqueda": {
+  "hasta": "2026-11-12",
+  "web_oficial": "pp.es: notas de prensa de los actos de Valladolid (7-nov) y de la presentación del programa (10-nov). El «Contrato con España» no está en pp.es; se usó la copia en PDF que publicó El Debate (19-oct).",
+  "fuentes": [
+   "Entradas del PP en data/promesas/promesas.json y codificaciones «campaña» del PP en data/fase1/codificacion_g1.json (q22 Ministerio de Igualdad; q28 obligaciones al campo)",
+   "Contrato con España (19-oct), comprobado punto por punto contra el programa",
+   "Agencias y medios: Europa Press (Demócrata), EFE (Infobae), Vozpópuli, Libre Mercado, Moncloa.com, Qué!, Artículo 14, Fuentes Informadas, Tododisca",
+   "Entrevistas: Cadena SER (23-oct), La Vanguardia (1-nov), Cuatro (10-nov); mítines de Valladolid (7-nov), Palma (8-nov), Málaga (8-nov), Badalona y Girona (12-nov); presentación del programa (10-nov)",
+   "Búsqueda de anuncios que rellenen los huecos del programa (medidas 83, 109, 132, 164, 167, 173, 200 y 210)"
+  ],
+  "comprobacion_programa": "Cada candidato se buscó en el texto del programa por sus términos y por sinónimos (p. ej. «Ingreso Mínimo Vital», «IMV», «renta», «subsidio», «búsqueda de empleo»; «Europa», «europea», «obligaciones», «moratoria», «agricultor»), y se leyó la sección correspondiente.",
+  "limitaciones": "pp.es solo publica notas de algunos actos; la campaña oficial empieza el 13-nov y es probable que se anuncien más medidas para los huecos del programa después de esta fecha."
+ }
+}
