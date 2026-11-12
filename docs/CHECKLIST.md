@@ -110,7 +110,7 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
 - [x] **11c. [Yo] Ampliar la media con más empresas** — 12-nov: 14 empresas en la media (CIS incluido); SW Demoscopia y SocioMétrica fuera de la media por no tener publicación original verificable o fechas de campo. (NC Report, DYM, Opina 360, Target Point,
   Hamalgama, Simple Lógica, Cluster17, Ipsos…), siempre desde su publicación original.
 - [x] **11d. [Yo] Adelante Andalucía en los escenarios de encuesta** — 12-nov: perfil provincial de las autonómicas andaluzas del 17-may-2026 (BOJA 108); 3 escaños en la media, dentro de las horquillas del CIS.: hoy no se proyecta (en 2023 solo se presentó en Cádiz; sin perfil provincial), aunque el CIS le da 1–2 escaños en Cádiz, Málaga y Sevilla. Buscar una base provincial defendible (p. ej. autonómicas andaluzas) y documentarla.
-- [ ] **11e. [Tú → Yo] Recuento anónimo de visitas (GoatCounter)** — implementado y desactivado hasta tener
+- [x] **11e. [Tú → Yo] Recuento anónimo de visitas (GoatCounter)** — activo desde el 12-nov (votacondatos.goatcounter.com) — implementado y desactivado hasta tener
   cuenta: sin cookies, ruta sin parámetros, evento nuevo/recurrente según si el navegador ya tenía el
   estado guardado, respeta «No rastrear» y GPC; página #/privacidad. Falta que crees la cuenta gratuita
   (uso sin ánimo de lucro) en goatcounter.com y me digas el código; lo activo en `web/src/analitica.ts`.

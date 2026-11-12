@@ -72,7 +72,7 @@ export function Inicio() {
         </div>
         <div>
           <b>0</b>
-          <span>respuestas tuyas que salen de tu navegador</span>
+          <span>datos tuyos que salen de tu navegador</span>
         </div>
       </section>
 
@@ -139,8 +139,8 @@ export function Inicio() {
         <details>
           <summary>¿Guardáis mis respuestas?</summary>
           <p>
-            No. Todo se calcula en tu navegador y solo se guarda en él, para que puedas volver. Puedes borrar tus respuestas cuando quieras. No
-            usamos cookies. <a href="#/privacidad">Más sobre privacidad</a>.
+            No, nosotros no guardamos nada. Todo se calcula en tu navegador y tus respuestas se quedan en él, para que puedas volver; puedes
+            borrarlas cuando quieras. No usamos cookies. <a href="#/privacidad">Más sobre privacidad</a>.
           </p>
         </details>
       </section>

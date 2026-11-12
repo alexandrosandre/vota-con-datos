@@ -59,8 +59,8 @@ function Pie() {
         <div style={{ maxWidth: 460 }}>
           <Logotipo size={22} />
           <p style={{ marginTop: 10 }}>
-            Herramienta cívica independiente para las elecciones generales del 29 de noviembre de 2026. Sin ánimo de lucro, sin publicidad y
-            sin cookies.
+            Herramienta cívica independiente para las elecciones generales del 29 de noviembre de 2026. Sin ánimo de lucro, sin publicidad, sin
+            cookies y sin almacenar ningún dato tuyo.
           </p>
         </div>
         <div>

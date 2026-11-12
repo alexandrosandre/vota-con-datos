@@ -17,7 +17,7 @@
 import { ruta } from './store';
 
 /** Código del sitio en GoatCounter (https://<código>.goatcounter.com). Vacío = desactivado. */
-export const GOATCOUNTER = '';
+export const GOATCOUNTER = 'votacondatos';
 
 const navegadorPideNoRastrear = () =>
   (navigator as any).globalPrivacyControl === true || navigator.doNotTrack === '1' || (window as any).doNotTrack === '1';
