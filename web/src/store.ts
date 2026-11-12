@@ -20,6 +20,15 @@ export interface Estado {
 }
 
 const CLAVE = 'vcd-estado-v1';
+
+/** ¿Este navegador ya había visitado la web? (se mira antes de guardar nada; ver analitica.ts) */
+export const habiaEstadoGuardado: boolean = (() => {
+  try {
+    return localStorage.getItem(CLAVE) !== null;
+  } catch {
+    return false;
+  }
+})();
 const inicial: Estado = {
   respuestas: {},
   ranking: [],

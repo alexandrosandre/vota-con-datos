@@ -10,6 +10,7 @@ import { Metodologia } from './pages/Metodologia';
 import { Marca } from './pages/Marca';
 import { Disenos } from './pages/Disenos';
 import { Creditos } from './pages/Creditos';
+import { Privacidad } from './pages/Privacidad';
 
 /** Rutas antiguas (primera versión publicada) → nuevas. */
 const REDIRECCIONES: Record<string, string> = {
@@ -59,12 +60,12 @@ function Pie() {
           <Logotipo size={22} />
           <p style={{ marginTop: 10 }}>
             Herramienta cívica independiente para las elecciones generales del 29 de noviembre de 2026. Sin ánimo de lucro, sin publicidad y
-            sin recogida de datos.
+            sin cookies.
           </p>
         </div>
         <div>
           <a href="#/metodologia">Metodología</a> · <a href={REPO} target="_blank" rel="noopener">Código y datos</a> ·{' '}
-          <a href="#/marca">Marca</a> · <a href="#/creditos">Créditos de las imágenes</a> · <a href={`${REPO}/issues`} target="_blank" rel="noopener">Avisar de un error</a>
+          <a href="#/marca">Marca</a> · <a href="#/creditos">Créditos de las imágenes</a> · <a href="#/privacidad">Privacidad</a> · <a href={`${REPO}/issues`} target="_blank" rel="noopener">Avisar de un error</a>
           <br />
           Código libre (licencia MIT) · Datos y análisis reutilizables citando la fuente (licencia CC BY 4.0)
         </div>
@@ -86,6 +87,7 @@ function tituloDe(r: string): string {
   else if (r.startsWith('/marca')) t = 'Marca';
   else if (r.startsWith('/disenos')) t = 'Diseños';
   else if (r.startsWith('/creditos')) t = 'Créditos de las imágenes';
+  else if (r.startsWith('/privacidad')) t = 'Privacidad';
   return t ? `${t} · vota con datos` : TITULO_INICIO;
 }
 
@@ -132,6 +134,7 @@ export function App() {
   else if (r.startsWith('/contrasta')) page = <Contrasta />;
   else if (r.startsWith('/cuenta')) page = <Cuenta />;
   else if (r.startsWith('/creditos')) page = <Creditos />;
+  else if (r.startsWith('/privacidad')) page = <Privacidad />;
   else page = <Inicio />;
   return (
     <>

@@ -32,6 +32,7 @@ comprueba "#/coincide" "afirmaciones"
 comprueba "#/contrasta/erc" "el programa de un vistazo" "Programa oficial"
 comprueba "?circ=28&partido=pp#/cuenta" "probabilidad de lograr al menos un escaño" "Todas las candidaturas en Madrid" "Calcular con" "Tu orden de preferencia"
 comprueba "#/creditos" "Créditos de las imágenes"
+comprueba "#/privacidad" "Lo que se guarda en tu navegador"
 comprueba "#/metodologia" "Cómo funciona vota con datos"
 comprueba "#/marca" "Símbolo y logotipo"
 comprueba "#/afinidad" "afirmaciones"   # ruta antigua redirigida

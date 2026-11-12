@@ -56,7 +56,7 @@ export function Metodologia() {
           <p>
             Poner los datos en la mano de quien vota: qué propone cada partido y en qué se apoya, y qué probabilidad tiene su voto, con la ley
             electoral, de ayudar a lograr un escaño en su provincia. Cada cual decide qué hacer con ellos. No trabajamos para ningún partido. No
-            hay publicidad ni recogemos datos.
+            hay publicidad, no usamos cookies y tus respuestas no salen de tu navegador (<a href="#/privacidad">privacidad</a>).
           </p>
 
           <h2 id="orden">Por qué este orden: Elige → Contrasta → Suma</h2>
