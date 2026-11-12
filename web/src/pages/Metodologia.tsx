@@ -25,7 +25,7 @@ function Tecnico({ children }: { children: any }) {
 export function Metodologia() {
   const crit = fase3.value?.criterios ?? [];
   const secciones = [
-    ['intencion', 'Intención'],
+    ['objetivo', 'Objetivo'],
     ['orden', 'Por qué este orden'],
     ['fuentes', 'Fuentes'],
     ['coincide', '1 · Elige'],
@@ -52,7 +52,7 @@ export function Metodologia() {
             Todo lo que ves se puede comprobar: las fuentes están enlazadas, el código es público y los cálculos se hacen en tu navegador.
           </p>
 
-          <h2 id="intencion">Intención</h2>
+          <h2 id="objetivo">Objetivo</h2>
           <p>
             Queremos que cada persona vote <strong>con conciencia</strong>: que entienda qué propone cada partido y en qué se apoya. Y que su
             voto <strong>llegue a donde quería</strong>: que sepa qué probabilidad tiene, con la ley electoral, de ayudar a lograr un escaño en su provincia. No
