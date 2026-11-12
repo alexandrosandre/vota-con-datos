@@ -192,7 +192,7 @@ function Preferencias({ circ, filas, elegidaId, sugeridaId }: { circ: Circunscri
       </h2>
       <p class="muted" style={{ marginTop: 0 }}>
         Sirve solo para una cosa: si el partido que quieres votar tiene pocas opciones de escaño en {circ.nombre}, te señalamos el siguiente
-        de esta lista que sí las tiene (al menos un 50 %). No lo guardamos fuera de tu navegador.
+        de esta lista que sí las tiene (al menos un 50 % de probabilidad de escaño). Este orden no sale de tu navegador.
       </p>
 
       {e.ranking.length === 0 ? (
@@ -340,7 +340,8 @@ export function Cuenta() {
           <button class="link-btn" onClick={irAPreferencias}>
             {e.rankingOrigen === 'fase1' ? 'tu orden del paso 1' : 'el orden que has puesto'}
           </button>
-          , no de nuestra opinión. Votar a quien prefieres también es legítimo: tu voto cuenta para la subvención electoral y como señal política.
+          , no de nuestra opinión. Votar a quien prefieres también es legítimo: tu voto cuenta para la financiación pública de los partidos y como
+          señal política.
         </p>
       </div>
     ) : pocasOpciones ? (
@@ -431,8 +432,8 @@ export function Cuenta() {
 
       {enVeda && (
         <div class="note" style={{ marginTop: 14 }}>
-          Del 24 de noviembre hasta el cierre de los colegios electorales, la ley electoral (art. 69.7 LOREG) prohíbe publicar o reproducir
-          encuestas. Por eso ahora solo puedes calcular con los resultados de 2023.
+          Del 24 de noviembre hasta el cierre de los colegios electorales, la ley electoral prohíbe publicar o reproducir encuestas (artículo
+          69.7 de la Ley Orgánica del Régimen Electoral General). Por eso ahora solo puedes calcular con los resultados de 2023.
         </div>
       )}
       {circ && (
@@ -489,21 +490,21 @@ export function Cuenta() {
                         ))}
                       </>
                     ) : (
-                      <>Ningún dato disponible la estima, así que no podemos calcular sus opciones de escaño.</>
+                      <>Ninguna de las opciones de «Calcular con» la estima, así que no podemos calcular sus opciones de escaño.</>
                     );
                   })()}
                 </p>
               ) : (
                 <div class="kpis">
                   <div class="kpi"><b>{fmt.pct(filaElegida.cuota, 1)}</b><span>de los votos en {circ.nombre}, según estos datos</span></div>
-                  <div class="kpi"><b>{filaElegida.escanosMedia.toLocaleString('es-ES', { maximumFractionDigits: 1 })}</b><span>escaños de media (de {circ.escanos})</span></div>
+                  <div class="kpi"><b>{filaElegida.escanosMedia.toLocaleString('es-ES', { maximumFractionDigits: 1 })}</b><span>escaños de media en las 4.000 repeticiones del cálculo (de {circ.escanos} en juego)</span></div>
                   <div class="kpi">
                     <b>{filaElegida.votosPorEscano ? fmt.n(filaElegida.votosPorEscano) : '—'}</b>
                     <span>votos que le cuesta cada escaño aquí</span>
                   </div>
                   <div class="kpi">
                     <b>{isFinite(filaElegida.votosParaSiguiente) ? fmt.n(filaElegida.votosParaSiguiente) : '—'}</b>
-                    <span>votos más que necesitaría para {filaElegida.escanosCentral > 0 ? 'otro escaño' : 'su primer escaño'}</span>
+                    <span>votos más que le harían falta para {filaElegida.escanosCentral > 0 ? 'otro escaño' : 'su primer escaño'}</span>
                   </div>
                   {coste && (
                     <div class="kpi">
@@ -518,7 +519,7 @@ export function Cuenta() {
               <div class="row" style={{ marginTop: 16 }}>
                 {elegida?.partido && (
                   <a class="btn" href={`#/contrasta/${elegida.partido}`}>
-                    ← Contrastar su programa (paso 2)
+                    ← Contrastar sus propuestas (paso 2)
                   </a>
                 )}
               </div>
@@ -541,7 +542,7 @@ export function Cuenta() {
                 <thead>
                   <tr>
                     <th>Candidatura</th>
-                    <th class="num">Votos</th>
+                    <th class="num">Votos (%)</th>
                     <th class="num">Escaños</th>
                     <th style={{ minWidth: 140 }}>Opciones de escaño</th>
                   </tr>
@@ -587,9 +588,14 @@ export function Cuenta() {
               </table>
             </div>
             <p class="muted" style={{ fontSize: '0.85rem', marginTop: 12 }}>
-              «Votos»: porcentaje estimado en la provincia. «Escaños»: reparto con esas cifras. «Opciones de escaño»: en cuántas de 4.000
-              repeticiones del cálculo logra al menos un escaño; en cada repetición movemos un poco los votos, tanto como se han equivocado
-              las encuestas en las elecciones de 2015 a 2023. Son estimaciones, no predicciones: el resultado depende de lo que vote la gente.{' '}
+              «Votos»: porcentaje de votos estimado en la provincia. «Escaños»: cómo se repartirían con esos porcentajes, según la ley
+              electoral. «Opciones de escaño»: en cuántas de 4.000 repeticiones del cálculo logra al menos un escaño. En cada repetición
+              movemos un poco los votos al azar,{' '}
+              {esc.id === 'g2023'
+                ? 'tanto como suele cambiar el voto de una elección a otra'
+                : 'tanto como se suelen equivocar las encuestas'}{' '}
+              según lo ocurrido en las elecciones de 2015 a 2023. Son estimaciones, no predicciones: el resultado depende de lo que vote la
+              gente.{' '}
               <a href="#/metodologia">Cómo se calcula</a>.
             </p>
           </div>

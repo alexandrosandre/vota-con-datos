@@ -27,7 +27,7 @@ export function EstadoProgramas() {
         <thead>
           <tr>
             <th>Partido</th>
-            <th>Programa 29-N</th>
+            <th>Programa para el 29-N</th>
             <th class="num">Compromisos de campaña</th>
           </tr>
         </thead>
@@ -67,17 +67,16 @@ function Intro({ n, onStart, hechas }: { n: number; onStart: () => void; hechas:
     <div class="card stack">
       {meta?.provisional && (
         <div class="note">
-          <strong>Versión provisional.</strong> La mayoría de partidos aún no ha publicado su programa, así que de muchos solo conocemos su
-          posición en algunos temas (por sus compromisos de campaña). Lo indicamos en los resultados y lo actualizamos cada vez que se publica
-          un programa. {meta.nota}
+          <strong>Versión provisional.</strong> La mayoría de partidos aún no ha publicado su programa. De muchos solo conocemos su posición en
+          algunos temas, por lo que han dicho en campaña. Lo indicamos en los resultados. {meta.nota}
         </div>
       )}
       <p style={{ fontSize: '1.05rem' }}>
         Vas a ver <strong>{n} afirmaciones</strong>. Cada una sale de una propuesta real de estas elecciones: de un programa oficial o de lo que
-        sus líderes han propuesto en público. No te decimos de quién es hasta el final, para que juzgues la idea y no las siglas.
+        los líderes de un partido han propuesto en público. No te decimos de quién es hasta el final, para que juzgues la idea y no las siglas.
       </p>
       <ul style={{ margin: 0, paddingLeft: 20, color: 'var(--ink-2)' }}>
-        <li>Responde en cinco niveles, o pulsa <em>Saltar</em> si no lo sabes, no quieres contestar o no te importa. Lo que saltas no cuenta.</li>
+        <li>Responde en cinco niveles, de <em>Muy en contra</em> a <em>Muy a favor</em>. Pulsa <em>Saltar</em> si no lo sabes, no quieres contestar o no te importa: lo que saltas no cuenta.</li>
         <li>Si un tema te importa mucho (o poco), márcalo: pesa el doble (o la mitad).</li>
         <li>Unos 10 minutos. Tus respuestas no salen de tu navegador.</li>
       </ul>
@@ -194,13 +193,13 @@ function Detalle({ partidoId }: { partidoId: string }) {
     <div class="prop-body" style={{ margin: '0 0 12px', borderRadius: 10 }}>
       <p style={{ marginTop: 12 }}>
         <strong>
-          {comunes.length} {comunes.length === 1 ? 'tema comparable' : 'temas comparables'}
+          {comunes.length} {comunes.length === 1 ? 'tema comparado' : 'temas comparados'}
         </strong>
         : coincidís en {n['Coincidís']}, a medias en {n['A medias']} y discrepáis en {n['Discrepáis']}.
         {sinPosicion > 0 && (
           <span class="muted">
             {' '}
-            En {sinPosicion} de tus otras respuestas no conocemos la posición de {siglas}.
+            En otras {sinPosicion} de tus respuestas no conocemos la posición de {siglas}.
           </span>
         )}
       </p>
@@ -270,25 +269,27 @@ function Resultados() {
   if (respondidas < 5)
     return (
       <div class="note">
-        Has respondido {respondidas} afirmaciones. Hacen falta al menos 5 para calcular afinidades. <a href="#/coincide">Volver al cuestionario</a>
+        Has respondido {respondidas} afirmaciones. Hacen falta al menos 5 para calcular tu afinidad con los partidos.{' '}
+        <a href="#/coincide">Volver al cuestionario</a>
       </div>
     );
 
   return (
     <div class="stack">
       <div class="note">
-        <strong>Afinidad</strong> = cuánto se parecen tus respuestas a la posición documentada de cada partido en las {respondidas} afirmaciones
-        que respondiste. No es una recomendación de voto: es un espejo. Diferencias de menos de {Math.round(UMBRAL_EMPATE * 100)} puntos son un
-        empate técnico. <span class="muted">{d.meta.nota}</span>
+        <strong>La afinidad</strong> mide cuánto se parecen tus respuestas a la posición de cada partido, con cita y fuente, en las{' '}
+        {respondidas} afirmaciones que respondiste. No es una recomendación de voto: es un espejo. Si dos partidos se separan menos de{' '}
+        {Math.round(UMBRAL_EMPATE * 100)} puntos, los damos por empatados: la diferencia es demasiado pequeña para tenerla en cuenta.{' '}
+        <span class="muted">{d.meta.nota}</span>
       </div>
       {[
-        { t: 'Comparables', d: 'Conocemos su posición en al menos la mitad de tus respuestas.', filas: res.filter((r) => r.comparable) },
+        { t: 'Con datos suficientes', d: 'Conocemos su posición en al menos la mitad de tus respuestas.', filas: res.filter((r) => r.comparable) },
         {
           t: 'Con pocos datos',
-          d: 'Conocemos su posición en menos de la mitad de tus respuestas (normalmente porque aún no han publicado programa). Su porcentaje se basa en pocos temas: tómalo como orientativo.',
+          d: 'Conocemos su posición en menos de la mitad de tus respuestas, normalmente porque aún no ha publicado programa. Su porcentaje se basa en pocos temas: tómalo solo como orientación.',
           filas: res.filter((r) => !r.comparable && r.afinidad !== null),
         },
-        { t: 'Sin datos suficientes', d: 'Menos de 5 temas en común con tus respuestas.', filas: res.filter((r) => r.afinidad === null) },
+        { t: 'Sin datos suficientes', d: 'Conocemos su posición en menos de 5 de tus respuestas, así que no calculamos su porcentaje.', filas: res.filter((r) => r.afinidad === null) },
       ]
         .filter((g) => g.filas.length > 0)
         .map((g) => (
@@ -308,7 +309,7 @@ function Resultados() {
                     <div>
                       <div class="row" style={{ gap: 6 }}>
                         <strong>{p?.siglas ?? r.partido}</strong>
-                        {empate && <span class="pill">empate técnico con el primero</span>}
+                        {empate && <span class="pill">empatado con el primero</span>}
                         {r.afinidad !== null && r.cobertura < AVISO_COBERTURA && (
                           <span class="pill">basado en {r.comunes} de tus {r.respondidas} respuestas</span>
                         )}
@@ -326,7 +327,7 @@ function Resultados() {
                           aria-expanded={abierto === r.partido}
                           onClick={() => setAbierto(abierto === r.partido ? null : r.partido)}
                         >
-                          {abierto === r.partido ? 'Ocultar detalle' : `Ver los ${r.comunes} ${r.comunes === 1 ? 'tema comparable' : 'temas comparables'}`}
+                          {abierto === r.partido ? 'Ocultar detalle' : r.comunes === 1 ? 'Ver el tema comparado' : `Ver los ${r.comunes} temas comparados`}
                         </button>
                       )}
                     </div>
@@ -339,7 +340,10 @@ function Resultados() {
           </section>
         ))}
       {sinPosiciones.length > 0 && (
-        <div class="note">Sin posiciones documentadas todavía (no puntúan): {sinPosiciones.map((p) => p.siglas).join(', ')}.</div>
+        <div class="note">
+          Todavía no conocemos ninguna posición con cita de estos partidos, así que no aparecen en la lista:{' '}
+          {sinPosiciones.map((p) => p.siglas).join(', ')}.
+        </div>
       )}
       <div class="row">
         <button
@@ -370,7 +374,7 @@ function Resultados() {
             if (confirm('¿Borrar todas tus respuestas?')) actualizar({ respuestas: {}, ranking: [], rankingOrigen: null, afinidades: {} });
           }}
         >
-          Borrar
+          Borrar mis respuestas
         </button>
       </div>
     </div>
@@ -389,7 +393,7 @@ export function Coincide() {
       <div class="stack">
         <div class="note">
           <strong>El cuestionario se está preparando.</strong> Las afirmaciones y las posiciones de cada partido salen de los programas oficiales
-          del 29-N y de los compromisos públicos de sus candidatos en esta campaña, con cita y fuente. {d?.meta.nota}
+          para el 29-N y de lo que sus líderes han propuesto en público en esta campaña, con cita y fuente. {d?.meta.nota}
         </div>
         <EstadoProgramas />
       </div>

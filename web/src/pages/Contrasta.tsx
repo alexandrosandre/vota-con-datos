@@ -42,7 +42,7 @@ function Resumen({ props }: { props: Propuesta[] }) {
         ))}
       </div>
       <p class="muted" style={{ fontSize: '0.85rem', margin: '8px 0 0' }}>
-        {(Object.keys(n) as Valoracion[]).map((v) => `${n[v]} ${VAL[v].toLowerCase()}`).join(' · ')} — de {total} valoraciones ({props.length} propuestas ×{' '}
+        {(Object.keys(n) as Valoracion[]).map((v) => `${n[v]} ${VAL[v].toLowerCase()}`).join(' · ')} — de {total} valoraciones ({props.length} propuestas, cada una en{' '}
         {fase3.value!.criterios.length} criterios)
       </p>
     </div>
@@ -195,9 +195,9 @@ function Promesas({ id }: { id: string }) {
     <details class="card desplegable">
       <summary>Compromisos públicos de campaña de {p.siglas} ({p.promesas!.length})</summary>
       <p class="muted" style={{ fontSize: '0.88rem', marginTop: 12 }}>
-        Medidas concretas anunciadas por el partido o su candidato desde la convocatoria, recogidas de medios de referencia o de sus canales
-        oficiales, con su fuente. Se usan en el paso 1 y, si el partido no ha publicado programa, para elegir las propuestas que se
-        analizan aquí.
+        Medidas concretas anunciadas por el partido o su candidato desde que se convocaron las elecciones, recogidas de medios de referencia
+        o de sus canales oficiales, con su fuente. Se usan en el paso 1. Si el partido no ha publicado programa, también sirven para elegir
+        las propuestas que se analizan aquí.
       </p>
       {p.promesas!.map((x, i) => (
         <div class="crit" key={i}>
@@ -235,8 +235,9 @@ export function Contrasta() {
   return (
     <div class="narrow page p2">
       <CabeceraPaso id="contrasta">
-        Las 12 propuestas centrales de cada partido, contrastadas una a una con criterios que se pueden verificar: las de su programa oficial
-        o, si no lo ha publicado, los compromisos que sus líderes han hecho en público. Lo que no se ha podido comprobar se marca como tal.
+        Hasta 12 propuestas centrales de cada partido, contrastadas una a una con criterios que se pueden comprobar. Salen de su programa
+        oficial o, si aún no lo ha publicado, de los compromisos que sus líderes han hecho en público. Lo que no se ha podido comprobar se
+        marca como tal.
       </CabeceraPaso>
 
       {afines.length > 0 && (
@@ -266,7 +267,7 @@ export function Contrasta() {
               </option>
             ))}
           </optgroup>
-          <optgroup label="Sin programa: compromisos de sus líderes analizados">
+          <optgroup label="Sin programa: analizados los compromisos de sus líderes">
             {(partidos.value ?? []).filter((x) => d.partidos[x.id]?.base === 'compromisos').map((x) => (
               <option key={x.id} value={x.id}>
                 {x.siglas} — {x.nombre}
@@ -289,8 +290,8 @@ export function Contrasta() {
           <div class="note">
             <strong>{p?.siglas ?? sel}: análisis pendiente.</strong>{' '}
             {p?.programa.estado === 'publicado'
-              ? 'Su programa ya está publicado y el análisis está en curso (lectura completa, evaluación y revisión independiente).'
-              : `Todavía no ha publicado su programa oficial para el 29-N (última comprobación: ${fmt.fecha(p?.programa.comprobado)}). Mientras tanto analizamos los compromisos que sus líderes han hecho en público, con el mismo método; aparecerán aquí cuando pasen la revisión independiente.`}
+              ? 'Su programa ya está publicado y lo estamos analizando: lectura completa, valoración y revisión independiente.'
+              : `Todavía no ha publicado su programa oficial para el 29-N (última comprobación: ${fmt.fecha(p?.programa.comprobado)}). Mientras tanto analizamos los compromisos que sus líderes han hecho en público, con el mismo método. Aparecerán aquí cuando pasen la revisión independiente.`}
           </div>
         )}
         {datos?.estado === 'evaluado' && p && (
@@ -307,19 +308,18 @@ export function Contrasta() {
               {datos.base === 'compromisos' ? (
                 <p class="muted" style={{ fontSize: '0.85rem', margin: 0 }}>
                   <strong>{p.siglas} no ha publicado programa para el 29-N</strong> (última comprobación: {fmt.fecha(p.programa.comprobado)}).
-                  Analizamos sus {datos.propuestas.length} compromisos centrales{datos.compromisos_total ? ` (de ${datos.compromisos_total} recogidos)` : ''}, dichos
-                  en público y en primera persona por sus líderes para esta legislatura, con el mismo método y la misma revisión independiente que
-                  los programas{datos.revision ? ` (${datos.revision} correcciones aplicadas)` : ''}. Cuando publique su programa, lo analizaremos y
-                  sustituirá a esto. <a href="#/metodologia">Cómo se hace</a>.
+                  Analizamos sus {datos.propuestas.length} compromisos centrales{datos.compromisos_total ? ` (de ${datos.compromisos_total} recogidos)` : ''}:
+                  los que sus líderes han dicho en público y en primera persona para esta legislatura. Usamos el mismo método y la misma revisión
+                  independiente que con los programas{datos.revision ? ` (${datos.revision} correcciones aplicadas)` : ''}. Cuando publique su
+                  programa, lo analizaremos y sustituirá a esto. <a href="#/metodologia">Cómo se hace</a>.
                 </p>
               ) : (
               <p class="muted" style={{ fontSize: '0.85rem', margin: 0 }}>
                 <a href={p.programa.url ?? '#'} target="_blank" rel="noopener">
                   Programa oficial
                 </a>{' '}
-                ({p.programa.paginas} páginas{p.programa.fecha ? `, ${fmt.fecha(p.programa.fecha)}` : ''}), leído completo. Análisis de{' '}
-                {d.meta.modelo} con fuentes públicas, revisado por una segunda pasada independiente
-                {datos.revision ? ` (${datos.revision} correcciones aplicadas)` : ''}. <a href="#/metodologia">Cómo se hace</a>.
+                ({p.programa.paginas} páginas{p.programa.fecha ? `, ${fmt.fecha(p.programa.fecha)}` : ''}), leído completo. Análisis hecho con IA ({d.meta.modelo}) y fuentes públicas, y revisado por un segundo análisis
+                independiente{datos.revision ? ` (${datos.revision} correcciones aplicadas)` : ''}. <a href="#/metodologia">Cómo se hace</a>.
               </p>
               )}
             </div>

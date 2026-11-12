@@ -87,8 +87,9 @@ def main():
     fase1["meta"] = {
         "actualizado": date.today().isoformat(),
         "provisional": len(publicados) < len(partidos) / 2,
-        "nota": (f"Posiciones documentadas: {n_prog} desde programas oficiales y {n_camp} desde propuestas públicas de sus líderes. "
-                 f"Programas publicados: {len(publicados)} de {len(partidos)}; se recodifica cada vez que se publica uno."),
+        "nota": (f"Hasta ahora conocemos {n_prog + n_camp} posiciones de los partidos, todas con cita: {n_prog} de programas oficiales "
+                 f"y {n_camp} de lo que sus líderes han propuesto en público. Han publicado programa {len(publicados)} de {len(partidos)} "
+                 f"partidos. Revisamos las posiciones cada vez que se publica uno."),
     }
     write("fase1.json", fase1)
 

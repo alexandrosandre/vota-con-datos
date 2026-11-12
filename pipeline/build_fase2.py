@@ -106,6 +106,23 @@ NOMBRE_EMPRESA = {"cis": "CIS", "sigmados": "Sigma Dos", "gad3": "GAD3", "40db":
                   "moreincommon": "More in Common", "winston": "Winston", "ateneodeldato": "Ateneo del Dato",
                   "swdemoscopia": "SW Demoscopia", "dym": "DYM", "data10": "Data10"}
 MESES = ["", "ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
+MESES_LARGOS = ["", "enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre",
+                "noviembre", "diciembre"]
+
+
+def periodo_txt(ini, fin):
+    """Texto legible de un periodo de fechas ISO: «del 3 al 5 de noviembre» (solo para las descripciones)."""
+    if not ini or not fin:
+        return f"del {ini} al {fin}"
+    (_, m1, d1), (_, m2, d2) = ([int(x) for x in f.split("-")] for f in (ini, fin))
+    if m1 == m2:
+        return f"del {d1} al {d2} de {MESES_LARGOS[m2]}"
+    return f"del {d1} de {MESES_LARGOS[m1]} al {d2} de {MESES_LARGOS[m2]}"
+
+
+def miles_txt(n):
+    """Número con punto de millar a la española (desde 10.000)."""
+    return f"{n:,}".replace(",", ".") if isinstance(n, int) and n >= 10000 else str(n)
 K_BASE = 0.15  # calibrado: docs/research/calibracion_incertidumbre.md (repetir la elección anterior)
 K_ENCUESTA = 0.08  # calibrado: error de encuestas finales + desviación provincial del swing (2015–2023)
 
@@ -297,7 +314,7 @@ def main():
     escenarios = [{
         "id": "g2023",
         "nombre": "Resultados de 2023",
-        "descripcion": "Voto real de las generales de 2023 en tu provincia. Frente Amplio y Podemos (juntos en Sumar en 2023) se reparten ese voto según su peso en las europeas de 2024 en la provincia.",
+        "descripcion": "Voto real de las elecciones generales de 2023 en tu provincia. Frente Amplio y Podemos se presentaron juntos (en Sumar) en 2023: repartimos ese voto entre los dos según lo que sacó cada uno en las elecciones europeas de 2024 en la provincia.",
         "fecha": "2023-07-23",
         "fuentes": [{"url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-18907", "titulo": "BOE-A-2023-18907 (resultados oficiales 2023)"}],
         "k": K_BASE,
@@ -403,7 +420,7 @@ def main():
         escenarios.insert(0, {
             "id": "media",
             "nombre": f"Media de encuestas ({len(media_ids)} empresas)",
-            "descripcion": f"Media de la última encuesta de cada empresa con trabajo de campo en los últimos {VENTANA_MEDIA} días: {lista}. Cada encuesta se traslada a tu provincia (cada partido sube o baja en la misma proporción que en España respecto a 2023) y se hace la media.",
+            "descripcion": f"Media de la última encuesta de cada empresa cuyas entrevistas terminaron en los últimos {VENTANA_MEDIA} días. Entran estas (con su fecha de publicación): {lista}. Trasladamos cada encuesta a tu provincia (si en España un partido tiene un 10 % más de voto que en 2023, por ejemplo del 20 % al 22 %, le damos un 10 % más en cada provincia) y hacemos la media.",
             "fecha": max(enc[i]["fecha_publicacion"] for i in media_ids),
             "encuestas": media_ids,
             "fuentes": [{"url": (enc[i]["urls"]["primarias"][0] if isinstance(enc[i]["urls"]["primarias"][0], str) else enc[i]["urls"]["primarias"][0].get("url")),
@@ -420,7 +437,7 @@ def main():
         escenarios.append({
             "id": eid,
             "nombre": NOMBRES[eid],
-            "descripcion": f"Encuesta con trabajo de campo del {tc.get('inicio')} al {tc.get('fin')} ({e.get('muestra_n')} entrevistas), trasladada a tu provincia: cada partido sube o baja en la misma proporción que en España respecto a 2023. Los partidos que la encuesta no recoge conservan su voto de 2023.",
+            "descripcion": f"Encuesta con {miles_txt(e.get('muestra_n'))} entrevistas hechas {periodo_txt(tc.get('inicio'), tc.get('fin'))}. La trasladamos a tu provincia: si en España un partido tiene un 10 % más de voto que en 2023, por ejemplo del 20 % al 22 %, le damos un 10 % más en cada provincia. Los partidos que la encuesta no recoge conservan su voto de 2023.",
             "fecha": e["fecha_publicacion"],
             "fuentes": [{"url": u if isinstance(u, str) else u.get("url"), "titulo": "publicación original"} for u in e["urls"]["primarias"][:2]],
             "k": K_ENCUESTA,

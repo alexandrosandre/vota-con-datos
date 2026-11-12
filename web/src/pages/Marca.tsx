@@ -46,14 +46,15 @@ export function Marca() {
       </div>
       <p style={{ marginTop: 14 }}>
         El símbolo es una <strong>urna</strong> vista de frente —marco redondeado y ranura— llena de <strong>tres barras crecientes</strong>, una
-        por paso y en su color: el voto, hecho de datos. El logotipo compone «vota con datos» en Archivo condensada, negra y en mayúsculas, con{' '}
-        <em>con</em> más suave para que se lea «vota · datos». Sobre negro, barras en tono vivo; sobre claro, en tono profundo. Área de respeto:
-        la altura de la ranura alrededor del símbolo. Fuera de la web (favicon, icono, redes) el símbolo va sobre su propio cuadrado negro, que se
-        lee igual en pestañas claras y oscuras.
+        por paso y en su color: el voto, hecho de datos. El logotipo escribe «vota con datos» con la letra Archivo, estrecha, muy gruesa y en
+        mayúsculas, con <em>con</em> más suave para que se lea «vota · datos». Sobre negro, las barras van en tono vivo; sobre fondo claro, en
+        tono oscuro. Alrededor del símbolo se deja libre, como mínimo, un espacio igual a la altura de la ranura. Fuera de la web (icono de la
+        pestaña del navegador, icono de aplicación, redes sociales) el símbolo va sobre su propio cuadrado negro, que se ve igual en fondos
+        claros y oscuros.
       </p>
       <p>
-        Ficheros: <a href={`${REPO}/tree/main/web/public/marca`}>web/public/marca</a> (símbolo en color y monocromo, logotipo horizontal, favicon,
-        icono de aplicación e imagen para redes).
+        Ficheros: <a href={`${REPO}/tree/main/web/public/marca`}>web/public/marca</a> (símbolo en color y en un solo color, logotipo horizontal,
+        icono de pestaña, icono de aplicación e imagen para redes sociales).
       </p>
 
       <h2 style={{ marginTop: 40 }}>Los tres pasos</h2>
@@ -67,8 +68,9 @@ export function Marca() {
         ))}
       </div>
       <p>
-        Tres verbos en imperativo, uno por paso, que dicen lo que hace la persona, no lo que hace la herramienta. Cada paso tiene su color: a
-        sangre en las bandas (portada, cabecera de cada paso, enlace al siguiente) y en tono vivo para cifras, barras y acentos sobre negro.
+        Tres verbos en imperativo, uno por paso, que dicen lo que hace la persona, no lo que hace la herramienta. Cada paso tiene su color: en
+        tono oscuro para las franjas que ocupan todo el ancho (portada, cabecera de cada paso, enlace al siguiente) y en tono vivo para cifras,
+        barras y detalles sobre negro.
       </p>
 
       <h2 style={{ marginTop: 40 }}>Color</h2>
@@ -99,7 +101,7 @@ export function Marca() {
                   {p.n} · {p.verbo}
                 </strong>
                 <br />
-                <code>{h.banda}</code> banda · <code>{h.vivo}</code> vivo
+                <code>{h.banda}</code> oscuro · <code>{h.vivo}</code> vivo
                 <br />
                 {h.nombre}
               </div>
@@ -125,20 +127,22 @@ export function Marca() {
       <p style={{ marginTop: 14 }}>
         Ni el rojo, el azul, el verde, el magenta, el morado, el amarillo, el naranja ni el turquesa de los partidos: los tres colores de paso solo
         aparecen juntos y en ese orden. En gráficos, los partidos se distinguen por nombre y posición, nunca por color. Las valoraciones llevan
-        color y símbolo (✓ ~ ✕ ?) para leerse también sin distinguir colores. Todos los pares de texto cumplen WCAG AA (texto blanco sobre las
-        bandas: 6,2:1, 9:1 y 6,9:1; tinta sobre fondo: 17:1).
+        color y símbolo (✓ ~ ✕ ?) para leerse también sin distinguir colores. Todo el texto tiene contraste suficiente para leerse bien: cumple
+        el nivel AA de las pautas internacionales de accesibilidad (WCAG), que pide un contraste de al menos 4,5 a 1. El blanco sobre las
+        franjas de color llega a 6,2, 9 y 6,9 a 1; el texto sobre el fondo, a 17 a 1.
       </p>
 
       <h2 style={{ marginTop: 40 }}>Tipografía</h2>
       <div class="card">
         <p class="tipo-muestra">Vota con datos.</p>
-        <p class="muted">Archivo condensada (anchura 62–68 %), pesos 800–900, en mayúsculas: titulares cortos, lema y cifras grandes.</p>
+        <p class="muted">Archivo estrecha (entre el 62 y el 68 % de su anchura normal), muy gruesa y en mayúsculas: titulares cortos, lema y cifras grandes.</p>
         <p style={{ fontSize: '1.15rem', margin: '22px 0 6px' }}>
-          Archivo a anchura normal para el texto y la interfaz: legible en pantalla, con cifras tabulares para los datos.
+          Archivo a anchura normal para el texto, los botones y los menús: se lee bien en pantalla, y sus cifras ocupan todas el mismo ancho
+          para que se alineen en las tablas.
         </p>
         <p class="muted" style={{ margin: 0 }}>
-          Pesos 400–700. Textos largos (metodología, análisis) en minúsculas y sin condensar; las mayúsculas condensadas se reservan para
-          titulares breves, botones y etiquetas.
+          Grosor de normal a negrita. Textos largos (metodología, análisis) en minúsculas y a anchura normal; las mayúsculas estrechas se
+          reservan para titulares breves, botones y etiquetas.
         </p>
       </div>
 

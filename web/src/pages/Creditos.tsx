@@ -8,10 +8,15 @@ export function Creditos() {
     <div class="narrow page prose">
       <h1>Créditos de las imágenes</h1>
       <p>
-        Las fotos de los candidatos y los logotipos de los partidos vienen de Wikimedia Commons, solo con licencias libres (dominio público,
-        CC0, CC BY o CC BY-SA). Cada foto es la que Wikidata asocia a la misma persona que su artículo de Wikipedia, que antes hemos
-        comprobado con el nombre y el partido de la lista del BOE. Las servimos desde nuestra web para que tu visita no llegue a terceros. Si
-        ves un error, <a href="https://github.com/alexandrosandre/vota-con-datos/issues" target="_blank" rel="noopener">avísanos</a>.
+        Las fotos de los candidatos y los logotipos de los partidos vienen de Wikimedia Commons, el archivo de imágenes de Wikipedia. Solo
+        usamos imágenes con licencias libres, que permiten reutilizarlas: dominio público, CC0, CC BY o CC BY-SA (las dos últimas piden
+        citar al autor, como hacemos aquí).
+      </p>
+      <p>
+        Para cada candidato comprobamos primero que su artículo de Wikipedia corresponde a la persona de la lista del BOE, con el mismo
+        nombre y partido. Después usamos la foto que Wikidata, la base de datos de Wikipedia, asocia a esa persona. Guardamos las imágenes
+        en nuestra propia web: al verlas, Wikimedia no se entera de tu visita. Si ves un error,{' '}
+        <a href="https://github.com/alexandrosandre/vota-con-datos/issues" target="_blank" rel="noopener">avísanos</a>.
       </p>
       <ul style={{ listStyle: 'none', padding: 0 }}>
         {c.map((x) => (

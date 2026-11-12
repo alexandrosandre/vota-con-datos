@@ -64,9 +64,9 @@ function Pie() {
         </div>
         <div>
           <a href="#/metodologia">Metodología</a> · <a href={REPO} target="_blank" rel="noopener">Código y datos</a> ·{' '}
-          <a href="#/marca">Marca</a> · <a href="#/creditos">Créditos de imágenes</a> · <a href={`${REPO}/issues`} target="_blank" rel="noopener">Avisar de un error</a>
+          <a href="#/marca">Marca</a> · <a href="#/creditos">Créditos de las imágenes</a> · <a href={`${REPO}/issues`} target="_blank" rel="noopener">Avisar de un error</a>
           <br />
-          Código MIT · Datos y análisis CC BY 4.0
+          Código libre (licencia MIT) · Datos y análisis reutilizables citando la fuente (licencia CC BY 4.0)
         </div>
       </div>
     </footer>
@@ -123,7 +123,7 @@ export function App() {
     return null;
   }
   let page;
-  if (errorCarga.value) page = <div class="narrow page"><div class="note">No se pudieron cargar los datos: {errorCarga.value}</div></div>;
+  if (errorCarga.value) page = <div class="narrow page"><div class="note">No se pudieron cargar los datos ({errorCarga.value}). Prueba a recargar la página.</div></div>;
   else if (r.startsWith('/metodologia')) page = <Metodologia />;
   else if (r.startsWith('/marca')) page = <Marca />;
   else if (r.startsWith('/disenos')) page = <Disenos />;

@@ -37,8 +37,8 @@ Compromís por separado, su "Frente Amplio" se interpreta igualmente como ese bl
 con dato en la encuesta (SALF): perfil provincial de las europeas de 2024. Partidos que la encuesta
 no recoge: conservan su cuota base. UPN-PP sigue el factor del PP. Se renormaliza a 100 % con el
 voto en blanco de 2023 de la provincia. El informe `data/build/fase2_validacion.txt` compara los
-escaños nacionales resultantes con los publicados por cada encuesta (diferencias de ±0–5 escaños
-en los grandes partidos). Un bloque no incluye a los miembros que la encuesta da por separado: el
+escaños nacionales resultantes con los publicados por cada encuesta cuando los publica (con el CIS
+3584, nuestro reparto cae dentro de su horquilla en 714 de 728 casos partido × provincia). Un bloque no incluye a los miembros que la encuesta da por separado: el
 CIS 3584 publica UPC y Ara Més-Front Ampli aparte, así que su "Frente Amplio" se aplica solo a
 Frente Amplio (y "ERC-Podemos" al factor de ERC).
 

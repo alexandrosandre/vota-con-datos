@@ -23,27 +23,27 @@ export const LEMAS: Record<string, { lema: [string, string, string]; eslogan: st
   actual: {
     lema: ['Elige.', 'Contrasta.', 'Suma.'],
     eslogan: 'Vota con datos.',
-    lead: 'Tres pasos para pasar de la intuición a un voto informado: con quién coincides de verdad, qué hay detrás de lo que promete, y si tu voto llegará a escaño en tu provincia. Con fuentes oficiales, algoritmos abiertos y sin guardar ningún dato tuyo.',
+    lead: 'Tres pasos para pasar de la intuición a un voto informado: con quién coincides de verdad, qué hay detrás de lo que prometen los partidos y si tu voto ayudará a lograr un escaño en tu provincia. Con fuentes oficiales, cálculos que cualquiera puede revisar y sin guardar ningún dato tuyo.',
     pasos: {
       coincide: {
         verbo: 'Elige',
         pregunta: '¿Con quién coincides?',
         resumen:
-          'Valora propuestas reales del 29-N, de sus programas y de lo que han dicho sus líderes, sin saber de quién son. Descubre con qué partidos coincides y en qué, con la cita exacta.',
+          'Valora propuestas reales de estas elecciones sin saber de quién son: salen de los programas de los partidos y de lo que sus líderes han propuesto en público. Descubre con qué partidos coincides y en qué, con la cita exacta.',
         cta: 'Empezar el cuestionario',
       },
       contrasta: {
         verbo: 'Contrasta',
         pregunta: '¿Qué hay detrás?',
         resumen:
-          'Pon a prueba las 12 propuestas centrales de cada programa: encaje legal, coste, evidencia, experiencia en otros países y a quién benefician, con las fuentes a la vista.',
-        cta: 'Contrastar programas',
+          'Pon a prueba hasta 12 propuestas centrales de cada partido, de su programa o, si no lo ha publicado, de lo que sus líderes han prometido en público: si cabe en la ley, cuánto cuesta, qué dicen los estudios, cómo ha ido en otros países y a quién beneficia. Con las fuentes a la vista.',
+        cta: 'Contrastar propuestas',
       },
       cuenta: {
         verbo: 'Suma',
         pregunta: '¿Tu voto tendrá escaño?',
         resumen:
-          'Con la ley electoral y las listas oficiales del BOE, calcula la probabilidad de que tu opción obtenga escaño en tu provincia y, si no llega, cuál es tu siguiente opción.',
+          'Con la ley electoral y las listas oficiales del BOE, calcula la probabilidad de que tu partido logre al menos un escaño en tu provincia. Si tiene pocas opciones, te dice cuál de tus siguientes preferencias sí las tiene.',
         cta: 'Calcular',
       },
     },

@@ -13,8 +13,8 @@ export function Inicio() {
 
   const estadoPaso: Record<string, string> = {
     coincide: preguntas === 0 ? 'Preparando el cuestionario' : hechas > 0 ? `${hechas} de ${preguntas} respondidas` : `${preguntas} afirmaciones · unos 10 minutos`,
-    contrasta: evaluados > 0 ? `${evaluados} programas analizados · se amplía según publican` : 'Se completa según publican los programas',
-    cuenta: `52 circunscripciones · ${candidaturas} candidaturas del BOE`,
+    contrasta: evaluados > 0 ? `${evaluados} de ${ps.length} partidos analizados` : 'Análisis en preparación',
+    cuenta: `50 provincias, Ceuta y Melilla · ${candidaturas} candidaturas del BOE`,
   };
 
   return (
@@ -64,11 +64,11 @@ export function Inicio() {
           <b>
             {publicados}/{ps.length}
           </b>
-          <span>programas oficiales publicados y leídos</span>
+          <span>partidos que ya han publicado su programa oficial</span>
         </div>
         <div>
           <b>{promesas}</b>
-          <span>compromisos de campaña verificados</span>
+          <span>compromisos de campaña recogidos, con fuente</span>
         </div>
         <div>
           <b>0</b>
@@ -80,22 +80,25 @@ export function Inicio() {
         <div class="principios">
           <div>
             <h3>Fuentes oficiales</h3>
-            <p>Programas de cada partido, listas del BOE, resultados del Ministerio del Interior, encuestas en su publicación original.</p>
+            <p>
+              Programas de cada partido y lo que sus líderes dicen en público, listas del Boletín Oficial del Estado (BOE), resultados del
+              Ministerio del Interior y encuestas en su publicación original.
+            </p>
           </div>
           <div>
-            <h3>Algoritmos abiertos</h3>
+            <h3>Cálculos abiertos</h3>
             <p>
-              Código, datos y prompts de IA en <a href={REPO} target="_blank" rel="noopener">GitHub</a>. Cualquiera puede revisar y reproducir
-              cada cálculo.
+              El código, los datos y las instrucciones que damos a la IA están en{' '}
+              <a href={REPO} target="_blank" rel="noopener">GitHub</a>. Cualquiera puede revisar y repetir cada cálculo.
             </p>
           </div>
           <div>
             <h3>Neutralidad</h3>
-            <p>Mismos criterios para todos los partidos. Juzgamos el fundamento de las propuestas, no su ideología. Las afirmaciones no dicen de quién son.</p>
+            <p>Mismos criterios para todos los partidos. Juzgamos el fundamento de las propuestas, no su ideología. En el paso 1 no ves de quién es cada propuesta hasta el final.</p>
           </div>
           <div>
             <h3>Lo que no sabemos, lo decimos</h3>
-            <p>Si un programa no está publicado o un dato no se puede verificar, aparece así. No rellenamos huecos.</p>
+            <p>Si un programa no está publicado o un dato no se puede comprobar, lo indicamos. No rellenamos huecos.</p>
           </div>
         </div>
       </section>
@@ -112,28 +115,30 @@ export function Inicio() {
         <details>
           <summary>¿Me decís a quién votar?</summary>
           <p>
-            No. El paso 1 te muestra con quién coincides; el 2, qué fundamento tienen sus propuestas; el 3, si tu voto se convertirá en escaño.
-            La decisión es tuya, y votar a quien prefieres siempre es legítimo.
+            No. El paso 1 te muestra con quién coincides; el 2, qué fundamento tienen sus propuestas; el 3, qué probabilidad tiene tu voto de
+            ayudar a lograr un escaño. La decisión es tuya, y votar a quien prefieres siempre es legítimo.
           </p>
         </details>
         <details>
           <summary>¿Por qué no aparece el análisis de algunos partidos?</summary>
           <p>
-            Solo analizamos programas oficiales completos, y varios partidos los publican durante la campaña. La web se actualiza a medida que
-            aparecen. Mientras tanto mostramos sus compromisos de campaña con fuente.
+            Analizamos el programa oficial de cada partido. Si aún no lo ha publicado, analizamos con el mismo método lo que sus líderes han
+            prometido en público. Cada análisis aparece cuando ha pasado una revisión independiente; hasta entonces figura como pendiente.
+            Cuando un partido publica su programa, su análisis sustituye al anterior.
           </p>
         </details>
         <details>
           <summary>¿Cómo se usa la inteligencia artificial?</summary>
           <p>
-            Un modelo de IA (Claude, de Anthropic) lee los programas completos y contrasta las propuestas con fuentes públicas; un segundo
-            análisis independiente revisa cada valoración y cada fuente, y todas las citas se comprueban automáticamente contra el texto
-            oficial. Las instrucciones exactas están publicadas.
+            Un modelo de IA (Claude, de Anthropic) lee los programas completos, o lo que han dicho los líderes si no hay programa, y
+            contrasta las propuestas con fuentes públicas. Después, un segundo análisis independiente revisa cada valoración y cada fuente.
+            Todas las citas se comprueban automáticamente contra el texto original. Las instrucciones exactas que damos a la IA están
+            publicadas.
           </p>
         </details>
         <details>
           <summary>¿Guardáis mis respuestas?</summary>
-          <p>No. Todo se calcula en tu navegador y solo se guarda en él, para que puedas volver. Puedes borrarlo cuando quieras.</p>
+          <p>No. Todo se calcula en tu navegador y solo se guarda en él, para que puedas volver. Puedes borrar tus respuestas cuando quieras.</p>
         </details>
       </section>
     </div>
