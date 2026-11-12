@@ -16,8 +16,8 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   local que usa la actualización automática (GitHub conserva el código y los datos).
 - [ ] **2. [Tú] Hacer duradera la actualización automática.** Hoy es una tarea de esta sesión (hacia
   las 9:15 y las 20:15): muere si se cierra la app o la sesión y caduca a los 7 días (se renueva sola
-  si sigue viva). Comprobado el 9-nov: tus rutinas solo tienen entornos para el repositorio de
-  Trackingplan; para una rutina persistente de «vota con datos» hace falta que crees un entorno
+  si sigue viva). Comprobado el 9-nov: tus rutinas solo tienen entornos para otros
+  repositorios; para una rutina persistente de «vota con datos» hace falta que crees un entorno
   (bridge en tu Mac) para este repositorio, mejor tras el punto 1. Con el entorno creado, la rutina la
   configuro yo. Lo mecánico (veda de encuestas, validaciones) ya corre en GitHub Actions sin depender
   de nadie.
