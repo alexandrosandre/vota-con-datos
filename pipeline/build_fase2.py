@@ -88,6 +88,9 @@ def en_veda(ahora=None):
     return VEDA_INICIO - timedelta(hours=2) <= ahora < VEDA_FIN
 
 
+VENTANA_MEDIA = 21  # días desde el fin del trabajo de campo
+NOMBRE_EMPRESA = {"cis": "CIS", "sigmados": "Sigma Dos", "gad3": "GAD3", "40db": "40dB"}
+MESES = ["", "ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
 K_BASE = 0.15  # calibrado: docs/research/calibracion_incertidumbre.md (repetir la elección anterior)
 K_ENCUESTA = 0.08  # calibrado: error de encuestas finales + desviación provincial del swing (2015–2023)
 
@@ -139,6 +142,15 @@ def main():
         return {"tipo": "coalición", "miembros": [{"nombre": m["nombre"], "siglas": m.get("siglas")} for m in c["miembros"]],
                 "fuente": {"url": f.get("url"), "documento": f.get("documento")}, "nota": c.get("nota")}
 
+    # Fotos y logotipos con licencia libre (pipeline/imagenes.py), copiados en web/public/img/.
+    imgs = load("imagenes/imagenes.json") if (D / "imagenes/imagenes.json").exists() else {"personas": {}, "partidos": {}}
+    creditos = {}
+
+    def credito(m, que):
+        creditos[m["src"]] = {"src": m["src"], "que": que, "autor": m.get("autor"), "licencia": m.get("licencia"),
+                              "licencia_url": m.get("licencia_url"), "commons": m.get("commons")}
+        return m["src"]
+
     def titulares_de(ine, siglas):
         out = []
         for x in sorted(relevantes.get((ine, siglas), []), key=lambda y: y["orden"]):
@@ -146,7 +158,8 @@ def main():
             afiliacion = a.get("afiliacion") or (x["marca_boe"] if x.get("marca_boe") else None)
             out.append({"orden": x["orden"], "nombre": x["nombre"], "afiliacion": afiliacion,
                         "fuente_afiliacion": a.get("fuente_afiliacion") if a.get("afiliacion") else None,
-                        "enlace": a.get("enlace")})
+                        "enlace": a.get("enlace"),
+                        "foto": credito(imgs["personas"][a["enlace"]], x["nombre"]) if a.get("enlace") in imgs["personas"] else None})
         return out
 
     circs = []
@@ -268,7 +281,7 @@ def main():
 
     escenarios = [{
         "id": "g2023",
-        "nombre": "Resultados de 2023 (por defecto)",
+        "nombre": "Resultados de 2023",
         "descripcion": "Voto real de las generales de 2023 en tu provincia. Frente Amplio y Podemos (juntos en Sumar en 2023) se reparten ese voto según su peso en las europeas de 2024 en la provincia.",
         "fecha": "2023-07-23",
         "fuentes": [{"url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-18907", "titulo": "BOE-A-2023-18907 (resultados oficiales 2023)"}],
@@ -278,7 +291,10 @@ def main():
     }]
 
     veda = en_veda()
-    for eid in ([] if veda else ESCENARIOS_ENCUESTA):
+
+    def proyectar(eid):
+        """Cuotas por provincia de una encuesta nacional: cada partido sube o baja en cada provincia
+        en la misma proporción que en la encuesta respecto a 2023 (swing proporcional)."""
         e = enc[eid]
         poll = {}
         for p in e["estimacion_voto"]:
@@ -330,11 +346,61 @@ def main():
             q["_blanco"] = blancos[ine]
             cu[ine] = q
             sb[ine] = sbi
+        return cu, sb
+
+    def empresa(eid):
+        return eid.split("-")[0]
+
+    # Media de encuestas: la última de cada empresa con trabajo de campo terminado en los últimos
+    # VENTANA_MEDIA días. Media simple (sin ponderar) de las proyecciones provinciales de cada una.
+    hoy = date.fromisoformat(__import__("os").environ.get("VCD_HOY", date.today().isoformat()))
+    ultimas = {}
+    for eid, e in enc.items():
+        fin = (e.get("trabajo_campo") or {}).get("fin")
+        if not fin or (hoy - date.fromisoformat(fin)).days > VENTANA_MEDIA:
+            continue
+        prev = ultimas.get(empresa(eid))
+        if prev is None or fin > enc[prev]["trabajo_campo"]["fin"]:
+            ultimas[empresa(eid)] = eid
+    media_ids = sorted(ultimas.values(), key=lambda i: enc[i]["trabajo_campo"]["fin"], reverse=True)
+    if not veda and len(media_ids) >= 2:
+        proy = [proyectar(i) for i in media_ids]
+        cu, sb = {}, {}
+        for c in circs:
+            ine = c["ine"]
+            q, sbi = {}, []
+            for k in [x["id"] for x in c["candidaturas"]] + ["_otros"]:
+                vals = [p[0][ine][k] for p in proy if k in p[0][ine] and k not in p[1][ine]]
+                if vals:
+                    q[k] = sum(vals) / len(vals)
+                else:
+                    sbi.append(k)
+            f = (1 - blancos[ine]) / sum(q.values())
+            q = {kk: v * f for kk, v in q.items()}
+            q["_blanco"] = blancos[ine]
+            cu[ine], sb[ine] = q, sbi
+        lista = "; ".join(f"{NOMBRE_EMPRESA.get(empresa(i), empresa(i))} ({enc[i]['fecha_publicacion'][8:10].lstrip('0')}-{MESES[int(enc[i]['fecha_publicacion'][5:7])]})" for i in media_ids)
+        escenarios.insert(0, {
+            "id": "media",
+            "nombre": f"Media de encuestas ({len(media_ids)} empresas)",
+            "descripcion": f"Media de la última encuesta de cada empresa con trabajo de campo en los últimos {VENTANA_MEDIA} días: {lista}. Cada encuesta se traslada a tu provincia (cada partido sube o baja en la misma proporción que en España respecto a 2023) y se hace la media.",
+            "fecha": max(enc[i]["fecha_publicacion"] for i in media_ids),
+            "encuestas": media_ids,
+            "fuentes": [{"url": (enc[i]["urls"]["primarias"][0] if isinstance(enc[i]["urls"]["primarias"][0], str) else enc[i]["urls"]["primarias"][0].get("url")),
+                         "titulo": NOMBRE_EMPRESA.get(empresa(i), empresa(i))} for i in media_ids],
+            "k": K_ENCUESTA,
+            "cuotas": cu,
+            "sin_base": sb,
+        })
+
+    for eid in ([] if veda else ESCENARIOS_ENCUESTA):
+        e = enc[eid]
+        cu, sb = proyectar(eid)
         tc = e.get("trabajo_campo") or {}
         escenarios.append({
             "id": eid,
             "nombre": NOMBRES[eid],
-            "descripcion": f"Encuesta con trabajo de campo del {tc.get('inicio')} al {tc.get('fin')} (n = {e.get('muestra_n')}), proyectada a tu provincia con swing proporcional sobre 2023. Partidos que no recoge: conservan su voto de 2023.",
+            "descripcion": f"Encuesta con trabajo de campo del {tc.get('inicio')} al {tc.get('fin')} ({e.get('muestra_n')} entrevistas), trasladada a tu provincia: cada partido sube o baja en la misma proporción que en España respecto a 2023. Los partidos que la encuesta no recoge conservan su voto de 2023.",
             "fecha": e["fecha_publicacion"],
             "fuentes": [{"url": u if isinstance(u, str) else u.get("url"), "titulo": "publicación original"} for u in e["urls"]["primarias"][:2]],
             "k": K_ENCUESTA,
@@ -375,6 +441,8 @@ def main():
         },
         "circunscripciones": circs,
         "escenarios": escenarios,
+        "logos": {pid: credito(m, f"Logotipo de {pid}") for pid, m in imgs["partidos"].items()},
+        "creditos_imagenes": sorted(creditos.values(), key=lambda c: c["que"]),
         "coste_nacional_2023": coste,
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)

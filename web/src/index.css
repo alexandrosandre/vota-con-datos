@@ -273,3 +273,32 @@ details > summary { cursor: pointer; }
   .mapa .sq { width: 18px; height: 18px; border-radius: 4px; }
   .mapa th.v { height: 150px; padding: 4px 1px; font-size: 0.72rem; }
 }
+
+/* ---- Paso 3: logotipos, fotos y orden de preferencia ---- */
+.marca-p { display: inline-flex; flex: none; align-items: center; justify-content: center; vertical-align: -0.3em; object-fit: contain; border-radius: 6px; background: #fff; padding: 2px; box-sizing: border-box; }
+.marca-ini { background: var(--paper-2); color: var(--ink-2); font-weight: 800; letter-spacing: -0.02em; border: 1px solid var(--line); padding: 0; }
+.personas { list-style: none; padding: 0; margin: 6px 0 12px; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.persona { display: flex; gap: 10px; align-items: center; }
+.foto { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; flex: none; background: var(--paper-2); }
+.foto-ini { display: inline-flex; align-items: center; justify-content: center; font-weight: 800; color: var(--ink-3); border: 1px solid var(--line); font-size: 0.9rem; }
+.origen { background: var(--paper-2); border-radius: var(--r-s, 8px); padding: 12px 14px; margin: 10px 0 12px; font-size: 0.95rem; }
+.etiqueta-origen { display: inline-block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 8px; margin-right: 6px; border-radius: 4px; background: var(--p1); color: #111; }
+.etiqueta-origen.manual { background: var(--p2); }
+.orden-pref { list-style: none; padding: 0; margin: 0 0 12px; }
+.orden-pref li { display: grid; grid-template-columns: 28px auto 1fr auto auto; gap: 10px; align-items: center; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+.orden-pref li.es-voto { background: color-mix(in srgb, var(--p3) 12%, transparent); }
+.orden-pref li.es-sugerida { background: color-mix(in srgb, var(--p3) 22%, transparent); }
+.orden-pref .pos { font-weight: 900; font-size: 1.15rem; color: var(--ink-3); text-align: center; }
+.orden-pref .prob { font-variant-numeric: tabular-nums; font-weight: 700; min-width: 48px; text-align: right; }
+.orden-pref .acciones { display: flex; gap: 4px; }
+.orden-pref .acciones button { border: 1px solid var(--line); background: var(--card); color: var(--ink); min-width: 36px; min-height: 36px; border-radius: 6px; }
+.orden-pref .acciones button:disabled { opacity: 0.35; }
+.tag { display: inline-block; margin-left: 6px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; padding: 1px 6px; border-radius: 4px; border: 1px solid currentColor; color: var(--ink-2); }
+.tag-sug { background: var(--p3); border-color: var(--p3); color: #111; }
+.link-btn { background: none; border: none; padding: 0; color: var(--c, var(--accent)); text-decoration: underline; font: inherit; cursor: pointer; }
+.nowrap { white-space: nowrap; }
+.sugerencia { border-left: 4px solid var(--p3); }
+@media (max-width: 560px) {
+  .orden-pref li { grid-template-columns: 24px auto 1fr auto; }
+  .orden-pref .acciones { grid-column: 1 / -1; justify-content: flex-end; }
+}

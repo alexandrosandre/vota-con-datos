@@ -4,13 +4,19 @@ import type { Respuesta } from './engine/match';
 /** Estado del usuario. Vive solo en su navegador (localStorage); nunca se envía. */
 export interface Estado {
   respuestas: Record<string, Respuesta>;
-  /** Ranking de partidos (ids) — de la fase 1 o manual. */
+  /**
+   * Orden de preferencia (ids de partido): a quién votarías si tu primera opción no tiene opciones
+   * de escaño en tu provincia. Viene del paso 1 (ordenado por afinidad) o lo ordena la persona.
+   */
   ranking: string[];
   rankingOrigen: 'fase1' | 'manual' | null;
+  /** Afinidad (0–100) por partido del último resultado del paso 1, para mostrar de dónde sale el orden. */
+  afinidades: Record<string, number>;
   circ: string | null;
   partido: string | null;
+  /** '' = el escenario por defecto (la media de encuestas, o 2023 durante la veda). */
   escenario: string;
-  incertidumbre: 'baja' | 'media' | 'alta';
+  v?: number;
 }
 
 const CLAVE = 'vcd-estado-v1';
@@ -18,16 +24,27 @@ const inicial: Estado = {
   respuestas: {},
   ranking: [],
   rankingOrigen: null,
+  afinidades: {},
   circ: null,
   partido: null,
-  escenario: 'g2023',
-  incertidumbre: 'media',
+  escenario: '',
+  v: 2,
 };
 
 function cargar(): Estado {
   try {
     const raw = localStorage.getItem(CLAVE);
-    if (raw) return { ...inicial, ...JSON.parse(raw) };
+    if (raw) {
+      const e = { ...inicial, ...JSON.parse(raw) } as Estado & { incertidumbre?: unknown };
+      // v2 (12-nov): el escenario por defecto pasa a ser la media de encuestas; quien no había
+      // elegido otro (o tenía el antiguo por defecto, 2023) pasa al nuevo.
+      if ((e.v ?? 1) < 2) {
+        if (e.escenario === 'g2023') e.escenario = '';
+        e.v = 2;
+      }
+      delete e.incertidumbre;
+      return e;
+    }
   } catch {
     /* sin almacenamiento: seguimos en memoria */
   }

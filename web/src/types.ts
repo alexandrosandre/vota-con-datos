@@ -75,7 +75,7 @@ export interface CandidaturaCirc {
   afines?: string[];
   cabeza_lista?: string | null;
   /** Titulares de la lista en los puestos relevantes (BOE), con afiliación y enlace si constan en fuente fiable. */
-  titulares?: { orden: number; nombre: string; afiliacion?: string | null; enlace?: string | null; fuente_afiliacion?: string | null }[];
+  titulares?: { orden: number; nombre: string; afiliacion?: string | null; enlace?: string | null; fuente_afiliacion?: string | null; foto?: string | null }[];
   /** Composición de la papeleta si es coalición, federación o marca (fuente oficial). */
   coalicion?: { tipo: string; miembros: { nombre: string; siglas?: string | null }[]; fuente?: { url?: string; documento?: string } | null; nota?: string | null } | null;
 }
@@ -97,6 +97,8 @@ export interface Escenario {
   descripcion: string;
   fecha?: string;
   fuentes: Fuente[];
+  /** Solo en la media: ids de las encuestas promediadas. */
+  encuestas?: string[];
   k: number;
   /** ine -> candidatura id -> cuota sobre válidos. "_blanco" y "_otros" reservados. */
   cuotas: Record<string, Record<string, number>>;
@@ -110,6 +112,9 @@ export interface DatosFase2 {
   escenarios: Escenario[];
   /** Votos por diputado a nivel nacional en 2023 por partido (id fase 1). */
   coste_nacional_2023?: Record<string, { votos: number; escanos: number }>;
+  /** Logotipo (ruta relativa en la web) por partido de la fase 1; licencia libre (Wikimedia Commons). */
+  logos?: Record<string, string>;
+  creditos_imagenes?: { src: string; que: string; autor?: string | null; licencia?: string | null; licencia_url?: string | null; commons?: string | null }[];
 }
 
 /* ---------- Fase 3 ---------- */

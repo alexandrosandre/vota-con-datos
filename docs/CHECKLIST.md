@@ -94,6 +94,14 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   convocatoria.
 - [ ] **11. [Externo → Yo] Encuestas nuevas de Sigma Dos, GAD3 y 40dB** publicadas antes del 24-nov.
   Al día el 9-nov: Sigma Dos 8-nov, GAD3 9-nov y 40dB 9-nov (la revisión programada sigue buscando).
+- [x] **11b. [Yo] Paso 3 más claro (12-nov, a petición tuya):** escenario por defecto = media propia de
+  encuestas (la última de cada empresa en 21 días, en su publicación original; descartada la de El
+  Autómata por hacerla una IA a partir de Wikipedia, sin método ni licencia); sin selector de
+  incertidumbre ni jerga («swing»); orden de preferencia visible, con su origen (paso 1 o manual) y
+  cómo cambiarlo, y la sugerencia explica de dónde sale; logotipos y fotos de Wikimedia Commons con
+  licencia libre, servidos desde la web, con página de créditos.
+- [ ] **11c. [Yo] Ampliar la media con más empresas** (NC Report, DYM, Opina 360, Target Point,
+  Hamalgama, Simple Lógica, Cluster17, Ipsos…), siempre desde su publicación original.
 - [ ] **12. [Yo] Compromisos de campaña desde el 13-nov** (inicio de campaña), sobre todo para EH
   Bildu, PNV, PSC, UPN-PP y Adelante Andalucía, que hoy tienen cero posiciones en el paso 1.
 - [x] **13. [Yo] Resolver las dudas abiertas de los revisores** (detalle en

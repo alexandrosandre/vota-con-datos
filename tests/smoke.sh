@@ -30,7 +30,8 @@ comprueba "#/" "Elige." "Suma." "candidaturas proclamadas en el BOE"
 comprueba "#/suma" "votar a quien prefieres siempre es legítimo"   # alias del paso 3
 comprueba "#/coincide" "afirmaciones"
 comprueba "#/contrasta/erc" "el programa de un vistazo" "Programa oficial"
-comprueba "?circ=28&partido=pp#/cuenta" "probabilidad de ≥ 1 escaño" "Todas las candidaturas en Madrid"
+comprueba "?circ=28&partido=pp#/cuenta" "probabilidad de lograr al menos un escaño" "Todas las candidaturas en Madrid" "Calcular con" "Tu orden de preferencia"
+comprueba "#/creditos" "Créditos de las imágenes"
 comprueba "#/metodologia" "Cómo funciona vota con datos"
 comprueba "#/marca" "Símbolo y logotipo"
 comprueba "#/afinidad" "afirmaciones"   # ruta antigua redirigida

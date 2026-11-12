@@ -24,6 +24,12 @@ Casos especiales, todos explícitos en el fichero de mapeo:
 * Candidaturas sin predecesora (p. ej. SALF, que no concurrió en 2023): *sin base* en este escenario.
 * El voto de 2023 de candidaturas que no concurren en 2026 queda en "otros" (no puede obtener escaño).
 
+**Escenario por defecto (desde el 12-nov): media de encuestas.** La última encuesta de cada empresa
+con trabajo de campo terminado en los últimos 21 días (`VENTANA_MEDIA`), cada una proyectada a las
+provincias como se explica abajo; la media simple (sin ponderar) de esas proyecciones, por
+candidatura y provincia, renormalizada. Una candidatura sin estimación en una encuesta se promedia
+con las que sí la estiman. Hace falta un mínimo de dos empresas; en veda no se publica.
+
 **Escenarios de encuesta**: *swing* proporcional. `cuota_prov = cuota_base_prov × encuesta_nac /
 base_nac`. La etiqueta genérica "Sumar" de las encuestas se aplica como bloque a Frente Amplio,
 Ara Més-FA, Compromís y UPC (y "PSOE" a PSOE + PSC), con un único factor; si la encuesta no da
@@ -37,7 +43,7 @@ en los grandes partidos).
 **Incertidumbre**: 4.000 simulaciones con error log-normal independiente por candidatura,
 σ = k/√max(cuota, 0,5 %); k calibrado con las generales de 2015–2023
 (`pipeline/calibracion.py`, `docs/research/calibracion_incertidumbre.md`): 0,08 con encuestas y 0,15
-con la base de 2023; el usuario puede elegir baja (×0,625) o alta (×1,5). Prueba retrospectiva sobre
+con la base de 2023 (desde el 12-nov ya no hay selector de incertidumbre en la web: se usa siempre el calibrado). Prueba retrospectiva sobre
 2023: con k = 0,04 el modelo era demasiado confiado; con el calibrado, las probabilidades anunciadas
 coinciden con las frecuencias observadas (Brier 0,0696 → 0,0673 con encuestas; 0,0743 → 0,0646 con
 la base). Semilla fija por circunscripción y escenario: resultados reproducibles.

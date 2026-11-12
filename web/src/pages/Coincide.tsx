@@ -259,7 +259,13 @@ function Resultados() {
   const evaluables = res.filter((r) => r.afinidad !== null);
   const sinPosiciones = (partidos.value ?? []).filter((p) => !d.posiciones[p.id]);
 
-  const guardar = () => actualizar({ ranking: evaluables.map((r) => r.partido), rankingOrigen: 'fase1', partido: evaluables[0]?.partido ?? null });
+  const guardar = () =>
+    actualizar({
+      ranking: evaluables.map((r) => r.partido),
+      rankingOrigen: 'fase1',
+      afinidades: Object.fromEntries(evaluables.map((r) => [r.partido, Math.round(r.afinidad!)])),
+      partido: evaluables[0]?.partido ?? null,
+    });
 
   if (respondidas < 5)
     return (
@@ -361,7 +367,7 @@ function Resultados() {
         <button
           class="btn ghost"
           onClick={() => {
-            if (confirm('¿Borrar todas tus respuestas?')) actualizar({ respuestas: {}, ranking: [], rankingOrigen: null });
+            if (confirm('¿Borrar todas tus respuestas?')) actualizar({ respuestas: {}, ranking: [], rankingOrigen: null, afinidades: {} });
           }}
         >
           Borrar

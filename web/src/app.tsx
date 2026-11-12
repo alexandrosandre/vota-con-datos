@@ -9,6 +9,7 @@ import { Cuenta } from './pages/Cuenta';
 import { Metodologia } from './pages/Metodologia';
 import { Marca } from './pages/Marca';
 import { Disenos } from './pages/Disenos';
+import { Creditos } from './pages/Creditos';
 
 /** Rutas antiguas (primera versión publicada) → nuevas. */
 const REDIRECCIONES: Record<string, string> = {
@@ -63,7 +64,7 @@ function Pie() {
         </div>
         <div>
           <a href="#/metodologia">Metodología</a> · <a href={REPO} target="_blank" rel="noopener">Código y datos</a> ·{' '}
-          <a href="#/marca">Marca</a> · <a href={`${REPO}/issues`} target="_blank" rel="noopener">Avisar de un error</a>
+          <a href="#/marca">Marca</a> · <a href="#/creditos">Créditos de imágenes</a> · <a href={`${REPO}/issues`} target="_blank" rel="noopener">Avisar de un error</a>
           <br />
           Código MIT · Datos y análisis CC BY 4.0
         </div>
@@ -84,6 +85,7 @@ function tituloDe(r: string): string {
   } else if (r.startsWith('/metodologia')) t = 'Metodología';
   else if (r.startsWith('/marca')) t = 'Marca';
   else if (r.startsWith('/disenos')) t = 'Diseños';
+  else if (r.startsWith('/creditos')) t = 'Créditos de las imágenes';
   return t ? `${t} · vota con datos` : TITULO_INICIO;
 }
 
@@ -129,6 +131,7 @@ export function App() {
   else if (r.startsWith('/coincide')) page = <Coincide />;
   else if (r.startsWith('/contrasta')) page = <Contrasta />;
   else if (r.startsWith('/cuenta')) page = <Cuenta />;
+  else if (r.startsWith('/creditos')) page = <Creditos />;
   else page = <Inicio />;
   return (
     <>

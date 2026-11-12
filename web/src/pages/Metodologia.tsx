@@ -118,22 +118,25 @@ export function Metodologia() {
           <ol>
             <li><strong>Reparto legal</strong> (art. 163 LOREG): fuera las candidaturas por debajo del 3 % de los votos válidos de la provincia (los blancos cuentan como válidos); el resto, por D'Hondt; los empates se deciden por más votos.</li>
             <li>
-              <strong>Escenario por defecto:</strong> el voto de 2023 en tu provincia. Frente Amplio y Podemos, que en 2023 iban juntos en Sumar, se
-              reparten ese voto según su peso en las europeas de 2024 en esa provincia; las candidaturas que no concurrieron en 2023 aparecen
-              "sin base". <strong>Con una encuesta:</strong> el voto de cada partido en tu provincia es el de 2023 multiplicado por el cociente
-              entre su estimación nacional y su resultado nacional (<em>swing</em> proporcional); los partidos que la encuesta no recoge conservan
-              su voto de 2023. Si una encuestadora no da Compromís por separado, su cifra de «Frente Amplio» se toma como el espacio completo
+              <strong>Por defecto, media de encuestas:</strong> tomamos la última encuesta de cada empresa con trabajo de campo en los
+              últimos 21 días (en su publicación original), trasladamos cada una a tu provincia y hacemos la media simple, sin ponderar.
+              <strong> Trasladar una encuesta a tu provincia:</strong> si un partido tiene en la encuesta nacional un 10 % más de voto que en
+              2023, le damos un 10 % más de voto en cada provincia (en estadística se llama <em>swing</em> proporcional); los partidos que la
+              encuesta no recoge conservan su voto de 2023. <strong>Resultados de 2023:</strong> el voto real de 2023 en tu provincia. Frente
+              Amplio y Podemos, que en 2023 iban juntos en Sumar, se reparten ese voto según su peso en las europeas de 2024 en esa provincia;
+              las candidaturas que no se presentaron en 2023 aparecen «sin datos para estimarla». Durante la veda de encuestas (24 al 29 de
+              noviembre) solo queda este último. Si una encuestadora no da Compromís por separado, su cifra de «Frente Amplio» se toma como el espacio completo
               (Frente Amplio y sus confluencias, Compromís incluido).
             </li>
             <li>
-              <strong>Incertidumbre:</strong> 4.000 simulaciones en las que el voto de cada candidatura varía con un error log-normal σ = k/√cuota.
+              <strong>Probabilidad de escaño:</strong> 4.000 simulaciones en las que el voto de cada candidatura varía con un error log-normal σ = k/√cuota.
               k está <a href={gh('docs/research/calibracion_incertidumbre.md')}>calibrado con las elecciones de 2015 a 2023</a>: 0,08 con
               encuestas (error real de las encuestas finales más la desviación provincial) y 0,15 con la base de 2023 (cuánto cambia el voto de
               una elección a otra). Con k = 0,08, un partido del 30 % varía ±4,4 puntos y uno del 3 % ±1,4. En una prueba retrospectiva sobre
               las elecciones de 2015 a 2023, los casos a los que el modelo calibrado daba alrededor de un 84 % ganaron escaño el 84 % de las veces. La probabilidad de escaño es la
               fracción de simulaciones en que lo obtiene.</li>
             <li><strong>Coste de un escaño:</strong> votos de la candidatura entre sus escaños, en tu provincia y en toda España en 2023, y votos adicionales que le faltarían para el primer o el siguiente escaño.</li>
-            <li><strong>Alternativa:</strong> si tu opción tiene menos de un 50 % de probabilidad, te mostramos la primera de tus siguientes preferencias (del paso 1 o de tu orden manual; las coaliciones cuentan para los partidos que las integran) que supera ese 50 % en tu provincia. Votar a quien prefieres siempre es legítimo: los votos cuentan también para la financiación pública y como señal política.</li>
+            <li><strong>Alternativa:</strong> solo si nos das un orden de preferencia (el del paso 1, de más a menos afinidad, o el que pongas a mano). Si tu opción tiene menos de un 50 % de probabilidad de escaño en tu provincia, te señalamos la primera de ese orden, sin contar tu voto, que supera ese 50 % (las coaliciones cuentan para los partidos que las integran). Sin orden de preferencia no sugerimos nada. Votar a quien prefieres siempre es legítimo: los votos cuentan también para la financiación pública y como señal política.</li>
           </ol>
           <p>
             Comprobación: con cada encuesta, el total de escaños de nuestro modelo en el escenario central queda a 0–6 escaños de la proyección
