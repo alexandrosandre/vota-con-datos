@@ -52,6 +52,8 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   (protocolo `docs/prompts/1b_seleccion_compromisos.md`). Tanda 1 en curso: PSOE, Vox, Frente Amplio,
   Podemos, Junts, EH Bildu. Tanda 2: PSC, Compromís, UPN-PP, Ara Més-FA, UPC. Después, revisión
   independiente y auditoría de coherencia con los programas ya analizados.
+  12-nov noche: publicados con revisión independiente FA, Vox, Junts, EH Bildu, Podemos, PSOE, PSC y UPN-PP;
+  pendientes Compromís, Ara Més-FA y UPC, y la auditoría de coherencia entre todos (incl. recuento de «veces» de Vox).
 - [ ] **5. [Yo] Quitar la etiqueta «versión provisional» del paso 1** (9-nov: protocolo v2 con
   propuestas públicas en primera persona de líderes nacionales y regionales, incl. precampaña; 75 posiciones) solo cuando PP, PSOE, Vox,
   Frente Amplio y Podemos tengan posición documentada en al menos la mitad de las 30 afirmaciones
