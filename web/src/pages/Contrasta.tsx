@@ -123,8 +123,8 @@ function TarjetaPropuesta({ p, n, partidoId }: { p: Propuesta; n: number; partid
             {p.url && (
               <>
                 {' · '}
-                <a href={p.url} target="_blank" rel="noopener">
-                  {p.medio ?? 'fuente'}
+                <a href={p.url} target="_blank" rel="noopener" title={p.medio ?? undefined}>
+                  ver la fuente{p.medio && !(p.formato ?? '').includes(p.medio.split(' (')[0]) ? ` (${p.medio})` : ''}
                 </a>
               </>
             )}

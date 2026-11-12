@@ -22,7 +22,7 @@ export function Creditos() {
         {c.map((x) => (
           <li key={x.src} style={{ display: 'flex', gap: 12, alignItems: 'center', margin: '10px 0' }}>
             <img src={`${base}${x.src}`} alt="" width={40} height={40} loading="lazy" style={{ width: 40, height: 40, objectFit: 'cover', borderRadius: 6, background: '#fff' }} />
-            <span>
+            <span style={{ minWidth: 0, overflowWrap: 'anywhere' }}>
               <strong>{x.que}</strong>
               <br />
               <span class="muted" style={{ fontSize: '0.88rem' }}>
