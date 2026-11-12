@@ -154,5 +154,5 @@ export interface Propuesta {
 export interface DatosFase3 {
   meta: { actualizado: string; modelo: string; nota?: string };
   criterios: Criterio[];
-  partidos: Record<string, { estado: 'evaluado' | 'pendiente'; base?: 'programa' | 'compromisos'; motivo?: string; revision?: number; compromisos_total?: number; busqueda?: string | null; propuestas: Propuesta[] }>;
+  partidos: Record<string, { estado: 'evaluado' | 'pendiente'; base?: 'programa' | 'compromisos'; motivo?: string; revision?: number; compromisos_total?: number; busqueda?: string | null; propuestas: Propuesta[]; complemento?: Propuesta[] }>;
 }

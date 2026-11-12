@@ -44,3 +44,13 @@ automáticamente contra ese texto.
 
 Reglas: no inventes ni completes; una cita que no aparezca literalmente en su fuente invalida el
 compromiso. Mismo estándar para todos los partidos.
+
+---
+
+**Partidos con programa: complemento.** Si el partido sí tiene programa analizado, usa este mismo
+protocolo para buscar compromisos de sus líderes **que no estén en el programa** (comprueba contra
+el texto del programa que la medida no figura, ni con otras palabras) y que el partido presente
+como importantes (los anuncia el candidato, los repite, son titulares de campaña). Hasta 4. Escribe
+`seleccion.json` y `evaluacion.json` en `data/programas/{ID}/compromisos/` con
+`"base": "complemento"`; en la web aparecen tras las 12 del programa, en una sección aparte. Si no
+hay ninguno, escribe `seleccion.json` con `prioridades` vacío y no escribas evaluación.

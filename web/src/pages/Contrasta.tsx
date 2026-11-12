@@ -326,6 +326,22 @@ export function Contrasta() {
             {datos.propuestas.map((x, i) => (
               <TarjetaPropuesta key={x.id} p={x} n={i + 1} partidoId={sel} />
             ))}
+            {(datos.complemento?.length ?? 0) > 0 && (
+              <>
+                <div class="card">
+                  <h2 class="h3" style={{ margin: 0 }}>
+                    Además del programa: compromisos de sus líderes
+                  </h2>
+                  <p class="muted" style={{ fontSize: '0.9rem', margin: '8px 0 0' }}>
+                    Medidas importantes que sus líderes han prometido en público para esta legislatura y que no figuran en el programa. Se
+                    analizan con los mismos criterios y la misma revisión independiente.
+                  </p>
+                </div>
+                {datos.complemento!.map((x, i) => (
+                  <TarjetaPropuesta key={x.id} p={x} n={datos.propuestas.length + i + 1} partidoId={sel} />
+                ))}
+              </>
+            )}
           </>
         )}
         {sel && <Promesas id={sel} />}
