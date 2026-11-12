@@ -32,5 +32,78 @@
   "Selección, mismo estándar entre partidos: «prohibir por lei a compra para a especulación» (Rego, notas oficiales del BNG del 10 y 12-nov, destacada en el ladillo del 12-nov) se descarta porque solo consta en estilo indirecto. No está en el programa (que solo prevé medidas fiscales contra el uso especulativo, p. 13). El proyecto acepta notas oficiales en estilo indirecto como documento del partido (upc-c01, upc-c03, ara_mes_fa-c05/c06, fa-c03, junts-c03, psc-c03), y medidas equivalentes se evaluaron en otros partidos (podemos-02, compromis-01, eh_bildu-05). Con ese criterio sería una segunda prioridad del complemento. No se añade en esta revisión porque exige una evaluación completa; decisión editorial pendiente.",
   "bng-c01: «topar os prezos das hipotecas» no precisa si se limita el tipo, el diferencial o la cuota; la evaluación lo dice en cada criterio y se basa en las formas aplicadas (Hungría, Francia)."
  ],
- "complementos_vacios_comprobados": "Partidos con programa y complemento vacío (comprobado por esta misma revisión): ERC, SALF y Adelante Andalucía descartan bien; se cotejaron contra el texto del programa al menos tres «ya está en el programa, p. N» por partido y todos coinciden (ERC: ITP p. 19 medida 59, fiscalidad de banca y grandes patrimonios p. 22 medidas 74-76, 180 plazas judiciales por reincidencia p. 43; SALF: macrocárcel p. 8, «La corrupción no prescribe» p. 25, 35.000 € libres de IRPF p. 12, cero impuestos primera vivienda p. 5, cláusula de penalización p. 4; Adelante Andalucía: Sareb p. 49, red de supermercados públicos p. 68 medida 313, peaje de la AP-7 p. 131 medida 695, fin del turno partido)."
+ "complementos_vacios_comprobados": "Partidos con programa y complemento vacío (comprobado por esta misma revisión): ERC, SALF y Adelante Andalucía descartan bien; se cotejaron contra el texto del programa al menos tres «ya está en el programa, p. N» por partido y todos coinciden (ERC: ITP p. 19 medida 59, fiscalidad de banca y grandes patrimonios p. 22 medidas 74-76, 180 plazas judiciales por reincidencia p. 43; SALF: macrocárcel p. 8, «La corrupción no prescribe» p. 25, 35.000 € libres de IRPF p. 12, cero impuestos primera vivienda p. 5, cláusula de penalización p. 4; Adelante Andalucía: Sareb p. 49, red de supermercados públicos p. 68 medida 313, peaje de la AP-7 p. 131 medida 695, fin del turno partido).",
+ "revision_bng_c02": {
+  "aprobado": true,
+  "revisor": "Claude (Anthropic), pasada independiente",
+  "fecha": "2026-11-12",
+  "alcance": "Solo bng-c02: el compromiso, su prioridad, la retirada de «descartados» y los cambios en «nota» y «busqueda» de seleccion.json, y la propuesta bng-c02 (8 criterios) de evaluacion.json. Se abrieron con una petición normal la entrevista de Infobae (HTTP 200; la cita está literal en el HTML, datePublished 10-11-2026, dateCreated 5-11-2026), las dos notas del BNG (10 y 12-nov), el PDF del programa (mismo SHA-256 que la copia local) y las 21 URL citadas en la evaluación. 20 respondieron 200; el PDF de la GAO devolvió 403 a curl y se leyó con otra petición normal (WebFetch), sin sortear protecciones: 74 estudios; «may have contributed to increasing home prices and rents and helped stabilize neighborhoods»; efecto sobre el acceso a la propiedad «unclear»; mayo de 2024. Comprobado: art. 1 del RDL 29/2026 (hasta 31-12-2030, 70 % del valor de mercado, entidades que compran por debajo de tasación y personas jurídicas grandes tenedoras, excepción de vivienda habitual asequible o social; BOE 7-10, en vigor 8-10); RDL 26/2026 (hasta 2028, derogado por Resolución de 2-10-2026); iniciativa 130/000060 «Concluido - (Convalidado)» desde el 12-11-2026; Ley 12/2023 art. 3.k; STC 93/2015 (BOE 19-6-2015); fallos de Konle, Festersen y Libert; art. 63 TFUE y Protocolo n.º 32; Nós Diario (2-10, voto a favor del BNG); 73,3 % y 16,7 % (INE, API de la tabla 9997, 2025); 61 % (Europa Press, 23-4-2026); Du y Zhang (7,69); Diamond y otros (2019). SHA-256 recalculados: infobae_rego_20261110.txt, bng_vivenda_coruna_20261110.txt y bng_rego_vivenda_20261112.txt coinciden con los anotados; seleccion_sha256 coincidía antes de los cambios y se recalculó después. verify_quotes bng: 437 citas, 0 no encontradas.",
+  "seleccion": "La cita es literal en Infobae, en primera persona de Néstor Rego («defendemos»), cabeza de lista por A Coruña, en una entrevista de campaña (hecha hacia el 5-nov y publicada el 10-nov, después de la convocatoria) en respuesta a las medidas concretas del BNG en vivienda. Es una medida concreta con dos partes: prohibir comprar vivienda a fondos buitre y grandes inmobiliarias y limitar las compraventas entre particulares al uso residencial. No está en el programa ni en el decálogo: buscados «especula», «compra», «adquir», «fondos», «grandes propietarios/tenedor», «inmobiliar», «prohib», «uso residencial», «residencia habitual», «tanteo/retracto», «investidor» y «estranxeir»; el programa combate la especulación con fiscalidad (p. 13), expropiación de vivienda pública comprada por fondos (p. 12), alquiler forzoso o canon a la vivienda vacía de grandes propietarios (p. 14) y freno al alquiler turístico o de temporada (p. 12), y su única «compra de vivenda para uso residencial» se refiere a los abusos bancarios en la hipoteca (p. 14); las páginas citadas son correctas. «Veces»: las tres ocasiones son actos distintos, pero las dos notas del BNG solo recogen, en estilo indirecto, prohibir por ley la especulación o la compra para especular, sin decir a quién; con el criterio aplicado a la nota de EH Bildu con LAB (eh_bildu-c05), no cuentan: n pasa de 3 a 1. La prioridad se mantiene con la misma regla que eh_bildu-05 (una ocasión): la anuncia el cabeza de lista y el partido destaca el objetivo en el ladillo de su nota oficial del 12-nov; se reescribe la justificación, que decía que la incluía «en las tres ocasiones» y que era «la misma evidencia» que bng-c01.",
+  "igual_estandar": "Valoración M/M/F/M/M/M/M/M, igual que eh_bildu-05 y compromis-01 tras la revisión posterior. Encaje legal «mixta», de acuerdo con la regla de coherencia: la primera parte es una prohibición para una categoría de compradores (como compromis-01 y eh_bildu-05) y la segunda depende de una definición pendiente. podemos-02 es «desfavorable» porque su medida es expresamente comprar «solamente [...] para vivir», es decir, una obligación de residir como la de Festersen; Rego dice «uso residencial», que en el lenguaje urbanístico y en la Ley 12/2023 incluye la vivienda alquilada y la residencia secundaria, y no ha dicho que obligue a residir. El texto explica las dos lecturas (chocaría con Festersen si obligara a residir; examen distinto si solo excluye usos no residenciales). Si el BNG precisara que «uso residencial» significa residir el comprador, la valoración debería pasar a «desfavorable» como podemos-02. Financiación «favorable», según la regla b de la revisión posterior: medida regulatoria con instrumento definido (prohibición por ley), como compromis-01, podemos-02, ara_mes_fa-08 y eh_bildu-05. Concreción «mixta»: define la medida pero no la cuantía, el plazo ni la definición de sus categorías. Los textos de evidencia, internacional, antecedentes, beneficiarios y largo plazo usan las mismas fuentes y frases que eh_bildu-05; no hay adjetivos de valor.",
+  "cambios": [
+   {
+    "propuesta": "bng-c02",
+    "criterio": "seleccion: veces",
+    "antes": "n = 3; las notas del BNG del 10 y 12-nov con «cuenta»: true",
+    "despues": "n = 1; esas dos notas con «cuenta»: false y nota que lo explica",
+    "motivo": "solo recogen en estilo indirecto prohibir por ley la especulación o la compra para especular, sin decir a quién; con el mismo criterio, la nota de EH Bildu con LAB no cuenta para eh_bildu-c05"
+   },
+   {
+    "propuesta": "bng-c02",
+    "criterio": "seleccion: prioridad (justificacion)",
+    "antes": "la incluye en las tres ocasiones de campaña [...] Es la misma evidencia que justifica bng-c01",
+    "despues": "la anuncia el cabeza de lista en Infobae; las notas del 10 y 12-nov destacan el objetivo (ladillo del 12-nov) en estilo indirecto y sin precisar a quién, por lo que no cuentan como ocasiones",
+    "motivo": "ajustar la justificación a la evidencia: la medida concreta solo consta en la entrevista"
+   },
+   {
+    "propuesta": "bng-c02",
+    "criterio": "seleccion: nota",
+    "antes": "Dos compromisos cumplen las tres condiciones (cita literal en primera persona, repetido en campaña, ausente del programa)",
+    "despues": "Dos compromisos cumplen las condiciones (cita literal en primera persona, presentado como importante en campaña, ausente del programa) [...] En bng-c02 la medida solo se define en esa entrevista",
+    "motivo": "bng-c02 no se repite con la medida definida"
+   },
+   {
+    "propuesta": "bng-c02",
+    "criterio": "concrecion",
+    "antes": "las notas del BNG del 10 y 12-nov la recogen como prohibir «por lei» la especulación o la compra para especular",
+    "despues": "las notas del BNG del 10 y 12-nov solo recogen, en estilo indirecto y sin decir a quién se aplicaría, prohibir «por lei» la especulación o la compra para especular",
+    "motivo": "las notas no recogen la medida definida, solo el objetivo"
+   },
+   {
+    "propuesta": "bng-c02",
+    "criterio": "legal",
+    "antes": "la obligación de residir en la finca comprada (Festersen, C-370/05)",
+    "despues": "la obligación de que el comprador de un predio rústico fije en él su residencia habitual (Festersen, C-370/05)",
+    "motivo": "precisión: el fallo se refiere a predios rústicos («supedite la adquisición de un predio rústico al requisito de que el comprador establezca en él su residencia habitual»), y es la analogía en la que descansa la lectura desfavorable de la segunda parte"
+   },
+   {
+    "propuesta": "bng-c02",
+    "criterio": "internacional",
+    "antes": "Según el Gobierno neerlandés (15-10-2026); título de la fuente: (15-10-2026)",
+    "despues": "Según el Gobierno neerlandés (16-10-2026); título de la fuente: (16-10-2026)",
+    "motivo": "la página muestra «Nieuwsbericht 16-10-2026» y DCTERMS.issued 2026-10-16; el 15 solo figura en la ruta de la URL"
+   },
+   {
+    "propuesta": "bng-c02",
+    "criterio": "largo_plazo",
+    "antes": "la retirada de viviendas del alquiler para venderlas a propietarios residentes encareció los alquileres de mercado a largo plazo, según sus autores",
+    "despues": "[...] probablemente encareció los alquileres de mercado a largo plazo, según sus autores",
+    "motivo": "el resumen del artículo dice «likely drove up market rents in the long run»"
+   },
+   {
+    "propuesta": "bng-c02",
+    "criterio": "seleccion_sha256",
+    "antes": "685e622e8812aa575e7f19093a3817f62fbc2d76ff9a304cb481528c47c39a0c",
+    "despues": "cc300e13072beff5ddf1a9b79c83ec515fa9fc178fe3f332c58db6abf303e194",
+    "motivo": "recalculado tras modificar seleccion.json"
+   }
+  ],
+  "dudas": [
+   "Encaje legal de la segunda parte («limitando las operaciones de compraventa entre particulares al uso residencial»): se mantiene «mixta» porque Rego no dice que obligue al comprador a residir; es un caso frontera frente a podemos-02. Si se leyera como «comprar solo para vivir», la regla de coherencia daría «desfavorable».",
+   "Fuera del alcance de esta revisión: la justificación de la prioridad de bng-c01 dice que el tope a las hipotecas «es la única medida de ese paquete que no figura en el programa», y el paquete del ladillo del 12-nov incluye también «prohibir a compra para especulación» (bng-c02), que tampoco figura. Conviene corregir esa frase.",
+   "Fuera del alcance: compromis-01 y eh_bildu-05 fechan la nota del Gobierno neerlandés el 15-10-2026, y la página la publica el 16-10-2026; ara_mes_fa-08 dice «octubre de 2026». Lo mismo con «encareció» sin «probablemente» (Diamond y otros) en eh_bildu-05 y podemos-02, y con la descripción de Festersen sin «predio rústico» en otros textos.",
+   "La fecha de bng-c02 es la de publicación (10-nov); según los metadatos de Infobae, la entrevista se creó el 5-nov en el Congreso. Ambas son posteriores a la convocatoria, así que no cambia nada."
+  ],
+  "nota_analista": "Tras la revisión, el analista corrigió en la justificación de bng-c01 la frase «la única medida de ese paquete que no figura en el programa» (señalada en dudas), y se recalculó seleccion_sha256."
+ }
 }

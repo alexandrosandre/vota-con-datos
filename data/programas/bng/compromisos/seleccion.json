@@ -3,7 +3,7 @@
  "base": "complemento",
  "modelo": "Claude (Anthropic)",
  "fecha": "2026-11-12",
- "nota": "El BNG tiene programa oficial analizado (data/programas/bng/, 91 páginas). Aquí se buscan compromisos de sus líderes (Néstor Rego, cabeza de lista por A Coruña y diputado; Ana Pontón, portavoz nacional; Carme da Silva, Olalla Rodil y Noa Presas, cabezas de lista por Pontevedra, Lugo y Ourense) que el partido presente como importantes y que NO estén en el programa. Cada medida candidata se buscó en el texto del programa (data/sources/programas/bng/26_bng_xerais_documentos_programa_electoral.txt), también con otras palabras. El programa es muy amplio: los diez puntos del decálogo «Axenda Galega» del 7-nov y casi todo lo que los líderes han anunciado en campaña (pensiones, salario mínimo, jornada, trenes de Lugo, A-56, AP-9, topes a los combustibles, vivienda de la Sareb) ya figuran en él. Solo un compromiso cumple las tres condiciones (cita literal en primera persona, repetido en campaña, ausente del programa): el tope al precio de las hipotecas que reclama Rego. Las propuestas para la Xunta (compra de 1.400 pisos vacíos con 240 M€) son del ámbito autonómico y no de esta legislatura de las Cortes. Hay una sola prioridad porque no se encontraron más compromisos que cumplan esas condiciones.",
+ "nota": "El BNG tiene programa oficial analizado (data/programas/bng/, 91 páginas). Aquí se buscan compromisos de sus líderes (Néstor Rego, cabeza de lista por A Coruña y diputado; Ana Pontón, portavoz nacional; Carme da Silva, Olalla Rodil y Noa Presas, cabezas de lista por Pontevedra, Lugo y Ourense) que el partido presente como importantes y que NO estén en el programa. Cada medida candidata se buscó en el texto del programa (data/sources/programas/bng/26_bng_xerais_documentos_programa_electoral.txt), también con otras palabras. El programa es muy amplio: los diez puntos del decálogo «Axenda Galega» del 7-nov y casi todo lo que los líderes han anunciado en campaña (pensiones, salario mínimo, jornada, trenes de Lugo, A-56, AP-9, topes a los combustibles, vivienda de la Sareb) ya figuran en él. Dos compromisos cumplen las condiciones (cita literal en primera persona, presentado como importante en campaña, ausente del programa): el tope al precio de las hipotecas (bng-c01, repetido en campaña) y la prohibición de comprar vivienda a fondos y grandes inmobiliarias, con la limitación de las compraventas entre particulares al uso residencial (bng-c02, añadido el 12-nov tras localizar la cita literal de Rego en Infobae; antes figuraba en «descartados» porque solo constaba en estilo indirecto). En bng-c02 la medida solo se define en esa entrevista: las notas del BNG del 10 y 12-nov recogen, de forma genérica y en estilo indirecto, prohibir por ley la especulación o la compra para especular, y la del 12-nov lo destaca en un ladillo. Las propuestas para la Xunta (compra de 1.400 pisos vacíos con 240 M€) son del ámbito autonómico y no de esta legislatura de las Cortes. Hay dos prioridades porque no se encontraron más compromisos que cumplan esas condiciones.",
  "compromisos": [
   {
    "id": "bng-c01",
@@ -59,13 +59,99 @@
      }
     ]
    }
+  },
+  {
+   "id": "bng-c02",
+   "area": "vivienda",
+   "resumen": "Impedir por ley la especulación con la vivienda: prohibir que los fondos buitre y las grandes inmobiliarias compren viviendas y limitar las compraventas entre particulares al uso residencial.",
+   "cita": "También defendemos impedir por ley que la vivienda sea objeto de especulación, prohibiendo a los fondos buitre y a las grandes inmobiliarias comprar viviendas y limitando las operaciones de compraventa entre particulares al uso residencial.",
+   "cita_traduccion": null,
+   "quien": "Néstor Rego (cabeza de lista del BNG al Congreso por A Coruña y diputado)",
+   "formato": "entrevista (Infobae)",
+   "fecha": "2026-11-10",
+   "url": "https://www.infobae.com/espana/2026/11/10/nestor-rego-candidato-del-bng-al-congreso-feijoo-no-es-un-buen-gestor-salvo-para-su-familia-y-las-empresas-amigas/",
+   "medio": "Infobae",
+   "fuente_local": "data/sources/compromisos/bng/infobae_rego_20261110.txt",
+   "sha256": "4b31cdc22ee1e54dfd72a93e8104d190b2dc880b5ba0e6023fb6d935139930cd",
+   "cuantificado": false,
+   "nota": "Entrevista de pregunta y respuesta (Clara Arias) publicada el 10-nov, en plena precampaña del 29-N; Rego responde en primera persona («defendemos») a la pregunta sobre las medidas concretas del BNG en vivienda. No define «fondos buitre» ni «grandes inmobiliarias» (la Ley 12/2023, art. 3.k, solo define «gran tenedor»: más de diez inmuebles urbanos de uso residencial o más de 1.500 m²), ni qué se entiende por «uso residencial» (si incluye comprar para alquilar como vivienda habitual o una segunda residencia), ni excepciones o plazo. Antes se había descartado porque solo constaba en estilo indirecto en las notas del BNG; esta entrevista aporta la cita literal.",
+   "no_en_programa": {
+    "busqueda": "Términos buscados en el programa y en el decálogo: «especula», «compra», «adquir», «fondos», «investimento», «grandes propietarios», «grandes tenedor», «inmobiliar», «prohib», «uso residencial», «residencia», «tanteo», «retracto».",
+    "resultado": "El programa combate la especulación con medidas fiscales (eliminar deducciones del IRPF, recargos en el Impuesto de Sociedades a fondos y SOCIMI que incumplan la función social de la vivienda, medidas fiscales contra los usos especulativos, p. 13), con la expropiación forzosa de vivienda de promoción pública adquirida por fondos (p. 12), con el alquiler forzoso, la expropiación temporal o un canon a la vivienda vacía de grandes propietarios (p. 14) y frenando el paso a alquiler de temporada, por habitaciones o turístico (p. 12). No prohíbe ni limita la compra de vivienda a ningún comprador ni limita las compraventas a un uso: la única mención de la «compra de vivenda para uso residencial» se refiere a los abusos bancarios en su financiación (p. 14). El decálogo del 7-nov tampoco lo recoge."
+   },
+   "veces": {
+    "n": 1,
+    "nota": "Una ocasión que define la medida: la entrevista de Infobae (publicada el 10-nov). Las notas del BNG del encuentro de A Coruña (10-nov) y de la comparecencia del 12-nov solo recogen, en estilo indirecto, prohibir por ley «a especulación da vivenda» o «a compra para a especulación», sin decir a quién se prohibiría comprar ni mencionar las compraventas entre particulares; con el mismo criterio que la nota de EH Bildu con LAB (eh_bildu-c05), no cuentan como ocasiones, aunque muestran que el partido destaca el objetivo.",
+    "ocasiones": [
+     {
+      "fecha": "2026-11-10",
+      "ocasion": "entrevista en Infobae (cita principal)",
+      "url": "https://www.infobae.com/espana/2026/11/10/nestor-rego-candidato-del-bng-al-congreso-feijoo-no-es-un-buen-gestor-salvo-para-su-familia-y-las-empresas-amigas/",
+      "medio": "Infobae",
+      "fuente_local": "data/sources/compromisos/bng/infobae_rego_20261110.txt",
+      "cita": "prohibiendo a los fondos buitre y a las grandes inmobiliarias comprar viviendas",
+      "sha256": "4b31cdc22ee1e54dfd72a93e8104d190b2dc880b5ba0e6023fb6d935139930cd",
+      "cuenta": true,
+      "nota_revision": "cita principal"
+     },
+     {
+      "fecha": "2026-11-10",
+      "ocasion": "encuentro sobre vivienda con vecinos de la Agra do Orzán (A Coruña), con Ana Pontón; nota del BNG en estilo indirecto",
+      "url": "https://www.bng.gal/novas/ana-ponton-propon-compra-masiva-vivenda-baleira-crear-gran-parque-publico-pisos-alugueiro-social/20261110170713043856.html",
+      "medio": "BNG (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/bng/bng_vivenda_coruna_20261110.txt",
+      "cita": "que se prohiba por lei a especulación da vivenda",
+      "sha256": "b48881b627b0e289dd3445f83e7f51a6dc9f3939a0f56c8cff604778dce06308",
+      "cuenta": false,
+      "nota_revision": "objetivo genérico en estilo indirecto, sin decir a quién se prohibiría comprar"
+     },
+     {
+      "fecha": "2026-11-12",
+      "ocasion": "comparecencia tras la huelga general; nota del BNG en estilo indirecto",
+      "url": "https://www.bng.gal/novas/nestor-rego-reclama-medidas-acceso-vivenda-garante-que-bng-mais-forte-loitara/20261112135521043888.html",
+      "medio": "BNG (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/bng/bng_rego_vivenda_20261112.txt",
+      "cita": "prohibir por lei a compra para a especulación",
+      "sha256": "49f898a71847a767a3175f676fd66f5abcd796982cad1bdd08fb4acbc5d7c7c7",
+      "cuenta": false,
+      "nota_revision": "objetivo genérico en estilo indirecto, sin decir a quién se prohibiría comprar"
+     }
+    ]
+   }
   }
  ],
  "prioridades": [
   {
    "id": "bng-c01",
-   "justificacion": "El cabeza de lista por A Coruña, el único diputado saliente del BNG, lo incluye en las tres ocasiones de campaña en que expone las medidas de vivienda del partido (entrevista del 10-nov, encuentro de A Coruña del 10-nov y comparecencia del 12-nov), y la nota oficial del 12-nov lo destaca en un ladillo («Topar os prezos, prohibir a compra para especulación...»). La vivienda es uno de los ejes de la campaña del BNG (encuentro monográfico con Pontón el 10-nov). Es la única medida de ese paquete que no figura en el programa.",
+   "justificacion": "El cabeza de lista por A Coruña, el único diputado saliente del BNG, lo incluye en las tres ocasiones de campaña en que expone las medidas de vivienda del partido (entrevista del 10-nov, encuentro de A Coruña del 10-nov y comparecencia del 12-nov), y la nota oficial del 12-nov lo destaca en un ladillo («Topar os prezos, prohibir a compra para especulación...»). La vivienda es uno de los ejes de la campaña del BNG (encuentro monográfico con Pontón el 10-nov). Con bng-c02 (prohibir la compra para especular), son las únicas medidas de ese paquete que no figuran en el programa.",
    "fuentes": [
+    {
+     "url": "https://www.bng.gal/novas/nestor-rego-reclama-medidas-acceso-vivenda-garante-que-bng-mais-forte-loitara/20261112135521043888.html",
+     "medio": "BNG (nota de prensa)",
+     "fecha": "2026-11-12",
+     "fuente_local": "data/sources/compromisos/bng/bng_rego_vivenda_20261112.txt",
+     "sha256": "49f898a71847a767a3175f676fd66f5abcd796982cad1bdd08fb4acbc5d7c7c7"
+    },
+    {
+     "url": "https://www.bng.gal/novas/ana-ponton-propon-compra-masiva-vivenda-baleira-crear-gran-parque-publico-pisos-alugueiro-social/20261110170713043856.html",
+     "medio": "BNG (nota de prensa)",
+     "fecha": "2026-11-10",
+     "fuente_local": "data/sources/compromisos/bng/bng_vivenda_coruna_20261110.txt",
+     "sha256": "b48881b627b0e289dd3445f83e7f51a6dc9f3939a0f56c8cff604778dce06308"
+    }
+   ]
+  },
+  {
+   "id": "bng-c02",
+   "justificacion": "La anuncia en primera persona el cabeza de lista por A Coruña, el único diputado saliente del BNG, al responder en Infobae (10-nov) por las medidas concretas del partido en vivienda. El partido destaca el objetivo en sus notas oficiales: la del encuentro de A Coruña (10-nov) recoge que Rego pidió que «se prohiba por lei a especulación da vivenda», y la del 12-nov lo lleva a su ladillo («Topar os prezos, prohibir a compra para especulación...»); ambas lo hacen en estilo indirecto y sin precisar a quién se aplicaría, por lo que no cuentan como ocasiones. La vivienda es uno de los ejes de la campaña del BNG (encuentro monográfico con Pontón el 10-nov).",
+   "fuentes": [
+    {
+     "url": "https://www.infobae.com/espana/2026/11/10/nestor-rego-candidato-del-bng-al-congreso-feijoo-no-es-un-buen-gestor-salvo-para-su-familia-y-las-empresas-amigas/",
+     "medio": "Infobae",
+     "fecha": "2026-11-10",
+     "fuente_local": "data/sources/compromisos/bng/infobae_rego_20261110.txt",
+     "sha256": "4b31cdc22ee1e54dfd72a93e8104d190b2dc880b5ba0e6023fb6d935139930cd"
+    },
     {
      "url": "https://www.bng.gal/novas/nestor-rego-reclama-medidas-acceso-vivenda-garante-que-bng-mais-forte-loitara/20261112135521043888.html",
      "medio": "BNG (nota de prensa)",
@@ -84,13 +170,6 @@
   }
  ],
  "descartados": [
-  {
-   "medida": "Prohibir por ley la compra de vivienda con fines especulativos (Rego, 10 y 12-nov)",
-   "url": "https://www.bng.gal/novas/nestor-rego-reclama-medidas-acceso-vivenda-garante-que-bng-mais-forte-loitara/20261112135521043888.html",
-   "fuente_local": "data/sources/compromisos/bng/bng_rego_vivenda_20261112.txt",
-   "sha256": "49f898a71847a767a3175f676fd66f5abcd796982cad1bdd08fb4acbc5d7c7c7",
-   "motivo": "Solo consta en estilo indirecto en las notas del BNG («que se prohiba por lei a especulación da vivenda», «prohibir por lei a compra para a especulación»); no se encontró cita literal de un líder en la entrevista de El Salto ni en otras fuentes. Sin cita en primera persona no entra (prompt 1b)."
-  },
   {
    "medida": "Compra masiva de vivienda vacía para alquiler social (Pontón, 10-nov; 240 M€ para comprar unos 1.400 pisos)",
    "url": "https://www.bng.gal/novas/ana-ponton-propon-compra-masiva-vivenda-baleira-crear-gran-parque-publico-pisos-alugueiro-social/20261110170713043856.html",
@@ -210,7 +289,8 @@
    "bng.gal: todas las noticias accesibles en /novas/ (páginas 1 a 8, del 14-oct al 12-nov-2026, 120 notas) y el RSS, descargados con una petición normal (HTTP 200) y revisados en busca de propuestas de Néstor Rego, Ana Pontón, Carme da Silva, Olalla Rodil y Noa Presas. La paginación de la web no muestra notas anteriores al 14-oct; para el 6-13 de octubre se hicieron búsquedas abiertas, sin hallar compromisos concretos.",
    "Decálogo «Dez compromisos do BNG» (7-nov) y programa oficial (data/sources/programas/bng/), cotejados medida a medida.",
    "Entrevistas y prensa: El Salto (entrevista a Rego, 10-nov), Demócrata (arranque de campaña, 8-nov), búsquedas abiertas sobre entrevistas de Pontón y Rego en noviembre de 2026 y sobre condiciones de investidura; no se halló otra entrevista de campaña con compromisos nuevos.",
-   "Pistas previas: data/promesas/promesas.json (bng) y data/fase1/codificacion_g*.json (todas las posiciones del BNG proceden del programa; ninguna de campaña)."
+   "Pistas previas: data/promesas/promesas.json (bng) y data/fase1/codificacion_g*.json (todas las posiciones del BNG proceden del programa; ninguna de campaña).",
+   "Revisión del 12-nov: búsqueda de una cita literal en primera persona de Rego o Pontón sobre «prohibir a compra para especulación»; se halló en la entrevista de Infobae a Rego (10-nov, descargada con una petición normal, HTTP 200). Pontón pidió el 28-sep impedir la compra de vivienda por fondos y grandes grupos empresariales, pero como reclamación al decreto del Gobierno, antes de la convocatoria y sin referirse a esta elección, por lo que no cuenta como ocasión."
   ]
  }
 }

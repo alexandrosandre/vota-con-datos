@@ -3,8 +3,8 @@
  "partido": "bng",
  "modelo": "Claude (Anthropic)",
  "fecha": "2026-11-12",
- "seleccion_sha256": "9db94c4ab46cc549dda8a93240fcc43fed7c31711375d2d65bd91ad31b22ec48",
- "nota": "Evaluación de la única prioridad de compromisos/seleccion.json: un compromiso de un líder del BNG que no figura en su programa (se muestra tras las 12 propuestas del programa). «Concreción» se juzga sobre lo que ha dicho Néstor Rego en las tres ocasiones registradas, con la misma rúbrica que un programa. Como Rego no precisa qué se limitaría (tipo de interés, diferencial o cuota), el resto de criterios se valora sobre las formas de tope aplicadas en España y fuera, y se dice en cada texto.",
+ "seleccion_sha256": "64edc5f69d8d1b2ac0dc54fd13da6713755cc20a2cbc71b765f20dcddec753e8",
+ "nota": "Evaluación de las dos prioridades de compromisos/seleccion.json: compromisos de un líder del BNG que no figuran en su programa (se muestran tras las 12 propuestas del programa). «Concreción» se juzga sobre lo que ha dicho Néstor Rego en las ocasiones registradas de cada compromiso, con la misma rúbrica que un programa. En bng-c01, como Rego no precisa qué se limitaría (tipo de interés, diferencial o cuota), el resto de criterios se valora sobre las formas de tope aplicadas en España y fuera, y se dice en cada texto. bng-c02 (añadida el 12-nov) se valora con los mismos criterios que las demás restricciones a la compra de vivienda del análisis (data/fase3/coherencia_2026-11-12b.md).",
  "propuestas": [
   {
    "id": "bng-c01",
@@ -155,6 +155,192 @@
       {
        "url": "https://econpapers.repec.org/RePEc:wbk:wbrwps:8398",
        "titulo": "Ferrari, Masetti y Ren (2018), Interest Rate Caps: The Theory and The Practice, Banco Mundial, Policy Research Working Paper 8398"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "bng-c02",
+   "compromiso": "bng-c02",
+   "titulo": "Prohibir la compra de vivienda a fondos y grandes inmobiliarias y limitar las compraventas al uso residencial",
+   "area": "vivienda",
+   "resumen": "Impedir por ley la especulación con la vivienda: prohibir que los fondos buitre y las grandes inmobiliarias compren viviendas y limitar las compraventas entre particulares al uso residencial.",
+   "cita": "También defendemos impedir por ley que la vivienda sea objeto de especulación, prohibiendo a los fondos buitre y a las grandes inmobiliarias comprar viviendas y limitando las operaciones de compraventa entre particulares al uso residencial.",
+   "cita_traduccion": null,
+   "quien": "Néstor Rego (cabeza de lista del BNG al Congreso por A Coruña y diputado)",
+   "formato": "entrevista (Infobae)",
+   "fecha": "2026-11-10",
+   "url": "https://www.infobae.com/espana/2026/11/10/nestor-rego-candidato-del-bng-al-congreso-feijoo-no-es-un-buen-gestor-salvo-para-su-familia-y-las-empresas-amigas/",
+   "medio": "Infobae",
+   "fuente_local": "data/sources/compromisos/bng/infobae_rego_20261110.txt",
+   "beneficiarios": "Según su planteamiento, quienes compran o alquilan vivienda para vivir en ella (en 2025 el 73,3 % de los hogares residía en vivienda propia y el 16,7 % de alquiler a precio de mercado, INE). No hemos localizado una cifra oficial de cuántas compraventas de vivienda hacen fondos o grandes inmobiliarias, ni de cuántas compraventas entre particulares no tienen uso residencial. El coste recaería en esos compradores y en quienes les venden.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "Rego define la medida en la entrevista de Infobae (10-11-2026): impedir «por ley» la especulación con la vivienda prohibiendo comprar viviendas a los «fondos buitre» y a las «grandes inmobiliarias» y limitando las compraventas entre particulares al «uso residencial»; las notas del BNG del 10 y 12-nov solo recogen, en estilo indirecto y sin decir a quién se aplicaría, prohibir «por lei» la especulación o la compra para especular. No define qué es un fondo buitre o una gran inmobiliaria (la Ley 12/2023 solo define al gran tenedor: más de diez inmuebles residenciales o más de 1.500 m²), qué se entiende por uso residencial (si cabe comprar para alquilar como vivienda habitual o como segunda residencia), qué excepciones tendría ni en qué plazo; es una medida regulatoria sin cuantía. El programa no la recoge.",
+     "fuentes": [
+      {
+       "url": "https://www.infobae.com/espana/2026/11/10/nestor-rego-candidato-del-bng-al-congreso-feijoo-no-es-un-buen-gestor-salvo-para-su-familia-y-las-empresas-amigas/",
+       "titulo": "Infobae, 10-11-2026: entrevista a Néstor Rego (Clara Arias)"
+      },
+      {
+       "url": "https://www.bng.gal/novas/nestor-rego-reclama-medidas-acceso-vivenda-garante-que-bng-mais-forte-loitara/20261112135521043888.html",
+       "titulo": "BNG, 12-11-2026: Néstor Rego reclama medidas para el acceso a la vivienda"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203",
+       "titulo": "Ley 12/2023, de 24 de mayo, por el derecho a la vivienda (texto consolidado, BOE), art. 3.k"
+      },
+      {
+       "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+       "titulo": "BNG, Programa electoral 29N. Xerais 2026 (PDF oficial), pp. 12-14"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "El art. 63 TFUE prohíbe las restricciones a los movimientos de capitales, incluida la compra de inmuebles; el TJUE solo admite límites por objetivos de vivienda u ordenación del territorio si son adecuados y no van más allá de lo necesario, y ha declarado contrarios a esa libertad la autorización previa para evitar segundas residencias (Konle, C-302/97), la obligación de que el comprador de un predio rústico fije en él su residencia habitual (Festersen, C-370/05) y el requisito de «vínculo suficiente» con el municipio (Libert, C-197/11). El Real Decreto-ley 29/2026, convalidado el 12-11-2026, limita hasta 2030 las compras por menos del 70 % del valor de mercado a ciertas entidades y a las personas jurídicas grandes tenedoras, con excepciones, y justifica ese plazo por proporcionalidad. Una prohibición total de compra para una categoría de compradores no ha sido examinada por ningún tribunal; limitar todas las compraventas entre particulares al «uso residencial» chocaría con esa jurisprudencia si obligara al comprador a residir en la vivienda, y plantearía un examen distinto si solo excluyera usos no residenciales. Rego no lo ha precisado. Una limitación general del uso de la propiedad de la vivienda exige ley formal y no decreto-ley (STC 93/2015), y Rego habla de hacerlo «por ley».",
+     "fuentes": [
+      {
+       "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:12016E063",
+       "titulo": "Tratado de Funcionamiento de la UE, art. 63 (libre circulación de capitales), EUR-Lex"
+      },
+      {
+       "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:61997CJ0302",
+       "titulo": "TJUE, sentencia de 1-6-1999, Konle, C-302/97 (Tirol), EUR-Lex"
+      },
+      {
+       "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:62005CJ0370",
+       "titulo": "TJUE, sentencia Festersen, C-370/05 (Dinamarca, obligación de residir), EUR-Lex"
+      },
+      {
+       "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:62011CJ0197",
+       "titulo": "TJUE, sentencia de 8-5-2013, Libert y otros, C-197/11 (Flandes), EUR-Lex"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+       "titulo": "Real Decreto-ley 29/2026, de 6 de octubre, de medidas urgentes para la protección de la función social de la vivienda (BOE)"
+      },
+      {
+       "url": "https://www.congreso.es/es/busqueda-de-iniciativas?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=130%2F000060",
+       "titulo": "Congreso de los Diputados, iniciativa 130/000060 (RDL 29/2026): «Concluido - (Convalidado)» el 12-11-2026"
+      },
+      {
+       "url": "https://www.boe.es/boe/dias/2015/06/19/pdfs/BOE-A-2015-6831.pdf",
+       "titulo": "STC 93/2015, de 14 de mayo (Decreto-ley andaluz 6/2013 de función social de la vivienda), BOE 19-6-2015"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "favorable",
+     "texto": "Es una medida regulatoria sin coste presupuestario directo relevante: prohíbe o limita compras de vivienda. La limitación de compras del Real Decreto-ley 29/2026 (art. 1), también regulatoria, no lleva asociada ninguna partida de gasto, y el informe de tasación lo aporta el comprador. Podría reducir de forma indirecta la recaudación de los impuestos que gravan las compraventas, un efecto del que no hemos localizado estimación, como tampoco del volumen de compras de fondos y grandes inmobiliarias.",
+     "fuentes": [
+      {
+       "url": "https://www.infobae.com/espana/2026/11/10/nestor-rego-candidato-del-bng-al-congreso-feijoo-no-es-un-buen-gestor-salvo-para-su-familia-y-las-empresas-amigas/",
+       "titulo": "Infobae, 10-11-2026: entrevista a Néstor Rego (Clara Arias)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+       "titulo": "Real Decreto-ley 29/2026, de 6 de octubre, de medidas urgentes para la protección de la función social de la vivienda (BOE)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "La revisión de 74 estudios de la Oficina de Rendición de Cuentas del Gobierno de EE. UU. (GAO, 2024) concluye que los grandes inversores pueden haber contribuido a subir los precios y los alquileres de la vivienda unifamiliar, pero también ayudaron a estabilizar barrios tras la crisis financiera, y que su efecto sobre el acceso a la propiedad no está claro. Un estudio sobre China estima que las restricciones a la compra de vivienda redujeron 7,69 puntos el crecimiento anual de los precios en Pekín (Du y Zhang, 2015). No hemos localizado evaluaciones de una prohibición de compra a fondos y grandes inmobiliarias ni de una limitación de todas las compraventas al uso residencial como la que se propone.",
+     "fuentes": [
+      {
+       "url": "https://www.gao.gov/assets/gao-24-106643.pdf",
+       "titulo": "GAO (EE. UU.), GAO-24-106643 (22-5-2024): Rental Housing: Information on Institutional Investment in Single-Family Homes"
+      },
+      {
+       "url": "https://ideas.repec.org/a/eee/econom/v188y2015i2p558-568.html",
+       "titulo": "Du y Zhang (2015), Home-purchase restriction, property tax and housing price in China, Journal of Econometrics 188(2) (ficha RePEc)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Los Países Bajos permiten desde 2022 a los ayuntamientos impedir que los inversores compren viviendas en determinados barrios para alquilarlas («opkoopbescherming»), y la han usado unos 70 municipios. Según el Gobierno neerlandés (16-10-2026), su evaluación concluye que su valor está sobre todo en preservar la habitabilidad de los barrios y que no es un instrumento eficaz para aumentar las posibilidades de compra de quienes acceden a su primera vivienda, por lo que va a restringirse. Dinamarca mantiene, por un protocolo de los Tratados de la UE, su legislación sobre la compra de inmuebles que no son vivienda de residencia permanente, sin evaluación publicada localizada. Ambas son más acotadas que la propuesta, que se aplicaría en toda España.",
+     "fuentes": [
+      {
+       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/15/opkoopbescherming-wordt-gericht-op-leefbaarheid-in-wijken",
+       "titulo": "Gobierno de los Países Bajos (16-10-2026): la «opkoopbescherming» se orienta a la habitabilidad de los barrios tras su evaluación"
+      },
+      {
+       "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:12016E/PRO/32",
+       "titulo": "Protocolo n.º 32 de los Tratados sobre adquisición de bienes inmuebles en Dinamarca, EUR-Lex"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "El Real Decreto-ley 26/2026 limitó la compra de vivienda por menos del 70 % de su valor de tasación a las entidades con objeto social inmobiliario; el BNG anunció su voto a favor de los decretos de vivienda, pero el Congreso lo derogó el 2-10-2026. El Real Decreto-ley 29/2026, en vigor desde el 8-10-2026, recupera la limitación hasta el 31-12-2030 para las entidades que compran por debajo del valor de tasación y las personas jurídicas grandes tenedoras, con excepciones como el destino a alquiler asequible; la Diputación Permanente lo convalidó el 12-11-2026, y ese día Rego calificó de «claramente insuficiente» el paquete del Gobierno. Es demasiado reciente para conocer sus efectos. No hemos localizado en España una limitación de todas las compraventas entre particulares a un uso determinado.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/pdf/2026/BOE-A-2026-20266-consolidado.pdf",
+       "titulo": "Real Decreto-ley 26/2026, de 29 de septiembre (texto consolidado: derogado por acuerdo del Congreso, Resolución de 2-10-2026)"
+      },
+      {
+       "url": "https://www.nosdiario.gal/articulo/politica/rego-acusa-irresponsabilidade-politica-forzas-que-rexeiten-decretos-vivenda/20261002102246268223.html",
+       "titulo": "Nós Diario (2-10-2026): Rego confirma que el BNG votará a favor de los decretos de vivienda"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+       "titulo": "Real Decreto-ley 29/2026, de 6 de octubre, de medidas urgentes para la protección de la función social de la vivienda (BOE)"
+      },
+      {
+       "url": "https://www.congreso.es/es/busqueda-de-iniciativas?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=130%2F000060",
+       "titulo": "Congreso de los Diputados, iniciativa 130/000060 (RDL 29/2026): «Concluido - (Convalidado)» el 12-11-2026"
+      },
+      {
+       "url": "https://www.eldiario.es/politica/diputacion-permanente-pone-colofon-huelga-aprobacion-decreto-ley-vivienda_1_13655575.html",
+       "titulo": "elDiario.es (12-11-2026): la Diputación Permanente y la convalidación del RDL 29/2026"
+      },
+      {
+       "url": "https://www.bng.gal/novas/nestor-rego-reclama-medidas-acceso-vivenda-garante-que-bng-mais-forte-loitara/20261112135521043888.html",
+       "titulo": "BNG, 12-11-2026: Néstor Rego reclama medidas para el acceso a la vivienda"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Los beneficiarios declarados son quienes compran o alquilan vivienda para vivir en ella: en 2025 el 73,3 % de los hogares residía en vivienda propia y el 16,7 % de alquiler a precio de mercado (INE). No hemos localizado una cifra oficial de cuántas compraventas hacen fondos o grandes inmobiliarias; según un informe del Ministerio de Consumo y el CSIC recogido por Europa Press, el 61 % de las viviendas en alquiler pertenece a particulares con dos o más viviendas alquiladas, personas jurídicas y entidades públicas, sin desglose de los grandes tenedores. El coste recaería en esos compradores y en quienes les venden.",
+     "fuentes": [
+      {
+       "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=9997",
+       "titulo": "INE, Encuesta de Condiciones de Vida 2025: hogares por régimen de tenencia de la vivienda (tabla 9997)"
+      },
+      {
+       "url": "https://www.bolsamania.com/noticias_print/empresas/economia--el-61-de-las-viviendas-en-alquiler-estan-en-manos-de-multiarrendadores-particulares-y-personas-juridicas--22336656.html",
+       "titulo": "Europa Press (23-4-2026): informe del Ministerio de Consumo y el CSIC sobre la propiedad de la vivienda en alquiler (Panel de Hogares)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Según la GAO, la entrada de grandes inversores puede elevar precios y alquileres, pero también aportó capital para rehabilitar y estabilizar barrios tras la crisis, de modo que excluirlos tiene efectos en ambos sentidos. Si fondos e inmobiliarias no pueden comprar vivienda para alquilarla, podría reducirse la oferta de alquiler de mercado en la que vive el 16,7 % de los hogares; en San Francisco, la retirada de viviendas del alquiler para venderlas a propietarios residentes probablemente encareció los alquileres de mercado a largo plazo, según sus autores (Diamond y otros, 2019). Una prohibición amplia o indefinida podría ser cuestionada por contraria a la libre circulación de capitales (art. 63 TFUE); el propio Real Decreto-ley 29/2026 limita su restricción hasta 2030 para garantizar su proporcionalidad.",
+     "fuentes": [
+      {
+       "url": "https://www.gao.gov/assets/gao-24-106643.pdf",
+       "titulo": "GAO (EE. UU.), GAO-24-106643 (22-5-2024): Rental Housing: Information on Institutional Investment in Single-Family Homes"
+      },
+      {
+       "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=9997",
+       "titulo": "INE, Encuesta de Condiciones de Vida 2025: hogares por régimen de tenencia de la vivienda (tabla 9997)"
+      },
+      {
+       "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20181289",
+       "titulo": "Diamond, McQuade y Qian (2019), The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco, American Economic Review 109(9)"
+      },
+      {
+       "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:12016E063",
+       "titulo": "Tratado de Funcionamiento de la UE, art. 63 (libre circulación de capitales), EUR-Lex"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+       "titulo": "Real Decreto-ley 29/2026, de 6 de octubre, de medidas urgentes para la protección de la función social de la vivienda (BOE)"
       }
      ]
     }
