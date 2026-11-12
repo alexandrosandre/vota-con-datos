@@ -101,3 +101,46 @@ celdas con valor. Sigue sin haber programa del 29N de ningún partido del grupo.
   primera persona.
 - **Dudas**: Vox y SALF q03 (+1; podrían leerse como medida distinta → null); PP q01 y q17 (-1,
   indirectas); Vox q29 (+1: oposición a Mercosur sin formularla como pedir en la UE que se frene).
+
+## Recodificación de PP y SALF con sus programas del 29-N (2026-11-12)
+
+Se leyeron enteros los dos programas catalogados en `partidos.json`, ambos publicados el 10-nov:
+el del PP («La Reconstrucción Nacional», 82 pp., `LA-RECONSTRUCCION-NACIONAL.txt`) y el
+«Contrato electoral» de SALF (40 pp.). Se recodificaron las 30 afirmaciones con la redacción
+vigente. Las páginas citadas son las del PDF de 82 pp. Todas las citas pasan la comprobación
+literal de `build_fase1.py`. En SALF, los cortes [...] saltan los rótulos laterales y las palabras
+partidas con guion tipográfico que la extracción intercala en el texto.
+
+Cobertura antes→después: PP 9→15, SALF 1→15. UPN-PP sigue en 0.
+
+- **PP, cambios de valor**:
+  - q01 -1→-2: «Eliminaremos las zonas tensionadas y el índice de precios» (p. 53).
+  - q17 -1→-2: «Ninguna comunidad saldrá del sistema común» (p. 41).
+- **PP, mismo valor pero ahora con fuente de programa**: q03 (+2; IVA del 10 % al 4 %, p. 54),
+  q14 (+1), q15 (-2), q23 (+2) y q25 (+2).
+- **PP, nuevas**: q11 -2 (conciertos), q12 -1, q16 -1, q18 -1 (se recupera la medida que se había
+  retirado como filtración), q20 -1 y q27 +1.
+- **PP, se mantienen las de campaña**: q22 y q28. El programa calla en lo concreto («habrá menos
+  ministerios», p. 13) y no contradice a Feijóo.
+- **SALF, cambios**:
+  - q03: sigue en +1, con fuente de programa.
+  - Nuevas: q04 -2, q07 +1, q09 -1, q11 -2, q12 -2, q14 +2, q15 -2, q17 -1, q18 -2, q22 +1,
+    q23 +2, q25 +2, q27 +1 y q29 +2.
+- **Ninguna contradicción** entre programa y líder en las celdas que tenían fuente de campaña.
+- **UPN-PP sin cambios**: upn.org (noticias hasta el 11-nov) no dice que la coalición asuma el
+  programa del PP. upn-pp.es solo muestra «PRÓXIMAMENTE». Según el preacuerdo, el programa lo
+  redacta una comisión conjunta.
+- **Dudas**:
+  - PP q13 (null): prioriza el «arraigo», no la nacionalidad, y lo dice expresamente.
+  - PP q07 (null): la cuota cero solo vale para nuevos autónomos.
+  - PP q26 (null): «cumplir nuestros compromisos internacionales», sin cifra.
+  - PP q24 (null): endurece multas, pero no habla de la ley.
+  - PP q20 (-1): pide frenar los «calendarios», sin cifra.
+  - PP q12 (-1, podría ser -2).
+  - SALF q09 (-1, podría ser -2): pagar a la privada solo si se superan los plazos.
+  - SALF q17 (-1): pide criterios «iguales para todas», sin nombrar el concierto.
+  - SALF q22 (+1): Igualdad no figura en el organigrama de 10 ministerios, pero no se la nombra.
+  - SALF q27 (+1): 5.000 militares en Ceuta y Melilla, sin hablar de vigilar la frontera.
+  - SALF q05, q13, q20 y q26 (null): medidas relacionadas pero distintas (mínimo exento de
+    35.000 €, cinco años de residencia, veto al Pacto Verde, defensa «dentro del 2 %»).
+- **Pendiente**: la verificación independiente de estas celdas (`verificacion_g1.json`).
