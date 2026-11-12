@@ -38,7 +38,20 @@ con dato en la encuesta (SALF): perfil provincial de las europeas de 2024. Parti
 no recoge: conservan su cuota base. UPN-PP sigue el factor del PP. Se renormaliza a 100 % con el
 voto en blanco de 2023 de la provincia. El informe `data/build/fase2_validacion.txt` compara los
 escaños nacionales resultantes con los publicados por cada encuesta (diferencias de ±0–5 escaños
-en los grandes partidos).
+en los grandes partidos). Un bloque no incluye a los miembros que la encuesta da por separado: el
+CIS 3584 publica UPC y Ara Més-Front Ampli aparte, así que su "Frente Amplio" se aplica solo a
+Frente Amplio (y "ERC-Podemos" al factor de ERC).
+
+**CIS preelectoral (3584, `cis-2026-11`): se mantiene la proyección proporcional.** El CIS no
+publica estimación de voto por provincia en los PDF del avance, solo horquillas de escaños
+(percentiles 5–95) en las 52 circunscripciones, guardadas en `desglose_regional`. El Excel que
+anuncia con la estimación por provincia devolvía HTTP 410 el 12-nov. El modelo necesita cuotas
+de voto (para D'Hondt y la incertidumbre), y unas horquillas de escaños no permiten deducirlas
+sin inventar datos. Comprobación: la proyección cae dentro de la horquilla del CIS en 714 de 728
+celdas partido × provincia (42 de 52 provincias enteras). Las diferencias son Adelante Andalucía,
+que no se proyecta (0 frente a 1–2 en Cádiz, Málaga y Sevilla), algo más de Vox (Madrid, Murcia,
+Asturias, Zaragoza), menos Frente Amplio en Madrid y Zaragoza, y Ceuta y Santa Cruz de Tenerife.
+Si el CIS publica el Excel con estimación provincial, convendrá revisarlo.
 
 **Incertidumbre**: 4.000 simulaciones con error log-normal independiente por candidatura,
 σ = k/√max(cuota, 0,5 %); k calibrado con las generales de 2015–2023

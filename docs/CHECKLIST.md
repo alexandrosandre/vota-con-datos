@@ -89,7 +89,7 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
 
 ## B. No bloquea — mejoras y mantenimiento, por prioridad
 
-- [ ] **10. [Externo → Yo] Macroencuesta preelectoral del CIS (estudio 3584)** cuando se publique
+- [x] **10. [Externo → Yo] Macroencuesta preelectoral del CIS (estudio 3584)** — añadida el 12-nov (campo 7–30 oct, n = 45.074) como «cis-2026-11»; da horquillas de escaños por provincia pero no voto provincial, así que se proyecta igual que las demás (ver METODOLOGIA.md). cuando se publique
   (antes del 24-nov): sustituye al barómetro de octubre, cuyo trabajo de campo fue anterior a la
   convocatoria.
 - [ ] **11. [Externo → Yo] Encuestas nuevas de Sigma Dos, GAD3 y 40dB** publicadas antes del 24-nov.
@@ -100,8 +100,9 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   incertidumbre ni jerga («swing»); orden de preferencia visible, con su origen (paso 1 o manual) y
   cómo cambiarlo, y la sugerencia explica de dónde sale; logotipos y fotos de Wikimedia Commons con
   licencia libre, servidos desde la web, con página de créditos.
-- [ ] **11c. [Yo] Ampliar la media con más empresas** (NC Report, DYM, Opina 360, Target Point,
+- [x] **11c. [Yo] Ampliar la media con más empresas** — 12-nov: 14 empresas en la media (CIS incluido); SW Demoscopia y SocioMétrica fuera de la media por no tener publicación original verificable o fechas de campo. (NC Report, DYM, Opina 360, Target Point,
   Hamalgama, Simple Lógica, Cluster17, Ipsos…), siempre desde su publicación original.
+- [ ] **11d. [Yo] Adelante Andalucía en los escenarios de encuesta**: hoy no se proyecta (en 2023 solo se presentó en Cádiz; sin perfil provincial), aunque el CIS le da 1–2 escaños en Cádiz, Málaga y Sevilla. Buscar una base provincial defendible (p. ej. autonómicas andaluzas) y documentarla.
 - [ ] **12. [Yo] Compromisos de campaña desde el 13-nov** (inicio de campaña), sobre todo para EH
   Bildu, PNV, PSC, UPN-PP y Adelante Andalucía, que hoy tienen cero posiciones en el paso 1.
 - [x] **13. [Yo] Resolver las dudas abiertas de los revisores** (detalle en

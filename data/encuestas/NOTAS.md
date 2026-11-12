@@ -28,6 +28,13 @@ Desgloses territoriales, de encuestas anteriores de Sigma Dos:
 
 ## Advertencias por encuesta
 
+### CIS preelectoral (3584, `cis-2026-11`, publicado 12-11)
+- Sustituye a `cis-2026-10`. Campo del 7 al 30 de octubre, 45.074 entrevistas (CATI). Estimación: PSOE 33,3, PP 25,5, Vox 18,4, Frente Amplio 4,7, ERC-Podemos 3,1.
+- Ficheros: `3584_Estimacion.pdf`, `es3584mar.pdf` (con la ficha técnica al principio; no hay FT3584 suelta) y la página del avance. Los sha256 están en `archivos_fuente_sha256`.
+- Es la primera vez que el CIS publica escaños: horquillas P5–P95 nacionales y por provincia, sin valor central. Las provinciales van en `desglose_regional`.
+- No publica estimación de voto por provincia en los PDF. El Excel anunciado (`3584-multi_A-xlsx`) devolvía HTTP 410 el 12-11.
+- Etiquetas nuevas: el "Frente Amplio" del CIS excluye Compromís, UPC y Ara Més-Front Ampli, que se dan por separado. "ERC-Podemos" es campaña conjunta, no coalición.
+
 ### CIS (3582)
 - **No hay CIS con trabajo de campo posterior a la convocatoria.** El campo del 3582 fue del 1 al 6 de octubre. La macroencuesta preelectoral (estudio 3584, unas 45.000 entrevistas según la prensa, campo del 7-oct al 7-nov) no está publicada a 8-11. Según una resolución de la JEC citada en prensa, el CIS no publicará avances mientras dure el campo. Cuando salga (forzosamente antes del 24-11), sustituirá a `cis-2026-10`. Es probable que traiga estimaciones por CCAA o provincia: conviene revisarlo entonces.
 - Estimación por "método de escenarios" (modelo Alaminos-Tezanos). La estimación va sobre voto válido. El voto directo va sobre censo; se guarda solo como referencia y no debe usarse para estimar.

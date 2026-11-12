@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La caída del PSOE arrastra a la izquierda a los 120 escaños</title>
+<link rel="stylesheet" href="styles.css?v=261108-1">
+<script type="module">
+  // Alto dinámico en el CMS: emit.js avisa a la página padre (EC:msg:datos) cada vez que cambia el alto del body
+  import { configureEmit } from './emit.js';
+  configureEmit();
+</script>
+</head>
+<body>
+<div class="graf" id="graf">
+  <div class="g-cab">
+    <h2 class="g-tit">La caída del PSOE arrastra a la izquierda a los 120 escaños</h2>
+    <p class="g-desc">Comparación entre los resultados de las elecciones al Congreso de 2023 y las tres últimas encuestas de IMOP para ElConfidencial.</p>
+    <div class="botones" id="botones" role="group" aria-label="Indicador del gráfico">
+      <button type="button" data-m="esc" aria-pressed="true">Escaños</button>
+      <button type="button" data-m="pct" aria-pressed="false">Porcentaje de voto</button>
+    </div>
+  </div>
+
+  <div class="g-grafico">
+    <div class="leyenda" id="leyenda" aria-label="Encuestas"></div>
+    <div class="lienzo" id="lienzo">
+      <svg role="img" aria-label="Escaños y porcentaje de voto de cada partido: resultado de 2023 y las tres encuestas de IMOP"></svg>
+    </div>
+    <div class="sr"><table id="tabla"></table></div>
+  </div>
+
+  <div class="g-pieblock">
+    <p class="g-nota">* Frente Amplio incluye a Compromís-Front Valencià y UPC. Podemos figura como tal solo donde concurre en solitario. Podemos se presentó bajo la marca de Sumar (Frente Amplio) en las generales de 2023. Unión del Pueblo Navarro se añade al PP. Se incluyen los partidos que obtendrían algún escaño en el Congreso.</p>
+    <p class="g-pie">Fuente: IMOP Insights | <strong>ElConfidencial</strong></p>
+  </div>
+  <div class="tip" id="tip" hidden></div>
+</div>
+<script src="d3.min.js?v=261108-1"></script>
+<script src="datos.js?v=261108-1"></script>
+<script src="script.js?v=261108-1"></script>
+</body>
+</html>

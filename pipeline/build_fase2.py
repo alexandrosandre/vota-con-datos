@@ -48,8 +48,18 @@ ETIQUETAS = {
     "EAJ-PNV": "pnv", "PNV": "pnv", "CCa": "cc", "Coalición Canaria (CCA)": "cc", "CC": "cc",
     "Front Valencià (FV)": "compromis", "PACMA": "PACMA",
     "Sumar/Frente Amplio + confluencias": "bloque_sumar", "CCa": "cc",
+    "Frente Amplio*": "bloque_fa", "Frente Amplio(Sumar 2023)": "bloque_fa", "F. Amplio": "bloque_fa", "SUMAR": "bloque_sumar",
+    "Compromís": "compromis", "Compromís-Front V.": "compromis", "Pod.": "podemos", "ERC-Podemos": "erc",
+    "Se acabó la fiesta": "salf", "Se acabó la fiesta (SALF)": "salf", "Se Acabó la Fiesta (SALF)": "salf",
+    "JxCat": "junts", "JUNTS": "junts", "EH-BILDU": "eh_bildu", "PNV-EAJ": "pnv",
+    "Coalición Canaria": "cc", "C. Canaria": "cc",
+    # CIS 3584 (preelectoral): da UPC y Ara Més por separado de "Frente Amplio" (ver BLOQUES).
+    "EH-Bildu": "eh_bildu", "Compromís: Front Valencià": "compromis", "UPC": "upc",
+    "Ara Més-Front Ampli": "ara_mes_fa", "CC-Municipalistas Primero Canarias": "cc",
 }
-IGNORADAS = {"UPN", "Otros partidos", "En blanco", "Otro", "Otro + Blanco", "Cup", "Adelante Andalucía (AA)", "A.Adelante", "AA"}
+IGNORADAS = {"UPN", "Otros partidos", "En blanco", "Otro", "Otro + Blanco", "Cup", "Adelante Andalucía (AA)", "A.Adelante", "AA",
+             "Adelante Andalucía", "Adelante And.", "PP–UPN (Navarra)", "Otros", "Otros*", "Otras candidaturas",
+             "Otros+Blanco", "Regionales**", "CHA", "Més per Mallorca", "Teruel Existe"}
 SWING_DE = {"upn": "pp"}
 # La etiqueta genérica "Sumar" de las encuestas corresponde al espacio que en 2023 fue Sumar sin
 # Podemos (que ahora se mide aparte): Frente Amplio y sus marcas, Compromís (incluye EUPV) y la
@@ -57,9 +67,10 @@ SWING_DE = {"upn": "pp"}
 # la etiqueta "Frente Amplio" cubre solo Frente Amplio y UPC.
 BLOQUES = {"bloque_sumar": ["frente_amplio", "ara_mes_fa", "compromis", "upc"], "bloque_fa": ["frente_amplio", "ara_mes_fa", "upc"],
            "bloque_psoe": ["psoe", "psc"]}  # las encuestas dan PSOE incluyendo al PSC  # coalición UPN-PP sigue el swing del PP
-ESCENARIOS_ENCUESTA = ["cis-2026-10", "sigmados-2026-11-08", "gad3-2026-11", "40db-2026-11"]
+ESCENARIOS_ENCUESTA = ["cis-2026-11", "sigmados-2026-11-08", "gad3-2026-11", "40db-2026-11"]
 NOMBRES = {
     "cis-2026-10": "Encuesta CIS · barómetro de octubre (14-oct)",
+    "cis-2026-11": "Encuesta CIS · macroencuesta preelectoral (12-nov)",
     "sigmados-2026-11-02": "Encuesta Sigma Dos · El Mundo (1-nov)",
     "sigmados-2026-11-08": "Encuesta Sigma Dos · El Mundo (8-nov)",
     "gad3-2026-10": "Encuesta GAD3 · ABC (12-oct)",
@@ -89,7 +100,11 @@ def en_veda(ahora=None):
 
 
 VENTANA_MEDIA = 21  # días desde el fin del trabajo de campo
-NOMBRE_EMPRESA = {"cis": "CIS", "sigmados": "Sigma Dos", "gad3": "GAD3", "40db": "40dB"}
+NOMBRE_EMPRESA = {"cis": "CIS", "sigmados": "Sigma Dos", "gad3": "GAD3", "40db": "40dB",
+                  "ncreport": "NC Report", "targetpoint": "Target Point", "hamalgama": "Hamalgama Métrica",
+                  "celestetel": "Celeste-Tel", "imop": "IMOP", "sociometrica": "SocioMétrica",
+                  "moreincommon": "More in Common", "winston": "Winston", "ateneodeldato": "Ateneo del Dato",
+                  "swdemoscopia": "SW Demoscopia", "dym": "DYM", "data10": "Data10"}
 MESES = ["", "ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
 K_BASE = 0.15  # calibrado: docs/research/calibracion_incertidumbre.md (repetir la elección anterior)
 K_ENCUESTA = 0.08  # calibrado: error de encuestas finales + desviación provincial del swing (2015–2023)
@@ -312,7 +327,8 @@ def main():
         # Factor de swing por clave (los bloques comparten un mismo factor)
         factor = {}
         for kp, val in poll.items():
-            miembros = BLOQUES.get(kp, [kp])
+            # Un bloque no incluye a los miembros que la encuesta da por separado (CIS 3584: UPC, Ara Més).
+            miembros = [m for m in BLOQUES.get(kp, [kp]) if m == kp or m not in poll]
             ref = sum(base_nac.get(m, 0) for m in miembros)
             if ref > 0:
                 for m in miembros:
@@ -353,9 +369,13 @@ def main():
 
     # Media de encuestas: la última de cada empresa con trabajo de campo terminado en los últimos
     # VENTANA_MEDIA días. Media simple (sin ponderar) de las proyecciones provinciales de cada una.
+    # Requisitos: publicación original verificable (medio que la encarga o web de la empresa) y fechas
+    # de trabajo de campo publicadas; las que no los cumplen llevan "excluir_media" con el motivo.
     hoy = date.fromisoformat(__import__("os").environ.get("VCD_HOY", date.today().isoformat()))
     ultimas = {}
     for eid, e in enc.items():
+        if e.get("excluir_media"):  # sin publicación original verificable o sin fechas de campo publicadas
+            continue
         fin = (e.get("trabajo_campo") or {}).get("fin")
         if not fin or (hoy - date.fromisoformat(fin)).days > VENTANA_MEDIA:
             continue
