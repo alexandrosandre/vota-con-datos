@@ -1,0 +1,72 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-12",
+ "alcance": "Base «compromisos» (prompts 1b, 3 y 4): 7 compromisos, 5 prioridades y 5 propuestas × 8 criterios. Se abrieron las 83 URL de seleccion.json y evaluacion.json con petición normal: todas respondieron 200 (la nota de la Seguridad Social se lee en el HTML; su resumen dinámico devuelve 403 a WebFetch). psoe.es no se intentó. Cada cita se comprobó en la página en línea y en la copia local (SHA-256 coincidentes): son literales, en primera persona, públicas y posteriores a la convocatoria, y enuncian una medida concreta para la próxima legislatura. Arcadi España cuenta como líder (Ejecutiva Federal, ministro de Hacienda y n.º 2 por Valencia, BOE-A-2026-23103), como en la auditoría de fase 1. Los «veces» cuentan ocasiones distintas, no fuentes. Se verificaron cifras y normas: Real Decreto-ley 29/2026 (BOE, en vigor el 8-10-2026; importes de 10.000, 2.000, 280 y 400 M€; suspensión hasta el 31-12-2030), Real Decreto-ley 26/2026 (en vigor el 1-10 y derogado el 2-10-2026, BOE-A-2026-20526), convalidación del 29/2026 por la Diputación Permanente el 12-11-2026 y rechazo del 28/2026 (Infobae/EFE), RDL 11/2020, STC 79/2024, STC 44/2023, CE (arts. 50, 53, 167, 168; reforma de 19-5-2026), Ley 21/2021, Ley 23/2013, nómina de octubre de 2026 (10.565.782 pensiones, 9,6 millones de personas, 14.540 M€, 1.376,1 €), AIReF (14,6 %, 3,0 % y 123 % del PIB), Moncloa (2,7 %, 736.800 pensiones de Clases Pasivas, SMI de 1.221 € y 2,5 millones), RD 1077/2017, 1462/2018 y 126/2026, BdE DO 2113, Dustmann et al., LPC 2024, IVE 2024 (106.172; 78,74 % y 21,25 %), El Español, Ara, El Salto, Constitución francesa (art. 34) y brasileña (art. 201), CPFF de 4-9-2026 (20.975 y 19.000 M€; 55 % y 56,5 %; 75 %), Fedea (Europa Press y eee2026-24: 92,0-94,7), El Salto (cifras por comunidad), Productivity Commission, INE ECV 2025 (16,7 %), Jofre-Monseny et al., Diamond et al. y BVerfG 2021. Mitin de Sevilla (12-nov): a las 20:38 no había compromisos literales y concretos publicados. verify_quotes: 0 citas no encontradas. Se ha recalculado seleccion_sha256.",
+ "igual_estandar": "Se comparó con PP, SALF, ERC, BNG, Adelante Andalucía, PSC, Frente Amplio, Podemos, Vox y la auditoría de coherencia del 12-11. Un solo cambio de valoración: psoe-02 (pensiones en la Constitución), encaje legal, pasa de «favorable» a «mixta», porque una reforma constitucional sin ubicación definida tiene dos procedimientos posibles, el criterio de adelante_andalucia-11, psc-03 y psoe-04. Se mantienen: psoe-03 (SMI anual), con los mismos valores que psc-02 (financiación «no_verificable» por falta de cuantía, como erc-09; antecedentes «favorable», como bng-05); psoe-04 (aborto), igual que adelante_andalucia-11 y psc-03; psoe-01 y psoe-05, internacional «mixta» por aplicación parcial o sin evaluación, según la rúbrica y la regla de la auditoría; psoe-05, concreción «favorable», porque el ministro fija el instrumento y el plazo y remite a un modelo cuantificado.",
+ "recuento_final": {
+  "favorable": 7,
+  "mixta": 32,
+  "desfavorable": 0,
+  "no_verificable": 1
+ },
+ "recuento_final_nota": "Antes de la revisión: 8/31/0/1 (F/M/D/N). Después: 7/32/0/1.",
+ "cambios": [
+  {
+   "propuesta": "psoe-02",
+   "criterio": "legal",
+   "antes": "favorable: La revalorización con el IPC ya figura en la ley (art. 58 de la Ley General de la Seguridad Social, en la redacción de la Ley 21/2021), por lo que mantenerla no exige cambios. Sánchez no dice qué artículo reformaría; si fuera el art. 50 (principios rectores), bastaría el procedimiento del art. 167 [...]",
+   "despues": "mixta: [...] y el art. 50 de la Constitución ya obliga a garantizar «pensiones adecuadas y periódicamente actualizadas». Sánchez no dice qué artículo reformaría, y de eso depende el procedimiento: fuera de la sección de derechos fundamentales, art. 167 (tres quintos y referéndum si lo pide una décima parte de una Cámara); dentro, art. 168 (dos tercios, disolución, ratificación y referéndum obligatorio) [...]",
+   "motivo": "Igual estándar: una reforma constitucional cuya ubicación no se define tiene dos procedimientos posibles, y por eso adelante_andalucia-11, psc-03 y psoe-04 (aborto en la Constitución, mismo hecho) tienen encaje legal «mixta». El texto solo contemplaba la vía del art. 167. Se añade que el art. 50 CE ya recoge pensiones «periódicamente actualizadas» (BOE, texto consolidado)."
+  },
+  {
+   "propuesta": "psoe-01",
+   "criterio": "legal",
+   "antes": "y varias comunidades gobernadas por PP y Vox anunciaron recursos contra los decretos, según la prensa.",
+   "despues": "y la Junta de Andalucía decidió recurrir los dos decretos ante el Tribunal Constitucional (Demócrata, 16-10-2026); según Onda Vasca, otras comunidades gobernadas por PP y Vox también anunciaron recursos. (Fuente añadida: Demócrata, 16-10-2026.)",
+   "motivo": "La afirmación solo se apoyaba en una frase del periodista de Onda Vasca, citada sin decir que era la fuente. Se precisa el único recurso documentado con fuente directa y se atribuye el resto. La valoración no cambia."
+  },
+  {
+   "propuesta": "psoe-c03 (seleccion.json)",
+   "criterio": "ocasiones (Bilbao, 8-nov), nota",
+   "antes": "Estilo indirecto: «mientras gobierne, subirá todos los años el SMI».",
+   "despues": "Estilo indirecto: «mientras gobierne, subirá todos los años el Salario Mínimo Interprofesional (SMI)».",
+   "motivo": "El texto entre comillas no coincidía con la crónica de Europa Press (Infobae, 8-11-2026)."
+  },
+  {
+   "propuesta": "psoe-02 (prioridades, seleccion.json)",
+   "criterio": "justificación",
+   "antes": "Eneko Andueza lo incluyó entre los objetivos de gobierno en Bilbao (8-nov) y lo repitió como «compromiso solemne» en Bilbao (8-nov)",
+   "despues": "Sánchez lo repitió como «compromiso solemne» en Bilbao (8-nov), donde Eneko Andueza incluyó seguir revalorizando las pensiones entre los objetivos de gobierno",
+   "motivo": "La frase atribuía a Andueza la reforma constitucional y el «compromiso solemne». Andueza habla de seguir revalorizando las pensiones (nota del PSE-EE), y el «compromiso solemne» es de Sánchez (Europa Press)."
+  },
+  {
+   "propuesta": "psoe-c05 (seleccion.json)",
+   "criterio": "nota",
+   "antes": "(sin mención)",
+   "despues": "Se añade que la cita literal habla de «este real decreto ley» en singular, mientras que Diario de León (Ical) dice, en estilo indirecto, que se comprometió a mantener «los dos reales decretos»; se evalúa el Real Decreto-ley 29/2026 según la cita literal.",
+   "motivo": "Transparencia sobre el alcance del compromiso: el otro decreto (Real Decreto-ley 28/2026, prórroga automática) fue rechazado el 12-11-2026, y solo la crónica indirecta lo incluye."
+  },
+  {
+   "propuesta": "psoe (seleccion.json)",
+   "criterio": "busqueda.limitaciones",
+   "antes": "A la hora del cierre no se había publicado el contenido del discurso de Sánchez en Sevilla (12-nov).",
+   "despues": "Se añade el resultado de la búsqueda del revisor a las 20:38 del 12-11-2026 (directos sin compromisos literales y concretos; sin crónica de agencia).",
+   "motivo": "Comprobación pedida para el mitin de inicio de campaña en Sevilla: no hay todavía compromisos que añadir."
+  },
+  {
+   "propuesta": "psoe (evaluacion.json)",
+   "criterio": "seleccion_sha256",
+   "antes": "abe4e353e5dece8b973518ed4511505261fe4fd3c344e58c0b1898645353e046",
+   "despues": "6826557360a65504974d8976375092d5659cf86d466b8312508b619832bd4bd0",
+   "motivo": "seleccion.json ha cambiado en esta revisión."
+  }
+ ],
+ "dudas": [
+  "Mitin de Sevilla (12-nov). Seguía en curso durante la revisión, y no había crónica de agencia. Hay que revisar sus compromisos literales, y cualquier ocasión nueva de los ya seleccionados, cuando publiquen EFE o Europa Press, y en todo caso con el programa del 15-nov, que sustituye a este análisis.",
+  "psoe-c05 (decreto de vivienda). La cita literal está en singular, pero Ical afirma que el compromiso abarcaba los dos decretos. Si incluía el Real Decreto-ley 28/2026 (prórroga automática e indemnización), ese decreto se rechazó el 12-nov y no consta que Sánchez se haya comprometido a aprobarlo de nuevo. Además, la ocasión de Valladolid (19-oct) solo dice, en estilo indirecto, «ampliar y reforzar la regulación pública», y se cuenta en «veces» de forma generosa.",
+  "veces de psoe-c06 (2) y psoe-c01 (2). La segunda ocasión de c06 es Diana Morant, en estilo indirecto y sin plazo («hará realidad la reforma»), y la de c01 es Eneko Andueza («seguir revalorizando las pensiones», sin IPC ni plazo). Se mantienen, porque ambos son líderes autonómicos y repiten el núcleo del compromiso, pero son repeticiones débiles.",
+  "Formato: seleccion.json guarda «veces» como número y la lista aparte en «ocasiones», como psc; otros partidos usan {n, ocasiones}. No afecta a build_web.",
+  "Solo hay 5 prioridades (6 compromisos nacionales concretos, uno de ellos evaluado junto con otro). Las medidas sanitarias de Kilian Sánchez (cita en Atención Primaria en 48 horas y 7 % del PIB) siguen descartadas por estar en estilo indirecto. Si el programa del 15-nov las recoge, entrarán por el prompt 1."
+ ]
+}
