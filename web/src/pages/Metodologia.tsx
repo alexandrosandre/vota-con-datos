@@ -54,9 +54,9 @@ export function Metodologia() {
 
           <h2 id="objetivo">Objetivo</h2>
           <p>
-            Queremos que cada persona vote <strong>con conciencia</strong>: que entienda qué propone cada partido y en qué se apoya. Y que su
-            voto <strong>llegue a donde quería</strong>: que sepa qué probabilidad tiene, con la ley electoral, de ayudar a lograr un escaño en su provincia. No
-            trabajamos para ningún partido. No hay publicidad ni recogemos datos.
+            Poner los datos en la mano de quien vota: qué propone cada partido y en qué se apoya, y qué probabilidad tiene su voto, con la ley
+            electoral, de ayudar a lograr un escaño en su provincia. Cada cual decide qué hacer con ellos. No trabajamos para ningún partido. No
+            hay publicidad ni recogemos datos.
           </p>
 
           <h2 id="orden">Por qué este orden: Elige → Contrasta → Suma</h2>

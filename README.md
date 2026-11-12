@@ -1,8 +1,8 @@
 # vota con datos
 
 Herramienta cívica, gratuita y de código abierto para las **elecciones generales del 29 de
-noviembre de 2026** en España. Objetivo: que cada persona vote **sabiendo a qué vota** y que su voto
-**llegue a donde quería**.
+noviembre de 2026** en España. Objetivo: que cada persona pueda votar **con los datos en la mano**: qué propone cada partido
+y si su voto puede ayudar a lograr un escaño en su provincia.
 
 **Web:** https://votacondatos.org/
 
