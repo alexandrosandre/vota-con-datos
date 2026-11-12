@@ -3,7 +3,7 @@
  "base": "compromisos",
  "modelo": "Claude (Anthropic)",
  "fecha": "2026-11-12",
- "nota": "EH Bildu no había publicado programa para el 29-N a 12-nov-2026 (data/partidos/partidos.json, comprobado el 12-nov). Se recogen los compromisos concretos de sus líderes (Oskar Matute, cabeza de lista por Bizkaia y portavoz en el Congreso; Oihana Etxebarrieta, cabeza de lista por Gipuzkoa; Laura Aznal, portavoz en el Parlamento de Navarra) y de las notas oficiales del partido desde la convocatoria (6-oct-2026). En la presentación de campaña (8-nov) el partido solo enumeró temas (vivienda, coste de la vida, salarios, pensiones, servicios públicos). Solo se encontraron cuatro compromisos concretos y verificables; los cuatro son prioridades. Donde un compromiso remite a una norma ya conocida (el Real Decreto-ley 28/2026 de prórroga de los alquileres, la proposición de ley sobre plataformas de alquiler turístico o el acuerdo de 2024 sobre la ley de seguridad ciudadana), las notas de esa norma figuran en «veces» como definición del instrumento, no como ocasiones de campaña.",
+ "nota": "EH Bildu no había publicado programa para el 29-N a 12-nov-2026 (data/partidos/partidos.json, comprobado el 12-nov). Se recogen los compromisos concretos de sus líderes (Oskar Matute, cabeza de lista por Bizkaia y portavoz en el Congreso; Oihana Etxebarrieta, cabeza de lista por Gipuzkoa; Laura Aznal, portavoz en el Parlamento de Navarra) y de las notas oficiales del partido desde la convocatoria (6-oct-2026). En la presentación de campaña (8-nov) el partido solo enumeró temas (vivienda, coste de la vida, salarios, pensiones, servicios públicos). Se encontraron cinco compromisos concretos y verificables; los cinco son prioridades (el quinto, eh_bildu-c05, se añadió en la auditoría de coherencia del 12-nov por la noche, al localizar la crónica de Europa Press que concreta la prohibición de compra). Donde un compromiso remite a una norma ya conocida (el Real Decreto-ley 28/2026 de prórroga de los alquileres, la proposición de ley sobre plataformas de alquiler turístico o el acuerdo de 2024 sobre la ley de seguridad ciudadana), las notas de esa norma figuran en «veces» como definición del instrumento, no como ocasiones de campaña.",
  "compromisos": [
   {
    "id": "eh_bildu-c01",
@@ -163,6 +163,60 @@
     ]
    },
    "sha256": "a180fc4d6f966b6f351ff6bb2d135085935f2f5ca7cc3777d3ee0099a5144a75"
+  },
+  {
+   "id": "eh_bildu-c05",
+   "area": "vivienda",
+   "resumen": "Prohibir la compra de vivienda a fondos, empresas y grandes tenedores, y la compra de edificios enteros que no se destinen a alquiler regulado por los índices de precios.",
+   "cita": "acabar con la compra especulativa de vivienda, prohibiendo la compra a los fondos, empresas y grandes tenedores, y también la adquisición de edificios enteros que no sean destinados a un alquiler regulado mediante los índices de precios",
+   "quien": "Oskar Matute (cabeza de lista de EH Bildu al Congreso por Bizkaia)",
+   "formato": "conferencia en el Nueva Economía Fórum-Fórum Europa (Bilbao), recogida por Europa Press",
+   "fecha": "2026-11-09",
+   "url": "https://www.ultimahora.es/noticias/comunidades/2026/11/09/2746167/bildu-trabajara-por-prorroga-alquileres-derechas-tumbaran-advierte-respuesta-rotunda-11n.html",
+   "medio": "Última Hora (Europa Press)",
+   "fuente_local": "data/sources/compromisos/eh_bildu/ultimahora_ep_forum_20261109.txt",
+   "cuantificado": false,
+   "nota": "La crónica de Europa Press entrecomilla las palabras de Matute. El anuncio en primera persona («plantearemos acabar con la compra especulativa de vivienda») figura en la nota del partido sobre el mismo acto, que no decía a quién se aplicaría la prohibición; por eso se había descartado. «Gran tenedor» lo define la Ley 12/2023 (art. 3.k): titular de más de diez inmuebles urbanos de uso residencial o de más de 1.500 m² de uso residencial, o de cinco o más en una zona tensionada si la comunidad autónoma lo motiva. Matute no dice si la prohibición sería indefinida ni qué excepciones tendría.",
+   "veces": {
+    "n": 1,
+    "nota": "Una ocasión: el Fórum Europa (9-nov), que recogen Europa Press y la nota del partido. La nota con LAB (12-nov) solo habla de «prohibir el uso especulativo de la vivienda», sin la medida.",
+    "ocasiones": [
+     {
+      "fecha": "2026-11-09",
+      "ocasion": "Fórum Europa (Bilbao), crónica de Europa Press",
+      "url": "https://www.ultimahora.es/noticias/comunidades/2026/11/09/2746167/bildu-trabajara-por-prorroga-alquileres-derechas-tumbaran-advierte-respuesta-rotunda-11n.html",
+      "medio": "Última Hora (Europa Press)",
+      "fuente_local": "data/sources/compromisos/eh_bildu/ultimahora_ep_forum_20261109.txt",
+      "cita": "prohibiendo la compra a los fondos, empresas y grandes tenedores",
+      "sha256": "bf136f444978ee92c7361374272086526e56a98ef8f3aa8715c825120f84238d",
+      "cuenta": true,
+      "nota_revision": "cita principal"
+     },
+     {
+      "fecha": "2026-11-09",
+      "ocasion": "mismo acto, nota de prensa del partido (anuncio en primera persona, sin definir la prohibición)",
+      "url": "https://ehbildu.eus/es/noticias/eh-bildu-anuncia-que-planteara-recuperar-la-prorroga-automatica-de-los-contratos-de-alquiler-y-acabar-con-la-compra-especulativa-de-vivienda",
+      "medio": "EH Bildu (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/eh_bildu/ehb_forum_20261109.txt",
+      "cita": "plantearemos acabar con la compra especulativa de vivienda",
+      "sha256": "120c63ba5da97d416c30a2d43b8241ffeaf0854754f3fd766d036258668aee46",
+      "cuenta": false,
+      "nota_revision": "mismo acto del 9-nov: no es otra ocasión"
+     },
+     {
+      "fecha": "2026-11-12",
+      "ocasion": "reunión pública con LAB (nota oficial; con Oihana Etxebarrieta, cabeza de lista por Gipuzkoa)",
+      "url": "https://ehbildu.eus/es/noticias/eh-bildu-y-lab-hacen-un-llamamiento-a-garantizar-una-vivienda-digna-y-unos-salarios-dignos-y-a-hacer-frente-a-la-extrema-derecha",
+      "medio": "EH Bildu (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/eh_bildu/ehb_lab_20261112.txt",
+      "cita": "prohibir el uso especulativo de la vivienda",
+      "sha256": "a180fc4d6f966b6f351ff6bb2d135085935f2f5ca7cc3777d3ee0099a5144a75",
+      "cuenta": false,
+      "nota_revision": "objetivo genérico, sin decir a quién se prohibiría comprar"
+     }
+    ]
+   },
+   "sha256": "bf136f444978ee92c7361374272086526e56a98ef8f3aa8715c825120f84238d"
   }
  ],
  "prioridades": [
@@ -181,16 +235,13 @@
   {
    "id": "eh_bildu-c04",
    "justificacion": "El partido la ratifica con LAB, con su cabeza de lista por Gipuzkoa (12-nov), como una de las dos principales reivindicaciones de la huelga del 11-nov, y la reclama su portavoz en el Parlamento de Navarra (22-oct); los salarios son eje de campaña (presentación del 8-nov)."
+  },
+  {
+   "id": "eh_bildu-c05",
+   "justificacion": "Matute la anuncia en el Fórum Europa (9-nov), presentado por el secretario general Arnaldo Otegi, en la misma frase que la «primera iniciativa» de EH Bildu en el nuevo Congreso («no solo recuperar la prórroga automática [...] sino que además plantearemos acabar con la compra especulativa de vivienda», nota del partido); la nota la lleva en su titular y la vivienda es el primer eje de la campaña."
   }
  ],
  "descartados": [
-  {
-   "medida": "Acabar con la compra especulativa de vivienda / prohibir el uso especulativo de la vivienda",
-   "url": "https://ehbildu.eus/es/noticias/eh-bildu-anuncia-que-planteara-recuperar-la-prorroga-automatica-de-los-contratos-de-alquiler-y-acabar-con-la-compra-especulativa-de-vivienda",
-   "fuente_local": "data/sources/compromisos/eh_bildu/ehb_forum_20261109.txt",
-   "motivo": "Matute (9-nov) y la nota con LAB (12-nov) no definen qué compras serían especulativas ni con qué instrumento se prohibirían: objetivo sin medida identificable.",
-   "sha256": "120c63ba5da97d416c30a2d43b8241ffeaf0854754f3fd766d036258668aee46"
-  },
   {
    "medida": "Que las grandes empresas energéticas, petroleras y alimentarias absorban el aumento de costes en situaciones inflacionarias",
    "url": "https://ehbildu.eus/es/noticias/eh-bildu-anuncia-que-planteara-recuperar-la-prorroga-automatica-de-los-contratos-de-alquiler-y-acabar-con-la-compra-especulativa-de-vivienda",

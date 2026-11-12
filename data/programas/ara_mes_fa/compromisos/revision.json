@@ -99,5 +99,27 @@
   "ara_mes_fa-10: las cifras de galeras de Palma (28 licencias, unos 1,4 M€) son de Última Hora (2020) y pueden estar desfasadas; la sentencia del TSJIB se conoce por LegalToday (29-5-2026), no por su texto.",
   "ara_mes_fa-08, «veces»: queda en 1; la frase del mitin del 8-nov («acabarem amb l'especulació») es más amplia que la compra especulativa y no se cuenta como segunda ocasión."
  ],
- "recuento_final_nota": "Las 7 prioridades de la primera pasada quedan en 4/43/4/5; las 4 añadidas (08 a 11) suman 2/26/1/3."
+ "recuento_final_nota": "Las 7 prioridades de la primera pasada quedan en 4/43/4/5; las 4 añadidas (08 a 11) suman 2/26/1/3.",
+ "coherencia_2026-11-12b_revision": [
+  {
+   "propuesta": "ara_mes_fa-08",
+   "criterio": "financiacion",
+   "antes": "no_verificable: Es una medida regulatoria sin gasto público directo: limita quién puede comprar vivienda. Podría reducir la recaudación de los impuestos que gravan las compraventas, pero no hemos localizado ninguna estimación de ese efecto, y sin una definición de compra especulativa no puede saberse a cuántas de las 14.633 compraventas de vivienda registradas en Baleares en 2025 afectaría.",
+   "despues": "favorable: Es una medida regulatoria sin coste presupuestario directo relevante: prohíbe la compra especulativa de vivienda. La limitación de compras del Real Decreto-ley 29/2026 (art. 1), también regulatoria, no lleva asociada ninguna partida de gasto, y el informe de tasación lo aporta el comprador. Podría reducir de forma indirecta la recaudación de los impuestos que gravan las compraventas, un efecto del que no hemos localizado estimación; sin una definición de compra especulativa no puede saberse a cuántas de las 14.633 compraventas de vivienda registradas en Baleares en 2025 afectaría.",
+   "motivo": "Duda (b) de la auditoría del 12-11 (noche). Aplicación literal de la rúbrica de financiación de criterios.json: «Medidas sin coste presupuestario directo relevante (p. ej. regulatorias), si las fuentes lo documentan: favorable, explicándolo». Una prohibición de compra no tiene gasto público directo: la limitación análoga del RDL 29/2026 (art. 1) no lleva partida de gasto, a diferencia de otras medidas del mismo decreto (TU CASA, fondo de 400 M€), y el informe de tasación lo aporta el comprador. La posible menor recaudación del ITP es un efecto indirecto, como la menor base del IRPF en los topes de alquiler (adelante_andalucia-01, erc-06, compromis-02, podemos-01, ara_mes_fa-02), que son «favorable». Mismos hechos, misma valoración. cc-06 y ara_mes_fa-01 siguen «no_verificable» porque no definen el instrumento (prohibición, autorización previa o impuesto) y no puede documentarse que carezcan de coste directo."
+  },
+  {
+   "propuesta": "ara_mes_fa-01",
+   "criterio": "financiacion (texto y fuentes; valoración sin cambios: no_verificable)",
+   "antes": "No hemos localizado ninguna estimación del coste administrativo de un control de compras ni de su efecto en la recaudación por transmisiones, y la coalición no da cifras. Como orden de magnitud del mercado afectado, en 2025 se registraron 14.633 compraventas de vivienda en Baleares.",
+   "despues": "La coalición no precisa si la limitación sería una prohibición, una autorización previa o un impuesto, de modo que no puede documentarse que carezca de coste presupuestario directo: una autorización exige un control administrativo y un impuesto tendría efecto recaudatorio. No hemos localizado ninguna estimación de ese coste administrativo ni del efecto en la recaudación por transmisiones. Como orden de magnitud del mercado afectado, en 2025 se registraron 14.633 compraventas de vivienda en Baleares.",
+   "motivo": "Duda (b): con la rúbrica aplicada literalmente, el efecto indirecto en el ITP no basta para «no_verificable» (ara_mes_fa-08 pasa a «favorable»). ara_mes_fa-01 lo sigue siendo por otro hecho, que el texto ahora explicita: el instrumento no está definido (su propia concreción dice «prohibición, autorización previa o impuesto»), así que las fuentes no documentan que carezca de coste directo."
+  }
+ ],
+ "recuento_final_coherencia_2026-11-12b_revision": {
+  "favorable": 7,
+  "mixta": 69,
+  "desfavorable": 5,
+  "no_verificable": 7
+ }
 }

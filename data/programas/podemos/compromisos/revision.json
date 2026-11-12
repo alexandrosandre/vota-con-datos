@@ -210,5 +210,43 @@
   "Estimación del Gobierno sobre Repsol (8.960,7 M€): solo consta en prensa. El BOCG 281-2 registra la disconformidad sin dar el importe.",
   "La campaña oficial empieza el 13-nov. Conviene repetir la búsqueda por si Podemos publica programa o documento de medidas, y el vídeo del desayuno de Europa Press permitiría pasar a cita literal el coste de Repsol y la edad de jubilación.",
   "La crónica de Europa Press del 12-nov, que no se usa como fuente de compromiso, atribuye al partido la jubilación a los 63 años. Sigue descartada porque no hay cita literal de un líder."
- ]
+ ],
+ "coherencia_2026-11-12b": [
+  {
+   "id": "podemos-04",
+   "criterio": "largo_plazo",
+   "antes": "valoracion: no_verificable",
+   "despues": "valoracion: mixta",
+   "motivo": "igual estándar en «largo plazo» con frente_amplio-01 («mixta»): las dos expropiaciones a grandes propietarios carecen de estudios de efectos y en las dos se pueden describir con fuentes sus efectos mecánicos (más parque público o social, ningún aumento del número total de viviendas, coste del justiprecio o de la indemnización). La diferencia de diseño (uso temporal frente a propiedad) cambia el contenido del texto, no la valoración. «No_verificable» se reserva para los casos en que no puede decirse nada de los efectos porque dependen por entero de un diseño no definido (erc-04, pnv-11)."
+  },
+  {
+   "id": "podemos-04",
+   "criterio": "largo_plazo",
+   "antes": "Si se expropia el uso por un tiempo limitado, como la ocupación temporal que prevé la ley de 1954, las viviendas volverían a sus dueños al acabar el periodo y la indemnización sería un gasto mientras dure, a diferencia de construir o comprar vivienda pública. No se han localizado estudios sobre sus efectos en la inversión en vivienda en alquiler ni en el coste a largo plazo para las cuentas públicas.",
+   "despues": "Aumentaría el parque de alquiler social mientras dure la expropiación del uso, en un país en el que ese parque es inferior al 2 % de las viviendas, frente a una media del 7 % en la OCDE. Si se expropia el uso por un tiempo limitado, como la ocupación temporal que prevé la ley de 1954, las viviendas volverían a sus dueños al acabar el periodo y la indemnización sería un gasto mientras dure, a diferencia de construir o comprar vivienda pública; tampoco añade viviendas a un mercado con un déficit estructural de más de 400.000 unidades según el Banco de España (citado en el Plan Estatal 2026-2030). No se han localizado estudios sobre sus efectos en la inversión en vivienda en alquiler ni en el coste a largo plazo para las cuentas públicas.",
+   "motivo": "se añaden, con las mismas fuentes que frente_amplio-01, el tamaño del parque social (OCDE) y el déficit de viviendas (Plan Estatal 2026-2030)"
+  },
+  {
+   "id": "podemos-04",
+   "criterio": "largo_plazo",
+   "antes": "fuentes: https://www.boe.es/buscar/act.php?id=BOE-A-1954-15431, https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+   "despues": "fuentes: https://www.boe.es/buscar/act.php?id=BOE-A-1954-15431, https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229, https://www.oecd.org/content/dam/oecd/en/data/datasets/affordable-housing-database/ph4-2-social-rental-housing-stock.pdf, https://www.boe.es/eli/es/rd/2026/04/22/326",
+   "motivo": "fuentes de los datos añadidos"
+  }
+ ],
+ "coherencia_2026-11-12b_revision": [
+  {
+   "propuesta": "podemos-02",
+   "criterio": "financiacion",
+   "antes": "no_verificable: Es una medida regulatoria sin gasto público directo: limita quién puede comprar vivienda. Podría reducir la recaudación de los impuestos que gravan las compraventas, pero no se ha localizado ninguna estimación de ese efecto, por lo que no hay base pública para estimar su coste fiscal.",
+   "despues": "favorable: Es una medida regulatoria sin coste presupuestario directo relevante: prohíbe comprar vivienda salvo para vivir en ella. La limitación de compras del Real Decreto-ley 29/2026 (art. 1), también regulatoria, no lleva asociada ninguna partida de gasto, y el informe de tasación lo aporta el comprador. Podría reducir de forma indirecta la recaudación de los impuestos que gravan las compraventas, un efecto del que no se ha localizado estimación.",
+   "motivo": "Duda (b) de la auditoría del 12-11 (noche). Aplicación literal de la rúbrica de financiación de criterios.json: «Medidas sin coste presupuestario directo relevante (p. ej. regulatorias), si las fuentes lo documentan: favorable, explicándolo». Una prohibición de compra no tiene gasto público directo: la limitación análoga del RDL 29/2026 (art. 1) no lleva partida de gasto, a diferencia de otras medidas del mismo decreto (TU CASA, fondo de 400 M€), y el informe de tasación lo aporta el comprador. La posible menor recaudación del ITP es un efecto indirecto, como la menor base del IRPF en los topes de alquiler (adelante_andalucia-01, erc-06, compromis-02, podemos-01, ara_mes_fa-02), que son «favorable». Mismos hechos, misma valoración. cc-06 y ara_mes_fa-01 siguen «no_verificable» porque no definen el instrumento (prohibición, autorización previa o impuesto) y no puede documentarse que carezcan de coste directo."
+  }
+ ],
+ "recuento_final_coherencia_2026-11-12b_revision": {
+  "favorable": 11,
+  "mixta": 77,
+  "desfavorable": 2,
+  "no_verificable": 6
+ }
 }

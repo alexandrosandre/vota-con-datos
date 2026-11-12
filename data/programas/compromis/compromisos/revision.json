@@ -76,5 +76,50 @@
   "compromis-10, evidencia «desfavorable»: es la valoración más exigente del análisis y se apoya sobre todo en datos de la CNMC (regulador) y en un único estudio revisado por pares (Beria y otros, 2022, Italia). Se mantiene con el criterio de bng-12, pero es un caso frontera frente a podemos-08 («mixta»).",
   "Hogares en España: compromis-02 usa 19,7 millones (ECP a 1-1-2026) y compromis-03 19,95 millones (tabla INE 60131, 2026). Ambas son del INE y dan «unos 3,3 millones» de hogares de alquiler; no se unifican.",
   "La web electoral no tiene fecha de publicación: «fecha» es la de consulta (12-11-2026). Si se publica el programa completo («Programa sencer: enllaç pendent»), sustituye a este análisis."
- ]
+ ],
+ "coherencia_2026-11-12b": [
+  {
+   "id": "compromis-c15, compromis-c16, compromis-c17, compromis-c18, compromis-c19",
+   "criterio": "veces (seleccion.json)",
+   "antes": "[] (lista vacía, sin recuento)",
+   "despues": "{\"n\": 1, \"nota\": \"Una ocasión registrada: la de la cita principal.\", \"ocasiones\": []}",
+   "motivo": "todo compromiso debe llevar «veces» con el número de ocasiones públicas distintas (prompt 1b), con el mismo formato que el resto de la selección; estos cinco compromisos no prioritarios solo tienen registrada la ocasión de su cita principal. No afecta a la evaluación."
+  },
+  {
+   "id": "seleccion_sha256",
+   "criterio": "evaluacion.json",
+   "antes": "67903491bc822f1391f10dd1e47a6be1b8194a409f95ca7eb3561c064b826ebb",
+   "despues": "b5f7c5fb2ac71218fa409d57e5743845e58af5523c5f98557efa5e0e4559f893",
+   "motivo": "seleccion.json ha cambiado (formato de «veces» de los compromisos no prioritarios)"
+  }
+ ],
+ "coherencia_2026-11-12b_revision": [
+  {
+   "propuesta": "compromis-01",
+   "criterio": "financiacion",
+   "antes": "no_verificable: Es una medida regulatoria sin gasto público directo: limita quién puede comprar vivienda. Podría reducir la recaudación de los impuestos que gravan las compraventas, pero no se ha localizado ninguna estimación de ese efecto ni del volumen de compras de estos inversores, por lo que no hay base pública para estimar su coste fiscal.",
+   "despues": "favorable: Es una medida regulatoria sin coste presupuestario directo relevante: prohíbe comprar vivienda a una categoría de inversores. La limitación de compras del Real Decreto-ley 29/2026 (art. 1), también regulatoria, no lleva asociada ninguna partida de gasto, y el informe de tasación lo aporta el comprador. Podría reducir de forma indirecta la recaudación de los impuestos que gravan las compraventas, un efecto del que no se ha localizado estimación, como tampoco del volumen de compras de estos inversores.",
+   "motivo": "Duda (b) de la auditoría del 12-11 (noche). Aplicación literal de la rúbrica de financiación de criterios.json: «Medidas sin coste presupuestario directo relevante (p. ej. regulatorias), si las fuentes lo documentan: favorable, explicándolo». Una prohibición de compra no tiene gasto público directo: la limitación análoga del RDL 29/2026 (art. 1) no lleva partida de gasto, a diferencia de otras medidas del mismo decreto (TU CASA, fondo de 400 M€), y el informe de tasación lo aporta el comprador. La posible menor recaudación del ITP es un efecto indirecto, como la menor base del IRPF en los topes de alquiler (adelante_andalucia-01, erc-06, compromis-02, podemos-01, ara_mes_fa-02), que son «favorable». Mismos hechos, misma valoración. cc-06 y ara_mes_fa-01 siguen «no_verificable» porque no definen el instrumento (prohibición, autorización previa o impuesto) y no puede documentarse que carezcan de coste directo."
+  },
+  {
+   "propuesta": "compromis-10",
+   "criterio": "evidencia (texto y fuentes; valoración sin cambios: desfavorable)",
+   "antes": "Según la CNMC, entre 2019 y 2025 los viajeros de alta velocidad comercial se duplicaron hasta 44,5 millones y los precios bajaron en términos reales un 50 % en el Madrid-Valencia y en torno a un 40 % en los demás corredores; los usuarios consultados por la CNMC (informe de enero de 2026) dijeron que la competencia mejoró precios y frecuencias y que donde no la hay los precios siguieron altos o subieron. En Italia, la entrada de Italo en el Milán-Venecia rebajó entre un 21 % y un 26 % los precios de Trenitalia a corto plazo (Beria et al., 2022). La CNMC atribuye la caída del 21 % de viajeros del primer trimestre de 2026 a cortes de vía y limitaciones de velocidad, y la infraestructura ya es pública (Adif); no hemos encontrado evidencia de que la titularidad del operador influya en la seguridad.",
+   "despues": "La candidatura la justifica por la seguridad y la calidad del servicio y califica de «fallida» la liberalización de la alta velocidad (nota del 31-10-2026). Según la CNMC, entre 2019 y 2025 los viajeros de alta velocidad comercial se duplicaron hasta 44,5 millones y los precios bajaron en términos reales un 50 % en el Madrid-Valencia y en torno a un 40 % en los demás corredores, y los usuarios consultados (informe de enero de 2026) dijeron que la competencia mejoró precios y frecuencias y que donde no la hay los precios siguieron altos o subieron; en Italia, la entrada de Italo en el Milán-Venecia rebajó entre un 21 % y un 26 % los precios de Trenitalia a corto plazo (Beria et al., 2022). La CNMC atribuye la caída del 21 % de viajeros del primer trimestre de 2026 a cortes de vía y limitaciones de velocidad, y la infraestructura ya es pública (Adif); no hemos encontrado evidencia de que la titularidad del operador influya en la seguridad.",
+   "motivo": "Duda (a). La nota del 31-10 (fuente de compromis-c12) da dos objetivos, «la seguretat i la qualitat d'un servei públic», y llama «fallida» a la liberalización. La evidencia de la CNMC y de Beria et al. mide precisamente la calidad y el precio en el mercado que se revertiría y contradice esa premisa; sobre la seguridad no hay evidencia en ningún sentido. No hay evidencia «en ambos sentidos», así que corresponde «desfavorable» (prompt 3). En podemos-08 el objetivo declarado es la descarbonización y la evidencia en contra (Wolf, 2009) mide la eficiencia general de las petroleras estatales, no ese objetivo: «mixta». Las situaciones son distintas; el texto omitía el objetivo de calidad, que es lo que justifica la diferencia, y ahora lo dice."
+  },
+  {
+   "propuesta": "compromis-08",
+   "criterio": "beneficiarios (texto y fuentes; valoración sin cambios: favorable)",
+   "antes": "Beneficiaría a la Generalitat y a los 5,43 millones de residentes de la Comunitat Valenciana (INE, 1-1-2025), con una financiación por habitante ajustado de 92,8 sobre una media de 100 en 2024 (Fedea) y una deuda cercana al 40 % de su PIB, la más alta de las comunidades (AIReF). El coste lo asumiría la Administración central y, a través de ella, el conjunto de contribuyentes: 11.210 M€ en el proyecto de condonación de 2025 y 3.669 M€ anuales con el modelo del CPFF de 2026.",
+   "despues": "Beneficiaría a la Generalitat y a los 5,43 millones de residentes de la Comunitat Valenciana (INE, 1-1-2025), con una financiación por habitante ajustado de 92,8 sobre una media de 100 en 2024 (Fedea) y una deuda cercana al 40 % de su PIB, la más alta de las comunidades (AIReF). El coste lo asumiría la Administración central y, a través de ella, el conjunto de contribuyentes: 11.210 M€ en el proyecto de condonación de 2025 y 3.669 M€ anuales con el modelo del CPFF de 2026, la quita y la reforma cuya falta de aprobación lamenta Micó (elDiario.es, 25-10-2026); el fondo de nivelación no tiene cuantía.",
+   "motivo": "Duda (c). Rúbrica: «favorable» si beneficiarios y quién paga están identificados y cuantificados con fuentes. compromis-08 se cuantifica con instrumentos que la candidatura respalda: Micó reprocha al PP que rechace «la quita de la deuda» y lamenta que «aún no hemos podido aprobar la reforma» de Hacienda (25-10-2026), es decir, el proyecto de condonación (11.210 M€ para la Comunitat) y el modelo del CPFF (3.669 M€). cc-03 se cuantifica con el modelo del CPFF que respalda el Gobierno canario (1.337 M€). pp-06 propone «un nuevo modelo» que el programa no cifra y no es el del CPFF, y solo el fondo transitorio tiene una referencia externa (Fedea, 3.000 M€): beneficiarios identificados sin cuantificar, «mixta». Se mantienen las tres; el texto de compromis-08 no decía por qué esas cifras son atribuibles a la candidatura, y ahora lo dice."
+  }
+ ],
+ "recuento_final_coherencia_2026-11-12b_revision": {
+  "favorable": 14,
+  "mixta": 78,
+  "desfavorable": 2,
+  "no_verificable": 2
+ }
 }

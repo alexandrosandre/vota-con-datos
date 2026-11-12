@@ -173,5 +173,42 @@
   "vox-c02 y vox-c06 se formularon como exigencia al Gobierno actual (vox-c02) o en una entrevista (vox-c06), pero después de la convocatoria. Según la prensa, el programa del 12-nov las recoge. Se mantienen.",
   "Solo hay 10 prioridades: no quedan más compromisos concretos verificables con evidencia de que el partido los destaque. El programa de Vox del 12-nov es un PDF enlazado por Demócrata y no está publicado en una web oficial accesible. Incluye medidas que aquí se descartan por falta de cita literal, como la vivienda social con prioridad nacional y la auditoría ferroviaria. Cuando se catalogue, su análisis con el prompt 1 sustituirá a este.",
   "En internacional, vox-05 y vox-07 usan la reforma danesa de 2002, que rebajó las prestaciones de los refugiados, como aplicación parcial («mixta», según la regla de la auditoría del 12-11). No es una preferencia por nacionalidad."
+ ],
+ "coherencia_2026-11-12b": [
+  {
+   "id": "vox-c11",
+   "criterio": "veces (seleccion.json)",
+   "antes": "n = 3 (8-oct, 11-oct Moncloa.com, 6-nov)",
+   "despues": "n = 2 (8-oct y 6-nov); Moncloa.com con «cuenta»: false",
+   "motivo": "«veces» cuenta ocasiones públicas distintas, no fuentes (prompt 1b). La pieza de Moncloa.com del 11-oct no recoge una nueva intervención: resume la propuesta y «el propio Figaredo reconoce» el coste de 46.000 millones, cifra que ya publicó elDiario.es con sus declaraciones de esa semana. Se corrige también la nota del compromiso, que la contaba como repetición."
+  },
+  {
+   "id": "vox-c11",
+   "criterio": "nota (seleccion.json)",
+   "antes": "La rebaja de cuatro puntos por hijo solo consta en paráfrasis (101TV). elDiario.es (8-oct) sitúa la declaración «esta semana», sin fecha exacta; la convocatoria es del 6-oct. Las repeticiones del 11-oct y 6-nov son posteriores, y el ministro de Hacienda la trató como propuesta de Vox para el 29-N (13-oct).",
+   "despues": "La rebaja de cuatro puntos por hijo solo consta en paráfrasis (101TV). elDiario.es (8-oct) sitúa la declaración «esta semana», sin fecha exacta; la convocatoria es del 6-oct. La repetición del 6-nov (101TV) es posterior; la pieza de Moncloa.com del 11-oct resume las mismas declaraciones, y el ministro de Hacienda la trató como propuesta de Vox para el 29-N (13-oct).",
+   "motivo": "coherencia con el nuevo recuento de «veces»"
+  },
+  {
+   "id": "vox-c05",
+   "criterio": "veces (seleccion.json)",
+   "antes": "n = 6 (incluía la entrevista de ABC del 11-oct)",
+   "despues": "n = 5; ABC con «cuenta»: false",
+   "motivo": "Una ocasión solo cuenta si el líder repite el compromiso. En la entrevista de ABC (Diario de León, 11-oct) Abascal pide «remigración de quien está en España y no tiene que estar», es decir, de quien está en situación irregular (vox-c03), sin mencionar las ayudas. Las demás cinco ocasiones sí ligan la remigración a vivir de ayudas o no trabajar (Avilés: «para aquellos que están en España y no trabajan»)."
+  },
+  {
+   "id": "vox-05",
+   "criterio": "concrecion",
+   "antes": "Abascal enuncia el objetivo (que se vayan quienes «vienen a recibir las ayudas que no alcanzan a los españoles», incluso quienes pasan «una mala racha» prolongada) y lo ha repetido en seis ocasiones, pero no identifica la medida: no dice si sería retorno voluntario incentivado o expulsión, qué ayudas cuentan, cuántas personas ni en qué plazo.",
+   "despues": "Abascal enuncia el objetivo (que se vayan quienes «vienen a recibir las ayudas que no alcanzan a los españoles», incluso quienes pasan «una mala racha» prolongada) y lo ha repetido en cinco ocasiones, pero no identifica la medida: no dice si sería retorno voluntario incentivado o expulsión, qué ayudas cuentan, cuántas personas ni en qué plazo.",
+   "motivo": "recuento de ocasiones corregido en seleccion.json (vox-c05: de 6 a 5); la valoración no cambia"
+  },
+  {
+   "id": "seleccion_sha256",
+   "criterio": "evaluacion.json",
+   "antes": "736dc4aa9e3d7ef3822cbddc582193c5c4d35e353a94989948f8996dcd9b751d",
+   "despues": "f48fb91ea20bdb1dcf980aa853a23c730fdc087886f8adb28c97226b9e103943",
+   "motivo": "seleccion.json ha cambiado (veces de vox-c05 y vox-c11)"
+  }
  ]
 }

@@ -80,5 +80,78 @@
   "eh_bildu-02. Las cifras de sanciones del Ministerio del Interior que usan bng-11 y erc-05 (284.512 sanciones y 174,8 M€ en 2023) no se pudieron comprobar aquí: el Anuario devuelve 403. El texto dice que no se han podido cuantificar; la valoración coincide con la de esos partidos.",
   "eh_bildu-c01. La prórroga obligatoria se identifica por remisión al Real Decreto-ley 28/2026; Matute no dice si la recuperaría con el mismo texto (cinco o siete años e indemnización de doce mensualidades).",
   "El acto central de Bilbao (14-nov) y el resto de la campaña son posteriores a esta revisión."
- ]
+ ],
+ "coherencia_2026-11-12b": [
+  {
+   "id": "eh_bildu-c05",
+   "criterio": "selección (seleccion.json)",
+   "antes": "descartado: «Acabar con la compra especulativa de vivienda / prohibir el uso especulativo de la vivienda» (objetivo sin medida identificable)",
+   "despues": "compromiso eh_bildu-c05 y quinta prioridad: prohibir la compra de vivienda a fondos, empresas y grandes tenedores, y la de edificios enteros que no se destinen a alquiler regulado",
+   "motivo": "La crónica de Europa Press del Fórum Europa (Última Hora, 9-11-2026; copia en data/sources/compromisos/eh_bildu/ultimahora_ep_forum_20261109.txt) entrecomilla las palabras de Matute que definen la prohibición y a quién se aplica, que faltaban en la nota del partido. El anuncio en primera persona («plantearemos acabar con la compra especulativa de vivienda») está en la nota oficial del mismo acto, en la frase de la «primera iniciativa» en el Congreso. Es prioridad por la misma evidencia que eh_bildu-c01. veces: 1 (el 9-nov; la nota con LAB del 12-nov es genérica)."
+  },
+  {
+   "id": "eh_bildu-05",
+   "criterio": "evaluación (8 criterios)",
+   "antes": "—",
+   "despues": "concrecion mixta, legal mixta, financiacion no_verificable, evidencia mixta, internacional mixta, antecedentes mixta, beneficiarios mixta, largo_plazo mixta",
+   "motivo": "Nueva propuesta evaluada con el mismo estándar que las restricciones de compra comparables: igual que compromis-01 (prohibición para una categoría de inversores; legal «mixta» porque su encaje con el art. 63 TFUE depende del alcance y la duración, a diferencia de podemos-02 o cc-06, «desfavorable», que prohíben por finalidad general o por nacionalidad) y financiación «no_verificable» como todas las restricciones de compra (efecto en el ITP sin estimar). Concreción «mixta»: define qué y a quién (con la definición legal de gran tenedor), pero no plazo, duración, excepciones ni norma."
+  },
+  {
+   "id": "nota (seleccion.json y evaluacion.json)",
+   "criterio": "texto",
+   "antes": "EH Bildu no había publicado programa para el 29-N a 12-nov-2026 (data/partidos/partidos.json, comprobado el 12-nov). Se recogen los compromisos concretos de sus líderes (Oskar Matute, cabeza de lista …",
+   "despues": "EH Bildu no había publicado programa para el 29-N a 12-nov-2026 (data/partidos/partidos.json, comprobado el 12-nov). Se recogen los compromisos concretos de sus líderes (Oskar Matute, cabeza de lista …",
+   "motivo": "cinco compromisos y cinco prioridades"
+  },
+  {
+   "id": "seleccion_sha256",
+   "criterio": "evaluacion.json",
+   "antes": "7d6baffb051f3b5e2cd97715d06006513cfd8e0f02211c427f05a19c0e4d9277",
+   "despues": "069ea0640c1ce022ec100b5e49c64ae12914edbc73ebf694811b3c895bf64886",
+   "motivo": "seleccion.json ha cambiado (nuevo compromiso eh_bildu-c05)"
+  }
+ ],
+ "recuento_final_coherencia_2026-11-12b": {
+  "favorable": 5,
+  "mixta": 32,
+  "desfavorable": 0,
+  "no_verificable": 3,
+  "nota": "Tras añadir eh_bildu-05 (5 propuestas × 8 criterios). El «recuento_final» de arriba es el de la revisión independiente (4 propuestas)."
+ },
+ "coherencia_2026-11-12b_revision": [
+  {
+   "propuesta": "eh_bildu-c05 / eh_bildu-05",
+   "criterio": "revisión independiente (prompt 4)",
+   "antes": "sin revisar",
+   "despues": "aprobado, con dos correcciones de texto (legal y largo plazo) y la financiación de no_verificable a favorable por la duda (b)",
+   "motivo": "Revisor: Claude (Anthropic), pasada independiente, 12-11-2026. Cita: aparece literal, entre comillas angulares y sin el marco del periodista («ha anunciado que la formación soberanista planteará nuevas medidas para» queda fuera), en la copia local (SHA-256 bf136f44…, coincide) y en la página en línea de Última Hora (Europa Press, 9-11-2026); son palabras de Matute, cabeza de lista por Bizkaia, en un acto público de campaña para esta legislatura. La primera persona («plantearemos acabar con la compra especulativa de vivienda») está en la nota oficial del mismo acto (copia local 120c63ba…, coincide con la página en línea), en la frase de la «primera iniciativa». Es medida concreta (qué y a quién). Prioridad: la nota la lleva en el titular y la anuncia junto a la primera iniciativa; justificación conforme al prompt 1b. veces = 1 correcto. Fuentes: se abrieron las 18 URL; 17 respondieron 200 a una petición normal y el PDF de la GAO, que devolvió 403 a curl, se leyó con una descarga ordinaria (sin sortear protecciones). Comprobados: Ley 12/2023 art. 3.k (más de diez inmuebles o 1.500 m²); RDL 29/2026 art. 1 (compras por menos del 70 % del valor de mercado, hasta el 31-12-2030, entidades de compra con descuento y personas jurídicas grandes tenedoras, excepciones como vivienda habitual asequible; vigencia 2030 justificada por proporcionalidad; en vigor 8-10-2026); convalidación el 12-11-2026 (Congreso 130/000060); RDL 26/2026 derogado por Resolución de 2-10-2026; INE ECV 2025 (73,3 % propiedad, 16,7 % alquiler de mercado, API del INE); Europa Press 23-4-2026 (61 %); GAO-24-106643 (74 estudios, mayo de 2024); Du y Zhang (7,69); Konle, Libert, STC 93/2015; Países Bajos (2022, unos 70 municipios, evaluación 15-10-2026); elDiario.es y Naiz (PP derogaría; apoyo de EH Bildu). Valoraciones coherentes con compromis-01 (mismas M/M/M/M/M/M/M en los demás criterios) y con podemos-02 (legal «desfavorable» solo por prohibición general salvo para residir)."
+  },
+  {
+   "propuesta": "eh_bildu-05",
+   "criterio": "legal (texto)",
+   "antes": "El art. 63 TFUE prohíbe las restricciones a los movimientos de capitales, incluida la compra de inmuebles; el TJUE solo admite límites por objetivos de vivienda u ordenación del territorio si son adecuados y no van más allá de lo necesario, y ha declarado contrarios a esa libertad un sistema de autorización previa (Konle, C-302/97) y el requisito de «vínculo suficiente» con el municipio para comprar (Libert, C-197/11). El Real Decreto-ley 29/2026, convalidado el 12-11-2026, limita hasta 2030 las compras por menos del 70 % del valor de mercado a ciertas entidades y a las personas jurídicas grandes tenedoras, con excepciones, y justifica ese plazo por proporcionalidad. Una prohibición de toda compra para esas categorías, salvo los edificios destinados a alquiler regulado, no ha sido examinada por ningún tribunal, y su encaje dependería de su alcance y duración, que Matute no ha concretado. Una limitación general del uso de la propiedad de la vivienda exige ley formal y no decreto-ley (STC 93/2015).",
+   "despues": "El art. 63 TFUE prohíbe las restricciones a los movimientos de capitales, incluida la compra de inmuebles; el TJUE solo admite límites por objetivos de vivienda u ordenación del territorio si son adecuados y no van más allá de lo necesario, y ha declarado contrarios a esa libertad un sistema de autorización previa (Konle, C-302/97) y el requisito de «vínculo suficiente» con el municipio para comprar (Libert, C-197/11). El Real Decreto-ley 29/2026, convalidado el 12-11-2026, limita hasta 2030 las compras por menos del 70 % del valor de mercado a ciertas entidades y a las personas jurídicas grandes tenedoras, con excepciones, y justifica ese plazo por proporcionalidad. Una prohibición de toda compra de vivienda para esas categorías, junto con la de edificios enteros que no se destinen a alquiler regulado, no ha sido examinada por ningún tribunal, y su encaje dependería de su alcance y duración, que Matute no ha concretado. Una limitación general del uso de la propiedad de la vivienda exige ley formal y no decreto-ley (STC 93/2015).",
+   "motivo": "Matute enumera dos prohibiciones («prohibiendo la compra a los fondos, empresas y grandes tenedores, y también la adquisición de edificios enteros que no sean destinados a un alquiler regulado»); no dice que los edificios con alquiler regulado sean una excepción a la primera. El texto atribuía una excepción que la cita no contiene. Valoración sin cambios."
+  },
+  {
+   "propuesta": "eh_bildu-05",
+   "criterio": "largo_plazo (texto)",
+   "antes": "Según la GAO, la entrada de grandes inversores puede elevar precios y alquileres, pero también aportó capital para rehabilitar y estabilizar barrios tras la crisis, de modo que excluirlos tiene efectos en ambos sentidos. Si las empresas no pueden comprar vivienda para alquilarla, salvo edificios enteros con alquiler regulado, podría reducirse la oferta de alquiler de mercado en la que vive el 16,7 % de los hogares; en San Francisco, la retirada de viviendas del alquiler para venderlas a propietarios residentes encareció los alquileres de mercado a largo plazo, según sus autores (Diamond y otros, 2019). Una prohibición amplia o indefinida podría ser cuestionada por contraria a la libre circulación de capitales (art. 63 TFUE); el propio Real Decreto-ley 29/2026 limita su restricción hasta 2030 para garantizar su proporcionalidad.",
+   "despues": "Según la GAO, la entrada de grandes inversores puede elevar precios y alquileres, pero también aportó capital para rehabilitar y estabilizar barrios tras la crisis, de modo que excluirlos tiene efectos en ambos sentidos. Si las empresas no pueden comprar vivienda para alquilarla (Matute no aclara si podrían comprar edificios enteros para alquiler regulado), podría reducirse la oferta de alquiler de mercado en la que vive el 16,7 % de los hogares; en San Francisco, la retirada de viviendas del alquiler para venderlas a propietarios residentes encareció los alquileres de mercado a largo plazo, según sus autores (Diamond y otros, 2019). Una prohibición amplia o indefinida podría ser cuestionada por contraria a la libre circulación de capitales (art. 63 TFUE); el propio Real Decreto-ley 29/2026 limita su restricción hasta 2030 para garantizar su proporcionalidad.",
+   "motivo": "Mismo motivo que en «legal»: la excepción de los edificios con alquiler regulado para fondos y empresas no consta en la cita. Valoración sin cambios."
+  },
+  {
+   "propuesta": "eh_bildu-05",
+   "criterio": "financiacion",
+   "antes": "no_verificable: Es una medida regulatoria sin gasto público directo: limita quién puede comprar vivienda. Podría reducir la recaudación de los impuestos que gravan las compraventas, pero no hemos localizado ninguna estimación de ese efecto ni del volumen de compras de fondos, empresas y grandes tenedores, por lo que no hay base pública para estimar su coste fiscal.",
+   "despues": "favorable: Es una medida regulatoria sin coste presupuestario directo relevante: prohíbe comprar vivienda a determinados compradores. La limitación de compras del Real Decreto-ley 29/2026 (art. 1), también regulatoria, no lleva asociada ninguna partida de gasto, y el informe de tasación lo aporta el comprador. Podría reducir de forma indirecta la recaudación de los impuestos que gravan las compraventas, un efecto del que no hemos localizado estimación, como tampoco del volumen de compras de fondos, empresas y grandes tenedores.",
+   "motivo": "Duda (b) de la auditoría del 12-11 (noche). Aplicación literal de la rúbrica de financiación de criterios.json: «Medidas sin coste presupuestario directo relevante (p. ej. regulatorias), si las fuentes lo documentan: favorable, explicándolo». Una prohibición de compra no tiene gasto público directo: la limitación análoga del RDL 29/2026 (art. 1) no lleva partida de gasto, a diferencia de otras medidas del mismo decreto (TU CASA, fondo de 400 M€), y el informe de tasación lo aporta el comprador. La posible menor recaudación del ITP es un efecto indirecto, como la menor base del IRPF en los topes de alquiler (adelante_andalucia-01, erc-06, compromis-02, podemos-01, ara_mes_fa-02), que son «favorable». Mismos hechos, misma valoración. cc-06 y ara_mes_fa-01 siguen «no_verificable» porque no definen el instrumento (prohibición, autorización previa o impuesto) y no puede documentarse que carezcan de coste directo."
+  }
+ ],
+ "recuento_final_coherencia_2026-11-12b_revision": {
+  "favorable": 6,
+  "mixta": 32,
+  "desfavorable": 0,
+  "no_verificable": 2
+ }
 }
