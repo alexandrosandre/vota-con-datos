@@ -1,0 +1,246 @@
+{
+ "partido": "eh_bildu",
+ "base": "compromisos",
+ "modelo": "Claude (Anthropic)",
+ "fecha": "2026-11-12",
+ "nota": "EH Bildu no había publicado programa para el 29-N a 12-nov-2026 (data/partidos/partidos.json, comprobado el 12-nov). Se recogen los compromisos concretos de sus líderes (Oskar Matute, cabeza de lista por Bizkaia y portavoz en el Congreso; Oihana Etxebarrieta, cabeza de lista por Gipuzkoa; Laura Aznal, portavoz en el Parlamento de Navarra) y de las notas oficiales del partido desde la convocatoria (6-oct-2026). En la presentación de campaña (8-nov) el partido solo enumeró temas (vivienda, coste de la vida, salarios, pensiones, servicios públicos). Solo se encontraron cuatro compromisos concretos y verificables; los cuatro son prioridades. Donde un compromiso remite a una norma ya conocida (el Real Decreto-ley 28/2026 de prórroga de los alquileres, la proposición de ley sobre plataformas de alquiler turístico o el acuerdo de 2024 sobre la ley de seguridad ciudadana), las notas de esa norma figuran en «veces» como definición del instrumento, no como ocasiones de campaña.",
+ "compromisos": [
+  {
+   "id": "eh_bildu-c01",
+   "area": "vivienda",
+   "resumen": "Recuperar la prórroga obligatoria y sucesiva de los contratos de alquiler de vivienda habitual que preveía el Real Decreto-ley 28/2026, como primera iniciativa de EH Bildu en el nuevo Congreso.",
+   "cita": "La primera iniciativa que llevaremos al Congreso será no solo recuperar la prórroga automática de los contratos que las derechas tumbarán esta semana en el Congreso, sino que además plantearemos acabar con la compra especulativa de vivienda",
+   "quien": "Oskar Matute (cabeza de lista de EH Bildu al Congreso por Bizkaia)",
+   "formato": "conferencia en el Nueva Economía Fórum-Fórum Europa, recogida en nota de prensa del partido",
+   "fecha": "2026-11-09",
+   "url": "https://ehbildu.eus/es/noticias/eh-bildu-anuncia-que-planteara-recuperar-la-prorroga-automatica-de-los-contratos-de-alquiler-y-acabar-con-la-compra-especulativa-de-vivienda",
+   "medio": "EH Bildu (nota de prensa)",
+   "fuente_local": "data/sources/compromisos/eh_bildu/ehb_forum_20261109.txt",
+   "cuantificado": true,
+   "nota": "«La prórroga automática de los contratos que las derechas tumbarán esta semana» es el Real Decreto-ley 28/2026, que la Diputación Permanente rechazó el 12-nov: prórroga tácita y obligatoria por plazos sucesivos de cinco años (siete si el arrendador es persona jurídica), salvo preaviso del arrendador, que debe indemnizar al inquilino con al menos doce mensualidades. La segunda parte de la cita («acabar con la compra especulativa») se descarta por no definir medida (véase «descartados»).",
+   "veces": {
+    "n": 3,
+    "nota": "Incluida la cita principal (Fórum Europa, 9-nov): 7-nov, 9-nov y 12-nov.",
+    "ocasiones": [
+     {
+      "fecha": "2026-11-07",
+      "ocasion": "entrevista de Matute en Público (pide apoyar el decreto «que plantea una medida estructural como es la de la permanencia larga de los contratos»)",
+      "url": "https://www.publico.es/politica/partidos/izquierda-lucha-cosa-circulo-intelectuales.html",
+      "medio": "Público",
+      "fuente_local": "data/sources/compromisos/eh_bildu/publico_matute_20261107.txt",
+      "cita": "especialmente, al que plantea una medida estructural como es la de la permanencia larga de los contratos",
+      "sha256": "063c4a5a3888c9975f0f8e9e3bd7accc454e726f3d5f391f8e6e47d155dc17b4",
+      "cuenta": true,
+      "nota_revision": "entrevista en Público, 7-nov"
+     },
+     {
+      "fecha": "2026-11-12",
+      "ocasion": "votación del Real Decreto-ley 28/2026 en la Diputación Permanente: Matute ratifica el apoyo de EH Bildu",
+      "url": "https://www.naiz.eus/es/info/noticia/20261112/decretos-de-vivienda-el-congreso-aprueba-uno-y-rechaza-el-otro-por-el-voto-del-pnv",
+      "medio": "Naiz",
+      "fuente_local": "data/sources/compromisos/eh_bildu/naiz_decretos_20261112.txt",
+      "cita": "El portavoz de EH Bildu, Oskar Matute, ha ratificado el apoyo de su formación a ambas iniciativas",
+      "sha256": "0cbfd6d713cbbeff0a479f548b30fe885737aa9dbbee4d7d08f07784ebd34254",
+      "cuenta": true,
+      "nota_revision": "votación en la Diputación Permanente, 12-nov"
+     },
+     {
+      "fecha": "2026-11-12",
+      "ocasion": "reunión pública con LAB (nota oficial; con Oihana Etxebarrieta, cabeza de lista por Gipuzkoa)",
+      "url": "https://ehbildu.eus/es/noticias/eh-bildu-y-lab-hacen-un-llamamiento-a-garantizar-una-vivienda-digna-y-unos-salarios-dignos-y-a-hacer-frente-a-la-extrema-derecha",
+      "medio": "EH Bildu (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/eh_bildu/ehb_lab_20261112.txt",
+      "cita": "bajar los precios de los alquileres, garantizar la estabilidad de los inquilinos",
+      "sha256": "a180fc4d6f966b6f351ff6bb2d135085935f2f5ca7cc3777d3ee0099a5144a75",
+      "cuenta": false,
+      "nota_revision": "objetivo genérico («garantizar la estabilidad de los inquilinos»), sin la prórroga"
+     }
+    ]
+   },
+   "sha256": "120c63ba5da97d416c30a2d43b8241ffeaf0854754f3fd766d036258668aee46"
+  },
+  {
+   "id": "eh_bildu-c02",
+   "area": "justicia e instituciones",
+   "resumen": "Derogar la Ley Orgánica 4/2015 de protección de la seguridad ciudadana («ley mordaza») o, al menos, sus elementos que EH Bildu considera lesivos (devoluciones en frontera, pelotas de goma, sanciones por faltas de respeto y desobediencia), al inicio de la legislatura.",
+   "cita": "dimos la palabra a la sociedad vasca de que íbamos a trabajar para que se derogue la ley mordaza, algo que es una asignatura pendiente que vamos a poner encima de la mesa tan pronto se constituyan las nuevas cámaras",
+   "quien": "Oskar Matute (cabeza de lista de EH Bildu al Congreso por Bizkaia)",
+   "formato": "entrevista",
+   "fecha": "2026-11-07",
+   "url": "https://www.publico.es/politica/partidos/izquierda-lucha-cosa-circulo-intelectuales.html",
+   "medio": "Público",
+   "fuente_local": "data/sources/compromisos/eh_bildu/publico_matute_20261107.txt",
+   "cuantificado": true,
+   "nota": "En la misma respuesta Matute habla de una derogación «en su integridad o en aquellos elementos que se consideraban como lesivos». El plazo («tan pronto se constituyan las nuevas cámaras») es la cuantificación.",
+   "veces": {
+    "n": 1,
+    "nota": "Una ocasión de campaña: entrevista en Público (7-nov).",
+    "ocasiones": [
+     {
+      "fecha": "2024-10-03",
+      "ocasion": "anterior a la convocatoria: acuerdo de EH Bildu con el Gobierno sobre los cuatro puntos pendientes de la reforma (define el contenido que el partido considera lesivo)",
+      "url": "https://ehbildu.eus/herriak/kongresua-senatua/es/noticias/eh-bildu-acuerda-con-el-gobierno-espanol-acabar-con-la-ley-mordaza",
+      "medio": "EH Bildu (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/eh_bildu/ehb_mordaza_acuerdo.txt",
+      "cita": "como son las faltas de respeto, la desobediencia, las pelotas de goma y las devoluciones en frontera",
+      "sha256": "ffe6ddca09c8ec12ec35e54b50106fd88baffd83d1e70d7721ae59a2f795fdf5",
+      "cuenta": false,
+      "nota_revision": "anterior a la convocatoria: define el contenido"
+     }
+    ]
+   },
+   "sha256": "063c4a5a3888c9975f0f8e9e3bd7accc454e726f3d5f391f8e6e47d155dc17b4"
+  },
+  {
+   "id": "eh_bildu-c03",
+   "area": "vivienda",
+   "resumen": "Volver a impulsar la ley de EH Bildu que hace a las plataformas digitales responsables de no anunciar ni contratar alojamientos turísticos sin registro o licencia válida, con un régimen sancionador.",
+   "cita": "La legislatura cayó cuando estábamos ya en la última fase de negociación con los partidos con los que queríamos contar para sacar la ley adelante. [...] Ha sido una lástima, pero nosotros vamos a seguir insistiendo.",
+   "quien": "Oskar Matute (cabeza de lista de EH Bildu al Congreso por Bizkaia)",
+   "formato": "entrevista (respuesta a una pregunta sobre la propuesta de EH Bildu para impedir que las plataformas oferten pisos turísticos ilegales)",
+   "fecha": "2026-11-07",
+   "url": "https://www.publico.es/politica/partidos/izquierda-lucha-cosa-circulo-intelectuales.html",
+   "medio": "Público",
+   "fuente_local": "data/sources/compromisos/eh_bildu/publico_matute_20261107.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 1,
+    "nota": "Una ocasión de campaña: entrevista en Público (7-nov).",
+    "ocasiones": [
+     {
+      "fecha": "2025-07-20",
+      "ocasion": "anterior a la convocatoria: EH Bildu registra la proposición de ley (define el instrumento)",
+      "url": "https://ehbildu.eus/herriak/kongresua-senatua/es/noticias/eh-bildu-presenta-en-el-congreso-una-ley-para-prohibir-a-las-plataformas-anunciar-y-contratar-alojamientos-turisticos-ilegales",
+      "medio": "EH Bildu (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/eh_bildu/ehb_ley_plataformas_presenta.txt",
+      "cita": "las plataformas digitales serán legalmente responsables de que los alojamientos anunciados cuenten con registro o licencia válida",
+      "sha256": "e723f22d441dd28317e3b1aeaa41a2110441cadeee583c1435ca37c396c82a20",
+      "cuenta": false,
+      "nota_revision": "anterior a la convocatoria: define el instrumento"
+     },
+     {
+      "fecha": "2025-10-07",
+      "ocasion": "anterior a la convocatoria: el Pleno del Congreso toma en consideración la proposición (176 votos a favor, 169 en contra)",
+      "url": "https://ehbildu.eus/herriak/kongresua-senatua/es/noticias/eh-bildu-logra-el-apoyo-mayoritario-del-congreso-para-iniciar-la-tramitacion-de-la-ley-para-prohibir-a-las-plataformas-anunciar-y-contratar-pisos-turisticos-ilegales",
+      "medio": "EH Bildu (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/eh_bildu/ehb_ley_plataformas_toma.txt",
+      "cita": "176 diputados han votado a favor de la iniciativa, y 169 en contra",
+      "sha256": "b674521c831267d4bacae8eb18d5e493b44a70afe66792fc4c1cb383d62ccc3a",
+      "cuenta": false,
+      "nota_revision": "anterior a la convocatoria"
+     }
+    ]
+   },
+   "sha256": "063c4a5a3888c9975f0f8e9e3bd7accc454e726f3d5f391f8e6e47d155dc17b4"
+  },
+  {
+   "id": "eh_bildu-c04",
+   "area": "empleo",
+   "resumen": "Un salario mínimo propio para el País Vasco y Navarra, distinto del estatal.",
+   "cita": "Ambos han ratificado las dos principales reivindicaciones de la huelga: el salario mínimo propio, también reivindicado en la huelga general del 17 de marzo, y las transformaciones estructurales para garantizar el derecho a la vivienda.",
+   "quien": "EH Bildu (nota oficial de la reunión con LAB, con Oihana Etxebarrieta, cabeza de lista por Gipuzkoa, y Arkaitz Rodríguez, secretario de Acción Política)",
+   "formato": "documento oficial (nota de prensa)",
+   "fecha": "2026-11-12",
+   "url": "https://ehbildu.eus/es/noticias/eh-bildu-y-lab-hacen-un-llamamiento-a-garantizar-una-vivienda-digna-y-unos-salarios-dignos-y-a-hacer-frente-a-la-extrema-derecha",
+   "medio": "EH Bildu (nota de prensa)",
+   "fuente_local": "data/sources/compromisos/eh_bildu/ehb_lab_20261112.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 2,
+    "nota": "Incluida la cita principal (nota del 12-nov): 22-oct y 12-nov.",
+    "ocasiones": [
+     {
+      "fecha": "2026-10-22",
+      "ocasion": "Laura Aznal, portavoz de EH Bildu en el Parlamento de Navarra, al llamar a la huelga del 11-nov",
+      "url": "https://ehbildu.eus/herriak/nafarroa/es/noticias/eh-bildu-llama-a-la-unirse-a-la-huelga-del-11n-para-garantizar-el-acceso-a-la-vivienda-digna",
+      "medio": "EH Bildu (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/eh_bildu/ehb_huelga_11n.txt",
+      "cita": "reivindicar de nuevo un SMI propio para Navarra que proteja el poder adquisitivo de las personas trabajadoras de Navarra",
+      "sha256": "9baedaf059110193ea8abf3b18392fb5129a3e99be0fca8738ebbdf8f581b73c",
+      "cuenta": true,
+      "nota_revision": "Laura Aznal, 22-oct"
+     }
+    ]
+   },
+   "sha256": "a180fc4d6f966b6f351ff6bb2d135085935f2f5ca7cc3777d3ee0099a5144a75"
+  }
+ ],
+ "prioridades": [
+  {
+   "id": "eh_bildu-c01",
+   "justificacion": "El cabeza de lista por Bizkaia y portavoz en el Congreso la anuncia como «la primera iniciativa que llevaremos al Congreso» en el Fórum Europa (9-nov), presentado por el secretario general Arnaldo Otegi; la defiende en Público (7-nov) y en la votación del 12-nov, y la vivienda es el primer eje de la campaña."
+  },
+  {
+   "id": "eh_bildu-c02",
+   "justificacion": "Matute la presenta como compromiso adquirido con la sociedad vasca («dimos la palabra») y fija el momento: «tan pronto se constituyan las nuevas cámaras» (Público, 7-nov)."
+  },
+  {
+   "id": "eh_bildu-c03",
+   "justificacion": "Matute se compromete a «seguir insistiendo» en su ley sobre pisos turísticos ilegales (Público, 7-nov); es la iniciativa propia de EH Bildu sobre vivienda, el primer eje de la campaña."
+  },
+  {
+   "id": "eh_bildu-c04",
+   "justificacion": "El partido la ratifica con LAB, con su cabeza de lista por Gipuzkoa (12-nov), como una de las dos principales reivindicaciones de la huelga del 11-nov, y la reclama su portavoz en el Parlamento de Navarra (22-oct); los salarios son eje de campaña (presentación del 8-nov)."
+  }
+ ],
+ "descartados": [
+  {
+   "medida": "Acabar con la compra especulativa de vivienda / prohibir el uso especulativo de la vivienda",
+   "url": "https://ehbildu.eus/es/noticias/eh-bildu-anuncia-que-planteara-recuperar-la-prorroga-automatica-de-los-contratos-de-alquiler-y-acabar-con-la-compra-especulativa-de-vivienda",
+   "fuente_local": "data/sources/compromisos/eh_bildu/ehb_forum_20261109.txt",
+   "motivo": "Matute (9-nov) y la nota con LAB (12-nov) no definen qué compras serían especulativas ni con qué instrumento se prohibirían: objetivo sin medida identificable.",
+   "sha256": "120c63ba5da97d416c30a2d43b8241ffeaf0854754f3fd766d036258668aee46"
+  },
+  {
+   "medida": "Que las grandes empresas energéticas, petroleras y alimentarias absorban el aumento de costes en situaciones inflacionarias",
+   "url": "https://ehbildu.eus/es/noticias/eh-bildu-anuncia-que-planteara-recuperar-la-prorroga-automatica-de-los-contratos-de-alquiler-y-acabar-con-la-compra-especulativa-de-vivienda",
+   "fuente_local": "data/sources/compromisos/eh_bildu/ehb_forum_20261109.txt",
+   "motivo": "Sin instrumento (impuesto, tope de precios o margen) ni cuantía.",
+   "sha256": "120c63ba5da97d416c30a2d43b8241ffeaf0854754f3fd766d036258668aee46"
+  },
+  {
+   "medida": "Bajar los alquileres, evitar desahucios sin alternativa habitacional y ampliar el parque público de vivienda",
+   "url": "https://ehbildu.eus/es/noticias/eh-bildu-y-lab-hacen-un-llamamiento-a-garantizar-una-vivienda-digna-y-unos-salarios-dignos-y-a-hacer-frente-a-la-extrema-derecha",
+   "fuente_local": "data/sources/compromisos/eh_bildu/ehb_lab_20261112.txt",
+   "motivo": "Objetivos enunciados sin medida, cifra ni instrumento.",
+   "sha256": "a180fc4d6f966b6f351ff6bb2d135085935f2f5ca7cc3777d3ee0099a5144a75"
+  },
+  {
+   "medida": "Plan 30K (30.000 viviendas en cinco o seis años) y expropiación de viviendas vacías de fondos de inversión",
+   "url": "https://www.publico.es/politica/partidos/izquierda-lucha-cosa-circulo-intelectuales.html",
+   "fuente_local": "data/sources/compromisos/eh_bildu/publico_matute_20261107.txt",
+   "motivo": "Matute las sitúa en la Comunidad Autónoma Vasca y en la ley vasca de vivienda de 2015: ámbito autonómico, no compromiso para el Congreso.",
+   "sha256": "063c4a5a3888c9975f0f8e9e3bd7accc454e726f3d5f391f8e6e47d155dc17b4"
+  },
+  {
+   "medida": "Paquete laboral planteado a Sánchez (SMI por encima de la inflación en 2027, 60 % del salario medio por ley, recargos a las horas extra, reducción de jornada) y «ofensiva democrática, social y plurinacional»",
+   "url": "https://ehbildu.eus/herriak/kongresua-senatua/es/noticias/eh-bildu-exige-a-sanchez-un-paquete-laboral-ambicioso-para-recuperar-salarios-y-derechos-a-los-reaccionarios-se-les-para-con-mas-derechos-para-la-clase-trabajadora",
+   "fuente_local": "data/sources/compromisos/eh_bildu/ehb_paquete_laboral.txt",
+   "motivo": "Intervenciones de Mertxe Aizpurua en sesiones de control anteriores a la convocatoria, dirigidas al resto de la legislatura anterior y no presentadas como oferta para el 29-N.",
+   "sha256": "bc6fdb72f4228a0aeaabd1716822c6a15399d8c3effdaa05f0cfc09234948ad4"
+  },
+  {
+   "medida": "Declarar toda Navarra zona de mercado residencial tensionado",
+   "url": "https://ehbildu.eus/herriak/nafarroa/es/noticias/eh-bildu-llama-a-la-unirse-a-la-huelga-del-11n-para-garantizar-el-acceso-a-la-vivienda-digna",
+   "fuente_local": "data/sources/compromisos/eh_bildu/ehb_huelga_11n.txt",
+   "motivo": "Moción en el Parlamento de Navarra dirigida al Gobierno foral: ámbito autonómico.",
+   "sha256": "9baedaf059110193ea8abf3b18392fb5129a3e99be0fca8738ebbdf8f581b73c"
+  },
+  {
+   "medida": "Logros y ejes genéricos en la presentación de listas (Araba, Bizkaia, Nafarroa) y de la campaña",
+   "url": "https://ehbildu.eus/herriak/araba/es/noticias/mikel-otero-la-fuerza-que-consiga-eh-bildu-el-29n-en-araba-tendra-un-premio-extra-dejar-al-bloque-reaccionario-sin-representacion",
+   "fuente_local": "data/sources/compromisos/eh_bildu/ehb_otero_araba.txt",
+   "motivo": "Balance de la legislatura anterior y enunciados generales («una solución ferroviaria que compatibilice...», «la respuesta más contundente al problema de la vivienda») sin medida concreta. Lo mismo en las notas de Bizkaia (ehb_lista_bizkaia.txt), Nafarroa (ehb_listas_nafarroa.txt) y la presentación de campaña del 8-nov (ehb_acto_bilbao.txt).",
+   "sha256": "2ff8b3b01136460a01cb0239b3a9496d4975d1ad99dcf4ccd854238a7b7296f3"
+  }
+ ],
+ "busqueda": {
+  "hasta": "2026-11-12",
+  "fuentes": [
+   "ehbildu.eus: secciones de Congreso-Senado, Araba, Bizkaia, Gipuzkoa y Nafarroa (listados paginados) y notas de portada del 8 al 12-nov; sección de documentos (los últimos documentos políticos son de abril-junio de 2026, anteriores a la convocatoria).",
+   "Prensa: Público (entrevista a Matute, 7-nov), Naiz (portada del 12-nov y crónica de la Diputación Permanente), elDiario.es (candidatura, 16-oct).",
+   "Arnaldo Otegi y Mertxe Aizpurua: en las notas de campaña localizadas Otegi solo interviene para enmarcar las elecciones (Fórum Europa, 9-nov) y Aizpurua no repite como candidata; sus propuestas localizadas son anteriores a la convocatoria.",
+   "Limitación: el cupo de búsquedas web de la sesión se agotó durante la investigación; la búsqueda se completó leyendo directamente las webs del partido y de los medios. El acto central de Bilbao (14-nov) y el resto de la campaña son posteriores al cierre."
+  ]
+ }
+}

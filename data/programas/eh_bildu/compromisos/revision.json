@@ -1,0 +1,84 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-12",
+ "alcance": "Selección (4 compromisos, 4 prioridades) y evaluación (4 propuestas × 8 criterios). Se abrieron todas las URL citadas (respuesta 200), salvo el Anuario Estadístico del Ministerio del Interior, que devuelve 403 a peticiones automáticas y no se usó como fuente. Todas las citas aparecen literalmente en la página en línea y en la copia local. Se comprobaron las cifras y normas: Real Decreto-ley 28/2026 (BOE), Naiz (votación del 12-nov), STC 172/2020, Orain, Reglamento (UE) 2024/1028 (arts. 8 y 19, considerando 16), Real Decreto 1312/2024 (48 horas, efectos desde el 1-7-2025), Garcia-López et al. (2020), Real Decreto 126/2026 (1.221 €/mes), INE EAES 2023, TSJPV, Banco de España (DO 2113), Dube y Lindner (2021), Diamond et al. (2019). verify_quotes: 0 citas no encontradas.",
+ "igual_estandar": "Ley de seguridad ciudadana (eh_bildu-02): se alinea con bng-11, la misma derogación con las mismas pelotas de goma (encaje legal «favorable», evidencia «mixta» con Haar et al., 2017, financiación «favorable», internacional «no_verificable»). Prórroga de alquileres (eh_bildu-01) y plataformas (eh_bildu-03): financiación «favorable» por ser regulatorias sin coste presupuestario, como pnv-01 y adelante_andalucia-01. Salario mínimo propio (eh_bildu-04): financiación «no_verificable» al no haber cuantía, como erc-09.",
+ "recuento_final": {
+  "favorable": 5,
+  "mixta": 25,
+  "desfavorable": 0,
+  "no_verificable": 2
+ },
+ "cambios": [
+  {
+   "propuesta": "eh_bildu-c01",
+   "criterio": "veces (seleccion.json)",
+   "antes": "lista de 3 fuentes, sin recuento",
+   "despues": "n = 3 ocasiones públicas distintas; lista de URL conservada con «cuenta» por entrada",
+   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas en que lo repite un líder; la lista mezclaba ocasiones de campaña con documentos anteriores a la convocatoria que definen el instrumento y menciones genéricas. Incluida la cita principal (Fórum Europa, 9-nov): 7-nov, 9-nov y 12-nov."
+  },
+  {
+   "propuesta": "eh_bildu-c02",
+   "criterio": "veces (seleccion.json)",
+   "antes": "lista de 1 fuentes, sin recuento",
+   "despues": "n = 1 ocasiones públicas distintas; lista de URL conservada con «cuenta» por entrada",
+   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas en que lo repite un líder; la lista mezclaba ocasiones de campaña con documentos anteriores a la convocatoria que definen el instrumento y menciones genéricas. Una ocasión de campaña: entrevista en Público (7-nov)."
+  },
+  {
+   "propuesta": "eh_bildu-c03",
+   "criterio": "veces (seleccion.json)",
+   "antes": "lista de 2 fuentes, sin recuento",
+   "despues": "n = 1 ocasiones públicas distintas; lista de URL conservada con «cuenta» por entrada",
+   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas en que lo repite un líder; la lista mezclaba ocasiones de campaña con documentos anteriores a la convocatoria que definen el instrumento y menciones genéricas. Una ocasión de campaña: entrevista en Público (7-nov)."
+  },
+  {
+   "propuesta": "eh_bildu-c04",
+   "criterio": "veces (seleccion.json)",
+   "antes": "lista de 1 fuentes, sin recuento",
+   "despues": "n = 2 ocasiones públicas distintas; lista de URL conservada con «cuenta» por entrada",
+   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas en que lo repite un líder; la lista mezclaba ocasiones de campaña con documentos anteriores a la convocatoria que definen el instrumento y menciones genéricas. Incluida la cita principal (nota del 12-nov): 22-oct y 12-nov."
+  },
+  {
+   "propuesta": "eh_bildu-01",
+   "criterio": "antecedentes",
+   "antes": "«amplió a cinco o siete años más hasta tres de prórroga tácita»",
+   "despues": "«amplió a cinco años, o siete si el arrendador es persona jurídica, seguidos de hasta tres años de prórroga tácita»",
+   "motivo": "redacción ambigua; se ajusta al preámbulo del Real Decreto-ley 28/2026"
+  },
+  {
+   "propuesta": "eh_bildu-02",
+   "criterio": "legal",
+   "antes": "valoracion: mixta",
+   "despues": "valoracion: favorable",
+   "motivo": "igual estándar: con los mismos hechos (ley orgánica, art. 81 CE; STC 172/2020 avala la ley salvo un inciso; nada impide derogarla; las devoluciones dependen también de la Ley de Extranjería) bng-11, derogación de la misma ley, es «favorable». erc-05 es «mixta» solo por su propuesta adicional de inaplicarla en comunidades con policía propia, que EH Bildu no plantea"
+  },
+  {
+   "propuesta": "eh_bildu-02",
+   "criterio": "evidencia",
+   "antes": "valoracion: no_verificable; No hemos localizado una evaluación académica ni institucional del efecto de la ley sobre el ejercicio del derecho de protesta o sobre la seguridad, y sin ella no se puede valorar si la derogación conseguiría su objetivo.",
+   "despues": "valoracion: mixta; texto con la revisión de Haar et al. (2017) sobre pelotas de goma",
+   "motivo": "igual estándar: bng-11, que también propone suprimir las pelotas de goma, es «mixta» con esta revisión sistemática; erc-05 («no_verificable») no menciona las pelotas de goma. Fuente leída (PMC5736036): 1.984 heridos, 53 muertos, 300 con discapacidad permanente"
+  },
+  {
+   "propuesta": "eh_bildu-02",
+   "criterio": "antecedentes",
+   "antes": "«con el voto en contra de EH Bildu y ERC, que consideraban inasumible»",
+   "despues": "«con los votos en contra de PP, Vox, Ciudadanos, Junts, UPN, ERC y EH Bildu; estos dos últimos consideraban inasumible»",
+   "motivo": "la fuente (Orain, 14-3-2023) enumera todos los votos en contra; la redacción anterior sugería que solo votaron en contra EH Bildu y ERC"
+  },
+  {
+   "propuesta": "eh_bildu",
+   "criterio": "seleccion_sha256 (evaluacion.json)",
+   "antes": "f5f11493128628795ac6fdc4599ba7682c63083391774a581269eac7e8c8837d",
+   "despues": "7d6baffb051f3b5e2cd97715d06006513cfd8e0f02211c427f05a19c0e4d9277",
+   "motivo": "recalculado tras los cambios en seleccion.json"
+  }
+ ],
+ "dudas": [
+  "eh_bildu-c04 (salario mínimo propio). La nota del 12-nov «ratifica» una reivindicación sindical de la huelga del 11-nov y la vincula a la negociación colectiva y a la «iniciativa política e institucional», sin decir que EH Bildu la llevará al Congreso. Se mantiene porque la nota es oficial, es de campaña y un salario mínimo autonómico exige cambiar la ley estatal (art. 27 del Estatuto de los Trabajadores, según el TSJPV). Es el compromiso con menos vínculo explícito con la legislatura.",
+  "eh_bildu-02. Las cifras de sanciones del Ministerio del Interior que usan bng-11 y erc-05 (284.512 sanciones y 174,8 M€ en 2023) no se pudieron comprobar aquí: el Anuario devuelve 403. El texto dice que no se han podido cuantificar; la valoración coincide con la de esos partidos.",
+  "eh_bildu-c01. La prórroga obligatoria se identifica por remisión al Real Decreto-ley 28/2026; Matute no dice si la recuperaría con el mismo texto (cinco o siete años e indemnización de doce mensualidades).",
+  "El acto central de Bilbao (14-nov) y el resto de la campaña son posteriores a esta revisión."
+ ]
+}

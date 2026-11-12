@@ -1,0 +1,580 @@
+{
+ "partido": "junts",
+ "base": "compromisos",
+ "modelo": "Claude (Anthropic)",
+ "fecha": "2026-11-12",
+ "nota": "Junts no había publicado programa para el 29-N a 12-nov-2026 (data/partidos/partidos.json, comprobado el 12-nov). Se recogen los compromisos concretos de sus líderes (Míriam Nogueras, cabeza de lista por Barcelona y portavoz en el Congreso; Josep Maria Cruset, cabeza de lista por Tarragona) y de los documentos oficiales del partido desde la convocatoria (6-oct-2026). El documento oficial más completo es el balance de legislatura que Junts publicó el 27-oct con sus candidatos («Principals iniciatives de la legislatura»). El partido lo presenta como balance de la legislatura anterior, no como compromisos para el 29-N: sus líneas solo se recogen cuando un líder las reafirma en campaña (inmigración, catalán en la UE, deducción por vivienda), y las demás se descartan (revisión del 12-nov). Varias medidas que la prensa atribuye a Nogueras (deflactar el IRPF, que las pymes no ingresen el IVA hasta cobrar las facturas) solo constan en estilo indirecto del periodista y se descartan conforme al prompt 1b. Hay 7 prioridades porque no se encontraron más compromisos concretos y verificables que el partido destaque.",
+ "compromisos": [
+  {
+   "id": "junts-c01",
+   "area": "modelo territorial",
+   "resumen": "Concierto económico para Cataluña como el del País Vasco: que la Generalitat recaude, gestione y decida sobre todos los impuestos pagados en Cataluña; Junts lo pone como condición para negociar una investidura tras el 29-N.",
+   "cita": "Volem recaptar, volem gestionar i volem decidir sobre els diners dels catalans. I si ho poden fer els bascos, nosaltres també",
+   "cita_traduccion": "Queremos recaudar, queremos gestionar y queremos decidir sobre el dinero de los catalanes. Y si lo pueden hacer los vascos, nosotros también",
+   "quien": "Míriam Nogueras (cabeza de lista de Junts al Congreso por Barcelona)",
+   "formato": "acto de precampaña (presentación de la candidatura de Barcelona, Sant Cugat del Vallès), recogido en nota de prensa del partido",
+   "fecha": "2026-11-07",
+   "url": "https://junts.cat/actualitat/nogueras-els-diners-dels-catalans-a-catalunya-si-els-bascos-gestionen-els-seus-diners-nosaltres-tambe/",
+   "medio": "Junts per Catalunya (nota de prensa)",
+   "fuente_local": "data/sources/compromisos/junts/junts_santcugat_20261107.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 5,
+    "nota": "Ocasiones públicas distintas, incluida la de la cita principal (Sant Cugat, 7-nov): 27-oct, 6-nov, 7-nov, 8-nov y 9-nov.",
+    "ocasiones": [
+     {
+      "fecha": "2026-10-27",
+      "ocasion": "rueda de prensa de balance de legislatura (Barcelona)",
+      "url": "https://junts.cat/actualitat/nogueras-quan-junts-te-forca-catalunya-hi-guanya/",
+      "medio": "Junts per Catalunya (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/junts/junts_balanc_20261027.txt",
+      "cita": "Seguidament, la candidata ha anunciat que el següent pas és que Catalunya tingui el concert econòmic com el que tenen els bascos.",
+      "sha256": "d15f7e532a30f413b6b170b64e9669044b7f77d0f0305faca18e87207b4608ce",
+      "cuenta": true,
+      "nota_revision": "rueda de prensa del 27-oct"
+     },
+     {
+      "fecha": "2026-10-27",
+      "ocasion": "misma rueda de prensa, crónica de prensa",
+      "url": "https://cronicaglobal.elespanol.com/politica/20261027/junts-reivindica-concierto-economico-condicion-apoyar-investidura/1003742806616_0.html",
+      "medio": "Crónica Global",
+      "fuente_local": "data/sources/compromisos/junts/cronicaglobal_20261027.txt",
+      "sha256": "8700f4f37ba4bdce070324ab6c9ec7ea2c020a913ce752f4086d39e291581b61",
+      "cuenta": false,
+      "nota_revision": "misma rueda de prensa del 27-oct"
+     },
+     {
+      "fecha": "2026-11-06",
+      "ocasion": "entrevista en SER Catalunya (crónica de Europa Press, estilo indirecto)",
+      "url": "https://www.infobae.com/espana/agencias/2026/11/06/nogueras-junts-se-abre-a-hablar-con-el-psoe-tras-el-29n-si-cataluna-esta-en-el-centro/",
+      "medio": "Europa Press (vía Infobae)",
+      "fuente_local": "data/sources/compromisos/junts/infobae_ep_20261106.txt",
+      "sha256": "12f160d7fce6ccf657eb63d921dcb12fb4e09e061b9bbe446c8e90f6c17e3fcd",
+      "cuenta": true,
+      "nota_revision": "entrevista en SER Catalunya"
+     },
+     {
+      "fecha": "2026-11-07",
+      "ocasion": "acto de Sant Cugat (crónica de prensa)",
+      "url": "https://www.elnacional.cat/es/politica/nogueras-pone-concierto-vasco-como-condicion-hablar-con-junts-dinero-catalanes-en-catalunya_1722149_102.html",
+      "medio": "ElNacional.cat",
+      "fuente_local": "data/sources/compromisos/junts/elnacional_20261107.txt",
+      "sha256": "87c68541c69c8be9a0a4370ffeabea912d2738e1dd431cabf374bf75cc952432",
+      "cuenta": false,
+      "nota_revision": "mismo acto de Sant Cugat que la cita principal"
+     },
+     {
+      "fecha": "2026-11-08",
+      "ocasion": "acto de presentación de candidatos en Vilanova i la Geltrú",
+      "url": "https://www.elnacional.cat/es/politica/nogueras-responde-illa-molesta-no-es-estemos-en-medio-sino-cada-dia-somos-mas_1722392_102.html",
+      "medio": "ElNacional.cat",
+      "fuente_local": "data/sources/compromisos/junts/elnacional_20261108.txt",
+      "cita": "Queremos recaudar, gestionar y decidir nuestros impuestos. Si lo hacen los vascos, nosotros también",
+      "sha256": "48dd2de3e78a08cdf7295587372e2bd11babf8f88642810be044c3c799afe04a",
+      "cuenta": true,
+      "nota_revision": "acto de Vilanova i la Geltrú"
+     },
+     {
+      "fecha": "2026-11-09",
+      "ocasion": "debate de candidatos por Barcelona organizado por Pimec (crónica de Europa Press, estilo indirecto: «innegociable» desde el 29-N que Cataluña gestione todos los tributos)",
+      "url": "https://www.diariosigloxxi.com/texto-ep/mostrar/20261109123452/impuestos-absentismo-laboral-centran-debate-candidatos-catalanes-pimec",
+      "medio": "Europa Press (vía Diario Siglo XXI)",
+      "fuente_local": "data/sources/compromisos/junts/siglo21_ep_pimec_20261109.txt",
+      "sha256": "90c3e334bc2174a16a9520ea84c285065dd30a3f9c6b32db33af38280abf8639",
+      "cuenta": true,
+      "nota_revision": "debate de Pimec"
+     }
+    ]
+   },
+   "sha256": "3413a4971f76fcb95a55a36788471288c3706c4c161b65ced36346ed85b9577f"
+  },
+  {
+   "id": "junts-c02",
+   "area": "modelo territorial",
+   "resumen": "Traspaso integral de Rodalies a la Generalitat (vías, trenes, estaciones y financiación), para que lo gestione Ferrocarrils de la Generalitat de Catalunya (FGC).",
+   "cita": "Deixem de mirar què li convé a Sánchez o Feijóo, ara toca mirar què li convé a Catalunya: més inversió, més manteniment i el traspàs integral",
+   "cita_traduccion": "Dejemos de mirar qué le conviene a Sánchez o a Feijóo, ahora toca mirar qué le conviene a Cataluña: más inversión, más mantenimiento y el traspaso integral",
+   "quien": "Míriam Nogueras (cabeza de lista de Junts al Congreso por Barcelona)",
+   "formato": "rueda de prensa recogida en nota de prensa del partido",
+   "fecha": "2026-11-02",
+   "url": "https://junts.cat/actualitat/nogueras-el-sistema-ferroviari-espanyol-ha-collapsat/",
+   "medio": "Junts per Catalunya (nota de prensa)",
+   "fuente_local": "data/sources/compromisos/junts/junts_ferroviari_20261102.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 4,
+    "nota": "Incluida la cita principal (2-nov): 2-nov, 3-nov, 8-nov y 9-nov (Pimec).",
+    "ocasiones": [
+     {
+      "fecha": "2026-11-03",
+      "ocasion": "comparecencia del ministro de Transportes en el Congreso; la nota del partido enumera las medidas de Junts",
+      "url": "https://junts.cat/actualitat/nogueras-a-puente-el-problema-no-es-de-qui-son-els-trens-sino-qui-els-gestiona-i-els-gestionen-vostes/",
+      "medio": "Junts per Catalunya (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/junts/junts_puente_20261103.txt",
+      "cita": "fer efectiu el traspàs integral de Rodalies, amb vies, trens, estacions i diners",
+      "sha256": "5a7ccfea6cbfb5025999e11b5ff37253610e5598d46e019243c3cdf3b2d70db3",
+      "cuenta": true,
+      "nota_revision": "comparecencia del 3-nov"
+     },
+     {
+      "fecha": "2026-11-08",
+      "ocasion": "debate de candidatos catalanes de RTVE (estilo indirecto: traspaso integral gestionado por FGC)",
+      "url": "https://naciodigital.cat/politica/l1x1-del-primer-debat-de-candidats-catalans-del-29-n.html",
+      "medio": "NacióDigital",
+      "fuente_local": "data/sources/compromisos/junts/naciodigital_debat_20261108.txt",
+      "cita": "La candidata de Junts ha arrencat demanant el traspàs integral de Rodalies, que passaria a gestionar Ferrocarrils de la Generalitat (FGC).",
+      "sha256": "f942b604c04b73260fc32f90abf84bb582c4102d2b2e8505a6ceb7b510fc87c0",
+      "cuenta": true,
+      "nota_revision": "debate de RTVE"
+     },
+     {
+      "fecha": "2026-11-09",
+      "ocasion": "debate de Pimec",
+      "url": "https://www.3cat.cat/3catinfo/lhabitatge-i-rodalies-centren-el-debat-de-candidats-del-29n-de-la-pimec-amb-labsencia-de-rufian/noticia/3438734/",
+      "medio": "3Cat",
+      "fuente_local": "data/sources/compromisos/junts/3cat_pimec_20261109.txt",
+      "cita": "Nogueras ha insistit en el \"traspàs integral de Rodalies\".",
+      "sha256": "827cfe143137db1ac81ae2a2bbd8ac5f21cb0598e95bd16536f8bb540d284335",
+      "cuenta": true,
+      "nota_revision": "debate de Pimec"
+     },
+     {
+      "fecha": "2026-11-09",
+      "ocasion": "presentación del lema de campaña (exigencia para una investidura según la dirección del partido; Público, ACN)",
+      "url": "https://www.publico.es/politica/partidos/campana-junts-29-n-aspiracion-determinante-protagonismo-limitado-puigdemont.html",
+      "medio": "Público",
+      "fuente_local": "data/sources/compromisos/junts/publico_campana_20261109.txt",
+      "sha256": "d8547c3f2ffb2e874446b2e9da8184872d9a6b94687a225d33c219b7b657c07f",
+      "cuenta": false,
+      "nota_revision": "lo atribuye a voces de la dirección, sin declaración pública identificada"
+     }
+    ]
+   },
+   "sha256": "6c050e485c095165b1b9fa350821b4c1731b1a9a4133f0742ac41d3a584b6450"
+  },
+  {
+   "id": "junts-c03",
+   "area": "otros",
+   "resumen": "Destinar al menos el 30 % del gasto en vías ferroviarias a mantenimiento, con una auditoría independiente y pública de la red y criterios objetivos para priorizar las inversiones.",
+   "cita": "destinar com a mínim el 30% de la despesa en vies al manteniment; impulsar una auditoria independent i pública, amb noms i dates; establir criteris objectius per a les inversions",
+   "cita_traduccion": "destinar como mínimo el 30 % del gasto en vías al mantenimiento; impulsar una auditoría independiente y pública, con nombres y fechas; establecer criterios objetivos para las inversiones",
+   "quien": "Junts per Catalunya (nota oficial del partido)",
+   "formato": "documento oficial (nota de prensa sobre la intervención de Nogueras ante el ministro de Transportes)",
+   "fecha": "2026-11-03",
+   "url": "https://junts.cat/actualitat/nogueras-a-puente-el-problema-no-es-de-qui-son-els-trens-sino-qui-els-gestiona-i-els-gestionen-vostes/",
+   "medio": "Junts per Catalunya (nota de prensa)",
+   "fuente_local": "data/sources/compromisos/junts/junts_puente_20261103.txt",
+   "cuantificado": true,
+   "veces": {
+    "n": 1,
+    "nota": "Solo la nota oficial del 3-nov enuncia la medida con su cifra; las otras ocasiones tratan el mantenimiento en general.",
+    "ocasiones": [
+     {
+      "fecha": "2026-11-02",
+      "ocasion": "rueda de prensa de Nogueras («més inversió, més manteniment i el traspàs integral»)",
+      "url": "https://junts.cat/actualitat/nogueras-el-sistema-ferroviari-espanyol-ha-collapsat/",
+      "medio": "Junts per Catalunya (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/junts/junts_ferroviari_20261102.txt",
+      "sha256": "6c050e485c095165b1b9fa350821b4c1731b1a9a4133f0742ac41d3a584b6450",
+      "cuenta": false,
+      "nota_revision": "pide «més manteniment» sin la cifra del 30 %"
+     },
+     {
+      "fecha": "2026-11-09",
+      "ocasion": "debate de Pimec",
+      "url": "https://naciodigital.cat/politica/pimec-debat.html",
+      "medio": "NacióDigital",
+      "fuente_local": "data/sources/compromisos/junts/naciodigital_pimec_20261109.txt",
+      "cita": "S’han dedicat durant anys a construir sense tenir cura del manteniment",
+      "sha256": "cca1d9a98847f52700c6f6b086837106303fbc866fd886c242b5cea1047b6160",
+      "cuenta": false,
+      "nota_revision": "crítica al modelo, sin la medida"
+     }
+    ]
+   },
+   "sha256": "5a7ccfea6cbfb5025999e11b5ff37253610e5598d46e019243c3cdf3b2d70db3"
+  },
+  {
+   "id": "junts-c04",
+   "area": "inmigración",
+   "resumen": "Que el Estado delegue en la Generalitat las competencias, el control y los recursos en materia de inmigración; Junts lo cita como condición para negociar tras el 29-N.",
+   "cita": "Reclamació de competències, control i recursos en immigració per a Catalunya.",
+   "cita_traduccion": "Reclamación de competencias, control y recursos en inmigración para Cataluña.",
+   "quien": "Junts per Catalunya (documento oficial de balance de legislatura y propuestas, presentado por Nogueras y los cuatro cabezas de lista)",
+   "formato": "documento oficial («Principals iniciatives de la legislatura»)",
+   "fecha": "2026-10-27",
+   "url": "https://junts.cat/actualitat/nogueras-quan-junts-te-forca-catalunya-hi-guanya/",
+   "medio": "Junts per Catalunya (web oficial)",
+   "fuente_local": "data/sources/compromisos/junts/junts_balanc_20261027.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 2,
+    "nota": "Ocasiones de campaña: 4-nov y 6-nov. El balance del 27-oct (cita principal) aporta la redacción, no cuenta como ocasión de campaña.",
+    "ocasiones": [
+     {
+      "fecha": "2026-08-26",
+      "ocasion": "precampaña: Nogueras anuncia que Junts vuelve a registrar en el Congreso su proposición de ley de delegación de competencias en inmigración (anterior a la convocatoria; sirve de definición del instrumento)",
+      "url": "https://junts.cat/actualitat/nogueras-catalunya-ha-de-tenir-el-control-de-la-immigracio/",
+      "medio": "Junts per Catalunya (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/junts/junts_immigracio_20260826.txt",
+      "cita": "La solució és que Catalunya tingui el control i les eines per governar, per decidir i per actuar",
+      "sha256": "198998b893a0c0d118e78365017959771517595817d71cecec5708389f4c6a85",
+      "cuenta": false,
+      "nota_revision": "anterior a la convocatoria: define el instrumento"
+     },
+     {
+      "fecha": "2026-11-04",
+      "ocasion": "conferencia de Josep Maria Cruset (cabeza de lista por Tarragona) en Riudoms",
+      "url": "https://junts.cat/actualitat/cruset-reivindica-a-riudoms-el-balanc-de-junts-a-madrid-el-29-ens-hi-juguem-el-model-de-pais/",
+      "medio": "Junts per Catalunya (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/junts/junts_cruset_20261104.txt",
+      "cita": "També ha reclamat més seguretat, una lluita efectiva contra les ocupacions delinqüencials i una gestió pròpia de Catalunya de la immigració.",
+      "sha256": "4e6ac54cb01ce4aa8c4391be8ad58f6e667adbca481d63ad873ece52d3066384",
+      "cuenta": true,
+      "nota_revision": "conferencia de Cruset, 4-nov"
+     },
+     {
+      "fecha": "2026-11-06",
+      "ocasion": "entrevista de Nogueras en SER Catalunya (Europa Press, estilo indirecto: delegación de competencias en inmigración entre sus condiciones)",
+      "url": "https://www.infobae.com/espana/agencias/2026/11/06/nogueras-junts-se-abre-a-hablar-con-el-psoe-tras-el-29n-si-cataluna-esta-en-el-centro/",
+      "medio": "Europa Press (vía Infobae)",
+      "fuente_local": "data/sources/compromisos/junts/infobae_ep_20261106.txt",
+      "sha256": "12f160d7fce6ccf657eb63d921dcb12fb4e09e061b9bbe446c8e90f6c17e3fcd",
+      "cuenta": true,
+      "nota_revision": "entrevista en SER Catalunya, 6-nov"
+     }
+    ]
+   },
+   "sha256": "d15f7e532a30f413b6b170b64e9669044b7f77d0f0305faca18e87207b4608ce",
+   "nota": "La redacción literal procede del balance de legislatura del 27-oct, que por sí solo no es un compromiso para el 29-N. Vale como compromiso de esta elección porque Nogueras pone la delegación de competencias en inmigración entre sus tres condiciones para negociar tras el 29-N (SER Catalunya, 6-nov, según Europa Press) y la nota oficial del 4-nov recoge que Cruset reclama «una gestió pròpia de Catalunya de la immigració»; el instrumento es la proposición de ley que Junts volvió a registrar el 26-ago."
+  },
+  {
+   "id": "junts-c05",
+   "area": "exterior y defensa",
+   "resumen": "Que el catalán sea lengua oficial de la Unión Europea; Junts lo cita como condición para negociar tras el 29-N.",
+   "cita": "Exigència de l’oficialitat del català a Europa.",
+   "cita_traduccion": "Exigencia de la oficialidad del catalán en Europa.",
+   "quien": "Junts per Catalunya (documento oficial de balance de legislatura y propuestas)",
+   "formato": "documento oficial («Principals iniciatives de la legislatura»)",
+   "fecha": "2026-10-27",
+   "url": "https://junts.cat/actualitat/nogueras-quan-junts-te-forca-catalunya-hi-guanya/",
+   "medio": "Junts per Catalunya (web oficial)",
+   "fuente_local": "data/sources/compromisos/junts/junts_balanc_20261027.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 1,
+    "nota": "Ocasión de campaña: 6-nov. El balance del 27-oct (cita principal) aporta la redacción.",
+    "ocasiones": [
+     {
+      "fecha": "2026-11-06",
+      "ocasion": "entrevista de Nogueras en SER Catalunya (Europa Press, estilo indirecto: «que se apruebe la oficialidad del catalán en la Unión Europea» entre sus demandas)",
+      "url": "https://www.infobae.com/espana/agencias/2026/11/06/nogueras-junts-se-abre-a-hablar-con-el-psoe-tras-el-29n-si-cataluna-esta-en-el-centro/",
+      "medio": "Europa Press (vía Infobae)",
+      "fuente_local": "data/sources/compromisos/junts/infobae_ep_20261106.txt",
+      "sha256": "12f160d7fce6ccf657eb63d921dcb12fb4e09e061b9bbe446c8e90f6c17e3fcd",
+      "cuenta": true,
+      "nota_revision": "entrevista en SER Catalunya, 6-nov"
+     },
+     {
+      "fecha": "2026-11-09",
+      "ocasion": "presentación del lema de campaña (el partido exigirá que continúe la tramitación si es decisivo; El Món, ACN)",
+      "url": "https://elmon.cat/politica/eleccions/junts-situa-catalunya-al-centre-amb-lobjectiu-de-tornar-a-ser-determinants-1203643/",
+      "medio": "El Món",
+      "fuente_local": "data/sources/compromisos/junts/elmon_campanya.txt",
+      "sha256": "41a13e2906da7f8fa751c443669d9ec4c1eac9b19196d6f855695885bd9b936a",
+      "cuenta": false,
+      "nota_revision": "fuentes del partido"
+     }
+    ]
+   },
+   "sha256": "d15f7e532a30f413b6b170b64e9669044b7f77d0f0305faca18e87207b4608ce",
+   "nota": "La redacción literal procede del balance de legislatura del 27-oct, que por sí solo no es un compromiso para el 29-N. Vale como compromiso de esta elección porque Nogueras pone la oficialidad del catalán en la UE entre sus tres condiciones para negociar tras el 29-N (SER Catalunya, 6-nov, según Europa Press y Catalunya Press). Lo que El Món y ElNacional.cat atribuyen a fuentes del partido el 9-nov no cuenta como ocasión."
+  },
+  {
+   "id": "junts-c06",
+   "area": "vivienda",
+   "resumen": "Deducción del 15 % en el IRPF por el alquiler y por la hipoteca de la vivienda habitual.",
+   "cita": "Proposta de deducció del 15% de l’IRPF pel lloguer i la hipoteca.",
+   "cita_traduccion": "Propuesta de deducción del 15 % del IRPF por el alquiler y la hipoteca.",
+   "quien": "Junts per Catalunya (documento oficial de balance de legislatura y propuestas)",
+   "formato": "documento oficial («Principals iniciatives de la legislatura»)",
+   "fecha": "2026-10-27",
+   "url": "https://junts.cat/actualitat/nogueras-quan-junts-te-forca-catalunya-hi-guanya/",
+   "medio": "Junts per Catalunya (web oficial)",
+   "fuente_local": "data/sources/compromisos/junts/junts_balanc_20261027.txt",
+   "cuantificado": true,
+   "veces": {
+    "n": 1,
+    "nota": "Ocasión de campaña: debate de Pimec (9-nov). El balance del 27-oct (cita principal) aporta la cifra.",
+    "ocasiones": [
+     {
+      "fecha": "2026-11-09",
+      "ocasion": "debate de Pimec (Nogueras)",
+      "url": "https://naciodigital.cat/politica/pimec-debat.html",
+      "medio": "NacióDigital",
+      "fuente_local": "data/sources/compromisos/junts/naciodigital_pimec_20261109.txt",
+      "cita": "Cal desgravar hipoteques, impostos i comptes d’estalvi.",
+      "sha256": "cca1d9a98847f52700c6f6b086837106303fbc866fd886c242b5cea1047b6160",
+      "cuenta": true,
+      "nota_revision": "debate de Pimec, 9-nov"
+     },
+     {
+      "fecha": "2026-11-09",
+      "ocasion": "debate de Pimec (crónica, estilo indirecto: «desgravar lloguers i hipoteques»)",
+      "url": "https://www.cronicaglobal.cat/politica/20261109/rufian-empresaris-catalans-sentreguen-albiol-nogueras-pimec/1003742810316_0.html",
+      "medio": "Crónica Global",
+      "fuente_local": "data/sources/compromisos/junts/cronicaglobal_pimec_20261109.txt",
+      "sha256": "dbb3d824be4ecdb3c4061368427f94507877c2ee3b346de1caf6606205058bf3",
+      "cuenta": false,
+      "nota_revision": "mismo debate de Pimec"
+     }
+    ]
+   },
+   "sha256": "d15f7e532a30f413b6b170b64e9669044b7f77d0f0305faca18e87207b4608ce",
+   "nota": "La cifra (15 %) y la base (alquiler e hipoteca) proceden del balance de legislatura del 27-oct, que por sí solo no es un compromiso para el 29-N. Vale como compromiso de esta elección porque Nogueras la defiende en el debate de Pimec (9-nov: «Cal desgravar hipoteques, impostos i comptes d'estalvi»; Crónica Global: su receta es «desgravar lloguers i hipoteques»)."
+  },
+  {
+   "id": "junts-c08",
+   "area": "seguridad",
+   "resumen": "Aprobar la proposición de ley de Junts contra la ocupación ilegal de viviendas, que fija la recuperación del inmueble en un máximo de 48 horas, bloqueada en la legislatura anterior.",
+   "cita": "la llei antiokupes ja està feta [...] fa tres anys que Junts la va registrar [...] està bloquejada pels blocs espanyols",
+   "cita_traduccion": "la ley antiokupas ya está hecha [...] hace tres años que Junts la registró [...] está bloqueada por los bloques españoles",
+   "quien": "Míriam Nogueras (cabeza de lista de Junts al Congreso por Barcelona)",
+   "formato": "publicación en X en respuesta a Feijóo (recogida por ElNacional.cat)",
+   "fecha": "2026-10-18",
+   "url": "https://www.elnacional.cat/ca/politica/nogueras-reivindica-llei-antiokupes-junts-replica-feijoo-quan-espanya-va-catalunya-ja-torna_1711288_102.html",
+   "medio": "ElNacional.cat",
+   "fuente_local": "data/sources/compromisos/junts/elnacional_antiokupes_20261018.txt",
+   "cuantificado": true,
+   "nota": "La cita reivindica una proposición de ley ya registrada; el plazo de 48 horas lo describe el periódico a partir del texto de la proposición, no la cita. Que Junts la vuelva a impulsar en la nueva legislatura se apoya en el documento oficial del 27-oct («Iniciatives contra les ocupacions») y en Cruset (4-nov).",
+   "veces": {
+    "n": 1,
+    "nota": "Una ocasión: la publicación de Nogueras del 18-oct (cita principal).",
+    "ocasiones": [
+     {
+      "fecha": "2026-10-27",
+      "ocasion": "documento oficial de balance y propuestas",
+      "url": "https://junts.cat/actualitat/nogueras-quan-junts-te-forca-catalunya-hi-guanya/",
+      "medio": "Junts per Catalunya (web oficial)",
+      "fuente_local": "data/sources/compromisos/junts/junts_balanc_20261027.txt",
+      "cita": "Iniciatives contra les ocupacions.",
+      "sha256": "d15f7e532a30f413b6b170b64e9669044b7f77d0f0305faca18e87207b4608ce",
+      "cuenta": false,
+      "nota_revision": "balance de la legislatura anterior"
+     },
+     {
+      "fecha": "2026-11-04",
+      "ocasion": "conferencia de Cruset (cabeza de lista por Tarragona) en Riudoms",
+      "url": "https://junts.cat/actualitat/cruset-reivindica-a-riudoms-el-balanc-de-junts-a-madrid-el-29-ens-hi-juguem-el-model-de-pais/",
+      "medio": "Junts per Catalunya (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/junts/junts_cruset_20261104.txt",
+      "cita": "una lluita efectiva contra les ocupacions delinqüencials",
+      "sha256": "4e6ac54cb01ce4aa8c4391be8ad58f6e667adbca481d63ad873ece52d3066384",
+      "cuenta": false,
+      "nota_revision": "pide luchar contra las ocupaciones sin mencionar la ley"
+     }
+    ]
+   },
+   "sha256": "17256cea90aca0fca9efc230afc160f9ee1cd3c3d48ad9d25bef291e85e033f6"
+  },
+  {
+   "id": "junts-c10",
+   "area": "otros",
+   "resumen": "Completar el Corredor Mediterráneo de forma que separe el tráfico de mercancías del de Rodalies.",
+   "cita": "completar un Corredor Mediterrani que separi el trànsit de mercaderies del de Rodalies",
+   "cita_traduccion": "completar un Corredor Mediterráneo que separe el tránsito de mercancías del de Rodalies",
+   "quien": "Junts per Catalunya (nota oficial del partido)",
+   "formato": "documento oficial (nota de prensa)",
+   "fecha": "2026-11-03",
+   "url": "https://junts.cat/actualitat/nogueras-a-puente-el-problema-no-es-de-qui-son-els-trens-sino-qui-els-gestiona-i-els-gestionen-vostes/",
+   "medio": "Junts per Catalunya (nota de prensa)",
+   "fuente_local": "data/sources/compromisos/junts/junts_puente_20261103.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 1,
+    "nota": "Una ocasión: nota oficial del 3-nov (cita principal).",
+    "ocasiones": []
+   },
+   "sha256": "5a7ccfea6cbfb5025999e11b5ff37253610e5598d46e019243c3cdf3b2d70db3"
+  }
+ ],
+ "prioridades": [
+  {
+   "id": "junts-c01",
+   "justificacion": "Es la exigencia que más repite la cabeza de lista: la anuncia en la rueda de prensa de balance (27-oct) como «el següent pas», la repite en SER Catalunya (6-nov), en Sant Cugat (7-nov), en Vilanova i la Geltrú (8-nov, «no son negociables») y en el debate de Pimec (9-nov, «innegociable»), y la presenta como condición para negociar cualquier investidura. Ara (9-nov) la sitúa como el foco de futuro del partido.",
+   "fuentes": [
+    {
+     "url": "https://www.ara.cat/politica/eleccions-generals/plans-puigdemont-nogueras_1_5888067.html",
+     "medio": "Ara",
+     "fecha": "2026-11-09",
+     "fuente_local": "data/sources/compromisos/junts/ara_plans.txt",
+     "sha256": "f92969f4d43b6ebe5a77a525983c79acb1cf3c98170060e2109a5372ee148225"
+    }
+   ]
+  },
+  {
+   "id": "junts-c02",
+   "justificacion": "Nogueras abre con ella el debate de RTVE (8-nov), la repite en rueda de prensa (2-nov), ante el ministro (3-nov) y en el debate de Pimec (9-nov); según voces de la dirección citadas por Público (9-nov), es una de las tres exigencias para una investidura.",
+   "fuentes": [
+    {
+     "url": "https://www.publico.es/politica/partidos/campana-junts-29-n-aspiracion-determinante-protagonismo-limitado-puigdemont.html",
+     "medio": "Público",
+     "fecha": "2026-11-09",
+     "fuente_local": "data/sources/compromisos/junts/publico_campana_20261109.txt",
+     "sha256": "d8547c3f2ffb2e874446b2e9da8184872d9a6b94687a225d33c219b7b657c07f"
+    }
+   ]
+  },
+  {
+   "id": "junts-c05",
+   "justificacion": "Nogueras la cita entre sus tres condiciones para negociar tras el 29-N (SER Catalunya, 6-nov); al presentar la campaña, fuentes del partido dicen que exigirán que continúe (El Món, ElNacional.cat, 9-nov).",
+   "fuentes": [
+    {
+     "url": "https://www.elnacional.cat/es/politica/catalunya-en-centro-lema-junts-campana-29n_1723082_102.html",
+     "medio": "ElNacional.cat",
+     "fecha": "2026-11-09",
+     "fuente_local": "data/sources/compromisos/junts/elnacional_lema_20261109.txt",
+     "sha256": "e931a09299edcd7b3811d0a56b3557ab70f861306b69bcc63d3fc3f9605ebaf1"
+    },
+    {
+     "url": "https://elmon.cat/politica/eleccions/junts-situa-catalunya-al-centre-amb-lobjectiu-de-tornar-a-ser-determinants-1203643/",
+     "medio": "El Món",
+     "fecha": "2026-11-09",
+     "fuente_local": "data/sources/compromisos/junts/elmon_campanya.txt",
+     "sha256": "41a13e2906da7f8fa751c443669d9ec4c1eac9b19196d6f855695885bd9b936a"
+    }
+   ]
+  },
+  {
+   "id": "junts-c04",
+   "justificacion": "Nogueras la cita entre sus tres condiciones para negociar tras el 29-N (SER Catalunya, 6-nov) y la reclama el cabeza de lista por Tarragona (4-nov)."
+  },
+  {
+   "id": "junts-c03",
+   "justificacion": "Es la única medida cuantificada del bloque ferroviario, al que la cabeza de lista dedica una rueda de prensa (2-nov), su intervención ante el ministro (3-nov) y parte del debate de Pimec (9-nov)."
+  },
+  {
+   "id": "junts-c06",
+   "justificacion": "Nogueras la presenta como su receta de vivienda en el debate de Pimec (9-nov: «Cal desgravar hipoteques»; Crónica Global: «desgravar lloguers i hipoteques»); el documento del 27-oct recoge el porcentaje."
+  },
+  {
+   "id": "junts-c08",
+   "justificacion": "Nogueras la reivindica en campaña frente a la propuesta del PP para después del 29-N (18-oct, en X); el cabeza de lista por Tarragona reclama «una lluita efectiva contra les ocupacions delinqüencials» (4-nov). Es la prioridad con menos apoyo: una sola ocasión que cita la ley."
+  }
+ ],
+ "no_priorizados": [
+  {
+   "id": "junts-c10",
+   "motivo": "Solo aparece una vez, en la nota del 3-nov; ningún líder la ha repetido."
+  }
+ ],
+ "descartados": [
+  {
+   "medida": "Exención del IVA para los autónomos que facturan menos de 85.000 euros (antes junts-c07)",
+   "url": "https://junts.cat/actualitat/nogueras-quan-junts-te-forca-catalunya-hi-guanya/",
+   "fuente_local": "data/sources/compromisos/junts/junts_balanc_20261027.txt",
+   "motivo": "Solo consta en el documento del 27-oct, que Junts presenta como «balanç de la feina parlamentària» y titula «Principals iniciatives de la legislatura»: es el registro de lo que hizo o reclamó en la legislatura anterior, no una oferta para el 29-N (el prompt 2 excluye las posiciones de otras legislaturas). Ningún líder la ha repetido en campaña; el 27-oct solo la «reivindica» el diputado Josep Maria Cervera como iniciativa ya impulsada (no es cabeza de lista ni portavoz), y no se encontró en las notas del partido del 6-oct al 12-nov ni en las crónicas de campaña.",
+   "sha256": "d15f7e532a30f413b6b170b64e9669044b7f77d0f0305faca18e87207b4608ce"
+  },
+  {
+   "medida": "Jubilación sin penalización con 40 años cotizados (antes junts-c09)",
+   "url": "https://junts.cat/actualitat/nogueras-quan-junts-te-forca-catalunya-hi-guanya/",
+   "fuente_local": "data/sources/compromisos/junts/junts_balanc_20261027.txt",
+   "motivo": "Solo consta en el documento del 27-oct, que Junts presenta como «balanç de la feina parlamentària» y titula «Principals iniciatives de la legislatura»: es el registro de lo que hizo o reclamó en la legislatura anterior, no una oferta para el 29-N (el prompt 2 excluye las posiciones de otras legislaturas). Ningún líder la ha repetido en campaña.",
+   "sha256": "d15f7e532a30f413b6b170b64e9669044b7f77d0f0305faca18e87207b4608ce"
+  },
+  {
+   "medida": "Recuperar el distrito universitario catalán (antes junts-c11)",
+   "url": "https://junts.cat/actualitat/nogueras-quan-junts-te-forca-catalunya-hi-guanya/",
+   "fuente_local": "data/sources/compromisos/junts/junts_balanc_20261027.txt",
+   "motivo": "Solo consta en el documento del 27-oct, que Junts presenta como «balanç de la feina parlamentària» y titula «Principals iniciatives de la legislatura»: es el registro de lo que hizo o reclamó en la legislatura anterior, no una oferta para el 29-N (el prompt 2 excluye las posiciones de otras legislaturas). Ningún líder la ha repetido en campaña; el 27-oct el diputado Josep Pagès la «destaca» como propuesta de la legislatura (no es cabeza de lista ni portavoz).",
+   "sha256": "d15f7e532a30f413b6b170b64e9669044b7f77d0f0305faca18e87207b4608ce"
+  },
+  {
+   "medida": "Desclasificar los documentos sobre los atentados del 17-A (antes junts-c12)",
+   "url": "https://junts.cat/actualitat/nogueras-quan-junts-te-forca-catalunya-hi-guanya/",
+   "fuente_local": "data/sources/compromisos/junts/junts_balanc_20261027.txt",
+   "motivo": "Solo consta en el documento del 27-oct, que Junts presenta como «balanç de la feina parlamentària» y titula «Principals iniciatives de la legislatura»: es el registro de lo que hizo o reclamó en la legislatura anterior, no una oferta para el 29-N (el prompt 2 excluye las posiciones de otras legislaturas). Ningún líder la ha repetido en campaña.",
+   "sha256": "d15f7e532a30f413b6b170b64e9669044b7f77d0f0305faca18e87207b4608ce"
+  },
+  {
+   "medida": "Deflactar el IRPF",
+   "url": "https://www.diariosigloxxi.com/texto-ep/mostrar/20261109123452/impuestos-absentismo-laboral-centran-debate-candidatos-catalanes-pimec",
+   "fuente_local": "data/sources/compromisos/junts/siglo21_ep_pimec_20261109.txt",
+   "motivo": "Solo consta en estilo indirecto del periodista (Europa Press: «se ha comprometido a defender la deflactación»; NacióDigital: «són partidaris de la deflactació»; Demócrata). No se encontró la cita literal ni detalle (tramos, alcance).",
+   "sha256": "90c3e334bc2174a16a9520ea84c285065dd30a3f9c6b32db33af38280abf8639"
+  },
+  {
+   "medida": "Que las pymes no ingresen el IVA hasta haber cobrado las facturas",
+   "url": "https://www.democrata.es/economia/impuestos-y-absentismo-marcan-el-cara-a-cara-de-candidatos-catalanes-en-pimec/",
+   "fuente_local": "data/sources/compromisos/junts/democrata_pimec_20261109.txt",
+   "motivo": "Solo en estilo indirecto (Demócrata y Europa Press); no se encontró la cita literal en ninguna crónica del debate de Pimec.",
+   "sha256": "6890502988289149ab932b4fc3029c6dec036a081c7278eff19ec0fef37c1213"
+  },
+  {
+   "medida": "Rebaja del impuesto de sociedades con bonificación por reinversión y menos inspecciones de Hacienda a las empresas catalanas",
+   "url": "https://www.cronicaglobal.cat/politica/20261109/rufian-empresaris-catalans-sentreguen-albiol-nogueras-pimec/1003742810316_0.html",
+   "fuente_local": "data/sources/compromisos/junts/cronicaglobal_pimec_20261109.txt",
+   "motivo": "Estilo indirecto del periodista (Crónica Global, NacióDigital) y sin cuantía.",
+   "sha256": "dbb3d824be4ecdb3c4061368427f94507877c2ee3b346de1caf6606205058bf3"
+  },
+  {
+   "medida": "Reforzar las mutuas y agilizar las revisiones médicas de las bajas, con más coordinación con la Seguridad Social",
+   "url": "https://naciodigital.cat/politica/pimec-debat.html",
+   "fuente_local": "data/sources/compromisos/junts/naciodigital_pimec_20261109.txt",
+   "motivo": "Cita literal, pero sin instrumento identificable (no dice qué competencias tendrían las mutuas ni qué norma cambiaría): orientación, no medida concreta.",
+   "sha256": "cca1d9a98847f52700c6f6b086837106303fbc866fd886c242b5cea1047b6160"
+  },
+  {
+   "medida": "Competencia de la Generalitat sobre los exámenes de conducir",
+   "url": "https://www.elnacional.cat/es/politica/nogueras-responde-illa-molesta-no-es-estemos-en-medio-sino-cada-dia-somos-mas_1722392_102.html",
+   "fuente_local": "data/sources/compromisos/junts/elnacional_20261108.txt",
+   "motivo": "La formula el senador Eduard Pujol en estilo indirecto del periódico; la nota del partido del 9-nov es una interpelación en el Parlament de Cataluña (diputado Josep Rius), no un compromiso para el Congreso.",
+   "sha256": "48dd2de3e78a08cdf7295587372e2bd11babf8f88642810be044c3c799afe04a"
+  },
+  {
+   "medida": "Salario mínimo de referencia catalán (unos 1.450 euros)",
+   "url": "https://junts.cat/actualitat/verges-volem-incrementar-els-salaris-catalans-com-fan-els-paisos-mes-prospers-de-la-unio-europea/",
+   "fuente_local": "data/sources/compromisos/junts/junts_salari_20261020.txt",
+   "motivo": "Proposición de ley en el Parlament de Cataluña defendida por su portavoz en la cámara catalana: ámbito autonómico, no compromiso para estas elecciones.",
+   "sha256": "182107b4591a498f286d595ffc00a3b18b226553202ebb1b4972353e15078c97"
+  },
+  {
+   "medida": "Que no haya retrocesos en el uso del catalán en las Cortes",
+   "url": "https://www.publico.es/politica/partidos/campana-junts-29-n-aspiracion-determinante-protagonismo-limitado-puigdemont.html",
+   "fuente_local": "data/sources/compromisos/junts/publico_campana_20261109.txt",
+   "motivo": "Defensivo (mantener lo ya conseguido), sin medida nueva, y atribuido a fuentes del partido.",
+   "sha256": "d8547c3f2ffb2e874446b2e9da8184872d9a6b94687a225d33c219b7b657c07f"
+  },
+  {
+   "medida": "Defensa de la inmersión lingüística frente a la propuesta del PP",
+   "url": "https://www.catalunyapress.cat/article/politica-nacional/2026-10-19/6057794-nogueras-planta-cara-pp-i-vox-pel-catal-toca-llengua-toca-nacio",
+   "fuente_local": "data/sources/compromisos/junts/catpress_llengua_20261019.txt",
+   "motivo": "Rechazo a la medida de otro partido, sin medida propia.",
+   "sha256": "32fb283c0fb7e7b5c583a9ed406637aee4c954d19252437a3e64df0976fa6d3f"
+  },
+  {
+   "medida": "No investir a Pedro Sánchez ni a un Gobierno de PP y Vox; «vía Starmer»",
+   "url": "https://naciodigital.cat/politica/i-si-junts-te-la-clau-a-madrid-despres-del-29-n.html",
+   "fuente_local": "data/sources/compromisos/junts/naciodigital_clau.txt",
+   "motivo": "Declaración de pactos, no medida de gobierno.",
+   "sha256": "cf7616815fb8c2ef568300c30278a0843de9032cf776d731189176b9ba16435e"
+  },
+  {
+   "medida": "Reforma integral del trabajo autónomo; freno a la subida de cuotas; oposición a la jornada de 37,5 horas; rebaja de sociedades a pymes y cooperativas; ley ELA; 50 % de la dependencia",
+   "url": "https://junts.cat/actualitat/nogueras-quan-junts-te-forca-catalunya-hi-guanya/",
+   "fuente_local": "data/sources/compromisos/junts/junts_balanc_20261027.txt",
+   "motivo": "Logros de la legislatura anterior o enunciados sin medida identificable en el documento de balance; no son compromisos nuevos.",
+   "sha256": "d15f7e532a30f413b6b170b64e9669044b7f77d0f0305faca18e87207b4608ce"
+  }
+ ],
+ "busqueda": {
+  "hasta": "2026-11-12",
+  "fuentes": [
+   "junts.cat: feed RSS de noticias completo del 18-ago al 12-nov-2026 (todas las notas de Nogueras, Cruset, Madrenas, Gavín, Turull y del grupo); el feed y las notas se descargaron con una petición normal (HTTP 200).",
+   "Prensa y agencias: Europa Press (vía Infobae y Diario Siglo XXI), ElNacional.cat, NacióDigital, 3Cat, Crónica Global, Catalunya Press, Público, El Món, Ara, Demócrata.",
+   "Debates: RTVE Catalunya (8-nov) y Pimec (9-nov).",
+   "Búsquedas abiertas sobre Carles Puigdemont y Jordi Turull: en campaña Puigdemont solo interviene por vía telemática y no se halló ningún compromiso concreto suyo para el 29-N (Ara y Público, 9-nov); las declaraciones de Turull localizadas son anteriores a la convocatoria y no se refieren a esta elección. El mitin de apertura (12-nov, noche) aún no tenía crónica al cierre."
+  ]
+ }
+}
