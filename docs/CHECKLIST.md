@@ -56,8 +56,8 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   pendientes Compromís, Ara Més-FA y UPC, y la auditoría de coherencia entre todos (incl. recuento de «veces» de Vox).
 - [x] **4b-fin.** 12-nov noche: los 18 partidos tienen análisis en el paso 2 (7 por programa, 11 por compromisos),
   con auditoría de coherencia conjunta (data/fase3/coherencia_2026-11-12b.md).
-- [ ] **4c. [Yo] Compromisos de líderes fuera del programa** para los 7 partidos con programa (PP, ERC, BNG,
-  PNV, CC, SALF, Adelante Andalucía): hasta 4 por partido, sección aparte en Contrasta. En curso 12-nov.
+- [x] **4c. [Yo] Compromisos de líderes fuera del programa** para los 7 partidos con programa (PP, ERC, BNG,
+  PNV, CC, SALF, Adelante Andalucía): hasta 4 por partido, sección aparte en Contrasta. Publicado 12-nov: PP 2, BNG 2, CC 1, PNV 1; ERC, SALF y Adelante Andalucía, ninguno (todo está en su programa).
 - [ ] **5. [Yo] Quitar la etiqueta «versión provisional» del paso 1** (9-nov: protocolo v2 con
   propuestas públicas en primera persona de líderes nacionales y regionales, incl. precampaña; 75 posiciones) solo cuando PP, PSOE, Vox,
   Frente Amplio y Podemos tengan posición documentada en al menos la mitad de las 30 afirmaciones
