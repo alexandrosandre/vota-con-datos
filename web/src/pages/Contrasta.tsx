@@ -42,7 +42,8 @@ function Resumen({ props }: { props: Propuesta[] }) {
         ))}
       </div>
       <p class="muted" style={{ fontSize: '0.85rem', margin: '8px 0 0' }}>
-        {(Object.keys(n) as Valoracion[]).map((v) => `${n[v]} ${VAL[v].toLowerCase()}`).join(' · ')} — de {total} valoraciones (12 propuestas × 8 criterios)
+        {(Object.keys(n) as Valoracion[]).map((v) => `${n[v]} ${VAL[v].toLowerCase()}`).join(' · ')} — de {total} valoraciones ({props.length} propuestas ×{' '}
+        {fase3.value!.criterios.length} criterios)
       </p>
     </div>
   );
@@ -114,6 +115,21 @@ function TarjetaPropuesta({ p, n, partidoId }: { p: Propuesta; n: number; partid
         <p class="quote">
           <span lang={lang}>«{p.cita}»</span> {p.pagina ? <span class="muted">(programa, p. {p.pagina})</span> : null}
         </p>
+        {p.quien && (
+          <p class="muted" style={{ fontSize: '0.88rem', marginTop: -4 }}>
+            — {p.quien}
+            {p.formato ? `, ${p.formato}` : ''}
+            {p.fecha ? `, ${fmt.fecha(p.fecha)}` : ''}
+            {p.url && (
+              <>
+                {' · '}
+                <a href={p.url} target="_blank" rel="noopener">
+                  {p.medio ?? 'fuente'}
+                </a>
+              </>
+            )}
+          </p>
+        )}
         {p.cita_traduccion && <p class="muted" style={{ fontSize: '0.88rem' }}>Traducción: «{p.cita_traduccion}»</p>}
         <div class="chips" style={{ margin: '12px 0' }}>
           {crit.map((c) => {
@@ -180,7 +196,8 @@ function Promesas({ id }: { id: string }) {
       <summary>Compromisos públicos de campaña de {p.siglas} ({p.promesas!.length})</summary>
       <p class="muted" style={{ fontSize: '0.88rem', marginTop: 12 }}>
         Medidas concretas anunciadas por el partido o su candidato desde la convocatoria, recogidas de medios de referencia o de sus canales
-        oficiales, con su fuente. Se usan en el paso 1; aquí no se evalúan (solo evaluamos programas oficiales completos).
+        oficiales, con su fuente. Se usan en el paso 1 y, si el partido no ha publicado programa, para elegir las propuestas que se
+        analizan aquí.
       </p>
       {p.promesas!.map((x, i) => (
         <div class="crit" key={i}>
@@ -218,8 +235,8 @@ export function Contrasta() {
   return (
     <div class="narrow page p2">
       <CabeceraPaso id="contrasta">
-        Las 12 propuestas centrales de cada programa oficial, contrastadas una a una con criterios que se pueden verificar. Lo que no se ha podido
-        comprobar se marca como tal.
+        Las 12 propuestas centrales de cada partido, contrastadas una a una con criterios que se pueden verificar: las de su programa oficial
+        o, si no lo ha publicado, los compromisos que sus líderes han hecho en público. Lo que no se ha podido comprobar se marca como tal.
       </CabeceraPaso>
 
       {afines.length > 0 && (
@@ -243,7 +260,14 @@ export function Contrasta() {
         <select value={sel} onChange={(ev) => elegir((ev.target as HTMLSelectElement).value)}>
           <option value="">Elige partido…</option>
           <optgroup label="Programa analizado">
-            {(partidos.value ?? []).filter((x) => evaluados.has(x.id)).map((x) => (
+            {(partidos.value ?? []).filter((x) => evaluados.has(x.id) && d.partidos[x.id]?.base !== 'compromisos').map((x) => (
+              <option key={x.id} value={x.id}>
+                {x.siglas} — {x.nombre}
+              </option>
+            ))}
+          </optgroup>
+          <optgroup label="Sin programa: compromisos de sus líderes analizados">
+            {(partidos.value ?? []).filter((x) => d.partidos[x.id]?.base === 'compromisos').map((x) => (
               <option key={x.id} value={x.id}>
                 {x.siglas} — {x.nombre}
               </option>
@@ -266,7 +290,7 @@ export function Contrasta() {
             <strong>{p?.siglas ?? sel}: análisis pendiente.</strong>{' '}
             {p?.programa.estado === 'publicado'
               ? 'Su programa ya está publicado y el análisis está en curso (lectura completa, evaluación y revisión independiente).'
-              : `Todavía no ha publicado su programa oficial para el 29-N (última comprobación: ${fmt.fecha(p?.programa.comprobado)}). Solo analizamos programas oficiales completos.`}
+              : `Todavía no ha publicado su programa oficial para el 29-N (última comprobación: ${fmt.fecha(p?.programa.comprobado)}). Mientras tanto analizamos los compromisos que sus líderes han hecho en público, con el mismo método; aparecerán aquí cuando pasen la revisión independiente.`}
           </div>
         )}
         {datos?.estado === 'evaluado' && p && (
@@ -274,12 +298,21 @@ export function Contrasta() {
             <div class="card stack">
               <div class="row between">
                 <h2 class="h3" style={{ margin: 0 }}>
-                  {p.siglas}: el programa de un vistazo
+                  {p.siglas}: {datos.base === 'compromisos' ? 'sus compromisos de un vistazo' : 'el programa de un vistazo'}
                 </h2>
                 <Leyenda />
               </div>
               <Resumen props={datos.propuestas} />
               <Mapa props={datos.propuestas} />
+              {datos.base === 'compromisos' ? (
+                <p class="muted" style={{ fontSize: '0.85rem', margin: 0 }}>
+                  <strong>{p.siglas} no ha publicado programa para el 29-N</strong> (última comprobación: {fmt.fecha(p.programa.comprobado)}).
+                  Analizamos sus {datos.propuestas.length} compromisos centrales{datos.compromisos_total ? ` (de ${datos.compromisos_total} recogidos)` : ''}, dichos
+                  en público y en primera persona por sus líderes para esta legislatura, con el mismo método y la misma revisión independiente que
+                  los programas{datos.revision ? ` (${datos.revision} correcciones aplicadas)` : ''}. Cuando publique su programa, lo analizaremos y
+                  sustituirá a esto. <a href="#/metodologia">Cómo se hace</a>.
+                </p>
+              ) : (
               <p class="muted" style={{ fontSize: '0.85rem', margin: 0 }}>
                 <a href={p.programa.url ?? '#'} target="_blank" rel="noopener">
                   Programa oficial
@@ -288,6 +321,7 @@ export function Contrasta() {
                 {d.meta.modelo} con fuentes públicas, revisado por una segunda pasada independiente
                 {datos.revision ? ` (${datos.revision} correcciones aplicadas)` : ''}. <a href="#/metodologia">Cómo se hace</a>.
               </p>
+              )}
             </div>
             {datos.propuestas.map((x, i) => (
               <TarjetaPropuesta key={x.id} p={x} n={i + 1} partidoId={sel} />

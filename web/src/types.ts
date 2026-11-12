@@ -141,6 +141,12 @@ export interface Propuesta {
   /** Traducción al castellano si la cita está en otra lengua cooficial. */
   cita_traduccion?: string | null;
   pagina?: string | number | null;
+  /** Solo en análisis por compromisos (partido sin programa): quién lo dijo, dónde y cuándo. */
+  quien?: string | null;
+  formato?: string | null;
+  fecha?: string | null;
+  url?: string | null;
+  medio?: string | null;
   beneficiarios?: string;
   evaluacion: Record<string, EvalCriterio>;
 }
@@ -148,5 +154,5 @@ export interface Propuesta {
 export interface DatosFase3 {
   meta: { actualizado: string; modelo: string; nota?: string };
   criterios: Criterio[];
-  partidos: Record<string, { estado: 'evaluado' | 'pendiente'; motivo?: string; revision?: number; propuestas: Propuesta[] }>;
+  partidos: Record<string, { estado: 'evaluado' | 'pendiente'; base?: 'programa' | 'compromisos'; motivo?: string; revision?: number; compromisos_total?: number; busqueda?: string | null; propuestas: Propuesta[] }>;
 }

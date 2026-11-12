@@ -39,6 +39,18 @@ def citas(obj, ruta=""):
             yield from citas(v, f"{ruta}[{i}]")
 
 
+def compromisos_con_fuente(obj):
+    """Objetos con cita y fuente_local (compromisos y propuestas basadas en ellos)."""
+    if isinstance(obj, dict):
+        if isinstance(obj.get("cita"), str) and obj["cita"].strip() and "fuente_local" in obj:
+            yield obj
+        for v in obj.values():
+            yield from compromisos_con_fuente(v)
+    elif isinstance(obj, list):
+        for v in obj:
+            yield from compromisos_con_fuente(v)
+
+
 def main(args):
     partidos = json.loads(PARTIDOS.read_text())["partidos"]
     fallos = total = 0
@@ -46,6 +58,17 @@ def main(args):
         pid = p["id"]
         if args and pid not in args:
             continue
+        # Compromisos de líderes (partidos sin programa): cada cita contra la copia local de su fuente.
+        dc = ROOT / "data" / "programas" / pid / "compromisos"
+        for f in sorted(dc.glob("*.json")) if dc.exists() else []:
+            for it in compromisos_con_fuente(json.loads(f.read_text())):
+                total += 1
+                fl = it.get("fuente_local")
+                texto_c = norm((ROOT / fl).read_text(errors="replace")) if fl and (ROOT / fl).exists() else ""
+                partes = [x for x in re.split(r"\s*(?:\[\.\.\.\]|\(\.\.\.\)|\.\.\.)\s*", it["cita"]) if x.strip()]
+                if not texto_c or not all(norm(x) in texto_c for x in partes):
+                    fallos += 1
+                    print(f"NO ENCONTRADA {pid} compromisos/{f.name} {it.get('id')}: {it['cita'][:120]} (fuente: {fl})")
         txt = (p.get("programa") or {}).get("texto")
         d = ROOT / "data" / "programas" / pid
         if not txt or not d.exists():

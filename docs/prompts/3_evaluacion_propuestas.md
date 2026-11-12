@@ -25,3 +25,11 @@ En "Antecedentes" indica si se intentó antes en España, cuándo, y qué pasó.
 
 Neutralidad: aplica exactamente los mismos estándares a todos los partidos. Evalúas el fundamento
 de la propuesta, no su orientación ideológica. No compares con otros partidos.
+
+**Partidos sin programa** (base «compromisos», `data/programas/{ID}/compromisos/`): evalúa las
+prioridades de `seleccion.json` (prompt 1b) exactamente con los mismos criterios y rúbricas. En
+cada propuesta, en lugar de `pagina`, copia de la selección `quien`, `formato`, `fecha`, `url`,
+`medio` y `fuente_local`. «Concreción» se juzga sobre lo que el líder ha dicho (todas las ocasiones
+registradas en `veces`), con la misma rúbrica que un programa: si no da cifras, plazos ni
+instrumento, la nota es la misma que tendría en un programa. Escribe `evaluacion.json` con
+`"base": "compromisos"` y `"seleccion_sha256"` (SHA-256 de `seleccion.json`).

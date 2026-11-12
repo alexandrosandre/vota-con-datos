@@ -21,3 +21,9 @@ fuente válida o `no_verificable`), y registra cada cambio. Escribe `revision.js
 `{"aprobado": bool, "revisor": "Claude (Anthropic), pasada independiente", "fecha": ..., "cambios":
 [{"propuesta", "criterio", "antes", "despues", "motivo"}], "dudas": [...]}`. Aprueba solo si,
 tras tus correcciones, no queda ninguna afirmación sin respaldo.
+
+**Partidos sin programa** (base «compromisos»): revisa `data/programas/{ID}/compromisos/` con los
+mismos pasos. En el punto 1, abre cada `url`: ¿la cita es literal, la dice en primera persona
+quien se indica, en público y para esta elección o legislatura? ¿Es una medida concreta? En el
+punto 2, ¿las prioridades se justifican con evidencia de lo que el propio partido destaca?
+Escribe `revision.json` en esa misma carpeta.

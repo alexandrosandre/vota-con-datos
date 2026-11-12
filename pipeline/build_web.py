@@ -8,6 +8,7 @@
 
 Uso: python3 -I pipeline/build_web.py
 """
+import hashlib
 import json
 import subprocess
 import sys
@@ -106,7 +107,24 @@ def main():
                 # La concreción se juzga sobre el propio programa: su fuente es el documento oficial.
                 if c is not None and not c.get("fuentes") and p["programa"]["url"]:
                     c["fuentes"] = [{"url": p["programa"]["url"], "titulo": f"Programa oficial, p. {pr.get('pagina')}"}]
-            fase3["partidos"][p["id"]] = {"estado": "evaluado", "propuestas": e["propuestas"], "revision": json.loads(rev.read_text()).get("cambios", []).__len__()}
+            fase3["partidos"][p["id"]] = {"estado": "evaluado", "base": "programa", "propuestas": e["propuestas"], "revision": json.loads(rev.read_text()).get("cambios", []).__len__()}
+            continue
+        # Sin programa (o aún sin analizar): compromisos públicos de sus líderes, mismo protocolo
+        # (docs/prompts/1b, 3 y 4). Lo sustituye el análisis del programa en cuanto se aprueba.
+        dc = D / "programas" / p["id"] / "compromisos"
+        evc, revc, sel = dc / "evaluacion.json", dc / "revision.json", dc / "seleccion.json"
+        if evc.exists() and revc.exists() and sel.exists() and json.loads(revc.read_text()).get("aprobado"):
+            e = json.loads(evc.read_text())
+            if e.get("seleccion_sha256") != hashlib.sha256(sel.read_bytes()).hexdigest():
+                sys.exit(f"{p['id']}: la evaluación de compromisos no corresponde a seleccion.json (sha256)")
+            for pr in e["propuestas"]:
+                c = pr["evaluacion"].get("concrecion")
+                if c is not None and not c.get("fuentes") and pr.get("url"):
+                    c["fuentes"] = [{"url": pr["url"], "titulo": f"{pr.get('quien') or 'Fuente'} ({pr.get('medio') or 'fuente'}, {pr.get('fecha') or ''})"}]
+            s_ = json.loads(sel.read_text())
+            fase3["partidos"][p["id"]] = {"estado": "evaluado", "base": "compromisos", "propuestas": e["propuestas"],
+                                         "revision": len(json.loads(revc.read_text()).get("cambios", [])),
+                                         "compromisos_total": len(s_.get("compromisos", [])), "busqueda": s_.get("busqueda_hasta")}
         else:
             fase3["partidos"][p["id"]] = {
                 "estado": "pendiente",
