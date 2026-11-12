@@ -42,8 +42,10 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   - [x] PNV — publicado el 9-nov (43 págs.): analizado, revisado (39 correcciones) y publicado; 0/30 en el paso 1
   - [x] PP — publicado el 10-nov (82 págs.): analizado, revisado (63 correcciones) y publicado el 12-nov; 15/30 en el paso 1
   - [x] SALF — «contrato electoral» del 10-nov (40 págs.): analizado, revisado (93 correcciones) y publicado el 12-nov; 16/30 en el paso 1
-  - [ ] Auditoría de coherencia entre los seis programas analizados (CC, ERC, BNG, PNV, PP, SALF) — en curso 12-nov
-  - [ ] PSOE / PSC, Vox, Frente Amplio, Podemos — sin fecha conocida
+  - [x] Auditoría de coherencia entre los seis programas analizados (12-nov): 3 valoraciones igualadas (PP, SALF, BNG) y rúbrica de financiación precisada; informe en data/fase3/coherencia_2026-11-12.md
+  - [ ] Vox — la prensa dice que lo presentó el 12-nov (copia enlazada por un medio), pero a las 17:00 no estaba en voxespana.es («Programa electoral de VOX» da «Página no encontrada»). Solo se usará desde la web oficial
+  - [ ] PSOE — presenta su programa el 15-nov (según la búsqueda de líderes del 12-nov); recodificar el paso 1 ese día
+  - [ ] PSC, Frente Amplio, Podemos — sin fecha conocida (a 12-nov no publicado)
   - [ ] Junts, EH Bildu, Compromís, UPC, Ara Més-FA, UPN-PP, Adelante Andalucía — sin fecha conocida
 - [ ] **5. [Yo] Quitar la etiqueta «versión provisional» del paso 1** (9-nov: protocolo v2 con
   propuestas públicas en primera persona de líderes nacionales y regionales, incl. precampaña; 75 posiciones) solo cuando PP, PSOE, Vox,
