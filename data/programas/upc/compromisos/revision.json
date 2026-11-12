@@ -1,0 +1,122 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-12",
+ "base": "compromisos",
+ "alcance": "15 compromisos y 10 prioridades (9 de la evaluación más upc-10, añadida en la revisión) × 8 criterios. Se abrieron las 75 URL citadas en seleccion.json y evaluacion.json con una petición normal: las 75 respondieron 200. La respuesta del Gobierno del Congreso (184/4884) es un PDF de una página y está completa. Para upc-10 se leyeron además la Ley 1/2023 (BOE), el total de gastos consolidados de los PGE 2023 (Congreso), las notas de Exteriores sobre la AOD de 2024 y 2025, tres resúmenes de RePEc (Doucouliagos y Paldam; Clemens, Radelet y Bhavnani; Lanati y Thiele) y el resumen de Focus 2030 de los datos de avance de la OCDE. La nota de prensa de la OCDE, la del Gobierno noruego y la de CGD devolvieron 403, y Euronews 406. No se usaron ni se sortearon. Citas: las 37 coinciden con su copia local y con la página en vivo (verify_quotes: 0 no encontradas). El texto del Manifiesto en vivo es idéntico a la copia local. Su fecha (3-nov) procede de la cabecera Last-Modified registrada en partidos.json. El PDF tiene ModDate 30-10-2026, y hoy el servidor da Last-Modified 9-11-2026 con el mismo contenido. El Manifiesto está enlazado desde la sección «Manifiesto» de la web oficial y se presenta como manifiesto electoral para las Cortes Generales. Las citas de upc-c01 y upc-c03 son el texto literal de la nota oficial de UPC (quien = la coalición), redactada en estilo indirecto por el propio partido. Es el mismo criterio aprobado para psc-c03 (nota oficial del PSC) y para las notas oficiales de Junts y del Frente Amplio. Las citas de upc-c09 y upc-c15 son de Luis Campos, cabeza de lista por Las Palmas, en primera persona (Canarias7, 4-nov). Todas las fuentes son posteriores a la convocatoria y se refieren al 29-N. upc-10 (0,7 % para cooperación) se evaluó durante esta revisión al corregir la selección; una segunda lectura independiente comprobó todas sus fuentes y cifras: PGE 2023 consolidados (583.543 y 450.722 M€; 0,7 % = 4.085 y 3.155 M€), Exteriores (AGE 4.116 M€ en 2025, AOD total de más de 4.550 M€, +13 %; +12 % en 2024; AECID más de 610 M€; Hacienda canaliza la aportación a la UE), Ley 1/2023 (art. 1.6), Focus 2030 sobre los datos de avance de la OCDE (0,26 %; Noruega, Luxemburgo, Suecia y Dinamarca), Doucouliagos y Paldam (97 estudios), Clemens y otros y Lanati y Thiele. Sin cambios.",
+ "seleccion": "Las prioridades se apoyan en el Manifiesto, que es el resumen oficial de campaña, y en lo que destacan las notas oficiales: vivienda, pensiones, singularidad insular y territorio (26-oct). También en los focos del programa que Campos citó a EFE (12-nov): mercado inmobiliario, modelo turístico y política migratoria. upc-c11 (0,7 % para cooperación) se pasa de «no priorizado» a prioridad. Figura en el eje 15 del Manifiesto, Campos la repitió el 12-nov dentro de la política migratoria, que es uno de los tres focos que citó, y tiene más evidencia de énfasis que upc-c05 y upc-c06, que solo constan en el Manifiesto. Por eso el motivo de exclusión («no figura entre las prioridades que la coalición destaca») no se sostenía. «veces» se reestructura con el formato aprobado ({n, nota, ocasiones} con «cuenta»), y n cuenta ocasiones públicas distintas, incluida la de la cita principal. La entradilla de la misma nota (c01) y el título de otro eje del mismo Manifiesto (c04) no cuentan como ocasiones. La nota del registro del 26-oct (c08) tampoco cuenta, porque cita las pensiones como prioridad sin la medida. Las repeticiones en estilo indirecto de EFE o Canarias Ahora cuentan y se marcan, como en psoe y vox. Los descartes se mantienen: la cifra de 1.800 € del SMI la da la número dos, Iratxe Serrano, que no es líder; la restricción de compras a no residentes solo consta en estilo indirecto, y las tribunas de opinión no son fuente.",
+ "igual_estandar": "Se comparó con las valoraciones aprobadas y con la auditoría de coherencia del 12-11. (1) Impuestos a banca, energéticas y grandes fortunas: upc-06 coincide en los 8 criterios con bng-09 (legal y beneficiarios «favorable»; financiación «mixta», con recaudación conocida de las figuras existentes). (2) SMI: upc-08 coincide con psoe-03 y psc-02, «Subir el salario mínimo todos los años» (financiación «no_verificable» sin cuantía; antecedentes «favorable»). (3) Pensiones: upc-07 tiene financiación «mixta» y beneficiarios «favorable», como psoe-02 y frente_amplio-05. Su encaje legal es «favorable» porque la regla del IPC ya está en el art. 58 LGSS, mientras que psoe-02 requiere una reforma constitucional. (4) Alquiler: la financiación de upc-01 es «favorable», como medida regulatoria, igual que pp-09, erc-06 y adelante_andalucia-01. upc-02 es «no_verificable» porque incluye ampliar el parque público sin cuantía. (5) Medidas regulatorias con un efecto fiscal sin estimar: upc-04 (moratoria) pasa de «mixta» a «no_verificable», con la regla de la auditoría (cc-06, bng-02, pp-02, pp-03, salf-02 y salf-06). El texto documentaba efectos fiscales sin estimación de coste, y «mixta» exige un coste conocido o estimable. (6) Ingresos sin base para estimar la recaudación: upc-05 (tasa turística sin tipo ni exenciones) pasa de «mixta» a «no_verificable», como erc-09, porque su propio texto decía que la recaudación «no puede estimarse». (7) Reforma constitucional definida por el propio partido: el encaje legal de upc-03 es «mixta», como psoe-02. La regla «desfavorable» de erc-04, bng-01 y salf-11 se aplica cuando el diseño la exige sin proponerla. (8) Encaje legal de la tasa para no residentes (upc-05, «mixta») frente a la compra por extranjeros de cc-06 («desfavorable»): cc-06 restringe en su núcleo la libre circulación de capitales. La tasa podría diseñarse por estancia, como la balear, que grava a todos los alojados, y UPC no define el diseño.",
+ "recuento_inicial": {
+  "favorable": 8,
+  "mixta": 61,
+  "desfavorable": 0,
+  "no_verificable": 3
+ },
+ "recuento_final": {
+  "favorable": 9,
+  "mixta": 66,
+  "desfavorable": 0,
+  "no_verificable": 5
+ },
+ "recuento_final_nota": "El recuento final incluye las 8 valoraciones de upc-10 (1 «favorable» y 7 «mixta»). Sobre las 9 propuestas iniciales, el recuento queda en 8/59/0/5.",
+ "cambios": [
+  {
+   "propuesta": "upc-c01 a upc-c15 (seleccion.json)",
+   "criterio": "veces",
+   "antes": "lista de fuentes sin recuento, sin la ocasión principal",
+   "despues": "{n, nota, ocasiones} con «cuenta»: c01 2, c02 3, c03 2, c04 1, c05 1, c06 1, c07 1, c08 2, c09 2, c10 2, c11 2, c12 1, c13 1, c14 1, c15 1",
+   "motivo": "El prompt 1b define «veces» como ocasiones públicas distintas. La entradilla de la misma nota (c01) y el título del eje 7 del mismo Manifiesto (c04) no son otra ocasión. La nota del 26-oct (c08) menciona las pensiones sin la medida. Es el mismo formato y criterio aprobados en junts, eh_bildu y frente_amplio."
+  },
+  {
+   "propuesta": "upc-c02 (seleccion.json)",
+   "criterio": "veces",
+   "antes": "(sin la entrevista de EFE)",
+   "despues": "se añade la cita literal de Campos del 12-nov: «En Canarias hoy no cabe ni una vivienda vacacional más en suelo residencial urbano o barrios populares»",
+   "motivo": "Ocasión pública distinta en la que el cabeza de lista repite, con sus palabras, la parte de vivienda vacacional (comprobada en la copia local y en vivo)."
+  },
+  {
+   "propuesta": "upc-c04 (seleccion.json)",
+   "criterio": "veces y justificacion",
+   "antes": "el eje 7 se titula «límites al crecimiento turístico»",
+   "despues": "título completo del eje 7, y se añade que, según EFE (12-nov), Campos citó el cambio de modelo turístico como foco del programa; la frase de EFE («poner freno al crecimiento de ese sector») figura con cuenta = false",
+   "motivo": "Título literal del eje. La frase de EFE no menciona la moratoria."
+  },
+  {
+   "propuesta": "upc-c01 (seleccion.json)",
+   "criterio": "justificacion",
+   "antes": "…presenta la vivienda como «el centro de la agenda» […]; la nota la repite dos veces.",
+   "despues": "La nota oficial del 27-oct, titulada «Luis Campos sitúa la vivienda en el centro de la agenda de UPC en el Congreso», presenta esta medida como la que detalla su cabeza de lista; Campos la repitió en la entrevista de EFE del 12-nov (estilo indirecto).",
+   "motivo": "Repetirla en la misma nota no es una ocasión distinta. La repetición real es la de EFE."
+  },
+  {
+   "propuesta": "upc-c11 (seleccion.json)",
+   "criterio": "prioridades / no_priorizados",
+   "antes": "no priorizado: «no figura entre las prioridades que la coalición destaca en sus notas»",
+   "despues": "prioridad n.º 10 (eje 15 del Manifiesto; repetida por Campos el 12-nov dentro de la política migratoria, uno de los tres focos del programa según EFE)",
+   "motivo": "El motivo de exclusión no se sostiene frente a la entrevista de EFE. Además, upc-c05 y upc-c06 se priorizaron solo con el Manifiesto, lo que es menos evidencia de énfasis que la de upc-c11. Hay sitio, porque había 9 de 12."
+  },
+  {
+   "propuesta": "descartados (seleccion.json)",
+   "criterio": "fuente_local / sha256",
+   "antes": "SMI de 1.800 €: url de Canarias7 con fuente_local de la tribuna de Diario de Avisos; tribunas de Diario de Avisos sin copia local",
+   "despues": "SMI de 1.800 €: canarias7_20261104_smi.txt (c78fd125…); tribuna: diariodeavisos_202610_tribuna.txt (dedf61f6…)",
+   "motivo": "La copia local no correspondía a la URL."
+  },
+  {
+   "propuesta": "upc (seleccion.json)",
+   "criterio": "nota",
+   "antes": "Hay 9 prioridades.",
+   "despues": "Hay 10 prioridades (la revisión del 12-nov añadió upc-c11). Según EFE (12-nov), Campos dijo que el programa electoral está «cerrado al 90%»; cuando se publique, su análisis sustituirá a este.",
+   "motivo": "Refleja la nueva prioridad y que el programa está anunciado (cita literal de la fuente local)."
+  },
+  {
+   "propuesta": "upc-10",
+   "criterio": "todos",
+   "antes": "(no evaluada)",
+   "despues": "concreción M, legal F, financiación M, evidencia M, internacional M, antecedentes M, beneficiarios M, largo plazo M",
+   "motivo": "Nueva prioridad. Las fuentes se leyeron: Ley 1/2023, art. 1.6 (0,7 % de la RNB en 2030); PGE 2023, con 583.543 M€ de gasto consolidado y 450.722 M€ de gasto no financiero, de los que el 0,7 % son unos 4.085 y 3.155 M€; Exteriores, con 4.116 M€ de AOD de la AGE en 2025, más de 4.550 M€ en total y la AECID por encima de 610 M€; Focus 2030 sobre la OCDE (cuatro países por encima del 0,7 %; el CAD en conjunto, 0,26 %); y los resúmenes de Doucouliagos y Paldam, Clemens y otros, y Lanati y Thiele. Mismas rúbricas que el resto: el coste es estimable y no se explica la financiación, de ahí «mixta»; no hay plazo, de ahí concreción «mixta»."
+  },
+  {
+   "propuesta": "upc-04",
+   "criterio": "financiacion",
+   "antes": "valoracion: mixta («UPC no estima estos costes»)",
+   "despues": "valoracion: no_verificable («No hay estimación pública de ese efecto fiscal y UPC no lo cuantifica, por lo que no hay base para estimar el coste»)",
+   "motivo": "Regla de la auditoría del 12-11: las medidas regulatorias con un efecto fiscal sin estimar son «no_verificable» (cc-06, bng-02, pp-02, pp-03, salf-02 y salf-06). «mixta» exige un coste conocido o estimable."
+  },
+  {
+   "propuesta": "upc-05",
+   "criterio": "financiacion",
+   "antes": "valoracion: mixta («sin tipo ni exenciones la recaudación no puede estimarse»)",
+   "despues": "valoracion: no_verificable (mismo hecho, con la conclusión de que no hay base para estimar la recaudación)",
+   "motivo": "El propio texto decía que no puede estimarse, lo que contradice «mixta» (coste conocido o estimable). Es el mismo criterio que erc-09."
+  },
+  {
+   "propuesta": "upc-07",
+   "criterio": "beneficiarios (campo y criterio)",
+   "antes": "los perceptores de 736.800 pensiones de Clases Pasivas",
+   "despues": "los 708.267 pensionistas de Clases Pasivas (728.062 pensiones en agosto de 2026)",
+   "motivo": "La fuente citada (Seguridad Social, nómina de octubre) da 728.062 pensiones y 708.267 pensionistas de Clases Pasivas en agosto. La cifra de 736.800 no figura en ella."
+  },
+  {
+   "propuesta": "upc-01",
+   "criterio": "antecedentes",
+   "antes": "si no resuelve en seis meses desde la información pública",
+   "despues": "si no resuelve en seis meses desde que termina la información pública",
+   "motivo": "El art. 37.6 del Decreto-ley canario 1/2024 computa el plazo «a partir de la finalización del trámite de información pública»."
+  },
+  {
+   "propuesta": "upc (evaluacion.json)",
+   "criterio": "nota y seleccion_sha256",
+   "antes": "Evaluación de las 9 prioridades …; sha256 de la selección anterior",
+   "despues": "Evaluación de las 10 prioridades …; sha256 recalculado (9dc8ec70…)",
+   "motivo": "Cambió seleccion.json."
+  }
+ ],
+ "dudas": [
+  "Programa anunciado. Según EFE (12-nov), Campos dijo que el programa electoral está «cerrado al 90%». Cuando se publique, su análisis por el prompt 1 sustituirá a este.",
+  "upc-c06 (grandes fortunas, banca y energéticas) solo consta en el Manifiesto, igual que upc-c07 y upc-c12, que no se priorizan. Se mantiene porque es la única medida tributaria del eje 9, «Propuestas de reforma fiscal a nivel estatal», que es lo que decide el Congreso. Es un caso frontera de la selección.",
+  "Fecha del Manifiesto. «3-nov» procede de la cabecera Last-Modified registrada en partidos.json. El PDF tiene ModDate 30-10-2026, y hoy el servidor da Last-Modified 9-11-2026 con un texto idéntico. El documento no lleva fecha. En todo caso es posterior a la convocatoria.",
+  "upc-10: el 0,7 % del Manifiesto se refiere a los Presupuestos, no a la RNB como la Ley 1/2023. Se usa el presupuesto consolidado de 2023 (Ley 31/2022) como referencia, porque no consta en las fuentes leídas otro presupuesto aprobado posterior. Con esa base, el objetivo sería del orden de la AOD que ya gestiona la AGE (4.116 M€ en 2025), que incluye la aportación a la UE. El aumento real depende de qué partidas cuenten. No se localizó el porcentaje de la RNB de España en 2025: la nota de la OCDE devolvió 403.",
+  "Las repeticiones en estilo indirecto (EFE, 12-nov; Canarias Ahora, 7-nov) se cuentan en «veces» y se marcan, con el mismo criterio que psoe y vox. Las notas oficiales de UPC en estilo indirecto se aceptan como documento del partido (quien = la coalición), como psc-c03."
+ ]
+}

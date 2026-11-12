@@ -1,0 +1,103 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-12",
+ "base": "compromisos",
+ "alcance": "11 compromisos y 11 prioridades × 8 criterios (7 en la primera pasada; 4 añadidas tras ella, véase «seleccion»). Se abrieron las 69 URL citadas en seleccion.json y evaluacion.json y la fuente añadida (STC 26/2025). 68 respondieron a una petición normal. EUR-Lex devolvió para el art. 63 y el art. 113 TFUE y el Protocolo n.º 32 páginas breves que son el propio texto del artículo, no un desafío. imf.org devolvió 403 a curl: el documento SIP/2023/004 se leyó con una petición web normal en la misma URL. La STC 177/2016 (formato .docx) y la estadística de pensiones de agosto de 2026 (.xlsx) se leyeron extrayendo su contenido. No se sorteó ninguna protección. Citas: las 30 coinciden con su copia local (verify_quotes: 0 no encontradas); se cotejaron las 5 notas oficiales y las 7 crónicas, y las traducciones del catalán son fieles. Las citas son de Carme Gomila (cabeza de lista) en primera persona o de notas oficiales de la coalición en aramesfrontampli.cat (quien = la coalición), todas posteriores a la convocatoria. El c05 procede de un comunicado («En un comunicado», EFE), no de una rueda de prensa. Cifras comprobadas en fuente primaria: Registradores 4T 2025 (31,47 %; 3.566 y 14.633 compraventas), INE ECV 2025 (21,3 % y 16,7 %), censo 2021 (105.632 de 652.123), ECP (1.249.844), EPF 2024 (5.391 €; 15,8 %, 19,9 % y 12,0 %), estadística de pensiones de agosto de 2026 (216.912 pensiones, 1.282,53 €, 32.175 con mínimos, 14,8 % frente a 20,1 %), Moncloa (12.441,80 y 17.592,40 €), AIReF (+3,1 puntos hasta el 16,1 % en 2050), OCDE (Pensions at a Glance 2023: −11,2 puntos, al menos 4 puntos, 35-36 %), Estadística de Asuntos Taurinos 2024 (1.457 festejos, +2,2 % sobre 2019; 11.066, 1.337 y 74), votación de la ILP (169-57-118), RDL 29/2026 (2 % hasta el 31-12-2027; recargo del IBI), Ley balear 5/2018 (cesión al IBAVI, compensación según expropiación forzosa, límite presupuestario), Directiva del IVA (arts. 1.2, 6, 104, 168 y anexo III) y estudios citados (Hartley y otros; Segú; Jofre-Monseny y otros; Diamond y otros; Hahn y otros; Mužić y Žilić; Forteza y otros). Segunda pasada (prioridades 08 a 11): se abrieron las 53 URL que citan (todas con respuesta 200; la versión consolidada de la Directiva 2006/112/CE en EUR-Lex respondió al repetir la petición) y se comprobaron en fuente primaria, entre otras, el RDL 29/2026 (art. 1 y preámbulo: «prohibición de la compra especulativa», 70 % del valor de mercado, vigencia hasta el 31-12-2030 «para garantizar su proporcionalidad»), la nota del Gobierno neerlandés del 16-10-2026 (opkoopbescherming, unos 70 municipios), GAO-24-106643 (74 estudios), Du y Zhang (−7,69 puntos), Moncloa y BOE del SMI de 2026 (1.221 €, +3,1 %, 66 % desde 2018, 2,5 millones), Banco de España (DO 2113), Ley 7/2023 (art. 32.6), Ley 31/2003, Directiva 1999/22/CE, Clubb y Mason (2003), Max Planck sobre Conde y otros (17 de 68 especies), Le Petit Journal (8 delfines de Marineland a Selwo Marina, 22-23 de julio), ley francesa de 30-11-2021, S-203 de Canadá, Montreal (1.000 dólares por caballo), LegalToday (TSJIB, nulidad por falta de informe de impacto de género), Última Hora (28 licencias, unos 1,4 M€), anexo III y art. 105 bis de la Directiva del IVA, informe COM(2025) 585 (Irlanda, 13,5 % a los servicios de los veterinarios; ningún tipo «parking» en España), EPF (60,91 € por persona; cálculo de 220 a 270 M€ rehecho) y la votación de la PNL de 2016 (177-132-33). verify_quotes: 34 citas, 0 no encontradas.",
+ "seleccion": "Conforme tras corrección. En la primera pasada la selección no era conforme: dejaba fuera 4 de los 11 compromisos que el partido también destaca, y el prompt 1b dice: «Si hay menos de 12 compromisos concretos verificables, selecciona los que haya». c04 (prohibir la compra especulativa) figura en la misma frase de la nota del 6-nov que c01, c02 y c03; c07 (subir el salario mínimo) es el primero de los cinco compromisos que Gomila enumera ante PP y Vox en el mitin de Palma (8-nov), la misma enumeración que justifica c01 y c08; c10 (zoológicos, delfinarios y galeras) es «una de les principals propostes» de la nota del 10-nov, con su primer epígrafe y su subtítulo; c11 (IVA veterinario) figura en ese subtítulo. Los motivos de exclusión aducían falta de concreción, que es un criterio de evaluación y no de prioridad. Un agente evaluador distinto añadió las cuatro a «prioridades» y las evaluó con el prompt 3 (ara_mes_fa-08 a -11); este revisor las revisó con el prompt 4 (véanse «cambios»). Con 11 prioridades entran todos los compromisos concretos que el partido destaca, como en Podemos, PSC, UPN y EH Bildu.",
+ "igual_estandar": "(1) Compra de vivienda por no residentes: ara_mes_fa-01 es «desfavorable» en encaje legal (art. 63 TFUE; Konle, Libert; sin protocolo como el danés) y «no_verificable» en financiación, igual que cc-06 y podemos-02. (2) Topes al alquiler: ara_mes_fa-02 pasa a «mixta» en encaje legal, como podemos-01, bng-02, adelante_andalucia-01 y pnv-01, por la STC 26/2025 y un diseño sin definir; la financiación «favorable» (regulatoria) es igual que en podemos-01, pnv-01 y adelante_andalucia-01. (3) Viviendas vacías: la concreción «desfavorable» de ara_mes_fa-03 (objetivo sin instrumento) sigue la regla de podemos-01. (4) IVA del transporte de mercancías: el encaje legal «desfavorable» de ara_mes_fa-04 sigue la regla de la auditoría para medidas que chocan con el Derecho de la UE en su núcleo (cc-06, salf-06): el anexo III de la Directiva no incluye el transporte de mercancías y un tipo territorial exige cambiar la Directiva por unanimidad. pnv-05 es «mixta» porque parte de su diseño (gestión foral) es viable. (5) Complemento de pensiones: el encaje legal «mixta» de ara_mes_fa-05 es igual que el del SMI territorial de pnv-02 y eh_bildu-04, y la financiación «no_verificable» sin cuantía sigue la regla de psoe-03. (6) Topes a los alimentos: ara_mes_fa-06 es «favorable» en encaje legal y podemos-03 es «mixta». Se mantiene la diferencia, porque los hechos difieren: «alimentos básicos» encaja en los «productos de primera necesidad» cuyo precio el Gobierno ya puede fijar (art. 13.2.a de la Ley 7/1996), mientras que un tope sobre «los alimentos» en general excede ese supuesto. La financiación «favorable» es igual en ambos. (7) Tauromaquia: ara_mes_fa-07 no tiene comparable en otros partidos. (8) Compra especulativa: ara_mes_fa-08 es «mixta» en encaje legal porque «especulativa» no está definida, como compromis-01 y la limitación acotada del RDL 29/2026, y «no_verificable» en financiación (efecto recaudatorio sin estimar), como podemos-02 y compromis-01. (9) SMI: ara_mes_fa-09 tiene las mismas ocho valoraciones que psoe-03, psc-02 y upc-08. (10) IVA veterinario: ara_mes_fa-11 pasa a «desfavorable» en encaje legal, la regla de ara_mes_fa-04: el anexo III no incluye los servicios veterinarios para animales de compañía, y la vía del tipo «parking» del art. 105 bis.3 solo estaba abierta a otros Estados hasta el 7-10-2023 (art. 105 bis.5). (11) Zoológicos y galeras: ara_mes_fa-10 «mixta» en encaje legal (parte viable por ley estatal; galeras sin título competencial indicado).",
+ "recuento_inicial": {
+  "favorable": 5,
+  "mixta": 42,
+  "desfavorable": 4,
+  "no_verificable": 5
+ },
+ "recuento_final": {
+  "favorable": 6,
+  "mixta": 69,
+  "desfavorable": 5,
+  "no_verificable": 8
+ },
+ "cambios": [
+  {
+   "propuesta": "ara_mes_fa-02",
+   "criterio": "legal",
+   "antes": "valoracion: favorable. «…con ese criterio desestimó el recurso contra la contención de rentas de la Ley 12/2023 (STC 79/2024)… aplicarlos en Baleares sin esa declaración autonómica requeriría una ley estatal ordinaria, aprobada por mayoría simple.»",
+   "despues": "valoracion: mixta. Texto que añade la STC 26/2025 (tope avalado por ser «excepcional y limitado» y «apegado al valor de mercado»), recoge que el Govern no ha declarado zonas tensionadas y explica que el encaje depende de un diseño no concretado. Fuentes añadidas: STC 26/2025 (BOE) y La Voz de Ibiza (1-10-2026).",
+   "motivo": "Igual estándar: los topes al alquiler sin diseño definido son «mixta» en podemos-01, bng-02, adelante_andalucia-01 y pnv-01, porque la STC 26/2025 avaló el tope de la Ley 12/2023 por su ámbito limitado. El texto omitía ese pronunciamiento. Además, la STC 79/2024 estimó en parte el recurso de Andalucía y lo que avaló en este punto es la competencia estatal (art. 149.1.8 CE)."
+  },
+  {
+   "propuesta": "ara_mes_fa-06",
+   "criterio": "evidencia, internacional y largo_plazo (título de la fuente del FMI)",
+   "antes": "FMI (17-1-2023), Hungary: Selected Issues (SIP/2023/004)",
+   "despues": "FMI (17-1-2023), Drivers of Inflation: Hungary, Selected Issues Paper SIP/2023/004",
+   "motivo": "Título real del documento. La URL se mantiene: responde a una petición web normal (403 solo a curl) y dice lo que el texto afirma («Caps were ineffective in slowing broad food inflation»; los topes «resulted in higher prices on other products to compensate losses»)."
+  },
+  {
+   "propuesta": "seleccion.json (c01-c11)",
+   "criterio": "veces",
+   "antes": "lista de fuentes (por ejemplo, c05 tenía 2 entradas: la misma nota y la crónica de EFE del mismo comunicado; c01 y c08 contaban dos veces el mitin de Palma)",
+   "despues": "{n, nota, ocasiones}: c01 = 2 (6-nov y 8-nov), c08 = 2 (7-nov y 8-nov), y el resto = 1. Se conservan las URL en «ocasiones».",
+   "motivo": "El prompt 1b define «veces» como ocasiones públicas distintas, no fuentes. Es el mismo formato y criterio que en Frente Amplio, EH Bildu y Junts."
+  },
+  {
+   "propuesta": "ara_mes_fa-c05 (seleccion.json)",
+   "criterio": "justificación de la prioridad",
+   "antes": "Propuesta presentada en rueda de prensa monográfica de la cabeza de lista (12-nov)…",
+   "despues": "Comunicado monográfico de la coalición con declaraciones de la cabeza de lista (12-nov), recogido por EFE…",
+   "motivo": "La crónica de EFE dice «En un comunicado» y la nota oficial no menciona una rueda de prensa."
+  },
+  {
+   "propuesta": "ara_mes_fa-c09 (seleccion.json)",
+   "criterio": "justificación de la prioridad",
+   "antes": "…en la rueda de prensa monográfica de bienestar animal de la cabeza de lista (10-nov).",
+   "despues": "La nota de la presentación monográfica de las propuestas de bienestar animal de la cabeza de lista (Calvià, 10-nov) la llama «una altra de les prioritats».",
+   "motivo": "La nota habla de una presentación («han presentat avui») en Calvià, no de una rueda de prensa."
+  },
+  {
+   "propuesta": "ara_mes_fa-c03 (seleccion.json)",
+   "criterio": "justificación de la prioridad",
+   "antes": "mallorca.com la titula como el anuncio del día («empty homes election pitch»)",
+   "despues": "la crónica de mallorca.com (Europa Press) la lleva al titular («Mallorca housing pitch targets 105,000 empty Balearic homes»)",
+   "motivo": "La cita anterior era un fragmento de la URL, no el titular."
+  },
+  {
+   "propuesta": "evaluacion.json",
+   "criterio": "seleccion_sha256",
+   "antes": "hash de la selección anterior",
+   "despues": "a65acdbb74f33a206155e554aa0e39a637b0437d7d0cf9ed3d7411e6d9e3e61e",
+   "motivo": "Recalculado tras los cambios en seleccion.json."
+  },
+  {
+   "propuesta": "selección",
+   "criterio": "prioridades (seleccion.json)",
+   "antes": "7 prioridades; c04, c07, c10 y c11 en «no_priorizados»; nota: «Hay 7 prioridades: no se encontraron más compromisos concretos que el partido destaque»",
+   "despues": "11 prioridades (c04, c07, c10 y c11 añadidas con su justificación); sin «no_priorizados»; nota corregida",
+   "motivo": "el partido destaca los cuatro con la misma evidencia que justifica otras prioridades (prompt 1b: con menos de 12, se seleccionan los que haya). Lo aplicó un agente evaluador distinto; revisado aquí. seleccion_sha256 recalculado"
+  },
+  {
+   "propuesta": "ara_mes_fa-08 a -11",
+   "criterio": "todos",
+   "antes": "(no evaluadas)",
+   "despues": "evaluadas con el prompt 3 por un agente evaluador distinto: 08 M/M/N/M/M/M/M/M; 09 M/F/N/M/M/F/M/M; 10 M/M/N/M/M/M/M/M; 11 M/D/M/M/M/M/M/M (tras la corrección siguiente)",
+   "motivo": "consecuencia de la corrección de la selección; se abrieron las 53 URL y se comprobaron cifras y normas (véase «alcance»)"
+  },
+  {
+   "propuesta": "ara_mes_fa-11",
+   "criterio": "legal",
+   "antes": "valoracion: mixta. «…el art. 105 bis, apartado 3, permite a cualquier Estado aplicar un tipo no inferior al 12 % a operaciones a las que otro Estado ya lo aplicaba el 1-1-2021 … Una rebaja a un tipo de al menos el 12 % cabría así en una ley ordinaria…»",
+   "despues": "valoracion: desfavorable. La vía del art. 105 bis.3 para los demás Estados exigía adoptar sus normas antes del 7-10-2023 (art. 105 bis.5), y el informe COM(2025) 585 no recoge ese tipo en España; rebajar hoy el IVA de estos servicios exige modificar la Directiva por unanimidad (art. 113 TFUE)",
+   "motivo": "error de Derecho: se omitía el plazo del art. 105 bis.5 de la Directiva 2006/112/CE (texto consolidado en EUR-Lex; informe de la Comisión, p. 2). Con ello la medida choca en su núcleo con el Derecho de la UE, la misma regla que ara_mes_fa-04, cc-06 y salf-06"
+  }
+ ],
+ "dudas": [
+  "ara_mes_fa-04, evidencia («desfavorable»). No se apoya en un estudio empírico sino en el diseño del IVA: la empresa que contrata el flete deduce el impuesto (arts. 1.2 y 168 de la Directiva). Se mantiene porque el marco legal contradice el mecanismo con el que la coalición dice que bajarían los precios. Es un caso frontera.",
+  "ara_mes_fa-07, financiación («favorable»). La supresión de ayudas reduce gasto, pero no se ha localizado su cuantía, y una prohibición estatal podría generar reclamaciones de compensación que nadie ha estimado. Se mantiene por la nota de la rúbrica sobre las medidas regulatorias.",
+  "La guía de seg-social.pt sobre el Complemento Regional de Pensão de las Azores (ara_mes_fa-05, internacional) incluye un bloque de metadatos con la etiqueta «LLM». Su contenido coincide con el Decreto Legislativo Regional 8/2002/A, que cita.",
+  "La URL del FMI (.pdf.md) también se usa en podemos-03. Funciona con una petición web normal y da 403 a curl.",
+  "ara_mes_fa-11, financiación («mixta»): el coste (220 a 270 M€) es un cálculo propio con la partida de la EPF que incluye otros servicios para mascotas y supone traslado completo; es una cota superior.",
+  "ara_mes_fa-10: las cifras de galeras de Palma (28 licencias, unos 1,4 M€) son de Última Hora (2020) y pueden estar desfasadas; la sentencia del TSJIB se conoce por LegalToday (29-5-2026), no por su texto.",
+  "ara_mes_fa-08, «veces»: queda en 1; la frase del mitin del 8-nov («acabarem amb l'especulació») es más amplia que la compra especulativa y no se cuenta como segunda ocasión."
+ ],
+ "recuento_final_nota": "Las 7 prioridades de la primera pasada quedan en 4/43/4/5; las 4 añadidas (08 a 11) suman 2/26/1/3."
+}

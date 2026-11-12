@@ -1,0 +1,798 @@
+{
+ "partido": "compromis",
+ "base": "compromisos",
+ "modelo": "Claude (Anthropic)",
+ "fecha": "2026-11-12",
+ "nota": "Compromís: Front Valencià no había publicado programa para el 29-N a 12-nov-2026 (la web electoral muestra «Programa sencer: enllaç pendent»). El documento oficial más completo es la web electoral de la candidatura (frontvalencia.org; frontvalencia.net sirve el mismo contenido): su pie dice «Web electoral de Compromís – Front Valencià», remite al aviso legal, las donaciones y los apoderados de compromis.net, y la portada de compromis.net la enlaza como primer «Contingut destacat» (comprobado el 12-nov en el HTML de compromis.net). Esa web resume el programa en seis bloques de medidas de una línea; se usa como documento oficial con quien = la candidatura y fecha = fecha de consulta (no tiene fecha de publicación). Se suman las declaraciones en primera persona de Àgueda Micó (cabeza de lista por Valencia) y las notas de prensa del partido. Alberto Ibáñez (número 2 por Valencia) no cuenta como líder: sus propuestas solo entran si las recoge una nota oficial del partido. Hay 12 prioridades. La lista de «principals mesures» de la presentación de la campaña (À Punt, 10-nov) coincide con los bloques de la web y confirma su carácter central.",
+ "compromisos": [
+  {
+   "id": "compromis-c01",
+   "area": "vivienda",
+   "resumen": "Prohibir por ley que los fondos de inversión especulativos («fondos buitre») compren vivienda.",
+   "cita": "Prohibirem la compra de vivenda per fons voltor.",
+   "cita_traduccion": "Prohibiremos la compra de vivienda por fondos buitre.",
+   "quien": "Compromís: Front Valencià (web electoral de la candidatura, frontvalencia.org)",
+   "formato": "documento oficial (web de campaña, apartado «Programa»)",
+   "fecha": "2026-11-12",
+   "url": "https://frontvalencia.org/",
+   "medio": "Compromís: Front Valencià (web electoral)",
+   "fuente_local": "data/sources/compromisos/compromis/frontvalencia_web_campana.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 4,
+    "nota": "Ocasiones públicas distintas, incluida la de la cita principal: web electoral, entrevista de Micó (25-oct), rueda de prensa de Madrid (4-nov) y presentación de la campaña (10-nov). À Punt atribuye la lista de medidas de la presentación al número 2 por Valencia, en estilo indirecto.",
+    "ocasiones": [
+     {
+      "fecha": "2026-10-25",
+      "ocasion": "entrevista a Àgueda Micó (elDiario.es)",
+      "url": "https://www.eldiario.es/comunitat-valenciana/politica/agueda-mico-cabeza-lista-compromis-front-valencia-hay-limitar-compra-vivienda_128_13608690.html",
+      "medio": "elDiario.es",
+      "fuente_local": "data/sources/compromisos/compromis/eldiario_20261025_entrevista_mico.txt",
+      "cita": "Se debería limitar la compra de vivienda en general. Empezando por los fondos buitre y grandes especuladores",
+      "sha256": "9d38b1702a32c21f01398867f4f281abeb2cb248aa4f00ac5ac0cc14e75b864d"
+     },
+     {
+      "fecha": "2026-11-04",
+      "ocasion": "rueda de prensa de los candidatos en Madrid; crónica de EFE en estilo indirecto, atribuido a María Teresa Pérez, cabeza de lista por Alicante",
+      "url": "https://valenciaplaza.com/valenciaplaza/comunitat-valenciana1/compromis-front-valencia-pedira-reabrir-la-investigacion-de-la-dana-en-el-nuevo-congreso",
+      "medio": "Valencia Plaza (EFE)",
+      "fuente_local": "data/sources/compromisos/compromis/valenciaplaza_efe_20261104_madrid.txt",
+      "cita": "plantearán que se regule el precio de los alquileres y que se prohíba la compra a 'fondos buitre'",
+      "sha256": "e9cfb06725f574104f95a689a829e80916f5355dfacc7d0bf7f2edd33a0791e0"
+     },
+     {
+      "fecha": "2026-11-10",
+      "ocasion": "presentación de la campaña en rueda de prensa (Micó, Ibáñez y Manyes); À Punt atribuye la lista de «principals mesures» a Alberto Ibáñez, en estilo indirecto",
+      "url": "https://www.apuntmedia.es/noticies/politica/compromis-front-valencia-aposta-vivenda-salari-pensions-campanya-29n_1_1907805.html",
+      "medio": "À Punt",
+      "fuente_local": "data/sources/compromisos/compromis/apunt_20261110_presentacio_campanya.txt",
+      "cita": "prohibir que els fons voltor compren vivenda",
+      "cita_traduccion": "prohibir que los fondos buitre compren vivienda",
+      "sha256": "11d5aa28a16e402787e376e091864356de5a534b73439a76a8d667b286ed11f9"
+     }
+    ]
+   },
+   "sha256": "d0a2ebc08f068f5ec5ee896e43b853aeb5c119b870df5dce9287d18258fb5a9d"
+  },
+  {
+   "id": "compromis-c02",
+   "area": "vivienda",
+   "resumen": "Regular los precios del alquiler en las zonas de mercado tensionado para reducirlos, no solo para congelarlos.",
+   "cita": "Hay que regular los alquileres en las zonas tensionadas y reducirlos, no limitarse a impedir que sigan subiendo.",
+   "quien": "Àgueda Micó (cabeza de lista de Compromís: Front Valencià por Valencia y portavoz de Compromís en el Congreso en la XV legislatura)",
+   "formato": "entrevista",
+   "fecha": "2026-10-25",
+   "url": "https://www.eldiario.es/comunitat-valenciana/politica/agueda-mico-cabeza-lista-compromis-front-valencia-hay-limitar-compra-vivienda_128_13608690.html",
+   "medio": "elDiario.es",
+   "fuente_local": "data/sources/compromisos/compromis/eldiario_20261025_entrevista_mico.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 3,
+    "nota": "Ocasiones públicas distintas, incluida la de la cita principal: entrevista de Micó (25-oct), Castelló (2-nov) y rueda de prensa de Madrid (4-nov).",
+    "ocasiones": [
+     {
+      "fecha": "2026-11-02",
+      "ocasion": "presentación de propuestas en Castelló de la Plana (Micó e Ignasi Garcia)",
+      "url": "https://castellonplaza.com/castellonplaza/castellon9/compromis-front-valencia-propone-en-castello-gravar-la-acumulacion-especulativa-de-mas-de-cinco-viviendas",
+      "medio": "Castellón Plaza",
+      "fuente_local": "data/sources/compromisos/compromis/castellonplaza_20261102_castello.txt",
+      "cita": "La fuerza de Compromís es la que empuja para que regular los alquileres, proteger a las familias y defender el campo valenciano sean decisiones concretas",
+      "sha256": "6842ddeaa7332af4584b25f319059b61b3ee20812b4057a1fdcfddc0d66b50a7"
+     },
+     {
+      "fecha": "2026-11-04",
+      "ocasion": "rueda de prensa en Madrid; EFE en estilo indirecto, atribuido a María Teresa Pérez",
+      "url": "https://valenciaplaza.com/valenciaplaza/comunitat-valenciana1/compromis-front-valencia-pedira-reabrir-la-investigacion-de-la-dana-en-el-nuevo-congreso",
+      "medio": "Valencia Plaza (EFE)",
+      "fuente_local": "data/sources/compromisos/compromis/valenciaplaza_efe_20261104_madrid.txt",
+      "cita": "plantearán que se regule el precio de los alquileres",
+      "sha256": "e9cfb06725f574104f95a689a829e80916f5355dfacc7d0bf7f2edd33a0791e0"
+     }
+    ]
+   },
+   "sha256": "9d38b1702a32c21f01398867f4f281abeb2cb248aa4f00ac5ac0cc14e75b864d"
+  },
+  {
+   "id": "compromis-c03",
+   "area": "vivienda",
+   "resumen": "Contratos de alquiler de duración indefinida.",
+   "cita": "Apostarem pel lloguer indefinit.",
+   "cita_traduccion": "Apostaremos por el alquiler indefinido.",
+   "quien": "Compromís: Front Valencià (web electoral de la candidatura, frontvalencia.org)",
+   "formato": "documento oficial (web de campaña, apartado «Programa»)",
+   "fecha": "2026-11-12",
+   "url": "https://frontvalencia.org/",
+   "medio": "Compromís: Front Valencià (web electoral)",
+   "fuente_local": "data/sources/compromisos/compromis/frontvalencia_web_campana.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 2,
+    "nota": "Ocasiones públicas distintas, incluida la de la cita principal: web electoral y presentación de la campaña (10-nov). À Punt atribuye la lista de medidas de la presentación al número 2 por Valencia, en estilo indirecto.",
+    "ocasiones": [
+     {
+      "fecha": "2026-11-10",
+      "ocasion": "presentación de la campaña en rueda de prensa (Micó, Ibáñez y Manyes); À Punt atribuye la lista de «principals mesures» a Alberto Ibáñez, en estilo indirecto",
+      "url": "https://www.apuntmedia.es/noticies/politica/compromis-front-valencia-aposta-vivenda-salari-pensions-campanya-29n_1_1907805.html",
+      "medio": "À Punt",
+      "fuente_local": "data/sources/compromisos/compromis/apunt_20261110_presentacio_campanya.txt",
+      "cita": "l'aposta per lloguers indefinits",
+      "cita_traduccion": "la apuesta por alquileres indefinidos",
+      "sha256": "11d5aa28a16e402787e376e091864356de5a534b73439a76a8d667b286ed11f9"
+     }
+    ]
+   },
+   "sha256": "d0a2ebc08f068f5ec5ee896e43b853aeb5c119b870df5dce9287d18258fb5a9d"
+  },
+  {
+   "id": "compromis-c04",
+   "area": "fiscalidad",
+   "resumen": "Subir los impuestos a quien posea vivienda a partir de la tercera.",
+   "cita": "Més impostos a partir de la tercera vivenda.",
+   "cita_traduccion": "Más impuestos a partir de la tercera vivienda.",
+   "quien": "Compromís: Front Valencià (web electoral de la candidatura, frontvalencia.org)",
+   "formato": "documento oficial (web de campaña, apartado «Programa»)",
+   "fecha": "2026-11-12",
+   "url": "https://frontvalencia.org/",
+   "medio": "Compromís: Front Valencià (web electoral)",
+   "fuente_local": "data/sources/compromisos/compromis/frontvalencia_web_campana.txt",
+   "cuantificado": true,
+   "veces": {
+    "n": 2,
+    "nota": "Ocasiones públicas distintas, incluida la de la cita principal: web electoral y presentación de propuestas en Castelló (2-nov); Castellón Plaza y El Periòdic recogen el mismo acto.",
+    "ocasiones": [
+     {
+      "fecha": "2026-11-02",
+      "ocasion": "presentación de propuestas en Castelló; la crónica, en estilo indirecto, sitúa el umbral en más de cinco viviendas",
+      "url": "https://castellonplaza.com/castellonplaza/castellon9/compromis-front-valencia-propone-en-castello-gravar-la-acumulacion-especulativa-de-mas-de-cinco-viviendas",
+      "medio": "Castellón Plaza",
+      "fuente_local": "data/sources/compromisos/compromis/castellonplaza_20261102_castello.txt",
+      "cita": "la coalición propone gravar la acumulación especulativa de inmuebles, especialmente cuando se superen las cinco viviendas",
+      "sha256": "6842ddeaa7332af4584b25f319059b61b3ee20812b4057a1fdcfddc0d66b50a7"
+     },
+     {
+      "fecha": "2026-11-02",
+      "ocasion": "mismo acto de Castelló, crónica en valenciano (estilo indirecto, mismo umbral de cinco viviendas)",
+      "url": "https://www.elperiodic.com/val/pcastellon/compromis-demana-gravar-propietat-vivendes-castello_1100517",
+      "medio": "El Periòdic",
+      "fuente_local": "data/sources/compromisos/compromis/elperiodic_20261102_castello.txt",
+      "cita": "la coalició proposa gravar l'acumulació especulativa d'immobles, especialment quan se superen les cinc vivendes",
+      "cita_traduccion": "la coalición propone gravar la acumulación especulativa de inmuebles, especialmente cuando se superen las cinco viviendas",
+      "sha256": "ea9c6ef7ed3789b07fc4cec8f51bba4b660ad128596a82566f4f2e559cb7ae08"
+     }
+    ]
+   },
+   "sha256": "d0a2ebc08f068f5ec5ee896e43b853aeb5c119b870df5dce9287d18258fb5a9d"
+  },
+  {
+   "id": "compromis-c05",
+   "area": "vivienda",
+   "resumen": "Ampliar el parque público de vivienda y que la vivienda protegida no pierda esa condición con el tiempo.",
+   "cita": "Ampliarem el parc públic de vivenda.",
+   "cita_traduccion": "Ampliaremos el parque público de vivienda.",
+   "quien": "Compromís: Front Valencià (web electoral de la candidatura, frontvalencia.org)",
+   "formato": "documento oficial (web de campaña, apartado «Programa»)",
+   "fecha": "2026-11-12",
+   "url": "https://frontvalencia.org/",
+   "medio": "Compromís: Front Valencià (web electoral)",
+   "fuente_local": "data/sources/compromisos/compromis/frontvalencia_web_campana.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 3,
+    "nota": "Ocasiones públicas distintas, incluida la de la cita principal: web electoral, entrevista de Micó (25-oct) y Castelló (2-nov).",
+    "ocasiones": [
+     {
+      "fecha": "2026-10-25",
+      "ocasion": "entrevista a Àgueda Micó (elDiario.es)",
+      "url": "https://www.eldiario.es/comunitat-valenciana/politica/agueda-mico-cabeza-lista-compromis-front-valencia-hay-limitar-compra-vivienda_128_13608690.html",
+      "medio": "elDiario.es",
+      "fuente_local": "data/sources/compromisos/compromis/eldiario_20261025_entrevista_mico.txt",
+      "cita": "hay que ampliar de verdad el parque público de vivienda",
+      "sha256": "9d38b1702a32c21f01398867f4f281abeb2cb248aa4f00ac5ac0cc14e75b864d"
+     },
+     {
+      "fecha": "2026-11-02",
+      "ocasion": "presentación de propuestas en Castelló (Micó)",
+      "url": "https://castellonplaza.com/castellonplaza/castellon9/compromis-front-valencia-propone-en-castello-gravar-la-acumulacion-especulativa-de-mas-de-cinco-viviendas",
+      "medio": "Castellón Plaza",
+      "fuente_local": "data/sources/compromisos/compromis/castellonplaza_20261102_castello.txt",
+      "cita": "Las viviendas protegidas deben seguir siendo asequibles con el paso de los años.",
+      "sha256": "6842ddeaa7332af4584b25f319059b61b3ee20812b4057a1fdcfddc0d66b50a7"
+     }
+    ]
+   },
+   "sha256": "d0a2ebc08f068f5ec5ee896e43b853aeb5c119b870df5dce9287d18258fb5a9d"
+  },
+  {
+   "id": "compromis-c06",
+   "area": "igualdad",
+   "resumen": "Reformar la Constitución para incluir en ella el derecho al aborto.",
+   "cita": "Garantirem els drets sexuals i reproductius i blindarem el dret a l'avortament en la Constitució.",
+   "cita_traduccion": "Garantizaremos los derechos sexuales y reproductivos y blindaremos el derecho al aborto en la Constitución.",
+   "quien": "Compromís: Front Valencià (web electoral de la candidatura, frontvalencia.org)",
+   "formato": "documento oficial (web de campaña, apartado «Programa»)",
+   "fecha": "2026-11-12",
+   "url": "https://frontvalencia.org/",
+   "medio": "Compromís: Front Valencià (web electoral)",
+   "fuente_local": "data/sources/compromisos/compromis/frontvalencia_web_campana.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 3,
+    "nota": "Ocasiones públicas distintas, incluida la de la cita principal: web electoral, entrevista de Micó (25-oct) y presentación de la campaña (10-nov). À Punt atribuye la lista de medidas de la presentación al número 2 por Valencia, en estilo indirecto.",
+    "ocasiones": [
+     {
+      "fecha": "2026-10-25",
+      "ocasion": "entrevista a Àgueda Micó (elDiario.es)",
+      "url": "https://www.eldiario.es/comunitat-valenciana/politica/agueda-mico-cabeza-lista-compromis-front-valencia-hay-limitar-compra-vivienda_128_13608690.html",
+      "medio": "elDiario.es",
+      "fuente_local": "data/sources/compromisos/compromis/eldiario_20261025_entrevista_mico.txt",
+      "cita": "hemos de proteger cuestiones tan básicas como el blindaje constitucional de las pensiones, del derecho al aborto, los derechos de las mujeres y de la comunidad LGTBI.",
+      "sha256": "9d38b1702a32c21f01398867f4f281abeb2cb248aa4f00ac5ac0cc14e75b864d"
+     },
+     {
+      "fecha": "2026-11-10",
+      "ocasion": "presentación de la campaña en rueda de prensa (Micó, Ibáñez y Manyes); À Punt atribuye la lista de «principals mesures» a Alberto Ibáñez, en estilo indirecto",
+      "url": "https://www.apuntmedia.es/noticies/politica/compromis-front-valencia-aposta-vivenda-salari-pensions-campanya-29n_1_1907805.html",
+      "medio": "À Punt",
+      "fuente_local": "data/sources/compromisos/compromis/apunt_20261110_presentacio_campanya.txt",
+      "cita": "protegir l'avortament en la Constitució",
+      "cita_traduccion": "proteger el aborto en la Constitución",
+      "sha256": "11d5aa28a16e402787e376e091864356de5a534b73439a76a8d667b286ed11f9"
+     }
+    ]
+   },
+   "sha256": "d0a2ebc08f068f5ec5ee896e43b853aeb5c119b870df5dce9287d18258fb5a9d"
+  },
+  {
+   "id": "compromis-c07",
+   "area": "pensiones",
+   "resumen": "Blindar las pensiones públicas; Micó lo plantea como blindaje constitucional.",
+   "cita": "Blindarem les pensions.",
+   "cita_traduccion": "Blindaremos las pensiones.",
+   "quien": "Compromís: Front Valencià (web electoral de la candidatura, frontvalencia.org)",
+   "formato": "documento oficial (web de campaña, apartado «Programa»)",
+   "fecha": "2026-11-12",
+   "url": "https://frontvalencia.org/",
+   "medio": "Compromís: Front Valencià (web electoral)",
+   "fuente_local": "data/sources/compromisos/compromis/frontvalencia_web_campana.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 3,
+    "nota": "Ocasiones públicas distintas, incluida la de la cita principal: web electoral, entrevista de Micó (25-oct) y presentación de la campaña (10-nov). À Punt atribuye la lista de medidas de la presentación al número 2 por Valencia, en estilo indirecto.",
+    "ocasiones": [
+     {
+      "fecha": "2026-10-25",
+      "ocasion": "entrevista a Àgueda Micó (elDiario.es)",
+      "url": "https://www.eldiario.es/comunitat-valenciana/politica/agueda-mico-cabeza-lista-compromis-front-valencia-hay-limitar-compra-vivienda_128_13608690.html",
+      "medio": "elDiario.es",
+      "fuente_local": "data/sources/compromisos/compromis/eldiario_20261025_entrevista_mico.txt",
+      "cita": "el blindaje constitucional de las pensiones",
+      "sha256": "9d38b1702a32c21f01398867f4f281abeb2cb248aa4f00ac5ac0cc14e75b864d"
+     },
+     {
+      "fecha": "2026-11-10",
+      "ocasion": "presentación de la campaña en rueda de prensa (Micó, Ibáñez y Manyes); À Punt atribuye la lista de «principals mesures» a Alberto Ibáñez, en estilo indirecto",
+      "url": "https://www.apuntmedia.es/noticies/politica/compromis-front-valencia-aposta-vivenda-salari-pensions-campanya-29n_1_1907805.html",
+      "medio": "À Punt",
+      "fuente_local": "data/sources/compromisos/compromis/apunt_20261110_presentacio_campanya.txt",
+      "cita": "pensions blindades",
+      "cita_traduccion": "pensiones blindadas",
+      "sha256": "11d5aa28a16e402787e376e091864356de5a534b73439a76a8d667b286ed11f9"
+     }
+    ]
+   },
+   "sha256": "d0a2ebc08f068f5ec5ee896e43b853aeb5c119b870df5dce9287d18258fb5a9d"
+  },
+  {
+   "id": "compromis-c08",
+   "area": "empleo",
+   "resumen": "Reducir la jornada laboral.",
+   "cita": "Apostarem per la reducció de la jornada laboral.",
+   "cita_traduccion": "Apostaremos por la reducción de la jornada laboral.",
+   "quien": "Compromís: Front Valencià (web electoral de la candidatura, frontvalencia.org)",
+   "formato": "documento oficial (web de campaña, apartado «Programa»)",
+   "fecha": "2026-11-12",
+   "url": "https://frontvalencia.org/",
+   "medio": "Compromís: Front Valencià (web electoral)",
+   "fuente_local": "data/sources/compromisos/compromis/frontvalencia_web_campana.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 2,
+    "nota": "Ocasiones públicas distintas, incluida la de la cita principal: web electoral y presentación de la campaña (10-nov). À Punt atribuye la lista de medidas de la presentación al número 2 por Valencia, en estilo indirecto.",
+    "ocasiones": [
+     {
+      "fecha": "2026-11-10",
+      "ocasion": "presentación de la campaña en rueda de prensa (Micó, Ibáñez y Manyes); À Punt atribuye la lista de «principals mesures» a Alberto Ibáñez, en estilo indirecto",
+      "url": "https://www.apuntmedia.es/noticies/politica/compromis-front-valencia-aposta-vivenda-salari-pensions-campanya-29n_1_1907805.html",
+      "medio": "À Punt",
+      "fuente_local": "data/sources/compromisos/compromis/apunt_20261110_presentacio_campanya.txt",
+      "cita": "reduir la jornada laboral",
+      "cita_traduccion": "reducir la jornada laboral",
+      "sha256": "11d5aa28a16e402787e376e091864356de5a534b73439a76a8d667b286ed11f9"
+     }
+    ]
+   },
+   "sha256": "d0a2ebc08f068f5ec5ee896e43b853aeb5c119b870df5dce9287d18258fb5a9d"
+  },
+  {
+   "id": "compromis-c09",
+   "area": "modelo territorial",
+   "resumen": "Reformar la financiación autonómica, condonar la deuda histórica de la Generalitat Valenciana y crear un fondo de nivelación.",
+   "cita": "Reclamarem la condonació del deute històric i un fons d'anivellament.",
+   "cita_traduccion": "Reclamaremos la condonación de la deuda histórica y un fondo de nivelación.",
+   "quien": "Compromís: Front Valencià (web electoral de la candidatura, frontvalencia.org)",
+   "formato": "documento oficial (web de campaña, apartado «Programa»)",
+   "fecha": "2026-11-12",
+   "url": "https://frontvalencia.org/",
+   "medio": "Compromís: Front Valencià (web electoral)",
+   "fuente_local": "data/sources/compromisos/compromis/frontvalencia_web_campana.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 3,
+    "nota": "Ocasiones públicas distintas, incluida la de la cita principal: web electoral (la primera fuente es otra frase de la misma web, no otra ocasión), entrevista de Micó (25-oct) y presentación de la campaña (10-nov). À Punt atribuye la lista de medidas de la presentación al número 2 por Valencia, en estilo indirecto.",
+    "ocasiones": [
+     {
+      "fecha": "2026-11-12",
+      "ocasion": "misma web, frase anterior del mismo apartado",
+      "url": "https://frontvalencia.org/",
+      "medio": "Compromís: Front Valencià (web electoral)",
+      "fuente_local": "data/sources/compromisos/compromis/frontvalencia_web_campana.txt",
+      "cita": "Lluitarem per aconseguir un sistema de finançament just.",
+      "cita_traduccion": "Lucharemos por conseguir un sistema de financiación justo.",
+      "sha256": "d0a2ebc08f068f5ec5ee896e43b853aeb5c119b870df5dce9287d18258fb5a9d"
+     },
+     {
+      "fecha": "2026-10-25",
+      "ocasion": "entrevista a Àgueda Micó (elDiario.es)",
+      "url": "https://www.eldiario.es/comunitat-valenciana/politica/agueda-mico-cabeza-lista-compromis-front-valencia-hay-limitar-compra-vivienda_128_13608690.html",
+      "medio": "elDiario.es",
+      "fuente_local": "data/sources/compromisos/compromis/eldiario_20261025_entrevista_mico.txt",
+      "cita": "Necesitamos un cambio de modelo productivo, proteger el derecho a la vivienda, la financiación autonómica, la condonación de la deuda.",
+      "sha256": "9d38b1702a32c21f01398867f4f281abeb2cb248aa4f00ac5ac0cc14e75b864d"
+     },
+     {
+      "fecha": "2026-11-10",
+      "ocasion": "presentación de la campaña en rueda de prensa (Micó, Ibáñez y Manyes); À Punt atribuye la lista de «principals mesures» a Alberto Ibáñez, en estilo indirecto",
+      "url": "https://www.apuntmedia.es/noticies/politica/compromis-front-valencia-aposta-vivenda-salari-pensions-campanya-29n_1_1907805.html",
+      "medio": "À Punt",
+      "fuente_local": "data/sources/compromisos/compromis/apunt_20261110_presentacio_campanya.txt",
+      "cita": "La coalició també insistirà en l'exigència d'un sistema de finançament just, la condonació del deute històric i una inversió territorialitzada.",
+      "cita_traduccion": "La coalición también insistirá en la exigencia de un sistema de financiación justo, la condonación de la deuda histórica y una inversión territorializada.",
+      "sha256": "11d5aa28a16e402787e376e091864356de5a534b73439a76a8d667b286ed11f9"
+     }
+    ]
+   },
+   "sha256": "d0a2ebc08f068f5ec5ee896e43b853aeb5c119b870df5dce9287d18258fb5a9d"
+  },
+  {
+   "id": "compromis-c10",
+   "area": "modelo territorial",
+   "resumen": "Que la inversión estatal territorializada en la Comunitat Valenciana se reparta con criterios de equidad y peso de la población.",
+   "cita": "Exigirem unes inversions territorialitzades amb criteris d'equitat i pes poblacional.",
+   "cita_traduccion": "Exigiremos unas inversiones territorializadas con criterios de equidad y peso poblacional.",
+   "quien": "Compromís: Front Valencià (web electoral de la candidatura, frontvalencia.org)",
+   "formato": "documento oficial (web de campaña, apartado «Programa»)",
+   "fecha": "2026-11-12",
+   "url": "https://frontvalencia.org/",
+   "medio": "Compromís: Front Valencià (web electoral)",
+   "fuente_local": "data/sources/compromisos/compromis/frontvalencia_web_campana.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 2,
+    "nota": "Ocasiones públicas distintas, incluida la de la cita principal: web electoral y presentación de la campaña (10-nov). À Punt atribuye la lista de medidas de la presentación al número 2 por Valencia, en estilo indirecto.",
+    "ocasiones": [
+     {
+      "fecha": "2026-11-10",
+      "ocasion": "presentación de la campaña en rueda de prensa (Micó, Ibáñez y Manyes); À Punt atribuye la lista de «principals mesures» a Alberto Ibáñez, en estilo indirecto",
+      "url": "https://www.apuntmedia.es/noticies/politica/compromis-front-valencia-aposta-vivenda-salari-pensions-campanya-29n_1_1907805.html",
+      "medio": "À Punt",
+      "fuente_local": "data/sources/compromisos/compromis/apunt_20261110_presentacio_campanya.txt",
+      "cita": "La coalició també insistirà en l'exigència d'un sistema de finançament just, la condonació del deute històric i una inversió territorialitzada.",
+      "cita_traduccion": "La coalición también insistirá en la exigencia de un sistema de financiación justo, la condonación de la deuda histórica y una inversión territorializada.",
+      "sha256": "11d5aa28a16e402787e376e091864356de5a534b73439a76a8d667b286ed11f9"
+     }
+    ]
+   },
+   "sha256": "d0a2ebc08f068f5ec5ee896e43b853aeb5c119b870df5dce9287d18258fb5a9d"
+  },
+  {
+   "id": "compromis-c11",
+   "area": "fiscalidad",
+   "resumen": "Eliminar los beneficios fiscales del sector de la aviación (más de 5.000 M€ al año, según la candidatura) y destinar ese dinero al transporte público.",
+   "cita": "Eliminarem els privilegis fiscals del sector de l'aviació, més de 5.000 milions anuals, per a invertir-los en transport públic.",
+   "cita_traduccion": "Eliminaremos los privilegios fiscales del sector de la aviación, más de 5.000 millones anuales, para invertirlos en transporte público.",
+   "quien": "Compromís: Front Valencià (web electoral de la candidatura, frontvalencia.org)",
+   "formato": "documento oficial (web de campaña, apartado «Programa»)",
+   "fecha": "2026-11-12",
+   "url": "https://frontvalencia.org/",
+   "medio": "Compromís: Front Valencià (web electoral)",
+   "fuente_local": "data/sources/compromisos/compromis/frontvalencia_web_campana.txt",
+   "cuantificado": true,
+   "veces": {
+    "n": 2,
+    "nota": "Ocasiones públicas distintas, incluida la de la cita principal: web electoral y nota de prensa del partido (31-oct).",
+    "ocasiones": [
+     {
+      "fecha": "2026-10-31",
+      "ocasion": "nota de prensa de Compromís con declaraciones de Alberto Ibáñez, diputado en el Congreso y número 2 por Valencia",
+      "url": "https://compromis.net/36741/compromis-demana-la-renacionalitzacio-del-servei-ferroviari-com-a-anglaterra/",
+      "medio": "Compromís (nota de prensa, compromis.net)",
+      "fuente_local": "data/sources/compromisos/compromis/compromis_20261031_renacionalitzacio_ferroviaria.txt",
+      "cita": "acabar amb els privilegis fiscals al sector de l'aviació el que permetria invertir més de 5.000 milions anuals en l'el sistema ferroviari",
+      "cita_traduccion": "acabar con los privilegios fiscales al sector de la aviación, lo que permitiría invertir más de 5.000 millones anuales en el sistema ferroviario",
+      "sha256": "5e7a55a330188f006a3d51c6115d802d8aa97f972b8fa05c37217897d1c90be1"
+     }
+    ]
+   },
+   "sha256": "d0a2ebc08f068f5ec5ee896e43b853aeb5c119b870df5dce9287d18258fb5a9d"
+  },
+  {
+   "id": "compromis-c12",
+   "area": "otros",
+   "resumen": "Renacionalizar el servicio de alta velocidad ferroviaria abierto a la competencia.",
+   "cita": "Defensarem la renacionalització de l'alta velocitat liberalitzada.",
+   "cita_traduccion": "Defenderemos la renacionalización de la alta velocidad liberalizada.",
+   "quien": "Compromís: Front Valencià (web electoral de la candidatura, frontvalencia.org)",
+   "formato": "documento oficial (web de campaña, apartado «Programa»)",
+   "fecha": "2026-11-12",
+   "url": "https://frontvalencia.org/",
+   "medio": "Compromís: Front Valencià (web electoral)",
+   "fuente_local": "data/sources/compromisos/compromis/frontvalencia_web_campana.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 3,
+    "nota": "Ocasiones públicas distintas, incluida la de la cita principal: web electoral, nota de prensa del partido (31-oct) y presentación de la campaña (10-nov). À Punt atribuye la lista de medidas de la presentación al número 2 por Valencia, en estilo indirecto.",
+    "ocasiones": [
+     {
+      "fecha": "2026-10-31",
+      "ocasion": "nota de prensa de Compromís (31-oct)",
+      "url": "https://compromis.net/36741/compromis-demana-la-renacionalitzacio-del-servei-ferroviari-com-a-anglaterra/",
+      "medio": "Compromís (nota de prensa, compromis.net)",
+      "fuente_local": "data/sources/compromisos/compromis/compromis_20261031_renacionalitzacio_ferroviaria.txt",
+      "cita": "Compromís ha demanat la renacionalització del servei ferroviari com han fet ja en països com Anglaterra",
+      "cita_traduccion": "Compromís ha pedido la renacionalización del servicio ferroviario como han hecho ya en países como Inglaterra",
+      "sha256": "5e7a55a330188f006a3d51c6115d802d8aa97f972b8fa05c37217897d1c90be1"
+     },
+     {
+      "fecha": "2026-11-10",
+      "ocasion": "presentación de la campaña en rueda de prensa (Micó, Ibáñez y Manyes); À Punt atribuye la lista de «principals mesures» a Alberto Ibáñez, en estilo indirecto",
+      "url": "https://www.apuntmedia.es/noticies/politica/compromis-front-valencia-aposta-vivenda-salari-pensions-campanya-29n_1_1907805.html",
+      "medio": "À Punt",
+      "fuente_local": "data/sources/compromisos/compromis/apunt_20261110_presentacio_campanya.txt",
+      "cita": "la renacionalització de l'alta velocitat liberalitzada",
+      "cita_traduccion": "la renacionalización de la alta velocidad liberalizada",
+      "sha256": "11d5aa28a16e402787e376e091864356de5a534b73439a76a8d667b286ed11f9"
+     }
+    ]
+   },
+   "sha256": "d0a2ebc08f068f5ec5ee896e43b853aeb5c119b870df5dce9287d18258fb5a9d"
+  },
+  {
+   "id": "compromis-c13",
+   "area": "otros",
+   "resumen": "Un programa de inversión de 1.500 M€ en Cercanías y transporte público valenciano, con una parte para Elche y las comarcas del sur.",
+   "cita": "ya hemos presentado esta legislatura un programa de inversión en los trenes de Cercanías y en el transporte público valenciano dotado con 1.500 millones de euros. Y queremos que esto se transfiera específicamente a las regiones del sur y a la ciudad de Elche.",
+   "quien": "Àgueda Micó (cabeza de lista de Compromís: Front Valencià por Valencia y portavoz de Compromís en el Congreso en la XV legislatura)",
+   "formato": "acto de precampaña (Elche)",
+   "fecha": "2026-11-06",
+   "url": "https://www.eldiario.es/comunitat-valenciana/politica/compromis-front-valencia-reivindica-elche-papeleta-unica-util-frenar-derecha-defender-clase-trabajadora_1_13644954.html",
+   "medio": "elDiario.es",
+   "fuente_local": "data/sources/compromisos/compromis/eldiario_20261106_elche.txt",
+   "cuantificado": true,
+   "veces": {
+    "n": 1,
+    "nota": "La cuantía de 1.500 M€ solo consta en una ocasión, el acto de Elche (6-nov), que recogen elDiario.es, Alicante Plaza y El Periòdic. La web electoral y la presentación de la campaña (10-nov) piden mejorar las Cercanías sin cifra. À Punt atribuye la lista de medidas de la presentación al número 2 por Valencia, en estilo indirecto.",
+    "ocasiones": [
+     {
+      "fecha": "2026-11-06",
+      "ocasion": "mismo acto, crónica de Alicante Plaza (estilo indirecto)",
+      "url": "https://alicanteplaza.es/alicanteplaza/elcheplaza/arranca-compromis-front-valencia-en-elche-con-propuestas-en-vivienda-y-transporte",
+      "medio": "Alicante Plaza",
+      "fuente_local": "data/sources/compromisos/compromis/alicanteplaza_20261106_elche.txt",
+      "cita": "Micó ha reclamado una inversión de 1.500 millones de euros en transporte público, con especial atención a la red de Cercanías",
+      "sha256": "452d87236839d23dce8de740053d27c0f01f20d93880bf920e98a9ed8997928e"
+     },
+     {
+      "fecha": "2026-11-06",
+      "ocasion": "mismo acto, crónica de El Periòdic",
+      "url": "https://www.elperiodic.com/elx/compromis-front-valencia-propone-mejorar-salarios-inversiones-transporte-publico_1101525",
+      "medio": "El Periòdic",
+      "fuente_local": "data/sources/compromisos/compromis/elperiodic_20261106_elche.txt",
+      "sha256": "b495367c89d4a1900cb8436017226c62f2bd7f555838844dfa90866dfb178efc"
+     },
+     {
+      "fecha": "2026-11-12",
+      "ocasion": "web electoral",
+      "url": "https://frontvalencia.org/",
+      "medio": "Compromís: Front Valencià (web electoral)",
+      "fuente_local": "data/sources/compromisos/compromis/frontvalencia_web_campana.txt",
+      "cita": "Apostarem per la millora i modernització dels rodalies.",
+      "cita_traduccion": "Apostaremos por la mejora y modernización de las Cercanías.",
+      "sha256": "d0a2ebc08f068f5ec5ee896e43b853aeb5c119b870df5dce9287d18258fb5a9d"
+     },
+     {
+      "fecha": "2026-11-10",
+      "ocasion": "presentación de la campaña en rueda de prensa (Micó, Ibáñez y Manyes); À Punt atribuye la lista de «principals mesures» a Alberto Ibáñez, en estilo indirecto",
+      "url": "https://www.apuntmedia.es/noticies/politica/compromis-front-valencia-aposta-vivenda-salari-pensions-campanya-29n_1_1907805.html",
+      "medio": "À Punt",
+      "fuente_local": "data/sources/compromisos/compromis/apunt_20261110_presentacio_campanya.txt",
+      "cita": "millores en Rodalia",
+      "cita_traduccion": "mejoras en Cercanías",
+      "sha256": "11d5aa28a16e402787e376e091864356de5a534b73439a76a8d667b286ed11f9"
+     }
+    ]
+   },
+   "sha256": "bfb350bbc9be458d8c5836ac57a033f4a34da4bd50a8765ffd9f7ef6de537208"
+  },
+  {
+   "id": "compromis-c14",
+   "area": "justicia e instituciones",
+   "resumen": "Pedir, como primera iniciativa de la nueva legislatura, que el Congreso vuelva a crear la comisión de investigación sobre la dana del 29-10-2024 para que concluya sus trabajos.",
+   "cita": "Para nosotros hay una cuestión clave en la agenda valenciana: que la comisión de investigación de la dana acabe su trabajo.",
+   "quien": "Àgueda Micó (cabeza de lista de Compromís: Front Valencià por Valencia y portavoz de Compromís en el Congreso en la XV legislatura)",
+   "formato": "entrevista",
+   "fecha": "2026-10-25",
+   "url": "https://www.eldiario.es/comunitat-valenciana/politica/agueda-mico-cabeza-lista-compromis-front-valencia-hay-limitar-compra-vivienda_128_13608690.html",
+   "medio": "elDiario.es",
+   "fuente_local": "data/sources/compromisos/compromis/eldiario_20261025_entrevista_mico.txt",
+   "cuantificado": false,
+   "veces": {
+    "n": 2,
+    "nota": "Ocasiones públicas distintas, incluida la de la cita principal: entrevista de Micó (25-oct) y rueda de prensa de Madrid (4-nov), que recogen Valencia Plaza (EFE) y Demócrata.",
+    "ocasiones": [
+     {
+      "fecha": "2026-11-04",
+      "ocasion": "rueda de prensa de los candidatos en Madrid (EFE)",
+      "url": "https://valenciaplaza.com/valenciaplaza/comunitat-valenciana1/compromis-front-valencia-pedira-reabrir-la-investigacion-de-la-dana-en-el-nuevo-congreso",
+      "medio": "Valencia Plaza (EFE)",
+      "fuente_local": "data/sources/compromisos/compromis/valenciaplaza_efe_20261104_madrid.txt",
+      "cita": "su primera acción en la nueva legislatura tras las elecciones generales del 29 de noviembre será pedir la reapertura de la comisión de investigación sobre la dana",
+      "sha256": "e9cfb06725f574104f95a689a829e80916f5355dfacc7d0bf7f2edd33a0791e0"
+     },
+     {
+      "fecha": "2026-11-04",
+      "ocasion": "misma rueda de prensa (Demócrata)",
+      "url": "https://www.democrata.es/politica/compromis-exigira-reactivar-la-comision-de-la-dana-en-el-congreso-y-acusa-a-feijoo-de-seguir-protegiendo-a-mazon/",
+      "medio": "Demócrata",
+      "fuente_local": "data/sources/compromisos/compromis/democrata_20261104_madrid.txt",
+      "sha256": "1e510b5851bf86ffc2157e6206c04b154d44591ce19258d7c48299daee3c831c"
+     }
+    ]
+   },
+   "sha256": "9d38b1702a32c21f01398867f4f281abeb2cb248aa4f00ac5ac0cc14e75b864d"
+  },
+  {
+   "id": "compromis-c15",
+   "area": "otros",
+   "resumen": "Fijar un precio máximo a la energía y a los alimentos básicos.",
+   "cita": "topar el precio de la energía y los alimentos básicos",
+   "quien": "Àgueda Micó (cabeza de lista de Compromís: Front Valencià por Valencia y portavoz de Compromís en el Congreso en la XV legislatura)",
+   "formato": "acto de precampaña (Elche)",
+   "fecha": "2026-11-06",
+   "url": "https://alicanteplaza.es/alicanteplaza/elcheplaza/arranca-compromis-front-valencia-en-elche-con-propuestas-en-vivienda-y-transporte",
+   "medio": "Alicante Plaza",
+   "fuente_local": "data/sources/compromisos/compromis/alicanteplaza_20261106_elche.txt",
+   "cuantificado": false,
+   "veces": [],
+   "sha256": "452d87236839d23dce8de740053d27c0f01f20d93880bf920e98a9ed8997928e"
+  },
+  {
+   "id": "compromis-c16",
+   "area": "igualdad",
+   "resumen": "Prohibir las llamadas terapias de conversión de la orientación sexual o la identidad de género.",
+   "cita": "Prohibirem les pseudoteràpies de conversió i consolidarem els drets del col·lectiu LGTBIQ+.",
+   "cita_traduccion": "Prohibiremos las pseudoterapias de conversión y consolidaremos los derechos del colectivo LGTBIQ+.",
+   "quien": "Compromís: Front Valencià (web electoral de la candidatura, frontvalencia.org)",
+   "formato": "documento oficial (web de campaña, apartado «Programa»)",
+   "fecha": "2026-11-12",
+   "url": "https://frontvalencia.org/",
+   "medio": "Compromís: Front Valencià (web electoral)",
+   "fuente_local": "data/sources/compromisos/compromis/frontvalencia_web_campana.txt",
+   "cuantificado": false,
+   "veces": [],
+   "sha256": "d0a2ebc08f068f5ec5ee896e43b853aeb5c119b870df5dce9287d18258fb5a9d"
+  },
+  {
+   "id": "compromis-c17",
+   "area": "energía y clima",
+   "resumen": "Un plan contra la obsolescencia programada.",
+   "cita": "Impulsarem un pla contra l'obsolescència programada.",
+   "cita_traduccion": "Impulsaremos un plan contra la obsolescencia programada.",
+   "quien": "Compromís: Front Valencià (web electoral de la candidatura, frontvalencia.org)",
+   "formato": "documento oficial (web de campaña, apartado «Programa»)",
+   "fecha": "2026-11-12",
+   "url": "https://frontvalencia.org/",
+   "medio": "Compromís: Front Valencià (web electoral)",
+   "fuente_local": "data/sources/compromisos/compromis/frontvalencia_web_campana.txt",
+   "cuantificado": false,
+   "veces": [],
+   "sha256": "d0a2ebc08f068f5ec5ee896e43b853aeb5c119b870df5dce9287d18258fb5a9d"
+  },
+  {
+   "id": "compromis-c18",
+   "area": "agricultura y medio rural",
+   "resumen": "Reforzar la ley de la cadena alimentaria para que no se pueda vender a pérdidas y se garantice un precio mínimo al productor.",
+   "cita": "Hem de cuidar la cadena alimentària, que per llei no es puga vendre a pèrdues, que es garantisca sempre un mínim perquè puguen continuar treballant",
+   "cita_traduccion": "Tenemos que cuidar la cadena alimentaria, que por ley no se pueda vender a pérdidas, que se garantice siempre un mínimo para que puedan seguir trabajando",
+   "quien": "Àgueda Micó (cabeza de lista de Compromís: Front Valencià por Valencia y portavoz de Compromís en el Congreso en la XV legislatura)",
+   "formato": "declaraciones tras una reunión con La Unió Llauradora, recogidas en nota de prensa del partido",
+   "fecha": "2026-11-05",
+   "url": "https://compromis.net/36751/compromis-front-valencia-torna-a-assumir-les-reivindicacions-de-la-unio-llauradora-per-a-defensar-el-camp-valencia-a-madrid/",
+   "medio": "Compromís (nota de prensa, compromis.net)",
+   "fuente_local": "data/sources/compromisos/compromis/compromis_20261105_unio_llauradora.txt",
+   "cuantificado": false,
+   "veces": [],
+   "sha256": "3746336cf247eaf208965982499401fb06aa9c2dcd09f6970ec0ddb76406a82c"
+  },
+  {
+   "id": "compromis-c19",
+   "area": "otros",
+   "resumen": "Modificar la ley estatal de bienestar animal para incluir a los perros de caza.",
+   "cita": "Compromís Front Valencià modificarà la llei de benestar animal per a incloure als gossos de caça.",
+   "cita_traduccion": "Compromís Front Valencià modificará la ley de bienestar animal para incluir a los perros de caza.",
+   "quien": "Compromís: Front Valencià (nota de prensa), con declaraciones de Alberto Ibáñez, diputado en el Congreso y número 2 por Valencia",
+   "formato": "documento oficial (nota de prensa)",
+   "fecha": "2026-11-06",
+   "url": "https://compromis.net/36753/compromis-front-valencia-modificara-la-llei-de-benestar-animal-per-a-incloure-als-gossos-de-caca/",
+   "medio": "Compromís (nota de prensa, compromis.net)",
+   "fuente_local": "data/sources/compromisos/compromis/compromis_20261106_benestar_animal.txt",
+   "cuantificado": false,
+   "veces": [],
+   "sha256": "ef26629dfa411dfb7e3edc0e29ebd80240230c543b0409913bfb8f480d1ff8e9"
+  }
+ ],
+ "prioridades": [
+  {
+   "id": "compromis-c01",
+   "justificacion": "Primera medida del bloque de vivienda de la web electoral («Cases per a viure, no per a especular»), que la portada de compromis.net enlaza como contenido destacado. La cabeza de lista la defiende en su entrevista de candidata (25-oct) y la candidatura la reitera en su rueda de prensa conjunta de Madrid (4-nov, EFE). También figura entre las «principals mesures» de la presentación de la campaña (10-nov, À Punt)."
+  },
+  {
+   "id": "compromis-c02",
+   "justificacion": "La cabeza de lista la presenta como medida urgente de vivienda en su entrevista de candidata (25-oct) y vuelve a citar la regulación de los alquileres en Castelló (2-nov); la rueda de prensa de Madrid (4-nov) la incluye entre los compromisos de vivienda. La vivienda figura en la web electoral como uno de los seis bloques del programa."
+  },
+  {
+   "id": "compromis-c03",
+   "justificacion": "Figura en el bloque de vivienda de la web electoral y entre las «principals mesures» de la presentación de la campaña (10-nov, À Punt)."
+  },
+  {
+   "id": "compromis-c04",
+   "justificacion": "Medida fiscal del bloque de vivienda de la web electoral; la candidatura la volvió a presentar en Castelló (2-nov). La crónica la describe con otro umbral («más de cinco viviendas»); se toma el de la web oficial."
+  },
+  {
+   "id": "compromis-c06",
+   "justificacion": "Figura como medida del bloque «per la igualtat» de la web electoral, y Micó lo sitúa en su entrevista de candidata (25-oct) entre las cuestiones «básicas» del programa. También figura entre las «principals mesures» de la presentación de la campaña (10-nov, À Punt)."
+  },
+  {
+   "id": "compromis-c07",
+   "justificacion": "Figura en el bloque «per no viure per a treballar» de la web electoral y entre las «principals mesures» de la presentación de la campaña (10-nov, À Punt); Micó concretó en su entrevista de candidata (25-oct) que se trata de un blindaje constitucional."
+  },
+  {
+   "id": "compromis-c08",
+   "justificacion": "Figura en el bloque «per no viure per a treballar» de la web electoral y entre las «principals mesures» de la presentación de la campaña (10-nov, À Punt)."
+  },
+  {
+   "id": "compromis-c09",
+   "justificacion": "«Finançament just» es el primer lema del rótulo de la web electoral y encabeza el bloque «per un tracte just»; Micó cita la financiación autonómica y la condonación de la deuda entre sus necesidades en la entrevista de candidata (25-oct). También figura entre las «principals mesures» de la presentación de la campaña (10-nov, À Punt)."
+  },
+  {
+   "id": "compromis-c11",
+   "justificacion": "Única medida cuantificada de la web electoral (bloque «per un país connectat»); el partido ya la había planteado en su nota del 31-oct."
+  },
+  {
+   "id": "compromis-c12",
+   "justificacion": "Medida del bloque ferroviario de la web electoral; el partido la planteó en nota de prensa (31-oct) tras los accidentes ferroviarios. También figura entre las «principals mesures» de la presentación de la campaña (10-nov, À Punt)."
+  },
+  {
+   "id": "compromis-c13",
+   "justificacion": "Principal propuesta de la cabeza de lista en el acto con el que la candidatura abrió su precampaña en Elche (6-nov), recogida por tres medios; «Rodalies dignes» es el segundo lema del rótulo de la web electoral. También figura entre las «principals mesures» de la presentación de la campaña (10-nov, À Punt)."
+  },
+  {
+   "id": "compromis-c14",
+   "justificacion": "elDiario.es la describe como «una promesa clara» de la candidatura; Micó la llama «cuestión clave» (25-oct) y la candidatura la anunció como su primera acción en la nueva legislatura (rueda de prensa en Madrid, 4-nov)."
+  }
+ ],
+ "no_priorizados": [
+  {
+   "id": "compromis-c15",
+   "motivo": "Micó la planteó una sola vez, en el acto de Elche (6-nov), recogida solo por Alicante Plaza; no figura en la web electoral ni en la lista de «principals mesures» de la presentación de la campaña (10-nov)."
+  },
+  {
+   "id": "compromis-c05",
+   "motivo": "Medida de la web electoral que Micó repite en su entrevista de candidata (25-oct) y en Castelló (2-nov), sin cifra ni instrumento; no figura entre las «principals mesures» de la presentación de la campaña (10-nov). Para la última plaza de vivienda se prefirió c04, titular de la presentación de Castelló (2-nov), aunque c05 tiene más ocasiones registradas (tres frente a dos): es un caso frontera."
+  },
+  {
+   "id": "compromis-c10",
+   "motivo": "Una línea de la web, sin cuantía ni regla de reparto concreta."
+  },
+  {
+   "id": "compromis-c16",
+   "motivo": "Una línea de la web, sin desarrollo ni repetición por un líder."
+  },
+  {
+   "id": "compromis-c17",
+   "motivo": "Una línea de la web, sin contenido."
+  },
+  {
+   "id": "compromis-c18",
+   "motivo": "Reivindicación pactada con una organización agraria (5-nov); no se repite en otros actos."
+  },
+  {
+   "id": "compromis-c19",
+   "motivo": "Anunciada en nota de prensa por el número 2 por Valencia, que no es líder según el protocolo; se recoge como documento oficial del partido, sin priorizar."
+  }
+ ],
+ "descartados": [
+  {
+   "medida": "Ley para expropiar a los «fondos buitre» sus viviendas y destinarlas al parque público",
+   "url": "https://valenciaplaza.com/valenciaplaza/comunitat-valenciana1/compromis-front-valencia-pedira-reabrir-la-investigacion-de-la-dana-en-el-nuevo-congreso",
+   "fuente_local": "data/sources/compromisos/compromis/valenciaplaza_efe_20261104_madrid.txt",
+   "motivo": "La pide Alberto Ibáñez, número 2 por Valencia, que no es líder según el protocolo (mismo criterio que la auditoría de la fase 1, 12-nov). En Alicante Plaza (6-nov) «incluida la expropiación de viviendas a estos fondos» es texto del periodista, no de Micó. Sin cita en primera persona de un líder.",
+   "sha256": "e9cfb06725f574104f95a689a829e80916f5355dfacc7d0bf7f2edd33a0791e0"
+  },
+  {
+   "medida": "Prohibir la compra de vivienda a no residentes en España en las provincias donde superen el 20 % de las compraventas",
+   "url": "https://valenciaplaza.com/valenciaplaza/comunitat-valenciana1/compromis-front-valencia-pedira-reabrir-la-investigacion-de-la-dana-en-el-nuevo-congreso",
+   "fuente_local": "data/sources/compromisos/compromis/valenciaplaza_efe_20261104_madrid.txt",
+   "motivo": "Solo la plantea Alberto Ibáñez (número 2 por Valencia, no líder según el protocolo), en estilo indirecto de EFE.",
+   "sha256": "e9cfb06725f574104f95a689a829e80916f5355dfacc7d0bf7f2edd33a0791e0"
+  },
+  {
+   "medida": "Acabar con los desahucios",
+   "url": "https://www.eldiario.es/comunitat-valenciana/politica/agueda-mico-cabeza-lista-compromis-front-valencia-hay-limitar-compra-vivienda_128_13608690.html",
+   "fuente_local": "data/sources/compromisos/compromis/eldiario_20261025_entrevista_mico.txt",
+   "motivo": "Micó dice «hemos de acabar con los desahucios como medida radial», sin instrumento ni alcance: aspiración, no medida concreta.",
+   "sha256": "9d38b1702a32c21f01398867f4f281abeb2cb248aa4f00ac5ac0cc14e75b864d"
+  },
+  {
+   "medida": "Defender el acceso al agua potable y a la energía como derechos fundamentales; que los beneficios de la transición energética sean para la ciudadanía; adaptar las viviendas al cambio climático; aumentar los salarios",
+   "url": "https://frontvalencia.org/",
+   "fuente_local": "data/sources/compromisos/compromis/frontvalencia_web_campana.txt",
+   "motivo": "Líneas de la web electoral sin medida identificable (qué norma, a quién, con qué cuantía): aspiraciones.",
+   "sha256": "d0a2ebc08f068f5ec5ee896e43b853aeb5c119b870df5dce9287d18258fb5a9d"
+  },
+  {
+   "medida": "Impulsar el transporte ferroviario de mercancías con el Corredor Mediterráneo",
+   "url": "https://frontvalencia.org/",
+   "fuente_local": "data/sources/compromisos/compromis/frontvalencia_web_campana.txt",
+   "motivo": "Sin medida concreta (plazos, tramos o inversión).",
+   "sha256": "d0a2ebc08f068f5ec5ee896e43b853aeb5c119b870df5dce9287d18258fb5a9d"
+  },
+  {
+   "medida": "PAC mediterránea, cláusulas de salvaguarda y aranceles, ayudas a la incorporación de jóvenes y mujeres al campo",
+   "url": "https://compromis.net/36751/compromis-front-valencia-torna-a-assumir-les-reivindicacions-de-la-unio-llauradora-per-a-defensar-el-camp-valencia-a-madrid/",
+   "fuente_local": "data/sources/compromisos/compromis/compromis_20261105_unio_llauradora.txt",
+   "motivo": "Líneas que la nota atribuye a los dirigentes de La Unió Llauradora (Carles Peris, Dani Carbonell), no a un líder de la candidatura.",
+   "sha256": "3746336cf247eaf208965982499401fb06aa9c2dcd09f6970ec0ddb76406a82c"
+  },
+  {
+   "medida": "Mejorar la línea de Cercanías C6 Castelló–València y un plan de descarbonización de la industria cerámica",
+   "url": "https://castellonplaza.com/castellonplaza/castellon9/compromis-front-valencia-propone-en-castello-gravar-la-acumulacion-especulativa-de-mas-de-cinco-viviendas",
+   "fuente_local": "data/sources/compromisos/compromis/castellonplaza_20261102_castello.txt",
+   "motivo": "Las plantea Ignasi Garcia, cabeza de lista por Castellón, sin cuantía ni plazo; reivindicaciones locales sin medida identificable.",
+   "sha256": "6842ddeaa7332af4584b25f319059b61b3ee20812b4057a1fdcfddc0d66b50a7"
+  },
+  {
+   "medida": "Cesión permanente de la Dama de Elche a la ciudad y financiación del Misteri y el Palmeral",
+   "url": "https://www.eldiario.es/comunitat-valenciana/politica/compromis-front-valencia-reivindica-elche-papeleta-unica-util-frenar-derecha-defender-clase-trabajadora_1_13644954.html",
+   "fuente_local": "data/sources/compromisos/compromis/eldiario_20261106_elche.txt",
+   "motivo": "La plantea Esther Díez, portavoz municipal de Compromís per Elx, que no es líder de la candidatura; reivindicación local.",
+   "sha256": "bfb350bbc9be458d8c5836ac57a033f4a34da4bd50a8765ffd9f7ef6de537208"
+  },
+  {
+   "medida": "Plan local de vivienda en la Vall d'Uixó (fondo municipal, cesión de inmuebles de la Sareb)",
+   "url": "https://compromis.net/36748/joan-baldovi-som-la-veu-valenciana-decisiva-per-al-29n-i-reivindicarem-a-madrid-el-que-necessita-la-gent-de-la-vall-duixo/",
+   "fuente_local": "data/sources/compromisos/compromis/compromis_20261105_baldovi_vall_uixo.txt",
+   "motivo": "Propuestas municipales del candidato a la alcaldía (Jorge Marqués), no compromisos para el Congreso. Joan Baldoví (síndic en las Corts) solo habla de que las casas sean «per a viure i no per a especular», sin medida.",
+   "sha256": "e9e86d6e5d169aa6b6a58aea87cc6e9f0b7972cb069351a15dde0ccf35afce76"
+  }
+ ],
+ "busqueda": {
+  "hasta": "2026-11-12",
+  "fuentes": [
+   "Web electoral frontvalencia.org / frontvalencia.net (descarga HTTP normal, 12-nov) y portada de compromis.net (enlace a la web electoral).",
+   "compromis.net: feed RSS (8-oct a 6-nov) y notas completas descargadas con petición normal (HTTP 200): 31-oct (ferrocarril), 5-nov (Unió Llauradora; Baldoví en la Vall d'Uixó), 6-nov (bienestar animal). No hay notas posteriores al 6-nov en el feed.",
+   "Prensa: À Punt (presentación de la campaña, 10-nov), El Periòdic (Castelló, 2-nov; Elche, 6-nov), elDiario.es (entrevista a Micó, 25-oct; Elche, 6-nov), Valencia Plaza/EFE y Demócrata (Madrid, 4-nov), Alicante Plaza (Elche, 6-nov), Castellón Plaza (Castelló, 2-nov).",
+   "Búsquedas web abiertas (Micó, Compromís-Front Valencià, propuestas) el 12-nov; el cupo de búsqueda es limitado y no se localizaron actos posteriores al 6-nov con medidas nuevas. Revisadas el 12-nov (noche) las nuevas pistas de promesas.json (cambios_2026-11-12b): À Punt 10-nov y El Periòdic 2-nov, incorporadas como ocasiones.",
+   "Sin programa publicado a 12-nov (compromis.net/info/programes sin entrada del 29-N; enlace «Programa sencer» pendiente en la web electoral)."
+  ]
+ }
+}
