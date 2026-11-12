@@ -47,6 +47,11 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
   - [ ] PSOE — presenta su programa el 15-nov (según la búsqueda de líderes del 12-nov); recodificar el paso 1 ese día
   - [ ] PSC, Frente Amplio, Podemos — sin fecha conocida (a 12-nov no publicado)
   - [ ] Junts, EH Bildu, Compromís, UPC, Ara Més-FA, UPN-PP, Adelante Andalucía — sin fecha conocida
+- [ ] **4b. [Yo] Paso 2 sin programa (12-nov, a petición tuya):** los partidos que no publiquen programa (o
+  lo hagan tarde) se analizan con los compromisos públicos de sus líderes, con el mismo método y revisión
+  (protocolo `docs/prompts/1b_seleccion_compromisos.md`). Tanda 1 en curso: PSOE, Vox, Frente Amplio,
+  Podemos, Junts, EH Bildu. Tanda 2: PSC, Compromís, UPN-PP, Ara Més-FA, UPC. Después, revisión
+  independiente y auditoría de coherencia con los programas ya analizados.
 - [ ] **5. [Yo] Quitar la etiqueta «versión provisional» del paso 1** (9-nov: protocolo v2 con
   propuestas públicas en primera persona de líderes nacionales y regionales, incl. precampaña; 75 posiciones) solo cuando PP, PSOE, Vox,
   Frente Amplio y Podemos tengan posición documentada en al menos la mitad de las 30 afirmaciones

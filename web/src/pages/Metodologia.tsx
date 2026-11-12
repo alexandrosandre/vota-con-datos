@@ -95,6 +95,14 @@ export function Metodologia() {
             públicas (legislación, jurisprudencia, AIReF, Banco de España, INE, Eurostat, OCDE, Comisión Europea, literatura académica) en estos
             criterios, elegidos por ser los más verificables:
           </p>
+          <p>
+            <strong>Si un partido no ha publicado programa</strong>, hacemos lo mismo con los compromisos que sus líderes han hecho en público
+            para esta elección o esta legislatura (mitin, entrevista, rueda de prensa, redes oficiales, notas del partido), siempre en primera
+            persona y con cita literal: nada de rumores ni de lo que cuenta un periodista con sus palabras. Guardamos una copia de cada fuente y
+            comprobamos automáticamente que la cita está en ella. Elegimos hasta 12 que el propio partido presenta como centrales (los anuncia el
+            candidato, los repite, abren su campaña) y los evaluamos con los mismos criterios y la misma revisión independiente. Cuando publica su
+            programa, su análisis sustituye a este.
+          </p>
           <ul>
             {crit.map((c) => (
               <li key={c.id}>
