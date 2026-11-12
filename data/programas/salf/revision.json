@@ -1,677 +1,715 @@
 {
- "aprobado": true,
- "revisor": "Claude (Anthropic), pasada independiente",
- "fecha": "2026-11-12",
- "alcance": "12 propuestas × 8 criterios. Se abrieron las 136 URL citadas (133 con respuesta 200; academic.oup.com devolvió 403 y se usó el resumen en RePEc; el enlace de Born y otros en EconPapers daba 404 y se sustituyó). Selección de prioridades conforme con extraccion.json y con los «10 compromisos» de la p. 4. verify_quotes: 0 citas no encontradas.",
- "igual_estandar": "Antes de la revisión SALF tenía 12 «desfavorable» y 5 en financiación, frente a ninguna en financiación en CC, ERC, BNG, PNV y PP. Se revisó cada una con la rúbrica tal como se aplicó a los demás. salf-01, salf-04 y salf-10 (financiación) pasan a «mixta»: el programa explica y cuantifica la financiación, y su partida principal (57.000 M€ de «sobrecoste autonómico») carece de estimación oficial, pero ninguna fuente oficial la contradice; la frase «el Estado no puede financiar la medida con ahorros autonómicos» no tenía fuente y la LOFCA (art. 2.1.g) solo prevé valoración quinquenal y compensación «en su caso». No se penaliza por aportar la tabla y su debilidad queda explicada en el texto. salf-08 (financiación) pasa a «mixta»: la base de 41.000 M€ sí coincide con la estadística oficial (consumo intermedio más farmacia de receta de 2024). salf-03 legal pasa a «mixta» (no hay sentencia sobre este diseño; la STC 169/2021 desestimó el recurso) y salf-03 evidencia a «mixta» (la evidencia citada va en los dos sentidos). Se mantienen 6 «desfavorable» con fuente primaria directa: salf-03 financiación (decomisos oficiales de unos 48 + 34 M€ al año frente a 3.000 M€), salf-06 legal (competencias de la UE en visados y comercio, Directiva 2003/86), salf-11 legal (STC 5/1981 y 88/1983) y salf-12 evidencia, internacional y largo plazo (Brexit: Born y otros, 2019; Bloom y otros, 2025), criterio igual al de bng-12.",
- "recuento_final": {
-  "mixta": 77,
-  "no_verificable": 8,
-  "desfavorable": 6,
-  "favorable": 5
- },
- "cambios": [
-  {
-   "propuesta": "salf-01",
-   "criterio": "beneficiarios (campo de la propuesta)",
-   "antes": "no hay cifra oficial de cuántas compras son de primera vivienda",
-   "despues": "no hemos localizado una cifra oficial de cuántas compras son de primera vivienda",
-   "motivo": "afirmación absoluta sin fuente: se formula como alcance de la búsqueda"
-  },
-  {
-   "propuesta": "salf-01",
-   "criterio": "financiacion",
-   "antes": "valoracion: desfavorable",
-   "despues": "valoracion: mixta",
-   "motivo": "igual estándar (rúbrica de financiación y auditoría de coherencia): «desfavorable» exige una financiación contradicha por fuentes oficiales o un coste incompatible con las reglas fiscales sin explicar cómo se cubre. El programa explica y cuantifica la financiación; su partida principal (57.000 M€ de «sobrecoste autonómico») carece de estimación oficial, pero no hemos localizado ninguna fuente oficial que la contradiga. Carecer de respaldo impide «favorable», no justifica «desfavorable»: corresponde «mixta», como en las propuestas de otros partidos con financiación anunciada sin respaldo verificable (p. ej., pp-10). No se penaliza por aportar la tabla ni se omite su debilidad, que se explica en el texto"
-  },
-  {
-   "propuesta": "salf-01",
-   "criterio": "financiacion",
-   "antes": "El coste es estimable en orden de magnitud: las comunidades de régimen común recaudaron 10.594 M€ de ITP y AJD en 2023 por todas las operaciones, y en 2025 se vendieron 714.237 viviendas (155.910 nuevas), sin cifra oficial de primeros compradores. El programa dice que «lo paga el sobrecoste autonómico», pero la Constitución reconoce la autonomía financiera de las comunidades (art. 156.1) y la LOFCA (art. 2.1.g) obliga a compensarlas por las rebajas estatales de sus ingresos, de modo que el Estado no puede financiar la medida con ahorros de los presupuestos autonómicos. La tabla «Cómo se paga» (p. 16) cubre 81.700 M€ al año con 88.500 M€ de ahorros e ingresos, de los que 57.000 M€ son «sobrecoste autonómico», una cifra para la que no hemos localizado ninguna estimación oficial y que equivale al 37 % de la financiación de las comunidades de régimen común en 2023 (152.434 M€).",
-   "despues": "El coste es estimable en orden de magnitud: las comunidades de régimen común recaudaron 10.594 M€ de ITP y AJD en 2023 por todas las operaciones, y en 2025 se vendieron 714.237 viviendas (155.910 nuevas); no hemos localizado una cifra oficial de primeros compradores. El programa identifica y cuantifica la financiación: «lo paga el sobrecoste autonómico», una partida de 57.000 M€ de la tabla «Cómo se paga» (p. 16), que cubre 81.700 M€ al año con 88.500 M€ de ahorros e ingresos. No hemos localizado ninguna estimación oficial de ese sobrecoste, que equivale al 37 % de la financiación de las comunidades de régimen común en 2023 (152.434 M€), ni ninguna fuente oficial que lo contradiga. Tanto la recaudación perdida como esos ahorros están en las comunidades, que tienen autonomía financiera (art. 156.1 CE); la LOFCA (art. 2.1.g) obliga a valorar cada cinco años en el Consejo de Política Fiscal y Financiera el efecto de las medidas tributarias estatales sobre sus ingresos y, en su caso, a compensarlo modificando el sistema de financiación.",
-   "motivo": "la LOFCA (art. 2.1.g) no «obliga a compensar» sin más: prevé una valoración quinquenal y compensación «en su caso» (BOE-A-1980-21166); la conclusión «el Estado no puede financiar la medida con ahorros autonómicos» no tenía fuente; se aplica la rúbrica con igual estándar (véase el cambio de valoración)"
-  },
-  {
-   "propuesta": "salf-01",
-   "criterio": "internacional",
-   "antes": "El Reino Unido exime del impuesto de transmisiones a los primeros compradores hasta 300.000 £ (5 % entre 300.001 y 500.000 £, sin desgravación por encima), y su exención temporal de 2008-2009 fue evaluada con un traslado parcial al precio (Besley y otros, 2014). No hemos localizado una evaluación de la desgravación permanente para primeros compradores, y su diseño (solo el impuesto de transmisiones y con topes de precio) difiere del de la propuesta.",
-   "despues": "El Reino Unido exime del impuesto de transmisiones a los primeros compradores hasta 300.000 £ (5 % entre 300.001 y 500.000 £, sin desgravación por encima). Una evaluación de HMRC (2023) estima que esa desgravación, creada en 2017, aumentó las compras de primeros compradores un 11 % entre 125.000 y 300.000 £ y un 18 % entre 300.000 y 500.000 £, y que en el primer tramo los precios pagados subieron alrededor de un 1 %; la exención temporal de 2008-2009 también tuvo un traslado parcial al precio (Besley y otros, 2014). Su diseño (solo el impuesto de transmisiones y con topes de precio) difiere del de la propuesta.",
-   "motivo": "el texto decía que no se había localizado una evaluación de la desgravación permanente; HMRC publicó una en 2023. La valoración se mantiene en «mixta» porque el diseño difiere en el elemento clave (criterio de la auditoría de coherencia)"
-  },
-  {
-   "propuesta": "salf-01",
-   "criterio": "internacional",
-   "antes": "fuente: (ninguna)",
-   "despues": "fuente añadida: https://www.gov.uk/government/publications/evaluating-the-impact-of-the-2017-stamp-duty-land-tax-first-time-buyers-relief",
-   "motivo": "fuente primaria de la evaluación añadida"
-  },
-  {
-   "propuesta": "salf-01",
-   "criterio": "antecedentes",
-   "antes": "aplicó un IVA del 4 % a todas las entregas de vivienda con carácter temporal, hasta el 31-12-2011.",
-   "despues": "aplicó un IVA del 4 % a todas las entregas de vivienda con carácter temporal, hasta el 31-12-2011, y el Real Decreto-ley 20/2011 lo prorrogó hasta el 31-12-2012.",
-   "motivo": "dato incompleto: el RDL 20/2011 prorrogó el tipo del 4 % «exclusivamente hasta el 31 de diciembre de 2012» (BOE-A-2011-20638)"
-  },
-  {
-   "propuesta": "salf-01",
-   "criterio": "antecedentes",
-   "antes": "fuente: (ninguna)",
-   "despues": "fuente añadida: https://www.boe.es/buscar/doc.php?id=BOE-A-2011-20638",
-   "motivo": "fuente de la prórroga"
-  },
-  {
-   "propuesta": "salf-01",
-   "criterio": "beneficiarios",
-   "antes": "cuyo número no se publica",
-   "despues": "cuyo número no hemos localizado en fuentes oficiales",
-   "motivo": "afirmación absoluta sin fuente: se formula como alcance de la búsqueda"
-  },
-  {
-   "propuesta": "salf-01",
-   "criterio": "largo_plazo",
-   "antes": "la pérdida de ingresos cedidos a las comunidades, que activa la compensación de la LOFCA.",
-   "despues": "la pérdida de ingresos cedidos a las comunidades, que la LOFCA obliga a valorar y, en su caso, compensar en la revisión quinquenal del sistema de financiación.",
-   "motivo": "LOFCA art. 2.1.g: valoración quinquenal y compensación «en su caso», no automática"
-  },
-  {
-   "propuesta": "salf-02",
-   "criterio": "concrecion",
-   "antes": "de 8,5 meses de los desahucios por arrendamiento",
-   "despues": "de 8,5 meses de los juicios verbales arrendaticios",
-   "motivo": "la categoría del CGPJ es «verbales arrendaticios», más amplia que los desahucios"
-  },
-  {
-   "propuesta": "salf-02",
-   "criterio": "legal",
-   "antes": "recordó que la vivienda ocupada que se habita es domicilio y que el desalojo debe ordenarlo un juez.",
-   "despues": "recordó que la entrada en un domicilio sin consentimiento, fuera de la flagrancia o el estado de necesidad, solo puede hacerse con autorización judicial, y que el desalojo ordenado por el juez en el proceso de esa ley cumple esa garantía.",
-   "motivo": "paráfrasis más amplia que la STC 32/2019, que no declara que toda vivienda ocupada sea domicilio"
-  },
-  {
-   "propuesta": "salf-02",
-   "criterio": "financiacion",
-   "antes": "El Real Decreto-ley 29/2026 establece hasta 2030 que, en los desahucios de personas vulnerables, la Administración ofrezca alternativa habitacional o asuma la deuda, y no hemos localizado",
-   "despues": "El Real Decreto-ley 29/2026 suspende hasta el 31-12-2030 ciertos desahucios de personas vulnerables sin alternativa habitacional (art. 2) y, con carácter estructural, obliga a la Administración, en los desahucios por impago de inquilinos vulnerables, a ofrecer alternativa habitacional o pagar la deuda (art. 5); no hemos localizado",
-   "motivo": "el texto fundía dos disposiciones: el límite de 2030 es del régimen de suspensión (art. 2); la alternativa habitacional o el pago de la deuda es estructural (art. 5)"
-  },
-  {
-   "propuesta": "salf-02",
-   "criterio": "antecedentes",
-   "antes": "dos de ellos no convalidados en 2026",
-   "despues": "al menos dos de ellos derogados por no convalidarse en 2026",
-   "motivo": "precisión: la fuente documenta dos decretos no convalidados (RDL 16/2025 y 2/2026); no se ha comprobado en fuente oficial si hubo más"
-  },
-  {
-   "propuesta": "salf-02",
-   "criterio": "internacional",
-   "antes": "y ejecutarlo en 24 horas si se trata de un domicilio; el Reino Unido castiga desde 2012 la ocupación de edificios residenciales con hasta 51 semanas de prisión.",
-   "despues": "con un plazo de ejecución de al menos 24 horas si se trata del domicilio del demandante; Inglaterra y Gales castigan desde 2012 la ocupación de edificios residenciales con hasta seis meses de prisión (51 semanas cuando entre en vigor una reforma pendiente de 2003).",
-   "motivo": "ANIL: «un délai d'exécution d'au moins 24 heures» (plazo mínimo, no ejecución en 24 h); la sección 144 LASPO solo rige en Inglaterra y Gales y su apartado 6 lee las 51 semanas como 6 meses hasta que entre en vigor la sección 281(5) de la Criminal Justice Act 2003"
-  },
-  {
-   "propuesta": "salf-02",
-   "criterio": "evidencia",
-   "antes": "con un efecto «modesto»",
-   "despues": "con un efecto positivo pero pequeño",
-   "motivo": "las comillas atribuían a la fuente una palabra que no usa («a positive, although minor, impact»)"
-  },
-  {
-   "propuesta": "salf-03",
-   "criterio": "beneficiarios (campo de la propuesta)",
-   "antes": "3.378 por homicidio,",
-   "despues": "3.378 por homicidio (incluida la tentativa),",
-   "motivo": "SPACE I cuenta «Homicide (including attempts)»"
-  },
-  {
-   "propuesta": "salf-03",
-   "criterio": "legal",
-   "antes": "valoracion: desfavorable",
-   "despues": "valoracion: mixta",
-   "motivo": "igual estándar: en los demás partidos «desfavorable» en encaje legal se reserva a choques con doctrina expresa (STC 114/2017, STC 158/2019, TJUE Konle). Aquí la STC 169/2021 avaló la prisión permanente revisable y solo advirtió que restricciones que hicieran irrealizable la reinserción vulnerarían el art. 25.2; la jurisprudencia del TEDH citada se refiere a penas perpetuas sin revisión, que la propuesta no plantea. Sin sentencia sobre este diseño, corresponde «mixta»"
-  },
-  {
-   "propuesta": "salf-03",
-   "criterio": "legal",
-   "antes": "El art. 25.2 CE ordena que las penas se orienten a la reinserción y prohíbe los trabajos forzados, y la STC 169/2021 declaró que son inconstitucionales las restricciones que hagan irrealizable la reinserción; el art. 3 del CEDH, según el TEDH, prohíbe las penas perpetuas sin posibilidad de revisión. La Ley General Penitenciaria impide mantener a un interno en un grado inferior si merece la progresión (art. 72), dice que el trabajo «no tendrá carácter aflictivo» (art. 26) y prevé permisos obligatorios por motivos familiares graves (art. 47). Suprimir para categorías enteras de presos los permisos y el tercer grado choca con esta doctrina; cambiar los arts. 15 y 25.2 CE exigiría el procedimiento del art. 168.",
-   "despues": "Exigiría reformar por ley orgánica la Ley General Penitenciaria, que impide mantener a un interno en un grado inferior si merece la progresión (art. 72), dice que el trabajo «no tendrá carácter aflictivo» (art. 26) y prevé que se concedan permisos por motivos familiares graves salvo circunstancias excepcionales (art. 47). El art. 25.2 CE orienta las penas a la reinserción y prohíbe los trabajos forzados; la STC 169/2021, que avaló la prisión permanente revisable, advirtió que ese mandato se vulneraría con restricciones legales que hicieran irrealizable la reinserción. No hemos localizado una sentencia sobre la exclusión total del tercer grado y de los permisos para categorías enteras de presos, un diseño que va más allá de lo examinado en esa sentencia y cuyo encaje depende de cómo se regule.",
-   "motivo": "la STC 169/2021 no declaró inconstitucional ningún régimen (desestimó el recurso); el art. 47 LOGP dice «se concederán… salvo que concurran circunstancias excepcionales», no permisos «obligatorios»; se retira la referencia al TEDH sobre penas perpetuas, ajena a la propuesta"
-  },
-  {
-   "propuesta": "salf-03",
-   "criterio": "financiacion",
-   "antes": "El programa paga la obra «con lo decomisado al narco y al crimen organizado», pero la Ley 17/2003 destina el fondo de bienes decomisados a la prevención y asistencia de drogodependencias, la represión del narcotráfico y la cooperación internacional, no a construir prisiones. Además, las cantidades líquidas decomisadas ingresadas en el Tesoro fueron de 14,9 M€ en 2023, 17,7 M€ en 2024 y 47,9 M€ en 2025: 3.000 M€ equivalen a más de 60 años del mejor de esos años. El mismo programa asigna los decomisos a la ampliación de la UCO, la UDEF y la UDYCO (400 M€ al año) y al Plan Estrecho (180 M€).",
-   "despues": "El programa paga la obra «con lo decomisado al narco y al crimen organizado», pero la Ley 17/2003 destina el fondo de bienes decomisados por narcotráfico a la prevención y asistencia de drogodependencias, la represión del narcotráfico y la cooperación internacional, no a construir prisiones, y las cantidades líquidas decomisadas que ingresó fueron de 14,9 M€ en 2023, 17,7 M€ en 2024 y 47,9 M€ en 2025. Los demás bienes embargados y decomisados los gestiona la Oficina de Recuperación y Gestión de Activos, que ingresó 34,1 M€ en 2022. Sumando el mejor año del fondo y esa cifra, 3.000 M€ equivalen a unos 36 años de ingresos (cálculo propio). El mismo programa asigna los decomisos a la ampliación de la UCO, la UDEF y la UDYCO (400 M€ al año) y al Plan Estrecho (180 M€).",
-   "motivo": "el texto solo consideraba el fondo de narcotráfico; se añade la fuente oficial de los demás decomisos (ORGA, Ministerio de Justicia). Con ambas fuentes oficiales la financiación propuesta sigue contradicha por los datos, por lo que se mantiene «desfavorable»"
-  },
-  {
-   "propuesta": "salf-03",
-   "criterio": "financiacion",
-   "antes": "fuente: (ninguna)",
-   "despues": "fuente añadida: https://www.mjusticia.gob.es/es/AreaTematica/OficinaRecuperacion/Documents/Datos-estad%C3%ADsticos-a%C3%B1o-2022.pdf",
-   "motivo": "fuente oficial de los decomisos ajenos al narcotráfico"
-  },
-  {
-   "propuesta": "salf-03",
-   "criterio": "evidencia",
-   "antes": "valoracion: desfavorable",
-   "despues": "valoracion: mixta",
-   "motivo": "la evidencia citada va en dos sentidos: las condiciones más duras no reducen la reincidencia (Chen y Shapiro; Mastrobuoni y Terlizzese, con efectos débiles en violentos), pero la mayor duración esperada de la pena sí disuade (Drago y otros), y la propuesta alarga el tiempo efectivo de prisión. La definición de «mixta» del prompt 3 («evidencia en ambos sentidos») es la que corresponde"
-  },
-  {
-   "propuesta": "salf-03",
-   "criterio": "evidencia",
-   "antes": "Las evaluaciones disponibles indican que endurecer las condiciones de reclusión no reduce la reincidencia: con datos federales de EE. UU., los internos asignados a niveles de seguridad más altos no reinciden menos y, si acaso, más (Chen y Shapiro, 2007), y en Italia pasar un año de régimen cerrado a uno de celdas abiertas redujo la reincidencia en unos 6 puntos (Mastrobuoni y Terlizzese, 2022). Lo que sí muestra efecto disuasorio es la duración esperada de la pena: con el indulto italiano de 2006, la elasticidad de la reincidencia respecto a la pena esperada fue de -0,74 (Drago, Galbiati y Vertova, 2009).",
-   "despues": "Las evaluaciones disponibles indican que endurecer las condiciones de reclusión no reduce la reincidencia: con datos federales de EE. UU., los internos asignados a niveles de seguridad más altos no reinciden menos y, si acaso, más (Chen y Shapiro, 2007), y en Italia pasar un año de régimen cerrado a uno de celdas abiertas redujo la reincidencia en unos 6 puntos, con efectos débiles en los delincuentes violentos y reincidentes (Mastrobuoni y Terlizzese, 2022). En sentido contrario, la duración esperada de la pena sí muestra efecto disuasorio: con el indulto italiano de 2006, la elasticidad de la reincidencia respecto a la pena esperada fue de -0,74 (Drago, Galbiati y Vertova, 2009), y la propuesta alarga el tiempo efectivo en prisión al suprimir el tercer grado.",
-   "motivo": "se añade la salvedad del resumen de Mastrobuoni y Terlizzese («weak for violent and hardened criminals») y se explicita el sentido de cada estudio"
-  },
-  {
-   "propuesta": "salf-03",
-   "criterio": "internacional",
-   "antes": "al menos 458 muertes bajo custodia según Human Rights Watch; la caída de homicidios empezó antes y no hay una evaluación independiente",
-   "despues": "al menos 458 muertes bajo custodia según la organización Socorro Jurídico Humanitario, citada por Human Rights Watch; la caída de homicidios empezó antes y no hemos localizado una evaluación independiente",
-   "motivo": "HRW atribuye la cifra a Socorro Jurídico Humanitario; afirmación absoluta formulada como alcance de la búsqueda"
-  },
-  {
-   "propuesta": "salf-03",
-   "criterio": "antecedentes",
-   "antes": "El régimen cerrado para internos de «peligrosidad extrema» existe desde 1979 (art. 10 de la Ley General Penitenciaria). La LO 7/2003 introdujo el cumplimiento íntegro y efectivo con un periodo de seguridad obligatorio para acceder al tercer grado en terrorismo, crimen organizado y algunos delitos sexuales, y condicionó el tercer grado en delitos contra la Administración al pago de la responsabilidad civil. No hemos localizado evaluaciones de sus efectos sobre la reincidencia.",
-   "despues": "El régimen cerrado para internos de «peligrosidad extrema» existe desde 1979 (art. 10 de la Ley General Penitenciaria). La LO 7/2003 fijó un periodo de seguridad (la mitad de la condena) para acceder al tercer grado en las penas de más de cinco años, que el juez no puede levantar en terrorismo y crimen organizado, y exigió haber pagado la responsabilidad civil para el tercer grado, en particular en delitos contra el patrimonio, la Hacienda pública y la Administración; reformas posteriores extendieron el periodo de seguridad obligatorio a algunos delitos sexuales. No hemos localizado evaluaciones de sus efectos sobre la reincidencia.",
-   "motivo": "la LO 7/2003 (BOE-A-2003-13022) fijó el periodo de seguridad para toda pena de más de cinco años, no levantable en terrorismo y crimen organizado; los delitos sexuales se añadieron en reformas posteriores (art. 36.2 CP vigente); el requisito de responsabilidad civil (art. 72.5 LOGP) es general"
-  },
-  {
-   "propuesta": "salf-03",
-   "criterio": "beneficiarios",
-   "antes": "unos 15.900 penados por homicidio, delitos sexuales",
-   "despues": "unos 15.900 penados por homicidio (incluida la tentativa), delitos sexuales",
-   "motivo": "SPACE I cuenta «Homicide (including attempts)»"
-  },
-  {
-   "propuesta": "salf-03",
-   "criterio": "largo_plazo",
-   "antes": "Mantendría más tiempo en prisión a los condenados por delitos graves. Los riesgos documentados son una reincidencia igual o mayor tras la salida (Chen y Shapiro, 2007; Mastrobuoni y Terlizzese, 2022), la inconstitucionalidad del régimen sin progresión (STC 169/2021) y una inversión de unos 3.000 M€ sin financiación verificada.",
-   "despues": "Mantendría más tiempo en prisión a los condenados por delitos graves. Los riesgos documentados son una reincidencia que no disminuye, y si acaso aumenta, tras la salida (Chen y Shapiro, 2007; Mastrobuoni y Terlizzese, 2022), el riesgo de inconstitucionalidad de un régimen sin progresión de grado a la luz de la doctrina de la STC 169/2021 y una inversión de unos 3.000 M€ que los decomisos registrados no alcanzan a cubrir.",
-   "motivo": "la STC 169/2021 no declaró inconstitucional ningún régimen: se describe como riesgo; se ajusta el resultado de los estudios"
-  },
-  {
-   "propuesta": "salf-04",
-   "criterio": "legal",
-   "antes": "El mínimo personal se aplica también a la parte autonómica del impuesto, que pueden modificar las comunidades en un 10 % (art. 46 de la Ley 22/2009)",
-   "despues": "El mínimo personal se aplica también a la parte autonómica del impuesto, y las comunidades pueden aumentar o reducir su cuantía para su tramo hasta un 10 % (art. 46 de la Ley 22/2009)",
-   "motivo": "el límite del 10 % del art. 46 de la Ley 22/2009 se refiere al importe del mínimo personal y familiar, no a toda la parte autonómica"
-  },
-  {
-   "propuesta": "salf-04",
-   "criterio": "financiacion",
-   "antes": "valoracion: desfavorable",
-   "despues": "valoracion: mixta",
-   "motivo": "igual estándar (rúbrica de financiación y auditoría de coherencia): «desfavorable» exige una financiación contradicha por fuentes oficiales o un coste incompatible con las reglas fiscales sin explicar cómo se cubre. El programa explica y cuantifica la financiación; su partida principal (57.000 M€ de «sobrecoste autonómico») carece de estimación oficial, pero no hemos localizado ninguna fuente oficial que la contradiga. Carecer de respaldo impide «favorable», no justifica «desfavorable»: corresponde «mixta», como en las propuestas de otros partidos con financiación anunciada sin respaldo verificable (p. ej., pp-10). No se penaliza por aportar la tabla ni se omite su debilidad, que se explica en el texto"
-  },
-  {
-   "propuesta": "salf-04",
-   "criterio": "financiacion",
-   "antes": "El coste declarado es verosímil en orden de magnitud: el IRPF recaudó 142.466 M€ en 2025, y en 2023 la cuota de los declarantes con rendimientos de hasta 30.000 € fue de unos 23.900 M€ y la de los de 30.000 a 60.000 € de 44.170 M€ (cálculo propio con la estadística de la AEAT). La tabla «Cómo se paga» (p. 16) cubre 81.700 M€ al año con 88.500 M€ de ahorros e ingresos, de los que 57.000 M€ son «sobrecoste autonómico», una cifra para la que no hemos localizado ninguna estimación oficial y que equivale al 37 % de la financiación de las comunidades de régimen común en 2023 (152.434 M€). Esos ahorros están en presupuestos que gestionan las comunidades con autonomía financiera (art. 156.1 CE), que además soportarían la mitad del coste a través de la cuota autonómica. Además, la tabla no incluye unos 20.000 M€ anuales de gasto que el propio programa cuantifica en otras medidas (pensión mínima, transición a cuentas individuales, mili voluntaria, cuña fiscal, sanidad o profesorado, entre otras; cálculo propio), frente a 6.800 M€ de margen.",
-   "despues": "El coste declarado es verosímil en orden de magnitud: el IRPF recaudó 142.466 M€ en 2025, y en 2023 la cuota de los declarantes con rendimientos de hasta 30.000 € fue de unos 23.900 M€ y la de los de 30.000 a 60.000 € de 44.170 M€ (cálculo propio con la estadística de la AEAT). El programa identifica y cuantifica la financiación en su tabla «Cómo se paga» (p. 16): 88.500 M€ de ahorros e ingresos para 81.700 M€ de rebajas y gasto. Su partida principal, 57.000 M€ de «sobrecoste autonómico», no tiene una estimación oficial que la respalde ni hemos localizado ninguna que la contradiga; equivale al 37 % de la financiación de las comunidades de régimen común en 2023 (152.434 M€) y está en presupuestos que gestionan las comunidades con autonomía financiera (art. 156.1 CE), que además soportarían en torno a la mitad del coste a través de la cuota autonómica. La tabla tampoco incluye unos 20.000 M€ anuales de gasto que el propio programa cuantifica en otras medidas (pensión mínima, transición a cuentas individuales, mili voluntaria, cuña fiscal, sanidad o profesorado, entre otras; cálculo propio), frente a 6.800 M€ de margen.",
-   "motivo": "se reescribe para reflejar la aplicación de la rúbrica con igual estándar (véase el cambio de valoración); los datos se mantienen"
-  },
-  {
-   "propuesta": "salf-04",
-   "criterio": "internacional",
-   "antes": "pero de cuantía inferior en relación con los salarios.",
-   "despues": "pero de cuantía menor (12.570 £ frente a 35.000 €).",
-   "motivo": "la comparación con los salarios no tenía fuente; se dan las dos cifras"
-  },
-  {
-   "propuesta": "salf-04",
-   "criterio": "largo_plazo",
-   "antes": "Aumentaría la renta disponible de la mayoría de los asalariados.",
-   "despues": "Aumentaría la renta disponible de la mayoría de los declarantes del IRPF (16,65 de 23,99 millones de liquidaciones tenían cuota en 2023).",
-   "motivo": "«asalariados» no tenía fuente; se usa la estadística de la AEAT"
-  },
-  {
-   "propuesta": "salf-04",
-   "criterio": "largo_plazo",
-   "antes": "fuente: (ninguna)",
-   "despues": "fuente añadida: https://sede.agenciatributaria.gob.es/AEAT/Contenidos_Comunes/La_Agencia_Tributaria/Estadisticas/Publicaciones/sites/irpf/2023/jrubikf7a8112a5b41c3fff03083be4a7a651473da97bbe.html",
-   "motivo": "fuente del dato añadido"
-  },
-  {
-   "propuesta": "salf-05",
-   "criterio": "legal",
-   "antes": "el Tribunal Constitucional exige que la ley fije un máximo (STC 115/1987)",
-   "despues": "el Tribunal Constitucional basó la constitucionalidad del internamiento en su carácter excepcional y en la existencia de un plazo máximo legal (STC 115/1987)",
-   "motivo": "la STC 115/1987 (FJ 1) apoya su fallo en la existencia de una duración máxima; no formula una exigencia general"
-  },
-  {
-   "propuesta": "salf-05",
-   "criterio": "legal",
-   "antes": "aplicable desde octubre de 2027",
-   "despues": "aplicable en su mayor parte desde el 17-10-2027",
-   "motivo": "art. 50 del Reglamento 2026/2280: algunas disposiciones se aplican antes"
-  },
-  {
-   "propuesta": "salf-05",
-   "criterio": "financiacion",
-   "antes": "No hay base pública para estimar el coste: no hemos localizado el coste por plaza y día de un centro de internamiento ni el coste medio de un retorno, y el programa no explica de dónde salen los 300 M€ ni los 1.000 M€ de ahorro que la tabla de financiación atribuye a «expulsiones efectivas y fin de regularizaciones». Como referencia, en 2026 hay siete centros con unas 1.265 plazas, y internar 30 días de media a los 53.700 extranjeros con orden de salida requeriría unas 4.400 plazas ocupadas de forma permanente (cálculo propio).",
-   "despues": "No hay base pública suficiente para estimar el coste: no hemos localizado un coste oficial reciente por plaza y día de un centro de internamiento (la última cifra localizada, de 2011, era de unos 17 € por plaza y día sin gastos de personal, según una respuesta parlamentaria citada por la prensa) ni el coste medio de un retorno, y el programa no explica de dónde salen los 300 M€ ni los 1.000 M€ de ahorro que la tabla de financiación atribuye a «expulsiones efectivas y fin de regularizaciones». Como referencia, a principios de 2026 los siete centros tenían unas 850 plazas y el nuevo centro de Algeciras tiene 507; internar 30 días de media a los 53.700 extranjeros con orden de salida requeriría unas 4.400 plazas ocupadas de forma permanente (cálculo propio).",
-   "motivo": "AIDA no da «unas 1.265 plazas»: lista 848 plazas en febrero de 2026 (100+90+120+70+158+210+100) y 507 en el nuevo centro de Algeciras; se añade la única cifra localizada de coste diario, con su procedencia. Sigue «no_verificable»"
-  },
-  {
-   "propuesta": "salf-05",
-   "criterio": "financiacion",
-   "antes": "fuente: (ninguna)",
-   "despues": "fuente añadida: http://www.diariodeavisos.com/2012/07/interior-baraja-cerrar-el-cie-de-hoya-fria-para-ahorrar-288-000-euros/",
-   "motivo": "fuente de la cifra de coste diario añadida"
-  },
-  {
-   "propuesta": "salf-05",
-   "criterio": "evidencia",
-   "antes": "y que menos del 20 % de los retornos a países no europeos se ejecutan, y Stutz y Trauner (2022) hallan que los acuerdos de readmisión producen como mucho subidas temporales de los retornos.",
-   "despues": "y que menos del 20 % de las órdenes de retorno a nacionales de países no europeos se ejecutan, y Stutz y Trauner (2022) hallan que los acuerdos de readmisión a menudo solo producen subidas temporales de los retornos, si es que las producen.",
-   "motivo": "redacción fiel a las fuentes (TCE: «effective return rate drops below 20 % for returns to countries outside the European continent»; Stutz y Trauner: «often lead only to temporary increases… if at all»)"
-  },
-  {
-   "propuesta": "salf-05",
-   "criterio": "internacional",
-   "antes": "frente al 10,6 % de España y el 29 % de la UE (Eurostat)",
-   "despues": "frente al 10,6 % de España y el 32 % de la UE (Eurostat)",
-   "motivo": "el 29 % de la UE contaba solo retornos a terceros países, mientras que las cifras por país cuentan todos los destinos; con la misma medida la UE está en el 32 % (Eurostat; Gapminder da también 32 %)"
-  },
-  {
-   "propuesta": "salf-05",
-   "criterio": "internacional",
-   "antes": "fuente: (ninguna)",
-   "despues": "fuente añadida: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/migr_eirtn?citizen=TOTAL&age=TOTAL&sex=T&time=2025",
-   "motivo": "las fuentes citadas estaban filtradas a España y no sostenían las cifras de otros países"
-  },
-  {
-   "propuesta": "salf-05",
-   "criterio": "internacional",
-   "antes": "fuente: (ninguna)",
-   "despues": "fuente añadida: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/migr_eiord?citizen=TOTAL&age=TOTAL&sex=T&time=2025",
-   "motivo": "las fuentes citadas estaban filtradas a España y no sostenían las cifras de otros países"
-  },
-  {
-   "propuesta": "salf-06",
-   "criterio": "evidencia",
-   "antes": "un 10 % más de denegaciones de visado",
-   "despues": "un 10 % más de denegaciones de visados de corta estancia",
-   "motivo": "precisión de la fuente (Czaika y Hobolth, 2016)"
-  },
-  {
-   "propuesta": "salf-06",
-   "criterio": "evidencia",
-   "antes": "El Tribunal de Cuentas Europeo (2021) concluye que la palanca de los visados es la que más ha avanzado para lograr cooperación en la readmisión, y la comercial la que menos.",
-   "despues": "El Tribunal de Cuentas Europeo (2021) constata avances importantes en los instrumentos de presión mediante visados para lograr cooperación en la readmisión, y ninguno todavía en el comercial.",
-   "motivo": "el TCE no compara qué palanca funcionó mejor; constata «important progress» en visados y «no progress yet» en comercio"
-  },
-  {
-   "propuesta": "salf-06",
-   "criterio": "internacional",
-   "antes": "a Gambia (2021), Etiopía (2024, levantadas en 2026), Somalia y Guinea (2026)",
-   "despues": "a Gambia, Etiopía (desde 2024; levantadas en mayo de 2026), Somalia y Guinea (2026)",
-   "motivo": "la fuente citada no fecha la medida sobre Gambia; la de Etiopía es la Decisión de Ejecución (UE) 2024/1341 y su levantamiento fue en mayo de 2026"
-  },
-  {
-   "propuesta": "salf-06",
-   "criterio": "internacional",
-   "antes": "fuente: (ninguna)",
-   "despues": "fuente añadida: https://eur-lex.europa.eu/eli/dec_impl/2024/1341/oj",
-   "motivo": "fuente primaria de la fecha"
-  },
-  {
-   "propuesta": "salf-06",
-   "criterio": "antecedentes",
-   "antes": "España fija cada año por orden ministerial una previsión de puestos para la contratación colectiva en origen (arts. 113-115 del Reglamento de extranjería de 2024), que aprueba el Gobierno y no el Congreso. No hay precedente en España de una moratoria de inmigración por nacionalidad.",
-   "despues": "El Reglamento de extranjería de 2024 permite al Ministerio aprobar cada año una previsión de ocupaciones y, en su caso, de puestos para la contratación colectiva en origen (arts. 113-115), sin pasar por el Congreso. No hemos localizado precedentes en España de una moratoria de inmigración por nacionalidad.",
-   "motivo": "art. 115 RD 1155/2024: el Ministerio «podrá aprobar anualmente» (facultad, no obligación); la ausencia de precedente se formula como alcance de la búsqueda"
-  },
-  {
-   "propuesta": "salf-06",
-   "criterio": "largo_plazo",
-   "antes": "Desde 2027 la UE contará con instrumentos de condicionalidad por readmisión en las preferencias comerciales (Reglamento 2026/1395) y en el Reglamento de retorno (art. 35), que se aplican desde la UE y no por un Estado solo.",
-   "despues": "El nuevo Sistema de Preferencias Generalizadas (Reglamento 2026/1395) permite desde 2027 retirar preferencias por falta de cooperación en la readmisión, y el Reglamento de retorno obliga desde octubre de 2026 a la UE y a los Estados a usar esa condicionalidad (art. 35); ambos se aplican desde la UE y no por un Estado solo.",
-   "motivo": "el art. 35 del Reglamento 2026/2280 se aplica desde el 16-10-2026 (art. 50.2) y es un mandato general, no un instrumento propio"
-  },
-  {
-   "propuesta": "salf-07",
-   "criterio": "beneficiarios (campo de la propuesta)",
-   "antes": "10,58 millones en 2023, el 49,9 % de los ocupados (EPA)",
-   "despues": "10,58 millones en el cuarto trimestre de 2023, el 49,8 % de los ocupados (EPA)",
-   "motivo": "INE tabla 4076, T4 2023: 10.583,5 de 21.246,9 miles = 49,8 %"
-  },
-  {
-   "propuesta": "salf-07",
-   "criterio": "beneficiarios (campo de la propuesta)",
-   "antes": "(menos de unos 4.950 M€ al año, cálculo propio con las bases de cotización de 2025)",
-   "despues": "(del orden de 5.000 M€ al año, cálculo propio con las aportaciones del MEI de 2025)",
-   "motivo": "la cifra del MEI es parcial del año (véase financiación): la estimación es un orden de magnitud, no un máximo"
-  },
-  {
-   "propuesta": "salf-07",
-   "criterio": "financiacion",
-   "antes": "el MEI aportó 3.970 M€ al Fondo de Reserva en 2025 con un tipo del 0,8 %, lo que sitúa el 2 % de las bases de cotización de todos los trabajadores en unos 9.900 M€ y el de los menores de 45 por debajo de unos 4.950 M€ (cálculo propio)",
-   "despues": "el MEI aportó 3.970 M€ al Fondo de Reserva en 2025 hasta principios de diciembre con un tipo del 0,8 %, lo que sitúa el 2 % de las bases de cotización de todos los trabajadores en al menos unos 9.900 M€ y el de los menores de 45 en algo menos de la mitad (cálculo propio)",
-   "motivo": "la nota de La Moncloa (10-12-2025) da lo aportado «en lo que llevamos de año»: es una cifra parcial y las derivadas son mínimos"
-  },
-  {
-   "propuesta": "salf-07",
-   "criterio": "antecedentes",
-   "antes": "que había recibido 9.765 M€ hasta 2025",
-   "despues": "que había recibido 9.765 M€ de aportaciones del MEI hasta diciembre de 2025",
-   "motivo": "precisión de la fuente (La Moncloa, 10-12-2025)"
-  },
-  {
-   "propuesta": "salf-07",
-   "criterio": "beneficiarios",
-   "antes": "10,58 millones de ocupados menores de 45 años en 2023",
-   "despues": "10,58 millones de ocupados menores de 45 años en el cuarto trimestre de 2023",
-   "motivo": "precisión de la fuente (INE, tabla 4076)"
-  },
-  {
-   "propuesta": "salf-07",
-   "criterio": "internacional",
-   "antes": "con una rentabilidad media anual del 7,4 % desde su creación frente al 3,3 % del componente de reparto, según su Agencia de Pensiones, y con fuertes pérdidas en años como 2022.",
-   "despues": "con una rentabilidad media anual del 7,4 % desde su creación hasta 2022 frente al 3,3 % del componente de reparto, según su Agencia de Pensiones, y con pérdidas en años como 2022.",
-   "motivo": "la cifra es a 2022 (artículo de 18-4-2023); se retira el adjetivo «fuertes»"
-  },
-  {
-   "propuesta": "salf-08",
-   "criterio": "beneficiarios (campo de la propuesta)",
-   "antes": "cuya remuneración sumó 42.930 M€ en 2023 (Estadística de Gasto Sanitario Público)",
-   "despues": "cuya remuneración sumó 45.564 M€ en 2024 (Estadística de Gasto Sanitario Público)",
-   "motivo": "dato actualizado con la edición de 2024 de la EGSP"
-  },
-  {
-   "propuesta": "salf-08",
-   "criterio": "concrecion",
-   "antes": "El programa (p. 22) dice qué haría (central única obligatoria con precios netos públicos), el ahorro que espera (15 %) y su destino (sueldos y plazas, con una subida de 5.500 M€), pero no fija plazo ni qué productos se comprarían de forma centralizada. La base de 41.000 M€ de «compras» (40 % del gasto) no corresponde a una partida de la estadística oficial: en 2023 el gasto sanitario público fue de 97.661 M€, con 25.396 M€ de consumo intermedio (26,0 %), 9.800 M€ de conciertos con centros privados (10,0 %) y 13.984 M€ de farmacia de receta; el 40 % solo se alcanza sumando partidas que no son compras de bienes.",
-   "despues": "El programa (p. 22) dice qué haría (central única obligatoria con precios netos públicos), el ahorro que espera (15 %) y su destino (sueldos y plazas, con una subida de 5.500 M€), pero no fija plazo ni qué productos se comprarían de forma centralizada. La cifra de 41.000 M€ de «compras» (40 % del gasto) no es una partida única de la estadística oficial, pero coincide con la suma del consumo intermedio (26.624 M€) y la farmacia de receta (14.684 M€) de 2024: 41.308 M€, el 40,6 % de un gasto sanitario público de 101.739 M€. El consumo intermedio incluye servicios además de bienes, y la farmacia de receta es el gasto en medicamentos dispensados en oficinas de farmacia.",
-   "motivo": "error: el texto decía que el 40 % «solo se alcanza sumando partidas que no son compras de bienes», pero la EGSP 2024 muestra que consumo intermedio más farmacia de receta (medicamentos) suman 41.308 M€ (40,6 %); además, la edición de 2024 sustituye a la de 2023"
-  },
-  {
-   "propuesta": "salf-08",
-   "criterio": "concrecion",
-   "antes": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/docs/EGSP2008/egspPrincipalesResultados.pdf",
-   "despues": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/tablasEstEGSP/Principales_resultados.pdf",
-   "motivo": "edición más reciente de la estadística (datos de 2024)"
-  },
-  {
-   "propuesta": "salf-08",
-   "criterio": "legal",
-   "antes": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/docs/EGSP2008/egspPrincipalesResultados.pdf",
-   "despues": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/tablasEstEGSP/Principales_resultados.pdf",
-   "motivo": "edición más reciente de la estadística (datos de 2024)"
-  },
-  {
-   "propuesta": "salf-08",
-   "criterio": "financiacion",
-   "antes": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/docs/EGSP2008/egspPrincipalesResultados.pdf",
-   "despues": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/tablasEstEGSP/Principales_resultados.pdf",
-   "motivo": "edición más reciente de la estadística (datos de 2024)"
-  },
-  {
-   "propuesta": "salf-08",
-   "criterio": "beneficiarios",
-   "antes": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/docs/EGSP2008/egspPrincipalesResultados.pdf",
-   "despues": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/tablasEstEGSP/Principales_resultados.pdf",
-   "motivo": "edición más reciente de la estadística (datos de 2024)"
-  },
-  {
-   "propuesta": "salf-08",
-   "criterio": "largo_plazo",
-   "antes": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/docs/EGSP2008/egspPrincipalesResultados.pdf",
-   "despues": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/tablasEstEGSP/Principales_resultados.pdf",
-   "motivo": "edición más reciente de la estadística (datos de 2024)"
-  },
-  {
-   "propuesta": "salf-08",
-   "criterio": "legal",
-   "antes": "y el 93,2 % del gasto sanitario público lo ejecutan las comunidades",
-   "despues": "y el 93,6 % del gasto sanitario público lo ejecutaban las comunidades en 2024",
-   "motivo": "dato actualizado con la EGSP 2024 (95.243 de 101.739 M€)"
-  },
-  {
-   "propuesta": "salf-08",
-   "criterio": "financiacion",
-   "antes": "valoracion: desfavorable",
-   "despues": "valoracion: mixta",
-   "motivo": "la valoración «desfavorable» se basaba en que la base de 41.000 M€ no estaba en la estadística oficial, y sí lo está (consumo intermedio más farmacia de receta de 2024). El 15 % de ahorro no tiene estimación oficial, pero ninguna fuente oficial lo contradice: con igual estándar que en otros partidos, corresponde «mixta»"
-  },
-  {
-   "propuesta": "salf-08",
-   "criterio": "financiacion",
-   "antes": "La subida salarial de 5.500 M€ al año se financia con un ahorro del 15 % sobre 41.000 M€, una base que la estadística oficial no recoge como compras: aplicado al consumo intermedio de 2023 (25.396 M€), el mismo 15 % daría unos 3.800 M€ (cálculo propio), por debajo del gasto comprometido. No hemos localizado ninguna estimación oficial de un ahorro del 15 % sobre el conjunto de las compras; el primer acuerdo marco del INGESA para biosimilares, con diez comunidades adheridas, ahorró más de 120 M€ según la prensa sectorial.",
-   "despues": "El coste está cuantificado (5.500 M€ al año) y el programa lo financia con un ahorro del 15 % sobre 41.000 M€ de compras, una base que coincide con la suma del consumo intermedio y la farmacia de receta de 2024 (41.308 M€); el 15 % de esa suma son unos 6.200 M€ (cálculo propio). No hemos localizado ninguna estimación oficial de un ahorro del 15 % sobre el conjunto de esas partidas: el primer acuerdo marco del INGESA para biosimilares, con diez comunidades adheridas, ahorró más de 120 M€, y el segundo, de 410,9 M€, prevé un ahorro de 178 M€, según la prensa sectorial. Si el ahorro se calcula solo sobre el consumo intermedio (26.624 M€), el 15 % son unos 4.000 M€, por debajo del gasto comprometido.",
-   "motivo": "corregida la base (véase concreción) y añadida la previsión de ahorro del segundo acuerdo marco que recoge la fuente citada"
-  },
-  {
-   "propuesta": "salf-08",
-   "criterio": "evidencia",
-   "antes": "y el 83 % del sobrecoste se debe a ineficiencia y no a corrupción",
-   "despues": "y el 83 % del despilfarro estimado es pasivo (ineficiencia) y no activo (el que reporta algún beneficio a quien decide)",
-   "motivo": "traducción fiel: el estudio distingue «passive waste» de «active waste», que es más amplio que la corrupción"
-  },
-  {
-   "propuesta": "salf-08",
-   "criterio": "antecedentes",
-   "antes": "y en junio de 2025 se autorizó un segundo acuerdo para todo el sistema por 410,9 M€, según la prensa sectorial.",
-   "despues": "y en junio de 2025 se autorizó un segundo acuerdo, por 410,9 M€, para varias comunidades, Ceuta, Melilla y organismos estatales, con un ahorro previsto de 178 M€, según la prensa sectorial.",
-   "motivo": "el cuerpo de la noticia limita el acuerdo a «varias comunidades autónomas, centros del INGESA en Ceuta y Melilla y organismos de la AGE»"
-  },
-  {
-   "propuesta": "salf-08",
-   "criterio": "beneficiarios",
-   "antes": "con una remuneración de 42.930 M€ en 2023",
-   "despues": "con una remuneración de 45.564 M€ en 2024",
-   "motivo": "dato actualizado con la EGSP 2024"
-  },
-  {
-   "propuesta": "salf-09",
-   "criterio": "legal",
-   "antes": "Solo podría aplicarse a hechos no prescritos: el TEDH admite ampliar plazos aún vigentes (Coëme c. Bélgica, 2000), pero no reabrir delitos ya prescritos.",
-   "despues": "Solo podría aplicarse con seguridad a hechos posteriores a su entrada en vigor: aunque el TEDH admite ampliar plazos aún no vencidos (Coëme c. Bélgica, 2000) y no reabrir delitos ya prescritos, el Tribunal Constitucional atribuye a la prescripción fundamento material (STC 63/2005), lo que la somete a la irretroactividad de las normas penales desfavorables (art. 9.3 CE).",
-   "motivo": "el estándar del TEDH es un mínimo; con la doctrina de la STC 63/2005 y el art. 9.3 CE la ampliación a hechos anteriores no prescritos es dudosa en España"
-  },
-  {
-   "propuesta": "salf-09",
-   "criterio": "antecedentes",
-   "antes": "El Código Penal declara imprescriptibles los delitos de lesa humanidad, genocidio, contra personas y bienes protegidos en conflicto armado y, desde la LO 5/2010, los de terrorismo con resultado de muerte. Los plazos actuales se fijaron en la LO 1/2015. No hay precedente de imprescriptibilidad para delitos de corrupción.",
-   "despues": "El Código Penal declara imprescriptibles los delitos de lesa humanidad, genocidio, contra personas y bienes protegidos en conflicto armado y, desde la LO 5/2010, los de terrorismo con resultado de muerte. La LO 5/2010 elevó también el plazo mínimo de prescripción de tres a cinco años, entre otros motivos por la impunidad de «algunos delitos contra la Administración Pública»; la LO 1/2015 adaptó el artículo a la supresión de las faltas. No hay precedente de imprescriptibilidad para delitos de corrupción.",
-   "motivo": "la escala vigente de plazos procede de la LO 5/2010, no de la LO 1/2015, que solo adaptó el art. 131 (BOE-A-2010-9953)"
-  },
-  {
-   "propuesta": "salf-09",
-   "criterio": "antecedentes",
-   "antes": "fuente: (ninguna)",
-   "despues": "fuente añadida: https://www.boe.es/diario_boe/txt.php?id=BOE-A-2010-9953",
-   "motivo": "fuente del dato corregido"
-  },
-  {
-   "propuesta": "salf-09",
-   "criterio": "largo_plazo",
-   "antes": "Eliminaría la posibilidad de que un delito de corrupción quede impune por el paso del tiempo.",
-   "despues": "Eliminaría, para los delitos incluidos y los hechos posteriores a la reforma, la posibilidad de que queden impunes por el paso del tiempo.",
-   "motivo": "alcance acotado a lo que la medida cubre"
-  },
-  {
-   "propuesta": "salf-10",
-   "criterio": "beneficiarios (campo de la propuesta)",
-   "antes": "Los cerca de 3,4 millones de afiliados",
-   "despues": "Los cerca de 3,4 millones de afiliados (febrero de 2025)",
-   "motivo": "fecha del dato"
-  },
-  {
-   "propuesta": "salf-10",
-   "criterio": "legal",
-   "antes": "y se calcula sobre las bases cotizadas (art. 209)",
-   "despues": "y se calcula sobre las bases cotizadas (art. 209), normas aplicables a los autónomos por el art. 318",
-   "motivo": "los arts. 205 y 209 son del Régimen General y se aplican al RETA por remisión del art. 318 LGSS"
-  },
-  {
-   "propuesta": "salf-10",
-   "criterio": "financiacion",
-   "antes": "valoracion: desfavorable",
-   "despues": "valoracion: mixta",
-   "motivo": "igual estándar (rúbrica de financiación y auditoría de coherencia): «desfavorable» exige una financiación contradicha por fuentes oficiales o un coste incompatible con las reglas fiscales sin explicar cómo se cubre. El programa explica y cuantifica la financiación; su partida principal (57.000 M€ de «sobrecoste autonómico») carece de estimación oficial, pero no hemos localizado ninguna fuente oficial que la contradiga. Carecer de respaldo impide «favorable», no justifica «desfavorable»: corresponde «mixta», como en las propuestas de otros partidos con financiación anunciada sin respaldo verificable (p. ej., pp-10). No se penaliza por aportar la tabla ni se omite su debilidad, que se explica en el texto"
-  },
-  {
-   "propuesta": "salf-10",
-   "criterio": "financiacion",
-   "antes": "El coste declarado es coherente con las cuentas oficiales: los regímenes especiales aportaron 12.609 M€ en 2025, cuando la Seguridad Social cerró con un déficit de 7.387 M€ y recibió 47.815 M€ de transferencias del Estado. La tabla «Cómo se paga» (p. 16) cubre 81.700 M€ al año con 88.500 M€ de ahorros e ingresos, de los que 57.000 M€ son «sobrecoste autonómico», una cifra para la que no hemos localizado ninguna estimación oficial y que equivale al 37 % de la financiación de las comunidades de régimen común en 2023 (152.434 M€); esos ahorros están en presupuestos que gestionan las comunidades con autonomía financiera (art. 156.1 CE). Además, la tabla no incluye unos 20.000 M€ anuales de gasto que el propio programa cuantifica en otras medidas (pensión mínima, transición a cuentas individuales, mili voluntaria, cuña fiscal, sanidad o profesorado, entre otras; cálculo propio), frente a 6.800 M€ de margen. Si se mantienen las pensiones de los autónomos sin cotizaciones, su coste futuro pasaría también al Estado.",
-   "despues": "El coste declarado es coherente con las cuentas oficiales: los regímenes especiales (Autónomos, Mar y Minería del Carbón) aportaron 12.609 M€ en cotizaciones en 2025, cuando la Seguridad Social cerró con un déficit de 7.387 M€ y recibió 47.815 M€ de transferencias del Estado y sus organismos autónomos. El programa identifica y cuantifica la financiación en su tabla «Cómo se paga» (p. 16): 88.500 M€ de ahorros e ingresos para 81.700 M€ de rebajas y gasto. Su partida principal, 57.000 M€ de «sobrecoste autonómico», no tiene una estimación oficial que la respalde ni hemos localizado ninguna que la contradiga; equivale al 37 % de la financiación de las comunidades de régimen común en 2023 (152.434 M€) y está en presupuestos que gestionan las comunidades con autonomía financiera (art. 156.1 CE). La tabla tampoco incluye unos 20.000 M€ anuales de gasto que el propio programa cuantifica en otras medidas (cálculo propio), frente a 6.800 M€ de margen. Si se mantienen las pensiones de los autónomos sin cotizaciones, su coste futuro pasaría también al Estado.",
-   "motivo": "se reescribe para reflejar la aplicación de la rúbrica con igual estándar (véase el cambio de valoración); la fuente habla de transferencias «del Estado y Organismos Autónomos»"
-  },
-  {
-   "propuesta": "salf-10",
-   "criterio": "internacional",
-   "antes": "No se conoce una aplicación comparable de cotización cero con derechos contributivos. En el Reino Unido la cotización fija de clase 2 no se paga con beneficios desde 7.105 £ y se considera pagada para no perder derechos, pero los autónomos siguen pagando la de clase 4 (6 % entre 12.570 y 50.270 £ y 2 % por encima).",
-   "despues": "No hemos localizado una aplicación comparable de cotización cero con derechos contributivos. En el Reino Unido la cotización fija de clase 2 ya no es obligatoria: con beneficios de 7.105 £ o más se considera pagada sin abonarla y, por debajo, es voluntaria; pero los autónomos siguen pagando la de clase 4 (6 % entre 12.570 y 50.270 £ y 2 % por encima).",
-   "motivo": "«No se conoce» era una afirmación absoluta; se describe la clase 2 como la presenta GOV.UK"
-  },
-  {
-   "propuesta": "salf-10",
-   "criterio": "antecedentes",
-   "antes": "España aplica desde 2013 una cuota reducida para quienes inician actividad (art. 38 ter del Estatuto del trabajo autónomo)",
-   "despues": "España aplica desde 2013 una cuota reducida para quienes inician actividad (la «tarifa plana», hoy en el art. 38 ter del Estatuto del trabajo autónomo, introducido por el Real Decreto-ley 13/2022)",
-   "motivo": "el art. 38 ter lo introdujo el RDL 13/2022 (en vigor en 2023); la tarifa plana de 2013 estaba en otro artículo"
-  },
-  {
-   "propuesta": "salf-10",
-   "criterio": "beneficiarios",
-   "antes": "cerca de 3,4 millones de afiliados al RETA",
-   "despues": "cerca de 3,4 millones de afiliados al RETA (febrero de 2025)",
-   "motivo": "fecha del dato"
-  },
-  {
-   "propuesta": "salf-11",
-   "criterio": "cita",
-   "antes": "no se cambia [...] misma mayoría",
-   "despues": "no se cambia sin la [...] misma mayoría",
-   "motivo": "el corte suprimía «sin la» y alteraba el sentido de la frase"
-  },
-  {
-   "propuesta": "salf-11",
-   "criterio": "evidencia",
-   "antes": "en Alemania, los Länder con exámenes centrales de salida obtienen un rendimiento equivalente a un tercio de curso más (Jürges, Schneider y Büchel, 2005)",
-   "despues": "en Alemania, los exámenes centrales de salida elevan el rendimiento en el equivalente a un tercio de curso (Jürges, Schneider y Büchel, 2005), una parte de la diferencia entre Länder",
-   "motivo": "el estudio atribuye a los exámenes solo una parte de la diferencia entre Länder"
-  },
-  {
-   "propuesta": "salf-11",
-   "criterio": "antecedentes",
-   "antes": "En PISA 2022 España obtuvo 473 puntos en matemáticas (8 menos que en 2018), 474 en lectura y 485 en ciencias, en torno a la media de la OCDE.",
-   "despues": "En PISA 2025 España obtuvo 457 puntos en matemáticas, 451 en lectura y 477 en ciencias, significativamente por debajo de la media de la OCDE (463, 461 y 482); en PISA 2022 había obtenido 473, 474 y 485.",
-   "motivo": "PISA 2025 se publicó el 8-9-2026 y sustituye a la edición de 2022 como dato más reciente (nota del Ministerio de Educación)"
-  },
-  {
-   "propuesta": "salf-11",
-   "criterio": "antecedentes",
-   "antes": "fuente: (ninguna)",
-   "despues": "fuente añadida: https://www.educacionfpydeportes.gob.es/prensa/actualidad/2026/09/20260908-pisa2025.html",
-   "motivo": "fuente del dato actualizado"
-  },
-  {
-   "propuesta": "salf-12",
-   "criterio": "concrecion",
-   "antes": "El programa (p. 35) define la secuencia (un referéndum de renegociación y, si se rechaza, otro de salida), pero no concreta qué se pediría en la renegociación, la pregunta ni los plazos. La cifra que da como aportación de España, 18.098 M€ en 2026, no la hemos podido verificar y es bruta: en 2025, según la Comisión Europea, España aportó 15.182 M€ en recursos propios y recibió 18.983 M€ entre gasto del presupuesto de la UE y NextGenerationEU.",
-   "despues": "El programa (p. 35) define la secuencia (un referéndum de renegociación y, si se rechaza, otro de salida), pero no concreta qué se pediría en la renegociación, la pregunta ni los plazos. La cifra que da como aportación de España en 2026, 18.098 M€, coincide con los recursos propios previstos para España en el presupuesto inicial de la UE para 2026 (Comisión Europea), que incluyen unos 2.020 M€ de aranceles que España recauda por cuenta de la UE; es una cifra bruta: en 2025, según la Comisión, España aportó 15.182 M€ en recursos propios y recibió 18.983 M€ entre gasto del presupuesto de la UE y NextGenerationEU.",
-   "motivo": "la cifra sí es verificable: el proyecto de presupuesto rectificativo n.º 2/2026 de la Comisión (COM(2026) 460) da 18.097,8 M€ para España en el presupuesto inicial de 2026"
-  },
-  {
-   "propuesta": "salf-12",
-   "criterio": "concrecion",
-   "antes": "fuente: (ninguna)",
-   "despues": "fuente añadida: https://data.consilium.europa.eu/doc/document/ST-10212-2026-INIT/en/pdf",
-   "motivo": "fuente primaria de la cifra"
-  },
-  {
-   "propuesta": "salf-12",
-   "criterio": "concrecion",
-   "antes": "fuente: (ninguna)",
-   "despues": "fuente añadida: https://data.consilium.europa.eu/doc/document/ST-9919-2026-ADD-1/en/pdf",
-   "motivo": "desglose de la cifra"
-  },
-  {
-   "propuesta": "salf-12",
-   "criterio": "legal",
-   "antes": "y no puede celebrarse en los 90 días anteriores o posteriores a otras elecciones generales o a otro referéndum.",
-   "despues": "y no puede celebrarse en los 90 días anteriores o posteriores a elecciones parlamentarias o locales generales ni a otro referéndum (art. 4).",
-   "motivo": "la regla de los 90 días está en el art. 4 de la LO 2/1980, no en el art. 6, y abarca elecciones parlamentarias y locales generales"
-  },
-  {
-   "propuesta": "salf-12",
-   "criterio": "evidencia",
-   "antes": "y la inversión entre un 12 % y un 18 %",
-   "despues": "y la inversión entre un 12 % y un 13 %",
-   "motivo": "cifra errónea: el resumen de NBER w34459 dice «investment was reduced by 12% to 13%»"
-  },
-  {
-   "propuesta": "salf-12",
-   "criterio": "evidencia",
-   "antes": "fuente: https://econpapers.repec.org/RePEc:oup:econjl:v:129:y:2019:i:623:p:2722-2744",
-   "despues": "fuente: https://ideas.repec.org/a/oup/econjl/v129y2019i623p2722-2744..html",
-   "motivo": "enlace roto (404); se sustituye por la ficha de RePEc, que confirma la pérdida del 1,7-2,5 %"
-  },
-  {
-   "propuesta": "salf-12",
-   "criterio": "internacional",
-   "antes": "fuente: https://econpapers.repec.org/RePEc:oup:econjl:v:129:y:2019:i:623:p:2722-2744",
-   "despues": "fuente: https://ideas.repec.org/a/oup/econjl/v129y2019i623p2722-2744..html",
-   "motivo": "enlace roto (404); se sustituye por la ficha de RePEc, que confirma la pérdida del 1,7-2,5 %"
-  },
-  {
-   "propuesta": "salf-12",
-   "criterio": "largo_plazo",
-   "antes": "Las estimaciones del caso británico indican que los costes de la salida aumentan con el tiempo y superaron las previsiones de 2016 (Bloom y otros, 2025). Volver a entrar exigiría la unanimidad de los Estados miembros (art. 49 TUE), y España dejaría de recibir los fondos europeos, que en 2024 sumaron 29.633 M€ entre presupuesto ordinario y NextGenerationEU.",
-   "despues": "Las estimaciones del caso británico indican que los costes de la salida aumentan con el tiempo y que las previsiones de 2016 acertaron a corto y medio plazo pero subestimaron el impacto a diez años (Bloom y otros, 2025). Volver a entrar exigiría la unanimidad de los Estados miembros (art. 49 TUE). España dejaría de recibir el gasto del presupuesto de la UE (12.610 M€ en 2024, más 17.023 M€ de NextGenerationEU) y de aportar sus recursos propios (13.256 M€ en 2024).",
-   "motivo": "redacción fiel a Bloom y otros («relatively accurate in the short to medium term, but they underestimated the impact over a decade») y presentación de los dos lados del saldo con la UE con los datos de la misma fuente"
-  },
-  {
-   "propuesta": "salf-12",
-   "criterio": "beneficiarios",
-   "antes": "En 2025 España recibió de la UE más de lo que aportó (18.983 M€ frente a 15.182 M€)",
-   "despues": "En 2025 España recibió de la UE 18.983 M€ (11.511 M€ del presupuesto y 7.471 M€ de NextGenerationEU) y aportó 15.182 M€ en recursos propios",
-   "motivo": "se desglosan las cifras para no presentar como recurrente el NextGenerationEU"
-  },
-  {
-   "propuesta": "salf-12",
-   "criterio": "antecedentes",
-   "antes": "España ha usado el referéndum consultivo para cuestiones europeas: el 20-2-2005 votó el Tratado por el que se establecía una Constitución para Europa, con 11,06 millones de votos a favor, 2,45 millones en contra y una participación del 41,8 %. No hay precedente de una consulta sobre la permanencia en la UE.",
-   "despues": "España ha usado una vez el referéndum consultivo para una cuestión europea: el 20-2-2005 votó el Tratado por el que se establecía una Constitución para Europa, con 11,06 millones de votos a favor, 2,45 millones en contra y una participación del 41,8 %. No hay precedente de una consulta sobre la permanencia en la UE.",
-   "motivo": "se sustituye Wikipedia por la declaración oficial de resultados (Junta Electoral Central, BOE de 8-4-2005), que confirma las cifras; «para cuestiones europeas» sugería más de una consulta"
-  },
-  {
-   "propuesta": "salf-12",
-   "criterio": "antecedentes",
-   "antes": "fuente: https://es.wikipedia.org/wiki/Refer%C3%A9ndum_sobre_la_Constituci%C3%B3n_Europea_en_Espa%C3%B1a",
-   "despues": "fuente: https://www.boe.es/boe/dias/2005/04/08/pdfs/A12308-12309.pdf",
-   "motivo": "fuente primaria en lugar de Wikipedia"
-  },
-  {
-   "propuesta": "salf-12",
-   "criterio": "internacional",
-   "antes": "fuente: (ninguna)",
-   "despues": "fuente añadida: https://www.consilium.europa.eu/en/press/press-releases/2016/02/19/euco-conclusions/pdf/",
-   "motivo": "el acuerdo de febrero de 2016 y la fecha de salida no tenían fuente citada"
-  },
-  {
-   "propuesta": "salf-12",
-   "criterio": "internacional",
-   "antes": "fuente: (ninguna)",
-   "despues": "fuente añadida: https://www.eeas.europa.eu/eeas/preguntas-y-respuestas-sobre-la-retirada-del-reino-unido-de-la-unión-europea-el-31-de-enero-de_en",
-   "motivo": "el acuerdo de febrero de 2016 y la fecha de salida no tenían fuente citada"
-  }
- ],
- "dudas": [
-  "salf-02: el Real Decreto-ley 29/2026 se cita como vigente; no se ha comprobado en fuente oficial si se convalidó. La prensa sitúa la votación en torno al 12-11-2026. Si no se convalidó, hay que actualizar legal, financiación y antecedentes. Tampoco se ha comprobado en fuente oficial si el RDL 26/2026 fue un tercer decreto no convalidado.",
-  "salf-05, cita: omite «la expulsión» («Internamiento hasta [...] Coste»), que es parte esencial de la medida. El guion de partición del PDF (U+2010, «ex‐pulsión») no lo normaliza pipeline/verify_quotes.py, así que no se puede restaurar sin cambiar el verificador. El resumen sí recoge el internamiento hasta la expulsión.",
-  "salf-05, financiación: la única cifra de coste diario por plaza en un CIE (17 € en 2011, sin gastos de personal) procede de prensa que cita una respuesta parlamentaria; no se localizó el documento primario. La valoración sigue en «no_verificable».",
-  "salf-09, beneficiarios: no existe cifra oficial de causas de corrupción terminadas por prescripción. El repositorio del CGPJ no recoge ese campo y la memoria de la Fiscalía solo da advertencias genéricas.",
-  "salf-12: la cifra de 18.098 M€ queda verificada con COM(2026) 460, presupuesto inicial de 2026. El presupuesto rectificativo n.º 2 la elevaría a 18.699,7 M€; no consta si se aprobó.",
-  "salf-12, internacional: las conclusiones del Consejo Europeo de febrero de 2016 (consilium.europa.eu) devuelven 403 a la descarga automática. Su contenido se confirmó por la nota de prensa indexada y por fuentes secundarias.",
-  "salf-01, salf-04 y salf-10: el cálculo propio de «unos 20.000 M€» de gasto no incluido en la tabla se reprodujo en la revisión (unos 20.400 M€), pero el desglose no figura en el texto. Convendría publicarlo en lectura.md.",
-  "Fuentes leídas en resumen y no en texto completo: Chen y Shapiro (2007; OUP devolvió 403, se usó RePEc), OIT (2018/2019, solo la página de presentación) y el estudio de EY para Asprima (a través de prensa). Las cifras de INGESA (120 y 178 M€) proceden de prensa sectorial.",
-  "Rúbrica de financiación: no prevé el caso de un programa que explica y cuantifica la financiación con partidas sin respaldo oficial, pero no contradichas. Aquí se ha tratado como «mixta»; conviene fijarlo en criterios.json y en la auditoría de coherencia para que se aplique igual a todos los partidos."
- ]
+  "aprobado": true,
+  "revisor": "Claude (Anthropic), pasada independiente",
+  "fecha": "2026-11-12",
+  "alcance": "12 propuestas × 8 criterios. Se abrieron las 136 URL citadas (133 con respuesta 200; academic.oup.com devolvió 403 y se usó el resumen en RePEc; el enlace de Born y otros en EconPapers daba 404 y se sustituyó). Selección de prioridades conforme con extraccion.json y con los «10 compromisos» de la p. 4. verify_quotes: 0 citas no encontradas.",
+  "igual_estandar": "Antes de la revisión SALF tenía 12 «desfavorable» y 5 en financiación, frente a ninguna en financiación en CC, ERC, BNG, PNV y PP. Se revisó cada una con la rúbrica tal como se aplicó a los demás. salf-01, salf-04 y salf-10 (financiación) pasan a «mixta»: el programa explica y cuantifica la financiación, y su partida principal (57.000 M€ de «sobrecoste autonómico») carece de estimación oficial, pero ninguna fuente oficial la contradice; la frase «el Estado no puede financiar la medida con ahorros autonómicos» no tenía fuente y la LOFCA (art. 2.1.g) solo prevé valoración quinquenal y compensación «en su caso». No se penaliza por aportar la tabla y su debilidad queda explicada en el texto. salf-08 (financiación) pasa a «mixta»: la base de 41.000 M€ sí coincide con la estadística oficial (consumo intermedio más farmacia de receta de 2024). salf-03 legal pasa a «mixta» (no hay sentencia sobre este diseño; la STC 169/2021 desestimó el recurso) y salf-03 evidencia a «mixta» (la evidencia citada va en los dos sentidos). Se mantienen 6 «desfavorable» con fuente primaria directa: salf-03 financiación (decomisos oficiales de unos 48 + 34 M€ al año frente a 3.000 M€), salf-06 legal (competencias de la UE en visados y comercio, Directiva 2003/86), salf-11 legal (STC 5/1981 y 88/1983) y salf-12 evidencia, internacional y largo plazo (Brexit: Born y otros, 2019; Bloom y otros, 2025), criterio igual al de bng-12.",
+  "recuento_final": {
+    "favorable": 5,
+    "mixta": 78,
+    "desfavorable": 6,
+    "no_verificable": 7
+  },
+  "cambios": [
+    {
+      "propuesta": "salf-01",
+      "criterio": "beneficiarios (campo de la propuesta)",
+      "antes": "no hay cifra oficial de cuántas compras son de primera vivienda",
+      "despues": "no hemos localizado una cifra oficial de cuántas compras son de primera vivienda",
+      "motivo": "afirmación absoluta sin fuente: se formula como alcance de la búsqueda"
+    },
+    {
+      "propuesta": "salf-01",
+      "criterio": "financiacion",
+      "antes": "valoracion: desfavorable",
+      "despues": "valoracion: mixta",
+      "motivo": "igual estándar (rúbrica de financiación y auditoría de coherencia): «desfavorable» exige una financiación contradicha por fuentes oficiales o un coste incompatible con las reglas fiscales sin explicar cómo se cubre. El programa explica y cuantifica la financiación; su partida principal (57.000 M€ de «sobrecoste autonómico») carece de estimación oficial, pero no hemos localizado ninguna fuente oficial que la contradiga. Carecer de respaldo impide «favorable», no justifica «desfavorable»: corresponde «mixta», como en las propuestas de otros partidos con financiación anunciada sin respaldo verificable (p. ej., pp-10). No se penaliza por aportar la tabla ni se omite su debilidad, que se explica en el texto"
+    },
+    {
+      "propuesta": "salf-01",
+      "criterio": "financiacion",
+      "antes": "El coste es estimable en orden de magnitud: las comunidades de régimen común recaudaron 10.594 M€ de ITP y AJD en 2023 por todas las operaciones, y en 2025 se vendieron 714.237 viviendas (155.910 nuevas), sin cifra oficial de primeros compradores. El programa dice que «lo paga el sobrecoste autonómico», pero la Constitución reconoce la autonomía financiera de las comunidades (art. 156.1) y la LOFCA (art. 2.1.g) obliga a compensarlas por las rebajas estatales de sus ingresos, de modo que el Estado no puede financiar la medida con ahorros de los presupuestos autonómicos. La tabla «Cómo se paga» (p. 16) cubre 81.700 M€ al año con 88.500 M€ de ahorros e ingresos, de los que 57.000 M€ son «sobrecoste autonómico», una cifra para la que no hemos localizado ninguna estimación oficial y que equivale al 37 % de la financiación de las comunidades de régimen común en 2023 (152.434 M€).",
+      "despues": "El coste es estimable en orden de magnitud: las comunidades de régimen común recaudaron 10.594 M€ de ITP y AJD en 2023 por todas las operaciones, y en 2025 se vendieron 714.237 viviendas (155.910 nuevas); no hemos localizado una cifra oficial de primeros compradores. El programa identifica y cuantifica la financiación: «lo paga el sobrecoste autonómico», una partida de 57.000 M€ de la tabla «Cómo se paga» (p. 16), que cubre 81.700 M€ al año con 88.500 M€ de ahorros e ingresos. No hemos localizado ninguna estimación oficial de ese sobrecoste, que equivale al 37 % de la financiación de las comunidades de régimen común en 2023 (152.434 M€), ni ninguna fuente oficial que lo contradiga. Tanto la recaudación perdida como esos ahorros están en las comunidades, que tienen autonomía financiera (art. 156.1 CE); la LOFCA (art. 2.1.g) obliga a valorar cada cinco años en el Consejo de Política Fiscal y Financiera el efecto de las medidas tributarias estatales sobre sus ingresos y, en su caso, a compensarlo modificando el sistema de financiación.",
+      "motivo": "la LOFCA (art. 2.1.g) no «obliga a compensar» sin más: prevé una valoración quinquenal y compensación «en su caso» (BOE-A-1980-21166); la conclusión «el Estado no puede financiar la medida con ahorros autonómicos» no tenía fuente; se aplica la rúbrica con igual estándar (véase el cambio de valoración)"
+    },
+    {
+      "propuesta": "salf-01",
+      "criterio": "internacional",
+      "antes": "El Reino Unido exime del impuesto de transmisiones a los primeros compradores hasta 300.000 £ (5 % entre 300.001 y 500.000 £, sin desgravación por encima), y su exención temporal de 2008-2009 fue evaluada con un traslado parcial al precio (Besley y otros, 2014). No hemos localizado una evaluación de la desgravación permanente para primeros compradores, y su diseño (solo el impuesto de transmisiones y con topes de precio) difiere del de la propuesta.",
+      "despues": "El Reino Unido exime del impuesto de transmisiones a los primeros compradores hasta 300.000 £ (5 % entre 300.001 y 500.000 £, sin desgravación por encima). Una evaluación de HMRC (2023) estima que esa desgravación, creada en 2017, aumentó las compras de primeros compradores un 11 % entre 125.000 y 300.000 £ y un 18 % entre 300.000 y 500.000 £, y que en el primer tramo los precios pagados subieron alrededor de un 1 %; la exención temporal de 2008-2009 también tuvo un traslado parcial al precio (Besley y otros, 2014). Su diseño (solo el impuesto de transmisiones y con topes de precio) difiere del de la propuesta.",
+      "motivo": "el texto decía que no se había localizado una evaluación de la desgravación permanente; HMRC publicó una en 2023. La valoración se mantiene en «mixta» porque el diseño difiere en el elemento clave (criterio de la auditoría de coherencia)"
+    },
+    {
+      "propuesta": "salf-01",
+      "criterio": "internacional",
+      "antes": "fuente: (ninguna)",
+      "despues": "fuente añadida: https://www.gov.uk/government/publications/evaluating-the-impact-of-the-2017-stamp-duty-land-tax-first-time-buyers-relief",
+      "motivo": "fuente primaria de la evaluación añadida"
+    },
+    {
+      "propuesta": "salf-01",
+      "criterio": "antecedentes",
+      "antes": "aplicó un IVA del 4 % a todas las entregas de vivienda con carácter temporal, hasta el 31-12-2011.",
+      "despues": "aplicó un IVA del 4 % a todas las entregas de vivienda con carácter temporal, hasta el 31-12-2011, y el Real Decreto-ley 20/2011 lo prorrogó hasta el 31-12-2012.",
+      "motivo": "dato incompleto: el RDL 20/2011 prorrogó el tipo del 4 % «exclusivamente hasta el 31 de diciembre de 2012» (BOE-A-2011-20638)"
+    },
+    {
+      "propuesta": "salf-01",
+      "criterio": "antecedentes",
+      "antes": "fuente: (ninguna)",
+      "despues": "fuente añadida: https://www.boe.es/buscar/doc.php?id=BOE-A-2011-20638",
+      "motivo": "fuente de la prórroga"
+    },
+    {
+      "propuesta": "salf-01",
+      "criterio": "beneficiarios",
+      "antes": "cuyo número no se publica",
+      "despues": "cuyo número no hemos localizado en fuentes oficiales",
+      "motivo": "afirmación absoluta sin fuente: se formula como alcance de la búsqueda"
+    },
+    {
+      "propuesta": "salf-01",
+      "criterio": "largo_plazo",
+      "antes": "la pérdida de ingresos cedidos a las comunidades, que activa la compensación de la LOFCA.",
+      "despues": "la pérdida de ingresos cedidos a las comunidades, que la LOFCA obliga a valorar y, en su caso, compensar en la revisión quinquenal del sistema de financiación.",
+      "motivo": "LOFCA art. 2.1.g: valoración quinquenal y compensación «en su caso», no automática"
+    },
+    {
+      "propuesta": "salf-02",
+      "criterio": "concrecion",
+      "antes": "de 8,5 meses de los desahucios por arrendamiento",
+      "despues": "de 8,5 meses de los juicios verbales arrendaticios",
+      "motivo": "la categoría del CGPJ es «verbales arrendaticios», más amplia que los desahucios"
+    },
+    {
+      "propuesta": "salf-02",
+      "criterio": "legal",
+      "antes": "recordó que la vivienda ocupada que se habita es domicilio y que el desalojo debe ordenarlo un juez.",
+      "despues": "recordó que la entrada en un domicilio sin consentimiento, fuera de la flagrancia o el estado de necesidad, solo puede hacerse con autorización judicial, y que el desalojo ordenado por el juez en el proceso de esa ley cumple esa garantía.",
+      "motivo": "paráfrasis más amplia que la STC 32/2019, que no declara que toda vivienda ocupada sea domicilio"
+    },
+    {
+      "propuesta": "salf-02",
+      "criterio": "financiacion",
+      "antes": "El Real Decreto-ley 29/2026 establece hasta 2030 que, en los desahucios de personas vulnerables, la Administración ofrezca alternativa habitacional o asuma la deuda, y no hemos localizado",
+      "despues": "El Real Decreto-ley 29/2026 suspende hasta el 31-12-2030 ciertos desahucios de personas vulnerables sin alternativa habitacional (art. 2) y, con carácter estructural, obliga a la Administración, en los desahucios por impago de inquilinos vulnerables, a ofrecer alternativa habitacional o pagar la deuda (art. 5); no hemos localizado",
+      "motivo": "el texto fundía dos disposiciones: el límite de 2030 es del régimen de suspensión (art. 2); la alternativa habitacional o el pago de la deuda es estructural (art. 5)"
+    },
+    {
+      "propuesta": "salf-02",
+      "criterio": "antecedentes",
+      "antes": "dos de ellos no convalidados en 2026",
+      "despues": "al menos dos de ellos derogados por no convalidarse en 2026",
+      "motivo": "precisión: la fuente documenta dos decretos no convalidados (RDL 16/2025 y 2/2026); no se ha comprobado en fuente oficial si hubo más"
+    },
+    {
+      "propuesta": "salf-02",
+      "criterio": "internacional",
+      "antes": "y ejecutarlo en 24 horas si se trata de un domicilio; el Reino Unido castiga desde 2012 la ocupación de edificios residenciales con hasta 51 semanas de prisión.",
+      "despues": "con un plazo de ejecución de al menos 24 horas si se trata del domicilio del demandante; Inglaterra y Gales castigan desde 2012 la ocupación de edificios residenciales con hasta seis meses de prisión (51 semanas cuando entre en vigor una reforma pendiente de 2003).",
+      "motivo": "ANIL: «un délai d'exécution d'au moins 24 heures» (plazo mínimo, no ejecución en 24 h); la sección 144 LASPO solo rige en Inglaterra y Gales y su apartado 6 lee las 51 semanas como 6 meses hasta que entre en vigor la sección 281(5) de la Criminal Justice Act 2003"
+    },
+    {
+      "propuesta": "salf-02",
+      "criterio": "evidencia",
+      "antes": "con un efecto «modesto»",
+      "despues": "con un efecto positivo pero pequeño",
+      "motivo": "las comillas atribuían a la fuente una palabra que no usa («a positive, although minor, impact»)"
+    },
+    {
+      "propuesta": "salf-03",
+      "criterio": "beneficiarios (campo de la propuesta)",
+      "antes": "3.378 por homicidio,",
+      "despues": "3.378 por homicidio (incluida la tentativa),",
+      "motivo": "SPACE I cuenta «Homicide (including attempts)»"
+    },
+    {
+      "propuesta": "salf-03",
+      "criterio": "legal",
+      "antes": "valoracion: desfavorable",
+      "despues": "valoracion: mixta",
+      "motivo": "igual estándar: en los demás partidos «desfavorable» en encaje legal se reserva a choques con doctrina expresa (STC 114/2017, STC 158/2019, TJUE Konle). Aquí la STC 169/2021 avaló la prisión permanente revisable y solo advirtió que restricciones que hicieran irrealizable la reinserción vulnerarían el art. 25.2; la jurisprudencia del TEDH citada se refiere a penas perpetuas sin revisión, que la propuesta no plantea. Sin sentencia sobre este diseño, corresponde «mixta»"
+    },
+    {
+      "propuesta": "salf-03",
+      "criterio": "legal",
+      "antes": "El art. 25.2 CE ordena que las penas se orienten a la reinserción y prohíbe los trabajos forzados, y la STC 169/2021 declaró que son inconstitucionales las restricciones que hagan irrealizable la reinserción; el art. 3 del CEDH, según el TEDH, prohíbe las penas perpetuas sin posibilidad de revisión. La Ley General Penitenciaria impide mantener a un interno en un grado inferior si merece la progresión (art. 72), dice que el trabajo «no tendrá carácter aflictivo» (art. 26) y prevé permisos obligatorios por motivos familiares graves (art. 47). Suprimir para categorías enteras de presos los permisos y el tercer grado choca con esta doctrina; cambiar los arts. 15 y 25.2 CE exigiría el procedimiento del art. 168.",
+      "despues": "Exigiría reformar por ley orgánica la Ley General Penitenciaria, que impide mantener a un interno en un grado inferior si merece la progresión (art. 72), dice que el trabajo «no tendrá carácter aflictivo» (art. 26) y prevé que se concedan permisos por motivos familiares graves salvo circunstancias excepcionales (art. 47). El art. 25.2 CE orienta las penas a la reinserción y prohíbe los trabajos forzados; la STC 169/2021, que avaló la prisión permanente revisable, advirtió que ese mandato se vulneraría con restricciones legales que hicieran irrealizable la reinserción. No hemos localizado una sentencia sobre la exclusión total del tercer grado y de los permisos para categorías enteras de presos, un diseño que va más allá de lo examinado en esa sentencia y cuyo encaje depende de cómo se regule.",
+      "motivo": "la STC 169/2021 no declaró inconstitucional ningún régimen (desestimó el recurso); el art. 47 LOGP dice «se concederán… salvo que concurran circunstancias excepcionales», no permisos «obligatorios»; se retira la referencia al TEDH sobre penas perpetuas, ajena a la propuesta"
+    },
+    {
+      "propuesta": "salf-03",
+      "criterio": "financiacion",
+      "antes": "El programa paga la obra «con lo decomisado al narco y al crimen organizado», pero la Ley 17/2003 destina el fondo de bienes decomisados a la prevención y asistencia de drogodependencias, la represión del narcotráfico y la cooperación internacional, no a construir prisiones. Además, las cantidades líquidas decomisadas ingresadas en el Tesoro fueron de 14,9 M€ en 2023, 17,7 M€ en 2024 y 47,9 M€ en 2025: 3.000 M€ equivalen a más de 60 años del mejor de esos años. El mismo programa asigna los decomisos a la ampliación de la UCO, la UDEF y la UDYCO (400 M€ al año) y al Plan Estrecho (180 M€).",
+      "despues": "El programa paga la obra «con lo decomisado al narco y al crimen organizado», pero la Ley 17/2003 destina el fondo de bienes decomisados por narcotráfico a la prevención y asistencia de drogodependencias, la represión del narcotráfico y la cooperación internacional, no a construir prisiones, y las cantidades líquidas decomisadas que ingresó fueron de 14,9 M€ en 2023, 17,7 M€ en 2024 y 47,9 M€ en 2025. Los demás bienes embargados y decomisados los gestiona la Oficina de Recuperación y Gestión de Activos, que ingresó 34,1 M€ en 2022. Sumando el mejor año del fondo y esa cifra, 3.000 M€ equivalen a unos 36 años de ingresos (cálculo propio). El mismo programa asigna los decomisos a la ampliación de la UCO, la UDEF y la UDYCO (400 M€ al año) y al Plan Estrecho (180 M€).",
+      "motivo": "el texto solo consideraba el fondo de narcotráfico; se añade la fuente oficial de los demás decomisos (ORGA, Ministerio de Justicia). Con ambas fuentes oficiales la financiación propuesta sigue contradicha por los datos, por lo que se mantiene «desfavorable»"
+    },
+    {
+      "propuesta": "salf-03",
+      "criterio": "financiacion",
+      "antes": "fuente: (ninguna)",
+      "despues": "fuente añadida: https://www.mjusticia.gob.es/es/AreaTematica/OficinaRecuperacion/Documents/Datos-estad%C3%ADsticos-a%C3%B1o-2022.pdf",
+      "motivo": "fuente oficial de los decomisos ajenos al narcotráfico"
+    },
+    {
+      "propuesta": "salf-03",
+      "criterio": "evidencia",
+      "antes": "valoracion: desfavorable",
+      "despues": "valoracion: mixta",
+      "motivo": "la evidencia citada va en dos sentidos: las condiciones más duras no reducen la reincidencia (Chen y Shapiro; Mastrobuoni y Terlizzese, con efectos débiles en violentos), pero la mayor duración esperada de la pena sí disuade (Drago y otros), y la propuesta alarga el tiempo efectivo de prisión. La definición de «mixta» del prompt 3 («evidencia en ambos sentidos») es la que corresponde"
+    },
+    {
+      "propuesta": "salf-03",
+      "criterio": "evidencia",
+      "antes": "Las evaluaciones disponibles indican que endurecer las condiciones de reclusión no reduce la reincidencia: con datos federales de EE. UU., los internos asignados a niveles de seguridad más altos no reinciden menos y, si acaso, más (Chen y Shapiro, 2007), y en Italia pasar un año de régimen cerrado a uno de celdas abiertas redujo la reincidencia en unos 6 puntos (Mastrobuoni y Terlizzese, 2022). Lo que sí muestra efecto disuasorio es la duración esperada de la pena: con el indulto italiano de 2006, la elasticidad de la reincidencia respecto a la pena esperada fue de -0,74 (Drago, Galbiati y Vertova, 2009).",
+      "despues": "Las evaluaciones disponibles indican que endurecer las condiciones de reclusión no reduce la reincidencia: con datos federales de EE. UU., los internos asignados a niveles de seguridad más altos no reinciden menos y, si acaso, más (Chen y Shapiro, 2007), y en Italia pasar un año de régimen cerrado a uno de celdas abiertas redujo la reincidencia en unos 6 puntos, con efectos débiles en los delincuentes violentos y reincidentes (Mastrobuoni y Terlizzese, 2022). En sentido contrario, la duración esperada de la pena sí muestra efecto disuasorio: con el indulto italiano de 2006, la elasticidad de la reincidencia respecto a la pena esperada fue de -0,74 (Drago, Galbiati y Vertova, 2009), y la propuesta alarga el tiempo efectivo en prisión al suprimir el tercer grado.",
+      "motivo": "se añade la salvedad del resumen de Mastrobuoni y Terlizzese («weak for violent and hardened criminals») y se explicita el sentido de cada estudio"
+    },
+    {
+      "propuesta": "salf-03",
+      "criterio": "internacional",
+      "antes": "al menos 458 muertes bajo custodia según Human Rights Watch; la caída de homicidios empezó antes y no hay una evaluación independiente",
+      "despues": "al menos 458 muertes bajo custodia según la organización Socorro Jurídico Humanitario, citada por Human Rights Watch; la caída de homicidios empezó antes y no hemos localizado una evaluación independiente",
+      "motivo": "HRW atribuye la cifra a Socorro Jurídico Humanitario; afirmación absoluta formulada como alcance de la búsqueda"
+    },
+    {
+      "propuesta": "salf-03",
+      "criterio": "antecedentes",
+      "antes": "El régimen cerrado para internos de «peligrosidad extrema» existe desde 1979 (art. 10 de la Ley General Penitenciaria). La LO 7/2003 introdujo el cumplimiento íntegro y efectivo con un periodo de seguridad obligatorio para acceder al tercer grado en terrorismo, crimen organizado y algunos delitos sexuales, y condicionó el tercer grado en delitos contra la Administración al pago de la responsabilidad civil. No hemos localizado evaluaciones de sus efectos sobre la reincidencia.",
+      "despues": "El régimen cerrado para internos de «peligrosidad extrema» existe desde 1979 (art. 10 de la Ley General Penitenciaria). La LO 7/2003 fijó un periodo de seguridad (la mitad de la condena) para acceder al tercer grado en las penas de más de cinco años, que el juez no puede levantar en terrorismo y crimen organizado, y exigió haber pagado la responsabilidad civil para el tercer grado, en particular en delitos contra el patrimonio, la Hacienda pública y la Administración; reformas posteriores extendieron el periodo de seguridad obligatorio a algunos delitos sexuales. No hemos localizado evaluaciones de sus efectos sobre la reincidencia.",
+      "motivo": "la LO 7/2003 (BOE-A-2003-13022) fijó el periodo de seguridad para toda pena de más de cinco años, no levantable en terrorismo y crimen organizado; los delitos sexuales se añadieron en reformas posteriores (art. 36.2 CP vigente); el requisito de responsabilidad civil (art. 72.5 LOGP) es general"
+    },
+    {
+      "propuesta": "salf-03",
+      "criterio": "beneficiarios",
+      "antes": "unos 15.900 penados por homicidio, delitos sexuales",
+      "despues": "unos 15.900 penados por homicidio (incluida la tentativa), delitos sexuales",
+      "motivo": "SPACE I cuenta «Homicide (including attempts)»"
+    },
+    {
+      "propuesta": "salf-03",
+      "criterio": "largo_plazo",
+      "antes": "Mantendría más tiempo en prisión a los condenados por delitos graves. Los riesgos documentados son una reincidencia igual o mayor tras la salida (Chen y Shapiro, 2007; Mastrobuoni y Terlizzese, 2022), la inconstitucionalidad del régimen sin progresión (STC 169/2021) y una inversión de unos 3.000 M€ sin financiación verificada.",
+      "despues": "Mantendría más tiempo en prisión a los condenados por delitos graves. Los riesgos documentados son una reincidencia que no disminuye, y si acaso aumenta, tras la salida (Chen y Shapiro, 2007; Mastrobuoni y Terlizzese, 2022), el riesgo de inconstitucionalidad de un régimen sin progresión de grado a la luz de la doctrina de la STC 169/2021 y una inversión de unos 3.000 M€ que los decomisos registrados no alcanzan a cubrir.",
+      "motivo": "la STC 169/2021 no declaró inconstitucional ningún régimen: se describe como riesgo; se ajusta el resultado de los estudios"
+    },
+    {
+      "propuesta": "salf-04",
+      "criterio": "legal",
+      "antes": "El mínimo personal se aplica también a la parte autonómica del impuesto, que pueden modificar las comunidades en un 10 % (art. 46 de la Ley 22/2009)",
+      "despues": "El mínimo personal se aplica también a la parte autonómica del impuesto, y las comunidades pueden aumentar o reducir su cuantía para su tramo hasta un 10 % (art. 46 de la Ley 22/2009)",
+      "motivo": "el límite del 10 % del art. 46 de la Ley 22/2009 se refiere al importe del mínimo personal y familiar, no a toda la parte autonómica"
+    },
+    {
+      "propuesta": "salf-04",
+      "criterio": "financiacion",
+      "antes": "valoracion: desfavorable",
+      "despues": "valoracion: mixta",
+      "motivo": "igual estándar (rúbrica de financiación y auditoría de coherencia): «desfavorable» exige una financiación contradicha por fuentes oficiales o un coste incompatible con las reglas fiscales sin explicar cómo se cubre. El programa explica y cuantifica la financiación; su partida principal (57.000 M€ de «sobrecoste autonómico») carece de estimación oficial, pero no hemos localizado ninguna fuente oficial que la contradiga. Carecer de respaldo impide «favorable», no justifica «desfavorable»: corresponde «mixta», como en las propuestas de otros partidos con financiación anunciada sin respaldo verificable (p. ej., pp-10). No se penaliza por aportar la tabla ni se omite su debilidad, que se explica en el texto"
+    },
+    {
+      "propuesta": "salf-04",
+      "criterio": "financiacion",
+      "antes": "El coste declarado es verosímil en orden de magnitud: el IRPF recaudó 142.466 M€ en 2025, y en 2023 la cuota de los declarantes con rendimientos de hasta 30.000 € fue de unos 23.900 M€ y la de los de 30.000 a 60.000 € de 44.170 M€ (cálculo propio con la estadística de la AEAT). La tabla «Cómo se paga» (p. 16) cubre 81.700 M€ al año con 88.500 M€ de ahorros e ingresos, de los que 57.000 M€ son «sobrecoste autonómico», una cifra para la que no hemos localizado ninguna estimación oficial y que equivale al 37 % de la financiación de las comunidades de régimen común en 2023 (152.434 M€). Esos ahorros están en presupuestos que gestionan las comunidades con autonomía financiera (art. 156.1 CE), que además soportarían la mitad del coste a través de la cuota autonómica. Además, la tabla no incluye unos 20.000 M€ anuales de gasto que el propio programa cuantifica en otras medidas (pensión mínima, transición a cuentas individuales, mili voluntaria, cuña fiscal, sanidad o profesorado, entre otras; cálculo propio), frente a 6.800 M€ de margen.",
+      "despues": "El coste declarado es verosímil en orden de magnitud: el IRPF recaudó 142.466 M€ en 2025, y en 2023 la cuota de los declarantes con rendimientos de hasta 30.000 € fue de unos 23.900 M€ y la de los de 30.000 a 60.000 € de 44.170 M€ (cálculo propio con la estadística de la AEAT). El programa identifica y cuantifica la financiación en su tabla «Cómo se paga» (p. 16): 88.500 M€ de ahorros e ingresos para 81.700 M€ de rebajas y gasto. Su partida principal, 57.000 M€ de «sobrecoste autonómico», no tiene una estimación oficial que la respalde ni hemos localizado ninguna que la contradiga; equivale al 37 % de la financiación de las comunidades de régimen común en 2023 (152.434 M€) y está en presupuestos que gestionan las comunidades con autonomía financiera (art. 156.1 CE), que además soportarían en torno a la mitad del coste a través de la cuota autonómica. La tabla tampoco incluye unos 20.000 M€ anuales de gasto que el propio programa cuantifica en otras medidas (pensión mínima, transición a cuentas individuales, mili voluntaria, cuña fiscal, sanidad o profesorado, entre otras; cálculo propio), frente a 6.800 M€ de margen.",
+      "motivo": "se reescribe para reflejar la aplicación de la rúbrica con igual estándar (véase el cambio de valoración); los datos se mantienen"
+    },
+    {
+      "propuesta": "salf-04",
+      "criterio": "internacional",
+      "antes": "pero de cuantía inferior en relación con los salarios.",
+      "despues": "pero de cuantía menor (12.570 £ frente a 35.000 €).",
+      "motivo": "la comparación con los salarios no tenía fuente; se dan las dos cifras"
+    },
+    {
+      "propuesta": "salf-04",
+      "criterio": "largo_plazo",
+      "antes": "Aumentaría la renta disponible de la mayoría de los asalariados.",
+      "despues": "Aumentaría la renta disponible de la mayoría de los declarantes del IRPF (16,65 de 23,99 millones de liquidaciones tenían cuota en 2023).",
+      "motivo": "«asalariados» no tenía fuente; se usa la estadística de la AEAT"
+    },
+    {
+      "propuesta": "salf-04",
+      "criterio": "largo_plazo",
+      "antes": "fuente: (ninguna)",
+      "despues": "fuente añadida: https://sede.agenciatributaria.gob.es/AEAT/Contenidos_Comunes/La_Agencia_Tributaria/Estadisticas/Publicaciones/sites/irpf/2023/jrubikf7a8112a5b41c3fff03083be4a7a651473da97bbe.html",
+      "motivo": "fuente del dato añadido"
+    },
+    {
+      "propuesta": "salf-05",
+      "criterio": "legal",
+      "antes": "el Tribunal Constitucional exige que la ley fije un máximo (STC 115/1987)",
+      "despues": "el Tribunal Constitucional basó la constitucionalidad del internamiento en su carácter excepcional y en la existencia de un plazo máximo legal (STC 115/1987)",
+      "motivo": "la STC 115/1987 (FJ 1) apoya su fallo en la existencia de una duración máxima; no formula una exigencia general"
+    },
+    {
+      "propuesta": "salf-05",
+      "criterio": "legal",
+      "antes": "aplicable desde octubre de 2027",
+      "despues": "aplicable en su mayor parte desde el 17-10-2027",
+      "motivo": "art. 50 del Reglamento 2026/2280: algunas disposiciones se aplican antes"
+    },
+    {
+      "propuesta": "salf-05",
+      "criterio": "financiacion",
+      "antes": "No hay base pública para estimar el coste: no hemos localizado el coste por plaza y día de un centro de internamiento ni el coste medio de un retorno, y el programa no explica de dónde salen los 300 M€ ni los 1.000 M€ de ahorro que la tabla de financiación atribuye a «expulsiones efectivas y fin de regularizaciones». Como referencia, en 2026 hay siete centros con unas 1.265 plazas, y internar 30 días de media a los 53.700 extranjeros con orden de salida requeriría unas 4.400 plazas ocupadas de forma permanente (cálculo propio).",
+      "despues": "No hay base pública suficiente para estimar el coste: no hemos localizado un coste oficial reciente por plaza y día de un centro de internamiento (la última cifra localizada, de 2011, era de unos 17 € por plaza y día sin gastos de personal, según una respuesta parlamentaria citada por la prensa) ni el coste medio de un retorno, y el programa no explica de dónde salen los 300 M€ ni los 1.000 M€ de ahorro que la tabla de financiación atribuye a «expulsiones efectivas y fin de regularizaciones». Como referencia, a principios de 2026 los siete centros tenían unas 850 plazas y el nuevo centro de Algeciras tiene 507; internar 30 días de media a los 53.700 extranjeros con orden de salida requeriría unas 4.400 plazas ocupadas de forma permanente (cálculo propio).",
+      "motivo": "AIDA no da «unas 1.265 plazas»: lista 848 plazas en febrero de 2026 (100+90+120+70+158+210+100) y 507 en el nuevo centro de Algeciras; se añade la única cifra localizada de coste diario, con su procedencia. Sigue «no_verificable»"
+    },
+    {
+      "propuesta": "salf-05",
+      "criterio": "financiacion",
+      "antes": "fuente: (ninguna)",
+      "despues": "fuente añadida: http://www.diariodeavisos.com/2012/07/interior-baraja-cerrar-el-cie-de-hoya-fria-para-ahorrar-288-000-euros/",
+      "motivo": "fuente de la cifra de coste diario añadida"
+    },
+    {
+      "propuesta": "salf-05",
+      "criterio": "evidencia",
+      "antes": "y que menos del 20 % de los retornos a países no europeos se ejecutan, y Stutz y Trauner (2022) hallan que los acuerdos de readmisión producen como mucho subidas temporales de los retornos.",
+      "despues": "y que menos del 20 % de las órdenes de retorno a nacionales de países no europeos se ejecutan, y Stutz y Trauner (2022) hallan que los acuerdos de readmisión a menudo solo producen subidas temporales de los retornos, si es que las producen.",
+      "motivo": "redacción fiel a las fuentes (TCE: «effective return rate drops below 20 % for returns to countries outside the European continent»; Stutz y Trauner: «often lead only to temporary increases… if at all»)"
+    },
+    {
+      "propuesta": "salf-05",
+      "criterio": "internacional",
+      "antes": "frente al 10,6 % de España y el 29 % de la UE (Eurostat)",
+      "despues": "frente al 10,6 % de España y el 32 % de la UE (Eurostat)",
+      "motivo": "el 29 % de la UE contaba solo retornos a terceros países, mientras que las cifras por país cuentan todos los destinos; con la misma medida la UE está en el 32 % (Eurostat; Gapminder da también 32 %)"
+    },
+    {
+      "propuesta": "salf-05",
+      "criterio": "internacional",
+      "antes": "fuente: (ninguna)",
+      "despues": "fuente añadida: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/migr_eirtn?citizen=TOTAL&age=TOTAL&sex=T&time=2025",
+      "motivo": "las fuentes citadas estaban filtradas a España y no sostenían las cifras de otros países"
+    },
+    {
+      "propuesta": "salf-05",
+      "criterio": "internacional",
+      "antes": "fuente: (ninguna)",
+      "despues": "fuente añadida: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/migr_eiord?citizen=TOTAL&age=TOTAL&sex=T&time=2025",
+      "motivo": "las fuentes citadas estaban filtradas a España y no sostenían las cifras de otros países"
+    },
+    {
+      "propuesta": "salf-06",
+      "criterio": "evidencia",
+      "antes": "un 10 % más de denegaciones de visado",
+      "despues": "un 10 % más de denegaciones de visados de corta estancia",
+      "motivo": "precisión de la fuente (Czaika y Hobolth, 2016)"
+    },
+    {
+      "propuesta": "salf-06",
+      "criterio": "evidencia",
+      "antes": "El Tribunal de Cuentas Europeo (2021) concluye que la palanca de los visados es la que más ha avanzado para lograr cooperación en la readmisión, y la comercial la que menos.",
+      "despues": "El Tribunal de Cuentas Europeo (2021) constata avances importantes en los instrumentos de presión mediante visados para lograr cooperación en la readmisión, y ninguno todavía en el comercial.",
+      "motivo": "el TCE no compara qué palanca funcionó mejor; constata «important progress» en visados y «no progress yet» en comercio"
+    },
+    {
+      "propuesta": "salf-06",
+      "criterio": "internacional",
+      "antes": "a Gambia (2021), Etiopía (2024, levantadas en 2026), Somalia y Guinea (2026)",
+      "despues": "a Gambia, Etiopía (desde 2024; levantadas en mayo de 2026), Somalia y Guinea (2026)",
+      "motivo": "la fuente citada no fecha la medida sobre Gambia; la de Etiopía es la Decisión de Ejecución (UE) 2024/1341 y su levantamiento fue en mayo de 2026"
+    },
+    {
+      "propuesta": "salf-06",
+      "criterio": "internacional",
+      "antes": "fuente: (ninguna)",
+      "despues": "fuente añadida: https://eur-lex.europa.eu/eli/dec_impl/2024/1341/oj",
+      "motivo": "fuente primaria de la fecha"
+    },
+    {
+      "propuesta": "salf-06",
+      "criterio": "antecedentes",
+      "antes": "España fija cada año por orden ministerial una previsión de puestos para la contratación colectiva en origen (arts. 113-115 del Reglamento de extranjería de 2024), que aprueba el Gobierno y no el Congreso. No hay precedente en España de una moratoria de inmigración por nacionalidad.",
+      "despues": "El Reglamento de extranjería de 2024 permite al Ministerio aprobar cada año una previsión de ocupaciones y, en su caso, de puestos para la contratación colectiva en origen (arts. 113-115), sin pasar por el Congreso. No hemos localizado precedentes en España de una moratoria de inmigración por nacionalidad.",
+      "motivo": "art. 115 RD 1155/2024: el Ministerio «podrá aprobar anualmente» (facultad, no obligación); la ausencia de precedente se formula como alcance de la búsqueda"
+    },
+    {
+      "propuesta": "salf-06",
+      "criterio": "largo_plazo",
+      "antes": "Desde 2027 la UE contará con instrumentos de condicionalidad por readmisión en las preferencias comerciales (Reglamento 2026/1395) y en el Reglamento de retorno (art. 35), que se aplican desde la UE y no por un Estado solo.",
+      "despues": "El nuevo Sistema de Preferencias Generalizadas (Reglamento 2026/1395) permite desde 2027 retirar preferencias por falta de cooperación en la readmisión, y el Reglamento de retorno obliga desde octubre de 2026 a la UE y a los Estados a usar esa condicionalidad (art. 35); ambos se aplican desde la UE y no por un Estado solo.",
+      "motivo": "el art. 35 del Reglamento 2026/2280 se aplica desde el 16-10-2026 (art. 50.2) y es un mandato general, no un instrumento propio"
+    },
+    {
+      "propuesta": "salf-07",
+      "criterio": "beneficiarios (campo de la propuesta)",
+      "antes": "10,58 millones en 2023, el 49,9 % de los ocupados (EPA)",
+      "despues": "10,58 millones en el cuarto trimestre de 2023, el 49,8 % de los ocupados (EPA)",
+      "motivo": "INE tabla 4076, T4 2023: 10.583,5 de 21.246,9 miles = 49,8 %"
+    },
+    {
+      "propuesta": "salf-07",
+      "criterio": "beneficiarios (campo de la propuesta)",
+      "antes": "(menos de unos 4.950 M€ al año, cálculo propio con las bases de cotización de 2025)",
+      "despues": "(del orden de 5.000 M€ al año, cálculo propio con las aportaciones del MEI de 2025)",
+      "motivo": "la cifra del MEI es parcial del año (véase financiación): la estimación es un orden de magnitud, no un máximo"
+    },
+    {
+      "propuesta": "salf-07",
+      "criterio": "financiacion",
+      "antes": "el MEI aportó 3.970 M€ al Fondo de Reserva en 2025 con un tipo del 0,8 %, lo que sitúa el 2 % de las bases de cotización de todos los trabajadores en unos 9.900 M€ y el de los menores de 45 por debajo de unos 4.950 M€ (cálculo propio)",
+      "despues": "el MEI aportó 3.970 M€ al Fondo de Reserva en 2025 hasta principios de diciembre con un tipo del 0,8 %, lo que sitúa el 2 % de las bases de cotización de todos los trabajadores en al menos unos 9.900 M€ y el de los menores de 45 en algo menos de la mitad (cálculo propio)",
+      "motivo": "la nota de La Moncloa (10-12-2025) da lo aportado «en lo que llevamos de año»: es una cifra parcial y las derivadas son mínimos"
+    },
+    {
+      "propuesta": "salf-07",
+      "criterio": "antecedentes",
+      "antes": "que había recibido 9.765 M€ hasta 2025",
+      "despues": "que había recibido 9.765 M€ de aportaciones del MEI hasta diciembre de 2025",
+      "motivo": "precisión de la fuente (La Moncloa, 10-12-2025)"
+    },
+    {
+      "propuesta": "salf-07",
+      "criterio": "beneficiarios",
+      "antes": "10,58 millones de ocupados menores de 45 años en 2023",
+      "despues": "10,58 millones de ocupados menores de 45 años en el cuarto trimestre de 2023",
+      "motivo": "precisión de la fuente (INE, tabla 4076)"
+    },
+    {
+      "propuesta": "salf-07",
+      "criterio": "internacional",
+      "antes": "con una rentabilidad media anual del 7,4 % desde su creación frente al 3,3 % del componente de reparto, según su Agencia de Pensiones, y con fuertes pérdidas en años como 2022.",
+      "despues": "con una rentabilidad media anual del 7,4 % desde su creación hasta 2022 frente al 3,3 % del componente de reparto, según su Agencia de Pensiones, y con pérdidas en años como 2022.",
+      "motivo": "la cifra es a 2022 (artículo de 18-4-2023); se retira el adjetivo «fuertes»"
+    },
+    {
+      "propuesta": "salf-08",
+      "criterio": "beneficiarios (campo de la propuesta)",
+      "antes": "cuya remuneración sumó 42.930 M€ en 2023 (Estadística de Gasto Sanitario Público)",
+      "despues": "cuya remuneración sumó 45.564 M€ en 2024 (Estadística de Gasto Sanitario Público)",
+      "motivo": "dato actualizado con la edición de 2024 de la EGSP"
+    },
+    {
+      "propuesta": "salf-08",
+      "criterio": "concrecion",
+      "antes": "El programa (p. 22) dice qué haría (central única obligatoria con precios netos públicos), el ahorro que espera (15 %) y su destino (sueldos y plazas, con una subida de 5.500 M€), pero no fija plazo ni qué productos se comprarían de forma centralizada. La base de 41.000 M€ de «compras» (40 % del gasto) no corresponde a una partida de la estadística oficial: en 2023 el gasto sanitario público fue de 97.661 M€, con 25.396 M€ de consumo intermedio (26,0 %), 9.800 M€ de conciertos con centros privados (10,0 %) y 13.984 M€ de farmacia de receta; el 40 % solo se alcanza sumando partidas que no son compras de bienes.",
+      "despues": "El programa (p. 22) dice qué haría (central única obligatoria con precios netos públicos), el ahorro que espera (15 %) y su destino (sueldos y plazas, con una subida de 5.500 M€), pero no fija plazo ni qué productos se comprarían de forma centralizada. La cifra de 41.000 M€ de «compras» (40 % del gasto) no es una partida única de la estadística oficial, pero coincide con la suma del consumo intermedio (26.624 M€) y la farmacia de receta (14.684 M€) de 2024: 41.308 M€, el 40,6 % de un gasto sanitario público de 101.739 M€. El consumo intermedio incluye servicios además de bienes, y la farmacia de receta es el gasto en medicamentos dispensados en oficinas de farmacia.",
+      "motivo": "error: el texto decía que el 40 % «solo se alcanza sumando partidas que no son compras de bienes», pero la EGSP 2024 muestra que consumo intermedio más farmacia de receta (medicamentos) suman 41.308 M€ (40,6 %); además, la edición de 2024 sustituye a la de 2023"
+    },
+    {
+      "propuesta": "salf-08",
+      "criterio": "concrecion",
+      "antes": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/docs/EGSP2008/egspPrincipalesResultados.pdf",
+      "despues": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/tablasEstEGSP/Principales_resultados.pdf",
+      "motivo": "edición más reciente de la estadística (datos de 2024)"
+    },
+    {
+      "propuesta": "salf-08",
+      "criterio": "legal",
+      "antes": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/docs/EGSP2008/egspPrincipalesResultados.pdf",
+      "despues": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/tablasEstEGSP/Principales_resultados.pdf",
+      "motivo": "edición más reciente de la estadística (datos de 2024)"
+    },
+    {
+      "propuesta": "salf-08",
+      "criterio": "financiacion",
+      "antes": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/docs/EGSP2008/egspPrincipalesResultados.pdf",
+      "despues": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/tablasEstEGSP/Principales_resultados.pdf",
+      "motivo": "edición más reciente de la estadística (datos de 2024)"
+    },
+    {
+      "propuesta": "salf-08",
+      "criterio": "beneficiarios",
+      "antes": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/docs/EGSP2008/egspPrincipalesResultados.pdf",
+      "despues": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/tablasEstEGSP/Principales_resultados.pdf",
+      "motivo": "edición más reciente de la estadística (datos de 2024)"
+    },
+    {
+      "propuesta": "salf-08",
+      "criterio": "largo_plazo",
+      "antes": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/docs/EGSP2008/egspPrincipalesResultados.pdf",
+      "despues": "fuente: https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/tablasEstEGSP/Principales_resultados.pdf",
+      "motivo": "edición más reciente de la estadística (datos de 2024)"
+    },
+    {
+      "propuesta": "salf-08",
+      "criterio": "legal",
+      "antes": "y el 93,2 % del gasto sanitario público lo ejecutan las comunidades",
+      "despues": "y el 93,6 % del gasto sanitario público lo ejecutaban las comunidades en 2024",
+      "motivo": "dato actualizado con la EGSP 2024 (95.243 de 101.739 M€)"
+    },
+    {
+      "propuesta": "salf-08",
+      "criterio": "financiacion",
+      "antes": "valoracion: desfavorable",
+      "despues": "valoracion: mixta",
+      "motivo": "la valoración «desfavorable» se basaba en que la base de 41.000 M€ no estaba en la estadística oficial, y sí lo está (consumo intermedio más farmacia de receta de 2024). El 15 % de ahorro no tiene estimación oficial, pero ninguna fuente oficial lo contradice: con igual estándar que en otros partidos, corresponde «mixta»"
+    },
+    {
+      "propuesta": "salf-08",
+      "criterio": "financiacion",
+      "antes": "La subida salarial de 5.500 M€ al año se financia con un ahorro del 15 % sobre 41.000 M€, una base que la estadística oficial no recoge como compras: aplicado al consumo intermedio de 2023 (25.396 M€), el mismo 15 % daría unos 3.800 M€ (cálculo propio), por debajo del gasto comprometido. No hemos localizado ninguna estimación oficial de un ahorro del 15 % sobre el conjunto de las compras; el primer acuerdo marco del INGESA para biosimilares, con diez comunidades adheridas, ahorró más de 120 M€ según la prensa sectorial.",
+      "despues": "El coste está cuantificado (5.500 M€ al año) y el programa lo financia con un ahorro del 15 % sobre 41.000 M€ de compras, una base que coincide con la suma del consumo intermedio y la farmacia de receta de 2024 (41.308 M€); el 15 % de esa suma son unos 6.200 M€ (cálculo propio). No hemos localizado ninguna estimación oficial de un ahorro del 15 % sobre el conjunto de esas partidas: el primer acuerdo marco del INGESA para biosimilares, con diez comunidades adheridas, ahorró más de 120 M€, y el segundo, de 410,9 M€, prevé un ahorro de 178 M€, según la prensa sectorial. Si el ahorro se calcula solo sobre el consumo intermedio (26.624 M€), el 15 % son unos 4.000 M€, por debajo del gasto comprometido.",
+      "motivo": "corregida la base (véase concreción) y añadida la previsión de ahorro del segundo acuerdo marco que recoge la fuente citada"
+    },
+    {
+      "propuesta": "salf-08",
+      "criterio": "evidencia",
+      "antes": "y el 83 % del sobrecoste se debe a ineficiencia y no a corrupción",
+      "despues": "y el 83 % del despilfarro estimado es pasivo (ineficiencia) y no activo (el que reporta algún beneficio a quien decide)",
+      "motivo": "traducción fiel: el estudio distingue «passive waste» de «active waste», que es más amplio que la corrupción"
+    },
+    {
+      "propuesta": "salf-08",
+      "criterio": "antecedentes",
+      "antes": "y en junio de 2025 se autorizó un segundo acuerdo para todo el sistema por 410,9 M€, según la prensa sectorial.",
+      "despues": "y en junio de 2025 se autorizó un segundo acuerdo, por 410,9 M€, para varias comunidades, Ceuta, Melilla y organismos estatales, con un ahorro previsto de 178 M€, según la prensa sectorial.",
+      "motivo": "el cuerpo de la noticia limita el acuerdo a «varias comunidades autónomas, centros del INGESA en Ceuta y Melilla y organismos de la AGE»"
+    },
+    {
+      "propuesta": "salf-08",
+      "criterio": "beneficiarios",
+      "antes": "con una remuneración de 42.930 M€ en 2023",
+      "despues": "con una remuneración de 45.564 M€ en 2024",
+      "motivo": "dato actualizado con la EGSP 2024"
+    },
+    {
+      "propuesta": "salf-09",
+      "criterio": "legal",
+      "antes": "Solo podría aplicarse a hechos no prescritos: el TEDH admite ampliar plazos aún vigentes (Coëme c. Bélgica, 2000), pero no reabrir delitos ya prescritos.",
+      "despues": "Solo podría aplicarse con seguridad a hechos posteriores a su entrada en vigor: aunque el TEDH admite ampliar plazos aún no vencidos (Coëme c. Bélgica, 2000) y no reabrir delitos ya prescritos, el Tribunal Constitucional atribuye a la prescripción fundamento material (STC 63/2005), lo que la somete a la irretroactividad de las normas penales desfavorables (art. 9.3 CE).",
+      "motivo": "el estándar del TEDH es un mínimo; con la doctrina de la STC 63/2005 y el art. 9.3 CE la ampliación a hechos anteriores no prescritos es dudosa en España"
+    },
+    {
+      "propuesta": "salf-09",
+      "criterio": "antecedentes",
+      "antes": "El Código Penal declara imprescriptibles los delitos de lesa humanidad, genocidio, contra personas y bienes protegidos en conflicto armado y, desde la LO 5/2010, los de terrorismo con resultado de muerte. Los plazos actuales se fijaron en la LO 1/2015. No hay precedente de imprescriptibilidad para delitos de corrupción.",
+      "despues": "El Código Penal declara imprescriptibles los delitos de lesa humanidad, genocidio, contra personas y bienes protegidos en conflicto armado y, desde la LO 5/2010, los de terrorismo con resultado de muerte. La LO 5/2010 elevó también el plazo mínimo de prescripción de tres a cinco años, entre otros motivos por la impunidad de «algunos delitos contra la Administración Pública»; la LO 1/2015 adaptó el artículo a la supresión de las faltas. No hay precedente de imprescriptibilidad para delitos de corrupción.",
+      "motivo": "la escala vigente de plazos procede de la LO 5/2010, no de la LO 1/2015, que solo adaptó el art. 131 (BOE-A-2010-9953)"
+    },
+    {
+      "propuesta": "salf-09",
+      "criterio": "antecedentes",
+      "antes": "fuente: (ninguna)",
+      "despues": "fuente añadida: https://www.boe.es/diario_boe/txt.php?id=BOE-A-2010-9953",
+      "motivo": "fuente del dato corregido"
+    },
+    {
+      "propuesta": "salf-09",
+      "criterio": "largo_plazo",
+      "antes": "Eliminaría la posibilidad de que un delito de corrupción quede impune por el paso del tiempo.",
+      "despues": "Eliminaría, para los delitos incluidos y los hechos posteriores a la reforma, la posibilidad de que queden impunes por el paso del tiempo.",
+      "motivo": "alcance acotado a lo que la medida cubre"
+    },
+    {
+      "propuesta": "salf-10",
+      "criterio": "beneficiarios (campo de la propuesta)",
+      "antes": "Los cerca de 3,4 millones de afiliados",
+      "despues": "Los cerca de 3,4 millones de afiliados (febrero de 2025)",
+      "motivo": "fecha del dato"
+    },
+    {
+      "propuesta": "salf-10",
+      "criterio": "legal",
+      "antes": "y se calcula sobre las bases cotizadas (art. 209)",
+      "despues": "y se calcula sobre las bases cotizadas (art. 209), normas aplicables a los autónomos por el art. 318",
+      "motivo": "los arts. 205 y 209 son del Régimen General y se aplican al RETA por remisión del art. 318 LGSS"
+    },
+    {
+      "propuesta": "salf-10",
+      "criterio": "financiacion",
+      "antes": "valoracion: desfavorable",
+      "despues": "valoracion: mixta",
+      "motivo": "igual estándar (rúbrica de financiación y auditoría de coherencia): «desfavorable» exige una financiación contradicha por fuentes oficiales o un coste incompatible con las reglas fiscales sin explicar cómo se cubre. El programa explica y cuantifica la financiación; su partida principal (57.000 M€ de «sobrecoste autonómico») carece de estimación oficial, pero no hemos localizado ninguna fuente oficial que la contradiga. Carecer de respaldo impide «favorable», no justifica «desfavorable»: corresponde «mixta», como en las propuestas de otros partidos con financiación anunciada sin respaldo verificable (p. ej., pp-10). No se penaliza por aportar la tabla ni se omite su debilidad, que se explica en el texto"
+    },
+    {
+      "propuesta": "salf-10",
+      "criterio": "financiacion",
+      "antes": "El coste declarado es coherente con las cuentas oficiales: los regímenes especiales aportaron 12.609 M€ en 2025, cuando la Seguridad Social cerró con un déficit de 7.387 M€ y recibió 47.815 M€ de transferencias del Estado. La tabla «Cómo se paga» (p. 16) cubre 81.700 M€ al año con 88.500 M€ de ahorros e ingresos, de los que 57.000 M€ son «sobrecoste autonómico», una cifra para la que no hemos localizado ninguna estimación oficial y que equivale al 37 % de la financiación de las comunidades de régimen común en 2023 (152.434 M€); esos ahorros están en presupuestos que gestionan las comunidades con autonomía financiera (art. 156.1 CE). Además, la tabla no incluye unos 20.000 M€ anuales de gasto que el propio programa cuantifica en otras medidas (pensión mínima, transición a cuentas individuales, mili voluntaria, cuña fiscal, sanidad o profesorado, entre otras; cálculo propio), frente a 6.800 M€ de margen. Si se mantienen las pensiones de los autónomos sin cotizaciones, su coste futuro pasaría también al Estado.",
+      "despues": "El coste declarado es coherente con las cuentas oficiales: los regímenes especiales (Autónomos, Mar y Minería del Carbón) aportaron 12.609 M€ en cotizaciones en 2025, cuando la Seguridad Social cerró con un déficit de 7.387 M€ y recibió 47.815 M€ de transferencias del Estado y sus organismos autónomos. El programa identifica y cuantifica la financiación en su tabla «Cómo se paga» (p. 16): 88.500 M€ de ahorros e ingresos para 81.700 M€ de rebajas y gasto. Su partida principal, 57.000 M€ de «sobrecoste autonómico», no tiene una estimación oficial que la respalde ni hemos localizado ninguna que la contradiga; equivale al 37 % de la financiación de las comunidades de régimen común en 2023 (152.434 M€) y está en presupuestos que gestionan las comunidades con autonomía financiera (art. 156.1 CE). La tabla tampoco incluye unos 20.000 M€ anuales de gasto que el propio programa cuantifica en otras medidas (cálculo propio), frente a 6.800 M€ de margen. Si se mantienen las pensiones de los autónomos sin cotizaciones, su coste futuro pasaría también al Estado.",
+      "motivo": "se reescribe para reflejar la aplicación de la rúbrica con igual estándar (véase el cambio de valoración); la fuente habla de transferencias «del Estado y Organismos Autónomos»"
+    },
+    {
+      "propuesta": "salf-10",
+      "criterio": "internacional",
+      "antes": "No se conoce una aplicación comparable de cotización cero con derechos contributivos. En el Reino Unido la cotización fija de clase 2 no se paga con beneficios desde 7.105 £ y se considera pagada para no perder derechos, pero los autónomos siguen pagando la de clase 4 (6 % entre 12.570 y 50.270 £ y 2 % por encima).",
+      "despues": "No hemos localizado una aplicación comparable de cotización cero con derechos contributivos. En el Reino Unido la cotización fija de clase 2 ya no es obligatoria: con beneficios de 7.105 £ o más se considera pagada sin abonarla y, por debajo, es voluntaria; pero los autónomos siguen pagando la de clase 4 (6 % entre 12.570 y 50.270 £ y 2 % por encima).",
+      "motivo": "«No se conoce» era una afirmación absoluta; se describe la clase 2 como la presenta GOV.UK"
+    },
+    {
+      "propuesta": "salf-10",
+      "criterio": "antecedentes",
+      "antes": "España aplica desde 2013 una cuota reducida para quienes inician actividad (art. 38 ter del Estatuto del trabajo autónomo)",
+      "despues": "España aplica desde 2013 una cuota reducida para quienes inician actividad (la «tarifa plana», hoy en el art. 38 ter del Estatuto del trabajo autónomo, introducido por el Real Decreto-ley 13/2022)",
+      "motivo": "el art. 38 ter lo introdujo el RDL 13/2022 (en vigor en 2023); la tarifa plana de 2013 estaba en otro artículo"
+    },
+    {
+      "propuesta": "salf-10",
+      "criterio": "beneficiarios",
+      "antes": "cerca de 3,4 millones de afiliados al RETA",
+      "despues": "cerca de 3,4 millones de afiliados al RETA (febrero de 2025)",
+      "motivo": "fecha del dato"
+    },
+    {
+      "propuesta": "salf-11",
+      "criterio": "cita",
+      "antes": "no se cambia [...] misma mayoría",
+      "despues": "no se cambia sin la [...] misma mayoría",
+      "motivo": "el corte suprimía «sin la» y alteraba el sentido de la frase"
+    },
+    {
+      "propuesta": "salf-11",
+      "criterio": "evidencia",
+      "antes": "en Alemania, los Länder con exámenes centrales de salida obtienen un rendimiento equivalente a un tercio de curso más (Jürges, Schneider y Büchel, 2005)",
+      "despues": "en Alemania, los exámenes centrales de salida elevan el rendimiento en el equivalente a un tercio de curso (Jürges, Schneider y Büchel, 2005), una parte de la diferencia entre Länder",
+      "motivo": "el estudio atribuye a los exámenes solo una parte de la diferencia entre Länder"
+    },
+    {
+      "propuesta": "salf-11",
+      "criterio": "antecedentes",
+      "antes": "En PISA 2022 España obtuvo 473 puntos en matemáticas (8 menos que en 2018), 474 en lectura y 485 en ciencias, en torno a la media de la OCDE.",
+      "despues": "En PISA 2025 España obtuvo 457 puntos en matemáticas, 451 en lectura y 477 en ciencias, significativamente por debajo de la media de la OCDE (463, 461 y 482); en PISA 2022 había obtenido 473, 474 y 485.",
+      "motivo": "PISA 2025 se publicó el 8-9-2026 y sustituye a la edición de 2022 como dato más reciente (nota del Ministerio de Educación)"
+    },
+    {
+      "propuesta": "salf-11",
+      "criterio": "antecedentes",
+      "antes": "fuente: (ninguna)",
+      "despues": "fuente añadida: https://www.educacionfpydeportes.gob.es/prensa/actualidad/2026/09/20260908-pisa2025.html",
+      "motivo": "fuente del dato actualizado"
+    },
+    {
+      "propuesta": "salf-12",
+      "criterio": "concrecion",
+      "antes": "El programa (p. 35) define la secuencia (un referéndum de renegociación y, si se rechaza, otro de salida), pero no concreta qué se pediría en la renegociación, la pregunta ni los plazos. La cifra que da como aportación de España, 18.098 M€ en 2026, no la hemos podido verificar y es bruta: en 2025, según la Comisión Europea, España aportó 15.182 M€ en recursos propios y recibió 18.983 M€ entre gasto del presupuesto de la UE y NextGenerationEU.",
+      "despues": "El programa (p. 35) define la secuencia (un referéndum de renegociación y, si se rechaza, otro de salida), pero no concreta qué se pediría en la renegociación, la pregunta ni los plazos. La cifra que da como aportación de España en 2026, 18.098 M€, coincide con los recursos propios previstos para España en el presupuesto inicial de la UE para 2026 (Comisión Europea), que incluyen unos 2.020 M€ de aranceles que España recauda por cuenta de la UE; es una cifra bruta: en 2025, según la Comisión, España aportó 15.182 M€ en recursos propios y recibió 18.983 M€ entre gasto del presupuesto de la UE y NextGenerationEU.",
+      "motivo": "la cifra sí es verificable: el proyecto de presupuesto rectificativo n.º 2/2026 de la Comisión (COM(2026) 460) da 18.097,8 M€ para España en el presupuesto inicial de 2026"
+    },
+    {
+      "propuesta": "salf-12",
+      "criterio": "concrecion",
+      "antes": "fuente: (ninguna)",
+      "despues": "fuente añadida: https://data.consilium.europa.eu/doc/document/ST-10212-2026-INIT/en/pdf",
+      "motivo": "fuente primaria de la cifra"
+    },
+    {
+      "propuesta": "salf-12",
+      "criterio": "concrecion",
+      "antes": "fuente: (ninguna)",
+      "despues": "fuente añadida: https://data.consilium.europa.eu/doc/document/ST-9919-2026-ADD-1/en/pdf",
+      "motivo": "desglose de la cifra"
+    },
+    {
+      "propuesta": "salf-12",
+      "criterio": "legal",
+      "antes": "y no puede celebrarse en los 90 días anteriores o posteriores a otras elecciones generales o a otro referéndum.",
+      "despues": "y no puede celebrarse en los 90 días anteriores o posteriores a elecciones parlamentarias o locales generales ni a otro referéndum (art. 4).",
+      "motivo": "la regla de los 90 días está en el art. 4 de la LO 2/1980, no en el art. 6, y abarca elecciones parlamentarias y locales generales"
+    },
+    {
+      "propuesta": "salf-12",
+      "criterio": "evidencia",
+      "antes": "y la inversión entre un 12 % y un 18 %",
+      "despues": "y la inversión entre un 12 % y un 13 %",
+      "motivo": "cifra errónea: el resumen de NBER w34459 dice «investment was reduced by 12% to 13%»"
+    },
+    {
+      "propuesta": "salf-12",
+      "criterio": "evidencia",
+      "antes": "fuente: https://econpapers.repec.org/RePEc:oup:econjl:v:129:y:2019:i:623:p:2722-2744",
+      "despues": "fuente: https://ideas.repec.org/a/oup/econjl/v129y2019i623p2722-2744..html",
+      "motivo": "enlace roto (404); se sustituye por la ficha de RePEc, que confirma la pérdida del 1,7-2,5 %"
+    },
+    {
+      "propuesta": "salf-12",
+      "criterio": "internacional",
+      "antes": "fuente: https://econpapers.repec.org/RePEc:oup:econjl:v:129:y:2019:i:623:p:2722-2744",
+      "despues": "fuente: https://ideas.repec.org/a/oup/econjl/v129y2019i623p2722-2744..html",
+      "motivo": "enlace roto (404); se sustituye por la ficha de RePEc, que confirma la pérdida del 1,7-2,5 %"
+    },
+    {
+      "propuesta": "salf-12",
+      "criterio": "largo_plazo",
+      "antes": "Las estimaciones del caso británico indican que los costes de la salida aumentan con el tiempo y superaron las previsiones de 2016 (Bloom y otros, 2025). Volver a entrar exigiría la unanimidad de los Estados miembros (art. 49 TUE), y España dejaría de recibir los fondos europeos, que en 2024 sumaron 29.633 M€ entre presupuesto ordinario y NextGenerationEU.",
+      "despues": "Las estimaciones del caso británico indican que los costes de la salida aumentan con el tiempo y que las previsiones de 2016 acertaron a corto y medio plazo pero subestimaron el impacto a diez años (Bloom y otros, 2025). Volver a entrar exigiría la unanimidad de los Estados miembros (art. 49 TUE). España dejaría de recibir el gasto del presupuesto de la UE (12.610 M€ en 2024, más 17.023 M€ de NextGenerationEU) y de aportar sus recursos propios (13.256 M€ en 2024).",
+      "motivo": "redacción fiel a Bloom y otros («relatively accurate in the short to medium term, but they underestimated the impact over a decade») y presentación de los dos lados del saldo con la UE con los datos de la misma fuente"
+    },
+    {
+      "propuesta": "salf-12",
+      "criterio": "beneficiarios",
+      "antes": "En 2025 España recibió de la UE más de lo que aportó (18.983 M€ frente a 15.182 M€)",
+      "despues": "En 2025 España recibió de la UE 18.983 M€ (11.511 M€ del presupuesto y 7.471 M€ de NextGenerationEU) y aportó 15.182 M€ en recursos propios",
+      "motivo": "se desglosan las cifras para no presentar como recurrente el NextGenerationEU"
+    },
+    {
+      "propuesta": "salf-12",
+      "criterio": "antecedentes",
+      "antes": "España ha usado el referéndum consultivo para cuestiones europeas: el 20-2-2005 votó el Tratado por el que se establecía una Constitución para Europa, con 11,06 millones de votos a favor, 2,45 millones en contra y una participación del 41,8 %. No hay precedente de una consulta sobre la permanencia en la UE.",
+      "despues": "España ha usado una vez el referéndum consultivo para una cuestión europea: el 20-2-2005 votó el Tratado por el que se establecía una Constitución para Europa, con 11,06 millones de votos a favor, 2,45 millones en contra y una participación del 41,8 %. No hay precedente de una consulta sobre la permanencia en la UE.",
+      "motivo": "se sustituye Wikipedia por la declaración oficial de resultados (Junta Electoral Central, BOE de 8-4-2005), que confirma las cifras; «para cuestiones europeas» sugería más de una consulta"
+    },
+    {
+      "propuesta": "salf-12",
+      "criterio": "antecedentes",
+      "antes": "fuente: https://es.wikipedia.org/wiki/Refer%C3%A9ndum_sobre_la_Constituci%C3%B3n_Europea_en_Espa%C3%B1a",
+      "despues": "fuente: https://www.boe.es/boe/dias/2005/04/08/pdfs/A12308-12309.pdf",
+      "motivo": "fuente primaria en lugar de Wikipedia"
+    },
+    {
+      "propuesta": "salf-12",
+      "criterio": "internacional",
+      "antes": "fuente: (ninguna)",
+      "despues": "fuente añadida: https://www.consilium.europa.eu/en/press/press-releases/2016/02/19/euco-conclusions/pdf/",
+      "motivo": "el acuerdo de febrero de 2016 y la fecha de salida no tenían fuente citada"
+    },
+    {
+      "propuesta": "salf-12",
+      "criterio": "internacional",
+      "antes": "fuente: (ninguna)",
+      "despues": "fuente añadida: https://www.eeas.europa.eu/eeas/preguntas-y-respuestas-sobre-la-retirada-del-reino-unido-de-la-unión-europea-el-31-de-enero-de_en",
+      "motivo": "el acuerdo de febrero de 2016 y la fecha de salida no tenían fuente citada"
+    }
+  ],
+  "dudas": [
+    "[Resuelta 12-nov, auditoría de coherencia] salf-02: el Real Decreto-ley 29/2026 se cita como vigente; no se ha comprobado en fuente oficial si se convalidó. La prensa sitúa la votación en torno al 12-11-2026. Si no se convalidó, hay que actualizar legal, financiación y antecedentes. Tampoco se ha comprobado en fuente oficial si el RDL 26/2026 fue un tercer decreto no convalidado. → La Diputación Permanente convalidó el RDL 29/2026 el 12-11-2026 (Congreso, expediente 130/000060); la resolución aún no está en el BOE.",
+    "salf-05, cita: omite «la expulsión» («Internamiento hasta [...] Coste»), que es parte esencial de la medida. El guion de partición del PDF (U+2010, «ex‐pulsión») no lo normaliza pipeline/verify_quotes.py, así que no se puede restaurar sin cambiar el verificador. El resumen sí recoge el internamiento hasta la expulsión.",
+    "salf-05, financiación: la única cifra de coste diario por plaza en un CIE (17 € en 2011, sin gastos de personal) procede de prensa que cita una respuesta parlamentaria; no se localizó el documento primario. La valoración sigue en «no_verificable».",
+    "salf-09, beneficiarios: no existe cifra oficial de causas de corrupción terminadas por prescripción. El repositorio del CGPJ no recoge ese campo y la memoria de la Fiscalía solo da advertencias genéricas.",
+    "salf-12: la cifra de 18.098 M€ queda verificada con COM(2026) 460, presupuesto inicial de 2026. El presupuesto rectificativo n.º 2 la elevaría a 18.699,7 M€; no consta si se aprobó.",
+    "salf-12, internacional: las conclusiones del Consejo Europeo de febrero de 2016 (consilium.europa.eu) devuelven 403 a la descarga automática. Su contenido se confirmó por la nota de prensa indexada y por fuentes secundarias.",
+    "salf-01, salf-04 y salf-10: el cálculo propio de «unos 20.000 M€» de gasto no incluido en la tabla se reprodujo en la revisión (unos 20.400 M€), pero el desglose no figura en el texto. Convendría publicarlo en lectura.md.",
+    "Fuentes leídas en resumen y no en texto completo: Chen y Shapiro (2007; OUP devolvió 403, se usó RePEc), OIT (2018/2019, solo la página de presentación) y el estudio de EY para Asprima (a través de prensa). Las cifras de INGESA (120 y 178 M€) proceden de prensa sectorial.",
+    "Rúbrica de financiación: no prevé el caso de un programa que explica y cuantifica la financiación con partidas sin respaldo oficial, pero no contradichas. Aquí se ha tratado como «mixta»; conviene fijarlo en criterios.json y en la auditoría de coherencia para que se aplique igual a todos los partidos."
+  ],
+  "coherencia_2026-11-12": [
+    {
+      "id": "salf-10",
+      "criterio": "internacional",
+      "antes": "valoracion: no_verificable",
+      "despues": "valoracion: mixta",
+      "motivo": "igual estándar en «internacional» (regla de la auditoría de coherencia, aplicada en cc-07, erc-03, pnv-01, pnv-03, pp-10, pp-11 y salf-11): si una aplicación extranjera cubre solo parte del diseño o difiere en el elemento clave, corresponde «mixta», no «no_verificable», que la rúbrica reserva a «no se conoce aplicación comparable». El propio texto describía una aplicación parcial: en el Reino Unido la cotización fija de clase 2 se considera pagada, sin abonarla, para proteger el historial de cotización (GOV.UK), aunque se mantiene la de clase 4. Es el mismo caso que pp-11 (Alemania, diseño distinto en el elemento clave: «mixta»)"
+    },
+    {
+      "id": "salf-10",
+      "criterio": "internacional",
+      "antes": "No hemos localizado una aplicación comparable de cotización cero con derechos contributivos. En el Reino Unido la cotización fija de clase 2 ya no es obligatoria: con beneficios de 7.105 £ o más se considera pagada sin abonarla y, por debajo, es voluntaria; pero los autónomos siguen pagando la de clase 4 (6 % entre 12.570 y 50.270 £ y 2 % por encima).",
+      "despues": "El Reino Unido aplica una exención parcial: con beneficios de 7.105 £ o más al año, la cotización fija de clase 2 no se paga y se considera abonada para proteger el historial de cotización, y por debajo de ese umbral es voluntaria. Pero los autónomos siguen pagando la de clase 4 (6 % entre 12.570 y 50.270 £ y 2 % por encima), de modo que el caso difiere en el elemento clave de la propuesta, la supresión de toda cotización. No hemos localizado una evaluación publicada de sus efectos.",
+      "motivo": "coherencia del texto con el cambio de valoración; datos de GOV.UK sin cambios"
+    },
+    {
+      "id": "salf-02",
+      "criterio": "antecedentes",
+      "antes": "al menos dos de ellos derogados por no convalidarse en 2026; el vigente es el Real Decreto-ley 29/2026.",
+      "despues": "al menos tres de ellos derogados por no convalidarse en 2026, el último el Real Decreto-ley 26/2026 (2-10-2026); el vigente, el Real Decreto-ley 29/2026, fue convalidado por la Diputación Permanente del Congreso el 12-11-2026.",
+      "motivo": "duda del revisor resuelta con fuentes oficiales: la ficha del Congreso (iniciativa 130/000060) da el Real Decreto-ley 29/2026 por «Concluido (Convalidado)» el 12-11-2026, en la Diputación Permanente (orden del día de la sesión n.º 10); el Real Decreto-ley 26/2026, cuyo art. 2 ya suspendía hasta el 31-12-2030 los desahucios de personas vulnerables sin alternativa habitacional, fue derogado por el Congreso el 2-10-2026 (BOE-A-2026-20526). A 12-11-2026 el BOE aún no ha publicado la resolución de convalidación"
+    },
+    {
+      "id": "salf-02",
+      "criterio": "antecedentes",
+      "antes": "fuente: (ninguna)",
+      "despues": "fuente añadida: https://www.boe.es/buscar/doc.php?id=BOE-A-2026-20526",
+      "motivo": "fuentes oficiales de la derogación del RDL 26/2026 y de la convalidación del RDL 29/2026"
+    },
+    {
+      "id": "salf-02",
+      "criterio": "antecedentes",
+      "antes": "fuente: (ninguna)",
+      "despues": "fuente añadida: https://www.congreso.es/es/busqueda-de-iniciativas?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=130%2F000060",
+      "motivo": "fuentes oficiales de la derogación del RDL 26/2026 y de la convalidación del RDL 29/2026"
+    }
+  ],
+  "recuento_final_nota": "Actualizado tras la auditoría de coherencia del 12-nov (salf-10 internacional: no_verificable → mixta)."
 }
