@@ -40,13 +40,15 @@ anunciarla** (o, si ya circula, que deja de ser correcta o legal) hasta que est�
 - [ ] **4. [Externo → Yo] Programas de los partidos estatales.** Cuando salgan: lectura completa,
   evaluación, revisión independiente, auditoría de coherencia y recodificación del paso 1.
   - [x] PNV — publicado el 9-nov (43 págs.): analizado, revisado (39 correcciones) y publicado; 0/30 en el paso 1
-  - [ ] PP — 10-nov según prensa (Europa Press, 7-nov)
-  - [ ] PSOE / PSC, Vox, Frente Amplio, Podemos, SALF — sin fecha conocida
+  - [x] PP — publicado el 10-nov (82 págs.): analizado, revisado (63 correcciones) y publicado el 12-nov; 15/30 en el paso 1
+  - [x] SALF — «contrato electoral» del 10-nov (40 págs.): analizado, revisado (93 correcciones) y publicado el 12-nov; 16/30 en el paso 1
+  - [ ] Auditoría de coherencia entre los seis programas analizados (CC, ERC, BNG, PNV, PP, SALF) — en curso 12-nov
+  - [ ] PSOE / PSC, Vox, Frente Amplio, Podemos — sin fecha conocida
   - [ ] Junts, EH Bildu, Compromís, UPC, Ara Més-FA, UPN-PP, Adelante Andalucía — sin fecha conocida
 - [ ] **5. [Yo] Quitar la etiqueta «versión provisional» del paso 1** (9-nov: protocolo v2 con
   propuestas públicas en primera persona de líderes nacionales y regionales, incl. precampaña; 75 posiciones) solo cuando PP, PSOE, Vox,
   Frente Amplio y Podemos tengan posición documentada en al menos la mitad de las 30 afirmaciones
-  (hoy: PP 8, Vox 7, Podemos 7, FA 3, PSOE 2). Mientras no, el paso 1 no debe ser lo que se promocione.
+  (12-nov: PP 15, Vox 8, Podemos 7, FA 5, PSOE 3; búsqueda de propuestas de líderes en curso). Mientras no, el paso 1 no debe ser lo que se promocione.
 - [x] **6. [Yo] Paso 3: decir a quién elige tu voto y qué hay dentro de cada papeleta.**
   - Composición de las coaliciones explicada en lenguaje claro: p. ej. en Alicante la papeleta
     «Compromís: Front Valencià» (COMPROMIS-EUPV-PODEM-ERPV) incluye a Podemos y a Esquerra Unida, algo
