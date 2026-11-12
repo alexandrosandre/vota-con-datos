@@ -131,7 +131,7 @@ export function Marca() {
 
       <h2 style={{ marginTop: 40 }}>Tipografía</h2>
       <div class="card">
-        <p class="tipo-muestra">Vota sabiendo a qué votas.</p>
+        <p class="tipo-muestra">Vota con datos.</p>
         <p class="muted">Archivo condensada (anchura 62–68 %), pesos 800–900, en mayúsculas: titulares cortos, lema y cifras grandes.</p>
         <p style={{ fontSize: '1.15rem', margin: '22px 0 6px' }}>
           Archivo a anchura normal para el texto y la interfaz: legible en pantalla, con cifras tabulares para los datos.

@@ -22,7 +22,7 @@ export const LEMAS: Record<string, { lema: [string, string, string]; eslogan: st
   // Elegido el 9-nov-2026, apartado por apartado (ver docs/propuestas-lema/).
   actual: {
     lema: ['Elige.', 'Contrasta.', 'Suma.'],
-    eslogan: 'Vota sabiendo a qué votas.',
+    eslogan: 'Vota con datos.',
     lead: 'Tres pasos para pasar de la intuición a un voto informado: con quién coincides de verdad, qué hay detrás de lo que promete, y si tu voto llegará a escaño en tu provincia. Con fuentes oficiales, algoritmos abiertos y sin guardar ningún dato tuyo.',
     pasos: {
       coincide: {

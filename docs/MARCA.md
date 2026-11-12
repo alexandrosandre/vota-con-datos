@@ -13,7 +13,7 @@ Deja que mande el contenido.
 * **vota con datos**, en minúsculas en el texto corrido. En el logotipo se compone en mayúsculas
   condensadas («VOTA CON DATOS») con *con* más suave, para que se lea «vota · datos».
 * Lema: **Elige. Contrasta. Suma.** Un verbo por paso, en imperativo: lo que hace la persona («Suma»: tu voto suma para un escaño).
-* Promesa: *Vota sabiendo a qué votas.*
+* Eslogan: **Vota con datos.** (el propio nombre), en la portada debajo del lema, en blanco.
 
 ## Símbolo
 Urna de frente (cuadrado redondeado + ranura) llena de tres barras crecientes, una por paso y en su
