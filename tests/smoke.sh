@@ -35,6 +35,7 @@ comprueba "?circ=31&partido=pp#/cuenta" "En Navarra, el PP se presenta dentro de
 comprueba "?circ=35&partido=podemos#/cuenta" "En Las Palmas, Podemos se presenta dentro de la coalición NC-BC, PODEMOS, IU, SUMAR"
 comprueba "?circ=31&partido=pnv#/cuenta" "En Navarra, el PNV se presenta dentro de la coalición GBAI."   # coalición sin partido principal en la web
 comprueba "?circ=28&partido=psc#/cuenta" "no presenta candidatura propia"
+comprueba "?circ=46&partido=frente_amplio#/cuenta" "Papeleta que quieres votar" "COMPROMIS-EUPV-PODEM-ERPV (Compromís, Podemos, Frente Amplio y ERC)"   # el desplegable solo muestra papeletas
 comprueba "#/contrasta/pp" "se presenta dentro de la coalición «UPN-PP» en Navarra"
 comprueba "#/contrasta/upn-pp" "no está entre los"
 comprueba "#/creditos" "Créditos de las imágenes"

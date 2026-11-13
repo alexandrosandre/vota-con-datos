@@ -96,6 +96,14 @@ function comoSePresenta(pid: string, cand: CandidaturaCirc, circ: Circunscripcio
   return `${donde} no presenta candidatura propia: te mostramos la ${afin.startsWith('el ') ? `del ${afin.slice(3)}` : `de ${afin}`}, su partido afín.`;
 }
 
+/** «JxCat (Junts)», «COMPROMIS-EUPV-PODEM-ERPV (Compromís, Podemos, Frente Amplio y ERC)», «PP». */
+function etiquetaPapeleta(c: CandidaturaCirc) {
+  const dentro = [c.partido, ...(esCoalicion(c) ? (c.afines ?? []) : [])].filter((x): x is string => !!x);
+  const nombres = dentro.map((x) => partido(x)?.siglas ?? x);
+  const norm = (t: string) => t.normalize('NFD').replace(/[^A-Za-z0-9]/g, '').toUpperCase();
+  return nombres.length === 1 && norm(nombres[0]) === norm(c.siglas) ? c.siglas : `${c.siglas} (${enumera(nombres)})`;
+}
+
 /** Logotipo del partido (licencia libre) o, si no hay, sus iniciales. */
 export function MarcaPartido({ cand, pid, size = 22 }: { cand?: CandidaturaCirc; pid?: string | null; size?: number }) {
   const id = pid ?? cand?.partido ?? null;
@@ -239,7 +247,10 @@ function Preferencias({
   const grupos = gruposOrden(filas, ranking);
   const ausentes = ranking.filter((p) => !filaDe(filas, p)).length;
   // Solo papeletas que aún no están en tu orden: un partido cuya papeleta ya está se vería dentro de esa fila, no al final.
-  const candidatos = partidosAqui(circ).filter((x) => !ranking.includes(x.pid) && !grupos.some((g) => g.fila.cand.id === x.cand.id));
+  // Una opción por papeleta que aún no está en tu orden; internamente se guarda su partido principal (o el primero de la web que va en ella).
+  const candidatos = partidosAqui(circ)
+    .filter((x) => !ranking.includes(x.pid) && !grupos.some((g) => g.fila.cand.id === x.cand.id))
+    .filter((x, i, xs) => xs.findIndex((y) => y.cand.id === x.cand.id) === i);
 
   const poner = (r: string[]) => actualizar({ ranking: r, rankingOrigen: 'manual' });
   // Mueve una papeleta un puesto: intercambia el primer partido de cada una (los que no se presentan aquí no cuentan).
@@ -358,7 +369,7 @@ function Preferencias({
           <div class="row">
             {candidatos.length > 0 && (
               <label class="field" style={{ minWidth: 220, flex: '0 1 320px', margin: 0 }}>
-                <span class="sr-only">Añadir un partido al final de tu orden</span>
+                <span class="sr-only">Añadir una papeleta al final de tu orden</span>
                 <select
                   value=""
                   onChange={(ev) => {
@@ -366,11 +377,10 @@ function Preferencias({
                     if (v) poner([...ranking, v]);
                   }}
                 >
-                  <option value="">+ Añadir un partido al final…</option>
+                  <option value="">+ Añadir una papeleta al final…</option>
                   {candidatos.map((x) => (
-                    <option key={x.pid} value={x.pid}>
-                      {partido(x.pid)?.siglas ?? x.pid}
-                      {x.cand.partido !== x.pid ? ` (en ${x.cand.siglas})` : ''}
+                    <option key={x.cand.id} value={x.pid}>
+                      {etiquetaPapeleta(x.cand)}
                     </option>
                   ))}
                 </select>
@@ -410,13 +420,20 @@ export function Cuenta() {
   // Partido (pasos 1 y 2) que la persona quiere votar: el elegido o, si eligió una papeleta, su partido principal.
   const pidElegido = e.partido && partido(e.partido) ? e.partido : (elegida?.partido ?? null);
   const enCoalicion = circ && elegida && pidElegido ? comoSePresenta(pidElegido, elegida, circ) : null;
-  const opciones = circ ? partidosAqui(circ) : [];
-  const otrasCands = circ ? circ.candidaturas.filter((c) => !c.partido) : [];
-  const valorSelect = opciones.some((x) => x.pid === e.partido)
-    ? e.partido!
-    : elegida?.partido && opciones.some((x) => x.pid === elegida.partido)
-      ? elegida.partido
-      : (elegida?.id ?? e.partido ?? '');
+  // El desplegable muestra solo papeletas. La del partido que elegiste (o el más afín del paso 1) sale
+  // seleccionada; el paso de partido a papeleta se explica debajo (enCoalicion) cuando no es obvio.
+  const conPartido = (c: CandidaturaCirc) => !!c.partido || (esCoalicion(c) && (c.afines?.length ?? 0) > 0);
+  const papeletasWeb = filas.map((f) => f.cand).filter(conPartido);
+  const otrasCands = circ ? circ.candidaturas.filter((c) => !conPartido(c)).sort((a, b) => a.siglas.localeCompare(b.siglas, 'es')) : [];
+  const valorSelect = elegida?.id ?? (noSePresenta ? e.partido! : '');
+  const elegirPapeleta = (id: string) => {
+    const c = circ?.candidaturas.find((x) => x.id === id);
+    if (!c) return actualizar({ partido: id || null });
+    // Si tu partido va en esa papeleta, se mantiene (cuenta para las demás provincias y el paso 2).
+    const dentro = (pid: string | null) => !!pid && (c.partido === pid || (esCoalicion(c) && !!c.afines?.includes(pid)));
+    if (pidElegido && dentro(pidElegido)) return actualizar({ partido: pidElegido });
+    actualizar({ partido: c.partido ?? c.id });
+  };
 
   // Sugerencia: el primero de tu orden de preferencia (sin contar tu voto) con P >= 50 % aquí.
   const pocasOpciones = noSePresenta || (!!filaElegida && !filaElegida.sinBase && filaElegida.pEscano < UMBRAL_RECOMENDACION);
@@ -496,20 +513,15 @@ export function Cuenta() {
             </select>
           </label>
           <label class="field">
-            Partido que quieres votar
-            <select
-              value={valorSelect}
-              onChange={(ev) => actualizar({ partido: (ev.target as HTMLSelectElement).value || null })}
-              disabled={!circ}
-            >
-              <option value="">{circ ? 'Elige partido…' : 'Primero elige provincia'}</option>
+            Papeleta que quieres votar
+            <select value={valorSelect} onChange={(ev) => elegirPapeleta((ev.target as HTMLSelectElement).value)} disabled={!circ}>
+              <option value="">{circ ? 'Elige papeleta…' : 'Primero elige provincia'}</option>
               {noSePresenta && <option value={e.partido!}>{partido(e.partido)?.siglas ?? e.partido} (no se presenta aquí)</option>}
-              {opciones.length > 0 && (
-                <optgroup label="Partidos">
-                  {opciones.map((x) => (
-                    <option key={x.pid} value={x.pid}>
-                      {partido(x.pid)?.siglas ?? x.pid} —{' '}
-                      {x.cand.partido === x.pid && !(x.cand.afines?.length && esCoalicion(x.cand)) ? x.cand.denominacion : `en la papeleta ${x.cand.siglas}`}
+              {papeletasWeb.length > 0 && (
+                <optgroup label="Partidos de los pasos 1 y 2">
+                  {papeletasWeb.map((c) => (
+                    <option key={c.id} value={c.id}>
+                      {etiquetaPapeleta(c)}
                     </option>
                   ))}
                 </optgroup>
@@ -518,7 +530,7 @@ export function Cuenta() {
                 <optgroup label="Otras candidaturas">
                   {otrasCands.map((c) => (
                     <option key={c.id} value={c.id}>
-                      {c.siglas} — {c.denominacion}
+                      {c.siglas.toUpperCase() === c.denominacion.toUpperCase() ? c.siglas : `${c.siglas} — ${c.denominacion}`}
                     </option>
                   ))}
                 </optgroup>
