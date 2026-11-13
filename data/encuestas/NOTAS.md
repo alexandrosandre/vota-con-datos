@@ -66,7 +66,12 @@ Desgloses territoriales, de encuestas anteriores de Sigma Dos:
 - Primera entrega del tracking diario para El Mundo (campo 3–11 nov, n=3.870). Habrá una entrega cada día hasta el 23-11 y cada una sustituye a la anterior en la media.
 - Solo publica el porcentaje de PP, PSOE, Vox, Frente Amplio (con sus marcas canaria y valenciana), Podemos y Adelante Andalucía. ERC, Junts, EH Bildu, PNV, BNG y CC solo tienen escaños (van en `escanos_otros`), así que en la proyección conservan su voto de 2023.
 - Frente Amplio: la infografía dice 9-15 escaños y el texto 13-15 (suma de sus tres marcas). Se guarda 13-15.
-- El escenario propio de Sigma Dos sigue usando `sigmados-2026-11-08`, que sí publica el porcentaje de todos los partidos.
+- El escenario propio de Sigma Dos siguió usando `sigmados-2026-11-08`, que sí publica el porcentaje de todos los partidos, hasta la entrega del 13-11.
+
+### Sigma Dos, tracking diario (`sigmados-2026-11-13`, publicado 13-11)
+- Segunda entrega (campo 3–12 nov, n=4.620). Sustituye a `sigmados-2026-11-12` en la media.
+- Su infografía (escanosb646.jpg) sí publica el porcentaje de ERC, EH Bildu, PNV, Adelante Andalucía, BNG, Junts y CC, así que pasa a ser el escenario propio de Sigma Dos en lugar de `sigmados-2026-11-08`. Podemos (1,4 %) sale del texto y de la serie Datawrapper.
+- Frente Amplio 7,3 % (13-15) es el bloque con sus marcas canaria y valenciana; esta entrega no las desglosa.
 
 ### Winston (`winston-2026-11-13`, publicado 13-11)
 - Campo 5–8 nov, 1.501 entrevistas online. No publica margen de error ni más metodología.

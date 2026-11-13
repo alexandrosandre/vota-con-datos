@@ -259,7 +259,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-13T10:00:00+01:00",
+        "checked_at": "2026-11-13T20:55:00+01:00",
         "anunciado": null
       },
       "programa_aplicable": "UPN no ha publicado programa propio para el 29-N. Concurre dentro de la coalición UPN-PP; según el preacuerdo UPN-PP (13-oct-2026), el programa de la coalición lo redacta una comisión conjunta de ambos partidos (sin publicar). En los pasos 1 y 2 solo cuenta lo que dice UPN o lo que firma como parte de la coalición, no lo que dice el PP por su cuenta.",
@@ -396,13 +396,13 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-13T10:00:00+01:00",
+        "checked_at": "2026-11-13T20:55:00+01:00",
         "anunciado": {
           "fecha": "2026-11-15",
           "detalle": "Presentación del programa el domingo 15-nov en Alcorcón (Madrid). Solo consta en prensa; psoe.es no se ha podido leer (desafío anti-bots de Incapsula, no sorteado).",
           "fuente": "https://capital.es/actualidad/sanchez-hara-campana-en-pamplona-albacete-y-barcelona-y-cerrara-en-madrid-con-vota-fuerza/234814/ (12-11-2026 16:15: «El domingo 15, el PSOE lanzará oficialmente su programa en Alcorcón»)"
         },
-        "verificacion": "No verificado de primera mano: psoe.es devuelve un desafío anti-bots de Imperva/Incapsula (no se ha intentado sortear). Estado basado en webs de federaciones (psn-psoe.org, socialistas.gal) y fuentes secundarias."
+        "verificacion": "No verificado de primera mano: psoe.es devuelve un desafío anti-bots de Imperva/Incapsula; el 13-nov, también en un navegador normal, pide resolver un CAPTCHA (no se ha intentado). Estado basado en webs de federaciones (psn-psoe.org, psoelarioja.es, aragonpsoe.es, socialistas.gal: sin programa a 13-nov, 20:55) y en el anuncio de presentación del 15-nov."
       },
       "programa_aplicable": "Programa federal del PSOE en las 48 circunscripciones fuera de Cataluña (incluidas las listas con marca PSE-EE, PSdeG, PSN, PSIB). En Cataluña concurre el PSC (ver psc).",
       "notas": "Sin fecha de publicación anunciada encontrada; Demócrata (21-oct) indica que Cristina Narbona coordina el programa: https://www.democrata.es/elecciones-generales-espana/29n-como-elaboran-programas-electorales-fases-plazos-quien-decide-propuestas-partidos/",
@@ -578,9 +578,9 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-13T10:00:00+01:00",
+        "checked_at": "2026-11-13T20:55:00+01:00",
         "anunciado": null,
-        "verificacion": "12-nov: socialistes.cat devuelve un desafío anti-bots de Cloudflare (no se ha intentado sortear); estado basado en búsqueda de prensa, sin noticia de programa propio del PSC."
+        "verificacion": "13-nov: socialistes.cat se lee en un navegador normal (las peticiones automatizadas reciben un desafío de Cloudflare). Portada, noticias del 13-nov y biblioteca de medios: sin programa del 29N; el único PDF electoral nuevo es el presupuesto de campaña."
       },
       "programa_aplicable": "No determinado: el PSC es candidatura propia (no coalición con el PSOE). En generales anteriores ha publicado programa propio (p. ej. 2011), por lo que puede publicar uno o asumir el del PSOE. Sin confirmar.",
       "notas": "Revisadas entradas y archivos de socialistes.cat desde octubre de 2026: sin programa del 29N.",
@@ -813,21 +813,28 @@
       "escanos_2023_nota": null,
       "proyeccion_motivo": "Escaños en el Congreso de la XV legislatura.",
       "programa": {
-        "estado": "no_publicado",
-        "url": null,
-        "fecha": null,
-        "titulo": null,
-        "paginas": null,
-        "sha256": null,
-        "fichero": null,
-        "texto": null,
-        "checked_at": "2026-11-13T10:00:00+01:00",
+        "estado": "publicado",
+        "url": "https://votasentidocomun.es/general/files/programa-elecct-vox.pdf",
+        "fecha": "2026-11-12",
+        "fecha_fuente": "Nota «’Es sentido común’: Estas son las medidas de VOX para el 29N» publicada en voxespana.es el 12-nov («VOX presenta su programa para las elecciones generales del 29 de noviembre»). Coincide con HTTP Last-Modified (Thu, 12 Nov 2026 08:20:00 GMT); CreationDate del PDF 2026-11-05 15:31 CET",
+        "titulo": "Programa electoral. 29 de noviembre de 2026. Es sentido común",
+        "idioma": "es",
+        "paginas": 55,
+        "sha256": "77d2158a9a57b812dc75ebf94529501f009114d5f9a3678afd56bb4c97204567",
+        "fichero": "data/sources/programas/vox/programa-elecct-vox.pdf",
+        "texto": "data/sources/programas/vox/programa-elecct-vox.txt",
+        "checked_at": "2026-11-13T20:55:00+01:00",
         "anunciado": null,
-        "nota": "12-nov: la prensa informa de que Vox difundió ese día su programa «Es sentido común» (115 medidas en 13 bloques; Infobae 12-11-2026). El único PDF localizado está alojado en democrata.es (no oficial), por lo que no se cataloga. voxespana.es devuelve HTTP 403 a cualquier acceso automatizado (también /noticias y /programa); no se ha intentado sortear. El sitio essentidocomun.es («Es Sentido Común by VOX», WordPress gratuito creado el 10-nov, sin aviso legal ni enlace desde/hacia voxespana.es) no es verificable como oficial y no contiene PDF."
+        "presentacion": "https://www.voxespana.es/abascal/es-sentido-comun-estas-son-las-medidas-de-vox-para-el-29n-20261112",
+        "pagina_campana": "https://votasentidocomun.es/",
+        "verificacion": "13-nov: voxespana.es, abierto en un navegador normal (las peticiones automatizadas siguen recibiendo HTTP 403), enlaza desde su portada la web de campaña votasentidocomun.es, cuyo botón «Descarga el programa» sirve este PDF y cuyo aviso legal y política de cookies remiten a voxespana.es. Por eso se considera oficial. El PDF de 13 bloques coincide con la nota del 12-nov en voxespana.es. Distinto del sitio essentidocomun.es, que sigue sin verificar."
       },
       "programa_aplicable": "Programa único estatal.",
-      "notas": "voxespana.es/programa solo enlaza programas de 2019; voxespana.es/programa/programa-electoral-vox devuelve «No se ha encontrado la página». Portada sin programa ni fecha anunciada.",
+      "notas": "voxespana.es/programa solo enlaza programas de 2019; voxespana.es/programa/programa-electoral-vox devuelve «No se ha encontrado la página». Portada sin programa ni fecha anunciada. [13-nov-2026] Programa del 29N publicado: voxespana.es enlaza la web de campaña votasentidocomun.es, que aloja el PDF «Es sentido común» (55 págs.). voxespana.es/programa/programa-electoral-vox sigue dando 404.",
       "fuentes": [
+        "https://www.voxespana.es/abascal/es-sentido-comun-estas-son-las-medidas-de-vox-para-el-29n-20261112",
+        "https://votasentidocomun.es/general/files/programa-elecct-vox.pdf",
+        "https://votasentidocomun.es/",
         "https://www.voxespana.es/",
         "https://www.voxespana.es/programa",
         "https://www.voxespana.es/programa/programa-electoral-vox",
@@ -1008,7 +1015,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-13T10:00:00+01:00",
+        "checked_at": "2026-11-13T20:55:00+01:00",
         "anunciado": null,
         "nota": "12-nov: la Fronte Ampla gallega presentó en Santiago su programa «100+15» (100 medidas generales y 15 específicas para Galicia; Nós Diario y Galicia Confidencial, 12-11-2026), pero no está publicado en ninguna web oficial: fronteampla.gal redirige a frenteamplio.info/gal/, que solo tiene notas de prensa; tampoco en esquerdaunida.org ni anova.gal. frenteamplio.info no tiene sección de programa (/programa da 404; sitemap y feed sin programa)."
       },
@@ -1384,9 +1391,9 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-13T10:00:00+01:00",
+        "checked_at": "2026-11-13T20:55:00+01:00",
         "anunciado": null,
-        "verificacion": "13-nov: podemos.info devuelve un desafío anti-bots (HTTP 403, también su API de WordPress); no se ha intentado sortear. Estado basado en búsqueda de prensa, sin noticia de publicación del programa."
+        "verificacion": "13-nov: podemos.info se lee en un navegador normal (las peticiones automatizadas reciben HTTP 403). Portada, entradas y biblioteca de medios (último PDF del 19-oct): sin programa del 29N."
       },
       "programa_aplicable": "Programa de Podemos en sus 41 circunscripciones. En la Comunitat Valenciana va dentro de Compromís: Front Valencià y en Canarias dentro de UPC (aplican los de esas coaliciones). En Cataluña no presenta lista y apoya a ERC; tampoco en Baleares ni Melilla.",
       "notas": "Últimos archivos en podemos.info (19-oct): ninguno es programa del 29N (los «Programa» son de europeas 2024 y 2025). Consulta a la Asamblea del 16-oct aprobó la estrategia electoral. Civio indica que la lista de León no fue proclamada, pero el BOE de 3-nov (y su corrección de 7-nov) sí la recoge: se cuenta León.",
@@ -1548,9 +1555,9 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-13T10:00:00+01:00",
+        "checked_at": "2026-11-13T20:55:00+01:00",
         "anunciado": null,
-        "nota": "La web electoral oficial frontvalencia.org (enlazada desde compromis.net con «Entra al programa >») muestra solo un resumen por ejes; el botón «Programa sencer» dice «Enllaç pendent» (12-11-2026).",
+        "nota": "La web electoral oficial frontvalencia.org (enlazada desde compromis.net con «Entra al programa >») muestra solo un resumen por ejes; el botón «Programa sencer» sigue sin enlace (href=\"#\", «Enllaç pendent») a 13-11-2026, 20:55.",
         "pagina_campana": "https://frontvalencia.org/"
       },
       "programa_aplicable": "Compromís no ha publicado programa propio para el 29-N. Concurre dentro de la coalición Compromís: Front Valencià (Coalició Compromís y sus partidos, Podem, EUPV, ERPV y Recortes Cero), cuyo programa completo está pendiente.",
@@ -1626,7 +1633,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-13T10:00:00+01:00",
+        "checked_at": "2026-11-13T20:55:00+01:00",
         "anunciado": null,
         "documento_programatico": {
           "tipo": "Manifiesto electoral (16 ejes); no se denomina programa",
@@ -1710,7 +1717,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-13T10:00:00+01:00",
+        "checked_at": "2026-11-13T20:55:00+01:00",
         "anunciado": {
           "fecha": null,
           "detalle": "Programa en elaboración participativa desde el 3-nov-2026; sin fecha de publicación anunciada.",
@@ -1885,7 +1892,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-13T10:00:00+01:00",
+        "checked_at": "2026-11-13T20:55:00+01:00",
         "anunciado": null
       },
       "programa_aplicable": "Programa único para Cataluña (pendiente).",
@@ -1953,7 +1960,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-13T10:00:00+01:00",
+        "checked_at": "2026-11-13T20:55:00+01:00",
         "anunciado": null
       },
       "programa_aplicable": "No consta programa navarro separado; comprobar cuando se publique.",

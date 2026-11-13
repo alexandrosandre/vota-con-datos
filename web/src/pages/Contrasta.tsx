@@ -315,8 +315,19 @@ export function Contrasta() {
               <Mapa props={datos.propuestas} />
               {datos.base === 'compromisos' ? (
                 <p class="muted" style={{ fontSize: '0.85rem', margin: 0 }}>
-                  <strong>{p.siglas} no ha publicado programa para el 29-N</strong> (última comprobación: {fmt.fecha(p.programa.comprobado)}).
-                  Estas propuestas salen solo de sus compromisos públicos para esta legislatura: lo que sus líderes han dicho en primera persona y sus notas y documentos oficiales{p.nota_coalicion ? ' o los de la coalición con la que se presenta' : ''}.{' '}
+                  {p.programa.estado === 'publicado' ? (
+                    <>
+                      <strong>
+                        {p.siglas} publicó su programa{p.programa.fecha ? ` el ${fmt.fecha(p.programa.fecha)}` : ''} y lo estamos analizando
+                      </strong>{' '}
+                      (lectura completa, valoración y revisión independiente). Hasta que termine, estas propuestas salen solo
+                    </>
+                  ) : (
+                    <>
+                      <strong>{p.siglas} no ha publicado programa para el 29-N</strong> (última comprobación: {fmt.fecha(p.programa.comprobado)}).
+                      Estas propuestas salen solo
+                    </>
+                  )} de sus compromisos públicos para esta legislatura: lo que sus líderes han dicho en primera persona y sus notas y documentos oficiales{p.nota_coalicion ? ' o los de la coalición con la que se presenta' : ''}.{' '}
                   <a href="#/metodologia">Cómo se hace</a>.
                 </p>
               ) : (

@@ -24,7 +24,9 @@ correcta o legal) hasta que esté hecho.
   analizados que no estén en el programa pasan a complemento (hasta 4, `base: complemento`, nueva
   revisión).
   - [ ] PSOE — presenta su programa el 15-nov.
-  - [ ] Vox — solo se usará desde su web oficial (a 12-nov no estaba en voxespana.es).
+  - [ ] Vox — **publicado el 12-nov** (PDF en votasentidocomun.es, la web de campaña enlazada desde
+    voxespana.es). Descargado el 13-nov; análisis, revisión independiente y recodificación del paso 1 en
+    curso. Mientras tanto el paso 2 sigue con sus compromisos y lo dice.
   - [ ] PSC, Frente Amplio, Podemos, Junts, EH Bildu, Compromís, NC-BC, Ara Més, UPN — sin fecha.
 - [ ] **3. [Yo] Revisar la selección de afirmaciones del paso 1** para cubrir mejor a los 18 partidos:
   análisis, codificación y verificación independiente; decido yo, sin pasar por ti. **Hecha el 13-nov**
@@ -43,6 +45,10 @@ correcta o legal) hasta que esté hecho.
   reglas. Segundo barrido, también de los compromisos del paso 2 de los partidos sin programa, hacia el 18-nov.
 - [ ] **7. [Tú] Opcional:** activar la verificación en dos pasos en Porkbun. (Dominio verificado en
   GitHub el 13-nov; no borrar el registro TXT `_github-pages-challenge-…`.)
+
+**Revisión del 13-nov, 20:13:** encuesta Sigma Dos (tracking 13-nov) como escenario propio; 12 compromisos
+nuevos (Frente Amplio 6, Ara Més 3, Vox 2, EH Bildu 1: SMI propio sin cuantía, mismo listón que el del
+PNV); BOE sin correcciones hasta el 13-nov.
 
 **Hecho el 13-nov por la tarde** (revisión del cambio partidos/papeletas, commit 1299bb2): el PNV aparece
 en Navarra dentro de Geroa Bai; la afinidad del paso 3 se recalcula (salía «1 %»); documentos conjuntos de
