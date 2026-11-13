@@ -1,0 +1,253 @@
+{
+ "grupo": "g6",
+ "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13-nov",
+ "fecha": "2026-11-13",
+ "aprobado": true,
+ "revisadas": 30,
+ "resultado": {
+  "ok": 11,
+  "corregido": 1,
+  "rechazado": 0,
+  "celdas_no_tocadas_confirmadas": 18
+ },
+ "alcance": "Las 11 posiciones de Vox de codificacion_g6.json y las 19 afirmaciones que g6 no tocaba (14 con posición de campaña conservada: q05, q11, q16, q17, q18, q19, q20, q21, q22, q24, q30, q32, q33 y q34; 5 en null: q04, q06, q08, q26 y q31). De esas 19, q20 pasa al programa con el mismo valor y las otras 18 se confirman («celdas_no_tocadas»). (1) Fuente: se volvió a descargar el PDF de votasentidocomun.es con una petición HTTP normal; su sha256 (77d2158a9a57…4567) coincide con el catalogado en partidos.json y con la copia local. La portada de votasentidocomun.es enlaza el PDF («/general/files/programa-elecct-vox.pdf»), el aviso legal y la política de cookies de www.voxespana.es y los subdominios de donaciones y apoderados de voxespana.es. (2) Lectura: se extrajo el PDF página a página con pdftotext y se leyó entero (pp. 5-54); la numeración impresa coincide con la del PDF. (3) Citas: cada fragmento se comprobó con norm() de verify_quotes.py contra el .txt catalogado y contra el texto de cada página: todas literales, con ≤ 60 palabras y en la página declarada (q27 y q20 cruzan de página; la nota lo dice). (4) Valor: juzgado contra la afirmación y su contexto en preguntas.json, con los criterios aplicados a PP, SALF, ERC, BNG, PNV y Adelante Andalucía en las mismas afirmaciones (codificacion_g1..g5 y verificacion_g1..g5). (5) Precedencia: el programa va primero cuando dice sobre la medida al menos tanto como la declaración de campaña; no desplaza a una declaración que trata la medida de forma más directa si no la contradice ni la matiza (precedentes: PNV q11, q15 y q21 en g4; PP q22 en g1). Cuando el programa matiza o suaviza la posición, prevalece aunque baje el valor (PP q33, CC q29). Mecanismo: build_fase1.py lee los grupos en orden y g6 pisa las celdas de Vox que contiene; cada una guarda en «sustituye» la posición anterior.",
+ "cambios": [
+  {
+   "partido": "vox",
+   "pregunta": "q20",
+   "antes": -1,
+   "despues": -1,
+   "motivo": "Mismo valor; la fuente pasa de campaña (Abascal, La Revuelta, 9-nov-2026) al programa (medida 8, pp. 9-10). El programa es posterior, va primero y es más concreto: propone revertir los impuestos a las emisiones de CO2. Añadido a codificacion_g6.json con «sustituye»."
+  }
+ ],
+ "correcciones_de_campos": [
+  {
+   "partido": "vox",
+   "pregunta": "q27",
+   "campo": "cita, nota",
+   "motivo": "La cita empezaba en «con participación de las Fuerzas Armadas» y omitía el sujeto de la frase, de modo que no decía que la medida trata de proteger las fronteras. Se restituye «Protección y defensa de las fronteras españolas. Establecer un nuevo modelo de protección permanente de las fronteras terrestres, marítimas y aéreas,» (p. 40; 51 palabras). La nota explica qué salta el corte [...]."
+  }
+ ],
+ "posiciones": [
+  {
+   "partido": "vox",
+   "pregunta": "q01",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal en la p. 19 (medida 30, sigue en la p. 20). La afirmación pide un tope estatal; su propio contexto identifica la Ley de Vivienda de 2023 como la norma que permite limitar las rentas. Derogarla elimina la única base legal de limitación de rentas, así que se opone, con más razón, a un tope estatal: oposición indirecta pero inequívoca. −1 y no −2 porque no nombra precios ni zonas tensionadas (el PP, que propone eliminar expresamente las zonas tensionadas y el índice de precios, tiene −2). Mismo valor que la campaña (Hernández Quero, también indirecta): el programa va primero."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q03",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal en la p. 20 (medida 34). IVA al 0 % y bonificación del 100 % del ITP para la primera vivienda habitual de las familias españolas, sin límite de edad: medida más amplia que la rebaja del 60 % para menores de 40, que queda cubierta para los compradores españoles. +1, mismo criterio que SALF q03 y ERC q03."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q09",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal en la p. 32 (medida 62); el corte salta «Reorganizar circuitos asistenciales, mejorar la capacidad diagnóstica y la actividad quirúrgica y». Fomentar la colaboración público-privada para reducir listas de espera y «facilitar derivaciones entre centros» es lo contrario de prohibir que la sanidad pública pague a centros privados (el contexto de la afirmación recoge ese mismo argumento de sus defensores). Condicionada a que «ayude efectivamente a reducir demoras»: −1, como SALF q09."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q12",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal en la p. 35 (medida 66, primera de educación); el corte salta «Reválidas y EVAU única.». Garantizar la educación en español en todo el territorio se opone a que cada comunidad decida sin mínimo, pero no fija porcentaje, mínimo legal ni mecanismo para exigirlo: −1, igual que el PP (que también lo pone como titular de su medida). SALF tiene −2 porque lo hace exigible con una Alta Inspección que sanciona. Abascal (25-oct) rechaza además fijar un porcentaje «por sistema», lo que confirma −1."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q13",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal en la p. 19 (medida 27); también medida 18 (p. 16) y 74 (p. 36). Prioridad nacional expresa en el acceso a vivienda protegida y social, eje del programa: +2."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q15",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal en la p. 13 (medida 9, primera de inmigración); además, supresión del arraigo (medida 11). Prohibición expresa de las regularizaciones masivas: −2, como PP y SALF."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q20",
+   "veredicto": "corregido",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Fuente campaña → programa, mismo valor. El codificador conservó la declaración de Abascal (La Revuelta, 9-nov) por seguir el null de SALF q20, pero el caso no es el mismo: la verificación de g1 dejó SALF en null porque su veto al Pacto Verde se justifica por el campo, no por las emisiones. El programa de Vox (medida 8, pp. 9-10) propone revertir los impuestos a las emisiones de CO2 y la prohibición de los motores de combustión, y la medida 44 (p. 25) «Acabar con todas las imposiciones climáticas»: es una oposición indirecta inequívoca a endurecer el objetivo al −65 %, del mismo tipo que PP q20 (−1 con el programa). El programa es posterior y más concreto que la declaración de Abascal: va primero. Cita literal (el corte solo salta el pie y la cabecera de página)."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q23",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal en la p. 20 (medida 31). Desalojo en menos de 24 horas, más exigente que el máximo de 48 horas de la afirmación, y endurecimiento penal: propuesta expresa, +2 (como PP)."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q25",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal en la p. 49 (medida 103, que empieza en la p. 48). Prohibir los indultos por delitos de corrupción política va más allá de que el Gobierno renuncie a concederlos. Propuesta expresa con nombre propio dentro de su programa: +2, como PP, SALF y Adelante Andalucía."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q27",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Valor confirmado; cita corregida (ver correcciones_de_campos). Medida 88 (pp. 40-41): modelo permanente de protección de las fronteras con participación de las Fuerzas Armadas, «especialmente en Ceuta y Melilla»; y medida 1 (p. 5), la primera del programa: «Militarización de la frontera» de Ceuta. Propuesta expresa, sin condiciones y prioritaria: +2. El PP tiene +1 porque condiciona el apoyo militar a que «lo exija la seguridad nacional»; SALF +1 porque sus militares en Ceuta no se vinculan a vigilar la frontera."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q29",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal en la p. 28 (medida 48, primera del bloque del sector primario). «Rechazo explícito al acuerdo UE-Mercosur» como compromiso de gobierno, junto con «VOX en el Gobierno será el representante del sector primario en Bruselas»: un rechazo de programa que el partido se compromete a defender ante la UE. Mismo criterio que BNG q29 (+2: «Rexeitamento [...] en particular o UE-Mercosur», también en el programa) y SALF q29 (+2). Las +1 de UPN, Podemos o Ara Més son rechazos en declaraciones, no compromisos de programa."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q35",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal en la p. 39 (medida 81). Propuesta expresa de ampliar la prisión permanente revisable: +2, como PP. El PDF descargado de nuevo hoy de votasentidocomun.es tiene el mismo sha256 que el catalogado (77d2158a…4567), y la web enlaza el aviso legal y la política de cookies de voxespana.es: es la copia oficial."
+  }
+ ],
+ "resolucion_dudas_codificador": [
+  "1. q01 (−1 programa): sí. El contexto de la afirmación presenta la Ley de Vivienda de 2023 como la norma que permite limitar rentas; derogarla es oponerse a cualquier límite y, con más razón, a uno estatal. Indirecta e inequívoca: −1 con el programa, que va primero (la campaña tenía el mismo valor y también era indirecta).",
+  "2. q12: −1. Mismo patrón que el PP (garantía de enseñanza en castellano en toda España, sin porcentaje, mínimo ni mecanismo de exigencia); que Vox no lo enmarque en el respeto a las cooficiales no añade lo que da el −2 a SALF (exigibilidad con sanción). Abascal (25-oct) rechaza además fijar un porcentaje «por sistema».",
+  "3. q27: +2, con la cita ampliada. El corte [...] es correcto (solo salta el pie, la cabecera y «las mafias de tráfico de personas y las amenazas híbridas»). La diferencia con PP y SALF está en el texto: Vox propone un modelo permanente con las Fuerzas Armadas, sin condición, y la militarización de la frontera de Ceuta es su medida 1.",
+  "4. q29: +2. Un rechazo explícito en el programa, como compromiso de gobierno y con la promesa de defenderlo en Bruselas, es lo mismo que el BNG (+2 con su programa) y que el veto de SALF. Las +1 de campaña de UPN, Podemos o Ara Més son rechazos sin compromiso de actuar.",
+  "5. q09: −1, como SALF: la colaboración público-privada está condicionada a que reduzca demoras y a controles de calidad y gasto.",
+  "6. Conservadas de campaña: se confirman q05, q11, q16, q21 y q33, y se corrige q20. Criterio: el programa va primero cuando trata la medida al menos tan directamente como la declaración. No baja una posición expresa por el mero hecho de ser menos concreto si no la contradice ni la matiza; así se hizo con PNV q11, q15 y q21 en g4. Si la matiza, sí prevalece, como en PP q33 y CC q29. q16: el programa no habla de referéndum y Hoces sí; q21: «derecho a la vida» no habla de la Constitución y Robles defiende la enmienda a la totalidad contra la reforma del art. 43; q33: el programa habla de devolución, no del reparto que rechaza la moción de Armario; q05: «Simplificación y bajada del IRPF» y la rebaja por hijos coinciden con el plan de Figaredo, sin las cifras; q11: «libre elección de centro» no nombra la concertada, que Armario defiende expresamente (mismo valor). q20 es distinto: la declaración de Abascal es general y el programa es más concreto (impuestos al CO2), así que pasa al programa con el mismo −1.",
+  "7. q35: el sha256 del PDF descargado de nuevo hoy de votasentidocomun.es coincide (77d2158a…4567) y la web remite a voxespana.es (aviso legal, cookies, donaciones). El motivo por el que g1 lo dejó en null (solo estaba en democrata.es) ya no se da."
+ ],
+ "celdas_no_tocadas": [
+  {
+   "pregunta": "q04",
+   "vigente": null,
+   "decision": "null confirmado",
+   "motivo": "«Revisión y reducción sistemática de todos los impuestos y tasas» (p. 7) no nombra el impuesto de grandes fortunas; PP q04 null con una fórmula parecida."
+  },
+  {
+   "pregunta": "q05",
+   "vigente": 2,
+   "decision": "se mantiene la campaña",
+   "motivo": "El programa (p. 7) no da el mínimo exento ni los tipos; coincide con el plan de Figaredo, que incluía la rebaja por hijo. No lo contradice ni lo matiza."
+  },
+  {
+   "pregunta": "q06",
+   "vigente": null,
+   "decision": "null confirmado",
+   "motivo": "«Derogar la legislación laboral de Sánchez» (p. 11) no trata la jornada; la reducción a 37,5 h no llegó a aprobarse."
+  },
+  {
+   "pregunta": "q08",
+   "vigente": null,
+   "decision": "null confirmado",
+   "motivo": "Medida 7 (pp. 8-9): sostenibilidad de las pensiones, sin edad de jubilación."
+  },
+  {
+   "pregunta": "q11",
+   "vigente": -1,
+   "decision": "se mantiene la campaña",
+   "motivo": "Medidas 67 y 74 (pp. 35-36): libre elección de centro «sin que su situación económica o social sea un impedimento», sin nombrar la concertada. Armario la defiende expresamente. Mismo valor."
+  },
+  {
+   "pregunta": "q16",
+   "vigente": -2,
+   "decision": "se mantiene la campaña",
+   "motivo": "Medida 103 (pp. 48-49): sedición e ilegalización de partidos, sin hablar de referéndum. Hoces rechaza expresamente un referéndum de separación; el programa no lo matiza."
+  },
+  {
+   "pregunta": "q17",
+   "vigente": -1,
+   "decision": "se mantiene la campaña",
+   "motivo": "Medidas 25 y 42 son genéricas (igualdad entre territorios, unidad de mercado); no tratan el concierto ni el cupo."
+  },
+  {
+   "pregunta": "q18",
+   "vigente": -2,
+   "decision": "se mantiene la campaña",
+   "motivo": "«Reducción de la deuda pública» (p. 7) no trata la asunción de deuda autonómica."
+  },
+  {
+   "pregunta": "q19",
+   "vigente": -1,
+   "decision": "se mantiene la campaña",
+   "motivo": "Medida 54 (p. 29) se refiere a renovables sobre suelo agrícola; la medida 53 (pesca) no menciona la eólica marina."
+  },
+  {
+   "pregunta": "q21",
+   "vigente": -2,
+   "decision": "se mantiene la campaña",
+   "motivo": "Medida 98 (p. 45): principio de defensa de la vida, sin hablar de la Constitución. Mismo trato que PNV q21 y PP q21."
+  },
+  {
+   "pregunta": "q22",
+   "vigente": 1,
+   "decision": "se mantiene la campaña",
+   "motivo": "Medida 43 (reducir la Administración) y 47 (leyes de género) no nombran el Ministerio de Igualdad; mismo trato que PP q22. La declaración de Abascal es del mismo día que el programa."
+  },
+  {
+   "pregunta": "q24",
+   "vigente": -1,
+   "decision": "se mantiene la campaña",
+   "motivo": "El programa no trata la Ley de Seguridad Ciudadana."
+  },
+  {
+   "pregunta": "q26",
+   "vigente": null,
+   "decision": "null confirmado",
+   "motivo": "«Aumento de la inversión en Defensa» (medida 89, p. 41), sin cifra ni horizonte; mismo criterio que PP q26 («cumplir nuestros compromisos internacionales», null)."
+  },
+  {
+   "pregunta": "q30",
+   "vigente": -1,
+   "decision": "se mantiene la campaña",
+   "motivo": "La rebaja del IVA de los productos de primera necesidad (p. 7) es una medida distinta de un precio máximo."
+  },
+  {
+   "pregunta": "q31",
+   "vigente": null,
+   "decision": "null confirmado",
+   "motivo": "El programa no trata la duración ni la renovación de los contratos de alquiler; la Ley de Vivienda que deroga no es la que fija esa duración (Ley de Arrendamientos Urbanos)."
+  },
+  {
+   "pregunta": "q32",
+   "vigente": -1,
+   "decision": "se mantiene la campaña",
+   "motivo": "Medida 25 (igualdad «con independencia del lugar de España en el que residan») es genérica; la enmienda de Sáez rechaza expresamente un SMI distinto por territorio."
+  },
+  {
+   "pregunta": "q33",
+   "vigente": 2,
+   "decision": "se mantiene la campaña",
+   "motivo": "Medida 15 (pp. 13-14): devolución de los menores a sus familias o a su país, sin hablar del reparto entre comunidades, que la moción de Armario rechaza expresamente. A diferencia del PP (+1 con su programa), el de Vox no matiza el rechazo al reparto."
+  },
+  {
+   "pregunta": "q34",
+   "vigente": 1,
+   "decision": "se mantiene la campaña",
+   "motivo": "El programa no trata el Sáhara Occidental (la medida 1 habla de sanciones a Marruecos por Ceuta)."
+  }
+ ],
+ "dudas": [
+  "vox/q29 (+2): se sigue a BNG (+2, rechazo en el programa). Alternativa: +1 si se exige pedir de forma expresa que la UE lo frene, como se hizo con los rechazos de campaña de UPN, Podemos y Ara Més; entonces el BNG debería revisarse igual.",
+  "vox/q26 (null): «Aumento de la inversión en Defensa» va en la dirección de la afirmación. Alternativa: +1, con la regla de «misma dirección sin la cifra» (Frente Amplio y Podemos q06); se mantiene null por coherencia con PP q26 en la misma afirmación.",
+  "vox/q11: el programa (libre elección de centro sin barreras económicas, medida 67, y FP con «programas públicos y concertados», medida 58) podría ser la fuente con el mismo −1. Se mantiene la campaña porque Armario nombra la concertada y el programa no."
+ ]
+}
