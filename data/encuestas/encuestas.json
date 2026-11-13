@@ -32,7 +32,8 @@
     "revision_2026_11_10_manana": "Revisión del 10-11-2026 (mañana): ninguna estimación nueva de voto para las generales. CIS: el catálogo de cis.es sigue teniendo el 3582 como último estudio con estimación; el 3584 (preelectoral) no figura y no hay avance publicado. Sigma Dos: el último sondeo de noticias.php es el del 9-11 (ya recogido como sigmados-2026-11-08). GAD3: el último elemento de su RSS es el barómetro de ABC de noviembre (9-11, ya recogido como gad3-2026-11). ABC publicó el 10-11 la tercera entrega de ese mismo barómetro (\"Encuesta ABC | GAD3 (y III)\", escaños en Cataluña: https://www.abc.es/espana/cataluna/rufian-situaria-erc-escanos-29n-vox-quedaria-20261110023040-nt.html). Es un desglose territorial de gad3-2026-11, no una estimación nueva, así que no se ha añadido. 40dB/El País-SER: el RSS de España de El País y la etiqueta de encuestas de la SER no tienen sondeo posterior a 40db-2026-11.",
     "revision_2026_11_12": "Revisión del 12-11-2026 (14:10): ninguna estimación nacional nueva publicada entre el 10 y el 12-11. CIS: el estudio 3584 (preelectoral) aún no está publicado; la portada de cis.es anuncia su avance para hoy 12-11 a las 17:00 (ver cis_preelectoral). Hay que volver a revisar después de esa hora: debe sustituir a cis-2026-10 y probablemente traerá desglose por provincia/CCAA. Sigma Dos: noticias.php no tiene sondeo electoral posterior al del 9-11 (lo último, del 11-11, es una 'Encuesta Tesoro' de TrustSurvey sobre series). GAD3: su RSS añade el 10-11 'Barómetro ABC I Estimación de voto por provincias. Noviembre 2026', que es el desglose provincial de gad3-2026-11 (misma ficha técnica), no una estimación nueva; se ha guardado en gad3-2026-11.desglose_regional. ABC publicó el 12-11 un resumen de encuestas ya existentes (https://www.abc.es/espana/encuestas-elecciones-generales-29n-resultados-psoe-pp-20261112050000-nt.html), sin datos nuevos. 40dB/El País-SER: el RSS de España de El País y la etiqueta de encuestas de la SER no tienen sondeo posterior a 40db-2026-11.",
     "revision_2026_11_12_noche": "Revisión del 12-11-2026 (noche, tras el CIS 3584): ninguna estimación nacional nueva de las 14 empresas de la media posterior a su última entrada. Sigma Dos: noticias.php sigue con el sondeo del 9-11 como último. GAD3: el RSS no tiene nada posterior al desglose provincial del 10-11. 40dB/El País-SER: el RSS de España de El País no trae sondeo nuevo. IMOP, Ateneo del Dato, NC Report, Celeste-Tel, Data10, Target Point, Hamalgama, More in Common, Winston y DYM: sin entregas nuevas en sus medios (búsquedas por medio y agregador Wikipedia, revisión de 2026-11-12T19:02Z, solo como pista). Empresa nueva descartada: Sondaxe/La Voz de Galicia. Su última ola (campo 2–4 nov, n=1.200; publicada el 8-11 en 'Feijoo adelanta a Sánchez y es el candidato preferido para gobernar') está tras el muro de suscriptores, y el texto visible no da la estimación de voto; las cifras que circulan (PP 29,7, PSOE 27,3, Vox 18,6, FA 7,1) solo están en agregadores. La ola anterior (campo hasta el 28-10, publicada el 1-11, texto completo y ficha técnica visibles: PP 29,2, PSOE 26,9, Vox 19,2, Frente Amplio 7,2) no se usa porque la media toma la última encuesta de cada empresa y existe una posterior. Fuentes guardadas en data/sources/encuestas/sondaxe/: lavozdegalicia_20261108_paywall.html (sha256 ef3d4f561455d739bba4ce447b0dfc46facbd972251765fd1efc72dcb245fa1f), lavozdegalicia_20261101.html (sha256 27e915d57e2a592347d8543883ec0d059752e78194a1a2283380aa98622c95c5), temas_sondaxe_20261112.html (sha256 129506459bd9a26459e4bac0bd1aa8d0efc19955eb09be572dc2cafafee24826). EM-Analytics/Electomanía (panel propio de un agregador) sigue fuera, como hasta ahora.",
-    "revision_2026_11_13": "Revisión del 13-11-2026 (mañana). Añadidas: sigmados-2026-11-12 (primera entrega del tracking diario de Sigma Dos para El Mundo, publicada el 12-11 a las 20:14; campo 3–11 nov, n=3.870) y winston-2026-11-13 (Winston/Artículo14, publicada el 13-11; campo 5–8 nov, n=1.501). Encontrada y NO añadida: el primer tracking diario de 40dB para El País y la SER (artículo 'La campaña arranca con la derecha en el horizonte de los 190 escaños', https://elpais.com/espana/elecciones-generales/2026-11-13/la-campana-arranca-con-la-derecha-en-el-horizonte-de-los-190-escanos.html, pubDate 13-11 04:30 GMT en el RSS de portada de El País, guardado en data/sources/encuestas/40db/elpais_rss_portada_20261113.xml, sha256 564bf7780befdc8eeef8217dbafcd26e401f761080e31ae805982d22312a5a8f). elpais.com devuelve 403 a nuestras peticiones, el RSS solo trae la entradilla (sin cifras ni ficha) y no se ha localizado el informe PDF de 40dB en ep00.epimg.net; las cifras que circulan (campo 11–12 nov; PP 31,5, PSOE 29,4, Vox 18,8) solo están en el agregador Demócrata, así que 40db-2026-11 sigue siendo la última de 40dB. Descartadas también: la reestimación del CIS 3584 hecha por Target Point para El Debate (13-11; reestimación de microdatos ajenos, no una encuesta propia, como las demás reestimaciones del CIS) y el promedio de Electocracia citado por El Debate (agregador). Sin entregas nuevas a 13-11 por la mañana en GAD3/ABC, IMOP/El Confidencial, Ateneo del Dato/elDiario.es, NC Report/La Razón, Celeste-Tel/Onda Cero, Data10/OKDIARIO, Target Point/El Debate, Hamalgama/Vozpópuli, More in Common, DYM/Henneo ni SocioMétrica/El Español (RSS y portadas de sección de cada medio). El tracking de Sigma Dos tendrá una entrega nueva cada día hasta el 23-11: cada una sustituye a la anterior."
+    "revision_2026_11_13": "Revisión del 13-11-2026 (mañana). Añadidas: sigmados-2026-11-12 (primera entrega del tracking diario de Sigma Dos para El Mundo, publicada el 12-11 a las 20:14; campo 3–11 nov, n=3.870) y winston-2026-11-13 (Winston/Artículo14, publicada el 13-11; campo 5–8 nov, n=1.501). Encontrada y NO añadida: el primer tracking diario de 40dB para El País y la SER (artículo 'La campaña arranca con la derecha en el horizonte de los 190 escaños', https://elpais.com/espana/elecciones-generales/2026-11-13/la-campana-arranca-con-la-derecha-en-el-horizonte-de-los-190-escanos.html, pubDate 13-11 04:30 GMT en el RSS de portada de El País, guardado en data/sources/encuestas/40db/elpais_rss_portada_20261113.xml, sha256 564bf7780befdc8eeef8217dbafcd26e401f761080e31ae805982d22312a5a8f). elpais.com devuelve 403 a nuestras peticiones, el RSS solo trae la entradilla (sin cifras ni ficha) y no se ha localizado el informe PDF de 40dB en ep00.epimg.net; las cifras que circulan (campo 11–12 nov; PP 31,5, PSOE 29,4, Vox 18,8) solo están en el agregador Demócrata, así que 40db-2026-11 sigue siendo la última de 40dB. Descartadas también: la reestimación del CIS 3584 hecha por Target Point para El Debate (13-11; reestimación de microdatos ajenos, no una encuesta propia, como las demás reestimaciones del CIS) y el promedio de Electocracia citado por El Debate (agregador). Sin entregas nuevas a 13-11 por la mañana en GAD3/ABC, IMOP/El Confidencial, Ateneo del Dato/elDiario.es, NC Report/La Razón, Celeste-Tel/Onda Cero, Data10/OKDIARIO, Target Point/El Debate, Hamalgama/Vozpópuli, More in Common, DYM/Henneo ni SocioMétrica/El Español (RSS y portadas de sección de cada medio). El tracking de Sigma Dos tendrá una entrega nueva cada día hasta el 23-11: cada una sustituye a la anterior.",
+    "revision_2026_11_13_b": "Revisión del 13-11-2026 (09:50). Añadida: 40db-2026-11-13 (primer tracking diario de 40dB para El País y la SER, campo 10–12 nov, n=1.000), que la revisión de la mañana no pudo leer. Fuentes originales: el informe PDF de 40dB servido en elpais.com/infografias/encuestas40db/2026/11-tracking-electoral/Informe_tracking_dia01.pdf (esa ruta no está bloqueada, a diferencia de los artículos de elpais.com) y el artículo de la SER del 13-11, que coincide en PP 31,5/126, PSOE 29,4/118 y Vox 18,8/64. Descartada otra vez SW Demoscopia/La Séptima: el agregador cita un 'Barómetro Nº 8. Datos al 11 de noviembre' como imagen de pbs.twimg.com (HW9EJSoXAAAx13t) y un tuit de @la_septima_tv del 12-11. El oEmbed público de X confirma el tuit (texto sobre el sondeo y una foto) pero no permite comprobar que la foto sea esa imagen, y la imagen no lleva marca, ficha ni fechas de campo; x.com no se ha leído. Se guardan en data/sources/encuestas/swdemoscopia/: twimg_HW9EJSoXAAAx13t_20261112.jpg (sha256 e763f49a71d31c7a9f73961fee35ae236af6323a32f77a7bef0c55ae27cbe670) y x_la_septima_tv_2120975223553949714_oembed.json (sha256 2f5f3cb0d93dd9a8fc0c420b2f144846bd564bd584e16742fd3187e07bbd52ee). swdemoscopia-2026-11-11 sigue con excluir_media. Sin entregas nuevas de otras empresas a esta hora (RSS de El Mundo, ABC, El Confidencial, elDiario.es, OKDIARIO, El Debate, El Español, Artículo14, 20minutos, The Objective, La Vanguardia, laSexta, RTVE, Newtral, HuffPost, infoLibre). El tracking de Sigma Dos del 13-11 se publica por la tarde."
   },
   "encuestas": [
     {
@@ -3872,6 +3873,167 @@
         "data/sources/encuestas/gad3/dw_9xmFD_dataset.csv",
         "data/sources/encuestas/gad3/dw_9xmFD.html"
       ],
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "40db-2026-11-13",
+      "rol": "media",
+      "rol_nota": "Entra en la media de encuestas como la última de 40dB y sustituye ahí a 40db-2026-11. El escenario propio de 40dB (ESCENARIOS_ENCUESTA en pipeline/build_fase2.py) sigue usando 40db-2026-11 (sin cambios en el código en esta revisión).",
+      "encuestadora": "40dB.",
+      "cliente_medio": "El País y Cadena SER (Prisa)",
+      "estudio": "Tracking 29-N (Día 1). 13 de noviembre de 2026",
+      "fecha_publicacion": "2026-11-13",
+      "fecha_publicacion_nota": "Primera entrega del sondeo diario de 40dB. para El País y la SER. Artículo de El País 'La campaña arranca con la derecha en el horizonte de los 190 escaños' (pubDate 13-11 04:30 GMT en el RSS de portada; elpais.com devuelve 403 al artículo) y artículo de la SER 'PP y Vox abren la campaña electoral con una cómoda mayoría absoluta' (datePublished 2026-11-13T07:08:04+01:00). Las cifras salen del informe PDF de 40dB servido en elpais.com/infografias (HTTP Last-Modified Thu, 12 Nov 2026 19:30:38 GMT; CreationDate del PDF 2026-11-12 19:45 CET) y coinciden con el texto de la SER.",
+      "trabajo_campo": {
+        "inicio": "2026-11-10",
+        "fin": "2026-11-12"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 1000,
+      "metodo": "Entrevista online (CAWI). Universo: población general residente en España (excepto Ceuta y Melilla) a partir de 18 años y con derecho a voto. Cuotas por sexo y edad (cruzadas), comunidad autónoma, tamaño de hábitat y clase social (ficha técnica, pág. 24).",
+      "margen_error": "±3,1% (95% de confianza)",
+      "base_porcentajes": "% sobre el total de votos válidos",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.5,
+          "escanos_min": 122,
+          "escanos_max": 135,
+          "escanos_central": 126,
+          "nota": "Los 2 escaños de 'UPN-PP' van en Otros, no en esta fila (la SER suma PP+Vox 'incluyendo la coalición de los populares con UPN en Navarra' = 192)."
+        },
+        {
+          "partido": "PSOE",
+          "pct": 29.4,
+          "escanos_min": 113,
+          "escanos_max": 121,
+          "escanos_central": 118
+        },
+        {
+          "partido": "Vox",
+          "pct": 18.8,
+          "escanos_min": 61,
+          "escanos_max": 70,
+          "escanos_central": 64
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 3.5,
+          "escanos_min": 4,
+          "escanos_max": 6,
+          "escanos_central": 5,
+          "nota": "Sin Podemos ni las 'otras coaliciones territoriales de izquierda' (filas siguientes). Escaños: 'Más Madrid 2 – Comuns 2 – CHA 1'. A diferencia de 40db-2026-11, este informe da Frente Amplio y las coaliciones territoriales en filas separadas."
+        },
+        {
+          "partido": "Compromís: Front Valencià",
+          "nombre_publicado": "Compromís: Front Valencià (Compromís-EUPV-Podem-ERPV)",
+          "pct": 1.1,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_central": 3,
+          "nota": "Componente de 'Otras coaliciones territoriales de izquierda*' (1,6% en total; 5 escaños, 3-5). Escaños: 'Podemos 1 – Compromís 2'."
+        },
+        {
+          "partido": "UPC",
+          "nombre_publicado": "Unidad del Pueblo Canario UPC (NC-BC, Podemos, IU, Sumar)",
+          "pct": 0.3,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "escanos_central": 1,
+          "nota": "Componente de 'Otras coaliciones territoriales de izquierda*'. Escaño: 'Nueva Canarias 1'."
+        },
+        {
+          "partido": "Ara Més-Front Ampli",
+          "nombre_publicado": "AraMés – Front Ampli (AraMés – EU-MS)",
+          "pct": 0.2,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "escanos_central": 1,
+          "nota": "Componente de 'Otras coaliciones territoriales de izquierda*'. Escaño: 'Ara Més 1'."
+        },
+        {
+          "partido": "SALF",
+          "nombre_publicado": "Se Acabó La Fiesta (SALF)",
+          "pct": 1.7
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.3,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "escanos_central": 1
+        },
+        {
+          "partido": "Otro + Blanco",
+          "pct": 12.2,
+          "tipo": "otros_y_blanco"
+        }
+      ],
+      "escanos_otros": {
+        "total_central": 31,
+        "min": 30,
+        "max": 32,
+        "desglose_central": [
+          {
+            "partido": "ERC",
+            "escanos": 10
+          },
+          {
+            "partido": "Bildu",
+            "escanos": 7
+          },
+          {
+            "partido": "JxC",
+            "escanos": 3
+          },
+          {
+            "partido": "PNV",
+            "escanos": 3
+          },
+          {
+            "partido": "AA",
+            "escanos": 3
+          },
+          {
+            "partido": "BNG",
+            "escanos": 2
+          },
+          {
+            "partido": "UPN-PP",
+            "escanos": 2
+          },
+          {
+            "partido": "Coalición Canaria",
+            "escanos": 1
+          }
+        ]
+      },
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "PP 31,5 + PSOE 29,4 + Vox 18,8 + Frente Amplio 3,5 + SALF 1,7 + Podemos 1,3 + Otras coaliciones territoriales de izquierda 1,6 (1,1 + 0,2 + 0,3) + Otro + Blanco 12,2 = 100,0. No sumar además la fila agregada de coaliciones territoriales (no se guarda como fila).",
+      "proyeccion_escanos": "central + horquilla",
+      "proyeccion_escanos_nota": "Página 'Estimación de escaños' del informe (pág. 8), leída del texto del PDF y comprobada visualmente. Centrales: PP 126 + PSOE 118 + Vox 64 + Frente Amplio 5 + otras coaliciones territoriales de izquierdas 5 (3-5) + Podemos 1 + Otros 31 = 350. Otros: '* ERC 10, Bildu 7, JxC 3, PNV 3, AA 3, BNG 2, UPN-PP 2, Coalición Canaria 1'. La SER confirma PP 126, PSOE 118, Vox 64, 11 escaños para Frente Amplio + coaliciones territoriales + Podemos y el desglose de Otros.",
+      "contexto": "Según la SER, el movimiento respecto al 9-11 (Vox 61→64, PP 129→126) 'coincide con la polémica entrevista de David Broncano a Santiago Abascal'. El sondeo diario sustituye cada día al anterior.",
+      "discrepancias_fuente": "El agregador Wikipedia (citado en la revisión de la mañana) daba campo 11–12 nov; la ficha técnica del PDF y la SER dicen 10 a 12 de noviembre.",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://elpais.com/infografias/encuestas40db/2026/11-tracking-electoral/Informe_tracking_dia01.pdf",
+          "https://cadenaser.com/nacional/2026/11/13/pp-y-vox-abren-la-campana-electoral-con-una-comoda-mayoria-absoluta-cadena-ser/",
+          "https://elpais.com/espana/elecciones-generales/2026-11-13/la-campana-arranca-con-la-derecha-en-el-horizonte-de-los-190-escanos.html"
+        ],
+        "secundarias": [],
+        "descubrimiento_nota": "El artículo de la SER se localizó en el RSS general de cadenaser.com; la URL del PDF, a través del agregador Wikipedia (cita 'Tracking 29-N (Día 1)'). Ninguna cifra sale del agregador. El mismo PDF se sirve también en ep00.epimg.net con la misma ruta (mismo tamaño)."
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/40db/2026_11_tracking_dia01_informe.pdf",
+        "data/sources/encuestas/40db/cadenaser_20261113.html",
+        "data/sources/encuestas/40db/elpais_rss_portada_20261113.xml"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/40db/2026_11_tracking_dia01_informe.pdf": "70f96aa361ded2569300380ac22c0024eaff681f2c58e087c6ce2d9eaf14be53",
+        "data/sources/encuestas/40db/cadenaser_20261113.html": "a66e20ccf0ba7fcecf0904c9593f303b8e6837f823ce2aa32245c83a069a64a0",
+        "data/sources/encuestas/40db/elpais_rss_portada_20261113.xml": "564bf7780befdc8eeef8217dbafcd26e401f761080e31ae805982d22312a5a8f"
+      },
       "verificado_en_fuente_primaria": true
     },
     {

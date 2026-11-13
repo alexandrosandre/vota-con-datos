@@ -72,8 +72,11 @@ Desgloses territoriales, de encuestas anteriores de Sigma Dos:
 - Campo 5–8 nov, 1.501 entrevistas online. No publica margen de error ni más metodología.
 - El gráfico incrustado (d2k.es) trae la tabla completa, que suma 100 % con "Otros y blanco". Su Frente Amplio incluye a Compromís. CC aparece con un 0,0 % y se guarda tal cual.
 
-### 40dB, tracking diario (no añadido)
-- El primer tracking diario para El País y la SER (13-11, campo 11–12 nov) no se ha podido leer: elpais.com devuelve 403, el RSS solo trae la entradilla y no se ha localizado el PDF de 40dB. Ver `meta.revision_2026_11_13`.
+### 40dB, tracking diario (`40db-2026-11-13`, publicado 13-11)
+- Primera entrega del sondeo diario para El País y la SER: campo del 10 al 12 de noviembre (no 11–12, como decía el agregador), 1.000 entrevistas online, ±3,1 %. Cada entrega nueva sustituye a la anterior en la media.
+- Los artículos de elpais.com dan 403, pero el informe PDF de 40dB se descarga sin problema desde `elpais.com/infografias/encuestas40db/2026/11-tracking-electoral/Informe_tracking_dia01.pdf`. El artículo de la SER del 13-11 confirma las cifras principales.
+- A diferencia de `40db-2026-11`, el informe da Frente Amplio (3,5 %) separado de las "otras coaliciones territoriales de izquierda" (1,6 %: Compromís 1,1, UPC 0,3, Ara Més 0,2). Se guardan como filas separadas, igual que el CIS 3584.
+- El escenario propio de 40dB sigue usando `40db-2026-11`.
 
 ### Desgloses territoriales de Sigma Dos
 - Son de encuestas cuyo campo empieza el 1-10, antes de la convocatoria.
