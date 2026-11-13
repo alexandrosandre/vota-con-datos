@@ -1,0 +1,649 @@
+{
+ "grupo": "g4",
+ "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2 (regla de fechas del 13-nov y criterio del editor sobre portavoces parlamentarios)",
+ "fecha": "2026-11-13",
+ "aprobado": true,
+ "revisadas": 67,
+ "resultado": {
+  "ok": 61,
+  "corregido": 2,
+  "rechazado": 4
+ },
+ "alcance": "Las 67 posiciones nuevas de codificacion_g4.json, todas con fuente «campaña» y basadas en el Diario de Sesiones (65 del Congreso y 2 del Senado). Para cada una: (1) se descargó el PDF oficial de congreso.es o senado.es con peticiones normales (34 diarios), se extrajo con pdftotext y se comprobó la cita fragmento a fragmento con la normalización de verify_quotes.py: las 67 son literales y las copias locales coinciden con el original; (2) orador, grupo y tipo de turno se leyeron en el Diario («por/en nombre del Grupo X tiene la palabra», defensa de iniciativa o enmienda propia, pregunta de control, Gobierno); (3) fecha de la sesión ≥ 2025-11-01 en todas (la más antigua, 5-nov-2025 en el Senado), marco null; (4) página impresa («Pág.») frente a «pagina»; (5) posición juzgada contra la afirmación tal como está redactada, sin partir del valor del codificador, con los criterios ya verificados en g1-g3 (p. ej., defender una regularización pasada no es posición sobre repetirla; las salvaguardas no equivalen a frenar Mercosur). Criterio del editor sobre liderazgo: cuenta quien habla en nombre de su grupo en ese debate; los ministros cuentan cuando dan su posición sobre la medida; los votos nunca. En los grupos de coalición se comprobó que el orador es del partido al que se atribuye la posición: Sumar, IU y Comuns en el Frente Amplio; Podemos, Compromís, BNG y CC en el Mixto; Vox en el Mixto del Senado. Mecanismo: build_fase1.py solo lee codificacion_g*.json y usa verificacion_g*.json como puerta («aprobado»), igual que en g1-g3. Por eso las correcciones se aplicaron en codificacion_g4.json: valor, campos y notas con el prefijo «Verificación independiente (13-nov)». Las celdas rechazadas quedan con valor null y todos los campos a null, al estilo de g3, y la nota conserva la fuente descartada. En g1-g3 esas cuatro celdas ya eran null, así que no se pisa ninguna posición previa.",
+ "cambios": [
+  {
+   "partido": "psoe",
+   "pregunta": "q29",
+   "antes": -2,
+   "despues": -1,
+   "motivo": "−2 → −1. Celebra la firma del acuerdo, lo contrario de pedir frenarlo, pero no rechaza expresamente esa petición y en la misma intervención valora las salvaguardas que permiten suspender importaciones. Ante la duda sobre la intensidad, −1."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q31",
+   "antes": -1,
+   "despues": null,
+   "motivo": "Comentario incidental de Gordillo en un debate del Senado sobre otra materia (Memoria Democrática y censo). Critica una «prórroga forzosa» del «decreto de vivienda» sin identificar la medida; ese paquete incluía también una prórroga extraordinaria de dos años, que el codificador trató como medida distinta en otro caso. No consta que hable de la renovación automática por cinco años: null."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q35",
+   "antes": -1,
+   "despues": -2,
+   "motivo": "−1 → −2. Santiago (IU), en nombre del grupo, rechaza la PPR misma («la cadena perpetua de siempre»; «cuarenta años de cárcel o cadena perpetua o prisión permanente revisable es lo mismo») y declara la ampliación «incompatible» con los derechos humanos, sin matices. Mismo criterio que ERC, Junts y EH Bildu en el mismo debate. Cita ampliada."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q29",
+   "antes": 1,
+   "despues": null,
+   "motivo": "«El Mercosur actual és una amenaça» y la exigencia de que el campo valenciano «no pagui els plats trencats» piden protección, no frenar el acuerdo. Encaja con lo que la candidata pactó después con La Unió (salvaguardas y aranceles), que g2 juzgó sin posición sobre frenarlo. Ante la duda, null."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q15",
+   "antes": 1,
+   "despues": null,
+   "motivo": "Salvador defiende la regularización en trámite (la de 2026) y el principio de regularizar a quien «ja està vivint aquí». Defender una medida pasada no es posición sobre repetirla: mismo criterio verificado en Frente Amplio q15 y BNG q15. El programa de ERC no la propone: null."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q29",
+   "antes": 1,
+   "despues": null,
+   "motivo": "Gavín solo califica el acuerdo de «amenaça greu» en una frase sobre la comparecencia que pidieron; no dice oponerse a él ni que haya que frenarlo. Llamarlo amenaza es compatible con pedir salvaguardas: sin posición inequívoca, null."
+  }
+ ],
+ "correcciones_de_campos": [
+  {
+   "partido": "vox",
+   "pregunta": "q21",
+   "campo": "cita, pagina",
+   "motivo": "Cita completada con «A nuestro juicio, esta modificación nada añade a la protección de las mujeres» (p. 32); página 31 → 31-32."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q35",
+   "campo": "cita",
+   "motivo": "Se restituye el sujeto omitido por el corte: «Esta medida y la prisión permanente revisable son todo lo contrario»."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q35",
+   "campo": "cita",
+   "motivo": "Se añade «Rajoy, la prisión permanente revisable, la cadena perpetua de siempre, retrotrayendo a España al antiguo régimen» (p. 30)."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q26",
+   "campo": "pagina",
+   "motivo": "90 → 89-90: la cita empieza en la p. 89 del Diario nº 190."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q31",
+   "campo": "formato",
+   "motivo": "Es una pregunta a la ministra de Vivienda en la sesión de control, no un discurso."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q30",
+   "campo": "formato",
+   "motivo": "Es una pregunta a la vicepresidenta primera en la sesión de control, no un discurso en un debate."
+  },
+  {
+   "partido": "(55 celdas)",
+   "pregunta": "—",
+   "campo": "quien",
+   "motivo": "Regla del editor: nombre y «en nombre del Grupo X» para quien habla por su grupo en el debate. Grupos de coalición: Mixto (Podemos, Compromís, BNG, CC), Plurinacional SUMAR (Frente Amplio) y Mixto del Senado (Vox). Se dejan como estaban los cargos de líderes que no hablan por un grupo: ministros, presidente, Nogueras, Aizpurua, Matute, Agirretxea, Micó en pregunta de control y Belarra en q31."
+  }
+ ],
+ "posiciones": [
+  {
+   "partido": "pp",
+   "pregunta": "q21",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Franco González habla «por el Grupo Parlamentario Popular» en el debate de totalidad de la reforma del art. 43 CE, que es la medida. Rechazo expreso y central de la reforma («desacertada», «error político y jurídico», «fraude constitucional»): −2. El programa del PP del 29-N calla."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q13",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "La ministra (cabeza de lista por Ciudad Real) responde a una interpelación de VOX sobre vivienda y da su propia posición sobre la «prioridad nacional» en el acceso a la vivienda («creo con firmeza que es moralmente indecente»; «la prioridad nacional no protege a nadie»). En contra, sin nombrar la vivienda social: −1."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q18",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "El ministro (nº 2 del PSPV por Valencia) presenta y defiende el proyecto que es la medida y afirma como propia la obligación del Estado de absorber parte de la deuda («como hace con este proyecto de ley»). Propuesta expresa y prioritaria: +2."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q35",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Serrada interviene «en nombre del Grupo Parlamentario Socialista» en la toma en consideración de la ampliación de la PPR y anuncia el voto en contra. Rechaza ampliarla «sin más» pero defiende la PPR vigente como pena excepcional: −1 con matiz."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q26",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "El ministro declara «suficiente» el 2,1 % del PIB y rechaza llegar al 5 %. Es posición propia del ministro sobre el nivel de gasto (no solo descripción del Gobierno), contraria a subir al 3,5 %; no nombra el 3,5 % ni 2035: −1."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q29",
+   "veredicto": "corregido",
+   "valor_codificador": -2,
+   "valor_final": -1,
+   "motivo": "−2 → −1. Celebra la firma del acuerdo, lo contrario de pedir frenarlo, pero no rechaza expresamente esa petición y en la misma intervención valora las salvaguardas que permiten suspender importaciones. Ante la duda sobre la intensidad, −1."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q01",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Hernández Quero habla «por el Grupo Parlamentario VOX» en la convalidación del RDL 8/2026 (tope del 2 % a la actualización de rentas en toda España). Rechaza los «controles de precios» del alquiler porque desploman la oferta: −1 (no nombra un precio máximo estatal)."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q31",
+   "veredicto": "rechazado",
+   "valor_codificador": -1,
+   "valor_final": null,
+   "motivo": "Comentario incidental de Gordillo en un debate del Senado sobre otra materia (Memoria Democrática y censo). Critica una «prórroga forzosa» del «decreto de vivienda» sin identificar la medida; ese paquete incluía también una prórroga extraordinaria de dos años, que el codificador trató como medida distinta en otro caso. No consta que hable de la renovación automática por cinco años: null."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q32",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Sáez defiende la enmienda de VOX: suprimir el punto de la PNL de Junts que ajustaba el salario mínimo al coste de vida «en cada nación del Estado o comunidad autónoma», porque rompe la igualdad entre españoles según el territorio. Rechazo reactivo de un SMI territorial: −1."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q11",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Armario habla «por el Grupo Parlamentario VOX». Defiende que la concertada complementa la red pública en el 0-3, una etapa no obligatoria, y rechaza «atacar» ese modelo. En contra de retirar su financiación, de forma indirecta: −1."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q33",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Armario presenta la moción de VOX, cuyo título incluye el «rechazo a su reparto por el territorio nacional», y dice que repartirlos es «ilegal a todos los efectos». Rechazo expreso y prioritario del reparto, es decir, a favor de suprimirlo: +2."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q16",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Hoces habla «por el Grupo Parlamentario VOX»: «España y su unidad no se negocian» y reprocha que se quiera «convocar un referéndum para separarse de España». Rechazo expreso y central de un referéndum pactado: −2."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q17",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Sánchez García habla por VOX en la moción del BNG que pedía un concierto para Galicia. Niega que haya razones para «pedir un sistema de concierto o de cupo» y recuerda que VOX vota siempre en contra del cupo: −1."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q18",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Sáez comparece «en nombre del Grupo Parlamentario VOX» para defender la enmienda a la totalidad de devolución del proyecto que es la medida («premiar la irresponsabilidad»): −2."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q19",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Figaredo habla «por el Grupo Parlamentario VOX»: «los parques eólicos marinos [...] están matando a los pescadores españoles». En contra, de pasada: −1."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q21",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Robles defiende la enmienda a la totalidad de VOX a la reforma del art. 43 CE. −2 confirmado. Se completa la cita con el rechazo de fondo de la p. 32 («esta modificación nada añade a la protección de las mujeres»), porque la primera frase sola critica el procedimiento; en el mismo turno invoca el «derecho a la vida»."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q23",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Gordillo, senador de Vox, interviene en el turno de portavoces «en representación del Grupo Parlamentario Mixto» (Senado, 5-nov-2025, dentro de plazo) y propone como segunda de tres soluciones «Desalojo inmediato y penas ejemplares». Propuesta propia, expresa, más exigente que 48 horas: +2."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q24",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Gil Lázaro defiende la interpelación de VOX y rechaza incluso la reforma parcial de la Ley de Seguridad Ciudadana porque «va a abandonar» a los agentes. A fortiori, contra derogarla: −1."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q35",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Aizcorbe habla «por el Grupo Parlamentario VOX» y apoya sin reservas la proposición que amplía la PPR («simplemente incorpora dos supuestos»; «el ordenamiento jurídico debe responder con firmeza»). Apoyo expreso y sin matices en el debate de la medida: +2, simétrico al −2 de quienes rechazan la PPR misma."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q34",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Flores Juberías habla por VOX en la comparecencia sobre la Resolución 2797. Critica que se tome el plan de autonomía como base y pide que el censo sirva para que el pueblo saharaui «decida sobre su propio futuro, contemplando todas las posibilidades». A favor de una votación de autodeterminación; formulado como pregunta retórica y sin decir «referéndum»: +1."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q30",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Flores Juberías, en el turno en contra de VOX, rechaza el control estatal de precios, incluido el de los alimentos que atribuye a Sumar: −1."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q21",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "La portavoz del Grupo Plurinacional SUMAR (Sumar, integrado en el Frente Amplio) defiende la reforma que es la medida y reivindica haberla propuesto: +2."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q23",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Pisarello (Comuns, integrado en el Frente Amplio) habla por el Grupo Plurinacional SUMAR y rechaza la ley del PP de desalojos en 24 horas, más dura que la de 48. En contra, reactivo: −1."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q35",
+   "veredicto": "corregido",
+   "valor_codificador": -1,
+   "valor_final": -2,
+   "motivo": "−1 → −2. Santiago (IU), en nombre del grupo, rechaza la PPR misma («la cadena perpetua de siempre»; «cuarenta años de cárcel o cadena perpetua o prisión permanente revisable es lo mismo») y declara la ampliación «incompatible» con los derechos humanos, sin matices. Mismo criterio que ERC, Junts y EH Bildu en el mismo debate. Cita ampliada."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q34",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "La portavoz del Grupo SUMAR rechaza que se tome el plan de autonomía como «única base posible» y defiende el derecho del pueblo saharaui a decidir su futuro. Sin mencionar el referéndum ni rechazar el plan en sí: +1."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q29",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Valero (IU Andalucía, nº 3 del Frente Amplio por Madrid) habla por el Grupo Plurinacional SUMAR: «hay que frenar el acuerdo Mercosur». Es la medida tal como está redactada, sin matices y como primer «enemigo» que enumera; Sumar lo reitera en junio («no apoyamos Mercosur»): +2."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q31",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Belarra, secretaria general, pide en una pregunta de control sobre vivienda hacer «indefinidos los contratos del alquiler». Va más allá de la renovación quinquenal, y Montero (30-sep-2026) la llama «la medida más estructural». Mismo criterio que Compromís (+2): +2. Se corrige el formato: es pregunta de control, no discurso."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q13",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Sánchez Serna (Podemos) habla por el Grupo Mixto en la moción de VOX «los españoles primero» para la vivienda social, que es la medida, y la rechaza como «tesis racista»: −1."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q18",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Santana (Podemos), en el turno del Grupo Mixto, defiende la condonación con la condición de que no se use para bajar impuestos a los ricos: +1."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q21",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Belarra: «el aborto debe estar garantizado en la Constitución, [...] pero no así». A favor del reconocimiento constitucional con objeción a su ubicación: +1."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q23",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Belarra rechaza la ley del PP contra la ocupación, que prevé desalojos en 24 horas: −1."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q35",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Velarde (Podemos), por el Grupo Mixto: la ampliación «no mejora la seguridad» y profundiza «una deriva punitiva». Rechazo sin pedir derogar la PPR: −1."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q34",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Belarra pide «rectificar la posición sobre el Sáhara» y respetar el derecho a la autodeterminación, sin mencionar el referéndum ni rechazar expresamente el plan: +1."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q29",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Velarde (Podemos), por el Grupo Mixto: «nosotras decimos no a Mercosur». Rechazo explícito del acuerdo, sin pedir expresamente que se frene: +1."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q22",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Micó (Compromís), por el Grupo Mixto, presenta el cierre del Ministerio de Igualdad que pide VOX como «arrasar amb les polítiques feministes». En contra, reactivo: −1."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q23",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Micó rechaza la ley antiokupación del PP como «relato de la alarma okupa»: −1."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q24",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Pregunta de control de la cabeza de lista sobre una carga policial (materia ligada a la ley): reprocha que el Gobierno no haya tenido tiempo «para cargarse esta ley mordaza». A favor de eliminarla, sin propuesta detallada: +1."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q34",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Micó exige como primera de tres demandas «recuperar una posició digna i ferma en la defensa del dret d’autodeterminació del poble sahrauí». El salto entre fragmentos (unos 2.400 caracteres) no altera el sentido. No menciona el referéndum ni rechaza expresamente el plan: +1."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q29",
+   "veredicto": "rechazado",
+   "valor_codificador": 1,
+   "valor_final": null,
+   "motivo": "«El Mercosur actual és una amenaça» y la exigencia de que el campo valenciano «no pagui els plats trencats» piden protección, no frenar el acuerdo. Encaja con lo que la candidata pactó después con La Unió (salvaguardas y aranceles), que g2 juzgó sin posición sobre frenarlo. Ante la duda, null."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q15",
+   "veredicto": "rechazado",
+   "valor_codificador": 1,
+   "valor_final": null,
+   "motivo": "Salvador defiende la regularización en trámite (la de 2026) y el principio de regularizar a quien «ja està vivint aquí». Defender una medida pasada no es posición sobre repetirla: mismo criterio verificado en Frente Amplio q15 y BNG q15. El programa de ERC no la propone: null."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q21",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Vallugera, por el Grupo Republicano, considera «una temeritat» y «no oportú» abrir el encaje constitucional del aborto tras la sentencia del TC: en contra de la reforma, aunque defiende el aborto libre. −1, no −2: el rechazo es a esta reforma y a este momento. Página 50-51 correcta."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q35",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Vallugera, en nombre del Grupo Republicano: «nuestro partido siempre se ha mostrado en contra de la prisión permanente revisable y lo va a seguir haciendo», y votará no a ampliarla. Rechaza la PPR misma como posición permanente: −2, mismo criterio que el −2 de programa de PNV y BNG."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q26",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Jordà, por el Grupo Republicano, comparte la moción para revertir el aumento del gasto militar y discrepa de «la cursa actual de despesa militar». En contra, sin nombrar el 3,5 %: −1. Se corrige la página: la cita empieza en la 89 (89-90)."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q27",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Álvaro, por el Grupo Republicano, rechaza la moción del PP que convertía a las Fuerzas Armadas en policía en Ceuta («això no es pot fer constitucionalment»). La vigilancia de la frontera es función policial: −1."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q01",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Madrenas, por Junts, sostiene que los datos desmienten que «la regulació i la contenció de rendes funcionen»: menos contratos y precios más altos. Rechazo indirecto de la limitación de rentas, la técnica que la afirmación generaliza a toda España: −1. Caso límite; véase dudas."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q11",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cervera, por Junts: la concertada forma parte del servicio público de educación y hay que «actualitzar els mòduls de la concertada als costos reals», es decir, financiarla más. Incompatible con retirarle la financiación: −1."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q15",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Nogueras, portavoz en el Congreso, critica la «regularització massiva» aprobada «per la porta del darrere» y sin parangón en la UE. Rechazar la de 2026 por masiva implica oponerse a otra igual. Sin la nota posterior de Junts guardada, que según el codificador matiza: −1."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q16",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Madrenas, por Junts, pone como modelo el referéndum que el Reino Unido «va pactar» con Escocia frente a la respuesta del Estado al 1-O. A favor de un referéndum pactado, de forma indirecta: +1."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q18",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cruset, por Junts: suprimir el FLA es «un pas necessari» y Junts facilitará la tramitación, aunque pide condonar toda la deuda del FLA. A favor con condiciones: +1."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q35",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Pagès, en nombre de Junts: la PPR «és una barbaritat contrària a tots els principis de l’estat de dret penal», luego «necessàriament» en contra de ampliarla. Rechazo de la PPR misma: −2."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q34",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Pagès, por Junts: «una solució negociada [...] d’acord amb les resolucions de les Nacions Unides» para celebrar «un referèndum d’autodeterminació», tras criticar el giro de 2022 hacia el plan de autonomía. Propuesta expresa del referéndum: +2."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q29",
+   "veredicto": "rechazado",
+   "valor_codificador": 1,
+   "valor_final": null,
+   "motivo": "Gavín solo califica el acuerdo de «amenaça greu» en una frase sobre la comparecencia que pidieron; no dice oponerse a él ni que haya que frenarlo. Llamarlo amenaza es compatible con pedir salvaguardas: sin posición inequívoca, null."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q06",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "La portavoz Aizpurua pide al presidente «recuperar [...] la reducción de la jornada laboral», que es el proyecto de 37,5 h devuelto en 2025, condicionado a la negociación. Sin cifra ni mención al salario: +1."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q33",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Iñarritu, por EH Bildu, reprocha a las comunidades del PP y VOX no acoger a los menores y añade (p. 98) que lo sensato es que puedan «ser trasladadas a otros lugares del Estado». Defender el traslado frente a la negativa autonómica es oponerse a suprimir el reparto obligatorio, de forma indirecta: −1. Caso límite; véase dudas."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q35",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Iñarritu rechaza la ampliación y la PPR misma («la cadena perpetua [...] la reintrodujeron, por este eufemismo, en 2015»; «Esta medida y la prisión permanente revisable son todo lo contrario»): −2. Se completa la cita con el sujeto omitido, que es lo que sostiene el −2."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q26",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Iñarritu: absurdo el 5 % y en contra incluso del 2 %, con alternativa propia (diplomacia, cooperación). A fortiori, rechazo expreso de llegar al 3,5 %: −2."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q27",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Iñarritu: «somos contrarios a la militarización en crisis humanitarias» y critica a los soldados desplegados en Ceuta. Principio contrario al despliegue militar en esta crisis, aunque apoya el decreto y la crítica se centra en las calles: −1 con matiz. Véase dudas."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q34",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Iñarritu, en una comparecencia pedida por EH Bildu y de la que el Sáhara es el primer asunto, rechaza expresamente el plan de autonomía («no es creíble, no es serio y no es justo») y defiende la «libre autodeterminación». No dice «referéndum», pero el criterio verificado en g3 (BNG y ERC, +2 sin la palabra) admite autodeterminación = referéndum cuando se rechaza expresamente la autonomía y es prioritario. FA, Podemos y Compromís quedan en +1 porque no rechazan el plan de forma expresa o no es central: +2."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q30",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Matute (cabeza de lista por Bizkaia) pide que el Gobierno «limite el precio de los alimentos básicos» como medida de emergencia: +1. Se corrige el formato: es una pregunta de control a la vicepresidenta primera, no un discurso."
+  },
+  {
+   "partido": "pnv",
+   "pregunta": "q11",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Agirretxea, en una pregunta de control sobre la FP (materia de la afirmación) y hablando por el PNV («no cuente con nosotros»), defiende la FP concertada sostenida con fondos públicos, una etapa no obligatoria, y rechaza cambiar el modelo: −1 indirecta."
+  },
+  {
+   "partido": "pnv",
+   "pregunta": "q15",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "La portavoz Vaquero: los fenómenos estructurales «no se pueden despachar con regularizaciones puntuales cada cierto tiempo». Rechaza las regularizaciones extraordinarias periódicas; el programa del 29-N solo quiere las vías ordinarias: −1."
+  },
+  {
+   "partido": "pnv",
+   "pregunta": "q21",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Vaquero: pese a las reservas, «prevalece nuestro compromiso [...] para que la Constitución consagre» el derecho. A favor con fuertes reservas: +1."
+  },
+  {
+   "partido": "pnv",
+   "pregunta": "q34",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Legarda, por el Grupo Vasco, pide «revertir» la carta de 2022 sobre el plan de autonomía y apela al derecho a la autodeterminación, sin pedir el referéndum: +1."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q12",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Rego (Grupo Mixto): «en nacións como Galiza a lingua vehicular debe ser [...] o galego». Es incompatible con un mínimo de castellano fijado por ley o tribunales y, junto con la exigencia del programa de todas las competencias educativas, implica que lo decida Galicia: +1 indirecta."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q18",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Rego, al defender la moción del BNG, celebra el proyecto de condonación como «paso na boa dirección», incluido en su acuerdo de investidura; matiza que alivia y no resuelve: +1. El programa lo presenta como logro: coherente."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q27",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Rego, por el Grupo Mixto, rechaza la proposición de VOX para usar el Ejército contra la inmigración irregular, en plena crisis de Ceuta, como «militarización da sociedade»: −1."
+  },
+  {
+   "partido": "cc",
+   "pregunta": "q31",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "La portavoz Valido, por el Grupo Mixto, vota no al decreto de renovación automática porque «esta renovación automática» retrae la oferta, aunque deja abierta una ley tramitada en las Cortes. Rechazo con matiz de la medida nombrada: −1. El programa posterior calla."
+  }
+ ],
+ "dudas": [
+  "q35 (ampliar la PPR), criterio común del debate del 17-mar-2026: −2 para quien rechaza la PPR misma de forma categórica (ERC, Junts, EH Bildu y Frente Amplio, este último subido de −1); −1 para quien solo rechaza esta ampliación (PSOE, que defiende la PPR vigente, y Podemos); +2 para Vox, que apoya la ampliación sin reservas. Alternativa: −1/+1 para todos por tratarse de reacciones a una proposición ajena, anteriores a la convocatoria.",
+  "frente_amplio/q29 (+2 mantenido): «hay que frenar el acuerdo Mercosur» es la medida literal, sin matices. Alternativa: +1, si «prioritaria» exige más que ser el primer punto de un turno de fijación de posición de un líder autonómico.",
+  "eh_bildu/q34 (+2 mantenido): rechazo expreso del plan de autonomía más «libre autodeterminación», sin la palabra «referéndum», con el mismo criterio que BNG y ERC (programa, +2). Alternativa: +1, como Frente Amplio, Podemos y Compromís.",
+  "eh_bildu/q27 (−1) y eh_bildu/q33 (−1): indirectas. En q27, EH Bildu apoya el decreto de Ceuta, que incluía refuerzo del Ejército, y critica sobre todo a los soldados en las calles. En q33 defiende trasladar a los menores, pero no nombra la obligatoriedad del reparto. Alternativa en ambas: null.",
+  "junts/q01 (−1): la cita contrapone datos a «la regulació i la contenció de rendes funcionen», sin hablar de un tope estatal. Alternativa: null.",
+  "junts/q15 (−1): la nota posterior de Junts (ElNacional.cat, otoño de 2026) que, según el codificador, «no cuestiona que España pueda regularizar» no tiene copia guardada y no se pudo cotejar.",
+  "psoe/q13 y psoe/q26: ministros hablando en nombre del Gobierno. Se aceptan porque dan su propia posición sobre la medida («creo con firmeza»; «consideramos que este nivel es suficiente»). Alternativa: null, si se exige que hablen como partido.",
+  "Nombres de pila: el Diario solo da apellidos. Donde el codificador no los aportaba (Franco González, Serrada Pariente, Armario González, Robles López, Aizcorbe Torra), quien lleva solo los apellidos, que identifican al orador sin ambigüedad en la XV legislatura."
+ ]
+}
