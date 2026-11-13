@@ -311,7 +311,7 @@ export function Contrasta() {
                   Analizamos sus {datos.propuestas.length} compromisos centrales{datos.compromisos_total ? ` (de ${datos.compromisos_total} recogidos)` : ''}:
                   los que sus líderes han dicho en público y en primera persona para esta legislatura. Usamos el mismo método y la misma revisión
                   independiente que con los programas{datos.revision ? ` (${datos.revision} correcciones aplicadas)` : ''}. Cuando publique su
-                  programa, lo analizaremos y sustituirá a esto. <a href="#/metodologia">Cómo se hace</a>.
+                  programa, sus propuestas centrales saldrán del programa, y los compromisos que no estén en él se seguirán mostrando aparte. <a href="#/metodologia">Cómo se hace</a>.
                 </p>
               ) : (
               <p class="muted" style={{ fontSize: '0.85rem', margin: 0 }}>

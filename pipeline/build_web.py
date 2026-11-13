@@ -121,7 +121,8 @@ def main():
                     fase3["partidos"][p["id"]]["complemento"] = ec["propuestas"]
             continue
         # Sin programa (o aún sin analizar): compromisos públicos de sus líderes, mismo protocolo
-        # (docs/prompts/1b, 3 y 4). Lo sustituye el análisis del programa en cuanto se aprueba.
+        # (docs/prompts/1b, 3 y 4). Al aprobarse el programa, las 12 salen de él y los compromisos que no
+        # estén en él pasan a complemento (base "complemento", arriba).
         dc = D / "programas" / p["id"] / "compromisos"
         evc, revc, sel = dc / "evaluacion.json", dc / "revision.json", dc / "seleccion.json"
         if evc.exists() and revc.exists() and sel.exists() and json.loads(revc.read_text()).get("aprobado"):

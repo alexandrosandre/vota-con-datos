@@ -160,7 +160,8 @@ export function Metodologia() {
             las contrasta con fuentes públicas: leyes, sentencias de los tribunales, informes oficiales y estudios académicos. Entre otros, de la
             Autoridad Independiente de Responsabilidad Fiscal (AIReF, que vigila las cuentas públicas), el Banco de España, el Instituto
             Nacional de Estadística (INE), la oficina de estadística europea (Eurostat), la Organización para la Cooperación y el Desarrollo
-            Económicos (OCDE) y la Comisión Europea.
+            Económicos (OCDE) y la Comisión Europea. Además, con el método de los compromisos que se explica a continuación, buscamos hasta 4
+            medidas importantes que sus líderes han prometido en público y que no están en el programa, y las mostramos aparte.
           </p>
           <p>
             <strong>Si un partido no ha publicado programa</strong>, hacemos lo mismo con los compromisos que sus líderes han hecho en público
@@ -168,7 +169,8 @@ export function Metodologia() {
             Siempre en primera persona y con cita literal: nada de rumores ni de lo que cuenta un periodista con sus palabras. Guardamos una
             copia de cada fuente y comprobamos automáticamente que la cita está en ella. Elegimos hasta 12 que el propio partido presenta como
             centrales (las anuncia el candidato, las repite, abren su campaña); a veces hay menos. Las valoramos con los mismos criterios y la
-            misma revisión independiente. Cuando el partido publica su programa, el análisis del programa sustituye a este.
+            misma revisión independiente. Cuando el partido publica su programa, las propuestas centrales pasan a salir del programa, y los compromisos de sus líderes que no
+            estén en él se mantienen en una sección aparte.
           </p>
           <p>Cada propuesta se valora en estos criterios, elegidos porque son los que mejor se pueden comprobar:</p>
           <ul>

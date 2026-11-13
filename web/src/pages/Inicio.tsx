@@ -124,7 +124,8 @@ export function Inicio() {
           <p>
             Analizamos el programa oficial de cada partido. Si aún no lo ha publicado, analizamos con el mismo método lo que sus líderes han
             prometido en público. Cada análisis aparece cuando ha pasado una revisión independiente; hasta entonces figura como pendiente.
-            Cuando un partido publica su programa, su análisis sustituye al anterior.
+            Cuando un partido publica su programa, sus propuestas centrales pasan a salir del programa, y los compromisos de sus líderes que no
+            estén en él se siguen mostrando aparte.
           </p>
         </details>
         <details>

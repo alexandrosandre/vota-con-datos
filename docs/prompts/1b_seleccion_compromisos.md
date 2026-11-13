@@ -2,7 +2,8 @@
 
 Para los partidos que no han publicado programa oficial para el 29-N (o lo publican tarde). Mismo
 rigor que con un programa: lo único que cambia es el documento de partida. Cuando el partido publica
-su programa, se analiza con el prompt 1 y ese análisis sustituye a este.
+su programa, se analiza con el prompt 1: las 12 propuestas centrales pasan a salir del programa, y los
+compromisos de este análisis que no figuren en él se conservan como complemento (sección final).
 
 ---
 
