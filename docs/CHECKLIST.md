@@ -24,9 +24,12 @@ correcta o legal) hasta que esté hecho.
   analizados que no estén en el programa pasan a complemento (hasta 4, `base: complemento`, nueva
   revisión).
   - [ ] PSOE — presenta su programa el 15-nov.
-  - [ ] Vox — **publicado el 12-nov** (PDF en votasentidocomun.es, la web de campaña enlazada desde
-    voxespana.es). Descargado el 13-nov; análisis, revisión independiente y recodificación del paso 1 en
-    curso. Mientras tanto el paso 2 sigue con sus compromisos y lo dice.
+  - [x] Vox — **publicado el 12-nov** (PDF en votasentidocomun.es, la web de campaña enlazada desde
+    voxespana.es). Hecho el 13-nov: 12 propuestas del programa + 2 de complemento (revisión independiente
+    aprobada, 91 correcciones), auditoría de coherencia (`data/fase3/coherencia_2026-11-13.md`: 26 cambios de
+    texto en pp, salf, junts y vox, ninguna valoración cambia) y paso 1 recodificado (g6: Vox 23→25 posiciones).
+    Abierto, sin efecto en valoraciones: IVA del 4 % italiano para la primera vivienda (salf-01, vox-09) sin
+    fuente oficial; motivo de «no_verificable» en la financiación de pp-02.
   - [ ] PSC, Frente Amplio, Podemos, Junts, EH Bildu, Compromís, NC-BC, Ara Més, UPN — sin fecha.
 - [ ] **3. [Yo] Revisar la selección de afirmaciones del paso 1** para cubrir mejor a los 18 partidos:
   análisis, codificación y verificación independiente; decido yo, sin pasar por ti. **Hecha el 13-nov**

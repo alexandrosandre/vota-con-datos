@@ -1,0 +1,675 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-13",
+ "alcance": "12 prioridades × 8 criterios y campo «beneficiarios» de data/programas/vox/evaluacion.json, contra el programa «Es sentido común» (55 págs., SHA-256 77d2158a…4567, coincide con partidos.json) y las fuentes citadas (prompt 4). Se leyó el programa entero por páginas. Las 12 citas son literales y empiezan en la página indicada (comprobado página a página, no solo en el texto completo; las partes tras «[...]» están en esa página o la siguiente); también lo son los fragmentos entrecomillados del programa en los textos, salvo uno corregido (vox-10). Se abrieron las 193 URL distintas de la evaluación: todas responden salvo EUR-Lex (404 a la descarga: Directiva 2003/109 y C-94/20, sustituidas por la copia del DOUE en el BOE y por el texto oficial de la Oficina de Publicaciones), la NRC (403, sustituida por el Federal Register), Euronews (406; leída en resumen y reforzada con Funcas) y PubMed y OUP (leídas por otra vía). Se comprobó cada cifra, fecha, norma y sentencia con su fuente; en particular: objetivo de 2035 para turismos y furgonetas (Reglamento 2023/851: −100 %; propuesta COM(2025) 995 de 16-12-2025 para rebajarlo al 90 %, votada en la comisión ENVI el 4-11-2026, pleno indicativo el 14-12-2026, según el Observatorio Legislativo y el EPRS) y Reglamento 2026/667 (objetivo de −90 % en 2040 y aplazamiento del RCDE 2 a 2028); Directiva 2003/109 (arts. 11.1.d y f, 11.4, 12 y considerando 13) y STJUE C-94/20 (apdos. 38-40 y fallo); Directiva 2022/542 (arts. 98.2, 105 bis y 105 ter y punto 10 del anexo III) para el IVA del 0 % en vivienda; Ley 5/2018, art. 441 LEC, STC 32/2019, LO 1/2025, STS 622/2021, PIDCP art. 11 y RDL 29/2026 (arts. 2 y 5.Dos) con su convalidación (BOE-A-2026-23755); Reglamento 2026/2280 (arts. 2, 4, 50 y considerandos); disposiciones finales sobre carácter orgánico de la LO 4/2000 y de la LO 2/1986. Cuatro revisores auxiliares abrieron y leyeron las fuentes de vox-01/05/06, vox-02/09, vox-03/04, vox-07/08/10 y vox-11/12; el revisor comprobó directamente los puntos señalados como de especial cuidado y cada hallazgo antes de corregir. verify_quotes: 0 citas no encontradas.",
+ "seleccion": "Las 12 prioridades coinciden con extraccion.json y se sostienen en el propio documento, que no tiene introducción ni resumen: cubren los dos rótulos legibles de las fotografías de portadilla («REMIGRACIÓN», p. 12; «PRIORIDAD N…» y «DESREGU…», p. 15), los seis primeros bloques del índice (Ceuta y Melilla; Economía —tres medidas, el bloque más extenso—; Inmigración; Prioridad nacional; Vivienda; Desregulación), la medida más extensa del programa (8) y las primeras medidas de Familia y vida y de Justicia, ambas repetidas o reforzadas en otros bloques. Quedan sin prioridad Sector primario, Sanidad, Educación, Seguridad y Defensa e Infraestructuras; sus medidas no tienen mayor énfasis en el documento que las elegidas (la oposición al Pacto Verde del bloque rural se evalúa en vox-03, y la militarización de fronteras del bloque de seguridad, en vox-01). No se ha visto sesgo en la selección.",
+ "igual_estandar": "Se comparó cada valoración con las propuestas equivalentes ya aprobadas. Coinciden en los ocho criterios: vox-12 con pp-05 (CGPJ), vox-08 con pp-03 (desalojo de ocupantes; M/M/N/N/M/M/M/M), vox-05 con pp-02 (regularizaciones y arraigo), vox-01 con salf-05 (expulsiones), vox-09 con salf-01 (primera vivienda: encaje legal «mixta» con la parte del IVA contraria a la Directiva, como el 4 % de salf-01). Diferencias justificadas por hechos y escritas en el texto: vox-04 financiación «mixta» frente a pp-12 «favorable», porque vox-04 añade centrales nuevas con coste estimable; vox-07 encaje legal «desfavorable» frente a la «mixta» de la anterior evaluación por compromisos (y de pp-02 o pnv-11), porque el programa define una preferencia por nacionalidad sin excepciones y un IMV «únicamente» para españoles, que contradice en su núcleo la Directiva 2003/109 para los residentes de larga duración (regla de cc-06 y salf-06), mientras Abascal exceptuaba a quien hubiera cotizado; vox-03 evidencia «desfavorable», porque la evidencia mide el mismo instrumento que la medida revertiría y contradice su premisa (el RCDE redujo emisiones sin contracción detectable de la industria regulada), regla de compromis-10; vox-03 largo plazo «desfavorable», porque suprimir instrumentos con efecto documentado sobre las emisiones alejaría a España de objetivos legales vigentes (−23 % en 2030 respecto a 1990 frente al −4,8 % de 2025, según el inventario oficial), como en la regla de bng-07 y pnv-08 (la medida agrava un desequilibrio cuantificado). Cambio por mismo estándar: vox-02 financiación pasa de «mixta» a «no_verificable» (regla de erc-09 y de la auditoría del 8-11: sin ninguna cifra de coste de la medida). En «internacional», vox-05, vox-06 y vox-07 siguen en «mixta» por aplicación parcial del diseño (regla de bng-01 y salf-10), y se añade al texto de vox-06 y vox-07 por qué.",
+ "recuento_inicial": {
+  "favorable": 4,
+  "mixta": 82,
+  "desfavorable": 3,
+  "no_verificable": 7
+ },
+ "recuento_final": {
+  "favorable": 4,
+  "mixta": 81,
+  "desfavorable": 3,
+  "no_verificable": 8
+ },
+ "cambios": [
+  {
+   "propuesta": "vox-01",
+   "criterio": "legal",
+   "antes": "pero la custodia de fronteras corresponde a la Guardia Civil y el control de entradas a la Policía Nacional (art. 12 de la Ley Orgánica 2/1986), cuya reforma exigiría mayoría absoluta.",
+   "despues": "pero la custodia de fronteras corresponde a la Guardia Civil y el control de entradas a la Policía Nacional (art. 12.1 de la Ley Orgánica 2/1986, precepto sin carácter orgánico según su disposición final sexta, que puede reformarse por ley ordinaria).",
+   "motivo": "Dato erróneo: la disposición final sexta de la LO 2/1986 excluye expresamente del carácter orgánico el art. 12.1 («salvo los artículos 10, 11.2 a 6 y 12.1»), así que su reforma no exige mayoría absoluta."
+  },
+  {
+   "propuesta": "vox-01",
+   "criterio": "legal",
+   "antes": "y el Reglamento (UE) 2026/2280 exige una evaluación individual del riesgo de devolución.",
+   "despues": "y el Reglamento (UE) 2026/2280, aplicable en su mayor parte desde el 17-10-2027, permite dejar fuera de su ámbito a quienes son interceptados al cruzar irregularmente una frontera exterior, pero obliga a respetar con ellos el principio de no devolución (arts. 2.4.b, 2.7 y 50).",
+   "motivo": "Dato erróneo: el Reglamento excluye en principio a los interceptados con ocasión de un cruce ilegal de las fronteras exteriores (art. 2.4.b, salvo que el Estado decida aplicarlo, art. 2.5) y para ellos solo exige garantías mínimas y respetar la no devolución (art. 2.7); la «evaluación individual» está en los considerandos 16 y 19, y casi todo el articulado se aplica desde el 17-10-2027 (art. 50.3)."
+  },
+  {
+   "propuesta": "vox-01",
+   "criterio": "financiacion",
+   "antes": "El Consejo de Ministros de 25-8-2026 aprobó 25 millones para la atención de menores no acompañados en Ceuta, pero no cifró el coste de los retornos ni del despliegue.",
+   "despues": "En el Consejo de Ministros de 25-8-2026 el Gobierno presentó un informe de medidas para Ceuta que incluye una partida de 25 millones para la atención de menores no acompañados, pero no cifró el coste de los retornos ni del despliegue.",
+   "motivo": "Sin respaldo: la referencia de La Moncloa dice que en ese Consejo «se ha presentado un primer informe» con medidas, entre ellas «la aprobación de una partida de 25 millones», no que el Consejo la aprobara ese día."
+  },
+  {
+   "propuesta": "vox-01",
+   "criterio": "beneficiarios",
+   "antes": "(83.517 según el último dato de la serie del INE, de 2021)",
+   "despues": "(84.496 a 1-10-2026, dato provisional de la Estadística Continua de Población del INE)",
+   "motivo": "Dato desactualizado: la serie del Padrón citada se cerró en 2021; el INE publica la Estadística Continua de Población (serie ECP115485: 84.496 a 1-10-2026, provisional)."
+  },
+  {
+   "propuesta": "vox-01",
+   "criterio": "beneficiarios (campo)",
+   "antes": "(83.517 en el último dato de la serie del INE, de 2021)",
+   "despues": "(84.496 a 1-10-2026, dato provisional del INE)",
+   "motivo": "Igual que en el criterio «beneficiarios»."
+  },
+  {
+   "propuesta": "vox-01",
+   "criterio": "fuentes (todos los criterios donde figura)",
+   "antes": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/DPOP24484?nult=2 | INE, cifras oficiales de población (revisión del Padrón): Ceuta, serie DPOP24484",
+   "despues": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/ECP115485?nult=3 | INE, Estadística Continua de Población: Ceuta, serie ECP115485 (1-10-2026, provisional)",
+   "motivo": "Sustituye a la serie del Padrón cerrada en 2021 (abierta: 84.345, 84.491 y 84.496 en 2026)."
+  },
+  {
+   "propuesta": "vox-01",
+   "criterio": "internacional (fuentes)",
+   "antes": "https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20250522-1 | Eurostat (22-5-2025): Immigration law enforcement in the EU, 2024 figures",
+   "despues": "(fuente retirada)",
+   "motivo": "Fuente citada sin ningún dato usado en el texto de este criterio."
+  },
+  {
+   "propuesta": "vox-02",
+   "criterio": "financiacion",
+   "antes": "valoración: mixta",
+   "despues": "valoración: no_verificable",
+   "motivo": "Mismo estándar: el programa no fija tipos, tramos ni cuantías, así que no hay base pública para estimar el coste de la medida; la recaudación total y el coste de la reforma de 2015-2016 son referencias de escala, no una estimación. Es la regla aplicada a erc-09 («no hay base pública para estimar el coste neto: el programa no cuantifica la rebaja») y a vox-11, y fijada en la auditoría del 8-11 («si no hay ninguna cifra de coste, no_verificable»). pp-10 es «mixta» porque una parte (la deflactación, 0,1 % del PIB) tiene coste conocido; vox-c11, porque Figaredo cifra la suya."
+  },
+  {
+   "propuesta": "vox-02",
+   "criterio": "financiacion",
+   "antes": "El programa no cifra la rebaja, pero su escala puede acotarse con datos públicos: en 2025",
+   "despues": "No hay base pública para estimar el coste: el programa no fija tipos, tramos ni cuantías. Como referencia de escala, en 2025",
+   "motivo": "Acompaña al cambio de valoración a «no_verificable»."
+  },
+  {
+   "propuesta": "vox-02",
+   "criterio": "financiacion",
+   "antes": "las subvenciones de funcionamiento a los partidos suman 52,7 millones al año",
+   "despues": "las subvenciones de funcionamiento a los partidos sumaron 13,18 millones en el segundo trimestre de 2026 (unos 52,7 al año, cálculo propio)",
+   "motivo": "Precisión: la resolución del BOE solo da los pagos del segundo trimestre (13.176.035,01 €); la cifra anual es un cálculo propio y debe decirse."
+  },
+  {
+   "propuesta": "vox-02",
+   "criterio": "evidencia",
+   "antes": "Con todas las reformas del IVA en la UE de 1996 a 2015, los precios responden el doble a las subidas que a las bajadas (Benzarti, Carloni, Harju y Kosonen, 2020);",
+   "despues": "En dos reformas del IVA en Finlandia los precios respondieron el doble a las subidas que a las bajadas, y con todas las reformas del IVA en la UE de 1996 a 2015 la asimetría es similar (Benzarti, Carloni, Harju y Kosonen, 2020);",
+   "motivo": "Fidelidad a la fuente: el «twice as much» del resumen procede de dos reformas finlandesas; para la UE 1996-2015 el estudio halla «similar levels of asymmetry»."
+  },
+  {
+   "propuesta": "vox-02",
+   "criterio": "antecedentes",
+   "antes": "La Ley 26/2014 redujo la tarifa del IRPF de siete a cinco tramos y el tipo general de Sociedades del 30 % al 25 % en 2015-2016;",
+   "despues": "La Ley 26/2014 redujo la tarifa del IRPF de siete a cinco tramos y la Ley 27/2014, el tipo general de Sociedades del 30 % al 25 % (28 % en 2015), en 2015-2016;",
+   "motivo": "Dato erróneo: la rebaja de Sociedades la hizo la Ley 27/2014 (preámbulo y art. 29.1; 28 % en 2015), no la Ley 26/2014, que solo reformó el IRPF."
+  },
+  {
+   "propuesta": "vox-02",
+   "criterio": "beneficiarios",
+   "antes": "El coste recaería en el Estado, en las comunidades autónomas, que reciben el 50 % del IRPF y del IVA, y en los perceptores",
+   "despues": "El coste recaería en el Estado, en las comunidades autónomas, que reciben el 50 % del IVA y la cuota autonómica del IRPF (esta solo cambiaría si la rebaja afectara a la base o a los mínimos y no solo a la tarifa estatal), y en los perceptores",
+   "motivo": "Precisión: del IRPF se ceden las cuotas líquidas autonómicas, con escala propia de cada comunidad (arts. 26.2.a y 46.1.b de la Ley 22/2009); una rebaja de la tarifa estatal la soporta solo el Estado."
+  },
+  {
+   "propuesta": "vox-02",
+   "criterio": "beneficiarios (campo)",
+   "antes": "que reciben la mitad del IRPF y del IVA,",
+   "despues": "que reciben la mitad del IVA y la cuota autonómica del IRPF,",
+   "motivo": "Igual que en el criterio «beneficiarios»."
+  },
+  {
+   "propuesta": "vox-03",
+   "criterio": "antecedentes",
+   "antes": "En julio de 2019 el Ayuntamiento de Madrid aprobó una moratoria de multas en Madrid Central y dos juzgados",
+   "despues": "En 2019 el Ayuntamiento de Madrid aprobó una moratoria de multas en Madrid Central y en julio dos juzgados",
+   "motivo": "Sin respaldo: la fuente (El Independiente, 16-7-2019) recoge las suspensiones de julio, no la fecha de aprobación de la moratoria."
+  },
+  {
+   "propuesta": "vox-03",
+   "criterio": "antecedentes",
+   "antes": "Ante el retraso de muchos municipios, el Gobierno condicionó",
+   "despues": "El Gobierno condicionó",
+   "motivo": "Sin respaldo: ni el RDL 17/2025 ni el RD 953/2026 hablan de retraso de los municipios."
+  },
+  {
+   "propuesta": "vox-03",
+   "criterio": "antecedentes",
+   "antes": "y el RD 953/2026, en vigor desde el 26-11-2026, exige un régimen sancionador activo para considerarla implantada.",
+   "despues": "y el RD 953/2026, que entrará en vigor el 26-11-2026, exigirá acreditar la aplicación efectiva del régimen sancionador para considerarla implantada.",
+   "motivo": "Dato erróneo: hoy (13-11-2026) el RD 953/2026 aún no está en vigor; la ficha del BOE da como fecha de entrada en vigor el 26-11-2026 y el consolidado marca el precepto como «No vigente aún»."
+  },
+  {
+   "propuesta": "vox-03",
+   "criterio": "fuentes (título)",
+   "antes": "Infobae (Europa Press, 21-4-2026): el Supremo avala la anulación parcial de la zona de bajas emisiones de Madrid (prensa)",
+   "despues": "Infobae (EFE, 21-4-2026): el Supremo avala la anulación parcial de la zona de bajas emisiones de Madrid (prensa)",
+   "motivo": "Título incorrecto: la pieza es de EFE («Madrid, 21 abr (EFE)»), no de Europa Press."
+  },
+  {
+   "propuesta": "vox-03",
+   "criterio": "internacional",
+   "antes": "mientras Stuttgart y Ludwigsburg las mantienen.",
+   "despues": "mientras Stuttgart y Ludwigsburg las mantenían entonces.",
+   "motivo": "Sin respaldo en presente: la nota del Regierungspräsidium es de 29-12-2023 y no informa del estado en 2026."
+  },
+  {
+   "propuesta": "vox-03",
+   "criterio": "beneficiarios (campo)",
+   "antes": "(5,63 millones de turismos sin distintivo en 2024, según la DGT)",
+   "despues": "(en España había 5,63 millones de turismos sin distintivo en 2024, según la DGT)",
+   "motivo": "Precisión: la tabla de la DGT da el parque nacional sin distintivo, no los vehículos afectados por una ZBE."
+  },
+  {
+   "propuesta": "vox-04",
+   "criterio": "legal",
+   "antes": "y la Ley 7/2021 no las prohíbe;",
+   "despues": "y la Ley 7/2021 no las prohíbe, aunque su art. 3.2 dispone que antes de 2050 el sistema eléctrico se base exclusivamente en fuentes renovables;",
+   "motivo": "Omisión relevante: el art. 3.2 de la Ley 7/2021 (consolidado) fija que antes de 2050 «el sistema eléctrico deberá estar basado, exclusivamente, en fuentes de generación de origen renovable», lo que afecta a centrales nuevas."
+  },
+  {
+   "propuesta": "vox-04",
+   "criterio": "financiacion",
+   "antes": "según la orden de prórroga de Almaraz, Enresa no prevé costes",
+   "despues": "según la orden de prórroga de Almaraz, para esa extensión limitada (unos 31 y 19 meses para sus dos reactores) Enresa no prevé costes",
+   "motivo": "Generalización sin respaldo: la orden se refiere a una extensión limitada que mantiene el cese del parque en 2035, no a derogar todo el calendario."
+  },
+  {
+   "propuesta": "vox-04",
+   "criterio": "evidencia",
+   "antes": "los tres reactores EPR construidos en Europa acumulan sobrecostes",
+   "despues": "los tres proyectos EPR europeos (Olkiluoto 3, Flamanville 3 y Hinkley Point C, este aún en construcción) acumulan sobrecostes",
+   "motivo": "Dato erróneo: según la figura 3 de la NAO, Hinkley Point C está en construcción; no son tres reactores construidos."
+  },
+  {
+   "propuesta": "vox-04",
+   "criterio": "largo_plazo",
+   "antes": "Flamanville 3 llevaba más de 19 sin ella en abril de 2026",
+   "despues": "Flamanville 3, cuya obra empezó en 2007, seguía sin ella en abril de 2026",
+   "motivo": "Sin respaldo: la NAO solo da el año de inicio (2007); de 2007 a abril de 2026 no se puede afirmar «más de 19» años."
+  },
+  {
+   "propuesta": "vox-04",
+   "criterio": "internacional",
+   "antes": "y en EE. UU. hay reactores con licencias para operar hasta 80 años;",
+   "despues": "y en EE. UU. la NRC concedió en 2019 segundas renovaciones de licencia a Turkey Point 3 y 4, que autorizaban su operación hasta 2052 y 2053;",
+   "motivo": "Fuente inaccesible: la página de la NRC devuelve 403; se sustituye por el aviso oficial del Federal Register (10-12-2019), que dice exactamente esto."
+  },
+  {
+   "propuesta": "vox-04",
+   "criterio": "fuentes (todos los criterios donde figura)",
+   "antes": "https://www.nrc.gov/reactors/operating/licensing/renewal/subsequent-license-renewal.html | US NRC, Subsequent License Renewal",
+   "despues": "https://www.federalregister.gov/documents/2019/12/10/2019-26500/florida-power-and-light-company-turkey-point-nuclear-generating-unit-nos-3-and-4 | Federal Register (10-12-2019): la NRC concede las licencias renovadas por segunda vez de Turkey Point 3 y 4",
+   "motivo": "La página de la NRC devuelve 403 a la descarga y no se ha podido leer."
+  },
+  {
+   "propuesta": "vox-05",
+   "criterio": "legal",
+   "antes": "y el Reglamento (UE) 2026/2280 establece un sistema común de retorno, pero exige una evaluación individual del principio de no devolución y prohíbe las expulsiones colectivas, por lo que",
+   "despues": "y el Reglamento (UE) 2026/2280, aplicable en su mayor parte desde el 17-10-2027, establece un sistema común de retorno con decisiones basadas en una evaluación individual y obliga a respetar el principio de no devolución y la prohibición de expulsiones colectivas del art. 19 de la Carta (considerandos 12 y 19 y art. 4), por lo que",
+   "motivo": "Precisión: la prohibición de expulsiones colectivas y la evaluación individual están en los considerandos 12, 16 y 19 (el art. 4 obliga a aplicar la Carta), y los arts. 5 y 10 se aplican desde el 17-10-2027 (art. 50.3)."
+  },
+  {
+   "propuesta": "vox-05",
+   "criterio": "evidencia",
+   "antes": "observa más empleo formal de los inmigrantes sin efecto en los nativos",
+   "despues": "observa más empleo formal de los inmigrantes sin efecto en el de los nativos, y menos empleo informal de los trabajadores poco cualificados",
+   "motivo": "Fidelidad a la fuente: el resumen dice que no se vio afectado el empleo formal de los nativos, pero «there was a decrease in informal employment of both native and immigrant low-skilled workers»."
+  },
+  {
+   "propuesta": "vox-05",
+   "criterio": "fuentes (título)",
+   "antes": "Elias, Monras y Vázquez-Grenno (2025), Understanding the Effects of Legalizing Undocumented Immigrants, Journal of Labor Economics 43(3)",
+   "despues": "Elias, Monras y Vázquez-Grenno (2025), Understanding the Effects of Granting Work Permits to Undocumented Immigrants, Journal of Labor Economics 43(3)",
+   "motivo": "Título incorrecto: así figura el artículo en la revista (vol. 43, n.º 3, pp. 763-802)."
+  },
+  {
+   "propuesta": "vox-05",
+   "criterio": "largo_plazo",
+   "antes": "Funcas advierte de que, sin vías de regularización, la población irregular tiende a crecer cuando las llegadas son altas, y",
+   "despues": "Funcas señala que el arraigo ha evitado volúmenes de irregularidad como los anteriores a 2005, aunque no los aumentos cuando las llegadas son altas, y",
+   "motivo": "Sin respaldo: Funcas no habla de un escenario «sin vías de regularización»; dice que el arraigo «ha prevenido» volúmenes como los anteriores a 2005 pero no ha evitado «los notables crecimientos» en periodos de llegadas abundantes."
+  },
+  {
+   "propuesta": "vox-05",
+   "criterio": "largo_plazo",
+   "antes": "El nuevo reglamento europeo de retorno puede elevar la capacidad de ejecución a partir de 2027, pero los retornos siguen",
+   "despues": "El nuevo reglamento europeo de retorno, aplicable en su mayor parte desde el 17-10-2027, busca aumentar los retornos efectivos, pero estos siguen",
+   "motivo": "Sin respaldo: el Reglamento declara el objetivo de fomentar los retornos efectivos, no una previsión de capacidad."
+  },
+  {
+   "propuesta": "vox-05",
+   "criterio": "beneficiarios",
+   "antes": "Afectaría a unas 840.000 personas en situación irregular a 1-1-2025 (Funcas), el 91 % de nacionalidades americanas,",
+   "despues": "Afectaría a unas 840.000 personas en situación irregular a 1-1-2025 (Funcas), el 91 % de nacionalidades americanas, cifra anterior a la regularización de 2026, que recibió 1.174.978 solicitudes,",
+   "motivo": "Falta contexto temporal: Funcas advierte de que su estimación es anterior a la última reforma de la regularización, y la de 2026 recibió 1.174.978 solicitudes (La Moncloa, 2-7-2026)."
+  },
+  {
+   "propuesta": "vox-05",
+   "criterio": "beneficiarios",
+   "antes": "incluidas renovaciones)",
+   "despues": "incluidas modificaciones y prórrogas)",
+   "motivo": "Precisión: las 437.900 suman 417.142 iniciales, 8.791 modificaciones y 11.983 prórrogas (respuesta del Gobierno 184/17060)."
+  },
+  {
+   "propuesta": "vox-05",
+   "criterio": "antecedentes",
+   "antes": "incluidas renovaciones,",
+   "despues": "incluidas modificaciones y prórrogas,",
+   "motivo": "Igual que en «beneficiarios»."
+  },
+  {
+   "propuesta": "vox-05",
+   "criterio": "beneficiarios (fuentes)",
+   "antes": "—",
+   "despues": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2026/020726-balance-regularizacion-extraordinaria.aspx | La Moncloa (2-7-2026), balance de la regularización extraordinaria",
+   "motivo": "Fuente del dato de 1.174.978 solicitudes añadido."
+  },
+  {
+   "propuesta": "vox-05",
+   "criterio": "beneficiarios (campo)",
+   "antes": "a 1-1-2025 según Funcas (el 91 % de nacionalidades americanas)",
+   "despues": "a 1-1-2025 según Funcas (el 91 % de nacionalidades americanas; cifra anterior a la regularización de 2026)",
+   "motivo": "Igual que en el criterio «beneficiarios»."
+  },
+  {
+   "propuesta": "vox-05",
+   "criterio": "fuentes (título)",
+   "antes": "Real Decreto 316/2026, de 14 de abril, regularización extraordinaria (BOE)",
+   "despues": "Real Decreto 316/2026, de 14 de abril, que modifica el Reglamento de Extranjería (regularización extraordinaria) (BOE)",
+   "motivo": "Título impreciso: el real decreto modifica el Reglamento aprobado por el RD 1155/2024."
+  },
+  {
+   "propuesta": "vox-06",
+   "criterio": "legal",
+   "antes": "La Ley de Extranjería prohíbe hoy expulsar a residentes que perciban",
+   "despues": "La Ley de Extranjería prohíbe hoy, salvo infracciones muy graves del art. 54.1.a o reincidencia, expulsar a residentes que perciban",
+   "motivo": "Dato incompleto: el art. 57.5 exceptúa la infracción del art. 54.1.a y la reincidencia."
+  },
+  {
+   "propuesta": "vox-06",
+   "criterio": "fuentes (todos los criterios donde figura)",
+   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:32003L0109 | Directiva 2003/109/CE, estatuto de los residentes de larga duración (EUR-Lex)",
+   "despues": "https://boe.es/doue/2004/016/L00044-00053.pdf | Directiva 2003/109/CE, estatuto de los residentes de larga duración (DOUE L 16, 23-1-2004, copia del BOE)",
+   "motivo": "Fuente rota: EUR-Lex devuelve 404 a la descarga (13-11-2026); se sustituye por la copia oficial del DOUE en el BOE."
+  },
+  {
+   "propuesta": "vox-06",
+   "criterio": "fuentes (todos los criterios donde figura)",
+   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:62020CJ0094 | TJUE, sentencia de 10-6-2021, asunto C-94/20, Land Oberösterreich (EUR-Lex)",
+   "despues": "https://publications.europa.eu/resource/celex/62020CJ0094 | TJUE, sentencia de 10-6-2021, asunto C-94/20, Land Oberösterreich (texto en español, Oficina de Publicaciones de la UE)",
+   "motivo": "Fuente rota: EUR-Lex devuelve 404 a la descarga (13-11-2026); se sustituye por el texto oficial en español de la Oficina de Publicaciones de la UE, comprobado (apdos. 38-40 y fallo)."
+  },
+  {
+   "propuesta": "vox-06",
+   "criterio": "evidencia",
+   "antes": "la rebaja redujo la renta disponible de los refugiados un 30 %",
+   "despues": "la rebaja redujo la renta disponible de los refugiados un 30 % de media en sus cinco primeros años",
+   "motivo": "Precisión: el estudio da ese 30 % como media de los cinco primeros años."
+  },
+  {
+   "propuesta": "vox-06",
+   "criterio": "internacional",
+   "antes": "176 leyes sobre el acceso de migrantes a prestaciones entre 2000 y 2019.",
+   "despues": "176 leyes sobre el acceso, los requisitos o la cuantía de las prestaciones de refugiados y migrantes entre 2000 y 2019; ese caso cubre solo la parte de la medida que limita las prestaciones.",
+   "motivo": "Precisión de la fuente («176 bills on refugee and migrant welfare eligibility, program requirements, or welfare levels») y explicación de por qué es «mixta» (aplicación parcial del diseño, regla de las auditorías de coherencia)."
+  },
+  {
+   "propuesta": "vox-06",
+   "criterio": "antecedentes",
+   "antes": "no se ha aplicado en España un retorno ligado a la percepción de ayudas.",
+   "despues": "no se ha aplicado en España un retorno ligado a la percepción de ayudas no contributivas o asistenciales.",
+   "motivo": "Contradicción interna: el plan de 2008, descrito en el mismo texto, ligaba el retorno al cobro anticipado de la prestación contributiva por desempleo."
+  },
+  {
+   "propuesta": "vox-06",
+   "criterio": "beneficiarios",
+   "antes": "El coste lo asumirían el Estado (incentivos) y",
+   "despues": "El coste del plan, que el programa no detalla, lo asumirían el Estado y",
+   "motivo": "Sin respaldo: el programa no dice que haya incentivos (la propia concreción lo señala)."
+  },
+  {
+   "propuesta": "vox-07",
+   "criterio": "legal",
+   "antes": "algo que una ley orgánica podría cambiar (art. 13 CE)",
+   "despues": "preceptos sin carácter orgánico (disposición final cuarta) que una ley ordinaria podría cambiar (art. 13 CE)",
+   "motivo": "Dato erróneo: la disposición final cuarta de la LO 4/2000 no incluye los arts. 13 y 14 entre los orgánicos («Los preceptos no incluidos en el apartado anterior no tienen naturaleza orgánica»)."
+  },
+  {
+   "propuesta": "vox-07",
+   "criterio": "legal",
+   "antes": "y el TJUE (C-94/20) considera básica toda ayuda que garantiza una existencia digna.",
+   "despues": "y el TJUE (C-94/20, apdos. 39 y 40) considera básica toda prestación destinada a garantizar una existencia digna a quienes no disponen de recursos suficientes.",
+   "motivo": "Fidelidad a la fuente: la sentencia (apdos. 39-40, con cita de Kamberaj y del art. 34 de la Carta) se refiere a prestaciones para quienes no dispongan de recursos suficientes."
+  },
+  {
+   "propuesta": "vox-07",
+   "criterio": "fuentes (todos los criterios donde figura)",
+   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:32003L0109 | Directiva 2003/109/CE, estatuto de los residentes de larga duración (EUR-Lex)",
+   "despues": "https://boe.es/doue/2004/016/L00044-00053.pdf | Directiva 2003/109/CE, estatuto de los residentes de larga duración (DOUE L 16, 23-1-2004, copia del BOE)",
+   "motivo": "Fuente rota: EUR-Lex devuelve 404 a la descarga (13-11-2026); se sustituye por la copia oficial del DOUE en el BOE."
+  },
+  {
+   "propuesta": "vox-07",
+   "criterio": "fuentes (todos los criterios donde figura)",
+   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:62020CJ0094 | TJUE, sentencia de 10-6-2021, asunto C-94/20, Land Oberösterreich (EUR-Lex)",
+   "despues": "https://publications.europa.eu/resource/celex/62020CJ0094 | TJUE, sentencia de 10-6-2021, asunto C-94/20, Land Oberösterreich (texto en español, Oficina de Publicaciones de la UE)",
+   "motivo": "Fuente rota: EUR-Lex devuelve 404 a la descarga (13-11-2026); se sustituye por el texto oficial en español de la Oficina de Publicaciones de la UE, comprobado (apdos. 38-40 y fallo)."
+  },
+  {
+   "propuesta": "vox-07",
+   "criterio": "evidencia",
+   "antes": "redujo su renta disponible un 30 %",
+   "despues": "redujo su renta disponible un 30 % de media en los cinco primeros años",
+   "motivo": "Precisión: el estudio da ese 30 % como media de los cinco primeros años (la caída inicial fue de alrededor del 50 %)."
+  },
+  {
+   "propuesta": "vox-07",
+   "criterio": "internacional",
+   "antes": "176 leyes sobre el acceso de migrantes a prestaciones entre 2000 y 2019 (OCDE, recogido en el estudio danés); la reforma danesa de 2002 es la mejor evaluada y muestra efectos negativos en los hijos de los afectados.",
+   "despues": "176 leyes sobre el acceso, los requisitos o la cuantía de las prestaciones de refugiados y migrantes entre 2000 y 2019 (OCDE, recogido en el estudio danés); la reforma danesa de 2002 es la mejor evaluada: a corto plazo aumentó el empleo de los adultos, pero tuvo efectos negativos duraderos en los hijos de los afectados.",
+   "motivo": "Precisión de la fuente y resultados dispares que justifican «mixta»: el estudio halla un rendimiento positivo a corto plazo «driven by adults' positive labor supply response» y un balance negativo a largo plazo."
+  },
+  {
+   "propuesta": "vox-07",
+   "criterio": "beneficiarios",
+   "antes": "El coste recaería en los extranjeros residentes (3.497.284 con autorización en régimen de extranjería a 31-12-2025)",
+   "despues": "El coste recaería en los extranjeros residentes (7.500.944 con documentación de residencia a 31-12-2025, de ellos 3.497.284 en régimen de extranjería y 3.804.191 con certificado de la UE o la AELC)",
+   "motivo": "Precisión: el programa habla de «los españoles» y no excluye a los ciudadanos de la UE; la nota de la OPI da el total de extranjeros con documentación de residencia."
+  },
+  {
+   "propuesta": "vox-07",
+   "criterio": "beneficiarios (campo)",
+   "antes": "El coste recaería en los extranjeros residentes (3.497.284 con autorización en régimen de extranjería a 31-12-2025)",
+   "despues": "El coste recaería en los extranjeros residentes (7.500.944 con documentación de residencia a 31-12-2025, de ellos 3.497.284 en régimen de extranjería)",
+   "motivo": "Igual que en el criterio «beneficiarios»."
+  },
+  {
+   "propuesta": "vox-08",
+   "criterio": "legal",
+   "antes": "un plazo de 24 horas tendría que respetar el derecho a ser oído (art. 24 CE).",
+   "despues": "un plazo de 24 horas tendría que respetar el derecho a ser oído (art. 24 CE). La entrega inmediata queda hoy sujeta a la valoración de la vulnerabilidad del ocupante, que puede suspender el proceso (arts. 441.1 bis y 441.5 a 441.7 LEC), y el Real Decreto-ley 29/2026 suspende hasta 2030 los desahucios de personas vulnerables sin alternativa habitacional (art. 2); suprimir esas suspensiones requiere ley ordinaria.",
+   "motivo": "Omisión de la normativa vigente: el art. 441.1 bis LEC ordena la entrega inmediata «sin perjuicio de lo establecido en los apartados 5, 6 y 7» (vulnerabilidad y suspensión), y el art. 2 del RDL 29/2026, convalidado, suspende hasta el 31-12-2030 los procesos de desahucio de personas vulnerables sin alternativa. Mismo tratamiento que salf-02 (legal)."
+  },
+  {
+   "propuesta": "vox-08",
+   "criterio": "legal (fuentes)",
+   "antes": "—",
+   "despues": "https://www.boe.es/buscar/act.php?id=BOE-A-2000-323 | Ley 1/2000, de Enjuiciamiento Civil (texto consolidado, BOE), art. 441",
+   "motivo": "Fuente del añadido."
+  },
+  {
+   "propuesta": "vox-08",
+   "criterio": "legal (fuentes)",
+   "antes": "—",
+   "despues": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823 | Real Decreto-ley 29/2026, de 6 de octubre, de protección de la función social de la vivienda (texto consolidado, BOE)",
+   "motivo": "Fuente del añadido."
+  },
+  {
+   "propuesta": "vox-08",
+   "criterio": "antecedentes",
+   "antes": "En los impagos de alquiler, el Real Decreto-ley 29/2026, convalidado el 12-11-2026, suspende hasta el 31-12-2030 los desahucios de inquilinos vulnerables sin alternativa habitacional, salvo que el demandante sea una persona física con dos viviendas o menos, y obliga a la Administración a asumir la deuda si en dos meses no ofrece una alternativa.",
+   "despues": "En los impagos de alquiler, el Real Decreto-ley 29/2026, convalidado el 12-11-2026, añade a la LEC una enervación extraordinaria: si el inquilino es vulnerable, la Administración tiene dos meses para ofrecerle una alternativa o pagar la deuda y, si no lo hace, queda subrogada en ella y no hay lanzamiento (art. 22.6 LEC); además, su art. 2 suspende hasta el 31-12-2030 los demás desahucios de personas vulnerables sin alternativa habitacional, salvo, entre otros casos, que demande una persona física con dos viviendas o menos.",
+   "motivo": "Dato erróneo: el RDL mezclaba dos regímenes. En el impago de renta de un inquilino vulnerable rige la enervación extraordinaria del nuevo art. 22.6 LEC (art. 5.Dos del RDL), sin límite temporal ni excepción de dos viviendas; la suspensión hasta 2030 con esa excepción es la del art. 2.2, que solo se aplica cuando no lo hace el 5.Dos."
+  },
+  {
+   "propuesta": "vox-08",
+   "criterio": "largo_plazo",
+   "antes": "la STC 32/2019 vincula el desalojo a la intervención de los servicios sociales para las personas vulnerables",
+   "despues": "la STC 32/2019 recuerda que el desalojo de personas vulnerables debe comunicarse, con su consentimiento, a los servicios sociales",
+   "motivo": "Fidelidad a la fuente: la sentencia habla de un deber de comunicar a los servicios sociales, «siempre que estos hubieren manifestado su consentimiento», no de una intervención obligatoria."
+  },
+  {
+   "propuesta": "vox-08",
+   "criterio": "largo_plazo",
+   "antes": "y convertir en delito el impago de la renta sin engaño previo chocaría con el art. 11 del Pacto de Derechos Civiles y Políticos.",
+   "despues": "y castigar con prisión el impago de la renta sin engaño previo podría chocar con el art. 11 del Pacto de Derechos Civiles y Políticos cuando el inquilino no pueda pagar.",
+   "motivo": "Formulación más amplia que la norma: el art. 11 prohíbe encarcelar a alguien «por el solo hecho de no poder cumplir» una obligación contractual."
+  },
+  {
+   "propuesta": "vox-08",
+   "criterio": "beneficiarios",
+   "antes": "Beneficiaría a los propietarios y comunidades afectados:",
+   "despues": "Beneficiaría a los propietarios afectados:",
+   "motivo": "Sin respaldo: la nota del CGPJ no menciona comunidades de propietarios, ni el programa."
+  },
+  {
+   "propuesta": "vox-09",
+   "criterio": "legal",
+   "antes": "y un tipo inferior solo cabría copiando, en sus mismas condiciones, el que otro Estado aplicara el 1-1-2021 (art. 105 bis), que no hemos localizado.",
+   "despues": "y un tipo inferior al 5 % solo cabría reproduciendo, en sus mismas condiciones, uno que otro Estado aplicara a la vivienda el 1-1-2021 (art. 105 bis); no hemos localizado ninguno del 0 %.",
+   "motivo": "Precisión: el art. 105 bis.1 permite reproducir tipos inferiores al 5 % que otro Estado aplicara a la vivienda el 1-1-2021 en sus mismas condiciones; la evaluación cita en «internacional» el 3 % de Luxemburgo, así que lo no localizado es un tipo del 0 %."
+  },
+  {
+   "propuesta": "vox-09",
+   "criterio": "financiacion",
+   "antes": "las comunidades recaudaron 10.594 M€ de ITP y AJD en 2023",
+   "despues": "las comunidades de régimen común recaudaron 10.594 M€ de ITP y AJD en 2023",
+   "motivo": "Precisión: el cuadro de Fedea es del conjunto de comunidades de régimen común (sin País Vasco ni Navarra)."
+  },
+  {
+   "propuesta": "vox-09",
+   "criterio": "fuentes (título)",
+   "antes": "A. de la Fuente, Fedea, Estudios sobre la Economía Española 2025/32 (diciembre de 2025): financiación e ingresos tributarios de las comunidades de régimen común",
+   "despues": "A. de la Fuente, «La evolución de la financiación de las comunidades autónomas de régimen común, 2002-2023», Fedea, Estudios sobre la Economía Española 2025/32 (diciembre de 2025)",
+   "motivo": "Título del documento tal como figura en la fuente."
+  },
+  {
+   "propuesta": "vox-09",
+   "criterio": "evidencia",
+   "antes": "el precio neto bajó unas 900 £",
+   "despues": "el precio pagado por el comprador, impuesto incluido, bajó unas 900 £",
+   "motivo": "Fidelidad a la fuente: «after-tax sale price», es decir, precio con impuesto; «precio neto» se lee como lo contrario."
+  },
+  {
+   "propuesta": "vox-09",
+   "criterio": "internacional",
+   "antes": "El Reino Unido exime del impuesto de transmisiones a los primeros compradores hasta 300.000 £;",
+   "despues": "Inglaterra e Irlanda del Norte eximen del impuesto de transmisiones (SDLT) a los primeros compradores hasta 300.000 £ en viviendas de hasta 500.000 £;",
+   "motivo": "Precisión y respaldo: el SDLT no rige en Escocia ni en Gales (lo dice el propio informe de HMRC) y el umbral vigente consta en gov.uk, que se añade como fuente."
+  },
+  {
+   "propuesta": "vox-09",
+   "criterio": "internacional",
+   "antes": "Luxemburgo aplica un IVA del 3 % a la compra o construcción de la residencia principal,",
+   "despues": "Luxemburgo aplica un IVA del 3 % a la construcción (incluida la compra sobre plano) y la renovación de la residencia principal,",
+   "motivo": "Fidelidad a la fuente: Guichet.lu lo aplica a quienes «construisent ou rénovent» su residencia principal, incluida la venta de inmuebles por construir, no a cualquier compra."
+  },
+  {
+   "propuesta": "vox-09",
+   "criterio": "internacional (fuentes)",
+   "antes": "—",
+   "despues": "https://www.gov.uk/stamp-duty-land-tax/residential-property-rates | GOV.UK, Stamp Duty Land Tax: residential property rates (umbral de primeros compradores)",
+   "motivo": "Fuente del umbral vigente."
+  },
+  {
+   "propuesta": "vox-09",
+   "criterio": "beneficiarios (campo)",
+   "antes": "en 2025 se vendieron 714.237 viviendas, 155.910 nuevas (INE)",
+   "despues": "en 2025 se inscribieron 714.237 compraventas de vivienda, 155.910 de ellas nuevas (INE)",
+   "motivo": "Precisión: la estadística del INE recoge compraventas inscritas en los registros."
+  },
+  {
+   "propuesta": "vox-09",
+   "criterio": "fuentes (título)",
+   "antes": "Ministerio de Hacienda, PGE 2012, Memoria de Beneficios Fiscales, cap. II (IRPF)",
+   "despues": "Ministerio de Hacienda, Proyecto de PGE 2012, Memoria de Beneficios Fiscales, cap. II (IRPF)",
+   "motivo": "Título incorrecto: es la memoria del Proyecto de PGE 2012, como indica la cabecera del PDF."
+  },
+  {
+   "propuesta": "vox-10",
+   "criterio": "concrecion",
+   "antes": "ni qué actividades considera que «no entrañan riesgo».",
+   "despues": "ni qué actividades considera que no entrañan riesgo.",
+   "motivo": "Cita no literal: el programa dice «no entraña riesgo» (p. 24); se quitan las comillas."
+  },
+  {
+   "propuesta": "vox-10",
+   "criterio": "legal",
+   "antes": "como urbanismo o agricultura (p. ej., la Ley madrileña 1/2001)",
+   "despues": "como agricultura o medio ambiente (p. ej., la Ley madrileña 1/2001)",
+   "motivo": "Sin respaldo: el anexo de la Ley madrileña 1/2001 recoge procedimientos agrarios, de residuos, montes y vivienda, pero ninguno urbanístico."
+  },
+  {
+   "propuesta": "vox-10",
+   "criterio": "legal",
+   "antes": "salvo en prórrogas y renovaciones de residencia y trabajo y en la residencia de larga duración",
+   "despues": "salvo en prórrogas y renovaciones de residencia y trabajo, en la modificación de la limitación territorial o de ocupación de las autorizaciones iniciales y en la residencia de larga duración",
+   "motivo": "Dato incompleto: la disposición adicional 1.ª.3 de la LO 4/2000 también da silencio positivo a esas modificaciones."
+  },
+  {
+   "propuesta": "vox-10",
+   "criterio": "fuentes (todos los criterios donde figura)",
+   "antes": "https://www.bmuv.de/fileadmin/Daten_BMU/Download_PDF/Umweltpruefungen/urteil_eugh010614.pdf | TJUE (Sala Tercera), sentencia de 14-6-2001, asunto C-230/00, Comisión/Bélgica (texto en alemán publicado por el Ministerio federal de Medio Ambiente de Alemania)",
+   "despues": "https://publications.europa.eu/resource/celex/62000CJ0230 | TJUE (Sala Tercera), sentencia de 14-6-2001, asunto C-230/00, Comisión/Bélgica (texto en español, Oficina de Publicaciones de la UE)",
+   "motivo": "Fuente oficial en español en lugar de una copia en alemán alojada por un ministerio alemán; el apdo. 16 dice que «una autorización tácita no puede ser compatible con las exigencias de las Directivas»."
+  },
+  {
+   "propuesta": "vox-10",
+   "criterio": "internacional",
+   "antes": "Francia aplica desde el 12-11-2014 la regla",
+   "despues": "Francia aplica en la Administración del Estado desde el 12-11-2014 la regla",
+   "motivo": "Precisión: el Senado indica que la regla rige para el Estado desde el 12-11-2014 y para los entes territoriales desde el 12-11-2015."
+  },
+  {
+   "propuesta": "vox-10",
+   "criterio": "internacional",
+   "antes": "En Portugal la aprobación tácita existe solo cuando una ley o reglamento lo prevé, y el Decreto-ley 11/2023 la amplió en licencias ambientales.",
+   "despues": "En Portugal la aprobación tácita existe solo cuando una ley o reglamento lo prevé.",
+   "motivo": "Sin respaldo: la página de gov.pt solo lista el Decreto-ley 11/2023 como reforma y simplificación de los licenciamientos ambientales; no dice que ampliara la aprobación tácita, y el texto del decreto no se pudo leer."
+  },
+  {
+   "propuesta": "vox-10",
+   "criterio": "antecedentes",
+   "antes": "en comercios y servicios de hasta 750 m²",
+   "despues": "en comercios y servicios de hasta 300 m² (umbral elevado después a 750 m²)",
+   "motivo": "Dato erróneo: la redacción original de la Ley 12/2012 fijaba 300 m² (preámbulo); el umbral actual de 750 m² procede de modificaciones posteriores (nota de modificaciones del texto consolidado)."
+  },
+  {
+   "propuesta": "vox-11",
+   "criterio": "legal",
+   "antes": "que una ley orgánica podría cambiar, pero no el Derecho de la UE:",
+   "despues": "precepto sin carácter orgánico (disposición final cuarta) que una ley ordinaria podría cambiar, pero no el Derecho de la UE:",
+   "motivo": "Dato erróneo: el art. 14 de la LO 4/2000 no figura entre los preceptos orgánicos de su disposición final cuarta."
+  },
+  {
+   "propuesta": "vox-11",
+   "criterio": "evidencia",
+   "antes": "En España, el cheque bebé de 2.500 € elevó los nacimientos un 3 %, en parte por menos abortos, y su supresión los redujo un 6 % (González y Trommlerová, 2023); González (2013) halló además que las madres beneficiarias tardaron más en volver al empleo.",
+   "despues": "En España, el cheque bebé de 2.500 € elevó los nacimientos un 3 % y su supresión los redujo un 6 % (González y Trommlerová, 2023); González (2013) halló que la subida de la fecundidad se debió en parte a menos abortos y que las madres beneficiarias tardaron más en volver al empleo.",
+   "motivo": "Atribución errónea: «in part through a reduction in abortions» es de González (2013), no del resumen de González y Trommlerová (2023)."
+  },
+  {
+   "propuesta": "vox-11",
+   "criterio": "financiacion",
+   "antes": "el complemento de pensiones por hijos (art. 60 LGSS)",
+   "despues": "el complemento de pensiones por hijos para reducir la brecha de género (art. 60 LGSS)",
+   "motivo": "Precisión: denominación legal del complemento («para la reducción de la brecha de género»)."
+  },
+  {
+   "propuesta": "vox-11",
+   "criterio": "antecedentes",
+   "antes": "el complemento de pensiones por hijos llegaba",
+   "despues": "el complemento de pensiones por hijos para reducir la brecha de género llegaba",
+   "motivo": "Igual que en «financiación»."
+  },
+  {
+   "propuesta": "vox-11",
+   "criterio": "antecedentes",
+   "antes": "Galicia mantiene en 2026-2027",
+   "despues": "El Real Decreto-ley 35/2026, en vigor desde el 12-11-2026, equipara a las familias numerosas las monoparentales con dos hijos y crea un título de familia monoparental, con beneficios solicitables desde el 1-1-2027. Galicia mantiene en 2026-2027",
+   "motivo": "Omisión relevante: es el antecedente más reciente en la misma dirección (extender los beneficios de familia numerosa) y la causa de la actualización de la Ley 40/2003 que cita el título de la fuente."
+  },
+  {
+   "propuesta": "vox-11",
+   "criterio": "antecedentes (fuentes)",
+   "antes": "—",
+   "despues": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-23604 | Real Decreto-ley 35/2026, de 10 de noviembre, de medidas urgentes para el reconocimiento y protección a las familias monoparentales (BOE)",
+   "motivo": "Fuente del añadido."
+  },
+  {
+   "propuesta": "vox-12",
+   "criterio": "financiacion",
+   "antes": "la Ley Orgánica 1/1980 ya organizó elecciones entre jueces con los medios de la Administración de Justicia.",
+   "despues": "la Ley Orgánica 1/1980 encargó esas elecciones a una Junta Electoral de jueces con sede en el Tribunal Supremo, con voto por correo.",
+   "motivo": "Fidelidad a la fuente: la LO 1/1980 regula la Junta Electoral y el voto por correo; «con los medios de la Administración de Justicia» no figura en ella."
+  },
+  {
+   "propuesta": "vox-12",
+   "criterio": "internacional",
+   "antes": "Es un modelo aplicado en otros países europeos, pero no hemos localizado evaluaciones comparadas de sus resultados.",
+   "despues": "La Comisión de Venecia recuerda que no hay un modelo único (informe europeo, nota 5); la comparación entre países de Garoupa y Ginsburg (2009) halla poca relación entre el diseño de los consejos y la calidad judicial, y no hemos localizado evaluaciones específicas de la elección directa por los jueces.",
+   "motivo": "Sin respaldo y contradicho por la propia evaluación: la fuente no menciona otros países, y Garoupa y Ginsburg (citado en «evidencia») sí es una comparación de diseños."
+  },
+  {
+   "propuesta": "vox-12",
+   "criterio": "internacional (fuentes)",
+   "antes": "—",
+   "despues": "https://biblioteca.cejamericas.org/items/1bb12796-79b5-4644-883b-afe8350e0c66/full | Garoupa y Ginsburg (2009), Guarding the Guardians: Judicial Councils and Judicial Independence, American Journal of Comparative Law 57",
+   "motivo": "Fuente del añadido."
+  },
+  {
+   "propuesta": "vox-12",
+   "criterio": "antecedentes",
+   "antes": "Tras el bloqueo de 2018-2024,",
+   "despues": "Tras la renovación del CGPJ en julio de 2024,",
+   "motivo": "Sin respaldo en las fuentes del criterio: ninguna habla del bloqueo; el informe europeo recoge la renovación de julio de 2024."
+  },
+  {
+   "propuesta": "vox-12",
+   "criterio": "antecedentes (fuentes)",
+   "antes": "—",
+   "despues": "https://hj.tribunalconstitucional.es/es/Resolucion/Show/671 | STC 108/1986, de 29 de julio (elección de los vocales del CGPJ)",
+   "motivo": "Respaldo de que la LO 6/1985 pasó la elección a las Cortes."
+  },
+  {
+   "propuesta": "vox-12",
+   "criterio": "beneficiarios",
+   "antes": "El tamaño del electorado no está verificado (el informe europeo de 2026 recoge 5.643 jueces en un dato cuyo contexto no hemos podido confirmar)",
+   "despues": "El informe europeo de 2026 cifra en 5.643 los jueces en 2025/2026, de los que 947 eran sustitutos (nota 26), y el programa no dice si estos votarían",
+   "motivo": "Dato verificable: la nota 26 del SWD(2026) 909 da «947 out of 5643 judges (16.78%)» como cuota de sustitutos."
+  },
+  {
+   "propuesta": "vox-12",
+   "criterio": "beneficiarios (fuentes)",
+   "antes": "—",
+   "despues": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229 | Constitución Española (texto consolidado, BOE)",
+   "motivo": "Respaldo de «doce de los veinte vocales» (art. 122.3 CE)."
+  },
+  {
+   "propuesta": "vox-12",
+   "criterio": "largo_plazo",
+   "antes": "El informe europeo valora el cambio como un paso hacia el estándar del Consejo de Europa,",
+   "despues": "Según la Comisión de Venecia, citada en el informe europeo, la elección directa se ajusta al estándar de elección por los pares del Consejo de Europa,",
+   "motivo": "Atribución errónea: es la Comisión de Venecia, no el informe, quien lo considera conforme al estándar."
+  },
+  {
+   "propuesta": "vox-12",
+   "criterio": "largo_plazo",
+   "antes": "y la literatura empírica indica que el diseño formal del consejo no garantiza por sí solo la independencia de hecho.",
+   "despues": "y la literatura empírica halla poca relación entre el diseño de los consejos y la calidad judicial (Garoupa y Ginsburg) y asocia al crecimiento la independencia judicial de hecho, no la formal (Voigt, Gutmann y Feld).",
+   "motivo": "Fidelidad a las fuentes: se usan sus conclusiones en sus términos."
+  },
+  {
+   "propuesta": "vox-05",
+   "criterio": "antecedentes (fuentes)",
+   "antes": "—",
+   "despues": "https://www.funcas.es/wp-content/uploads/2026/01/NOTAPRENSA-7.pdf | Funcas (26-1-2026), nota de prensa sobre la población extranjera en situación irregular",
+   "motivo": "Respaldo oficial de que las regularizaciones extraordinarias llegaron «hasta 2005»; Euronews bloquea la descarga automática y solo se leyó en resumen."
+  },
+  {
+   "propuesta": "vox-04",
+   "criterio": "largo_plazo",
+   "antes": "La prolongación mantiene generación sin emisiones y, según la orden de Almaraz, reduce en 2030 la generación con gas un 7 % y la renovable un 1,4 % respecto al PNIEC sin comprometer el objetivo europeo de renovables",
+   "despues": "La prolongación mantiene generación sin emisiones; según la orden de Almaraz, la de esa central reduce en 2030 la generación con gas un 7 % y la renovable un 1,4 % respecto al PNIEC sin comprometer el objetivo europeo de renovables",
+   "motivo": "auditoría de coherencia (13-nov, tras el análisis del programa de Vox): la misma generalización que en la financiación: la orden de Almaraz atribuye el −7 % de gas y el −1,4 % de renovables en 2030 al análisis de sensibilidad de la «extensión limitada» de esa central, no a prolongar todo el parque. Se corrige igual en pp-12 y vox-04. La valoración («mixta») no cambia.",
+   "fecha": "2026-11-13"
+  }
+ ],
+ "dudas": [
+  "[Resuelta 13-nov, auditoría de coherencia: corregidos pp-12 financiación y largo plazo, pp-03 encaje legal y largo plazo y junts-08 encaje legal, sin cambios de valoración; véase data/fase3/coherencia_2026-11-13.md] Fuera del alcance de esta revisión (PP ya aprobado): pp-12 financiación generaliza a todo el parque la frase de la orden de Almaraz sobre costes de Enresa, que aquí se acotó en vox-04; pp-03 largo plazo dice que la STC 32/2019 «vincula el desalojo a la intervención de los servicios sociales», precisado aquí en vox-08; y pp-03 y junts-08 (encaje legal) no mencionan la suspensión por vulnerabilidad de los arts. 441.5-7 LEC y del RDL 29/2026, que sí citan salf-02 y ahora vox-08. Conviene que la próxima auditoría de coherencia los iguale.",
+  "RDL 29/2026, art. 2: su texto no limita la suspensión hasta 2030 a los arrendamientos y se remite al art. 441.5 LEC, que incluye los procesos de recuperación de la posesión usados contra la ocupación; no hemos localizado doctrina sobre si se aplica a ocupantes sin título, por lo que el texto de vox-08 lo describe con las palabras de la norma («desahucios de personas vulnerables sin alternativa habitacional»).",
+  "vox-09 legal: el art. 105 bis de la Directiva del IVA permite reproducir tipos inferiores al 5 % que otro Estado aplicara a la vivienda el 1-1-2021 en sus mismas condiciones (por ejemplo, el 3 % de Luxemburgo para la residencia principal). No hemos localizado ningún tipo del 0 % para la vivienda notificado al Comité del IVA; la lista que elaboró la Comisión no se ha leído.",
+  "vox-12: el informe sobre el Estado de Derecho 2026 (SWD(2026) 909) se cita desde el repositorio de la Cámara de Diputados de Rumanía, no desde la web de la Comisión; el contenido coincide con el documento oficial («Brussels, 17.7.2026, SWD(2026) 909 final»), pero no se ha cotejado con una URL de la Comisión. Garoupa y Ginsburg se enlaza en la versión de documento de trabajo de 2008 de la misma obra publicada en 2009 (AJCL 57(1):103-134, según Crossref).",
+  "vox-05 antecedentes: Euronews (406 a la descarga) se leyó solo en resumen: atribuye la regularización de 576.506 personas al Gobierno de Rodríguez Zapatero; el año (2005) se apoya ahora en Funcas.",
+  "Afirmaciones negativas («no hemos localizado evaluaciones…») son el resultado de la búsqueda del analista; no se pueden verificar con las fuentes y se han mantenido salvo cuando una fuente citada las contradecía (vox-12 internacional)."
+ ]
+}

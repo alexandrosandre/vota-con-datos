@@ -1,214 +1,132 @@
 {
  "aprobado": true,
  "revisor": "Claude (Anthropic), pasada independiente",
- "fecha": "2026-11-12",
- "alcance": "Base «compromisos» (prompts 1b, 3 y 4). Se abrieron las 79 URL de seleccion.json y evaluacion.json, y todas respondieron 200. La de la FRA sobre C-94/20 muestra una verificación anti-bots, que no se intentó superar, y se sustituyó por EUR-Lex. Cada cita se comprobó contra la página, la copia local y su contexto: autor, primera persona, fecha y medida. Se descartan cuatro compromisos cuya cita era una frase del periodista (vox-c08, vox-c10, vox-c13 y vox-c14): las palabras literales del líder no enuncian la medida, y las búsquedas adicionales (Moncloa.com, Demócrata, El Debate y Vozpópuli) no dieron otra fuente literal. Quedan 13 compromisos y 10 prioridades. Las propuestas evaluadas pasan de 12 a 10 y se renumeran de vox-01 a vox-10. Se verificaron las cifras y normas citadas: LO 4/2000 (arts. 13, 14, 31, 35, 35 bis, 57 y 58), Código Penal (art. 89), Código Civil (art. 25.2), CE (arts. 8, 11.2 y 31.1), LO 2/1986 (art. 12), LO 5/2005 (art. 15), Directiva 2003/109 (arts. 11 y 12 y considerando 13), STJUE C-94/20, Reglamento (UE) 2026/2280 y Protocolo de 1997 sobre traslado de condenados. También los datos de Eurostat (migr_eiord y migr_eirtn), Funcas, INE, AEAT y Moncloa (IMV, OPI, regularización y Consejo de Ministros de 25-8-2026), y los estudios IZA DP 17244, NBER w25267, Yale Budget Lab, NPR y FMI. verify_quotes: 0 citas no encontradas. Se ha recalculado seleccion_sha256.",
- "igual_estandar": "Se aplicaron las reglas de la auditoría de coherencia del 12-11. (1) «Prioridad nacional»: una sola decisión jurídica para ayudas y vivienda. La Directiva 2003/109 y la STJUE C-94/20 impiden excluir a los residentes de larga duración de las prestaciones básicas y, en vivienda, del acceso en igualdad (art. 11.1.f de la Directiva y art. 13 LOEX). Para otros extranjeros y para las ayudas no básicas, la igualdad depende de la LO 4/2000, que es reformable. Abascal no define qué ayudas ni qué criterio y exceptúa a quien ha cotizado, así que corresponde «mixta», como en pp-02 y pnv-11. «Desfavorable» se reserva a los diseños definidos que chocan con el Derecho de la UE en su núcleo (cc-06, salf-06). La vivienda (vox-c08) habría recibido la misma valoración, pero se descarta por la cita. (2) vox-05 legal pasa también a «mixta»: el instrumento de la «remigración» no está definido y el retorno voluntario es legal. (3) vox-08 (IRPF) legal pasa a «favorable», como pp-10, salf-04 y erc-09. (4) vox-07 financiación pasa a «no_verificable»: es una medida regulatoria con efecto fiscal sin estimar, como pp-02. Se mantienen 3 «desfavorable» con fuente directa: vox-05 concreción, porque no identifica la medida, y vox-06 legal y antecedentes, por el art. 35 LOEX y la sentencia del Tribunal Supremo de 2024 sobre las devoluciones de menores de 2021.",
+ "fecha": "2026-11-13",
+ "base": "complemento",
+ "alcance": "2 prioridades (vox-c11 y vox-c12) × 8 criterios, los 3 compromisos y los 28 descartados de seleccion.json. Se abrieron todas las URL de seleccion.json (compromisos, ocasiones de «veces» y descartados) y de evaluacion.json: todas responden 200. Las citas de vox-c11 (Figaredo, elDiario.es, 8-oct), vox-c12 (Abascal, mitin de Palma, Infobae/Europa Press, 24-oct) y vox-c17 son literales en la página y en su copia local, en primera persona de quien se indica y con su fecha. Se comprobaron las cifras (46.000 y 85.000 millones —este, del ministro de Hacienda, ya en elDiario.es el 8-oct—; 18.935 y 200.000 €; 52.000 millones; recaudación y declarantes de la AEAT), las normas (art. 31.1 CE, art. 46.1.b de la Ley 22/2009, art. 17.1 de la Ley 35/2006) y los estudios (FMI, Yale Budget Lab, NPR). verify_quotes: 0 citas no encontradas. seleccion_sha256 recalculado.",
+ "seleccion": "Comprobado contra el texto completo del programa (también con sinónimos): vox-c11 (mínimo exento de 22.000 €, tipos del 15 % y 25 %), vox-c12 (propinas) y vox-c17 (elección de lengua por los padres) no están en él; la medida 2 (p. 7) solo propone «Simplificación y bajada del IRPF» y una reducción por hijos, sin tramos ni tipos. Los descartados por «ya está en el programa» lo están en la medida y página que indican: c01 (medidas 1 y 88, pp. 5 y 40-41), c02 (medida 1, p. 5), c03 (medidas 9 y 12, p. 13), c04 (medida 14, p. 13), c05 (medidas 13 y 22, pp. 13 y 16), c06 (medida 15, pp. 13-14), c07 (medidas 18 y 22, p. 16), c09 (medidas 34 y 28, pp. 19-20), c15 (medida 10, p. 13) y c16 (medida 19, p. 16); también la cuota cero de autónomos (medida 2), las tres normas por cada nueva (medida 40), el desalojo en 24 horas (medida 31), el IVA del 0 % y el ITP (medida 34) y la auditoría ferroviaria (medida 113). Se corrigieron los motivos que atribuían al programa algo que no dice (un IVA del 18 %, la hostelería) o que seguían diciendo que el programa «se analizará». Las dos prioridades se justifican con lo que destaca el partido: la escala del IRPF la presenta su portavoz económico como eje de su plan (dos ocasiones, 8-oct y 6-nov) y la exención de las propinas, el propio candidato en un mitin como compromiso de gobierno.",
+ "igual_estandar": "Sin cambios de valoración. vox-c11: encaje legal «favorable» como pp-10, salf-04 y erc-09; financiación «mixta» porque Figaredo cifra coste y financiación con una partida que ninguna fuente oficial respalda ni contradice (rúbrica), como salf-04; concreción «mixta» frente a la «favorable» de salf-04, que tiene calendario. vox-c12: financiación «no_verificable» (sin base para estimar el coste) y antecedentes «no_verificable» (sin precedente localizado), con la regla aplicada al resto de partidos.",
+ "recuento_inicial": {
+  "favorable": 2,
+  "mixta": 12,
+  "desfavorable": 0,
+  "no_verificable": 2
+ },
  "recuento_final": {
   "favorable": 2,
-  "mixta": 58,
-  "desfavorable": 3,
-  "no_verificable": 17
+  "mixta": 12,
+  "desfavorable": 0,
+  "no_verificable": 2
  },
- "recuento_final_nota": "Antes de la revisión: 12 propuestas, 4/68/5/19 (F/M/D/N). Después: 10 propuestas, 2/58/3/17.",
+ "revision_anterior": {
+  "fecha": "2026-11-12",
+  "aprobado": false,
+  "nota": "La revisión de 12-11-2026 se refería a la base «compromisos» (10 prioridades). Sus evaluaciones de vox-c11 y vox-c12 (entonces vox-08 y vox-09) se reaprovechan sin cambiar valoraciones; sus 22 cambios y 5 dudas siguen en el historial del repositorio.",
+  "cambios": 22
+ },
  "cambios": [
   {
-   "propuesta": "vox-c08",
-   "criterio": "selección (compromiso)",
-   "antes": "compromiso con cita: construir \"masivamente\" vivienda social y adjudicarla siguiendo el criterio de \"prioridad nacional\", de modo que los españoles sean \"los primeros\" en las listas.",
-   "despues": "descartado (pasa a «descartados»)",
-   "motivo": "Prompt 4, punto 1: la cita era una frase del periodista con palabras sueltas del líder entre comillas. Se conservarían solo las palabras literales del líder, pero por sí solas no enuncian una medida concreta, y no se ha encontrado otra fuente primaria o de agencia con la cita literal (prompt 1b: si un medio resume con sus palabras, hay que buscar la cita literal, y si no existe, el compromiso no entra). Detalle: Estilo indirecto: la frase es de la agencia EFE; de Garriga solo constan literalmente «masivamente», «prioridad nacional» y «los primeros», que por sí solas no enuncian la medida. El Debate (EFE) tampoco recoge más palabras literales, y en Zaragoza (25-oct) sus frases literales («Vamos a construir y aumentar el parque de vivienda pública») se refieren a la futura Ley de Vivienda de Aragón. Si el programa la recoge, se analizará con el prompt 1."
+   "propuesta": "vox-c11",
+   "criterio": "largo_plazo",
+   "antes": "Reduciría la progresividad en las rentas altas, cuyo tipo bajaría al 25 %.",
+   "despues": "Si el 25 % fuera el tipo total (hoy el máximo supera el 40 %, según Hacienda), reduciría la progresividad en las rentas altas.",
+   "motivo": "Contradicción interna: el criterio «legal» señala que Figaredo no aclara si el 25 % es la tarifa total o solo la estatal (elDiario: el máximo actual está «en el 25% para la cuota estatal»; Forbes/Europa Press: tipos máximos «de más del 40%»)."
   },
   {
-   "propuesta": "vox-c10",
-   "criterio": "selección (compromiso)",
-   "antes": "compromiso con cita: ha defendido \"liberalizar suelo\" y apoyar a las personas que quieran comprar un piso; por ejemplo, con \"ayudas directas a los jóvenes\" o permitiendo que ciertos impuestos se puedan pagar a plazos.",
-   "despues": "descartado (pasa a «descartados»)",
-   "motivo": "Prompt 4, punto 1: la cita era una frase del periodista con palabras sueltas del líder entre comillas. Se conservarían solo las palabras literales del líder, pero por sí solas no enuncian una medida concreta, y no se ha encontrado otra fuente primaria o de agencia con la cita literal (prompt 1b: si un medio resume con sus palabras, hay que buscar la cita literal, y si no existe, el compromiso no entra). Detalle: Estilo indirecto: la frase es de la agencia EFE; de Garriga solo constan «liberalizar suelo» y «ayudas directas a los jóvenes», sin decir qué ayudas, para qué ni con qué norma (el pago a plazos lo resume la agencia). Mismo criterio que «desregulación en general»."
-  },
-  {
-   "propuesta": "vox-c13",
-   "criterio": "selección (compromiso)",
-   "antes": "compromiso con cita: ha reclamado una auditoría completa de “cuál ha sido la inversión en las infraestructuras ferroviarias en todos estos años”",
-   "despues": "descartado (pasa a «descartados»)",
-   "motivo": "Prompt 4, punto 1: la cita era una frase del periodista con palabras sueltas del líder entre comillas. Se conservarían solo las palabras literales del líder, pero por sí solas no enuncian una medida concreta, y no se ha encontrado otra fuente primaria o de agencia con la cita literal (prompt 1b: si un medio resume con sus palabras, hay que buscar la cita literal, y si no existe, el compromiso no entra). Detalle: Estilo indirecto: Vozpópuli, Infobae (Europa Press), Demócrata y Moncloa.com (4-nov) cuentan con sus palabras que Abascal haría una auditoría; la única cita literal («cuál ha sido la inversión en las infraestructuras ferroviarias en todos estos años») no enuncia la medida. No se ha localizado la transcripción de la entrevista de Onda Cero. El programa del 12-nov incluye una auditoría de la red ferroviaria y se analizará con el prompt 1."
-  },
-  {
-   "propuesta": "vox-c14",
-   "criterio": "selección (compromiso)",
-   "antes": "compromiso con cita: ha abogado por que el Ministerio de Igualdad \"desaparezca\"",
-   "despues": "descartado (pasa a «descartados»)",
-   "motivo": "Prompt 4, punto 1: la cita era una frase del periodista con palabras sueltas del líder entre comillas. Se conservarían solo las palabras literales del líder, pero por sí solas no enuncian una medida concreta, y no se ha encontrado otra fuente primaria o de agencia con la cita literal (prompt 1b: si un medio resume con sus palabras, hay que buscar la cita literal, y si no existe, el compromiso no entra). Detalle: Estilo indirecto: de Abascal solo consta literalmente «desaparezca»; el resto de la frase es de Europa Press, y se dijo como reacción a la investigación sobre las pulseras antimaltrato."
-  },
-  {
-   "propuesta": "prioridades",
-   "criterio": "selección",
-   "antes": "12 prioridades (incluían vox-c08 y vox-c13)",
-   "despues": "10 prioridades (nota_prioridades en seleccion.json)",
-   "motivo": "Al descartar vox-c08 y vox-c13 no quedan otros compromisos concretos verificables que el partido presente como centrales: vox-c09 (Cerezo, una sola vez, en un acto), vox-c16 y vox-c17 (una sola vez cada uno) no tienen evidencia de prioridad. El prompt 1b prevé seleccionar menos de 12 y decirlo."
-  },
-  {
-   "propuesta": "vox-c07",
-   "criterio": "veces",
-   "antes": "n = 3 (incluía Estepona, 11-oct: «Necesitamos que los fondos se dediquen a los españoles y europeos»)",
-   "despues": "n = 2",
-   "motivo": "En la fuente, la frase va precedida de «Prioridad nacional es que las inversiones se hagan en España y no en Marruecos»: habla de inversiones públicas, no de ayudas sociales."
-  },
-  {
-   "propuesta": "vox-c07",
-   "criterio": "prioridades (justificación)",
-   "antes": "La «prioridad nacional» es el primer eje oficial de la campaña; Abascal la define en La Razón como preferencia de los españoles en las ayudas sociales y la repite en Estepona y La Revuelta.",
-   "despues": "La «prioridad nacional» es el primer eje oficial de la campaña; Abascal la define en La Razón (18-oct) como preferencia de los españoles en las ayudas sociales y, según la crónica de La Revuelta (9-nov), la aplicó al Ingreso Mínimo Vital.",
-   "motivo": "La mención de Estepona no se refiere a ayudas sociales, y la de La Revuelta está en estilo indirecto."
-  },
-  {
-   "propuesta": "vox-c15",
-   "criterio": "resumen",
-   "antes": "Auditar las nacionalidades españolas concedidas para revocar las que se consideren fraudulentas.",
-   "despues": "Hacer una «gran auditoría» de las nacionalidades españolas concedidas.",
-   "motivo": "«para revocar las que se consideren fraudulentas» no está en las palabras de Abascal ni en la crónica. Se añade a la nota que el objeto de la auditoría lo indica el periodista."
+   "propuesta": "vox-c12",
+   "criterio": "internacional",
+   "antes": "El Budget Lab estimó antes de su aprobación que beneficiaría a menos del 3 % de las familias",
+   "despues": "El Budget Lab estimó en 2024 que una deducción amplia de las propinas beneficiaría a menos del 3 % de las familias",
+   "motivo": "Fidelidad a la fuente: la estimación de Yale es para «a broad-based income tax deduction for tips», no para la ley aprobada."
   },
   {
    "propuesta": "vox-c11",
-   "criterio": "nota",
-   "antes": "sin observación sobre la fecha",
-   "despues": "Se anota que la fecha exacta de la declaración no consta (semana del 5 al 8 de octubre).",
-   "motivo": "Comprobación de fecha: según el prompt 2, antes del 6-oct solo vale si se refiere a estas elecciones."
+   "criterio": "seleccion.json, prioridades (justificación)",
+   "antes": "y la ha repetido en tres ocasiones (8-oct, 11-oct, 6-nov)",
+   "despues": "y la ha planteado en dos ocasiones (8-oct y 6-nov)",
+   "motivo": "Contradicción interna: el propio «veces» da n = 2 y dice que la pieza de Moncloa.com del 11-oct «no es otra ocasión» (auditoría de coherencia del 12-11b)."
   },
   {
-   "propuesta": "busqueda",
-   "criterio": "limitaciones",
-   "antes": "mencionaba vox-c08, vox-c10, vox-c13 y vox-c14 como citas parciales",
-   "despues": "El presupuesto de búsquedas web se agotó durante la investigación; pueden existir declaraciones adicionales no localizadas. En la revisión independiente se descartaron vox-c08, vox-c10, vox-c13 y vox-c14, cuyas citas eran frases de crónica con palabras sueltas del líder.",
-   "motivo": "Coherencia con los descartes."
+   "propuesta": "vox-c11",
+   "criterio": "seleccion.json, nota",
+   "antes": " La rebaja de cuatro puntos por hijo solo consta en paráfrasis (101TV).",
+   "despues": "",
+   "motivo": "Frase repetida (la nota ya dice que 101TV la atribuye en paráfrasis) e incompleta: elDiario.es (8-oct) también recoge la rebaja por hijo de la enmienda de 2024."
   },
   {
-   "propuesta": "vox-08 (antes)",
-   "criterio": "propuesta",
-   "antes": "Construcción masiva de vivienda social adjudicada con prioridad nacional (vox-c08)",
-   "despues": "eliminada",
-   "motivo": "Su compromiso se descarta en seleccion.json por falta de cita literal."
+   "propuesta": "vox-c11",
+   "criterio": "seleccion.json, nota",
+   "antes": "la convocatoria es del 6-oct",
+   "despues": "la convocatoria se publicó en el BOE el 6-oct",
+   "motivo": "Precisión: el Real Decreto de convocatoria es de 5-10-2026 y se publicó el 6-10."
   },
   {
-   "propuesta": "vox-11 (antes)",
-   "criterio": "propuesta",
-   "antes": "Auditoría completa de la red ferroviaria (vox-c13)",
-   "despues": "eliminada",
-   "motivo": "Su compromiso se descarta en seleccion.json por falta de cita literal."
+   "propuesta": "vox-c11",
+   "criterio": "seleccion.json, nota",
+   "antes": "y el ministro de Hacienda la trató como propuesta de Vox para el 29-N (13-oct)",
+   "despues": "y el ministro de Hacienda cifró su coste en 85.000 millones (recogido por elDiario.es el 8-oct y por Europa Press el 13-oct)",
+   "motivo": "Sin respaldo: la pieza de Forbes/Europa Press habla de «la propuesta de Vox» sin mencionar el 29-N; elDiario.es ya recoge la cifra del ministro el 8-oct."
   },
   {
-   "propuesta": "propuestas",
-   "criterio": "id",
-   "antes": "vox-09, vox-10, vox-12",
-   "despues": "vox-08, vox-09, vox-10",
-   "motivo": "Se renumeran tras eliminar vox-08 y vox-11. El campo «compromiso» mantiene el enlace con seleccion.json."
+   "propuesta": "vox-c12",
+   "criterio": "seleccion.json, nota",
+   "antes": "y las rebajas de IRPF (medida 2, p. 7) y de impuestos a la hostelería o al turismo (medida 8, p. 11: «medidas fiscales» para la industria turística) no la concretan.",
+   "despues": "y ni las rebajas de IRPF (medida 2, p. 7) ni las «medidas fiscales» para la industria turística (medida 8, p. 11) la concretan.",
+   "motivo": "Afirma del programa algo que no dice: el texto no menciona la hostelería; la p. 11 solo habla de «medidas fiscales» para la industria turística."
   },
   {
-   "propuesta": "vox-05",
-   "criterio": "legal",
-   "antes": "desfavorable: La Ley de Extranjería prohíbe expulsar a residentes que perciban prestación contributiva por desempleo o una prestación pública de inserción (art. 57.5.d), y la Directiva 2003/109 solo permite expulsar a un residente de larga duración si es una amenaza real y grave para el orden o la seguridad públicos, nunca por razones económicas (art. 12). Un retorno voluntario incentivado sí es legal, como el programa de 2008, pero la salida forzosa de residentes legales por recibir ayudas contradice el Derecho de la UE.",
-   "despues": "mixta: La Ley de Extranjería prohíbe expulsar a residentes que perciban prestación contributiva por desempleo o una prestación pública de inserción (art. 57.5.d), algo que una ley orgánica podría cambiar, pero la Directiva 2003/109 solo permite expulsar a un residente de larga duración si es una amenaza real y suficientemente grave para el orden o la seguridad públicos, y nunca por razones económicas (art. 12). Abascal no dice si la «remigración» sería forzosa o un retorno voluntario incentivado, que sí es legal, como el programa de 2008. La salida forzosa de residentes de larga duración por recibir ayudas contradiría el Derecho de la UE.",
-   "motivo": "Mismo estándar que la auditoría de coherencia del 12-11: es «mixta» la medida que depende de un diseño no definido o tiene partes viables (p. ej., pnv-11, con concreción «desfavorable», como aquí). Abascal no define el instrumento, y el retorno voluntario incentivado es legal. La contradicción con la Directiva solo se da si la salida es forzosa para residentes de larga duración."
+   "propuesta": "vox-c09 (descartado)",
+   "criterio": "seleccion.json, quien",
+   "antes": "cabeza de lista de Vox al Congreso por Illes Balears",
+   "despues": "candidata de Vox al Congreso por Illes Balears",
+   "motivo": "Sin respaldo: las fuentes la llaman «la candidata de Vox al Congreso por Baleares»."
   },
   {
-   "propuesta": "vox-07",
-   "criterio": "legal",
-   "antes": "desfavorable: La Ley de Extranjería reconoce a los extranjeros residentes el acceso a prestaciones y servicios sociales en las mismas condiciones que los españoles (art. 14), algo que podría cambiarse por ley orgánica (art. 13 CE). Pero la Directiva 2003/109 obliga a tratar igual que a los nacionales a los residentes de larga duración en asistencia y protección social (art. 11) y, según el TJUE (C-94/20), las ayudas que garantizan una existencia digna son «prestaciones básicas» que no pueden excluirse. Una preferencia por nacionalidad en prestaciones como el IMV contradice el Derecho de la UE para esos residentes.",
-   "despues": "mixta: La Ley de Extranjería reconoce a los extranjeros residentes las prestaciones sociales en las mismas condiciones que los españoles (art. 14), algo que una ley orgánica podría cambiar (art. 13 CE). Pero la Directiva 2003/109 obliga a tratar igual que a los nacionales a los residentes de larga duración en asistencia y protección social (art. 11): solo permite limitar esa igualdad a las «prestaciones básicas», que incluyen al menos la renta mínima, y el TJUE (C-94/20) considera básica toda ayuda que garantiza una existencia digna. Abascal no dice qué ayudas ni qué criterio aplicaría, y exceptúa a quien ha trabajado y cotizado: aplicada a residentes de larga duración en ayudas como el IMV contradiría el Derecho de la UE, y limitada a otros extranjeros o a ayudas no básicas exigiría reformar la ley orgánica. El propio Abascal admite «dificultades legislativas» en España y en Europa.",
-   "motivo": "Una sola decisión sobre la «prioridad nacional» en ayudas y en vivienda, con el estándar de la auditoría de coherencia. Es «desfavorable» el diseño definido que choca con el Derecho de la UE en su núcleo (cc-06, salf-06), y «mixta» la medida que depende de un diseño no definido o tiene partes viables (pp-02, pnv-11). Derecho aplicable: la Directiva 2003/109 (art. 11.1.d, art. 11.4 y considerando 13) y la STJUE C-94/20 (apartados 39 y 40, que remiten a Kamberaj, C-571/10) impiden excluir a los residentes de larga duración de las prestaciones básicas. Pero la Directiva permite limitar las no básicas, y para el resto de extranjeros la igualdad la da la LO 4/2000, que es reformable. Abascal no define qué ayudas ni qué criterio, y exceptúa a quien ha cotizado: corresponde «mixta». El analista había dado «mixta» a la vivienda (vox-c08) con la misma estructura jurídica. Esa medida habría recibido igual valoración, aunque su choque es más directo para los residentes de larga duración (art. 13 LOEX y art. 11.1.f de la Directiva, que no admite la excepción de prestaciones básicas); se descarta por falta de cita literal. El enlace de la FRA mostraba una verificación anti-bots, así que se sustituye por EUR-Lex y se añade la fuente de la cita de Abascal («dificultades legislativas»)."
+   "propuesta": "descartado «IVA del 21 % al 18 %»",
+   "criterio": "seleccion.json, motivo",
+   "antes": "Estilo indirecto: las crónicas de Europa Press (Alicante Plaza, Demócrata) y 101TV solo recogen entre comillas «bajada masiva de impuestos»; el 18 % no aparece en palabras literales de Figaredo. elDiario.es (8-oct) escribió además que Vox quería «dejar el IVA en el 16%». Lo recoge el programa del 12-nov, que se analizará con el prompt 1.",
+   "despues": "Estilo indirecto: las crónicas de Europa Press (Alicante Plaza, Demócrata) solo recogen entre comillas «bajada masiva de impuestos» y 101TV no tiene citas literales; el 18 % no aparece en palabras literales de Figaredo. elDiario.es (8-oct) escribió además que Vox quería «dejar el IVA en el 16%». El programa del 12-nov propone rebajar el tipo general y el reducido del IVA sin cifras (medida 2, p. 7), lo que se evalúa en la prioridad vox-02.",
+   "motivo": "Tres errores: el programa no recoge el 18 % (solo una rebaja sin cifra), 101TV no tiene ninguna cita entre comillas y el programa ya está analizado (vox-02)."
   },
   {
-   "propuesta": "vox-07",
-   "criterio": "financiacion",
-   "antes": "favorable: Es una medida de acceso que no exige gasto adicional: reordena prestaciones ya presupuestadas (la nómina del IMV fue de 465,7 millones en junio de 2026). Si redujera los perceptores extranjeros, en torno al 17 % de los titulares del IMV, generaría un ahorro no cuantificado.",
-   "despues": "no_verificable: Es una medida de acceso que no exige gasto adicional, pero tiene un efecto fiscal sin estimar: reduciría el gasto en la medida en que dejara fuera a extranjeros, y no se sabe a cuántos porque no define qué ayudas ni qué criterio. Como referencia, la nómina del IMV fue de 465,7 millones en junio de 2026, y en torno al 17 % de sus titulares son extranjeros.",
-   "motivo": "Según la auditoría de coherencia del 12-11, «las medidas regulatorias con un efecto fiscal sin estimar son «no_verificable» en todos los partidos» (cc-06, bng-02, pp-02, pp-03, salf-02 y salf-06). El propio texto reconocía un ahorro no cuantificado."
+   "propuesta": "descartado «pensiones»",
+   "criterio": "seleccion.json, motivo",
+   "antes": "promete que se pagarán «como sea»",
+   "despues": "promete que se pagarán «de la manera que sea»",
+   "motivo": "Cita no literal: la fuente citada (Demócrata, 8-nov) y su copia local dicen «de la manera que sea»; «como sea» es de otro acto (Estepona, 11-oct)."
   },
   {
-   "propuesta": "vox-07",
-   "criterio": "concrecion",
-   "antes": "Abascal enuncia el principio (las ayudas sociales, «prioritariamente para los españoles») con una salvedad para quienes llevan años trabajando y cotizando, y en La Revuelta lo concretó para el Ingreso Mínimo Vital. No define qué prestaciones, con qué criterio (nacionalidad o años de residencia), por qué norma ni en qué plazo.",
-   "despues": "Abascal enuncia el principio (las ayudas sociales, «prioritariamente para los españoles») con una salvedad para quienes llevan años trabajando y cotizando; según la crónica de La Revuelta (sin cita literal), lo aplicó al Ingreso Mínimo Vital. No define qué prestaciones, con qué criterio (nacionalidad o años de residencia), por qué norma ni en qué plazo.",
-   "motivo": "La aplicación al IMV solo consta en estilo indirecto (Última Hora): se dice así. La valoración («mixta») no cambia."
+   "propuesta": "descartado «pensiones»",
+   "criterio": "seleccion.json, motivo",
+   "antes": "y el programa del 12-nov no lo incluye, según Infobae.",
+   "despues": "y el programa del 12-nov no lo incluye (la medida 7, p. 8, solo dice «Garantizar la sostenibilidad del sistema de pensiones»).",
+   "motivo": "Se comprueba con el propio programa en lugar de con una crónica."
   },
   {
-   "propuesta": "vox-07",
-   "criterio": "largo_plazo (fuentes)",
-   "antes": "https://fra.europa.eu/en/caselaw-reference/cjeu-case-c-9420-judgment",
-   "despues": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:62020CJ0094",
-   "motivo": "La página de la FRA muestra una verificación anti-bots, que no se intenta superar. La sentencia se lee en EUR-Lex."
+   "propuesta": "descartado «vivienda social»",
+   "criterio": "seleccion.json, motivo",
+   "antes": "Si el programa la recoge, se analizará con el prompt 1.",
+   "despues": "El programa del 12-nov recoge la prioridad nacional en vivienda protegida (medida 27, p. 19, evaluada en vox-07) y más construcción de vivienda protegida (medida 29, p. 19).",
+   "motivo": "Desfasado: el programa ya está publicado y analizado."
   },
   {
-   "propuesta": "vox-06",
-   "criterio": "concrecion",
-   "antes": "… en Palma habló de que regresen con sus familias …",
-   "despues": "… en Palma, según la crónica, dijo que deben regresar con sus familias …",
-   "motivo": "La mención de Palma está en estilo indirecto."
+   "propuesta": "descartado «auditoría ferroviaria»",
+   "criterio": "seleccion.json, motivo",
+   "antes": "El programa del 12-nov incluye una auditoría de la red ferroviaria y se analizará con el prompt 1.",
+   "despues": "El programa del 12-nov incluye una «Auditoría del estado de la red» (medida 113, p. 53), que no figura entre sus 12 prioridades.",
+   "motivo": "Desfasado: el programa ya está publicado y analizado."
   },
   {
-   "propuesta": "vox-08 (antes vox-09)",
-   "criterio": "legal",
-   "antes": "mixta: El IRPF se regula por ley estatal ordinaria y una escala con mínimo exento y dos tipos sigue siendo progresiva, como exige el art. 31.1 CE para el sistema tributario. Pero el impuesto está cedido en parte a las comunidades, que fijan su propia escala autonómica (art. 46 de la Ley 22/2009); una tarifa total del 15 % y el 25 % exigiría su acuerdo o cambiar el sistema de financiación.",
-   "despues": "favorable: El IRPF se regula por ley estatal ordinaria, de modo que la escala estatal y los mínimos pueden modificarse por mayoría simple, y una escala con mínimo exento y dos tipos sigue siendo progresiva, como exige el art. 31.1 CE para el sistema tributario. El impuesto está cedido en parte a las comunidades, que fijan su propia escala autonómica (art. 46 de la Ley 22/2009): si los tipos del 15 % y el 25 % fueran la tarifa total, la reforma tendría que concentrarse en la parte estatal o contar con las comunidades. Figaredo no aclara este punto.",
-   "motivo": "Igual estándar: pp-10, salf-04 y erc-09 son reformas del IRPF con la misma cuestión de la escala autonómica y tienen «favorable», que la auditoría de coherencia da por coherente. erc-09 dice que la reforma «debe ajustar ambas o concentrar la subida en la estatal»."
-  },
-  {
-   "propuesta": "vox-08 (antes vox-09)",
-   "criterio": "beneficiarios",
-   "antes": "las de hasta 21.000 euros (casi la mitad) aportaron en torno al 7 % de la cuota",
-   "despues": "las de rendimientos de hasta 21.000 euros (el 54,5 %) aportaron en torno al 7 % de la cuota",
-   "motivo": "Error de cifra. En la estadística de la AEAT de 2023, los tramos de hasta 21.000 euros suman el 54,5 % de las liquidaciones (5,30 + 7,05 + 13,04 + 11,21 + 17,94), no «casi la mitad». Su cuota resultante es el 6,8 %."
-  },
-  {
-   "propuesta": "vox-10 (antes vox-12)",
-   "criterio": "resumen y concrecion",
-   "antes": "Auditar las nacionalidades españolas concedidas para revocar las que se consideren fraudulentas. / Abascal propone una «gran auditoría» de las nacionalidades concedidas para revocar las que considere fraudulentas. No dice qué periodo ni qué vías de adquisición, quién la haría, con qué procedimiento ni en qué plazo.",
-   "despues": "Hacer una «gran auditoría» de las nacionalidades españolas concedidas. / Abascal propone una «gran auditoría» de las nacionalidades concedidas «para saber quiénes son esas personas». No dice qué periodo ni qué vías de adquisición, quién la haría, con qué procedimiento, en qué plazo ni qué consecuencias tendría (por ejemplo, revocaciones).",
-   "motivo": "«para revocar las que considere fraudulentas» no consta en sus palabras. La valoración («mixta») no cambia."
+   "propuesta": "vox-c11 y vox-c12",
+   "criterio": "evaluacion.json, seleccion_sha256",
+   "antes": "ab50456079a8bffd9397cdd520ec3d2f29684b26286f319a41b4cae6b6df3086",
+   "despues": "6875d52fe1b9a914046c9efc51e47a1ef313600e6cbab252b785c5aaf09baa8d",
+   "motivo": "Recalculado tras cambiar seleccion.json."
   }
  ],
  "dudas": [
-  "vox-c11 (IRPF): elDiario.es (8-oct) sitúa la cita literal de Figaredo «esta semana», sin fecha exacta. Si fue el 5-oct, sería anterior a la convocatoria (6-oct), y la cita no menciona expresamente estas elecciones. Se mantiene por tres motivos: se repite tras la convocatoria (Moncloa.com, 11-oct; 101TV, 6-nov, ambas en estilo indirecto), el ministro de Hacienda la trató como propuesta para el 29-N (13-oct) y Figaredo la presenta como planteamiento «de máximo».",
-  "vox-c15 (nacionalidades): la cita es literal, pero Moncloa.com omite la comilla de apertura y la frase anterior. Que «esas personas» sean las que obtuvieron la nacionalidad lo dice el periodista. No se localizó la entrevista original de La Razón.",
-  "vox-c02 y vox-c06 se formularon como exigencia al Gobierno actual (vox-c02) o en una entrevista (vox-c06), pero después de la convocatoria. Según la prensa, el programa del 12-nov las recoge. Se mantienen.",
-  "Solo hay 10 prioridades: no quedan más compromisos concretos verificables con evidencia de que el partido los destaque. El programa de Vox del 12-nov es un PDF enlazado por Demócrata y no está publicado en una web oficial accesible. Incluye medidas que aquí se descartan por falta de cita literal, como la vivienda social con prioridad nacional y la auditoría ferroviaria. Cuando se catalogue, su análisis con el prompt 1 sustituirá a este.",
-  "En internacional, vox-05 y vox-07 usan la reforma danesa de 2002, que rebajó las prestaciones de los refugiados, como aplicación parcial («mixta», según la regla de la auditoría del 12-11). No es una preferencia por nacionalidad."
- ],
- "coherencia_2026-11-12b": [
-  {
-   "id": "vox-c11",
-   "criterio": "veces (seleccion.json)",
-   "antes": "n = 3 (8-oct, 11-oct Moncloa.com, 6-nov)",
-   "despues": "n = 2 (8-oct y 6-nov); Moncloa.com con «cuenta»: false",
-   "motivo": "«veces» cuenta ocasiones públicas distintas, no fuentes (prompt 1b). La pieza de Moncloa.com del 11-oct no recoge una nueva intervención: resume la propuesta y «el propio Figaredo reconoce» el coste de 46.000 millones, cifra que ya publicó elDiario.es con sus declaraciones de esa semana. Se corrige también la nota del compromiso, que la contaba como repetición."
-  },
-  {
-   "id": "vox-c11",
-   "criterio": "nota (seleccion.json)",
-   "antes": "La rebaja de cuatro puntos por hijo solo consta en paráfrasis (101TV). elDiario.es (8-oct) sitúa la declaración «esta semana», sin fecha exacta; la convocatoria es del 6-oct. Las repeticiones del 11-oct y 6-nov son posteriores, y el ministro de Hacienda la trató como propuesta de Vox para el 29-N (13-oct).",
-   "despues": "La rebaja de cuatro puntos por hijo solo consta en paráfrasis (101TV). elDiario.es (8-oct) sitúa la declaración «esta semana», sin fecha exacta; la convocatoria es del 6-oct. La repetición del 6-nov (101TV) es posterior; la pieza de Moncloa.com del 11-oct resume las mismas declaraciones, y el ministro de Hacienda la trató como propuesta de Vox para el 29-N (13-oct).",
-   "motivo": "coherencia con el nuevo recuento de «veces»"
-  },
-  {
-   "id": "vox-c05",
-   "criterio": "veces (seleccion.json)",
-   "antes": "n = 6 (incluía la entrevista de ABC del 11-oct)",
-   "despues": "n = 5; ABC con «cuenta»: false",
-   "motivo": "Una ocasión solo cuenta si el líder repite el compromiso. En la entrevista de ABC (Diario de León, 11-oct) Abascal pide «remigración de quien está en España y no tiene que estar», es decir, de quien está en situación irregular (vox-c03), sin mencionar las ayudas. Las demás cinco ocasiones sí ligan la remigración a vivir de ayudas o no trabajar (Avilés: «para aquellos que están en España y no trabajan»)."
-  },
-  {
-   "id": "vox-05",
-   "criterio": "concrecion",
-   "antes": "Abascal enuncia el objetivo (que se vayan quienes «vienen a recibir las ayudas que no alcanzan a los españoles», incluso quienes pasan «una mala racha» prolongada) y lo ha repetido en seis ocasiones, pero no identifica la medida: no dice si sería retorno voluntario incentivado o expulsión, qué ayudas cuentan, cuántas personas ni en qué plazo.",
-   "despues": "Abascal enuncia el objetivo (que se vayan quienes «vienen a recibir las ayudas que no alcanzan a los españoles», incluso quienes pasan «una mala racha» prolongada) y lo ha repetido en cinco ocasiones, pero no identifica la medida: no dice si sería retorno voluntario incentivado o expulsión, qué ayudas cuentan, cuántas personas ni en qué plazo.",
-   "motivo": "recuento de ocasiones corregido en seleccion.json (vox-c05: de 6 a 5); la valoración no cambia"
-  },
-  {
-   "id": "seleccion_sha256",
-   "criterio": "evaluacion.json",
-   "antes": "736dc4aa9e3d7ef3822cbddc582193c5c4d35e353a94989948f8996dcd9b751d",
-   "despues": "f48fb91ea20bdb1dcf980aa853a23c730fdc087886f8adb28c97226b9e103943",
-   "motivo": "seleccion.json ha cambiado (veces de vox-c05 y vox-c11)"
-  }
+  "vox-c11: la cita literal procede de declaraciones que elDiario.es (8-oct) sitúa «esta semana», sin fecha exacta; la convocatoria se publicó en el BOE el 6-oct. La repetición posterior segura es la de 101TV (6-nov), en paráfrasis.",
+  "Descartado «Aplicar las normas europeas en su nivel mínimo y desregulación»: la frase de Abascal que cita el motivo (ABC, 11-oct) no está en la URL de ese descartado (Demócrata, 4-nov), sino en otra crónica; no afecta a la decisión de descartarlo.",
+  "vox-c12: la consulta de la Dirección General de Tributos sobre las propinas se cita a través de El Derecho (2018), que no da su número."
  ]
 }
