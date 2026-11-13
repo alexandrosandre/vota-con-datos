@@ -25,7 +25,7 @@ correcta o legal) hasta que esté hecho.
   revisión).
   - [ ] PSOE — presenta su programa el 15-nov.
   - [ ] Vox — solo se usará desde su web oficial (a 12-nov no estaba en voxespana.es).
-  - [ ] PSC, Frente Amplio, Podemos, Junts, EH Bildu, Compromís, UPC, Ara Més-FA, UPN-PP — sin fecha.
+  - [ ] PSC, Frente Amplio, Podemos, Junts, EH Bildu, Compromís, NC-BC, Ara Més, UPN — sin fecha.
 - [ ] **3. [Yo] Revisar la selección de afirmaciones del paso 1** para cubrir mejor a los 18 partidos:
   análisis, codificación y verificación independiente; decido yo, sin pasar por ti. **Hecha el 13-nov**
   (`data/fase1/revision_afirmaciones_2026-11-13/integracion.md`): se retiran q02, q07, q10, q14 y q28, entran
@@ -35,12 +35,18 @@ correcta o legal) hasta que esté hecho.
   Canarias contra UPC (solo hay prensa).
 - [ ] **5. [Externo → Yo] Encuestas nuevas** publicadas antes del 24-nov, desde su publicación original.
   La veda (24-nov 00:00 → 29-nov 20:00) ya está automatizada en GitHub Actions.
-- [ ] **6. [Yo] Compromisos de campaña desde el 13-nov**, sobre todo para UPN-PP (0/30), PSC, Ara Més,
-  EH Bildu, PNV y CC (3/30). La revisión programada recoge las promesas nuevas a diario (13-nov: el mitin
-  de Sánchez en Sevilla no dejó medidas concretas). Barrido completo de posiciones del paso 1 y de los
-  compromisos del paso 2 de los partidos sin programa hacia el 18-nov, con verificación independiente.
+- [ ] **6. [Yo] Compromisos de campaña desde el 13-nov** (empieza la campaña), sobre todo para los partidos
+  con menos posiciones en el paso 1: UPN (0/30), Ara Més (2), PSC (3), CC (4), NC-BC (5), PNV (7). La
+  revisión programada recoge las promesas nuevas a diario. **Primer barrido de posiciones del paso 1
+  lanzado el 13-nov por la tarde** (grupo g5, con verificación independiente); segundo barrido, también
+  de los compromisos del paso 2 de los partidos sin programa, hacia el 18-nov.
 - [ ] **7. [Tú] Opcional:** activar la verificación en dos pasos en Porkbun. (Dominio verificado en
   GitHub el 13-nov; no borrar el registro TXT `_github-pages-challenge-…`.)
+
+**Hecho el 13-nov por la tarde** (revisión del cambio partidos/papeletas, commit 1299bb2): el PNV aparece
+en Navarra dentro de Geroa Bai; la afinidad del paso 3 se recalcula (salía «1 %»); documentos conjuntos de
+una coalición cuentan para cada firmante y el PSC cuenta a Sánchez (decisiones del editor); vista previa al
+compartir en redes con nombre del sitio e icono PNG.
 
 ## C. Después del 29-N
 
