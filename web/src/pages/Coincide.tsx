@@ -225,7 +225,11 @@ function Detalle({ partidoId }: { partidoId: string }) {
                       </a>
                     </>
                   )}
-                  {p.marco ? ` · Precampaña, referida a estas elecciones: «${p.marco}»` : ''}
+                  {p.marco
+                    ? ` · Precampaña, referida a estas elecciones: «${p.marco}»`
+                    : p.fecha && p.fecha < '2026-10-06'
+                      ? ' · Antes de la convocatoria de estas elecciones'
+                      : ''}
                 </p>
               )}
             </>

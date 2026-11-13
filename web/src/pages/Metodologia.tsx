@@ -126,9 +126,10 @@ export function Metodologia() {
             </li>
             <li>
               <strong>Posición de cada partido.</strong> Sale de su programa oficial del 29-N, con cita y página (nunca de programas
-              anteriores). Si no lo ha publicado, sale de lo que sus líderes nacionales o regionales han propuesto en público y en primera
-              persona para estas elecciones o la próxima legislatura: en un mitin, una entrevista, un debate o un acto de campaña. Eso cuenta
-              como su programa. Indicamos quién lo dijo, dónde y cuándo. No valen rumores, «fuentes del partido» ni resúmenes de terceros. Un
+              anteriores). Si no lo ha publicado, o no trata un tema, sale de lo que sus líderes nacionales o regionales han propuesto en público y en primera
+              persona: en un mitin, una entrevista, un debate, un acto de campaña o un discurso en el Congreso. Vale desde noviembre de 2025;
+              si es anterior a la convocatoria (6 de octubre de 2026), lo indicamos, y lo que el partido diga después prevalece. Indicamos
+              quién lo dijo, dónde y cuándo. No valen las votaciones sin palabras del propio líder. No valen rumores, «fuentes del partido» ni resúmenes de terceros. Un
               primer análisis asigna cada posición con su cita. Un segundo análisis, independiente, la comprueba con la fuente y corrige o
               descarta lo que no se sostenga. Si no hay posición documentada, el partido queda «sin posición conocida» en ese tema. En Navarra el PP no tiene papeleta propia y se presenta dentro de UPN-PP: en los temas de alcance estatal
               UPN-PP toma la posición del PP, y en los autonómicos solo cuenta lo que dice UPN.

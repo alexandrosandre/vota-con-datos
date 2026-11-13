@@ -20,13 +20,16 @@ citas de programa que no sean literales y las declaraciones sin autor, sin URL o
      sus palabras en un medio de referencia o en los canales del partido). **No valen**: «fuentes del
      partido», rumores, filtraciones, lo que otros dicen que piensa, columnas de opinión ni resúmenes de
      periodistas sin atribución.
-   * Fecha: desde la convocatoria (6-oct-2026) vale siempre. Antes (precampaña) solo si la propia
-     declaración se refiere expresamente a estas elecciones o a la próxima legislatura: anótalo en
-     `marco` con las palabras que lo muestran.
+   * Fecha: desde la convocatoria (6-oct-2026) vale siempre. Antes, desde el 1-nov-2025 (decisión del
+     editor, 13-nov-2026), vale cualquier declaración literal en primera persona sobre la medida,
+     también en un discurso en el Congreso o en el Senado (Diario de Sesiones); la web muestra su fecha
+     y que es anterior a la convocatoria. Si se refiere expresamente a estas elecciones o a la próxima
+     legislatura, anótalo en `marco`. Lo que el partido diga después (programa o campaña) prevalece
+     sobre lo anterior. Antes del 1-nov-2025 no vale.
    * También valen los documentos oficiales del partido para estas elecciones distintos del programa
      (manifiesto electoral, nota oficial): `quien` = el partido, `formato` = «documento oficial».
-   * Nunca: votaciones parlamentarias pasadas, posiciones de otras legislaturas, ni la ideología que
-     supongas.
+   * Nunca: votaciones parlamentarias (el sentido del voto, sin palabras del líder), posiciones de otras
+     legislaturas, ni la ideología que supongas.
 
 ## Codificación
 

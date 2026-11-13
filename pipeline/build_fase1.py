@@ -9,7 +9,7 @@ Comprobaciones (si falla alguna, termina con error y no se publica nada):
   * cada posición con fuente "programa" cita texto LITERAL del programa oficial del partido
     (misma normalización que verify_quotes.py);
   * cada posición con fuente "campaña" tiene URL, fecha y autor (líder en primera persona); si es
-    anterior a la convocatoria (2026-10-06), un 'marco' que la refiera a estas elecciones;
+    anterior al 1-nov-2025, un 'marco' que la refiera a estas elecciones;
   * valores en {-2..2} o null; afirmaciones y partidos conocidos.
 
 Uso: python3 -I pipeline/build_fase1.py
@@ -25,6 +25,8 @@ from verify_quotes import norm  # noqa: E402
 
 D = ROOT / "data"
 CONVOCATORIA = "2026-10-06"
+# Declaraciones anteriores a la convocatoria: valen desde esta fecha (decisión del editor, 13-nov-2026).
+DESDE = "2025-11-01"
 
 # Coaliciones sin papeleta propia del socio: en Navarra el PP solo se presenta dentro de UPN-PP, así que
 # en las afirmaciones de alcance estatal UPN-PP toma la posición del PP; en las autonómicas (competencias
@@ -86,8 +88,8 @@ def main():
                     if not c.get("url") or not c.get("fecha") or not (c.get("quien") or "").strip():
                         errores.append(f"{pid}/{qid}: declaración sin URL, fecha o autor identificado")
                         continue
-                    if c["fecha"] < CONVOCATORIA and not (c.get("marco") or "").strip():
-                        errores.append(f"{pid}/{qid}: declaración de precampaña ({c['fecha']}) sin 'marco' que la refiera a estas elecciones")
+                    if c["fecha"] < DESDE and not (c.get("marco") or "").strip():
+                        errores.append(f"{pid}/{qid}: declaración anterior al {DESDE} ({c['fecha']}) sin 'marco' que la refiera a estas elecciones")
                         continue
                 else:
                     errores.append(f"{pid}/{qid}: fuente desconocida {f}")
