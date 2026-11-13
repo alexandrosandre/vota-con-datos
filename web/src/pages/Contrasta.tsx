@@ -308,19 +308,21 @@ export function Contrasta() {
               {datos.base === 'compromisos' ? (
                 <p class="muted" style={{ fontSize: '0.85rem', margin: 0 }}>
                   <strong>{p.siglas} no ha publicado programa para el 29-N</strong> (última comprobación: {fmt.fecha(p.programa.comprobado)}).
-                  Analizamos sus {datos.propuestas.length} compromisos centrales{datos.compromisos_total ? ` (de ${datos.compromisos_total} recogidos)` : ''}:
-                  los que sus líderes han dicho en público y en primera persona para esta legislatura. Usamos el mismo método y la misma revisión
-                  independiente que con los programas{datos.revision ? ` (${datos.revision} correcciones aplicadas)` : ''}. Cuando publique su
-                  programa, sus propuestas centrales saldrán del programa, y los compromisos que no estén en él se seguirán mostrando aparte. <a href="#/metodologia">Cómo se hace</a>.
+                  Estas propuestas salen solo de compromisos públicos de sus líderes, dichos en primera persona para esta legislatura.{' '}
+                  <a href="#/metodologia">Cómo se hace</a>.
                 </p>
               ) : (
-              <p class="muted" style={{ fontSize: '0.85rem', margin: 0 }}>
-                <a href={p.programa.url ?? '#'} target="_blank" rel="noopener">
-                  Programa oficial
-                </a>{' '}
-                ({p.programa.paginas} páginas{p.programa.fecha ? `, ${fmt.fecha(p.programa.fecha)}` : ''}), leído completo. Análisis hecho con IA ({d.meta.modelo}) y fuentes públicas, y revisado por un segundo análisis
-                independiente{datos.revision ? ` (${datos.revision} correcciones aplicadas)` : ''}. <a href="#/metodologia">Cómo se hace</a>.
-              </p>
+                <p class="muted" style={{ fontSize: '0.85rem', margin: 0 }}>
+                  Propuestas del{' '}
+                  <a href={p.programa.url ?? '#'} target="_blank" rel="noopener">
+                    programa oficial
+                  </a>{' '}
+                  ({p.programa.paginas} páginas{p.programa.fecha ? `, ${fmt.fecha(p.programa.fecha)}` : ''}), leído completo
+                  {(datos.complemento?.length ?? 0) > 0
+                    ? ', y, al final, compromisos públicos de sus líderes que no están en el programa'
+                    : ''}
+                  . <a href="#/metodologia">Cómo se hace</a>.
+                </p>
               )}
             </div>
             {datos.propuestas.map((x, i) => (

@@ -58,7 +58,7 @@ export interface PosicionPartido {
 }
 
 export interface DatosFase1 {
-  meta: { actualizado: string; nota?: string; provisional?: boolean };
+  meta: { actualizado: string; nota?: string };
   preguntas: Pregunta[];
   /** partido -> pregunta -> posición */
   posiciones: Record<string, Record<string, PosicionPartido>>;

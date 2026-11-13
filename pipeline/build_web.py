@@ -86,7 +86,6 @@ def main():
     n_camp = sum(1 for qs in fase1.get("posiciones", {}).values() for x in qs.values() if x.get("fuente") == "campaña")
     fase1["meta"] = {
         "actualizado": date.today().isoformat(),
-        "provisional": len(publicados) < len(partidos) / 2,
         "nota": (f"Hasta ahora conocemos {n_prog + n_camp} posiciones de los partidos, todas con cita: {n_prog} de programas oficiales "
                  f"y {n_camp} de lo que sus líderes han propuesto en público. Han publicado programa {len(publicados)} de {len(partidos)} "
                  f"partidos. Revisamos las posiciones cada vez que se publica uno."),

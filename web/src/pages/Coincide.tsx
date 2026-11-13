@@ -62,15 +62,8 @@ export function EstadoProgramas() {
 }
 
 function Intro({ n, onStart, hechas }: { n: number; onStart: () => void; hechas: number }) {
-  const meta = fase1.value?.meta;
   return (
     <div class="card stack">
-      {meta?.provisional && (
-        <div class="note">
-          <strong>Versión provisional.</strong> La mayoría de partidos aún no ha publicado su programa. De muchos solo conocemos su posición en
-          algunos temas, por lo que han dicho en campaña. Lo indicamos en los resultados. {meta.nota}
-        </div>
-      )}
       <p style={{ fontSize: '1.05rem' }}>
         Vas a ver <strong>{n} afirmaciones</strong>. Cada una sale de una propuesta real de estas elecciones: de un programa oficial o de lo que
         los líderes de un partido han propuesto en público. No te decimos de quién es hasta el final, para que juzgues la idea y no las siglas.
