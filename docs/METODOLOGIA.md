@@ -80,6 +80,13 @@ la base). Semilla fija por circunscripción y escenario: resultados reproducible
 paso 1 u orden manual; las coaliciones cuentan para sus partidos integrantes) con P ≥ 50 % en esa
 circunscripción.
 
+**Partidos y papeletas** (decisión del editor, 13-nov-2026): los pasos 1 y 2 tratan de partidos y el 3
+de papeletas. Cada partido llega a su papeleta en la provincia por `data/mapeo/candidaturas_2026.json`
+(`partido` = partido principal; `afines` = socios del pacto de coalición, o el partido afín PSOE-PSC);
+`pipeline/papeletas.py` lo deja escrito por partido en `data/partidos/partidos.json` («papeletas»).
+Si dos partidos del orden van en la misma papeleta (PP y UPN en UPN-PP), la papeleta sale una vez, en
+el puesto del primero, y la web dice qué partidos contiene.
+
 ## Paso 1 · Elige (afinidad)
 
 Ver `docs/research/vaa_estado_del_arte.md`. 30 afirmaciones aprox. a partir de propuestas reales

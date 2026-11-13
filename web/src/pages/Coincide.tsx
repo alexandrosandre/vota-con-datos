@@ -206,7 +206,6 @@ function Detalle({ partidoId }: { partidoId: string }) {
             <>
               <span class="fuente-tag">
                 {p.fuente === 'campaña' ? 'Lo dijo en público' : 'Programa oficial'}
-                {p.heredada_de ? ` · ${partido(p.heredada_de)?.siglas ?? p.heredada_de}` : ''}
               </span>
               <p class="quote">
                 «{p.cita}»{' '}

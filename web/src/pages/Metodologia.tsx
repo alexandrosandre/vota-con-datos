@@ -79,6 +79,11 @@ export function Metodologia() {
               publicadas en el BOE (BOE-A-2026-23103), con su corrección oficial (BOE-A-2026-23383). Nada de rumores ni de acuerdos anunciados.
             </li>
             <li>
+              <strong>Partidos y papeletas:</strong> en los pasos 1 y 2 te mostramos partidos; en el paso 3, papeletas, porque algunos partidos
+              se presentan en coalición en algunas provincias (por ejemplo, en Navarra el PP va dentro de UPN-PP). Lo que dice un partido cuenta
+              solo para ese partido, no para sus socios de coalición.
+            </li>
+            <li>
               <strong>Resultados de 2023 y de las europeas de 2024:</strong> recuento oficial (Junta Electoral Central, en el BOE, y ficheros del
               Ministerio del Interior). Para Adelante Andalucía, también las elecciones andaluzas de mayo de 2026 (Junta Electoral de
               Andalucía, en el BOJA).
@@ -131,8 +136,7 @@ export function Metodologia() {
               si es anterior a la convocatoria (6 de octubre de 2026), lo indicamos, y lo que el partido diga después prevalece. Indicamos
               quién lo dijo, dónde y cuándo. No valen las votaciones sin palabras del propio líder. No valen rumores, «fuentes del partido» ni resúmenes de terceros. Un
               primer análisis asigna cada posición con su cita. Un segundo análisis, independiente, la comprueba con la fuente y corrige o
-              descarta lo que no se sostenga. Si no hay posición documentada, el partido queda «sin posición conocida» en ese tema. En Navarra el PP no tiene papeleta propia y se presenta dentro de UPN-PP: en los temas de alcance estatal
-              UPN-PP toma la posición del PP, y en los autonómicos solo cuenta lo que dice UPN.
+              descarta lo que no se sostenga. Si no hay posición documentada, el partido queda «sin posición conocida» en ese tema.
             </li>
             <li>
               <strong>Afinidad.</strong> En cada tema comparamos tu respuesta con la del partido: cuanto más cerca, más afinidad. Un 100 %
@@ -251,7 +255,7 @@ export function Metodologia() {
             <li>
               <strong>Alternativa:</strong> solo si nos das un orden de preferencia: el del paso 1 (de más a menos afinidad) o el que pongas a
               mano. Si tu opción tiene menos de un 50 % de probabilidad de escaño en tu provincia, te señalamos la primera de ese orden, sin
-              contar tu voto, que supera ese 50 %. Si un partido de tu orden va en coalición, cuenta la coalición. Sin orden de preferencia no
+              contar tu voto, que supera ese 50 %. Si un partido de tu orden va en coalición, cuenta la papeleta de la coalición; si dos partidos de tu orden van en la misma papeleta, aparece una sola vez, en el puesto del primero. Sin orden de preferencia no
               sugerimos nada. Votar a quien prefieres siempre es legítimo: los votos cuentan también para la financiación pública de los
               partidos y como señal política.
             </li>

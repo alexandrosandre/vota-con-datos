@@ -46,9 +46,53 @@ function calcular(c: Circunscripcion, esc: Escenario): Fila[] {
   return filas;
 }
 
-/** Candidatura de un partido en esta provincia (directa o integrada en una coalición). */
+/** Papeleta de un partido en esta provincia: la suya, la de la coalición en la que va o, si no se presenta, la de su partido afín. */
 function filaDe(filas: Fila[], p: string) {
   return filas.find((f) => f.cand.partido === p) ?? filas.find((f) => f.cand.afines?.includes(p));
+}
+
+const esCoalicion = (c: CandidaturaCirc) => (c.coalicion?.miembros.length ?? 0) >= 2;
+
+/** Partidos de los pasos 1 y 2 que se pueden votar en esta provincia, cada uno con su papeleta (la suya o la de su coalición). */
+function partidosAqui(circ: Circunscripcion): { pid: string; cand: CandidaturaCirc }[] {
+  const out: { pid: string; cand: CandidaturaCirc }[] = [];
+  for (const c of circ.candidaturas) if (c.partido) out.push({ pid: c.partido, cand: c });
+  for (const c of circ.candidaturas)
+    if (esCoalicion(c))
+      for (const a of c.afines ?? []) if (!out.some((x) => x.pid === a)) out.push({ pid: a, cand: c });
+  return out;
+}
+
+/** «el PP», «Podemos». */
+function conArticulo(pid: string) {
+  const p = partido(pid);
+  return `${p?.articulo ? `${p.articulo} ` : ''}${p?.siglas ?? pid}`;
+}
+
+/** «A», «A y B», «A, B y C». */
+function enumera(xs: string[]) {
+  return xs.length <= 1 ? (xs[0] ?? '') : `${xs.slice(0, -1).join(', ')} y ${xs[xs.length - 1]}`;
+}
+
+/** «Palmas (Las)» → «Las Palmas» (los nombres oficiales ponen el artículo al final). */
+function nombreLlano(n: string) {
+  const m = n.match(/^(.*) \((.*)\)$/);
+  return m ? `${m[2]} ${m[1]}` : n;
+}
+
+/** Frase llana de cómo se presenta un partido en la provincia cuando no es con su propia papeleta (o va en coalición con otro). */
+function comoSePresenta(pid: string, cand: CandidaturaCirc, circ: Circunscripcion): string | null {
+  if (!partido(pid)) return null;
+  const otros = [cand.partido, ...(cand.afines ?? [])].filter((x): x is string => !!x && x !== pid);
+  const donde = `En ${nombreLlano(circ.nombre)}, ${conArticulo(pid)}`;
+  if (esCoalicion(cand)) {
+    if (cand.partido === pid && otros.length === 0) return null;
+    const junto = enumera(otros.map(conArticulo));
+    return `${donde} se presenta dentro de la coalición ${cand.siglas}${junto ? `, ${junto.startsWith('el ') ? `junto al ${junto.slice(3)}` : `junto a ${junto}`}` : ''}.`;
+  }
+  if (cand.partido === pid) return null;
+  const afin = conArticulo(cand.partido ?? '');
+  return `${donde} no presenta candidatura propia: te mostramos la ${afin.startsWith('el ') ? `del ${afin.slice(3)}` : `de ${afin}`}, su partido afín.`;
 }
 
 /** Logotipo del partido (licencia libre) o, si no hay, sus iniciales. */
@@ -162,22 +206,47 @@ function QuienElige({ cand, escanos }: { cand: CandidaturaCirc; escanos: number 
 }
 
 /** Orden de preferencia: de dónde viene y cómo cambiarlo. */
-function Preferencias({ circ, filas, elegidaId, sugeridaId }: { circ: Circunscripcion; filas: Fila[]; elegidaId?: string; sugeridaId?: string }) {
+/** Tu orden de preferencia, papeleta a papeleta: si dos partidos de tu orden van en la misma papeleta, sale una vez, en el puesto del primero. */
+function gruposOrden(filas: Fila[], ranking: string[]): { fila: Fila; partidos: string[] }[] {
+  const out: { fila: Fila; partidos: string[] }[] = [];
+  for (const p of ranking) {
+    const f = filaDe(filas, p);
+    if (!f) continue;
+    const g = out.find((x) => x.fila === f);
+    if (g) g.partidos.push(p);
+    else out.push({ fila: f, partidos: [p] });
+  }
+  return out;
+}
+
+function Preferencias({
+  circ,
+  filas,
+  elegidaId,
+  sugeridaId,
+  pidElegido,
+}: {
+  circ: Circunscripcion;
+  filas: Fila[];
+  elegidaId?: string;
+  sugeridaId?: string;
+  pidElegido?: string | null;
+}) {
   const e = estado.value;
   const hayPaso1 = Object.keys(e.afinidades ?? {}).length > 0;
-  const presentes = e.ranking.filter((p) => filaDe(filas, p));
-  const ausentes = e.ranking.length - presentes.length;
-  const candidatos = circ.candidaturas.filter((c) => c.partido && !e.ranking.includes(c.partido));
+  const grupos = gruposOrden(filas, e.ranking);
+  const ausentes = e.ranking.filter((p) => !filaDe(filas, p)).length;
+  const candidatos = partidosAqui(circ).filter((x) => !e.ranking.includes(x.pid));
 
   const poner = (r: string[]) => actualizar({ ranking: r, rankingOrigen: 'manual' });
-  const mover = (p: string, d: number) => {
+  // Mueve una papeleta un puesto: intercambia el primer partido de cada una (los que no se presentan aquí no cuentan).
+  const mover = (gi: number, d: number) => {
+    const j = gi + d;
+    if (j < 0 || j >= grupos.length) return;
     const l = e.ranking.slice();
-    const i = l.indexOf(p);
-    // salta los partidos que no se presentan aquí, para que el cambio se vea
-    let j = i + d;
-    while (j >= 0 && j < l.length && !filaDe(filas, l[j])) j += d;
-    if (j < 0 || j >= l.length) return;
-    [l[i], l[j]] = [l[j], l[i]];
+    const a = l.indexOf(grupos[gi].partidos[0]);
+    const b = l.indexOf(grupos[j].partidos[0]);
+    [l[a], l[b]] = [l[b], l[a]];
     poner(l);
   };
   const volverPaso1 = () => {
@@ -206,7 +275,7 @@ function Preferencias({ circ, filas, elegidaId, sugeridaId }: { circ: Circunscri
             </a>
             <button
               class="btn"
-              onClick={() => poner(elegidaId ? [circ.candidaturas.find((c) => c.id === elegidaId)?.partido].filter(Boolean) as string[] : [])}
+              onClick={() => poner(pidElegido ? [pidElegido] : [])}
             >
               Ordenarlo yo aquí
             </button>
@@ -232,26 +301,36 @@ function Preferencias({ circ, filas, elegidaId, sugeridaId }: { circ: Circunscri
             )}
           </div>
           <ol class="orden-pref">
-            {presentes.map((p, i) => {
-              const f = filaDe(filas, p)!;
-              const af = e.rankingOrigen === 'fase1' ? e.afinidades?.[p] : undefined;
-              const sig = partido(p)?.siglas ?? p;
+            {grupos.map((g, i) => {
+              const f = g.fila;
+              const p = g.partidos[0];
+              const afs = e.rankingOrigen === 'fase1' ? g.partidos.map((x) => [x, e.afinidades?.[x]] as const).filter(([, a]) => a !== undefined) : [];
+              const sigs = g.partidos.map((x) => partido(x)?.siglas ?? x);
+              const varios = g.partidos.length > 1;
+              const sig = varios ? f.cand.siglas : sigs[0];
               return (
-                <li key={p} class={f.cand.id === elegidaId ? 'es-voto' : f.cand.id === sugeridaId ? 'es-sugerida' : ''}>
+                <li key={f.cand.id} class={f.cand.id === elegidaId ? 'es-voto' : f.cand.id === sugeridaId ? 'es-sugerida' : ''}>
                   <span class="pos">{i + 1}</span>
-                  <MarcaPartido cand={f.cand} pid={p} />
+                  <MarcaPartido cand={f.cand} pid={varios ? f.cand.partido : p} />
                   <span class="nombre">
                     <strong>{sig}</strong>
-                    {f.cand.partido !== p && <span class="muted"> · en {f.cand.siglas}</span>}
+                    {varios ? (
+                      <span class="muted"> · aquí van juntos {enumera(sigs)}</span>
+                    ) : (
+                      f.cand.partido !== p && <span class="muted"> · en {f.cand.siglas}</span>
+                    )}
                     {f.cand.id === elegidaId && <span class="tag">tu voto</span>}
                     {f.cand.id === sugeridaId && <span class="tag tag-sug">sugerida</span>}
-                    {af !== undefined && <span class="muted"> · afinidad {af} %</span>}
+                    {afs.length === 1 && !varios && <span class="muted"> · afinidad {afs[0][1]} %</span>}
+                    {varios && afs.length > 0 && (
+                      <span class="muted"> · afinidad {afs.map(([x, a]) => `${partido(x)?.siglas ?? x} ${a} %`).join(', ')}</span>
+                    )}
                   </span>
                   <span class="prob">{f.sinBase ? '—' : fmt.pct(f.pEscano)}</span>
                   <span class="acciones">
-                    <button aria-label={`Subir ${sig}`} onClick={() => mover(p, -1)} disabled={i === 0}>↑</button>
-                    <button aria-label={`Bajar ${sig}`} onClick={() => mover(p, 1)} disabled={i === presentes.length - 1}>↓</button>
-                    <button aria-label={`Quitar ${sig} de tu orden`} onClick={() => poner(e.ranking.filter((x) => x !== p))}>✕</button>
+                    <button aria-label={`Subir ${sig}`} onClick={() => mover(i, -1)} disabled={i === 0}>↑</button>
+                    <button aria-label={`Bajar ${sig}`} onClick={() => mover(i, 1)} disabled={i === grupos.length - 1}>↓</button>
+                    <button aria-label={`Quitar ${sig} de tu orden`} onClick={() => poner(e.ranking.filter((x) => !g.partidos.includes(x)))}>✕</button>
                   </span>
                 </li>
               );
@@ -273,9 +352,10 @@ function Preferencias({ circ, filas, elegidaId, sugeridaId }: { circ: Circunscri
                   }}
                 >
                   <option value="">+ Añadir un partido al final…</option>
-                  {candidatos.map((c) => (
-                    <option key={c.id} value={c.partido!}>
-                      {c.siglas}
+                  {candidatos.map((x) => (
+                    <option key={x.pid} value={x.pid}>
+                      {partido(x.pid)?.siglas ?? x.pid}
+                      {x.cand.partido !== x.pid ? ` (en ${x.cand.siglas})` : ''}
                     </option>
                   ))}
                 </select>
@@ -312,16 +392,27 @@ export function Cuenta() {
     null;
   const filaElegida = filas.find((f) => f.cand.id === elegida?.id);
   const noSePresenta = !!(circ && e.partido && !elegida);
+  // Partido (pasos 1 y 2) que la persona quiere votar: el elegido o, si eligió una papeleta, su partido principal.
+  const pidElegido = e.partido && partido(e.partido) ? e.partido : (elegida?.partido ?? null);
+  const enCoalicion = circ && elegida && pidElegido ? comoSePresenta(pidElegido, elegida, circ) : null;
+  const opciones = circ ? partidosAqui(circ) : [];
+  const otrasCands = circ ? circ.candidaturas.filter((c) => !c.partido) : [];
+  const valorSelect = opciones.some((x) => x.pid === e.partido)
+    ? e.partido!
+    : elegida?.partido && opciones.some((x) => x.pid === elegida.partido)
+      ? elegida.partido
+      : (elegida?.id ?? e.partido ?? '');
 
   // Sugerencia: el primero de tu orden de preferencia (sin contar tu voto) con P >= 50 % aquí.
   const pocasOpciones = noSePresenta || (!!filaElegida && !filaElegida.sinBase && filaElegida.pEscano < UMBRAL_RECOMENDACION);
-  const candidatasOrden = e.ranking
-    .map((p) => filaDe(filas, p))
-    .filter((f, i, a): f is Fila => !!f && a.indexOf(f) === i && f.cand.id !== elegida?.id);
-  const alternativa = pocasOpciones ? candidatasOrden.find((f) => !f.sinBase && f.pEscano >= UMBRAL_RECOMENDACION) : undefined;
-  const posAlternativa = alternativa ? e.ranking.filter((p) => filaDe(filas, p)).findIndex((p) => filaDe(filas, p) === alternativa) + 1 : 0;
+  const grupos = gruposOrden(filas, e.ranking);
+  const alternativa = pocasOpciones
+    ? grupos.map((g) => g.fila).find((f) => f.cand.id !== elegida?.id && !f.sinBase && f.pEscano >= UMBRAL_RECOMENDACION)
+    : undefined;
+  const posAlternativa = alternativa ? grupos.findIndex((g) => g.fila === alternativa) + 1 : 0;
 
-  const coste = e.partido ? d.coste_nacional_2023?.[e.partido] : undefined;
+  // Coste de la papeleta (su partido principal), no del partido que va dentro de ella.
+  const coste = elegida?.partido ? d.coste_nacional_2023?.[elegida.partido] : undefined;
   const irAPreferencias = () => document.getElementById('preferencias')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
   const Sugerencia = () =>
@@ -391,21 +482,31 @@ export function Cuenta() {
           <label class="field">
             Partido que quieres votar
             <select
-              value={elegida?.id ?? e.partido ?? ''}
-              onChange={(ev) => {
-                const v = (ev.target as HTMLSelectElement).value;
-                const c = circ?.candidaturas.find((x) => x.id === v);
-                actualizar({ partido: c?.partido ?? v ?? null });
-              }}
+              value={valorSelect}
+              onChange={(ev) => actualizar({ partido: (ev.target as HTMLSelectElement).value || null })}
               disabled={!circ}
             >
-              <option value="">{circ ? 'Elige candidatura…' : 'Primero elige provincia'}</option>
+              <option value="">{circ ? 'Elige partido…' : 'Primero elige provincia'}</option>
               {noSePresenta && <option value={e.partido!}>{partido(e.partido)?.siglas ?? e.partido} (no se presenta aquí)</option>}
-              {circ?.candidaturas.map((c) => (
-                <option key={c.id} value={c.id}>
-                  {c.siglas} — {c.denominacion}
-                </option>
-              ))}
+              {opciones.length > 0 && (
+                <optgroup label="Partidos">
+                  {opciones.map((x) => (
+                    <option key={x.pid} value={x.pid}>
+                      {partido(x.pid)?.siglas ?? x.pid} —{' '}
+                      {x.cand.partido === x.pid && !(x.cand.afines?.length && esCoalicion(x.cand)) ? x.cand.denominacion : `en la papeleta ${x.cand.siglas}`}
+                    </option>
+                  ))}
+                </optgroup>
+              )}
+              {otrasCands.length > 0 && (
+                <optgroup label="Otras candidaturas">
+                  {otrasCands.map((c) => (
+                    <option key={c.id} value={c.id}>
+                      {c.siglas} — {c.denominacion}
+                    </option>
+                  ))}
+                </optgroup>
+              )}
             </select>
           </label>
           <label class="field">
@@ -466,6 +567,7 @@ export function Cuenta() {
                   <h2 style={{ margin: '4px 0 10px', display: 'flex', alignItems: 'center', gap: 10 }}>
                     <MarcaPartido cand={elegida!} size={34} /> {elegida!.siglas}
                   </h2>
+                  {enCoalicion && <p style={{ margin: '0 0 10px' }}>{enCoalicion}</p>}
                   {!filaElegida.sinBase && <span class={`verdict v-${veredicto(filaElegida.pEscano)}`}>{TEXTO_VEREDICTO[veredicto(filaElegida.pEscano)]}</span>}
                 </div>
                 {!filaElegida.sinBase && (
@@ -517,8 +619,8 @@ export function Cuenta() {
               <QuienElige cand={elegida!} escanos={filaElegida.sinBase ? 0 : filaElegida.escanosCentral} />
               {!noSePresenta && <Sugerencia />}
               <div class="row" style={{ marginTop: 16 }}>
-                {elegida?.partido && (
-                  <a class="btn" href={`#/contrasta/${elegida.partido}`}>
+                {pidElegido && (
+                  <a class="btn" href={`#/contrasta/${pidElegido}`}>
                     ← Contrastar sus propuestas (paso 2)
                   </a>
                 )}
@@ -526,7 +628,7 @@ export function Cuenta() {
             </div>
           )}
 
-          <Preferencias circ={circ} filas={filas} elegidaId={elegida?.id} sugeridaId={alternativa?.cand.id} />
+          <Preferencias circ={circ} filas={filas} elegidaId={elegida?.id} sugeridaId={alternativa?.cand.id} pidElegido={pidElegido} />
 
           <div class="card">
             <h2 class="h3" id="tabla-candidaturas">

@@ -109,6 +109,41 @@ class TestEscenarios(unittest.TestCase):
             self.assertEqual(len(c["candidaturas"]), len(boe[c["ine"]]["candidaturas"]), c["ine"])
 
 
+class TestPartidosYPapeletas(unittest.TestCase):
+    """Pasos 1 y 2: partidos; paso 3: papeletas (decisión del editor, 13-nov-2026)."""
+
+    PART = {p["id"]: p for p in json.loads((ROOT / "data/partidos/partidos.json").read_text())["partidos"]}
+
+    def papeleta(self, pid, ine):
+        c = next(c for c in F2["circunscripciones"] if c["ine"] == ine)
+        return next((k for k in c["candidaturas"] if k["partido"] == pid), None) or \
+            next((k for k in c["candidaturas"] if pid in (k.get("afines") or [])), None)
+
+    def test_papeletas_al_dia(self):
+        import papeletas
+        calc = papeletas.calcular()
+        for pid, p in self.PART.items():
+            self.assertEqual(p.get("papeletas"), calc.get(pid, []), pid)
+
+    def test_coaliciones_regionales(self):
+        self.assertEqual(self.papeleta("pp", "31")["siglas"], "UPN-PP")  # Navarra
+        self.assertEqual(self.papeleta("upn", "31")["siglas"], "UPN-PP")
+        self.assertEqual(self.papeleta("podemos", "35")["siglas"], "NC-BC, PODEMOS, IU, SUMAR")  # Las Palmas
+        self.assertEqual(self.papeleta("frente_amplio", "07")["siglas"], "ARAMÉS-EU-MS")  # Illes Balears
+        for ine in ("03", "12", "46"):
+            for pid in ("compromis", "podemos", "frente_amplio", "erc"):
+                self.assertEqual(self.papeleta(pid, ine)["siglas"], "COMPROMIS-EUPV-PODEM-ERPV", (pid, ine))
+
+    def test_entradas_son_partidos(self):
+        self.assertEqual({k: self.PART[k]["siglas"] for k in ("upn", "upc", "ara_mes_fa", "compromis", "cc")},
+                         {"upn": "UPN", "upc": "NC-BC", "ara_mes_fa": "Ara Més", "compromis": "Compromís", "cc": "CCa"})
+
+    def test_sin_posiciones_heredadas(self):
+        f1 = json.loads((ROOT / "web/public/data/fase1.json").read_text())
+        self.assertFalse([(p, q) for p, qs in f1["posiciones"].items() for q, x in qs.items() if x.get("heredada_de")])
+        self.assertFalse([q for q, x in f1["posiciones"].get("upn", {}).items() if x.get("valor") is not None])
+
+
 class TestVeda(unittest.TestCase):
     def test_limites(self):
         f = build_fase2.en_veda

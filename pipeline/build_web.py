@@ -20,12 +20,15 @@ D = ROOT / "data"
 OUT = ROOT / "web" / "public" / "data"
 ALIAS_PROMESAS = {"coalicion_canaria": "cc"}
 # Nombre corto para mostrar (las siglas exactas del BOE se conservan en "siglas_boe").
+# Pasos 1 y 2: partidos (no coaliciones); el paso 3 muestra papeletas (decisión del editor, 13-nov-2026).
 NOMBRE_CORTO = {
-    "pp": "PP", "upn": "UPN-PP", "psoe": "PSOE", "psc": "PSC", "vox": "Vox", "frente_amplio": "Frente Amplio",
-    "podemos": "Podemos", "compromis": "Compromís", "upc": "UPC", "ara_mes_fa": "Ara Més-Front Ampli", "erc": "ERC",
+    "pp": "PP", "upn": "UPN", "psoe": "PSOE", "psc": "PSC", "vox": "Vox", "frente_amplio": "Frente Amplio",
+    "podemos": "Podemos", "compromis": "Compromís", "upc": "NC-BC", "ara_mes_fa": "Ara Més", "erc": "ERC",
     "junts": "Junts", "eh_bildu": "EH Bildu", "pnv": "PNV", "bng": "BNG", "cc": "CC", "adelante_andalucia": "Adelante Andalucía",
     "salf": "SALF",
 }
+# Artículo con que se nombra al partido en una frase («En Navarra, el PP se presenta dentro de UPN-PP»).
+ARTICULO = {"pp": "el", "psoe": "el", "psc": "el", "pnv": "el", "bng": "el", "frente_amplio": "el"}
 
 
 def load(p):
@@ -38,6 +41,8 @@ def write(name, obj):
 
 
 def main():
+    # Las papeletas de cada partido (paso 3) deben estar al día con el BOE y el mapeo.
+    subprocess.run([sys.executable, "-I", str(ROOT / "pipeline" / "papeletas.py"), "--check"], check=True)
     cat = load("partidos/partidos.json")
     prom = load("promesas/promesas.json")["partidos"]
     prom = {ALIAS_PROMESAS.get(k, k): v for k, v in prom.items()}
@@ -52,6 +57,8 @@ def main():
             "nombre": p["nombre"],
             "siglas": NOMBRE_CORTO.get(p["id"], p["siglas"]),
             "siglas_boe": p["siglas"],
+            "articulo": ARTICULO.get(p["id"], ""),
+            "nota_coalicion": p.get("nota_coalicion"),
             "ambito": p["ambito"],
             "comunidades": p.get("comunidades") or [],
             "candidato": p.get("candidato"),

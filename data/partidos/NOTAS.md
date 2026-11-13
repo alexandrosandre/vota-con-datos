@@ -35,6 +35,8 @@ Se incluyen las candidaturas al Congreso que cumplen al menos uno de estos crite
 
 El universo resultante son 18 candidaturas.
 
+**13 de noviembre de 2026 · partidos, no coaliciones.** Por decisión del editor, los pasos 1 y 2 muestran partidos y el paso 3 papeletas. Cinco entradas pasan a describir un partido (los ids no cambian): `upn` → UPN; `upc` → Nueva Canarias-Bloque Canarista (NC-BC); `ara_mes_fa` → Ara Més; `compromis` → Compromís; `cc` → Coalición Canaria. Frente Amplio sigue siendo una sola entrada (coalición estatal con candidato y programa comunes) y el PSC sigue siendo partido. La tabla de abajo conserva la descripción original, por candidatura. Dónde se vota a cada partido, provincia a provincia, está en el campo `papeletas` de `partidos.json` (generado por `pipeline/papeletas.py` desde el BOE, el mapeo y los pactos de coalición). Reatribución de contenidos: `data/fase1/reatribucion_2026-11-13.md`, `data/fase3/reatribucion_2026-11-13.md` y `data/promesas/reatribucion_2026-11-13.md`.
+
 | id | Candidatura | Ámbito | Criterio |
 |---|---|---|---|
 | pp | Partido Popular | estatal, 51 circunscripciones (no Navarra) | a, 137 escaños en 2023 |

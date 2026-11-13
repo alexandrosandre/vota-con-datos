@@ -1,35 +1,348 @@
 {
-  "_doc": "Asignación de cada candidatura proclamada en el BOE (29N) a un partido de la fase 1, y de qué votos de 2023 (misma circunscripción) parte su escenario base. Reglas por siglas/denominación EXACTAS del BOE; se aplican en orden y la primera que casa gana. 'base_2023' lista siglas de candidaturas de 2023 en la misma circunscripción; 'reparto' indica que esos votos se comparten con otra candidatura 2026 según el peso relativo en las europeas de 2024 de esa provincia. 'afines' = otros partidos de la fase 1 que integran la candidatura (coaliciones), usado para sugerir alternativas.",
+  "_doc": "Asignación de cada candidatura proclamada en el BOE (29N) a un partido de la fase 1, y de qué votos de 2023 (misma circunscripción) parte su escenario base. Reglas por siglas/denominación EXACTAS del BOE; se aplican en orden y la primera que casa gana. 'base_2023' lista siglas de candidaturas de 2023 en la misma circunscripción; 'reparto' indica que esos votos se comparten con otra candidatura 2026 según el peso relativo en las europeas de 2024 de esa provincia. 'afines' = otros partidos de la fase 1 que integran la candidatura (coaliciones), usado para sugerir alternativas. 'partido' es el partido principal de la papeleta (pasos 1 y 2); desde el 13-nov-2026 los pasos 1 y 2 muestran partidos y el paso 3 papeletas, así que un partido que concurre dentro de una coalición (p. ej. el PP en UPN-PP) llega a su papeleta por 'afines'. 'afines' sale del pacto de coalición (data/boe/coaliciones.json) o, sin coalición, de la relación PSOE-PSC.",
   "reglas": [
-    {"siglas": ["PP"], "partido": "pp", "base_2023": ["PP"]},
-    {"siglas": ["UPN-PP"], "partido": "upn", "afines": ["pp"], "base_2023": ["UPN", "PP"]},
-    {"siglas": ["PSC"], "partido": "psc", "afines": ["psoe"], "base_2023": ["PSC"]},
-    {"siglas": ["PSOE", "PSE-EE (PSOE)", "PSdeG-PSOE", "PSIB-PSOE", "PSN-PSOE"], "partido": "psoe", "afines": ["psc"], "base_2023": ["PSOE"]},
-    {"siglas": ["VOX"], "partido": "vox", "base_2023": ["VOX"]},
-    {"denominacion": ["VOX"], "partido": "vox", "base_2023": ["VOX"]},
-    {"siglas": ["FA", "COMUNS-FRONT AMPLI", "FRENTE AMPLIO-FRONTE AMPLA", "FRENTE AMPLIO - FRONTE AMPLA", "FRENTE AMPLIO-FRONTE ZABALA", "CHA-IU-MS-FRENTE AMPLIO"], "partido": "frente_amplio", "base_2023": ["SUMAR"], "reparto": {"con": "podemos", "europeas_propio": ["SUMAR"], "europeas_otro": ["PODEMOS"]}},
-    {"siglas": ["ARAMÉS-EU-MS"], "partido": "ara_mes_fa", "afines": ["frente_amplio"], "base_2023": ["SUMAR"]},
-    {"siglas": ["PODEMOS", "PAZ,CASA Y TRABAJO"], "_nota": "Ceuta: el BOE de proclamación imprime siglas 'PAZ,CASA Y TRABAJO' con denominación PODEMOS (posible errata, ver data/boe/correcciones.md)", "partido": "podemos", "base_2023": ["SUMAR"], "reparto": {"con": "frente_amplio", "europeas_propio": ["PODEMOS"], "europeas_otro": ["SUMAR"]}},
-    {"denominacion": ["PODEMOS"], "partido": "podemos", "base_2023": ["SUMAR"], "reparto": {"con": "frente_amplio", "europeas_propio": ["PODEMOS"], "europeas_otro": ["SUMAR"]}},
-    {"siglas": ["COMPROMIS-EUPV-PODEM-ERPV"], "partido": "compromis", "afines": ["podemos", "frente_amplio"], "base_2023": ["SUMAR"]},
-    {"siglas": ["NC-BC, PODEMOS, IU, SUMAR"], "partido": "upc", "afines": ["podemos", "frente_amplio"], "base_2023": ["SUMAR", "NC-bc"]},
-    {"siglas": ["ERC"], "partido": "erc", "base_2023": ["ERC"]},
-    {"siglas": ["JxCat"], "partido": "junts", "base_2023": ["JUNTS"]},
-    {"siglas": ["EH BILDU", "EH Bildu"], "partido": "eh_bildu", "base_2023": ["EH Bildu"]},
-    {"siglas": ["EAJ-PNV"], "partido": "pnv", "base_2023": ["EAJ-PNV"]},
-    {"siglas": ["BNG", "B.N.G."], "partido": "bng", "base_2023": ["BNG"]},
-    {"siglas": ["1.ºCAN-CCa", "CCa-1.ºCAN"], "partido": "cc", "base_2023": ["CCa"]},
-    {"siglas": ["SALF"], "partido": "salf", "base_2023": []},
-    {"siglas": ["TERUEL EXISTE"], "partido": null, "base_2023": ["EXISTE"]},
-    {"siglas": ["SY"], "partido": null, "base_2023": ["SY"]},
-    {"siglas": ["GBAI"], "partido": null, "base_2023": ["GBAI"]},
-    {"siglas": ["ADELANTE ANDALUCÍA"], "partido": "adelante_andalucia", "base_2023": ["ADELANTE ANDALUCÍA"]},
-    {"siglas": ["PACMA"], "partido": null, "base_2023": ["PACMA"]},
-    {"siglas": ["FO"], "partido": null, "base_2023": ["FO"]},
-    {"denominacion": ["FRENTE OBRERO"], "partido": null, "base_2023": ["FO"]},
-    {"siglas": ["PCTE", "PCTE/ELAK", "ELAK/PCTE", "PCTC", "PCTG"], "partido": null, "base_2023": ["PCTE", "PCTC", "PCTG", "PCTE/ELAK"]},
-    {"siglas": ["MUNDO+JUSTO"], "partido": null, "base_2023": ["PUM+J"]},
-    {"siglas": ["ESCAÑOS EN BLANCO"], "partido": null, "base_2023": ["ESCAÑOS EN BLANCO"]},
-    {"siglas": ["FE de las JONS"], "partido": null, "base_2023": ["FE de las JONS"]}
+    {
+      "siglas": [
+        "PP"
+      ],
+      "partido": "pp",
+      "base_2023": [
+        "PP"
+      ]
+    },
+    {
+      "siglas": [
+        "UPN-PP"
+      ],
+      "partido": "upn",
+      "afines": [
+        "pp"
+      ],
+      "base_2023": [
+        "UPN",
+        "PP"
+      ],
+      "_nota": "Pacto ante la JEP de Navarra: UPN (partido principal) y PP."
+    },
+    {
+      "siglas": [
+        "PSC"
+      ],
+      "partido": "psc",
+      "afines": [
+        "psoe"
+      ],
+      "base_2023": [
+        "PSC"
+      ]
+    },
+    {
+      "siglas": [
+        "PSOE",
+        "PSE-EE (PSOE)",
+        "PSdeG-PSOE",
+        "PSIB-PSOE",
+        "PSN-PSOE"
+      ],
+      "partido": "psoe",
+      "afines": [
+        "psc"
+      ],
+      "base_2023": [
+        "PSOE"
+      ]
+    },
+    {
+      "siglas": [
+        "VOX"
+      ],
+      "partido": "vox",
+      "base_2023": [
+        "VOX"
+      ]
+    },
+    {
+      "denominacion": [
+        "VOX"
+      ],
+      "partido": "vox",
+      "base_2023": [
+        "VOX"
+      ]
+    },
+    {
+      "siglas": [
+        "FA",
+        "COMUNS-FRONT AMPLI",
+        "FRENTE AMPLIO-FRONTE AMPLA",
+        "FRENTE AMPLIO - FRONTE AMPLA",
+        "FRENTE AMPLIO-FRONTE ZABALA",
+        "CHA-IU-MS-FRENTE AMPLIO"
+      ],
+      "partido": "frente_amplio",
+      "base_2023": [
+        "SUMAR"
+      ],
+      "reparto": {
+        "con": "podemos",
+        "europeas_propio": [
+          "SUMAR"
+        ],
+        "europeas_otro": [
+          "PODEMOS"
+        ]
+      }
+    },
+    {
+      "siglas": [
+        "ARAMÉS-EU-MS"
+      ],
+      "partido": "ara_mes_fa",
+      "afines": [
+        "frente_amplio"
+      ],
+      "base_2023": [
+        "SUMAR"
+      ],
+      "_nota": "Pacto ante la JEP de Illes Balears: ARAMÉS (partido principal), Movimiento Sumar e Izquierda Unida (en Frente Amplio), Progreso en Verde y Recortes Cero."
+    },
+    {
+      "siglas": [
+        "PODEMOS",
+        "PAZ,CASA Y TRABAJO"
+      ],
+      "_nota": "Ceuta: el BOE de proclamación imprime siglas 'PAZ,CASA Y TRABAJO' con denominación PODEMOS (posible errata, ver data/boe/correcciones.md)",
+      "partido": "podemos",
+      "base_2023": [
+        "SUMAR"
+      ],
+      "reparto": {
+        "con": "frente_amplio",
+        "europeas_propio": [
+          "PODEMOS"
+        ],
+        "europeas_otro": [
+          "SUMAR"
+        ]
+      }
+    },
+    {
+      "denominacion": [
+        "PODEMOS"
+      ],
+      "partido": "podemos",
+      "base_2023": [
+        "SUMAR"
+      ],
+      "reparto": {
+        "con": "frente_amplio",
+        "europeas_propio": [
+          "PODEMOS"
+        ],
+        "europeas_otro": [
+          "SUMAR"
+        ]
+      }
+    },
+    {
+      "siglas": [
+        "COMPROMIS-EUPV-PODEM-ERPV"
+      ],
+      "partido": "compromis",
+      "afines": [
+        "podemos",
+        "frente_amplio",
+        "erc"
+      ],
+      "base_2023": [
+        "SUMAR"
+      ],
+      "_nota": "Pacto JEC C5: Podem (Podemos), EUPV (IU, en Frente Amplio) y ERPV (Esquerra Republicana del País Valencià, ERC) firman la coalición."
+    },
+    {
+      "siglas": [
+        "NC-BC, PODEMOS, IU, SUMAR"
+      ],
+      "partido": "upc",
+      "afines": [
+        "podemos",
+        "frente_amplio"
+      ],
+      "base_2023": [
+        "SUMAR",
+        "NC-bc"
+      ],
+      "_nota": "Pacto JEC C7: NC-BC (partido principal), Podemos, Izquierda Unida Canaria y Movimiento Sumar (ambos en Frente Amplio)."
+    },
+    {
+      "siglas": [
+        "ERC"
+      ],
+      "partido": "erc",
+      "base_2023": [
+        "ERC"
+      ]
+    },
+    {
+      "siglas": [
+        "JxCat"
+      ],
+      "partido": "junts",
+      "base_2023": [
+        "JUNTS"
+      ]
+    },
+    {
+      "siglas": [
+        "EH BILDU",
+        "EH Bildu"
+      ],
+      "partido": "eh_bildu",
+      "base_2023": [
+        "EH Bildu"
+      ]
+    },
+    {
+      "siglas": [
+        "EAJ-PNV"
+      ],
+      "partido": "pnv",
+      "base_2023": [
+        "EAJ-PNV"
+      ]
+    },
+    {
+      "siglas": [
+        "BNG",
+        "B.N.G."
+      ],
+      "partido": "bng",
+      "base_2023": [
+        "BNG"
+      ]
+    },
+    {
+      "siglas": [
+        "1.ºCAN-CCa",
+        "CCa-1.ºCAN"
+      ],
+      "partido": "cc",
+      "base_2023": [
+        "CCa"
+      ]
+    },
+    {
+      "siglas": [
+        "SALF"
+      ],
+      "partido": "salf",
+      "base_2023": []
+    },
+    {
+      "siglas": [
+        "TERUEL EXISTE"
+      ],
+      "partido": null,
+      "base_2023": [
+        "EXISTE"
+      ]
+    },
+    {
+      "siglas": [
+        "SY"
+      ],
+      "partido": null,
+      "base_2023": [
+        "SY"
+      ]
+    },
+    {
+      "siglas": [
+        "GBAI"
+      ],
+      "partido": null,
+      "base_2023": [
+        "GBAI"
+      ]
+    },
+    {
+      "siglas": [
+        "ADELANTE ANDALUCÍA"
+      ],
+      "partido": "adelante_andalucia",
+      "base_2023": [
+        "ADELANTE ANDALUCÍA"
+      ]
+    },
+    {
+      "siglas": [
+        "PACMA"
+      ],
+      "partido": null,
+      "base_2023": [
+        "PACMA"
+      ]
+    },
+    {
+      "siglas": [
+        "FO"
+      ],
+      "partido": null,
+      "base_2023": [
+        "FO"
+      ]
+    },
+    {
+      "denominacion": [
+        "FRENTE OBRERO"
+      ],
+      "partido": null,
+      "base_2023": [
+        "FO"
+      ]
+    },
+    {
+      "siglas": [
+        "PCTE",
+        "PCTE/ELAK",
+        "ELAK/PCTE",
+        "PCTC",
+        "PCTG"
+      ],
+      "partido": null,
+      "base_2023": [
+        "PCTE",
+        "PCTC",
+        "PCTG",
+        "PCTE/ELAK"
+      ]
+    },
+    {
+      "siglas": [
+        "MUNDO+JUSTO"
+      ],
+      "partido": null,
+      "base_2023": [
+        "PUM+J"
+      ]
+    },
+    {
+      "siglas": [
+        "ESCAÑOS EN BLANCO"
+      ],
+      "partido": null,
+      "base_2023": [
+        "ESCAÑOS EN BLANCO"
+      ]
+    },
+    {
+      "siglas": [
+        "FE de las JONS"
+      ],
+      "partido": null,
+      "base_2023": [
+        "FE de las JONS"
+      ]
+    }
   ]
 }

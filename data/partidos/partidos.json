@@ -98,7 +98,7 @@
       "web": "https://www.pp.es/",
       "en_congreso_xv": true,
       "escanos_2023": 137,
-      "escanos_2023_nota": "137 escaños del PP en 2023; UPN (1) se contabiliza aparte (entrada upn).",
+      "escanos_2023_nota": "137 escaños del PP en 2023; UPN (1) se contabiliza aparte (entrada upn). En 2026 el PP concurre en Navarra dentro de UPN-PP.",
       "proyeccion_motivo": "Escaños en el Congreso de la XV legislatura (elegido el 23-J 2023).",
       "programa": {
         "estado": "publicado",
@@ -140,12 +140,96 @@
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
         "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ],
+      "papeletas": [
+        {
+          "siglas": "PP",
+          "denominacion": "PARTIDO POPULAR",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Araba/Álava",
+            "Albacete",
+            "Alicante/Alacant",
+            "Almería",
+            "Ávila",
+            "Badajoz",
+            "Balears (Illes)",
+            "Barcelona",
+            "Burgos",
+            "Cáceres",
+            "Cádiz",
+            "Castellón/Castelló",
+            "Ciudad Real",
+            "Córdoba",
+            "Coruña (A)",
+            "Cuenca",
+            "Girona",
+            "Granada",
+            "Guadalajara",
+            "Gipuzkoa",
+            "Huelva",
+            "Huesca",
+            "Jaén",
+            "León",
+            "Lleida",
+            "Rioja (La)",
+            "Lugo",
+            "Madrid",
+            "Málaga",
+            "Murcia",
+            "Ourense",
+            "Asturias",
+            "Palencia",
+            "Palmas (Las)",
+            "Pontevedra",
+            "Salamanca",
+            "Santa Cruz de Tenerife",
+            "Cantabria",
+            "Segovia",
+            "Sevilla",
+            "Soria",
+            "Tarragona",
+            "Teruel",
+            "Toledo",
+            "Valencia/València",
+            "Valladolid",
+            "Bizkaia",
+            "Zamora",
+            "Zaragoza",
+            "Ceuta",
+            "Melilla"
+          ],
+          "pacto": null,
+          "otras_denominaciones": [
+            "PARTIT POPULAR / PARTIDO POPULAR",
+            "Partido Popular"
+          ]
+        },
+        {
+          "siglas": "UPN-PP",
+          "denominacion": "UNIÓN DEL PUEBLO NAVARRO EN COALICIÓN CON EL PARTIDO POPULAR",
+          "relacion": "coalicion",
+          "con": [
+            "upn"
+          ],
+          "circunscripciones": [
+            "Navarra"
+          ],
+          "pacto": {
+            "miembros": [
+              "UNIÓN DEL PUEBLO NAVARRO",
+              "PARTIDO POPULAR"
+            ],
+            "url": "https://www.juntaelectoralcentral.es/cs/jec/documentos/Navarra_UPN-PP.pdf"
+          }
+        }
       ]
     },
     {
       "id": "upn",
-      "nombre": "Unión del Pueblo Navarro en coalición con el Partido Popular",
-      "siglas": "UPN-PP",
+      "nombre": "Unión del Pueblo Navarro",
+      "siglas": "UPN",
       "candidaturas_boe": [
         "UNIÓN DEL PUEBLO NAVARRO EN COALICIÓN CON EL PARTIDO POPULAR (UPN-PP)"
       ],
@@ -156,11 +240,8 @@
       "circunscripciones": [
         "NAVARRA"
       ],
-      "coalicion": [
-        "Unión del Pueblo Navarro (UPN)",
-        "Partido Popular (PP)"
-      ],
-      "candidato": "Leticia San Martín Rodríguez (UPN), cabeza de lista por Navarra; candidato a la Presidencia de la coalición: Alberto Núñez Feijóo",
+      "coalicion": [],
+      "candidato": "Leticia San Martín Rodríguez (UPN), cabeza de lista de UPN-PP por Navarra",
       "cabezas_de_lista": {
         "NAVARRA": "Leticia San Martín Rodríguez (UPN)"
       },
@@ -181,8 +262,8 @@
         "checked_at": "2026-11-13T10:00:00+01:00",
         "anunciado": null
       },
-      "programa_aplicable": "Según el preacuerdo UPN-PP (13-oct-2026), el programa de la coalición lo redacta una comisión conjunta de ambos partidos: en Navarra aplica ese programa conjunto, no solo el del PP. Sin fecha anunciada.",
-      "notas": "Los electos de UPN irán al Grupo Mixto según el acuerdo. ppnavarra.es no muestra contenido del 29N.",
+      "programa_aplicable": "UPN no ha publicado programa propio para el 29-N. Concurre dentro de la coalición UPN-PP; según el preacuerdo UPN-PP (13-oct-2026), el programa de la coalición lo redacta una comisión conjunta de ambos partidos (sin publicar). En los pasos 1 y 2 solo cuenta lo que dice UPN o lo que firma como parte de la coalición, no lo que dice el PP por su cuenta.",
+      "notas": "Los electos de UPN irán al Grupo Mixto según el acuerdo. ppnavarra.es no muestra contenido del 29N. [13-nov-2026] Desde esta fecha la entrada describe el partido, no la coalición electoral: en los pasos 1 y 2 se muestran partidos y en el paso 3 papeletas (ver «papeletas»).",
       "fuentes": [
         "https://www.upn.org/upn-y-pp-alcanzan-un-principio-de-acuerdo-para-concurrir-juntos-a-las-elecciones-generales/",
         "https://www.upn.org/el-consejo-politico-de-upn-aprueba-el-acuerdo-para-concurrir-con-el-pp-a-las-elecciones-generales/",
@@ -190,6 +271,27 @@
         "https://www.juntaelectoralcentral.es/cs/jec/documentos/Navarra_UPN-PP.pdf",
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
         "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ],
+      "nota_coalicion": "En Navarra, UPN se presenta dentro de la coalición UPN-PP, con el PP. Aquí cuenta lo que dicen los líderes de UPN y los documentos que firma la coalición; no lo que dice el PP por su cuenta.",
+      "papeletas": [
+        {
+          "siglas": "UPN-PP",
+          "denominacion": "UNIÓN DEL PUEBLO NAVARRO EN COALICIÓN CON EL PARTIDO POPULAR",
+          "relacion": "coalicion",
+          "con": [
+            "pp"
+          ],
+          "circunscripciones": [
+            "Navarra"
+          ],
+          "pacto": {
+            "miembros": [
+              "UNIÓN DEL PUEBLO NAVARRO",
+              "PARTIDO POPULAR"
+            ],
+            "url": "https://www.juntaelectoralcentral.es/cs/jec/documentos/Navarra_UPN-PP.pdf"
+          }
+        }
       ]
     },
     {
@@ -309,6 +411,132 @@
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
         "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ],
+      "papeletas": [
+        {
+          "siglas": "PSOE",
+          "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+          "relacion": "propia",
+          "con": [
+            "psc"
+          ],
+          "circunscripciones": [
+            "Albacete",
+            "Alicante/Alacant",
+            "Almería",
+            "Ávila",
+            "Badajoz",
+            "Burgos",
+            "Cáceres",
+            "Cádiz",
+            "Castellón/Castelló",
+            "Ciudad Real",
+            "Córdoba",
+            "Cuenca",
+            "Granada",
+            "Guadalajara",
+            "Huelva",
+            "Huesca",
+            "Jaén",
+            "León",
+            "Rioja (La)",
+            "Madrid",
+            "Málaga",
+            "Murcia",
+            "Asturias",
+            "Palencia",
+            "Palmas (Las)",
+            "Salamanca",
+            "Santa Cruz de Tenerife",
+            "Cantabria",
+            "Segovia",
+            "Sevilla",
+            "Soria",
+            "Teruel",
+            "Toledo",
+            "Valencia/València",
+            "Valladolid",
+            "Zamora",
+            "Zaragoza",
+            "Ceuta",
+            "Melilla"
+          ],
+          "pacto": null,
+          "otras_denominaciones": [
+            "PARTIDO SOCIALISTA DE HUELVA"
+          ]
+        },
+        {
+          "siglas": "PSdeG-PSOE",
+          "denominacion": "Partido dos Socialistas de Galicia-PSOE",
+          "relacion": "propia",
+          "con": [
+            "psc"
+          ],
+          "circunscripciones": [
+            "Coruña (A)",
+            "Lugo",
+            "Ourense",
+            "Pontevedra"
+          ],
+          "pacto": null,
+          "otras_denominaciones": [
+            "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE"
+          ]
+        },
+        {
+          "siglas": "PSE-EE (PSOE)",
+          "denominacion": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE)",
+          "relacion": "propia",
+          "con": [
+            "psc"
+          ],
+          "circunscripciones": [
+            "Araba/Álava",
+            "Gipuzkoa",
+            "Bizkaia"
+          ],
+          "pacto": null
+        },
+        {
+          "siglas": "PSIB-PSOE",
+          "denominacion": "PARTIDO SOCIALISTA DE LAS ISLAS BALEARES",
+          "relacion": "propia",
+          "con": [
+            "psc"
+          ],
+          "circunscripciones": [
+            "Balears (Illes)"
+          ],
+          "pacto": null
+        },
+        {
+          "siglas": "PSN-PSOE",
+          "denominacion": "PARTIDO SOCIALISTA DE NAVARRA-PSOE",
+          "relacion": "propia",
+          "con": [
+            "psc"
+          ],
+          "circunscripciones": [
+            "Navarra"
+          ],
+          "pacto": null
+        },
+        {
+          "siglas": "PSC",
+          "denominacion": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)",
+          "relacion": "afin",
+          "con": [
+            "psc"
+          ],
+          "circunscripciones": [
+            "Barcelona",
+            "Girona",
+            "Lleida",
+            "Tarragona"
+          ],
+          "pacto": null
+        }
       ]
     },
     {
@@ -362,6 +590,132 @@
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
         "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ],
+      "papeletas": [
+        {
+          "siglas": "PSC",
+          "denominacion": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)",
+          "relacion": "propia",
+          "con": [
+            "psoe"
+          ],
+          "circunscripciones": [
+            "Barcelona",
+            "Girona",
+            "Lleida",
+            "Tarragona"
+          ],
+          "pacto": null
+        },
+        {
+          "siglas": "PSOE",
+          "denominacion": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+          "relacion": "afin",
+          "con": [
+            "psoe"
+          ],
+          "circunscripciones": [
+            "Albacete",
+            "Alicante/Alacant",
+            "Almería",
+            "Ávila",
+            "Badajoz",
+            "Burgos",
+            "Cáceres",
+            "Cádiz",
+            "Castellón/Castelló",
+            "Ciudad Real",
+            "Córdoba",
+            "Cuenca",
+            "Granada",
+            "Guadalajara",
+            "Huelva",
+            "Huesca",
+            "Jaén",
+            "León",
+            "Rioja (La)",
+            "Madrid",
+            "Málaga",
+            "Murcia",
+            "Asturias",
+            "Palencia",
+            "Palmas (Las)",
+            "Salamanca",
+            "Santa Cruz de Tenerife",
+            "Cantabria",
+            "Segovia",
+            "Sevilla",
+            "Soria",
+            "Teruel",
+            "Toledo",
+            "Valencia/València",
+            "Valladolid",
+            "Zamora",
+            "Zaragoza",
+            "Ceuta",
+            "Melilla"
+          ],
+          "pacto": null,
+          "otras_denominaciones": [
+            "PARTIDO SOCIALISTA DE HUELVA"
+          ]
+        },
+        {
+          "siglas": "PSdeG-PSOE",
+          "denominacion": "Partido dos Socialistas de Galicia-PSOE",
+          "relacion": "afin",
+          "con": [
+            "psoe"
+          ],
+          "circunscripciones": [
+            "Coruña (A)",
+            "Lugo",
+            "Ourense",
+            "Pontevedra"
+          ],
+          "pacto": null,
+          "otras_denominaciones": [
+            "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE"
+          ]
+        },
+        {
+          "siglas": "PSE-EE (PSOE)",
+          "denominacion": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE)",
+          "relacion": "afin",
+          "con": [
+            "psoe"
+          ],
+          "circunscripciones": [
+            "Araba/Álava",
+            "Gipuzkoa",
+            "Bizkaia"
+          ],
+          "pacto": null
+        },
+        {
+          "siglas": "PSIB-PSOE",
+          "denominacion": "PARTIDO SOCIALISTA DE LAS ISLAS BALEARES",
+          "relacion": "afin",
+          "con": [
+            "psoe"
+          ],
+          "circunscripciones": [
+            "Balears (Illes)"
+          ],
+          "pacto": null
+        },
+        {
+          "siglas": "PSN-PSOE",
+          "denominacion": "PARTIDO SOCIALISTA DE NAVARRA-PSOE",
+          "relacion": "afin",
+          "con": [
+            "psoe"
+          ],
+          "circunscripciones": [
+            "Navarra"
+          ],
+          "pacto": null
+        }
       ]
     },
     {
@@ -480,6 +834,69 @@
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
         "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ],
+      "papeletas": [
+        {
+          "siglas": "VOX",
+          "denominacion": "VOX",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Araba/Álava",
+            "Albacete",
+            "Alicante/Alacant",
+            "Almería",
+            "Ávila",
+            "Badajoz",
+            "Balears (Illes)",
+            "Barcelona",
+            "Burgos",
+            "Cáceres",
+            "Cádiz",
+            "Castellón/Castelló",
+            "Ciudad Real",
+            "Córdoba",
+            "Coruña (A)",
+            "Cuenca",
+            "Girona",
+            "Granada",
+            "Guadalajara",
+            "Gipuzkoa",
+            "Huelva",
+            "Huesca",
+            "Jaén",
+            "León",
+            "Lleida",
+            "Rioja (La)",
+            "Lugo",
+            "Madrid",
+            "Málaga",
+            "Murcia",
+            "Navarra",
+            "Ourense",
+            "Asturias",
+            "Palencia",
+            "Palmas (Las)",
+            "Pontevedra",
+            "Salamanca",
+            "Santa Cruz de Tenerife",
+            "Cantabria",
+            "Segovia",
+            "Sevilla",
+            "Soria",
+            "Tarragona",
+            "Teruel",
+            "Toledo",
+            "Valencia/València",
+            "Valladolid",
+            "Bizkaia",
+            "Zamora",
+            "Zaragoza",
+            "Ceuta",
+            "Melilla"
+          ],
+          "pacto": null
+        }
       ]
     },
     {
@@ -606,6 +1023,278 @@
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
         "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ],
+      "papeletas": [
+        {
+          "siglas": "FA",
+          "denominacion": "Frente Amplio",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Albacete",
+            "Almería",
+            "Ávila",
+            "Badajoz",
+            "Burgos",
+            "Cáceres",
+            "Cádiz",
+            "Ciudad Real",
+            "Córdoba",
+            "Cuenca",
+            "Granada",
+            "Guadalajara",
+            "Gipuzkoa",
+            "Huelva",
+            "Jaén",
+            "León",
+            "Rioja (La)",
+            "Madrid",
+            "Málaga",
+            "Murcia",
+            "Asturias",
+            "Palencia",
+            "Salamanca",
+            "Cantabria",
+            "Segovia",
+            "Sevilla",
+            "Soria",
+            "Toledo",
+            "Valladolid",
+            "Bizkaia",
+            "Zamora"
+          ],
+          "pacto": {
+            "miembros": [
+              "Izquierda Unida",
+              "Movimiento Sumar",
+              "Catalunya en Comú",
+              "Más Madrid",
+              "Chunta Aragonesista",
+              "Izquierda Asturiana",
+              "Recortes Cero",
+              "Baztzarre - Asamblea de Izquierdas",
+              "Verdes Equo",
+              "Iniciativa del Pueblo Andaluz",
+              "Somos Partido Progresista"
+            ],
+            "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77002"
+          },
+          "otras_denominaciones": [
+            "Frente Amplio Andaluz",
+            "FRENTE AMPLIO ANDALUZ",
+            "FRENTE AMPLIO",
+            "FRENTE AMPLIU POR ASTURIES"
+          ]
+        },
+        {
+          "siglas": "COMUNS-FRONT AMPLI",
+          "denominacion": "Comuns-Front Ampli",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Barcelona",
+            "Girona",
+            "Lleida",
+            "Tarragona"
+          ],
+          "pacto": {
+            "miembros": [
+              "Izquierda Unida",
+              "Movimiento Sumar",
+              "Catalunya en Comú",
+              "Más Madrid",
+              "Chunta Aragonesista",
+              "Izquierda Asturiana",
+              "Recortes Cero",
+              "Baztzarre - Asamblea de Izquierdas",
+              "Verdes Equo",
+              "Iniciativa del Pueblo Andaluz",
+              "Somos Partido Progresista"
+            ],
+            "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77002"
+          }
+        },
+        {
+          "siglas": "FRENTE AMPLIO-FRONTE AMPLA",
+          "denominacion": "Frente Amplio-Fronte Ampla",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Coruña (A)",
+            "Lugo",
+            "Ourense"
+          ],
+          "pacto": {
+            "miembros": [
+              "Izquierda Unida",
+              "Movimiento Sumar",
+              "Catalunya en Comú",
+              "Más Madrid",
+              "Chunta Aragonesista",
+              "Izquierda Asturiana",
+              "Recortes Cero",
+              "Baztzarre - Asamblea de Izquierdas",
+              "Verdes Equo",
+              "Iniciativa del Pueblo Andaluz",
+              "Somos Partido Progresista"
+            ],
+            "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77002"
+          },
+          "otras_denominaciones": [
+            "FRENTE AMPLIO-FRONTE AMPLA"
+          ]
+        },
+        {
+          "siglas": "CHA-IU-MS-FRENTE AMPLIO",
+          "denominacion": "CHUNTA ARAGONESISTA-FRENTE AMPLIO ARAGÓN",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Huesca",
+            "Zaragoza"
+          ],
+          "pacto": {
+            "miembros": [
+              "Izquierda Unida",
+              "Movimiento Sumar",
+              "Catalunya en Comú",
+              "Más Madrid",
+              "Chunta Aragonesista",
+              "Izquierda Asturiana",
+              "Recortes Cero",
+              "Baztzarre - Asamblea de Izquierdas",
+              "Verdes Equo",
+              "Iniciativa del Pueblo Andaluz",
+              "Somos Partido Progresista"
+            ],
+            "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77002"
+          },
+          "otras_denominaciones": [
+            "Chunta Aragonesista-Frente Amplio Aragón"
+          ]
+        },
+        {
+          "siglas": "FRENTE AMPLIO-FRONTE ZABALA",
+          "denominacion": "FRENTE AMPLIO-FRONTE ZABALA",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Araba/Álava",
+            "Navarra"
+          ],
+          "pacto": {
+            "miembros": [
+              "Izquierda Unida",
+              "Movimiento Sumar",
+              "Catalunya en Comú",
+              "Más Madrid",
+              "Chunta Aragonesista",
+              "Izquierda Asturiana",
+              "Recortes Cero",
+              "Baztzarre - Asamblea de Izquierdas",
+              "Verdes Equo",
+              "Iniciativa del Pueblo Andaluz",
+              "Somos Partido Progresista"
+            ],
+            "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77002"
+          }
+        },
+        {
+          "siglas": "FRENTE AMPLIO - FRONTE AMPLA",
+          "denominacion": "Frente Amplio - Fronte Ampla",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Pontevedra"
+          ],
+          "pacto": {
+            "miembros": [
+              "Izquierda Unida",
+              "Movimiento Sumar",
+              "Catalunya en Comú",
+              "Más Madrid",
+              "Chunta Aragonesista",
+              "Izquierda Asturiana",
+              "Recortes Cero",
+              "Baztzarre - Asamblea de Izquierdas",
+              "Verdes Equo",
+              "Iniciativa del Pueblo Andaluz",
+              "Somos Partido Progresista"
+            ],
+            "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77002"
+          }
+        },
+        {
+          "siglas": "COMPROMIS-EUPV-PODEM-ERPV",
+          "denominacion": "COMPROMÍS: FRONT VALENCIÀ",
+          "relacion": "coalicion",
+          "con": [
+            "compromis",
+            "podemos",
+            "erc"
+          ],
+          "circunscripciones": [
+            "Alicante/Alacant",
+            "Castellón/Castelló",
+            "Valencia/València"
+          ],
+          "pacto": {
+            "miembros": [
+              "MÉS-COMPROMÍS",
+              "INICIATIVA DEL POBLE VALENCIÀ",
+              "VERDS EQUO DEL PAÍS VALENCIÀ (VERDSEQUO)",
+              "COALICIÓ COMPROMÍS",
+              "PODEMOS",
+              "ESQUERRA UNIDA DEL PAÍS VALENCIÀ",
+              "ESQUERRA REPUBLICANA DEL PAÍS VALENCIÀ",
+              "RECORTES CERO"
+            ],
+            "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=76997"
+          }
+        },
+        {
+          "siglas": "NC-BC, PODEMOS, IU, SUMAR",
+          "denominacion": "UNIDAD DEL PUEBLO CANARIO UPC",
+          "relacion": "coalicion",
+          "con": [
+            "upc",
+            "podemos"
+          ],
+          "circunscripciones": [
+            "Palmas (Las)",
+            "Santa Cruz de Tenerife"
+          ],
+          "pacto": {
+            "miembros": [
+              "Nueva Canrias Bloque Canarista",
+              "PODEMOS",
+              "MOVIMIENTO SUMAR",
+              "Izquierda Unida Canaria"
+            ],
+            "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77000"
+          }
+        },
+        {
+          "siglas": "ARAMÉS-EU-MS",
+          "denominacion": "ARAMÉS-FRONT AMPLI",
+          "relacion": "coalicion",
+          "con": [
+            "ara_mes_fa"
+          ],
+          "circunscripciones": [
+            "Balears (Illes)"
+          ],
+          "pacto": {
+            "miembros": [
+              "ARAMÉS",
+              "MOVIMIENTO SUMAR",
+              "IZQUIERDA UNIDA",
+              "PROGRESO EN VERDE",
+              "RECORTES CERO"
+            ],
+            "url": "https://www.juntaelectoralcentral.es/cs/jec/documentos/comunicaci%C3%B3n_jep_Baleares-2.pdf"
+          }
+        }
       ]
     },
     {
@@ -710,12 +1399,123 @@
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
         "https://civio.es/el-boe-nuestro-de-cada-dia/2026/11/03/candidaturas-proclamadas/",
         "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ],
+      "papeletas": [
+        {
+          "siglas": "PODEMOS",
+          "denominacion": "PODEMOS",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Araba/Álava",
+            "Albacete",
+            "Almería",
+            "Ávila",
+            "Badajoz",
+            "Burgos",
+            "Cáceres",
+            "Cádiz",
+            "Ciudad Real",
+            "Córdoba",
+            "Coruña (A)",
+            "Cuenca",
+            "Granada",
+            "Guadalajara",
+            "Gipuzkoa",
+            "Huelva",
+            "Huesca",
+            "Jaén",
+            "León",
+            "Rioja (La)",
+            "Lugo",
+            "Madrid",
+            "Málaga",
+            "Murcia",
+            "Navarra",
+            "Ourense",
+            "Asturias",
+            "Palencia",
+            "Pontevedra",
+            "Salamanca",
+            "Cantabria",
+            "Segovia",
+            "Sevilla",
+            "Soria",
+            "Teruel",
+            "Toledo",
+            "Valladolid",
+            "Bizkaia",
+            "Zamora",
+            "Zaragoza"
+          ],
+          "pacto": null
+        },
+        {
+          "siglas": "PAZ,CASA Y TRABAJO",
+          "denominacion": "PODEMOS",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Ceuta"
+          ],
+          "pacto": null
+        },
+        {
+          "siglas": "COMPROMIS-EUPV-PODEM-ERPV",
+          "denominacion": "COMPROMÍS: FRONT VALENCIÀ",
+          "relacion": "coalicion",
+          "con": [
+            "compromis",
+            "frente_amplio",
+            "erc"
+          ],
+          "circunscripciones": [
+            "Alicante/Alacant",
+            "Castellón/Castelló",
+            "Valencia/València"
+          ],
+          "pacto": {
+            "miembros": [
+              "MÉS-COMPROMÍS",
+              "INICIATIVA DEL POBLE VALENCIÀ",
+              "VERDS EQUO DEL PAÍS VALENCIÀ (VERDSEQUO)",
+              "COALICIÓ COMPROMÍS",
+              "PODEMOS",
+              "ESQUERRA UNIDA DEL PAÍS VALENCIÀ",
+              "ESQUERRA REPUBLICANA DEL PAÍS VALENCIÀ",
+              "RECORTES CERO"
+            ],
+            "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=76997"
+          }
+        },
+        {
+          "siglas": "NC-BC, PODEMOS, IU, SUMAR",
+          "denominacion": "UNIDAD DEL PUEBLO CANARIO UPC",
+          "relacion": "coalicion",
+          "con": [
+            "upc",
+            "frente_amplio"
+          ],
+          "circunscripciones": [
+            "Palmas (Las)",
+            "Santa Cruz de Tenerife"
+          ],
+          "pacto": {
+            "miembros": [
+              "Nueva Canrias Bloque Canarista",
+              "PODEMOS",
+              "MOVIMIENTO SUMAR",
+              "Izquierda Unida Canaria"
+            ],
+            "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77000"
+          }
+        }
       ]
     },
     {
       "id": "compromis",
-      "nombre": "Compromís: Front Valencià",
-      "siglas": "COMPROMIS-EUPV-PODEM-ERPV",
+      "nombre": "Compromís",
+      "siglas": "Compromís",
       "candidaturas_boe": [
         "COMPROMÍS: FRONT VALENCIÀ (COMPROMIS-EUPV-PODEM-ERPV)"
       ],
@@ -728,21 +1528,11 @@
         "CASTELLÓN",
         "VALENCIA"
       ],
-      "coalicion": [
-        "Més-Compromís",
-        "Iniciativa del Poble Valencià",
-        "Verds Equo del País Valencià",
-        "Coalició Compromís",
-        "Podem",
-        "Esquerra Unida del País Valencià",
-        "Esquerra Republicana del País Valencià",
-        "Recortes Cero"
-      ],
-      "candidato": "Àgueda Micó Micó (cabeza de lista por Valencia)",
+      "coalicion": [],
+      "candidato": "Àgueda Micó Micó (Més-Compromís), cabeza de lista de Compromís: Front Valencià por Valencia",
       "cabezas_de_lista": {
-        "VALENCIA": "Àgueda Micó Micó",
-        "CASTELLÓN": "Ignasi García Felip",
-        "ALICANTE": "María Teresa Pérez Díaz"
+        "VALENCIA": "Àgueda Micó Micó (Més-Compromís)",
+        "CASTELLÓN": "Ignasi García Felip (Compromís)"
       },
       "web": "https://compromis.net/",
       "en_congreso_xv": true,
@@ -763,18 +1553,49 @@
         "nota": "La web electoral oficial frontvalencia.org (enlazada desde compromis.net con «Entra al programa >») muestra solo un resumen por ejes; el botón «Programa sencer» dice «Enllaç pendent» (12-11-2026).",
         "pagina_campana": "https://frontvalencia.org/"
       },
-      "programa_aplicable": "Programa único de la coalición (no consta programa propio de los socios).",
-      "notas": "compromis.net/info/programes sin entrada del 29N. La web frontvalencia.net muestra propuestas y un enlace «programa completo» pendiente; no está enlazada desde compromis.net y no se ha usado como fuente. Lista de socios según Wikipedia y siglas del BOE (no contrastada con el acta de la JEC).",
+      "programa_aplicable": "Compromís no ha publicado programa propio para el 29-N. Concurre dentro de la coalición Compromís: Front Valencià (Coalició Compromís y sus partidos, Podem, EUPV, ERPV y Recortes Cero), cuyo programa completo está pendiente.",
+      "notas": "compromis.net/info/programes sin entrada del 29N. La web frontvalencia.net muestra propuestas y un enlace «programa completo» pendiente; no está enlazada desde compromis.net y no se ha usado como fuente. Lista de socios según Wikipedia y siglas del BOE (no contrastada con el acta de la JEC). La cabeza de lista por Alicante, María Teresa Pérez Díaz, es de Podem (data/boe/afiliaciones_g1.json): no figura como líder de Compromís. [13-nov-2026] Desde esta fecha la entrada describe el partido, no la coalición electoral: en los pasos 1 y 2 se muestran partidos y en el paso 3 papeletas (ver «papeletas»).",
       "fuentes": [
         "https://compromis.net/info/programes",
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
         "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ],
+      "nota_coalicion": "En la Comunitat Valenciana, Compromís se presenta dentro de la coalición Compromís: Front Valencià, con Podem, Esquerra Unida y Esquerra Republicana del País Valencià, entre otros. Aquí cuentan lo que dicen los líderes de Compromís y los documentos de la coalición; no lo que dicen por su cuenta los líderes de los otros partidos.",
+      "papeletas": [
+        {
+          "siglas": "COMPROMIS-EUPV-PODEM-ERPV",
+          "denominacion": "COMPROMÍS: FRONT VALENCIÀ",
+          "relacion": "coalicion",
+          "con": [
+            "podemos",
+            "frente_amplio",
+            "erc"
+          ],
+          "circunscripciones": [
+            "Alicante/Alacant",
+            "Castellón/Castelló",
+            "Valencia/València"
+          ],
+          "pacto": {
+            "miembros": [
+              "MÉS-COMPROMÍS",
+              "INICIATIVA DEL POBLE VALENCIÀ",
+              "VERDS EQUO DEL PAÍS VALENCIÀ (VERDSEQUO)",
+              "COALICIÓ COMPROMÍS",
+              "PODEMOS",
+              "ESQUERRA UNIDA DEL PAÍS VALENCIÀ",
+              "ESQUERRA REPUBLICANA DEL PAÍS VALENCIÀ",
+              "RECORTES CERO"
+            ],
+            "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=76997"
+          }
+        }
       ]
     },
     {
       "id": "upc",
-      "nombre": "Unidad del Pueblo Canario",
-      "siglas": "UPC",
+      "nombre": "Nueva Canarias-Bloque Canarista",
+      "siglas": "NC-BC",
       "candidaturas_boe": [
         "UNIDAD DEL PUEBLO CANARIO UPC (NC-BC, PODEMOS, IU, SUMAR)"
       ],
@@ -786,22 +1607,16 @@
         "LAS PALMAS",
         "SANTA CRUZ DE TENERIFE"
       ],
-      "coalicion": [
-        "Nueva Canarias-Bloque Canarista",
-        "Podemos Canarias",
-        "Izquierda Unida Canaria",
-        "Movimiento Sumar"
-      ],
-      "candidato": "Luis Alberto Campos Jiménez (cabeza de lista por Las Palmas)",
+      "coalicion": [],
+      "candidato": "Luis Alberto Campos Jiménez (secretario general de NC-BC), cabeza de lista de Unidad del Pueblo Canario por Las Palmas",
       "cabezas_de_lista": {
-        "LAS PALMAS": "Luis Alberto Campos Jiménez",
-        "SANTA CRUZ DE TENERIFE": "María Soledad Collado Mirabal"
+        "LAS PALMAS": "Luis Alberto Campos Jiménez (NC-BC)"
       },
-      "web": "https://www.unidadpueblocanario.org/",
-      "en_congreso_xv": true,
-      "escanos_2023": null,
-      "escanos_2023_nota": "En 2023 se eligió dentro de la coalición Sumar (31 escaños en total); no hay cifra propia de 2023 para esta candidatura. La diputada Noemí Santana (Podemos Canarias) fue elegida en la lista de Sumar por Las Palmas; Wikipedia atribuye ese escaño a UPC.",
-      "proyeccion_motivo": "Escaño de un integrante (Podemos Canarias) en la XV legislatura; Sigma Dos/El Mundo (1-nov) da «un escaño en Canarias para CC o UPC».",
+      "web": null,
+      "en_congreso_xv": false,
+      "escanos_2023": 0,
+      "escanos_2023_nota": "NC-BC concurrió en solitario en 2023 (siglas NC-bc): 42.430 votos en Las Palmas y 3.165 en Santa Cruz de Tenerife, sin escaño (data/resultados/generales_2023.json).",
+      "proyeccion_motivo": "Entra por su candidatura, Unidad del Pueblo Canario (UPC): un integrante (Podemos Canarias) tiene escaño en la XV legislatura y Sigma Dos/El Mundo (1-nov) da «un escaño en Canarias para CC o UPC». NC-BC no tiene escaño propio en la XV legislatura.",
       "programa": {
         "estado": "no_publicado",
         "url": null,
@@ -826,8 +1641,8 @@
           "pagina_html": "data/sources/programas/upc/manifiesto-page.html"
         }
       },
-      "programa_aplicable": "Documento de la coalición para ambas circunscripciones canarias.",
-      "notas": "Se marca no_publicado porque el único documento es un «Manifiesto electoral» breve (~1.340 palabras) y la web lo presenta como «Manifiesto», no como programa. Decisión editorial revisable. Los dominios unidaddelpueblocanario.es (en venta) no son oficiales.",
+      "programa_aplicable": "NC-BC no ha publicado programa propio para el 29-N. Concurre dentro de Unidad del Pueblo Canario (NC-BC, Podemos, IU y Sumar), cuyo único documento es un «Manifiesto electoral» conjunto que NC-BC firma.",
+      "notas": "Se marca no_publicado porque el único documento es un «Manifiesto electoral» breve (~1.340 palabras) y la web lo presenta como «Manifiesto», no como programa. Decisión editorial revisable. Los dominios unidaddelpueblocanario.es (en venta) no son oficiales. La web de la coalición es https://www.unidadpueblocanario.org/; la del partido NC-BC no se ha verificado, por eso «web» queda vacía. [13-nov-2026] Desde esta fecha la entrada describe el partido, no la coalición electoral: en los pasos 1 y 2 se muestran partidos y en el paso 3 papeletas (ver «papeletas»).",
       "fuentes": [
         "https://www.unidadpueblocanario.org/manifiesto",
         "https://www.unidadpueblocanario.org/coalicion",
@@ -835,12 +1650,37 @@
         "https://www.elmundo.es/espana/encuestas/2026/11/01/6ae77446e4d4d8f3698b458a.html",
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
         "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ],
+      "nota_coalicion": "En Canarias, NC-BC se presenta dentro de la coalición Unidad del Pueblo Canario (UPC), con Podemos, Izquierda Unida y Sumar. Aquí cuentan lo que dicen los líderes de NC-BC y los documentos que firma la coalición, como su manifiesto; no lo que dicen por su cuenta los líderes de los otros partidos.",
+      "papeletas": [
+        {
+          "siglas": "NC-BC, PODEMOS, IU, SUMAR",
+          "denominacion": "UNIDAD DEL PUEBLO CANARIO UPC",
+          "relacion": "coalicion",
+          "con": [
+            "podemos",
+            "frente_amplio"
+          ],
+          "circunscripciones": [
+            "Palmas (Las)",
+            "Santa Cruz de Tenerife"
+          ],
+          "pacto": {
+            "miembros": [
+              "Nueva Canrias Bloque Canarista",
+              "PODEMOS",
+              "MOVIMIENTO SUMAR",
+              "Izquierda Unida Canaria"
+            ],
+            "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77000"
+          }
+        }
       ]
     },
     {
       "id": "ara_mes_fa",
-      "nombre": "Ara Més-Front Ampli",
-      "siglas": "ARAMÉS-EU-MS",
+      "nombre": "Ara Més",
+      "siglas": "Ara Més",
       "candidaturas_boe": [
         "ARAMÉS-FRONT AMPLI (ARAMÉS-EU-MS)"
       ],
@@ -851,18 +1691,12 @@
       "circunscripciones": [
         "ILLES BALEARS"
       ],
-      "coalicion": [
-        "Ara Més",
-        "Esquerra Unida de les Illes Balears",
-        "Moviment Sumar Illes Balears",
-        "Progreso en Verde",
-        "Recortes Cero"
-      ],
-      "candidato": "Carme Gomila Domínguez",
+      "coalicion": [],
+      "candidato": "Carme Gomila Domínguez encabeza la lista de Ara Més-Front Ampli por Illes Balears, pero es de ERC (Ara Balears, El Nacional): no se cuenta como líder de Ara Més",
       "cabezas_de_lista": {
         "ILLES BALEARS": "Carme Gomila Domínguez"
       },
-      "web": "https://aramesfrontampli.cat/",
+      "web": null,
       "en_congreso_xv": true,
       "escanos_2023": null,
       "escanos_2023_nota": "En 2023 se eligió dentro de la coalición Sumar (31 escaños en total); no hay cifra propia de 2023 para esta candidatura. Vicenç Vidal (Més per Mallorca) fue elegido en la lista de Sumar por Baleares.",
@@ -883,13 +1717,37 @@
           "fuente": "https://aramesfrontampli.cat/noticies/ara-mes-front-ampli-obre-el-seu-programa-electoral-a-la-ciutadania-per-portar-les-preocupacions-reals-de-les-illes-balears-al-congres"
         }
       },
-      "programa_aplicable": "Programa propio de la coalición balear (pendiente).",
-      "notas": "Marca balear del espacio Frente Amplio, pero coalición electoral distinta en el BOE.",
+      "programa_aplicable": "Ara Més no ha publicado programa propio para el 29-N. Concurre dentro de la coalición Ara Més-Front Ampli (con Movimiento Sumar, Izquierda Unida, Progreso en Verde y Recortes Cero), que elabora un programa participativo (pendiente).",
+      "notas": "La web https://aramesfrontampli.cat/ es la de la coalición; la del partido Ara Més no se ha verificado, por eso «web» queda vacía. Carme Gomila, cabeza de lista de la coalición, es de Esquerra Republicana según Ara Balears (data/boe/afiliaciones_g1.json) y El Nacional (12-nov); Ara Més es la federación de MÉS per Mallorca, Més per Menorca y Ara Eivissa, sin ERC. Decisión del editor (13-nov-2026): lo que dice Gomila en primera persona no cuenta para Ara Més; sí las notas oficiales de la coalición. [13-nov-2026] Desde esta fecha la entrada describe el partido, no la coalición electoral: en los pasos 1 y 2 se muestran partidos y en el paso 3 papeletas (ver «papeletas»).",
       "fuentes": [
         "https://aramesfrontampli.cat/noticies/ara-mes-front-ampli-obre-el-seu-programa-electoral-a-la-ciutadania-per-portar-les-preocupacions-reals-de-les-illes-balears-al-congres",
         "https://aramesfrontampli.cat/noticies/aramesfront-ampli-presenta-viure-be-viure-aqui-com-a-lema-de-campanya-per-a-les-eleccions-del-29-de-novembre",
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
         "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ],
+      "nota_coalicion": "En Illes Balears, Ara Més se presenta dentro de la coalición Ara Més-Front Ampli, con Sumar, Izquierda Unida y otros partidos. Aquí cuentan lo que dicen sus líderes y los documentos de la coalición; no lo que dicen por su cuenta los líderes de los otros partidos.",
+      "papeletas": [
+        {
+          "siglas": "ARAMÉS-EU-MS",
+          "denominacion": "ARAMÉS-FRONT AMPLI",
+          "relacion": "coalicion",
+          "con": [
+            "frente_amplio"
+          ],
+          "circunscripciones": [
+            "Balears (Illes)"
+          ],
+          "pacto": {
+            "miembros": [
+              "ARAMÉS",
+              "MOVIMIENTO SUMAR",
+              "IZQUIERDA UNIDA",
+              "PROGRESO EN VERDE",
+              "RECORTES CERO"
+            ],
+            "url": "https://www.juntaelectoralcentral.es/cs/jec/documentos/comunicaci%C3%B3n_jep_Baleares-2.pdf"
+          }
+        }
       ]
     },
     {
@@ -936,13 +1794,56 @@
         "checked_at": "2026-11-08T21:55:00+01:00"
       },
       "programa_aplicable": "Programa único para las cuatro circunscripciones catalanas. Solo en catalán (no se encontró versión en castellano).",
-      "notas": "esquerrarepublicana.cat es dominio propio de ERC (redirige a esquerra.cat). Cabecera de cada página: «Eleccions al Congrés 2026». En el Senado concurre en coalición ERC-EH Bildu. Podemos no presenta lista en Cataluña y pide el voto para ERC.",
+      "notas": "esquerrarepublicana.cat es dominio propio de ERC (redirige a esquerra.cat). Cabecera de cada página: «Eleccions al Congrés 2026». En el Senado concurre en coalición ERC-EH Bildu. Podemos no presenta lista en Cataluña y pide el voto para ERC. [13-nov-2026] En la Comunitat Valenciana, Esquerra Republicana del País Valencià (ERPV) concurre dentro de Compromís: Front Valencià (pacto de coalición JEC C5); ver «papeletas».",
       "fuentes": [
         "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
         "https://www.esquerra.cat/",
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
         "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ],
+      "papeletas": [
+        {
+          "siglas": "ERC",
+          "denominacion": "ESQUERRA REPUBLICANA DE CATALUNYA",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Barcelona",
+            "Girona",
+            "Lleida",
+            "Tarragona"
+          ],
+          "pacto": null
+        },
+        {
+          "siglas": "COMPROMIS-EUPV-PODEM-ERPV",
+          "denominacion": "COMPROMÍS: FRONT VALENCIÀ",
+          "relacion": "coalicion",
+          "con": [
+            "compromis",
+            "podemos",
+            "frente_amplio"
+          ],
+          "circunscripciones": [
+            "Alicante/Alacant",
+            "Castellón/Castelló",
+            "Valencia/València"
+          ],
+          "pacto": {
+            "miembros": [
+              "MÉS-COMPROMÍS",
+              "INICIATIVA DEL POBLE VALENCIÀ",
+              "VERDS EQUO DEL PAÍS VALENCIÀ (VERDSEQUO)",
+              "COALICIÓ COMPROMÍS",
+              "PODEMOS",
+              "ESQUERRA UNIDA DEL PAÍS VALENCIÀ",
+              "ESQUERRA REPUBLICANA DEL PAÍS VALENCIÀ",
+              "RECORTES CERO"
+            ],
+            "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=76997"
+          }
+        }
       ]
     },
     {
@@ -995,6 +1896,21 @@
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
         "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ],
+      "papeletas": [
+        {
+          "siglas": "JxCat",
+          "denominacion": "JUNTS PER CATALUNYA",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Barcelona",
+            "Girona",
+            "Lleida",
+            "Tarragona"
+          ],
+          "pacto": null
+        }
       ]
     },
     {
@@ -1049,6 +1965,30 @@
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
         "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ],
+      "papeletas": [
+        {
+          "siglas": "EH BILDU",
+          "denominacion": "EUSKAL HERRIA BILDU",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Araba/Álava",
+            "Gipuzkoa",
+            "Navarra"
+          ],
+          "pacto": null
+        },
+        {
+          "siglas": "EH Bildu",
+          "denominacion": "EUSKAL HERRIA BILDU",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Bizkaia"
+          ],
+          "pacto": null
+        }
       ]
     },
     {
@@ -1117,6 +2057,20 @@
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
         "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ],
+      "papeletas": [
+        {
+          "siglas": "EAJ-PNV",
+          "denominacion": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Araba/Álava",
+            "Gipuzkoa",
+            "Bizkaia"
+          ],
+          "pacto": null
+        }
       ]
     },
     {
@@ -1182,12 +2136,36 @@
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
         "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ],
+      "papeletas": [
+        {
+          "siglas": "BNG",
+          "denominacion": "BLOQUE NACIONALISTA GALEGO",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Lugo",
+            "Ourense",
+            "Pontevedra"
+          ],
+          "pacto": null
+        },
+        {
+          "siglas": "B.N.G.",
+          "denominacion": "BLOQUE NACIONALISTA GALEGO",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Coruña (A)"
+          ],
+          "pacto": null
+        }
       ]
     },
     {
       "id": "cc",
-      "nombre": "Coalición Canaria-Municipalistas Primero Canarias",
-      "siglas": "CCa-1.ºCAN",
+      "nombre": "Coalición Canaria",
+      "siglas": "CCa",
       "candidaturas_boe": [
         "Coalición Canaria-Municipalistas Primero Canarias (CCa-1.ºCAN) (Santa Cruz de Tenerife)",
         "MUNICIPALISTAS PRIMERO CANARIAS-COALICIÓN CANARIA (1.ºCAN-CCa) (Las Palmas)"
@@ -1200,14 +2178,10 @@
         "LAS PALMAS",
         "SANTA CRUZ DE TENERIFE"
       ],
-      "coalicion": [
-        "Coalición Canaria",
-        "Municipalistas Primero Canarias"
-      ],
-      "candidato": "Cristina Valido García (cabeza de lista por Santa Cruz de Tenerife)",
+      "coalicion": [],
+      "candidato": "Cristina Valido García, cabeza de lista por Santa Cruz de Tenerife",
       "cabezas_de_lista": {
-        "SANTA CRUZ DE TENERIFE": "Cristina Valido García",
-        "LAS PALMAS": "Teodoro Claret Sosa Monzón"
+        "SANTA CRUZ DE TENERIFE": "Cristina Valido García (CC)"
       },
       "web": "https://coalicioncanaria.org/",
       "en_congreso_xv": true,
@@ -1226,8 +2200,8 @@
         "texto": "data/sources/programas/cc/CCA-26-Programa_Electoral-29NOV.txt",
         "checked_at": "2026-11-08T21:56:00+01:00"
       },
-      "programa_aplicable": "Programa conjunto para las dos circunscripciones canarias. El propio documento se titula «Bases del programa»; la portada de coalicioncanaria.org lo enlaza como «Descargar Programa electoral».",
-      "notas": "PDF de 69,2 MB. Texto: «29 DE NOVIEMBRE DE 2026». primerocanarias.com no muestra programa propio.",
+      "programa_aplicable": "Programa conjunto de Coalición Canaria y Municipalistas Primero Canarias para las dos circunscripciones canarias, publicado en coalicioncanaria.org. El propio documento se titula «Bases del programa»; la portada de coalicioncanaria.org lo enlaza como «Descargar Programa electoral».",
+      "notas": "PDF de 69,2 MB. Texto: «29 DE NOVIEMBRE DE 2026». primerocanarias.com no muestra programa propio. El cabeza de lista por Las Palmas, Teodoro Sosa, es de Municipalistas Primero Canarias (data/boe/afiliaciones_g3.json): no figura como líder de CC. [13-nov-2026] Desde esta fecha la entrada describe el partido, no la coalición electoral: en los pasos 1 y 2 se muestran partidos y en el paso 3 papeletas (ver «papeletas»).",
       "fuentes": [
         "https://coalicioncanaria.org/",
         "https://coalicioncanaria.org/programas-electorales/",
@@ -1236,6 +2210,41 @@
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023",
         "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ],
+      "nota_coalicion": "En Canarias, Coalición Canaria se presenta en coalición con Municipalistas Primero Canarias. Aquí cuentan su programa conjunto, que publica Coalición Canaria, y lo que dicen los líderes de Coalición Canaria; no lo que dicen por su cuenta los de Municipalistas Primero Canarias.",
+      "papeletas": [
+        {
+          "siglas": "1.ºCAN-CCa",
+          "denominacion": "MUNICIPALISTAS PRIMERO CANARIAS-COALICIÓN CANARIA",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Palmas (Las)"
+          ],
+          "pacto": {
+            "miembros": [
+              "COALICIÓN CANARIA",
+              "MUNICIPALISTAS PRIMERO CANARIAS"
+            ],
+            "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=76990"
+          }
+        },
+        {
+          "siglas": "CCa-1.ºCAN",
+          "denominacion": "Coalición Canaria-Municipalistas Primero Canarias",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Santa Cruz de Tenerife"
+          ],
+          "pacto": {
+            "miembros": [
+              "COALICIÓN CANARIA",
+              "MUNICIPALISTAS PRIMERO CANARIAS"
+            ],
+            "url": "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=76990"
+          }
+        }
       ]
     },
     {
@@ -1303,6 +2312,25 @@
         "https://programa.adelanteandalucia.org/",
         "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf",
         "https://www.ultimahora.es/noticias/comunidades/2026/11/10/2746931/adelante-presenta-programa-electoral-limites-alquiler-desprivatizacion-ferroviaria-jornada-horas.html"
+      ],
+      "papeletas": [
+        {
+          "siglas": "ADELANTE ANDALUCÍA",
+          "denominacion": "ADELANTE ANDALUCÍA",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Almería",
+            "Cádiz",
+            "Córdoba",
+            "Granada",
+            "Huelva",
+            "Jaén",
+            "Málaga",
+            "Sevilla"
+          ],
+          "pacto": null
+        }
       ]
     },
     {
@@ -1417,6 +2445,66 @@
         "https://www.elespanol.com/espana/politica/20261101/primer-sondeo-tragedia-pp-vox-amplian-ventaja-sanchez-sigue-cayendo-pese-vaciar-frente-amplio/1003744442810_0.html",
         "https://es.wikipedia.org/wiki/Encuestas_de_opini%C3%B3n_para_las_elecciones_generales_de_Espa%C3%B1a_de_2026",
         "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+      ],
+      "papeletas": [
+        {
+          "siglas": "SALF",
+          "denominacion": "SE ACABÓ LA FIESTA",
+          "relacion": "propia",
+          "con": [],
+          "circunscripciones": [
+            "Araba/Álava",
+            "Albacete",
+            "Alicante/Alacant",
+            "Almería",
+            "Ávila",
+            "Badajoz",
+            "Balears (Illes)",
+            "Barcelona",
+            "Burgos",
+            "Cáceres",
+            "Cádiz",
+            "Castellón/Castelló",
+            "Córdoba",
+            "Coruña (A)",
+            "Cuenca",
+            "Granada",
+            "Guadalajara",
+            "Huelva",
+            "Huesca",
+            "Jaén",
+            "León",
+            "Rioja (La)",
+            "Lugo",
+            "Madrid",
+            "Málaga",
+            "Murcia",
+            "Navarra",
+            "Ourense",
+            "Asturias",
+            "Palencia",
+            "Palmas (Las)",
+            "Pontevedra",
+            "Salamanca",
+            "Santa Cruz de Tenerife",
+            "Segovia",
+            "Sevilla",
+            "Soria",
+            "Tarragona",
+            "Teruel",
+            "Toledo",
+            "Valencia/València",
+            "Valladolid",
+            "Zamora",
+            "Zaragoza",
+            "Ceuta",
+            "Melilla"
+          ],
+          "pacto": null,
+          "otras_denominaciones": [
+            "SE ACABO LA FIESTA"
+          ]
+        }
       ]
     }
   ]

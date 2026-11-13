@@ -286,6 +286,7 @@ export function Contrasta() {
 
       <div class="stack" style={{ marginTop: 22 }}>
         {!sel && <div class="note">Elige un partido, o llega aquí desde el paso 1 con tus partidos más afines.</div>}
+        {p?.nota_coalicion && <p class="muted" style={{ fontSize: '0.9rem', margin: 0 }}>{p.nota_coalicion}</p>}
         {sel && (!datos || datos.estado !== 'evaluado') && (
           <div class="note">
             <strong>{p?.siglas ?? sel}: análisis pendiente.</strong>{' '}

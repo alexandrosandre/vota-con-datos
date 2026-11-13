@@ -11,6 +11,10 @@ export interface Partido {
   id: string;
   nombre: string;
   siglas: string;
+  /** Artículo con que se nombra en una frase («el PP», «Podemos»): 'el' o ''. */
+  articulo?: string;
+  /** Si concurre en coalición: qué cuenta como suyo en los pasos 1 y 2 (texto para la persona). */
+  nota_coalicion?: string | null;
   ambito: 'estatal' | 'autonómico';
   comunidades?: string[];
   candidato?: string | null;
@@ -51,8 +55,6 @@ export interface PosicionPartido {
   fecha?: string | null;
   /** Líder que lo dijo en primera persona (o el partido, si es un documento oficial). */
   quien?: string | null;
-  /** Posición tomada de un socio de coalición (p. ej. UPN-PP toma la del PP en temas estatales). */
-  heredada_de?: string | null;
   formato?: string | null;
   /** Para declaraciones de precampaña: por qué se refieren a estas elecciones. */
   marco?: string | null;
@@ -73,7 +75,7 @@ export interface CandidaturaCirc {
   siglas: string;
   denominacion: string;
   partido: string | null; // id de partido de la fase 1, si aplica
-  /** Otros partidos de la fase 1 integrados en esta candidatura (coaliciones, federaciones). */
+  /** Otros partidos de la web que van en esta papeleta (socios de coalición) o, sin coalición, su partido afín (PSOE-PSC). */
   afines?: string[];
   cabeza_lista?: string | null;
   /** Titulares de la lista en los puestos relevantes (BOE), con afiliación y enlace si constan en fuente fiable. */
