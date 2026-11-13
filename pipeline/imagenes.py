@@ -30,11 +30,15 @@ UA = "vota-con-datos/1.0 (+https://votacondatos.org; herramienta cívica sin án
 PARTIDOS_WIKI = {
     "pp": "Partido_Popular", "upn": "Unión_del_Pueblo_Navarro", "psoe": "Partido_Socialista_Obrero_Español",
     "psc": "Partit_dels_Socialistes_de_Catalunya", "vox": "Vox_(partido_político)", "frente_amplio": "Frente_Amplio_(España)",
-    "podemos": "Podemos_(partido_político)", "compromis": "Compromís", "upc": "Unidad_del_Pueblo_Canario",
+    "podemos": "Podemos_(partido_político)", "compromis": "Compromís", "upc": "Nueva_Canarias-Bloque_Canarista",
     "ara_mes_fa": "Ara_Més", "erc": "Esquerra_Republicana_de_Catalunya", "junts": "Junts_per_Catalunya",
     "eh_bildu": "Euskal_Herria_Bildu", "pnv": "Partido_Nacionalista_Vasco", "bng": "Bloque_Nacionalista_Galego",
     "cc": "Coalición_Canaria", "adelante_andalucia": "Adelante_Andalucía_(partido_político)", "salf": "Se_Acabó_La_Fiesta",
 }
+# Logotipo fijado a mano cuando el P154 de Wikidata no es el vigente. NC-BC: el P154 de su elemento (Q693300) es
+# «Nueva Canarias.svg», descrito en Commons como logotipo de «Nueva Canarias (NCa)» y subido en 2019; este fichero de
+# Commons es el logotipo completo de Nueva Canarias-Bloque Canarista (fuente: nuevacanariasbc.org; PD-textlogo).
+LOGO_FICHERO = {"upc": "Nueva Canarias Bloque Canarista logo completo.svg"}
 # «Attribution» y «European Parliament» son plantillas de Commons de reutilización libre con atribución.
 LIBRES = re.compile(r"^(cc0|public domain|pd|cc by(-sa)? [\d.]+( [a-z]+)?|cc by(-sa)?|attribution$|european parliament$)", re.I)
 
@@ -113,14 +117,14 @@ def main():
     out = {"meta": {"fuente": "Wikimedia Commons vía Wikidata (P18 foto, P154 logotipo)", "generado": time.strftime("%Y-%m-%d")},
            "personas": {}, "partidos": {}, "descartadas": []}
 
-    def procesar(clave, url_articulo, prop, ancho, destino, cache):
+    def procesar(clave, url_articulo, prop, ancho, destino, cache, fijo=None):
         if clave in cache and (IMG.parent / cache[clave]["src"]).exists():
             return cache[clave]
         qid = qid_de(url_articulo)
         if not qid:
             out["descartadas"].append({"clave": clave, "motivo": "sin elemento de Wikidata"})
             return None
-        f = fichero(qid, prop)
+        f = fijo or fichero(qid, prop)
         if not f:
             return None
         m = info(f, ancho)
@@ -137,7 +141,8 @@ def main():
 
     for pid, art in PARTIDOS_WIKI.items():
         try:
-            r = procesar(pid, "https://es.wikipedia.org/wiki/" + art, "P154", 96, IMG / "partidos" / pid, previo.get("partidos", {}))
+            r = procesar(pid, "https://es.wikipedia.org/wiki/" + art, "P154", 96, IMG / "partidos" / pid, previo.get("partidos", {}),
+                         fijo=LOGO_FICHERO.get(pid))
         except Exception as e:  # noqa: BLE001
             out["descartadas"].append({"clave": pid, "motivo": f"error: {e}"})
             r = None

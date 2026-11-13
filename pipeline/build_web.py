@@ -48,6 +48,44 @@ def main():
     prom = {ALIAS_PROMESAS.get(k, k): v for k, v in prom.items()}
     comprobado = cat["meta"].get("checked_at") or cat["meta"].get("comprobado")
 
+    # Comunidades donde se puede votar a cada partido (con su papeleta o dentro de una coalición),
+    # sacadas de sus papeletas del BOE: así la etiqueta «solo en …» del paso 1 cuadra con el paso 3.
+    boe = load("boe/candidaturas_congreso.json")["circunscripciones"]
+    g23 = load("resultados/generales_2023.json")["circunscripciones"]
+    corto = {"Comunidad Foral de Navarra": "Navarra", "Principado de Asturias": "Asturias", "Castilla - La Mancha": "Castilla-La Mancha",
+             "Ciudad de Ceuta": "Ceuta", "Ciudad de Melilla": "Melilla"}
+    ccaa = {ine: corto.get(v["comunidad"], v["comunidad"]) for ine, v in g23.items()}
+    comunidad_de = {x["nombre"]: ccaa[ine] for ine, x in boe.items()}
+    orden_ccaa = list(dict.fromkeys(ccaa[ine] for ine in sorted(ccaa)))
+
+    def comunidades(p):
+        cs = {comunidad_de[n] for x in p.get("papeletas", []) if x["relacion"] != "afin" for n in x["circunscripciones"]}
+        return sorted(cs, key=orden_ccaa.index)
+
+    def enumera(xs):
+        return xs[0] if len(xs) == 1 else f"{', '.join(xs[:-1])} y {xs[-1]}"
+
+    def nota_coalicion(p):
+        """Para los partidos que tienen candidatura propia pero en alguna comunidad van dentro de una
+        coalición (el PP en Navarra, Podemos en Canarias...). La de los que solo van en coalición se escribe a mano."""
+        if p.get("nota_coalicion"):
+            return p["nota_coalicion"]
+        coal = [x for x in p.get("papeletas", []) if x["relacion"] == "coalicion"]
+        if not coal:
+            return None
+        con_art = {"Comunitat Valenciana": "la Comunitat Valenciana", "Comunidad de Madrid": "la Comunidad de Madrid", "Región de Murcia": "la Región de Murcia"}
+        donde = [f"«{x['siglas']}» en {enumera([con_art.get(c, c) for c in sorted({comunidad_de[n] for n in x['circunscripciones']}, key=orden_ccaa.index)])}"
+                 for x in coal]
+        art = ARTICULO.get(p["id"], "")
+        sig = f"{art + ' ' if art else ''}{NOMBRE_CORTO.get(p['id'], p['siglas'])}"
+        sujeto = (f"Partidos que integran {sig} van" if p["id"] == "frente_amplio" else
+                  f"Además de con su propia candidatura, {sig} se presenta" if any(x["relacion"] == "propia" for x in p["papeletas"])
+                  else f"{sig[0].upper()}{sig[1:]} se presenta")
+        plural = len(coal) > 1
+        return (f"{sujeto} dentro de {'las coaliciones' if plural else 'la coalición'} {'; '.join(donde) if plural else donde[0]}. "
+                f"Aquí cuenta lo que dicen sus líderes y los documentos que firma la coalición; no lo que dicen por su cuenta los "
+                f"líderes de los otros partidos.")
+
     partidos = []
     for p in cat["partidos"]:
         pr = p.get("programa") or {}
@@ -58,9 +96,9 @@ def main():
             "siglas": NOMBRE_CORTO.get(p["id"], p["siglas"]),
             "siglas_boe": p["siglas"],
             "articulo": ARTICULO.get(p["id"], ""),
-            "nota_coalicion": p.get("nota_coalicion"),
+            "nota_coalicion": nota_coalicion(p),
             "ambito": p["ambito"],
-            "comunidades": p.get("comunidades") or [],
+            "comunidades": comunidades(p),
             "candidato": p.get("candidato"),
             "web": p.get("web"),
             "en_congreso_xv": p.get("en_congreso_xv"),

@@ -133,6 +133,34 @@ class TestPartidosYPapeletas(unittest.TestCase):
         for ine in ("03", "12", "46"):
             for pid in ("compromis", "podemos", "frente_amplio", "erc"):
                 self.assertEqual(self.papeleta(pid, ine)["siglas"], "COMPROMIS-EUPV-PODEM-ERPV", (pid, ine))
+        # Coalición cuyo partido principal no está en la web: el PNV va dentro de Geroa Bai en Navarra.
+        self.assertEqual(self.papeleta("pnv", "31")["siglas"], "GBAI")
+
+    def test_ningun_partido_de_la_web_sin_su_coalicion(self):
+        """Toda coalición del BOE que firma un partido de la web le da papeleta (salvo que no esté en los pasos 1 y 2)."""
+        coal = json.loads((ROOT / "data/boe/coaliciones.json").read_text())
+        nombres = {"EUZKO ALDERDI JELTZALEA - PARTIDO NACIONALISTA VASCO": "pnv", "UNIÓN DEL PUEBLO NAVARRO": "upn",
+                   "PARTIDO POPULAR": "pp", "PODEMOS": "podemos", "ESQUERRA REPUBLICANA DEL PAÍS VALENCIÀ": "erc",
+                   "IZQUIERDA UNIDA": "frente_amplio", "IZQUIERDA UNIDA CANARIA": "frente_amplio", "MOVIMIENTO SUMAR": "frente_amplio"}
+        for siglas, k in coal.items():
+            if k.get("tipo") != "coalición":
+                continue
+            for m in k.get("miembros", []):
+                pid = nombres.get(m["nombre"].upper())
+                for ine in (k.get("ambito") or []):
+                    if pid:
+                        self.assertIsNotNone(self.papeleta(pid, ine), (siglas, pid, ine))
+
+    def test_comunidades_salen_de_las_papeletas(self):
+        pub = {p["id"]: p for p in json.loads((ROOT / "web/public/data/partidos.json").read_text())["partidos"]}
+        self.assertIn("Comunitat Valenciana", pub["erc"]["comunidades"])
+        self.assertIn("Navarra", pub["pnv"]["comunidades"])
+        self.assertEqual(pub["upn"]["comunidades"], ["Navarra"])
+        self.assertNotIn("Cataluña", pub["psoe"]["comunidades"])  # allí solo está el PSC, su partido afín
+
+    def test_coste_2023_del_psoe_sin_el_psc(self):
+        c = F2["coste_nacional_2023"]
+        self.assertEqual((c["psoe"]["escanos"], c["psc"]["escanos"]), (102, 19))
 
     def test_entradas_son_partidos(self):
         self.assertEqual({k: self.PART[k]["siglas"] for k in ("upn", "upc", "ara_mes_fa", "compromis", "cc")},

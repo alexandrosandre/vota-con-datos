@@ -2,6 +2,7 @@ import { useState } from 'preact/hooks';
 import { actualizar, estado, ir, ruta } from '../store';
 import { fase3, fmt, partido, partidos } from '../data';
 import { CabeceraPaso, Siguiente } from '../brand';
+import { rankingActual } from '../paso1';
 import type { Propuesta, Valoracion } from '../types';
 
 const VAL: Record<Valoracion, string> = {
@@ -226,7 +227,7 @@ export function Contrasta() {
   const p = partido(sel);
   const datos = sel ? d.partidos[sel] : undefined;
   const evaluados = new Set(Object.entries(d.partidos).filter(([, v]) => v.estado === 'evaluado').map(([k]) => k));
-  const afines = e.rankingOrigen ? e.ranking.slice(0, 4) : [];
+  const afines = e.rankingOrigen ? rankingActual.value.slice(0, 4) : [];
   const elegir = (v: string) => {
     actualizar({ partido: v || null });
     ir(`/contrasta/${v}`);
@@ -287,7 +288,13 @@ export function Contrasta() {
       <div class="stack" style={{ marginTop: 22 }}>
         {!sel && <div class="note">Elige un partido, o llega aquí desde el paso 1 con tus partidos más afines.</div>}
         {p?.nota_coalicion && <p class="muted" style={{ fontSize: '0.9rem', margin: 0 }}>{p.nota_coalicion}</p>}
-        {sel && (!datos || datos.estado !== 'evaluado') && (
+        {sel && !p && (
+          <div class="note">
+            Ese partido no está entre los {(partidos.value ?? []).length} que analizamos. Elige uno en la lista: si votas en una provincia donde se
+            presenta en coalición, en el paso 3 te decimos en qué papeleta va.
+          </div>
+        )}
+        {sel && p && (!datos || datos.estado !== 'evaluado') && (
           <div class="note">
             <strong>{p?.siglas ?? sel}: análisis pendiente.</strong>{' '}
             {p?.programa.estado === 'publicado'
@@ -309,7 +316,7 @@ export function Contrasta() {
               {datos.base === 'compromisos' ? (
                 <p class="muted" style={{ fontSize: '0.85rem', margin: 0 }}>
                   <strong>{p.siglas} no ha publicado programa para el 29-N</strong> (última comprobación: {fmt.fecha(p.programa.comprobado)}).
-                  Estas propuestas salen solo de compromisos públicos de sus líderes, dichos en primera persona para esta legislatura.{' '}
+                  Estas propuestas salen solo de sus compromisos públicos para esta legislatura: lo que sus líderes han dicho en primera persona y sus notas y documentos oficiales{p.nota_coalicion ? ' o los de la coalición con la que se presenta' : ''}.{' '}
                   <a href="#/metodologia">Cómo se hace</a>.
                 </p>
               ) : (

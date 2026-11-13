@@ -510,7 +510,10 @@ def main():
         print("\n".join(errores))
         sys.exit(1)
 
-    # Coste nacional 2023 (votos por diputado) para partidos que concurrieron igual en 2023.
+    nombre_partido = {p["id"]: p["nombre"] for p in load("partidos/partidos.json")["partidos"]}
+
+    # Coste nacional 2023 (votos por diputado) de cada partido; la web solo lo muestra cuando la
+    # papeleta es la del partido solo (no una coalición, que en 2023 no concurrió así).
     coste = {}
     tot = defaultdict(lambda: [0, 0])
     for ine, r in g23.items():
@@ -521,7 +524,9 @@ def main():
             if k["siglas"] == "PSC":
                 tot["_PSC"][0] += k["votos"]
                 tot["_PSC"][1] += k["escanos"]
-    for pid, ag in {"pp": "PP", "psoe": "PSOE", "vox": "VOX", "erc": "ERC", "junts": "JxCAT - JUNTS", "eh_bildu": "EH Bildu",
+    # La agrupación «PSOE» de 2023 incluye al PSC: el PSOE se queda sin él (el PSC tiene la suya).
+    tot["_PSOE"] = [tot["PSOE"][0] - tot["_PSC"][0], tot["PSOE"][1] - tot["_PSC"][1]]
+    for pid, ag in {"pp": "PP", "psoe": "_PSOE", "vox": "VOX", "erc": "ERC", "junts": "JxCAT - JUNTS", "eh_bildu": "EH Bildu",
                     "pnv": "EAJ-PNV", "bng": "B.N.G.", "cc": "CCa", "upn": "U.P.N.", "psc": "_PSC"}.items():
         v, s = tot[ag]
         if s:
@@ -541,7 +546,7 @@ def main():
         },
         "circunscripciones": circs,
         "escenarios": escenarios,
-        "logos": {pid: credito(m, f"Logotipo de {pid}") for pid, m in imgs["partidos"].items()},
+        "logos": {pid: credito(m, f"Logotipo de {nombre_partido.get(pid, pid)}") for pid, m in imgs["partidos"].items()},
         "creditos_imagenes": sorted(creditos.values(), key=lambda c: c["que"]),
         "coste_nacional_2023": coste,
     }

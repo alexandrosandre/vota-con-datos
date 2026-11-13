@@ -80,8 +80,12 @@ export function Metodologia() {
             </li>
             <li>
               <strong>Partidos y papeletas:</strong> en los pasos 1 y 2 te mostramos partidos; en el paso 3, papeletas, porque algunos partidos
-              se presentan en coalición en algunas provincias (por ejemplo, en Navarra el PP va dentro de UPN-PP). Lo que dice un partido cuenta
-              solo para ese partido, no para sus socios de coalición.
+              se presentan en coalición en algunas provincias (por ejemplo, en Navarra el PP va dentro de UPN-PP). Lo que dicen los líderes de un
+              partido cuenta solo para ese partido, no para sus socios de coalición: lo que dice el PP no cuenta para UPN. Un documento que
+              firma la coalición (un manifiesto, un acuerdo, una nota conjunta) cuenta para cada partido que la firma; si lo firman partidos
+              que forman el Frente Amplio, cuenta para el Frente Amplio. Una excepción: el PSC está federado con el PSOE desde 1978 y comparten
+              candidato a la Presidencia del Gobierno, Pedro Sánchez, así que lo que dice Sánchez en un acto o un documento del PSC cuenta
+              también para el PSC. UPN y el PP, en cambio, son partidos independientes que van juntos en una coalición electoral.
             </li>
             <li>
               <strong>Resultados de 2023 y de las europeas de 2024:</strong> recuento oficial (Junta Electoral Central, en el BOE, y ficheros del
@@ -173,7 +177,7 @@ export function Metodologia() {
           </p>
           <p>
             <strong>Si un partido no ha publicado programa</strong>, hacemos lo mismo con los compromisos que sus líderes han hecho en público
-            para estas elecciones o esta legislatura: en un mitin, una entrevista, una rueda de prensa, sus redes oficiales o notas del partido.
+            para estas elecciones o esta legislatura: en un mitin, una entrevista, una rueda de prensa, sus redes oficiales o notas del partido o de la coalición con la que se presenta.
             Siempre en primera persona y con cita literal: nada de rumores ni de lo que cuenta un periodista con sus palabras. Guardamos una
             copia de cada fuente y comprobamos automáticamente que la cita está en ella. Elegimos hasta 12 que el propio partido presenta como
             centrales (las anuncia el candidato, las repite, abren su campaña); a veces hay menos. Las valoramos con los mismos criterios y la
@@ -226,8 +230,10 @@ export function Metodologia() {
               ese espacio (Frente Amplio y los partidos que van con él en algunas comunidades, Compromís incluido).
               <br />
               <strong>Resultados de 2023:</strong> el voto real de 2023 en tu provincia. Frente Amplio y Podemos, que en 2023 iban juntos en
-              Sumar, se reparten ese voto según lo que sacó cada uno en las europeas de 2024 en esa provincia. Las candidaturas que no se
-              presentaron en 2023 aparecen «sin datos para estimarla».
+              Sumar, se reparten ese voto según lo que sacó cada uno en las europeas de 2024 en esa provincia; donde solo se presenta uno de
+              los dos (Podemos en Teruel y Ceuta), se lo queda entero. Una coalición nueva parte de lo que sacaron en 2023 los partidos que la
+              forman: UPN-PP, de UPN y el PP; las coaliciones de Compromís y de Ara Més, de Sumar; la de NC-BC en Canarias, de Sumar y Nueva
+              Canarias. Las candidaturas sin antecedente en 2023 aparecen «sin datos para estimarla».
               <br />
               Del 24 de noviembre hasta el cierre de los colegios el 29, la ley prohíbe publicar encuestas. En esos días solo se puede calcular
               con los resultados de 2023.
@@ -250,7 +256,8 @@ export function Metodologia() {
             </li>
             <li>
               <strong>Coste de un escaño:</strong> cuántos votos le cuesta cada escaño a la candidatura (sus votos divididos entre sus escaños),
-              en tu provincia y en toda España en 2023, y cuántos votos más le harían falta para el primer escaño o el siguiente.
+              en tu provincia y, si en 2023 se presentó igual (no en coalición), en toda España en 2023; y cuántos votos más le harían falta
+              para el primer escaño o el siguiente.
             </li>
             <li>
               <strong>Alternativa:</strong> solo si nos das un orden de preferencia: el del paso 1 (de más a menos afinidad) o el que pongas a

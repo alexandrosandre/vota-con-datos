@@ -93,7 +93,13 @@ Ver `docs/research/vaa_estado_del_arte.md`. 30 afirmaciones aprox. a partir de p
 (programas 29-N y compromisos del candidato verificados en `data/promesas/`); 5 niveles + saltar;
 pesos 0,5/1/2; posiciones de partido desde el programa del 29-N (cita y página) o propuestas públicas
 en primera persona de sus líderes nacionales o regionales para estas elecciones o la próxima
-legislatura, incluida la precampaña (cita, quién, formato, medio, fecha, URL), codificadas según
+legislatura, incluida la precampaña (cita, quién, formato, medio, fecha, URL). Lo que dice un líder
+cuenta solo para su partido; los documentos conjuntos de una coalición (manifiesto, acuerdo, nota,
+web) cuentan para cada partido de la web que firma el pacto (`data/boe/coaliciones.json`), con la
+precedencia normal (programa primero; entre declaraciones, la posterior). Excepción: lo que dice
+Pedro Sánchez en actos o documentos del PSC cuenta para el PSC (federado con el PSOE desde 1978,
+mismo candidato a la Presidencia); Feijóo no cuenta para UPN (decisiones del editor, 13-nov-2026).
+Mismas reglas en el paso 2 y en las promesas. Codificadas según
 `docs/prompts/2_codificacion_posiciones.md` y verificadas una a una por un segundo agente
 independiente (`data/fase1/verificacion_g*.json`); `pipeline/build_fase1.py` rechaza citas de
 programa no literales, declaraciones sin autor, URL o fecha, y las de precampaña sin 'marco'; afinidad = distancia de Manhattan

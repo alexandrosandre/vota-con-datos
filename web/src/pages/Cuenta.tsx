@@ -4,6 +4,7 @@ import { fase2, fmt, partido } from '../data';
 import { simular, veredicto, type ResultadoSim } from '../engine/seats';
 import type { CandidaturaCirc, Circunscripcion, Escenario } from '../types';
 import { CabeceraPaso } from '../brand';
+import { paso1, rankingActual } from '../paso1';
 
 const TEXTO_VEREDICTO: Record<string, string> = {
   casi_seguro: 'Escaño casi seguro',
@@ -233,25 +234,30 @@ function Preferencias({
   pidElegido?: string | null;
 }) {
   const e = estado.value;
-  const hayPaso1 = Object.keys(e.afinidades ?? {}).length > 0;
-  const grupos = gruposOrden(filas, e.ranking);
-  const ausentes = e.ranking.filter((p) => !filaDe(filas, p)).length;
-  const candidatos = partidosAqui(circ).filter((x) => !e.ranking.includes(x.pid));
+  const ranking = rankingActual.value;
+  const af = paso1.value;
+  const grupos = gruposOrden(filas, ranking);
+  const ausentes = ranking.filter((p) => !filaDe(filas, p)).length;
+  // Solo papeletas que aún no están en tu orden: un partido cuya papeleta ya está se vería dentro de esa fila, no al final.
+  const candidatos = partidosAqui(circ).filter((x) => !ranking.includes(x.pid) && !grupos.some((g) => g.fila.cand.id === x.cand.id));
 
   const poner = (r: string[]) => actualizar({ ranking: r, rankingOrigen: 'manual' });
   // Mueve una papeleta un puesto: intercambia el primer partido de cada una (los que no se presentan aquí no cuentan).
   const mover = (gi: number, d: number) => {
     const j = gi + d;
     if (j < 0 || j >= grupos.length) return;
-    const l = e.ranking.slice();
+    const l = ranking.slice();
     const a = l.indexOf(grupos[gi].partidos[0]);
     const b = l.indexOf(grupos[j].partidos[0]);
     [l[a], l[b]] = [l[b], l[a]];
     poner(l);
   };
-  const volverPaso1 = () => {
-    const a = e.afinidades;
-    actualizar({ ranking: Object.keys(a).sort((x, y) => a[y] - a[x]), rankingOrigen: 'fase1' });
+  const volverPaso1 = () => actualizar({ ranking: af?.orden ?? [], rankingOrigen: 'fase1' });
+  // El orden es uno para todas las provincias: quitar una papeleta compartida quita a todos sus partidos.
+  const quitar = (g: { fila: Fila; partidos: string[] }) => {
+    const sigs = g.partidos.map((x) => partido(x)?.siglas ?? x);
+    if (g.partidos.length > 1 && !confirm(`En esta papeleta van ${enumera(sigs)}. ¿Quitarlos a todos de tu orden? Tu orden es el mismo para todas las provincias.`)) return;
+    poner(ranking.filter((x) => !g.partidos.includes(x)));
   };
 
   return (
@@ -264,7 +270,7 @@ function Preferencias({
         de esta lista que sí las tiene (al menos un 50 % de probabilidad de escaño). Este orden no sale de tu navegador.
       </p>
 
-      {e.ranking.length === 0 ? (
+      {ranking.length === 0 && e.rankingOrigen !== 'manual' ? (
         <div class="origen">
           <p style={{ margin: '0 0 10px' }}>
             <strong>Aún no nos has dicho a quién votarías si no fuera a tu primera opción.</strong> Hay dos maneras:
@@ -275,7 +281,7 @@ function Preferencias({
             </a>
             <button
               class="btn"
-              onClick={() => poner(pidElegido ? [pidElegido] : [])}
+              onClick={() => poner(pidElegido && filaDe(filas, pidElegido) ? [pidElegido] : [])}
             >
               Ordenarlo yo aquí
             </button>
@@ -291,8 +297,9 @@ function Preferencias({
               </>
             ) : (
               <>
-                <span class="etiqueta-origen manual">Ordenado por ti</span> Este orden lo has puesto tú.{' '}
-                {hayPaso1 && (
+                <span class="etiqueta-origen manual">Ordenado por ti</span>{' '}
+                {ranking.length === 0 ? 'Añade los partidos en el orden que prefieras con la lista de abajo.' : 'Este orden lo has puesto tú.'}{' '}
+                {af && (
                   <button class="link-btn" onClick={volverPaso1}>
                     Volver al orden del paso 1
                   </button>
@@ -304,7 +311,11 @@ function Preferencias({
             {grupos.map((g, i) => {
               const f = g.fila;
               const p = g.partidos[0];
-              const afs = e.rankingOrigen === 'fase1' ? g.partidos.map((x) => [x, e.afinidades?.[x]] as const).filter(([, a]) => a !== undefined) : [];
+              const afs = e.rankingOrigen === 'fase1' && af ? g.partidos.map((x) => [x, af.pct[x]] as const).filter(([, a]) => a !== undefined) : [];
+              // Quién va de verdad en esta papeleta y quién llega a ella solo como partido afín (el PSC fuera de Cataluña).
+              const enPapeleta = (x: string) => f.cand.partido === x || (esCoalicion(f.cand) && !!f.cand.afines?.includes(x));
+              const dentro = g.partidos.filter(enPapeleta).map((x) => partido(x)?.siglas ?? x);
+              const afinesFuera = g.partidos.filter((x) => !enPapeleta(x)).map((x) => partido(x)?.siglas ?? x);
               const sigs = g.partidos.map((x) => partido(x)?.siglas ?? x);
               const varios = g.partidos.length > 1;
               const sig = varios ? f.cand.siglas : sigs[0];
@@ -315,7 +326,11 @@ function Preferencias({
                   <span class="nombre">
                     <strong>{sig}</strong>
                     {varios ? (
-                      <span class="muted"> · aquí van juntos {enumera(sigs)}</span>
+                      <span class="muted">
+                        {dentro.length > 1 && ` · aquí van juntos ${enumera(dentro)}`}
+                        {afinesFuera.length > 0 &&
+                          ` · ${enumera(afinesFuera)} no se ${afinesFuera.length > 1 ? 'presentan' : 'presenta'} aquí: su partido afín`}
+                      </span>
                     ) : (
                       f.cand.partido !== p && <span class="muted"> · en {f.cand.siglas}</span>
                     )}
@@ -330,7 +345,7 @@ function Preferencias({
                   <span class="acciones">
                     <button aria-label={`Subir ${sig}`} onClick={() => mover(i, -1)} disabled={i === 0}>↑</button>
                     <button aria-label={`Bajar ${sig}`} onClick={() => mover(i, 1)} disabled={i === grupos.length - 1}>↓</button>
-                    <button aria-label={`Quitar ${sig} de tu orden`} onClick={() => poner(e.ranking.filter((x) => !g.partidos.includes(x)))}>✕</button>
+                    <button aria-label={`Quitar ${sig} de tu orden`} onClick={() => quitar(g)}>✕</button>
                   </span>
                 </li>
               );
@@ -348,7 +363,7 @@ function Preferencias({
                   value=""
                   onChange={(ev) => {
                     const v = (ev.target as HTMLSelectElement).value;
-                    if (v) poner([...e.ranking, v]);
+                    if (v) poner([...ranking, v]);
                   }}
                 >
                   <option value="">+ Añadir un partido al final…</option>
@@ -405,14 +420,15 @@ export function Cuenta() {
 
   // Sugerencia: el primero de tu orden de preferencia (sin contar tu voto) con P >= 50 % aquí.
   const pocasOpciones = noSePresenta || (!!filaElegida && !filaElegida.sinBase && filaElegida.pEscano < UMBRAL_RECOMENDACION);
-  const grupos = gruposOrden(filas, e.ranking);
+  const ranking = rankingActual.value;
+  const grupos = gruposOrden(filas, ranking);
   const alternativa = pocasOpciones
     ? grupos.map((g) => g.fila).find((f) => f.cand.id !== elegida?.id && !f.sinBase && f.pEscano >= UMBRAL_RECOMENDACION)
     : undefined;
   const posAlternativa = alternativa ? grupos.findIndex((g) => g.fila === alternativa) + 1 : 0;
 
-  // Coste de la papeleta (su partido principal), no del partido que va dentro de ella.
-  const coste = elegida?.partido ? d.coste_nacional_2023?.[elegida.partido] : undefined;
+  // Votos por diputado en 2023 del partido de la papeleta; no en coaliciones, que en 2023 no concurrieron así.
+  const coste = elegida?.partido && !esCoalicion(elegida) ? d.coste_nacional_2023?.[elegida.partido] : undefined;
   const irAPreferencias = () => document.getElementById('preferencias')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
   const Sugerencia = () =>
@@ -437,7 +453,7 @@ export function Cuenta() {
       </div>
     ) : pocasOpciones ? (
       <div class="note" style={{ marginTop: 16 }}>
-        {e.ranking.length === 0 ? (
+        {ranking.length === 0 ? (
           <>
             Si nos dices a quién votarías después, te señalamos cuál tiene opciones aquí.{' '}
             <button class="link-btn" onClick={irAPreferencias}>

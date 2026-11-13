@@ -348,5 +348,65 @@
     "adelante_andalucia: q23 (−2): el programa pide derogar «la ley de desalojos rápidos» (propuesta 495, p. 94), es decir, la vía rápida vigente desde 2025, y ese rechazo es expreso, aunque no figura entre las 29 medidas principales. La ilegalización de las empresas de «desokupación» sí está en la medida 1 (p. 4), lo que sostiene la prioridad.",
     "adelante_andalucia: Comprobado para las 18 codificadas: las citas son literales y la página es correcta en todas (cotejo página a página con pdftotext); en la maquetación a dos columnas, los «[...]» de q05, q06 y q07 saltan solo texto de la otra columna. También se comprobaron las 12 null buscando en todo el programa: IVA o ITP de primera vivienda, lengua vehicular, prioridad nacional en vivienda, expulsión de condenados, referéndum, concierto o cupo, eólica marina, reducción de emisiones a 2030, Ministerio de Igualdad, Fuerzas Armadas en Ceuta, exigencias agrarias por encima de la UE y Mercosur. No hay ninguna posición explícita omitida; las menciones encontradas (p. ej., «industria auxiliar de la eólica marina», p. 125, o «modelo confederal», p. 73) no son posiciones inequívocas sobre la afirmación.",
     "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/): q02, q07, q10, q14 y q28 retiradas del cuestionario (sus celdas se conservan como historial y ya no se publican); q31-q35 añadidas y verificadas para los partidos de este grupo."
-  ]
+  ],
+  "reatribucion_2026-11-13b": {
+    "regla": "Decisión del editor (13-11-2026): los documentos conjuntos de una coalición cuentan para cada partido de la web que firma el pacto de coalición (data/boe/coaliciones.json); lo que dicen los líderes de un partido cuenta solo para su partido. Precedencia del protocolo: programa oficial del partido primero; entre declaraciones de campaña, la posterior prevalece. Si el partido ya tenía posición propia con el mismo valor, se mantiene la suya.",
+    "alcance": "No es una verificación nueva de las citas ni de los valores: cada posición reutiliza la cita, la página y el valor de la celda de la coalición, ya verificados de forma independiente (upc q09 y q33, ara_mes_fa q01 y q32, compromis q31; véanse «cambios» y la revisión de afirmaciones del 13-11). Lo nuevo es la atribución al firmante y la precedencia, que se documentan aquí.",
+    "posiciones": [
+      {
+        "partido": "podemos",
+        "pregunta": "q09",
+        "antes": null,
+        "despues": 1,
+        "documento": "Manifiesto de Unidad del Pueblo Canario (3-11), p. 3",
+        "motivo": "Podemos firma el pacto JEC C7. Sin posición propia: se añade."
+      },
+      {
+        "partido": "podemos",
+        "pregunta": "q33",
+        "antes": null,
+        "despues": -1,
+        "documento": "Manifiesto de Unidad del Pueblo Canario (3-11), pp. 4-5",
+        "motivo": "Podemos firma el pacto JEC C7. Sin posición propia: se añade."
+      },
+      {
+        "partido": "frente_amplio",
+        "pregunta": "q01",
+        "antes": null,
+        "despues": 1,
+        "documento": "Nota oficial de Ara Més-Front Ampli (6-11)",
+        "motivo": "Movimiento Sumar, Izquierda Unida y Recortes Cero firman el pacto ante la JEP de Illes Balears. Sin posición propia. El manifiesto de UPC (3-11), que firman IU Canaria y Movimiento Sumar, también da +1; se usa la nota, posterior."
+      },
+      {
+        "partido": "frente_amplio",
+        "pregunta": "q09",
+        "antes": null,
+        "despues": 1,
+        "documento": "Manifiesto de Unidad del Pueblo Canario (3-11), p. 3",
+        "motivo": "IU Canaria y Movimiento Sumar firman el pacto JEC C7. Sin posición propia: se añade."
+      },
+      {
+        "partido": "frente_amplio",
+        "pregunta": "q32",
+        "antes": null,
+        "despues": 1,
+        "documento": "Nota oficial de Ara Més-Front Ampli (10-11)",
+        "motivo": "Firmantes del Frente Amplio en el pacto balear. La nota previa (Frente Amplio solo habla del SMI estatal) no contradice: se añade."
+      },
+      {
+        "partido": "frente_amplio",
+        "pregunta": "q33",
+        "antes": null,
+        "despues": -1,
+        "documento": "Manifiesto de Unidad del Pueblo Canario (3-11), pp. 4-5",
+        "motivo": "IU Canaria y Movimiento Sumar firman el pacto JEC C7. Sin posición propia: se añade."
+      }
+    ],
+    "se_mantienen": [
+      "podemos q01 (+1, Montero 6-11) y q04 (+1, Montero 6-11): posteriores al manifiesto de UPC (3-11), mismo valor.",
+      "podemos q34 (+1, Belarra) y frente_amplio q34 (+1, Martínez Barbero): mismo valor que el manifiesto de UPC (+1); sin conflicto, se mantiene la posición propia.",
+      "podemos q31 (+2, Belarra) y frente_amplio q31 (+2, Bustinduy, 12-11): mismo valor que la web de Compromís: Front Valencià (+2).",
+      "frente_amplio q04 (+1, nota oficial del Frente Amplio, 5-11): posterior al manifiesto de UPC (3-11), mismo valor."
+    ]
+  }
 }

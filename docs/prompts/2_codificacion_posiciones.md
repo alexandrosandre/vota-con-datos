@@ -31,6 +31,25 @@ citas de programa que no sean literales y las declaraciones sin autor, sin URL o
    * Nunca: votaciones parlamentarias (el sentido del voto, sin palabras del líder), posiciones de otras
      legislaturas, ni la ideología que supongas.
 
+## A qué partido cuenta cada fuente (decisión del editor, 13-nov-2026)
+
+Los pasos 1 y 2 tratan de **partidos**, no de coaliciones electorales.
+
+* **Líderes:** lo que dice un líder cuenta solo para su propio partido, aunque hable en un acto de la
+  coalición. Ante la duda sobre su afiliación, no se atribuye.
+* **Documentos conjuntos** (manifiesto, acuerdo, nota conjunta, web de la coalición): cuentan para
+  **cada partido de la web que firma el pacto de coalición** (`data/boe/coaliciones.json`). Los
+  firmantes que forman el Frente Amplio (Izquierda Unida y sus federaciones, Movimiento Sumar,
+  Recortes Cero…) cuentan para Frente Amplio; Esquerra Republicana del País Valencià cuenta para ERC
+  (es su nombre en el País Valencià). `quien` = el documento y la coalición que lo firma.
+* **Precedencia** con las fuentes propias del partido: su programa oficial va primero; entre
+  declaraciones de campaña (incluidos los documentos conjuntos), la posterior prevalece. Si coinciden
+  en el valor, se mantiene la fuente propia.
+* **Excepción PSC-PSOE:** lo que dice Pedro Sánchez en actos o documentos del PSC cuenta para el PSC,
+  porque el PSC está federado con el PSOE desde 1978 y comparten candidato a la Presidencia del
+  Gobierno. No es el caso de UPN y el PP, partidos independientes que solo van juntos en una coalición
+  electoral: Feijóo no cuenta para UPN.
+
 ## Codificación
 
 Para cada afirmación de `preguntas.json`, la posición del partido:

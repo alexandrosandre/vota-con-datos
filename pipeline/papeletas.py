@@ -43,9 +43,12 @@ def calcular():
     for ine, x in sorted(boe.items()):
         for c in x["candidaturas"]:
             r = regla(reglas, c)
-            if not r or not r.get("partido"):
+            if not r:
                 continue
-            todos = [r["partido"]] + r.get("afines", [])
+            # Sin partido principal en la web (p. ej. Geroa Bai): solo cuentan sus socios ('afines').
+            todos = ([r["partido"]] if r.get("partido") else []) + r.get("afines", [])
+            if not todos:
+                continue
             k = coal.get(c["siglas"] or "") or {}
             es_coal = k.get("tipo") == "coalición" and len(k.get("miembros", [])) >= 2
             for pid in todos:

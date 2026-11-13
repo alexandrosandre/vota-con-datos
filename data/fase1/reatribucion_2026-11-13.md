@@ -14,7 +14,14 @@ Los ids no cambian (ver «Ids» al final).
 
 ## Regla aplicada
 
-Cada posición se atribuye por **quién la dice**: un líder de NC-BC cuenta para NC-BC, uno de Podemos para Podemos, uno de IU/Sumar/EUPV para Frente Amplio, etc. Un documento conjunto de la coalición se mantiene solo en la entrada que es miembro de la coalición y es su partido sustituto; no se copia a los demás socios. Nunca se sobrescribe una posición propia del partido de destino.
+(Versión vigente, 13-nov-2026, tras la segunda decisión del editor.)
+
+- **Líderes.** Cada declaración cuenta solo para el partido de quien la dice: un líder de NC-BC cuenta para NC-BC, uno de Podemos para Podemos, uno de IU, Movimiento Sumar o EUPV para Frente Amplio, etc. Ante la duda sobre la afiliación, no se atribuye.
+- **Documentos conjuntos.** El manifiesto, el acuerdo, la nota conjunta o la web de una coalición cuentan para **cada partido de la web que firma el pacto de coalición** (`data/boe/coaliciones.json`). Los firmantes que forman el Frente Amplio (Izquierda Unida y sus federaciones, Movimiento Sumar, Recortes Cero…) cuentan para la entrada Frente Amplio; Esquerra Republicana del País Valencià (ERPV) cuenta para ERC, porque es el nombre de ERC en el País Valencià (art. 1 de los estatutos de ERC de 2025; `data/mapeo/candidaturas_2026.json`).
+- **Precedencia** (`docs/prompts/2_codificacion_posiciones.md`): el programa oficial del partido va primero; entre declaraciones de campaña, la posterior prevalece. Si el partido ya tenía posición propia con el mismo valor, se mantiene la suya.
+- **Excepción PSC-PSOE.** Lo que dice Pedro Sánchez en actos o documentos del PSC cuenta para el PSC: el PSC está federado con el PSOE desde 1978 y comparten candidato a la Presidencia del Gobierno. UPN y el PP son partidos independientes en una coalición electoral; por eso Feijóo no cuenta para UPN.
+
+La primera versión de esta regla (la de las secciones siguientes, hasta «Revisión posterior») mantenía un documento conjunto solo en el partido sustituto de la entrada y no lo copiaba a los demás socios; queda sustituida. Ver «Documentos conjuntos para cada firmante» al final.
 
 ## Herencia UPN-PP → PP, retirada
 
@@ -34,7 +41,7 @@ Ninguna posición se mueve a otra entrada. Se retira una (Ara Més q30, ver abaj
 | q33 | −1 | Manifiesto, p. 4-5 | Igual. |
 | q34 | +1 | Manifiesto, p. 5 | Igual. |
 
-Nota: el Manifiesto lo firman NC-BC, Podemos, IU Canaria y Movimiento Sumar. Por la regla del editor solo cuenta para NC-BC (miembro y partido sustituto de la entrada); **no** se copia a Podemos ni a Frente Amplio.
+Nota: el Manifiesto lo firman NC-BC, Podemos, IU Canaria y Movimiento Sumar. Con la primera regla solo contaba para NC-BC; con la vigente cuenta también para Podemos y Frente Amplio (ver «Documentos conjuntos para cada firmante»).
 
 ### `ara_mes_fa` → Ara Més: 2 se mantienen, 1 retirada
 
@@ -69,3 +76,33 @@ Ninguno: no se ha movido ninguna posición a otra entrada.
 ## Ids
 
 Se mantienen `upn`, `upc`, `ara_mes_fa`, `compromis` y `cc`. Son claves internas: las usan el estado guardado en el navegador (`vcd-estado-v1`: afinidades, orden de preferencia, partido elegido), los enlaces compartidos (`#/contrasta/upc`, `?partido=upc`), las carpetas de datos y la correspondencia con las encuestas. En el paso 3 cada id sigue llevando a la misma papeleta, así que lo guardado por cada persona sigue significando lo mismo y no hace falta migración. Lo que ve la persona (nombre y siglas) sí cambia.
+
+## Revisión posterior (13 de noviembre de 2026)
+
+- **Notas públicas en texto llano.** Las notas que se muestran con cada posición ya no llevan rutas del repositorio ni la etiqueta «[Reatribución 13-nov…]». En NC-BC (q01, q04, q09, q33, q34), Ara Més (q01, q32) y Compromís (q31) se sustituye por una frase para el lector, p. ej. «Posición tomada del manifiesto conjunto de la coalición Unidad del Pueblo Canario, que firma NC-BC.». En el resto de notas públicas se quitan las rutas de copias locales (con su sha256) y las referencias a ficheros internos, y «[Revisión de afirmaciones 13-nov (ruta); verificación independiente: …]» pasa a «[Revisada el 13-nov con verificación independiente: …]». Ningún valor cambia.
+- **UPN.** Las notas de sus celdas nulas (`codificacion_g1.json`) describen la regla actual: las posiciones del PP y de sus dirigentes (Feijóo, o candidatos del PP en la lista de UPN-PP como Sergio Sayas) no se trasladan a UPN. En q31, Sayas se descarta por ser del PP, no por hablar fuera de un acto de la coalición. `notas_g4.md` anota que la herencia UPN←PP se retiró y corrige quién preside UPN (Cristina Ibarrola, nota de upn.org del 27-oct).
+- **NC-BC.** Las notas de sus celdas nulas (`codificacion_g2.json`) ya no cuentan a Marisol Collado (Movimiento Sumar) como líder buscada de la entrada: solo cuentan los dirigentes de NC-BC.
+
+## Documentos conjuntos para cada firmante (13 de noviembre de 2026, segunda decisión del editor)
+
+Se revisaron todas las posiciones del paso 1 que salen de un documento de coalición: el manifiesto de Unidad del Pueblo Canario (NC-BC q01, q04, q09, q33, q34), las notas oficiales de Ara Més-Front Ampli (Ara Més q01 y q32), la web de Compromís: Front Valencià (Compromís q31) y el programa conjunto de CC y Municipalistas Primero Canarias (CC q19, q33, q34). La cita, la página y el valor de cada una ya tenían verificación independiente; se reutilizan. El registro está en `verificacion_g2.json` y `verificacion_g3.json` («reatribucion_2026-11-13b»).
+
+**Añadidas (7)**
+
+| Partido | Afirmación | Valor | Documento | Por qué |
+|---|---|---|---|---|
+| Podemos | q09 | +1 | Manifiesto de UPC (3-nov), p. 3 | Podemos firma el pacto (JEC C7). Sin posición propia. |
+| Podemos | q33 | −1 | Manifiesto de UPC (3-nov), pp. 4-5 | Igual. |
+| Frente Amplio | q01 | +1 | Nota oficial de Ara Més-Front Ampli (6-nov) | Firman Movimiento Sumar, IU y Recortes Cero. Sin posición propia. El manifiesto de UPC (3-nov) también da +1; se usa la nota, posterior. |
+| Frente Amplio | q09 | +1 | Manifiesto de UPC (3-nov), p. 3 | Firman IU Canaria y Movimiento Sumar. Sin posición propia. |
+| Frente Amplio | q32 | +1 | Nota oficial de Ara Més-Front Ampli (10-nov) | Sin posición propia (su nota anterior solo hablaba del SMI estatal). |
+| Frente Amplio | q33 | −1 | Manifiesto de UPC (3-nov), pp. 4-5 | Sin posición propia. |
+| ERC | q31 | +2 (antes +1) | Web de Compromís: Front Valencià (12-nov) | Firma ERPV (JEC C5). El programa de ERC no trata la duración de los contratos; entre declaraciones de campaña prevalece la posterior: la web (12-nov) frente a la nota de ERC del 7-oct (+1, prórroga obligatoria para grandes tenedores en Cataluña). La celda guarda la anterior en `sustituye`. **Cambia un valor propio de ERC: a confirmar por el editor.** |
+
+**Se mantiene la posición propia (mismo valor o posterior):** Podemos q01 y q04 (Montero, 6-nov, posterior al manifiesto de UPC); Podemos q34 (Belarra) y Frente Amplio q34 (Martínez Barbero), +1 como el manifiesto; Podemos q31 (Belarra) y Frente Amplio q31 (Bustinduy, 12-nov), +2 como la web de Compromís: Front Valencià; Frente Amplio q04 (nota del Frente Amplio, 5-nov, posterior).
+
+**Sin efecto:** el acuerdo UPN-PP no tiene ninguna posición codificada (las 30 celdas de UPN son nulas), así que no añade nada al PP. No hay ningún documento de GEROA BAI codificado, así que no añade nada al PNV. Municipalistas Primero Canarias no es una entrada de la web.
+
+**Recuentos:** Podemos 16 → 18, Frente Amplio 10 → 14, ERC 17 (cambia el valor de q31).
+
+**PSC:** se mantiene psc q21 (Sánchez en el acto del PSC en Tarragona); su nota explica ahora la excepción PSC-PSOE en lugar de remitir al criterio de UPN-PP.

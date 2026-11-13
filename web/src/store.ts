@@ -10,8 +10,6 @@ export interface Estado {
    */
   ranking: string[];
   rankingOrigen: 'fase1' | 'manual' | null;
-  /** Afinidad (0–100) por partido del último resultado del paso 1, para mostrar de dónde sale el orden. */
-  afinidades: Record<string, number>;
   circ: string | null;
   partido: string | null;
   /** '' = el escenario por defecto (la media de encuestas, o 2023 durante la veda). */
@@ -33,24 +31,27 @@ const inicial: Estado = {
   respuestas: {},
   ranking: [],
   rankingOrigen: null,
-  afinidades: {},
   circ: null,
   partido: null,
   escenario: '',
-  v: 2,
+  v: 3,
 };
 
 function cargar(): Estado {
   try {
     const raw = localStorage.getItem(CLAVE);
     if (raw) {
-      const e = { ...inicial, ...JSON.parse(raw) } as Estado & { incertidumbre?: unknown };
+      const e = { ...inicial, ...JSON.parse(raw) } as Estado & { incertidumbre?: unknown; afinidades?: unknown };
       // v2 (12-nov): el escenario por defecto pasa a ser la media de encuestas; quien no había
       // elegido otro (o tenía el antiguo por defecto, 2023) pasa al nuevo.
       if ((e.v ?? 1) < 2) {
         if (e.escenario === 'g2023') e.escenario = '';
         e.v = 2;
       }
+      // v3 (13-nov): la afinidad del paso 1 ya no se guarda (se guardaba mal, 0–1 redondeado, y se quedaba
+      // desfasada si cambiaban las posiciones); el paso 3 la recalcula (paso1.ts).
+      if ((e.v ?? 1) < 3) e.v = 3;
+      delete e.afinidades;
       delete e.incertidumbre;
       return e;
     }

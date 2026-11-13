@@ -1,5 +1,5 @@
 {
-  "_doc": "Asignación de cada candidatura proclamada en el BOE (29N) a un partido de la fase 1, y de qué votos de 2023 (misma circunscripción) parte su escenario base. Reglas por siglas/denominación EXACTAS del BOE; se aplican en orden y la primera que casa gana. 'base_2023' lista siglas de candidaturas de 2023 en la misma circunscripción; 'reparto' indica que esos votos se comparten con otra candidatura 2026 según el peso relativo en las europeas de 2024 de esa provincia. 'afines' = otros partidos de la fase 1 que integran la candidatura (coaliciones), usado para sugerir alternativas. 'partido' es el partido principal de la papeleta (pasos 1 y 2); desde el 13-nov-2026 los pasos 1 y 2 muestran partidos y el paso 3 papeletas, así que un partido que concurre dentro de una coalición (p. ej. el PP en UPN-PP) llega a su papeleta por 'afines'. 'afines' sale del pacto de coalición (data/boe/coaliciones.json) o, sin coalición, de la relación PSOE-PSC.",
+  "_doc": "Asignación de cada candidatura proclamada en el BOE (29N) a un partido de la fase 1, y de qué votos de 2023 (misma circunscripción) parte su escenario base. Reglas por siglas/denominación EXACTAS del BOE; se aplican en orden y la primera que casa gana. 'base_2023' lista siglas de candidaturas de 2023 en la misma circunscripción; 'reparto' indica que esos votos se comparten con otra candidatura 2026 según el peso relativo en las europeas de 2024 de esa provincia. 'afines' = otros partidos de la fase 1 que integran la candidatura (coaliciones), usado para sugerir alternativas. 'partido' es el partido principal de la papeleta (pasos 1 y 2), o null si no está en esos pasos (p. ej. Geroa Bai, encabezada por Geroa Socialverdes, con el PNV dentro); desde el 13-nov-2026 los pasos 1 y 2 muestran partidos y el paso 3 papeletas, así que un partido que concurre dentro de una coalición (p. ej. el PP en UPN-PP) llega a su papeleta por 'afines'. 'afines' sale del pacto de coalición (data/boe/coaliciones.json) o, sin coalición, de la relación PSOE-PSC.",
   "reglas": [
     {
       "siglas": [
@@ -263,7 +263,11 @@
       "partido": null,
       "base_2023": [
         "GBAI"
-      ]
+      ],
+      "afines": [
+        "pnv"
+      ],
+      "_nota": "Pacto ante la JEP de Navarra (data/boe/coaliciones.json): Geroa Socialverdes (partido principal, no está en los pasos 1 y 2), EAJ-PNV y Atarrabia. El PNV llega a esta papeleta por 'afines'."
     },
     {
       "siglas": [

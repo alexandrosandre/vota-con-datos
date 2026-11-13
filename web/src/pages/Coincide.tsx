@@ -252,17 +252,18 @@ function Resultados() {
     return out;
   }, [d]);
   const ids = d.preguntas.map((q) => q.id);
-  const res = afinidad(e.respuestas, posiciones, ids);
+  // Partidos de los que no conocemos ninguna posición: van en un aviso aparte, no en la lista.
+  const sinPosiciones = (partidos.value ?? []).filter((p) => !Object.values(d.posiciones[p.id] ?? {}).some((x) => x.valor !== null));
+  const res = afinidad(e.respuestas, posiciones, ids).filter((r) => !sinPosiciones.some((p) => p.id === r.partido));
   const respondidas = Object.values(vigentes(e.respuestas, ids)).filter((r) => r.valor !== null).length;
   const [abierto, setAbierto] = useState<string | null>(null);
   const evaluables = res.filter((r) => r.afinidad !== null);
-  const sinPosiciones = (partidos.value ?? []).filter((p) => !d.posiciones[p.id]);
 
+  // El orden del paso 1 no se copia: el paso 3 lo recalcula siempre con tus respuestas y los datos de hoy (paso1.ts).
   const guardar = () =>
     actualizar({
       ranking: evaluables.map((r) => r.partido),
       rankingOrigen: 'fase1',
-      afinidades: Object.fromEntries(evaluables.map((r) => [r.partido, Math.round(r.afinidad!)])),
       partido: evaluables[0]?.partido ?? null,
     });
 
@@ -371,7 +372,7 @@ function Resultados() {
         <button
           class="btn ghost"
           onClick={() => {
-            if (confirm('¿Borrar todas tus respuestas?')) actualizar({ respuestas: {}, ranking: [], rankingOrigen: null, afinidades: {} });
+            if (confirm('¿Borrar todas tus respuestas?')) actualizar({ respuestas: {}, ranking: [], rankingOrigen: null });
           }}
         >
           Borrar mis respuestas

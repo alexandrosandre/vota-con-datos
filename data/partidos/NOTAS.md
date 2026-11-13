@@ -33,7 +33,7 @@ Se incluyen las candidaturas al Congreso que cumplen al menos uno de estos crite
 - **(a)** Tienen escaños en el Congreso de la XV legislatura, elegido el 23-J de 2023, o son la candidatura sucesora de quien los tiene.
 - **(b)** Al menos una encuesta reciente de un instituto reconocido les asigna 1 o más escaños.
 
-El universo resultante son 18 candidaturas.
+El universo resultante son 18 partidos (cada uno con una entrada en `partidos.json`; desde el 13-nov las entradas describen partidos, no candidaturas).
 
 **13 de noviembre de 2026 · partidos, no coaliciones.** Por decisión del editor, los pasos 1 y 2 muestran partidos y el paso 3 papeletas. Cinco entradas pasan a describir un partido (los ids no cambian): `upn` → UPN; `upc` → Nueva Canarias-Bloque Canarista (NC-BC); `ara_mes_fa` → Ara Més; `compromis` → Compromís; `cc` → Coalición Canaria. Frente Amplio sigue siendo una sola entrada (coalición estatal con candidato y programa comunes) y el PSC sigue siendo partido. La tabla de abajo conserva la descripción original, por candidatura. Dónde se vota a cada partido, provincia a provincia, está en el campo `papeletas` de `partidos.json` (generado por `pipeline/papeletas.py` desde el BOE, el mapeo y los pactos de coalición). Reatribución de contenidos: `data/fase1/reatribucion_2026-11-13.md`, `data/fase3/reatribucion_2026-11-13.md` y `data/promesas/reatribucion_2026-11-13.md`.
 
@@ -67,7 +67,8 @@ El universo resultante son 18 candidaturas.
 
 - En 2026 ese espacio se presenta repartido en cinco candidaturas: Frente Amplio, Podemos, Compromís: Front Valencià, UPC y Ara Més-Front Ampli.
 - `escanos_2023` vale `null` en las cinco, porque no existe una cifra oficial por candidatura.
-- Wikipedia hace un reparto no oficial: FA 22, Podemos 3, Compromís 4, Ara Més-FA 1 y UPC 1. Ese reparto figura en `escanos_2023_nota`.
+- Wikipedia hace un reparto no oficial de esos 31 escaños entre las candidaturas de 2026: FA 22, Podemos 3, Compromís: Front Valencià 4, Ara Més-FA 1 y UPC 1. En `escanos_2023_nota` se usa solo para Frente Amplio.
+- Para Podemos y Compromís, `escanos_2023_nota` da en su lugar los diputados del propio partido según el Diario de Sesiones del Congreso (fuente oficial): Podemos, 4 en el Grupo Mixto al final de la legislatura (Belarra, Sánchez Serna, Velarde y Santana; Pleno núm. 149, 11-11-2025: «cuatro diputados de Podemos»); Compromís, Àgueda Micó (Grupo Mixto) y Alberto Ibáñez (Grupo Plurinacional SUMAR). El «3» de Wikipedia para Podemos cuenta candidaturas de 2026, no diputados del partido: asigna aparte 1 escaño a UPC, la coalición en la que va Podemos en Canarias.
 
 **Encuestas que justifican el criterio (b)**
 
@@ -139,8 +140,8 @@ Cada caso se detalla en `fecha_fuente`. Las cabeceras HTTP están guardadas en `
 - **PP y UPN-PP:** en Navarra el programa lo redacta una comisión conjunta UPN-PP, según el preacuerdo del 13-oct. En el resto de España, incluida Cataluña («Partit Popular / Partido Popular»), aplica el programa nacional del PP.
 - **Frente Amplio:** se presenta con marcas territoriales: Comuns-Front Ampli, CHA-Frente Amplio Aragón, Frente Amplio Andaluz, Frente Amplio-Fronte Ampla, Frente Amplio-Fronte Zabala y Frente Ampliu por Asturies.
   - Aún no hay programa común ni regional, y no consta si habrá un programa marco con anexos.
-  - En Baleares la candidatura es Ara Més-Front Ampli, una coalición distinta.
-  - No se presenta en la Comunitat Valenciana, Canarias, Teruel, Ceuta ni Melilla.
+  - No presenta candidatura propia en la Comunitat Valenciana, Canarias ni Illes Balears, pero partidos que lo integran van allí dentro de otras coaliciones (pactos en `data/boe/coaliciones.json`): Esquerra Unida del País Valencià y Recortes Cero en Compromís: Front Valencià; Movimiento Sumar e Izquierda Unida Canaria en UPC; Movimiento Sumar, Izquierda Unida y Recortes Cero en Ara Més-Front Ampli.
+  - No se presenta en Teruel, Ceuta ni Melilla.
 - **Podemos:** en sus 41 circunscripciones aplicará su propio programa. En la Comunitat Valenciana va dentro de Compromís: Front Valencià, y en Canarias dentro de UPC; allí aplica el programa de la coalición. En Cataluña apoya a ERC y no tiene lista propia.
 - **EH Bildu:** se presenta también en Navarra. No consta un programa navarro diferenciado.
 - **CC:** un solo documento conjunto con Primero Canarias para Las Palmas y Santa Cruz de Tenerife.

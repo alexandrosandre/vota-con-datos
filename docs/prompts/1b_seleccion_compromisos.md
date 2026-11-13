@@ -16,6 +16,13 @@ elección o esta legislatura**.
 * Lo dice **en primera persona** un líder del partido: líder nacional, candidato a la Presidencia,
   cabezas de lista, líderes autonómicos o secretarios generales, portavoces oficiales; o un documento
   oficial del partido (nota de prensa, decálogo, manifiesto, web de campaña) con `quien` = el partido.
+* A qué partido cuenta (decisión del editor, 13-nov-2026; detalle en `2_codificacion_posiciones.md`):
+  lo que dice un líder, solo a su partido; un documento conjunto de una coalición (manifiesto,
+  acuerdo, nota conjunta, web), a cada partido de la web que firma el pacto de coalición
+  (`data/boe/coaliciones.json`; los firmantes del Frente Amplio, a Frente Amplio; ERPV, a ERC).
+  Excepción: lo que dice Pedro Sánchez en actos o documentos del PSC cuenta para el PSC (federado
+  con el PSOE desde 1978, mismo candidato a la Presidencia); Feijóo no cuenta para UPN, que solo va
+  en coalición electoral con el PP.
 * En público y en cualquier formato: mitin, entrevista, rueda de prensa, vídeo o red social oficial,
   precampaña incluida, siempre que se refiera a esta elección o esta legislatura.
 * Es una **medida concreta** (qué se hará), no un diagnóstico, una crítica al rival ni una aspiración.
