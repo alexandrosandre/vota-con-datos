@@ -61,10 +61,11 @@ ETIQUETAS = {
     "Ara Més-Front Ampli": "ara_mes_fa", "CC-Municipalistas Primero Canarias": "cc",
     "Adelante Andalucía": "adelante_andalucia", "Adelante Andalucía (AA)": "adelante_andalucia",
     "A.Adelante": "adelante_andalucia", "AA": "adelante_andalucia", "Adelante And.": "adelante_andalucia",
+    "Adelante AND": "adelante_andalucia",  # Winston/Artículo14
 }
 IGNORADAS = {"UPN", "Otros partidos", "En blanco", "Otro", "Otro + Blanco", "Cup",
              "PP–UPN (Navarra)", "Otros", "Otros*", "Otras candidaturas",
-             "Otros+Blanco", "Regionales**", "CHA", "Més per Mallorca", "Teruel Existe"}
+             "Otros+Blanco", "Regionales**", "CHA", "Més per Mallorca", "Teruel Existe", "Otros y blanco"}
 SWING_DE = {"upn": "pp"}
 # Partidos de ámbito autonómico cuya cifra nacional de la encuesta se reparte por provincias según su
 # voto en las últimas autonómicas (fichero de resultados, siglas en ese fichero). Se usa en todas las

@@ -62,6 +62,19 @@ Desgloses territoriales, de encuestas anteriores de Sigma Dos:
 - "Otro + Blanco" va agregado (11,7%). Los escaños de "Otros" (33, con horquilla 32–34) se desglosan solo en el punto central.
 - Incluye un escenario alternativo con candidatura unitaria de Sumar/Frente Amplio y Podemos (9,5%, 15 escaños). Va en `escenario_alternativo`.
 
+### Sigma Dos, tracking diario (`sigmados-2026-11-12`, publicado 12-11)
+- Primera entrega del tracking diario para El Mundo (campo 3–11 nov, n=3.870). Habrá una entrega cada día hasta el 23-11 y cada una sustituye a la anterior en la media.
+- Solo publica el porcentaje de PP, PSOE, Vox, Frente Amplio (con sus marcas canaria y valenciana), Podemos y Adelante Andalucía. ERC, Junts, EH Bildu, PNV, BNG y CC solo tienen escaños (van en `escanos_otros`), así que en la proyección conservan su voto de 2023.
+- Frente Amplio: la infografía dice 9-15 escaños y el texto 13-15 (suma de sus tres marcas). Se guarda 13-15.
+- El escenario propio de Sigma Dos sigue usando `sigmados-2026-11-08`, que sí publica el porcentaje de todos los partidos.
+
+### Winston (`winston-2026-11-13`, publicado 13-11)
+- Campo 5–8 nov, 1.501 entrevistas online. No publica margen de error ni más metodología.
+- El gráfico incrustado (d2k.es) trae la tabla completa, que suma 100 % con "Otros y blanco". Su Frente Amplio incluye a Compromís. CC aparece con un 0,0 % y se guarda tal cual.
+
+### 40dB, tracking diario (no añadido)
+- El primer tracking diario para El País y la SER (13-11, campo 11–12 nov) no se ha podido leer: elpais.com devuelve 403, el RSS solo trae la entradilla y no se ha localizado el PDF de 40dB. Ver `meta.revision_2026_11_13`.
+
 ### Desgloses territoriales de Sigma Dos
 - Son de encuestas cuyo campo empieza el 1-10, antes de la convocatoria.
 - El mapa provincial (19-10) se hizo, según Sigma Dos, "previamente a los anuncios de coalición". El texto se parseó automáticamente y se validó contra los diputados por circunscripción del RD 806/2026.

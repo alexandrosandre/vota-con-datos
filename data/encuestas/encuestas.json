@@ -31,7 +31,8 @@
     "revision_2026_11_09_tarde": "Revisión del 9-11-2026 (tarde): ninguna estimación nueva. CIS 3584 sin publicar (catálogo de cis.es: último estudio con estimación, 3582; la URL del preelectoral da 404). sigmados.com y gad3.com publicaron el 9-11 los mismos sondeos ya recogidos (sigmados-2026-11-08, gad3-2026-11); se añaden como fuentes primarias. El País/SER: sin sondeo posterior a 40db-2026-11.",
     "revision_2026_11_10_manana": "Revisión del 10-11-2026 (mañana): ninguna estimación nueva de voto para las generales. CIS: el catálogo de cis.es sigue teniendo el 3582 como último estudio con estimación; el 3584 (preelectoral) no figura y no hay avance publicado. Sigma Dos: el último sondeo de noticias.php es el del 9-11 (ya recogido como sigmados-2026-11-08). GAD3: el último elemento de su RSS es el barómetro de ABC de noviembre (9-11, ya recogido como gad3-2026-11). ABC publicó el 10-11 la tercera entrega de ese mismo barómetro (\"Encuesta ABC | GAD3 (y III)\", escaños en Cataluña: https://www.abc.es/espana/cataluna/rufian-situaria-erc-escanos-29n-vox-quedaria-20261110023040-nt.html). Es un desglose territorial de gad3-2026-11, no una estimación nueva, así que no se ha añadido. 40dB/El País-SER: el RSS de España de El País y la etiqueta de encuestas de la SER no tienen sondeo posterior a 40db-2026-11.",
     "revision_2026_11_12": "Revisión del 12-11-2026 (14:10): ninguna estimación nacional nueva publicada entre el 10 y el 12-11. CIS: el estudio 3584 (preelectoral) aún no está publicado; la portada de cis.es anuncia su avance para hoy 12-11 a las 17:00 (ver cis_preelectoral). Hay que volver a revisar después de esa hora: debe sustituir a cis-2026-10 y probablemente traerá desglose por provincia/CCAA. Sigma Dos: noticias.php no tiene sondeo electoral posterior al del 9-11 (lo último, del 11-11, es una 'Encuesta Tesoro' de TrustSurvey sobre series). GAD3: su RSS añade el 10-11 'Barómetro ABC I Estimación de voto por provincias. Noviembre 2026', que es el desglose provincial de gad3-2026-11 (misma ficha técnica), no una estimación nueva; se ha guardado en gad3-2026-11.desglose_regional. ABC publicó el 12-11 un resumen de encuestas ya existentes (https://www.abc.es/espana/encuestas-elecciones-generales-29n-resultados-psoe-pp-20261112050000-nt.html), sin datos nuevos. 40dB/El País-SER: el RSS de España de El País y la etiqueta de encuestas de la SER no tienen sondeo posterior a 40db-2026-11.",
-    "revision_2026_11_12_noche": "Revisión del 12-11-2026 (noche, tras el CIS 3584): ninguna estimación nacional nueva de las 14 empresas de la media posterior a su última entrada. Sigma Dos: noticias.php sigue con el sondeo del 9-11 como último. GAD3: el RSS no tiene nada posterior al desglose provincial del 10-11. 40dB/El País-SER: el RSS de España de El País no trae sondeo nuevo. IMOP, Ateneo del Dato, NC Report, Celeste-Tel, Data10, Target Point, Hamalgama, More in Common, Winston y DYM: sin entregas nuevas en sus medios (búsquedas por medio y agregador Wikipedia, revisión de 2026-11-12T19:02Z, solo como pista). Empresa nueva descartada: Sondaxe/La Voz de Galicia. Su última ola (campo 2–4 nov, n=1.200; publicada el 8-11 en 'Feijoo adelanta a Sánchez y es el candidato preferido para gobernar') está tras el muro de suscriptores, y el texto visible no da la estimación de voto; las cifras que circulan (PP 29,7, PSOE 27,3, Vox 18,6, FA 7,1) solo están en agregadores. La ola anterior (campo hasta el 28-10, publicada el 1-11, texto completo y ficha técnica visibles: PP 29,2, PSOE 26,9, Vox 19,2, Frente Amplio 7,2) no se usa porque la media toma la última encuesta de cada empresa y existe una posterior. Fuentes guardadas en data/sources/encuestas/sondaxe/: lavozdegalicia_20261108_paywall.html (sha256 ef3d4f561455d739bba4ce447b0dfc46facbd972251765fd1efc72dcb245fa1f), lavozdegalicia_20261101.html (sha256 27e915d57e2a592347d8543883ec0d059752e78194a1a2283380aa98622c95c5), temas_sondaxe_20261112.html (sha256 129506459bd9a26459e4bac0bd1aa8d0efc19955eb09be572dc2cafafee24826). EM-Analytics/Electomanía (panel propio de un agregador) sigue fuera, como hasta ahora."
+    "revision_2026_11_12_noche": "Revisión del 12-11-2026 (noche, tras el CIS 3584): ninguna estimación nacional nueva de las 14 empresas de la media posterior a su última entrada. Sigma Dos: noticias.php sigue con el sondeo del 9-11 como último. GAD3: el RSS no tiene nada posterior al desglose provincial del 10-11. 40dB/El País-SER: el RSS de España de El País no trae sondeo nuevo. IMOP, Ateneo del Dato, NC Report, Celeste-Tel, Data10, Target Point, Hamalgama, More in Common, Winston y DYM: sin entregas nuevas en sus medios (búsquedas por medio y agregador Wikipedia, revisión de 2026-11-12T19:02Z, solo como pista). Empresa nueva descartada: Sondaxe/La Voz de Galicia. Su última ola (campo 2–4 nov, n=1.200; publicada el 8-11 en 'Feijoo adelanta a Sánchez y es el candidato preferido para gobernar') está tras el muro de suscriptores, y el texto visible no da la estimación de voto; las cifras que circulan (PP 29,7, PSOE 27,3, Vox 18,6, FA 7,1) solo están en agregadores. La ola anterior (campo hasta el 28-10, publicada el 1-11, texto completo y ficha técnica visibles: PP 29,2, PSOE 26,9, Vox 19,2, Frente Amplio 7,2) no se usa porque la media toma la última encuesta de cada empresa y existe una posterior. Fuentes guardadas en data/sources/encuestas/sondaxe/: lavozdegalicia_20261108_paywall.html (sha256 ef3d4f561455d739bba4ce447b0dfc46facbd972251765fd1efc72dcb245fa1f), lavozdegalicia_20261101.html (sha256 27e915d57e2a592347d8543883ec0d059752e78194a1a2283380aa98622c95c5), temas_sondaxe_20261112.html (sha256 129506459bd9a26459e4bac0bd1aa8d0efc19955eb09be572dc2cafafee24826). EM-Analytics/Electomanía (panel propio de un agregador) sigue fuera, como hasta ahora.",
+    "revision_2026_11_13": "Revisión del 13-11-2026 (mañana). Añadidas: sigmados-2026-11-12 (primera entrega del tracking diario de Sigma Dos para El Mundo, publicada el 12-11 a las 20:14; campo 3–11 nov, n=3.870) y winston-2026-11-13 (Winston/Artículo14, publicada el 13-11; campo 5–8 nov, n=1.501). Encontrada y NO añadida: el primer tracking diario de 40dB para El País y la SER (artículo 'La campaña arranca con la derecha en el horizonte de los 190 escaños', https://elpais.com/espana/elecciones-generales/2026-11-13/la-campana-arranca-con-la-derecha-en-el-horizonte-de-los-190-escanos.html, pubDate 13-11 04:30 GMT en el RSS de portada de El País, guardado en data/sources/encuestas/40db/elpais_rss_portada_20261113.xml, sha256 564bf7780befdc8eeef8217dbafcd26e401f761080e31ae805982d22312a5a8f). elpais.com devuelve 403 a nuestras peticiones, el RSS solo trae la entradilla (sin cifras ni ficha) y no se ha localizado el informe PDF de 40dB en ep00.epimg.net; las cifras que circulan (campo 11–12 nov; PP 31,5, PSOE 29,4, Vox 18,8) solo están en el agregador Demócrata, así que 40db-2026-11 sigue siendo la última de 40dB. Descartadas también: la reestimación del CIS 3584 hecha por Target Point para El Debate (13-11; reestimación de microdatos ajenos, no una encuesta propia, como las demás reestimaciones del CIS) y el promedio de Electocracia citado por El Debate (agregador). Sin entregas nuevas a 13-11 por la mañana en GAD3/ABC, IMOP/El Confidencial, Ateneo del Dato/elDiario.es, NC Report/La Razón, Celeste-Tel/Onda Cero, Data10/OKDIARIO, Target Point/El Debate, Hamalgama/Vozpópuli, More in Common, DYM/Henneo ni SocioMétrica/El Español (RSS y portadas de sección de cada medio). El tracking de Sigma Dos tendrá una entrega nueva cada día hasta el 23-11: cada una sustituye a la anterior."
   },
   "encuestas": [
     {
@@ -1759,6 +1760,162 @@
         "data/sources/encuestas/cis/es3582mar.pdf",
         "data/sources/encuestas/cis/barometro_octubre_2026.html"
       ],
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "sigmados-2026-11-12",
+      "rol": "media",
+      "rol_nota": "Entra en la media de encuestas como la última de Sigma Dos y sustituye ahí a sigmados-2026-11-08. El escenario propio de Sigma Dos (ESCENARIOS_ENCUESTA en pipeline/build_fase2.py) sigue usando sigmados-2026-11-08, porque este tracking no publica el porcentaje de ERC, Junts, EH Bildu, PNV, BNG ni CC.",
+      "encuestadora": "Sigma Dos",
+      "cliente_medio": "El Mundo",
+      "estudio": "Tracking electoral diario de Sigma Dos para EL MUNDO. Primera entrega (12 de noviembre)",
+      "fecha_publicacion": "2026-11-12",
+      "fecha_publicacion_nota": "Artículo de El Mundo 'El PP y Vox arrancan la campaña con una sólida mayoría absoluta y siguen sacando a votantes de la abstención' (datePublished y dateModified 2026-11-12T19:14:00Z, 20:14 hora peninsular). Es la primera entrega de un tracking diario que El Mundo publicará 'a diario desde hoy hasta el lunes 23'. Cada entrega nueva sustituye a la anterior. sigmados.com no lo había publicado a 13-11 por la mañana: en noticias.php lo último es una 'Encuesta Tesoro' del 11-11 y el sondeo del 9-11.",
+      "trabajo_campo": {
+        "inicio": "2026-11-03",
+        "fin": "2026-11-11"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 3870,
+      "muestra_nota": "Ficha técnica: '3.120 entrevistas (encuesta base) más 750 entrevistas diarias. Tamaño muestral estimación 12/11/26: 3.870'.",
+      "metodo": "Mixto: telefónico (CATI, selección aleatoria de hogar y cuotas de sexo y edad) y online (CAWI, Panel Sigma Dos by Trust Survey, asignación proporcional por sexo y grupo de edad); distribución proporcional por CCAA (ficha técnica publicada en El Mundo). Participación estimada: 76,7%.",
+      "margen_error": "±2,1% (95,5%, P=Q)",
+      "base_porcentajes": "% de 'intención de voto' / estimación (Sigma Dos no indica la base; se asume voto válido)",
+      "suma_pct_publicada": 86.4,
+      "suma_pct_nota": "Suma de los porcentajes publicados (PP, PSOE, Vox, Frente Amplio con confluencias, Podemos y Adelante Andalucía). El Mundo no publica el % de ERC, Junts, EH Bildu, PNV, BNG ni CC (solo escaños), ni otros ni blanco.",
+      "proyeccion_escanos": "horquillas (ver estimacion_voto y escanos_otros)",
+      "proyeccion_escanos_nota": "Horquillas del texto del artículo y de la infografía 'Tracking de intención de voto' (tracking12b646.jpg, columna 12/11/2026): PP 126-132, PSOE 103-108, Vox 63-70, Frente Amplio 13-15 (texto; la infografía dice 9-15, ver discrepancias_fuente), Podemos 0. Del texto: ERC 8-9, Junts 6-7, EH Bildu 6-8, PNV 4-5, BNG 2, CC 0-1 ('tiene un escaño en juego por Tenerife'), Adelante Andalucía 3-4. Suma PP+Vox: 'entre 189 y 202 diputados'.",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 30.8,
+          "escanos_min": 126,
+          "escanos_max": 132
+        },
+        {
+          "partido": "PSOE",
+          "pct": 25.3,
+          "escanos_min": 103,
+          "escanos_max": 108
+        },
+        {
+          "partido": "Vox",
+          "pct": 19.6,
+          "escanos_min": 63,
+          "escanos_max": 70
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 7.3,
+          "escanos_min": 13,
+          "escanos_max": 15,
+          "nota": "Bloque completo: el texto dice 'se quedaría en un 7,3% y entre 13 y 15 escaños, contando con la marca general (5,8% y 9-10 diputados), la marca canaria (0,4% y 1 diputado) y la marca valenciana (1,1% y 3-4 diputados)'. No sumar los componentes además de esta fila. La infografía da 7,3 (9-15); ver discrepancias_fuente.",
+          "componentes": [
+            {
+              "partido": "Frente Amplio",
+              "pct": 5.8,
+              "escanos_min": 9,
+              "escanos_max": 10,
+              "nombre_publicado": "la marca general",
+              "fuente": "texto de El Mundo"
+            },
+            {
+              "partido": "UPC",
+              "pct": 0.4,
+              "escanos_min": 1,
+              "escanos_max": 1,
+              "nombre_publicado": "la marca canaria",
+              "fuente": "texto de El Mundo"
+            },
+            {
+              "partido": "Front Valencià (FV)",
+              "pct": 1.1,
+              "escanos_min": 3,
+              "escanos_max": 4,
+              "nombre_publicado": "la marca valenciana",
+              "fuente": "texto de El Mundo"
+            }
+          ]
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.4,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "nota": "Texto: 'quedaría relegado a partido extraparlamentario con un 1,4% de intención de voto y ningún representante'; infografía: 1,4 (0)."
+        },
+        {
+          "partido": "Adelante Andalucía",
+          "pct": 2.0,
+          "escanos_min": 3,
+          "escanos_max": 4,
+          "nota": "Texto: 'debutaría con un 2% de intención de voto y tres o cuatro representantes en el Congreso'."
+        }
+      ],
+      "escanos_otros": {
+        "nota": "Partidos con escaños publicados en el texto pero sin porcentaje; no entran en estimacion_voto porque la proyección necesita el %.",
+        "desglose": [
+          {
+            "partido": "ERC",
+            "escanos_min": 8,
+            "escanos_max": 9
+          },
+          {
+            "partido": "Junts",
+            "escanos_min": 6,
+            "escanos_max": 7
+          },
+          {
+            "partido": "EH Bildu",
+            "escanos_min": 6,
+            "escanos_max": 8
+          },
+          {
+            "partido": "PNV",
+            "escanos_min": 4,
+            "escanos_max": 5
+          },
+          {
+            "partido": "BNG",
+            "escanos_min": 2,
+            "escanos_max": 2
+          },
+          {
+            "partido": "Coalición Canaria",
+            "escanos_min": 0,
+            "escanos_max": 1,
+            "nota": "'tiene un escaño en juego por Tenerife'."
+          }
+        ]
+      },
+      "discrepancias_fuente": "Frente Amplio: la infografía rotula '7,3 (9-15)' y el texto 'entre 13 y 15 escaños', que es la suma de sus tres componentes (9-10 + 1 + 3-4). Se registra la horquilla del texto (13-15); el 9 de la infografía coincide con el mínimo de la marca general sola. El porcentaje (7,3) coincide en texto, infografía y serie Datawrapper QBCLv v2 (fila 12/11/2026: PP 30,8, PSOE 25,3, Vox 19,6, Frente Amplio 7,3, Podemos 1,4).",
+      "contexto": "Según El Mundo, el campo 'recoge ya el efecto, entre otras cosas, de la entrevista de Santiago Abascal en La Revuelta o la ausencia de Pedro Sánchez del funeral por las víctimas del accidente ferroviario de Urda'. El campo (3 a 11-nov) se solapa con el del sondeo del 9-11 (30-oct a 6-nov).",
+      "desglose_regional": null,
+      "desglose_regional_nota": "Esta entrega no publica desglose territorial (solo menciones sueltas: Tenerife, Andalucía).",
+      "urls": {
+        "primarias": [
+          "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/12/6af60b3ee4d4d8845c8b4577.html",
+          "https://e01-elmundo.uecdn.es/elmundo/2026/graficos/nov/tracking12b646.jpg",
+          "https://datawrapper.dwcdn.net/QBCLv/2/"
+        ],
+        "secundarias": [],
+        "descubrimiento_nota": "Localizado a través del agregador Wikipedia (cita a El Mundo); ninguna cifra sale de él."
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/sigmados/elmundo_20261112.html",
+        "data/sources/encuestas/sigmados/img_elmundo_tracking12b646_20261112.jpg",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v2.html",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v2_dataset.csv",
+        "data/sources/encuestas/sigmados/noticias_20261113.html"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/sigmados/elmundo_20261112.html": "8d26ab9b5c680487be798e8e6a1a072bf3f3a37d4f833a5692c37cd1fe884783",
+        "data/sources/encuestas/sigmados/img_elmundo_tracking12b646_20261112.jpg": "6181f71ee963e45181573043a7e56b1a4ee9d48602ce3befb962fbb82c5a04cc",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v2.html": "f35b3398dde20d5e6468b3894ad938d728c3ac6f6dac4b5a0f26b471f7916591",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v2_dataset.csv": "0076df61e672f30253592d69f608a0cf9e2f777e209613f65dfc375ac3784e5e",
+        "data/sources/encuestas/sigmados/noticias_20261113.html": "0e73ff88151c45f99cc0e693f3c3ad83e7d0f42f997db5e8492095e84f711aee"
+      },
+      "archivos_fuente_nota": "noticias_20261113.html es el listado de sigmados.com descargado el 13-11 (sin este sondeo). El artículo incrusta además el Datawrapper EzghC (transferencias de voto), no guardado porque no tiene estimación.",
       "verificado_en_fuente_primaria": true
     },
     {
@@ -7380,6 +7537,142 @@
         "data/sources/encuestas/moreincommon/pulso-electoral-octubre-2026.pdf": "357662abb23e090b1dcc838bc91b4fd1f95f72347d2ef10ef297a945ac707e32",
         "data/sources/encuestas/moreincommon/substack_20261103.html": "e3115caea8352ec6d752aabcaf521a45d471d7061d8a51152a2daba8d174e17c",
         "data/sources/encuestas/moreincommon/pulso-electoral.html": "e42ba768af5997165d021e3ee0ddbd254268bbbd4f68e56303d683af8924ba5b"
+      },
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "winston-2026-11-13",
+      "rol": "media",
+      "encuestadora": "Winston",
+      "cliente_medio": "Artículo14",
+      "estudio": "Sondeo 2 de campaña de Artículo 14, elaborado por Winston",
+      "fecha_publicacion": "2026-11-13",
+      "fecha_publicacion_nota": "Artículo 'El PP arranca la campaña con 25 escaños de ventaja sobre el PSOE y una mayoría holgada con Vox' (datePublished 2026-11-13T05:30:50+01:00; RSS: 'Encuesta Artículo14 | ...'). Sustituye a winston-2026-10-26 ('su anterior proyección, que publicamos el 26 de octubre'). Las cifras salen del gráfico incrustado 'Estimación de voto y proyección de escaños · Artículo 14' (d2k.es/articulo14/graficos/sondeo2-14-hemiciclo/), que coincide con el texto.",
+      "trabajo_campo": {
+        "inicio": "2026-11-05",
+        "fin": "2026-11-08"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 1501,
+      "metodo": "Encuesta online (pie del gráfico: '1.501 entrevistas online realizadas entre el 5 y el 8 de noviembre de 2026'). No se publican más detalles de metodología.",
+      "margen_error": "No publicado",
+      "base_porcentajes": "% de 'estimación de voto'; la tabla suma 100% con una fila 'Otros y blanco' (2,9), así que la base incluye el voto en blanco (voto válido)",
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "Suma de las filas de la 'Tabla completa' del gráfico (fila 'Total: 100 %'). La fila 'Otras' del hemiciclo (8,4%, 26 escaños) es la suma de ERC, Junts, EH Bildu, PNV, BNG y Adelante Andalucía; no se guarda para no contarla dos veces.",
+      "proyeccion_escanos": "puntual (sin horquillas)",
+      "proyeccion_escanos_nota": "Columna 'Proyección de escaños' de la tabla completa: PP 134, PSOE 109, Vox 64, Frente Amplio 17, ERC 8, EH Bildu 5, Adelante AND 5, PNV 3, Junts 3, BNG 2, Podemos 0, SALF 0, CC 0, UPN 0 (suma 350). Coincide con el texto.",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.1,
+          "escanos_min": 134,
+          "escanos_max": 134,
+          "nota": "UPN tiene fila aparte (sin %, 0 escaños)."
+        },
+        {
+          "partido": "PSOE",
+          "pct": 26.4,
+          "escanos_min": 109,
+          "escanos_max": 109
+        },
+        {
+          "partido": "Vox",
+          "pct": 18.7,
+          "escanos_min": 64,
+          "escanos_max": 64
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 8.4,
+          "escanos_min": 17,
+          "escanos_max": 17,
+          "nota": "Nota del gráfico: 'hoy Frente Amplio incluye a Compromís'. Podemos va aparte."
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.6,
+          "escanos_min": 0,
+          "escanos_max": 0
+        },
+        {
+          "partido": "SALF",
+          "pct": 2.5,
+          "escanos_min": 0,
+          "escanos_max": 0
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.3,
+          "escanos_min": 8,
+          "escanos_max": 8
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.1,
+          "escanos_min": 5,
+          "escanos_max": 5
+        },
+        {
+          "partido": "Adelante AND",
+          "pct": 1.9,
+          "escanos_min": 5,
+          "escanos_max": 5,
+          "nota": "Adelante Andalucía (el texto: 'Adelante Andalucía 5')."
+        },
+        {
+          "partido": "PNV",
+          "pct": 1.0,
+          "escanos_min": 3,
+          "escanos_max": 3
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.1,
+          "escanos_min": 3,
+          "escanos_max": 3
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.0,
+          "escanos_min": 2,
+          "escanos_max": 2
+        },
+        {
+          "partido": "CC",
+          "pct": 0.0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "nota": "Publicado tal cual: '0,0 %' y 0 escaños (1 en 2023)."
+        },
+        {
+          "partido": "UPN",
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "nota": "Sin porcentaje publicado ('—'); 0 escaños (1 en 2023)."
+        },
+        {
+          "partido": "Otros y blanco",
+          "pct": 2.9,
+          "tipo": "otros"
+        }
+      ],
+      "desglose_regional": null,
+      "desglose_regional_nota": "No publica desglose territorial.",
+      "urls": {
+        "primarias": [
+          "https://www.articulo14.es/politica/el-pp-arranca-la-campana-con-25-escanos-de-ventaja-sobre-el-psoe-y-una-mayoria-holgada-con-vox-20261113.html",
+          "https://d2k.es/articulo14/graficos/sondeo2-14-hemiciclo/"
+        ],
+        "secundarias": [],
+        "descubrimiento_nota": "Localizado en el RSS de Artículo14 (articulo14.es/feed/)."
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/winston/articulo14_20261113.html",
+        "data/sources/encuestas/winston/d2k_sondeo2-14-hemiciclo_20261113.html"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/winston/articulo14_20261113.html": "a2be796f87746fd735179b89da6f3c83a61434f7ca93e71a170ca0ac57e5374c",
+        "data/sources/encuestas/winston/d2k_sondeo2-14-hemiciclo_20261113.html": "f8d33f86a12fbbaed53d318edb1313cf3638001df3c39d01151d592a70984ff3"
       },
       "verificado_en_fuente_primaria": true
     },
