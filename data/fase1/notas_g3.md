@@ -27,3 +27,20 @@ El programa del PNV para el 29-N («Defendemos Euskadi», 43 pp.) se publicó y 
 - **Dudosa: q24 (null).** Pide reformar la «ley mordaza» (p. 27) y modificar la Ley de Seguridad Ciudadana para añadir perímetros en torno a los centros de IVE (p. 26). Es reformar y mantener la ley, no derogarla por completo, pero no rechaza la derogación de forma expresa. ±1 serían defendibles; ante la duda, null.
 - **Campaña:** la nota de la presentación del programa (eaj-pnv.eus, 9-nov; Vaquero, Sagastizabal, Urtaran) y las del 30-oct al 8-nov solo contienen mensajes genéricos. La búsqueda web no devolvió declaraciones en primera persona de esta campaña sobre las 30 medidas.
 - **Verificación:** el verificador releyó el programa y decidió de nuevo las celdas límite. Coincide en null en todas, sin cambios de valor; `aprobado` sigue en true.
+
+## Revisión de afirmaciones (13-11-2026)
+
+Detalle en `revision_afirmaciones_2026-11-13/` (decisión final en `integracion.md`). Se retiran q02, q07, q10, q14 y q28,
+cuyas celdas se conservan como historial, y se añaden q31 a q35, verificadas de forma independiente.
+
+- **ERC:** q31 +1 (grandes tenedores, caso límite), q32 +2 y q34 +2.
+- **Junts:**
+  - q31: −1 (Cruset, sobre el decreto que entraba en vigor el 15-nov).
+  - q32: +1 (nota oficial del 21-oct, encontrada por la verificación).
+  - q12: +1 (Nogueras, 19-oct, reactiva).
+- **EH Bildu:** q31 +2 y q32 +1.
+- **PNV:** q31 −1 (Vaquero, nº 1 por Gipuzkoa), q32 +2 y q35 −2. Son sus primeras posiciones en el cuestionario.
+- **BNG:** q31 +2, q32 +2, q34 +2 y q35 −2.
+- **CC:**
+  - q33: −2.
+  - q34: +1 (caso límite, misma vara que UPC).

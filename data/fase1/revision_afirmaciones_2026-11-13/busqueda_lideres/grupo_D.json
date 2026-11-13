@@ -1,0 +1,393 @@
+{
+ "grupo": "D",
+ "fecha": "2026-11-13",
+ "busqueda": {
+  "eh_bildu": "Copias locales (17 ficheros en data/sources/compromisos/eh_bildu) y seleccion.json (compromisos y descartados), con grep por palabras clave de las 11 afirmaciones. ehbildu.eus: portada y listados de Congreso-Senado, Araba, Bizkaia, Gipuzkoa y Nafarroa (13-nov); nota nueva de apertura de campaña en Gasteiz (12-nov, Otegi, Matute, Otero, Bideguren) y nota de Ceuta (3-sep, fuera de plazo). Líderes: Matute, Otegi, Etxebarrieta, Otero, Aizpurua, Pozueta, Aznal. Búsquedas web (SMI propio, prisión permanente, Sáhara, euskera en la UE, competencias migratorias): el buscador apenas indexa prensa de oct-nov 2026 y devolvió sobre todo material anterior a la convocatoria. Sin bloqueos.",
+  "pnv": "Copias locales (14 ficheros en data/sources/compromisos/pnv) y seleccion.json. eaj-pnv.eus: notas 58581-58723 (13-oct a 12-nov, 48 notas descargadas y revisadas con grep) y PDFs de la sección Documentos 21740-21770 (discursos de Esteban, Vaquero, Sagastizabal, Urtaran y Pradales en Gasteiz, 12-nov; entrevistas a Urtaran y Díez Antxustegi). Líderes: Esteban, Vaquero, Sagastizabal, Urtaran; no se localizaron declaraciones de Erkoreka, Agirretxea ni Legarda en el periodo. Búsquedas web (CGPJ, nucleares, Sáhara): solo material de 2020-2024. Se consultó el programa (data/sources/programas/pnv) solo para no duplicar. Sin bloqueos.",
+  "cc": "Copias locales (6 ficheros en data/sources/compromisos/cc, incluido el feed de coalicioncanaria.org con 20 notas del 5-oct al 12-nov) y feed actualizado el 13-nov (nota nueva del 12-nov, apertura de campaña). Entrevistas a Valido (Demócrata, 5-nov) y Clavijo (Diario de Avisos/Atlántico TV, 25-oct); RTVC (apertura de campaña y decretos de vivienda, 12-nov); Diario de Avisos (decretos de vivienda, oct-2026). Líderes: Valido, Clavijo, Sosa (sin declaraciones literales sobre estas afirmaciones). Búsquedas web (prórroga, Sáhara, jubilación con 40 años): pocas noticias de 2026. Sin bloqueos.",
+  "upc": "Manifiesto electoral (data/sources/programas/upc/manifiesto-upc.txt y PDF, 16 ejes, páginas comprobadas con pdftotext) y 8 copias locales (Canarias7 4-nov, Canarias Ahora 7-nov, EFE/La Voz de Lanzarote 12-nov, RTVC 26-oct, notas de unidadpueblocanario.org, tribuna de Diario de Avisos). unidadpueblocanario.org: blog y RSS (13-nov), sin noticias nuevas desde el 9-nov. RTVC: apertura de campaña (12-nov), con Campos sin propuestas concretas sobre estas afirmaciones. Líderes: Luis Campos, Marisol Collado (Iratxe Serrano y Paco Santamaría no son líderes según el protocolo). Búsquedas web sin resultados de campaña. Sin bloqueos."
+ },
+ "posiciones": {
+  "eh_bildu": {
+   "q31": {
+    "valor": null,
+    "nota": "Sin posición. Revisadas las 17 copias locales de data/sources/compromisos/eh_bildu (notas de ehbildu.eus del 22-oct al 12-nov, Público 7-nov, Naiz 12-nov, Última Hora/EP 9-nov) y las notas nuevas de ehbildu.eus (apertura de campaña en Gasteiz, 12-nov): ninguna mención a centrales nucleares ni al calendario de cierre. Búsquedas web sin declaraciones de campaña."
+   },
+   "q32": {
+    "valor": 2,
+    "fuente": "campaña",
+    "cita": "Ambos han ratificado las dos principales reivindicaciones de la huelga: el salario mínimo propio, también reivindicado en la huelga general del 17 de marzo, y las transformaciones estructurales para garantizar el derecho a la vivienda.",
+    "pagina": null,
+    "url": "https://ehbildu.eus/es/noticias/eh-bildu-y-lab-hacen-un-llamamiento-a-garantizar-una-vivienda-digna-y-unos-salarios-dignos-y-a-hacer-frente-a-la-extrema-derecha",
+    "medio": "EH Bildu (nota oficial, ehbildu.eus)",
+    "fecha": "2026-11-12",
+    "quien": "EH Bildu (nota oficial de la reunión pública con LAB; por EH Bildu participaron Arkaitz Rodríguez, secretario de Acción Política, y Oihana Etxebarrieta, cabeza de lista al Congreso por Gipuzkoa)",
+    "formato": "documento oficial",
+    "marco": null,
+    "nota": "Nota oficial del partido (quien = el partido): EH Bildu «ratifica» como una de sus «dos principales reivindicaciones» el salario mínimo propio (para Euskal Herria), reclamado en la huelga general del 17 de marzo como SMI propio superior al estatal. Expresa y prioritaria: +2. Matices que podrían llevarlo a +1: la nota no dice «por encima del estatal» (se deduce de la reivindicación de la huelga) y se refiere a Euskal Herria, no a «cada comunidad». Refuerzo de primera persona: Laura Aznal, portavoz de EH Bildu en el Parlamento de Navarra, 22-oct (ehb_huelga_11n.txt): «reivindicar de nuevo un SMI propio para Navarra que proteja el poder adquisitivo de las personas trabajadoras de Navarra». La copia local no lleva cabecera URL; la URL es la de seleccion.json.",
+    "fuente_local": "data/sources/compromisos/eh_bildu/ehb_lab_20261112.txt",
+    "sha256": "a180fc4d6f966b6f351ff6bb2d135085935f2f5ca7cc3777d3ee0099a5144a75"
+   },
+   "q33": {
+    "valor": 2,
+    "fuente": "campaña",
+    "cita": "La primera iniciativa que llevaremos al Congreso será no solo recuperar la prórroga automática de los contratos que las derechas tumbarán esta semana en el Congreso, sino que además plantearemos acabar con la compra especulativa de vivienda",
+    "pagina": null,
+    "url": "https://ehbildu.eus/es/noticias/eh-bildu-anuncia-que-planteara-recuperar-la-prorroga-automatica-de-los-contratos-de-alquiler-y-acabar-con-la-compra-especulativa-de-vivienda",
+    "medio": "EH Bildu (nota oficial, ehbildu.eus); la misma frase, en Última Hora (Europa Press), 9-nov",
+    "fecha": "2026-11-09",
+    "quien": "Oskar Matute, cabeza de lista de EH Bildu al Congreso por Bizkaia y próximo portavoz del grupo",
+    "formato": "intervención en Nueva Economía Fórum (Bilbao), recogida entre comillas en la nota oficial",
+    "marco": null,
+    "nota": "Se refiere al decreto de la prórroga automática (RDL 28/2026), «que las derechas tumbarán esta semana» (la Diputación Permanente lo rechazó el 12-nov), no al antidesahucios. Recuperarlo es «la primera iniciativa» que EH Bildu llevará al Congreso: propuesta propia, expresa y prioritaria, +2. El 12-nov, en la apertura de campaña (nota oficial), Matute lamenta que «el bloque de las derechas ha tumbado el decreto de prórroga de los alquileres». Ojo: Naiz describe el decreto como prórroga «permanente» mientras se pague; la afirmación habla de periodos de cinco años; ambas son renovación automática a voluntad del inquilino.",
+    "fuente_local": "data/sources/compromisos/eh_bildu/ehb_forum_20261109.txt",
+    "sha256": "120c63ba5da97d416c30a2d43b8241ffeaf0854754f3fd766d036258668aee46"
+   },
+   "q34": {
+    "valor": null,
+    "nota": "Sin posición de campaña. La única nota de EH Bildu sobre el reparto de menores (crisis de Ceuta, «reivindica otra política migratoria») es del 3-sep-2026, anterior a la convocatoria y sin referencia al 29N. Nada en las copias locales ni en las notas nuevas."
+   },
+   "q35": {
+    "valor": null,
+    "nota": "Sin posición de campaña. EH Bildu ha defendido el referéndum en el Sáhara (PNL con ERC; exigencia a Sánchez en nov-2025), pero todas las declaraciones localizadas son anteriores al 6-oct-2026 y no se refieren a estas elecciones. Nada en las notas de campaña."
+   },
+   "q36": {
+    "valor": null,
+    "nota": "Sin posición. Ninguna mención al CGPJ en las copias locales (incl. entrevista larga a Matute en Público) ni en búsquedas web."
+   },
+   "q37": {
+    "valor": null,
+    "nota": "Sin posición. Ninguna declaración de campaña sobre la prisión permanente revisable; la búsqueda web solo devolvió declaraciones de Aizpurua sobre el Código Penal de julio de 2026 (fuera de plazo y sobre otra cuestión)."
+   },
+   "x1": {
+    "valor": null,
+    "nota": "Sin posición de campaña. Bideguren (cabeza de lista al Senado por Bizkaia, 9-nov) critica el «desprecio absoluto» hacia el euskera, pero no habla de su oficialidad en la UE. Medida relacionada pero distinta: null."
+   },
+   "x2": {
+    "valor": null,
+    "nota": "Sin posición de campaña. Las declaraciones de Otegi sobre ser «soberanos» para regular la inmigración son de 2024. Nada en las notas de campaña."
+   },
+   "x3": {
+    "valor": null,
+    "nota": "Matute (9-nov) propone «acabar con la compra especulativa de vivienda, prohibiendo la compra a los fondos, empresas y grandes tenedores, y también la adquisición de edificios enteros que no sean destinados a un alquiler regulado» (Última Hora/EP). Es una limitación por tipo de comprador (empresas, grandes tenedores), no por residencia: medida relacionada pero distinta, null."
+   },
+   "x4": {
+    "valor": null,
+    "nota": "Sin posición de campaña. Ninguna mención a la jubilación con 40 años cotizados en las fuentes revisadas."
+   }
+  },
+  "pnv": {
+   "q31": {
+    "valor": null,
+    "nota": "Sin posición. Revisadas las notas de eaj-pnv.eus 58581-58723 (13-oct a 12-nov), los discursos de apertura de campaña (Esteban, Vaquero, Sagastizabal, Urtaran, Pradales; Gasteiz 12-nov) y las entrevistas a Urtaran (DNA, Gasteiz Hoy) y Esteban (RNE vía Moncloa.com): ninguna mención a las nucleares."
+   },
+   "q32": {
+    "valor": null,
+    "nota": "Fuera de lo pedido (está en el programa, p. 9: «salario mínimo propio, adaptado al coste de vida y siempre por encima del mínimo estatal»). Declaraciones vistas: Sagastizabal (Gasteiz, 12-nov) pide «que el mínimo responda a nuestro coste de vida», sin decir que sea propio ni autonómico; Urtaran (Gasteiz Hoy, 4-nov) solo en estilo indirecto. No se codifican: prevalece el programa."
+   },
+   "q33": {
+    "valor": -1,
+    "fuente": "campaña",
+    "cita": "“no es una buena medida para solucionar la crisis de la vivienda”, porque “no parte de una realidad que lo soporte” y “genera mayor inseguridad y, de aprobarse, provocaría un seguro detraimiento de la oferta de alquiler”",
+    "pagina": null,
+    "url": "https://www.eaj-pnv.eus/es/noticias/58720/eaj-pnv-vota-a-favor-del-decreto-que-protege-a-inq/",
+    "medio": "EAJ-PNV (nota oficial, eaj-pnv.eus)",
+    "fecha": "2026-11-12",
+    "quien": "Maribel Vaquero, cabeza de lista de EAJ-PNV al Congreso por Gipuzkoa y portavoz del Grupo Vasco en el Congreso",
+    "formato": "debate (Diputación Permanente del Congreso), recogido entre comillas en la nota oficial",
+    "marco": null,
+    "nota": "«Respecto al segundo decreto»: es el de la prórroga automática de los alquileres (el título de la nota dice que el PNV «rechaza el de la prórroga automática»), no el antidesahucios, que el PNV apoyó. Lo que el PNV dijo de la prórroga quinquenal: que «no es una buena medida», que genera inseguridad y reduciría la oferta, y que el decreto «se parió por la puerta de atrás [...] para buscar la confrontación». Rechazo expreso pero reactivo (critica la medida del Gobierno sin proponer la contraria; su alternativa es construir más): −1 por la regla (b). Esteban (RNE, 22-oct) dio el mismo argumento, pero lo único entrecomillado es la justificación («Cuanto menos oferta haya, más van a subir los precios»).",
+    "fuente_local": "data/sources/compromisos/pnv/eajpnv_vivienda_20261112.txt",
+    "sha256": "06a770eb51f428d80a0fe9acf7411007c8730be9845133f2319b0ffb930c9e65"
+   },
+   "q34": {
+    "valor": null,
+    "nota": "Sin posición. Ninguna declaración de líderes ni nota de eaj-pnv.eus sobre el reparto obligatorio de menores en el periodo revisado (la de Urtaran sobre el centro de Arana trata del modelo de acogida en Euskadi, no del reparto entre comunidades)."
+   },
+   "q35": {
+    "valor": null,
+    "nota": "Sin posición de campaña. Nada sobre el Sáhara en las notas y discursos revisados; las críticas del PNV al giro de Sánchez son de 2022."
+   },
+   "q36": {
+    "valor": null,
+    "nota": "Sin posición de campaña. La única declaración localizada de Esteban sobre el sistema de elección del CGPJ («bueno», «en la práctica, está podrido») es de octubre de 2020 (Moncloa.com): otra legislatura, no vale."
+   },
+   "q37": {
+    "valor": null,
+    "nota": "Fuera de lo pedido (programa codificado aparte). Sin declaraciones vistas."
+   },
+   "x1": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "En este sentido, también ha mencionado la Macrorregión Atlántica o la oficialidad del euskera en Europa como algunos de los retos de EAJ-PNV.",
+    "pagina": null,
+    "url": "https://www.eaj-pnv.eus/es/noticias/58603/maribel-vaquero-eaj-pnv-siempre-ha-sido-radicalmen/",
+    "medio": "EAJ-PNV (nota oficial, eaj-pnv.eus)",
+    "fecha": "2026-10-15",
+    "quien": "EAJ-PNV (nota oficial sobre la intervención de Maribel Vaquero, cabeza de lista por Gipuzkoa, en la cumbre de Renew Europe en Bruselas)",
+    "formato": "documento oficial",
+    "marco": null,
+    "nota": "Complementa el programa (p. 41: «Promover la oficialidad del euskera, el catalán y el gallego en la Unión Europea»), que prevalece. La nota oficial presenta la oficialidad del euskera en Europa como uno de los «retos de EAJ-PNV», sin mencionar catalán y gallego y en estilo de la nota (no entrecomillado de Vaquero): +1 como documento oficial.",
+    "fuente_local": "data/sources/fase1/revision_2026-11-13/pnv/20261015_eajpnv_vaquero_renew.txt",
+    "sha256": "57f74c98b1d5baca43face04c2b51ea1737dabd645b8b4c3bef70843f86e4b93"
+   },
+   "x2": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "Defiende asimismo una política migratoria gestionada desde Euskadi, con capacidad de planificación, acogida e integración, basada en derechos y responsabilidades.",
+    "pagina": null,
+    "url": "https://www.eaj-pnv.eus/es/noticias/58703/eaj-pnv-presenta-su-programa-electoral-tenemos-un-/",
+    "medio": "EAJ-PNV (nota oficial, eaj-pnv.eus)",
+    "fecha": "2026-11-09",
+    "quien": "EAJ-PNV (nota oficial de presentación del programa, con Vaquero, Sagastizabal y Urtaran)",
+    "formato": "documento oficial",
+    "marco": null,
+    "nota": "Resume el programa (p. 24: «Promover mayores competencias para Euskadi en materia de migración y extranjería»), que prevalece. «Gestionada desde Euskadi» implica asumir competencias, pero no nombra los permisos de residencia y trabajo (Euskadi ya gestiona los de trabajo desde 2025): +1. Vaquero en El Correo (22-feb: «Si se abre la puerta a que haya más competencias, nos pelearemos por ello») es anterior a la convocatoria y no vale.",
+    "fuente_local": "data/sources/fase1/revision_2026-11-13/pnv/20261109_eajpnv_programa_nota.txt",
+    "sha256": "460c57e536bd35f2c482d2eacdcdea62231783c5607c8b46bc1aa4604b60d1e5"
+   },
+   "x3": {
+    "valor": null,
+    "nota": "Sin posición. El decreto antidesahucios que el PNV apoyó «limita la compra» a grandes tenedores (Vaquero, 12-nov: «se limita la compra y se actúa contra los fondos buitre»), no a no residentes: medida distinta. Nada sobre no residentes en las fuentes revisadas."
+   },
+   "x4": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "“Necesitamos asegurar que las pensiones mantengan su poder adquisitivo, mejorar las más bajas, reducir la brecha de género y corregir las penalizaciones injustas de quienes han cotizado durante más de cuarenta años”",
+    "pagina": null,
+    "url": "https://www.eaj-pnv.eus/es/noticias/58723/eaj-pnv-se-presenta-ante-la-ciudadania-de-euskadi-/",
+    "medio": "EAJ-PNV (nota oficial, eaj-pnv.eus); también en el PDF del discurso (21769)",
+    "fecha": "2026-11-12",
+    "quien": "Idoia Sagastizabal, cabeza de lista de EAJ-PNV al Congreso por Bizkaia",
+    "formato": "mitin (apertura de campaña, Gasteiz)",
+    "marco": null,
+    "nota": "Fuera de lo pedido (está en el programa); se anota como declaración. «Corregir las penalizaciones injustas» a quien ha cotizado más de 40 años va en la dirección de la afirmación, pero no dice suprimirlas del todo ni «sea cual sea su edad»: +1. La nota del programa (9-nov) dice «eliminar las penalizaciones injustas a quienes han cotizado 40 o más años»; si el programa lo dice así, prevalece.",
+    "fuente_local": "data/sources/compromisos/pnv/eajpnv_gasteiz_20261112.txt",
+    "sha256": "6d5795fd98417b039ff45e7a132222bc1e4d4fb760338541b1b795d09b26c2da"
+   }
+  },
+  "cc": {
+   "q31": {
+    "valor": null,
+    "nota": "Sin posición. Revisadas las 21 notas de coalicioncanaria.org (5-oct a 13-nov), la entrevista a Valido (Demócrata, 5-nov), la de Clavijo (Atlántico TV/Diario de Avisos, 25-oct) y RTVC (apertura de campaña, 12-nov): nada sobre nucleares (Canarias no tiene centrales)."
+   },
+   "q32": {
+    "valor": null,
+    "nota": "Sin posición. Valido (Demócrata, 5-nov) pide que «deberían plantearse excepciones en el ámbito laboral» para Canarias como región ultraperiférica, sin mencionar un salario mínimo propio. Medida distinta: null."
+   },
+   "q33": {
+    "valor": null,
+    "nota": "Sin cita válida. Diario de Avisos (oct-2026) dice que Valido «rechazará el segundo texto, centrado en la renovación automática de los contratos de alquiler», pero solo en estilo indirecto, sin comillas (copia en data/sources/fase1/revision_2026-11-13/cc/202610_diariodeavisos_decretos_vivienda.txt). Clavijo (25-oct) critica «el intervencionismo de Madrid con el mercado de alquiler, que repercute en la oferta», sin nombrar la prórroga automática. Probablemente en contra, pero sin cita literal que nombre la medida: null."
+   },
+   "q34": {
+    "valor": 2,
+    "fuente": "campaña",
+    "cita": "Lo vivimos cuando sacamos adelante la modificación del artículo 35 para que los menores migrantes pudiesen ser distribuidos y atendidos con dignidad y para que no sea Canarias la que soportase todo el peso presupuestario y social de esos niños",
+    "pagina": null,
+    "url": "https://diariodeavisos.elespanol.com/2026/10/fernando-clavijo-vox-migrantes-canarias/",
+    "medio": "Diario de Avisos (entrevista en Atlántico Televisión)",
+    "fecha": "2026-10-25",
+    "quien": "Fernando Clavijo, secretario general de Coalición Canaria y presidente de Canarias",
+    "formato": "entrevista",
+    "marco": null,
+    "nota": "Ya está en el programa; se anota como declaración que lo refuerza. La «modificación del artículo 35» de la Ley de Extranjería es justo el reparto obligatorio de menores no acompañados cuando una comunidad supera su capacidad (contingencia migratoria), que CC impulsó y reivindica como su mayor logro: +2. Valido (Demócrata, 5-nov) añade: «hay que cumplir lo aprobado en el Congreso y lo que incluso ha dicho el Supremo».",
+    "fuente_local": "data/sources/compromisos/cc/2026-10_dda_entrevista_clavijo.txt",
+    "sha256": "dee7664af88ba22a907ff7a15fdb08c04e979bc88b3d91f2a06c02435cc69f64"
+   },
+   "q35": {
+    "valor": null,
+    "nota": "Ya está en el programa. Declaración vista: Clavijo (25-oct) critica que España «dé bandazos, como lo del pueblo saharaui, de manera unilateral» y llama a Marruecos «uno de los socios más estables y fiables»; critica la forma del giro, no pide revertirlo ni un referéndum. No es una posición."
+   },
+   "q36": {
+    "valor": null,
+    "nota": "Sin posición. Clavijo (25-oct) reprocha a Sánchez «atacar a la judicatura», sin hablar del sistema de elección del CGPJ."
+   },
+   "q37": {
+    "valor": null,
+    "nota": "Sin posición en las fuentes revisadas."
+   },
+   "x1": {
+    "valor": null,
+    "nota": "Sin posición en las fuentes revisadas."
+   },
+   "x2": {
+    "valor": null,
+    "nota": "Ya está en el programa. Declaración vista que no es posición: Valido (nota oficial, 3-nov) exige al Gobierno central que ejerza «de forma definitiva» sus competencias sobre migración en Canarias (llegadas y acogida en frontera), que no trata de traspasar permisos de residencia y trabajo."
+   },
+   "x3": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "ha exigido una reforma legislativa para limitar la compra de vivienda en Canarias por extranjeros con el objetivo de facilitar el acceso a un hogar a quienes viven en las islas y proteger el derecho a permanecer en ellas.",
+    "pagina": null,
+    "url": "https://coalicioncanaria.org/cristina-valido-exige-limitar-la-compra-de-vivienda-por-extranjeros-para-garantizar-el-acceso-a-un-hogar-a-quienes-viven-en-canarias/",
+    "medio": "Coalición Canaria (nota oficial, coalicioncanaria.org)",
+    "fecha": "2026-11-04",
+    "quien": "Coalición Canaria (nota oficial sobre la rueda de prensa de Cristina Valido, cabeza de lista por Santa Cruz de Tenerife)",
+    "formato": "documento oficial",
+    "marco": null,
+    "nota": "Ya está en el programa (prevalece); se anota como refuerzo. La nota oficial (quien = el partido) recoge la exigencia de limitar la compra de vivienda por extranjeros; lo entrecomillado de Valido es solo la justificación. +1 y no +2: se limita a Canarias, habla de «extranjeros» (la nota del 9-nov precisa «extranjeros no residentes») y no menciona la excepción de quien vaya a vivir en ella.",
+    "fuente_local": "data/sources/compromisos/cc/2026-11-12_cc_feed_notas.txt",
+    "sha256": "d150598a38254abe47987b340630862bc419844ac01f9eaf659e35771c0df6ee"
+   },
+   "x4": {
+    "valor": null,
+    "nota": "Sin posición en las fuentes revisadas (las notas de Valido sobre pensiones tratan de las no contributivas)."
+   }
+  },
+  "upc": {
+   "q31": {
+    "valor": null,
+    "nota": "Sin posición. El Manifiesto (eje 7) apuesta por «las energías renovables, la generación distribuida, la soberanía energética», sin mencionar las nucleares. Nada en declaraciones de Luis Campos."
+   },
+   "q32": {
+    "valor": null,
+    "nota": "Decisión pedida: null. El Manifiesto (eje 10, p. 4) dice «Rechazamos que se elimine el papel del Estado en la actualización del salario mínimo interprofesional». Rechaza que el Estado deje de fijar el SMI, pero un salario mínimo autonómico superior al estatal mantiene el SMI estatal como suelo, así que la frase no es una posición sobre la afirmación (ni a favor ni en contra). Campos (Canarias7, 4-nov) solo pide «seguir incrementando el salario mínimo interprofesional», el estatal. Medida relacionada pero distinta: null."
+   },
+   "q33": {
+    "valor": null,
+    "nota": "Sin posición. El Manifiesto pide regular precios en zonas tensionadas y evitar «que las familias sean expulsadas de sus hogares», sin hablar de prórroga o renovación automática. Ninguna declaración de Campos ni de Marisol Collado sobre el decreto de la prórroga automática."
+   },
+   "q34": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "Exigimos una protección específica de la infancia y adolescencia migrante no acompañada, garantizando sus derechos y una distribución solidaria de las responsabilidades de acogida.",
+    "pagina": 4,
+    "url": "https://www.unidadpueblocanario.org/documentos/manifiesto-upc.pdf",
+    "medio": "Unidad del Pueblo Canario (Manifiesto electoral)",
+    "fecha": "2026-11-03",
+    "quien": "Unidad del Pueblo Canario (Manifiesto electoral del 29N)",
+    "formato": "documento oficial",
+    "marco": null,
+    "nota": "Eje 12 («Canarias, frontera Sur»), pp. 4-5. Pide una «distribución solidaria de las responsabilidades de acogida» de los menores no acompañados y la «corresponsabilidad entre territorios», sin decir que sea obligatoria: +1. Campos (EFE, 12-nov) pide un reparto «solidario y vinculante», pero en estilo indirecto y en el seno de la UE: no se usa.",
+    "fuente_local": "data/sources/programas/upc/manifiesto-upc.txt",
+    "sha256": "163b654cf480dd07a3c881969fbab1df25fbd283a39055b38ceef3098ff2af0d"
+   },
+   "q35": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "Expresamos nuestra solidaridad con los pueblos palestino y saharaui en su lucha por la autodeterminación y la independencia",
+    "pagina": 5,
+    "url": "https://www.unidadpueblocanario.org/documentos/manifiesto-upc.pdf",
+    "medio": "Unidad del Pueblo Canario (Manifiesto electoral)",
+    "fecha": "2026-11-03",
+    "quien": "Unidad del Pueblo Canario (Manifiesto electoral del 29N)",
+    "formato": "documento oficial",
+    "marco": null,
+    "nota": "Eje 15. Apoyar la «lucha por la autodeterminación y la independencia» del pueblo saharaui es incompatible con la autonomía dentro de Marruecos, pero el Manifiesto no pide expresamente que España apoye un referéndum ni que retire la carta de 2022: +1. Campos (Canarias Ahora, 7-nov) «expresó la solidaridad de la coalición con los pueblos saharaui y palestino», solo en paráfrasis.",
+    "fuente_local": "data/sources/programas/upc/manifiesto-upc.txt",
+    "sha256": "163b654cf480dd07a3c881969fbab1df25fbd283a39055b38ceef3098ff2af0d"
+   },
+   "q36": {
+    "valor": null,
+    "nota": "Sin posición en el Manifiesto ni en declaraciones de Campos."
+   },
+   "q37": {
+    "valor": null,
+    "nota": "Sin posición en el Manifiesto ni en declaraciones de Campos."
+   },
+   "x1": {
+    "valor": null,
+    "nota": "Sin posición. El Manifiesto (eje 13) defiende «la identidad nacional canaria, nuestra historia, el habla», sin mencionar las lenguas cooficiales en la UE."
+   },
+   "x2": {
+    "valor": null,
+    "nota": "Sin posición. El Manifiesto (eje 1) pide «el pleno desarrollo de las competencias reconocidas en nuestro Estatuto», sin pedir competencias de inmigración (permisos de residencia y trabajo)."
+   },
+   "x3": {
+    "valor": null,
+    "nota": "Sin cita válida. EFE (La Voz de Lanzarote, 12-nov) dice que Campos «insiste en la conveniencia de restringir la adquisición de inmuebles a extranjeros o no residentes en las islas con fines rentistas», pero en estilo indirecto. La tribuna de Román Rodríguez en Diario de Avisos (25-oct: «limitando el impacto [...] de la compra de viviendas por parte de extranjeros no residentes») es columna de opinión. El Manifiesto solo habla de limitar «la especulación inmobiliaria». Null hasta que haya una cita literal de Campos o un documento oficial."
+   },
+   "x4": {
+    "valor": null,
+    "nota": "Sin posición. El Manifiesto (eje 6) defiende pensiones «revalorizadas conforme al coste de la vida», sin hablar de jubilación con 40 años cotizados."
+   }
+  }
+ },
+ "existentes": {},
+ "descartados": [
+  {
+   "partido": "eh_bildu",
+   "q": "q32",
+   "url": "https://ehbildu.eus/herriak/kongresua-senatua/es/noticias/eh-bildu-exige-a-sanchez-un-paquete-laboral-ambicioso-para-recuperar-salarios-y-derechos-a-los-reaccionarios-se-les-para-con-mas-derechos-para-la-clase-trabajadora",
+   "motivo": "Aizpurua plantea «permitir salarios mínimos propios adaptados a las distintas realidades socioeconómicas» el 16-sep-2026, en una sesión de control anterior a la convocatoria y sin referencia al 29N."
+  },
+  {
+   "partido": "eh_bildu",
+   "q": "x3",
+   "url": "https://www.ultimahora.es/noticias/comunidades/2026/11/09/2746167/bildu-trabajara-por-prorroga-alquileres-derechas-tumbaran-advierte-respuesta-rotunda-11n.html",
+   "motivo": "Matute propone prohibir la compra de vivienda a fondos, empresas y grandes tenedores: limitación por tipo de comprador, no por residencia (medida distinta)."
+  },
+  {
+   "partido": "eh_bildu",
+   "q": "q34",
+   "url": "https://ehbildu.eus/herriak/kongresua-senatua/es/noticias/eh-bildu-denuncia-el-uso-de-la-crisis-de-ceuta-para-alimentar-el-racismo-y-la-confrontacion-exige-aclarar-el-papel-de-marruecos-reivindica-otra-politica-migratoria-las-cosas-pueden-hacerse-de-otra-manera",
+   "motivo": "Nota del 3-sep-2026, anterior a la convocatoria y sin referencia a estas elecciones."
+  },
+  {
+   "partido": "pnv",
+   "q": "q33",
+   "url": "https://www.eaj-pnv.eus/es/noticias/58713/vivienda-y-demagogia-de-brocha-gorda/",
+   "motivo": "Artículo de opinión de Marijo Etxegoien (burukide del GBB): columna de opinión y no es líder nacional. Coincide con la posición de Vaquero (prórrogas indefinidas e indemnización de 12 mensualidades sacarían pisos del alquiler)."
+  },
+  {
+   "partido": "pnv",
+   "q": "q33",
+   "url": "https://www.moncloa.com/2026/10/22/pnv-investidura-pp-vox-29n-3453092/",
+   "motivo": "Esteban (RNE, 22-oct): el rechazo al decreto de la prórroga va en estilo indirecto; lo entrecomillado es solo la justificación («Cuanto menos oferta haya, más van a subir los precios»)."
+  },
+  {
+   "partido": "pnv",
+   "q": "q36",
+   "url": "https://www.moncloa.com/esteban-eleccion-cgpj-bueno",
+   "motivo": "Declaración de Esteban del 16-oct-2020: otra legislatura."
+  },
+  {
+   "partido": "pnv",
+   "q": "x2",
+   "url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21673/pdf/2026-02-22_maribel-vaquerori-elkarrizketa-el-corre",
+   "motivo": "Vaquero en El Correo (22-feb-2026), anterior a la convocatoria y sin referencia a estas elecciones."
+  },
+  {
+   "partido": "cc",
+   "q": "q33",
+   "url": "https://diariodeavisos.elespanol.com/2026/10/cc-apoya-primer-decreto-vivienda/",
+   "motivo": "El rechazo de Valido a la renovación automática solo consta en estilo indirecto del periodista, sin comillas."
+  },
+  {
+   "partido": "cc",
+   "q": "q33",
+   "url": "https://diariodeavisos.elespanol.com/2026/10/fernando-clavijo-vox-migrantes-canarias/",
+   "motivo": "Clavijo critica «el intervencionismo de Madrid con el mercado de alquiler» en general, sin nombrar la prórroga automática."
+  },
+  {
+   "partido": "cc",
+   "q": "q35",
+   "url": "https://diariodeavisos.elespanol.com/2026/10/fernando-clavijo-vox-migrantes-canarias/",
+   "motivo": "Clavijo critica que el giro sobre el Sáhara fuera unilateral y sin explicaciones, pero no pide revertirlo ni un referéndum."
+  },
+  {
+   "partido": "upc",
+   "q": "x3",
+   "url": "https://www.lavozdelanzarote.com/actualidad/politica/campos-upc-alerta-29n-no-va-alternancia-sino-perder-todo-conquistado-en-70-anos_247303_102.html",
+   "motivo": "La restricción de compra a extranjeros o no residentes de Campos solo consta en estilo indirecto de EFE."
+  },
+  {
+   "partido": "upc",
+   "q": "x3",
+   "url": "https://diariodeavisos.elespanol.com/2026/10/upc-defender-a-la-gente-de-a-pie/",
+   "motivo": "Tribuna de opinión de Román Rodríguez (columna de opinión, no vale)."
+  },
+  {
+   "partido": "upc",
+   "q": "q35",
+   "url": "https://www.eldiario.es/canariasahora/politica/upc-presenta-candidaturas-elecciones-generales-unica-papeleta-izquierda-canaria_1_13647204.html",
+   "motivo": "La solidaridad de Campos con el pueblo saharaui va en paráfrasis; se usa el Manifiesto."
+  },
+  {
+   "partido": "upc",
+   "q": "q32",
+   "url": "https://www.unidadpueblocanario.org/documentos/manifiesto-upc.pdf",
+   "motivo": "«Rechazamos que se elimine el papel del Estado en la actualización del salario mínimo interprofesional»: defiende que el Estado siga fijando el SMI, lo que no excluye ni apoya un mínimo autonómico superior. No es una posición sobre la afirmación."
+  }
+ ]
+}

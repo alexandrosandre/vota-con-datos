@@ -26,9 +26,10 @@ correcta o legal) hasta que esté hecho.
   - [ ] PSOE — presenta su programa el 15-nov.
   - [ ] Vox — solo se usará desde su web oficial (a 12-nov no estaba en voxespana.es).
   - [ ] PSC, Frente Amplio, Podemos, Junts, EH Bildu, Compromís, UPC, Ara Més-FA, UPN-PP — sin fecha.
-- [ ] **3. [Yo] Revisar la selección de afirmaciones del paso 1** (en curso desde el 13-nov) para cubrir
-  mejor a los 18 partidos: análisis, codificación y verificación independiente; decido yo, sin pasar
-  por ti. Repetir tras el programa del PSOE.
+- [ ] **3. [Yo] Revisar la selección de afirmaciones del paso 1** para cubrir mejor a los 18 partidos:
+  análisis, codificación y verificación independiente; decido yo, sin pasar por ti. **Hecha el 13-nov**
+  (`data/fase1/revision_afirmaciones_2026-11-13/integracion.md`): se retiran q02, q07, q10, q14 y q28, entran
+  q31–q35 y la media sube de 6,6 a 7,7 posiciones por partido. **Repetir tras el programa del PSOE (15-nov).**
 - [ ] **4. [Externo → Yo] Listas del BOE tras los recursos** ante el TS (art. 44.4 LOREG, 13–19-nov):
   volver a descargar y validar el BOE después. Pendiente de confirmar oficialmente el recurso de Drago
   Canarias contra UPC (solo hay prensa).

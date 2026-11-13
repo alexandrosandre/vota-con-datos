@@ -263,6 +263,76 @@
       "antes": 1,
       "despues": null,
       "motivo": "Igual estándar (12-nov, principal): cita enmarcada por el periodista y basada en un programa no publicado; se retira."
+    },
+    {
+      "partido": "frente_amplio",
+      "pregunta": "q31",
+      "antes": null,
+      "despues": 2,
+      "motivo": "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/verificacion.json), aprobada: Afirmación nueva q31: Cita parcial válida (regla a): lo entrecomillado es la valoración del propio proponente sobre su decreto, y el medio nombra la medida («en defensa del decreto de renovación automática»). Coincide con idealista (12-nov), donde Bustinduy «ha abanderado» ese decreto. Es propuesta propia y central: +2. sha256 coincide."
+    },
+    {
+      "partido": "podemos",
+      "pregunta": "q27",
+      "antes": null,
+      "despues": -1,
+      "motivo": "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/verificacion.json), aprobada: Posición nueva de la verificación: Irene Montero (6-nov, El Faro de Ceuta) rechaza «militarizar las fronteras» en el contexto de Ceuta; reactiva, −1. Caso límite. q27 se mantiene por decisión del editor."
+    },
+    {
+      "partido": "compromis",
+      "pregunta": "q31",
+      "antes": null,
+      "despues": 2,
+      "motivo": "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/verificacion.json), aprobada: Afirmación nueva q31: «Apostarem pel lloguer indefinit» es literal en la web electoral (frontvalencia.org, apartado de vivienda): documento oficial de la candidatura. Un contrato indefinido contiene la afirmación. Es el mismo criterio que BNG y Adelante Andalucía: +2."
+    },
+    {
+      "partido": "ara_mes_fa",
+      "pregunta": "q32",
+      "antes": null,
+      "despues": 1,
+      "motivo": "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/verificacion.json), aprobada: Afirmación nueva q32: Literal en la nota oficial del 10-nov (aramesfrontampli.cat): su propuesta «pren com a referència la reivindicació d'un SMI balear propi». Asume la reivindicación de un SMI balear propio, pero solo como referencia de otra medida. Caso límite: +1 y no más."
+    },
+    {
+      "partido": "upc",
+      "pregunta": "q33",
+      "antes": null,
+      "despues": -1,
+      "motivo": "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/verificacion.json), aprobada: Afirmación nueva q33: Literal en el manifiesto (punto 12): «una distribución solidaria de las responsabilidades de acogida» de la infancia migrante no acompañada. No dice «obligatoria»: −1."
+    },
+    {
+      "partido": "upc",
+      "pregunta": "q34",
+      "antes": null,
+      "despues": 1,
+      "motivo": "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/verificacion.json), aprobada: Afirmación nueva q34: Literal en el manifiesto: solidaridad con el pueblo saharaui «en su lucha por la autodeterminación y la independencia». Apoya la autodeterminación sin hablar de la política del Gobierno ni del plan de autonomía: +1."
+    },
+    {
+      "partido": "adelante_andalucia",
+      "pregunta": "q31",
+      "antes": null,
+      "despues": 2,
+      "motivo": "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/verificacion.json), aprobada: Afirmación nueva q31: Literal en el programa (propuesta 168, p. 49). +2."
+    },
+    {
+      "partido": "adelante_andalucia",
+      "pregunta": "q33",
+      "antes": null,
+      "despues": -1,
+      "motivo": "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/verificacion.json), aprobada: Afirmación nueva q33: Literal en el programa (propuesta 556, p. 106): «reparto solidario entre comunidades». −1."
+    },
+    {
+      "partido": "adelante_andalucia",
+      "pregunta": "q34",
+      "antes": null,
+      "despues": 2,
+      "motivo": "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/verificacion.json), aprobada: Afirmación nueva q34: Literal en el programa (propuesta 578, p. 109); la 585 añade «volver a la posición anterior a 2022». +2."
+    },
+    {
+      "partido": "adelante_andalucia",
+      "pregunta": "q35",
+      "antes": null,
+      "despues": -2,
+      "motivo": "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/verificacion.json), aprobada: Afirmación nueva q35: Los tres fragmentos son literales y el título de la propuesta 496 es «Derogar la prisión permanente revisable» (el PDF lo parte). −2. Para que la cita se lea mejor, se puede usar solo «Penas orientadas a la reinserción, como manda la Constitución» y poner el título en la nota."
     }
   ],
   "dudas": [
@@ -276,6 +346,7 @@
     "adelante_andalucia: q02 (+1): «Desprivatización de todas las viviendas de bancos y fondos de inversión» (p. 4) no dice «expropiar», pero pasar al parque público todas las viviendas de bancos y fondos no es posible solo con compras voluntarias. Se mantiene +1, como en Podemos (expropiar el uso), y no +2, porque el programa no nombra el mecanismo ni el umbral de 50 viviendas.",
     "adelante_andalucia: q07 (+1): cuota cero solo «cuando no hay rendimientos netos» e «hiperreducida» para quien factura poco (p. 67), frente a cuota cero por debajo del salario mínimo. Se mantiene +1 con la regla de «misma dirección con otro diseño» (q06, q08, q10), pero queda cerca del límite de «medida relacionada pero distinta».",
     "adelante_andalucia: q23 (−2): el programa pide derogar «la ley de desalojos rápidos» (propuesta 495, p. 94), es decir, la vía rápida vigente desde 2025, y ese rechazo es expreso, aunque no figura entre las 29 medidas principales. La ilegalización de las empresas de «desokupación» sí está en la medida 1 (p. 4), lo que sostiene la prioridad.",
-    "adelante_andalucia: Comprobado para las 18 codificadas: las citas son literales y la página es correcta en todas (cotejo página a página con pdftotext); en la maquetación a dos columnas, los «[...]» de q05, q06 y q07 saltan solo texto de la otra columna. También se comprobaron las 12 null buscando en todo el programa: IVA o ITP de primera vivienda, lengua vehicular, prioridad nacional en vivienda, expulsión de condenados, referéndum, concierto o cupo, eólica marina, reducción de emisiones a 2030, Ministerio de Igualdad, Fuerzas Armadas en Ceuta, exigencias agrarias por encima de la UE y Mercosur. No hay ninguna posición explícita omitida; las menciones encontradas (p. ej., «industria auxiliar de la eólica marina», p. 125, o «modelo confederal», p. 73) no son posiciones inequívocas sobre la afirmación."
+    "adelante_andalucia: Comprobado para las 18 codificadas: las citas son literales y la página es correcta en todas (cotejo página a página con pdftotext); en la maquetación a dos columnas, los «[...]» de q05, q06 y q07 saltan solo texto de la otra columna. También se comprobaron las 12 null buscando en todo el programa: IVA o ITP de primera vivienda, lengua vehicular, prioridad nacional en vivienda, expulsión de condenados, referéndum, concierto o cupo, eólica marina, reducción de emisiones a 2030, Ministerio de Igualdad, Fuerzas Armadas en Ceuta, exigencias agrarias por encima de la UE y Mercosur. No hay ninguna posición explícita omitida; las menciones encontradas (p. ej., «industria auxiliar de la eólica marina», p. 125, o «modelo confederal», p. 73) no son posiciones inequívocas sobre la afirmación.",
+    "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/): q02, q07, q10, q14 y q28 retiradas del cuestionario (sus celdas se conservan como historial y ya no se publican); q31-q35 añadidas y verificadas para los partidos de este grupo."
   ]
 }

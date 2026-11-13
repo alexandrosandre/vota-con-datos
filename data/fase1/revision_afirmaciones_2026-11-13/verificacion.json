@@ -1,0 +1,363 @@
+{
+ "verificador": "Claude, verificación independiente de la revisión de afirmaciones del 13-nov",
+ "fecha": "2026-11-13",
+ "alcance": "Las 32 posiciones con valor de propuesta.json (31 en posiciones_nuevas y 1 en posiciones_adicionales_existentes). Se revisaron también los null de los partidos con poca cobertura y las afirmaciones q02, q14, q27 y q34. Se comprobó la literalidad con la normalización de pipeline/verify_quotes.py (32/32 encontradas) y el sha256 de todas las copias locales (todos coinciden).",
+ "resumen": {
+  "ok": 29,
+  "corregir": 2,
+  "rechazar": 1,
+  "nuevas_validas": 3,
+  "nuevas_condicionadas": 1,
+  "decisiones_pendientes": 1
+ },
+ "resultados": [
+  {
+   "partido": "pp",
+   "q": "q31",
+   "veredicto": "ok",
+   "valor_final": -1,
+   "motivo": "Cita literal en la copia local (The Objective, 12-nov; entrevista en El Hormiguero del 11-nov) y sha256 coincide. Feijóo, candidato: «Voy a derogar esos decretos…». El titular habla del «decreto Maricarmen» (RDL 29/2026), pero «esos decretos», en plural y un día antes de la votación, incluye el de la renovación automática (RDL 28/2026). Derogación en bloque y reactiva: −1 (regla b). Corregir la nota: es falso que el programa del PP «no trate la duración ni la prórroga»; la medida 156 «TRES AÑOS+» (PDF p. 55) incentiva con IRPF que el propietario renueve voluntariamente tres años más. Es una alternativa voluntaria, no un rechazo expreso de la renovación obligatoria, así que no sube a −2."
+  },
+  {
+   "partido": "pp",
+   "q": "q33",
+   "veredicto": "corregir",
+   "valor_final": 1,
+   "cita": "Sustituiremos el reparto como respuesta principal por un modelo de protección individualizada con retorno.",
+   "fuente": "programa",
+   "pagina": 24,
+   "url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+   "fecha": "2026-11-10",
+   "motivo": "La nota del codificador dice que el programa del PP «no menciona el reparto»: es falso. La medida 46 (PDF pp. 23-24) dice literalmente «Sustituiremos el reparto como respuesta principal por un modelo de protección individualizada con retorno» y «revisaremos el régimen de tutela para evitar su atribución automática a las Comunidades Autónomas» (cita comprobada con la normalización de verify_quotes contra el texto catalogado). El programa es la fuente preferente y prevalece sobre el líder. Lleva un matiz expreso («como respuesta principal»): sustituye el reparto como respuesta principal, no promete suprimirlo del todo. Por eso +1 y no +2. La cita de Sémper (16-oct, «dejar de hablar ya de reparto») es válida como cita parcial y va en la misma dirección: puede quedar en la nota como refuerzo."
+  },
+  {
+   "partido": "pp",
+   "q": "q35",
+   "veredicto": "ok",
+   "valor_final": 2,
+   "motivo": "Cita literal en el programa (medida 30, PDF p. 20). Propuesta propia, expresa y en mayúsculas: +2."
+  },
+  {
+   "partido": "psoe",
+   "q": "q31",
+   "veredicto": "ok",
+   "valor_final": 1,
+   "motivo": "Cita literal en elDiario.es (entrevista del miércoles 7-oct, publicada el 9-oct, posterior a la convocatoria). La pregunta nombra la medida («alquiler indefinido y que los propietarios indemnicen»), así que la respuesta es en primera persona sobre esta afirmación. +1 por el matiz «debate avanzado». Conviene añadir a la nota la respuesta siguiente, también literal: «¿Lo va a llevar el PSOE en el programa electoral? Sí, vamos a llevar unas medidas de vivienda potentes y en ese asunto, por supuesto, el Partido Socialista estará». Revisar con el programa del 15-nov; podría subir a +2."
+  },
+  {
+   "partido": "psoe",
+   "q": "q33",
+   "veredicto": "corregir",
+   "valor_final": -1,
+   "cita": "Un Gobierno de España, junto a Vox, sería dramático para Canarias, por muchas cuestiones. En el asunto migratorio, sin duda. Ellos desean, quieren y han votado que se queden en los territorios de frontera. Tomen nota los canarios y las canarias",
+   "fuente": "campaña",
+   "url": "https://www.infobae.com/espana/agencias/2026/10/22/torres-defiende-que-los-menores-migrantes-en-ceuta-se-distribuyan-en-la-peninsula-salvo-que-vivas-quiera-que-se-queden/",
+   "fuente_local": "data/sources/fase1/revision_2026-11-13/psoe/20261022_infobae_menores.txt",
+   "sha256": "8a819daad18bd9e278a86abc5417c5fbf1a7adfb81a306ccf1d5ce7480fbf154",
+   "quien": "Ángel Víctor Torres, secretario general del PSOE de Canarias y ministro de Política Territorial",
+   "motivo": "El valor −1 se mantiene, pero la cita propuesta mezcla estilo indirecto («cuya solución pasaría por que sean distribuidos…», que es del periodista) con un fragmento entrecomillado que solo lleva la valoración. Bajo la regla (a) es dudosa. En la misma pieza hay una cita literal completa, entre comillas y en primera persona, que critica a PP y Vox por querer que los menores «se queden en los territorios de frontera». El medio nombra la medida (el art. 35 de la Ley de Extranjería, que PP y Vox «derogarán») y la enmarca en el 29-N. Es reactiva: −1. Hay que corregir también `quien` y la nota: Torres no figura en ninguna lista del BOE (data/boe/listas_congreso.json), así que no es «candidato». Cuenta como líder por ser secretario general regional."
+  },
+  {
+   "partido": "frente_amplio",
+   "q": "q31",
+   "veredicto": "ok",
+   "valor_final": 2,
+   "motivo": "Cita parcial válida (regla a): lo entrecomillado es la valoración del propio proponente sobre su decreto, y el medio nombra la medida («en defensa del decreto de renovación automática»). Coincide con idealista (12-nov), donde Bustinduy «ha abanderado» ese decreto. Es propuesta propia y central: +2. sha256 coincide."
+  },
+  {
+   "partido": "compromis",
+   "q": "q31",
+   "veredicto": "ok",
+   "valor_final": 2,
+   "motivo": "«Apostarem pel lloguer indefinit» es literal en la web electoral (frontvalencia.org, apartado de vivienda): documento oficial de la candidatura. Un contrato indefinido contiene la afirmación. Es el mismo criterio que BNG y Adelante Andalucía: +2."
+  },
+  {
+   "partido": "upc",
+   "q": "q33",
+   "veredicto": "ok",
+   "valor_final": -1,
+   "motivo": "Literal en el manifiesto (punto 12): «una distribución solidaria de las responsabilidades de acogida» de la infancia migrante no acompañada. No dice «obligatoria»: −1."
+  },
+  {
+   "partido": "upc",
+   "q": "q34",
+   "veredicto": "ok",
+   "valor_final": 1,
+   "motivo": "Literal en el manifiesto: solidaridad con el pueblo saharaui «en su lucha por la autodeterminación y la independencia». Apoya la autodeterminación sin hablar de la política del Gobierno ni del plan de autonomía: +1."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "q": "q32",
+   "veredicto": "ok",
+   "valor_final": 1,
+   "motivo": "Literal en la nota oficial del 10-nov (aramesfrontampli.cat): su propuesta «pren com a referència la reivindicació d'un SMI balear propi». Asume la reivindicación de un SMI balear propio, pero solo como referencia de otra medida. Caso límite: +1 y no más."
+  },
+  {
+   "partido": "erc",
+   "q": "q31",
+   "veredicto": "ok",
+   "valor_final": 1,
+   "motivo": "Literal en la nota oficial de esquerra.cat del 7-oct, posterior a la convocatoria: obligación de prorrogar para los grandes tenedores, con indemnización si no se prorroga. Es el mismo mecanismo, pero con alcance menor (grandes tenedores, Código civil catalán): +1. Caso límite: es una iniciativa autonómica y no habla de cinco años."
+  },
+  {
+   "partido": "erc",
+   "q": "q32",
+   "veredicto": "ok",
+   "valor_final": 2,
+   "motivo": "Literal en el programa (medida 67, p. 20): SMI territorializado «superior al fixat a escala estatal». +2."
+  },
+  {
+   "partido": "erc",
+   "q": "q34",
+   "veredicto": "ok",
+   "valor_final": 2,
+   "motivo": "Literal en el programa (medida 43, p. 16): revertir la posición de 2022, dentro de la medida «Defensar el dret a l'autodeterminació arreu». +2."
+  },
+  {
+   "partido": "junts",
+   "q": "q31",
+   "veredicto": "ok",
+   "valor_final": -1,
+   "motivo": "Literal en idealista (12-nov). Josep Maria Cruset es el nº 1 por Tarragona (BOE) y portavoz adjunto: es líder. Lo entrecomillado se refiere expresamente al decreto «que entraba en vigor el 15 de noviembre», es decir, al RDL 28/2026 de la renovación automática (el otro decreto entró en vigor el 8-oct), y la intervención está en el bloque del debate de ese decreto. Rechazo sin propuesta propia: −1. El dudoso queda resuelto."
+  },
+  {
+   "partido": "eh_bildu",
+   "q": "q31",
+   "veredicto": "ok",
+   "valor_final": 2,
+   "motivo": "Literal en la nota oficial de ehbildu.eus (9-nov). Oskar Matute es el nº 1 por Bizkaia (BOE). Anuncia como «primera iniciativa» recuperar «la prórroga automática de los contratos que las derechas tumbarán esta semana»: es el decreto de renovación automática, votado el 12-nov. +2."
+  },
+  {
+   "partido": "eh_bildu",
+   "q": "q32",
+   "veredicto": "ok",
+   "valor_final": 1,
+   "motivo": "Literal en la nota oficial de ehbildu.eus (12-nov), con Arkaitz Rodríguez y Oihana Etxebarrieta (nº 1 por Gipuzkoa en el BOE): ratifican «el salario mínimo propio» como reivindicación principal. No dice «por encima del estatal» ni concreta el ámbito (Euskal Herria): +1."
+  },
+  {
+   "partido": "pnv",
+   "q": "q31",
+   "veredicto": "ok",
+   "valor_final": -1,
+   "motivo": "Literal en la nota oficial de eaj-pnv.eus (12-nov): «Respecto al segundo decreto» (el de la prórroga automática), «no es una buena medida…». Lo confirma idealista. Es reactivo: −1. Hay que corregir la nota, que dice «cabeza de lista por Bizkaia»: Maribel Vaquero es la nº 1 por Gipuzkoa (BOE), como ya dice bien `quien`."
+  },
+  {
+   "partido": "pnv",
+   "q": "q32",
+   "veredicto": "ok",
+   "valor_final": 2,
+   "motivo": "Literal en el programa (p. 9): «siempre por encima del mínimo estatal». +2."
+  },
+  {
+   "partido": "pnv",
+   "q": "q35",
+   "veredicto": "ok",
+   "valor_final": -2,
+   "motivo": "Literal en el programa (p. 27): rechaza la pena en sí. −2."
+  },
+  {
+   "partido": "bng",
+   "q": "q31",
+   "veredicto": "ok",
+   "valor_final": 2,
+   "motivo": "Literal en el programa (p. 12): «renovación automática dos alugueiros». +2."
+  },
+  {
+   "partido": "bng",
+   "q": "q32",
+   "veredicto": "ok",
+   "valor_final": 2,
+   "motivo": "Literal en el programa (p. 15). +2."
+  },
+  {
+   "partido": "bng",
+   "q": "q34",
+   "veredicto": "ok",
+   "valor_final": 2,
+   "motivo": "Literal en el programa (p. 90): «impulse un referendo de autodeterminación». +2."
+  },
+  {
+   "partido": "bng",
+   "q": "q35",
+   "veredicto": "ok",
+   "valor_final": -2,
+   "motivo": "Literal en el programa (p. 30): pide derogarla. −2."
+  },
+  {
+   "partido": "cc",
+   "q": "q33",
+   "veredicto": "ok",
+   "valor_final": -2,
+   "motivo": "Literal en el programa (medida 83): «Solidaridad obligatoria y automática»; la medida 84 la aplica a los traslados de menores. Pide reforzar el reparto obligatorio, lo contrario de suprimirlo: −2."
+  },
+  {
+   "partido": "cc",
+   "q": "q34",
+   "veredicto": "ok",
+   "valor_final": 1,
+   "motivo": "Literal en el programa (medida 95). Caso límite: «conforme a las resoluciones de Naciones Unidas» es ambiguo desde la 2797 (2025), pero «defenderemos el derecho del pueblo saharaui a decidir su futuro» es el lenguaje de la autodeterminación. +1, con la misma vara que UPC. Si el editor exige que se rechace expresamente el plan de autonomía, null."
+  },
+  {
+   "partido": "adelante_andalucia",
+   "q": "q31",
+   "veredicto": "ok",
+   "valor_final": 2,
+   "motivo": "Literal en el programa (propuesta 168, p. 49). +2."
+  },
+  {
+   "partido": "adelante_andalucia",
+   "q": "q33",
+   "veredicto": "ok",
+   "valor_final": -1,
+   "motivo": "Literal en el programa (propuesta 556, p. 106): «reparto solidario entre comunidades». −1."
+  },
+  {
+   "partido": "adelante_andalucia",
+   "q": "q34",
+   "veredicto": "ok",
+   "valor_final": 2,
+   "motivo": "Literal en el programa (propuesta 578, p. 109); la 585 añade «volver a la posición anterior a 2022». +2."
+  },
+  {
+   "partido": "adelante_andalucia",
+   "q": "q35",
+   "veredicto": "ok",
+   "valor_final": -2,
+   "motivo": "Los tres fragmentos son literales y el título de la propuesta 496 es «Derogar la prisión permanente revisable» (el PDF lo parte). −2. Para que la cita se lea mejor, se puede usar solo «Penas orientadas a la reinserción, como manda la Constitución» y poner el título en la nota."
+  },
+  {
+   "partido": "salf",
+   "q": "q34",
+   "veredicto": "rechazar",
+   "valor_final": null,
+   "motivo": "«Sáhara: se retira la carta de Sánchez» es literal (p. 38), pero el programa no habla de referéndum ni de autodeterminación. Lo que propone es la «Vuelta a la posición de la ONU», y el argumento es comercial (Argelia, el gas). Desde la resolución 2797 (2025), la posición de la ONU toma como base el plan de autonomía. Retirar la carta equivale a volver a la neutralidad anterior a 2022, que es la misma fórmula que usa el PP (codificado null). Ante la duda, null. Para tratar igual a SALF y al PP, o los dos son null o los dos tienen valor; se recomienda null."
+  },
+  {
+   "partido": "salf",
+   "q": "q35",
+   "veredicto": "ok",
+   "valor_final": 2,
+   "motivo": "Literal en el programa (p. 8): extiende la prisión permanente revisable a la violación de menores sin muerte. +2."
+  },
+  {
+   "partido": "junts",
+   "q": "q12",
+   "veredicto": "ok",
+   "valor_final": 1,
+   "motivo": "Literal en Catalunya Press (19-oct), que la presenta como declaraciones difundidas por Junts y recogidas por Europa Press. Nogueras es la nº 1 por Barcelona. El medio refiere la frase a la inmersión, frente a la garantía del castellano del «Contracte amb Espanya». Es reactiva: +1. Caso límite según la regla (a): lo entrecomillado es una advertencia genérica y el medio nombra la medida."
+  }
+ ],
+ "posiciones_nuevas_encontradas": [
+  {
+   "partido": "psoe",
+   "q": "q34",
+   "valor": -1,
+   "fuente": "campaña",
+   "cita": "ha hablado de una “reconsideración” de un debate bloqueado durante décadas y de una “reflexión compartida” por numerosos países sobre que “una solución de autonomía del Sáhara Occidental dentro de Marruecos” puede ser “la solución más factible”",
+   "quien": "Pedro Sánchez, secretario general del PSOE y candidato a la Presidencia del Gobierno",
+   "formato": "entrevista (Memorias de Pez, YouTube)",
+   "fecha": "2026-11-08",
+   "medio": "Demócrata (Europa Press)",
+   "url": "https://www.democrata.es/politica/sanchez-insiste-en-que-la-soberania-de-ceuta-y-melilla-no-se-ha-negociado-nunca-con-marruecos/",
+   "fuente_local": "data/sources/fase1/revision_2026-11-13/verificacion/psoe/20261108_democrata_sahara_autonomia.txt",
+   "respaldo": [
+    {
+     "url": "https://noteolvidesdelsaharaoccidental.org/pedro-sanchez-defiende-la-autonomia-del-sahara-occidental-tras-el-fracaso-de-eeuu-en-la-onu/",
+     "fuente_local": "data/sources/fase1/revision_2026-11-13/verificacion/psoe/20261108_noteolvides_sahara_transcripcion.txt",
+     "nota": "Transcripción literal del minuto 58:10: «quizá una solución de autonomía del Sáhara Occidental dentro de Marruecos pueda ser la solución más factible para resolver esta cuestión». La publica una web activista, por eso es respaldo y no fuente principal.",
+     "sha256": "28020762c5473dadac4905d12c9a302d8c5153e50c7adf3e87132708d981f785"
+    },
+    {
+     "url": "https://es.le360.ma/politica/sanchez-defiende-la-autonomia-del-sahara-dentro-de-marruecos-y-niega-que-espana-hiciera-una_FSLH3ECYDZDBZP36D2DLGMI2FM/",
+     "fuente_local": "data/sources/fase1/revision_2026-11-13/verificacion/psoe/20261109_le360_sahara_autonomia.txt",
+     "nota": "No usar para la cita: omite el «quizá».",
+     "sha256": "3fd9c2e20de37e5b246f07133f2d825f5fecd0652a3e138c409f78040eaa8bce"
+    }
+   ],
+   "nota": "Cita parcial válida (regla a): lo entrecomillado es la posición misma (la autonomía dentro de Marruecos como «la solución más factible») y el medio nombra el giro de 2022. Es la posición del candidato en campaña y defiende la política de su Gobierno. −1 y no −2 porque está matizada («quizá… pueda ser») y no rechaza de forma expresa el referéndum. Con esta posición, q34 deja de ser de un solo lado.",
+   "sha256": "8796c9ccacc97211dcef1eb7bf2b6a6014baf90823fcb8dd06615722adb3728c"
+  },
+  {
+   "partido": "podemos",
+   "q": "q27",
+   "valor": -1,
+   "fuente": "campaña",
+   "cita": "La candidata considera que el escenario actual responde a \"una decisión política europea y española de externalizar las fronteras y militarizar las fronteras, pagando a terceros países, como Marruecos o Mauritania, para que hagan el trabajo sucio\".",
+   "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno",
+   "formato": "desayuno informativo (Europa Press)",
+   "fecha": "2026-11-06",
+   "medio": "El Faro de Ceuta",
+   "url": "https://elfarodeceuta.es/actualidad/frontera-inmigracion/irene-montero-margarita-robles-torturas-inmigrantes/",
+   "fuente_local": "data/sources/fase1/revision_2026-11-13/verificacion/podemos/20261106_elfarodeceuta_ceuta_militarizar.txt",
+   "nota": "Rechaza en primera persona, entre comillas, «militarizar las fronteras» en el contexto expreso de la crisis de Ceuta. En la misma pieza culpa a Robles de los abusos de los «militares desplegados» allí. Es reactiva: −1. Caso límite: la frase une militarización y externalización. Si el editor exige que se nombre el despliegue del Ejército en Ceuta, null. Con esta posición, q27 deja de ser de un solo lado.",
+   "sha256": "6bc7686badea0ea9677928bd1984e823e48892389c765db63b7b0fb89a7a3752"
+  },
+  {
+   "partido": "junts",
+   "q": "q32",
+   "valor": 1,
+   "fuente": "campaña",
+   "cita": "El diputat ha recordat que Junts reclama la competència per fixar el salari mínim interprofessional, però ha remarcat que la manca d’aquesta atribució no pot ser una excusa per no actuar.",
+   "quien": "Junts per Catalunya (nota oficial; intervención de Joan Canadell en el Parlament)",
+   "formato": "nota oficial",
+   "fecha": "2026-10-21",
+   "medio": "junts.cat",
+   "url": "https://junts.cat/actualitat/junts-aconsegueix-que-el-psc-i-els-comuns-retirin-les-esmenes-a-la-totalitat-a-la-llei-del-salari-minim-de-referencia-catala/",
+   "fuente_local": "data/sources/fase1/revision_2026-11-13/verificacion/junts/20261021_junts_salari_minim_competencia.txt",
+   "nota": "Es una nota oficial del partido, posterior a la convocatoria, en la que Junts dice reclamar la competencia para fijar el SMI. La referencia catalana que propone (1.400 € en 14 pagas, «per sobre dels 1.450») supera la estatal, pero eso no está escrito como principio: +1. Se aplica el mismo criterio que a ERC q31 (nota oficial sobre una iniciativa en el Parlament). El descarte del codificador sobre Vergés (20-oct) era correcto.",
+   "sha256": "a183cba907289d6103aff0550764379ad19f67562d954977abc622a8a20ba67b"
+  },
+  {
+   "partido": "vox",
+   "q": "q35",
+   "valor": 2,
+   "fuente": "programa",
+   "condicion": "Solo si el editor cataloga este PDF como programa oficial de Vox en partidos.json.",
+   "cita": "Ampliación de la prisión permanente revisable. Los que cometen los peores delitos deben tener las máximas condenas.",
+   "pagina": 39,
+   "url": "https://www.democrata.es/uploads/s1/35/26/90/2/programa-elecct-vox.pdf",
+   "fecha": "2026-11-12",
+   "medio": "Programa electoral 29-N «Es sentido común» (PDF alojado en democrata.es)",
+   "fuente_local": "data/sources/fase1/revision_2026-11-13/verificacion/vox/20261112_democrata_programa_vox_pdf.txt",
+   "fuente_local_pdf": "data/sources/fase1/revision_2026-11-13/verificacion/vox/20261112_democrata_programa_vox.pdf",
+   "nota": "Medida 81. El PDF completo (55 pp., InDesign, creado el 5-nov) coincide con los tres resúmenes de prensa del 12-nov que ya están en local (Infobae/EP, El Debate y OKDiario): ampliar la prisión permanente, rebajar la edad penal, sacar a los políticos de las direcciones generales (medida 82), militarizar las fronteras de Ceuta y Melilla. No sale de voxespana.es (devuelve 403). Hasta que se catalogue, null. Si se cataloga, +2 y Vox recupera una posición en q35. Error en la nota del codificador: dice «sería −2», y con la redacción actual sería +2.",
+   "sha256": "521ce81b665c72cbea714d0983debe58ee9f3d9b608c2148df562a59fe38da01",
+   "sha256_pdf": "77d2158a9a57b812dc75ebf94529501f009114d5f9a3678afd56bb4c97204567"
+  }
+ ],
+ "decisiones_pendientes": [
+  {
+   "partido": "upn",
+   "q": [
+    "q31",
+    "q35"
+   ],
+   "decision": "¿Cuentan como posiciones de UPN las declaraciones literales de Feijóo, candidato a la Presidencia de la coalición UPN-PP según la nota oficial de UPN del 13-oct (data/sources/compromisos/upn/upn_20261013_principio_acuerdo.txt)?",
+   "si": {
+    "q31": {
+     "valor": -1,
+     "cita": "Voy a derogar esos decretos porque son malos para los inquilinos y para los propietarios",
+     "fuente_local": "data/sources/fase1/revision_2026-11-13/pp/20261111_theobjective_decretos_vivienda.txt"
+    },
+    "q35": {
+     "valor": 2,
+     "cita": "«para los depredadores sexuales y para el asesino que se niega a revelar donde está el cuerpo de su víctima»",
+     "url": "https://www.eldebate.com/espana/20261110/feijoo-resume-programa-cuatro-pilares-promete-prision-permanente-depredadores-sexuales_479224.html",
+     "fuente_local": "data/sources/fase1/revision_2026-11-13/verificacion/upn/20261110_eldebate_feijoo_prision_permanente.txt",
+     "sha256": "810a7ef8d92c1e978751c23fcb1356b62055267ea17057efe666ec1e3498c197"
+    }
+   },
+   "recomendacion": "Mantener null mientras no se cambie expresamente el criterio de data/programas/upn/compromisos/seleccion.json (las posiciones del PP no se trasladan a UPN). Feijóo habló en actos del PP y presentaba el programa del PP, no el de la coalición. Si el editor cambia el criterio, debe aplicarlo a todas las afirmaciones, no solo a estas dos.",
+   "descartado": "Leticia San Martín (nº 1 de UPN, 11-nov) pide «limitar las prórrogas automáticas» de la LAU, pero solo en estilo indirecto (OKDiario Navarra, copia en data/sources/fase1/revision_2026-11-13/verificacion/upn/20261111_okdiarionavarra_sanmartin_vivienda.txt). Null."
+  }
+ ],
+ "descartes_confirmados": [
+  "Vox q31: lo entrecomillado de Figaredo y Hernández Quero (12-nov) es crítica genérica o se refiere al decreto convalidado. Sigue null.",
+  "Vox q33: la medida 15 del programa (devolver a los menores a sus familias) es otra medida y no habla del reparto. Sigue null.",
+  "CC q31: las citas literales de Valido contra la prórroga son del 1 y 2-oct, anteriores a la convocatoria y sin marco electoral. Sigue null.",
+  "PP q34: la medida 239 («Apoyaremos los esfuerzos de Naciones Unidas… solución política justa, duradera y mutuamente aceptable») no elige entre referéndum y autonomía. Sigue null.",
+  "q02 y q14: no se ha encontrado ninguna posición nueva válida de ningún partido, ni a favor ni en contra (búsqueda en el corpus local, los programas y la web).",
+  "Podemos, Frente Amplio, Compromís y EH Bildu en q33, q34 y q35: solo hay declaraciones anteriores al 6-oct, o de personas que no son líderes (Tesh Sidi). Siguen null."
+ ],
+ "diseno": "Véase verificacion.md"
+}

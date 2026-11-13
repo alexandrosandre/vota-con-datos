@@ -207,6 +207,62 @@
    "antes": null,
    "despues": 2,
    "motivo": "Igual estándar con el paso 2: Sánchez en un acto de la candidatura del PSC cuenta para el PSC (mismo criterio que psc-01/03 en Contrasta)."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q31",
+   "antes": null,
+   "despues": -1,
+   "motivo": "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/verificacion.json), aprobada: Afirmación nueva q31: Cita literal en la copia local (The Objective, 12-nov; entrevista en El Hormiguero del 11-nov) y sha256 coincide. Feijóo, candidato: «Voy a derogar esos decretos…». El titular habla del «decreto Maricarmen» (RDL 29/2026), pero «esos decretos», en plural y un día antes de la votación, incluye el de la renovación automática (RDL 28/2026). Derogación en bloque y reactiva: −1 (regla b). Corregir la nota: es falso que el programa del PP «no trate la duración ni la prórroga»; la medida 156 «TRES AÑOS+» (PDF p. 55) incentiva con IRPF que el propietario renueve voluntariamente tres años más. Es una alternativa voluntaria, no un rechazo expreso de la renovación obligatoria, así que no sube a −2."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q33",
+   "antes": null,
+   "despues": 1,
+   "motivo": "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/verificacion.json), aprobada: Propuesta +2 (Sémper, campaña); la verificación lo corrige a +1 con el programa (medida 46, p. 24: «Sustituiremos el reparto como respuesta principal…»): el programa prevalece y el matiz es expreso."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q35",
+   "antes": null,
+   "despues": 2,
+   "motivo": "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/verificacion.json), aprobada: Afirmación nueva q35: Cita literal en el programa (medida 30, PDF p. 20). Propuesta propia, expresa y en mayúsculas: +2."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q31",
+   "antes": null,
+   "despues": 1,
+   "motivo": "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/verificacion.json), aprobada: Afirmación nueva q31: Cita literal en elDiario.es (entrevista del miércoles 7-oct, publicada el 9-oct, posterior a la convocatoria). La pregunta nombra la medida («alquiler indefinido y que los propietarios indemnicen»), así que la respuesta es en primera persona sobre esta afirmación. +1 por el matiz «debate avanzado». Conviene añadir a la nota la respuesta siguiente, también literal: «¿Lo va a llevar el PSOE en el programa electoral? Sí, vamos a llevar unas medidas de vivienda potentes y en ese asunto, por supuesto, el Partido Socialista estará». Revisar con el programa del 15-nov; podría subir a +2."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q33",
+   "antes": null,
+   "despues": -1,
+   "motivo": "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/verificacion.json), aprobada: −1 confirmado con la cita literal completa de Torres («…han votado que se queden en los territorios de frontera») en lugar de la paráfrasis del periodista; `quien` corregido (no es candidato)."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q34",
+   "antes": null,
+   "despues": -1,
+   "motivo": "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/verificacion.json), aprobada: Posición nueva de la verificación: Sánchez (8-nov, Demócrata/EP) ve la autonomía «dentro de Marruecos» como «la solución más factible», con matiz («quizá… pueda ser»): −1."
+  },
+  {
+   "partido": "salf",
+   "pregunta": "q35",
+   "antes": null,
+   "despues": 2,
+   "motivo": "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/verificacion.json), aprobada: Afirmación nueva q35: Literal en el programa (p. 8): extiende la prisión permanente revisable a la violación de menores sin muerte. +2."
+  },
+  {
+   "partido": "salf",
+   "pregunta": "q34",
+   "antes": null,
+   "despues": null,
+   "motivo": "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/verificacion.json): el codificador proponía +1 («se retira la carta de Sánchez»); rechazado porque el programa no habla de referéndum ni de autodeterminación. Null."
   }
  ],
  "dudas": [
@@ -225,6 +281,7 @@
   "PP q12 (-1 mantenido): garantiza la enseñanza en castellano «en cumplimiento de las sentencias judiciales», pero no habla de porcentajes ni de un mínimo legal y lo enmarca «desde el respeto a las lenguas cooficiales». SALF q12 (-2) es más fuerte: derecho «exigible por la familia» con sanciones de la Alta Inspección y entre los diez compromisos.",
   "SALF q09 (-1 mantenido): propone que la sanidad pública pague la operación en un centro privado, pero solo si se superan los plazos (60 días; cita en 48 h); es un recurso condicionado, no un modelo de concertación general: -1.",
   "SALF q17 (-1), q22 (+1) y q27 (+1) mantenidos como indirectos: criterios «iguales para todas las Comunidades Autónomas» frente a los modelos ad hoc para socios separatistas; Igualdad figura entre los 22 ministerios actuales y no entre los 10 que quedan, cuyas «funciones útiles pasan a los diez que quedan»; 5.000 militares más en Ceuta y Melilla como respuesta a las entradas, sin decir que vigilen la valla. SALF q07 (+1): la cuota cero para todos incluye la de la afirmación; la medida V.9 (p. 21, libertad de base de cotización) no la contradice.",
-  "Null confirmados: PP q07 (cuota cero solo para nuevos autónomos; mismo criterio que ERC q07), q13 (prioridad por arraigo, que «no podrán basarse exclusivamente en la nacionalidad», p. 40), q24 (endurece sanciones, no habla de la ley de 2015) y q26 («cumplir nuestros compromisos internacionales», sin cifra); SALF q13 (cinco años de residencia, no nacionalidad), q20 (el veto al Pacto Verde se justifica por el campo y la Ley de Restauración, no por los objetivos de emisiones) y q26 (gasto «dentro del 2 %», sin rechazar el 3,5 %)."
+  "Null confirmados: PP q07 (cuota cero solo para nuevos autónomos; mismo criterio que ERC q07), q13 (prioridad por arraigo, que «no podrán basarse exclusivamente en la nacionalidad», p. 40), q24 (endurece sanciones, no habla de la ley de 2015) y q26 («cumplir nuestros compromisos internacionales», sin cifra); SALF q13 (cinco años de residencia, no nacionalidad), q20 (el veto al Pacto Verde se justifica por el campo y la Ley de Restauración, no por los objetivos de emisiones) y q26 (gasto «dentro del 2 %», sin rechazar el 3,5 %).",
+  "Revisión de afirmaciones 13-nov (data/fase1/revision_afirmaciones_2026-11-13/): q02, q07, q10, q14 y q28 retiradas del cuestionario (sus celdas se conservan como historial y ya no se publican); q31-q35 añadidas y verificadas para los partidos de este grupo."
  ]
 }

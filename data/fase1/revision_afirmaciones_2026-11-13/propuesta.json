@@ -1,0 +1,1518 @@
+{
+ "meta": {
+  "fecha": "2026-11-13",
+  "autor": "Claude (Anthropic) — codificador, protocolo v2; pendiente de verificación independiente",
+  "reglas": [
+   "docs/prompts/2_codificacion_posiciones.md",
+   "data/fase1/auditoria_estandar_2026-11-12.md",
+   "docs/research/vaa_estado_del_arte.md",
+   "docs/research/auditoria_preguntas.md"
+  ],
+  "nota": "Propuesta: no modifica preguntas.json ni fase1.json. Las citas de programa se comprobaron con la normalización de pipeline/verify_quotes.py contra el texto catalogado en partidos.json; las de campaña, contra su copia local (fuente_local, sha256). Signo: + = a favor de la afirmación tal como está redactada."
+ },
+ "quitar": [
+  {
+   "id": "q02",
+   "tema": "Vivienda",
+   "motivo": "4 partidos con posición (Frente Amplio, Podemos, Adelante Andalucía, BNG), todos a favor y del mismo bloque. Se sustituye por q31 (renovación automática del alquiler), sobre la que hay posiciones enfrentadas de 11 partidos, que incluyen a los cuatro de q02 salvo Podemos (Frente Amplio, Adelante Andalucía y BNG a favor) y además PSOE, Compromís, EH Bildu, ERC, PP, PNV y Junts."
+  },
+  {
+   "id": "q07",
+   "tema": "Empleo y salarios",
+   "motivo": "Solo 2 partidos con posición (SALF y Adelante Andalucía, ambos +1). Se sustituye por q32 (salario mínimo autonómico), con 5 partidos y la primera posición documentada de PNV en el cuestionario, además de EH Bildu y Ara Més."
+  },
+  {
+   "id": "q14",
+   "tema": "Inmigración",
+   "motivo": "3 partidos (PP, Vox, SALF), todos a favor. Se sustituye por q33 (suprimir el reparto obligatorio de menores migrantes), con 5 partidos enfrentados (PP a favor; CC, PSOE, UPC y Adelante Andalucía en contra), que añade posiciones de CC, UPC y PSOE."
+  },
+  {
+   "id": "q27",
+   "tema": "Exterior y defensa",
+   "motivo": "3 partidos (PP, Vox, SALF), todos a favor, y muy ligada a un episodio concreto (la crisis de Ceuta de julio de 2026). Se sustituye por q34 (Sáhara Occidental), con 6 partidos de bloques distintos (BNG, ERC, Adelante Andalucía, SALF, CC y UPC)."
+  },
+  {
+   "id": "q28",
+   "tema": "Medio rural",
+   "motivo": "Solo 1 partido con posición (PP). No se encontró otra medida rural con posiciones documentadas de al menos cinco partidos; se sustituye por q35 (ampliar la prisión permanente revisable, tema Seguridad y justicia), con 5 partidos enfrentados (PP y SALF a favor; PNV, BNG y Adelante Andalucía en contra). Medio rural queda con una afirmación (q29) y Seguridad y justicia pasa a tres."
+  }
+ ],
+ "nuevas": [
+  {
+   "id": "q31",
+   "tema": "Vivienda",
+   "texto": "Que los contratos de alquiler de vivienda habitual se renueven automáticamente por periodos de cinco años si el inquilino quiere seguir.",
+   "contexto": "Hoy los contratos de alquiler de vivienda habitual duran al menos cinco años (siete si el propietario es una empresa) y después se prorrogan de año en año, hasta tres años más, si nadie avisa de que no quiere renovar. Un decreto-ley del Gobierno de octubre de 2026 los sustituía por renovaciones automáticas de cinco o siete años, con una indemnización de doce mensualidades si el propietario no renovaba; la Diputación Permanente del Congreso no lo convalidó el 12 de noviembre de 2026 y no está en vigor.",
+   "contexto_fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-26003",
+   "contexto_fuentes_adicionales": [
+    "https://www.infobae.com/espana/agencias/2026/11/11/congreso-aprueba-manana-salvo-sorpresa-el-decreto-de-vivienda-que-pp-derogara-si-gobierna/ (copia local data/sources/compromisos/psoe/infobae_20261111_decreto.txt)",
+    "idealista/news, 12-11-2026 (copia local data/sources/fase1/revision_2026-11-13/junts/20261112_idealista_diputacion_permanente_vivienda.txt)"
+   ],
+   "polaridad": "progresista",
+   "origen": [
+    {
+     "partido": "frente_amplio",
+     "tipo": "campaña",
+     "cita": "una de las medidas más efectivas para poner orden en el mercado del alquiler",
+     "pagina": null,
+     "url": "https://www.infobae.com/espana/agencias/2026/11/12/bustinduy-acusa-al-pp-vox-y-junts-de-impedir-que-5-millones-de-inquilinos-ahorren-4341/",
+     "sentido": "a_favor",
+     "ref": "revision_2026-11-13:frente_amplio#q31"
+    },
+    {
+     "partido": "eh_bildu",
+     "tipo": "campaña",
+     "cita": "La primera iniciativa que llevaremos al Congreso será no solo recuperar la prórroga automática de los contratos que las derechas tumbarán esta semana en el Congreso, sino que además plantearemos acabar con la compra especulativa de vivienda",
+     "pagina": null,
+     "url": "https://ehbildu.eus/es/noticias/eh-bildu-anuncia-que-planteara-recuperar-la-prorroga-automatica-de-los-contratos-de-alquiler-y-acabar-con-la-compra-especulativa-de-vivienda",
+     "sentido": "a_favor",
+     "ref": "revision_2026-11-13:eh_bildu#q31"
+    },
+    {
+     "partido": "bng",
+     "tipo": "programa",
+     "cita": "estabelecendo a renovación automática dos alugueiros, blindando por lei o carácter indefinido dos contratos de alugueiro",
+     "pagina": 12,
+     "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+     "sentido": "a_favor",
+     "ref": "revision_2026-11-13:bng#q31"
+    },
+    {
+     "partido": "adelante_andalucia",
+     "tipo": "programa",
+     "cita": "Alquileres de duración indefinida y prórroga sin subida, para acabar con los desahucios silenciosos",
+     "pagina": 49,
+     "url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf",
+     "sentido": "a_favor",
+     "ref": "revision_2026-11-13:adelante_andalucia#q31"
+    },
+    {
+     "partido": "compromis",
+     "tipo": "campaña",
+     "cita": "Apostarem pel lloguer indefinit.",
+     "pagina": null,
+     "url": "https://frontvalencia.org/",
+     "sentido": "a_favor",
+     "ref": "revision_2026-11-13:compromis#q31"
+    }
+   ],
+   "nota_revision": "Nueva el 13-nov-2026 (revisión de cobertura); sustituye a q02. Codificada para los 18 partidos en posiciones_nuevas."
+  },
+  {
+   "id": "q32",
+   "tema": "Empleo y salarios",
+   "texto": "Que cada comunidad autónoma pueda fijar su propio salario mínimo, por encima del estatal.",
+   "contexto": "Hoy el Gobierno fija cada año un único salario mínimo para toda España, tras consultar a sindicatos y empresarios (artículo 27 del Estatuto de los Trabajadores). Los convenios colectivos pueden pagar más, pero ninguna comunidad autónoma puede fijar un salario mínimo propio.",
+   "contexto_fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430",
+   "polaridad": "territorial",
+   "origen": [
+    {
+     "partido": "pnv",
+     "tipo": "programa",
+     "cita": "Reclamar, en el marco de un nuevo estatus político para Euskadi, la competencia plena para establecer un salario mínimo propio, adaptado al coste de vida y siempre por encima del mínimo estatal.",
+     "pagina": 9,
+     "url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n",
+     "sentido": "a_favor",
+     "ref": "revision_2026-11-13:pnv#q32"
+    },
+    {
+     "partido": "erc",
+     "tipo": "programa",
+     "cita": "Efectuar les modificacions normatives oportunes perquè el Govern de la Generalitat pugui establir un salari mínim interprofessional territorialitzat, superior al fixat a escala estatal",
+     "pagina": 20,
+     "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+     "sentido": "a_favor",
+     "ref": "revision_2026-11-13:erc#q32"
+    },
+    {
+     "partido": "bng",
+     "tipo": "programa",
+     "cita": "Aprobar a descentralización do SMI para que en Galiza teñamos competencia para mellorar o estatal.",
+     "pagina": 15,
+     "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+     "sentido": "a_favor",
+     "ref": "revision_2026-11-13:bng#q32"
+    }
+   ],
+   "nota_revision": "Nueva el 13-nov-2026 (revisión de cobertura); sustituye a q07. Codificada para los 18 partidos en posiciones_nuevas."
+  },
+  {
+   "id": "q33",
+   "tema": "Inmigración",
+   "texto": "Suprimir el reparto obligatorio entre comunidades autónomas de los menores migrantes que llegan solos a España.",
+   "contexto": "Desde marzo de 2025 (Real Decreto-ley 2/2025), la Ley de Extranjería permite al Estado ordenar el traslado de menores migrantes que llegan sin familia de una comunidad autónoma a otras cuando la primera declara una «contingencia migratoria extraordinaria» por superar su capacidad de acogida. Antes, esos traslados dependían de acuerdos voluntarios entre comunidades.",
+   "contexto_fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2000-544",
+   "polaridad": "conservadora",
+   "origen": [
+    {
+     "partido": "pp",
+     "tipo": "campaña",
+     "cita": "de tal forma que se modificará la ley de Extranjería para \"dejar de hablar ya de reparto\" de menores y comenzar a hablar \"de retorno\"",
+     "pagina": null,
+     "url": "https://www.infobae.com/espana/agencias/2026/10/16/semper-alude-a-cambios-en-extranjeria-para-hablar-de-retorno-y-no-de-reparto-de-menores/",
+     "sentido": "a_favor",
+     "ref": "revision_2026-11-13:pp#q33"
+    },
+    {
+     "partido": "cc",
+     "tipo": "programa",
+     "cita": "Solidaridad obligatoria y automática. Exigiremos que los mecanismos estatales de solidaridad territorial funcionen con indicadores de capacidad, plazos y financiación conocidos. Cuando un territorio de primera acogida supere los umbrales previstos, deberán activarse los traslados y la participación de otras comunidades autónomas sin depender de negociaciones caso a caso.",
+     "pagina": 19,
+     "url": "https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf",
+     "sentido": "en_contra",
+     "ref": "revision_2026-11-13:cc#q33"
+    }
+   ],
+   "nota_revision": "Nueva el 13-nov-2026 (revisión de cobertura); sustituye a q14. Codificada para los 18 partidos en posiciones_nuevas."
+  },
+  {
+   "id": "q34",
+   "tema": "Exterior y defensa",
+   "texto": "Que España apoye un referéndum de autodeterminación en el Sáhara Occidental, en lugar del plan de autonomía dentro de Marruecos.",
+   "contexto": "En 2022 el Gobierno pasó a considerar el plan de autonomía propuesto por Marruecos como la base más seria, realista y creíble para resolver el conflicto del Sáhara Occidental. En octubre de 2025 el Consejo de Seguridad de la ONU (resolución 2797) pidió negociar tomando como base ese plan. El Frente Polisario reclama el referéndum de autodeterminación que la ONU previó en 1991.",
+   "contexto_fuente": "https://docs.un.org/es/S/RES/2797(2025)",
+   "polaridad": "progresista",
+   "origen": [
+    {
+     "partido": "bng",
+     "tipo": "programa",
+     "cita": "Anular o cambio de posición do goberno español a respecto do dereito á autodeterminación do pobo saharauí, condenando enerxicamente a ocupación marroquí do Sáhara Occidental, e instando a que o Estado español impulse un referendo de autodeterminación con garantías democráticas.",
+     "pagina": 90,
+     "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+     "sentido": "a_favor",
+     "ref": "revision_2026-11-13:bng#q34"
+    },
+    {
+     "partido": "erc",
+     "tipo": "programa",
+     "cita": "El govern espanyol ha de revertir la posició respecte el Sàhara adoptada l’any 2022 i assumir les resolucions del Tribunal de Justícia de la Unió Europea que anul·len els acords UE-Marroc per haver-se pres sense el consentiment del poble sahrauí.",
+     "pagina": 16,
+     "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+     "sentido": "a_favor",
+     "ref": "revision_2026-11-13:erc#q34"
+    },
+    {
+     "partido": "adelante_andalucia",
+     "tipo": "programa",
+     "cita": "apoyo al derecho de autodeterminación saharaui. [...] el Sáhara sigue esperando su referéndum.",
+     "pagina": 109,
+     "url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf",
+     "sentido": "a_favor",
+     "ref": "revision_2026-11-13:adelante_andalucia#q34"
+    },
+    {
+     "partido": "salf",
+     "tipo": "programa",
+     "cita": "Sáhara: se retira la carta de Sánchez.",
+     "pagina": 38,
+     "url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf",
+     "sentido": "a_favor",
+     "ref": "revision_2026-11-13:salf#q34"
+    }
+   ],
+   "nota_revision": "Nueva el 13-nov-2026 (revisión de cobertura); sustituye a q27. Codificada para los 18 partidos en posiciones_nuevas."
+  },
+  {
+   "id": "q35",
+   "tema": "Seguridad y justicia",
+   "texto": "Ampliar la prisión permanente revisable a más delitos, como algunos delitos sexuales graves.",
+   "contexto": "La prisión permanente revisable es la pena más grave del Código Penal desde 2015. Hoy se aplica a delitos como el asesinato de un menor de 16 años o tras una agresión sexual, el asesinato de más de dos personas o el terrorismo con muertos. Tras cumplir al menos 25 años, un tribunal revisa si el condenado puede salir.",
+   "contexto_fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444",
+   "polaridad": "conservadora",
+   "origen": [
+    {
+     "partido": "pp",
+     "tipo": "programa",
+     "cita": "AMPLIAREMOS LA PRISIÓN PERMANENTE REVISABLE A QUIEN HAGA DESAPARECER A SU VÍCTIMA Y A LOS DEPREDADORES SEXUALES. Se aplicará al asesino que oculte el cadáver o se niegue a revelar dónde está, y a los depredadores sexuales, pederastas y violadores reincidentes.",
+     "pagina": 20,
+     "url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+     "sentido": "a_favor",
+     "ref": "revision_2026-11-13:pp#q35"
+    },
+    {
+     "partido": "salf",
+     "tipo": "programa",
+     "cita": "Prisión permanente revisable por violación a menores o con lesiones graves.",
+     "pagina": 8,
+     "url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf",
+     "sentido": "a_favor",
+     "ref": "revision_2026-11-13:salf#q35"
+    },
+    {
+     "partido": "pnv",
+     "tipo": "programa",
+     "cita": "Rechazar la prisión permanente revisable y defender un sistema penitenciario orientado a la reeducación y la reinserción",
+     "pagina": 27,
+     "url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n",
+     "sentido": "en_contra",
+     "ref": "revision_2026-11-13:pnv#q35"
+    },
+    {
+     "partido": "bng",
+     "tipo": "programa",
+     "cita": "Derrogación da prisión permanente revisábel, por ser unha forma encuberta de manter a cadea perpetua",
+     "pagina": 30,
+     "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+     "sentido": "en_contra",
+     "ref": "revision_2026-11-13:bng#q35"
+    }
+   ],
+   "nota_revision": "Nueva el 13-nov-2026 (revisión de cobertura); sustituye a q28. Codificada para los 18 partidos en posiciones_nuevas."
+  }
+ ],
+ "posiciones_nuevas": {
+  "pp": {
+   "q31": {
+    "valor": -1,
+    "fuente": "campaña",
+    "cita": "Voy a derogar esos decretos porque son malos para los inquilinos y para los propietarios",
+    "pagina": null,
+    "url": "https://theobjective.com/espana/politica/2026-11-12/feijoo-sobre-pactar-con-abascal-y-la-vivienda-si-el-pp-no-tiene-mayoria-la-tendre-que-completar-el-decreto-maricarmen-es-malo-para-propietarios-e-inquilinos/",
+    "medio": "The Objective",
+    "fecha": "2026-11-11",
+    "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+    "formato": "entrevista (El Hormiguero, Antena 3)",
+    "marco": null,
+    "nota": "Feijóo anuncia que derogará «esos decretos» (los dos decretos-ley de vivienda del 6-oct, entre ellos el de la renovación automática de cinco o siete años), un día antes de que la Diputación Permanente los votara. Derogación en bloque y reactiva, sin nombrar la renovación quinquenal ni proponer otra cosa sobre la duración de los contratos: regla (b), −1. El programa del PP no trata la duración ni la prórroga de los contratos de alquiler.",
+    "fuente_local": "data/sources/fase1/revision_2026-11-13/pp/20261111_theobjective_decretos_vivienda.txt",
+    "sha256": "831b8b0f2ba61a6b5d46ab61f48ce317d8790fd991e4fff9e37411415ca71bf3"
+   },
+   "q32": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa del 29N buscado (texto completo y extracción): solo trata el salario mínimo para eximirlo del IRPF y para la cuota de autónomos (pp. 59-60); nada sobre salarios mínimos autonómicos. Sin declaraciones de líderes localizadas."
+   },
+   "q33": {
+    "valor": 2,
+    "fuente": "campaña",
+    "cita": "de tal forma que se modificará la ley de Extranjería para \"dejar de hablar ya de reparto\" de menores y comenzar a hablar \"de retorno\"",
+    "pagina": null,
+    "url": "https://www.infobae.com/espana/agencias/2026/10/16/semper-alude-a-cambios-en-extranjeria-para-hablar-de-retorno-y-no-de-reparto-de-menores/",
+    "medio": "Infobae (EFE)",
+    "fecha": "2026-10-16",
+    "quien": "Borja Sémper, portavoz nacional y vicesecretario del PP",
+    "formato": "declaraciones a los medios (Tenerife)",
+    "marco": null,
+    "nota": "Sémper, portavoz nacional del PP, anuncia que se modificará la Ley de Extranjería para «dejar de hablar ya de reparto» de menores y hablar «de retorno»: propuesta propia y expresa de suprimir el reparto para la próxima legislatura, +2. El programa (p. 23) apunta en la misma línea («promoveremos el regreso de los menores con sus familias como objetivo prioritario»), sin mencionar el reparto.",
+    "fuente_local": "data/sources/fase1/revision_2026-11-13/pp/20261016_infobae_menores.txt",
+    "sha256": "65e643d1b09aaf9d24e14641a545e02613186d1d5abd1ae81174281a76af9b0c"
+   },
+   "q34": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa del 29N buscado (texto completo y extracción): «Apoyaremos los esfuerzos de Naciones Unidas en el Sáhara Occidental para alcanzar una solución política justa, duradera y mutuamente aceptable para las partes» (p. 74). Es la fórmula de la ONU y no elige entre referéndum y plan de autonomía: null. Buscado Feijóo, Tellado, Bendodo, Muñoz y otros: en El Hormiguero (11-nov) Feijóo habla de Marruecos («vamos a sentarnos en serio», Ceuta, el móvil de Sánchez) sin mencionar el Sáhara, el plan de autonomía ni la carta de 2022. Las peticiones de recuperar la «neutralidad activa» son de 2024 (fuera de plazo). Sin declaración desde el 6-oct."
+   },
+   "q35": {
+    "valor": 2,
+    "fuente": "programa",
+    "cita": "AMPLIAREMOS LA PRISIÓN PERMANENTE REVISABLE A QUIEN HAGA DESAPARECER A SU VÍCTIMA Y A LOS DEPREDADORES SEXUALES. Se aplicará al asesino que oculte el cadáver o se niegue a revelar dónde está, y a los depredadores sexuales, pederastas y violadores reincidentes.",
+    "pagina": 20,
+    "url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-10",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Propuesta expresa de ampliarla (medida 30): +2."
+   }
+  },
+  "upn": {
+   "q31": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Candidato descartado: Sergio Sayas (12-nov, Diputación Permanente) habla como portavoz adjunto del PP, no en un acto de la coalición, y lo entrecomillado es una crítica genérica a «unos decretos» y a los precios; la frase sobre «culpabilizar a quien pone su piso en alquiler» va en estilo indirecto y no nombra la prórroga quinquenal (la crónica describe el decreto convalidado). Las declaraciones de Feijóo no se hicieron para la candidatura UPN-PP."
+   },
+   "q32": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Sin declaraciones sobre salarios mínimos autonómicos."
+   },
+   "q33": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Buscado: solo constan posiciones de UPN en el Parlamento de Navarra (septiembre de 2026, Cristina López, no líder) y de un alcalde; fuera de plazo y sin líder."
+   },
+   "q34": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Sin declaraciones."
+   },
+   "q35": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Solo consta la proposición PP-UPN de marzo de 2026 para ampliar la prisión permanente (iniciativa/votación parlamentaria anterior a la convocatoria, no declaración de campaña)."
+   }
+  },
+  "psoe": {
+   "q31": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "No, yo creo que es un debate necesario que tenemos que dar y que es pertinente porque existe en otras partes de Europa. Es verdad que es un debate avanzado para el estado actual del debate en España, pero el Gobierno y el Partido Socialista lo apoyan también.",
+    "pagina": null,
+    "url": "https://www.eldiario.es/politica/pedro-sanchez-hora-parlamento-parezca-calle-no-viven-aticazos_1_13569153.html",
+    "medio": "elDiario.es",
+    "fecha": "2026-10-07",
+    "quien": "Pedro Sánchez, secretario general del PSOE y candidato a la Presidencia del Gobierno",
+    "formato": "entrevista (pregunta-respuesta; grabada el 7 y 8-oct, publicada el 9-oct)",
+    "marco": null,
+    "nota": "Sánchez responde a una pregunta expresa sobre el «alquiler indefinido» con indemnización al inquilino (el decreto de la renovación automática, que su Gobierno aprobó): «el Gobierno y el Partido Socialista lo apoyan también». +1 y no +2 por el matiz «es un debate avanzado para el estado actual del debate en España». Fecha de la entrevista (7-oct) posterior a la convocatoria. No consta que el PSOE se comprometa a reaprobarlo tras el rechazo del 12-nov; el programa se presenta el 15-nov.",
+    "fuente_local": "data/sources/compromisos/psoe/eldiario_20261009_entrevista.txt",
+    "sha256": "9ca5ce224d067f4ad395f6adb0b91e5bd5cc395b8748b00442f9507b234f6b53"
+   },
+   "q32": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Buscado SMI autonómico/propio: el PSOE solo promete subir el SMI estatal cada año (psoe-c03), medida distinta. Sin declaración sobre salarios mínimos por comunidad."
+   },
+   "q33": {
+    "valor": -1,
+    "fuente": "campaña",
+    "cita": "cuya solución pasaría por que sean distribuidos por el resto del territorio español, \"salvo que el presidente (Juan Jesús) Vivas quiera que se queden en Ceuta, lo que sería un error.",
+    "pagina": null,
+    "url": "https://www.infobae.com/espana/agencias/2026/10/22/torres-defiende-que-los-menores-migrantes-en-ceuta-se-distribuyan-en-la-peninsula-salvo-que-vivas-quiera-que-se-queden/",
+    "medio": "Infobae (agencias)",
+    "fecha": "2026-10-22",
+    "quien": "Ángel Víctor Torres, secretario general del PSOE de Canarias y ministro de Política Territorial",
+    "formato": "entrevista (Televisión Canaria)",
+    "marco": null,
+    "nota": "Ángel Víctor Torres (ministro, secretario general del PSOE canario y candidato) defiende que los menores llegados a Ceuta se distribuyan por el resto de España: «salvo que el presidente (Juan Jesús) Vivas quiera que se queden en Ceuta, lo que sería un error». Cita parcial (lo entrecomillado contiene la posición y el medio nombra la medida). Defiende el reparto que permite hoy la ley frente al PP, sin proponer nada nuevo: −1. Dudoso por ser cita parcial: si el verificador la considera justificación, null.",
+    "fuente_local": "data/sources/fase1/revision_2026-11-13/psoe/20261022_infobae_menores.txt",
+    "sha256": "8a819daad18bd9e278a86abc5417c5fbf1a7adfb81a306ccf1d5ce7480fbf154"
+   },
+   "q34": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Buscado Sánchez/Albares sobre el Sáhara en campaña. Solo constan declaraciones de Albares de 2025 de apoyo al plan de autonomía (fuera de plazo). En la entrevista de elDiario.es (7-oct) Sánchez habla de Marruecos como socio estratégico, sin mencionar el Sáhara ni el plan de autonomía."
+   },
+   "q35": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Buscado: sin declaraciones de campaña. Solo la votación de marzo de 2026 contra la ampliación propuesta por PP-UPN (las votaciones no son fuente)."
+   }
+  },
+  "psc": {
+   "q31": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Buscado: Illa (16-oct) defiende «els decrets» sin distinguir cuál ni comprometer medida; Hereu (9-nov) lamenta que Junts tumbara «los decretos de vivienda»; Moret (22-oct) defiende la continuidad de las políticas de vivienda. Nada sobre la prórroga quinquenal."
+   },
+   "q32": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Buscado salari mínim propi/de referència: el Parlament tramitó el 21-oct la ley de Junts de salario mínimo de referencia (orientativo, no un SMI autonómico); el PSC retiró su enmienda y votó la tramitación, pero habló una diputada (no líder) y las votaciones no son fuente. Los líderes del PSC solo defienden subir el SMI estatal."
+   },
+   "q33": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Buscado: Illa se ofreció a acoger menores de Ceuta en agosto de 2026 (fuera de plazo, solo en crónica de terceros). Sin declaración en campaña."
+   },
+   "q34": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Sin declaraciones de líderes del PSC sobre el Sáhara."
+   },
+   "q35": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Sin declaraciones de líderes del PSC sobre la prisión permanente revisable."
+   }
+  },
+  "vox": {
+   "q31": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Vox se opuso a los dos decretos en la Diputación Permanente (12-nov), pero solo en estilo indirecto del periodista («Vox, también en contra de ambos textos»); lo entrecomillado de Figaredo («un supuesto decreto ley salvador») es una crítica genérica a la acción del Gobierno, sin nombrar la renovación automática. La cita de Hernández Quero se refiere al decreto antidesahucios. El voto no es fuente. Ante la duda, null."
+   },
+   "q32": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "No se encontró ninguna declaración de líderes de Vox desde el 6-oct sobre salarios mínimos autonómicos; los textos locales sobre el SMI (Figaredo, IRPF) tratan de impuestos, no de quién fija el salario mínimo."
+   },
+   "q33": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Abascal se opone a acoger a los menores no acompañados, pero lo que consta es otra medida: devolverlos («lo primero que hay que hacer es ponerlos en la frontera», El Periódico vía Demócrata/EP 8-nov, copia local 2026-11-08_democrata_ep_elperiodico.txt; «deben regresar con sus familias», en estilo indirecto, Palma 24-oct). Una medida relacionada pero distinta no es posición sobre el reparto obligatorio. El rechazo expreso a «cualquier reparto» es de los consejeros autonómicos de Vox en agosto de 2026 (eldiario.es, El Español): anterior a la convocatoria y sin referencia a estas elecciones."
+   },
+   "q34": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "No se encontró ninguna declaración de líderes de Vox desde el 6-oct sobre el Sáhara Occidental (referéndum o plan de autonomía). El programa habla de «revisar las relaciones diplomáticas con Marruecos» (resumen de prensa, no vale y es otra medida)."
+   },
+   "q35": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "El programa propone «ampliar la prisión permanente revisable» (sería −2), pero solo consta en resúmenes de prensa del programa (Infobae/EP, OKDiario, El Debate, 12-nov), que no valen. No se encontró cita de Abascal ni de otro líder desde el 6-oct; las de «cadena perpetua» de Abascal son de 2018."
+   }
+  },
+  "frente_amplio": {
+   "q31": {
+    "valor": 2,
+    "fuente": "campaña",
+    "cita": "una de las medidas más efectivas para poner orden en el mercado del alquiler",
+    "pagina": null,
+    "url": "https://www.infobae.com/espana/agencias/2026/11/12/bustinduy-acusa-al-pp-vox-y-junts-de-impedir-que-5-millones-de-inquilinos-ahorren-4341/",
+    "medio": "Infobae (EFE)",
+    "fecha": "2026-11-12",
+    "quien": "Pablo Bustinduy, portavoz de campaña del Frente Amplio y ministro de Derechos Sociales, Consumo y Agenda 2030",
+    "formato": "debate (discurso en la Diputación Permanente del Congreso)",
+    "marco": null,
+    "nota": "Bustinduy, ministro y portavoz de campaña, defiende en la Diputación Permanente el decreto de renovación automática (prórrogas de cinco o siete años con indemnización de doce mensualidades), que él mismo presentó: «una de las medidas más efectivas para poner orden en el mercado del alquiler». Cita parcial válida: el medio nombra la medida («En defensa del decreto de renovación automática de los alquileres»). Propuesta propia y prioritaria: +2.",
+    "fuente_local": "data/sources/fase1/revision_2026-11-13/frente_amplio/20261112_infobae_bustinduy_renovacion_automatica.txt",
+    "sha256": "24330093a6c8703653af6fdf76f8f1b1ae366d153cadb3c3fcdefcb2ab470fb1"
+   },
+   "q32": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "El Frente Amplio promete «seguir elevando» el SMI estatal (Delgado, Colau); nada sobre salarios mínimos autonómicos. Medida distinta."
+   },
+   "q33": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Sin declaraciones de Bustinduy, Colau, Urtasun, Maíllo ni Delgado sobre el reparto obligatorio de menores en la campaña. Lo que consta (Sumar copatrocinó la reforma de 2025, la ministra Sira Rego habla en oct-2026 como ministra) son votaciones o actos de gobierno, no posiciones de campaña; tupapeleta.es es agregador."
+   },
+   "q34": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Tesh Sidi (nº 2 por Madrid, no es líder según el protocolo) defiende la autodeterminación, pero no se ha localizado cita suya en campaña sobre el plan de autonomía; las piezas de noteolvidesdelsaharaoccidental.org (20 y 22-oct) no traen ninguna cita de un líder del Frente Amplio sobre el referéndum."
+   },
+   "q35": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Solo consta Enrique Santiago (Sumar) en marzo de 2026 calificando de «trumpista» la ampliación del PP: fuera de plazo y no es líder. Sin reacción de campaña a la propuesta del PP del 10/11-nov."
+   }
+  },
+  "podemos": {
+   "q31": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "La única cita literal de Montero sobre «alquileres indefinidos» es la entrevista de elDiario.es del 30-sep (descartada: anterior a la convocatoria y referida a los decretos del Gobierno saliente, no a estas elecciones). En la Diputación Permanente del 12-nov Belarra solo pidió «prohibir todos los desahucios» (decreto antidesahucios) y el voto a favor del decreto de renovación no es fuente. No se ha encontrado cita de campaña sobre la prórroga quinquenal o los contratos indefinidos; podemos.info devuelve 403 y su feed no tiene notas de campaña."
+   },
+   "q32": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Podemos propone un SMI estatal de 1.800 € por ley (podemos-c05); no consta nada sobre salarios mínimos autonómicos. Medida distinta."
+   },
+   "q33": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Búsqueda sobre el reparto de menores de Ceuta (oct-nov 2026): sin declaraciones de Montero, Belarra ni otros líderes de Podemos. En la entrevista de 30-sep Montero habla de Ceuta y Frontex, no del reparto, y está fuera de plazo."
+   },
+   "q34": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Montero y Belarra han defendido la autodeterminación saharaui (ene-2026, feb-2026, manifiesto de 2025), pero todas las declaraciones localizadas son anteriores al 6-oct y no se refieren a estas elecciones. Sin cita en campaña."
+   },
+   "q35": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Rechazo histórico (votación de mar-2026, declaraciones de 2018): votaciones y otras legislaturas no valen. Sin reacción localizada de Montero o Belarra a la propuesta del PP de ampliarla (programa del 10/11-nov)."
+   }
+  },
+  "compromis": {
+   "q31": {
+    "valor": 2,
+    "fuente": "campaña",
+    "cita": "Apostarem pel lloguer indefinit.",
+    "pagina": null,
+    "url": "https://frontvalencia.org/",
+    "medio": "Compromís: Front Valencià (web electoral)",
+    "fecha": "2026-11-12",
+    "quien": "Compromís: Front Valencià (web electoral de la candidatura, apartado «Programa»)",
+    "formato": "documento oficial",
+    "marco": null,
+    "nota": "Documento oficial de la candidatura (web electoral): «Apostarem pel lloguer indefinit». Un contrato indefinido va más allá de la renovación automática por cinco años e incluye su efecto (el inquilino sigue si quiere): +2, mismo criterio que el BNG y Adelante Andalucía.",
+    "fuente_local": "data/sources/compromisos/compromis/frontvalencia_web_campana.txt",
+    "sha256": "d0a2ebc08f068f5ec5ee896e43b853aeb5c119b870df5dce9287d18258fb5a9d"
+   },
+   "q32": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "La web electoral dice «Augmentarem els salaris per a recuperar poder adquisitiu» y Micó habla de subir el SMI estatal; nada sobre un SMI valenciano propio."
+   },
+   "q33": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Sin declaraciones de Micó o Baldoví sobre el reparto obligatorio de menores en las copias locales ni en la búsqueda."
+   },
+   "q34": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Hay apoyos de Compromís a la autodeterminación saharaui en mociones de 2022 y en un manifiesto de 2025 (Ibáñez): fuera de plazo y sin cita de un líder en campaña."
+   },
+   "q35": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Sin declaraciones de los líderes sobre la prisión permanente revisable en campaña."
+   }
+  },
+  "upc": {
+   "q31": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Sin posición. El Manifiesto pide regular precios en zonas tensionadas y evitar «que las familias sean expulsadas de sus hogares», sin hablar de prórroga o renovación automática. Ninguna declaración de Campos ni de Marisol Collado sobre el decreto de la prórroga automática."
+   },
+   "q32": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Decisión pedida: null. El Manifiesto (eje 10, p. 4) dice «Rechazamos que se elimine el papel del Estado en la actualización del salario mínimo interprofesional». Rechaza que el Estado deje de fijar el SMI, pero un salario mínimo autonómico superior al estatal mantiene el SMI estatal como suelo, así que la frase no es una posición sobre la afirmación (ni a favor ni en contra). Campos (Canarias7, 4-nov) solo pide «seguir incrementando el salario mínimo interprofesional», el estatal. Medida relacionada pero distinta: null."
+   },
+   "q33": {
+    "valor": -1,
+    "fuente": "campaña",
+    "cita": "Exigimos una protección específica de la infancia y adolescencia migrante no acompañada, garantizando sus derechos y una distribución solidaria de las responsabilidades de acogida.",
+    "pagina": 4,
+    "url": "https://www.unidadpueblocanario.org/documentos/manifiesto-upc.pdf",
+    "medio": "Unidad del Pueblo Canario (Manifiesto electoral)",
+    "fecha": "2026-11-03",
+    "quien": "Unidad del Pueblo Canario (Manifiesto electoral del 29N)",
+    "formato": "documento oficial",
+    "marco": null,
+    "nota": "Manifiesto electoral (documento oficial, p. 4-5): pide «una distribución solidaria de las responsabilidades de acogida» de la infancia migrante no acompañada. No dice «obligatoria»: −1.",
+    "fuente_local": "data/sources/programas/upc/manifiesto-upc.txt",
+    "sha256": "163b654cf480dd07a3c881969fbab1df25fbd283a39055b38ceef3098ff2af0d"
+   },
+   "q34": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "Expresamos nuestra solidaridad con los pueblos palestino y saharaui en su lucha por la autodeterminación y la independencia",
+    "pagina": 5,
+    "url": "https://www.unidadpueblocanario.org/documentos/manifiesto-upc.pdf",
+    "medio": "Unidad del Pueblo Canario (Manifiesto electoral)",
+    "fecha": "2026-11-03",
+    "quien": "Unidad del Pueblo Canario (Manifiesto electoral del 29N)",
+    "formato": "documento oficial",
+    "marco": null,
+    "nota": "Manifiesto electoral (documento oficial, p. 5): solidaridad con el pueblo saharaui «en su lucha por la autodeterminación y la independencia». Apoyo a la autodeterminación sin pronunciarse sobre la política del Gobierno: +1.",
+    "fuente_local": "data/sources/programas/upc/manifiesto-upc.txt",
+    "sha256": "163b654cf480dd07a3c881969fbab1df25fbd283a39055b38ceef3098ff2af0d"
+   },
+   "q35": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Sin posición en el Manifiesto ni en declaraciones de Campos."
+   }
+  },
+  "ara_mes_fa": {
+   "q31": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "El 12-nov Gomila reclamó «contractes indefinits», pero solo en estilo indirecto (VilaWeb/EFE). Las notas oficiales leídas (3, 6, 10, 10 y 12-nov) no lo mencionan. Sin cita en primera persona."
+   },
+   "q32": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "La proposta pren com a referència la reivindicació d'un SMI balear propi, adaptat al cost de la vida a les Illes.",
+    "pagina": null,
+    "url": "https://aramesfrontampli.cat/noticies/ara-mesfront-ampli-proposa-un-complement-balear-a-les-pensions-per-garantir-una-jubilacio-digna",
+    "medio": "Ara Més–Front Ampli (nota de prensa, aramesfrontampli.cat)",
+    "fecha": "2026-11-10",
+    "quien": "Ara Més–Front Ampli (nota oficial; presenta la propuesta Carme Gomila, cabeza de lista)",
+    "formato": "documento oficial",
+    "marco": null,
+    "nota": "Nota oficial (10-nov): su complemento de pensiones «pren com a referència la reivindicació d'un SMI balear propi, adaptat al cost de la vida a les Illes». +1 y no +2: el SMI balear es la referencia de otra propuesta, no una medida por sí misma.",
+    "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261110_complement_pensions.txt",
+    "sha256": "0643f03fa19cb17f5da9da40858a091e9e453c4a12fe719dccb066a4a8dc1ea7"
+   },
+   "q33": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Sin declaraciones de Gomila ni notas oficiales sobre el reparto de menores migrantes."
+   },
+   "q34": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Sin declaraciones sobre el Sáhara Occidental."
+   },
+   "q35": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Sin declaraciones sobre la prisión permanente revisable."
+   }
+  },
+  "erc": {
+   "q31": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "La iniciativa planteja establir, per als grans tenidors i en els supòsits que determini la norma, l’obligació de prorrogar els contractes d’arrendament i, quan aquesta pròrroga no es produeixi en els casos previstos, garantir una indemnització al llogater.",
+    "pagina": null,
+    "url": "https://www.esquerra.cat/erc-registra-una-regulacio-catalana-del-contracte-darrendament-per-garantir-mes-estabilitat-als-llogaters/",
+    "medio": "esquerra.cat (nota oficial)",
+    "fecha": "2026-10-07",
+    "quien": "ERC (nota oficial del partido); anuncio de Ester Capella, portaveu d'ERC al Parlament",
+    "formato": "nota oficial",
+    "marco": null,
+    "nota": "Nota oficial de ERC (7-oct, tras la convocatoria): proposición para el Código civil catalán que obliga a prorrogar los contratos de los grandes tenedores e indemnizar al inquilino si no se renueva. Va en la línea de la afirmación, pero solo para grandes tenedores y «en los supuestos que determine la norma»: +1. El programa de ERC no trata la duración de los contratos (pide delegar en la Generalitat la ley de arrendamientos, medida 55).",
+    "fuente_local": "data/sources/fase1/revision_2026-11-13/erc/20261007_esquerra_arrendament.txt",
+    "sha256": "298e3a8557913ffb056f0377c46b3d0c8c3514519327331271b011c95bda7c3a"
+   },
+   "q32": {
+    "valor": 2,
+    "fuente": "programa",
+    "cita": "Efectuar les modificacions normatives oportunes perquè el Govern de la Generalitat pugui establir un salari mínim interprofessional territorialitzat, superior al fixat a escala estatal",
+    "pagina": 20,
+    "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-05",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Medida 67: transferir a la Generalitat la competencia para fijar un salario mínimo catalán de 1.460 €, superior al estatal: +2. Lo repite una nota oficial de ERC del 6-nov (data/sources/fase1/revision_2026-11-13/erc/20261106_esquerra_salari_minim.txt)."
+   },
+   "q33": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa del 29N buscado (texto completo y extracción): no trata el reparto de menores entre comunidades (pide las competencias integrales de migración para Cataluña, medida 35). Buscado: WebSearch (ERC/Rufián/Jordà/Vallugera + reparto obligatorio de menores migrantes, ES y CA) y esquerra.cat (menors) desde el 1-sep. Solo aparecen crónicas sobre el reparto de menores de Ceuta con posiciones de PP, Junts y gobiernos autonómicos; ninguna declaración de ERC posterior al 6-oct."
+   },
+   "q34": {
+    "valor": 2,
+    "fuente": "programa",
+    "cita": "El govern espanyol ha de revertir la posició respecte el Sàhara adoptada l’any 2022 i assumir les resolucions del Tribunal de Justícia de la Unió Europea que anul·len els acords UE-Marroc per haver-se pres sense el consentiment del poble sahrauí.",
+    "pagina": 16,
+    "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-05",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Medida 43, «Defensar el dret a l'autodeterminació arreu»: revertir el apoyo de 2022 al plan marroquí, dentro de una medida sobre la autodeterminación: +2."
+   },
+   "q35": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa del 29N buscado (texto completo y extracción): no trata la prisión permanente revisable. Buscado: WebSearch (ERC + prisión permanente revisable) y esquerra.cat (presó). Sin resultados pertinentes desde el 6-oct."
+   }
+  },
+  "junts": {
+   "q31": {
+    "valor": -1,
+    "fuente": "campaña",
+    "cita": "Sus decretos leyes no resuelven el problema, usted miente, señor ministro, ¿por qué si no, pusieron en el decreto que entraba en vigor el 15 de noviembre, por qué esperar un mes si era una medida, según ustedes, tan urgente? Es populismo. Una estafa política y electoralista",
+    "pagina": null,
+    "url": "https://www.idealista.com/news/inmobiliario/vivienda/2026/11/12/923779-la-diputacion-permanente-convalida-el-decreto-de-vivienda-y-rechaza-el-de",
+    "medio": "idealista/news",
+    "fecha": "2026-11-12",
+    "quien": "Josep Maria Cruset, portavoz adjunto de Junts en el Congreso y cabeza de lista por Tarragona",
+    "formato": "debate (Diputación Permanente del Congreso, convalidación del RDL 28/2026)",
+    "marco": null,
+    "nota": "Cruset interviene en la Diputación Permanente del 12-nov contra el ministro Bustinduy, que acababa de defender el decreto de renovación automática; menciona «el decreto que entraba en vigor el 15 de noviembre». Rechazo reactivo, sin propuesta propia: regla (b), −1. Dudoso: lo entrecomillado critica «sus decretos leyes» en plural; si el verificador no lo considera referido a la renovación automática, null.",
+    "fuente_local": "data/sources/fase1/revision_2026-11-13/junts/20261112_idealista_diputacion_permanente_vivienda.txt",
+    "sha256": "0b477c553e52c146bd5592b3984fc6e732403c62c334d75968c0fbd6a6baf62a"
+   },
+   "q32": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Candidato descartado: Salvador Vergés, portavoz de Junts en el Parlament (líder regional), 20-oct, defiende un «salari mínim de referència català» de unos 1.450 euros. Pero es una proposición de ley autonómica sobre una referencia no vinculante: admite que no tienen la competencia («no disposar de la competència per fixar el salari mínim interprofessional “no pot ser una excusa per quedar-se de braços plegats”»). No pide que la comunidad pueda fijar un salario mínimo legal y no es un compromiso para el Congreso. Es una medida relacionada pero distinta: null. Copia local data/sources/compromisos/junts/junts_salari_20261020.txt, sha256 182107b4591a498f286d595ffc00a3b18b226553202ebb1b4972353e15078c97."
+   },
+   "q33": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Nogueras exigió en agosto de 2026 que Cataluña quedara fuera del reparto de los menores llegados a Ceuta («ni un voto» al Gobierno; El Debate, Moncloa.com, Diari de Tarragona, 5 y 26 de agosto). Es anterior a la convocatoria y no se refiere a estas elecciones. Además, pide excluir a Cataluña, no rechaza el reparto en general. No se encontró que lo repitiera desde el 6-oct."
+   },
+   "q34": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "No se encontró ninguna declaración de líderes de Junts desde el 6-oct sobre el Sáhara Occidental."
+   },
+   "q35": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "No se encontró ninguna declaración de líderes de Junts desde el 6-oct sobre la prisión permanente revisable. Su ley contra la multirreincidencia es otra medida."
+   }
+  },
+  "eh_bildu": {
+   "q31": {
+    "valor": 2,
+    "fuente": "campaña",
+    "cita": "La primera iniciativa que llevaremos al Congreso será no solo recuperar la prórroga automática de los contratos que las derechas tumbarán esta semana en el Congreso, sino que además plantearemos acabar con la compra especulativa de vivienda",
+    "pagina": null,
+    "url": "https://ehbildu.eus/es/noticias/eh-bildu-anuncia-que-planteara-recuperar-la-prorroga-automatica-de-los-contratos-de-alquiler-y-acabar-con-la-compra-especulativa-de-vivienda",
+    "medio": "EH Bildu (nota oficial, ehbildu.eus); la misma frase, en Última Hora (Europa Press), 9-nov",
+    "fecha": "2026-11-09",
+    "quien": "Oskar Matute, cabeza de lista de EH Bildu al Congreso por Bizkaia y próximo portavoz del grupo",
+    "formato": "intervención en Nueva Economía Fórum (Bilbao), recogida entre comillas en la nota oficial",
+    "marco": null,
+    "nota": "Matute anuncia como «primera iniciativa» en el Congreso «recuperar la prórroga automática de los contratos que las derechas tumbarán esta semana», es decir, el decreto de renovación automática rechazado el 12-nov (no el antidesahucios, que se convalidó). Propuesta propia y prioritaria: +2.",
+    "fuente_local": "data/sources/compromisos/eh_bildu/ehb_forum_20261109.txt",
+    "sha256": "120c63ba5da97d416c30a2d43b8241ffeaf0854754f3fd766d036258668aee46"
+   },
+   "q32": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "Ambos han ratificado las dos principales reivindicaciones de la huelga: el salario mínimo propio, también reivindicado en la huelga general del 17 de marzo, y las transformaciones estructurales para garantizar el derecho a la vivienda.",
+    "pagina": null,
+    "url": "https://ehbildu.eus/es/noticias/eh-bildu-y-lab-hacen-un-llamamiento-a-garantizar-una-vivienda-digna-y-unos-salarios-dignos-y-a-hacer-frente-a-la-extrema-derecha",
+    "medio": "EH Bildu (nota oficial, ehbildu.eus)",
+    "fecha": "2026-11-12",
+    "quien": "EH Bildu (nota oficial de la reunión pública con LAB; por EH Bildu participaron Arkaitz Rodríguez, secretario de Acción Política, y Oihana Etxebarrieta, cabeza de lista al Congreso por Gipuzkoa)",
+    "formato": "documento oficial",
+    "marco": null,
+    "nota": "Nota oficial de EH Bildu (12-nov) con LAB: ratifica «el salario mínimo propio» como reivindicación principal. +1 y no +2: la nota no dice que deba estar por encima del estatal y se refiere a Euskal Herria, no a cada comunidad autónoma; la intención de superar el estatal se deduce de la huelga que cita, pero no está escrita.",
+    "fuente_local": "data/sources/compromisos/eh_bildu/ehb_lab_20261112.txt",
+    "sha256": "a180fc4d6f966b6f351ff6bb2d135085935f2f5ca7cc3777d3ee0099a5144a75"
+   },
+   "q33": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Sin posición de campaña. La única nota de EH Bildu sobre el reparto de menores (crisis de Ceuta, «reivindica otra política migratoria») es del 3-sep-2026, anterior a la convocatoria y sin referencia al 29N. Nada en las copias locales ni en las notas nuevas."
+   },
+   "q34": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Sin posición de campaña. EH Bildu ha defendido el referéndum en el Sáhara (PNL con ERC; exigencia a Sánchez en nov-2025), pero todas las declaraciones localizadas son anteriores al 6-oct-2026 y no se refieren a estas elecciones. Nada en las notas de campaña."
+   },
+   "q35": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Sin posición. Ninguna declaración de campaña sobre la prisión permanente revisable; la búsqueda web solo devolvió declaraciones de Aizpurua sobre el Código Penal de julio de 2026 (fuera de plazo y sobre otra cuestión)."
+   }
+  },
+  "pnv": {
+   "q31": {
+    "valor": -1,
+    "fuente": "campaña",
+    "cita": "“no es una buena medida para solucionar la crisis de la vivienda”, porque “no parte de una realidad que lo soporte” y “genera mayor inseguridad y, de aprobarse, provocaría un seguro detraimiento de la oferta de alquiler”",
+    "pagina": null,
+    "url": "https://www.eaj-pnv.eus/es/noticias/58720/eaj-pnv-vota-a-favor-del-decreto-que-protege-a-inq/",
+    "medio": "EAJ-PNV (nota oficial, eaj-pnv.eus)",
+    "fecha": "2026-11-12",
+    "quien": "Maribel Vaquero, cabeza de lista de EAJ-PNV al Congreso por Gipuzkoa y portavoz del Grupo Vasco en el Congreso",
+    "formato": "debate (Diputación Permanente del Congreso), recogido entre comillas en la nota oficial",
+    "marco": null,
+    "nota": "Nota oficial del PNV sobre la intervención de Maribel Vaquero (cabeza de lista por Bizkaia) en la Diputación Permanente: «Respecto al segundo decreto» (el de la renovación automática; del primero dice que lo apoya) afirma que «no es una buena medida para solucionar la crisis de la vivienda» y que «genera mayor inseguridad». Rechazo de la medida del Gobierno sin proponer la contraria: regla (b), −1. El programa del PNV (p. 8) habla de «seguridad jurídica a inquilinos y pequeños propietarios», sin pronunciarse sobre la prórroga.",
+    "fuente_local": "data/sources/compromisos/pnv/eajpnv_vivienda_20261112.txt",
+    "sha256": "06a770eb51f428d80a0fe9acf7411007c8730be9845133f2319b0ffb930c9e65"
+   },
+   "q32": {
+    "valor": 2,
+    "fuente": "programa",
+    "cita": "Reclamar, en el marco de un nuevo estatus político para Euskadi, la competencia plena para establecer un salario mínimo propio, adaptado al coste de vida y siempre por encima del mínimo estatal.",
+    "pagina": 9,
+    "url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-09",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Primera medida de su apartado de salarios: propuesta expresa, +2."
+   },
+   "q33": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa del 29N buscado (texto completo y extracción): pide una «distribución equilibrada» de los menores no acompañados en una política europea común (p. 25), es decir, entre países de la UE, no entre comunidades: medida distinta, null. Sin posición. Ninguna declaración de líderes ni nota de eaj-pnv.eus sobre el reparto obligatorio de menores en el periodo revisado (la de Urtaran sobre el centro de Arana trata del modelo de acogida en Euskadi, no del reparto entre comunidades)."
+   },
+   "q34": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa del 29N buscado (texto completo y extracción): no trata el Sáhara. Sin posición de campaña. Nada sobre el Sáhara en las notas y discursos revisados; las críticas del PNV al giro de Sánchez son de 2022."
+   },
+   "q35": {
+    "valor": -2,
+    "fuente": "programa",
+    "cita": "Rechazar la prisión permanente revisable y defender un sistema penitenciario orientado a la reeducación y la reinserción",
+    "pagina": 27,
+    "url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-09",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Rechaza la pena en sí, y por tanto su ampliación: −2."
+   }
+  },
+  "bng": {
+   "q31": {
+    "valor": 2,
+    "fuente": "programa",
+    "cita": "estabelecendo a renovación automática dos alugueiros, blindando por lei o carácter indefinido dos contratos de alugueiro",
+    "pagina": 12,
+    "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-03",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Propone expresamente la renovación automática y el carácter indefinido por ley de los contratos: +2."
+   },
+   "q32": {
+    "valor": 2,
+    "fuente": "programa",
+    "cita": "Aprobar a descentralización do SMI para que en Galiza teñamos competencia para mellorar o estatal.",
+    "pagina": 15,
+    "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-03",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Propuesta expresa de que Galicia pueda fijar un salario mínimo superior al estatal: +2."
+   },
+   "q33": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa del 29N buscado (texto completo y extracción): no trata el reparto de menores entre comunidades. Buscado: WebSearch (Rego/Pontón + menores migrantes) y notas de bng.gal desde el 17-oct. Sin resultados."
+   },
+   "q34": {
+    "valor": 2,
+    "fuente": "programa",
+    "cita": "Anular o cambio de posición do goberno español a respecto do dereito á autodeterminación do pobo saharauí, condenando enerxicamente a ocupación marroquí do Sáhara Occidental, e instando a que o Estado español impulse un referendo de autodeterminación con garantías democráticas.",
+    "pagina": 90,
+    "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-03",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Propone expresamente anular el giro de 2022 e impulsar un referéndum: +2."
+   },
+   "q35": {
+    "valor": -2,
+    "fuente": "programa",
+    "cita": "Derrogación da prisión permanente revisábel, por ser unha forma encuberta de manter a cadea perpetua",
+    "pagina": 30,
+    "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-03",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Propone derogarla: −2."
+   }
+  },
+  "cc": {
+   "q31": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa del 29N buscado (texto completo y extracción): defiende «una regulación estatal estable que proteja a inquilinos y propietarios y facilite el alquiler de larga duración» (p. 11), sin pronunciarse sobre la renovación automática: null. Sin cita válida. Diario de Avisos (oct-2026) dice que Valido «rechazará el segundo texto, centrado en la renovación automática de los contratos de alquiler», pero solo en estilo indirecto, sin comillas (copia en data/sources/fase1/revision_2026-11-13/cc/202610_diariodeavisos_decretos_vivienda.txt). Clavijo (25-oct) critica «el intervencionismo de Madrid con el mercado de alquiler, que repercute en la oferta», sin nombrar la prórroga automática. Probablemente en contra, pero sin cita literal que nombre la medida: null."
+   },
+   "q32": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa del 29N buscado (texto completo y extracción): pide incentivos ligados a mejoras salariales pactadas en Canarias (p. 12), no un salario mínimo canario. Sin posición. Valido (Demócrata, 5-nov) pide que «deberían plantearse excepciones en el ámbito laboral» para Canarias como región ultraperiférica, sin mencionar un salario mínimo propio. Medida distinta: null."
+   },
+   "q33": {
+    "valor": -2,
+    "fuente": "programa",
+    "cita": "Solidaridad obligatoria y automática. Exigiremos que los mecanismos estatales de solidaridad territorial funcionen con indicadores de capacidad, plazos y financiación conocidos. Cuando un territorio de primera acogida supere los umbrales previstos, deberán activarse los traslados y la participación de otras comunidades autónomas sin depender de negociaciones caso a caso.",
+    "pagina": 19,
+    "url": "https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-08",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Pide que el reparto sea obligatorio y automático (más aún que hoy); en la p. 5 lo refiere expresamente a los menores: «Reclamamos una solidaridad efectiva entre territorios, especialmente en la acogida de menores no acompañados». Rechazo expreso de suprimirlo: −2. Lo refuerza Clavijo (Diario de Avisos, 25-oct)."
+   },
+   "q34": {
+    "valor": 1,
+    "fuente": "programa",
+    "cita": "Defenderemos ante el Estado y la UE una solución al conflicto del Sáhara Occidental conforme a las resoluciones de Naciones Unidas. Asimismo, defenderemos el derecho del pueblo saharaui a decidir su futuro",
+    "pagina": 20,
+    "url": "https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-08",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Defiende que el pueblo saharaui decida su futuro (autodeterminación), sin pedir expresamente revertir el giro de 2022 ni un referéndum: +1. Clavijo (25-oct) critica que el giro fuera unilateral sin pedir revertirlo."
+   },
+   "q35": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa del 29N buscado (texto completo y extracción): no trata la prisión permanente revisable. Sin posición en las fuentes revisadas."
+   }
+  },
+  "adelante_andalucia": {
+   "q31": {
+    "valor": 2,
+    "fuente": "programa",
+    "cita": "Alquileres de duración indefinida y prórroga sin subida, para acabar con los desahucios silenciosos",
+    "pagina": 49,
+    "url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-10",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Propuesta 168, «Contratos indefinidos»: un contrato indefinido incluye que el inquilino siga mientras quiera; va más allá de la afirmación: +2."
+   },
+   "q32": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa del 29N buscado (texto completo y extracción): propone indexar el salario mínimo estatal a la inflación (propuesta 269) y ligar pensiones mínimas al SMI; no un salario mínimo andaluz."
+   },
+   "q33": {
+    "valor": -1,
+    "fuente": "programa",
+    "cita": "pacto de Estado con financiación estatal para acoger a la infancia y adolescencia que llega sin familia, con reparto solidario entre comunidades",
+    "pagina": 106,
+    "url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-10",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Propuesta 556: defiende un reparto solidario entre comunidades dentro de un pacto de Estado; no dice que sea obligatorio, pero se opone a suprimirlo: −1."
+   },
+   "q34": {
+    "valor": 2,
+    "fuente": "programa",
+    "cita": "apoyo al derecho de autodeterminación saharaui. [...] el Sáhara sigue esperando su referéndum.",
+    "pagina": 109,
+    "url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-10",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Propuesta 583 (y 585: «Volver a la posición anterior a 2022»): apoyo expreso a la autodeterminación y al referéndum: +2."
+   },
+   "q35": {
+    "valor": -2,
+    "fuente": "programa",
+    "cita": "la prisión permanente [...] Derogar [...] revisable Penas orientadas a la reinserción, como manda la Constitución.",
+    "pagina": 94,
+    "url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-10",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Propuesta 496, cuyo título es «Derogar la prisión permanente revisable»: la maquetación del PDF parte el título en el texto extraído, por eso la cita va en tres fragmentos literales. Propone derogarla: −2."
+   }
+  },
+  "salf": {
+   "q31": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa del 29N buscado (texto completo y extracción): no trata la duración de los contratos de alquiler (su «contrato indefinido único» es laboral). No se encontró ninguna declaración de SALF sobre la prórroga quinquenal. El 7-oct SALF denunció ante el Supremo los nuevos decretos de vivienda por «fraude de ley» (The Objective). Es una cuestión de procedimiento sobre los dos decretos juntos, a través de un comunicado y no en palabras de un líder: no es posición sobre la renovación automática. En Telegram (6-oct) promete «Seguridad jurídica TOTAL para inquilinos, propietarios e inversores»: es demasiado genérico."
+   },
+   "q32": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa del 29N buscado (texto completo y extracción): solo propone cotización cero del trabajador en el salario mínimo (p. 30); nada sobre salarios mínimos autonómicos."
+   },
+   "q33": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa del 29N buscado (texto completo y extracción): no trata el reparto de menores entre comunidades. No se encontró ninguna declaración sobre el reparto de menores entre comunidades. Las publicaciones sobre Ceuta en Telegram (9-oct) tratan de una denuncia por trata, no del reparto."
+   },
+   "q34": {
+    "valor": 1,
+    "fuente": "programa",
+    "cita": "Sáhara: se retira la carta de Sánchez.",
+    "pagina": 38,
+    "url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-10",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Propone retirar la carta de 2022 de apoyo al plan de autonomía y la «Vuelta a la posición de la ONU». +1 y no +2: no menciona el referéndum, y la posición de la ONU desde 2025 (resolución 2797) toma como base el plan de autonomía, así que solo es inequívoca la retirada del apoyo español al plan."
+   },
+   "q35": {
+    "valor": 2,
+    "fuente": "programa",
+    "cita": "Prisión permanente revisable por violación a menores o con lesiones graves.",
+    "pagina": 8,
+    "url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-10",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "La violación sin resultado de muerte no tiene hoy prisión permanente revisable: es una ampliación expresa: +2."
+   }
+  }
+ },
+ "posiciones_adicionales_existentes": {
+  "junts": {
+   "q12": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "Si es toca la llengua es toca la nació i es va en contra de la gran majoria de la societat de Catalunya",
+    "pagina": null,
+    "url": "https://www.catalunyapress.cat/article/politica-nacional/2026-10-19/6057794-nogueras-planta-cara-pp-i-vox-pel-catal-toca-llengua-toca-nacio",
+    "medio": "Catalunya Press (declaraciones difundidas por Junts, recogidas por Europa Press)",
+    "fecha": "2026-10-19",
+    "quien": "Míriam Nogueras, cabeza de lista de Junts al Congreso por Barcelona",
+    "formato": "declaraciones difundidas por el partido",
+    "marco": null,
+    "nota": "Nogueras responde al «Contracte amb Espanya» de Feijóo, que garantizaría la enseñanza en castellano; el medio refiere sus palabras a la inmersión lingüística. Defiende que Cataluña decida su modelo lingüístico escolar frente a un mínimo impuesto, pero de forma reactiva (rechaza la propuesta del PP sin proponer nada propio): regla (b), +1. Celda hoy null en codificacion_g3.json.",
+    "fuente_local": "data/sources/compromisos/junts/catpress_llengua_20261019.txt",
+    "sha256": "32fb283c0fb7e7b5c583a9ed406637aee4c954d19252437a3e64df0976fa6d3f"
+   }
+  }
+ }
+}

@@ -9,7 +9,8 @@ export function Inicio() {
   const evaluados = Object.values(fase3.value?.partidos ?? {}).filter((p) => p.estado === 'evaluado').length;
   const candidaturas = fase2.value?.circunscripciones.reduce((s, c) => s + c.candidaturas.length, 0) ?? 0;
   const promesas = ps.reduce((s, p) => s + (p.promesas?.length ?? 0), 0);
-  const hechas = Object.values(estado.value.respuestas).filter((r) => r.valor !== null).length;
+  // Solo las afirmaciones vigentes: las respuestas a afirmaciones retiradas siguen guardadas, pero no cuentan.
+  const hechas = (fase1.value?.preguntas ?? []).filter((q) => (estado.value.respuestas[q.id]?.valor ?? null) !== null).length;
 
   const estadoPaso: Record<string, string> = {
     coincide: preguntas === 0 ? 'Preparando el cuestionario' : hechas > 0 ? `${hechas} de ${preguntas} respondidas` : `${preguntas} afirmaciones · unos 10 minutos`,

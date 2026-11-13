@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { actualizar, estado, ir, ruta } from '../store';
 import { fase1, fmt, partido, partidos } from '../data';
-import { afinidad, AVISO_COBERTURA, UMBRAL_EMPATE, type Valor } from '../engine/match';
+import { afinidad, AVISO_COBERTURA, UMBRAL_EMPATE, vigentes, type Valor } from '../engine/match';
 import { CabeceraPaso, Siguiente } from '../brand';
 import type { Pregunta } from '../types';
 
@@ -245,8 +245,9 @@ function Resultados() {
     }
     return out;
   }, [d]);
-  const res = afinidad(e.respuestas, posiciones);
-  const respondidas = Object.values(e.respuestas).filter((r) => r.valor !== null).length;
+  const ids = d.preguntas.map((q) => q.id);
+  const res = afinidad(e.respuestas, posiciones, ids);
+  const respondidas = Object.values(vigentes(e.respuestas, ids)).filter((r) => r.valor !== null).length;
   const [abierto, setAbierto] = useState<string | null>(null);
   const evaluables = res.filter((r) => r.afinidad !== null);
   const sinPosiciones = (partidos.value ?? []).filter((p) => !d.posiciones[p.id]);
@@ -378,7 +379,9 @@ export function Coincide() {
   const d = fase1.value;
   const sub = ruta.value.includes('resultados');
   const [i, setI] = useState<number | null>(null);
-  const hechas = Object.keys(estado.value.respuestas).length;
+  // Solo cuentan las afirmaciones vigentes; se continúa por la primera sin responder (o saltar).
+  const hechas = d ? d.preguntas.filter((q) => estado.value.respuestas[q.id]).length : 0;
+  const primeraPendiente = d ? d.preguntas.findIndex((q) => !estado.value.respuestas[q.id]) : -1;
 
   let body;
   if (!d || d.preguntas.length === 0) {
@@ -394,7 +397,7 @@ export function Coincide() {
   } else if (sub) {
     body = <Resultados />;
   } else if (i === null) {
-    body = <Intro n={d.preguntas.length} hechas={hechas} onStart={() => setI(Math.min(hechas, d.preguntas.length - 1))} />;
+    body = <Intro n={d.preguntas.length} hechas={hechas} onStart={() => setI(primeraPendiente >= 0 ? primeraPendiente : d.preguntas.length - 1)} />;
   } else {
     const n = d.preguntas.length;
     body = (

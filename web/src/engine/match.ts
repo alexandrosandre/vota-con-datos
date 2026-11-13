@@ -37,11 +37,22 @@ export const AVISO_COBERTURA = 0.7;
 /** Diferencias menores que esto se presentan como empate técnico. */
 export const UMBRAL_EMPATE = 0.05;
 
+/**
+ * Respuestas a las afirmaciones vigentes. Las guardadas para afirmaciones retiradas del cuestionario
+ * siguen en el navegador, pero no cuentan (ni para la afinidad ni para los recuentos).
+ */
+export function vigentes(respuestas: Record<string, Respuesta>, items: Iterable<string>): Record<string, Respuesta> {
+  const ids = new Set(items);
+  return Object.fromEntries(Object.entries(respuestas).filter(([q]) => ids.has(q)));
+}
+
 export function afinidad(
   respuestas: Record<string, Respuesta>,
   posiciones: Record<string, Record<string, Valor | null>>,
+  /** Ids de las afirmaciones vigentes; si se indica, el resto de respuestas no cuenta. */
+  items?: Iterable<string>,
 ): ResultadoAfinidad[] {
-  const respondidas = Object.entries(respuestas).filter(([, r]) => r.valor !== null);
+  const respondidas = Object.entries(items ? vigentes(respuestas, items) : respuestas).filter(([, r]) => r.valor !== null);
   const out: ResultadoAfinidad[] = [];
   for (const [partido, pos] of Object.entries(posiciones)) {
     let num = 0;

@@ -116,7 +116,9 @@ export function Metodologia() {
             <li>
               <strong>30 afirmaciones</strong> nacidas de propuestas reales de esta campaña: de los programas oficiales y de lo que los líderes
               de los partidos han propuesto en público. Cubren los grandes temas, sin jerga y sin meter dos preguntas en una. Unas están
-              redactadas a favor de un cambio y otras en contra, para no inclinar las respuestas.
+              redactadas a favor de un cambio y otras en contra, para no inclinar las respuestas. Revisamos la selección cuando salen
+              programas nuevos, para cubrir mejor a todos los partidos; si retiramos una afirmación, la respuesta que le hubieras dado deja de
+              contar.
             </li>
             <li>
               <strong>Respondes en 5 niveles</strong>, de «Muy en contra» a «Muy a favor». También puedes pulsar <em>Saltar</em>: ese tema no

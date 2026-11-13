@@ -53,3 +53,16 @@ Se revisaron con el texto nuevo las 60 celdas de q01, q02, q03, q04, q06, q09, q
   - UPC q09: −1 → +1. La afirmación ahora tiene el sentido contrario. UPC defiende la gestión «prioritariamente directa», así que no apoya una prohibición total.
 - **Celdas dudosas**: Frente Amplio q06 (+1, sin cifra), Podemos q04 y UPC q04 (+1, apoyo genérico a gravar las grandes fortunas) y Ara Més q01 (+1).
 - **UPC q02**: `preguntas.json` cita a UPC como «parcial» con «sin descartar expropiaciones», tomado de Diario de Avisos (8-nov). Esa pieza es una tribuna de Román Rodríguez (NC-bc), una columna de opinión que no vale como fuente. Aquí sigue null, y conviene revisar ese `origen`.
+
+## Revisión de afirmaciones (13-11-2026)
+
+Detalle en `revision_afirmaciones_2026-11-13/` (decisión final en `integracion.md`). Se retiran q02, q07, q10, q14 y q28,
+cuyas celdas se conservan como historial, y se añaden q31 a q35, verificadas de forma independiente.
+
+- **Frente Amplio:** q31 +2 (Bustinduy).
+- **Compromís:** q31 +2 («Apostarem pel lloguer indefinit»).
+- **Ara Més:** q32 +1 (SMI balear propio, caso límite).
+- **UPC:** q33 −1 y q34 +1 (manifiesto).
+- **Adelante Andalucía:** q31 +2, q33 −1, q34 +2 y q35 −2 (programa).
+- **Podemos:** q27 −1 (Montero, 6-nov, rechaza «militarizar las fronteras» en Ceuta; caso límite). q27 se mantiene por
+  decisión del editor.

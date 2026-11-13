@@ -144,3 +144,25 @@ Cobertura antes→después: PP 9→15, SALF 1→15. UPN-PP sigue en 0.
   - SALF q05, q13, q20 y q26 (null): medidas relacionadas pero distintas (mínimo exento de
     35.000 €, cinco años de residencia, veto al Pacto Verde, defensa «dentro del 2 %»).
 - **Pendiente**: la verificación independiente de estas celdas (`verificacion_g1.json`).
+
+## Revisión de afirmaciones (13-11-2026)
+
+Detalle en `revision_afirmaciones_2026-11-13/` (decisión final en `integracion.md`). Se retiran q02, q07, q10, q14 y q28,
+cuyas celdas se conservan aquí como historial, y se añaden q31 a q35, verificadas de forma independiente.
+
+- **PP (16):**
+  - q31: −1 (Feijóo, «Voy a derogar esos decretos…»).
+  - q33: +1 con el programa (medida 46, p. 24), no +2 con Sémper.
+  - q35: +2 (medida 30).
+  - q32 y q34: null.
+- **PSOE (6):**
+  - q31: +1 (Sánchez, elDiario.es, 7-oct).
+  - q33: −1 (Torres, con la cita literal completa).
+  - q34: −1 (Sánchez, 8-nov: la autonomía «dentro de Marruecos» como «la solución más factible»).
+  - Revisar q31 y q34 con el programa del 15-nov.
+- **SALF (15):**
+  - q35: +2.
+  - q34: null. Su programa pide retirar la carta de 2022, pero no habla de referéndum.
+- **UPN (0):** las citas de Feijóo no cuentan para UPN (decisión del editor).
+- **Vox (9):** q35 null. Su programa solo está en democrata.es, no en una web oficial.
+- **PSC:** sin cambios.

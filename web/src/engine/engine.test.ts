@@ -102,4 +102,22 @@ describe('afinidad', () => {
     expect(r[1].afinidad).toBe(1);
     expect(r[1].comparable).toBe(false);
   });
+
+  it('ignora las respuestas guardadas a afirmaciones retiradas del cuestionario', () => {
+    // Quien respondió antes del 13-nov guarda respuestas a q02, q07, q10, q14 y q28, que ya no existen.
+    const vigentes = ['q01', 'q03', 'q04', 'q05', 'q06', 'q31'];
+    const resp = {
+      ...Object.fromEntries(vigentes.map((q) => [q, { valor: 1 as const }])),
+      q02: { valor: 2 as const },
+      q07: { valor: -2 as const },
+      q10: { valor: 1 as const },
+      q14: { valor: 1 as const },
+      q28: { valor: -1 as const },
+    };
+    const pos = { a: Object.fromEntries(vigentes.map((q) => [q, 1])) };
+    const [r] = afinidad(resp, pos as any, vigentes);
+    expect(r.respondidas).toBe(6);
+    expect(r.cobertura).toBe(1);
+    expect(r.comparable).toBe(true);
+  });
 });

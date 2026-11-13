@@ -1,0 +1,309 @@
+{
+ "grupo": "A",
+ "fecha": "2026-11-13",
+ "busqueda": {
+  "psoe": "Copias locales (data/sources/compromisos/psoe, seleccion.json con descartados) y WebSearch extendido (el estándar apenas indexa oct-nov 2026) + petición HTTP normal con curl para guardar copias. Líderes: Sánchez, Isabel Rodríguez, Arcadi España, Albares, Torres, Bolaños, Alegría, Besteiro. Temas: nucleares/Almaraz, SMI autonómico, prórroga quinquenal (rueda de prensa de La Moncloa 6-oct, crónicas de la Diputación Permanente 12-nov: EFE/Infobae, CMM, infoLibre, El Diario de Madrid), menores, Sáhara, CGPJ, prisión permanente, oficialidad de lenguas, delegación de inmigración, no residentes, 40 años cotizados. psoe.es no consultado (anti-bots); programa del PSOE no publicado hasta el 15-nov. Sin límites de cuota.",
+  "psc": "Copias locales (RSS socialistes.cat ya guardado; socialistes.cat bloquea con Cloudflare y no se consultó), entrevistas de Illa (elDiario.es, RAC1) y Hereu (Crónica Global, Diari de Tarragona). Web: oficialitat del català, competències d'immigració, salari mínim de referència (Catalunya Press 21-oct; El Triangle devolvió 403 y no se usó), menores de Ceuta.",
+  "upn": "RSS upn.org/feed (notas hasta el 11-nov): NO se ha publicado programa conjunto UPN-PP en upn.org; la búsqueda web tampoco lo encuentra (solo el acuerdo de coalición y el lema del 10-nov). Copias locales (Diario de Navarra, Europa Press, OKDiario, Navarra Información — Sayas 12-nov). Web: Esparza, Ibarrola, San Martín, Sayas sobre vivienda, menores, euskera en la UE. Declaraciones de Feijóo no computadas para UPN (no hechas para la candidatura UPN-PP). Noticias de Navarra no se usó como fuente.",
+  "pp": "Solo q33, q34, q35, x1, x2, x3 (por indicación). Copias locales (Contrato con España, entrevistas SER/La Vanguardia, notas del 7 y 10-nov). Web extendida: Feijóo en El Hormiguero (11-nov, The Objective y OKDiario), Sémper sobre menores (EFE/Infobae 16-oct, Radio Marca Tenerife, Noticias de Navarra), Albiol (Ara), Juan Fernández (elDiario.es), Manuel Domínguez (Diario de Avisos), crónicas de la Diputación Permanente (intervención de Sayas). Sin límites de cuota."
+ },
+ "posiciones": {
+  "psoe": {
+   "q31": {
+    "valor": null,
+    "nota": "Buscado: Sánchez y ministros-candidatos sobre nucleares/Almaraz en campaña (web, copias locales). Solo constan declaraciones de Sánchez en el Congreso (marzo de 2026, fuera de plazo y sin referencia a estas elecciones) y la prórroga administrativa de Almaraz hasta 2030 (decisión de Gobierno, agosto de 2026, no declaración). Nada desde el 6-oct."
+   },
+   "q32": {
+    "valor": null,
+    "nota": "Buscado SMI autonómico/propio: el PSOE solo promete subir el SMI estatal cada año (psoe-c03), medida distinta. Sin declaración sobre salarios mínimos por comunidad."
+   },
+   "q33": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "No, yo creo que es un debate necesario que tenemos que dar y que es pertinente porque existe en otras partes de Europa. Es verdad que es un debate avanzado para el estado actual del debate en España, pero el Gobierno y el Partido Socialista lo apoyan también.",
+    "pagina": null,
+    "url": "https://www.eldiario.es/politica/pedro-sanchez-hora-parlamento-parezca-calle-no-viven-aticazos_1_13569153.html",
+    "medio": "elDiario.es",
+    "fecha": "2026-10-07",
+    "quien": "Pedro Sánchez, secretario general del PSOE y candidato a la Presidencia del Gobierno",
+    "formato": "entrevista (pregunta-respuesta; grabada el 7 y 8-oct, publicada el 9-oct)",
+    "marco": null,
+    "nota": "Respuesta literal (formato pregunta-respuesta) a «¿Es usted partidario del alquiler indefinido y de que los propietarios indemnicen a los inquilinos al acabar el contrato o ha publicado este decreto en el BOE porque se lo exigía Sumar?»: se refiere expresamente al decreto de la prórroga automática (RDL 28/2026, el que defendió Bustinduy y no se convalidó el 12-nov), no al antidesahucios. A la repregunta «¿Lo va a llevar el PSOE en el programa electoral?» responde: «Sí, vamos a llevar unas medidas de vivienda potentes y en ese asunto, por supuesto, el Partido Socialista estará». +1 y no +2: lo presenta como «un debate avanzado para el estado actual del debate en España» (matiz), no como compromiso prioritario; en la rueda de prensa del 6-oct (La Moncloa) Sánchez admitió que no había mayoría para convalidarlo, y tras el rechazo del 12-nov no se halló ninguna declaración de PSOE que prometa reaprobarlo (los mítines y notas posteriores hablan del decreto convalidado, psoe-c05). La selección de compromisos lo descartó como compromiso, no como posición. Copia local ya existente (cabecera sin línea «Medio»).",
+    "fuente_local": "data/sources/compromisos/psoe/eldiario_20261009_entrevista.txt",
+    "sha256": "9ca5ce224d067f4ad395f6adb0b91e5bd5cc395b8748b00442f9507b234f6b53"
+   },
+   "q34": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "cuya solución pasaría por que sean distribuidos por el resto del territorio español, \"salvo que el presidente (Juan Jesús) Vivas quiera que se queden en Ceuta, lo que sería un error.",
+    "pagina": null,
+    "url": "https://www.infobae.com/espana/agencias/2026/10/22/torres-defiende-que-los-menores-migrantes-en-ceuta-se-distribuyan-en-la-peninsula-salvo-que-vivas-quiera-que-se-queden/",
+    "medio": "Infobae (agencias)",
+    "fecha": "2026-10-22",
+    "quien": "Ángel Víctor Torres, secretario general del PSOE de Canarias y ministro de Política Territorial",
+    "formato": "entrevista (Televisión Canaria)",
+    "marco": null,
+    "nota": "Cita parcial: lo entrecomillado («que se queden en Ceuta... sería un error») lleva la posición y el medio nombra la medida (distribuir a los menores por el resto del territorio). En la misma crónica defiende la reforma del art. 35 de la Ley de Extranjería (reparto obligatorio cuando hay contingencia migratoria) frente al PP, que «la derogará»: «Trabajaremos para que no gobierne» y «Ellos desean, quieren y han votado que se queden en los territorios de frontera». +1 y no +2: defiende una norma ya vigente, sobre todo como réplica al PP, sin compromiso nuevo propio para la legislatura. Torres no es candidato el 29-N pero es líder autonómico del partido (Diario de Avisos, 17-oct: «líder de los socialistas en el archipiélago»). Misma línea en Diario de Avisos (17-oct): los menores «se quedarán en Canarias» si gobierna el PP.",
+    "fuente_local": "data/sources/fase1/revision_2026-11-13/psoe/20261022_infobae_menores.txt",
+    "sha256": "8a819daad18bd9e278a86abc5417c5fbf1a7adfb81a306ccf1d5ce7480fbf154"
+   },
+   "q35": {
+    "valor": null,
+    "nota": "Buscado Sánchez/Albares sobre el Sáhara en campaña. Solo constan declaraciones de Albares de 2025 de apoyo al plan de autonomía (fuera de plazo). En la entrevista de elDiario.es (7-oct) Sánchez habla de Marruecos como socio estratégico, sin mencionar el Sáhara ni el plan de autonomía."
+   },
+   "q36": {
+    "valor": null,
+    "nota": "Buscado Bolaños/Sánchez sobre la elección del CGPJ en campaña: sin declaraciones. Las referencias halladas son votaciones o resúmenes de terceros (no válidos)."
+   },
+   "q37": {
+    "valor": null,
+    "nota": "Buscado: sin declaraciones de campaña. Solo la votación de marzo de 2026 contra la ampliación propuesta por PP-UPN (las votaciones no son fuente)."
+   },
+   "x1": {
+    "valor": null,
+    "nota": "Buscado: las declaraciones de Albares sobre la oficialidad del catalán, euskera y gallego en la UE son de septiembre de 2026 o anteriores (antes de la convocatoria y sin referencia a estas elecciones). No se halló ninguna de Sánchez ni de otro líder del PSOE desde el 6-oct."
+   },
+   "x2": {
+    "valor": null,
+    "nota": "Buscado: el acuerdo PSOE-Junts de delegación de competencias es de 2025 y Junts volvió a registrar la ley en solitario en agosto de 2026; no consta declaración de líderes del PSOE en campaña. La única referencia en la selección (Sánchez en La Revuelta, vías de inmigración regular) es otra medida."
+   },
+   "x3": {
+    "valor": null,
+    "nota": "Buscado: la propuesta de gravar hasta el 100 % la compra por no residentes extracomunitarios es de enero/mayo de 2025 (fuera de plazo). El RDL 29/2026 limita compras especulativas de entidades (fondos), medida distinta. Sin declaración de campaña."
+   },
+   "x4": {
+    "valor": null,
+    "nota": "Buscado: solo consta el voto del PSOE a tramitar la proposición de Podemos (sept. 2026; las votaciones no son fuente). Sin declaración."
+   }
+  },
+  "psc": {
+   "q31": {
+    "valor": null,
+    "nota": "Buscado en copias locales (RSS socialistes.cat, prensa) y web: sin declaraciones de Hereu, Illa u otros líderes del PSC sobre nucleares."
+   },
+   "q32": {
+    "valor": null,
+    "nota": "Buscado salari mínim propi/de referència: el Parlament tramitó el 21-oct la ley de Junts de salario mínimo de referencia (orientativo, no un SMI autonómico); el PSC retiró su enmienda y votó la tramitación, pero habló una diputada (no líder) y las votaciones no son fuente. Los líderes del PSC solo defienden subir el SMI estatal."
+   },
+   "q33": {
+    "valor": null,
+    "nota": "Buscado: Illa (16-oct) defiende «els decrets» sin distinguir cuál ni comprometer medida; Hereu (9-nov) lamenta que Junts tumbara «los decretos de vivienda»; Moret (22-oct) defiende la continuidad de las políticas de vivienda. Nada sobre la prórroga quinquenal."
+   },
+   "q34": {
+    "valor": null,
+    "nota": "Buscado: Illa se ofreció a acoger menores de Ceuta en agosto de 2026 (fuera de plazo, solo en crónica de terceros). Sin declaración en campaña."
+   },
+   "q35": {
+    "valor": null,
+    "nota": "Sin declaraciones de líderes del PSC sobre el Sáhara."
+   },
+   "q36": {
+    "valor": null,
+    "nota": "Sin declaraciones de líderes del PSC sobre el CGPJ."
+   },
+   "q37": {
+    "valor": null,
+    "nota": "Sin declaraciones de líderes del PSC sobre la prisión permanente revisable."
+   },
+   "x1": {
+    "valor": null,
+    "nota": "Candidato descartado: Illa, en elDiario.es (5-nov), pregunta retóricamente a Feijóo «¿Bloquear el uso del catalán en Europa?». Es reactivo y habla de «uso», no de oficialidad; podría leerse como +1 (regla b), pero ante la duda se deja en null (ver «descartados»). Hereu (9-nov) habla de que él usa el catalán en el Consejo de la UE: medida distinta. No se halló una declaración expresa sobre la oficialidad en la UE desde el 6-oct."
+   },
+   "x2": {
+    "valor": null,
+    "nota": "Buscado: Hereu (Crónica Global, 9-nov) habla de seguridad e inmigración sin mencionar competencias; sin declaración de Illa en campaña sobre la delegación."
+   },
+   "x3": {
+    "valor": null,
+    "nota": "Sin declaraciones de líderes del PSC sobre compra por no residentes."
+   },
+   "x4": {
+    "valor": null,
+    "nota": "Sin declaraciones de líderes del PSC sobre jubilación con 40 años cotizados."
+   }
+  },
+  "upn": {
+   "q31": {
+    "valor": null,
+    "nota": "Buscado en RSS de upn.org y prensa navarra (Diario de Navarra, Europa Press Navarra, OKDiario Navarra, Navarra Información): sin declaraciones de Esparza, Ibarrola, San Martín o Sayas sobre nucleares."
+   },
+   "q32": {
+    "valor": null,
+    "nota": "Sin declaraciones sobre salarios mínimos autonómicos."
+   },
+   "q33": {
+    "valor": null,
+    "nota": "Candidato descartado: Sergio Sayas (12-nov, Diputación Permanente) habla como portavoz adjunto del PP, no en un acto de la coalición, y lo entrecomillado es una crítica genérica a «unos decretos» y a los precios; la frase sobre «culpabilizar a quien pone su piso en alquiler» va en estilo indirecto y no nombra la prórroga quinquenal (la crónica describe el decreto convalidado). Las declaraciones de Feijóo no se hicieron para la candidatura UPN-PP."
+   },
+   "q34": {
+    "valor": null,
+    "nota": "Buscado: solo constan posiciones de UPN en el Parlamento de Navarra (septiembre de 2026, Cristina López, no líder) y de un alcalde; fuera de plazo y sin líder."
+   },
+   "q35": {
+    "valor": null,
+    "nota": "Sin declaraciones."
+   },
+   "q36": {
+    "valor": null,
+    "nota": "Sin declaraciones en campaña."
+   },
+   "q37": {
+    "valor": null,
+    "nota": "Solo consta la proposición PP-UPN de marzo de 2026 para ampliar la prisión permanente (iniciativa/votación parlamentaria anterior a la convocatoria, no declaración de campaña)."
+   },
+   "x1": {
+    "valor": null,
+    "nota": "Sin declaraciones de UPN sobre la oficialidad del euskera u otras lenguas en la UE."
+   },
+   "x2": {
+    "valor": null,
+    "nota": "Sin declaraciones."
+   },
+   "x3": {
+    "valor": null,
+    "nota": "Sin declaraciones."
+   },
+   "x4": {
+    "valor": null,
+    "nota": "Sin declaraciones."
+   }
+  },
+  "pp": {
+   "q31": {
+    "valor": null,
+    "nota": "No buscado por indicación: el programa del PP ya se pronuncia."
+   },
+   "q32": {
+    "valor": null,
+    "nota": "Fuera del encargo para el PP (solo q33, q34, q35, x1, x2, x3); no buscado de forma específica."
+   },
+   "q33": {
+    "valor": -1,
+    "fuente": "campaña",
+    "cita": "Voy a derogar esos decretos porque son malos para los inquilinos y para los propietarios",
+    "pagina": null,
+    "url": "https://theobjective.com/espana/politica/2026-11-12/feijoo-sobre-pactar-con-abascal-y-la-vivienda-si-el-pp-no-tiene-mayoria-la-tendre-que-completar-el-decreto-maricarmen-es-malo-para-propietarios-e-inquilinos/",
+    "medio": "The Objective",
+    "fecha": "2026-11-11",
+    "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+    "formato": "entrevista (El Hormiguero, Antena 3)",
+    "marco": null,
+    "nota": "El medio sitúa la frase: «derogará los decretos impulsados por el Gobierno, incluido el denominado decreto Maricarmen». La entrevista se emitió el 11-nov (crónica del 12-nov), antes de la votación del 12-nov, cuando seguían vigentes los dos decretos de 6-oct: «esos decretos» incluye el RDL 28/2026 de prórroga automática de 5/7 años. −1 y no −2: es una derogación en bloque y reactiva (regla b), sin mencionar expresamente la renovación quinquenal ni proponer otra regla de duración de contratos; su alternativa es construir un millón de viviendas. Ojo: la misma promesa alcanza al decreto antidesahucios convalidado, que es otra medida.",
+    "fuente_local": "data/sources/fase1/revision_2026-11-13/pp/20261111_theobjective_decretos_vivienda.txt",
+    "sha256": "831b8b0f2ba61a6b5d46ab61f48ce317d8790fd991e4fff9e37411415ca71bf3"
+   },
+   "q34": {
+    "valor": -2,
+    "fuente": "campaña",
+    "cita": "de tal forma que se modificará la ley de Extranjería para \"dejar de hablar ya de reparto\" de menores y comenzar a hablar \"de retorno\"",
+    "pagina": null,
+    "url": "https://www.infobae.com/espana/agencias/2026/10/16/semper-alude-a-cambios-en-extranjeria-para-hablar-de-retorno-y-no-de-reparto-de-menores/",
+    "medio": "Infobae (EFE)",
+    "fecha": "2026-10-16",
+    "quien": "Borja Sémper, portavoz nacional y vicesecretario del PP",
+    "formato": "declaraciones a los medios (Tenerife)",
+    "marco": null,
+    "nota": "Cita parcial de agencia: lo entrecomillado («dejar de hablar ya de reparto» de menores, «de retorno») lleva la posición y el medio nombra la medida (modificar la Ley de Extranjería si el PP gobierna). Es propuesta propia, expresa y presentada como «un cambio de rumbo» para la próxima legislatura, no una mera crítica: −2. Radio Marca Tenerife recoge la frase completa: «Vamos a dejar de hablar ya de reparto para comenzar a hablar de retorno». El día anterior, en Las Palmas (Noticias de Navarra, 15-oct), Sémper ya anunció que se cambiarán «las leyes que sean necesarias» para devolver a los menores. Torres (PSOE) lo interpreta como derogar la reforma del art. 35.",
+    "fuente_local": "data/sources/fase1/revision_2026-11-13/pp/20261016_infobae_menores.txt",
+    "sha256": "65e643d1b09aaf9d24e14641a545e02613186d1d5abd1ae81174281a76af9b0c"
+   },
+   "q35": {
+    "valor": null,
+    "nota": "Buscado Feijóo, Tellado, Bendodo, Muñoz y otros: en El Hormiguero (11-nov) Feijóo habla de Marruecos («vamos a sentarnos en serio», Ceuta, el móvil de Sánchez) sin mencionar el Sáhara, el plan de autonomía ni la carta de 2022. Las peticiones de recuperar la «neutralidad activa» son de 2024 (fuera de plazo). Sin declaración desde el 6-oct."
+   },
+   "q36": {
+    "valor": null,
+    "nota": "No buscado por indicación: el programa del PP ya se pronuncia."
+   },
+   "q37": {
+    "valor": null,
+    "nota": "No buscado por indicación: el programa del PP ya se pronuncia."
+   },
+   "x1": {
+    "valor": null,
+    "nota": "Buscado: las justificaciones de Feijóo para no apoyar la oficialidad del catalán/gallego/euskera en la UE y las de Alma Ezcurra son de 2025 (fuera de plazo). En campaña consta su propuesta de 50 % de castellano en las aulas y de restringir las lenguas cooficiales en el Congreso (medidas distintas). Sin declaración sobre la UE desde el 6-oct."
+   },
+   "x2": {
+    "valor": null,
+    "nota": "Buscado: Feijóo calificó en 2025 el acuerdo PSOE-Junts de «la cesión más grave» (fuera de plazo). Juan Fernández (secretario general del PP catalán) rechazó el traspaso el 19-ago-2026 (antes de la convocatoria, sin referencia a estas elecciones). Sin declaración desde el 6-oct."
+   },
+   "x3": {
+    "valor": null,
+    "nota": "Candidato descartado: Manuel Domínguez (presidente del PP de Canarias, octubre de 2026) expresa «dudas» sobre la petición del Gobierno canario de limitar la compra a no residentes en las islas; es una medida regional, solo dudas, y la fecha exacta no consta. Sin declaración de líderes nacionales."
+   },
+   "x4": {
+    "valor": null,
+    "nota": "Fuera del encargo para el PP; no buscado de forma específica (la búsqueda general de x4 no dio declaraciones del PP)."
+   }
+  }
+ },
+ "existentes": {},
+ "descartados": [
+  {
+   "partido": "psc",
+   "q": "x1",
+   "url": "https://www.eldiario.es/catalunya/salvador-illa-bajeza-moral-feijoo-utilice-69-victimas-urda-no-convoque-huelga-general_128_13643854.html",
+   "motivo": "Illa (5-nov): «¿Bloquear el uso del catalán en Europa?», reproche retórico a Feijóo. Reactivo y habla de «uso», no de oficialidad; si el verificador lo admite como referencia a la oficialidad, sería +1 (regla b). Copia local data/sources/compromisos/psc/eldiario_20261107_illa_entrevista.txt (sha256 cffc4560e087b7804b2f5692d2f63bbe844fdbcfe0cbf29de1c417f8bd36208b)."
+  },
+  {
+   "partido": "upn",
+   "q": "q33",
+   "url": "https://www.navarrainformacion.es/2026/11/12/sergio-sayas-el-gobierno-perpetra-un-fraude-a-la-democracia-y-condena-a-los-espanoles-a-no-poder-vivir-con-sus-politicas-de-vivienda/",
+   "motivo": "Sayas habla como portavoz adjunto del PP en la Diputación Permanente; lo entrecomillado critica «unos decretos» y los precios en general; la crítica a «prohibir y culpabilizar a quien pone su piso en alquiler» va sin comillas; no nombra la prórroga quinquenal."
+  },
+  {
+   "partido": "pp",
+   "q": "x3",
+   "url": "https://diariodeavisos.elespanol.com/2026/10/manuel-dominguez-pp-limitar-compra-vivienda-no-residentes-canarias/",
+   "motivo": "Manuel Domínguez (PP de Canarias) expresa «dudas» («¿Quién no es residente?») sobre la limitación propuesta por el Gobierno canario: regional, ambivalente y con fecha exacta no constatada."
+  },
+  {
+   "partido": "pp",
+   "q": "q34",
+   "url": "https://es.ara.cat/politica/elecciones-generales/feijoo-juega-ultima-bala-cataluna-motor-nacion-espanola_1_5908811.html",
+   "motivo": "Albiol (cabeza de lista por Barcelona): «Exijo que pare el reparto de inmigrantes irregulares en Cataluña»: se refiere a adultos en situación irregular, no al reparto de menores no acompañados (medida distinta)."
+  },
+  {
+   "partido": "pp",
+   "q": "q34",
+   "url": "https://www.diarioenpositivo.com/politica/pp-menores-migrantes-que-permanecen-ceuta-hablamos-retorno-reparto/20260824143822089650.html",
+   "motivo": "Sémper, 24-ago-2026: «hablamos de retorno, no de reparto». Anterior a la convocatoria; sustituido por la declaración del 16-oct."
+  },
+  {
+   "partido": "pp",
+   "q": "x2",
+   "url": "https://www.eldiario.es/catalunya/pp-catalan-cree-junts-parte-razon-inmigracion-rechaza-traspaso-competencias_1_13455182.html",
+   "motivo": "Juan Fernández (PP catalán) rechaza el traspaso el 19-ago-2026: anterior a la convocatoria y sin referencia a estas elecciones."
+  },
+  {
+   "partido": "pp",
+   "q": "x1",
+   "url": "https://www.eldiario.es/politica/feijoo-justifica-rechazar-oficialidad-catalan-gallego-ue-colegios-coste-economico-supuesta-reforma-tratados_1_12333431.html",
+   "motivo": "Feijóo justifica no apoyar la oficialidad en la UE: declaración de 2025, fuera de plazo."
+  },
+  {
+   "partido": "psoe",
+   "q": "q33",
+   "url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2026/061026-rueda-prensa-ministros.aspx",
+   "motivo": "Rueda de prensa de Sánchez del 6-oct: la prórroga automática va en estilo indirecto de La Moncloa; las frases entrecomilladas («reglas claras») no llevan la posición."
+  },
+  {
+   "partido": "psoe",
+   "q": "x1",
+   "url": "https://capital.es/actualidad/albares-urge-a-los-socios-de-la-ue-a-aprobar-el-catalan-y-dice-que-no-hay-objecion-legitima/218915/",
+   "motivo": "Albares (septiembre de 2026, Catalunya Ràdio) pide aprobar la oficialidad: anterior al 6-oct y sin referencia a estas elecciones."
+  },
+  {
+   "partido": "psoe",
+   "q": "x3",
+   "url": "https://www.infobae.com/espana/agencias/2025/05/23/psoe-plantea-gravar-con-hasta-el-100-la-compra-de-viviendas-por-no-residentes-en-la-ue/",
+   "motivo": "Propuesta del grupo socialista de 2025 (gravamen de hasta el 100 % a no residentes extracomunitarios): fuera de plazo."
+  },
+  {
+   "partido": "psoe",
+   "q": "q31",
+   "url": "https://fuentesinformadas.com/sanchez-abre-la-puerta-a-prolongar-las-nucleares-y-sumar-exige-su-cierre",
+   "motivo": "Sánchez en el Congreso (marzo de 2026) abre la puerta a hablar con las eléctricas sobre el cierre: anterior a la convocatoria, sin referencia a estas elecciones y en estilo indirecto."
+  }
+ ]
+}

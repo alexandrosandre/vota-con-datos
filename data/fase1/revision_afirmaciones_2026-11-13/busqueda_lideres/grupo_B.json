@@ -1,0 +1,280 @@
+{
+ "grupo": "B",
+ "fecha": "2026-11-13",
+ "busqueda": {
+  "vox": "Copias locales en data/sources/compromisos/vox (36 ficheros, grep por cada tema). WebSearch (unas 15 consultas): Abascal, Garriga, Figaredo, Millán, Buxadé y Hernández Quero sobre nucleares/Almaraz/Ascó, prórroga y alquileres indefinidos, menores, CGPJ, prisión permanente, catalán en la UE, competencias de inmigración, compra por extranjeros y jubilación con 40 años. Prensa de la Diputación Permanente del 12-nov: idealista, Infobae, elDiario.es, Vozpópuli, CMM, Deia, Canal Sur, COPE. voxespana.es no se consultó (403; no se sorteó). El buscador apenas devuelve noticias de oct-nov de 2026, así que la cobertura de entrevistas y mítines de campaña es incompleta. Los resúmenes del programa se excluyeron por estilo indirecto.",
+  "junts": "Copias locales en data/sources/compromisos/junts y seleccion.json: x1 y x2 comprobados literalmente en junts_balanc_20261027.txt (líneas 211 y 205), y x4 en la línea 123. junts.cat/actualitat se leyó con una petición normal (WebFetch recibía 403; con una petición HTTP estándar devolvió 200, sin desafío anti-bots), incluida la nota del 12-nov. Debate de la Diputación Permanente del 12-nov: intervención de Cruset (idealista, ElNacional.cat, Canal Sur, COPE, Deia, Vozpópuli). WebSearch sobre nucleares (Cruset, Canal 21 Ebre), menores de Ceuta, oficialidad del catalán, compra por no residentes y salario mínimo catalán (Vergés).",
+  "salf": "Solo q31, q33, q34, x1, x2 y x3, como pide el brief. Canal público de Telegram t.me/s/AlvisePerez revisado entero del 6-oct al 12-nov (unas 220 publicaciones, vista web pública, peticiones normales). Ojo: la descripción del canal dice «Canal de Actualidad libre e independiente (No Alvise)». También seacabolafiesta.com (portada; curl recibió un error de Cloudflare y no se insistió), copias locales de SALF (sin afinidadpolitica), The Objective (7-oct y 10-nov), Diariocrítico y WebSearch sobre Alvise y nucleares, menores, competencias de inmigración y compra por extranjeros. No se encontró ninguna declaración sobre estas afirmaciones."
+ },
+ "posiciones": {
+  "vox": {
+   "q31": {
+    "valor": null,
+    "nota": "Sin cita de líder. El programa «Es sentido común» (12-nov) propone «derogar el calendario de cierre de las centrales nucleares», pero solo consta en resúmenes de prensa en estilo indirecto (Infobae/EP, OKDiario, Demócrata, El Debate: copias locales 2026-11-12_*_programa.txt), que no valen como cita. Se buscaron declaraciones de Abascal, Garriga, Buxadé, Figaredo y Millán desde el 6-oct (nucleares, Almaraz, Ascó, calendario de cierre): solo aparecen las de Garriga y Buxadé en Ascó de enero de 2025, fuera de plazo y sin referencia a estas elecciones. Posición previsible +2 si aparece una cita de campaña o el PDF oficial."
+   },
+   "q32": {
+    "valor": null,
+    "nota": "No se encontró ninguna declaración de líderes de Vox desde el 6-oct sobre salarios mínimos autonómicos; los textos locales sobre el SMI (Figaredo, IRPF) tratan de impuestos, no de quién fija el salario mínimo."
+   },
+   "q33": {
+    "valor": -1,
+    "fuente": "campaña",
+    "cita": "Llevan ustedes en el Gobierno desde 2028 y la realidad es que no han hecho nada, y vienen ahora en el tiempo de descuento con un supuesto decreto ley salvador que va a solucionar todos los problemas que han creado",
+    "pagina": null,
+    "url": "https://www.idealista.com/news/inmobiliario/vivienda/2026/11/12/923779-la-diputacion-permanente-convalida-el-decreto-de-vivienda-y-rechaza-el-de",
+    "medio": "idealista/news",
+    "fecha": "2026-11-12",
+    "quien": "José María Figaredo, diputado y portavoz adjunto del Grupo Parlamentario Vox (cabeza de lista por Asturias)",
+    "formato": "debate (Diputación Permanente del Congreso, convalidación del RDL 28/2026)",
+    "marco": null,
+    "nota": "Idealista ordena el debate por decretos: «El primer decreto que se ha debatido ha sido el de los alquileres indefinidos» (Bustinduy), y en ese bloque recoge esta intervención de Figaredo; la de Hernández Quero («cambiar las reglas del juego en mitad del partido») está en el bloque del segundo decreto (antidesahucios/Rodríguez) y NO se usa. Es una crítica reactiva al decreto de prórroga quinquenal, sin propuesta propia sobre la duración de los contratos: regla (b), −1. El «2028» es errata del medio (léase 2018); se copia literal. Caso límite: lo entrecomillado descalifica el decreto («supuesto decreto ley salvador») más que argumentar contra la prórroga; si el verificador lo considera solo justificación, null.",
+    "fuente_local": "data/sources/fase1/revision_2026-11-13/vox/20261112_idealista_diputacion_permanente_vivienda.txt",
+    "sha256": "0b477c553e52c146bd5592b3984fc6e732403c62c334d75968c0fbd6a6baf62a"
+   },
+   "q34": {
+    "valor": null,
+    "nota": "Abascal se opone a acoger a los menores no acompañados, pero lo que consta es otra medida: devolverlos («lo primero que hay que hacer es ponerlos en la frontera», El Periódico vía Demócrata/EP 8-nov, copia local 2026-11-08_democrata_ep_elperiodico.txt; «deben regresar con sus familias», en estilo indirecto, Palma 24-oct). Una medida relacionada pero distinta no es posición sobre el reparto obligatorio. El rechazo expreso a «cualquier reparto» es de los consejeros autonómicos de Vox en agosto de 2026 (eldiario.es, El Español): anterior a la convocatoria y sin referencia a estas elecciones."
+   },
+   "q35": {
+    "valor": null,
+    "nota": "No se encontró ninguna declaración de líderes de Vox desde el 6-oct sobre el Sáhara Occidental (referéndum o plan de autonomía). El programa habla de «revisar las relaciones diplomáticas con Marruecos» (resumen de prensa, no vale y es otra medida)."
+   },
+   "q36": {
+    "valor": null,
+    "nota": "El programa propone que «los jueces elijan a los doce vocales judiciales del CGPJ», pero solo consta en resúmenes de prensa del programa (OKDiario, El Debate, Infobae, 12-nov), que no valen como cita. No se encontró cita entrecomillada de un líder desde el 6-oct; las de Abascal sobre el CGPJ son de 2024. Posición previsible +2 con el PDF oficial o una cita de campaña."
+   },
+   "q37": {
+    "valor": null,
+    "nota": "El programa propone «ampliar la prisión permanente revisable» (sería −2), pero solo consta en resúmenes de prensa del programa (Infobae/EP, OKDiario, El Debate, 12-nov), que no valen. No se encontró cita de Abascal ni de otro líder desde el 6-oct; las de «cadena perpetua» de Abascal son de 2018."
+   },
+   "x1": {
+    "valor": null,
+    "nota": "La cita encontrada es de Joan Garriga, portavoz de Vox en el Parlament (líder regional): la oficialidad del catalán en Europa «no es una prioridad» (Diari de Tarragona, 21-sep-2026). Es anterior a la convocatoria y no se refiere a estas elecciones. No se encontró nada desde el 6-oct."
+   },
+   "x2": {
+    "valor": null,
+    "nota": "Las declaraciones de Ignacio Garriga contra delegar las competencias de inmigración en Cataluña («traición al pueblo español») son de septiembre de 2025 y marzo de 2025, fuera de plazo. No se encontró una cita desde el 6-oct."
+   },
+   "x3": {
+    "valor": null,
+    "nota": "No se encontró ninguna declaración de líderes desde el 6-oct. Según los resúmenes del programa, Vox propone «agravar la fiscalidad de los compradores no comunitarios» y exigir residencia legal para alquilar: es otra medida (un impuesto, no un límite a la compra) y no vale como cita."
+   },
+   "x4": {
+    "valor": null,
+    "nota": "No se encontró ninguna declaración desde el 6-oct. Figaredo habla de pensiones (sistema «zombi», modelo mixto con capitalización), pero no de jubilarse sin recorte con 40 años cotizados. En junio de 2026 Vox se abstuvo en una votación sobre esto, pero el voto no es fuente."
+   }
+  },
+  "junts": {
+   "q31": {
+    "valor": null,
+    "nota": "Candidato descartado: Josep Maria Cruset (cabeza de lista por Tarragona) defiende mantener Ascó y Vandellòs en una entrevista en Canal 21 Ebre (6-nov), pero la posición va en estilo indirecto («El candidat també aposta per mantindre en funcionament les centrals nuclears d’Ascó i Vandellòs») y lo único entrecomillado es la justificación («simple qüestió matemàtica»). No vale por la regla (a). Se guarda la copia (data/sources/fase1/revision_2026-11-13/junts/20261106_canal21ebre_cruset_nuclears.txt, sha256 10d72119ad808b96749d79aece5261774a7dc24fb4ca89657410c991bab3bdcc). Si se revisa el vídeo de la entrevista y la frase es literal, la posición sería +1 o +2."
+   },
+   "q32": {
+    "valor": null,
+    "nota": "Candidato descartado: Salvador Vergés, portavoz de Junts en el Parlament (líder regional), 20-oct, defiende un «salari mínim de referència català» de unos 1.450 euros. Pero es una proposición de ley autonómica sobre una referencia no vinculante: admite que no tienen la competencia («no disposar de la competència per fixar el salari mínim interprofessional “no pot ser una excusa per quedar-se de braços plegats”»). No pide que la comunidad pueda fijar un salario mínimo legal y no es un compromiso para el Congreso. Es una medida relacionada pero distinta: null. Copia local data/sources/compromisos/junts/junts_salari_20261020.txt, sha256 182107b4591a498f286d595ffc00a3b18b226553202ebb1b4972353e15078c97."
+   },
+   "q33": {
+    "valor": -1,
+    "fuente": "campaña",
+    "cita": "Sus decretos leyes no resuelven el problema, usted miente, señor ministro, ¿por qué si no, pusieron en el decreto que entraba en vigor el 15 de noviembre, por qué esperar un mes si era una medida, según ustedes, tan urgente? Es populismo. Una estafa política y electoralista",
+    "pagina": null,
+    "url": "https://www.idealista.com/news/inmobiliario/vivienda/2026/11/12/923779-la-diputacion-permanente-convalida-el-decreto-de-vivienda-y-rechaza-el-de",
+    "medio": "idealista/news",
+    "fecha": "2026-11-12",
+    "quien": "Josep Maria Cruset, portavoz adjunto de Junts en el Congreso y cabeza de lista por Tarragona",
+    "formato": "debate (Diputación Permanente del Congreso, convalidación del RDL 28/2026)",
+    "marco": null,
+    "nota": "El discurso va dirigido al ministro Bustinduy en el debate del primer decreto, el de la prórroga automática o «alquileres indefinidos» (idealista: «El primer decreto que se ha debatido ha sido el de los alquileres indefinidos»). La referencia al decreto «que entraba en vigor el 15 de noviembre» identifica ese decreto, no el antidesahucios, que ya estaba en vigor. Es un rechazo reactivo, sin propuesta propia sobre la duración de los contratos: regla (b), −1. En el debate del segundo decreto Cruset vuelve a criticar (idealista, «Por culpa de ustedes habrá más dificultades…»; Canal Sur/COPE: «instrumento electoral»), pero eso no cuenta para q33. El voto en contra no se usa como fuente. El medio escribe «Crusset».",
+    "fuente_local": "data/sources/fase1/revision_2026-11-13/junts/20261112_idealista_diputacion_permanente_vivienda.txt",
+    "sha256": "0b477c553e52c146bd5592b3984fc6e732403c62c334d75968c0fbd6a6baf62a"
+   },
+   "q34": {
+    "valor": null,
+    "nota": "Nogueras exigió en agosto de 2026 que Cataluña quedara fuera del reparto de los menores llegados a Ceuta («ni un voto» al Gobierno; El Debate, Moncloa.com, Diari de Tarragona, 5 y 26 de agosto). Es anterior a la convocatoria y no se refiere a estas elecciones. Además, pide excluir a Cataluña, no rechaza el reparto en general. No se encontró que lo repitiera desde el 6-oct."
+   },
+   "q35": {
+    "valor": null,
+    "nota": "No se encontró ninguna declaración de líderes de Junts desde el 6-oct sobre el Sáhara Occidental."
+   },
+   "q36": {
+    "valor": null,
+    "nota": "No se encontró ninguna declaración de líderes de Junts desde el 6-oct sobre cómo se eligen los vocales judiciales del CGPJ."
+   },
+   "q37": {
+    "valor": null,
+    "nota": "No se encontró ninguna declaración de líderes de Junts desde el 6-oct sobre la prisión permanente revisable. Su ley contra la multirreincidencia es otra medida."
+   },
+   "x1": {
+    "valor": 2,
+    "fuente": "campaña",
+    "cita": "Exigència de l’oficialitat del català a Europa.",
+    "pagina": null,
+    "url": "https://junts.cat/actualitat/nogueras-quan-junts-te-forca-catalunya-hi-guanya/",
+    "medio": "Junts per Catalunya (web oficial)",
+    "fecha": "2026-10-27",
+    "quien": "Junts per Catalunya (documento oficial presentado por Míriam Nogueras y los cabezas de lista)",
+    "formato": "documento oficial («Principals iniciatives de la legislatura», apartado «Immigració, llengua i cultura»)",
+    "marco": null,
+    "nota": "Comprobado en la copia local, línea 211. El documento es posterior a la convocatoria, pero el partido lo presenta como balance de la legislatura. Que sea un compromiso para el 29-N se apoya en que Nogueras lo pone entre sus tres condiciones para negociar tras el 29-N: SER Catalunya, 6-nov, Europa Press vía Infobae (data/sources/compromisos/junts/infobae_ep_20261106.txt, sha256 12f160d7fce6ccf657eb63d921dcb12fb4e09e061b9bbe446c8e90f6c17e3fcd), aunque en estilo indirecto. En la misma nota del 27-oct, en estilo indirecto, Nogueras «ha destacat […] la defensa de l’oficialitat de la llengua a Europa». +2 porque es una exigencia expresa y una de sus condiciones prioritarias. La afirmación incluye euskera y gallego, y Junts solo habla del catalán: el núcleo (lenguas cooficiales oficiales en la UE) coincide. Si el verificador exige cita en primera persona del líder, la prioridad queda solo en estilo indirecto y podría bajar a +1.",
+    "fuente_local": "data/sources/compromisos/junts/junts_balanc_20261027.txt",
+    "sha256": "d15f7e532a30f413b6b170b64e9669044b7f77d0f0305faca18e87207b4608ce"
+   },
+   "x2": {
+    "valor": 2,
+    "fuente": "campaña",
+    "cita": "Reclamació de competències, control i recursos en immigració per a Catalunya.",
+    "pagina": null,
+    "url": "https://junts.cat/actualitat/nogueras-quan-junts-te-forca-catalunya-hi-guanya/",
+    "medio": "Junts per Catalunya (web oficial)",
+    "fecha": "2026-10-27",
+    "quien": "Junts per Catalunya (documento oficial presentado por Míriam Nogueras y los cabezas de lista)",
+    "formato": "documento oficial («Principals iniciatives de la legislatura», apartado «Immigració, llengua i cultura»)",
+    "marco": null,
+    "nota": "Comprobado en la copia local, línea 205. Lo refuerza una cita en primera persona del arranque de campaña (12-nov, nota oficial del partido): Nogueras reivindica «el pacte per al traspàs de les competències d’immigració» y dice de la ley «Aquesta llei està feta i pactada. I si no ha tirat endavant, sabeu per culpa de qui? De Podemos». Copia: data/sources/fase1/revision_2026-11-13/junts/20261112_junts_nogueras_inici_campanya.txt, sha256 b6ed7e955affa7ce3e8cf6784e6f1df8abccf86cf4cc34d86b0d9dfd20e55279. También consta entre sus tres condiciones para negociar tras el 29-N (SER, 6-nov, EP en estilo indirecto) y lo pide Cruset (nota del 4-nov, junts_cruset_20261104.txt). +2: es una exigencia expresa y prioritaria. Junts la pide para Cataluña (delegación por ley orgánica), que encaja con «comunidades que lo pidan». No se ha comprobado aquí qué permisos concretos incluye la ley registrada el 26-ago.",
+    "fuente_local": "data/sources/compromisos/junts/junts_balanc_20261027.txt",
+    "sha256": "d15f7e532a30f413b6b170b64e9669044b7f77d0f0305faca18e87207b4608ce"
+   },
+   "x3": {
+    "valor": null,
+    "nota": "No se encontró ninguna declaración de líderes de Junts desde el 6-oct sobre limitar la compra de vivienda a no residentes. En el Parlament, Junts frenó la ley catalana contra la compra especulativa (julio de 2026), pero eso es otra medida y otra cámara."
+   },
+   "x4": {
+    "valor": null,
+    "nota": "El mismo documento del 27-oct incluye «Defensa de la jubilació sense penalitzacions per a les persones amb 40 anys cotitzats.» (línea 123 de junts_balanc_20261027.txt). Pero, a diferencia de x1 y x2, ningún líder lo ha repetido en campaña. La selección de compromisos del 12-nov lo descartó por ser solo balance de la legislatura anterior. Se mantiene el mismo criterio: null. Si se acepta el documento por sí solo como oficial para el 29-N, sería +1 o +2 con esa cita."
+   }
+  },
+  "salf": {
+   "q31": {
+    "valor": null,
+    "nota": "No se encontró ninguna declaración de Alvise Pérez ni de otros líderes de SALF sobre las nucleares o su calendario de cierre (canal de Telegram t.me/s/AlvisePerez revisado del 6-oct al 12-nov, web seacabolafiesta.com, prensa). La portada de la web habla de veto «al Pacto Verde», no de nucleares."
+   },
+   "q32": {
+    "valor": null,
+    "nota": "No buscado: el programa («Contrato electoral») ya lo ha codificado el usuario; el brief pide buscar declaraciones solo para q31, q33, q34, x1, x2 y x3."
+   },
+   "q33": {
+    "valor": null,
+    "nota": "No se encontró ninguna declaración de SALF sobre la prórroga quinquenal. El 7-oct SALF denunció ante el Supremo los nuevos decretos de vivienda por «fraude de ley» (The Objective). Es una cuestión de procedimiento sobre los dos decretos juntos, a través de un comunicado y no en palabras de un líder: no es posición sobre la renovación automática. En Telegram (6-oct) promete «Seguridad jurídica TOTAL para inquilinos, propietarios e inversores»: es demasiado genérico."
+   },
+   "q34": {
+    "valor": null,
+    "nota": "No se encontró ninguna declaración sobre el reparto de menores entre comunidades. Las publicaciones sobre Ceuta en Telegram (9-oct) tratan de una denuncia por trata, no del reparto."
+   },
+   "q35": {
+    "valor": null,
+    "nota": "No buscado: el programa («Contrato electoral») ya lo ha codificado el usuario; el brief pide buscar declaraciones solo para q31, q33, q34, x1, x2 y x3."
+   },
+   "q36": {
+    "valor": null,
+    "nota": "No buscado: el programa («Contrato electoral») ya lo ha codificado el usuario; el brief pide buscar declaraciones solo para q31, q33, q34, x1, x2 y x3."
+   },
+   "q37": {
+    "valor": null,
+    "nota": "No buscado: el programa («Contrato electoral») ya lo ha codificado el usuario; el brief pide buscar declaraciones solo para q31, q33, q34, x1, x2 y x3."
+   },
+   "x1": {
+    "valor": null,
+    "nota": "No se encontró ninguna declaración sobre la oficialidad del catalán, el euskera o el gallego en la UE."
+   },
+   "x2": {
+    "valor": null,
+    "nota": "No se encontró ninguna declaración sobre traspasar competencias de inmigración a las comunidades."
+   },
+   "x3": {
+    "valor": null,
+    "nota": "No se encontró ninguna declaración sobre limitar la compra a no residentes. Lo que consta es otra medida: prohibir a los fondos comprar vivienda residencial urbana (Telegram, 6-oct: «PROHIBIDO a los fondos comprar vivienda residencial en zonas urbanas»)."
+   },
+   "x4": {
+    "valor": null,
+    "nota": "No buscado: el programa («Contrato electoral») ya lo ha codificado el usuario; el brief pide buscar declaraciones solo para q31, q33, q34, x1, x2 y x3."
+   }
+  }
+ },
+ "existentes": {
+  "junts": {
+   "q12": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "Si es toca la llengua es toca la nació i es va en contra de la gran majoria de la societat de Catalunya",
+    "pagina": null,
+    "url": "https://www.catalunyapress.cat/article/politica-nacional/2026-10-19/6057794-nogueras-planta-cara-pp-i-vox-pel-catal-toca-llengua-toca-nacio",
+    "medio": "Catalunya Press (declaraciones difundidas por Junts, recogidas por Europa Press)",
+    "fecha": "2026-10-19",
+    "quien": "Míriam Nogueras, cabeza de lista de Junts al Congreso por Barcelona",
+    "formato": "declaraciones difundidas por el partido",
+    "marco": null,
+    "nota": "Respuesta al «Contracte amb Espanya» de Feijóo, que garantizaría la enseñanza del castellano en toda España; el medio dice que las palabras se refieren a la inmersión lingüística. Defiende que Cataluña decida el modelo lingüístico de la escuela, sin un mínimo de castellano impuesto. Es reactiva (rechaza la propuesta del PP sin proponer nada propio): regla (b), +1. En la copia la cita va entre comillas tipográficas «“…”».",
+    "fuente_local": "data/sources/compromisos/junts/catpress_llengua_20261019.txt",
+    "sha256": "32fb283c0fb7e7b5c583a9ed406637aee4c954d19252437a3e64df0976fa6d3f"
+   }
+  }
+ },
+ "descartados": [
+  {
+   "partido": "junts",
+   "q": "q31",
+   "url": "https://www.canal21ebre.com/cruset-junts-tarragona-classes-mitjanes-treballadores-29n/",
+   "motivo": "Cruset (6-nov, Canal 21 Ebre y Marfanta): la posición de mantener Ascó y Vandellòs va en estilo indirecto; lo entrecomillado («simple qüestió matemàtica») es solo la justificación. Hace falta revisar el vídeo."
+  },
+  {
+   "partido": "junts",
+   "q": "q32",
+   "url": "https://junts.cat/actualitat/verges-volem-incrementar-els-salaris-catalans-com-fan-els-paisos-mes-prospers-de-la-unio-europea/",
+   "motivo": "Salario mínimo de referencia catalán, no vinculante, en el Parlament: es una medida relacionada pero distinta de que la comunidad pueda fijar un salario mínimo legal."
+  },
+  {
+   "partido": "junts",
+   "q": "q33",
+   "url": "https://www.diaridetarragona.com/espana/272190/junts-votado-dos-decretos-vivienda.html",
+   "motivo": "Cruset, 2-oct: «No resuelven lo que deberían resolver…». Es anterior a la convocatoria y se refiere a los dos decretos anteriores juntos. Se usa la intervención del 12-nov."
+  },
+  {
+   "partido": "junts",
+   "q": "q33",
+   "url": "https://www.diaridetarragona.com/tarragona/273553/junts-sobre-riera-gaia-decretos-psoe-garantizan-proteccion-prometen.html",
+   "motivo": "Cruset, 20-oct: critica «los reales decretos del PSOE» en general, a raíz de un desahucio de la Sareb. No distingue el decreto de la prórroga quinquenal."
+  },
+  {
+   "partido": "junts",
+   "q": "q34",
+   "url": "https://www.eldebate.com/espana/cataluna/20260805/junts-advierte-no-daran-voto-sanchez-no-exime-cataluna-reparto-menores-ceuta_446966_amp.html",
+   "motivo": "Nogueras, agosto de 2026: anterior a la convocatoria y sin referencia a estas elecciones. Pide excluir a Cataluña del reparto."
+  },
+  {
+   "partido": "vox",
+   "q": "q33",
+   "url": "https://www.idealista.com/news/inmobiliario/vivienda/2026/11/12/923779-la-diputacion-permanente-convalida-el-decreto-de-vivienda-y-rechaza-el-de",
+   "motivo": "Hernández Quero («cambiar las reglas del juego en mitad del partido») habla del segundo decreto (antidesahucios, convalidado), no de la prórroga quinquenal."
+  },
+  {
+   "partido": "vox",
+   "q": "q31/q36/q37/x3",
+   "url": "https://www.infobae.com/espana/agencias/2026/11/12/vox-plantea-residencia-legal-para-alquilar-gravar-las-remesas-y-que-los-inmigrantes-solo-se-atiendan-en-urgencias/",
+   "motivo": "Resumen de prensa del programa «Es sentido común» en estilo indirecto, sin citas de líderes. El brief lo excluye."
+  },
+  {
+   "partido": "vox",
+   "q": "x1",
+   "url": "https://www.diaridetarragona.com/tarragona/271177/vox-pide-dimision-vinuales.html",
+   "motivo": "Joan Garriga, 21-sep-2026: anterior a la convocatoria."
+  },
+  {
+   "partido": "vox",
+   "q": "x2",
+   "url": "https://www.eldebate.com/espana/cataluna/20250920/garriga-califica-traicion-pueblo-espanol-delegar-competencias-inmigracion_336512.html",
+   "motivo": "Ignacio Garriga, septiembre de 2025: otra legislatura y fuera de plazo."
+  },
+  {
+   "partido": "vox",
+   "q": "q34",
+   "url": "https://www.eldiario.es/politica/consejeros-vox-castilla-leon-aragon-extremadura-no-iran-reunion-infancia-rechazan-reparto-menores_1_13467474.html",
+   "motivo": "Consejeros autonómicos de Vox, agosto de 2026: anterior a la convocatoria y sin referencia a las elecciones."
+  },
+  {
+   "partido": "salf",
+   "q": "q33",
+   "url": "https://theobjective.com/espana/politica/2026-10-07/alvise-supremo-fraude-vivienda/",
+   "motivo": "Denuncia de procedimiento («fraude de ley») contra los dos decretos, en un comunicado del partido: no es posición sobre la renovación automática."
+  }
+ ]
+}
