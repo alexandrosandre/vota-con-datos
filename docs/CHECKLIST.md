@@ -36,8 +36,8 @@ correcta o legal) hasta que esté hecho.
   La veda (24-nov 00:00 → 29-nov 20:00) ya está automatizada en GitHub Actions.
 - [ ] **6. [Yo] Compromisos de campaña desde el 13-nov**, sobre todo para EH Bildu, PNV, PSC, UPN-PP y
   CC. Revisar el mitin de Sánchez en Sevilla (12-nov) con cobertura de agencia.
-- [ ] **7. [Tú] Opcional:** verificar el dominio en GitHub (Settings → Pages) y activar la verificación
-  en dos pasos en Porkbun.
+- [ ] **7. [Tú] Opcional:** activar la verificación en dos pasos en Porkbun. (Dominio verificado en
+  GitHub el 13-nov; no borrar el registro TXT `_github-pages-challenge-…`.)
 
 ## C. Después del 29-N
 
@@ -52,4 +52,4 @@ correcta o legal) hasta que esté hecho.
 | # | Qué | Cuándo |
 |---|---|---|
 | 1 | Revisar una muestra de contenidos (en curso) | Antes de anunciar la web |
-| 7 | (Opcional) verificar el dominio en GitHub y 2FA en Porkbun | Cuando quieras |
+| 7 | (Opcional) 2FA en Porkbun | Cuando quieras |
