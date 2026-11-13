@@ -42,6 +42,8 @@ export interface Pregunta {
   /** De qué propuestas reales nace (se muestra al final, no durante, para no sesgar). */
   origen: { partido: string; tipo?: 'programa' | 'campaña'; cita: string; pagina?: string | number | null; url?: string }[];
   contexto_fuente?: string | null;
+  /** Detalle desplegable bajo el contexto, para lo que no cabe en 1–2 frases. */
+  contexto_mas?: { titulo: string; intro?: string; puntos: string[]; fuente?: string } | null;
 }
 
 export interface PosicionPartido {

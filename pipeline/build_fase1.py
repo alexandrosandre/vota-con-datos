@@ -95,7 +95,7 @@ def main():
         print("\n".join(errores))
         sys.exit(1)
 
-    pub = [{k: q.get(k) for k in ("id", "tema", "texto", "contexto", "contexto_fuente", "origen")} for q in preguntas]
+    pub = [{k: q.get(k) for k in ("id", "tema", "texto", "contexto", "contexto_fuente", "contexto_mas", "origen")} for q in preguntas]
     fase1 = {"preguntas": pub, "posiciones": posiciones, "grupos": usados}
     (D / "fase1" / "fase1.json").write_text(json.dumps(fase1, ensure_ascii=False, indent=1))
     cob = {p: sum(1 for x in qs.values() if x["valor"] is not None) for p, qs in posiciones.items()}

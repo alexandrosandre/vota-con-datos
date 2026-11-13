@@ -135,6 +135,24 @@ function Tarjeta({ q, i, n, onNext, onPrev }: { q: Pregunta; i: number; n: numbe
             )}
           </p>
         )}
+        {q.contexto_mas && (
+          <details class="desplegable contexto-mas" key={q.id}>
+            <summary>{q.contexto_mas.titulo}</summary>
+            {q.contexto_mas.intro && <p class="muted">{q.contexto_mas.intro}</p>}
+            <ul class="muted">
+              {q.contexto_mas.puntos.map((t, k) => (
+                <li key={k}>{t}</li>
+              ))}
+            </ul>
+            {q.contexto_mas.fuente && (
+              <p class="muted">
+                <a href={q.contexto_mas.fuente} target="_blank" rel="noopener">
+                  Fuente
+                </a>
+              </p>
+            )}
+          </details>
+        )}
         <div class="likert" role="group" aria-label="Tu respuesta">
           {ESCALA.map((e) => (
             <button key={e.v} class={r?.valor === e.v ? 'on' : ''} onClick={() => set(e.v)} aria-pressed={r?.valor === e.v}>
