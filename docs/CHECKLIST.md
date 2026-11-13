@@ -35,8 +35,10 @@ correcta o legal) hasta que esté hecho.
   Canarias contra UPC (solo hay prensa).
 - [ ] **5. [Externo → Yo] Encuestas nuevas** publicadas antes del 24-nov, desde su publicación original.
   La veda (24-nov 00:00 → 29-nov 20:00) ya está automatizada en GitHub Actions.
-- [ ] **6. [Yo] Compromisos de campaña desde el 13-nov**, sobre todo para EH Bildu, PNV, PSC, UPN-PP y
-  CC. Revisar el mitin de Sánchez en Sevilla (12-nov) con cobertura de agencia.
+- [ ] **6. [Yo] Compromisos de campaña desde el 13-nov**, sobre todo para UPN-PP (0/30), PSC, Ara Més,
+  EH Bildu, PNV y CC (3/30). La revisión programada recoge las promesas nuevas a diario (13-nov: el mitin
+  de Sánchez en Sevilla no dejó medidas concretas). Barrido completo de posiciones del paso 1 y de los
+  compromisos del paso 2 de los partidos sin programa hacia el 18-nov, con verificación independiente.
 - [ ] **7. [Tú] Opcional:** activar la verificación en dos pasos en Porkbun. (Dominio verificado en
   GitHub el 13-nov; no borrar el registro TXT `_github-pages-challenge-…`.)
 
