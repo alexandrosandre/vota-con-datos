@@ -130,7 +130,8 @@ export function Metodologia() {
               persona para estas elecciones o la próxima legislatura: en un mitin, una entrevista, un debate o un acto de campaña. Eso cuenta
               como su programa. Indicamos quién lo dijo, dónde y cuándo. No valen rumores, «fuentes del partido» ni resúmenes de terceros. Un
               primer análisis asigna cada posición con su cita. Un segundo análisis, independiente, la comprueba con la fuente y corrige o
-              descarta lo que no se sostenga. Si no hay posición documentada, el partido queda «sin posición conocida» en ese tema.
+              descarta lo que no se sostenga. Si no hay posición documentada, el partido queda «sin posición conocida» en ese tema. En Navarra el PP no tiene papeleta propia y se presenta dentro de UPN-PP: en los temas de alcance estatal
+              UPN-PP toma la posición del PP, y en los autonómicos solo cuenta lo que dice UPN.
             </li>
             <li>
               <strong>Afinidad.</strong> En cada tema comparamos tu respuesta con la del partido: cuanto más cerca, más afinidad. Un 100 %

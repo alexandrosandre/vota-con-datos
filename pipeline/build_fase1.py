@@ -26,6 +26,15 @@ from verify_quotes import norm  # noqa: E402
 D = ROOT / "data"
 CONVOCATORIA = "2026-10-06"
 
+# Coaliciones sin papeleta propia del socio: en Navarra el PP solo se presenta dentro de UPN-PP, así que
+# en las afirmaciones de alcance estatal UPN-PP toma la posición del PP; en las autonómicas (competencias
+# y obligaciones de las comunidades, lenguas, financiación) solo cuenta lo que diga UPN. Decisión del
+# editor, 13-nov-2026.
+HEREDA = {"upn": {"de": "pp", "autonomicas": {"q12", "q16", "q17", "q18", "q32", "q33"},
+                  "nota": "Posición del PP: en Navarra el PP no tiene papeleta propia y se presenta dentro de UPN-PP, "
+                          "así que en los temas de alcance estatal usamos la suya. En los temas autonómicos solo "
+                          "cuenta lo que dice UPN."}}
+
 
 def main():
     preguntas = json.loads((D / "fase1" / "preguntas.json").read_text())["preguntas"]
@@ -90,6 +99,15 @@ def main():
     if errores:
         print("\n".join(errores))
         sys.exit(1)
+
+    for pid, h in HEREDA.items():
+        propias = posiciones.setdefault(pid, {})
+        for qid, c in posiciones.get(h["de"], {}).items():
+            if qid in h["autonomicas"] or c.get("valor") is None:
+                continue
+            if (propias.get(qid) or {}).get("valor") is not None:
+                continue  # lo que dice el propio partido prevalece
+            propias[qid] = {**c, "heredada_de": h["de"], "nota": h["nota"]}
 
     pub = [{k: q.get(k) for k in ("id", "tema", "texto", "contexto", "contexto_fuente", "origen")} for q in preguntas]
     fase1 = {"preguntas": pub, "posiciones": posiciones, "grupos": usados}

@@ -51,6 +51,8 @@ export interface PosicionPartido {
   fecha?: string | null;
   /** Líder que lo dijo en primera persona (o el partido, si es un documento oficial). */
   quien?: string | null;
+  /** Posición tomada de un socio de coalición (p. ej. UPN-PP toma la del PP en temas estatales). */
+  heredada_de?: string | null;
   formato?: string | null;
   /** Para declaraciones de precampaña: por qué se refieren a estas elecciones. */
   marco?: string | null;
