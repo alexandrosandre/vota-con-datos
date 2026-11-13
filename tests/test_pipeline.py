@@ -169,7 +169,10 @@ class TestPartidosYPapeletas(unittest.TestCase):
     def test_sin_posiciones_heredadas(self):
         f1 = json.loads((ROOT / "web/public/data/fase1.json").read_text())
         self.assertFalse([(p, q) for p, qs in f1["posiciones"].items() for q, x in qs.items() if x.get("heredada_de")])
-        self.assertFalse([q for q, x in f1["posiciones"].get("upn", {}).items() if x.get("valor") is not None])
+        # UPN solo con lo que dicen sus líderes o lo que firma: nada atribuido a dirigentes del PP.
+        pp = ("Feijóo", "Sayas", "Alba", "Tellado", "Gamarra")
+        self.assertFalse([q for q, x in f1["posiciones"].get("upn", {}).items()
+                          if x.get("valor") is not None and any(n in (x.get("quien") or "") for n in pp)])
 
 
 class TestVeda(unittest.TestCase):

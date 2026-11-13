@@ -37,9 +37,10 @@ correcta o legal) hasta que esté hecho.
   La veda (24-nov 00:00 → 29-nov 20:00) ya está automatizada en GitHub Actions.
 - [ ] **6. [Yo] Compromisos de campaña desde el 13-nov** (empieza la campaña), sobre todo para los partidos
   con menos posiciones en el paso 1: UPN (0/30), Ara Més (2), PSC (3), CC (4), NC-BC (5), PNV (7). La
-  revisión programada recoge las promesas nuevas a diario. **Primer barrido de posiciones del paso 1
-  lanzado el 13-nov por la tarde** (grupo g5, con verificación independiente); segundo barrido, también
-  de los compromisos del paso 2 de los partidos sin programa, hacia el 18-nov.
+  revisión programada recoge las promesas nuevas a diario. **Primer barrido hecho el 13-nov** (grupo g5,
+  verificación independiente: 23 aprobadas, 8 rechazadas): UPN 0→5, Ara Més 2→8, PSC 3→5, NC-BC 5→6,
+  EH Bildu 10→13, Compromís 10→13, Frente Amplio 14→16; CC (4) y PNV (7) sin nada nuevo que cumpla las
+  reglas. Segundo barrido, también de los compromisos del paso 2 de los partidos sin programa, hacia el 18-nov.
 - [ ] **7. [Tú] Opcional:** activar la verificación en dos pasos en Porkbun. (Dominio verificado en
   GitHub el 13-nov; no borrar el registro TXT `_github-pages-challenge-…`.)
 

@@ -36,7 +36,12 @@ citas de programa que no sean literales y las declaraciones sin autor, sin URL o
 Los pasos 1 y 2 tratan de **partidos**, no de coaliciones electorales.
 
 * **Líderes:** lo que dice un líder cuenta solo para su propio partido, aunque hable en un acto de la
-  coalición. Ante la duda sobre su afiliación, no se atribuye.
+  coalición. Ante la duda sobre su afiliación, no se atribuye. Si alguien dirige dos partidos, cuenta para
+  aquel en cuyo nombre habla: Carme Gomila (presidenta de ERC en Baleares y dirigente de MÉS per Mallorca,
+  cabeza de lista de Ara Més) cuenta para Ara Més cuando habla como su candidata, no para ERC.
+* **Federaciones:** los partidos que forman una entrada de la web cuentan para ella (MÉS per Mallorca,
+  Més per Menorca y Ara Eivissa para Ara Més; los del Frente Amplio para Frente Amplio). Una organización
+  local cuenta solo si quien habla es líder o portavoz reconocido del partido.
 * **Documentos conjuntos** (manifiesto, acuerdo, nota conjunta, web de la coalición): cuentan para
   **cada partido de la web que firma el pacto de coalición** (`data/boe/coaliciones.json`). Los
   firmantes que forman el Frente Amplio (Izquierda Unida y sus federaciones, Movimiento Sumar,

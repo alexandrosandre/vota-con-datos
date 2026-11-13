@@ -106,3 +106,12 @@ Se revisaron todas las posiciones del paso 1 que salen de un documento de coalic
 **Recuentos:** Podemos 16 → 18, Frente Amplio 10 → 14, ERC 17 (cambia el valor de q31).
 
 **PSC:** se mantiene psc q21 (Sánchez en el acto del PSC en Tarragona); su nota explica ahora la excepción PSC-PSOE en lugar de remitir al criterio de UPN-PP.
+
+## Revisión posterior (13-nov, tarde): Gomila cuenta para Ara Més
+
+**Evidencia.** Carme Gomila es presidenta de ERC en Baleares y, además, «responsable d'Estratègia i Relacions Polítiques de MÉS per Mallorca» (dBalears, 24-oct-2026, https://www.dbalears.cat/balears/politica/2026/10/24/423549/mes-per-mallorca-proposa-carme-gomila-com-candidata-congres-tria-rosa-cursach-per-senat.html, copia en `data/sources/compromisos/ara_mes_fa/dbalears_20261024_candidatura.txt`), y MÉS per Mallorca es uno de los tres partidos de la federación Ara Més. La asamblea de MÉS per Mallorca la propuso y el Comité Federal de Ara Més «ha ratificado este sábado por unanimidad» su candidatura como cabeza de lista (Canal 4 Diario, 24-oct-2026, https://canal4diario.com/29n/2026/10/24/ara-mes-proclama-por-unanimidad-a-carme-gomila-como-candidata-al-congreso-para-las-elecciones-del-29n/, copia en `data/sources/compromisos/ara_mes_fa/canal4diario_20261024_proclamacion.txt`). Su afiliación queda en `data/boe/afiliaciones_g1.json` como «Esquerra Republicana (ERC) y MÉS per Mallorca». Por la mañana solo constaba como presidenta de ERC (Ara Balears, El Nacional) y, ante la duda, no se le atribuyó a Ara Més.
+
+**Decisión del editor (13-nov, tarde):** lo que dice Gomila cuenta para Ara Més, no para ERC. Corrige lo dicho arriba sobre Gomila: lo que se apuntó como «candidato para ERC» deja de serlo.
+
+Consecuencia en el paso 1: lo que dice Gomila en primera persona vuelve a valer para Ara Més (por ejemplo, la q30 del mitin de Palma, retirada arriba). Las posiciones (`fase1.json`, `codificacion_g*.json`) las revisa una tarea aparte; esta sección solo registra la decisión y la evidencia. En el paso 2 y en las promesas ya se ha restaurado (ver `data/fase3/reatribucion_2026-11-13.md` y `data/promesas/reatribucion_2026-11-13.md`).
+

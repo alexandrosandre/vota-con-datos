@@ -1,0 +1,429 @@
+{
+ "grupo": "g5",
+ "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2 con las decisiones del editor del 13-nov (atribución por partido, documentos conjuntos, Gomila y federación Ara Més)",
+ "fecha": "2026-11-13",
+ "aprobado": true,
+ "revisadas": 32,
+ "resultado": {
+  "ok": 21,
+  "corregido": 0,
+  "rechazado": 8,
+  "dudosas_confirmadas_sin_valor": 3
+ },
+ "alcance": "Las 27 posiciones nuevas del barrido de campaña del 13-nov (posiciones_a.json: UPN, PSC, PNV, EH Bildu; posiciones_b.json: Ara Més, Compromís, CC, NC-BC), sus 2 candidatas a sustitución (EH Bildu q32, Compromís q24) y las 3 dudosas sin valor (PSC q12, PNV q23, UPN q21). Para cada una: (1) se volvió a descargar la fuente original con peticiones HTTP normales (32 URL: 6 PDF oficiales de Congreso, Senado y Parlamento de Navarra y 26 páginas de partidos y medios, además del RSS del PSC y la nota de Compromís del 5-nov sobre La Unió) y se comprobó la cita fragmento a fragmento con norm() de verify_quotes.py, tanto en el original como en la copia local: todas literales. Excepciones: socialistes.cat da 403 en los artículos y no se sorteó; la cita de PSC q22 se comprobó en el canal RSS oficial descargado hoy y la de la dudosa PSC q12 (ya fuera de las páginas del RSS) solo en la copia local; en frontvalencia.org (Compromís q06) el HTML actual añade un espacio antes del punto, sin cambio de texto. (2) Quién habla, su cargo y partido, con las decisiones del editor del 13-nov: documentos de coalición para cada firmante; Sánchez en actos del PSC cuenta para el PSC; nada del PP para UPN; Carme Gomila cuenta para Ara Més; los documentos oficiales y los líderes de MÉS per Mallorca, Més per Menorca y Ara Eivissa cuentan para Ara Més, y una organización local solo si habla un líder o portavoz reconocido del partido sobre política estatal. En el Congreso y el Senado se comprobó en el Diario el turno «por/en nombre del Grupo». (3) Fechas: todas ≥ 2025-11-01 (la más antigua, 19-nov-2025); las anteriores a la convocatoria llevan su fecha y marco null, como en g4. (4) Valor juzgado contra la afirmación tal como está redactada, con los criterios de g1-g4. (5) Búsqueda breve de declaraciones posteriores contrarias: programa de CC (q29), pacto de Compromís con La Unió (q29), pacto de financiación del Gobierno de Canarias de julio de 2026 (q17). Mecanismo: build_fase1.py lee los codificacion_g*.json en orden y el posterior pisa al anterior; codificacion_g5.json recoge las aprobadas y, en Compromís q24, guarda la posición de g4 en «sustituye», como hizo g3 con ERC q31. Las celdas rechazadas quedan con valor null y la nota conserva la fuente descartada; ninguna tenía posición previa, así que no se pisa nada. La sustitución rechazada (EH Bildu q32) no figura en g5 y se mantiene la +1 vigente. Después se aplicó la regla de documentos conjuntos a las posiciones aprobadas que salen de documentos de coalición: ver «reatribucion_2026-11-13b» (2 celdas añadidas a Frente Amplio; 3 sin cambios por tener el partido posición propia igual o programa).",
+ "cambios": [
+  {
+   "partido": "upn",
+   "pregunta": "q15",
+   "antes": -1,
+   "despues": null,
+   "motivo": "Ibarrola, presidenta de UPN, critica el decreto y pregunta si habrá «otro decreto extraordinario», pero en la misma nota dice «El problema no es la medida, sino cómo se ha hecho». No es un rechazo inequívoco de repetir la regularización (a diferencia de Vaquero, PNV, que rechaza las «regularizaciones puntuales cada cierto tiempo»): null."
+  },
+  {
+   "partido": "pnv",
+   "pregunta": "q16",
+   "antes": 1,
+   "despues": null,
+   "motivo": "La enmienda del Grupo Vasco propone el «derecho a decidir» con «ejercicio pactado con el Estado», pero no habla de referéndum ni de independencia, la nota lo presenta como articulación «en el conjunto del Estado» y la enmienda al art. 2 del mismo documento mantiene «la indisoluble unidad de la Nación española». No es posición inequívoca sobre un referéndum pactado de independencia (mismo criterio que su programa en g3): null."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q32 (sustitución)",
+   "antes": 2,
+   "despues": 1,
+   "motivo": "La nota del 13-nov (Bideguren, cabeza de lista al Senado) es válida y posterior, pero tiene la misma limitación por la que la posición vigente es +1: pide un «SMI propio y adaptado a nuestro coste de vida» para Euskal Herria, sin decir que deba estar por encima del estatal. Los +2 de PNV, ERC y BNG lo dicen expresamente. Se mantiene la posición vigente (+1); no se sustituye."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q06",
+   "antes": 1,
+   "despues": null,
+   "motivo": "Nota de MÉS per Palma (organización local) sobre una moción municipal; la exigencia al Estado está en la narración y quien habla, Neus Truyol, es portavoz de la organización local, no líder reconocida del partido. Por la regla del editor sobre organizaciones locales, no cuenta: null."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q29",
+   "antes": 1,
+   "despues": null,
+   "motivo": "La PNL del 13-ene-2026 pide rechazar la ratificación «en els seus termes actuals» y, a la vez, salvaguardas y compensaciones. Lo posterior (pacto de campaña con La Unió del 5-nov-2026: salvaguardas y aranceles, sin pedir frenar el acuerdo) es más suave y prevalece; es el mismo motivo por el que verificacion_g4 rechazó la +1 de Micó. Null."
+  },
+  {
+   "partido": "cc",
+   "pregunta": "q29",
+   "antes": 1,
+   "despues": null,
+   "motivo": "La nota del 27-ene-2026 anuncia una estrategia «en contra del acuerdo de Mercosur», pero el programa del 29-N (8-nov), que va primero y es posterior, solo pide evaluar el impacto de los acuerdos comerciales y salvaguardas «cuando proceda». Lo posterior es más suave y prevalece: null."
+  },
+  {
+   "partido": "cc",
+   "pregunta": "q17",
+   "antes": -1,
+   "despues": null,
+   "motivo": "La nota del Consejo Político Nacional (10-ene-2026) rechaza un modelo bilateral Estado-Cataluña por la ordinalidad y lo que pierde Canarias en el nuevo sistema común, no por la recaudación propia con cupo. En julio de 2026 el Gobierno de Canarias de Clavijo (secretario general de CC) pactó su apoyo a esa reforma a cambio de compensaciones (El Debate, 28-jul-2026). No es una posición inequívoca sobre la afirmación: null."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q31",
+   "antes": 1,
+   "despues": null,
+   "motivo": "La nota de NC-BC (1-oct-2026) pide convalidar «los dos decretos-ley de vivienda» sin mencionar la duración ni la renovación de los contratos, y con la salvedad de que «las medidas pueden y deben mejorarse». Apoyar un paquete sin hablar de la medida no es posición sobre ella; la nota de Juventud Canarista es de la rama juvenil. Null."
+  }
+ ],
+ "correcciones_de_campos": [
+  {
+   "partido": "upn",
+   "pregunta": "q35",
+   "campo": "quien, formato",
+   "motivo": "Regla de g4: nombre y «en nombre del Grupo Parlamentario Mixto» para quien habla por su grupo."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q23",
+   "campo": "quien",
+   "motivo": "«Hoy cabeza de lista por Bizkaia» se sustituye por «en nombre del Grupo Parlamentario Euskal Herria Bildu», como en g4."
+  },
+  {
+   "partido": "upn",
+   "pregunta": "q32",
+   "campo": "quien, formato",
+   "motivo": "Se quita «hoy cabeza de lista de UPN-PP al Senado por Navarra», que no se pudo comprobar con una fuente primaria; se deja su cargo comprobado en el Diario (portavoz del grupo UPN)."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q29",
+   "campo": "quien",
+   "motivo": "Se precisa que es parlamentario foral de EH Bildu y portavoz de su grupo en esa comisión (no portavoz general)."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q24",
+   "campo": "quien, formato",
+   "motivo": "Se quita el grupo parlamentario (la declaración es a la prensa, no en el Congreso); formato «declaraciones en nota oficial del partido»."
+  },
+  {
+   "partido": "(21 celdas)",
+   "pregunta": "—",
+   "campo": "nota",
+   "motivo": "Notas reescritas para el lector: sin rutas de copias, sha256, marcas «REVISAR» ni referencias a ficheros internos; traducción de las citas en catalán cuando hacía falta. Las rutas y sha256 quedan en los campos internos fuente_local y sha256 y en la lista «fuentes»."
+  },
+  {
+   "partido": "(21 celdas)",
+   "pregunta": "—",
+   "campo": "marco",
+   "motivo": "null en todas: ninguna declaración anterior a la convocatoria se refiere expresamente a estas elecciones; la web ya muestra la fecha."
+  }
+ ],
+ "posiciones": [
+  {
+   "partido": "upn",
+   "pregunta": "q35",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Catalán, único diputado de UPN, habla en el turno del Grupo Mixto («en nombre del Grupo Parlamentario Mixto ... tiene la palabra el señor Catalán Higueras», p. 21) sobre la proposición que UPN firma con el PP y que es la medida (ampliar la PPR). Defensa expresa y sin reservas: +2, mismo criterio que Vox en ese debate. Cita literal en el PDF oficial (p. 21). Cuenta para UPN porque lo dice su diputado, no el PP."
+  },
+  {
+   "partido": "upn",
+   "pregunta": "q29",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Nota oficial de upn.org (22-ene-2026, accesible y coincidente con la copia): rechazo expreso del acuerdo UE-Mercosur. No pide que España lo frene en la UE: +1, mismo criterio que Podemos y Vox."
+  },
+  {
+   "partido": "upn",
+   "pregunta": "q32",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Esparza habla en el turno de UPN como portavoz de su grupo en el Parlamento de Navarra (líder autonómico) sobre la proposición de ley para el Congreso que es la medida. Defiende la lógica del SMI autonómico y niega que cause desigualdad, pero lo condiciona (debate jurídico, paquete fiscal, coste para pymes) y anuncia la abstención: a favor con condiciones, +1. 0 sería la alternativa (ver dudas). Página 47 comprobada en el PDF oficial."
+  },
+  {
+   "partido": "upn",
+   "pregunta": "q15",
+   "veredicto": "rechazado",
+   "valor_codificador": -1,
+   "valor_final": null,
+   "motivo": "Ibarrola, presidenta de UPN, critica el decreto y pregunta si habrá «otro decreto extraordinario», pero en la misma nota dice «El problema no es la medida, sino cómo se ha hecho». No es un rechazo inequívoco de repetir la regularización (a diferencia de Vaquero, PNV, que rechaza las «regularizaciones puntuales cada cierto tiempo»): null."
+  },
+  {
+   "partido": "upn",
+   "pregunta": "q01",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Nota oficial de UPN (27-may-2026): atribuye a la «limitación de precios» de las zonas tensionadas la caída de la oferta y habla de «alocada carrera reguladora»; su presidenta propuso suprimir las zonas tensionadas (nota del 24-mar). Rechazo del tope donde ya existe: −1 indirecta frente a un tope estatal, mismo criterio que Vox q01."
+  },
+  {
+   "partido": "upn",
+   "pregunta": "q11",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Nota oficial de UPN (15-abr-2026): «atentado a la libertad» la reducción de conciertos y ley para «blindar» la concertada. −1 indirecta, mismo criterio que PNV q11 y Vox q11."
+  },
+  {
+   "partido": "psc",
+   "pregunta": "q16",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Illa, primer secretario del PSC, en la sesión de control del Parlament (7-oct-2026, tras la convocatoria), entre comillas en NacióDigital (accesible, coincide con la copia): «No estic a favor d'un referèndum d'autodeterminació». En contra, reactivo: −1. No se pudo cotejar con el Diari de Sessions (no accesible con peticiones normales); la crónica de un medio de referencia con cita literal vale por el protocolo."
+  },
+  {
+   "partido": "psc",
+   "pregunta": "q22",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Morón, cabeza de lista del PSC por Lleida, en el acto de presentación (nota oficial del PSC, 26-oct-2026). La página del artículo da 403; se comprobó en el canal RSS oficial del PSC, descargado hoy con una petición normal: la cita está literal. Presentar la supresión del Ministerio como amenaza de PP-Vox es −1, mismo criterio que PSOE q22 y Frente Amplio q22 (este último, también en una enumeración)."
+  },
+  {
+   "partido": "pnv",
+   "pregunta": "q16",
+   "veredicto": "rechazado",
+   "valor_codificador": 1,
+   "valor_final": null,
+   "motivo": "La enmienda del Grupo Vasco propone el «derecho a decidir» con «ejercicio pactado con el Estado», pero no habla de referéndum ni de independencia, la nota lo presenta como articulación «en el conjunto del Estado» y la enmienda al art. 2 del mismo documento mantiene «la indisoluble unidad de la Nación española». No es posición inequívoca sobre un referéndum pactado de independencia (mismo criterio que su programa en g3): null."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q23",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Matute habla «por el Grupo Parlamentario Euskal Herria Bildu» (DS 185, p. 13) contra la proposición del PP que prevé desalojos en 24 horas. −1, mismo criterio verificado en g4 para Podemos, Frente Amplio y Compromís en ese debate."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q29",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "El parlamentario foral Mendo Goñi interviene como «portavoz de EH Bildu Nafarroa» en la comisión (DESA 38, p. 18, PDF oficial accesible) y habla en nombre del partido («Euskal Herria Bildu somos muy claros»): el acuerdo «no es admisible» y la suspensión debe ser «definitiva». Se aplica el criterio de quien habla por su grupo en el debate (ver dudas). +1 porque no pide que lo haga España en la UE."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q16",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Nota oficial de EH Bildu (16-sep-2026; delegación encabezada por Otegi): «objetivo de la independencia» y celebración del referéndum de autodeterminación de los partidos de Gales, Escocia e Irlanda. Un partido que persigue la independencia por referéndum está a favor de que pueda pactarse uno: +1, mismo valor que Podemos y Junts."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q32 (sustitución)",
+   "veredicto": "rechazado",
+   "valor_codificador": 2,
+   "valor_final": 1,
+   "motivo": "La nota del 13-nov (Bideguren, cabeza de lista al Senado) es válida y posterior, pero tiene la misma limitación por la que la posición vigente es +1: pide un «SMI propio y adaptado a nuestro coste de vida» para Euskal Herria, sin decir que deba estar por encima del estatal. Los +2 de PNV, ERC y BNG lo dicen expresamente. Se mantiene la posición vigente (+1); no se sustituye."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q30",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Nota oficial de la coalición Ara Més–Front Ampli (aramesfrontampli.cat, 7-nov, accesible y coincidente): «proposa establir un topall als preus dels aliments bàsics», primera medida del titular. Documento conjunto que cuenta para Ara Més (y, por la regla del editor, Gomila también cuenta ya para Ara Més). +2."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q31",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Nota oficial de inicio de campaña (13-nov): pide ir más allá con «contractes indefinits». Contratos indefinidos incluyen el efecto de la renovación automática: +2, mismo criterio que Compromís q31, Podemos y Frente Amplio."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q29",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Nota oficial de MÉS per Mallorca (partido de la federación Ara Més; regla del editor) con Vicenç Vidal, su diputado: «MÉS s'oposa al tractat». Rechazo expreso sin pedir que España lo frene: +1."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q12",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Nota oficial de MÉS per Mallorca (19-nov-2025, dentro de plazo) sobre la LO de plurilingüismo: la lengua propia será «normalment vehicular» en la enseñanza. Indirecta: +1, mismo criterio que BNG q12."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q24",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Nota oficial de MÉS per Mallorca sobre su moción en el Consell: «insta el Govern espanyol a derogar [...] la Llei Mordassa». Es política estatal y lo dice el partido de la federación, no una organización local: +1 (uno de varios puntos de una moción insular)."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q13",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Nota oficial de MÉS per Mallorca con su consellera Rosa Cursach: rechaza la «prioritat nacional» y discriminar por origen en los servicios sociales. Sin hablar de vivienda social: −1, mismo criterio que Compromís q13 y Frente Amplio q13. Cuenta como documento del partido, no como declaración de Cursach."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q06",
+   "veredicto": "rechazado",
+   "valor_codificador": 1,
+   "valor_final": null,
+   "motivo": "Nota de MÉS per Palma (organización local) sobre una moción municipal; la exigencia al Estado está en la narración y quien habla, Neus Truyol, es portavoz de la organización local, no líder reconocida del partido. Por la regla del editor sobre organizaciones locales, no cuenta: null."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q06",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Web electoral de Compromís: Front Valencià (descargada hoy: «Apostarem per la reducció de la jornada laboral», con un espacio antes del punto por el marcado HTML; la copia lo tiene igual). Documento de la coalición que cuenta para Compromís. Sin cifra ni salario: +1, mismo criterio que EH Bildu q06."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q33",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Nota oficial de Compromís con Aitana Mas, portavoz adjunta en Les Corts: el acogimiento es «una obligació legal» y la ley establece el reparto. Defiende el reparto obligatorio frente a Vox: −1, mismo valor que EH Bildu, Podemos y Frente Amplio."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q09",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Nota oficial de Compromís (Baldoví, síndic en Les Corts): «revertir les concessions privatitzades» y devolver el Vinalopó a gestión pública. Indirecta y de ámbito valenciano: +1, mismo criterio que la «reversión de privatizaciones» del manifiesto de UPC (NC-BC, Podemos y Frente Amplio q09)."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q29",
+   "veredicto": "rechazado",
+   "valor_codificador": 1,
+   "valor_final": null,
+   "motivo": "La PNL del 13-ene-2026 pide rechazar la ratificación «en els seus termes actuals» y, a la vez, salvaguardas y compensaciones. Lo posterior (pacto de campaña con La Unió del 5-nov-2026: salvaguardas y aranceles, sin pedir frenar el acuerdo) es más suave y prevalece; es el mismo motivo por el que verificacion_g4 rechazó la +1 de Micó. Null."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q24 (sustitución)",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Nota oficial de Compromís (5-oct-2026, dentro del plazo desde el 1-nov-2025): Micó pide al Gobierno «derogar la Llei Mordassa» y lo repite al cierre; es el titular de la nota. Petición expresa y central, posterior a la pregunta de control del 17-jun-2026 (+1): se sustituye por +2, guardando la anterior en «sustituye»."
+  },
+  {
+   "partido": "cc",
+   "pregunta": "q29",
+   "veredicto": "rechazado",
+   "valor_codificador": 1,
+   "valor_final": null,
+   "motivo": "La nota del 27-ene-2026 anuncia una estrategia «en contra del acuerdo de Mercosur», pero el programa del 29-N (8-nov), que va primero y es posterior, solo pide evaluar el impacto de los acuerdos comerciales y salvaguardas «cuando proceda». Lo posterior es más suave y prevalece: null."
+  },
+  {
+   "partido": "cc",
+   "pregunta": "q17",
+   "veredicto": "rechazado",
+   "valor_codificador": -1,
+   "valor_final": null,
+   "motivo": "La nota del Consejo Político Nacional (10-ene-2026) rechaza un modelo bilateral Estado-Cataluña por la ordinalidad y lo que pierde Canarias en el nuevo sistema común, no por la recaudación propia con cupo. En julio de 2026 el Gobierno de Canarias de Clavijo (secretario general de CC) pactó su apoyo a esa reforma a cambio de compensaciones (El Debate, 28-jul-2026). No es una posición inequívoca sobre la afirmación: null."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q31",
+   "veredicto": "rechazado",
+   "valor_codificador": 1,
+   "valor_final": null,
+   "motivo": "La nota de NC-BC (1-oct-2026) pide convalidar «los dos decretos-ley de vivienda» sin mencionar la duración ni la renovación de los contratos, y con la salvedad de que «las medidas pueden y deben mejorarse». Apoyar un paquete sin hablar de la medida no es posición sobre ella; la nota de Juventud Canarista es de la rama juvenil. Null."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q03",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Nota oficial de NC-BC (20-nov-2025, dentro de plazo) sobre la moción de su diputada Carmen Hernández: ITP del 5 % al 3 % e IGIC del 3 % al 1 % para menores de 40 al comprar vivienda, con límites de renta y precio. Misma medida en los impuestos canarios, con otra cuantía y límites: +1."
+  },
+  {
+   "partido": "psc",
+   "pregunta": "q12 (dudosa)",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. Illa (20-oct, nota del PSC tomada del RSS oficial): «el català no es toca [...] No es pot governar Espanya contra Catalunya i contra el català a les escoles». Defiende el catalán en la escuela frente al plan de Feijóo, pero no habla del porcentaje ni del mínimo legal o judicial: mismo criterio que la intervención de Lamuà que g4 dejó en null. La nota del 20-oct ya no está en las páginas del RSS accesibles hoy y la página da 403; se juzga con la copia local."
+  },
+  {
+   "partido": "pnv",
+   "pregunta": "q23 (dudosa)",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. López Torre (Senado, DS 103, p. 106, PDF oficial accesible y coincidente) pone como modelo una respuesta judicial «en 48 o 72 horas» y propone la vía de la LECRIM, no una ley de desalojo en 48 horas; g4 dejó al PNV como ambivalente con Legarda (19-may-2026). Null."
+  },
+  {
+   "partido": "upn",
+   "pregunta": "q21 (dudosa)",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. Catalán (DS 183, p. 43) critica el procedimiento («atajo burdo y fraudulento») y deja abierto reformar la Constitución «como se debe hacer»; el voto en contra no cuenta. Null."
+  }
+ ],
+ "dudas": [
+  "eh_bildu/q29 (+1): se acepta a un portavoz de comisión del Parlamento de Navarra que habla expresamente en nombre del partido. Alternativa: null, si para parlamentos autonómicos se exige un líder del partido (portavoz general o dirigente).",
+  "upn/q32 (+1): Esparza defiende la lógica del SMI autonómico pero lo condiciona y anuncia la abstención. Alternativa: 0 (ambivalente explícito).",
+  "ara_mes_fa/q31 (+2) y compromis/q24 (+2): ±2 por ser propuestas expresas y centrales de la nota. Alternativa: +1 en ambas (en q31 es un elemento de una lista; en q24, una reacción a unas cargas policiales).",
+  "eh_bildu/q16 (+1): el referéndum que se celebra es el de los partidos celtas. Alternativa: null.",
+  "cc/q17 (null): alternativa −1 (rechazo a «cualquier intento» de financiación bilateral con Cataluña), si no se tiene en cuenta el pacto de julio de 2026 del Gobierno de Canarias.",
+  "eh_bildu/q32: alternativa +2 (compromiso prioritario de campaña) si se entiende que «adaptado a nuestro coste de vida» implica un salario mínimo por encima del estatal.",
+  "Aviso técnico: tests/test_pipeline.py (test_sin_posiciones_heredadas) exige que UPN no tenga ninguna posición en web/public/data/fase1.json. Pasa hoy porque no se ha regenerado la web, pero fallará cuando build_web.py publique las cinco posiciones propias de UPN de g5; esa aserción debería limitarse a comprobar que no hay posiciones heredadas del PP."
+ ],
+ "reatribucion_2026-11-13b": {
+  "regla": "Decisión del editor (13-11-2026): los documentos conjuntos de una coalición cuentan para cada partido de la web que firma el pacto de coalición (data/boe/coaliciones.json); lo que dicen los líderes de un partido cuenta solo para su partido. Los firmantes del Frente Amplio (Izquierda Unida y sus federaciones, como EUPV; Movimiento Sumar; Recortes Cero) cuentan para frente_amplio; Podem/Podemos para podemos; ERPV para erc. Precedencia del protocolo: programa oficial del partido primero; entre declaraciones de campaña, la posterior prevalece. Si el partido ya tenía posición propia con el mismo valor, se mantiene la suya.",
+  "alcance": "No es una verificación nueva de las citas ni de los valores: cada posición reutiliza la cita y el valor de la celda de la coalición, verificados en este mismo grupo (ara_mes_fa q30 y q31, compromis q06). Se revisaron todas las posiciones aprobadas en g5: solo esas tres salen de un documento de una coalición electoral (notas de Ara Més–Front Ampli, pacto ante la JEP de Illes Balears; web de Compromís: Front Valencià, pacto JEC C5). Las notas de MÉS per Mallorca, compromis.net, EH Bildu y NC-BC son de un solo partido. Lo nuevo es la atribución al firmante y la precedencia, que se documentan aquí.",
+  "posiciones": [
+   {
+    "partido": "frente_amplio",
+    "pregunta": "q30",
+    "antes": null,
+    "despues": 2,
+    "documento": "Nota oficial de Ara Més–Front Ampli (Sóller, 7-11)",
+    "motivo": "Movimiento Sumar, Izquierda Unida y Recortes Cero firman el pacto ante la JEP de Illes Balears. Frente Amplio no tiene programa del 29-N ni posición propia en q30: se añade."
+   },
+   {
+    "partido": "frente_amplio",
+    "pregunta": "q31",
+    "antes": 2,
+    "despues": 2,
+    "documento": "Nota oficial de Ara Més–Front Ampli (inicio de campaña, 13-11)",
+    "motivo": "Firmantes del Frente Amplio en el pacto balear. Ya tiene posición propia con el mismo valor (Bustinduy, 12-11, +2): se mantiene la suya."
+   },
+   {
+    "partido": "frente_amplio",
+    "pregunta": "q06",
+    "antes": null,
+    "despues": 1,
+    "documento": "Web electoral de Compromís: Front Valencià (12-11)",
+    "motivo": "Esquerra Unida del País Valencià (federación de IU) y Recortes Cero firman el pacto JEC C5. Sin programa del 29-N ni posición propia en q06 (la anterior se retiró el 12-11): se añade."
+   },
+   {
+    "partido": "podemos",
+    "pregunta": "q06",
+    "antes": 1,
+    "despues": 1,
+    "documento": "Web electoral de Compromís: Front Valencià (12-11)",
+    "motivo": "Podemos firma el pacto JEC C5. Ya tiene posición propia con el mismo valor (web de campaña de Irene Montero, 20-10, jornada de 30 horas, +1): se mantiene la suya."
+   },
+   {
+    "partido": "erc",
+    "pregunta": "q06",
+    "antes": 2,
+    "despues": 2,
+    "documento": "Web electoral de Compromís: Front Valencià (12-11)",
+    "motivo": "ERPV, nombre de ERC en el País Valencià, firma el pacto JEC C5. El programa oficial de ERC (medida en p. 26: 37,5 horas sin reducción salarial, +2) va primero: se mantiene."
+   }
+  ]
+ }
+}

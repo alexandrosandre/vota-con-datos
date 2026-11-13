@@ -122,5 +122,47 @@
   "desfavorable": 5,
   "no_verificable": 7
  },
- "reatribucion_2026-11-13": "Tras la revisión aprobada, se retiran ara_mes_fa-06, ara_mes_fa-09 (ara_mes_fa-c07 y c08) por decisión del editor: los dice solo Carme Gomila, de ERC según Ara Balears (data/boe/afiliaciones_g1.json: https://en.arabalears.cat/politics/carme-gomila-leaves-the-manacor-city-council-to-seek-new-professional-challenges_1_5623156.html) y El Nacional, 12-nov (data/sources/compromisos/erc/elnacional_tarragona_20261112.txt: «presidenta d'Esquerra Republicana a Mallorca»). Las 9 propuestas restantes no cambian; seleccion_sha256 actualizado. Después (13-nov), por la misma decisión, se quitan también las apoyaturas en declaraciones en primera persona de Gomila de lo que se mantiene: el mitin de Palma (8-nov) sale del «veces» de c01 (de 2 a 1), de las justificaciones de prioridad de c01 y c04 y del criterio de concreción de ara_mes_fa-01 y ara_mes_fa-08, cuya valoración («mixta») no cambia porque el mitin no añadía instrumento, alcance, cuantía ni plazo. Las justificaciones de c05, c06, c09 y c10 se apoyan ahora en la nota oficial y no en la comparecencia de la cabeza de lista. En ara_mes_fa-02 y -03 la crónica de mallorca.com se describe como presentación de la coalición. Comprobado que ninguna cita mantenida es primera persona de Gomila: las citas principales y las ocasiones restantes son texto narrativo de las notas oficiales (c06 dice «ha anunciat avui la proposta», con la candidata como sujeto, en el texto de la nota) o de crónicas que hablan de «the coalition». seleccion_sha256 actualizado."
+ "reatribucion_2026-11-13": "Tras la revisión aprobada, se retiran ara_mes_fa-06, ara_mes_fa-09 (ara_mes_fa-c07 y c08) por decisión del editor: los dice solo Carme Gomila, de ERC según Ara Balears (data/boe/afiliaciones_g1.json: https://en.arabalears.cat/politics/carme-gomila-leaves-the-manacor-city-council-to-seek-new-professional-challenges_1_5623156.html) y El Nacional, 12-nov (data/sources/compromisos/erc/elnacional_tarragona_20261112.txt: «presidenta d'Esquerra Republicana a Mallorca»). Las 9 propuestas restantes no cambian; seleccion_sha256 actualizado. Después (13-nov), por la misma decisión, se quitan también las apoyaturas en declaraciones en primera persona de Gomila de lo que se mantiene: el mitin de Palma (8-nov) sale del «veces» de c01 (de 2 a 1), de las justificaciones de prioridad de c01 y c04 y del criterio de concreción de ara_mes_fa-01 y ara_mes_fa-08, cuya valoración («mixta») no cambia porque el mitin no añadía instrumento, alcance, cuantía ni plazo. Las justificaciones de c05, c06, c09 y c10 se apoyan ahora en la nota oficial y no en la comparecencia de la cabeza de lista. En ara_mes_fa-02 y -03 la crónica de mallorca.com se describe como presentación de la coalición. Comprobado que ninguna cita mantenida es primera persona de Gomila: las citas principales y las ocasiones restantes son texto narrativo de las notas oficiales (c06 dice «ha anunciat avui la proposta», con la candidata como sujeto, en el texto de la nota) o de crónicas que hablan de «the coalition». seleccion_sha256 actualizado. [Revisión posterior, 13-nov por la tarde] Decisión del editor: lo que dice Carme Gomila cuenta para Ara Més (no para ERC). Además de presidenta de ERC en Baleares, es responsable de Estrategia y Relaciones Políticas de MÉS per Mallorca, partido de la federación Ara Més, que la propuso; el Comité Federal de Ara Més la ratificó por unanimidad como cabeza de lista (dBalears y Canal 4 Diario, 24-oct; copias en data/sources/compromisos/ara_mes_fa/dbalears_20261024_candidatura.txt y canal4diario_20261024_proclamacion.txt; data/boe/afiliaciones_g1.json). Se restaura todo lo retirado por la mañana desde la versión aprobada (git 8465883^): c07 y c08 con ara_mes_fa-06 y -09, el mitin de Palma en el «veces» de c01 (vuelve a 2), en las justificaciones de c01 y c04 y en la concreción de -01 y -08, y la redacción aprobada de las justificaciones de c05, c06, c09 y c10. Se conservan los títulos de la crónica de mallorca.com en -02 y -03. Revisión independiente de lo restaurado en «revision_restauracion_2026-11-13». seleccion_sha256 actualizado.",
+ "revision_restauracion_2026-11-13": {
+  "revisor": "Claude (Anthropic), pasada independiente (agente distinto del que restauró), con los prompts 1b, 3 y 4",
+  "alcance": "Solo lo restaurado: c07 y c08 (cita, traducción, quién, fuente local, sha256 y «veces»), el «veces» de c01, las justificaciones de c01 y c04 a c10, ara_mes_fa-06 y -09 completas (8 criterios), la concreción de -01 y -08, las notas, el orden y seleccion_sha256. La atribución a Ara Més se toma como decisión del editor. Citas: 10 de 10 coinciden literalmente con su copia local (c07: principal y 1 ocasión; c08: principal y 3 ocasiones; c01: 2 ocasiones; -06 y -09: su cita), y 13 de 13 fragmentos citados dentro de los textos; verify_quotes: 34 citas, 0 no encontradas. La errata «alsp reus» de una ocasión de c08 está así en la copia local y en la página de NacióDigital; la traducción la corrige. Los 6 sha256 de fuentes coinciden con su fichero. Traducciones del catalán fieles. Se abrieron con petición normal Demócrata, NacióDigital, Última Hora y Periódico de Ibiza (Europa Press, Sóller), BOE (RD 126/2026, Ley 7/1996, RDL 20/2022), INE EPF 2024, La Moncloa (SMI 2026), nota oficial de pensiones del 10-nov, Ara (Carrefour), Banco Nacional de Croacia (WP W-71), Eurofound (Hungría) y Banco de España (DO 2113 y DT 2417): todas 200 y confirman lo citado. El FMI (SIP/2023/004) da 403 a curl; no se sorteó (la revisión del 12-nov lo leyó con una petición web normal).",
+  "resultado": "Conforme tras los cambios siguientes. Prioridades: con 11 compromisos (menos de 12), el prompt 1b obliga a incluirlos todos; las justificaciones coinciden con las fuentes. «Veces»: c01 = 2, c07 = 1, c08 = 2, correcto. Igual estándar: ara_mes_fa-09 tiene las mismas ocho valoraciones que psoe-03, psc-02 y upc-08 (M/F/N/M/M/F/M/M); ara_mes_fa-06 (M/F/F/M/M/M/M/M) solo difiere de podemos-03 en el encaje legal, diferencia que se sostiene (art. 13.2.a de la Ley 7/1996, «productos de primera necesidad»). Esas propuestas no han cambiado desde la aprobación del 12-nov, así que el «igual_estandar» sigue valiendo. Recuento con las 11 propuestas: 7/69/5/7, igual que «recuento_final_coherencia_2026-11-12b_revision».",
+  "cambios": [
+   {
+    "propuesta": "ara_mes_fa-c08 (seleccion.json) y ara_mes_fa-06 (evaluacion.json)",
+    "criterio": "resumen",
+    "antes": "Limitar por ley los precios de los alimentos básicos.",
+    "despues": "Limitar los precios de los alimentos básicos.",
+    "motivo": "Ninguna fuente habla de una ley («limitarem els preus dels aliments bàsics»; Europa Press: «establecer un tope»), y el propio encaje legal de -06 dice que el Gobierno ya puede fijar esos precios (Ley 7/1996, art. 13.2.a); «por ley» desdibujaba la diferencia con podemos-03."
+   },
+   {
+    "propuesta": "ara_mes_fa-06",
+    "criterio": "internacional (texto; valoración sin cambios)",
+    "antes": "…pollo y leche (y desde noviembre de 2022 huevos y patatas) al nivel de octubre de 2021",
+    "despues": "…pollo y leche al nivel de octubre de 2021 (y desde noviembre de 2022 huevos y patatas, al de septiembre de 2022)",
+    "motivo": "Según Eurofound (ficha HU-2022-6/3084), huevos y patatas se toparon al precio del 30-9-2022."
+   },
+   {
+    "propuesta": "ara_mes_fa-c01 y c04 (seleccion.json)",
+    "criterio": "justificación de la prioridad",
+    "antes": "«uno de los ejes centrales»",
+    "despues": "«un dels eixos centrals» (uno de los ejes centrales)",
+    "motivo": "Lo entrecomillado era una traducción; la nota del 6-nov dice «un dels eixos centrals»."
+   },
+   {
+    "propuesta": "evaluacion.json",
+    "criterio": "seleccion_sha256",
+    "antes": "hash de la selección restaurada sin estos cambios",
+    "despues": "recalculado",
+    "motivo": "Cambios en seleccion.json."
+   }
+  ],
+  "dudas": [
+   "ara_mes_fa-09, encaje legal («favorable»): supone que «apujarem el salari mínim» se refiere al SMI estatal; si fuera el SMI balear propio sería «mixta», como pnv-02 y eh_bildu-04. El texto ya señala la ambigüedad y la lectura estatal es la natural en un mitin de unas generales.",
+   "ara_mes_fa-06 frente a podemos-03: la diferencia en encaje legal es defendible pero de frontera; las dos están sujetas a la Ley 12/2013 (art. 12 ter).",
+   "podemos-03 repite la imprecisión sobre las fechas de huevos y patatas en Hungría; fuera del alcance de esta revisión, no se ha cambiado.",
+   "El orden de «prioridades» (c01 a c11) no coincide con el de evaluacion.json (c01, c02, c03, c05, c06, c08, c09, c04, c07, c10, c11); ya era así en la versión aprobada. La web numera según evaluacion.json, cuyos ids siguen ese orden.",
+   "La ocasión de Periódico de Ibiza en c08 cita una frase genérica de Gomila («poner límites a los abusos y garantizar precios asequibles»); la misma copia tiene otra más específica. No cambia el «veces»."
+  ]
+ }
 }

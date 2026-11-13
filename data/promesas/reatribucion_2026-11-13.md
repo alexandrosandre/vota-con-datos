@@ -40,3 +40,15 @@ Se revisaron las promesas que salen de documentos de coalición:
 - **Sin cambios:** las promesas de NC-BC son de Luis Campos y de una tribuna de Román Rodríguez (NC-BC), no del manifiesto; las de Compromís, de Àgueda Micó y Alberto Ibáñez; los documentos conjuntos de Coalición Canaria (acuerdo de unidad, bases del programa) los firma con ella Municipalistas Primero Canarias, que no es una entrada de la web.
 
 Total: 138 → **142** (PP 13 → 16, Frente Amplio 10 → 11). También se corrige en las notas de Podemos su ámbito en coalición: Compromís: Front Valencià abarca toda la Comunitat Valenciana y Unidad del Pueblo Canario toda Canarias.
+
+## Revisión posterior (13-nov, tarde): Gomila cuenta para Ara Més
+
+**Evidencia.** Carme Gomila es presidenta de ERC en Baleares y, además, «responsable d'Estratègia i Relacions Polítiques de MÉS per Mallorca» (dBalears, 24-oct-2026, https://www.dbalears.cat/balears/politica/2026/10/24/423549/mes-per-mallorca-proposa-carme-gomila-com-candidata-congres-tria-rosa-cursach-per-senat.html, copia en `data/sources/compromisos/ara_mes_fa/dbalears_20261024_candidatura.txt`), y MÉS per Mallorca es uno de los tres partidos de la federación Ara Més. La asamblea de MÉS per Mallorca la propuso y el Comité Federal de Ara Més «ha ratificado este sábado por unanimidad» su candidatura como cabeza de lista (Canal 4 Diario, 24-oct-2026, https://canal4diario.com/29n/2026/10/24/ara-mes-proclama-por-unanimidad-a-carme-gomila-como-candidata-al-congreso-para-las-elecciones-del-29n/, copia en `data/sources/compromisos/ara_mes_fa/canal4diario_20261024_proclamacion.txt`). Su afiliación queda en `data/boe/afiliaciones_g1.json` como «Esquerra Republicana (ERC) y MÉS per Mallorca». Por la mañana solo constaba como presidenta de ERC (Ara Balears, El Nacional) y, ante la duda, no se le atribuyó a Ara Més.
+
+**Decisión del editor (13-nov, tarde):** lo que dice Gomila cuenta para Ara Més, no para ERC. Corrige lo dicho arriba sobre Gomila: lo que se apuntó como «candidato para ERC» deja de serlo.
+
+- **Se restaura** en Ara Més (`ara_mes_fa`) la promesa «Topar los precios de los alimentos básicos y crear un impuesto especial sobre los márgenes… de la distribución alimentaria» (Sóller, 7-nov; Última Hora y Periódico de Ibiza, Europa Press), tal como estaba. Deja de ser candidata para ERC.
+- El campo `candidato` de Ara Més describe a Gomila como cabeza de lista de la coalición, dirigente de MÉS per Mallorca, que la propuso, y presidenta de ERC en Baleares (sin «no se cuenta como líder»). Corrige el párrafo «Candidato de Ara Més» de arriba.
+- La del IVA del transporte de mercancías sigue como comunicado de la coalición (en Ara Més y en Frente Amplio).
+- Total: 142 → **143** (Ara Més 1 → 2).
+

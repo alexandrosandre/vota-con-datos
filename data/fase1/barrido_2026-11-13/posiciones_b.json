@@ -1,0 +1,367 @@
+{
+ "grupo": "barrido_2026-11-13_b",
+ "codificador": "Claude (Anthropic) — barrido de campaña, codificador B (Ara Més, CC, NC-BC, Compromís)",
+ "fecha": "2026-11-13",
+ "nota": "Solo celdas NUEVAS con valor, vacías en web/public/data/fase1.json el 13-nov-2026, para Ara Més (ara_mes_fa), Coalición Canaria (cc), NC-BC (upc) y Compromís (compromis). Protocolo docs/prompts/2_codificacion_posiciones.md con la regla de fechas (desde el 1-nov-2025) y la de atribución por partido del 13-nov. Las candidatas a sustituir una posición existente van aparte, en «candidatas_sustitucion». Razonamiento, búsqueda y descartes en notas_b.md. Pendiente de verificación independiente.",
+ "posiciones": {
+  "ara_mes_fa": {
+   "q30": {
+    "valor": 2,
+    "fuente": "campaña",
+    "cita": "Ara MÉS–Front Ampli proposa establir un topall als preus dels aliments bàsics per garantir que els productes frescos, saludables i de temporada estiguin a l'abast de totes les famílies.",
+    "pagina": null,
+    "url": "https://aramesfrontampli.cat/noticies/topallalimentssoller",
+    "medio": "Ara Més–Front Ampli (web oficial de la coalición, aramesfrontampli.cat)",
+    "fecha": "2026-11-07",
+    "quien": "Ara Més–Front Ampli (nota oficial de campaña; presenta la propuesta Carme Gomila, candidata al Congreso)",
+    "formato": "documento oficial (nota de prensa de la coalición, visita a Sóller)",
+    "marco": null,
+    "nota": "La nota oficial de la coalición (fechada en Sóller el 7-nov, publicada el 8-nov) propone, como primera medida del título, un tope a los precios de los alimentos básicos, además de un impuesto a los márgenes excesivos de la gran distribución. Propuesta expresa y prioritaria: +2. La celda quedó vacía en la reatribución del 13-nov porque la +2 anterior era una frase de Gomila (ERC) en el mitin de Palma; esta es la nota oficial de la coalición, que cuenta para Ara Més igual que las de q01 y q32. La nota del 8-nov (acto de Palma) lo repite: «topalls als preus dels aliments més bàsics»."
+   },
+   "q31": {
+    "valor": 2,
+    "fuente": "campaña",
+    "cita": "ha defensat la necessitat d'anar més enllà amb mesures per limitar la compra d'habitatges per part de no residents, combatre l'especulació immobiliària i garantir lloguers assequibles i contractes indefinits.",
+    "pagina": null,
+    "url": "https://aramesfrontampli.cat/noticies/carme-gomila-no-volem-les-molles-volem-el-pa-sencer-el-29n-nomes-sera-util-el-vot-que-transformi-les-illes-el-vot-a-arames-front-ampli",
+    "medio": "Ara Més–Front Ampli (web oficial de la coalición, aramesfrontampli.cat)",
+    "fecha": "2026-11-13",
+    "quien": "Ara Més–Front Ampli (nota oficial de inicio de campaña; recoge la intervención de Carme Gomila, candidata al Congreso)",
+    "formato": "documento oficial (nota de prensa de la coalición)",
+    "marco": null,
+    "nota": "La nota oficial del inicio de campaña (13-nov), tras valorar el decreto de alquileres de temporada convalidado el 12-nov, pide «anar més enllà» con contratos de alquiler indefinidos: va más allá de la renovación automática por cinco años. Mismo criterio que Compromís q31 («Apostarem pel lloguer indefinit», +2), Podemos y Frente Amplio (+2). El 12-nov solo constaba en estilo indirecto en prensa (VilaWeb/EFE) y se descartó; ahora lo dice la nota oficial de la coalición, que cuenta para Ara Més. Si el verificador no lo ve prioritario, +1."
+   },
+   "q29": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "Ha explicat que MÉS s'oposa al tractat per «motius econòmics – especialment per la competència deslleial que implica per al sector a les Balears-",
+    "pagina": null,
+    "url": "https://www.mespermallorca.cat/news/vidal-votant-a-favor-de-mercosur-el-pp-i-el-psoe-traeixen-a-la-pagesia-de-les-illes-balears",
+    "medio": "MÉS per Mallorca (web oficial, mespermallorca.cat)",
+    "fecha": "2026-01-28",
+    "quien": "MÉS per Mallorca (nota oficial), con declaraciones de Vicenç Vidal, diputado de MÉS per Mallorca y Més per Menorca en el Congreso (Grupo Plurinacional Sumar)",
+    "formato": "documento oficial (nota de prensa del partido)",
+    "marco": null,
+    "nota": "MÉS per Mallorca, partido de la federación Ara Més, declara que se opone al tratado UE-Mercosur y reprocha a PP y PSOE votar a favor y contra el recurso al TJUE de los grupos Verdes/ALE y La Izquierda. Rechazo expreso del acuerdo, sin pedir de forma explícita que España lo frene en la UE: +1, mismo criterio que Podemos q29. [Para el verificador: es nota de MÉS per Mallorca, no de la federación; ver notas_b.md, «Ara Més».]"
+   },
+   "q12": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "En l'àmbit educatiu, la llei estableix que la llengua pròpia de cada comunitat autònoma serà normalment vehicular, amb l'objectiu de garantir que l'alumnat domini tant aquesta llengua com el castellà en finalitzar l'educació bàsica.",
+    "pagina": null,
+    "url": "https://www.mespermallorca.cat/news/mes-per-mallorca-erc-eh-bildu-pnb-comuns-bng-i-compromis-impulsen-una-llei-organica-per-garantir-el-plurilinguisme-real-a-lestat",
+    "medio": "MÉS per Mallorca (web oficial, mespermallorca.cat)",
+    "fecha": "2025-11-19",
+    "quien": "MÉS per Mallorca (nota oficial sobre la proposición de ley orgánica de plurilingüismo que registra con ERC, EH Bildu, PNV, BNG, Comuns y Compromís)",
+    "formato": "documento oficial (nota de prensa del partido)",
+    "marco": null,
+    "nota": "MÉS per Mallorca promueve una ley orgánica que fija que la lengua propia sea «normalment vehicular» en la enseñanza, lo que excluye un mínimo de castellano impuesto por ley o por los tribunales. Indirecta (no habla de que cada comunidad fije el porcentaje): +1, mismo criterio que BNG q12 («a lingua vehicular debe ser a lingua propia»). Vicenç Vidal defendió la toma en consideración en el Pleno el 9-dic-2025 (DS 157). [Para el verificador: nota de MÉS per Mallorca; ver notas_b.md.]"
+   },
+   "q24": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "Igualment, insta el Govern espanyol a derogar la coneguda com a Llei Mordassa",
+    "pagina": null,
+    "url": "https://www.mespermallorca.cat/news/dretprotesta",
+    "medio": "MÉS per Mallorca (web oficial, mespermallorca.cat)",
+    "fecha": "2026-07-22",
+    "quien": "MÉS per Mallorca (nota oficial sobre su moción en el Consell de Mallorca; portavoz en el Consell, Catalina Inés Perelló)",
+    "formato": "documento oficial (nota de prensa del partido)",
+    "marco": null,
+    "nota": "La moción de MÉS per Mallorca, tras la detención de dos activistas, insta al Gobierno de España a derogar la Ley de Seguridad Ciudadana («Llei Mordassa»). Petición expresa de derogarla, pero como uno de varios puntos de una moción en una institución insular: +1, como Compromís q24. [Para el verificador: nota de MÉS per Mallorca; ver notas_b.md.]"
+   },
+   "q13": {
+    "valor": -1,
+    "fuente": "campaña",
+    "cita": "La prioritat nacional mai serà enfrontar pobres contra pobres ni discriminar la gent pel seu origen, i molt manco utilitzar els serveis socials per dur-ho a terme",
+    "pagina": null,
+    "url": "https://www.mespermallorca.cat/news/prioritatsmes",
+    "medio": "MÉS per Mallorca (web oficial, mespermallorca.cat)",
+    "fecha": "2026-04-28",
+    "quien": "MÉS per Mallorca (nota oficial), con declaraciones de Rosa Cursach, consellera de MÉS per Mallorca en el Consell de Mallorca (hoy candidata al Senado de Acord de Progrés per Mallorca)",
+    "formato": "documento oficial (nota de prensa del partido; pleno del Consell de Mallorca)",
+    "marco": null,
+    "nota": "Contra el «escut social» de PP y Vox en el Consell de Mallorca, que MÉS considera discriminatorio por origen, la nota rechaza la «prioritat nacional» en los servicios sociales. En contra del principio de la afirmación (prioridad por nacionalidad en ayudas públicas), pero reactivo y sin hablar de vivienda social: −1, mismo criterio que Compromís q13. [Para el verificador: indirecta; Cursach no es dirigente nacional; cuenta como nota oficial del partido.]"
+   },
+   "q06": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "MÉS per Palma planteja un paquet de mesures concretes per avançar cap a una jornada laboral més curta sense reducció salarial, començant per les 37,5 hores setmanals. [...] exigeix a l'Estat que impulsi la reducció de la jornada laboral sense reducció salarial.",
+    "pagina": null,
+    "url": "https://www.mespermallorca.cat/news/mes-per-palma-exigeix-reduir-la-jornada-laboral-per-viure-millor",
+    "medio": "MÉS per Mallorca (web oficial, mespermallorca.cat)",
+    "fecha": "2026-04-27",
+    "quien": "MÉS per Palma (nota oficial publicada en la web de MÉS per Mallorca), con declaraciones de Neus Truyol, portavoz de MÉS per Palma",
+    "formato": "documento oficial (nota de prensa de la organización local)",
+    "marco": null,
+    "nota": "Exige al Estado reducir la jornada sin rebaja salarial, empezando por las 37,5 horas semanales: es la medida de la afirmación. +1 y no +2 porque la propone la organización de Palma de MÉS per Mallorca en una iniciativa municipal, no la federación. [Para el verificador: decidir si una nota de la organización local cuenta como documento del partido; si no, null.]"
+   }
+  },
+  "compromis": {
+   "q06": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "Apostarem per la reducció de la jornada laboral.",
+    "pagina": null,
+    "url": "https://frontvalencia.org/",
+    "medio": "Compromís: Front Valencià (web electoral de la candidatura, apartado «Programa»)",
+    "fecha": "2026-11-12",
+    "quien": "Compromís: Front Valencià (web electoral de la candidatura, apartado «Programa»)",
+    "formato": "documento oficial (web electoral de la coalición)",
+    "marco": null,
+    "nota": "El resumen del programa en la web electoral, el mismo apartado del que sale q31, apuesta por reducir la jornada laboral, sin cifra ni mención del salario. A favor, pero sin concretar las 37,5 horas ni el mantenimiento del sueldo: +1, mismo criterio que EH Bildu q06. Visto en las copias del 12-nov (data/sources/compromisos/compromis/frontvalencia_web_campana.txt) y del 13-nov. El 9-nov la web solo mostraba datos de plantilla."
+   },
+   "q33": {
+    "valor": -1,
+    "fuente": "campaña",
+    "cita": "Más ha insistit que l'acolliment no és una opció voluntària sinó una obligació legal. La normativa estableix el repartiment i la reubicació de menors migrants no acompanyats entre les comunitats autònomes en casos de contingència migratòria extraordinària.",
+    "pagina": null,
+    "url": "https://compromis.net/36589/compromis-reclama-la-compareixenca-de-perez-llorca-i-elena-albalat-en-la-diputacio-permanent-per-lacolliment-de-menors-despres-de-la-crisi-de-ceuta/",
+    "medio": "Compromís (web oficial, compromis.net)",
+    "fecha": "2026-08-07",
+    "quien": "Compromís (nota oficial), con declaraciones de Aitana Mas, portavoz adjunta de Compromís en Les Corts Valencianes",
+    "formato": "documento oficial (nota de prensa del partido)",
+    "marco": null,
+    "nota": "Tras la crisis de Ceuta, Compromís defiende que acoger a los menores no es voluntario sino una obligación legal y que la ley impone el reparto y la reubicación entre comunidades; califica de «gravetat extrema» que Vox pida incumplirla. En contra de suprimir el reparto obligatorio, de forma reactiva: −1."
+   },
+   "q09": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "Compromís proposa destinar estos fons a reforçar la sanitat pública i revertir les concessions privatitzades. [...] Compromís exigeix la reversió immediata del departament del Vinalopó a la gestió pública",
+    "pagina": null,
+    "url": "https://compromis.net/36056/compromis-destapa-el-rescat-de-mes-de-107-milions-deuros-publics-a-ribera-salud/",
+    "medio": "Compromís (web oficial, compromis.net)",
+    "fecha": "2025-12-16",
+    "quien": "Compromís (nota oficial de la rueda de prensa de Joan Baldoví, síndic de Compromís en Les Corts, y Carles Esteve, portavoz de Sanidad)",
+    "formato": "documento oficial (nota de prensa del partido)",
+    "marco": null,
+    "nota": "Pide revertir las concesiones sanitarias privatizadas (modelo Alzira) y que el departamento del Vinalopó vuelva a gestión pública; critica que una clínica privada reciba derivaciones de hospitales públicos. A favor de que la sanidad pública deje de pagar a empresas privadas por atender a sus pacientes, pero referido a la gestión valenciana y sin pedir prohibirlo por ley: +1, mismo criterio que la «reversión de privatizaciones» del manifiesto de UPC (NC-BC, Podemos y Frente Amplio q09). [Para el verificador: indirecta y de ámbito autonómico.]"
+   },
+   "q29": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "amb esta iniciativa parlamentària s'insta el Consell a rebutjar la ratificació de l'acord en els seus termes actuals [...] Perquè este tractat encara es pot bloquejar al Parlament Europeu o per via judicial",
+    "pagina": null,
+    "url": "https://compromis.net/36077/compromis-planteja-en-les-corts-el-rebuig-a-lacord-amb-mercosur-que-posa-en-perill-el-futur-del-sector-agropecuari-valencia/",
+    "medio": "Compromís (web oficial, compromis.net)",
+    "fecha": "2026-01-13",
+    "quien": "Compromís (nota oficial sobre su PNL en Les Corts), con declaraciones de Paula Espinosa, portavoz adjunta de Compromís en Les Corts Valencianes",
+    "formato": "documento oficial (nota de prensa del partido)",
+    "marco": null,
+    "nota": "Compromís pide rechazar la ratificación del acuerdo UE-Mercosur «en els seus termes actuals» y recuerda que aún puede bloquearse en el Parlamento Europeo o por vía judicial; la misma PNL pide al Gobierno de España salvaguardas y compensaciones. Rechazo del acuerdo, condicionado a sus términos: +1. [Para el verificador: verificacion_g4 rechazó la +1 de Micó (DS 158) porque pedía protección y encajaba con el pacto con La Unió del 5-nov (salvaguardas y aranceles). Este documento sí pide expresamente rechazar la ratificación; el pacto posterior no lo contradice, pero tampoco lo repite.]"
+   }
+  },
+  "cc": {
+   "q29": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "el partido refuerza una estrategia en las instituciones canarias y estatales en contra del acuerdo de Mercosur",
+    "pagina": null,
+    "url": "https://coalicioncanaria.org/cc-anuncia-una-estrategia-en-las-instituciones-canarias-y-estatales-en-contra-del-acuerdo-de-mercosur/",
+    "medio": "Coalición Canaria (web oficial, coalicioncanaria.org)",
+    "fecha": "2026-01-27",
+    "quien": "Coalición Canaria (nota oficial), con declaraciones de David Toledo, secretario nacional de Organización de CC",
+    "formato": "documento oficial (nota de prensa del partido; rueda de prensa)",
+    "marco": null,
+    "nota": "CC anuncia una estrategia contra el acuerdo UE-Mercosur, con mociones en cabildos y ayuntamientos y debates en el Congreso y el Senado. En contra del acuerdo, sin pedir de forma expresa que España lo frene en la UE: +1. [Para el verificador: el programa del 29-N (medida 42, p. 13) pide que España «evalúe el impacto de los acuerdos comerciales» y «defienda salvaguardas cuando proceda», sin nombrar Mercosur; las notas de g3 lo juzgaron sin posición. Si se entiende que el programa, posterior, sustituye el rechazo por salvaguardas, null. La abstención de CC en la iniciativa de Vox para suspender el acuerdo, que cita Vox en el Parlamento de Canarias (DS 110), es un voto sin palabras y no cuenta.]"
+   },
+   "q17": {
+    "valor": -1,
+    "fuente": "campaña",
+    "cita": "expresó el rechazo unánime de la organización a cualquier intento de establecer un modelo de financiación autonómica bilateral entre el Estado y Cataluña.",
+    "pagina": null,
+    "url": "https://coalicioncanaria.org/cc-acusa-al-psoe-de-promover-un-modelo-de-financiacion-que-choca-con-la-constitucion-y-la-cohesion-territorial/",
+    "medio": "Coalición Canaria (web oficial, coalicioncanaria.org)",
+    "fecha": "2026-01-10",
+    "quien": "Coalición Canaria (nota oficial del Consejo Político Nacional, presidido por Fernando Clavijo), con declaraciones de David Toledo, secretario nacional de Organización",
+    "formato": "documento oficial (nota de prensa del partido)",
+    "marco": null,
+    "nota": "El Consejo Político Nacional rechaza «una reforma bilateral del sistema de financiación autonómica por vulnerar los principios constitucionales de solidaridad» y cualquier modelo bilateral entre el Estado y Cataluña. Se opone a que una comunidad tenga un régimen de financiación propio pactado con el Estado, que es la vía de la afirmación, pero no habla de recaudar todos los impuestos ni del cupo: −1, indirecta. El programa (que defiende el REF canario, no un concierto) no lo contradice. [Para el verificador: indirecta.]"
+   }
+  },
+  "upc": {
+   "q31": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "Nueva Canarias-BC solicitó un último esfuerzo que permita mañana la convalidación de los dos decretos-ley de vivienda.",
+    "pagina": null,
+    "url": "https://www.nuevacanariasbc.org/blog/2026/10/01/nc-bc-pide-un-ultimo-esfuerzo-a-los-grupos-del-congreso-para-sacar-adelante-las-medidas-de-vivienda/",
+    "medio": "Nueva Canarias-Bloque Canarista (web oficial, nuevacanariasbc.org)",
+    "fecha": "2026-10-01",
+    "quien": "Nueva Canarias-Bloque Canarista (nota oficial), con declaraciones de Carmen Hernández, vicesecretaria general de NC-BC",
+    "formato": "documento oficial (nota de prensa del partido)",
+    "marco": null,
+    "nota": "La víspera del pleno del 2-oct, NC-BC pide convalidar los dos decretos-ley de vivienda, incluido el RDL 27/2026 de estabilidad de los contratos (prórroga o renovación de los contratos de vivienda habitual al vencer, salvo causa justificada; el mismo que CC rechaza en su q31). Apoyo reactivo, con la salvedad de que «las medidas pueden y deben mejorarse»: +1. Lo confirma la nota del 2-oct de Juventud Canarista (rama juvenil de NC-BC), que critica que CC votara contra «una norma que refuerza la estabilidad de los contratos de alquiler». El manifiesto de UPC (3-nov) no lo contradice."
+   },
+   "q03": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "En el impuesto de Transmisiones Patrimoniales, el tipo reducido del tres por ciento, frente al cinco por ciento actual para aquellos de hasta 40 años [...] En el Impuesto General Indirecto (IGIC), un tipo reducido del uno por ciento frente al tres por ciento en vigor para jóvenes hasta 40 años",
+    "pagina": null,
+    "url": "https://www.nuevacanariasbc.org/blog/2025/11/20/carmen-hernandez-propone-una-rebaja-fiscal-historica-para-que-los-jovenes-puedan-acceder-a-una-vivienda/",
+    "medio": "Nueva Canarias-Bloque Canarista (web oficial, nuevacanariasbc.org)",
+    "fecha": "2025-11-20",
+    "quien": "Nueva Canarias-Bloque Canarista (nota oficial), sobre la moción de Carmen Hernández, diputada de NC-BC en el Parlamento de Canarias (en oct-2026, vicesecretaria general)",
+    "formato": "documento oficial (nota de prensa del partido)",
+    "marco": null,
+    "nota": "NC-BC propone rebajar a los menores de 40 años el ITP del 5 % al 3 % (−40 %) y el IGIC, que en Canarias sustituye al IVA, del 3 % al 1 % (−67 %) en la compra de vivienda, con límites de renta (45.500 €) y de precio (150.000 €). Es la misma medida que la afirmación aplicada a los impuestos canarios, con límites que la afirmación no tiene: +1. [Para el verificador: medida autonómica equivalente; si se exige una posición sobre el IVA estatal, null.]"
+   }
+  }
+ },
+ "candidatas_sustitucion": {
+  "compromis": {
+   "q24": {
+    "sustituye": {
+     "valor": 1,
+     "fecha": "2026-06-17",
+     "quien": "Àgueda Micó, diputada de Compromís (Grupo Mixto)",
+     "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-193.PDF",
+     "fuente_codificacion": "codificacion_g4.json (verificada en verificacion_g4.json)"
+    },
+    "propuesta": {
+     "valor": 2,
+     "fuente": "campaña",
+     "cita": "que aprofiten també per fer allò que porten anys ajornant: derogar la Llei Mordassa.",
+     "pagina": null,
+     "url": "https://compromis.net/36696/compromis-reclama-la-derogacio-de-la-llei-mordassa-davant-les-carregues-policials-contra-la-protesta-per-la-vivenda-a-valencia/",
+     "medio": "Compromís (web oficial, compromis.net)",
+     "fecha": "2026-10-05",
+     "quien": "Àgueda Micó, diputada de Compromís en el Congreso (Grupo Mixto) y cabeza de lista de Compromís: Front Valencià por Valencia el 29-N",
+     "formato": "declaración en nota oficial del partido",
+     "marco": null,
+     "nota": "Micó pide al Gobierno que use la Diputación Permanente para derogar la Ley Mordaza («que duguen la derogació de la Llei Mordassa»), tras las cargas contra una protesta por la vivienda. Es posterior (5-oct-2026) a la pregunta de control del 17-jun-2026 que sostiene la +1 actual y es más fuerte: petición expresa y titular de la nota de derogar la ley, no solo un reproche. Propuesta: +2, que sustituye a la +1 (la posterior prevalece). Ya figuraba en las notas de g2 y g4, pero se descartó porque es un día anterior a la convocatoria; con la regla del 1-nov-2025 vale."
+    }
+   }
+  }
+ },
+ "fuentes": [
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-13/ara_mes_fa/arames_20261107_topall_aliments_soller.txt",
+   "url": "https://aramesfrontampli.cat/noticies/topallalimentssoller",
+   "sha256": "f43741ad523d2d1fd923b7475524f768c25e1c58297a2d1220cf967e378652c7",
+   "usos": [
+    "ara_mes_fa/q30"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-13/ara_mes_fa/arames_20261113_inici_campanya.txt",
+   "url": "https://aramesfrontampli.cat/noticies/carme-gomila-no-volem-les-molles-volem-el-pa-sencer-el-29n-nomes-sera-util-el-vot-que-transformi-les-illes-el-vot-a-arames-front-ampli",
+   "sha256": "013954da31878f22a2bc6d8eb49786d85f8d4c85810b8fa9ed78919cc84969ed",
+   "usos": [
+    "ara_mes_fa/q31"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-13/ara_mes_fa/mes_20251119_llei_plurilinguisme.txt",
+   "url": "https://www.mespermallorca.cat/news/mes-per-mallorca-erc-eh-bildu-pnb-comuns-bng-i-compromis-impulsen-una-llei-organica-per-garantir-el-plurilinguisme-real-a-lestat",
+   "sha256": "22787d1d39cbeb083d33dc36d2caa2dcb00e1e7b95c8f910ed21d69dc89e8ff8",
+   "usos": [
+    "ara_mes_fa/q12"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-13/ara_mes_fa/mes_20260128_vidal_mercosur.txt",
+   "url": "https://www.mespermallorca.cat/news/vidal-votant-a-favor-de-mercosur-el-pp-i-el-psoe-traeixen-a-la-pagesia-de-les-illes-balears",
+   "sha256": "c0faadeb5e16425b4df22ac638d64e92507f5c6ceeb7e1555124fee8405b0f82",
+   "usos": [
+    "ara_mes_fa/q29"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-13/ara_mes_fa/mes_20260428_prioritats_nacionals.txt",
+   "url": "https://www.mespermallorca.cat/news/prioritatsmes",
+   "sha256": "939c398ec77743e602e597b468783d123ebf3541d410a61bebb195f0fdfab3b4",
+   "usos": [
+    "ara_mes_fa/q13"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-13/ara_mes_fa/mes_20260722_dret_protesta_llei_mordassa.txt",
+   "url": "https://www.mespermallorca.cat/news/dretprotesta",
+   "sha256": "4a92dd1759c790c99d37bdd823ac0cb0c8f38032415d40ba31ba09ae8318e62b",
+   "usos": [
+    "ara_mes_fa/q24"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-13/ara_mes_fa/mespalma_20260427_jornada_laboral.txt",
+   "url": "https://www.mespermallorca.cat/news/mes-per-palma-exigeix-reduir-la-jornada-laboral-per-viure-millor",
+   "sha256": "108f85433b3913d192fc709d27ed74f706510a6281ad6c31905b88a90511139b",
+   "usos": [
+    "ara_mes_fa/q06"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-13/cc/cc_20260110_cpn_financiacion.txt",
+   "url": "https://coalicioncanaria.org/cc-acusa-al-psoe-de-promover-un-modelo-de-financiacion-que-choca-con-la-constitucion-y-la-cohesion-territorial/",
+   "sha256": "04c755bec3d78bd409ce791db64c893e9569618ebced8ca727d804b4d5f07034",
+   "usos": [
+    "cc/q17"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-13/cc/cc_20260127_mercosur.txt",
+   "url": "https://coalicioncanaria.org/cc-anuncia-una-estrategia-en-las-instituciones-canarias-y-estatales-en-contra-del-acuerdo-de-mercosur/",
+   "sha256": "1bfa64c0ce0893270aa8bac4adbb3536f1934372eb47591bbd755b7a48031961",
+   "usos": [
+    "cc/q29"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-13/compromis/compromis_20251216_ribera_salud.txt",
+   "url": "https://compromis.net/36056/compromis-destapa-el-rescat-de-mes-de-107-milions-deuros-publics-a-ribera-salud/",
+   "sha256": "3d202fdb2c0cb21b5ed87811f589d39864f4f6e057d9278e74d972fe1ffa0ecb",
+   "usos": [
+    "compromis/q09"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-13/compromis/compromis_20260113_mercosur_corts.txt",
+   "url": "https://compromis.net/36077/compromis-planteja-en-les-corts-el-rebuig-a-lacord-amb-mercosur-que-posa-en-perill-el-futur-del-sector-agropecuari-valencia/",
+   "sha256": "fffcb406ccf8a96758c6a8e6c153eb8c8aa73b92b5c3ac2638319d02a27e9714",
+   "usos": [
+    "compromis/q29"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-13/compromis/compromis_20260807_acolliment_menors.txt",
+   "url": "https://compromis.net/36589/compromis-reclama-la-compareixenca-de-perez-llorca-i-elena-albalat-en-la-diputacio-permanent-per-lacolliment-de-menors-despres-de-la-crisi-de-ceuta/",
+   "sha256": "93a2803b1cfc2acbd4e331651b0b331a258db1f58fec2c19702762777a99305f",
+   "usos": [
+    "compromis/q33"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-13/compromis/compromis_20261005_llei_mordassa.txt",
+   "url": "https://compromis.net/36696/compromis-reclama-la-derogacio-de-la-llei-mordassa-davant-les-carregues-policials-contra-la-protesta-per-la-vivenda-a-valencia/",
+   "sha256": "50eb4968ce5f8604756d60153594f8fceb9b860ad30b5f262d5151015b2a473f",
+   "usos": [
+    "compromis/q24 (candidata a sustituir)"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-13/compromis/frontvalencia_20261113.txt",
+   "url": "https://frontvalencia.org/",
+   "sha256": "5d0be4a0b103c76bbb874a939d044229228367f0c114adc5c1b1892da589978e",
+   "usos": [
+    "compromis/q06"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-13/upc/ncbc_20251120_rebaja_fiscal_jovenes.txt",
+   "url": "https://www.nuevacanariasbc.org/blog/2025/11/20/carmen-hernandez-propone-una-rebaja-fiscal-historica-para-que-los-jovenes-puedan-acceder-a-una-vivienda/",
+   "sha256": "87832d80a6b1e3402b8d45367cb36f97387edc3a7eefe7d45dea9fdbc6c0022a",
+   "usos": [
+    "upc/q03"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-13/upc/ncbc_20261001_decretos_vivienda.txt",
+   "url": "https://www.nuevacanariasbc.org/blog/2026/10/01/nc-bc-pide-un-ultimo-esfuerzo-a-los-grupos-del-congreso-para-sacar-adelante-las-medidas-de-vivienda/",
+   "sha256": "6efe2d2b2839ea09111c164bdf51cf719a77e99e543714a858b3be2c404e9c75",
+   "usos": [
+    "upc/q31"
+   ]
+  }
+ ]
+}
