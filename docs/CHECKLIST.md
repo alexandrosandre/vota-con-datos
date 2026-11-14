@@ -35,8 +35,9 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
     propuestas para cubrir todos los bloques, y segunda revisión) y paso 1 recodificado (g10: como documento
     conjunto cuenta también para Podemos, Frente Amplio y ERC).
   - [ ] PSC, Frente Amplio, Podemos, Junts, EH Bildu, NC-BC, Ara Més, UPN — sin fecha.
-  - Pendiente menor para la próxima auditoría: adelante_andalucia-08 (fuente del 10 % de SEPI en REE: DA 23.ª
-    Ley 54/1997) y pp-07 (resumen de Bom y Ligthart).
+  - Hecho el 14-nov: adelante_andalucia-08 cita la DA 23.ª de la Ley 54/1997 (mínimo del 10 % de la SEPI en
+    Red Eléctrica) y pp-07 y compromis-13 resumen a Bom y Ligthart con sus cifras exactas (0,083 / 0,122 para el
+    capital de la Administración central, casi el doble en infraestructuras básicas regionales o locales).
 - [ ] **3. [Yo] Revisar la selección de afirmaciones del paso 1** para cubrir mejor a los 18 partidos:
   análisis, codificación y verificación independiente; decido yo, sin pasar por ti. **Hecha el 13-nov**
   (`data/fase1/revision_afirmaciones_2026-11-13/integracion.md`): se retiran q02, q07, q10, q14 y q28, entran
