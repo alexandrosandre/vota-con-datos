@@ -3,8 +3,8 @@
  "base": "compromisos",
  "modelo": "Claude (Anthropic)",
  "fecha": "2026-11-12",
- "seleccion_sha256": "1a8a4a7c13a17d10e5bbb92b0de744c25a06e0a2d458a9773563d6fac0f4c9db",
- "nota": "Evaluación de los compromisos de la coalición UPN-PP en Navarra hasta el 12-11-2026, a falta de programa conjunto. Tres prioridades, que son los tres puntos programáticos del acuerdo de coalición; los compromisos nacionales de Alberto Núñez Feijóo no se incluyen porque es del PP: desde el 13-11-2026 la entrada es el partido UPN y cada compromiso cuenta solo para el partido de quien lo dice (véase la selección).",
+ "seleccion_sha256": "3958bcd67781d820ee5dcf05903227c7521153912ff9ad1b080169e7e73e31d4",
+ "nota": "Evaluación de los compromisos de la coalición UPN-PP en Navarra hasta el 12-11-2026, a falta de programa conjunto. Tres prioridades, que son los tres puntos programáticos del acuerdo de coalición; los compromisos nacionales de Alberto Núñez Feijóo no se incluyen porque es del PP: desde el 13-11-2026 la entrada es el partido UPN y cada compromiso cuenta solo para el partido de quien lo dice (véase la selección). [Actualización 14-11-2026] Se añade la lista de «Compromisos» de la web de la coalición (upn-pp.es), documento conjunto que cuenta para UPN: seis prioridades nuevas (upn-04 a upn-09) y el recrecimiento de Yesa y la A-15 dentro de upn-03. Fuentes reutilizadas de evaluaciones aprobadas donde el hecho es el mismo (pp-03 y salf-02 en el desalojo; pp-10 en la deflactación; upc-07 en las pensiones; pp-11 en la cuota de autónomos).",
  "propuestas": [
   {
    "id": "upn-01",
@@ -25,7 +25,7 @@
    "evaluacion": {
     "concrecion": {
      "valoracion": "mixta",
-     "texto": "La medida es precisa (suprimir la disposición transitoria cuarta) y el acuerdo fija el instrumento (votar a favor en una reforma constitucional), pero la condiciona a «una eventual reforma» de la Constitución, sin precisar si la coalición la iniciaría ni en qué plazo. Javier Esparza la presentó como compromiso de la coalición el 10-11-2026 sin añadir calendario.",
+     "texto": "La medida es precisa (suprimir la disposición transitoria cuarta) y el acuerdo fija el instrumento (votar a favor en una reforma constitucional), pero la condiciona a «una eventual reforma» de la Constitución, sin precisar si la coalición la iniciaría ni en qué plazo. Javier Esparza la presentó como compromiso de la coalición el 10-11-2026 sin añadir calendario. La lista de «Compromisos» de la web de la coalición (13-11) recoge la «Supresión de la Transitoria Cuarta» sin la condición del acuerdo y sin instrumento ni plazo.",
      "fuentes": [
       {
        "url": "https://www.upn.org/upn-y-pp-alcanzan-un-principio-de-acuerdo-para-concurrir-juntos-a-las-elecciones-generales/",
@@ -38,6 +38,10 @@
       {
        "url": "https://www.diariodenavarra.es/noticias/navarra/2026/11/10/upn-pp-basan-campana-foralidad-navarra-mejora-servicios-publicos-honradez-gestion-841937-15.html",
        "titulo": "Diario de Navarra (10-11-2026): UPN-PP basan su campaña en la foralidad"
+      },
+      {
+       "url": "https://upn-pp.es/",
+       "titulo": "Coalición UPN-PP (13-11-2026): lista de «Compromisos» de su web electoral, upn-pp.es"
       }
      ]
     },
@@ -164,7 +168,7 @@
    "evaluacion": {
     "concrecion": {
      "valoracion": "desfavorable",
-     "texto": "El acuerdo se compromete a «respetar y blindar el Régimen Foral y mantener el Convenio Económico», sin decir qué norma se cambiaría ni con qué instrumento se «blindaría»; mantener el Convenio describe la situación vigente. Ibarrola (27-10-2026), la otra ocasión registrada, tampoco concreta una medida.",
+     "texto": "El acuerdo se compromete a «respetar y blindar el Régimen Foral y mantener el Convenio Económico», sin decir qué norma se cambiaría ni con qué instrumento se «blindaría»; mantener el Convenio describe la situación vigente. Ibarrola (27-10-2026), la otra ocasión registrada, tampoco concreta una medida. La lista de «Compromisos» de la web de la coalición (13-11) se limita a «Defensa del Fuero y del Convenio Económico».",
      "fuentes": [
       {
        "url": "https://www.upn.org/upn-y-pp-alcanzan-un-principio-de-acuerdo-para-concurrir-juntos-a-las-elecciones-generales/",
@@ -177,6 +181,10 @@
       {
        "url": "https://www.diariodenavarra.es/noticias/navarra/2026/11/10/upn-pp-basan-campana-foralidad-navarra-mejora-servicios-publicos-honradez-gestion-841937-15.html",
        "titulo": "Diario de Navarra (10-11-2026): UPN-PP basan su campaña en la foralidad"
+      },
+      {
+       "url": "https://upn-pp.es/",
+       "titulo": "Coalición UPN-PP (13-11-2026): lista de «Compromisos» de su web electoral, upn-pp.es"
       }
      ]
     },
@@ -295,10 +303,12 @@
   {
    "id": "upn-03",
    "compromiso": "upn-c03",
-   "compromisos_relacionados": [],
-   "titulo": "Inversiones del Estado en el Canal de Navarra, el TAV, el aeropuerto y la red eléctrica",
+   "compromisos_relacionados": [
+    "upn-c04"
+   ],
+   "titulo": "Inversiones del Estado en el Canal de Navarra, Yesa, el TAV, la A-15, el aeropuerto y la red eléctrica",
    "area": "infraestructuras",
-   "resumen": "Impulsar y garantizar desde el Gobierno las inversiones del Estado en la segunda fase del Canal de Navarra, el tren de alta velocidad y su conexión con la Y vasca, el aeropuerto de Pamplona y el refuerzo de la red eléctrica de Navarra.",
+   "resumen": "Impulsar y garantizar desde el Gobierno las inversiones del Estado en la segunda fase del Canal de Navarra, el tren de alta velocidad y su conexión con la Y vasca, el aeropuerto de Pamplona y el refuerzo de la red eléctrica de Navarra. La lista de compromisos de la coalición añade calendario y financiación para el recrecimiento de Yesa y la autovía A-15.",
    "cita": "desde las responsabilidades de gobierno que se ejerzan, se impulsará y garantizará la ejecución de las inversiones del Estado necesarias para desarrollar las infraestructuras estratégicas de Navarra, como la segunda fase del canal de Navarra, el tren de alta velocidad y su conexión con la Y vasca, el aeropuerto de Pamplona y el refuerzo de la red eléctrica de Navarra.",
    "cita_traduccion": null,
    "quien": "UPN y PP (acuerdo de coalición UPN-PP para las elecciones generales, nota oficial de UPN)",
@@ -307,11 +317,11 @@
    "url": "https://www.upn.org/upn-y-pp-alcanzan-un-principio-de-acuerdo-para-concurrir-juntos-a-las-elecciones-generales/",
    "medio": "Unión del Pueblo Navarro (nota de prensa)",
    "fuente_local": "data/sources/compromisos/upn/upn_20261013_principio_acuerdo.txt",
-   "beneficiarios": "Los regantes y municipios de la Ribera (la segunda fase del Canal permitiría regar hasta 20.214 hectáreas y reforzar el agua de boca), los viajeros de Navarra (el aeropuerto de Pamplona tuvo 233.528 pasajeros en 2025) y la conexión ferroviaria de la comunidad. El coste recae sobre todo en el Estado (Adif y el 60 % de Canasa, con un 40 % de Navarra en el Canal); no hay cifra para el aeropuerto ni para la red eléctrica.",
+   "beneficiarios": "Los regantes y municipios de la Ribera (la segunda fase del Canal permitiría regar hasta 20.214 hectáreas y reforzar el agua de boca), los viajeros de Navarra (el aeropuerto de Pamplona tuvo 233.528 pasajeros en 2025) y la conexión ferroviaria de la comunidad. El coste recae sobre todo en el Estado (Adif y el 60 % de Canasa, con un 40 % de Navarra en el Canal); no hay cifra para el aeropuerto ni para la red eléctrica. Yesa serviría, según la CHE, al regadío de Bardenas (objetivo de 111.652 hectáreas) y al abastecimiento de Zaragoza y su entorno, y las obras de la margen derecha las paga el Estado con cargo al futuro canon de regulación; para la A-15 no hemos localizado previsiones de tráfico, y su coste se reparte entre el Estado y el Gobierno de Navarra.",
    "evaluacion": {
     "concrecion": {
      "valoracion": "mixta",
-     "texto": "El acuerdo identifica cuatro infraestructuras concretas (segunda fase del Canal de Navarra, tren de alta velocidad y su conexión con la Y vasca, aeropuerto de Pamplona y red eléctrica), pero solo se compromete a «impulsar y garantizar» su ejecución, sin cuantía, plazo ni actuación concreta en el aeropuerto o en la red eléctrica. Javier Esparza lo repitió el 13-11 en Itoiz pidiendo un plan de inversiones «con presupuesto, calendario y plazos», sin dar cifras ni plazos propios.",
+     "texto": "El acuerdo identifica cuatro infraestructuras concretas (segunda fase del Canal de Navarra, tren de alta velocidad y su conexión con la Y vasca, aeropuerto de Pamplona y red eléctrica), pero solo se compromete a «impulsar y garantizar» su ejecución, sin cuantía, plazo ni actuación concreta en el aeropuerto o en la red eléctrica. Javier Esparza lo repitió el 13-11 en Itoiz pidiendo un plan de inversiones «con presupuesto, calendario y plazos», sin dar cifras ni plazos propios. La lista de «Compromisos» de la web de la coalición (13-11) añade el recrecimiento del embalse de Yesa y la autovía A-15 y pide «calendario y financiación» para ellos, el Canal y el tren, sin dar cifras, fechas ni tramos.",
      "fuentes": [
       {
        "url": "https://www.upn.org/upn-y-pp-alcanzan-un-principio-de-acuerdo-para-concurrir-juntos-a-las-elecciones-generales/",
@@ -320,12 +330,16 @@
       {
        "url": "https://www.europapress.es/navarra/noticia-upn-pp-afirma-gobierno-socialista-mano-bildu-no-habria-hecho-itoiz-canal-navarra-20261113113349.html",
        "titulo": "Europa Press (13-11-2026): visita de UPN-PP a Itoiz"
+      },
+      {
+       "url": "https://upn-pp.es/",
+       "titulo": "Coalición UPN-PP (13-11-2026): lista de «Compromisos» de su web electoral, upn-pp.es"
       }
      ]
     },
     "legal": {
      "valoracion": "favorable",
-     "texto": "Son competencias estatales: ferrocarriles que atraviesan más de una comunidad (art. 149.1.21.ª), aeropuertos de interés general (149.1.20.ª), aprovechamientos hidráulicos de cuencas intercomunitarias y autorización de instalaciones eléctricas que afectan a otra comunidad (149.1.22.ª) y obras públicas de interés general (149.1.24.ª). La segunda fase del Canal tiene proyecto aprobado por el MITECO y la línea de alta velocidad está en tramitación por Adif, sin cambios legales necesarios.",
+     "texto": "Son competencias estatales: ferrocarriles que atraviesan más de una comunidad (art. 149.1.21.ª), aeropuertos de interés general (149.1.20.ª), aprovechamientos hidráulicos de cuencas intercomunitarias y autorización de instalaciones eléctricas que afectan a otra comunidad (149.1.22.ª) y obras públicas de interés general (149.1.24.ª). La segunda fase del Canal tiene proyecto aprobado por el MITECO y la línea de alta velocidad está en tramitación por Adif, sin cambios legales necesarios. El recrecimiento de Yesa es una obra del Estado que ejecuta la Confederación Hidrográfica del Ebro, declarada de interés general en 1992 e incluida en el Plan Hidrológico Nacional (Ley 10/2001); su cuarta modificación aún debe pasar por el Consejo de Estado. En la A-15, el Estado construye hasta Tarazona y, según el Gobierno, «a partir de Tarazona» completarla hasta Tudela corresponde a Navarra, que tiene competencia exclusiva sobre las carreteras que discurren solo por su territorio (art. 49.1.f de la LORAFNA); el Ministerio prolongará la autovía hasta un enlace en Cascante, con un reparto del coste con Navarra mediante un convenio aún no firmado. El calendario del tramo foral no depende solo del Gobierno central.",
      "fuentes": [
       {
        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
@@ -338,12 +352,40 @@
       {
        "url": "https://www.boe.es/boe/dias/2026/10/21/pdfs/BOE-B-2026-34264.pdf",
        "titulo": "BOE (21-10-2026): información pública del proyecto básico de la conexión Castejón-Pamplona en Castejón de Ebro"
+      },
+      {
+       "url": "https://www.miteco.gob.es/content/dam/miteco/es/agua/planes-y-estrategias/informes-de-viabilidad-de-obras-hidraulicas/d-h-ebro/IV_MEJORA%20MD%20EMBALSE%20DE%20YESA_WEB_MITERD.pdf",
+       "titulo": "Confederación Hidrográfica del Ebro / MITECO (abril de 2025): informe de viabilidad del proyecto 04/24 de mejora en la margen derecha del embalse de Yesa"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-13042",
+       "titulo": "Ley 10/2001, del Plan Hidrológico Nacional (texto consolidado, BOE), art. 36 y anexo II"
+      },
+      {
+       "url": "https://www.infobae.com/espana/agencias/2026/04/24/la-presa-de-yesa-es-la-mas-vigilada-de-espana-dice-la-confederacion-hidrografica-del-ebro/",
+       "titulo": "EFE, en Infobae (24-4-2026): comparecencia del presidente de la CHE en la Comisión de Transición Ecológica del Senado"
+      },
+      {
+       "url": "https://www.congreso.es/entradap/l15p/e10/e_0104943_n_000.pdf",
+       "titulo": "Gobierno, respuesta 184/32820 en el Congreso (9-3-2026): tramos pendientes de la A-15"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1982-20824",
+       "titulo": "Ley Orgánica 13/1982, de Reintegración y Amejoramiento del Régimen Foral de Navarra (texto consolidado, BOE), art. 49.1.f"
+      },
+      {
+       "url": "https://www.navarra.es/es/-/nota-prensa/cohesion-territorial-adjudica-la-redaccion-del-proyecto-de-construccion-de-la-a-15-entre-cascante-y-cintruenigo",
+       "titulo": "Gobierno de Navarra (28-8-2025): adjudicación de la redacción del proyecto de la A-15 entre Cascante y Cintruénigo"
+      },
+      {
+       "url": "https://www.noticiasdenavarra.com/politica/2026/06/27/navarra-pagaran-medias-enlace-provisional-11254821.html",
+       "titulo": "Noticias de Navarra (27-6-2026): respuesta del Gobierno sobre el enlace de la A-15 en Cascante y el reparto del coste con Navarra"
       }
      ]
     },
     "financiacion": {
      "valoracion": "mixta",
-     "texto": "Parte del coste es conocido: la segunda fase del Canal tiene un presupuesto de licitación de 373,7 M€ (Canasa, participada al 60 % por el Estado y al 40 % por Navarra) y el comisionado del Corredor Atlántico cifra en 1.500-1.600 M€ la llegada del tren de alta velocidad a Pamplona; la AIReF recogía en 2020 un coste de 2.526 M€ (euros de 2018) para la línea Zaragoza-Pamplona-Y vasca. El acuerdo no cuantifica el aeropuerto ni la red eléctrica ni explica cómo se financiaría.",
+     "texto": "Parte del coste es conocido: la segunda fase del Canal tiene un presupuesto de licitación de 373,7 M€ (Canasa, participada al 60 % por el Estado y al 40 % por Navarra) y el comisionado del Corredor Atlántico cifra en 1.500-1.600 M€ la llegada del tren de alta velocidad a Pamplona; la AIReF recogía en 2020 un coste de 2.526 M€ (euros de 2018) para la línea Zaragoza-Pamplona-Y vasca. El acuerdo no cuantifica el aeropuerto ni la red eléctrica ni explica cómo se financiaría. Para Yesa, la CHE cifraba en 2013 el presupuesto total en 255,2 M€ (106,7 M€ invertidos) y los Presupuestos de 2023 le asignaban un coste total de 245,9 M€; en 2013 se autorizaron obras de emergencia en la ladera por 10 M€, ampliables en hasta 15 M€, y en 2025 el Ministerio aprobó el informe de viabilidad de un proyecto de 46,8 M€ (IVA incluido) para la margen derecha. En la A-15, el Gobierno de Navarra estima 112 M€ para el tramo Cintruénigo-Tudela y 120 M€ para el de Cascante-Cintruénigo; el Gobierno central licitará el tramo Ágreda-Tarazona «cuando la disponibilidad presupuestaria lo permita», sin indicar su coste.",
      "fuentes": [
       {
        "url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2025/noviembre/el-miteco-aprueba-el-proyecto-de-construccion-de-la-segunda-fase.html",
@@ -360,12 +402,36 @@
       {
        "url": "https://www.airef.es/wp-content/uploads/2020/07/INFRAESTRUCTURAS/ESTUDIO_INFRAESTRUCTURAS_SPENDINGREVIEW.pdf",
        "titulo": "AIReF (2020), Spending Review: evaluación de las infraestructuras de transporte"
+      },
+      {
+       "url": "https://www.iagua.es/noticias/infraestructuras/13/04/05/el-presidente-de-la-confederacion-del-ebro-y-miembros-del-parlamento-navarro-visitan-las-obra",
+       "titulo": "Confederación Hidrográfica del Ebro, reproducida por iAgua (5-4-2013): visita a las obras de Yesa"
+      },
+      {
+       "url": "https://www.miteco.gob.es/content/dam/miteco/es/agua/planes-y-estrategias/informes-de-viabilidad-de-obras-hidraulicas/d-h-ebro/IV_MEJORA%20MD%20EMBALSE%20DE%20YESA_WEB_MITERD.pdf",
+       "titulo": "Confederación Hidrográfica del Ebro / MITECO (abril de 2025): informe de viabilidad del proyecto 04/24 de mejora en la margen derecha del embalse de Yesa"
+      },
+      {
+       "url": "https://www.navarra.es/es/-/nota-prensa/cohesion-territorial-aprueba-provisionalmente-el-proyecto-de-construccion-de-la-a-15-entre-cintruenigo-y-la-conexion-con-la-ap-15",
+       "titulo": "Gobierno de Navarra (3-3-2025): aprobación provisional del proyecto de la A-15 entre Cintruénigo y la conexión con la AP-15"
+      },
+      {
+       "url": "https://www.navarra.es/es/-/nota-prensa/cohesion-territorial-adjudica-la-redaccion-del-proyecto-de-construccion-de-la-a-15-entre-cascante-y-cintruenigo",
+       "titulo": "Gobierno de Navarra (28-8-2025): adjudicación de la redacción del proyecto de la A-15 entre Cascante y Cintruénigo"
+      },
+      {
+       "url": "https://www.congreso.es/entradap/l15p/e10/e_0104608_n_000.pdf",
+       "titulo": "Gobierno, respuesta 184/32821 en el Congreso (9-3-2026): licitación del tramo Ágreda-Tarazona de la A-15"
+      },
+      {
+       "url": "https://www.sepg.pap.hacienda.gob.es/Presup/PGE2023Ley/MaestroDocumentos/PGE-ROM/doc/2/3/2/1/14/N_23_E_V_2_R_1_213_1_123_1.PDF",
+       "titulo": "Presupuestos Generales del Estado 2023, anexo de inversiones reales (CHE), proyecto «Regulación en la cuenca del Ebro-Yesa»"
       }
      ]
     },
     "evidencia": {
      "valoracion": "mixta",
-     "texto": "La AIReF (2020) concluye que en todos los corredores de alta velocidad se infravaloraron los costes al menos un 30 % y que los corredores con menor demanda (norte y levante) obtienen resultados sensiblemente peores que los de mayor demanda. Para el Canal, el Banco Europeo de Inversiones destaca el ahorro de agua y energía y la adaptación al cambio climático, mientras que El Salto, con cálculos de la red Urbizi, sostiene que el regadío solo recuperaría una parte minoritaria del coste público del Canal y del embalse de Itoiz.",
+     "texto": "La AIReF (2020) concluye que en todos los corredores de alta velocidad se infravaloraron los costes al menos un 30 % y que los corredores con menor demanda (norte y levante) obtienen resultados sensiblemente peores que los de mayor demanda. Para el Canal, el Banco Europeo de Inversiones destaca el ahorro de agua y energía y la adaptación al cambio climático, mientras que El Salto, con cálculos de la red Urbizi, sostiene que el regadío solo recuperaría una parte minoritaria del coste público del Canal y del embalse de Itoiz. Un estudio de la Universidad de Oxford sobre 245 grandes presas de 65 países (Energy Policy, 2014) halló que su coste de construcción supera de media en un 90 % el presupuesto; la Comisión Internacional de Grandes Presas objetó que la muestra no es representativa. La AIReF (2020) señala que España duplica la media de la UE en kilómetros de autovías y autopistas por habitante y que la Ley 37/2015 de carreteras exige un análisis coste-beneficio en los proyectos que modifiquen significativamente la longitud de la red estatal; no hemos localizado análisis coste-beneficio publicados para Yesa ni para la A-15.",
      "fuentes": [
       {
        "url": "https://www.airef.es/wp-content/uploads/2020/07/INFRAESTRUCTURAS/ESTUDIO_INFRAESTRUCTURAS_SPENDINGREVIEW.pdf",
@@ -378,22 +444,38 @@
       {
        "url": "https://www.elsaltodiario.com/agua/canal-navarra-segunda-fase-itoiz-aguas-bajan-revueltas",
        "titulo": "El Salto: Canal de Navarra, las aguas bajan revueltas"
+      },
+      {
+       "url": "https://www.bsg.ox.ac.uk/news/should-we-build-more-large-dams",
+       "titulo": "Universidad de Oxford, Blavatnik School (10-3-2014): resumen de Ansar, Flyvbjerg, Budzier y Lunn, Energy Policy (2014)"
+      },
+      {
+       "url": "https://www.waterpowermagazine.com/analysis/oxford-study-on-large-dams-the-right-to-reply-4302108/",
+       "titulo": "Water Power Magazine (25-6-2014): respuesta del presidente de ICOLD al estudio de Oxford"
       }
      ]
     },
     "internacional": {
      "valoracion": "mixta",
-     "texto": "El Tribunal de Cuentas Europeo (2018) auditó catorce líneas y tramos de alta velocidad europeos: tres de las siete líneas terminadas no alcanzaban el umbral de nueve millones de viajeros anuales y nueve de los catorce no tenían población suficiente en su zona de influencia, mientras que otras líneas lo superaban; los resultados dependen de la demanda de cada corredor. No hemos localizado evaluaciones internacionales aplicables al Canal, al aeropuerto ni a la red eléctrica.",
+     "texto": "El Tribunal de Cuentas Europeo (2018) auditó catorce líneas y tramos de alta velocidad europeos: tres de las siete líneas terminadas no alcanzaban el umbral de nueve millones de viajeros anuales y nueve de los catorce no tenían población suficiente en su zona de influencia, mientras que otras líneas lo superaban; los resultados dependen de la demanda de cada corredor. No hemos localizado evaluaciones internacionales aplicables al Canal, al aeropuerto ni a la red eléctrica. Para Yesa, la única referencia internacional localizada es la del estudio de Oxford sobre sobrecostes de grandes presas, discutida por la Comisión Internacional de Grandes Presas; no hemos localizado evaluaciones internacionales aplicables a la A-15.",
      "fuentes": [
       {
        "url": "https://www.eca.europa.eu/Lists/ECADocuments/SR18_19/SR_HIGH_SPEED_RAIL_ES.pdf",
        "titulo": "Tribunal de Cuentas Europeo (2018), Informe Especial 19/2018: Red ferroviaria europea de alta velocidad"
+      },
+      {
+       "url": "https://www.bsg.ox.ac.uk/news/should-we-build-more-large-dams",
+       "titulo": "Universidad de Oxford, Blavatnik School (10-3-2014): resumen de Ansar, Flyvbjerg, Budzier y Lunn, Energy Policy (2014)"
+      },
+      {
+       "url": "https://www.waterpowermagazine.com/analysis/oxford-study-on-large-dams-the-right-to-reply-4302108/",
+       "titulo": "Water Power Magazine (25-6-2014): respuesta del presidente de ICOLD al estudio de Oxford"
       }
      ]
     },
     "antecedentes": {
      "valoracion": "mixta",
-     "texto": "La primera fase del Canal riega más de 22.000 hectáreas y el MITECO aprobó en noviembre de 2025 el proyecto de la segunda (48 meses de obra). En el tren de alta velocidad, en marzo de 2026 el 50 % de la plataforma Castejón-Pamplona estaba terminada y el 20 % seguía en estudio, el tramo Pamplona-Alsasua acumulaba más de 2.000 alegaciones y la conexión con la Y vasca no estaba decidida; en 2022 el Ministerio había anunciado que en 2023 todos los tramos estarían en marcha o finalizados.",
+     "texto": "La primera fase del Canal riega más de 22.000 hectáreas y el MITECO aprobó en noviembre de 2025 el proyecto de la segunda (48 meses de obra). En el tren de alta velocidad, en marzo de 2026 el 50 % de la plataforma Castejón-Pamplona estaba terminada y el 20 % seguía en estudio, el tramo Pamplona-Alsasua acumulaba más de 2.000 alegaciones y la conexión con la Y vasca no estaba decidida; en 2022 el Ministerio había anunciado que en 2023 todos los tramos estarían en marcha o finalizados. El proyecto de recrecimiento de Yesa se redactó en 2000 y las obras empezaron en 2001; el Plan Hidrológico Nacional lo incluía entre las inversiones de 2001-2008, en 2013 la CHE preveía terminarlo a finales de 2016 y los Presupuestos de 2023 fijaban 2025. Los movimientos de la ladera derecha detectados a finales de 2012 obligaron en 2013 a obras de emergencia y al desalojo de viviendas de dos urbanizaciones; en abril de 2026 el presidente de la CHE dijo en el Senado que la obra estará lista 54 meses después de aprobarse la cuarta modificación, aún pendiente. En la A-15, el tramo estatal Ágreda-Tarazona tiene el proyecto aprobado y la obra sin licitar, y Navarra aprobó el proyecto Cintruénigo-Tudela y declaró urgente su expropiación en enero de 2026.",
      "fuentes": [
       {
        "url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2025/noviembre/el-miteco-aprueba-el-proyecto-de-construccion-de-la-segunda-fase.html",
@@ -410,12 +492,44 @@
       {
        "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transportes/paginas/2022/291222-r-sanchez-protocolo-ferroviario-navarra.aspx",
        "titulo": "La Moncloa (29-12-2022): licitaciones del TAV navarro y protocolo ferroviario"
+      },
+      {
+       "url": "https://www.miteco.gob.es/content/dam/miteco/es/agua/planes-y-estrategias/informes-de-viabilidad-de-obras-hidraulicas/d-h-ebro/IV_MEJORA%20MD%20EMBALSE%20DE%20YESA_WEB_MITERD.pdf",
+       "titulo": "Confederación Hidrográfica del Ebro / MITECO (abril de 2025): informe de viabilidad del proyecto 04/24 de mejora en la margen derecha del embalse de Yesa"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-13042",
+       "titulo": "Ley 10/2001, del Plan Hidrológico Nacional (texto consolidado, BOE), art. 36 y anexo II"
+      },
+      {
+       "url": "https://www.iagua.es/noticias/infraestructuras/13/04/05/el-presidente-de-la-confederacion-del-ebro-y-miembros-del-parlamento-navarro-visitan-las-obra",
+       "titulo": "Confederación Hidrográfica del Ebro, reproducida por iAgua (5-4-2013): visita a las obras de Yesa"
+      },
+      {
+       "url": "https://www.sepg.pap.hacienda.gob.es/Presup/PGE2023Ley/MaestroDocumentos/PGE-ROM/doc/2/3/2/1/14/N_23_E_V_2_R_1_213_1_123_1.PDF",
+       "titulo": "Ministerio de Hacienda: Presupuestos Generales del Estado 2023 (prorrogados), anexo de inversiones reales, sección 23, Navarra"
+      },
+      {
+       "url": "https://www.infobae.com/espana/agencias/2026/04/24/la-presa-de-yesa-es-la-mas-vigilada-de-espana-dice-la-confederacion-hidrografica-del-ebro/",
+       "titulo": "EFE, en Infobae (24-4-2026): comparecencia del presidente de la CHE en la Comisión de Transición Ecológica del Senado"
+      },
+      {
+       "url": "https://www.congreso.es/entradap/l15p/e10/e_0104608_n_000.pdf",
+       "titulo": "Gobierno, respuesta 184/32821 en el Congreso (9-3-2026): licitación del tramo Ágreda-Tarazona de la A-15"
+      },
+      {
+       "url": "https://www.navarra.es/es/-/nota-prensa/el-gobierno-de-navarra-declara-urgente-la-expropiacion-de-bienes-y-terrenos-necesaria-para-impulsar-las-obras-en-el-tramo-de-la-a-15-entre-cintruenigo-y-tudela-",
+       "titulo": "Gobierno de Navarra (21-1-2026): expropiación urgente para el tramo de la A-15 entre Cintruénigo y Tudela"
+      },
+      {
+       "url": "https://www.boe.es/boe/dias/2010/08/14/pdfs/BOE-A-2010-13154.pdf",
+       "titulo": "BOE (14-8-2010): declaración de impacto ambiental de la modificación n.º 3 del proyecto de recrecimiento del embalse de Yesa"
       }
      ]
     },
     "beneficiarios": {
      "valoracion": "mixta",
-     "texto": "La segunda fase del Canal permitiría regar hasta 20.214 hectáreas y garantizar agua de boca a núcleos de la Ribera; el aeropuerto de Pamplona tuvo 233.528 pasajeros en 2025. El coste recae en el Estado (Adif y el 60 % de Canasa) y en Navarra (40 % de Canasa), pero no hay estimación de beneficiarios del tren ni cifra para el aeropuerto y la red eléctrica.",
+     "texto": "La segunda fase del Canal permitiría regar hasta 20.214 hectáreas y garantizar agua de boca a núcleos de la Ribera; el aeropuerto de Pamplona tuvo 233.528 pasajeros en 2025. El coste recae en el Estado (Adif y el 60 % de Canasa) y en Navarra (40 % de Canasa), pero no hay estimación de beneficiarios del tren ni cifra para el aeropuerto y la red eléctrica. Según la CHE, el recrecimiento de Yesa serviría para el regadío de Bardenas (objetivo: 111.652 hectáreas) y el abastecimiento de Zaragoza y su entorno; las obras de la margen derecha (46,8 M€) las paga el Estado y su coste se incluirá en el futuro canon de regulación del embalse. En 2015 el Gobierno municipal de Zaragoza defendió desvincular el abastecimiento de la ciudad del recrecimiento de Yesa. Para la A-15 no hemos localizado previsiones de tráfico; su coste se reparte entre el Estado y el Gobierno de Navarra.",
      "fuentes": [
       {
        "url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2025/noviembre/el-miteco-aprueba-el-proyecto-de-construccion-de-la-segunda-fase.html",
@@ -428,12 +542,24 @@
       {
        "url": "https://www.elsaltodiario.com/agua/canal-navarra-segunda-fase-itoiz-aguas-bajan-revueltas",
        "titulo": "El Salto: Canal de Navarra, las aguas bajan revueltas"
+      },
+      {
+       "url": "https://www.miteco.gob.es/content/dam/miteco/es/agua/planes-y-estrategias/informes-de-viabilidad-de-obras-hidraulicas/d-h-ebro/IV_MEJORA%20MD%20EMBALSE%20DE%20YESA_WEB_MITERD.pdf",
+       "titulo": "Confederación Hidrográfica del Ebro / MITECO (abril de 2025): informe de viabilidad del proyecto 04/24 de mejora en la margen derecha del embalse de Yesa"
+      },
+      {
+       "url": "https://www.zaragoza.es/sede/servicio/noticia/222692",
+       "titulo": "Ayuntamiento de Zaragoza (17-11-2015): el Gobierno de Zaragoza expresa en Yesa su oposición al recrecimiento"
+      },
+      {
+       "url": "https://www.congreso.es/entradap/l15p/e10/e_0104943_n_000.pdf",
+       "titulo": "Gobierno, respuesta 184/32820 en el Congreso (9-3-2026): tramos pendientes de la A-15"
       }
      ]
     },
     "largo_plazo": {
      "valoracion": "mixta",
-     "texto": "La conexión ferroviaria integraría Navarra en los corredores Atlántico y Cantábrico-Mediterráneo, y el Canal contribuiría a la adaptación al cambio climático según el BEI. Los riesgos documentados son la infravaloración generalizada de costes y los peores resultados de los corredores de menor demanda que señala la AIReF, y la baja recuperación de costes del regadío que sostiene El Salto con datos de Urbizi.",
+     "texto": "La conexión ferroviaria integraría Navarra en los corredores Atlántico y Cantábrico-Mediterráneo, y el Canal contribuiría a la adaptación al cambio climático según el BEI. Los riesgos documentados son la infravaloración generalizada de costes y los peores resultados de los corredores de menor demanda que señala la AIReF, y la baja recuperación de costes del regadío que sostiene El Salto con datos de Urbizi. El recrecimiento llevaría el embalse de Yesa de unos 446 a unos 1.000 hectómetros cúbicos; la CHE ha tenido que estabilizar la ladera derecha, una masa de unos 4 millones de metros cúbicos que llegó a desplazarse 265 mm. El Gobierno de Navarra estima en 232 M€ sus dos tramos de la A-15 (unos 14 km entre Cascante y la conexión con la AP-15).",
      "fuentes": [
       {
        "url": "https://www.noticiasdenavarra.com/politica/2026/07/02/adif-adjudica-6-millones-tramo-11276088.html",
@@ -450,6 +576,1008 @@
       {
        "url": "https://www.elsaltodiario.com/agua/canal-navarra-segunda-fase-itoiz-aguas-bajan-revueltas",
        "titulo": "El Salto: Canal de Navarra, las aguas bajan revueltas"
+      },
+      {
+       "url": "https://www.infobae.com/espana/agencias/2026/04/24/la-presa-de-yesa-es-la-mas-vigilada-de-espana-dice-la-confederacion-hidrografica-del-ebro/",
+       "titulo": "EFE, en Infobae (24-4-2026): comparecencia del presidente de la CHE en la Comisión de Transición Ecológica del Senado"
+      },
+      {
+       "url": "https://www.miteco.gob.es/content/dam/miteco/es/agua/planes-y-estrategias/informes-de-viabilidad-de-obras-hidraulicas/d-h-ebro/IV_MEJORA%20MD%20EMBALSE%20DE%20YESA_WEB_MITERD.pdf",
+       "titulo": "Confederación Hidrográfica del Ebro / MITECO (abril de 2025): informe de viabilidad del proyecto 04/24 de mejora en la margen derecha del embalse de Yesa"
+      },
+      {
+       "url": "https://www.navarra.es/es/-/nota-prensa/cohesion-territorial-aprueba-provisionalmente-el-proyecto-de-construccion-de-la-a-15-entre-cintruenigo-y-la-conexion-con-la-ap-15",
+       "titulo": "Gobierno de Navarra (3-3-2025): aprobación provisional del proyecto de la A-15 entre Cintruénigo y la conexión con la AP-15"
+      },
+      {
+       "url": "https://www.navarra.es/es/-/nota-prensa/cohesion-territorial-adjudica-la-redaccion-del-proyecto-de-construccion-de-la-a-15-entre-cascante-y-cintruenigo",
+       "titulo": "Gobierno de Navarra (28-8-2025): adjudicación de la redacción del proyecto de la A-15 entre Cascante y Cintruénigo"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "upn-04",
+   "compromiso": "upn-c05",
+   "compromisos_relacionados": [],
+   "titulo": "Más plazas MIR",
+   "area": "sanidad",
+   "resumen": "Aumentar la oferta de plazas de formación sanitaria especializada en medicina (MIR).",
+   "cita": "Más plazas MIR.",
+   "cita_traduccion": null,
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de su web electoral, documento conjunto de la coalición que firma UPN)",
+   "formato": "documento oficial (web de campaña de la coalición)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "medio": "Coalición UPN-PP (web oficial de campaña, upn-pp.es)",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "beneficiarios": "Los pacientes de las especialidades con falta de médicos, a medio plazo, y los médicos que consigan plaza (la convocatoria para 2027 ya oferta 9.676 plazas MIR, Orden SND/854/2026); el compromiso no cuantifica el aumento. Pagan los hospitales y servicios de salud donde se forman los residentes, en su mayoría autonómicos; no dice si el Estado lo financiaría.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "La lista de la coalición dice solo «Más plazas MIR», sin indicar cuántas plazas más, en qué especialidades o comunidades, cuánto costarían ni en qué plazo. Como referencia, la última convocatoria oficial oferta 9.676 plazas MIR para empezar en 2027.",
+     "fuentes": [
+      {
+       "url": "https://upn-pp.es/",
+       "titulo": "Coalición UPN-PP (13-11-2026): lista de «Compromisos» de su web electoral, upn-pp.es"
+      },
+      {
+       "url": "https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6972",
+       "titulo": "Ministerio de Sanidad (10-8-2026): Sanidad oferta 12.850 plazas de Formación Sanitaria Especializada para 2027"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "La oferta de plazas la fija cada año la Comisión de Recursos Humanos del Sistema Nacional de Salud, atendiendo a las propuestas de las comunidades autónomas, a las necesidades de especialistas y a las disponibilidades presupuestarias, y la aprueba el Ministerio de Sanidad por orden (art. 22 de la Ley 44/2003): no hace falta una ley nueva. Cada plaza tiene que estar en una unidad docente acreditada, que fija cuántos residentes puede formar (arts. 20 y 26); en la convocatoria para 2027 el catálogo de unidades suma 13.477 plazas acreditadas (suma propia) frente a 12.850 ofertadas en todas las titulaciones, por lo que un aumento grande exigiría acreditar más unidades.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-21340",
+       "titulo": "Ley 44/2003, de ordenación de las profesiones sanitarias (texto consolidado, BOE), arts. 20, 22 y 26"
+      },
+      {
+       "url": "https://www.boe.es/boe/dias/2026/08/10/pdfs/BOE-A-2026-17429.pdf",
+       "titulo": "BOE (10-8-2026): Orden SND/854/2026, oferta de plazas y convocatoria de pruebas de acceso en 2027 a formación sanitaria especializada"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "no_verificable",
+     "texto": "El compromiso no dice cuántas plazas añadiría, y no hay un coste oficial por residente, así que no se puede calcular. Cada residente tiene un contrato con el hospital o servicio de salud donde se forma, en su mayoría autonómicos; su sueldo combina el sueldo base del personal sanitario, un complemento que desde 2027 será como mínimo del 18 % al 58 % según el año de residencia y las guardias. No explica cómo se pagarían las plazas nuevas.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-17498",
+       "titulo": "Real Decreto 1146/2006, relación laboral especial de residencia (texto consolidado, BOE), arts. 2 y 7"
+      },
+      {
+       "url": "https://www.boe.es/boe/dias/2026/08/10/pdfs/BOE-A-2026-17429.pdf",
+       "titulo": "BOE (10-8-2026): Orden SND/854/2026, oferta de plazas y convocatoria de pruebas de acceso en 2027 a formación sanitaria especializada"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "El informe del Ministerio de Sanidad de 2024 atribuye en parte al aumento de plazas MIR desde 2019 la mejora prevista en medicina de familia. También advierte que ya hay más plazas MIR que graduados (8.550 plazas frente a 6.326 graduados), que en la convocatoria 2022-23 el 16,4 % de los adjudicatarios de plaza MIR eran extranjeros y que en medicina de familia, para cubrir las plazas que no se ocupan, «no basta con convocar más plazas MIR u homologar más títulos extranjeros» y hace falta un plan de incentivos específico.",
+     "fuentes": [
+      {
+       "url": "https://www.sanidad.gob.es/areas/profesionesSanitarias/profesiones/necesidadEspecialistas/docs/Oferta_y_necesidad_de_medicos_especialistas_en_Espana_2023-2035.pdf",
+       "titulo": "Ministerio de Sanidad / Barber y González López-Valcárcel (2024): Informe Oferta y necesidad de médicos especialistas en España 2023-2035"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Francia reserva desde 2017 al menos el 40 % de sus plazas de formación de posgrado a medicina general, en Países Bajos un consejo asesor recomendó asignarle casi la mitad de esas plazas en 2024-2027 (frente al 40 % en 2021), y en Canadá casi el 45 % de las plazas de residencia ocupadas en 2023 fueron de medicina familiar, según el informe del Ministerio de Sanidad con datos de la OCDE; no hemos localizado una evaluación publicada del efecto de ampliar estas plazas. En Francia, el Tribunal de Cuentas concluyó en 2024 que la supresión del numerus clausus de grado (2020) aumentó un 18 % los admitidos en medicina, pero que no basta por sí sola para cubrir las necesidades.",
+     "fuentes": [
+      {
+       "url": "https://www.sanidad.gob.es/areas/profesionesSanitarias/profesiones/necesidadEspecialistas/docs/Oferta_y_necesidad_de_medicos_especialistas_en_Espana_2023-2035.pdf",
+       "titulo": "Ministerio de Sanidad / Barber y González López-Valcárcel (2024): Informe Oferta y necesidad de médicos especialistas en España 2023-2035"
+      },
+      {
+       "url": "https://www.ccomptes.fr/sites/default/files/2024-12/20241211-Lacces-aux-%C3%A9tudes-de-sante.pdf",
+       "titulo": "Cour des comptes (11-12-2024): L'accès aux études de santé. Quatre ans après la réforme"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "La oferta se redujo cada año entre 2010 y 2014 y después creció: 22.410 plazas MIR en las convocatorias de 2018-2020, 25.510 en las de 2021-2023 (casi un 14 % más), 9.276 en 2026 y 9.676 en 2027. Una parte queda sin cubrir: en 2026, tras la adjudicación ordinaria quedaron 441 plazas de formación sanitaria especializada vacantes, y tras un procedimiento extraordinario se adjudicaron 228.",
+     "fuentes": [
+      {
+       "url": "https://www.sanidad.gob.es/areas/profesionesSanitarias/profesiones/necesidadEspecialistas/docs/Oferta_y_necesidad_de_medicos_especialistas_en_Espana_2023-2035.pdf",
+       "titulo": "Ministerio de Sanidad / Barber y González López-Valcárcel (2024): Informe Oferta y necesidad de médicos especialistas en España 2023-2035"
+      },
+      {
+       "url": "https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6723",
+       "titulo": "Ministerio de Sanidad (17-7-2025): la oferta de plazas de Formación Sanitaria Especializada para 2026"
+      },
+      {
+       "url": "https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6972",
+       "titulo": "Ministerio de Sanidad (10-8-2026): Sanidad oferta 12.850 plazas de Formación Sanitaria Especializada para 2027"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/sanidad14/paginas/2026/150626-convocatoria-441-vacantes.aspx",
+       "titulo": "La Moncloa / Ministerio de Sanidad (15-6-2026): convocatoria de 441 plazas vacantes de Formación Sanitaria Especializada"
+      },
+      {
+       "url": "https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6957",
+       "titulo": "Ministerio de Sanidad (9-7-2026): adjudicación de 228 plazas en el procedimiento extraordinario de Formación Sanitaria Especializada"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Se beneficiarían, a medio plazo, los pacientes de las especialidades donde faltan médicos, y de forma directa los médicos que consigan plaza: la convocatoria para 2027 tiene 9.676 plazas MIR, 2.557 de medicina de familia. El compromiso no dice cuántas añadiría ni dónde, y el sueldo de los residentes lo pagan los hospitales y servicios de salud donde se forman, en su mayoría autonómicos.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/boe/dias/2026/08/10/pdfs/BOE-A-2026-17429.pdf",
+       "titulo": "BOE (10-8-2026): Orden SND/854/2026, oferta de plazas y convocatoria de pruebas de acceso en 2027 a formación sanitaria especializada"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-17498",
+       "titulo": "Real Decreto 1146/2006, relación laboral especial de residencia (texto consolidado, BOE), arts. 2 y 7"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "El Ministerio de Sanidad estimó en 2024 un déficit de 5.874 especialistas en 2023 (4.502 en medicina de familia) y prevé que, con el ritmo de plazas de 2021-2023, se pase a un ligero exceso hacia 2033; en medicina de familia el déficit crecería hasta 5.496 en 2029 y después bajaría hasta unos 2.100 (menos del 5 %) en 2035. Por eso recomendaba subir un 10 % las plazas de medicina de familia a corto plazo y reducirlas desde 2026-27, y reducir ya las de diez especialidades con excedente previsto. Un residente tarda de 4 a 5 años en formarse, así que las plazas nuevas tardarían años en aumentar los especialistas.",
+     "fuentes": [
+      {
+       "url": "https://www.sanidad.gob.es/areas/profesionesSanitarias/profesiones/necesidadEspecialistas/docs/Oferta_y_necesidad_de_medicos_especialistas_en_Espana_2023-2035.pdf",
+       "titulo": "Ministerio de Sanidad / Barber y González López-Valcárcel (2024): Informe Oferta y necesidad de médicos especialistas en España 2023-2035"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-17498",
+       "titulo": "Real Decreto 1146/2006, relación laboral especial de residencia (texto consolidado, BOE), arts. 2 y 7"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "upn-05",
+   "compromiso": "upn-c06",
+   "compromisos_relacionados": [],
+   "titulo": "Que la inflación no suba los impuestos (deflactar el IRPF)",
+   "area": "fiscalidad",
+   "resumen": "Que la inflación no eleve los impuestos: actualizar con la inflación la tarifa y los parámetros del impuesto (la web no nombra el impuesto; se evalúa como deflactación del IRPF).",
+   "cita": "Que la inflación no te suba los impuestos.",
+   "cita_traduccion": null,
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de su web electoral, documento conjunto de la coalición que firma UPN)",
+   "formato": "documento oficial (web de campaña de la coalición)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "medio": "Coalición UPN-PP (web oficial de campaña, upn-pp.es)",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "beneficiarios": "Los contribuyentes del IRPF (23,99 millones de declaraciones en 2023), con más peso en las rentas medias y medias-altas, según el Banco de España; no los residentes en Navarra ni en el País Vasco, que tributan por el IRPF foral. El coste (la no deflactación aportó un 0,1 % del PIB en 2025, según el Gobierno) recaería en el Estado y las comunidades, que comparten el impuesto.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "La lista de la coalición dice «Que la inflación no te suba los impuestos», sin nombrar el impuesto ni el mecanismo. La forma habitual de conseguirlo es deflactar (actualizar con la inflación) la tarifa y los mínimos del IRPF, pero no dice qué índice ni qué parámetros usaría ni desde cuándo.",
+     "fuentes": [
+      {
+       "url": "https://upn-pp.es/",
+       "titulo": "Coalición UPN-PP (13-11-2026): lista de «Compromisos» de su web electoral, upn-pp.es"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "El IRPF se regula por ley estatal ordinaria, así que la tarifa estatal y los mínimos pueden actualizarse por mayoría simple. El impuesto está cedido al 50 % a las comunidades de régimen común, que fijan su propia tarifa autonómica y no estarían obligadas a deflactarla. En Navarra el IRPF de sus residentes lo regula y exige la Comunidad Foral (Convenio Económico, arts. 1 y 9), como en el País Vasco el de los suyos (Concierto Económico, art. 6), por lo que una deflactación estatal no les afectaría.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-20375",
+       "titulo": "Ley 22/2009, sistema de financiación de las comunidades autónomas de régimen común (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117",
+       "titulo": "Ley 28/1990, por la que se aprueba el Convenio Económico entre el Estado y la Comunidad Foral de Navarra (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969",
+       "titulo": "Ley 12/2002, por la que se aprueba el Concierto Económico con la Comunidad Autónoma del País Vasco (texto consolidado, BOE), art. 6"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El coste es estimable: según el Informe de Progreso Anual 2026 remitido a la Comisión Europea, no deflactar la tarifa y los mínimos aportó en 2025 algo más del 0,1 % del PIB de recaudación (2.294 M€), que España computa para cumplir el compromiso de reforma fiscal de su plan aprobado por el Consejo de la UE; deflactar exigiría sustituir ese ingreso con otras medidas. La coalición no explica cómo se compensaría.",
+     "fuentes": [
+      {
+       "url": "https://www.hacienda.gob.es/cdi/estabilidad%20presupuestaria/planfiscalestructural/informe-progreso-2026.pdf",
+       "titulo": "Gobierno de España, Informe de Progreso Anual 2026 del Plan Fiscal y Estructural de Medio Plazo (abril de 2026)"
+      },
+      {
+       "url": "https://data.consilium.europa.eu/doc/document/ST-5014-2025-INIT/en/pdf",
+       "titulo": "Consejo de la UE, Recomendación que aprueba el plan fiscal-estructural de medio plazo de España 2025-2028 (doc. 5014/25)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Immervoll (2005) muestra que la progresividad en frío eleva la recaudación y reduce la progresividad incluso con inflación baja, y que la indexación evitó esos cambios en Países Bajos y Reino Unido. El Banco de España atribuye a ese efecto cerca de la mitad del aumento del IRPF sobre el PIB en 2019-2023 y señala que recae sobre todo en las rentas medias y medias-altas, que serían las más beneficiadas al deflactar.",
+     "fuentes": [
+      {
+       "url": "https://ideas.repec.org/a/bla/revinw/v51y2005i1p37-62.html",
+       "titulo": "Immervoll (2005), Falling up the stairs: the effects of bracket creep on household incomes, Review of Income and Wealth 51(1)"
+      },
+      {
+       "url": "https://ideas.repec.org/p/bde/opaper/2422.html",
+       "titulo": "Balladares y García-Miralles (2024), Progresividad en frío en el IRPF, Banco de España, Documentos Ocasionales 2422"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "favorable",
+     "texto": "Once de los 27 países europeos de la OCDE indexan automáticamente cada año los tramos del impuesto sobre la renta (entre ellos Bélgica, Dinamarca, Francia, Países Bajos y Suecia), y Alemania los ajusta cada dos años con un informe de progresividad. Immervoll (2005) documenta que la indexación en Países Bajos y Reino Unido evitó aumentos de la carga por la inflación, que es el objetivo de la medida.",
+     "fuentes": [
+      {
+       "url": "https://taxfoundation.org/income-tax-inflation-adjustments-europe",
+       "titulo": "Tax Foundation (2024), Income tax inflation adjustments in Europe"
+      },
+      {
+       "url": "https://ideas.repec.org/a/bla/revinw/v51y2005i1p37-62.html",
+       "titulo": "Immervoll (2005), Falling up the stairs: the effects of bracket creep on household incomes, Review of Income and Wealth 51(1)"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "Según la prensa, la tarifa estatal solo se deflactó en 2008 y 2015 en los últimos veinte años; en 2023 se amplió la reducción por rendimientos del trabajo hasta 21.000 euros, que el Gobierno no presentó como deflactación. Según la misma fuente, Madrid, Andalucía, Aragón y la Comunitat Valenciana deflactaron parcialmente su tarifa autonómica en 2022-2025.",
+     "fuentes": [
+      {
+       "url": "https://en.ara.cat/economy/treasury-has-only-adjusted-income-tax-to-inflation-in-two-of-the-last-20-years_1_5698297.html",
+       "titulo": "Ara (4-4-2026): Hacienda solo ha deflactado el IRPF en dos de los últimos veinte años"
+      },
+      {
+       "url": "https://www.hacienda.gob.es/GabineteMinistro/Notas%20Prensa/2022/S.E.HACIENDA/29-09-22-NP-Medidas-fiscales-2023.pdf",
+       "titulo": "Ministerio de Hacienda (29-9-2022): medidas fiscales de los Presupuestos de 2023"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "favorable",
+     "texto": "Beneficiaría a los contribuyentes del IRPF (23,99 millones de declaraciones en 2023), con más peso en las rentas medias y medias-altas, sobre las que recae sobre todo la progresividad en frío según el Banco de España; los residentes en Navarra y el País Vasco tributan por el IRPF foral y no se verían afectados. El coste, algo más del 0,1 % del PIB según la recaudación que aportó no deflactar en 2025 (2.294 M€), recaería en el Estado y las comunidades.",
+     "fuentes": [
+      {
+       "url": "https://www.ief.es/docs/destacados/publicaciones/documentos_trabajo/2026_02.pdf",
+       "titulo": "Instituto de Estudios Fiscales, Documento de Trabajo 2/2026"
+      },
+      {
+       "url": "https://ideas.repec.org/p/bde/opaper/2422.html",
+       "titulo": "Balladares y García-Miralles (2024), Progresividad en frío en el IRPF, Banco de España, Documentos Ocasionales 2422"
+      },
+      {
+       "url": "https://www.hacienda.gob.es/cdi/estabilidad%20presupuestaria/planfiscalestructural/informe-progreso-2026.pdf",
+       "titulo": "Gobierno de España, Informe de Progreso Anual 2026 del Plan Fiscal y Estructural de Medio Plazo (abril de 2026)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117",
+       "titulo": "Ley 28/1990, por la que se aprueba el Convenio Económico entre el Estado y la Comunidad Foral de Navarra (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969",
+       "titulo": "Ley 12/2002, por la que se aprueba el Concierto Económico con la Comunidad Autónoma del País Vasco (texto consolidado, BOE), art. 6"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "La indexación evita que la inflación cambie la carga y la progresividad del impuesto sin decisión parlamentaria. A cambio, reduce de forma permanente los ingresos frente a la situación actual: el marco fiscal europeo trata la recaudación por progresividad en frío como margen fiscal, por lo que deflactar reduce ese margen y exige compensarlo con otros ingresos o menos gasto (SUERF, 2026).",
+     "fuentes": [
+      {
+       "url": "https://ideas.repec.org/a/bla/revinw/v51y2005i1p37-62.html",
+       "titulo": "Immervoll (2005), Falling up the stairs: the effects of bracket creep on household incomes, Review of Income and Wealth 51(1)"
+      },
+      {
+       "url": "https://www.suerf.org/publications/suerf-policy-notes-and-briefs/fiscal-drag-in-europe-how-inflation-is-quietly-affecting-public-revenue/",
+       "titulo": "García-Miralles, Freier y Riscado (2026), Fiscal drag in Europe, SUERF Policy Brief 1380"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "upn-06",
+   "compromiso": "upn-c07",
+   "compromisos_relacionados": [],
+   "titulo": "Pensiones que mantengan el poder adquisitivo",
+   "area": "pensiones",
+   "resumen": "Revalorizar las pensiones para que mantengan su poder adquisitivo.",
+   "cita": "Pensiones que mantengan tu poder adquisitivo.",
+   "cita_traduccion": null,
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de su web electoral, documento conjunto de la coalición que firma UPN)",
+   "formato": "documento oficial (web de campaña de la coalición)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "medio": "Coalición UPN-PP (web oficial de campaña, upn-pp.es)",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "beneficiarios": "Los cerca de 9,6 millones de pensionistas de la Seguridad Social (10,57 millones de pensiones contributivas en octubre de 2026) y los 708.267 pensionistas de Clases Pasivas (728.062 pensiones en agosto de 2026). El coste lo asumen cotizantes y contribuyentes: la AIReF calcula que las transferencias a la Seguridad Social deberán subir 2,3 puntos, hasta el 3,0 % del PIB, para financiar el gasto previsto.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "La lista de la coalición pide «Pensiones que mantengan tu poder adquisitivo». Coincide con la regla vigente de revalorización con el IPC, pero no dice si basta con mantenerla o si propone subidas adicionales, para qué pensiones ni en qué plazo.",
+     "fuentes": [
+      {
+       "url": "https://upn-pp.es/",
+       "titulo": "Coalición UPN-PP (13-11-2026): lista de «Compromisos» de su web electoral, upn-pp.es"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-21652",
+       "titulo": "Ley 21/2021, de garantía del poder adquisitivo de las pensiones (BOE)"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "La revalorización anual con el IPC medio de los doce meses previos a diciembre ya está en la ley (art. 58 de la Ley General de la Seguridad Social, en la redacción de la Ley 21/2021), así que mantenerla no exige cambios legales. La subida de 2026 (2,7 %) se aplicó por real decreto-ley convalidado por el Congreso.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+       "titulo": "Ley General de la Seguridad Social (texto consolidado, BOE), art. 58"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-21652",
+       "titulo": "Ley 21/2021, de garantía del poder adquisitivo de las pensiones (BOE)"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2026/260226-convalidacion-revalorizacion-pensiones.aspx",
+       "titulo": "La Moncloa (26-2-2026): el Congreso convalida la revalorización de las pensiones de 2026"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El coste es conocido: la nómina de pensiones contributivas fue de 14.540 M€ en octubre de 2026 y la AIReF sitúa el gasto bruto en pensiones en el 14,6 % del PIB de media entre 2022 y 2050. La coalición no explica cómo se pagaría el aumento del gasto, que según la AIReF exigirá elevar las transferencias a la Seguridad Social hasta el 3,0 % del PIB.",
+     "fuentes": [
+      {
+       "url": "https://revista.seg-social.es/-/la-pension-media-del-sistema-de-la-seguridad-social-alcanza-los-1.376-1-euros-en-octubre-un-4-6-mas-alta-que-hace-un-ano",
+       "titulo": "Seguridad Social: nómina de pensiones de octubre de 2026"
+      },
+      {
+       "url": "https://www.airef.es/es/noticias/la-airef-ratifica-el-resultado-de-2025-la-regla-de-gasto-de-pensiones-se-cumple-formalmente-pero-no-garantiza-la-sostenibilidad/",
+       "titulo": "AIReF (mayo de 2026): estudio sobre la regla de gasto de pensiones"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Revalorizar con el IPC mantiene por construcción el poder adquisitivo de la pensión. La Comisión Europea señala que la indexación a precios, cuando los salarios crecen por encima de la inflación, hace que los pensionistas pierdan posición en la distribución de la renta respecto a una indexación a salarios. La AIReF advierte de que la regla de gasto de pensiones vigente se cumple formalmente pero no garantiza la sostenibilidad de las finanzas públicas.",
+     "fuentes": [
+      {
+       "url": "https://economy-finance.ec.europa.eu/document/download/971dd209-41c2-425d-94f8-e3c3c3459af9_en?filename=ip279_en.pdf",
+       "titulo": "Comisión Europea, 2024 Ageing Report (Institutional Paper 279), capítulo de pensiones"
+      },
+      {
+       "url": "https://www.airef.es/es/noticias/la-airef-ratifica-el-resultado-de-2025-la-regla-de-gasto-de-pensiones-se-cumple-formalmente-pero-no-garantiza-la-sostenibilidad/",
+       "titulo": "AIReF (mayo de 2026): estudio sobre la regla de gasto de pensiones"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Según el Ageing Report 2024 de la Comisión Europea, 23 Estados miembros revalorizan las pensiones por debajo del crecimiento de los salarios nominales, y seis, entre ellos España, Francia, Italia y Austria, con indexación pura a precios. No hemos localizado evaluaciones comparadas de sus resultados más allá de las proyecciones de gasto.",
+     "fuentes": [
+      {
+       "url": "https://economy-finance.ec.europa.eu/document/download/971dd209-41c2-425d-94f8-e3c3c3459af9_en?filename=ip279_en.pdf",
+       "titulo": "Comisión Europea, 2024 Ageing Report (Institutional Paper 279), capítulo de pensiones"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "La Ley 23/2013 sustituyó desde 2014 la revalorización con el IPC por un índice orientado a la sostenibilidad financiera del sistema, y la Ley 21/2021 volvió a ligarla al IPC. En enero de 2025 el Congreso no convalidó el decreto que incluía la subida de las pensiones; en 2026 la subida del 2,7 % se convalidó el 26-2-2026.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-13617",
+       "titulo": "Ley 23/2013, reguladora del Factor de Sostenibilidad y del Índice de Revalorización (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-21652",
+       "titulo": "Ley 21/2021, de garantía del poder adquisitivo de las pensiones (BOE)"
+      },
+      {
+       "url": "https://www.infobae.com/espana/agencias/2025/01/22/congreso-rechaza-el-gravamen-energetico-el-alza-de-pensiones-y-las-ayudas-al-transporte/",
+       "titulo": "EFE/Infobae (22-1-2025): el Congreso no convalida el gravamen energético ni el decreto ómnibus"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2026/260226-convalidacion-revalorizacion-pensiones.aspx",
+       "titulo": "La Moncloa (26-2-2026): el Congreso convalida la revalorización de las pensiones de 2026"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "favorable",
+     "texto": "Beneficia a los cerca de 9,6 millones de pensionistas de la Seguridad Social (10,57 millones de pensiones contributivas, con una pensión media de 1.376,1 € en octubre de 2026) y a los 708.267 pensionistas de Clases Pasivas (728.062 pensiones en agosto de 2026). El coste recae en cotizantes y contribuyentes: la AIReF estima que las transferencias a la Seguridad Social deberán subir 2,3 puntos, hasta el 3,0 % del PIB.",
+     "fuentes": [
+      {
+       "url": "https://revista.seg-social.es/-/la-pension-media-del-sistema-de-la-seguridad-social-alcanza-los-1.376-1-euros-en-octubre-un-4-6-mas-alta-que-hace-un-ano",
+       "titulo": "Seguridad Social: nómina de pensiones de octubre de 2026"
+      },
+      {
+       "url": "https://www.airef.es/es/noticias/la-airef-ratifica-el-resultado-de-2025-la-regla-de-gasto-de-pensiones-se-cumple-formalmente-pero-no-garantiza-la-sostenibilidad/",
+       "titulo": "AIReF (mayo de 2026): estudio sobre la regla de gasto de pensiones"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Da previsibilidad a los pensionistas. La AIReF advierte de que, con la normativa actual, la deuda pública llegaría al 123 % del PIB en 2050 y de que el aumento de las transferencias necesarias reducirá los recursos para otras políticas o exigirá más endeudamiento; la coalición no vincula la medida a una fuente de financiación.",
+     "fuentes": [
+      {
+       "url": "https://www.airef.es/es/noticias/la-airef-ratifica-el-resultado-de-2025-la-regla-de-gasto-de-pensiones-se-cumple-formalmente-pero-no-garantiza-la-sostenibilidad/",
+       "titulo": "AIReF (mayo de 2026): estudio sobre la regla de gasto de pensiones"
+      },
+      {
+       "url": "https://upn-pp.es/",
+       "titulo": "Coalición UPN-PP (13-11-2026): lista de «Compromisos» de su web electoral, upn-pp.es"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "upn-07",
+   "compromiso": "upn-c08",
+   "compromisos_relacionados": [],
+   "titulo": "Desalojo de viviendas ocupadas en 48 horas",
+   "area": "vivienda",
+   "resumen": "Desalojar en 48 horas a quienes ocupen una vivienda sin título.",
+   "cita": "Okupas fuera en 48 horas.",
+   "cita_traduccion": null,
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de su web electoral, documento conjunto de la coalición que firma UPN)",
+   "formato": "documento oficial (web de campaña de la coalición)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "medio": "Coalición UPN-PP (web oficial de campaña, upn-pp.es)",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "beneficiarios": "Los propietarios de viviendas ocupadas sin título; no hay cifra oficial de viviendas ocupadas (en 2025 hubo 1.845 juicios verbales posesorios por ocupación ilegal de viviendas, según el CGPJ). El coste recae en los ocupantes desalojados y, para los hogares vulnerables, en las administraciones que deban atenderlos, sin cuantificar.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "La lista de la coalición fija un plazo («Okupas fuera en 48 horas») pero no el instrumento: no dice si el desalojo lo ordenaría un juez o la policía, en qué procedimiento (civil o penal), cómo encaja con el plazo de cinco días que hoy tiene el ocupante para acreditar un título ni qué pasaría con los ocupantes vulnerables.",
+     "fuentes": [
+      {
+       "url": "https://upn-pp.es/",
+       "titulo": "Coalición UPN-PP (13-11-2026): lista de «Compromisos» de su web electoral, upn-pp.es"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/l/2018/06/11/5",
+       "titulo": "Ley 5/2018, de 11 de junio, de modificación de la LEC en relación con la ocupación ilegal de viviendas (BOE)"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "El art. 18.2 de la Constitución solo permite entrar en un domicilio sin consentimiento con resolución judicial o en flagrante delito, y el Tribunal Constitucional, al avalar la Ley 5/2018 (STC 32/2019), consideró que el desalojo ordenado por el juez en ese proceso cumple esa garantía; un desalojo en 48 horas con orden judicial rápida puede hacerse por ley, como el juicio rápido para la usurpación y el allanamiento que introdujo la LO 1/2025. La entrega inmediata queda hoy sujeta a la valoración de la vulnerabilidad del ocupante (arts. 441.5 a 441.7 de la LEC) y el Real Decreto-ley 29/2026 suspende hasta 2030 ciertos desahucios de personas vulnerables; suprimir esas suspensiones requiere ley ordinaria.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2019-4447",
+       "titulo": "STC 32/2019, de 28 de febrero (Ley 5/2018), BOE"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-76",
+       "titulo": "Ley Orgánica 1/2025, de medidas en materia de eficiencia del Servicio Público de Justicia (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2000-323",
+       "titulo": "Ley 1/2000, de Enjuiciamiento Civil (texto consolidado, BOE), art. 441"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+       "titulo": "Real Decreto-ley 29/2026, de 6 de octubre, de protección de la función social de la vivienda (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "no_verificable",
+     "texto": "El compromiso no define el instrumento. Si fuera solo procesal no tendría un coste directo relevante, pero acortar los plazos puede exigir más medios judiciales o policiales y la atención de los ocupantes vulnerables (el Real Decreto-ley 29/2026 obliga a la Administración a ofrecer alternativa habitacional o pagar la deuda solo en los desahucios por impago de inquilinos vulnerables, art. 5, no en las ocupaciones sin título), y la coalición no lo cuantifica. No hemos localizado una cifra oficial de viviendas ocupadas que permita estimarlo.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+       "titulo": "Real Decreto-ley 29/2026, de 6 de octubre, de protección de la función social de la vivienda (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://upn-pp.es/",
+       "titulo": "Coalición UPN-PP (13-11-2026): lista de «Compromisos» de su web electoral, upn-pp.es"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "no_verificable",
+     "texto": "No hemos localizado evaluaciones del efecto de los procedimientos rápidos de desalojo de ocupantes, ni de la Ley 5/2018 ni del juicio rápido introducido por la LO 1/2025, sobre el número de ocupaciones o su duración. Sin ellas no se puede valorar si la medida alcanzaría su objetivo.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/eli/es/l/2018/06/11/5",
+       "titulo": "Ley 5/2018, de 11 de junio, de modificación de la LEC en relación con la ocupación ilegal de viviendas (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-76",
+       "titulo": "Ley Orgánica 1/2025, de medidas en materia de eficiencia del Servicio Público de Justicia (BOE)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Francia (Ley 2023-668) extendió a cualquier vivienda, y no solo al domicilio del demandante, el procedimiento en el que el prefecto decide en 48 horas el requerimiento de desalojo, con un plazo de ejecución de al menos 24 horas; Inglaterra y Gales castigan desde 2012 la ocupación de edificios residenciales. En los Países Bajos, una evaluación del WODC de 2026 citada por prensa especializada concluye que los desalojos penales pasaron de 79 a 37 días de media, con efecto limitado en la práctica.",
+     "fuentes": [
+      {
+       "url": "https://www.anil.org/aj-occupation-illicite-logement/",
+       "titulo": "ANIL (Francia): Ley 2023-668 contra la ocupación ilícita de viviendas"
+      },
+      {
+       "url": "https://www.legislation.gov.uk/ukpga/2012/10/section/144",
+       "titulo": "Legal Aid, Sentencing and Punishment of Offenders Act 2012, sección 144 (Reino Unido)"
+      },
+      {
+       "url": "https://omgevingsweb.nl/beleid/evaluatie-kraakverbod-handhaving-sneller-maar-effect-op-leefomgevingspraktijk-beperkt/",
+       "titulo": "Omgevingsweb (2026): evaluación del WODC de la ley neerlandesa de aplicación de la prohibición de ocupar"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "La Ley 5/2018 creó un procedimiento civil en el que los ocupantes tienen cinco días para aportar título antes de que el juez ordene el desalojo, y la LO 1/2025 llevó el allanamiento y la usurpación a los juicios rápidos desde abril de 2025. En 2025 se registraron 1.845 juicios verbales posesorios por ocupación de vivienda; el último dato de duración publicado (2023, anterior a la LO 1/2025) es de 12 meses en primera instancia. No hemos localizado una evaluación de los plazos reales de desalojo con ninguna de las dos reformas.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/eli/es/l/2018/06/11/5",
+       "titulo": "Ley 5/2018, de 11 de junio, de modificación de la LEC en relación con la ocupación ilegal de viviendas (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-76",
+       "titulo": "Ley Orgánica 1/2025, de medidas en materia de eficiencia del Servicio Público de Justicia (BOE)"
+      },
+      {
+       "url": "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/En-Portada/Las-ejecuciones-hipotecarias-y-los-concursos-registrados-en-los-organos-judiciales-crecieron-en-2025-un-30---respecto-al-ano-anterior",
+       "titulo": "CGPJ (20-3-2026): efectos de la crisis en los órganos judiciales, datos de 2025 (lanzamientos y juicios por ocupación)"
+      },
+      {
+       "url": "https://www.poderjudicial.es/cgpj/es/Temas/Transparencia/ch.Estimacion-de-los-tiempos-medios-de-duracion-de-los-procedimientos-judiciales.formato1/?idOrg=20&anio=2023&territorio=Espa%C3%B1a&proc=Asuntos%20civiles",
+       "titulo": "CGPJ, estimación de los tiempos medios de duración de los procedimientos civiles, 2023"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a los propietarios de viviendas ocupadas. No hemos localizado una cifra oficial de viviendas ocupadas: como referencia, en 2025 se registraron 1.845 juicios verbales posesorios por ocupación ilegal de viviendas (CGPJ), e Interior contabilizó 14.875 hechos conocidos de allanamiento o usurpación de inmuebles, no todos viviendas, según la OCU. El coste para los ocupantes y para las administraciones que atiendan a los hogares vulnerables no está cuantificado.",
+     "fuentes": [
+      {
+       "url": "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/En-Portada/Las-ejecuciones-hipotecarias-y-los-concursos-registrados-en-los-organos-judiciales-crecieron-en-2025-un-30---respecto-al-ano-anterior",
+       "titulo": "CGPJ (20-3-2026): efectos de la crisis en los órganos judiciales, datos de 2025 (lanzamientos y juicios por ocupación)"
+      },
+      {
+       "url": "https://www.ocu.org/fincas-y-casas/gestion/alquiler/analisis/2026/09/desahucios-cifras-consejos",
+       "titulo": "OCU (28-9-2026): desahucios y ocupaciones, cifras del Ministerio del Interior y de la AEAT"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Acortar la recuperación de la vivienda puede reducir el riesgo percibido por los propietarios. Como riesgo, la STC 32/2019 recuerda que el desalojo de personas vulnerables debe comunicarse, con su consentimiento, a los servicios sociales. No hemos localizado estudios sobre estos efectos.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2019-4447",
+       "titulo": "STC 32/2019, de 28 de febrero (Ley 5/2018), BOE"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "upn-08",
+   "compromiso": "upn-c09",
+   "compromisos_relacionados": [],
+   "titulo": "Contratación en origen y homologación de títulos en seis meses",
+   "area": "inmigración",
+   "resumen": "Contratación de trabajadores extranjeros en sus países de origen y homologación de títulos extranjeros en seis meses.",
+   "cita": "Contratación en origen y títulos homologados en 6 meses.",
+   "cita_traduccion": null,
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de su web electoral, documento conjunto de la coalición que firma UPN)",
+   "formato": "documento oficial (web de campaña de la coalición)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "medio": "Coalición UPN-PP (web oficial de campaña, upn-pp.es)",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "beneficiarios": "Quienes piden homologar un título universitario extranjero (unas 29.000 solicitudes al año y 80.648 pendientes a 30-6-2025, según el Tribunal de Cuentas) y las empresas, sobre todo agrícolas, que contratan en origen (25.767 trabajadores de temporada en programas de migración circular en 2025). Los solicitantes pagan una tasa de 166,50 euros; no se sabe quién pagaría el personal adicional necesario para cumplir el plazo.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "La coalición promete que los títulos extranjeros se homologuen en 6 meses, que ya es el plazo máximo legal para los títulos universitarios (desde 2014; el Real Decreto 889/2022 lo mantuvo), sin decir cómo lo conseguiría (más personal, otro procedimiento), a qué títulos se aplicaría ni con qué coste. Sobre la contratación en origen no dice qué cambiaría respecto al sistema actual.",
+     "fuentes": [
+      {
+       "url": "https://upn-pp.es/",
+       "titulo": "Coalición UPN-PP (13-11-2026): lista de «Compromisos» de su web electoral, upn-pp.es"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-17045",
+       "titulo": "Real Decreto 889/2022, homologación y equivalencia de enseñanzas universitarias extranjeras (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12098",
+       "titulo": "Real Decreto 967/2014, homologación y equivalencia de títulos universitarios extranjeros (BOE, derogado), art. 14"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "La homologación de títulos es competencia exclusiva del Estado (art. 149.1.30.ª de la Constitución) y el Real Decreto 889/2022 ya fija un plazo máximo de 6 meses para resolver; si no se resuelve, la solicitud se puede entender desestimada (silencio negativo, que fija la Ley 14/2000). Cambiar el procedimiento o acortar el plazo solo requiere un real decreto. La contratación en origen se regula en el art. 39 de la Ley de Extranjería, en su Reglamento (Real Decreto 1155/2024, en vigor desde el 20-5-2025) y en una orden anual (para 2026, la Orden ISM/1547/2025). El reconocimiento profesional de ciudadanos de la UE es otro procedimiento (Real Decreto 581/2017), y los títulos no universitarios tienen un plazo de 3 meses (Real Decreto 104/1988).",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-17045",
+       "titulo": "Real Decreto 889/2022, homologación y equivalencia de enseñanzas universitarias extranjeras (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-24099",
+       "titulo": "Real Decreto 1155/2024, Reglamento de la Ley Orgánica 4/2000 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/o/2025/12/23/ism1547",
+       "titulo": "Orden ISM/1547/2025, gestión colectiva de contrataciones en origen para 2026 (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-6586",
+       "titulo": "Real Decreto 581/2017, reconocimiento de cualificaciones profesionales (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1988-3987",
+       "titulo": "Real Decreto 104/1988, homologación de títulos y estudios extranjeros de educación no universitaria (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "Según el Tribunal de Cuentas, en 2024 la homologación tuvo unos 3,1 M€ de costes directos estimados, frente a unos 3,7 M€ de ingresos estimados por la tasa de 166,50 euros por solicitud (con los costes indirectos, el coste real podría igualar o superar lo recaudado); para cumplir el plazo de 6 meses calculó que harían falta 107 personas en lugar de las 91 de media. La orden de contratación en origen para 2026 dice que no aumenta el gasto público. El compromiso no dice cuánto costaría ni cómo se pagaría.",
+     "fuentes": [
+      {
+       "url": "https://www.congreso.es/docu/inf_fiscTC/LegXV/251-189.pdf",
+       "titulo": "Tribunal de Cuentas (27-11-2025): Informe de fiscalización n.º 1.650 sobre el procedimiento de homologación de enseñanzas universitarias extranjeras"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/o/2025/12/23/ism1547",
+       "titulo": "Orden ISM/1547/2025, gestión colectiva de contrataciones en origen para 2026 (BOE)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Un estudio con datos alemanes (Brücker y otros, 2021) halla que, tres años después de obtener el reconocimiento de su título, los inmigrantes tienen 24,5 puntos más de probabilidad de estar empleados y salarios un 19,8 % más altos. Fijar un plazo no basta por sí solo: en España el plazo legal de 6 meses ya existía y en 2024 la media de resolución de los expedientes resueltos fue de 212 días, sin contar los que seguían pendientes, según el Tribunal de Cuentas, que lo relaciona con la falta de personal. La evaluación del programa de temporeros de Nueva Zelanda halló más ingresos y ahorro en los hogares de los trabajadores.",
+     "fuentes": [
+      {
+       "url": "https://econpapers.repec.org/RePEc:ucp:jlabec:doi:10.1086/710702",
+       "titulo": "Brücker, Glitz, Lerche y Romiti (2021), Occupational Recognition and Immigrant Labor Market Outcomes, Journal of Labor Economics 39(2)"
+      },
+      {
+       "url": "https://www.congreso.es/docu/inf_fiscTC/LegXV/251-189.pdf",
+       "titulo": "Tribunal de Cuentas (27-11-2025): Informe de fiscalización n.º 1.650 sobre el procedimiento de homologación de enseñanzas universitarias extranjeras"
+      },
+      {
+       "url": "https://econpapers.repec.org/RePEc:tpr:restat:v:96:y:2014:i:2:p:229-243",
+       "titulo": "Gibson y McKenzie (2014), The Development Impact of a Best Practice Seasonal Worker Policy, Review of Economics and Statistics 96(2)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12098",
+       "titulo": "Real Decreto 967/2014, homologación y equivalencia de títulos universitarios extranjeros (BOE, derogado), art. 14"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Alemania obliga desde 2012 a decidir sobre el reconocimiento de un título extranjero en 3 meses desde que la documentación está completa; un documento de trabajo de 2024, no publicado en revista, halla tras la reforma un 15 % más de inmigrantes de fuera de la UE con título reconocido y más empleo en profesiones reguladas, sin efecto en los salarios de los nativos, pero evalúa la ley en su conjunto, no el plazo. El programa de temporeros de Nueva Zelanda aumentó los ingresos y el ahorro de los hogares de los trabajadores, según su evaluación.",
+     "fuentes": [
+      {
+       "url": "https://www.gesetze-im-internet.de/bqfg/__6.html",
+       "titulo": "Ministerio Federal de Justicia de Alemania: Berufsqualifikationsfeststellungsgesetz (BQFG), § 6"
+      },
+      {
+       "url": "https://econpapers.repec.org/RePEc:iza:izadps:dp17444",
+       "titulo": "Anger, Bassetto y Sandner (noviembre de 2024), Lifting Barriers to Skill Transferability, IZA Discussion Paper 17444"
+      },
+      {
+       "url": "https://econpapers.repec.org/RePEc:tpr:restat:v:96:y:2014:i:2:p:229-243",
+       "titulo": "Gibson y McKenzie (2014), The Development Impact of a Best Practice Seasonal Worker Policy, Review of Economics and Statistics 96(2)"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "El plazo de 6 meses rige desde 2014 (Real Decreto 967/2014); el Real Decreto 889/2022 lo mantuvo y suprimió la suspensión de hasta 3 meses por el informe técnico, y en 2024 el Ministerio lanzó un plan de choque; aun así, a 30-6-2025 había 80.648 solicitudes pendientes y la media de resolución de los expedientes de 2024 ya resueltos fue de 212 días (Tribunal de Cuentas), y el Defensor del Pueblo recibió más de 1.000 quejas en 2025. El Ministerio tramita en 2026 un nuevo real decreto que mantiene el plazo de 6 meses. La contratación colectiva en origen funciona desde 2000; en 2025, 25.767 personas trabajaron en sus programas de migración circular (de temporada).",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-17045",
+       "titulo": "Real Decreto 889/2022, homologación y equivalencia de enseñanzas universitarias extranjeras (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.congreso.es/docu/inf_fiscTC/LegXV/251-189.pdf",
+       "titulo": "Tribunal de Cuentas (27-11-2025): Informe de fiscalización n.º 1.650 sobre el procedimiento de homologación de enseñanzas universitarias extranjeras"
+      },
+      {
+       "url": "https://www.defensordelpueblo.es/wp-content/uploads/2026/03/Defensor-del-Pueblo_Informe-anual-2025.pdf",
+       "titulo": "Defensor del Pueblo (marzo de 2026): Informe anual 2025, apdo. 7.2.3"
+      },
+      {
+       "url": "https://www.ciencia.gob.es/Convocatorias/Participacion-Publica/Audiencia-e-informacion-publica/2026/PRD_Reconocimiento_Verificacion_titulos_universitarios_extranjeros.HTML",
+       "titulo": "Ministerio de Ciencia, Innovación y Universidades (2026): audiencia pública del proyecto de real decreto de reconocimiento de titulaciones universitarias extranjeras"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2026/250626-programas-migracion-circular.aspx",
+       "titulo": "La Moncloa (25-6-2026): más de 25.000 personas de 17 países trabajaron en España en 2025 a través de los programas de migración circular"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2025/301225-contratacion-extranjeros-origen.aspx",
+       "titulo": "La Moncloa (30-12-2025): el Gobierno aprueba la Orden GECCO 2026"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12098",
+       "titulo": "Real Decreto 967/2014, homologación y equivalencia de títulos universitarios extranjeros (BOE, derogado), art. 14"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Se beneficiarían quienes piden homologar un título universitario extranjero: unas 29.000 solicitudes al año y 80.648 pendientes a 30-6-2025, según el Tribunal de Cuentas (con datos del Ministerio, el Defensor del Pueblo estima unos 100.000 pendientes, contando las equivalencias). En España, el 52,3 % de los trabajadores de 20 a 64 años de fuera de la UE con estudios superiores ocupa empleos por debajo de su formación, frente al 32,7 % de los españoles (Eurostat, 2025). La contratación en origen afecta a empresas, sobre todo agrícolas, y a los 25.767 trabajadores de temporada de sus programas de migración circular (2025), el 92 % mujeres. No se sabe quién pagaría el personal adicional.",
+     "fuentes": [
+      {
+       "url": "https://www.congreso.es/docu/inf_fiscTC/LegXV/251-189.pdf",
+       "titulo": "Tribunal de Cuentas (27-11-2025): Informe de fiscalización n.º 1.650 sobre el procedimiento de homologación de enseñanzas universitarias extranjeras"
+      },
+      {
+       "url": "https://www.defensordelpueblo.es/wp-content/uploads/2026/03/Defensor-del-Pueblo_Informe-anual-2025.pdf",
+       "titulo": "Defensor del Pueblo (marzo de 2026): Informe anual 2025, apdo. 7.2.3"
+      },
+      {
+       "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_eoqgan?geo=ES&sex=T&age=Y20-64&citizen=NEU27_2020_FOR&citizen=NAT&time=2025&lang=EN",
+       "titulo": "Eurostat (actualizado 30-10-2026): Over-qualification rates by citizenship (lfsa_eoqgan), España, 20-64 años, 2025"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2025/301225-contratacion-extranjeros-origen.aspx",
+       "titulo": "La Moncloa (30-12-2025): el Gobierno aprueba la Orden GECCO 2026"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2026/250626-programas-migracion-circular.aspx",
+       "titulo": "La Moncloa (25-6-2026): más de 25.000 personas de 17 países trabajaron en España en 2025 a través de los programas de migración circular"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Con los años, el reconocimiento de títulos se asocia a que los salarios de los inmigrantes se acerquen a los de los nativos (Brücker y otros, 2021). El riesgo documentado en España es que el plazo no se cumpla sin medios: el Defensor del Pueblo señala que el atasco provoca errores en la tramitación. Las autorizaciones de migración circular (de temporada) duran cuatro años, con un máximo de nueve meses de trabajo al año y obligación de volver al país de origen; no hemos localizado evaluaciones públicas de sus efectos a largo plazo en España.",
+     "fuentes": [
+      {
+       "url": "https://econpapers.repec.org/RePEc:ucp:jlabec:doi:10.1086/710702",
+       "titulo": "Brücker, Glitz, Lerche y Romiti (2021), Occupational Recognition and Immigrant Labor Market Outcomes, Journal of Labor Economics 39(2)"
+      },
+      {
+       "url": "https://www.defensordelpueblo.es/wp-content/uploads/2026/03/Defensor-del-Pueblo_Informe-anual-2025.pdf",
+       "titulo": "Defensor del Pueblo (marzo de 2026): Informe anual 2025, apdo. 7.2.3"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/o/2025/12/23/ism1547",
+       "titulo": "Orden ISM/1547/2025, gestión colectiva de contrataciones en origen para 2026 (BOE)"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "upn-09",
+   "compromiso": "upn-c10",
+   "compromisos_relacionados": [],
+   "titulo": "Autónomos: cuota cero dos años y sin IVA hasta 85.000 euros",
+   "area": "empleo",
+   "resumen": "Para los autónomos: cuota cero a la Seguridad Social los dos primeros años, exención del IVA hasta 85.000 euros de facturación y mayor cobertura social.",
+   "cita": "Autónomos: cuota cero los dos primeros años, sin IVA hasta 85.000€ de facturación y mayor cobertura social.",
+   "cita_traduccion": null,
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de su web electoral, documento conjunto de la coalición que firma UPN)",
+   "formato": "documento oficial (web de campaña de la coalición)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "medio": "Coalición UPN-PP (web oficial de campaña, upn-pp.es)",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "beneficiarios": "Los nuevos autónomos (unos 600.000 beneficiarios de la tarifa plana en 2018, según la AIReF) y los autónomos que facturan menos de 85.000 euros a los que compense acogerse a la franquicia, sin cifra oficial (entre 400.000 y 770.000 según las asociaciones UPTA y ATA). Pagaría el Estado, mediante transferencias a la Seguridad Social, y la recaudación del IVA, compartida al 50 % con las comunidades de régimen común.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "La lista de la coalición fija la duración de la cuota cero (dos años) y el límite de facturación para no aplicar IVA (85.000 €), pero no dice desde cuándo ni si la cuota cero es solo para quien inicia una actividad. La «mayor cobertura social» no se concreta.",
+     "fuentes": [
+      {
+       "url": "https://upn-pp.es/",
+       "titulo": "Coalición UPN-PP (13-11-2026): lista de «Compromisos» de su web electoral, upn-pp.es"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "La Directiva (UE) 2020/285 permite, desde el 1-1-2025, que cada Estado exima del IVA a las pequeñas empresas cuyo volumen de negocios anual no supere un umbral nacional de, como máximo, 85.000 €: la cifra propuesta es ese máximo. Habría que modificar por ley la Ley 37/1992 del IVA, que hoy no recoge esa franquicia; en Navarra la Hacienda Foral exige el IVA a una parte de los contribuyentes (art. 33 del Convenio Económico), con las mismas normas sustantivas y formales que el Estado (art. 32). La cuota cero del primer año podría fijarse en la Ley de Presupuestos (art. 38 ter.1 del Estatuto del Trabajo Autónomo), pero extenderla a todos en el segundo año exigiría reformar el art. 38 ter.2, que limita esa prórroga a quienes ganan menos del salario mínimo; ambas cosas, por ley ordinaria.",
+     "fuentes": [
+      {
+       "url": "http://publications.europa.eu/resource/cellar/95e6b981-5c56-11ea-8b81-01aa75ed71a1.0023.03/DOC_1",
+       "titulo": "Diario Oficial de la UE (2-3-2020): Directiva (UE) 2020/285 del Consejo, régimen especial de las pequeñas empresas (texto en español, Oficina de Publicaciones)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+       "titulo": "Ley 37/1992, del Impuesto sobre el Valor Añadido (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117",
+       "titulo": "Ley 28/1990, por la que se aprueba el Convenio Económico entre el Estado y la Comunidad Foral de Navarra (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409",
+       "titulo": "Ley 20/2007, del Estatuto del Trabajo Autónomo (texto consolidado, BOE), art. 38 ter"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "Los nuevos autónomos tienen una cuota reducida de 80 € al mes el primer año y otros 12 meses si sus rendimientos son inferiores al salario mínimo (cuantía fijada para 2023-2025; desde 2026 debe fijarla la Ley de Presupuestos, que no se ha aprobado); quienes los superan pagan en el segundo año la cuota ordinaria, de al menos unos 300 € al mes en 2026 (cálculo propio: base mínima de 960,78 € por un tipo del 31,5 %). Con los 600.000 beneficiarios de la tarifa plana que contó la AIReF en 2018, eliminar 80 € al mes costaría como máximo unos 576 M€ al año si todos estuvieran acogidos los 12 meses (cálculo propio, cota superior), más lo que dejarían de pagar en el segundo año quienes superan el salario mínimo. Para la franquicia del IVA no hay estimación oficial; la asociación ATA calcula una menor recaudación de entre 625 y 650 M€ al año. La coalición no explica cómo se financiaría.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-12482",
+       "titulo": "Real Decreto-ley 13/2022, nuevo sistema de cotización de los autónomos (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296",
+       "titulo": "Orden PJC/297/2026, normas de cotización a la Seguridad Social para 2026 (BOE)"
+      },
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2022/01/CORRECION-ENLACES/PDF-Web-Incentivos-a-la-contratacion-3.pdf",
+       "titulo": "AIReF, Spending Review (fase II): Estudio Incentivos a la contratación y al trabajo autónomo (octubre de 2020)"
+      },
+      {
+       "url": "https://www.bolsamania.com/noticias/economia/economia--ata-estima-que-los-autonomos-se-ahorrarian-500-millones-de-euros-anuales-con-el-sistema-de-iva-franquiciado--21529017.html",
+       "titulo": "Europa Press, vía Bolsamanía (21-1-2026): ATA estima el ahorro y el coste del IVA franquiciado"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "La AIReF (2020) concluyó que la tarifa plana fomenta el emprendimiento solo en personas con formación media-alta que llevaban poco tiempo en paro, y que mejora la supervivencia de los negocios mientras dura, pero luego se iguala con la de los no beneficiarios. En el Reino Unido, Liu y otros (2021) observaron muchas empresas que mantienen su facturación justo por debajo del umbral del IVA; en Finlandia, Harju y otros (2019) atribuyen esa reacción sobre todo a los costes de cumplir con el IVA.",
+     "fuentes": [
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2022/01/CORRECION-ENLACES/PDF-Web-Incentivos-a-la-contratacion-3.pdf",
+       "titulo": "AIReF, Spending Review (fase II): Estudio Incentivos a la contratación y al trabajo autónomo (octubre de 2020)"
+      },
+      {
+       "url": "https://ideas.repec.org/a/tpr/restat/v103y2021i1p151-164.html",
+       "titulo": "Liu, Lockwood, Almunia y Tam (2021), VAT Notches, Voluntary Registration, and Bunching: Theory and U.K. Evidence, Review of Economics and Statistics 103(1)"
+      },
+      {
+       "url": "https://ideas.repec.org/a/eee/pubeco/v173y2019icp139-164.html",
+       "titulo": "Harju, Matikka y Rauhanen (2019), Compliance costs vs. tax incentives, Journal of Public Economics 173"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Según la Comisión Europea, los umbrales nacionales de franquicia del IVA varían: 85.000 € en Italia, 85.000 € para bienes y 37.500 € para servicios en Francia, 55.000 € en Austria, 25.000 € en Alemania y 20.000 € en Finlandia; las evaluaciones del Reino Unido y Finlandia muestran empresas que se quedan justo por debajo del umbral. Alemania subvencionó la creación de empresas por desempleados con efectos positivos (Caliendo y Künn, 2011), un diseño distinto; no hemos localizado evaluaciones de una cuota cero de dos años para todos los nuevos autónomos.",
+     "fuentes": [
+      {
+       "url": "https://sme-vat-rules.ec.europa.eu/national-vat-rules/italy-sme-rules_en",
+       "titulo": "Comisión Europea, portal VAT rules for small enterprises (consultado 14-11-2026): Italia"
+      },
+      {
+       "url": "https://sme-vat-rules.ec.europa.eu/national-vat-rules/france-sme-rules_en",
+       "titulo": "Comisión Europea, portal VAT rules for small enterprises (consultado 14-11-2026): Francia"
+      },
+      {
+       "url": "https://sme-vat-rules.ec.europa.eu/national-vat-rules/austria-sme-rules_en",
+       "titulo": "Comisión Europea, portal VAT rules for small enterprises (consultado 14-11-2026): Austria"
+      },
+      {
+       "url": "https://sme-vat-rules.ec.europa.eu/national-vat-rules/germany-sme-rules_en",
+       "titulo": "Comisión Europea, portal VAT rules for small enterprises (consultado 14-11-2026): Alemania"
+      },
+      {
+       "url": "https://sme-vat-rules.ec.europa.eu/national-vat-rules/finland-sme-rules_en",
+       "titulo": "Comisión Europea, portal VAT rules for small enterprises (consultado 14-11-2026): Finlandia"
+      },
+      {
+       "url": "https://ideas.repec.org/a/tpr/restat/v103y2021i1p151-164.html",
+       "titulo": "Liu, Lockwood, Almunia y Tam (2021), VAT Notches, Voluntary Registration, and Bunching: Theory and U.K. Evidence, Review of Economics and Statistics 103(1)"
+      },
+      {
+       "url": "https://ideas.repec.org/a/eee/pubeco/v95y2011i3p311-331.html",
+       "titulo": "Caliendo y Künn (2011), Start-up subsidies for the unemployed: Long-term evidence and effect heterogeneity, Journal of Public Economics 95(3)"
+      },
+      {
+       "url": "https://ideas.repec.org/a/eee/pubeco/v173y2019icp139-164.html",
+       "titulo": "Harju, Matikka y Rauhanen (2019), Compliance costs vs. tax incentives: Why do entrepreneurs respond to size-based regulations?, Journal of Public Economics 173"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "Desde 2013 los nuevos autónomos tienen una cuota reducida, de 80 € al mes en 2023-2025 (desde 2026 debe fijarla la Ley de Presupuestos), durante 12 meses, ampliables otros 12 si sus rendimientos son inferiores al salario mínimo; la Comunidad de Madrid reembolsa esa cuota con su «Tarifa Cero». España no aplica la franquicia del IVA, que es opcional, y ha indicado que no la aplicará; aun así, el 11-3-2026 la Comisión Europea decidió llevarla ante el Tribunal de Justicia de la UE por no transponer la directiva, que también obliga a permitir que las pequeñas empresas españolas se acojan a la franquicia en otros Estados miembros.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409",
+       "titulo": "Ley 20/2007, del Estatuto del Trabajo Autónomo (texto consolidado, BOE), art. 38 ter"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-12482",
+       "titulo": "Real Decreto-ley 13/2022, nuevo sistema de cotización de los autónomos (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2024/06/11/BOCM-20240611-15.PDF",
+       "titulo": "BOCM (11-6-2024): Acuerdo de 29 de mayo de 2024 que modifica las ayudas de Tarifa Cero de la Comunidad de Madrid"
+      },
+      {
+       "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_26_442/IP_26_442_EN.pdf",
+       "titulo": "Comisión Europea (11-3-2026): IP/26/442, la Comisión lleva a España ante el TJUE por no transponer medidas del IVA"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+       "titulo": "Ley 37/1992, del Impuesto sobre el Valor Añadido (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2022/01/CORRECION-ENLACES/PDF-Web-Incentivos-a-la-contratacion-3.pdf",
+       "titulo": "AIReF, Spending Review (fase II): Estudio Incentivos a la contratación y al trabajo autónomo (octubre de 2020)"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "La cuota cero beneficiaría a quienes empiezan como autónomos: la AIReF contó unos 600.000 beneficiarios de la tarifa plana en 2018. La franquicia del IVA beneficiaría sobre todo a autónomos que facturan menos de 85.000 € con pocos gastos y clientes particulares, porque los acogidos pierden el derecho a deducir el IVA de sus compras; no hay dato oficial de cuántos son y las asociaciones los estiman entre 400.000 (UPTA) y 770.000 (ATA). Pagaría el Estado, mediante transferencias a la Seguridad Social, y la recaudación del IVA, cuyo 50 % se cede a las comunidades de régimen común.",
+     "fuentes": [
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2022/01/CORRECION-ENLACES/PDF-Web-Incentivos-a-la-contratacion-3.pdf",
+       "titulo": "AIReF, Spending Review (fase II): Estudio Incentivos a la contratación y al trabajo autónomo (octubre de 2020)"
+      },
+      {
+       "url": "https://www.bolsamania.com/noticias/economia/economia--ata-estima-que-los-autonomos-se-ahorrarian-500-millones-de-euros-anuales-con-el-sistema-de-iva-franquiciado--21529017.html",
+       "titulo": "Europa Press, vía Bolsamanía (21-1-2026): ATA estima el ahorro y el coste del IVA franquiciado"
+      },
+      {
+       "url": "https://www.bolsamania.com/noticias_amp/economia/economia--upta-cifra-en-400000-autonomos-los-que-podrian-acogerse-al-iva-franquiciado-pero-avisa-de-sus-riesgos--22191990.html",
+       "titulo": "Europa Press, vía Bolsamanía (27-3-2026): UPTA cifra en 400.000 los autónomos que podrían acogerse al IVA franquiciado"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-20375",
+       "titulo": "Ley 22/2009, sistema de financiación de las comunidades autónomas de régimen común (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://ideas.repec.org/a/tpr/restat/v103y2021i1p151-164.html",
+       "titulo": "Liu, Lockwood, Almunia y Tam (2021), VAT notches, voluntary registration, and bunching: theory and UK evidence, Review of Economics and Statistics 103(1)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409",
+       "titulo": "Ley 20/2007, del Estatuto del Trabajo Autónomo (texto consolidado, BOE), art. 38 ter.12"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Según la AIReF, el efecto de la cuota reducida sobre la supervivencia de los negocios desaparece al acabar. El umbral del IVA puede llevar a algunos autónomos a no facturar más de 85.000 €, como se ha observado en el Reino Unido. Durante la cuota reducida las prestaciones se calculan sobre la base mínima del tramo inferior; mejorar la cobertura social sin cotizar trasladaría su coste al Estado, y el texto no explica cómo.",
+     "fuentes": [
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2022/01/CORRECION-ENLACES/PDF-Web-Incentivos-a-la-contratacion-3.pdf",
+       "titulo": "AIReF, Spending Review (fase II): Estudio Incentivos a la contratación y al trabajo autónomo (octubre de 2020)"
+      },
+      {
+       "url": "https://ideas.repec.org/a/tpr/restat/v103y2021i1p151-164.html",
+       "titulo": "Liu, Lockwood, Almunia y Tam (2021), VAT Notches, Voluntary Registration, and Bunching: Theory and U.K. Evidence, Review of Economics and Statistics 103(1)"
+      },
+      {
+       "url": "https://www.bolsamania.com/noticias_amp/economia/economia--upta-cifra-en-400000-autonomos-los-que-podrian-acogerse-al-iva-franquiciado-pero-avisa-de-sus-riesgos--22191990.html",
+       "titulo": "Europa Press, vía Bolsamanía (27-3-2026): UPTA cifra en 400.000 los autónomos que podrían acogerse al IVA franquiciado"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409",
+       "titulo": "Ley 20/2007, del Estatuto del Trabajo Autónomo (texto consolidado, BOE), art. 38 ter"
       }
      ]
     }

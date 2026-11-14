@@ -1,11 +1,34 @@
 {
  "aprobado": true,
  "revisor": "Claude (Anthropic), pasada independiente",
- "fecha": "2026-11-12",
+ "fecha": "2026-11-14",
  "base": "compromisos",
  "alcance": "3 compromisos (y 8 descartes) y 3 prioridades × 8 criterios. Se abrieron con una petición normal las 27 URL citadas en seleccion.json y evaluacion.json y las 2 fuentes añadidas (Tribunal de Cuentas Europeo y art. 108 de la Ley Fundamental): todas respondieron 200, incluidas las dos de Noticias de Navarra. Se comprobaron en fuente primaria: el texto del acuerdo (notas de UPN del 13-10-2026, idénticas en los tres puntos), la Constitución (art. 167, DA 1.ª y DT 4.ª), la LORAFNA (arts. 45 y 71, DA 2.ª y reformas de 2001, 2010 y 2024), la LOFCA (DA 2.ª), la Ley 28/1990 (aportación quinquenal y reformas de 2003, 2007, 2015, 2022, 2023 y 2025), el INE (683.854 habitantes a 1-1-2025, tabla 56940), Fedea (ocho comunidades con superávit en 2025; solo Navarra y el País Vasco mejoran su saldo), el MITECO (373.731.170 €, 20.214 ha, 48 meses, más de 22.000 ha en la primera fase), Aena (233.528 pasajeros en 2025), la AIReF (2.526 M€ para Zaragoza-Pamplona-Y vasca e infravaloración de al menos el 30 %), el comisionado del TAV (1.500-1.600 M€; 50 %, 30 % y 20 %; más de 2.000 alegaciones), el BEI, el BOE-B-2026-34264 y La Moncloa (29-12-2022). Citas: las 3 coinciden con su copia local (verify_quotes: 0 no encontradas).",
  "seleccion": "El acuerdo de coalición es un documento oficial: consta en dos notas de UPN del 13-10-2026, el principio de acuerdo y su aprobación por el Consejo Político con el 93,5 % de apoyo. Ambas son posteriores a la convocatoria, se refieren a estas elecciones y su texto es el mismo. Es una nota de UPN que resume el acuerdo (no se publicó el texto íntegro). Se admite como documento oficial con quien = UPN y PP, porque recoge los compromisos de «ambas formaciones». Es correcto que sean las prioridades: son los únicos compromisos concretos y el partido los presenta como el contenido programático del pacto. No es exacto que la candidatura los «repitiera» al presentar la campaña. El 10-11, Esparza anunció la supresión de la DT 4.ª (OKDiario Navarra, en estilo indirecto, con su justificación literal) y Sayas (PP) aludió al Canal y al TAV. El blindaje foral y el Convenio no se mencionaron, y en el inicio de campaña del 12-11 (Europa Press) no se repitió ninguna medida. Se corrigen la nota y el recuento de upn-c02. Feijóo no cuenta para UPN: es del PP (regla del 13-11-2026, véase «reatribucion_2026-11-13»). Los descartes son correctos: la escuela de 0-3 años no se halló en ninguna fuente legible, tampoco en una búsqueda nueva.",
  "igual_estandar": "upn-01 (reforma constitucional por el art. 167, sin dudas de procedimiento): encaje legal «favorable», como psoe-02. psoe-04 y psc-03 son «mixta» por la duda entre los arts. 167 y 168, que aquí no existe. upn-02 se comparó con pnv-11 («bilateralidad con garantías frente a cambios unilaterales»), que tiene concreción «desfavorable» y encaje legal «mixta». La concreción ya era «desfavorable». El encaje legal pasa a «mixta» por la regla de la auditoría de coherencia del 12-11: «mixta» para las medidas con una parte viable y otra de diseño no definido. upn-02, internacional, pasa a «mixta» por la regla de bng-01: la gestión tributaria de los Länder (art. 108 de la Ley Fundamental) es una aplicación parcial comparable del mismo modelo. upn-03 se comparó con pnv-04 (Y vasca). Internacional pasa a «mixta» con el informe del Tribunal de Cuentas Europeo de 2018, como en pnv-04. Encaje legal, financiación y evidencia coinciden. Beneficiarios es «mixta» frente a «favorable» en pnv-04, porque aquí no hay cifra de beneficiarios del tren ni de coste del aeropuerto y de la red eléctrica.",
+ "revision_2026-11-14": {
+  "alcance": "Revisión independiente (prompt 4, «Partidos sin programa») de la integración de la lista de «Compromisos» de upn-pp.es: selección (upn-c01 a upn-c10, 14 descartes nuevos) y evaluación de upn-04 a upn-09 y de la ampliación de upn-03 (Yesa y A-15), criterio a criterio. Se abrió upn-pp.es con una petición normal el 14-11: las siete citas nuevas y las de las ocasiones de upn-c01 y upn-c02 son literales y coinciden con la copia local (SHA-256 f6a39276…); la API de WordPress confirma la página 14 («upn-pp», creada el 10-11-2026 y modificada el 13-11-2026), y el aviso legal de la web es de Unión del Pueblo Navarro, que la publica. Se leyeron con peticiones normales todas las fuentes citadas en upn-04 a upn-09 y las frases nuevas de upn-03 (BOE, Sanidad, Tribunal de Cuentas, Defensor del Pueblo, AIReF, Seguridad Social, Informe de Progreso 2026, IEF, Comisión Europea, ANIL, omgevingsweb, CGPJ, OCU, MITECO, CHE, Gobierno de Navarra, Congreso y artículos académicos); iagua (429) y Water Power Magazine (403) se leyeron con otra petición web normal. Se comprobaron además el Real Decreto 967/2014, la Orden PJC/297/2026 (bases y tipos de 2026), el Concierto Económico vasco y la DIA de Yesa de 2010. 48 cambios de texto en la evaluación y uno en la selección; ninguna valoración cambia.",
+  "seleccion": "Los seis compromisos nuevos y upn-c04 salen literalmente de la web de la coalición, documento conjunto que publica UPN y que cuenta para UPN (2_codificacion_posiciones.md, «Documentos conjuntos»); ninguno depende de un dirigente del PP (la frase de Carmen Alba sobre los okupas sigue descartada y solo cuenta la lista). Corte entre medida y objetivo: entra un punto cuando nombra el instrumento o la regla que se cambiaría, aunque no la cuantifique; queda fuera cuando solo nombra el resultado deseado. «Más plazas MIR» nombra el instrumento (la oferta anual que aprueba el Ministerio por orden, art. 22 de la Ley 44/2003), como «seguir subiendo el salario mínimo» (upc-c09) o «mejorar las deducciones por alquiler» (upc-c07). «Pensiones que mantengan tu poder adquisitivo» equivale a la revalorización con el IPC, como upc-c08. «Que la inflación no te suba los impuestos» describe la deflactación: el único impuesto que la inflación sube por sí sola en términos reales es el progresivo sobre la renta; la nota de upn-c06 dice que la web no nombra el impuesto y la concreción lo refleja. «En dependencia, plazos más cortos», «Menos listas de espera» e «Internet y cobertura en todos los pueblos» solo enuncian el resultado, como los descartes de «quinto pilar» (psc) o «más medios». «Suelo público para vivienda asequible» es el caso límite: nombra un recurso, pero no la actuación (cesión, reserva, derecho de superficie) ni de qué administración es el suelo, que en su mayor parte es municipal o foral (patrimonios públicos de suelo), y ya está ligado por ley a la vivienda protegida; se mantiene descartado con el precedente de las viviendas dotacionales de UPC, y el motivo queda escrito. «Menos trámites para desbloquear las 20.000 viviendas protegidas que esperan en Navarra» se refiere a trámites forales y municipales. Las prioridades se justifican correctamente: hay menos de 12 compromisos concretos y entran todos.",
+  "igual_estandar": "upn-05 frente a pp-10: mismos textos en legal, financiación, evidencia, antecedentes y largo plazo; internacional y beneficiarios son «favorable» en upn-05 y «mixta» en pp-10 porque pp-10 incluye una rebaja a rentas medias y bajas sin definir ni cuantificar, que es lo que la dejaba en «mixta»; upn-05 solo es la deflactación, aplicada y evaluada fuera (Immervoll, 2005) y con beneficiarios y coste cuantificados. upn-07 frente a pp-03, salf-02, vox-08 y junts-08: legal, evidencia, internacional, antecedentes, beneficiarios y largo plazo coinciden; financiación «no_verificable» como pp-03, salf-02 y vox-08, porque la lista no define el instrumento y ninguna fuente documenta que la medida sea solo procesal; junts-08 es «favorable» porque su proposición de ley lo documenta. Se corrige la frase que aplicaba a las ocupaciones la obligación de alternativa habitacional del Real Decreto-ley 29/2026, que solo rige en los desahucios por impago. upn-06 frente a upc-07: mismas valoraciones; se añaden los pensionistas de Clases Pasivas, que upc-07 incluía. upn-09 frente a pp-11: beneficiarios «mixta» frente a «favorable» porque los beneficiarios de la franquicia del IVA solo los estiman dos asociaciones con cifras que casi se duplican (400.000 y 770.000) y no hay estimación oficial; la cuota cero se cuantifica igual que en pp-11. upn-04 (MIR) se comparó con podemos-09, que cita el mismo informe: valoraciones coherentes; financiación «no_verificable» como upc-08 (aumento sin cifra). upn-08 no tiene equivalente aprobado.",
+  "pendientes_resueltos": [
+   "Selección: se mantiene el corte propuesto (véase «seleccion»).",
+   "upn-05: se mantiene; diferencias con pp-10 justificadas por un hecho (véase «igual_estandar»).",
+   "upn-07: financiación «no_verificable» se mantiene, con la frase del Real Decreto-ley 29/2026 corregida.",
+   "upn-08: internacional «mixta» se mantiene: la rúbrica pide para «favorable» evaluaciones que muestren que la medida logró su objetivo, y el documento alemán evalúa la ley entera, no el plazo, y no está publicado en revista.",
+   "upn-03: se corrigen siete frases sobre Yesa y la A-15 (véase «cambios»); sí hay un coste total oficial posterior a 2013 (245,9 M€ en los Presupuestos de 2023).",
+   "upn-09: se corrige el cálculo de la cuota ordinaria (unos 300 €, no 290 €) y se deja de afirmar la cuantía de 2026 de la tarifa plana; las cifras de UPTA y ATA se presentan como estimaciones de quién se acogería.",
+   "podemos-09: corregido en data/programas/podemos/compromisos/revision.json (cambio de revisión; el aprobado se mantiene)."
+  ],
+  "pendiente_revision_original": [
+   "Selección: criterio de corte entre medida concreta y objetivo (entran «Más plazas MIR», «Que la inflación no te suba los impuestos» y «Pensiones que mantengan tu poder adquisitivo», con el precedente de upc-c08 y upc-c09; se descartan «Suelo público para vivienda asequible», «Internet y cobertura en todos los pueblos» y «En dependencia, plazos más cortos»).",
+   "upn-05: se evalúa como deflactación del IRPF aunque la web no nombra el impuesto; internacional y beneficiarios quedan «favorable» (en pp-10 eran «mixta» porque incluía una rebaja sin definir). Comprobar el igual estándar.",
+   "upn-07: financiación «no_verificable» porque la web no define el instrumento (junts-08 tuvo «favorable» con una proposición de ley procesal; pp-03 y vox-08, «no_verificable»).",
+   "upn-08: internacional «mixta» (la evaluación alemana es un documento de trabajo y mide la ley entera, no el plazo); el investigador proponía «favorable».",
+   "upn-03: frases nuevas sobre Yesa y la A-15 con fuentes de la CHE, el MITECO, el Congreso y el Gobierno de Navarra; congreso.es responde 403 a curl (se leyeron con otra petición normal); no hay coste total oficial actualizado de Yesa.",
+   "upn-09: cuantía de la tarifa plana en 2026 sin norma localizada (se dice «fijada para 2023-2025»); cifras de autónomos bajo 85.000 € solo de asociaciones (UPTA, ATA).",
+   "Fuera de este alcance: el investigador del MIR señala que podemos-09 (antecedentes) atribuye al informe del Ministerio que el aumento de plazas MIR se aplicó «con éxito», cuando la conclusión 38 se refiere solo a la jubilación flexible y a la homologación; no se ha tocado."
+  ]
+ },
  "recuento_inicial": {
   "favorable": 6,
   "mixta": 13,
@@ -13,10 +36,10 @@
   "no_verificable": 4
  },
  "recuento_final": {
-  "favorable": 5,
-  "mixta": 16,
+  "favorable": 13,
+  "mixta": 53,
   "desfavorable": 1,
-  "no_verificable": 2
+  "no_verificable": 5
  },
  "cambios": [
   {
@@ -128,14 +151,442 @@
    "despues": "1a8a4a7c13a17d10e5bbb92b0de744c25a06e0a2d458a9773563d6fac0f4c9db",
    "motivo": "Se recalcula tras los cambios en seleccion.json.",
    "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-04",
+   "criterio": "legal",
+   "antes": "a propuesta de las comunidades autónomas y según sus presupuestos",
+   "despues": "atendiendo a las propuestas de las comunidades autónomas, a las necesidades de especialistas y a las disponibilidades presupuestarias",
+   "motivo": "El art. 22.5 de la Ley 44/2003 no habla de «sus presupuestos» (de las comunidades): dice «atendiendo a las propuestas realizadas por las comunidades autónomas, a las necesidades de especialistas del sistema sanitario y a las disponibilidades presupuestarias».",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-04",
+   "criterio": "legal",
+   "antes": "que fija cuántos residentes puede formar (art. 26); en la convocatoria para 2027 el catálogo suma 13.477 plazas acreditadas frente a 12.851 ofertadas en todas las titulaciones (suma propia de las tablas del BOE)",
+   "despues": "que fija cuántos residentes puede formar (arts. 20 y 26); en la convocatoria para 2027 el catálogo de unidades suma 13.477 plazas acreditadas (suma propia) frente a 12.850 ofertadas en todas las titulaciones",
+   "motivo": "El cuadro resumen de la Orden SND/854/2026 (cuadro n.º 1) suma 12.850 plazas ofertadas, como la nota de Sanidad; 12.851 es la suma de las plazas «elegibles» del catálogo (cuadro n.º 3). El 13.477 de plazas acreditadas se confirma con una suma independiente. La obligación de formarse en unidades acreditadas está en el art. 20.2; el art. 26.3 fija el número de plazas.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-04",
+   "criterio": "financiacion",
+   "antes": "un complemento que desde 2027 va del 18 % al 58 % según el año de residencia",
+   "despues": "un complemento que desde 2027 será como mínimo del 18 % al 58 % según el año de residencia",
+   "motivo": "El art. 7.1.b del Real Decreto 1146/2006 (redacción del Real Decreto 951/2026, con efectos de 1-1-2027) fija esos porcentajes como mínimos: «serán, al menos, los siguientes, sin perjuicio de que los servicios de salud puedan acordar un porcentaje superior».",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-04",
+   "criterio": "evidencia",
+   "antes": "que las plazas sobrantes se cubren en parte con médicos formados en el extranjero (16,4 % de los adjudicatarios) y que en medicina de familia «no basta con convocar más plazas MIR» sin otras medidas.",
+   "despues": "que en la convocatoria 2022-23 el 16,4 % de los adjudicatarios de plaza MIR eran extranjeros y que en medicina de familia, para cubrir las plazas que no se ocupan, «no basta con convocar más plazas MIR u homologar más títulos extranjeros» y hace falta un plan de incentivos específico.",
+   "motivo": "El informe (p. 18) dice que el 16,4 % de los adjudicatarios «son extranjeros», no «formados en el extranjero», y no dice que cubran las plazas sobrantes. La cita se completa con la conclusión 53 (p. 147).",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-04",
+   "criterio": "internacional",
+   "antes": "y Países Bajos y Canadá han aumentado también las de medicina de familia, según el informe del Ministerio de Sanidad con datos de la OCDE;",
+   "despues": "en Países Bajos un consejo asesor recomendó asignarle casi la mitad de esas plazas en 2024-2027 (frente al 40 % en 2021), y en Canadá casi el 45 % de las plazas de residencia ocupadas en 2023 fueron de medicina familiar, según el informe del Ministerio de Sanidad con datos de la OCDE;",
+   "motivo": "El informe (p. 24) no dice que Países Bajos y Canadá hayan aumentado esas plazas: recoge una recomendación del consejo asesor neerlandés y la proporción canadiense de 2023. La valoración («mixta», aplicada sin evaluación publicada) no cambia.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-04",
+   "criterio": "antecedentes",
+   "antes": "(un 14 % más)",
+   "despues": "(casi un 14 % más)",
+   "motivo": "El informe dice «casi el 14%» (13,8 %).",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-04",
+   "criterio": "largo_plazo",
+   "antes": "medicina de familia seguiría en déficit hasta 2029 (5.496) y se acercaría al equilibrio en 2035",
+   "despues": "en medicina de familia el déficit crecería hasta 5.496 en 2029 y después bajaría hasta unos 2.100 (menos del 5 %) en 2035",
+   "motivo": "Conclusión 39 del informe: el déficit crece hasta 2029 y después baja, «en torno a la falta de 2.100 médicos de familia en 2035 (menos de un 5% de déficit)»; la redacción anterior sugería que terminaba en 2029.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-05",
+   "criterio": "beneficiarios (campo)",
+   "antes": "no los residentes en Navarra, que tributan por el IRPF foral",
+   "despues": "no los residentes en Navarra ni en el País Vasco, que tributan por el IRPF foral",
+   "motivo": "El IRPF de los residentes en el País Vasco también es foral (Concierto Económico, Ley 12/2002, art. 6), y la cifra del IEF excluye ambos territorios.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-05",
+   "criterio": "beneficiarios",
+   "antes": "los residentes en Navarra tributan por el IRPF foral y no se verían afectados. El coste, del orden del 0,1 % del PIB al año según la recaudación que aportó no deflactar en 2025,",
+   "despues": "los residentes en Navarra y el País Vasco tributan por el IRPF foral y no se verían afectados. El coste, algo más del 0,1 % del PIB según la recaudación que aportó no deflactar en 2025 (2.294 M€),",
+   "motivo": "País Vasco omitido (Concierto Económico, art. 6). El Informe de Progreso 2026 (cuadro 9) da 2.294 M€ (0,14 % del PIB) para un solo año, 2025, por no deflactar «tarifa y mínimos»; no es una cifra anual.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-05",
+   "criterio": "legal",
+   "antes": "por lo que una deflactación estatal no les afectaría.",
+   "despues": "como en el País Vasco el de los suyos (Concierto Económico, art. 6), por lo que una deflactación estatal no les afectaría.",
+   "motivo": "Mismo motivo: el IRPF también es tributo concertado de normativa autónoma en el País Vasco.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-05",
+   "criterio": "financiacion",
+   "antes": "no deflactar la tarifa aportó en 2025 un 0,1 % del PIB de recaudación",
+   "despues": "no deflactar la tarifa y los mínimos aportó en 2025 algo más del 0,1 % del PIB de recaudación (2.294 M€)",
+   "motivo": "El cuadro 9 del Informe de Progreso 2026 se refiere a «tarifa y mínimos» y da 2.294 M€, un 0,14 % del PIB («más de un 0,1%»). La valoración no cambia.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-06",
+   "criterio": "beneficiarios (campo)",
+   "antes": "(10,57 millones de pensiones contributivas en octubre de 2026).",
+   "despues": "(10,57 millones de pensiones contributivas en octubre de 2026) y los 708.267 pensionistas de Clases Pasivas (728.062 pensiones en agosto de 2026).",
+   "motivo": "La lista habla de «pensiones» sin restringirlas a la Seguridad Social; igual estándar con upc-07, que incluye Clases Pasivas con la misma fuente (revista de la Seguridad Social, nómina de octubre de 2026, apartado de Clases Pasivas).",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-06",
+   "criterio": "beneficiarios",
+   "antes": "(10,57 millones de pensiones contributivas, con una pensión media de 1.376,1 € en octubre de 2026).",
+   "despues": "(10,57 millones de pensiones contributivas, con una pensión media de 1.376,1 € en octubre de 2026) y a los 708.267 pensionistas de Clases Pasivas (728.062 pensiones en agosto de 2026).",
+   "motivo": "Mismo motivo (igual estándar con upc-07). La valoración («favorable») no cambia.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-07",
+   "criterio": "financiacion",
+   "antes": "(el Real Decreto-ley 29/2026 obliga a la Administración, en ciertos desahucios de hogares vulnerables, a ofrecer alternativa habitacional)",
+   "despues": "(el Real Decreto-ley 29/2026 obliga a la Administración a ofrecer alternativa habitacional o pagar la deuda solo en los desahucios por impago de inquilinos vulnerables, art. 5, no en las ocupaciones sin título)",
+   "motivo": "La obligación de ofrecer alternativa habitacional del Real Decreto-ley 29/2026 (art. 5, nuevo art. 22.6 LEC) solo rige en los desahucios por falta de pago del art. 250.1.1.º LEC; tal como estaba, el texto la aplicaba a las ocupaciones. La valoración («no_verificable») se mantiene: la lista no define el instrumento, de modo que ninguna fuente documenta que sea solo procesal (junts-08 es «favorable» porque su proposición de ley sí lo documenta).",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-07",
+   "criterio": "internacional",
+   "antes": "Francia (Ley 2023-668) permite al prefecto ordenar el desalojo en 48 horas, con un plazo de ejecución de al menos 24 horas, si se trata del domicilio del demandante;",
+   "despues": "Francia (Ley 2023-668) extendió a cualquier vivienda, y no solo al domicilio del demandante, el procedimiento en el que el prefecto decide en 48 horas el requerimiento de desalojo, con un plazo de ejecución de al menos 24 horas;",
+   "motivo": "Según la ANIL, el requisito del domicilio del demandante es de la regulación anterior («Rappel de la procédure en vigueur»); la Ley 2023-668 «étend le champ de la procédure à tout \"local à usage d’habitation\"» (por ejemplo, viviendas vacías). Comprobado en la página.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-08",
+   "criterio": "concrecion",
+   "antes": "que ya es el plazo máximo legal para los universitarios desde 2022",
+   "despues": "que ya es el plazo máximo legal para los títulos universitarios (desde 2014; el Real Decreto 889/2022 lo mantuvo)",
+   "motivo": "El plazo de seis meses y el silencio negativo ya estaban en el art. 14 del Real Decreto 967/2014; el Real Decreto 889/2022 los mantuvo y suprimió la suspensión de hasta tres meses por el informe técnico (Tribunal de Cuentas, p. 49). Comprobado en el BOE.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-08",
+   "criterio": "legal",
+   "antes": "si no se resuelve, la solicitud se entiende denegada. Cambiar el procedimiento solo requiere un real decreto.",
+   "despues": "si no se resuelve, la solicitud se puede entender desestimada (silencio negativo, que fija la Ley 14/2000). Cambiar el procedimiento o acortar el plazo solo requiere un real decreto.",
+   "motivo": "Precisión: el art. 18.3 del Real Decreto 889/2022 dice «se podrá entender desestimada» y remite a la Ley 14/2000 (DA 29.ª), de modo que el sentido del silencio lo fija una ley.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-08",
+   "criterio": "financiacion",
+   "antes": "en 2024 la homologación costó unos 3,1 M€ en costes directos, frente a 3,7 M€ ingresados por la tasa de 166,50 euros por solicitud;",
+   "despues": "en 2024 la homologación tuvo unos 3,1 M€ de costes directos estimados, frente a unos 3,7 M€ de ingresos estimados por la tasa de 166,50 euros por solicitud (con los costes indirectos, el coste real podría igualar o superar lo recaudado);",
+   "motivo": "Los 3,7 M€ son una aproximación del Tribunal de Cuentas (22.261 expedientes × 166,50 €, cuadro 25), no lo ingresado; el Tribunal advierte que los costes reales «estarían próximos al importe total recaudado… e incluso podrían ser superiores».",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-08",
+   "criterio": "evidencia",
+   "antes": "en España el plazo de 6 meses rige desde 2022 y en 2024 la media de resolución fue de 212 días,",
+   "despues": "en España el plazo legal de 6 meses ya existía y en 2024 la media de resolución de los expedientes resueltos fue de 212 días, sin contar los que seguían pendientes,",
+   "motivo": "El plazo rige desde 2014 (Real Decreto 967/2014). Los 212 días se calculan solo con los expedientes de 2024 resueltos a 30-6-2025, «sin tener en cuenta los expedientes que no han sido aún resueltos» (Tribunal de Cuentas, cuadro 2).",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-08",
+   "criterio": "internacional",
+   "antes": "un 15 % más de inmigrantes con título reconocido",
+   "despues": "un 15 % más de inmigrantes de fuera de la UE con título reconocido",
+   "motivo": "El resultado del documento IZA DP 17444 se refiere a los inmigrantes de fuera de la UE.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-08",
+   "criterio": "antecedentes",
+   "antes": "El Real Decreto 889/2022 redujo el plazo a 6 meses y en 2024 el Ministerio lanzó un plan de choque; aun así, a 30-6-2025 había 80.648 solicitudes pendientes y la media de resolución en 2024 fue de 212 días (Tribunal de Cuentas),",
+   "despues": "El plazo de 6 meses rige desde 2014 (Real Decreto 967/2014); el Real Decreto 889/2022 lo mantuvo y suprimió la suspensión de hasta 3 meses por el informe técnico, y en 2024 el Ministerio lanzó un plan de choque; aun así, a 30-6-2025 había 80.648 solicitudes pendientes y la media de resolución de los expedientes de 2024 ya resueltos fue de 212 días (Tribunal de Cuentas),",
+   "motivo": "El Real Decreto 889/2022 no redujo el plazo: ya era de seis meses (art. 14 del Real Decreto 967/2014, comprobado en el BOE); y los 212 días excluyen los expedientes sin resolver.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-08",
+   "criterio": "antecedentes",
+   "antes": "La contratación colectiva en origen funciona desde 2000: 25.767 trabajadores en 2025.",
+   "despues": "La contratación colectiva en origen funciona desde 2000; en 2025, 25.767 personas trabajaron en sus programas de migración circular (de temporada).",
+   "motivo": "La cifra de La Moncloa se refiere a los programas de migración circular, no a toda la contratación en origen (la orden también regula la migración estable).",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-08",
+   "criterio": "beneficiarios",
+   "antes": "(el Defensor del Pueblo estima unos 100.000 pendientes, contando las equivalencias)",
+   "despues": "(con datos del Ministerio, el Defensor del Pueblo estima unos 100.000 pendientes, contando las equivalencias)",
+   "motivo": "El Defensor del Pueblo atribuye la estimación a información de la Secretaría General de Universidades.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-08",
+   "criterio": "beneficiarios",
+   "antes": "y a 25.767 trabajadores (2025), el 92 % mujeres.",
+   "despues": "y a los 25.767 trabajadores de temporada de sus programas de migración circular (2025), el 92 % mujeres.",
+   "motivo": "Mismo motivo que en antecedentes: la cifra y el 92 % son de la migración circular.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-08",
+   "criterio": "beneficiarios (campo)",
+   "antes": "(25.767 trabajadores en 2025)",
+   "despues": "(25.767 trabajadores de temporada en programas de migración circular en 2025)",
+   "motivo": "Mismo motivo.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-08",
+   "criterio": "largo_plazo",
+   "antes": "Las autorizaciones de contratación en origen duran cuatro años",
+   "despues": "Las autorizaciones de migración circular (de temporada) duran cuatro años",
+   "motivo": "La Orden ISM/1547/2025 aplica los cuatro años y los nueve meses al año solo a la migración circular (art. 2.1.b); la contratación estable va por autorizaciones ordinarias.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-08",
+   "criterio": "largo_plazo",
+   "antes": "no hay evaluaciones públicas de sus efectos a largo plazo en España",
+   "despues": "no hemos localizado evaluaciones públicas de sus efectos a largo plazo en España",
+   "motivo": "Afirmación absoluta sin fuente; se formula como resultado de la búsqueda.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-09",
+   "criterio": "beneficiarios (campo)",
+   "antes": "y los autónomos que facturan menos de 85.000 euros, sin cifra oficial",
+   "despues": "y los autónomos que facturan menos de 85.000 euros a los que compense acogerse a la franquicia, sin cifra oficial",
+   "motivo": "Las cifras de UPTA y ATA cuentan a quienes podrían o querrían acogerse (ATA exige además no tener un IVA soportado que haga más ventajoso el régimen general), no a todos los que facturan menos de 85.000 €.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-09",
+   "criterio": "concrecion",
+   "antes": "pero no dice desde cuándo, si la cuota cero es solo para quien inicia una actividad ni si los acogidos podrían seguir deduciendo el IVA de sus compras.",
+   "despues": "pero no dice desde cuándo ni si la cuota cero es solo para quien inicia una actividad.",
+   "motivo": "No es una opción abierta: con la Directiva 2006/112/CE las empresas exentas por la franquicia no pueden deducir el IVA soportado (art. 289), así que no es un dato que falte. La valoración («mixta») no cambia.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-09",
+   "criterio": "legal",
+   "antes": "en Navarra el IVA lo exige la Hacienda Foral con las mismas normas que el Estado (art. 32 del Convenio Económico). La cuota cero exigiría reformar el art. 38 ter del Estatuto del Trabajo Autónomo o fijar una cuota de 0 € en la Ley de Presupuestos, también por ley ordinaria.",
+   "despues": "en Navarra la Hacienda Foral exige el IVA a una parte de los contribuyentes (art. 33 del Convenio Económico), con las mismas normas sustantivas y formales que el Estado (art. 32). La cuota cero del primer año podría fijarse en la Ley de Presupuestos (art. 38 ter.1 del Estatuto del Trabajo Autónomo), pero extenderla a todos en el segundo año exigiría reformar el art. 38 ter.2, que limita esa prórroga a quienes ganan menos del salario mínimo; ambas cosas, por ley ordinaria.",
+   "motivo": "El art. 32 solo fija las normas aplicables; quién exige el IVA lo fija el art. 33 (domicilio fiscal y volumen de operaciones). Fijar 0 € en los Presupuestos no alcanzaría a todos en el segundo año, porque el art. 38 ter.2 limita la prórroga a rendimientos inferiores al salario mínimo.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-09",
+   "criterio": "financiacion",
+   "antes": "Hoy los nuevos autónomos pagan una cuota reducida de 80 € al mes el primer año y otros 12 meses si sus rendimientos no llegan al salario mínimo (cuantía fijada para 2023-2025; desde 2026 corresponde a la Ley de Presupuestos); quienes los superan pagan en el segundo año la cuota ordinaria, de al menos unos 290 € al mes en 2026 (cálculo propio con la base mínima). Con los 600.000 beneficiarios de la tarifa plana que contó la AIReF en 2018, eliminar 80 € al mes costaría unos 576 M€ al año (cálculo propio, orden de magnitud),",
+   "despues": "Los nuevos autónomos tienen una cuota reducida de 80 € al mes el primer año y otros 12 meses si sus rendimientos son inferiores al salario mínimo (cuantía fijada para 2023-2025; desde 2026 debe fijarla la Ley de Presupuestos, que no se ha aprobado); quienes los superan pagan en el segundo año la cuota ordinaria, de al menos unos 300 € al mes en 2026 (cálculo propio: base mínima de 960,78 € por un tipo del 31,5 %). Con los 600.000 beneficiarios de la tarifa plana que contó la AIReF en 2018, eliminar 80 € al mes costaría como máximo unos 576 M€ al año si todos estuvieran acogidos los 12 meses (cálculo propio, cota superior),",
+   "motivo": "Con la Orden PJC/297/2026 (art. 18 y art. 37), la base mínima del tramo de rendimientos justo por encima del salario mínimo es de 960,78 € y el tipo total del 31,5 % (con cese de actividad y formación profesional): unos 303 €, no 290 € (que salía sin esos dos conceptos). Ninguna fuente oficial fija la cuantía de 2026 y el preámbulo de la orden confirma la prórroga presupuestaria, por lo que se quita «hoy». Los 600.000 son todos los beneficiarios de 2018 en algún momento del año (la AIReF da un coste de unos 1.000 € por beneficiario), así que 576 M€ es una cota superior.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-09",
+   "criterio": "financiacion",
+   "antes": "la asociación ATA calcula entre 625 y 650 M€ al año.",
+   "despues": "la asociación ATA calcula una menor recaudación de entre 625 y 650 M€ al año.",
+   "motivo": "Aclaración: ATA da 625-650 M€ como «coste para las arcas del Estado» (el titular de 500 M€ es el ahorro de los autónomos).",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-09",
+   "criterio": "antecedentes",
+   "antes": "Desde 2013 los nuevos autónomos tienen una cuota reducida, hoy de 80 € al mes (fijada para 2023-2025) durante 12 meses, ampliables otros 12 si sus rendimientos no superan el salario mínimo;",
+   "despues": "Desde 2013 los nuevos autónomos tienen una cuota reducida, de 80 € al mes en 2023-2025 (desde 2026 debe fijarla la Ley de Presupuestos), durante 12 meses, ampliables otros 12 si sus rendimientos son inferiores al salario mínimo;",
+   "motivo": "Ninguna fuente citada fija la cuantía de 2026; el art. 38 ter.2 dice «inferiores al» salario mínimo. Se añade la AIReF como fuente del inicio en 2013.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-09",
+   "criterio": "antecedentes",
+   "antes": "España no aplica la franquicia del IVA: la Comisión Europea la llevó ante el Tribunal de Justicia de la UE el 11-3-2026 por no transponer la directiva, tras indicar el Gobierno que no aplicará la exención, que es opcional.",
+   "despues": "España no aplica la franquicia del IVA, que es opcional, y ha indicado que no la aplicará; aun así, el 11-3-2026 la Comisión Europea decidió llevarla ante el Tribunal de Justicia de la UE por no transponer la directiva, que también obliga a permitir que las pequeñas empresas españolas se acojan a la franquicia en otros Estados miembros.",
+   "motivo": "El comunicado IP/26/442 dice que la Comisión «decided to refer Spain» y que, aunque la exención es opcional, España debe transponer las disposiciones que permiten a sus pymes aplicar la franquicia en otros Estados; el texto anterior sugería que se la llevaba al TJUE por no aplicar la franquicia.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-03",
+   "criterio": "legal",
+   "antes": "el Gobierno de Navarra indica que el Ministerio asumirá el tramo entre el límite con Zaragoza y Cascante.",
+   "despues": "el Ministerio prolongará la autovía hasta un enlace en Cascante, con un reparto del coste con Navarra mediante un convenio aún no firmado.",
+   "motivo": "La propia respuesta e_0104943 dice que el Estado prolongará la A-15 hasta un enlace con la NA-6900 (Cascante); una respuesta posterior del Gobierno (Noticias de Navarra, 27-6-2026) prevé un convenio con Navarra para repartir el coste, sin firmar. La nota de Navarra solo decía que el Ministerio asume la redacción de ese tramo.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-03",
+   "criterio": "financiacion",
+   "antes": "Para Yesa, la última cifra oficial localizada del presupuesto total es de 2013 (255,2 M€, de los que se habían invertido 106,7 M€); después se aprobaron hasta 25 M€ de obras de emergencia en la ladera y, en 2025, un proyecto de 46,8 M€ para la margen derecha.",
+   "despues": "Para Yesa, la CHE cifraba en 2013 el presupuesto total en 255,2 M€ (106,7 M€ invertidos) y los Presupuestos de 2023 le asignaban un coste total de 245,9 M€; en 2013 se autorizaron obras de emergencia en la ladera por 10 M€, ampliables en hasta 15 M€, y en 2025 el Ministerio aprobó el informe de viabilidad de un proyecto de 46,8 M€ (IVA incluido) para la margen derecha.",
+   "motivo": "Los Presupuestos de 2023, ya citados en antecedentes, dan un coste total de 245.921,63 miles de € para «Regulación en la cuenca del Ebro-Yesa», posterior a la cifra de 2013. Las obras de emergencia (10 M€ en febrero de 2013, ampliación de hasta 15 M€ en julio) no son posteriores a 2013. En 2025 se aprobó el informe de viabilidad, no el proyecto, que requiere aprobación técnica antes de licitarse.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-03",
+   "criterio": "financiacion",
+   "antes": "«cuando la disponibilidad presupuestaria lo permita», sin publicar su coste.",
+   "despues": "«cuando la disponibilidad presupuestaria lo permita», sin indicar su coste.",
+   "motivo": "La respuesta no da el coste; se evita una afirmación absoluta sobre lo publicado.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-03",
+   "criterio": "evidencia",
+   "antes": "La AIReF (2020) señala que España duplica la media de la UE en kilómetros de autovía por habitante y que la ley exige desde 2015 un análisis coste-beneficio de los nuevos tramos estatales; no hemos localizado uno publicado para Yesa ni para la A-15.",
+   "despues": "La AIReF (2020) señala que España duplica la media de la UE en kilómetros de autovías y autopistas por habitante y que la Ley 37/2015 de carreteras exige un análisis coste-beneficio en los proyectos que modifiquen significativamente la longitud de la red estatal; no hemos localizado análisis coste-beneficio publicados para Yesa ni para la A-15.",
+   "motivo": "La AIReF recoge una obligación más estrecha que «nuevos tramos estatales» (proyectos que modifican significativamente la longitud de la Red de Carreteras del Estado, Ley 37/2015), que no se aplica a una obra hidráulica.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-03",
+   "criterio": "antecedentes",
+   "antes": "El proyecto de recrecimiento de Yesa se aprobó en 2000;",
+   "despues": "El proyecto de recrecimiento de Yesa se redactó en 2000 y las obras empezaron en 2001;",
+   "motivo": "Ninguna fuente citada decía que se aprobara en 2000; la DIA de la modificación n.º 3 (BOE, 14-8-2010) dice «En enero del 2000 se redacta el Proyecto… Las obras dieron comienzo en febrero de 2001».",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-03",
+   "criterio": "antecedentes",
+   "antes": "la CHE preveía terminarlo a finales de 2016",
+   "despues": "en 2013 la CHE preveía terminarlo a finales de 2016",
+   "motivo": "Precisión de fecha (iagua, 2013).",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-03",
+   "criterio": "antecedentes",
+   "antes": "En 2013 los movimientos de la ladera derecha obligaron a obras de emergencia",
+   "despues": "Los movimientos de la ladera derecha detectados a finales de 2012 obligaron en 2013 a obras de emergencia",
+   "motivo": "El informe de viabilidad fecha los movimientos en noviembre-diciembre de 2012 y las obras de emergencia y los desalojos en 2013.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-03",
+   "criterio": "antecedentes",
+   "antes": "el tramo estatal Ágreda-Tarazona está aprobado sin licitar",
+   "despues": "el tramo estatal Ágreda-Tarazona tiene el proyecto aprobado y la obra sin licitar",
+   "motivo": "Precisión: lo aprobado es el proyecto.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-03",
+   "criterio": "beneficiarios",
+   "antes": "lo paga el Estado, con recuperación prevista mediante el canon de los usuarios.",
+   "despues": "las obras de la margen derecha (46,8 M€) las paga el Estado y su coste se incluirá en el futuro canon de regulación del embalse.",
+   "motivo": "El informe de viabilidad solo trata la financiación de las obras de la margen derecha («El coste de las obras se incluirán en el futuro canon de regulación»), no la de todo el recrecimiento.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-03",
+   "criterio": "beneficiarios",
+   "antes": "En 2015 el Ayuntamiento de Zaragoza pidió desvincular a la ciudad del recrecimiento.",
+   "despues": "En 2015 el Gobierno municipal de Zaragoza defendió desvincular el abastecimiento de la ciudad del recrecimiento de Yesa.",
+   "motivo": "La nota municipal recoge la posición del equipo de Gobierno («desvincular a Zaragoza del abastecimiento del recrecimiento de Yesa»), no un acuerdo del Ayuntamiento.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-03",
+   "criterio": "beneficiarios",
+   "antes": "Para la A-15 no hemos localizado datos de tráfico;",
+   "despues": "Para la A-15 no hemos localizado previsiones de tráfico;",
+   "motivo": "Hay datos de tráfico de las carreteras a las que sustituiría; lo que no se ha localizado es una previsión para la autovía.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-03",
+   "criterio": "beneficiarios (campo)",
+   "antes": "con coste para el Estado recuperable en parte mediante el canon de los usuarios; la A-15 no tiene datos de tráfico publicados localizados,",
+   "despues": "y las obras de la margen derecha las paga el Estado con cargo al futuro canon de regulación; para la A-15 no hemos localizado previsiones de tráfico,",
+   "motivo": "Mismos motivos que en el criterio.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-03",
+   "criterio": "largo_plazo",
+   "antes": "el riesgo principal que señala la CHE es la ladera derecha, una masa de unos 4 millones de metros cúbicos que llegó a moverse 265 mm.",
+   "despues": "la CHE ha tenido que estabilizar la ladera derecha, una masa de unos 4 millones de metros cúbicos que llegó a desplazarse 265 mm.",
+   "motivo": "La CHE no jerarquiza riesgos (su presidente dijo en el Senado que «la seguridad de la presa está garantizada»); las cifras son del informe de viabilidad.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-03",
+   "criterio": "largo_plazo",
+   "antes": "Los 18 kilómetros navarros de la A-15 suman 232 M€ de inversión foral estimada.",
+   "despues": "El Gobierno de Navarra estima en 232 M€ sus dos tramos de la A-15 (unos 14 km entre Cascante y la conexión con la AP-15).",
+   "motivo": "Según la nota del Gobierno de Navarra del 28-8-2025, los 112 + 120 M€ cubren del pk 21 al 34,8 (unos 14 km); el tramo del pk 16,5 al 21, también navarro, lo redacta el Ministerio.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "seleccion upn-c09",
+   "criterio": "nota",
+   "antes": "ya es el plazo legal (Real Decreto 889/2022)",
+   "despues": "ya es el plazo legal (desde 2014, Real Decreto 967/2014; hoy, Real Decreto 889/2022)",
+   "motivo": "El plazo de seis meses ya estaba en el art. 14 del Real Decreto 967/2014 (comprobado en el BOE); el de 2022 lo mantuvo.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "evaluacion",
+   "criterio": "seleccion_sha256",
+   "antes": "d6a99be4ed9eb3efd74cf7f04218f1478ad2f1b970a58af14b4c8558d68fefc8",
+   "despues": "3958bcd67781d820ee5dcf05903227c7521153912ff9ad1b080169e7e73e31d4",
+   "motivo": "Se recalcula tras el cambio en seleccion.json.",
+   "fecha": "2026-11-14"
   }
  ],
  "dudas": [
   "upn-01, internacional («no_verificable»): Alemania prevé en su Ley Fundamental reorganizar el territorio o fusionar Länder con referéndum (arts. 29 y 118a; Berlín-Brandeburgo, rechazada en 1996). Esas cláusulas son comparables a la DT 4.ª, pero no a su supresión, que es la medida, y se mantiene «no_verificable».",
   "El acuerdo solo se conoce por las notas de UPN, sin el texto íntegro ni una publicación del PP. Si el programa conjunto se publica, sustituye a este análisis.",
   "La campaña oficial empieza el 13-11; no se hallaron entrevistas de la cabeza de lista al Congreso.",
-  "[14-11-2026] La lista de «Compromisos» de upn-pp.es (web de la coalición UPN-PP) cuenta para UPN como documento conjunto y no se ha analizado: debería pasar por el prompt 1b (podría añadir compromisos y cambiar las prioridades). No afecta a lo ya evaluado.",
-  "[14-11-2026] Noticias de Navarra (13-11) afirma sin fuente que «el Estado está a punto de licitar la segunda fase del Canal»; no comprobado y no se usa."
+  "[14-11-2026] La lista de «Compromisos» de upn-pp.es (web de la coalición UPN-PP) cuenta para UPN como documento conjunto y no se ha analizado: debería pasar por el prompt 1b (podría añadir compromisos y cambiar las prioridades). No afecta a lo ya evaluado. [Resuelto en la revisión del 14-11-2026: analizada e integrada.]",
+  "[14-11-2026] Noticias de Navarra (13-11) afirma sin fuente que «el Estado está a punto de licitar la segunda fase del Canal»; no comprobado y no se usa.",
+  "[14-11-2026] Fuera de alcance, para el revisor de SALF: salf-02 (internacional) repite la frase corregida aquí en upn-07 sobre Francia («si se trata del domicilio del demandante»); según la ANIL, la Ley 2023-668 extendió el procedimiento del prefecto a cualquier vivienda.",
+  "[14-11-2026] Fuera de alcance: pp-10 dice que no deflactar «la tarifa» aportó «un 0,1 % del PIB» en 2025; el Informe de Progreso 2026 da 2.294 M€ (0,14 %) por «tarifa y mínimos». pp-11 presenta los 576 M€ como orden de magnitud; con los datos de la AIReF es una cota superior. No cambian valoraciones.",
+  "[14-11-2026] El listón de selección de podemos-c01 («bajar el precio de los alquileres», objetivo sin instrumento, admitido con concreción «desfavorable») es más bajo que el aplicado aquí a «Menos listas de espera» o «En dependencia, plazos más cortos». Se distingue porque podemos-c01 es una de las tres condiciones de negociación que la candidata repitió en varias ocasiones, mientras que estos son puntos de una lista sin realce propio; si el editor fija otro criterio, debería aplicarse a ambos.",
+  "[14-11-2026] Las notas del Gobierno de Navarra sobre la A-15 no coinciden entre sí: la del 3-3-2025 asigna 120 M€ al tramo del pk 16,5 al 29 y la del 28-8-2025, al del pk 21 al 29. Se usa la más reciente.",
+  "[14-11-2026] La Orden SND/854/2026 da 9.676 plazas de Medicina, pero su desglose (9.377 públicas y 300 privadas) suma 9.677. Se usa la cifra que da la orden y la nota de Sanidad."
  ],
- "reatribucion_2026-11-13": "Tras la revisión aprobada, por decisión del editor (13-11-2026) la entrada pasa a ser el partido UPN y cada compromiso cuenta solo para el partido de quien lo dice. Los tres compromisos se mantienen: salen del acuerdo de coalición, documento conjunto que firma y publica UPN. Se quita lo que se apoyaba en Sergio Sayas, del PP: su ocasión del 10-11 en upn-c03 («veces» de 2 a 1), la segunda parte de la justificación de prioridad de upn-03 y la frase «Sergio Sayas (10-11-2026) no añadió detalles» de la concreción de upn-03, con su fuente de Diario de Navarra; la valoración («mixta») no cambia, porque se basaba en el texto del acuerdo. Se reescriben las notas que describían el criterio anterior (los dirigentes del PP contaban si hablaban para la candidatura). seleccion_sha256 actualizado."
+ "reatribucion_2026-11-13": "Tras la revisión aprobada, por decisión del editor (13-11-2026) la entrada pasa a ser el partido UPN y cada compromiso cuenta solo para el partido de quien lo dice. Los tres compromisos se mantienen: salen del acuerdo de coalición, documento conjunto que firma y publica UPN. Se quita lo que se apoyaba en Sergio Sayas, del PP: su ocasión del 10-11 en upn-c03 («veces» de 2 a 1), la segunda parte de la justificación de prioridad de upn-03 y la frase «Sergio Sayas (10-11-2026) no añadió detalles» de la concreción de upn-03, con su fuente de Diario de Navarra; la valoración («mixta») no cambia, porque se basaba en el texto del acuerdo. Se reescriben las notas que describían el criterio anterior (los dirigentes del PP contaban si hablaban para la candidatura). seleccion_sha256 actualizado.",
+ "recuento_2026-11-14": {
+  "antes": {
+   "favorable": 5,
+   "mixta": 16,
+   "desfavorable": 1,
+   "no_verificable": 2,
+   "propuestas": 3
+  },
+  "despues_sin_revisar": {
+   "favorable": 13,
+   "mixta": 53,
+   "desfavorable": 1,
+   "no_verificable": 5,
+   "propuestas": 9
+  },
+  "despues_revision": {
+   "favorable": 13,
+   "mixta": 53,
+   "desfavorable": 1,
+   "no_verificable": 5,
+   "propuestas": 9
+  }
+ }
 }

@@ -3,9 +3,9 @@
  "base": "compromisos",
  "modelo": "Claude (Anthropic)",
  "fecha": "2026-11-12",
- "nota": "La coalición UPN-PP no había publicado programa a 12-11-2026: según el acuerdo, lo redacta una comisión de ambos partidos. Sus compromisos concretos verificables son los tres puntos programáticos del acuerdo de coalición del 13-10-2026; son las tres prioridades. El acuerdo consta en dos notas oficiales de UPN del 13-10-2026 (el principio de acuerdo y su aprobación por el Consejo Político con el 93,5 % de apoyo); quien = UPN y PP. Al presentar su lema y sus compromisos el 10-11-2026, Javier Esparza (UPN) anunció de nuevo la supresión de la disposición transitoria cuarta (Sergio Sayas, del PP, aludió al Canal de Navarra y al tren de alta velocidad, pero no cuenta para UPN); en el acto de inicio de campaña del 12-11-2026 no se repitió ninguna medida. [Reatribución 13-nov-2026] La entrada pasa a ser el partido UPN: cada compromiso cuenta solo para el partido de quien lo dice. Cuentan los dirigentes de UPN y el acuerdo de coalición, documento conjunto que firma y publica UPN. No cuentan los dirigentes del PP, ni Feijóo ni los candidatos del PP en la lista de UPN-PP (Sergio Sayas, Carmen Alba), aunque hablen en actos de la coalición; los compromisos del PP no se trasladan a UPN (véase «descartados»). Por eso se quita de upn-c03 la ocasión de Sayas del 10-11 («veces» de 2 a 1). [Actualización 14-11-2026] Nueva búsqueda hasta el 14-11: sin compromisos nuevos con cita literal de un dirigente de UPN; Esparza repite upn-c03 el 13-11 (Itoiz). Se corrige la atribución de un descarte: el «0-3 gratuito y universal» lo dijo Carmen Alba (PP), no Leticia San Martín. Pendiente: la web de la coalición (upn-pp.es) publica una lista de «Compromisos» (página creada el 10-11 y modificada el 13-11, según data/partidos/partidos.json) que, como documento conjunto de la coalición que firma UPN, cuenta para UPN y no se ha analizado aún con el prompt 1b; incluye medidas concretas (p. ej. «Okupas fuera en 48 horas»; para autónomos, «cuota cero los dos primeros años, sin IVA hasta 85.000€ de facturación»; calendario y financiación del recrecimiento de Yesa y la A-15).",
+ "nota": "La coalición UPN-PP no había publicado programa a 12-11-2026: según el acuerdo, lo redacta una comisión de ambos partidos. A 12-11-2026, sus compromisos concretos verificables eran los tres puntos programáticos del acuerdo de coalición del 13-10-2026, que eran las tres prioridades (véase la actualización del 14-11 al final). El acuerdo consta en dos notas oficiales de UPN del 13-10-2026 (el principio de acuerdo y su aprobación por el Consejo Político con el 93,5 % de apoyo); quien = UPN y PP. Al presentar su lema y sus compromisos el 10-11-2026, Javier Esparza (UPN) anunció de nuevo la supresión de la disposición transitoria cuarta (Sergio Sayas, del PP, aludió al Canal de Navarra y al tren de alta velocidad, pero no cuenta para UPN); en el acto de inicio de campaña del 12-11-2026 no se repitió ninguna medida. [Reatribución 13-nov-2026] La entrada pasa a ser el partido UPN: cada compromiso cuenta solo para el partido de quien lo dice. Cuentan los dirigentes de UPN y el acuerdo de coalición, documento conjunto que firma y publica UPN. No cuentan los dirigentes del PP, ni Feijóo ni los candidatos del PP en la lista de UPN-PP (Sergio Sayas, Carmen Alba), aunque hablen en actos de la coalición; los compromisos del PP no se trasladan a UPN (véase «descartados»). Por eso se quita de upn-c03 la ocasión de Sayas del 10-11 («veces» de 2 a 1). [Actualización 14-11-2026] Nueva búsqueda hasta el 14-11: sin compromisos nuevos con cita literal de un dirigente de UPN; Esparza repite upn-c03 el 13-11 (Itoiz). Se corrige la atribución de un descarte: el «0-3 gratuito y universal» lo dijo Carmen Alba (PP), no Leticia San Martín. [Actualización 14-11-2026, lista de upn-pp.es] La web de la coalición (upn-pp.es) publica una lista de «Compromisos» (página creada el 10-11 y modificada el 13-11; comprobada de nuevo el 14-11 con el mismo texto). Es un documento conjunto de la coalición que firma UPN y cuenta para UPN (2_codificacion_posiciones.md, «Documentos conjuntos»). De sus 36 puntos, entran siete compromisos: seis nuevos con prioridad propia (upn-04 a upn-09: plazas MIR, deflactación, pensiones, desalojo en 48 horas, homologación de títulos y contratación en origen, autónomos) y Yesa y la A-15 (upn-c04), que se evalúan dentro de upn-03; la transitoria cuarta, el Fuero y el Convenio y las infraestructuras ya registradas suman una ocasión (upn-c01, upn-c02, upn-c03). El resto se descarta por no tener medida identificable (véase «descartados»). Hay 9 prioridades, menos de 12: son todos los compromisos concretos verificables.",
  "busqueda": {
-  "hasta": "2026-11-14, hacia las 10:00 (incluye el comunicado de UPN-PP del 14-11 sobre la visita de Feijóo)",
+  "hasta": "2026-11-14, hacia las 10:00 (incluye el comunicado de UPN-PP del 14-11 sobre la visita de Feijóo); lista de upn-pp.es releída el 14-11 hacia las 11:00",
   "donde": [
    "Canal RSS oficial de UPN (upn.org/feed/, páginas 1 a 5: notas del 1-9 al 11-11-2026) y notas del acuerdo y de candidaturas",
    "Portadas y etiquetas de Diario de Navarra (tag «elecciones generales 2026»), Europa Press Navarra, OKDiario Navarra, Navarra Información y Orain",
@@ -15,7 +15,8 @@
    "[Actualización 14-11-2026] Listados de Europa Press Navarra, OKDiario Navarra / Navarra.com, Noticias de Navarra, Navarra Información y portada de Diario de Navarra (sin piezas propias de UPN-PP del 13-14-11 en la portada leída)",
    "[Actualización 14-11-2026] Crónicas leídas: Noticias de Navarra 10-11 (presentación del lema), 12-11 (inicio de campaña y perfil de cabezas de lista), 13-11 (Itoiz); Europa Press 13-11 (Itoiz); OKDiario Navarra 6-11, 12-11, 13-11, 14-11; COPE Navarra 10-11 y 12-11; elDiario.es Navarra 12-11",
    "[Actualización 14-11-2026] Buscador web: Leticia San Martín (propuestas, entrevistas, 0-3), Javier Esparza, Cristina Ibarrola, Alberto Catalán, Feijóo en Pamplona, programa conjunto UPN-PP, debates de candidatos por Navarra, Cadena SER Navarra",
-   "[Actualización 14-11-2026] web del PP de Navarra (ppnavarra.es: sin respuesta) para notas conjuntas"
+   "[Actualización 14-11-2026] web del PP de Navarra (ppnavarra.es: sin respuesta) para notas conjuntas",
+   "[Actualización 14-11-2026] Web de la coalición upn-pp.es, portada completa (lista de «Compromisos», cartas de Feijóo e Ibarrola, candidatos y notas), leída con una petición normal el 14-11; copia de la lista en data/sources/compromisos/upn/upnpp_20261114_compromisos.txt"
   ],
   "limitaciones": "Noticias de Navarra devolvió error a peticiones automáticas en sesiones anteriores y no se usó. No se encontraron entrevistas de la cabeza de lista al Congreso. La campaña oficial empieza el 13-11: la selección deberá revisarse cuando se publique el programa conjunto. [Actualización 14-11-2026] Noticias de Navarra respondió con normalidad (HTTP 200) a la petición normal del ayudante; no se sorteó ninguna protección. No se localizaron entrevistas de Leticia San Martín ni debates de cabezas de lista por Navarra publicados hasta el 14-11. El programa conjunto de la comisión mixta UPN-PP no está publicado. El mitin de Feijóo en Pamplona es el 16-11, después del corte. Los vídeos oficiales de UPN no tienen transcripción leída y no se usan como fuente de citas. Pendiente: el mitin de Feijóo en Pamplona (16-11), donde lo que digan Ibarrola y San Martín contaría para UPN."
  },
@@ -33,7 +34,7 @@
    "fuente_local": "data/sources/compromisos/upn/upn_20261013_principio_acuerdo.txt",
    "sha256": "380205d7923bc50de0f6d27a90f630504cbd0ecaf165ad2b953df44c56cb039e",
    "cuantificado": false,
-   "veces": 2,
+   "veces": 3,
    "ocasiones": [
     {
      "fecha": "2026-10-13",
@@ -74,6 +75,16 @@
      "sha256": "fc793f72ad1d74be07d6eafdc8b9e07f47b89acfb5367d8e8ec9b3cb64ec55a8",
      "literal": false,
      "nota": "Diario de Navarra sitúa la derogación de la disposición transitoria cuarta en primer lugar entre los ejes de campaña presentados por la coalición."
+    },
+    {
+     "fecha": "2026-11-13",
+     "acto": "lista de «Compromisos» de la web de la coalición UPN-PP, bloque «Navarra decide su futuro»",
+     "url": "https://upn-pp.es/",
+     "medio": "Coalición UPN-PP (web oficial de campaña)",
+     "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+     "sha256": "f6a39276c113a08f122bc5ab8cfd6655e652d66f734a2416d5ad8815c8e596b9",
+     "literal": true,
+     "nota": "«Supresión de la Transitoria Cuarta, que abre la puerta a anexionar Navarra con el País Vasco.» La lista no recoge la condición del acuerdo («en una eventual reforma» de la Constitución) ni añade instrumento ni plazo."
     }
    ],
    "nota": "Compromiso condicionado: promover y votar a favor «en una eventual reforma» de la Constitución, sin precisar si la coalición la iniciaría ni en qué plazo. UPN ya registró en 2026 una enmienda en el Congreso y una iniciativa en el Parlamento de Navarra con este fin."
@@ -91,7 +102,7 @@
    "fuente_local": "data/sources/compromisos/upn/upn_20261013_principio_acuerdo.txt",
    "sha256": "380205d7923bc50de0f6d27a90f630504cbd0ecaf165ad2b953df44c56cb039e",
    "cuantificado": false,
-   "veces": 2,
+   "veces": 3,
    "ocasiones": [
     {
      "fecha": "2026-10-13",
@@ -122,6 +133,16 @@
      "sha256": "fc793f72ad1d74be07d6eafdc8b9e07f47b89acfb5367d8e8ec9b3cb64ec55a8",
      "literal": true,
      "nota": "Javier Esparza: Navarra «tiene identidad propia y futuro propio, no queremos que las decisiones dejen de tomarse en el Parlamento Foral o el Palacio de Navarra»; Diario de Navarra titula que la coalición basa su campaña en la foralidad. No se cuenta en «veces»: Diario de Navarra recoge estas palabras bajo el epígrafe de la transitoria cuarta, y no mencionan el régimen foral, el Convenio ni su «blindaje»."
+    },
+    {
+     "fecha": "2026-11-13",
+     "acto": "lista de «Compromisos» de la web de la coalición UPN-PP, bloque «Navarra decide su futuro»",
+     "url": "https://upn-pp.es/",
+     "medio": "Coalición UPN-PP (web oficial de campaña)",
+     "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+     "sha256": "f6a39276c113a08f122bc5ab8cfd6655e652d66f734a2416d5ad8815c8e596b9",
+     "literal": true,
+     "nota": "«Defensa del Fuero y del Convenio Económico.» (y «Navarra es y va a seguir siendo una Comunidad Foral.»). No dice en qué consistiría la defensa ni el «blindaje» del acuerdo."
     }
    ],
    "nota": "Ningún dirigente concreta en qué consistiría «blindar» el régimen foral (qué norma se cambiaría o con qué instrumento)."
@@ -139,7 +160,7 @@
    "fuente_local": "data/sources/compromisos/upn/upn_20261013_principio_acuerdo.txt",
    "sha256": "380205d7923bc50de0f6d27a90f630504cbd0ecaf165ad2b953df44c56cb039e",
    "cuantificado": false,
-   "veces": 2,
+   "veces": 3,
    "ocasiones": [
     {
      "fecha": "2026-10-13",
@@ -190,9 +211,215 @@
      "sha256": "537a989134158c36a7729586fbdffe75094a1fb7a77f0b55d30c298a784702d1",
      "literal": true,
      "nota": "Recoge literal «planificación temporal de las obras y financiación» y, en estilo indirecto, la lista de obras (segunda fase del Canal, recrecimiento de Yesa, A-15, TAV de Zaragoza a la Y vasca, aeropuerto, autovía de Jaca). Afirma, sin citar fuente, que «el Estado está a punto de licitar la segunda fase del Canal». Misma ocasión: no suma en «veces»."
+    },
+    {
+     "fecha": "2026-11-13",
+     "acto": "lista de «Compromisos» de la web de la coalición UPN-PP, bloque «Las inversiones que Navarra necesita»",
+     "url": "https://upn-pp.es/",
+     "medio": "Coalición UPN-PP (web oficial de campaña)",
+     "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+     "sha256": "f6a39276c113a08f122bc5ab8cfd6655e652d66f734a2416d5ad8815c8e596b9",
+     "literal": true,
+     "nota": "«Calendario y financiación para la segunda fase del Canal de Navarra, el recrecimiento de Yesa, el tren de alta velocidad y la autovía A-15.», «Red eléctrica para la industria.» y «Mejores conexiones aéreas.». Repite el Canal, el tren, la red eléctrica y (en términos genéricos) el aeropuerto; Yesa y la A-15 se registran aparte (upn-c04). Sin cifras ni fechas."
     }
    ],
    "nota": "Sin cifras ni plazos. Las cuatro infraestructuras se evalúan juntas, como las presenta el acuerdo. El 13-11 Javier Esparza (UPN), cabeza de lista al Senado, lo repite en Itoiz con citas literales sobre el Canal, el tren y el aeropuerto y pide un plan de inversiones «con presupuesto, calendario y plazos», sin cifras ni plazos propios."
+  },
+  {
+   "id": "upn-c04",
+   "area": "infraestructuras",
+   "resumen": "Calendario y financiación para la segunda fase del Canal de Navarra, el recrecimiento del embalse de Yesa, el tren de alta velocidad y la autovía A-15.",
+   "cita": "Calendario y financiación para la segunda fase del Canal de Navarra, el recrecimiento de Yesa, el tren de alta velocidad y la autovía A-15.",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de su web electoral, documento conjunto de la coalición que firma UPN)",
+   "formato": "documento oficial (web de campaña de la coalición)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "medio": "Coalición UPN-PP (web oficial de campaña, upn-pp.es)",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "sha256": "f6a39276c113a08f122bc5ab8cfd6655e652d66f734a2416d5ad8815c8e596b9",
+   "cuantificado": false,
+   "veces": 1,
+   "ocasiones": [
+    {
+     "fecha": "2026-11-13",
+     "acto": "lista de «Compromisos» de la web de la coalición UPN-PP, bloque «Las inversiones que Navarra necesita»",
+     "url": "https://upn-pp.es/",
+     "medio": "Coalición UPN-PP (web oficial de campaña)",
+     "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+     "sha256": "f6a39276c113a08f122bc5ab8cfd6655e652d66f734a2416d5ad8815c8e596b9",
+     "literal": true,
+     "nota": "Lista oficial de compromisos de la coalición; página creada el 10-11 y modificada el 13-11-2026 (API de WordPress). Documento conjunto: cuenta para UPN, que firma el pacto de coalición."
+    }
+   ],
+   "nota": "No da cifras, fechas ni tramos. El Canal y el tren ya están en upn-c03; Yesa y la A-15 son nuevos y se evalúan dentro de la prioridad upn-03 (compromiso relacionado), como el acuerdo agrupa las infraestructuras. Esparza los mencionó el 13-11 en Itoiz solo en estilo indirecto (véase «descartados»)."
+  },
+  {
+   "id": "upn-c05",
+   "area": "sanidad",
+   "resumen": "Aumentar la oferta de plazas de formación sanitaria especializada en medicina (MIR).",
+   "cita": "Más plazas MIR.",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de su web electoral, documento conjunto de la coalición que firma UPN)",
+   "formato": "documento oficial (web de campaña de la coalición)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "medio": "Coalición UPN-PP (web oficial de campaña, upn-pp.es)",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "sha256": "f6a39276c113a08f122bc5ab8cfd6655e652d66f734a2416d5ad8815c8e596b9",
+   "cuantificado": false,
+   "veces": 1,
+   "ocasiones": [
+    {
+     "fecha": "2026-11-13",
+     "acto": "lista de «Compromisos» de la web de la coalición UPN-PP, bloque «Menos espera y mejor atención»",
+     "url": "https://upn-pp.es/",
+     "medio": "Coalición UPN-PP (web oficial de campaña)",
+     "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+     "sha256": "f6a39276c113a08f122bc5ab8cfd6655e652d66f734a2416d5ad8815c8e596b9",
+     "literal": true,
+     "nota": "Lista oficial de compromisos de la coalición; página creada el 10-11 y modificada el 13-11-2026 (API de WordPress). Documento conjunto: cuenta para UPN, que firma el pacto de coalición."
+    }
+   ],
+   "nota": "Sin número de plazas, especialidades, coste ni plazo."
+  },
+  {
+   "id": "upn-c06",
+   "area": "fiscalidad",
+   "resumen": "Que la inflación no eleve los impuestos (actualizar con la inflación los tramos y parámetros del impuesto; la web no nombra el impuesto).",
+   "cita": "Que la inflación no te suba los impuestos.",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de su web electoral, documento conjunto de la coalición que firma UPN)",
+   "formato": "documento oficial (web de campaña de la coalición)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "medio": "Coalición UPN-PP (web oficial de campaña, upn-pp.es)",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "sha256": "f6a39276c113a08f122bc5ab8cfd6655e652d66f734a2416d5ad8815c8e596b9",
+   "cuantificado": false,
+   "veces": 1,
+   "ocasiones": [
+    {
+     "fecha": "2026-11-13",
+     "acto": "lista de «Compromisos» de la web de la coalición UPN-PP, bloque «Que tu dinero llegue más lejos»",
+     "url": "https://upn-pp.es/",
+     "medio": "Coalición UPN-PP (web oficial de campaña)",
+     "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+     "sha256": "f6a39276c113a08f122bc5ab8cfd6655e652d66f734a2416d5ad8815c8e596b9",
+     "literal": true,
+     "nota": "Lista oficial de compromisos de la coalición; página creada el 10-11 y modificada el 13-11-2026 (API de WordPress). Documento conjunto: cuenta para UPN, que firma el pacto de coalición."
+    }
+   ],
+   "nota": "La web no nombra el impuesto ni el mecanismo; la forma habitual de conseguirlo es deflactar la tarifa del IRPF, y así se evalúa. Mismo punto de la lista que upn-c07."
+  },
+  {
+   "id": "upn-c07",
+   "area": "pensiones",
+   "resumen": "Revalorizar las pensiones para que mantengan su poder adquisitivo.",
+   "cita": "Pensiones que mantengan tu poder adquisitivo.",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de su web electoral, documento conjunto de la coalición que firma UPN)",
+   "formato": "documento oficial (web de campaña de la coalición)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "medio": "Coalición UPN-PP (web oficial de campaña, upn-pp.es)",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "sha256": "f6a39276c113a08f122bc5ab8cfd6655e652d66f734a2416d5ad8815c8e596b9",
+   "cuantificado": false,
+   "veces": 1,
+   "ocasiones": [
+    {
+     "fecha": "2026-11-13",
+     "acto": "lista de «Compromisos» de la web de la coalición UPN-PP, bloque «Que tu dinero llegue más lejos»",
+     "url": "https://upn-pp.es/",
+     "medio": "Coalición UPN-PP (web oficial de campaña)",
+     "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+     "sha256": "f6a39276c113a08f122bc5ab8cfd6655e652d66f734a2416d5ad8815c8e596b9",
+     "literal": true,
+     "nota": "Lista oficial de compromisos de la coalición; página creada el 10-11 y modificada el 13-11-2026 (API de WordPress). Documento conjunto: cuenta para UPN, que firma el pacto de coalición."
+    }
+   ],
+   "nota": "Coincide con la regla vigente de revalorización con el IPC (Ley 21/2021); no dice si propone algo más."
+  },
+  {
+   "id": "upn-c08",
+   "area": "vivienda",
+   "resumen": "Desalojar en 48 horas a quienes ocupen una vivienda sin título.",
+   "cita": "Okupas fuera en 48 horas.",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de su web electoral, documento conjunto de la coalición que firma UPN)",
+   "formato": "documento oficial (web de campaña de la coalición)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "medio": "Coalición UPN-PP (web oficial de campaña, upn-pp.es)",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "sha256": "f6a39276c113a08f122bc5ab8cfd6655e652d66f734a2416d5ad8815c8e596b9",
+   "cuantificado": true,
+   "veces": 1,
+   "ocasiones": [
+    {
+     "fecha": "2026-11-13",
+     "acto": "lista de «Compromisos» de la web de la coalición UPN-PP, bloque «Una vivienda que puedas pagar»",
+     "url": "https://upn-pp.es/",
+     "medio": "Coalición UPN-PP (web oficial de campaña)",
+     "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+     "sha256": "f6a39276c113a08f122bc5ab8cfd6655e652d66f734a2416d5ad8815c8e596b9",
+     "literal": true,
+     "nota": "Lista oficial de compromisos de la coalición; página creada el 10-11 y modificada el 13-11-2026 (API de WordPress). Documento conjunto: cuenta para UPN, que firma el pacto de coalición."
+    }
+   ],
+   "nota": "Fija el plazo (48 horas), sin instrumento ni procedimiento. Carmen Alba (PP) lo dijo el 10-11, pero no cuenta para UPN; cuenta la lista de la coalición."
+  },
+  {
+   "id": "upn-c09",
+   "area": "inmigración",
+   "resumen": "Contratación de trabajadores extranjeros en sus países de origen y homologación de títulos extranjeros en seis meses.",
+   "cita": "Contratación en origen y títulos homologados en 6 meses.",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de su web electoral, documento conjunto de la coalición que firma UPN)",
+   "formato": "documento oficial (web de campaña de la coalición)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "medio": "Coalición UPN-PP (web oficial de campaña, upn-pp.es)",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "sha256": "f6a39276c113a08f122bc5ab8cfd6655e652d66f734a2416d5ad8815c8e596b9",
+   "cuantificado": true,
+   "veces": 1,
+   "ocasiones": [
+    {
+     "fecha": "2026-11-13",
+     "acto": "lista de «Compromisos» de la web de la coalición UPN-PP, bloque «Más oportunidades y mejores empleos»",
+     "url": "https://upn-pp.es/",
+     "medio": "Coalición UPN-PP (web oficial de campaña)",
+     "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+     "sha256": "f6a39276c113a08f122bc5ab8cfd6655e652d66f734a2416d5ad8815c8e596b9",
+     "literal": true,
+     "nota": "Lista oficial de compromisos de la coalición; página creada el 10-11 y modificada el 13-11-2026 (API de WordPress). Documento conjunto: cuenta para UPN, que firma el pacto de coalición."
+    }
+   ],
+   "nota": "El plazo de seis meses para homologar títulos universitarios ya es el plazo legal (desde 2014, Real Decreto 967/2014; hoy, Real Decreto 889/2022); la web no dice qué cambiaría en la contratación en origen, que ya existe."
+  },
+  {
+   "id": "upn-c10",
+   "area": "empleo",
+   "resumen": "Para los autónomos: cuota cero a la Seguridad Social los dos primeros años, exención del IVA hasta 85.000 euros de facturación y mayor cobertura social.",
+   "cita": "Autónomos: cuota cero los dos primeros años, sin IVA hasta 85.000€ de facturación y mayor cobertura social.",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de su web electoral, documento conjunto de la coalición que firma UPN)",
+   "formato": "documento oficial (web de campaña de la coalición)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "medio": "Coalición UPN-PP (web oficial de campaña, upn-pp.es)",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "sha256": "f6a39276c113a08f122bc5ab8cfd6655e652d66f734a2416d5ad8815c8e596b9",
+   "cuantificado": true,
+   "veces": 1,
+   "ocasiones": [
+    {
+     "fecha": "2026-11-13",
+     "acto": "lista de «Compromisos» de la web de la coalición UPN-PP, bloque «Más oportunidades y mejores empleos»",
+     "url": "https://upn-pp.es/",
+     "medio": "Coalición UPN-PP (web oficial de campaña)",
+     "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+     "sha256": "f6a39276c113a08f122bc5ab8cfd6655e652d66f734a2416d5ad8815c8e596b9",
+     "literal": true,
+     "nota": "Lista oficial de compromisos de la coalición; página creada el 10-11 y modificada el 13-11-2026 (API de WordPress). Documento conjunto: cuenta para UPN, que firma el pacto de coalición."
+    }
+   ],
+   "nota": "No dice desde cuándo, si la cuota cero es solo para quien empieza ni si «sin IVA» es la franquicia de la Directiva (UE) 2020/285 (sin deducir el IVA soportado); «mayor cobertura social» no se define."
   }
  ],
  "prioridades": [
@@ -213,8 +440,52 @@
   {
    "id": "upn-03",
    "compromiso": "upn-c03",
-   "titulo": "Inversiones del Estado en el Canal de Navarra, el TAV, el aeropuerto y la red eléctrica",
-   "justificacion": "Único bloque de medidas sectoriales del acuerdo de coalición, uno de sus tres puntos programáticos; el cabeza de lista al Senado, Javier Esparza (UPN), lo repitió el 13-11 en un acto de campaña monográfico en Itoiz, difundido en vídeo por UPN.",
+   "titulo": "Inversiones del Estado en el Canal de Navarra, Yesa, el TAV, la A-15, el aeropuerto y la red eléctrica",
+   "justificacion": "Único bloque de medidas sectoriales del acuerdo de coalición, uno de sus tres puntos programáticos; el cabeza de lista al Senado, Javier Esparza (UPN), lo repitió el 13-11 en un acto de campaña monográfico en Itoiz, difundido en vídeo por UPN. La lista de «Compromisos» de la web de la coalición (13-11) lo repite y pide «calendario y financiación» para el Canal, el tren, el recrecimiento de Yesa y la autovía A-15 (upn-c04, que se evalúa aquí).",
+   "compromisos_relacionados": [
+    "upn-c04"
+   ]
+  },
+  {
+   "id": "upn-04",
+   "compromiso": "upn-c05",
+   "titulo": "Más plazas MIR",
+   "justificacion": "Figura en la lista oficial de «Compromisos» de la web de la coalición UPN-PP (upn-pp.es), el resumen de campaña que firma UPN como parte de la coalición, y es una de las nueve medidas concretas y comprobables de esa lista. Ningún dirigente de UPN la ha repetido en una fuente leída hasta el 14-11.",
+   "compromisos_relacionados": []
+  },
+  {
+   "id": "upn-05",
+   "compromiso": "upn-c06",
+   "titulo": "Que la inflación no suba los impuestos (deflactar el IRPF)",
+   "justificacion": "Figura en la lista oficial de «Compromisos» de la web de la coalición UPN-PP (upn-pp.es), el resumen de campaña que firma UPN como parte de la coalición, y es una de las nueve medidas concretas y comprobables de esa lista. Ningún dirigente de UPN la ha repetido en una fuente leída hasta el 14-11.",
+   "compromisos_relacionados": []
+  },
+  {
+   "id": "upn-06",
+   "compromiso": "upn-c07",
+   "titulo": "Pensiones que mantengan el poder adquisitivo",
+   "justificacion": "Figura en la lista oficial de «Compromisos» de la web de la coalición UPN-PP (upn-pp.es), el resumen de campaña que firma UPN como parte de la coalición, y es una de las nueve medidas concretas y comprobables de esa lista. Ningún dirigente de UPN la ha repetido en una fuente leída hasta el 14-11.",
+   "compromisos_relacionados": []
+  },
+  {
+   "id": "upn-07",
+   "compromiso": "upn-c08",
+   "titulo": "Desalojo de viviendas ocupadas en 48 horas",
+   "justificacion": "Figura en la lista oficial de «Compromisos» de la web de la coalición UPN-PP (upn-pp.es), el resumen de campaña que firma UPN como parte de la coalición, y es una de las nueve medidas concretas y comprobables de esa lista. Ningún dirigente de UPN la ha repetido en una fuente leída hasta el 14-11 (la dijo Carmen Alba, del PP, el 10-11, que no cuenta).",
+   "compromisos_relacionados": []
+  },
+  {
+   "id": "upn-08",
+   "compromiso": "upn-c09",
+   "titulo": "Contratación en origen y homologación de títulos en seis meses",
+   "justificacion": "Figura en la lista oficial de «Compromisos» de la web de la coalición UPN-PP (upn-pp.es), el resumen de campaña que firma UPN como parte de la coalición, y es una de las nueve medidas concretas y comprobables de esa lista. Ningún dirigente de UPN la ha repetido en una fuente leída hasta el 14-11.",
+   "compromisos_relacionados": []
+  },
+  {
+   "id": "upn-09",
+   "compromiso": "upn-c10",
+   "titulo": "Autónomos: cuota cero dos años y sin IVA hasta 85.000 euros",
+   "justificacion": "Figura en la lista oficial de «Compromisos» de la web de la coalición UPN-PP (upn-pp.es), el resumen de campaña que firma UPN como parte de la coalición, y es una de las nueve medidas concretas y comprobables de esa lista. Ningún dirigente de UPN la ha repetido en una fuente leída hasta el 14-11.",
    "compromisos_relacionados": []
   }
  ],
@@ -273,7 +544,7 @@
    "fecha": "2026-11-10",
    "url": "https://www.noticiasdenavarra.com/politica/2026/11/10/espana-navarra-lema-campana-coalicion-11741461.html",
    "fuente_local": "data/sources/compromisos/upn/noticiasdenavarra_20261110_presentacion_lema.txt",
-   "motivo": "Lo dice una dirigente del PP: no cuenta para UPN (regla del 13-11-2026). La medida figura también en la lista de «Compromisos» de la web de la coalición (upn-pp.es), documento conjunto que sí contaría para UPN y que está pendiente de analizar (véase la nota)."
+   "motivo": "Lo dice una dirigente del PP: no cuenta para UPN (regla del 13-11-2026). La medida figura también en la lista de «Compromisos» de la web de la coalición (upn-pp.es), documento conjunto que sí contaría para UPN y que está pendiente de analizar (véase la nota). [14-11-2026] Analizada la lista de upn-pp.es: «Okupas fuera en 48 horas» entra como upn-c08 por el documento conjunto de la coalición; la declaración de Alba sigue sin contar."
   },
   {
    "resumen": "«el compromiso de esta coalición es tolerancia cero con la corrupción, el que la haga, que la pague».",
@@ -289,7 +560,7 @@
    "fecha": "2026-11-13",
    "url": "https://www.europapress.es/navarra/noticia-upn-pp-afirma-gobierno-socialista-mano-bildu-no-habria-hecho-itoiz-canal-navarra-20261113113349.html",
    "fuente_local": "data/sources/compromisos/upn/europapress_20261113_itoiz_infraestructuras.txt",
-   "motivo": "Solo en estilo indirecto en Europa Press, OKDiario Navarra y Noticias de Navarra (entre comillas, solo las palabras sueltas «desbloquear» y «agilizar»); no hay cita literal de la medida. No figuran en el acuerdo de coalición. Mismo criterio que el descarte por estilo indirecto de otros partidos (p. ej. podemos, rebaja del 40 % de los alquileres). El calendario y la financiación del recrecimiento de Yesa y de la A-15 figuran en la lista de «Compromisos» de la web de la coalición (upn-pp.es), pendiente de analizar (véase la nota)."
+   "motivo": "Solo en estilo indirecto en Europa Press, OKDiario Navarra y Noticias de Navarra (entre comillas, solo las palabras sueltas «desbloquear» y «agilizar»); no hay cita literal de la medida. No figuran en el acuerdo de coalición. Mismo criterio que el descarte por estilo indirecto de otros partidos (p. ej. podemos, rebaja del 40 % de los alquileres). El calendario y la financiación del recrecimiento de Yesa y de la A-15 figuran en la lista de «Compromisos» de la web de la coalición (upn-pp.es), pendiente de analizar (véase la nota). [14-11-2026] Analizada la lista de upn-pp.es: el calendario y la financiación de Yesa y la A-15 entran como upn-c04 (evaluado dentro de upn-03); la estación de Tudela y el ancho internacional siguen descartados."
   },
   {
    "resumen": "«Plan de Inversiones del Estado con presupuesto, calendario y plazos» para Navarra.",
@@ -338,6 +609,118 @@
    "url": "https://www.navarrainformacion.es/2026/11/12/sergio-sayas-el-gobierno-perpetra-un-fraude-a-la-democracia-y-condena-a-los-espanoles-a-no-poder-vivir-con-sus-politicas-de-vivienda/",
    "fuente_local": "data/sources/compromisos/upn/navarrainformacion_20261112_sayas.txt",
    "motivo": "Sergio Sayas es del PP: lo que dice no cuenta para UPN (regla del 13-11-2026). Además, habla como portavoz del grupo del PP y solo critica el decreto, sin proponer medida."
+  },
+  {
+   "resumen": "«Recuperar el respeto a la Constitución y a las instituciones», «Garantizar la separación de poderes», «Reforzar el papel de las Cortes Generales», «Tolerancia cero con la corrupción».",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de upn-pp.es)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "motivo": "[14-11-2026] Principios sin medida identificable (qué norma, a quién, cuantía o plazo). Mismo motivo que el descarte de «tolerancia cero con la corrupción» de Esparza."
+  },
+  {
+   "resumen": "«Navarra es y va a seguir siendo una Comunidad Foral.»",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de upn-pp.es)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "motivo": "[14-11-2026] Declaración sin medida; el punto siguiente, «Defensa del Fuero y del Convenio Económico», se registra como ocasión de upn-c02."
+  },
+  {
+   "resumen": "«Solo aceptamos acuerdos dignos, con quien respeta la democracia y las instituciones», «Memoria, dignidad, justicia y verdad para las víctimas del terrorismo».",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de upn-pp.es)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "motivo": "[14-11-2026] Declaración de pactos y compromiso de principio sin medida identificable (mismo motivo que los descartes existentes sobre la investidura y las víctimas)."
+  },
+  {
+   "resumen": "«Una sanidad pública que vuelva a ser referente», «Menos listas de espera para diagnosticar antes y tratar mejor», «Más prevención y mejores resultados».",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de upn-pp.es)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "motivo": "[14-11-2026] Objetivos sin medida, cifra ni plazo: no dicen con qué instrumento se reducirían las esperas ni en cuánto."
+  },
+  {
+   "resumen": "«En dependencia, plazos más cortos», «Ayudas sin duplicidades ni abusos».",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de upn-pp.es)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "motivo": "[14-11-2026] Objetivos sin cifra ni instrumento: no dicen qué plazo ni qué cambio en la tramitación o en el control de las ayudas."
+  },
+  {
+   "resumen": "«Educación de calidad orientada a la mejora del rendimiento escolar», «FP dual conectada con las empresas y un sistema de becas garantizado para quien las necesite».",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de upn-pp.es)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "motivo": "[14-11-2026] Objetivos sin medida identificable: no dicen qué cambiaría en la FP dual ni en los requisitos, cuantías o número de becas."
+  },
+  {
+   "resumen": "«Más medios y mejor coordinación entre todas las policías», «Calles seguras en cada barrio y pueblo».",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de upn-pp.es)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "motivo": "[14-11-2026] Objetivos sin cifra de efectivos, instrumento de coordinación ni plazo."
+  },
+  {
+   "resumen": "«Un alivio fiscal que genere más actividad, que ayude a las personas a tener más poder adquisitivo y a las empresas a ser más competitivas.»",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de upn-pp.es)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "motivo": "[14-11-2026] Sin impuesto, cuantía ni plazo (mismo motivo que el descarte de las rebajas genéricas de impuestos del 10-11). El punto siguiente («Que la inflación no te suba los impuestos») sí entra (upn-c06)."
+  },
+  {
+   "resumen": "«Internet y cobertura en todos los pueblos.»",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de upn-pp.es)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "motivo": "[14-11-2026] Objetivo sin instrumento, cuantía ni plazo. «Red eléctrica para la industria» y «Mejores conexiones aéreas» no se registran como compromisos nuevos: repiten de forma genérica la red eléctrica y el aeropuerto de upn-c03 (ocasión)."
+  },
+  {
+   "resumen": "«Más oferta para bajar los precios», «Suelo público para vivienda asequible», «Menos trámites para desbloquear las 20.000 viviendas protegidas que esperan en Navarra».",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de upn-pp.es)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "motivo": "[14-11-2026] Objetivos sin instrumento definido: no dicen qué suelo ni de qué administración, cuánto, ni qué trámites se suprimirían o con qué norma; la cifra de 20.000 viviendas no lleva fuente. Mismo criterio que el descarte de UPC sobre viviendas dotacionales (sin cuantía, instrumento ni administración responsable)."
+  },
+  {
+   "resumen": "«Refuerzo del tejido empresarial, la industria y los servicios, con un ecosistema innovador», «Salarios dignos y respeto a la concertación social».",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de upn-pp.es)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "motivo": "[14-11-2026] Objetivos sin medida identificable."
+  },
+  {
+   "resumen": "«Inmigración legal, ordenada, con derechos y obligaciones.»",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de upn-pp.es)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "motivo": "[14-11-2026] Principio sin medida identificable."
+  },
+  {
+   "resumen": "«Una PAC para agricultores y ganaderos profesionales, con relevo generacional», «Servicios y actividad económica en todos nuestros pueblos».",
+   "quien": "Coalición UPN-PP (lista de «Compromisos» de upn-pp.es)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "motivo": "[14-11-2026] Sin criterio, instrumento ni cuantía: no dice cómo se definiría al agricultor profesional ni qué cambiaría en el reparto de la PAC."
+  },
+  {
+   "resumen": "Carta de Cristina Ibarrola en la web de la coalición: «Defender el Fuero, el autogobierno y los intereses de Navarra», «Exigir las inversiones, infraestructuras y servicios que merecemos».",
+   "quien": "Cristina Ibarrola, presidenta de UPN (carta en upn-pp.es)",
+   "fecha": "2026-11-13",
+   "url": "https://upn-pp.es/",
+   "fuente_local": "data/sources/compromisos/upn/upnpp_20261114_compromisos.txt",
+   "motivo": "[14-11-2026] Enunciados generales ya cubiertos por upn-c02 y upn-c03, sin medida nueva; no suman ocasión. La carta de Feijóo en la misma web no cuenta para UPN (es del PP)."
   }
  ]
 }
