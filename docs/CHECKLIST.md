@@ -1,6 +1,6 @@
 # Checklist · vota con datos (29-N)
 
-Actualizado: 13-nov-2026. Solo lo pendiente; lo terminado está en el historial de git. La web ya está
+Actualizado: 14-nov-2026. Solo lo pendiente; lo terminado está en el historial de git. La web ya está
 en línea; aquí «bloquea» significa **no difundirla ni anunciarla** (o, si ya circula, que deja de ser
 correcta o legal) hasta que esté hecho.
 
@@ -12,9 +12,9 @@ correcta o legal) hasta que esté hecho.
 
 ## A. Bloquea la difusión
 
-- [ ] **1. [Tú] Revisar tú una muestra antes de anunciar** (en curso): 2–3 propuestas por partido en el
-  paso 2 (cita, valoración y fuentes) y una pasada por el cuestionario del paso 1 buscando redacciones
-  que no sean neutrales. La web sale bajo tu nombre.
+Nada. **1. Revisión de una muestra por el editor: hecha el 13-nov.** Sus observaciones (contexto de q31 con
+desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los commits ef372be, f442128 y
+8ef11a6. El icono en los resultados de Google depende de que Google rastree la web (Search Console).
 
 ## B. No bloquea — lo hago yo
 
@@ -70,5 +70,5 @@ compartir en redes con nombre del sitio e icono PNG.
 
 | # | Qué | Cuándo |
 |---|---|---|
-| 1 | Revisar una muestra de contenidos (en curso) | Antes de anunciar la web |
+| — | (Opcional) Alta en Google Search Console para que Google rastree antes la web y su icono | Cuando quieras |
 | 7 | (Opcional) 2FA en Porkbun | Cuando quieras |
