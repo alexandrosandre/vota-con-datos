@@ -1,0 +1,207 @@
+{
+ "grupo": "g7",
+ "codificador": "Claude (Anthropic) — ampliación del 14-nov-2026 para UPN, PSC, Junts y EH Bildu (un codificador por partido, consolidado y revisado al escribir este fichero), protocolo v2 con las reglas de fechas y de atribución del 13-nov",
+ "fecha": "2026-11-14",
+ "nota": "Posiciones de la ampliación del 14-nov (UPN, PSC, Junts y EH Bildu) aprobadas por la verificación independiente (verificacion_g7.json), con sus correcciones. Todas en celdas vacías de fase1.json (ninguna sustituye a otra). Las celdas rechazadas (UPN q30, Junts q24) quedan con valor null y la nota conserva la fuente descartada; no tenían posición previa, así que no se pisa nada. Las candidatas sin valor van en «dudosas» (build_fase1.py no las lee) y la verificación las confirma sin valor. Resumen y búsquedas por partido en notas_g7.md; copias de las fuentes en data/sources/fase1/g7_2026-11-14/<partido>/.",
+ "posiciones": {
+  "upn": {
+   "q23": {
+    "valor": 2,
+    "fuente": "campaña",
+    "cita": "Una vivienda que puedas pagar [...] Okupas fuera en 48 horas.",
+    "pagina": null,
+    "url": "https://upn-pp.es/",
+    "medio": "Web oficial de la coalición UPN-PP (upn-pp.es), sección «Compromisos»",
+    "fecha": "2026-11-13",
+    "quien": "Compromisos de la coalición electoral UPN-PP (Unión del Pueblo Navarro en coalición con el Partido Popular), documento conjunto",
+    "formato": "documento oficial (web de la coalición)",
+    "marco": null,
+    "nota": "Web de la coalición UPN-PP, con la que Unión del Pueblo Navarro concurre en Navarra. En el bloque de compromisos «Una vivienda que puedas pagar» promete «Okupas fuera en 48 horas»: desalojar en un máximo de 48 horas a quien ocupe sin permiso una vivienda ajena. Es un documento conjunto de la coalición que firma UPN, así que cuenta para UPN (la carta de Feijóo de la misma web no se usa). Compromiso expreso de campaña: +2, mismo criterio que SALF («Okupa fuera en 48 horas»).",
+    "fuente_local": "data/sources/fase1/g7_2026-11-14/upn/upnpp_20261113_compromisos.txt",
+    "sha256": "cf52177f11d5f4b0e713e98ad119f709b02035a12ce3f02300968fe1921cfaed"
+   },
+   "q30": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Verificación independiente (14-nov): rechazada, null (el codificador proponía −1). Lo que se debatía en el Parlamento de Navarra (propuesta de resolución de Contigo-Zurekin, 25-sep-2026) era impulsar «junto con el sector de la distribución y comercialización alimentaria, una cesta básica de la compra a un precio estipulado asequible»: un precio pactado con la distribución, no un precio máximo fijado por ley. Es una medida relacionada pero distinta (el apoyo de EH Bildu a esa misma cesta en el mismo debate tampoco sería posición sobre la afirmación). González Felipe la ridiculiza y la compara con la cesta del franquismo, que «tenía topados los precios del pan y de los productos básicos», pero es una comparación retórica, no una posición sobre fijar hoy por ley un precio máximo; las alternativas que plantea son fiscales (deflactar el IRPF, bajar el impuesto de los combustibles). No es posición inequívoca: ante la duda, sin posición. Fuente descartada: González Felipe, parlamentario foral de UPN, turno en contra por el Grupo Parlamentario Unión del Pueblo Navarro, Diario de Sesiones del Parlamento de Navarra nº 113, 25-sep-2026, p. 51 (https://parlamentodenavarra.es/sites/default/files/diarios-sesiones/Plen11113.pdf): «Hablan de cestas básicas. Ya lo propuso la señora Díaz, poniendo como ejemplo a Francia, donde, por supuesto, fracasó. [...] ¿Saben que el franquismo también tuvo cesta básica, que tenía topados los precios del pan y de los productos básicos? El franquismo lo hizo.»"
+   }
+  },
+  "junts": {
+   "q29": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "Nosaltres defensem aquesta mateixa visió [...] si s’aplica Mercosur ha d’haver unes garanties que avui no són suficients. I si s’ha d’aplicar, s’ha d’aplicar d’una forma correcta i raonada, amb totes les garanties, que és que no hi hagi una aplicació provisional, com diu la proposta.",
+    "pagina": 8,
+    "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/CO/DSCD-15-CO-500.PDF",
+    "medio": "Diario de Sesiones del Congreso de los Diputados, Comisiones, núm. 500 (Comisión de Agricultura, Pesca y Alimentación)",
+    "fecha": "2026-02-25",
+    "quien": "Isidre Gavín i Valls, diputado, en nombre del Grupo Parlamentario Junts per Catalunya (cabeza de lista por Lleida el 29-N)",
+    "formato": "intervención en la Comisión de Agricultura del Congreso: defensa de la enmienda de Junts a la proposición no de ley de SUMAR «relativa al rechazo del Acuerdo de Asociación entre la Unión Europea y Mercosur, a la no aplicación provisional del mismo…» (161/002913)",
+    "marco": null,
+    "nota": "Traducción oficial del Diario (p. 9): «Nosotros defendemos esta misma visión [...] si se aplica Mercosur, necesita unas garantías que hoy no son suficientes, y si se tiene que aplicar Mercosur, tiene que aplicarse de forma correcta y razonada, con todas las garantías, que no haya una aplicación provisional, como dice esta propuesta». Gavín defiende la enmienda de Junts, «idéntica o casi idéntica» a la proposición de Sumar que pide rechazar el acuerdo y que no se aplique provisionalmente. Pedir que no se aplique de forma provisional es pedir que se frene su aplicación (el acuerdo comercial se aplica provisionalmente desde el 1 de mayo de 2026). +1 y no +2: reconoce que el acuerdo «puede ofrecer y ofrece oportunidades» a algunos sectores y plantea la objeción como falta de garantías. Lo posterior va en la misma dirección: el 15 de abril de 2026, en la misma comisión, Gavín anunció el voto a favor de una proposición de ERC contra el acuerdo porque «este acuerdo de Mercosur tal como está no es admisible».",
+    "fuente_local": "data/sources/fase1/g7_2026-11-14/junts/DSCD-15-CO-500.txt",
+    "sha256": "833a221041720ef00186c69f9832e9d740d2e009a80828648b1d44a122d7cac5"
+   },
+   "q33": {
+    "valor": -1,
+    "fuente": "campaña",
+    "cita": "Sap bé, ministre, que junts va facilitar l’any passat un mecanisme que havia de posar fi a una situació profundament injusta que feia que determinats territoris assumissin permanentment l’esforç, mentre que d’altres pràcticament se’n desentenen. [...] Per què no funciona el mecanisme del reial decret?",
+    "pagina": "11-12",
+    "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/CO/DSCD-15-CO-613.PDF",
+    "medio": "Diario de Sesiones del Congreso de los Diputados, Comisiones, núm. 613 (Comisión de Juventud e Infancia, sesión extraordinaria)",
+    "fecha": "2026-08-31",
+    "quien": "Josep Maria Cervera Pinart, diputado, en nombre del Grupo Parlamentario Junts per Catalunya",
+    "formato": "intervención en la comparecencia de la ministra de Juventud e Infancia sobre los menores llegados a Ceuta (Comisión de Juventud e Infancia del Congreso)",
+    "marco": null,
+    "nota": "Traducción oficial del Diario (p. 13): «Sabe bien, ministra, que Junts facilitó el año pasado un mecanismo que tenía que poner fin a una situación profundamente injusta, que hacía que determinados territorios asumieran permanentemente el esfuerzo mientras que otros se desentendían prácticamente». Cervera reivindica el reparto obligatorio del Real Decreto-ley 2/2025 (objetivos «de redistribución obligatorios», con la comunidad de destino fijada por el Estado) y pregunta por qué no se aplica a los menores llegados a Ceuta («¿No funciona el mecanismo del real decreto?»). En su segundo turno critica la vía bilateral porque es «obviar que hay un mecanismo en virtud del cual [...] los que no hayan hecho el trabajo, pues tengan que hacerlo». Defender el reparto obligatorio es lo contrario de suprimirlo: −1 y no −2 porque es indirecto y con condiciones (que Cataluña no sea «penalizada»). La página oficial de propuestas de Junts (1-oct-2026) presenta como logro el «Acord pel repartiment de menors migrants, que compensa l’esforç previ de Catalunya» (acuerdo para el reparto de menores migrantes, que compensa el esfuerzo previo de Cataluña).",
+    "fuente_local": "data/sources/fase1/g7_2026-11-14/junts/DSCD-15-CO-613.txt",
+    "sha256": "5fe6bf540d9afd74d756e868c2c29e34a702a7aea53f68fc5ab885e61beb835c"
+   },
+   "q09": {
+    "valor": -1,
+    "fuente": "campaña",
+    "cita": "la seva llei de gestió directa de la salut pública posa en risc el model sanitari català, un model on la col·laboració públic-privada, públic-social no és excepcional, és estructural. [...] Pretenen fer marginal la col·laboració públic-privada que només accepten si els hospitals públics no tenen prou mitjans per donar servei.",
+    "pagina": 28,
+    "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-167.PDF",
+    "medio": "Diario de Sesiones del Congreso de los Diputados, Pleno y Diputación Permanente, núm. 167",
+    "fecha": "2026-02-18",
+    "quien": "Pilar Calvo Gómez, diputada, en nombre del Grupo Parlamentario Junts per Catalunya",
+    "formato": "pregunta oral a la ministra de Sanidad en el Pleno del Congreso («¿Qué opina del sistema sanitario público de Cataluña?», 180/000922)",
+    "marco": null,
+    "nota": "Traducción oficial del Diario (pp. 28-29): «su ley de gestión directa de la sanidad pública pone en riesgo el modelo sanitario catalán, un modelo donde la colaboración público-privada, público-social, no es algo excepcional, sino estructural. [...] Pretenden que sea marginal la colaboración público-privada, que solo aceptan si los hospitales públicos no disponen de suficientes medios para dar el servicio». Junts rechaza el proyecto de ley de gestión pública del Sistema Nacional de Salud porque deja los conciertos como excepción, defiende que el 65 % de los servicios de la sanidad pública catalana se preste con esa colaboración (cita un hospital «de titularidad privada» dentro de la red pública) y anuncia que Junts quiere «sacar del mercado» la ley. Quien se opone a restringir los conciertos se opone, con más razón, a prohibirlos: −1 y no −2 porque es indirecta y parte del argumento es competencial. Lo repitió el 17 de marzo de 2026 en la Comisión de Sanidad del Congreso. Mismo valor que Vox y SALF.",
+    "fuente_local": "data/sources/fase1/g7_2026-11-14/junts/DSCD-15-PL-167.txt",
+    "sha256": "ffabbf3ede182ddec528403a4118135fb0985069dfc7c11592d2ebf2b29b6cb2"
+   },
+   "q24": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Verificación independiente (14-nov): rechazada, null (el codificador proponía +1). Madrenas (pregunta al ministro del Interior, 9-sep-2026) reprocha al Gobierno «la ley Mordaza que tenían que derogar» dentro de una lista de quejas sobre la actuación policial, y Pagès (14-jul-2026) critica el «poco entusiasmo» del PSOE por derogarla: son reproches por un compromiso del Gobierno, no una propuesta de Junts de derogarla por completo. La única propuesta propia de Junts sobre esta ley en el periodo va en otra dirección: el 21-abr-2026 Pagès dijo que «cal modificar la Llei de Seguretat Ciutadana» («hay que modificar la Ley de Seguridad Ciudadana»), anunció enmiendas «por si algún día se activa la reforma» para que los Mossos controlen las armas y se abrió a endurecer en esa misma ley las sanciones por tenencia o exhibición de armas, lo que supone mantenerla. La afirmación pide derogarla por completo; entre proponer reformarla y reprochar que no se derogue, la posición no es inequívoca: ante la duda, sin posición. Fuente descartada: Marta Madrenas i Mir, diputada del Grupo Parlamentario Junts per Catalunya, Diario de Sesiones del Congreso, Pleno, nº 202, 9-sep-2026, p. 30 (https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-202.PDF): «Aquí res i la Llei Mordassa que havien de derogar. Aquests són els seus avals per democratitzar la policia.»"
+   }
+  }
+ },
+ "dudosas": {
+  "upn": {
+   "q31": {
+    "candidato": -1,
+    "por_que_sin_valor": "(1) La propuesta de San Martín del 11-nov de «limitar/acotar las prórrogas automáticas» de la LAU sigue sin cita literal: solo la recogen OKDiario y COPE en estilo indirecto; la nota oficial no está en upn.org (no hay nota del 11-nov sobre vivienda) y las iniciativas registradas ese día aún no están en el BOPN (último publicado: núm. 106, 13-nov; las páginas de tramitación del Parlamento dan 403). (2) La nota oficial de upn.org del 1-abr-2026 («UPN, en contra del decreto»: vota contra un decreto que añade «más obstáculos al mercado de alquiler y mayor desprotección para propietarios arrendadores») se refiere a la prórroga extraordinaria del RDL 8/2026, no a la renovación automática por cinco años: mismo motivo por el que g4 descartó a Vox (Hernández Quero, RDL 8/2026). (3) Catalán en la convalidación del RDL 27/2026 (DS nº 210, 2-oct-2026, p. 36) critica el procedimiento y dice «Habrá cuestiones con las que podríamos estar de acuerdo y otras con las que estaríamos en desacuerdo»: ambivalente. (4) Ibarrola (29-abr-2026) justifica el voto en contra de la prórroga, solo en estilo indirecto (OKDiario). Si se publica el texto de las iniciativas del 11-nov o una nota con palabras literales, sería −1 o −2.",
+    "url": "https://www.upn.org/upn-acusa-al-gobierno-de-chivite-de-dar-informacion-confusa-a-inquilinos-sobre-la-prorroga-del-alquiler/",
+    "fuente_local": null
+   },
+   "q15": {
+    "candidato": -1,
+    "por_que_sin_valor": "OKDiario Navarra (2-jul-2026) recoge que UPN dice que el sistema «no funciona» y que la regularización extraordinaria va a ser «solo un parche», junto a «Navarra no se entiende hoy sin la aportación de las personas migrantes». Es crítica de la eficacia de la de 2026, no rechazo expreso de aprobar otra; además es crónica (frases sueltas atribuidas al partido). Mismo motivo que el rechazo de Ibarrola en g5. López Mañero (DSPN 94, 19-feb-2026) rechaza el borrador «tal y como está» pero «mucho tendría que cambiar ese texto [...] para que también cambiara nuestra valoración»: condicionado.",
+    "url": "https://navarra.okdiario.com/navarra/politica/exigen/20260702195330651217.html",
+    "fuente_local": null
+   }
+  },
+  "psc": {
+   "q31": {
+    "candidato": 1,
+    "cita": "ha recordat que el Govern de Pedro Sánchez ha fet avui “un pas important aprovant dos reials decrets en matèria d’habitatge” [...] Així mateix, s’ha arribat a un acord per a la renovació automàtica dels lloguers, que anirà en un segon reial decret.",
+    "quien": "Elena Díaz, portavoz del grupo parlamentario Socialistes i Units per Avançar (PSC) en el Parlament; nota oficial del PSC",
+    "fecha": "2026-09-29",
+    "por_que_sin_valor": "Es la única fuente del PSC que nombra la renovación automática de los alquileres, pero en la voz de la nota y en estilo indirecto: Díaz solo entrecomilla que aprobar «dos reials decrets» es «un pas important», y la frase sobre la renovación informa de un acuerdo sin valorarlo ni comprometerse, ni menciona periodos de cinco años. Traducción: «ha recordado que el Gobierno de Pedro Sánchez ha dado hoy “un paso importante aprobando dos reales decretos en materia de vivienda” [...] Asimismo, se ha llegado a un acuerdo para la renovación automática de los alquileres, que irá en un segundo real decreto». Es anterior a la convocatoria (marco null). Mismo caso que NC-BC q31 (apoyo a los decretos sin hablar de la renovación, null), salvo que aquí la renovación sí se menciona. +1 solo si el verificador entiende que la nota oficial presenta la renovación automática como parte de un «pas important» que el PSC respalda.",
+    "url": "https://www.socialistes.cat/actualitat/elena-diaz-hem-escoltat-un-president-que-defensa-que-catalunya-no-pot-permetres-quedar-al-marge-de-les-grans-transformacions-del-nostre-temps/",
+    "fuente_local": "data/sources/fase1/g7_2026-11-14/psc/socialistes_20260929_diaz_decrets_habitatge.txt",
+    "sha256": "1352da709acf280650c36d44babc954b4e72d8c41f55bbb9fa6f366394dec498"
+   }
+  },
+  "eh_bildu": {
+   "q01": {
+    "candidato": 1,
+    "cita": "se trata de que no tengamos que seguir declarando zonas tensionadas. Y, si no ponemos límite también en aquellos lugares donde no están declaradas las zonas tensionadas, nos volveremos a encontrar con que cada vez hay más zonas tensionadas.",
+    "pagina": 27,
+    "fecha": "2025-12-10",
+    "quien": "Oskar Matute García de Jalón, diputado de EH Bildu (hoy cabeza de lista por Bizkaia), pregunta a la ministra de Vivienda en la sesión de control",
+    "por_que_sin_valor": "Matute pide limitar las subidas del alquiler también donde no hay zona tensionada declarada, lo que apunta a un límite que no dependa de la declaración autonómica. Pero el único límite concreto que propone a continuación es 'que se recupere la prórroga automática' de los contratos, no un precio máximo estatal; y la pregunta trata de la subida de rentas al renovar los contratos de la pandemia. Además la coincidencia ya estaba en los ficheros del barrido del Diario de Sesiones de g4/g5 y no se codificó, y EH Bildu en campaña (5-nov, eldiario.es 13-nov) defiende la zona tensionada declarada por sus instituciones. Ante la duda, null.",
+    "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-158.PDF",
+    "fuente_local": "data/sources/fase1/g7_2026-11-14/eh_bildu/DSCD-15-PL-158.txt",
+    "sha256": "9f0304ff4a029a324c3711c9db33f987a43c93daeca71f9b68e70a6b602ee0a8"
+   }
+  },
+  "junts": {
+   "q27": {
+    "candidato": 1,
+    "por_que_sin_valor": "El 23-sep-2026 (DS Pleno 207, p. 36, pregunta a la ministra de Defensa) Gavín, cabeza de lista por Lleida, reprocha: «Miri, vostès no van [...] desplegar l’exèrcit a Ceuta fins a 12 hores després de la crisi de la frontera, quan vostès ho havien d’haver fet 24 hores abans» (el salto de página del Diario se marca con [...]), para disuadir del desbordamiento de la frontera; es decir, que el ejército debía desplegarse antes. Pero una semana después, el 30-sep-2026 (DS Pleno 209, p. 95, moción del PP sobre Ceuta, la fuente ya descartada en g4), reprocha al Gobierno no desplegar «mitjans policials o militars» con efecto disuasorio y al PP reducirlo todo a «una qüestió militarista», y cierra «Nosaltres no estem ni a un costat ni a l’altre». La declaración posterior prevalece y es ambivalente sobre el despliegue militar como política; además las dos se refieren a la crisis del 30-jul, no a un refuerzo permanente de la vigilancia por las Fuerzas Armadas. Si el editor considera que la del 23-sep es inequívoca y la del 30-sep no la contradice, +1.",
+    "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-207.PDF",
+    "fuente_local": "data/sources/fase1/g7_2026-11-14/junts/DSCD-15-PL-207.txt (y data/sources/fase1/g7_2026-11-14/junts/DSCD-15-PL-209.txt)"
+   },
+   "q03": {
+    "candidato": 1,
+    "cita": "Pressió al govern de la Generalitat per reduir l’impost de transmissions patrimonials per als joves que compren el primer habitatge.",
+    "url": "https://junts.cat/propostes/impostos/",
+    "fecha": "2026-10-01",
+    "quien": "Junts per Catalunya (página oficial de propuestas del partido)",
+    "fuente_local": "data/sources/fase1/g7_2026-11-14/junts/junts_propostes_impostos.txt",
+    "sha256": "3b6657e08a4a28fb65420d623ecdca39cb4a2c6c956884d95aa46c6cdf05144e",
+    "por_que_sin_valor": "Propuesta por el codificador del partido como +1 y pasada a dudosa al consolidar g7. La ficha oficial junts.cat/propostes/impostos (lista «Què hem fet») recoge «Pressió al govern de la Generalitat per reduir l’impost de transmissions patrimonials per als joves que compren el primer habitatge»: es una rebaja autonómica del ITP pedida a la Generalitat, sin IVA y sin el 60 %. Con el mismo criterio con el que g4 rechazó a Nogueras (DS 174, supresión del ITP, tributo cedido) y g7 deja sin valor la rebaja foral de Maiz (EH Bildu, Navarra), es una medida relacionada pero distinta de la rebaja estatal del IVA y el ITP de la afirmación. La mención del IVA de Madrenas (DS 185, 19-may-2026: «reduir impostos com l’IVA i ajudar els joves a estalviar per accedir al primer habitatge») no lo liga a la compra de vivienda. Si el verificador entiende que basta la coincidencia de dirección (rebajar impuestos de compra a jóvenes en su primera vivienda), +1."
+   }
+  }
+ },
+ "fuentes": [
+  {
+   "ruta": "data/sources/fase1/g7_2026-11-14/upn/upnpp_20261113_compromisos.txt",
+   "url": "https://upn-pp.es/",
+   "sha256": "cf52177f11d5f4b0e713e98ad119f709b02035a12ce3f02300968fe1921cfaed",
+   "usos": [
+    "upn/q23"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/g7_2026-11-14/upn/dspn_113_20260925_pleno_estado_comunidad.txt",
+   "url": "https://parlamentodenavarra.es/sites/default/files/diarios-sesiones/Plen11113.pdf",
+   "sha256": "de8a0ce261971e49614fc63fcc1f5c5e3ea3a84b726ed8f5547eff8378e58bc7",
+   "usos": [
+    "upn/q30 (fuente descartada en la verificación)"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/g7_2026-11-14/junts/DSCD-15-CO-500.txt",
+   "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/CO/DSCD-15-CO-500.PDF",
+   "sha256": "833a221041720ef00186c69f9832e9d740d2e009a80828648b1d44a122d7cac5",
+   "usos": [
+    "junts/q29"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/g7_2026-11-14/junts/DSCD-15-CO-613.txt",
+   "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/CO/DSCD-15-CO-613.PDF",
+   "sha256": "5fe6bf540d9afd74d756e868c2c29e34a702a7aea53f68fc5ab885e61beb835c",
+   "usos": [
+    "junts/q33"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/g7_2026-11-14/junts/DSCD-15-PL-167.txt",
+   "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-167.PDF",
+   "sha256": "ffabbf3ede182ddec528403a4118135fb0985069dfc7c11592d2ebf2b29b6cb2",
+   "usos": [
+    "junts/q09"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/g7_2026-11-14/junts/DSCD-15-PL-202.txt",
+   "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-202.PDF",
+   "sha256": "ff22c4848062a679e7a98ca24000bf5f6332c3b8fe59a3f91869c19a98757bbf",
+   "usos": [
+    "junts/q24 (fuente descartada en la verificación)"
+   ]
+  }
+ ]
+}

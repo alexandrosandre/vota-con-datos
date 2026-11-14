@@ -1,0 +1,183 @@
+{
+ "grupo": "g7",
+ "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2 con las decisiones del editor del 13-nov (atribución por partido, documentos conjuntos, fechas desde el 1-nov-2025)",
+ "fecha": "2026-11-14",
+ "aprobado": true,
+ "revisadas": 12,
+ "resultado": {
+  "ok": 4,
+  "corregido": 0,
+  "rechazado": 2,
+  "dudosas_confirmadas_sin_valor": 6
+ },
+ "alcance": "Las 6 posiciones nuevas de codificacion_g7.json (UPN q23 y q30; Junts q29, q33, q09 y q24) y sus 6 dudosas sin valor (UPN q31 y q15, PSC q31, EH Bildu q01, Junts q27 y q03). Para cada posición: (1) se volvió a descargar la fuente original con peticiones HTTP normales (upn-pp.es; PDF oficial del Diario de Sesiones del Parlamento de Navarra nº 113; PDF oficiales del Congreso DS Comisiones 500, 509, 541 y 613 y DS Pleno 167, 168, 179, 198 y 202; junts.cat/propostes/immigracio), se extrajo el texto y se comprobó la cita fragmento a fragmento con norm() de verify_quotes.py en el original y en la copia local (sha256 coincidente): las 6 son literales y tienen 60 palabras o menos. En el PDF de Navarra, a dos columnas, la extracción con -layout corta las frases; sin -layout la cita aparece literal. (2) Quién habla y en qué turno, leído en el Diario: UPN q30, «Turno en contra. Por el Grupo Parlamentario Unión del Pueblo Navarro, señor González Felipe»; Junts q29, Gavín defiende la enmienda de su grupo; Junts q33, «pel Grup Parlamentari Junts per Catalunya, té la paraula el senyor Cervera»; Junts q09 y q24, preguntas orales de Calvo y Madrenas, del Grupo Junts (mismo criterio que la pregunta de Agirretxea, PNV q11, en g4). Cabezas de lista comprobadas en data/boe/listas_congreso.json (Gavín, Lleida; Madrenas, Girona). upn-pp.es es la web de la coalición UPN-PP, cuyo pacto ante la JEP firman UPN y el PP (data/boe/coaliciones.json): documento conjunto que cuenta para UPN. (3) Fechas: todas ≥ 2025-11-01 (la más antigua, 18-feb-2026); la de UPN q23 es la de la última modificación de la página (dateModified 2026-11-13T13:53:51, publicada el 10-nov). (4) Valor juzgado contra la afirmación tal como está redactada y con el valor dado a otros partidos en la misma pregunta (fase1.json): SALF q23, Vox y EH Bildu q30, ERC, UPN, Podemos y EH Bildu q29, Compromís, PSOE y CC q33, Vox y SALF q09, Compromís, EH Bildu y Ara Més q24. (5) Declaraciones posteriores del mismo partido: Junts q29 (DS Pleno 173 de marzo y DS Comisiones 541 de abril de 2026, misma dirección), Junts q33 (segundo turno de Cervera y junts.cat/propostes/immigracio, modificada el 1-oct-2026), Junts q09 (DS Comisiones 509, 17-mar-2026) y Junts q24 (DS 168, 179 y 198). Mecanismo, como en g4 y g5: build_fase1.py lee codificacion_g7.json con esta verificación como puerta; las correcciones se aplicaron allí. Las celdas rechazadas quedan con valor null y todos los campos a null, y la nota conserva la fuente descartada; en fase1.json ya eran null (UPN q30, Junts q24), así que no se pisa ninguna posición. Las dudosas siguen en «dudosas», que build_fase1.py no lee.",
+ "cambios": [
+  {
+   "partido": "upn",
+   "pregunta": "q30",
+   "antes": -1,
+   "despues": null,
+   "motivo": "Lo que se debatía era la propuesta de Contigo-Zurekin de impulsar «junto con el sector de la distribución y comercialización alimentaria, una cesta básica de la compra a un precio estipulado asequible» (DSPN 113, p. 46): un precio pactado con la distribución, no un precio máximo fijado por ley. Es una medida relacionada pero distinta: con el mismo criterio, el apoyo de EH Bildu a esa cesta en el mismo debate (p. 49) tampoco sería +1 en q30. La frase sobre el franquismo («tenía topados los precios del pan y de los productos básicos») es una comparación retórica para ridiculizar la cesta, no una posición sobre fijar hoy por ley un precio máximo; las alternativas que plantea González Felipe son fiscales (deflactar el IRPF, el impuesto de los combustibles). Diferencia con Vox q30 (−1): Flores Juberías rechazaba expresamente «el control estatal de los precios», incluido el de los alimentos. Ante la duda, null."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q24",
+   "antes": 1,
+   "despues": null,
+   "motivo": "Las dos frases de 2026 que hablan de derogar (Madrenas, 9-sep, DS 202, p. 30: «la Llei Mordassa que havien de derogar»; Pagès, 14-jul, DS 198, p. 115, traducción oficial en la p. 117: el «poco entusiasmo» del PSOE «a la hora de derogar la ley mordaza») son reproches al Gobierno por un compromiso suyo, dichos de pasada en debates sobre otra cosa (cargas policiales contra esteladas; reforma del Código Penal), no una propuesta de Junts de derogarla por completo. La única propuesta propia sobre la ley en el periodo es de reforma: el 21-abr (DS 179, p. 39) Pagès dijo «cal modificar la Llei de Seguretat Ciutadana», anunció enmiendas «por si algún día se activa la reforma» (traspaso a los Mossos del control de armas) y se abrió a «l’enduriment de les sancions en la Llei de Seguretat Ciutadana per la tinença o exhibició d’armes», lo que supone mantener la ley. La afirmación dice «por completo». Las +1 de EH Bildu y Ara Més y la +2 de Compromís son peticiones o compromisos expresos de derogarla sin propuestas de reforma en contra. Ante la duda, null."
+  }
+ ],
+ "correcciones_de_campos": [
+  {
+   "partido": "junts",
+   "pregunta": "q33",
+   "campo": "pagina",
+   "motivo": "11 → 11-12: el segundo fragmento de la cita («Per què no funciona el mecanisme del reial decret?») está en la p. 12 del Diario nº 613."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q33",
+   "campo": "nota",
+   "motivo": "El codificador decía que el Diario no publica traducción de este turno; sí la publica (pp. 13-14 y 37-38). La nota usa ahora la traducción oficial y añade el segundo turno de Cervera, en el que defiende el mecanismo obligatorio frente a la vía bilateral."
+  },
+  {
+   "partido": "(4 celdas aprobadas)",
+   "pregunta": "—",
+   "campo": "nota",
+   "motivo": "Notas reescritas para el lector: sin rutas de copias, sha256, marcas «REVISAR» ni referencias a ficheros internos; traducción oficial del Diario para las citas en catalán. Las rutas y sha256 siguen en los campos internos fuente_local y sha256 y en la lista «fuentes»."
+  },
+  {
+   "partido": "(fichero)",
+   "pregunta": "—",
+   "campo": "nota, fuentes",
+   "motivo": "La nota de cabecera de codificacion_g7.json ya no dice «pendiente de verificación»; en «fuentes», los usos de UPN q30 y Junts q24 se marcan como fuente descartada."
+  }
+ ],
+ "posiciones": [
+  {
+   "partido": "upn",
+   "pregunta": "q23",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Web de la coalición UPN-PP (accesible; coincide con la copia), bloque «Una vivienda que puedas pagar»: «Okupas fuera en 48 horas». Documento conjunto de la coalición que firma UPN: cuenta para UPN por la regla del editor; no se usa nada de Feijóo ni de candidatos del PP. Es un compromiso expreso de la lista de compromisos de campaña: +2, mismo criterio que SALF q23 («Okupa fuera en 48 horas», entre sus compromisos principales). No consta nada posterior de UPN en contra. Ver dudas (alternativa +1)."
+  },
+  {
+   "partido": "upn",
+   "pregunta": "q30",
+   "veredicto": "rechazado",
+   "valor_codificador": -1,
+   "valor_final": null,
+   "motivo": "Lo que se debatía era la propuesta de Contigo-Zurekin de impulsar «junto con el sector de la distribución y comercialización alimentaria, una cesta básica de la compra a un precio estipulado asequible» (DSPN 113, p. 46): un precio pactado con la distribución, no un precio máximo fijado por ley. Es una medida relacionada pero distinta: con el mismo criterio, el apoyo de EH Bildu a esa cesta en el mismo debate (p. 49) tampoco sería +1 en q30. La frase sobre el franquismo («tenía topados los precios del pan y de los productos básicos») es una comparación retórica para ridiculizar la cesta, no una posición sobre fijar hoy por ley un precio máximo; las alternativas que plantea González Felipe son fiscales (deflactar el IRPF, el impuesto de los combustibles). Diferencia con Vox q30 (−1): Flores Juberías rechazaba expresamente «el control estatal de los precios», incluido el de los alimentos. Ante la duda, null. Cita y quien comprobados (literal, p. 51; habla en el turno del Grupo UPN), pero el valor no se sigue de la cita."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q29",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Gavín (cabeza de lista por Lleida) defiende en comisión la enmienda de Junts, «idéntica o casi idéntica» a la PNL de Sumar «relativa al rechazo del Acuerdo [...] a la no aplicación provisional del mismo», y pide «que no hi hagi una aplicació provisional» (p. 8, literal). A diferencia de la fuente rechazada en g4 (DS 173, «amenaça greu», sin petición), aquí hay una petición expresa de que no se aplique el acuerdo comercial, que es frenarlo; es la misma petición que da a ERC su +2. +1 y no +2: reconoce oportunidades para algunos sectores y lo plantea como falta de garantías («si s’ha d’aplicar…»). Lo posterior lo refuerza: 15-abr-2026 (DS Comisiones 541, p. 19-20), voto a favor de la PNL de ERC porque el acuerdo «tal com està, no és admissible». Nada posterior más suave (criterio de Compromís y CC q29 en g5)."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q33",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cervera interviene por el Grupo Junts en la comparecencia de la ministra (p. 10). Reivindica que Junts «va facilitar» el mecanismo del RDL 2/2025, describe su reparto obligatorio y pregunta por qué no se aplica a los menores de Ceuta; en su segundo turno (p. 37) dice que la vía bilateral es «obviar que hi ha un mecanisme» para que quien no acoge «l’hagin de fer». Defender el reparto obligatorio es oponerse a suprimirlo: −1 indirecta y con condiciones (que Cataluña no sea «penalitzada»), mismo valor que PSOE y Compromís. No lo contradice lo posterior: junts.cat/propostes/immigracio (1-oct-2026, accesible) presenta el acuerdo de reparto como logro. Lo de Nogueras de agosto (excluir a Cataluña) es anterior y no rechaza el mecanismo. Página corregida a 11-12."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q09",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Pregunta oral de Calvo (Grupo Junts) a la ministra de Sanidad (p. 27-28, literal). Rechaza la ley de gestión pública del SNS porque deja la colaboración público-privada como excepción y defiende que sea «estructural» (65 % de los servicios del SISCAT, incluido un hospital «de titularitat privada»). Oponerse a restringir los conciertos es oponerse, con más razón, a prohibirlos: −1 indirecta, mismo valor que Vox y SALF (que proponen fomentar la colaboración público-privada). El argumento competencial no anula el sustantivo: Calvo defiende el modelo en sí («gràcies a això…»). Lo repite el 17-mar-2026 (DS Comisiones 509, p. 16). Calvo formula la pregunta del Grupo Junts y fija su posición en Sanidad: cuenta, como la pregunta de Agirretxea (PNV q11) en g4. Ver dudas."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q24",
+   "veredicto": "rechazado",
+   "valor_codificador": 1,
+   "valor_final": null,
+   "motivo": "Las dos frases de 2026 que hablan de derogar (Madrenas, 9-sep, DS 202, p. 30: «la Llei Mordassa que havien de derogar»; Pagès, 14-jul, DS 198, p. 115, traducción oficial en la p. 117: el «poco entusiasmo» del PSOE «a la hora de derogar la ley mordaza») son reproches al Gobierno por un compromiso suyo, dichos de pasada en debates sobre otra cosa (cargas policiales contra esteladas; reforma del Código Penal), no una propuesta de Junts de derogarla por completo. La única propuesta propia sobre la ley en el periodo es de reforma: el 21-abr (DS 179, p. 39) Pagès dijo «cal modificar la Llei de Seguretat Ciutadana», anunció enmiendas «por si algún día se activa la reforma» (traspaso a los Mossos del control de armas) y se abrió a «l’enduriment de les sancions en la Llei de Seguretat Ciutadana per la tinença o exhibició d’armes», lo que supone mantener la ley. La afirmación dice «por completo». Las +1 de EH Bildu y Ara Més y la +2 de Compromís son peticiones o compromisos expresos de derogarla sin propuestas de reforma en contra. Ante la duda, null. Cita literal (p. 30) y quien comprobados; el valor no se sigue con el criterio de la afirmación («por completo»)."
+  },
+  {
+   "partido": "upn",
+   "pregunta": "q31 (dudosa)",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. La propuesta de San Martín de limitar las prórrogas automáticas solo consta en estilo indirecto (COPE, OKDiario); la nota de upn.org del 1-abr-2026 trata de la prórroga extraordinaria del RDL 8/2026, otra medida (mismo motivo que Vox en g4), y la intervención de Catalán en la convalidación del RDL 27/2026 (DS 210) critica el procedimiento sin rechazar la medida (no se volvió a abrir; se acepta la lectura del codificador, que no da valor). Null."
+  },
+  {
+   "partido": "upn",
+   "pregunta": "q15 (dudosa)",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. OKDiario (2-jul-2026) atribuye al partido que la regularización es «solo un parche», sin un líder identificado en primera persona, y critica la eficacia de la de 2026, no rechaza repetirla: mismo motivo del rechazo de Ibarrola en g5. López Mañero (DSPN 94) condiciona su valoración al texto. Null."
+  },
+  {
+   "partido": "psc",
+   "pregunta": "q31 (dudosa)",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor (copia local tomada del RSS oficial; la página da 403). La nota del PSC (29-sep-2026) solo entrecomilla a Elena Díaz en que aprobar «dos reials decrets» es «un pas important»; la renovación automática de los alquileres aparece en la voz de la nota como información de un acuerdo, sin valorarla ni mencionar los cinco años. Mismo criterio que NC-BC q31 en g5. Null."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q01 (dudosa)",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. Matute (DS 158, p. 27, literal en la copia) pide poner límites también donde no hay zona tensionada, pero el único límite concreto que propone a continuación es recuperar la prórroga automática de los contratos, no un precio máximo estatal; y en campaña EH Bildu defiende la zona tensionada declarada por sus instituciones. Ante la duda, null."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q27 (dudosa)",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. Gavín (DS 207, 23-sep, p. 36) reprocha que el ejército no se desplegara en Ceuta «24 hores abans» (literal en la copia), pero una semana después (DS 209, 30-sep) critica que el PP lo reduzca todo a «una qüestió militarista» y dice «Nosaltres no estem ni a un costat ni a l’altre». Lo posterior es ambivalente y prevalece; además ambas se refieren a la crisis del 30-jul, no a un refuerzo de la vigilancia. Null."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q03 (dudosa)",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. junts.cat/propostes/impostos recoge «Pressió al govern de la Generalitat per reduir l’impost de transmissions patrimonials per als joves que compren el primer habitatge»: rebaja autonómica del ITP, sin IVA ni el 60 %. Medida relacionada pero distinta, mismo criterio con el que g4 rechazó a Nogueras (DS 174) y g7 deja sin valor la rebaja foral de EH Bildu. Null."
+  }
+ ],
+ "dudas": [
+  "upn/q23 (+2): «Okupas fuera en 48 horas» es uno de unos 35 puntos de la lista de compromisos y no dice «ley». Alternativa: +1 (compromiso expreso pero sin el instrumento). Se mantiene +2 por coherencia con SALF q23, cuyo compromiso tampoco habla de ley.",
+  "upn/q30 (null): alternativa −1, si se entiende que comparar con el franquismo el tope de precios del pan y los productos básicos es un rechazo indirecto pero inequívoco de fijar precios máximos (criterio de Vox q30).",
+  "junts/q24 (null): alternativa +1, si se da prioridad a lo posterior (julio y septiembre, reproches por no derogarla) sobre la propuesta de reforma de abril.",
+  "junts/q29 (+1): alternativa +2, si se equipara la petición de no aplicación provisional a la de ERC (+2); se deja en +1 por las reservas del propio Gavín («si s’ha d’aplicar…»).",
+  "junts/q09 (−1): alternativa null, si se considera que el rechazo a la ley de gestión pública es sobre todo competencial. Calvo es diputada (n.º 3 por Barcelona), no cabeza de lista: cuenta porque formula la pregunta del grupo, como Agirretxea (PNV q11) en g4."
+ ],
+ "reatribucion_2026-11-14": {
+  "regla": "Decisión del editor (13-11-2026): los documentos conjuntos de una coalición cuentan para cada partido de la web que firma el pacto de coalición (data/boe/coaliciones.json). Precedencia: programa oficial primero; si el partido ya tiene posición propia con el mismo valor, se mantiene la suya.",
+  "alcance": "Solo una posición aprobada en g7 sale de un documento de coalición: UPN q23 (web de UPN-PP). Firmantes del pacto ante la JEP de Navarra: Unión del Pueblo Navarro y Partido Popular.",
+  "posiciones": [
+   {
+    "partido": "upn",
+    "pregunta": "q23",
+    "antes": null,
+    "despues": 2,
+    "documento": "Web de la coalición UPN-PP, «Compromisos» (13-11)",
+    "motivo": "UPN firma el pacto de coalición y no tenía posición en q23: se añade (es la posición aprobada arriba)."
+   },
+   {
+    "partido": "pp",
+    "pregunta": "q23",
+    "antes": 2,
+    "despues": 2,
+    "documento": "Web de la coalición UPN-PP, «Compromisos» (13-11)",
+    "motivo": "El PP firma el pacto, pero su programa oficial del 29-N ya da +2 («Aprobaremos una ley para que el propietario pueda recuperar su vivienda en 48 horas»): el programa va primero y coincide; se mantiene el suyo. No se toca codificacion de otros grupos."
+   }
+  ]
+ }
+}
