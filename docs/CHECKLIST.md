@@ -23,7 +23,8 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
   revisión independiente, auditoría de coherencia y recodificación del paso 1; sus compromisos ya
   analizados que no estén en el programa pasan a complemento (hasta 4, `base: complemento`, nueva
   revisión).
-  - [ ] PSOE — presenta su programa el 15-nov.
+  - [ ] PSOE — presenta su programa el 15-nov a las 12:00 en Alcorcón (agenda oficial de psoe.es). Tarea programada
+    a las 13:43 para buscarlo y pasarlo por todo el proceso.
   - [x] Vox — **publicado el 12-nov** (PDF en votasentidocomun.es, la web de campaña enlazada desde
     voxespana.es). Hecho el 13-nov: 12 propuestas del programa + 2 de complemento (revisión independiente
     aprobada, 91 correcciones), auditoría de coherencia (`data/fase3/coherencia_2026-11-13.md`: 26 cambios de
@@ -65,6 +66,12 @@ PNV); BOE sin correcciones hasta el 13-nov.
 que cumpla las reglas); paso 2 — UPN 3→9 (compromisos de la web UPN-PP), PSC 4→5, EH Bildu 5→6, se retiran
 podemos-01 y ara_mes_fa-03 (objetivos sin medida); tracking de 40dB del 14-nov; BOE sin correcciones. Réplica
 de la revisión programada creada (caduca el 21-nov; un recordatorio del 20-nov la renueva).
+
+**Revisión del 14-nov, 20:13:** sin programas nuevos (la agenda oficial del PSOE confirma su presentación el 15-nov
+a las 12:00); 30 compromisos nuevos con revisión independiente (SALF 6, citados del «Contrato electoral» oficial;
+Ara Més y Frente Amplio 6 cada uno, documento conjunto; Adelante Andalucía 5, ERC 4, PSC 2, PNV 1; total 195);
+paso 1 sin posiciones nuevas; encuestas sin novedades publicadas (el día 3 del tracking de 40dB sale el 15-nov);
+BOE sin correcciones; dominio y HTTPS correctos.
 
 **Hecho el 13-nov por la tarde** (revisión del cambio partidos/papeletas, commit 1299bb2): el PNV aparece
 en Navarra dentro de Geroa Bai; la afinidad del paso 3 se recalcula (salía «1 %»); documentos conjuntos de
