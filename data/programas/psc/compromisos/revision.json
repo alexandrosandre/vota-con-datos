@@ -67,6 +67,46 @@
    "antes": "e3579b09da50d4d2dadce29f78c312db06f4f041c50d9e87ff56c23d10f6619e",
    "despues": "95c71f99cf57c48ea752621ae9c1d2c5506a18c2857c066ab1964d727b9c32f5",
    "motivo": "Se recalcula tras los cambios en seleccion.json."
+  },
+  {
+   "propuesta": "seleccion psc-c01",
+   "criterio": "veces",
+   "antes": "2",
+   "despues": "3 (nueva ocasión: Hereu en Público, 12-11)",
+   "motivo": "Ocasión propuesta por el analista. Cita literal comprobada en la página y en la copia local. Hereu pide la mayoría para «hacer posible» el acuerdo de financiación de 4.686 M€: lo formula como compromiso para la legislatura, no como logro pasado (criterio con el que se descontó la entrevista del Diari de Tarragona). Solo cubre el nuevo modelo, no la condonación; se dice en la nota de la ocasión.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "seleccion psc-c04 / psc-04",
+   "criterio": "veces y justificación",
+   "antes": "1; «Solo consta una ocasión.»",
+   "despues": "2 (nueva ocasión: Montalvo en Diari de Tarragona, 14-11); la justificación lo dice",
+   "motivo": "Ocasión propuesta por el analista. Cita literal comprobada. Es apoyo de una cabeza de lista al mismo proyecto en campaña; se cuenta con el mismo listón con el que se admite psc-c05. La justificación de psc-05, que comparaba con «una sola ocasión» del Parador, se ajusta.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "psc-05",
+   "criterio": "legal y antecedentes (fuentes)",
+   "antes": "3Cat (11-6-2025); Ara (12-6-2025)",
+   "despues": "3Cat (12-6-2025); Ara (11-6-2025)",
+   "motivo": "Fechas de publicación cruzadas: 3Cat publica el 12-6-2025 a las 13.34 y Ara el 11-6-2025 (datePublished de ambas páginas).",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "psc-05",
+   "criterio": "beneficiarios (fuentes)",
+   "antes": "sin fuente para «la Ricarda y el Remolar»",
+   "despues": "se añade 3Cat (12-6-2025), que nombra las dos lagunas Natura 2000 afectadas",
+   "motivo": "El Remolar no aparece en las fuentes citadas en ese criterio; sí en 3Cat, ya citada en legal.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "evaluacion",
+   "criterio": "seleccion_sha256",
+   "antes": "8fad70899c4c3511ec34d57e1eefba712e457911ad361eaf216feed2f0c71728",
+   "despues": "f52fe0921d6d087ebdd65bee09c4b3f4cc16d553df83af6f29dda3510845fd8a",
+   "motivo": "Se recalcula tras los cambios en seleccion.json.",
+   "fecha": "2026-11-14"
   }
  ],
  "dudas": [
@@ -74,5 +114,42 @@
   "psc-04, internacional («no_verificable»): Portugal tiene una red de pousadas en edificios históricos, que podría contar como aplicación comparable sin evaluación publicada («mixta»). No se halló una fuente oficial sobre su titularidad y gestión que permitiera documentarlo, y se mantiene.",
   "La campaña oficial empieza el 13-11 y el PSC abre en Barcelona: la selección debe revisarse con los compromisos que se anuncien."
  ],
- "criterio_psc_2026-11-13": "Decisión del editor (13-11-2026): se mantienen psc-02 y psc-03. El PSC está federado con el PSOE desde 1978 y comparten candidato a la Presidencia del Gobierno, Pedro Sánchez; por eso lo que dice Sánchez en actos o documentos del PSC cuenta para el PSC. No es el caso de UPN y el PP, partidos independientes que solo van juntos en una coalición electoral: por eso Feijóo no cuenta para UPN. Se reescribe la justificación del criterio, que antes decía ser el mismo que el aplicado a Feijóo en UPN-PP (ese criterio ya no rige: Feijóo no cuenta para UPN). seleccion_sha256 actualizado (95c71f99cf57… → 638b03e2281e…)."
+ "criterio_psc_2026-11-13": "Decisión del editor (13-11-2026): se mantienen psc-02 y psc-03. El PSC está federado con el PSOE desde 1978 y comparten candidato a la Presidencia del Gobierno, Pedro Sánchez; por eso lo que dice Sánchez en actos o documentos del PSC cuenta para el PSC. No es el caso de UPN y el PP, partidos independientes que solo van juntos en una coalición electoral: por eso Feijóo no cuenta para UPN. Se reescribe la justificación del criterio, que antes decía ser el mismo que el aplicado a Feijóo en UPN-PP (ese criterio ya no rige: Feijóo no cuenta para UPN). seleccion_sha256 actualizado (95c71f99cf57… → 638b03e2281e…).",
+ "revision_2026-11-14": {
+  "revisor": "Claude (Anthropic), pasada independiente",
+  "fecha": "2026-11-14",
+  "nuevos": [
+   "psc-c05",
+   "psc-05"
+  ],
+  "alcance": "psc-c05 / psc-05 (selección y 8 criterios) y las dos ocasiones nuevas de psc-c01 y psc-c04. Se abrieron con una petición normal la entrevista de Público (cita de psc-c05 literal en la página y en la copia local, SHA-256 38f5c492…), la de Montalvo en el Diari de Tarragona y las fuentes de la evaluación: NacióDigital (10-6-2025: 500 m, 2.660 a 3.160 m, 3.200 M€, 55 a 70 millones de pasajeros, plan director en 2028, obras desde 2030, final en 2033, 270 ha, fondo de 320 M€, Tokio en estudio desde hace más de una década, «fonts governamentals» sobre la bajada de emisiones), Crónica Global (15-9-2026: DORA III 2027-2031, 1.760 M€, 191 M€ de compensaciones, obras desde 2032, tres céntimos), La Ciutat (19-9-2026: 1.765 M€, 191,25 M€, 40,17 millones de enero a agosto, la Cambra pide adelantar las obras; 20-9-2026: los Comunes estudian ir a los tribunales, la alcaldesa de El Prat se opone), 3Cat (12-6-2025: expediente de 2021, compensaciones de 2002, Ricarda y Remolar), Ara (11-6-2025: procedimiento de infracción), betevé (acuerdo de agosto de 2021 paralizado en septiembre), Ley 18/2014 (DORA aprobado por el Consejo de Ministros, art. 20), NBER WP 18278 (casi 300 áreas metropolitanas, desregulación de 1978) y Comisión Europea (3,8-4 % de las emisiones de la UE en 2022; 66 % del forzamiento neto por efectos distintos del CO2 en 2018). Todas respondieron 200.",
+  "seleccion": "psc-c05 cumple 1b. Medida concreta: la ampliación pactada en 2025 (alargar la pista de mar para vuelos intercontinentales), que Hereu identifica en la misma entrevista («necesitamos una pista más larga»). Primera persona y del partido («yo lo defiendo y el partido también»; «Todo lo que hagamos será con el aval de la Comisión Europea»), del cabeza de lista por Barcelona, en una entrevista de campaña y sobre lo que harán. No es un logro pasado ni un diagnóstico: es un proyecto aún no ejecutado ni autorizado por Bruselas, cuyas fases de esta legislatura son el plan director y la tramitación europea. Mismo listón que psc-04 (un proyecto estatal concreto, una ocasión, en respuesta a una pregunta) y que upn-03 (impulsar inversiones concretas sin cuantía ni plazo). Se distingue de los descartes por «defensa» sin medida (decretos de vivienda, pacto de Estado), en los que no había una medida identificada. Se mantiene el descarte del Plan de Rodalies: en esa respuesta Hereu describe la gestión en curso, no lo que hará. Ocasiones nuevas: se integran las dos propuestas (véase cambios).",
+  "igual_estandar": "psc-05 (ampliación de El Prat) se ha comparado con upn-03 (inversiones del Estado en el Canal de Navarra, el TAV, el aeropuerto de Pamplona y la red eléctrica), la única otra propuesta evaluada de infraestructuras aeroportuarias, y con psc-04 (Parador de Tarragona), otro proyecto estatal concreto con una sola ocasión. Concreción «mixta» como upn-03 y psc-04 (medida identificada sin cuantía ni plazo en boca del líder). Financiación «mixta» con la misma regla de la rúbrica (coste estimable por fuentes públicas, sin explicación del partido de cómo se paga), igual que upn-03 y psc-04. Encaje legal: upn-03 es «favorable» porque sus obras solo requieren competencias estatales y proyectos ya aprobados; psc-05 es «mixta» por un hecho distinto: necesita la conformidad europea por afectar a Natura 2000 y hay un procedimiento de infracción abierto. Experiencia internacional «no_verificable», como psc-04, porque no hemos abierto evaluaciones comparables (upn-03 es «mixta» porque se apoyó en la auditoría del Tribunal de Cuentas Europeo sobre alta velocidad, que no aplica a aeropuertos). Evidencia, antecedentes, beneficiarios y largo plazo «mixta», como en upn-03. No hay otras propuestas evaluadas sobre ampliaciones aeroportuarias (el «Ampliar los aeropuertos saturados» del PP figura en su extracción pero no entre sus 12 evaluadas). Revisión: las ocho valoraciones se siguen de las fuentes y coinciden con upn-03 y psc-04 donde los hechos coinciden; la experiencia internacional queda «no_verificable», como en psc-04, porque no hay fuente que documente una aplicación comparable evaluada.",
+  "dudas_del_analista_resueltas": [
+   "Naturaleza de psc-c05: es compromiso (véase «seleccion»).",
+   "Prioridad con una ocasión y en respuesta a una pregunta: se admite, como psc-04; el prompt 1b manda seleccionar todos los compromisos si hay menos de 12.",
+   "Fecha: se usa la de publicación (12-11), como en las demás entrevistas.",
+   "Cifras del DORA III: 1.760 M€ (Crónica Global) y 1.765 M€ (La Ciutat); se usa 1.765 M€ con el desglose de 191,25 M€ de La Ciutat. Correcto.",
+   "Blonigen y Cristea: se cita el documento de trabajo del NBER que se ha leído; correcto.",
+   "Ocasión de psc-c01: se cuenta, con la salvedad en su nota.",
+   "Ocasión de psc-c04: se cuenta (véase cambios).",
+   "Rodalies: se mantiene el descarte."
+  ],
+  "recuento_psc_05": {
+   "favorable": 0,
+   "mixta": 7,
+   "desfavorable": 0,
+   "no_verificable": 1
+  },
+  "recuento_final_5_propuestas": {
+   "favorable": 5,
+   "mixta": 31,
+   "desfavorable": 0,
+   "no_verificable": 4
+  },
+  "dudas": [
+   "La entrevista de Público la firma el director de su edición catalana (Públic); puede haberse hecho en catalán y traducido. Se usa el texto publicado en castellano, que el medio presenta como palabras de Hereu.",
+   "La búsqueda del analista se cerró el 14-11 a las 09:40: el acto de Terrassa del mediodía y los posteriores no están cubiertos."
+  ]
+ }
 }

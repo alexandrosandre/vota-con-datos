@@ -88,12 +88,54 @@
    "antes": "493fb85d228546b409460c5cd2082c91ac9a83d25912a4859cbddf32fc036b07",
    "despues": "3316763330fd3d7ec750c65a55a450e9de7984336d9a67e094a0047cef0e055d",
    "motivo": "Se recalcula tras los cambios en seleccion.json."
+  },
+  {
+   "propuesta": "seleccion upn-c03 / upn-03",
+   "criterio": "veces y justificación",
+   "antes": "1; «Único bloque de medidas sectoriales del acuerdo de coalición, uno de sus tres puntos programáticos.»",
+   "despues": "2 (Esparza en Itoiz, 13-11, Europa Press); la justificación lo añade",
+   "motivo": "Ocasión propuesta por el analista. Las citas literales de Esparza (UPN) están en la página de Europa Press y en la copia local; las demás crónicas y el vídeo del mismo acto no suman.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "seleccion",
+   "criterio": "descartados (atribución)",
+   "antes": "{\"resumen\": \"Escuela de 0 a 3 años gratuita y universal en Navarra; «tolerancia cero con la corrupción».\", \"quien\": \"Leticia San Martín (atribuido por un resumen de buscador)\", \"fecha\": \"2026-11-10\", \"url\": null, \"fuente_local\": null, \"motivo\": \"No se pudo leer ninguna fuente que lo recoja (Noticias de Navarra devuelve error a peticiones automáticas y no consta en Diario de Navarra, OKDiario Navarra ni Europa Press).\"}",
+   "despues": "tres descartes con la atribución correcta: «0-3 gratuito y universal» y «okupas fuera en 48 horas» (Carmen Alba, PP) y «tolerancia cero con la corrupción» (Javier Esparza, aspiración)",
+   "motivo": "La crónica de Noticias de Navarra (10-11), que ahora responde 200, atribuye la frase del 0-3 a Carmen Alba (PP), que no cuenta para UPN, y la de la corrupción a Esparza. Comprobado en la página y en la copia local.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "seleccion",
+   "criterio": "descartados, busqueda y nota",
+   "antes": "búsqueda hasta el 12-11",
+   "despues": "búsqueda hasta el 14-11; descartes nuevos (Yesa, A-15 y TAV en Tudela en estilo indirecto; plan de inversiones como ocasión de upn-c03; comunicado del 14-11; presentación del 6-11; agregador no oficial); la nota señala la lista de «Compromisos» de upn-pp.es como pendiente",
+   "motivo": "Integración de la búsqueda del 14-11. La nota decía que los compromisos verificables eran los tres del acuerdo; la web de la coalición, que cuenta para UPN, publica desde el 10-11 otra lista sin analizar, y la nota lo dice para que no quede una afirmación sin respaldo.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "upn-03",
+   "criterio": "concrecion (texto; valoración sin cambio, mixta)",
+   "antes": "El acuerdo identifica cuatro infraestructuras concretas (segunda fase del Canal de Navarra, tren de alta velocidad y su conexión con la Y vasca, aeropuerto de Pamplona y red eléctrica), pero solo se compromete a «impulsar y garantizar» su ejecución, sin cuantía, plazo ni actuación concreta en el aeropuerto o en la red eléctrica.",
+   "despues": "El acuerdo identifica cuatro infraestructuras concretas (segunda fase del Canal de Navarra, tren de alta velocidad y su conexión con la Y vasca, aeropuerto de Pamplona y red eléctrica), pero solo se compromete a «impulsar y garantizar» su ejecución, sin cuantía, plazo ni actuación concreta en el aeropuerto o en la red eléctrica. Javier Esparza lo repitió el 13-11 en Itoiz pidiendo un plan de inversiones «con presupuesto, calendario y plazos», sin dar cifras ni plazos propios.",
+   "motivo": "Ocasión nueva del 13-11, sin cifras; propuesto por el analista.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "evaluacion",
+   "criterio": "seleccion_sha256",
+   "antes": "46db1bccc03e9f3384061a3cd5c7ca7a2f8496ea16102c4f54559e61c47c0ade",
+   "despues": "1a8a4a7c13a17d10e5bbb92b0de744c25a06e0a2d458a9773563d6fac0f4c9db",
+   "motivo": "Se recalcula tras los cambios en seleccion.json.",
+   "fecha": "2026-11-14"
   }
  ],
  "dudas": [
   "upn-01, internacional («no_verificable»): Alemania prevé en su Ley Fundamental reorganizar el territorio o fusionar Länder con referéndum (arts. 29 y 118a; Berlín-Brandeburgo, rechazada en 1996). Esas cláusulas son comparables a la DT 4.ª, pero no a su supresión, que es la medida, y se mantiene «no_verificable».",
   "El acuerdo solo se conoce por las notas de UPN, sin el texto íntegro ni una publicación del PP. Si el programa conjunto se publica, sustituye a este análisis.",
-  "La campaña oficial empieza el 13-11; no se hallaron entrevistas de la cabeza de lista al Congreso."
+  "La campaña oficial empieza el 13-11; no se hallaron entrevistas de la cabeza de lista al Congreso.",
+  "[14-11-2026] La lista de «Compromisos» de upn-pp.es (web de la coalición UPN-PP) cuenta para UPN como documento conjunto y no se ha analizado: debería pasar por el prompt 1b (podría añadir compromisos y cambiar las prioridades). No afecta a lo ya evaluado.",
+  "[14-11-2026] Noticias de Navarra (13-11) afirma sin fuente que «el Estado está a punto de licitar la segunda fase del Canal»; no comprobado y no se usa."
  ],
  "reatribucion_2026-11-13": "Tras la revisión aprobada, por decisión del editor (13-11-2026) la entrada pasa a ser el partido UPN y cada compromiso cuenta solo para el partido de quien lo dice. Los tres compromisos se mantienen: salen del acuerdo de coalición, documento conjunto que firma y publica UPN. Se quita lo que se apoyaba en Sergio Sayas, del PP: su ocasión del 10-11 en upn-c03 («veces» de 2 a 1), la segunda parte de la justificación de prioridad de upn-03 y la frase «Sergio Sayas (10-11-2026) no añadió detalles» de la concreción de upn-03, con su fuente de Diario de Navarra; la valoración («mixta») no cambia, porque se basaba en el texto del acuerdo. Se reescriben las notas que describían el criterio anterior (los dirigentes del PP contaban si hablaban para la candidatura). seleccion_sha256 actualizado."
 }
