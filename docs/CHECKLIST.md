@@ -30,7 +30,13 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
     texto en pp, salf, junts y vox, ninguna valoración cambia) y paso 1 recodificado (g6: Vox 23→25 posiciones).
     Abierto, sin efecto en valoraciones: IVA del 4 % italiano para la primera vivienda (salf-01, vox-09) sin
     fuente oficial; motivo de «no_verificable» en la financiación de pp-02.
-  - [ ] PSC, Frente Amplio, Podemos, Junts, EH Bildu, Compromís, NC-BC, Ara Més, UPN — sin fecha.
+  - [x] Compromís — **publicado el 14-nov** (programa de la coalición Compromís: Front Valencià). Hecho el
+    14-nov: 12 propuestas + 4 de complemento (revisión independiente, auditoría de coherencia que cambió dos
+    propuestas para cubrir todos los bloques, y segunda revisión) y paso 1 recodificado (g10: como documento
+    conjunto cuenta también para Podemos, Frente Amplio y ERC).
+  - [ ] PSC, Frente Amplio, Podemos, Junts, EH Bildu, NC-BC, Ara Més, UPN — sin fecha.
+  - Pendiente menor para la próxima auditoría: adelante_andalucia-08 (fuente del 10 % de SEPI en REE: DA 23.ª
+    Ley 54/1997) y pp-07 (resumen de Bom y Ligthart).
 - [ ] **3. [Yo] Revisar la selección de afirmaciones del paso 1** para cubrir mejor a los 18 partidos:
   análisis, codificación y verificación independiente; decido yo, sin pasar por ti. **Hecha el 13-nov**
   (`data/fase1/revision_afirmaciones_2026-11-13/integracion.md`): se retiran q02, q07, q10, q14 y q28, entran
@@ -52,6 +58,12 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
 **Revisión del 13-nov, 20:13:** encuesta Sigma Dos (tracking 13-nov) como escenario propio; 12 compromisos
 nuevos (Frente Amplio 6, Ara Més 3, Vox 2, EH Bildu 1: SMI propio sin cuantía, mismo listón que el del
 PNV); BOE sin correcciones hasta el 13-nov.
+
+**14-nov (barrido adelantado y revisión de la mañana):** paso 1 — UPN 5→6, Junts 12→15, NC-BC 6→7, Ara Més
+8→9, Compromís 13→17, Podemos 18→22, Frente Amplio 16→20, ERC 17→18 (PSC, EH Bildu, CC y PNV sin nada nuevo
+que cumpla las reglas); paso 2 — UPN 3→9 (compromisos de la web UPN-PP), PSC 4→5, EH Bildu 5→6, se retiran
+podemos-01 y ara_mes_fa-03 (objetivos sin medida); tracking de 40dB del 14-nov; BOE sin correcciones. Réplica
+de la revisión programada creada (caduca el 21-nov; un recordatorio del 20-nov la renueva).
 
 **Hecho el 13-nov por la tarde** (revisión del cambio partidos/papeletas, commit 1299bb2): el PNV aparece
 en Navarra dentro de Geroa Bai; la afinidad del paso 3 se recalcula (salía «1 %»); documentos conjuntos de

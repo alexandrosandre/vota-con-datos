@@ -1,0 +1,1178 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-14",
+ "alcance": "Solo lo que cambió tras la revisión aprobada (revision_anterior): la sustitución de compromis-04 y -06 por compromis-13 (Corredor Mediterráneo, p. 12) y compromis-14 (empresa pública de energía, p. 29), con sus 8 criterios y el campo «beneficiarios»; las justificaciones y el orden de las 12 en extraccion.json; el descartado compromis-c04 y el seleccion_sha256 de compromisos/. Se comprobó contra copias guardadas antes del cambio que extraccion.json solo cambia en «prioridades» (las 516 medidas, iguales), que evaluacion.json solo cambia en «nota» y en las dos propuestas sustituidas (las otras 10, idénticas) y que compromisos/seleccion.json solo cambia en el motivo de compromis-c04. Citas: las de compromis-13 y -14 son literales y están en las pp. 12 y 29 (como las relacionadas p088, p. 13; p187, p. 23; p241 y p243, p. 29; p245 y p250, p. 30); traducciones fieles. Se abrieron las 31 URL distintas de las dos evaluaciones (todas responden; EUR-Lex no se usa: el Reglamento 2024/1679 y la Directiva 2019/944 se citan por la copia del DOUE en el BOE) y se comprobó cada cifra, fecha y artículo en la fuente; se abrieron además ocho fuentes nuevas para corregir o completar.",
+ "seleccion": "Las dos nuevas prioridades siguen el criterio aplicado a los demás programas con resumen por bloques (Adelante Andalucía, SALF, BNG): con la sustitución, cada uno de los seis bloques de la web electoral tiene al menos una prioridad (vivienda 3 de 4 líneas, trabajo 2 de 3, «per un tracte just» 2 de 3 en compromis-11, «pel territori» 1 de 4, «per un país connectat» 3 de 4 —la cuarta, la renacionalización de la alta velocidad, está en el complemento como c12— e «per la igualtat» 1 de 3, con el aborto en el complemento como c06), y la DANA sale de la introducción. compromis-13: «Corredor Mediterrani» es el cuarto lema del rótulo de la web, el bloque «per un país connectat» lo nombra, la medida es la única de «Mobilitat sostenible» con «calendari, pressupost i rendició de comptes» (comprobado: las otras apariciones de «calendari» están en otras secciones) y el programa vuelve a ella en las pp. 13 y 23. compromis-14: el bloque «pel territori» no tenía prioridad; la empresa pública es la medida de la sección «Energia» a la que remiten otras (tanteo a favor «de l’empresa pública d’energia», p. 29) y forma un grupo con la titularidad pública de las eléctricas y de Red Eléctrica (pp. 29-30). Las justificaciones son ciertas en lo que afirman y el orden de las 12 sigue la página (4, 4, 4, 6, 8, 12, 19, 29, 36, 55, 57, 57). Ver la duda sobre el fondo soberano de la p. 31.",
+ "igual_estandar": "compromis-13 frente a pnv-04 (Y vasca), compromis-12, upn-03, pp-07, bng-10 y adelante_andalucia-02: concreción «mixta» y legal «favorable» como pnv-04 y compromis-12 (obra estatal de la red de Adif; basta dotarla en los Presupuestos). Beneficiarios pasa de «favorable» a «mixta» (cambio registrado): pnv-04 cuantifica con la población a 15 minutos de cada estación medida por el Tribunal de Cuentas Europeo y un coste total conocido, y compromis-12 con viajeros oficiales y el coste del programa; aquí la única cifra es una frase sin cálculo y el coste pendiente no tiene cifra oficial, como en bng-10 (población total sin zona de influencia, «mixta»). Financiación «mixta» como upn-03 (parte del coste estimable, sin explicar cómo se paga); se escribe en el texto la base de la estimación (previsión de 11.000 M€ hasta 2030 del secretario de Estado y lista de proyectos de 2022), que la distingue de adelante_andalucia-02 y bng-10 («no_verificable», sin ninguna estimación). Internacional «mixta» con los dos lados del Informe 19/2018, como pnv-04. compromis-14 frente a adelante_andalucia-08: evidencia, internacional, antecedentes, financiación («no_verificable») y beneficiarios («mixta») iguales por los mismos hechos; legal «mixta» en las dos, aquí por un hecho propio escrito en el texto: la empresa única de generación, distribución y venta que describe el programa no cabe como tal en el art. 12.1 de la Ley 24/2013 (diferencia de hecho con podemos-11, supermercado público, «favorable», que no ejerce actividad regulada). Frente a podemos-08 (Repsol): legal y financiación «mixta» allí por la compra de una cotizada con coste estimable; aquí no hay compra que estimar, de ahí «no_verificable».",
+ "recuento_inicial": {
+  "favorable": 14,
+  "mixta": 80,
+  "desfavorable": 0,
+  "no_verificable": 2
+ },
+ "recuento_final": {
+  "favorable": 13,
+  "mixta": 81,
+  "desfavorable": 0,
+  "no_verificable": 2
+ },
+ "recuento_nota": "Recuento de las 12 propuestas × 8 criterios tras la sustitución, antes y después de esta revisión (único cambio de valoración: compromis-13, beneficiarios).",
+ "cambios": [
+  {
+   "propuesta": "compromis-13",
+   "criterio": "financiacion",
+   "antes": "No hemos localizado una cifra oficial reciente del coste pendiente; el plan de trabajo de la coordinadora europea del corredor (2022), que expresa su opinión y no la posición de la Comisión, sumaba unos 31.000 M€ para los proyectos del corredor en España hasta 2030, de todos los modos de transporte.",
+   "despues": "No hemos localizado una cifra oficial reciente del coste pendiente. Hay dos referencias de orden de magnitud: en octubre de 2023 el secretario de Estado de Transportes cifró en 11.000 M€ la inversión prevista en el Corredor Mediterráneo hasta 2030 (según la prensa), y la lista de proyectos del corredor que recoge el plan de trabajo de la coordinadora europea (2022), que expresa su opinión y no la posición de la Comisión, sumaba en España unos 31.000 M€, de todos los modos de transporte, con horizonte 2030 e incluidos proyectos ya terminados y otros que acabarían después.",
+   "motivo": "Precisión y respaldo de la valoración «mixta» (coste estimable). El plan de trabajo (p. 27-28) da unos 31.000 M€ como coste total de los proyectos de la lista de 2021 en España: incluye los 185 proyectos ya terminados y un 22 % del coste en proyectos que acaban después de 2030, por lo que «hasta 2030» no era exacto. Se añade la previsión de inversión hasta 2030 que dio el secretario de Estado (Forbes, 26-10-2023: 11.000 M€ para el Mediterráneo, 16.000 M€ para el Atlántico), única cifra pública específica del corredor localizada.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-13",
+   "criterio": "financiacion (fuentes)",
+   "antes": "(sin esta fuente)",
+   "despues": "Forbes España (26-10-2023): el secretario de Estado de Transportes cifra en 11.000 M€ la inversión prevista en el Corredor Mediterráneo hasta 2030 (prensa) — https://forbes.es/ultima-hora/356644/el-gobierno-se-compromete-a-invertir-27-000-millones-en-los-corredores-atlantico-y-mediterraneo-hasta-2030/",
+   "motivo": "Fuente de la previsión de 11.000 M€ añadida.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-13",
+   "criterio": "beneficiarios",
+   "antes": "Beneficiaría a la población y las empresas del litoral mediterráneo: la Oficina del Gobierno para el Corredor Mediterráneo calcula que con él más de quince millones de españoles y sus empresas entrarán en la red europea (2025). También a quienes transportan mercancías por ferrocarril, que en 2024 movió el 3,9 % de las toneladas-kilómetro del transporte terrestre de mercancías en España, frente al 16,6 % estimado en la UE (Eurostat). El coste lo asume el Estado a través de Adif (6.023 M€ ejecutados entre junio de 2018 y marzo de 2026), con cofinanciación de la UE: por ejemplo, 410,7 M€ del FEDER para la línea Murcia-Almería (periodo 2014-2020) y 78 M€ del Mecanismo Conectar Europa para electrificar el tramo Zaragoza-Teruel-Sagunto (2024).",
+   "despues": "Beneficiaría a la población y las empresas del litoral mediterráneo: el coordinador técnico de la Oficina del Gobierno para el Corredor Mediterráneo escribe que con él más de quince millones de españoles y sus empresas entrarán en la red europea (2025), sin detallar el cálculo; no hemos localizado una estimación oficial de usuarios o tráficos esperados. También a quienes transportan mercancías por ferrocarril, que en 2024 movió el 3,9 % de las toneladas-kilómetro del transporte terrestre de mercancías en España, frente al 16,6 % estimado en la UE (Eurostat). El coste lo asume el Estado a través de Adif (6.023 M€ ejecutados entre junio de 2018 y marzo de 2026), con cofinanciación de la UE: por ejemplo, 410,7 M€ del FEDER para la línea Murcia-Almería (periodo 2014-2020) y 78 M€ del Mecanismo Conectar Europa para electrificar el tramo Zaragoza-Teruel-Sagunto (2024). El coste pendiente no tiene cifra oficial reciente.",
+   "motivo": "Mismo estándar. La rúbrica pide «favorable» cuando beneficiarios y quién paga están «identificados y cuantificados con fuentes». pnv-04 lo es porque el Tribunal de Cuentas Europeo mide la población a 15 minutos de cada estación y el coste total de la obra (más de 9.000 M€) es conocido; bng-10 es «mixta» porque solo hay la población total, sin zona de influencia. Aquí la cifra de quince millones es una frase de un artículo del coordinador técnico de la Oficina (revista Tramos, abril de 2025: «van a permitir que en los próximos años más de quince millones de españoles y sus empresas entren de lleno en la red europea»), sin cálculo, y el coste pendiente no tiene cifra oficial (como dice «financiación»). «calcula» se cambia por «escribe», que es lo que hace la fuente.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-13",
+   "criterio": "beneficiarios (valoración)",
+   "antes": "favorable",
+   "despues": "mixta",
+   "motivo": "Ver el cambio de texto: beneficiarios identificados pero no cuantificados con una estimación de usuarios, y coste pendiente sin cifra oficial; mismo criterio que bng-10 y diferencia de hecho con pnv-04 (zona de influencia medida por el TCE y coste total conocido).",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-13",
+   "criterio": "beneficiarios (campo)",
+   "antes": "Población y empresas del litoral mediterráneo (más de quince millones de españoles y sus empresas, según la Oficina del Gobierno para el Corredor Mediterráneo) y usuarios del transporte ferroviario de mercancías y de viajeros.",
+   "despues": "Población y empresas del litoral mediterráneo (más de quince millones de españoles y sus empresas, según un artículo del coordinador técnico de la Oficina del Gobierno para el Corredor Mediterráneo, sin detalle del cálculo) y usuarios del transporte ferroviario de mercancías y de viajeros, sin estimación oficial de su número.",
+   "motivo": "Coherencia con el criterio «beneficiarios» corregido.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-13",
+   "criterio": "beneficiarios (título de fuente)",
+   "antes": "Ministerio de Transportes, revista Tramos (abril de 2025): «El momento del Corredor Mediterráneo es ahora», de la Oficina del Gobierno para el Corredor Mediterráneo",
+   "despues": "Ministerio de Transportes, revista Tramos (abril de 2025): «El momento del Corredor Mediterráneo es ahora», artículo de Vicente Torralba, coordinador técnico de la Oficina del Gobierno para el Corredor Mediterráneo",
+   "motivo": "El texto es un artículo firmado por el coordinador técnico de la Oficina, no un cálculo de la Oficina.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-13",
+   "criterio": "evidencia",
+   "antes": "y, entre Barcelona y Perpiñán, documentó",
+   "despues": "y, en el tramo Barcelona-Perpiñán del corredor ferroviario de mercancías Mediterráneo, documentó",
+   "motivo": "Atribución explícita: el informe sitúa los dos proyectos estudiados «en el corredor ferroviario de mercancías 6 entre Barcelona (España) y Perpiñán (Francia)» (anexo VI), es decir, el corredor de mercancías del Reglamento 913/2010, que se solapa con el Corredor Mediterráneo pero no es la misma figura.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-13",
+   "criterio": "evidencia",
+   "antes": "con trenes limitados a unos 500 metros.",
+   "despues": "con trenes de mercancías limitados a unos 500 metros en el tramo Barcelona-Figueres.",
+   "motivo": "Precisión: el anexo VI sitúa el límite de unos 500 m en el tramo español Barcelona-Figueras.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-13",
+   "criterio": "evidencia (título de fuente)",
+   "antes": "Tribunal de Cuentas Europeo (2016), Informe Especial 08/2016: el transporte de mercancías por ferrocarril en la UE, apdos. 19-22 y anexo VI",
+   "despues": "Tribunal de Cuentas Europeo (2016), Informe Especial 08/2016: el transporte de mercancías por ferrocarril en la UE, resumen (apdo. VIII), apdos. 19-22 y anexo VI",
+   "motivo": "La frase citada entre comillas está en el apdo. VIII del resumen, no en los apdos. 19-22.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-13",
+   "criterio": "internacional",
+   "antes": "halló que en tres de las siete líneas terminadas que auditó el número de pasajeros fue muy inferior a la referencia de nueve millones al año.",
+   "despues": "halló que en tres de las siete líneas terminadas que auditó el número de pasajeros fue muy inferior a la referencia de nueve millones al año, mientras que otras tres, entre ellas Madrid-Barcelona, la superaban en 2016.",
+   "motivo": "Mismo estándar que pnv-04 (misma fuente, «mientras que otras lo superaban»): la valoración «mixta» (resultados dispares) necesita los dos lados; el informe (apdo. 79) cita Madrid-Barcelona, Turín-Salerno y la LGV Est-Européenne por encima de nueve millones en 2016.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-13",
+   "criterio": "antecedentes",
+   "antes": "En 2018 el ministro de Fomento, José Luis Ábalos, situó en 2021 la conexión en ancho estándar de Algeciras con Francia (Valencia Plaza, 27-9-2018).",
+   "despues": "En septiembre de 2018 el ministro de Fomento, José Luis Ábalos, dijo confiar en que en 2021 estaría conectado en ancho estándar desde Algeciras hasta la frontera francesa (Valencia Plaza y 3Cat, 27-9-2018).",
+   "motivo": "Fidelidad a la cita («Confío en que para 2021 ya estará conectado desde Algeciras hasta la frontera francesa con el ancho estándar»): es una previsión, no un plazo fijado. El dato solo consta en prensa; se añade una segunda fuente independiente (3Cat, con ACN: «Ábalos confia que el 2021 les obres entre Algesires i França estiguin pràcticament acabades»). No se ha localizado nota oficial del Ministerio de ese acto.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-13",
+   "criterio": "antecedentes (fuentes)",
+   "antes": "(sin esta fuente)",
+   "despues": "3Cat (27-9-2018): «El corredor mediterrani es podria acabar el 2021, segons afirma el ministre Ábalos» (prensa) — https://www.3cat.cat/3catinfo/el-corredor-mediterrani-es-podria-acabar-el-2021-segons-afirma-el-ministre-abalos/noticia/2877760/",
+   "motivo": "Segunda fuente del plazo de 2021.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-13",
+   "criterio": "largo_plazo",
+   "antes": "El Reglamento obligaba a España a evaluar antes del 19-7-2026 la migración al ancho estándar de las líneas existentes de los corredores (art. 17.3); no hemos localizado esa evaluación.",
+   "despues": "El Reglamento obligaba a España a evaluar antes del 19-7-2026 la migración al ancho estándar de las líneas existentes de los corredores (art. 17.3); según la agencia ACN (16-7-2026), el estudio del Ministerio, en fase final de redacción, la considera «claramente desaconsejable» (unos 30 años de obras y al menos 20.000 M€, más otros 10.000 M€ de costes adicionales). No hemos localizado su versión publicada.",
+   "motivo": "La afirmación basada en una ausencia era incompleta: la prensa (ACN, recogida por el Diari de Tarragona, a partir de El País) informó en julio de 2026 del contenido del estudio de viabilidad del Ministerio. Se recoge, atribuido, y se mantiene que no consta publicado.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-13",
+   "criterio": "largo_plazo (fuentes)",
+   "antes": "(sin esta fuente)",
+   "despues": "Diari de Tarragona, con ACN (16-7-2026): el estudio de Transportes sobre la migración al ancho estándar (prensa) — https://www.diaridetarragona.com/catalunya/266013/transports-cree-adaptar-ancho-via-iberico-europeo-dificilmente-asumible-calcula-necesitarian-30-anos.html",
+   "motivo": "Fuente del estudio del Ministerio.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-14",
+   "criterio": "legal",
+   "antes": "La distribución es una actividad regulada, y la ley exige ejercerla en una sociedad distinta de las que producen o venden electricidad, con independencia en su gestión (Ley 24/2013, art. 12; Directiva 2019/944, art. 35).",
+   "despues": "La distribución es una actividad regulada, y la ley exige ejercerla en una sociedad distinta de las que producen o venden electricidad, con independencia en su gestión salvo en las distribuidoras de menos de 100.000 clientes (Ley 24/2013, art. 12; Directiva 2019/944, art. 35): la empresa única que describe el programa tendría que organizarse como un grupo de sociedades.",
+   "motivo": "Precisión (art. 12.4: los requisitos de independencia no se aplican a distribuidoras con menos de 100.000 clientes) y motivo de la valoración escrito en el texto: el programa describe una sola empresa «de generació, distribució i comercialització», que el art. 12.1 no permite como tal. Es la diferencia de hecho con podemos-11 (supermercado público, «favorable»), que no ejerce ninguna actividad regulada.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-14",
+   "criterio": "legal",
+   "antes": "Las centrales hidroeléctricas revierten gratis al Estado al extinguirse su concesión (Ley de Aguas, art. 53.4), y la Dirección General del Agua promueve sacar su explotación a concurso público; no hemos localizado una norma que prevea encargarla directamente a una empresa pública.",
+   "despues": "Al extinguirse la concesión, las obras construidas en el dominio público hidráulico revierten gratis a la Administración competente (Ley de Aguas, art. 53.4). El Estado puede explotarlas directamente (la ley exime del canon hidroeléctrico a los aprovechamientos explotados por la Administración General del Estado o las confederaciones, art. 112 bis.7) o sacar su explotación a concurso público (Reglamento del Dominio Público Hidráulico, art. 132.2), la vía que promueve la Dirección General del Agua; la Ley de Aguas también permite al Consejo de Ministros encargar mediante convenio la explotación de obras hidráulicas públicas a sociedades estatales creadas para ello (art. 132).",
+   "motivo": "Error: la afirmación basada en una ausencia («no hemos localizado una norma que prevea encargarla directamente a una empresa pública») no se sostiene. La propia Ley de Aguas, ya citada, prevé la explotación directa por el Estado (art. 112 bis.7) y autoriza sociedades estatales para explotar obras hidráulicas públicas mediante convenio (art. 132); el concurso tiene base en el art. 132.2 del Reglamento (BOE-B-2025-18511, concurso de La Riera). Además, el art. 53.4 dice «a la Administración competente», no «al Estado» (en las cuencas intracomunitarias es la comunidad autónoma).",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-14",
+   "criterio": "legal (fuentes)",
+   "antes": "(sin esta fuente)",
+   "despues": "Real Decreto 849/1986, Reglamento del Dominio Público Hidráulico, art. 132 (texto consolidado, BOE) — https://www.boe.es/buscar/act.php?id=BOE-A-1986-10638",
+   "motivo": "Base del concurso público para centrales revertidas.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-14",
+   "criterio": "legal (fuentes)",
+   "antes": "(sin esta fuente)",
+   "despues": "BOE-B-2025-18511: Dirección General del Agua, concurso público para la explotación del aprovechamiento hidroeléctrico de titularidad estatal de La Riera (22-5-2025) — https://www.boe.es/boe/dias/2025/05/22/pdfs/BOE-B-2025-18511.pdf",
+   "motivo": "Fuente oficial de que la Dirección General del Agua saca a concurso la explotación de centrales revertidas (complementa la presentación en jornada).",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-14",
+   "criterio": "legal (título de fuente)",
+   "antes": "Real Decreto Legislativo 1/2001, texto refundido de la Ley de Aguas, art. 53.4 (texto consolidado, BOE)",
+   "despues": "Real Decreto Legislativo 1/2001, texto refundido de la Ley de Aguas, arts. 53.4, 112 bis y 132 (texto consolidado, BOE)",
+   "motivo": "Artículos citados en el texto corregido.",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-14",
+   "criterio": "financiacion",
+   "antes": "Una parte de los activos no exigiría compra: las centrales hidroeléctricas revierten gratis al Estado al terminar su concesión (Ley de Aguas, art. 53.4), y la Dirección General del Agua contaba en 2025 170 concesiones hidroeléctricas que terminan hasta 2035, con 1.736 MW.",
+   "despues": "Una parte de los activos no exigiría compra: al terminar la concesión, las obras de las centrales construidas en el dominio público hidráulico revierten gratis a la Administración competente (Ley de Aguas, art. 53.4), y la Dirección General del Agua contaba en 2025, en una presentación en una jornada técnica, 170 concesiones hidroeléctricas en explotación que terminan hasta 2035, con 1.736 MW; las que no son viables se demuelen a cargo del titular.",
+   "motivo": "Precisión: el art. 53.4 dice «a la Administración competente» y se refiere a las obras en el dominio público hidráulico; la misma presentación indica que la Administración solo ordena demoler las instalaciones abandonadas o inviables (de pequeña potencia). Se indica el tipo de fuente (presentación de la Dirección General del Agua en una jornada de Spancold).",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-14",
+   "criterio": "internacional",
+   "antes": "empresa de propiedad pública e independiente en su gestión cuyo objeto incluye la producción, distribución, almacenamiento y suministro de energía limpia; la ley prevé revisiones independientes de su eficacia cada cinco años como máximo, y no hemos localizado ninguna publicada.",
+   "despues": "empresa de propiedad pública e independiente en su gestión cuyo objeto incluye facilitar, impulsar y participar en la producción, distribución, almacenamiento y suministro de energía limpia; la ley prevé revisiones independientes de su eficacia a intervalos de cinco años como máximo desde su aprobación, por lo que la primera puede publicarse hasta 2030.",
+   "motivo": "Fidelidad a la ficha («facilitating, encouraging, and participating in») y precisión: que no haya revisión publicada no es un dato de resultado, porque la primera no vence hasta 2030 («published at no more than 5-year intervals post Royal Assent»).",
+   "fecha": "2026-11-14"
+  },
+  {
+   "propuesta": "compromis-14",
+   "criterio": "antecedentes (fuentes)",
+   "antes": "(sin esta fuente)",
+   "despues": "Ley 54/1997 del Sector Eléctrico, disposición adicional vigésima tercera, vigente según la disposición derogatoria única de la Ley 24/2013 (texto consolidado, BOE): participación de la SEPI en Red Eléctrica «no inferior al 10 por ciento» — https://www.boe.es/buscar/act.php?id=BOE-A-1997-25340",
+   "motivo": "El mínimo legal del 10 % no figura en la página de la SEPI citada; su base es la disposición adicional 23.ª de la Ley 54/1997, que la Ley 24/2013 mantiene en vigor.",
+   "fecha": "2026-11-14"
+  }
+ ],
+ "dudas": [
+  "Selección de compromis-14 (decisión editorial, no error): la línea de la web «Exigirem que els beneficis de la transició energètica siguen per a la ciutadania i no per a l'oligopoli» también se corresponde, casi palabra por palabra, con el fondo soberano de la p. 31 (compromis-p254: «perquè els beneficis de l’oligopoli energètic financie serveis públics…»). La empresa pública tiene a favor que otras medidas remiten a ella y forma grupo con la titularidad pública de eléctricas y Red Eléctrica (más espacio y repetición); el fondo soberano, la coincidencia literal con la web, el criterio que se usó para compromis-07. La justificación no menciona esa alternativa; si el editor lo prefiere, puede añadirse.",
+  "compromis-13, financiación: la previsión de 11.000 M€ hasta 2030 solo consta en prensa (Forbes, 26-10-2023, intervención del secretario de Estado en Global Mobility Call); no se ha localizado nota oficial. El plazo de 2021 de Ábalos también solo consta en prensa (Valencia Plaza y 3Cat), con cita directa.",
+  "compromis-14: la presentación de la Dirección General del Agua (jornada de Spancold, 2025) sigue siendo la única fuente de las 170 concesiones y 1.736 MW hasta 2035 y de la titularidad de 100 MW de la CH del Ebro; el concurso público ahora tiene además respaldo oficial (RDPH art. 132.2 y BOE-B-2025-18511).",
+  "Fuera del alcance (otros partidos, no tocados): adelante_andalucia-08 atribuye el mínimo legal del 10 % de la SEPI en Red Eléctrica a la página de la SEPI, que no lo dice (la base es la disposición adicional 23.ª de la Ley 54/1997, añadida aquí a compromis-14); pp-07 resume a Bom y Ligthart como «mayor en infraestructuras básicas», igual que compromis-13, cuando el artículo dice que la elasticidad casi se duplica para infraestructuras básicas regionales o locales."
+ ],
+ "cambios_seleccion": [
+  {
+   "sale": "compromis-04",
+   "propuesta_extraccion": "compromis-p018",
+   "entra": "compromis-13",
+   "propuesta_extraccion_nueva": "compromis-p079",
+   "motivo": "El Corredor Mediterrani es lema de la web electoral, línea del bloque «per un país connectat», medida con «calendari, pressupost i rendició de comptes» (p. 12) y se repite en las pp. 13 y 23; compromis-04 era la cuarta línea de vivienda de la web, un bloque que ya tenía tres prioridades."
+  },
+  {
+   "sale": "compromis-06",
+   "propuesta_extraccion": "compromis-p021",
+   "entra": "compromis-14",
+   "propuesta_extraccion_nueva": "compromis-p240",
+   "motivo": "Desarrolla la primera línea del bloque «pel territori» de la web, que no tenía prioridad; compromis-06 se apoyaba en una línea de la web que no nombra el SMI y el bloque de trabajo conserva dos prioridades."
+  }
+ ],
+ "ids": "Se usan identificadores nuevos (compromis-13 y -14) en lugar de reutilizar compromis-04 y -06, como cuando se retiraron podemos-01 o ara_mes_fa-03: la web enlaza cada tarjeta por id (prop-<id>) y numera por posición, y las revisiones de bng, psc, psoe, upc y ara_mes_fa y data/fase3/coherencia_2026-11-14.md citan compromis-04 y -06 como las propuestas retiradas. El orden de las 12 en evaluacion.json y extraccion.json sigue la página del programa.",
+ "propuestas_retiradas": {
+  "compromis-04": {
+   "id": "compromis-04",
+   "titulo": "Más impuestos a partir de la tercera vivienda: gravamen del 10 % del valor catastral, ITP e IBI",
+   "area": "fiscalidad",
+   "resumen": "Crear un gravamen del 10 % sobre el valor catastral de cada vivienda a partir de la tercera, alquilada o vacía, con exclusiones, subir un 200 % el ITP a partir de la tercera propiedad y hacer progresivo el IBI desde la tercera vivienda.",
+   "cita": "Atorgarem exempcions de l’Impost sobre Transmissions Patrimonials per a l’adquisició de la primera vivenda valorada en menys de 350.000€. A partir de la tercera propietat s’augmentarà un 200%. [...] Crearem un gravamen específic del 10% sobre el valor cadastral dels habitatges addicionals a partir del tercer immoble en mans de persones físiques o jurídiques, incloent-hi els que es troben en règim d’arrendament o desocupats.",
+   "cita_traduccion": "Otorgaremos exenciones del Impuesto sobre Transmisiones Patrimoniales para la adquisición de la primera vivienda valorada en menos de 350.000 €. A partir de la tercera propiedad se aumentará un 200 %. [...] Crearemos un gravamen específico del 10 % sobre el valor catastral de las viviendas adicionales a partir del tercer inmueble en manos de personas físicas o jurídicas, incluidas las que se encuentren en régimen de arrendamiento o desocupadas.",
+   "pagina": 5,
+   "beneficiarios": "Pagarían más los propietarios de tres o más viviendas, personas físicas o jurídicas, cuyo número no publica ninguna fuente oficial localizada; del gravamen del 10 % quedan excluidas las viviendas de uso habitual, las de cooperativas sin ánimo de lucro y las de programas públicos de vivienda social. El programa destina la subida del IBI a mejorar la financiación de los ayuntamientos y no dice a qué se destinaría el resto.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (pp. 5-6) concreta tres impuestos: un gravamen específico del 10 % sobre el valor catastral de cada vivienda a partir de la tercera, esté alquilada o vacía, con exclusiones (uso habitual, cooperativas sin ánimo de lucro y programas públicos de vivienda social); un ITP un 200 % más alto a partir de la tercera propiedad, y un IBI progresivo desde la tercera vivienda. No dice si el gravamen del 10 % es anual ni quién lo cobraría, no fija el tipo del IBI y no cuantifica la recaudación ni da plazos.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=5",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 5"
+      },
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=6",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 6"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "El Estado puede crear tributos por ley (art. 133.1 CE) y regular en sus leyes el ITP, cedido a las comunidades, y el IBI, municipal; la ley ya distingue por número de viviendas (los recargos del IBI sobre viviendas vacías son exclusivos o mayores para titulares de cuatro o más inmuebles residenciales, art. 72.4 bis TRLRHL) y el Tribunal Constitucional avaló el impuesto catalán sobre viviendas vacías (STC 4/2019). Las tres medidas requieren leyes ordinarias de las Cortes, por mayoría simple. Pero las comunidades regulan el tipo del ITP sobre la compra de inmuebles (art. 49 de la Ley 22/2009) y el tipo estatal del 6 % solo se aplica donde no lo han fijado (art. 11 del texto refundido del impuesto), por lo que una subida estatal del 200 % exigiría reformar también la ley de cesión de tributos para limitar esa capacidad. El límite general es que el sistema tributario no tenga alcance confiscatorio (art. 31.1 CE; doctrina recogida en la STC 182/2021): si el 10 % fuera anual, alcanzaría también a viviendas alquiladas, cuya rentabilidad bruta era del 3,0 % a finales de 2025 según el Banco de España citado por la prensa; aunque la base sea el valor catastral, que por ley no puede superar el de mercado (art. 23.2 de la Ley del Catastro), su encaje dependería del diseño.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214",
+       "titulo": "Texto refundido de la Ley reguladora de las Haciendas Locales, art. 72 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://hj.tribunalconstitucional.es/docs/BOE/BOE-A-2019-2030.pdf",
+       "titulo": "STC 4/2019, de 17 de enero (impuesto catalán sobre viviendas vacías), BOE"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-20375",
+       "titulo": "Ley 22/2009, del sistema de financiación de las comunidades autónomas de régimen común, art. 49 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://hj.tribunalconstitucional.es/es/Resolucion/GetDocumentResolucion/26840",
+       "titulo": "Tribunal Constitucional, STC 182/2021, de 26 de octubre (recoge la doctrina de la STC 126/2019 sobre confiscatoriedad)"
+      },
+      {
+       "url": "https://www.vozpopuli.com/economia/inmobiliario/la-rentabilidad-del-alquiler-cae-a-su-nivel-mas-bajo-en-15-anos-y-ya-rinde-menos-que-los-bonos-del-estado.html",
+       "titulo": "Vozpópuli, sobre los indicadores del Banco de España: rentabilidad bruta del alquiler del 3,0 % a finales de 2025 y déficit de unas 700.000 viviendas"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4163",
+       "titulo": "Texto refundido de la Ley del Catastro Inmobiliario, art. 23 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1993-25359",
+       "titulo": "Texto refundido de la Ley del Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados, art. 11 (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "no_verificable",
+     "texto": "Son medidas de ingreso, no de gasto. El gravamen tiene tipo y base (10 % del valor catastral), pero no se ha localizado una cifra oficial de cuántas viviendas tienen los propietarios de tres o más ni de su valor catastral, y el programa no dice si el gravamen es anual ni cuánto recaudarían las tres medidas; el IBI no tiene tipo. No hay base pública para estimar su recaudación.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=5",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 5"
+      },
+      {
+       "url": "https://lamarea.com/2024/09/17/cae-numero-propietarios-un-inmueble-aumentan-multipropietarios",
+       "titulo": "La Marea (17-9-2024): titulares catastrales por número de inmuebles, 2015-2024 (datos del Catastro)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Gravar la vivienda vacía reduce la desocupación: en Francia, el impuesto de 1999 redujo un 13 % la tasa de viviendas vacías, sobre todo de larga duración, y la mayoría pasó a ser residencia principal (Segú, 2020). Si el impuesto recae sobre viviendas alquiladas, puede trasladarse a los inquilinos: en Alemania, las subidas del impuesto municipal sobre inmuebles se trasladaron íntegramente a los alquileres en tres años, según un estudio no revisado por pares (Löffler y Siegloch, 2021). El efecto depende de qué viviendas se graven.",
+     "fuentes": [
+      {
+       "url": "https://ideas.repec.org/a/eee/pubeco/v185y2020ics0047272719301409.html",
+       "titulo": "Segú (2020), The impact of taxing vacancy on housing markets: Evidence from France, Journal of Public Economics 185 (ficha RePEc)"
+      },
+      {
+       "url": "https://docs.iza.org/dp14195.pdf",
+       "titulo": "Löffler y Siegloch (2021), Welfare Effects of Property Taxation, IZA DP 14195 (documento de trabajo, no revisado por pares)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Francia grava desde 1999 las viviendas vacías, con una evaluación que muestra una reducción de la desocupación (Segú, 2020). No se ha localizado ningún país con un gravamen del 10 % del valor que alcance a las viviendas alquiladas a partir de la tercera, que es lo que define la propuesta, ni una evaluación de un impuesto que aumente con el número de viviendas.",
+     "fuentes": [
+      {
+       "url": "https://ideas.repec.org/a/eee/pubeco/v185y2020ics0047272719301409.html",
+       "titulo": "Segú (2020), The impact of taxing vacancy on housing markets: Evidence from France, Journal of Public Economics 185 (ficha RePEc)"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "Desde la Ley 12/2023 los ayuntamientos pueden cobrar recargos en el IBI de las viviendas vacías de titulares de cuatro o más inmuebles residenciales, y el RDL 29/2026 modifica esos recargos, distinguiendo entre zonas tensionadas y el resto, y añade otros a las viviendas turísticas. El mismo decreto, convalidado el 12-11-2026, sustituye desde 2027 los porcentajes fijos de la imputación de rentas del IRPF por los inmuebles urbanos no alquilados distintos de la vivienda habitual por una escala del 1,1 % al 3 % según la suma de sus valores catastrales. Cataluña aplica desde 2015 un impuesto sobre viviendas vacías de personas jurídicas, avalado en 2019; no se han localizado evaluaciones de sus efectos.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203",
+       "titulo": "Ley 12/2023, de 24 de mayo, por el derecho a la vivienda (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214",
+       "titulo": "Texto refundido de la Ley reguladora de las Haciendas Locales, art. 72 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+       "titulo": "Real Decreto-ley 29/2026, de 6 de octubre, de medidas urgentes para la protección de la función social de la vivienda (BOE)"
+      },
+      {
+       "url": "https://www.congreso.es/es/busqueda-de-iniciativas?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=130%2F000060",
+       "titulo": "Congreso de los Diputados, iniciativa 130/000060 (RDL 29/2026): «Concluido - (Convalidado)» el 12-11-2026"
+      },
+      {
+       "url": "https://hj.tribunalconstitucional.es/docs/BOE/BOE-A-2019-2030.pdf",
+       "titulo": "STC 4/2019, de 17 de enero (impuesto catalán sobre viviendas vacías), BOE"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "El coste recaería en los propietarios de tres o más viviendas. Según datos del Catastro recogidos por La Marea, en 2024 había 3,06 millones de titulares con tres inmuebles, pero esa cifra incluye garajes y trasteros y no mide viviendas; no se ha localizado una cifra oficial de propietarios de tres o más viviendas. El programa destina la subida del IBI a la financiación de los ayuntamientos (p. 5); no dice a qué destinaría lo recaudado con el gravamen y el ITP, por lo que no puede cuantificarse quién se beneficiaría.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=5",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 5"
+      },
+      {
+       "url": "https://lamarea.com/2024/09/17/cae-numero-propietarios-un-inmueble-aumentan-multipropietarios",
+       "titulo": "La Marea (17-9-2024): titulares catastrales por número de inmuebles, 2015-2024 (datos del Catastro)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Gravar las viviendas vacías puede devolverlas al mercado, como ocurrió en Francia (Segú, 2020). Como el gravamen incluye las viviendas alquiladas, el riesgo documentado es que se traslade a los inquilinos (Löffler y Siegloch, 2021, en Alemania, documento no revisado por pares) o que los propietarios vendan; el efecto final depende de si el 10 % es anual y de cómo se apliquen las exclusiones, que el programa no precisa.",
+     "fuentes": [
+      {
+       "url": "https://ideas.repec.org/a/eee/pubeco/v185y2020ics0047272719301409.html",
+       "titulo": "Segú (2020), The impact of taxing vacancy on housing markets: Evidence from France, Journal of Public Economics 185 (ficha RePEc)"
+      },
+      {
+       "url": "https://docs.iza.org/dp14195.pdf",
+       "titulo": "Löffler y Siegloch (2021), Welfare Effects of Property Taxation, IZA DP 14195 (documento de trabajo, no revisado por pares)"
+      },
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=5",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 5"
+      }
+     ]
+    }
+   }
+  },
+  "compromis-06": {
+   "id": "compromis-06",
+   "titulo": "Salario mínimo al 60 % del salario medio, fijado por ley",
+   "area": "empleo",
+   "resumen": "Garantizar por ley que el SMI llegue al 60 % del salario medio, sin que la subida pueda compensarse con complementos salariales, e impulsar medidas para subir el salario medio.",
+   "cita": "Garantirem per llei que l’SMI arribe al 60% del salari mitjà, sense que l’augment puga absorbir els complements retributius, i impulsarem mesures per a augmentar el salari mitjà.",
+   "cita_traduccion": "Garantizaremos por ley que el SMI llegue al 60 % del salario medio, sin que el aumento pueda absorber los complementos retributivos, e impulsaremos medidas para aumentar el salario medio.",
+   "pagina": 6,
+   "beneficiarios": "Las personas que cobran el SMI, unos 2,5 millones según el Gobierno (subida de 2026), y quienes cobran poco más y tienen complementos que hoy pueden compensarse con la subida. El coste lo asumen las empresas con plantillas de salarios bajos y, en menor medida, las administraciones como empleadoras.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 6) fija la referencia (el 60 % del salario medio), el instrumento (una ley) y que la subida no pueda compensarse con complementos salariales. No indica el año, si el salario medio es bruto o neto ni qué estadística usa, ni el plazo. Según el INE (28-5-2026), el salario medio bruto de 2024 fue de 29.540 €, cuyo 60 % (17.724 €, cálculo propio) supera en unos 630 € el SMI de 2026 (17.094 € anuales); la comisión asesora del Ministerio de Trabajo calcula el objetivo del 60 % sobre el salario medio neto a tiempo completo, por lo que el alcance real de la propuesta depende de la definición.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=6",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 6"
+      },
+      {
+       "url": "https://ine.es/dyngs/Prensa/EAES2024.htm",
+       "titulo": "INE, Encuesta Anual de Estructura Salarial 2024 (28-5-2026)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3815",
+       "titulo": "Real Decreto 126/2026, SMI 2026 (BOE)"
+      },
+      {
+       "url": "https://prensa.mites.gob.es/webPrensa/api/file/adjunto/3746",
+       "titulo": "Ministerio de Trabajo (15-1-2025): III informe de la Comisión Asesora para el SMI (60 % del salario medio neto)"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "El Gobierno fija el SMI cada año (art. 27.1 del Estatuto de los Trabajadores), y ese mismo artículo dispone que su revisión no afecta a la estructura ni a la cuantía de los salarios profesionales cuando, en su conjunto y cómputo anual, son superiores. Fijar por ley la referencia del 60 % e impedir que la subida se compense con complementos exige modificar ese artículo y la regla general de compensación y absorción (art. 26.5), lo que puede hacerse por ley ordinaria porque la legislación laboral es competencia exclusiva del Estado (art. 149.1.7.ª CE). La Directiva (UE) 2022/2041 cita el 60 % de la mediana y el 50 % de la media como referencias; el TJUE (C-19/23) anuló en 2025 algunas de sus reglas sobre criterios de fijación pero mantuvo el resto.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430",
+       "titulo": "Estatuto de los Trabajadores, texto consolidado (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2022-81556",
+       "titulo": "Directiva (UE) 2022/2041 sobre salarios mínimos adecuados (DOUE, copia del BOE)"
+      },
+      {
+       "url": "https://www.boe.es/doue/2026/132/Z00001-00001.pdf",
+       "titulo": "TJUE, asunto C-19/23 Dinamarca/Parlamento y Consejo (11-11-2025), DOUE C/2026/132 (copia del BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "no_verificable",
+     "texto": "El coste recae sobre todo en las empresas; para las administraciones afecta a salarios propios y a la recaudación de cotizaciones. El programa no precisa qué salario medio toma como referencia: con el salario medio bruto del INE de 2024 (29.540 €), el 60 % (17.724 €, cálculo propio) supera en unos 630 € el SMI de 2026 (17.094 €), mientras que la comisión asesora del Gobierno lo calcula sobre el salario medio neto a tiempo completo. Sin esa definición no puede saberse si la medida exige nuevas subidas ni estimar su coste, al que se sumaría el de impedir la compensación con complementos; no hemos localizado una estimación pública.",
+     "fuentes": [
+      {
+       "url": "https://ine.es/dyngs/Prensa/EAES2024.htm",
+       "titulo": "INE, Encuesta Anual de Estructura Salarial 2024 (28-5-2026)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3815",
+       "titulo": "Real Decreto 126/2026, SMI 2026 (BOE)"
+      },
+      {
+       "url": "https://prensa.mites.gob.es/webPrensa/api/file/adjunto/3746",
+       "titulo": "Ministerio de Trabajo (15-1-2025): III informe de la Comisión Asesora para el SMI (60 % del salario medio neto)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "El Banco de España observó tras la subida del SMI de 2019 un menor crecimiento del empleo de los trabajadores de salarios más bajos, más acusado en mayores y en horas y contratación de jóvenes, aunque advierte de dificultades de identificación. En Reino Unido, cuyo salario mínimo se quedó en 2024 algo por debajo del objetivo de dos tercios de la mediana según la Low Pay Commission, esta aprecia pocas señales de aumento de despidos en los datos oficiales.",
+     "fuentes": [
+      {
+       "url": "https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-ocasionales/efectos-salario-minimo-interprofesional-empleo-nueva-evidencia-para-espana.html",
+       "titulo": "Banco de España, DO 2113: efectos del SMI en el empleo"
+      },
+      {
+       "url": "https://www.gov.uk/government/publications/minimum-wage-rates-for-2025/low-pay-commission-summary-of-evidence-2024",
+       "titulo": "Low Pay Commission (Reino Unido), Summary of evidence 2024"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "La Directiva europea de salarios mínimos adecuados toma como referencias el 60% del salario mediano bruto y el 50% del medio. Reino Unido fijó como objetivo dos tercios de la mediana para 2024; la Low Pay Commission ve pocas señales de aumento de despidos en los datos oficiales, aunque en una encuesta empresarial creció la proporción de empleadores afectados que dicen haber despedido o contratado menos.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2022-81556",
+       "titulo": "Directiva (UE) 2022/2041 sobre salarios mínimos adecuados (DOUE, copia del BOE)"
+      },
+      {
+       "url": "https://www.gov.uk/government/publications/minimum-wage-rates-for-2025/low-pay-commission-summary-of-evidence-2024",
+       "titulo": "Low Pay Commission (Reino Unido), Summary of evidence 2024"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "favorable",
+     "texto": "España ha elevado el SMI de forma continuada; en 2026 quedó en 1.221 € en 14 pagas (17.094 € al año, +3,1%), y el real decreto mantiene el objetivo de alcanzar el 60% del salario medio siguiendo al Comité Europeo de Derechos Sociales. El Gobierno cifra en unos 2,5 millones las personas afectadas por esa subida.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3815",
+       "titulo": "Real Decreto 126/2026, SMI 2026 (BOE)"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/trabajo14/Paginas/2023/140223-salario-minimo-interprofesional.aspx",
+       "titulo": "La Moncloa, nota sobre el SMI 2026 (20-feb-2026)"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Los 2,5 millones de trabajadores que cita el Gobierno corresponden a la subida del SMI de 2026. Como el programa no define la referencia del 60 %, no puede cuantificarse cuántas personas se beneficiarían de su propuesta ni el coste para los empleadores de salarios bajos, que son quienes lo asumen; tampoco hay cifra de cuántos trabajadores tienen complementos que hoy se compensan con la subida.",
+     "fuentes": [
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/trabajo14/Paginas/2023/140223-salario-minimo-interprofesional.aspx",
+       "titulo": "La Moncloa, nota sobre el SMI 2026 (20-feb-2026)"
+      },
+      {
+       "url": "https://ine.es/dyngs/Prensa/EAES2024.htm",
+       "titulo": "INE, Encuesta Anual de Estructura Salarial 2024 (28-5-2026)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Un SMI más alto eleva las rentas salariales bajas y reduce la desigualdad salarial; el riesgo es una menor creación de empleo en los colectivos de menor productividad, como apuntó el Banco de España para 2019. El efecto depende del ritmo de subida en relación con la productividad.",
+     "fuentes": [
+      {
+       "url": "https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-ocasionales/efectos-salario-minimo-interprofesional-empleo-nueva-evidencia-para-espana.html",
+       "titulo": "Banco de España, DO 2113: efectos del SMI en el empleo"
+      }
+     ]
+    }
+   }
+  }
+ },
+ "prioridades_retiradas": {
+  "compromis-04": {
+   "id": "compromis-04",
+   "propuesta": "compromis-p018",
+   "justificacion": "La web electoral, resumen oficial del programa, dice en el bloque de vivienda «Més impostos a partir de la tercera vivenda». El programa lo concreta en tres medidas de la sección de vivienda (p. 5): ITP un 200 % más alto a partir de la tercera propiedad, IBI progresivo a partir del tercer inmueble y un gravamen específico del 10 % sobre el valor catastral de las viviendas a partir del tercer inmueble. Se evalúan las tres juntas, con el gravamen del 10 % como medida principal porque es la única que fija tipo y base.",
+   "propuestas_relacionadas": [
+    "compromis-p013",
+    "compromis-p014"
+   ]
+  },
+  "compromis-06": {
+   "id": "compromis-06",
+   "propuesta": "compromis-p021",
+   "justificacion": "Segunda medida de la sección de salarios (p. 6), la única que concreta la línea «Augmentarem els salaris per a recuperar poder adquisitiu» del bloque «per no viure per a treballar» de la web electoral. El programa vuelve a la «pujada del salari mínim» en la sección de turismo (p. 26). El título del bloque 1 del índice incluye «salaris».",
+   "propuestas_relacionadas": []
+  }
+ },
+ "pendiente_resuelto": {
+  "motivo_anterior": "Sustitución por auditoría de selección (14-nov-2026): por decisión editorial tras la auditoría de coherencia (data/fase3/coherencia_2026-11-14.md, apartado «Selección de Compromís»), compromis-04 (más impuestos desde la tercera vivienda, p. 5) y compromis-06 (SMI al 60 % del salario medio, p. 6) salen de las 12 prioridades y entran compromis-13 (Corredor Mediterráneo, compromis-p079, p. 12) y compromis-14 (empresa pública de generación, distribución y comercialización eléctrica, compromis-p240, p. 29). Las dos nuevas evaluaciones y las justificaciones de prioridades de extraccion.json necesitan la revisión de un revisor independiente (prompt 4) antes de publicarse.",
+  "pendiente_de_revision": [
+   "compromis-13 y compromis-14: los 8 criterios y el campo «beneficiarios», cada fuente abierta y cada cifra contra su fuente.",
+   "Justificaciones de compromis-13 y compromis-14 en extraccion.json (prioridades) y orden de las 12.",
+   "Mismo estándar: compromis-13 frente a pnv-04 (Y vasca), compromis-12, upn-03 y pp-07; compromis-14 frente a adelante_andalucia-08 (y podemos-08 en legal y financiación).",
+   "compromis/compromisos: motivo del descartado compromis-c04 y nuevo seleccion_sha256 (registrado en compromisos/revision.json, cambios)."
+  ]
+ },
+ "revision_anterior": {
+  "aprobado": true,
+  "revisor": "Claude (Anthropic), pasada independiente",
+  "fecha": "2026-11-14",
+  "alcance": "12 prioridades × 8 criterios y campo «beneficiarios» de data/programas/compromis/evaluacion.json, más las justificaciones de prioridades de extraccion.json, contra el «Programa electoral 29N. Compromís-Front Valencià» (64 págs., en valenciano; SHA-256 37b569d6…6b55, coincide con partidos.json y con el PDF en línea) y las fuentes citadas (prompt 4). Citas: las 12 son literales y empiezan en la página indicada (comprobado página a página: compromis-04 y -11 tienen sus fragmentos tras «[...]» en la misma página; la de compromis-12 empieza en la p. 57 y termina en la 58); los fragmentos del programa entrecomillados en los textos también, salvo dos corregidos (compromis-10 mezclaba castellano y valenciano; compromis-11 «històric» suelto). Traducciones fieles; la de compromis-12 estaba incompleta y se completó. Se abrieron las 129 URL distintas de la evaluación (cinco revisores auxiliares, uno por bloque de propuestas: 01-03, 04-06, 07 y 11, 08 y 12, 09 y 10) y el revisor comprobó directamente en la fuente cada hallazgo antes de corregir y los puntos señalados como de especial cuidado: EAES 2024 del INE (29.540,26 €, 28-5-2026) y nota del Ministerio de Trabajo de 15-1-2025 (60 % del salario medio neto); LO 2/2012 art. 8.2 y art. 4 del proyecto de condonación (BOCG A-79-1); deuda de la Generalitat (Banco de España: 64.593.423 miles de € y 40,0 % del PIB en junio de 2026; 53.819.755 miles en 2021); BOCG B-240-7 (art. 173 bis, preámbulo y art. segundo sobre el art. 82 de la Ley 4/2023); Real Decreto 806/2026 (BOE-A-2026-20742) y disposición adicional primera del Reglamento del Senado; Ley valenciana 23/2018 (arts. 7, 60.4 y 62.3), BOE-A-2026-9794 y ATC 45/2026; ley maltesa cap. 567 (arts. 3 y 4); Diario de Sesiones núm. 167 (ministro, 18-2-2026) y núm. 170 (moción 173/000152, votación por puntos, 26-2-2026) y BOCG D-489 y D-345; CE Delft (ficha de España: 2.382 M€, 406 M€ de IVA actual, Canarias, Ceuta y Melilla); Batut y otros (IZA DP 15566: efecto positivo no significativo en el salario por hora); nota del Gobierno neerlandés de 15-10-2026; RD 326/2026 (318.000 viviendas, 1,7 %); nota del Ministerio de Consumo de 23-4-2026 (61 %). EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (curl, WebFetch y navegador, con cualquier CELEX): sus cinco enlaces se sustituyeron por la copia oficial del DOUE en el BOE (TFUE, Directiva 2022/2041, C-19/23) y por la Oficina de Publicaciones (Konle, Libert). PubMed (anti-bot) y la GAO (403 a curl) se leyeron por E-utilities y WebFetch. verify_quotes: 0 citas no encontradas.",
+  "seleccion": "Las 12 prioridades coinciden con extraccion.json y cada justificación es cierta en lo que afirma (se corrigió una, compromis-01, que atribuía a la p. 29 una vuelta a la prohibición cuando habla de un mecanismo vigente). El programa no tiene resumen ni medidas estrella: la introducción habla de «estes set prioritats» (los siete bloques) y solo nombra un asunto, la DANA (compromis-09); la extracción usa además, con justificación suficiente, la web electoral de la candidatura (frontvalencia.org), que enlaza el PDF como «Programa sencer» y lo presenta en seis bloques de medidas de una línea y un rótulo de siete lemas. Las 12 cubren los bloques de vivienda (4 de 4 líneas) y trabajo (3 de 3), el «tracte just» (financiación, deuda y fondo en compromis-11), dos líneas del «país connectat» (aviación y Rodalies; la renacionalización de la alta velocidad no está en el programa y queda en el complemento), una de «igualtat» (terapias de conversión; el aborto en la Constitución tampoco está en el programa) y la DANA. Quedan sin prioridad el bloque «pel territori» de la web (transición energética, agua y energía como derechos, obsolescencia programada, adaptación al cambio climático), cuatro de los siete lemas (Corredor Mediterrani, Valencià, Albufera viva, Serveis públics) y los bloques 2 (servicios públicos) y 7 (paz) del programa, aunque el programa tiene medidas concretas para casi todos (pp. 12, 25, 29-32, 44); se deja como duda para decisión editorial (véase «dudas»).",
+  "igual_estandar": "Se comparó cada valoración con las propuestas equivalentes ya aprobadas. compromis-04 legal «mixta» (frente a la «favorable» de la evaluación de compromisos del 12-nov, sin tipo): coincide con frente_amplio-03 (10 % anual del valor) por el mismo hecho, un tipo del 10 % que puede superar la rentabilidad del alquiler (STC 182/2021), y lo dice el texto; financiación «no_verificable» frente a la «mixta» de frente_amplio-03 porque Compromís no cifra la recaudación y Frente Amplio sí. compromis-06 legal «favorable» frente a la «mixta» de bng-05: la diferencia es un hecho escrito en cada texto (bng-05 pide un SMI gallego, contrario al art. 149.1.7.ª CE; compromis-06 solo pide fijar por ley la referencia estatal), como podemos-05 y psoe-03 «favorable». compromis-05 concreción «mixta» frente a la «favorable» de adelante_andalucia-03 porque este fija plazos (dos y cuatro años) y Compromís no. compromis-07 coincide con psoe-02 (legal y financiación «mixta»). compromis-11 legal «favorable» como erc-02 y psc-01. compromis-01 y -03 coinciden con eh_bildu-05/bng-c02 y frente_amplio-07. Un cambio de valoración: compromis-09 financiación «mixta» → «no_verificable», porque sin cuantía en el programa y con solo referencias de escala las fichas aprobadas valoran «no_verificable» (vox-02, vox-06, vox-11, ara_mes_fa-10).",
+  "recuento_inicial": {
+   "favorable": 14,
+   "mixta": 80,
+   "desfavorable": 0,
+   "no_verificable": 2
+  },
+  "recuento_final": {
+   "favorable": 14,
+   "mixta": 79,
+   "desfavorable": 0,
+   "no_verificable": 3
+  },
+  "cambios": [
+   {
+    "propuesta": "compromis-01",
+    "criterio": "legal",
+    "antes": "El art. 63 TFUE prohíbe las restricciones a los movimientos de capitales, incluida la compra de inmuebles;",
+    "despues": "El art. 63 TFUE prohíbe las restricciones a los movimientos de capitales, que según el TJUE incluyen las inversiones inmobiliarias de no residentes (Konle);",
+    "motivo": "Precisión: el art. 63 no menciona los inmuebles; que su compra sea movimiento de capitales lo dice el TJUE (Konle: «abarcan las operaciones a través de las cuales los no residentes efectúan inversiones inmobiliarias»)."
+   },
+   {
+    "propuesta": "compromis-01",
+    "criterio": "legal",
+    "antes": "con excepciones, y justifica ese plazo por proporcionalidad.",
+    "despues": "con excepciones, y según su preámbulo fija ese plazo «para garantizar su proporcionalidad, conforme a la doctrina del Tribunal Constitucional».",
+    "motivo": "Atribución imprecisa: el preámbulo del RDL 29/2026 vincula el plazo a la doctrina del Tribunal Constitucional, no al Derecho de la UE; junto al art. 63 TFUE, la frase sugería un vínculo que la fuente no hace."
+   },
+   {
+    "propuesta": "compromis-01",
+    "criterio": "legal",
+    "antes": "Una prohibición total para una categoría de inversores no ha sido examinada por ningún tribunal y su encaje dependería de cómo se defina.",
+    "despues": "No se ha localizado jurisprudencia del TJUE sobre una prohibición total de compra para una categoría de inversores; su encaje dependería de cómo se defina.",
+    "motivo": "Sin respaldo: afirmación universal («ningún tribunal») que ninguna fuente citada sostiene; se formula como búsqueda sin resultado, como en el resto de fichas."
+   },
+   {
+    "propuesta": "compromis-01",
+    "criterio": "largo_plazo",
+    "antes": "el propio RDL 29/2026 limita su restricción hasta 2030 para garantizar su proporcionalidad.",
+    "despues": "el propio RDL 29/2026 limita su restricción hasta 2030 para garantizar su proporcionalidad conforme a la doctrina del Tribunal Constitucional, según su preámbulo.",
+    "motivo": "Atribución imprecisa (como en «legal»): el preámbulo invoca la doctrina del Tribunal Constitucional, no el art. 63 TFUE."
+   },
+   {
+    "propuesta": "compromis-01",
+    "criterio": "internacional",
+    "antes": "por lo que va a restringirse.",
+    "despues": "por lo que el ministro prepara un proyecto de ley, que saldrá a consulta a finales de 2026, para limitarla a los barrios donde la habitabilidad esté bajo presión.",
+    "motivo": "Impreciso: la nota del Gobierno neerlandés (15/16-10-2026) dice que el ministro «werkt aan een wetsvoorstel dat eind dit jaar in consultatie moet gaan», no que ya vaya a restringirse."
+   },
+   {
+    "propuesta": "compromis-01",
+    "criterio": "beneficiarios",
+    "antes": "Los beneficiarios declarados son quienes compran o alquilan vivienda para vivir en ella: en la Comunitat Valenciana el 73,9 % de los hogares vive en propiedad y el 17,4 % de alquiler a precio de mercado (INE, 2025).",
+    "despues": "Los beneficiarios declarados son quienes buscan comprar o alquilar vivienda para vivir en ella: no hay cifra oficial de compradores potenciales, y en la Comunitat Valenciana el 17,4 % de los hogares vive de alquiler a precio de mercado (INE, 2025).",
+    "motivo": "El dato no medía a los beneficiarios: el 73,9 % son hogares que ya tienen vivienda en propiedad, no compradores; se conserva el dato de alquiler y se dice que no hay cifra de compradores potenciales."
+   },
+   {
+    "propuesta": "compromis-01",
+    "criterio": "beneficiarios",
+    "antes": "según un informe del Ministerio de Consumo y el CSIC recogido por Europa Press, el 61 % de las viviendas en alquiler pertenece",
+    "despues": "según un informe del Ministerio de Consumo y el CSIC, alrededor del 61 % de las viviendas en alquiler pertenece",
+    "motivo": "Fuente primaria disponible: la nota del Ministerio de Derechos Sociales, Consumo y Agenda 2030 (dsca.gob.es) dice «aproximadamente, el 61 %»; sustituye a la reproducción de Europa Press."
+   },
+   {
+    "propuesta": "compromis-01",
+    "criterio": "beneficiarios (campo)",
+    "antes": "Beneficiaría, según su planteamiento, a quienes compran o alquilan vivienda para vivir en ella (en la Comunitat Valenciana el 73,9 % de los hogares vive en propiedad y el 17,4 % de alquiler a precio de mercado, INE 2025);",
+    "despues": "Beneficiaría, según su planteamiento, a quienes buscan comprar o alquilar vivienda para vivir en ella (no hay cifra oficial de compradores potenciales; en la Comunitat Valenciana el 17,4 % de los hogares vive de alquiler a precio de mercado, INE 2025);",
+    "motivo": "Igual que en el criterio «beneficiarios»: el 73,9 % de hogares en propiedad no mide a los compradores."
+   },
+   {
+    "propuesta": "compromis-01",
+    "criterio": "beneficiarios",
+    "antes": "Europa Press (23-4-2026): informe del Ministerio de Consumo y el CSIC sobre la propiedad de la vivienda en alquiler (Panel de Hogares) <https://www.bolsamania.com/noticias_print/empresas/economia--el-61-de-las-viviendas-en-alquiler-estan-en-manos-de-multiarrendadores-particulares-y-personas-juridicas--22336656.html>",
+    "despues": "Ministerio de Derechos Sociales, Consumo y Agenda 2030 (23-4-2026): el 61 % del mercado del alquiler está en manos de multiarrendadores particulares y personas jurídicas (informe con el CSIC) <https://www.dsca.gob.es/es/comunicacion/notas-prensa/61-mercado-alquiler-esta-manos-multiarrendadores-particulares-personas>",
+    "motivo": "Fuente primaria en lugar de la reproducción de Europa Press (misma cifra)."
+   },
+   {
+    "propuesta": "compromis-01",
+    "criterio": "legal",
+    "antes": "Tratado de Funcionamiento de la UE, art. 63 (libre circulación de capitales), EUR-Lex <https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:12016E063>",
+    "despues": "Tratado de Funcionamiento de la UE, versión consolidada (DOUE C 202, 7-6-2016, copia del BOE), art. 63 (libre circulación de capitales) <https://www.boe.es/doue/2016/202/Z00001-00388.pdf>",
+    "motivo": "Enlace roto: EUR-Lex redirige a la portada del Diario Oficial sin mostrar el texto (curl, WebFetch y navegador, 14-11-2026); se usa la copia oficial del DOUE en el BOE, como en la revisión de Vox."
+   },
+   {
+    "propuesta": "compromis-01",
+    "criterio": "largo_plazo",
+    "antes": "Tratado de Funcionamiento de la UE, art. 63 (libre circulación de capitales), EUR-Lex <https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:12016E063>",
+    "despues": "Tratado de Funcionamiento de la UE, versión consolidada (DOUE C 202, 7-6-2016, copia del BOE), art. 63 (libre circulación de capitales) <https://www.boe.es/doue/2016/202/Z00001-00388.pdf>",
+    "motivo": "Enlace roto: EUR-Lex redirige a la portada del Diario Oficial sin mostrar el texto (curl, WebFetch y navegador, 14-11-2026); se usa la copia oficial del DOUE en el BOE, como en la revisión de Vox."
+   },
+   {
+    "propuesta": "compromis-01",
+    "criterio": "legal",
+    "antes": "TJUE, sentencia de 1-6-1999, Konle, C-302/97 (Tirol), EUR-Lex <https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:61997CJ0302>",
+    "despues": "TJUE, sentencia de 1-6-1999, Konle, C-302/97 (Tirol), Oficina de Publicaciones de la UE <http://publications.europa.eu/resource/celex/61997CJ0302>",
+    "motivo": "Enlace roto (EUR-Lex redirige a la portada); texto oficial en la Oficina de Publicaciones de la UE."
+   },
+   {
+    "propuesta": "compromis-01",
+    "criterio": "legal",
+    "antes": "TJUE, sentencia de 8-5-2013, Libert y otros, C-197/11 y C-203/11 (Flandes), EUR-Lex <https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:62011CJ0197>",
+    "despues": "TJUE, sentencia de 8-5-2013, Libert y otros, C-197/11 y C-203/11 (Flandes), Oficina de Publicaciones de la UE <http://publications.europa.eu/resource/celex/62011CJ0197>",
+    "motivo": "Enlace roto (EUR-Lex redirige a la portada); texto oficial en la Oficina de Publicaciones de la UE."
+   },
+   {
+    "propuesta": "compromis-02",
+    "criterio": "legal",
+    "antes": "No hay pronunciamiento sobre un contrato indefinido",
+    "despues": "No se ha localizado pronunciamiento sobre un contrato indefinido",
+    "motivo": "Negativo universal sin fuente: se formula como búsqueda sin resultado."
+   },
+   {
+    "propuesta": "compromis-02",
+    "criterio": "evidencia",
+    "antes": "redujo un 20 % la movilidad de los inquilinos y su salida de la ciudad,",
+    "despues": "redujo un 20 % la movilidad de los inquilinos y también su salida de la ciudad,",
+    "motivo": "Precisión: el 20 % se refiere a la movilidad; la salida de San Francisco también baja, sin esa cifra («limits renters' mobility by 20 percent and lowers displacement from San Francisco»)."
+   },
+   {
+    "propuesta": "compromis-02",
+    "criterio": "evidencia",
+    "antes": "aquella norma limitaba las subidas de renta, no la duración.",
+    "despues": "aquella norma limitaba las subidas de renta dentro de un mismo contrato y restringía los desahucios, por lo que no equivale a un contrato indefinido.",
+    "motivo": "Dato erróneo: según el documento de trabajo de los mismos autores (NBER w24181, p. 2), el control de rentas de San Francisco «also places restrictions on evictions»; no solo limitaba las subidas."
+   },
+   {
+    "propuesta": "compromis-02",
+    "criterio": "internacional",
+    "antes": "sobre todo porque el alquiler medio dejó de ser rentable para los particulares, y volverá a permitir contratos temporales a todos los estudiantes para reducir esas ventas.",
+    "despues": "sobre todo porque el alquiler medio dejó de ser rentable para los particulares, junto con cambios fiscales, y anunció que volvería a permitir contratos temporales a todos los estudiantes para reducir esas ventas.",
+    "motivo": "Precisión: la nota atribuye las ventas a la regulación «in combinatie met fiscale wijzigingen» y lo de los estudiantes es un anuncio («moet weer mogelijk worden»)."
+   },
+   {
+    "propuesta": "compromis-02",
+    "criterio": "antecedentes",
+    "antes": "Según Naiz, la Diputación Permanente lo rechazó el 12-11-2026 con los votos de PP, Vox, Junts y PNV.",
+    "despues": "La Diputación Permanente acordó derogarlo el 12-11-2026 (BOE de 13-11-2026); según Naiz, con los votos en contra de PP, Vox, Junts y PNV.",
+    "motivo": "Hecho sostenido solo por prensa con fuente primaria disponible: Resolución de la Diputación Permanente (BOE-A-2026-23754: «acordó derogar el Real Decreto-ley 28/2026») e iniciativa 130/000059 («Concluido - (Derogado) desde 12/11/2026»)."
+   },
+   {
+    "propuesta": "compromis-02",
+    "criterio": "beneficiarios",
+    "antes": "El coste recae en los arrendadores, que no podrían recuperar la vivienda ni fijar una nueva renta al término del contrato, y no está cuantificado.",
+    "despues": "El coste recae en los arrendadores, que solo podrían recuperar la vivienda por uso personal o familiar; el programa no dice cómo se actualizaría la renta, y ese coste no está cuantificado.",
+    "motivo": "Contradice el programa: la propuesta garantiza «el dret a recuperar la possessió per motius d'ús personal o familiar» (p. 4); y que no se pueda fijar nueva renta es una suposición, porque el programa no dice cómo se actualizaría (lo reconoce «concreción»)."
+   },
+   {
+    "propuesta": "compromis-02",
+    "criterio": "largo_plazo",
+    "antes": "el Gobierno neerlandés recupera contratos temporales para estudiantes porque",
+    "despues": "el Gobierno neerlandés anunció en 2025 que volvería a permitir contratos temporales a todos los estudiantes porque",
+    "motivo": "Impreciso: la nota de 10-4-2025 es un anuncio, no una medida aplicada."
+   },
+   {
+    "propuesta": "compromis-03",
+    "criterio": "evidencia",
+    "antes": "Ampliar el parque público aumenta la vivienda disponible para hogares de rentas bajas, aunque no una a una:",
+    "despues": "Ampliar la vivienda subvencionada aumenta el número total de viviendas ocupadas, aunque no una a una:",
+    "motivo": "Extrapolación: Sinai y Waldfogel miden el parque total ocupado («raise the total number of units in a Census place»), no la vivienda disponible para rentas bajas."
+   },
+   {
+    "propuesta": "(todas)",
+    "criterio": "fuentes",
+    "antes": "Sinai y Waldfogel (2002/2005), Do Low-Income Housing Subsidies Increase Housing Consumption?, NBER WP 8709 / Journal of Public Economics",
+    "despues": "Sinai y Waldfogel, Do Low-Income Housing Subsidies Increase Housing Consumption?, NBER WP 8709 (2002); publicado como «…Increase the Occupied Housing Stock?» en Journal of Public Economics 89 (2005)",
+    "motivo": "Título bibliográfico: el título citado es el del documento de trabajo; el artículo publicado se titula de otra forma. (2 apariciones)"
+   },
+   {
+    "propuesta": "compromis-03",
+    "criterio": "internacional",
+    "antes": "frente a menos del 2 % en España y una media del 7 % en la OCDE.",
+    "despues": "frente a menos del 2 % en España y una media del 7 % en la OCDE; según el Plan Estatal de Vivienda 2026-2030, el parque público español ronda las 318.000 viviendas, alrededor del 1,7 % de los hogares.",
+    "motivo": "Dato más reciente: la cifra española de la OCDE procede de rondas anteriores de su cuestionario; el preámbulo del RD 326/2026 da 318.000 viviendas públicas (1,7 % de los hogares)."
+   },
+   {
+    "propuesta": "compromis-04",
+    "criterio": "concrecion",
+    "antes": "El programa (p. 5) concreta tres impuestos:",
+    "despues": "El programa (pp. 5-6) concreta tres impuestos:",
+    "motivo": "Página: las exclusiones del gravamen del 10 % empiezan al final de la p. 5 y siguen en la p. 6."
+   },
+   {
+    "propuesta": "compromis-04",
+    "criterio": "legal",
+    "antes": "(recargo del IBI sobre las viviendas vacías de titulares de cuatro o más inmuebles residenciales, art. 72 TRLRHL)",
+    "despues": "(los recargos del IBI sobre viviendas vacías son exclusivos o mayores para titulares de cuatro o más inmuebles residenciales, art. 72.4 bis TRLRHL)",
+    "motivo": "Desactualizado: desde el RDL 29/2026 (en vigor el 8-10-2026), en zonas tensionadas cabe un recargo de hasta el 50 % sin ese requisito y de hasta el 100 % para titulares de cuatro o más; fuera de ellas sigue siendo solo para estos."
+   },
+   {
+    "propuesta": "compromis-04",
+    "criterio": "legal",
+    "antes": "Pero las comunidades pueden regular el tipo del ITP sobre la compra de inmuebles (art. 49 de la Ley 22/2009), por lo que una subida estatal del 200 % tendría que coordinarse con esa capacidad.",
+    "despues": "Las tres medidas requieren leyes ordinarias de las Cortes, por mayoría simple. Pero las comunidades regulan el tipo del ITP sobre la compra de inmuebles (art. 49 de la Ley 22/2009) y el tipo estatal del 6 % solo se aplica donde no lo han fijado (art. 11 del texto refundido del impuesto), por lo que una subida estatal del 200 % exigiría reformar también la ley de cesión de tributos para limitar esa capacidad.",
+    "motivo": "Incompleto: el criterio pide la ley y la mayoría necesarias, que el texto no decía; y «tendría que coordinarse» era vago: el tipo estatal es supletorio (art. 11.1.a del texto refundido del ITP: «Si la Comunidad Autónoma no hubiese aprobado el tipo»)."
+   },
+   {
+    "propuesta": "compromis-04",
+    "criterio": "antecedentes",
+    "antes": "sustituye desde 2027 la imputación de rentas del IRPF por los inmuebles urbanos no alquilados distintos de la vivienda habitual por una escala del 1,1 % al 3 % según la suma de sus valores catastrales.",
+    "despues": "sustituye desde 2027 los porcentajes fijos de la imputación de rentas del IRPF por los inmuebles urbanos no alquilados distintos de la vivienda habitual por una escala del 1,1 % al 3 % según la suma de sus valores catastrales.",
+    "motivo": "Impreciso: el RDL 29/2026 no suprime la imputación de rentas; cambia sus porcentajes fijos por una escala progresiva."
+   },
+   {
+    "propuesta": "compromis-04",
+    "criterio": "beneficiarios",
+    "antes": "3,06 millones de titulares con tres inmuebles urbanos,",
+    "despues": "3,06 millones de titulares con tres inmuebles,",
+    "motivo": "Sin respaldo: La Marea habla de «propietarios de tres edificaciones», sin decir «urbanos»."
+   },
+   {
+    "propuesta": "compromis-04",
+    "criterio": "beneficiarios (campo)",
+    "antes": "; quedan excluidas las viviendas de uso habitual, las de cooperativas sin ánimo de lucro y las de programas públicos de vivienda social.",
+    "despues": "; del gravamen del 10 % quedan excluidas las viviendas de uso habitual, las de cooperativas sin ánimo de lucro y las de programas públicos de vivienda social.",
+    "motivo": "Las exclusiones solo afectan al gravamen del 10 % (pp. 5-6), no a la subida del ITP ni al IBI."
+   },
+   {
+    "propuesta": "compromis-05",
+    "criterio": "evidencia",
+    "antes": "hallaron que la reducción de la jornada legal redujo las horas trabajadas y elevó el salario por hora, sin aumento del empleo y con un efecto positivo pero no significativo sobre la productividad por hora.",
+    "despues": "hallaron que la reducción de la jornada legal redujo las horas trabajadas sin aumento del empleo, con efectos positivos pero no significativos sobre el salario por hora y la productividad por hora.",
+    "motivo": "Exagera el resultado: el resumen dice «hourly wages rose», pero el artículo estima «positive but insignificant effects on hourly wages and value-added per hour worked»."
+   },
+   {
+    "propuesta": "compromis-05",
+    "criterio": "beneficiarios",
+    "antes": "y 10,06 millones en pymes con asalariados,",
+    "despues": "y 10,06 millones en pymes con asalariados (cifra que incluye a los titulares autónomos de esas empresas),",
+    "motivo": "Precisión: según la nota de Cifras PYME, esa cifra suma los asalariados y los autónomos titulares con asalariados."
+   },
+   {
+    "propuesta": "compromis-05",
+    "criterio": "beneficiarios (campo)",
+    "antes": "y las pymes con asalariados 10,06 millones (Ministerio de Industria)",
+    "despues": "y las pymes con asalariados 10,06 millones, incluidos sus titulares autónomos (Ministerio de Industria)",
+    "motivo": "Igual que en el criterio «beneficiarios»."
+   },
+   {
+    "propuesta": "compromis-06",
+    "criterio": "concrecion",
+    "antes": "Según el INE, el salario medio bruto de 2023 fue 28.050 €, cuyo 60 % (16.830 €) ya es inferior al SMI de 2026 (17.094 € anuales); el Gobierno mantiene ese mismo objetivo con otro cálculo, por lo que el alcance real de la propuesta depende de la definición.",
+    "despues": "Según el INE (28-5-2026), el salario medio bruto de 2024 fue de 29.540 €, cuyo 60 % (17.724 €, cálculo propio) supera en unos 630 € el SMI de 2026 (17.094 € anuales); la comisión asesora del Ministerio de Trabajo calcula el objetivo del 60 % sobre el salario medio neto a tiempo completo, por lo que el alcance real de la propuesta depende de la definición.",
+    "motivo": "Dato desactualizado que invierte la conclusión: el INE publicó el 28-5-2026 la EAES de 2024 (29.540,26 €); su 60 % supera el SMI de 2026, no es inferior. El «otro cálculo» del Gobierno es el salario medio neto a tiempo completo (nota del Ministerio de Trabajo de 15-1-2025)."
+   },
+   {
+    "propuesta": "compromis-06",
+    "criterio": "financiacion",
+    "antes": "con el salario medio bruto del INE de 2023 (28.050 €), el 60 % (16.830 €) ya es inferior al SMI de 2026 (17.094 €), y el Gobierno afirma mantener el objetivo del 60 % con su propio cálculo.",
+    "despues": "con el salario medio bruto del INE de 2024 (29.540 €), el 60 % (17.724 €, cálculo propio) supera en unos 630 € el SMI de 2026 (17.094 €), mientras que la comisión asesora del Gobierno lo calcula sobre el salario medio neto a tiempo completo.",
+    "motivo": "Mismo dato desactualizado que en «concreción» (EAES 2024, publicada el 28-5-2026). La valoración «no_verificable» se mantiene: la referencia sigue sin definirse."
+   },
+   {
+    "propuesta": "compromis-06",
+    "criterio": "concrecion",
+    "antes": "INE, Encuesta Anual de Estructura Salarial 2023 <https://ine.es/dyngs/Prensa/EAES2023.htm>",
+    "despues": "INE, Encuesta Anual de Estructura Salarial 2024 (28-5-2026) <https://ine.es/dyngs/Prensa/EAES2024.htm>",
+    "motivo": "Fuente desactualizada: la EAES de 2024 sustituye a la de 2023."
+   },
+   {
+    "propuesta": "compromis-06",
+    "criterio": "financiacion",
+    "antes": "INE, Encuesta Anual de Estructura Salarial 2023 <https://ine.es/dyngs/Prensa/EAES2023.htm>",
+    "despues": "INE, Encuesta Anual de Estructura Salarial 2024 (28-5-2026) <https://ine.es/dyngs/Prensa/EAES2024.htm>",
+    "motivo": "Fuente desactualizada: la EAES de 2024 sustituye a la de 2023."
+   },
+   {
+    "propuesta": "compromis-06",
+    "criterio": "beneficiarios",
+    "antes": "INE, Encuesta Anual de Estructura Salarial 2023 <https://ine.es/dyngs/Prensa/EAES2023.htm>",
+    "despues": "INE, Encuesta Anual de Estructura Salarial 2024 (28-5-2026) <https://ine.es/dyngs/Prensa/EAES2024.htm>",
+    "motivo": "Fuente desactualizada: la EAES de 2024 sustituye a la de 2023."
+   },
+   {
+    "propuesta": "compromis-06",
+    "criterio": "legal",
+    "antes": "impedir que la subida se compense con complementos exige modificar ese artículo,",
+    "despues": "impedir que la subida se compense con complementos exige modificar ese artículo y la regla general de compensación y absorción (art. 26.5),",
+    "motivo": "Incompleto: la compensación y absorción de salarios se rige con carácter general por el art. 26.5 del Estatuto de los Trabajadores."
+   },
+   {
+    "propuesta": "compromis-06",
+    "criterio": "legal",
+    "antes": "Directiva (UE) 2022/2041 sobre salarios mínimos adecuados <https://eur-lex.europa.eu/eli/dir/2022/2041/oj>",
+    "despues": "Directiva (UE) 2022/2041 sobre salarios mínimos adecuados (DOUE, copia del BOE) <https://www.boe.es/buscar/doc.php?id=DOUE-L-2022-81556>",
+    "motivo": "Enlace roto: EUR-Lex redirige a la portada sin mostrar el texto (14-11-2026); copia oficial del DOUE en el BOE."
+   },
+   {
+    "propuesta": "compromis-06",
+    "criterio": "internacional",
+    "antes": "Directiva (UE) 2022/2041 sobre salarios mínimos adecuados <https://eur-lex.europa.eu/eli/dir/2022/2041/oj>",
+    "despues": "Directiva (UE) 2022/2041 sobre salarios mínimos adecuados (DOUE, copia del BOE) <https://www.boe.es/buscar/doc.php?id=DOUE-L-2022-81556>",
+    "motivo": "Enlace roto: EUR-Lex redirige a la portada sin mostrar el texto (14-11-2026); copia oficial del DOUE en el BOE."
+   },
+   {
+    "propuesta": "compromis-06",
+    "criterio": "legal",
+    "antes": "TJUE, asunto C-19/23 Dinamarca/Parlamento y Consejo (11-nov-2025) <https://eur-lex.europa.eu/eli/C/2026/132/oj>",
+    "despues": "TJUE, asunto C-19/23 Dinamarca/Parlamento y Consejo (11-11-2025), DOUE C/2026/132 (copia del BOE) <https://www.boe.es/doue/2026/132/Z00001-00001.pdf>",
+    "motivo": "Enlace roto: EUR-Lex redirige a la portada sin mostrar el texto (14-11-2026); copia oficial del DOUE en el BOE."
+   },
+   {
+    "propuesta": "compromis-06",
+    "criterio": "evidencia",
+    "antes": "En Reino Unido, la Low Pay Commission no aprecia aumentos de despidos al alcanzar el objetivo de dos tercios de la mediana.",
+    "despues": "En Reino Unido, cuyo salario mínimo se quedó en 2024 algo por debajo del objetivo de dos tercios de la mediana según la Low Pay Commission, esta aprecia pocas señales de aumento de despidos en los datos oficiales.",
+    "motivo": "Dato erróneo: la Low Pay Commission estima que 11,44 £ «was not high enough to meet the two-thirds of median earnings target in 2024»; sí dice «little sign of growing redundancies in the official data»."
+   },
+   {
+    "propuesta": "compromis-07",
+    "criterio": "financiacion",
+    "antes": "Reformar la Constitución no tiene coste por sí mismo; el de la revalorización con el coste de la vida, que ya prevé la ley con el IPC, está documentado:",
+    "despues": "Reformar la Constitución no tiene coste por sí mismo y la ley ya revaloriza las pensiones con el IPC; la escala de ese gasto está documentada:",
+    "motivo": "Presentación: las cifras que siguen miden el tamaño del gasto en pensiones con la regla vigente, no el coste añadido de la propuesta."
+   },
+   {
+    "propuesta": "compromis-07",
+    "criterio": "financiacion",
+    "antes": "El programa no explica cómo se pagaría el aumento de gasto (en la misma sección propone eliminar el tope de la base máxima de cotización, p. 8, y en la de fiscalidad un impuesto a las empresas por el uso de robots para reforzar las pensiones, p. 19, sin cuantificarlos), que según la AIReF",
+    "despues": "El programa apunta dos vías de financiación sin cuantificarlas (en la misma sección, eliminar el tope de la base máxima de cotización, p. 8, y en la de fiscalidad, un impuesto a las empresas por el uso de robots que refuerce el sistema público de pensiones, p. 19) para un aumento de gasto que, según la AIReF,",
+    "motivo": "Incoherencia interna: decía «no explica» y a continuación citaba dos vías; la rúbrica distingue «no explica» de «lo explica sin cuantificar». La valoración «mixta» no cambia."
+   },
+   {
+    "propuesta": "compromis-07",
+    "criterio": "beneficiarios",
+    "antes": "deberán subir 2,3 puntos, hasta el 3,0 % del PIB.",
+    "despues": "deberán subir 2,3 puntos, hasta el 3,0 % del PIB, para financiar el gasto en pensiones esperado con la normativa actual.",
+    "motivo": "Precisión: la estimación de la AIReF se refiere a la normativa vigente, como ya dice el campo «beneficiarios»."
+   },
+   {
+    "propuesta": "compromis-08",
+    "criterio": "concrecion",
+    "antes": "la web electoral de la candidatura da otra cifra («més de 5.000 milions anuals»).",
+    "despues": "la web electoral de la candidatura da una cifra menos precisa («més de 5.000 milions anuals») y un destino más amplio que el programa («per a invertir-los en transport públic»).",
+    "motivo": "Discrepancia mal descrita: «més de 5.000» es un mínimo compatible con 6.000, y la web cambia también el destino (transporte público en lugar de ferrocarril)."
+   },
+   {
+    "propuesta": "compromis-08",
+    "criterio": "legal",
+    "antes": "mientras los nacionales tributan al 10 % (art. 91);",
+    "despues": "mientras los vuelos entre la Península y Baleares tributan al 10 % (art. 91) y los que unen estos territorios con Canarias, Ceuta o Melilla también están exentos, porque esos territorios quedan fuera del ámbito del impuesto (art. 3);",
+    "motivo": "Dato erróneo: no todos los vuelos nacionales tributan al 10 %; el art. 22.Trece exime los que tienen origen o destino fuera del ámbito espacial del impuesto, que excluye Canarias, Ceuta y Melilla (art. 3; CE Delft, ficha de España: «except to/from the Canary Islands, Ceuta and Melilla»)."
+   },
+   {
+    "propuesta": "compromis-08",
+    "criterio": "legal",
+    "antes": "también por la obligación de suministro libre de impuestos a aeronaves de otros Estados de la OACI,",
+    "despues": "también porque, según Hacienda, los Estados de la OACI están obligados a suministrar combustible libre de impuestos a las aeronaves de los demás (el Convenio de Chicago, art. 24, solo exime el combustible que ya llega a bordo; la exención del que se carga procede de las políticas de la OACI, aplicadas con reciprocidad, y de acuerdos bilaterales, según el estudio para la Comisión Europea),",
+    "motivo": "Atribución: era una afirmación de Hacienda presentada como hecho; el art. 24 del Convenio solo exime el combustible a bordo a la llegada, y CE Delft señala que la OACI «does not explicitly prohibit the taxation of jet fuel»."
+   },
+   {
+    "propuesta": "compromis-08",
+    "criterio": "financiacion",
+    "antes": "unos 2.382 M€ por gravar el queroseno de todos los vuelos o 2.131 M€ de recaudación total si el IVA del 10 % se extendiera a todos los billetes.",
+    "despues": "una recaudación fiscal de la aviación de unos 2.382 M€ si se gravara el queroseno de todos los vuelos o de 2.131 M€ si el IVA del 10 % se extendiera a todos los billetes, frente a 406 M€ del IVA actual.",
+    "motivo": "Precisión: CE Delft da la recaudación fiscal total de la aviación en cada escenario («The fiscal revenue amounts to € 2,382 million»), comparada con 406 M€ en la situación actual, no lo que aportaría el queroseno por sí solo."
+   },
+   {
+    "propuesta": "compromis-08",
+    "criterio": "evidencia",
+    "antes": "El estudio para la Comisión Europea estima que suprimir la exención del queroseno subiría el billete medio un 10 % y reduciría un 11 % los pasajeros y las emisiones de CO2 de la aviación, con un efecto neto despreciable sobre el empleo y el PIB porque la mayor recaudación compensaría la pérdida del sector.",
+    "despues": "El estudio para la Comisión Europea estima que, en el conjunto de la UE y si fuera legalmente posible, suprimir la exención del queroseno subiría el billete medio un 10 % y reduciría un 11 % los pasajeros y las emisiones de CO2 de la aviación, con un efecto neto despreciable sobre el empleo y el PIB porque la mayor recaudación compensaría la pérdida del sector; para España obtiene cifras similares (+10 % y −11 %), con una caída del 12 % del empleo y del valor añadido del sector aéreo.",
+    "motivo": "Ámbito: el resultado del resumen es para toda la UE («if it were not legally constrained»); la ficha de España da cifras parecidas y un −12 % de empleo y valor añadido en el sector."
+   },
+   {
+    "propuesta": "compromis-08",
+    "criterio": "largo_plazo",
+    "antes": "un 11 % menos de emisiones de CO2 de la aviación, según el estudio para la Comisión Europea.",
+    "despues": "un 11 % menos de emisiones de CO2 de la aviación, según el estudio para la Comisión Europea (en la UE y en España).",
+    "motivo": "Ámbito, como en «evidencia»."
+   },
+   {
+    "propuesta": "compromis-08",
+    "criterio": "largo_plazo",
+    "antes": "Desde 2026 las aerolíneas ya pagan por subasta todos sus derechos de emisión en el comercio europeo de emisiones, coste que se sumaría al nuevo gravamen.",
+    "despues": "Desde 2026 la aviación ya no recibe derechos de emisión gratuitos en el comercio europeo de emisiones, que cubre los vuelos dentro del Espacio Económico Europeo y hacia Suiza y Reino Unido: todos se subastan, coste que se sumaría al nuevo gravamen.",
+    "motivo": "Impreciso: el comercio de emisiones solo cubre esos vuelos, no todas las emisiones de las aerolíneas."
+   },
+   {
+    "propuesta": "compromis-08",
+    "criterio": "beneficiarios",
+    "antes": "por los aeropuertos de Aena en España pasaron 321,6 millones de pasajeros en 2025.",
+    "despues": "por los aeropuertos de Aena en España pasaron 321,6 millones de pasajeros en 2025 (cada viajero se cuenta al salir y al llegar).",
+    "motivo": "Precisión: la estadística de Aena suma pasajeros embarcados y desembarcados."
+   },
+   {
+    "propuesta": "compromis-08",
+    "criterio": "beneficiarios",
+    "antes": "Se beneficiarían los usuarios del ferrocarril, pero",
+    "despues": "Se beneficiarían los usuarios del ferrocarril (del transporte público en general, según la web electoral), pero",
+    "motivo": "La web electoral destina la recaudación al «transport públic», no solo al ferrocarril."
+   },
+   {
+    "propuesta": "compromis-08",
+    "criterio": "beneficiarios (campo)",
+    "antes": "se beneficiarían los usuarios del ferrocarril, al que el programa destina lo recaudado,",
+    "despues": "se beneficiarían los usuarios del ferrocarril, al que el programa destina lo recaudado (la web electoral habla del transporte público en general),",
+    "motivo": "Igual que en el criterio «beneficiarios»."
+   },
+   {
+    "propuesta": "(todas)",
+    "criterio": "fuentes",
+    "antes": "Comité de personas expertas, Libro Blanco sobre la reforma tributaria (IEF, 2022), propuestas 5A (queroseno) y 11 (billetes de avión)",
+    "despues": "Comité de personas expertas, Libro Blanco sobre la reforma tributaria (IEF, 2022), propuesta sobre el queroseno (numerada 5 en el índice y 4 en el texto, pp. 254-256) y propuesta 11 (billetes de avión, pp. 286-288)",
+    "motivo": "Referencia: el apartado del queroseno se numera «Propuesta 4» en el cuerpo del documento y «5» en el índice. (6 apariciones)"
+   },
+   {
+    "propuesta": "compromis-09",
+    "criterio": "concrecion",
+    "antes": "No fija la dotación del fondo ni a quién se dirigiría, no dice qué cambiaría en el Consorcio (plazos de pago, cobertura de quien no tiene seguro, franquicias) ni da calendario.",
+    "despues": "No fija la dotación del fondo ni sus criterios de acceso más allá de «les víctimes de catàstrofes», no dice qué cambiaría en el Consorcio (plazos de pago, cobertura de quien no tiene seguro, franquicias) ni da plazos para ninguna de las dos medidas.",
+    "motivo": "Impreciso: el programa sí dice a quién se dirige («les víctimes de catàstrofes»); y en la misma página promete un calendario público para las obras pendientes, por lo que se precisa que faltan plazos para estas dos medidas."
+   },
+   {
+    "propuesta": "compromis-09",
+    "criterio": "financiacion",
+    "antes": "valoración: mixta",
+    "despues": "valoración: no_verificable",
+    "motivo": "Mismo estándar: el propio texto dice que el coste «depende de la dotación del fondo y del alcance de la reforma, que el programa no concreta»; las cifras de la DANA de 2024 dan la escala de una catástrofe, no el coste de la medida. Con esos mismos hechos (sin cuantía en el programa y solo referencias de escala) las fichas aprobadas valoran «no_verificable» (vox-02, vox-06, vox-11, ara_mes_fa-10)."
+   },
+   {
+    "propuesta": "compromis-09",
+    "criterio": "financiacion",
+    "antes": "El coste depende de la dotación del fondo y del alcance de la reforma, que el programa no concreta, y no explica cómo se pagaría. Como referencia, el Gobierno cifra en más de 9.600 millones lo ejecutado hasta junio de 2026 para la recuperación tras la DANA de 2024, incluidos 4.500 millones abonados por el Consorcio, que no salen",
+    "despues": "No hay base pública para estimar el coste: depende de la dotación del fondo y del alcance de la reforma, que el programa no concreta, y tampoco explica cómo se pagaría. Como referencia de escala, el Gobierno cifra en más de 9.600 millones lo ejecutado hasta junio de 2026 para la recuperación tras la DANA de 2024 y destaca entre sus actuaciones los 4.500 millones abonados por el Consorcio, que no salen",
+    "motivo": "Inferencia sin respaldo: la nota de La Moncloa (26-6-2026) no dice que los 4.500 millones del Consorcio estén incluidos en los 9.600; los cita como actuación destacada. Texto ajustado a la nueva valoración."
+   },
+   {
+    "propuesta": "compromis-10",
+    "criterio": "financiacion",
+    "antes": "el texto aprobado por el Congreso en 2026 se limitaba a modificar el Código Penal, sin partidas de gasto. Los «mecanismos de protección y reparació» que añade el programa",
+    "despues": "el texto aprobado por el Congreso en 2026 modificaba el Código Penal y el art. 82 de la Ley 4/2023, para negar subvenciones a quienes fueran condenados por estas prácticas, sin partidas de gasto. Los «mecanismes de protecció i reparació» que añade el programa",
+    "motivo": "Dato erróneo y cita: el texto del BOCG 240-7 tiene un «Artículo segundo. Modificación de la Ley 4/2023» (art. 82, prohibición de ayudas), no solo el Código Penal; y la cita del programa mezclaba castellano y valenciano (p. 55: «mecanismes de protecció i reparació»)."
+   },
+   {
+    "propuesta": "compromis-10",
+    "criterio": "largo_plazo",
+    "antes": "el texto de 2026 excluía los métodos de apoyo aplicados conforme a los estándares profesionales y exigía afectación de la integridad o la salud.",
+    "despues": "el preámbulo del texto de 2026 aclaraba que no se refería a los métodos de apoyo aplicados conforme a los estándares profesionales internacionales, y el nuevo artículo exigía afectación de la integridad corporal o de la salud, o un menoscabo grave de la integridad moral.",
+    "motivo": "Precisión: la exclusión de los métodos de apoyo está en el preámbulo, no en el art. 173 bis; el artículo exige «afectación de su integridad corporal o su salud física o mental o […] menoscabo grave de su integridad moral»."
+   },
+   {
+    "propuesta": "compromis-10",
+    "criterio": "antecedentes",
+    "antes": "El Grupo Popular presentó enmiendas en el Senado en septiembre y, según El Salto, la iniciativa decayó con la disolución de las Cortes, que hace caducar los asuntos pendientes (art. 207 del Reglamento del Congreso).",
+    "despues": "El Grupo Popular presentó enmiendas en el Senado en septiembre y la iniciativa, pendiente en esa Cámara, decayó con la disolución de las Cortes por el Real Decreto 806/2026, de 5 de octubre, que hace caducar los asuntos pendientes (disposición adicional primera del Reglamento del Senado y art. 207 del Reglamento del Congreso). En la Comunitat Valenciana, la Ley 23/2018 ya prohíbe estas prácticas (art. 7) y las sanciona como infracción muy grave, con multas de 60.001 a 120.000 €; la Ley valenciana 5/2025 modificó la ley trans autonómica, el Gobierno la recurrió porque varios de sus artículos «modulan la prohibición de las terapias de conversión» y el Tribunal Constitucional mantiene suspendidos esos preceptos (ATC 45/2026).",
+    "motivo": "Sin fuente primaria y norma incompleta: la proposición estaba en el Senado (624/000012), por lo que la caducidad la rige la disposición adicional primera de su Reglamento; la disolución consta en el Real Decreto 806/2026 (BOE-A-2026-20742). Omisión: el criterio pregunta también por las comunidades autónomas, y la Comunitat Valenciana tiene antecedentes directos (Ley 23/2018, arts. 7, 60 y 62; recurso 1549-2026 contra la Ley 5/2025; ATC 45/2026)."
+   },
+   {
+    "propuesta": "compromis-10",
+    "criterio": "evidencia",
+    "antes": "tenían casi el doble de probabilidad de haber pensado en el suicidio y un 88 % más de intentos con lesión leve,",
+    "despues": "tenían una razón de probabilidades casi doble de haber pensado alguna vez en el suicidio y un 88 % mayor de haber hecho un intento con lesión leve,",
+    "motivo": "Impreciso: el estudio da razones de probabilidades («nearly twice the odds… 88% increased odds of a suicide attempt with minor injury»), no probabilidades ni número de intentos."
+   },
+   {
+    "propuesta": "compromis-10",
+    "criterio": "internacional",
+    "antes": "No se ha localizado una evaluación publicada de los resultados de la ley penal alemana.",
+    "despues": "Malta (2016) también las castiga penalmente, con multa o prisión de hasta un año, penas mayores si la víctima es vulnerable o las aplica un profesional. No se ha localizado una evaluación publicada de los resultados de estas leyes penales.",
+    "motivo": "Omisión: Malta tiene una ley penal más parecida a la propuesta (Affirmation of Sexual Orientation, Gender Identity and Gender Expression Act, cap. 567, arts. 3 y 4); la valoración «mixta» no cambia."
+   },
+   {
+    "propuesta": "compromis-10",
+    "criterio": "beneficiarios",
+    "antes": "(sin esta fuente)",
+    "despues": "fuente añadida: FRA (2024), LGBTIQ equality at a crossroads: progress and challenges (encuesta en línea de junio-agosto de 2023, muestra no probabilística) <https://fra.europa.eu/en/publication/2024/lgbtiq-equality-crossroads-progress-and-challenges>",
+    "motivo": "Sin respaldo en la fuente citada: la ficha de España no menciona el año ni el tipo de muestra; los da la página del informe («carried out online between June and August 2023»; «does not in principle deliver a random probability sample»)."
+   },
+   {
+    "propuesta": "compromis-11",
+    "criterio": "concrecion",
+    "antes": "condonar la deuda «històric» de la Generalitat,",
+    "despues": "condonar el «deute històric» de la Generalitat,",
+    "motivo": "Cita: el adjetivo valenciano entrecomillado suelto no concuerda con «deuda»; el programa (p. 57) dice «deute històric»."
+   },
+   {
+    "propuesta": "compromis-11",
+    "criterio": "legal",
+    "antes": "No se ha localizado norma o sentencia que impida estas medidas.",
+    "despues": "La Ley Orgánica de Estabilidad Presupuestaria impide que el Estado asuma deudas de las comunidades (art. 8.2), por lo que una condonación exige una ley orgánica que lo exceptúe, como hacía el art. 4 del proyecto de 2025; no se ha localizado sentencia que impida estas medidas.",
+    "motivo": "Dato erróneo: sí hay una norma que lo impide salvo excepción: el art. 8.2 de la LO 2/2012 («El Estado no asumirá ni responderá de los compromisos de las Comunidades Autónomas…»), que el proyecto de 2025 excluía en su art. 4 (BOCG 79-1). La valoración «favorable» se mantiene: se salva con ley orgánica, que es la vía que el texto ya menciona."
+   },
+   {
+    "propuesta": "compromis-11",
+    "criterio": "financiacion",
+    "antes": "si la deuda a condonar es el 78 % que indica el programa, la Sindicatura de Comptes lo cifró en 41.926 M€ en 2021;",
+    "despues": "si la deuda a condonar es el 78 % que indica el programa, la Sindicatura de Comptes lo cifró en 41.926 M€ en 2021, y aplicado a la deuda de junio de 2026 (64.593 M€, Banco de España) serían unos 50.400 M€ (cálculo propio);",
+    "motivo": "Dato desactualizado: los 41.926 M€ son el 78 % de la deuda de 2021 (53.820 M€); la deuda de la Generalitat era de 64.593 M€ en junio de 2026 (Banco de España, serie BE_13_9.18)."
+   },
+   {
+    "propuesta": "compromis-11",
+    "criterio": "financiacion",
+    "antes": "el ministro de Hacienda cifró en 3.669 M€ lo que recibiría la Comunitat con el modelo aprobado por el CPFF en 2026.",
+    "despues": "el ministro de Hacienda cifró en 3.669 M€ los recursos adicionales que recibiría la Comunitat con el modelo aprobado por el CPFF en 2026.",
+    "motivo": "Dato inexacto: la fuente habla de «3.669 millones de euros adicionales», no del total que recibiría la Comunitat."
+   },
+   {
+    "propuesta": "compromis-11",
+    "criterio": "evidencia",
+    "antes": "y Fedea sitúa a la Comunitat en 92,8 de financiación por habitante ajustado en 2024.",
+    "despues": "y Fedea sitúa a la Comunitat en 92,8 de financiación efectiva a competencias homogéneas por habitante ajustado en 2024.",
+    "motivo": "Precisión: el 92,8 es la financiación efectiva (cuadro 9); en la normativa (cuadro 7) la cifra es otra."
+   },
+   {
+    "propuesta": "compromis-11",
+    "criterio": "beneficiarios",
+    "antes": "con una financiación por habitante ajustado de 92,8 sobre una media de 100 en 2024 (Fedea) y una deuda cercana al 40 % de su PIB, la más alta de las comunidades (AIReF).",
+    "despues": "con una financiación efectiva por habitante ajustado de 92,8 sobre una media de 100 en 2024 (Fedea) y una deuda cercana al 40 % de su PIB, la más alta de las comunidades (AIReF, segundo trimestre de 2025; 40,0 % en junio de 2026 según el Banco de España).",
+    "motivo": "Precisión del indicador y de la fecha del dato de deuda."
+   },
+   {
+    "propuesta": "compromis-11",
+    "criterio": "beneficiarios",
+    "antes": "41.926 M€ si se condona el 78 % de la deuda que estimó la Sindicatura, 11.210 M€ en el proyecto de condonación de 2025 y 3.669 M€ anuales con el modelo del CPFF de 2026;",
+    "despues": "41.926 M€ si se condona el 78 % de la deuda de 2021 que estimó la Sindicatura (unos 50.400 M€ con la deuda de junio de 2026, cálculo propio), 11.210 M€ en el proyecto de condonación de 2025 y, como referencia, 3.669 M€ adicionales para la Comunitat con el modelo del Gobierno aprobado por el CPFF en 2026, según el ministro de Hacienda;",
+    "motivo": "Dato inexacto: «anuales» no figura en la fuente y los 3.669 M€ son el coste del modelo del Gobierno, no de la propuesta; se añade la cifra con la deuda actual."
+   },
+   {
+    "propuesta": "compromis-11",
+    "criterio": "beneficiarios (campo)",
+    "antes": "la comunidad con menor financiación por habitante ajustado tras Murcia (92,8 sobre 100 en 2024, Fedea)",
+    "despues": "la comunidad con menor financiación efectiva por habitante ajustado tras Murcia (92,8 sobre 100 en 2024, Fedea)",
+    "motivo": "Precisión del indicador, como en el criterio «beneficiarios»."
+   },
+   {
+    "propuesta": "compromis-11",
+    "criterio": "beneficiarios (campo)",
+    "antes": "41.926 M€ si la deuda a condonar es el 78 % que estimó la Sindicatura de Comptes para 2021,",
+    "despues": "41.926 M€ si la deuda a condonar es el 78 % que estimó la Sindicatura de Comptes para 2021 (unos 50.400 M€ con la deuda de junio de 2026),",
+    "motivo": "Dato desactualizado, como en «financiación»."
+   },
+   {
+    "propuesta": "compromis-11",
+    "criterio": "largo_plazo",
+    "antes": "la experiencia alemana muestra que la expectativa de rescates reduce la disciplina que imponen los mercados (Heppke-Falk y Wolff, 2008).",
+    "despues": "un estudio sobre los Länder alemanes halla que la expectativa de rescate reduce la prima de riesgo que exigen los mercados (Heppke-Falk y Wolff, 2008).",
+    "motivo": "Generalización: se apoya en un solo estudio sobre la prima de riesgo."
+   },
+   {
+    "propuesta": "compromis-11",
+    "criterio": "antecedentes",
+    "antes": "(sin esta fuente)",
+    "despues": "fuente añadida: BOCG Congreso, serie A, núm. 79-1 (19-12-2025): proyecto de ley orgánica de condonación de deuda autonómica (anexo I: 11.210 M€ para la Comunitat Valenciana) <https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-79-1.PDF>",
+    "motivo": "Fuente primaria del proyecto de ley, que solo se citaba por la presentación de Hacienda."
+   },
+   {
+    "propuesta": "compromis-12",
+    "criterio": "cita_traduccion",
+    "antes": "información pública sobre el grado de ejecución de las actuaciones.",
+    "despues": "información pública sobre el grado de ejecución de las actuaciones. En concreto, incorporaremos las siguientes medidas:",
+    "motivo": "Traducción incompleta: faltaba la última frase de la cita («En concret, incorporarem les següents mesures:», p. 58)."
+   },
+   {
+    "propuesta": "compromis-12",
+    "criterio": "concrecion",
+    "antes": "Promete un «calendari verificable», pero no lo incluye ni reparte la cuantía entre actuaciones.",
+    "despues": "Promete un «calendari verificable», pero no lo incluye ni reparte la cuantía entre actuaciones. La cuantía y buena parte de las actuaciones coinciden con una moción de Compromís que el Congreso aprobó en 2026 y que fijaba el periodo 2026-2030; el programa no da plazo.",
+    "motivo": "Omisión: el plan reproduce los puntos 2 y 3 de la moción 173/000152 (BOCG D-489), que daba el periodo 2026-2030."
+   },
+   {
+    "propuesta": "compromis-12",
+    "criterio": "legal",
+    "antes": "cuya titularidad y administración corresponden a Adif (",
+    "despues": "cuya titularidad y administración corresponden a Adif y Adif Alta Velocidad (",
+    "motivo": "Precisión: la disposición adicional primera de la Ley 38/2015 atribuye la titularidad y administración a «ADIF y ADIF-Alta Velocidad»."
+   },
+   {
+    "propuesta": "compromis-12",
+    "criterio": "financiacion",
+    "antes": "pero no dice en qué plazo, de qué partidas saldría ni si los trenes están incluidos en esa cifra.",
+    "despues": "pero no dice en qué plazo, de qué partidas saldría ni si los trenes están incluidos en esa cifra; los 58 trenes coinciden con los que Renfe ya había anunciado para Valencia-Castellón (37) y Alicante-Murcia (21), pendientes de entrega por el fabricante según el ministro de Transportes (18-2-2026).",
+    "motivo": "Omisión: los 58 trenes no son una compra nueva (exposición de motivos de la moción, BOCG D-489, p. 74; Diario de Sesiones del Pleno núm. 167, pp. 43-44)."
+   },
+   {
+    "propuesta": "compromis-12",
+    "criterio": "financiacion",
+    "antes": "según un informe de la Cámara de Contratistas recogido por la prensa, se ejecutaron 540,7 M€ (37,64 %).",
+    "despues": "según un informe de la Cámara de Contratistas recogido por la prensa, se ejecutaron 540,7 M€ (37,64 %); el ministro de Transportes afirmó en el Congreso (18-2-2026) que el presupuesto del plan ha subido a cerca de 1.900 M€, con 1.470 M€ de Adif movilizados (en proyecto, obra o terminados) y el 87 % de los 173 M€ de Renfe ejecutado.",
+    "motivo": "Equilibrio de fuentes: solo se daba la cifra de la Cámara de Contratistas y el Consell; el Gobierno da otras en sede parlamentaria (Diario de Sesiones del Pleno núm. 167, pp. 43-44)."
+   },
+   {
+    "propuesta": "compromis-12",
+    "criterio": "evidencia",
+    "antes": "La AIReF (2020) considera las Cercanías un modo eficiente por su capacidad y estima",
+    "despues": "La AIReF (2020) atribuye a las Cercanías una alta rentabilidad social por su capacidad y estima",
+    "motivo": "Redacción ajustada a la fuente, que habla de «rentabilidad social»."
+   },
+   {
+    "propuesta": "compromis-12",
+    "criterio": "antecedentes",
+    "antes": "que pide completar ese plan y añadir actuaciones como la variante de Torrellano o la conexión de la línea C1 con Elx AV.",
+    "despues": "que pide completar ese plan (incluidas la primera fase de la variante de Torrellano y la conexión de la C1 con Elx AV) y añadir actuaciones como el estudio de la prolongación de la C1 hasta Dénia o una estación en la Font de la Figuera. El 26-2-2026 el Pleno del Congreso aprobó, sin votos en contra, una moción de Compromís que insta al Gobierno a aprobar un Plan de Inversiones 2026-2030 para las Cercanías valencianas con un mínimo de 1.500 M€ y actuaciones por líneas como las del programa (188 a favor y 161 abstenciones) y a incorporar antes de 2027 los 58 trenes comprometidos (316 a favor y 33 abstenciones); rechazó iniciar su traspaso a la Generalitat (53 a favor y 290 en contra).",
+    "motivo": "Dato erróneo: el BOCG D-345 sitúa Torrellano y Elx AV entre las medidas «ya incluidas en el plan» 2017-2025; las nuevas son las del punto 2. Omisión: falta el antecedente más directo, la moción 173/000152, aprobada por puntos el 26-2-2026 (Diario de Sesiones núm. 170, pp. 82-83; BOCG D-489)."
+   },
+   {
+    "propuesta": "compromis-01",
+    "criterio": "selección (extraccion.json)",
+    "antes": "El programa vuelve a ella en el apartado de energía (p. 29), donde toma como modelo «el mecanisme que ja existeix contra la compra especulativa d’habitatge per fons voltor».",
+    "despues": "En el apartado de energía (p. 29) el programa vuelve a citar a los «fons voltor» de vivienda, al tomar como modelo para la compraventa de plantas fotovoltaicas «el mecanisme que ja existeix contra la compra especulativa d’habitatge per fons voltor» (un mecanismo vigente, no la prohibición que propone).",
+    "motivo": "Justificación sobredimensionada: la p. 29 se refiere a un mecanismo que «ja existeix», no a la prohibición que se evalúa."
+   },
+   {
+    "propuesta": "compromis-07",
+    "criterio": "financiacion",
+    "antes": "Reformar la Constitución no tiene coste por sí mismo y la ley ya revaloriza las pensiones con el IPC; la escala de ese gasto está documentada:",
+    "despues": "Reformar la Constitución no tiene coste por sí mismo y la ley ya revaloriza las pensiones con el IPC, pero la reforma convertiría en obligación constitucional un gasto cuya escala está documentada:",
+    "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): decisión de coherencia sobre la nota de la rúbrica («medidas sin coste presupuestario directo relevante»): no se aplica, porque la reforma convertiría en obligación constitucional la revalorización con el IPC, un gasto con coste documentado, a diferencia de las reformas constitucionales sobre derechos sin cuantía (aborto); mismo criterio que upc-07, upn-06 y cc-09 (mantener un gasto vigente: «mixta»). Se escribe el motivo en el texto. La valoración («mixta») no cambia.",
+    "fecha": "2026-11-14"
+   }
+  ],
+  "dudas": [
+   "Selección (decisión editorial, no error de hecho): las 12 dan 7 plazas al bloque 1 del programa (vivienda, salarios, pensiones) y ninguna al bloque «pel territori» de la web electoral, que tiene el mismo peso que el de vivienda (4 líneas), ni a cuatro de sus siete lemas (Corredor Mediterrani, Valencià, Albufera viva, Serveis públics) ni a los bloques 2 (servicios públicos, también primer motivo de voto de la web) y 7 del programa, que sí tiene medidas concretas para ellos: Corredor Mediterrani con «calendari, pressupost i rendició de comptes» (p. 12), Albufera como reserva de la biosfera y sus caudales ecológicos (p. 32), empresa pública de energía y titularidad pública de la red (pp. 29-31), legislación contra la obsolescencia programada (p. 25), requisito lingüístico y valenciano en la UE (p. 44). Opciones: mantener las 12 (cada una está justificada por la web o el programa) o sustituir una o dos de vivienda o trabajo por medidas de esos bloques, con evaluación y revisión nuevas. No se ha cambiado.",
+   "compromis-c02 vuelve al complemento (ver compromisos/revision.json): decisión de mismo estándar que puede revertirse si se prefiere tratar «control efectiu de preus de lloguer» (p. 4) como la misma medida que «regular los alquileres y reducirlos».",
+   "Alta velocidad: el programa dice «Racionalitzarem l’alta velocitat liberalitzada, apostant pel transport de mercaderies» (p. 13) y la web «Defensarem la renacionalització de l'alta velocitat liberalitzada». Podría ser una errata del programa, pero el texto literal no habla de renacionalizar, por lo que compromis-c12 sigue en el complemento. Si la candidatura corrige el PDF, habría que sacarlo.",
+   "Aviación (compromis-08): la web da «més de 5.000 milions» y destino «transport públic»; el programa, 6.000 millones al ferrocarril. Se evalúa el programa y el texto dice ahora que la web es menos precisa y más amplia en el destino. Ninguna fuente oficial respalda ni contradice los 6.000 millones: las estimaciones oficiales y académicas de medidas concretas son menores (331,5 M€ en el PBF; hasta 1.203 M€ por el queroseno intra-UE y 952 M€ por un impuesto sobre billetes en el Libro Blanco; 2.382 M€ de recaudación total en CE Delft) y la de T&E (4.610-5.650 M€) suma conceptos más amplios. Se mantiene «mixta».",
+   "compromis-10: la votación oficial del Pleno (25-6-2026) es 178 sí, 32 no, 138 abstenciones y 2 no votan (votación 22 de la sesión 191); El Salto da 179/32/137. La proposición estaba en el Senado (624/000012) y decayó con la disolución del 5-10-2026.",
+   "compromis-07 financiación: la nota de la rúbrica («sin coste presupuestario directo relevante… favorable») podría aplicarse, porque la revalorización con el IPC ya es la ley; se mantiene «mixta» como en psoe-02, que tiene los mismos hechos. Conviene que la auditoría de coherencia decida para las dos a la vez.",
+   "Para la auditoría de coherencia (propuestas ya publicadas de otros partidos, fuera de esta revisión): (1) bng-05 concreción y financiación usan la EAES de 2023 (28.050 €) y concluyen que su 60 % «ya es inferior» al SMI de 2026; con la EAES de 2024 (29.540 €, INE 28-5-2026) el 60 % es 17.724 €, por encima del SMI: la conclusión se invierte. (2) pnv-02 beneficiarios dice que el SMI equivale al «61 % de la media estatal (28.050 €)»; con 2024 es el 57,9 %. (3) bng-05 evidencia dice que la Low Pay Commission no aprecia despidos «al alcanzar el objetivo de dos tercios», pero la LPC dice que en 2024 no se alcanzó. (4) adelante_andalucia-03 evidencia dice que la reducción de jornada «elevó el salario por hora»; el artículo de Batut y otros estima un efecto positivo no significativo. (5) erc-02 y psc-01 (legal) no mencionan que el art. 8.2 de la LO 2/2012 impide al Estado asumir deudas autonómicas salvo ley orgánica que lo excepcione. (6) EUR-Lex redirige hoy a su portada con cualquier documento: hay enlaces a eur-lex en 12 evaluaciones publicadas (bng, adelante_andalucia, cc, pnv, salf, ara_mes_fa, bng/compromisos, eh_bildu, junts, podemos, pp, upc); si persiste, sustituirlos por la copia del BOE. (7) Las citas «según Europa Press» del informe de Consumo y el CSIC (Bolsamanía) en cc, erc, ara_mes_fa, bng, eh_bildu, psc, psoe y upn tienen fuente primaria (dsca.gob.es, 23-4-2026).",
+   "No verificado: la fecha «julio de 2023» de la ficha de España de T&E (el PDF no la trae; cuadra con su artículo del 12-7-2023); la nota de Renfe con los 58 trenes (la cifra consta en la moción de Compromís y el ministro no la desmintió); si España ha aprobado algún impuesto sobre billetes de avión después de 2023; la ley francesa de 2022 sobre terapias de conversión (Légifrance devuelve 403), por lo que no se añadió a compromis-10."
+  ]
+ }
+}

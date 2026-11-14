@@ -116,7 +116,20 @@ alternativa era readmitir los descartes de UPN que solo nombran un resultado; el
 lo permite. Recuentos: Podemos 11/77/2/6 → 10/71/1/6; Ara Més 7/69/5/7 → 7/63/4/6 (favorable / mixta /
 desfavorable / no_verificable). Registro en sus `revision.json` (`cambios` y `coherencia_2026-11-14`).
 
-## Selección de Compromís (no se cambia: decisión editorial)
+## Selección de Compromís (sustitución aplicada el 14-11)
+
+**Aplicada.** Por decisión del editor se hicieron las dos sustituciones propuestas abajo, con
+identificadores nuevos: salen compromis-04 y compromis-06 y entran **compromis-13** (Corredor
+Mediterráneo, p. 12) y **compromis-14** (empresa pública de energía, p. 29). Una revisión independiente
+(prompt 4) las aprobó el mismo día con 22 cambios registrados en `data/programas/compromis/revision.json`:
+entre otros, beneficiarios de compromis-13 pasa de «favorable» a «mixta» (mismo criterio que bng-10; pnv-04
+cuantifica con datos del Tribunal de Cuentas Europeo y un coste total conocido) y el encaje legal de
+compromis-14 corrige la afirmación de que no había norma para encargar las centrales revertidas a una
+empresa pública (Ley de Aguas, arts. 112 bis.7 y 132; Reglamento del Dominio Público Hidráulico,
+art. 132.2). Las evaluaciones retiradas se conservan en ese `revision.json`. En `compromisos/`, el
+descartado compromis-c04 cambia solo de motivo (ya no es prioridad del programa) y `seleccion_sha256`
+coincide con el fichero. Con la sustitución, los seis bloques de la web tienen al menos una prioridad.
+Lo que sigue es el análisis que motivó el cambio.
 
 Juicio: **no cumple del todo el protocolo** tal como se ha aplicado a los demás programas. El prompt 1
 pide las 12 que el propio documento presenta como centrales («aparece en el resumen/índice/introducción,
@@ -160,7 +173,9 @@ salf 2, upc 3, upn 3), más una entrada de selección en podemos y otra en ara_m
 
 ## Dudas que quedan
 
-- **Selección de Compromís**: decisión editorial sobre las dos sustituciones propuestas.
+- **Selección de Compromís**: sustituciones aplicadas y revisadas (arriba). Queda una duda editorial
+  menor, anotada en su `revision.json`: el fondo soberano de la p. 31 coincide casi literalmente con la
+  línea de la web que concreta compromis-14.
 - **Concreción «desfavorable»**: tras las retiradas, en las selecciones de compromisos (prompt 1b)
   solo queda upn-02, que se mantiene por nombrar la regla. La rúbrica sigue siendo aplicable a los
   programas (cc-04, cc-07, cc-12, pnv-06, pnv-11 nombran un instrumento aunque no lo detallen).

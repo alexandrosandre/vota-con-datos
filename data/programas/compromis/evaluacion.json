@@ -1,0 +1,1929 @@
+{
+ "partido": "compromis",
+ "programa_sha256": "37b569d6ac31a21a8f972dcfd5be3740c32f50fe1c6f3e87c9a1f68027ee6b55",
+ "modelo": "Claude (Anthropic)",
+ "fecha": "2026-11-14",
+ "nota": "Evaluación de las 12 prioridades de extraccion.json (programa de la coalición Compromís: Front Valencià, publicado el 14-nov-2026, en valenciano; citas literales con traducción al castellano). Cuando el hecho es el mismo se reaprovechan, con sus fuentes, textos de evaluaciones ya revisadas: las de los compromisos de Compromís (data/programas/compromis/compromisos/, revisión del 12-nov) para compromis-01, -02, -04, -07, -08, -11 y -12; adelante_andalucia-03 (jornada de 32 horas) para compromis-05; bng-05 (SMI al 60 % del salario medio) para compromis-06, y frente_amplio-07 (1 % del PIB en vivienda) y frente_amplio-03 (gravamen del 10 %) para compromis-03 y -04. La concreción se juzga siempre sobre el programa. compromis-09 (DANA) y compromis-10 (terapias de conversión) son evaluaciones nuevas. Los cálculos propios se señalan como tales. Sustitución del 14-nov (decisión editorial tras la auditoría de coherencia, data/fase3/coherencia_2026-11-14.md, apartado «Selección de Compromís»): salen compromis-04 (más impuestos desde la tercera vivienda) y compromis-06 (SMI al 60 % del salario medio) y entran compromis-13 (Corredor Mediterráneo, p. 12) y compromis-14 (empresa pública de energía, p. 29), con identificadores nuevos para no reutilizar los de las retiradas, que otras revisiones citan. compromis-13 sigue el criterio de pnv-04 (terminar una infraestructura ferroviaria con calendario) y compromis-14 reaprovecha, con sus fuentes, los textos de adelante_andalucia-08 (empresa pública de energía) en evidencia y parte de legal, antecedentes y largo plazo. Las dos evaluaciones retiradas se conservan en revision.json (propuestas_retiradas).",
+ "propuestas": [
+  {
+   "id": "compromis-01",
+   "titulo": "Prohibir la compra de vivienda a sociedades especulativas y «fondos buitre»",
+   "area": "vivienda",
+   "resumen": "Prohibir que las sociedades especulativas y los «fondos buitre» compren vivienda e impedir que eludan la prohibición mediante sociedades instrumentales o interpuestas.",
+   "cita": "Prohibirem que societats especulatives i fons voltor puguen comprar habitatges al nostre País i impedirem que eludisquen aquesta prohibició mitjançant societats instrumentals o interposades.",
+   "cita_traduccion": "Prohibiremos que sociedades especulativas y fondos buitre puedan comprar viviendas en nuestro País e impediremos que eludan esta prohibición mediante sociedades instrumentales o interpuestas.",
+   "pagina": 4,
+   "beneficiarios": "Beneficiaría, según su planteamiento, a quienes buscan comprar o alquilar vivienda para vivir en ella (no hay cifra oficial de compradores potenciales; en la Comunitat Valenciana el 17,4 % de los hogares vive de alquiler a precio de mercado, INE 2025); no se ha localizado una cifra oficial de cuántas viviendas compran los fondos, y el coste recaería en esos inversores y en quienes les venden.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 4) dice qué hará: prohibir que «societats especulatives i fons voltor» compren vivienda «al nostre País» e impedir que se eluda la prohibición mediante sociedades instrumentales o interpuestas; en la misma página propone además limitar las compras para la «acumulació especulativa» de personas físicas y jurídicas «mitjançant criteris objectius de concentració de la propietat». Es una medida identificable, pero no define qué es una sociedad especulativa o un «fondo buitre», si «el nostre País» es la Comunitat Valenciana o toda España, con qué norma se aprobaría ni en qué plazo; no tiene cuantía.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=4",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 4"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "El art. 63 TFUE prohíbe las restricciones a los movimientos de capitales, que según el TJUE incluyen las inversiones inmobiliarias de no residentes (Konle); el TJUE solo admite límites por objetivos de vivienda u ordenación del territorio si son adecuados y no van más allá de lo necesario, y ha declarado contrarios a esa libertad un sistema de autorización previa (Konle, C-302/97) y el requisito de «vínculo suficiente» con el municipio para comprar (Libert, C-197/11). El RDL 29/2026, en vigor y convalidado, limita hasta 2030 las compras por menos del 70 % del valor de mercado a ciertas entidades y a las personas jurídicas grandes tenedoras, con excepciones, y según su preámbulo fija ese plazo «para garantizar su proporcionalidad, conforme a la doctrina del Tribunal Constitucional». No se ha localizado jurisprudencia del TJUE sobre una prohibición total de compra para una categoría de inversores; su encaje dependería de cómo se defina.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/doue/2016/202/Z00001-00388.pdf",
+       "titulo": "Tratado de Funcionamiento de la UE, versión consolidada (DOUE C 202, 7-6-2016, copia del BOE), art. 63 (libre circulación de capitales)"
+      },
+      {
+       "url": "http://publications.europa.eu/resource/celex/61997CJ0302",
+       "titulo": "TJUE, sentencia de 1-6-1999, Konle, C-302/97 (Tirol), Oficina de Publicaciones de la UE"
+      },
+      {
+       "url": "http://publications.europa.eu/resource/celex/62011CJ0197",
+       "titulo": "TJUE, sentencia de 8-5-2013, Libert y otros, C-197/11 y C-203/11 (Flandes), Oficina de Publicaciones de la UE"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+       "titulo": "Real Decreto-ley 29/2026, de 6 de octubre, de medidas urgentes para la protección de la función social de la vivienda (BOE)"
+      },
+      {
+       "url": "https://www.congreso.es/es/busqueda-de-iniciativas?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=130%2F000060",
+       "titulo": "Congreso de los Diputados, iniciativa 130/000060 (RDL 29/2026): «Concluido - (Convalidado)» el 12-11-2026"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "favorable",
+     "texto": "Es una medida regulatoria sin coste presupuestario directo relevante: prohíbe comprar vivienda a una categoría de inversores. La limitación de compras del Real Decreto-ley 29/2026 (art. 1), también regulatoria, no lleva asociada ninguna partida de gasto, y el informe de tasación lo aporta el comprador. Podría reducir de forma indirecta la recaudación de los impuestos que gravan las compraventas, un efecto del que no se ha localizado estimación, como tampoco del volumen de compras de estos inversores.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=4",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 4"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+       "titulo": "Real Decreto-ley 29/2026, de 6 de octubre, de medidas urgentes para la protección de la función social de la vivienda (BOE)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "La revisión de la Oficina de Rendición de Cuentas del Gobierno de EE. UU. (GAO, 2024) concluye que los estudios hallan que los inversores institucionales pueden haber contribuido a subir los precios y los alquileres de la vivienda unifamiliar, pero también a estabilizar barrios tras la crisis financiera, y que no está claro su efecto sobre el acceso a la propiedad. No se ha localizado ninguna evaluación de una prohibición de compra a fondos como la propuesta.",
+     "fuentes": [
+      {
+       "url": "https://www.gao.gov/assets/gao-24-106643.pdf",
+       "titulo": "GAO (EE. UU.), GAO-24-106643 (22-5-2024): Rental Housing: Information on Institutional Investment in Single-Family Homes"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Los Países Bajos permiten desde 2022 a los ayuntamientos impedir que los inversores compren viviendas en determinados barrios para alquilarlas («opkoopbescherming»); la han usado unos 70 municipios. Según el Gobierno neerlandés (16-10-2026), su evaluación concluye que su valor está sobre todo en preservar la habitabilidad de los barrios y que no es un instrumento eficaz para aumentar las posibilidades de compra de quienes acceden a su primera vivienda, por lo que el ministro prepara un proyecto de ley, que saldrá a consulta a finales de 2026, para limitarla a los barrios donde la habitabilidad esté bajo presión. Es una restricción más acotada que la propuesta.",
+     "fuentes": [
+      {
+       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/15/opkoopbescherming-wordt-gericht-op-leefbaarheid-in-wijken",
+       "titulo": "Gobierno de los Países Bajos (16-10-2026): la «opkoopbescherming» se orienta a la habitabilidad de los barrios tras su evaluación"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "El RDL 26/2026 limitó la compra de vivienda por menos del 70 % de su valor de tasación a las entidades con objeto social inmobiliario, y el Congreso lo derogó el 2-10-2026. El RDL 29/2026, en vigor desde el 8-10-2026, recupera la limitación hasta el 31-12-2030 para las entidades que compran por debajo del valor de tasación y las personas jurídicas grandes tenedoras, con excepciones como el alquiler asequible; la Diputación Permanente lo convalidó el 12-11-2026 y el PP ha anunciado que lo derogará si gobierna. Es demasiado reciente para conocer sus efectos.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/pdf/2026/BOE-A-2026-20266-consolidado.pdf",
+       "titulo": "Real Decreto-ley 26/2026, de 29 de septiembre (texto consolidado: derogado por acuerdo del Congreso, Resolución de 2-10-2026)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+       "titulo": "Real Decreto-ley 29/2026, de 6 de octubre, de medidas urgentes para la protección de la función social de la vivienda (BOE)"
+      },
+      {
+       "url": "https://www.congreso.es/es/busqueda-de-iniciativas?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=130%2F000060",
+       "titulo": "Congreso de los Diputados, iniciativa 130/000060 (RDL 29/2026): «Concluido - (Convalidado)» el 12-11-2026"
+      },
+      {
+       "url": "https://www.eldiario.es/politica/diputacion-permanente-pone-colofon-huelga-aprobacion-decreto-ley-vivienda_1_13655575.html",
+       "titulo": "elDiario.es (12-11-2026): la Diputación Permanente y la convalidación del RDL 29/2026"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Los beneficiarios declarados son quienes buscan comprar o alquilar vivienda para vivir en ella: no hay cifra oficial de compradores potenciales, y en la Comunitat Valenciana el 17,4 % de los hogares vive de alquiler a precio de mercado (INE, 2025). No se ha localizado una cifra oficial de cuántas viviendas compran los fondos; según un informe del Ministerio de Consumo y el CSIC, alrededor del 61 % de las viviendas en alquiler pertenece a particulares con dos o más viviendas alquiladas, personas jurídicas y entidades públicas, sin desglose de los fondos. El coste recaería en esos inversores y en quienes les venden.",
+     "fuentes": [
+      {
+       "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/9997?nult=1",
+       "titulo": "INE, Encuesta de Condiciones de Vida 2025: hogares por régimen de tenencia de la vivienda y comunidad autónoma (tabla 9997)"
+      },
+      {
+       "url": "https://www.dsca.gob.es/es/comunicacion/notas-prensa/61-mercado-alquiler-esta-manos-multiarrendadores-particulares-personas",
+       "titulo": "Ministerio de Derechos Sociales, Consumo y Agenda 2030 (23-4-2026): el 61 % del mercado del alquiler está en manos de multiarrendadores particulares y personas jurídicas (informe con el CSIC)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Según la GAO, la entrada de inversores institucionales puede elevar precios y alquileres, pero también aportó capital para rehabilitar y estabilizar barrios tras la crisis, de modo que excluirlos tiene efectos en ambos sentidos. Una prohibición indefinida podría ser cuestionada por contraria a la libre circulación de capitales (art. 63 TFUE); el propio RDL 29/2026 limita su restricción hasta 2030 para garantizar su proporcionalidad conforme a la doctrina del Tribunal Constitucional, según su preámbulo.",
+     "fuentes": [
+      {
+       "url": "https://www.gao.gov/assets/gao-24-106643.pdf",
+       "titulo": "GAO (EE. UU.), GAO-24-106643 (22-5-2024): Rental Housing: Information on Institutional Investment in Single-Family Homes"
+      },
+      {
+       "url": "https://www.boe.es/doue/2016/202/Z00001-00388.pdf",
+       "titulo": "Tratado de Funcionamiento de la UE, versión consolidada (DOUE C 202, 7-6-2016, copia del BOE), art. 63 (libre circulación de capitales)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+       "titulo": "Real Decreto-ley 29/2026, de 6 de octubre, de medidas urgentes para la protección de la función social de la vivienda (BOE)"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "compromis-02",
+   "titulo": "Alquiler indefinido como régimen ordinario",
+   "area": "vivienda",
+   "resumen": "Hacer del alquiler de duración indefinida el régimen ordinario, con derecho del propietario a recuperar la vivienda para uso personal o familiar.",
+   "cita": "Promourem el lloguer indefinit com a règim ordinari, garantint el dret a recuperar la possessió per motius d’ús personal o familiar.",
+   "cita_traduccion": "Promoveremos el alquiler indefinido como régimen ordinario, garantizando el derecho a recuperar la posesión por motivos de uso personal o familiar.",
+   "pagina": 4,
+   "beneficiarios": "Beneficiaría a los hogares inquilinos (el 16,7 % de los hogares de España vive de alquiler a precio de mercado, unos 3,3 millones aplicando ese porcentaje de la ECV 2025 a los 19,95 millones de hogares que estima el INE para 2026; el 17,4 % en la Comunitat Valenciana), y el coste recaería en los arrendadores, sin gasto público directo.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 4) propone el alquiler indefinido «com a règim ordinari» y garantiza al arrendador recuperar la vivienda por motivos de uso personal o familiar. No dice si se aplicaría a todos los contratos o solo a los de vivienda habitual, si afectaría a los contratos vigentes, si habría otras causas de extinción o indemnización, cómo se actualizaría la renta ni en qué plazo; «promourem» tampoco precisa si sería obligatorio.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=4",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 4"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "La duración y las prórrogas del alquiler son legislación civil, competencia exclusiva del Estado (art. 149.1.8.ª CE), y se regulan en los arts. 9 y 10 de la Ley de Arrendamientos Urbanos, que hoy fijan un mínimo de cinco años (siete si el arrendador es persona jurídica) y hasta tres años de prórroga tácita; bastaría una ley ordinaria. El preámbulo del Real Decreto-ley 28/2026 recuerda que el Tribunal Constitucional consideró conforme a la Constitución la prórroga forzosa de la legislación anterior (STC 89/1994). No se ha localizado pronunciamiento sobre un contrato indefinido en el marco vigente del derecho de propiedad (art. 33 CE), y su encaje dependería de las causas de extinción que se admitieran; el programa solo menciona la recuperación de la vivienda por uso personal o familiar.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-26003",
+       "titulo": "Ley 29/1994, de 24 de noviembre, de Arrendamientos Urbanos (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20822",
+       "titulo": "Real Decreto-ley 28/2026, de 6 de octubre, medidas urgentes para reforzar la estabilidad de los contratos de arrendamiento de vivienda habitual (BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "favorable",
+     "texto": "Es una regulación del contrato civil sin gasto público directo: el Real Decreto-ley 28/2026, que regulaba una prórroga obligatoria por plazos sucesivos, modificaba el art. 10 de la Ley de Arrendamientos Urbanos sin medidas de gasto, y la indemnización por no prorrogar la pagaba el arrendador. El coste recae en los arrendadores, no en los presupuestos.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20822",
+       "titulo": "Real Decreto-ley 28/2026, de 6 de octubre, medidas urgentes para reforzar la estabilidad de los contratos de arrendamiento de vivienda habitual (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-26003",
+       "titulo": "Ley 29/1994, de 24 de noviembre, de Arrendamientos Urbanos (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "No se ha localizado una evaluación empírica de un contrato de alquiler indefinido. Con datos de San Francisco, Diamond, McQuade y Qian (2019) hallan que extender la regulación de alquileres redujo un 20 % la movilidad de los inquilinos y también su salida de la ciudad, pero los propietarios afectados redujeron un 15 % la oferta en alquiler, lo que probablemente elevó los alquileres de mercado a largo plazo; aquella norma limitaba las subidas de renta dentro de un mismo contrato y restringía los desahucios, por lo que no equivale a un contrato indefinido. En España, el preámbulo de la Ley de Arrendamientos Urbanos de 1994 atribuye efectos perjudiciales a la prolongada prórroga obligatoria de la ley de 1964, que coexistía con rentas congeladas, y señala que su supresión en 1985 generó contratos de corta duración y fuertes subidas de renta.",
+     "fuentes": [
+      {
+       "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20181289",
+       "titulo": "Diamond, McQuade y Qian (2019), The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco, American Economic Review 109(9)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-26003",
+       "titulo": "Ley 29/1994, de 24 de noviembre, de Arrendamientos Urbanos (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.nber.org/system/files/working_papers/w24181/w24181.pdf",
+       "titulo": "Diamond, McQuade y Qian (2018), documento de trabajo NBER w24181 (descripción del control de rentas de San Francisco, p. 2)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Según el preámbulo del Real Decreto-ley 28/2026, en Alemania el contrato es por regla general indefinido y el arrendador solo puede ponerle fin con un interés legítimo, y en Francia se renueva tácitamente cada tres o seis años. Los Países Bajos hicieron del contrato indefinido la norma el 1-7-2024, a la vez que regulaban las rentas medias; según su Gobierno (10-4-2025), en 2024 se vendieron más de 30.000 viviendas de alquiler y el parque privado de alquiler se redujo en 413 viviendas netas, sobre todo porque el alquiler medio dejó de ser rentable para los particulares, junto con cambios fiscales, y anunció que volvería a permitir contratos temporales a todos los estudiantes para reducir esas ventas. No se ha localizado una evaluación publicada de los resultados de estos regímenes.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20822",
+       "titulo": "Real Decreto-ley 28/2026, de 6 de octubre, medidas urgentes para reforzar la estabilidad de los contratos de arrendamiento de vivienda habitual (BOE)"
+      },
+      {
+       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2025/04/10/maatregelen-voor-behoud-middenhuurwoningen",
+       "titulo": "Gobierno de los Países Bajos (10-4-2025): medidas para conservar la vivienda de alquiler medio, tras el seguimiento de la Wet vaste huurcontracten y la Wet betaalbare huur"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "La Ley de Arrendamientos Urbanos de 1964 imponía una prórroga forzosa que el Real Decreto-ley 2/1985 dejó de exigir; la ley de 1994 la sustituyó por un plazo mínimo, ampliado en 2019 a cinco o siete años, y la Ley 12/2023 añadió una prórroga extraordinaria de hasta tres años en zonas tensionadas. El Real Decreto-ley 28/2026, que establecía la prórroga obligatoria por plazos sucesivos de cinco o siete años con indemnización al inquilino si el arrendador no prorrogaba, sustituía al Real Decreto-ley 27/2026, que el Congreso derogó el 2-10-2026. La Diputación Permanente acordó derogarlo el 12-11-2026 (BOE de 13-11-2026); según Naiz, con los votos en contra de PP, Vox, Junts y PNV.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-26003",
+       "titulo": "Ley 29/1994, de 24 de noviembre, de Arrendamientos Urbanos (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20822",
+       "titulo": "Real Decreto-ley 28/2026, de 6 de octubre, medidas urgentes para reforzar la estabilidad de los contratos de arrendamiento de vivienda habitual (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20527",
+       "titulo": "Resolución de 2 de octubre de 2026, del Congreso de los Diputados: derogación del Real Decreto-ley 27/2026 (BOE)"
+      },
+      {
+       "url": "https://www.naiz.eus/es/info/noticia/20261112/decretos-de-vivienda-el-congreso-aprueba-uno-y-rechaza-el-otro-por-el-voto-del-pnv",
+       "titulo": "Naiz (12-11-2026): la Diputación Permanente convalida el RDL 29/2026 y rechaza el RDL 28/2026"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23754",
+       "titulo": "Resolución de 12-11-2026 de la Diputación Permanente del Congreso: derogación del Real Decreto-ley 28/2026 (BOE)"
+      },
+      {
+       "url": "https://www.congreso.es/es/busqueda-de-iniciativas?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=130%2F000059",
+       "titulo": "Congreso de los Diputados, iniciativa 130/000059 (RDL 28/2026): «Concluido - (Derogado)» el 12-11-2026"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a los hogares inquilinos: el 16,7 % de los hogares de España vive de alquiler a precio de mercado y el 3,5 % por debajo de ese precio (ECV 2025); aplicado a los 19,95 millones de hogares que estima el INE para 2026, el alquiler a precio de mercado supone unos 3,3 millones. En la Comunitat Valenciana el porcentaje es del 17,4 %. El coste recae en los arrendadores, que solo podrían recuperar la vivienda por uso personal o familiar; el programa no dice cómo se actualizaría la renta, y ese coste no está cuantificado.",
+     "fuentes": [
+      {
+       "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/9997?nult=1",
+       "titulo": "INE, Encuesta de Condiciones de Vida 2025: hogares por régimen de tenencia de la vivienda y comunidad autónoma (tabla 9997)"
+      },
+      {
+       "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/60131?nult=1",
+       "titulo": "INE, Encuesta Continua de Hogares 2026: hogares en viviendas familiares (tabla 60131)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Ventaja: más estabilidad para los hogares inquilinos; el preámbulo del Real Decreto-ley 28/2026 sostiene que la estabilidad del contrato reduce la rotación, los periodos de desocupación y los costes de transacción. Riesgo: que parte de los propietarios retire viviendas del alquiler, como ocurrió en San Francisco al extender el control de rentas; el Gobierno neerlandés anunció en 2025 que volvería a permitir contratos temporales a todos los estudiantes porque dan flexibilidad a los arrendadores y reducen la venta de viviendas de alquiler.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20822",
+       "titulo": "Real Decreto-ley 28/2026, de 6 de octubre, medidas urgentes para reforzar la estabilidad de los contratos de arrendamiento de vivienda habitual (BOE)"
+      },
+      {
+       "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20181289",
+       "titulo": "Diamond, McQuade y Qian (2019), The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco, American Economic Review 109(9)"
+      },
+      {
+       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2025/04/10/maatregelen-voor-behoud-middenhuurwoningen",
+       "titulo": "Gobierno de los Países Bajos (10-4-2025): medidas para conservar la vivienda de alquiler medio, tras el seguimiento de la Wet vaste huurcontracten y la Wet betaalbare huur"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "compromis-03",
+   "titulo": "1 % del PIB al año para comprar y promover vivienda protegida",
+   "area": "vivienda",
+   "resumen": "Destinar cada año el 1 % del PIB a comprar viviendas y promover vivienda protegida, pública o con cooperativas y entidades sin ánimo especulativo, en colaboración con comunidades autónomas y ayuntamientos.",
+   "cita": "Destinarem l’ 1% del PIB anual a programes d’adquisició d’habitatges o de promoció d’habitatge protegit, de titularitat pública o en col·laboració amb cooperatives, empreses del tercer sector i d’altres societats privades sense ànim especulatiu, en col·laboració amb comunitats autònomes i ajuntaments.",
+   "cita_traduccion": "Destinaremos el 1 % del PIB anual a programas de adquisición de viviendas o de promoción de vivienda protegida, de titularidad pública o en colaboración con cooperativas, empresas del tercer sector y otras sociedades privadas sin ánimo especulativo, en colaboración con comunidades autónomas y ayuntamientos.",
+   "pagina": 4,
+   "beneficiarios": "Hogares con dificultades para acceder a la vivienda a precio de mercado (el 16,7 % de los hogares alquila a precio de mercado, INE 2025), sin que el programa fije cuántas viviendas. El coste recaería en los contribuyentes: unos 16.900 millones de euros al año con el PIB de 2025.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 4) fija la cuantía (el 1 % del PIB cada año), el destino (comprar viviendas o promover vivienda protegida, pública o con cooperativas, empresas del tercer sector y entidades sin ánimo especulativo) y la colaboración con comunidades autónomas y ayuntamientos. No dice desde cuándo, cuántas viviendas, si el 1 % incluye el gasto autonómico y municipal ni si la protección sería permanente. La medida anterior del programa, una ley para expropiar a los fondos y sociedades con más de 1.000 viviendas, y después hasta los de 50, con el mismo fin de ampliar el parque público, no tiene cuantía ni plazo.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=4",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 4"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "El Estado financia vivienda mediante planes estatales aprobados por real decreto y ejecutados con las comunidades, como el Plan 2026-2030, que ya exige la protección permanente de las viviendas financiadas. Aumentar la dotación requiere presupuestos, no cambios constitucionales.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/eli/es/rd/2026/04/22/326",
+       "titulo": "Real Decreto 326/2026, Plan Estatal de Vivienda 2026-2030 (BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "Con el PIB de 2025 (1.690.012 millones de euros), el 1 % equivale a unos 16.900 millones al año, frente a 7.000 millones en cinco años del Plan Estatal de Vivienda 2026-2030 (4.200 del Estado). El programa no explica cómo se pagaría: propone por separado un fondo de inversión estatal que capte 18.000 millones de ahorro privado para vivienda asequible y varios impuestos sobre la vivienda (p. 5), sin vincularlos a esta partida ni cuantificar su recaudación.",
+     "fuentes": [
+      {
+       "url": "https://www.ine.es/dyngs/Prensa/CNA2025.htm",
+       "titulo": "INE, Contabilidad Nacional Anual de España 2025 (PIB a precios corrientes)"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/rd/2026/04/22/326",
+       "titulo": "Real Decreto 326/2026, Plan Estatal de Vivienda 2026-2030 (BOE)"
+      },
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=4",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 4"
+      },
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=5",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 5"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Ampliar la vivienda subvencionada aumenta el número total de viviendas ocupadas, aunque no una a una: en EE. UU., cada tres viviendas subvencionadas desplazan unas dos de oferta privada, con menos desplazamiento en mercados grandes (Sinai y Waldfogel). No hemos localizado una evaluación causal para España.",
+     "fuentes": [
+      {
+       "url": "https://www.nber.org/papers/w8709",
+       "titulo": "Sinai y Waldfogel, Do Low-Income Housing Subsidies Increase Housing Consumption?, NBER WP 8709 (2002); publicado como «…Increase the Occupied Housing Stock?» en Journal of Public Economics 89 (2005)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "El alquiler social supera el 20 % del parque en Austria, Dinamarca y Países Bajos, frente a menos del 2 % en España y una media del 7 % en la OCDE; según el Plan Estatal de Vivienda 2026-2030, el parque público español ronda las 318.000 viviendas, alrededor del 1,7 % de los hogares. Esos países muestran que un parque amplio es posible, pero la OCDE no atribuye en esa tabla resultados de asequibilidad a su tamaño.",
+     "fuentes": [
+      {
+       "url": "https://www.oecd.org/content/dam/oecd/en/data/datasets/affordable-housing-database/ph4-2-social-rental-housing-stock.pdf",
+       "titulo": "OCDE, Affordable Housing Database, PH4.2 Social rental housing stock"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/rd/2026/04/22/326",
+       "titulo": "Real Decreto 326/2026, Plan Estatal de Vivienda 2026-2030 (BOE), preámbulo"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "Según el Gobierno, entre 2018 y 2025 se movilizaron 20.988 millones en financiación y ayudas a la vivienda, y el Plan 2026-2030 prevé 7.000 millones en cinco años, con al menos el 40 % para ampliar la oferta. El 1 % del PIB supone unas doce veces el gasto anual de ese plan.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/eli/es/rd/2026/04/22/326",
+       "titulo": "Real Decreto 326/2026, Plan Estatal de Vivienda 2026-2030 (BOE)"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a hogares con dificultades de acceso a la vivienda, especialmente inquilinos (el 16,7 % de los hogares alquila a precio de mercado, INE 2025). El coste recae en los contribuyentes, unos 16.900 millones de euros al año; al no fijar un número de viviendas, no puede cuantificarse cuántos hogares se beneficiarían.",
+     "fuentes": [
+      {
+       "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/9997?nult=1",
+       "titulo": "INE, Encuesta de Condiciones de Vida 2025: régimen de tenencia de la vivienda"
+      },
+      {
+       "url": "https://www.ine.es/dyngs/Prensa/CNA2025.htm",
+       "titulo": "INE, Contabilidad Nacional Anual de España 2025 (PIB a precios corrientes)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Exige un gasto recurrente de unos 16.900 millones al año, además del mantenimiento y la gestión del parque, y su efecto sobre los precios depende de cuánto desplace a la oferta privada: en EE. UU., cada tres viviendas subvencionadas desplazan unas dos de oferta privada (Sinai y Waldfogel). El Plan Estatal 2026-2030 ya exige la protección permanente de las viviendas que financia; el programa no dice si la mantendría.",
+     "fuentes": [
+      {
+       "url": "https://www.nber.org/papers/w8709",
+       "titulo": "Sinai y Waldfogel, Do Low-Income Housing Subsidies Increase Housing Consumption?, NBER WP 8709 (2002); publicado como «…Increase the Occupied Housing Stock?» en Journal of Public Economics 89 (2005)"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/rd/2026/04/22/326",
+       "titulo": "Real Decreto 326/2026, Plan Estatal de Vivienda 2026-2030 (BOE)"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "compromis-05",
+   "titulo": "Semana laboral de cuatro días y 32 horas sin rebaja de sueldo",
+   "area": "empleo",
+   "resumen": "Reducir la jornada laboral a cuatro días y 32 horas semanales sin reducción de sueldo.",
+   "cita": "Reduirem la jornada laboral a quatre dies (trenta-dues hores) setmanals, sense disminució del sou.",
+   "cita_traduccion": "Reduciremos la jornada laboral a cuatro días (treinta y dos horas) semanales, sin disminución del sueldo.",
+   "pagina": 6,
+   "beneficiarios": "Las personas asalariadas con jornada superior a 32 horas: en junio de 2026 las grandes empresas tenían 7,34 millones de empleos afiliados y las pymes con asalariados 10,06 millones, incluidos sus titulares autónomos (Ministerio de Industria), y el empleo público sumaba 3,74 millones de ocupados en el tercer trimestre de 2026 (INE); con un tope de 37,5 horas el Gobierno contaba 12,5 millones de beneficiarios. El coste lo asumirían las empresas y las administraciones como empleadoras, sin cuantía en el programa.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 6) dice qué hará (una jornada de cuatro días y 32 horas semanales), a quién afecta (las personas asalariadas) y que no bajaría el sueldo. No da plazo ni calendario de aplicación, no dice si las 32 horas serían un promedio anual como el límite actual, si se aplicaría igual a pymes y grandes empresas o al empleo público, ni si habría ayudas a las empresas.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=6",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 6"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "La jornada máxima está en el art. 34.1 del Estatuto de los Trabajadores (40 horas semanales de promedio anual) y la legislación laboral es competencia exclusiva del Estado (art. 149.1.7.ª CE), por lo que bastaría una ley ordinaria por mayoría simple. Para el personal de las administraciones la jornada la fija cada una: la del Estado pasó a 35 horas por resolución de abril de 2026.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430",
+       "titulo": "Estatuto de los Trabajadores, texto consolidado (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/res/2026/04/14/(2)/con",
+       "titulo": "Resolución de 14 de abril de 2026, de la Secretaría de Estado de Función Pública, sobre jornada y horarios del personal de la Administración General del Estado (BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El coste recae sobre todo en las empresas. La memoria del proyecto de 37,5 horas (2025) calculó un aumento del coste salarial por hora de hasta el 6,67 % para quien trabajaba 40 horas y del 2,21 % de media para casi 14,5 millones de asalariados privados, sin impacto presupuestario porque la jornada pactada en las administraciones ya era inferior a 37,5 horas. Con el mismo cálculo, pasar de 40 a 32 horas sin rebaja salarial eleva un 25 % el coste por hora, y desde la jornada pactada media de 38,1 horas (marzo de 2026), un 19 % (cálculo propio); las 32 horas sí alcanzarían al empleo público, que en la Administración del Estado está en 35. El programa no cuantifica ese coste ni explica cómo se pagaría.",
+     "fuentes": [
+      {
+       "url": "https://www.congreso.es/webpublica/documentacion/docs_trabajo/leg15/121_000058/121_000058_doc_acompana.pdf",
+       "titulo": "Congreso, documentación que acompaña al proyecto de ley de reducción de jornada (121/000058), incl. memoria de impacto normativo (2025)"
+      },
+      {
+       "url": "https://www.ondavasca.com/la-jornada-laboral-se-reduce-un-ano-despues-del-intento-de-las-375-horas/",
+       "titulo": "Onda Vasca (2-5-2026): la jornada pactada en convenio, con datos de la Estadística de Convenios del Ministerio de Trabajo (prensa)"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/res/2026/04/14/(2)/con",
+       "titulo": "Resolución de 14 de abril de 2026, de la Secretaría de Estado de Función Pública, sobre jornada y horarios del personal de la Administración General del Estado (BOE)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Batut, Garnero y Tondini (2022), con cinco reformas europeas entre 1995 y 2007, hallaron que la reducción de la jornada legal redujo las horas trabajadas sin aumento del empleo, con efectos positivos pero no significativos sobre el salario por hora y la productividad por hora. En Portugal (de 44 a 40 horas en 1996), Raposo y van Ours no observaron más pérdidas de empleo entre los afectados, cuyo salario mensual se mantuvo. La reducción portuguesa fue del 9 % (de 44 a 40 horas); pasar de 40 a 32 horas supone un 20 % (cálculo propio), una magnitud mayor que la evaluada en ese caso.",
+     "fuentes": [
+      {
+       "url": "https://ideas.repec.org/p/iza/izadps/dp15566.html",
+       "titulo": "Batut, Garnero y Tondini (2022), The Employment Effects of Working Time Reductions: Sector-Level Evidence from European Reforms, IZA DP 15566"
+      },
+      {
+       "url": "https://econpapers.repec.org/RePEc:iza:izadps:dp3723",
+       "titulo": "Raposo y van Ours (2008), How Working Time Reduction Affects Employment and Earnings, IZA DP 3723"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Varios países europeos (Francia, Italia, Bélgica, Portugal y Eslovenia) redujeron la jornada legal entre 1995 y 2007: en el conjunto de esas reformas el empleo no aumentó (Batut y otros, 2022), y en Portugal los trabajadores afectados mantuvieron el salario mensual sin más pérdidas de empleo (Raposo y van Ours). No hemos localizado ningún país con una jornada legal general de 32 horas ni evaluaciones de una reducción de esa magnitud.",
+     "fuentes": [
+      {
+       "url": "https://ideas.repec.org/p/iza/izadps/dp15566.html",
+       "titulo": "Batut, Garnero y Tondini (2022), The Employment Effects of Working Time Reductions: Sector-Level Evidence from European Reforms, IZA DP 15566"
+      },
+      {
+       "url": "https://econpapers.repec.org/RePEc:iza:izadps:dp3723",
+       "titulo": "Raposo y van Ours (2008), How Working Time Reduction Affects Employment and Earnings, IZA DP 3723"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "El Gobierno aprobó en mayo de 2025 un proyecto de ley para bajar la jornada máxima de 40 a 37,5 horas, la primera rebaja desde 1983; el Congreso lo devolvió el 10 de septiembre de 2025 al aprobar las enmiendas a la totalidad (178 votos a favor y 170 en contra). Desde abril de 2026 el personal de la Administración del Estado tiene una jornada general de 35 horas por resolución de Función Pública. En 2023, el programa piloto del Ministerio de Industria para la semana de cuatro días en pymes industriales recibió 41 solicitudes; no hemos localizado una evaluación publicada de sus resultados.",
+     "fuentes": [
+      {
+       "url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2025/060525-rueda-de-prensa-ministros.aspx",
+       "titulo": "La Moncloa, Consejo de Ministros de 6-5-2025: proyecto de ley de jornada de 37,5 horas"
+      },
+      {
+       "url": "https://www.elsaltodiario.com/reduccion-jornada/congreso-rechaza-reduccion-jornada-laboral-diaz-promete-volver-intentarlo",
+       "titulo": "El Salto (10-9-2025): el Congreso rechaza la reducción de jornada (prensa)"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/res/2026/04/14/(2)/con",
+       "titulo": "Resolución de 14 de abril de 2026, de la Secretaría de Estado de Función Pública, sobre jornada y horarios del personal de la Administración General del Estado (BOE)"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/industria/Paginas/2023/170323-empresas-programa-piloto-jornada-4-dias.aspx",
+       "titulo": "La Moncloa (17-5-2023): 41 empresas optan al programa piloto de semana laboral de cuatro días"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficia a la mayoría de asalariados: en junio de 2026 había 7,34 millones de empleos afiliados en grandes empresas y 10,06 millones en pymes con asalariados (cifra que incluye a los titulares autónomos de esas empresas), y 3,74 millones de ocupados en el sector público; solo con un tope de 37,5 horas el Gobierno contaba 12,5 millones de beneficiarios. Pagan las empresas y el sector público como empleador, pero no hay cifra del coste total.",
+     "fuentes": [
+      {
+       "url": "https://ipyme.org/Publicaciones/Cifras%20PYME/CifrasPyme_junio_2026.pdf",
+       "titulo": "Ministerio de Industria, Cifras PYME, datos de junio de 2026"
+      },
+      {
+       "url": "https://www.ine.es/dyngs/Prensa/EPA3T26.pdf",
+       "titulo": "INE, Encuesta de Población Activa, tercer trimestre de 2026 (27-10-2026)"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2025/060525-rueda-de-prensa-ministros.aspx",
+       "titulo": "La Moncloa, Consejo de Ministros de 6-5-2025: proyecto de ley de jornada de 37,5 horas"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Ventajas posibles: más tiempo libre y conciliación con el mismo salario mensual. Riesgos: un aumento del coste laboral por hora del orden del 19-25 % (cálculo propio), que afectaría más a los sectores con mayor jornada media y empresas más pequeñas, como la hostelería o el comercio minorista, donde la memoria de 2025 preveía el mayor impacto de la reducción de jornada; la evidencia europea, con recortes menores, no muestra efectos sobre el empleo en ningún sentido ni ganancias significativas de productividad.",
+     "fuentes": [
+      {
+       "url": "https://www.congreso.es/webpublica/documentacion/docs_trabajo/leg15/121_000058/121_000058_doc_acompana.pdf",
+       "titulo": "Congreso, documentación que acompaña al proyecto de ley de reducción de jornada (121/000058), incl. memoria de impacto normativo (2025)"
+      },
+      {
+       "url": "https://ideas.repec.org/p/iza/izadps/dp15566.html",
+       "titulo": "Batut, Garnero y Tondini (2022), The Employment Effects of Working Time Reductions: Sector-Level Evidence from European Reforms, IZA DP 15566"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "compromis-07",
+   "titulo": "La revalorización de las pensiones con el coste de la vida, en la Constitución",
+   "area": "pensiones",
+   "resumen": "Garantizar en la Constitución que las pensiones se revaloricen conforme al coste de la vida para mantener su poder adquisitivo.",
+   "cita": "Assegurarem el manteniment del poder adquisitiu de les pensions, garantint constitucionalment la seua revaloració conforme al cost de la vida.",
+   "cita_traduccion": "Aseguraremos el mantenimiento del poder adquisitivo de las pensiones, garantizando constitucionalmente su revalorización conforme al coste de la vida.",
+   "pagina": 8,
+   "beneficiarios": "Beneficiaría a los cerca de 9,6 millones de pensionistas de la Seguridad Social (10,57 millones de pensiones contributivas en octubre de 2026) y a los 708.267 de Clases Pasivas, y el coste recaería en cotizantes y contribuyentes: la AIReF estima que las transferencias a la Seguridad Social deberán subir hasta el 3,0 % del PIB para pagar el gasto previsto con la normativa actual.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 8) concreta qué se garantizaría en la Constitución: la revalorización de las pensiones «conforme al cost de la vida». No dice qué artículo se reformaría, con qué índice se mediría el coste de la vida ni en qué plazo.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=8",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 8"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "El art. 50 de la Constitución ya obliga a garantizar «pensiones adecuadas y periódicamente actualizadas», y la revalorización anual con el IPC figura en la ley (art. 58 de la Ley General de la Seguridad Social, en la redacción de la Ley 21/2021). El procedimiento depende del artículo que se reforme: fuera de la sección de derechos fundamentales, como el art. 50, bastan tres quintos de cada Cámara y referéndum si lo pide una décima parte de los miembros de una de ellas (art. 167); dentro de esa sección hacen falta dos tercios, disolución de las Cortes, ratificación por las nuevas Cámaras y referéndum obligatorio (art. 168). Hoy los principios del capítulo tercero, como el art. 50, solo pueden alegarse ante los jueces según lo que dispongan las leyes que los desarrollen (art. 53.3).",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-21652",
+       "titulo": "Ley 21/2021, de garantía del poder adquisitivo de las pensiones (BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "Reformar la Constitución no tiene coste por sí mismo y la ley ya revaloriza las pensiones con el IPC, pero la reforma convertiría en obligación constitucional un gasto cuya escala está documentada: en 2026 supuso una subida general del 2,7 %, la nómina de pensiones contributivas fue de 14.540 M€ en octubre y la AIReF sitúa el gasto bruto en pensiones en el 14,6 % del PIB de media entre 2022 y 2050. El programa apunta dos vías de financiación sin cuantificarlas (en la misma sección, eliminar el tope de la base máxima de cotización, p. 8, y en la de fiscalidad, un impuesto a las empresas por el uso de robots que refuerce el sistema público de pensiones, p. 19) para un aumento de gasto que, según la AIReF, exigirá elevar las transferencias a la Seguridad Social hasta el 3,0 % del PIB, algo que sin medidas «parece difícil de compatibilizar» con los marcos fiscales europeo y nacional.",
+     "fuentes": [
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2026/260226-convalidacion-revalorizacion-pensiones.aspx",
+       "titulo": "La Moncloa (26-2-2026): el Congreso convalida la revalorización de las pensiones de 2026"
+      },
+      {
+       "url": "https://revista.seg-social.es/-/la-pension-media-del-sistema-de-la-seguridad-social-alcanza-los-1.376-1-euros-en-octubre-un-4-6-mas-alta-que-hace-un-ano",
+       "titulo": "Seguridad Social: nómina de pensiones de octubre de 2026"
+      },
+      {
+       "url": "https://www.airef.es/es/noticias/la-airef-ratifica-el-resultado-de-2025-la-regla-de-gasto-de-pensiones-se-cumple-formalmente-pero-no-garantiza-la-sostenibilidad/",
+       "titulo": "AIReF (2026): estudio sobre la regla de gasto de pensiones"
+      },
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=8",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 8"
+      },
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=19",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 19"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Sobre el efecto de incluir derechos sociales en la Constitución, Ben-Bassat y Dahan (2008), con datos de 68 países, solo hallan un efecto robusto sobre la política pública en el caso del derecho a la seguridad social, mientras que Chilton y Versteeg (2017), con 196 países, no encuentran que los derechos constitucionales a la educación y a la sanidad aumenten el gasto en esas partidas. No se ha localizado evidencia específica sobre proteger en la Constitución la cuantía o la actualización de las pensiones.",
+     "fuentes": [
+      {
+       "url": "https://econpapers.repec.org/RePEc:eee:jcecon:v:36:y:2008:i:1:p:103-119",
+       "titulo": "Ben-Bassat y Dahan (2008), Social rights in the constitution and in practice, Journal of Comparative Economics 36(1)"
+      },
+      {
+       "url": "https://econpapers.repec.org/RePEc:ucp:jlawec:doi:10.1086/696826",
+       "titulo": "Chilton y Versteeg (2017), Rights without Resources, Journal of Law and Economics"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "La Constitución de Brasil (art. 201) asegura el reajuste de las prestaciones de la seguridad social para mantener permanentemente su valor real, según los criterios que fije la ley. No se ha localizado una evaluación publicada de los efectos de esa garantía.",
+     "fuentes": [
+      {
+       "url": "https://www.constituteproject.org/constitution/Brazil_2017",
+       "titulo": "Constitución de Brasil (traducción de Constitute Project), art. 201"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "El art. 50 garantiza desde 1978 pensiones «adecuadas y periódicamente actualizadas». La revalorización ligada a los precios se sustituyó desde 2014 por el índice de revalorización de la Ley 23/2013 y se recuperó con la Ley 21/2021. El decreto de diciembre de 2025 con la subida de 2026 no fue convalidado por el Congreso; el Gobierno la aprobó de nuevo el 3-2-2026 y el Congreso la convalidó el 26-2-2026. La Constitución se ha reformado en 1992, 2011, 2024 y 2026, nunca en materia de pensiones.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-13617",
+       "titulo": "Ley 23/2013, reguladora del Factor de Sostenibilidad y del Índice de Revalorización (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-21652",
+       "titulo": "Ley 21/2021, de garantía del poder adquisitivo de las pensiones (BOE)"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2026/030226-rueda-de-prensa-ministros.aspx",
+       "titulo": "La Moncloa (3-2-2026): el Gobierno aprueba de nuevo la revalorización de las pensiones"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2026/260226-convalidacion-revalorizacion-pensiones.aspx",
+       "titulo": "La Moncloa (26-2-2026): el Congreso convalida la revalorización de las pensiones de 2026"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "favorable",
+     "texto": "Beneficiaría a los cerca de 9,6 millones de pensionistas de la Seguridad Social (10.565.782 pensiones contributivas en octubre de 2026, con una pensión media de 1.376,1 €) y a los 708.267 pensionistas de Clases Pasivas (agosto de 2026). El coste recae en cotizantes y contribuyentes: la AIReF estima que las transferencias del resto de fondos de la Seguridad Social o de la Administración Central deberán subir 2,3 puntos, hasta el 3,0 % del PIB, para financiar el gasto en pensiones esperado con la normativa actual.",
+     "fuentes": [
+      {
+       "url": "https://revista.seg-social.es/-/la-pension-media-del-sistema-de-la-seguridad-social-alcanza-los-1.376-1-euros-en-octubre-un-4-6-mas-alta-que-hace-un-ano",
+       "titulo": "Seguridad Social: nómina de pensiones de octubre de 2026"
+      },
+      {
+       "url": "https://www.airef.es/es/noticias/la-airef-ratifica-el-resultado-de-2025-la-regla-de-gasto-de-pensiones-se-cumple-formalmente-pero-no-garantiza-la-sostenibilidad/",
+       "titulo": "AIReF (2026): estudio sobre la regla de gasto de pensiones"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Daría a los pensionistas una garantía que una mayoría parlamentaria ordinaria no podría cambiar. La AIReF advierte de que, a políticas constantes, la deuda pública llegaría al 123 % del PIB en 2050 por el envejecimiento y de que la regla de gasto de pensiones vigente no garantiza la sostenibilidad; al fijar en la Constitución la actualización con el coste de la vida, cambiarla exigiría una nueva reforma constitucional.",
+     "fuentes": [
+      {
+       "url": "https://www.airef.es/es/noticias/la-airef-ratifica-el-resultado-de-2025-la-regla-de-gasto-de-pensiones-se-cumple-formalmente-pero-no-garantiza-la-sostenibilidad/",
+       "titulo": "AIReF (2026): estudio sobre la regla de gasto de pensiones"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "compromis-13",
+   "titulo": "Acelerar el Corredor Mediterráneo y las conexiones ferroviarias de mercancías",
+   "area": "otros",
+   "resumen": "Acelerar la ejecución del Corredor Mediterráneo y de las conexiones ferroviarias de mercancías, con calendario, presupuesto y rendición de cuentas, priorizando las actuaciones que amplíen la capacidad, las conexiones y la fiabilidad.",
+   "cita": "Accelerarem l’execució del Corredor Mediterrani i les connexions ferroviàries de mercaderies, amb calendari, pressupost i rendició de comptes, prioritzant actuacions que amplien la capacitat, les connexions i la fiabilitat.",
+   "cita_traduccion": "Aceleraremos la ejecución del Corredor Mediterráneo y de las conexiones ferroviarias de mercancías, con calendario, presupuesto y rendición de cuentas, priorizando actuaciones que amplíen la capacidad, las conexiones y la fiabilidad.",
+   "pagina": 12,
+   "beneficiarios": "Población y empresas del litoral mediterráneo (más de quince millones de españoles y sus empresas, según un artículo del coordinador técnico de la Oficina del Gobierno para el Corredor Mediterráneo, sin detalle del cálculo) y usuarios del transporte ferroviario de mercancías y de viajeros, sin estimación oficial de su número. El coste lo asume el Estado a través de Adif, que ejecutó 6.023 M€ en obras del Corredor entre junio de 2018 y marzo de 2026, con cofinanciación de la UE (FEDER y Mecanismo Conectar Europa).",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 12) se compromete a acelerar la ejecución del Corredor Mediterráneo y de las conexiones ferroviarias de mercancías «amb calendari, pressupost i rendició de comptes», priorizando las actuaciones que amplíen la capacidad, las conexiones y la fiabilidad, y vuelve a ello en la p. 13 (más peso de los corredores ferroviarios de mercancías frente a la carretera y conexión con puertos y centros logísticos) y en la p. 23 (infraestructuras estatales que conectan las comarcas con los mercados, «inclòs el Corredor Mediterrani»). No propone fechas ni cuantía ni dice qué tramos o actuaciones se priorizarían.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=12",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 12"
+      },
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=13",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 13"
+      },
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=23",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 23"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "Los ferrocarriles que discurren por más de una comunidad y las obras públicas de interés general son competencia del Estado (art. 149.1.21.ª y 24.ª CE), y estas líneas forman parte de la Red Ferroviaria de Interés General que administra Adif (Ley 38/2015). El Reglamento (UE) 2024/1679 incluye el Mediterráneo entre los nueve corredores europeos de transporte (art. 11) y obliga a que su red básica de mercancías esté electrificada y admita 22,5 toneladas por eje y trenes de 740 m a más tardar el 31-12-2030, con ERTMS en esa misma fecha (arts. 16.6 y 18.2); para la red básica ampliada el plazo es 2040. Acelerar las obras no requiere cambios legales: basta dotarlas en los Presupuestos Generales del Estado.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10440",
+       "titulo": "Ley 38/2015, del Sector Ferroviario (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/doue/2024/1679/L00001-00230.pdf",
+       "titulo": "Reglamento (UE) 2024/1679, orientaciones de la Unión para el desarrollo de la red transeuropea de transporte, arts. 6, 11, 15 a 18 (DOUE L de 28-6-2024)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El coste ejecutado es conocido: según el Ministerio de Transportes, Adif ejecutó 6.023 M€ en obras del Corredor entre junio de 2018 y el 31-3-2026 (1.288 M€ en 2025), con 8.638 M€ licitados y 6.705 M€ adjudicados en ese periodo. No hemos localizado una cifra oficial reciente del coste pendiente. Hay dos referencias de orden de magnitud: en octubre de 2023 el secretario de Estado de Transportes cifró en 11.000 M€ la inversión prevista en el Corredor Mediterráneo hasta 2030 (según la prensa), y la lista de proyectos del corredor que recoge el plan de trabajo de la coordinadora europea (2022), que expresa su opinión y no la posición de la Comisión, sumaba en España unos 31.000 M€, de todos los modos de transporte, con horizonte 2030 e incluidos proyectos ya terminados y otros que acabarían después. El programa promete «pressupost» pero no cuantifica el coste ni explica cómo se pagaría.",
+     "fuentes": [
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transportes-movilidad-sostenible/Paginas/2026/220426-puente-corredor-mediterraneo.aspx",
+       "titulo": "La Moncloa, nota del Ministerio de Transportes (22-4-2026): inversión y avance del Corredor Mediterráneo desde 2018"
+      },
+      {
+       "url": "https://forbes.es/ultima-hora/356644/el-gobierno-se-compromete-a-invertir-27-000-millones-en-los-corredores-atlantico-y-mediterraneo-hasta-2030/",
+       "titulo": "Forbes España (26-10-2023): el secretario de Estado de Transportes cifra en 11.000 M€ la inversión prevista en el Corredor Mediterráneo hasta 2030 (prensa)"
+      },
+      {
+       "url": "https://transport.ec.europa.eu/document/download/1a159cac-63de-41b4-baef-40d00a2405d2_en?filename=5th_workplan_med.pdf",
+       "titulo": "Comisión Europea, Corredor Mediterráneo: quinto plan de trabajo de la coordinadora europea Iveta Radičová (septiembre de 2022; expresa la opinión de la coordinadora, no la posición de la Comisión)"
+      },
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=12",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 12"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "El Tribunal de Cuentas Europeo (Informe Especial 08/2016) concluyó que los resultados del transporte de mercancías por ferrocarril en la UE «son insatisfactorios en cuanto al volumen transportado y a la cuota modal» y, en el tramo Barcelona-Perpiñán del corredor ferroviario de mercancías Mediterráneo, documentó un tercer carril que desde 2013 no usaba ningún tren y una línea Perpiñán-Figueres con 931 trenes de mercancías en 2013 frente a un objetivo de 8.665 en su primer año, con trenes de mercancías limitados a unos 500 metros en el tramo Barcelona-Figueres. La evaluación de la Comisión Europea (2021) de los corredores ferroviarios de mercancías concluyó que su efecto es todavía demasiado limitado para trasladar carga de la carretera al ferrocarril. Con carácter general, el metaanálisis de Bom y Ligthart (2014) halla una elasticidad de la producción respecto al capital público de 0,08 a corto plazo y 0,12 a largo, mayor en infraestructuras básicas.",
+     "fuentes": [
+      {
+       "url": "https://www.eca.europa.eu/Lists/ECADocuments/SR16_08/SR_RAIL_FREIGHT_ES.pdf",
+       "titulo": "Tribunal de Cuentas Europeo (2016), Informe Especial 08/2016: el transporte de mercancías por ferrocarril en la UE, resumen (apdo. VIII), apdos. 19-22 y anexo VI"
+      },
+      {
+       "url": "https://data.consilium.europa.eu/doc/document/ST-9495-2021-INIT/en/pdf",
+       "titulo": "Comisión Europea, SWD(2021) 134 final (2-6-2021): evaluación del Reglamento (UE) 913/2010 sobre la red ferroviaria europea para un transporte de mercancías competitivo"
+      },
+      {
+       "url": "https://ideas.repec.org/a/bla/jecsur/v28y2014i5p889-916.html",
+       "titulo": "Bom y Ligthart (2014), What Have We Learned from Three Decades of Research on the Productivity of Public Capital?, Journal of Economic Surveys 28(5)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "En los Países Bajos, la Betuweroute, línea solo de mercancías, transportó en 2015 en torno al 70 % del tonelaje previsto (KiM, 2017), y el Tribunal de Cuentas neerlandés (2016) constató que su explotación no cubrió costes: el Gobierno aportó 170 M€ en 2006-2013 frente al máximo de 76 M€ que había comunicado al Parlamento. En alta velocidad, el Tribunal de Cuentas Europeo (2018) halló que en tres de las siete líneas terminadas que auditó el número de pasajeros fue muy inferior a la referencia de nueve millones al año, mientras que otras tres, entre ellas Madrid-Barcelona, la superaban en 2016. Los resultados dependen de la demanda de cada corredor.",
+     "fuentes": [
+      {
+       "url": "https://zoek.officielebekendmakingen.nl/blg-813171.pdf",
+       "titulo": "KiM, Kennisinstituut voor Mobiliteitsbeleid del Ministerio de Infraestructuras neerlandés (abril de 2017): De Betuweroute: vervoerde tonnen, emissies en beleid"
+      },
+      {
+       "url": "https://english.rekenkamer.nl/documents/2016/05/18/operation-of-the-betuwe-line",
+       "titulo": "Algemene Rekenkamer, Tribunal de Cuentas de los Países Bajos (18-5-2016): Operation of the Betuwe Line"
+      },
+      {
+       "url": "https://www.eca.europa.eu/Lists/ECADocuments/SR18_19/SR_HIGH_SPEED_RAIL_ES.pdf",
+       "titulo": "Tribunal de Cuentas Europeo (2018), Informe Especial 19/2018: Red ferroviaria europea de alta velocidad"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "En septiembre de 2018 el ministro de Fomento, José Luis Ábalos, dijo confiar en que en 2021 estaría conectado en ancho estándar desde Algeciras hasta la frontera francesa (Valencia Plaza y 3Cat, 27-9-2018). Según el Ministerio de Transportes, en marzo de 2026 estaban en servicio 658 de los 1.838 km del Corredor (36 %, frente al 21 % de 2018) y el 83 % del trazado estaba en obras o terminado. En noviembre de 2025 el Ministerio previó que durante 2027 la infraestructura estará lista para conectar Castellón, Valencia y Alicante en ancho internacional y que en dos años terminará el cambio de ancho entre Tarragona y Castellón.",
+     "fuentes": [
+      {
+       "url": "https://valenciaplaza.com/gran-acto-corredor-mediterraneo-barcelona",
+       "titulo": "Valencia Plaza (27-9-2018): Ábalos: «Para 2021 estará conectado Algeciras con Francia en ancho estándar»"
+      },
+      {
+       "url": "https://www.3cat.cat/3catinfo/el-corredor-mediterrani-es-podria-acabar-el-2021-segons-afirma-el-ministre-abalos/noticia/2877760/",
+       "titulo": "3Cat (27-9-2018): «El corredor mediterrani es podria acabar el 2021, segons afirma el ministre Ábalos» (prensa)"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transportes-movilidad-sostenible/Paginas/2026/220426-puente-corredor-mediterraneo.aspx",
+       "titulo": "La Moncloa, nota del Ministerio de Transportes (22-4-2026): inversión y avance del Corredor Mediterráneo desde 2018"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transportes-movilidad-sostenible/Paginas/2025/201125-puente-corredor-mediterraneo.aspx",
+       "titulo": "La Moncloa, nota del Ministerio de Transportes (20-11-2025): balance y previsiones del Corredor Mediterráneo"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a la población y las empresas del litoral mediterráneo: el coordinador técnico de la Oficina del Gobierno para el Corredor Mediterráneo escribe que con él más de quince millones de españoles y sus empresas entrarán en la red europea (2025), sin detallar el cálculo; no hemos localizado una estimación oficial de usuarios o tráficos esperados. También a quienes transportan mercancías por ferrocarril, que en 2024 movió el 3,9 % de las toneladas-kilómetro del transporte terrestre de mercancías en España, frente al 16,6 % estimado en la UE (Eurostat). El coste lo asume el Estado a través de Adif (6.023 M€ ejecutados entre junio de 2018 y marzo de 2026), con cofinanciación de la UE: por ejemplo, 410,7 M€ del FEDER para la línea Murcia-Almería (periodo 2014-2020) y 78 M€ del Mecanismo Conectar Europa para electrificar el tramo Zaragoza-Teruel-Sagunto (2024). El coste pendiente no tiene cifra oficial reciente.",
+     "fuentes": [
+      {
+       "url": "https://www.transportes.gob.es/recursos_mfom/comodin/recursos/04_el-momento-del-corredor-mediterraneo-es-ahora.pdf",
+       "titulo": "Ministerio de Transportes, revista Tramos (abril de 2025): «El momento del Corredor Mediterráneo es ahora», artículo de Vicente Torralba, coordinador técnico de la Oficina del Gobierno para el Corredor Mediterráneo"
+      },
+      {
+       "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tran_hv_frmod?format=JSON&lang=EN&geo=ES&geo=EU27_2020&tra_mode=RAIL&sinceTimePeriod=2018",
+       "titulo": "Eurostat, tran_hv_frmod: reparto modal del transporte terrestre de mercancías, ferrocarril (% de toneladas-km), España y UE-27 (actualizado el 17-3-2026)"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transportes-movilidad-sostenible/Paginas/2026/220426-puente-corredor-mediterraneo.aspx",
+       "titulo": "La Moncloa, nota del Ministerio de Transportes (22-4-2026): inversión y avance del Corredor Mediterráneo desde 2018"
+      },
+      {
+       "url": "https://ec.europa.eu/regional_policy/projects/projects-database/work-continues-on-spain-s-murcia-almeria-high-speed-railway_es",
+       "titulo": "Comisión Europea, base de datos de proyectos de política regional (16-3-2023): Corredor Mediterráneo, línea Murcia-Almería"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transportes-movilidad-sostenible/paginas/2024/180724-espana-logra-fondos-ue-red-transeuropea.aspx",
+       "titulo": "La Moncloa, nota del Ministerio de Transportes (18-7-2024): fondos del Mecanismo Conectar Europa para la red transeuropea"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "El Reglamento 2024/1679 exige que la red básica del corredor admita en 2030 trenes de mercancías de 740 m; la coordinadora europea preveía en 2022 que España cumpliría en 2030 todos los indicadores ferroviarios salvo la longitud de los trenes (56 %). Los riesgos documentados son los retrasos y sobrecostes de las grandes obras (en ocho megaproyectos de transporte de la UE, el Tribunal de Cuentas Europeo halló en 2020 un retraso medio de 11 años y sobrecostes del 47 %) y que la inversión no traslade carga de la carretera al ferrocarril, como señalan las evaluaciones de la Betuweroute y de los corredores de mercancías. El Reglamento obligaba a España a evaluar antes del 19-7-2026 la migración al ancho estándar de las líneas existentes de los corredores (art. 17.3); según la agencia ACN (16-7-2026), el estudio del Ministerio, en fase final de redacción, la considera «claramente desaconsejable» (unos 30 años de obras y al menos 20.000 M€, más otros 10.000 M€ de costes adicionales). No hemos localizado su versión publicada.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/doue/2024/1679/L00001-00230.pdf",
+       "titulo": "Reglamento (UE) 2024/1679, orientaciones de la Unión para el desarrollo de la red transeuropea de transporte, arts. 6, 11, 15 a 18 (DOUE L de 28-6-2024)"
+      },
+      {
+       "url": "https://transport.ec.europa.eu/document/download/1a159cac-63de-41b4-baef-40d00a2405d2_en?filename=5th_workplan_med.pdf",
+       "titulo": "Comisión Europea, Corredor Mediterráneo: quinto plan de trabajo de la coordinadora europea Iveta Radičová (septiembre de 2022; expresa la opinión de la coordinadora, no la posición de la Comisión)"
+      },
+      {
+       "url": "https://www.eca.europa.eu/Lists/ECADocuments/SR20_10/SR_Transport_Flagship_Infrastructures_ES.pdf",
+       "titulo": "Tribunal de Cuentas Europeo (2020), Informe Especial 10/2020: infraestructuras de transporte de la UE, megaproyectos"
+      },
+      {
+       "url": "https://english.rekenkamer.nl/documents/2016/05/18/operation-of-the-betuwe-line",
+       "titulo": "Algemene Rekenkamer, Tribunal de Cuentas de los Países Bajos (18-5-2016): Operation of the Betuwe Line"
+      },
+      {
+       "url": "https://data.consilium.europa.eu/doc/document/ST-9495-2021-INIT/en/pdf",
+       "titulo": "Comisión Europea, SWD(2021) 134 final (2-6-2021): evaluación del Reglamento (UE) 913/2010 sobre la red ferroviaria europea para un transporte de mercancías competitivo"
+      },
+      {
+       "url": "https://www.diaridetarragona.com/catalunya/266013/transports-cree-adaptar-ancho-via-iberico-europeo-dificilmente-asumible-calcula-necesitarian-30-anos.html",
+       "titulo": "Diari de Tarragona, con ACN (16-7-2026): el estudio de Transportes sobre la migración al ancho estándar (prensa)"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "compromis-08",
+   "titulo": "Suprimir los beneficios fiscales de la aviación y destinar 6.000 M€ al ferrocarril",
+   "area": "fiscalidad",
+   "resumen": "Eliminar los beneficios fiscales del sector de la aviación (combustible, IVA…) y destinar los 6.000 millones anuales que según el programa se recaudarían a reforzar el ferrocarril.",
+   "cita": "Eliminarem els privilegis fiscals al sector l’aviació (combustible, IVA…) i destinarem els 6.000 milions anuals recaptats a reforçar el sector ferroviari.",
+   "cita_traduccion": "Eliminaremos los privilegios fiscales al sector de la aviación (combustible, IVA…) y destinaremos los 6.000 millones anuales recaudados a reforzar el sector ferroviario.",
+   "pagina": 19,
+   "beneficiarios": "Pagarían las aerolíneas y los pasajeros (321,6 millones de pasajeros pasaron por los aeropuertos de Aena en España en 2025), en una proporción que depende de qué beneficios se supriman; se beneficiarían los usuarios del ferrocarril, al que el programa destina lo recaudado (la web electoral habla del transporte público en general), sin concretar en qué se invertiría.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 19) dice qué haría (eliminar los «privilegis fiscals» de la aviación, citando el combustible y el IVA), con qué cuantía (6.000 millones al año) y a qué se destinaría (reforzar el ferrocarril). No precisa qué exenciones suprimiría (vuelos nacionales, intracomunitarios o internacionales), qué otros beneficios incluye el «…» ni en qué plazo; la web electoral de la candidatura da una cifra menos precisa («més de 5.000 milions anuals») y un destino más amplio que el programa («per a invertir-los en transport públic»). En la misma sección propone un impuesto sobre las emisiones de óxidos de nitrógeno de la aviación comercial (p. 19).",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=19",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 19"
+      },
+      {
+       "url": "https://frontvalencia.org/",
+       "titulo": "Compromís: Front Valencià, web electoral, apartado «Programa» (copia del 14-11-2026)"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "La Ley de Impuestos Especiales exime el carburante de la navegación aérea salvo la privada de recreo (art. 51.2.a) y la Ley del IVA exime los vuelos con origen o destino fuera del territorio del impuesto (art. 22.Trece), mientras los vuelos entre la Península y Baleares tributan al 10 % (art. 91) y los que unen estos territorios con Canarias, Ceuta o Melilla también están exentos, porque esos territorios quedan fuera del ámbito del impuesto (art. 3); ambas pueden modificarse por ley. Pero la exención del queroseno la impone la Directiva 2003/96/CE (art. 14.1.b): según la Comisión Europea, los Estados solo pueden gravarlo en vuelos nacionales y, mediante acuerdos bilaterales, en vuelos dentro de la UE. Hacienda consideró en 2020 inviable a corto plazo gravar el queroseno de vuelos intracomunitarios e internacionales, también porque, según Hacienda, los Estados de la OACI están obligados a suministrar combustible libre de impuestos a las aeronaves de los demás (el Convenio de Chicago, art. 24, solo exime el combustible que ya llega a bordo; la exención del que se carga procede de las políticas de la OACI, aplicadas con reciprocidad, y de acuerdos bilaterales, según el estudio para la Comisión Europea), y planteó en su lugar un impuesto sobre el uso del transporte aéreo.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28741",
+       "titulo": "Ley 38/1992, de Impuestos Especiales (texto consolidado, BOE), arts. 50.1 y 51.2.a"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+       "titulo": "Ley 37/1992, del IVA (texto consolidado, BOE), arts. 22.Trece y 91"
+      },
+      {
+       "url": "https://www.boe.es/doue/2003/283/L00051-00070.pdf",
+       "titulo": "Directiva 2003/96/CE del Consejo, de imposición de los productos energéticos (DOUE L 283, 31-10-2003), art. 14"
+      },
+      {
+       "url": "https://taxation-customs.ec.europa.eu/taxation/excise-taxes/excise-duties-energy_en",
+       "titulo": "Comisión Europea (DG TAXUD), Excise duties on energy: aircraft fuel"
+      },
+      {
+       "url": "https://www.hacienda.gob.es/Documentacion/Publico/NormativaDoctrina/Proyectos/consulta_publica_aviacion2.pdf",
+       "titulo": "Ministerio de Hacienda, DG de Tributos (28-2-2020): consulta pública previa sobre un impuesto que grave el uso del transporte aéreo"
+      },
+      {
+       "url": "https://static.un.org/ru/documents/decl_conv/conventions/pdf/chicago_conv.pdf",
+       "titulo": "Convenio sobre Aviación Civil Internacional (Chicago, 1944), art. 24, edición trilingüe de la OACI (Doc 7300), copia de la ONU"
+      },
+      {
+       "url": "https://transportenvironment.org/assets/files/EC_report_Taxes_in_field_of_aviation_and_their_impact_web.pdf",
+       "titulo": "CE Delft para la Comisión Europea, Taxes in the Field of Aviation and their Impact (borrador de informe final, 2019; copia publicada por T&E), resumen y ficha de España"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "Ninguna fuente oficial respalda los 6.000 millones del programa (la web electoral dice «més de 5.000 milions»): el Presupuesto de Beneficios Fiscales de 2023 (último publicado) solo cuenta como beneficio fiscal la exención del queroseno en vuelos nacionales, 331,5 M€, porque trata el de los internacionales como exportación. El Libro Blanco del comité de expertos (2022) estimó de 142 a 1.203 M€ por gravar el queroseno de los vuelos intra-UE y 952 M€ por un impuesto de 7,85 € por billete, y el estudio de CE Delft para la Comisión Europea (2019), una recaudación fiscal de la aviación de unos 2.382 M€ si se gravara el queroseno de todos los vuelos o de 2.131 M€ si el IVA del 10 % se extendiera a todos los billetes, frente a 406 M€ del IVA actual. La cifra se aproxima a la de la organización Transport & Environment (4.610 M€ en 2022 y 5.650 M€ previstos para 2025), que suma IVA, impuestos al combustible, comercio de emisiones e impuestos a billetes.",
+     "fuentes": [
+      {
+       "url": "https://www.sepg.pap.hacienda.gob.es/Presup/PGE2023Proyecto/MaestroDocumentos/PGE-ROM/doc/3/2/5/N_23_A_A_1B_C9_1.PDF",
+       "titulo": "Proyecto de PGE 2023, Memoria de Beneficios Fiscales, cap. V (Impuestos Especiales), cuadro 7"
+      },
+      {
+       "url": "https://www.ief.es/docs/investigacion/comiteexpertos/LibroBlancoReformaTributaria_2022.pdf",
+       "titulo": "Comité de personas expertas, Libro Blanco sobre la reforma tributaria (IEF, 2022), propuesta sobre el queroseno (numerada 5 en el índice y 4 en el texto, pp. 254-256) y propuesta 11 (billetes de avión, pp. 286-288)"
+      },
+      {
+       "url": "https://transportenvironment.org/assets/files/EC_report_Taxes_in_field_of_aviation_and_their_impact_web.pdf",
+       "titulo": "CE Delft para la Comisión Europea, Taxes in the Field of Aviation and their Impact (borrador de informe final, 2019; copia publicada por T&E), resumen y ficha de España"
+      },
+      {
+       "url": "https://transportenvironment.org/uploads/files/Tax-Gap_ficha-Espana-1.pdf",
+       "titulo": "Transport & Environment, ficha de España del informe «Aviation Tax Gap» (julio de 2023)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "El estudio para la Comisión Europea estima que, en el conjunto de la UE y si fuera legalmente posible, suprimir la exención del queroseno subiría el billete medio un 10 % y reduciría un 11 % los pasajeros y las emisiones de CO2 de la aviación, con un efecto neto despreciable sobre el empleo y el PIB porque la mayor recaudación compensaría la pérdida del sector; para España obtiene cifras similares (+10 % y −11 %), con una caída del 12 % del empleo y del valor añadido del sector aéreo. El Libro Blanco recoge que los impuestos sobre billetes que Alemania y Austria introdujeron en 2011 redujeron de forma significativa los pasajeros, sobre todo en vuelos de bajo coste y quizá por desvío a aeropuertos fronterizos. La medida recauda y reduce emisiones, pero parte de su efecto procede de que se vuele menos.",
+     "fuentes": [
+      {
+       "url": "https://cedelft.eu/publications/taxes-in-the-field-of-aviation-and-their-impact/",
+       "titulo": "CE Delft, resumen del estudio Taxes in the field of aviation and their impact (2019)"
+      },
+      {
+       "url": "https://transportenvironment.org/assets/files/EC_report_Taxes_in_field_of_aviation_and_their_impact_web.pdf",
+       "titulo": "CE Delft para la Comisión Europea, Taxes in the Field of Aviation and their Impact (borrador de informe final, 2019; copia publicada por T&E), resumen y ficha de España"
+      },
+      {
+       "url": "https://www.ief.es/docs/investigacion/comiteexpertos/LibroBlancoReformaTributaria_2022.pdf",
+       "titulo": "Comité de personas expertas, Libro Blanco sobre la reforma tributaria (IEF, 2022), propuesta sobre el queroseno (numerada 5 en el índice y 4 en el texto, pp. 254-256) y propuesta 11 (billetes de avión, pp. 286-288)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Según el estudio para la Comisión Europea, diecisiete Estados de la UE gravaban la aviación nacional con IVA u otros impuestos y seis aplicaban impuestos sobre los billetes de vuelos internacionales; Hacienda citaba en 2020 los de Austria, Noruega, Países Bajos, Reino Unido, Alemania, Francia, Suecia e Italia. Una evaluación ex post en Austria (IHS, 2014, citada por CE Delft) consideró improbable que el impuesto hubiera tenido efectos económicos negativos, mientras que en Alemania y Austria los pasajeros cayeron, sobre todo en bajo coste. La exención del queroseno en vuelos internacionales se mantiene en toda la UE por la Directiva 2003/96/CE.",
+     "fuentes": [
+      {
+       "url": "https://transportenvironment.org/assets/files/EC_report_Taxes_in_field_of_aviation_and_their_impact_web.pdf",
+       "titulo": "CE Delft para la Comisión Europea, Taxes in the Field of Aviation and their Impact (borrador de informe final, 2019; copia publicada por T&E), resumen y ficha de España"
+      },
+      {
+       "url": "https://www.hacienda.gob.es/Documentacion/Publico/NormativaDoctrina/Proyectos/consulta_publica_aviacion2.pdf",
+       "titulo": "Ministerio de Hacienda, DG de Tributos (28-2-2020): consulta pública previa sobre un impuesto que grave el uso del transporte aéreo"
+      },
+      {
+       "url": "https://www.ief.es/docs/investigacion/comiteexpertos/LibroBlancoReformaTributaria_2022.pdf",
+       "titulo": "Comité de personas expertas, Libro Blanco sobre la reforma tributaria (IEF, 2022), propuesta sobre el queroseno (numerada 5 en el índice y 4 en el texto, pp. 254-256) y propuesta 11 (billetes de avión, pp. 286-288)"
+      },
+      {
+       "url": "https://taxation-customs.ec.europa.eu/taxation/excise-taxes/excise-duties-energy_en",
+       "titulo": "Comisión Europea (DG TAXUD), Excise duties on energy: aircraft fuel"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "La exención del queroseno de aviación figura en la Ley de Impuestos Especiales de 1992. En febrero de 2020 Hacienda sometió a consulta pública un impuesto sobre el uso del transporte aéreo, y en 2022 el comité de expertos para la reforma tributaria propuso gravar el queroseno y los billetes. Según Transport & Environment, en 2023 España seguía sin impuesto sobre los billetes ni sobre el queroseno y aplicaba el IVA del 10 % solo a los vuelos nacionales.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28741",
+       "titulo": "Ley 38/1992, de Impuestos Especiales (texto consolidado, BOE), arts. 50.1 y 51.2.a"
+      },
+      {
+       "url": "https://www.hacienda.gob.es/Documentacion/Publico/NormativaDoctrina/Proyectos/consulta_publica_aviacion2.pdf",
+       "titulo": "Ministerio de Hacienda, DG de Tributos (28-2-2020): consulta pública previa sobre un impuesto que grave el uso del transporte aéreo"
+      },
+      {
+       "url": "https://www.ief.es/docs/investigacion/comiteexpertos/LibroBlancoReformaTributaria_2022.pdf",
+       "titulo": "Comité de personas expertas, Libro Blanco sobre la reforma tributaria (IEF, 2022), propuesta sobre el queroseno (numerada 5 en el índice y 4 en el texto, pp. 254-256) y propuesta 11 (billetes de avión, pp. 286-288)"
+      },
+      {
+       "url": "https://www.transportenvironment.org/te-espana/articles/las-exenciones-fiscales-al-sector-aereo-le-costaron-a-espana-4-610-millones-de-euros-en-2022",
+       "titulo": "Transport & Environment (12-7-2023): las exenciones fiscales al sector aéreo le costaron a España 4.610 millones en 2022"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Pagarían las aerolíneas y los pasajeros: por los aeropuertos de Aena en España pasaron 321,6 millones de pasajeros en 2025 (cada viajero se cuenta al salir y al llegar). Transport & Environment atribuye a las aerolíneas los impuestos sobre el combustible y las emisiones y a los pasajeros el IVA, y el Libro Blanco estima que la carga de un impuesto sobre billetes sería progresiva entre los hogares, aunque advierte de que una parte importante de los turistas que visitan España ya paga impuestos nacionales sobre billetes. Se beneficiarían los usuarios del ferrocarril (del transporte público en general, según la web electoral), pero el programa no concreta en qué se invertiría ni cuánto pagaría cada grupo.",
+     "fuentes": [
+      {
+       "url": "https://www.aena.es/es/prensa/los-aeropuertos-del-grupo-aena-superan-los-3848-millones-de-pasajeros---en-2025.html",
+       "titulo": "Aena, nota de prensa: tráfico de 2025 (321,6 millones de pasajeros en la red española)"
+      },
+      {
+       "url": "https://www.transportenvironment.org/te-espana/articles/las-exenciones-fiscales-al-sector-aereo-le-costaron-a-espana-4-610-millones-de-euros-en-2022",
+       "titulo": "Transport & Environment (12-7-2023): las exenciones fiscales al sector aéreo le costaron a España 4.610 millones en 2022"
+      },
+      {
+       "url": "https://www.ief.es/docs/investigacion/comiteexpertos/LibroBlancoReformaTributaria_2022.pdf",
+       "titulo": "Comité de personas expertas, Libro Blanco sobre la reforma tributaria (IEF, 2022), propuesta sobre el queroseno (numerada 5 en el índice y 4 en el texto, pp. 254-256) y propuesta 11 (billetes de avión, pp. 286-288)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "La ventaja documentada es climática: menos vuelos y un 11 % menos de emisiones de CO2 de la aviación, según el estudio para la Comisión Europea (en la UE y en España). El Libro Blanco pide atención especial al impacto en el turismo y propone no gravar los vuelos sin emisiones directas, con lo que la base del impuesto se reduciría a medida que el sector se descarbonice. Desde 2026 la aviación ya no recibe derechos de emisión gratuitos en el comercio europeo de emisiones, que cubre los vuelos dentro del Espacio Económico Europeo y hacia Suiza y Reino Unido: todos se subastan, coste que se sumaría al nuevo gravamen.",
+     "fuentes": [
+      {
+       "url": "https://cedelft.eu/publications/taxes-in-the-field-of-aviation-and-their-impact/",
+       "titulo": "CE Delft, resumen del estudio Taxes in the field of aviation and their impact (2019)"
+      },
+      {
+       "url": "https://www.ief.es/docs/investigacion/comiteexpertos/LibroBlancoReformaTributaria_2022.pdf",
+       "titulo": "Comité de personas expertas, Libro Blanco sobre la reforma tributaria (IEF, 2022), propuesta sobre el queroseno (numerada 5 en el índice y 4 en el texto, pp. 254-256) y propuesta 11 (billetes de avión, pp. 286-288)"
+      },
+      {
+       "url": "https://climate.ec.europa.eu/eu-action/transport-decarbonisation/reducing-emissions-aviation_en",
+       "titulo": "Comisión Europea (DG CLIMA), Reducing emissions from aviation: subasta íntegra de derechos desde 2026"
+      },
+      {
+       "url": "https://transportenvironment.org/assets/files/EC_report_Taxes_in_field_of_aviation_and_their_impact_web.pdf",
+       "titulo": "CE Delft para la Comisión Europea, Taxes in the Field of Aviation and their Impact (borrador de informe final, 2019; copia publicada por T&E), resumen y ficha de España"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "compromis-14",
+   "titulo": "Empresa pública de generación, distribución y venta de electricidad",
+   "area": "energía y clima",
+   "resumen": "Crear una empresa pública de generación, distribución y comercialización de electricidad, debidamente capitalizada, que gestione renovables y las centrales hidroeléctricas revertidas al Estado y despliegue nuevas redes de distribución en barrios y zonas de nuevo desarrollo.",
+   "cita": "Crearem una empresa pública de generació, distribució i comercialització, degudament capitalitzada i amb capacitat tècnica i de gestió, que gestione renovables, les centrals hidroelèctriques revertides i desplegue les noves xarxes de distribució en els barris i les zones de nou desenvolupament.",
+   "cita_traduccion": "Crearemos una empresa pública de generación, distribución y comercialización, debidamente capitalizada y con capacidad técnica y de gestión, que gestione renovables, las centrales hidroeléctricas revertidas y despliegue las nuevas redes de distribución en los barrios y las zonas de nuevo desarrollo.",
+   "pagina": 29,
+   "beneficiarios": "El programa no cuantifica a quién beneficiaría; la web electoral lo enmarca en que los beneficios de la transición energética sean «per a la ciutadania i no per a l'oligopoli». Podrían contratar con la empresa los consumidores de electricidad, unos 29,5 millones en 2024 (cálculo propio a partir de los 8,4 millones acogidos al PVPC, que eran el 28,5 % del total según la CNMC), y sus redes darían servicio a barrios y zonas de nuevo desarrollo que no identifica. El coste de capitalizarla recaería en el Estado; el programa no lo cifra.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 29) dice qué haría la empresa: generar, distribuir y vender electricidad, gestionar renovables y las centrales hidroeléctricas revertidas y desplegar redes de distribución «en els barris i les zones de nou desenvolupament». No dice con qué capital («degudament capitalitzada»), qué potencia o redes tendría ni en qué plazo. En la misma sección propone recuperar progresivamente la titularidad pública de las grandes eléctricas mediante adquisiciones (p. 29), un derecho de tanteo y retracto a favor de esta empresa en la compraventa de plantas fotovoltaicas (p. 29) y elevar la participación del Estado en Red Eléctrica, al 100 % en una medida y a «com a mínim el 51%» en otra (p. 30).",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=29",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 29"
+      },
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=30",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 30"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "La Constitución reconoce la iniciativa pública en la actividad económica (art. 128.2), y la creación de una sociedad mercantil estatal la autoriza el Consejo de Ministros (Ley 40/2015, art. 114). La producción y la comercialización de electricidad se ejercen en libre competencia (Ley 24/2013, art. 8), de modo que la empresa podría competir en ellas, pero no en exclusiva: todo cliente puede elegir suministrador (Directiva 2019/944, art. 4). La distribución es una actividad regulada, y la ley exige ejercerla en una sociedad distinta de las que producen o venden electricidad, con independencia en su gestión salvo en las distribuidoras de menos de 100.000 clientes (Ley 24/2013, art. 12; Directiva 2019/944, art. 35): la empresa única que describe el programa tendría que organizarse como un grupo de sociedades. Al extinguirse la concesión, las obras construidas en el dominio público hidráulico revierten gratis a la Administración competente (Ley de Aguas, art. 53.4). El Estado puede explotarlas directamente (la ley exime del canon hidroeléctrico a los aprovechamientos explotados por la Administración General del Estado o las confederaciones, art. 112 bis.7) o sacar su explotación a concurso público (Reglamento del Dominio Público Hidráulico, art. 132.2), la vía que promueve la Dirección General del Agua; la Ley de Aguas también permite al Consejo de Ministros encargar mediante convenio la explotación de obras hidráulicas públicas a sociedades estatales creadas para ello (art. 132).",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566",
+       "titulo": "Ley 40/2015, de Régimen Jurídico del Sector Público, art. 114 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-13645",
+       "titulo": "Ley 24/2013 del Sector Eléctrico, arts. 8 y 12 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/doue/2019/158/L00125-00199.pdf",
+       "titulo": "Directiva (UE) 2019/944, normas comunes para el mercado interior de la electricidad, arts. 4, 35 y 43 (DOUE L 158, 14-6-2019)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-14276",
+       "titulo": "Real Decreto Legislativo 1/2001, texto refundido de la Ley de Aguas, arts. 53.4, 112 bis y 132 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1986-10638",
+       "titulo": "Real Decreto 849/1986, Reglamento del Dominio Público Hidráulico, art. 132 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/boe/dias/2025/05/22/pdfs/BOE-B-2025-18511.pdf",
+       "titulo": "BOE-B-2025-18511: Dirección General del Agua, concurso público para la explotación del aprovechamiento hidroeléctrico de titularidad estatal de La Riera (22-5-2025)"
+      },
+      {
+       "url": "https://spancold.org/wp-content/uploads/2026/03/JEAHE20250331-Ley-de-aguas-y-concesiones-hidroelectricas-Tomas-A.-Sancho-1.pdf",
+       "titulo": "MITECO, Dirección General del Agua (Tomás A. Sancho): «Ley de Aguas y concesiones hidroeléctricas», jornada de Spancold sobre almacenamiento hidráulico de energía (marzo de 2025)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "no_verificable",
+     "texto": "El programa no cifra el capital de la empresa ni la potencia o las redes que tendría, ni explica cómo se pagaría. Una parte de los activos no exigiría compra: al terminar la concesión, las obras de las centrales construidas en el dominio público hidráulico revierten gratis a la Administración competente (Ley de Aguas, art. 53.4), y la Dirección General del Agua contaba en 2025, en una presentación en una jornada técnica, 170 concesiones hidroeléctricas en explotación que terminan hasta 2035, con 1.736 MW; las que no son viables se demuelen a cargo del titular. Para el resto (nuevas renovables y redes de distribución) no hay base pública para estimar el coste sin conocer su tamaño.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=29",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 29"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-14276",
+       "titulo": "Real Decreto Legislativo 1/2001, texto refundido de la Ley de Aguas, art. 53.4 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://spancold.org/wp-content/uploads/2026/03/JEAHE20250331-Ley-de-aguas-y-concesiones-hidroelectricas-Tomas-A.-Sancho-1.pdf",
+       "titulo": "MITECO, Dirección General del Agua (Tomás A. Sancho): «Ley de Aguas y concesiones hidroeléctricas», jornada de Spancold sobre almacenamiento hidráulico de energía (marzo de 2025)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "La evidencia sobre la propiedad pública en electricidad no es concluyente: en Estados Unidos, las empresas públicas tienen ventaja en la distribución al usuario final y las privadas logran costes más bajos en generación (Kwoka, 2005). Una revisión de estudios sobre privatizaciones concluye que, en la mayoría de los casos, las empresas se vuelven más eficientes y rentables tras pasar a manos privadas (Megginson y Netter, 2001). No hemos localizado estudios sobre el efecto en el precio final de una empresa pública que compita en generación y venta en un mercado liberalizado.",
+     "fuentes": [
+      {
+       "url": "https://ideas.repec.org/a/cje/issued/v38y2005i2p622-640.html",
+       "titulo": "Kwoka (2005), The comparative advantage of public ownership: evidence from U.S. electric utilities, Canadian Journal of Economics 38(2)"
+      },
+      {
+       "url": "https://ideas.repec.org/a/aea/jeclit/v39y2001i2p321-389.html",
+       "titulo": "Megginson y Netter (2001), From State to Market: A Survey of Empirical Studies on Privatization, Journal of Economic Literature 39(2)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "El Reino Unido aprobó en 2025 la ley de Great British Energy (sancionada el 15-5-2025), empresa de propiedad pública e independiente en su gestión cuyo objeto incluye facilitar, impulsar y participar en la producción, distribución, almacenamiento y suministro de energía limpia; la ley prevé revisiones independientes de su eficacia a intervalos de cinco años como máximo desde su aprobación, por lo que la primera puede publicarse hasta 2030. Francia recuperó en junio de 2023 el 100 % del capital de EDF, de la que ya era accionista mayoritario. No hemos localizado evaluaciones publicadas de los resultados de una empresa pública de este tipo en un país comparable.",
+     "fuentes": [
+      {
+       "url": "https://www.gov.uk/government/publications/great-british-energy-bill-factsheets/great-british-energy-bill-overarching-factsheet",
+       "titulo": "Gobierno del Reino Unido: Great British Energy Act 2025, ficha general (overarching factsheet)"
+      },
+      {
+       "url": "https://www.edf.fr/sites/groupe/files/2023-06/2023-06-09-cp-etat-redevient-actionnaire-unique-edf.pdf",
+       "titulo": "EDF, comunicado de prensa (8-6-2023): el Estado vuelve a ser accionista único de EDF"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "Endesa fue empresa pública hasta que el Estado vendió sus últimas acciones en 1998, y la SEPI conserva el 20 % de Red Eléctrica, con un mínimo legal del 10 %. Las centrales hidroeléctricas cuya concesión se extingue y cuya explotación sigue siendo viable revierten al Estado y quedan adscritas a las confederaciones hidrográficas: la del Ebro es titular de 100 MW, y la Dirección General del Agua señalaba en 2025 «poca experiencia reciente» en los concursos públicos para explotarlas. A escala municipal, Barcelona Energia, comercializadora pública de energía renovable, opera desde 2018; no hemos localizado evaluaciones de sus resultados en precios.",
+     "fuentes": [
+      {
+       "url": "https://es.ara.cat/economia/decadas-euforia-privatizadora_1_4152506.html",
+       "titulo": "Ara (18-10-2021): décadas de privatizaciones en España (prensa)"
+      },
+      {
+       "url": "https://www.sepi.es/en/sectores/red-electrica",
+       "titulo": "SEPI: participación en Red Eléctrica de España"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-25340",
+       "titulo": "Ley 54/1997 del Sector Eléctrico, disposición adicional vigésima tercera, vigente según la disposición derogatoria única de la Ley 24/2013 (texto consolidado, BOE): participación de la SEPI en Red Eléctrica «no inferior al 10 por ciento»"
+      },
+      {
+       "url": "https://spancold.org/wp-content/uploads/2026/03/JEAHE20250331-Ley-de-aguas-y-concesiones-hidroelectricas-Tomas-A.-Sancho-1.pdf",
+       "titulo": "MITECO, Dirección General del Agua (Tomás A. Sancho): «Ley de Aguas y concesiones hidroeléctricas», jornada de Spancold sobre almacenamiento hidráulico de energía (marzo de 2025)"
+      },
+      {
+       "url": "https://www.renewableenergymagazine.com/panorama/compromiso-sostenible-una-cuestion-basica-para-los-20240425",
+       "titulo": "Energías Renovables (25-4-2024): Barcelona Energia, comercializadora eléctrica pública (prensa sectorial)"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "El programa no dice a quién beneficiaría ni en qué medida; la web electoral lo enmarca en que los beneficios de la transición energética sean «per a la ciutadania i no per a l'oligopoli». Podrían contratar con la empresa los consumidores de electricidad, unos 29,5 millones en 2024 (cálculo propio con datos de la CNMC), que conservarían la libre elección de suministrador, y sus redes darían servicio a barrios y zonas de nuevo desarrollo que el programa no identifica. El coste de capitalizarla recaería en el Estado, sin cifra.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=29",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 29"
+      },
+      {
+       "url": "https://frontvalencia.org/",
+       "titulo": "Compromís: Front Valencià, web electoral (apartado «Programa», bloque «pel territori»; copia del 14-11-2026)"
+      },
+      {
+       "url": "https://www.cnmc.es/sites/default/files/editor_contenidos/20250804_NP_Informe_Minorista_ElectricidadyGas_2024.pdf",
+       "titulo": "CNMC, nota de prensa (4-8-2025): Informe de supervisión de los mercados minoristas de gas y electricidad 2024"
+      },
+      {
+       "url": "https://www.boe.es/doue/2019/158/L00125-00199.pdf",
+       "titulo": "Directiva (UE) 2019/944, normas comunes para el mercado interior de la electricidad, arts. 4, 35 y 43 (DOUE L 158, 14-6-2019)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Una empresa pública que explote las centrales que revierten al Estado permitiría orientar su gestión a objetivos públicos; la Dirección General del Agua cuenta 170 concesiones hidroeléctricas que terminan hasta 2035 (1.736 MW). Los riesgos son el coste de capitalizarla, que el programa no cifra, y su efecto en las cuentas públicas, la menor eficiencia en generación observada en empresas públicas de Estados Unidos (Kwoka, 2005) y la mayor eficiencia que la literatura sobre privatizaciones atribuye a la gestión privada (Megginson y Netter, 2001).",
+     "fuentes": [
+      {
+       "url": "https://spancold.org/wp-content/uploads/2026/03/JEAHE20250331-Ley-de-aguas-y-concesiones-hidroelectricas-Tomas-A.-Sancho-1.pdf",
+       "titulo": "MITECO, Dirección General del Agua (Tomás A. Sancho): «Ley de Aguas y concesiones hidroeléctricas», jornada de Spancold sobre almacenamiento hidráulico de energía (marzo de 2025)"
+      },
+      {
+       "url": "https://ideas.repec.org/a/cje/issued/v38y2005i2p622-640.html",
+       "titulo": "Kwoka (2005), The comparative advantage of public ownership: evidence from U.S. electric utilities, Canadian Journal of Economics 38(2)"
+      },
+      {
+       "url": "https://ideas.repec.org/a/aea/jeclit/v39y2001i2p321-389.html",
+       "titulo": "Megginson y Netter (2001), From State to Market: A Survey of Empirical Studies on Privatization, Journal of Economic Literature 39(2)"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "compromis-09",
+   "titulo": "Fondo estatal de reconstrucción y reforma del Consorcio de Compensación de Seguros",
+   "area": "energía y clima",
+   "resumen": "Crear un fondo estatal de reconstrucción tras catástrofes y reformar el Consorcio de Compensación de Seguros para que las víctimas cobren antes y nadie quede sin ayuda.",
+   "cita": "Crearem un fons estatal de reconstrucció i reformarem el Consorci de Compensació d’Assegurances perquè les víctimes de catàstrofes cobren ràpid i ningú quede enrere.",
+   "cita_traduccion": "Crearemos un fondo estatal de reconstrucción y reformaremos el Consorcio de Compensación de Seguros para que las víctimas de catástrofes cobren rápido y nadie se quede atrás.",
+   "pagina": 36,
+   "beneficiarios": "Las personas, empresas y ayuntamientos afectados por catástrofes naturales: por la DANA de 2024 el Consorcio recibió 250.946 solicitudes de indemnización (a 25-11-2025) y por la DANA de octubre de 2026, 6.528 en tres días. El coste del fondo recaería en los Presupuestos del Estado, por una cuantía que el programa no fija; el del Consorcio lo pagan los asegurados mediante un recargo obligatorio en sus pólizas.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 36) nombra dos instrumentos: un fondo estatal de reconstrucción y una reforma del Consorcio de Compensación de Seguros para que las víctimas «cobren ràpid i ningú quede enrere». No fija la dotación del fondo ni sus criterios de acceso más allá de «les víctimes de catàstrofes», no dice qué cambiaría en el Consorcio (plazos de pago, cobertura de quien no tiene seguro, franquicias) ni da plazos para ninguna de las dos medidas. En la misma sección añade un sistema extraordinario de financiación y asistencia técnica para los municipios afectados por catástrofes y la ejecución prioritaria de las obras hidráulicas pendientes en las cuencas afectadas por la DANA (p. 36), y la introducción hace de la reparación de las víctimas una condición de cualquier acuerdo (p. 3).",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=36",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 36"
+      },
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=3",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 3"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "Las bases de la ordenación de los seguros y la Hacienda general son competencia del Estado (art. 149.1.11.ª y 14.ª CE). El Consorcio es una entidad pública empresarial regulada por su Estatuto Legal (Real Decreto Legislativo 7/2004), que puede modificarse por ley ordinaria. La Ley 17/2015 del Sistema Nacional de Protección Civil ya permite al Consejo de Ministros aprobar ayudas a particulares, empresas y ayuntamientos cuando declara una zona afectada gravemente por una emergencia (art. 24); un fondo estatal de reconstrucción requiere dotación en una ley, como los Presupuestos. No se ha localizado norma o sentencia que lo impida.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-18910",
+       "titulo": "Real Decreto Legislativo 7/2004, texto refundido del Estatuto Legal del Consorcio de Compensación de Seguros, arts. 1, 6, 8, 18 y 23 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-7730",
+       "titulo": "Ley 17/2015, del Sistema Nacional de Protección Civil, art. 24 y Fondo de Prevención de Emergencias (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "no_verificable",
+     "texto": "No hay base pública para estimar el coste: depende de la dotación del fondo y del alcance de la reforma, que el programa no concreta, y tampoco explica cómo se pagaría. Como referencia de escala, el Gobierno cifra en más de 9.600 millones lo ejecutado hasta junio de 2026 para la recuperación tras la DANA de 2024 y destaca entre sus actuaciones los 4.500 millones abonados por el Consorcio, que no salen de los Presupuestos sino de sus propios recursos, principalmente los recargos obligatorios en las pólizas de seguros (arts. 18 y 23 de su Estatuto); el Estatuto prevé subvenciones estatales si esos recargos son insuficientes. La Unión Europea aportó 946 millones del Fondo de Solidaridad, sobre unos daños estimados de 18.000 millones.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=36",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 36"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/politica-territorial-memoria-democratica/paginas/2026/260626-recuperacion-tras-dana.aspx",
+       "titulo": "La Moncloa (26-6-2026): el Gobierno supera los 9.600 millones invertidos en la recuperación tras la DANA"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-18910",
+       "titulo": "Real Decreto Legislativo 7/2004, texto refundido del Estatuto Legal del Consorcio de Compensación de Seguros, arts. 1, 6, 8, 18 y 23 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/lang/en/gobierno/news/paginas/2025/20251003-dana-eu-solidarity-fund.aspx",
+       "titulo": "La Moncloa (3-10-2025): la UE concede a España 946 millones del Fondo de Solidaridad por la DANA"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Un estudio del Banco de Pagos Internacionales con un amplio panel de países (von Peter, von Dahlen y Saxena, 2012) concluye que las grandes catástrofes reducen la actividad económica de forma inmediata y duradera, que ese coste procede sobre todo de las pérdidas no aseguradas, mientras que los episodios bien asegurados apenas afectan a la producción, y que el seguro es un mecanismo clave para mitigarlo. No se ha localizado evidencia sobre qué cambios en un sistema público de seguro de catástrofes aceleran los pagos.",
+     "fuentes": [
+      {
+       "url": "https://www.bis.org/publ/work394.htm",
+       "titulo": "Von Peter, von Dahlen y Saxena (2012), Unmitigated disasters? New evidence on the macroeconomic cost of natural catastrophes, BIS Working Paper 394"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "La Unión Europea tiene un fondo para la reconstrucción tras catástrofes, el Fondo de Solidaridad; el Tribunal de Cuentas Europeo concluyó en 2008 que no daba una respuesta rápida: en las 23 solicitudes aprobadas hasta 2006 pasaron de media 375 días entre la catástrofe y el pago. Por la DANA de 2024 España recibió un anticipo de 100 millones en abril de 2025 y la concesión de 946 millones en octubre de 2025. No se ha localizado una evaluación publicada de un fondo nacional de reconstrucción permanente como el propuesto.",
+     "fuentes": [
+      {
+       "url": "https://www.eca.europa.eu/lists/ecadocuments/sr08_03/sr08_03_en.pdf",
+       "titulo": "Tribunal de Cuentas Europeo, Informe especial 3/2008: The European Union Solidarity Fund: how rapid, efficient and flexible is it? (DOUE C 153, 18-6-2008)"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/lang/en/gobierno/news/paginas/2025/20251003-dana-eu-solidarity-fund.aspx",
+       "titulo": "La Moncloa (3-10-2025): la UE concede a España 946 millones del Fondo de Solidaridad por la DANA"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "Tras la DANA de octubre de 2024, el Real Decreto-ley 6/2024 eliminó la franquicia del Consorcio para las pymes y facilitó la tramitación de las indemnizaciones por fallecimiento, y el Real Decreto-ley 7/2024 aprobó el Plan de respuesta inmediata, reconstrucción y relanzamiento, con ayudas complementarias a las del Consorcio. Según el Gobierno, a 25-11-2025 el Consorcio había pagado 210.106 de las 250.946 solicitudes recibidas, por más de 4.000 millones, y en junio de 2026 había abonado 4.500 millones y gestionado el 99,5 %. No existe un fondo estatal de reconstrucción permanente: la Ley 17/2015 prevé ayudas cuando el Consejo de Ministros declara una zona afectada gravemente, y su Fondo de Prevención de Emergencias solo financia actividades preventivas.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-22928",
+       "titulo": "Real Decreto-ley 6/2024, de 5 de noviembre, medidas urgentes de respuesta ante los daños causados por la DANA (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-23422",
+       "titulo": "Real Decreto-ley 7/2024, de 11 de noviembre, Plan de respuesta inmediata, reconstrucción y relanzamiento frente a la DANA (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/economia-comercio-empresa/Paginas/2025/261125-indemnizacion-dana.aspx",
+       "titulo": "La Moncloa (26-11-2025): el Consorcio de Compensación de Seguros supera los 4.000 millones en pagos por la DANA"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/politica-territorial-memoria-democratica/paginas/2026/260626-recuperacion-tras-dana.aspx",
+       "titulo": "La Moncloa (26-6-2026): el Gobierno supera los 9.600 millones invertidos en la recuperación tras la DANA"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-7730",
+       "titulo": "Ley 17/2015, del Sistema Nacional de Protección Civil, art. 24 y Fondo de Prevención de Emergencias (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a los afectados por futuras catástrofes: por la DANA de 2024 el Consorcio recibió 250.946 solicitudes (a 25-11-2025) y por la DANA Adam, en octubre de 2026, 6.528 en tres días, el 77 % en la provincia de Valencia. El Consorcio solo indemniza a quien tiene una póliza que incluya su recargo (art. 8 de su Estatuto), por lo que quien no está asegurado depende de las ayudas públicas; el programa no dice si la reforma cambiaría eso. El coste del fondo recaería en los Presupuestos, sin cuantía.",
+     "fuentes": [
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/economia-comercio-empresa/Paginas/2025/261125-indemnizacion-dana.aspx",
+       "titulo": "La Moncloa (26-11-2025): el Consorcio de Compensación de Seguros supera los 4.000 millones en pagos por la DANA"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/economia-comercio-empresa/Paginas/2026/221026-compensacion-dana-adam.aspx",
+       "titulo": "La Moncloa (22-10-2026): el Consorcio recibe 6.528 solicitudes de indemnización por la DANA Adam"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-18910",
+       "titulo": "Real Decreto Legislativo 7/2004, texto refundido del Estatuto Legal del Consorcio de Compensación de Seguros, arts. 1, 6, 8, 18 y 23 (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Un fondo estable permitiría responder a cada catástrofe sin aprobar normas de urgencia, pero su coste depende de la frecuencia de los episodios: en dos años, la Comunitat Valenciana sufrió la DANA de 2024 y la de octubre de 2026. Según el estudio del Banco de Pagos Internacionales, lo que más reduce el coste económico duradero de las catástrofes es que las pérdidas estén aseguradas, de modo que el efecto dependerá de que el fondo y la reforma del Consorcio mantengan el seguro como vía principal de compensación, algo que el programa no precisa.",
+     "fuentes": [
+      {
+       "url": "https://www.bis.org/publ/work394.htm",
+       "titulo": "Von Peter, von Dahlen y Saxena (2012), Unmitigated disasters? New evidence on the macroeconomic cost of natural catastrophes, BIS Working Paper 394"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/economia-comercio-empresa/Paginas/2026/221026-compensacion-dana-adam.aspx",
+       "titulo": "La Moncloa (22-10-2026): el Consorcio recibe 6.528 solicitudes de indemnización por la DANA Adam"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/politica-territorial-memoria-democratica/paginas/2026/260626-recuperacion-tras-dana.aspx",
+       "titulo": "La Moncloa (26-6-2026): el Gobierno supera los 9.600 millones invertidos en la recuperación tras la DANA"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "compromis-10",
+   "titulo": "Las terapias de conversión, delito en el Código Penal",
+   "area": "igualdad",
+   "resumen": "Tipificar como delito las terapias de conversión de la orientación sexual o la identidad de género y crear mecanismos de protección y reparación, sobre todo para las víctimas menores de edad.",
+   "cita": "Tipificarem específicament les teràpies de conversió com a delicte i establirem mecanismes de protecció i reparació especialment per a les víctimes menors d’edat.",
+   "cita_traduccion": "Tipificaremos específicamente las terapias de conversión como delito y estableceremos mecanismos de protección y reparación especialmente para las víctimas menores de edad.",
+   "pagina": 55,
+   "beneficiarios": "Las personas LGTBI expuestas a estas prácticas, sin cifra oficial: en la encuesta en línea de la Agencia de los Derechos Fundamentales de la UE (2023), el 21 % de los participantes LGTBIQ de España dijo haber sufrido alguna (el 24 % en la UE). El coste recaería en la Administración de Justicia, sin cuantificar.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 55) dice qué hará: tipificar las terapias de conversión como delito específico y establecer mecanismos de protección y reparación, sobre todo para las víctimas menores de edad. No dice qué conductas se castigarían, con qué penas, si alcanzaría a la promoción o la publicidad, en qué consistirían la protección y la reparación ni en qué plazo.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=55",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 55"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "La legislación penal es competencia exclusiva del Estado (art. 149.1.6.ª CE) y, como afecta a derechos fundamentales, exige ley orgánica (art. 81 CE), es decir, mayoría absoluta del Congreso en una votación final sobre el conjunto. El texto que aprobó el Congreso en junio de 2026 se tramitó así y alcanzó 178 votos a favor. No se ha localizado sentencia o norma que impida castigar estas prácticas; la Ley 4/2023 ya las prohíbe aun con el consentimiento de la persona o de su representante legal (art. 17).",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-240-7.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 240-7 (30-6-2026): proposición de ley orgánica sobre las terapias de conversión aprobada por el Pleno (nuevo art. 173 bis del Código Penal)"
+      },
+      {
+       "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion022/VOT_20260625150743.pdf",
+       "titulo": "Congreso, sesión 191, votación 22 (25-6-2026): votación de conjunto de la ley orgánica sobre las terapias de conversión"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-5366",
+       "titulo": "Ley 4/2023, para la igualdad real y efectiva de las personas trans y para la garantía de los derechos de las personas LGTBI, arts. 17, 79 y 80 (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "favorable",
+     "texto": "Es una medida penal sin coste presupuestario directo relevante: el texto aprobado por el Congreso en 2026 modificaba el Código Penal y el art. 82 de la Ley 4/2023, para negar subvenciones a quienes fueran condenados por estas prácticas, sin partidas de gasto. Los «mecanismes de protecció i reparació» que añade el programa podrían tener coste, pero no se definen ni se cuantifican.",
+     "fuentes": [
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-240-7.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 240-7 (30-6-2026): proposición de ley orgánica sobre las terapias de conversión aprobada por el Pleno (nuevo art. 173 bis del Código Penal)"
+      },
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=55",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 55"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Los estudios observacionales asocian haber sufrido estas prácticas con peor salud mental: en EE. UU., con una muestra representativa, Blosnich y otros (2020) hallan que las personas de minorías sexuales expuestas tenían una razón de probabilidades casi doble de haber pensado alguna vez en el suicidio y un 88 % mayor de haber hecho un intento con lesión leve, y Turban y otros (2020) asocian en personas trans la exposición con más intentos de suicidio (razón de probabilidades de 2,27). Sobre las prohibiciones, Overhage y otros (2025) estiman que en cuatro estados de EE. UU. que prohibieron a los profesionales sanitarios aplicarlas a menores, la proporción de estudiantes de secundaria que se había planteado seriamente el suicidio bajó 2,9 puntos en los dos años siguientes respecto a estados sin prohibición. No se ha localizado evidencia sobre el efecto añadido de convertirlas en delito frente a una prohibición administrativa como la española.",
+     "fuentes": [
+      {
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32437277/",
+       "titulo": "Blosnich y otros (2020), Sexual Orientation Change Efforts, Adverse Childhood Experiences, and Suicide Ideation and Attempt Among Sexual Minority Adults, American Journal of Public Health 110(7) (PubMed)"
+      },
+      {
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31509158/",
+       "titulo": "Turban y otros (2020), Association Between Recalled Exposure to Gender Identity Conversion Efforts and Psychological Distress and Suicide Attempts Among Transgender Adults, JAMA Psychiatry 77(1) (PubMed)"
+      },
+      {
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40354223/",
+       "titulo": "Overhage y otros (2025), State Bans on Sexual Orientation and Gender Identity Change Efforts and Youth Suicidality, Health Services Research 60(5) (PubMed)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Alemania castiga desde 2020 con hasta un año de prisión o multa aplicar estas prácticas a menores de 18 años o a adultos cuyo consentimiento esté viciado, y sanciona con multas de hasta 30.000 € su publicidad y oferta. En EE. UU., las prohibiciones estatales de aplicarlas a menores por profesionales sanitarios se asociaron a una menor ideación suicida adolescente (Overhage y otros, 2025). Malta (2016) también las castiga penalmente, con multa o prisión de hasta un año, penas mayores si la víctima es vulnerable o las aplica un profesional. No se ha localizado una evaluación publicada de los resultados de estas leyes penales.",
+     "fuentes": [
+      {
+       "url": "https://www.gesetze-im-internet.de/konvbehschg/BJNR128500020.html",
+       "titulo": "Alemania, Ley de protección frente a los tratamientos de conversión (KonvBehSchG, 2020), §§ 2, 3, 5 y 6"
+      },
+      {
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40354223/",
+       "titulo": "Overhage y otros (2025), State Bans on Sexual Orientation and Gender Identity Change Efforts and Youth Suicidality, Health Services Research 60(5) (PubMed)"
+      },
+      {
+       "url": "https://legislation.mt/eli/cap/567/eng/pdf",
+       "titulo": "Malta, Affirmation of Sexual Orientation, Gender Identity and Gender Expression Act (cap. 567, 2016), arts. 3 y 4"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "La Ley 4/2023 prohíbe estas prácticas (art. 17) y las sanciona como infracción administrativa muy grave (art. 79.4.d), con multas de 10.001 a 150.000 € (art. 80.3). El Congreso aprobó el 25-6-2026 una proposición de ley orgánica del Grupo Socialista que las tipificaba como delito (nuevo art. 173 bis del Código Penal: prisión de seis meses a dos años y multa, con pena agravada si la víctima es menor), con 178 votos a favor, 32 en contra y 138 abstenciones. El Grupo Popular presentó enmiendas en el Senado en septiembre y la iniciativa, pendiente en esa Cámara, decayó con la disolución de las Cortes por el Real Decreto 806/2026, de 5 de octubre, que hace caducar los asuntos pendientes (disposición adicional primera del Reglamento del Senado y art. 207 del Reglamento del Congreso). En la Comunitat Valenciana, la Ley 23/2018 ya prohíbe estas prácticas (art. 7) y las sanciona como infracción muy grave, con multas de 60.001 a 120.000 €; la Ley valenciana 5/2025 modificó la ley trans autonómica, el Gobierno la recurrió porque varios de sus artículos «modulan la prohibición de las terapias de conversión» y el Tribunal Constitucional mantiene suspendidos esos preceptos (ATC 45/2026).",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-5366",
+       "titulo": "Ley 4/2023, para la igualdad real y efectiva de las personas trans y para la garantía de los derechos de las personas LGTBI, arts. 17, 79 y 80 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-240-7.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 240-7 (30-6-2026): proposición de ley orgánica sobre las terapias de conversión aprobada por el Pleno (nuevo art. 173 bis del Código Penal)"
+      },
+      {
+       "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion022/VOT_20260625150743.pdf",
+       "titulo": "Congreso, sesión 191, votación 22 (25-6-2026): votación de conjunto de la ley orgánica sobre las terapias de conversión"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/SEN/BOCG/2026/BOCG_D_15_457_3803.PDF",
+       "titulo": "BOCG Senado, núm. 457 (14-9-2026): enmiendas del Grupo Popular a la proposición de ley orgánica sobre las terapias de conversión (624/000012)"
+      },
+      {
+       "url": "https://www.elsaltodiario.com/lgtbiq/balance-legislatura-derechos-lgtbiqa-ley-terapias-conversion",
+       "titulo": "El Salto (20-10-2026): balance de la legislatura en derechos LGTBIQA+; la ley de terapias de conversión decae"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1982-5196",
+       "titulo": "Reglamento del Congreso de los Diputados, art. 207 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742",
+       "titulo": "Real Decreto 806/2026, de 5 de octubre, de disolución del Congreso de los Diputados y del Senado y de convocatoria de elecciones (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-10830",
+       "titulo": "Reglamento del Senado, disposición adicional primera (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2019-281",
+       "titulo": "Ley valenciana 23/2018, de igualdad de las personas LGTBI, arts. 7, 60 y 62 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://mptmd.gob.es/content/dam/mpt/prensa/notas_de_prensa/notas/2026/02/20260224_NP_RECURSOLGTBI_CV.pdf",
+       "titulo": "Ministerio de Política Territorial y Memoria Democrática (24-2-2026): recurso de inconstitucionalidad contra las modificaciones de la ley trans valenciana"
+      },
+      {
+       "url": "https://www.boe.es/boe/dias/2026/08/03/pdfs/BOE-A-2026-16931.pdf",
+       "titulo": "Tribunal Constitucional, ATC 45/2026, de 7 de julio (recurso 1549-2026): mantiene la suspensión de los arts. 6, 8, 16, 23 y 24 de la Ley valenciana 8/2017 en la redacción de la Ley 5/2025 (BOE)"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a las personas LGTBI expuestas a estas prácticas, en especial menores. No hay cifra oficial: en la encuesta en línea de la Agencia de los Derechos Fundamentales de la UE, hecha en 2023 a personas que se identifican como LGTBIQ, el 21 % de los participantes de España dijo haber sufrido alguna práctica de «conversión» (el 24 % en la UE), una muestra no probabilística. El coste recaería en la Administración de Justicia y en los condenados, sin cuantificar.",
+     "fuentes": [
+      {
+       "url": "https://fra.europa.eu/sites/default/files/fra_uploads/lgbtiq_survey-2024-country_sheet-spain.pdf",
+       "titulo": "Agencia de los Derechos Fundamentales de la UE (FRA), EU LGBTIQ Survey III (2024), ficha de España"
+      },
+      {
+       "url": "https://fra.europa.eu/en/publication/2024/lgbtiq-equality-crossroads-progress-and-challenges",
+       "titulo": "FRA (2024), LGBTIQ equality at a crossroads: progress and challenges (encuesta en línea de junio-agosto de 2023, muestra no probabilística)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Ventaja posible: más disuasión que la sanción administrativa vigente, si se persigue de forma efectiva, y protección de menores, en quienes la exposición temprana se asocia a más intentos de suicidio en la edad adulta (Turban y otros, 2020). El riesgo es delimitar estas prácticas frente al acompañamiento psicológico o religioso no coercitivo: el preámbulo del texto de 2026 aclaraba que no se refería a los métodos de apoyo aplicados conforme a los estándares profesionales internacionales, y el nuevo artículo exigía afectación de la integridad corporal o de la salud, o un menoscabo grave de la integridad moral. La evidencia sobre efectos en la salud mental procede de prohibiciones a profesionales sanitarios en EE. UU., no de tipos penales.",
+     "fuentes": [
+      {
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31509158/",
+       "titulo": "Turban y otros (2020), Association Between Recalled Exposure to Gender Identity Conversion Efforts and Psychological Distress and Suicide Attempts Among Transgender Adults, JAMA Psychiatry 77(1) (PubMed)"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-240-7.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 240-7 (30-6-2026): proposición de ley orgánica sobre las terapias de conversión aprobada por el Pleno (nuevo art. 173 bis del Código Penal)"
+      },
+      {
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40354223/",
+       "titulo": "Overhage y otros (2025), State Bans on Sexual Orientation and Gender Identity Change Efforts and Youth Suicidality, Health Services Research 60(5) (PubMed)"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "compromis-11",
+   "titulo": "Nueva financiación autonómica, condonación de la deuda histórica y fondo transitorio de nivelación",
+   "area": "modelo territorial",
+   "resumen": "Reformar la financiación autonómica con criterios de población y de prestación de servicios, condonar la deuda que el programa atribuye a la infrafinanciación de la Generalitat Valenciana (el 78 % de su deuda) y crear un fondo transitorio que iguale su financiación a la media hasta la reforma.",
+   "cita": "Reformarem el sistema de finançament autonòmic per a que atenga a criteris poblacionals i de prestació dels serveis públics i desenvolupament competencial, per tal d’acabar amb l’infrafinançament valencià. [...] Exigirem la condonació del deute històric de la Generalitat Valenciana fruit de l'infrafinançament cronificat (un 78% del deute públic en total). [...] Posarem en marxa un fons transitori d’anivellament que equipare el nostre finançament a la mitjana de comunitats, mentre no s’aprove la reforma del finançament autonòmic, i evite seguir generant deute per l’infrafinançament.",
+   "cita_traduccion": "Reformaremos el sistema de financiación autonómica para que atienda a criterios poblacionales y de prestación de los servicios públicos y desarrollo competencial, para acabar con la infrafinanciación valenciana. [...] Exigiremos la condonación de la deuda histórica de la Generalitat Valenciana fruto de la infrafinanciación cronificada (un 78 % de la deuda pública total). [...] Pondremos en marcha un fondo transitorio de nivelación que equipare nuestra financiación a la media de comunidades, mientras no se apruebe la reforma de la financiación autonómica, y evite seguir generando deuda por la infrafinanciación.",
+   "pagina": 57,
+   "beneficiarios": "Beneficiaría a la Generalitat Valenciana y a los 5,43 millones de residentes de la Comunitat (INE, 1-1-2025), la comunidad con menor financiación efectiva por habitante ajustado tras Murcia (92,8 sobre 100 en 2024, Fedea); el coste lo asumiría la Administración central: 41.926 M€ si la deuda a condonar es el 78 % que estimó la Sindicatura de Comptes para 2021 (unos 50.400 M€ con la deuda de junio de 2026), 11.210 M€ en el proyecto de condonación de 2025, y una cuantía sin fijar para el fondo de nivelación.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 57) propone tres medidas: reformar el sistema para que atienda a «criteris poblacionals i de prestació dels serveis públics i desenvolupament competencial», condonar el «deute històric» de la Generalitat, que cifra en el 78 % de su deuda total, y un fondo transitorio que equipare su financiación a la media de las comunidades mientras no se aprueba la reforma. El 78 % coincide con la proporción que la Sindicatura de Comptes atribuyó en 2022 a la infrafinanciación (41.926 de 53.820 M€ en 2021), pero el programa no da la cifra en euros, no cuantifica el fondo ni el reparto del nuevo sistema y no da plazos.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=57",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 57"
+      },
+      {
+       "url": "https://media.valenciaplaza.com/public/Attachment/2022/4/sindicatura-comptes-Informe_deuda_comunitat_Valenciana-2022.pdf",
+       "titulo": "Sindicatura de Comptes de la Comunitat Valenciana (abril de 2022), Informe sobre la evolución de la deuda de la Generalitat Valenciana (resumen)"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "La Hacienda general y la deuda del Estado son competencia estatal (art. 149.1.14 CE) y la financiación autonómica se regula por ley orgánica (art. 157.3 CE y LOFCA), que exige mayoría absoluta del Congreso. El proyecto de condonación de 2025 se tramitaba como ley orgánica y era voluntario para cada comunidad; un fondo de nivelación a cargo del Estado requiere dotación en una ley, como los Presupuestos. La Ley Orgánica de Estabilidad Presupuestaria impide que el Estado asuma deudas de las comunidades (art. 8.2), por lo que una condonación exige una ley orgánica que lo exceptúe, como hacía el art. 4 del proyecto de 2025; no se ha localizado sentencia que impida estas medidas.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1980-21166",
+       "titulo": "Ley Orgánica 8/1980, de Financiación de las Comunidades Autónomas (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.hacienda.gob.es/es-es/prensa/noticias/documents/09-12-25%20presentaci%c3%93n%20proyecto%20de%20ley%20condonaci%c3%93n%20deuda%20ccaa.pdf",
+       "titulo": "Ministerio de Hacienda (9-12-2025): presentación del proyecto de ley orgánica de condonación de deuda autonómica"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-5730",
+       "titulo": "Ley Orgánica 2/2012, de Estabilidad Presupuestaria y Sostenibilidad Financiera, art. 8.2 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-79-1.PDF",
+       "titulo": "BOCG Congreso, serie A, núm. 79-1 (19-12-2025): proyecto de ley orgánica de condonación de deuda autonómica (art. 4 y anexo I)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El coste es estimable con fuentes públicas: si la deuda a condonar es el 78 % que indica el programa, la Sindicatura de Comptes lo cifró en 41.926 M€ en 2021, y aplicado a la deuda de junio de 2026 (64.593 M€, Banco de España) serían unos 50.400 M€ (cálculo propio); el proyecto de condonación de 2025 asignaba 11.210 M€ a la Comunitat Valenciana (83.252 M€ en total) y, según Hacienda, no alteraba el déficit ni la deuda del conjunto de las Administraciones. Fedea estimó en 3.000 M€ un fondo transitorio de nivelación para Murcia, Comunitat Valenciana, Andalucía y Castilla-La Mancha, y el ministro de Hacienda cifró en 3.669 M€ los recursos adicionales que recibiría la Comunitat con el modelo aprobado por el CPFF en 2026. El programa no explica cómo se pagaría ninguna de las tres medidas.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=57",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 57"
+      },
+      {
+       "url": "https://media.valenciaplaza.com/public/Attachment/2022/4/sindicatura-comptes-Informe_deuda_comunitat_Valenciana-2022.pdf",
+       "titulo": "Sindicatura de Comptes de la Comunitat Valenciana (abril de 2022), Informe sobre la evolución de la deuda de la Generalitat Valenciana (resumen)"
+      },
+      {
+       "url": "https://www.hacienda.gob.es/es-es/prensa/noticias/documents/09-12-25%20presentaci%c3%93n%20proyecto%20de%20ley%20condonaci%c3%93n%20deuda%20ccaa.pdf",
+       "titulo": "Ministerio de Hacienda (9-12-2025): presentación del proyecto de ley orgánica de condonación de deuda autonómica"
+      },
+      {
+       "url": "https://policy.fedea.net/wp-content/uploads/2024/01/presentacion_FFT_ene2024.pdf",
+       "titulo": "De la Fuente (Fedea, enero de 2024), presentación sobre la reforma del sistema de financiación regional (fondo transitorio de nivelación)"
+      },
+      {
+       "url": "https://alicanteplaza.es/alicanteplaza/espana/arcadi-espana-avisa-que-con-pp-y-vox-no-habra-nueva-financiacion-y-promete-que-si-sanchez-sigue-estara-en-vigor-en-2027",
+       "titulo": "Alicante Plaza / Europa Press (6-11-2026): el ministro de Hacienda en el Fórum Europa Tribuna Mediterránea"
+      },
+      {
+       "url": "https://www.hacienda.gob.es/es-es/prensa/noticias/paginas/2026/20260904-np-cpff-directo.aspx",
+       "titulo": "Ministerio de Hacienda (4-9-2026): el CPFF aprueba la reforma del sistema de financiación autonómica"
+      },
+      {
+       "url": "https://www.bde.es/webbe/es/estadisticas/compartido/datos/csv/be1309.csv",
+       "titulo": "Banco de España, Boletín Estadístico, cuadro 13.9: deuda según el PDE por comunidades autónomas (Comunitat Valenciana, junio de 2026)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "La Sindicatura de Comptes estimó en 2022 que el 78 % (41.926 M€) de los 53.820 M€ de deuda de la Generalitat en 2021 se debía a la infrafinanciación (31 % respecto a la media de las comunidades desde 2002, 37 % respecto a las necesidades reconocidas por el modelo de 2009 y 10 % a su coste financiero), y Fedea sitúa a la Comunitat en 92,8 de financiación efectiva a competencias homogéneas por habitante ajustado en 2024. La AIReF concluye que la condonación mejora la sostenibilidad, pero advierte de riesgos de incentivos fiscales inadecuados si no se acompaña de condicionalidad, y calcula que, incluso con una quita de 11.210 M€, la deuda valenciana no bajaría del límite del 13 % del PIB antes de 2050.",
+     "fuentes": [
+      {
+       "url": "https://media.valenciaplaza.com/public/Attachment/2022/4/sindicatura-comptes-Informe_deuda_comunitat_Valenciana-2022.pdf",
+       "titulo": "Sindicatura de Comptes de la Comunitat Valenciana (abril de 2022), Informe sobre la evolución de la deuda de la Generalitat Valenciana (resumen)"
+      },
+      {
+       "url": "https://documentos.fedea.net/pubs/eee/2026/eee2026-24.pdf",
+       "titulo": "De la Fuente (Fedea, agosto de 2026), La liquidación de 2024 del sistema de financiación de las comunidades autónomas de régimen común, EEE 2026/24"
+      },
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2025/11/Observatorio-de-deuda/Observatorio.pdf",
+       "titulo": "AIReF, Observatorio de deuda (noviembre de 2025), con ficha de la Comunitat Valenciana"
+      },
+      {
+       "url": "https://www.airef.es/es/noticias/la-airef-analiza-las-implicaciones-de-la-propuesta-de-condonacion-de-la-deuda-autonomica-y-la-reforma-de-los-mecanismos-de-financiacion-en-el-observatorio-de-deuda/",
+       "titulo": "AIReF (noviembre de 2025): implicaciones de la condonación de la deuda autonómica (nota del Observatorio de deuda)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "En Alemania, Bremen recibió 8.500 M€ de ayudas federales de saneamiento entre 1994 y 2004 y, según su Tribunal de Cuentas, al final del periodo su deuda había aumentado en 3.000 M€, hasta 12.200 M€; un estudio sobre los bonos de los Länder halla que la expectativa de rescate reduce la prima de riesgo (Heppke-Falk y Wolff, 2008). Desde 2011 la Ley Fundamental condiciona estas ayudas a reducir el déficit (art. 143d). Australia aplica una nivelación casi completa, única en la OCDE, que según su Productivity Commission (2018) compensa las desventajas estructurales de los estados pero puede desincentivar sus reformas tributarias. Los resultados son dispares.",
+     "fuentes": [
+      {
+       "url": "https://www.rechnungshof.bremen.de/sixcms/media.php/13/PM1Sanierung.pdf",
+       "titulo": "Tribunal de Cuentas de Bremen, nota de prensa de 15-3-2005 sobre el saneamiento de 1994-2004"
+      },
+      {
+       "url": "https://ideas.repec.org/a/bla/kyklos/v61y2008i3p425-446.html",
+       "titulo": "Heppke-Falk y Wolff (2008), Moral Hazard and Bail-Out in Fiscal Federations: Evidence for the German Länder, Kyklos 61(3) (ficha RePEc)"
+      },
+      {
+       "url": "https://www.gesetze-im-internet.de/gg/art_143d.html",
+       "titulo": "Ley Fundamental de Alemania, art. 143d (ayudas de consolidación y de saneamiento)"
+      },
+      {
+       "url": "https://assets.pc.gov.au/inquiries/completed/horizontal-fiscal-equalisation/report/horizontal-fiscal-equalisation-overview.pdf",
+       "titulo": "Productivity Commission de Australia (2018), Horizontal Fiscal Equalisation, resumen"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "El Consejo de Ministros aprobó en diciembre de 2025 el proyecto de ley orgánica de condonación (11.210 M€ para la Comunitat Valenciana), que superó las enmiendas a la totalidad en julio de 2026 y decayó con la disolución de las Cortes. El CPFF aprobó el 4-9-2026 un nuevo modelo con 20.975 M€ adicionales para las comunidades, que no llegó a las Cortes; el sistema vigente es el de 2009.",
+     "fuentes": [
+      {
+       "url": "https://www.hacienda.gob.es/es-es/prensa/noticias/documents/09-12-25%20presentaci%c3%93n%20proyecto%20de%20ley%20condonaci%c3%93n%20deuda%20ccaa.pdf",
+       "titulo": "Ministerio de Hacienda (9-12-2025): presentación del proyecto de ley orgánica de condonación de deuda autonómica"
+      },
+      {
+       "url": "https://es.ara.cat/economia/cuentas-publicas/perdon-deuda-autonomias-esquiva-veto-vox-pp-congreso_1_5807235.html",
+       "titulo": "Ara (23-7-2026): la condonación supera las enmiendas a la totalidad en el Congreso"
+      },
+      {
+       "url": "https://www.elsaltodiario.com/politica/adelanto-electoral-deja-aire-quita-deuda-comunidades-autonomas-pp-ha-boicoteado",
+       "titulo": "El Salto (6-10-2026): el adelanto electoral deja en el aire la quita de deuda autonómica"
+      },
+      {
+       "url": "https://es.ara.cat/politica/descarrila-congreso-elecciones_1_5870195.amp.html",
+       "titulo": "Ara (5-10-2026): las iniciativas que decaen con la disolución de las Cortes"
+      },
+      {
+       "url": "https://www.hacienda.gob.es/es-es/prensa/noticias/paginas/2026/20260904-np-cpff-directo.aspx",
+       "titulo": "Ministerio de Hacienda (4-9-2026): el CPFF aprueba la reforma del sistema de financiación autonómica"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-79-1.PDF",
+       "titulo": "BOCG Congreso, serie A, núm. 79-1 (19-12-2025): proyecto de ley orgánica de condonación de deuda autonómica (anexo I: 11.210 M€ para la Comunitat Valenciana)"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "favorable",
+     "texto": "Beneficiaría a la Generalitat y a los 5,43 millones de residentes de la Comunitat Valenciana (INE, 1-1-2025), con una financiación efectiva por habitante ajustado de 92,8 sobre una media de 100 en 2024 (Fedea) y una deuda cercana al 40 % de su PIB, la más alta de las comunidades (AIReF, segundo trimestre de 2025; 40,0 % en junio de 2026 según el Banco de España). El coste lo asumiría la Administración central y, a través de ella, el conjunto de contribuyentes: 41.926 M€ si se condona el 78 % de la deuda de 2021 que estimó la Sindicatura (unos 50.400 M€ con la deuda de junio de 2026, cálculo propio), 11.210 M€ en el proyecto de condonación de 2025 y, como referencia, 3.669 M€ adicionales para la Comunitat con el modelo del Gobierno aprobado por el CPFF en 2026, según el ministro de Hacienda; el fondo de nivelación no tiene cuantía.",
+     "fuentes": [
+      {
+       "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/56940?nult=1",
+       "titulo": "INE, Estadística Continua de Población: población residente por comunidad autónoma a 1-1-2025 (tabla 56940)"
+      },
+      {
+       "url": "https://documentos.fedea.net/pubs/eee/2026/eee2026-24.pdf",
+       "titulo": "De la Fuente (Fedea, agosto de 2026), La liquidación de 2024 del sistema de financiación de las comunidades autónomas de régimen común, EEE 2026/24"
+      },
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2025/11/Observatorio-de-deuda/Observatorio.pdf",
+       "titulo": "AIReF, Observatorio de deuda (noviembre de 2025), con ficha de la Comunitat Valenciana"
+      },
+      {
+       "url": "https://media.valenciaplaza.com/public/Attachment/2022/4/sindicatura-comptes-Informe_deuda_comunitat_Valenciana-2022.pdf",
+       "titulo": "Sindicatura de Comptes de la Comunitat Valenciana (abril de 2022), Informe sobre la evolución de la deuda de la Generalitat Valenciana (resumen)"
+      },
+      {
+       "url": "https://www.hacienda.gob.es/es-es/prensa/noticias/documents/09-12-25%20presentaci%c3%93n%20proyecto%20de%20ley%20condonaci%c3%93n%20deuda%20ccaa.pdf",
+       "titulo": "Ministerio de Hacienda (9-12-2025): presentación del proyecto de ley orgánica de condonación de deuda autonómica"
+      },
+      {
+       "url": "https://alicanteplaza.es/alicanteplaza/espana/arcadi-espana-avisa-que-con-pp-y-vox-no-habra-nueva-financiacion-y-promete-que-si-sanchez-sigue-estara-en-vigor-en-2027",
+       "titulo": "Alicante Plaza / Europa Press (6-11-2026): el ministro de Hacienda en el Fórum Europa Tribuna Mediterránea"
+      },
+      {
+       "url": "https://www.bde.es/webbe/es/estadisticas/compartido/datos/csv/be1309.csv",
+       "titulo": "Banco de España, Boletín Estadístico, cuadro 13.9: deuda según el PDE por comunidades autónomas (Comunitat Valenciana, junio de 2026)"
+      },
+      {
+       "url": "https://www.bde.es/webbe/es/estadisticas/compartido/datos/csv/be1310.csv",
+       "titulo": "Banco de España, Boletín Estadístico, cuadro 13.10: deuda según el PDE por comunidades autónomas en porcentaje del PIB (junio de 2026)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Según la AIReF, una quita de 11.210 M€ reduciría la deuda valenciana en 11.487 M€ a finales de 2026, el 7 % del PIB regional, y ahorraría unos 277 M€ de intereses el primer año y 1.995 M€ hasta 2030. La misma institución advierte de que ese ahorro no da margen de gasto bajo la regla de gasto y de que, sin condicionalidad, la medida conlleva riesgos de incentivos fiscales inadecuados; un estudio sobre los Länder alemanes halla que la expectativa de rescate reduce la prima de riesgo que exigen los mercados (Heppke-Falk y Wolff, 2008).",
+     "fuentes": [
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2025/11/Observatorio-de-deuda/Observatorio.pdf",
+       "titulo": "AIReF, Observatorio de deuda (noviembre de 2025), con ficha de la Comunitat Valenciana"
+      },
+      {
+       "url": "https://www.airef.es/es/noticias/la-airef-analiza-las-implicaciones-de-la-propuesta-de-condonacion-de-la-deuda-autonomica-y-la-reforma-de-los-mecanismos-de-financiacion-en-el-observatorio-de-deuda/",
+       "titulo": "AIReF (noviembre de 2025): implicaciones de la condonación de la deuda autonómica (nota del Observatorio de deuda)"
+      },
+      {
+       "url": "https://ideas.repec.org/a/bla/kyklos/v61y2008i3p425-446.html",
+       "titulo": "Heppke-Falk y Wolff (2008), Moral Hazard and Bail-Out in Fiscal Federations: Evidence for the German Länder, Kyklos 61(3) (ficha RePEc)"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "compromis-12",
+   "titulo": "Plan de Rodalies valenciano: 1.500 M€ y 58 trenes nuevos",
+   "area": "otros",
+   "resumen": "Ejecutar un plan de modernización de Rodalies en el País Valenciano con 1.500 millones de euros y 58 trenes nuevos, calendario verificable y actuaciones en las líneas C1, C2, C3, C5 y C6, Castelló-Vinaròs y Alicante-Murcia-Villena, entre otras.",
+   "cita": "Executarem un pla de modernització de Rodalies al País Valencià amb una inversió prevista de 1.500 milions d’euros, i la incorporació de 58 trens nous, amb un calendari verificable i informació pública sobre el grau d’execució de les actuacions. En concret, incorporarem les següents mesures:",
+   "cita_traduccion": "Ejecutaremos un plan de modernización de Rodalies en el País Valenciano con una inversión prevista de 1.500 millones de euros, y la incorporación de 58 trenes nuevos, con un calendario verificable e información pública sobre el grado de ejecución de las actuaciones. En concreto, incorporaremos las siguientes medidas:",
+   "pagina": 57,
+   "beneficiarios": "Los usuarios de los dos núcleos de Cercanías valencianos (14,7 millones de viajeros al año en Valencia-Castellón y 3,6 millones en Alicante, según Fomento en 2017) y de las líneas que el programa propone mejorar o estudiar; el coste, 1.500 millones según el programa, recaería en los Presupuestos del Estado a través de Adif y Renfe.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (pp. 57-59) fija la inversión (1.500 millones), el material (58 trenes nuevos) y enumera las actuaciones por líneas: completar la C1 entre Cullera y Gandia, duplicar la C2 hasta Moixent, electrificar la C3, la tercera vía de la C6 entre València y Castelló, el Tren de la Costa entre Gandia, Oliva y Dénia, la electrificación de las conexiones entre Alicante, Murcia y Villena o un servicio Avant Alicante-València en una hora, entre otras; varias son estudios. Promete un «calendari verificable», pero no lo incluye ni reparte la cuantía entre actuaciones. La cuantía y buena parte de las actuaciones coinciden con una moción de Compromís que el Congreso aprobó en 2026 y que fijaba el periodo 2026-2030; el programa no da plazo.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=57",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 57"
+      },
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=58",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 58"
+      },
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=59",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 59"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/D/BOCG-15-D-489.PDF",
+       "titulo": "BOCG Congreso, serie D, núm. 489 (5-3-2026): moción 173/000152 de Compromís sobre Rodalies en el País Valencià"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "Las Cercanías valencianas circulan por la Red Ferroviaria de Interés General, cuya titularidad y administración corresponden a Adif y Adif Alta Velocidad (Ley 38/2015, art. 4 y disposición adicional primera), y la Constitución atribuye al Estado los ferrocarriles que atraviesan más de una comunidad y las obras públicas de interés general (art. 149.1.21.ª y 24.ª). Invertir en ellas solo requiere dotarlo en los Presupuestos Generales del Estado.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10440",
+       "titulo": "Ley 38/2015, del Sector Ferroviario (texto consolidado, BOE), arts. 4, 47.2 y 59.7, disposición adicional primera y disposición transitoria primera"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El programa fija el coste (1.500 millones y 58 trenes nuevos), pero no dice en qué plazo, de qué partidas saldría ni si los trenes están incluidos en esa cifra; los 58 trenes coinciden con los que Renfe ya había anunciado para Valencia-Castellón (37) y Alicante-Murcia (21), pendientes de entrega por el fabricante según el ministro de Transportes (18-2-2026). Como referencia, el Plan de Cercanías de la Comunitat Valenciana 2017-2025 preveía 1.436,55 M€ (1.081,82 de Adif y 354,73 de Renfe) y, según un informe de la Cámara de Contratistas recogido por la prensa, se ejecutaron 540,7 M€ (37,64 %); el ministro de Transportes afirmó en el Congreso (18-2-2026) que el presupuesto del plan ha subido a cerca de 1.900 M€, con 1.470 M€ de Adif movilizados (en proyecto, obra o terminados) y el 87 % de los 173 M€ de Renfe ejecutado.",
+     "fuentes": [
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=57",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 57"
+      },
+      {
+       "url": "https://valenciaplaza.com/el-plan-de-cercanias-de-la-comunitat-valenciana-invertira-1436-millones-de-euros-hasta-2025",
+       "titulo": "Valencia Plaza / Europa Press (18-12-2017): Fomento destinará 1.436 millones hasta 2025 en el Plan de Mejora de Cercanías de la Comunitat"
+      },
+      {
+       "url": "https://www.ultimahora.es/noticias/comunidades/2026/02/04/2563315/contratistas-consell-denuncian-solo-ejecuto-del-plan-cercanias-2017-2025-comunitat-valenciana.html",
+       "titulo": "Última Hora (4-2-2026): la Cámara de Contratistas y el Consell denuncian que solo se ejecutó el 37,64 % del Plan de Cercanías 2017-2025"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-167.PDF",
+       "titulo": "Diario de Sesiones del Congreso, Pleno núm. 167 (18-2-2026), pp. 43-44: respuesta del ministro de Transportes a la interpelación sobre Rodalies"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/D/BOCG-15-D-489.PDF",
+       "titulo": "BOCG Congreso, serie D, núm. 489 (5-3-2026): moción 173/000152 de Compromís sobre Rodalies en el País Valencià"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "La AIReF (2020) atribuye a las Cercanías una alta rentabilidad social por su capacidad y estima en 2,47 € por viajero su ahorro en costes externos (contaminación, accidentes, congestión), por encima de la subvención media por billete, pese a una inversión de solo 3.680 M€ en 1990-2018 frente a 55.888 M€ en alta velocidad. También constató que el núcleo de Valencia perdió un 27,2 % de viajeros entre 2008 y 2018 y que los planes de Cercanías se aprobaron sin evaluar previamente los proyectos ni vincularlos al presupuesto. El resultado depende de los proyectos: el programa los enumera por líneas, sin presupuesto por actuación ni evaluación previa.",
+     "fuentes": [
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2020/07/INFRAESTRUCTURAS/ESTUDIO_INFRAESTRUCTURAS_SPENDINGREVIEW.pdf",
+       "titulo": "AIReF, Spending Review fase II, Estudio Infraestructuras de transporte (julio de 2020), cap. 6 (Cercanías)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "La AIReF describe que Francia, Alemania, Italia y Países Bajos han transferido a regiones o autoridades de transporte metropolitano la planificación y contratación de las cercanías, y considera esa descentralización la opción más eficiente desde el punto de vista teórico, pero no aporta evaluaciones de resultados de programas de inversión comparables. No hemos localizado una evaluación publicada aplicable a un programa de este tipo.",
+     "fuentes": [
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2020/07/INFRAESTRUCTURAS/ESTUDIO_INFRAESTRUCTURAS_SPENDINGREVIEW.pdf",
+       "titulo": "AIReF, Spending Review fase II, Estudio Infraestructuras de transporte (julio de 2020), cap. 6 (Cercanías)"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "Según la AIReF, el plan de Cercanías valenciano de 2009 preveía 3.400 M€ en infraestructuras y el de 2017 lo redujo a 1.081 M€ sin justificar las actuaciones descartadas; del Plan 2017-2025 (1.436,55 M€) se ejecutó el 37,64 %, según la Cámara de Contratistas citada por la prensa. En la XV legislatura la Comisión de Transportes aprobó el 13-5-2025, por 20 votos a favor, 3 en contra y 14 abstenciones, una proposición no de ley del grupo Sumar, defendida por Alberto Ibáñez (Compromís), que pide completar ese plan (incluidas la primera fase de la variante de Torrellano y la conexión de la C1 con Elx AV) y añadir actuaciones como el estudio de la prolongación de la C1 hasta Dénia o una estación en la Font de la Figuera. El 26-2-2026 el Pleno del Congreso aprobó, sin votos en contra, una moción de Compromís que insta al Gobierno a aprobar un Plan de Inversiones 2026-2030 para las Cercanías valencianas con un mínimo de 1.500 M€ y actuaciones por líneas como las del programa (188 a favor y 161 abstenciones) y a incorporar antes de 2027 los 58 trenes comprometidos (316 a favor y 33 abstenciones); rechazó iniciar su traspaso a la Generalitat (53 a favor y 290 en contra).",
+     "fuentes": [
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2020/07/INFRAESTRUCTURAS/ESTUDIO_INFRAESTRUCTURAS_SPENDINGREVIEW.pdf",
+       "titulo": "AIReF, Spending Review fase II, Estudio Infraestructuras de transporte (julio de 2020), cap. 6 (Cercanías)"
+      },
+      {
+       "url": "https://www.ultimahora.es/noticias/comunidades/2026/02/04/2563315/contratistas-consell-denuncian-solo-ejecuto-del-plan-cercanias-2017-2025-comunitat-valenciana.html",
+       "titulo": "Última Hora (4-2-2026): la Cámara de Contratistas y el Consell denuncian que solo se ejecutó el 37,64 % del Plan de Cercanías 2017-2025"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/CO/DSCD-15-CO-329.PDF",
+       "titulo": "Diario de Sesiones del Congreso, Comisión de Transportes, núm. 329 (13-5-2025): debate y votación de la PNL 161/000194"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/D/BOCG-15-D-345.PDF",
+       "titulo": "BOCG Congreso, serie D, núm. 345 (28-5-2025): aprobación con modificaciones de la PNL 161/000194 sobre las Cercanías de la Comunitat Valenciana"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-170.PDF",
+       "titulo": "Diario de Sesiones del Congreso, Pleno núm. 170 (26-2-2026), pp. 82-83: votación por puntos de la moción 173/000152"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/D/BOCG-15-D-489.PDF",
+       "titulo": "BOCG Congreso, serie D, núm. 489 (5-3-2026): moción 173/000152 de Compromís sobre Rodalies en el País Valencià"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "favorable",
+     "texto": "Beneficiaría a los usuarios de los dos núcleos de Cercanías valencianos, que el Ministerio de Fomento cifró en 2017 en 14,7 millones de viajeros al año en Valencia-Castellón y 3,6 millones en Alicante, y a los de las líneas que el programa propone mejorar o estudiar en las tres provincias. El coste, 1.500 millones según el programa, recaería en los Presupuestos del Estado a través de Adif, titular de la infraestructura, y de Renfe, que aporta el material rodante.",
+     "fuentes": [
+      {
+       "url": "https://valenciaplaza.com/el-plan-de-cercanias-de-la-comunitat-valenciana-invertira-1436-millones-de-euros-hasta-2025",
+       "titulo": "Valencia Plaza / Europa Press (18-12-2017): Fomento destinará 1.436 millones hasta 2025 en el Plan de Mejora de Cercanías de la Comunitat"
+      },
+      {
+       "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf#page=57",
+       "titulo": "Compromís: Front Valencià, Programa electoral 29N (PDF oficial), p. 57"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10440",
+       "titulo": "Ley 38/2015, del Sector Ferroviario (texto consolidado, BOE), arts. 4, 47.2 y 59.7, disposición adicional primera y disposición transitoria primera"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "La AIReF documenta ventajas de las Cercanías en congestión, contaminación y accidentes, pero advierte de planes ambiciosos que no se ejecutan por falta de vínculo presupuestario (entre 2009 y 2020 se invirtió el 5,5 % de los 12.400 M€ previstos para los tres mayores núcleos). La operación es deficitaria: los billetes cubrían en 2017 el 48 % de los costes operativos de Cercanías, de modo que ampliar el servicio implica más subvención anual.",
+     "fuentes": [
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2020/07/INFRAESTRUCTURAS/ESTUDIO_INFRAESTRUCTURAS_SPENDINGREVIEW.pdf",
+       "titulo": "AIReF, Spending Review fase II, Estudio Infraestructuras de transporte (julio de 2020), cap. 6 (Cercanías)"
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
