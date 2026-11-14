@@ -1,0 +1,84 @@
+{
+ "grupo": "g9",
+ "codificador": "Claude (Anthropic) — continuación del 14-nov-2026 del barrido g7 para PSC y EH Bildu (celdas que g7 dejó sin buscar por el cupo), protocolo v2 con las reglas de fechas y de atribución del 13-nov",
+ "fecha": "2026-11-14",
+ "nota": "Sin posiciones nuevas: ninguna fuente válida encontrada da valor a una celda vacía del PSC (5/30) ni de EH Bildu (13/30). No incluye celdas null para no pisar posiciones de otros grupos; la única candidata sin valor va en «dudosas» (build_fase1.py no la lee). PENDIENTE DE VERIFICACIÓN INDEPENDIENTE: no hay verificacion_g9.json y build_fase1.py omite este grupo. Búsquedas y descartes por celda en notas_g9.md; copias de las fuentes en data/sources/fase1/g9_2026-11-14/<partido>/.",
+ "posiciones": {
+  "psc": {},
+  "eh_bildu": {}
+ },
+ "dudosas": {
+  "eh_bildu": {
+   "q11": {
+    "candidato": -1,
+    "cita": "Gure ustez ez dira itxi behar unitateak ez publikoan, ez ikastoletan. Argi eta garbi.",
+    "traduccion": "«Creemos que no hay que cerrar las unidades ni en lo público ni en las ikastolas. Claramente.» (traducción oficial del propio Diario de Sesiones)",
+    "pagina": 27,
+    "url": "https://parlamentodenavarra.es/sites/default/files/diarios-sesiones/EDUC11030.pdf",
+    "medio": "Parlamento de Navarra, Diario de Sesiones de la Comisión de Educación núm. 30",
+    "fecha": "2026-04-22",
+    "quien": "Eneka Maiz Ulaiar, parlamentaria foral de EH Bildu (hoy cabeza de lista de EH Bildu al Congreso por Nafarroa), por el G.P. EH Bildu Nafarroa en el debate de una moción",
+    "formato": "debate parlamentario (comisión)",
+    "por_que_sin_valor": "Maiz rechaza la resolución 26/2026 del Departamento de Educación que reduce unidades concertadas en Navarra y defiende las ikastolas (concertadas) como «absolutamente necesarias junto con la red pública»; lo repite en el Pleno del 14-may-2026 (DSPN 103). Sería −1 indirecto, como PNV q11 (FP concertada). No se le da valor porque la defensa se limita a las ikastolas, que EH Bildu presenta como red de «carácter público-comunitario», y porque Maiz separa expresamente esa defensa de la concertada en general: en la misma comisión distingue entre estar de acuerdo con el acuerdo de gobierno de «reducir las unidades concertadas cuando no haya demanda suficiente» y ejecutarlo bien, y en el Pleno reprocha a UPN «meter la pública y la concertada en el mismo saco». Sobre retirar la financiación a la concertada en general, su posición es ambivalente: ante la duda, null.",
+    "fuente_local": "data/sources/fase1/g9_2026-11-14/eh_bildu/pn_EDUC11030_20260422_maiz_ikastolas.txt",
+    "sha256": "ca23cfdf2118fc58bdf85b88e9518a9d4a54dac5427cb960977e7ef51139fa81"
+   }
+  }
+ },
+ "fuentes": [
+  {
+   "ruta": "data/sources/fase1/g9_2026-11-14/eh_bildu/pn_EDUC11030_20260422_maiz_ikastolas.txt",
+   "url": "https://parlamentodenavarra.es/sites/default/files/diarios-sesiones/EDUC11030.pdf",
+   "sha256": "ca23cfdf2118fc58bdf85b88e9518a9d4a54dac5427cb960977e7ef51139fa81",
+   "usos": ["eh_bildu/q11 (dudosa)"]
+  },
+  {
+   "ruta": "data/sources/fase1/g9_2026-11-14/eh_bildu/pn_Plen11103_20260514_maiz_conciertos.txt",
+   "url": "https://parlamentodenavarra.es/sites/default/files/diarios-sesiones/Plen11103.pdf",
+   "sha256": "e02b719b0e251cb65b367cea7a6ea632d8576fdf6ef711d4c6d135454c7d4e4c",
+   "usos": ["eh_bildu/q11 (dudosa, contexto)"]
+  },
+  {
+   "ruta": "data/sources/fase1/g9_2026-11-14/eh_bildu/pn_VIVI11038_20260929_arza_regularizacion.txt",
+   "url": "https://parlamentodenavarra.es/sites/default/files/diarios-sesiones/VIVI11038.pdf",
+   "sha256": "5c763cbdd567b0dd241f2ae81b891f5c263f01c95536bf996e72336fe158f597",
+   "usos": ["eh_bildu/q15 (descartada: pide cambios estructurales, no otra regularización)"]
+  },
+  {
+   "ruta": "data/sources/fase1/g9_2026-11-14/eh_bildu/eldiario_ubera_derivaciones.txt",
+   "url": "https://www.eldiario.es/euskadi/eh-bildu-consejero-martinez-pugnan-gasto-derivaciones-privada-sanidad-vasca_1_13641722.html",
+   "sha256": "ca493f4031928e314bc05997e1bbf5cd4e4a92fa8e070f281875ab616448f28f",
+   "usos": ["eh_bildu/q09 (descartada: critica el gasto en derivaciones, no propone prohibirlas)"]
+  },
+  {
+   "ruta": "data/sources/fase1/g9_2026-11-14/eh_bildu/ehb_otegi_inicio_campana.txt",
+   "url": "https://ehbildu.eus/es/noticias/otegi-abre-la-campana-asegurando-que-es-una-certeza-que-euskal-herria-va-a-derrotar-al-bloque-reaccionario-porque-hemos-creado-las-condiciones-para-ello",
+   "sha256": "17f4eb13d7f702b868e741f0e21c9e0bdde1b1819a304f882d962379b17c66e4",
+   "usos": ["eh_bildu (inicio de campaña, 13-nov: sin medidas sobre las celdas vacías)"]
+  },
+  {
+   "ruta": "data/sources/fase1/g9_2026-11-14/psc/naciodigital_20261109_illa_rac1.txt",
+   "url": "https://naciodigital.cat/politica/illa-avisa-el-29-n-esta-en-risc-lautogovern.html",
+   "sha256": "bb88a04937898560d40fd974a1ad257f432d0ca9822243c85593c0be79a4fc3a",
+   "usos": ["psc/q05 (descartada: rechazo a deflactar el IRPF autonómico, medida distinta)", "psc/q04 (descartada: «més impostos al capital», en estilo indirecto)", "psc/q12 (descartada: «el model d'escola no es toca», mismo criterio que g5)"]
+  },
+  {
+   "ruta": "data/sources/fase1/g9_2026-11-14/psc/naciodigital_20261105_mocio_smi.txt",
+   "url": "https://naciodigital.cat/politica/el-parlament-demana-a-lestat-que-catalunya-tingui-un-salari-minim-que-suposi-el-60-del-mitja.html",
+   "sha256": "a638245efabf4fc2e019c0900ff98962ead5801e01ee704a9c62681cb664d812",
+   "usos": ["psc/q32 (descartada: solo voto del PSC a la moción de ERC)"]
+  },
+  {
+   "ruta": "data/sources/fase1/g9_2026-11-14/psc/DS_P_15_105_cantenys.txt",
+   "url": "https://www.senado.es/legis15/publicaciones/pdf/senado/ds/DS_P_15_105.PDF",
+   "sha256": "ae18c2f912247b36e4806528db6e590982ef8e86c0f7837eeeeb52d1a108b447",
+   "usos": ["psc/q03 (descartada: rechazo genérico a rebajas fiscales de Vox sobre la vivienda)"]
+  },
+  {
+   "ruta": "data/sources/fase1/g9_2026-11-14/psc/publico_20261112_hereu_entrevista.txt",
+   "url": "https://www.publico.es/politica/nuestra-soberania-puede-decidir-washington-tel-aviv-moscu.html",
+   "sha256": "59723d7aeba1124ef5184f589f0db7fdff5e731346a530c27f80c59f57309b92",
+   "usos": ["psc/q31 (descartada: defiende los decretos tumbados sin nombrar la prórroga)", "psc/q01 (descartada: «regular con eficacia el mercado», genérico)"]
+  }
+ ]
+}

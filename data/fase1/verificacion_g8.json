@@ -1,0 +1,103 @@
+{
+ "grupo": "g8",
+ "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2 con las decisiones del editor del 13-nov (atribución por partido, federaciones, documentos conjuntos, fechas desde el 1-nov-2025)",
+ "fecha": "2026-11-14",
+ "aprobado": true,
+ "revisadas": 9,
+ "resultado": {
+  "ok": 2,
+  "corregido": 0,
+  "rechazado": 0,
+  "dudosas_confirmadas_sin_valor": 7
+ },
+ "alcance": "Las 2 posiciones nuevas de codificacion_g8.json (NC-BC q22, Ara Més q17) y las candidatas que el codificador dejó para decidir: las cuatro tribunas de Román Rodríguez (NC-BC q18, q26, q29 y la sustitución de q04), CC q18, NC-BC q32 y NC-BC q19. Para las 2 posiciones: (1) se volvieron a descargar las páginas originales con peticiones HTTP normales (eldiario.es/canariasahora, 200; www.mespermenorca.cat/ca/noticias/2654/, 200; y la nota de apoyo de MÉS per Mallorca en aramesfrontampli.cat, 200), se extrajo el texto y se comprobó la cita con norm() de verify_quotes.py en el original y en la copia local (sha256 coincidente con el de codificacion_g8.json): las dos son literales y tienen 60 palabras o menos (30 y 47). (2) Quién habla: Campos es el n.º 1 de Unidad del Pueblo Canario por Las Palmas (data/boe/listas_congreso.json) y la propia entrevista lo presenta como «secretario general de Nueva Canarias»; Esteve Barceló es, según la nota, «el coordinador general del partit» (Més per Menorca), y la nota es un documento oficial del partido. Més per Menorca es uno de los tres partidos de la federación Ara Més que la regla de federaciones cuenta para esa entrada, y la nota habla en nombre del partido, no de una organización local. (3) Fechas: Campos, 31-oct-2026 (datePublished de la página), posterior a la convocatoria; Més per Menorca, 15-ene-2026 («Data: 15/01/2026» en la página), dentro del plazo desde el 1-nov-2025, sin referencia a estas elecciones (marco null). (4) Valor juzgado con el criterio de la misma afirmación en fase1.json: q22, PSOE, PSC, Frente Amplio, Podemos y Compromís (−1, rechazo reactivo al anuncio del PP); q17, ERC +1, BNG +2, Junts +2, PP −2, y las otras notas de partidos de la federación Ara Més (q24 y q29, +1). (5) Nada posterior del mismo partido en sentido contrario: NC-BC no tiene programa y su manifiesto no habla del Ministerio de Igualdad; Ara Més no tiene programa publicado y lo posterior de MÉS per Mallorca (Apesteguia, «autonomia fiscal», 10-feb-2026) va en la misma línea. No se repitió el rastreo completo de las 700 notas de aramesfrontampli.cat: su buscador funciona por formulario POST y no se usó; se acepta el rastreo del codificador. Mecanismo, como en g4, g5 y g7: build_fase1.py lee codificacion_g8.json con esta verificación como puerta. No hubo rechazos de posiciones con valor; las candidatas sin valor quedan en «dudosas» de codificacion_g8.json, que build_fase1.py no lee, así que no se pisa ninguna celda.",
+ "cambios": [],
+ "correcciones_de_campos": [
+  {
+   "partido": "(fichero)",
+   "pregunta": "—",
+   "campo": "nota, dudosas",
+   "motivo": "La nota de cabecera de codificacion_g8.json ya no dice «pendiente de verificación». Se añade la sección «dudosas» con las siete candidatas decididas sin valor (tribunas de Rodríguez para q18, q26, q29 y la sustitución de q04; CC q18; NC-BC q32 y q19), con URL, copia local y motivo."
+  }
+ ],
+ "posiciones": [
+  {
+   "partido": "upc",
+   "pregunta": "q22",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Entrevista de preguntas y respuestas en Canarias Ahora (31-oct-2026), cita literal en el original. Ante la pregunta por los efectos de un Gobierno de PP y Vox, Campos responde «Va a suponer perder libertades, retroceder 40 años en derechos» y pone como ejemplo que el PP «lo primero que se va a cargar va a ser el Ministerio de Igualdad»; añade que es «la condición de Vox para poder pactar». Presenta la supresión como un retroceso en derechos: rechazo inequívoco pero reactivo, sin propuesta propia, −1. Es el mismo criterio que PSC (Morón, que la enumera entre las amenazas de un Gobierno de PP y Vox), PSOE, Frente Amplio, Podemos y Compromís. Campos, secretario general de NC-BC y cabeza de lista por Las Palmas, habla en primera persona y por su partido; no se usa a dirigentes de Podemos, IU o Sumar. Nada posterior en contra."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q17",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Nota oficial de Més per Menorca (15-ene-2026), literal en el original: «la solució real passa per un concert econòmic» y, en palabras de su coordinador general, Esteve Barceló, que las instituciones de Baleares «recaptin tots els imposts i a la vegada contribueixin de manera justa a l’Estat». Es el modelo de la afirmación (la comunidad recauda y paga al Estado), pedido para su comunidad, como BNG y Junts. Cuenta para Ara Més por la regla de federaciones; Barceló es el máximo dirigente de un partido de la federación y la nota habla por el partido. +1 y no +2: el contenido es tan expreso como el del BNG, pero el ±2 se reserva para lo expreso y prioritario, y aquí no consta la prioridad para la entrada Ara Més. Es una nota de diez meses antes de la campaña de uno de los tres partidos de la federación; MÉS per Mallorca solo habla de un modelo «similar al concert econòmic», y la campaña de Ara Més–Front Ampli no lo ha planteado. El BNG lo lleva en el programa y Junts lo pone como condición para negociar. Es el mismo trato que las otras notas de partidos de la federación (q24 y q29, +1). Ver dudas (alternativa +2)."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q18 (dudosa: tribuna)",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. Tribuna de Román Rodríguez en Diario de Avisos (2-ago-2026, «Considero positiva la decisión del Gobierno estatal de asumir una parte importante de la deuda…»). El protocolo dice que no valen las «columnas de opinión» y no distingue entre las que firma el propio dirigente y las de terceros. g2 ya dejó fuera por ese motivo su tribuna del 8-nov en el mismo periódico, y ninguna posición publicada de ningún partido sale de un artículo de opinión. Aceptarla ahora cambiaría el estándar para un solo partido. Los formatos que admite el protocolo son declaraciones públicas (mitin, entrevista, debate, rueda de prensa, comparecencia, vídeo o red social oficial) y documentos oficiales del partido. Null."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q26 (dudosa: tribuna)",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. Tribuna de opinión (Diario de Avisos, 5-jul-2026), excluida por el mismo motivo que q18. Tampoco se sostendría por el contenido: rechaza el 5 % del PIB sin nombrar el 3,5 % de la afirmación, y lo atribuye a un congreso de NC-BC de julio de 2025, anterior al plazo. Null."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q29 (dudosa: tribuna)",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. Tribuna de opinión (Diario de Avisos, 15-feb-2026), excluida por el mismo motivo que q18. Además es ambivalente: el acuerdo hay que «analizarlo globalmente», hay sectores que «salen ganando» y pide salvaguardas y compensaciones. No dice si España debe pedir frenarlo, que es lo que llevó a g4 y al barrido del 13-nov a dejar en null a Campos sobre Mercosur. Null."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q04 (dudosa: sustitución por tribuna)",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "No se sustituye la posición vigente (+1, Manifiesto de UPC). La tribuna de Rodríguez del 1-nov-2026 es columna de opinión (excluida, como q18) y, además, resume con sus palabras un programa de UPC que no está publicado («UPC exige el mantenimiento de un impuesto a las grandes fortunas de forma permanente»), así que no se puede cotejar con el documento."
+  },
+  {
+   "partido": "cc",
+   "pregunta": "q18 (dudosa)",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor, leída en el Diario de Sesiones (DS Pleno 199, 23-jul-2026, p. 125-126). Valido, portavoz de CC, dice que CC no está de acuerdo con la ley, pero no porque sea malo «―todo lo contrario― aliviar la deuda a las comunidades autónomas», sino porque «la fórmula es injusta». Añade «Podemos hablar de aliviar la deuda, pero no de esta manera». Condiciona su apoyo a la inversión por habitante y al REF, y tampoco apoya las enmiendas de totalidad de PP y Vox. Rechaza el reparto, no que el Estado asuma esa deuda: es el mismo motivo por el que g4 (Clavijo, que proponía repartir los 83.000 millones por habitante) y el barrido del 13-nov (San Ginés) dejaron la celda en null. No se codifica 0: ninguna posición publicada usa 0, y hacerlo aquí sería un criterio nuevo para un solo partido. Tampoco −1, porque no es un rechazo inequívoco de la medida. El programa del 29-N no habla de la deuda. Null."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q32 (dudosa)",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. Pulido (El Día, 14-nov-2026): «que el salario mínimo siga aumentando y que esta competencia permanezca en manos del Estado». Es la misma idea que el Manifiesto de UPC («Rechazamos que se elimine el papel del Estado en la actualización del salario mínimo»), que g2 y su verificación dejaron en null. Un salario mínimo autonómico por encima del estatal mantiene el estatal como suelo y no quita al Estado esa competencia, así que la frase no es una posición sobre la afirmación. Con ese criterio sobra decidir si Pulido cuenta como dirigente. Es presidente de NC en La Palma y candidato al Senado por la isla, no un líder nacional ni regional, y ante la duda no se atribuye. Null."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q19 (dudosa)",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. En la nota de NC-BC (4-nov-2025), el reproche por el recorte de la partida autonómica de eólica marina va en la voz de la nota, resumiendo lo que dijo el diputado Caraballo en una comisión del Parlamento de Canarias; trata del presupuesto de la Consejería, no de instalar parques frente a las costas. La misma nota defiende el autoconsumo y las comunidades energéticas «frente al impulso a los macroparques». Es una medida relacionada pero distinta y la posición no es inequívoca. Null."
+  }
+ ],
+ "dudas": [
+  "ara_mes_fa/q17 (+1): alternativa +2, si se equipara la nota de Més per Menorca («la solució real passa per un concert econòmic», con recaudación de todos los impuestos y aportación al Estado) al BNG (+2, programa). Se deja +1 porque no consta que sea prioridad de la entrada Ara Més: es una nota de enero de uno de los tres partidos de la federación, MÉS per Mallorca solo habla de algo «similar», y la campaña no lo ha planteado. Si el programa de Ara Més–Front Ampli, aún no publicado, lo recoge, habría que revisarla.",
+  "upc/q22 (−1): ninguna; es el mismo caso que PSC (Morón). Solo cabría dudar de que la frase sea un ejemplo de lo que hará el PP y no una valoración propia, pero la presenta como «perder libertades, retroceder 40 años en derechos».",
+  "Tribunas de Rodríguez (NC-BC q18, q26, q29 y q04): si el editor decidiera que una tribuna firmada por un dirigente en primera persona vale como declaración, la única que pasaría el resto de comprobaciones sería q18 (+1, apoyo con matiz al proyecto de 83.000 millones). q26 no nombra el 3,5 %, q29 es ambivalente y la de q04 resume un programa no publicado. Además, la regla tendría que aplicarse a todos los partidos.",
+  "cc/q18 (null): alternativa 0 (ambivalencia explícita), si el editor decide usar el 0 para «sí al principio, no a esta versión». Si lo hace, habría que revisar también Clavijo (g4) y San Ginés (barrido del 13-nov)."
+ ]
+}

@@ -1,0 +1,126 @@
+{
+ "grupo": "g8",
+ "codificador": "Claude (Anthropic) — barrido del 14-nov-2026 para CC, NC-BC, PNV y Ara Més (un codificador por partido y revisión del coordinador), protocolo v2 con las reglas de fechas y de atribución del 13-nov",
+ "fecha": "2026-11-14",
+ "nota": "Posiciones del barrido del 14-nov (CC, NC-BC, PNV y Ara Més) aprobadas por la verificación independiente (verificacion_g8.json), sin cambios de valor. Las dos van en celdas vacías de fase1.json (NC-BC q22, Ara Més q17); no sustituyen ninguna posición. Las candidatas que el codificador dejó para decidir (tribunas de Román Rodríguez para NC-BC q18, q26, q29 y la sustitución de q04; CC q18; NC-BC q32 y q19) van en «dudosas», que build_fase1.py no lee: la verificación las confirma sin valor. Búsquedas y descartes por partido en notas_g8.md y en barrido_2026-11-14/candidatas_<partido>.json; copias de las fuentes en data/sources/fase1/barrido_2026-11-14/<partido>/.",
+ "posiciones": {
+  "upc": {
+   "q22": {
+    "valor": -1,
+    "fuente": "campaña",
+    "cita": "Va a suponer perder libertades, retroceder 40 años en derechos. Ya ha dicho el PP que lo primero que se va a cargar va a ser el Ministerio de Igualdad.",
+    "pagina": null,
+    "url": "https://www.eldiario.es/canariasahora/politica/luis-campos-candidato-unidad-pueblo-canario-no-le-hemos-fallado-gente-hemos-sido-capaces-entender-momento-historico_1_13625226.html",
+    "medio": "Canarias Ahora (elDiario.es)",
+    "fecha": "2026-10-31",
+    "quien": "Luis Alberto Campos, secretario general de NC-BC y cabeza de lista de Unidad del Pueblo Canario al Congreso por Las Palmas",
+    "formato": "entrevista (preguntas y respuestas)",
+    "marco": null,
+    "nota": "Preguntado por los efectos de un Gobierno de PP y Vox, Campos pone como ejemplo de «perder libertades, retroceder 40 años en derechos» que el PP ya ha dicho que lo primero que suprimirá es el Ministerio de Igualdad. Es un rechazo inequívoco a suprimirlo, pero como reacción a la propuesta de otro partido, sin propuesta propia: −1, el mismo criterio aplicado a PSOE, PSC, Frente Amplio, Podemos y Compromís en esta afirmación.",
+    "fuente_local": "data/sources/fase1/barrido_2026-11-14/upc/canariasahora_20261031_entrevista_campos.txt",
+    "sha256": "c5daebea59cbabb696e19cb20befa0822a6dc3cf8f02a9458e890be9d3d723d4"
+   }
+  },
+  "ara_mes_fa": {
+   "q17": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "Més per Menorca insisteix que la solució real passa per un concert econòmic. “Defensam un model en el qual siguin les institucions de les Illes Balears les qui recaptin tots els imposts i a la vegada contribueixin de manera justa a l’Estat i a la solidaritat interterritorial.",
+    "pagina": null,
+    "url": "https://www.mespermenorca.cat/ca/noticias/2654/",
+    "medio": "Més per Menorca (web oficial del partido)",
+    "fecha": "2026-01-15",
+    "quien": "Més per Menorca (nota oficial del partido), con declaraciones de su coordinador general, Esteve Barceló",
+    "formato": "documento oficial (nota de prensa del partido)",
+    "marco": null,
+    "nota": "Traducción: «Més per Menorca insiste en que la solución real pasa por un concierto económico. “Defendemos un modelo en el que sean las instituciones de las Illes Balears las que recauden todos los impuestos y a la vez contribuyan de manera justa al Estado y a la solidaridad interterritorial”». Més per Menorca, uno de los tres partidos de la federación Ara Més, propone para Baleares el modelo de la afirmación: la comunidad recauda sus impuestos y aporta al Estado. MÉS per Mallorca va en la misma línea, pero sin pedir el concierto como tal: su coordinador, Lluís Apesteguia, defiende un modelo «similar al concert econòmic» (nota del 24-nov-2025). +1 y no +2: la propuesta es expresa, pero sale de una nota de uno de los partidos de la federación sobre la reforma de la financiación, no de la federación ni de la campaña de Ara Més–Front Ampli, que no lo ha planteado como prioridad.",
+    "fuente_local": "data/sources/fase1/barrido_2026-11-14/ara_mes_fa/mespermenorca_20260115_financament_concert_economic.txt",
+    "sha256": "ac8c7b7f34d48909f667ca755555cf16e6103e022f0878b427e651f2d23b1a2e"
+   }
+  }
+ },
+ "fuentes": [
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-14/upc/canariasahora_20261031_entrevista_campos.txt",
+   "url": "https://www.eldiario.es/canariasahora/politica/luis-campos-candidato-unidad-pueblo-canario-no-le-hemos-fallado-gente-hemos-sido-capaces-entender-momento-historico_1_13625226.html",
+   "sha256": "c5daebea59cbabb696e19cb20befa0822a6dc3cf8f02a9458e890be9d3d723d4",
+   "usos": [
+    "upc/q22"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-14/ara_mes_fa/mespermenorca_20260115_financament_concert_economic.txt",
+   "url": "https://www.mespermenorca.cat/ca/noticias/2654/",
+   "sha256": "ac8c7b7f34d48909f667ca755555cf16e6103e022f0878b427e651f2d23b1a2e",
+   "usos": [
+    "ara_mes_fa/q17"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/barrido_2026-11-14/ara_mes_fa/mes_20251124_apesteguia_financament_concert.txt",
+   "url": "https://aramesfrontampli.cat/news/mes-reclama-al-govern-que-avantposi-els-interessos-de-la-ciutadania-als-del-pp/",
+   "sha256": "9d081c4bb760cb84fff261caffc6a7abd3d11de491eb511d47b595e4003c3c9e",
+   "usos": [
+    "ara_mes_fa/q17 (apoyo, citado en la nota)"
+   ]
+  }
+ ],
+ "dudosas": {
+  "upc": {
+   "q18": {
+    "candidato": 1,
+    "por_que_sin_valor": "Tribuna de opinión firmada por Román Rodríguez (secretario nacional de Estrategias, Programas y Formación de NC-BC, expresidente) en Diario de Avisos, 2-ago-2026: valora positivamente el proyecto de condonación. El protocolo excluye las «columnas de opinión» sin distinguir quién las firma, y g2 ya dejó fuera por ese motivo su tribuna del 8-nov en el mismo periódico; ninguna posición publicada sale de un artículo de opinión. Sin declaración en otro formato: null.",
+    "url": "https://diariodeavisos.elespanol.com/2026/08/cataluna-ya-no-roba-a-canarias/",
+    "fuente_local": "data/sources/fase1/barrido_2026-11-14/upc/dda_20260802_rodriguez_condonacion_deuda.txt",
+    "sha256": "b1ddc9c61c0fbb3f345618e120e8a30b6137c18caee8d63318932c98b3526713"
+   },
+   "q26": {
+    "candidato": -1,
+    "por_que_sin_valor": "Tribuna de opinión de Román Rodríguez en Diario de Avisos (5-jul-2026): columna de opinión, excluida por el protocolo (precedente de g2). Además, rechaza el 5 % del PIB que acordó la OTAN y remite a un congreso de NC-BC de julio de 2025, sin nombrar el 3,5 % de la afirmación. Null.",
+    "url": "https://diariodeavisos.elespanol.com/2026/07/del-armamentismo-europeo-a-la-neutralidad-canaria/",
+    "fuente_local": "data/sources/fase1/barrido_2026-11-14/upc/dda_20260705_rodriguez_gasto_militar.txt",
+    "sha256": "d456d5bf1e4ce8ca37084163879655bb2375dd53f63e6555fb63a72347c9a1d4"
+   },
+   "q29": {
+    "candidato": -1,
+    "por_que_sin_valor": "Tribuna de opinión de Román Rodríguez en Diario de Avisos (15-feb-2026): columna de opinión, excluida por el protocolo (precedente de g2). Además es ambivalente: pide valorar el acuerdo UE-Mercosur «globalmente», destaca sectores que «salen ganando» y propone salvaguardas y compensaciones, sin decir si España debe pedir frenarlo o no. Null.",
+    "url": "https://diariodeavisos.elespanol.com/2026/02/marruecos-mercosur-y-canarias/",
+    "fuente_local": "data/sources/fase1/barrido_2026-11-14/upc/dda_20260215_rodriguez_mercosur.txt",
+    "sha256": "c31e6a0c470787e20c08ccf15ba4f002a79646646067eba7ec16f02b9f7d1152"
+   },
+   "q04 (sustitución)": {
+    "candidato": 2,
+    "valor_vigente": 1,
+    "por_que_sin_valor": "Tribuna de opinión de Román Rodríguez en Diario de Avisos (1-nov-2026) en la que describe el programa de UPC («exige el mantenimiento de un impuesto a las grandes fortunas de forma permanente»). Columna de opinión, excluida por el protocolo, y además resume con sus palabras un programa que no está publicado, así que no se puede cotejar. No sustituye la posición vigente (+1, Manifiesto de UPC).",
+    "url": "https://diariodeavisos.elespanol.com/2026/11/upc-fiscalidad-financiacion-y-presupuestos/",
+    "fuente_local": "data/sources/fase1/barrido_2026-11-14/upc/dda_20261101_rodriguez_upc_fiscalidad.txt",
+    "sha256": "14ff4e241036931e54ff13aac3621410fa39605654bbfabc585496ea8a2b6be2"
+   },
+   "q32": {
+    "candidato": -1,
+    "cita": "También defendemos que el salario mínimo siga aumentando y que esta competencia permanezca en manos del Estado.",
+    "por_que_sin_valor": "Miguel Ángel Pulido (El Día, 14-nov-2026), presidente de Nueva Canarias en La Palma y candidato de UPC al Senado por la isla. Dos motivos: (1) la frase dice lo mismo que el Manifiesto de UPC («Rechazamos que se elimine el papel del Estado en la actualización del salario mínimo interprofesional»), que g2 y su verificación dejaron en null porque un salario mínimo autonómico por encima del estatal mantiene el estatal como suelo: con el mismo criterio, null; (2) es dirigente insular y su condición de líder reconocido del partido es dudosa (ante la duda no se atribuye).",
+    "url": "https://www.eldia.es/canarias/2026/11/14/miguel-angel-pulido-candidato-upc-136429236.html",
+    "fuente_local": "data/sources/fase1/barrido_2026-11-14/upc/eldia_20261114_entrevista_pulido.txt",
+    "sha256": "def9f7278541f730466028a90e43f2f9bca0bd51d610429185b25d40e8836f04"
+   },
+   "q19": {
+    "candidato": 1,
+    "por_que_sin_valor": "Nota de NC-BC (4-nov-2025) sobre la comparecencia presupuestaria del consejero canario: el reproche por el recorte de la partida autonómica de eólica marina (de 9,5 a 2 millones) está en la voz de la nota, que resume lo que dijo el diputado Yoné Caraballo. Criticar el recorte de una partida del presupuesto canario no es una posición sobre instalar parques eólicos marinos frente a las costas, y en la misma nota el partido defiende el autoconsumo y las comunidades energéticas «frente al impulso a los macroparques». Medida relacionada pero distinta y posición no inequívoca: null.",
+    "url": "https://www.nuevacanariasbc.org/blog/2025/11/04/nc-alerta-del-espejismo-presupuestario-de-transicion-ecologica-que-creara-un-agujero-financiero-en-2027/",
+    "fuente_local": "data/sources/fase1/barrido_2026-11-14/upc/ncbc_20251104_eolica_marina.txt",
+    "sha256": "0fa34904b82ab63db39f89d18bf6db2c94c200d520d97781096edee43a4e4f00"
+   }
+  },
+  "cc": {
+   "q18": {
+    "candidato": "0 o −1",
+    "cita": "usted sabe lo que opina Coalición Canaria. Sabe que no está de acuerdo con este planteamiento, con esta ley que se pretende, y no está de acuerdo porque piense que sea malo ―todo lo contrario― aliviar la deuda a las comunidades autónomas; no está de acuerdo porque cree que la fórmula es injusta.",
+    "por_que_sin_valor": "Cristina Valido, portavoz de CC en el Congreso, debate de totalidad del proyecto de la quita (DS Pleno 199, 23-jul-2026, p. 125-126). Apoya aliviar la deuda («todo lo contrario»), rechaza el reparto («Podemos hablar de aliviar la deuda, pero no de esta manera»), condiciona su apoyo a la inversión por habitante y al REF y no apoya las enmiendas de totalidad de PP y Vox. Rechaza la fórmula de reparto, no que el Estado asuma esa deuda: el mismo motivo por el que g4 (Clavijo) y el barrido del 13-nov (San Ginés) dejaron CC q18 en null. Ninguna posición publicada usa 0 para un «sí al principio, no a esta versión», y el programa del 29-N no habla de la deuda. Null.",
+    "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-199.PDF",
+    "fuente_local": "data/sources/fase1/ampliacion_2026-11-13/psoe/DSCD-15-PL-199.txt",
+    "sha256": "f59c75ec92380cc3b7eb4f9d3a04b4dbdd37f94fef7c7e77230922ee9f8e7971"
+   }
+  }
+ }
+}
