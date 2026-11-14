@@ -3,90 +3,8 @@
  "base": "compromisos",
  "modelo": "Claude (Anthropic)",
  "fecha": "2026-11-12",
- "nota": "Podemos no ha publicado programa para el 29-N (comprobado a 12-nov). Se seleccionan 12 prioridades entre 13 compromisos concretos verificables; podemos-c10 se evalúa junto con podemos-c09.",
+ "nota": "Podemos no ha publicado programa para el 29-N (comprobado a 12-nov). Se seleccionan 12 prioridades entre 13 compromisos concretos verificables; podemos-c10 se evalúa junto con podemos-c09. [Auditoría de coherencia, 14-11-2026] podemos-c01 («bajar el precio de los alquileres») pasa a «descartados»: solo nombra el resultado, sin instrumento (prompt 1b, mismo corte que la revisión de UPN del 14-11). Quedan 12 compromisos concretos y 11 prioridades (podemos-c10 se evalúa con podemos-c09).",
  "compromisos": [
-  {
-   "id": "podemos-c01",
-   "area": "vivienda",
-   "resumen": "Bajar el precio de los alquileres, presentado como una de las tres condiciones para negociar la investidura o entrar en un futuro Gobierno.",
-   "cita": "sus prioridades en una negociación con el PSOE serían “bajar el precio de los alquileres, prohibir la especulación para que solamente se pueda comprar pisos para vivir y no para hacer negocio y topar los precios de los alimentos”",
-   "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-   "formato": "desayuno informativo de Europa Press (Madrid)",
-   "fecha": "2026-11-06",
-   "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
-   "medio": "elDiario.es",
-   "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
-   "sha256": "a606ac38aac86fe3fd9e309898f17eb3fe976b268643fc828cfbd5f5497ae6d1",
-   "cuantificado": false,
-   "veces": {
-    "n": 4,
-    "ocasiones": [
-     {
-      "fecha": "2026-11-06",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "desayuno informativo de Europa Press (Madrid)",
-      "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
-      "texto": "«bajar el precio de los alquileres» como prioridad de negociación con el PSOE",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-11-06",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "desayuno informativo de Europa Press (Madrid)",
-      "url": "https://www.publico.es/politica/podemos-exigira-bajar-alquileres-prohibir-especulacion-topar-precio-alimentos-formar-parte-futuro-gobierno.html",
-      "medio": "Público",
-      "fuente_local": "data/sources/compromisos/podemos/publico_2026-11-06_desayuno_ep.txt",
-      "texto": "Mismo acto (Público): uno de sus «tres imprescindibles» para «formar parte» de un Gobierno (crónica).",
-      "cuenta": false
-     },
-     {
-      "fecha": "2026-10-24",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "mitin (Barcelona, Nou Barris, con Gabriel Rufián)",
-      "url": "https://www.diaridetarragona.com/espana/273915/rufian-montero-llaman-someter-psoe-izquierda-frente.html",
-      "medio": "Diari de Tarragona (EFE)",
-      "fuente_local": "data/sources/compromisos/podemos/diaridetarragona_efe_2026-10-24_mitin_barcelona.txt",
-      "texto": "«tan importante es parar a las derechas como bajar el precio de los alquileres»",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-11-07",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "mitin (Madrid, Espacio Delicias, con Gabriel Rufián)",
-      "url": "https://es.ara.cat/politica/tandem-rufian-montero-estrena-madrid-voto-util-psoe_1_5903168.html",
-      "medio": "Ara",
-      "fuente_local": "data/sources/compromisos/podemos/ara_2026-11-07_mitin_madrid.txt",
-      "texto": "«La izquierda que sirve para bajar los precios de los alquileres es la alianza republicana plurinacional»",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-10-20",
-      "quien": "Podemos (web oficial de la candidatura de Irene Montero)",
-      "formato": "documento oficial (web de campaña, cinco medidas «Así de básico»)",
-      "url": "https://pazcasaytrabajo.es/",
-      "medio": "Web oficial de campaña (pazcasaytrabajo.es)",
-      "fuente_local": "data/sources/compromisos/podemos/pazcasaytrabajo_web.txt",
-      "texto": "Medida 01: «Los precios tienen que ser justos, no pueden llevarse la mayor parte del salario.»",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-09-30",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "entrevista (elDiario.es)",
-      "url": "https://www.eldiario.es/politica/irene-montero-voto-decretos-sera-sindicato-inquilinas-gente-calle_1_13551027.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-10-01_entrevista_montero.txt",
-      "texto": "«bajar los precios del alquiler por ley» como medida estructural de emergencia",
-      "nota": "Anterior a la convocatoria y referida a la crisis de vivienda y a los decretos del Gobierno saliente, no expresamente a estas elecciones: solo contexto.",
-      "cuenta": false
-     }
-    ],
-    "nota": "Cuatro ocasiones: web de campaña (20-oct), mitin de Barcelona (24-oct), desayuno de Europa Press (6-nov; elDiario.es y Público cubren el mismo acto) y mitin de Madrid (7-nov). La entrevista del 30-sep es anterior a la convocatoria y no se refiere a estas elecciones: solo contexto."
-   },
-   "nota": "En las declaraciones de campaña no precisa instrumento (ley estatal, índice, tope), cuantía ni plazo. La rebaja «del 40 %» (La Revuelta, 27-oct) solo consta en estilo indirecto de Europa Press y no se usa. «Por ley» aparece en estilo indirecto en elDiario.es (6-nov) y literal solo en la entrevista de 30-sep, anterior a la convocatoria."
-  },
   {
    "id": "podemos-c02",
    "area": "vivienda",
@@ -760,12 +678,6 @@
  ],
  "prioridades": [
   {
-   "id": "podemos-01",
-   "compromiso": "podemos-c01",
-   "compromisos_relacionados": [],
-   "justificacion": "Es la primera de las tres condiciones que Montero, candidata a la Presidencia, fijó para negociar con el PSOE y «formar parte» de un Gobierno (desayuno de Europa Press, 6-nov; titular de elDiario.es y Público). Lo repite en los mítines de Barcelona (24-oct) y Madrid (7-nov), y la web oficial abre con «Las casas son para vivir» (medida 01)."
-  },
-  {
    "id": "podemos-02",
    "compromiso": "podemos-c02",
    "compromisos_relacionados": [],
@@ -938,6 +850,96 @@
    "url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/podemos",
    "fuente_local": null,
    "motivo": "Resume documentos de Podemos de 2024-2025 (programas anteriores): no valen."
+  },
+  {
+   "tema": "Bajar el precio de los alquileres, presentado como una de las tres condiciones para negociar la investidura o entrar en un futuro Gobierno.",
+   "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
+   "fecha": "2026-11-06",
+   "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
+   "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
+   "motivo": "[Auditoría de coherencia, 14-11-2026] no es una medida concreta según el prompt 1b («Es una medida concreta (qué se hará), no un diagnóstico, una crítica al rival ni una aspiración»): solo nombra el resultado deseado, sin instrumento ni regla que se cambiaría, y su propia evaluación lo reconocía (concreción «desfavorable»: «En ninguna de esas ocasiones se precisa el instrumento (tope, índice de referencia, congelación), cuánto bajarían, a qué contratos o zonas se aplicaría ni en qué plazo»). Es el corte aplicado el 14-11 en la revisión de UPN, que dejó fuera «Menos listas de espera» o «En dependencia, plazos más cortos»: entra un punto cuando nombra el instrumento o la regla, aunque no la cuantifique, y queda fuera cuando solo nombra el resultado. La repetición o el realce de una frase deciden la prioridad entre compromisos, no si algo es un compromiso. Retirada sin sustituto: no queda ningún compromiso concreto sin priorizar.",
+   "compromiso_retirado": {
+    "id": "podemos-c01",
+    "area": "vivienda",
+    "resumen": "Bajar el precio de los alquileres, presentado como una de las tres condiciones para negociar la investidura o entrar en un futuro Gobierno.",
+    "cita": "sus prioridades en una negociación con el PSOE serían “bajar el precio de los alquileres, prohibir la especulación para que solamente se pueda comprar pisos para vivir y no para hacer negocio y topar los precios de los alimentos”",
+    "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
+    "formato": "desayuno informativo de Europa Press (Madrid)",
+    "fecha": "2026-11-06",
+    "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
+    "medio": "elDiario.es",
+    "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
+    "sha256": "a606ac38aac86fe3fd9e309898f17eb3fe976b268643fc828cfbd5f5497ae6d1",
+    "cuantificado": false,
+    "veces": {
+     "n": 4,
+     "ocasiones": [
+      {
+       "fecha": "2026-11-06",
+       "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
+       "formato": "desayuno informativo de Europa Press (Madrid)",
+       "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
+       "medio": "elDiario.es",
+       "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
+       "texto": "«bajar el precio de los alquileres» como prioridad de negociación con el PSOE",
+       "cuenta": true
+      },
+      {
+       "fecha": "2026-11-06",
+       "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
+       "formato": "desayuno informativo de Europa Press (Madrid)",
+       "url": "https://www.publico.es/politica/podemos-exigira-bajar-alquileres-prohibir-especulacion-topar-precio-alimentos-formar-parte-futuro-gobierno.html",
+       "medio": "Público",
+       "fuente_local": "data/sources/compromisos/podemos/publico_2026-11-06_desayuno_ep.txt",
+       "texto": "Mismo acto (Público): uno de sus «tres imprescindibles» para «formar parte» de un Gobierno (crónica).",
+       "cuenta": false
+      },
+      {
+       "fecha": "2026-10-24",
+       "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
+       "formato": "mitin (Barcelona, Nou Barris, con Gabriel Rufián)",
+       "url": "https://www.diaridetarragona.com/espana/273915/rufian-montero-llaman-someter-psoe-izquierda-frente.html",
+       "medio": "Diari de Tarragona (EFE)",
+       "fuente_local": "data/sources/compromisos/podemos/diaridetarragona_efe_2026-10-24_mitin_barcelona.txt",
+       "texto": "«tan importante es parar a las derechas como bajar el precio de los alquileres»",
+       "cuenta": true
+      },
+      {
+       "fecha": "2026-11-07",
+       "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
+       "formato": "mitin (Madrid, Espacio Delicias, con Gabriel Rufián)",
+       "url": "https://es.ara.cat/politica/tandem-rufian-montero-estrena-madrid-voto-util-psoe_1_5903168.html",
+       "medio": "Ara",
+       "fuente_local": "data/sources/compromisos/podemos/ara_2026-11-07_mitin_madrid.txt",
+       "texto": "«La izquierda que sirve para bajar los precios de los alquileres es la alianza republicana plurinacional»",
+       "cuenta": true
+      },
+      {
+       "fecha": "2026-10-20",
+       "quien": "Podemos (web oficial de la candidatura de Irene Montero)",
+       "formato": "documento oficial (web de campaña, cinco medidas «Así de básico»)",
+       "url": "https://pazcasaytrabajo.es/",
+       "medio": "Web oficial de campaña (pazcasaytrabajo.es)",
+       "fuente_local": "data/sources/compromisos/podemos/pazcasaytrabajo_web.txt",
+       "texto": "Medida 01: «Los precios tienen que ser justos, no pueden llevarse la mayor parte del salario.»",
+       "cuenta": true
+      },
+      {
+       "fecha": "2026-09-30",
+       "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
+       "formato": "entrevista (elDiario.es)",
+       "url": "https://www.eldiario.es/politica/irene-montero-voto-decretos-sera-sindicato-inquilinas-gente-calle_1_13551027.html",
+       "medio": "elDiario.es",
+       "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-10-01_entrevista_montero.txt",
+       "texto": "«bajar los precios del alquiler por ley» como medida estructural de emergencia",
+       "nota": "Anterior a la convocatoria y referida a la crisis de vivienda y a los decretos del Gobierno saliente, no expresamente a estas elecciones: solo contexto.",
+       "cuenta": false
+      }
+     ],
+     "nota": "Cuatro ocasiones: web de campaña (20-oct), mitin de Barcelona (24-oct), desayuno de Europa Press (6-nov; elDiario.es y Público cubren el mismo acto) y mitin de Madrid (7-nov). La entrevista del 30-sep es anterior a la convocatoria y no se refiere a estas elecciones: solo contexto."
+    },
+    "nota": "En las declaraciones de campaña no precisa instrumento (ley estatal, índice, tope), cuantía ni plazo. La rebaja «del 40 %» (La Revuelta, 27-oct) solo consta en estilo indirecto de Europa Press y no se usa. «Por ley» aparece en estilo indirecto en elDiario.es (6-nov) y literal solo en la entrevista de 30-sep, anterior a la convocatoria."
+   }
   }
  ],
  "busqueda": {
