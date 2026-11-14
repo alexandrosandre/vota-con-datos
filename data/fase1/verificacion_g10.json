@@ -1,0 +1,337 @@
+{
+ "grupo": "g10",
+ "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13-nov («A qué partido cuenta cada fuente», precedencia)",
+ "fecha": "2026-11-14",
+ "aprobado": true,
+ "revisadas": 27,
+ "resultado": {
+  "ok": 26,
+  "corregido": 0,
+  "rechazado": 1,
+  "celdas_no_tocadas_confirmadas": "ver «celdas_no_tocadas»"
+ },
+ "alcance": "Las 27 posiciones de codificacion_g10.json, sacadas del programa de Compromís: Front Valencià para el 29-N (Compromís 11, Podemos 6, Frente Amplio 8, ERC 2), las celdas que el codificador conserva o deja en null y el cambio de pipeline/build_fase1.py.\n\n(1) Fuente. El sha256 del PDF (37b569d6…6b55) y el del texto (4a9db218…31ed) coinciden con partidos.json y con «fuentes». Es un PDF de Word de 64 pp., con fecha de creación del 13-nov a las 18:00 CET. Las páginas no llevan número impreso; el índice (pp. 1-2) coincide con la paginación del PDF (por ejemplo, FISCALITAT en la 18, comprobado visualmente).\n\n(2) Lectura. Se extrajo cada página con pdftotext y se leyeron las páginas citadas y las de los temas de las 30 afirmaciones (4-10, 18, 24-25, 30-31, 40, 43-44, 47, 52, 57-64). También se buscaron palabras clave en las 64 páginas.\n\n(3) Citas. Cada fragmento se comprobó con norm() de verify_quotes.py contra el .txt y contra el texto de la página declarada, y también con el texto sin normalizar (solo con los espacios colapsados). Las 12 citas distintas son literales, están en su página y tienen 36 palabras o menos. Las traducciones son fieles.\n\n(4) Valor. Se juzgó contra la afirmación y su contexto (preguntas.json) y con el valor que tienen los demás partidos en fase1.json para la misma afirmación.\n\n(5) Atribución y precedencia. Se comprobó qué partidos firman el pacto JEC C5 (data/boe/coaliciones.json) y se aplicó la regla del editor. Para Compromís, el programa propio va primero si trata la medida al menos tan directamente. Entre declaraciones de campaña, incluidos los documentos conjuntos, prevalece la posterior; si coinciden en valor, se mantiene la propia. Un documento conjunto cubre una celda de un firmante solo si su programa no tiene posición y no lo contradice.\n\nMecanismo. build_fase1.py lee codificacion_g10.json, con esta verificación como puerta, después de g1-g9, y g10 pisa sus celdas. La celda rechazada (Compromís q09) se sacó de «posiciones» y pasó a «rechazadas», que build_fase1.py no lee. No se pone a null, porque eso borraría el +1 vigente.",
+ "cambios": [
+  {
+   "partido": "compromis",
+   "pregunta": "q09",
+   "antes": 1,
+   "despues": 1,
+   "motivo": "Rechazado el cambio de fuente (programa p. 9 → se mantiene la nota de Compromís del 16-dic-2025). Ver posiciones y duda 4."
+  }
+ ],
+ "correcciones_de_campos": [
+  {
+   "partido": "(fichero)",
+   "pregunta": "—",
+   "campo": "posiciones, rechazadas, fuentes",
+   "motivo": "Compromís q09 sale de «posiciones» y pasa a «rechazadas», con nota y veredicto. En «fuentes», su uso queda marcado como descartado. No cambia nada más del fichero."
+  }
+ ],
+ "posiciones": [
+  {
+   "partido": "compromis",
+   "pregunta": "q01",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal en la p. 4 (última medida de vivienda). Control de rentas en las zonas tensionadas que declaren los ayuntamientos: apoya limitar el precio, y quita a la comunidad la llave de la declaración, pero no propone un precio máximo por ley estatal en toda España: +1, como Micó, Podemos, Frente Amplio, Ara Més y NC-BC (+1); BNG y Adelante Andalucía (+2) piden el tope general. Precedencia: el programa va primero; es al menos tan directo como Micó (25-oct) y además trata la parte «sin depender de cada comunidad» de la afirmación. Mismo valor."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q03",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal en la p. 5. Exención del ITP para la primera vivienda de menos de 350.000 €, a cualquier edad, sin IVA ni límite de 40 años: misma dirección con otra medida, +1, como ERC, SALF, Vox y NC-BC en q03. Celda nueva."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q04",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal en la p. 18 (segunda medida de fiscalidad). Nombra el impuesto de la afirmación («l'Impost a les Grans Fortunes»), que hoy está prorrogado sin fecha fija, y se compromete a mantenerlo y ampliarlo: comprometerse a que no decaiga es la sustancia de «hacerlo permanente», sin condiciones. +2, como ERC («fer permanent l'impost temporal») y BNG («blindar a permanencia»), que también lo amplían. Diferencia con NC-BC y Adelante Andalucía (+1): no nombran el impuesto vigente. Ver duda 1."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q06",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal en la p. 6 (primera medida laboral). 32 horas sin rebaja de sueldo: más allá de las 37,5 h, +1 como Podemos (30 h) y Adelante Andalucía (32 h). El programa va primero y es más concreto que la web electoral (12-nov, sin cifra). Mismo valor."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q08",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal en la p. 8: dos guiones consecutivos (primera y segunda medida de pensiones), sin texto intermedio. «Retornarem l'edat de jubilació als 65 anys» habla de la edad de jubilación, sin colectivos ni condiciones, y es la primera medida del apartado; la siguiente trata aparte la jubilación anticipada. Es la afirmación casi palabra por palabra: +2, como el BNG («xubilación ordinaria aos 65»). La p. 47 («jubilació progressiva» en sectores con desgaste) no lo contradice. Adelante Andalucía tiene +1 por otra cifra (64). Ver duda 2."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q09",
+   "veredicto": "rechazado",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Se rechaza el cambio de fuente; el valor (+1) no cambia y se mantiene la nota de Compromís del 16-dic-2025 (codificacion_g5). La cita del programa (p. 9) es literal, pero su contenido es «blindar la gestión pública» e «impedir» la privatización de la gestión derogando la Ley 15/1997 (la que permite gestionar centros públicos mediante empresas): es frenar nuevas privatizaciones de la gestión, no dejar de pagar a centros privados ni revertir lo concertado. Con ese mismo criterio ERC q09 quedó en null («frenar la privatització de la sanitat», modelo «amb gestió pública»), mientras que la «reversión de privatizaciones» de NC-BC y la nota de Compromís («revertir les concessions privatitzades», reversión inmediata del Vinalopó) dan +1. El programa no es tan directo como la nota ni la contradice: por el criterio de g6 (Vox) y g4 (PNV q11, q15, q21) no la desplaza. La celda sale de «posiciones» y queda en «rechazadas» (build_fase1.py no la lee). Ver duda 4."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q17",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal en la p. 57. Pide para la Comunitat Valenciana el concierto económico, con una alternativa («en el seu defecte») en la que la Generalitat recaude la mayor parte de los tributos, junto a una reforma del sistema común (primera medida de la página). Pedirlo para la comunidad propia se codifica como posición sobre la afirmación, igual que BNG (+2, Galicia), Junts (+2) y ERC (+1, Cataluña); la alternativa lo deja en +1. Celda nueva."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q18",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal en la p. 57. Condonar la deuda de la Generalitat Valenciana atribuida a la infrafinanciación, sin la quita general ni su cifra: apoyo indirecto, +1, como Micó y el PSC (solo la parte de Cataluña). El programa va primero y es más concreto que Micó. Mismo valor."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q24",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal en la p. 43. Derogar la Ley de Seguridad Ciudadana, expresamente: +2. El programa va primero y dice lo mismo que Micó (5-oct). Mismo valor."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q31",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal en la p. 4 (segunda medida de vivienda). El alquiler indefinido como régimen ordinario, con la excepción de uso propio o familiar, va más allá de la renovación por cinco años e incluye su efecto: +2, como BNG, Adelante Andalucía, Podemos y la web que sustituye. Mismo valor."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q34",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal en la p. 63. Apoya la libre determinación en el Sáhara Occidental «exigint la celebració d'un referèndum»: pide expresamente el referéndum, que es la alternativa de la afirmación al plan de autonomía: +2, como ERC, Junts, EH Bildu, BNG y Adelante Andalucía. El programa (posterior y fuente propia) sustituye a Micó (10-dic-2025, +1 porque no mencionaba el referéndum): sube el valor porque dice más, no porque cambie de criterio."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q03",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Documento conjunto: el pacto de coalición de Compromís: Front Valencià (JEC C5, data/boe/coaliciones.json, pp. 1-2) lo firman Podemos, Esquerra Unida del País Valencià y Recortes Cero (Frente Amplio) y Esquerra Republicana del País Valencià (ERC). Podemos no tenía posición. Mismo texto y valor que Compromís q03."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q04",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Documento conjunto: el pacto de coalición de Compromís: Front Valencià (JEC C5, data/boe/coaliciones.json, pp. 1-2) lo firman Podemos, Esquerra Unida del País Valencià y Recortes Cero (Frente Amplio) y Esquerra Republicana del País Valencià (ERC). Entre declaraciones de campaña prevalece la posterior: el programa conjunto (14-nov) es posterior a Montero (6-nov, «freírles a impuestos», +1) y no la contradice: nombra el impuesto vigente y se compromete a mantenerlo y ampliarlo. Como el valor cambia, no se aplica «se mantiene la propia». Ver dudas 1 y 5."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q08",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Documento conjunto: el pacto de coalición de Compromís: Front Valencià (JEC C5, data/boe/coaliciones.json, pp. 1-2) lo firman Podemos, Esquerra Unida del País Valencià y Recortes Cero (Frente Amplio) y Esquerra Republicana del País Valencià (ERC). Podemos no tenía posición (la de 63 años se retiró en la auditoría del 12-nov por no tener cita en primera persona). La jubilación es competencia estatal: el documento habla de verdad de la edad de jubilación en toda España. Mismo valor que Compromís q08."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q17",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Documento conjunto: el pacto de coalición de Compromís: Front Valencià (JEC C5, data/boe/coaliciones.json, pp. 1-2) lo firman Podemos, Esquerra Unida del País Valencià y Recortes Cero (Frente Amplio) y Esquerra Republicana del País Valencià (ERC). El documento pide el concierto para la Comunitat Valenciana, y eso es lo que se atribuye: la nota dice que no se pronuncia sobre otras comunidades. Pedirlo para una comunidad es un caso de la afirmación («las comunidades que lo pidan»), no una medida distinta. Es la misma equivalencia que se aceptó para BNG, ERC, Junts y Compromís, y la regla del editor no distingue entre partidos estatales y autonómicos. +1 por la alternativa, no por el ámbito. Ver duda 6."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q24",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Documento conjunto: el pacto de coalición de Compromís: Front Valencià (JEC C5, data/boe/coaliciones.json, pp. 1-2) lo firman Podemos, Esquerra Unida del País Valencià y Recortes Cero (Frente Amplio) y Esquerra Republicana del País Valencià (ERC). Podemos no tenía posición. Ley estatal: el documento propone de verdad derogarla. +2."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q34",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Documento conjunto: el pacto de coalición de Compromís: Front Valencià (JEC C5, data/boe/coaliciones.json, pp. 1-2) lo firman Podemos, Esquerra Unida del País Valencià y Recortes Cero (Frente Amplio) y Esquerra Republicana del País Valencià (ERC). Política exterior estatal. El documento (14-nov) es posterior a Belarra (12-nov-2025, +1) y más directo: exige el referéndum. No la contradice. Ver duda 5."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q03",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Documento conjunto: el pacto de coalición de Compromís: Front Valencià (JEC C5, data/boe/coaliciones.json, pp. 1-2) lo firman Podemos, Esquerra Unida del País Valencià y Recortes Cero (Frente Amplio) y Esquerra Republicana del País Valencià (ERC). Frente Amplio no tenía posición. Mismo valor que Compromís q03."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q04",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Documento conjunto: el pacto de coalición de Compromís: Front Valencià (JEC C5, data/boe/coaliciones.json, pp. 1-2) lo firman Podemos, Esquerra Unida del País Valencià y Recortes Cero (Frente Amplio) y Esquerra Republicana del País Valencià (ERC). Posterior a la nota del Frente Amplio (5-nov, +1: un impuesto nuevo sobre el patrimonio cuya cuota descuenta lo pagado en Grandes Fortunas, que da por supuesto que el actual sigue). El documento se compromete a mantener y ampliar el impuesto vigente: más directo y compatible. Ver dudas 1 y 5."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q06",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Documento conjunto: el pacto de coalición de Compromís: Front Valencià (JEC C5, data/boe/coaliciones.json, pp. 1-2) lo firman Podemos, Esquerra Unida del País Valencià y Recortes Cero (Frente Amplio) y Esquerra Republicana del País Valencià (ERC). Sustituye a otro documento de la misma coalición (web, 12-nov, sin cifra) por el programa, posterior y más concreto (32 h). Mismo valor. Ver duda 8."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q08",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Documento conjunto: el pacto de coalición de Compromís: Front Valencià (JEC C5, data/boe/coaliciones.json, pp. 1-2) lo firman Podemos, Esquerra Unida del País Valencià y Recortes Cero (Frente Amplio) y Esquerra Republicana del País Valencià (ERC). Posterior a la nota del Frente Amplio (24-oct). A esa nota se le dio +1 porque «fijar de forma efectiva la jubilación en los 65 años» no decía que cambiara la edad ordinaria para todos. El programa conjunto sí habla de «l'edat de jubilació», sin colectivos. Es más directo y en la misma dirección. Ver dudas 2 y 5."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q17",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Documento conjunto: el pacto de coalición de Compromís: Front Valencià (JEC C5, data/boe/coaliciones.json, pp. 1-2) lo firman Podemos, Esquerra Unida del País Valencià y Recortes Cero (Frente Amplio) y Esquerra Republicana del País Valencià (ERC). Igual que Podemos q17: solo la Comunitat Valenciana, +1 por la alternativa. Ver duda 6."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q18",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Documento conjunto: el pacto de coalición de Compromís: Front Valencià (JEC C5, data/boe/coaliciones.json, pp. 1-2) lo firman Podemos, Esquerra Unida del País Valencià y Recortes Cero (Frente Amplio) y Esquerra Republicana del País Valencià (ERC). Frente Amplio no tenía posición. Condonar la deuda valenciana atribuida a la infrafinanciación: apoyo indirecto a la quita, +1, como el PSC y Compromís."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q24",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Documento conjunto: el pacto de coalición de Compromís: Front Valencià (JEC C5, data/boe/coaliciones.json, pp. 1-2) lo firman Podemos, Esquerra Unida del País Valencià y Recortes Cero (Frente Amplio) y Esquerra Republicana del País Valencià (ERC). Frente Amplio no tenía posición. +2."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q34",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Documento conjunto: el pacto de coalición de Compromís: Front Valencià (JEC C5, data/boe/coaliciones.json, pp. 1-2) lo firman Podemos, Esquerra Unida del País Valencià y Recortes Cero (Frente Amplio) y Esquerra Republicana del País Valencià (ERC). Posterior a Martínez Barbero (12-nov-2025, +1) y más directo: exige el referéndum. Ver duda 5."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q08",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Documento conjunto: el pacto de coalición de Compromís: Front Valencià (JEC C5, data/boe/coaliciones.json, pp. 1-2) lo firman Podemos, Esquerra Unida del País Valencià y Recortes Cero (Frente Amplio) y Esquerra Republicana del País Valencià (ERC). El programa de ERC (5-nov) va primero, pero no tiene posición sobre la afirmación: su capítulo de pensiones solo pide jubilación anticipada sin penalización en profesiones penosas (medida 110, p. 26). Eso es compatible con volver a los 65 y no dice nada de la edad ordinaria. No contradice el documento conjunto, así que este cubre la celda, como la web de la coalición cubrió ERC q31 el 13-nov. Diferencia con ERC q01: allí su programa pide delegar en la Generalitat la ley de arrendamientos, lo que va contra una ley estatal «sin depender de cada comunidad», y se mantiene null. En q09 el documento no tiene posición (ver Compromís q09). Ver duda 3."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q31",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Documento conjunto: el pacto de coalición de Compromís: Front Valencià (JEC C5, data/boe/coaliciones.json, pp. 1-2) lo firman Podemos, Esquerra Unida del País Valencià y Recortes Cero (Frente Amplio) y Esquerra Republicana del País Valencià (ERC). Sustituye a la web de la misma coalición (12-nov) por el programa (14-nov), posterior y más completo. Mismo valor. El programa de ERC sigue sin tratar la duración de los contratos. Ver duda 8."
+  }
+ ],
+ "resolucion_dudas_codificador": [
+  {
+   "duda": 1,
+   "tema": "q04: «Mantindrem i ampliarem l'Impost a les Grans Fortunes» ¿= hacerlo permanente?",
+   "resolucion": "Sí, +2. El impuesto está prorrogado hasta que se revise la financiación autonómica. Comprometerse a «mantenerlo» sin plazo, y además a ampliarlo, es proponer que no decaiga, que es lo que pide la afirmación. Lo nombra por su nombre, sin condiciones, y es la segunda medida de fiscalidad. Precedentes: ERC («fer permanent», +2) y BNG («blindar a permanencia», +2) también lo amplían. NC-BC («reforzar la tributación de las grandes fortunas») y Adelante Andalucía (impuesto nuevo que sustituye a Patrimonio) tienen +1 porque no nombran el impuesto vigente. Por eso Podemos y Frente Amplio pasan a +2."
+  },
+  {
+   "duda": 2,
+   "tema": "q08 +2",
+   "resolucion": "Sí, +2. «Retornarem l'edat de jubilació als 65 anys» repite la afirmación: la edad de jubilación, en singular y sin colectivos. La medida siguiente trata aparte la jubilación anticipada, así que la primera habla de la edad ordinaria. El +1 de la nota del Frente Amplio venía de que «fijar de forma efectiva la jubilación en los 65» no lo decía. Mismo criterio que el BNG."
+  },
+  {
+   "duda": 3,
+   "tema": "ERC q08 desde el documento conjunto",
+   "resolucion": "Se aprueba. El programa de ERC va primero solo cuando tiene posición sobre la afirmación. Una medida relacionada pero distinta (jubilación anticipada en profesiones penosas) no es posición (protocolo: «una medida relacionada pero distinta no es una posición sobre la afirmación») y no contradice el documento, así que el documento cubre la celda. Es la misma regla con la que la web de la coalición cubrió ERC q31. No hay límite por el peso de la medida en la regla del editor. Lo que sí la frena es una contradicción con el programa: por eso ERC q01 sigue en null. Ver «dudas»: queda anotado para el editor que ERC recibe +2 en una medida que su programa nacional no incluye."
+  },
+  {
+   "duda": 4,
+   "tema": "Compromís q09: programa o nota de diciembre",
+   "resolucion": "Se mantiene la nota (rechazado el cambio de fuente; valor +1 sin cambios). Derogar la Ley 15/1997 e «impedir» la privatización de la gestión es frenar nuevas privatizaciones. Con ese mismo criterio, ERC q09 («frenar la privatització») quedó en null. Revertir las concesiones (la nota de Compromís, como la «reversión de privatizaciones» de NC-BC, +1) es más directo. El programa no lo contradice, así que no desplaza a la nota. Por coherencia, el documento conjunto tampoco aporta q09 a nadie: Podemos y Frente Amplio conservan el manifiesto de UPC, y ERC sigue en null."
+  },
+  {
+   "duda": 5,
+   "tema": "Sustituir posiciones propias anteriores cuando el valor sube",
+   "resolucion": "Sí. La regla es «entre declaraciones de campaña (incluidos los documentos conjuntos), la posterior prevalece»; la excepción «se mantiene la propia» solo vale si coinciden en el valor. No depende de que el valor suba o baje. Precedentes: ERC q31 subió de +1 a +2 con la web de la coalición el 13-nov, y en g6 PP q33 y CC q29 bajaron. En los cuatro casos (Podemos q04 y q34, Frente Amplio q04 y q34) el documento conjunto es posterior y no contradice la fuente propia: dice lo mismo con más precisión (nombra el impuesto, exige el referéndum)."
+  },
+  {
+   "duda": 6,
+   "tema": "q17 para Podemos y Frente Amplio",
+   "resolucion": "Se aprueba +1, con la nota que dice que el documento solo habla de la Comunitat Valenciana. Lo que el documento dice de verdad es «apostamos por un concierto económico para la Comunitat Valenciana (o, en su defecto, que la Generalitat recaude la mayor parte de los tributos)». Es un caso de la afirmación, no una medida distinta. La misma equivalencia se aceptó para BNG (Galicia), Junts y ERC (Cataluña) y Compromís, sin bajar el valor por el ámbito territorial. Podemos y Frente Amplio firman el pacto como partidos (JEC C5), y la regla del editor no distingue entre partidos estatales y autonómicos. No consta ninguna declaración propia de Podemos o del Frente Amplio en contra (sus celdas eran null tras búsquedas documentadas). El valor no puede ser +2 por la alternativa. Se anota en «dudas» por su efecto visible."
+  },
+  {
+   "duda": 7,
+   "tema": "Null discutibles en Compromís",
+   "resolucion": "Se confirman los cinco null. q11: hacer la concertada «realment subsidiària» (p. 10) no es retirar la financiación hasta suprimirla; es una medida relacionada y distinta. Solo BNG y Adelante Andalucía, que proponen suprimirla, tienen valor a favor. q15: «Regularitzarem [...] els qui viuen ací» es el mismo caso que ERC q15 (regularizar a quien «ja està vivint aquí», null) y BNG q15, null: no pide otra regularización extraordinaria. q20: no hay simetría con el PP. Frenar los ritmos actuales implica rechazar el 65 %, pero ampliar compromisos y abandonar los fósiles en 2040 no implica un −65 % en 2030. q26: «reduïsca [...] despeses militars» se refiere a una defensa europea que sustituya a la OTAN y «impedirem que els increments [...] es facen a costa de» los servicios admite aumentos con condiciones. ERC tiene −1 porque apoyó revertir el aumento del gasto militar. q29: no nombra Mercosur, y pedir que se lleven al TJUE acuerdos sin nombrar no es posición inequívoca sobre este. Ante la duda, null."
+  },
+  {
+   "duda": 8,
+   "tema": "Documento conjunto que sustituye a otro con el mismo valor",
+   "resolucion": "Se mantiene el criterio del codificador: el posterior sustituye al anterior si es al menos igual de directo. Es el criterio de g6 sobre fuentes que coinciden, y el precedente de Frente Amplio q01 el 13-nov (la nota de Ara Més, posterior, sustituyó al manifiesto de UPC). Así, Frente Amplio q06 y ERC q31 pasan de la web al programa, más concreto. Ara Més (Frente Amplio q01, «posar topalls als preus dels lloguers») y UPC (q09, revertir privatizaciones) se quedan porque son más directos. Ningún valor depende de esta elección."
+  }
+ ],
+ "celdas_no_tocadas": [
+  "Compromís q13 (−1), q21 (+2), q22 (−1), q23 (−1), q30 (+2) y q33 (−1): se mantienen las declaraciones de campaña. El programa no trata esas medidas o trata otra (p. 9 acceso universal a la sanidad; p. 52 aborto «en els termes previstos legalment», en la red pública, sin reforma constitucional; p. 6 desahucios sin alternativa; p. 24 control de márgenes de la distribución, no un precio máximo; p. 64 acogida de menores sin reparto). Ninguna la contradice ni la matiza.",
+  "Compromís en null: q05 (p. 18, solo deflactar rentas < 30.000 €), q12, q16 (p. 60 Estado plurinacional; p. 40 referendos en general), q19, q25, q27, q32 (p. 6, SMI estatal al 60 %), q35 y q11, q15, q20, q26, q29 (duda 7). Se comprobó con una búsqueda de palabras clave en las 64 páginas (eòlic, marin, Mercosur, OTAN, indult, presó, Ceuta, Ministeri, ocupa, castell, interrupció, referènd, menors, SMI, aliments/preus, habitatge social, concert, privad, jubilació).",
+  "Podemos: se mantienen q01 (Montero), q06 (30 h), q18 (Santana) y q31 (Belarra): fuente propia con el mismo valor que el documento. q09 se queda con el manifiesto de UPC.",
+  "Frente Amplio: se mantienen q31 (Bustinduy, propia), q01 (nota de Ara Més, más directa) y q09 (manifiesto de UPC).",
+  "ERC: su programa va primero en q03, q04, q06 (+2, 37,5 h; el documento dice 32 h, +1), q17, q18 (+2), q24 y q34. q01 sigue en null porque su programa pide delegar en la Generalitat la ley de arrendamientos, en sentido contrario a la ley estatal de la afirmación. q09 sigue en null porque el documento no aporta posición (ver Compromís q09)."
+ ],
+ "build_orden": "Cambio en pipeline/build_fase1.py: lee los grupos en orden numérico, no alfabético, para que g10 vaya después de g9. Se comprobó así. (a) Para g1-g9, los dos órdenes coinciden. (b) Sin g10 aprobado, el script nuevo y el de HEAD (git show HEAD:pipeline/build_fase1.py, ejecutado sobre las mismas entradas) dan un fase1.json idéntico byte a byte. (c) Ese fase1.json solo se diferencia de git show HEAD:data/fase1/fase1.json en ara_mes_fa/q17 y upc/q22. Son las dos celdas de codificacion_g8.json, que se aprobó en paralelo (verificacion_g8.json, 10:12) y no tienen que ver con g10. (d) Con g10 aprobado, el script nuevo cambia exactamente las 26 celdas de «posiciones» de g10, ni una más. Las afirmaciones no cambian y todas las demás celdas de g1-g9 son idénticas. (e) Con g10 aprobado, el script de HEAD lo leía en segundo lugar y g2-g9 pisaban las 26 celdas: g10 no tenía ningún efecto. El cambio es necesario y no altera g1-g9.",
+ "recuento": {
+  "antes": {
+   "compromis": 13,
+   "podemos": 18,
+   "frente_amplio": 16,
+   "erc": 17
+  },
+  "despues": {
+   "compromis": 17,
+   "podemos": 22,
+   "frente_amplio": 20,
+   "erc": 18
+  },
+  "cambios_de_valor": [
+   "compromis q34 +1→+2",
+   "podemos q04 +1→+2",
+   "podemos q34 +1→+2",
+   "frente_amplio q04 +1→+2",
+   "frente_amplio q08 +1→+2",
+   "frente_amplio q34 +1→+2"
+  ],
+  "celdas_nuevas": [
+   "compromis q03 q04 q08 q17",
+   "podemos q03 q08 q17 q24",
+   "frente_amplio q03 q17 q18 q24",
+   "erc q08"
+  ],
+  "solo_fuente": [
+   "compromis q01 q06 q18 q24 q31",
+   "frente_amplio q06",
+   "erc q31"
+  ]
+ },
+ "dudas": [
+  "erc/q08 (+2): la única fuente es el documento conjunto valenciano, que firma ERPV. El programa nacional de ERC tiene un capítulo de pensiones y no propone volver a los 65. Se aprueba por la regla del editor (el programa no tiene posición y no lo contradice). Alternativa: null, si el editor entiende que no incluir una medida en un capítulo que trata el tema equivale a no apoyarla.",
+  "podemos/q17 y frente_amplio/q17 (+1): dos partidos estatales aparecen a favor del concierto por un documento que lo pide solo para la Comunitat Valenciana. La nota lo dice. Alternativa: null, si el editor limita los documentos conjuntos de coaliciones autonómicas a medidas de alcance estatal (la misma limitación afectaría a frente_amplio/q18).",
+  "compromis/q04, podemos/q04, frente_amplio/q04 (+2): alternativa +1 si «mantener y ampliar» no se considera tan expreso como «hacer permanente». Podemos y Frente Amplio conservarían entonces su fuente propia (+1) y solo Compromís ganaría la celda."
+ ]
+}

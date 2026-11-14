@@ -175,6 +175,13 @@ class TestPartidosYPapeletas(unittest.TestCase):
                           if x.get("valor") is not None and any(n in (x.get("quien") or "") for n in pp)])
 
 
+    def test_grupos_en_orden_numerico(self):
+        # g10 se aplica después de g2–g9 (con orden alfabético, g2–g9 pisarían sus celdas).
+        f1 = json.loads((ROOT / "web/public/data/fase1.json").read_text())
+        q04 = f1["posiciones"]["compromis"]["q04"]
+        self.assertEqual((q04["valor"], q04["fuente"]), (2, "programa"))
+
+
 class TestVeda(unittest.TestCase):
     def test_limites(self):
         f = build_fase2.en_veda

@@ -43,7 +43,12 @@ def main():
 
     posiciones = {}
     errores = []
-    grupos = sorted((D / "fase1").glob("codificacion_g*.json"))
+    # Orden numérico (g2 < g10): cada grupo pisa las celdas de los anteriores. El orden alfabético pondría g10 antes que g2.
+    def orden(p):
+        m = re.fullmatch(r"codificacion_g(\d+)", p.stem)
+        return (int(m.group(1)) if m else float("inf"), p.name)
+
+    grupos = sorted((D / "fase1").glob("codificacion_g*.json"), key=orden)
     usados = []
     for g in grupos:
         ver = g.with_name(g.name.replace("codificacion", "verificacion"))
