@@ -83,6 +83,15 @@ Desgloses territoriales, de encuestas anteriores de Sigma Dos:
 - A diferencia de `40db-2026-11`, el informe da Frente Amplio (3,5 %) separado de las "otras coaliciones territoriales de izquierda" (1,6 %: Compromís 1,1, UPC 0,3, Ara Més 0,2). Se guardan como filas separadas, igual que el CIS 3584.
 - El escenario propio de 40dB sigue usando `40db-2026-11`.
 
+### 40dB, tracking diario (`40db-2026-11-14`, publicado 14-11)
+- Segunda entrega: campo del 10 al 13 de noviembre, 1.500 entrevistas online, ±2,5 %. Sustituye a `40db-2026-11-13` en la media. PP 31,1 (126; 121–132), PSOE 29,8 (119; 116–123), Vox 18,5 (63; 61–67), Frente Amplio 3,5 (5; 4–6).
+- El PDF de este día se llama `informe_tracking_dia02.pdf`, en minúscula (el del día 1 era `Informe_tracking_dia01.pdf`). Para las entregas siguientes hay que probar las dos grafías.
+- El gráfico de evolución rotula la entrega como "12-13 nov", pero la ficha técnica y la SER dicen del 10 al 13. Se usa la ficha.
+- El escenario propio de 40dB sigue usando `40db-2026-11`: el tracking solo da escaños (no porcentaje) para ERC, Junts, Bildu, PNV, AA, BNG y CC. Es el mismo criterio que con Sigma Dos.
+
+### SW Demoscopia (barómetro n.º 9, no añadido)
+- El agregador cita el barómetro n.º 9 (datos al 12-11, 7.500 entrevistas) como un PDF en el CDN de LinkedIn. Está guardado en `sources/encuestas/swdemoscopia/`, pero no se ha añadido: ni la empresa ni La Séptima lo publican y no consta quién lo subió. `swdemoscopia-2026-11-11` sigue fuera de la media.
+
 ### Desgloses territoriales de Sigma Dos
 - Son de encuestas cuyo campo empieza el 1-10, antes de la convocatoria.
 - El mapa provincial (19-10) se hizo, según Sigma Dos, "previamente a los anuncios de coalición". El texto se parseó automáticamente y se validó contra los diputados por circunscripción del RD 806/2026.
@@ -129,6 +138,6 @@ LOREG art. 69.7 prohíbe publicar y difundir sondeos electorales durante los cin
    - CIS: catálogo de cis.es ordenado por fecha de publicación; vigilar el estudio 3584.
    - Sigma Dos: `sigmados.com/noticias.php`.
    - GAD3: `gad3.com/feed/`.
-   - 40dB: El País; el PDF del informe está en `ep00.epimg.net/infografias/encuestas40db/...`.
+   - 40dB: El País; el PDF del informe está en `ep00.epimg.net/infografias/encuestas40db/...` (el del tracking diario, en `elpais.com/infografias/encuestas40db/2026/11-tracking-electoral/`, como `Informe_tracking_diaNN.pdf` o `informe_tracking_diaNN.pdf`).
 2. Guardar el material crudo en `data/sources/encuestas/<encuestadora>/` y comprobar cada cifra contra el texto o PDF. El script de esta recogida comprobaba que cada cadena "x,y %" existiera literalmente en la fuente.
 3. No actualizar nada a partir del 24-11 (veda).
