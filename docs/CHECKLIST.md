@@ -73,6 +73,12 @@ Ara Més y Frente Amplio 6 cada uno, documento conjunto; Adelante Andalucía 5, 
 paso 1 sin posiciones nuevas; encuestas sin novedades publicadas (el día 3 del tracking de 40dB sale el 15-nov);
 BOE sin correcciones; dominio y HTTPS correctos.
 
+**Revisión del 15-nov, 09:43:** encuestas — tracking de 40dB día 3 (sustituye al día 2 en la media) y tracking de Sigma
+Dos día 3 (pasa a ser su escenario propio; Soria ¡Ya!, 0,1 %, conserva su voto de 2023 como Teruel Existe); 8
+compromisos nuevos con revisión independiente (BNG 6, Podemos 1 —se retiraron 2 con una sola fuente—, PSOE 1;
+total 203); sin programas nuevos (junts.cat no se pudo leer: 403); paso 1 sin posiciones nuevas; BOE sin cambios.
+Pista para el paso 1 del PSOE tras su programa: la entrevista de Sánchez con Jordi Wild (13-nov) por si toca q27.
+
 **Hecho el 13-nov por la tarde** (revisión del cambio partidos/papeletas, commit 1299bb2): el PNV aparece
 en Navarra dentro de Geroa Bai; la afinidad del paso 3 se recalcula (salía «1 %»); documentos conjuntos de
 una coalición cuentan para cada firmante y el PSC cuenta a Sánchez (decisiones del editor); vista previa al
