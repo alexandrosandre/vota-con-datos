@@ -365,9 +365,10 @@ export function Contrasta() {
                 <p class="muted" style={{ fontSize: '0.85rem', margin: 0 }}>
                   Propuestas del{' '}
                   <a href={p.programa.url ?? '#'} target="_blank" rel="noopener">
-                    programa oficial
+                    programa oficial{p.programa.programa_de ? ` del ${partido(p.programa.programa_de)?.siglas ?? p.programa.programa_de}` : ''}
                   </a>{' '}
                   ({p.programa.paginas} páginas{p.programa.fecha ? `, ${fmt.fecha(p.programa.fecha)}` : ''}), leído completo
+                  {p.programa.programa_de ? `. ${p.siglas} no ha publicado uno propio: asume este y solo le añade cuestiones de su ámbito` : ''}
                   {(datos.complemento?.length ?? 0) > 0
                     ? ', y, al final, compromisos públicos de sus líderes que no están en el programa'
                     : ''}

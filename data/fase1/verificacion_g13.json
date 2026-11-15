@@ -1,0 +1,55 @@
+{
+ "grupo": "g13",
+ "verificador": "Claude (Anthropic), coordinador: comprobación mecánica (las citas y valores ya tienen verificación independiente en g11 y g12; la atribución al PSC es decisión del editor)",
+ "fecha": "2026-11-15",
+ "aprobado": true,
+ "revisadas": 7,
+ "resultado": {
+  "ok": 7,
+  "corregido": 0,
+  "rechazado": 0
+ },
+ "alcance": "Cada celda es idéntica (valor, cita, página, URL) a la celda del PSOE aprobada en verificacion_g11.json o verificacion_g12.json; el build vuelve a comprobar que cada cita es literal en el texto del programa catalogado para el PSC (el del PSOE).",
+ "posiciones": {
+  "psc": {
+   "q01": {
+    "aprobado": true,
+    "valor": 1,
+    "base": "celda del PSOE con fuente programa, aprobada"
+   },
+   "q04": {
+    "aprobado": true,
+    "valor": 1,
+    "base": "celda del PSOE con fuente programa, aprobada"
+   },
+   "q06": {
+    "aprobado": true,
+    "valor": 2,
+    "base": "celda del PSOE con fuente programa, aprobada"
+   },
+   "q18": {
+    "aprobado": true,
+    "valor": 2,
+    "base": "celda del PSOE con fuente programa, aprobada"
+   },
+   "q23": {
+    "aprobado": true,
+    "valor": 1,
+    "base": "celda del PSOE con fuente programa, aprobada"
+   },
+   "q24": {
+    "aprobado": true,
+    "valor": 1,
+    "base": "celda del PSOE con fuente programa, aprobada"
+   },
+   "q36": {
+    "aprobado": true,
+    "valor": -1,
+    "base": "celda del PSOE con fuente programa, aprobada"
+   }
+  }
+ },
+ "dudas": [
+  "q18: el PSC tenía +1 (Jordi Hereu); con el programa asumido pasa a +2. Si el editor prefiere que las declaraciones propias del PSC maticen el programa, volvería a +1."
+ ]
+}

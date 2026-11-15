@@ -104,6 +104,7 @@ def main():
             "en_congreso_xv": p.get("en_congreso_xv"),
             "programa": {
                 "estado": pr.get("estado"),
+                "programa_de": pr.get("programa_de"),
                 "url": pr.get("url"),
                 "fecha": pr.get("fecha"),
                 "paginas": pr.get("paginas"),
@@ -141,8 +142,11 @@ def main():
     criterios = load("fase3/criterios.json")
     fase3 = {"meta": {"actualizado": date.today().isoformat(), "modelo": "Claude (Anthropic)"}, "criterios": criterios, "partidos": {}}
     for p in partidos:
-        ev = D / "programas" / p["id"] / "evaluacion.json"
-        rev = D / "programas" / p["id"] / "revision.json"
+        # Un partido puede asumir el programa de otro (el PSC el del PSOE, decisión del editor del 15-nov):
+        # sus 12 propuestas salen del análisis de ese programa y su complemento, de sus propios compromisos.
+        origen = p["programa"].get("programa_de") if p["programa"].get("estado") == "asumido" else None
+        ev = D / "programas" / (origen or p["id"]) / "evaluacion.json"
+        rev = D / "programas" / (origen or p["id"]) / "revision.json"
         if ev.exists() and rev.exists() and json.loads(rev.read_text()).get("aprobado"):
             e = json.loads(ev.read_text())
             if e.get("programa_sha256") != p["programa"]["sha256"]:
@@ -153,6 +157,8 @@ def main():
                 if c is not None and not c.get("fuentes") and p["programa"]["url"]:
                     c["fuentes"] = [{"url": p["programa"]["url"], "titulo": f"Programa oficial, p. {pr.get('pagina')}"}]
             fase3["partidos"][p["id"]] = {"estado": "evaluado", "base": "programa", "propuestas": e["propuestas"], "revision": json.loads(rev.read_text()).get("cambios", []).__len__()}
+            if origen:
+                fase3["partidos"][p["id"]]["programa_de"] = origen
             # Complemento: compromisos destacados de sus líderes que NO están en el programa (mismo
             # protocolo, docs/prompts/1b; base "complemento"). Solo si pasan la revisión independiente.
             dc = D / "programas" / p["id"] / "compromisos"

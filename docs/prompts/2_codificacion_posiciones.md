@@ -54,6 +54,9 @@ Los pasos 1 y 2 tratan de **partidos**, no de coaliciones electorales.
   porque el PSC está federado con el PSOE desde 1978 y comparten candidato a la Presidencia del
   Gobierno. No es el caso de UPN y el PP, partidos independientes que solo van juntos en una coalición
   electoral: Feijóo no cuenta para UPN.
+* **Programa del PSOE y PSC (decisión del editor, 15-nov-2026):** el PSC asume el programa del PSOE para el 29-N y solo añade
+  cuestiones de ámbito catalán sin contradecirlo, así que ese programa cuenta como programa del PSC (en `partidos.json`,
+  `programa.estado = "asumido"`, `programa_de = "psoe"`). Las declaraciones propias del PSC siguen la regla de precedencia.
 
 ## Codificación
 

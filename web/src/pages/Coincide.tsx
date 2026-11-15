@@ -46,6 +46,10 @@ export function EstadoProgramas() {
                   <a href={p.programa.url ?? '#'} target="_blank" rel="noopener">
                     Publicado {p.programa.fecha ? `el ${fmt.fecha(p.programa.fecha)}` : ''}
                   </a>
+                ) : p.programa.estado === 'asumido' ? (
+                  <a href={p.programa.url ?? '#'} target="_blank" rel="noopener">
+                    Asume el del {partido(p.programa.programa_de)?.siglas ?? p.programa.programa_de}
+                  </a>
                 ) : (
                   <span class="pill">Aún no publicado</span>
                 )}

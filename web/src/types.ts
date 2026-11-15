@@ -21,7 +21,9 @@ export interface Partido {
   web?: string | null;
   en_congreso_xv?: boolean;
   programa: {
-    estado: 'publicado' | 'no_publicado';
+    estado: 'publicado' | 'no_publicado' | 'asumido';
+    /** Si asume el programa de otro partido (el PSC, el del PSOE): su id. */
+    programa_de?: string | null;
     url?: string | null;
     fecha?: string | null;
     paginas?: number | null;

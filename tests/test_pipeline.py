@@ -182,6 +182,15 @@ class TestPartidosYPapeletas(unittest.TestCase):
         self.assertEqual((q04["valor"], q04["fuente"]), (2, "programa"))
 
 
+    def test_psc_asume_el_programa_del_psoe(self):
+        # Decisión del editor (15-nov): el paso 2 del PSC muestra el programa del PSOE; el paso 1 toma sus posiciones de programa.
+        f3 = json.loads((ROOT / "web/public/data/fase3.json").read_text())["partidos"]
+        self.assertEqual((f3["psc"]["base"], f3["psc"].get("programa_de")), ("programa", "psoe"))
+        self.assertEqual([x["id"] for x in f3["psc"]["propuestas"]], [x["id"] for x in f3["psoe"]["propuestas"]])
+        f1 = json.loads((ROOT / "web/public/data/fase1.json").read_text())["posiciones"]
+        self.assertEqual(f1["psc"]["q06"]["valor"], f1["psoe"]["q06"]["valor"])
+
+
 class TestVeda(unittest.TestCase):
     def test_limites(self):
         f = build_fase2.en_veda
