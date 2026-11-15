@@ -199,6 +199,25 @@ def main():
 
     # ---- Fase 2 ----
     subprocess.run([sys.executable, "-I", str(ROOT / "pipeline" / "build_fase2.py")], check=True, stdout=subprocess.DEVNULL)
+
+    # ---- Copias con nombre por contenido (despliegues sin cortes) ----
+    # La web pide data/v/<nombre>-<huella>.json: cada versión del código pide sus propios datos, que no cambian
+    # nunca, y el despliegue conserva las de versiones anteriores (pipeline/conservar_versiones.py). Así nadie ve
+    # datos a medio cambiar mientras GitHub Pages sustituye los ficheros. Los nombres fijos se mantienen para tests
+    # y para quien reutilice los datos.
+    vdir = OUT / "v"
+    if vdir.exists():
+        for f in vdir.glob("*.json"):
+            f.unlink()
+    vdir.mkdir(parents=True, exist_ok=True)
+    actual = {}
+    for nombre in ("partidos.json", "fase1.json", "fase2.json", "fase3.json"):
+        datos = (OUT / nombre).read_bytes()
+        huella = hashlib.sha256(datos).hexdigest()[:12]
+        ruta = f"v/{nombre[:-5]}-{huella}.json"
+        (OUT / ruta).write_bytes(datos)
+        actual[nombre] = ruta
+    (OUT / "manifest.json").write_text(json.dumps({"actual": {"datos": actual}}, ensure_ascii=False, indent=1))
     print(f"partidos: {len(partidos)} · programas publicados: {len(publicados)} · fase1 preguntas: {len(fase1['preguntas'])} · "
           f"fase3 evaluados: {sum(1 for v in fase3['partidos'].values() if v['estado'] == 'evaluado')}")
 

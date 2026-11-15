@@ -191,6 +191,50 @@ class TestPartidosYPapeletas(unittest.TestCase):
         self.assertEqual(f1["psc"]["q06"]["valor"], f1["psoe"]["q06"]["valor"])
 
 
+class TestDespliegueSinCortes(unittest.TestCase):
+    def test_datos_con_nombre_por_contenido(self):
+        import hashlib
+        m = json.loads((ROOT / "web/public/data/manifest.json").read_text())["actual"]["datos"]
+        self.assertEqual(set(m), {"partidos.json", "fase1.json", "fase2.json", "fase3.json"})
+        for nombre, ruta in m.items():
+            copia = (ROOT / "web/public/data" / ruta).read_bytes()
+            self.assertEqual(copia, (ROOT / "web/public/data" / nombre).read_bytes(), nombre)
+            self.assertIn(hashlib.sha256(copia).hexdigest()[:12], ruta)
+
+    def test_conservar_versiones(self):
+        import tempfile
+        import conservar_versiones as cv
+        with tempfile.TemporaryDirectory() as d:
+            dist = Path(d)
+            (dist / "assets").mkdir()
+            (dist / "assets" / "index-NUEVO.js").write_text("x")
+            (dist / "data" / "v").mkdir(parents=True)
+            (dist / "data" / "manifest.json").write_text(json.dumps({"actual": {"datos": {"fase1.json": "v/fase1-nuevo.json"}}}))
+            publicado = {
+                "actual": {"datos": {"fase1.json": "v/fase1-viejo.json"}, "assets": ["assets/index-VIEJO.js"]},
+                # Rutas que un manifiesto alterado podría usar para escribir fuera: se ignoran.
+                "historial": [{"datos": {"x": "../../fuera.json"}, "assets": ["../fuera.js", "assets/a/b.js"]}],
+            }
+            pedidas = []
+
+            def falso(url, timeout=30):
+                pedidas.append(url)
+                return json.dumps(publicado).encode() if url.endswith("/data/manifest.json") else b"contenido"
+
+            original = cv.descargar
+            cv.descargar = falso
+            try:
+                cv.main(dist, "https://ejemplo.org")
+            finally:
+                cv.descargar = original
+            self.assertTrue((dist / "assets" / "index-VIEJO.js").exists())
+            self.assertTrue((dist / "data" / "v" / "fase1-viejo.json").exists())
+            self.assertFalse(any("fuera" in u or "a/b.js" in u for u in pedidas))
+            m = json.loads((dist / "data" / "manifest.json").read_text())
+            self.assertEqual(m["actual"]["assets"], ["assets/index-NUEVO.js"])
+            self.assertEqual(m["historial"][0]["assets"], ["assets/index-VIEJO.js"])
+
+
 class TestVeda(unittest.TestCase):
     def test_limites(self):
         f = build_fase2.en_veda

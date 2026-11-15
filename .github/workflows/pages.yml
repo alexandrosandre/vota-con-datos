@@ -50,6 +50,10 @@ jobs:
           VCD_BASE=/ npm run build
       - name: Prueba de humo (Chrome sin interfaz)
         run: VCD_BASE=/ bash tests/smoke.sh
+      # Despliegues sin cortes: copia en el nuevo despliegue el código y los datos (con nombre por contenido) de las
+      # últimas versiones publicadas, para que quien tenga abierta o en caché una versión anterior no vea errores.
+      - name: Conservar versiones anteriores
+        run: python3 -I pipeline/conservar_versiones.py web/dist https://votacondatos.org
       - uses: actions/upload-pages-artifact@v3
         with:
           path: web/dist

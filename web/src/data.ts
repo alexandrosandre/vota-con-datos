@@ -10,7 +10,9 @@ export const fase3 = signal<DatosFase3 | null>(null);
 export const errorCarga = signal<string | null>(null);
 
 async function j<T>(f: string): Promise<T> {
-  const r = await fetch(`${import.meta.env.BASE_URL}data/${f}`, { cache: 'no-cache' });
+  // Con nombre por contenido (no cambia nunca): la caché normal sirve. Con nombre fijo (desarrollo): sin caché.
+  const v = __DATOS__[f];
+  const r = await fetch(`${import.meta.env.BASE_URL}data/${v ?? f}`, v ? undefined : { cache: 'no-cache' });
   if (!r.ok) throw new Error(`${f}: ${r.status}`);
   return r.json();
 }
