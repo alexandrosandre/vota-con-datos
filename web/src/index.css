@@ -185,7 +185,8 @@ footer a { color: var(--ink-2); }
 .likert { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin: 20px 0 8px; }
 @media (max-width: 600px) { .likert { grid-template-columns: 1fr; } }
 .likert button { border: 1px solid var(--line); background: var(--card); border-radius: var(--r-s); padding: 12px 6px; font-size: 0.92rem; font-weight: 500; }
-.likert button:hover { border-color: var(--c); }
+/* Solo con ratón: en el móvil el «hover» se queda pegado al botón tocado y en la afirmación siguiente parecería marcado. */
+@media (hover: hover) { .likert button:hover { border-color: var(--c); } }
 .likert button.on { background: var(--c); border-color: var(--c); color: var(--on-c); font-weight: 600; }
 .progress { height: 4px; background: var(--paper-2); border-radius: 99px; overflow: hidden; margin-bottom: 18px; }
 .progress > i { display: block; height: 100%; background: var(--c); transition: width 0.2s; }
@@ -313,4 +314,30 @@ details > summary { cursor: pointer; }
 .compartir-texto { margin: 0 0 10px; font-size: 0.9rem; color: var(--ink-2); overflow-wrap: anywhere; user-select: all; }
 a.chip-btn { text-decoration: none; color: var(--ink); display: inline-flex; align-items: center; }
 .prop { scroll-margin-top: 76px; }
+
+/* Cabecera de paso compacta (estudio de flujo, 15-nov): en el móvil, una franja corta; la explicación, plegada. */
+.lead-movil { display: none; }
+.lead-movil > summary { cursor: pointer; font-weight: 600; font-size: 0.92rem; }
+.lead-movil .lead { margin-top: 10px; }
+.cab-paso.compacta .pasos { display: none; }
+@media (max-width: 760px) {
+  .cab-paso .pasos { display: none; }
+  .lead-amplia { display: none; }
+  .lead-movil { display: block; }
+  .nav .solo-d { display: none; }
+}
+@media (min-width: 761px) { .nav .solo-m { display: none; } }
+/* El foco que la app pone en el título al cambiar de página no se dibuja (no es un control). */
+h1[tabindex='-1']:focus, h2[tabindex='-1']:focus, main[tabindex='-1']:focus { outline: none; }
+
+/* Cuestionario */
+.cuestionario { scroll-margin-top: 70px; }
+.importancia { gap: 4px 14px; margin: 4px 0 12px; }
+.importancia .poco { font-size: 0.88rem; color: var(--ink-3); }
+.importancia .poco.on { color: var(--c); font-weight: 600; }
+.recortado { display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 4px; }
+.mas-contexto { font-size: 0.88rem; margin: 0 0 12px; }
+.cambiar-datos { scroll-margin-top: 70px; }
 .siguientes-paso1 h2 { overflow-wrap: anywhere; }
+/* Objetivos táctiles de al menos 40 px para los enlaces-botón nuevos */
+.importancia .poco, .elegido-resumen .link-btn { min-height: 40px; display: inline-flex; align-items: center; }

@@ -100,17 +100,28 @@ export function Pasos({ actual }: { actual?: PasoId }) {
   );
 }
 
-/** Cabecera común de cada paso. */
-export function CabeceraPaso({ id, children }: { id: PasoId; children?: any }) {
+/**
+ * Cabecera común de cada paso. En el móvil se queda en una franja corta: los pasos ya están en la barra de
+ * arriba y la explicación pasa a «¿Qué es este paso?». `compacta` (el cuestionario) quita también la explicación.
+ */
+export function CabeceraPaso({ id, children, compacta = false }: { id: PasoId; children?: any; compacta?: boolean }) {
   const p = PASOS.find((x) => x.id === id)!;
   return (
-    <header class={`cab-paso ${p.clase}`}>
+    <header class={`cab-paso ${p.clase}${compacta ? ' compacta' : ''}`}>
       <Pasos actual={id} />
       <div class="kicker">
         Paso {p.n} · {p.verbo}
       </div>
       <h1>{p.pregunta}</h1>
-      {children && <p class="lead">{children}</p>}
+      {children && !compacta && (
+        <>
+          <p class="lead lead-amplia">{children}</p>
+          <details class="lead-movil">
+            <summary>¿Qué es este paso?</summary>
+            <p class="lead">{children}</p>
+          </details>
+        </>
+      )}
     </header>
   );
 }

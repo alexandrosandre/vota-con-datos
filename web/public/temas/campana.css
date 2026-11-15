@@ -287,7 +287,7 @@ html[data-tema="campana"] .q-tema { font-stretch: 85%; font-weight: 800; letter-
 html[data-tema="campana"] .q-text { font-family: var(--serif); font-stretch: 78%; font-weight: 800; font-size: clamp(1.55rem, 3.4vw, 2.1rem); line-height: 1.12; letter-spacing: -0.005em; color: #fff; }
 html[data-tema="campana"] .likert { gap: 6px; }
 html[data-tema="campana"] .likert button { border: 2px solid var(--line-2); border-radius: 0; background: transparent; padding: 14px 6px; font-weight: 700; font-stretch: 88%; font-size: 0.95rem; color: var(--ink); }
-html[data-tema="campana"] .likert button:hover { border-color: var(--c); }
+@media (hover: hover) { html[data-tema="campana"] .likert button:hover { border-color: var(--c); } }
 html[data-tema="campana"] .likert button.on { background: var(--c); border-color: var(--c); color: var(--on-c); font-weight: 800; }
 html[data-tema="campana"] .progress { height: 8px; border-radius: 0; background: #2a2a30; }
 html[data-tema="campana"] .star { border-radius: 0; border: 1.5px solid var(--line-2); font-weight: 600; color: var(--ink-2); min-height: 40px; }
@@ -440,4 +440,27 @@ html[data-tema="campana"] div.etapa { border-radius: 0; background: var(--card);
 @media (max-width: 600px) {
   html[data-tema="campana"] .mapa .sq { width: 20px; height: 20px; }
   html[data-tema="campana"] .mapa .sq::after { font-size: 11px; }
+}
+
+/* Cabecera de paso compacta (estudio de flujo, 15-nov) */
+html[data-tema="campana"] .cab-paso .lead-movil > summary { color: #fff; }
+html[data-tema="campana"] .cab-paso.compacta { padding: 18px 0 20px; margin-bottom: 18px; }
+html[data-tema="campana"] .cab-paso.compacta h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); margin-bottom: 0; }
+@media (max-width: 760px) {
+  html[data-tema="campana"] .cab-paso { padding: 16px 0 18px; margin-bottom: 20px; }
+  html[data-tema="campana"] .cab-paso .pasos { display: none; }
+  /* Cuatro enlaces (con «Método») sin desplazamiento lateral a 375 px */
+  html[data-tema="campana"] .nav a { padding: 8px 4px; letter-spacing: 0.01em; gap: 3px; }
+  html[data-tema="campana"] .cab-paso .kicker { margin-bottom: 6px; }
+  html[data-tema="campana"] .cab-paso h1 { font-size: clamp(1.8rem, 9vw, 2.3rem); margin-bottom: 8px; }
+  html[data-tema="campana"] .cab-paso.compacta { padding: 12px 0 14px; margin-bottom: 14px; }
+  html[data-tema="campana"] .cab-paso.compacta h1 { font-size: 1.45rem; margin-bottom: 0; }
+}
+@media (max-width: 380px) {
+  html[data-tema="campana"] .top .wrap { gap: 6px; }
+  html[data-tema="campana"] .nav a { padding: 8px 3px; font-size: 0.72rem; letter-spacing: 0; }
+  html[data-tema="campana"] .nav a .dot { display: none; }
+}
+@media (max-width: 760px) {
+  html[data-tema="campana"] .cab-paso h1 { font-size: clamp(1.6rem, 7.6vw, 2.2rem); }
 }

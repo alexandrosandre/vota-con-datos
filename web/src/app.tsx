@@ -40,11 +40,12 @@ function Cabecera() {
             </a>
           ))}
           <a
-            class={`hide-m ${r.startsWith('/metodologia') ? 'on' : ''}`}
+            class={r.startsWith('/metodologia') ? 'on' : ''}
             href="#/metodologia"
             aria-current={r.startsWith('/metodologia') ? 'page' : undefined}
           >
-            Metodología
+            <span class="solo-d">Metodología</span>
+            <span class="solo-m">Método</span>
           </a>
         </nav>
       </div>

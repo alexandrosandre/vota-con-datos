@@ -15,11 +15,6 @@ const ESCALA: { v: Valor; t: string }[] = [
   { v: 1, t: 'A favor' },
   { v: 2, t: 'Muy a favor' },
 ];
-const PESOS: { w: 0.5 | 1 | 2; t: string }[] = [
-  { w: 0.5, t: 'Me importa poco' },
-  { w: 1, t: 'Normal' },
-  { w: 2, t: 'Me importa mucho' },
-];
 const etiqueta = (v: number | null | undefined) => ESCALA.find((e) => e.v === v)?.t ?? 'Sin posición conocida';
 
 export function EstadoProgramas() {
@@ -96,20 +91,36 @@ function Intro({ n, onStart, hechas }: { n: number; onStart: () => void; hechas:
 
 function Tarjeta({ q, i, n, onNext, onPrev }: { q: Pregunta; i: number; n: number; onNext: () => void; onPrev: () => void }) {
   const r = estado.value.respuestas[q.id];
-  const set = (valor: Valor | null) => {
+  const set = (valor: Valor | null, ev?: MouseEvent) => {
     actualizar({ respuestas: { ...estado.value.respuestas, [q.id]: { valor, peso: r?.peso ?? 1 } } });
+    // Con ratón o dedo (detail > 0), se suelta el foco: si no, el botón de la misma posición en la afirmación
+    // siguiente se vería con el contorno, como si ya estuviera marcado. Con teclado (detail = 0) el foco se queda.
+    if (ev && ev.detail > 0) (ev.currentTarget as HTMLElement | null)?.blur();
     setTimeout(onNext, 140);
   };
+  // Marcar la importancia antes de responder no cuenta como respuesta (ni como «saltar»): se guarda aparte.
   const setPeso = (peso: 0.5 | 1 | 2) =>
-    actualizar({ respuestas: { ...estado.value.respuestas, [q.id]: { valor: r?.valor ?? null, peso } } });
+    actualizar({
+      respuestas: { ...estado.value.respuestas, [q.id]: r && !r.sinResponder ? { ...r, peso } : { valor: null, peso, sinResponder: true } },
+    });
   // Al empezar, el foco va al texto de la primera afirmación. Al pasar a la siguiente, el foco se queda en los
   // botones de respuesta (sin pulsar Tab de más en cada una) y la nueva afirmación se anuncia por la región viva.
   const texto = useRef<HTMLParagraphElement>(null);
+  const caja = useRef<HTMLDivElement>(null);
+  const [masContexto, setMasContexto] = useState(false);
   useEffect(() => {
     texto.current?.focus({ preventScroll: true });
   }, []);
+  // Al pasar de afirmación, la vista vuelve a su principio (sin mover el foco): se lee la frase antes de responder.
+  useEffect(() => {
+    setMasContexto(false);
+    const el = caja.current;
+    if (el && el.getBoundingClientRect().top < 0) el.scrollIntoView({ block: 'start', behavior: 'instant' });
+  }, [q.id]);
+  const hechas = Object.values(vigentes(estado.value.respuestas, fase1.value!.preguntas.map((x) => x.id))).filter((x) => x.valor !== null).length;
+  const largo = (q.contexto?.length ?? 0) > 170;
   return (
-    <div>
+    <div ref={caja} class="cuestionario">
       <div
         class="progress"
         role="progressbar"
@@ -133,7 +144,7 @@ function Tarjeta({ q, i, n, onNext, onPrev }: { q: Pregunta; i: number; n: numbe
         </p>
         <p class="sr-only" aria-live="polite">{`Afirmación ${i + 1} de ${n}: ${q.texto}`}</p>
         {q.contexto && (
-          <p class="muted" style={{ fontSize: '0.93rem' }}>
+          <p class={`muted${largo && !masContexto ? ' recortado' : ''}`} style={{ fontSize: '0.93rem' }}>
             {q.contexto}{' '}
             {q.contexto_fuente && (
               <a href={q.contexto_fuente} target="_blank" rel="noopener">
@@ -141,6 +152,11 @@ function Tarjeta({ q, i, n, onNext, onPrev }: { q: Pregunta; i: number; n: numbe
               </a>
             )}
           </p>
+        )}
+        {q.contexto && largo && (
+          <button class="link-btn mas-contexto" aria-expanded={masContexto} onClick={() => setMasContexto(!masContexto)}>
+            {masContexto ? 'Menos contexto' : 'Más contexto'}
+          </button>
         )}
         {q.contexto_mas && (
           <details class="desplegable contexto-mas" key={q.id}>
@@ -160,34 +176,41 @@ function Tarjeta({ q, i, n, onNext, onPrev }: { q: Pregunta; i: number; n: numbe
             )}
           </details>
         )}
+        <div class="row importancia" role="group" aria-label="Importancia de este tema (márcalo antes de responder)">
+          <button class={`star ${(r?.peso ?? 1) === 2 ? 'on' : ''}`} aria-pressed={(r?.peso ?? 1) === 2} onClick={() => setPeso((r?.peso ?? 1) === 2 ? 1 : 2)}>
+            {(r?.peso ?? 1) === 2 ? '★' : '☆'} Este tema me importa mucho
+          </button>
+          <button class={`link-btn poco ${(r?.peso ?? 1) === 0.5 ? 'on' : ''}`} aria-pressed={(r?.peso ?? 1) === 0.5} onClick={() => setPeso((r?.peso ?? 1) === 0.5 ? 1 : 0.5)}>
+            {(r?.peso ?? 1) === 0.5 ? 'Me importa poco ✓' : 'Me importa poco'}
+          </button>
+        </div>
         <div class="likert" role="group" aria-label="Tu respuesta">
           {ESCALA.map((e) => (
-            <button key={e.v} class={r?.valor === e.v ? 'on' : ''} onClick={() => set(e.v)} aria-pressed={r?.valor === e.v}>
+            <button key={e.v} class={r?.valor === e.v ? 'on' : ''} onClick={(ev) => set(e.v, ev)} aria-pressed={r?.valor === e.v}>
               {e.t}
             </button>
           ))}
         </div>
         <div class="row between" style={{ marginTop: 14 }}>
-          <div class="row" role="group" aria-label="Importancia" style={{ gap: 6 }}>
-            {PESOS.map((p) => (
-              <button key={p.w} class={`star ${(r?.peso ?? 1) === p.w ? 'on' : ''}`} onClick={() => setPeso(p.w)} aria-pressed={(r?.peso ?? 1) === p.w}>
-                {p.t}
-              </button>
-            ))}
-          </div>
           <div class="row" style={{ gap: 4 }}>
             <button class="btn ghost" onClick={onPrev} disabled={i === 0}>
               ← Anterior
             </button>
-            <button class="btn" onClick={() => set(null)}>
+            <button class="btn" onClick={(ev) => set(null, ev)}>
               Saltar
             </button>
           </div>
         </div>
       </div>
-      <p class="muted" style={{ fontSize: '0.85rem', marginTop: 12 }}>
-        <a href="#/coincide/resultados">Ir a los resultados</a> cuando quieras (mínimo 5 respuestas).
-      </p>
+      {hechas >= 10 ? (
+        <a class="btn" href="#/coincide/resultados" style={{ marginTop: 14 }}>
+          Ver mis resultados ya ({hechas} respondidas; cuantas más, más fiable)
+        </a>
+      ) : (
+        <p class="muted" style={{ fontSize: '0.85rem', marginTop: 12 }}>
+          <a href="#/coincide/resultados">Ir a los resultados</a> cuando quieras (mínimo 5 respuestas).
+        </p>
+      )}
     </div>
   );
 }
@@ -333,10 +356,16 @@ function Resultados() {
         </section>
       )}
       <div class="note">
-        <strong>La afinidad</strong> mide cuánto se parecen tus respuestas a la posición de cada partido, con cita y fuente, en las{' '}
-        {respondidas} afirmaciones que respondiste. No es una recomendación de voto: es un espejo. Si dos partidos se separan menos de{' '}
-        {Math.round(UMBRAL_EMPATE * 100)} puntos, los damos por empatados: la diferencia es demasiado pequeña para tenerla en cuenta.{' '}
-        <span class="muted">{d.meta.nota}</span>
+        <strong>No es una recomendación de voto: es un espejo de tus respuestas</strong>, comparadas con la posición de cada partido, con
+        cita y fuente.
+        <details class="desplegable" style={{ marginTop: 8 }}>
+          <summary>Cómo se calcula</summary>
+          <p style={{ margin: '8px 0 0' }}>
+            La afinidad mide cuánto se parecen tus respuestas a la posición de cada partido en las {respondidas} afirmaciones que
+            respondiste. Si dos partidos se separan menos de {Math.round(UMBRAL_EMPATE * 100)} puntos, los damos por empatados: la
+            diferencia es demasiado pequeña para tenerla en cuenta. <span class="muted">{d.meta.nota}</span>
+          </p>
+        </details>
       </div>
       {[
         { t: 'Con datos suficientes', d: 'Conocemos su posición en al menos la mitad de tus respuestas.', filas: res.filter((r) => r.comparable) },
@@ -367,7 +396,7 @@ function Resultados() {
                         <strong>{p?.siglas ?? r.partido}</strong>
                         {empate && <span class="pill">empatado con el primero</span>}
                         {r.afinidad !== null && r.cobertura < AVISO_COBERTURA && (
-                          <span class="pill">basado en {r.comunes} de tus {r.respondidas} respuestas</span>
+                          <span class="muted" style={{ fontSize: '0.8rem' }}>· basado en {r.comunes} de tus {r.respondidas} respuestas</span>
                         )}
                         {p?.ambito === 'autonómico' && <span class="pill">solo en {p.comunidades?.join(', ')}</span>}
                       </div>
@@ -441,8 +470,9 @@ export function Coincide() {
   const sub = ruta.value.includes('resultados');
   const [i, setI] = useState<number | null>(null);
   // Solo cuentan las afirmaciones vigentes; se continúa por la primera sin responder (o saltar).
-  const hechas = d ? d.preguntas.filter((q) => estado.value.respuestas[q.id]).length : 0;
-  const primeraPendiente = d ? d.preguntas.findIndex((q) => !estado.value.respuestas[q.id]) : -1;
+  const contestada = (id: string) => !!estado.value.respuestas[id] && !estado.value.respuestas[id].sinResponder;
+  const hechas = d ? d.preguntas.filter((q) => contestada(q.id)).length : 0;
+  const primeraPendiente = d ? d.preguntas.findIndex((q) => !contestada(q.id)) : -1;
 
   let body;
   if (!d || d.preguntas.length === 0) {
@@ -473,12 +503,14 @@ export function Coincide() {
   }
   return (
     <div class="narrow page p1">
-      <CabeceraPaso id="coincide">
+      <CabeceraPaso id="coincide" compacta={!sub && i !== null}>
         {sub ? 'Tus resultados, con la fuente de cada posición.' : 'Propuestas reales de esta campaña, sin siglas. Al final, con quién coincides y en qué.'}
       </CabeceraPaso>
       {body}
       {/* En los resultados, el recuadro de arriba ya lleva a los pasos 2 y 3 con este resultado. */}
-      {!(sub && paso1.value) && <Siguiente desde="coincide" />}
+      {/* Ni en el cuestionario (invitaría a dejarlo) ni en los resultados (ya llevan a los pasos 2 y 3). */}
+      {!sub && i === null && <Siguiente desde="coincide" />}
+      {sub && !paso1.value && <Siguiente desde="coincide" />}
     </div>
   );
 }

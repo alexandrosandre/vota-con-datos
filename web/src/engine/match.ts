@@ -17,6 +17,8 @@ export interface Respuesta {
   valor: Valor | null;
   /** Peso de importancia elegido por el usuario: 0.5 (poco), 1 (normal), 2 (mucho). */
   peso?: 0.5 | 1 | 2;
+  /** Se marcó la importancia pero aún no se ha respondido (no cuenta como respondida ni como saltada). */
+  sinResponder?: boolean;
 }
 
 export interface ResultadoAfinidad {
