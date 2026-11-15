@@ -487,3 +487,5 @@ html[data-tema="campana"] .lista-props .prop { border: 0; border-top: 1px solid 
 html[data-tema="campana"] .lista-props .lp-columnas + .prop { border-top: 0; }
 html[data-tema="campana"] .lp-intro .desplegable { border: 0; padding: 0; margin-top: 6px; background: none; }
 html[data-tema="campana"] .lp-intro .desplegable > summary { font-size: 0.85rem; padding: 4px 0; }
+html[data-tema="campana"] .lp-columnas { top: 64px; }
+@media (max-width: 760px) { html[data-tema="campana"] .lp-columnas { top: 58px; } }

@@ -31,7 +31,7 @@ function Casilla({ v }: { v: Valoracion }) {
 
 function Leyenda() {
   return (
-    <div class="legend leyenda-casillas">
+    <div class="leyenda-casillas">
       {(Object.keys(VAL) as Valoracion[]).map((v) => (
         <span key={v}>
           <Casilla v={v} /> {VAL[v]}
@@ -76,13 +76,25 @@ function TarjetaPropuesta({
   return (
     <article class={`card prop${abierta ? ' abierta' : ''}`} id={`prop-${p.id}`} tabIndex={-1}>
       <h3 class="prop-h">
-        <button class="prop-fila" aria-expanded={abierta} aria-controls={`prop-${p.id}-cuerpo`} onClick={onToggle}>
-          <span class="prop-titulo">
-            <span class="muted">{n}.</span> {p.titulo} <span class="flecha" aria-hidden="true">{abierta ? '▾' : '▸'}</span>
+        <button
+          class="prop-fila"
+          aria-expanded={abierta}
+          aria-controls={`prop-${p.id}-cuerpo`}
+          onClick={onToggle}
+          onFocus={(ev) => {
+            const cab = document.querySelector('.lp-columnas')?.getBoundingClientRect();
+            const r = (ev.currentTarget as HTMLElement).getBoundingClientRect();
+            if (cab && r.top < cab.bottom) window.scrollBy({ top: r.top - cab.bottom - 8, behavior: 'instant' });
+          }}
+        >
+          <span class="q-tema prop-area">
+            {n} · {p.area}
           </span>
-          <span class="q-tema prop-area">{p.area}</span>
-          {crit.map((c) => (
-            <span key={c.id} class="celda" aria-hidden="true" title={`${c.nombre}: ${VAL[p.evaluacion[c.id]?.valoracion ?? 'no_verificable']}. ${c.pregunta}`}>
+          <span class="prop-titulo">
+            {p.titulo} <span class="flecha" aria-hidden="true">{abierta ? '▾' : '▸'}</span>
+          </span>
+          {crit.map((c, k) => (
+            <span key={c.id} class="celda" style={{ gridColumn: k + 2 }} aria-hidden="true" title={`${c.nombre}: ${VAL[p.evaluacion[c.id]?.valoracion ?? 'no_verificable']}. ${c.pregunta}`}>
               <Casilla v={p.evaluacion[c.id]?.valoracion ?? 'no_verificable'} />
             </span>
           ))}
@@ -223,6 +235,19 @@ export function Contrasta() {
   const p = partido(sel);
   const datos = sel ? d.partidos[sel] : undefined;
   const [explica, setExplica] = useState<string | null>(null);
+  // La explicación de una columna se cierra al desplazar la lista (si no, tapa filas bajo la cabecera fija) y con Escape.
+  useEffect(() => {
+    if (!explica) return;
+    const y0 = window.scrollY;
+    const alDesplazar = () => Math.abs(window.scrollY - y0) > 40 && setExplica(null);
+    const alTeclear = (e: KeyboardEvent) => e.key === 'Escape' && setExplica(null);
+    window.addEventListener('scroll', alDesplazar, { passive: true });
+    window.addEventListener('keydown', alTeclear);
+    return () => {
+      window.removeEventListener('scroll', alDesplazar);
+      window.removeEventListener('keydown', alTeclear);
+    };
+  }, [explica]);
   // Propuestas desplegadas (lista plegada, estudio de flujo del 15-nov). Un enlace a una propuesta la abre.
   const [abiertas, setAbiertas] = useState<Set<string>>(() => new Set(propSel ? [propSel] : []));
   const alternar = (id: string) =>
@@ -359,7 +384,9 @@ export function Contrasta() {
                 </div>
                 <p class="muted" style={{ fontSize: '0.85rem', margin: '4px 0 8px' }}>
                   Toca una propuesta para ver la cita, el análisis y las fuentes.{' '}
-                  {datos.base === 'compromisos' ? 'Sin programa publicado: salen de sus compromisos públicos.' : (
+                  {datos.base === 'compromisos' ? (
+                    p.programa.estado === 'publicado' ? 'Su programa se está analizando: de momento salen de sus compromisos públicos.' : 'Sin programa publicado: salen de sus compromisos públicos.'
+                  ) : (
                     <a href={p.programa.url ?? '#'} target="_blank" rel="noopener">
                       Programa oficial{p.programa.programa_de ? ` del ${partido(p.programa.programa_de)?.siglas ?? p.programa.programa_de}` : ''}
                     </a>
@@ -371,7 +398,10 @@ export function Contrasta() {
                   <dl>
                     {fase3.value!.criterios.map((c) => (
                       <div key={c.id}>
-                        <dt>{c.nombre}</dt>
+                        <dt>
+                          {CORTO[c.id] ?? c.nombre}
+                          {CORTO[c.id] && CORTO[c.id] !== c.nombre ? ` (${c.nombre})` : ''}
+                        </dt>
                         <dd>{c.pregunta}</dd>
                       </div>
                     ))}
@@ -420,11 +450,10 @@ export function Contrasta() {
                     key={c.id}
                     class={`lp-col${explica === c.id ? ' on' : ''}`}
                     aria-expanded={explica === c.id}
-                    aria-controls="lp-tip"
-                    aria-label={`${c.nombre}: qué mide esta columna`}
-                    onClick={() => setExplica(explica === c.id ? null : c.id)}
+                    aria-controls={explica === c.id ? 'lp-tip' : undefined}
+                    aria-label={`${CORTO[c.id] ?? c.nombre}: qué mide esta columna`}
+                    onClick={() => setExplica(c.id)}
                     onPointerEnter={(ev) => ev.pointerType === 'mouse' && setExplica(c.id)}
-                    onFocus={() => setExplica(c.id)}
                   >
                     <span>{CORTO[c.id] ?? c.nombre}</span>
                   </button>
@@ -433,7 +462,11 @@ export function Contrasta() {
                   const c = fase3.value!.criterios.find((x) => x.id === explica);
                   return c ? (
                     <div class="lp-tip" id="lp-tip" role="tooltip">
-                      <strong>{c.nombre}.</strong> {c.pregunta}
+                      <strong>
+                        {CORTO[c.id] ?? c.nombre}
+                        {CORTO[c.id] && CORTO[c.id] !== c.nombre ? ` (${c.nombre})` : ''}.
+                      </strong>{' '}
+                      {c.pregunta}
                       <button class="lp-tip-x" aria-label="Cerrar la explicación" onClick={() => setExplica(null)}>
                         ✕
                       </button>

@@ -345,7 +345,7 @@ h1[tabindex='-1']:focus, h2[tabindex='-1']:focus, main[tabindex='-1']:focus { ou
 
 /* Paso 2: la lista es la tabla (prototipo A, 15-nov). Cada fila, sus 8 valoraciones en columnas rotuladas. */
 .lista-props { --colw: 22px; border: 1px solid var(--line); border-radius: var(--r); background: var(--card); overflow: clip; }
-@media (min-width: 761px) { .lista-props { --colw: 34px; } .lp-columnas { top: 61px; } }
+@media (min-width: 761px) { .lista-props { --colw: 34px; } }
 .lp-intro { padding: 16px 16px 10px; }
 .lp-intro .desplegable { margin-top: 8px; font-size: 0.88rem; }
 .que-mide dl { margin: 8px 0 0; display: grid; gap: 6px; }
@@ -354,20 +354,20 @@ h1[tabindex='-1']:focus, h2[tabindex='-1']:focus, main[tabindex='-1']:focus { ou
 .que-mide .resaltada dt, .que-mide .resaltada dd { color: var(--c); }
 .leyenda-casillas { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 0.85rem; }
 .leyenda-casillas span { display: inline-flex; align-items: center; gap: 6px; }
-.casilla { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 3px; font-style: normal; font-size: 11px; font-weight: 800; line-height: 1; color: #111; flex: none; }
-.c-ok { background: var(--ok); } .c-mid { background: var(--mid); } .c-bad { background: var(--bad); } .c-na { background: var(--na); color: #fff; }
+.casilla { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 3px; font-style: normal; font-size: 12px; font-weight: 800; line-height: 1; flex: none; border: 1px solid color-mix(in srgb, currentColor 55%, transparent); }
+.c-ok { background: var(--ok-soft); color: var(--ok); } .c-mid { background: var(--mid-soft); color: var(--mid); } .c-bad { background: var(--bad-soft); color: var(--bad); } .c-na { background: var(--na-soft); color: var(--na); }
 .lp-columnas, .prop-fila { display: grid; grid-template-columns: minmax(0, 1fr) repeat(8, var(--colw)); column-gap: 3px; padding-left: 16px; padding-right: 10px; }
-.lp-columnas { position: sticky; top: 57px; z-index: 5; background: var(--card); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); align-items: end; padding-top: 6px; padding-bottom: 6px; }
+.lp-columnas { position: sticky; top: 62px; z-index: 5; background: var(--card); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); align-items: end; padding-top: 6px; padding-bottom: 6px; }
 .lp-col { background: none; border: 0; padding: 0; height: 92px; display: flex; align-items: flex-end; justify-content: center; color: var(--ink-2); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.02em; }
 .lp-col span { writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; }
 .lp-col:hover span { color: var(--c); }
 .prop-h { margin: 0; font-size: inherit; }
 .prop-fila { width: 100%; text-align: left; background: none; border: 0; padding-top: 12px; padding-bottom: 12px; color: var(--ink); align-items: center; }
 /* Fila: título arriba a todo lo ancho; debajo, el tema a la izquierda y las 8 casillas bajo sus columnas. */
-.prop-fila { grid-template-areas: 't t t t t t t t t' 'a . . . . . . . .'; row-gap: 6px; }
+.prop-fila { grid-template-areas: 'a a a a a a a a a' 't t t t t t t t t'; row-gap: 4px; }
 .prop-fila .prop-titulo { grid-area: t; font-family: var(--serif); font-weight: 600; font-size: 1rem; line-height: 1.25; }
-.prop-fila .prop-area { grid-area: a; align-self: center; font-size: 0.68rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding-right: 6px; }
-.prop-fila .celda { grid-row: 2; }
+.prop-fila .prop-area { grid-area: a; font-size: 0.68rem; }
+.prop-fila .celda { grid-row: 3; margin-top: 4px; }
 .prop-fila .flecha { color: var(--c); }
 .celda { display: flex; justify-content: center; }
 .lista-props .prop { border: 0; border-top: 1px solid var(--line); border-radius: 0; margin: 0; box-shadow: none; background: transparent; }
