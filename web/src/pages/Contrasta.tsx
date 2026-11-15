@@ -18,100 +18,25 @@ const IDIOMA_CITA: Record<string, string> = {
   erc: 'ca', junts: 'ca', psc: 'ca', ara_mes_fa: 'ca', compromis: 'ca', bng: 'gl', eh_bildu: 'eu', pnv: 'eu',
 };
 
+const SIMBOLO: Record<Valoracion, string> = { favorable: '✓', mixta: '~', desfavorable: '✕', no_verificable: '?' };
+/** Nombres cortos de las columnas (el nombre completo y la pregunta, en «¿Qué mide cada columna?»). */
+const CORTO: Record<string, string> = {
+  concrecion: 'Concreción', legal: 'Encaje legal', financiacion: 'Financiación', evidencia: 'Evidencia',
+  internacional: 'Otros países', antecedentes: 'Antecedentes', beneficiarios: 'Beneficiarios', largo_plazo: 'Largo plazo',
+};
+
+function Casilla({ v }: { v: Valoracion }) {
+  return <i class={`casilla c-${COLOR[v]}`}>{SIMBOLO[v]}</i>;
+}
+
 function Leyenda() {
   return (
-    <div class="legend">
+    <div class="legend leyenda-casillas">
       {(Object.keys(VAL) as Valoracion[]).map((v) => (
         <span key={v}>
-          <i style={{ background: `var(--${COLOR[v]})` }} aria-hidden="true" />
-          {VAL[v]}
+          <Casilla v={v} /> {VAL[v]}
         </span>
       ))}
-    </div>
-  );
-}
-
-/**
- * Resumen por criterio (estudio de flujo, 15-nov): el reparto global apenas distingue (la mayoría es «Matizable»).
- * Cuenta cada criterio por separado; nunca se suma en una puntuación del partido ni se ordena a los partidos.
- */
-function Resumen({ props }: { props: Propuesta[] }) {
-  const crit = fase3.value!.criterios;
-  const PL: Record<Valoracion, [string, string]> = {
-    favorable: ['sólida', 'sólidas'], mixta: ['matizable', 'matizables'], desfavorable: ['débil', 'débiles'], no_verificable: ['no verificable', 'no verificables'],
-  };
-  return (
-    <div class="resumen-crit">
-      <p class="muted" style={{ fontSize: '0.85rem', margin: '0 0 8px' }}>
-        Cómo salen sus {props.length} propuestas en cada criterio (no se suman en una nota):
-      </p>
-      <ul>
-        {crit.map((c) => {
-          const n: Record<Valoracion, number> = { favorable: 0, mixta: 0, desfavorable: 0, no_verificable: 0 };
-          props.forEach((p) => n[p.evaluacion[c.id]?.valoracion ?? 'no_verificable']++);
-          const vs = (Object.keys(n) as Valoracion[]).filter((v) => n[v] > 0);
-          return (
-            <li key={c.id}>
-              <span class="rc-nombre" title={c.pregunta}>{c.nombre}</span>
-              <span class="rc-barra" aria-hidden="true">
-                {vs.map((v) => (
-                  <i key={v} style={{ width: `${(n[v] / props.length) * 100}%`, background: `var(--${COLOR[v]})` }} />
-                ))}
-              </span>
-              <span class="rc-texto">{vs.map((v) => `${n[v]} ${PL[v][n[v] === 1 ? 0 : 1]}`).join(' · ')}</span>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
-  );
-}
-
-function Mapa({ props, onAbrir }: { props: Propuesta[]; onAbrir: (id: string) => void }) {
-  const crit = fase3.value!.criterios;
-  return (
-    <div class="scroll-x solo-escritorio">
-      <table class="mapa" style={{ fontSize: '0.82rem' }}>
-        <caption class="sr-only">Valoración de cada propuesta en cada criterio</caption>
-        <thead>
-          <tr>
-            <th scope="col" style={{ verticalAlign: 'bottom' }}>
-              Propuesta
-            </th>
-            {crit.map((c) => (
-              <th key={c.id} scope="col" class="v" title={c.pregunta}>
-                {c.nombre}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {props.map((p, i) => (
-            <tr key={p.id}>
-              <th scope="row" style={{ minWidth: 180 }}>
-                <a
-                  href={`#/contrasta/${ruta.value.split('/')[2]}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    onAbrir(p.id);
-                  }}
-                >
-                  {i + 1}. {p.titulo}
-                </a>
-              </th>
-              {crit.map((c) => {
-                const v = p.evaluacion[c.id]?.valoracion ?? 'no_verificable';
-                return (
-                  <td key={c.id} title={`${c.nombre}: ${VAL[v]}`}>
-                    <div class={`sq sq--${v}`} style={{ background: `var(--${COLOR[v]})`, opacity: 0.85 }} aria-hidden="true" />
-                    <span class="sr-only">{VAL[v]}</span>
-                  </td>
-                );
-              })}
-            </tr>
-          ))}
-        </tbody>
-      </table>
     </div>
   );
 }
@@ -152,22 +77,19 @@ function TarjetaPropuesta({
     <article class={`card prop${abierta ? ' abierta' : ''}`} id={`prop-${p.id}`} tabIndex={-1}>
       <h3 class="prop-h">
         <button class="prop-fila" aria-expanded={abierta} aria-controls={`prop-${p.id}-cuerpo`} onClick={onToggle}>
-          <span class="q-tema">
-            {n} · {p.area}
+          <span class="prop-titulo">
+            <span class="muted">{n}.</span> {p.titulo} <span class="flecha" aria-hidden="true">{abierta ? '▾' : '▸'}</span>
           </span>
-          <span class="prop-titulo">{p.titulo}</span>
-          <span class="tira" aria-hidden="true">
-            {crit.map((c) => {
-              const v = p.evaluacion[c.id]?.valoracion ?? 'no_verificable';
-              return <i key={c.id} title={`${c.nombre}: ${VAL[v]}`} style={{ background: `var(--${COLOR[v]})` }} />;
-            })}
-          </span>
+          <span class="q-tema prop-area">{p.area}</span>
+          {crit.map((c) => (
+            <span key={c.id} class="celda" aria-hidden="true" title={`${c.nombre}: ${VAL[p.evaluacion[c.id]?.valoracion ?? 'no_verificable']}. ${c.pregunta}`}>
+              <Casilla v={p.evaluacion[c.id]?.valoracion ?? 'no_verificable'} />
+            </span>
+          ))}
           <span class="sr-only">
             {crit.map((c) => `${c.nombre}: ${VAL[p.evaluacion[c.id]?.valoracion ?? 'no_verificable']}`).join('; ')}
           </span>
-          <span class="flecha" aria-hidden="true">
-            {abierta ? '▾' : '▸'}
-          </span>
+
         </button>
       </h3>
       {abierta && (
@@ -300,6 +222,7 @@ export function Contrasta() {
   const propSel = (ruta.value.split('/')[3] ?? '').split('?')[0];
   const p = partido(sel);
   const datos = sel ? d.partidos[sel] : undefined;
+  const [explica, setExplica] = useState<string | null>(null);
   // Propuestas desplegadas (lista plegada, estudio de flujo del 15-nov). Un enlace a una propuesta la abre.
   const [abiertas, setAbiertas] = useState<Set<string>>(() => new Set(propSel ? [propSel] : []));
   const alternar = (id: string) =>
@@ -416,18 +339,49 @@ export function Contrasta() {
         )}
         {datos?.estado === 'evaluado' && p && (
           <>
-            <div class="card stack">
-              <div class="row between">
-                <h2 class="h3" style={{ margin: 0 }}>
-                  {p.siglas}: {datos.base === 'compromisos' ? 'sus compromisos de un vistazo' : 'el programa de un vistazo'}
-                </h2>
+            {/* La lista es la tabla (prototipo A, elegido por el editor el 15-nov): cada propuesta es una fila con sus 8
+                valoraciones en columnas rotuladas; la cabecera de columnas queda fija al desplazarse. */}
+            <section class="lista-props">
+              <div class="lp-intro">
+                <div class="row between" style={{ rowGap: 0 }}>
+                  <h2 class="h3" style={{ margin: 0 }}>
+                    {p.siglas}: {datos.propuestas.length} propuestas {datos.base === 'compromisos' ? 'de sus compromisos' : 'de su programa'}
+                  </h2>
+                  {(() => {
+                    const todas = [...datos.propuestas, ...(datos.complemento ?? [])].map((x) => x.id);
+                    const todasAbiertas = todas.every((id) => abiertas.has(id));
+                    return (
+                      <button class="link-btn desplegar-todas" onClick={() => setAbiertas(todasAbiertas ? new Set() : new Set(todas))}>
+                        {todasAbiertas ? 'Plegar todas' : 'Desplegar todas'}
+                      </button>
+                    );
+                  })()}
+                </div>
+                <p class="muted" style={{ fontSize: '0.85rem', margin: '4px 0 8px' }}>
+                  Toca una propuesta para ver la cita, el análisis y las fuentes.{' '}
+                  {datos.base === 'compromisos' ? 'Sin programa publicado: salen de sus compromisos públicos.' : (
+                    <a href={p.programa.url ?? '#'} target="_blank" rel="noopener">
+                      Programa oficial{p.programa.programa_de ? ` del ${partido(p.programa.programa_de)?.siglas ?? p.programa.programa_de}` : ''}
+                    </a>
+                  )}
+                </p>
                 <Leyenda />
-              </div>
-              <Resumen props={datos.propuestas} />
-              <Mapa props={datos.propuestas} onAbrir={irA} />
-              {p.nota_coalicion && <p class="muted" style={{ fontSize: '0.85rem', marginBottom: 0 }}>{p.nota_coalicion}</p>}
+                <details class="desplegable que-mide">
+                  <summary>¿Qué mide cada columna?</summary>
+                  <dl>
+                    {fase3.value!.criterios.map((c) => (
+                      <div key={c.id}>
+                        <dt>{c.nombre}</dt>
+                        <dd>{c.pregunta}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                </details>
+                <details class="desplegable mas-info">
+                  <summary>Más sobre estas propuestas</summary>
+                  {p.nota_coalicion && <p class="muted" style={{ fontSize: '0.85rem', margin: '8px 0 0' }}>{p.nota_coalicion}</p>}
               {datos.base === 'compromisos' ? (
-                <p class="muted" style={{ fontSize: '0.85rem', marginBottom: 0 }}>
+                <p class="muted" style={{ fontSize: '0.85rem', margin: '8px 0 0' }}>
                   {p.programa.estado === 'publicado' ? (
                     <>
                       <strong>
@@ -444,7 +398,7 @@ export function Contrasta() {
                   <a href="#/metodologia">Cómo se hace</a>.
                 </p>
               ) : (
-                <p class="muted" style={{ fontSize: '0.85rem', marginBottom: 0 }}>
+                <p class="muted" style={{ fontSize: '0.85rem', margin: '8px 0 0' }}>
                   Propuestas del{' '}
                   <a href={p.programa.url ?? '#'} target="_blank" rel="noopener">
                     programa oficial{p.programa.programa_de ? ` del ${partido(p.programa.programa_de)?.siglas ?? p.programa.programa_de}` : ''}
@@ -457,14 +411,70 @@ export function Contrasta() {
                   . <a href="#/metodologia">Cómo se hace</a>.
                 </p>
               )}
-              <Compartir
-                compacto
-                etiqueta="Compartir este análisis"
-                texto={`${p.siglas}: ${datos.propuestas.length} propuestas centrales ${datos.base === 'compromisos' ? 'de sus compromisos de campaña' : 'de su programa'}, contrastadas una a una con fuentes en vota con datos:`}
-                url={enlace(`/contrasta/${sel}`)}
-                titulo={`${p.siglas}, contrastado · vota con datos`}
-              />
-            </div>
+                </details>
+              </div>
+              <div class="lp-columnas" role="presentation" onPointerLeave={(ev) => ev.pointerType === 'mouse' && setExplica(null)}>
+                <span />
+                {fase3.value!.criterios.map((c) => (
+                  <button
+                    key={c.id}
+                    class={`lp-col${explica === c.id ? ' on' : ''}`}
+                    aria-expanded={explica === c.id}
+                    aria-controls="lp-tip"
+                    aria-label={`${c.nombre}: qué mide esta columna`}
+                    onClick={() => setExplica(explica === c.id ? null : c.id)}
+                    onPointerEnter={(ev) => ev.pointerType === 'mouse' && setExplica(c.id)}
+                    onFocus={() => setExplica(c.id)}
+                  >
+                    <span>{CORTO[c.id] ?? c.nombre}</span>
+                  </button>
+                ))}
+                {(() => {
+                  const c = fase3.value!.criterios.find((x) => x.id === explica);
+                  return c ? (
+                    <div class="lp-tip" id="lp-tip" role="tooltip">
+                      <strong>{c.nombre}.</strong> {c.pregunta}
+                      <button class="lp-tip-x" aria-label="Cerrar la explicación" onClick={() => setExplica(null)}>
+                        ✕
+                      </button>
+                    </div>
+                  ) : null;
+                })()}
+              </div>
+              {datos.propuestas.map((x, i) => (
+                <TarjetaPropuesta key={`${sel}-${x.id}`} p={x} n={i + 1} partidoId={sel} destacada={x.id === propSel} abierta={abiertas.has(x.id)} onToggle={() => alternar(x.id)} />
+              ))}
+              {(datos.complemento?.length ?? 0) > 0 && (
+                <>
+                  <div class="lp-separador">
+                    <h2 class="h3" style={{ margin: 0 }}>
+                      Además del programa: compromisos de sus líderes
+                    </h2>
+                    <p class="muted" style={{ fontSize: '0.85rem', margin: '4px 0 0' }}>
+                      Medidas que sus líderes han prometido en público y que no figuran en el programa, con los mismos criterios.
+                    </p>
+                  </div>
+                  {datos.complemento!.map((x, i) => (
+                    <TarjetaPropuesta
+                      key={`${sel}-${x.id}`}
+                      p={x}
+                      n={datos.propuestas.length + i + 1}
+                      partidoId={sel}
+                      destacada={x.id === propSel}
+                      abierta={abiertas.has(x.id)}
+                      onToggle={() => alternar(x.id)}
+                    />
+                  ))}
+                </>
+              )}
+            </section>
+            <Compartir
+              compacto
+              etiqueta="Compartir este análisis"
+              texto={`${p.siglas}: ${datos.propuestas.length} propuestas centrales ${datos.base === 'compromisos' ? 'de sus compromisos de campaña' : 'de su programa'}, contrastadas una a una con fuentes en vota con datos:`}
+              url={enlace(`/contrasta/${sel}`)}
+              titulo={`${p.siglas}, contrastado · vota con datos`}
+            />
             <a
               class="siguiente p3"
               style={{ marginTop: 0 }}
@@ -477,47 +487,6 @@ export function Contrasta() {
               <strong>¿Tu voto a {p.siglas} tendrá escaño en tu provincia?</strong>
               <span aria-hidden="true">→</span>
             </a>
-            <div class="row between" style={{ margin: '4px 0 -6px' }}>
-              <h2 class="h3" style={{ margin: 0 }}>
-                Sus {datos.propuestas.length} propuestas
-              </h2>
-              {(() => {
-                const todas = [...datos.propuestas, ...(datos.complemento ?? [])].map((x) => x.id);
-                const todasAbiertas = todas.every((id) => abiertas.has(id));
-                return (
-                  <button class="link-btn desplegar-todas" onClick={() => setAbiertas(todasAbiertas ? new Set() : new Set(todas))}>
-                    {todasAbiertas ? 'Plegar todas' : 'Desplegar todas'}
-                  </button>
-                );
-              })()}
-            </div>
-            {datos.propuestas.map((x, i) => (
-              <TarjetaPropuesta key={`${sel}-${x.id}`} p={x} n={i + 1} partidoId={sel} destacada={x.id === propSel} abierta={abiertas.has(x.id)} onToggle={() => alternar(x.id)} />
-            ))}
-            {(datos.complemento?.length ?? 0) > 0 && (
-              <>
-                <div class="card">
-                  <h2 class="h3" style={{ margin: 0 }}>
-                    Además del programa: compromisos de sus líderes
-                  </h2>
-                  <p class="muted" style={{ fontSize: '0.9rem', margin: '8px 0 0' }}>
-                    Medidas importantes que sus líderes han prometido en público para esta legislatura y que no figuran en el programa. Se
-                    analizan con los mismos criterios y la misma revisión independiente.
-                  </p>
-                </div>
-                {datos.complemento!.map((x, i) => (
-                  <TarjetaPropuesta
-                    key={`${sel}-${x.id}`}
-                    p={x}
-                    n={datos.propuestas.length + i + 1}
-                    partidoId={sel}
-                    destacada={x.id === propSel}
-                    abierta={abiertas.has(x.id)}
-                    onToggle={() => alternar(x.id)}
-                  />
-                ))}
-              </>
-            )}
           </>
         )}
         {sel && <Promesas id={sel} />}

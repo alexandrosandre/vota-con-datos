@@ -29,7 +29,7 @@ comprueba() { # ruta texto...
 comprueba "#/" "Elige." "Suma." "candidaturas proclamadas en el BOE"
 comprueba "#/suma" "votar a quien prefieres siempre es legítimo"   # alias del paso 3
 comprueba "#/coincide" "afirmaciones"
-comprueba "#/contrasta/erc" "el programa de un vistazo" "programa oficial"
+comprueba "#/contrasta/erc" "propuestas de su programa" "Programa oficial" "¿Qué mide cada columna?"
 comprueba "?circ=28&partido=pp#/cuenta" "probabilidad de lograr al menos un escaño" "Todas las candidaturas en Madrid" "Calcular con" "¿De dónde salen estos datos?"
 comprueba "?circ=31&partido=pp#/cuenta" "En Navarra, el PP se presenta dentro de la coalición UPN-PP, junto a UPN."   # partido dentro de una coalición
 comprueba "?circ=35&partido=podemos#/cuenta" "En Las Palmas, Podemos se presenta dentro de la coalición NC-BC, PODEMOS, IU, SUMAR"
