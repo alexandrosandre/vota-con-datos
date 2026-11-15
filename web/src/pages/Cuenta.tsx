@@ -460,8 +460,8 @@ export function Cuenta() {
     alternativa ? (
       <div class="note sugerencia" style={{ marginTop: 16 }}>
         <p style={{ margin: 0 }}>
-          {noSePresenta ? 'Como no se presenta aquí, ' : `Con estos datos, tu voto a ${elegida!.siglas} tiene pocas opciones de convertirse en escaño en ${circ!.nombre}. `}
-          Si quieres que tu voto ayude a elegir un diputado, la primera de tu orden de preferencia que sí tiene opciones es{' '}
+          {noSePresenta ? 'Como no se presenta aquí, si' : `Con estos datos, tu voto a ${elegida!.siglas} tiene pocas opciones de convertirse en escaño en ${circ!.nombre}. Si`}{' '}
+          quieres que tu voto ayude a elegir un diputado, la primera de tu orden de preferencia que sí tiene opciones es{' '}
           <span class="nowrap">
             <MarcaPartido cand={alternativa.cand} /> <strong>{alternativa.cand.siglas}</strong>
           </span>{' '}
