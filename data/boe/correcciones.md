@@ -20,6 +20,8 @@ Estado a 8 de noviembre de 2026 (revisión hecha el domingo 8; ese día no hay B
 
 **Revisión del 15-XI-2026 (09:45): sin cambios oficiales en las listas.** No hay BOE nuevo desde el 14-XI: el sumario del 14-XI (núm. 284) conserva el mismo sha256 (`e059a50f…c180`); el 15-XI es domingo, sin edición, y el del 16-XI aún no está publicado (la API devuelve 404 para ambos). Por tanto, no hay ninguna corrección, resolución de Junta Electoral, amparo del TC ni sentencia del TS (art. 44.4 LOREG) nueva. En el XML de BOE-A-2026-23103, `referencias/posteriores` sigue enlazando solo BOE-A-2026-23383, y el de BOE-A-2026-23383 sigue vacío. Caso UPC (apartado 3): sin novedad oficial; el plazo del recurso ante el TS sigue abierto hasta el 19-XI. No hace falta volver a ejecutar el pipeline. (Página de la JEC no revisada hoy; copias de esta revisión no guardadas en `data/sources/boe/`.)
 
+**Revisión del 15-XI-2026 (20:55): sin cambios oficiales en las listas.** Sigue sin haber BOE nuevo desde el 14-XI: el sumario del 14-XI (núm. 284) conserva el mismo sha256 (`e059a50f…c180`), y la API sigue devolviendo 404 para el 15-XI (domingo, sin edición) y para el 16-XI (aún no publicado). Por tanto, no hay ninguna corrección, resolución de Junta Electoral, amparo del TC ni sentencia del TS (art. 44.4 LOREG) nueva. En el XML de BOE-A-2026-23103, `referencias/posteriores` sigue enlazando solo BOE-A-2026-23383, y el de BOE-A-2026-23383 sigue vacío. Caso UPC (apartado 3): sin novedad oficial; el plazo del recurso ante el TS sigue abierto hasta el 19-XI. No hace falta volver a ejecutar el pipeline. (Página de la JEC no revisada; copias de esta revisión no guardadas en `data/sources/boe/`.)
+
 ## Qué se ha revisado
 
 | Fuente | Alcance | Fichero bruto |

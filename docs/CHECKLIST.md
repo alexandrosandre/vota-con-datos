@@ -94,6 +94,13 @@ compromisos nuevos con revisión independiente (BNG 6, Podemos 1 —se retiraron
 total 203); sin programas nuevos (junts.cat no se pudo leer: 403); paso 1 sin posiciones nuevas; BOE sin cambios.
 Pista para el paso 1 del PSOE tras su programa: la entrevista de Sánchez con Jordi Wild (13-nov) por si toca q27.
 
+**Revisión del 15-nov, 20:13 (hecha a las 21:00):** 5 compromisos nuevos con revisión independiente (Frente Amplio 4:
+dentista público, gafas, audífonos e IVA anual de autónomos; Coalición Canaria 1: transporte de mercancías; se
+retira uno de Podemos por ser un lema sin medida; total 208); sin programas nuevos (junts.cat sigue respondiendo
+403); sin encuestas publicadas (el día 4 de 40dB ya está en el servidor de El País, fechado el 16-nov); BOE sin
+cambios; paso 1 sin posiciones nuevas. Despliegues sin cortes desde hoy: datos con nombre por contenido y cada
+despliegue conserva las 6 versiones anteriores (prueba: 139 visitas simuladas durante un despliegue, 0 fallos).
+
 **Hecho el 13-nov por la tarde** (revisión del cambio partidos/papeletas, commit 1299bb2): el PNV aparece
 en Navarra dentro de Geroa Bai; la afinidad del paso 3 se recalcula (salía «1 %»); documentos conjuntos de
 una coalición cuentan para cada firmante y el PSC cuenta a Sánchez (decisiones del editor); vista previa al
