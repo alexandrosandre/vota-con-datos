@@ -1,6 +1,6 @@
 # Checklist · vota con datos (29-N)
 
-Actualizado: 14-nov-2026. Solo lo pendiente; lo terminado está en el historial de git. La web ya está
+Actualizado: 15-nov-2026. Solo lo pendiente; lo terminado está en el historial de git. La web ya está
 en línea; aquí «bloquea» significa **no difundirla ni anunciarla** (o, si ya circula, que deja de ser
 correcta o legal) hasta que esté hecho.
 
@@ -35,13 +35,17 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
     voxespana.es). Hecho el 13-nov: 12 propuestas del programa + 2 de complemento (revisión independiente
     aprobada, 91 correcciones), auditoría de coherencia (`data/fase3/coherencia_2026-11-13.md`: 26 cambios de
     texto en pp, salf, junts y vox, ninguna valoración cambia) y paso 1 recodificado (g6: Vox 23→25 posiciones).
-    Abierto, sin efecto en valoraciones: IVA del 4 % italiano para la primera vivienda (salf-01, vox-09) sin
-    fuente oficial; motivo de «no_verificable» en la financiación de pp-02.
+    Cerrado el 15-nov: el IVA italiano del 4 % para la primera vivienda (salf-01, vox-09) cita ya el DPR
+    633/1972 (Normattiva) y la guía de la Agenzia delle Entrate, y pp-02 explica su «no_verificable» (falta
+    cuántas personas dejarían de regularizarse y el coste de visados y cupos); ninguna valoración cambia.
   - [x] Compromís — **publicado el 14-nov** (programa de la coalición Compromís: Front Valencià). Hecho el
     14-nov: 12 propuestas + 4 de complemento (revisión independiente, auditoría de coherencia que cambió dos
     propuestas para cubrir todos los bloques, y segunda revisión) y paso 1 recodificado (g10: como documento
     conjunto cuenta también para Podemos, Frente Amplio y ERC).
-  - [ ] PSC, Frente Amplio, Podemos, Junts, EH Bildu, NC-BC, Ara Més, UPN — sin fecha.
+  - [x] PSC — **asume el programa del PSOE** (decisión del editor, 15-nov: solo añade cuestiones de ámbito catalán sin
+    contradecirlo). Paso 1: g13, PSC 5→11 posiciones (q18 pasa de +1 a +2 por la precedencia del programa). Paso 2: las 12
+    propuestas del PSOE, con nota; sus compromisos propios que no estén en ese programa, como complemento (en curso).
+  - [ ] Frente Amplio, Podemos, Junts, EH Bildu, NC-BC, Ara Més, UPN — sin fecha (Junts: sin rastro de programa el 15-nov).
   - Hecho el 14-nov: adelante_andalucia-08 cita la DA 23.ª de la Ley 54/1997 (mínimo del 10 % de la SEPI en
     Red Eléctrica) y pp-07 y compromis-13 resumen a Bom y Ligthart con sus cifras exactas (0,083 / 0,122 para el
     capital de la Administración central, casi el doble en infraestructuras básicas regionales o locales).
