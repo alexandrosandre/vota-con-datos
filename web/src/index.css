@@ -307,3 +307,9 @@ details > summary { cursor: pointer; }
 .contexto-mas p, .contexto-mas ul { margin: 8px 0 0; }
 .contexto-mas ul { padding-left: 1.2em; }
 .contexto-mas li { margin: 4px 0; }
+
+/* Compartir */
+.compartir-panel { margin-top: 10px; padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--r); background: var(--paper-2); }
+.compartir-texto { margin: 0 0 10px; font-size: 0.9rem; color: var(--ink-2); overflow-wrap: anywhere; user-select: all; }
+a.chip-btn { text-decoration: none; color: var(--ink); display: inline-flex; align-items: center; }
+.prop { scroll-margin-top: 76px; }

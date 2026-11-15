@@ -41,6 +41,11 @@ export function Privacidad() {
         La tipografía, las fotos y los logotipos se sirven desde nuestra propia web, así que ni Google ni Wikimedia se enteran de tu visita.
         Los enlaces a fuentes externas (BOE, medios, webs de los partidos) solo se abren si los pulsas.
       </p>
+      <p>
+        Los botones de compartir no cargan nada de las redes sociales: son enlaces normales que solo se abren si los pulsas, con el texto que
+        ves antes de compartir (y que puedes cambiar). Al compartir tu resultado del paso 1 se envían solo tus partidos más afines y un enlace
+        al test, nunca tus respuestas.
+      </p>
 
       <h2>Dudas</h2>
       <p>

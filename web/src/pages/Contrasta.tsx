@@ -1,5 +1,6 @@
-import { useState } from 'preact/hooks';
+import { useEffect, useState } from 'preact/hooks';
 import { actualizar, estado, ir, ruta } from '../store';
+import { Compartir, enlace } from '../compartir';
 import { fase3, fmt, partido, partidos } from '../data';
 import { CabeceraPaso, Siguiente } from '../brand';
 import { rankingActual } from '../paso1';
@@ -101,9 +102,19 @@ function Mapa({ props }: { props: Propuesta[] }) {
   );
 }
 
-function TarjetaPropuesta({ p, n, partidoId }: { p: Propuesta; n: number; partidoId: string }) {
-  const [open, setOpen] = useState(false);
+function TarjetaPropuesta({ p, n, partidoId, destacada = false }: { p: Propuesta; n: number; partidoId: string; destacada?: boolean }) {
+  const [open, setOpen] = useState(destacada);
   const crit = fase3.value!.criterios;
+  const siglas = partido(partidoId)?.siglas ?? partidoId;
+  const cuenta: Record<Valoracion, number> = { favorable: 0, mixta: 0, desfavorable: 0, no_verificable: 0 };
+  crit.forEach((c) => cuenta[p.evaluacion[c.id]?.valoracion ?? 'no_verificable']++);
+  const PLURAL: Record<Valoracion, [string, string]> = {
+    favorable: ['sólida', 'sólidas'], mixta: ['matizable', 'matizables'], desfavorable: ['débil', 'débiles'], no_verificable: ['no verificable', 'no verificables'],
+  };
+  const reparto = (Object.keys(cuenta) as Valoracion[]).filter((v) => cuenta[v] > 0).map((v) => `${cuenta[v]} ${PLURAL[v][cuenta[v] === 1 ? 0 : 1]}`);
+  const textoCompartir =
+    `${siglas} propone: «${p.titulo}». Valoraciones en ${crit.length} criterios: ` +
+    `${reparto.length > 1 ? `${reparto.slice(0, -1).join(', ')} y ${reparto[reparto.length - 1]}` : reparto[0]}. El análisis, con fuentes:`;
   const lang = p.cita_traduccion ? IDIOMA_CITA[partidoId] : undefined;
   return (
     <article class="card prop" id={`prop-${p.id}`} tabIndex={-1}>
@@ -142,9 +153,17 @@ function TarjetaPropuesta({ p, n, partidoId }: { p: Propuesta; n: number; partid
             );
           })}
         </div>
-        <button class="btn" onClick={() => setOpen(!open)} aria-expanded={open}>
-          {open ? 'Ocultar el análisis' : 'Ver el análisis y las fuentes'}
-        </button>
+        <div class="row" style={{ alignItems: 'flex-start' }}>
+          <button class="btn" onClick={() => setOpen(!open)} aria-expanded={open}>
+            {open ? 'Ocultar el análisis' : 'Ver el análisis y las fuentes'}
+          </button>
+          <Compartir
+            compacto
+            texto={textoCompartir}
+            url={enlace(`/contrasta/${partidoId}/${p.id}`)}
+            titulo={`${siglas}: ${p.titulo} · vota con datos`}
+          />
+        </div>
       </div>
       {open && (
         <div class="prop-body">
@@ -224,8 +243,20 @@ export function Contrasta() {
   const d = fase3.value!;
   const e = estado.value;
   const sel = ruta.value.split('/')[2] || e.partido || '';
+  // Enlace compartido a una propuesta: #/contrasta/<partido>/<propuesta>
+  const propSel = (ruta.value.split('/')[3] ?? '').split('?')[0];
   const p = partido(sel);
   const datos = sel ? d.partidos[sel] : undefined;
+  useEffect(() => {
+    if (!propSel) return;
+    // Después de que la app lleve el foco al título y suba al principio (cambio de ruta).
+    const t = setTimeout(() => {
+      const destino = document.getElementById(`prop-${propSel}`);
+      destino?.scrollIntoView({ behavior: 'auto', block: 'start' });
+      destino?.focus({ preventScroll: true });
+    }, 120);
+    return () => clearTimeout(t);
+  }, [propSel, sel]);
   const evaluados = new Set(Object.entries(d.partidos).filter(([, v]) => v.estado === 'evaluado').map(([k]) => k));
   const afines = e.rankingOrigen ? rankingActual.value.slice(0, 4) : [];
   const elegir = (v: string) => {
@@ -343,9 +374,16 @@ export function Contrasta() {
                   . <a href="#/metodologia">Cómo se hace</a>.
                 </p>
               )}
+              <Compartir
+                compacto
+                etiqueta="Compartir este análisis"
+                texto={`${p.siglas}: ${datos.propuestas.length} propuestas centrales ${datos.base === 'compromisos' ? 'de sus compromisos de campaña' : 'de su programa'}, contrastadas una a una con fuentes en vota con datos:`}
+                url={enlace(`/contrasta/${sel}`)}
+                titulo={`${p.siglas}, contrastado · vota con datos`}
+              />
             </div>
             {datos.propuestas.map((x, i) => (
-              <TarjetaPropuesta key={x.id} p={x} n={i + 1} partidoId={sel} />
+              <TarjetaPropuesta key={x.id} p={x} n={i + 1} partidoId={sel} destacada={x.id === propSel} />
             ))}
             {(datos.complemento?.length ?? 0) > 0 && (
               <>
@@ -359,7 +397,7 @@ export function Contrasta() {
                   </p>
                 </div>
                 {datos.complemento!.map((x, i) => (
-                  <TarjetaPropuesta key={x.id} p={x} n={datos.propuestas.length + i + 1} partidoId={sel} />
+                  <TarjetaPropuesta key={x.id} p={x} n={datos.propuestas.length + i + 1} partidoId={sel} destacada={x.id === propSel} />
                 ))}
               </>
             )}

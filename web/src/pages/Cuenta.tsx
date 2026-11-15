@@ -5,6 +5,7 @@ import { simular, veredicto, type ResultadoSim } from '../engine/seats';
 import type { CandidaturaCirc, Circunscripcion, Escenario } from '../types';
 import { CabeceraPaso } from '../brand';
 import { paso1, rankingActual } from '../paso1';
+import { Compartir, enlace } from '../compartir';
 
 const TEXTO_VEREDICTO: Record<string, string> = {
   casi_seguro: 'Escaño casi seguro',
@@ -646,11 +647,22 @@ export function Cuenta() {
               )}
               <QuienElige cand={elegida!} escanos={filaElegida.sinBase ? 0 : filaElegida.escanosCentral} />
               {!noSePresenta && <Sugerencia />}
-              <div class="row" style={{ marginTop: 16 }}>
+              <div class="row" style={{ marginTop: 16, alignItems: 'flex-start' }}>
                 {pidElegido && (
                   <a class="btn" href={`#/contrasta/${pidElegido}`}>
                     ← Contrastar sus propuestas (paso 2)
                   </a>
+                )}
+                {!filaElegida.sinBase && (
+                  <Compartir
+                    texto={
+                      `En ${nombreLlano(circ.nombre)}, con «${esc.nombre}», ${elegida!.siglas} tiene un ${fmt.pct(filaElegida.pEscano)} de ` +
+                      `probabilidad de lograr al menos un escaño (${filaElegida.escanosMedia.toLocaleString('es-ES', { maximumFractionDigits: 1 })} de media, de ${circ.escanos} en juego). ` +
+                      'Mira las opciones de cada papeleta en tu provincia, con las listas del BOE:'
+                    }
+                    url={enlace('/cuenta', { circ: circ.ine, partido: e.partido ?? elegida!.id, escenario: esc.id })}
+                    titulo={`${elegida!.siglas} en ${nombreLlano(circ.nombre)} · vota con datos`}
+                  />
                 )}
               </div>
             </div>

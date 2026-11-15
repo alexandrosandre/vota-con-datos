@@ -4,6 +4,7 @@ import { fase1, fmt, partido, partidos } from '../data';
 import { afinidad, AVISO_COBERTURA, UMBRAL_EMPATE, vigentes, type Valor } from '../engine/match';
 import { CabeceraPaso, Siguiente } from '../brand';
 import type { Pregunta } from '../types';
+import { Compartir, enlace } from '../compartir';
 
 const ESCALA: { v: Valor; t: string }[] = [
   { v: -2, t: 'Muy en contra' },
@@ -358,6 +359,25 @@ function Resultados() {
             })}
           </section>
         ))}
+      {(() => {
+        // Solo los de «con datos suficientes» (si no hay ninguno, los que tienen porcentaje); como mucho tres.
+        const comparables = res.filter((r) => r.comparable && r.afinidad !== null);
+        const top = (comparables.length ? comparables : evaluables).slice(0, 3);
+        if (!top.length) return null;
+        const lista = top.map((r) => `${partido(r.partido)?.siglas ?? r.partido} (${fmt.pct(r.afinidad!)})`);
+        const texto =
+          `Mi afinidad en vota con datos: ${lista.length > 1 ? `${lista.slice(0, -1).join(', ')} y ${lista[lista.length - 1]}` : lista[0]}. ` +
+          'Cada posición de los partidos, con cita y fuente. Haz tu test:';
+        return (
+          <section class="card">
+            <h2 class="h3" style={{ marginBottom: 4 }}>Compartir tu resultado</h2>
+            <p class="muted" style={{ fontSize: '0.88rem', margin: '0 0 12px' }}>
+              Se comparten tus {top.length === 1 ? 'partido más afín' : `${top.length} partidos más afines`} y un enlace al test, no tus respuestas.
+            </p>
+            <Compartir texto={texto} url={enlace('/coincide')} titulo="Mi afinidad en vota con datos" />
+          </section>
+        );
+      })()}
       {sinPosiciones.length > 0 && (
         <div class="note">
           Todavía no conocemos ninguna posición con cita de estos partidos, así que no aparecen en la lista:{' '}
