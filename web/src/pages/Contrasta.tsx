@@ -313,27 +313,22 @@ export function Contrasta() {
         Partido
         <select value={sel} onChange={(ev) => elegir((ev.target as HTMLSelectElement).value)}>
           <option value="">Elige partido…</option>
-          <optgroup label="Programa analizado">
-            {(partidos.value ?? []).filter((x) => evaluados.has(x.id) && d.partidos[x.id]?.base !== 'compromisos').map((x) => (
-              <option key={x.id} value={x.id}>
-                {x.siglas} — {x.nombre}
-              </option>
+          {[
+            { label: 'Programa analizado', xs: (partidos.value ?? []).filter((x) => evaluados.has(x.id) && d.partidos[x.id]?.base !== 'compromisos'), pend: false },
+            { label: 'Sin programa: analizados los compromisos de sus líderes', xs: (partidos.value ?? []).filter((x) => d.partidos[x.id]?.base === 'compromisos'), pend: false },
+            { label: 'Pendientes', xs: (partidos.value ?? []).filter((x) => !evaluados.has(x.id)), pend: true },
+          ]
+            // Un grupo vacío no se muestra (p. ej. «Pendientes» cuando ya están todos analizados).
+            .filter((g) => g.xs.length > 0)
+            .map((g) => (
+              <optgroup key={g.label} label={g.label}>
+                {g.xs.map((x) => (
+                  <option key={x.id} value={x.id}>
+                    {x.siglas} — {g.pend ? (x.programa.estado === 'publicado' ? 'análisis en curso' : 'sin programa aún') : x.nombre}
+                  </option>
+                ))}
+              </optgroup>
             ))}
-          </optgroup>
-          <optgroup label="Sin programa: analizados los compromisos de sus líderes">
-            {(partidos.value ?? []).filter((x) => d.partidos[x.id]?.base === 'compromisos').map((x) => (
-              <option key={x.id} value={x.id}>
-                {x.siglas} — {x.nombre}
-              </option>
-            ))}
-          </optgroup>
-          <optgroup label="Pendientes">
-            {(partidos.value ?? []).filter((x) => !evaluados.has(x.id)).map((x) => (
-              <option key={x.id} value={x.id}>
-                {x.siglas} — {x.programa.estado === 'publicado' ? 'análisis en curso' : 'sin programa aún'}
-              </option>
-            ))}
-          </optgroup>
         </select>
       </label>
 
