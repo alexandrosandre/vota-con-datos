@@ -317,14 +317,15 @@ function Resultados() {
             Con este resultado seguimos: el paso 2 empieza por tus partidos más afines y el paso 3 los usa como tu orden de preferencia.
             Allí puedes quitarlo o cambiarlo.
           </p>
-          <div class="row">
-            <button class="btn primary" onClick={() => continuar(`/contrasta/${primeros[0].partido}`)} style={{ '--c': 'var(--p2)' } as any}>
-              Paso 2: contrastar sus propuestas →
+          <button class="btn primary" onClick={() => continuar(`/contrasta/${primeros[0].partido}`)} style={{ '--c': 'var(--p2)' } as any}>
+            Paso 2: contrastar sus propuestas →
+          </button>
+          <p style={{ margin: '12px 0 0', fontSize: '0.92rem' }}>
+            O, si ya sabes a quién votar,{' '}
+            <button class="link-btn" onClick={() => continuar('/cuenta')}>
+              ve directamente al paso 3: ¿tendrá escaño tu voto? →
             </button>
-            <button class="btn" onClick={() => continuar('/cuenta')}>
-              Paso 3: ¿tendrá escaño mi voto? →
-            </button>
-          </div>
+          </p>
         </section>
       )}
       <div class="note">
