@@ -9,7 +9,11 @@ export interface Estado {
    * de escaño en tu provincia. Viene del paso 1 (ordenado por afinidad) o lo ordena la persona.
    */
   ranking: string[];
-  rankingOrigen: 'fase1' | 'manual' | null;
+  /**
+   * De dónde sale el orden: null = del paso 1 si hay resultados (siempre se usan); 'manual' = lo has puesto tú;
+   * 'ninguno' = has quitado a mano la preselección del paso 1.
+   */
+  rankingOrigen: 'fase1' | 'manual' | 'ninguno' | null;
   circ: string | null;
   partido: string | null;
   /** '' = el escenario por defecto (la media de encuestas, o 2023 durante la veda). */
@@ -34,7 +38,7 @@ const inicial: Estado = {
   circ: null,
   partido: null,
   escenario: '',
-  v: 3,
+  v: 4,
 };
 
 function cargar(): Estado {
@@ -51,6 +55,12 @@ function cargar(): Estado {
       // v3 (13-nov): la afinidad del paso 1 ya no se guarda (se guardaba mal, 0–1 redondeado, y se quedaba
       // desfasada si cambiaban las posiciones); el paso 3 la recalcula (paso1.ts).
       if ((e.v ?? 1) < 3) e.v = 3;
+      // v4 (15-nov): el resultado del paso 1 se usa siempre en los pasos 2 y 3 (ya no hace falta «guardarlo»). El partido
+      // que se guardaba al pulsar los botones del paso 1 era el más afín de entonces: se olvida para que salga el de ahora.
+      if ((e.v ?? 1) < 4) {
+        if (e.rankingOrigen === 'fase1') e.partido = null;
+        e.v = 4;
+      }
       delete e.afinidades;
       delete e.incertidumbre;
       return e;

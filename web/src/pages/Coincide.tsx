@@ -5,6 +5,7 @@ import { afinidad, AVISO_COBERTURA, UMBRAL_EMPATE, vigentes, type Valor } from '
 import { CabeceraPaso, Siguiente } from '../brand';
 import type { Pregunta } from '../types';
 import { Compartir, enlace } from '../compartir';
+import { paso1 } from '../paso1';
 
 const ESCALA: { v: Valor; t: string }[] = [
   { v: -2, t: 'Muy en contra' },
@@ -282,13 +283,14 @@ function Resultados() {
   const [abierto, setAbierto] = useState<string | null>(null);
   const evaluables = res.filter((r) => r.afinidad !== null);
 
-  // El orden del paso 1 no se copia: el paso 3 lo recalcula siempre con tus respuestas y los datos de hoy (paso1.ts).
-  const guardar = () =>
-    actualizar({
-      ranking: evaluables.map((r) => r.partido),
-      rankingOrigen: 'fase1',
-      partido: evaluables[0]?.partido ?? null,
-    });
+  // Los pasos 2 y 3 usan siempre este resultado (paso1.ts), recalculado con tus respuestas y los datos de hoy. Ir desde
+  // aquí lo vuelve a activar si lo habías quitado a mano, y deja que el paso 2 empiece por el partido más afín.
+  const continuar = (ruta: string) => {
+    actualizar({ rankingOrigen: null, partido: null });
+    ir(ruta);
+  };
+  const comparables = res.filter((r) => r.comparable && r.afinidad !== null);
+  const primeros = (comparables.length ? comparables : evaluables).slice(0, 3);
 
   if (respondidas < 5)
     return (
@@ -300,6 +302,31 @@ function Resultados() {
 
   return (
     <div class="stack">
+      {primeros.length > 0 && (
+        <section class="card siguientes-paso1">
+          <h2 class="h3" style={{ margin: 0 }}>
+            Tus partidos más afines:{' '}
+            {primeros.map((r, i) => (
+              <span key={r.partido} class="nowrap">
+                {i > 0 ? (i === primeros.length - 1 ? ' y ' : ', ') : ''}
+                {partido(r.partido)?.siglas ?? r.partido} ({fmt.pct(r.afinidad!)})
+              </span>
+            ))}
+          </h2>
+          <p class="muted" style={{ fontSize: '0.9rem', margin: '6px 0 14px' }}>
+            Con este resultado seguimos: el paso 2 empieza por tus partidos más afines y el paso 3 los usa como tu orden de preferencia.
+            Allí puedes quitarlo o cambiarlo.
+          </p>
+          <div class="row">
+            <button class="btn primary" onClick={() => continuar(`/contrasta/${primeros[0].partido}`)} style={{ '--c': 'var(--p2)' } as any}>
+              Paso 2: contrastar sus propuestas →
+            </button>
+            <button class="btn" onClick={() => continuar('/cuenta')}>
+              Paso 3: ¿tendrá escaño mi voto? →
+            </button>
+          </div>
+        </section>
+      )}
       <div class="note">
         <strong>La afinidad</strong> mide cuánto se parecen tus respuestas a la posición de cada partido, con cita y fuente, en las{' '}
         {respondidas} afirmaciones que respondiste. No es una recomendación de voto: es un espejo. Si dos partidos se separan menos de{' '}
@@ -365,8 +392,7 @@ function Resultados() {
         ))}
       {(() => {
         // Solo los de «con datos suficientes» (si no hay ninguno, los que tienen porcentaje); como mucho tres.
-        const comparables = res.filter((r) => r.comparable && r.afinidad !== null);
-        const top = (comparables.length ? comparables : evaluables).slice(0, 3);
+        const top = primeros;
         if (!top.length) return null;
         const lista = top.map((r) => `${partido(r.partido)?.siglas ?? r.partido} (${fmt.pct(r.afinidad!)})`);
         const texto =
@@ -389,25 +415,6 @@ function Resultados() {
         </div>
       )}
       <div class="row">
-        <button
-          class="btn primary"
-          onClick={() => {
-            guardar();
-            ir(`/contrasta/${evaluables[0]?.partido ?? ''}`);
-          }}
-          style={{ '--c': 'var(--p2)' } as any}
-        >
-          Contrastar mis partidos más afines →
-        </button>
-        <button
-          class="btn"
-          onClick={() => {
-            guardar();
-            ir('/cuenta');
-          }}
-        >
-          Ir directamente al paso 3
-        </button>
         <a class="btn ghost" href="#/coincide">
           Revisar respuestas
         </a>
@@ -465,7 +472,8 @@ export function Coincide() {
         {sub ? 'Tus resultados, con la fuente de cada posición.' : 'Propuestas reales de esta campaña, sin siglas. Al final, con quién coincides y en qué.'}
       </CabeceraPaso>
       {body}
-      <Siguiente desde="coincide" />
+      {/* En los resultados, el recuadro de arriba ya lleva a los pasos 2 y 3 con este resultado. */}
+      {!(sub && paso1.value) && <Siguiente desde="coincide" />}
     </div>
   );
 }

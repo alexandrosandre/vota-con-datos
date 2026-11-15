@@ -3,7 +3,7 @@ import { actualizar, estado, ir, ruta } from '../store';
 import { Compartir, enlace } from '../compartir';
 import { fase3, fmt, partido, partidos } from '../data';
 import { CabeceraPaso, Siguiente } from '../brand';
-import { rankingActual } from '../paso1';
+import { origenOrden, partidoPreferido, paso1, rankingActual } from '../paso1';
 import type { Propuesta, Valoracion } from '../types';
 
 const VAL: Record<Valoracion, string> = {
@@ -242,7 +242,10 @@ function Promesas({ id }: { id: string }) {
 export function Contrasta() {
   const d = fase3.value!;
   const e = estado.value;
-  const sel = ruta.value.split('/')[2] || e.partido || '';
+  const origen = origenOrden.value;
+  const enRuta = ruta.value.split('/')[2] || '';
+  // Sin partido en la dirección: el que elegiste o, si tienes resultado del paso 1, el más afín.
+  const sel = enRuta || partidoPreferido.value || '';
   // Enlace compartido a una propuesta: #/contrasta/<partido>/<propuesta>
   const propSel = (ruta.value.split('/')[3] ?? '').split('?')[0];
   const p = partido(sel);
@@ -258,7 +261,11 @@ export function Contrasta() {
     return () => clearTimeout(t);
   }, [propSel, sel]);
   const evaluados = new Set(Object.entries(d.partidos).filter(([, v]) => v.estado === 'evaluado').map(([k]) => k));
-  const afines = e.rankingOrigen ? rankingActual.value.slice(0, 4) : [];
+  const afines = origen ? rankingActual.value.slice(0, 4) : [];
+  // Lo que miras aquí pasa al paso 3 (también si llegas con un enlace a un partido).
+  useEffect(() => {
+    if (enRuta && partido(enRuta) && enRuta !== partidoPreferido.value) actualizar({ partido: enRuta });
+  }, [enRuta]);
   const elegir = (v: string) => {
     actualizar({ partido: v || null });
     ir(`/contrasta/${v}`);
@@ -275,7 +282,12 @@ export function Contrasta() {
       {afines.length > 0 && (
         <div style={{ marginBottom: 14 }}>
           <div class="muted" style={{ fontSize: '0.85rem', marginBottom: 6 }}>
-            {e.rankingOrigen === 'fase1' ? 'Tus partidos más afines (paso 1):' : 'Tu orden de preferencia:'}
+            {origen === 'fase1' ? 'Tus partidos más afines (paso 1):' : 'Tu orden de preferencia:'}{' '}
+            {origen === 'fase1' && (
+              <button class="link-btn" onClick={() => actualizar({ rankingOrigen: 'ninguno', partido: null })}>
+                Quitar esta preselección
+              </button>
+            )}
           </div>
           <div class="chips">
             {afines.map((id) => (
@@ -286,6 +298,15 @@ export function Contrasta() {
             ))}
           </div>
         </div>
+      )}
+
+      {!origen && paso1.value && e.rankingOrigen === 'ninguno' && (
+        <p class="muted" style={{ fontSize: '0.85rem', margin: '0 0 14px' }}>
+          Has quitado la preselección del paso 1.{' '}
+          <button class="link-btn" onClick={() => actualizar({ rankingOrigen: null })}>
+            Volver a usar mis partidos más afines
+          </button>
+        </p>
       )}
 
       <label class="field" style={{ maxWidth: 420 }}>
@@ -383,6 +404,18 @@ export function Contrasta() {
                 titulo={`${p.siglas}, contrastado · vota con datos`}
               />
             </div>
+            <a
+              class="siguiente p3"
+              style={{ marginTop: 0 }}
+              href="#/cuenta"
+              onClick={() => {
+                if (sel !== partidoPreferido.value) actualizar({ partido: sel });
+              }}
+            >
+              <span class="muted">Paso 3 · Suma</span>
+              <strong>¿Tu voto a {p.siglas} tendrá escaño en tu provincia?</strong>
+              <span aria-hidden="true">→</span>
+            </a>
             {datos.propuestas.map((x, i) => (
               <TarjetaPropuesta key={x.id} p={x} n={i + 1} partidoId={sel} destacada={x.id === propSel} />
             ))}
