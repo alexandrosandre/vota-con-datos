@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from 'preact/hooks';
+import { useMemo } from 'preact/hooks';
 import { actualizar, estado } from '../store';
 import { fase2, fmt, partido } from '../data';
 import { simular, veredicto, type ResultadoSim } from '../engine/seats';
@@ -301,30 +301,8 @@ export function Cuenta() {
       </div>
     ) : null;
 
-  // Con provincia y papeleta ya elegidas (por enlace, por el paso 1 o por la persona), primero la respuesta y el
-  // formulario se pliega debajo; si falta algo, el formulario va arriba.
-  const listo = !!(circ && filaElegida);
-  // Al completar provincia y papeleta, el formulario de arriba desaparece (se pliega bajo la respuesta): el foco
-  // pasa al título de la respuesta para no perderse. Al llegar ya completo (por un enlace), no se toca.
-  const tituloRespuesta = useRef<HTMLHeadingElement>(null);
-  const antes = useRef(listo);
-  const formularioArriba = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const enVista = (el: HTMLElement) => {
-      const r = el.getBoundingClientRect();
-      if (r.top < 70 || r.top > innerHeight - 60) el.scrollIntoView({ block: 'center', behavior: 'instant' });
-    };
-    if (listo && !antes.current && tituloRespuesta.current) {
-      tituloRespuesta.current.focus({ preventScroll: true });
-      enVista(tituloRespuesta.current);
-    } else if (!listo && antes.current && formularioArriba.current) {
-      // Se deshizo la selección (p. ej. otra provincia donde ese partido no se presenta): el formulario vuelve arriba.
-      const s = formularioArriba.current.querySelector('select');
-      s?.focus({ preventScroll: true });
-      if (s) enVista(s);
-    }
-    antes.current = listo;
-  }, [listo]);
+  // El selector (provincia, papeleta y datos) va siempre arriba y desplegado, compacto en el móvil para que la
+  // respuesta quede a la vista sin desplazarse (petición del editor, 15-nov).
   const formulario = (
     <>
 
@@ -401,28 +379,7 @@ export function Cuenta() {
         </CabeceraPaso>
       </div>
 
-      {!listo && (
-        <div class="card" ref={formularioArriba}>
-          {formulario}
-        </div>
-      )}
-      {listo && (
-        <p class="muted elegido-resumen" style={{ margin: '0 0 4px', fontSize: '0.92rem' }}>
-          {nombreLlano(circ!.nombre)} · {elegida!.siglas} · {esc.nombre} ·{' '}
-          <button
-            class="link-btn"
-            onClick={() => {
-              const d = document.querySelector<HTMLDetailsElement>('details.cambiar-datos');
-              if (!d) return;
-              d.open = true;
-              d.scrollIntoView({ block: 'start', behavior: 'instant' });
-              d.querySelector('select')?.focus({ preventScroll: true });
-            }}
-          >
-            Cambiar
-          </button>
-        </p>
-      )}
+      <div class="card selector-p3">{formulario}</div>
 
       {enVeda && (
         <div class="note" style={{ marginTop: 14 }}>
@@ -435,7 +392,7 @@ export function Cuenta() {
           {noSePresenta && (
             <div class="card reco">
               <h2 class="h3">
-                <MarcaPartido pid={pref} size={26} /> {partido(pref)?.siglas ?? pref} no se presenta en {circ.nombre}
+                <MarcaPartido pid={pref} size={26} /> {partido(pref)?.siglas ?? pref} no se presenta en {nombreLlano(circ.nombre)}
               </h2>
               <p>
                 No figura entre las candidaturas oficiales de esta provincia en el{' '}
@@ -453,11 +410,11 @@ export function Cuenta() {
               : ''}
           </p>
           {filaElegida && (
-            <div class="card">
+            <div class="card respuesta-p3">
               <div class="row" style={{ justifyContent: 'space-between', alignItems: 'flex-start' }}>
                 <div>
                   <div class="muted">{elegida!.denominacion} · {circ.nombre}</div>
-                  <h2 ref={tituloRespuesta} tabIndex={-1} style={{ margin: '4px 0 10px', display: 'flex', alignItems: 'center', gap: 10 }}>
+                  <h2 style={{ margin: '4px 0 10px', display: 'flex', alignItems: 'center', gap: 10 }}>
                     <MarcaPartido cand={elegida!} size={34} /> {elegida!.siglas}
                   </h2>
                   {enCoalicion && <p style={{ margin: '0 0 10px' }}>{enCoalicion}</p>}
@@ -532,12 +489,6 @@ export function Cuenta() {
             </div>
           )}
 
-          {listo && (
-            <details class="card desplegable cambiar-datos">
-              <summary>Cambiar provincia, papeleta o datos</summary>
-              <div style={{ marginTop: 12 }}>{formulario}</div>
-            </details>
-          )}
 
 
           <div class="card">

@@ -467,3 +467,17 @@ html[data-tema="campana"] .cab-paso.compacta h1 { font-size: clamp(1.7rem, 4vw, 
 /* Paso 2 compacto: filas plegables */
 html[data-tema="campana"] .prop-fila .prop-titulo { font-size: 1.22rem; font-weight: 800; font-stretch: 85%; color: #fff; }
 html[data-tema="campana"] .prop-fila .tira i { border-radius: 0; }
+/* Paso 3: selector siempre arriba, compacto en el móvil para que la respuesta se vea sin desplazarse */
+@media (max-width: 760px) {
+  html[data-tema="campana"] .card.selector-p3 { padding: 12px 14px 8px; }
+  html[data-tema="campana"] .selector-p3 .grid-3 { gap: 8px; }
+  html[data-tema="campana"] .selector-p3 label.field { gap: 3px; font-size: 0.7rem; }
+  html[data-tema="campana"] .selector-p3 select { padding-top: 8px; padding-bottom: 8px; font-size: 0.95rem; }
+  html[data-tema="campana"] .selector-p3 details { margin-top: 6px !important; }
+}
+@media (max-width: 760px) {
+  html[data-tema="campana"] .respuesta-p3 > .row > div:first-child > .muted { font-size: 0.8rem; }
+  html[data-tema="campana"] .respuesta-p3 h2 { font-size: 1.45rem; margin: 2px 0 8px !important; overflow-wrap: anywhere; }
+  html[data-tema="campana"] .respuesta-p3 .big { font-size: 3.2rem; }
+  html[data-tema="campana"] .respuesta-p3 > .row { row-gap: 8px; }
+}
