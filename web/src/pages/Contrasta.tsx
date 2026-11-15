@@ -22,7 +22,7 @@ const SIMBOLO: Record<Valoracion, string> = { favorable: '✓', mixta: '~', desf
 /** Nombres cortos de las columnas (el nombre completo y la pregunta, en «¿Qué mide cada columna?»). */
 const CORTO: Record<string, string> = {
   concrecion: 'Concreción', legal: 'Encaje legal', financiacion: 'Financiación', evidencia: 'Evidencia',
-  internacional: 'Otros países', antecedentes: 'Antecedentes', beneficiarios: 'Beneficiarios', largo_plazo: 'Largo plazo',
+  antecedentes: 'Antes en España', internacional: 'Antes fuera de España', beneficiarios: 'Beneficiarios', largo_plazo: 'Largo plazo',
 };
 
 function Casilla({ v }: { v: Valoracion }) {
