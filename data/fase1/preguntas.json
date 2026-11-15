@@ -738,28 +738,56 @@
    "nota_revision": "Reformulada el 9-nov-2026: «impulsar» era vago. Contexto con fuente (RD 150/2023 y RD 962/2024); se quita «España aún no tiene parques comerciales», que no pude verificar en fuente oficial. Las dos posiciones de origen son locales (Gran Canaria a favor con condiciones; Galicia en contra)."
   },
   {
-   "id": "q20",
+   "id": "q36",
    "tema": "Energía y clima",
-   "texto": "Reducir las emisiones de gases de efecto invernadero de España al menos un 65 % en 2030 respecto a 1990.",
-   "contexto": "El objetivo vigente del Plan Nacional Integrado de Energía y Clima es reducirlas un 32 % en 2030 respecto a 1990. Según el avance del inventario oficial, en 2025 las emisiones brutas de España eran un 4,8 % inferiores a las de 1990.",
-   "contexto_fuente": "https://www.miteco.gob.es/es/ministerio/planes-estrategias/plan-nacional-integrado-energia-clima.html",
-   "polaridad": "progresista",
+   "texto": "Alargar el funcionamiento de las centrales nucleares más allá del calendario de cierre acordado en 2019 (de 2027 a 2035).",
+   "contexto": "El calendario que firmaron en marzo de 2019 las empresas propietarias de las centrales y Enresa, la empresa pública de residuos radiactivos, y que recoge el 7.º Plan General de Residuos Radiactivos aprobado en 2023, prevé cerrar los siete reactores en funcionamiento entre 2027 y 2035. En agosto de 2026 el Gobierno prorrogó hasta junio de 2030 los dos reactores de Almaraz, que debían cerrar en 2027 y 2028, sin cambiar las demás fechas ni el cierre de todos en 2035.",
+   "contexto_fuente": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-440",
+   "contexto_fuentes_adicionales": [
+    "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-440 (Acuerdo del Consejo de Ministros de 27-12-2023 que aprueba el 7.º PGRR: «cese ordenado de explotación de los siete reactores nucleares actualmente en funcionamiento» entre 2027 y 2035, «de acuerdo con lo establecido en el PNIEC y en el Protocolo firmado por ENRESA y los propietarios de las centrales nucleares en marzo de 2019»; copia local data/sources/boe/BOE-A-2024-440.xml, sha256 73423780f8b0dc53ce7dac76bdaaba73adf3497940cd05c6379ab17a371af247)",
+    "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17756 (Orden TED/864/2026, de 12 de agosto, BOE del 14-8-2026: Almaraz I y II hasta el 8-6-2030, antes 1-11-2027 y 31-10-2028; extensión de unos 31 y 19 meses «no alterándose el resto del calendario ni la fecha de cese definitivo del conjunto del parque nuclear a 2035»; copia local data/sources/boe/BOE-A-2026-17756.xml, sha256 0ce72f295a5b66f455f9bfe4a2004cc882be17d2c07b95e26a702b1e0bfa421f)"
+   ],
+   "polaridad": "conservadora",
    "origen": [
     {
-     "partido": "erc",
+     "partido": "pp",
      "tipo": "programa",
-     "cita": "Alinear la planificació energètica i climàtica amb els objectius científics. Cal assegurar el compliment amb els objectius de reducció d’emissions de CO2 d’almenys el 65 % el 2030 i del 95 % el 2040, respecte a 1990.",
-     "pagina": 32,
-     "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+     "cita": "ELIMINAREMOS EL CALENDARIO DE CIERRE DE ALMARAZ, ASCÓ, VANDELLÓS, COFRENTES Y TRILLO. En los primeros cien días de Gobierno tramitaremos la extensión de su vida útil con el visto bueno del Consejo de Seguridad Nuclear, garantizando la seguridad de las instalaciones.",
+     "pagina": 71,
+     "url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
      "sentido": "a_favor",
-     "ref": "extraccion:erc-m153"
+     "ref": "revision_2026-11-15:pp#q36"
+    },
+    {
+     "partido": "vox",
+     "tipo": "programa",
+     "cita": "Se garantizará la supervivencia de las centrales nucleares actuales, derogando el calendario de cierre.",
+     "pagina": 10,
+     "url": "https://votasentidocomun.es/general/files/programa-elecct-vox.pdf",
+     "sentido": "a_favor",
+     "ref": "revision_2026-11-15:vox#q36"
+    },
+    {
+     "partido": "psoe",
+     "tipo": "programa",
+     "cita": "Mantener el calendario de cierre de las centrales nucleares hasta 2035 y desarrollar proyectos de transición justa en las comarcas afectadas, preservando las capacidades tecnológicas y de conocimiento vinculadas al sector.",
+     "pagina": 66,
+     "url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+     "sentido": "en_contra",
+     "ref": "revision_2026-11-15:psoe#q36"
+    },
+    {
+     "partido": "compromis",
+     "tipo": "programa",
+     "cita": "Mantindrem el calendari de tancament de les centrals nuclears i no acceptarem cap nova pròrroga",
+     "pagina": 30,
+     "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf",
+     "sentido": "en_contra",
+     "ref": "revision_2026-11-15:compromis#q36"
     }
    ],
-   "texto_anterior": "Comprometerse a reducir las emisiones de gases de efecto invernadero un 65 % en 2030 respecto a 1990.",
-   "contexto_fuentes_adicionales": [
-    "https://www.miteco.gob.es/content/dam/miteco/es/calidad-y-evaluacion-ambiental/temas/sistema-espanol-de-inventario-sei-/Nota-Avance-GEI-2025.pdf"
-   ],
-   "nota_revision": "Reformulada el 9-nov-2026: «comprometerse» no decía quién; se añade «de España» y «al menos», como en ERC. El contexto añade el nivel actual (−4,8 % en 2025, avance MITECO del 22-6-2026). ERC habla de CO2; se mantiene «gases de efecto invernadero»."
+   "nota_revision": "Nueva el 15-nov-2026 (revisión de cobertura tras el programa del PSOE, data/fase1/revision_afirmaciones_2026-11-15/analisis.md; decisión del editor: un solo cambio); ocupa el hueco de q20, retirada. Codificada para los 18 partidos en codificacion_g12.json, pendiente de verificación independiente (hasta que exista verificacion_g12.json aprobado, build_fase1.py omite el grupo y q36 se publica sin posiciones). Texto propuesto por el análisis, sin cambios: los hechos que menciona (calendario de 2019, de 2027 a 2035) constan en el BOE. Contexto comprobado en el BOE el 15-nov: 7.º PGRR (BOE-A-2024-440) y Orden TED/864/2026 de la prórroga de Almaraz (BOE-A-2026-17756).",
+   "texto_anterior": null
   },
   {
    "id": "q21",
@@ -1572,6 +1600,40 @@
     ],
     "fuente": "data/fase1/revision_afirmaciones_2026-11-13/ (informe.md, verificacion.md; decisión final del editor en integracion.md)"
    }
+  },
+  {
+   "id": "q20",
+   "tema": "Energía y clima",
+   "texto": "Reducir las emisiones de gases de efecto invernadero de España al menos un 65 % en 2030 respecto a 1990.",
+   "contexto": "El objetivo vigente del Plan Nacional Integrado de Energía y Clima es reducirlas un 32 % en 2030 respecto a 1990. Según el avance del inventario oficial, en 2025 las emisiones brutas de España eran un 4,8 % inferiores a las de 1990.",
+   "contexto_fuente": "https://www.miteco.gob.es/es/ministerio/planes-estrategias/plan-nacional-integrado-energia-clima.html",
+   "polaridad": "progresista",
+   "origen": [
+    {
+     "partido": "erc",
+     "tipo": "programa",
+     "cita": "Alinear la planificació energètica i climàtica amb els objectius científics. Cal assegurar el compliment amb els objectius de reducció d’emissions de CO2 d’almenys el 65 % el 2030 i del 95 % el 2040, respecte a 1990.",
+     "pagina": 32,
+     "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+     "sentido": "a_favor",
+     "ref": "extraccion:erc-m153"
+    }
+   ],
+   "texto_anterior": "Comprometerse a reducir las emisiones de gases de efecto invernadero un 65 % en 2030 respecto a 1990.",
+   "contexto_fuentes_adicionales": [
+    "https://www.miteco.gob.es/content/dam/miteco/es/calidad-y-evaluacion-ambiental/temas/sistema-espanol-de-inventario-sei-/Nota-Avance-GEI-2025.pdf"
+   ],
+   "nota_revision": "Reformulada el 9-nov-2026: «comprometerse» no decía quién; se añade «de España» y «al menos», como en ERC. El contexto añade el nivel actual (−4,8 % en 2025, avance MITECO del 22-6-2026). ERC habla de CO2; se mantiene «gases de efecto invernadero».",
+   "retirada": {
+    "fecha": "2026-11-15",
+    "motivo": "Solo 3 partidos con posición (PP −1, Vox −1, ERC +2) y sin recorrido: el programa del PSOE no da objetivo de emisiones para 2030 y el de Compromís solo habla de neutralidad en 2050. Energía y clima conserva q19 y gana q36 (prórroga de las centrales nucleares), que enfrenta a más partidos; PP, Vox y ERC tienen posición también en q36, así que ningún partido pierde su posición en el tema.",
+    "partidos_con_posicion": [
+     "erc",
+     "pp",
+     "vox"
+    ],
+    "fuente": "data/fase1/revision_afirmaciones_2026-11-15/analisis.md (decisión del editor del 15-nov: retirar q20 y añadir q36)"
+   }
   }
  ],
  "auditoria": {
@@ -2084,7 +2146,8 @@
    "contexto_fuente: abiertas y comprobadas el 8-11-2026 las URL del BOE (título y cifra citada), la página del PNIEC 2023-2030 del MITECO (32 %) y la declaración de la cumbre de la OTAN de La Haya (3,5 % en 2035). Sin URL (null) van los contextos sin cifras; las afirmaciones de hechos recientes sin fuente (rechazo de la jornada de 37,5 h en 2025, proyecto de condonación de deuda de 2025, rebaja del IVA de alimentos en 2023-2024, planes de ordenación del espacio marítimo de 2023, reforma de la Ley de Extranjería de 2025, «alrededor del 2,1 %» de la OTAN) conviene comprobarlas antes de publicar.",
    "Sin cobertura documentada de: EH Bildu, PNV (salvo una parcial en reserva), PSC, Ara Més-Front Ampli y Adelante Andalucía. Teruel Existe tiene promesas en promesas.json pero no está en partidos.json; no se usa.",
    "Revisión de redacción del 9-11-2026 (data/fase1/revision_redaccion_2026-11-09.md): reescritas las afirmaciones señaladas en docs/research/auditoria_preguntas.md salvo q05 (ya hecha); q15 y q29 se reescribieron con la redacción decidida por el editor. Cada una lleva texto_anterior (si cambió) y nota_revision. Todas las cifras y hechos legales de sus contextos se comprobaron el 9-11-2026 en la fuente oficial enlazada en contexto_fuente; cuando hizo falta más de una, las demás van en contexto_fuentes_adicionales (campo no publicado). Los origen.sentido se ajustaron al nuevo texto; las posiciones de los codificadores (codificacion_g*.json) no se han tocado y deben revisarse donde la revisión lo indica.",
-   "Revisión de cobertura del 13-11-2026 (data/fase1/revision_afirmaciones_2026-11-13/; decisión final en integracion.md): se retiran q02, q07, q10, q14 y q28 (lista «retiradas», con fecha, motivo y los partidos que tenían posición; sus celdas siguen en codificacion_g*.json como historial, pero build_fase1.py ya no las publica) y se añaden q31-q35 (ids nuevos; los retirados no se reutilizan). Recuento de temas tras la revisión: {\"Vivienda\": 3, \"Fiscalidad\": 2, \"Empleo y salarios\": 2, \"Pensiones\": 1, \"Sanidad\": 1, \"Educación\": 2, \"Inmigración\": 3, \"Modelo territorial\": 3, \"Energía y clima\": 2, \"Igualdad y derechos\": 2, \"Seguridad y justicia\": 3, \"Instituciones\": 1, \"Exterior y defensa\": 3, \"Medio rural\": 1, \"Economía\": 1}; polaridad: {\"progresista\": 13, \"conservadora\": 10, \"territorial\": 5, \"neutral\": 2}. Los recuentos de arriba son los del 8-11-2026."
+   "Revisión de cobertura del 13-11-2026 (data/fase1/revision_afirmaciones_2026-11-13/; decisión final en integracion.md): se retiran q02, q07, q10, q14 y q28 (lista «retiradas», con fecha, motivo y los partidos que tenían posición; sus celdas siguen en codificacion_g*.json como historial, pero build_fase1.py ya no las publica) y se añaden q31-q35 (ids nuevos; los retirados no se reutilizan). Recuento de temas tras la revisión: {\"Vivienda\": 3, \"Fiscalidad\": 2, \"Empleo y salarios\": 2, \"Pensiones\": 1, \"Sanidad\": 1, \"Educación\": 2, \"Inmigración\": 3, \"Modelo territorial\": 3, \"Energía y clima\": 2, \"Igualdad y derechos\": 2, \"Seguridad y justicia\": 3, \"Instituciones\": 1, \"Exterior y defensa\": 3, \"Medio rural\": 1, \"Economía\": 1}; polaridad: {\"progresista\": 13, \"conservadora\": 10, \"territorial\": 5, \"neutral\": 2}. Los recuentos de arriba son los del 8-11-2026.",
+   "Revisión de cobertura del 15-11-2026, tras el programa del PSOE (data/fase1/revision_afirmaciones_2026-11-15/analisis.md; decisión del editor): se retira q20 (lista «retiradas») y se añade q36 (prórroga de las centrales nucleares) en su lugar, en Energía y clima, codificada en codificacion_g12.json. El recuento de temas no cambia; polaridad: {\"progresista\": 12, \"conservadora\": 11, \"territorial\": 5, \"neutral\": 2}."
   ]
  }
 }

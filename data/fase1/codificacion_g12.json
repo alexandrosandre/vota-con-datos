@@ -1,0 +1,364 @@
+{
+ "grupo": "g12",
+ "codificador": "Claude (Anthropic) — codificación de q36 (prórroga de las centrales nucleares) para los 18 partidos, 15-nov-2026, protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13-nov («A qué partido cuenta cada fuente»)",
+ "fecha": "2026-11-15",
+ "nota": "Afirmación nueva q36 («Alargar el funcionamiento de las centrales nucleares más allá del calendario de cierre acordado en 2019 (de 2027 a 2035).»), que sustituye a q20 por decisión del editor del 15-nov (data/fase1/revision_afirmaciones_2026-11-15/analisis.md). Una celda por partido (18), con valor o null y el motivo. Se partió de la evidencia del análisis: cada cita se volvió a leer en su fuente (programas catalogados en partidos.json y copias locales del Diario de Sesiones) y se buscaron de nuevo los partidos sin posición (UPN, PNV, SALF, BNG, CC, UPC, Adelante Andalucía) en sus programas, en las 46 copias locales del Diario de Sesiones del Congreso y del Senado y en la web. Precedencia: el programa oficial va primero; entre declaraciones, la posterior; si coinciden en el valor, la fuente propia del partido sobre el documento conjunto (Podemos, Frente Amplio y ERC firman el programa de Compromís: Front Valencià, que dice lo mismo, −2). Dudas para el verificador: PSOE (−1 o −2), PSC (0, +1 o null), Ara Més (si Vidal habla por MÉS; −2 o −1), EH Bildu (adhesión por remisión; −2 o −1) y Junts (+1). PENDIENTE DE VERIFICACIÓN INDEPENDIENTE: sin verificacion_g12.json, build_fase1.py omite este grupo y q36 se publica sin posiciones.",
+ "fuentes": [
+  {
+   "ruta": "data/sources/programas/pp/LA-RECONSTRUCCION-NACIONAL.pdf",
+   "url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+   "sha256": "cea8f2a052278e51ad682d19444eb0e9089997adbde8df76babf7f236bb5ffbe",
+   "usos": [
+    "pp/q36"
+   ]
+  },
+  {
+   "ruta": "data/sources/programas/psoe/PROGRAMAPSOE29N26.pdf",
+   "url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+   "sha256": "e9c8341339538b550641b6ddb1c3fdfeef7fda6a8a1a4be9e8d6a44cbc229bf5",
+   "usos": [
+    "psoe/q36"
+   ]
+  },
+  {
+   "ruta": "data/sources/programas/vox/programa-elecct-vox.pdf",
+   "url": "https://votasentidocomun.es/general/files/programa-elecct-vox.pdf",
+   "sha256": "77d2158a9a57b812dc75ebf94529501f009114d5f9a3678afd56bb4c97204567",
+   "usos": [
+    "vox/q36"
+   ]
+  },
+  {
+   "ruta": "data/sources/programas/compromis/programa-compromis-front-valencia.pdf",
+   "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf",
+   "sha256": "37b569d6ac31a21a8f972dcfd5be3740c32f50fe1c6f3e87c9a1f68027ee6b55",
+   "usos": [
+    "compromis/q36",
+    "podemos/q36 (documento conjunto, en nota)",
+    "frente_amplio/q36 (documento conjunto, en nota)",
+    "erc/q36 (documento conjunto, en nota)"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/g7_2026-11-14/junts/DSCD-15-PL-202.txt",
+   "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-202.PDF",
+   "sha256": "ff22c4848062a679e7a98ca24000bf5f6332c3b8fe59a3f91869c19a98757bbf",
+   "usos": [
+    "frente_amplio/q36",
+    "ara_mes_fa/q36",
+    "erc/q36",
+    "junts/q36",
+    "eh_bildu/q36",
+    "upn/q36 (null)",
+    "pnv/q36 (null)"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/revision_2026-11-15/DSCD-15-PL-151.pdf",
+   "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-151.PDF",
+   "sha256": "b9cd63c60c6dc6e486ca66bcfda356e3177a770aee192ba083b504fe1c295433",
+   "usos": [
+    "podemos/q36",
+    "eh_bildu/q36 (en nota)"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/revision_2026-11-15/DSCD-15-PL-151.txt",
+   "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-151.PDF",
+   "sha256": "f56b76977bec570421a19e2a169b81a0c3a7c68946063cb42b7a15357331d6fa",
+   "usos": [
+    "podemos/q36",
+    "eh_bildu/q36 (en nota)"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/ampliacion_2026-11-13/vox/DS_P_15_101.txt",
+   "url": "https://www.senado.es/legis15/publicaciones/pdf/senado/ds/DS_P_15_101.PDF",
+   "sha256": "0881c9a8d55192fdf6c53effd5431b77eeed4e210d6124a3bbe9f77a3fd996d5",
+   "usos": [
+    "eh_bildu/q36 (en nota)"
+   ]
+  },
+  {
+   "ruta": "data/sources/compromisos/psc/diaridetarragona_20261114_montalvo_entrevista.txt",
+   "url": "https://www.diaridetarragona.com/tarragona/275692/ione-montalvo-candidata-psc-tarragona-gente-motivos-enfadada.html",
+   "sha256": "b02b23e4e4d33a247b78a3f7f48648a740a500f30707642dd56109c83323b751",
+   "usos": [
+    "psc/q36"
+   ],
+   "uso": "descartada por la verificación independiente (15-nov)"
+  }
+ ],
+ "posiciones": {
+  "pp": {
+   "q36": {
+    "valor": 2,
+    "fuente": "programa",
+    "cita": "ELIMINAREMOS EL CALENDARIO DE CIERRE DE ALMARAZ, ASCÓ, VANDELLÓS, COFRENTES Y TRILLO. En los primeros cien días de Gobierno tramitaremos la extensión de su vida útil con el visto bueno del Consejo de Seguridad Nuclear, garantizando la seguridad de las instalaciones.",
+    "pagina": 71,
+    "url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+    "medio": "Programa oficial (La Reconstrucción Nacional, 82 pp.)",
+    "fecha": "2026-11-10",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, medida 228 (p. 71 del PDF), primera del apartado «4.9 España puede ser potencia energética de Europa». Propone de forma expresa y prioritaria (en los cien primeros días) eliminar el calendario de cierre de las cinco centrales y alargar su vida útil: +2."
+   }
+  },
+  "upn": {
+   "q36": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Sin programa propio publicado (partidos.json, 14-nov). La única mención en plazo es de Alberto Catalán Higueras (Pleno núm. 202, 9-sep-2026, p. 111): «Nosotros, desde Navarra, hemos venido dando ejemplo, lo cual no quiere decir que no sea compatible con otro tipo de fuentes energéticas, como puede ser la nuclear». No habla del calendario ni de la prórroga: demasiado genérico. El voto de UPN a la enmienda del PP del 13-nov-2025 (DS núm. 151) es una votación sin palabras del líder y no cuenta. Las declaraciones de Feijóo no cuentan para UPN. Búsqueda web («UPN centrales nucleares calendario cierre») sin resultados. [Revisión de afirmaciones del 15-nov (data/fase1/revision_afirmaciones_2026-11-15/analisis.md).]"
+   }
+  },
+  "psoe": {
+   "q36": {
+    "valor": -1,
+    "fuente": "programa",
+    "cita": "Mantener el calendario de cierre de las centrales nucleares hasta 2035 y desarrollar proyectos de transición justa en las comarcas afectadas, preservando las capacidades tecnológicas y de conocimiento vinculadas al sector.",
+    "pagina": 66,
+    "url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+    "medio": "Programa oficial (La fuerza de seguir avanzando, 114 pp.)",
+    "fecha": "2026-11-15",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, compromiso 240 (p. 66 del PDF). Se opone a alargar las centrales más allá del calendario. −1 y no −2: es un compromiso más de una lista y no rechaza expresamente las prórrogas; «hasta 2035» se refiere al horizonte final, y el Gobierno del PSOE prorrogó Almaraz hasta junio de 2030 (Orden TED/864/2026, BOE-A-2026-17756) afirmando que eso no altera «el resto del calendario ni la fecha de cese definitivo del conjunto del parque nuclear a 2035». El compromiso es compatible con prórrogas concretas dentro de 2035. (La orden es un acto del Gobierno, no una fuente del partido: solo explica por qué se lee como −1.)"
+   }
+  },
+  "psc": {
+   "q36": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Verificación independiente (15-nov): rechazada, null (antes 0). Montalvo deja abierta la prórroga con condiciones sin decir si está a favor o en contra; las ambivalencias se dejan en null en todo el proyecto. Fuente descartada: Ione Montalvo, cabeza de lista del PSC por Tarragona, entrevista en el Diari de Tarragona, 14-nov-2026: «El calendario de cierre proviene de un acuerdo entre el Gobierno y las eléctricas. [...] Si hay un nuevo acuerdo, el Consejo de Seguridad Nuclear lo avala y vemos que no tiene un coste que pueda repercutir en los ciudadanos, no hay nada grabado a fuego en este tema.» (https://www.diaridetarragona.com/tarragona/275692/ione-montalvo-candidata-psc-tarragona-gente-motivos-enfadada.html)."
+   }
+  },
+  "vox": {
+   "q36": {
+    "valor": 2,
+    "fuente": "programa",
+    "cita": "Recuperar urgentemente el plan nuclear nacional. Se garantizará la supervivencia de las centrales nucleares actuales, derogando el calendario de cierre.",
+    "pagina": 10,
+    "url": "https://votasentidocomun.es/general/files/programa-elecct-vox.pdf",
+    "medio": "Programa oficial (Es sentido común, 55 pp.)",
+    "fecha": "2026-11-12",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, medida 8 (p. 10 del PDF). Propone de forma expresa derogar el calendario de cierre y garantizar la continuidad de las centrales actuales: +2."
+   }
+  },
+  "frente_amplio": {
+   "q36": {
+    "valor": -2,
+    "fuente": "campaña",
+    "cita": "no nos cansaremos de decir que la prolongación de la vida de Almaraz es un error. Las nucleares tienen que cerrarse según el calendario marcado. No vale ni una sola excusa, no valen demoras.",
+    "pagina": "147-148",
+    "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-202.PDF",
+    "medio": "Diario de Sesiones del Congreso de los Diputados, Pleno y Diputación Permanente, núm. 202",
+    "fecha": "2026-09-09",
+    "quien": "Verónica Martínez Barbero, portavoz del Grupo Parlamentario Plurinacional SUMAR, en nombre del grupo (desde julio de 2026, coordinadora de Sumar)",
+    "formato": "discurso en el Pleno del Congreso (Diario de Sesiones núm. 202)",
+    "marco": null,
+    "nota": "Rechazo expreso de la prórroga de Almaraz y de cualquier demora del calendario: −2. En la copia de texto un salto de página parte la frase («calendario» al final de la p. 147, «marcado» al principio de la p. 148). Coherente con su intervención del Pleno núm. 174 («comprométase expresamente al mantenimiento del calendario de cierre de las nucleares»). El programa electoral de la coalición Compromís: Front Valencià (14-nov-2026, p. 30), que firma Esquerra Unida del País Valencià y Recortes Cero (Frente Amplio), dice lo mismo: «Mantindrem el calendari de tancament de les centrals nuclears i no acceptarem cap nova pròrroga» (−2). Como documento conjunto contaría para Frente Amplio, pero coincide en el valor y se mantiene la fuente propia del partido (regla de precedencia del 13-nov). Copia local: data/sources/fase1/g7_2026-11-14/junts/DSCD-15-PL-202.txt."
+   }
+  },
+  "podemos": {
+   "q36": {
+    "valor": -2,
+    "fuente": "campaña",
+    "cita": "Mientras ustedes defienden las nucleares y frenan las renovables, el autoconsumo y la soberanía energética, desde Podemos lo vamos a decir sin rodeos: ni un euro más para alargar la vida de las centrales nucleares.",
+    "pagina": 31,
+    "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-151.PDF",
+    "medio": "Diario de Sesiones del Congreso de los Diputados, Pleno y Diputación Permanente, núm. 151",
+    "fecha": "2025-11-13",
+    "quien": "Noemí Santana Perera, diputada de Podemos, en nombre del Grupo Parlamentario Mixto",
+    "formato": "discurso en el Pleno del Congreso (Diario de Sesiones núm. 151), debate de las enmiendas del Senado al proyecto de Ley de Movilidad Sostenible, entre ellas la del PP para posponer el cierre de las centrales nucleares",
+    "marco": null,
+    "nota": "Responde a la enmienda del PP que pretendía «posponer el cierre de las centrales nucleares». Rechazo expreso, en nombre de Podemos, de alargar su vida: −2. Fecha posterior al 1-nov-2025 (regla del 13-nov). El programa electoral de la coalición Compromís: Front Valencià (14-nov-2026, p. 30), que firma Podemos, dice lo mismo: «Mantindrem el calendari de tancament de les centrals nuclears i no acceptarem cap nova pròrroga» (−2). Como documento conjunto contaría para Podemos, pero coincide en el valor y se mantiene la fuente propia del partido (regla de precedencia del 13-nov). Copia local: data/sources/fase1/revision_2026-11-15/DSCD-15-PL-151.txt (PDF sha256 b9cd63c60c6dc6e486ca66bcfda356e3177a770aee192ba083b504fe1c295433)."
+   }
+  },
+  "compromis": {
+   "q36": {
+    "valor": -2,
+    "fuente": "programa",
+    "cita": "Mantindrem el calendari de tancament de les centrals nuclears i no acceptarem cap nova pròrroga, alhora que impulsarem un pla de reindustrialització verda per a la comarca que garantisca els llocs de treball.",
+    "pagina": 30,
+    "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf",
+    "medio": "Programa oficial (Programa electoral 29N. Compromís-Front Valencià, 64 pp.)",
+    "fecha": "2026-11-14",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Traducción: «Mantendremos el calendario de cierre de las centrales nucleares y no aceptaremos ninguna nueva prórroga, a la vez que impulsaremos un plan de reindustrialización verde para la comarca que garantice los puestos de trabajo». Programa oficial del 29-N (p. 30). Rechazo expreso de cualquier nueva prórroga: −2."
+   }
+  },
+  "upc": {
+   "q36": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Sin programa: su manifiesto electoral (data/sources/programas/upc/manifiesto-upc.txt) no menciona la energía nuclear. No hay intervenciones de NC-BC sobre la prórroga en las copias locales del Diario de Sesiones. Búsqueda web («Nueva Canarias nucleares Almaraz prórroga») sin resultados. [Revisión de afirmaciones del 15-nov (data/fase1/revision_afirmaciones_2026-11-15/analisis.md).]"
+   }
+  },
+  "ara_mes_fa": {
+   "q36": {
+    "valor": -2,
+    "fuente": "campaña",
+    "cita": "vostè ha donat un gir. En aquest cas sí que ha actuat prorrogant la vida d’Almaraz i nosaltres ho tenim clar: no a les nuclears.",
+    "pagina": 87,
+    "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-202.PDF",
+    "medio": "Diario de Sesiones del Congreso de los Diputados, Pleno y Diputación Permanente, núm. 202",
+    "fecha": "2026-09-09",
+    "quien": "Vicenç Vidal Matas, diputado de MÉS per Mallorca y Més per Menorca en el Congreso (Grupo Parlamentario Plurinacional SUMAR)",
+    "formato": "discurso en el Pleno del Congreso (Diario de Sesiones núm. 202), comparecencia de la vicepresidenta tercera y ministra para la Transición Ecológica sobre los incendios del verano y la política energética",
+    "marco": null,
+    "nota": "Traducción oficial del propio Diario (p. 88): «usted ha dado un giro. En este caso, sí ha actuado prorrogando la vida de Almaraz ―nosotros lo tenemos claro: “No a las nucleares”―». Rechaza la prórroga de Almaraz y las nucleares en general: −2. DUDOSA para el verificador: (1) Vidal interviene en el turno del Grupo SUMAR (tras la señora Boada) y el «nosaltres» podría leerse como el grupo; es diputado de MÉS per Mallorca, que forma Ara Més (regla de federaciones), y habla en primera persona; (2) «no a les nuclears» es un rechazo general, dicho como reacción a la prórroga; si se considera menos que un rechazo expreso a alargar el calendario, −1. Copia local: data/sources/fase1/g7_2026-11-14/junts/DSCD-15-PL-202.txt."
+   }
+  },
+  "erc": {
+   "q36": {
+    "valor": -2,
+    "fuente": "campaña",
+    "cita": "Almaraz no pot obrir una cadena automàtica de pròrrogues. No pot passar. [...] És inacceptable, doncs, que la falta de renovables o de xarxa es converteixi en l’excusa per mantenir oberts els reactors. [...] manteniment del calendari nuclear sense efecte, dominó",
+    "pagina": "90-91",
+    "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-202.PDF",
+    "medio": "Diario de Sesiones del Congreso de los Diputados, Pleno y Diputación Permanente, núm. 202",
+    "fecha": "2026-09-09",
+    "quien": "Teresa Jordà i Roura, diputada, en nombre del Grupo Parlamentario Republicano",
+    "formato": "discurso en el Pleno del Congreso (Diario de Sesiones núm. 202), comparecencia de la vicepresidenta tercera y ministra para la Transición Ecológica sobre los incendios del verano y la política energética",
+    "marco": null,
+    "nota": "Cita en catalán, literal del Diario (la coma en «sense efecte, dominó» está en el original). Traducción oficial del propio Diario (pp. 93-94): «Almaraz no puede abrir una cadena automática de prórrogas; no puede pasar [...] es inaceptable que la falta de renovables o de redes se convierta en la excusa para mantener abiertos los reactores [...] mantenimiento del calendario nuclear sin efecto dominó». Rechazo expreso de nuevas prórrogas y defensa del calendario: −2. El programa de ERC no trata la prórroga (solo pide la contribución del Estado al Fons de Transició Nuclear, medida 147) y no lo contradice. Sustituye a ERC q20 (+2), afirmación retirada. El programa electoral de la coalición Compromís: Front Valencià (14-nov-2026, p. 30), que firma Esquerra Republicana del País Valencià (nombre de ERC en el País Valencià), dice lo mismo: «Mantindrem el calendari de tancament de les centrals nuclears i no acceptarem cap nova pròrroga» (−2). Como documento conjunto contaría para ERC, pero coincide en el valor y se mantiene la fuente propia del partido (regla de precedencia del 13-nov). Copia local: data/sources/fase1/g7_2026-11-14/junts/DSCD-15-PL-202.txt."
+   }
+  },
+  "junts": {
+   "q36": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "Salvador Illa, que accepta obedientment que no hi hagi cap tipus de revisió de calendari i nosaltres entenem que això és molt greu. [...] seria absolutament irresponsable tancar les nuclears catalanes sense haver fet els deures que s’han de fer, prèviament.",
+    "pagina": 96,
+    "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-202.PDF",
+    "medio": "Diario de Sesiones del Congreso de los Diputados, Pleno y Diputación Permanente, núm. 202",
+    "fecha": "2026-09-09",
+    "quien": "Pilar Calvo Gómez, diputada, en nombre del Grupo Parlamentario Junts per Catalunya",
+    "formato": "discurso en el Pleno del Congreso (Diario de Sesiones núm. 202), comparecencia de la vicepresidenta tercera y ministra para la Transición Ecológica sobre los incendios del verano y la política energética",
+    "marco": null,
+    "nota": "Traducción oficial del propio Diario (p. 99): «Salvador Illa, que acepta obedientemente que no haya ningún tipo de revisión de calendario, y nosotros entendemos que eso es muy grave. [...] sería absolutamente irresponsable cerrar las nucleares catalanas sin haber hecho los deberes que han de hacerse previamente». Pide revisar el calendario de Ascó y Vandellòs y critica que solo se prorrogue Almaraz: a favor de alargarlas. +1 y no +2 porque lo condiciona a que no se hayan «hecho los deberes» y se limita a las centrales catalanas. La entrevista a Josep Maria Cruset en Canal 21 Ebre (6-nov-2026) defiende mantener Ascó y Vandellòs, pero en estilo indirecto (solo entrecomilla «simple qüestió matemàtica»): no se usa. Copia local: data/sources/fase1/g7_2026-11-14/junts/DSCD-15-PL-202.txt."
+   }
+  },
+  "eh_bildu": {
+   "q36": {
+    "valor": -2,
+    "fuente": "campaña",
+    "cita": "Prácticamente suscribo palabra por palabra lo que ha dicho el señor Badia [...] El no cumplimiento de este calendario nuclear [...] hace que dejen de ser creíbles todos los objetivos [...] ya le han hablado de Cofrentes y le van hablando de Ascó y Vandellós. Esto abre la espita, retrasa todo y tapona el despliegue efectivo de renovables",
+    "pagina": 127,
+    "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-202.PDF",
+    "medio": "Diario de Sesiones del Congreso de los Diputados, Pleno y Diputación Permanente, núm. 202",
+    "fecha": "2026-09-09",
+    "quien": "Mikel Otero Gabirondo, diputado, en nombre del Grupo Parlamentario Euskal Herria Bildu",
+    "formato": "réplica en el Pleno del Congreso (Diario de Sesiones núm. 202), comparecencia de la vicepresidenta tercera y ministra para la Transición Ecológica",
+    "marco": null,
+    "nota": "Badia (SUMAR), justo antes (pp. 125-126): «Una prórroga es la peor medida posible» y pide «blindar el calendario del cierre nuclear». Otero se adhiere y, con palabras propias, critica que no se cumpla el calendario y que la prórroga de Almaraz abra la puerta a Cofrentes, Ascó y Vandellós. Rechazo expreso: −2. DUDOSA para el verificador: parte de la posición es adhesión por remisión; con solo sus palabras propias (crítica, sin propuesta) sería −1. Coherente con dos intervenciones anteriores de EH Bildu: el propio Otero (Pleno núm. 151, 13-nov-2025, p. 34) contra la enmienda del PP que facilitaba «de forma irregular, irresponsable y chapucera la prolongación de la central nuclear de Almaraz», y el senador Estarrona Elizondo (Senado, Pleno núm. 101, 5-nov-2025, p. 104) contra la misma enmienda: «pretenden condenar a la población a pagar lo que se considera esa factura oculta durante los próximos años con este alargamiento de la vida de las centrales nucleares». Entre declaraciones prevalece la posterior (9-sep-2026). Copias locales: data/sources/fase1/g7_2026-11-14/junts/DSCD-15-PL-202.txt, data/sources/fase1/revision_2026-11-15/DSCD-15-PL-151.txt y data/sources/fase1/ampliacion_2026-11-13/vox/DS_P_15_101.txt."
+   }
+  },
+  "pnv": {
+   "q36": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N leído (data/sources/programas/pnv/programa-electoral-29n.txt): no menciona la energía nuclear. Idoia Sagastizabal Unzetabarrenetxea, portavoz del Grupo Vasco en la comparecencia (Pleno núm. 202, 9-sep-2026, p. 107) pregunta al Gobierno por qué ha prorrogado Almaraz y cuál es su estrategia «para el conjunto del parque nuclear», y admite que «Si cambia la realidad, rectificar incluso puede y debe ser responsable», pero no dice si está a favor o en contra de alargar las centrales. Sin posición. [Revisión de afirmaciones del 15-nov (data/fase1/revision_afirmaciones_2026-11-15/analisis.md).]"
+   }
+  },
+  "bng": {
+   "q36": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N leído: solo menciona los residuos nucleares vertidos en la fosa atlántica (p. 68 del PDF), no las centrales ni su calendario. Néstor Rego interviene en el Pleno núm. 151 (13-nov-2025) sobre la Ley de Movilidad Sostenible sin referirse a la enmienda nuclear. Búsqueda web («BNG Néstor Rego centrais nucleares Almaraz») sin resultados. [Revisión de afirmaciones del 15-nov (data/fase1/revision_afirmaciones_2026-11-15/analisis.md).]"
+   }
+  },
+  "cc": {
+   "q36": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N leído: no menciona la energía nuclear. Sin declaraciones en plazo en las copias locales del Diario de Sesiones ni en la búsqueda web («Coalición Canaria nucleares Almaraz prórroga»). [Revisión de afirmaciones del 15-nov (data/fase1/revision_afirmaciones_2026-11-15/analisis.md).]"
+   }
+  },
+  "adelante_andalucia": {
+   "q36": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N: la propuesta 407 (p. 82) pide «Fin de las subvenciones a combustibles fósiles y nuclear» y el cierre ordenado de El Cabril (almacén de residuos), medidas relacionadas pero distintas de alargar o no el funcionamiento de las centrales. Una medida relacionada pero distinta no es posición. Búsqueda web («Adelante Andalucía nucleares Almaraz prórroga») sin resultados. [Revisión de afirmaciones del 15-nov (data/fase1/revision_afirmaciones_2026-11-15/analisis.md).]"
+   }
+  },
+  "salf": {
+   "q36": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N («Contrato electoral», leído entero): no menciona la energía nuclear. Búsqueda web («Alvise Pérez Se Acabó La Fiesta centrales nucleares Almaraz») sin resultados. [Revisión de afirmaciones del 15-nov (data/fase1/revision_afirmaciones_2026-11-15/analisis.md).]"
+   }
+  }
+ }
+}

@@ -45,10 +45,14 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
   - Hecho el 14-nov: adelante_andalucia-08 cita la DA 23.ª de la Ley 54/1997 (mínimo del 10 % de la SEPI en
     Red Eléctrica) y pp-07 y compromis-13 resumen a Bom y Ligthart con sus cifras exactas (0,083 / 0,122 para el
     capital de la Administración central, casi el doble en infraestructuras básicas regionales o locales).
-- [ ] **3. [Yo] Revisar la selección de afirmaciones del paso 1** para cubrir mejor a los 18 partidos:
+- [x] **3. [Yo] Revisar la selección de afirmaciones del paso 1** para cubrir mejor a los 18 partidos:
   análisis, codificación y verificación independiente; decido yo, sin pasar por ti. **Hecha el 13-nov**
   (`data/fase1/revision_afirmaciones_2026-11-13/integracion.md`): se retiran q02, q07, q10, q14 y q28, entran
-  q31–q35 y la media sube de 6,6 a 7,7 posiciones por partido. **Repetir tras el programa del PSOE (15-nov): en curso.**
+  q31–q35 y la media sube de 6,6 a 7,7 posiciones por partido. **Repetida el 15-nov tras el programa del PSOE**
+  (`data/fase1/revision_afirmaciones_2026-11-15/analisis.md`): se retira q20 y entra q36 (prórroga de las
+  centrales nucleares), codificada en `codificacion_g12.json` y verificada (`verificacion_g12.json`: 10 de 11
+  aprobadas; la del PSC, «no hay nada grabado a fuego», se rechaza por ambigua). q36 pasa de 3 a 10 partidos con
+  posición (3 a favor, 7 en contra); las respuestas guardadas a q20 dejan de contar. Hecho: ya no se repite.
 - [ ] **4. [Externo → Yo] Listas del BOE tras los recursos** ante el TS (art. 44.4 LOREG, 13–19-nov):
   volver a descargar y validar el BOE después. Pendiente de confirmar oficialmente el recurso de Drago
   Canarias contra UPC (solo hay prensa).

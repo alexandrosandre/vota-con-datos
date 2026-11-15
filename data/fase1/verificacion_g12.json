@@ -1,0 +1,238 @@
+{
+ "grupo": "g12",
+ "verificador": "Claude (Anthropic): verificación independiente, protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13-nov («A qué partido cuenta cada fuente», precedencia)",
+ "fecha": "2026-11-15",
+ "aprobado": true,
+ "aprobado_condicion": "Las 10 celdas con valor que se conservan y las 7 null están aprobadas. Falta aplicar en codificacion_g12.json el rechazo de psc/q36: valor null y nota «Verificación independiente (15-nov): rechazada, null (antes 0)», con la cita descartada, como hizo g4 con vox/q31. El verificador no podía editar ese fichero en este encargo. Cuando se aplique, poner \"aprobado\": true. Mientras tanto build_fase1.py omite g12 y q36 se publica sin posiciones, así que no sale el 0 del PSC.",
+ "revisadas": 18,
+ "resultado": {
+  "ok": 17,
+  "corregido": 0,
+  "rechazado": 1,
+  "celdas_no_tocadas_confirmadas": "las 7 null (ver «posiciones»)"
+ },
+ "alcance": "Las 18 celdas de q36 en codificacion_g12.json (11 con valor y 7 null), el texto y el contexto de q36 en preguntas.json, y una búsqueda propia de posiciones no recogidas. (1) Afirmación y contexto: comprobados contra las copias locales del BOE. BOE-A-2024-440 (sha256 73423780…f371af247) da el 7.º PGRR, aprobado por el Consejo de Ministros el 27-dic-2023, con el cese «entre 2027 y 2035» de «los siete reactores nucleares actualmente en funcionamiento, de acuerdo con lo establecido en el PNIEC y en el Protocolo firmado por ENRESA y los propietarios de las centrales nucleares en marzo de 2019». BOE-A-2026-17756 (sha256 0ce72f29…a1f) es la Orden TED/864/2026, de 12 de agosto (BOE del 14-ago): Almaraz I y II hasta el 8-jun-2030, cuando antes llegaban al 1-nov-2027 y al 31-oct-2028, «no alterándose el resto del calendario ni la fecha de cese definitivo del conjunto del parque nuclear a 2035». Todas las afirmaciones del contexto son correctas y la redacción es neutral: «alargar el funcionamiento» describe la medida sin valorarla. (2) Fuentes: los sha256 de los PDF de los programas (PP, PSOE, Vox, Compromís) y de las copias del Diario de Sesiones coinciden con «fuentes». Cada cita se buscó en su fuente y se comprobaron la página (cabeceras «Pág.» de la copia y pdftotext por página en los PDF), el orador (encabezado «El señor/La señora …» y el turno del grupo), la fecha y la elisión. (3) Barrido propio: se buscaron «nuclear» y «Almaraz» en las 50 copias locales del Diario de Sesiones, deduplicadas, y se identificó al orador de cada coincidencia. También se buscaron esas palabras y «energ» en los 11 programas o manifiestos catalogados, y se hizo una búsqueda web sobre el PSC. No aparece ninguna posición válida que el codificador no haya recogido.",
+ "afirmacion": {
+  "texto_ok": true,
+  "contexto_ok": true,
+  "nota": "Sin cambios. Observación menor: build_fase1.py publica solo «contexto_fuente» (BOE-A-2024-440), que respalda la primera frase del contexto pero no la de Almaraz. Esa la respalda BOE-A-2026-17756, que está en «contexto_fuentes_adicionales» y no se publica. Es la práctica de todas las afirmaciones con fuentes adicionales (q03, q06, q12…), así que no es un error de q36. Si el editor quiere que la web enlace la orden, habría que publicarla aparte."
+ },
+ "cambios": [
+  {
+   "partido": "psc",
+   "pregunta": "q36",
+   "antes": 0,
+   "despues": null,
+   "motivo": "Ambivalencia condicionada, sin posición; en el proyecto no se usa el 0 y las ambivalencias van a null. Ver posiciones y duda 2."
+  }
+ ],
+ "correcciones_de_campos": [
+  {
+   "partido": "(fichero)",
+   "pregunta": "q36",
+   "campo": "posiciones.psc.q36",
+   "motivo": "APLICADA por el coordinador el 15-nov: valor null, campos de fuente a null y nota «Verificación independiente (15-nov): rechazada, null (antes 0). Montalvo deja abierta la prórroga con condiciones sin decir si está a favor o en contra; las ambivalencias se dejan en null en todo el proyecto. Fuente descartada: Ione Montalvo, cabeza de lista del PSC por Tarragona, entrevista en el Diari de Tarragona, 14-nov-2026: «Si hay un nuevo acuerdo, el Consejo de Seguridad Nuclear lo avala y vemos que no tiene un coste que pueda repercutir en los ciudadanos, no hay nada grabado a fuego en este tema.»». En «fuentes», marcar su uso como descartado."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q36",
+   "campo": "medio",
+   "motivo": "Cosmético, opcional: g11 usa «Programa oficial (La fuerza de seguir avanzando. Programa elecciones generales 29 noviembre 2026, 114 pp.)» y g12 lo abrevia. No afecta al valor."
+  }
+ ],
+ "posiciones": [
+  {
+   "partido": "pp",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal en la p. 71 del PDF (medida 228, primera del apartado «4.9 España puede ser potencia energética de Europa»; comprobado con pdftotext sobre el PDF, sha256 cea8f2a0…bffbe). Propone de forma expresa, y para los cien primeros días, eliminar el calendario de cierre de cinco centrales y alargar su vida útil: +2."
+  },
+  {
+   "partido": "upn",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. Sin programa catalogado. Catalán Higueras (Pleno 202, 9-sep-2026, p. 111; literal en la copia) solo dice que las renovables de Navarra no son incompatibles «con otro tipo de fuentes energéticas, como puede ser la nuclear»: no habla del calendario ni de alargar las centrales. El voto de UPN a la enmienda del PP es una votación sin palabras y Feijóo no cuenta para UPN. Barrido propio de las 50 copias locales del Diario de Sesiones (palabras «nuclear», «Almaraz»): Catalán no vuelve a hablar del tema."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal en la p. 66 del PDF (compromiso 240; sha256 e9c83413…9bf5). Es la única mención a las centrales en las 114 pp. Mantener el calendario es lo contrario de la afirmación, así que es en contra. −1 y no −2: el compromiso fija el horizonte «hasta 2035», que es justo lo que la Orden TED/864/2026 dice conservar al prorrogar Almaraz más allá de las fechas de 2019 («no alterándose el resto del calendario ni la fecha de cese definitivo del conjunto del parque nuclear a 2035»). Por tanto, la frase es compatible con prórrogas concretas dentro de 2035, que son precisamente lo que pregunta la afirmación. Además es un compromiso más de una lista y no rechaza las prórrogas de forma expresa. Si los dos valores son defendibles, se elige el más prudente (criterio de g11). Ver duda 1."
+  },
+  {
+   "partido": "psc",
+   "pregunta": "q36",
+   "veredicto": "rechazado",
+   "valor_codificador": 0,
+   "valor_final": null,
+   "motivo": "Rechazada, null (antes 0). La cita es literal en la copia local (sha256 b02b23e4…b751). La elisión omite solo «En julio de este año se aprobó la prórroga de Almaraz», que además tiene un error de fecha de la entrevistada: la orden es del 12-ago. Montalvo, cabeza de lista por Tarragona, es líder válida y la fecha (14-nov) está en plazo. Pero no dice si está a favor o en contra de alargar las centrales: solo que, con un nuevo acuerdo, el aval del CSN y sin coste para los ciudadanos, «no hay nada grabado a fuego». Eso es dejar la puerta abierta, no tomar una posición. En todo el proyecto no hay ningún 0 publicado (fase1.json), y las declaraciones ambivalentes o condicionadas se han dejado siempre en null: Gavín (Junts q27, verificacion_g7, «ni a un costat ni a l'altre»), Valido (CC q23, g4 y el barrido del 13-nov), Román Rodríguez (UPC q29, verificacion_g8) y la medida que «condiciona, no rechaza» de notas_g10. Además, verificacion_g8 dejó al editor la decisión de empezar a usar el 0, y empezarlo aquí obligaría a revisar esas celdas. Tampoco es +1: no defiende alargarlas, como sí hace Junts. Regla: «Ante la duda entre un valor y null, elige null». No hay otra fuente válida del PSC: ningún otro fichero de data/sources/compromisos/psc menciona la nuclear, y una búsqueda web (Illa, Ascó, Vandellòs, calendario) solo da votaciones y crónicas sin cita literal. Ver duda 2."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal en la p. 10 del PDF, dentro de la medida numerada 8 («Reindustrialización radical de la economía española»; comprobado con pdftotext). «derogando el calendario de cierre» y garantizar la supervivencia de las centrales actuales es una propuesta expresa: +2."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal en la copia local del DS 202 (sha256 ff22c484…bbf). En la copia de texto, la frase queda justo antes de la cabecera de la «Pág. 148», así que «147-148» es una referencia segura. Habla Martínez Barbero, portavoz del Grupo SUMAR (turno 9431 de la copia, convalidación del real decreto-ley de incendios, 9-sep-2026), dentro de plazo. «Las nucleares tienen que cerrarse según el calendario marcado. No vale ni una sola excusa, no valen demoras» es un rechazo expreso y sin matices a cualquier prórroga: −2. El documento conjunto de Compromís: Front Valencià (p. 30) dice lo mismo, así que se mantiene la fuente propia."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal en la p. 31 (copia de texto y PDF oficial, comprobado con pdftotext; sha256 del PDF b9cd63c6…5433). Habla Santana Perera (Podemos, Grupo Mixto) el 13-nov-2025, después del 1-nov-2025, contra la enmienda del PP para «posponer el cierre de las centrales nucleares»: «desde Podemos lo vamos a decir sin rodeos: ni un euro más para alargar la vida de las centrales nucleares». Rechazo expreso: −2. Hay una frase posterior de Podemos, de Sánchez Serna en el DS 202 (9-sep-2026): «¿Uno que prorroga la central de Almaraz, que cede ante el lobby nuclear?». Es una pregunta retórica de reproche al Gobierno, no una posición (mismo criterio que verificacion_g7, Junts q24), y va en el mismo sentido, así que no desplaza a Santana. El documento conjunto (p. 30) coincide."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal en la p. 30 del PDF (sha256 37b569d6…6b55; pdftotext). «no acceptarem cap nova pròrroga» es un rechazo expreso de nuevas prórrogas, unido a mantener el calendario: −2. La traducción de la nota es correcta."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. El manifiesto (163 líneas) no menciona la nuclear: solo apuesta por las renovables y la soberanía energética. En las 50 copias locales del Diario de Sesiones no hay ninguna intervención de NC-BC sobre la nuclear."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal en la p. 87 de la copia del DS 202. La traducción oficial está en la p. 88 y la nota la reproduce bien. Atribución: la Presidencia da la palabra a Vidal por separado («Té la paraula el senyor Vidal Matas»), dentro del turno del Grupo SUMAR que comparte con Boada. Es el único diputado de MÉS per Mallorca, partido de la federación Ara Més, y habla por él en ese debate. En el Congreso se ha aceptado siempre al diputado que habla en el turno del grupo (Santana por Podemos en el Mixto; verificacion_g5, comprobación del turno «por/en nombre del Grupo»). Que «nosaltres» pueda incluir al grupo no cambia nada: lo dice él en primera persona y cuenta para su propio partido. Valor: «ha actuat prorrogant la vida d'Almaraz i nosaltres ho tenim clar: no a les nuclears» es un rechazo expreso y sin matices, dicho sobre la prórroga misma. Lo presenta como lo peor de la gestión de la ministra («el pitjor no és això […] ha dinamitat el pacte»). El ±1 queda para las posiciones con matices o condiciones, y aquí no hay ninguna. −2, como Frente Amplio y Podemos. Ver duda 3."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal en las pp. 90-91 de la copia del DS 202: «cadena automàtica» y «mantenir oberts» en la p. 90, y «sense efecte, dominó» en la p. 91, con la coma del original. Habla Jordà i Roura en el turno del Grupo Republicano. Rechaza expresamente nuevas prórrogas y entre sus exigencias finales («Volem […] manteniment del calendari nuclear») está mantener el calendario: −2. El programa de ERC solo trata el Fons de Transició Nuclear (medida 147) y no lo contradice. Granollers (ERC, DS 151, 13-nov-2025) criticó la enmienda nuclear del PP en el mismo sentido, y es anterior."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal en la p. 96 de la copia del DS 202, con la traducción oficial en la p. 99. Habla Calvo Gómez en el turno del Grupo Junts. Critica que no haya «cap tipus de revisió de calendari» para Ascó y Vandellòs y dice que cerrarlas «sense haver fet els deures» sería irresponsable. Está a favor de alargar las centrales catalanas, pero lo condiciona a que no estén hechos los deberes y lo limita a Cataluña: +1 (con matices o condiciones). La entrevista a Cruset (6-nov) bien descartada: es estilo indirecto."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal en la p. 127 de la copia del DS 202. Habla Otero Gabirondo en el turno del Grupo EH Bildu. «Suscribo palabra por palabra lo que ha dicho el señor Badia» lo dice él en primera persona, no es lo que otros dicen que piensa. Badia acababa de decir (pp. 125-126, leído en la copia) «Una prórroga es la peor medida posible», «blindar el calendario del cierre nuclear» y «dé marcha atrás e inicie el cierre de Almaraz». Con sus propias palabras, Otero añade que incumplir el calendario hace que dejan de ser creíbles todos los objetivos del PNIEC y que la prórroga «abre la espita» a Cofrentes, Ascó y Vandellós. Es un rechazo sin matices, coherente con su intervención del 13-nov-2025 (DS 151, p. 34, «de forma irregular, irresponsable y chapucera la prolongación de la central nuclear de Almaraz», literal) y con Estarrona (Senado, DS 101, p. 104, «este alargamiento de la vida de las centrales nucleares», literal): −2. Mismo criterio que Ara Més. Ver duda 3."
+  },
+  {
+   "partido": "pnv",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. El programa no menciona la nuclear (el grep solo da falsos positivos de «vasco»). Sagastizabal (DS 202, p. 107) pide explicaciones y la estrategia del Gobierno «para el conjunto del parque nuclear» y admite que «rectificar incluso puede y debe ser responsable», pero no dice si está a favor o en contra de alargar las centrales. Sus otras menciones (DS 199) y las de Vaquero (DS 174) tratan del mix eléctrico o de Irán."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. El programa solo habla de los residuos de la Fosa Atlántica (medida relacionada pero distinta) y el decálogo no menciona la nuclear. Rego no habla de la nuclear ni en el DS 151 ni en el DS 202 (turno 6999-7109 de la copia)."
+  },
+  {
+   "partido": "cc",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. El programa (1131 líneas) no menciona la nuclear: solo energía «limpia», renovables y almacenamiento. En las copias locales del Diario de Sesiones no hay ninguna intervención de CC sobre la nuclear."
+  },
+  {
+   "partido": "adelante_andalucia",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. La propuesta 407 (p. 82) pide el «Fin de las subvenciones a combustibles fósiles y nuclear» y el cierre de El Cabril, y la 405 sacar la nuclear de la taxonomía verde. Son medidas relacionadas pero distintas: ninguna dice si hay que alargar las centrales más allá del calendario."
+  },
+  {
+   "partido": "salf",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Confirmada sin valor. El «Contrato electoral» (2109 líneas) no menciona la energía ni la nuclear. SALF no tiene diputados en el Congreso."
+  }
+ ],
+ "resolucion_dudas_codificador": [
+  {
+   "duda": 1,
+   "tema": "PSOE: −1 o −2",
+   "resolucion": "−1. «Mantener el calendario de cierre de las centrales nucleares hasta 2035» es contrario a la afirmación. Pero el horizonte «hasta 2035» es exactamente lo que el Gobierno dice conservar al prorrogar Almaraz más allá de las fechas de 2019, así que el compromiso no excluye prórrogas como la que pregunta la afirmación. Tampoco rechaza las prórrogas de forma expresa (Compromís sí: «no acceptarem cap nova pròrroga»). La orden no es una fuente del partido: solo explica cómo se lee el compromiso. Si los dos valores son defendibles, el más prudente."
+  },
+  {
+   "duda": 2,
+   "tema": "PSC: 0, +1 o null",
+   "resolucion": "null (rechazada). No es +1: no defiende alargar las centrales. No es 0 por coherencia: en todo el proyecto las declaraciones ambivalentes o condicionadas se dejan en null y no hay ningún 0 publicado (Gavín, Valido, Román Rodríguez, notas_g10), y verificacion_g8 dejó al editor la decisión de empezar a usar el 0. Además, la protección de la regla «ante la duda, null» pesa más que una ambivalencia que solo se deduce de una frase condicional («no hay nada grabado a fuego»)."
+  },
+  {
+   "duda": 3,
+   "tema": "Ara Més (si Vidal cuenta, −2 o −1) y EH Bildu (adhesión por remisión, −2 o −1)",
+   "resolucion": "Las dos −2, con el mismo criterio. Vidal: la Presidencia le da la palabra a él, es el diputado de MÉS per Mallorca y habla en primera persona, así que cuenta para Ara Més por la regla de federaciones. Otero: «suscribo palabra por palabra» es una declaración propia y literal, y además añade palabras suyas que critican expresamente el incumplimiento del calendario y las nuevas prórrogas. En los dos casos es un rechazo expreso y sin matices o condiciones, que es lo que separa el ±2 del ±1 (verificacion_g4, FA q35: «sin matices» → −2). El criterio de «crítica reactiva → ±1» (g4, Junts q01 y ERC q27) se aplicó a críticas que no tomaban posición sobre la medida, y aquí la toman."
+  },
+  {
+   "duda": 4,
+   "tema": "Junts +1",
+   "resolucion": "Confirmado. Pide revisar el calendario de Ascó y Vandellòs y critica que solo se prorrogue Almaraz, con la condición de los «deures» pendientes y limitado a Cataluña: a favor con condiciones, +1."
+  }
+ ],
+ "celdas_no_tocadas": [
+  "Ninguna. g12 solo trae q36, y q20 está retirada en preguntas.json. Las celdas de q20 de otros grupos no se publican porque build_fase1.py ignora las preguntas que no están en preguntas.json."
+ ],
+ "posiciones_no_recogidas": "Ninguna. En el barrido de las 50 copias del Diario de Sesiones, las únicas menciones de partidos que quedan en null son de UPN (Catalán, genérica), PNV (Sagastizabal y Vaquero, sin posición) y BNG (Rego, ninguna sobre la nuclear). Sánchez Serna (Podemos, DS 202) y Granollers (ERC, DS 151) van en el mismo sentido que las celdas que se conservan.",
+ "recuento": {
+  "codificador": {
+   "con_valor": 11,
+   "a_favor": 3,
+   "en_contra": 7,
+   "neutral": 1,
+   "null": 7
+  },
+  "verificado": {
+   "con_valor": 10,
+   "a_favor": 3,
+   "en_contra": 7,
+   "null": 8,
+   "a_favor_partidos": "pp +2, vox +2, junts +1",
+   "en_contra_partidos": "psoe −1, frente_amplio −2, podemos −2, compromis −2, ara_mes_fa −2, erc −2, eh_bildu −2"
+  },
+  "frente_a_q20": "q20 tenía 3 posiciones; q36 tiene 10."
+ },
+ "dudas": [
+  "psc/q36 (null): alternativa 0 si el editor decide empezar a usar el 0 para la ambivalencia explícita. En ese caso habría que revisar también cc/q18, junts/q27 (Gavín), cc/q23 (Valido) y upc/q29 para tratar igual a todos.",
+  "psoe/q36 (−1): alternativa −2 si el editor lee «Mantener el calendario […] hasta 2035» como rechazo expreso de cualquier prórroga, sin tener en cuenta que el propio Gobierno prorrogó Almaraz conservando ese horizonte.",
+  "ara_mes_fa/q36 y eh_bildu/q36 (−2): alternativa −1 si el editor considera que una frase general («no a les nuclears») o una adhesión a lo que dijo otro orador no es «expresa y prioritaria». Si se cambia, que sea en las dos a la vez."
+ ]
+}
