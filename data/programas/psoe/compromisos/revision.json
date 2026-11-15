@@ -1,88 +1,68 @@
 {
  "aprobado": true,
  "revisor": "Claude (Anthropic), pasada independiente",
- "fecha": "2026-11-12",
- "alcance": "Base «compromisos» (prompts 1b, 3 y 4): 7 compromisos, 5 prioridades y 5 propuestas × 8 criterios. Se abrieron las 83 URL de seleccion.json y evaluacion.json con petición normal: todas respondieron 200 (la nota de la Seguridad Social se lee en el HTML; su resumen dinámico devuelve 403 a WebFetch). psoe.es no se intentó. Cada cita se comprobó en la página en línea y en la copia local (SHA-256 coincidentes): son literales, en primera persona, públicas y posteriores a la convocatoria, y enuncian una medida concreta para la próxima legislatura. Arcadi España cuenta como líder (Ejecutiva Federal, ministro de Hacienda y n.º 2 por Valencia, BOE-A-2026-23103), como en la auditoría de fase 1. Los «veces» cuentan ocasiones distintas, no fuentes. Se verificaron cifras y normas: Real Decreto-ley 29/2026 (BOE, en vigor el 8-10-2026; importes de 10.000, 2.000, 280 y 400 M€; suspensión hasta el 31-12-2030), Real Decreto-ley 26/2026 (en vigor el 1-10 y derogado el 2-10-2026, BOE-A-2026-20526), convalidación del 29/2026 por la Diputación Permanente el 12-11-2026 y rechazo del 28/2026 (Infobae/EFE), RDL 11/2020, STC 79/2024, STC 44/2023, CE (arts. 50, 53, 167, 168; reforma de 19-5-2026), Ley 21/2021, Ley 23/2013, nómina de octubre de 2026 (10.565.782 pensiones, 9,6 millones de personas, 14.540 M€, 1.376,1 €), AIReF (14,6 %, 3,0 % y 123 % del PIB), Moncloa (2,7 %, 736.800 pensiones de Clases Pasivas, SMI de 1.221 € y 2,5 millones), RD 1077/2017, 1462/2018 y 126/2026, BdE DO 2113, Dustmann et al., LPC 2024, IVE 2024 (106.172; 78,74 % y 21,25 %), El Español, Ara, El Salto, Constitución francesa (art. 34) y brasileña (art. 201), CPFF de 4-9-2026 (20.975 y 19.000 M€; 55 % y 56,5 %; 75 %), Fedea (Europa Press y eee2026-24: 92,0-94,7), El Salto (cifras por comunidad), Productivity Commission, INE ECV 2025 (16,7 %), Jofre-Monseny et al., Diamond et al. y BVerfG 2021. Mitin de Sevilla (12-nov): a las 20:38 no había compromisos literales y concretos publicados. verify_quotes: 0 citas no encontradas. Se ha recalculado seleccion_sha256.",
- "igual_estandar": "Se comparó con PP, SALF, ERC, BNG, Adelante Andalucía, PSC, Frente Amplio, Podemos, Vox y la auditoría de coherencia del 12-11. Un solo cambio de valoración: psoe-02 (pensiones en la Constitución), encaje legal, pasa de «favorable» a «mixta», porque una reforma constitucional sin ubicación definida tiene dos procedimientos posibles, el criterio de adelante_andalucia-11, psc-03 y psoe-04. Se mantienen: psoe-03 (SMI anual), con los mismos valores que psc-02 (financiación «no_verificable» por falta de cuantía, como erc-09; antecedentes «favorable», como bng-05); psoe-04 (aborto), igual que adelante_andalucia-11 y psc-03; psoe-01 y psoe-05, internacional «mixta» por aplicación parcial o sin evaluación, según la rúbrica y la regla de la auditoría; psoe-05, concreción «favorable», porque el ministro fija el instrumento y el plazo y remite a un modelo cuantificado.",
- "recuento_final": {
-  "favorable": 7,
-  "mixta": 32,
-  "desfavorable": 0,
-  "no_verificable": 1
+ "fecha": "2026-11-15",
+ "base": "complemento",
+ "seleccion_sha256": "4420527d60d78d4f3c0f656bcf575818e58799b3e4636eb6f7f6c35664aabd03",
+ "alcance": "Complemento del programa: los 7 compromisos (psoe-c01 a c07; c07 en «compromisos» y «no_priorizados», c01 a c06 en «descartados») y los otros 20 descartados de seleccion.json, contra el programa del 15-nov (data/sources/programas/psoe/PROGRAMAPSOE29N26.pdf, SHA-256 e9c83413…9bf5, comprobado) y sus 492 medidas (data/programas/psoe/extraccion.json). Sin prioridades ni evaluación, no hay valoraciones que revisar. Cada compromiso se buscó por sus términos y sinónimos en el texto de cada página (pdftotext -layout -f N -l N, página = página del PDF) y en las 492 medidas. Los 12 fragmentos del programa entrecomillados en los motivos (incluidos los 2 añadidos en esta revisión) son literales y de la página indicada. Las afirmaciones sobre el Real Decreto-ley 29/2026 se cotejaron con el BOE (data/sources/boe/BOE-A-2026-20823.xml: arts. 1, 2, 6, 13 y 19 y disposiciones finales quinta y sexta); la cifra del CPFF (20.975 M€, acuerdo de 4-9-2026) es la verificada en la revisión del 12-nov; las referencias a prioridades del programa, con «prioridades» de extraccion.json; las cifras de las medidas sanitarias, con las copias locales de Infobae (Europa Press) y Medicina Responsable. Las citas de los compromisos y sus copias locales no cambian desde la revisión del 12-nov, que abrió todas las URL (verify_quotes: 0 no encontradas). seleccion_sha256 recalculado tras las correcciones.",
+ "seleccion": "Ninguno de los seis compromisos evaluados hasta el 12-nov falta en el programa, ni con otras palabras. c01 y c02: n.º 100 (p. 40), repetido en el n.º 365 (p. 89), «Blindar constitucionalmente el sistema público de pensiones y su revalorización conforme al IPC», y n.º 98 (p. 39); prioridad psoe-05. c03: n.º 87 (p. 37), SMI por ley por encima del 60 % del salario medio y actualizado periódicamente; prioridad psoe-04. c04: n.º 327 (p. 81), reforma del art. 43 de la Constitución, y n.º 368 (p. 89); prioridad psoe-10. c05: el programa no nombra el decreto, pero mantiene la limitación de compra por fondos (n.º 71, p. 32; art. 1), hace estable la protección frente a desahucios con su coste a cargo de las administraciones (n.º 84 y 85, p. 33; art. 2) y continúa el Fondo de Vivienda de Impacto Social (n.º 57; art. 13), TUCASA (n.º 67; art. 19), las bonificaciones del IRPF a quien rebaja el alquiler (n.º 66; art. 6) y la congelación de las rentas que superan el índice de referencia (n.º 62; disposición final sexta); la prórroga extraordinaria pasa a ser ampliar la duración de los contratos (n.º 61). c06: n.º 229 (p. 60), el mismo modelo del CPFF con 21.000 millones adicionales; prioridad psoe-08. Con el estándar de Vox y Compromís: vox-c11, compromis-c02 y compromis-c06 quedaron en el complemento porque al programa le faltaba el rasgo que define el compromiso (la escala del IRPF, bajar las rentas, la reforma constitucional); aquí el núcleo de cada compromiso está en el programa y lo que falta es accesorio, como el instrumento de vox-c04: el «todos los años» del SMI (que el programa concreta con la referencia del 60 % y la actualización periódica, como la jornada de compromis-c08), el plazo de 2027 de la financiación autonómica y el nombre del decreto de vivienda. psoe-c07 (gratuidad de la AP-9) no está en el programa: el texto no menciona la AP-9, las autopistas ni los peajes (la red viaria solo aparece en el n.º 32, p. 21, conservación de las carreteras del Estado). Sigue sin priorizar con el criterio aprobado el 12-nov: una sola ocasión (Pontecesures, 9-nov), de un dirigente territorial, sin eco en la dirección federal en las fuentes revisadas; mismo trato que compromis-c15, no priorizado y fuera del programa. Lo que el PSOE destacó en campaña (pensiones, SMI, aborto, vivienda y financiación autonómica) está en el programa, así que «prioridades» vacío está justificado y no hay evaluación (prompt 1b), como en ERC, SALF y Adelante Andalucía. Los motivos de los descartados que remitían al programa pendiente (medidas sanitarias de Kilian Sánchez y de María Sáinz) ya citan el programa con referencias correctas (n.º 136, p. 49; n.º 138, pp. 49-50; n.º 154, p. 51); se completaron. Ningún otro motivo o nota trata el programa como pendiente, salvo la «Nota anterior» del 12-nov, que se conserva como texto histórico, como en Vox y Compromís.",
+ "igual_estandar": "Sin valoraciones que revisar. El criterio para decidir qué está «en el programa» es el de las revisiones de Vox (13-nov) y Compromís (14-nov): si falta el rasgo que define el compromiso, va al complemento; si falta un elemento accesorio (instrumento, plazo, nombre de la norma) o el programa lo concreta más, se descarta. Una cifra distinta no es la misma medida: por eso los motivos de las medidas sanitarias precisan ahora que el programa dice «en torno al 7% del PIB», no un mínimo ni más del 7 %. Los motivos describen lo que dicen el programa y la norma, sin adjetivos de valor.",
+ "recuento_nota": "Sin recuento_inicial ni recuento_final: el complemento queda vacío y no hay evaluacion.json. La evaluación anterior (base «compromisos», 5 propuestas × 8 criterios; recuento final 7/32/0/1) se retiró al publicarse el programa y sigue en el historial del repositorio.",
+ "revision_anterior": {
+  "fecha": "2026-11-12",
+  "aprobado": true,
+  "base": "compromisos",
+  "cambios": 9,
+  "dudas": 5,
+  "nota": "La revisión del 12-11-2026 se refería a la base «compromisos» (5 prioridades, psoe-01 a psoe-05). Sus evaluaciones no se reaprovechan, porque los cinco compromisos evaluados están en el programa del 15-nov; sus 9 cambios y 5 dudas siguen en el historial del repositorio. La duda sobre las medidas sanitarias de Kilian Sánchez queda resuelta por el programa (fija una financiación «en torno al 7% del PIB» y no recoge la cita en 48 horas); la del mitin de Sevilla sigue sin búsqueda nueva (véanse las dudas)."
  },
- "recuento_final_nota": "Antes de la revisión: 8/31/0/1 (F/M/D/N). Después: 7/32/0/1.",
  "cambios": [
   {
-   "propuesta": "psoe-02",
-   "criterio": "legal",
-   "antes": "favorable: La revalorización con el IPC ya figura en la ley (art. 58 de la Ley General de la Seguridad Social, en la redacción de la Ley 21/2021), por lo que mantenerla no exige cambios. Sánchez no dice qué artículo reformaría; si fuera el art. 50 (principios rectores), bastaría el procedimiento del art. 167 [...]",
-   "despues": "mixta: [...] y el art. 50 de la Constitución ya obliga a garantizar «pensiones adecuadas y periódicamente actualizadas». Sánchez no dice qué artículo reformaría, y de eso depende el procedimiento: fuera de la sección de derechos fundamentales, art. 167 (tres quintos y referéndum si lo pide una décima parte de una Cámara); dentro, art. 168 (dos tercios, disolución, ratificación y referéndum obligatorio) [...]",
-   "motivo": "Igual estándar: una reforma constitucional cuya ubicación no se define tiene dos procedimientos posibles, y por eso adelante_andalucia-11, psc-03 y psoe-04 (aborto en la Constitución, mismo hecho) tienen encaje legal «mixta». El texto solo contemplaba la vía del art. 167. Se añade que el art. 50 CE ya recoge pensiones «periódicamente actualizadas» (BOE, texto consolidado)."
+   "propuesta": "psoe-c05 (descartado)",
+   "criterio": "seleccion (motivo)",
+   "antes": "En lugar de la prórroga extraordinaria de los contratos y del tope temporal a la actualización de las rentas, propone ampliar la duración de los contratos y congelar temporalmente las rentas que superen los índices de referencia en los mercados tensionados (n.º 61 y 62, p. 30)",
+   "despues": "Del tope a la actualización de las rentas hasta 2027 (disposición final sexta: ninguna subida si la renta supera el índice de referencia y, sin pacto, no más del 2 % en los demás casos), recoge la congelación temporal de las rentas que superen los índices de referencia en los mercados tensionados (n.º 62, p. 30), sin el límite del 2 %; en lugar de la prórroga extraordinaria de los contratos (disposición final quinta), propone ampliar su duración (n.º 61, p. 30)",
+   "motivo": "Inexacto: la disposición final sexta del decreto ya impide subir las rentas que superan el índice de referencia (actualizaciones hasta el 31-12-2027, apartado a); el n.º 62 continúa esa congelación, limitada a los mercados tensionados y sin el tope del 2 % del apartado b), no la sustituye. Solo la prórroga extraordinaria (disposición final quinta, hasta dos años) se cambia por ampliar la duración de los contratos (n.º 61)."
   },
   {
-   "propuesta": "psoe-01",
-   "criterio": "legal",
-   "antes": "y varias comunidades gobernadas por PP y Vox anunciaron recursos contra los decretos, según la prensa.",
-   "despues": "y la Junta de Andalucía decidió recurrir los dos decretos ante el Tribunal Constitucional (Demócrata, 16-10-2026); según Onda Vasca, otras comunidades gobernadas por PP y Vox también anunciaron recursos. (Fuente añadida: Demócrata, 16-10-2026.)",
-   "motivo": "La afirmación solo se apoyaba en una frase del periodista de Onda Vasca, citada sin decir que era la fuente. Se precisa el único recurso documentado con fuente directa y se atribuye el resto. La valoración no cambia."
+   "propuesta": "psoe-c05 (descartado)",
+   "criterio": "seleccion (motivo)",
+   "antes": "El n.º 57 se evalúa con la prioridad psoe-02 del programa; los n.º 71, 84 y 85 no figuran entre sus 12 prioridades.",
+   "despues": "El n.º 57 se evalúa con la prioridad psoe-02 del programa y el n.º 71, con la psoe-03; los n.º 84 y 85 no figuran entre sus 12 prioridades.",
+   "motivo": "Error: según extraccion.json, la prioridad psoe-03 se evalúa «con el n.º 72 y la limitación de compra por fondos del n.º 71» (propuestas_relacionadas: psoe-p072 y psoe-p071)."
   },
   {
-   "propuesta": "psoe-c03 (seleccion.json)",
-   "criterio": "ocasiones (Bilbao, 8-nov), nota",
-   "antes": "Estilo indirecto: «mientras gobierne, subirá todos los años el SMI».",
-   "despues": "Estilo indirecto: «mientras gobierne, subirá todos los años el Salario Mínimo Interprofesional (SMI)».",
-   "motivo": "El texto entre comillas no coincidía con la crónica de Europa Press (Infobae, 8-11-2026)."
+   "propuesta": "psoe-c05 (descartado)",
+   "criterio": "seleccion (motivo)",
+   "antes": "400 millones anuales para el Fondo de Vivienda de Impacto Social (n.º 57, p. 30; art. 13)",
+   "despues": "400 millones anuales para el Fondo de Vivienda de Impacto Social (n.º 57, p. 30), que el art. 13 creó con una dotación inicial de 400 millones",
+   "motivo": "Precisión: el art. 13 dota el fondo una sola vez (crédito extraordinario de 400.000 miles de euros); los 400 millones anuales son del programa, que así lo amplía."
   },
   {
-   "propuesta": "psoe-02 (prioridades, seleccion.json)",
-   "criterio": "justificación",
-   "antes": "Eneko Andueza lo incluyó entre los objetivos de gobierno en Bilbao (8-nov) y lo repitió como «compromiso solemne» en Bilbao (8-nov)",
-   "despues": "Sánchez lo repitió como «compromiso solemne» en Bilbao (8-nov), donde Eneko Andueza incluyó seguir revalorizando las pensiones entre los objetivos de gobierno",
-   "motivo": "La frase atribuía a Andueza la reforma constitucional y el «compromiso solemne». Andueza habla de seguir revalorizando las pensiones (nota del PSE-EE), y el «compromiso solemne» es de Sánchez (Europa Press)."
+   "propuesta": "psoe-c05 (descartado)",
+   "criterio": "seleccion (motivo)",
+   "antes": "y que el coste de esa protección no recaiga en el pequeño propietario sino en las administraciones (n.º 85, p. 33); [...] y el programa TUCASA, ampliable si se agotan sus 10.000 millones (n.º 67, p. 31; art. 19).",
+   "despues": "y que el coste de esa protección no recaiga en el pequeño propietario sino en las administraciones (n.º 85, p. 33; el art. 2 ya pone a cargo de la administración la compensación al propietario); [...] el programa TUCASA, ampliable si se agotan sus 10.000 millones (n.º 67, p. 31; art. 19), y «Consolidar las bonificaciones fiscales para las personas propietarias que reduzcan los precios del alquiler» (n.º 66, p. 31; art. 6, reducciones del IRPF por rebajar la renta).",
+   "motivo": "Incompleto: el compromiso incluye las medidas fiscales del decreto y el motivo no decía qué recoge de ellas el programa. El art. 6 del decreto da una reducción del 100 % del rendimiento neto en el IRPF a quien rebaja la renta más de un 5 % (art. 23.2 de la Ley 35/2006), y el n.º 66 la consolida; la compensación a cargo de la administración ya está en el art. 2.2."
   },
   {
-   "propuesta": "psoe-c05 (seleccion.json)",
-   "criterio": "nota",
-   "antes": "(sin mención)",
-   "despues": "Se añade que la cita literal habla de «este real decreto ley» en singular, mientras que Diario de León (Ical) dice, en estilo indirecto, que se comprometió a mantener «los dos reales decretos»; se evalúa el Real Decreto-ley 29/2026 según la cita literal.",
-   "motivo": "Transparencia sobre el alcance del compromiso: el otro decreto (Real Decreto-ley 28/2026, prórroga automática) fue rechazado el 12-11-2026, y solo la crónica indirecta lo incluye."
+   "propuesta": "descartado «Que el 85 % de los pacientes de Atención Primaria obtenga cita en 48 horas...» (Kilian Sánchez)",
+   "criterio": "seleccion (motivo)",
+   "antes": "El programa del 15-nov recoge una financiación de la sanidad «en torno al 7% del PIB» (n.º 136, p. 49; prioridad psoe-06) y la prevención del tabaquismo y del consumo de alcohol (n.º 154, p. 51), pero no la cita en Atención Primaria en 48 horas.",
+   "despues": "El programa del 15-nov recoge una financiación de la sanidad «en torno al 7% del PIB» (n.º 136, p. 49; prioridad psoe-06), no un mínimo del 7 %, y la prevención del tabaquismo y del consumo de alcohol, con la regulación de los productos del tabaco (n.º 154, p. 51), pero no la cita en Atención Primaria en 48 horas ni la Ley del Medicamento; la Agencia Estatal de Salud Pública solo figura entre lo ya hecho («impulsamos la Agencia Estatal de Salud Pública», p. 46).",
+   "motivo": "Mismo estándar (una cifra distinta no es la misma medida): Kilian Sánchez habló de «al menos el 7 por ciento» (Infobae/Europa Press) y el programa dice «en torno al 7% del PIB». Incompleto: el resumen incluye la ley del medicamento y la Agencia Estatal de Salud Pública, que el motivo no cotejaba; el programa no propone esa ley (el n.º 145, p. 50, trata del acceso a los medicamentos) y presenta la Agencia como ya impulsada (p. 46)."
   },
   {
-   "propuesta": "psoe (seleccion.json)",
-   "criterio": "busqueda.limitaciones",
-   "antes": "A la hora del cierre no se había publicado el contenido del discurso de Sánchez en Sevilla (12-nov).",
-   "despues": "Se añade el resultado de la búsqueda del revisor a las 20:38 del 12-11-2026 (directos sin compromisos literales y concretos; sin crónica de agencia).",
-   "motivo": "Comprobación pedida para el mitin de inicio de campaña en Sevilla: no hay todavía compromisos que añadir."
-  },
-  {
-   "propuesta": "psoe (evaluacion.json)",
-   "criterio": "seleccion_sha256",
-   "antes": "abe4e353e5dece8b973518ed4511505261fe4fd3c344e58c0b1898645353e046",
-   "despues": "6826557360a65504974d8976375092d5659cf86d466b8312508b619832bd4bd0",
-   "motivo": "seleccion.json ha cambiado en esta revisión."
-  },
-  {
-   "propuesta": "psoe-02",
-   "criterio": "financiacion",
-   "antes": "La revalorización con el IPC es la norma vigente y su coste está estimado:",
-   "despues": "Reformar la Constitución no tiene coste por sí mismo y la revalorización con el IPC es la norma vigente, pero la reforma convertiría en obligación constitucional un gasto cuya escala está documentada:",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): decisión de coherencia sobre la nota de la rúbrica («medidas sin coste presupuestario directo relevante»): no se aplica, porque la reforma convertiría en obligación constitucional la revalorización con el IPC, un gasto con coste documentado, a diferencia de las reformas constitucionales sobre derechos sin cuantía (aborto); mismo criterio que upc-07, upn-06 y cc-09 (mantener un gasto vigente: «mixta»). Se escribe el motivo en el texto. La valoración («mixta») no cambia.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "psoe-03",
-   "criterio": "internacional",
-   "antes": "donde el salario mínimo alcanza dos tercios de la mediana,",
-   "despues": "cuyo objetivo es que el salario mínimo no baje de dos tercios de la mediana (en 2024 se quedó algo por debajo),",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): dato sin respaldo, el mismo corregido en compromis-06 y bng-05: según la fuente citada (Low Pay Commission, resumen de evidencia 2024), el salario mínimo de 2024 «was not high enough to meet the two-thirds of median earnings target» y el mandato es que no baje de ese nivel. La valoración («mixta») no cambia.",
-   "fecha": "2026-11-14"
+   "propuesta": "descartado «Garantizar por ley cita en Atención Primaria en menos de 48 horas...» (María Sáinz)",
+   "criterio": "seleccion (motivo)",
+   "antes": "y una financiación «en torno al 7% del PIB» (n.º 136, p. 49), pero no la cita en 48 horas ni la Ley del Medicamento.",
+   "despues": "y una financiación «en torno al 7% del PIB» (n.º 136, p. 49), no por encima del 7 %, pero no la cita en 48 horas ni la Ley del Medicamento.",
+   "motivo": "Mismo estándar: la portavoz planteó un gasto «por encima del 7%» del PIB (Medicina Responsable) y el programa dice «en torno al 7% del PIB»."
   }
  ],
  "dudas": [
-  "Mitin de Sevilla (12-nov). Seguía en curso durante la revisión, y no había crónica de agencia. Hay que revisar sus compromisos literales, y cualquier ocasión nueva de los ya seleccionados, cuando publiquen EFE o Europa Press, y en todo caso con el programa del 15-nov, que sustituye a este análisis.",
-  "psoe-c05 (decreto de vivienda). La cita literal está en singular, pero Ical afirma que el compromiso abarcaba los dos decretos. Si incluía el Real Decreto-ley 28/2026 (prórroga automática e indemnización), ese decreto se rechazó el 12-nov y no consta que Sánchez se haya comprometido a aprobarlo de nuevo. Además, la ocasión de Valladolid (19-oct) solo dice, en estilo indirecto, «ampliar y reforzar la regulación pública», y se cuenta en «veces» de forma generosa.",
-  "veces de psoe-c06 (2) y psoe-c01 (2). La segunda ocasión de c06 es Diana Morant, en estilo indirecto y sin plazo («hará realidad la reforma»), y la de c01 es Eneko Andueza («seguir revalorizando las pensiones», sin IPC ni plazo). Se mantienen, porque ambos son líderes autonómicos y repiten el núcleo del compromiso, pero son repeticiones débiles.",
-  "Formato: seleccion.json guarda «veces» como número y la lista aparte en «ocasiones», como psc; otros partidos usan {n, ocasiones}. No afecta a build_web.",
-  "Solo hay 5 prioridades (6 compromisos nacionales concretos, uno de ellos evaluado junto con otro). Las medidas sanitarias de Kilian Sánchez (cita en Atención Primaria en 48 horas y 7 % del PIB) siguen descartadas por estar en estilo indirecto. Si el programa del 15-nov las recoge, entrarán por el prompt 1."
+  "psoe-c06 (financiación autonómica) es el caso más dudoso. La cita literal solo habla del plazo («Si hay gobierno progresista, estará en vigor el año que viene»), y el n.º 229 dice «Impulsaremos» sin fecha. Se mantiene como descartado porque la medida (el mismo modelo del CPFF, 21.000 millones) está en el programa y el plazo es un elemento accesorio, como el instrumento de vox-c04. Si se considerara que el plazo define el compromiso, como las cifras de vox-c11, c06 (antes psoe-05) volvería al complemento con su evaluación del 12-nov, cuya concreción «favorable» se apoya en ese plazo.",
+  "psoe-c03 (SMI): el programa no dice «todos los años», sino «actualizarlo periódicamente según los precios, los salarios, la productividad» con un suelo del 60 % del salario medio (n.º 87, p. 37). Se trata como concreción del compromiso (criterio de compromis-c08), porque el Gobierno ya fija el SMI cada año (art. 27 del Estatuto de los Trabajadores). La alternativa sería devolverlo al complemento por la periodicidad anual.",
+  "Sin búsqueda nueva tras el 12-nov: como en Vox y Compromís, el complemento reaprovecha los compromisos seleccionados hasta entonces. El registro de promesas (data/promesas, revisión del 15-nov por la mañana) solo añade para el PSOE la reforma de la ley del suelo (Sánchez, entrevista de Vocento del 14-nov), que está en el programa (n.º 50, p. 29: «Aprobar una Ley de Sostenibilidad y Movilización del Suelo»); los actos posteriores al 12-nov (Sevilla, Palma, Alcorcón) no se han buscado para este complemento."
  ]
 }

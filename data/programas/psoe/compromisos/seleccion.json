@@ -1,400 +1,10 @@
 {
  "partido": "psoe",
- "base": "compromisos",
+ "base": "complemento",
  "modelo": "Claude (Anthropic)",
- "fecha": "2026-11-12",
- "nota": "El PSOE no había publicado programa para el 29-N a 12-nov-2026; según Europa Press (Press Digital, 12-nov, recogido en la codificación de fase 1) lo presenta el 15-nov. Esta selección cubre el periodo hasta entonces y deberá sustituirse por el análisis del programa. Solo se han encontrado seis compromisos concretos con cita literal en primera persona de un líder; se seleccionan cinco prioridades (psoe-c01 se evalúa con psoe-c02). No incluye al PSC, que concurre como candidatura propia.",
- "busqueda": {
-  "hasta": "2026-11-12 (antes del mitin de inicio de campaña en Sevilla de esa tarde)",
-  "donde": [
-   "Buscador web (consultas por candidato, ministros-candidatos, dirigentes federales y federaciones, del 6-oct al 12-nov-2026, y precampaña anterior)",
-   "Notas de prensa de federaciones del PSOE (aragonpsoe.es)",
-   "Agencias: Europa Press y EFE a través de Infobae, Público, Press Digital, Alicante Plaza, Diari de Tarragona, Diario de León (Ical)",
-   "Medios: Demócrata, The Objective, Vozpópuli (directos), elDiario.es (entrevista a Sánchez del 7-oct), El Imparcial, El Español, RTVC, Onda Vasca, Artículo 14, Redacción Médica, Catalunya Press, moncloa.com, Orain",
-   "Directos de Infobae del 24-oct, 9-nov y 12-nov; entrevistas de Sánchez en La Séptima (9-nov) y La Revuelta (22-oct) por sus crónicas",
-   "Webs y notas de prensa de federaciones: PSOE Aragón (aragonpsoe.es, feed desde septiembre), PSdeG (socialistas.gal), PSN-PSOE (psn-psoe.org), PSE-EE (socialistasvascos.com); psoemadrid.es no ofreció listado de noticias, y las webs de PSOE-A, PSPV, PSOE de Castilla-La Mancha, Extremadura, Murcia, Canarias y PSIB no respondieron (sin sortear bloqueos). El PSC (socialistes.cat) es otra candidatura.",
-   "Mitin de València (6-nov) por las crónicas de elDiario.es, Valencia Plaza y Europa Press; mitin de apertura en Sevilla (12-nov) por los directos de El Español, El Debate e Infobae hasta su inicio",
-   "Actos revisados: Dos Hermanas (10-oct), Ponferrada (11-oct), Zaragoza (14-oct), Fuenlabrada (17-oct), Valladolid (19-oct), Burgos (21-oct), Granada (24-oct), Gijón (26-oct), Tarragona (7-nov), Bilbao (8-nov); foros de Arcadi España (2 y 6-nov) y Kilian Sánchez (6-nov)"
-  ],
-  "limitaciones": "psoe.es no se intentó (desafío anti-bots de Imperva/Incapsula documentado en el proyecto). Las cuentas oficiales en X y YouTube no ofrecen transcripciones accesibles con una petición normal, por lo que los discursos se han leído a través de crónicas de agencia y notas de las federaciones. A la hora del cierre no se había publicado el contenido del discurso de Sánchez en Sevilla (12-nov). El índice del buscador cubre de forma desigual la segunda quincena de octubre y noviembre de 2026, por lo que pueden faltar compromisos de dirigentes territoriales. Se descartó una pieza de prensamercosur.org sobre el mitin de Granada por contener datos no contrastables (atribuye declaraciones a dirigentes que no ocupan esos cargos). Revisión (12-11-2026, 20:38): el mitin de Sevilla seguía en curso; los directos de El Español, elDiario.es e Infobae solo recogían frases generales de Sánchez («remontada épica», «176 escaños») y, en estilo indirecto, que María Jesús Montero garantizó la revalorización anual de las pensiones. No había aún crónica de agencia (EFE o Europa Press) ni nota de federaciones con compromisos literales y concretos; la web del PSOE-A no respondió."
- },
+ "fecha": "2026-11-15",
+ "nota": "Compromisos de dirigentes del PSOE que no figuran en el programa «La fuerza de seguir avanzando» publicado el 15-nov (data/sources/programas/psoe/PROGRAMAPSOE29N26.txt, páginas del PDF de 114 págs.) y que el partido presenta como importantes; complementarían las 12 prioridades del programa (data/programas/psoe/evaluacion.json). Hasta el 15-nov esta carpeta tenía base «compromisos» (cinco prioridades evaluadas y revisadas el 12-nov); al publicarse el programa, las cinco están en él, a veces con otras palabras o concretadas, y pasan a «descartados» junto con psoe-c01, que se evaluaba con psoe-c02. Por eso «prioridades» está vacío y no hay evaluación (prompt 1b). psoe-c07 (gratuidad de la AP-9), que no era prioridad, no está en el programa y sigue sin priorizar. Cada compromiso se buscó en las 492 medidas de data/programas/psoe/extraccion.json y en el texto completo del programa, por sus términos y por sinónimos. Nota anterior (base «compromisos», 12-nov): El PSOE no había publicado programa para el 29-N a 12-nov-2026; según Europa Press (Press Digital, 12-nov, recogido en la codificación de fase 1) lo presenta el 15-nov. Esta selección cubre el periodo hasta entonces y deberá sustituirse por el análisis del programa. Solo se han encontrado seis compromisos concretos con cita literal en primera persona de un líder; se seleccionan cinco prioridades (psoe-c01 se evalúa con psoe-c02). No incluye al PSC, que concurre como candidatura propia.",
  "compromisos": [
-  {
-   "id": "psoe-c01",
-   "area": "pensiones",
-   "resumen": "Mantener durante los cuatro años de la próxima legislatura la revalorización anual de las pensiones conforme al IPC.",
-   "cita": "Cuatro años más de gobierno progresista, cuatro años más de avances sociales y cero recortes. Y cuatro años más de revalorización de las pensiones conforme al IPC. Ese es mi compromiso",
-   "quien": "Pedro Sánchez, secretario general del PSOE, presidente del Gobierno y candidato a la Presidencia (cabeza de lista por Madrid)",
-   "formato": "mitin de precampaña (Zaragoza)",
-   "fecha": "2026-10-14",
-   "url": "https://aragonpsoe.es/blog/2026/10/14/alegria-situa-la-vivienda-las-pensiones-y-la-defensa-de-los-servicios-publicos-en-el-centro-de-una-campana-decisiva-para-frenar-el-modelo-de-pp-y-vox/",
-   "medio": "PSOE Aragón (nota de prensa del partido)",
-   "fuente_local": "data/sources/compromisos/psoe/aragonpsoe_20261014.txt",
-   "sha256": "201f5a84cd740a63c9213c0e534d46b059677607f6019832df715e270d047d54",
-   "cuantificado": true,
-   "veces": 2,
-   "ocasiones": [
-    {
-     "fecha": "2026-10-14",
-     "acto": "mitin de Zaragoza",
-     "url": "https://aragonpsoe.es/blog/2026/10/14/alegria-situa-la-vivienda-las-pensiones-y-la-defensa-de-los-servicios-publicos-en-el-centro-de-una-campana-decisiva-para-frenar-el-modelo-de-pp-y-vox/",
-     "medio": "PSOE Aragón (nota de prensa)",
-     "fuente_local": "data/sources/compromisos/psoe/aragonpsoe_20261014.txt",
-     "sha256": "201f5a84cd740a63c9213c0e534d46b059677607f6019832df715e270d047d54",
-     "literal": true,
-     "nota": "Cita literal recogida por el propio partido."
-    },
-    {
-     "fecha": "2026-10-14",
-     "acto": "mitin de Zaragoza",
-     "url": "https://www.democrata.es/elecciones-generales-espana/sanchez-acusa-pp-vox-recortar-derecho-voto-promete-revalorizar-pensiones-durante-otros-cuatro-anos/",
-     "medio": "Demócrata",
-     "fuente_local": "data/sources/compromisos/psoe/democrata_20261014.txt",
-     "sha256": "d7f314e2ef1ecb9f775f2d37fc349daa5c047d5e6aebc75624ef97fa8660f7ca",
-     "literal": false,
-     "nota": "Misma ocasión, en estilo indirecto."
-    },
-    {
-     "fecha": "2026-11-08",
-     "acto": "mitin de Bilbao",
-     "url": "https://www.socialistasvascos.com/eneko-andueza-euskadi-y-espana-hablaran-claro-el-29-de-noviembre-partido-socialista-y-pedro-sanchez-cuatro-anos-mas.htm",
-     "medio": "PSE-EE (nota de prensa del partido)",
-     "fuente_local": "data/sources/compromisos/psoe/pseee_20261108_bilbao.txt",
-     "sha256": "bfb154b5b97563291778e78c088861ca6dd747bbfc331a6ef00ecc8f9c70064c",
-     "literal": true,
-     "nota": "Eneko Andueza, secretario general del PSE-EE: «Queremos gobernar [...] Para seguir revalorizando las pensiones de más de 600.000 vascos y vascas»."
-    }
-   ],
-   "nota": "Reitera lo que ya establece el art. 58 de la LGSS (Ley 21/2021); se evalúa junto con psoe-c02."
-  },
-  {
-   "id": "psoe-c02",
-   "area": "pensiones",
-   "resumen": "Reformar la Constitución en la próxima legislatura para blindar las pensiones y su revalorización conforme al IPC.",
-   "cita": "Y ahora, ante la amenaza del PP y de Vox, asumo el siguiente compromiso: La próxima legislatura reformaremos la Constitución para blindar las pensiones y su revalorización conforme al IPC",
-   "quien": "Pedro Sánchez, secretario general del PSOE, presidente del Gobierno y candidato a la Presidencia (cabeza de lista por Madrid)",
-   "formato": "mitin de precampaña (Gijón)",
-   "fecha": "2026-10-26",
-   "url": "https://www.publico.es/politica/sanchez-promete-reformara-constitucion-blindar-subida-pensiones-conforme-ipc.html",
-   "medio": "Público (Europa Press)",
-   "fuente_local": "data/sources/compromisos/psoe/publico_20261026_pensiones.txt",
-   "sha256": "770a0f1055c336c5657b50df9a827970995320babe668abc5e4ffc9ee249af45",
-   "cuantificado": true,
-   "veces": 3,
-   "ocasiones": [
-    {
-     "fecha": "2026-10-26",
-     "acto": "mitin de Gijón",
-     "url": "https://www.publico.es/politica/sanchez-promete-reformara-constitucion-blindar-subida-pensiones-conforme-ipc.html",
-     "medio": "Público (Europa Press)",
-     "fuente_local": "data/sources/compromisos/psoe/publico_20261026_pensiones.txt",
-     "sha256": "770a0f1055c336c5657b50df9a827970995320babe668abc5e4ffc9ee249af45",
-     "literal": true,
-     "nota": "Cita literal."
-    },
-    {
-     "fecha": "2026-10-26",
-     "acto": "mitin de Gijón",
-     "url": "https://theobjective.com/espana/politica/2026-10-26/sanchez-promete-reformara-consitucion-pensiones/",
-     "medio": "The Objective (EFE)",
-     "fuente_local": "data/sources/compromisos/psoe/theobjective_20261026_pensiones.txt",
-     "sha256": "a60072682caa466cba5e5e12b84569ccbe621deb5c032be2a535faa6c648fa23",
-     "literal": true,
-     "nota": "Misma ocasión; cita literal."
-    },
-    {
-     "fecha": "2026-11-08",
-     "acto": "mitin de Bilbao",
-     "url": "https://www.infobae.com/espana/agencias/2026/11/08/sanchez-promete-blindar-las-pensiones-en-la-constitucion-y-pide-el-apoyo-para-llegar-mucho-mas-lejos/",
-     "medio": "Infobae (Europa Press)",
-     "fuente_local": "data/sources/compromisos/psoe/infobae_20261108_bilbao.txt",
-     "sha256": "f73af4b22eaa059214fb4032b7a782ad21c8eadb063b0523efa4273ffc198d97",
-     "literal": false,
-     "nota": "Reiterado como «compromiso solemne»; «blindar en la Constitución» entre comillas, el resto en estilo indirecto."
-    },
-    {
-     "fecha": "2026-11-08",
-     "acto": "mitin de Bilbao",
-     "url": "https://www.democrata.es/politica/ampliacion-sanchez-se-compromete-a-blindar-las-pensiones-en-la-constitucion-y-reclama-apoyo-para-ir-mucho-mas-lejos/",
-     "medio": "Demócrata (Europa Press)",
-     "fuente_local": "data/sources/compromisos/psoe/democrata_20261108_ampliacion.txt",
-     "sha256": "9c6895a487b51a654cb5ed0c6c5f97ea48f8d1f724056c45adbeef66b7c16e24",
-     "literal": false,
-     "nota": "Misma ocasión."
-    },
-    {
-     "fecha": "2026-10-27",
-     "acto": "reunión con la unión de pensionistas de UGT Aragón",
-     "url": "https://aragonpsoe.es/blog/2026/10/27/el-psoe-se-compromete-a-blindar-las-pensiones-en-la-constitucion-para-protegerlas-de-los-recortes-del-pp/",
-     "medio": "PSOE Aragón (nota de prensa del partido)",
-     "fuente_local": "data/sources/compromisos/psoe/aragonpsoe_20261027_pensiones.txt",
-     "sha256": "7b1fc79ea293f516373b6cebb7bc325e2ab38e54848e1dd765e53f262e679cb4",
-     "literal": true,
-     "nota": "Pilar Alegría, secretaria general del PSOE Aragón: «nosotros vamos a blindar en la Constitución el incremento de las pensiones conforme al coste de la vida»."
-    }
-   ]
-  },
-  {
-   "id": "psoe-c03",
-   "area": "empleo",
-   "resumen": "Subir el salario mínimo interprofesional todos los años mientras gobierne, sin concretar cuantía.",
-   "cita": "Nosotros subiremos el SMI este año, y el siguiente, y el siguiente, todos los años",
-   "quien": "Pedro Sánchez, secretario general del PSOE, presidente del Gobierno y candidato a la Presidencia (cabeza de lista por Madrid)",
-   "formato": "acto de precampaña (Tarragona, Moll de Costa)",
-   "fecha": "2026-11-07",
-   "url": "https://www.diaridetarragona.com/tarragona/275125/pedro-sanchez-tarragona-29n-votamos-masa-mandamos-casa-feijoo-abascal.html",
-   "medio": "Diari de Tarragona",
-   "fuente_local": "data/sources/compromisos/psoe/diaridetarragona_20261107.txt",
-   "sha256": "a3a605a39f08f159d357b728619f7cb3ccaea18161b7929d023f524d7afb4b71",
-   "cuantificado": true,
-   "veces": 4,
-   "ocasiones": [
-    {
-     "fecha": "2026-10-19",
-     "acto": "mitin de Valladolid",
-     "url": "https://www.ondavasca.com/sanchez-promete-subir-el-salario-minimo-todos-los-anos-que-gobierne/",
-     "medio": "Onda Vasca",
-     "fuente_local": "data/sources/compromisos/psoe/ondavasca_smi_valladolid.txt",
-     "sha256": "afcc348b63f4c727bf5cf281afd4e9f9420a455a9e92469970918e4c61c2356d",
-     "literal": false,
-     "nota": "Promete elevar el SMI «todos los años» que permanezca en el Ejecutivo (cita parcial)."
-    },
-    {
-     "fecha": "2026-10-24",
-     "acto": "mitin de Granada",
-     "url": "https://www.vozpopuli.com/espana/politica/sanchez-caricaturiza-a-feijoo-y-abascal-como-el-club-de-la-motosierra-y-anuncia-que-blindara-el-aborto-en-la-constitucion.html",
-     "medio": "Vozpópuli",
-     "fuente_local": "data/sources/compromisos/psoe/vozpopuli_20261024_motosierra.txt",
-     "sha256": "55c636e31157523ddf3ff0abdf572574866b64f22f50010218420e746579e17b",
-     "literal": false,
-     "nota": "Promete seguir incrementando el salario mínimo «lo quiera o no la patronal» (cita parcial)."
-    },
-    {
-     "fecha": "2026-11-07",
-     "acto": "acto de Tarragona",
-     "url": "https://www.diaridetarragona.com/tarragona/275125/pedro-sanchez-tarragona-29n-votamos-masa-mandamos-casa-feijoo-abascal.html",
-     "medio": "Diari de Tarragona",
-     "fuente_local": "data/sources/compromisos/psoe/diaridetarragona_20261107.txt",
-     "sha256": "a3a605a39f08f159d357b728619f7cb3ccaea18161b7929d023f524d7afb4b71",
-     "literal": true,
-     "nota": "Cita literal."
-    },
-    {
-     "fecha": "2026-11-08",
-     "acto": "mitin de Bilbao",
-     "url": "https://www.infobae.com/espana/agencias/2026/11/08/sanchez-insiste-en-blindar-pensiones-y-subir-el-smi-y-pide-votar-en-masa-para-llegar-mucho-mas-lejos/",
-     "medio": "Infobae (Europa Press)",
-     "fuente_local": "data/sources/compromisos/psoe/infobae_20261108_bilbao2.txt",
-     "sha256": "432ed1b40c300fca956c787a8df35ac8cd7b2545de8ff39c85bc8d1ff70d31f6",
-     "literal": false,
-     "nota": "Estilo indirecto: «mientras gobierne, subirá todos los años el Salario Mínimo Interprofesional (SMI)»."
-    }
-   ],
-   "nota": "«cuantificado» por la periodicidad (cada año); no da cuantía ni referencia (p. ej., el 60 % del salario medio)."
-  },
-  {
-   "id": "psoe-c04",
-   "area": "igualdad",
-   "resumen": "Reformar la Constitución en la próxima legislatura para blindar el derecho al aborto.",
-   "cita": "En la próxima legislatura reformaremos y blindaremos el derecho al aborto en la Constitución española",
-   "quien": "Pedro Sánchez, secretario general del PSOE, presidente del Gobierno y candidato a la Presidencia (cabeza de lista por Madrid)",
-   "formato": "mitin de precampaña (Granada)",
-   "fecha": "2026-10-24",
-   "url": "https://www.vozpopuli.com/espana/politica/elecciones-generales-del-29-n-en-directo-sanchez-feijoo-y-abascal-protagonizan-los-actos-de-campana-este-sabado.html",
-   "medio": "Vozpópuli (directo, Europa Press)",
-   "fuente_local": "data/sources/compromisos/psoe/vozpopuli_directo_sabado.txt",
-   "sha256": "2e8ec4f9a2abe0cb488215ee57af5da5f248035659bd9f29cf29287fbd941b60",
-   "cuantificado": true,
-   "veces": 3,
-   "ocasiones": [
-    {
-     "fecha": "2026-10-24",
-     "acto": "mitin de Granada",
-     "url": "https://www.vozpopuli.com/espana/politica/elecciones-generales-del-29-n-en-directo-sanchez-feijoo-y-abascal-protagonizan-los-actos-de-campana-este-sabado.html",
-     "medio": "Vozpópuli (directo)",
-     "fuente_local": "data/sources/compromisos/psoe/vozpopuli_directo_sabado.txt",
-     "sha256": "2e8ec4f9a2abe0cb488215ee57af5da5f248035659bd9f29cf29287fbd941b60",
-     "literal": true,
-     "nota": "Cita literal."
-    },
-    {
-     "fecha": "2026-10-24",
-     "acto": "mitin de Granada",
-     "url": "https://www.diaridetarragona.com/espana/273908/sanchez-anuncia-sigue-moncloa-blindara-derecho-aborto-constitucion.html",
-     "medio": "Diari de Tarragona (EFE)",
-     "fuente_local": "data/sources/compromisos/psoe/diaridetarragona_20261024_aborto.txt",
-     "sha256": "504a38fa2ba1dede6f26583d6af0448ee7a70257e94b11b4fcf3509bfe2795f3",
-     "literal": false,
-     "nota": "Misma ocasión, estilo indirecto."
-    },
-    {
-     "fecha": "2026-10-24",
-     "acto": "mitin de Granada",
-     "url": "https://rtvc.es/sanchez-promete-blindar-derecho-aborto-constitucion-sigue-moncloa-24-octubre-2026/",
-     "medio": "RTVC",
-     "fuente_local": "data/sources/compromisos/psoe/rtvc_20261024_aborto.txt",
-     "sha256": "6db521b90fbd2c88dbd02a7d3212e962a0626d7f42e28e9a1b6d5cb7c94fb0fa",
-     "literal": false,
-     "nota": "Misma ocasión, estilo indirecto."
-    },
-    {
-     "fecha": "2026-11-07",
-     "acto": "acto de Tarragona",
-     "url": "https://www.diaridetarragona.com/tarragona/275125/pedro-sanchez-tarragona-29n-votamos-masa-mandamos-casa-feijoo-abascal.html",
-     "medio": "Diari de Tarragona",
-     "fuente_local": "data/sources/compromisos/psoe/diaridetarragona_20261107.txt",
-     "sha256": "a3a605a39f08f159d357b728619f7cb3ccaea18161b7929d023f524d7afb4b71",
-     "literal": false,
-     "nota": "«blindar el derecho al aborto» entre comillas; la referencia a la Constitución, en estilo indirecto."
-    },
-    {
-     "fecha": "2026-11-08",
-     "acto": "mitin de Bilbao",
-     "url": "https://www.infobae.com/espana/agencias/2026/11/08/sanchez-promete-blindar-las-pensiones-en-la-constitucion-y-pide-el-apoyo-para-llegar-mucho-mas-lejos/",
-     "medio": "Infobae (Europa Press)",
-     "fuente_local": "data/sources/compromisos/psoe/infobae_20261108_bilbao.txt",
-     "sha256": "f73af4b22eaa059214fb4032b7a782ad21c8eadb063b0523efa4273ffc198d97",
-     "literal": false,
-     "nota": "Estilo indirecto; «Vamos a exigirlo a todos los partidos parlamentarios», literal."
-    }
-   ]
-  },
-  {
-   "id": "psoe-c05",
-   "area": "vivienda",
-   "resumen": "Mantener y reforzar en la próxima legislatura el real decreto-ley de vivienda de octubre de 2026 (suspensión de desahucios de hogares vulnerables sin alternativa habitacional hasta 2030, prórroga extraordinaria de alquileres, regulación del alquiler de temporada y por habitaciones, medidas fiscales).",
-   "cita": "el próximo Parlamento, con una amplia mayoría progresista, y el Gobierno progresista reforzarán y mantendrán este real decreto ley de vivienda que protege a los pequeños propietarios y a los inquilinos frente a la especulación",
-   "quien": "Pedro Sánchez, secretario general del PSOE, presidente del Gobierno y candidato a la Presidencia (cabeza de lista por Madrid)",
-   "formato": "mitin de inicio de precampaña (Dos Hermanas, Sevilla)",
-   "fecha": "2026-10-10",
-   "url": "https://www.infobae.com/espana/2026/10/10/el-psoe-abre-la-precampana-para-el-29n-con-sanchez-como-un-perro-que-no-tiene-amo-y-promete-que-la-politica-de-vivienda-no-tiene-fecha-de-caducidad/",
-   "medio": "Infobae",
-   "fuente_local": "data/sources/compromisos/psoe/infobae_20261010_doshermanas.txt",
-   "sha256": "76bbf5ab84d7768f874f1f09190b18b021645bc5d8c91630044b859b936b80e9",
-   "cuantificado": false,
-   "veces": 3,
-   "ocasiones": [
-    {
-     "fecha": "2026-10-07",
-     "acto": "entrevista en elDiario.es (grabada el 7 y 8-oct, publicada el 9-oct)",
-     "url": "https://www.eldiario.es/politica/pedro-sanchez-hora-parlamento-parezca-calle-no-viven-aticazos_1_13569153.html",
-     "medio": "elDiario.es",
-     "fuente_local": "data/sources/compromisos/psoe/eldiario_20261009_entrevista.txt",
-     "sha256": "9ca5ce224d067f4ad395f6adb0b91e5bd5cc395b8748b00442f9507b234f6b53",
-     "literal": true,
-     "nota": "«Mi compromiso es que no se va a producir ningún desahucio en lo que queda de legislatura. Y aspiro a una mayoría parlamentaria más amplia, progresista, para que en la próxima legislatura tampoco haya desahucios»."
-    },
-    {
-     "fecha": "2026-10-10",
-     "acto": "mitin de Dos Hermanas",
-     "url": "https://www.infobae.com/espana/2026/10/10/el-psoe-abre-la-precampana-para-el-29n-con-sanchez-como-un-perro-que-no-tiene-amo-y-promete-que-la-politica-de-vivienda-no-tiene-fecha-de-caducidad/",
-     "medio": "Infobae",
-     "fuente_local": "data/sources/compromisos/psoe/infobae_20261010_doshermanas.txt",
-     "sha256": "76bbf5ab84d7768f874f1f09190b18b021645bc5d8c91630044b859b936b80e9",
-     "literal": true,
-     "nota": "Cita literal."
-    },
-    {
-     "fecha": "2026-10-10",
-     "acto": "mitin de Dos Hermanas",
-     "url": "https://www.elimparcial.es/noticia/302714/nacional/sanchez-promete-mantener-y-reforzar-los-decretos-de-vivienda-si-vuelve-a-gobernar.html",
-     "medio": "El Imparcial",
-     "fuente_local": "data/sources/compromisos/psoe/elimparcial_20261010_vivienda.txt",
-     "sha256": "2906c3512a4844fd36dfedc986460aaafe33aa6acbc9ad76aa680cc3ee850489",
-     "literal": true,
-     "nota": "Misma ocasión: «El próximo gobierno mantendrá y reforzará ese real decreto de vivienda»."
-    },
-    {
-     "fecha": "2026-10-10",
-     "acto": "mitin de Dos Hermanas",
-     "url": "https://www.diariodeleon.es/castilla-y-leon/261010/2099878/sanchez-promete-reforzar-mantener-decretos-vivienda-honrar-ejemplo-vida-maricarmen.html",
-     "medio": "Diario de León (Ical)",
-     "fuente_local": "data/sources/compromisos/psoe/diariodeleon_20261010_vivienda.txt",
-     "sha256": "27e47549bae3fc08f3cfad5e6808bb61ea12e95af429e69118285dad1faa4bf5",
-     "literal": false,
-     "nota": "Misma ocasión."
-    },
-    {
-     "fecha": "2026-10-19",
-     "acto": "mitin de Valladolid",
-     "url": "https://www.ondavasca.com/sanchez-promete-subir-el-salario-minimo-todos-los-anos-que-gobierne/",
-     "medio": "Onda Vasca",
-     "fuente_local": "data/sources/compromisos/psoe/ondavasca_smi_valladolid.txt",
-     "sha256": "afcc348b63f4c727bf5cf281afd4e9f9420a455a9e92469970918e4c61c2356d",
-     "literal": false,
-     "nota": "Estilo indirecto: «prometió ampliar y reforzar la regulación pública para facilitar el acceso a una vivienda»."
-    }
-   ],
-   "nota": "Se refiere al decreto rechazado por el Congreso a principios de octubre y reaprobado el 6-oct como Real Decreto-ley 29/2026, convalidado por la Diputación Permanente el 12-nov; el segundo decreto (Real Decreto-ley 28/2026, prórroga automática de contratos) fue rechazado ese día. «Reforzar» no se concreta. La cita literal habla de «este real decreto ley» (en singular) y la crónica de Infobae, de «ese decreto»; Diario de León (Ical) escribe, en estilo indirecto, que se comprometió a mantener «los dos reales decretos». Se toma la cita literal: el compromiso evaluado es el Real Decreto-ley 29/2026."
-  },
-  {
-   "id": "psoe-c06",
-   "area": "modelo territorial",
-   "resumen": "Llevar al Congreso en los primeros meses de 2027 el nuevo modelo de financiación autonómica aprobado por el CPFF en septiembre de 2026 para que esté en vigor ese año.",
-   "cita": "Si hay gobierno progresista, estará en vigor el año que viene",
-   "quien": "Arcadi España, ministro de Hacienda y número dos de la candidatura del PSOE al Congreso por Valencia (BOE-A-2026-23103)",
-   "formato": "desayuno informativo (Fórum Europa Tribuna Mediterránea, Valencia)",
-   "fecha": "2026-11-06",
-   "url": "https://alicanteplaza.es/alicanteplaza/espana/arcadi-espana-avisa-que-con-pp-y-vox-no-habra-nueva-financiacion-y-promete-que-si-sanchez-sigue-estara-en-vigor-en-2027",
-   "medio": "Alicante Plaza (Europa Press)",
-   "fuente_local": "data/sources/compromisos/psoe/alicanteplaza_20261106_financiacion.txt",
-   "sha256": "6833d49da2efed54f09ebb4f6a421d1b713c5909a9cb432e01adf0f11a7c4bc2",
-   "cuantificado": true,
-   "veces": 2,
-   "ocasiones": [
-    {
-     "fecha": "2026-11-06",
-     "acto": "Fórum Europa Tribuna Mediterránea",
-     "url": "https://alicanteplaza.es/alicanteplaza/espana/arcadi-espana-avisa-que-con-pp-y-vox-no-habra-nueva-financiacion-y-promete-que-si-sanchez-sigue-estara-en-vigor-en-2027",
-     "medio": "Alicante Plaza (Europa Press)",
-     "fuente_local": "data/sources/compromisos/psoe/alicanteplaza_20261106_financiacion.txt",
-     "sha256": "6833d49da2efed54f09ebb4f6a421d1b713c5909a9cb432e01adf0f11a7c4bc2",
-     "literal": true,
-     "nota": "Cita literal; el plazo de «los primeros meses» de 2027 va entre comillas."
-    },
-    {
-     "fecha": "2026-11-06",
-     "acto": "Fórum Europa Tribuna Mediterránea",
-     "url": "https://www.articulo14.es/economia/hacienda-posible-subida-impuestos-financiar-transporte-20261106.html",
-     "medio": "Artículo 14",
-     "fuente_local": "data/sources/compromisos/psoe/articulo14_20261106_transporte.txt",
-     "sha256": "a0d2289c3cef618f51ab66fdf3e63504ad500eb5db0109df166928442599b118",
-     "literal": true,
-     "nota": "Misma ocasión."
-    },
-    {
-     "fecha": "2026-11-06",
-     "acto": "Fórum Europa Tribuna Mediterránea",
-     "url": "https://www.catalannews.com/politics/item/spains-finance-minister-vows-to-resubmit-regional-funding-model-if-left-wins-election",
-     "medio": "Catalan News (en inglés)",
-     "fuente_local": "data/sources/compromisos/psoe/catalannews_arcadi_financiacion.txt",
-     "sha256": "2dde7709732158823b6a3e063db0318e4e2785fc77f1cdab01c395706e55bfc7",
-     "literal": false,
-     "nota": "Misma ocasión; traducción al inglés: lo presenta como «una de las tareas urgentes del próximo gobierno»."
-    },
-    {
-     "fecha": "2026-11-06",
-     "acto": "Fórum Europa Tribuna Mediterránea",
-     "url": "https://www.democrata.es/economia/arcadi-espana-alerta-de-que-un-gobierno-de-pp-y-vox-bloquearia-la-nueva-financiacion-autonomica/",
-     "medio": "Demócrata",
-     "fuente_local": "data/sources/compromisos/psoe/democrata_20261106_financiacion.txt",
-     "sha256": "d8a0b966f269a696e48a544990966471f70eed35deb9a12a146a2c026f2a9943",
-     "literal": false,
-     "nota": "Misma ocasión."
-    },
-    {
-     "fecha": "2026-11-06",
-     "acto": "mitin de Sánchez en València (Cabanyal)",
-     "url": "https://www.pressdigital.es/articulo/politica/2026-11-06/6082569-morant-advierte-pp-vox-politica-atrapa-aunque-huyan-ventorro-ahora",
-     "medio": "Press Digital (Europa Press)",
-     "fuente_local": "data/sources/compromisos/psoe/pressdigital_20261106_morant.txt",
-     "sha256": "cc75a64d3c70a82ae50c9e6d0d5621e91139040002d5fd7322fc8340661ea274",
-     "literal": false,
-     "nota": "Diana Morant, secretaria general del PSPV-PSOE, en estilo indirecto: según la crónica, elogió a Arcadi España porque hará realidad la reforma de la financiación autonómica."
-    }
-   ],
-   "nota": "Habla como ministro y dirigente del PSOE (miembro de la Ejecutiva Federal según la auditoría de fase 1); no es cabeza de lista. Una sola ocasión en primera persona; Diana Morant lo repitió en estilo indirecto el mismo día."
-  },
   {
    "id": "psoe-c07",
    "area": "otros",
@@ -421,46 +31,15 @@
      "nota": "Cita literal en gallego."
     }
    ],
-   "nota": "Compromiso territorial (Galicia), no destacado por la dirección federal; no se incluye entre las prioridades. Depende de que la Xunta acepte el traspaso ya aprobado por ley, según el propio Besteiro; la cita está en gallego."
+   "nota": "Compromiso territorial (Galicia), no destacado por la dirección federal; no se incluye entre las prioridades. Depende de que la Xunta acepte el traspaso ya aprobado por ley, según el propio Besteiro; la cita está en gallego.",
+   "programa": "No figura en el programa: el texto no menciona la AP-9, los peajes ni la gratuidad de autopistas."
   }
  ],
- "prioridades": [
+ "prioridades": [],
+ "no_priorizados": [
   {
-   "id": "psoe-01",
-   "compromiso": "psoe-c05",
-   "titulo": "Mantener y reforzar el decreto-ley de vivienda de octubre de 2026",
-   "justificacion": "La vivienda abrió la precampaña: el primer mitin de Sánchez (Dos Hermanas, 10-oct) se centró en este compromiso, que repitió en Valladolid (19-oct) y que enlaza con su entrevista de elDiario.es (7-oct). Según fuentes del partido citadas por EFE (12-nov), la campaña arranca con la vivienda en el centro y el adelanto electoral se debió al rechazo de los decretos de vivienda.",
-   "compromisos_relacionados": []
-  },
-  {
-   "id": "psoe-02",
-   "compromiso": "psoe-c02",
-   "titulo": "Reforma constitucional para blindar las pensiones y su revalorización con el IPC",
-   "justificacion": "Sánchez lo formuló como «asumo el siguiente compromiso» (Gijón, 26-oct), Pilar Alegría lo trasladó a la unión de pensionistas de UGT Aragón (27-oct), Sánchez lo repitió como «compromiso solemne» en Bilbao (8-nov), donde Eneko Andueza incluyó seguir revalorizando las pensiones entre los objetivos de gobierno; en Zaragoza (14-oct) presentó la revalorización con el IPC durante cuatro años como «mi compromiso». Es el titular de las crónicas de Europa Press del 8-nov y del resumen de promesas de Catalunya Press (9-nov). Se evalúa junto con psoe-c01.",
-   "compromisos_relacionados": [
-    "psoe-c01"
-   ]
-  },
-  {
-   "id": "psoe-03",
-   "compromiso": "psoe-c03",
-   "titulo": "Subir el salario mínimo todos los años",
-   "justificacion": "Es el compromiso que Sánchez repite en más actos (Valladolid, Granada, Tarragona y Bilbao) y figura en el titular de Europa Press del mitin de Bilbao (8-nov).",
-   "compromisos_relacionados": []
-  },
-  {
-   "id": "psoe-04",
-   "compromiso": "psoe-c04",
-   "titulo": "Reforma constitucional para blindar el derecho al aborto",
-   "justificacion": "Anunciado por Sánchez en Granada (24-oct) y repetido en Tarragona (7-nov) y Bilbao (8-nov), donde dijo que lo exigirá «a todos los partidos parlamentarios».",
-   "compromisos_relacionados": []
-  },
-  {
-   "id": "psoe-05",
-   "compromiso": "psoe-c06",
-   "titulo": "Nuevo modelo de financiación autonómica en vigor en 2027",
-   "justificacion": "Único compromiso concreto y con plazo sobre el modelo territorial localizado; lo formuló el ministro de Hacienda y número dos por Valencia (6-nov), que lo presentó como una de las tareas urgentes del próximo Gobierno, y la líder del PSPV, Diana Morant, lo reiteró ese día en el mitin de Sánchez en València (en estilo indirecto). Solo consta una ocasión en primera persona.",
-   "compromisos_relacionados": []
+   "id": "psoe-c07",
+   "motivo": "Compromiso territorial (Galicia) del secretario general del PSdeG, formulado una sola vez (Pontecesures, 9-nov) y no destacado por la dirección federal. Tampoco figura en el programa del 15-nov."
   }
  ],
  "descartados": [
@@ -469,7 +48,7 @@
    "quien": "Kilian Sánchez, secretario de Sanidad de la Ejecutiva Federal del PSOE",
    "fecha": "2026-11-06",
    "url": "https://infobae.com/america/agencias/2026/11/06/el-psoe-propone-que-el-85-de-los-pacientes-consiga-cita-en-atencion-primaria-en-menos-de-48-horas",
-   "motivo": "Estilo indirecto: Europa Press (Infobae), Redacción Médica y Demócrata recogen las medidas con palabras del periodista («ha avanzado que su formación incluirá en su programa...»); la única frase literal no contiene medida. No se halló cita literal en otra fuente. Anunciadas para el programa del 15-nov: revisar entonces."
+   "motivo": "Estilo indirecto: Europa Press (Infobae), Redacción Médica y Demócrata recogen las medidas con palabras del periodista («ha avanzado que su formación incluirá en su programa...»); la única frase literal no contiene medida. No se halló cita literal en otra fuente. El programa del 15-nov recoge una financiación de la sanidad «en torno al 7% del PIB» (n.º 136, p. 49; prioridad psoe-06), no un mínimo del 7 %, y la prevención del tabaquismo y del consumo de alcohol, con la regulación de los productos del tabaco (n.º 154, p. 51), pero no la cita en Atención Primaria en 48 horas ni la Ley del Medicamento; la Agencia Estatal de Salud Pública solo figura entre lo ya hecho («impulsamos la Agencia Estatal de Salud Pública», p. 46)."
   },
   {
    "resumen": "Mantener la ley de eutanasia («se mantendrá en pie»).",
@@ -553,7 +132,7 @@
    "quien": "María Sáinz Martín, portavoz adjunta de Sanidad del PSOE",
    "fecha": "2026-11",
    "url": "https://medicinaresponsable.com/politica-sanitaria/psoe-promete-retomar-inmediato-ley-del-medicamento-superar-7-pib-gasto-sanitario-frenar-privatizaciones-ante-29n",
-   "motivo": "Estilo indirecto (solo va entre comillas el nombre de la ley) y la portavoz adjunta no es dirigente según el protocolo. Confirma que el PSOE repite las medidas sanitarias de Kilian Sánchez, que deberán revisarse con el programa del 15-nov."
+   "motivo": "Estilo indirecto (solo va entre comillas el nombre de la ley) y la portavoz adjunta no es dirigente según el protocolo. Confirma que el PSOE repite las medidas sanitarias de Kilian Sánchez; el programa del 15-nov recoge la Ley de Buen Gobierno y Buena Gestión del SNS (n.º 138, pp. 49-50) y una financiación «en torno al 7% del PIB» (n.º 136, p. 49), no por encima del 7 %, pero no la cita en 48 horas ni la Ley del Medicamento."
   },
   {
    "resumen": "Reforzar Navantia en Ferrol, por ejemplo con un dique cubierto.",
@@ -603,6 +182,78 @@
    "fecha": "2026-10-14",
    "url": "https://aragonpsoe.es/blog/2026/10/14/alegria-situa-la-vivienda-las-pensiones-y-la-defensa-de-los-servicios-publicos-en-el-centro-de-una-campana-decisiva-para-frenar-el-modelo-de-pp-y-vox/",
    "motivo": "Estilo indirecto o crítica al rival, sin medida estatal concreta para esta legislatura."
+  },
+  {
+   "id": "psoe-c01",
+   "tema": "Mantener durante los cuatro años de la próxima legislatura la revalorización anual de las pensiones conforme al IPC.",
+   "quien": "Pedro Sánchez, secretario general del PSOE, presidente del Gobierno y candidato a la Presidencia (cabeza de lista por Madrid)",
+   "fecha": "2026-10-14",
+   "url": "https://aragonpsoe.es/blog/2026/10/14/alegria-situa-la-vivienda-las-pensiones-y-la-defensa-de-los-servicios-publicos-en-el-centro-de-una-campana-decisiva-para-frenar-el-modelo-de-pp-y-vox/",
+   "fuente_local": "data/sources/compromisos/psoe/aragonpsoe_20261014.txt",
+   "motivo": "Ya está en el programa: n.º 100 (p. 40), repetido en el n.º 365 (p. 89), «Blindar constitucionalmente el sistema público de pensiones y su revalorización conforme al IPC», y n.º 98 (p. 39), «garantía de poder adquisitivo de las pensiones actuales y futuras». Se evalúa en la prioridad psoe-05 del programa."
+  },
+  {
+   "id": "psoe-c02",
+   "tema": "Reformar la Constitución en la próxima legislatura para blindar las pensiones y su revalorización conforme al IPC.",
+   "quien": "Pedro Sánchez, secretario general del PSOE, presidente del Gobierno y candidato a la Presidencia (cabeza de lista por Madrid)",
+   "fecha": "2026-10-26",
+   "url": "https://www.publico.es/politica/sanchez-promete-reformara-constitucion-blindar-subida-pensiones-conforme-ipc.html",
+   "fuente_local": "data/sources/compromisos/psoe/publico_20261026_pensiones.txt",
+   "motivo": "Ya está en el programa: n.º 100 (p. 40), repetido literalmente en el n.º 365 (p. 89), «Blindar constitucionalmente el sistema público de pensiones y su revalorización conforme al IPC, garantizando el derecho de las personas mayores a una pensión digna, suficiente y actualizada». Se evalúa en la prioridad psoe-05 del programa."
+  },
+  {
+   "id": "psoe-c03",
+   "tema": "Subir el salario mínimo interprofesional todos los años mientras gobierne, sin concretar cuantía.",
+   "quien": "Pedro Sánchez, secretario general del PSOE, presidente del Gobierno y candidato a la Presidencia (cabeza de lista por Madrid)",
+   "fecha": "2026-11-07",
+   "url": "https://www.diaridetarragona.com/tarragona/275125/pedro-sanchez-tarragona-29n-votamos-masa-mandamos-casa-feijoo-abascal.html",
+   "fuente_local": "data/sources/compromisos/psoe/diaridetarragona_20261107.txt",
+   "motivo": "Ya está en el programa, concretado: n.º 87 (p. 37), «Blindar por ley el SMI por encima del 60% del salario medio y actualizarlo periódicamente según los precios, los salarios, la productividad y las necesidades de las personas trabajadoras». El programa no dice «todos los años», pero fija la referencia (el 60 % del salario medio) que el compromiso no daba, y el Gobierno ya fija el SMI cada año (art. 27 del Estatuto de los Trabajadores). Mismo criterio que la reducción de jornada de Compromís (compromis-c08), que el programa concreta. Se evalúa en la prioridad psoe-04 del programa."
+  },
+  {
+   "id": "psoe-c04",
+   "tema": "Reformar la Constitución en la próxima legislatura para blindar el derecho al aborto.",
+   "quien": "Pedro Sánchez, secretario general del PSOE, presidente del Gobierno y candidato a la Presidencia (cabeza de lista por Madrid)",
+   "fecha": "2026-10-24",
+   "url": "https://www.vozpopuli.com/espana/politica/elecciones-generales-del-29-n-en-directo-sanchez-feijoo-y-abascal-protagonizan-los-actos-de-campana-este-sabado.html",
+   "fuente_local": "data/sources/compromisos/psoe/vozpopuli_directo_sabado.txt",
+   "motivo": "Ya está en el programa: n.º 327 (p. 81), «Blindar constitucionalmente el derecho a la interrupción voluntaria del embarazo. Impulsaremos la reforma del artículo 43 de la Constitución, iniciada en 2026», y n.º 368 (p. 89). Se evalúa en la prioridad psoe-10 del programa."
+  },
+  {
+   "id": "psoe-c05",
+   "tema": "Mantener y reforzar en la próxima legislatura el real decreto-ley de vivienda de octubre de 2026 (suspensión de desahucios de hogares vulnerables sin alternativa habitacional hasta 2030, prórroga extraordinaria de alquileres, regulación del alquiler de temporada y por habitaciones, medidas fiscales).",
+   "quien": "Pedro Sánchez, secretario general del PSOE, presidente del Gobierno y candidato a la Presidencia (cabeza de lista por Madrid)",
+   "fecha": "2026-10-10",
+   "url": "https://www.infobae.com/espana/2026/10/10/el-psoe-abre-la-precampana-para-el-29n-con-sanchez-como-un-perro-que-no-tiene-amo-y-promete-que-la-politica-de-vivienda-no-tiene-fecha-de-caducidad/",
+   "fuente_local": "data/sources/compromisos/psoe/infobae_20261010_doshermanas.txt",
+   "motivo": "Ya está en el programa con otras palabras: no nombra el Real Decreto-ley 29/2026, pero mantiene o amplía sus medidas principales: «Mantener y garantizar la limitación de la compra de viviendas por fondos especulativos» (n.º 71, p. 32; art. 1 del decreto, hasta 2030); un «marco estable de protección frente a los desahucios de personas en situación de vulnerabilidad sin alternativa habitacional» (n.º 84, p. 33), sin la fecha límite de 2030 del art. 2, y que el coste de esa protección no recaiga en el pequeño propietario sino en las administraciones (n.º 85, p. 33; el art. 2 ya pone a cargo de la administración la compensación al propietario); 400 millones anuales para el Fondo de Vivienda de Impacto Social (n.º 57, p. 30), que el art. 13 creó con una dotación inicial de 400 millones; el programa TUCASA, ampliable si se agotan sus 10.000 millones (n.º 67, p. 31; art. 19), y «Consolidar las bonificaciones fiscales para las personas propietarias que reduzcan los precios del alquiler» (n.º 66, p. 31; art. 6, reducciones del IRPF por rebajar la renta). Del tope a la actualización de las rentas hasta 2027 (disposición final sexta: ninguna subida si la renta supera el índice de referencia y, sin pacto, no más del 2 % en los demás casos), recoge la congelación temporal de las rentas que superen los índices de referencia en los mercados tensionados (n.º 62, p. 30), sin el límite del 2 %; en lugar de la prórroga extraordinaria de los contratos (disposición final quinta), propone ampliar su duración (n.º 61, p. 30). La regulación del alquiler de temporada y por habitaciones solo figura entre las medidas ya aprobadas (p. 26). Sánchez no concretó en qué consistiría «reforzar» el decreto. El n.º 57 se evalúa con la prioridad psoe-02 del programa y el n.º 71, con la psoe-03; los n.º 84 y 85 no figuran entre sus 12 prioridades."
+  },
+  {
+   "id": "psoe-c06",
+   "tema": "Llevar al Congreso en los primeros meses de 2027 el nuevo modelo de financiación autonómica aprobado por el CPFF en septiembre de 2026 para que esté en vigor ese año.",
+   "quien": "Arcadi España, ministro de Hacienda y número dos de la candidatura del PSOE al Congreso por Valencia (BOE-A-2026-23103)",
+   "fecha": "2026-11-06",
+   "url": "https://alicanteplaza.es/alicanteplaza/espana/arcadi-espana-avisa-que-con-pp-y-vox-no-habra-nueva-financiacion-y-promete-que-si-sanchez-sigue-estara-en-vigor-en-2027",
+   "fuente_local": "data/sources/compromisos/psoe/alicanteplaza_20261106_financiacion.txt",
+   "motivo": "Ya está en el programa: n.º 229 (p. 60), «Impulsaremos el nuevo sistema de financiación autonómica propuesto por el Gobierno de España y aprobado en el Consejo de Política Fiscal y Financiera, que aporta 21.000 millones de euros adicionales». Es el mismo modelo (20.975 M€ según el acuerdo del CPFF de 4-9-2026). El programa no repite el plazo que dio el ministro de Hacienda (en vigor en 2027); el plazo no hace del compromiso una medida distinta (mismo criterio que vox-c04, cuyo instrumento no figuraba en el programa). Se evalúa en la prioridad psoe-08 del programa."
   }
- ]
+ ],
+ "busqueda": {
+  "hasta": "2026-11-12 (antes del mitin de inicio de campaña en Sevilla de esa tarde)",
+  "donde": [
+   "Buscador web (consultas por candidato, ministros-candidatos, dirigentes federales y federaciones, del 6-oct al 12-nov-2026, y precampaña anterior)",
+   "Notas de prensa de federaciones del PSOE (aragonpsoe.es)",
+   "Agencias: Europa Press y EFE a través de Infobae, Público, Press Digital, Alicante Plaza, Diari de Tarragona, Diario de León (Ical)",
+   "Medios: Demócrata, The Objective, Vozpópuli (directos), elDiario.es (entrevista a Sánchez del 7-oct), El Imparcial, El Español, RTVC, Onda Vasca, Artículo 14, Redacción Médica, Catalunya Press, moncloa.com, Orain",
+   "Directos de Infobae del 24-oct, 9-nov y 12-nov; entrevistas de Sánchez en La Séptima (9-nov) y La Revuelta (22-oct) por sus crónicas",
+   "Webs y notas de prensa de federaciones: PSOE Aragón (aragonpsoe.es, feed desde septiembre), PSdeG (socialistas.gal), PSN-PSOE (psn-psoe.org), PSE-EE (socialistasvascos.com); psoemadrid.es no ofreció listado de noticias, y las webs de PSOE-A, PSPV, PSOE de Castilla-La Mancha, Extremadura, Murcia, Canarias y PSIB no respondieron (sin sortear bloqueos). El PSC (socialistes.cat) es otra candidatura.",
+   "Mitin de València (6-nov) por las crónicas de elDiario.es, Valencia Plaza y Europa Press; mitin de apertura en Sevilla (12-nov) por los directos de El Español, El Debate e Infobae hasta su inicio",
+   "Actos revisados: Dos Hermanas (10-oct), Ponferrada (11-oct), Zaragoza (14-oct), Fuenlabrada (17-oct), Valladolid (19-oct), Burgos (21-oct), Granada (24-oct), Gijón (26-oct), Tarragona (7-nov), Bilbao (8-nov); foros de Arcadi España (2 y 6-nov) y Kilian Sánchez (6-nov)"
+  ],
+  "limitaciones": "psoe.es no se intentó (desafío anti-bots de Imperva/Incapsula documentado en el proyecto). Las cuentas oficiales en X y YouTube no ofrecen transcripciones accesibles con una petición normal, por lo que los discursos se han leído a través de crónicas de agencia y notas de las federaciones. A la hora del cierre no se había publicado el contenido del discurso de Sánchez en Sevilla (12-nov). El índice del buscador cubre de forma desigual la segunda quincena de octubre y noviembre de 2026, por lo que pueden faltar compromisos de dirigentes territoriales. Se descartó una pieza de prensamercosur.org sobre el mitin de Granada por contener datos no contrastables (atribuye declaraciones a dirigentes que no ocupan esos cargos). Revisión (12-11-2026, 20:38): el mitin de Sevilla seguía en curso; los directos de El Español, elDiario.es e Infobae solo recogían frases generales de Sánchez («remontada épica», «176 escaños») y, en estilo indirecto, que María Jesús Montero garantizó la revalorización anual de las pensiones. No había aún crónica de agencia (EFE o Europa Press) ni nota de federaciones con compromisos literales y concretos; la web del PSOE-A no respondió.",
+  "programa": "Programa «La fuerza de seguir avanzando» (114 págs., 500 compromisos numerados), presentado por Pedro Sánchez el 15-nov en Alcorcón y enlazado desde la portada de psoe.es; catalogado el 15-nov (data/sources/programas/psoe/PROGRAMAPSOE29N26.pdf, SHA-256 e9c83413…9bf5) y analizado con el prompt 1 en data/programas/psoe/. Cada compromiso de esta selección se buscó en las 492 medidas de extraccion.json y en el texto completo del programa, por sus términos y por sinónimos.",
+  "comprobacion_programa": "15-nov: los siete compromisos se cotejaron con el texto del programa (pensiones, revalorización, IPC, Constitución, SMI, salario mínimo, 60 %, aborto, interrupción voluntaria del embarazo, artículo 43, decreto, desahucios, alternativa habitacional, prórroga, temporada, habitaciones, fondos, TUCASA, Fondo de Vivienda de Impacto Social, financiación autonómica, CPFF, 21.000 millones, 2027, AP-9, autopista, peaje). No se ha hecho una búsqueda nueva de compromisos: el complemento reaprovecha los ya seleccionados y evaluados hasta el 12-nov."
+ },
+ "prompt": "docs/prompts/1b_seleccion_compromisos.md (sección «Partidos con programa: complemento»)",
+ "nota_prioridades": "Ninguna prioridad: los cinco compromisos evaluados con base «compromisos» están en el programa del 15-nov, a veces con otras palabras o concretados, y pasan a «descartados»: las pensiones en la Constitución (c02, con c01), la subida anual del SMI (c03), el aborto en la Constitución (c04), el decreto de vivienda (c05) y el nuevo modelo de financiación autonómica (c06). El único compromiso seleccionado que no figura en el programa, la gratuidad de la AP-9 (c07), no era prioridad: no lo destacó la dirección federal."
 }
