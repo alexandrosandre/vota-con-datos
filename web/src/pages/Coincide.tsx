@@ -1,3 +1,4 @@
+import { Fragment } from 'preact';
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { actualizar, estado, ir, ruta } from '../store';
 import { fase1, fmt, partido, partidos } from '../data';
@@ -307,10 +308,13 @@ function Resultados() {
           <h2 class="h3" style={{ margin: 0 }}>
             Tus partidos más afines:{' '}
             {primeros.map((r, i) => (
-              <span key={r.partido} class="nowrap">
+              <Fragment key={r.partido}>
+                {/* El separador va fuera del bloque sin cortes: así la línea puede partirse entre partidos. */}
                 {i > 0 ? (i === primeros.length - 1 ? ' y ' : ', ') : ''}
-                {partido(r.partido)?.siglas ?? r.partido} ({fmt.pct(r.afinidad!)})
-              </span>
+                <span class="nowrap">
+                  {partido(r.partido)?.siglas ?? r.partido} ({fmt.pct(r.afinidad!)})
+                </span>
+              </Fragment>
             ))}
           </h2>
           <p class="muted" style={{ fontSize: '0.9rem', margin: '6px 0 14px' }}>
