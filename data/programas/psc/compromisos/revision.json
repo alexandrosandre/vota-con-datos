@@ -1,323 +1,116 @@
 {
  "aprobado": true,
  "revisor": "Claude (Anthropic), pasada independiente",
- "fecha": "2026-11-12",
- "base": "compromisos",
- "alcance": "11 compromisos (4 seleccionados y 11 descartes) y 4 prioridades × 8 criterios. Se abrieron con una petición normal las 49 URL citadas en seleccion.json y evaluacion.json, más la fuente añadida (Ara, 23-7-2026): 45 respondieron 200. Las 5 notas de socialistes.cat devuelven 403 a peticiones automáticas; su texto se comprobó en el canal RSS oficial (socialistes.cat/feed/, páginas 1 a 8, notas del 9-10 al 11-11-2026), que coincide con las copias locales. No se sorteó ninguna protección. Se comprobaron en fuente primaria las cifras: condonación (83.252 y 17.104 M€, Hacienda), CPFF (20.975 y 19.000 M€), propuesta de enero (4.686 M€, El Salto), AIReF (5,1 puntos, 2029, 2.532 M€, Cataluña por encima de 2.000 €/hab. y en el 13 % hacia 2050), SMI (RD 126/2026: 40,70 €/día o 1.221 €/mes; 2,5 millones y 66 %, La Moncloa), IVE 2024 (106.172; 78,74 % y 21,25 %), Parador (estudio de 9-4-2026: 59 habitaciones, 20,1 M€, apertura a finales de 2030; Paradores 2024: 97+1, 39,7 M€, 73,55 %, Molina 22 M€ aplazada a 2025). Citas: las 4 coinciden con su copia local (verify_quotes: 0 no encontradas).",
- "seleccion": "Criterio sobre Pedro Sánchez: cuenta. El prompt 1b admite como fuente al «candidato a la Presidencia» y a los documentos oficiales del partido con quien = el partido. El PSC no presenta candidato propio a la Presidencia: su candidatura pide la investidura de Sánchez, y el acto del 7-11 en Tarragona era un acto de precampaña de la candidatura del PSC (cabezas de lista Hereu y Montalvo, primer secretario Illa). La nota oficial del PSC sobre ese acto recoge el SMI y el aborto como compromisos («s'ha compromès a...»), es decir, el propio partido los asume en su canal oficial. Se limita, como hace la selección, a ese acto: los compromisos de Sánchez en actos del PSOE no se trasladan. c02 lleva cita literal de Sánchez (Diari de Tarragona) y c03, el texto literal de la nota oficial del PSC (quien = PSC). Las cuatro prioridades son los cuatro compromisos concretos encontrados; la selección lo dice. c04 (Parador) solo tiene una ocasión y no lo destaca el partido, y entra por esa razón. Se revisaron los descartes: son diagnósticos, rechazos de propuestas ajenas, estilo indirecto o medidas de la Generalitat, y no se halló en el RSS ningún otro compromiso concreto.",
- "igual_estandar": "psc-02 y psc-03 tienen las mismas valoraciones que psoe-03 y psoe-04 en los 8 criterios, y los textos solo difieren en lo dicho en el acto del PSC. SMI: la financiación es «no_verificable» sin cuantía, como en psoe-03 y bng-05, a diferencia de erc-08 y podemos-05, que dan una cuantía. Los antecedentes son «favorable», como en bng-05. Aborto: el encaje legal es «mixta» por la duda entre los arts. 167 y 168 y el dictamen del Consejo de Estado, y la financiación es «favorable» (sin coste directo). Condonación y modelo: las valoraciones coinciden con erc-02 (legal «favorable», financiación «mixta», beneficiarios «favorable») y con psoe-05 (legal «favorable»). erc-01 es «mixta» en encaje legal por la ordinalidad, que el PSC no pide. La concreción es «mixta» por falta de plazo, como en erc-02; psoe-05 es «favorable» porque fija 2027. psc-04, encaje legal «mixta»: depende de la cesión municipal del inmueble, que no está aprobada. Es el mismo caso que erc-07, que depende de una cesión de inmuebles estatales.",
+ "fecha": "2026-11-15",
+ "base": "complemento",
+ "seleccion_sha256": "e4d98e221eb82782f377bfef5e950a52035d640fca2f5f349b66c2bc513fdeb2",
+ "alcance": "Complemento del programa: los cinco compromisos de la base anterior (psc-c04 y psc-c05 en «compromisos»; psc-c01 a c03 en «descartados») y los otros 19 descartados de seleccion.json, contra el programa del PSOE del 15-nov que asume el PSC (data/sources/programas/psoe/PROGRAMAPSOE29N26.pdf, SHA-256 e9c83413…9bf5, igual en la copia catalogada y en psoe.es) y sus 492 medidas (data/programas/psoe/extraccion.json); y las dos prioridades que llegaron a la revisión (psc-c04 y psc-c05) × 8 criterios. Cada compromiso se buscó por sus términos y sinónimos en el texto de cada página (pdftotext -layout -f N -l N, página = página del PDF) y en las 492 medidas: Parador, Paradores, Turespaña, Tarragona, Banco de España, turismo, turístico, patrimonio, edificio; El Prat, aeropuerto, aeroportuario, Aena, DORA, pista, intercontinental, vuelos, aviación, aéreo, conectividad, Barcelona, Cataluña, Catalunya, Llobregat, Natura 2000; condonación, deuda autonómica, financiación autonómica, CPFF, SMI, salario mínimo, aborto, interrupción voluntaria del embarazo, artículo 43. Los seis fragmentos del programa entrecomillados (en «programa» de c05 y en los motivos de c01 a c03) son literales y de la página indicada, y los números de medida citados son correctos (n.º 31, p. 21; 73, p. 32; 87, p. 37; 229, p. 60; 231, p. 61; 294, p. 73; 327, p. 81; 368, p. 89; 455, p. 103); las prioridades del programa a las que remiten los descartados (psoe-04 con el n.º 87; psoe-08 con los n.º 229, 231 y 129; psoe-10 con los n.º 327 y 368) coinciden con «prioridades» de extraccion.json. La conversión de evaluacion.json se comparó campo a campo con la versión del repositorio (HEAD): solo cambiaban id, id_anterior, base, la frase sobre el programa en «concreción» y su fuente (el PDF del programa, pp. 73 y 21), y se quitaba «compromisos_relacionados» (vacío). Se abrieron con una petición normal las 23 URL de evaluacion.json: todas responden 200. Se comprobaron en la página las citas de c04 y c05 y las cifras del Parador (estudio de Paradores de 9-4-2026: 59 habitaciones, 20,1 M€, apertura a finales de 2030; Paradores 2024: 97 establecimientos, 39,7 M€ de beneficio neto, 73,55 % de ocupación) y de El Prat (500 m, de 2.660 a 3.160 m, unos 3.200 M€, plan director en 2028, obras de 2030 a 2033; DORA III: 1.765 M€ para El Prat —1.760 en Crónica Global—, 191,25 M€ de actuaciones preparatorias, la pista a partir de 2032, tres céntimos de subida de la tarifa media). verify_quotes: 0 citas no encontradas. seleccion_sha256 recalculado tras las correcciones.",
+ "seleccion": "En el programa o no, compromiso a compromiso. c01 (condonación y modelo de financiación): está, con el mismo alcance: n.º 229 (p. 60), el modelo del CPFF con 21.000 millones adicionales, y n.º 231 (p. 61), la asunción parcial de 83.000 millones de deuda autonómica; los 17.000 y «cerca de 5.000» millones de Hereu son la parte de Cataluña de esos mismos totales (17.104 de 83.252 M€; 4.686 M€ en la propuesta de enero), no otra cifra. c02 (SMI todos los años): está, concretado: n.º 87 (p. 37), por encima del 60 % del salario medio y actualizado periódicamente; es la misma frase de Sánchez en el mismo acto de Tarragona que psoe-c03, descartado con este criterio. c03 (aborto en la Constitución): está, n.º 327 (p. 81), reforma del art. 43, y n.º 368 (p. 89); mismo compromiso que psoe-c04. c04 (Parador en el Banco de España de Tarragona): no está; el programa no menciona los Paradores, Tarragona ni el edificio, y sus medidas de turismo (n.º 73, p. 32; n.º 294, p. 73) y de patrimonio cultural (n.º 455, p. 103, cuyos grandes proyectos no incluyen ninguno en Tarragona) no lo cubren. c05 (ampliación de El Prat): no está; el programa no menciona El Prat, Barcelona (salvo el Barcelona Supercomputing Center, n.º 10), pistas ni vuelos intercontinentales, y el n.º 31 (p. 21) solo despliega el DORA III, que deja la pista para después de 2031: la misma medida con otro alcance no es la misma medida. Prioridades: el complemento exige que el partido presente el compromiso como importante (prompt 1b: «los anuncia el candidato, los repite, son titulares de campaña») y no tiene la regla de la base «compromisos» de seleccionar todos cuando hay menos de 12, que es la que, según las revisiones del 12 y el 14-nov, hizo entrar a c04 («no lo destaca el partido, y entra por esa razón») y a c05 («se admite, como psc-04»). c04 cumple el listón: el cabeza de lista por Barcelona lo formula como promesa («Si gobernamos, habrá Parador, seguro», 9-11), la cabeza de lista por Tarragona lo repite (14-11) y el Diari de Tarragona lo destaca en el subtítulo de las dos entrevistas. c05 no lo cumple: una sola ocasión, en respuesta a una pregunta, sin eco en otros dirigentes ni en las notas del PSC, y en la misma entrevista Hereu enumera como sus tres prioridades para Cataluña la vivienda, la financiación y la reindustrialización; pasa a «no_priorizados», como vox-c17, compromis-c15 y psoe-c07. Los 19 descartados restantes no remiten al programa y sus motivos no cambian; las notas y la búsqueda dicen que no se hizo una búsqueda nueva tras el 14-nov, 09:40, y el registro de promesas del 15-nov no añade compromisos concretos del PSC (Morón: la C-13, carretera de la Generalitat; Hereu en NacióDigital, sin medida concreta).",
+ "igual_estandar": "Sin cambios de valoración en psc-c04. Qué está «en el programa»: el criterio de las revisiones de Vox (13-nov), Compromís (14-nov) y el PSOE (15-nov): si falta el rasgo que define el compromiso, va al complemento; si falta un elemento accesorio o el programa lo concreta más, se descarta. c01 a c03 se tratan como psoe-c06, psoe-c03 y psoe-c04 (las mismas medidas del programa); c05, como vox-c11 y compromis-c02 (el programa recoge algo del mismo ámbito, pero no el rasgo que define el compromiso). Qué es prioridad: el listón de vox-c12 (el candidato nacional lo anuncia en un mitin y la agencia lo destaca: prioridad) frente a vox-c17, compromis-c15 y psoe-c07 (una sola ocasión, sin que el partido lo destaque: no prioridad). c04 entra por dos dirigentes, dos ocasiones y los subtítulos; c05 queda fuera como vox-c17, el caso más parecido (el candidato, una vez, en una entrevista). La corrección de atribución en «legal» de c04 no cambia la valoración («mixta»: la cesión municipal no está aprobada).",
  "recuento_inicial": {
-  "favorable": 5,
-  "mixta": 24,
+  "favorable": 0,
+  "mixta": 13,
   "desfavorable": 0,
   "no_verificable": 3
  },
  "recuento_final": {
-  "favorable": 5,
-  "mixta": 24,
+  "favorable": 0,
+  "mixta": 6,
   "desfavorable": 0,
-  "no_verificable": 3
+  "no_verificable": 2
+ },
+ "recuento_nota": "recuento_inicial: las dos prioridades que llegaron a la revisión (psc-c04 y psc-c05, 8 criterios cada una). recuento_final: solo psc-c04, sin cambios de valoración; la evaluación de psc-c05 (antes psc-05: 7 «mixta» y 1 «no_verificable») se retira del complemento al no ser prioridad y sigue en el historial del repositorio.",
+ "revision_anterior": {
+  "fecha": "2026-11-12",
+  "aprobado": true,
+  "base": "compromisos",
+  "cambios": 33,
+  "dudas": 3,
+  "nota": "La revisión del 12-11-2026 se refería a la base «compromisos» (4 prioridades, psc-01 a psc-04, × 8 criterios; recuento 5/24/0/3) y fue aprobada con 7 cambios y 3 dudas (el criterio sobre Pedro Sánchez en actos del PSC, confirmado por el editor el 13-11; la experiencia internacional de psc-04; la campaña oficial por revisar). El 14-11 se actualizó (revisión independiente aprobada): entró psc-c05 / psc-05 (El Prat), con ocasiones nuevas en psc-c01 y psc-c04, 5 cambios y 2 dudas (la entrevista de Público, posiblemente traducida; la búsqueda cerrada el 14-11 a las 09:40); recuento de las 5 propuestas, 5/31/0/4. Las auditorías de coherencia del 14 y el 15-nov añadieron 4 y 17 cambios en psc-01 a psc-03, sin cambiar valoraciones (33 cambios en total). De esas evaluaciones solo se reaprovecha la de psc-04 (hoy psc-c04); psc-01 a psc-03 están en el programa y psc-05 no es prioridad del complemento. Uno de los cambios del 12-nov (atribuir a Hereu que el alcalde retiró el punto del orden del día) se revierte en esta revisión."
  },
  "cambios": [
   {
-   "propuesta": "psc-01",
-   "criterio": "antecedentes",
-   "antes": "según Crónica Global, ninguna de las dos medidas llegó a votarse en las Cortes por el adelanto electoral",
-   "despues": "el Congreso rechazó en julio de 2026 las enmiendas a la totalidad de PP y Vox [...] Ninguna de las dos medidas llegó a aprobarse en las Cortes antes del adelanto electoral (fuente añadida: Ara, 23-7-2026)",
-   "motivo": "Dato erróneo. El proyecto de condonación sí se votó en el Congreso: el debate de totalidad de julio de 2026 (Ara, ya usado en erc-02). Lo que no llegó fue la aprobación. Crónica Global lo resume mal."
+   "propuesta": "psc-c05",
+   "criterio": "selección (prioridades → no_priorizados) y evaluación",
+   "antes": "Prioridad del complemento («Medida estatal concreta que el cabeza de lista por Barcelona presenta como posición propia y del partido…»), evaluada en evaluacion.json (8 criterios: 7 «mixta» y 1 «no_verificable»).",
+   "despues": "Sigue en «compromisos», sin priorizar («no_priorizados», con su motivo); su evaluación se retira de evaluacion.json (sigue en el historial como psc-05).",
+   "motivo": "Mismo estándar: el complemento solo incluye compromisos que el partido presenta como importantes (prompt 1b). Hereu lo dijo una vez, en respuesta a una pregunta de Público (12-11), y en la misma entrevista, preguntado por las «tres prioridades» de un gobierno socialista para Cataluña, cita la vivienda, la financiación y la reindustrialización; ningún otro dirigente ni nota del PSC lo plantea como compromiso. Es el caso de vox-c17 (Abascal, una vez, en una entrevista), no priorizado, y del listón de compromis-c15 y psoe-c07. Con base «compromisos» entró solo por la regla de seleccionar todos si hay menos de 12 (revisión del 14-nov), que el complemento no tiene."
   },
   {
-   "propuesta": "psc-04",
+   "propuesta": "psc-c05",
+   "criterio": "programa (seleccion.json)",
+   "antes": "el DORA III 2027-2031 (Consejo de Ministros, 15-9-2026) solo reserva para El Prat 191,25 M€ de actuaciones preparatorias y compensaciones ambientales y deja la pista",
+   "despues": "el DORA III 2027-2031 (Consejo de Ministros, 15-9-2026) asigna a El Prat 1.765 M€, de los que solo 191,25 M€ son actuaciones preparatorias de la ampliación y compensaciones ambientales, y deja la pista",
+   "motivo": "Cifra inexacta: según La Ciutat (19-9-2026) y Crónica Global (15-9-2026), ya citadas en la evaluación, el DORA III destina a El Prat 1.765 M€ (1.760 M€ en Crónica Global) y, de ellos, 191,25 M€ a trabajos previos de la ampliación; los 191,25 M€ no son todo lo que reserva para el aeropuerto."
+  },
+  {
+   "propuesta": "psc-c05",
+   "criterio": "nota (seleccion.json)",
+   "antes": "«… Es la única ocasión localizada en la que un dirigente del PSC lo formula en campaña.» (sin decir si es prioridad)",
+   "despues": "… No es prioridad del complemento (véase «no_priorizados»): una sola ocasión, en respuesta a una pregunta del entrevistador, y en la misma entrevista, preguntado por las «tres prioridades» de un gobierno socialista para Cataluña, Hereu cita la vivienda, la financiación y la reindustrialización.",
+   "motivo": "Consecuencia del primer cambio, como en la nota de psoe-c07."
+  },
+  {
+   "propuesta": "psc-c04",
+   "criterio": "justificación (seleccion.json)",
+   "antes": "Compromiso territorial concreto del cabeza de lista del PSC por Barcelona, formulado como promesa condicionada a gobernar («Si gobernamos, habrá Parador, seguro») en la entrevista de campaña con el principal diario de la demarcación (Diari de Tarragona, 9-11). Ione Montalvo, cabeza de lista por Tarragona, lo respalda en otra entrevista del mismo diario (14-11: «Es una oportunidad que no podemos dejar escapar»), sin plazo ni cuantía. El programa del PSOE no lo recoge: no menciona los Paradores, Tarragona ni el edificio del Banco de España, y en turismo solo propone un modelo sostenible y resiliente (n.º 294, p. 73).",
+   "despues": "Compromiso territorial concreto del cabeza de lista del PSC por Barcelona, formulado como promesa condicionada a gobernar («Si gobernamos, habrá Parador, seguro») en una entrevista de campaña con el Diari de Tarragona (9-11), que lo destaca en el subtítulo («habla por primera vez del Parador del Banco de España»). Ione Montalvo, cabeza de lista por Tarragona, lo respalda en otra entrevista del mismo diario (14-11: «Es una oportunidad que no podemos dejar escapar»), también destacado en el subtítulo («Defiende el Parador»), sin plazo ni cuantía. El programa del PSOE no lo recoge: no menciona los Paradores, Tarragona ni el edificio del Banco de España, y en turismo propone un modelo sostenible y resiliente (n.º 294, p. 73) y que los municipios puedan aplicar recargos sobre las estancias turísticas (n.º 73, p. 32).",
+   "motivo": "Tres correcciones. Sin respaldo: ninguna fuente citada dice que el Diari de Tarragona sea «el principal diario de la demarcación». Evidencia de que el partido lo destaca, que la justificación debe dar (prompt 1b): los subtítulos de las dos entrevistas, comprobados en la página y en las copias locales. Inexacto: el programa no «solo» propone en turismo un modelo sostenible; también el recargo municipal sobre las estancias turísticas (n.º 73, p. 32)."
+  },
+  {
+   "propuesta": "psc-c04",
+   "criterio": "programa (seleccion.json)",
+   "antes": "En turismo propone un modelo sostenible y resiliente (n.º 294, p. 73) y, en cultura,",
+   "despues": "En turismo propone un modelo sostenible y resiliente (n.º 294, p. 73) y que los municipios puedan aplicar recargos sobre las estancias turísticas (n.º 73, p. 32), y, en cultura,",
+   "motivo": "Incompleto: el n.º 73 (p. 32) es la otra medida de turismo del programa («Aprobaremos un marco estatal que habilite a los ayuntamientos para aplicar recargos sobre las estancias turísticas»); tampoco trata de los Paradores."
+  },
+  {
+   "propuesta": "psc-c04",
+   "criterio": "concrecion",
+   "antes": "no menciona los Paradores, Tarragona ni el edificio del Banco de España, y en turismo solo propone un modelo sostenible y resiliente (n.º 294, p. 73).",
+   "despues": "no menciona los Paradores, Tarragona ni el edificio del Banco de España; en turismo propone un modelo sostenible y resiliente (n.º 294, p. 73) y que los municipios puedan aplicar recargos sobre las estancias turísticas (n.º 73, p. 32).",
+   "motivo": "Inexacto, como en la justificación: el programa también propone en turismo el recargo municipal sobre las estancias turísticas (n.º 73, p. 32)."
+  },
+  {
+   "propuesta": "psc-c04",
+   "criterio": "concrecion (fuentes)",
+   "antes": "Diari de Tarragona (9-11-2026); Diari de Tarragona (2026, estudio de Paradores); programa del PSOE, p. 73",
+   "despues": "Se añade «PSOE, «La fuerza de seguir avanzando», programa electoral 29-N-2026 (PDF), p. 32» (https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=32)",
+   "motivo": "Fuente del añadido (n.º 73)."
+  },
+  {
+   "propuesta": "psc-c04",
    "criterio": "legal",
-   "antes": "según el Diari, el alcalde retiró el punto del orden del día",
-   "despues": "según Hereu en la entrevista con el Diari, el alcalde tuvo que retirar el punto del orden del día",
-   "motivo": "Atribución: lo dice Hereu en la entrevista, no el periódico."
+   "antes": "y, según Hereu en la entrevista con el Diari, el alcalde tuvo que retirar el punto del orden del día.",
+   "despues": "y, según el Diari de Tarragona en su entrevista con Hereu (9-11), el alcalde tuvo que retirar el punto del orden del día.",
+   "motivo": "Atribución errónea, introducida en la revisión del 12-nov: «El pleno de Tarragona tiene dudas. Viñuales tuvo que retirar el punto del orden del día» es una intervención del entrevistador (en negrita en la página, como las demás preguntas), no una respuesta de Hereu, que contesta «Pido política de altura…». Se vuelve a atribuir al Diari. La valoración no cambia."
   },
   {
-   "propuesta": "seleccion psc-c01",
-   "criterio": "veces",
-   "antes": "3",
-   "despues": "2 (Hereu en Crónica Global, 9-11; Illa en elDiario.es, 5-11)",
-   "motivo": "«veces» cuenta ocasiones en que un líder repite el compromiso. En la entrevista del Diari de Tarragona (9-11), Hereu cita el acuerdo de 4.686 M€ como un logro pasado, y la propia selección lo describía «sin formularlo como compromiso». La ocasión se mantiene con una nota que lo explica."
+   "propuesta": "(seleccion.json)",
+   "criterio": "nota y nota_prioridades",
+   "antes": "nota: «y las dos restantes, el Parador de Tarragona (c04) y la ampliación de El Prat (c05), forman el complemento»; nota_prioridades: «Dos prioridades: […] Ambos los anuncia el cabeza de lista del PSC por Barcelona (c04 lo repite la cabeza de lista por Tarragona), a diferencia de psoe-c07 (AP-9) […]»",
+   "despues": "nota: «de las dos restantes, el Parador de Tarragona (c04) forma el complemento y la ampliación de El Prat (c05) queda sin priorizar»; nota_prioridades: «Una prioridad: […]», con la evidencia de c04 y el motivo de no priorizar c05",
+   "motivo": "Consecuencia del primer cambio."
   },
   {
-   "propuesta": "seleccion psc-01",
-   "criterio": "justificación",
-   "antes": "su cabeza de lista nacional [...] y que la financiación es el gran acuerdo pendiente con Cataluña",
-   "despues": "su cabeza de lista por Barcelona [...] en una precampaña cuyo mensaje central es que el 29-N «està en risc l'autogovern»",
-   "motivo": "Hereu encabeza la lista por Barcelona: el PSC no tiene lista nacional. La afirmación sobre «el gran acuerdo pendiente» no tenía fuente."
+   "propuesta": "(evaluacion.json)",
+   "criterio": "nota",
+   "antes": "Evaluación de las prioridades de data/programas/psc/compromisos/seleccion.json: compromisos de dirigentes del PSC que no figuran en el programa del PSOE del 15-nov, que el PSC asume (decisión del editor, 15-nov). Mismos criterios y rúbricas (data/fase3/criterios.json) que las 12 propuestas del programa; se muestran tras ellas, en una sección aparte. Se reaprovechan, sin cambiar sus valoraciones, las evaluaciones revisadas el 12 y el 14-nov y auditadas el 15-nov con base «compromisos» (antes psc-04 y psc-05; ver id_anterior); solo cambian el identificador y la mención al programa en «concreción».",
+   "despues": "Evaluación de la prioridad de data/programas/psc/compromisos/seleccion.json: un compromiso de dirigentes del PSC que no figura en el programa del PSOE del 15-nov, que el PSC asume (decisión del editor, 15-nov). Mismos criterios y rúbricas (data/fase3/criterios.json) que las 12 propuestas del programa; se muestra tras ellas, en una sección aparte. Se reaprovecha, sin cambiar sus valoraciones, la evaluación revisada el 12 y el 14-nov con base «compromisos» (antes psc-04; ver id_anterior); cambian el identificador, la mención al programa en «concreción» y, por la revisión independiente del 15-nov, la atribución de un dato en «legal». La ampliación de El Prat (antes psc-05) no es prioridad del complemento y su evaluación se retira; sigue en el historial del repositorio.",
+   "motivo": "Consecuencia de los cambios en psc-c05 y en «legal» de psc-c04."
   },
   {
-   "propuesta": "seleccion psc-02",
-   "criterio": "justificación",
-   "antes": "en el principal acto de precampaña del PSC (Tarragona, 7-11, unas 2.000 personas según la organización)",
-   "despues": "en el acto de precampaña del PSC en Tarragona (7-11, unas 2.000 personas según el Diari de Tarragona)",
-   "motivo": "La cifra es del Diari de Tarragona, no de la organización. Que fuera el «principal» acto no tenía fuente."
-  },
-  {
-   "propuesta": "seleccion psc-04",
-   "criterio": "justificación",
-   "antes": "del cabeza de lista nacional",
-   "despues": "del cabeza de lista por Barcelona",
-   "motivo": "Cargo exacto."
-  },
-  {
-   "propuesta": "evaluacion",
+   "propuesta": "(evaluacion.json)",
    "criterio": "seleccion_sha256",
-   "antes": "e3579b09da50d4d2dadce29f78c312db06f4f041c50d9e87ff56c23d10f6619e",
-   "despues": "95c71f99cf57c48ea752621ae9c1d2c5506a18c2857c066ab1964d727b9c32f5",
-   "motivo": "Se recalcula tras los cambios en seleccion.json."
-  },
-  {
-   "propuesta": "seleccion psc-c01",
-   "criterio": "veces",
-   "antes": "2",
-   "despues": "3 (nueva ocasión: Hereu en Público, 12-11)",
-   "motivo": "Ocasión propuesta por el analista. Cita literal comprobada en la página y en la copia local. Hereu pide la mayoría para «hacer posible» el acuerdo de financiación de 4.686 M€: lo formula como compromiso para la legislatura, no como logro pasado (criterio con el que se descontó la entrevista del Diari de Tarragona). Solo cubre el nuevo modelo, no la condonación; se dice en la nota de la ocasión.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "seleccion psc-c04 / psc-04",
-   "criterio": "veces y justificación",
-   "antes": "1; «Solo consta una ocasión.»",
-   "despues": "2 (nueva ocasión: Montalvo en Diari de Tarragona, 14-11); la justificación lo dice",
-   "motivo": "Ocasión propuesta por el analista. Cita literal comprobada. Es apoyo de una cabeza de lista al mismo proyecto en campaña; se cuenta con el mismo listón con el que se admite psc-c05. La justificación de psc-05, que comparaba con «una sola ocasión» del Parador, se ajusta.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "psc-05",
-   "criterio": "legal y antecedentes (fuentes)",
-   "antes": "3Cat (11-6-2025); Ara (12-6-2025)",
-   "despues": "3Cat (12-6-2025); Ara (11-6-2025)",
-   "motivo": "Fechas de publicación cruzadas: 3Cat publica el 12-6-2025 a las 13.34 y Ara el 11-6-2025 (datePublished de ambas páginas).",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "psc-05",
-   "criterio": "beneficiarios (fuentes)",
-   "antes": "sin fuente para «la Ricarda y el Remolar»",
-   "despues": "se añade 3Cat (12-6-2025), que nombra las dos lagunas Natura 2000 afectadas",
-   "motivo": "El Remolar no aparece en las fuentes citadas en ese criterio; sí en 3Cat, ya citada en legal.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "evaluacion",
-   "criterio": "seleccion_sha256",
-   "antes": "8fad70899c4c3511ec34d57e1eefba712e457911ad361eaf216feed2f0c71728",
-   "despues": "f52fe0921d6d087ebdd65bee09c4b3f4cc16d553df83af6f29dda3510845fd8a",
-   "motivo": "Se recalcula tras los cambios en seleccion.json.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "psc-01",
-   "criterio": "legal",
-   "antes": "No hemos localizado una norma o sentencia que impida ninguna de las dos medidas.",
-   "despues": "La Ley Orgánica de Estabilidad Presupuestaria impide que el Estado asuma deudas de las comunidades (art. 8.2), por lo que la condonación exige una ley orgánica que lo exceptúe, como hacía el art. 4 del proyecto de 2025; no hemos localizado una sentencia que impida ninguna de las dos medidas.",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): omisión, corregida igual que en compromis-11: el art. 8.2 de la LO 2/2012 dispone que «El Estado no asumirá ni responderá de los compromisos de las Comunidades Autónomas», y el proyecto de condonación lo exceptuaba en su art. 4 (BOCG A-79-1). La valoración («favorable») se mantiene: se salva con ley orgánica.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "psc-01",
-   "criterio": "legal (fuentes)",
-   "antes": "—",
-   "despues": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-5730 | Ley Orgánica 2/2012, de Estabilidad Presupuestaria y Sostenibilidad Financiera, art. 8.2 (texto consolidado, BOE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): fuente del añadido (art. 8.2), como en compromis-11.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "psc-01",
-   "criterio": "legal (fuentes)",
-   "antes": "—",
-   "despues": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-79-1.PDF | BOCG Congreso, serie A, núm. 79-1 (19-12-2025): proyecto de ley orgánica de condonación de deuda autonómica (art. 4)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): fuente del añadido (art. 4 del proyecto), como en compromis-11.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "psc-02",
-   "criterio": "internacional",
-   "antes": "donde el salario mínimo se fija en dos tercios de la mediana,",
-   "despues": "cuyo objetivo es que el salario mínimo no baje de dos tercios de la mediana (en 2024 se quedó algo por debajo),",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): dato sin respaldo, el mismo corregido en compromis-06 y bng-05: según la fuente citada (Low Pay Commission, resumen de evidencia 2024), el salario mínimo de 2024 «was not high enough to meet the two-thirds of median earnings target» y el mandato es que no baje de ese nivel. La valoración («mixta») no cambia.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "psc-01",
-   "criterio": "antecedentes",
-   "antes": "Ninguna de las dos medidas llegó a aprobarse en las Cortes antes del adelanto electoral.",
-   "despues": "Ninguna de las dos medidas llegó a aprobarse en las Cortes antes del adelanto electoral, y el proyecto de condonación caducó con la disolución (BOCG de 4-11-2026).",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial y misma formulación que psoe-08: la ficha de la iniciativa 121/000079 del Congreso (comprobada el 15-11) da como resultado de la tramitación «Caducado», «Concluido - (Caducado) desde 06/10/2026», publicado en el BOCG, Congreso, serie D, núm. 610 (4-11-2026), p. 46. La valoración no cambia.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "psc-01",
-   "criterio": "antecedentes (fuentes)",
-   "antes": "(sin esta fuente)",
-   "despues": "Congreso de los Diputados, iniciativa 121/000079 (proyecto de ley orgánica de condonación): enmiendas a la totalidad rechazadas el 23-7-2026 y «Caducado» (BOCG D-610, 4-11-2026) — https://www.congreso.es/es/busqueda-de-iniciativas?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=121%2F000079",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial de la caducidad.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "psc-01",
-   "criterio": "evidencia",
-   "antes": "Según el resumen de Europa Press, Fedea considera que el nuevo modelo reparte los recursos de forma más equitativa, pero que la inyección de fondos estatales agravará la falta de incentivos a la disciplina fiscal.",
-   "despues": "Fedea (Á. de la Fuente, enero de 2026) concluye que la propuesta de nuevo modelo mejora la estructura del sistema, «pero sólo ligeramente»: reparte los recursos de forma más equitativa, pero buena parte de esa mejora se pierde con el Fondo Climático y el mecanismo IVA pymes, y la inyección «muy considerable» de fondos estatales «tenderá sin duda a agravar la ausencia de incentivos para la disciplina fiscal».",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente original en lugar del resumen de Europa Press y fidelidad, igual que en psoe-08: Fedea Policy Paper 2026/01 (comprobado el 15-11) dice que la propuesta «mejora la estructura general del sistema, pero sólo ligeramente», que «una buena parte de estos beneficios, sin embargo, se pierde» con el Fondo Climático y el Mecanismo IVA Pymes y que la inyección «tenderá sin duda a agravar la ausencia de incentivos para la disciplina fiscal». La valoración no cambia.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "psc-01",
-   "criterio": "evidencia (fuentes)",
-   "antes": "Europa Press (enero de 2026): Fedea valora la propuesta de nuevo modelo de financiación — https://www.bolsamania.com/noticias/economia/economia--fedea-critica-el-fondo-climatico-y-el-iva-pymes-del-modelo-de-financiacion-autonomica-por-su-arbitrariedad--21499129.html",
-   "despues": "De la Fuente (Fedea Policy Paper 2026/01, enero de 2026): Sobre la propuesta de reforma de la financiación autonómica: un primer análisis — https://documentos.fedea.net/pubs/fpp/2026/01/FPP2026-01.pdf",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente original en lugar del resumen de Europa Press (Bolsamanía), como en psoe-08.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "psc-01",
-   "criterio": "beneficiarios",
-   "antes": "según Fedea, su aportación neta al sistema se reduciría sustancialmente.",
-   "despues": "según Fedea, con esa propuesta y datos de 2023, su aportación neta al sistema se reduciría en 1.456 M€.",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente original y cifra, igual que en psoe-08: Fedea Policy Paper 2026/01, cuadro 5 (Cataluña +2.266 → +810 M€, comprobado el 15-11). La valoración no cambia.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "psc-01",
-   "criterio": "beneficiarios (fuentes)",
-   "antes": "Europa Press (enero de 2026): Fedea valora la propuesta de nuevo modelo de financiación — https://www.bolsamania.com/noticias/economia/economia--fedea-critica-el-fondo-climatico-y-el-iva-pymes-del-modelo-de-financiacion-autonomica-por-su-arbitrariedad--21499129.html",
-   "despues": "De la Fuente (Fedea Policy Paper 2026/01, enero de 2026): Sobre la propuesta de reforma de la financiación autonómica: un primer análisis, cuadro 5 — https://documentos.fedea.net/pubs/fpp/2026/01/FPP2026-01.pdf",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente original en lugar del resumen de Europa Press (Bolsamanía), como en psoe-08.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "psc-01",
-   "criterio": "largo_plazo",
-   "antes": "Fedea advierte de que el aumento de recursos estatales debilita los incentivos a la disciplina fiscal.",
-   "despues": "Fedea advierte de que el aumento de recursos estatales tenderá a debilitar los incentivos a la disciplina fiscal.",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fidelidad, como en psoe-08: Fedea lo formula como previsión («tenderá sin duda a agravar»), no como hecho. La valoración no cambia.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "psc-01",
-   "criterio": "largo_plazo (fuentes)",
-   "antes": "Europa Press (enero de 2026): Fedea valora la propuesta de nuevo modelo de financiación — https://www.bolsamania.com/noticias/economia/economia--fedea-critica-el-fondo-climatico-y-el-iva-pymes-del-modelo-de-financiacion-autonomica-por-su-arbitrariedad--21499129.html",
-   "despues": "De la Fuente (Fedea Policy Paper 2026/01, enero de 2026): Sobre la propuesta de reforma de la financiación autonómica: un primer análisis — https://documentos.fedea.net/pubs/fpp/2026/01/FPP2026-01.pdf",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente original en lugar del resumen de Europa Press (Bolsamanía), como en psoe-08.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "psc-03",
-   "criterio": "beneficiarios (campo)",
-   "antes": "106.172 en 2024, el 78,74 % en centros privados",
-   "despues": "106.172 interrupciones en 2024, el 78,75 % en centros privados",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): cifra y unidad, igual que en psoe-10: la tabla EV.4 del informe IVE 2024 del Ministerio de Sanidad (comprobada el 15-11) da 7,85 + 70,9 = 78,75 % en centros privados (el 78,74 % de La Moncloa es un truncamiento: 78,74 + 21,25 = 99,99), y la unidad son interrupciones, no mujeres. La valoración no cambia.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "psc-03",
-   "criterio": "beneficiarios",
-   "antes": "106.172 en 2024, el 78,74 % en centros privados",
-   "despues": "106.172 interrupciones en 2024, el 78,75 % en centros privados",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): cifra y unidad, igual que en psoe-10: la tabla EV.4 del informe IVE 2024 del Ministerio de Sanidad (comprobada el 15-11) da 7,85 + 70,9 = 78,75 % en centros privados (el 78,74 % de La Moncloa es un truncamiento: 78,74 + 21,25 = 99,99), y la unidad son interrupciones, no mujeres. La valoración no cambia.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "psc-03",
-   "criterio": "beneficiarios (fuentes)",
-   "antes": "(sin esta fuente)",
-   "despues": "Ministerio de Sanidad, Interrupción voluntaria del embarazo, datos definitivos 2024 (tabla EV.4) — https://www.sanidad.gob.es/areas/promocionPrevencion/embarazo/docs/IVE_2024.pdf",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial del reparto entre centros, como en psoe-10.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "psc-03",
-   "criterio": "antecedentes",
-   "antes": "pero la reforma no se aprobó antes del final de la legislatura, según EFE.",
-   "despues": "pero la reforma caducó con la disolución de las Cortes (art. 207 del Reglamento del Congreso), según la relación de iniciativas caducadas publicada en el Boletín Oficial de las Cortes Generales el 4-11-2026.",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial y misma formulación que psoe-10: la ficha de la iniciativa 102/000001 del Congreso («Concluido - (Caducado) desde 06/10/2026») y el BOCG, Congreso, serie D, núm. 610 (4-11-2026), p. 30. La valoración no cambia.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "psc-03",
-   "criterio": "antecedentes (fuentes)",
-   "antes": "(sin esta fuente)",
-   "despues": "Congreso de los Diputados, iniciativa 102/000001 (reforma del art. 43): «Concluido - (Caducado) desde 06/10/2026» — https://www.congreso.es/es/busqueda-de-iniciativas?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=102%2F000001",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial de la caducidad, como en psoe-10.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "psc-03",
-   "criterio": "antecedentes (fuentes)",
-   "antes": "(sin esta fuente)",
-   "despues": "BOCG, Congreso, serie D, núm. 610 (4-11-2026): relación de iniciativas caducadas, expediente 102/000001 — https://www.congreso.es/public_oficiales/L15/CONG/BOCG/D/BOCG-15-D-610.PDF#page=30",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial de la caducidad, como en psoe-10.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "psc-01",
-   "criterio": "evidencia (fuentes)",
-   "antes": "El Derecho (2025): la AIReF analiza la condonación de deuda autonómica en su Observatorio de Deuda — https://elderecho.com/?p=466529",
-   "despues": "AIReF, nota de 5-11-2025: implicaciones de la condonación de la deuda autonómica (Observatorio de deuda) — https://www.airef.es/es/noticias/la-airef-analiza-las-implicaciones-de-la-propuesta-de-condonacion-de-la-deuda-autonomica-y-la-reforma-de-los-mecanismos-de-financiacion-en-el-observatorio-de-deuda/",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial en lugar de prensa, la misma que pp-06 para el mismo informe: la nota de la AIReF (Observatorio de deuda, comprobada el 15-11) contiene las cifras y advertencias citadas (más de 2.000 € por habitante en Cataluña, 2.532 M€ de ahorro de intereses el primer año, 5,1 puntos de PIB y el límite del 13 % en 2029, mejora del acceso a los mercados, condicionalidad ligada a las reglas fiscales, sin margen para más gasto). La valoración no cambia.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "psc-01",
-   "criterio": "beneficiarios (fuentes)",
-   "antes": "El Derecho (2025): la AIReF analiza la condonación de deuda autonómica en su Observatorio de Deuda — https://elderecho.com/?p=466529",
-   "despues": "AIReF, nota de 5-11-2025: implicaciones de la condonación de la deuda autonómica (Observatorio de deuda) — https://www.airef.es/es/noticias/la-airef-analiza-las-implicaciones-de-la-propuesta-de-condonacion-de-la-deuda-autonomica-y-la-reforma-de-los-mecanismos-de-financiacion-en-el-observatorio-de-deuda/",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial en lugar de prensa, la misma que pp-06 para el mismo informe: la nota de la AIReF (Observatorio de deuda, comprobada el 15-11) contiene las cifras y advertencias citadas (más de 2.000 € por habitante en Cataluña, 2.532 M€ de ahorro de intereses el primer año, 5,1 puntos de PIB y el límite del 13 % en 2029, mejora del acceso a los mercados, condicionalidad ligada a las reglas fiscales, sin margen para más gasto). La valoración no cambia.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "psc-01",
-   "criterio": "largo_plazo (fuentes)",
-   "antes": "El Derecho (2025): la AIReF analiza la condonación de deuda autonómica en su Observatorio de Deuda — https://elderecho.com/?p=466529",
-   "despues": "AIReF, nota de 5-11-2025: implicaciones de la condonación de la deuda autonómica (Observatorio de deuda) — https://www.airef.es/es/noticias/la-airef-analiza-las-implicaciones-de-la-propuesta-de-condonacion-de-la-deuda-autonomica-y-la-reforma-de-los-mecanismos-de-financiacion-en-el-observatorio-de-deuda/",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial en lugar de prensa, la misma que pp-06 para el mismo informe: la nota de la AIReF (Observatorio de deuda, comprobada el 15-11) contiene las cifras y advertencias citadas (más de 2.000 € por habitante en Cataluña, 2.532 M€ de ahorro de intereses el primer año, 5,1 puntos de PIB y el límite del 13 % en 2029, mejora del acceso a los mercados, condicionalidad ligada a las reglas fiscales, sin margen para más gasto). La valoración no cambia.",
-   "fecha": "2026-11-15"
+   "antes": "ffe4cefdb2c01eec527f251d132bec39d8d561da7365f1ca30f4af87ce477310",
+   "despues": "e4d98e221eb82782f377bfef5e950a52035d640fca2f5f349b66c2bc513fdeb2",
+   "motivo": "Se recalcula tras los cambios en seleccion.json (pipeline/build_web.py lo comprueba)."
   }
  ],
  "dudas": [
-  "Criterio sobre Sánchez en actos del PSC: aplicado y explicado arriba; confirmado por el editor el 13-11-2026. Si se decidiera que el PSC solo cuenta con dirigentes propios, psc-02 y psc-03 caerían (c02 conserva la frase de Morón «seguir apostant per la pujada», sin periodicidad), y el PSC quedaría con 2 prioridades.",
-  "psc-04, internacional («no_verificable»): Portugal tiene una red de pousadas en edificios históricos, que podría contar como aplicación comparable sin evaluación publicada («mixta»). No se halló una fuente oficial sobre su titularidad y gestión que permitiera documentarlo, y se mantiene.",
-  "La campaña oficial empieza el 13-11 y el PSC abre en Barcelona: la selección debe revisarse con los compromisos que se anuncien."
- ],
- "criterio_psc_2026-11-13": "Decisión del editor (13-11-2026): se mantienen psc-02 y psc-03. El PSC está federado con el PSOE desde 1978 y comparten candidato a la Presidencia del Gobierno, Pedro Sánchez; por eso lo que dice Sánchez en actos o documentos del PSC cuenta para el PSC. No es el caso de UPN y el PP, partidos independientes que solo van juntos en una coalición electoral: por eso Feijóo no cuenta para UPN. Se reescribe la justificación del criterio, que antes decía ser el mismo que el aplicado a Feijóo en UPN-PP (ese criterio ya no rige: Feijóo no cuenta para UPN). seleccion_sha256 actualizado (95c71f99cf57… → 638b03e2281e…).",
- "revision_2026-11-14": {
-  "revisor": "Claude (Anthropic), pasada independiente",
-  "fecha": "2026-11-14",
-  "nuevos": [
-   "psc-c05",
-   "psc-05"
-  ],
-  "alcance": "psc-c05 / psc-05 (selección y 8 criterios) y las dos ocasiones nuevas de psc-c01 y psc-c04. Se abrieron con una petición normal la entrevista de Público (cita de psc-c05 literal en la página y en la copia local, SHA-256 38f5c492…), la de Montalvo en el Diari de Tarragona y las fuentes de la evaluación: NacióDigital (10-6-2025: 500 m, 2.660 a 3.160 m, 3.200 M€, 55 a 70 millones de pasajeros, plan director en 2028, obras desde 2030, final en 2033, 270 ha, fondo de 320 M€, Tokio en estudio desde hace más de una década, «fonts governamentals» sobre la bajada de emisiones), Crónica Global (15-9-2026: DORA III 2027-2031, 1.760 M€, 191 M€ de compensaciones, obras desde 2032, tres céntimos), La Ciutat (19-9-2026: 1.765 M€, 191,25 M€, 40,17 millones de enero a agosto, la Cambra pide adelantar las obras; 20-9-2026: los Comunes estudian ir a los tribunales, la alcaldesa de El Prat se opone), 3Cat (12-6-2025: expediente de 2021, compensaciones de 2002, Ricarda y Remolar), Ara (11-6-2025: procedimiento de infracción), betevé (acuerdo de agosto de 2021 paralizado en septiembre), Ley 18/2014 (DORA aprobado por el Consejo de Ministros, art. 20), NBER WP 18278 (casi 300 áreas metropolitanas, desregulación de 1978) y Comisión Europea (3,8-4 % de las emisiones de la UE en 2022; 66 % del forzamiento neto por efectos distintos del CO2 en 2018). Todas respondieron 200.",
-  "seleccion": "psc-c05 cumple 1b. Medida concreta: la ampliación pactada en 2025 (alargar la pista de mar para vuelos intercontinentales), que Hereu identifica en la misma entrevista («necesitamos una pista más larga»). Primera persona y del partido («yo lo defiendo y el partido también»; «Todo lo que hagamos será con el aval de la Comisión Europea»), del cabeza de lista por Barcelona, en una entrevista de campaña y sobre lo que harán. No es un logro pasado ni un diagnóstico: es un proyecto aún no ejecutado ni autorizado por Bruselas, cuyas fases de esta legislatura son el plan director y la tramitación europea. Mismo listón que psc-04 (un proyecto estatal concreto, una ocasión, en respuesta a una pregunta) y que upn-03 (impulsar inversiones concretas sin cuantía ni plazo). Se distingue de los descartes por «defensa» sin medida (decretos de vivienda, pacto de Estado), en los que no había una medida identificada. Se mantiene el descarte del Plan de Rodalies: en esa respuesta Hereu describe la gestión en curso, no lo que hará. Ocasiones nuevas: se integran las dos propuestas (véase cambios).",
-  "igual_estandar": "psc-05 (ampliación de El Prat) se ha comparado con upn-03 (inversiones del Estado en el Canal de Navarra, el TAV, el aeropuerto de Pamplona y la red eléctrica), la única otra propuesta evaluada de infraestructuras aeroportuarias, y con psc-04 (Parador de Tarragona), otro proyecto estatal concreto con una sola ocasión. Concreción «mixta» como upn-03 y psc-04 (medida identificada sin cuantía ni plazo en boca del líder). Financiación «mixta» con la misma regla de la rúbrica (coste estimable por fuentes públicas, sin explicación del partido de cómo se paga), igual que upn-03 y psc-04. Encaje legal: upn-03 es «favorable» porque sus obras solo requieren competencias estatales y proyectos ya aprobados; psc-05 es «mixta» por un hecho distinto: necesita la conformidad europea por afectar a Natura 2000 y hay un procedimiento de infracción abierto. Experiencia internacional «no_verificable», como psc-04, porque no hemos abierto evaluaciones comparables (upn-03 es «mixta» porque se apoyó en la auditoría del Tribunal de Cuentas Europeo sobre alta velocidad, que no aplica a aeropuertos). Evidencia, antecedentes, beneficiarios y largo plazo «mixta», como en upn-03. No hay otras propuestas evaluadas sobre ampliaciones aeroportuarias (el «Ampliar los aeropuertos saturados» del PP figura en su extracción pero no entre sus 12 evaluadas). Revisión: las ocho valoraciones se siguen de las fuentes y coinciden con upn-03 y psc-04 donde los hechos coinciden; la experiencia internacional queda «no_verificable», como en psc-04, porque no hay fuente que documente una aplicación comparable evaluada.",
-  "dudas_del_analista_resueltas": [
-   "Naturaleza de psc-c05: es compromiso (véase «seleccion»).",
-   "Prioridad con una ocasión y en respuesta a una pregunta: se admite, como psc-04; el prompt 1b manda seleccionar todos los compromisos si hay menos de 12.",
-   "Fecha: se usa la de publicación (12-11), como en las demás entrevistas.",
-   "Cifras del DORA III: 1.760 M€ (Crónica Global) y 1.765 M€ (La Ciutat); se usa 1.765 M€ con el desglose de 191,25 M€ de La Ciutat. Correcto.",
-   "Blonigen y Cristea: se cita el documento de trabajo del NBER que se ha leído; correcto.",
-   "Ocasión de psc-c01: se cuenta, con la salvedad en su nota.",
-   "Ocasión de psc-c04: se cuenta (véase cambios).",
-   "Rodalies: se mantiene el descarte."
-  ],
-  "recuento_psc_05": {
-   "favorable": 0,
-   "mixta": 7,
-   "desfavorable": 0,
-   "no_verificable": 1
-  },
-  "recuento_final_5_propuestas": {
-   "favorable": 5,
-   "mixta": 31,
-   "desfavorable": 0,
-   "no_verificable": 4
-  },
-  "dudas": [
-   "La entrevista de Público la firma el director de su edición catalana (Públic); puede haberse hecho en catalán y traducido. Se usa el texto publicado en castellano, que el medio presenta como palabras de Hereu.",
-   "La búsqueda del analista se cerró el 14-11 a las 09:40: el acto de Terrassa del mediodía y los posteriores no están cubiertos."
-  ]
- }
+  "psc-c05 (decisión de mismo estándar, reversible): si se considera que basta con que el cabeza de lista del PSC lo presente como posición «del partido» («yo lo defiendo y el partido también») en una entrevista de campaña, c05 vuelve a «prioridades» y su evaluación (psc-05 en el historial, con id psc-c05, id_anterior psc-05 y la frase del programa en «concreción»: el n.º 31, p. 21, solo despliega el DORA III) vuelve a evaluacion.json. Entonces habría que priorizar con el mismo criterio vox-c17.",
+  "psc-c04 es un caso frontera: las dos ocasiones son respuestas a preguntas en entrevistas del mismo diario local, sin nota del PSC, mitin ni medio de ámbito estatal. Se mantiene porque cumple dos de las señales del prompt 1b (lo anuncia el candidato como promesa y lo repite otro cabeza de lista) y el diario lo destaca en ambos subtítulos. Si se exigiera que lo destaque el propio partido, como en psoe-c07, c04 también quedaría sin priorizar y el complemento del PSC quedaría vacío, como el del PSOE.",
+  "psc-c02 (SMI): la misma duda que psoe-c03 en la revisión del PSOE: el programa no dice «todos los años», sino «actualizarlo periódicamente» con un suelo del 60 % del salario medio (n.º 87, p. 37). Si se considera que la periodicidad anual define el compromiso, c02 volvería al complemento con su evaluación del 12-nov (psc-02).",
+  "Sin búsqueda nueva tras el 14-11 a las 09:40: el complemento reaprovecha los compromisos seleccionados hasta entonces. Quedan fuera el acto de Terrassa (14-11) y la campaña posterior, incluido el acto central con Pedro Sánchez en Barcelona anunciado para la semana de las elecciones; el registro de promesas del 15-nov no añade compromisos concretos del PSC."
+ ]
 }

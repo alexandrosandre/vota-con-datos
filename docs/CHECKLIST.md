@@ -44,7 +44,8 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
     conjunto cuenta también para Podemos, Frente Amplio y ERC).
   - [x] PSC — **asume el programa del PSOE** (decisión del editor, 15-nov: solo añade cuestiones de ámbito catalán sin
     contradecirlo). Paso 1: g13, PSC 5→11 posiciones (q18 pasa de +1 a +2 por la precedencia del programa). Paso 2: las 12
-    propuestas del PSOE, con nota; sus compromisos propios que no estén en ese programa, como complemento (en curso).
+    propuestas del PSOE, con nota, y como complemento el Parador de Tarragona (único compromiso propio fuera de ese programa
+    que el PSC destaca; El Prat queda fuera por decirse una sola vez, como psoe-c07). Revisión independiente aprobada.
   - [ ] Frente Amplio, Podemos, Junts, EH Bildu, NC-BC, Ara Més, UPN — sin fecha (Junts: sin rastro de programa el 15-nov).
   - Hecho el 14-nov: adelante_andalucia-08 cita la DA 23.ª de la Ley 54/1997 (mínimo del 10 % de la SEPI en
     Red Eléctrica) y pp-07 y compromis-13 resumen a Bom y Ligthart con sus cifras exactas (0,083 / 0,122 para el
