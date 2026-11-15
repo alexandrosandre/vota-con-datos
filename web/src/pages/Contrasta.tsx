@@ -398,10 +398,7 @@ export function Contrasta() {
                   <dl>
                     {fase3.value!.criterios.map((c) => (
                       <div key={c.id}>
-                        <dt>
-                          {CORTO[c.id] ?? c.nombre}
-                          {CORTO[c.id] && CORTO[c.id] !== c.nombre ? ` (${c.nombre})` : ''}
-                        </dt>
+                        <dt>{CORTO[c.id] ?? c.nombre}</dt>
                         <dd>{c.pregunta}</dd>
                       </div>
                     ))}
@@ -462,10 +459,7 @@ export function Contrasta() {
                   const c = fase3.value!.criterios.find((x) => x.id === explica);
                   return c ? (
                     <div class="lp-tip" id="lp-tip" role="tooltip">
-                      <strong>
-                        {CORTO[c.id] ?? c.nombre}
-                        {CORTO[c.id] && CORTO[c.id] !== c.nombre ? ` (${c.nombre})` : ''}.
-                      </strong>{' '}
+                      <strong>{CORTO[c.id] ?? c.nombre}.</strong>{' '}
                       {c.pregunta}
                       <button class="lp-tip-x" aria-label="Cerrar la explicación" onClick={() => setExplica(null)}>
                         ✕
@@ -524,7 +518,8 @@ export function Contrasta() {
         )}
         {sel && <Promesas id={sel} />}
       </div>
-      <Siguiente desde="contrasta" />
+      {/* Un solo paso al 3: el del partido que estás viendo (que pasa preseleccionado); el genérico, solo si no hay partido. */}
+      {!(datos?.estado === 'evaluado' && p) && <Siguiente desde="contrasta" />}
     </div>
   );
 }

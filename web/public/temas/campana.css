@@ -489,3 +489,18 @@ html[data-tema="campana"] .lp-intro .desplegable { border: 0; padding: 0; margin
 html[data-tema="campana"] .lp-intro .desplegable > summary { font-size: 0.85rem; padding: 4px 0; }
 html[data-tema="campana"] .lp-columnas { top: 64px; }
 @media (max-width: 760px) { html[data-tema="campana"] .lp-columnas { top: 58px; } }
+/* Móviles de pantalla corta (iPhone SE y similares): cuestionario más compacto para que se vea la primera respuesta */
+@media (max-width: 760px) and (max-height: 700px) {
+  html[data-tema="campana"] .cab-paso.compacta { padding: 8px 0 10px; margin-bottom: 10px; }
+  html[data-tema="campana"] .cab-paso.compacta h1 { font-size: 1.15rem; }
+  html[data-tema="campana"] .cab-paso.compacta .kicker { margin-bottom: 2px; }
+  html[data-tema="campana"] .progress { margin-bottom: 10px; }
+  html[data-tema="campana"] .q-card { padding: 14px 14px; }
+  html[data-tema="campana"] .q-text { font-size: 1.24rem; margin: 6px 0 8px; }
+  html[data-tema="campana"] .q-card .muted { font-size: 0.86rem !important; }
+  html[data-tema="campana"] .mas-contexto { margin-bottom: 6px; min-height: 0; }
+  html[data-tema="campana"] .importancia { margin: 2px 0 6px; }
+  html[data-tema="campana"] .importancia .star, html[data-tema="campana"] .importancia .poco { min-height: 34px; }
+  html[data-tema="campana"] .likert { gap: 4px; margin-top: 8px; }
+  html[data-tema="campana"] .likert button { padding: 7px 6px; }
+}
