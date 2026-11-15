@@ -38,7 +38,7 @@ export const paso1 = computed(() => {
  */
 export const origenOrden = computed<'fase1' | 'manual' | null>(() => {
   const e = estado.value;
-  if (e.rankingOrigen === 'manual') return 'manual';
+  // (El orden «manual» del paso 3 se retiró el 15-nov: uno guardado antes ya no se ve ni se puede cambiar, así que no cuenta.)
   if (e.rankingOrigen === 'ninguno') return null;
   return paso1.value ? 'fase1' : null;
 });
@@ -46,7 +46,7 @@ export const origenOrden = computed<'fase1' | 'manual' | null>(() => {
 /** Orden de preferencia vigente: si viene del paso 1, el de tus respuestas de ahora; si lo pusiste tú, el tuyo. */
 export const rankingActual = computed(() => {
   const o = origenOrden.value;
-  return o === 'fase1' ? paso1.value!.orden : o === 'manual' ? estado.value.ranking : [];
+  return o === 'fase1' ? paso1.value!.orden : [];
 });
 
 /** Partido preseleccionado en los pasos 2 y 3: el que elegiste o, si no elegiste ninguno, el primero de tu orden. */

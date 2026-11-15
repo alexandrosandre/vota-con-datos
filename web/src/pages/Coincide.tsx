@@ -341,7 +341,7 @@ function Resultados() {
             ))}
           </h2>
           <p class="muted" style={{ fontSize: '0.9rem', margin: '6px 0 14px' }}>
-            Con este resultado seguimos: el paso 2 empieza por tus partidos más afines y el paso 3 los usa como tu orden de preferencia.
+            Con este resultado seguimos: el paso 2 empieza por tus partidos más afines y el paso 3 los usa para señalarte una papeleta con opciones si la tuya tiene pocas.
             Allí puedes quitarlo o cambiarlo.
           </p>
           <button class="btn primary" onClick={() => continuar(`/contrasta/${primeros[0].partido}`)} style={{ '--c': 'var(--p2)' } as any}>

@@ -13,15 +13,14 @@ export function Privacidad() {
 
       <h2>Lo que se guarda en tu navegador</h2>
       <p>
-        Tus respuestas del paso 1, tu provincia, el partido que eliges y tu orden de preferencia se guardan solo en tu navegador, en tu
+        Tus respuestas del paso 1, tu provincia y el partido que eliges se guardan solo en tu navegador, en tu
         dispositivo, para que puedas volver y seguir donde lo dejaste. No nos llegan nunca. Puedes borrarlos con el botón «Borrar mis
         respuestas» del paso 1 o borrando los datos del sitio en tu navegador.
       </p>
 
       <h2>Lo que no se envía</h2>
       <p>
-        No enviamos nada de lo que haces en la web: ni tus respuestas, ni tu provincia, ni los partidos que eliges, ni tu orden de
-        preferencia.
+        No enviamos nada de lo que haces en la web: ni tus respuestas, ni tu provincia, ni los partidos que eliges.
       </p>
 
       <h2>Cómo contamos las visitas</h2>

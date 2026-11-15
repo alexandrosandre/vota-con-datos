@@ -340,4 +340,27 @@ h1[tabindex='-1']:focus, h2[tabindex='-1']:focus, main[tabindex='-1']:focus { ou
 .cambiar-datos { scroll-margin-top: 70px; }
 .siguientes-paso1 h2 { overflow-wrap: anywhere; }
 /* Objetivos táctiles de al menos 40 px para los enlaces-botón nuevos */
-.importancia .poco, .elegido-resumen .link-btn { min-height: 40px; display: inline-flex; align-items: center; }
+.importancia .poco, .elegido-resumen .link-btn, .desplegar-todas { min-height: 40px; display: inline-flex; align-items: center; }
+
+/* Paso 2 compacto (estudio de flujo, 15-nov): propuestas en filas plegables y resumen por criterio */
+.prop-h { margin: 0; font-size: inherit; }
+.prop-fila { display: grid; grid-template-columns: 1fr auto; grid-template-areas: 'tema flecha' 'titulo flecha' 'tira flecha'; gap: 6px 12px; width: 100%; text-align: left; background: none; border: 0; padding: 16px 18px; color: var(--ink); }
+.prop-fila .q-tema { grid-area: tema; }
+.prop-fila .prop-titulo { grid-area: titulo; font-family: var(--serif); font-weight: 600; font-size: 1.08rem; line-height: 1.2; }
+.prop-fila .tira { grid-area: tira; display: flex; gap: 3px; }
+.prop-fila .tira i { width: 16px; height: 10px; border-radius: 2px; opacity: 0.9; }
+.prop-fila .flecha { grid-area: flecha; align-self: center; font-size: 1.1rem; color: var(--c); }
+.prop.abierta .prop-head { border-top: 1px solid var(--line); padding-top: 16px; }
+.resumen-crit ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+.resumen-crit li { display: grid; grid-template-columns: minmax(110px, 160px) 90px 1fr; gap: 10px; align-items: center; font-size: 0.85rem; }
+.rc-nombre { font-weight: 600; }
+.rc-barra { display: flex; height: 8px; border-radius: 99px; overflow: hidden; background: var(--paper-2); }
+.rc-barra i { display: block; height: 100%; }
+.rc-texto { color: var(--ink-3); }
+@media (max-width: 760px) {
+  .solo-escritorio { display: none; }
+  .resumen-crit ul { gap: 2px; }
+  .resumen-crit li { grid-template-columns: 1fr auto; gap: 8px; font-size: 0.8rem; padding: 3px 0; border-bottom: 1px solid var(--line); }
+  .rc-barra { display: none; }
+  .rc-texto { text-align: right; }
+}

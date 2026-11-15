@@ -4,7 +4,7 @@ import { fase2, fmt, partido } from '../data';
 import { simular, veredicto, type ResultadoSim } from '../engine/seats';
 import type { CandidaturaCirc, Circunscripcion, Escenario } from '../types';
 import { CabeceraPaso } from '../brand';
-import { origenOrden, partidoPreferido, paso1, rankingActual } from '../paso1';
+import { partidoPreferido, rankingActual } from '../paso1';
 import { Compartir, enlace } from '../compartir';
 
 const TEXTO_VEREDICTO: Record<string, string> = {
@@ -56,14 +56,6 @@ function filaDe(filas: Fila[], p: string) {
 const esCoalicion = (c: CandidaturaCirc) => (c.coalicion?.miembros.length ?? 0) >= 2;
 
 /** Partidos de los pasos 1 y 2 que se pueden votar en esta provincia, cada uno con su papeleta (la suya o la de su coalición). */
-function partidosAqui(circ: Circunscripcion): { pid: string; cand: CandidaturaCirc }[] {
-  const out: { pid: string; cand: CandidaturaCirc }[] = [];
-  for (const c of circ.candidaturas) if (c.partido) out.push({ pid: c.partido, cand: c });
-  for (const c of circ.candidaturas)
-    if (esCoalicion(c))
-      for (const a of c.afines ?? []) if (!out.some((x) => x.pid === a)) out.push({ pid: a, cand: c });
-  return out;
-}
 
 /** «el PP», «Podemos». */
 function conArticulo(pid: string) {
@@ -229,180 +221,6 @@ function gruposOrden(filas: Fila[], ranking: string[]): { fila: Fila; partidos: 
   return out;
 }
 
-function Preferencias({
-  circ,
-  filas,
-  elegidaId,
-  sugeridaId,
-  pidElegido,
-}: {
-  circ: Circunscripcion;
-  filas: Fila[];
-  elegidaId?: string;
-  sugeridaId?: string;
-  pidElegido?: string | null;
-}) {
-  const ranking = rankingActual.value;
-  const af = paso1.value;
-  const grupos = gruposOrden(filas, ranking);
-  const ausentes = ranking.filter((p) => !filaDe(filas, p)).length;
-  // Solo papeletas que aún no están en tu orden: un partido cuya papeleta ya está se vería dentro de esa fila, no al final.
-  // Una opción por papeleta que aún no está en tu orden; internamente se guarda su partido principal (o el primero de la web que va en ella).
-  const candidatos = partidosAqui(circ)
-    .filter((x) => !ranking.includes(x.pid) && !grupos.some((g) => g.fila.cand.id === x.cand.id))
-    .filter((x, i, xs) => xs.findIndex((y) => y.cand.id === x.cand.id) === i);
-
-  const poner = (r: string[]) => actualizar({ ranking: r, rankingOrigen: 'manual' });
-  // Mueve una papeleta un puesto: intercambia el primer partido de cada una (los que no se presentan aquí no cuentan).
-  const mover = (gi: number, d: number) => {
-    const j = gi + d;
-    if (j < 0 || j >= grupos.length) return;
-    const l = ranking.slice();
-    const a = l.indexOf(grupos[gi].partidos[0]);
-    const b = l.indexOf(grupos[j].partidos[0]);
-    [l[a], l[b]] = [l[b], l[a]];
-    poner(l);
-  };
-  const origen = origenOrden.value;
-  const volverPaso1 = () => actualizar({ rankingOrigen: null });
-  // El orden es uno para todas las provincias: quitar una papeleta compartida quita a todos sus partidos.
-  const quitar = (g: { fila: Fila; partidos: string[] }) => {
-    const sigs = g.partidos.map((x) => partido(x)?.siglas ?? x);
-    if (g.partidos.length > 1 && !confirm(`En esta papeleta van ${enumera(sigs)}. ¿Quitarlos a todos de tu orden? Tu orden es el mismo para todas las provincias.`)) return;
-    poner(ranking.filter((x) => !g.partidos.includes(x)));
-  };
-
-  return (
-    <div class="card" id="preferencias">
-      <h2 class="h3" style={{ marginBottom: 6 }}>
-        Tu orden de preferencia
-      </h2>
-      <p class="muted" style={{ marginTop: 0 }}>
-        Sirve solo para una cosa: si el partido que quieres votar tiene pocas opciones de escaño en {circ.nombre}, te señalamos el siguiente
-        de esta lista que sí las tiene (al menos un 50 % de probabilidad de escaño). Este orden no sale de tu navegador.
-      </p>
-
-      {origen === null ? (
-        <div class="origen">
-          <p style={{ margin: '0 0 10px' }}>
-            <strong>Aún no nos has dicho a quién votarías si no fuera a tu primera opción.</strong> Hay dos maneras:
-          </p>
-          <div class="row">
-            {af ? (
-              <button class="btn" onClick={volverPaso1}>
-                Usar mi resultado del paso 1
-              </button>
-            ) : (
-              <a class="btn" href="#/coincide">
-                Hacer el paso 1 (ordenamos por afinidad)
-              </a>
-            )}
-            <button
-              class="btn"
-              onClick={() => poner(pidElegido && filaDe(filas, pidElegido) ? [pidElegido] : [])}
-            >
-              Ordenarlo yo aquí
-            </button>
-          </div>
-        </div>
-      ) : (
-        <>
-          <div class="origen">
-            {origen === 'fase1' ? (
-              <>
-                <span class="etiqueta-origen">Del paso 1</span> Ordenado de más a menos afinidad según tus respuestas del cuestionario. Si lo
-                cambias, pasa a ser tu orden.
-              </>
-            ) : (
-              <>
-                <span class="etiqueta-origen manual">Ordenado por ti</span>{' '}
-                {ranking.length === 0 ? 'Añade los partidos en el orden que prefieras con la lista de abajo.' : 'Este orden lo has puesto tú.'}{' '}
-                {af && (
-                  <button class="link-btn" onClick={volverPaso1}>
-                    Volver al orden del paso 1
-                  </button>
-                )}
-              </>
-            )}
-          </div>
-          <ol class="orden-pref">
-            {grupos.map((g, i) => {
-              const f = g.fila;
-              const p = g.partidos[0];
-              const afs = origen === 'fase1' && af ? g.partidos.map((x) => [x, af.pct[x]] as const).filter(([, a]) => a !== undefined) : [];
-              // Quién va de verdad en esta papeleta y quién llega a ella solo como partido afín (el PSC fuera de Cataluña).
-              const enPapeleta = (x: string) => f.cand.partido === x || (esCoalicion(f.cand) && !!f.cand.afines?.includes(x));
-              const dentro = g.partidos.filter(enPapeleta).map((x) => partido(x)?.siglas ?? x);
-              const afinesFuera = g.partidos.filter((x) => !enPapeleta(x)).map((x) => partido(x)?.siglas ?? x);
-              const sigs = g.partidos.map((x) => partido(x)?.siglas ?? x);
-              const varios = g.partidos.length > 1;
-              const sig = varios ? f.cand.siglas : sigs[0];
-              return (
-                <li key={f.cand.id} class={f.cand.id === elegidaId ? 'es-voto' : f.cand.id === sugeridaId ? 'es-sugerida' : ''}>
-                  <span class="pos">{i + 1}</span>
-                  <MarcaPartido cand={f.cand} pid={varios ? f.cand.partido : p} />
-                  <span class="nombre">
-                    <strong>{sig}</strong>
-                    {varios ? (
-                      <span class="muted">
-                        {dentro.length > 1 && ` · aquí van juntos ${enumera(dentro)}`}
-                        {afinesFuera.length > 0 &&
-                          ` · ${enumera(afinesFuera)} no se ${afinesFuera.length > 1 ? 'presentan' : 'presenta'} aquí: su partido afín`}
-                      </span>
-                    ) : (
-                      f.cand.partido !== p && <span class="muted"> · en {f.cand.siglas}</span>
-                    )}
-                    {f.cand.id === elegidaId && <span class="tag">tu voto</span>}
-                    {f.cand.id === sugeridaId && <span class="tag tag-sug">sugerida</span>}
-                    {afs.length === 1 && !varios && <span class="muted"> · afinidad {afs[0][1]} %</span>}
-                    {varios && afs.length > 0 && (
-                      <span class="muted"> · afinidad {afs.map(([x, a]) => `${partido(x)?.siglas ?? x} ${a} %`).join(', ')}</span>
-                    )}
-                  </span>
-                  <span class="prob">{f.sinBase ? '—' : fmt.pct(f.pEscano)}</span>
-                  <span class="acciones">
-                    <button aria-label={`Subir ${sig}`} onClick={() => mover(i, -1)} disabled={i === 0}>↑</button>
-                    <button aria-label={`Bajar ${sig}`} onClick={() => mover(i, 1)} disabled={i === grupos.length - 1}>↓</button>
-                    <button aria-label={`Quitar ${sig} de tu orden`} onClick={() => quitar(g)}>✕</button>
-                  </span>
-                </li>
-              );
-            })}
-          </ol>
-          <div class="muted" style={{ fontSize: '0.8rem', margin: '-4px 0 10px' }}>
-            La cifra de la derecha: probabilidad de lograr al menos un escaño en {circ.nombre}.
-            {ausentes > 0 && ` ${ausentes} ${ausentes === 1 ? 'partido de tu orden no se presenta' : 'partidos de tu orden no se presentan'} aquí.`}
-          </div>
-          <div class="row">
-            {candidatos.length > 0 && (
-              <label class="field" style={{ minWidth: 220, flex: '0 1 320px', margin: 0 }}>
-                <span class="sr-only">Añadir una papeleta al final de tu orden</span>
-                <select
-                  value=""
-                  onChange={(ev) => {
-                    const v = (ev.target as HTMLSelectElement).value;
-                    if (v) poner([...ranking, v]);
-                  }}
-                >
-                  <option value="">+ Añadir una papeleta al final…</option>
-                  {candidatos.map((x) => (
-                    <option key={x.cand.id} value={x.pid}>
-                      {etiquetaPapeleta(x.cand)}
-                    </option>
-                  ))}
-                </select>
-              </label>
-            )}
-            <button class="link-btn" onClick={() => actualizar({ ranking: [], rankingOrigen: 'ninguno' })}>
-              {origen === 'fase1' ? 'No usar el orden del paso 1' : 'Borrar mi orden'}
-            </button>
-          </div>
-        </>
-      )}
-    </div>
-  );
-}
-
 export function Cuenta() {
   const d = fase2.value!;
   const e = estado.value;
@@ -454,25 +272,20 @@ export function Cuenta() {
 
   // Votos por diputado en 2023 del partido de la papeleta; no en coaliciones, que en 2023 no concurrieron así.
   const coste = elegida?.partido && !esCoalicion(elegida) ? d.coste_nacional_2023?.[elegida.partido] : undefined;
-  const irAPreferencias = () => document.getElementById('preferencias')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
   const Sugerencia = () =>
     alternativa ? (
       <div class="note sugerencia" style={{ marginTop: 16 }}>
         <p style={{ margin: 0 }}>
           {noSePresenta ? 'Como no se presenta aquí, si' : `Con estos datos, tu voto a ${elegida!.siglas} tiene pocas opciones de convertirse en escaño en ${circ!.nombre}. Si`}{' '}
-          quieres que tu voto ayude a elegir un diputado, la primera de tu orden de preferencia que sí tiene opciones es{' '}
+          quieres que tu voto ayude a elegir un diputado, el siguiente de tus partidos más afines del paso 1 que sí tiene opciones es{' '}
           <span class="nowrap">
             <MarcaPartido cand={alternativa.cand} /> <strong>{alternativa.cand.siglas}</strong>
           </span>{' '}
-          (n.º {posAlternativa} de tu orden, {fmt.pct(alternativa.pEscano)} de probabilidad de escaño).
+          (n.º {posAlternativa} en tu afinidad, {fmt.pct(alternativa.pEscano)} de probabilidad de escaño).
         </p>
         <p class="muted" style={{ margin: '8px 0 0', fontSize: '0.9rem' }}>
-          Sale de{' '}
-          <button class="link-btn" onClick={irAPreferencias}>
-            {origenOrden.value === 'fase1' ? 'tu orden del paso 1' : 'el orden que has puesto'}
-          </button>
-          , no de nuestra opinión. Votar a quien prefieres también es legítimo: tu voto cuenta para la financiación pública de los partidos y como
+          Sale de <a href="#/coincide/resultados">tu resultado del paso 1</a>, no de nuestra opinión. Votar a quien prefieres también es legítimo: tu voto cuenta para la financiación pública de los partidos y como
           señal política.
         </p>
       </div>
@@ -480,19 +293,10 @@ export function Cuenta() {
       <div class="note" style={{ marginTop: 16 }}>
         {ranking.length === 0 ? (
           <>
-            Si nos dices a quién votarías después, te señalamos cuál tiene opciones aquí.{' '}
-            <button class="link-btn" onClick={irAPreferencias}>
-              Indicar mi orden de preferencia
-            </button>
+            Si haces <a href="#/coincide">el paso 1</a>, te señalamos cuál de tus partidos más afines tiene opciones aquí.
           </>
         ) : (
-          <>
-            Ninguno de los partidos de{' '}
-            <button class="link-btn" onClick={irAPreferencias}>
-              tu orden de preferencia
-            </button>{' '}
-            llega al 50 % de probabilidad de escaño en {circ!.nombre} con estos datos.
-          </>
+          <>Ninguno de tus partidos más afines del paso 1 llega al 50 % de probabilidad de escaño en {circ!.nombre} con estos datos.</>
         )}
       </div>
     ) : null;
@@ -735,7 +539,6 @@ export function Cuenta() {
             </details>
           )}
 
-          <Preferencias circ={circ} filas={filas} elegidaId={elegida?.id} sugeridaId={alternativa?.cand.id} pidElegido={pidElegido} />
 
           <div class="card">
             <h2 class="h3" id="tabla-candidaturas">

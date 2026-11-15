@@ -464,3 +464,6 @@ html[data-tema="campana"] .cab-paso.compacta h1 { font-size: clamp(1.7rem, 4vw, 
 @media (max-width: 760px) {
   html[data-tema="campana"] .cab-paso h1 { font-size: clamp(1.6rem, 7.6vw, 2.2rem); }
 }
+/* Paso 2 compacto: filas plegables */
+html[data-tema="campana"] .prop-fila .prop-titulo { font-size: 1.22rem; font-weight: 800; font-stretch: 85%; color: #fff; }
+html[data-tema="campana"] .prop-fila .tira i { border-radius: 0; }

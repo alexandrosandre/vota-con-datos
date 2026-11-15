@@ -43,7 +43,7 @@ export const LEMAS: Record<string, { lema: [string, string, string]; eslogan: st
         verbo: 'Suma',
         pregunta: '¿Tu voto tendrá escaño?',
         resumen:
-          'Con la ley electoral y las listas oficiales del BOE, calcula la probabilidad de que tu partido logre al menos un escaño en tu provincia. Si tiene pocas opciones, te dice cuál de tus siguientes preferencias sí las tiene.',
+          'Con la ley electoral y las listas oficiales del BOE, calcula la probabilidad de que tu partido logre al menos un escaño en tu provincia. Si tiene pocas opciones, te dice cuál de tus partidos más afines del paso 1 sí las tiene.',
         cta: 'Calcular',
       },
     },

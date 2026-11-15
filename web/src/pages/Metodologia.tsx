@@ -260,10 +260,10 @@ export function Metodologia() {
               para el primer escaño o el siguiente.
             </li>
             <li>
-              <strong>Alternativa:</strong> solo si nos das un orden de preferencia: el del paso 1 (de más a menos afinidad) o el que pongas a
-              mano. Si tu opción tiene menos de un 50 % de probabilidad de escaño en tu provincia, te señalamos la primera de ese orden, sin
-              contar tu voto, que supera ese 50 %. Si un partido de tu orden va en coalición, cuenta la papeleta de la coalición; si dos partidos de tu orden van en la misma papeleta, aparece una sola vez, en el puesto del primero. Sin orden de preferencia no
-              sugerimos nada. Votar a quien prefieres siempre es legítimo: los votos cuentan también para la financiación pública de los
+              <strong>Alternativa:</strong> solo si has hecho el paso 1. Si tu opción tiene menos de un 50 % de probabilidad de escaño en tu
+              provincia, te señalamos el siguiente de tus partidos más afines (de más a menos afinidad), sin contar tu voto, que supera ese 50 %.
+              Si ese partido va en coalición, cuenta la papeleta de la coalición; si dos de tus partidos afines van en la misma papeleta, aparece
+              una sola vez, en el puesto del primero. Sin el paso 1 no sugerimos nada. Votar a quien prefieres siempre es legítimo: los votos cuentan también para la financiación pública de los
               partidos y como señal política.
             </li>
           </ol>

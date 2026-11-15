@@ -17,7 +17,6 @@ const COLOR: Record<Valoracion, string> = { favorable: 'ok', mixta: 'mid', desfa
 const IDIOMA_CITA: Record<string, string> = {
   erc: 'ca', junts: 'ca', psc: 'ca', ara_mes_fa: 'ca', compromis: 'ca', bng: 'gl', eh_bildu: 'eu', pnv: 'eu',
 };
-const sinMovimiento = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
 function Leyenda() {
   return (
@@ -32,29 +31,46 @@ function Leyenda() {
   );
 }
 
+/**
+ * Resumen por criterio (estudio de flujo, 15-nov): el reparto global apenas distingue (la mayoría es «Matizable»).
+ * Cuenta cada criterio por separado; nunca se suma en una puntuación del partido ni se ordena a los partidos.
+ */
 function Resumen({ props }: { props: Propuesta[] }) {
-  const n: Record<Valoracion, number> = { favorable: 0, mixta: 0, desfavorable: 0, no_verificable: 0 };
-  props.forEach((p) => Object.values(p.evaluacion).forEach((e) => n[e.valoracion]++));
-  const total = Object.values(n).reduce((a, b) => a + b, 0) || 1;
+  const crit = fase3.value!.criterios;
+  const PL: Record<Valoracion, [string, string]> = {
+    favorable: ['sólida', 'sólidas'], mixta: ['matizable', 'matizables'], desfavorable: ['débil', 'débiles'], no_verificable: ['no verificable', 'no verificables'],
+  };
   return (
-    <div>
-      <div class="reparto" style={{ display: 'flex', height: 12, borderRadius: 99, overflow: 'hidden' }} aria-hidden="true">
-        {(Object.keys(n) as Valoracion[]).map((v) => (
-          <i key={v} style={{ width: `${(n[v] / total) * 100}%`, background: `var(--${COLOR[v]})` }} />
-        ))}
-      </div>
-      <p class="muted" style={{ fontSize: '0.85rem', margin: '8px 0 0' }}>
-        {(Object.keys(n) as Valoracion[]).map((v) => `${n[v]} ${VAL[v].toLowerCase()}`).join(' · ')} — de {total} valoraciones ({props.length} propuestas, cada una en{' '}
-        {fase3.value!.criterios.length} criterios)
+    <div class="resumen-crit">
+      <p class="muted" style={{ fontSize: '0.85rem', margin: '0 0 8px' }}>
+        Cómo salen sus {props.length} propuestas en cada criterio (no se suman en una nota):
       </p>
+      <ul>
+        {crit.map((c) => {
+          const n: Record<Valoracion, number> = { favorable: 0, mixta: 0, desfavorable: 0, no_verificable: 0 };
+          props.forEach((p) => n[p.evaluacion[c.id]?.valoracion ?? 'no_verificable']++);
+          const vs = (Object.keys(n) as Valoracion[]).filter((v) => n[v] > 0);
+          return (
+            <li key={c.id}>
+              <span class="rc-nombre" title={c.pregunta}>{c.nombre}</span>
+              <span class="rc-barra" aria-hidden="true">
+                {vs.map((v) => (
+                  <i key={v} style={{ width: `${(n[v] / props.length) * 100}%`, background: `var(--${COLOR[v]})` }} />
+                ))}
+              </span>
+              <span class="rc-texto">{vs.map((v) => `${n[v]} ${PL[v][n[v] === 1 ? 0 : 1]}`).join(' · ')}</span>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
 
-function Mapa({ props }: { props: Propuesta[] }) {
+function Mapa({ props, onAbrir }: { props: Propuesta[]; onAbrir: (id: string) => void }) {
   const crit = fase3.value!.criterios;
   return (
-    <div class="scroll-x">
+    <div class="scroll-x solo-escritorio">
       <table class="mapa" style={{ fontSize: '0.82rem' }}>
         <caption class="sr-only">Valoración de cada propuesta en cada criterio</caption>
         <thead>
@@ -77,9 +93,7 @@ function Mapa({ props }: { props: Propuesta[] }) {
                   href={`#/contrasta/${ruta.value.split('/')[2]}`}
                   onClick={(e) => {
                     e.preventDefault();
-                    const destino = document.getElementById(`prop-${p.id}`);
-                    destino?.scrollIntoView({ behavior: sinMovimiento() ? 'auto' : 'smooth' });
-                    destino?.focus({ preventScroll: true });
+                    onAbrir(p.id);
                   }}
                 >
                   {i + 1}. {p.titulo}
@@ -102,8 +116,26 @@ function Mapa({ props }: { props: Propuesta[] }) {
   );
 }
 
-function TarjetaPropuesta({ p, n, partidoId, destacada = false }: { p: Propuesta; n: number; partidoId: string; destacada?: boolean }) {
+function TarjetaPropuesta({
+  p,
+  n,
+  partidoId,
+  destacada = false,
+  abierta,
+  onToggle,
+}: {
+  p: Propuesta;
+  n: number;
+  partidoId: string;
+  destacada?: boolean;
+  abierta: boolean;
+  onToggle: () => void;
+}) {
   const [open, setOpen] = useState(destacada);
+  // Un enlace a esta propuesta abre también su análisis (al cargar la página o navegando dentro de la web).
+  useEffect(() => {
+    if (destacada) setOpen(true);
+  }, [destacada]);
   const crit = fase3.value!.criterios;
   const siglas = partido(partidoId)?.siglas ?? partidoId;
   const cuenta: Record<Valoracion, number> = { favorable: 0, mixta: 0, desfavorable: 0, no_verificable: 0 };
@@ -117,12 +149,29 @@ function TarjetaPropuesta({ p, n, partidoId, destacada = false }: { p: Propuesta
     `${reparto.length > 1 ? `${reparto.slice(0, -1).join(', ')} y ${reparto[reparto.length - 1]}` : reparto[0]}. El análisis, con fuentes:`;
   const lang = p.cita_traduccion ? IDIOMA_CITA[partidoId] : undefined;
   return (
-    <article class="card prop" id={`prop-${p.id}`} tabIndex={-1}>
-      <div class="prop-head">
-        <span class="q-tema">
-          {n} · {p.area}
-        </span>
-        <h3 style={{ margin: '6px 0 8px' }}>{p.titulo}</h3>
+    <article class={`card prop${abierta ? ' abierta' : ''}`} id={`prop-${p.id}`} tabIndex={-1}>
+      <h3 class="prop-h">
+        <button class="prop-fila" aria-expanded={abierta} aria-controls={`prop-${p.id}-cuerpo`} onClick={onToggle}>
+          <span class="q-tema">
+            {n} · {p.area}
+          </span>
+          <span class="prop-titulo">{p.titulo}</span>
+          <span class="tira" aria-hidden="true">
+            {crit.map((c) => {
+              const v = p.evaluacion[c.id]?.valoracion ?? 'no_verificable';
+              return <i key={c.id} title={`${c.nombre}: ${VAL[v]}`} style={{ background: `var(--${COLOR[v]})` }} />;
+            })}
+          </span>
+          <span class="sr-only">
+            {crit.map((c) => `${c.nombre}: ${VAL[p.evaluacion[c.id]?.valoracion ?? 'no_verificable']}`).join('; ')}
+          </span>
+          <span class="flecha" aria-hidden="true">
+            {abierta ? '▾' : '▸'}
+          </span>
+        </button>
+      </h3>
+      {abierta && (
+      <div class="prop-head" id={`prop-${p.id}-cuerpo`}>
         <p style={{ color: 'var(--ink-2)' }}>{p.resumen}</p>
         <p class="quote">
           <span lang={lang}>«{p.cita}»</span> {p.pagina ? <span class="muted">(programa, p. {p.pagina})</span> : null}
@@ -165,7 +214,8 @@ function TarjetaPropuesta({ p, n, partidoId, destacada = false }: { p: Propuesta
           />
         </div>
       </div>
-      {open && (
+      )}
+      {abierta && open && (
         <div class="prop-body">
           {p.beneficiarios && (
             <div class="crit">
@@ -250,14 +300,30 @@ export function Contrasta() {
   const propSel = (ruta.value.split('/')[3] ?? '').split('?')[0];
   const p = partido(sel);
   const datos = sel ? d.partidos[sel] : undefined;
+  // Propuestas desplegadas (lista plegada, estudio de flujo del 15-nov). Un enlace a una propuesta la abre.
+  const [abiertas, setAbiertas] = useState<Set<string>>(() => new Set(propSel ? [propSel] : []));
+  const alternar = (id: string) =>
+    setAbiertas((s) => {
+      const n = new Set(s);
+      if (n.has(id)) n.delete(id);
+      else n.add(id);
+      return n;
+    });
+  const irA = (id: string) => {
+    setAbiertas((s) => new Set(s).add(id));
+    setTimeout(() => {
+      const destino = document.getElementById(`prop-${id}`);
+      destino?.scrollIntoView({ behavior: 'instant', block: 'start' });
+      destino?.focus({ preventScroll: true });
+    }, 30);
+  };
+  useEffect(() => {
+    setAbiertas(new Set(propSel ? [propSel] : []));
+  }, [sel]);
   useEffect(() => {
     if (!propSel) return;
     // Después de que la app lleve el foco al título y suba al principio (cambio de ruta).
-    const t = setTimeout(() => {
-      const destino = document.getElementById(`prop-${propSel}`);
-      destino?.scrollIntoView({ behavior: 'auto', block: 'start' });
-      destino?.focus({ preventScroll: true });
-    }, 120);
+    const t = setTimeout(() => irA(propSel), 120);
     return () => clearTimeout(t);
   }, [propSel, sel]);
   const evaluados = new Set(Object.entries(d.partidos).filter(([, v]) => v.estado === 'evaluado').map(([k]) => k));
@@ -310,7 +376,7 @@ export function Contrasta() {
       )}
 
       <label class="field" style={{ maxWidth: 420 }}>
-        Partido
+        {afines.length > 0 ? 'Otro partido' : 'Partido'}
         <select value={sel} onChange={(ev) => elegir((ev.target as HTMLSelectElement).value)}>
           <option value="">Elige partido…</option>
           {[
@@ -334,7 +400,6 @@ export function Contrasta() {
 
       <div class="stack" style={{ marginTop: 22 }}>
         {!sel && <div class="note">Elige un partido, o llega aquí desde el paso 1 con tus partidos más afines.</div>}
-        {p?.nota_coalicion && <p class="muted" style={{ fontSize: '0.9rem', margin: 0 }}>{p.nota_coalicion}</p>}
         {sel && !p && (
           <div class="note">
             Ese partido no está entre los {(partidos.value ?? []).length} que analizamos. Elige uno en la lista: si votas en una provincia donde se
@@ -359,9 +424,10 @@ export function Contrasta() {
                 <Leyenda />
               </div>
               <Resumen props={datos.propuestas} />
-              <Mapa props={datos.propuestas} />
+              <Mapa props={datos.propuestas} onAbrir={irA} />
+              {p.nota_coalicion && <p class="muted" style={{ fontSize: '0.85rem', marginBottom: 0 }}>{p.nota_coalicion}</p>}
               {datos.base === 'compromisos' ? (
-                <p class="muted" style={{ fontSize: '0.85rem', margin: 0 }}>
+                <p class="muted" style={{ fontSize: '0.85rem', marginBottom: 0 }}>
                   {p.programa.estado === 'publicado' ? (
                     <>
                       <strong>
@@ -378,7 +444,7 @@ export function Contrasta() {
                   <a href="#/metodologia">Cómo se hace</a>.
                 </p>
               ) : (
-                <p class="muted" style={{ fontSize: '0.85rem', margin: 0 }}>
+                <p class="muted" style={{ fontSize: '0.85rem', marginBottom: 0 }}>
                   Propuestas del{' '}
                   <a href={p.programa.url ?? '#'} target="_blank" rel="noopener">
                     programa oficial{p.programa.programa_de ? ` del ${partido(p.programa.programa_de)?.siglas ?? p.programa.programa_de}` : ''}
@@ -411,8 +477,22 @@ export function Contrasta() {
               <strong>¿Tu voto a {p.siglas} tendrá escaño en tu provincia?</strong>
               <span aria-hidden="true">→</span>
             </a>
+            <div class="row between" style={{ margin: '4px 0 -6px' }}>
+              <h2 class="h3" style={{ margin: 0 }}>
+                Sus {datos.propuestas.length} propuestas
+              </h2>
+              {(() => {
+                const todas = [...datos.propuestas, ...(datos.complemento ?? [])].map((x) => x.id);
+                const todasAbiertas = todas.every((id) => abiertas.has(id));
+                return (
+                  <button class="link-btn desplegar-todas" onClick={() => setAbiertas(todasAbiertas ? new Set() : new Set(todas))}>
+                    {todasAbiertas ? 'Plegar todas' : 'Desplegar todas'}
+                  </button>
+                );
+              })()}
+            </div>
             {datos.propuestas.map((x, i) => (
-              <TarjetaPropuesta key={x.id} p={x} n={i + 1} partidoId={sel} destacada={x.id === propSel} />
+              <TarjetaPropuesta key={`${sel}-${x.id}`} p={x} n={i + 1} partidoId={sel} destacada={x.id === propSel} abierta={abiertas.has(x.id)} onToggle={() => alternar(x.id)} />
             ))}
             {(datos.complemento?.length ?? 0) > 0 && (
               <>
@@ -426,7 +506,15 @@ export function Contrasta() {
                   </p>
                 </div>
                 {datos.complemento!.map((x, i) => (
-                  <TarjetaPropuesta key={x.id} p={x} n={datos.propuestas.length + i + 1} partidoId={sel} destacada={x.id === propSel} />
+                  <TarjetaPropuesta
+                    key={`${sel}-${x.id}`}
+                    p={x}
+                    n={datos.propuestas.length + i + 1}
+                    partidoId={sel}
+                    destacada={x.id === propSel}
+                    abierta={abiertas.has(x.id)}
+                    onToggle={() => alternar(x.id)}
+                  />
                 ))}
               </>
             )}
