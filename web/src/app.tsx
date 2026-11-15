@@ -126,7 +126,20 @@ export function App() {
     return null;
   }
   let page;
-  if (errorCarga.value) page = <div class="narrow page"><div class="note">No se pudieron cargar los datos ({errorCarga.value}). Prueba a recargar la página.</div></div>;
+  if (errorCarga.value)
+    page = (
+      <div class="narrow page">
+        <div class="note">
+          <p>
+            No se pudieron cargar los datos. Suele ser un corte momentáneo de la conexión o que justo estábamos publicando una versión nueva.
+          </p>
+          <button class="btn primary" onClick={() => cargarDatos()}>
+            Reintentar
+          </button>
+          <p class="muted" style={{ fontSize: '0.8rem', margin: '10px 0 0' }}>Detalle: {errorCarga.value}</p>
+        </div>
+      </div>
+    );
   else if (r.startsWith('/metodologia')) page = <Metodologia />;
   else if (r.startsWith('/marca')) page = <Marca />;
   else if (r.startsWith('/disenos')) page = <Disenos />;

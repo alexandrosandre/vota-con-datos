@@ -15,21 +15,34 @@ async function j<T>(f: string): Promise<T> {
   return r.json();
 }
 
+const espera = (ms: number) => new Promise((ok) => setTimeout(ok, ms));
+
+/**
+ * Carga los datos. Si falla (corte de red en el móvil, o una visita justo mientras se publica una versión nueva y
+ * GitHub Pages cambia los ficheros), lo reintenta solo dos veces antes de mostrar el aviso.
+ */
 export async function cargarDatos() {
-  try {
-    const [p, f1, f2, f3] = await Promise.all([
-      j<{ partidos: Partido[] }>('partidos.json'),
-      j<DatosFase1>('fase1.json'),
-      j<DatosFase2>('fase2.json'),
-      j<DatosFase3>('fase3.json'),
-    ]);
-    partidos.value = p.partidos;
-    fase1.value = f1;
-    fase2.value = f2;
-    fase3.value = f3;
-  } catch (e) {
-    errorCarga.value = String(e);
+  errorCarga.value = null; // mientras tanto, «Cargando datos…»
+  let ultimo = '';
+  for (const ms of [0, 1500, 4000]) {
+    if (ms) await espera(ms);
+    try {
+      const [p, f1, f2, f3] = await Promise.all([
+        j<{ partidos: Partido[] }>('partidos.json'),
+        j<DatosFase1>('fase1.json'),
+        j<DatosFase2>('fase2.json'),
+        j<DatosFase3>('fase3.json'),
+      ]);
+      partidos.value = p.partidos;
+      fase1.value = f1;
+      fase2.value = f2;
+      fase3.value = f3;
+      return;
+    } catch (e) {
+      ultimo = String(e);
+    }
   }
+  errorCarga.value = ultimo;
 }
 
 export function partido(id: string | null | undefined): Partido | undefined {
