@@ -1,0 +1,127 @@
+{
+ "grupo": "g11",
+ "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13-nov («A qué partido cuenta cada fuente», precedencia)",
+ "fecha": "2026-11-15",
+ "aprobado": true,
+ "revisadas": 7,
+ "resultado": {
+  "ok": 7,
+  "corregido": 0,
+  "rechazado": 0,
+  "celdas_no_tocadas_confirmadas": "ver «celdas_no_tocadas»"
+ },
+ "alcance": "Las 7 posiciones del PSOE de codificacion_g11.json, sacadas de su programa oficial para el 29-N («La fuerza de seguir avanzando. Programa elecciones generales 29 noviembre 2026», 114 pp.), las celdas en las que el codificador conserva la fuente de campaña o deja null, y una búsqueda propia de posiciones que el codificador no hubiera recogido.\n\n(1) Fuente. El sha256 del PDF (e9c83413…9bf5) y el del texto (3243b8c9…6fef) coinciden con partidos.json (entrada «psoe») y con «fuentes». PDF de Word (Acrobat PDFMaker 15), 114 pp., CreationDate 14-nov 23:02 CET y ModDate 15-nov 10:19 CET. La numeración impresa es la del PDF + 1 (la p. 30 del PDF lleva impreso «31»; el índice remite a la numeración impresa); las páginas de las celdas son las del PDF, que es la que muestra el visor.\n\n(2) Lectura. Se extrajo cada una de las 114 páginas con pdftotext -layout -f N -l N (el .txt catalogado solo tiene 112 saltos de página). Se leyeron enteras las páginas de las citas y de los temas de las 30 afirmaciones: introducción (6-11), vivienda (24-33), coste de vida, pensiones y trabajo (35-43), fiscalidad, sanidad y educación (45-55), familias y financiación territorial (56-61), clima y renovables (63-66, 73-74), agricultura (69-70), feminismo (76, 80-83), calidad democrática, migración, seguridad y justicia (88-102) y Europa, exterior y defensa (105-113). En el resto se buscaron palabras clave (precio, alimentos, jubilación, Ceuta, indulto, eólica, marina, frontera, migración, regularización, acuerdo comercial, lengua, concierto, privada, ocupación, alquiler, IVA, transmisiones, referéndum, militar, OTAN, prisión, pena, Sáhara, Marruecos, Mercosur, castellano, concertada).\n\n(3) Citas. Cada fragmento se comprobó con norm() de verify_quotes.py contra el .txt catalogado y contra el texto de la página declarada, y también sin normalizar (solo con los espacios colapsados). Las 7 citas son literales, están en su página (q01: la primera frase en la p. 30 y la segunda en la p. 31) y tienen 60 palabras o menos (31 a 52).\n\n(4) Valor. Se juzgó contra el texto exacto de la afirmación y su contexto (preguntas.json) y con el valor y las notas de los demás partidos en fase1.json y en verificacion_g4/g10 para la misma afirmación.\n\n(5) Precedencia. El programa del PSOE va primero cuando trata la medida al menos tan directamente como la fuente de campaña (criterio de g6 y g10); si no la trata o lo hace de forma menos directa sin contradecirla, se conserva la de campaña. El PSC es otro partido (no ha adoptado este programa): no se toca ninguna celda del PSC.\n\nMecanismo. build_fase1.py lee codificacion_g11.json, con esta verificación como puerta, después de g1-g10 (orden numérico), y g11 pisa solo sus 7 celdas del PSOE. No hay celdas rechazadas, así que codificacion_g11.json no se modifica.",
+ "cambios": [],
+ "correcciones_de_campos": [],
+ "posiciones": [
+  {
+   "partido": "psoe",
+   "pregunta": "q01",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Citas literales: compromiso 62 en la p. 30 y 63 en la p. 31 (apartado «Más ayudas, estabilidad y protección a personas inquilinas»). Congelar «temporalmente» las rentas que superen los índices de referencia en los mercados tensionados, y que el Ministerio publique el mapa de zonas tensionadas que las comunidades «no están realizando»: apoya limitar el alquiler y reduce en parte la dependencia de la comunidad, pero es temporal y solo para las zonas tensionadas, no un precio máximo por ley estatal en toda España. +1, como Compromís, NC-BC (UPC), Ara Més, Podemos y Frente Amplio; BNG (tope por ley con carácter general) y Adelante Andalucía (índice estatal y declaración automática sin depender de cada comunidad) tienen +2. Celda nueva (antes null)."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q04",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal en la p. 47 (compromiso 127, «Senda y responsabilidad fiscal»). La recaudación de «la tributación complementaria de los grandes patrimonios» financiará una prestación nueva y estable (la prestación estatal por crianza, compromiso 192, p. 56, que habla de «la nueva tributación de los grandes patrimonios y rentas del capital»). Supone mantener sin plazo una imposición estatal sobre los grandes patrimonios, complementaria de Patrimonio como el impuesto de 2022, pero no nombra el impuesto vigente, ni su umbral de 3 millones, ni que se haga permanente; «nueva» deja abierto que sea otro instrumento. Por eso +1 y no +2 ni null: mismo criterio que NC-BC (UPC, «reforzar la tributación de las grandes fortunas», +1) y Adelante Andalucía (impuesto nuevo que sustituye a Patrimonio, +1); ERC, BNG, Compromís, Podemos y Frente Amplio (+2) nombran el impuesto y su permanencia. Celda nueva. Ver duda 3."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q06",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal en la p. 41: compromiso 108, el primero del apartado «Trabajo digno». «Completar la reducción de la jornada a 37,5 horas» «sin perder salario» es la afirmación: la cifra, la jornada máxima y el salario; la reducción de la jornada máxima solo puede hacerse por ley (el compromiso 319, p. 80, añade una Ley de Usos del Tiempo de Trabajo con «la reducción del tiempo de trabajo sin pérdida salarial»). El calendario pactado en el diálogo social y los periodos transitorios para pymes regulan la aplicación, no condicionan la medida. Propuesta expresa y prioritaria: +2, como ERC. Incentivar las 35 horas en la negociación colectiva va más allá, sin contradecirla. Celda nueva."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q18",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal en la p. 61 (compromiso 231, «Financiación territorial justa»). El Estado asume 83.000 millones de deuda autonómica, la cifra de la afirmación; «parcial» es la quinta parte de la deuda que dice la afirmación. Propuesta expresa: +2, el mismo valor que la intervención de Arcadi España en el Congreso (23-jul). El programa va primero y es al menos tan directo: cambia solo la fuente."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q21",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal en la p. 81 (compromiso 327, el primero de su apartado). Blindar en la Constitución el derecho a la interrupción voluntaria del embarazo mediante la reforma del artículo 43: es la afirmación, propuesta expresa, +2 (el compromiso 368, p. 89, lo repite). Mismo valor que Sánchez en Tarragona (7-nov); el programa va primero y es más concreto (nombra el artículo). Cambia solo la fuente."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q23",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal en la p. 100, en la introducción del apartado «Impulsar una justicia de calidad». El programa fija como objetivo el «desalojo de viviendas ocupadas en 48 horas», el plazo de la afirmación, pero no propone una ley: el compromiso que lo desarrolla (438, p. 101) es seguir con los juicios rápidos vigentes desde 2025 y dar recursos a los juzgados de guardia. Comparte el resultado por otra vía y sin medida numerada que lo concrete: +1 y no +2. PP, Vox, SALF y UPN (+2) proponen la ley o el desalojo directo con plazo; Junts (+1) reivindica una ley propia sin el plazo en sus palabras. Celda nueva. Ver duda 2."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q24",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal en la p. 99 (compromiso 431); la introducción del apartado (p. 98) anuncia «una nueva Ley de Seguridad Ciudadana que garantice la seguridad y proteja los derechos y las libertades». Una ley que «sustituya» a la LO 4/2015 la deroga entera en sentido formal, pero el programa no lo plantea como derogación y la nueva ley mantiene «un régimen sancionador preciso» para el mismo ámbito, cuando lo que la afirmación (y su contexto) destaca son precisamente las multas por conductas en la calle, en protestas y ante la policía. Es reemplazar la ley por otra de sanciones distinta: a favor con matices, +1, como EH Bildu (+1: «en su integridad o en aquellos elementos»). BNG, ERC, Compromís y Adelante Andalucía (+2) piden derogarla expresamente. Celda nueva. Ver duda 1."
+  }
+ ],
+ "resolucion_dudas_codificador": [
+  {
+   "duda": 1,
+   "tema": "q24: +1 o +2 por una ley que «sustituya» a la LO 4/2015",
+   "resolucion": "+1. Sustituir la ley es derogarla formalmente entera, y es una propuesta expresa. Pero la afirmación es «derogar por completo» una ley que, según su propio contexto, regula multas; el PSOE propone otra ley de seguridad ciudadana con su propio «régimen sancionador preciso», más garantías (reunión y manifestación, identificaciones sin discriminación, cámaras corporales) y no habla de derogar. Quien vota a favor de la afirmación entiende quitar ese régimen de multas, no reformularlo. Es el mismo matiz que dio +1 a EH Bildu. Ante la duda entre dos valores, el más prudente. Queda en «dudas» la alternativa +2."
+  },
+  {
+   "duda": 2,
+   "tema": "q23: +1 o +2 por el objetivo de 48 horas en un texto introductorio",
+   "resolucion": "+1. El texto introductorio es programa y el objetivo de las 48 horas es expreso, así que no es null. Pero la afirmación es «aprobar una ley» con ese plazo, y la medida numerada que lo desarrolla (438) dice cómo: los juicios rápidos que «existen desde 2025» y más recursos para los juzgados de guardia, sin ley nueva ni plazo. Comparte el fin, no la medida: +1. Para +2 el programa tendría que proponer la ley o una medida con el plazo, como PP («Aprobaremos una ley [...] en 48 horas») o SALF."
+  },
+  {
+   "duda": 3,
+   "tema": "q04: +1 o null por la «tributación complementaria de los grandes patrimonios»",
+   "resolucion": "+1. No es una medida distinta: es imposición estatal sobre los grandes patrimonios, complementaria del Impuesto sobre el Patrimonio como el impuesto de 2022, y el programa cuenta con su recaudación para financiar una prestación estable, lo que solo es posible si no decae. Es una posición indirecta pero inequívoca a favor de que esa imposición siga, que es la sustancia de la afirmación. No llega a +2 porque no nombra el impuesto, ni el umbral, ni la permanencia, y la p. 56 la llama «nueva tributación», lo que deja abierto que sea un instrumento distinto. Precedentes: NC-BC (UPC) y Adelante Andalucía, +1 por la misma razón."
+  },
+  {
+   "duda": 4,
+   "tema": "Se conservan las posiciones de campaña en q31 y q26",
+   "resolucion": "Correcto en los dos casos. q31: el programa solo dice «Ampliar la duración de los contratos de arrendamiento» (compromiso 61, p. 30): misma dirección, pero no habla de renovaciones automáticas por cinco años; Sánchez (7-oct) apoya expresamente el alquiler indefinido del decreto de renovación automática. El programa es menos directo y no lo contradice: se mantiene la entrevista (+1); con el programa solo, el valor tampoco pasaría de +1. q26: el programa rechaza el 5 % del PIB de La Haya (p. 88 «sin aceptar el 5 % del PIB en gasto militar»; p. 105 «rechazando el aumento del gasto militar al 5% del PIB») y propone gastar «más eficiente[mente]» en defensa (compromiso 494), pero no habla del 3,5 % ni de 2035. Es coherente con Arcadi España (27-may, «el 2,1 % [...] suficiente», −1), que es más directo sobre el gasto en defensa en sentido estricto. Se mantiene −1."
+  },
+  {
+   "duda": 5,
+   "tema": "q09 en null",
+   "resolucion": "Correcto. El compromiso 138 (p. 49-50) es «Limitar la privatización de la sanidad estableciendo la gestión directa como modalidad preferente», con una Ley de Buen Gobierno del SNS; el 136 habla de «reforzar el carácter público» del SNS. Limitar y preferir la gestión directa no es prohibir que la sanidad pública pague a centros privados ni revertir los conciertos. Mismo criterio que ERC q09 («frenar la privatització», null) y que el rechazo del programa de Compromís para q09 en verificacion_g10."
+  }
+ ],
+ "celdas_no_tocadas": [
+  "PSOE, campaña conservada y no contradicha por el programa: q05 (−1; el programa solo convierte el mínimo por descendiente en crédito reembolsable y exonera las rentas más bajas, compromiso 134, p. 49, nada sobre dos tipos o un mínimo de 22.000 €), q13 (−1; el compromiso 86, p. 34, refuerza la sanción de la discriminación en el acceso a la vivienda: misma dirección), q22 (−1; no menciona el Ministerio de Igualdad salvo para citar su macroencuesta, p. 82), q26 (−1) y q31 (+1) (duda 4), q29 (−1; compromisos 267, p. 69, reciprocidad en importaciones agrarias, y 470, p. 110, comercio birregional con América Latina: nada de frenar Mercosur), q33 (−1; compromisos 200, p. 57, y 391, p. 94, apoyo a las comunidades y acogida de los menores que llegan solos, sin hablar del reparto), q34 (−1; no menciona el Sáhara ni Marruecos) y q35 (−1; no menciona la prisión permanente revisable).",
+  "PSOE en null, confirmado: q03 (TU CASA y avales, no rebaja de IVA o ITP), q08 (compromiso 103, coeficientes por penosidad y jubilación anticipada involuntaria: medida distinta), q09 (duda 5), q11 (no menciona la concertada), q12 (compromiso 385, lenguas cooficiales en las instituciones comunes, no en la enseñanza), q15 (la única «regularización» es la de jueces y fiscales sustitutos, p. 100), q16 (no hay referendos), q17 (compromiso 229, sistema común de financiación del CPFF; nada del concierto), q19 (compromiso 234, renovables en general, sin eólica marina), q20 (sin objetivo de emisiones para 2030), q25 (Ley de Integridad Pública y Agencia Anticorrupción, sin indultos), q27 (compromiso 495, vigilancia marítima; nada de Ceuta), q30 (compromiso 94, p. 38: vigilancia de la CNMC y traslado de rebajas del IVA, no precio máximo; mismo criterio que Compromís) y q32 (compromiso 87, un SMI estatal por encima del 60 % del salario medio: medida distinta, como Compromís).",
+  "PSC: ninguna celda cambia. No ha adoptado el programa del PSOE (nota de cabecera del codificador) y la regla del editor trata al PSC como partido propio."
+ ],
+ "posiciones_no_recogidas": "No se encontró ninguna afirmación en la que el programa tome una posición clara que el codificador no haya recogido. Las más cercanas son las de la duda 4 y q31 (compromiso 61), q26 (5 % del PIB), q09 (138), q30 (94), q32 (87) y q19 (234), todas medidas relacionadas pero distintas o menos directas que la fuente conservada.",
+ "recuento": {
+  "antes": {
+   "psoe": 11
+  },
+  "despues": {
+   "psoe": 16
+  },
+  "cambios_de_valor": [],
+  "celdas_nuevas": [
+   "psoe q01 q04 q06 q23 q24"
+  ],
+  "solo_fuente": [
+   "psoe q18 q21"
+  ]
+ },
+ "dudas": [
+  "psoe/q24 (+1): alternativa +2 si el editor considera que una ley que «sustituya» por completo a la LO 4/2015 equivale a «derogarla por completo», aunque mantenga un régimen sancionador propio. Con +2 se trataría igual que a BNG, ERC, Compromís y Adelante Andalucía, cuyos programas tampoco dicen qué regulación quedaría después.",
+  "psoe/q23 (+1): el PSOE queda a favor de la afirmación por un objetivo de la introducción («desalojo de viviendas ocupadas en 48 horas») que su medida numerada no recoge. Alternativa +2 si el editor da más peso al plazo expreso que a la ausencia de una ley nueva.",
+  "Páginas: las del PDF, que no coinciden con la numeración impresa (PDF + 1). Quien busque «p. 47» por el número impreso caerá una página antes; en el visor del PDF la página es la correcta."
+ ]
+}
