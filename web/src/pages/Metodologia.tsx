@@ -131,7 +131,8 @@ export function Metodologia() {
             </li>
             <li>
               <strong>Respondes en 5 niveles</strong>, de «Muy en contra» a «Muy a favor». También puedes pulsar <em>Saltar</em>: ese tema no
-              cuenta. Si un tema te importa mucho o poco, puedes marcarlo para que cuente el doble o la mitad.
+              cuenta. Al terminar, puedes marcar los temas que más te importan (vivienda, impuestos, inmigración…): sus afirmaciones cuentan
+              el doble.
             </li>
             <li>
               <strong>Posición de cada partido.</strong> Sale de su programa oficial del 29-N, con cita y página (nunca de programas
@@ -145,10 +146,10 @@ export function Metodologia() {
             <li>
               <strong>Afinidad.</strong> En cada tema comparamos tu respuesta con la del partido: cuanto más cerca, más afinidad. Un 100 %
               significa que coincidís en todo; un 0 %, que estáis en extremos opuestos en todo. Solo cuentan los temas en los que los dos tenéis
-              posición, y los que marcaste como importantes pesan más. Te indicamos en cuántas de tus respuestas conocemos la posición de cada
+              posición, y los de los temas que marcaste como importantes cuentan el doble. Te indicamos en cuántas de tus respuestas conocemos la posición de cada
               partido.
               <Tecnico>
-                afinidad = 1 − Σ w·|tú − partido| / Σ w·4, donde w es el peso que diste al tema (×0,5, ×1 o ×2) y las respuestas van de −2 a
+                afinidad = 1 − Σ w·|tú − partido| / Σ w·4, donde w es 2 en los temas que marcaste como importantes y 1 en el resto, y las respuestas van de −2 a
                 +2. Es una distancia de Manhattan normalizada.
               </Tecnico>
             </li>

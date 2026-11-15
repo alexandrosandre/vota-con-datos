@@ -504,3 +504,8 @@ html[data-tema="campana"] .lp-columnas { top: 64px; }
   html[data-tema="campana"] .likert { gap: 4px; margin-top: 8px; }
   html[data-tema="campana"] .likert button { padding: 7px 6px; }
 }
+/* Paso 1: tarjetas de temas en el estilo de campaña */
+html[data-tema="campana"] .tema-card { border-radius: 0; border-width: 2px; border-color: var(--line-2); }
+html[data-tema="campana"] .tema-nombre { font-stretch: 88%; font-weight: 800; font-size: 1.02rem; }
+html[data-tema="campana"] .tema-check { border-radius: 0; border-color: var(--line-2); }
+html[data-tema="campana"] .tema-card.on { border-color: var(--c); background: color-mix(in srgb, var(--c) 22%, var(--card)); }

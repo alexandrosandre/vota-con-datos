@@ -3,6 +3,7 @@ import { fase1 } from './data';
 import { estado } from './store';
 import { afinidad, vigentes } from './engine/match';
 import type { Valor } from './engine/match';
+import { conPesoPorTema } from './temasImportantes';
 
 /** Mínimo de respuestas para calcular la afinidad (lo mismo que pide el paso 1). */
 export const MIN_RESPUESTAS = 5;
@@ -23,7 +24,8 @@ export const paso1 = computed(() => {
     posiciones[p] = {};
     for (const [q, pos] of Object.entries(qs)) posiciones[p][q] = pos.valor;
   }
-  const evaluables = afinidad(estado.value.respuestas, posiciones, ids).filter((r) => r.afinidad !== null);
+  const resp = conPesoPorTema(estado.value.respuestas, d.preguntas, estado.value.temasImportantes);
+  const evaluables = afinidad(resp, posiciones, ids).filter((r) => r.afinidad !== null);
   return {
     /** Partidos de más a menos afinidad (el orden del paso 1). */
     orden: evaluables.map((r) => r.partido),

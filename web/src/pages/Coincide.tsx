@@ -7,6 +7,7 @@ import { CabeceraPaso, Siguiente } from '../brand';
 import type { Pregunta } from '../types';
 import { Compartir, enlace } from '../compartir';
 import { paso1 } from '../paso1';
+import { conPesoPorTema, GRUPOS, grupoDe } from '../temasImportantes';
 
 const ESCALA: { v: Valor; t: string }[] = [
   { v: -2, t: 'Muy en contra' },
@@ -72,7 +73,7 @@ function Intro({ n, onStart, hechas }: { n: number; onStart: () => void; hechas:
       </p>
       <ul style={{ margin: 0, paddingLeft: 20, color: 'var(--ink-2)' }}>
         <li>Responde en cinco niveles, de <em>Muy en contra</em> a <em>Muy a favor</em>. Pulsa <em>Saltar</em> si no lo sabes, no quieres contestar o no te importa: lo que saltas no cuenta.</li>
-        <li>Si un tema te importa mucho (o poco), márcalo: pesa el doble (o la mitad).</li>
+        <li>Al terminar, podrás marcar los temas que más te importan: sus afirmaciones contarán el doble.</li>
         <li>Unos 10 minutos. Tus respuestas no salen de tu navegador.</li>
       </ul>
       <div class="row">
@@ -92,17 +93,12 @@ function Intro({ n, onStart, hechas }: { n: number; onStart: () => void; hechas:
 function Tarjeta({ q, i, n, onNext, onPrev }: { q: Pregunta; i: number; n: number; onNext: () => void; onPrev: () => void }) {
   const r = estado.value.respuestas[q.id];
   const set = (valor: Valor | null, ev?: MouseEvent) => {
-    actualizar({ respuestas: { ...estado.value.respuestas, [q.id]: { valor, peso: r?.peso ?? 1 } } });
+    actualizar({ respuestas: { ...estado.value.respuestas, [q.id]: { valor } } });
     // Con ratón o dedo (detail > 0), se suelta el foco: si no, el botón de la misma posición en la afirmación
     // siguiente se vería con el contorno, como si ya estuviera marcado. Con teclado (detail = 0) el foco se queda.
     if (ev && ev.detail > 0) (ev.currentTarget as HTMLElement | null)?.blur();
     setTimeout(onNext, 140);
   };
-  // Marcar la importancia antes de responder no cuenta como respuesta (ni como «saltar»): se guarda aparte.
-  const setPeso = (peso: 0.5 | 1 | 2) =>
-    actualizar({
-      respuestas: { ...estado.value.respuestas, [q.id]: r && !r.sinResponder ? { ...r, peso } : { valor: null, peso, sinResponder: true } },
-    });
   // Al empezar, el foco va al texto de la primera afirmación. Al pasar a la siguiente, el foco se queda en los
   // botones de respuesta (sin pulsar Tab de más en cada una) y la nueva afirmación se anuncia por la región viva.
   const texto = useRef<HTMLParagraphElement>(null);
@@ -176,14 +172,6 @@ function Tarjeta({ q, i, n, onNext, onPrev }: { q: Pregunta; i: number; n: numbe
             )}
           </details>
         )}
-        <div class="row importancia" role="group" aria-label="Importancia de este tema (márcalo antes de responder)">
-          <button class={`star ${(r?.peso ?? 1) === 2 ? 'on' : ''}`} aria-pressed={(r?.peso ?? 1) === 2} onClick={() => setPeso((r?.peso ?? 1) === 2 ? 1 : 2)}>
-            {(r?.peso ?? 1) === 2 ? '★' : '☆'} Este tema me importa mucho
-          </button>
-          <button class={`link-btn poco ${(r?.peso ?? 1) === 0.5 ? 'on' : ''}`} aria-pressed={(r?.peso ?? 1) === 0.5} onClick={() => setPeso((r?.peso ?? 1) === 0.5 ? 1 : 0.5)}>
-            {(r?.peso ?? 1) === 0.5 ? 'Me importa poco ✓' : 'Me importa poco'}
-          </button>
-        </div>
         <div class="likert" role="group" aria-label="Tu respuesta">
           {ESCALA.map((e) => (
             <button key={e.v} class={r?.valor === e.v ? 'on' : ''} onClick={(ev) => set(e.v, ev)} aria-pressed={r?.valor === e.v}>
@@ -203,7 +191,7 @@ function Tarjeta({ q, i, n, onNext, onPrev }: { q: Pregunta; i: number; n: numbe
         </div>
       </div>
       {hechas >= 10 ? (
-        <a class="btn" href="#/coincide/resultados" style={{ marginTop: 14 }}>
+        <a class="btn" href="#/coincide/temas" style={{ marginTop: 14 }}>
           Ver mis resultados ya ({hechas} respondidas; cuantas más, más fiable)
         </a>
       ) : (
@@ -288,6 +276,57 @@ function Detalle({ partidoId }: { partidoId: string }) {
   );
 }
 
+/** «¿Qué temas te importan más?» al terminar el cuestionario: dos niveles (marcado o no); los marcados cuentan el doble. */
+function TemasImportantes() {
+  const d = fase1.value!;
+  const e = estado.value;
+  const marcados = e.temasImportantes ?? [];
+  const cuantas = (g: (typeof GRUPOS)[number]) => d.preguntas.filter((q) => grupoDe(q.tema)?.id === g.id).length;
+  const alternar = (id: string) =>
+    actualizar({ temasImportantes: marcados.includes(id) ? marcados.filter((x) => x !== id) : [...marcados, id] });
+  return (
+    <div class="stack temas-imp">
+      <div>
+        <h2 class="h3" style={{ margin: '0 0 4px' }}>
+          ¿Qué temas te importan más?
+        </h2>
+        <p class="muted" style={{ margin: 0 }}>
+          Marca los que más pesan en tu voto: sus afirmaciones contarán el doble en tu afinidad. Puedes no marcar ninguno.
+        </p>
+      </div>
+      <div class="temas-rejilla" role="group" aria-label="Temas que te importan más">
+        {GRUPOS.filter((g) => cuantas(g) > 0).map((g) => {
+          const on = marcados.includes(g.id);
+          return (
+            <button key={g.id} class={`tema-card${on ? ' on' : ''}`} aria-pressed={on} onClick={() => alternar(g.id)}>
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d={g.icono} />
+              </svg>
+              <span class="tema-nombre">{g.nombre}</span>
+              <span class="tema-n">
+                {cuantas(g)} {cuantas(g) === 1 ? 'afirmación' : 'afirmaciones'}
+              </span>
+              <span class="tema-check" aria-hidden="true">
+                {on ? '✓' : ''}
+              </span>
+            </button>
+          );
+        })}
+      </div>
+      <div class="row" style={{ alignItems: 'center' }}>
+        <a class="btn primary" href="#/coincide/resultados">
+          {marcados.length ? `Ver mis resultados (${marcados.length} ${marcados.length === 1 ? 'tema cuenta' : 'temas cuentan'} el doble) →` : 'Ver mis resultados →'}
+        </a>
+        {marcados.length > 0 && (
+          <button class="link-btn" onClick={() => actualizar({ temasImportantes: [] })}>
+            Quitar todos
+          </button>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function Resultados() {
   const d = fase1.value!;
   const e = estado.value;
@@ -302,7 +341,7 @@ function Resultados() {
   const ids = d.preguntas.map((q) => q.id);
   // Partidos de los que no conocemos ninguna posición: van en un aviso aparte, no en la lista.
   const sinPosiciones = (partidos.value ?? []).filter((p) => !Object.values(d.posiciones[p.id] ?? {}).some((x) => x.valor !== null));
-  const res = afinidad(e.respuestas, posiciones, ids).filter((r) => !sinPosiciones.some((p) => p.id === r.partido));
+  const res = afinidad(conPesoPorTema(e.respuestas, d.preguntas, e.temasImportantes), posiciones, ids).filter((r) => !sinPosiciones.some((p) => p.id === r.partido));
   const respondidas = Object.values(vigentes(e.respuestas, ids)).filter((r) => r.valor !== null).length;
   const [abierto, setAbierto] = useState<string | null>(null);
   const evaluables = res.filter((r) => r.afinidad !== null);
@@ -355,6 +394,17 @@ function Resultados() {
           </p>
         </section>
       )}
+      <p class="temas-marcados">
+        {(e.temasImportantes ?? []).length > 0 ? (
+          <>
+            <span class="muted">Cuentan el doble:</span>{' '}
+            {GRUPOS.filter((g) => e.temasImportantes!.includes(g.id)).map((g) => g.nombre).join(' · ')}
+          </>
+        ) : (
+          <span class="muted">No has marcado temas importantes: todas tus respuestas cuentan igual.</span>
+        )}{' '}
+        <a href="#/coincide/temas">{(e.temasImportantes ?? []).length > 0 ? 'Cambiar' : 'Elegir temas'}</a>
+      </p>
       <div class="note">
         <strong>No es una recomendación de voto: es un espejo de tus respuestas</strong>, comparadas con la posición de cada partido, con
         cita y fuente.
@@ -468,6 +518,7 @@ function Resultados() {
 export function Coincide() {
   const d = fase1.value;
   const sub = ruta.value.includes('resultados');
+  const temas = ruta.value.startsWith('/coincide/temas');
   const [i, setI] = useState<number | null>(null);
   // Solo cuentan las afirmaciones vigentes; se continúa por la primera sin responder (o saltar).
   const contestada = (id: string) => !!estado.value.respuestas[id] && !estado.value.respuestas[id].sinResponder;
@@ -485,6 +536,8 @@ export function Coincide() {
         <EstadoProgramas />
       </div>
     );
+  } else if (temas) {
+    body = <TemasImportantes />;
   } else if (sub) {
     body = <Resultados />;
   } else if (i === null) {
@@ -497,19 +550,19 @@ export function Coincide() {
         i={i}
         n={n}
         onPrev={() => setI(Math.max(0, i - 1))}
-        onNext={() => (i + 1 < n ? setI(i + 1) : ir('/coincide/resultados'))}
+        onNext={() => (i + 1 < n ? setI(i + 1) : ir('/coincide/temas'))}
       />
     );
   }
   return (
     <div class="narrow page p1">
-      <CabeceraPaso id="coincide" compacta={!sub && i !== null}>
+      <CabeceraPaso id="coincide" compacta={(!sub && !temas && i !== null) || temas}>
         {sub ? 'Tus resultados, con la fuente de cada posición.' : 'Propuestas reales de esta campaña, sin siglas. Al final, con quién coincides y en qué.'}
       </CabeceraPaso>
       {body}
       {/* En los resultados, el recuadro de arriba ya lleva a los pasos 2 y 3 con este resultado. */}
       {/* Ni en el cuestionario (invitaría a dejarlo) ni en los resultados (ya llevan a los pasos 2 y 3). */}
-      {!sub && i === null && <Siguiente desde="coincide" />}
+      {!sub && !temas && i === null && <Siguiente desde="coincide" />}
       {sub && !paso1.value && <Siguiente desde="coincide" />}
     </div>
   );

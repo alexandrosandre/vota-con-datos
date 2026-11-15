@@ -16,6 +16,8 @@ export interface Estado {
   rankingOrigen: 'fase1' | 'manual' | 'ninguno' | null;
   circ: string | null;
   partido: string | null;
+  /** Temas que te importan más (ids de GRUPOS, temasImportantes.ts): sus afirmaciones cuentan el doble. */
+  temasImportantes?: string[];
   /** '' = el escenario por defecto (la media de encuestas, o 2023 durante la veda). */
   escenario: string;
   v?: number;

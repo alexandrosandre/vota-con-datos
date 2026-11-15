@@ -6,7 +6,8 @@
  *
  * Afinidad (distancia de Manhattan normalizada, como smartvote / Mendez 2017):
  *   afinidad = 1 − Σ w·|u − p| / Σ w·4      sobre los ítems con respuesta Y posición.
- * w = peso de importancia elegido por el usuario (0,5 · 1 · 2; por defecto 1).
+ * w = peso de importancia: 2 en los temas que la persona marca como importantes al terminar, 1 en el resto
+ *     (temasImportantes.ts; antes se elegía afirmación a afirmación).
  * Las preguntas que el usuario salta no cuentan. Las que el partido no aborda tampoco,
  * pero se informa de la "cobertura" para no premiar a quien calla.
  */
