@@ -65,7 +65,8 @@ ETIQUETAS = {
 }
 IGNORADAS = {"UPN", "Otros partidos", "En blanco", "Otro", "Otro + Blanco", "Cup",
              "PP–UPN (Navarra)", "Otros", "Otros*", "Otras candidaturas",
-             "Otros+Blanco", "Regionales**", "CHA", "Més per Mallorca", "Teruel Existe", "Otros y blanco"}
+             "Otros+Blanco", "Regionales**", "CHA", "Més per Mallorca", "Teruel Existe", "Otros y blanco",
+             "SY"}  # SY: Soria ¡Ya! (Sigma Dos 15-nov, 0,1 %), como Teruel Existe: conserva su voto de 2023
 SWING_DE = {"upn": "pp"}
 # Partidos de ámbito autonómico cuya cifra nacional de la encuesta se reparte por provincias según su
 # voto en las últimas autonómicas (fichero de resultados, siglas en ese fichero). Se usa en todas las
@@ -80,13 +81,14 @@ PERFIL_AUTONOMICAS = {"adelante_andalucia": ("resultados/autonomicas_andalucia_2
 # la etiqueta "Frente Amplio" cubre solo Frente Amplio y UPC.
 BLOQUES = {"bloque_sumar": ["frente_amplio", "ara_mes_fa", "compromis", "upc"], "bloque_fa": ["frente_amplio", "ara_mes_fa", "upc"],
            "bloque_psoe": ["psoe", "psc"]}  # las encuestas dan PSOE incluyendo al PSC  # coalición UPN-PP sigue el swing del PP
-ESCENARIOS_ENCUESTA = ["cis-2026-11", "sigmados-2026-11-13", "gad3-2026-11", "40db-2026-11"]
+ESCENARIOS_ENCUESTA = ["cis-2026-11", "sigmados-2026-11-15", "gad3-2026-11", "40db-2026-11"]
 NOMBRES = {
     "cis-2026-10": "Encuesta CIS · barómetro de octubre (14-oct)",
     "cis-2026-11": "Encuesta CIS · macroencuesta preelectoral (12-nov)",
     "sigmados-2026-11-02": "Encuesta Sigma Dos · El Mundo (1-nov)",
     "sigmados-2026-11-08": "Encuesta Sigma Dos · El Mundo (8-nov)",
     "sigmados-2026-11-13": "Encuesta Sigma Dos · El Mundo (13-nov)",
+    "sigmados-2026-11-15": "Encuesta Sigma Dos · El Mundo (15-nov)",
     "gad3-2026-10": "Encuesta GAD3 · ABC (12-oct)",
     "gad3-2026-11": "Encuesta GAD3 · ABC (9-nov)",
     "40db-2026-10": "Encuesta 40dB · El País-SER (9-oct)",

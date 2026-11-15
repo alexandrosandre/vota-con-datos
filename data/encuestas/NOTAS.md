@@ -89,6 +89,16 @@ Desgloses territoriales, de encuestas anteriores de Sigma Dos:
 - El gráfico de evolución rotula la entrega como "12-13 nov", pero la ficha técnica y la SER dicen del 10 al 13. Se usa la ficha.
 - El escenario propio de 40dB sigue usando `40db-2026-11`: el tracking solo da escaños (no porcentaje) para ERC, Junts, Bildu, PNV, AA, BNG y CC. Es el mismo criterio que con Sigma Dos.
 
+### 40dB, tracking diario (`40db-2026-11-15`, publicado 15-11)
+- Tercera entrega: campo del 10 al 14 de noviembre, 2.000 entrevistas online, ±2,2 %. Sustituye a `40db-2026-11-14` en la media. PP 31,4 (128; 123–134), PSOE 29,9 (119; 117–123), Vox 18,3 (62; 59–65), Frente Amplio 3,7 (5; 5–6), Podemos 1,3 (0; 0–1).
+- El PDF (`Informe_tracking_dia03.pdf`, otra vez con mayúscula) estaba en el servidor desde el 14-11 a las 14:16; cuenta como publicado el 15-11, con los artículos de El País y la SER.
+- El gráfico de evolución rotula la entrega como "13-14 nov"; se usa la ficha (10 a 14). El escenario propio de 40dB sigue usando `40db-2026-11`.
+
+### Sigma Dos, tracking diario (`sigmados-2026-11-15`, publicado 15-11)
+- Tercera entrega (campo 3–13 nov, n=5.370). El Mundo la publicó el 15-11 a la 01:10, no la tarde del 14-11 como las anteriores. Sustituye a `sigmados-2026-11-13` en la media y como escenario propio de Sigma Dos (su infografía vuelve a dar el % de todos los partidos con escaño).
+- Esta vez la infografía separa Frente Amplio (5,6 %, 9–10) de Front Valencià (1,1 %, 3–5) y UPC (0,5 %, 1). Se guardan como filas separadas, como en el CIS 3584 y el tracking de 40dB. Podemos (1,4 %) sale solo de la serie Datawrapper UgEA1 v13.
+- Aparece "SY" (Soria ¡Ya!, 0,1 %, 0–1 escaños). Va en `IGNORADAS` como Teruel Existe: con un 0,1 % redondeado el swing no es fiable, así que conserva su voto de 2023.
+
 ### SW Demoscopia (barómetro n.º 9, no añadido)
 - El agregador cita el barómetro n.º 9 (datos al 12-11, 7.500 entrevistas) como un PDF en el CDN de LinkedIn. Está guardado en `sources/encuestas/swdemoscopia/`, pero no se ha añadido: ni la empresa ni La Séptima lo publican y no consta quién lo subió. `swdemoscopia-2026-11-11` sigue fuera de la media.
 
