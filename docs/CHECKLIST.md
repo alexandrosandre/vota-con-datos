@@ -23,8 +23,14 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
   revisión independiente, auditoría de coherencia y recodificación del paso 1; sus compromisos ya
   analizados que no estén en el programa pasan a complemento (hasta 4, `base: complemento`, nueva
   revisión).
-  - [ ] PSOE — presenta su programa el 15-nov a las 12:00 en Alcorcón (agenda oficial de psoe.es). Tarea programada
-    a las 13:43 para buscarlo y pasarlo por todo el proceso.
+  - [x] PSOE — **publicado el 15-nov** (presentado en Alcorcón a las 12:00; psoe.es lo enlaza desde las 15:29;
+    descargado por el editor porque psoe.es exige superar un control anti-bots, sha256 comprobado contra psoe.es).
+    Hecho el 15-nov: paso 1 recodificado (g11, verificado: PSOE 11→16 posiciones; el PSC no lo ha adoptado,
+    volver a mirar tras su acto del 15-nov); 12 propuestas del programa (revisión independiente, 81 correcciones,
+    ninguna valoración cambia); sus compromisos anteriores están todos en el programa, así que no hay complemento
+    (revisión aprobada; el más discutible, la financiación autonómica, pierde el plazo de 2027); auditoría de
+    coherencia (`data/fase3/coherencia_2026-11-15.md`: 95 correcciones de texto, cifras y fuentes en 15 partidos,
+    ninguna valoración cambia).
   - [x] Vox — **publicado el 12-nov** (PDF en votasentidocomun.es, la web de campaña enlazada desde
     voxespana.es). Hecho el 13-nov: 12 propuestas del programa + 2 de complemento (revisión independiente
     aprobada, 91 correcciones), auditoría de coherencia (`data/fase3/coherencia_2026-11-13.md`: 26 cambios de
@@ -42,7 +48,7 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
 - [ ] **3. [Yo] Revisar la selección de afirmaciones del paso 1** para cubrir mejor a los 18 partidos:
   análisis, codificación y verificación independiente; decido yo, sin pasar por ti. **Hecha el 13-nov**
   (`data/fase1/revision_afirmaciones_2026-11-13/integracion.md`): se retiran q02, q07, q10, q14 y q28, entran
-  q31–q35 y la media sube de 6,6 a 7,7 posiciones por partido. **Repetir tras el programa del PSOE (15-nov).**
+  q31–q35 y la media sube de 6,6 a 7,7 posiciones por partido. **Repetir tras el programa del PSOE (15-nov): en curso.**
 - [ ] **4. [Externo → Yo] Listas del BOE tras los recursos** ante el TS (art. 44.4 LOREG, 13–19-nov):
   volver a descargar y validar el BOE después. Pendiente de confirmar oficialmente el recurso de Drago
   Canarias contra UPC (solo hay prensa).
