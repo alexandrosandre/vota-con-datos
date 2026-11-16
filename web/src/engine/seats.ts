@@ -70,6 +70,41 @@ export function votosParaSiguienteEscano(votos: number[], escanos: number, valid
   return hi;
 }
 
+/** Candidatura que pierde un escaño cuando `i` suma `x` votos nuevos (null si ninguna o si x no es finito). */
+export function rivalDelEscano(votos: number[], escanos: number, validos: number, i: number, x: number, umbral = UMBRAL_LEGAL): number | null {
+  if (!isFinite(x)) return null;
+  const antes = dhondt(votos, escanos, validos, umbral);
+  const v = votos.slice();
+  v[i] += x;
+  const despues = dhondt(v, escanos, validos + x, umbral);
+  const j = antes.findIndex((s, k) => k !== i && despues[k] < s);
+  return j >= 0 ? j : null;
+}
+
+/**
+ * Votos que la candidatura `i` necesitaría quitarle a `rival` (que los pierde: los válidos no cambian) para obtener
+ * un escaño más. Se busca sobre el reparto completo: igualar los dos cocientes no basta, porque al bajar el rival
+ * el escaño puede pasar a un tercero antes de llegar a `i`.
+ */
+export function votosDesdeRival(votos: number[], escanos: number, validos: number, i: number, rival: number, umbral = UMBRAL_LEGAL): number {
+  const objetivo = dhondt(votos, escanos, validos, umbral)[i] + 1;
+  const consigue = (y: number) => {
+    const v = votos.slice();
+    v[i] += y;
+    v[rival] -= y;
+    return dhondt(v, escanos, validos, umbral)[i] >= objetivo;
+  };
+  let lo = 0;
+  let hi = Math.floor(votos[rival]);
+  if (!consigue(hi)) return Infinity;
+  while (hi - lo > 1) {
+    const mid = Math.floor((lo + hi) / 2);
+    if (consigue(mid)) hi = mid;
+    else lo = mid;
+  }
+  return hi;
+}
+
 /** PRNG determinista (mulberry32) para que los resultados sean reproducibles. */
 export function rng(seed: number): () => number {
   let a = seed >>> 0;
@@ -131,6 +166,10 @@ export interface ResultadoSim {
   votosPorEscano: number | null;
   /** Votos adicionales para el primer/siguiente escaño en el escenario central. */
   votosParaSiguiente: number;
+  /** Candidatura que perdería ese escaño (id), si se sabe. */
+  rivalSiguiente: string | null;
+  /** Votos que bastarían si salieran de esa candidatura rival (Infinity si no basta con todos los suyos). */
+  votosDesdeRival: number;
 }
 
 /**
@@ -139,7 +178,7 @@ export interface ResultadoSim {
  * 0,08 con encuestas, 0,15 con la base de 2023; docs/research/calibracion_incertidumbre.md).
  */
 
-export function simular(esc: EscenarioCirc, opts: { k: number; n?: number; semilla?: string } ): ResultadoSim[] {
+export function simular(esc: EscenarioCirc, opts: { k: number; n?: number; semilla?: string }): ResultadoSim[] {
   const n = opts.n ?? 4000;
   const r = rng(hashSeed(opts.semilla ?? 'vcd'));
   const cs = esc.contendientes;
@@ -175,17 +214,23 @@ export function simular(esc: EscenarioCirc, opts: { k: number; n?: number; semil
 
   const votosC = cs.map((c, i) => (elig[i] ? c.cuota * esc.validos : 0));
   const repC = dhondt(votosC, esc.escanos, esc.validos);
-  return cs.map((c, i) => ({
-    id: c.id,
-    cuota: c.cuota,
-    pEscano: conEscano[i] / n,
-    escanosMedia: sumaEsc[i] / n,
-    distribucion: dist[i].map((x) => x / n),
-    escanosCentral: repC[i],
-    votosCentral: Math.round(votosC[i]),
-    votosPorEscano: repC[i] > 0 ? Math.round(votosC[i] / repC[i]) : null,
-    votosParaSiguiente: elig[i] ? votosParaSiguienteEscano(votosC, esc.escanos, esc.validos, i) : Infinity,
-  }));
+  return cs.map((c, i) => {
+    const x = elig[i] ? votosParaSiguienteEscano(votosC, esc.escanos, esc.validos, i) : Infinity;
+    const rival = rivalDelEscano(votosC, esc.escanos, esc.validos, i, x);
+    return {
+      id: c.id,
+      cuota: c.cuota,
+      pEscano: conEscano[i] / n,
+      escanosMedia: sumaEsc[i] / n,
+      distribucion: dist[i].map((x) => x / n),
+      escanosCentral: repC[i],
+      votosCentral: Math.round(votosC[i]),
+      votosPorEscano: repC[i] > 0 ? Math.round(votosC[i] / repC[i]) : null,
+      votosParaSiguiente: x,
+      rivalSiguiente: rival === null ? null : cs[rival].id,
+      votosDesdeRival: rival === null ? Infinity : votosDesdeRival(votosC, esc.escanos, esc.validos, i, rival),
+    };
+  });
 }
 
 export type Veredicto = 'casi_seguro' | 'probable' | 'en_disputa' | 'improbable' | 'muy_improbable';

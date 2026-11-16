@@ -41,7 +41,7 @@ function calcular(c: Circunscripcion, esc: Escenario): Fila[] {
     else
       filas.push({
         id: cand.id, cuota: 0, pEscano: NaN, escanosMedia: NaN, distribucion: [], escanosCentral: 0, votosCentral: 0,
-        votosPorEscano: null, votosParaSiguiente: Infinity, cand, sinBase: true,
+        votosPorEscano: null, votosParaSiguiente: Infinity, rivalSiguiente: null, votosDesdeRival: Infinity, cand, sinBase: true,
       });
   }
   filas.sort((a, b) => (a.sinBase ? 1 : 0) - (b.sinBase ? 1 : 0) || b.cuota - a.cuota);
@@ -62,6 +62,21 @@ function conArticulo(pid: string) {
   const p = partido(pid);
   return `${p?.articulo ? `${p.articulo} ` : ''}${p?.siglas ?? pid}`;
 }
+
+/** Partido de la web cuya papeleta es esta con su mismo nombre (VOX → Vox), no una coalición ni una marca territorial (PSN-PSOE). */
+function mismoPartido(c: CandidaturaCirc) {
+  const p = c.partido ? partido(c.partido) : undefined;
+  return p && !esCoalicion(c) && p.siglas.toUpperCase() === c.siglas.toUpperCase() ? p : undefined;
+}
+
+/** Nombre de una candidatura: con su artículo si es un partido de la web («el PP», «Vox»), o sus siglas del BOE. */
+function nombreCand(c: CandidaturaCirc) {
+  return mismoPartido(c) ? conArticulo(c.partido!) : c.siglas;
+}
+
+/** «a» / «de» delante de un nombre, con contracción («al PP», «del PP»). */
+const a_ = (n: string) => (n.startsWith('el ') ? `al ${n.slice(3)}` : `a ${n}`);
+const de_ = (n: string) => (n.startsWith('el ') ? `del ${n.slice(3)}` : `de ${n}`);
 
 /** «A», «A y B», «A, B y C». */
 function enumera(xs: string[]) {
@@ -456,7 +471,20 @@ export function Cuenta() {
                   </div>
                   <div class="kpi">
                     <b>{isFinite(filaElegida.votosParaSiguiente) ? fmt.n(filaElegida.votosParaSiguiente) : '—'}</b>
-                    <span>votos más que le harían falta para {filaElegida.escanosCentral > 0 ? 'otro escaño' : 'su primer escaño'}</span>
+                    <span>
+                      votos más le harían falta para {filaElegida.escanosCentral > 0 ? 'otro escaño' : 'su primer escaño'}
+                      {(() => {
+                        const rc = filas.find((f) => f.cand.id === filaElegida.rivalSiguiente)?.cand;
+                        if (!rc || !isFinite(filaElegida.votosParaSiguiente)) return null;
+                        const n = nombreCand(rc);
+                        return (
+                          <>
+                            , que se lo quitaría {a_(n)}.
+                            {isFinite(filaElegida.votosDesdeRival) && <> Si esos votos salieran {de_(n)}, bastarían {fmt.n(filaElegida.votosDesdeRival)}.</>}
+                          </>
+                        );
+                      })()}
+                    </span>
                   </div>
                   {coste && (
                     <div class="kpi">

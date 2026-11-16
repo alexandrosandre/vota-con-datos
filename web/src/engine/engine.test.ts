@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { dhondt, simular, votosParaSiguienteEscano } from './seats';
+import { dhondt, rivalDelEscano, simular, votosDesdeRival, votosParaSiguienteEscano, type Contendiente, type EscenarioCirc } from './seats';
 import { afinidad } from './match';
 
 describe('dhondt', () => {
@@ -34,6 +34,49 @@ describe('votosParaSiguienteEscano', () => {
     expect(dhondt(con, 8, 480000 + x)[4]).toBe(1);
     con[4] -= 1;
     expect(dhondt(con, 8, 480000 + x - 1)[4]).toBe(0);
+  });
+});
+
+describe('rival del escaño y votos desde el rival (Toledo, 6 escaños)', () => {
+  // Cuotas de data fase2.json del 16-nov para Toledo (ine 45), en el orden de las candidaturas del BOE, sin las que no
+  // tienen base en el escenario; «_otros» no puede obtener escaño. Cifras de referencia comprobadas aparte en Python.
+  const toledo = (c: Record<string, number>): EscenarioCirc => ({
+    escanos: 6,
+    validos: 387200,
+    blanco: c._blanco,
+    contendientes: [
+      ...['psoe', 'fo', 'salf', 'vox', 'fe-de-las-jons', 'pp', 'podemos', 'fa'].filter((id) => id in c).map((id) => ({ id, cuota: c[id] })),
+      { id: '_otros', cuota: c._otros, elegible: false },
+    ] as Contendiente[],
+  });
+  const media = { psoe: 0.26986217148381314, fo: 0.0024720898407490995, salf: 0.01651435838211873, vox: 0.2947251505662503, 'fe-de-las-jons': 0.0007052357819802001, pp: 0.3494223395706095, podemos: 0.01807366112403173, fa: 0.03445946713722559, _otros: 0.007022240989254804, _blanco: 0.0067432851239669425 };
+  const cis = { psoe: 0.3405082551371801, fo: 0.002531137362857979, salf: 0.014233865736532004, vox: 0.290371682316008, 'fe-de-las-jons': 0.0007220808111300427, pp: 0.29252233338089906, podemos: 0.011429065089640086, fa: 0.03374832312170802, _otros: 0.0071899719200777925, _blanco: 0.0067432851239669425 };
+  const g2023 = { psoe: 0.32559917355371903, fo: 0.002543904958677686, vox: 0.19639462809917355, 'fe-de-las-jons': 0.0007257231404958678, pp: 0.3784426652892562, podemos: 0.034673525099556936, fa: 0.04765085506573232, _otros: 0.007226239669421488, _blanco: 0.0067432851239669425 };
+  const psoe = (c: Record<string, number>) => simular(toledo(c), { k: 0.08, n: 200, semilla: 't' }).find((f) => f.id === 'psoe')!;
+
+  it('media: 66.686 votos nuevos, se lo quitaría a Vox; desde Vox bastan 30.806 (no los 26.674 de igualar cocientes)', () => {
+    const f = psoe(media);
+    expect([f.votosParaSiguiente, f.rivalSiguiente, f.votosDesdeRival]).toEqual([66686, 'vox', 30806]);
+  });
+  it('media: desde el PP harían falta 39.382', () => {
+    const t = toledo(media);
+    const v = t.contendientes.map((c) => (c.elegible === false ? 0 : c.cuota * t.validos));
+    const ids = t.contendientes.map((c) => c.id);
+    expect(votosDesdeRival(v, 6, t.validos, ids.indexOf('psoe'), ids.indexOf('pp'))).toBe(39382);
+  });
+  it('CIS: 36.804 nuevos, a Vox; 14.722 desde Vox', () => {
+    const f = psoe(cis);
+    expect([f.votosParaSiguiente, f.rivalSiguiente, f.votosDesdeRival]).toEqual([36804, 'vox', 14722]);
+  });
+  it('2023: 20.461 nuevos, al PP; 10.231 desde el PP', () => {
+    const f = psoe(g2023);
+    expect([f.votosParaSiguiente, f.rivalSiguiente, f.votosDesdeRival]).toEqual([20461, 'pp', 10231]);
+  });
+  it('rivalDelEscano: quien pierde un escaño con esos votos nuevos', () => {
+    const t = toledo(media);
+    const v = t.contendientes.map((c) => (c.elegible === false ? 0 : c.cuota * t.validos));
+    expect(rivalDelEscano(v, 6, t.validos, 0, 66686)).toBe(3); // vox
+    expect(rivalDelEscano(v, 6, t.validos, 0, Infinity)).toBeNull();
   });
 });
 

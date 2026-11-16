@@ -256,7 +256,10 @@ export function Metodologia() {
             <li>
               <strong>Coste de un escaño:</strong> cuántos votos le cuesta cada escaño a la candidatura (sus votos divididos entre sus escaños),
               en tu provincia y, si en 2023 se presentó igual (no en coalición), en toda España en 2023; y cuántos votos más le harían falta
-              para el primer escaño o el siguiente.
+              para el primer escaño o el siguiente, a qué candidatura se lo quitaría y cuántos bastarían si salieran de ella. Por ejemplo,
+              para un tercer escaño, sus votos divididos entre 3 tienen que superar el último cociente con escaño de otra candidatura. Cada
+              voto nuevo sube ese cociente solo un tercio, así que la diferencia entre los dos cocientes se multiplica por 3. Si los votos
+              salen de la candidatura que pierde el escaño, hacen falta menos.
             </li>
             <li>
               <strong>Alternativa:</strong> solo si has hecho el paso 1. Si tu opción tiene menos de un 50 % de probabilidad de escaño en tu
