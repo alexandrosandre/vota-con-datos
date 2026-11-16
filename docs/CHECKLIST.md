@@ -106,6 +106,12 @@ en Navarra dentro de Geroa Bai; la afinidad del paso 3 se recalcula (salía «1 
 una coalición cuentan para cada firmante y el PSC cuenta a Sánchez (decisiones del editor); vista previa al
 compartir en redes con nombre del sitio e icono PNG.
 
+**Hecho el 16-nov** (estudio Neutral frente a Saltar; decisiones del editor): «Saltar» pasa a «No lo sé», a
+todo lo ancho bajo la escala; «Neutral» sigue contando. «Coincidís» solo si estáis del mismo lado (un Neutral es
+«A medias»), aviso si la mayoría de respuestas son Neutral, y los grupos del resultado hablan de «temas en común»
+con tus respuestas. Se mantiene la regla de cobertura por persona. Los partidos nunca se codifican como Neutral:
+una postura ambigua sigue siendo «sin posición conocida».
+
 ## C. Después del 29-N
 
 - [ ] **8. [Yo] Congelar la web** con un aviso de «elección celebrada» y borrar la tarea programada.
