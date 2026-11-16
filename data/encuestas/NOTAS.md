@@ -99,6 +99,12 @@ Desgloses territoriales, de encuestas anteriores de Sigma Dos:
 - Esta vez la infografía separa Frente Amplio (5,6 %, 9–10) de Front Valencià (1,1 %, 3–5) y UPC (0,5 %, 1). Se guardan como filas separadas, como en el CIS 3584 y el tracking de 40dB. Podemos (1,4 %) sale solo de la serie Datawrapper UgEA1 v13.
 - Aparece "SY" (Soria ¡Ya!, 0,1 %, 0–1 escaños). Va en `IGNORADAS` como Teruel Existe: con un 0,1 % redondeado el swing no es fiable, así que conserva su voto de 2023.
 
+### Sigma Dos, tracking diario (`sigmados-2026-11-16`, publicado 16-11)
+- Cuarta entrega, publicada el 16-11 a las 20:00. Sustituye a `sigmados-2026-11-15` en la media y como escenario propio de Sigma Dos. PP 30,8 (123–129), PSOE 26,1 (107–113), Vox 19,8 (63–68), Frente Amplio 6,7 (12–15), Podemos 1,4 (0).
+- Cambia la muestra: ya no suma la encuesta base del 3 al 10-11. Son solo las 750 entrevistas diarias de los días 11 a 14 (n=3.002, ±2,0 %). La ficha dice "11 al 15 de noviembre", pero su desglose de la muestra y el texto dicen del 11 al 14; se guarda 11–14.
+- Frente Amplio vuelve a darse como bloque (6,7 %, con Front Valencià y UPC), como el 13-11. El texto da la marca nacional (5 %, 8–9 escaños), pero no el porcentaje de FV ni de UPC; la marca nacional va en `componentes` y no se usa en la proyección.
+- Vox: la infografía dice 63–68 y el texto 63–69 (la suma PP+Vox del texto, 186–198, cuadra con 69). Se guarda la infografía.
+
 ### SW Demoscopia (barómetro n.º 9, no añadido)
 - El agregador cita el barómetro n.º 9 (datos al 12-11, 7.500 entrevistas) como un PDF en el CDN de LinkedIn. Está guardado en `sources/encuestas/swdemoscopia/`, pero no se ha añadido: ni la empresa ni La Séptima lo publican y no consta quién lo subió. `swdemoscopia-2026-11-11` sigue fuera de la media.
 
