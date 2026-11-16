@@ -1,6 +1,6 @@
 # Checklist · vota con datos (29-N)
 
-Actualizado: 15-nov-2026. Solo lo pendiente; lo terminado está en el historial de git. La web ya está
+Actualizado: 16-nov-2026. Solo lo pendiente; lo terminado está en el historial de git. La web ya está
 en línea; aquí «bloquea» significa **no difundirla ni anunciarla** (o, si ya circula, que deja de ser
 correcta o legal) hasta que esté hecho.
 
@@ -105,6 +105,15 @@ despliegue conserva las 6 versiones anteriores (prueba: 139 visitas simuladas du
 en Navarra dentro de Geroa Bai; la afinidad del paso 3 se recalcula (salía «1 %»); documentos conjuntos de
 una coalición cuentan para cada firmante y el PSC cuenta a Sánchez (decisiones del editor); vista previa al
 compartir en redes con nombre del sitio e icono PNG.
+
+**Revisión del 16-nov, 09:43:** encuestas — tracking de 40dB día 4 (sustituye al día 3 en la media; El País sirve ahora
+los PDF con nombre en minúscula y se corrige el enlace del día 3); Sigma Dos día 4 y GAD3 aún sin publicar (de GAD3 solo
+hay una estimación del Senado). 16 compromisos nuevos con revisión independiente (Teruel Existe 6, PP 5, Frente Amplio 4,
+Compromís 1; total 224); no se añaden 3 del PSOE porque salen de la presentación de su programa, que se analiza en el
+paso 2. Programas: Frente Amplio abre frenteamplio.info/programa/ con 8 medidas y «PDF disponible próximamente»; como el
+manifiesto de la UPC, se guarda como documento programático y no como programa hasta que publique el completo. Los
+otros 6 siguen sin programa (junts.cat ya responde). Paso 1 sin posiciones nuevas (la entrevista de Sánchez con Jordi
+Wild no da posición sobre q27). BOE sin cambios; dominio y HTTPS correctos.
 
 **Hecho el 16-nov** (estudio Neutral frente a Saltar; decisiones del editor): «Saltar» pasa a «No lo sé», a
 todo lo ancho bajo la escala; «Neutral» sigue contando. «Coincidís» solo si estáis del mismo lado (un Neutral es
