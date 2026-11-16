@@ -1,0 +1,800 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-16",
+ "alcance": "12 prioridades × 8 criterios y campos «titulo», «resumen» y «beneficiarios» de data/programas/frente_amplio/evaluacion.json, y las justificaciones de las 12 prioridades de extraccion.json, contra el programa «Un programa como una casa» (151 págs., SHA-256 df6e4d96…1f36f04, comprobado) y las fuentes citadas (prompt 4). Cada página se extrajo por separado con pdftotext -layout -f N -l N (página del PDF). Las 12 citas son literales y cada tramo separado por «[...]» está en la página indicada; verify_quotes: 872 citas, 0 no encontradas. Los fragmentos del programa entrecomillados en los textos y en las justificaciones están en las páginas que se indican, salvo uno corregido (justificación de frente_amplio-04, p. 45), y los de la página oficial del programa, en su copia del 16-nov (web_2026-11-16/medidas.txt). Se abrieron las 195 URL distintas de la evaluación (todas responden; las de Europe PMC devuelven 403 a peticiones automáticas y su contenido se comprobó por la API de Europe PMC; revista.seg-social.es y airef.es, por petición directa; eSTADISS, en el navegador) y se comprobó cada cifra, fecha, artículo y sentencia en su fuente. Se rehicieron todos los cálculos propios: prestación por crianza (7.770.866 menores a 1-10-2026 × 200 € × 12 = 18.650 M€; 5.820 y 12.340 M€ los dos primeros años), horas de luz gratis (perfil 2.0TD de 2026, 14,63 % del consumo de 13 a 16 h, 365 ficheros horarios de OMIE de 2025: 332 M€ de energía; 744,6 M€ en total sin tratar los festivos nacionales como valle y 735 M€ tratándolos, corregido), SMI (1.184 € × 1,018 = 1.205,3 € frente a 1.221 €, correcto), Tasa Zucman frente al coste de la prestación (9.300 / 18.650 = 49,9 %), 1 % del PIB, 0,7 % de la RNB, Plan Veo, EPF y jornada; todos correctos salvo dos (3,6 → 3,4 veces en frente_amplio-01; 745 → 735 M€ en frente_amplio-11) y un redondeo (2.650 → 2.660 M€). Se buscó la fuente primaria de todo dato tomado de la prensa: el SMI de 2027 (memoria del proyecto de real decreto, Ministerio de Trabajo, 4-11-2026), las votaciones francesas de la Tasa Zucman (escrutinios de la Asamblea Nacional y del Senado), la rentabilidad del alquiler (cuadro 1.5 del Banco de España), la oferta australiana de horas solares (Australian Energy Regulator, Energy Made Easy), la derogación del gravamen energético (BOE), la jornada pactada (Estadística de Convenios Colectivos), la votación de la ley de jornada (Diario de Sesiones), y las pensiones por debajo del SMI y los complementos a mínimos (Seguridad Social, eSTADISS y nómina de octubre de 2026). Las fuentes de prensa que tenían fuente oficial se sustituyen o quedan como secundarias.",
+ "seleccion": "Las 12 prioridades coinciden con extraccion.json y representan el programa: el documento no numera ni llama «estrella» a ninguna medida, y su resumen son las «seis grandes transformaciones» de la introducción (pp. 7-8), que se citan literalmente en las justificaciones; cada transformación tiene al menos una prioridad (vivienda, 3; trabajo y pensiones, 3; bienestar, 2; fiscalidad, 2; transición ecológica, 1; democracia y política exterior, 1), y 6 de las 8 medidas que destaca la página oficial del programa están entre las 12 (comprobado en la copia del 16-nov). El criterio es el de los demás partidos: medidas que el propio documento sitúa en su resumen y repite o desarrolla con subtítulo propio, con la página oficial como corroboración, como el apartado «prioridad» del PSOE o los ejes de Compromís. Las elecciones dentro de cada transformación son justificables y no favorecen una lectura: frente_amplio-03 (impuesto del 10 %, en la página oficial y no en la introducción) se prefiere al tope del alquiler del 25 % (en la introducción y no en la página oficial), y la nota de extraccion.json enumera lo que queda fuera. Se corrigió una cita no literal en la justificación de frente_amplio-04. Ver dudas sobre las transformaciones 5 y 6.",
+ "igual_estandar": "Se compararon las valoraciones con las equivalentes ya aprobadas (data/programas/*/evaluacion.json y compromisos/evaluacion.json). Decisiones sobre las desviaciones que señala el analista: (1) frente_amplio-01, concreción «favorable» frente a «mixta» en psoe-02, compromis-03 y cc-05 (1 % del PIB): se mantiene. La rúbrica pide qué, a quién, cuantía y plazo, y aquí están los cuatro (instrumentos, alquiler público con un máximo de 600 € por 80 m² y del 25 % de la renta, 1 % del PIB y 1,5 millones de viviendas en 12 años); a psoe-02 le faltaban el número de viviendas y el reparto entre gasto y préstamos, y a compromis-03 el inicio, el número de viviendas y la protección permanente, que este programa sí da (p. 10). Solo comparte con compromis-03 no decir si el 1 % incluye el gasto autonómico y municipal, que el texto señala. (2) frente_amplio-04, concreción «favorable» frente a «mixta» en psoe-07 (prestación por crianza): se mantiene; psoe-07 no fijaba cuantía, plazo ni coste, y aquí hay cuantía por menor (200 € al mes), destinatarios (todos los menores de 18 años), calendario en tres fases e instrumento, como en salf-04 (mínimo exento, «favorable»), donde el coste total tampoco lo da el programa. (3) frente_amplio-07, encaje legal «mixta» frente a «favorable» en erc-12: se mantiene por una diferencia de hecho que el texto dice: erc-12 solo hace permanente un impuesto avalado por el Tribunal Constitucional, y aquí se añaden la Tasa Zucman, la cláusula de cinco años tras el traslado, limitada por los convenios de doble imposición (art. 96 CE), y un tipo máximo de al menos el 6,5 % sin límite conjunto con el IRPF para la Tasa Zucman. (4) frente_amplio-11, encaje legal «desfavorable»: se mantiene. La Directiva 2024/1711 no modificó el art. 5 de la Directiva 2019/944 (solo añadió el art. 66 bis y el considerando 28): obligar a todas las grandes comercializadoras a dar energía gratis a todos los hogares, sin compensación y prohibiendo recuperarlo en otras horas, es una intervención en el precio por debajo del coste fuera de los supuestos del art. 5 (hogares vulnerables, o transitoria por encima del coste) y del art. 66 bis (crisis declarada, hasta el 80 % de la mediana del consumo y con compensación); mismo listón que ara_mes_fa-01, cc-06 y podemos-02 («desfavorable» por chocar con el derecho de la UE). (5) frente_amplio-11, financiación «desfavorable» → «mixta»: la única financiación «desfavorable» aprobada, salf-03, lo es porque una ley vigente destina a otros fines la fuente que usa el programa. Aquí la fuente de los peajes es un gravamen que el programa restablecería, con recaudación oficial (1.164 M€ en 2024) muy superior a su coste (167 M€), y el doble destino es una incoherencia interna cuyo alcance depende de si la ayuda de 1.000 € «por hogar durante dos años» es anual, lo que el programa no dice; además el texto afirmaba que el gravamen «decayó», cuando el programa propone restablecerlo. Queda la rúbrica «mixta»: coste estimable y financiación explicada solo para los peajes. (6) frente_amplio-05, evidencia «favorable»: se mantiene. psoe-06 era «mixta» porque ningún estudio documentaba la desaparición de las listas de espera, el objetivo declarado; aquí el objetivo es la cobertura, y hay evidencia causal de que la cobertura pública aumenta el uso y mejora la audición en países de renta alta (revisión Cochrane de ensayos de EE. UU. y Europa; Medicaid en EE. UU., diferencias en diferencias), como la de podemos-12 («favorable», con Dinamarca y Quebec). El estudio de gafas es de China y el texto dice ahora de dónde procede la evidencia y que no hay evaluación en España. En la segunda pasada se planteó «mixta» por la procedencia de los estudios (EE. UU. y China) y se mantiene «favorable»: la rúbrica reserva «mixta» a la evidencia que va en ambos sentidos o depende del diseño, y aquí la evidencia causal sobre cobertura → uso y sobre la eficacia de los audífonos va en un solo sentido (frente_amplio-01 es «mixta» por el desplazamiento de la oferta, no por ser de EE. UU.). (7) frente_amplio-08, financiación «mixta» frente a «no_verificable» en psoe-04: se mantiene por una diferencia de hecho: el PSOE no definía el salario medio de referencia y el Frente Amplio usa el salario medio neto, el de la comisión asesora del Ministerio de Trabajo, lo que permite estimar el suelo (para 2027, una subida del 2,7 %, según la memoria del 4-11-2026). (8) frente_amplio-03, financiación «no_verificable» frente a la de psoe-03, y frente_amplio-10, largo plazo «desfavorable», coinciden con los equivalentes aprobados (psoe-03, compromis-04; psoe-05 y compromis-07 en largo plazo con la misma cifra de la AIReF) y las cifras que los sostienen son correctas. Los textos no contienen adjetivos de valor; se reformularon como inferencias tres frases que lo eran (frente_amplio-05 y -10) y una que no tenía respaldo (frente_amplio-06).",
+ "recuento_inicial": {
+  "favorable": 11,
+  "mixta": 78,
+  "desfavorable": 3,
+  "no_verificable": 4
+ },
+ "recuento_final": {
+  "favorable": 11,
+  "mixta": 79,
+  "desfavorable": 2,
+  "no_verificable": 4
+ },
+ "recuento_nota": "Recuento de las 12 propuestas × 8 criterios. Una valoración cambia (frente_amplio-11, financiación, «desfavorable» → «mixta»); las demás correcciones son de texto, cifras, atribución y fuentes. Una segunda pasada (16-nov, tarde) añadió 16 correcciones de texto y atribución (dos de ellas en justificaciones de extraccion.json) y 3 fuentes primarias nuevas (19 entradas de «cambios»), sin cambios de valoración.",
+ "cambios": [
+  {
+   "propuesta": "frente_amplio-01",
+   "criterio": "financiacion",
+   "antes": "alrededor del 6 % del total, y, sin cuantificarla, la recaudación del tipo del 100 % sobre las herencias de más de 10 millones por heredero (p. 46).",
+   "despues": "alrededor del 6 % del total, y a «doblar el gasto actual en políticas sociales de vivienda», sin cuantificarla, la recaudación del tipo del 100 % sobre las herencias de más de 10 millones por heredero (p. 46).",
+   "motivo": "Fidelidad al programa: la p. 46 no destina la recaudación de las herencias a vivienda pública, sino a «doblar el gasto actual en políticas sociales de vivienda» (comprobado en el PDF).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-01",
+   "criterio": "antecedentes",
+   "antes": "14.371 calificaciones definitivas de vivienda protegida, en venta y en alquiler, el mejor dato en 13 años",
+   "despues": "14.371 calificaciones definitivas de viviendas protegidas, el mejor dato en 13 años",
+   "motivo": "Sin respaldo: el preámbulo del Real Decreto 326/2026 da «14.371 calificaciones definitivas de viviendas protegidas» sin desglosar venta y alquiler.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-01",
+   "criterio": "internacional",
+   "antes": "exigiría unos 5,4 millones de viviendas públicas, 3,6 veces la meta de 1,5 millones",
+   "despues": "exigiría unos 5,4 millones de viviendas públicas en total, unos 5,1 millones más que las actuales, 3,4 veces la meta de 1,5 millones",
+   "motivo": "Cálculo: comparaba un total (20 % de 27 millones = 5,4 millones) con unas incorporaciones (1,5 millones). Descontadas las 318.000 viviendas públicas actuales (Plan Estatal), harían falta unos 5,1 millones más: (5,4 − 0,318) / 1,5 = 3,4.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-02",
+   "criterio": "titulo",
+   "antes": "Ley de expropiación de viviendas a empresas con más de 1.000, 700 y 50 viviendas,",
+   "despues": "Ley de expropiación de viviendas a propietarios corporativos con más de 1.000, 700 y 50 inmuebles,",
+   "motivo": "Fidelidad a la cita (p. 10): la tercera fase afecta a «empresas propietarias de más de 50 inmuebles», no viviendas, y las dos primeras a «entidades» y «tenedores».",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-02",
+   "criterio": "legal",
+   "antes": "Las expropiaciones autonómicas del uso de viviendas de Andalucía (2013) y Cataluña (2019) se anularon por invadir competencias estatales o por aprobarse por decreto-ley (SSTC 93/2015 y 16/2021)",
+   "despues": "La expropiación temporal del uso de viviendas de Andalucía (2013) y la expropiación de viviendas vacías y la cesión obligatoria de su uso de Cataluña (2019) se anularon por invadir competencias estatales o por exceder los límites del decreto-ley (SSTC 93/2015 y 16/2021)",
+   "motivo": "Inexacto: la STC 16/2021 anuló la expropiación de la propiedad de la vivienda del Decreto-ley catalán 17/2019 (art. 6.3; la redacción anterior «solo permitía la expropiación temporal del uso») y la cesión obligatoria del uso (art. 5.5), no una expropiación del uso.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-02",
+   "criterio": "legal",
+   "antes": "el programa no dice cómo se fijaría la indemnización, y pagar por debajo del valor de mercado no ha sido examinado por el Tribunal Constitucional (el TEDH lo admite en reformas de justicia social, con un amplio margen para los Estados).",
+   "despues": "el programa no dice cómo se fijaría la indemnización, y el Tribunal Constitucional exige que corresponda «al valor real de los bienes y derechos expropiados», con un «proporcional equilibrio» entre ambos, aunque el legislador puede fijar distintos métodos de valoración (STC 166/1986, FJ 13); el TEDH admite pagar menos del valor de mercado en reformas de justicia social, con un amplio margen para los Estados.",
+   "motivo": "Error: el Tribunal Constitucional sí se ha pronunciado sobre la indemnización expropiatoria (STC 166/1986, FJ 13: «concede el derecho a percibir la contraprestación económica que corresponda al valor real de los bienes y derechos expropiados»; «un proporcional equilibrio para cuya obtención el legislador puede fijar distintas modalidades de valoración»). La valoración «mixta» se mantiene.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-02",
+   "criterio": "legal",
+   "antes": "La parte de la Sareb encaja en el marco vigente: el Consejo de Ministros acordó el 1 de julio de 2025 transmitir sus activos a Sepes, transformada en CASA 47 en diciembre de 2025.",
+   "despues": "La parte de la Sareb se apoya en el marco vigente: el Consejo de Ministros acordó el 1 de julio de 2025 transmitir gratuitamente a Sepes, transformada en CASA 47 en diciembre de 2025, los inmuebles de la Sareb aptos para vivienda asequible (Orden PJC/784/2025); el programa extiende la adscripción a todas sus fincas urbanas y suelos residenciales.",
+   "motivo": "Inexacto: el acuerdo (Orden PJC/784/2025, BOE) encarga la «transmisión lucrativa» solo de «los inmuebles identificados de SAREB» «aptos para tal fin», no de todos sus activos.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-02",
+   "criterio": "financiacion",
+   "antes": "La adscripción de la Sareb supone renunciar a vender unos activos con un valor de mercado estimado por el Gobierno en unos 5.900 millones de euros.",
+   "despues": "Los inmuebles de la Sareb seleccionados en 2025, con un valor de mercado estimado en unos 5.000 millones de euros en el acuerdo publicado en el BOE (5.900 millones según La Moncloa), ya se transmiten gratuitamente a CASA 47; el programa ampliaría la adscripción a todas sus fincas urbanas y suelos residenciales, cuyo valor adicional no se ha localizado.",
+   "motivo": "Atribución y cifra: la transmisión gratuita de esos inmuebles es la política vigente desde el acuerdo de 1-7-2025, no un coste adicional del programa; el acuerdo publicado (Orden PJC/784/2025) da un valor «en torno a 5.000 millones de euros» y la rueda de prensa del Consejo de Ministros, «5.900 millones».",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-02",
+   "criterio": "beneficiarios (campo)",
+   "antes": "y en los contribuyentes, que pagarían el justiprecio y renunciarían a vender los activos de la Sareb (unos 5.900 millones de euros de valor de mercado según el Gobierno).",
+   "despues": "y en los contribuyentes, que pagarían el justiprecio; los inmuebles de la Sareb aptos para vivienda asequible (unos 5.000-5.900 millones de euros de valor de mercado según el Gobierno) ya se transmiten gratis a CASA 47 desde el acuerdo de julio de 2025, y el programa añadiría el resto.",
+   "motivo": "Mismo motivo que en «financiacion» (Orden PJC/784/2025).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-02",
+   "criterio": "antecedentes",
+   "antes": "La parte de la Sareb ya está en marcha: el Gobierno acordó en julio de 2025 transmitir sus activos a Sepes, hoy CASA 47, que da por recuperados",
+   "despues": "La parte de la Sareb ya está en marcha para los inmuebles aptos para vivienda asequible: el Gobierno acordó en julio de 2025 transmitirlos gratuitamente a Sepes, hoy CASA 47, que da por recuperados",
+   "motivo": "Inexacto: el acuerdo de 1-7-2025 (Orden PJC/784/2025) se limita a los inmuebles de la Sareb «aptos para tal fin».",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-02",
+   "criterio": "evidencia",
+   "antes": "La evidencia disponible se refiere a construir vivienda pública nueva, que en EE. UU.",
+   "despues": "La evidencia disponible se refiere a la vivienda pública o subvencionada, que en EE. UU.",
+   "motivo": "Fidelidad a la fuente: Sinai y Waldfogel miden la vivienda pública y la subvencionada (incluidos los vales), no solo la construcción nueva.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-03",
+   "criterio": "legal",
+   "antes": "un 10 % del valor supera la rentabilidad bruta del alquiler, del 3,0 % a finales de 2025 según los indicadores del Banco de España citados por la prensa:",
+   "despues": "un 10 % del valor supera la rentabilidad bruta del alquiler, del 3,1 % en 2025 y del 2,8 % en el tercer trimestre de 2026 según los indicadores del mercado inmobiliario del Banco de España:",
+   "motivo": "Fuente primaria en lugar de prensa: cuadro 1.5 del Banco de España (serie D_TKR60REA_VIV_IPV, rentabilidad bruta por alquiler, acumulado de doce meses): 3,05 % en diciembre de 2025 y 2,84 % en septiembre de 2026 (comprobado en el CSV). El 3,0 % de Vozpópuli era de una versión anterior de la serie.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-03",
+   "criterio": "largo_plazo",
+   "antes": "con una rentabilidad bruta del 3 %,",
+   "despues": "con una rentabilidad bruta en torno al 3 % (Banco de España),",
+   "motivo": "Misma corrección de fuente: el dato del Banco de España (3,1 % en 2025, 2,8 % en el tercer trimestre de 2026) sustituye a Vozpópuli, cuyo título atribuía además al Banco de España un déficit de 700.000 viviendas sin documento primario localizado.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "todas",
+   "criterio": "título de fuente (1 veces)",
+   "antes": "Jofre-Monseny, Martínez-Mazza y Segú, Effectiveness and supply effects of high-coverage rent control policies (Universitat de Barcelona)",
+   "despues": "Jofre-Monseny, Martínez-Mazza y Segú (2023), Effectiveness and supply effects of high-coverage rent control policies, Regional Science and Urban Economics 101 (registro de la Universitat de Barcelona)",
+   "motivo": "Referencia completa: el trabajo está publicado en Regional Science and Urban Economics 101 (2023), según el propio registro de la UB.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-04",
+   "criterio": "legal",
+   "antes": "se aprobaron al amparo de las competencias estatales sobre hacienda general y Seguridad Social (art. 149.1.14.ª y 17.ª CE)",
+   "despues": "se aprobaron al amparo, entre otras, de las competencias estatales sobre hacienda general y Seguridad Social (art. 149.1.14.ª y 17.ª CE)",
+   "motivo": "Incompleto: la Ley 19/2021 se dicta al amparo del art. 149.1.1.ª, 13.ª, 14.ª, 17.ª y 18.ª CE (disposición final sobre título competencial).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-04",
+   "criterio": "financiacion",
+   "antes": "sin descontar el complemento para la infancia, que cuesta unos 950 M€ al año,",
+   "despues": "sin descontar el complemento para la infancia, que cuesta unos 950 M€ al año con los 637.748 hogares y los 124 € mensuales por hogar de octubre de 2026,",
+   "motivo": "Método: los 950 M€ son una anualización propia del dato de un mes de la Seguridad Social (637.748 × 124 € × 12 = 949 M€); se dice de dónde salen.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-04",
+   "criterio": "largo_plazo",
+   "antes": "el impuesto de grandes fortunas pasó de 623 M€ en 2023 a casi 19 M€ en 2025, y la movilidad de los grandes patrimonios hace perder",
+   "despues": "el impuesto de grandes fortunas pasó de 623 M€ en 2023 a casi 19 M€ en 2025, sobre todo porque varias comunidades recuperaron su Impuesto sobre el Patrimonio, cuya cuota se descuenta (AEAT), y la movilidad de los grandes patrimonios hacia Madrid, que no lo aplicaba, hace perder",
+   "motivo": "Contexto que la fuente da: la AEAT atribuye la caída a «los cambios normativos que afectaron al Impuesto sobre el Patrimonio en algunas CC. AA.», no a una fuga de patrimonios; y la pérdida del 5 % que estiman Agrawal, Foremny y Martínez-Toledano es por la movilidad entre comunidades hacia Madrid.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "todas",
+   "criterio": "URL de fuente (1 veces)",
+   "antes": "https://www.boe.es/buscar/doc.php?id=BOE-A-2007-19745",
+   "despues": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-19745",
+   "motivo": "La URL del texto original de la Ley 35/2007 no prueba su supresión desde el 1-1-2011; el texto consolidado sí («Se deroga, con efectos desde el 1 de enero de 2011... por el Real Decreto-Ley 8/2010»).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-05",
+   "criterio": "resumen",
+   "antes": "hoy limitado a los menores de 16 años,",
+   "despues": "hoy limitado a los menores de hasta 16 años incluidos,",
+   "motivo": "Exactitud: el Real Decreto 853/2026 (art. 10.1) cubre a «personas menores de edad hasta los dieciséis años incluidos».",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-05",
+   "criterio": "financiacion",
+   "antes": "el objetivo del programa es menor (la mitad de la población y una cartera sobre todo preventiva, sin prótesis ni ortodoncia)",
+   "despues": "el objetivo del programa es menor: la mitad de la población y, si se mantiene la cartera actual, una atención sobre todo preventiva, sin prótesis ni ortodoncia (Orden SND/606/2024); el estudio se hizo a instancias de una cadena de clínicas dentales",
+   "motivo": "Atribución: el programa no dice qué tratamientos cubriría; las exclusiones de prótesis y ortodoncia son las de la cartera actual (Orden SND/606/2024, apartado 9.7). Se añade la financiación declarada del estudio (contrato con Llorente y Cuenca «a instancias de Vitaldent»), relevante para su fiabilidad.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-05",
+   "criterio": "financiacion",
+   "antes": "El Plan Veo cuesta 70,2 M€ al año para los menores de 16 años,",
+   "despues": "El Plan Veo tiene un máximo de 70,2 M€ al año en 2026 y 2027 para los menores de hasta 16 años,",
+   "motivo": "Exactitud: el art. 12.2 del Real Decreto 853/2026 fija un «importe máximo subvencionable» de 70.225.000 € para cada año, e incluye a los de 16 años.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-05",
+   "criterio": "antecedentes",
+   "antes": "con el PADI del País Vasco (1990), los niños",
+   "despues": "tras implantarse el PADI del País Vasco (1990), los niños",
+   "motivo": "Causalidad: Freire (2003) es una comparación descriptiva antes y después, no una evaluación causal.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-05",
+   "criterio": "antecedentes",
+   "antes": "con más de 180 M€ transferidos desde 2022, la cobertura era en mayo de 2026 del",
+   "despues": "Sanidad transfirió más de 180 M€ entre 2022 y 2025 y autorizó otros 60 M€ en mayo de 2026, cuando la cobertura era del",
+   "motivo": "Fecha: los «más de 180 millones» son de la nota de 18-9-2025 («Desde 2022, Sanidad ha transferido...»); los 60.058.000 € se autorizaron el 26-5-2026 (nota id=6917).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-05",
+   "criterio": "antecedentes",
+   "antes": "los audífonos se financian hasta los 26 años desde una ampliación gradual iniciada en 2020.",
+   "despues": "los audífonos se financian hasta los 26 años desde una ampliación gradual iniciada en 2019 (Orden SCB/480/2019), que llegó a esa edad en 2022.",
+   "motivo": "Fecha y fuente: la Orden SCB/480/2019 amplió la financiación «incluyendo inicialmente hasta los veinte años» desde el 1-7-2019; el calendario de 2020 era el de MUFACE. Se cita la orden del SNS en lugar de la resolución de MUFACE.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-05",
+   "criterio": "largo_plazo",
+   "antes": "la Comisión Europea prevé que el gasto sanitario público de España pase del 5,9 % del PIB en 2022 al 7,1 % en 2070 por ese motivo,",
+   "despues": "la Comisión Europea prevé, en su escenario base, que recoge sobre todo el efecto del envejecimiento, que el gasto sanitario público de España pase del 5,9 % del PIB en 2022 al 7,1 % en 2070,",
+   "motivo": "Fidelidad: el Ageing Report 2024 dice que el escenario base «mainly captures the impact of population ageing and a moderate impact of non-demographic determinants»; no todo el aumento se debe al envejecimiento.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-05",
+   "criterio": "largo_plazo",
+   "antes": "(DREES), un riesgo para el control del coste.",
+   "despues": "(DREES), lo que podría dificultar el control del coste.",
+   "motivo": "Inferencia propia, no de la DREES: se formula como tal.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-05",
+   "criterio": "evidencia",
+   "antes": "redujo las diferencias raciales en su uso (Wehby y otros, 2022)",
+   "despues": "se asoció a menores diferencias raciales en su uso (Wehby y otros, 2022)",
+   "motivo": "Fidelidad: el estudio dice «associated with narrowed racial and ethnic disparities».",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-05",
+   "criterio": "evidencia",
+   "antes": "y se asoció a menos caries sin tratar en sus hijos (Lipton y otros, 2021).",
+   "despues": "y se asoció a menos caries sin tratar en sus hijos (Lipton y otros, 2021). Son estudios de EE. UU., China y ensayos de EE. UU. y Europa; no se ha localizado una evaluación en España.",
+   "motivo": "Transparencia sobre la procedencia de la evidencia, que sostiene la valoración «favorable» (véase igual_estandar).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-05",
+   "criterio": "beneficiarios (campo)",
+   "antes": "en audífonos, las personas con pérdida auditiva de más de 26 años,",
+   "despues": "en audífonos, las personas mayores de 26 años con pérdida auditiva,",
+   "motivo": "Redacción ambigua (podía leerse como una pérdida que dura más de 26 años).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-05",
+   "criterio": "beneficiarios (campo)",
+   "antes": "(en conjunto, unos 2.650 M€;",
+   "despues": "(en conjunto, unos 2.660 M€;",
+   "motivo": "Cálculo: 41,64 € y 12,00 € por persona (EPF 2025) × 49.570.725 habitantes = 2.064 + 595 = 2.659 M€.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-06",
+   "criterio": "concrecion",
+   "antes": "o tienen 15 años (deducciones)",
+   "despues": "o tienen 15 años (la mayoría de las deducciones por incentivos; 18 las de I+D+i, y sin plazo las de doble imposición)",
+   "motivo": "Inexacto: el art. 39.1 LIS da 15 años con carácter general y 18 a la deducción del art. 35; las de doble imposición (arts. 31.6 y 32.5) no tienen plazo.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-06",
+   "criterio": "legal",
+   "antes": "En el País Vasco el Impuesto sobre Sociedades es de normativa foral (art. 14 del Concierto), por lo que allí haría falta una norma foral equivalente.",
+   "despues": "En el País Vasco y en Navarra el Impuesto sobre Sociedades es de normativa foral (art. 14 del Concierto y art. 18 del Convenio), por lo que allí harían falta normas forales equivalentes.",
+   "motivo": "Incompleto: el Convenio Económico con Navarra (art. 18.1) también remite a la normativa foral navarra.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-06",
+   "criterio": "evidencia",
+   "antes": "por el cambio en la exención por doble imposición, lo que reduce la distancia entre ambos tipos.",
+   "despues": "por el cambio en la exención por doble imposición de 2021.",
+   "motivo": "Sin respaldo: la AEAT habla del «progresivo acercamiento de la base imponible a estos beneficios»; la consecuencia sobre la distancia entre tipos era una inferencia del analista.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-06",
+   "criterio": "antecedentes",
+   "antes": "La compensación de pérdidas tenía un plazo de 18 años en el texto refundido de 2004,",
+   "despues": "La compensación de pérdidas tenía en el texto refundido de 2004 un plazo de 15 años, ampliado a 18 desde 2012 (Real Decreto-ley 9/2011),",
+   "motivo": "Inexacto: el art. 25.1 del texto original fijaba «los 15 años inmediatos y sucesivos»; pasó a 18 años por el Real Decreto-ley 9/2011 para los períodos iniciados desde 2012.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-07",
+   "criterio": "beneficiarios (campo)",
+   "antes": "en 2024 presentaron el Impuesto sobre el Patrimonio 227.424 contribuyentes con 986.985 M€ declarados, y 1.023 tenían una base superior a 30 M€ (AEAT; no se publica un tramo desde 50 M€).",
+   "despues": "en 2024 presentaron el Impuesto sobre el Patrimonio en territorio común 227.424 declarantes, con un patrimonio total de 986.985 M€; 86.426 tenían una base imponible superior a 1,5 M€ y 1.023, superior a 30 M€ (AEAT; no se publican tramos desde 1 M€ ni desde 50 M€).",
+   "motivo": "Inexacto: no todos los declarantes tienen más de un millón (136.305 tienen una base de 0,3 a 1,5 M€; tabla por tramos de la AEAT), el patrimonio total es bruto y la estadística es solo de territorio común.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-07",
+   "criterio": "beneficiarios (criterio)",
+   "antes": "en 2024 presentaron el Impuesto sobre el Patrimonio 227.424 contribuyentes con 986.985 M€ declarados, y 1.023 de ellos tenían una base superior a 30 M€ (AEAT, que no publica un tramo desde 50 M€); el Observatorio Fiscal de la UE cuenta 27 milmillonarios en España.",
+   "despues": "en 2024 presentaron el Impuesto sobre el Patrimonio en territorio común 227.424 declarantes, con un patrimonio total de 986.985 M€; 86.426 tenían una base imponible superior a 1,5 M€ y 1.023, superior a 30 M€ (AEAT, que no publica tramos desde 1 M€ ni desde 50 M€); el Observatorio Fiscal de la UE cuenta 27 milmillonarios en dólares en España (Forbes, marzo de 2025).",
+   "motivo": "Mismo motivo que en el campo «beneficiarios»; y los 27 milmillonarios lo son en dólares según Forbes a 3-3-2025 (nota de la tabla 1 del Observatorio).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-07",
+   "criterio": "evidencia",
+   "antes": "creció un 10 % en cinco años",
+   "despues": "creció en cinco años un 10 % más que en las demás regiones",
+   "motivo": "Fidelidad: el aumento del 10 % es «relative to other regions» (World Inequality Lab).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-07",
+   "criterio": "evidencia",
+   "antes": "una cuarta parte por cambios de residencia y buena parte del resto",
+   "despues": "una cuarta parte por cambios de residencia, una quinta por la subida del precio de la vivienda y buena parte del resto",
+   "motivo": "Incompleto: Brülhart y otros atribuyen el 24 % a la movilidad y el 21 % a la subida de los precios de la vivienda.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-07",
+   "criterio": "evidencia",
+   "antes": "valorar cada año las empresas no cotizadas es difícil",
+   "despues": "valorar cada año todo el patrimonio, cotizado o no, es difícil",
+   "motivo": "Fidelidad: el «Essentiel» del Senado dice que la valoración anual de todo el patrimonio «constitue une gageure», «soient cotées ou non».",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-07",
+   "criterio": "internacional",
+   "antes": "y gravaría durante cinco años a quienes se marcharan;",
+   "despues": "y gravaría durante cinco años a quienes se marcharan tras más de diez años en Francia;",
+   "motivo": "Incompleto: la cláusula se aplicaba a las «personnes domiciliées en France plus de dix ans» (nota 1 del «Essentiel» del Senado).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-07",
+   "criterio": "internacional (fuentes)",
+   "antes": "https://www.senat.fr/leg/ppl24-690.html",
+   "despues": "https://www.senat.fr/dossier-legislatif/ppl24-380.html; https://www.senat.fr/scrutin-public/2024/scr2024-322.html; https://www.assemblee-nationale.fr/dyn/17/scrutins/881; https://www.assemblee-nationale.fr/dyn/17/scrutins/3300; https://www.assemblee-nationale.fr/dyn/17/scrutins/3303",
+   "motivo": "Fuentes primarias de las votaciones citadas por la prensa (LCP y Public Sénat, que se mantienen como secundarias): Asamblea Nacional, escrutinios 881 (20-2-2025: 116-39), 3300 (31-10-2025: 172-228) y 3303 (171-228); Senado, escrutinio 322 (12-6-2025: 129-188). La URL ppl24-690 era el resultado de los trabajos de la comisión (n.º 690), no la proposición de ley n.º 380 que decía el título.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-07",
+   "criterio": "legal",
+   "antes": "pero los convenios de doble imposición, que solo pueden modificarse según sus propias normas (art. 96 CE), reservan en general el patrimonio mobiliario al Estado de residencia (p. ej., art. 23.5 del convenio con Francia),",
+   "despues": "pero los convenios de doble imposición que cubren el patrimonio, que solo pueden modificarse según sus propias normas (art. 96 CE), reservan al Estado de residencia los bienes que no sean inmuebles, participaciones sustanciales o establecimientos permanentes situados en el otro Estado (p. ej., art. 23 del convenio con Francia),",
+   "motivo": "Inexacto y sin respaldo «en general»: el art. 23 del convenio con Francia permite a España seguir gravando los inmuebles situados en España (23.1) y las participaciones de al menos el 25 % en sociedades españolas (23.2); solo el resto se reserva a la residencia (23.5).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-07",
+   "criterio": "largo_plazo",
+   "antes": "que la cláusula de cinco años solo frenaría donde no haya convenio de doble imposición,",
+   "despues": "que la cláusula de cinco años solo frenaría en parte donde haya un convenio que cubra el patrimonio,",
+   "motivo": "Mismo motivo: con convenio, España conserva el gravamen de los inmuebles y de las participaciones sustanciales en sociedades españolas.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-07",
+   "criterio": "financiacion (fuentes)",
+   "antes": "—",
+   "despues": "https://sede.agenciatributaria.gob.es/Sede/estadisticas/recaudacion-tributaria/informe-anual/ejercicio-2024/6-otros-impuestos.html",
+   "motivo": "La causa de la caída (comunidades que recuperaron el Impuesto sobre el Patrimonio) la da el informe de recaudación de 2024 de la AEAT, que no figuraba entre las fuentes.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-08",
+   "criterio": "concrecion",
+   "antes": "Medido sobre el salario medio bruto del INE de 2024 (29.540 €), el 60 % serían 17.724 € (cálculo propio), unos 630 € más que el SMI de 2026.",
+   "despues": "Si se midiera en bruto, cosa que el programa no hace, el 60 % del salario medio anual de 2024 de la Encuesta Anual de Estructura Salarial (29.540 €, que incluye el tiempo parcial) serían 17.724 € al año (cálculo propio), unos 630 € anuales más que el SMI de 2026.",
+   "motivo": "Puede inducir a error: mezcla una referencia bruta con la neta que fija el programa y una media que incluye el tiempo parcial; la cuenta (0,6 × 29.540 = 17.724; 17.724 − 17.094 = 630 € al año) es correcta y se mantiene aclarando que no es la referencia del programa.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-08",
+   "criterio": "financiacion",
+   "antes": "Para 2027 la comisión recomienda un 4,9 % (hasta 1.281 € al mes) para mantener el poder adquisitivo, según Europa Press, y según Artículo 14 bastaría un 2,7 % para llegar al 60 %.",
+   "despues": "Para 2027, la comisión asesora (informe de 3-11-2026) estimó un salario medio neto de 27.349 €, cuyo 60 % son 16.409 €: mantener esa referencia exigía subir el SMI un 2,7 %, y recomendó un 4,9 % (17.934 € al año, 1.281 € al mes en 14 pagas), la inflación de octubre; el proyecto de real decreto del Gobierno, en audiencia pública, propone un 5,3 % (1.286 € al mes).",
+   "motivo": "Fuente primaria en lugar de prensa: memoria del proyecto de real decreto del SMI para 2027 (Ministerio de Trabajo, 4-11-2026), que recoge el informe de la comisión («salario medio neto de 27.349 euros, por lo que el 60% equivale a 16.409 euros netos. Mantener esa referencia exigiría una subida del 2,7%... la CAASMI propone elevar el SMI un 4,9%, hasta 17.934 euros anuales») y la propuesta del Gobierno («5,3 por ciento... 1286 euros al mes»). Comprobado en el PDF.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-08",
+   "criterio": "beneficiarios (criterio)",
+   "antes": "de modo que beneficiaría a quienes cobren el SMI en los años en que el salario medio neto crezca más que él;",
+   "despues": "de modo que beneficiaría a quienes cobren el SMI en los años en que el salario medio neto crezca más que él (en 2027, con la estimación de la comisión asesora, obligaría a subirlo un 2,7 %, menos que el 4,9 % que esta recomienda y el 5,3 % que propone el Gobierno);",
+   "motivo": "Incompleto: la memoria del SMI de 2027 permite cuantificar el efecto del suelo ese año.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-09",
+   "criterio": "financiacion",
+   "antes": "y desde la jornada pactada media de 38,1 horas (marzo de 2026), un 19 % (cálculo propio); las 32 horas sí alcanzarían al empleo público. El programa no cuantifica ese coste ni explica cómo se pagaría.",
+   "despues": "y desde la jornada media pactada en los convenios registrados hasta marzo de 2026 (1.739 horas al año, unas 38,1 semanales), un 19 % (cálculos propios); las 32 horas sí alcanzarían al empleo público. El programa no cuantifica ese coste, ni el de extender las 35 horas a las administraciones que aún no las tienen, ni explica cómo se pagaría.",
+   "motivo": "Fuente primaria en lugar de prensa (Onda Vasca): Estadística de Convenios Colectivos, avance de marzo de 2026, tabla CCT-2.2 («Jornada media (horas/año) 1.739,31»; 1.739,31 / 1.826,27 × 40 = 38,1 h). Se añade que el programa propone 35 horas en todo el sector público (p. 55) sin cuantificarlas.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-09",
+   "criterio": "evidencia",
+   "antes": "bajar de 40 a 37,5 horas supone un 6 %, y de 40 a 32 horas un 20 % (cálculo propio), una magnitud mayor que la evaluada en esos casos.",
+   "despues": "bajar de 40 a 37,5 horas supone un 6 %, del orden de las reformas evaluadas, y de 40 a 32 horas un 20 % (cálculo propio), más que cualquiera de ellas.",
+   "motivo": "Inexacto: la reducción del 6 % no es mayor que las evaluadas (Francia 10 %, Portugal 9 %, Eslovenia 5 %); solo la de 32 horas lo es.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-09",
+   "criterio": "antecedentes (fuentes)",
+   "antes": "—",
+   "despues": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-135.PDF",
+   "motivo": "Fuente primaria de la votación (Diario de Sesiones n.º 135: «se aprueban por 178 votos a favor y 170 en contra»), además de El Salto.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-10",
+   "criterio": "financiacion",
+   "antes": "el 48,4 % de las pensiones está por debajo del SMI, según datos de la Seguridad Social recogidos por la prensa,",
+   "despues": "en octubre de 2026, 5.926.902 pensiones contributivas (el 56,1 %) eran inferiores a 1.221 € al mes (Seguridad Social, eSTADISS), aunque, como hay pensionistas con más de una pensión, las personas por debajo del SMI son menos,",
+   "motivo": "Dato de prensa no reproducible con la fuente oficial: eSTADISS (nómina de octubre de 2026, tramos de cuantía) da 5.926.902 de 10.565.782 pensiones por debajo de 1.221 € (56,1 %; 56,5 % en marzo). El 48,4 % de El Debate no cita estadística ni fecha.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-10",
+   "criterio": "beneficiarios (campo)",
+   "antes": "el suelo del SMI alcanzaría al 48,4 % de las pensiones, unos 4,6 millones según datos de la Seguridad Social recogidos por la prensa,",
+   "despues": "el suelo del SMI afectaría a una parte de las 5.926.902 pensiones (56,1 %) inferiores a 1.221 € al mes en octubre de 2026 (el partido cifra en 4,6 millones los pensionistas por debajo del SMI),",
+   "motivo": "Mismo motivo; además, los 4,6 millones no están en El Debate: son de la nota del partido de 24-10-2026 («4,6 millones de pensionistas cobran hoy menos que el SMI»), sin fuente.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-10",
+   "criterio": "beneficiarios (campo)",
+   "antes": "en su nota del 24-10-2026 el partido cifró en unos 10.000 M€ anuales cada una de las dos últimas medidas.",
+   "despues": "en su nota del 24-10-2026 el partido cifró en unos 10.000 M€ anuales tanto la pensión mínima igual al SMI como la jubilación a los 65.",
+   "motivo": "Ambiguo: «las dos últimas medidas» se leía como el tope y la aportación de las empresas; la nota da «unos 10.000 millones cada una» a las dos medidas de gasto.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-10",
+   "criterio": "beneficiarios (campo)",
+   "antes": "y los 708.267 de Clases Pasivas;",
+   "despues": "y los 708.267 de Clases Pasivas (agosto de 2026);",
+   "motivo": "Fecha del dato (último publicado, agosto de 2026).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-10",
+   "criterio": "beneficiarios (criterio)",
+   "antes": "y el suelo del SMI a unos 4,6 millones de pensiones, según datos de la Seguridad Social recogidos por la prensa, aunque",
+   "despues": "y el suelo del SMI a una parte de las 5.926.902 pensiones (56,1 %) inferiores a 1.221 € al mes en octubre de 2026 (Seguridad Social, eSTADISS; el partido cifra en 4,6 millones los pensionistas por debajo del SMI), aunque",
+   "motivo": "Mismo motivo que en «financiacion» y en el campo «beneficiarios»; se añade la fecha del dato de Clases Pasivas.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-10",
+   "criterio": "antecedentes",
+   "antes": "y la de mayores de 65 años en otros casos es de 12.441,80 €; en marzo de 2026, 2.108.559 pensionistas (22,3 %) recibían complemento a mínimos.",
+   "despues": "y la de mayores de 65 años sin cónyuge es de 12.441,80 €; en octubre de 2026, 2.118.230 pensiones (el 20,0 %) tenían complemento a mínimos.",
+   "motivo": "Categoría y fuente primaria: La Moncloa da 12.441,80 € para la pensión «sin cónyuge»; el número de complementos a mínimos se toma de la nómina oficial de octubre de 2026 (hoja «Pensiones - mínimos»: 2.118.230, 20,04 %) en lugar de El Debate, que mezclaba pensiones y pensionistas.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-10",
+   "criterio": "internacional",
+   "antes": "asegura el reajuste de las prestaciones para mantener su valor real;",
+   "despues": "asegura el reajuste de las prestaciones para mantener su valor real según los criterios que fije la ley;",
+   "motivo": "Fidelidad al art. 201 («according to criteria defined by law»), como en psoe-05.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-10",
+   "criterio": "internacional",
+   "antes": "de 64,4 años para quienes se jubilan ahora a 66,3 para quienes empiezan a trabajar.",
+   "despues": "de 64,4 años para los hombres que se jubilan ahora a 66,3 para los que empiezan a trabajar.",
+   "motivo": "Fidelidad: la OCDE da esas edades para los hombres («64.4 years for men retiring now»).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-10",
+   "criterio": "largo_plazo",
+   "antes": "de los que 2,4 tendrían que financiarse con recursos distintos de las cotizaciones,",
+   "despues": "de los que 2,4 tendrían que financiarse con recursos distintos de las cotizaciones y de las transferencias del Estado ya previstas,",
+   "motivo": "Fidelidad: en la Opinión 2/25 de la AIReF, 3,1 − 0,6 (cotizaciones) − 0,1 (transferencias) = 2,4 puntos.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-10",
+   "criterio": "largo_plazo",
+   "antes": "y los ingresos que propone el programa no están cuantificados ni se destinan a esa brecha.",
+   "despues": "y los ingresos que propone el programa no están cuantificados y tendrían que cubrir también el coste de las nuevas medidas.",
+   "motivo": "Sin respaldo: el programa sitúa el tope de cotización y el Mecanismo de Equidad Intergeneracional (que nutre el Fondo de Reserva) en el capítulo de pensiones (p. 58); no puede afirmarse que no se destinen a esa brecha. La valoración «desfavorable» se mantiene.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-10",
+   "criterio": "evidencia",
+   "antes": "por simetría, adelantar la edad aumenta el gasto y reduce el empleo de los mayores.",
+   "despues": "lo que sugiere que adelantarla tendría el efecto contrario sobre el gasto y el empleo de los mayores.",
+   "motivo": "Inferencia propia, no resultado del estudio: se formula como tal.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-11",
+   "criterio": "financiacion",
+   "antes": "El coste es estimable. Según el perfil oficial de consumo de 2026, la franja de 13 a 16 h, la de precio mayorista medio más bajo en 2025 (28,35 €/MWh frente a 65,29 €/MWh de media diaria), concentra el 14,6 % del consumo con peaje 2.0TD (hogares y pequeños negocios); aplicado a los 75.158 GWh de los hogares en 2024 son unos 11.000 GWh, con un coste anual de unos 333 M€ de energía, 171 M€ de peajes de red y 242 M€ de cargos del sistema (cálculos propios). El programa paga los peajes con el gravamen a las grandes energéticas, pero en otro apartado destina «íntegramente» ese gravamen a una ayuda de 1.000 € para 1,4 millones de hogares, unos 1.400 M€ al año (p. 44), más de lo que recaudó en 2024 (1.164 M€, según Hacienda), y el gravamen decayó en enero de 2025. No dice quién pagaría los cargos y deja el coste de la energía a las comercializadoras.",
+   "despues": "El coste es estimable. Según el perfil oficial de consumo de 2026, la franja de 13 a 16 h, la de precio mayorista medio más bajo en 2025 (28,35 €/MWh frente a 65,29 €/MWh de media diaria), concentra el 14,6 % del consumo con peaje 2.0TD (hogares y pequeños negocios); aplicado a los 75.158 GWh de los hogares en 2024 son unos 11.000 GWh, con un coste anual de unos 332 M€ de energía (al precio de cada hora ponderado por el consumo, unos 30 €/MWh, sin pérdidas ni servicios de ajuste), 167 M€ de peajes de red y 236 M€ de cargos del sistema, unos 735 M€ en total, sin contar el consumo adicional que podría atraer un precio cero (cálculos propios). El programa paga los peajes con el gravamen a las grandes energéticas, que propone restablecer de forma estructural y que recaudó 1.164 M€ en 2024, según Hacienda (la Ley 38/2022 lo limitó a 2023 y 2024, y el Congreso derogó el 22-1-2025 el real decreto-ley que lo prorrogaba), pero en otro apartado destina «íntegramente» esa recaudación a una ayuda de 1.000 € por hogar durante dos años para 1,4 millones de hogares (p. 44), sin decir si es anual. No dice quién pagaría los cargos y deja el coste de la energía a las comercializadoras.",
+   "motivo": "Cálculo y hechos: (1) la Circular 3/2020 (art. 7.3) trata como valle los festivos nacionales, lo que rebaja peajes y cargos a 167 y 236 M€ (735 M€ en total, frente a 745); la energía, 332 M€, sale del precio de cada hora ponderado por el perfil (unos 30 €/MWh), no de los 28,35 €/MWh de la franja (que darían 312 M€), y no incluye pérdidas ni servicios de ajuste. (2) La ayuda de la p. 44 es «de 1.000 euros por hogar durante dos años»: no consta que sea anual, así que no puede afirmarse que cueste 1.400 M€ al año ni que supere lo recaudado en 2024 (1.164 M€, La Moncloa, 27-9-2024). (3) El gravamen no «decayó»: la Ley 38/2022 lo limitaba a 2023 y 2024 y el Congreso derogó el 22-1-2025 el Real Decreto-ley 10/2024 que lo prorrogaba (BOE-A-2025-1137); el programa propone restablecerlo «con carácter estructural».",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-11",
+   "criterio": "financiacion (valoración)",
+   "antes": "desfavorable",
+   "despues": "mixta",
+   "motivo": "Mismo listón que salf-03, la única financiación «desfavorable» aprobada: allí una ley vigente (Ley 17/2003) asigna a otros fines la fuente que el programa usa. Aquí no hay fuente oficial que contradiga la financiación: el gravamen que paga los peajes es un tributo que el programa restablecería, con una recaudación documentada (1.164 M€ en 2024) superior al coste de los peajes (167 M€), y el doble destino es una incoherencia interna cuyo alcance depende de si la ayuda de 1.000 € es anual, lo que el programa no aclara. Lo que queda es la rúbrica «mixta»: coste estimable y una financiación explicada solo para una parte (peajes), sin decir quién paga los cargos (236 M€) ni la energía (332 M€).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-11",
+   "criterio": "beneficiarios (campo)",
+   "antes": "valorados en unos 38 € anuales antes de impuestos",
+   "despues": "valorados en unos 37 € anuales antes de impuestos",
+   "motivo": "Cálculo corregido (festivos nacionales en valle, Circular 3/2020, art. 7.3): 735 M€ / 19,75 millones de hogares = 37,2 €.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-11",
+   "criterio": "beneficiarios (campo)",
+   "antes": "El coste, unos 745 M€ al año, recaería en las comercializadoras (energía, unos 333 M€), en el gravamen a las energéticas (peajes, unos 171 M€) y en una partida que el programa no identifica (cargos, unos 242 M€).",
+   "despues": "El coste, unos 735 M€ al año, recaería en las comercializadoras (energía, unos 332 M€), en el gravamen a las energéticas (peajes, unos 167 M€) y en una partida que el programa no identifica (cargos, unos 236 M€).",
+   "motivo": "Mismo cálculo corregido que en «financiacion».",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-11",
+   "criterio": "beneficiarios (criterio)",
+   "antes": "valorados en unos 38 € antes de impuestos",
+   "despues": "valorados en unos 37 € antes de impuestos",
+   "motivo": "Mismo cálculo corregido que en «financiacion».",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-11",
+   "criterio": "beneficiarios (criterio)",
+   "antes": "El coste, unos 745 M€ anuales",
+   "despues": "El coste, unos 735 M€ anuales",
+   "motivo": "Mismo cálculo corregido que en «financiacion».",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-11",
+   "criterio": "antecedentes",
+   "antes": "en 797 horas, casi todas a mediodía (cálculo propio con datos de OMIE).",
+   "despues": "en 797 horas, casi todas en las horas centrales del día (748 empiezan entre las 9 y las 17 h; cálculo propio con datos de OMIE).",
+   "motivo": "Precisión: de las 797 horas, 748 empiezan entre las 9 y las 17 h y 327 caen en la franja de 13 a 16 h; «a mediodía» era demasiado estrecho.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-11",
+   "criterio": "antecedentes",
+   "antes": "El gravamen a las energéticas se aplicó en 2023 y 2024 y decayó tras la votación del Congreso del 22-1-2025.",
+   "despues": "El gravamen a las energéticas se aplicó en 2023 y 2024 (Ley 38/2022), y el Congreso derogó el 22-1-2025 el Real Decreto-ley 10/2024, que lo prorrogaba a 2025.",
+   "motivo": "Fuente primaria (BOE-A-2025-1137, acuerdo de derogación del Real Decreto-ley 10/2024) y precisión: la Ley 38/2022 lo limitaba a 2023 y 2024.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-11",
+   "criterio": "internacional",
+   "antes": "Victoria tenía prevista una oferta parecida desde el 1-10-2026.",
+   "despues": "Victoria anunció una oferta parecida desde el 1-10-2026.",
+   "motivo": "Tiempo verbal: la fecha ya ha pasado y no se ha podido comprobar en la fuente oficial (la página del Gobierno de Victoria devuelve 403) si está en vigor.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-11",
+   "criterio": "internacional (fuentes)",
+   "antes": "—",
+   "despues": "https://www.energymadeeasy.gov.au/hot-topics/solar-sharer-offer-what-you-need-to-know",
+   "motivo": "Fuente primaria oficial del regulador (Energy Made Easy, AER): desde el 1-7-2026, obligatoria para comercializadores con más de 1.000 clientes en las regiones del DMO, hasta 24 kWh gratis, voluntaria para el hogar y con «elevated time-of-use rates» fuera de la franja; Energy Consumers Australia y PV Tech quedan como secundarias.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "todas",
+   "criterio": "título de fuente (2 veces)",
+   "antes": "La Moncloa/Hacienda: recaudación de los gravámenes en 2024",
+   "despues": "La Moncloa/Hacienda (27-9-2024): los gravámenes de la banca y las energéticas alcanzan los 2.859 millones de euros en 2024",
+   "motivo": "Título y fecha de la página («Hacienda - 27.9.2024»; el gravamen energético, 1.164 M€).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "todas",
+   "criterio": "título de fuente (2 veces)",
+   "antes": "INE, Contabilidad Nacional Anual de España, revisión de 2025 (nota de prensa de 18-9-2026): PIB de 2025 a precios corrientes",
+   "despues": "INE, Contabilidad Nacional Anual de España: Revisión Estadística 2024, años 2023-2025 (nota de prensa de 18-9-2026)",
+   "motivo": "Título exacto de la nota del INE.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "todas",
+   "criterio": "título de fuente (3 veces)",
+   "antes": "Agrawal, Foremny y Martínez-Toledano, Wealth Taxation and Mobility (World Inequality Lab)",
+   "despues": "Agrawal, Foremny y Martínez-Toledano, «Paraísos Fiscales, Wealth Taxation, and Mobility» (World Inequality Lab, 17-12-2020)",
+   "motivo": "Título y fecha exactos del trabajo.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "todas",
+   "criterio": "título de fuente (3 veces)",
+   "antes": "Ministerio de Derechos Sociales, Consumo y Agenda 2030 (6-2-2026): Bustinduy se reúne con Zucman para estudiar cómo funcionaría su impuesto",
+   "despues": "Ministerio de Derechos Sociales, Consumo y Agenda 2030 (6-2-2026): «Bustinduy se reúne con Zucman para estudiar cómo funcionaría su impuesto a los ultrarricos: España recaudaría 5.200 millones al año»",
+   "motivo": "Título completo de la nota.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-04",
+   "criterio": "justificacion (extraccion.json)",
+   "antes": "(la Tasa Zucman, «cuya recaudación financiará la Prestación Universal por Crianza»)",
+   "despues": "(la Tasa Zucman: «La recaudación financiará la Prestación Universal por Crianza»)",
+   "motivo": "Cita no literal: la p. 45 dice «La recaudación financiará la Prestación Universal por Crianza.»",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "todas",
+   "criterio": "nota (evaluacion.json)",
+   "antes": "encaje legal y financiación «desfavorable» en frente_amplio-11 (Directiva de electricidad y destino ya asignado del gravamen energético).",
+   "despues": "encaje legal «desfavorable» en frente_amplio-11 (Directiva de electricidad). Revisión independiente del 16-nov: véase revision.json (la financiación de frente_amplio-11 pasa a «mixta»).",
+   "motivo": "Coherencia con el cambio de valoración de la financiación de frente_amplio-11.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-07",
+   "criterio": "legal",
+   "antes": "el tipo máximo subiría del 3,5 % a al menos el 5,5 %",
+   "despues": "el tipo máximo subiría del 3,5 % a al menos el 6,5 % (al 8,5 % si los 3 puntos desde 50 M€ se suman a los 2)",
+   "motivo": "Error de cálculo: la p. 45 dice que el tipo «aumentará 2 puntos sobre la escala actual y 3 puntos a partir de los 50 millones», y la escala vigente termina en el 3,5 % (Ley 38/2022, art. 3.Once); desde 50 M€ el marginal es al menos 3,5 + 3 = 6,5 %.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-04",
+   "criterio": "justificacion (extraccion.json)",
+   "antes": "abre el capítulo 2 con el único párrafo largo de justificación previo a una medida (p. 21)",
+   "despues": "abre el capítulo 2 con un párrafo propio de justificación (p. 21)",
+   "motivo": "Sin respaldo: no se ha comprobado que sea el único párrafo de ese tipo (los apartados 17.2 y 18.1, pp. 133 y 140, también abren con párrafos de justificación).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-04",
+   "criterio": "justificacion (extraccion.json)",
+   "antes": "y en la p. 45, donde es la única medida a la que el programa asigna una recaudación concreta (la Tasa Zucman: «La recaudación financiará la Prestación Universal por Crianza»)",
+   "despues": "y en la p. 45, donde el programa le destina la recaudación de la Tasa Zucman («La recaudación financiará la Prestación Universal por Crianza»)",
+   "motivo": "Inexacto: no es la única medida con recaudación asignada. El programa destina «íntegramente la recaudación del gravamen energético» a la ayuda de 1.000 € (p. 44), una contribución empresarial del 0,45 % de la masa salarial a «financiar la promoción de vivienda pública» (p. 17) y la recaudación del tipo del 100 % sobre las herencias a «doblar el gasto actual en políticas sociales de vivienda» (p. 46).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-06",
+   "criterio": "largo_plazo",
+   "antes": "que crecieron con fuerza en los últimos años (la base imponible consolidada aumentó un 11,6 % en 2025)",
+   "despues": "que crecieron con fuerza en los últimos años (en 2025 la base imponible consolidada aumentó un 11,6 % y los beneficios declarados por las grandes empresas y grupos en sus pagos fraccionados, un 6,1 %, según la AEAT)",
+   "motivo": "Inexacto: el 11,6 % es la base imponible, no los beneficios. El informe de recaudación de 2025 de la AEAT (cap. 3) da para ese año un 11,6 % de la base consolidada y un 6,1 % de los beneficios declarados por las grandes empresas y grupos en los pagos fraccionados, y señala que la base ha crecido en cinco años «superando incluso la ya positiva evolución de los beneficios».",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-03",
+   "criterio": "antecedentes",
+   "antes": "pagados por 75 contribuyentes (cálculo propio",
+   "despues": "declarados por 75 contribuyentes, de los que 67 ingresaron alguna cantidad (cálculo propio",
+   "motivo": "Inexacto: en los datos abiertos de la Agència Tributària de Catalunya (2pwz-wwxf, ejercicio 2025) figuran 72 tenedores y una agrupación de los 3 mayores (75 contribuyentes), y 8 de los 72 tienen un importe ingresado de 0 €.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-04",
+   "criterio": "internacional",
+   "antes": "universal desde el segundo hijo y con límite de renta para el primero;",
+   "despues": "universal desde el segundo hijo y con límite de renta para el primero, y desde el 1-7-2019 para todos los menores de 18 años sin límite de renta;",
+   "motivo": "Incompleto: la serie de pobreza que se cita llega a 2025, y desde el 1-7-2019 la prestación se paga por todos los hijos menores de 18 años sin criterio de renta (Ministerio de Familia de Polonia: «Po rozszerzeniu programu 500 plus będzie przysługiwać na wszystkie dzieci do 18 lat»).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-04",
+   "criterio": "internacional (fuentes)",
+   "antes": "—",
+   "despues": "https://www.gov.pl/web/rodzina/500-na-kazde-dziecko-od-1-lipca",
+   "motivo": "Fuente primaria de la ampliación de 2019.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-12",
+   "criterio": "antecedentes",
+   "antes": "la cifra de partida que cita el programa (cálculo propio).",
+   "despues": "la cifra de partida que cita el programa.",
+   "motivo": "Atribución: los tres porcentajes los publica la OCDE (DAC1, AOD en porcentaje de la renta nacional bruta; 0,2714 % en los datos preliminares de 2025), no son cálculo propio.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-12",
+   "criterio": "largo_plazo",
+   "antes": "la redujo dos veces (2021 y 2025)",
+   "despues": "la rebajó al 0,5 % en 2021 y en febrero de 2025 anunció bajarla al 0,3 % en 2027",
+   "motivo": "Inexacto: en 2025 la rebaja se anunció para 2027; el primer ministro dijo el 25-2-2025 «moving from 0.5% of GNI today to 0.3% in 2027».",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-12",
+   "criterio": "largo_plazo (fuentes)",
+   "antes": "—",
+   "despues": "https://www.gov.uk/government/speeches/prime-ministers-oral-statement-to-the-house-of-commons-25-february-2025",
+   "motivo": "Fuente primaria del anuncio de 2025.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-02",
+   "criterio": "internacional",
+   "antes": "al amparo del art. 15 de la Ley Fundamental alemana, una figura distinta de la expropiación que no existe en la Constitución española.",
+   "despues": "al amparo del art. 15 de la Ley Fundamental alemana (socialización), una figura distinta de la expropiación del art. 14.",
+   "motivo": "Sin respaldo: la fuente (LTO) no compara con la Constitución española. Se describe solo la diferencia que da la Ley Fundamental (art. 14, propiedad y expropiación; art. 15, socialización).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-10",
+   "criterio": "legal",
+   "antes": "reservado al art. 14 y a la Sección 1.ª (art. 53.2)",
+   "despues": "reservado al art. 14, a la Sección 1.ª y a la objeción de conciencia del art. 30 (art. 53.2)",
+   "motivo": "Incompleto: el art. 53.2 CE añade que el recurso de amparo «será aplicable a la objeción de conciencia reconocida en el artículo 30».",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-01",
+   "criterio": "concrecion",
+   "antes": "y a quién y a qué precio se alquilarán (alquiler público con un máximo de 600 € al mes por 80 m² y no más del 25 % de la renta)",
+   "despues": "y en qué condiciones se alquilarán a los hogares (alquiler público con un máximo de 600 € al mes por 80 m² y no más del 25 % de la renta)",
+   "motivo": "Coherencia interna: el texto decía «a quién» y a continuación que el programa no dice qué requisitos tendrán los inquilinos. El programa (p. 10) fija las condiciones del alquiler para los hogares, no quién podrá acceder.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-01",
+   "criterio": "antecedentes",
+   "antes": "son unas nueve veces esas calificaciones de 2024",
+   "despues": "son casi nueve veces esas calificaciones de 2024",
+   "motivo": "Precisión del cálculo: 125.000 / 14.371 = 8,7.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-10",
+   "criterio": "justificacion (extraccion.json)",
+   "antes": "se repite entre las reformas constitucionales del capítulo 18 (p. 140)",
+   "despues": "la revalorización se repite entre las reformas constitucionales del capítulo 18 (p. 140: «Blindaremos constitucionalmente la revalorización de las pensiones»)",
+   "motivo": "Inexacto: la p. 140 solo repite el blindaje constitucional de la revalorización, no la pensión mínima igual al SMI.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-08",
+   "criterio": "antecedentes",
+   "antes": "y el real decreto de 2026 mantiene ese objetivo siguiendo al Comité Europeo de Derechos Sociales",
+   "despues": "y el real decreto de 2026 mantiene «el objetivo de que el salario mínimo interprofesional alcance el 60 por ciento del salario medio», siguiendo al Comité Europeo de Derechos Sociales",
+   "motivo": "Fidelidad a la fuente: el preámbulo del Real Decreto 126/2026 habla del «60 por ciento del salario medio», sin «neto»; el cálculo sobre el salario neto es el de la comisión asesora.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-06",
+   "criterio": "internacional",
+   "antes": "11 de 35 países europeos limitan a 5 años o menos la compensación de pérdidas",
+   "despues": "11 de 35 países europeos limitan a 5 años la compensación de pérdidas, y ninguno a menos (los 4 años del programa serían el plazo más corto de esa tabla)",
+   "motivo": "Precisión con la misma fuente: en la tabla de Tax Foundation (mayo de 2026) los 11 países con límite temporal lo fijan en 5 años; ninguno tiene un plazo inferior.",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-11",
+   "criterio": "internacional",
+   "antes": "los comercializadores con más de 1.000 clientes deben ofrecer a los hogares con contador inteligente una tarifa con tres horas gratis a mediodía, hasta 24 kWh diarios;",
+   "despues": "los comercializadores con más de 1.000 clientes en esas regiones deben ofrecer a los hogares con contador inteligente una tarifa con tres horas gratis a mediodía (de 11 a 14 h, y de 12 a 15 h en Australia Meridional), hasta 24 kWh diarios;",
+   "motivo": "Precisión con la fuente primaria del regulador: «Retailers who have more than 1,000 customers across DMO regions will need to make a Solar Sharer Offer» y «The free usage periods are 11am–2pm for NSW/SE Queensland regions and 12pm–3pm for South Australia» (hoja informativa de la AER, DMO 8, 26-5-2026).",
+   "fecha": "2026-11-16"
+  },
+  {
+   "propuesta": "frente_amplio-11",
+   "criterio": "internacional (fuentes)",
+   "antes": "—",
+   "despues": "https://www.aer.gov.au/system/files/2026-05/AER%20-%20Solar%20Sharer%20Offer%20fact%20sheet%20-%20DMO%208%20final%20determination.pdf",
+   "motivo": "Fuente primaria del regulador para las horas gratuitas y el umbral de 1.000 clientes.",
+   "fecha": "2026-11-16"
+  }
+ ],
+ "dudas": [
+  "Selección (decisión editorial, no error): en la quinta transformación la introducción empieza por «dedicando el 3,5 % del PIB anual» a la transición ecológica, que abre también el capítulo 5 (p. 60), y en la sexta por la «República Federal y Plurinacional» (fa-p819, fa-t-140a); las prioridades elegidas (tres horas de luz gratis, frente_amplio-11, con subtítulo propio en la p. 64, y la cooperación del 0,7 %, frente_amplio-12, que abre el apartado 17.2) están también en la introducción y su justificación es cierta. Si el editor prefiere la primera medida de cada transformación, son las alternativas.",
+  "frente_amplio-10: el 48,4 % de pensiones por debajo del SMI que publicó El Debate (17-4-2026) no se reproduce con eSTADISS (56,1 % de las pensiones inferiores a 1.221 € en octubre de 2026; 56,5 % en marzo); podría referirse a pensionistas, que eSTADISS no cruza por tramos. Se usa el dato oficial de pensiones y se atribuye al partido la cifra de 4,6 millones de pensionistas. eSTADISS es una aplicación interactiva sin URL estable por consulta.",
+  "frente_amplio-01 y -02: el déficit de «más de 400.000 viviendas» es literal del Plan Estatal 2026-2030, que lo atribuye al Banco de España; según la prensa, el Banco de España lo elevó después a unas 700.000 (septiembre de 2025) y a unas 750.000 en 2021-2025 (Informe Anual 2025), pero no se ha podido abrir el documento primario (las rutas de /InformesAnuales/25/ devuelven 404). Se deja la cifra del Plan.",
+  "frente_amplio-02: el valor de los inmuebles de la Sareb aptos para vivienda asequible es de «en torno a 5.000 millones» en el acuerdo publicado (Orden PJC/784/2025) y de 5.900 millones en la rueda de prensa del Consejo de Ministros de 1-7-2025 y en la nota de La Moncloa de 12-2-2026; el texto da las dos. Las 3.200 viviendas que la Sareb adecuó solo constan en idealista.",
+  "frente_amplio-11: el cálculo del coste (unos 735 M€) es un mínimo: solo el mercado diario para la energía, sin pérdidas, servicios de ajuste ni el IVA y el impuesto eléctrico que se dejarían de recaudar, y con el consumo actual (un precio cero lo aumentaría; Australia pone un tope de 24 kWh diarios); puede sobrestimar algo si el consumo de los hogares de Eurostat incluye autoconsumo. Las fuentes del Australian Energy Regulator en aer.gov.au (hoja informativa y determinación del DMO 2026-27) no pudieron abrirse; se usa su portal Energy Made Easy. La oferta de Victoria desde el 1-10-2026 no se ha comprobado en la página oficial (403).",
+  "frente_amplio-12: se mantiene el coste de unos 7.190 M€ con la renta nacional bruta de la OCDE (1.677.774 M€), igual que psoe-12; con la RNB de 2025 del INE (1.693.738 M€) serían unos 7.300 M€. Si se cambia, debe hacerse a la vez en psoe-12. El 0,26 % del conjunto del CAD sigue apoyándose en Focus 2030 (duda ya abierta en psoe-12).",
+  "frente_amplio-05: el estudio de Gaceta Sanitaria sobre el coste de universalizar la salud bucodental declara que se hizo por encargo, a instancias de una cadena de clínicas dentales; el texto lo dice. Es la única estimación localizada."
+ ]
+}

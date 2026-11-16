@@ -46,7 +46,14 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
     contradecirlo). Paso 1: g13, PSC 5→11 posiciones (q18 pasa de +1 a +2 por la precedencia del programa). Paso 2: las 12
     propuestas del PSOE, con nota, y como complemento el Parador de Tarragona (único compromiso propio fuera de ese programa
     que el PSC destaca; El Prat queda fuera por decirse una sola vez, como psoe-c07). Revisión independiente aprobada.
-  - [ ] Frente Amplio, Podemos, Junts, EH Bildu, NC-BC, Ara Més, UPN — sin fecha (Junts: sin rastro de programa el 15-nov).
+  - [x] Frente Amplio — **publicado el 16-nov** («Un programa como una casa», 151 pp., frenteamplio.info; más de 1.000 medidas
+    según la prensa). Hecho el 16-nov: paso 1 recodificado (g14, verificado: Frente Amplio 21→25 posiciones; q29 Mercosur pasa
+    de +2 a sin posición porque el programa propone fiscalizar el acuerdo, no frenarlo; q33 queda en −1 tras la verificación);
+    12 propuestas del programa (dos revisiones independientes, 96 correcciones; cambia una valoración: financiación de las
+    horas de luz gratis, desfavorable → mixta); sus compromisos anteriores están en el programa, así que no hay complemento.
+    Las «500 medidas» del PSOE del 16-nov son el programa ya incorporado el 15-nov (mismo sha256 en psoe.es).
+  - [ ] Podemos, Junts, EH Bildu, NC-BC, Ara Més, UPN — sin fecha (Junts: sin rastro de programa el 15-nov).
+  - [ ] Auditoría de coherencia tras el programa del Frente Amplio.
   - Hecho el 14-nov: adelante_andalucia-08 cita la DA 23.ª de la Ley 54/1997 (mínimo del 10 % de la SEPI en
     Red Eléctrica) y pp-07 y compromis-13 resumen a Bom y Ligthart con sus cifras exactas (0,083 / 0,122 para el
     capital de la Administración central, casi el doble en infraestructuras básicas regionales o locales).

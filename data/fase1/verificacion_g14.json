@@ -1,0 +1,283 @@
+{
+ "grupo": "g14",
+ "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13-nov («A qué partido cuenta cada fuente», precedencia)",
+ "fecha": "2026-11-16",
+ "aprobado": true,
+ "revisadas": 20,
+ "resultado": {
+  "ok": 19,
+  "corregido": 1,
+  "rechazado": 0,
+  "celdas_no_tocadas_confirmadas": "ver «celdas_no_tocadas»"
+ },
+ "alcance": "Las 20 posiciones del Frente Amplio de codificacion_g14.json, sacadas de su programa oficial para el 29-N («Un programa como una casa», 151 pp.), las celdas en las que el codificador conserva la posición vigente o deja null, y una búsqueda propia de posiciones que no hubiera recogido.\n\n(1) Fuente. El sha256 del PDF (df6e4d96…6f04) coincide con partidos.json (entrada «frente_amplio») y con «fuentes»; el del texto (240294d2…08ae) coincide con «fuentes» y con un pdftotext -layout nuevo del PDF (partidos.json no guarda el hash del texto, solo su ruta). PDF de InDesign, 151 pp., CreationDate 16-nov 00:00 CET. La numeración impresa no coincide con la del PDF y el desfase crece con cada portadilla (la p. 8 del PDF lleva impreso «10»; la p. 141, «168»); las páginas de las celdas son las del PDF y las notas dan también la impresa: comprobadas todas.\n\n(2) Lectura. Se extrajo cada página con pdftotext -layout -f N -l N. Se leyeron enteras la introducción (7-8), vivienda (13-15, 18-19), sanidad y educación (26, 28-29, 31-32), feminismo e infancia (37-38, 41), fiscalidad (45-46), trabajo, precios y pensiones (51, 55-57), energía (61-62, 64), agricultura (88-89), financiación autonómica (103-104), migraciones (125-127), exterior y defensa (130, 132-133, 137), democracia, corrupción, seguridad y justicia (140-142, 144, 149-150). En el resto se buscaron palabras clave (Mercosur, acuerdos comerciales, libre comercio, importaciones, eólica, marina, indulto, Ceuta, Melilla, Fuerzas Armadas, Ministerio de Igualdad, ocupación, desalojo, salario mínimo, prisión permanente, vivienda social y pública, extranjeros, concierto, regularización, referéndum, castellano, concertada).\n\n(3) Citas. Cada fragmento (separado por [...]) se comprobó con norm() de verify_quotes.py contra el .txt catalogado y contra el texto de la página o páginas declaradas: las 19 citas son literales y están en su página; tienen 60 palabras o menos (6 a 57, sin contar los [...]). q29 no lleva cita (null).\n\n(4) Valor. Se juzgó contra el texto exacto de cada afirmación y su contexto (preguntas.json), sin partir del valor del codificador, y se comparó con el valor y la nota de los demás partidos en fase1.json para la misma afirmación (en especial Adelante Andalucía en q01, q05, q09, q11, q30 y q33, Coalición Canaria en q33, el BNG en q09, q11 y q16, y el PSOE en q29).\n\n(5) Precedencia. El programa va primero cuando trata la medida al menos tan directamente como la fuente vigente, también si rebaja el valor (q30) o si de él no sale una posición situable (q29); si no la trata o lo hace de forma menos directa sin contradecirla, se conserva la vigente. Las 20 «sustituye» coinciden campo a campo con la celda vigente en fase1.json (en las null, con la nota de codificacion_g2.json, porque fase1.json no guarda notas de las null), y el grupo de procedencia es correcto.\n\nMecanismo. build_fase1.py lee codificacion_g14.json, con esta verificación como puerta, después de g1-g13, y g14 pisa solo sus 20 celdas del Frente Amplio. La corrección de q33 se aplicó en codificacion_g14.json y se anotó en notas_g14.md (sección «Verificación»).",
+ "cambios": [
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q33",
+   "antes": -2,
+   "despues": -1,
+   "motivo": "Valor del codificador −2 → −1: un «acuerdo marco vinculante» entre comunidades, en una subordinada, no es un rechazo expreso y prioritario de suprimir el reparto. La celda vigente ya era −1 (manifiesto de UPC): con la corrección solo cambia la fuente."
+  }
+ ],
+ "correcciones_de_campos": [
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q33",
+   "campo": "valor, nota, motivo_cambio",
+   "motivo": "APLICADA por el verificador el 16-nov en codificacion_g14.json: valor −1; nota con el prefijo «Verificación independiente (16-nov): corregida, −1 (antes −2)» y el razonamiento; motivo_cambio «Mismo valor (−1); cambia la fuente», con referencia a esta verificación. cita, página y sustituye no cambian."
+  },
+  {
+   "partido": "(notas)",
+   "pregunta": "—",
+   "campo": "notas_g14.md",
+   "motivo": "Cosmético, no aplicado: la cabecera dice que partidos.json cataloga el sha256 del texto; partidos.json solo guarda la ruta del .txt (el hash coincide con «fuentes» y con una extracción nueva). La tabla y el resumen de notas_g14.md conservan el −2 del codificador; la sección «Verificación» añadida al final recoge el valor final."
+  }
+ ],
+ "posiciones": [
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q01",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Citas literales: «Limitaremos por ley [...] zonas tensionadas» en la p. 13 (impresa 16) y la declaración «obligatoria y automática» de zona tensionada, con activación de oficio por el Ministerio si la comunidad se niega, en la p. 14 (impresa 17). Un tope fijado por ley estatal con fórmula estatal (el menor entre el 25 % de la renta media de la sección censal y el SERPAVI), que se aplica en toda zona que cumpla los parámetros sin que la comunidad pueda impedirlo, es la medida de la afirmación; es además la primera medida de la introducción («toparemos las rentas», p. 7). +2, el mismo diseño que Adelante Andalucía (+2: índice estatal y declaración automática sin depender de la comunidad). El PSOE (+1) solo congela temporalmente las rentas y Compromís (+1) da la declaración a los ayuntamientos. Sustituye al +1 de la nota de Ara Més–Front Ampli (6-nov), menos directa. Ver duda 4."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q03",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 18, impresa 21; termina en la p. 19, impresa 22; el [...] salta la cabecera de página). Exención total del ITP para la primera vivienda habitual con topes de ingresos y precio, a cualquier edad, sin IVA ni límite de 40 años: misma dirección con otra medida, +1, como Compromís, ERC, SALF y Vox. Mismo valor que el programa de Compromís: Front Valencià; cambia solo la fuente (el programa propio va primero)."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q04",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 45, impresa 50; las dos frases están en la misma medida). Reforma el Impuesto de Solidaridad de las Grandes Fortunas (el de la afirmación) para ampliarlo (umbral de 3 a 1 millón, tipos +2/+3 puntos) y dice que «mantendrá su carácter estatal y complementario»: mantenerlo sin plazo y ampliarlo es hacerlo permanente. +2, como Compromís («mantindrem i ampliarem») y ERC; el PSOE (+1) no nombra el impuesto. Solo cambia la fuente."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q05",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (p. 46, impresa 51). Coincide en rebajar el IRPF a las rentas bajas (exención efectiva para quien cobre el SMI y rebaja decreciente hasta 27.000 €), pero propone más tramos desde 120.000 € y marginales de hasta el 52 %: lo contrario de dos tipos del 15 % y el 25 %, sin rechazar expresamente la propuesta. −1, como Adelante Andalucía (tipos «mucho más altos» desde 100.000 €). Celda nueva (antes null)."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q06",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 55, impresa 61; el [...] une el título del epígrafe con su primera medida). «Implantación inmediata a 37,5 horas en 2026», sin rebaja salarial (lo dice el epígrafe), como primer paso hacia 32 horas; la introducción lo repite («empezando por las 37,5 horas de forma inmediata», p. 7). Es la medida de la afirmación, expresa y prioritaria: +2, como ERC y el PSOE. Sube desde el +1 del programa de Compromís: Front Valencià, que solo hablaba de 32 horas."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q08",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 57, impresa 63), primera medida del epígrafe de jubilación. Devolver la edad ordinaria a los 65 años para todos, sin limitarlo a colectivos (los oficios penosos, a los 60, van aparte): +2, como el BNG y Compromís. Solo cambia la fuente."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q09",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 26, impresa 30). Gestión directa como «vía general», derogación de la Ley 15/1997 y gestión indirecta «estrictamente excepcional», más un plan de internalización paulatina. No prohíbe pagar a centros privados: la gestión indirecta sigue siendo posible y la p. 29 (impresa 33) da por hecho que se seguirá derivando pacientes a «centros concertados». +1, como Compromís, Podemos y UPC; Adelante Andalucía («fin de los conciertos») y el BNG (provisión «exclusivamente pública») tienen +2. Solo cambia la fuente."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q11",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 31, impresa 35). «Hoja de ruta progresiva» para que todo el alumnado vaya a la pública, un «periodo de coexistencia con centros concertados» y el objetivo de que «el 100 % de los fondos públicos» vaya a la pública: retirar poco a poco la financiación de la concertada hasta suprimirla, como propuesta propia. No fija el orden por etapas, igual que Adelante Andalucía (+2, «eliminar progresivamente la privada-concertada»); el BNG (+2) va «no camiño da supresión dos concertos». La p. 150 (impresa 177) suprime además los conciertos con escuelas que segregan. +2. Celda nueva. Ver duda 5."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q12",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 32, impresa 36). Garantizar la inmersión en catalán como lengua vehicular en Cataluña es incompatible con un mínimo de castellano fijado por ley o por tribunales, pero solo se dice de Cataluña y sin hablar de porcentajes ni de que decida cada comunidad: +1 (indirecta), como el BNG y Junts; ERC (+2) pide expresamente impedir los porcentajes. La ley de plurilingüismo de la p. 141 trata la relación con las instituciones, no la escuela. Celda nueva."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q16",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 140, impresa 167; párrafo destacado). «El derecho a decidir mediante referéndum para resolver definitivamente la cuestión territorial» dentro de un cambio constitucional hacia un Estado federal y plurinacional «que regule el referéndum». «Derecho a decidir» y «cuestión territorial» son los términos del referéndum de autodeterminación, así que la posición es indirecta pero inequívoca a favor de que pueda votarse; pero es un objetivo a debatir («Promoveremos el debate»), dentro de una reforma constitucional y sin proponer que el Gobierno pacte ya un referéndum con una comunidad. +1, como Podemos, Junts y EH Bildu; el BNG (+2) propone los cambios legales para referendos de autodeterminación y ERC (+2) negociar uno. No es el caso de Compromís (null), que solo habla de Estado plurinacional y referendos en general. Celda nueva. Ver duda 6."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q18",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 104, impresa 118). Condonar deuda autonómica a todas las comunidades, condicionada a que no hagan dumping fiscal, sin cifra: apoya que el Estado asuma deuda, con una condición que no está en la afirmación y sin la cuantía. +1, como Adelante Andalucía y Podemos; PSOE y ERC (+2) proponen los 83.000 millones o el proyecto de ley. Solo cambia la fuente (el programa es más general que el de Compromís: Front Valencià, que se limitaba a la Generalitat Valenciana)."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q21",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 28, impresa 32). Reformar el artículo 43 de la Constitución para incluir el derecho al aborto; lo repiten la p. 37 (impresa 41, «blindaje constitucional del aborto») y la p. 140 (impresa 167). +2. Solo cambia la fuente."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q24",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 142, impresa 169), primera medida del apartado 18.3. «Derogaremos por completo la Ley Mordaza»: es la afirmación, +2. La medida siguiente (multas proporcionales) no habla de otra ley. Solo cambia la fuente."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q26",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal (p. 130, impresa 155). Rechaza «de forma explícita» el compromiso del 5 % del PIB de La Haya (que incluye el 3,5 % de defensa) e impulsa «una reducción efectiva de las partidas militares»: rechazo expreso y propuesta contraria, −2, como Podemos, Adelante Andalucía, EH Bildu y el BNG; el PSOE (−1) solo rechaza el 5 %. Celda nueva."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q29",
+   "veredicto": "ok",
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "Sin cita (null). La única medida del programa sobre el acuerdo es «Relaciones con América Latina y salvaguardas en el Acuerdo UE-Mercosur» (p. 133, impresa 158): «Bajo la aplicación del Acuerdo UE-Mercosur, se fiscalizarán los compromisos [...] activando cláusulas de salvaguarda» (texto comprobado). No pide frenarlo ni lo defiende. Se confirma que sustituye al +2 de Valero (17-feb-2026) y no se conserva: ver duda 1."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q30",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 56, impresa 62), primera medida del epígrafe «Fijación de precios máximos en la cesta básica de alimentos». Topes máximos a los alimentos básicos «condicionados a situaciones de emergencia o abuso acreditado»; la p. 57 (impresa 63) faculta a la CNMC para fijar precios máximos ante márgenes abusivos. A favor con condiciones: +1, como Adelante Andalucía (topes temporales ante subidas abusivas), EH Bildu y el BNG. Baja desde el +2 de la nota de Ara Més–Front Ampli (7-nov): ver duda 2."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q31",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 14, impresa 17). Contrato indefinido por defecto y, en la transición, «prórroga obligatoria del contrato en periodos automáticos de 5 años (7 años cuando el casero sea persona jurídica)»: es la afirmación y va más allá. +2. Solo cambia la fuente (antes Bustinduy, 12-nov)."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q33",
+   "veredicto": "corregido",
+   "valor_codificador": -2,
+   "valor_final": -1,
+   "motivo": "Cita literal (p. 41, impresa 45). Un «acuerdo marco vinculante para un reparto solidario y equitativo entre comunidades autónomas» de la infancia migrante no acompañada defiende un reparto obligatorio, lo contrario de suprimirlo: en contra. Pero −1 y no −2: no rechaza expresamente suprimir el reparto ni defiende el mecanismo vigente (el traslado que ordena el Estado), sino otro instrumento, un acuerdo marco entre administraciones, y lo hace en una subordinada de la medida del Plan Integral, sin prioridad. Coalición Canaria (−2) dedica un epígrafe a la «Solidaridad obligatoria y automática», con traslados «sin depender de negociaciones caso a caso»; Adelante Andalucía (−1) propone un «pacto de Estado [...] con reparto solidario», que es la forma de esta medida. Ante la duda entre dos valores, el más prudente. Corregido en codificacion_g14.json: valor −1, nota y motivo_cambio; queda como cambio solo de fuente (antes −1, manifiesto de UPC). Ver duda 3."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q34",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 132, impresa 157). Retirar el apoyo al plan de autonomía marroquí y defender un referéndum de autodeterminación supervisado por la ONU (que «deberá incluir expresamente la opción de la independencia»): es la afirmación, +2. Solo cambia la fuente."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal (p. 64, impresa 71). Cumplir el calendario de cierre y cerrar Almaraz I y II en 2027-2028, sin la prórroga hasta 2030: rechazo expreso de alargar las centrales, −2. Solo cambia la fuente (antes Martínez Barbero, 9-sep-2026)."
+  }
+ ],
+ "resolucion_dudas_codificador": [
+  {
+   "duda": 1,
+   "tema": "q29: +2 (Valero) → null por la medida del programa sobre el Acuerdo UE-Mercosur",
+   "resolucion": "null, como propone el codificador. La regla de precedencia conserva la posición de campaña cuando el programa no trata la medida o lo hace de forma menos directa sin contradecirla. Aquí el programa trata el acuerdo de forma más directa que ninguna otra fuente (una medida cuyo título lo nombra) y fija qué hará el partido con él: fiscalizarlo «bajo la aplicación» y activar salvaguardas. Es la posición que el proyecto ya distinguió de frenarlo (criterio verificado en g4: «las salvaguardas no equivalen a frenar Mercosur»; Compromís, rechazada en g4 por pedir proteger al campo y no frenar el acuerdo; el PSOE, −1, celebra la firma y valora las salvaguardas). Además, cuando el programa quiere parar un acuerdo de la UE lo dice: pide la «suspensión efectiva» y la denuncia del Acuerdo de Asociación UE-Israel (pp. 132 y 137) y votar en contra en el Consejo de los acuerdos con Marruecos que incluyan el Sáhara (p. 132). Con Mercosur elige la salvaguarda. Un +2 («propone de forma expresa y prioritaria» pedir que se frene) es incompatible con esa medida, y la declaración de Valero es anterior a la convocatoria: «lo que el partido diga después (programa o campaña) prevalece sobre lo anterior» y, si el programa y un líder se contradicen, prevalece el programa. Tampoco cabe +1 (nada en el programa se opone al acuerdo) ni −1 (no lo celebra ni rechaza frenarlo). Queda null. Es la primera celda que pasa de un valor a null por un programa: queda en «dudas» para el editor, con la alternativa de conservar +2."
+  },
+  {
+   "duda": 2,
+   "tema": "q30: +2 → +1",
+   "resolucion": "+1. El programa va primero y trata la medida de forma más directa que la nota de Ara Més–Front Ampli (un epígrafe propio, «Fijación de precios máximos en la cesta básica de alimentos»), así que su valor prevalece también cuando es más bajo: limitar los topes a «situaciones de emergencia o abuso acreditado» es a favor con condiciones. Mismo criterio que Adelante Andalucía (+1, «Límites temporales [...] ante subidas abusivas») y EH Bildu (+1, medida de emergencia). La nota de Ara Més es además de otra candidatura que solo cuenta para el Frente Amplio como documento conjunto; el programa es la fuente propia."
+  },
+  {
+   "duda": 3,
+   "tema": "q33: −2 o −1 por el «acuerdo marco vinculante»",
+   "resolucion": "−1 (corregido). Ver «posiciones», q33: la dirección es inequívoca, pero ni es un rechazo expreso de suprimir el reparto ni una propuesta prioritaria; el instrumento es un acuerdo marco entre administraciones, más cerca del «pacto de Estado» de Adelante Andalucía (−1) que de la «solidaridad obligatoria y automática» de Coalición Canaria (−2). Ante la duda entre dos valores, el más prudente (criterio de g11 y g12)."
+  },
+  {
+   "duda": 4,
+   "tema": "q01: +2 o +1 con un tope limitado a las zonas tensionadas",
+   "resolucion": "+2. La afirmación pide un precio máximo fijado por ley estatal que no dependa de que lo pida cada comunidad. El programa lo fija por ley con fórmula estatal y hace la declaración de zona tensionada obligatoria y automática, con activación de oficio por el Ministerio si la comunidad se niega: ninguna comunidad puede impedir el tope donde se cumplan los parámetros. Es el mismo diseño que el de Adelante Andalucía (+2) y va en la introducción como primera medida de vivienda. El PSOE y Compromís (+1) no quitan a las comunidades la llave (congelación temporal y mapa del Ministerio; declaración por los ayuntamientos)."
+  },
+  {
+   "duda": 5,
+   "tema": "q11: +2 sin «empezando por las etapas no obligatorias»",
+   "resolucion": "+2. El núcleo de la afirmación es retirar la financiación poco a poco hasta suprimirla; el orden por etapas es un detalle de calendario. El programa propone la gradualidad («hoja de ruta progresiva», «periodo de coexistencia») y el fin («el 100 % de los fondos públicos» a la pública). Mismo criterio que Adelante Andalucía (+2), que tampoco fija el orden; el BNG (+2) sí lo fija. No hay ningún +1 en q11 por omitir el orden."
+  },
+  {
+   "duda": 6,
+   "tema": "q16: +1 o null",
+   "resolucion": "+1. «Derecho a decidir mediante referéndum para resolver definitivamente la cuestión territorial» no es una referencia genérica a referendos (el caso de Compromís, null): nombra el referéndum sobre la cuestión territorial con el término con que se reclama el de autodeterminación. Es indirecta (no dice independencia ni pacto del Gobierno con una comunidad) y condicionada a una reforma constitucional que se propone debatir: +1, no +2. Mismo valor que Podemos («que voten»), Junts y EH Bildu."
+  },
+  {
+   "duda": 7,
+   "tema": "q17: se conserva el +1 del programa de Compromís: Front Valencià",
+   "resolucion": "Correcto según la regla. El programa del Frente Amplio trata la financiación autonómica (11.1, p. 103, impresa 117) pero no el concierto: propone reformar el sistema común a partir de la propuesta del Gobierno, con más capacidad tributaria de las comunidades, y que el nuevo modelo «acomode la voluntad de mayor autogobierno que han expresado algunas comunidades autónomas». No rechaza el concierto para quien lo pida y deja abierta la vía singular, así que trata la medida de forma menos directa sin contradecirla y se conserva el documento conjunto (que firman EUPV y Recortes Cero). Es la misma regla que conserva las fuentes de campaña en q13, q22, q23, q32 y q35. Queda en «dudas» la observación del verificador de g10 sobre atribuir a un partido estatal el concierto valenciano: es una cuestión de la regla de documentos conjuntos, no de este programa."
+  },
+  {
+   "duda": 8,
+   "tema": "q15: null o +1 por un «procedimiento estable, permanente y reglado de regularización»",
+   "resolucion": "null. La afirmación es aprobar otra regularización extraordinaria como la de 2026. Un procedimiento permanente de regularización en la Ley de Extranjería y culminar la de 2026 (p. 126, impresa 149) son medidas relacionadas pero distintas: el proyecto ha dejado en null el mismo caso en el BNG («favorecer [...] os procesos de regularización administrativa»), el PNV, ERC y Compromís, y en el propio Frente Amplio (Delgado, defender la de 2026 no es posición sobre repetirla). La analogía con q03 no vale: allí la medida distinta es una rebaja de los mismos impuestos de la afirmación; aquí un mecanismo ordinario es, si acaso, la alternativa a las regularizaciones extraordinarias. Solo Adelante Andalucía (+2) propone expresamente una regularización extraordinaria."
+  }
+ ],
+ "celdas_no_tocadas": [
+  "Se conservan (el programa no trata la medida o lo hace de forma menos directa sin contradecirla), comprobado página a página y con búsqueda de palabras clave: q13 (−1, Delgado: el programa no trata el acceso de extranjeros a la vivienda social; la p. 38 da prioridad en vivienda pública a las víctimas de violencia machista y la ley antirracismo de la p. 126 va en la misma dirección), q17 (+1, duda 7), q22 (−1, Bustinduy: el programa no menciona el Ministerio de Igualdad; reserva por ley el 5 % del presupuesto a políticas de igualdad, p. 38), q23 (−1, Pisarello: no trata la ocupación ni los desalojos de ocupantes; «Ni un desahucio más», p. 15, es otra medida), q32 (+1, nota de Ara Més–Front Ampli: el programa solo fija un suelo legal del SMI estatal al 60 % del salario medio, p. 51; no contradice salarios mínimos autonómicos por encima) y q35 (−2, Santiago: no menciona la prisión permanente revisable; amplía las penas no privativas de libertad, p. 149).",
+  "Siguen en null, confirmado: q15 (duda 8), q19 (renovables en general, repotenciación de parques en tierra y protección marina, pp. 61-62 y 71; la palabra «eólica» solo aparece en la compensación a «zonas de sacrificio» por grandes parques terrestres, p. 48; nada de eólica marina), q25 (medidas anticorrupción en pp. 141-142, sin indultos: la palabra no aparece en el programa) y q27 (deroga el «rechazo en frontera», control independiente en la Frontera Sur, p. 126, desmilitarización de la Guardia Civil, p. 144, y del modelo de seguridad, p. 130; nada sobre las Fuerzas Armadas en Ceuta: medidas distintas, ante la duda null).",
+  "Otros partidos: ninguna celda cambia. El programa cuenta solo para frente_amplio (partidos.json, «programa_aplicable»); Ara Més–Front Ampli, Compromís, UPC y Podemos son otras candidaturas y la regla de documentos conjuntos va en el otro sentido."
+ ],
+ "posiciones_no_recogidas": "No se encontró ninguna afirmación en la que el programa tome una posición clara que el codificador no haya recogido. Las más cercanas: q15 (procedimiento permanente de regularización, duda 8), q27 (desmilitarización de la Guardia Civil y de la seguridad: no dice nada del Ejército en Ceuta), q32 (SMI estatal al 60 %), q19 (renovables en tierra), q25 (anticorrupción sin indultos) y q35 (penas no privativas de libertad); todas medidas distintas o menos directas que la fuente conservada. q20 está retirada.",
+ "recuento": {
+  "antes": {
+   "frente_amplio": 21
+  },
+  "despues": {
+   "frente_amplio": 25
+  },
+  "cambios_de_valor": [
+   "frente_amplio q01 +1→+2",
+   "frente_amplio q06 +1→+2",
+   "frente_amplio q30 +2→+1",
+   "frente_amplio q29 +2→null"
+  ],
+  "celdas_nuevas": [
+   "frente_amplio q05 −1, q11 +2, q12 +1, q16 +1, q26 −2"
+  ],
+  "solo_fuente": [
+   "frente_amplio q03 q04 q08 q09 q18 q21 q24 q31 q33 q34 q36"
+  ],
+  "nota": "El codificador contaba q33 como cambio de valor (−1→−2); tras la corrección es solo de fuente: 4 cambios de valor (uno a null), 5 nuevas y 11 solo de fuente.",
+  "despues_detalle": {
+   "con_valor": 25,
+   "a_favor": 17,
+   "en_contra": 8,
+   "null": 5,
+   "null_preguntas": "q15 q19 q25 q27 q29"
+  },
+  "build": "Comprobado en una copia del repositorio (scratchpad/g14_ver): python3 -I pipeline/build_fase1.py termina sin errores (exit 0), aplica g14 después de g13 y cambia exactamente las 20 celdas del Frente Amplio de g14 (q29 a null); ningún otro partido ni afirmación cambia. En el repositorio no se ha regenerado fase1.json."
+ },
+ "dudas": [
+  "frente_amplio/q29 (null): primera celda que pasa de un valor (+2, Valero en el Pleno, 17-feb-2026, reiterado el 24-jun) a null por el programa. Alternativa: conservar +2 si el editor entiende que «Bajo la aplicación del Acuerdo» describe el hecho de que se aplica provisionalmente desde mayo y no excluye seguir pidiendo frenarlo. El verificador no lo recomienda: el programa elige salvaguardas para Mercosur mientras pide suspender o votar contra otros acuerdos de la UE (Israel, Marruecos-Sáhara), y conservarlo mostraría a quien vota un «muy a favor» que su programa no sostiene.",
+  "frente_amplio/q33 (−1): alternativa −2 si el editor da más peso a «vinculante» que a la forma de acuerdo marco y a la falta de prioridad; con −2 se trataría como Coalición Canaria.",
+  "frente_amplio/q01 (+2): alternativa +1 si se exige un tope general y no limitado a las zonas tensionadas; con +1 habría que revisar también Adelante Andalucía (+2), de diseño equivalente.",
+  "frente_amplio/q17 (+1, documento conjunto de Compromís: Front Valencià): el programa propio no habla del concierto. Se conserva por la regla de precedencia; el editor puede querer revisar si un documento conjunto regional debe sostener la posición de un partido estatal cuando su programa propone otro modelo de financiación (observación ya hecha en g10).",
+  "Páginas: las del PDF. La numeración impresa va de +2 a +27 por encima; las notas dan las dos."
+ ]
+}

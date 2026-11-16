@@ -1,381 +1,10 @@
 {
  "partido": "frente_amplio",
- "base": "compromisos",
+ "base": "complemento",
  "modelo": "Claude (Anthropic)",
- "fecha": "2026-11-12",
- "nota": "Hay menos de 12 compromisos que el propio partido presente como centrales: se seleccionan 11. Fuera quedan la financiación de la jubilación (fa-c09, se evalúa dentro de fa-c08), las propuestas ferroviarias catalanas de Ernest Urtasun (fa-c12, fa-c13) y las del programa gallego de Fronte Ampla (fa-c15 a fa-c18), que la candidatura estatal no ha destacado.",
+ "fecha": "2026-11-16",
+ "nota": "Compromisos de dirigentes del Frente Amplio que no figuran en el programa «Un programa como una casa» publicado el 16-nov (data/sources/programas/frente_amplio/ProgramaFrenteAmplio.txt, páginas del PDF de 151 págs.) y que el partido presenta como importantes; complementarían las 12 prioridades del programa (data/programas/frente_amplio/evaluacion.json). Hasta el 16-nov esta carpeta tenía base «compromisos» (11 prioridades evaluadas y revisadas el 12-nov); al publicarse el programa, las 11 están en él, a veces con otras palabras, con otro instrumento o concretadas, y pasan a «descartados», junto con cuatro compromisos no priorizados que también recoge (fa-c13, fa-c15, fa-c16 y fa-c17). Por eso «prioridades» está vacío y no hay evaluación (prompt 1b). Los tres compromisos seleccionados que no figuran en el programa, o no en esos términos (fa-c09, fa-c12 y fa-c18), no eran prioridades y siguen sin priorizar. Cada compromiso se buscó en las 857 medidas de data/programas/frente_amplio/extraccion.json y en el texto completo del programa, por sus términos y por sinónimos. Nota anterior (base «compromisos», 12-nov): Hay menos de 12 compromisos que el propio partido presente como centrales: se seleccionan 11. Fuera quedan la financiación de la jubilación (fa-c09, se evalúa dentro de fa-c08), las propuestas ferroviarias catalanas de Ernest Urtasun (fa-c12, fa-c13) y las del programa gallego de Fronte Ampla (fa-c15 a fa-c18), que la candidatura estatal no ha destacado.",
  "compromisos": [
-  {
-   "id": "fa-c01",
-   "area": "vivienda",
-   "resumen": "Aprobar una Ley de Expropiación de Viviendas a Propietarios Corporativos Privados que se aplicaría en tres fases: empresas con más de 1.000 viviendas, después más de 700 y por último más de 50; las familias quedan fuera.",
-   "cita": "La ley se aplicará de forma progresiva sobre el stock residencial de los grandes tenedores corporativos, en tres fases: Primera fase: entidades con más de 1.000 viviendas, como Blackstone o CaixaBank. Segunda fase: tenedores de más de 700 viviendas. Tercera fase: empresas propietarias de más de 50 inmuebles.",
-   "quien": "Frente Amplio (nota oficial); medida presentada en Málaga por Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-   "formato": "documento oficial (nota de prensa sobre el acto de presentación)",
-   "fecha": "2026-11-06",
-   "url": "https://frenteamplio.info/noticias/frente-amplio-propone-malaga-ley-expropiar-vivienda-grandes-fondos-inversion/",
-   "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-06_expropiacion_malaga.txt",
-   "sha256": "effc28d19004714c980d41ff22f955b2d11cc48e23f93e8f934c48684471b6a8",
-   "cuantificado": true,
-   "veces": {
-    "n": 4,
-    "ocasiones": [
-     {
-      "fecha": "2026-11-06",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://frenteamplio.info/noticias/frente-amplio-propone-malaga-ley-expropiar-vivienda-grandes-fondos-inversion/",
-      "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-06_expropiacion_malaga.txt",
-      "nota": "Presentación en Málaga; la nota la llama «una de las medidas estrella de nuestro programa de vivienda»."
-     },
-     {
-      "fecha": "2026-11-06",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://www.eldiario.es/politica/frente-amplio-plantea-ley-expropiar-viviendas-fondos-buitre_1_13643839.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/frente_amplio/eldiario_2026-11-06_expropiacion.txt",
-      "nota": "Declaraciones a los medios en Málaga: expropiaciones «inmediatamente» si el Frente Amplio entra en el Gobierno (cita entrecomillada)."
-     },
-     {
-      "fecha": "2026-11-06",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://www.publico.es/politica/frente-amplio-propone-ley-expropiacion-fondos-buitre-recuperar-100-000-viviendas.html",
-      "medio": "Público (EFE)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/publico_efe_2026-11-06_expropiacion.txt",
-      "nota": "Crónica de EFE: unas 100.000 viviendas; «a precios inferiores del mercado» figura solo en estilo indirecto."
-     },
-     {
-      "fecha": "2026-11-07",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://democrata.es/actualidad/frente-amplio-promete-expropiar-viviendas-fondos-buitre-elevar-impuestos-grandes-fortunas",
-      "medio": "Demócrata",
-      "fuente_local": "data/sources/compromisos/frente_amplio/democrata_2026-11-07_mitin_barcelona.txt",
-      "nota": "Mitin en La Sagrera (Barcelona): «No nos temblará la mano a la hora de expropiar a esos fondos buitre»."
-     },
-     {
-      "fecha": "2026-11-08",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://www.publico.es/politica/ada-colau-llegado-momento-efectivo-derecho-vivienda-acabar-especulacion-pais.html",
-      "medio": "Público (EFE)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/publico_efe_2026-11-08_palma.txt",
-      "nota": "Acto en Palma: la crónica recoge en estilo indirecto «recurrir a la expropiación de grandes propietarios»."
-     },
-     {
-      "fecha": "2026-11-10",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://www.publico.es/politica/colau-revuelta-impuestos-son-sexis-sobre-paga.html",
-      "medio": "Público",
-      "fuente_local": "data/sources/compromisos/frente_amplio/publico_2026-11-10_la_revuelta.txt",
-      "nota": "Entrevista en «La Revuelta» (TVE): la crónica cita la expropiación de más de 100.000 viviendas entre las «medidas estrella» (palabras del medio)."
-     }
-    ]
-   },
-   "nota": "La cifra de 100.000 viviendas y el pago «a precios inferiores del mercado» solo constan en declaraciones recogidas por la prensa (EFE); la nota oficial no cuantifica viviendas, coste ni justiprecio."
-  },
-  {
-   "id": "fa-c02",
-   "area": "vivienda",
-   "resumen": "Adscribir obligatoriamente al parque público de vivienda todas las fincas urbanas y suelos residenciales de la Sareb.",
-   "cita": "De forma paralela, proponemos adscribir obligatoriamente todas las fincas urbanas y suelos residenciales de la SAREB al parque público de vivienda.",
-   "quien": "Frente Amplio (nota oficial); presentada junto a la ley de expropiación por Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-   "formato": "documento oficial (nota de prensa)",
-   "fecha": "2026-11-06",
-   "url": "https://frenteamplio.info/noticias/frente-amplio-propone-malaga-ley-expropiar-vivienda-grandes-fondos-inversion/",
-   "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-06_expropiacion_malaga.txt",
-   "sha256": "effc28d19004714c980d41ff22f955b2d11cc48e23f93e8f934c48684471b6a8",
-   "cuantificado": false,
-   "veces": {
-    "n": 1,
-    "ocasiones": [
-     {
-      "fecha": "2026-11-06",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://frenteamplio.info/noticias/frente-amplio-propone-malaga-ley-expropiar-vivienda-grandes-fondos-inversion/",
-      "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-06_expropiacion_malaga.txt",
-      "nota": "Misma nota oficial que la ley de expropiación."
-     },
-     {
-      "fecha": "2026-11-06",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://www.eldiario.es/politica/frente-amplio-plantea-ley-expropiar-viviendas-fondos-buitre_1_13643839.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/frente_amplio/eldiario_2026-11-06_expropiacion.txt",
-      "nota": "elDiario.es recoge la exigencia entrecomillada del Frente Amplio."
-     }
-    ]
-   }
-  },
-  {
-   "id": "fa-c03",
-   "area": "fiscalidad",
-   "resumen": "Crear un impuesto anual del 10 % sobre el valor de cada vivienda que no se alquile de forma asequible y estable: para empresas desde la primera vivienda y para personas físicas desde la cuarta si el valor conjunto supera 800.000 euros.",
-   "cita": "Para las empresas, el impuesto se aplicará desde la primera vivienda, y a las personas físicas se hará a partir de la cuarta casa en adelante –en este caso, siempre que las propiedades tengan un valor conjunto de más de 800.000 euros–. Se gravará con un tipo del 10 % del valor de cada vivienda, salvo si se alquilan de forma asequible y estable.",
-   "quien": "Frente Amplio (nota oficial); medida anunciada por Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno en la Cadena SER",
-   "formato": "documento oficial (nota de prensa)",
-   "fecha": "2026-10-28",
-   "url": "https://frenteamplio.info/noticias/frente-amplio-propone-impuesto-acumulacion-vivienda/",
-   "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-10-28_impuesto_acumulacion.txt",
-   "sha256": "fa876abdabfbdacb41f105c34827e733aaca6d5c949f7c2cfc57ed3428ab237e",
-   "cuantificado": true,
-   "veces": {
-    "n": 3,
-    "ocasiones": [
-     {
-      "fecha": "2026-10-28",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://www.eldiario.es/politica/colau-propone-impuesto-disuasorio-10-multipropietarios-no-sea-rentable-especular_1_13620560.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/frente_amplio/eldiario_2026-10-28_impuesto_10.txt",
-      "nota": "Entrevista en la Cadena SER: impuesto «disuasorio» para «que no sea rentable especular»."
-     },
-     {
-      "fecha": "2026-10-28",
-      "quien": "Frente Amplio (nota oficial)",
-      "url": "https://frenteamplio.info/noticias/frente-amplio-propone-impuesto-acumulacion-vivienda/",
-      "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-10-28_impuesto_acumulacion.txt",
-      "nota": "Nota oficial con umbrales, excepciones y cifras de viviendas afectadas."
-     },
-     {
-      "fecha": "2026-11-05",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://frenteamplio.info/noticias/frente-amplio-propone-subir-impuestos-grandes-fortunas-empresas-mejorar-servicios/",
-      "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-05_impuestos.txt",
-      "nota": "Nueva Economía Fórum (Madrid): uno de los tres impuestos «que formarán parte del programa económico»."
-     },
-     {
-      "fecha": "2026-11-08",
-      "quien": "Emilio Delgado, cabeza de lista del Frente Amplio por Madrid",
-      "url": "https://www.democrata.es/politica/delgado-promete-nuevas-subidas-del-smi-y-acusa-al-pp-de-fomentar-la-delincuencia-con-sus-politicas-fiscales/",
-      "medio": "Demócrata (Europa Press)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/democrata_ep_2026-11-08_delgado.txt",
-      "nota": "Entrevista con Europa Press: menciona un gravamen que desincentive la acumulación especulativa de vivienda (estilo indirecto)."
-     }
-    ]
-   }
-  },
-  {
-   "id": "fa-c04",
-   "area": "vivienda",
-   "resumen": "Elevar la inversión pública en vivienda hasta el 1 % del PIB para ampliar un parque público asequible protegido de forma permanente, financiada en parte con el impuesto a la acumulación.",
-   "cita": "la medida se acompañará, y financiará en parte con lo recaudado, de una inversión histórica hasta alcanzar el 1 % del PIB para la ampliación del parque público de vivienda asequible, protegida de forma permanente, mediante la construcción, adquisición y rehabilitación.",
-   "quien": "Frente Amplio (nota oficial); medida anunciada por Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-   "formato": "documento oficial (nota de prensa)",
-   "fecha": "2026-10-28",
-   "url": "https://frenteamplio.info/noticias/frente-amplio-propone-impuesto-acumulacion-vivienda/",
-   "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-10-28_impuesto_acumulacion.txt",
-   "sha256": "fa876abdabfbdacb41f105c34827e733aaca6d5c949f7c2cfc57ed3428ab237e",
-   "cuantificado": true,
-   "veces": {
-    "n": 2,
-    "ocasiones": [
-     {
-      "fecha": "2026-10-28",
-      "quien": "Frente Amplio (nota oficial)",
-      "url": "https://frenteamplio.info/noticias/frente-amplio-propone-impuesto-acumulacion-vivienda/",
-      "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-10-28_impuesto_acumulacion.txt",
-      "nota": "Nota oficial."
-     },
-     {
-      "fecha": "2026-10-28",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://www.eldiario.es/politica/colau-propone-impuesto-disuasorio-10-multipropietarios-no-sea-rentable-especular_1_13620560.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/frente_amplio/eldiario_2026-10-28_impuesto_10.txt",
-      "nota": "Entrevista en la Cadena SER: ampliación del parque público, algo que «lleva mucho tiempo» (la cifra del 1 % la da el medio)."
-     },
-     {
-      "fecha": "2026-11-08",
-      "quien": "Emilio Delgado, cabeza de lista del Frente Amplio por Madrid",
-      "url": "https://www.democrata.es/politica/delgado-promete-nuevas-subidas-del-smi-y-acusa-al-pp-de-fomentar-la-delincuencia-con-sus-politicas-fiscales/",
-      "medio": "Demócrata (Europa Press)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/democrata_ep_2026-11-08_delgado.txt",
-      "nota": "Entrevista con Europa Press: dedicar un 1 % del PIB al parque público (estilo indirecto)."
-     }
-    ]
-   }
-  },
-  {
-   "id": "fa-c05",
-   "area": "fiscalidad",
-   "resumen": "Crear un impuesto estatal anual sobre el patrimonio neto del 2 % a partir de un millón de euros y del 3 % a partir de 50 millones, descontando lo pagado por Patrimonio y Grandes Fortunas.",
-   "cita": "El Frente Amplio propone un impuesto anual sobre el patrimonio neto: un 2% para patrimonios superiores a un millón de euros y un 3% a partir de los 50 millones. La cuota se reduciría en función de lo ya abonado por los impuestos de Patrimonio y Grandes Fortunas.",
-   "quien": "Frente Amplio (nota oficial); medida presentada por Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno en Nueva Economía Fórum",
-   "formato": "documento oficial (nota de prensa sobre un desayuno informativo)",
-   "fecha": "2026-11-05",
-   "url": "https://frenteamplio.info/noticias/frente-amplio-propone-subir-impuestos-grandes-fortunas-empresas-mejorar-servicios/",
-   "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-05_impuestos.txt",
-   "sha256": "97c6d7dac1cbe87430e0dea6de10cfda07a0df76eb9eefcdb56c8dc39040463f",
-   "cuantificado": true,
-   "veces": {
-    "n": 5,
-    "ocasiones": [
-     {
-      "fecha": "2026-10-24",
-      "quien": "Frente Amplio (nota oficial)",
-      "url": "https://frenteamplio.info/noticias/frente-amplio-propone-ninguna-pension-este-debajo-salario-minimo-recuperar/",
-      "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-10-24_pensiones.txt",
-      "nota": "Primera mención: «un impuesto del 2 % a los patrimonios de más de un millón de euros» para financiar la pensión mínima."
-     },
-     {
-      "fecha": "2026-11-05",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://frenteamplio.info/noticias/frente-amplio-propone-subir-impuestos-grandes-fortunas-empresas-mejorar-servicios/",
-      "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-05_impuestos.txt",
-      "nota": "Presentación en Nueva Economía Fórum (hotel Ritz, Madrid)."
-     },
-     {
-      "fecha": "2026-11-05",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://www.eldiario.es/politica/colau-propone-impuesto-tax-the-rich-gravar-patrimonios-millon-euros_1_13639759.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/frente_amplio/eldiario_2026-11-05_tax_the_rich.txt",
-      "nota": "elDiario.es: Colau lo bautizó «tax the rich»."
-     },
-     {
-      "fecha": "2026-11-07",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://democrata.es/actualidad/frente-amplio-promete-expropiar-viviendas-fondos-buitre-elevar-impuestos-grandes-fortunas",
-      "medio": "Demócrata",
-      "fuente_local": "data/sources/compromisos/frente_amplio/democrata_2026-11-07_mitin_barcelona.txt",
-      "nota": "Mitin en Barcelona: «Queremos subir mucho los impuestos a ese 1% que acumula la riqueza»."
-     },
-     {
-      "fecha": "2026-11-08",
-      "quien": "Emilio Delgado, cabeza de lista del Frente Amplio por Madrid",
-      "url": "https://www.democrata.es/politica/delgado-promete-nuevas-subidas-del-smi-y-acusa-al-pp-de-fomentar-la-delincuencia-con-sus-politicas-fiscales/",
-      "medio": "Demócrata (Europa Press)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/democrata_ep_2026-11-08_delgado.txt",
-      "nota": "Entrevista con Europa Press: 2 % desde un millón y 3 % desde 50 millones (estilo indirecto)."
-     },
-     {
-      "fecha": "2026-11-10",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://www.publico.es/politica/colau-revuelta-impuestos-son-sexis-sobre-paga.html",
-      "medio": "Público",
-      "fuente_local": "data/sources/compromisos/frente_amplio/publico_2026-11-10_la_revuelta.txt",
-      "nota": "«La Revuelta»: «Florentino, te vamos a subir los impuestos»; la medida se cita entre las «medidas estrella» (palabras del medio)."
-     }
-    ]
-   }
-  },
-  {
-   "id": "fa-c06",
-   "area": "fiscalidad",
-   "resumen": "Elevar el tipo efectivo del Impuesto sobre Sociedades de las grandes empresas y la banca, con una tributación mínima efectiva del 15 % y revisando sus deducciones, como la compensación de pérdidas.",
-   "cita": "el Frente Amplio propone aumentar el tipo efectivo sobre los beneficios de la gran empresa y la banca, que hoy pagan entre un 7 y un 9%, mientras que las pymes tributan al 19 o 20%. Para ello, se revisarán las desgravaciones de las que se benefician los grandes grupos, como las que obtienen por las pérdidas del año anterior.",
-   "quien": "Frente Amplio (nota oficial); medida presentada por Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno en Nueva Economía Fórum",
-   "formato": "documento oficial (nota de prensa sobre un desayuno informativo)",
-   "fecha": "2026-11-05",
-   "url": "https://frenteamplio.info/noticias/frente-amplio-propone-subir-impuestos-grandes-fortunas-empresas-mejorar-servicios/",
-   "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-05_impuestos.txt",
-   "sha256": "97c6d7dac1cbe87430e0dea6de10cfda07a0df76eb9eefcdb56c8dc39040463f",
-   "cuantificado": true,
-   "veces": {
-    "n": 3,
-    "ocasiones": [
-     {
-      "fecha": "2026-10-24",
-      "quien": "Frente Amplio (nota oficial)",
-      "url": "https://frenteamplio.info/noticias/frente-amplio-propone-ninguna-pension-este-debajo-salario-minimo-recuperar/",
-      "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-10-24_pensiones.txt",
-      "nota": "«una tributación mínima efectiva para las grandes empresas (solo un suelo del 15 % aportaría hasta 10.000 millones al año)»."
-     },
-     {
-      "fecha": "2026-11-05",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://frenteamplio.info/noticias/frente-amplio-propone-subir-impuestos-grandes-fortunas-empresas-mejorar-servicios/",
-      "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-05_impuestos.txt",
-      "nota": "Nueva Economía Fórum."
-     },
-     {
-      "fecha": "2026-11-05",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://www.eldiario.es/politica/colau-propone-impuesto-tax-the-rich-gravar-patrimonios-millon-euros_1_13639759.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/frente_amplio/eldiario_2026-11-05_tax_the_rich.txt",
-      "nota": "elDiario.es: «revisar desgravaciones a los grandes grupos» (entrecomillado)."
-     },
-     {
-      "fecha": "2026-11-10",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://www.publico.es/politica/colau-revuelta-impuestos-son-sexis-sobre-paga.html",
-      "medio": "Público",
-      "fuente_local": "data/sources/compromisos/frente_amplio/publico_2026-11-10_la_revuelta.txt",
-      "nota": "«La Revuelta»: «reforma de la fiscalidad de bancos y grandes fortunas» (palabras del medio)."
-     }
-    ]
-   },
-   "nota": "El suelo del 15 % figura en la nota del 24-oct sobre pensiones; la del 5-nov no da tipo objetivo."
-  },
-  {
-   "id": "fa-c07",
-   "area": "pensiones",
-   "resumen": "Crear una Pensión Mínima Garantizada para que ninguna pensión quede por debajo del salario mínimo interprofesional, con un coste estimado por el partido de unos 10.000 millones anuales.",
-   "cita": "Frente Amplio ha presentado hoy en Madrid, en el marco de la manifestación estatal en defensa de las pensiones públicas, dos medidas para el sistema de pensiones: una Pensión Mínima Garantizada que impida que ninguna pensión quede por debajo del Salario Mínimo Interprofesional, y la recuperación efectiva de la jubilación a los 65 años.",
-   "quien": "Frente Amplio (nota oficial); presentada por Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno, con Emilio Delgado (cabeza de lista por Madrid) y Pablo Bustinduy (portavoz de campaña)",
-   "formato": "documento oficial (nota de prensa sobre un acto en la manifestación de pensionistas)",
-   "fecha": "2026-10-24",
-   "url": "https://frenteamplio.info/noticias/frente-amplio-propone-ninguna-pension-este-debajo-salario-minimo-recuperar/",
-   "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-10-24_pensiones.txt",
-   "sha256": "73b672617a7759baa8d0e8551248c23d2548a499fe672ba37235312ff58494ba",
-   "cuantificado": true,
-   "veces": {
-    "n": 1,
-    "ocasiones": [
-     {
-      "fecha": "2026-10-24",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://frenteamplio.info/noticias/frente-amplio-propone-ninguna-pension-este-debajo-salario-minimo-recuperar/",
-      "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-10-24_pensiones.txt",
-      "nota": "«Lo que vale para el salario mínimo tiene que valer para las pensiones» (cita de Colau en la nota)."
-     }
-    ]
-   }
-  },
-  {
-   "id": "fa-c08",
-   "area": "pensiones",
-   "resumen": "Fijar de forma efectiva la jubilación a los 65 años, con un coste estimado por el partido de unos 10.000 millones anuales.",
-   "cita": "Frente Amplio propone fijar de forma efectiva la jubilación en los 65 años, para que quienes han dedicado décadas al trabajo puedan disfrutar de más años de vida con salud y bienestar.",
-   "quien": "Frente Amplio (nota oficial); presentada por Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno y Emilio Delgado, cabeza de lista por Madrid",
-   "formato": "documento oficial (nota de prensa sobre un acto en la manifestación de pensionistas)",
-   "fecha": "2026-10-24",
-   "url": "https://frenteamplio.info/noticias/frente-amplio-propone-ninguna-pension-este-debajo-salario-minimo-recuperar/",
-   "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-10-24_pensiones.txt",
-   "sha256": "73b672617a7759baa8d0e8551248c23d2548a499fe672ba37235312ff58494ba",
-   "cuantificado": true,
-   "veces": {
-    "n": 1,
-    "ocasiones": [
-     {
-      "fecha": "2026-10-24",
-      "quien": "Emilio Delgado, cabeza de lista del Frente Amplio por Madrid",
-      "url": "https://frenteamplio.info/noticias/frente-amplio-propone-ninguna-pension-este-debajo-salario-minimo-recuperar/",
-      "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-10-24_pensiones.txt",
-      "nota": "«65 años es suficiente. Descansar, disfrutar, vivir: cuanto antes, mejor» (cita de Delgado en la nota)."
-     }
-    ]
-   },
-   "nota": "La nota no precisa si cambiaría la edad legal ordinaria para todas las carreras o solo la edad efectiva."
-  },
   {
    "id": "fa-c09",
    "area": "pensiones",
@@ -403,76 +32,6 @@
     ]
    },
    "nota": "Instrumento de financiación de fa-c08; se evalúa dentro de esa prioridad."
-  },
-  {
-   "id": "fa-c10",
-   "area": "otros",
-   "resumen": "Unificar Renfe y Adif en un gran operador público del ferrocarril, dentro de un Pacto de Estado por el Tren.",
-   "cita": "Las propuestas del Frente Amplio para este pacto pasan, en primer lugar, por unificar Renfe y Adif, de manera que haya un gran operador público que lidere el sector y para favorecer la coordinación entre trenes e infraestructuras",
-   "quien": "Frente Amplio (nota oficial); propuesta de Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno tras reunirse con los sindicatos ferroviarios",
-   "formato": "documento oficial (nota de prensa)",
-   "fecha": "2026-11-02",
-   "url": "https://frenteamplio.info/noticias/frente-amplio-pide-pacto-estado-tren-incluya-unificacion-adif-renfe/",
-   "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-02_pacto_tren.txt",
-   "sha256": "f6c4bf10cfab5870565441991ef4cf96d108357cc43cc50f1a8ead7549ecbf1d",
-   "cuantificado": false,
-   "veces": {
-    "n": 2,
-    "ocasiones": [
-     {
-      "fecha": "2026-11-02",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://frenteamplio.info/noticias/frente-amplio-pide-pacto-estado-tren-incluya-unificacion-adif-renfe/",
-      "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-02_pacto_tren.txt",
-      "nota": "Propuesta de Pacto de Estado por el Tren."
-     },
-     {
-      "fecha": "2026-11-06",
-      "quien": "Ernest Urtasun, ministro de Cultura y número 2 de Comuns-Front Ampli por Barcelona",
-      "url": "https://comuns.cat/comuns-front-ampli-proposa-renunciar-al-projecte-de-lave-madrid-barcelona-a-350-km-h-i-destinar-aquests-1333-meur-a-millorar-rodalies/",
-      "medio": "Catalunya en Comú (web oficial, comuns.cat)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/comuns_2026-11-06_urtasun_ferrocarril.txt",
-      "nota": "Fòrum Europa Tribuna Catalunya: «reunificant Adif i Renfe», dirección estratégica común."
-     },
-     {
-      "fecha": "2026-11-06",
-      "quien": "Ernest Urtasun, número 2 de Comuns-Front Ampli por Barcelona",
-      "url": "https://www.europapress.es/catalunya/noticia-urtasun-anuncia-frente-amplio-propondra-renunciar-ave-350-km-favor-rodalies-20261106105112.html",
-      "medio": "Europa Press",
-      "fuente_local": "data/sources/compromisos/frente_amplio/europapress_2026-11-06_urtasun_rodalies.txt",
-      "nota": "Europa Press: «replantear la separación de Adif y Renfe» (estilo indirecto)."
-     }
-    ]
-   }
-  },
-  {
-   "id": "fa-c11",
-   "area": "otros",
-   "resumen": "Destinar de forma inmediata a la mejora de la red ferroviaria los fondos del plan DORA de ampliación de aeropuertos (casi 13.000 millones).",
-   "cita": "Colau ha propuesto destinar de forma inmediata a la mejora de la red ferroviaria los fondos del plan DORA, que contempla la ampliación de los aeropuertos y suma casi 13.000 millones de euros.",
-   "quien": "Frente Amplio (nota oficial); propuesta de Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-   "formato": "documento oficial (nota de prensa)",
-   "fecha": "2026-11-02",
-   "url": "https://frenteamplio.info/noticias/frente-amplio-pide-pacto-estado-tren-incluya-unificacion-adif-renfe/",
-   "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-02_pacto_tren.txt",
-   "sha256": "f6c4bf10cfab5870565441991ef4cf96d108357cc43cc50f1a8ead7549ecbf1d",
-   "cuantificado": true,
-   "veces": {
-    "n": 1,
-    "ocasiones": [
-     {
-      "fecha": "2026-11-02",
-      "quien": "Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
-      "url": "https://frenteamplio.info/noticias/frente-amplio-pide-pacto-estado-tren-incluya-unificacion-adif-renfe/",
-      "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-02_pacto_tren.txt",
-      "nota": "Pacto de Estado por el Tren."
-     }
-    ]
-   }
   },
   {
    "id": "fa-c12",
@@ -519,188 +78,6 @@
    "nota": "Lo anuncia el número 2 de la lista de Barcelona, no la candidata ni un documento estatal del Frente Amplio."
   },
   {
-   "id": "fa-c13",
-   "area": "modelo territorial",
-   "resumen": "Acelerar el traspaso de Rodalies a la Generalitat con un mando operativo único de Adif y Renfe en Cataluña e impedir su liberalización.",
-   "cita": "En primer lloc, que Rodalies funcioni Rodalies d’una vegada per totes, accelerant el traspàs, amb un comandament operatiu únic que integri la gestió d’Adif i Renfe a Catalunya, i impedir qualsevol liberalització de Rodalies.",
-   "cita_traduccion": "En primer lugar, que Rodalies funcione de una vez por todas, acelerando el traspaso, con un mando operativo único que integre la gestión de Adif y Renfe en Cataluña, e impedir cualquier liberalización de Rodalies.",
-   "quien": "Ernest Urtasun, ministro de Cultura y número 2 de Comuns-Front Ampli por Barcelona",
-   "formato": "desayuno informativo (Fòrum Europa Tribuna Catalunya), según la web de Comuns",
-   "fecha": "2026-11-06",
-   "url": "https://comuns.cat/comuns-front-ampli-proposa-renunciar-al-projecte-de-lave-madrid-barcelona-a-350-km-h-i-destinar-aquests-1333-meur-a-millorar-rodalies/",
-   "medio": "Catalunya en Comú (web oficial, comuns.cat)",
-   "fuente_local": "data/sources/compromisos/frente_amplio/comuns_2026-11-06_urtasun_ferrocarril.txt",
-   "sha256": "272727333d8ce74adad5ee94a58c02732d2d7563506ff5ac4d2559d11fb0f669",
-   "cuantificado": false,
-   "veces": {
-    "n": 1,
-    "ocasiones": [
-     {
-      "fecha": "2026-11-06",
-      "quien": "Ernest Urtasun",
-      "url": "https://comuns.cat/comuns-front-ampli-proposa-renunciar-al-projecte-de-lave-madrid-barcelona-a-350-km-h-i-destinar-aquests-1333-meur-a-millorar-rodalies/",
-      "medio": "Catalunya en Comú (web oficial, comuns.cat)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/comuns_2026-11-06_urtasun_ferrocarril.txt",
-      "nota": "Web de Comuns."
-     },
-     {
-      "fecha": "2026-11-06",
-      "quien": "Ernest Urtasun",
-      "url": "https://www.europapress.es/catalunya/noticia-urtasun-anuncia-frente-amplio-propondra-renunciar-ave-350-km-favor-rodalies-20261106105112.html",
-      "medio": "Europa Press",
-      "fuente_local": "data/sources/compromisos/frente_amplio/europapress_2026-11-06_urtasun_rodalies.txt",
-      "nota": "Europa Press: acelerar el traspaso y frenar la liberalización (estilo indirecto)."
-     }
-    ]
-   },
-   "nota": "Texto de la web de Comuns (redacción del partido, no cita entrecomillada de Urtasun)."
-  },
-  {
-   "id": "fa-c14",
-   "area": "vivienda",
-   "resumen": "Reconocer legalmente los sindicatos de inquilinas (desde tres personas, con capacidad de negociar convenios colectivos de arrendamiento) y regular las huelgas de alquiler: las rentas se depositarían en un fondo público con efecto liberatorio y sin posibilidad de desahucio por impago.",
-   "cita": "El mecanismo propuesto establece que los arrendatarios depositen el 100% del importe de sus alquileres en un fondo público, en lugar de transferirlo directamente a los propietarios. De esta manera, el dinero quedaría consignado y su depósito dentro del plazo establecido tendría la misma validez legal que el pago ordinario de la renta.",
-   "quien": "Frente Amplio (nota oficial); propuesta anunciada por Emilio Delgado, cabeza de lista del Frente Amplio por Madrid",
-   "formato": "documento oficial (nota de prensa)",
-   "fecha": "2026-11-12",
-   "url": "https://frenteamplio.info/noticias/frente-amplio-propone-legalizar-huelgas-alquileres-reconocer-sindicatos-inquilinas-frenar/",
-   "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-12_huelgas_alquiler.txt",
-   "sha256": "529e1f6aee37985788109e134a283c5815ec9f729531841999657ced0fff464c",
-   "cuantificado": true,
-   "veces": {
-    "n": 1,
-    "ocasiones": [
-     {
-      "fecha": "2026-11-12",
-      "quien": "Emilio Delgado, cabeza de lista por Madrid",
-      "url": "https://frenteamplio.info/noticias/frente-amplio-propone-legalizar-huelgas-alquileres-reconocer-sindicatos-inquilinas-frenar/",
-      "medio": "Frente Amplio (web oficial, frenteamplio.info)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-12_huelgas_alquiler.txt",
-      "nota": "«el Frente Amplio la recogerá en su programa»; la propuesta procede del Sindicato de Inquilinas."
-     }
-    ]
-   }
-  },
-  {
-   "id": "fa-c15",
-   "area": "empleo",
-   "resumen": "Reducir la jornada laboral a 37,5 horas semanales.",
-   "cita": "pola redución da xornada laboral a 37,5 horas semanais",
-   "cita_traduccion": "por la reducción de la jornada laboral a 37,5 horas semanales",
-   "quien": "Fronte Ampla (Frente Amplio en Galicia): programa «100+15» presentado por Paulo Carlos López, portavoz y candidato al Senado por Pontevedra, y Rocío Núñez, cabeza de lista al Senado por A Coruña",
-   "formato": "rueda de prensa de presentación del programa (texto entrecomillado por el medio)",
-   "fecha": "2026-11-12",
-   "url": "https://www.nosdiario.gal/politica/fronte-ampla-presenta-seu-programa-electoral-100-15-centrado-vivenda-salarios-autogoberno-da-galiza/20261112165631271586.html",
-   "medio": "Nós Diario",
-   "fuente_local": "data/sources/compromisos/frente_amplio/nosdiario_2026-11-12_fronte_ampla_programa.txt",
-   "sha256": "1ee8139dcdff95835619c8644a7f323909946c8c3be1a5c377be406c8e973560",
-   "cuantificado": true,
-   "veces": {
-    "n": 2,
-    "ocasiones": [
-     {
-      "fecha": "2026-11-12",
-      "quien": "Fronte Ampla",
-      "url": "https://www.nosdiario.gal/politica/fronte-ampla-presenta-seu-programa-electoral-100-15-centrado-vivenda-salarios-autogoberno-da-galiza/20261112165631271586.html",
-      "medio": "Nós Diario",
-      "fuente_local": "data/sources/compromisos/frente_amplio/nosdiario_2026-11-12_fronte_ampla_programa.txt",
-      "nota": "Programa gallego «100+15»."
-     },
-     {
-      "fecha": "2026-11-12",
-      "quien": "Fronte Ampla",
-      "url": "https://gcdiario.com/politica/615234-29n-frente-amplio-propone-una-ap-9-gratis-prestacion-de-200-euros-por-menor-y-una-farmaceutica-publica-en-santiago/",
-      "medio": "GCDiario (Galicia Confidencial)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/gcdiario_2026-11-12_fronte_ampla_programa.txt",
-      "nota": "Misma presentación en castellano (estilo indirecto)."
-     },
-     {
-      "fecha": "2026-11-08",
-      "quien": "Emilio Delgado",
-      "url": "https://www.democrata.es/politica/delgado-promete-nuevas-subidas-del-smi-y-acusa-al-pp-de-fomentar-la-delincuencia-con-sus-politicas-fiscales/",
-      "medio": "Demócrata (Europa Press)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/democrata_ep_2026-11-08_delgado.txt",
-      "nota": "Defiende reducir la jornada, sin cifra."
-     }
-    ]
-   },
-   "nota": "Solo la federación gallega le pone cifra, y su documento no está publicado; los líderes estatales no la han concretado."
-  },
-  {
-   "id": "fa-c16",
-   "area": "igualdad",
-   "resumen": "Implantar una prestación universal de 200 euros al mes por cada menor de edad.",
-   "cita": "a implantación dunha prestación universal de 200 euros ao mes por cada menor de idade para combater a pobreza infantil e apoiar as familias na crianza",
-   "cita_traduccion": "la implantación de una prestación universal de 200 euros al mes por cada menor de edad para combatir la pobreza infantil y apoyar a las familias en la crianza",
-   "quien": "Fronte Ampla (Frente Amplio en Galicia): programa «100+15» presentado por Paulo Carlos López, portavoz y candidato al Senado por Pontevedra, y Rocío Núñez, cabeza de lista al Senado por A Coruña",
-   "formato": "rueda de prensa de presentación del programa (texto entrecomillado por el medio)",
-   "fecha": "2026-11-12",
-   "url": "https://www.nosdiario.gal/politica/fronte-ampla-presenta-seu-programa-electoral-100-15-centrado-vivenda-salarios-autogoberno-da-galiza/20261112165631271586.html",
-   "medio": "Nós Diario",
-   "fuente_local": "data/sources/compromisos/frente_amplio/nosdiario_2026-11-12_fronte_ampla_programa.txt",
-   "sha256": "1ee8139dcdff95835619c8644a7f323909946c8c3be1a5c377be406c8e973560",
-   "cuantificado": true,
-   "veces": {
-    "n": 1,
-    "ocasiones": [
-     {
-      "fecha": "2026-11-12",
-      "quien": "Fronte Ampla",
-      "url": "https://www.nosdiario.gal/politica/fronte-ampla-presenta-seu-programa-electoral-100-15-centrado-vivenda-salarios-autogoberno-da-galiza/20261112165631271586.html",
-      "medio": "Nós Diario",
-      "fuente_local": "data/sources/compromisos/frente_amplio/nosdiario_2026-11-12_fronte_ampla_programa.txt",
-      "nota": "Programa gallego «100+15»."
-     },
-     {
-      "fecha": "2026-11-12",
-      "quien": "Fronte Ampla",
-      "url": "https://gcdiario.com/politica/615234-29n-frente-amplio-propone-una-ap-9-gratis-prestacion-de-200-euros-por-menor-y-una-farmaceutica-publica-en-santiago/",
-      "medio": "GCDiario (Galicia Confidencial)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/gcdiario_2026-11-12_fronte_ampla_programa.txt",
-      "nota": "Misma presentación (estilo indirecto)."
-     }
-    ]
-   },
-   "nota": "No consta en declaraciones de los líderes estatales del Frente Amplio."
-  },
-  {
-   "id": "fa-c17",
-   "area": "vivienda",
-   "resumen": "Regular y controlar las viviendas de uso turístico para devolverlas al alquiler y prohibir la compra de vivienda por fondos de inversión.",
-   "cita": "regular e controlar as vivendas de uso turístico para reincorporalas ao mercado do aluguer, así como prohibir a compra de vivenda por parte de fondos voitre para frear a especulación que expulsa á veciñanza das cidades",
-   "cita_traduccion": "regular y controlar las viviendas de uso turístico para reincorporarlas al mercado del alquiler, así como prohibir la compra de vivienda por parte de fondos buitre para frenar la especulación que expulsa al vecindario de las ciudades",
-   "quien": "Fronte Ampla (Frente Amplio en Galicia): programa «100+15» presentado por Paulo Carlos López, portavoz y candidato al Senado por Pontevedra, y Rocío Núñez, cabeza de lista al Senado por A Coruña",
-   "formato": "rueda de prensa de presentación del programa (texto entrecomillado por el medio)",
-   "fecha": "2026-11-12",
-   "url": "https://www.nosdiario.gal/politica/fronte-ampla-presenta-seu-programa-electoral-100-15-centrado-vivenda-salarios-autogoberno-da-galiza/20261112165631271586.html",
-   "medio": "Nós Diario",
-   "fuente_local": "data/sources/compromisos/frente_amplio/nosdiario_2026-11-12_fronte_ampla_programa.txt",
-   "sha256": "1ee8139dcdff95835619c8644a7f323909946c8c3be1a5c377be406c8e973560",
-   "cuantificado": false,
-   "veces": {
-    "n": 1,
-    "ocasiones": [
-     {
-      "fecha": "2026-11-12",
-      "quien": "Fronte Ampla",
-      "url": "https://www.nosdiario.gal/politica/fronte-ampla-presenta-seu-programa-electoral-100-15-centrado-vivenda-salarios-autogoberno-da-galiza/20261112165631271586.html",
-      "medio": "Nós Diario",
-      "fuente_local": "data/sources/compromisos/frente_amplio/nosdiario_2026-11-12_fronte_ampla_programa.txt",
-      "nota": "Programa gallego «100+15»."
-     },
-     {
-      "fecha": "2026-11-12",
-      "quien": "Fronte Ampla",
-      "url": "https://gcdiario.com/politica/615234-29n-frente-amplio-propone-una-ap-9-gratis-prestacion-de-200-euros-por-menor-y-una-farmaceutica-publica-en-santiago/",
-      "medio": "GCDiario (Galicia Confidencial)",
-      "fuente_local": "data/sources/compromisos/frente_amplio/gcdiario_2026-11-12_fronte_ampla_programa.txt",
-      "nota": "Misma presentación (estilo indirecto)."
-     }
-    ]
-   }
-  },
-  {
    "id": "fa-c18",
    "area": "modelo territorial",
    "resumen": "Transferir a Galicia, nacionalizar y hacer gratuita la autopista AP-9.",
@@ -738,64 +115,157 @@
    "nota": "Medida territorial de la candidatura gallega."
   }
  ],
- "prioridades": [
+ "prioridades": [],
+ "no_priorizados": [
   {
-   "orden": 1,
-   "id": "fa-c01",
-   "justificacion": "La nota oficial la llama «una de las medidas estrella de nuestro programa de vivienda»; la candidata la presentó en un acto propio (Málaga, 6-nov) y la ha repetido en al menos cuatro ocasiones públicas distintas (Barcelona, Palma, «La Revuelta»). La vivienda es uno de los dos «grandes ejes de campaña» que expuso el portavoz Pablo Bustinduy el 9-nov (Demócrata, estilo indirecto), con el lema «Un voto como una casa» según fuentes de la candidatura."
+   "id": "fa-c09",
+   "motivo": "Financiación de la jubilación a los 65 (fa-c08), que se evaluaba dentro de esa prioridad. El programa mantiene la aportación de las empresas más automatizadas al Mecanismo de Equidad Intergeneracional, pero propone «elevando progresivamente el tope máximo de cotización» (fa-p355, p. 58), no eliminarlo, y no cuantifica la recaudación (la nota del 24-oct daba 7.000-8.500 y 3.000-4.000 M€). Sigue sin priorizar: es un instrumento de financiación, no una medida que el partido destaque por sí misma, y se describe en la evaluación de frente_amplio-10."
   },
   {
-   "orden": 2,
-   "id": "fa-c05",
-   "justificacion": "Presentada por la candidata en Nueva Economía Fórum como parte del «programa económico del Frente Amplio para estas elecciones»; es la medida más repetida (24-oct, 5-nov, 7-nov, 8-nov por Delgado, 10-nov) y da nombre al lema «Tax the Rich», con una aplicación de campaña dedicada (nota del 6-nov)."
+   "id": "fa-c12",
+   "motivo": "Compromiso del número 2 de Comuns-Front Ampli por Barcelona (Ernest Urtasun), formulado en dos actos (6 y 8-nov) y no destacado por la candidatura estatal (criterio del 12-nov). Tampoco figura en el programa del 16-nov: no menciona la velocidad de 350 km/h, la línea Madrid-Barcelona ni los 1.333 M€ (la red de Cercanías se trata en fa-p402 y fa-p403, p. 66, con el objetivo de triplicar su inversión anual, y en fa-p643, p. 106)."
   },
   {
-   "orden": 3,
-   "id": "fa-c03",
-   "justificacion": "Anunciada por la candidata en la Cadena SER y en una nota oficial propia (28-oct); figura entre los tres impuestos del «programa económico» (5-nov) y la repite el cabeza de lista por Madrid (8-nov)."
-  },
-  {
-   "orden": 4,
-   "id": "fa-c06",
-   "justificacion": "Uno de los tres impuestos del «programa económico» presentados por la candidata (5-nov); la nota de pensiones del 24-oct lo usa como fuente de financiación con un suelo del 15 %."
-  },
-  {
-   "orden": 5,
-   "id": "fa-c07",
-   "justificacion": "Una de las «dos medidas para el sistema de pensiones» presentadas por la candidata, el cabeza de lista por Madrid y el portavoz de campaña en la manifestación estatal de pensionistas (nota oficial del 24-oct, que la lleva en el titular)."
-  },
-  {
-   "orden": 6,
-   "id": "fa-c08",
-   "justificacion": "La otra medida del acto de pensiones del 24-oct, en el titular de la nota oficial, con cita propia del cabeza de lista por Madrid."
-  },
-  {
-   "orden": 7,
-   "id": "fa-c04",
-   "justificacion": "Nota oficial del 28-oct, mencionada por la candidata en la Cadena SER y repetida por el cabeza de lista por Madrid (8-nov) como pieza de la política de vivienda."
-  },
-  {
-   "orden": 8,
-   "id": "fa-c02",
-   "justificacion": "Forma parte de la nota oficial de la «medida estrella» de vivienda (6-nov) como propuesta paralela."
-  },
-  {
-   "orden": 9,
-   "id": "fa-c10",
-   "justificacion": "Primera propuesta («en primer lugar») del Pacto de Estado por el Tren que la candidata planteó tras reunirse con los sindicatos ferroviarios (nota oficial del 2-nov); la repite Ernest Urtasun el 6-nov."
-  },
-  {
-   "orden": 10,
-   "id": "fa-c11",
-   "justificacion": "Propuesta de la candidata en la misma nota oficial del Pacto de Estado por el Tren (2-nov), con cuantía."
-  },
-  {
-   "orden": 11,
-   "id": "fa-c14",
-   "justificacion": "Nota oficial del 12-nov: la anuncia el cabeza de lista por Madrid y la nota afirma que «el Frente Amplio la recogerá en su programa»."
+   "id": "fa-c18",
+   "motivo": "Medida territorial de la candidatura gallega (Fronte Ampla, programa «100+15» presentado el 12-nov), no destacada por la candidatura estatal (criterio del 12-nov). Tampoco figura en el programa del 16-nov: el texto no menciona la AP-9 (los peajes solo aparecen como pago por uso para vehículos pesados de mercancías, fa-p412, p. 67). Mismo trato que psoe-c07 (gratuidad de la AP-9), no priorizado y fuera del programa."
   }
  ],
  "descartados": [
+  {
+   "id": "fa-c01",
+   "tema": "Aprobar una Ley de Expropiación de Viviendas a Propietarios Corporativos Privados que se aplicaría en tres fases: empresas con más de 1.000 viviendas, después más de 700 y por último más de 50; las familias quedan fuera.",
+   "quien": "Frente Amplio (nota oficial); medida presentada en Málaga por Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
+   "fecha": "2026-11-06",
+   "url": "https://frenteamplio.info/noticias/frente-amplio-propone-malaga-ley-expropiar-vivienda-grandes-fondos-inversion/",
+   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-06_expropiacion_malaga.txt",
+   "motivo": "Ya está en el programa, con el mismo texto: «Aprobación de la Ley de Expropiación de Viviendas a Propietarios Corporativos Privados» en tres fases (más de 1.000 y de 700 viviendas y empresas con más de 50 inmuebles; fa-p004, p. 10). Se evalúa en la prioridad frente_amplio-02 del programa."
+  },
+  {
+   "id": "fa-c02",
+   "tema": "Adscribir obligatoriamente al parque público de vivienda todas las fincas urbanas y suelos residenciales de la Sareb.",
+   "quien": "Frente Amplio (nota oficial); presentada junto a la ley de expropiación por Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
+   "fecha": "2026-11-06",
+   "url": "https://frenteamplio.info/noticias/frente-amplio-propone-malaga-ley-expropiar-vivienda-grandes-fondos-inversion/",
+   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-06_expropiacion_malaga.txt",
+   "motivo": "Ya está en el programa: «adscribiremos obligatoriamente todas las fincas urbanas y suelos residenciales de la SAREB a la empresa pública Casa 47» (fa-p004, p. 10); el compromiso decía «al parque público de vivienda» y el programa nombra la entidad pública que lo gestiona. Se evalúa en la prioridad frente_amplio-02 del programa."
+  },
+  {
+   "id": "fa-c03",
+   "tema": "Crear un impuesto anual del 10 % sobre el valor de cada vivienda que no se alquile de forma asequible y estable: para empresas desde la primera vivienda y para personas físicas desde la cuarta si el valor conjunto supera 800.000 euros.",
+   "quien": "Frente Amplio (nota oficial); medida anunciada por Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno en la Cadena SER",
+   "fecha": "2026-10-28",
+   "url": "https://frenteamplio.info/noticias/frente-amplio-propone-impuesto-acumulacion-vivienda/",
+   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-10-28_impuesto_acumulacion.txt",
+   "motivo": "Ya está en el programa, con los mismos umbrales: impuesto del 10 % sobre el valor de los pisos, para las empresas desde el primer inmueble y para los particulares a partir del cuarto si superan conjuntamente 800.000 euros, con exención de las viviendas en alquiler asequible y estable (fa-p053, p. 18). El programa no dice que sea anual. Se evalúa en la prioridad frente_amplio-03 del programa."
+  },
+  {
+   "id": "fa-c04",
+   "tema": "Elevar la inversión pública en vivienda hasta el 1 % del PIB para ampliar un parque público asequible protegido de forma permanente, financiada en parte con el impuesto a la acumulación.",
+   "quien": "Frente Amplio (nota oficial); medida anunciada por Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
+   "fecha": "2026-10-28",
+   "url": "https://frenteamplio.info/noticias/frente-amplio-propone-impuesto-acumulacion-vivienda/",
+   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-10-28_impuesto_acumulacion.txt",
+   "motivo": "Ya está en el programa: «Asignación presupuestaria permanente del 1 % del PIB anual (aprox. 17.000 M€/año) consagrada a la creación del parque público de vivienda» (fa-p001, p. 10; repetido en p. 19). El programa no la financia con el impuesto del 10 % (fa-c03), como hacía la nota del 28-oct. Se evalúa en la prioridad frente_amplio-01 del programa."
+  },
+  {
+   "id": "fa-c05",
+   "tema": "Crear un impuesto estatal anual sobre el patrimonio neto del 2 % a partir de un millón de euros y del 3 % a partir de 50 millones, descontando lo pagado por Patrimonio y Grandes Fortunas.",
+   "quien": "Frente Amplio (nota oficial); medida presentada por Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno en Nueva Economía Fórum",
+   "fecha": "2026-11-05",
+   "url": "https://frenteamplio.info/noticias/frente-amplio-propone-subir-impuestos-grandes-fortunas-empresas-mejorar-servicios/",
+   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-05_impuestos.txt",
+   "motivo": "Ya está en el programa: los patrimonios de más de un millón de euros tributarán «como mínimo un 2 %» con la reforma del Impuesto de Solidaridad de las Grandes Fortunas (fa-p258, p. 45), y la Tasa Zucman grava al 3 % el patrimonio neto de más de 50 millones (fa-p259, p. 45). Se evalúa en la prioridad frente_amplio-07 del programa."
+  },
+  {
+   "id": "fa-c06",
+   "tema": "Elevar el tipo efectivo del Impuesto sobre Sociedades de las grandes empresas y la banca, con una tributación mínima efectiva del 15 % y revisando sus deducciones, como la compensación de pérdidas.",
+   "quien": "Frente Amplio (nota oficial); medida presentada por Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno en Nueva Economía Fórum",
+   "fecha": "2026-11-05",
+   "url": "https://frenteamplio.info/noticias/frente-amplio-propone-subir-impuestos-grandes-fortunas-empresas-mejorar-servicios/",
+   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-05_impuestos.txt",
+   "motivo": "Ya está en el programa, concretado: tipo mínimo efectivo del 20 % sobre el resultado contable ajustado de grandes empresas y grupos (fa-p244, p. 44), por encima del suelo del 15 % de la nota del 24-oct, y límite de 4 años a la compensación de bases imponibles negativas (fa-p246, p. 44), la desgravación que citaba el compromiso; también revisa las deducciones de las grandes empresas (fa-p248). Mismo criterio que el SMI del PSOE (psoe-c03): el programa concreta el compromiso. Se evalúa en la prioridad frente_amplio-06 del programa."
+  },
+  {
+   "id": "fa-c07",
+   "tema": "Crear una Pensión Mínima Garantizada para que ninguna pensión quede por debajo del salario mínimo interprofesional, con un coste estimado por el partido de unos 10.000 millones anuales.",
+   "quien": "Frente Amplio (nota oficial); presentada por Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno, con Emilio Delgado (cabeza de lista por Madrid) y Pablo Bustinduy (portavoz de campaña)",
+   "fecha": "2026-10-24",
+   "url": "https://frenteamplio.info/noticias/frente-amplio-propone-ninguna-pension-este-debajo-salario-minimo-recuperar/",
+   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-10-24_pensiones.txt",
+   "motivo": "Ya está en el programa, con otro instrumento: la reforma constitucional del apartado 4.3 incluye «que ninguna sea inferior al SMI» (fa-p349, p. 57; subtítulo «pensión mínima igual al SMI»). El programa no usa el nombre «Pensión Mínima Garantizada» ni da su coste (10.000 M€ en la nota del 24-oct). El instrumento es accesorio (mismo criterio que vox-c04), y el coste era una estimación del partido, no parte de la medida. La página oficial del programa (frenteamplio.info/programa/, copia del 16-nov) la presenta con el mismo nombre: «Queremos que ninguna pensión, tanto contributiva como no contributiva, pueda situarse por debajo del salario mínimo interprofesional». Se evalúa en la prioridad frente_amplio-10 del programa."
+  },
+  {
+   "id": "fa-c08",
+   "tema": "Fijar de forma efectiva la jubilación a los 65 años, con un coste estimado por el partido de unos 10.000 millones anuales.",
+   "quien": "Frente Amplio (nota oficial); presentada por Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno y Emilio Delgado, cabeza de lista por Madrid",
+   "fecha": "2026-10-24",
+   "url": "https://frenteamplio.info/noticias/frente-amplio-propone-ninguna-pension-este-debajo-salario-minimo-recuperar/",
+   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-10-24_pensiones.txt",
+   "motivo": "Ya está en el programa: «Devolveremos la edad de jubilación a los 65 años» (fa-p350, p. 57). Se evalúa en la prioridad frente_amplio-10 del programa."
+  },
+  {
+   "id": "fa-c10",
+   "tema": "Unificar Renfe y Adif en un gran operador público del ferrocarril, dentro de un Pacto de Estado por el Tren.",
+   "quien": "Frente Amplio (nota oficial); propuesta de Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno tras reunirse con los sindicatos ferroviarios",
+   "fecha": "2026-11-02",
+   "url": "https://frenteamplio.info/noticias/frente-amplio-pide-pacto-estado-tren-incluya-unificacion-adif-renfe/",
+   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-02_pacto_tren.txt",
+   "motivo": "Ya está en el programa: «Unificaremos Adif y Renfe en un gran operador público que coordine trenes e infraestructuras», dentro de un «Pacto de Estado por el Tren» (fa-p398, p. 65). No figura entre las 12 prioridades del programa."
+  },
+  {
+   "id": "fa-c11",
+   "tema": "Destinar de forma inmediata a la mejora de la red ferroviaria los fondos del plan DORA de ampliación de aeropuertos (casi 13.000 millones).",
+   "quien": "Frente Amplio (nota oficial); propuesta de Ada Colau, candidata del Frente Amplio a la Presidencia del Gobierno",
+   "fecha": "2026-11-02",
+   "url": "https://frenteamplio.info/noticias/frente-amplio-pide-pacto-estado-tren-incluya-unificacion-adif-renfe/",
+   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-02_pacto_tren.txt",
+   "motivo": "Ya está en el programa: «Proponemos destinar al ferrocarril los casi 13.000 millones previstos para ampliar aeropuertos en el Documento de Regulación Aeroportuaria (plan DORA)» (fa-p641, p. 106). No figura entre las 12 prioridades del programa."
+  },
+  {
+   "id": "fa-c13",
+   "tema": "Acelerar el traspaso de Rodalies a la Generalitat con un mando operativo único de Adif y Renfe en Cataluña e impedir su liberalización.",
+   "quien": "Ernest Urtasun, ministro de Cultura y número 2 de Comuns-Front Ampli por Barcelona",
+   "fecha": "2026-11-06",
+   "url": "https://comuns.cat/comuns-front-ampli-proposa-renunciar-al-projecte-de-lave-madrid-barcelona-a-350-km-h-i-destinar-aquests-1333-meur-a-millorar-rodalies/",
+   "fuente_local": "data/sources/compromisos/frente_amplio/comuns_2026-11-06_urtasun_ferrocarril.txt",
+   "motivo": "Ya está en el programa con otras palabras: el traspaso de Rodalies a la Generalitat (fa-p402, p. 66; «completando además el traspaso de servicios y medios a la Generalitat», fa-p643, p. 106) y la unificación de Adif y Renfe en un operador único (fa-p398, p. 65). El programa no habla de un mando operativo propio de Cataluña ni de la liberalización de Rodalies (sí de paralizar la de la alta velocidad, fa-p634, p. 105). No era prioridad y no figura entre las 12 del programa."
+  },
+  {
+   "id": "fa-c14",
+   "tema": "Reconocer legalmente los sindicatos de inquilinas (desde tres personas, con capacidad de negociar convenios colectivos de arrendamiento) y regular las huelgas de alquiler: las rentas se depositarían en un fondo público con efecto liberatorio y sin posibilidad de desahucio por impago.",
+   "quien": "Frente Amplio (nota oficial); propuesta anunciada por Emilio Delgado, cabeza de lista del Frente Amplio por Madrid",
+   "fecha": "2026-11-12",
+   "url": "https://frenteamplio.info/noticias/frente-amplio-propone-legalizar-huelgas-alquileres-reconocer-sindicatos-inquilinas-frenar/",
+   "fuente_local": "data/sources/compromisos/frente_amplio/fa_nota_2026-11-12_huelgas_alquiler.txt",
+   "motivo": "Ya está en el programa: reconocimiento legal de los Sindicatos de Inquilinas con potestad para negociar convenios colectivos de arrendamiento (fa-p021, p. 13) y regulación de la huelga de alquileres «permitiendo el depósito de la renta en consignación judicial sin que ello pueda ser esgrimido como causa judicial de desahucio» (fa-p022, p. 13), como anunciaba la nota del 12-nov («el Frente Amplio la recogerá en su programa»). Cambia el instrumento del depósito (consignación judicial en lugar de un fondo público), y el programa la limita a «abusos sistémicos o incumplimientos graves de las condiciones de habitabilidad», como ya hacía la nota («cuando existan incumplimientos justificados por parte de la propiedad, como la falta de mantenimiento de los inmuebles»); no menciona el mínimo de tres personas. El instrumento es accesorio (mismo criterio que vox-c04). No figura entre las 12 prioridades del programa."
+  },
+  {
+   "id": "fa-c15",
+   "tema": "Reducir la jornada laboral a 37,5 horas semanales.",
+   "quien": "Fronte Ampla (Frente Amplio en Galicia): programa «100+15» presentado por Paulo Carlos López, portavoz y candidato al Senado por Pontevedra, y Rocío Núñez, cabeza de lista al Senado por A Coruña",
+   "fecha": "2026-11-12",
+   "url": "https://www.nosdiario.gal/politica/fronte-ampla-presenta-seu-programa-electoral-100-15-centrado-vivenda-salarios-autogoberno-da-galiza/20261112165631271586.html",
+   "fuente_local": "data/sources/compromisos/frente_amplio/nosdiario_2026-11-12_fronte_ampla_programa.txt",
+   "motivo": "Ya está en el programa: jornada de 37,5 horas en 2026 (fa-p334, p. 55) y reducción hasta 32 horas (fa-p335). Se evalúa en la prioridad frente_amplio-09 del programa."
+  },
+  {
+   "id": "fa-c16",
+   "tema": "Implantar una prestación universal de 200 euros al mes por cada menor de edad.",
+   "quien": "Fronte Ampla (Frente Amplio en Galicia): programa «100+15» presentado por Paulo Carlos López, portavoz y candidato al Senado por Pontevedra, y Rocío Núñez, cabeza de lista al Senado por A Coruña",
+   "fecha": "2026-11-12",
+   "url": "https://www.nosdiario.gal/politica/fronte-ampla-presenta-seu-programa-electoral-100-15-centrado-vivenda-salarios-autogoberno-da-galiza/20261112165631271586.html",
+   "fuente_local": "data/sources/compromisos/frente_amplio/nosdiario_2026-11-12_fronte_ampla_programa.txt",
+   "motivo": "Ya está en el programa: Prestación Universal por Crianza de 200 € al mes por cada menor de 18 años (fa-p062, p. 21). Se evalúa en la prioridad frente_amplio-04 del programa."
+  },
+  {
+   "id": "fa-c17",
+   "tema": "Regular y controlar las viviendas de uso turístico para devolverlas al alquiler y prohibir la compra de vivienda por fondos de inversión.",
+   "quien": "Fronte Ampla (Frente Amplio en Galicia): programa «100+15» presentado por Paulo Carlos López, portavoz y candidato al Senado por Pontevedra, y Rocío Núñez, cabeza de lista al Senado por A Coruña",
+   "fecha": "2026-11-12",
+   "url": "https://www.nosdiario.gal/politica/fronte-ampla-presenta-seu-programa-electoral-100-15-centrado-vivenda-salarios-autogoberno-da-galiza/20261112165631271586.html",
+   "fuente_local": "data/sources/compromisos/frente_amplio/nosdiario_2026-11-12_fronte_ampla_programa.txt",
+   "motivo": "Ya está en el programa: extinción de las licencias de viviendas de uso turístico en zonas tensionadas en un máximo de 3 años (fa-p014, p. 12) y prohibición de comprar vivienda para un fin distinto de la residencia habitual o el alquiler asequible, absoluta para fondos de inversión y demás personas jurídicas con ánimo de lucro (fa-p012, p. 11). No figura entre las 12 prioridades del programa."
+  },
   {
    "lead": "Colau (acto de La Sagrera, 7-nov): «nosaltres pujarem encara més el salari mínim».",
    "url": "https://comuns.cat/el-front-ampli-situa-lhabitatge-mes-impostos-als-rics-i-la-defensa-del-catala-al-centre-de-la-campanya-del-29n/",
@@ -804,12 +274,12 @@
   {
    "lead": "Emilio Delgado (Europa Press, 8-nov): seguir subiendo el SMI por encima del 5,3 % y reducir la jornada laboral.",
    "url": "https://www.democrata.es/politica/delgado-promete-nuevas-subidas-del-smi-y-acusa-al-pp-de-fomentar-la-delincuencia-con-sus-politicas-fiscales/",
-   "motivo": "No concreta: sin cifra para el SMI ni para la jornada (la cifra de 37,5 horas solo aparece en el programa gallego, fa-c15)."
+   "motivo": "No concreta: sin cifra para el SMI ni para la jornada (la cifra de 37,5 horas solo aparece en el programa gallego, fa-c15). El programa del 16-nov sí la concreta (fa-p334 y fa-p335, p. 55): véase fa-c15."
   },
   {
    "lead": "Colau (Palma, 8-nov): limitar el turismo, modificar las leyes de Vivienda y del Suelo para frenar los usos turísticos, prohibir las compras especulativas y reforzar las inspecciones.",
    "url": "https://www.publico.es/politica/ada-colau-llegado-momento-efectivo-derecho-vivienda-acabar-especulacion-pais.html",
-   "motivo": "Estilo indirecto del periodista (EFE); no se ha localizado cita literal de un líder estatal. La prohibición de compras por fondos solo consta entrecomillada en el programa gallego (fa-c17)."
+   "motivo": "Estilo indirecto del periodista (EFE); no se ha localizado cita literal de un líder estatal. La prohibición de compras por fondos solo consta entrecomillada en el programa gallego (fa-c17). El programa del 16-nov recoge esas medidas (fa-p005, fa-p012 y fa-p014): véase fa-c17."
   },
   {
    "lead": "Colau («La Revuelta», 10-nov): estabilización de los alquileres, renovación de los contratos y reducción de precios.",
@@ -882,5 +352,7 @@
    "Codificaciones de campaña previas: data/promesas/promesas.json y data/fase1/codificacion_g2.json y lideres_2026-11-12/frente_amplio.json."
   ],
   "nota": "El Frente Amplio no ha publicado programa estatal a 12-nov. Fronte Ampla (Galicia) presentó ese día un programa «100+15» (100 medidas generales y 15 gallegas) que no se ha localizado publicado: si existe un documento común de 100 medidas, debería analizarse con el prompt 1. La búsqueda web quedó limitada por el cupo de búsquedas de la sesión."
- }
+ },
+ "prompt": "docs/prompts/1b_seleccion_compromisos.md (sección «Partidos con programa: complemento»)",
+ "nota_prioridades": "Ninguna prioridad: los 11 compromisos evaluados con base «compromisos» están en el programa del 16-nov y pasan a «descartados»: la ley de expropiación (fa-c01) y la Sareb (fa-c02), el impuesto del 10 % (fa-c03), el 1 % del PIB para vivienda (fa-c04), el impuesto a los grandes patrimonios (fa-c05), Sociedades (fa-c06, concretado en un mínimo del 20 %), la pensión no inferior al SMI (fa-c07, en la reforma constitucional), la jubilación a los 65 (fa-c08), la unificación de Adif y Renfe (fa-c10), los fondos del plan DORA para el tren (fa-c11) y los sindicatos de inquilinas y la huelga de alquileres (fa-c14, con consignación judicial en lugar de un fondo público). Los que no figuran en el programa (fa-c12 y fa-c18) o no en esos términos (fa-c09) no eran prioridades."
 }
