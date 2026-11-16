@@ -390,7 +390,11 @@ h1[tabindex='-1']:focus, h2[tabindex='-1']:focus, main[tabindex='-1']:focus { ou
 .tema-card { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; text-align: left; min-height: 112px; padding: 14px 14px 12px; border: 1.5px solid var(--line); border-radius: var(--r); background: var(--card); color: var(--ink); transition: border-color 0.15s, background 0.15s, transform 0.1s; }
 .tema-card svg { color: var(--c); }
 .tema-nombre { font-weight: 700; line-height: 1.2; padding-right: 22px; }
+.tema-incluye { font-size: 0.82rem; line-height: 1.3; color: var(--ink-2); }
 .tema-n { font-size: 0.8rem; color: var(--ink-3); margin-top: auto; }
+/* 7 grupos: el último, solo en su fila, ocupa la fila entera */
+.tema-card:last-child:nth-child(odd) { grid-column: 1 / -1; min-height: 0; }
+@media (min-width: 640px) { .tema-card:last-child:nth-child(odd) { grid-column: auto; min-height: 112px; } }
 .tema-check { position: absolute; top: 10px; right: 10px; width: 22px; height: 22px; border-radius: 99px; border: 1.5px solid var(--line); display: grid; place-items: center; font-size: 0.8rem; font-weight: 800; }
 .tema-card.on { border-color: var(--c); background: color-mix(in srgb, var(--c) 14%, var(--card)); }
 .tema-card.on .tema-check { background: var(--c); border-color: var(--c); color: var(--on-c); }

@@ -310,6 +310,7 @@ function TemasImportantes() {
                 <path d={g.icono} />
               </svg>
               <span class="tema-nombre">{g.nombre}</span>
+              {g.incluye && <span class="tema-incluye">{g.incluye}</span>}
               <span class="tema-n">
                 {cuantas(g)} {cuantas(g) === 1 ? 'afirmación' : 'afirmaciones'}
               </span>

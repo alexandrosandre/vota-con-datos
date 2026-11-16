@@ -1,3 +1,4 @@
+import { migrarMarcados } from './temasImportantes';
 import { signal, effect } from '@preact/signals';
 import type { Respuesta } from './engine/match';
 
@@ -40,7 +41,7 @@ const inicial: Estado = {
   circ: null,
   partido: null,
   escenario: '',
-  v: 4,
+  v: 5,
 };
 
 function cargar(): Estado {
@@ -62,6 +63,11 @@ function cargar(): Estado {
       if ((e.v ?? 1) < 4) {
         if (e.rankingOrigen === 'fase1') e.partido = null;
         e.v = 4;
+      }
+      // v5 (16-nov): los temas importantes pasan de 11 grupos a 7; lo marcado pasa a los grupos que lo contienen.
+      if ((e.v ?? 1) < 5) {
+        if (e.temasImportantes?.length) e.temasImportantes = migrarMarcados(e.temasImportantes);
+        e.v = 5;
       }
       delete e.afinidades;
       delete e.incertidumbre;
