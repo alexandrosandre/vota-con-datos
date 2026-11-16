@@ -72,7 +72,10 @@ function Intro({ n, onStart, hechas }: { n: number; onStart: () => void; hechas:
         los líderes de un partido han propuesto en público. No te decimos de quién es hasta el final, para que juzgues la idea y no las siglas.
       </p>
       <ul style={{ margin: 0, paddingLeft: 20, color: 'var(--ink-2)' }}>
-        <li>Responde en cinco niveles, de <em>Muy en contra</em> a <em>Muy a favor</em>. Pulsa <em>Saltar</em> si no lo sabes, no quieres contestar o no te importa: lo que saltas no cuenta.</li>
+        <li>
+          Responde en cinco niveles, de <em>Muy en contra</em> a <em>Muy a favor</em>. <em>Neutral</em> es estar ni a favor ni en contra: cuenta
+          en tu afinidad. Si no lo sabes o prefieres no responder, pulsa <em>No lo sé</em>: esa afirmación no cuenta.
+        </li>
         <li>Al terminar, podrás marcar los temas que más te importan: sus afirmaciones contarán el doble.</li>
         <li>Unos 10 minutos. Tus respuestas no salen de tu navegador.</li>
       </ul>
@@ -179,15 +182,18 @@ function Tarjeta({ q, i, n, onNext, onPrev }: { q: Pregunta; i: number; n: numbe
             </button>
           ))}
         </div>
-        <div class="row between" style={{ marginTop: 14 }}>
-          <div class="row" style={{ gap: 4 }}>
-            <button class="btn ghost" onClick={onPrev} disabled={i === 0}>
-              ← Anterior
-            </button>
-            <button class="btn" onClick={(ev) => set(null, ev)}>
-              Saltar
-            </button>
-          </div>
+        {/* «No lo sé» (antes «Saltar»): a todo lo ancho, bajo la escala, para que no se confunda con «Neutral», que sí cuenta. */}
+        <button
+          class={`no-lo-se${r && !r.sinResponder && r.valor === null ? ' on' : ''}`}
+          aria-pressed={!!r && !r.sinResponder && r.valor === null}
+          onClick={(ev) => set(null, ev)}
+        >
+          No lo sé
+        </button>
+        <div class="row between" style={{ marginTop: 10 }}>
+          <button class="btn ghost" onClick={onPrev} disabled={i === 0}>
+            ← Anterior
+          </button>
         </div>
       </div>
       {hechas >= 10 ? (

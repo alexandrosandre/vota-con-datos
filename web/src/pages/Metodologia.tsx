@@ -130,8 +130,8 @@ export function Metodologia() {
               contar.
             </li>
             <li>
-              <strong>Respondes en 5 niveles</strong>, de «Muy en contra» a «Muy a favor». También puedes pulsar <em>Saltar</em>: ese tema no
-              cuenta. Al terminar, puedes marcar los temas que más te importan (vivienda, impuestos, inmigración…): sus afirmaciones cuentan
+              <strong>Respondes en 5 niveles</strong>, de «Muy en contra» a «Muy a favor». «Neutral» es estar ni a favor ni en contra y cuenta
+              como cualquier otra respuesta. También puedes pulsar <em>No lo sé</em>: ese tema no cuenta. Al terminar, puedes marcar los temas que más te importan (vivienda, impuestos, inmigración…): sus afirmaciones cuentan
               el doble.
             </li>
             <li>

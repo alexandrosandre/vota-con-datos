@@ -397,3 +397,7 @@ h1[tabindex='-1']:focus, h2[tabindex='-1']:focus, main[tabindex='-1']:focus { ou
 .tema-card:active { transform: scale(0.98); }
 @media (hover: hover) { .tema-card:hover { border-color: var(--c); } }
 .temas-marcados { font-size: 0.9rem; margin: 0; }
+/* «No lo sé»: a todo lo ancho bajo la escala, con menos peso visual que las cinco respuestas */
+.no-lo-se { width: 100%; margin-top: 8px; padding: 11px 6px; border: 1px dashed var(--line); border-radius: var(--r-s); background: transparent; color: var(--ink-2); font-size: 0.92rem; font-weight: 600; }
+.no-lo-se.on { border-style: solid; border-color: var(--ink-3); color: var(--ink); }
+@media (hover: hover) { .no-lo-se:hover { border-color: var(--ink-3); } }
