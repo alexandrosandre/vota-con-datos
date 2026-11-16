@@ -429,13 +429,18 @@ function Resultados() {
         </details>
       </div>
       {[
-        { t: 'Con datos suficientes', d: 'Conocemos su posición en al menos la mitad de tus respuestas.', filas: res.filter((r) => r.comparable) },
+        // Redactado como cruce de tus respuestas con lo que ha dicho el partido, no como «nos faltan datos» (aviso de un usuario, 16-nov).
+        { t: 'Con bastantes temas en común', d: 'El partido se ha pronunciado en al menos la mitad de las afirmaciones que respondiste.', filas: res.filter((r) => r.comparable) },
         {
-          t: 'Con pocos datos',
-          d: 'Conocemos su posición en menos de la mitad de tus respuestas: tómalo solo como orientación.',
+          t: 'Con pocos temas en común',
+          d: 'El partido se ha pronunciado en menos de la mitad de las afirmaciones que respondiste: tómalo solo como orientación.',
           filas: res.filter((r) => !r.comparable && r.afinidad !== null),
         },
-        { t: 'Sin datos suficientes', d: 'Conocemos su posición en menos de 5 de tus respuestas, así que no calculamos su porcentaje.', filas: res.filter((r) => r.afinidad === null) },
+        {
+          t: 'Sin bastantes temas en común',
+          d: 'El partido se ha pronunciado en menos de 5 de las afirmaciones que respondiste, así que no calculamos su porcentaje.',
+          filas: res.filter((r) => r.afinidad === null),
+        },
       ]
         .filter((g) => g.filas.length > 0)
         .map((g) => (

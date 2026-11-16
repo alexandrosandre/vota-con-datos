@@ -153,11 +153,10 @@ export function Metodologia() {
               </Tecnico>
             </li>
             <li>
-              <strong>Con datos suficientes, con pocos datos o sin datos.</strong> Si conocemos la posición de un partido en al menos la mitad
-              de tus respuestas, lo ordenamos con el resto (<em>con datos suficientes</em>). Si la conocemos en menos de la mitad, pero en al
-              menos 5 temas, aparece aparte (<em>con pocos datos</em>): su porcentaje se basa en pocos temas y mezclarlo con los demás
-              confundiría. Con menos de 5 temas no calculamos su porcentaje. Si dos partidos están a menos de 5 puntos, los damos por
-              empatados: la diferencia es demasiado pequeña para separarlos.
+              <strong>Temas en común.</strong> Un partido entra en la lista principal si se ha pronunciado en al menos la mitad de las
+              afirmaciones que respondiste. Si lo ha hecho en menos de la mitad, pero en al menos 5, aparece aparte (<em>con pocos temas en
+              común</em>), porque su porcentaje se basa en pocos temas. Con menos de 5 no calculamos su porcentaje. Si dos partidos están a
+              menos de 5 puntos, los damos por empatados.
             </li>
             <li>
               Están todos los partidos que tienen diputados o pueden tenerlos, se presenten o no en tu provincia. Eso se tiene en cuenta en el
