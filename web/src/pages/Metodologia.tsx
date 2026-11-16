@@ -144,10 +144,9 @@ export function Metodologia() {
               descarta lo que no se sostenga. Si no hay posición documentada, el partido queda «sin posición conocida» en ese tema.
             </li>
             <li>
-              <strong>Afinidad.</strong> En cada tema comparamos tu respuesta con la del partido: cuanto más cerca, más afinidad. Un 100 %
-              significa que coincidís en todo; un 0 %, que estáis en extremos opuestos en todo. Solo cuentan los temas en los que los dos tenéis
-              posición, y los de los temas que marcaste como importantes cuentan el doble. Te indicamos en cuántas de tus respuestas conocemos la posición de cada
-              partido.
+              <strong>Afinidad.</strong> En cada tema comparamos tu respuesta con la del partido: cuanto más cerca, más afinidad. Solo cuentan
+              los temas en los que los dos tenéis posición, y los que marcaste como importantes cuentan el doble. Ningún partido está en
+              Neutral (si su postura es ambigua, queda sin posición conocida), así que tu Neutral cuenta como acuerdo a medias con todos.
               <Tecnico>
                 afinidad = 1 − Σ w·|tú − partido| / Σ w·4, donde w es 2 en los temas que marcaste como importantes y 1 en el resto, y las respuestas van de −2 a
                 +2. Es una distancia de Manhattan normalizada.

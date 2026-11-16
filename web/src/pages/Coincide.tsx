@@ -221,9 +221,10 @@ function Detalle({ partidoId }: { partidoId: string }) {
     .map((q) => ({ q, u: e.respuestas[q.id]!.valor as number, p: pos[q.id]!, dist: Math.abs((e.respuestas[q.id]!.valor as number) - (pos[q.id]!.valor as number)) }))
     .sort((a, b) => a.dist - b.dist);
   const sinPosicion = respondidas.length - comunes.length;
-  const grado = (dist: number) => (dist <= 1 ? 'Coincidís' : dist >= 3 ? 'Discrepáis' : 'A medias');
+  // Por el lado en que está cada uno, no por la distancia: un Neutral frente a «A favor» es «A medias», no «Coincidís».
+  const grado = (u: number, p: number) => (u === p || u * p > 0 ? 'Coincidís' : u * p < 0 ? 'Discrepáis' : 'A medias');
   const n = { Coincidís: 0, 'A medias': 0, Discrepáis: 0 } as Record<string, number>;
-  comunes.forEach((c) => n[grado(c.dist)]++);
+  comunes.forEach((c) => n[grado(c.u, c.p.valor as number)]++);
   return (
     <div class="prop-body" style={{ margin: '0 0 12px', borderRadius: 10 }}>
       <p style={{ marginTop: 12 }}>
@@ -238,11 +239,11 @@ function Detalle({ partidoId }: { partidoId: string }) {
           </span>
         )}
       </p>
-      {comunes.map(({ q, u, p, dist }) => (
+      {comunes.map(({ q, u, p }) => (
         <div class="crit" key={q.id}>
           <h3 class="h4">{q.texto}</h3>
           <p>
-            <span class="pill">{grado(dist)}</span> Tú: <strong>{etiqueta(u)}</strong> · {siglas}: <strong>{etiqueta(p.valor)}</strong>
+            <span class="pill">{grado(u, p.valor as number)}</span> Tú: <strong>{etiqueta(u)}</strong> · {siglas}: <strong>{etiqueta(p.valor)}</strong>
           </p>
           {p.cita && (
             <>
@@ -349,6 +350,7 @@ function Resultados() {
   const sinPosiciones = (partidos.value ?? []).filter((p) => !Object.values(d.posiciones[p.id] ?? {}).some((x) => x.valor !== null));
   const res = afinidad(conPesoPorTema(e.respuestas, d.preguntas, e.temasImportantes), posiciones, ids).filter((r) => !sinPosiciones.some((p) => p.id === r.partido));
   const respondidas = Object.values(vigentes(e.respuestas, ids)).filter((r) => r.valor !== null).length;
+  const neutrales = Object.values(vigentes(e.respuestas, ids)).filter((r) => r.valor === 0).length;
   const [abierto, setAbierto] = useState<string | null>(null);
   const evaluables = res.filter((r) => r.afinidad !== null);
 
@@ -414,12 +416,15 @@ function Resultados() {
       <div class="note">
         <strong>No es una recomendación de voto: es un espejo de tus respuestas</strong>, comparadas con la posición de cada partido, con
         cita y fuente.
+        {neutrales * 2 > respondidas && (
+          <p style={{ margin: '8px 0 0' }}>La mayoría de tus respuestas son Neutral, así que el resultado apenas distingue entre partidos.</p>
+        )}
         <details class="desplegable" style={{ marginTop: 8 }}>
           <summary>Cómo se calcula</summary>
           <p style={{ margin: '8px 0 0' }}>
-            La afinidad mide cuánto se parecen tus respuestas a la posición de cada partido en las {respondidas} afirmaciones que
-            respondiste. Si dos partidos se separan menos de {Math.round(UMBRAL_EMPATE * 100)} puntos, los damos por empatados: la
-            diferencia es demasiado pequeña para tenerla en cuenta. <span class="muted">{d.meta.nota}</span>
+            Con cada partido comparamos las afirmaciones que respondiste y en las que conocemos su posición: cuanto más cerca, más
+            afinidad. Si dos partidos se separan menos de {Math.round(UMBRAL_EMPATE * 100)} puntos, los damos por empatados.{' '}
+            <span class="muted">{d.meta.nota}</span>
           </p>
         </details>
       </div>
@@ -427,7 +432,7 @@ function Resultados() {
         { t: 'Con datos suficientes', d: 'Conocemos su posición en al menos la mitad de tus respuestas.', filas: res.filter((r) => r.comparable) },
         {
           t: 'Con pocos datos',
-          d: 'Conocemos su posición en menos de la mitad de tus respuestas, normalmente porque aún no ha publicado programa. Su porcentaje se basa en pocos temas: tómalo solo como orientación.',
+          d: 'Conocemos su posición en menos de la mitad de tus respuestas: tómalo solo como orientación.',
           filas: res.filter((r) => !r.comparable && r.afinidad !== null),
         },
         { t: 'Sin datos suficientes', d: 'Conocemos su posición en menos de 5 de tus respuestas, así que no calculamos su porcentaje.', filas: res.filter((r) => r.afinidad === null) },
