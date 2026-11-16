@@ -505,7 +505,7 @@ export function Contrasta() {
             <a
               class="siguiente p3"
               style={{ marginTop: 0 }}
-              href="#/cuenta"
+              href="#/suma"
               onClick={() => {
                 if (sel !== partidoPreferido.value) actualizar({ partido: sel });
               }}

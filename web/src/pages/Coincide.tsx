@@ -84,7 +84,7 @@ function Intro({ n, onStart, hechas }: { n: number; onStart: () => void; hechas:
           {hechas > 0 ? 'Continuar' : 'Empezar'}
         </button>
         {hechas > 0 && (
-          <a class="btn" href="#/coincide/resultados">
+          <a class="btn" href="#/elige/resultados">
             Ver mis resultados
           </a>
         )}
@@ -197,12 +197,12 @@ function Tarjeta({ q, i, n, onNext, onPrev }: { q: Pregunta; i: number; n: numbe
         </div>
       </div>
       {hechas >= 10 ? (
-        <a class="btn" href="#/coincide/temas" style={{ marginTop: 14 }}>
+        <a class="btn" href="#/elige/temas" style={{ marginTop: 14 }}>
           Ver mis resultados ya ({hechas} respondidas; cuantas más, más fiable)
         </a>
       ) : (
         <p class="muted" style={{ fontSize: '0.85rem', marginTop: 12 }}>
-          <a href="#/coincide/resultados">Ir a los resultados</a> cuando quieras (mínimo 5 respuestas).
+          <a href="#/elige/resultados">Ir a los resultados</a> cuando quieras (mínimo 5 respuestas).
         </p>
       )}
     </div>
@@ -322,7 +322,7 @@ function TemasImportantes() {
         })}
       </div>
       <div class="row" style={{ alignItems: 'center' }}>
-        <a class="btn primary" href="#/coincide/resultados">
+        <a class="btn primary" href="#/elige/resultados">
           {marcados.length ? `Ver mis resultados (${marcados.length} ${marcados.length === 1 ? 'tema cuenta' : 'temas cuentan'} el doble) →` : 'Ver mis resultados →'}
         </a>
         {marcados.length > 0 && (
@@ -368,7 +368,7 @@ function Resultados() {
     return (
       <div class="note">
         Has respondido {respondidas} afirmaciones. Hacen falta al menos 5 para calcular tu afinidad con los partidos.{' '}
-        <a href="#/coincide">Volver al cuestionario</a>
+        <a href="#/elige">Volver al cuestionario</a>
       </div>
     );
 
@@ -397,7 +397,7 @@ function Resultados() {
           </button>
           <p style={{ margin: '12px 0 0', fontSize: '0.92rem' }}>
             O, si ya sabes a quién votar,{' '}
-            <button class="link-btn" onClick={() => continuar('/cuenta')}>
+            <button class="link-btn" onClick={() => continuar('/suma')}>
               ve directamente al paso 3: ¿tendrá escaño tu voto? →
             </button>
           </p>
@@ -412,7 +412,7 @@ function Resultados() {
         ) : (
           <span class="muted">No has marcado temas importantes: todas tus respuestas cuentan igual.</span>
         )}{' '}
-        <a href="#/coincide/temas">{(e.temasImportantes ?? []).length > 0 ? 'Cambiar' : 'Elegir temas'}</a>
+        <a href="#/elige/temas">{(e.temasImportantes ?? []).length > 0 ? 'Cambiar' : 'Elegir temas'}</a>
       </p>
       <div class="note">
         <strong>No es una recomendación de voto: es un espejo de tus respuestas</strong>, comparadas con la posición de cada partido, con
@@ -505,7 +505,7 @@ function Resultados() {
             <p class="muted" style={{ fontSize: '0.88rem', margin: '0 0 12px' }}>
               Se comparten tus {top.length === 1 ? 'partido más afín' : `${top.length} partidos más afines`} y un enlace al test, no tus respuestas.
             </p>
-            <Compartir texto={texto} url={enlace('/coincide')} titulo="Mi afinidad en vota con datos" />
+            <Compartir texto={texto} url={enlace('/elige')} titulo="Mi afinidad en vota con datos" />
           </section>
         );
       })()}
@@ -516,7 +516,7 @@ function Resultados() {
         </div>
       )}
       <div class="row">
-        <a class="btn ghost" href="#/coincide">
+        <a class="btn ghost" href="#/elige">
           Revisar respuestas
         </a>
         <button
@@ -535,7 +535,7 @@ function Resultados() {
 export function Coincide() {
   const d = fase1.value;
   const sub = ruta.value.includes('resultados');
-  const temas = ruta.value.startsWith('/coincide/temas');
+  const temas = ruta.value.startsWith('/elige/temas');
   const [i, setI] = useState<number | null>(null);
   // Solo cuentan las afirmaciones vigentes; se continúa por la primera sin responder (o saltar).
   const contestada = (id: string) => !!estado.value.respuestas[id] && !estado.value.respuestas[id].sinResponder;
@@ -567,7 +567,7 @@ export function Coincide() {
         i={i}
         n={n}
         onPrev={() => setI(Math.max(0, i - 1))}
-        onNext={() => (i + 1 < n ? setI(i + 1) : ir('/coincide/temas'))}
+        onNext={() => (i + 1 < n ? setI(i + 1) : ir('/elige/temas'))}
       />
     );
   }

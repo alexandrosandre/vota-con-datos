@@ -285,7 +285,7 @@ export function Cuenta() {
           (n.º {posAlternativa} en tu afinidad, {fmt.pct(alternativa.pEscano)} de probabilidad de escaño).
         </p>
         <p class="muted" style={{ margin: '8px 0 0', fontSize: '0.9rem' }}>
-          Sale de <a href="#/coincide/resultados">tu resultado del paso 1</a>, no de nuestra opinión. Votar a quien prefieres también es legítimo: tu voto cuenta para la financiación pública de los partidos y como
+          Sale de <a href="#/elige/resultados">tu resultado del paso 1</a>, no de nuestra opinión. Votar a quien prefieres también es legítimo: tu voto cuenta para la financiación pública de los partidos y como
           señal política.
         </p>
       </div>
@@ -293,7 +293,7 @@ export function Cuenta() {
       <div class="note" style={{ marginTop: 16 }}>
         {ranking.length === 0 ? (
           <>
-            Si haces <a href="#/coincide">el paso 1</a>, te señalamos cuál de tus partidos más afines tiene opciones aquí.
+            Si haces <a href="#/elige">el paso 1</a>, te señalamos cuál de tus partidos más afines tiene opciones aquí.
           </>
         ) : (
           <>Ninguno de tus partidos más afines del paso 1 llega al 50 % de probabilidad de escaño en {circ!.nombre} con estos datos.</>
@@ -481,7 +481,7 @@ export function Cuenta() {
                       `probabilidad de lograr al menos un escaño (${filaElegida.escanosMedia.toLocaleString('es-ES', { maximumFractionDigits: 1 })} de media, de ${circ.escanos} en juego). ` +
                       'Mira las opciones de cada papeleta en tu provincia, con las listas del BOE:'
                     }
-                    url={enlace('/cuenta', { circ: circ.ine, partido: pref ?? elegida!.id, escenario: esc.id })}
+                    url={enlace('/suma', { circ: circ.ine, partido: pref ?? elegida!.id, escenario: esc.id })}
                     titulo={`${elegida!.siglas} en ${nombreLlano(circ.nombre)} · vota con datos`}
                   />
                 )}

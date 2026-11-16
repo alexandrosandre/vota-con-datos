@@ -7,16 +7,16 @@
 import { ruta } from './store';
 
 const PASOS_BASE = [
-  { n: 1, id: 'coincide', ruta: '/coincide', clase: 'p1' },
+  { n: 1, id: 'coincide', ruta: '/elige', clase: 'p1' },
   { n: 2, id: 'contrasta', ruta: '/contrasta', clase: 'p2' },
-  { n: 3, id: 'cuenta', ruta: '/cuenta', clase: 'p3' },
+  { n: 3, id: 'cuenta', ruta: '/suma', clase: 'p3' },
 ] as const;
 
 type TextoPaso = { verbo: string; pregunta: string; resumen: string; cta: string };
 
 /**
  * Nombres y lema de los tres pasos. Se puede previsualizar otra versión con ?lema=<id>.
- * (Las rutas internas /coincide, /contrasta, /cuenta no cambian.)
+ * (Las rutas son /elige, /contrasta y /suma, como el lema; los identificadores internos coincide y cuenta no cambian.)
  */
 export const LEMAS: Record<string, { lema: [string, string, string]; eslogan: string; lead: string; pasos: Record<string, TextoPaso> }> = {
   // Elegido el 9-nov-2026, apartado por apartado (ver docs/propuestas-lema/).

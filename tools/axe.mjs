@@ -5,7 +5,7 @@ import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 const axe = readFileSync(require.resolve('axe-core/axe.min.js'), 'utf8');
 const base = process.argv[2] ?? 'http://localhost:5179/vota-con-datos/';
-const rutas = ['#/', '#/coincide', '#/contrasta/vox', '#/contrasta/pp', '?circ=40&partido=podemos#/cuenta', '#/metodologia', '#/creditos'];
+const rutas = ['#/', '#/elige', '#/contrasta/vox', '#/contrasta/pp', '?circ=40&partido=podemos#/suma', '#/metodologia', '#/creditos'];
 const b = await puppeteer.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: 'new' });
 let total = 0;
 for (const anchura of [1280, 390]) {

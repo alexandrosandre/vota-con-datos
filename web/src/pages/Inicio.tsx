@@ -29,7 +29,7 @@ export function Inicio() {
         </h1>
         <p class="lead">{LEMA.lead}</p>
         <div class="row">
-          <a class="btn primary p1" href="#/coincide">
+          <a class="btn primary p1" href="#/elige">
             Empezar por el paso 1
           </a>
           <a class="btn" href="#/metodologia">

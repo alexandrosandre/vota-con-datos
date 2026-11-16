@@ -46,7 +46,7 @@ export function Disenos() {
                 <a class="btn" href={`${base}?tema=${t.id}&modo=oscuro#/`}>
                   En oscuro
                 </a>
-                <a class="btn ghost" href={`${base}?tema=${t.id}&circ=28&partido=podemos#/cuenta`}>
+                <a class="btn ghost" href={`${base}?tema=${t.id}&circ=28&partido=podemos#/suma`}>
                   Ver el paso 3
                 </a>
                 <a class="btn ghost" href={`${base}?tema=${t.id}#/contrasta/erc`}>

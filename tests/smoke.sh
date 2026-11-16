@@ -27,15 +27,16 @@ comprueba() { # ruta texto...
   done
 }
 comprueba "#/" "Elige." "Suma." "candidaturas proclamadas en el BOE"
-comprueba "#/suma" "votar a quien prefieres siempre es legítimo"   # alias del paso 3
-comprueba "#/coincide" "afirmaciones"
+comprueba "#/suma" "votar a quien prefieres siempre es legítimo"
+comprueba "#/elige" "afirmaciones"
+comprueba "?circ=28&partido=pp#/cuenta" "probabilidad de lograr al menos un escaño"   # ruta antigua: redirige a #/suma
 comprueba "#/contrasta/erc" "propuestas de su programa" "Programa oficial" "¿Qué mide cada columna?"
-comprueba "?circ=28&partido=pp#/cuenta" "probabilidad de lograr al menos un escaño" "Todas las candidaturas en Madrid" "Calcular con" "¿De dónde salen estos datos?"
-comprueba "?circ=31&partido=pp#/cuenta" "En Navarra, el PP se presenta dentro de la coalición UPN-PP, junto a UPN."   # partido dentro de una coalición
-comprueba "?circ=35&partido=podemos#/cuenta" "En Las Palmas, Podemos se presenta dentro de la coalición NC-BC, PODEMOS, IU, SUMAR"
-comprueba "?circ=31&partido=pnv#/cuenta" "En Navarra, el PNV se presenta dentro de la coalición GBAI."   # coalición sin partido principal en la web
-comprueba "?circ=28&partido=psc#/cuenta" "no presenta candidatura propia"
-comprueba "?circ=46&partido=frente_amplio#/cuenta" "Papeleta que quieres votar" "COMPROMIS-EUPV-PODEM-ERPV (Compromís, Podemos, Frente Amplio y ERC)"   # el desplegable solo muestra papeletas
+comprueba "?circ=28&partido=pp#/suma" "probabilidad de lograr al menos un escaño" "Todas las candidaturas en Madrid" "Calcular con" "¿De dónde salen estos datos?"
+comprueba "?circ=31&partido=pp#/suma" "En Navarra, el PP se presenta dentro de la coalición UPN-PP, junto a UPN."   # partido dentro de una coalición
+comprueba "?circ=35&partido=podemos#/suma" "En Las Palmas, Podemos se presenta dentro de la coalición NC-BC, PODEMOS, IU, SUMAR"
+comprueba "?circ=31&partido=pnv#/suma" "En Navarra, el PNV se presenta dentro de la coalición GBAI."   # coalición sin partido principal en la web
+comprueba "?circ=28&partido=psc#/suma" "no presenta candidatura propia"
+comprueba "?circ=46&partido=frente_amplio#/suma" "Papeleta que quieres votar" "COMPROMIS-EUPV-PODEM-ERPV (Compromís, Podemos, Frente Amplio y ERC)"   # el desplegable solo muestra papeletas
 comprueba "#/contrasta/pp" "se presenta dentro de la coalición «UPN-PP» en Navarra"
 comprueba "#/contrasta/upn-pp" "no está entre los"
 comprueba "#/creditos" "Créditos de las imágenes"

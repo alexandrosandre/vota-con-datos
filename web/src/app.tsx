@@ -14,9 +14,9 @@ import { Privacidad } from './pages/Privacidad';
 
 /** Rutas antiguas (primera versión publicada) → nuevas. */
 const REDIRECCIONES: Record<string, string> = {
-  '/afinidad': '/coincide', '/tu-voto': '/cuenta', '/rigor': '/contrasta',
-  // Nombres de los pasos (lema «Elige · Contrasta · Suma»)
-  '/elige': '/coincide', '/suma': '/cuenta',
+  '/afinidad': '/elige', '/tu-voto': '/suma', '/rigor': '/contrasta',
+  // Hasta el 16-nov las rutas de los pasos 1 y 3 no seguían el lema «Elige · Contrasta · Suma»
+  '/coincide': '/elige', '/cuenta': '/suma',
 };
 
 function Cabecera() {
@@ -83,7 +83,7 @@ function tituloDe(r: string): string {
   let t: string | null = null;
   if (paso) {
     const sel = paso.id === 'contrasta' ? partido(r.split('/')[2])?.siglas : undefined;
-    t = r.startsWith('/coincide/resultados') ? `Tus resultados · ${paso.verbo}` : sel ? `${paso.verbo}: ${sel}` : `${paso.verbo}: ${paso.pregunta}`;
+    t = r.startsWith('/elige/resultados') ? `Tus resultados · ${paso.verbo}` : sel ? `${paso.verbo}: ${sel}` : `${paso.verbo}: ${paso.pregunta}`;
   } else if (r.startsWith('/metodologia')) t = 'Metodología';
   else if (r.startsWith('/marca')) t = 'Marca';
   else if (r.startsWith('/disenos')) t = 'Diseños';
@@ -144,9 +144,9 @@ export function App() {
   else if (r.startsWith('/marca')) page = <Marca />;
   else if (r.startsWith('/disenos')) page = <Disenos />;
   else if (!partidos.value) page = <div class="narrow page muted">Cargando datos…</div>;
-  else if (r.startsWith('/coincide')) page = <Coincide />;
+  else if (r.startsWith('/elige')) page = <Coincide />;
   else if (r.startsWith('/contrasta')) page = <Contrasta />;
-  else if (r.startsWith('/cuenta')) page = <Cuenta />;
+  else if (r.startsWith('/suma')) page = <Cuenta />;
   else if (r.startsWith('/creditos')) page = <Creditos />;
   else if (r.startsWith('/privacidad')) page = <Privacidad />;
   else page = <Inicio />;
