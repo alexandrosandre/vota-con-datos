@@ -53,7 +53,8 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
     horas de luz gratis, desfavorable → mixta); sus compromisos anteriores están en el programa, así que no hay complemento.
     Las «500 medidas» del PSOE del 16-nov son el programa ya incorporado el 15-nov (mismo sha256 en psoe.es).
   - [ ] Podemos, Junts, EH Bildu, NC-BC, Ara Més, UPN — sin fecha (Junts: sin rastro de programa el 15-nov).
-  - [ ] Auditoría de coherencia tras el programa del Frente Amplio.
+  - Hecho el 16-nov: auditoría de coherencia tras el programa del Frente Amplio (`data/fase3/coherencia_2026-11-16.md`: 49 correcciones de
+    texto, cifras y fuentes en 11 partidos; ninguna valoración cambia).
   - Hecho el 14-nov: adelante_andalucia-08 cita la DA 23.ª de la Ley 54/1997 (mínimo del 10 % de la SEPI en
     Red Eléctrica) y pp-07 y compromis-13 resumen a Bom y Ligthart con sus cifras exactas (0,083 / 0,122 para el
     capital de la Administración central, casi el doble en infraestructuras básicas regionales o locales).
