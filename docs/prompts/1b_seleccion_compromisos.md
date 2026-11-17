@@ -25,6 +25,9 @@ elección o esta legislatura**.
   en coalición electoral con el PP.
 * En público y en cualquier formato: mitin, entrevista, rueda de prensa, vídeo o red social oficial,
   precampaña incluida, siempre que se refiera a esta elección o esta legislatura.
+* **Registro de compromisos (`data/promesas/promesas.json`; decisión del editor, 16-nov-2026):** el
+  programa electoral del 29-N y las declaraciones de campaña valen igual como fuente, para todos los
+  partidos, tengan o no su programa analizado en el paso 2.
 * Es una **medida concreta** (qué se hará), no un diagnóstico, una crítica al rival ni una aspiración.
 * Nada de rumores, estilo indirecto del periodista, columnas de opinión ni programas anteriores. Si un
   medio resume con sus palabras, busca la cita literal en otra fuente primaria o de agencia; si no

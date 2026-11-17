@@ -7,12 +7,13 @@
    "campana": "2026-11-13 / 2026-11-27"
   },
   "generado": "2026-11-08",
-  "ventana_temporal": "Promesas hechas desde la convocatoria (5-6 oct 2026) hasta el 16 nov 2026 (mañana), o inmediatamente antes si se presentaron como oferta para estas elecciones.",
+  "ventana_temporal": "Promesas hechas desde la convocatoria (5-6 oct 2026) hasta el 16 nov 2026 (noche), o inmediatamente antes si se presentaron como oferta para estas elecciones.",
   "criterios": [
    "Solo compromisos concretos y verificables (medida, cifra, ley, impuesto); se excluyen eslóganes, ataques, aspiraciones vagas y declaraciones de pactos.",
    "Cada promesa procede de una página leída (web oficial del partido o medio de comunicación) con URL y fecha; se prefieren dos fuentes independientes.",
    "tipo=cita_literal: palabras textuales entre comillas en la fuente; tipo=parafrasis: paráfrasis fiel y neutral.",
-   "No se usan programas ni promesas de elecciones anteriores ni información de memoria."
+   "No se usan programas ni promesas de elecciones anteriores ni información de memoria.",
+   "Decisión del editor (16-nov-2026): el programa electoral del 29-N y las declaraciones de campaña valen igual como fuente, para todos los partidos, tengan o no su programa analizado en el paso 2. Si la cita sale de un programa en PDF, la fuente lleva su sha256 y la fecha de consulta."
   ],
   "fuente_candidaturas": "BOE-A-2026-23103 (candidaturas proclamadas, BOE 2026-11-03) y corrección BOE-A-2026-23383 (2026-11-07): https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23103",
   "areas": [
@@ -52,31 +53,32 @@
    "Actualización 2026-11-14 (mañana): solo fuentes oficiales con cita literal. Se añaden 10 promesas: UPN 5 y PP 3 (lista de «Compromisos» de la web de la coalición upn-pp.es, revisada por primera vez) y EH Bildu 2 (nota de EH Bildu Araba del 13-nov). PSOE, PSC, Junts, PNV, CC, UPC, Compromís, Frente Amplio, Ara Més y Podemos no publicaron compromisos concretos nuevos desde la noche del 13-nov. Total: 165. Detalle en data/promesas/cambios_2026-11-14.md.",
    "Actualización 2026-11-14 (noche): se añaden 30 promesas, con prioridad a los partidos con poca cobertura y recogiendo también algunas anteriores que no se habían incorporado: SALF 6 (contrato electoral del 10-nov, cita literal del PDF oficial), Ara Més 6 y Frente Amplio 6 (notas de la coalición Ara Més-Front Ampli del 9, 10 y 14-nov), Adelante Andalucía 5 («Las 29 del 29N»), ERC 4 (notas de esquerra.cat del 10, 11 y 13-nov), PSC 2 (Sánchez en el acto del PSC en Tarragona, 7-nov) y PNV 1 (Vaquero, 14-nov). EH Bildu, PSOE, UPC, Coalición Canaria y UPN no dejaron medidas concretas nuevas el 13 y 14-nov. Total: 195. Detalle en data/promesas/cambios_2026-11-14b.md.",
    "Actualización 2026-11-15 (mañana): se añaden 8 promesas (eran 10; en la revisión se retiraron dos paráfrasis de Podemos de fuente única): BNG 6 (notas oficiales del 13-nov que no se habían revisado: precios de los alimentos y de los carburantes, dispositivos telemáticos para víctimas de violencia machista, N-120 y ferrocarril en Lugo y Ourense; cita literal en gallego, fuente única), Podemos 1 (Irene Montero en el mitin de UPC en Las Palmas, 14-nov: SMI de 1.800 euros por 30 horas) y PSOE 1 (Sánchez, entrevista de Vocento publicada el 14-nov: reformar la ley del suelo). PSC, EH Bildu, UPC, Coalición Canaria, UPN, Junts y PNV no dejaron medidas concretas nuevas desde la noche del 14-nov. El programa del PSOE se presenta hoy a las 12:00 y no se ha anticipado. Total: 203. Detalle en data/promesas/cambios_2026-11-15.md.",
-   "Actualización 2026-11-15 (tarde): se añaden 5 promesas: Frente Amplio 4 (de la nota de frenteamplio.info del 14-nov que no se había revisado, salud bucodental hasta el 50% de la población, gafas y lentillas para todas las edades con el Plan VEO y audífonos en la cartera común del SNS; y, de la entrevista de Colau en La Vanguardia recogida por Europa Press, IVA anual para autónomos que ingresen menos de 85.000 euros) y Coalición Canaria 1 (Valido: cubrir el 100% del coste real del transporte de mercancías, nota oficial). PSC, EH Bildu, PNV, Junts, UPN, UPC, Ara Més, BNG y Podemos no dejaron medidas concretas nuevas en sus actos del 15-nov. Las medidas del programa del PSOE se analizan aparte. En la revisión se retiró una sexta, de Podemos (Montero en Sevilla sobre las bases de Rota y Morón: frase de mitin sin medida concreta y con fuentes que no coinciden). Total: 208. Detalle en data/promesas/cambios_2026-11-15.md (sección «Tarde»)."
+   "Actualización 2026-11-15 (tarde): se añaden 5 promesas: Frente Amplio 4 (de la nota de frenteamplio.info del 14-nov que no se había revisado, salud bucodental hasta el 50% de la población, gafas y lentillas para todas las edades con el Plan VEO y audífonos en la cartera común del SNS; y, de la entrevista de Colau en La Vanguardia recogida por Europa Press, IVA anual para autónomos que ingresen menos de 85.000 euros) y Coalición Canaria 1 (Valido: cubrir el 100% del coste real del transporte de mercancías, nota oficial). PSC, EH Bildu, PNV, Junts, UPN, UPC, Ara Més, BNG y Podemos no dejaron medidas concretas nuevas en sus actos del 15-nov. Las medidas del programa del PSOE se analizan aparte. En la revisión se retiró una sexta, de Podemos (Montero en Sevilla sobre las bases de Rota y Morón: frase de mitin sin medida concreta y con fuentes que no coinciden). Total: 208. Detalle en data/promesas/cambios_2026-11-15.md (sección «Tarde»).",
+   "Actualización 2026-11-16 (mañana y noche): por la mañana se añadieron 16 promesas (PP 5, Teruel Existe 6, Frente Amplio 4, Compromís 1; detalle en data/promesas/cambios_2026-11-16.md). Por la noche, con la decisión del editor de aceptar el programa del 29-N como fuente para todos los partidos, se añaden 34: EH Bildu 7 (nota del 16-nov sobre pensiones y programa publicado ese día), Ara Més 8 (programa de la coalición del 16-nov, que cuenta también para el Frente Amplio: +8), Frente Amplio 1 más (tope de 10 millones por heredero a las herencias, de su programa), PSOE 3 (programa presentado en Alcorcón el 15-nov: prestación por cuidado de hijos menores de 8 años, impuesto progresivo a las viviendas de grandes propietarios y fondos no destinadas a alquiler asequible y unión de amistad en el Código Civil), Teruel Existe 2, Coalición Canaria 2, Adelante Andalucía 2 y BNG 1. No se añaden la deducción en el IRPF por contratar personal de innovación de Coalición Canaria (sin cuantía ni destinatarios) ni la tarifa plana de 80 euros para autónomos del Frente Amplio (su programa no da la cifra). Total: 258. Detalle en data/promesas/cambios_2026-11-16b.md."
   ],
   "conteo": {
-   "psoe": 8,
-   "pp": 19,
+   "psoe": 11,
+   "pp": 24,
    "vox": 12,
-   "frente_amplio": 27,
+   "frente_amplio": 40,
    "podemos": 11,
    "erc": 11,
    "junts": 8,
-   "eh_bildu": 5,
+   "eh_bildu": 12,
    "pnv": 14,
-   "bng": 17,
-   "coalicion_canaria": 12,
+   "bng": 18,
+   "coalicion_canaria": 14,
    "upc": 6,
    "upn": 8,
    "salf": 11,
-   "compromis": 12,
-   "adelante_andalucia": 10,
-   "teruel_existe": 3,
+   "compromis": 13,
+   "adelante_andalucia": 12,
+   "teruel_existe": 11,
    "psc": 3,
-   "ara_mes_fa": 11
+   "ara_mes_fa": 19
   },
-  "total_promesas": 208,
-  "actualizado": "2026-11-15"
+  "total_promesas": 258,
+  "actualizado": "2026-11-16"
  },
  "partidos": {
   "psoe": {
@@ -234,6 +236,84 @@
        "url": "https://www.canarias7.es/elecciones/generales/vaya-sucederme-decidira-militancia-queda-tiempo-20261114000444-ntrc.html",
        "medio": "Canarias7 (entrevista de Vocento)",
        "fecha": "2026-11-14"
+      }
+     ]
+    },
+    {
+     "texto": "una prestación de la Seguridad Social que cubra cuatro semanas del permiso parental para el cuidado de hijos menores de ocho años con el 100 % de la base reguladora",
+     "tipo": "cita_literal",
+     "area": "igualdad",
+     "fecha": "2026-11-15",
+     "quien": "PSOE (programa electoral 29N «La fuerza de seguir avanzando», medida 105); Pedro Sánchez, secretario general y candidato a la Presidencia del Gobierno, la anunció el 15-nov en el mitin de presentación del programa en Alcorcón (Europa Press y EFE)",
+     "fuentes": [
+      {
+       "url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+       "medio": "PSOE (programa electoral 29N «La fuerza de seguir avanzando», PDF oficial)",
+       "fecha": "2026-11-15",
+       "sha256": "e9c8341339538b550641b6ddb1c3fdfeef7fda6a8a1a4be9e8d6a44cbc229bf5",
+       "consultado": "2026-11-17"
+      },
+      {
+       "url": "https://www.infobae.com/espana/agencias/2026/11/15/sanchez-anuncia-mas-impuestos-a-fondos-propietarios-de-vivienda-y-permisos-para-el-cuidado-de-hijos/",
+       "medio": "Infobae (Europa Press)",
+       "fecha": "2026-11-15"
+      },
+      {
+       "url": "https://www.infobae.com/espana/agencias/2026/11/15/sanchez-promete-nuevos-impuestos-a-fondos-de-inversion-y-grandes-tenedores-si-gana-el-29n/",
+       "medio": "Infobae (EFE)",
+       "fecha": "2026-11-15"
+      }
+     ]
+    },
+    {
+     "texto": "Se gravará con un impuesto progresivo la posesión de todas aquellas viviendas de grandes propietarios y fondos buitre que no se destinen a alquiler residencial asequible. Las viviendas que se dediquen a fines turísticos, que estén vacías, o que se pongan en alquiler a un precio abusivo serán objeto de este nuevo impuesto.",
+     "tipo": "cita_literal",
+     "area": "vivienda",
+     "fecha": "2026-11-15",
+     "quien": "PSOE (programa electoral 29N «La fuerza de seguir avanzando», medida 70); Pedro Sánchez, secretario general y candidato a la Presidencia del Gobierno, la anunció el 15-nov en el mitin de presentación del programa en Alcorcón (Europa Press y EFE). El programa no fija los tipos",
+     "fuentes": [
+      {
+       "url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+       "medio": "PSOE (programa electoral 29N «La fuerza de seguir avanzando», PDF oficial)",
+       "fecha": "2026-11-15",
+       "sha256": "e9c8341339538b550641b6ddb1c3fdfeef7fda6a8a1a4be9e8d6a44cbc229bf5",
+       "consultado": "2026-11-17"
+      },
+      {
+       "url": "https://www.infobae.com/espana/agencias/2026/11/15/sanchez-promete-nuevos-impuestos-a-fondos-de-inversion-y-grandes-tenedores-si-gana-el-29n/",
+       "medio": "Infobae (EFE)",
+       "fecha": "2026-11-15"
+      },
+      {
+       "url": "https://www.infobae.com/espana/agencias/2026/11/15/sanchez-anuncia-mas-impuestos-a-fondos-propietarios-de-vivienda-y-permisos-para-el-cuidado-de-hijos/",
+       "medio": "Infobae (Europa Press)",
+       "fecha": "2026-11-15"
+      }
+     ]
+    },
+    {
+     "texto": "Incluir en el código civil la figura de la unión de amistad. Crearemos una nueva figura jurídica de unión de amistad que dotará de un amparo legal a aquellas situaciones en las que personas unidas por un vínculo de amistad o compañerismo deciden asumir un compromiso mutuo de cuidados.",
+     "tipo": "cita_literal",
+     "area": "otros",
+     "fecha": "2026-11-15",
+     "quien": "PSOE (programa electoral 29N «La fuerza de seguir avanzando», medida 370); Pedro Sánchez, secretario general y candidato a la Presidencia del Gobierno, la anunció el 15-nov en el mitin de presentación del programa en Alcorcón (Europa Press y EFE)",
+     "fuentes": [
+      {
+       "url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+       "medio": "PSOE (programa electoral 29N «La fuerza de seguir avanzando», PDF oficial)",
+       "fecha": "2026-11-15",
+       "sha256": "e9c8341339538b550641b6ddb1c3fdfeef7fda6a8a1a4be9e8d6a44cbc229bf5",
+       "consultado": "2026-11-17"
+      },
+      {
+       "url": "https://www.infobae.com/espana/agencias/2026/11/15/sanchez-promete-nuevos-impuestos-a-fondos-de-inversion-y-grandes-tenedores-si-gana-el-29n/",
+       "medio": "Infobae (EFE)",
+       "fecha": "2026-11-15"
+      },
+      {
+       "url": "https://www.infobae.com/espana/agencias/2026/11/15/sanchez-anuncia-mas-impuestos-a-fondos-propietarios-de-vivienda-y-permisos-para-el-cuidado-de-hijos/",
+       "medio": "Infobae (Europa Press)",
+       "fecha": "2026-11-15"
       }
      ]
     }
@@ -1473,6 +1553,170 @@
        "fecha": "2026-11-02"
       }
      ]
+    },
+    {
+     "texto": "Limitaremos las herencias de los ultrarricos a un máximo de 10 millones de euros por heredero. Esta limitación se implementará estableciendo un tipo impositivo marginal del 100 % sobre el tramo de la base imponible que supere esa cifra en el Impuesto sobre Sucesiones y Donaciones.",
+     "tipo": "cita_literal",
+     "area": "fiscalidad",
+     "fecha": "2026-11-16",
+     "quien": "Frente Amplio (programa electoral 29N «Un programa como una casa», documento oficial publicado el 16-nov en frenteamplio.info); EFE lo adelantó ese día con la confirmación de fuentes de la coalición",
+     "fuentes": [
+      {
+       "url": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+       "medio": "Frente Amplio (programa electoral 29N «Un programa como una casa», PDF oficial)",
+       "fecha": "2026-11-16",
+       "sha256": "df6e4d967a3a41386656273c32c2df3edc6681b6ee047b190b2ebb91f1a36f04",
+       "consultado": "2026-11-17"
+      },
+      {
+       "url": "https://www.infobae.com/espana/agencias/2026/11/16/frente-amplio-propone-limitar-las-herencias-a-un-maximo-de-10-millones-por-heredero/",
+       "medio": "Infobae (EFE)",
+       "fecha": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Impulsarem un topall de preu als carburants, de manera que no superin, en cap cas, el 5 % del preu mitjà de la península.",
+     "tipo": "cita_literal",
+     "area": "energía/clima",
+     "fecha": "2026-11-16",
+     "quien": "Ara Més-Front Ampli (programa electoral 29N de la coalición, que firman Movimiento Sumar, Izquierda Unida y Recortes Cero, partidos del Frente Amplio; documento oficial publicado el 16-nov)",
+     "fuentes": [
+      {
+       "url": "https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf",
+       "medio": "Ara Més-Front Ampli (programa electoral 29N, PDF oficial enlazado desde aramesfrontampli.cat)",
+       "fecha": "2026-11-16",
+       "sha256": "75149b3b5db92d0a8de0332b005c5114f04c63062fa5cda932eacf65c9f8a6f8",
+       "consultado": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "donarem màxima prioritat a l’OSP entre Menorca i Barcelona, que estarà regulada per una tarifa màxima de trenta-cinc euros per als residents.",
+     "tipo": "cita_literal",
+     "area": "otros",
+     "fecha": "2026-11-16",
+     "quien": "Ara Més-Front Ampli (programa electoral 29N de la coalición, que firman Movimiento Sumar, Izquierda Unida y Recortes Cero, partidos del Frente Amplio; documento oficial publicado el 16-nov); Carme Gomila, cabeza de lista al Congreso, reclamó el 15-nov en el aeropuerto de Menorca la aplicación inmediata de la OSP",
+     "fuentes": [
+      {
+       "url": "https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf",
+       "medio": "Ara Més-Front Ampli (programa electoral 29N, PDF oficial enlazado desde aramesfrontampli.cat)",
+       "fecha": "2026-11-16",
+       "sha256": "75149b3b5db92d0a8de0332b005c5114f04c63062fa5cda932eacf65c9f8a6f8",
+       "consultado": "2026-11-16"
+      },
+      {
+       "url": "https://aramesfrontampli.cat/noticies/arames-front-ampli-reclama-una-millor-connectivitat-per-acabar-amb-laillament-injust-de-menorca",
+       "medio": "Ara Més-Front Ampli (nota de prensa, aramesfrontampli.cat)",
+       "fecha": "2026-11-15"
+      }
+     ]
+    },
+    {
+     "texto": "Es limitarà, per llei, el preu del lloguer a zones tensionades en el 25 % de la renda neta de les llars de la secció censal, a tot estirar.",
+     "tipo": "cita_literal",
+     "area": "vivienda",
+     "fecha": "2026-11-16",
+     "quien": "Ara Més-Front Ampli (programa electoral 29N de la coalición, que firman Movimiento Sumar, Izquierda Unida y Recortes Cero, partidos del Frente Amplio; documento oficial publicado el 16-nov)",
+     "fuentes": [
+      {
+       "url": "https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf",
+       "medio": "Ara Més-Front Ampli (programa electoral 29N, PDF oficial enlazado desde aramesfrontampli.cat)",
+       "fecha": "2026-11-16",
+       "sha256": "75149b3b5db92d0a8de0332b005c5114f04c63062fa5cda932eacf65c9f8a6f8",
+       "consultado": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Es crearà un escut hipotecari per protegir, de fins a 300 € al mes, les famílies de classe mitjana en què la hipoteca els suposi més del 40 % dels ingressos nets.",
+     "tipo": "cita_literal",
+     "area": "vivienda",
+     "fecha": "2026-11-16",
+     "quien": "Ara Més-Front Ampli (programa electoral 29N de la coalición, que firman Movimiento Sumar, Izquierda Unida y Recortes Cero, partidos del Frente Amplio; documento oficial publicado el 16-nov)",
+     "fuentes": [
+      {
+       "url": "https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf",
+       "medio": "Ara Més-Front Ampli (programa electoral 29N, PDF oficial enlazado desde aramesfrontampli.cat)",
+       "fecha": "2026-11-16",
+       "sha256": "75149b3b5db92d0a8de0332b005c5114f04c63062fa5cda932eacf65c9f8a6f8",
+       "consultado": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Protegirem el petit comerç mitjançant la regulació i el control dels preus dels lloguers comercials.",
+     "tipo": "cita_literal",
+     "area": "vivienda",
+     "fecha": "2026-11-16",
+     "quien": "Ara Més-Front Ampli (programa electoral 29N de la coalición, que firman Movimiento Sumar, Izquierda Unida y Recortes Cero, partidos del Frente Amplio; documento oficial publicado el 16-nov); presentada el 16-nov por Carme Gomila, cabeza de lista al Congreso, como una reforma de la Ley de Arrendamientos Urbanos",
+     "fuentes": [
+      {
+       "url": "https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf",
+       "medio": "Ara Més-Front Ampli (programa electoral 29N, PDF oficial enlazado desde aramesfrontampli.cat)",
+       "fecha": "2026-11-16",
+       "sha256": "75149b3b5db92d0a8de0332b005c5114f04c63062fa5cda932eacf65c9f8a6f8",
+       "consultado": "2026-11-16"
+      },
+      {
+       "url": "https://www.europapress.es/illes-balears/noticia-ara-mes-front-ampli-propone-limitar-precio-alquileres-comerciales-proteger-pequeno-comercio-20261116121436.html",
+       "medio": "Europa Press",
+       "fecha": "2026-11-16"
+      },
+      {
+       "url": "https://aramesfrontampli.cat/",
+       "medio": "Ara Més-Front Ampli (extracto de la nota del 16-nov en la portada; el enlace «Llegir més» lleva a una nota antigua)",
+       "fecha": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Farem que els establiments turístics tributin el tipus general d'IVA del 21%, eliminant la bonificació existent d’allotjaments hotelers, allotjaments turístics amb serveis hotelers, serveis de creuers turístics, paquets de vacances marítimes i serveis recreatius de luxe.",
+     "tipo": "cita_literal",
+     "area": "fiscalidad",
+     "fecha": "2026-11-16",
+     "quien": "Ara Més-Front Ampli (programa electoral 29N de la coalición, que firman Movimiento Sumar, Izquierda Unida y Recortes Cero, partidos del Frente Amplio; documento oficial publicado el 16-nov)",
+     "fuentes": [
+      {
+       "url": "https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf",
+       "medio": "Ara Més-Front Ampli (programa electoral 29N, PDF oficial enlazado desde aramesfrontampli.cat)",
+       "fecha": "2026-11-16",
+       "sha256": "75149b3b5db92d0a8de0332b005c5114f04c63062fa5cda932eacf65c9f8a6f8",
+       "consultado": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Impulsarem la deducció de fins a 1.000 euros de l’IRPF per als menors de 35 anys que visquin de lloguer.",
+     "tipo": "cita_literal",
+     "area": "fiscalidad",
+     "fecha": "2026-11-16",
+     "quien": "Ara Més-Front Ampli (programa electoral 29N de la coalición, que firman Movimiento Sumar, Izquierda Unida y Recortes Cero, partidos del Frente Amplio; documento oficial publicado el 16-nov)",
+     "fuentes": [
+      {
+       "url": "https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf",
+       "medio": "Ara Més-Front Ampli (programa electoral 29N, PDF oficial enlazado desde aramesfrontampli.cat)",
+       "fecha": "2026-11-16",
+       "sha256": "75149b3b5db92d0a8de0332b005c5114f04c63062fa5cda932eacf65c9f8a6f8",
+       "consultado": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Prohibirem els vols privats als aeroports dels territoris insulars, fonamentada en la necessària reducció d’emissions i les externalitats ambientals que provoca el transport aeri.",
+     "tipo": "cita_literal",
+     "area": "energía/clima",
+     "fecha": "2026-11-16",
+     "quien": "Ara Més-Front Ampli (programa electoral 29N de la coalición, que firman Movimiento Sumar, Izquierda Unida y Recortes Cero, partidos del Frente Amplio; documento oficial publicado el 16-nov)",
+     "fuentes": [
+      {
+       "url": "https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf",
+       "medio": "Ara Més-Front Ampli (programa electoral 29N, PDF oficial enlazado desde aramesfrontampli.cat)",
+       "fecha": "2026-11-16",
+       "sha256": "75149b3b5db92d0a8de0332b005c5114f04c63062fa5cda932eacf65c9f8a6f8",
+       "consultado": "2026-11-16"
+      }
+     ]
     }
    ]
   },
@@ -2140,6 +2384,158 @@
        "fecha": "2026-11-13"
       }
      ]
+    },
+    {
+     "texto": "Queremos que las pensiones mínimas se igualen al SMI y conseguir un aumento de al menos otro 15% para las pensiones más bajas, las de viudedad y las no contributivas.",
+     "tipo": "cita_literal",
+     "area": "pensiones",
+     "fecha": "2026-11-16",
+     "quien": "Oihana Etxebarrieta, cabeza de lista de EH Bildu al Congreso por Gipuzkoa, en Donostia (nota oficial de EH Bildu); Eneka Maiz, cabeza de lista por Navarra, lo repite el mismo día en Pamplona (Europa Press)",
+     "fuentes": [
+      {
+       "url": "https://ehbildu.eus/es/noticias/eh-bildu-propone-equiparar-las-pensiones-minimas-al-smi-y-aumentar-al-menos-un-15-las-pensiones-mas-bajas",
+       "medio": "EH Bildu (nota de prensa)",
+       "fecha": "2026-11-16"
+      },
+      {
+       "url": "https://www.europapress.es/navarra/noticia-eh-bildu-apuesta-seguir-dignificando-pensiones-propone-equiparar-mas-bajas-smi-20261116132226.html",
+       "medio": "Europa Press",
+       "fecha": "2026-11-16"
+      },
+      {
+       "url": "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf",
+       "medio": "EH Bildu (programa electoral 29N «Garantía y derechos», PDF oficial)",
+       "fecha": "2026-11-16",
+       "sha256": "ceb655c9c8ebb036a15fa7829865d6e2d178525eb7db92629d702ac5e8d16047",
+       "consultado": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Reducción de la jornada laboral hasta las 32 horas semanales o la jornada de 4 días sin reducción salarial.",
+     "tipo": "cita_literal",
+     "area": "empleo",
+     "fecha": "2026-11-16",
+     "quien": "EH Bildu (programa electoral 29N «Garantía y derechos», documento oficial publicado el 16-nov en ehbildu.eus)",
+     "fuentes": [
+      {
+       "url": "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf",
+       "medio": "EH Bildu (programa electoral 29N «Garantía y derechos», PDF oficial)",
+       "fecha": "2026-11-16",
+       "sha256": "ceb655c9c8ebb036a15fa7829865d6e2d178525eb7db92629d702ac5e8d16047",
+       "consultado": "2026-11-16"
+      },
+      {
+       "url": "https://ehbildu.eus/es/noticias/eh-bildu-presenta-una-agenda-de-medidas-para-reforzar-los-derechos-sociales-y-ampliar-el-autogobierno-de-euskal-herria",
+       "medio": "EH Bildu (nota de prensa)",
+       "fecha": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Indemnización por despido improcedente de al menos 45 días, cumpliendo con la resolución del Comité Europeo de Derechos Sociales de establecer indemnizaciones disuasorias y suficientes",
+     "tipo": "cita_literal",
+     "area": "empleo",
+     "fecha": "2026-11-16",
+     "quien": "EH Bildu (programa electoral 29N «Garantía y derechos», documento oficial publicado el 16-nov en ehbildu.eus)",
+     "fuentes": [
+      {
+       "url": "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf",
+       "medio": "EH Bildu (programa electoral 29N «Garantía y derechos», PDF oficial)",
+       "fecha": "2026-11-16",
+       "sha256": "ceb655c9c8ebb036a15fa7829865d6e2d178525eb7db92629d702ac5e8d16047",
+       "consultado": "2026-11-16"
+      },
+      {
+       "url": "https://ehbildu.eus/es/noticias/eh-bildu-presenta-una-agenda-de-medidas-para-reforzar-los-derechos-sociales-y-ampliar-el-autogobierno-de-euskal-herria",
+       "medio": "EH Bildu (nota de prensa)",
+       "fecha": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Recuperar el impuesto a la energéticas que PNV, UPN, PP, VOX y JUNTS tumbaron, haciéndolo permanente.",
+     "tipo": "cita_literal",
+     "area": "fiscalidad",
+     "fecha": "2026-11-16",
+     "quien": "EH Bildu (programa electoral 29N «Garantía y derechos», documento oficial publicado el 16-nov en ehbildu.eus)",
+     "fuentes": [
+      {
+       "url": "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf",
+       "medio": "EH Bildu (programa electoral 29N «Garantía y derechos», PDF oficial)",
+       "fecha": "2026-11-16",
+       "sha256": "ceb655c9c8ebb036a15fa7829865d6e2d178525eb7db92629d702ac5e8d16047",
+       "consultado": "2026-11-16"
+      },
+      {
+       "url": "https://ehbildu.eus/es/noticias/eh-bildu-presenta-una-agenda-de-medidas-para-reforzar-los-derechos-sociales-y-ampliar-el-autogobierno-de-euskal-herria",
+       "medio": "EH Bildu (nota de prensa)",
+       "fecha": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Establecer un 21% de IVA para los alojamientos turísticos de corta duración.",
+     "tipo": "cita_literal",
+     "area": "fiscalidad",
+     "fecha": "2026-11-16",
+     "quien": "EH Bildu (programa electoral 29N «Garantía y derechos», documento oficial publicado el 16-nov en ehbildu.eus)",
+     "fuentes": [
+      {
+       "url": "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf",
+       "medio": "EH Bildu (programa electoral 29N «Garantía y derechos», PDF oficial)",
+       "fecha": "2026-11-16",
+       "sha256": "ceb655c9c8ebb036a15fa7829865d6e2d178525eb7db92629d702ac5e8d16047",
+       "consultado": "2026-11-16"
+      },
+      {
+       "url": "https://ehbildu.eus/es/noticias/eh-bildu-presenta-una-agenda-de-medidas-para-reforzar-los-derechos-sociales-y-ampliar-el-autogobierno-de-euskal-herria",
+       "medio": "EH Bildu (nota de prensa)",
+       "fecha": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Derogar la Ley de Secretos Oficiales, en vigor desde el franquismo, para asegurar una legislación que garantice la transparencia, la accesibilidad, la información y la protección respecto a todos los oscuros episodios que aún continúan bajo un manto de impunidad",
+     "tipo": "cita_literal",
+     "area": "instituciones/justicia",
+     "fecha": "2026-11-16",
+     "quien": "EH Bildu (programa electoral 29N «Garantía y derechos», documento oficial publicado el 16-nov en ehbildu.eus)",
+     "fuentes": [
+      {
+       "url": "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf",
+       "medio": "EH Bildu (programa electoral 29N «Garantía y derechos», PDF oficial)",
+       "fecha": "2026-11-16",
+       "sha256": "ceb655c9c8ebb036a15fa7829865d6e2d178525eb7db92629d702ac5e8d16047",
+       "consultado": "2026-11-16"
+      },
+      {
+       "url": "https://ehbildu.eus/es/noticias/eh-bildu-presenta-una-agenda-de-medidas-para-reforzar-los-derechos-sociales-y-ampliar-el-autogobierno-de-euskal-herria",
+       "medio": "EH Bildu (nota de prensa)",
+       "fecha": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Revisión al alza de los objetivos de la planificación de energía y clima (PNIEC), con el objetivo de adelantar la descarbonización, al menos, a 2045.",
+     "tipo": "cita_literal",
+     "area": "energía/clima",
+     "fecha": "2026-11-16",
+     "quien": "EH Bildu (programa electoral 29N «Garantía y derechos», documento oficial publicado el 16-nov en ehbildu.eus)",
+     "fuentes": [
+      {
+       "url": "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf",
+       "medio": "EH Bildu (programa electoral 29N «Garantía y derechos», PDF oficial)",
+       "fecha": "2026-11-16",
+       "sha256": "ceb655c9c8ebb036a15fa7829865d6e2d178525eb7db92629d702ac5e8d16047",
+       "consultado": "2026-11-16"
+      },
+      {
+       "url": "https://ehbildu.eus/es/noticias/eh-bildu-presenta-una-agenda-de-medidas-para-reforzar-los-derechos-sociales-y-ampliar-el-autogobierno-de-euskal-herria",
+       "medio": "EH Bildu (nota de prensa)",
+       "fecha": "2026-11-16"
+      }
+     ]
     }
    ]
   },
@@ -2660,6 +3056,20 @@
        "fecha": "2026-11-13"
       }
      ]
+    },
+    {
+     "texto": "o BNG empregará o seu escano por Ourense para que se identifiquen, rehabiliten e transfiran todos os activos que ADIF ten en desuso -como as vivendas sitas en Ribadavia- para incorporalos ao parque público de vivenda e destinalos a aluguer social e asumíbel",
+     "tipo": "cita_literal",
+     "area": "vivienda",
+     "fecha": "2026-11-16",
+     "quien": "Noa Presas, cabeza de lista del BNG al Congreso por Ourense (nota oficial del BNG)",
+     "fuentes": [
+      {
+       "url": "https://www.bng.gal/novas/noa-presas-propon-mobilizar-vivendas-desuso-adif-ribadavia-ampliar-parque-publico-vivenda/20261116121656043953.html",
+       "medio": "BNG (nota de prensa, bng.gal)",
+       "fecha": "2026-11-16"
+      }
+     ]
     }
    ]
   },
@@ -2884,6 +3294,48 @@
        "url": "https://www.eldiario.es/canariasahora/politica/cristina-valido-cc-canarias-exige-cubrir-coste-real-transporte-mercancias-abaratar-cesta-compra_1_13665882.html",
        "medio": "Canarias Ahora (elDiario.es)",
        "fecha": "2026-11-15"
+      }
+     ]
+    },
+    {
+     "texto": "defiende la puesta en marcha del Centro Nacional de Vulcanología en La Palma con una financiación estable por parte del Gobierno de España y en colaboración con el ecosistema científico de Tenerife",
+     "tipo": "cita_literal",
+     "area": "otros",
+     "fecha": "2026-11-16",
+     "quien": "Coalición Canaria (nota oficial sobre la visita a La Palma de Cristina Valido, cabeza de lista por Santa Cruz de Tenerife, en estilo indirecto de la nota), que remite a su programa «Defiende Canarias»",
+     "fuentes": [
+      {
+       "url": "https://coalicioncanaria.org/cristina-valido-pide-el-voto-para-ser-libres-en-la-defensa-de-los-derechos-e-intereses-de-la-palma/",
+       "medio": "Coalición Canaria (nota oficial)",
+       "fecha": "2026-11-16"
+      },
+      {
+       "url": "https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf",
+       "medio": "Coalición Canaria-Primero Canarias (bases del programa electoral)",
+       "fecha": "2026-11-08",
+       "sha256": "3c40c0a6e38d8dd80ae1061d94b614f4e3f1b6492ec8c801834fb497f337044e",
+       "consultado": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "la continuidad del plan especial de empleo y el reintegro de las aportaciones adelantadas por Canarias -100 millones de euros- para la reconstrucción de la isla tras la erupción volcánica",
+     "tipo": "cita_literal",
+     "area": "otros",
+     "fecha": "2026-11-16",
+     "quien": "Coalición Canaria (nota oficial sobre la visita a La Palma de Cristina Valido, cabeza de lista por Santa Cruz de Tenerife, en estilo indirecto de la nota), que remite a su programa «Defiende Canarias»",
+     "fuentes": [
+      {
+       "url": "https://coalicioncanaria.org/cristina-valido-pide-el-voto-para-ser-libres-en-la-defensa-de-los-derechos-e-intereses-de-la-palma/",
+       "medio": "Coalición Canaria (nota oficial)",
+       "fecha": "2026-11-16"
+      },
+      {
+       "url": "https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf",
+       "medio": "Coalición Canaria-Primero Canarias (bases del programa electoral)",
+       "fecha": "2026-11-08",
+       "sha256": "3c40c0a6e38d8dd80ae1061d94b614f4e3f1b6492ec8c801834fb497f337044e",
+       "consultado": "2026-11-16"
       }
      ]
     }
@@ -3737,6 +4189,41 @@
        "fecha": "2026-11-10"
       }
      ]
+    },
+    {
+     "texto": "debe subir hasta al menos 1.600 euros en 14 pagas, y además debe establecerse que, por ley, tiene que estar indexado, tiene que subir conforme sube el IPC",
+     "tipo": "cita_literal",
+     "area": "empleo",
+     "fecha": "2026-11-16",
+     "quien": "José Ignacio García (portavoz de Adelante Andalucía), en Sevilla, antes de un encuentro informativo de la Cadena SER; se refiere al salario mínimo interprofesional",
+     "fuentes": [
+      {
+       "url": "https://www.europapress.es/andalucia/noticia-adelante-andalucia-pide-aprovechar-29n-oportunidad-ofrece-capacidad-parar-pp-vox-20261116102807.html",
+       "medio": "Europa Press",
+       "fecha": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Cercanías Arcos–Jerez, recuperar la línea Jerez–Almargen y desdoble Arcos–Antequera, este último con la Junta.",
+     "tipo": "cita_literal",
+     "area": "otros",
+     "fecha": "2026-11-16",
+     "quien": "Adelante Andalucía (programa electoral 29N, propuesta 650, documento oficial); Alejandro Gutiérrez, número 2 por Cádiz, la presentó el 16-nov en Algodonales. Las dos primeras medidas son ferroviarias; el desdoble Arcos–Antequera es una carretera autonómica y el programa lo plantea con la Junta",
+     "fuentes": [
+      {
+       "url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=125",
+       "medio": "Adelante Andalucía (programa electoral 29N, PDF oficial)",
+       "fecha": "2026-11-10",
+       "sha256": "fde1fe024f94a698e2110c0e25cc569b4d9f3f7272342bdb13dc0c1e7a2d7b43",
+       "consultado": "2026-11-16"
+      },
+      {
+       "url": "https://www.europapress.es/andalucia/cadiz-00351/noticia-adelante-andalucia-reclama-transporte-publico-digno-acabar-aislamiento-sierra-cadiz-20261116190559.html",
+       "medio": "Europa Press",
+       "fecha": "2026-11-16"
+      }
+     ]
     }
    ]
   },
@@ -3913,6 +4400,53 @@
        "url": "https://teruelexiste.info/wp-content/uploads/2026/11/Programa-Elecciones-Generales-2026.pdf",
        "medio": "Teruel Existe (programa electoral 29N, versión resumida)",
        "fecha": "2026-11-13"
+      },
+      {
+       "url": "https://teruelexiste.info/wp-content/uploads/2026/11/Programa_Teruel_Existe_Completo_29N.pdf",
+       "medio": "Teruel Existe (programa completo, PDF oficial)",
+       "fecha": "2026-11-13",
+       "sha256": "f93342d6c9d0f17eaa53fa68ff714bfa0981ca9c10605401b71801cf1870e190",
+       "consultado": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Norte de Teruel. Ramal Samper de Calanda–Alcañiz para conectar Zaragoza con el Bajo Aragón y Motorland. Reconversión de la vía del tren minero de Andorra para viajeros y mercancías.",
+     "tipo": "cita_literal",
+     "area": "otros",
+     "fecha": "2026-11-16",
+     "quien": "Teruel Existe (programa completo 29N, documento oficial); la nota oficial del 16-nov sobre el acto de Tomás Guitarte, cabeza de lista al Congreso, en Alcañiz la recoge como propuesta del partido",
+     "fuentes": [
+      {
+       "url": "https://teruelexiste.info/wp-content/uploads/2026/11/Programa_Teruel_Existe_Completo_29N.pdf",
+       "medio": "Teruel Existe (programa completo, PDF oficial)",
+       "fecha": "2026-11-13",
+       "sha256": "f93342d6c9d0f17eaa53fa68ff714bfa0981ca9c10605401b71801cf1870e190",
+       "consultado": "2026-11-16"
+      },
+      {
+       "url": "https://teruelexiste.info/guitarte-la-a-68-es-el-engano-electoral-recurrente-de-psoe-y-pp-unas-elecciones-tras-otras/",
+       "medio": "Teruel Existe (nota oficial)",
+       "fecha": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "ha propuesto que, al menos, el 25 % del presupuesto sanitario se destine directamente a la Atención Primaria para dotarla de los recursos suficientes para que llegue al medio rural",
+     "tipo": "cita_literal",
+     "area": "sanidad",
+     "fecha": "2026-11-16",
+     "quien": "Teruel Existe (nota oficial, en estilo indirecto): lo propuso Beatriz Redón, número 2 de la candidatura al Congreso por Teruel, en Cella, dentro de un pacto de Estado por la sanidad pública entre el Gobierno y las comunidades autónomas. El programa completo del 29N lo recoge como «un pacto nacional para llevar financiación hasta el 25 % del presupuesto sanitario»",
+     "fuentes": [
+      {
+       "url": "https://teruelexiste.info/teruel-existe-considera-insoportable-que-mas-de-cuatro-millones-de-espanoles-esten-en-lista-de-espera-en-la-sanidad-publica/",
+       "medio": "Teruel Existe (nota oficial)",
+       "fecha": "2026-11-16"
+      },
+      {
+       "url": "https://www.europapress.es/aragon/noticia-teruel-existe-considera-insoportable-mas-cuatro-millones-espanoles-esten-lista-espera-sanidad-20261116141314.html",
+       "medio": "Europa Press",
+       "fecha": "2026-11-16"
       },
       {
        "url": "https://teruelexiste.info/wp-content/uploads/2026/11/Programa_Teruel_Existe_Completo_29N.pdf",
@@ -4150,6 +4684,149 @@
        "url": "https://aramesfrontampli.cat/news/carme-gomila-el-topall-dels-lloguers-ha-de-ser-automatic-i-no-pot-dependre-del-caprici-de-marga-prohens",
        "medio": "Ara Més-Front Ampli (nota de prensa, aramesfrontampli.cat)",
        "fecha": "2026-11-09"
+      }
+     ]
+    },
+    {
+     "texto": "Impulsarem un topall de preu als carburants, de manera que no superin, en cap cas, el 5 % del preu mitjà de la península.",
+     "tipo": "cita_literal",
+     "area": "energía/clima",
+     "fecha": "2026-11-16",
+     "quien": "Ara Més-Front Ampli (programa electoral 29N de la coalición, documento oficial publicado el 16-nov)",
+     "fuentes": [
+      {
+       "url": "https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf",
+       "medio": "Ara Més-Front Ampli (programa electoral 29N, PDF oficial enlazado desde aramesfrontampli.cat)",
+       "fecha": "2026-11-16",
+       "sha256": "75149b3b5db92d0a8de0332b005c5114f04c63062fa5cda932eacf65c9f8a6f8",
+       "consultado": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "donarem màxima prioritat a l’OSP entre Menorca i Barcelona, que estarà regulada per una tarifa màxima de trenta-cinc euros per als residents.",
+     "tipo": "cita_literal",
+     "area": "otros",
+     "fecha": "2026-11-16",
+     "quien": "Ara Més-Front Ampli (programa electoral 29N de la coalición, documento oficial publicado el 16-nov); Carme Gomila, cabeza de lista al Congreso, reclamó el 15-nov en el aeropuerto de Menorca la aplicación inmediata de la OSP",
+     "fuentes": [
+      {
+       "url": "https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf",
+       "medio": "Ara Més-Front Ampli (programa electoral 29N, PDF oficial enlazado desde aramesfrontampli.cat)",
+       "fecha": "2026-11-16",
+       "sha256": "75149b3b5db92d0a8de0332b005c5114f04c63062fa5cda932eacf65c9f8a6f8",
+       "consultado": "2026-11-16"
+      },
+      {
+       "url": "https://aramesfrontampli.cat/noticies/arames-front-ampli-reclama-una-millor-connectivitat-per-acabar-amb-laillament-injust-de-menorca",
+       "medio": "Ara Més-Front Ampli (nota de prensa, aramesfrontampli.cat)",
+       "fecha": "2026-11-15"
+      }
+     ]
+    },
+    {
+     "texto": "Es limitarà, per llei, el preu del lloguer a zones tensionades en el 25 % de la renda neta de les llars de la secció censal, a tot estirar.",
+     "tipo": "cita_literal",
+     "area": "vivienda",
+     "fecha": "2026-11-16",
+     "quien": "Ara Més-Front Ampli (programa electoral 29N de la coalición, documento oficial publicado el 16-nov)",
+     "fuentes": [
+      {
+       "url": "https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf",
+       "medio": "Ara Més-Front Ampli (programa electoral 29N, PDF oficial enlazado desde aramesfrontampli.cat)",
+       "fecha": "2026-11-16",
+       "sha256": "75149b3b5db92d0a8de0332b005c5114f04c63062fa5cda932eacf65c9f8a6f8",
+       "consultado": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Es crearà un escut hipotecari per protegir, de fins a 300 € al mes, les famílies de classe mitjana en què la hipoteca els suposi més del 40 % dels ingressos nets.",
+     "tipo": "cita_literal",
+     "area": "vivienda",
+     "fecha": "2026-11-16",
+     "quien": "Ara Més-Front Ampli (programa electoral 29N de la coalición, documento oficial publicado el 16-nov)",
+     "fuentes": [
+      {
+       "url": "https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf",
+       "medio": "Ara Més-Front Ampli (programa electoral 29N, PDF oficial enlazado desde aramesfrontampli.cat)",
+       "fecha": "2026-11-16",
+       "sha256": "75149b3b5db92d0a8de0332b005c5114f04c63062fa5cda932eacf65c9f8a6f8",
+       "consultado": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Protegirem el petit comerç mitjançant la regulació i el control dels preus dels lloguers comercials.",
+     "tipo": "cita_literal",
+     "area": "vivienda",
+     "fecha": "2026-11-16",
+     "quien": "Ara Més-Front Ampli (programa electoral 29N de la coalición, documento oficial publicado el 16-nov); presentada el 16-nov por Carme Gomila, cabeza de lista al Congreso, como una reforma de la Ley de Arrendamientos Urbanos",
+     "fuentes": [
+      {
+       "url": "https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf",
+       "medio": "Ara Més-Front Ampli (programa electoral 29N, PDF oficial enlazado desde aramesfrontampli.cat)",
+       "fecha": "2026-11-16",
+       "sha256": "75149b3b5db92d0a8de0332b005c5114f04c63062fa5cda932eacf65c9f8a6f8",
+       "consultado": "2026-11-16"
+      },
+      {
+       "url": "https://www.europapress.es/illes-balears/noticia-ara-mes-front-ampli-propone-limitar-precio-alquileres-comerciales-proteger-pequeno-comercio-20261116121436.html",
+       "medio": "Europa Press",
+       "fecha": "2026-11-16"
+      },
+      {
+       "url": "https://aramesfrontampli.cat/",
+       "medio": "Ara Més-Front Ampli (extracto de la nota del 16-nov en la portada; el enlace «Llegir més» lleva a una nota antigua)",
+       "fecha": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Farem que els establiments turístics tributin el tipus general d'IVA del 21%, eliminant la bonificació existent d’allotjaments hotelers, allotjaments turístics amb serveis hotelers, serveis de creuers turístics, paquets de vacances marítimes i serveis recreatius de luxe.",
+     "tipo": "cita_literal",
+     "area": "fiscalidad",
+     "fecha": "2026-11-16",
+     "quien": "Ara Més-Front Ampli (programa electoral 29N de la coalición, documento oficial publicado el 16-nov)",
+     "fuentes": [
+      {
+       "url": "https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf",
+       "medio": "Ara Més-Front Ampli (programa electoral 29N, PDF oficial enlazado desde aramesfrontampli.cat)",
+       "fecha": "2026-11-16",
+       "sha256": "75149b3b5db92d0a8de0332b005c5114f04c63062fa5cda932eacf65c9f8a6f8",
+       "consultado": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Impulsarem la deducció de fins a 1.000 euros de l’IRPF per als menors de 35 anys que visquin de lloguer.",
+     "tipo": "cita_literal",
+     "area": "fiscalidad",
+     "fecha": "2026-11-16",
+     "quien": "Ara Més-Front Ampli (programa electoral 29N de la coalición, documento oficial publicado el 16-nov)",
+     "fuentes": [
+      {
+       "url": "https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf",
+       "medio": "Ara Més-Front Ampli (programa electoral 29N, PDF oficial enlazado desde aramesfrontampli.cat)",
+       "fecha": "2026-11-16",
+       "sha256": "75149b3b5db92d0a8de0332b005c5114f04c63062fa5cda932eacf65c9f8a6f8",
+       "consultado": "2026-11-16"
+      }
+     ]
+    },
+    {
+     "texto": "Prohibirem els vols privats als aeroports dels territoris insulars, fonamentada en la necessària reducció d’emissions i les externalitats ambientals que provoca el transport aeri.",
+     "tipo": "cita_literal",
+     "area": "energía/clima",
+     "fecha": "2026-11-16",
+     "quien": "Ara Més-Front Ampli (programa electoral 29N de la coalición, documento oficial publicado el 16-nov)",
+     "fuentes": [
+      {
+       "url": "https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf",
+       "medio": "Ara Més-Front Ampli (programa electoral 29N, PDF oficial enlazado desde aramesfrontampli.cat)",
+       "fecha": "2026-11-16",
+       "sha256": "75149b3b5db92d0a8de0332b005c5114f04c63062fa5cda932eacf65c9f8a6f8",
+       "consultado": "2026-11-16"
       }
      ]
     }
