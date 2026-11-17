@@ -105,6 +105,11 @@ Desgloses territoriales, de encuestas anteriores de Sigma Dos:
 - Frente Amplio vuelve a darse como bloque (6,7 %, con Front Valencià y UPC), como el 13-11. El texto da la marca nacional (5 %, 8–9 escaños), pero no el porcentaje de FV ni de UPC; la marca nacional va en `componentes` y no se usa en la proyección.
 - Vox: la infografía dice 63–68 y el texto 63–69 (la suma PP+Vox del texto, 186–198, cuadra con 69). Se guarda la infografía.
 
+### 40dB, tracking diario (`40db-2026-11-17`, publicado 17-11)
+- Quinta entrega: sustituye a `40db-2026-11-16` en la media. PP 31,8 (131; 124–135), PSOE 30,6 (120; 118–126), Vox 17,5 (58; 55–62), Frente Amplio 3,7 (5; 5–6), Podemos 1,1 (0; 0–1). El escenario propio de 40dB sigue usando `40db-2026-11`.
+- Cambia la muestra: el campo ya no empieza el 10-11. Son 2.000 entrevistas online del 12 al 16 de noviembre (±2,2 %), según la ficha y la SER; el día 4 tenía 2.500 (10–15 nov). El gráfico de evolución rotula la entrega como "15-16 nov"; se usa la ficha.
+- El PDF (`informe_tracking_dia05.pdf`, en minúscula; la mayúscula da 404) estaba en el servidor desde el 16-11 a las 17:12 GMT; cuenta como publicado el 17-11, con los artículos de El País y la SER.
+
 ### SW Demoscopia (barómetro n.º 9, no añadido)
 - El agregador cita el barómetro n.º 9 (datos al 12-11, 7.500 entrevistas) como un PDF en el CDN de LinkedIn. Está guardado en `sources/encuestas/swdemoscopia/`, pero no se ha añadido: ni la empresa ni La Séptima lo publican y no consta quién lo subió. `swdemoscopia-2026-11-11` sigue fuera de la media.
 
