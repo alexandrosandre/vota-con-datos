@@ -138,6 +138,16 @@ medidas de los programas del PP, Vox, Compromís y PSOE/Frente Amplio con el mis
 sin posiciones nuevas de campaña (pendientes: resultado de la Comisión Interministerial de Migración, Esteban 18 y 19-nov,
 debate Sánchez-Feijóo del 19-nov, vídeo de Nogueras en Barcelona Tribuna). BOE sin cambios; dominio y HTTPS correctos.
 
+**Revisión del 17-nov, 20:13:** Sigma Dos día 5 entra en la media (40dB día 6 aún sin artículos de El País y la SER).
+Paso 1: UPN q03 de sin posición a +1 (nota de UPN-PP sobre el IVA de la primera vivienda; g17 verificado; UPN 6→7). Compromisos:
+27 nuevos con revisión independiente (258 → 285). Podemos presentó su programa «Paz, casa y trabajo» a la prensa, pero no está
+en ningún canal oficial (podemos.info ni la web de campaña pazcasaytrabajo.es, guardada como documento programático); sus
+medidas solo citadas por Europa Press no entran. UPN, UPC y Junts sin programa. BOE sin cambios; dominio y HTTPS correctos.
+Pendiente: ERC republicó su programa el 17-nov a las 17:30 (nuevo sha256 f0b6d8e0…; cambia la numeración desde la medida 198):
+catalogar la versión nueva y revisar las referencias del paso 1 y del paso 2; el PDF de Adelante Andalucía se republicó el
+16-nov solo con otra línea de versión. Compromisos: el 30 % de Colau y el 40 % de Podemos concretan promesas ya registradas (se
+mantiene el criterio del 15-nov) y el IVA del 4 % de la primera vivienda de UPN-PP queda para el barrido del 18-nov.
+
 **Hecho el 16-nov** (estudio Neutral frente a Saltar; decisiones del editor): «Saltar» pasa a «No lo sé», a
 todo lo ancho bajo la escala; «Neutral» sigue contando. «Coincidís» solo si estáis del mismo lado (un Neutral es
 «A medias»), aviso si la mayoría de respuestas son Neutral, y los grupos del resultado hablan de «temas en común»
