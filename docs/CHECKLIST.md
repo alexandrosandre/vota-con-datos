@@ -57,6 +57,8 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
     10→18 posiciones, EH Bildu 14→18; el programa de Ara Més-Front Ampli es documento conjunto para Frente Amplio, que solo cambia
     la fuente de q32); 12 propuestas de cada programa con revisión independiente (Ara Més 13 correcciones, cambia una valoración:
     financiación de -01 a mixta; EH Bildu 45 correcciones, ninguna valoración cambia); sin complemento en ninguno de los dos.
+    Auditoría de coherencia (`data/fase3/coherencia_2026-11-17.md`: 41 correcciones de texto, cifras y fuentes en 10 partidos;
+    ninguna valoración cambia).
   - [ ] Podemos, Junts, NC-BC (UPC), UPN — sin programa el 17-nov a las 10:00.
   - Hecho el 16-nov: auditoría de coherencia tras el programa del Frente Amplio (`data/fase3/coherencia_2026-11-16.md`: 49 correcciones de
     texto, cifras y fuentes en 11 partidos; ninguna valoración cambia).
