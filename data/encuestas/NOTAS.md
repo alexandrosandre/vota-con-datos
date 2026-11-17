@@ -109,6 +109,13 @@ Desgloses territoriales, de encuestas anteriores de Sigma Dos:
 - Quinta entrega: sustituye a `40db-2026-11-16` en la media. PP 31,8 (131; 124–135), PSOE 30,6 (120; 118–126), Vox 17,5 (58; 55–62), Frente Amplio 3,7 (5; 5–6), Podemos 1,1 (0; 0–1). El escenario propio de 40dB sigue usando `40db-2026-11`.
 - Cambia la muestra: el campo ya no empieza el 10-11. Son 2.000 entrevistas online del 12 al 16 de noviembre (±2,2 %), según la ficha y la SER; el día 4 tenía 2.500 (10–15 nov). El gráfico de evolución rotula la entrega como "15-16 nov"; se usa la ficha.
 - El PDF (`informe_tracking_dia05.pdf`, en minúscula; la mayúscula da 404) estaba en el servidor desde el 16-11 a las 17:12 GMT; cuenta como publicado el 17-11, con los artículos de El País y la SER.
+- El 17-11 a las 20:45, `informe_tracking_dia06.pdf` (otra vez en minúscula) ya está en el servidor (Last-Modified 17-11 18:23 GMT), pero ni El País ni la SER lo han publicado. No se ha añadido: cuenta cuando salgan los artículos.
+
+### Sigma Dos, tracking diario (`sigmados-2026-11-17`, publicado 17-11)
+- Quinta entrega, publicada el 17-11 a las 20:00. Sustituye a `sigmados-2026-11-16` en la media y como escenario propio de Sigma Dos. PP 30,7 (123–129), PSOE 26,4 (108–114), Vox 19,8 (62–67), Frente Amplio 6,7 (10–14), Podemos 1,2 (0).
+- Muestra: 750 entrevistas diarias de los días 11, 12, 13, 14 y 16 (no hay día 15), n=3.759, ±2,0 %. Esta vez ficha, desglose y texto coinciden en el campo (11 al 16-11).
+- Frente Amplio se guarda como bloque (6,7 %), igual que el 16-11. El texto da la marca nacional (4,9 %, 7–8) y Compromís/Front Valencià (1,4 %, 3–5), pero no el porcentaje de UPC (0,4 por diferencia; "ya no tiene asegurado su escaño"). Los tres van en `componentes` y no se usan en la proyección.
+- Podemos (1,2 %) sale del texto y de la serie Datawrapper QBCLv v13; no figura en la infografía. No hay discrepancias entre texto, infografía y serie.
 
 ### SW Demoscopia (barómetro n.º 9, no añadido)
 - El agregador cita el barómetro n.º 9 (datos al 12-11, 7.500 entrevistas) como un PDF en el CDN de LinkedIn. Está guardado en `sources/encuestas/swdemoscopia/`, pero no se ha añadido: ni la empresa ni La Séptima lo publican y no consta quién lo subió. `swdemoscopia-2026-11-11` sigue fuera de la media.

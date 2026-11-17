@@ -1770,6 +1770,167 @@
       "verificado_en_fuente_primaria": true
     },
     {
+      "id": "sigmados-2026-11-17",
+      "rol": "principal",
+      "sustituye": [
+        "sigmados-2026-11-16"
+      ],
+      "rol_nota": "Escenario propio de Sigma Dos (ESCENARIOS_ENCUESTA en pipeline/build_fase2.py), en lugar de sigmados-2026-11-16, con el mismo criterio: la infografía publica el porcentaje de todos los partidos con escaño. Entra también en la media como la última de Sigma Dos (sustituye a sigmados-2026-11-16).",
+      "encuestadora": "Sigma Dos",
+      "cliente_medio": "El Mundo",
+      "estudio": "Tracking electoral diario de Sigma Dos para EL MUNDO. Quinta entrega (infografía 'Intención de voto. Panel El Mundo-Sigma Dos. Tracking 17 de noviembre')",
+      "fecha_publicacion": "2026-11-17",
+      "fecha_publicacion_nota": "Artículo de El Mundo 'Sánchez esquilma a toda la izquierda: Podemos se aleja del escaño para Irene Montero y Colau ya roza los 10 diputados' (datePublished y dateModified 2026-11-17T19:00:56Z, 20:00 hora peninsular del 17-11), con el gráfico rotulado 'Tracking 17 de noviembre' (tracking17646.jpg). sigmados.com no lo había publicado a 17-11 a las 20:45 (noticias.php idéntica a la del 15-11, sha256 45e42830…).",
+      "trabajo_campo": {
+        "inicio": "2026-11-11",
+        "fin": "2026-11-16"
+      },
+      "trabajo_campo_nota": "Ficha técnica: 'Fecha del Trabajo de Campo: 11 al 16 de noviembre de 2026' y '750 entrevistas diarias (días 11, 12, 13, 14 y 16)'; el texto: '3.759 entrevistas realizadas entre el 11 y el 16 de noviembre'. Esta vez ficha, desglose y texto coinciden. El 15-11 no figura entre los días de entrevista.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 3759,
+      "muestra_nota": "Ficha técnica: '750 entrevistas diarias (días 11, 12, 13, 14 y 16). Tamaño muestral estimación 16/11/26: 3.759' (5 × 750 ≈ 3.759; la ficha rotula la estimación con fecha 16/11/26 aunque es la entrega del 17-11). Como en la del 16-11, solo cuenta las entrevistas diarias, sin la encuesta base del 3 al 10-11.",
+      "metodo": "Mixto: telefónico (CATI, selección aleatoria de hogar y cuotas de sexo y edad) y online (CAWI, Panel Sigma Dos by Trust Survey, asignación proporcional por sexo y grupo de edad); distribución proporcional por CCAA (ficha técnica publicada en El Mundo). Participación estimada: 77,1%. Indecisos: 12,9%.",
+      "margen_error": "±2,0% (95,5%, P=Q)",
+      "base_porcentajes": "% de 'intención de voto' / estimación (Sigma Dos no indica la base; se asume voto válido)",
+      "suma_pct_publicada": 94.1,
+      "suma_pct_nota": "Suma de los porcentajes registrados (Frente Amplio 6,7 como bloque y Podemos 1,2 incluidos). El Mundo no publica otros ni blanco.",
+      "proyeccion_escanos": "horquillas (ver estimacion_voto)",
+      "proyeccion_escanos_nota": "Horquillas de la infografía tracking17646.jpg; Podemos, del texto ('desciende hasta el 1,2% y no tendría representación'). El texto da las mismas horquillas que la infografía para PP 123-129, PSOE 108-114, Vox 62-67, Frente Amplio 10-14, ERC 8-9, Junts 4-5, EH Bildu 6-8, PNV 3-4, BNG 2-3, Adelante Andalucía 3-5, y 0-1 para Coalición Canaria y Soria ¡Ya!. PP+Vox: 50,5 % y 'entre 185 y 196 representantes' (123 + 62 y 129 + 67).",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 30.7,
+          "escanos_min": 123,
+          "escanos_max": 129
+        },
+        {
+          "partido": "PSOE",
+          "pct": 26.4,
+          "escanos_min": 108,
+          "escanos_max": 114
+        },
+        {
+          "partido": "Vox",
+          "pct": 19.8,
+          "escanos_min": 62,
+          "escanos_max": 67
+        },
+        {
+          "partido": "Frente Amplio",
+          "nombre_publicado": "FA",
+          "pct": 6.7,
+          "escanos_min": 10,
+          "escanos_max": 14,
+          "nota": "Bloque completo, como en las entregas del 13 y el 16-11: la infografía da 'FA 6,7% (10-14)' y el texto 'las distintas variantes en las que está representado el Frente Amplio se quedan en el 6,7% y entre 10 y 14 asientos', sumando la marca nacional (4,9 %, 7 u 8 escaños), la coalición valenciana liderada por Compromís (1,4 %, 3 a 5) y UPC (sin porcentaje; 'ya no tiene asegurado su escaño por Las Palmas'). El porcentaje de UPC no se publica (0,4 por diferencia), así que se guarda solo el bloque; build_fase2.py lo trata como bloque completo, Compromís incluido. No sumar los componentes además de esta fila.",
+          "componentes": [
+            {
+              "partido": "Frente Amplio (marca nacional)",
+              "pct": 4.9,
+              "escanos_min": 7,
+              "escanos_max": 8,
+              "nota": "Texto: 'Su marca nacional cae ya al 4,9% con una expectativa de 7 u 8 escaños'."
+            },
+            {
+              "partido": "Front Valencià (FV)",
+              "pct": 1.4,
+              "escanos_min": 3,
+              "escanos_max": 5,
+              "nota": "Texto: 'la coalición valenciana liderada por Compromís, que crece al 1,4% a nivel nacional y de 3 a 5 representantes'."
+            },
+            {
+              "partido": "UPC",
+              "escanos_min": 0,
+              "escanos_max": 1,
+              "nota": "Texto: 'la coalición canaria UPC ya no tiene asegurado su escaño por Las Palmas'. Porcentaje y horquilla no publicados; 0-1 se deduce del total del bloque (7 + 3 + 0 = 10; 8 + 5 + 1 = 14)."
+            }
+          ]
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.2,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "nota": "Solo en el texto ('desciende hasta el 1,2% y no tendría representación, ni siquiera para Irene Montero por Madrid') y en la serie Datawrapper QBCLv v13 (fila 17/11/2026); no aparece en la infografía."
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.4,
+          "escanos_min": 8,
+          "escanos_max": 9
+        },
+        {
+          "partido": "Bildu",
+          "pct": 1.5,
+          "escanos_min": 6,
+          "escanos_max": 8
+        },
+        {
+          "partido": "AA",
+          "pct": 1.8,
+          "escanos_min": 3,
+          "escanos_max": 5,
+          "nota": "Rotulada 'AA' (Adelante Andalucía) en la infografía."
+        },
+        {
+          "partido": "PNV",
+          "pct": 0.9,
+          "escanos_min": 3,
+          "escanos_max": 4
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.0,
+          "escanos_min": 2,
+          "escanos_max": 3
+        },
+        {
+          "partido": "SY",
+          "pct": 0.1,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "nota": "Soria ¡Ya! (siglas SY en el BOE). Se ignora en la proyección (IGNORADAS en pipeline/build_fase2.py), como en sigmados-2026-11-15 y -16."
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.3,
+          "escanos_min": 4,
+          "escanos_max": 5
+        },
+        {
+          "partido": "CCa",
+          "pct": 0.3,
+          "escanos_min": 0,
+          "escanos_max": 1
+        }
+      ],
+      "discrepancias_fuente": "Ninguna en las cifras: los porcentajes de PP, PSOE, Vox, Frente Amplio y Podemos coinciden en texto, infografía (salvo Podemos, que no figura) y serie Datawrapper QBCLv v13 (fila 17/11/2026: PP 30,7, PSOE 26,4, Vox 19,8, Frente Amplio 6,7, Podemos 1,2), y las horquillas del texto coinciden con las de la infografía. La ficha rotula el tamaño muestral como 'estimación 16/11/26' en la entrega del 17-11.",
+      "contexto": "Según El Mundo, el PSOE sigue creciendo a costa del Frente Amplio y empieza a captar voto de Podemos: la ventaja del PP baja a 4,3 puntos. Vox pierde un escaño en su horquilla en favor del PSOE. La derecha (PP + Vox) suma el 50,5 %. De los votantes del PSOE de 2023, el 6,6 % se iría al PP y el 13 % está indeciso. El 58,6 % de los encuestados cree que Feijóo será presidente y el 25,3 %, que gobernará Sánchez. Cada entrega diaria sustituye a la anterior.",
+      "desglose_regional": null,
+      "desglose_regional_nota": "Esta entrega no publica desglose territorial (solo menciones sueltas: Las Palmas, Madrid y Comunidad Valenciana).",
+      "urls": {
+        "primarias": [
+          "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/17/6afca438e9cf4a7d7a8b459c.html",
+          "https://e01-elmundo.uecdn.es/elmundo/2026/graficos/nov/tracking17646.jpg",
+          "https://datawrapper.dwcdn.net/QBCLv/13/"
+        ],
+        "secundarias": [],
+        "descubrimiento_nota": "Localizado en la portada de la sección de elecciones generales de elmundo.es (elmundo.es/elecciones/elecciones-generales.html), enlazado como 'Encuesta elecciones'."
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/sigmados/elmundo_20261117.html",
+        "data/sources/encuestas/sigmados/img_elmundo_tracking17646_20261117.jpg",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v13.html",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v13_dataset.csv"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/sigmados/elmundo_20261117.html": "e7f7894fb73f6e3d63ebfa5acf458894deafb11c3a44953dedaf80b2c01cc0d0",
+        "data/sources/encuestas/sigmados/img_elmundo_tracking17646_20261117.jpg": "bc16d05e7aabd87025f21768143289460010fb9ff79b59d458f7c3de88e33463",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v13.html": "d19bfedbc6e0f6178c01535c03c7ba957b10a6aa487b4a00aa3f3dca2a9d7c33",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v13_dataset.csv": "d9b1795033549bec2a3fe638df6285a49c8c4ea6dd104b5e47460a62693f1151"
+      },
+      "verificado_en_fuente_primaria": true
+    },
+    {
       "id": "sigmados-2026-11-16",
       "rol": "principal",
       "sustituye": [
