@@ -1,0 +1,68 @@
+{
+ "grupo": "g17",
+ "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13-nov («A qué partido cuenta cada fuente», precedencia)",
+ "fecha": "2026-11-17",
+ "aprobado": true,
+ "revisadas": 1,
+ "resultado": {
+  "ok": 0,
+  "corregido": 1,
+  "rechazado": 0,
+  "celdas_no_tocadas_confirmadas": "ver «celdas_no_tocadas»"
+ },
+ "alcance": "La única posición de codificacion_g17.json (UPN q03, null → +1), sacada de una nota del 17-nov en upn-pp.es, y las demás propuestas de la misma nota que el codificador deja en null.\n\n(1) Fuente. Se abrió de nuevo la URL original (HTTP 200, 17-nov, 20:59): el HTML descargado es idéntico byte a byte al archivado (sha256 463ff7a2…f9de), y el texto archivado (sha256 21ee195e…3809) coincide con «fuentes». Metadatos de la página y de la API de WordPress (post 1119): publicado el 2026-11-17T10:58:24+00:00 (11:58 hora peninsular), autor «Comunicacion UPN-PP», titular «UPN-PP defiende “IVA cero” para los alimentos básicos y rebajar del 10% al 4% el de la primera vivienda». upn-pp.es es la web de la coalición ya usada en UPN q23 (g7), y partidos.json (UPN, 20:30) registra esta misma noticia.\n\n(2) Cita. Es literal (frase completa del segundo párrafo, 43 palabras), sin comillas internas: la nota pone la propuesta en estilo indirecto («ha propuesto bajar del 10% al 4 % el IVA de la primera vivienda nueva cuando le corresponda el tipo general») y solo entrecomilla otras frases de Esparza (autónomos, bajar impuestos).\n\n(3) Quién. BOE-A-2026-23103 (candidaturas proclamadas, Junta Electoral de Navarra, Senado): «José Javier Esparza Abaurrea (UPN)», primero de la candidatura UPN-PP. Es de UPN, no del PP, y cabeza de lista: líder según el protocolo. Europa Press (12-nov, data/sources/compromisos/upn/) lo sitúa también como candidato al Senado de la coalición.\n\n(4) A qué partido cuenta. Por dos vías, ambas a UPN: documento conjunto de la coalición que firma UPN (data/boe/coaliciones.json, pacto UPN-PP), mismo criterio que UPN q23 (g7); y propuesta de un líder de UPN. No hay nada de Feijóo ni de dirigentes del PP. Para el PP la nota también contaría como documento conjunto, pero su programa (q03 = +2) tiene precedencia: no cambia.\n\n(5) Valor. Decidido contra el texto exacto de q03 (preguntas.json: rebajar un 60 % el IVA y el ITP a los menores de 40 que compren su primera vivienda) y comparado con fase1.json: PP +2 (programa, exactamente la medida), Vox +1, SALF +1, ERC +1 y UPC +1 (rebajas del IVA, del ITP o del IGIC de la primera vivienda con diferencias de alcance, edad o cuantía).\n\n(6) Build. Comprobado en una copia del repositorio (scratchpad/ver17/copia): ver «recuento».",
+ "cambios": [],
+ "correcciones_de_campos": [
+  {
+   "partido": "upn",
+   "pregunta": "q03",
+   "campo": "nota",
+   "motivo": "APLICADA por el verificador el 17-nov en codificacion_g17.json. La nota decía «A favor con una medida próxima pero distinta: +1», que choca con la regla del protocolo («una medida relacionada pero distinta no es una posición sobre la afirmación», es decir, null). La medida no es distinta: es la misma rebaja del 60 % del IVA, con diferencias de alcance (todas las edades, sin ITP). Ahora lo dice así. Además añade la referencia del BOE que acredita que Esparza es de UPN y cabeza de la candidatura al Senado, el autor de la nota y los precedentes de notas oficiales en estilo indirecto. Valor, cita y fuente no cambian."
+  },
+  {
+   "partido": null,
+   "pregunta": null,
+   "campo": "nota (del grupo)",
+   "motivo": "APLICADA: remite a notas_g17.md también para la verificación."
+  }
+ ],
+ "posiciones": [
+  {
+   "partido": "upn",
+   "pregunta": "q03",
+   "veredicto": "corregido",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "La nota oficial de la coalición UPN-PP recoge que Esparza (UPN, cabeza de la candidatura al Senado) propone bajar del 10 % al 4 % el IVA de la primera vivienda nueva. Es una rebaja del 60 % del IVA, la mitad de la afirmación tal cual, pero para todas las edades y sin mencionar el ITP (foral en Navarra). Dirección inequívoca a favor, con diferencias: +1. No +2: falta el ITP y no es la medida para menores de 40. No null: no es una medida distinta, sino la misma rebaja del IVA con otro alcance, el listón de Vox, SALF, ERC y UPC (+1). Solo se corrige la nota (ver «correcciones_de_campos»)."
+  }
+ ],
+ "resolucion_dudas_codificador": [
+  {
+   "duda": 1,
+   "tema": "¿Vale una frase sin comillas en una nota oficial de la coalición?",
+   "resolucion": "Sí. El protocolo excluye el estilo indirecto de las crónicas de prensa (resúmenes de periodistas: las palabras son del medio), pero acepta como fuente los documentos oficiales del partido, como una nota oficial, con «quien» = el partido o la coalición y «formato» = «documento oficial». En una nota oficial el que habla es el propio partido, que publica la propuesta como suya en su web, así que no hace falta que la frase esté entre comillas. Es lo que se hizo antes: Ara Més–Front Ampli q31 (g5, aprobada: «ha defensat la necessitat d'anar més enllà…»), Frente Amplio q02 (g2: «nuestra candidata… ha presentado la Ley de Expropiación…») y las notas de UPN de g5 («los foralistas consideran…»). Los descartes por estilo indirecto (por ejemplo, Valido en g3, desde Diario de Avisos, o la paráfrasis de ACN que se quitó de la cita de Abascal en g1) venían de crónicas de prensa."
+  }
+ ],
+ "celdas_no_tocadas": [
+  "Resto de la misma nota, en null como propone el codificador, comprobado contra el texto de cada afirmación: q30 («IVA cero» a los alimentos básicos mientras persista la escalada de precios: rebaja de un impuesto, no un precio máximo por ley); q04 («reducir Patrimonio y Sucesiones» en Navarra con el Convenio Económico: es el impuesto foral, no hacer permanente el impuesto estatal temporal, y la dirección sobre este no consta); q05 (aliviar el IRPF foral y deflactarlo: no son los umbrales ni los dos tipos de la afirmación); q08 (pensiones con el IPC: no es la jubilación a los 65). IVA de carburantes y luz, cuota cero y franquicia de IVA para autónomos y rebaja de Sociedades no tienen afirmación.",
+  "Ningún otro partido ni afirmación cambia; el PP conserva q03 = +2 (programa)."
+ ],
+ "posiciones_no_recogidas": "Ninguna. La nota no toca ninguna otra afirmación con una posición clara.",
+ "recuento": {
+  "antes": {
+   "upn": 6
+  },
+  "despues": {
+   "upn": 7
+  },
+  "cambios_de_valor": [],
+  "celdas_nuevas": [
+   "upn q03 +1"
+  ],
+  "solo_fuente": [],
+  "build": "Comprobado en una copia del repositorio (scratchpad/ver17/copia): sin g17, python3 -I pipeline/build_fase1.py reproduce byte a byte el fase1.json del repositorio; con codificacion_g17.json y esta verificación, termina sin errores (exit 0), aplica g17 después de g16 y cambia exactamente una celda: upn q03 (null → +1). UPN pasa de 6 a 7 posiciones; ningún otro partido ni afirmación cambia. En el repositorio no se ha regenerado fase1.json."
+ },
+ "dudas": [
+  "upn/q03 (+1): alternativa null si se exige que la medida cubra también el ITP o la edad; se descarta por coherencia con Vox, SALF, ERC y UPC, todos +1 con diferencias de alcance."
+ ]
+}

@@ -1411,9 +1411,19 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-17T20:30:00+01:00",
+        "checked_at": "2026-11-17T21:30:00+01:00",
         "anunciado": null,
-        "verificacion": "17-nov, 20:30: podemos.info, abierto en un navegador: entradas (última del 16-oct), páginas (última modificada el 19-oct) y biblioteca de medios (último PDF del 19-oct) sin programa del 29N; la portada sigue sin enlazar programa ni web de campaña."
+        "verificacion": "17-nov, 20:30: podemos.info, abierto en un navegador: entradas (última del 16-oct), páginas (última modificada el 19-oct) y biblioteca de medios (último PDF del 19-oct) sin programa del 29N; la portada sigue sin enlazar programa ni web de campaña. 17-nov, 21:30: la prensa (El País, Público, ABC) informa de que Irene Montero presentó el programa «Paz, casa y trabajo» en la sede del partido, pero no está en podemos.info (última publicación y último PDF de octubre, comprobado en el navegador y en su API) ni en la web de campaña pazcasaytrabajo.es (titular Podemos, según su aviso legal), que solo muestra 5 medidas sin enlace al documento; se guarda como documento programático hasta que se publique en un canal oficial.",
+        "documento_programatico": {
+          "tipo": "Web de campaña con 5 medidas destacadas; el programa completo («Paz, casa y trabajo») se presentó a la prensa el 17-nov pero no está publicado en ningún canal oficial",
+          "url": "https://pazcasaytrabajo.es/",
+          "fecha": "2026-11-17",
+          "fecha_fuente": "Aviso legal de la web actualizado el 12-oct-2026 (titular: Podemos Partido Político, CIF G86976941); presentación del programa en la sede de Podemos el 17-nov según El País, Público y ABC",
+          "titulo": "Irene Montero · Paz, casa y trabajo",
+          "sha256_index": "a758b375f5d7f00d24a8fe9efb56ba139228393a363f4458fd9c38deeb2f85b2",
+          "fichero": "data/sources/programas/podemos/web_2026-11-17/",
+          "texto": "data/sources/programas/podemos/web_2026-11-17/medidas.txt"
+        }
       },
       "programa_aplicable": "Programa de Podemos en sus 41 circunscripciones. En la Comunitat Valenciana va dentro de Compromís: Front Valencià y en Canarias dentro de UPC (aplican los de esas coaliciones). En Cataluña no presenta lista y apoya a ERC; tampoco en Baleares ni Melilla.",
       "notas": "Últimos archivos en podemos.info (19-oct): ninguno es programa del 29N (los «Programa» son de europeas 2024 y 2025). Consulta a la Asamblea del 16-oct aprobó la estrategia electoral. Civio indica que la lista de León no fue proclamada, pero el BOE de 3-nov (y su corrección de 7-nov) sí la recoge: se cuenta León.",

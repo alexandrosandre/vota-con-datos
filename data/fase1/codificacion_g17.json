@@ -1,0 +1,56 @@
+{
+ "grupo": "g17",
+ "codificador": "Claude (Anthropic) — barrido de declaraciones nuevas del 17-nov-2026 (10:25-20:50), protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13-nov («A qué partido cuenta cada fuente»)",
+ "fecha": "2026-11-17",
+ "nota": "Una sola posición nueva: UPN q03 (antes null). Fuente: nota oficial del 17-nov en upn-pp.es, la web de la coalición UPN-PP (pacto en data/boe/coaliciones.json), sobre las propuestas de Javier Esparza, cabeza de lista de UPN-PP al Senado. Un documento conjunto de la coalición cuenta para cada partido firmante, mismo criterio que UPN q23 (g7). UPN no tiene programa. Para el PP prevalece su programa (q03 = +2), así que esta nota no le afecta. Lleva «sustituye» y «motivo_cambio». Descartes, pendientes y verificación en notas_g17.md.",
+ "fuentes": [
+  {
+   "ruta": "data/sources/fase1/g17_2026-11-17/upn/upnpp_20261117_iva_primera_vivienda.txt",
+   "url": "https://upn-pp.es/upn-pp-defiende-iva-cero-para-los-alimentos-basicos-y-rebajar-del-10-al-4-el-de-la-primera-vivienda/",
+   "sha256": "21ee195eb0bd018b511c18eb767662e92fe8be9269bf9b642a47d0559f0d3809",
+   "usos": [
+    "upn/q03"
+   ]
+  },
+  {
+   "ruta": "data/sources/fase1/g17_2026-11-17/upn/upnpp_20261117_iva_primera_vivienda.html",
+   "url": "https://upn-pp.es/upn-pp-defiende-iva-cero-para-los-alimentos-basicos-y-rebajar-del-10-al-4-el-de-la-primera-vivienda/",
+   "sha256": "463ff7a28ea00567ee0626f88f62750928166d3ad67bc16a7835c8356dfaf9de",
+   "usos": [
+    "upn/q03"
+   ]
+  }
+ ],
+ "posiciones": {
+  "upn": {
+   "q03": {
+    "valor": 1,
+    "fuente": "campaña",
+    "cita": "Asimismo, ha destacado en que Navarra la vivienda se encareció un 9,5% interanual en el segundo trimestre de 2026, por lo que ha propuesto bajar del 10% al 4 % el IVA de la primera vivienda nueva cuando le corresponda el tipo general.",
+    "pagina": null,
+    "url": "https://upn-pp.es/upn-pp-defiende-iva-cero-para-los-alimentos-basicos-y-rebajar-del-10-al-4-el-de-la-primera-vivienda/",
+    "medio": "Web oficial de la coalición UPN-PP (upn-pp.es), nota de prensa «UPN-PP defiende “IVA cero” para los alimentos básicos y rebajar del 10% al 4% el de la primera vivienda»",
+    "fecha": "2026-11-17",
+    "quien": "Coalición electoral UPN-PP (Unión del Pueblo Navarro en coalición con el Partido Popular), nota oficial sobre la propuesta de Javier Esparza, cabeza de lista de UPN-PP al Senado por Navarra",
+    "formato": "documento oficial (nota de prensa en la web de la coalición)",
+    "marco": null,
+    "nota": "Nota oficial de la web de la coalición UPN-PP (upn-pp.es), publicada el 17-nov a las 11:58 (hora peninsular; autor «Comunicacion UPN-PP»). Recoge la propuesta de Javier Esparza, de UPN (BOE-A-2026-23103: «José Javier Esparza Abaurrea (UPN)», primero de la candidatura UPN-PP al Senado por Navarra): bajar del 10 % al 4 % el IVA de la primera vivienda nueva. Cuenta para UPN por dos vías: es un documento conjunto de la coalición que firma UPN (data/boe/coaliciones.json), igual que q23 (g7), y quien hace la propuesta es un líder de UPN. La frase va en estilo indirecto, pero la publica la propia coalición en su web como nota oficial, no es una crónica de prensa: vale como documento oficial, igual que las notas de Ara Més–Front Ampli (q31, g5) o del Frente Amplio (q02 y q04, g2). Pasar del 10 % al 4 % es justo la rebaja del 60 % del IVA de la afirmación, pero para cualquier edad y sin el impuesto de transmisiones (en Navarra es foral): a favor con diferencias, +1. Es el mismo criterio que Vox, SALF y ERC (q03 = +1), que también rebajan el IVA o el ITP de la primera vivienda sin limitarlo a menores de 40. El PP no cambia: su programa (q03 = +2) tiene precedencia.",
+    "sustituye": {
+     "valor": null,
+     "fuente": null,
+     "cita": null,
+     "pagina": null,
+     "url": null,
+     "medio": null,
+     "fecha": null,
+     "quien": null,
+     "formato": null,
+     "marco": null,
+     "nota": null,
+     "grupo": null
+    },
+    "motivo_cambio": "Celda nueva. Antes era null: UPN no tiene programa y no constaba ninguna posición sobre el IVA o el ITP de la primera vivienda."
+   }
+  }
+ }
+}
