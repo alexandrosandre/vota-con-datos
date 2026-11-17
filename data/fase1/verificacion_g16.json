@@ -1,0 +1,198 @@
+{
+ "grupo": "g16",
+ "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13-nov («A qué partido cuenta cada fuente», precedencia)",
+ "fecha": "2026-11-17",
+ "aprobado": true,
+ "revisadas": 11,
+ "resultado": {
+  "ok": 11,
+  "corregido": 0,
+  "rechazado": 0,
+  "celdas_no_tocadas_confirmadas": "ver «celdas_no_tocadas»"
+ },
+ "alcance": "Las 11 posiciones de EH Bildu de codificacion_g16.json, sacadas de su programa oficial para el 29-N («Posible Egin. Garantía y derechos», 30 pp., en castellano), las celdas en las que el codificador conserva la posición vigente o deja null, y una búsqueda propia de posiciones no recogidas. Como contraste se usó una lectura independiente del mismo programa (scratchpad/rev16t/notas_g17.md, sección final), que coincide en todo salvo en q36 (−2) y en dejar q12 como dudosa.\n\n(1) Fuente. El sha256 del PDF (ceb655c9…6047) coincide con partidos.json (entrada «eh_bildu») y con «fuentes»; el del texto (68fb9b49…2122) coincide con «fuentes» y con un pdftotext -layout nuevo del PDF. PDF de InDesign, 30 pp., CreationDate 16-nov 10:40 CET. La página del PDF coincide con la impresa; el índice (pp. 2-3) va una página adelantado desde el capítulo 2 (dice 24 para el 2.1, que empieza en la 23).\n\n(2) Lectura. Se extrajo cada página con pdftotext -layout -f N -l N y se leyeron enteras las pp. 4-29 (1-3 son portada e índice; la 30, contraportada), sin partir de las notas del codificador. Además se buscaron palabras clave (concertad, Ceuta, Melilla, indult, eólic, Mercosur, Ministerio, ocupa, permanente revisable, IRPF, deuda, jubilación, Constitución, castellano, vivienda social, menores, referéndum, independencia).\n\n(3) Citas. Cada fragmento (separado por [...]) se comprobó con norm() de verify_quotes.py contra el .txt catalogado y contra el texto de la página declarada: las 11 citas son literales y están en su página; tienen 60 palabras o menos (13 a 52). Las 11 «sustituye» coinciden con la celda vigente de fase1.json.\n\n(4) Valor. Se juzgó contra el texto exacto de cada afirmación y su contexto (preguntas.json) y se comparó con los demás partidos en fase1.json, en especial el PSOE (q01, q24, q36), el Frente Amplio (q09, q16, q36), Compromís (q36), el BNG y ERC (q32, q34), UPC y Compromís (q04), y el BNG y Junts (q12).\n\n(5) A qué partido cuenta. Solo a eh_bildu (programa propio; concurre sola al Congreso). Va primero cuando trata la medida al menos tan directamente como la fuente vigente, también si rebaja el valor (g14, q30).\n\n(6) Build. Comprobado en una copia del repositorio (scratchpad/g1516_ver): ver «recuento».\n\nResultado: aprobado, sin cambios de valor. Se corrigió una comparación inexacta en la nota de q09.",
+ "cambios": [],
+ "correcciones_de_campos": [
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q09",
+   "campo": "nota",
+   "motivo": "APLICADA por el verificador el 17-nov en codificacion_g16.json. La nota decía «mismo criterio que el Frente Amplio y Compromís (derogar la Ley 15/1997)»; Compromís (+1) no deroga esa ley, sino que pide revertir las concesiones privatizadas. Ahora lo distingue. Valor, cita y fuente no cambian."
+  }
+ ],
+ "posiciones": [
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q01",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Dos fragmentos literales de la p. 5 (apartado 1.1). Límite estatal y estructural del 2 % a la actualización anual de las rentas (si el IPC lo supera) y financiación estatal a los ayuntamientos que declaren zonas tensionadas; la entrada del apartado habla de «estableciendo regulaciones de los precios». Limita la subida, no el precio, y las zonas siguen dependiendo de que se declaren: no es la medida de la afirmación, pero sí su dirección. +1, el listón del PSOE (+1: congelación temporal de las rentas, otro límite a la subida) y Compromís (+1). No null: el proyecto ya cuenta los límites a la subida de la renta como posición a favor."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q04",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 14, apartado 1.8). «Impuesto a la banca y las grandes fortunas» incluye el Impuesto de Solidaridad de las Grandes Fortunas (los dos gravámenes se crearon juntos en 2022; la introducción, p. 4, presume de haberlo aumentado con gestión foral). Subirlo supone mantenerlo, pero la medida anterior dice «haciéndolo permanente» del impuesto a las energéticas y esta no: la permanencia, núcleo de la afirmación, no es expresa. +1, como el PSOE (+1) y UPC (+1, «reforzar la tributación de las grandes fortunas»); los +2 dicen expresamente mantenerlo (Compromís, Podemos, el Frente Amplio) o hacerlo permanente (ERC, el BNG)."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q06",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 6, primera medida de Empleo). 32 horas o cuatro días sin rebaja salarial por reforma del Estatuto, con 35 h como paso inicial en las pymes: va más allá de las 37,5 h, +1, como Compromís, Adelante Andalucía, el BNG y Ara Més (g15). Más concreto que la pregunta de Aizpurua (16-sep, +1, sin cifra): solo cambia la fuente."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q09",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 11, bloque «Gobernanza»). Derogar la Ley 15/1997, que permite «la privatización y externalización»: va en la dirección de la afirmación, pero no prohíbe pagar a centros privados ni acaba con los conciertos. +1, el mismo listón que el Frente Amplio (+1, deroga la misma ley); el BNG y Adelante Andalucía (+2) piden provisión exclusivamente pública o el fin de los conciertos. Nota corregida (Compromís, +1, revierte concesiones; no deroga la ley)."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q13",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (p. 20, apartado 1.11). «Eliminación de barreras para acceder a la [...] vivienda [...] independientemente de la situación administrativa», junto a sancionar el racismo «inmobiliario»: nombra la vivienda y va más allá de la igualdad de trato de los residentes legales, así que es incompatible con dar prioridad a los españoles en la vivienda social. En contra, indirecto pero inequívoco: −1, como el PSOE, Podemos, Compromís, Ara Més y el Frente Amplio. No −2: no nombra la vivienda social ni la prioridad nacional. La lectura de contraste da el mismo valor."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q16",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Dos fragmentos literales de la p. 24 (apartado 2.1, que empieza en la 23). «Derecho a decidir del pueblo vasco» como mecanismo de solución del conflicto con el Estado y respeto a los nuevos estatus acordados «cuando estos resulten refrendados por la sociedad vasca»: acuerdo con el Estado y refrendo, sin nombrar la independencia ni un referéndum pactado con el Gobierno. Indirecto, +1, el listón del Frente Amplio («derecho a decidir mediante referéndum») y Ara Més (g15). Propuesta propia y más directa que la nota con ERC (16-sep), sobre referendos en otros países: cambia la fuente."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q24",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 22, primera medida de 1.13). «Acabar con la Ley Mordaza» volviendo a presentar la proposición de ley que reforma los artículos «contrarios a la libertad de expresión» (pelotas de goma, sanciones, desobediencia, extranjería): reforma, no derogación completa. +1, como el PSOE (+1, nueva ley que la sustituya); los +2 piden derogarla sin más. Más concreto que Matute (7-nov, +1, «en su integridad o en aquellos elementos»): cambia la fuente."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q26",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal (p. 28, apartado 3.2.2). «Rechazaremos el aumento del gasto en defensa que la OTAN está exigiendo», con el «NO a la OTAN» del 3.2.4: rechazo expreso, −2, como el Frente Amplio, Podemos, Adelante Andalucía, el BNG y Ara Més. Mismo valor que Iñarritu (21-abr): cambia la fuente."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q32",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 6). «Modificación del Estatuto de los Trabajadores para que las CCAA puedan establecer su propio SMI [...] constituyendo el SMI fijado por el estado el mínimo legal indisponible»: es la afirmación (competencia de cada comunidad y el estatal como suelo), propuesta expresa dentro de una medida propia. +2, como el PNV, el BNG y ERC. Más directo que la nota con LAB (12-nov, +1, solo «salario mínimo propio»)."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q34",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 29, apartado propio 3.2.8). Revertir el cambio de posición del Gobierno de 2022 (el apoyo al plan de autonomía marroquí) y recuperar el apoyo al derecho de autodeterminación saharaui: es la alternativa que plantea la afirmación, aunque no nombre el referéndum. +2, el listón del BNG (+2, «anular o cambio de posición» y autodeterminación) y ERC (+2, «revertir la posició [...] adoptada l'any 2022»). Mismo valor que Iñarritu (10-dic-2025, verificado): cambia la fuente."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (p. 15, apartado 1.9.1). «Apostaremos por mantener el calendario de cierre nuclear definido en el PNIEC»: se opone a alargar las centrales, pero es un punto de una lista que no rechaza expresamente las prórrogas ni menciona Almaraz. Es el texto y el listón del PSOE y el PSC (−1, «Mantener el calendario de cierre»); el Frente Amplio (−2) se compromete a cerrar Almaraz en 2027-2028 y Compromís (−2) dice «no acceptarem cap nova pròrroga». El programa (16-nov) es posterior y va primero sobre la intervención de Otero (9-sep, −2), que ya se marcó como dudosa porque en parte era adhesión a otro orador (con sus palabras propias, −1). Ver duda 5."
+  }
+ ],
+ "resolucion_dudas_codificador": [
+  {
+   "duda": 1,
+   "tema": "q01: +1 o null",
+   "resolucion": "+1. El límite estructural del 2 % a la actualización anual es una regulación estatal de la renta en toda España, aunque limita la subida y no el precio. El proyecto ya fijó que limitar la subida es posición a favor, sin llegar a la afirmación (PSOE, +1, congelación temporal). No llega a +2: no hay tope al precio y las zonas tensionadas siguen dependiendo de que se declaren."
+  },
+  {
+   "duda": 2,
+   "tema": "q04: +1 o +2",
+   "resolucion": "+1. El impuesto «a la banca y las grandes fortunas» incluye el de la afirmación (se crearon juntos y la introducción presume de haberlo aumentado). Pero la afirmación trata de hacerlo permanente, y el programa usa «permanente» para el impuesto de la línea anterior y no para este; los +2 dicen expresamente mantenerlo (Compromís, «mantindrem i ampliarem») o hacerlo permanente (ERC, BNG). «Aumentar el peso» sin decir que se mantenga queda en el +1 del PSOE y UPC."
+  },
+  {
+   "duda": 3,
+   "tema": "q13: −1 o null",
+   "resolucion": "−1. La medida nombra la vivienda y pide quitar las barreras de acceso «independientemente de la situación administrativa», lo que es incompatible con una prioridad por nacionalidad; la medida siguiente persigue el racismo «inmobiliario». No es una medida relacionada pero distinta, sino el principio contrario aplicado a la misma materia. La diferencia con Compromís (cuya «atención sanitaria universal» no se usó) es que aquella hablaba de sanidad."
+  },
+  {
+   "duda": 4,
+   "tema": "q34: +2 sin nombrar el referéndum",
+   "resolucion": "+2. La afirmación opone el referéndum de autodeterminación al plan de autonomía; revertir la posición de 2022 es retirar el apoyo al plan, y lo une al derecho de autodeterminación en un apartado propio. Es el listón del BNG y ERC (+2, revertir o anular el cambio de 2022). Compromís tuvo +1 con Micó porque solo hablaba de autodeterminación, sin revertir la posición."
+  },
+  {
+   "duda": 5,
+   "tema": "q36: −2 → −1",
+   "resolucion": "−1. «Mantener el calendario de cierre» es exactamente el compromiso del PSOE y el PSC, que tienen −1 porque es un punto de una lista que no rechaza expresamente las prórrogas; las dos razones valen aquí. Los −2 (Frente Amplio, Compromís, ERC) rechazan las prórrogas o fijan el cierre de Almaraz en 2027-2028. «Definido en el PNIEC» apunta al calendario original (Almaraz en 2027-2028, antes de la prórroga de agosto), pero no lo dice. El programa es posterior a Otero (9-sep) y va primero; la intervención de Otero, sin la adhesión a Badia, ya se había valorado en −1. La lectura de contraste propone −2: queda como alternativa para el editor."
+  },
+  {
+   "duda": 6,
+   "tema": "q31: se conserva Matute",
+   "resolucion": "Se acepta. La primera medida de vivienda («contratos [...] con prórroga automática») no fija plazo; Matute (9-nov) pedía recuperar la prórroga automática por cinco o siete años, más cerca de la afirmación. El valor sería +2 con cualquiera de las dos fuentes."
+  },
+  {
+   "duda": 7,
+   "tema": "q08: null",
+   "resolucion": "null. Rechazar «cualquier intento de [...] aumento de la edad de jubilación» (que ya sube a 67 en 2027) no es volver a los 65, y la pensión sin penalización con 40 años cotizados es una vía para carreras largas, no la edad ordinaria para todos. Adelante Andalucía tuvo +1 porque bajaba la edad ordinaria de todos (a 64)."
+  },
+  {
+   "duda": 8,
+   "tema": "q12: null",
+   "resolucion": "null. «Un sistema educativo propio [...] euskaldun y soberano» describe el sistema que se quiere, pero no habla de la lengua en que se dan las clases, del castellano ni de mínimos. El BNG (+1) habla de la lengua vehicular, y Junts (+1) respondía a la garantía del castellano del PP. Ante la duda entre +1 y null, null; la lectura de contraste también la dejaba como dudosa."
+  },
+  {
+   "duda": 9,
+   "tema": "q21: null",
+   "resolucion": "null. «Blindar el derecho al aborto. Para ello, daremos los pasos y propondremos todas las medidas necesarias para garantizar el acceso [...]»: el «para ello» concreta medidas de acceso, y la Constitución no aparece. El PSC tiene +2 porque Sánchez dijo «en la Constitución»; Ara Més (g15), «blindatge constitucional». Aquí no consta."
+  }
+ ],
+ "celdas_no_tocadas": [
+  "Se conservan (el programa no trata la medida o lo hace de forma menos directa sin contradecirla), comprobado página a página: q23 (−1, Matute: la prohibición estructural de desahucios de personas vulnerables, p. 5, es otra medida), q27 (−1, Iñarritu: rechaza devoluciones sumarias y externalización de fronteras, p. 20, y pide el repliegue de las Fuerzas de Seguridad del Estado en Euskadi y Navarra, p. 27; nada del Ejército en Ceuta), q29 (+1, Goñi: no menciona Mercosur; PAC y cadena alimentaria, pp. 16-17), q30 (+1, Matute: «límites temporales» a «determinados productos básicos» en emergencias, p. 8, y controles de márgenes, p. 9; mismo valor, menos directo sobre los alimentos), q31 (+2, Matute, duda 6), q33 (−1, Iñarritu: modelo vasco de acogida e interés superior de la infancia, p. 20; no el reparto) y q35 (−2, Iñarritu: legislación penitenciaria ordinaria, p. 27; no la prisión permanente).",
+  "Siguen en null, confirmado: q03 (solo IVA del 21 % a los pisos turísticos), q05 (no trata el IRPF), q08 (duda 7), q11 (la educación, pp. 11-12, no habla de la concertada), q12 (duda 8), q15 («regularización efectiva, accesible y estable», p. 20: una vía estable, no otra extraordinaria; mismo criterio que el Frente Amplio), q17 (defiende y quiere ampliar el Concierto y el Convenio propios, p. 24, sin extenderlos a otras comunidades), q18 (derogar la reforma del artículo 135, p. 14, es otra medida), q19 (despliegue renovable en general, p. 15), q21 (duda 9), q22 (nada del Ministerio de Igualdad) y q25 (nada de indultos).",
+  "Otros partidos: ninguna celda cambia. El programa es solo de EH Bildu."
+ ],
+ "posiciones_no_recogidas": "No se encontró ninguna afirmación en la que el programa tome una posición clara que el codificador no haya recogido. Las más cercanas: q15 (regularización estable), q17 (ampliar el Concierto propio), q12 (sistema educativo «euskaldun y soberano»), q21 («blindar el derecho al aborto» sin Constitución), q30 (límites temporales en emergencias; se conserva Matute, más directo) y q27 (repliegue de las Fuerzas de Seguridad del Estado); todas medidas distintas, menos directas que la fuente conservada o dudosas (null).",
+ "recuento": {
+  "antes": {
+   "eh_bildu": 14
+  },
+  "despues": {
+   "eh_bildu": 18
+  },
+  "cambios_de_valor": [
+   "eh_bildu q32 +1→+2",
+   "eh_bildu q36 −2→−1"
+  ],
+  "celdas_nuevas": [
+   "eh_bildu q01 +1, q04 +1, q09 +1, q13 −1"
+  ],
+  "solo_fuente": [
+   "eh_bildu q06 q16 q24 q26 q34"
+  ],
+  "despues_detalle": {
+   "con_valor": 18,
+   "a_favor": 11,
+   "en_contra": 7,
+   "null": 12,
+   "null_preguntas": "q03 q05 q08 q11 q12 q15 q17 q18 q19 q21 q22 q25"
+  },
+  "build": "Comprobado en una copia del repositorio (scratchpad/g1516_ver, con codificacion_g15/g16.json ya corregidos y estas dos verificaciones): python3 -I pipeline/build_fase1.py termina sin errores (exit 0) y aplica g15 y g16 después de g14. Frente a fase1.json del repositorio cambian exactamente 26 celdas: 14 de ara_mes_fa (10 → 18 posiciones), 1 de frente_amplio (q32, solo la fuente; sigue en 25) y 11 de eh_bildu (14 → 18); ningún otro partido ni afirmación cambia. Sin las verificaciones, fase1.json sale idéntico al del repositorio. En el repositorio no se ha regenerado fase1.json."
+ },
+ "dudas": [
+  "eh_bildu/q36 (−1): alternativa −2 (lectura de contraste y valor anterior de Otero) si «mantener el calendario definido en el PNIEC» se lee como rechazo expreso de la prórroga de Almaraz; el PSOE y el PSC tienen −1 con el mismo texto.",
+  "eh_bildu/q01 (+1): alternativa null si el límite del 2 % a la actualización de la renta se considera una medida distinta del precio máximo; habría que revisar también el PSOE (+1, congelación).",
+  "eh_bildu/q04 (+1): alternativa +2 si subir el impuesto se lee como mantenerlo (criterio de Compromís).",
+  "eh_bildu/q12 (null): alternativa +1 si «sistema educativo propio [...] euskaldun y soberano» se lee como que Euskadi decide la lengua de las clases."
+ ]
+}

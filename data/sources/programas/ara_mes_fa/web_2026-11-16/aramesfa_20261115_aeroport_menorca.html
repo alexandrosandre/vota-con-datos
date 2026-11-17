@@ -1,0 +1,1210 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ca" class="html">
+	<head>
+
+    <script type="text/javascript" src="/jsi18n/"></script>
+
+    
+        
+
+<script type="text/javascript">
+
+    var klaroConfig = {
+        // With the 0.7.0 release we introduce a 'version' paramter that will make
+        // if easier for us to keep configuration files backwards-compatible in the future.
+        version: 1,
+
+        // You can customize the ID of the DIV element that Klaro will create
+        // when starting up. If undefined, Klaro will use 'klaro'.
+        elementID: 'cookie-timtul-bot',
+
+        // Setting this to true will keep Klaro from automatically loading itself
+        // when the page is being loaded.
+        noAutoLoad: false,
+
+        // Setting this to true will render the descriptions of the consent
+        // modal and consent notice are HTML. Use with care.
+        htmlTexts: true,
+
+        // Setting 'embedded' to true will render the Klaro modal and notice without
+        // the modal background, allowing you to e.g. embed them into a specific element
+        // of your website, such as your privacy notice.
+        embedded: false,
+
+        // You can group services by their purpose in the modal. This is advisable
+        // if you have a large number of services. Users can then enable or disable
+        // entire groups of services instead of having to enable or disable every service.
+        groupByPurpose: true,
+
+        // How Klaro should store the user's preferences. It can be either 'cookie'
+        // (the default) or 'localStorage'.
+        storageMethod: 'cookie',
+
+        // You can customize the name of the cookie that Klaro uses for storing
+        // user consent decisions. If undefined, Klaro will use 'klaro'.
+        cookieName: 'timtul_cookie_bot',
+
+        // You can also set a custom expiration time for the Klaro cookie.
+        // By default, it will expire after 120 days.
+        cookieExpiresAfterDays: 365,
+
+        // You can change to cookie domain for the consent manager itself.
+        // Use this if you want to get consent once for multiple matching domains.
+        // If undefined, Klaro will use the current domain.
+        //cookieDomain: '.github.com',
+
+        // Defines the default state for services (true=enabled by default).
+        default: false,
+
+        // If "mustConsent" is set to true, Klaro will directly display the consent
+        // manager modal and not allow the user to close it before having actively
+        // consented or declines the use of third-party services.
+        mustConsent: false,
+
+        // Show "accept all" to accept all services instead of "ok" that only accepts
+        // required and "default: true" services
+        acceptAll: true,
+
+        // replace "decline" with cookie manager modal
+        hideDeclineAll: false,
+
+        // hide "learnMore" link
+        hideLearnMore: false,
+
+        // show cookie notice as modal
+        
+            noticeAsModal: false,
+        
+
+        // You can also remove the 'Realized with Klaro!' text in the consent modal.
+        // Please don't do this! We provide Klaro as a free open source tool.
+        // Placing a link to our website helps us spread the word about it,
+        // which ultimately enables us to make Klaro! better for everyone.
+        // So please be fair and keep the link enabled. Thanks :)
+        disablePoweredBy: true,
+
+        // you can specify an additional class (or classes) that will be added to the Klaro `div`
+        //additionalClass: 'my-klaro',
+
+        // You can define the UI language directly here. If undefined, Klaro will
+        // use the value given in the global "lang" variable. If that does
+        // not exist, it will use the value given in the "lang" attribute of your
+        // HTML tag. If that also doesn't exist, it will use 'en'.
+        
+            lang: 'ca',
+        
+
+        // You can overwrite existing translations and add translations for your
+        // service descriptions and purposes. See `src/translations/` for a full
+        // list of translations that can be overwritten:
+        // https://github.com/KIProtect/klaro/tree/master/src/translations
+        privacyPolicyUrl: '/cookies',
+
+        // Example config that shows how to overwrite translations:
+        // https://github.com/KIProtect/klaro/blob/master/src/configs/i18n.js
+        translations: {
+            // translationsed defined under the 'zz' language code act as default
+            // translations.
+            zz: {
+                privacyPolicy: {
+                    name: "cookies policy.",
+                    text: "To learn more, please read our {privacyPolicy}."
+                },
+
+                privacyPolicyUrl: '/cookies',
+                cloudflare: {
+                    description: 'Protection against DDoS attacks',
+                },
+
+            },
+            es: {
+                privacyPolicy: {
+                    name: "política de cookies",
+                    text: "Para saber más, por favor lea nuestra {privacyPolicy}."
+                },
+
+                consentModal: {
+                    description: 'Aquí puede ver y personalizar la información que recopilamos sobre los usuarios.',
+                    title: 'Información que recopilamos'
+                },
+                consentNotice: {
+                    description: '<b>Configuración de cookies</b><br><br>Recopilamos y procesamos vuestra información personal con las siguientes finalidades: {purposes}'
+                },
+
+
+                purposes: {
+                    analytics: {
+                        title: 'Analíticas',
+                        description: 'Con estas podemos analizar la navegación que realice por el sitio web con el fin de realizar estudios estadísticos sobre su uso'
+                    },
+                    security: {
+                        title: 'Seguridad',
+                        description: 'Estas cookies son necesarias para el funcionamiento del sitio web, por lo que no se pueden desactivar'
+                    },
+                    marketing: {
+                        title: 'Marketing',
+                        description: 'Estos servicios procesan información personal para mostrarle contenido relevante sobre productos, servicios o temas que le pueden interesar.'
+                    },
+                    style: {
+                        title: 'Personalización',
+                        description: 'Con estas cookies podemos adaptar la visualización de la página web y personalizar sus opciones.\n',
+                    },
+                    mandatory: {
+                        title: 'Obligatorias',
+                        description: 'Estas cookies son necesarias para que funcione la página web por lo que no pueden ser desactivadas.'
+                    }
+                },
+            },
+
+            eu: {
+
+                acceptAll: "Onartu itzazu denak.",
+                 acceptSelected: "Onartu aukerak",
+                decline: "Baztertu",
+                ok: "Onartu",
+                 privacyPolicy: {
+                    name: "cookieen politika",
+                    text: "Gehiago jakiteko, irakurri gure {privacyPolicy}."
+                },
+
+                consentModal: {
+                    description: 'Webgune honetan erabili nahi ditugun zerbitzuak ebaluatu eta pertsonaliza ditzakezu.',
+                    title: 'Biltzen dugun informazioa'
+                },
+                consentNotice: {
+                    description: '<b>Cookie ezarpenak</b><br><br>Zure informazio pertsonala bildu eta prozesatzen dugu helburu hauetarako: {purposes}',
+                    learnMore: 'Aukeratu nahi dut...',
+                },
+
+                purposeItem: {
+                    services: "zerbitzuak"
+                },
+                purposes: {
+                    analytics: {
+                        title: 'Analitika',
+                        description: 'Hauekin webgunean egiten duzun nabigazioa aztertu dezakegu erabilerari buruzko azterketa estatistikoak egiteko'
+                    },
+                    security: {
+                        title: 'Segurtasuna',
+                        description: 'Cookie hauek webgunearen funtzionamendurako beharrezkoak dira, beraz, ezin dira desgaitu'
+                    },
+                    marketing: {
+                        title: 'Marketina',
+                        description: 'Zerbitzu hauek informazio pertsonala prozesatzen dute interesa izan daitezkeen produktu, zerbitzu edo gaiei buruzko eduki garrantzitsua erakusteko.'
+                    },
+                    style: {
+                        title: 'Pertsonalizazioa',
+                        description: 'Cookie hauekin webgunearen bistaratzea egokitu eta bere aukerak pertsonaliza ditzakegu.\n',
+                    },
+                    mandatory: {
+                        title: 'Nahitaezkoa',
+                        description: 'Cookie hauek webguneak funtziona dezan beharrezkoak dira, beraz, ezin dira desaktibatu.'
+                    }
+                },
+                service: {
+                    required: {
+                        title: '(beti beharrezkoa)'
+                    },
+                    purpose: 'Helburua',
+                    disableAll: {
+                        description: "Erabili etengailu hau zerbitzu guztiak gaitzeko edo desgaitzeko.",
+                        title: "Gaitu edo desgaitu zerbitzu guztiak"
+                    }
+                },
+                optOut:
+                {
+                    description: "Aplikazio hau lehenespenez kargatzen da, baina desgaitu dezakezu",
+                    title: "(opt-out)"
+                },
+                purpose: "Helburua",
+                required: {
+                    description: "Aplikazio hau beti behar da",
+                    title: "(beharrezkoak)"
+                },
+                close: "Itxi",
+                save: "Gorde"
+
+            },
+            ca: {
+
+                service: {
+                    disableAll: {
+                        description: 'Feu servir aquest botó per a habilitar o deshabilitar totes les aplicacions.'
+                    }
+                },
+
+                consentNotice: {
+                    description: '<b>Configuració de cookies</b><br><br>Recopilem i processem la vostra informació personal amb les següents finalitats: {purposes}.'
+                },
+                consentModal: {
+                    description: 'Aquí podeu veure i personalitzar la informació que recopilem sobre vós.'
+                },
+                privacyPolicy: {
+                    name: "política de cookies",
+                    text: "Per saber-ne més, llegiu la nostra {privacyPolicy}."
+                },
+                purposes: {
+                    analytics: {
+                        title: 'Analítiques',
+                        description: 'Amb aquestes podem analitzar la navegació que realitzeu pel lloc web amb la finalitat de realitzar estudis estadístics sobre el seu ús.'
+                    },
+                    security: {
+                        title: 'Seguretat',
+                        description: 'Aquestes cookies són necessàries per al funcionament del lloc web, per la qual cosa no es poden desactivar.'
+                    },
+                    marketing: {
+                        title: 'Màrqueting',
+                        description: 'Aquests serveis processen informació personal per mostrar-vos contingut rellevant sobre productes, serveis o temes que us poden interessar.'
+                    },
+                    style: {
+                        title: 'Personalització',
+                        description: 'Amb aquestes cookies podem adaptar la visualització de la pàgina web i personalitzar les seves opcions.',
+                    },
+                    mandatory: {
+                        title: 'Obligatori',
+                        description: 'Aquestes galetes són necessàries perquè funcioni la pàgina web pel que no poden ser desactivades.'
+                    }
+                },
+            },
+
+            en: {
+                consentNotice: {
+                    description: '<b>Cookies settings</b><br><br>We collect and process your personal information for the following purposes: {purposes}.'
+                },
+
+                consentModal: {
+                    description: 'You can assess and customise the services that we\'d like to use on this website.',
+                    title: 'Information We Collect'
+                },
+
+                privacyPolicy: {
+                    name: "cookies policy.",
+                    text: "To learn more, please read our  {privacyPolicy}."
+                },
+                purposes: {
+                    analytics: {
+                        title: 'Analytics',
+                        description: 'With these we can analyze the browsing you do on the website in order to carry out statistical studies on its use.'
+                    },
+                    security: {
+                        title: 'Security',
+                        description: 'These cookies are necessary for the operation of the website, so they cannot be disabled'
+                    },
+                    marketing: {
+                        title: 'Marketing',
+                        description: 'These services process personal information to show you relevant content about products, services or topics that you might be interested in.'
+                    },
+                    mandatory: {
+                        title: 'Mandatory',
+                        description: 'These cookies are necessary for the operation of the website, so they cannot be deactivated.'
+                    }
+                },
+            },
+
+            fr: {
+                consentNotice: {
+                    description: '<b>Paramètres des cookies</b><br><br>Nous collectons et traitons vos informations personnelles aux fins suivantes: {purposes}.'
+                },
+
+                consentModal: {
+                    description: 'Vous pouvez ici évaluer et personnaliser les services que nous aimerions utiliser sur ce site.',
+                    title: 'Informations que nous recueillons'
+                },
+                privacyPolicy: {
+                    name: "politique en matière de cookies",
+                    text: "Pour en savoir plus, veuillez lire notre {privacyPolicy}."
+                },
+                purposes: {
+                    analytics: {
+                        title: 'Analytiques',
+                        description: 'Grâce à ces cookies, nous pouvons analyser la navigation que vous effectuez sur notre site web afin de réaliser des études statistiques sur son utilisation.'
+                    },
+                    security: {
+                        title: 'Sécurité',
+                        description: 'Ces cookies sont nécessaires au fonctionnement du site web et ne peuvent pas être désactivés.'
+                    },
+                    marketing: {
+                        title: 'Marketing',
+                        description: 'Ces services traitent les informations personnelles afin de vous présenter un contenu pertinent sur des produits, des services ou des sujets susceptibles de vous intéresser.'
+                    },
+                    mandatory: {
+                        title: 'Mandatory',
+                        description: 'Ces services traitent les informations personnelles afin de vous présenter un contenu pertinent sur des produits, des services ou des sujets susceptibles de vous intéresser.'
+                    }
+                },
+            },
+
+            it: {
+                consentNotice: {
+                    description: '<b>Impostazioni dei cookie</b><br><br>Raccogliamo ed elaboriamo le tue informazioni personali per i seguenti scopi: {purposes}.'
+                },
+
+                consentModal: {
+                    description: 'Qui potrà valutare e personalizzare i servizi che vorremmo utilizzare su questo sito web.',
+                    title: 'Informazioni che raccogliamo'
+                },
+
+                privacyPolicy: {
+                    name: "informativa sui cookie",
+                    text: "Per saperne di più, la invitiamo a leggere la nostra {privacyPolicy}."
+                },
+                purposes: {
+                    analytics: {
+                        title: 'Analitici',
+                        description: 'Con questi cookie possiamo analizzare la navigazione degli utenti sul nostro sito per condurre studi statistici sull\'uso che ne fanno.'
+                    },
+                    security: {
+                        title: 'Sicurezza',
+                        description: 'Questi cookie sono necessari per il funzionamento del sito web, pertanto non possono essere disattivati.'
+                    },
+                    marketing: {
+                        title: 'Marketing',
+                        description: 'Questi servizi elaborano informazioni personali per mostrare contenuti pertinenti in merito a prodotti, servizi o temi di interesse per l\'utente.'
+                    },
+                },
+            },
+
+            pt: {
+                save : 'Salve',
+                consentNotice: {
+                    description: '<b>Configurações de cookies</b><br><br>Coletamos e processamos suas informações pessoais para os seguintes fins:  {purposes}.'
+                },
+
+                consentModal: {
+                    description: 'Nesta secção, pode avaliar e personalizar os serviços que gostaríamos de utilizar neste website.',
+                    title: 'Informações que coletamos'
+                },
+
+                privacyPolicy: {
+                    name: "Política de Cookies.",
+                    text: "Para obter mais informações, consulte a nossa {privacyPolicy}."
+                },
+                purposes: {
+                    analytics: {
+                        title: 'Analíticas',
+                        description: 'Estas cookies permitem-nos analisar a sua navegação no nosso website para efetuar estudos estatísticos sobre a utilização.'
+                    },
+                    security: {
+                        title: 'Segurança',
+                        description: 'Cookies necessárias para o funcionamento do website, pelo que não podem ser desativadas.'
+                    },
+                    marketing: {
+                        title: 'Marketing',
+                        description: 'Estes serviços tratam informação pessoal para apresentar conteúdo pertinente sobre produtos, serviços ou temas que poderão ser do seu interesse.'
+                    },
+                },
+            },
+
+
+        },
+
+        // This is a list of third-party services that Klaro will manage for you.
+        services: [
+            // The services will appear in the modal in the same order as defined here.
+            {
+                name: 'google',
+                callback: function (consent, service) {
+                    // This is an example callback function.
+                    console.log(
+                        'User consent for service ' + service.name + ': consent=' + consent
+                    );
+                    if( window.google_consent == false && consent == true)  {
+                        // Reload the page
+                        window.google_consent = consent;
+                        location.reload();
+                    }
+                    window.google_consent = consent;
+                    if (!consent) {
+                        $(".g-recaptcha").html(
+                            "<span style='color:red'>Necessites activar les galetes de Google per poder enviar el missatge.</span>").append(
+                                "<br/><b style='cursor:pointer;'>Obrir la configuració de cookies</b>").click( function() {return klaro.show();});
+                    }
+                },
+
+                
+                    required: true,
+                    default: true,
+                
+                translations: {
+                    zz: {
+                        description: 'Google Analytics stores cookies in order to compile statistics on the traffic and volume of visits to the website.'
+                    },
+                    en: {
+                        description: 'Google Analytics stores cookies in order to compile statistics on the traffic and volume of visits to the website.'
+                    },
+                    es: {
+                        description: 'Google Analytics almacena cookies para elaborar estadísticas sobre el tráfico y volumen de visitas del sitio web.'
+                    },
+                    eu: {
+                        description: 'Google Analytics-ek cookieak gordetzen ditu webguneko trafikoari eta bisita-bolumenari buruzko estatistikak egiteko..'
+                    },
+                    ca: {
+                        description: 'Google Analytics emmagatzema cookies per elaborar estadístiques sobre el trànsit i volum de visites del lloc web.'
+                    },
+                    fr: {
+                        description: 'Google Analytics stocke des cookies pour compiler des statistiques sur le trafic et le volume des visites sur le site.'
+                    },
+                    it: {
+                      description: 'Google Analytics memorizza i cookie per compilare statistiche sul traffico e sul volume delle visite al sito web.'
+                    },
+                    pt: {
+                      description: 'O Google Analytics armazena cookies para compilar estatísticas sobre o tráfego e o volume de visitas ao site.'
+                    }
+                },
+
+                // if you omit the title here Klaro will try to look it up in the
+                // translations
+                title: 'Google',
+                purposes: ['analytics'],
+                cookies: [
+                    // --- Google Analytics / GA4 (1st-party en cualquier dominio) ---
+                      [/^_ga$/, '/', ''],
+                      [/^_ga_.*$/, '/', ''],        // GA4 (_ga_XXXX)
+                      [/^_gid$/, '/', ''],
+                      [/^_gat(_.*)?$/, '/', ''],
+                      [/^_gac_.*$/, '/', ''],       // campañas (UA/Ads)
+                      [/^_gcl_.*$/, '/', ''],       // Google Ads linker
+                      [/^_dc_gtm_.*$/, '/', ''],    // GTM throttle
+                      [/^_gaexp$/, '/', ''],        // (antiguo Optimize)
+                      [/^_opt_.*$/, '/', ''],       // (antiguo Optimize)
+
+                      // --- Localhost (opcional, si quieres ser explícito en dev) ---
+                      [/^_ga$/, '/', 'localhost'],
+                      [/^_ga_.*$/, '/', 'localhost'],
+                      [/^_gid$/, '/', 'localhost'],
+                      [/^_gat(_.*)?$/, '/', 'localhost'],
+
+                      // --- Terceros de Google / publicidad ---
+                      ['IDE', '/', '.doubleclick.net'],
+
+                      // Suele bastar con .google.com; si en tu caso ves cookies en .google.es, duplica líneas cambiando el dominio.
+                      ['CONSENT', '/', '.google.com'],
+                      ['NID', '/', '.google.com'],
+                      ['ANID', '/', '.google.com'],
+                      ['1P_JAR', '/', '.google.com'],
+                      ['SOCS', '/', '.google.com'],
+
+                      // (Opcional) variantes "Secure" frecuentes
+                      ['__Secure-ENID', '/', '.google.com'],
+                      ['__Secure-1PAPISID', '/', '.google.com'],
+                ],
+            },
+            {
+                name: 'stripe',
+                title: 'Stripe',
+                translations: {
+                    zz: {
+                        description: 'This cookie is required to carry out credit card transactions on the website. Service provided by Stripe.com that allows you to make online transactions without storing any credit card information.'
+                    },
+                    en: {
+                        description: 'This cookie is required to carry out credit card transactions on the website. Service provided by Stripe.com that allows you to make online transactions without storing any credit card information.'
+                    },
+                    es: {
+                        description: 'Esta cookie es necesaria para realizar transacciones con tarjetas de crédito en el sitio web. Servicio provisto por Stripe.com que permite efectuar transacciones en línea sin almacenar ninguna información de la tarjeta de crédito.'
+                    },
+                    eu: {
+                        description: 'Cookie hau beharrezkoa da webgunean kreditu-txartelen transakzioak egiteko. Stripe.com-ek eskaintzen duen zerbitzua lineako transakzioak egiteko aukera ematen dizu kreditu-txartelen informaziorik gorde gabe.'
+                    },
+                    ca: {
+                        description: 'Aquesta cookie és necessària per realitzar transaccions amb targetes de crèdit al lloc web. Servei proveït per Stripe.com que permet efectuar transaccions en línia sense emmagatzemar cap informació de la targeta de crèdit.'
+                    },
+                    fr: {
+                        description: 'Ce cookie est nécessaire pour effectuer des transactions par carte de crédit sur le site web. Le service fourni par Stripe.com permet d\'effectuer des transactions en ligne sans stocker d\'informations sur les cartes de crédit.'
+                    },
+                    it: {
+                        description: 'Questi cookie sono necessari per eseguire transazioni con carte di credito sul sito web. Servizio fornito da Stripe.com, permette di eseguire transazioni online senza archiviare informazioni sulla carta di credito.'
+                    },
+                    pt: {
+                        description: 'Cookie necessária para efetuar transações com cartões de crédito no website. Serviço prestado por Stripe.com, permite realizar transações online sem armazenar informações sobre o cartão de crédito.'
+                    }
+                },
+                optOut: false,
+                
+                    required: true,
+                    default: true,
+                    purposes: ['security'],
+                
+
+                cookies: [
+                    [/^__stripe*$/, '/', 'stripe.com'],
+                    /^__stripe*$/,
+                ],
+            },
+            {
+                name: 'timtul',
+                title: 'Timtul',
+                required: true,
+                default: true,
+
+                purposes: ['security'],
+                cookies: [
+                    'csrftoken',
+                    'timtul_cookie_bot',
+                ],
+                callback: function (consent, service) {
+                    // This is an example callback function.
+                    console.log(
+                        'User consent for service ' + service.name + ': consent=' + consent
+                    );
+                },
+            },
+            // The services will appear in the modal in the same order as defined here.
+            {
+                name: 'twitter',
+                purposes: ['marketing'],
+                contextualConsentOnly: true,
+            },
+            {
+                name: 'youtube',
+                purposes: ['marketing'],
+                contextualConsentOnly: true,
+            },
+            
+        ],
+    };
+</script>
+<script defer type="text/javascript" src="https://cdn.kiprotect.com/klaro/v0.7.8/klaro.js"></script>
+
+    
+
+		<meta charset="utf-8"/>
+		
+
+    
+      <title>
+		  Mes per Mallorca |
+            
+                ARAMÉS-Front Ampli reclama una millor connectivitat per acabar amb “l’aïllament injust” de Menorca
+            
+      </title>
+    
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1" name="viewport"/>
+		<meta content="Timtul" name="author"/>
+
+
+        <!-- <meta name="twitter:site" content="@TimTul_es" />
+        <meta name="twitter:creator" content="@TimTul_es" />
+        -->
+        <meta property="og:url" content="https://aramesfrontampli.cat/noticies/arames-front-ampli-reclama-una-millor-connectivitat-per-acabar-amb-laillament-injust-de-menorca/" />
+    
+        <meta property="og:title" content="ARAMÉS-Front Ampli reclama una millor connectivitat per acabar amb “l’aïllament injust” de Menorca" />
+            
+
+    
+        <meta property="og:description" content="Carme Gomila denuncia la pèrdua de connexions aèries durant l’hivern exigeix l’OSP Menorca-Barcelona, s’oposa a incrementar la capacitat turística de l’aeroport i exigeix una nova torre de control físicaMaó, 15 de novembre de 2026. ARAMÉS-Front Ampli ha reclamat avui matí, des de l’aeroport de Menorca, un canvi de prioritats en la política aeroportuària de l’Estat i ha defensat que les inversions previstes en aquesta infraestructura han de respondre a les necessitats de mobilitat dels residents i no a l’increment de l’activitat turística.La candidata al Congrés dels Diputats, Carme Gomila, ha ..." />
+    
+
+    
+
+    
+
+
+
+    
+        <meta property="og:image" content="https://media.timtul.com/media/web_mespermallorca/thumbails/2026.11.15_Foto_CG_Menorca_20261116135855_20261116135922.jpeg" />
+    
+	
+	<meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:title" content="ARAMÉS-Front Ampli reclama una millor connectivitat per acabar amb “l’aïllament injust” de Menorca" />
+    
+
+    
+        <meta name="twitter:description" content="Carme Gomila denuncia la pèrdua de connexions aèries durant l’hivern exigeix l’OSP Menorca-Barcelona, s’oposa a incrementar la capacitat turística de l’aeroport i exigeix una nova torre de control físicaMaó, 15 de novembre de 2026. ARAMÉS-Front Ampli ha reclamat avui matí, des de l’aeroport de Menorca, un canvi de prioritats en la política aeroportuària de l’Estat i ha defensat que les inversions previstes en aquesta infraestructura han de respondre a les necessitats de mobilitat dels residents i no a l’increment de l’activitat turística.La candidata al Congrés dels Diputats, Carme Gomila, ha ..." />
+    
+    
+	    <meta name="twitter:image" content="https://media.timtul.com/media/web_mespermallorca/thumbails/2026.11.15_Foto_CG_Menorca_20261116135855_20261116135922.jpeg" />
+    
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+
+        
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.4/purify.min.js"></script>
+
+        
+            <!--favicon-->
+<link rel="apple-touch-icon" sizes="180x180" href="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/apple-touch-icon_20210414084331.jpeg">
+<link rel="icon" type="image/png" sizes="32x32" href="https://media.timtul.com/media/web_mespermallorca/favicon-32x32_20210414084335.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://media.timtul.com/media/web_mespermallorca/favicon-16x16_20210414084334.png">
+<link rel="manifest" href="https://media.timtul.com/media/web_mespermallorca/site_20210414084338.webmanifest">
+<link rel="mask-icon" href="https://media.timtul.com/media/web_mespermallorca/safari-pinned-tab_20210414084336.svg" color="#adb500">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<!--font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
+<!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
+<!--<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">-->
+        
+
+
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" />
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" />
+        <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+
+        <link rel="stylesheet" href="/static/CACHE/css/6181943800a9.css" type="text/css" />
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+        <script type="text/javascript" src="/static/admin/js/i18n-periodpicker.js"></script>
+
+    </head>
+
+	<body class="body entry-arames-front-ampli-reclama-una-millor-connectivitat-per-acabar-amb-laillament-injust-de-menorca entry-15714 stream-noticies tag- tag- tag-carme-gomila tag-arames-frontampli nauth  domain-aramesfrontampli.cat ">
+
+		
+			<header style="padding-bottom: 31px;padding-top: 20px;z-index: 10;" class="region region-header  area-fixed-top"><div class="container-fluid"><div class="row widget-holder"><div class='widget widget-container ' data-widget-type='Container' style="border-bottom-width: 0px; padding: 10px 0px 0px; border-right-width: 0px;" ><div class='content'><div class='row'> <div class='first column col-sm-2' data-item='1'><div class='row widget-holder'><div style="padding: 0px 15px 0px 0px; margin-top: 0px; margin-bottom: 10px;" class="widget widget-simple-image logo-wrapper" >
+	<div class="content left">
+		<div class="frame " style="
+			
+			max-width:100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        <a  href="/inici/">
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/MES_Q_PARAULES_Mesa_de_trabajo_1_copia_20230313114712.jpeg" style="">
+        </a>
+      </div>
+    </div>
+	</div>
+</div>
+</div></div><div class='second column col-sm-8' data-item='2'><div class='row widget-holder'><div style="padding: 0px; border-right-width: 0px;" class="widget widget-menu   navbar-center" >
+	<div class="content">
+		<nav class="navbar navbar-default  tt_bg_transparent " role="navigation" id="header">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu_26ebff">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar top-bar"></span>
+						<span class="icon-bar middle-bar"></span>
+						<span class="icon-bar bottom-bar"></span>
+					</button>
+					<a href="#" class="logo menu-caption pull-left hidden-lg hidden-md hidden-sm">
+						
+						
+					</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="menu_26ebff">
+
+					<ul class="nav navbar-nav">
+					
+						
+							<li class=""><a href="/actualitat-2023/" class="">Actualitat</a></li>
+							
+						
+						
+							<li class=""><a href="/mes-per-mallorca/" class="">MÉS per Mallorca</a></li>
+							
+						
+						
+							<li class=""><a href="/institucions/" class="">Institucions</a></li>
+							
+						
+						
+							<li class=""><a href="https://mespermallorca.cat/transparencia1/" class="">Transparència</a></li>
+							
+						
+						
+							<li class=""><a href="/mesprimaries2026/" class="">Primàries 2026</a></li>
+							
+						
+						
+							<li class=""><a href="/lleidefosses/" class="">Llei de Fosses</a></li>
+							
+						
+						
+							<li class=""><a href="/sumat/" class="">Suma-t&#39;hi</a></li>
+							
+						
+						
+							<li class=""><a href="/contacte/" class="">Contacta</a></li>
+							
+						
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+</div>
+</div></div><div class='third column col-sm-2' data-item='3'><div class='row widget-holder'>
+
+
+<div class="widget widget-social-icons " style="padding: 15px;" >
+  <div class="content" style="text-align:right">
+    
+      
+        
+        <div class="icon-container" style="width:35px;">
+          <a href="https://twitter.com/MESperMallorca" target="_blank" style="inline-block">
+            <img src="https://aramesfrontampli.cat/static/img/social-icons/circle-line/twitter.png" style="width:30px;"/>
+          </a>
+        </div>
+        
+      
+
+      
+      
+        
+        <div class="icon-container" style="width:35px;">
+          <a href="http://www.facebook.com/mespermallorca" target="_blank" style="inline-block">
+            <img src="https://aramesfrontampli.cat/static/img/social-icons/circle-line/facebook.png" style="width:30px;"/>
+          </a>
+        </div>
+        
+      
+
+      
+      
+        
+        <div class="icon-container" style="width:35px;">
+          <a href="https://www.instagram.com/mespermallorca/" target="_blank">
+            <img src="https://aramesfrontampli.cat/static/img/social-icons/circle-line/instagram.png" style="width:30px;"/>
+          </a>
+        </div>
+        
+      
+
+      
+  </div>
+</div>
+</div></div> </div></div></div>
+
+
+<div style="padding: 15px 0px 15px 1px; width: auto; display: none;" class="col-sm-12 widget widget-login w-login " >
+  <div class="content">
+    
+        <a class="" href="/login" alt="login" title="login">
+            <span class="material-icons" style="font-size:38px;vertical-align: bottom">perm_identity</span>
+        </a>
+    
+  </div>
+</div></div></div></header><div class="region-container with-region-header-palma" style="margin-top: 0px; margin-bottom: 30px;"><div class="container-fluid"><div class="row"> <div style="" class="col-sm-12 region region-header-palma "><div class="row widget-holder"><div class='widget widget-container ' data-widget-type='Container' style="border-bottom-width: 0px; padding: 10px 0px 0px; border-right-width: 0px;" ><div class='content'><div class='row'> <div class='first column col-sm-2' data-item='1'><div class='row widget-holder'><div style="padding: 0px 15px 0px 0px; margin-top: 0px; margin-bottom: 10px;" class="widget widget-simple-image logo-wrapper" >
+	<div class="content left">
+		<div class="frame " style="
+			
+			max-width:100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        <a  href="https://mespermallorca.cat/inici-palma/">
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/Mes-Palma-logo_20260422100616.png" style="">
+        </a>
+      </div>
+    </div>
+	</div>
+</div>
+</div></div><div class='second column col-sm-8' data-item='2'><div class='row widget-holder'><div style="padding: 0px; border-right-width: 0px;" class="widget widget-menu   navbar-center" >
+	<div class="content">
+		<nav class="navbar navbar-default  tt_bg_transparent " role="navigation" id="header">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu_fda044">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar top-bar"></span>
+						<span class="icon-bar middle-bar"></span>
+						<span class="icon-bar bottom-bar"></span>
+					</button>
+					<a href="#" class="logo menu-caption pull-left hidden-lg hidden-md hidden-sm">
+						
+						
+					</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="menu_fda044">
+
+					<ul class="nav navbar-nav">
+					
+						
+							<li class=""><a href="/inici-palma/" class="">Inici</a></li>
+							
+						
+						
+							<li class=""><a href="/actualitat-palma/" class="">Actualitat</a></li>
+							
+						
+						
+							<li class=""><a href="/mes-per-palma/" class="">MÉS per Palma</a></li>
+							
+						
+						
+							<li class=""><a href="/regidors-palma/" class="">Regidors</a></li>
+							
+						
+						
+							<li class=""><a href="/programes-electorals-palma/" class="">Programes electorals</a></li>
+							
+						
+						
+							<li class=""><a href="/contacte-palma/" class="">Contacta</a></li>
+							
+						
+						
+							<li class=""><a href="https://mespermallorca.cat/sumat/" class="">Suma-t&#39;hi</a></li>
+							
+						
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+</div>
+</div></div><div class='third column col-sm-2' data-item='3'><div class='row widget-holder'>
+
+
+<div class="widget widget-social-icons " style="padding: 15px;" >
+  <div class="content" style="text-align:right">
+    
+      
+        
+        <div class="icon-container" style="width:35px;">
+          <a href="https://twitter.com/MESperMallorca" target="_blank" style="inline-block">
+            <img src="https://aramesfrontampli.cat/static/img/social-icons/circle-line/twitter.png" style="width:30px;"/>
+          </a>
+        </div>
+        
+      
+
+      
+      
+        
+        <div class="icon-container" style="width:35px;">
+          <a href="http://www.facebook.com/mespermallorca" target="_blank" style="inline-block">
+            <img src="https://aramesfrontampli.cat/static/img/social-icons/circle-line/facebook.png" style="width:30px;"/>
+          </a>
+        </div>
+        
+      
+
+      
+      
+        
+        <div class="icon-container" style="width:35px;">
+          <a href="https://www.instagram.com/mespermallorca/" target="_blank">
+            <img src="https://aramesfrontampli.cat/static/img/social-icons/circle-line/instagram.png" style="width:30px;"/>
+          </a>
+        </div>
+        
+      
+
+      
+  </div>
+</div>
+</div></div> </div></div></div>
+
+
+<div style="padding: 15px 0px 15px 1px; width: auto; display: none;" class="col-sm-12 widget widget-login w-login " >
+  <div class="content">
+    
+        <a class="" href="/login" alt="login" title="login">
+            <span class="material-icons" style="font-size:38px;vertical-align: bottom">perm_identity</span>
+        </a>
+    
+  </div>
+</div></div></div></div></div></div><div class="region-container with-region-content" style="padding-top:15px"><div class="container-fluid"><div class="row"> <div style="" class="col-sm-12 region region-content  overwrite"><div class="row widget-holder">
+
+
+
+<div style="padding: 15px;" class="widget widget-single-article public-article noticias-simple" >
+	<div class="content template-full-a">
+		
+			
+
+
+
+
+
+<div class="header">
+	<h2 class="title">ARAMÉS-Front Ampli reclama una millor connectivitat per acabar amb “l’aïllament injust” de Menorca</h2>
+	
+	<p class="author"> <a href="#">MÉS per Mallorca</a>, </p>
+	
+	<time class="date" datetime="15-11-2026 15:00">15 novembre 2026</time>
+</div>
+
+<div class="body">
+	
+	<div class="picture">
+		<img src="https://media.timtul.com/media/web_mespermallorca/thumbails/2026.11.15_Foto_CG_Menorca_20261116135855_20261116135922.jpeg" alt="" class="img-responsive" />
+        
+        <br>
+		
+		<div class="tags">
+		
+			 <span class="tag"><a href="/news/tag/aeroport-de-palma"></a></span>
+		
+			 <span class="tag"><a href="/news/tag/menorca"></a></span>
+		
+			 <span class="tag"><a href="/news/tag/carme-gomila">carme-gomila</a></span>
+		
+			 <span class="tag"><a href="/news/tag/arames-frontampli">arames-frontampli</a></span>
+		
+		</div>
+		
+
+	</div>
+
+
+	<div class="description fr-view">
+		<p><span style="font-family: Arial, sans-serif;"><em>Carme Gomila denuncia la pèrdua de connexions aèries durant l’hivern exigeix l’OSP Menorca-Barcelona, s’oposa a incrementar la capacitat turística de l’aeroport i exigeix una nova torre de control física</em></span></p><p><span><strong>Maó, 15 de novembre de 2026</strong>. </span>ARAMÉS-Front Ampli ha reclamat avui matí, des de l’aeroport de Menorca, un canvi de prioritats en la política aeroportuària de l’Estat i ha defensat que les inversions previstes en aquesta infraestructura han de respondre a les necessitats de mobilitat dels residents i no a l’increment de l’activitat turística.</p><p>La candidata al Congrés dels Diputats, Carme Gomila, ha exposat tres qüestions que considera fonamentals per al futur de l’aeroport: garantir una connectivitat adequada durant tot l’any, evitar una ampliació que incrementi la capacitat turística de Menorca i construir una nova torre de control física que garanteixi les condicions necessàries de seguretat i operativitat.</p><p><span style="color: rgb(19, 96, 109);"><strong>Menorca no pot quedar aïllada durant l'hivern</strong></span></p><p>Gomila ha alertat de la reducció de les connexions aèries amb Barcelona. Aquest hivern, entre novembre i març, Vueling ha programat un 17% menys de vols amb la capital catalana, una situació que implica menys freqüències, més dificultats per sortir de l'illa i preus més elevats per als residents.</p><p>La candidata ha denunciat que una companyia que té el monopoli de la connexió amb Barcelona durant els mesos d'hivern no pot decidir unilateralment les condicions de mobilitat dels menorquins. Per aquest motiu, ha reivindicat l'aplicació immediata de l'Obligació de Servei Públic (OSP).</p><p>En aquest sentit, també ha assenyalat les responsabilitats dels dos grans partits estatals: «El PP ha votat en contra d'aquesta reivindicació al Consell Insular, mentre que el PSOE, des del Ministeri, no ha defensat davant les institucions europees una solució que garanteixi aquesta connexió essencial».</p><p>A més, Gomila ha recordat que aquest hivern Menorca també ha perdut la connexió amb Bilbao i que encara no s'ha recuperat la ruta amb Màlaga, perduda el 2023.</p><p>«No podem continuar perdent connexions mentre cada vegada tenim més dificultats per entrar i sortir de Menorca. Necessitam un aeroport que connecti l'illa durant tot l'any, no una infraestructura pensada únicament per atendre l'arribada de visitants durant els mesos d'estiu», ha defensat.</p><p><span style="color: rgb(19, 96, 109);"><strong>170 milions d'euros que han de servir per millorar l'aeroport, no per incrementar la saturació turística</strong></span></p><p>Pel que fa a la planificació d'AENA i del Govern de l'Estat d'invertir 170 milions d'euros a l'aeroport de Menorca, Ara Més-Front Ampli ha expressat la seva preocupació perquè aquesta inversió pugui anar destinada a incrementar la capacitat de la infraestructura i facilitar nous rècords d'arribada de turistes.</p><p>Gomila ha estat contundent: «Menorca no necessita més capacitat turística ni més pressió durant els mesos d'estiu. Necessita que els doblers públics serveixin per resoldre les mancances que pateixen els residents».</p><p>En aquest sentit, ha defensat que les actuacions que es duguin a terme han de prioritzar la millora dels serveis, les instal·lacions i les infraestructures existents, inclòs l'aparcament, així com garantir una millor operativitat de l'aeroport.</p><p>«No es tracta d'invertir més per fer venir més turistes. Es tracta d'invertir millor per donar un millor servei als menorquins i menorquines. No podem acceptar que es destinin 170 milions d'euros a augmentar la capacitat turística mentre continuen sense resoldre's problemes tan importants com la connectivitat amb Barcelona», ha afirmat.</p><p><span style="color: rgb(19, 96, 109);"><strong>Una nova torre de control física per garantir la seguretat i l'operativitat</strong></span></p><p>Finalment, la candidata ha posat el focus en l'estat de la torre de control de l'aeroport de Menorca, que ha qualificat de preocupant. Gomila ha recordat que es tracta de la torre de control més antiga de l'Estat i ha denunciat les deficiències que presenta aquesta infraestructura.</p><p>Per això, Ara Més-Front Ampli exigeix la construcció d'una nova torre de control física. «No estam parlant d'una qüestió estètica ni d'una simple millora de les instal·lacions. Estam parlant de garantir les condicions necessàries per a l'operativitat de l'aeroport i la seguretat dels treballadors i treballadores que hi fan feina», ha remarcat.</p><p>Gomila ha considerat que Menorca mereix unes infraestructures aeroportuàries a l'altura de les seves necessitats i que la torre de control és una peça fonamental per garantir el bon funcionament de l'aeroport.</p><p>La candidata ha conclòs reivindicant un model aeroportuari que prioritzi els residents, garanteixi les connexions durant tot l'any, no contribueixi a incrementar la saturació turística i disposi de les infraestructures necessàries per funcionar amb garanties.</p><p>«Menorca no necessita un aeroport més gran per dur més turistes. Necessita un aeroport millor per viure bé aquí», ha conclòs.</p>
+	</div>
+	
+</div>
+
+
+            
+
+		
+	</div>
+
+<!-- -->
+
+</div>
+<div id="comparteix-lo" data-level=3 style="padding: 15px;width:auto;float:left;border:1px solid var(--rojo);margin:15px 0" class="widget widget-simple-title left h3-compartelo" >
+	<div class="content">
+		
+			<h3 class="tt_first_color"><span>Comparteix-lo!</span></h3>
+		
+	</div>
+</div>
+
+
+
+<div style="padding: 15px 15px 30px 15px;margin:0!important;width:auto;float:left" class="widget widget-social-share  square icon-md" >
+  <div class="content">
+    <div class="share-dock" style="text-align:center">
+      
+        <a role="button" title="facebook" class="share-button facebook popup" style="width:50px;" href="https://www.facebook.com/sharer.php?u=__socialUrl__">
+          <span class="icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+          </span>
+          <span class='sname'>
+            Share
+          </span>
+        </a>
+      
+        <a role="button" title="twitter" class="share-button twitter popup" style="width:50px;" href="https://twitter.com/intent/tweet?text=Mira%20esta%20noticia%20&amp;url=__socialUrl__">
+          <span class="icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-twitter-x" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/></svg>
+          </span>
+          <span class='sname'>
+            Tweet
+          </span>
+        </a>
+      
+        <a role="button" title="instagram" class="share-button instagram popup" style="width:50px;" href="">
+          <span class="icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </span>
+          <span class='sname'>
+            Share
+          </span>
+        </a>
+      
+        <a role="button" title="mail" class="share-button mail popup" style="width:50px;" href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site __socialUrl__">
+          <span class="icon-wrapper">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 21h-24v-18h24v18zm-23-16.477v15.477h22v-15.477l-10.999 10-11.001-10zm21.089-.523h-20.176l10.088 9.171 10.088-9.171z"/></svg>
+          </span>
+          <span class='sname'>
+            Mail
+          </span>
+        </a>
+      
+    </div>
+  </div>
+</div>
+</div></div></div></div></div><div class="region-container with-region-footer-palma" style="background-color: rgb(173, 181, 0);"><div class="container-fluid"><div class="row"> <div style="" class="col-sm-12 region region-footer-palma "><div class="row widget-holder"><div style="padding: 15px; width: auto;" class="widget widget-simple-image wsi-logo wsi-logo-footer" >
+	<div class="content left">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        <a  href="https://mespermallorca.cat/inici-palma/">
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/Mes-palma-blanc_20260422100616.png" style="">
+        </a>
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px; width: auto; text-align: center;" class="widget widget-cta center " >
+	<div class="content">
+		<a class="btn btn-lg tt_bg_transparent solid"
+		   href="/contacte/"
+			 style="border-radius:0px;  "
+       >
+			
+				
+					<span class="icon fa fa-pencil" aria-hidden="true"></span>
+				
+			
+		 	<span class="cta_label">Contacte</span>
+		</a>
+	</div>
+</div>
+<div style="padding: 15px; width: auto; text-align: center;" class="widget widget-cta center " >
+	<div class="content">
+		<a class="btn btn-lg tt_bg_transparent solid"
+		   href="/terms"
+			 style="border-radius:0px;  "
+       >
+			
+				
+					<span class="icon fa fa-bank" aria-hidden="true"></span>
+				
+			
+		 	<span class="cta_label">Avís legal</span>
+		</a>
+	</div>
+</div>
+<div style="padding: 15px; width: auto; text-align: center;" class="widget widget-cta center " >
+	<div class="content">
+		<a class="btn btn-lg tt_bg_transparent solid"
+		   href="/privacy-policy"
+			 style="border-radius:0px;  "
+       >
+			
+				
+					<span class="icon fa fa-balance-scale" aria-hidden="true"></span>
+				
+			
+		 	<span class="cta_label">Política de privacitat</span>
+		</a>
+	</div>
+</div>
+</div></div></div></div></div><footer style="" class="region region-footer "><div class="container-fluid"><div class="row widget-holder"><div style="padding: 15px; width: auto;" class="widget widget-simple-image wsi-logo wsi-logo-footer" >
+	<div class="content left">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        <a  href="/inici/">
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/logomes1tinta_20220630084859.png" style="">
+        </a>
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px; width: auto; text-align: center;" class="widget widget-cta center " >
+	<div class="content">
+		<a class="btn btn-lg tt_bg_transparent solid"
+		   href="/contacte/"
+			 style="border-radius:0px;  "
+       >
+			
+				
+					<span class="icon fa fa-pencil" aria-hidden="true"></span>
+				
+			
+		 	<span class="cta_label">Contacte</span>
+		</a>
+	</div>
+</div>
+<div style="padding: 15px; width: auto; text-align: center;" class="widget widget-cta center " >
+	<div class="content">
+		<a class="btn btn-lg tt_bg_transparent solid"
+		   href="/terms"
+			 style="border-radius:0px;  "
+       >
+			
+				
+					<span class="icon fa fa-bank" aria-hidden="true"></span>
+				
+			
+		 	<span class="cta_label">Avís legal</span>
+		</a>
+	</div>
+</div>
+<div style="padding: 15px; width: auto; text-align: center;" class="widget widget-cta center " >
+	<div class="content">
+		<a class="btn btn-lg tt_bg_transparent solid"
+		   href="/privacy-policy"
+			 style="border-radius:0px;  "
+       >
+			
+				
+					<span class="icon fa fa-balance-scale" aria-hidden="true"></span>
+				
+			
+		 	<span class="cta_label">Política de privacitat</span>
+		</a>
+	</div>
+</div>
+</div></div></footer>
+		
+
+		<div class="modal fade " id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header" style="border-bottom:0px;">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					</div>
+					<div class="modal-body loginmodal-container"></div>
+				</div>
+			</div>
+		</div>
+
+        
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+		<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyDy1VHmammkUWKVSOuwnFHz-kqFeqeSMII&language=ca&libraries=places"></script>
+
+        <script type="text/javascript" src="/static/admin/js/jquery.locationpicker.js"></script>
+
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+        
+            <script type="text/javascript" src="https://js.stripe.com/v3/"></script>
+        
+
+    	<script
+                
+                    type="text/plain"
+                    data-type="text/javascript"
+                    data-name="google"
+                    data-src="https://www.google.com/recaptcha/api.js?onload=tt_recaptcha&render=explicit"
+                
+                async defer
+        ></script>
+
+		<script type="text/javascript" src="/static/CACHE/js/444b2f37bdbe.js"></script>
+
+		
+		<script
+                
+            type="text/plain"
+            data-type="text/javascript"
+            data-name="google"
+            
+        >
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-36819330-2', 'auto');
+			ga('send', 'pageview');
+		</script>
+		
+    
+	<a class="cookie-button-consent"  onclick="return klaro.show();">Modificar cookies</a>
+	
+
+    
+	</body>
+
+</html>

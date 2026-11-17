@@ -1,364 +1,75 @@
 {
  "partido": "eh_bildu",
- "base": "compromisos",
+ "base": "complemento",
  "modelo": "Claude (Anthropic)",
- "fecha": "2026-11-12",
- "nota": "EH Bildu no había publicado programa para el 29-N a 12-nov-2026 (data/partidos/partidos.json, comprobado el 12-nov). Se recogen los compromisos concretos de sus líderes (Oskar Matute, cabeza de lista por Bizkaia y portavoz en el Congreso; Oihana Etxebarrieta, cabeza de lista por Gipuzkoa; Laura Aznal, portavoz en el Parlamento de Navarra) y de las notas oficiales del partido desde la convocatoria (6-oct-2026). En la presentación de campaña (8-nov) el partido solo enumeró temas (vivienda, coste de la vida, salarios, pensiones, servicios públicos). Se encontraron cinco compromisos concretos y verificables; los cinco son prioridades (el quinto, eh_bildu-c05, se añadió en la auditoría de coherencia del 12-nov por la noche, al localizar la crónica de Europa Press que concreta la prohibición de compra). Donde un compromiso remite a una norma ya conocida (el Real Decreto-ley 28/2026 de prórroga de los alquileres, la proposición de ley sobre plataformas de alquiler turístico o el acuerdo de 2024 sobre la ley de seguridad ciudadana), las notas de esa norma figuran en «veces» como definición del instrumento, no como ocasiones de campaña. [Actualización 14-11-2026] Nueva búsqueda (hasta el 14-11, 10:45): se añade eh_bildu-c06 (límites a los precios de los productos básicos, energía y alimentos; Eneka Maiz, cabeza de lista por Nafarroa, y EH Bildu Nafarroa en X, 13-11), que resuelve el motivo del descarte anterior (sin instrumento) para esa formulación; es la sexta prioridad, la más débil. Siguen siendo menos de 12 porque no se han encontrado más compromisos concretos verificables. Revisado y aprobado el 14-11-2026 (revision.json); en la misma revisión se añaden ocasiones del 13-nov a eh_bildu-c01 y eh_bildu-c04.",
- "compromisos": [
+ "fecha": "2026-11-16",
+ "prompt": "docs/prompts/1b_seleccion_compromisos.md (sección «Partidos con programa: complemento»)",
+ "nota": "Compromisos de dirigentes de EH Bildu que no figuran en el programa «Posible Egin. Garantía y derechos» publicado el 16-nov (data/sources/programas/eh_bildu/posibleegin-programa-cas.txt, páginas del PDF de 30 págs.) y que el partido presenta como importantes; complementarían las 12 prioridades del programa (data/programas/eh_bildu/evaluacion.json). Hasta el 16-nov esta carpeta tenía base «compromisos» (seis prioridades evaluadas y revisadas el 12 y el 14-nov); al publicarse el programa, las seis están en él, a veces con otras palabras o concretadas, y pasan a «descartados». Por eso «compromisos» y «prioridades» están vacíos y no hay evaluación (prompt 1b). Cada compromiso se buscó en las 179 medidas de data/programas/eh_bildu/extraccion.json y en el texto completo del programa, por sus términos y por sinónimos, con el criterio de las revisiones de Vox, Compromís, PSOE y Frente Amplio: si falta el rasgo que define el compromiso, va al complemento; si falta un elemento accesorio (plazo, nombre de la norma) o el programa lo concreta, se descarta. Nota anterior (base «compromisos», 12 y 14-nov): EH Bildu no había publicado programa para el 29-N a 12-nov-2026 (data/partidos/partidos.json, comprobado el 12-nov). Se recogen los compromisos concretos de sus líderes (Oskar Matute, cabeza de lista por Bizkaia y portavoz en el Congreso; Oihana Etxebarrieta, cabeza de lista por Gipuzkoa; Laura Aznal, portavoz en el Parlamento de Navarra) y de las notas oficiales del partido desde la convocatoria (6-oct-2026). En la presentación de campaña (8-nov) el partido solo enumeró temas (vivienda, coste de la vida, salarios, pensiones, servicios públicos). Se encontraron cinco compromisos concretos y verificables; los cinco son prioridades (el quinto, eh_bildu-c05, se añadió en la auditoría de coherencia del 12-nov por la noche, al localizar la crónica de Europa Press que concreta la prohibición de compra). Donde un compromiso remite a una norma ya conocida (el Real Decreto-ley 28/2026 de prórroga de los alquileres, la proposición de ley sobre plataformas de alquiler turístico o el acuerdo de 2024 sobre la ley de seguridad ciudadana), las notas de esa norma figuran en «veces» como definición del instrumento, no como ocasiones de campaña. [Actualización 14-11-2026] Nueva búsqueda (hasta el 14-11, 10:45): se añade eh_bildu-c06 (límites a los precios de los productos básicos, energía y alimentos; Eneka Maiz, cabeza de lista por Nafarroa, y EH Bildu Nafarroa en X, 13-11), que resuelve el motivo del descarte anterior (sin instrumento) para esa formulación; es la sexta prioridad, la más débil. Siguen siendo menos de 12 porque no se han encontrado más compromisos concretos verificables. Revisado y aprobado el 14-11-2026 (revision.json); en la misma revisión se añaden ocasiones del 13-nov a eh_bildu-c01 y eh_bildu-c04.",
+ "compromisos": [],
+ "prioridades": [],
+ "no_priorizados": [],
+ "nota_prioridades": "Ninguna prioridad: los seis compromisos evaluados con base «compromisos» están en el programa del 16-nov y pasan a «descartados»: la prórroga automática de los alquileres (eh_bildu-c01), la derogación de la ley mordaza (c02, con la misma proposición de ley), la ley contra los pisos turísticos ilegales en plataformas (c03), el salario mínimo propio (c04, concretado en la reforma del Estatuto de los Trabajadores), la prohibición de compra a fondos, empresas y grandes tenedores (c05) y los límites a los precios de la energía y los alimentos básicos (c06, concretados en límites temporales en situaciones de crisis). c02 y c03 no son prioridades del programa, pero el criterio del complemento es que el compromiso no figure en él, no que sea prioridad.",
+ "descartados": [
   {
    "id": "eh_bildu-c01",
-   "area": "vivienda",
-   "resumen": "Recuperar la prórroga obligatoria y sucesiva de los contratos de alquiler de vivienda habitual que preveía el Real Decreto-ley 28/2026, como primera iniciativa de EH Bildu en el nuevo Congreso.",
-   "cita": "La primera iniciativa que llevaremos al Congreso será no solo recuperar la prórroga automática de los contratos que las derechas tumbarán esta semana en el Congreso, sino que además plantearemos acabar con la compra especulativa de vivienda",
+   "tema": "Recuperar la prórroga obligatoria y sucesiva de los contratos de alquiler de vivienda habitual que preveía el Real Decreto-ley 28/2026, como primera iniciativa de EH Bildu en el nuevo Congreso.",
    "quien": "Oskar Matute (cabeza de lista de EH Bildu al Congreso por Bizkaia)",
-   "formato": "conferencia en el Nueva Economía Fórum-Fórum Europa, recogida en nota de prensa del partido",
    "fecha": "2026-11-09",
    "url": "https://ehbildu.eus/es/noticias/eh-bildu-anuncia-que-planteara-recuperar-la-prorroga-automatica-de-los-contratos-de-alquiler-y-acabar-con-la-compra-especulativa-de-vivienda",
-   "medio": "EH Bildu (nota de prensa)",
    "fuente_local": "data/sources/compromisos/eh_bildu/ehb_forum_20261109.txt",
-   "cuantificado": true,
-   "nota": "«La prórroga automática de los contratos que las derechas tumbarán esta semana» es el Real Decreto-ley 28/2026, que la Diputación Permanente rechazó el 12-nov: prórroga tácita y obligatoria por plazos sucesivos de cinco años (siete si el arrendador es persona jurídica), salvo preaviso del arrendador, que debe indemnizar al inquilino con al menos doce mensualidades. La segunda parte de la cita («acabar con la compra especulativa») se descarta por no definir medida (véase «descartados»).",
-   "veces": {
-    "n": 4,
-    "nota": "Incluida la cita principal (Fórum Europa, 9-nov): 7-nov, 9-nov, 12-nov y 13-nov (elDiario.es).",
-    "ocasiones": [
-     {
-      "fecha": "2026-11-07",
-      "ocasion": "entrevista de Matute en Público (pide apoyar el decreto «que plantea una medida estructural como es la de la permanencia larga de los contratos»)",
-      "url": "https://www.publico.es/politica/partidos/izquierda-lucha-cosa-circulo-intelectuales.html",
-      "medio": "Público",
-      "fuente_local": "data/sources/compromisos/eh_bildu/publico_matute_20261107.txt",
-      "cita": "especialmente, al que plantea una medida estructural como es la de la permanencia larga de los contratos",
-      "sha256": "063c4a5a3888c9975f0f8e9e3bd7accc454e726f3d5f391f8e6e47d155dc17b4",
-      "cuenta": true,
-      "nota_revision": "entrevista en Público, 7-nov"
-     },
-     {
-      "fecha": "2026-11-12",
-      "ocasion": "votación del Real Decreto-ley 28/2026 en la Diputación Permanente: Matute ratifica el apoyo de EH Bildu",
-      "url": "https://www.naiz.eus/es/info/noticia/20261112/decretos-de-vivienda-el-congreso-aprueba-uno-y-rechaza-el-otro-por-el-voto-del-pnv",
-      "medio": "Naiz",
-      "fuente_local": "data/sources/compromisos/eh_bildu/naiz_decretos_20261112.txt",
-      "cita": "El portavoz de EH Bildu, Oskar Matute, ha ratificado el apoyo de su formación a ambas iniciativas",
-      "sha256": "0cbfd6d713cbbeff0a479f548b30fe885737aa9dbbee4d7d08f07784ebd34254",
-      "cuenta": true,
-      "nota_revision": "votación en la Diputación Permanente, 12-nov"
-     },
-     {
-      "fecha": "2026-11-12",
-      "ocasion": "reunión pública con LAB (nota oficial; con Oihana Etxebarrieta, cabeza de lista por Gipuzkoa)",
-      "url": "https://ehbildu.eus/es/noticias/eh-bildu-y-lab-hacen-un-llamamiento-a-garantizar-una-vivienda-digna-y-unos-salarios-dignos-y-a-hacer-frente-a-la-extrema-derecha",
-      "medio": "EH Bildu (nota de prensa)",
-      "fuente_local": "data/sources/compromisos/eh_bildu/ehb_lab_20261112.txt",
-      "cita": "bajar los precios de los alquileres, garantizar la estabilidad de los inquilinos",
-      "sha256": "a180fc4d6f966b6f351ff6bb2d135085935f2f5ca7cc3777d3ee0099a5144a75",
-      "cuenta": false,
-      "nota_revision": "objetivo genérico («garantizar la estabilidad de los inquilinos»), sin la prórroga"
-     },
-     {
-      "fecha": "2026-11-13",
-      "ocasion": "entrevista de Oskar Matute en elDiario.es: describe lo que planteaba el segundo decreto de vivienda («que algunos partidos han tumbado»)",
-      "url": "https://www.eldiario.es/euskadi/oskar-matute-eh-bildu-aspira-parte-imprescindible-dique-contencion-ola-reaccionaria-pp-vox_128_13657793.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/eh_bildu/eldiario_matute_20261113_entrevista.txt",
-      "cita": "hagamos que los contratos de alquiler tiendan a lo indefinido, como pasa con los contratos laborales, por cierto. Pero estableciendo cláusulas de descuelgue para el propietario.",
-      "sha256": "90160ade2edf28904f4ae8fdd624c509497720339e294d12a1ad0b841c57fbd8",
-      "cuenta": true,
-      "nota_revision": "entrevista en elDiario.es, 13-nov; defiende el contenido del decreto y, a la pregunta «¿Intentarán que se apruebe en la próxima legislatura?», responde «Claro»"
-     }
-    ]
-   },
-   "sha256": "120c63ba5da97d416c30a2d43b8241ffeaf0854754f3fd766d036258668aee46"
+   "sha256": "120c63ba5da97d416c30a2d43b8241ffeaf0854754f3fd766d036258668aee46",
+   "motivo": "Ya está en el programa: «Establecer contratos de arrendamiento ordinarios con prórroga automática» (eb-p001, p. 5). El programa no remite al Real Decreto-ley 28/2026 ni fija la duración de las prórrogas ni la indemnización al inquilino, elementos accesorios del compromiso; el rasgo que lo define, la prórroga automática de los contratos de vivienda habitual, está. Se evalúa en la prioridad eh_bildu-01 del programa, junto con el tope del 2 % a la actualización de la renta."
   },
   {
    "id": "eh_bildu-c02",
-   "area": "justicia e instituciones",
-   "resumen": "Derogar la Ley Orgánica 4/2015 de protección de la seguridad ciudadana («ley mordaza») o, al menos, sus elementos que EH Bildu considera lesivos (devoluciones en frontera, pelotas de goma, sanciones por faltas de respeto y desobediencia), al inicio de la legislatura.",
-   "cita": "dimos la palabra a la sociedad vasca de que íbamos a trabajar para que se derogue la ley mordaza, algo que es una asignatura pendiente que vamos a poner encima de la mesa tan pronto se constituyan las nuevas cámaras",
+   "tema": "Derogar la Ley Orgánica 4/2015 de protección de la seguridad ciudadana («ley mordaza») o, al menos, sus elementos que EH Bildu considera lesivos (devoluciones en frontera, pelotas de goma, sanciones por faltas de respeto y desobediencia), al inicio de la legislatura.",
    "quien": "Oskar Matute (cabeza de lista de EH Bildu al Congreso por Bizkaia)",
-   "formato": "entrevista",
    "fecha": "2026-11-07",
    "url": "https://www.publico.es/politica/partidos/izquierda-lucha-cosa-circulo-intelectuales.html",
-   "medio": "Público",
    "fuente_local": "data/sources/compromisos/eh_bildu/publico_matute_20261107.txt",
-   "cuantificado": true,
-   "nota": "En la misma respuesta Matute habla de una derogación «en su integridad o en aquellos elementos que se consideraban como lesivos». El plazo («tan pronto se constituyan las nuevas cámaras») es la cuantificación.",
-   "veces": {
-    "n": 1,
-    "nota": "Una ocasión de campaña: entrevista en Público (7-nov).",
-    "ocasiones": [
-     {
-      "fecha": "2024-10-03",
-      "ocasion": "anterior a la convocatoria: acuerdo de EH Bildu con el Gobierno sobre los cuatro puntos pendientes de la reforma (define el contenido que el partido considera lesivo)",
-      "url": "https://ehbildu.eus/herriak/kongresua-senatua/es/noticias/eh-bildu-acuerda-con-el-gobierno-espanol-acabar-con-la-ley-mordaza",
-      "medio": "EH Bildu (nota de prensa)",
-      "fuente_local": "data/sources/compromisos/eh_bildu/ehb_mordaza_acuerdo.txt",
-      "cita": "como son las faltas de respeto, la desobediencia, las pelotas de goma y las devoluciones en frontera",
-      "sha256": "ffe6ddca09c8ec12ec35e54b50106fd88baffd83d1e70d7721ae59a2f795fdf5",
-      "cuenta": false,
-      "nota_revision": "anterior a la convocatoria: define el contenido"
-     }
-    ]
-   },
-   "sha256": "063c4a5a3888c9975f0f8e9e3bd7accc454e726f3d5f391f8e6e47d155dc17b4"
+   "sha256": "063c4a5a3888c9975f0f8e9e3bd7accc454e726f3d5f391f8e6e47d155dc17b4",
+   "motivo": "Ya está en el programa, con más detalle: «Volveremos a presentar la Proposición de Ley de Protección de las Libertades y Seguridad Ciudadana para acabar con la Ley Mordaza», basada en el acuerdo que EH Bildu logró «hace dos años», con las pelotas de goma, las sanciones por interpretaciones policiales subjetivas, la desobediencia y la Ley de Extranjería (eb-p141 a eb-p145, p. 22). El programa no fija el momento («tan pronto se constituyan las nuevas cámaras»), un elemento accesorio. No es prioridad del programa (ver extraccion.json)."
   },
   {
    "id": "eh_bildu-c03",
-   "area": "vivienda",
-   "resumen": "Volver a impulsar la ley de EH Bildu que hace a las plataformas digitales responsables de no anunciar ni contratar alojamientos turísticos sin registro o licencia válida, con un régimen sancionador.",
-   "cita": "La legislatura cayó cuando estábamos ya en la última fase de negociación con los partidos con los que queríamos contar para sacar la ley adelante. [...] Ha sido una lástima, pero nosotros vamos a seguir insistiendo.",
+   "tema": "Volver a impulsar la ley de EH Bildu que hace a las plataformas digitales responsables de no anunciar ni contratar alojamientos turísticos sin registro o licencia válida, con un régimen sancionador.",
    "quien": "Oskar Matute (cabeza de lista de EH Bildu al Congreso por Bizkaia)",
-   "formato": "entrevista (respuesta a una pregunta sobre la propuesta de EH Bildu para impedir que las plataformas oferten pisos turísticos ilegales)",
    "fecha": "2026-11-07",
    "url": "https://www.publico.es/politica/partidos/izquierda-lucha-cosa-circulo-intelectuales.html",
-   "medio": "Público",
    "fuente_local": "data/sources/compromisos/eh_bildu/publico_matute_20261107.txt",
-   "cuantificado": false,
-   "veces": {
-    "n": 1,
-    "nota": "Una ocasión de campaña: entrevista en Público (7-nov).",
-    "ocasiones": [
-     {
-      "fecha": "2025-07-20",
-      "ocasion": "anterior a la convocatoria: EH Bildu registra la proposición de ley (define el instrumento)",
-      "url": "https://ehbildu.eus/herriak/kongresua-senatua/es/noticias/eh-bildu-presenta-en-el-congreso-una-ley-para-prohibir-a-las-plataformas-anunciar-y-contratar-alojamientos-turisticos-ilegales",
-      "medio": "EH Bildu (nota de prensa)",
-      "fuente_local": "data/sources/compromisos/eh_bildu/ehb_ley_plataformas_presenta.txt",
-      "cita": "las plataformas digitales serán legalmente responsables de que los alojamientos anunciados cuenten con registro o licencia válida",
-      "sha256": "e723f22d441dd28317e3b1aeaa41a2110441cadeee583c1435ca37c396c82a20",
-      "cuenta": false,
-      "nota_revision": "anterior a la convocatoria: define el instrumento"
-     },
-     {
-      "fecha": "2025-10-07",
-      "ocasion": "anterior a la convocatoria: el Pleno del Congreso toma en consideración la proposición (176 votos a favor, 169 en contra)",
-      "url": "https://ehbildu.eus/herriak/kongresua-senatua/es/noticias/eh-bildu-logra-el-apoyo-mayoritario-del-congreso-para-iniciar-la-tramitacion-de-la-ley-para-prohibir-a-las-plataformas-anunciar-y-contratar-pisos-turisticos-ilegales",
-      "medio": "EH Bildu (nota de prensa)",
-      "fuente_local": "data/sources/compromisos/eh_bildu/ehb_ley_plataformas_toma.txt",
-      "cita": "176 diputados han votado a favor de la iniciativa, y 169 en contra",
-      "sha256": "b674521c831267d4bacae8eb18d5e493b44a70afe66792fc4c1cb383d62ccc3a",
-      "cuenta": false,
-      "nota_revision": "anterior a la convocatoria"
-     }
-    ]
-   },
-   "sha256": "063c4a5a3888c9975f0f8e9e3bd7accc454e726f3d5f391f8e6e47d155dc17b4"
+   "sha256": "063c4a5a3888c9975f0f8e9e3bd7accc454e726f3d5f391f8e6e47d155dc17b4",
+   "motivo": "Ya está en el programa, con el mismo instrumento: «Presentaremos de nuevo la Proposición de Ley para prohibir la publicidad y contratación de pisos turísticos ilegales por parte de las plataformas digitales» (eb-p004, p. 5). No es prioridad del programa (ver extraccion.json)."
   },
   {
    "id": "eh_bildu-c04",
-   "area": "empleo",
-   "resumen": "Un salario mínimo propio para el País Vasco y Navarra, distinto del estatal.",
-   "cita": "Ambos han ratificado las dos principales reivindicaciones de la huelga: el salario mínimo propio, también reivindicado en la huelga general del 17 de marzo, y las transformaciones estructurales para garantizar el derecho a la vivienda.",
+   "tema": "Un salario mínimo propio para el País Vasco y Navarra, distinto del estatal.",
    "quien": "EH Bildu (nota oficial de la reunión con LAB, con Oihana Etxebarrieta, cabeza de lista por Gipuzkoa, y Arkaitz Rodríguez, secretario de Acción Política)",
-   "formato": "documento oficial (nota de prensa)",
    "fecha": "2026-11-12",
    "url": "https://ehbildu.eus/es/noticias/eh-bildu-y-lab-hacen-un-llamamiento-a-garantizar-una-vivienda-digna-y-unos-salarios-dignos-y-a-hacer-frente-a-la-extrema-derecha",
-   "medio": "EH Bildu (nota de prensa)",
    "fuente_local": "data/sources/compromisos/eh_bildu/ehb_lab_20261112.txt",
-   "cuantificado": false,
-   "veces": {
-    "n": 6,
-    "nota": "Incluida la cita principal (nota del 12-nov): 22-oct, 12-nov y cuatro ocasiones del 13-nov (actos de Mercabilbao, Iruñea e Irun, la misma acción de campaña en tres territorios, y entrevista de Matute en elDiario.es). La de Irun es una nota oficial de EH Bildu Gipuzkoa (documento del partido); su portavoz, Ane Unanue, es candidata, no cabeza de lista.",
-    "ocasiones": [
-     {
-      "fecha": "2026-10-22",
-      "ocasion": "Laura Aznal, portavoz de EH Bildu en el Parlamento de Navarra, al llamar a la huelga del 11-nov",
-      "url": "https://ehbildu.eus/herriak/nafarroa/es/noticias/eh-bildu-llama-a-la-unirse-a-la-huelga-del-11n-para-garantizar-el-acceso-a-la-vivienda-digna",
-      "medio": "EH Bildu (nota de prensa)",
-      "fuente_local": "data/sources/compromisos/eh_bildu/ehb_huelga_11n.txt",
-      "cita": "reivindicar de nuevo un SMI propio para Navarra que proteja el poder adquisitivo de las personas trabajadoras de Navarra",
-      "sha256": "9baedaf059110193ea8abf3b18392fb5129a3e99be0fca8738ebbdf8f581b73c",
-      "cuenta": true,
-      "nota_revision": "Laura Aznal, 22-oct"
-     },
-     {
-      "fecha": "2026-11-13",
-      "ocasion": "acto en Mercabilbao (Basauri) con Oskar Matute e Idurre Bideguren, cabezas de lista al Congreso y al Senado por Bizkaia; nota oficial («las medidas que la formación propondrá en ambas cámaras»)",
-      "url": "https://ehbildu.eus/es/noticias/eh-bildu-propone-un-smi-propio-adaptado-al-coste-de-vida-de-euskal-herria-para-garantizar-salarios-dignos-y-aliviar-la-economia-de-las-familias-vascas",
-      "medio": "EH Bildu (nota de prensa)",
-      "fuente_local": "data/sources/compromisos/eh_bildu/ehbildu_20261113_smi_propio.txt",
-      "cita": "nos comprometemos a trabajar con ambición y responsabilidad para hacerle frente, comenzando por establecer un SMI propio y adaptado a nuestro coste de vida que permita asegurar una vida digna para todos y todas",
-      "sha256": "88d4ce0ffaf7468fb329ef4bd30b53b4e4b001c059001804671dc375715ecb9c",
-      "cuenta": true,
-      "nota_revision": "Idurre Bideguren (cabeza de lista al Senado por Bizkaia), 13-nov"
-     },
-     {
-      "fecha": "2026-11-13",
-      "ocasion": "acto de campaña en Iruñea, publicación de Eneka Maiz (cabeza de lista al Congreso por Nafarroa) en X",
-      "url": "https://www.noticiasdenavarra.com/politica/2026/11/13/eh-bildu-propone-salario-minimo-navarra-11754981.html",
-      "medio": "Noticias de Navarra",
-      "fuente_local": "data/sources/compromisos/eh_bildu/noticiasdenavarra_maiz_20261113_smi_precios.txt",
-      "cita": "Nafarroan gutxieneko soldata propioa eta oinarrizko produktuen prezioei mugak jartzea behar dugu.",
-      "cita_traduccion": "En Navarra necesitamos un salario mínimo propio y poner límites a los precios de los productos básicos.",
-      "sha256": "edcff21ba6504625214974f6dbd50be3d13f692883585171dcf1e47a9b0e29d2",
-      "cuenta": true,
-      "nota_revision": "Eneka Maiz, 13-nov"
-     },
-     {
-      "fecha": "2026-11-13",
-      "ocasion": "acto en el centro comercial Txingudi (Irun) con Ane Unanue, candidata al Congreso por Gipuzkoa; nota oficial de EH Bildu Gipuzkoa",
-      "url": "https://ehbildu.eus/herriak/gipuzkoa/es/noticias/eh-bildu-ha-afirmado-que-es-hora-de-garantizar-unos-salarios-dignos-y-unas-vidas-accesibles",
-      "medio": "EH Bildu Gipuzkoa (nota de prensa)",
-      "fuente_local": "data/sources/compromisos/eh_bildu/ehbildu_gipuzkoa_20261113_unanue_smi.txt",
-      "cita": "La formación soberanista se ha comprometido a establecer un salario mínimo interprofesional propio",
-      "sha256": "ec6b2f11cc2fb1f1dbfb4f619567c8177f99e0158fa1804d75be698a56c885f4",
-      "cuenta": true,
-      "nota_revision": "documento oficial del partido (13-nov); la portavoz no es cabeza de lista"
-     },
-     {
-      "fecha": "2026-11-13",
-      "ocasion": "entrevista de Oskar Matute en elDiario.es: a la pregunta de si buscarán modificar el Estatuto de los Trabajadores en el Congreso, responde «Sí, esa es una de las vías»",
-      "url": "https://www.eldiario.es/euskadi/oskar-matute-eh-bildu-aspira-parte-imprescindible-dique-contencion-ola-reaccionaria-pp-vox_128_13657793.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/eh_bildu/eldiario_matute_20261113_entrevista.txt",
-      "cita": "aceptamos que haya un salario mínimo interprofesional común o conjunto [...] Pero que, a partir de ahí, se posibilite y se faculte para que ese salario mínimo interprofesional base o de suelo pueda ser implementado o elevado en aquellos lugares donde la realidad socioeconómica demuestre que el coste de la vida es más alto.",
-      "sha256": "90160ade2edf28904f4ae8fdd624c509497720339e294d12a1ad0b841c57fbd8",
-      "cuenta": true,
-      "nota_revision": "Matute, entrevista publicada el 13-nov"
-     }
-    ]
-   },
-   "sha256": "a180fc4d6f966b6f351ff6bb2d135085935f2f5ca7cc3777d3ee0099a5144a75"
+   "sha256": "a180fc4d6f966b6f351ff6bb2d135085935f2f5ca7cc3777d3ee0099a5144a75",
+   "motivo": "Ya está en el programa y lo concreta: modificar el Estatuto de los Trabajadores para que las comunidades autónomas puedan fijar su propio salario mínimo, con el estatal como mínimo indisponible (eb-p013, p. 6), la vía que Matute apuntaba el 13-nov. Se evalúa en la prioridad eh_bildu-05 del programa."
   },
   {
    "id": "eh_bildu-c05",
-   "area": "vivienda",
-   "resumen": "Prohibir la compra de vivienda a fondos, empresas y grandes tenedores, y la compra de edificios enteros que no se destinen a alquiler regulado por los índices de precios.",
-   "cita": "acabar con la compra especulativa de vivienda, prohibiendo la compra a los fondos, empresas y grandes tenedores, y también la adquisición de edificios enteros que no sean destinados a un alquiler regulado mediante los índices de precios",
+   "tema": "Prohibir la compra de vivienda a fondos, empresas y grandes tenedores, y la compra de edificios enteros que no se destinen a alquiler regulado por los índices de precios.",
    "quien": "Oskar Matute (cabeza de lista de EH Bildu al Congreso por Bizkaia)",
-   "formato": "conferencia en el Nueva Economía Fórum-Fórum Europa (Bilbao), recogida por Europa Press",
    "fecha": "2026-11-09",
    "url": "https://www.ultimahora.es/noticias/comunidades/2026/11/09/2746167/bildu-trabajara-por-prorroga-alquileres-derechas-tumbaran-advierte-respuesta-rotunda-11n.html",
-   "medio": "Última Hora (Europa Press)",
    "fuente_local": "data/sources/compromisos/eh_bildu/ultimahora_ep_forum_20261109.txt",
-   "cuantificado": false,
-   "nota": "La crónica de Europa Press entrecomilla las palabras de Matute. El anuncio en primera persona («plantearemos acabar con la compra especulativa de vivienda») figura en la nota del partido sobre el mismo acto, que no decía a quién se aplicaría la prohibición; por eso se había descartado. «Gran tenedor» lo define la Ley 12/2023 (art. 3.k): titular de más de diez inmuebles urbanos de uso residencial o de más de 1.500 m² de uso residencial, o de cinco o más en una zona tensionada si la comunidad autónoma lo motiva. Matute no dice si la prohibición sería indefinida ni qué excepciones tendría.",
-   "veces": {
-    "n": 1,
-    "nota": "Una ocasión: el Fórum Europa (9-nov), que recogen Europa Press y la nota del partido. La nota con LAB (12-nov) solo habla de «prohibir el uso especulativo de la vivienda», sin la medida.",
-    "ocasiones": [
-     {
-      "fecha": "2026-11-09",
-      "ocasion": "Fórum Europa (Bilbao), crónica de Europa Press",
-      "url": "https://www.ultimahora.es/noticias/comunidades/2026/11/09/2746167/bildu-trabajara-por-prorroga-alquileres-derechas-tumbaran-advierte-respuesta-rotunda-11n.html",
-      "medio": "Última Hora (Europa Press)",
-      "fuente_local": "data/sources/compromisos/eh_bildu/ultimahora_ep_forum_20261109.txt",
-      "cita": "prohibiendo la compra a los fondos, empresas y grandes tenedores",
-      "sha256": "bf136f444978ee92c7361374272086526e56a98ef8f3aa8715c825120f84238d",
-      "cuenta": true,
-      "nota_revision": "cita principal"
-     },
-     {
-      "fecha": "2026-11-09",
-      "ocasion": "mismo acto, nota de prensa del partido (anuncio en primera persona, sin definir la prohibición)",
-      "url": "https://ehbildu.eus/es/noticias/eh-bildu-anuncia-que-planteara-recuperar-la-prorroga-automatica-de-los-contratos-de-alquiler-y-acabar-con-la-compra-especulativa-de-vivienda",
-      "medio": "EH Bildu (nota de prensa)",
-      "fuente_local": "data/sources/compromisos/eh_bildu/ehb_forum_20261109.txt",
-      "cita": "plantearemos acabar con la compra especulativa de vivienda",
-      "sha256": "120c63ba5da97d416c30a2d43b8241ffeaf0854754f3fd766d036258668aee46",
-      "cuenta": false,
-      "nota_revision": "mismo acto del 9-nov: no es otra ocasión"
-     },
-     {
-      "fecha": "2026-11-12",
-      "ocasion": "reunión pública con LAB (nota oficial; con Oihana Etxebarrieta, cabeza de lista por Gipuzkoa)",
-      "url": "https://ehbildu.eus/es/noticias/eh-bildu-y-lab-hacen-un-llamamiento-a-garantizar-una-vivienda-digna-y-unos-salarios-dignos-y-a-hacer-frente-a-la-extrema-derecha",
-      "medio": "EH Bildu (nota de prensa)",
-      "fuente_local": "data/sources/compromisos/eh_bildu/ehb_lab_20261112.txt",
-      "cita": "prohibir el uso especulativo de la vivienda",
-      "sha256": "a180fc4d6f966b6f351ff6bb2d135085935f2f5ca7cc3777d3ee0099a5144a75",
-      "cuenta": false,
-      "nota_revision": "objetivo genérico, sin decir a quién se prohibiría comprar"
-     }
-    ]
-   },
-   "sha256": "bf136f444978ee92c7361374272086526e56a98ef8f3aa8715c825120f84238d"
+   "sha256": "bf136f444978ee92c7361374272086526e56a98ef8f3aa8715c825120f84238d",
+   "motivo": "Ya está en el programa, con los mismos destinatarios: prohibición de la compra especulativa de viviendas por entidades jurídicas con ánimo de lucro, fondos de inversión y grandes tenedores (eb-p005) y compra de edificios completos condicionada al alquiler regulado según los índices de precios (eb-p007), ambas en la p. 5. Se evalúa en la prioridad eh_bildu-03 del programa."
   },
   {
    "id": "eh_bildu-c06",
-   "area": "otros",
-   "resumen": "Poner límites a los precios de los productos básicos (energía y alimentos).",
-   "cita": "Nafarroan gutxieneko soldata propioa eta oinarrizko produktuen prezioei mugak jartzea behar dugu.",
-   "cita_traduccion": "En Navarra necesitamos un salario mínimo propio y poner límites a los precios de los productos básicos.",
+   "tema": "Poner límites a los precios de los productos básicos (energía y alimentos).",
    "quien": "Eneka Maiz (cabeza de lista de EH Bildu al Congreso por Nafarroa)",
-   "formato": "publicación en su cuenta de X durante el acto de campaña en Iruñea (13-nov), reproducida por Noticias de Navarra",
    "fecha": "2026-11-13",
    "url": "https://www.noticiasdenavarra.com/politica/2026/11/13/eh-bildu-propone-salario-minimo-navarra-11754981.html",
-   "medio": "Noticias de Navarra (publicación de @Eneka_Maiz insertada)",
    "fuente_local": "data/sources/compromisos/eh_bildu/noticiasdenavarra_maiz_20261113_smi_precios.txt",
-   "cuantificado": false,
-   "nota": "Resuelve el motivo del descarte del 12-nov («que las grandes empresas energéticas, petroleras y alimentarias absorban el aumento de costes»: sin instrumento): en el acto de Navarra del primer día de campaña, dedicado a las medidas que EH Bildu «propondrá en ambas cámaras» contra la carestía (nota del partido sobre el acto paralelo de Bilbao), Maiz y la cuenta oficial de EH Bildu Nafarroa nombran el instrumento, un límite a los precios de los productos básicos, «de la energía y los alimentos». En Bizkaia y Gipuzkoa la misma propuesta se formuló sin instrumento (que las grandes empresas «asuman el aumento de los costes» con sus márgenes). No dice qué productos, a qué nivel, durante cuánto tiempo ni con qué norma. «Nafarroan» sitúa la frase en Navarra, pero el acto y la propuesta son de la campaña al Congreso.",
-   "veces": {
-    "n": 1,
-    "nota": "Una ocasión con el instrumento: el acto de Iruñea del 13-nov (publicaciones de Maiz y de EH Bildu Nafarroa). Las formulaciones de Bilbao e Irun del mismo día no nombran el límite de precios.",
-    "ocasiones": [
-     {
-      "fecha": "2026-11-13",
-      "ocasion": "acto de campaña en Iruñea, publicación de Eneka Maiz en X (cita principal)",
-      "url": "https://www.noticiasdenavarra.com/politica/2026/11/13/eh-bildu-propone-salario-minimo-navarra-11754981.html",
-      "medio": "Noticias de Navarra",
-      "fuente_local": "data/sources/compromisos/eh_bildu/noticiasdenavarra_maiz_20261113_smi_precios.txt",
-      "cita": "oinarrizko produktuen prezioei mugak jartzea behar dugu",
-      "cita_traduccion": "necesitamos poner límites a los precios de los productos básicos",
-      "sha256": "edcff21ba6504625214974f6dbd50be3d13f692883585171dcf1e47a9b0e29d2",
-      "cuenta": true,
-      "nota_revision": "cita principal"
-     },
-     {
-      "fecha": "2026-11-13",
-      "ocasion": "mismo acto, publicación de la cuenta oficial @EHBilduNafarroa (mencionando a Maiz), insertada en Naiz",
-      "url": "https://www.naiz.eus/es/info/noticia/20261113/eh-bilduk-gutxieneko-soldata-igotzea-proposatu-du-bizitzaren-garestitzeari-aurre-egiteko",
-      "medio": "Naiz",
-      "fuente_local": "data/sources/compromisos/eh_bildu/naiz_20261113_smi_precios.txt",
-      "cita": "EH Bildun argi dugu: gutxieneko soldata propioa eta energia eta elikagaien gehiegizko prezioei muga.",
-      "cita_traduccion": "En EH Bildu lo tenemos claro: salario mínimo propio y límite a los precios excesivos de la energía y los alimentos.",
-      "sha256": "9345c3cb4e957b193fe58aeb0e7e086744856a064c0307171e01ab869202d6c7",
-      "cuenta": false,
-      "nota_revision": "mismo acto del 13-nov: no es otra ocasión; precisa «energía y alimentos»"
-     },
-     {
-      "fecha": "2026-11-13",
-      "ocasion": "acto de Mercabilbao (Matute y Bideguren), nota oficial: misma línea sin instrumento",
-      "url": "https://ehbildu.eus/es/noticias/eh-bildu-propone-un-smi-propio-adaptado-al-coste-de-vida-de-euskal-herria-para-garantizar-salarios-dignos-y-aliviar-la-economia-de-las-familias-vascas",
-      "medio": "EH Bildu (nota de prensa)",
-      "fuente_local": "data/sources/compromisos/eh_bildu/ehbildu_20261113_smi_propio.txt",
-      "cita": "Queremos que esas grandes empresas, que cada trimestre nos anuncian sus miles de millones de ganancias, asuman el aumento de los costes con esos enormes márgenes de beneficio.",
-      "sha256": "88d4ce0ffaf7468fb329ef4bd30b53b4e4b001c059001804671dc375715ecb9c",
-      "cuenta": false,
-      "nota_revision": "sin instrumento (no habla de límite de precios)"
-     }
-    ]
-   },
-   "sha256": "edcff21ba6504625214974f6dbd50be3d13f692883585171dcf1e47a9b0e29d2"
-  }
- ],
- "prioridades": [
-  {
-   "id": "eh_bildu-c01",
-   "justificacion": "El cabeza de lista por Bizkaia y portavoz en el Congreso la anuncia como «la primera iniciativa que llevaremos al Congreso» en el Fórum Europa (9-nov), presentado por el secretario general Arnaldo Otegi; la defiende en Público (7-nov) y en la votación del 12-nov, y la vivienda es el primer eje de la campaña."
+   "sha256": "edcff21ba6504625214974f6dbd50be3d13f692883585171dcf1e47a9b0e29d2",
+   "motivo": "Ya está en el programa y lo concreta: límites temporales a los precios de la electricidad, el gas, los combustibles, el transporte y «determinados productos básicos» ante emergencias, crisis de abastecimiento o subidas extraordinarias (eb-p036, p. 8), junto con la obligación de las grandes energéticas y alimentarias de absorber con sus márgenes parte de las subidas de costes (eb-p034, p. 8), que el partido planteó el mismo 13-nov. Los límites quedan acotados a situaciones de crisis, un elemento accesorio que el compromiso no precisaba. Se evalúa en la prioridad eh_bildu-08 del programa."
   },
-  {
-   "id": "eh_bildu-c02",
-   "justificacion": "Matute la presenta como compromiso adquirido con la sociedad vasca («dimos la palabra») y fija el momento: «tan pronto se constituyan las nuevas cámaras» (Público, 7-nov)."
-  },
-  {
-   "id": "eh_bildu-c03",
-   "justificacion": "Matute se compromete a «seguir insistiendo» en su ley sobre pisos turísticos ilegales (Público, 7-nov); es la iniciativa propia de EH Bildu sobre vivienda, el primer eje de la campaña."
-  },
-  {
-   "id": "eh_bildu-c04",
-   "justificacion": "El partido la ratifica con LAB, con su cabeza de lista por Gipuzkoa (12-nov), como una de las dos principales reivindicaciones de la huelga del 11-nov, y la reclama su portavoz en el Parlamento de Navarra (22-oct); los salarios son eje de campaña (presentación del 8-nov)."
-  },
-  {
-   "id": "eh_bildu-c05",
-   "justificacion": "Matute la anuncia en el Fórum Europa (9-nov), presentado por el secretario general Arnaldo Otegi, en la misma frase que la «primera iniciativa» de EH Bildu en el nuevo Congreso («no solo recuperar la prórroga automática [...] sino que además plantearemos acabar con la compra especulativa de vivienda», nota del partido); la nota la lleva en su titular y la vivienda es el primer eje de la campaña."
-  },
-  {
-   "id": "eh_bildu-c06",
-   "justificacion": "Es una de las dos medidas que EH Bildu presentó el primer día de campaña (13-nov) en Navarra como respuesta al coste de la vida, en el mismo despliegue en que la nota oficial de Bilbao habla de las medidas «que la formación propondrá en ambas cámaras»; la formulan su cabeza de lista por Nafarroa y la cuenta oficial de EH Bildu Nafarroa. Prioridad más débil que las cinco actuales: en Bizkaia y Gipuzkoa se dijo sin instrumento."
-  }
- ],
- "descartados": [
   {
    "medida": "Que las grandes empresas energéticas, petroleras y alimentarias absorban el aumento de costes en situaciones inflacionarias",
    "url": "https://ehbildu.eus/es/noticias/eh-bildu-anuncia-que-planteara-recuperar-la-prorroga-automatica-de-los-contratos-de-alquiler-y-acabar-con-la-compra-especulativa-de-vivienda",
@@ -449,6 +160,7 @@
    "[Actualización 14-11-2026] Prensa leída: elDiario.es (entrevista a Matute del 13-nov y crónica de la apertura del 12-nov), El Correo (13 y 14-nov), Naiz (portada y sección A29 hasta el 14-nov), Berria (sección de las elecciones; nota del 13-nov), Noticias de Navarra (13-nov), Infobae/Europa Press (12 y 13-nov), Crónica Vasca (12-nov), Orain/EITB (sección de elecciones generales).",
    "[Actualización 14-11-2026] Búsquedas web: entrevistas de Matute, Otegi, Etxebarrieta, Maiz y Otero; manifestación de Bilbao; Infobae/EFE; transferencias, pensiones, jornada, ley mordaza.",
    "[Actualización 14-11-2026] Limitaciones: la manifestación-mitin de Bilbao (14-nov, 17:00) es posterior al cierre. El debate de ETB1 y Euskadi Irratia es el 19-nov y las entrevistas de ETB1 del 17 al 26-nov (Berria); no se comprobó si hay debate de RTVE con EH Bildu antes de hoy. Las entrevistas de Orain/EITB a Etxebarrieta (26-oct y 6-nov) y a Otegi (19-oct) solo dan entradilla en texto (el resto es vídeo). Deia y Noticias de Gipuzkoa no tienen sección de elecciones accesible por URL directa; en Deia solo se encontró el perfil de Matute ya leído. Cadena SER, RNE, El País y Público (salvo la entrevista del 7-nov ya usada) no se revisaron a fondo porque se agotó el cupo de búsquedas web compartido de la sesión."
-  ]
+  ],
+  "programa": "Programa electoral de EH Bildu «Posible Egin. Garantía y derechos» (30 págs., en castellano; versión en euskera aparte), publicado el 16-nov en ehbildu.eus y enlazado desde la nota oficial de ese día; catalogado el 16-nov (data/sources/programas/eh_bildu/posibleegin-programa-cas.pdf, SHA-256 ceb655c9…6047) y analizado con el prompt 1 en data/programas/eh_bildu/. Cada compromiso de esta selección se buscó en su texto completo, por sus términos y por sinónimos. No se han buscado compromisos nuevos posteriores al 14-nov; las dos promesas locales de Mikel Otero del 13-nov registradas en data/promesas/promesas.json (cercanías soterrado en Vitoria-Gasteiz y conexión ferroviaria de Foronda) no están en el programa en esos términos (solo el refuerzo genérico de Cercanías, eb-p108, p. 17) y nunca formaron parte de la selección."
  }
 }

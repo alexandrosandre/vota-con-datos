@@ -1,0 +1,238 @@
+{
+ "grupo": "g15",
+ "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13-nov («A qué partido cuenta cada fuente», precedencia)",
+ "fecha": "2026-11-17",
+ "aprobado": true,
+ "revisadas": 15,
+ "resultado": {
+  "ok": 15,
+  "corregido": 0,
+  "rechazado": 0,
+  "celdas_no_tocadas_confirmadas": "ver «celdas_no_tocadas»"
+ },
+ "alcance": "Las 15 posiciones de codificacion_g15.json (14 de Ara Més y 1 del Frente Amplio), sacadas del programa electoral de la coalición Ara Més-Front Ampli para el 29-N («Viure bé, viure aquí», 17 pp., en catalán, 160 medidas), las celdas en las que el codificador conserva la posición vigente o deja null, y una búsqueda propia de posiciones no recogidas.\n\n(1) Fuente. El sha256 del PDF (75149b3b…a6f8) coincide con partidos.json (entrada «ara_mes_fa») y con «fuentes»; el del texto (5252bfc5…f532) coincide con «fuentes» y con un pdftotext -layout nuevo del PDF. PDF de Affinity, 17 pp., CreationDate 16-nov 18:50 CET. La página del PDF coincide con la impresa (la p. 1 es la portada).\n\n(2) Lectura. Se extrajo cada página con pdftotext -layout -f N -l N y se leyeron enteras las 17, sin partir de las notas del codificador. Además se buscaron palabras clave (concert, Ceuta, indult, eòlic, Mercosur, Ministeri, ocupa, presó permanent, IRPF, deute, jubilació, Constitució, castellà, habitatge públic, menors, referèndum, independència, nuclear).\n\n(3) Citas. Cada fragmento (separado por [...]) se comprobó con norm() de verify_quotes.py contra el .txt catalogado y contra el texto de la página declarada: las 15 citas son literales y están en su página; tienen 60 palabras o menos (8 a 51). Las 15 «sustituye» coinciden con la celda vigente de fase1.json (valor, fuente, cita, fecha, URL y autor).\n\n(4) Valor. Se juzgó contra el texto exacto de cada afirmación y su contexto (preguntas.json) y se comparó con el valor y la nota de los demás partidos en fase1.json, en especial el Frente Amplio (g14, verificado el 16-nov: q01 +2, q11 +2, q16 +1, q30 +1), Adelante Andalucía (q01, q11, q30), Compromís (q06, q17, q18, q24), Junts y ERC (q32) y Coalición Canaria y el BNG (q19).\n\n(5) A qué partido cuenta. Para Ara Més es su programa oficial (partidos.json): fuente «programa», va primero. Para el Frente Amplio es un documento conjunto (pacto ARAMÉS-EU-MS de la JEP de Illes Balears, data/boe/coaliciones.json: lo firman Ara Més, Movimiento Sumar, Izquierda Unida, Progreso en Verde y Recortes Cero); su programa propio (g14) va primero, así que el documento solo cubre lo que ese programa no trata. Ningún otro partido de la web firma el pacto.\n\n(6) Build. Comprobado en una copia del repositorio (scratchpad/g1516_ver): ver «recuento».\n\nResultado: aprobado, sin cambios de valor. Se corrigió una referencia de la nota de q32 (Ara Més y Frente Amplio) que dejaría de ser cierta al aplicarse g16 (ver «correcciones_de_campos»).",
+ "cambios": [],
+ "correcciones_de_campos": [
+  {
+   "partido": "ara_mes_fa y frente_amplio",
+   "pregunta": "q32",
+   "campo": "nota",
+   "motivo": "APLICADA por el verificador el 17-nov en codificacion_g15.json. Las dos notas decían «mismo criterio que EH Bildu (+1)»; con g16 el programa de EH Bildu sube esa celda a +2, así que la web mostraría una comparación falsa. Ahora citan a Junts (+1: reclama la competencia sin plantear que el salario mínimo propio supere al estatal) y la nota de EH Bildu con LAB del 12-nov como criterio, y añaden el programa de EH Bildu a los +2. Valor, cita y fuente no cambian."
+  },
+  {
+   "partido": "(notas)",
+   "pregunta": "—",
+   "campo": "notas_g15.md",
+   "motivo": "Cosmético, no aplicado en el cuerpo: la duda 2 cita el «criterio verificado de EH Bildu (+1)», que g16 sustituye. La sección «Verificación» añadida al final lo aclara."
+  }
+ ],
+ "posiciones": [
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q01",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Citas literales: medidas 24 y 25, contiguas en la p. 4. Tope «per llei» (en un programa para el Congreso, ley estatal) con una fórmula común (como máximo el 25 % de la renta neta de los hogares de la sección censal) y declaración de zona tensionada «obligatòria i automàtica» al cumplirse los parámetros legales: el tope se aplica sin que la comunidad lo pida ni pueda impedirlo. Es el diseño de Adelante Andalucía (+2: declaración automática por indicadores objetivos, sin activación ministerial) y del Frente Amplio (+2, g14 verificado); que se limite a las zonas tensionadas no lo rebaja (mismo criterio, duda 4 de g14). El PSOE (+1) solo congela rentas y Compromís (+1) da la declaración a los ayuntamientos. El programa va primero y es más directo que la nota del 6-nov (+1, «posar topalls» sin decir quién)."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q03",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (medida 30, p. 4). Exención del ITP para la compra de la primera vivienda habitual, a cualquier edad, sin IVA ni límite de 40 años: misma dirección con otra medida, +1, como el Frente Amplio, Compromís, ERC, SALF, Vox, Podemos y UPC."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q31",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (final de la medida 25, p. 4). Contratos de alquiler «indefinits per defecte»: va más allá de la renovación automática por cinco años y la incluye, +2, como el Frente Amplio («carácter indefinido por defecto») y Compromís. Mismo valor que la nota del 13-nov; el programa va primero y es igual de directo: solo cambia la fuente."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q06",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (medida 10, p. 2). 32 horas de trabajo efectivo sin rebaja salarial, sin pasar por las 37,5: va más allá de la afirmación, +1, como Compromís y Adelante Andalucía (32 h), Podemos (30 h) y el BNG. El Frente Amplio tiene +2 porque su programa incluye la implantación inmediata de las 37,5 h; aquí no."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q32",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (medida 1, la primera del programa, p. 2). «Implantarem un Salari Mínim Interprofessional Illenc» para compensar el mayor coste de vida: por su finalidad estaría por encima del estatal, pero no dice quién lo fija, y eso es el núcleo de la afirmación («que cada comunidad pueda fijar»): un SMI balear implantado desde el Congreso puede ser una cuantía estatal diferenciada. +1, como Junts (+1, reclama la competencia sin el principio de superar al estatal) y la nota de EH Bildu con LAB (+1, «salario mínimo propio»). El PNV, el BNG, ERC y ahora el programa de EH Bildu (g16) tienen +2 porque dicen las dos cosas: competencia autonómica y el estatal como suelo. Mismo valor que la nota del 10-nov (en la que el SMI balear era solo la referencia de otra propuesta): cambia la fuente. Nota corregida (ver «correcciones_de_campos»)."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q11",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (medida 81, p. 9). «Procés progressiu d'eliminació del sistema de concerts educatius», con los centros integrados en la red pública y cuotas prohibidas durante la transición: la financiación pública de colegios privados concertados se acaba de forma gradual, que es la afirmación; convertirlos en públicos no la rebaja (Adelante Andalucía, +2: «eliminar progresivamente la privada-concertada, incorporando a la pública a su profesorado y alumnado»; Frente Amplio, +2). No dice por qué etapas empieza, como esos dos. Propuesta expresa: +2."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q16",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (medida 120, p. 13). En el bloque «Autogovern», junto a la «plurinacionalitat confederal de l'Estat espanyol», el «dret a l'autodeterminació dels pobles» se refiere a los pueblos del Estado y supone que puedan decidir sobre su independencia; no habla de referéndum ni de pacto con el Gobierno. A favor, indirecto: +1, el listón del Frente Amplio («derecho a decidir mediante referéndum», +1, g14), EH Bildu (+1, «derecho a decidir del pueblo vasco», g16) y Podemos (+1). Compromís quedó en null porque no hablaba de autodeterminación, solo de «model d'Estat plurinacional»."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q17",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (medida 67, p. 7). Nombra expresamente el modelo de la afirmación para Baleares («plena capacitat fiscal i tributària i una relació amb l'Estat assimilable al concert econòmic») como objetivo al que no renuncia, mientras impulsa ahora un nuevo modelo común: a favor con matices, +1, como Compromís («concert econòmic responsable o, en el seu defecte...», +1) y ERC (+1). Cambio solo de fuente: el programa oficial va primero, es posterior a la nota de Més per Menorca (15-ene) y trata la medida de forma expresa; ver duda 5."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q18",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (final de la medida 67, que empieza en la p. 7; la frase está en la p. 8). Condonación de la deuda balear atribuible a la infrafinanciación, tras un estudio, sin quita general a todas las comunidades ni cuantía: misma dirección, +1, como Compromís, Adelante Andalucía, el Frente Amplio y el BNG."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q21",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (medida 99, p. 11). «Blindatge constitucional» de la ley de salud sexual y reproductiva y de la interrupción voluntaria del embarazo: propuesta expresa de llevar el aborto a la Constitución, +2, como el PSOE, el Frente Amplio y Adelante Andalucía."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q24",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (medida 135, la primera del bloque «En defensa de la democràcia», p. 15). «Derogarem la Llei mordassa», sin matices de reforma: +2, como el Frente Amplio, Compromís, ERC y el BNG. El programa va primero y es más directo que la moción de MÉS per Mallorca en el Consell (22-jul, +1), en la que era uno de varios puntos."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q26",
+   "veredicto": "ok",
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal (medida 148, p. 16). Reducir el gasto militar y rechazar el objetivo del 5 % del PIB (que incluye el 3,5 % de defensa de la afirmación); la misma medida apoya la salida de la OTAN. Rechazo expreso: −2, como el Frente Amplio, Podemos, Adelante Andalucía, EH Bildu y el BNG."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q30",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (medida 4, p. 2). Precios máximos en la cesta de la compra saludable «en cas d'acreditar-ne abusos»: a favor con condiciones, +1, el mismo listón que el Frente Amplio (g14, duda 2: «emergencia o abuso acreditado», +2 → +1) y Adelante Andalucía. El programa va primero y trata la medida tan directamente como la nota del 7-nov (+2, sin condiciones); prevalece también cuando rebaja el valor (g14, q30)."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q34",
+   "veredicto": "ok",
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (medida 150, p. 16). Apoyo explícito a la autodeterminación y a un referéndum organizado por la ONU y retirada del apoyo al plan de autonomía marroquí: es la afirmación, +2, como el Frente Amplio y Compromís."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q32",
+   "veredicto": "ok",
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Documento conjunto: el programa de la coalición lo firman Movimiento Sumar, Izquierda Unida y Recortes Cero (pacto ARAMÉS-EU-MS). Cita literal (medida 1, p. 2), la misma que Ara Més; +1 por las mismas razones. El programa propio del Frente Amplio solo trata el SMI estatal (suelo del 60 % del salario medio, p. 51 del PDF), compatible con salarios mínimos autonómicos más altos, así que no trata la afirmación (lo mismo concluyó g14 al conservar la nota). Entre documentos conjuntos prevalece el posterior: el programa (16-nov) sustituye a la nota de la misma coalición (10-nov), que además era menos directa. Campos de campaña completos (URL, fecha 16-nov, «quien» = el documento y la coalición, formato «documento oficial»). Mismo valor: cambia la fuente."
+  }
+ ],
+ "resolucion_dudas_codificador": [
+  {
+   "duda": 1,
+   "tema": "q01: +2 con un tope limitado a las zonas tensionadas",
+   "resolucion": "+2, como propone el codificador. Lo que la afirmación pide frente a la ley actual es que el tope no dependa de que lo pida o declare cada comunidad (contexto de preguntas.json). La declaración «obligatòria i automàtica» por parámetros legales lo consigue sin necesidad de que el Ministerio la active (Adelante Andalucía tiene +2 con ese mismo diseño); el tope se fija «per llei» con una fórmula común. El listón es el del Frente Amplio, verificado ayer. Alternativa (+1 si se exige un tope general) solo si el editor la aplica a la vez a Frente Amplio y Adelante Andalucía."
+  },
+  {
+   "duda": 2,
+   "tema": "q32: +1 o +2 (y su efecto en el Frente Amplio)",
+   "resolucion": "+1 en los dos partidos. El núcleo de la afirmación es quién fija el salario mínimo («que cada comunidad autónoma pueda fijar»); la medida 1 no lo dice y «Implantarem» desde el Congreso es compatible con una cuantía balear fijada por el Estado. Que esté por encima del estatal solo se deduce de su finalidad. Le faltan los dos elementos que tienen los +2 (PNV, BNG, ERC y el programa de EH Bildu: competencia autonómica y el estatal como suelo); Junts, con la competencia pero sin el principio de superar al estatal, tiene +1. Además, en el Frente Amplio un +2 vendría de un documento regional sobre Baleares, más fuerte que lo que dice su propio programa (solo el SMI estatal): otra razón para no subirlo. La comparación con «EH Bildu (+1)» de las notas se corrigió, porque g16 sube a EH Bildu a +2."
+  },
+  {
+   "duda": 3,
+   "tema": "q11: +2 por integración en la red pública",
+   "resolucion": "+2. El fin del sistema de conciertos es el fin de la financiación pública de colegios privados concertados, que es la afirmación; que los centros pasen a ser públicos es el destino que también proponen Adelante Andalucía (+2, «incorporando a la pública a su profesorado y alumnado») y el Frente Amplio (+2). La medida es expresa («eliminació del sistema de concerts») y gradual; no fijar las etapas no la rebaja, igual que en esos dos."
+  },
+  {
+   "duda": 4,
+   "tema": "q16: +1 por «el dret a l'autodeterminació dels pobles»",
+   "resolucion": "+1. En el bloque «Autogovern» y junto a la «plurinacionalitat confederal de l'Estat espanyol», el derecho de autodeterminación es el de los pueblos del Estado, es decir, poder decidir sobre la independencia: a favor, indirecto pero inequívoco. Es el listón del Frente Amplio («derecho a decidir mediante referéndum», +1) y de EH Bildu («derecho a decidir del pueblo vasco», +1). Compromís quedó en null porque solo hablaba de un Estado plurinacional, sin autodeterminación; aquí sí está. No llega a +2 porque no habla de referéndum ni de pacto con el Gobierno (ERC y el BNG, +2, sí lo hacen)."
+  },
+  {
+   "duda": 5,
+   "tema": "q17: cambio solo de fuente (programa en lugar de la nota de Més per Menorca)",
+   "resolucion": "Se acepta. El programa oficial va primero, es posterior y nombra expresamente el modelo de la afirmación («assimilable al concert econòmic», con plena capacidad fiscal). Su matiz (no renunciar a él mientras se impulsa un modelo común) es lo que justifica el +1. El valor no cambia."
+  },
+  {
+   "duda": 6,
+   "tema": "q19: null por la evaluación rigurosa de «qualsevol projecte» de eólica marina",
+   "resolucion": "null. La medida 63 pide evaluar con rigor todo proyecto, con participación insular, dentro de una frase que pide «evitar instal·lacions sobredimensionades»: es recelo, pero ni promueve los parques (Coalición Canaria, +1: «Impulsaremos la eólica marina») ni los rechaza (el BNG, −1, declara su costa no apta). No se codifica 0, y entre −1 y null, ante la duda, null."
+  },
+  {
+   "duda": 7,
+   "tema": "q30: +2 → +1",
+   "resolucion": "+1. El programa va primero también cuando rebaja el valor; condiciona los precios máximos a que se acrediten abusos. Mismo listón que el Frente Amplio en g14 (duda 2, verificada) y Adelante Andalucía."
+  }
+ ],
+ "celdas_no_tocadas": [
+  "Ara Més, se conservan (comprobado leyendo las 17 páginas y con palabras clave): q12 (+1, MÉS per Mallorca, 19-nov-2025: el bloque del catalán, medidas 122-130, trata la Administración del Estado, el consumo, las Cortes, la empresa y los medios, no la escuela), q13 (−1, MÉS per Mallorca con Rosa Cursach: la medida 34 persigue el racismo inmobiliario y la 141 propone una ley contra el racismo; misma dirección, menos directas que el rechazo expreso de la «prioritat nacional»), q29 (+1, Vidal: el programa no menciona Mercosur; la medida 150 sobre acuerdos UE-Marruecos y el Sáhara es otra medida) y q36 (−2, Vidal: el programa no habla de las nucleares; la 62 trata las térmicas).",
+  "Ara Més, siguen en null, confirmado: q04 (la medida 31 crea un impuesto a quien tenga 3 o más viviendas sin alquiler estable: no es el de grandes fortunas), q05 (solo imputación de rentas inmobiliarias, deducción por alquiler a menores de 35 y supresión de la ley Beckham), q08 (jubilación anticipada sin penalización solo para las camareras de piso), q09 (la 83 prohíbe financiar universidades privadas: educación), q15 (empadronamiento flexible y oficina de extranjería: no es una regularización extraordinaria), q19 (duda 6), q22 (5 % del presupuesto a igualdad, sin hablar del Ministerio), q23 (la 34 prohíbe las empresas de «desocupació extrajudicial»; la 37, desahucios de familias con menores: no tratan la ocupación ni los plazos), q25, q27, q33 (la 142 pide acogida financiada al 100 % por el Estado, también la de menores solos: financiación, no reparto) y q35.",
+  "Frente Amplio: se conservan q13 (−1, Delgado), q22 (−1, Bustinduy), q23 (−1, Pisarello) y q35 (−2, Santiago), que el documento conjunto no trata; q17 (+1, programa de Compromís: Front Valencià, 14-nov): el documento de Ara Més-Front Ampli tiene el mismo valor pero es menos directo («sense renunciar» frente a «apostarem per un concert econòmic»), así que no lo sustituye; el valor no cambiaría. q19, q25 y q27 siguen en null (la medida 63 tampoco da posición en q19). El resto lo trata el programa propio del Frente Amplio, que va primero.",
+  "Otros partidos: ninguna celda cambia. Progreso en Verde, el otro firmante, no es una entrada de la web."
+ ],
+ "posiciones_no_recogidas": "No se encontró ninguna afirmación en la que el programa tome una posición clara que el codificador no haya recogido. Las más cercanas: q33 (medida 142, financiación estatal de la acogida, también de los menores solos), q23 (medida 34, empresas de desalojo extrajudicial), q04 (medida 31, impuesto a la acumulación de viviendas), q09 (medida 83, universidades privadas), q13 (medida 34, racismo inmobiliario: se conserva la nota, más directa) y q19 (medida 63); todas medidas distintas o menos directas que la fuente conservada.",
+ "recuento": {
+  "antes": {
+   "ara_mes_fa": 10,
+   "frente_amplio": 25
+  },
+  "despues": {
+   "ara_mes_fa": 18,
+   "frente_amplio": 25
+  },
+  "cambios_de_valor": [
+   "ara_mes_fa q01 +1→+2",
+   "ara_mes_fa q24 +1→+2",
+   "ara_mes_fa q30 +2→+1"
+  ],
+  "celdas_nuevas": [
+   "ara_mes_fa q03 +1, q06 +1, q11 +2, q16 +1, q18 +1, q21 +2, q26 −2, q34 +2"
+  ],
+  "solo_fuente": [
+   "ara_mes_fa q17 q31 q32",
+   "frente_amplio q32"
+  ],
+  "despues_detalle": {
+   "ara_mes_fa": {
+    "con_valor": 18,
+    "a_favor": 15,
+    "en_contra": 3,
+    "null": 12,
+    "null_preguntas": "q04 q05 q08 q09 q15 q19 q22 q23 q25 q27 q33 q35"
+   },
+   "frente_amplio": {
+    "con_valor": 25,
+    "null": 5,
+    "null_preguntas": "q15 q19 q25 q27 q29"
+   }
+  },
+  "build": "Comprobado en una copia del repositorio (scratchpad/g1516_ver, con codificacion_g15/g16.json ya corregidos y estas dos verificaciones): python3 -I pipeline/build_fase1.py termina sin errores (exit 0) y aplica g15 y g16 después de g14. Frente a fase1.json del repositorio cambian exactamente 26 celdas: 14 de ara_mes_fa (10 → 18 posiciones), 1 de frente_amplio (q32, solo la fuente; sigue en 25) y 11 de eh_bildu (14 → 18); ningún otro partido ni afirmación cambia. Sin las verificaciones, fase1.json sale idéntico al del repositorio. En el repositorio no se ha regenerado fase1.json."
+ },
+ "dudas": [
+  "ara_mes_fa/q01 (+2): alternativa +1 si se exige un tope general y no limitado a las zonas tensionadas; habría que aplicarla también al Frente Amplio y a Adelante Andalucía, de diseño equivalente.",
+  "ara_mes_fa/q32 y frente_amplio/q32 (+1): alternativa +2 si «Salari Mínim Interprofessional Illenc» se lee como competencia autonómica; en el Frente Amplio, partido estatal, un +2 vendría de un documento regional y su propio programa solo trata el SMI estatal.",
+  "ara_mes_fa/q16 (+1): alternativa null si se exige que se hable de un referéndum (como con Compromís).",
+  "ara_mes_fa/q19 (null): alternativa −1 si la evaluación rigurosa de «qualsevol projecte» se lee como oposición condicionada."
+ ]
+}

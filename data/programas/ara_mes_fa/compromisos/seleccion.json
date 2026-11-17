@@ -1,366 +1,11 @@
 {
  "partido": "ara_mes_fa",
- "base": "compromisos",
+ "base": "complemento",
  "modelo": "Claude (Anthropic)",
- "fecha": "2026-11-12",
- "nota": "Ara Més–Front Ampli no había publicado programa para el 29-N a 12-nov-2026: lo elabora de forma participativa desde el 3-nov y no ha anunciado fecha. Se recogen los compromisos de su cabeza de lista, Carme Gomila, y de las notas oficiales de la coalición desde la convocatoria. La web aramesfrontampli.cat carga sus listados por JavaScript; se leyeron las cinco notas enlazadas en la portada y en las notas anteriores (3, 6, 10, 10 y 12-nov), además de la prensa. Varias medidas salen de una misma frase de la nota del lema de campaña (6-nov), por eso comparten cita. Hay 11 prioridades, menos de 12: entran todos los compromisos concretos que el partido destaca (enumerados en la nota del lema o en el mitin de Palma, o presentados en las notas monográficas del 10 y el 12-nov y en sus subtítulos). No queda ningún compromiso concreto sin priorizar. [Reatribución 13-nov-2026] La entrada pasa a ser el partido Ara Més. Cuentan las notas oficiales de la coalición, que encabeza Ara Més, y Carme Gomila, cabeza de lista, cuenta para Ara Més: además de presidenta de ERC en Baleares, es responsable de Estrategia y Relaciones Políticas de MÉS per Mallorca, partido de la federación, que la propuso; el Comité Federal de Ara Més la ratificó por unanimidad (dBalears y Canal 4 Diario, 24-oct; data/boe/afiliaciones_g1.json). Decisión del editor (13-nov, tarde): por la mañana se retiraron c07 y c08 y las apoyaturas en sus declaraciones, por constar solo como dirigente de ERC; se restauran tal como estaban aprobados (data/fase3/reatribucion_2026-11-13.md). [Auditoría de coherencia, 14-11-2026] ara_mes_fa-c03 («mobilitzar els 105.000 habitatges buits») pasa a «descartados»: nombra un recurso y el resultado, sin instrumento (prompt 1b, mismo corte que la revisión de UPN del 14-11 para «Suelo público para vivienda asequible»). Quedan 10 compromisos y 10 prioridades.",
- "compromisos": [
-  {
-   "id": "ara_mes_fa-c01",
-   "area": "vivienda",
-   "resumen": "Limitar la compra de vivienda en las Illes Balears por parte de personas no residentes.",
-   "cita": "Per revertir aquesta situació, ARAMÉS–FRONT AMPLI defensa posar topalls als preus dels lloguers, limitar la compra d'habitatges per part de no residents, prohibir la compra especulativa i mobilitzar els 105.000 habitatges buits de les Illes Balears.",
-   "cita_traduccion": "Para revertir esta situación, ARAMÉS–FRONT AMPLI defiende poner topes a los precios de los alquileres, limitar la compra de viviendas por parte de no residentes, prohibir la compra especulativa y movilizar las 105.000 viviendas vacías de las Illes Balears.",
-   "quien": "Ara Més–Front Ampli (nota oficial de presentación del lema de campaña), con declaraciones de Carme Gomila, cabeza de lista",
-   "formato": "documento oficial (nota de prensa del partido)",
-   "fecha": "2026-11-06",
-   "url": "https://aramesfrontampli.cat/noticies/aramesfront-ampli-presenta-viure-be-viure-aqui-com-a-lema-de-campanya-per-a-les-eleccions-del-29-de-novembre",
-   "medio": "Ara Més–Front Ampli (nota de prensa, aramesfrontampli.cat)",
-   "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261106_lema_campanya.txt",
-   "cuantificado": false,
-   "veces": {
-    "n": 2,
-    "nota": "Ocasiones públicas distintas, incluida la de la cita principal: presentación del lema (6-nov, nota oficial) y mitin de Palma (8-nov; Demócrata y NacióDigital recogen el mismo acto).",
-    "ocasiones": [
-     {
-      "fecha": "2026-11-08",
-      "ocasion": "mitin de Ara Més–Front Ampli en Palma con Ada Colau (Gomila)",
-      "url": "https://www.democrata.es/ca/politica/ampliacio-ada-colau-adverteix-que-al-psoe-li-falten-forces-per-plantar-cara-a-les-elits/",
-      "medio": "Demócrata",
-      "fuente_local": "data/sources/compromisos/ara_mes_fa/democrata_20261108_miting_palma.txt",
-      "cita": "Feijóo, Abascal, Prohens, feu-vos a la idea que apujarem el salari mínim, que acabarem amb l’especulació, millorarem les condicions dels treballadors, limitarem la compra a no residents i limitarem els preus dels aliments bàsics",
-      "cita_traduccion": "Feijóo, Abascal, Prohens, haceos a la idea de que subiremos el salario mínimo, que acabaremos con la especulación, mejoraremos las condiciones de los trabajadores, limitaremos la compra a no residentes y limitaremos los precios de los alimentos básicos",
-      "sha256": "51f553fa031d14d407064460e0f5b31f431506540ee5f36b34b8072143a84d7d"
-     },
-     {
-      "fecha": "2026-11-08",
-      "ocasion": "mismo mitin (NacióDigital, estilo indirecto)",
-      "url": "https://naciodigital.cat/politica/colau-dispara-contra-el-psoe-li-tremolen-les-cames-davant-les-elits.html",
-      "medio": "NacióDigital",
-      "fuente_local": "data/sources/compromisos/ara_mes_fa/naciodigital_20261108_miting_palma.txt",
-      "cita": "També ha defensat limitar la compra d'habitatges a no residents",
-      "cita_traduccion": "También ha defendido limitar la compra de viviendas a no residentes",
-      "sha256": "ad5ea5ee0a5d05fb98e1e84ddac1a34898b67db68d7124d59f88881d862b183c"
-     }
-    ]
-   },
-   "sha256": "d011b42243f7a909633fc41fb5a32302c3c9e3adc916fbc1f2cb7388890daea1"
-  },
-  {
-   "id": "ara_mes_fa-c02",
-   "area": "vivienda",
-   "resumen": "Poner topes a los precios del alquiler.",
-   "cita": "Per revertir aquesta situació, ARAMÉS–FRONT AMPLI defensa posar topalls als preus dels lloguers, limitar la compra d'habitatges per part de no residents, prohibir la compra especulativa i mobilitzar els 105.000 habitatges buits de les Illes Balears.",
-   "cita_traduccion": "Para revertir esta situación, ARAMÉS–FRONT AMPLI defiende poner topes a los precios de los alquileres, limitar la compra de viviendas por parte de no residentes, prohibir la compra especulativa y movilizar las 105.000 viviendas vacías de las Illes Balears.",
-   "quien": "Ara Més–Front Ampli (nota oficial de presentación del lema de campaña), con declaraciones de Carme Gomila, cabeza de lista",
-   "formato": "documento oficial (nota de prensa del partido)",
-   "fecha": "2026-11-06",
-   "url": "https://aramesfrontampli.cat/noticies/aramesfront-ampli-presenta-viure-be-viure-aqui-com-a-lema-de-campanya-per-a-les-eleccions-del-29-de-novembre",
-   "medio": "Ara Més–Front Ampli (nota de prensa, aramesfrontampli.cat)",
-   "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261106_lema_campanya.txt",
-   "cuantificado": false,
-   "veces": {
-    "n": 1,
-    "nota": "Una ocasión: presentación del lema (6-nov). La crónica de mallorca.com (Europa Press) recoge el mismo acto.",
-    "ocasiones": [
-     {
-      "fecha": "2026-11-06",
-      "ocasion": "presentación del lema (mallorca.com, en inglés, estilo indirecto)",
-      "url": "https://www.mallorca.com/en/magazin/news/empty-homes-election-pitch-palma",
-      "medio": "mallorca.com",
-      "fuente_local": "data/sources/compromisos/ara_mes_fa/mallorcacom_20261106_lema.txt",
-      "cita": "The coalition wants to cap rents",
-      "sha256": "a2644b2238180dfad0aa31be38fcde93ec307d3e34f013cf7460922327558a0e"
-     }
-    ]
-   },
-   "sha256": "d011b42243f7a909633fc41fb5a32302c3c9e3adc916fbc1f2cb7388890daea1"
-  },
-  {
-   "id": "ara_mes_fa-c04",
-   "area": "vivienda",
-   "resumen": "Prohibir la compra especulativa de vivienda.",
-   "cita": "Per revertir aquesta situació, ARAMÉS–FRONT AMPLI defensa posar topalls als preus dels lloguers, limitar la compra d'habitatges per part de no residents, prohibir la compra especulativa i mobilitzar els 105.000 habitatges buits de les Illes Balears.",
-   "cita_traduccion": "Para revertir esta situación, ARAMÉS–FRONT AMPLI defiende poner topes a los precios de los alquileres, limitar la compra de viviendas por parte de no residentes, prohibir la compra especulativa y movilizar las 105.000 viviendas vacías de las Illes Balears.",
-   "quien": "Ara Més–Front Ampli (nota oficial de presentación del lema de campaña), con declaraciones de Carme Gomila, cabeza de lista",
-   "formato": "documento oficial (nota de prensa del partido)",
-   "fecha": "2026-11-06",
-   "url": "https://aramesfrontampli.cat/noticies/aramesfront-ampli-presenta-viure-be-viure-aqui-com-a-lema-de-campanya-per-a-les-eleccions-del-29-de-novembre",
-   "medio": "Ara Més–Front Ampli (nota de prensa, aramesfrontampli.cat)",
-   "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261106_lema_campanya.txt",
-   "cuantificado": false,
-   "veces": {
-    "n": 1,
-    "nota": "Una ocasión: presentación del lema (6-nov).",
-    "ocasiones": []
-   },
-   "sha256": "d011b42243f7a909633fc41fb5a32302c3c9e3adc916fbc1f2cb7388890daea1"
-  },
-  {
-   "id": "ara_mes_fa-c05",
-   "area": "fiscalidad",
-   "resumen": "Suprimir el IVA del transporte de mercancías con destino a las Illes Balears, sobre todo de alimentos y productos esenciales, como paso hacia un IVA reducido propio para las islas.",
-   "cita": "ha reclamat avui l’eliminació de l’IVA del transport de mercaderies amb destinació a les Illes Balears per reduir els sobrecostos derivats de la insularitat i abaratir el preu dels productes de primera necessitat.",
-   "cita_traduccion": "ha reclamado hoy la eliminación del IVA del transporte de mercancías con destino a las Illes Balears para reducir los sobrecostes derivados de la insularidad y abaratar el precio de los productos de primera necesidad.",
-   "quien": "Ara Més–Front Ampli (nota oficial), con declaraciones de Carme Gomila, cabeza de lista",
-   "formato": "documento oficial (nota de prensa del partido)",
-   "fecha": "2026-11-12",
-   "url": "https://aramesfrontampli.cat/noticies/aramesfront-ampli-reclama-eliminar-liva-del-transport-de-mercaderies-per-abaratir-el-cost-de-la-vida-a-les-illes-balears",
-   "medio": "Ara Més–Front Ampli (nota de prensa, aramesfrontampli.cat)",
-   "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261112_iva_transport_mercaderies.txt",
-   "cuantificado": false,
-   "veces": {
-    "n": 1,
-    "nota": "Una ocasión: comunicado del 12-nov. La otra cita es de la misma nota y la crónica de EFE recoge el mismo comunicado.",
-    "ocasiones": [
-     {
-      "fecha": "2026-11-12",
-      "ocasion": "misma nota: marco de la propuesta",
-      "url": "https://aramesfrontampli.cat/noticies/aramesfront-ampli-reclama-eliminar-liva-del-transport-de-mercaderies-per-abaratir-el-cost-de-la-vida-a-les-illes-balears",
-      "medio": "Ara Més–Front Ampli (nota de prensa, aramesfrontampli.cat)",
-      "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261112_iva_transport_mercaderies.txt",
-      "cita": "IVA propi reduït per a les Illes Balears, adaptat a les particularitats del territori",
-      "cita_traduccion": "IVA propio reducido para las Illes Balears, adaptado a las particularidades del territorio",
-      "sha256": "95475dd326be9d9dd97166d013a4f85c26499253e781042560f9c9f328fbc02c"
-     },
-     {
-      "fecha": "2026-11-12",
-      "ocasion": "mismo comunicado (EFE)",
-      "url": "https://www.ultimahora.es/noticias/elecciones-29n/2026/11/12/2748371/ara-mes-front-ampli-propone-eliminar-iva-transporte-mercancias.html",
-      "medio": "Última Hora (EFE)",
-      "fuente_local": "data/sources/compromisos/ara_mes_fa/ultimahora_efe_20261112_iva.txt",
-      "cita": "Ara Més-Front Ampli ha reclamado este jueves la eliminación del IVA del transporte de mercancías con destino a Baleares",
-      "sha256": "502427e7f3c8e43f20699324129e6580fefad78f0826f1bd8816e4603d4b04ca"
-     }
-    ]
-   },
-   "sha256": "95475dd326be9d9dd97166d013a4f85c26499253e781042560f9c9f328fbc02c"
-  },
-  {
-   "id": "ara_mes_fa-c06",
-   "area": "pensiones",
-   "resumen": "Un complemento para las pensiones más bajas de las Illes Balears que garantice unos ingresos mínimos adaptados al coste de la vida, con referencia a un salario mínimo balear propio.",
-   "cita": "ha anunciat avui la proposta d'impulsar un complement a les pensions més baixes per garantir uns ingressos mínims adaptats al cost real de la vida a les Illes Balears.",
-   "cita_traduccion": "ha anunciado hoy la propuesta de impulsar un complemento a las pensiones más bajas para garantizar unos ingresos mínimos adaptados al coste real de la vida en las Illes Balears.",
-   "quien": "Ara Més–Front Ampli (nota oficial), propuesta anunciada por Carme Gomila, cabeza de lista, en rueda de prensa",
-   "formato": "documento oficial (nota de prensa del partido)",
-   "fecha": "2026-11-10",
-   "url": "https://aramesfrontampli.cat/noticies/ara-mesfront-ampli-proposa-un-complement-balear-a-les-pensions-per-garantir-una-jubilacio-digna",
-   "medio": "Ara Més–Front Ampli (nota de prensa, aramesfrontampli.cat)",
-   "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261110_complement_pensions.txt",
-   "cuantificado": false,
-   "veces": {
-    "n": 1,
-    "nota": "Una ocasión: rueda de prensa del 10-nov; la otra cita es de la misma nota.",
-    "ocasiones": [
-     {
-      "fecha": "2026-11-10",
-      "ocasion": "misma nota",
-      "url": "https://aramesfrontampli.cat/noticies/ara-mesfront-ampli-proposa-un-complement-balear-a-les-pensions-per-garantir-una-jubilacio-digna",
-      "medio": "Ara Més–Front Ampli (nota de prensa, aramesfrontampli.cat)",
-      "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261110_complement_pensions.txt",
-      "cita": "La iniciativa planteja avançar cap a una pensió mínima balear vinculada a un salari mínim interprofessional (SMI) propi.",
-      "cita_traduccion": "La iniciativa plantea avanzar hacia una pensión mínima balear vinculada a un salario mínimo interprofesional (SMI) propio.",
-      "sha256": "0643f03fa19cb17f5da9da40858a091e9e453c4a12fe719dccb066a4a8dc1ea7"
-     }
-    ]
-   },
-   "sha256": "0643f03fa19cb17f5da9da40858a091e9e453c4a12fe719dccb066a4a8dc1ea7"
-  },
-  {
-   "id": "ara_mes_fa-c07",
-   "area": "empleo",
-   "resumen": "Subir el salario mínimo interprofesional.",
-   "cita": "Feijóo, Abascal, Prohens, feu-vos a la idea que apujarem el salari mínim, que acabarem amb l’especulació, millorarem les condicions dels treballadors, limitarem la compra a no residents i limitarem els preus dels aliments bàsics",
-   "cita_traduccion": "Feijóo, Abascal, Prohens, haceos a la idea de que subiremos el salario mínimo, que acabaremos con la especulación, mejoraremos las condiciones de los trabajadores, limitaremos la compra a no residentes y limitaremos los precios de los alimentos básicos",
-   "quien": "Carme Gomila (cabeza de lista de Ara Més–Front Ampli al Congreso por Illes Balears)",
-   "formato": "mitin (Palma)",
-   "fecha": "2026-11-08",
-   "url": "https://www.democrata.es/ca/politica/ampliacio-ada-colau-adverteix-que-al-psoe-li-falten-forces-per-plantar-cara-a-les-elits/",
-   "medio": "Demócrata",
-   "fuente_local": "data/sources/compromisos/ara_mes_fa/democrata_20261108_miting_palma.txt",
-   "cuantificado": false,
-   "veces": {
-    "n": 1,
-    "nota": "Una ocasión: mitin de Palma (8-nov); NacióDigital recoge el mismo acto.",
-    "ocasiones": [
-     {
-      "fecha": "2026-11-08",
-      "ocasion": "mismo mitin (NacióDigital, estilo indirecto)",
-      "url": "https://naciodigital.cat/politica/colau-dispara-contra-el-psoe-li-tremolen-les-cames-davant-les-elits.html",
-      "medio": "NacióDigital",
-      "fuente_local": "data/sources/compromisos/ara_mes_fa/naciodigital_20261108_miting_palma.txt",
-      "cita": "apujar el salari mínim",
-      "cita_traduccion": "subir el salario mínimo",
-      "sha256": "ad5ea5ee0a5d05fb98e1e84ddac1a34898b67db68d7124d59f88881d862b183c"
-     }
-    ]
-   },
-   "sha256": "51f553fa031d14d407064460e0f5b31f431506540ee5f36b34b8072143a84d7d"
-  },
-  {
-   "id": "ara_mes_fa-c08",
-   "area": "otros",
-   "resumen": "Limitar los precios de los alimentos básicos.",
-   "cita": "Feijóo, Abascal, Prohens, feu-vos a la idea que apujarem el salari mínim, que acabarem amb l’especulació, millorarem les condicions dels treballadors, limitarem la compra a no residents i limitarem els preus dels aliments bàsics",
-   "cita_traduccion": "Feijóo, Abascal, Prohens, haceos a la idea de que subiremos el salario mínimo, que acabaremos con la especulación, mejoraremos las condiciones de los trabajadores, limitaremos la compra a no residentes y limitaremos los precios de los alimentos básicos",
-   "quien": "Carme Gomila (cabeza de lista de Ara Més–Front Ampli al Congreso por Illes Balears)",
-   "formato": "mitin (Palma)",
-   "fecha": "2026-11-08",
-   "url": "https://www.democrata.es/ca/politica/ampliacio-ada-colau-adverteix-que-al-psoe-li-falten-forces-per-plantar-cara-a-les-elits/",
-   "medio": "Demócrata",
-   "fuente_local": "data/sources/compromisos/ara_mes_fa/democrata_20261108_miting_palma.txt",
-   "cuantificado": false,
-   "veces": {
-    "n": 2,
-    "nota": "Ocasiones públicas distintas, incluida la de la cita principal: visita a Sóller (7-nov; Última Hora y Periódico de Ibiza publican la misma crónica de Europa Press) y mitin de Palma (8-nov; Demócrata y NacióDigital recogen el mismo acto).",
-    "ocasiones": [
-     {
-      "fecha": "2026-11-07",
-      "ocasion": "visita a Sóller sobre el coste de la vida (Europa Press, estilo indirecto, con declaraciones de Gomila)",
-      "url": "https://www.ultimahora.es/noticias/elecciones-29n/2026/11/07/2745205/ara-mes-front-ampli-propone-topar-precios-alimentos-basicos-gravar-beneficios-excesivos-distribuidores-1.html",
-      "medio": "Última Hora (Europa Press)",
-      "fuente_local": "data/sources/compromisos/ara_mes_fa/ultimahora_ep_20261107_soller.txt",
-      "cita": "ha propuesto establecer un tope en los precios de los alimentos básicos para garantizar que los productos frescos, saludables y de temporada estén al alcance de todas las familias",
-      "sha256": "65b0cdf4ae4f8c6270d3ac4dd7852e7bfad971d00d8b7d116e96134655ab63b0"
-     },
-     {
-      "fecha": "2026-11-07",
-      "ocasion": "misma visita (Europa Press en Periódico de Ibiza)",
-      "url": "https://www.periodicodeibiza.es/noticias/elecciones-29n/2026/11/07/2745149/ara-mes-front-ampli-propone-topar-precios-alimentos-basicos-gravar-beneficios-excesivos-distribuidores.html",
-      "medio": "Periódico de Ibiza y Formentera (Europa Press)",
-      "fuente_local": "data/sources/compromisos/ara_mes_fa/periodicodeibiza_ep_20261107_soller.txt",
-      "cita": "poner límites a los abusos y garantizar precios asequibles",
-      "sha256": "5029d3cf5200324cab17f9a081aa2408827b48f3d44202bb73a66ebbda49cf02"
-     },
-     {
-      "fecha": "2026-11-08",
-      "ocasion": "mismo mitin (NacióDigital, estilo indirecto)",
-      "url": "https://naciodigital.cat/politica/colau-dispara-contra-el-psoe-li-tremolen-les-cames-davant-les-elits.html",
-      "medio": "NacióDigital",
-      "fuente_local": "data/sources/compromisos/ara_mes_fa/naciodigital_20261108_miting_palma.txt",
-      "cita": "posar límits alsp reus dels aliments bàsics",
-      "cita_traduccion": "poner límites a los precios de los alimentos básicos",
-      "sha256": "ad5ea5ee0a5d05fb98e1e84ddac1a34898b67db68d7124d59f88881d862b183c"
-     }
-    ]
-   },
-   "sha256": "51f553fa031d14d407064460e0f5b31f431506540ee5f36b34b8072143a84d7d"
-  },
-  {
-   "id": "ara_mes_fa-c09",
-   "area": "otros",
-   "resumen": "Derogar la ley estatal que declara la tauromaquia patrimonio cultural, suprimir las ayudas públicas a los festejos taurinos y prohibirlos, incluidos los correbous, así como el acceso de menores.",
-   "cita": "Una altra de les prioritats és derogar la llei estatal que declara la tauromàquia patrimoni cultural i eliminar qualsevol ajuda o subvenció pública destinada a aquestes pràctiques.",
-   "cita_traduccion": "Otra de las prioridades es derogar la ley estatal que declara la tauromaquia patrimonio cultural y eliminar cualquier ayuda o subvención pública destinada a estas prácticas.",
-   "quien": "Ara Més–Front Ampli (nota oficial), propuestas presentadas por Carme Gomila, cabeza de lista, y Guillermo Amengual (Progreso en Verde, suplente)",
-   "formato": "documento oficial (nota de prensa del partido)",
-   "fecha": "2026-11-10",
-   "url": "https://aramesfrontampli.cat/noticies/ara-mes-front-ampli-es-compromet-a-posar-fi-als-espectacles-amb-animals-i-a-impulsar-una-llei-de-benestar-animal-sense-exclusions",
-   "medio": "Ara Més–Front Ampli (nota de prensa, aramesfrontampli.cat)",
-   "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261110_benestar_animal.txt",
-   "cuantificado": false,
-   "veces": {
-    "n": 1,
-    "nota": "Una ocasión: presentación de las propuestas de bienestar animal (Calvià, 10-nov); la otra cita es de la misma nota.",
-    "ocasiones": [
-     {
-      "fecha": "2026-11-10",
-      "ocasion": "misma nota",
-      "url": "https://aramesfrontampli.cat/noticies/ara-mes-front-ampli-es-compromet-a-posar-fi-als-espectacles-amb-animals-i-a-impulsar-una-llei-de-benestar-animal-sense-exclusions",
-      "medio": "Ara Més–Front Ampli (nota de prensa, aramesfrontampli.cat)",
-      "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261110_benestar_animal.txt",
-      "cita": "ARAMÉS – Front Ampli defensa la prohibició de tots els festejos taurins, incloses les corregudes de toros i els correbous, així com la prohibició de l'accés dels menors a aquests espectacles.",
-      "cita_traduccion": "ARAMÉS – Front Ampli defiende la prohibición de todos los festejos taurinos, incluidas las corridas de toros y los correbous, así como la prohibición del acceso de los menores a estos espectáculos.",
-      "sha256": "2832b0e3bd5750de479272d130b9849cdc2cb44c459ebd6f17a66914e1ffb434"
-     }
-    ]
-   },
-   "sha256": "2832b0e3bd5750de479272d130b9849cdc2cb44c459ebd6f17a66914e1ffb434"
-  },
-  {
-   "id": "ara_mes_fa-c10",
-   "area": "otros",
-   "resumen": "Prohibir la cría en cautividad y las exhibiciones en zoológicos y delfinarios y poner fin a la tracción animal con fines turísticos (galeras de caballos), con ayudas para sustituir los carruajes.",
-   "cita": "La coalició proposa prohibir-ne la reproducció en captivitat als zoològics i delfinaris, eliminar les exhibicions i impedir les interaccions directes amb els visitants",
-   "cita_traduccion": "La coalición propone prohibir su reproducción en cautividad en los zoológicos y delfinarios, eliminar las exhibiciones e impedir las interacciones directas con los visitantes",
-   "quien": "Ara Més–Front Ampli (nota oficial)",
-   "formato": "documento oficial (nota de prensa del partido)",
-   "fecha": "2026-11-10",
-   "url": "https://aramesfrontampli.cat/noticies/ara-mes-front-ampli-es-compromet-a-posar-fi-als-espectacles-amb-animals-i-a-impulsar-una-llei-de-benestar-animal-sense-exclusions",
-   "medio": "Ara Més–Front Ampli (nota de prensa, aramesfrontampli.cat)",
-   "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261110_benestar_animal.txt",
-   "cuantificado": false,
-   "veces": {
-    "n": 1,
-    "nota": "Una ocasión: presentación de las propuestas de bienestar animal (Calvià, 10-nov).",
-    "ocasiones": []
-   },
-   "sha256": "2832b0e3bd5750de479272d130b9849cdc2cb44c459ebd6f17a66914e1ffb434"
-  },
-  {
-   "id": "ara_mes_fa-c11",
-   "area": "fiscalidad",
-   "resumen": "Reducir el IVA de los servicios veterinarios.",
-   "cita": "la candidatura proposa reduir l'IVA dels serveis veterinaris perquè l'atenció sanitària dels animals de companyia sigui més accessible per a les famílies",
-   "cita_traduccion": "la candidatura propone reducir el IVA de los servicios veterinarios para que la atención sanitaria de los animales de compañía sea más accesible para las familias",
-   "quien": "Ara Més–Front Ampli (nota oficial)",
-   "formato": "documento oficial (nota de prensa del partido)",
-   "fecha": "2026-11-10",
-   "url": "https://aramesfrontampli.cat/noticies/ara-mes-front-ampli-es-compromet-a-posar-fi-als-espectacles-amb-animals-i-a-impulsar-una-llei-de-benestar-animal-sense-exclusions",
-   "medio": "Ara Més–Front Ampli (nota de prensa, aramesfrontampli.cat)",
-   "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261110_benestar_animal.txt",
-   "cuantificado": false,
-   "veces": {
-    "n": 1,
-    "nota": "Una ocasión: presentación de las propuestas de bienestar animal (Calvià, 10-nov).",
-    "ocasiones": []
-   },
-   "sha256": "2832b0e3bd5750de479272d130b9849cdc2cb44c459ebd6f17a66914e1ffb434"
-  }
- ],
- "prioridades": [
-  {
-   "id": "ara_mes_fa-c01",
-   "justificacion": "La nota oficial de presentación del lema (6-nov) la incluye entre las cuatro medidas de vivienda, «un dels eixos centrals» (uno de los ejes centrales) de la campaña, y Gomila la repite en el mitin de Palma (8-nov) entre los cinco compromisos que dirige a PP y Vox."
-  },
-  {
-   "id": "ara_mes_fa-c02",
-   "justificacion": "Primera de las medidas de vivienda de la nota oficial del lema de campaña (6-nov); la vivienda es el eje que la coalición presenta como central desde la presentación de candidatos (27-oct)."
-  },
-  {
-   "id": "ara_mes_fa-c04",
-   "justificacion": "Figura en la misma frase de la nota oficial de presentación del lema (6-nov) que c01, c02 y c03, entre las cuatro medidas con las que la coalición propone revertir la crisis de vivienda, que la nota presenta como «un dels eixos centrals» (uno de los ejes centrales) de su propuesta. En el mitin de Palma (8-nov), Gomila incluyó «acabarem amb l'especulació» entre los cinco compromisos que dirige a PP y Vox, sin referirse expresamente a la compra."
-  },
-  {
-   "id": "ara_mes_fa-c05",
-   "justificacion": "Comunicado monográfico de la coalición con declaraciones de la cabeza de lista (12-nov), recogido por EFE, que el partido enmarca en su reivindicación de un IVA propio reducido para las islas."
-  },
-  {
-   "id": "ara_mes_fa-c06",
-   "justificacion": "Propuesta presentada en rueda de prensa monográfica de la cabeza de lista (10-nov), con apoyo de Recortes Cero, socio de la coalición."
-  },
-  {
-   "id": "ara_mes_fa-c07",
-   "justificacion": "Gomila lo anuncia en primera persona («apujarem el salari mínim») y en primer lugar entre los cinco compromisos que dirige a Feijóo, Abascal y Prohens al cierre de su intervención en el mitin de Palma (8-nov), la misma enumeración que justifica c01 y c08; NacióDigital también lo recoge."
-  },
-  {
-   "id": "ara_mes_fa-c08",
-   "justificacion": "La cabeza de lista la presentó en Sóller (7-nov) como propuesta de la coalición frente al coste de la vida (Europa Press) y la incluyó al día siguiente entre los cinco compromisos que enumera ante PP y Vox al cierre del mitin de Palma (8-nov), recogido literal por Demócrata."
-  },
-  {
-   "id": "ara_mes_fa-c09",
-   "justificacion": "La nota de la presentación monográfica de las propuestas de bienestar animal de la cabeza de lista (Calvià, 10-nov) la llama «una altra de les prioritats»."
-  },
-  {
-   "id": "ara_mes_fa-c10",
-   "justificacion": "La nota de la presentación monográfica de las propuestas de bienestar animal de la cabeza de lista (Calvià, 10-nov) la llama «una de les principals propostes» de la coalición, le dedica su primer epígrafe («Posar fi als delfinaris, les galeres i els espectacles amb animals») y la lleva al subtítulo («eliminar les galeres de cavalls, transformar els delfinaris»)."
-  },
-  {
-   "id": "ara_mes_fa-c11",
-   "justificacion": "Figura en el subtítulo de la nota oficial de la presentación monográfica de bienestar animal (Calvià, 10-nov), junto a las galeras y los delfinarios («reduir l'IVA dels serveis veterinaris»), y en el epígrafe «serveis veterinaris més accessibles»."
-  }
- ],
+ "fecha": "2026-11-16",
+ "nota": "Compromisos de Ara Més-Front Ampli (notas oficiales de la coalición y su cabeza de lista, Carme Gomila) que no figuran en el programa «Viure bé, viure aquí» publicado el 16-nov (data/sources/programas/ara_mes_fa/ProgramaElectoral29N.txt, páginas del PDF de 17 págs.) y que el partido presenta como importantes. Complementan las 12 prioridades del programa (data/programas/ara_mes_fa/evaluacion.json). Hasta el 16-nov esta carpeta tenía base «compromisos» (10 prioridades evaluadas y revisadas el 12-nov); al publicarse el programa, nueve de esas diez están en él, a veces concretadas, y pasan a «descartados»; la restante, limitar la compra de vivienda por no residentes (ara_mes_fa-c01), forma el complemento. Cada compromiso se buscó en el texto completo del programa, por sus términos y por sinónimos. Nota anterior (base «compromisos», 12-nov): Ara Més–Front Ampli no había publicado programa para el 29-N a 12-nov-2026: lo elabora de forma participativa desde el 3-nov y no ha anunciado fecha. Se recogen los compromisos de su cabeza de lista, Carme Gomila, y de las notas oficiales de la coalición desde la convocatoria. La web aramesfrontampli.cat carga sus listados por JavaScript; se leyeron las cinco notas enlazadas en la portada y en las notas anteriores (3, 6, 10, 10 y 12-nov), además de la prensa. Varias medidas salen de una misma frase de la nota del lema de campaña (6-nov), por eso comparten cita. Hay 11 prioridades, menos de 12: entran todos los compromisos concretos que el partido destaca (enumerados en la nota del lema o en el mitin de Palma, o presentados en las notas monográficas del 10 y el 12-nov y en sus subtítulos). No queda ningún compromiso concreto sin priorizar. [Reatribución 13-nov-2026] La entrada pasa a ser el partido Ara Més. Cuentan las notas oficiales de la coalición, que encabeza Ara Més, y Carme Gomila, cabeza de lista, cuenta para Ara Més: además de presidenta de ERC en Baleares, es responsable de Estrategia y Relaciones Políticas de MÉS per Mallorca, partido de la federación, que la propuso; el Comité Federal de Ara Més la ratificó por unanimidad (dBalears y Canal 4 Diario, 24-oct; data/boe/afiliaciones_g1.json). Decisión del editor (13-nov, tarde): por la mañana se retiraron c07 y c08 y las apoyaturas en sus declaraciones, por constar solo como dirigente de ERC; se restauran tal como estaban aprobados (data/fase3/reatribucion_2026-11-13.md). [Auditoría de coherencia, 14-11-2026] ara_mes_fa-c03 («mobilitzar els 105.000 habitatges buits») pasa a «descartados»: nombra un recurso y el resultado, sin instrumento (prompt 1b, mismo corte que la revisión de UPN del 14-11 para «Suelo público para vivienda asequible»). Quedan 10 compromisos y 10 prioridades. [Revisión independiente, 17-11-2026] ara_mes_fa-c01 (limitar la compra de vivienda por no residentes) pasa a «descartados»: la medida 23 del programa (p. 4) prohíbe comprar vivienda salvo para la residencia habitual y permanente del comprador, lo que impide a un no residente cualquier compra que no sea para residir; mismo criterio que psoe-c05 y fa-c06. El complemento queda vacío y se retira compromisos/evaluacion.json (prompt 1b: «Si no hay ninguno, escribe seleccion.json con prioridades vacío y no escribas evaluación»).",
+ "compromisos": [],
+ "prioridades": [],
  "descartados": [
   {
    "medida": "Impuesto especial sobre los márgenes empresariales excesivos de las grandes empresas de producción y distribución alimentaria; prohibir la especulación financiera con alimentos",
@@ -440,6 +85,106 @@
     },
     "sha256": "d011b42243f7a909633fc41fb5a32302c3c9e3adc916fbc1f2cb7388890daea1"
    }
+  },
+  {
+   "id": "ara_mes_fa-c02",
+   "tema": "Poner topes a los precios del alquiler.",
+   "quien": "Ara Més–Front Ampli (nota oficial de presentación del lema de campaña), con declaraciones de Carme Gomila, cabeza de lista",
+   "fecha": "2026-11-06",
+   "url": "https://aramesfrontampli.cat/noticies/aramesfront-ampli-presenta-viure-be-viure-aqui-com-a-lema-de-campanya-per-a-les-eleccions-del-29-de-novembre",
+   "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261106_lema_campanya.txt",
+   "sha256": "d011b42243f7a909633fc41fb5a32302c3c9e3adc916fbc1f2cb7388890daea1",
+   "motivo": "Ya está en el programa, concretado: «Es limitarà, per llei, el preu del lloguer a zones tensionades en el 25 % de la renda neta de les llars de la secció censal» (medida 25, p. 4), con declaración automática de las zonas tensionadas (medida 24). Se evalúa en la prioridad ara_mes_fa-07 del programa."
+  },
+  {
+   "id": "ara_mes_fa-c04",
+   "tema": "Prohibir la compra especulativa de vivienda.",
+   "quien": "Ara Més–Front Ampli (nota oficial de presentación del lema de campaña), con declaraciones de Carme Gomila, cabeza de lista",
+   "fecha": "2026-11-06",
+   "url": "https://aramesfrontampli.cat/noticies/aramesfront-ampli-presenta-viure-be-viure-aqui-com-a-lema-de-campanya-per-a-les-eleccions-del-29-de-novembre",
+   "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261106_lema_campanya.txt",
+   "sha256": "d011b42243f7a909633fc41fb5a32302c3c9e3adc916fbc1f2cb7388890daea1",
+   "motivo": "Ya está en el programa, concretado: «Es prohibirà la compra d’habitatges per a finalitats que no siguin l’habitatge habitual i permanent de la persona compradora», y la compra de personas jurídicas con ánimo de lucro (medida 23, p. 4). Se evalúa en la prioridad ara_mes_fa-06 del programa."
+  },
+  {
+   "id": "ara_mes_fa-c05",
+   "tema": "Suprimir el IVA del transporte de mercancías con destino a las Illes Balears, sobre todo de alimentos y productos esenciales, como paso hacia un IVA reducido propio para las islas.",
+   "quien": "Ara Més–Front Ampli (nota oficial), con declaraciones de Carme Gomila, cabeza de lista",
+   "fecha": "2026-11-12",
+   "url": "https://aramesfrontampli.cat/noticies/aramesfront-ampli-reclama-eliminar-liva-del-transport-de-mercaderies-per-abaratir-el-cost-de-la-vida-a-les-illes-balears",
+   "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261112_iva_transport_mercaderies.txt",
+   "sha256": "95475dd326be9d9dd97166d013a4f85c26499253e781042560f9c9f328fbc02c",
+   "motivo": "Ya está en el programa: «Proposarem l’eliminació de l’IVA en el transport de mercaderies» (medida 5, p. 2), junto con el «IVA propi reduït» que la nota del 12-nov presentaba como objetivo. Se evalúa en la prioridad ara_mes_fa-04 del programa."
+  },
+  {
+   "id": "ara_mes_fa-c06",
+   "tema": "Un complemento para las pensiones más bajas de las Illes Balears que garantice unos ingresos mínimos adaptados al coste de la vida, con referencia a un salario mínimo balear propio.",
+   "quien": "Ara Més–Front Ampli (nota oficial), propuesta anunciada por Carme Gomila, cabeza de lista, en rueda de prensa",
+   "fecha": "2026-11-10",
+   "url": "https://aramesfrontampli.cat/noticies/ara-mesfront-ampli-proposa-un-complement-balear-a-les-pensions-per-garantir-una-jubilacio-digna",
+   "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261110_complement_pensions.txt",
+   "sha256": "0643f03fa19cb17f5da9da40858a091e9e453c4a12fe719dccb066a4a8dc1ea7",
+   "motivo": "Ya está en el programa: «Aprovarem un complement insular per a les pensions» (medida 2, p. 2), con especial atención a las pensiones mínimas y no contributivas; el programa no lo vincula a un salario mínimo balear. Se evalúa en la prioridad ara_mes_fa-02 del programa."
+  },
+  {
+   "id": "ara_mes_fa-c07",
+   "tema": "Subir el salario mínimo interprofesional.",
+   "quien": "Carme Gomila (cabeza de lista de Ara Més–Front Ampli al Congreso por Illes Balears)",
+   "fecha": "2026-11-08",
+   "url": "https://www.democrata.es/ca/politica/ampliacio-ada-colau-adverteix-que-al-psoe-li-falten-forces-per-plantar-cara-a-les-elits/",
+   "fuente_local": "data/sources/compromisos/ara_mes_fa/democrata_20261108_miting_palma.txt",
+   "sha256": "51f553fa031d14d407064460e0f5b31f431506540ee5f36b34b8072143a84d7d",
+   "motivo": "Ya está en el programa, concretado: un «Salari Mínim Interprofessional Illenc» y una ley que obligue a subir el SMI estatal hasta al menos el 60 % del salario medio bruto (medida 1, p. 2). Se evalúa en la prioridad ara_mes_fa-01 del programa."
+  },
+  {
+   "id": "ara_mes_fa-c08",
+   "tema": "Limitar los precios de los alimentos básicos.",
+   "quien": "Carme Gomila (cabeza de lista de Ara Més–Front Ampli al Congreso por Illes Balears)",
+   "fecha": "2026-11-08",
+   "url": "https://www.democrata.es/ca/politica/ampliacio-ada-colau-adverteix-que-al-psoe-li-falten-forces-per-plantar-cara-a-les-elits/",
+   "fuente_local": "data/sources/compromisos/ara_mes_fa/democrata_20261108_miting_palma.txt",
+   "sha256": "51f553fa031d14d407064460e0f5b31f431506540ee5f36b34b8072143a84d7d",
+   "motivo": "Ya está en el programa: «Controlarem el preu de la cistella dels aliments bàsics i, en cas d’acreditar-ne abusos, fixarem preus màxims» (medida 4, p. 2). Se evalúa en la prioridad ara_mes_fa-03 del programa."
+  },
+  {
+   "id": "ara_mes_fa-c09",
+   "tema": "Derogar la ley estatal que declara la tauromaquia patrimonio cultural, suprimir las ayudas públicas a los festejos taurinos y prohibirlos, incluidos los correbous, así como el acceso de menores.",
+   "quien": "Ara Més–Front Ampli (nota oficial), propuestas presentadas por Carme Gomila, cabeza de lista, y Guillermo Amengual (Progreso en Verde, suplente)",
+   "fecha": "2026-11-10",
+   "url": "https://aramesfrontampli.cat/noticies/ara-mes-front-ampli-es-compromet-a-posar-fi-als-espectacles-amb-animals-i-a-impulsar-una-llei-de-benestar-animal-sense-exclusions",
+   "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261110_benestar_animal.txt",
+   "sha256": "2832b0e3bd5750de479272d130b9849cdc2cb44c459ebd6f17a66914e1ffb434",
+   "motivo": "Ya está en el programa: derogar la Ley 18/2013, prohibir la entrada de menores, eliminar las subvenciones y acabar con «la resta de festejos taurins» (medida 156, p. 17; no nombra los correbous). Se evalúa en la prioridad ara_mes_fa-12 del programa."
+  },
+  {
+   "id": "ara_mes_fa-c10",
+   "tema": "Prohibir la cría en cautividad y las exhibiciones en zoológicos y delfinarios y poner fin a la tracción animal con fines turísticos (galeras de caballos), con ayudas para sustituir los carruajes.",
+   "quien": "Ara Més–Front Ampli (nota oficial)",
+   "fecha": "2026-11-10",
+   "url": "https://aramesfrontampli.cat/noticies/ara-mes-front-ampli-es-compromet-a-posar-fi-als-espectacles-amb-animals-i-a-impulsar-una-llei-de-benestar-animal-sense-exclusions",
+   "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261110_benestar_animal.txt",
+   "sha256": "2832b0e3bd5750de479272d130b9849cdc2cb44c459ebd6f17a66914e1ffb434",
+   "motivo": "Ya está en el programa: prohibir en delfinarios y zoológicos la cría en cautividad, los espectáculos con animales y la interacción con el público (medida 157, p. 17) y acabar con las calesas de caballos subvencionando su transición a carruajes eléctricos (medida 160, p. 17). No es prioridad del programa (véase extraccion.json)."
+  },
+  {
+   "id": "ara_mes_fa-c11",
+   "tema": "Reducir el IVA de los servicios veterinarios.",
+   "quien": "Ara Més–Front Ampli (nota oficial)",
+   "fecha": "2026-11-10",
+   "url": "https://aramesfrontampli.cat/noticies/ara-mes-front-ampli-es-compromet-a-posar-fi-als-espectacles-amb-animals-i-a-impulsar-una-llei-de-benestar-animal-sense-exclusions",
+   "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261110_benestar_animal.txt",
+   "sha256": "2832b0e3bd5750de479272d130b9849cdc2cb44c459ebd6f17a66914e1ffb434",
+   "motivo": "Ya está en el programa: «Reduirem l’IVA veterinari» (medida 159, p. 17). No es prioridad del programa (véase extraccion.json)."
+  },
+  {
+   "id": "ara_mes_fa-c01",
+   "tema": "Limitar la compra de vivienda en las Illes Balears por parte de personas no residentes.",
+   "quien": "Ara Més–Front Ampli (nota oficial de presentación del lema de campaña), con declaraciones de Carme Gomila, cabeza de lista",
+   "fecha": "2026-11-06",
+   "url": "https://aramesfrontampli.cat/noticies/aramesfront-ampli-presenta-viure-be-viure-aqui-com-a-lema-de-campanya-per-a-les-eleccions-del-29-de-novembre",
+   "fuente_local": "data/sources/compromisos/ara_mes_fa/arames_20261106_lema_campanya.txt",
+   "sha256": "d011b42243f7a909633fc41fb5a32302c3c9e3adc916fbc1f2cb7388890daea1",
+   "motivo": "Ya está en el programa con otras palabras y con más alcance: «Es prohibirà la compra d’habitatges per a finalitats que no siguin l’habitatge habitual i permanent de la persona compradora» (medida 23, p. 4). Un no residente solo podría comprar una vivienda para fijar en ella su residencia habitual y permanente, es decir, para pasar a ser residente; cualquier otra compra le quedaría prohibida, lo que va más allá de «limitar». La medida alcanza también a los residentes que compren una segunda vivienda y no usa el criterio de residencia, pero cubre lo que la coalición quería evitar con el compromiso, que las viviendas se destinen «a la inversió o a segones residències» (nota del 9-nov, epígrafe «Limitar la compra de no residents i combatre l'especulació»). Mismo criterio que psoe-c05 (el programa mantiene o amplía la medida con otras palabras) y fa-c06 (el programa la concreta y la supera); distinto de compromis-c02, donde el programa no recogía el rasgo que definía el compromiso (bajar las rentas). Se evalúa en la prioridad ara_mes_fa-06 del programa, con el mismo encaje legal «desfavorable» (art. 63 TFUE) que tenía la evaluación de este compromiso. [Revisión independiente, 17-11-2026: hasta entonces formaba el complemento.]"
   }
  ],
  "busqueda": {
@@ -449,6 +194,9 @@
    "mespermallorca.cat (misma plataforma): portada, que enlaza las mismas notas de la coalición.",
    "Prensa: Última Hora y Periódico de Ibiza (Europa Press, Sóller, 7-nov), Última Hora (EFE, IVA, 12-nov), Demócrata y NacióDigital (mitin de Palma, 8-nov), mallorca.com (presentación de candidatos, 27-oct; lema, 6-nov).",
    "Búsquedas web abiertas sobre Carme Gomila y la coalición (12-nov); el cupo de búsqueda es limitado. No se halló el texto de una nota del 4-nov sobre seguridad ferroviaria que mencionan los buscadores. Revisadas el 12-nov (noche) las nuevas pistas de promesas.json (cambios_2026-11-12b), incorporadas como ocasiones o descartes."
-  ]
- }
+  ],
+  "programa": "Programa electoral «Viure bé, viure aquí» (17 págs., 160 medidas numeradas, en catalán), publicado el 16-nov en aramesfrontampli.cat y catalogado ese día (data/sources/programas/ara_mes_fa/ProgramaElectoral29N.pdf, SHA-256 75149b3b…a6f8); analizado con el prompt 1 en data/programas/ara_mes_fa/. Cada compromiso de esta selección se buscó en las 153 medidas de extraccion.json y en el texto completo del programa, por sus términos y por sinónimos. No se ha hecho una búsqueda nueva de compromisos posteriores al 12-nov para el complemento (mismo alcance que Vox, Compromís, PSOE y Frente Amplio); los que constan en las notas oficiales del 14 al 16-nov están en el programa (véase lectura.md)."
+ },
+ "prompt": "docs/prompts/1b_seleccion_compromisos.md (sección «Partidos con programa: complemento»)",
+ "nota_prioridades": "Ninguna prioridad: los diez compromisos evaluados con base «compromisos» están en el programa del 16-nov y pasan a «descartados»: topes al alquiler (c02, medida 25), compra especulativa (c04, medida 23), IVA del transporte de mercancías (c05, medida 5), complemento de pensiones (c06, medida 2), salario mínimo (c07, medida 1), precios de los alimentos básicos (c08, medida 4), tauromaquia (c09, medida 156), zoológicos, delfinarios y calesas (c10, medidas 157 y 160), IVA veterinario (c11, medida 159) y la limitación de la compra de vivienda por no residentes (c01, medida 23, que prohíbe toda compra que no sea para la residencia habitual y permanente del comprador). Sin prioridades no hay evaluación (prompt 1b). [Revisión independiente, 17-11-2026: antes «Una prioridad», c01, que se evaluaba con la evaluación revisada el 12-nov (antes ara_mes_fa-01).]"
 }

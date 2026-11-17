@@ -259,9 +259,9 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-14T09:55:00+01:00",
+        "checked_at": "2026-11-17T10:00:00+01:00",
         "anunciado": null,
-        "verificacion": "14-nov: ni upn.org (entradas y biblioteca de medios) ni la web de la coalición upn-pp.es tienen programa. upn-pp.es publica en su portada una lista de «Compromisos» de la coalición UPN-PP (página creada el 10-nov y modificada el 13-nov), que no se presenta como programa; se usa como fuente en promesas.json."
+        "verificacion": "17-nov, 10:00: sin programa. upn.org (entradas hasta el 13-nov, biblioteca de medios hasta el 11-nov, portada sin enlace a programa) y upn-pp.es (portada modificada por última vez el 16-nov a las 15:50 con la lista de «Compromisos»; entradas hasta el 15-nov; medios del 16-nov: avisos de transparencia de patrocinio y fotos) no publican programa de la coalición."
       },
       "programa_aplicable": "UPN no ha publicado programa propio para el 29-N. Concurre dentro de la coalición UPN-PP; según el preacuerdo UPN-PP (13-oct-2026), el programa de la coalición lo redacta una comisión conjunta de ambos partidos (sin publicar). En los pasos 1 y 2 solo cuenta lo que dice UPN o lo que firma como parte de la coalición, no lo que dice el PP por su cuenta.",
       "notas": "Los electos de UPN irán al Grupo Mixto según el acuerdo. ppnavarra.es no muestra contenido del 29N. [13-nov-2026] Desde esta fecha la entrada describe el partido, no la coalición electoral: en los pasos 1 y 2 se muestran partidos y en el paso 3 papeletas (ver «papeletas»).",
@@ -1411,9 +1411,9 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-14T09:55:00+01:00",
+        "checked_at": "2026-11-17T10:00:00+01:00",
         "anunciado": null,
-        "verificacion": "14-nov, 09:50: podemos.info, abierto en un navegador (las peticiones automatizadas reciben HTTP 403). Entradas (última del 16-oct) y biblioteca de medios (último PDF del 19-oct): sin programa del 29N. 13-nov: mismo resultado."
+        "verificacion": "17-nov, 10:00: podemos.info, abierto en un navegador: entradas (última del 16-oct), páginas (última modificada el 19-oct) y biblioteca de medios (último PDF del 19-oct) sin programa del 29N; la portada no enlaza programa ni web de campaña."
       },
       "programa_aplicable": "Programa de Podemos en sus 41 circunscripciones. En la Comunitat Valenciana va dentro de Compromís: Front Valencià y en Canarias dentro de UPC (aplican los de esas coaliciones). En Cataluña no presenta lista y apoya a ERC; tampoco en Baleares ni Melilla.",
       "notas": "Últimos archivos en podemos.info (19-oct): ninguno es programa del 29N (los «Programa» son de europeas 2024 y 2025). Consulta a la Asamblea del 16-oct aprobó la estrategia electoral. Civio indica que la lista de León no fue proclamada, pero el BOE de 3-nov (y su corrección de 7-nov) sí la recoge: se cuenta León.",
@@ -1655,7 +1655,7 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-14T09:55:00+01:00",
+        "checked_at": "2026-11-17T10:00:00+01:00",
         "anunciado": null,
         "documento_programatico": {
           "tipo": "Manifiesto electoral (16 ejes); no se denomina programa",
@@ -1669,7 +1669,7 @@
           "texto": "data/sources/programas/upc/manifiesto-upc.txt",
           "pagina_html": "data/sources/programas/upc/manifiesto-page.html"
         },
-        "verificacion": "14-nov: unidadpueblocanario.org solo ofrece el manifiesto electoral (sección /programa = «Manifiesto», mismo PDF); blog sin entradas nuevas desde el 9-nov."
+        "verificacion": "17-nov, 10:00: unidadpueblocanario.org sigue ofreciendo solo el manifiesto electoral (/programa = «Manifiesto»; PDF con el mismo sha256 y Last-Modified del 15-nov); sitemap sin páginas nuevas y última noticia del 9-nov. nuevacanarias.org sin entradas ni medios desde 2025; canarias.podemos.info bloquea también el navegador (verificación anti-bots de Cloudflare)."
       },
       "programa_aplicable": "NC-BC no ha publicado programa propio para el 29-N. Concurre dentro de Unidad del Pueblo Canario (NC-BC, Podemos, IU y Sumar), cuyo único documento es un «Manifiesto electoral» conjunto que NC-BC firma.",
       "notas": "Se marca no_publicado porque el único documento es un «Manifiesto electoral» breve (~1.340 palabras) y la web lo presenta como «Manifiesto», no como programa. Decisión editorial revisable. Los dominios unidaddelpueblocanario.es (en venta) no son oficiales. La web de la coalición es https://www.unidadpueblocanario.org/; la del partido NC-BC no se ha verificado, por eso «web» queda vacía. [13-nov-2026] Desde esta fecha la entrada describe el partido, no la coalición electoral: en los pasos 1 y 2 se muestran partidos y en el paso 3 papeletas (ver «papeletas»).",
@@ -1732,23 +1732,26 @@
       "escanos_2023_nota": "En 2023 se eligió dentro de la coalición Sumar (31 escaños en total); no hay cifra propia de 2023 para esta candidatura. Vicenç Vidal (Més per Mallorca) fue elegido en la lista de Sumar por Baleares.",
       "proyeccion_motivo": "Escaño de un integrante (Més per Mallorca) en la XV legislatura.",
       "programa": {
-        "estado": "no_publicado",
-        "url": null,
-        "fecha": null,
-        "titulo": null,
-        "paginas": null,
-        "sha256": null,
-        "fichero": null,
-        "texto": null,
-        "checked_at": "2026-11-14T09:55:00+01:00",
+        "estado": "publicado",
+        "url": "https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf",
+        "fecha": "2026-11-16",
+        "titulo": "Programa electoral. Eleccions 29 novembre 2026 («Viure bé, viure aquí.»)",
+        "paginas": 17,
+        "sha256": "75149b3b5db92d0a8de0332b005c5114f04c63062fa5cda932eacf65c9f8a6f8",
+        "fichero": "data/sources/programas/ara_mes_fa/ProgramaElectoral29N.pdf",
+        "texto": "data/sources/programas/ara_mes_fa/ProgramaElectoral29N.txt",
+        "checked_at": "2026-11-16T20:45:00+01:00",
         "anunciado": {
           "fecha": null,
           "detalle": "Programa en elaboración participativa desde el 3-nov-2026; sin fecha de publicación anunciada.",
           "fuente": "https://aramesfrontampli.cat/noticies/ara-mes-front-ampli-obre-el-seu-programa-electoral-a-la-ciutadania-per-portar-les-preocupacions-reals-de-les-illes-balears-al-congres"
         },
-        "verificacion": "14-nov: aramesfrontampli.cat sin programa (última nota del 13-nov); sigue el proceso participativo anunciado el 3-nov."
+        "verificacion": "16-nov, 20:45: la portada de aramesfrontampli.cat tiene un bloque «Programa electoral» («descarrega el programa electoral complet») que enlaza este PDF, alojado en media.timtul.com, el almacén de medios de la web de MÉS per Mallorca (web_mespermallorca) sobre el que funciona la web de la coalición. Por eso se considera oficial. Descargado directamente (HTTP 200, application/pdf, 2.942.143 bytes); cabeceras en data/sources/programas/ara_mes_fa/ProgramaElectoral29N.headers.txt. 160 medidas numeradas en 17 páginas. El 14-nov la web aún no tenía programa.",
+        "fecha_fuente": "Cabecera Last-Modified: 16-nov 17:54 UTC (18:54 CET), coincide con la marca 20261116175411 del nombre del fichero; CreationDate del PDF 16-nov 18:50 CET (Affinity). No se encontró nota de prensa del lanzamiento. El título es el de la portada (imagen: «Programa electoral · Eleccions 29 novembre 2026 · Viure bé, viure aquí.»).",
+        "idioma": "ca",
+        "pagina_campana": "https://aramesfrontampli.cat/"
       },
-      "programa_aplicable": "Ara Més no ha publicado programa propio para el 29-N. Concurre dentro de la coalición Ara Més-Front Ampli (con Movimiento Sumar, Izquierda Unida, Progreso en Verde y Recortes Cero), que elabora un programa participativo (pendiente).",
+      "programa_aplicable": "Programa de la coalición Ara Més-Front Ampli (con Movimiento Sumar, Izquierda Unida, Progreso en Verde y Recortes Cero), publicado el 16-nov («Viure bé, viure aquí», 17 pp., en catalán). Es el programa oficial de Ara Més; para los firmantes del pacto que forman el Frente Amplio es un documento conjunto (decisión del editor del 13-nov).",
       "notas": "La web https://aramesfrontampli.cat/ es la de la coalición; la del partido Ara Més no se ha verificado, por eso «web» queda vacía. Ara Més es la federación de MÉS per Mallorca, Més per Menorca y Ara Eivissa. Carme Gomila, cabeza de lista de la coalición, es responsable de Estrategia y Relaciones Políticas de MÉS per Mallorca, que la propuso; el Comité Federal de Ara Més la ratificó por unanimidad (dBalears y Canal 4 Diario, 24-oct-2026; data/boe/afiliaciones_g1.json). Es también presidenta de ERC en Baleares. Decisión del editor (13-nov-2026): lo que dice Gomila cuenta para Ara Més, no para ERC; también las notas oficiales de la coalición. [13-nov-2026] Desde esta fecha la entrada describe el partido, no la coalición electoral: en los pasos 1 y 2 se muestran partidos y en el paso 3 papeletas (ver «papeletas»).",
       "fuentes": [
         "https://aramesfrontampli.cat/noticies/ara-mes-front-ampli-obre-el-seu-programa-electoral-a-la-ciutadania-per-portar-les-preocupacions-reals-de-les-illes-balears-al-congres",
@@ -1916,9 +1919,9 @@
         "sha256": null,
         "fichero": null,
         "texto": null,
-        "checked_at": "2026-11-14T09:55:00+01:00",
+        "checked_at": "2026-11-17T10:00:00+01:00",
         "anunciado": null,
-        "verificacion": "14-nov: junts.cat (entradas hasta el 13-nov a las 21:24 y biblioteca de medios: boletines «Més Junts») sin programa del 29N; el menú solo enlaza el manifiesto del partido."
+        "verificacion": "17-nov, 10:00: junts.cat (entradas hasta el 16-nov a las 21:02, biblioteca de medios hasta el 16-nov sin PDF, páginas nuevas solo de la sección municipal de Sant Boi) sin programa del 29N; el menú sigue enlazando el manifiesto del partido y la sección permanente «Propostes», que no es un programa electoral."
       },
       "programa_aplicable": "Programa único para Cataluña (pendiente).",
       "notas": "El último programa en la sección de transparencia es el de las autonómicas 12M 2024.",
@@ -1977,19 +1980,34 @@
       "escanos_2023_nota": null,
       "proyeccion_motivo": "Escaños en el Congreso de la XV legislatura.",
       "programa": {
-        "estado": "no_publicado",
-        "url": null,
-        "fecha": null,
-        "titulo": null,
-        "paginas": null,
-        "sha256": null,
-        "fichero": null,
-        "texto": null,
-        "checked_at": "2026-11-14T09:55:00+01:00",
+        "estado": "publicado",
+        "url": "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf",
+        "fecha": "2026-11-16",
+        "titulo": "Programa. Posible Egin. Garantía y derechos",
+        "paginas": 30,
+        "sha256": "ceb655c9c8ebb036a15fa7829865d6e2d178525eb7db92629d702ac5e8d16047",
+        "fichero": "data/sources/programas/eh_bildu/posibleegin-programa-cas.pdf",
+        "texto": "data/sources/programas/eh_bildu/posibleegin-programa-cas.txt",
+        "checked_at": "2026-11-16T20:48:00+01:00",
         "anunciado": null,
-        "verificacion": "14-nov: ehbildu.eus (portada, noticias, sección Documentos y webs territoriales) sin programa del 29N; la sección Documentos solo tiene documentos sectoriales anteriores."
+        "verificacion": "16-nov, 20:48: la noticia oficial de ehbildu.eus del 16-nov «EH Bildu presenta una agenda de medidas para reforzar los derechos sociales y ampliar el autogobierno de Euskal Herria» (sección Elecciones) resume el programa para el Congreso y el Senado y enlaza «Programa electoral» a este PDF del mismo dominio; la versión en euskera de la noticia enlaza la versión en euskera. Descargado directamente (HTTP 200, application/pdf, 571.442 bytes); cabeceras en data/sources/programas/eh_bildu/posibleegin-programa-cas.headers.txt.",
+        "fecha_fuente": "Fecha 2026-11-16 de la noticia oficial; CreationDate/ModDate del PDF 16-nov 10:40 CET (Adobe InDesign). El servidor no envía Last-Modified. El título es el de la portada (imagen: «programa · Posible Egin. · Garantía y derechos · ehbildu»).",
+        "idioma": "es",
+        "pagina_campana": "https://ehbildu.eus/es/noticias/eh-bildu-presenta-una-agenda-de-medidas-para-reforzar-los-derechos-sociales-y-ampliar-el-autogobierno-de-euskal-herria",
+        "otros_documentos": [
+          {
+            "tipo": "Versión en euskera del mismo programa (PDF separado; no descargado ni extraído)",
+            "titulo": "Programa. Posible Egin.",
+            "url": "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-eus.pdf",
+            "idioma": "eu",
+            "paginas": 30,
+            "sha256": "69bce4b5e5bf5f003c4f3d5e3e4558c89483bf182ce021fc3daa56e03509c190",
+            "fichero": null,
+            "texto": null
+          }
+        ]
       },
-      "programa_aplicable": "No consta programa navarro separado; comprobar cuando se publique.",
+      "programa_aplicable": "Programa único de EH Bildu publicado el 16-nov («Posible Egin», 30 pp., en castellano y euskera), para Euskadi y Navarra: incluye puntos propios de Navarra (Convenio Económico, Bardenas). No hay programa navarro separado.",
       "notas": "En Navarra el BOE de 3-nov la nombraba «EH Bildu-ERC»; la corrección BOE-A-2026-23383 (7-nov) la deja como «EUSKAL HERRIA BILDU (EH BILDU)». En el Senado va en coalición con ERC. El 8-nov presentó el lema «Posible Egin», sin programa.",
       "fuentes": [
         "https://ehbildu.eus/es/documentos",

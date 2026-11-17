@@ -1,0 +1,110 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-17",
+ "alcance": "12 prioridades × 8 criterios y campos «titulo», «resumen» y «beneficiarios» de data/programas/ara_mes_fa/evaluacion.json, y las justificaciones de las 12 prioridades de extraccion.json, contra el programa «Viure bé, viure aquí» de Ara Més-Front Ampli (17 págs., en catalán; SHA-256 75149b3b…a6f8, comprobado en la copia catalogada y en una nueva descarga de media.timtul.com del 17-nov, que coincide; el .txt coincide byte a byte con pdftotext -layout) y las fuentes citadas (prompt 4). Se leyó el programa entero (160 medidas). Las 12 citas son literales, de la página indicada (cada tramo separado por «[...]» también), y sus traducciones al castellano son fieles; verify_quotes: 171 citas, 0 no encontradas. Todos los fragmentos del programa entrecomillados en los textos y las justificaciones están en el programa, y los de otras fuentes (notas oficiales del 6, 9, 10, 12, 14 y 15-nov, crónicas del mitin de Palma y de Sóller, BOE, TC, Banco de España, Fedea, La Moncloa) se cotejaron en su copia local o en la fuente. Se abrieron las 166 URL distintas de la evaluación y las 7 de la carpeta compromisos/: responden todas salvo imf.org, gao.gov y diw.de (403 a peticiones automáticas; las tres fuentes están ya citadas y comprobadas en evaluaciones aprobadas), EUR-Lex (página de espera 202; el Reglamento 1008/2008 y la Directiva 2006/112 consolidada se leyeron en publications.europa.eu) y repository.essex.ac.uk y gov.pl (sin respuesta desde esta red; se leyeron en web.archive.org, incluido el PDF de Holford y Rabe, 2022). Se comprobó cada cifra, fecha, artículo y sentencia en su fuente (EAES 2024, RD 126/2026 y 1077/2017, memorias del Ministerio de Trabajo, estadística de pensiones de agosto de 2026, RDL 3/2026, Directiva del IVA arts. 6, 98, 104 y anexo III, B2 y B5 de la Estadística de la Enseñanza 2023-2024, informe de Educo, INE 59238, CNA 2025, Eurostat ilc_li02 e ilc_li10, Revista Activa de la Seguridad Social, ECV 2025, Estadística Registral 4T 2025, STC 26/2025 y 79/2024, DORA 2027-2031, notas de Aena, EGATUR y FRONTUR, art. 20 del Reglamento 1008/2008, BOCG A-79-1, cuadros 13.9 y 13.10 del Banco de España, Fedea EEE 2026/24 y FPP 2026/01, Observatorio de deuda de la AIReF, Ley 39/2006 tras la Ley 4/2026, Imserso a 31-10-2026, Ageing Report 2024, nivel acordado de 2026, STC 82/1986, EBEP, LOPJ, informe del Comité de Expertos de 2024 y Encuesta de usos lingüísticos de 2014). Se rehicieron todos los cálculos propios: 60 % de 29.540 € = 17.724 € (630 € sobre el SMI de 2026); 32.175 × 100 € × 14 = 45 M€; 7.770.866 × 200 € × 12 = 18.650 M€ (1.554 M€ si fuera anual); comedor, 746.619 + 1.863.783 = 2,61 millones de alumnos × 5,57 € × 175 días = 2.544 M€, y 1.104.969 usuarios = 1.077 M€; dependencia, 0,9 % y 0,85 % de 1.690.012 M€ = 15.210 y 14.365 M€; Aena, 1 % de 47.154.803 pasajeros × 10,52 € = 4,96 M€; todos correctos. Se aplicó el mismo listón que las evaluaciones equivalentes aprobadas (data/programas/*/evaluacion.json y compromisos/evaluacion.json; en especial frente_amplio-04, -08 y -11, psoe-04 y -07, pnv-02, erc-01, -08 y -11, compromis-11, cc-03 y -04, podemos-02, bng-c02, upc-04 y la evaluación de los compromisos de Ara Més revisada el 12-nov).",
+ "seleccion": "Las 12 prioridades coinciden con extraccion.json y representan el programa. El documento no tiene índice, introducción, resumen ni medidas destacadas, y la web de la coalición enlaza directamente el PDF sin página de prioridades (copia del 16-nov), así que el criterio solo puede ser el del propio documento (orden, apertura de bloques y secciones, extensión, repetición), corroborado con lo que la coalición presenta como sus propuestas principales en sus notas oficiales y en el mitin de su cabeza de lista: el mismo que en los partidos con programa sin resumen y el que el prompt 1 pide. Comprobado: cada uno de los cinco bloques tiene al menos una prioridad; ara_mes_fa-01 (medida 1) es la más extensa de su bloque (105 palabras), ara_mes_fa-09 abre la sección de financiación y sus medidas 67 a 69 son las tres más extensas del bloque «CANVI DE MODEL ECONÒMIC», ara_mes_fa-11 (medida 123) es la más extensa del bloque «CANVIS SOCIALS I GLOBALS», ara_mes_fa-10 repite el 1,7 % del PIB en dos medidas (78 y 90) y ara_mes_fa-06, -08 y -12 abren su bloque o sección; las citas de las notas del 6, 10, 12, 14 y 15-nov y del mitin de Palma (8-nov) que se usan como corroboración son literales (copias locales). El bloque «LA VIDA MÉS FÀCIL» aporta cinco de las doce (medidas 1, 2, 4, 5 y 6, de la sección que abre el programa), más que su peso en número de medidas (22 de 160); cada una está además respaldada por una nota oficial o por el mitin de Palma como propuesta principal («Entre les principals propostes de la coalició destaca...», 14-nov), y el lema y el bloque inicial sitúan el coste de la vida en el centro, de modo que la selección es justificable y no favorece una lectura. Véase la duda sobre las alternativas. Sin correcciones en extraccion.json.",
+ "igual_estandar": "Decisiones sobre las dudas del analista y las desviaciones respecto a evaluaciones aprobadas: (1) ara_mes_fa-01, financiación «no_verificable» → «mixta». El suelo del SMI estatal se define sobre el salario medio bruto (estimable con la EAES del INE), como frente_amplio-08, que es «mixta» porque su referencia permitía estimar el suelo; psoe-04 era «no_verificable» por no decir si el salario medio era bruto o neto, y pnv-02 porque su única medida era un salario mínimo vasco sin cuantía, que aquí es una de dos partes. En propuestas con varias medidas de las que una es estimable, las aprobadas son «mixta» (compromis-11, frente_amplio-11). (2) ara_mes_fa-06, encaje legal «desfavorable»: se mantiene. Es la misma medida que podemos-02 («Prohibir comprar vivienda salvo para vivir en ella», «desfavorable»: Festersen y Konle), con el mismo texto; bng-c02 es «mixta» porque el líder no precisó si «uso residencial» obligaba a residir, y aquí el programa lo dice («l’habitatge habitual i permanent de la persona compradora»). Las compras de personas jurídicas (compromis-01, «mixta») son la parte accesoria. (3) ara_mes_fa-04, evidencia «desfavorable» → «mixta» respecto a la evaluación de compromisos del 12-nov: se mantiene «mixta». Aquella evaluaba solo la supresión del IVA del flete, que el diseño del IVA contradice; el programa añade como primera medida un IVA reducido sobre las ventas finales, cuya traslación a precios es dispar (completa en los alimentos en España, Banco de España; parcial en la restauración francesa, Benzarti y Carloni), y las rebajas de IVA aprobadas en otros partidos son «mixta» (vox-02, pnv-05). (4) ara_mes_fa-05, financiación «mixta»: se mantiene. Usar la periodicidad mensual de la nota oficial de la coalición del 14-nov (comprobada) es tomar del propio partido un dato que el programa omite; el texto lo dice y da también el coste si fuera anual, y la concreción, que se juzga solo sobre el programa, es «mixta» precisamente por esa omisión. Con cualquiera de las dos lecturas el coste es estimable y el programa no dice cómo se paga, que es la rúbrica «mixta». El precio del menú (5,57 €) es de un estudio de una ONG (Educo), que lo elabora con datos del Ministerio y de las comunidades; el texto lo identifica y se ha precisado su origen; es la única referencia estatal localizada y no altera la valoración. (5) ara_mes_fa-08, encaje legal «mixta»: se mantiene. «desfavorable» se reserva a medidas cuyo núcleo choca con el Derecho de la UE (cc-06, podemos-02, frente_amplio-11); aquí no ampliar los aeropuertos está al alcance del Gobierno (DORA, Ley 18/2014), y un techo de vuelos cabe en el art. 20 del Reglamento 1008/2008 si responde a «graves problemas de carácter medioambiental», con vigencia limitada, no discriminatorio y bajo control de la Comisión; el programa invoca la capacidad de carga «ambiental», además de la territorial y social. Se corrige la frase que decía que el motivo del programa no figuraba entre los admitidos. (6) ara_mes_fa-08, financiación «no_verificable»: se mantiene, como upc-04 (moratoria turística, «no_verificable»: sin coste directo pero con efectos fiscales que dependen de una cifra no fijada); no es una medida solo regulatoria como -03, -06, -07 o -12, porque limita una actividad que genera ingresos a una empresa pública (Aena) y 21.058 M€ de gasto turístico. (7) ara_mes_fa-11, encaje legal «mixta»: se mantiene, como erc-11. La oficialidad de todas las lenguas en todo el Estado por ley choca con la lectura territorial del art. 3 CE (STC 82/1986, FJ 2, comprobada), pero el programa no dice si se refiere a todo el territorio, y el resto de la ley (uso ante la Administración General del Estado, capacitación del personal, garantías en contratos) cabe en la legislación estatal. (8) ara_mes_fa-09: la cifra de 412 M€ es del delegado del Gobierno, recogida por Ara Balears; no hay publicación oficial con cifras por comunidad (ni La Moncloa, 14-1-2026, ni Hacienda, 4-9-2026). Se mantiene atribuida, como en cc-03 y compromis-11, y se añade la atribución en «beneficiarios», donde faltaba. La valoración «favorable» de beneficiarios coincide con compromis-11 y erc-01. (9) ara_mes_fa-10: los datos del Imserso a 31-10-2026 son correctos (1.807.202 personas con resolución de PIA; lista de espera total de 123.474, suma de las solicitudes y de los beneficiarios sin prestación efectiva con más de seis meses y sin motivo de exclusión; en Baleares, 35.880 y 2.478); la concreción «favorable» cumple los cuatro elementos de la rúbrica (cuantía, plazo, reparto y destinatarios), como frente_amplio-01, y el encaje legal «favorable» y la financiación «mixta» coinciden con cc-04. (10) ara_mes_fa-02, -03 y -12 reaprovechan casi literalmente textos revisados el 12-nov, con las mismas valoraciones. El encaje legal «favorable» de -03 difiere del «mixta» de podemos-03 por una diferencia de hecho que el texto dice: el programa limita los precios máximos a la cesta de alimentos básicos y solo si se acreditan abusos, lo que cabe en el art. 13.2.a de la Ley 7/1996 («productos de primera necesidad»), mientras que podemos-03 proponía topar «los alimentos» en general, que excede ese supuesto. Los textos no contienen adjetivos de valor; se corrigieron una fuente mal titulada, un dato mal descrito (IMAP «por pasajero de partida»), una afirmación sin fuente, un título que endurecía la cita y dos atribuciones.",
+ "recuento_inicial": {
+  "favorable": 8,
+  "mixta": 80,
+  "desfavorable": 2,
+  "no_verificable": 6
+ },
+ "recuento_final": {
+  "favorable": 8,
+  "mixta": 81,
+  "desfavorable": 2,
+  "no_verificable": 5
+ },
+ "recuento_nota": "Recuento de las 12 propuestas × 8 criterios. Una valoración cambia (ara_mes_fa-01, financiación, «no_verificable» → «mixta»); las demás correcciones son de texto, atribución y fuentes. El complemento de compromisos se revisa aparte (compromisos/revision.json): ara_mes_fa-c01 pasa a descartados y el complemento queda vacío.",
+ "cambios": [
+  {
+   "propuesta": "ara_mes_fa-01",
+   "criterio": "financiacion",
+   "antes": "no_verificable: La medida principal, el salario mínimo balear, no tiene cuantía, de modo que no hay base para estimar su coste, y el programa no lo cuantifica.",
+   "despues": "mixta: El salario mínimo balear no tiene cuantía, de modo que esa parte no puede estimarse, y el programa no cuantifica el coste de ninguna de las dos para los empleadores ni para las administraciones.",
+   "motivo": "Mismo listón que las evaluaciones aprobadas. La rúbrica reserva «no_verificable» a «No hay base pública para estimar el coste», y aquí la hay para una de las dos medidas: el suelo del SMI estatal se define sobre el salario medio bruto, que publica el INE (29.540 € en 2024: el 60 % son 17.724 €, unos 630 € por encima del SMI de 2026, comprobado en la EAES y el Real Decreto 126/2026), igual que frente_amplio-08 («mixta» porque la referencia, el salario medio neto, permitía estimar el suelo). psoe-04 era «no_verificable» porque no decía si el salario medio era bruto o neto, y pnv-02 porque su única medida era un salario mínimo vasco sin cuantía; aquí esa parte (el salario mínimo balear) es una de dos. En propuestas con varias medidas de las que solo una es estimable, las aprobadas son «mixta» (compromis-11, con el fondo de nivelación sin cuantía; frente_amplio-11). La rúbrica «mixta» («coste conocido o estimable, pero el programa no explica cómo se paga») es la que corresponde.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "ara_mes_fa-01",
+   "criterio": "antecedentes (fuentes)",
+   "antes": "Fuentes: RD 1077/2017, RD 126/2026 y las dos memorias del Ministerio de Trabajo.",
+   "despues": "Se añade La Moncloa (20-2-2026), «SMI 2026: ¿cuánto sube el Salario Mínimo Interprofesional y a quién beneficia?».",
+   "motivo": "Afirmación sin fuente citada: que el acuerdo con CCOO y UGT «contemplaba evitar la compensación y absorción de complementos» no está en el real decreto ni en las memorias citadas; lo dice la nota de La Moncloa («el acuerdo [...] evita mecanismos de compensación y absorción de los complementos específicos»), ya citada en «beneficiarios». El Real Decreto 126/2026 mantiene la regla de compensación en cómputo anual (art. 3), comprobado.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "ara_mes_fa-06",
+   "criterio": "evidencia (fuentes)",
+   "antes": "Du y Zhang (2015), Tax and housing price: Evidence from China, Journal of Econometrics 188 (ficha RePEc)",
+   "despues": "Du y Zhang (2015), Home-purchase restriction, property tax and housing price in China, Journal of Econometrics 188(2) (ficha RePEc)",
+   "motivo": "Título erróneo: la ficha RePEc (y el mismo artículo en «largo_plazo» y en podemos-02) se titula «Home-purchase restriction, property tax and housing price in China».",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "ara_mes_fa-08",
+   "criterio": "financiacion",
+   "antes": "el ingreso máximo regulado de Aena por pasajero de partida del DORA 2027-2031 es de 10,52 euros",
+   "despues": "el ingreso máximo regulado de Aena por pasajero del DORA 2027-2031 es de 10,52 euros",
+   "motivo": "Inexacto: el DORA 2027-2031 (BOE 19-9-2026, apartado 6) fija el IMAP inicial en 10,52 € como «ingresos regulados requeridos por pasajero», no por pasajero de salida; el cálculo propio (1 % de 47,2 millones de pasajeros × 10,52 € ≈ 5 M€) ya usaba el total de pasajeros (Palma 33.806.427, Ibiza 9.138.224 y Menorca 4.210.152 en 2025, comprobado en las notas de Aena) y no cambia.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "ara_mes_fa-08",
+   "criterio": "legal",
+   "antes": "La capacidad de carga turística no figura entre esos motivos.",
+   "despues": "El programa invoca la capacidad de carga «territorial, ambiental i social» de cada isla: solo la ambiental podría acogerse a ese supuesto, y con esos límites.",
+   "motivo": "Fidelidad al programa (p. 5): la medida 38 no se apoya en una «capacidad de carga turística», sino en la capacidad de carga «territorial, ambiental i social», y el art. 20 del Reglamento 1008/2008 sí admite limitar derechos de tráfico ante «graves problemas de carácter medioambiental» (comprobado en el texto del Reglamento), con las condiciones que el texto enumera. La valoración «mixta» se mantiene: depende de cómo se justifique y diseñe el techo.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "ara_mes_fa-09",
+   "criterio": "campo beneficiarios",
+   "antes": "la propuesta de nuevo modelo del Gobierno de enero de 2026 le daba unos 412 M€ más al año,",
+   "despues": "la propuesta de nuevo modelo del Gobierno de enero de 2026 le daba unos 412 M€ más al año, según el delegado del Gobierno en las islas,",
+   "motivo": "Atribución: la cifra no es de una fuente oficial publicada, sino del delegado del Gobierno en las Illes Balears en rueda de prensa, recogida por Ara Balears (9-1-2026); ni la nota de La Moncloa de 14-1-2026 ni la de Hacienda del CPFF (4-9-2026) dan cifras por comunidad. Se atribuye como en el criterio «financiacion» y como en los equivalentes aprobados (cc-03, «según el Gobierno canario»; compromis-11, «según el ministro de Hacienda»). Fedea (FPP 2026/01) da para Baleares una ganancia de 450 € por habitante ajustado, no un total en euros.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "ara_mes_fa-09",
+   "criterio": "beneficiarios",
+   "antes": "unos 412 M€ más al año con la propuesta de nuevo modelo de enero de 2026 y",
+   "despues": "unos 412 M€ más al año con la propuesta de nuevo modelo de enero de 2026, según el delegado del Gobierno en las islas, y",
+   "motivo": "Atribución, como en el campo «beneficiarios» de la propuesta y en el criterio «financiacion» (véase el cambio anterior).",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "ara_mes_fa-11",
+   "criterio": "titulo",
+   "antes": "Ley de lenguas que reconozca como oficiales todas las lenguas del Estado y exija el catalán al personal estatal en las Illes Balears",
+   "despues": "Ley de lenguas que reconozca como oficiales todas las lenguas del Estado y procure que el personal estatal en las Illes Balears acredite el catalán",
+   "motivo": "Fidelidad a la cita (p. 13): el programa dice que la ley «procurarà que tots els treballadors de l’Administració General de l’Estat destinats a les Balears acreditin el coneixement de la llengua catalana», no que lo exija; la propia concreción señala que no dice si sería requisito o mérito. El resumen ya decía «procure».",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "ara_mes_fa-05",
+   "criterio": "financiacion",
+   "antes": "que usa Educo (estudio de una ONG),",
+   "despues": "que usa Educo (estudio de una ONG, que lo calcula con datos del Ministerio de Educación y de las comunidades autónomas para el curso 2024-2025),",
+   "motivo": "Precisión de la fuente: el informe de Educo (gráfico 7 y nota metodológica) da 5,57 € como «precio promedio del comedor escolar» de 2024/25, «elaboración propia a partir de datos del Ministerio de Educación, Formación Profesional y Deportes y de las comunidades autónomas», y usa 175 días lectivos (comprobado). Se mantiene como única referencia de precio a escala estatal localizada.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "(nota del fichero)",
+   "criterio": "nota",
+   "antes": "; financiación «no_verificable» en ara_mes_fa-01 (el salario mínimo balear no tiene cuantía, aunque el suelo estatal sí es calculable).",
+   "despues": ". La financiación de ara_mes_fa-01 es «mixta», como frente_amplio-08: el suelo estatal sobre el salario medio bruto es calculable, aunque el salario mínimo balear no tiene cuantía (revisión independiente del 17-nov; antes «no_verificable»).",
+   "motivo": "Coherencia con el cambio de valoración de ara_mes_fa-01, financiación.",
+   "fecha": "2026-11-17"
+  }
+ ],
+ "dudas": [
+  "Selección (decisión editorial, no error): cinco de las doce prioridades salen de la sección que abre el programa («Arribar a final de mes», medidas 1, 2, 4, 5 y 6), y medidas a las que el documento da sección propia o espacio, como la jornada de 32 horas (medida 10), la extinción de las licencias de pisos turísticos en tres años (29), el IVA del 21 % al turismo (42) o la salida de la OTAN (148), quedan fuera. La justificación es cierta (orden y notas oficiales que las presentan como propuestas principales) y la medida 3 (tope a los carburantes), de la misma sección, tampoco entra; si el editor prefiere una prioridad más por bloque grande, esas son las alternativas.",
+  "ara_mes_fa-08, encaje legal: «mixta» o «desfavorable» depende de si se lee el techo de vuelos como una limitación de derechos de tráfico por motivos turísticos (fuera del art. 20 del Reglamento 1008/2008) o como una medida ambiental temporal y revisable, o una rebaja de la capacidad declarada del aeropuerto, que el programa no concreta. Se mantiene «mixta» por esa indefinición; ningún tribunal ni la Comisión se han pronunciado sobre un techo por capacidad de carga.",
+  "ara_mes_fa-05: si el editor exigiera que el coste se estime solo con lo que dice el programa (sin la periodicidad mensual de la nota oficial), el coste seguiría siendo estimable como horquilla (1.554 a 18.650 M€ al año) y la valoración sería la misma. El precio del menú de Educo es la única referencia estatal localizada; las comunidades fijan precios máximos distintos.",
+  "ara_mes_fa-09: los 412 M€ anuales para Baleares de la propuesta de enero de 2026 solo constan en declaraciones del delegado del Gobierno (Ara Balears, 9-1-2026); Fedea (FPP 2026/01) da para Baleares una ganancia de 450 € por habitante ajustado, que no se ha convertido a un total. El modelo aprobado por el CPFF el 4-9-2026 no se publicó con cifras por comunidad.",
+  "Las páginas de repository.essex.ac.uk (Holford y Rabe, 2022) y gov.pl (Familia 500+) no responden desde esta red; su contenido se comprobó en web.archive.org. imf.org, gao.gov y diw.de devuelven 403 a peticiones automáticas, como en las revisiones anteriores que las comprobaron."
+ ]
+}

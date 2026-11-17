@@ -1,0 +1,1605 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ca" class="html">
+	<head>
+
+    <script type="text/javascript" src="/jsi18n/"></script>
+
+    
+        
+
+<script type="text/javascript">
+
+    var klaroConfig = {
+        // With the 0.7.0 release we introduce a 'version' paramter that will make
+        // if easier for us to keep configuration files backwards-compatible in the future.
+        version: 1,
+
+        // You can customize the ID of the DIV element that Klaro will create
+        // when starting up. If undefined, Klaro will use 'klaro'.
+        elementID: 'cookie-timtul-bot',
+
+        // Setting this to true will keep Klaro from automatically loading itself
+        // when the page is being loaded.
+        noAutoLoad: false,
+
+        // Setting this to true will render the descriptions of the consent
+        // modal and consent notice are HTML. Use with care.
+        htmlTexts: true,
+
+        // Setting 'embedded' to true will render the Klaro modal and notice without
+        // the modal background, allowing you to e.g. embed them into a specific element
+        // of your website, such as your privacy notice.
+        embedded: false,
+
+        // You can group services by their purpose in the modal. This is advisable
+        // if you have a large number of services. Users can then enable or disable
+        // entire groups of services instead of having to enable or disable every service.
+        groupByPurpose: true,
+
+        // How Klaro should store the user's preferences. It can be either 'cookie'
+        // (the default) or 'localStorage'.
+        storageMethod: 'cookie',
+
+        // You can customize the name of the cookie that Klaro uses for storing
+        // user consent decisions. If undefined, Klaro will use 'klaro'.
+        cookieName: 'timtul_cookie_bot',
+
+        // You can also set a custom expiration time for the Klaro cookie.
+        // By default, it will expire after 120 days.
+        cookieExpiresAfterDays: 365,
+
+        // You can change to cookie domain for the consent manager itself.
+        // Use this if you want to get consent once for multiple matching domains.
+        // If undefined, Klaro will use the current domain.
+        //cookieDomain: '.github.com',
+
+        // Defines the default state for services (true=enabled by default).
+        default: false,
+
+        // If "mustConsent" is set to true, Klaro will directly display the consent
+        // manager modal and not allow the user to close it before having actively
+        // consented or declines the use of third-party services.
+        mustConsent: false,
+
+        // Show "accept all" to accept all services instead of "ok" that only accepts
+        // required and "default: true" services
+        acceptAll: true,
+
+        // replace "decline" with cookie manager modal
+        hideDeclineAll: false,
+
+        // hide "learnMore" link
+        hideLearnMore: false,
+
+        // show cookie notice as modal
+        
+            noticeAsModal: false,
+        
+
+        // You can also remove the 'Realized with Klaro!' text in the consent modal.
+        // Please don't do this! We provide Klaro as a free open source tool.
+        // Placing a link to our website helps us spread the word about it,
+        // which ultimately enables us to make Klaro! better for everyone.
+        // So please be fair and keep the link enabled. Thanks :)
+        disablePoweredBy: true,
+
+        // you can specify an additional class (or classes) that will be added to the Klaro `div`
+        //additionalClass: 'my-klaro',
+
+        // You can define the UI language directly here. If undefined, Klaro will
+        // use the value given in the global "lang" variable. If that does
+        // not exist, it will use the value given in the "lang" attribute of your
+        // HTML tag. If that also doesn't exist, it will use 'en'.
+        
+            lang: 'ca',
+        
+
+        // You can overwrite existing translations and add translations for your
+        // service descriptions and purposes. See `src/translations/` for a full
+        // list of translations that can be overwritten:
+        // https://github.com/KIProtect/klaro/tree/master/src/translations
+        privacyPolicyUrl: '/cookies',
+
+        // Example config that shows how to overwrite translations:
+        // https://github.com/KIProtect/klaro/blob/master/src/configs/i18n.js
+        translations: {
+            // translationsed defined under the 'zz' language code act as default
+            // translations.
+            zz: {
+                privacyPolicy: {
+                    name: "cookies policy.",
+                    text: "To learn more, please read our {privacyPolicy}."
+                },
+
+                privacyPolicyUrl: '/cookies',
+                cloudflare: {
+                    description: 'Protection against DDoS attacks',
+                },
+
+            },
+            es: {
+                privacyPolicy: {
+                    name: "política de cookies",
+                    text: "Para saber más, por favor lea nuestra {privacyPolicy}."
+                },
+
+                consentModal: {
+                    description: 'Aquí puede ver y personalizar la información que recopilamos sobre los usuarios.',
+                    title: 'Información que recopilamos'
+                },
+                consentNotice: {
+                    description: '<b>Configuración de cookies</b><br><br>Recopilamos y procesamos vuestra información personal con las siguientes finalidades: {purposes}'
+                },
+
+
+                purposes: {
+                    analytics: {
+                        title: 'Analíticas',
+                        description: 'Con estas podemos analizar la navegación que realice por el sitio web con el fin de realizar estudios estadísticos sobre su uso'
+                    },
+                    security: {
+                        title: 'Seguridad',
+                        description: 'Estas cookies son necesarias para el funcionamiento del sitio web, por lo que no se pueden desactivar'
+                    },
+                    marketing: {
+                        title: 'Marketing',
+                        description: 'Estos servicios procesan información personal para mostrarle contenido relevante sobre productos, servicios o temas que le pueden interesar.'
+                    },
+                    style: {
+                        title: 'Personalización',
+                        description: 'Con estas cookies podemos adaptar la visualización de la página web y personalizar sus opciones.\n',
+                    },
+                    mandatory: {
+                        title: 'Obligatorias',
+                        description: 'Estas cookies son necesarias para que funcione la página web por lo que no pueden ser desactivadas.'
+                    }
+                },
+            },
+
+            eu: {
+
+                acceptAll: "Onartu itzazu denak.",
+                 acceptSelected: "Onartu aukerak",
+                decline: "Baztertu",
+                ok: "Onartu",
+                 privacyPolicy: {
+                    name: "cookieen politika",
+                    text: "Gehiago jakiteko, irakurri gure {privacyPolicy}."
+                },
+
+                consentModal: {
+                    description: 'Webgune honetan erabili nahi ditugun zerbitzuak ebaluatu eta pertsonaliza ditzakezu.',
+                    title: 'Biltzen dugun informazioa'
+                },
+                consentNotice: {
+                    description: '<b>Cookie ezarpenak</b><br><br>Zure informazio pertsonala bildu eta prozesatzen dugu helburu hauetarako: {purposes}',
+                    learnMore: 'Aukeratu nahi dut...',
+                },
+
+                purposeItem: {
+                    services: "zerbitzuak"
+                },
+                purposes: {
+                    analytics: {
+                        title: 'Analitika',
+                        description: 'Hauekin webgunean egiten duzun nabigazioa aztertu dezakegu erabilerari buruzko azterketa estatistikoak egiteko'
+                    },
+                    security: {
+                        title: 'Segurtasuna',
+                        description: 'Cookie hauek webgunearen funtzionamendurako beharrezkoak dira, beraz, ezin dira desgaitu'
+                    },
+                    marketing: {
+                        title: 'Marketina',
+                        description: 'Zerbitzu hauek informazio pertsonala prozesatzen dute interesa izan daitezkeen produktu, zerbitzu edo gaiei buruzko eduki garrantzitsua erakusteko.'
+                    },
+                    style: {
+                        title: 'Pertsonalizazioa',
+                        description: 'Cookie hauekin webgunearen bistaratzea egokitu eta bere aukerak pertsonaliza ditzakegu.\n',
+                    },
+                    mandatory: {
+                        title: 'Nahitaezkoa',
+                        description: 'Cookie hauek webguneak funtziona dezan beharrezkoak dira, beraz, ezin dira desaktibatu.'
+                    }
+                },
+                service: {
+                    required: {
+                        title: '(beti beharrezkoa)'
+                    },
+                    purpose: 'Helburua',
+                    disableAll: {
+                        description: "Erabili etengailu hau zerbitzu guztiak gaitzeko edo desgaitzeko.",
+                        title: "Gaitu edo desgaitu zerbitzu guztiak"
+                    }
+                },
+                optOut:
+                {
+                    description: "Aplikazio hau lehenespenez kargatzen da, baina desgaitu dezakezu",
+                    title: "(opt-out)"
+                },
+                purpose: "Helburua",
+                required: {
+                    description: "Aplikazio hau beti behar da",
+                    title: "(beharrezkoak)"
+                },
+                close: "Itxi",
+                save: "Gorde"
+
+            },
+            ca: {
+
+                service: {
+                    disableAll: {
+                        description: 'Feu servir aquest botó per a habilitar o deshabilitar totes les aplicacions.'
+                    }
+                },
+
+                consentNotice: {
+                    description: '<b>Configuració de cookies</b><br><br>Recopilem i processem la vostra informació personal amb les següents finalitats: {purposes}.'
+                },
+                consentModal: {
+                    description: 'Aquí podeu veure i personalitzar la informació que recopilem sobre vós.'
+                },
+                privacyPolicy: {
+                    name: "política de cookies",
+                    text: "Per saber-ne més, llegiu la nostra {privacyPolicy}."
+                },
+                purposes: {
+                    analytics: {
+                        title: 'Analítiques',
+                        description: 'Amb aquestes podem analitzar la navegació que realitzeu pel lloc web amb la finalitat de realitzar estudis estadístics sobre el seu ús.'
+                    },
+                    security: {
+                        title: 'Seguretat',
+                        description: 'Aquestes cookies són necessàries per al funcionament del lloc web, per la qual cosa no es poden desactivar.'
+                    },
+                    marketing: {
+                        title: 'Màrqueting',
+                        description: 'Aquests serveis processen informació personal per mostrar-vos contingut rellevant sobre productes, serveis o temes que us poden interessar.'
+                    },
+                    style: {
+                        title: 'Personalització',
+                        description: 'Amb aquestes cookies podem adaptar la visualització de la pàgina web i personalitzar les seves opcions.',
+                    },
+                    mandatory: {
+                        title: 'Obligatori',
+                        description: 'Aquestes galetes són necessàries perquè funcioni la pàgina web pel que no poden ser desactivades.'
+                    }
+                },
+            },
+
+            en: {
+                consentNotice: {
+                    description: '<b>Cookies settings</b><br><br>We collect and process your personal information for the following purposes: {purposes}.'
+                },
+
+                consentModal: {
+                    description: 'You can assess and customise the services that we\'d like to use on this website.',
+                    title: 'Information We Collect'
+                },
+
+                privacyPolicy: {
+                    name: "cookies policy.",
+                    text: "To learn more, please read our  {privacyPolicy}."
+                },
+                purposes: {
+                    analytics: {
+                        title: 'Analytics',
+                        description: 'With these we can analyze the browsing you do on the website in order to carry out statistical studies on its use.'
+                    },
+                    security: {
+                        title: 'Security',
+                        description: 'These cookies are necessary for the operation of the website, so they cannot be disabled'
+                    },
+                    marketing: {
+                        title: 'Marketing',
+                        description: 'These services process personal information to show you relevant content about products, services or topics that you might be interested in.'
+                    },
+                    mandatory: {
+                        title: 'Mandatory',
+                        description: 'These cookies are necessary for the operation of the website, so they cannot be deactivated.'
+                    }
+                },
+            },
+
+            fr: {
+                consentNotice: {
+                    description: '<b>Paramètres des cookies</b><br><br>Nous collectons et traitons vos informations personnelles aux fins suivantes: {purposes}.'
+                },
+
+                consentModal: {
+                    description: 'Vous pouvez ici évaluer et personnaliser les services que nous aimerions utiliser sur ce site.',
+                    title: 'Informations que nous recueillons'
+                },
+                privacyPolicy: {
+                    name: "politique en matière de cookies",
+                    text: "Pour en savoir plus, veuillez lire notre {privacyPolicy}."
+                },
+                purposes: {
+                    analytics: {
+                        title: 'Analytiques',
+                        description: 'Grâce à ces cookies, nous pouvons analyser la navigation que vous effectuez sur notre site web afin de réaliser des études statistiques sur son utilisation.'
+                    },
+                    security: {
+                        title: 'Sécurité',
+                        description: 'Ces cookies sont nécessaires au fonctionnement du site web et ne peuvent pas être désactivés.'
+                    },
+                    marketing: {
+                        title: 'Marketing',
+                        description: 'Ces services traitent les informations personnelles afin de vous présenter un contenu pertinent sur des produits, des services ou des sujets susceptibles de vous intéresser.'
+                    },
+                    mandatory: {
+                        title: 'Mandatory',
+                        description: 'Ces services traitent les informations personnelles afin de vous présenter un contenu pertinent sur des produits, des services ou des sujets susceptibles de vous intéresser.'
+                    }
+                },
+            },
+
+            it: {
+                consentNotice: {
+                    description: '<b>Impostazioni dei cookie</b><br><br>Raccogliamo ed elaboriamo le tue informazioni personali per i seguenti scopi: {purposes}.'
+                },
+
+                consentModal: {
+                    description: 'Qui potrà valutare e personalizzare i servizi che vorremmo utilizzare su questo sito web.',
+                    title: 'Informazioni che raccogliamo'
+                },
+
+                privacyPolicy: {
+                    name: "informativa sui cookie",
+                    text: "Per saperne di più, la invitiamo a leggere la nostra {privacyPolicy}."
+                },
+                purposes: {
+                    analytics: {
+                        title: 'Analitici',
+                        description: 'Con questi cookie possiamo analizzare la navigazione degli utenti sul nostro sito per condurre studi statistici sull\'uso che ne fanno.'
+                    },
+                    security: {
+                        title: 'Sicurezza',
+                        description: 'Questi cookie sono necessari per il funzionamento del sito web, pertanto non possono essere disattivati.'
+                    },
+                    marketing: {
+                        title: 'Marketing',
+                        description: 'Questi servizi elaborano informazioni personali per mostrare contenuti pertinenti in merito a prodotti, servizi o temi di interesse per l\'utente.'
+                    },
+                },
+            },
+
+            pt: {
+                save : 'Salve',
+                consentNotice: {
+                    description: '<b>Configurações de cookies</b><br><br>Coletamos e processamos suas informações pessoais para os seguintes fins:  {purposes}.'
+                },
+
+                consentModal: {
+                    description: 'Nesta secção, pode avaliar e personalizar os serviços que gostaríamos de utilizar neste website.',
+                    title: 'Informações que coletamos'
+                },
+
+                privacyPolicy: {
+                    name: "Política de Cookies.",
+                    text: "Para obter mais informações, consulte a nossa {privacyPolicy}."
+                },
+                purposes: {
+                    analytics: {
+                        title: 'Analíticas',
+                        description: 'Estas cookies permitem-nos analisar a sua navegação no nosso website para efetuar estudos estatísticos sobre a utilização.'
+                    },
+                    security: {
+                        title: 'Segurança',
+                        description: 'Cookies necessárias para o funcionamento do website, pelo que não podem ser desativadas.'
+                    },
+                    marketing: {
+                        title: 'Marketing',
+                        description: 'Estes serviços tratam informação pessoal para apresentar conteúdo pertinente sobre produtos, serviços ou temas que poderão ser do seu interesse.'
+                    },
+                },
+            },
+
+
+        },
+
+        // This is a list of third-party services that Klaro will manage for you.
+        services: [
+            // The services will appear in the modal in the same order as defined here.
+            {
+                name: 'google',
+                callback: function (consent, service) {
+                    // This is an example callback function.
+                    console.log(
+                        'User consent for service ' + service.name + ': consent=' + consent
+                    );
+                    if( window.google_consent == false && consent == true)  {
+                        // Reload the page
+                        window.google_consent = consent;
+                        location.reload();
+                    }
+                    window.google_consent = consent;
+                    if (!consent) {
+                        $(".g-recaptcha").html(
+                            "<span style='color:red'>Necessites activar les galetes de Google per poder enviar el missatge.</span>").append(
+                                "<br/><b style='cursor:pointer;'>Obrir la configuració de cookies</b>").click( function() {return klaro.show();});
+                    }
+                },
+
+                
+                    required: true,
+                    default: true,
+                
+                translations: {
+                    zz: {
+                        description: 'Google Analytics stores cookies in order to compile statistics on the traffic and volume of visits to the website.'
+                    },
+                    en: {
+                        description: 'Google Analytics stores cookies in order to compile statistics on the traffic and volume of visits to the website.'
+                    },
+                    es: {
+                        description: 'Google Analytics almacena cookies para elaborar estadísticas sobre el tráfico y volumen de visitas del sitio web.'
+                    },
+                    eu: {
+                        description: 'Google Analytics-ek cookieak gordetzen ditu webguneko trafikoari eta bisita-bolumenari buruzko estatistikak egiteko..'
+                    },
+                    ca: {
+                        description: 'Google Analytics emmagatzema cookies per elaborar estadístiques sobre el trànsit i volum de visites del lloc web.'
+                    },
+                    fr: {
+                        description: 'Google Analytics stocke des cookies pour compiler des statistiques sur le trafic et le volume des visites sur le site.'
+                    },
+                    it: {
+                      description: 'Google Analytics memorizza i cookie per compilare statistiche sul traffico e sul volume delle visite al sito web.'
+                    },
+                    pt: {
+                      description: 'O Google Analytics armazena cookies para compilar estatísticas sobre o tráfego e o volume de visitas ao site.'
+                    }
+                },
+
+                // if you omit the title here Klaro will try to look it up in the
+                // translations
+                title: 'Google',
+                purposes: ['analytics'],
+                cookies: [
+                    // --- Google Analytics / GA4 (1st-party en cualquier dominio) ---
+                      [/^_ga$/, '/', ''],
+                      [/^_ga_.*$/, '/', ''],        // GA4 (_ga_XXXX)
+                      [/^_gid$/, '/', ''],
+                      [/^_gat(_.*)?$/, '/', ''],
+                      [/^_gac_.*$/, '/', ''],       // campañas (UA/Ads)
+                      [/^_gcl_.*$/, '/', ''],       // Google Ads linker
+                      [/^_dc_gtm_.*$/, '/', ''],    // GTM throttle
+                      [/^_gaexp$/, '/', ''],        // (antiguo Optimize)
+                      [/^_opt_.*$/, '/', ''],       // (antiguo Optimize)
+
+                      // --- Localhost (opcional, si quieres ser explícito en dev) ---
+                      [/^_ga$/, '/', 'localhost'],
+                      [/^_ga_.*$/, '/', 'localhost'],
+                      [/^_gid$/, '/', 'localhost'],
+                      [/^_gat(_.*)?$/, '/', 'localhost'],
+
+                      // --- Terceros de Google / publicidad ---
+                      ['IDE', '/', '.doubleclick.net'],
+
+                      // Suele bastar con .google.com; si en tu caso ves cookies en .google.es, duplica líneas cambiando el dominio.
+                      ['CONSENT', '/', '.google.com'],
+                      ['NID', '/', '.google.com'],
+                      ['ANID', '/', '.google.com'],
+                      ['1P_JAR', '/', '.google.com'],
+                      ['SOCS', '/', '.google.com'],
+
+                      // (Opcional) variantes "Secure" frecuentes
+                      ['__Secure-ENID', '/', '.google.com'],
+                      ['__Secure-1PAPISID', '/', '.google.com'],
+                ],
+            },
+            {
+                name: 'stripe',
+                title: 'Stripe',
+                translations: {
+                    zz: {
+                        description: 'This cookie is required to carry out credit card transactions on the website. Service provided by Stripe.com that allows you to make online transactions without storing any credit card information.'
+                    },
+                    en: {
+                        description: 'This cookie is required to carry out credit card transactions on the website. Service provided by Stripe.com that allows you to make online transactions without storing any credit card information.'
+                    },
+                    es: {
+                        description: 'Esta cookie es necesaria para realizar transacciones con tarjetas de crédito en el sitio web. Servicio provisto por Stripe.com que permite efectuar transacciones en línea sin almacenar ninguna información de la tarjeta de crédito.'
+                    },
+                    eu: {
+                        description: 'Cookie hau beharrezkoa da webgunean kreditu-txartelen transakzioak egiteko. Stripe.com-ek eskaintzen duen zerbitzua lineako transakzioak egiteko aukera ematen dizu kreditu-txartelen informaziorik gorde gabe.'
+                    },
+                    ca: {
+                        description: 'Aquesta cookie és necessària per realitzar transaccions amb targetes de crèdit al lloc web. Servei proveït per Stripe.com que permet efectuar transaccions en línia sense emmagatzemar cap informació de la targeta de crèdit.'
+                    },
+                    fr: {
+                        description: 'Ce cookie est nécessaire pour effectuer des transactions par carte de crédit sur le site web. Le service fourni par Stripe.com permet d\'effectuer des transactions en ligne sans stocker d\'informations sur les cartes de crédit.'
+                    },
+                    it: {
+                        description: 'Questi cookie sono necessari per eseguire transazioni con carte di credito sul sito web. Servizio fornito da Stripe.com, permette di eseguire transazioni online senza archiviare informazioni sulla carta di credito.'
+                    },
+                    pt: {
+                        description: 'Cookie necessária para efetuar transações com cartões de crédito no website. Serviço prestado por Stripe.com, permite realizar transações online sem armazenar informações sobre o cartão de crédito.'
+                    }
+                },
+                optOut: false,
+                
+                    required: true,
+                    default: true,
+                    purposes: ['security'],
+                
+
+                cookies: [
+                    [/^__stripe*$/, '/', 'stripe.com'],
+                    /^__stripe*$/,
+                ],
+            },
+            {
+                name: 'timtul',
+                title: 'Timtul',
+                required: true,
+                default: true,
+
+                purposes: ['security'],
+                cookies: [
+                    'csrftoken',
+                    'timtul_cookie_bot',
+                ],
+                callback: function (consent, service) {
+                    // This is an example callback function.
+                    console.log(
+                        'User consent for service ' + service.name + ': consent=' + consent
+                    );
+                },
+            },
+            // The services will appear in the modal in the same order as defined here.
+            {
+                name: 'twitter',
+                purposes: ['marketing'],
+                contextualConsentOnly: true,
+            },
+            {
+                name: 'youtube',
+                purposes: ['marketing'],
+                contextualConsentOnly: true,
+            },
+            
+        ],
+    };
+</script>
+<script defer type="text/javascript" src="https://cdn.kiprotect.com/klaro/v0.7.8/klaro.js"></script>
+
+    
+
+		<meta charset="utf-8"/>
+		
+
+    
+      
+	  <title>
+		    Mes per Mallorca |
+            
+              
+                ARA MÉS - Front Ampli
+              
+            
+      </title>
+      
+      
+        <meta name="description" content="MÉS per Mallorca és una organització amb les portes obertes per rebre persones que vulguin aportar el seu granet en la tasca de fer una Mallorca més sobirana, més justa, més feminista i més verda." />
+      
+        
+             <meta name="keywords" content="més, mallorca, feminista, verda, organització">
+        
+    
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1" name="viewport"/>
+		<meta content="Timtul" name="author"/>
+
+
+        <!-- <meta name="twitter:site" content="@TimTul_es" />
+        <meta name="twitter:creator" content="@TimTul_es" />
+        -->
+        <meta property="og:url" content="https://aramesfrontampli.cat/" />
+    
+        <meta property="og:title" content="ARA MÉS - Front Ampli" />
+    
+
+    
+
+    
+
+    
+        <meta property="og:description" content="MÉS per Mallorca és una organització amb les portes obertes per rebre persones que vulguin aportar el seu granet en la tasca de fer una Mallorca més sobirana, més justa, més feminista i més verda." />
+    
+
+
+
+    
+	
+	<meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:title" content="ARA MÉS - Front Ampli" />
+
+    
+
+    
+    
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+
+        
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.4/purify.min.js"></script>
+
+        
+            <!--favicon-->
+<link rel="apple-touch-icon" sizes="180x180" href="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/apple-touch-icon_20210414084331.jpeg">
+<link rel="icon" type="image/png" sizes="32x32" href="https://media.timtul.com/media/web_mespermallorca/favicon-32x32_20210414084335.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://media.timtul.com/media/web_mespermallorca/favicon-16x16_20210414084334.png">
+<link rel="manifest" href="https://media.timtul.com/media/web_mespermallorca/site_20210414084338.webmanifest">
+<link rel="mask-icon" href="https://media.timtul.com/media/web_mespermallorca/safari-pinned-tab_20210414084336.svg" color="#adb500">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<!--font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
+<!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
+<!--<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">-->
+        
+
+
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" />
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" />
+        <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+
+        <link rel="stylesheet" href="/static/CACHE/css/6181943800a9.css" type="text/css" />
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+        <script type="text/javascript" src="/static/admin/js/i18n-periodpicker.js"></script>
+
+    </head>
+
+	<body class="body page-ara-mes-front-ampli page-129 public-page nauth  domain-aramesfrontampli.cat ">
+
+		
+<header style="padding-bottom: 31px;padding-top: 20px;z-index: 10;" class="region region-header  overwrite area-fixed-top"><div class="container-fluid"><div class="row widget-holder">
+
+
+<div style="padding: 15px 0px 15px 1px; width: auto; display: none;" class="col-sm-12 widget widget-login w-login " >
+  <div class="content">
+    
+        <a class="" href="/login" alt="login" title="login">
+            <span class="material-icons" style="font-size:38px;vertical-align: bottom">perm_identity</span>
+        </a>
+    
+  </div>
+</div></div></div></header><div class="region-container with-region-slider" style="border-right-width: 0px;"><div class="container-fluid"><div class="row"> <div style="" class="col-sm-12 region region-slider  overwrite"><div class="row widget-holder">
+
+
+
+<div style="padding: 0px 15px; z-index: 0; margin-top: 0px; border-width: 0px; margin-bottom: 60px;" class="widget widget-carousel " >
+  <div class="content">
+    
+    <div id="de8e80" data-interval="5000" class="carousel " data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        
+        <li data-target="#de8e80" data-slide-to="0"
+        
+           class="active"
+        
+        ></li>
+        
+        <li data-target="#de8e80" data-slide-to="1"
+        
+        ></li>
+        
+        <li data-target="#de8e80" data-slide-to="2"
+        
+        ></li>
+        
+        <li data-target="#de8e80" data-slide-to="3"
+        
+        ></li>
+        
+        <li data-target="#de8e80" data-slide-to="4"
+        
+        ></li>
+        
+        <li data-target="#de8e80" data-slide-to="5"
+        
+        ></li>
+        
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+       
+        <div data-slide-id="Slide-10125133" class="item
+        
+        active
+        
+        ">
+          
+            <a href="" target="_blank">
+				<img loading="lazy" src=" https://media.timtul.com/media/web_mespermallorca/Correu%20Logo%20Ara%20Mes_20261105121153.jpg" alt="">
+            </a>
+          
+          <div class="carousel-caption">
+            
+              
+            
+          </div>
+        </div>
+        
+        <div data-slide-id="Slide-10101815" class="item
+        
+        ">
+          
+            <a href="" target="_blank">
+				<img loading="lazy" src=" https://media.timtul.com/media/web_mespermallorca/Logo%20Ara%20Mes-05_20261109170214.jpg" alt="">
+            </a>
+          
+          <div class="carousel-caption">
+            
+              
+            
+          </div>
+        </div>
+        
+        <div data-slide-id="Slide-10125314" class="item
+        
+        ">
+          
+            <a href="" target="_blank">
+				<img loading="lazy" src=" https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Mesa_de_trabajo_5_2_20261111115045.jpeg" alt="">
+            </a>
+          
+          <div class="carousel-caption">
+            
+              
+            
+          </div>
+        </div>
+        
+        <div data-slide-id="Slide-10101828" class="item
+        
+        ">
+          
+            <a href="" target="_blank">
+				<img loading="lazy" src=" https://media.timtul.com/media/web_mespermallorca/web5-05_20261109172616.jpg" alt="">
+            </a>
+          
+          <div class="carousel-caption">
+            
+              
+            
+          </div>
+        </div>
+        
+        <div data-slide-id="Slide-10101932" class="item
+        
+        ">
+          
+            <a href="" target="_blank">
+				<img loading="lazy" src=" https://media.timtul.com/media/web_mespermallorca/web3-05_20261109172616.jpg" alt="">
+            </a>
+          
+          <div class="carousel-caption">
+            
+              
+            
+          </div>
+        </div>
+        
+        <div data-slide-id="Slide-10125343" class="item
+        
+        ">
+          
+            <a href="" target="_blank">
+				<img loading="lazy" src=" https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Mesa_de_trabajo_5_3_20261111115045.jpeg" alt="">
+            </a>
+          
+          <div class="carousel-caption">
+            
+              
+            
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#de8e80" role="button" data-slide="prev">
+        <span class="icon-prev" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#de8e80" role="button" data-slide="next">
+        <span class="icon-next" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    
+  </div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content left">
+		<div class="frame " style="
+			
+			max-width:80%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/Logo%20Ara%20Mes-07_20261111100004.jpg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+
+<div style="padding: 0px 15px; border-right-width: 0px; margin-bottom: 0px;" class="widget widget-article-list article-cards" >
+	<div class="content template-cards-a">
+	
+		
+
+
+
+<div class="card-deck-wrapper">
+	
+		
+
+			
+			<div class="card-deck">
+
+		
+
+		
+		<div class="card  with-footer col_4" data-stream="Noticies">
+      
+      			<img class="card-img-top" style="background-image: url('https://media.timtul.com/media/web_mespermallorca/thumbails/2026.11.11_Foto_Gomila_Comercos_20261116135317_20261116135440.jpeg');">
+      
+			<div class="card-block">
+				<p class="card-text author"><a href="#">Josep David Gilabert Lahosa</a></p>
+				<h4 class="card-title" title="ARAMÉS–Front Ampli proposa posar un topall als lloguers comercials per protegir el petit comerç de les Illes Balears">
+          <a href="/noticies/aramesfront-ampli-proposa-un-fons-dinversio-public-per-impulsar-les-empreses-locals-crear-llocs-de-feina-de-qualitat-i-diversificar-leconomia">ARAMÉS–Front Ampli proposa posar un topall als lloguers comercials per protegir el petit comerç de les Illes Balears</a>
+        </h4>
+				<p class="card-subtitle text-muted date">16 novembre 2026</p><br>
+				
+				<div class="tags">
+				
+					 <span class="tag"><a href="/news/tag/carme-gomila">carme-gomila</a></span>
+				
+					 <span class="tag"><a href="/news/tag/arames-frontampli">arames-frontampli</a></span>
+				
+					 <span class="tag"><a href="/news/tag/topall-preus-lloguer-comercos">topall-preus-lloguer-comerços</a></span>
+				
+				</div>
+				
+
+				<div class="card-text"><p>ARAMÉS–Front Ampli vol posar fre a la desaparició del petit comerç de les Illes Balears amb una reforma de la Llei d'Arrendaments Urbans que permeti limitar el preu dels lloguers dels locals comercials. La candidata al Congrés, Carme Gomila, ha presentat aquesta proposta com una de les mesures de la coalició per protegir els negocis de proximitat davant l'encariment dels locals, la pressió turística i la pèrdua de poder adquisitiu de les famílies. «Quan desapareix una botiga de barri no només tanca un negoci. També perdem un servei de proximitat, llocs de feina i una part de la vida quotidiana dels nostres pobles i ciutats», ha advertit Gomila.</p></div>
+
+			</div>
+
+				<div class="card-footer text-muted">
+					<a href="/noticies/aramesfront-ampli-proposa-un-fons-dinversio-public-per-impulsar-les-empreses-locals-crear-llocs-de-feina-de-qualitat-i-diversificar-leconomia" class="readmore">Llegir més</a>
+				</div>
+		</div>
+		
+
+		
+
+	
+		
+
+		
+		<div class="card  with-footer col_4" data-stream="Noticies">
+      
+      			<img class="card-img-top" style="background-image: url('https://media.timtul.com/media/web_mespermallorca/thumbails/2026.11.15_Foto_CG_Menorca_20261116135855_20261116135922.jpeg');">
+      
+			<div class="card-block">
+				<p class="card-text author"><a href="#">MÉS per Mallorca</a></p>
+				<h4 class="card-title" title="ARAMÉS-Front Ampli reclama una millor connectivitat per acabar amb “l’aïllament injust” de Menorca">
+          <a href="/noticies/arames-front-ampli-reclama-una-millor-connectivitat-per-acabar-amb-laillament-injust-de-menorca">ARAMÉS-Front Ampli reclama una millor connectivitat per acabar amb “l’aïllament injust” de Menorca</a>
+        </h4>
+				<p class="card-subtitle text-muted date">15 novembre 2026</p><br>
+				
+				<div class="tags">
+				
+					 <span class="tag"><a href="/news/tag/aeroport-de-palma"></a></span>
+				
+					 <span class="tag"><a href="/news/tag/menorca"></a></span>
+				
+					 <span class="tag"><a href="/news/tag/carme-gomila">carme-gomila</a></span>
+				
+					 <span class="tag"><a href="/news/tag/arames-frontampli">arames-frontampli</a></span>
+				
+				</div>
+				
+
+				<div class="card-text"><p><em>Carme Gomila denuncia la pèrdua de connexions aèries durant l’hivern exigeix l’OSP Menorca-Barcelona, s’oposa a incrementar la capacitat turística de l’aeroport i exigeix una nova torre de control física</em></p><p><strong>Maó, 15 de novembre de 2026</strong>. ARAMÉS-Front Ampli ha reclamat avui matí, des de l’aeroport de Menorca, un canvi de prioritats en la política aeroportuària de l’Estat i ha defensat que les inversions previstes en aquesta infraestructura han de respondre a les necessitats de mobilitat dels residents i no a l’increment de l’activitat turística.</p><p>La candidata al Congrés dels Diputats, Carme Gomila, ha ...</p></div>
+
+			</div>
+
+				<div class="card-footer text-muted">
+					<a href="/noticies/arames-front-ampli-reclama-una-millor-connectivitat-per-acabar-amb-laillament-injust-de-menorca" class="readmore">Llegir més</a>
+				</div>
+		</div>
+		
+
+		
+
+	
+		
+
+		
+		<div class="card  with-footer col_4" data-stream="Noticies">
+      
+      			<img class="card-img-top" style="background-image: url('https://media.timtul.com/media/web_mespermallorca/thumbails/2026.11.14_FOTO_GOMILA_I_CURSACH_Vermut_feminista_20261114122649_20261114123530.jpeg');">
+      
+			<div class="card-block">
+				<p class="card-text author"><a href="#">MÉS per Mallorca</a></p>
+				<h4 class="card-title" title="ARAMÉS–Front Ampli reivindica el feminisme com a eix transversal de tot el seu programa">
+          <a href="/noticies/aramesfront-ampli-reivindica-el-feminisme-com-a-eix-transversal-de-tot-el-seu-programa">ARAMÉS–Front Ampli reivindica el feminisme com a eix transversal de tot el seu programa</a>
+        </h4>
+				<p class="card-subtitle text-muted date">14 novembre 2026</p><br>
+				
+				<div class="tags">
+				
+					 <span class="tag"><a href="/news/tag/feminisme"></a></span>
+				
+					 <span class="tag"><a href="/news/tag/carme-gomila">carme-gomila</a></span>
+				
+					 <span class="tag"><a href="/news/tag/arames-frontampli">arames-frontampli</a></span>
+				
+				</div>
+				
+
+				<div class="card-text"><p><strong>Carme Gomila anuncia mesures per millorar els salaris i les pensions, protegir les famílies i reconèixer econòmicament les cures</strong></p><p>&nbsp;</p><p><strong>Palma, 14 de novembre de 2026.</strong> ARAMÉS–Front Ampli ha reivindicat avui la necessitat de situar les polítiques feministes al centre de l'acció política per combatre les desigualtats econòmiques i socials que pateixen les dones de les Illes Balears. Ho ha fet durant el vermut feminista celebrat al bar Flexas de Palma sota el lema «Viure ens costa la vida», en què la candidata al Congrés, Carme Gomila, ha presentat les principals propostes de la coalició per millorar les ...</p></div>
+
+			</div>
+
+				<div class="card-footer text-muted">
+					<a href="/noticies/aramesfront-ampli-reivindica-el-feminisme-com-a-eix-transversal-de-tot-el-seu-programa" class="readmore">Llegir més</a>
+				</div>
+		</div>
+		
+
+		</div>
+
+	
+
+</div>
+
+	
+
+	
+	</div>
+</div>
+
+<div style="padding: 0px 15px 15px;" class="widget widget-simple-image " >
+	<div class="content left">
+		<div class="frame " style="
+			
+			max-width:40%;
+			
+			display:inline-block">
+      <div class="filter ">
+        <a  href="https://www.mespermallorca.cat/actualitat-aramesfrontampli/">
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/Logo%20Ara%20Mes-08_20261111102121.jpg" style="">
+        </a>
+      </div>
+    </div>
+	</div>
+</div>
+<div class='widget widget-container ' data-widget-type='Container' style="" ><div class='content'><div class='row'> <div class='first column col-sm-4' data-item='1'><div class='row widget-holder'><div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        <a  href="https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf">
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Programa_electoral__20261116173801.jpeg" style="">
+        </a>
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-text fr-view " 
+	
+	>
+	
+		<div class="content">
+			<p style="text-align: justify;"><span style="font-size: 16px;"><em>Coneix el programa electoral d’ARA-MÉS–Front Ampli per a les eleccions generals del 29 de novembre. Descobreix les nostres prioritats i propostes, consulta les principals mesures i </em><strong><em>descarrega el programa electoral complet.</em></strong></span></p>
+		</div>
+	
+</div>
+<div id="programa-electoral" data-level=1 style="padding: 15px; text-align: center;" class="widget widget-simple-title center " >
+	<div class="content">
+		
+			<a  href="https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf">
+				<h1 class="tt_first_color">Programa electoral </h1>
+			</a>
+		
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width:35%;
+			
+			display:inline-block">
+      <div class="filter ">
+        <a  href="https://media.timtul.com/media/web_mespermallorca/ProgramaElectoral29N_20261116175411.pdf">
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/Captura%20de%20pantalla%202026-11-16%20a%20les%2018.52.14_20261116175236.png" style="">
+        </a>
+      </div>
+    </div>
+	</div>
+</div>
+</div></div><div class='second column col-sm-4' data-item='2'><div class='row widget-holder'><div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Mesa_de_trabajo_7_2_20261111123733.jpeg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        <a  href="https://www.instagram.com/mespermallorca/">
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Instagram_20261111130731.jpeg" style="">
+        </a>
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        <a  href="https://www.facebook.com/mespermallorca">
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Instagram_2_20261111131711.jpeg" style="">
+        </a>
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        <a  href="tiktok.com/@mespermallorca">
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Copia_de_Instagram_20261111131711.jpeg" style="">
+        </a>
+      </div>
+    </div>
+	</div>
+</div>
+</div></div><div class='third column col-sm-4' data-item='3'><div class='row widget-holder'><div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Mesa_de_trabajo_7_3_20261111123733.jpeg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        <a  href="https://www.youtube.com/watch?v=yH56SZkJ9U4">
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/CartellSpot_20261112140904.png" style="">
+        </a>
+      </div>
+    </div>
+	</div>
+</div>
+</div></div> </div></div></div><div class='widget widget-container ' data-widget-type='Container' style="" ><div class='content'><div class='row'> <div class='first column col-sm-6' data-item='1'><div class='row widget-holder'></div></div><div class='second column col-sm-6' data-item='2'><div class='row widget-holder'></div></div> </div></div></div><div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content left">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/Logo%20Ara%20Mes-09_20261111100004.jpg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div class='widget widget-container ' data-widget-type='Container' style="" ><div class='content'><div class='row'> <div class='first column col-sm-3' data-item='1'><div class='row widget-holder'><div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/Manacor_20261116113209.png" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+</div></div><div class='second column col-sm-3' data-item='2'><div class='row widget-holder'><div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/Montuiri%20_20261116113459.png" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+</div></div><div class='third column col-sm-3' data-item='3'><div class='row widget-holder'><div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/Maria_20261116113209.png" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+</div></div><div class='fourth column col-sm-3' data-item='4'><div class='row widget-holder'><div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/Algaida_20261116120545.png" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+</div></div> </div></div></div><div class='widget widget-container ' data-widget-type='Container' style="" ><div class='content'><div class='row'> <div class='first column col-sm-3' data-item='1'><div class='row widget-holder'><div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/Manacor_20261116113209.png" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+</div></div><div class='second column col-sm-3' data-item='2'><div class='row widget-holder'></div></div><div class='third column col-sm-3' data-item='3'><div class='row widget-holder'></div></div><div class='fourth column col-sm-3' data-item='4'><div class='row widget-holder'></div></div> </div></div></div><div class='widget widget-container ' data-widget-type='Container' style="" ><div class='content'><div class='row'> <div class='first column col-sm-3' data-item='1'><div class='row widget-holder'><div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Mesa_de_trabajo_1_6_20261111152731.jpeg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Mesa_de_trabajo_23_1_20261111140347.jpeg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-text fr-view " 
+	
+	>
+	
+		<div class="content">
+			<p><span style="font-size: 16px;">Graduada en Ciències Polítiques i de l’Administració Pública per la Universitat Pompeu Fabra i màster en Comunicació per la Universitat Ramon Llull.</span></p><p><span style="font-size: 16px;">Ha estat regidora de l’Ajuntament de Manacor durant set anys (2019-2026), gestionant les àrees de Serveis Socials, Igualtat, Educació, Joventut i Gent Gran.</span></p><p><span style="font-size: 16px;">També ha treballat en l’àmbit de la comunicació.</span></p><p><span style="font-size: 16px;">Actualment és secretària de Relacions Polítiques de MÉS per Mallorca, presidenta d’Esquerra Republicana a les Illes Balears i coordinadora d’ARAMÉS.</span></p>
+		</div>
+	
+</div>
+</div></div><div class='second column col-sm-3' data-item='2'><div class='row widget-holder'><div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Mesa_de_trabajo_1_7_20261111152731.jpeg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Mesa_de_trabajo_23_2_20261111140347.jpeg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-text fr-view " 
+	
+	>
+	
+		<div class="content">
+			<p><span style="font-size: 16px;">Diplomat en Treball Social per la Universitat de les Illes Balears. Compta amb postgraus en mediació familiar, civil i mercantil i en direcció de centres de serveis socials.</span></p><p><span style="font-size: 16px;">Ha desenvolupat la seva trajectòria professional en l’àmbit dels serveis socials des de 2012, treballant en atenció primària, serveis d’atenció a la dependència i programes d’inserció sociolaboral.</span></p><p><span style="font-size: 16px;">Actualment fa feina a la Fundació d’Atenció a la Dependència del Govern de les Illes Balears i forma part de l’executiva de Sumar a les Illes Balears.</span></p>
+		</div>
+	
+</div>
+</div></div><div class='third column col-sm-3' data-item='3'><div class='row widget-holder'><div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Mesa_de_trabajo_1_8_20261111152731.jpeg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Mesa_de_trabajo_23_3_20261111140348.jpeg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-text fr-view " 
+	
+	>
+	
+		<div class="content">
+			<p><span style="font-size: 16px;">Graduada en Ciències Polítiques per la Universitat Carlos III de Madrid i màster en Cooperació Internacional per la Universitat Complutense de Madrid. Ha estat diputada al Congrés per les Illes Balears entre 2019 i 2023. També ha treballat en l’àmbit de la cooperació internacional i l’educació en organitzacions no governamentals. Actualment és regidora de l’Ajuntament de Palma a l'oposició, coordinadora de Podem Illes Balears i secretària d’Habitatge de Podemos.</span></p>
+		</div>
+	
+</div>
+</div></div><div class='fourth column col-sm-3' data-item='4'><div class='row widget-holder'><div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/mateu_20261111153838.jpeg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Mesa_de_trabajo_23_4_20261111140351.jpeg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-text fr-view " 
+	
+	>
+	
+		<div class="content">
+			<p><span style="font-size: 16px;">Graduat en Història i màster d'Història Moderna a la Mediterrània per la Universitat de Barcelona, màster en gestió cultural per la UOC i màster en professorat de secundària i Batxillerat per la UIB.</span></p><p><span style="font-size: 16px;">Actualment és regidor d'Ara Maó a l'oposició, membre de l'executiva de Més per Menorca i treballa com autònom en la gestió i digitalització d'arxius històrics</span></p><p><span style="font-size: 16px;">També ha fet feina en l’àmbit de l'educació.</span></p>
+		</div>
+	
+</div>
+</div></div> </div></div></div><div class='widget widget-container ' data-widget-type='Container' style="" ><div class='content'><div class='row'> <div class='first column col-sm-3' data-item='1'><div class='row widget-holder'><div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/marivi_20261111153838.jpeg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Mesa_de_trabajo_23_5_20261111140351.jpeg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-text fr-view " 
+	
+	>
+	
+		<div class="content">
+			<p><span style="font-size: 16px;">És mestra i llicenciada en Ciències de l’Educació per la Universitat de València. Viu a Eivissa des de 1991, on ha desenvolupat una trajectòria de més de 30 anys en l'ensenyament, tant a educació primària com en orientació educativa.</span></p><p><span style="font-size: 16px;">Ha estat representant sindical de l’STEI-Intersindical i ha participat activament en el moviment feminista, especialment a Dones Progressistes d’Eivissa.</span></p><p><span style="font-size: 16px;">Va ser regidora de l’Ajuntament d’Eivissa durant els mandats 2007-2011 i 2015-2019, amb responsabilitats en Educació, Igualtat, Salut Pública i Normalització Lingüística.</span></p><p><span style="font-size: 16px;">Vinculada a Ara Eivissa, forma part de la candidatura d’Ara MÉS–Front Ampli al Congrés dels Diputats, amb una trajectòria de compromís amb l’educació pública, el feminisme, els drets laborals i la defensa de la llengua catalana.</span></p>
+		</div>
+	
+</div>
+</div></div><div class='second column col-sm-3' data-item='2'><div class='row widget-holder'><div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Oscar_20261112210132.jpeg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Mesa_de_trabajo_23_6_20261111140351.jpeg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-text fr-view " 
+	
+	>
+	
+		<div class="content">
+			<p><span style="color: rgb(0, 0, 0); font-family: Calibri, Helvetica, sans-serif; font-size: 16px;">Graduat en Dret per l'UNED. Membre d'Esquerra Unida de del 2013. He sigut regidor de Santa Eulària des Riu des de 2015 fins 2023 i ara soc conseller al Consell d'Eivissa. He tingut multiples treballs al sector serveis i turisme, com netejaire a hotels, amarrador de vaixells i coordinador de càrrega a les barques de Formentera o recepcionista a la Fundació Balear de la Dependència, entre altres.</span></p>
+		</div>
+	
+</div>
+</div></div><div class='third column col-sm-3' data-item='3'><div class='row widget-holder'><div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Nuria_20261111160718.jpeg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Mesa_de_trabajo_23_7_20261111140354.jpeg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-text fr-view " 
+	
+	>
+	
+		<div class="content">
+			<p><span style="font-size: 16px;">Tècnica especialista en gestió turística per l'escola de turisme Felipe Moreno. Des de jove ha estat vinculada a l’activisme polític i ha participat activament en diferents col·lectius i associacions de Capdepera, formant part del teixit associatiu i reivindicatiu del municipi.</span></p><p><span style="font-size: 16px;">Ha estat regidora de l’Ajuntament de Capdepera a l'oposició fins a l'octubre de 2023 quan s’incorpora al govern municipal com a titular d’Hisenda, Contractació i Vies i Obres. Des del novembre de 2025 és la batlessa de la localitat.</span></p>
+		</div>
+	
+</div>
+</div></div><div class='fourth column col-sm-3' data-item='4'><div class='row widget-holder'><div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Isidor_20261111161755.jpeg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-image " >
+	<div class="content center">
+		<div class="frame " style="
+			
+			max-width: 100%;
+			
+			display:inline-block">
+      <div class="filter ">
+        
+          <img loading="lazy" class="" title="" alt="" src="https://media.timtul.com/media/web_mespermallorca/web_mespermallorca/Mesa_de_trabajo_23_8_20261111140355.jpeg" style="">
+        
+      </div>
+    </div>
+	</div>
+</div>
+<div style="padding: 15px;" class="widget widget-simple-text fr-view " 
+	
+	>
+	
+		<div class="content">
+			<p><span style="font-size: 16px;">És filòleg, sociolingüista, escriptor i músic, amb una llarga trajectòria dedicada a la defensa de la llengua catalana i la cultura pròpia de les Illes Balears.</span></p><p><span style="font-size: 16px;">Ha estat professor de la Universitat de les Illes Balears, on va participar activament en la introducció del català al sistema educatiu. També ha estat director del TERMCAT i president de la Secció Filològica de l’Institut d’Estudis Catalans. És un dels fundadors del grup de música tradicional eivissenca Uc.</span></p><p><span style="font-size: 16px;">Reconegut amb la Creu de Sant Jordi i el Premi Ramon Llull, tanca la llista d’Ara MÉS–Front Ampli al Congrés amb una trajectòria de compromís amb la llengua, la cultura i el país</span></p>
+		</div>
+	
+</div>
+</div></div> </div></div></div></div></div></div></div></div><div class="region-container with-region-content with-region-networks area-fixed-bottom" style="border-left-width: 0px;"><div class="container"><div class="row"> <div style="" class="col-sm-8 region region-content  overwrite"><div class="row widget-holder"></div></div><div style="" class="col-sm-4 region region-networks  overwrite"><div class="row widget-holder"></div></div></div></div></div><footer style="background-image: url('https://media.timtul.com/media/web_mespermallorca/Logo%20Ara%20Mes-03_20261105132730.jpg');" class="region region-footer  overwrite"><div class="container-fluid"><div class="row widget-holder"><div class='widget widget-container ' data-widget-type='Container' style="" ><div class='content'><div class='row'> <div class='first column col-sm-6' data-item='1'><div class='row widget-holder'></div></div><div class='second column col-sm-6' data-item='2'><div class='row widget-holder'></div></div> </div></div></div></div></div></footer>
+
+
+		<div class="modal fade " id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header" style="border-bottom:0px;">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					</div>
+					<div class="modal-body loginmodal-container"></div>
+				</div>
+			</div>
+		</div>
+
+        
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+		<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyDy1VHmammkUWKVSOuwnFHz-kqFeqeSMII&language=ca&libraries=places"></script>
+
+        <script type="text/javascript" src="/static/admin/js/jquery.locationpicker.js"></script>
+
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+        
+            <script type="text/javascript" src="https://js.stripe.com/v3/"></script>
+        
+
+    	<script
+                
+                    type="text/plain"
+                    data-type="text/javascript"
+                    data-name="google"
+                    data-src="https://www.google.com/recaptcha/api.js?onload=tt_recaptcha&render=explicit"
+                
+                async defer
+        ></script>
+
+		<script type="text/javascript" src="/static/CACHE/js/444b2f37bdbe.js"></script>
+
+		
+		<script
+                
+            type="text/plain"
+            data-type="text/javascript"
+            data-name="google"
+            
+        >
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-36819330-2', 'auto');
+			ga('send', 'pageview');
+		</script>
+		
+    
+	<a class="cookie-button-consent"  onclick="return klaro.show();">Modificar cookies</a>
+	
+
+    
+	</body>
+
+</html>

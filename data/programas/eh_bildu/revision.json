@@ -1,0 +1,391 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-17",
+ "alcance": "12 prioridades × 8 criterios y campos «titulo», «resumen» y «beneficiarios» de data/programas/eh_bildu/evaluacion.json, y las justificaciones de las 12 prioridades de extraccion.json, contra el programa «Posible Egin. Garantía y derechos» (30 págs., SHA-256 ceb655c9…6047, comprobado) y las fuentes citadas (prompt 4). Cada página se extrajo por separado con pdftotext -layout -f N -l N (página del PDF = número impreso); se leyeron enteras las pp. 4-9, 14-15, 18, 21-24 y 27. Las 12 citas son literales y cada tramo separado por «[...]» está en la página indicada (comprobado tramo a tramo; también las 179 medidas de extraccion.json); verify_quotes: 191 citas, 0 no encontradas. Los fragmentos del programa entrecomillados en los textos y en las justificaciones están en las páginas que se indican, y los del resumen oficial y la nota de pensiones del 16-nov, en sus copias (web_2026-11-16). Se abrieron las 132 URL distintas de la evaluación (136 tras añadir cuatro; todas responden salvo EUR-Lex, art. 193 TFUE, que devuelve un reto anti-bots: su texto se comprobó en el DOUE C 202 de 7-6-2016, copia del BOE; las de publications.europa.eu devuelven metadatos sin cabecera de navegador y se leyeron por negociación de contenido; el PDF de la GAO, con una descarga ordinaria) y se comprobó cada cifra, fecha, artículo y sentencia en su fuente. Se rehicieron todos los cálculos propios: viudedad (nómina de octubre de 2026, 2.289,774 M€ × 14 × 15 % = 4.809 M€, «unos 4.800»), no contributivas (nómina de febrero, 296,507 M€ × 14 × 15 % = 623 M€, «unos 620»; las 463.347 incluyen las gestionadas en Navarra y el País Vasco), pensión mínima (13.106,80 € del anexo I del Real Decreto-ley 3/2026 para jubilación o viudedad con 65 años sin cónyuge; 1.220 × 14 = 17.080 €; +3.973,20 €, +30,3 %), media de viudedad (976,67 €), complementos a mínimos (2.118.230, 20,0 %; 547.934 de viudedad), hogares de alquiler (19.953.529 × 16,7 % = 3,33 millones), jornada (40/32 = +25 %; 1.739,31 h / 45,65 semanas = 38,1 h, +19 %; 44→40 = −9 %; 40→32 = −20 %), SMI frente al salario medio (17.094 / 35.170,28 = 48,6 %; / 32.605,28 = 52,4 %) y emisiones (base de 1990 deducida del avance de 2025: 270,74 / 0,952 = 284,4 Mt; −32 % = 193,4 Mt, −28,6 % desde 2025; −90 % bruto: 8,2 Mt/año hasta 2050 y 11,0 hasta 2045): todos correctos. El Real Decreto-ley 29/2026 se leyó en el BOE (texto original y consolidado a 13-11-2026): el art. 18 LAU limita la actualización al IRAV y su disposición final sexta, hasta el 31-12-2027, al 2 % «en ausencia de este nuevo pacto» (sin subida si la renta supera el índice de referencia); su disposición final quinta, vigente, prevé una prórroga extraordinaria de hasta dos años, que el texto omitía (corregido). El trabajo de fuentes se repartió en tres verificaciones paralelas (vivienda y secretos oficiales; empleo, precios, fiscalidad y derecho a decidir; clima) con lectura propia de las fuentes de pensiones, del RDL 29/2026, de la STC 26/2025, de la Ley Foral 4/2022, del BOCG de 2020 y de las derogaciones de 2026.",
+ "seleccion": "Las 12 prioridades coinciden con extraccion.json y representan el programa. El documento no tiene resumen propio (la p. 4, «Nuestro compromiso», es un balance sin medidas) ni numera o destaca medidas; las prioridades se justifican por su posición (primera medida de su apartado), su desarrollo en subviñetas o su repetición, con el resumen oficial del programa del 16-nov como corroboración, el mismo criterio que la página oficial del programa del Frente Amplio. Cada bloque del resumen oficial con una medida estatal concreta tiene al menos una prioridad: vivienda (3), empleo (3), pensiones (1), precios y fiscalidad (2), transición ecológica (1), reconocimiento nacional (1) y memoria (1); los tres capítulos del programa están representados. Las justificaciones son ciertas salvo dos, corregidas: eh_bildu-08 no es «la que más espacio ocupa del programa» (la de la «ley mordaza» tiene cuatro subviñetas y la del salario mínimo propio, tres) y la p. 21 no repite las 32 horas de eh_bildu-04, solo la reducción de jornada; además, diez justificaciones tenían «El resumen» con mayúscula en mitad de frase. Dudas del analista, decididas: (1) Ley de Secretos Oficiales (eh_bildu-12) frente a la «ley mordaza» (eb-p141, apartado 1.13): se mantiene Secretos Oficiales. Las dos son la primera o segunda medida de su apartado y ninguna aparece en la p. 4; la «ley mordaza» ocupa más espacio y fue compromiso de campaña, pero el resumen oficial con que el partido presentó el programa no la menciona, y en su último bloque nombra expresamente «derogar la Ley de Secretos Oficiales» como una de dos medidas. Usar la presentación oficial del partido como desempate es el criterio aplicado al Frente Amplio (seis de las ocho medidas de su página oficial entre las 12) y no la opinión del analista; queda como duda editorial. (2) 2045 (eh_bildu-10): primera medida del apartado de energía y clima, que abre el bloque más largo del capítulo 1, y primera medida del epígrafe de transición del resumen oficial; correcta. (3) eh_bildu-01 junta dos viñetas no consecutivas de la p. 5 (prórroga automática y tope del 2 %): se acepta, porque el resumen oficial las cita juntas entre las medidas de vivienda, regulan el mismo contrato y propuestas_relacionadas es el mecanismo previsto; la valoración no mejora por la unión (concreción «mixta» por la parte de la prórroga) y la justificación lo dice. (4) eh_bildu-11 con concreción «desfavorable»: es prioridad por la evidencia del documento (abre un capítulo de tres) y del resumen («otro de los grandes bloques del programa»), igual que pnv-11, también «desfavorable» en concreción; la prioridad mide lo que el partido destaca, no su concreción. (5) Áreas: se mantienen; eh_bildu-08 en «otros», como podemos-03 y la evaluación anterior de EH Bildu de los límites de precios; eh_bildu-12 en «justicia e instituciones», como pnv-12; eh_bildu-11 en «modelo territorial», como erc-04 y pnv-11.",
+ "igual_estandar": "Se compararon las 96 valoraciones con las equivalentes ya aprobadas (data/programas/*/evaluacion.json y compromisos/evaluacion.json, más la evaluación retirada de EH Bildu, git show HEAD:data/programas/eh_bildu/compromisos/evaluacion.json). Coinciden: eh_bildu-01 con compromis-02 (financiación «favorable» por regulatoria; concreción «mixta», frente a la «favorable» de la evaluación retirada, por una diferencia de hecho que el texto dice: el compromiso remitía al Real Decreto-ley 28/2026, que fijaba plazos e indemnización, y el programa no); eh_bildu-02 con bng-02 (financiación «no_verificable»); eh_bildu-03 con compromis-01 y la evaluación retirada (legal «mixta», no «desfavorable» como podemos-02 o cc-06, que prohíben por finalidad general o nacionalidad); eh_bildu-05 con pnv-02 y la retirada (M/M/N); eh_bildu-06 con bng-06 (M/F/N); eh_bildu-08 con la retirada y podemos-03; eh_bildu-09 con bng-09 y upc-06 (M/F/M y beneficiarios «favorable»); eh_bildu-11 con erc-04 en legal y antecedentes («desfavorable») y largo plazo; eh_bildu-12 con pnv-12 en los ocho criterios. Decisiones sobre las dudas del analista: (1) eh_bildu-04, concreción «favorable», como adelante_andalucia-03 y frente a la «mixta» de compromis-05, frente_amplio-09 y bng-04: se mantiene. La rúbrica pide qué, a quién, cuánto y en qué plazo; el programa da el qué (32 horas o cuatro días sin rebaja salarial), el instrumento (reforma del Estatuto de los Trabajadores) y un plazo máximo: solo las pymes tienen transición (35 horas y tres años como máximo), de modo que las grandes empresas aplicarían las 32 horas con la reforma y todas llegarían en tres años. adelante_andalucia-03 fijaba dos y cuatro años y tampoco fechaba la reforma; a compromis-05 y bng-04 les faltaba todo calendario y a frente_amplio-09 el plazo para llegar a 32 horas. El texto dice ahora este razonamiento. (2) eh_bildu-07, alcance del 15 %: el programa dice «Nuevo alza de las pensiones de viudedad y no contributivas de al menos un 15 %», sin limitarlo a las más bajas (lo hace la nota del 16-nov); calcular el coste para todas es la lectura literal y el texto lo presenta como tal y señala la ambigüedad en concreción. Financiación «mixta» (coste parcialmente estimable con datos oficiales y sin financiación), legal «favorable» por ley ordinaria, a diferencia de frente_amplio-10 (reforma constitucional), y largo plazo «mixta» como psoe-05, compromis-07 y upc-07: los «desfavorable» de bng-07, pnv-08 y frente_amplio-10 se deben a que adelantan la jubilación (más años de cobro y menos empleo de mayores), lo que aquí no ocurre. (3) eh_bildu-10: «descarbonización» se evalúa como neutralidad climática, supuesto que el texto dice ahora; financiación «no_verificable» y no «mixta» porque lo que propone es adelantar la fecha y no hay ninguna estimación pública del coste adicional (la rúbrica reserva «mixta» para coste conocido o estimable; las inversiones de la senda vigente no estiman el adelanto), y el programa no cuantifica sus fuentes; internacional «mixta» y no «desfavorable»: ninguna fecha legal anterior a 2050 ha vencido, las evaluaciones son de trayectoria y muestran desvíos respecto a la neutralidad pero también reducciones (Alemania, −48 % en 2025; Finlandia cumple su objetivo de 2040), por lo que no muestran que la medida «no logró su objetivo» (rúbrica de «desfavorable»); encaja en «resultados dispares o sin evaluación publicada de resultados». (4) eh_bildu-11, concreción «desfavorable»: se mantiene, como pnv-11 («Concierto Político», objetivo sin órgano, norma ni plazo); erc-04 es «mixta» porque propone un instrumento identificable (referéndum pactado con el Código de la Comisión de Venecia), que este programa no nombra. Ninguna valoración cambia. Los textos no contienen adjetivos de valor; las correcciones son de fidelidad a las fuentes y precisión.",
+ "recuento_inicial": {
+  "favorable": 11,
+  "mixta": 74,
+  "desfavorable": 3,
+  "no_verificable": 8
+ },
+ "recuento_final": {
+  "favorable": 11,
+  "mixta": 74,
+  "desfavorable": 3,
+  "no_verificable": 8
+ },
+ "recuento_nota": "Recuento de las 12 propuestas × 8 criterios. Ninguna valoración cambia; las correcciones son de texto, cifras, atribución, títulos y fuentes (cuatro fuentes primarias nuevas, en cinco criterios, y una sustituida: el informe de la Electoral Commission en lugar de Wikipedia).",
+ "cambios": [
+  {
+   "propuesta": "eh_bildu-01",
+   "criterio": "legal",
+   "antes": "la STC 26/2025 avaló el tope de la Ley 12/2023 porque su ámbito era «excepcional y limitado, tanto territorial como temporalmente»",
+   "despues": "la STC 26/2025 avaló el límite de la renta de los nuevos contratos en las zonas de mercado residencial tensionado (art. 17.7 de la Ley de Arrendamientos Urbanos, en la redacción de la Ley 12/2023) por tratarse de una figura de ámbito «excepcional y limitado, tanto territorial como temporalmente»",
+   "motivo": "Fidelidad a la fuente: la STC 26/2025 (BOE 28-2-2025, p. 28423) usa esa expresión para la figura de la zona de mercado residencial tensionado y el límite de renta de los nuevos contratos (art. 17.7 LAU), no para un tope a la actualización anual, como podía entenderse al seguir a la frase sobre la actualización.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-01",
+   "criterio": "antecedentes",
+   "antes": "Este, en vigor desde el 8-10-2026, limita la actualización anual al IRAV y, hasta el 31-12-2027, al 2 % salvo nuevo pacto;",
+   "despues": "Este, en vigor desde el 8-10-2026, limita la actualización anual al IRAV y, hasta el 31-12-2027, al 2 % salvo nuevo pacto, y su disposición final quinta permite al inquilino al corriente de pago pedir una prórroga extraordinaria, por anualidades y hasta dos años, de los contratos cuya prórroga obligatoria venza antes del 31-12-2028;",
+   "motivo": "Omisión relevante: la disposición final quinta del Real Decreto-ley 29/2026, vigente (texto consolidado del BOE, actualización de 13-11-2026), ya establece una prórroga extraordinaria a petición del inquilino; es el antecedente vigente más próximo a la prórroga automática que propone el programa.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-01",
+   "criterio": "financiacion",
+   "antes": "limita hasta el 31-12-2027 la actualización anual al 2 %",
+   "despues": "limita hasta el 31-12-2027 la actualización anual al 2 % en defecto de nuevo pacto",
+   "motivo": "Precisión: la disposición final sexta del Real Decreto-ley 29/2026 fija el 2 % solo «en ausencia de este nuevo pacto entre las partes» (y ninguna subida si la renta supera el índice de referencia).",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-02",
+   "criterio": "legal",
+   "antes": "(Real Decreto-ley 11/2020, prorrogada hasta el 31-12-2025)",
+   "despues": "(Real Decreto-ley 11/2020, prorrogada hasta el 31-12-2025; el Congreso derogó en enero y febrero de 2026 los Reales Decretos-leyes 16/2025 y 2/2026, que la extendían hasta el 31-12-2026)",
+   "motivo": "Incompleto: la suspensión se volvió a prorrogar dos veces hasta el 31-12-2026 y el Congreso derogó ambas prórrogas (Resoluciones de 27-1-2026, BOE-A-2026-2024, y de 26-2-2026, BOE-A-2026-4667); la ficha del Real Decreto-ley 11/2020 en el BOE lo recoge.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-02",
+   "criterio": "antecedentes",
+   "antes": "La suspensión de los desahucios de vulnerables rigió desde 2020 hasta el 31-12-2025 (Real Decreto-ley 11/2020 y prórrogas).",
+   "despues": "La suspensión de los desahucios de vulnerables rigió desde 2020 hasta el 31-12-2025 (Real Decreto-ley 11/2020 y prórrogas); el Congreso derogó en enero y febrero de 2026 los Reales Decretos-leyes 16/2025 y 2/2026, que la prorrogaban hasta el 31-12-2026.",
+   "motivo": "Incompleto: mismas dos prórrogas derogadas (BOE-A-2026-2024 y BOE-A-2026-4667), que se añaden como fuentes.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-02",
+   "criterio": "antecedentes (fuentes)",
+   "antes": "",
+   "despues": "Resolución de 27-1-2026 del Congreso: derogación del Real Decreto-ley 16/2025 (BOE) (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2024)",
+   "motivo": "Fuente primaria de la derogación de la prórroga de 2026.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-02",
+   "criterio": "antecedentes (fuentes)",
+   "antes": "",
+   "despues": "Resolución de 26-2-2026 del Congreso: derogación del Real Decreto-ley 2/2026 (BOE) (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-4667)",
+   "motivo": "Fuente primaria de la derogación de la segunda prórroga de 2026.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-02",
+   "criterio": "antecedentes",
+   "antes": "si la administración no ofrece alternativa en dos meses, paga o consigna la deuda y se subroga en la posición del inquilino vulnerable",
+   "despues": "la administración tiene dos meses para ofrecer una alternativa o pagar o consignar la deuda y, si no lo hace, queda subrogada automáticamente en la posición deudora del inquilino vulnerable",
+   "motivo": "Fidelidad a la norma: el nuevo art. 22.6 LEC (art. 5 del Real Decreto-ley 29/2026) distingue el plazo de dos meses para ofrecer alternativa o pagar y la subrogación automática si «transcurrido el plazo de dos meses» no ha hecho ninguna de las dos cosas.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-02",
+   "criterio": "financiacion",
+   "antes": "con cargo a la línea estatal de ayudas para impagos del Real Decreto 1135/2025",
+   "despues": "con posible cobertura de la línea estatal de ayudas para impagos del Real Decreto 1135/2025",
+   "motivo": "Fidelidad a la norma: el art. 2 del Real Decreto-ley 29/2026 remite a esa financiación estatal «de cara a la posible cobertura» de los gastos; quien compensa es la administración de vivienda.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-02",
+   "criterio": "evidencia",
+   "antes": "Con datos de procedimientos judiciales de varias ciudades de EE. UU.,",
+   "despues": "Con datos judiciales de Chicago (condado de Cook) y Nueva York,",
+   "motivo": "Fidelidad a la fuente: el estudio (NBER w30382) usa «two major urban areas: Cook County [...] and New York City».",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-02",
+   "criterio": "internacional",
+   "antes": "la moratoria nacional de desahucios del CDC durante la pandemia fue anulada por el Tribunal Supremo en agosto de 2021 por exceder las competencias de esa agencia.",
+   "despues": "la moratoria nacional de desahucios del CDC durante la pandemia quedó sin efecto en agosto de 2021, cuando el Tribunal Supremo levantó la suspensión de la sentencia que la anulaba por considerar probable que la agencia se había excedido en sus competencias.",
+   "motivo": "Fidelidad a la fuente: la resolución 21A23 (26-8-2021) es sobre una solicitud de levantar la suspensión («application to vacate stay»); la anulación era de un tribunal de distrito.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-03",
+   "criterio": "legal",
+   "antes": "limita hasta 2030 las compras por menos del valor de mercado a ciertas entidades",
+   "despues": "limita hasta el 31-12-2030 las compras por menos del 70 % del valor de mercado a ciertas entidades",
+   "motivo": "Cifra: el art. 1.1 del Real Decreto-ley 29/2026 limita la adquisición «por un valor de contraprestación inferior al setenta por ciento de su valor de mercado».",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-03",
+   "criterio": "antecedentes",
+   "antes": "recupera la limitación hasta el 31-12-2030 para las entidades que compran por debajo del valor de tasación y las personas jurídicas grandes tenedoras, con excepciones como el destino a alquiler asequible",
+   "despues": "recupera hasta el 31-12-2030 la limitación de las compras por menos del 70 % del valor de mercado para las entidades que compran por debajo del valor de tasación y las personas jurídicas grandes tenedoras, con excepciones como el destino a vivienda habitual a precio asequible o social",
+   "motivo": "Fidelidad a la norma: falta el umbral del 70 % (art. 1.1) y la excepción es el destino «a vivienda habitual a precio asequible o social» (art. 1.2.a), no solo el alquiler.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-04",
+   "criterio": "concrecion",
+   "antes": "Lo repite en la p. 21 y el resumen oficial del programa lo recoge.",
+   "despues": "Para las grandes empresas no prevé transición, por lo que las 32 horas regirían desde la entrada en vigor de la reforma, que no fecha; el plazo máximo para todas las empresas es, así, de tres años. En la p. 21 vuelve a proponer, sin cifra, la reducción de jornada sin reducción de salario, y el resumen oficial del programa la recoge.",
+   "motivo": "Fidelidad al programa: la p. 21 propone «la reducción de jornada sin reducción de salario» ligada a la IA, sin las 32 horas; y se explicita por qué hay plazo para todas las empresas (la transición de tres años es solo para las pymes), base de la valoración «favorable» (ver igual_estandar).",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-04",
+   "criterio": "financiacion",
+   "antes": "desde la jornada media pactada en los convenios registrados hasta marzo de 2026 (1.739 horas al año, unas 38,1 semanales)",
+   "despues": "desde la jornada media pactada en los convenios con efectos económicos en 2026 registrados hasta marzo (1.739 horas al año, unas 38,1 semanales con la equivalencia de 1.826 horas anuales para 40 semanales)",
+   "motivo": "Precisión: la tabla CCT-2.2 se refiere a los convenios con efectos económicos en 2026 registrados hasta marzo, y la conversión a horas semanales no decía qué semanas al año suponía (1.739,31 / 45,65 = 38,1).",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-04",
+   "criterio": "beneficiarios",
+   "antes": "y 3,74 millones de ocupados en el sector público;",
+   "despues": "y 3,74 millones de ocupados en el sector público (cifras de fuentes distintas, que pueden solaparse y no se suman);",
+   "motivo": "Riesgo de doble cómputo: Cifras PYME asigna a grandes empresas empleo de educación y sanidad que puede ser público; las cifras no son sumables.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-04",
+   "criterio": "beneficiarios (campo de la propuesta)",
+   "antes": "y el empleo público sumaba 3,74 millones de ocupados en el tercer trimestre de 2026 (INE);",
+   "despues": "y el empleo público sumaba 3,74 millones de ocupados en el tercer trimestre de 2026 (INE), cifras de fuentes distintas que pueden solaparse;",
+   "motivo": "Mismo riesgo de doble cómputo que en el criterio «beneficiarios».",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-05",
+   "criterio": "concrecion",
+   "antes": "reclamaba 1.500 euros en 14 pagas según elDiario.es",
+   "despues": "reclamaba un salario mínimo de 1.500 euros según elDiario.es",
+   "motivo": "Sin respaldo: ni elDiario.es ni Orain dicen «14 pagas»; elDiario.es da «un mínimo de 1.500 euros».",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-05",
+   "criterio": "antecedentes",
+   "antes": "ELA y LAB reclamaron uno de 1.500 euros en 14 pagas;",
+   "despues": "ELA y LAB reclamaron uno de 1.500 euros;",
+   "motivo": "Sin respaldo: mismas fuentes, sin «14 pagas».",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-07",
+   "criterio": "financiacion",
+   "antes": "las transferencias del Estado a las pensiones deberán subir hasta el 3,0 % del PIB",
+   "despues": "las transferencias implícitas al sistema de pensiones (del resto de la Seguridad Social o de la Administración Central) deberán subir hasta el 3,0 % del PIB",
+   "motivo": "Fidelidad a la fuente: la AIReF habla de transferencias implícitas del resto de fondos de la Seguridad Social o de la Administración Central, como se formula en las evaluaciones aprobadas que usan la misma cifra.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-09",
+   "criterio": "concrecion",
+   "antes": "los operadores principales con al menos 1.000 M€ de facturación)",
+   "despues": "los operadores principales con al menos 1.000 M€ de facturación en 2019)",
+   "motivo": "Precisión: el umbral de la Ley 38/2022 (art. 1.2.a) se refiere a la cifra de negocios «correspondiente al año 2019».",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-09",
+   "criterio": "beneficiarios",
+   "antes": "con una cifra de negocios de al menos 1.000 M€, a los que se aplicaba",
+   "despues": "con una cifra de negocios de al menos 1.000 M€ en 2019, a los que se aplicaba",
+   "motivo": "Misma precisión (Ley 38/2022, art. 1.2.a).",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-09",
+   "criterio": "beneficiarios (campo de la propuesta)",
+   "antes": "con una cifra de negocios de al menos 1.000 M€, como en el gravamen",
+   "despues": "con una cifra de negocios de al menos 1.000 M€ en 2019, como en el gravamen",
+   "motivo": "Misma precisión (Ley 38/2022, art. 1.2.a).",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-10",
+   "criterio": "concrecion",
+   "antes": "adelantar la descarbonización «al menos» a 2045, frente al «antes de 2050» de la ley vigente (p. 15)",
+   "despues": "adelantar la descarbonización «al menos» a 2045 (p. 15), que se evalúa como un adelanto de la neutralidad climática que la Ley 7/2021 fija «antes de 2050», porque el programa no define el término",
+   "motivo": "Supuesto explícito: el programa habla de «descarbonización» y la ley, de «neutralidad climática»; la evaluación los equipara (la misma página presenta la electrificación como «vía prioritaria a la descarbonización» y el resumen oficial habla de adelantarla a 2045), y debe decirlo.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-10",
+   "criterio": "financiacion",
+   "antes": "El coste de la senda vigente se conoce: el PNIEC 2023-2030 estima una inversión de 308.000 M€ hasta 2030, un 82 % privada, y la Estrategia de Descarbonización a Largo Plazo de 2020, unos 500.000 M€ en 2031-2050.",
+   "despues": "La inversión de la senda vigente está estimada: el PNIEC 2023-2030 prevé movilizar 308.000 M€ hasta 2030, un 82 % privada, y la Estrategia de Descarbonización a Largo Plazo de 2020 calcula unas inversiones totales de 500.000 M€ en 2031-2050, de las que atribuye 300.000 M€ a la propia Estrategia.",
+   "motivo": "Fidelidad a la fuente: son inversiones totales, no costes; la nota de MITECO de 3-11-2020 dice que de los 500.000 M€ «300.000 se consideran asociados a la implementación de esta Estrategia».",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-10",
+   "criterio": "antecedentes",
+   "antes": "La Ley 7/2021 fijó una reducción mínima de emisiones del 23 % en 2030 respecto a 1990 y la actualización del PNIEC de 2024 la elevó al 32 %.",
+   "despues": "La Ley 7/2021 fija una reducción mínima de emisiones del 23 % en 2030 respecto a 1990, y el PNIEC 2023-2030, aprobado en 2024, eleva el objetivo al 32 %.",
+   "motivo": "Precisión: el art. 3.1.a de la Ley 7/2021 sigue diciendo «al menos, un 23 %»; el 32 % es objetivo del PNIEC, no de la ley.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-10",
+   "criterio": "antecedentes",
+   "antes": "y la Ley Foral navarra 4/2022 mantiene 2050; no hemos localizado ninguna iniciativa estatal para adelantar la fecha.",
+   "despues": "y la Ley Foral navarra 4/2022 mantiene 2050 para la Comunidad (art. 1.2) y exige a sus administraciones la neutralidad de su propia actividad en 2040 (art. 72). En la tramitación de la Ley 7/2021, enmiendas del Grupo Republicano y del Grupo Plural (núms. 503 y 667) propusieron sin éxito adelantar la neutralidad a 2040; no hemos localizado iniciativas estatales posteriores.",
+   "motivo": "Inexacto: el art. 72 de la Ley Foral 4/2022, citado como fuente, fija 2040 para la actividad de las administraciones navarras; y sí hubo iniciativas estatales para adelantar la fecha (BOCG Congreso, serie A, núm. 19-2, 28-10-2020: «A más tardar en el año 2040 España deberá alcanzar la neutralidad climática»), que no prosperaron (el texto vigente dice «antes de 2050»).",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-10",
+   "criterio": "antecedentes (fuentes)",
+   "antes": "",
+   "despues": "BOCG Congreso, serie A, núm. 19-2 (28-10-2020): enmiendas al proyecto de Ley de cambio climático, núms. 503 (G. P. Republicano) y 667 (G. P. Plural) (https://www.congreso.es/public_oficiales/L14/CONG/BOCG/A/BOCG-14-A-19-2.PDF)",
+   "motivo": "Fuente primaria de las enmiendas de 2020.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-10",
+   "criterio": "internacional",
+   "antes": "Ningún país ha alcanzado aún una neutralidad legal anterior a 2050, así que solo hay evaluaciones de trayectoria, y todas señalan desvíos.",
+   "despues": "Aún no ha vencido ninguna fecha legal de neutralidad anterior a 2050, así que solo hay evaluaciones de trayectoria, y todas señalan desvíos respecto a la fecha de neutralidad.",
+   "motivo": "Precisión: la frase podía leerse como que esos países han fracasado; y el panel finlandés concluye que Finlandia sí cumple su objetivo de reducción de 2040, de modo que el desvío es respecto a la neutralidad.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-10",
+   "criterio": "internacional",
+   "antes": "con las medidas aprobadas, las proyecciones oficiales llegan a un 83 % en 2045",
+   "despues": "con las medidas ya aplicadas, las proyecciones oficiales llegan a un 83 % en 2045",
+   "motivo": "Fidelidad a la fuente: la nota del Umweltbundesamt (14-3-2026) habla de «bereits umgesetzten Maßnahmen» (medidas ya aplicadas).",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-10",
+   "criterio": "internacional",
+   "antes": "no alcanzará su neutralidad de 2035 sin medidas adicionales significativas.",
+   "despues": "no alcanzará su neutralidad de 2035 sin medidas adicionales significativas, aunque sí su objetivo de reducción de 2040.",
+   "motivo": "Fidelidad a la fuente (Finnish Climate Change Panel, informe 3/2026): el objetivo legal del −80 % en 2040 se cumple en todos sus escenarios.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-10",
+   "criterio": "internacional (fuentes)",
+   "antes": "",
+   "despues": "Gobierno federal de Alemania: Klimaschutzgesetz, Klimaneutralität bis 2045 (reforma aprobada en junio y en vigor el 31-8-2021) (https://www.bundesregierung.de/breg-de/aktuelles/klimaschutzgesetz-2021-1913672)",
+   "motivo": "Sin respaldo en las fuentes citadas: ni el § 3 de la KSG ni las notas del Expertenrat o del UBA dan el año de la reforma que adelantó la neutralidad a 2045; el Gobierno federal la fecha (en vigor el 31-8-2021).",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-10",
+   "criterio": "evidencia (fuentes)",
+   "antes": "",
+   "despues": "Gobierno federal de Alemania: Klimaschutzgesetz, Klimaneutralität bis 2045 (reforma aprobada en junio y en vigor el 31-8-2021) (https://www.bundesregierung.de/breg-de/aktuelles/klimaschutzgesetz-2021-1913672)",
+   "motivo": "Mismo dato («la ley adelantó la neutralidad a 2045 en 2021») en el criterio de evidencia.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-10",
+   "criterio": "largo_plazo",
+   "antes": "El consejo danés advierte de que objetivos tan ambiciosos pueden depender de emisiones negativas con tecnologías nuevas y arriesgadas",
+   "despues": "El consejo danés advierte de que su objetivo de reducir un 110 % en 2050 exige grandes cantidades de emisiones negativas, en parte con una tecnología nueva y arriesgada (la captura directa de CO₂ del aire)",
+   "motivo": "Fidelidad a la fuente: el Klimarådet (Statusrapport 2026) se refiere al objetivo danés del 110 % en 2050, que «exige» emisiones negativas, y califica de nueva y arriesgada la captura directa (DACCS).",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-11",
+   "criterio": "legal",
+   "antes": "la STC 114/2017 declaró que un referéndum de autodeterminación es incompatible con los arts. 1.2 y 2 CE",
+   "despues": "la STC 114/2017 declaró que la convocatoria por una comunidad autónoma de un referéndum de autodeterminación vulnera los arts. 1.2 y 2 CE",
+   "motivo": "Fidelidad a la fuente: la sentencia enjuicia la ley catalana que convocaba unilateralmente el referéndum, que se alzaba «frente a la soberanía nacional residenciada en el pueblo español».",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-11",
+   "criterio": "internacional (fuentes)",
+   "antes": "2014 Scottish independence referendum (Wikipedia, resultados) (https://en.wikipedia.org/wiki/2014_Scottish_independence_referendum)",
+   "despues": "Electoral Commission (Reino Unido), Scottish Independence Referendum: report on the referendum held on 18 September 2014 (diciembre de 2014) (https://www.electoralcommission.org.uk/sites/default/files/pdf_file/Scottish-independence-referendum-report.pdf)",
+   "motivo": "Fuente primaria en lugar de Wikipedia: el informe oficial da «55.3% of all voters» por el no y una participación del «84.6% of the electorate».",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-12",
+   "criterio": "internacional",
+   "antes": "con 390 empleados públicos dedicados a ella en 2024",
+   "despues": "con el equivalente a 390 empleos a tiempo completo dedicados a ella en 2024",
+   "motivo": "Fidelidad a la fuente: el informe ISOO FY2024 (p. 24) da 390 FTE, no personas.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-12",
+   "criterio": "internacional",
+   "antes": "en el Reino Unido, transferencia a los archivos a los 20 años desde 2010",
+   "despues": "en el Reino Unido, transferencia a los archivos a los 20 años (ley de 2010, aplicada de forma gradual desde 2013)",
+   "motivo": "Fidelidad a la fuente: la s. 45 de la Constitutional Reform and Governance Act 2010 entró en vigor el 1-1-2013 con una transición de diez años.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-12",
+   "criterio": "largo_plazo",
+   "antes": "que en EE. UU. ocupó a 390 empleados en desclasificación automática en 2024",
+   "despues": "que en EE. UU. ocupó el equivalente a 390 empleos a tiempo completo en desclasificación automática en 2024",
+   "motivo": "Mismo motivo (ISOO FY2024: 390 FTE).",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-12",
+   "criterio": "beneficiarios",
+   "antes": "víctimas de hechos aún clasificados, grupos que el Gobierno citó al presentar su proyecto de 2025.",
+   "despues": "víctimas de hechos aún clasificados; los tres primeros grupos los citó el Gobierno al presentar su proyecto de 2025.",
+   "motivo": "Sin respaldo: la nota del Ministerio de 22-7-2025 cita investigadores, periodistas e historiadores, no a las víctimas.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-08",
+   "criterio": "fuentes (título): eh_bildu-08 evidencia, eh_bildu-08 internacional, eh_bildu-08 largo_plazo",
+   "antes": "Banco Nacional de Croacia, Working Paper W-71 (2023): Price controls, lessons from milk products in Croatia",
+   "despues": "Mužić y Žilić (2023), Can selective price controls fight off inflation? Lessons from milk products in Croatia, Banco Nacional de Croacia, Working Paper W-71",
+   "motivo": "Título y autores reales del documento.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-08, eh_bildu-09",
+   "criterio": "fuentes (título): eh_bildu-08 antecedentes, eh_bildu-09 evidencia, eh_bildu-09 largo_plazo",
+   "antes": "La Moncloa (3-7-2023): Economía, el Banco de España y la Agencia Tributaria ponen en marcha el Observatorio de Márgenes Empresariales",
+   "despues": "La Moncloa (3-7-2023): Asuntos Económicos, Banco de España y Agencia Tributaria publican el primer informe trimestral del Observatorio de Márgenes Empresariales",
+   "motivo": "Título real de la nota (el contenido citado es correcto).",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-08",
+   "criterio": "justificacion (extraccion.json)",
+   "antes": "(contención de precios, p. 8) y la que más espacio ocupa del programa (dos subviñetas)",
+   "despues": "(contención de precios, p. 8), desarrollada en dos subviñetas",
+   "motivo": "Inexacto: no es la medida que más espacio ocupa; la de la «ley mordaza» (p. 22) tiene cuatro subviñetas y la del salario mínimo propio (p. 6), tres.",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-04",
+   "criterio": "justificacion (extraccion.json)",
+   "antes": "la única con calendario y repetida en el apartado de inteligencia artificial (eb-p138, p. 21)",
+   "despues": "la única del apartado con calendario, y el de inteligencia artificial vuelve a proponer la reducción de jornada sin reducción de salario, sin cifra (eb-p138, p. 21)",
+   "motivo": "Fidelidad al programa: la p. 21 no repite las 32 horas, solo «la reducción de jornada sin reducción de salario».",
+   "fecha": "2026-11-17"
+  },
+  {
+   "propuesta": "eh_bildu-02 a eh_bildu-12",
+   "criterio": "justificacion (extraccion.json)",
+   "antes": "«El resumen oficial» en mitad de frase (tras «y», «;» o «que»)",
+   "despues": "«el resumen oficial»",
+   "motivo": "Errata de mayúscula en 10 justificaciones.",
+   "fecha": "2026-11-17"
+  }
+ ],
+ "dudas": [
+  "Selección (decisión editorial, no error): la «ley mordaza» (eb-p141, p. 22, con cuatro subviñetas y compromiso de campaña de Matute) es la alternativa a la Ley de Secretos Oficiales (eh_bildu-12). Se mantiene Secretos Oficiales porque el resumen oficial del programa la nombra y no menciona la «ley mordaza»; si el editor prefiere el espacio que ocupa la medida en el documento, el cambio sería eh_bildu-12 → eb-p141, y su evaluación podría partir de la revisada el 12-nov (evaluación retirada, entonces eh_bildu-02) y de bng-11 y erc-05.",
+  "eh_bildu-04: Cifras PYME asigna a las grandes empresas 849.668 empleos en educación y 1.481.067 en sanidad y servicios sociales, que pueden incluir empleo público también contado en la EPA (3,74 millones); no se ha podido confirmar el solapamiento y el texto dice que las cifras no se suman.",
+  "Mismas imprecisiones en evaluaciones aprobadas de otros partidos, que no se han tocado (encargo limitado a EH Bildu): la jornada pactada «en los convenios registrados hasta marzo de 2026 (… unas 38,1 semanales)» en adelante_andalucia-03, compromis-05, frente_amplio-09 y podemos (compromisos); «390 empleados» y el Reino Unido «desde 2010» en pnv-12; la STC 114/2017 como incompatibilidad general de «un referéndum de autodeterminación» y la fuente de Wikipedia para Escocia en erc-04. Convendría alinearlas en la próxima auditoría de coherencia.",
+  "eh_bildu-07: si el 15 % se aplicara solo a las pensiones de viudedad y no contributivas más bajas, como sugiere la nota del 16-nov, el coste sería menor que los 5.400 M€ calculados para todas; la distribución por cuantías no se publica. Los costes de la pensión mínima de 1.220 € y del 15 % no son sumables (547.934 pensiones de viudedad tienen complemento a mínimos).",
+  "Afirmaciones negativas («no hemos localizado…»): se buscaron sin hallar lo contrario salvo en eh_bildu-10, donde existían enmiendas de 2020 para adelantar la neutralidad a 2040 (corregido). La de eh_bildu-05 («sin precedentes en materia laboral» de una delegación por el art. 150.2 CE) no se ha podido comprobar exhaustivamente.",
+  "eh_bildu-09: el programa atribuye la caída del gravamen energético a «PNV, UPN, PP, VOX y JUNTS»; el texto lo atribuye al programa y la crónica de EFE citada no detalla el voto de cada grupo. No se ha consultado el Diario de Sesiones del 22-1-2025."
+ ]
+}

@@ -1,6 +1,6 @@
 # Checklist · vota con datos (29-N)
 
-Actualizado: 16-nov-2026. Solo lo pendiente; lo terminado está en el historial de git. La web ya está
+Actualizado: 17-nov-2026. Solo lo pendiente; lo terminado está en el historial de git. La web ya está
 en línea; aquí «bloquea» significa **no difundirla ni anunciarla** (o, si ya circula, que deja de ser
 correcta o legal) hasta que esté hecho.
 
@@ -52,7 +52,12 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
     12 propuestas del programa (dos revisiones independientes, 96 correcciones; cambia una valoración: financiación de las
     horas de luz gratis, desfavorable → mixta); sus compromisos anteriores están en el programa, así que no hay complemento.
     Las «500 medidas» del PSOE del 16-nov son el programa ya incorporado el 15-nov (mismo sha256 en psoe.es).
-  - [ ] Podemos, Junts, EH Bildu, NC-BC, Ara Més, UPN — sin fecha (Junts: sin rastro de programa el 15-nov).
+  - [x] Ara Més-Front Ampli y EH Bildu — **publicados el 16-nov** («Viure bé, viure aquí», 17 pp., en catalán; «Posible Egin.
+    Garantía y derechos», 30 pp.). Hecho el 17-nov: paso 1 recodificado (g15 y g16, verificados sin cambiar ningún valor: Ara Més
+    10→18 posiciones, EH Bildu 14→18; el programa de Ara Més-Front Ampli es documento conjunto para Frente Amplio, que solo cambia
+    la fuente de q32); 12 propuestas de cada programa con revisión independiente (Ara Més 13 correcciones, cambia una valoración:
+    financiación de -01 a mixta; EH Bildu 45 correcciones, ninguna valoración cambia); sin complemento en ninguno de los dos.
+  - [ ] Podemos, Junts, NC-BC (UPC), UPN — sin programa el 17-nov a las 10:00.
   - Hecho el 16-nov: auditoría de coherencia tras el programa del Frente Amplio (`data/fase3/coherencia_2026-11-16.md`: 49 correcciones de
     texto, cifras y fuentes en 11 partidos; ninguna valoración cambia).
   - Hecho el 14-nov: adelante_andalucia-08 cita la DA 23.ª de la Ley 54/1997 (mínimo del 10 % de la SEPI en
@@ -122,6 +127,14 @@ paso 2. Programas: Frente Amplio abre frenteamplio.info/programa/ con 8 medidas 
 manifiesto de la UPC, se guarda como documento programático y no como programa hasta que publique el completo. Los
 otros 6 siguen sin programa (junts.cat ya responde). Paso 1 sin posiciones nuevas (la entrevista de Sánchez con Jordi
 Wild no da posición sobre q27). BOE sin cambios; dominio y HTTPS correctos.
+
+**Revisión del 16-nov, 20:13, y del 17-nov, 09:43:** encuestas — Sigma Dos día 4 (16-nov) y 40dB día 5 (17-nov) entran en la
+media; GAD3 y CIS sin novedades. Programas de Ara Més-Front Ampli y EH Bildu (punto 2). Compromisos: 34 nuevos con revisión
+independiente (224 → 258). **Decisión del editor (16-nov):** en el registro de compromisos, el programa y la campaña valen igual
+como fuente para todos los partidos; se recuperan 3 del PSOE y 1 del Frente Amplio. Pendiente para el barrido del 18-nov:
+medidas de los programas del PP, Vox, Compromís y PSOE/Frente Amplio con el mismo criterio, para igualar la cobertura. Paso 1
+sin posiciones nuevas de campaña (pendientes: resultado de la Comisión Interministerial de Migración, Esteban 18 y 19-nov,
+debate Sánchez-Feijóo del 19-nov, vídeo de Nogueras en Barcelona Tribuna). BOE sin cambios; dominio y HTTPS correctos.
 
 **Hecho el 16-nov** (estudio Neutral frente a Saltar; decisiones del editor): «Saltar» pasa a «No lo sé», a
 todo lo ancho bajo la escala; «Neutral» sigue contando. «Coincidís» solo si estáis del mismo lado (un Neutral es

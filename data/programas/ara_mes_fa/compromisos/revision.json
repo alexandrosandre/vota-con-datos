@@ -1,320 +1,49 @@
 {
  "aprobado": true,
  "revisor": "Claude (Anthropic), pasada independiente",
- "fecha": "2026-11-12",
- "base": "compromisos",
- "alcance": "11 compromisos y 11 prioridades × 8 criterios (7 en la primera pasada; 4 añadidas tras ella, véase «seleccion»). Se abrieron las 69 URL citadas en seleccion.json y evaluacion.json y la fuente añadida (STC 26/2025). 68 respondieron a una petición normal. EUR-Lex devolvió para el art. 63 y el art. 113 TFUE y el Protocolo n.º 32 páginas breves que son el propio texto del artículo, no un desafío. imf.org devolvió 403 a curl: el documento SIP/2023/004 se leyó con una petición web normal en la misma URL. La STC 177/2016 (formato .docx) y la estadística de pensiones de agosto de 2026 (.xlsx) se leyeron extrayendo su contenido. No se sorteó ninguna protección. Citas: las 30 coinciden con su copia local (verify_quotes: 0 no encontradas); se cotejaron las 5 notas oficiales y las 7 crónicas, y las traducciones del catalán son fieles. Las citas son de Carme Gomila (cabeza de lista) en primera persona o de notas oficiales de la coalición en aramesfrontampli.cat (quien = la coalición), todas posteriores a la convocatoria. El c05 procede de un comunicado («En un comunicado», EFE), no de una rueda de prensa. Cifras comprobadas en fuente primaria: Registradores 4T 2025 (31,47 %; 3.566 y 14.633 compraventas), INE ECV 2025 (21,3 % y 16,7 %), censo 2021 (105.632 de 652.123), ECP (1.249.844), EPF 2024 (5.391 €; 15,8 %, 19,9 % y 12,0 %), estadística de pensiones de agosto de 2026 (216.912 pensiones, 1.282,53 €, 32.175 con mínimos, 14,8 % frente a 20,1 %), Moncloa (12.441,80 y 17.592,40 €), AIReF (+3,1 puntos hasta el 16,1 % en 2050), OCDE (Pensions at a Glance 2023: −11,2 puntos, al menos 4 puntos, 35-36 %), Estadística de Asuntos Taurinos 2024 (1.457 festejos, +2,2 % sobre 2019; 11.066, 1.337 y 74), votación de la ILP (169-57-118), RDL 29/2026 (2 % hasta el 31-12-2027; recargo del IBI), Ley balear 5/2018 (cesión al IBAVI, compensación según expropiación forzosa, límite presupuestario), Directiva del IVA (arts. 1.2, 6, 104, 168 y anexo III) y estudios citados (Hartley y otros; Segú; Jofre-Monseny y otros; Diamond y otros; Hahn y otros; Mužić y Žilić; Forteza y otros). Segunda pasada (prioridades 08 a 11): se abrieron las 53 URL que citan (todas con respuesta 200; la versión consolidada de la Directiva 2006/112/CE en EUR-Lex respondió al repetir la petición) y se comprobaron en fuente primaria, entre otras, el RDL 29/2026 (art. 1 y preámbulo: «prohibición de la compra especulativa», 70 % del valor de mercado, vigencia hasta el 31-12-2030 «para garantizar su proporcionalidad»), la nota del Gobierno neerlandés del 16-10-2026 (opkoopbescherming, unos 70 municipios), GAO-24-106643 (74 estudios), Du y Zhang (−7,69 puntos), Moncloa y BOE del SMI de 2026 (1.221 €, +3,1 %, 66 % desde 2018, 2,5 millones), Banco de España (DO 2113), Ley 7/2023 (art. 32.6), Ley 31/2003, Directiva 1999/22/CE, Clubb y Mason (2003), Max Planck sobre Conde y otros (17 de 68 especies), Le Petit Journal (8 delfines de Marineland a Selwo Marina, 22-23 de julio), ley francesa de 30-11-2021, S-203 de Canadá, Montreal (1.000 dólares por caballo), LegalToday (TSJIB, nulidad por falta de informe de impacto de género), Última Hora (28 licencias, unos 1,4 M€), anexo III y art. 105 bis de la Directiva del IVA, informe COM(2025) 585 (Irlanda, 13,5 % a los servicios de los veterinarios; ningún tipo «parking» en España), EPF (60,91 € por persona; cálculo de 220 a 270 M€ rehecho) y la votación de la PNL de 2016 (177-132-33). verify_quotes: 34 citas, 0 no encontradas.",
- "seleccion": "Conforme tras corrección. En la primera pasada la selección no era conforme: dejaba fuera 4 de los 11 compromisos que el partido también destaca, y el prompt 1b dice: «Si hay menos de 12 compromisos concretos verificables, selecciona los que haya». c04 (prohibir la compra especulativa) figura en la misma frase de la nota del 6-nov que c01, c02 y c03; c07 (subir el salario mínimo) es el primero de los cinco compromisos que Gomila enumera ante PP y Vox en el mitin de Palma (8-nov), la misma enumeración que justifica c01 y c08; c10 (zoológicos, delfinarios y galeras) es «una de les principals propostes» de la nota del 10-nov, con su primer epígrafe y su subtítulo; c11 (IVA veterinario) figura en ese subtítulo. Los motivos de exclusión aducían falta de concreción, que es un criterio de evaluación y no de prioridad. Un agente evaluador distinto añadió las cuatro a «prioridades» y las evaluó con el prompt 3 (ara_mes_fa-08 a -11); este revisor las revisó con el prompt 4 (véanse «cambios»). Con 11 prioridades entran todos los compromisos concretos que el partido destaca, como en Podemos, PSC, UPN y EH Bildu.",
- "igual_estandar": "(1) Compra de vivienda por no residentes: ara_mes_fa-01 es «desfavorable» en encaje legal (art. 63 TFUE; Konle, Libert; sin protocolo como el danés) y «no_verificable» en financiación, igual que cc-06 y podemos-02. (2) Topes al alquiler: ara_mes_fa-02 pasa a «mixta» en encaje legal, como podemos-01, bng-02, adelante_andalucia-01 y pnv-01, por la STC 26/2025 y un diseño sin definir; la financiación «favorable» (regulatoria) es igual que en podemos-01, pnv-01 y adelante_andalucia-01. (3) Viviendas vacías: la concreción «desfavorable» de ara_mes_fa-03 (objetivo sin instrumento) sigue la regla de podemos-01. (4) IVA del transporte de mercancías: el encaje legal «desfavorable» de ara_mes_fa-04 sigue la regla de la auditoría para medidas que chocan con el Derecho de la UE en su núcleo (cc-06, salf-06): el anexo III de la Directiva no incluye el transporte de mercancías y un tipo territorial exige cambiar la Directiva por unanimidad. pnv-05 es «mixta» porque parte de su diseño (gestión foral) es viable. (5) Complemento de pensiones: el encaje legal «mixta» de ara_mes_fa-05 es igual que el del SMI territorial de pnv-02 y eh_bildu-04, y la financiación «no_verificable» sin cuantía sigue la regla de psoe-03. (6) Topes a los alimentos: ara_mes_fa-06 es «favorable» en encaje legal y podemos-03 es «mixta». Se mantiene la diferencia, porque los hechos difieren: «alimentos básicos» encaja en los «productos de primera necesidad» cuyo precio el Gobierno ya puede fijar (art. 13.2.a de la Ley 7/1996), mientras que un tope sobre «los alimentos» en general excede ese supuesto. La financiación «favorable» es igual en ambos. (7) Tauromaquia: ara_mes_fa-07 no tiene comparable en otros partidos. (8) Compra especulativa: ara_mes_fa-08 es «mixta» en encaje legal porque «especulativa» no está definida, como compromis-01 y la limitación acotada del RDL 29/2026, y «no_verificable» en financiación (efecto recaudatorio sin estimar), como podemos-02 y compromis-01. (9) SMI: ara_mes_fa-09 tiene las mismas ocho valoraciones que psoe-03, psc-02 y upc-08. (10) IVA veterinario: ara_mes_fa-11 pasa a «desfavorable» en encaje legal, la regla de ara_mes_fa-04: el anexo III no incluye los servicios veterinarios para animales de compañía, y la vía del tipo «parking» del art. 105 bis.3 solo estaba abierta a otros Estados hasta el 7-10-2023 (art. 105 bis.5). (11) Zoológicos y galeras: ara_mes_fa-10 «mixta» en encaje legal (parte viable por ley estatal; galeras sin título competencial indicado).",
- "recuento_inicial": {
-  "favorable": 5,
-  "mixta": 42,
-  "desfavorable": 4,
-  "no_verificable": 5
- },
- "recuento_final": {
-  "favorable": 6,
-  "mixta": 69,
-  "desfavorable": 5,
-  "no_verificable": 8
+ "fecha": "2026-11-17",
+ "base": "complemento",
+ "seleccion_sha256": "92198173bd524c960e678dfc78b350bbc152ea12af758d7f8b669d9d40848584",
+ "alcance": "Complemento del programa: los 10 compromisos de seleccion.json (ara_mes_fa-c01, que el analista dejaba como único compromiso y prioridad del complemento, y c02, c04 a c11 en «descartados») y los demás descartados, contra el programa del 16-nov (data/sources/programas/ara_mes_fa/ProgramaElectoral29N.pdf, SHA-256 75149b3b…a6f8, comprobado), sus 153 medidas (extraccion.json) y las notas oficiales de la coalición (copias locales del 6, 9, 10, 12, 14 y 15-nov). Cada compromiso se buscó por sus términos y sinónimos en el texto de cada página (pdftotext -layout -f N -l N) y en las medidas; los fragmentos del programa entrecomillados en los motivos son literales y de la medida y página indicadas. Se abrieron las URL de los compromisos (notas oficiales, Demócrata, NacióDigital) y las de la evaluación de c01 (todas responden). La evaluación de c01 que el analista proponía como complemento (compromisos/evaluacion.json, reaprovechada de la revisada el 12-nov como ara_mes_fa-01) se leyó para decidir si debía publicarse; tras el descarte de c01 no hay valoraciones que revisar. seleccion_sha256 recalculado tras las correcciones.",
+ "seleccion": "Ninguno de los diez compromisos evaluados hasta el 12-nov falta en el programa, ni con otras palabras, así que el complemento queda vacío. Los nueve descartados por el analista lo están en la medida y página que indican (comprobado: c02, medida 25, p. 4; c04, 23, p. 4; c05, 5, p. 2; c06, 2, p. 2; c07, 1, p. 2; c08, 4, p. 2; c09, 156, p. 17; c10, 157 y 160, p. 17; c11, 159, p. 17), con los matices que sus motivos dicen. Corrección: c01 (limitar la compra de vivienda por no residentes) también está en el programa. La medida 23 (p. 4) prohíbe toda compra de vivienda que no sea para «l’habitatge habitual i permanent de la persona compradora»: a un no residente solo le permite comprar para pasar a residir, y le prohíbe las segundas residencias y la compra para invertir, que es lo que la coalición decía querer limitar (nota del 9-nov: «una part important dels habitatges es destina a la inversió o a segones residències»). Que no use el criterio de residencia y alcance también a los residentes la hace más amplia, no distinta. El criterio de las revisiones de Vox, Compromís, PSOE y Frente Amplio es que va al complemento lo que el programa no recoge en su rasgo definitorio (compromis-c02: el programa no proponía bajar las rentas) y se descarta lo que el programa mantiene, concreta o supera con otras palabras (psoe-c05, fa-c06); c01 es de este segundo tipo, y el propio analista reconocía que la medida 23 «también impediría a un no residente comprar una vivienda que no vaya a ser su residencia habitual». Con «prioridades» vacío no hay evaluación (prompt 1b), como en el Frente Amplio, el PSOE, ERC, SALF y Adelante Andalucía, y se retira compromisos/evaluacion.json. El rasgo jurídico que distinguía a c01 (art. 63 TFUE) se evalúa en ara_mes_fa-06, con la misma valoración «desfavorable».",
+ "igual_estandar": "Sin valoraciones que revisar tras el descarte. El criterio para decidir qué está «en el programa» es el de las revisiones de Vox, Compromís, PSOE y Frente Amplio: si falta el rasgo que define el compromiso, va al complemento; si falta un elemento accesorio o el programa lo concreta, lo mantiene o lo supera con otras palabras, se descarta. Aplicado a los diez compromisos, ninguno pierde su rasgo definitorio. Los motivos describen lo que dicen el programa y las notas de la coalición, sin adjetivos de valor.",
+ "recuento_nota": "Sin recuento_inicial ni recuento_final: el complemento queda vacío y no hay evaluacion.json. La propuesta del analista (c01 como complemento, 8 criterios: seis «mixta», encaje legal «desfavorable» y financiación «no_verificable») y la evaluación anterior con base «compromisos» (revisada el 12-nov) siguen en el historial del repositorio.",
+ "revision_anterior": {
+  "fecha": "2026-11-12",
+  "aprobado": true,
+  "base": "compromisos",
+  "cambios": 27,
+  "dudas": 7,
+  "nota": "La revisión del 12-11-2026 (con las entradas de coherencia del 12-nov, la reatribución y la restauración del 13-nov y la auditoría del 14-nov) se refería a la base «compromisos» (10 prioridades, ara_mes_fa-01 a -11 sin -03, identificadores que no coinciden con los del programa). Se sustituye al publicarse el programa: sus cambios y dudas siguen en el historial del repositorio."
  },
  "cambios": [
   {
-   "propuesta": "ara_mes_fa-02",
-   "criterio": "legal",
-   "antes": "valoracion: favorable. «…con ese criterio desestimó el recurso contra la contención de rentas de la Ley 12/2023 (STC 79/2024)… aplicarlos en Baleares sin esa declaración autonómica requeriría una ley estatal ordinaria, aprobada por mayoría simple.»",
-   "despues": "valoracion: mixta. Texto que añade la STC 26/2025 (tope avalado por ser «excepcional y limitado» y «apegado al valor de mercado»), recoge que el Govern no ha declarado zonas tensionadas y explica que el encaje depende de un diseño no concretado. Fuentes añadidas: STC 26/2025 (BOE) y La Voz de Ibiza (1-10-2026).",
-   "motivo": "Igual estándar: los topes al alquiler sin diseño definido son «mixta» en podemos-01, bng-02, adelante_andalucia-01 y pnv-01, porque la STC 26/2025 avaló el tope de la Ley 12/2023 por su ámbito limitado. El texto omitía ese pronunciamiento. Además, la STC 79/2024 estimó en parte el recurso de Andalucía y lo que avaló en este punto es la competencia estatal (art. 149.1.8 CE)."
+   "propuesta": "ara_mes_fa-c01 (descartado)",
+   "criterio": "seleccion",
+   "antes": "En «compromisos» y en «prioridades» (única prioridad del complemento), con la justificación: «El programa del 16-nov no la recoge: prohíbe comprar vivienda [...] un criterio de uso y de tipo de comprador que no distingue por la residencia [...] el rasgo que define el compromiso, limitar la compra por no ser residente, no está en el programa.»",
+   "despues": "En «descartados», con el motivo: Ya está en el programa con otras palabras y con más alcance: «Es prohibirà la compra d’habitatges per a finalitats que no siguin l’habitatge habitual i permanent de la persona compradora» (medida 23, p. 4). Un no residente solo podría comprar una vivienda para fijar en ella su residencia habitual y permanente, es decir, para pasar a ser residente; cualquier otra compra le quedaría prohibida, lo que va más allá de «limitar». La medida alcanza también a los residentes que compren una segunda vivienda y no usa el criterio de residencia, pero cubre lo que la coalición quería evitar con el compromiso, que las viviendas se destinen «a la inversió o a segones residències» (nota del 9-nov, epígrafe «Limitar la compra de no residents i combatre l'especulació»). Mismo criterio que psoe-c05 (el programa mantiene o amplía la medida con otras palabras) y fa-c06 (el programa la concreta y la supera); distinto de compromis-c02, donde el programa no recogía el rasgo que definía el compromiso (bajar las rentas). Se evalúa en la prioridad ara_mes_fa-06 del programa, con el mismo encaje legal «desfavorable» (art. 63 TFUE) que tenía la evaluación de este compromiso. [Revisión independiente, 17-11-2026: hasta entonces formaba el complemento.]",
+   "motivo": "Error de selección según el prompt 1b, que pide comprobar «que la medida no figura, ni con otras palabras». La medida 23 (p. 4, comprobada en el PDF) prohíbe toda compra de vivienda que no sea para la residencia habitual y permanente del comprador: a un no residente solo le permite comprar para pasar a residir, y le prohíbe las segundas residencias y la inversión, que es lo que el compromiso pretendía limitar según la nota del 9-nov (copia local). Que el programa no use el criterio de residencia y alcance también a los residentes lo hace más amplio, no distinto; las revisiones de PSOE (psoe-c05) y Frente Amplio (fa-c06) descartan los compromisos que el programa mantiene o supera con otras palabras, y solo van al complemento los que el programa no recoge en su rasgo definitorio (compromis-c02). La propia justificación del analista reconocía que la medida 23 «también impediría a un no residente comprar una vivienda que no vaya a ser su residencia habitual».",
+   "fecha": "2026-11-17"
   },
   {
-   "propuesta": "ara_mes_fa-06",
-   "criterio": "evidencia, internacional y largo_plazo (título de la fuente del FMI)",
-   "antes": "FMI (17-1-2023), Hungary: Selected Issues (SIP/2023/004)",
-   "despues": "FMI (17-1-2023), Drivers of Inflation: Hungary, Selected Issues Paper SIP/2023/004",
-   "motivo": "Título real del documento. La URL se mantiene: responde a una petición web normal (403 solo a curl) y dice lo que el texto afirma («Caps were ineffective in slowing broad food inflation»; los topes «resulted in higher prices on other products to compensate losses»)."
+   "propuesta": "(seleccion.json)",
+   "criterio": "nota_prioridades y nota",
+   "antes": "Una prioridad: de los diez compromisos evaluados con base «compromisos», solo la limitación de la compra de vivienda por no residentes (c01) no está en el programa, que restringe la compra por su uso (residencia habitual y permanente) y no por la residencia del comprador. Los otros nueve figuran en él y pasan a «descartados»: topes al alquiler (c02, medida 25), compra especulativa (c04, medida 23), IVA del transporte de mercancías (c05, medida 5), complemento de pensiones (c06, medida 2), salario mínimo (c07, medida 1), precios de los alimentos básicos (c08, medida 4), tauromaquia (c09, medida 156), zoológicos, delfinarios y calesas (c10, medidas 157 y 160) e IVA veterinario (c11, medida 159). Se reaprovecha la evaluación revisada el 12-nov de c01 (antes ara_mes_fa-01).",
+   "despues": "Ninguna prioridad: los diez compromisos evaluados con base «compromisos» están en el programa del 16-nov y pasan a «descartados»: topes al alquiler (c02, medida 25), compra especulativa (c04, medida 23), IVA del transporte de mercancías (c05, medida 5), complemento de pensiones (c06, medida 2), salario mínimo (c07, medida 1), precios de los alimentos básicos (c08, medida 4), tauromaquia (c09, medida 156), zoológicos, delfinarios y calesas (c10, medidas 157 y 160), IVA veterinario (c11, medida 159) y la limitación de la compra de vivienda por no residentes (c01, medida 23, que prohíbe toda compra que no sea para la residencia habitual y permanente del comprador). Sin prioridades no hay evaluación (prompt 1b). [Revisión independiente, 17-11-2026: antes «Una prioridad», c01, que se evaluaba con la evaluación revisada el 12-nov (antes ara_mes_fa-01).]",
+   "motivo": "Coherencia con el descarte de c01; se añade a «nota» una entrada fechada de la revisión, como las de la reatribución (13-nov) y la auditoría (14-nov).",
+   "fecha": "2026-11-17"
   },
   {
-   "propuesta": "seleccion.json (c01-c11)",
-   "criterio": "veces",
-   "antes": "lista de fuentes (por ejemplo, c05 tenía 2 entradas: la misma nota y la crónica de EFE del mismo comunicado; c01 y c08 contaban dos veces el mitin de Palma)",
-   "despues": "{n, nota, ocasiones}: c01 = 2 (6-nov y 8-nov), c08 = 2 (7-nov y 8-nov), y el resto = 1. Se conservan las URL en «ocasiones».",
-   "motivo": "El prompt 1b define «veces» como ocasiones públicas distintas, no fuentes. Es el mismo formato y criterio que en Frente Amplio, EH Bildu y Junts."
-  },
-  {
-   "propuesta": "ara_mes_fa-c05 (seleccion.json)",
-   "criterio": "justificación de la prioridad",
-   "antes": "Propuesta presentada en rueda de prensa monográfica de la cabeza de lista (12-nov)…",
-   "despues": "Comunicado monográfico de la coalición con declaraciones de la cabeza de lista (12-nov), recogido por EFE…",
-   "motivo": "La crónica de EFE dice «En un comunicado» y la nota oficial no menciona una rueda de prensa."
-  },
-  {
-   "propuesta": "ara_mes_fa-c09 (seleccion.json)",
-   "criterio": "justificación de la prioridad",
-   "antes": "…en la rueda de prensa monográfica de bienestar animal de la cabeza de lista (10-nov).",
-   "despues": "La nota de la presentación monográfica de las propuestas de bienestar animal de la cabeza de lista (Calvià, 10-nov) la llama «una altra de les prioritats».",
-   "motivo": "La nota habla de una presentación («han presentat avui») en Calvià, no de una rueda de prensa."
-  },
-  {
-   "propuesta": "ara_mes_fa-c03 (seleccion.json)",
-   "criterio": "justificación de la prioridad",
-   "antes": "mallorca.com la titula como el anuncio del día («empty homes election pitch»)",
-   "despues": "la crónica de mallorca.com (Europa Press) la lleva al titular («Mallorca housing pitch targets 105,000 empty Balearic homes»)",
-   "motivo": "La cita anterior era un fragmento de la URL, no el titular."
-  },
-  {
-   "propuesta": "evaluacion.json",
-   "criterio": "seleccion_sha256",
-   "antes": "hash de la selección anterior",
-   "despues": "a65acdbb74f33a206155e554aa0e39a637b0437d7d0cf9ed3d7411e6d9e3e61e",
-   "motivo": "Recalculado tras los cambios en seleccion.json."
-  },
-  {
-   "propuesta": "selección",
-   "criterio": "prioridades (seleccion.json)",
-   "antes": "7 prioridades; c04, c07, c10 y c11 en «no_priorizados»; nota: «Hay 7 prioridades: no se encontraron más compromisos concretos que el partido destaque»",
-   "despues": "11 prioridades (c04, c07, c10 y c11 añadidas con su justificación); sin «no_priorizados»; nota corregida",
-   "motivo": "el partido destaca los cuatro con la misma evidencia que justifica otras prioridades (prompt 1b: con menos de 12, se seleccionan los que haya). Lo aplicó un agente evaluador distinto; revisado aquí. seleccion_sha256 recalculado"
-  },
-  {
-   "propuesta": "ara_mes_fa-08 a -11",
-   "criterio": "todos",
-   "antes": "(no evaluadas)",
-   "despues": "evaluadas con el prompt 3 por un agente evaluador distinto: 08 M/M/N/M/M/M/M/M; 09 M/F/N/M/M/F/M/M; 10 M/M/N/M/M/M/M/M; 11 M/D/M/M/M/M/M/M (tras la corrección siguiente)",
-   "motivo": "consecuencia de la corrección de la selección; se abrieron las 53 URL y se comprobaron cifras y normas (véase «alcance»)"
-  },
-  {
-   "propuesta": "ara_mes_fa-11",
-   "criterio": "legal",
-   "antes": "valoracion: mixta. «…el art. 105 bis, apartado 3, permite a cualquier Estado aplicar un tipo no inferior al 12 % a operaciones a las que otro Estado ya lo aplicaba el 1-1-2021 … Una rebaja a un tipo de al menos el 12 % cabría así en una ley ordinaria…»",
-   "despues": "valoracion: desfavorable. La vía del art. 105 bis.3 para los demás Estados exigía adoptar sus normas antes del 7-10-2023 (art. 105 bis.5), y el informe COM(2025) 585 no recoge ese tipo en España; rebajar hoy el IVA de estos servicios exige modificar la Directiva por unanimidad (art. 113 TFUE)",
-   "motivo": "error de Derecho: se omitía el plazo del art. 105 bis.5 de la Directiva 2006/112/CE (texto consolidado en EUR-Lex; informe de la Comisión, p. 2). Con ello la medida choca en su núcleo con el Derecho de la UE, la misma regla que ara_mes_fa-04, cc-06 y salf-06"
-  },
-  {
-   "propuesta": "ara_mes_fa-09",
-   "criterio": "internacional",
-   "antes": "donde el salario mínimo alcanza dos tercios de la mediana,",
-   "despues": "cuyo objetivo es que el salario mínimo no baje de dos tercios de la mediana (en 2024 se quedó algo por debajo),",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): dato sin respaldo, el mismo corregido en compromis-06 y bng-05: según la fuente citada (Low Pay Commission, resumen de evidencia 2024), el salario mínimo de 2024 «was not high enough to meet the two-thirds of median earnings target» y el mandato es que no baje de ese nivel. La valoración («mixta») no cambia.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "ara_mes_fa-01",
-   "criterio": "legal (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:12016E063 | Tratado de Funcionamiento de la UE, artículo 63 (EUR-Lex)",
-   "despues": "https://www.boe.es/doue/2016/202/Z00001-00388.pdf | Tratado de Funcionamiento de la UE, artículo 63 (versión consolidada, DOUE C 202 de 7-6-2016, copia del BOE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "ara_mes_fa-01",
-   "criterio": "legal, largo_plazo (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:61997CJ0302 | TJUE, sentencia de 1-6-1999, Konle, C-302/97 (EUR-Lex)",
-   "despues": "http://publications.europa.eu/resource/celex/61997CJ0302 | TJUE, sentencia de 1-6-1999, Konle, C-302/97 (Oficina de Publicaciones de la UE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "ara_mes_fa-01",
-   "criterio": "legal, largo_plazo (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:62011CJ0197 | TJUE, sentencia de 8-5-2013, Libert y otros, C-197/11 y C-203/11 (EUR-Lex)",
-   "despues": "http://publications.europa.eu/resource/celex/62011CJ0197 | TJUE, sentencia de 8-5-2013, Libert y otros, C-197/11 y C-203/11 (Oficina de Publicaciones de la UE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "ara_mes_fa-01",
-   "criterio": "legal, internacional (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:12016E/PRO/32 | Protocolo n.º 32 de los Tratados, sobre adquisición de bienes inmuebles en Dinamarca (EUR-Lex)",
-   "despues": "https://www.boe.es/doue/2016/202/Z00001-00388.pdf | Protocolo n.º 32 de los Tratados, sobre adquisición de bienes inmuebles en Dinamarca (versión consolidada, DOUE C 202 de 7-6-2016, copia del BOE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "ara_mes_fa-04",
-   "criterio": "legal, financiacion, evidencia, internacional, beneficiarios, largo_plazo (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:02006L0112-20250101 | Directiva 2006/112/CE del IVA, texto consolidado a 1-1-2025 (EUR-Lex)",
-   "despues": "http://publications.europa.eu/resource/celex/02006L0112-20250101 | Directiva 2006/112/CE del IVA, texto consolidado a 1-1-2025 (Oficina de Publicaciones de la UE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "ara_mes_fa-04",
-   "criterio": "legal, largo_plazo (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:12016E113 | Tratado de Funcionamiento de la UE, artículo 113 (EUR-Lex)",
-   "despues": "https://www.boe.es/doue/2016/202/Z00001-00388.pdf | Tratado de Funcionamiento de la UE, artículo 113 (versión consolidada, DOUE C 202 de 7-6-2016, copia del BOE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "ara_mes_fa-08",
-   "criterio": "legal, largo_plazo (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:12016E063 | Tratado de Funcionamiento de la UE, artículo 63 (EUR-Lex)",
-   "despues": "https://www.boe.es/doue/2016/202/Z00001-00388.pdf | Tratado de Funcionamiento de la UE, artículo 63 (versión consolidada, DOUE C 202 de 7-6-2016, copia del BOE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "ara_mes_fa-08",
-   "criterio": "legal (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:61997CJ0302 | TJUE, sentencia de 1-6-1999, Konle, C-302/97 (EUR-Lex)",
-   "despues": "http://publications.europa.eu/resource/celex/61997CJ0302 | TJUE, sentencia de 1-6-1999, Konle, C-302/97 (Oficina de Publicaciones de la UE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "ara_mes_fa-08",
-   "criterio": "legal (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:62011CJ0197 | TJUE, sentencia de 8-5-2013, Libert y otros, C-197/11 y C-203/11 (EUR-Lex)",
-   "despues": "http://publications.europa.eu/resource/celex/62011CJ0197 | TJUE, sentencia de 8-5-2013, Libert y otros, C-197/11 y C-203/11 (Oficina de Publicaciones de la UE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "ara_mes_fa-10",
-   "criterio": "legal (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:31999L0022 | Directiva 1999/22/CE, relativa al mantenimiento de animales salvajes en parques zoológicos (EUR-Lex)",
-   "despues": "http://publications.europa.eu/resource/celex/31999L0022 | Directiva 1999/22/CE, relativa al mantenimiento de animales salvajes en parques zoológicos (Oficina de Publicaciones de la UE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "ara_mes_fa-10",
-   "criterio": "legal (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:12016E193 | Tratado de Funcionamiento de la UE, artículo 193 (EUR-Lex)",
-   "despues": "https://www.boe.es/doue/2016/202/Z00001-00388.pdf | Tratado de Funcionamiento de la UE, artículo 193 (versión consolidada, DOUE C 202 de 7-6-2016, copia del BOE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "ara_mes_fa-11",
-   "criterio": "legal (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:02006L0112-20250101 | Directiva 2006/112/CE del IVA, texto consolidado a 1-1-2025 (EUR-Lex)",
-   "despues": "http://publications.europa.eu/resource/celex/02006L0112-20250101 | Directiva 2006/112/CE del IVA, texto consolidado a 1-1-2025 (Oficina de Publicaciones de la UE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "ara_mes_fa-11",
-   "criterio": "legal (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:12016E113 | Tratado de Funcionamiento de la UE, artículo 113 (EUR-Lex)",
-   "despues": "https://www.boe.es/doue/2016/202/Z00001-00388.pdf | Tratado de Funcionamiento de la UE, artículo 113 (versión consolidada, DOUE C 202 de 7-6-2016, copia del BOE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "ara_mes_fa-03",
-   "criterio": "selección (seleccion.json y evaluacion.json)",
-   "antes": "ara_mes_fa-03 (ara_mes_fa-c03, «Movilizar las 105.000 viviendas vacías de Baleares») entre las prioridades evaluadas",
-   "despues": "retirada; ara_mes_fa-c03 pasa a «descartados» con su motivo",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): no es una medida concreta según el prompt 1b («Es una medida concreta (qué se hará), no un diagnóstico, una crítica al rival ni una aspiración»): solo nombra el resultado deseado, sin instrumento ni regla que se cambiaría, y su propia evaluación lo reconocía (concreción «desfavorable»: «no se indica con qué instrumento (impuesto o recargo, cesión obligatoria, expropiación del uso, ayudas) ni a qué propietarios afectaría: es un objetivo sin medida identificable»). Es el corte aplicado el 14-11 en la revisión de UPN, que dejó fuera «Menos listas de espera» o «En dependencia, plazos más cortos»: entra un punto cuando nombra el instrumento o la regla, aunque no la cuantifique, y queda fuera cuando solo nombra el resultado. La repetición o el realce de una frase deciden la prioridad entre compromisos, no si algo es un compromiso. Retirada sin sustituto: no queda ningún compromiso concreto sin priorizar.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "ara_mes_fa-05",
-   "criterio": "antecedentes",
-   "antes": "(12.441,80 euros anuales para los mayores de 65 años y 17.592,40 con cónyuge a cargo)",
-   "despues": "(para los mayores de 65 años, 17.592,40 euros anuales con cónyuge a cargo, 13.106,80 sin cónyuge y 12.441,80 con cónyuge no a cargo)",
-   "motivo": "auditoría de coherencia (16-nov, tras el análisis del programa del Frente Amplio): dato oficial: en el cuadro de cuantías mínimas de 2026 (Real Decreto-ley 3/2026, anexo I, BOE, comprobado el 16-11), la pensión de jubilación con 65 años es de 17.592,40 € con cónyuge a cargo, 13.106,80 € sin cónyuge (unidad económica unipersonal) y 12.441,80 € con cónyuge no a cargo; la nota de La Moncloa no distingue las dos últimas. La valoración no cambia.",
-   "fecha": "2026-11-16"
-  },
-  {
-   "propuesta": "ara_mes_fa-05",
-   "criterio": "antecedentes (fuentes)",
-   "antes": "(sin esta fuente)",
-   "despues": "Real Decreto-ley 3/2026, de 3 de febrero, para la revalorización de las pensiones públicas (BOE), anexo I: cuantías mínimas de las pensiones contributivas para 2026 — https://www.boe.es/eli/es/rdl/2026/02/03/3",
-   "motivo": "auditoría de coherencia (16-nov, tras el análisis del programa del Frente Amplio): fuente primaria del cuadro de cuantías mínimas.",
-   "fecha": "2026-11-16"
+   "propuesta": "(compromisos/evaluacion.json)",
+   "criterio": "evaluacion",
+   "antes": "evaluacion.json con base «complemento» y una propuesta, ara_mes_fa-c01 (8 criterios: seis «mixta», encaje legal «desfavorable» y financiación «no_verificable»)",
+   "despues": "Se retira el fichero: sin prioridades, el prompt 1b dice «no escribas evaluación» (como en el Frente Amplio, el PSOE, ERC, SALF y Adelante Andalucía). La evaluación queda en el historial del repositorio.",
+   "motivo": "Consecuencia del descarte de c01; si se mantuviera, build_web.py la publicaría como complemento.",
+   "fecha": "2026-11-17"
   }
  ],
  "dudas": [
-  "ara_mes_fa-04, evidencia («desfavorable»). No se apoya en un estudio empírico sino en el diseño del IVA: la empresa que contrata el flete deduce el impuesto (arts. 1.2 y 168 de la Directiva). Se mantiene porque el marco legal contradice el mecanismo con el que la coalición dice que bajarían los precios. Es un caso frontera.",
-  "ara_mes_fa-07, financiación («favorable»). La supresión de ayudas reduce gasto, pero no se ha localizado su cuantía, y una prohibición estatal podría generar reclamaciones de compensación que nadie ha estimado. Se mantiene por la nota de la rúbrica sobre las medidas regulatorias.",
-  "La guía de seg-social.pt sobre el Complemento Regional de Pensão de las Azores (ara_mes_fa-05, internacional) incluye un bloque de metadatos con la etiqueta «LLM». Su contenido coincide con el Decreto Legislativo Regional 8/2002/A, que cita.",
-  "La URL del FMI (.pdf.md) también se usa en podemos-03. Funciona con una petición web normal y da 403 a curl.",
-  "ara_mes_fa-11, financiación («mixta»): el coste (220 a 270 M€) es un cálculo propio con la partida de la EPF que incluye otros servicios para mascotas y supone traslado completo; es una cota superior.",
-  "ara_mes_fa-10: las cifras de galeras de Palma (28 licencias, unos 1,4 M€) son de Última Hora (2020) y pueden estar desfasadas; la sentencia del TSJIB se conoce por LegalToday (29-5-2026), no por su texto.",
-  "ara_mes_fa-08, «veces»: queda en 1; la frase del mitin del 8-nov («acabarem amb l'especulació») es más amplia que la compra especulativa y no se cuenta como segunda ocasión."
- ],
- "recuento_final_nota": "Las 7 prioridades de la primera pasada quedan en 4/43/4/5; las 4 añadidas (08 a 11) suman 2/26/1/3.",
- "coherencia_2026-11-12b_revision": [
-  {
-   "propuesta": "ara_mes_fa-08",
-   "criterio": "financiacion",
-   "antes": "no_verificable: Es una medida regulatoria sin gasto público directo: limita quién puede comprar vivienda. Podría reducir la recaudación de los impuestos que gravan las compraventas, pero no hemos localizado ninguna estimación de ese efecto, y sin una definición de compra especulativa no puede saberse a cuántas de las 14.633 compraventas de vivienda registradas en Baleares en 2025 afectaría.",
-   "despues": "favorable: Es una medida regulatoria sin coste presupuestario directo relevante: prohíbe la compra especulativa de vivienda. La limitación de compras del Real Decreto-ley 29/2026 (art. 1), también regulatoria, no lleva asociada ninguna partida de gasto, y el informe de tasación lo aporta el comprador. Podría reducir de forma indirecta la recaudación de los impuestos que gravan las compraventas, un efecto del que no hemos localizado estimación; sin una definición de compra especulativa no puede saberse a cuántas de las 14.633 compraventas de vivienda registradas en Baleares en 2025 afectaría.",
-   "motivo": "Duda (b) de la auditoría del 12-11 (noche). Aplicación literal de la rúbrica de financiación de criterios.json: «Medidas sin coste presupuestario directo relevante (p. ej. regulatorias), si las fuentes lo documentan: favorable, explicándolo». Una prohibición de compra no tiene gasto público directo: la limitación análoga del RDL 29/2026 (art. 1) no lleva partida de gasto, a diferencia de otras medidas del mismo decreto (TU CASA, fondo de 400 M€), y el informe de tasación lo aporta el comprador. La posible menor recaudación del ITP es un efecto indirecto, como la menor base del IRPF en los topes de alquiler (adelante_andalucia-01, erc-06, compromis-02, podemos-01, ara_mes_fa-02), que son «favorable». Mismos hechos, misma valoración. cc-06 y ara_mes_fa-01 siguen «no_verificable» porque no definen el instrumento (prohibición, autorización previa o impuesto) y no puede documentarse que carezcan de coste directo."
-  },
-  {
-   "propuesta": "ara_mes_fa-01",
-   "criterio": "financiacion (texto y fuentes; valoración sin cambios: no_verificable)",
-   "antes": "No hemos localizado ninguna estimación del coste administrativo de un control de compras ni de su efecto en la recaudación por transmisiones, y la coalición no da cifras. Como orden de magnitud del mercado afectado, en 2025 se registraron 14.633 compraventas de vivienda en Baleares.",
-   "despues": "La coalición no precisa si la limitación sería una prohibición, una autorización previa o un impuesto, de modo que no puede documentarse que carezca de coste presupuestario directo: una autorización exige un control administrativo y un impuesto tendría efecto recaudatorio. No hemos localizado ninguna estimación de ese coste administrativo ni del efecto en la recaudación por transmisiones. Como orden de magnitud del mercado afectado, en 2025 se registraron 14.633 compraventas de vivienda en Baleares.",
-   "motivo": "Duda (b): con la rúbrica aplicada literalmente, el efecto indirecto en el ITP no basta para «no_verificable» (ara_mes_fa-08 pasa a «favorable»). ara_mes_fa-01 lo sigue siendo por otro hecho, que el texto ahora explicita: el instrumento no está definido (su propia concreción dice «prohibición, autorización previa o impuesto»), así que las fuentes no documentan que carezca de coste directo."
-  }
- ],
- "recuento_final_coherencia_2026-11-12b_revision": {
-  "favorable": 7,
-  "mixta": 69,
-  "desfavorable": 5,
-  "no_verificable": 7
- },
- "reatribucion_2026-11-13": "Tras la revisión aprobada, se retiran ara_mes_fa-06, ara_mes_fa-09 (ara_mes_fa-c07 y c08) por decisión del editor: los dice solo Carme Gomila, de ERC según Ara Balears (data/boe/afiliaciones_g1.json: https://en.arabalears.cat/politics/carme-gomila-leaves-the-manacor-city-council-to-seek-new-professional-challenges_1_5623156.html) y El Nacional, 12-nov (data/sources/compromisos/erc/elnacional_tarragona_20261112.txt: «presidenta d'Esquerra Republicana a Mallorca»). Las 9 propuestas restantes no cambian; seleccion_sha256 actualizado. Después (13-nov), por la misma decisión, se quitan también las apoyaturas en declaraciones en primera persona de Gomila de lo que se mantiene: el mitin de Palma (8-nov) sale del «veces» de c01 (de 2 a 1), de las justificaciones de prioridad de c01 y c04 y del criterio de concreción de ara_mes_fa-01 y ara_mes_fa-08, cuya valoración («mixta») no cambia porque el mitin no añadía instrumento, alcance, cuantía ni plazo. Las justificaciones de c05, c06, c09 y c10 se apoyan ahora en la nota oficial y no en la comparecencia de la cabeza de lista. En ara_mes_fa-02 y -03 la crónica de mallorca.com se describe como presentación de la coalición. Comprobado que ninguna cita mantenida es primera persona de Gomila: las citas principales y las ocasiones restantes son texto narrativo de las notas oficiales (c06 dice «ha anunciat avui la proposta», con la candidata como sujeto, en el texto de la nota) o de crónicas que hablan de «the coalition». seleccion_sha256 actualizado. [Revisión posterior, 13-nov por la tarde] Decisión del editor: lo que dice Carme Gomila cuenta para Ara Més (no para ERC). Además de presidenta de ERC en Baleares, es responsable de Estrategia y Relaciones Políticas de MÉS per Mallorca, partido de la federación Ara Més, que la propuso; el Comité Federal de Ara Més la ratificó por unanimidad como cabeza de lista (dBalears y Canal 4 Diario, 24-oct; copias en data/sources/compromisos/ara_mes_fa/dbalears_20261024_candidatura.txt y canal4diario_20261024_proclamacion.txt; data/boe/afiliaciones_g1.json). Se restaura todo lo retirado por la mañana desde la versión aprobada (git 8465883^): c07 y c08 con ara_mes_fa-06 y -09, el mitin de Palma en el «veces» de c01 (vuelve a 2), en las justificaciones de c01 y c04 y en la concreción de -01 y -08, y la redacción aprobada de las justificaciones de c05, c06, c09 y c10. Se conservan los títulos de la crónica de mallorca.com en -02 y -03. Revisión independiente de lo restaurado en «revision_restauracion_2026-11-13». seleccion_sha256 actualizado.",
- "revision_restauracion_2026-11-13": {
-  "revisor": "Claude (Anthropic), pasada independiente (agente distinto del que restauró), con los prompts 1b, 3 y 4",
-  "alcance": "Solo lo restaurado: c07 y c08 (cita, traducción, quién, fuente local, sha256 y «veces»), el «veces» de c01, las justificaciones de c01 y c04 a c10, ara_mes_fa-06 y -09 completas (8 criterios), la concreción de -01 y -08, las notas, el orden y seleccion_sha256. La atribución a Ara Més se toma como decisión del editor. Citas: 10 de 10 coinciden literalmente con su copia local (c07: principal y 1 ocasión; c08: principal y 3 ocasiones; c01: 2 ocasiones; -06 y -09: su cita), y 13 de 13 fragmentos citados dentro de los textos; verify_quotes: 34 citas, 0 no encontradas. La errata «alsp reus» de una ocasión de c08 está así en la copia local y en la página de NacióDigital; la traducción la corrige. Los 6 sha256 de fuentes coinciden con su fichero. Traducciones del catalán fieles. Se abrieron con petición normal Demócrata, NacióDigital, Última Hora y Periódico de Ibiza (Europa Press, Sóller), BOE (RD 126/2026, Ley 7/1996, RDL 20/2022), INE EPF 2024, La Moncloa (SMI 2026), nota oficial de pensiones del 10-nov, Ara (Carrefour), Banco Nacional de Croacia (WP W-71), Eurofound (Hungría) y Banco de España (DO 2113 y DT 2417): todas 200 y confirman lo citado. El FMI (SIP/2023/004) da 403 a curl; no se sorteó (la revisión del 12-nov lo leyó con una petición web normal).",
-  "resultado": "Conforme tras los cambios siguientes. Prioridades: con 11 compromisos (menos de 12), el prompt 1b obliga a incluirlos todos; las justificaciones coinciden con las fuentes. «Veces»: c01 = 2, c07 = 1, c08 = 2, correcto. Igual estándar: ara_mes_fa-09 tiene las mismas ocho valoraciones que psoe-03, psc-02 y upc-08 (M/F/N/M/M/F/M/M); ara_mes_fa-06 (M/F/F/M/M/M/M/M) solo difiere de podemos-03 en el encaje legal, diferencia que se sostiene (art. 13.2.a de la Ley 7/1996, «productos de primera necesidad»). Esas propuestas no han cambiado desde la aprobación del 12-nov, así que el «igual_estandar» sigue valiendo. Recuento con las 11 propuestas: 7/69/5/7, igual que «recuento_final_coherencia_2026-11-12b_revision».",
-  "cambios": [
-   {
-    "propuesta": "ara_mes_fa-c08 (seleccion.json) y ara_mes_fa-06 (evaluacion.json)",
-    "criterio": "resumen",
-    "antes": "Limitar por ley los precios de los alimentos básicos.",
-    "despues": "Limitar los precios de los alimentos básicos.",
-    "motivo": "Ninguna fuente habla de una ley («limitarem els preus dels aliments bàsics»; Europa Press: «establecer un tope»), y el propio encaje legal de -06 dice que el Gobierno ya puede fijar esos precios (Ley 7/1996, art. 13.2.a); «por ley» desdibujaba la diferencia con podemos-03."
-   },
-   {
-    "propuesta": "ara_mes_fa-06",
-    "criterio": "internacional (texto; valoración sin cambios)",
-    "antes": "…pollo y leche (y desde noviembre de 2022 huevos y patatas) al nivel de octubre de 2021",
-    "despues": "…pollo y leche al nivel de octubre de 2021 (y desde noviembre de 2022 huevos y patatas, al de septiembre de 2022)",
-    "motivo": "Según Eurofound (ficha HU-2022-6/3084), huevos y patatas se toparon al precio del 30-9-2022."
-   },
-   {
-    "propuesta": "ara_mes_fa-c01 y c04 (seleccion.json)",
-    "criterio": "justificación de la prioridad",
-    "antes": "«uno de los ejes centrales»",
-    "despues": "«un dels eixos centrals» (uno de los ejes centrales)",
-    "motivo": "Lo entrecomillado era una traducción; la nota del 6-nov dice «un dels eixos centrals»."
-   },
-   {
-    "propuesta": "evaluacion.json",
-    "criterio": "seleccion_sha256",
-    "antes": "hash de la selección restaurada sin estos cambios",
-    "despues": "recalculado",
-    "motivo": "Cambios en seleccion.json."
-   }
-  ],
-  "dudas": [
-   "ara_mes_fa-09, encaje legal («favorable»): supone que «apujarem el salari mínim» se refiere al SMI estatal; si fuera el SMI balear propio sería «mixta», como pnv-02 y eh_bildu-04. El texto ya señala la ambigüedad y la lectura estatal es la natural en un mitin de unas generales.",
-   "ara_mes_fa-06 frente a podemos-03: la diferencia en encaje legal es defendible pero de frontera; las dos están sujetas a la Ley 12/2013 (art. 12 ter).",
-   "podemos-03 repite la imprecisión sobre las fechas de huevos y patatas en Hungría; fuera del alcance de esta revisión, no se ha cambiado.",
-   "El orden de «prioridades» (c01 a c11) no coincide con el de evaluacion.json (c01, c02, c03, c05, c06, c08, c09, c04, c07, c10, c11); ya era así en la versión aprobada. La web numera según evaluacion.json, cuyos ids siguen ese orden.",
-   "La ocasión de Periódico de Ibiza en c08 cita una frase genérica de Gomila («poner límites a los abusos y garantizar precios asequibles»); la misma copia tiene otra más específica. No cambia el «veces»."
-  ]
- },
- "coherencia_2026-11-14": {
-  "decision": "Se retira ara_mes_fa-03 (ara_mes_fa-c03). no es una medida concreta según el prompt 1b («Es una medida concreta (qué se hará), no un diagnóstico, una crítica al rival ni una aspiración»): solo nombra el resultado deseado, sin instrumento ni regla que se cambiaría, y su propia evaluación lo reconocía (concreción «desfavorable»: «no se indica con qué instrumento (impuesto o recargo, cesión obligatoria, expropiación del uso, ayudas) ni a qué propietarios afectaría: es un objetivo sin medida identificable»). Es el corte aplicado el 14-11 en la revisión de UPN, que dejó fuera «Menos listas de espera» o «En dependencia, plazos más cortos»: entra un punto cuando nombra el instrumento o la regla, aunque no la cuantifique, y queda fuera cuando solo nombra el resultado. La repetición o el realce de una frase deciden la prioridad entre compromisos, no si algo es un compromiso. Retirada sin sustituto: no queda ningún compromiso concreto sin priorizar. El «aprobado» de la revisión se mantiene: el resto de la selección y de las evaluaciones no cambia.",
-  "recuento_antes": {
-   "favorable": 7,
-   "mixta": 69,
-   "desfavorable": 5,
-   "no_verificable": 7
-  },
-  "recuento_despues": {
-   "favorable": 7,
-   "mixta": 63,
-   "desfavorable": 4,
-   "no_verificable": 6
-  },
-  "detalle": "data/fase3/coherencia_2026-11-14.md"
- }
+  "ara_mes_fa-c01 es el caso dudoso: si el editor considera que el rasgo que define el compromiso es distinguir por la residencia del comprador (no por el uso de la vivienda), volvería al complemento con la evaluación que proponía el analista (en el historial), que habría que revisar; su encaje legal «desfavorable» y sus fuentes coinciden con los de ara_mes_fa-06.",
+  "Sin búsqueda nueva tras el 12-nov, como en Vox, Compromís, PSOE y Frente Amplio: el complemento reaprovecha los compromisos seleccionados hasta entonces. Los posteriores de las notas oficiales del 13 al 16-nov (fondo de inversión público, incentivos del REIB, salario mínimo isleño, complemento de pensiones, prestación de 200 €, comedor, plan contra la precariedad, ayuda a domicilio, OSP Menorca-Barcelona, aeropuerto de Menorca y alquileres comerciales) están en el programa, comprobado en las medidas que cita lectura.md."
+ ]
 }
