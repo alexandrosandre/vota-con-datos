@@ -59,7 +59,17 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
     financiación de -01 a mixta; EH Bildu 45 correcciones, ninguna valoración cambia); sin complemento en ninguno de los dos.
     Auditoría de coherencia (`data/fase3/coherencia_2026-11-17.md`: 41 correcciones de texto, cifras y fuentes en 10 partidos;
     ninguna valoración cambia).
-  - [ ] Podemos, Junts, NC-BC (UPC), UPN — sin programa el 17-nov a las 10:00.
+  - [x] Podemos — **publicado el 18-nov** («Así de básico: paz, casa y trabajo», 141 pp., en su web de campaña pazcasaytrabajo.es,
+    hacia las 09:56; presentado a la prensa el 17-nov). Hecho el 18-nov: paso 1 recodificado (g19, verificado sin cambiar ningún
+    valor: Podemos 23→25 posiciones; q05 y q11 nuevas, y q01, q09, q21, q29 y q33 se refuerzan con el programa); 12 propuestas del
+    programa (revisión independiente, 20 correcciones; cambia una valoración: financiación del referéndum monarquía/república,
+    favorable → mixta, por la vía del art. 168); complemento: contratar 40.000 sanitarios y 40.000 maestros (no está en el programa).
+  - [ ] Junts, NC-BC (UPC), UPN — sin programa el 18-nov a las 09:48.
+  - Compromís **retiró su PDF** de frontvalencia.org el 18-nov (HTTP 404, botón «Programa sencer» oculto, sin versión nueva ni
+    comunicado). Se mantiene como fuente (publicado el 14-nov, analizado y archivado sin cambios) y la web enlaza la copia de la
+    Wayback Machine del 16-nov con un aviso (`programa.url_archivada` en partidos.json). Volver a mirar si publica otra versión.
+  - Republicados el 17-nov: ERC (numeración del 1 al 227, «LGBTI+», medida 32) y Frente Amplio (tarifa plana de 88 €, cláusulas
+    IPC, cultura al 2 % del gasto, IVA franquiciado opcional); catalogados el 18-nov, ninguna posición ni valoración cambia.
   - Hecho el 16-nov: auditoría de coherencia tras el programa del Frente Amplio (`data/fase3/coherencia_2026-11-16.md`: 49 correcciones de
     texto, cifras y fuentes en 11 partidos; ninguna valoración cambia).
   - Hecho el 14-nov: adelante_andalucia-08 cita la DA 23.ª de la Ley 54/1997 (mínimo del 10 % de la SEPI en
@@ -154,6 +164,19 @@ y Frente Amplio) y el IVA del 4 % de la primera vivienda de UPN-PP, revisar las 
 sociales a partir de 16 años, medida 399; ERC: nuevo modelo de financiación, medida 23; PP: frecuencias Logroño–Madrid con
 parada en Calahorra; BNG: IVA del 5 % para la energía y terrenos de la Sareb en As Raíñas) y la hora diaria de catalán de
 Ara Més (nota del 17-nov, sin registrar ni descartar).
+
+**Barrido del 18-nov (10:47–14:00):** paso 1 sin posiciones nuevas de campaña desde el 13-nov (g18: solo notas). Paso 2:
+compromisos de campaña con revisión independiente (UPN +2 prioridades: IVA del 0 % en alimentos básicos y del 10 % en carburantes,
+con encaje legal mixto por la Directiva del IVA, e IVA del 4 % en la primera vivienda; complemento nuevo del PP, PSC y ERC; más
+ocasiones en Junts, BNG y PP; criterio único para el complemento: el ámbito local no excluye; entra con dos ocasiones o una
+destacada). Registro de compromisos 285 → 342: paridad de los programas del PP, Vox, PSOE, Frente Amplio y Compromís (criterio:
+sus propuestas centrales concretas no registradas), las candidatas de la mañana y la salida de la OTAN de Podemos; la revisión
+independiente rechazó 4 (pseudoterapias, ya prohibidas por la Ley 4/2023). El BNG solo tiene promesas de campaña, ninguna de
+su programa (tiene 23): valorar en el próximo barrido si se iguala. Auditoría de coherencia tras Podemos
+(`data/fase3/coherencia_2026-11-18.md`: 39 correcciones en 13 partidos; criterio único para el coste de reformas
+constitucionales y referendos —solo cuenta la votación que la propuesta exige; si el programa no la cuantifica, «mixta»—, que
+cambia dos valoraciones de financiación: erc-04 y salf-12, no_verificable → mixta; el SMI de 2027 ya está fijado en 18.004 €,
+RD 1013/2026 según el RDL 38/2026, BOE del 18-nov).
 
 **Hecho el 16-nov** (estudio Neutral frente a Saltar; decisiones del editor): «Saltar» pasa a «No lo sé», a
 todo lo ancho bajo la escala; «Neutral» sigue contando. «Coincidís» solo si estáis del mismo lado (un Neutral es
