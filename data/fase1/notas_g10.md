@@ -8,6 +8,10 @@ Se leyó entero, página a página, y se revisaron las 30 afirmaciones de `pregu
 
 - Las páginas son las del PDF; coinciden con la numeración impresa del índice.
 - Las páginas 1-2 son el índice y la 3, la introducción (sin medidas).
+- [18-nov] Compromís republicó el programa en la misma URL (57 pp., sha256 b62b06d4…212b), que pasa a ser la fuente. Desde
+  entonces las páginas de estas notas y de `codificacion_g10.json` son las de esa versión: la p. 1 es la portada, las pp.
+  2-3 el índice y la 4 la introducción, y la numeración impresa es la del PDF menos uno. Las citas de q01 y q34 cambian
+  de redacción sin cambiar de sentido; ninguna posición cambia.
 - Todas las citas son literales del texto catalogado (con `norm()` de `verify_quotes.py` y también sin normalizar), están
   en la página declarada y tienen 60 palabras o menos. La de q08 junta dos guiones seguidos de la p. 8 con [...].
 - Las citas van en valenciano. La traducción al castellano abre la `nota` («Traducción: «…»»), como en g4 y g5.
@@ -100,14 +104,14 @@ ERC 17 → 18. `build_fase1.py` no da errores, ni sin verificación de g10 (lo o
 ## Valores: razonamiento
 
 - **q01 (+1).** «Donarem competències als Ajuntaments perquè puguen declarar zones tensionades […] per impulsar el
-  control efectiu de preus de lloguer» (p. 4). Control de rentas por zonas que declara el ayuntamiento, sin depender
+  control efectiu de preus de lloguer» (p. 5). Control de rentas por zonas que declara el ayuntamiento, sin depender
   de la comunidad, pero sin un tope estatal en toda España. El mismo valor y el mismo eje que Micó.
-- **q03 (+1).** Exención del ITP para la primera vivienda de menos de 350.000 € (p. 5). No habla del IVA ni de la edad.
+- **q03 (+1).** Exención del ITP para la primera vivienda de menos de 350.000 € (p. 6). No habla del IVA ni de la edad.
   Misma dirección con otra medida, como ERC, SALF y Vox.
-- **q04 (+2).** «Mantindrem i ampliarem l'Impost a les Grans Fortunes» (p. 18). Nombra el impuesto de la afirmación,
+- **q04 (+2).** «Mantindrem i ampliarem l'Impost a les Grans Fortunes» (p. 17). Nombra el impuesto de la afirmación,
   prorrogado sin fecha fija desde 2023 (contexto de q04), y se compromete a mantenerlo y ampliarlo. Equivale a hacerlo
   permanente, como ERC («fer permanent», +2). Ver duda 1.
-- **q06 (+1).** Jornada de 32 horas sin rebaja salarial (p. 6). Va más allá de las 37,5 h: +1, como Podemos (30 h) y
+- **q06 (+1).** Jornada de 32 horas sin rebaja salarial (p. 7). Va más allá de las 37,5 h: +1, como Podemos (30 h) y
   Adelante Andalucía (32 h).
 - **q08 (+2).** «Retornarem l'edat de jubilació als 65 anys» (p. 8), primera medida de pensiones, junto a quitar los
   coeficientes reductores a quien se jubila antes con 40 años trabajados. Como el BNG (+2). Ver duda 2.
@@ -115,15 +119,15 @@ ERC 17 → 18. `build_fase1.py` no da errores, ni sin verificación de g10 (lo o
   Ley 15/1997 (p. 9). Va en la dirección de la afirmación, pero no prohíbe pagar a centros privados ni revierte lo
   concertado. El BNG (+2) pide financiación, gestión y provisión exclusivamente públicas. Ver duda 4.
 - **q17 (+1).** «Apostarem per un concert econòmic responsable o, en el seu defecte, per un sistema […] on la
-  Generalitat Valenciana recapte directament la major part dels tributs» (p. 57). Es el modelo de la afirmación, pero
+  Generalitat Valenciana recapte directament la major part dels tributs» (p. 50). Es el modelo de la afirmación, pero
   con una alternativa: +1 (BNG y Junts, sin alternativa, +2; ERC +1).
-- **q18 (+1).** Condonar la deuda de la Generalitat Valenciana atribuida a la infrafinanciación (p. 57). Solo la
+- **q18 (+1).** Condonar la deuda de la Generalitat Valenciana atribuida a la infrafinanciación (p. 50). Solo la
   valenciana, sin la quita general ni su cuantía: indirecta, como Micó y el PSC.
-- **q24 (+2).** «Derogarem la Llei de Protecció de la Seguretat Ciutadana, coneguda com a llei mordassa» (p. 43).
-- **q31 (+2).** «Promourem el lloguer indefinit com a règim ordinari» (p. 4), con la excepción de recuperar la vivienda
+- **q24 (+2).** «Derogarem la Llei de Protecció de la Seguretat Ciutadana, coneguda com a llei mordassa» (p. 38).
+- **q31 (+2).** «Promourem el lloguer indefinit com a règim ordinari» (p. 5), con la excepción de recuperar la vivienda
   por uso propio o familiar. Va más allá de la renovación por cinco años: +2, como la web que sustituye.
 - **q34 (+2).** «Donarem suport al dret a la lliure determinació dels pobles […] en casos com el Sàhara Occidental […]
-  exigint la celebració d'un referèndum» (p. 63). Pide expresamente el referéndum que Micó no mencionaba.
+  exigint la celebració d'un referèndum» (p. 55). Pide expresamente el referéndum que Micó no mencionaba.
 
 ## Se conservan posiciones de campaña
 
@@ -132,14 +136,14 @@ ERC 17 → 18. `build_fase1.py` no da errores, ni sin verificación de g10 (lo o
 - **q13 (−1, Micó).** El programa no habla de la vivienda social. «Accés universal a l'atenció sanitària pública, sense
   discriminacions per origen» (p. 9) es otra medida.
 - **q21 (+2, Micó: «blindaje constitucional […] del derecho al aborto»).** El programa garantiza la interrupción del
-  embarazo «en els termes previstos legalment» en la red pública (p. 52). No habla de la Constitución.
+  embarazo «en els termes previstos legalment» en la red pública (p. 46). No habla de la Constitución.
 - **q22 (−1, Micó).** No habla del Ministerio de Igualdad.
 - **q23 (−1, Micó).** «Prohibirem legalment els desnonaments sense alternativa habitacional» (p. 6) es otra medida. No
   habla de la ocupación ni de plazos de desalojo.
 - **q30 (+2, Micó: «topar el precio de la energía y los alimentos básicos»).** El programa propone ampliar el control público
-  de los márgenes de la gran distribución y exigir transparencia de precios (p. 24). Es menos directo que el tope de
+  de los márgenes de la gran distribución y exigir transparencia de precios (p. 22). Es menos directo que el tope de
   Micó y no lo contradice.
-- **q33 (−1, nota con Aitana Mas).** «Exigirem un acolliment digne, protecció de menors» (p. 64) no trata el reparto
+- **q33 (−1, nota con Aitana Mas).** «Exigirem un acolliment digne, protecció de menors» (p. 56) no trata el reparto
   entre comunidades.
 
 ### Podemos, Frente Amplio y ERC
@@ -165,28 +169,28 @@ ERC 17 → 18. `build_fase1.py` no da errores, ni sin verificación de g10 (lo o
 
 ## Siguen en null (Compromís, y por tanto sin efecto en los firmantes)
 
-- **q05 IRPF.** Solo deflactar el IRPF para rentas de menos de 30.000 € (p. 18).
+- **q05 IRPF.** Solo deflactar el IRPF para rentas de menos de 30.000 € (p. 17).
 - **q11 Concertada.** «Modificarem la normativa bàsica de concerts educatius perquè la xarxa concertada siga realment
   subsidiària de la pública» (p. 10). Hacerla subsidiaria es una medida relacionada pero distinta de retirar la
   financiación hasta suprimirla. Ver duda 7.
-- **q12 Castellano en las aulas.** Los derechos lingüísticos (p. 44) tratan la Administración, la justicia y el
+- **q12 Castellano en las aulas.** Los derechos lingüísticos (pp. 38-39) tratan la Administración, la justicia y el
   consumo, no la escuela.
 - **q15 Otra regularización.** «Regularitzarem i donarem drets per als qui viuen ací. Impulsarem vies de regularització
-  i reformes que faciliten la documentació i autorització de treball» (p. 64). Habla de vías y reformas, no de una
+  i reformes que faciliten la documentació i autorització de treball» (p. 56). Habla de vías y reformas, no de una
   regularización extraordinaria. Mismo criterio que BNG q15 y ERC q15 (null). Ver duda 7.
-- **q16 Referéndum de independencia.** Solo un «model d'Estat plurinacional» (p. 60) e impulsar «l'utilització dels
-  referèndums» en general (p. 40).
-- **q19 Eólica marina.** Solo las zonas de aceleración renovable en tierra (p. 30).
+- **q16 Referéndum de independencia.** Solo un «model d'Estat plurinacional» (p. 52) e impulsar «l'utilització dels
+  referèndums» en general (p. 35).
+- **q19 Eólica marina.** Solo las zonas de aceleración renovable en tierra (p. 27).
 - **q20 Emisiones −65 %.** Revisar la ley de cambio climático, electrificación al 100 % en 2030 y abandono de los
-  combustibles fósiles en 2040 (p. 31). No da objetivo de emisiones para 2030 y el horizonte de 2040 no implica por
+  combustibles fósiles en 2040 (p. 27). No da objetivo de emisiones para 2030 y el horizonte de 2040 no implica por
   sí solo el −65 % en 2030. Ver duda 7.
-- **q25 Indultos por corrupción, q27 Ceuta, q32 SMI autonómico** (solo el SMI estatal al 60 % del salario medio, p. 6)
+- **q25 Indultos por corrupción, q27 Ceuta, q32 SMI autonómico** (solo el SMI estatal al 60 % del salario medio, p. 7)
   **y q35 Prisión permanente.** El programa no trata estas medidas.
 - **q26 Defensa al 3,5 %.** Una defensa europea que sustituya a la OTAN y «reduïsca duplicitats i despeses militars»,
   pero también «Impedirem que els increments de la despesa militar es facen a costa de reduir la inversió en serveis
-  públics» (p. 62). Este último condiciona los aumentos, no los rechaza. Es ambivalente, así que null. Ver duda 7.
+  públics» (p. 55). Este último condiciona los aumentos, no los rechaza. Es ambivalente, así que null. Ver duda 7.
 - **q29 Mercosur.** «Demanarem que el govern espanyol trasllade al TJUE els acords comercials que desprotegeixen els
-  nostres sectors» (p. 64). No nombra Mercosur. La celda ya era null tras la verificación de g5.
+  nostres sectors» (p. 56). No nombra Mercosur. La celda ya era null tras la verificación de g5.
 
 ## Cambio en `pipeline/build_fase1.py`
 

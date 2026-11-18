@@ -64,10 +64,18 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
     valor: Podemos 23→25 posiciones; q05 y q11 nuevas, y q01, q09, q21, q29 y q33 se refuerzan con el programa); 12 propuestas del
     programa (revisión independiente, 20 correcciones; cambia una valoración: financiación del referéndum monarquía/república,
     favorable → mixta, por la vía del art. 168); complemento: contratar 40.000 sanitarios y 40.000 maestros (no está en el programa).
-  - [ ] Junts, NC-BC (UPC), UPN — sin programa el 18-nov a las 09:48.
-  - Compromís **retiró su PDF** de frontvalencia.org el 18-nov (HTTP 404, botón «Programa sencer» oculto, sin versión nueva ni
-    comunicado). Se mantiene como fuente (publicado el 14-nov, analizado y archivado sin cambios) y la web enlaza la copia de la
-    Wayback Machine del 16-nov con un aviso (`programa.url_archivada` en partidos.json). Volver a mirar si publica otra versión.
+  - [ ] Junts, NC-BC (UPC), UPN — sin programa en sus webs oficiales el 18-nov a las 21:07. **Junts** repartió a la prensa
+    su programa del 29-N el 18-nov (90 pp., «Catalunya al centre»; copia en el servidor de Ara, sha256 cde2c5f3…), pero
+    junts.cat no lo publica: no cuenta hasta que esté en su web (mismo criterio que Podemos el 16-nov). Análisis preparado
+    sobre esa copia en una rama local sin publicar (`prep-junts-29n`); comprobación temprana programada el 19-nov a las 7:17:
+    si el PDF oficial es idéntico, se publica tras revisión independiente y verificación del paso 1.
+  - PSC: sigue asumiendo el programa del PSOE; su manifiesto del 29-N (8 pp., socialistes.cat/generals) queda catalogado
+    como `documento_programatico`, como el de UPC.
+  - Compromís **retiró su PDF** el 18-nov a mediodía y por la tarde volvió a servir en la misma URL una **versión revisada**
+    (57 pp., sha256 b62b06d4…; sin nota oficial): quita la tasa turística de 2 € y el «mínimo del 51 %» de Red Eléctrica y
+    añade el empadronamiento obligatorio y menos carga burocrática a los pequeños autónomos. La fuente pasa a ser esa versión
+    (precedente de ERC y Frente Amplio) y la web deja de enlazar la copia archivada. Re-paginados los pasos 1 y 2 y el
+    registro; revisión independiente; ninguna posición, valoración ni promesa cambia.
   - Republicados el 17-nov: ERC (numeración del 1 al 227, «LGBTI+», medida 32) y Frente Amplio (tarifa plana de 88 €, cláusulas
     IPC, cultura al 2 % del gasto, IVA franquiciado opcional); catalogados el 18-nov, ninguna posición ni valoración cambia.
   - Hecho el 16-nov: auditoría de coherencia tras el programa del Frente Amplio (`data/fase3/coherencia_2026-11-16.md`: 49 correcciones de
@@ -177,6 +185,13 @@ su programa (tiene 23): valorar en el próximo barrido si se iguala. Auditoría 
 constitucionales y referendos —solo cuenta la votación que la propuesta exige; si el programa no la cuantifica, «mixta»—, que
 cambia dos valoraciones de financiación: erc-04 y salf-12, no_verificable → mixta; el SMI de 2027 ya está fijado en 18.004 €,
 RD 1013/2026 según el RDL 38/2026, BOE del 18-nov).
+
+**Revisión del 18-nov, 20:43:** Sigma Dos del 18-nov como escenario de Sigma Dos (PP 30,7 %, PSOE 26,7 %, Vox 19,7 %);
+40dB día 7 ya está en el servidor de El País pero cuenta cuando salga publicado (19-nov). GAD3 y CIS sin novedades. Paso 1
+sin posiciones nuevas. Registro 342 → 348: 7 entradas nuevas con revisión independiente (BNG 2, PNV 1, Ara Més y Frente
+Amplio 1 compartida, PP 1, Frente Amplio 1; 5 rechazadas) y se retira la Ley del Suelo del PSOE para aplicarle el mismo
+listón que a la del PNV (decisión del coordinador, revisable). BOE sin correcciones ni resoluciones de recursos (volver a
+mirar el 19 y el 20-nov: el plazo del art. 44.4 LOREG acaba el 19); dominio y HTTPS correctos.
 
 **Hecho el 16-nov** (estudio Neutral frente a Saltar; decisiones del editor): «Saltar» pasa a «No lo sé», a
 todo lo ancho bajo la escala; «Neutral» sigue contando. «Coincidís» solo si estáis del mismo lado (un Neutral es

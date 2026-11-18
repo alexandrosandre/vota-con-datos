@@ -120,7 +120,7 @@ desfavorable / no_verificable). Registro en sus `revision.json` (`cambios` y `co
 
 **Aplicada.** Por decisión del editor se hicieron las dos sustituciones propuestas abajo, con
 identificadores nuevos: salen compromis-04 y compromis-06 y entran **compromis-13** (Corredor
-Mediterráneo, p. 12) y **compromis-14** (empresa pública de energía, p. 29). Una revisión independiente
+Mediterráneo, p. 12) y **compromis-14** (empresa pública de energía, p. 26; páginas de la versión del programa republicada el 18-nov). Una revisión independiente
 (prompt 4) las aprobó el mismo día con 22 cambios registrados en `data/programas/compromis/revision.json`:
 entre otros, beneficiarios de compromis-13 pasa de «favorable» a «mixta» (mismo criterio que bng-10; pnv-04
 cuantifica con datos del Tribunal de Cuentas Europeo y un coste total conocido) y el encaje legal de
@@ -145,15 +145,15 @@ mercaderies amb el Corredor Mediterrani»), una medida con «calendari, pressupo
 
 Sustituciones propuestas, si el editor decide aplicarlas (evaluación y revisión nuevas):
 
-1. **compromis-04** (más impuestos desde la tercera vivienda, p. 5) → **Corredor Mediterráneo**:
+1. **compromis-04** (más impuestos desde la tercera vivienda, p. 6) → **Corredor Mediterráneo**:
    «Accelerarem l’execució del Corredor Mediterrani i les connexions ferroviàries de mercaderies, amb
    calendari, pressupost i rendició de comptes» (compromis-p079, p. 12; relacionadas p088, p. 13, y
-   p187, p. 23). compromis-04 es la cuarta línea de un bloque que ya tiene tres prioridades y no se
+   p187, p. 21). compromis-04 es la cuarta línea de un bloque que ya tiene tres prioridades y no se
    repite en el programa; el Corredor es lema, línea del resumen y medida repetida.
-2. **compromis-06** (SMI al 60 %, p. 6) → **empresa pública de energía**: «Crearem una empresa pública
-   de generació, distribució i comercialització […]» (compromis-p240, p. 29; relacionadas p241, p. 29,
+2. **compromis-06** (SMI al 60 %, p. 7) → **empresa pública de energía**: «Crearem una empresa pública
+   de generació, distribució i comercialització […]» (compromis-p240, p. 26; relacionadas p241, p. 26,
    recuperar la titularidad pública de las eléctricas «per a reduir el poder dels oligopolis», y la
-   mayoría pública de Red Eléctrica, que el programa repite dos veces en la p. 30). Concreta la primera
+   mayoría pública de Red Eléctrica, que el programa del 14-nov repetía dos veces, al 100 % y a «com a mínim el 51%»; la versión del 18-nov solo conserva el 100 %, p. 27). Concreta la primera
    línea del bloque «pel territori» («Exigirem que els beneficis de la transició energètica siguen per
    a la ciutadania i no per a l'oligopoli»), que hoy no tiene ninguna prioridad. compromis-06 se apoya en
    una línea genérica de la web («Augmentarem els salaris per a recuperar poder adquisitiu») que no
@@ -174,7 +174,7 @@ salf 2, upc 3, upn 3), más una entrada de selección en podemos y otra en ara_m
 ## Dudas que quedan
 
 - **Selección de Compromís**: sustituciones aplicadas y revisadas (arriba). Queda una duda editorial
-  menor, anotada en su `revision.json`: el fondo soberano de la p. 31 coincide casi literalmente con la
+  menor, anotada en su `revision.json`: el fondo soberano de la p. 27 coincide casi literalmente con la
   línea de la web que concreta compromis-14.
 - **Concreción «desfavorable»**: tras las retiradas, en las selecciones de compromisos (prompt 1b)
   solo queda upn-02, que se mantiene por nombrar la regla. La rúbrica sigue siendo aplicable a los

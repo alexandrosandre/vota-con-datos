@@ -109,7 +109,7 @@ Valores orientativos, sin verificar. «Firme» significa que la cita es literal,
 | PP | +2 | Programa, medida 228 (p. 71 del PDF) | «ELIMINAREMOS EL CALENDARIO DE CIERRE DE ALMARAZ, ASCÓ, VANDELLÓS, COFRENTES Y TRILLO. En los primeros cien días de Gobierno tramitaremos la extensión de su vida útil» | Firme |
 | Vox | +2 | Programa (p. 10 del PDF) | «Se garantizará la supervivencia de las centrales nucleares actuales, derogando el calendario de cierre.» | Firme |
 | PSOE | −2 (o −1) | Programa, compromiso 240 (p. 66 del PDF) | «Mantener el calendario de cierre de las centrales nucleares hasta 2035» | Firme. El valor −2 o −1 depende de si se lee como prioritario; el Gobierno ya prorrogó Almaraz, y conviene anotarlo. |
-| Compromís | −2 | Programa (p. 30 del PDF) | «Mantindrem el calendari de tancament de les centrals nuclears i no acceptarem cap nova pròrroga» | Firme |
+| Compromís | −2 | Programa (p. 27 del PDF) | «Mantindrem el calendari de tancament de les centrals nuclears i no acceptarem cap nova pròrroga» | Firme |
 | Podemos | −2 | Noemí Santana, Grupo Mixto (Podemos), Pleno 151, 13-nov-2025, p. 31; también el documento conjunto de Compromís: Front Valencià | «ni un euro más para alargar la vida de las centrales nucleares» | Firme |
 | Frente Amplio | −2 | Verónica Martínez Barbero, portavoz del Grupo Plurinacional SUMAR, Pleno 202, 9-sep-2026, p. 147; también el documento conjunto | «Las nucleares tienen que cerrarse según el calendario marcado.» (en la copia de texto, un salto de página parte la frase) | Firme |
 | ERC | −2 (o −1) | Documento conjunto (ERPV, −2), como en g10; también Teresa Jordà, Pleno 202, p. 94 (versión en castellano del Diario) | «mantenimiento del calendario nuclear sin efecto dominó» | Firme |
@@ -138,7 +138,7 @@ Valores orientativos, sin verificar. «Firme» significa que la cita es literal,
 |---|---|---|
 | CC | +2 | Programa, medida 26 (p. 11 del PDF): «Limitar la compra de vivienda por extranjeros. Impulsaremos en las Cortes Generales las reformas necesarias para limitar la compra de vivienda en Canarias por extranjeros». Se refiere solo a Canarias. |
 | Ara Més | +2 | Carme Gomila, mitin de Palma (Demócrata, 8-nov): «limitarem la compra a no residents». También Vicenç Vidal en el Pleno 185: «Hem de regular la compra per part de no residents». |
-| Compromís (y por el documento conjunto Podemos, FA y ERC) | +1 / +2 | Programa (p. 4 del PDF): «Prohibirem temporalment la compravenda d'habitatges a població no-resident en les zones tensionades.» |
+| Compromís (y por el documento conjunto Podemos, FA y ERC) | +1 / +2 | Programa (p. 5 del PDF): «Prohibirem temporalment la compravenda d'habitatges a població no-resident en les zones tensionades.» |
 | Vox | +1 | Programa (p. 21 del PDF): «Fiscalidad agravada y disuasoria para compradores no comunitarios». Grava, no limita: la equivalencia es dudosa. |
 | PSOE | +1 | José Luis Sarrià, Grupo Socialista, Pleno 193, 17-jun-2026: «Ya veremos qué votan cuando el Gobierno traiga [...] medidas para limitar compras por extranjeros no comunitarios». Es reactiva. El programa solo habla de fondos especulativos (medida 71). |
 | UPC | +1 | Román Rodríguez, tribuna en Diario de Avisos (oct-2026): «limitando el impacto de la vivienda vacacional y de la compra de viviendas por parte de extranjeros no residentes». Hay que confirmar que cuenta como líder. |
