@@ -41,10 +41,13 @@ export function EstadoProgramas() {
               </td>
               <td>
                 {p.programa.estado === 'publicado' ? (
-                  <a href={p.programa.url ?? '#'} target="_blank" rel="noopener">
-                    Publicado {p.programa.fecha ? `el ${fmt.fecha(p.programa.fecha)}` : ''}
-                  </a>
-                ) : p.programa.estado === 'asumido' ? (
+                  <>
+                    <a href={p.programa.url ?? '#'} target="_blank" rel="noopener">
+                      Publicado {p.programa.fecha ? `el ${fmt.fecha(p.programa.fecha)}` : ''}
+                    </a>
+                    {p.programa.aviso && <div class="muted" style={{ fontSize: '0.8rem' }}>Retirado de su web; enlace a la copia archivada</div>}
+                  </>
+                ) :p.programa.estado === 'asumido' ? (
                   <a href={p.programa.url ?? '#'} target="_blank" rel="noopener">
                     Asume el del {partido(p.programa.programa_de)?.siglas ?? p.programa.programa_de}
                   </a>

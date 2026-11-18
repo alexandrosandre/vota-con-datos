@@ -35,15 +35,25 @@ def load(p):
     return json.loads((D / p).read_text())
 
 
+# Programas que el partido retiró de su web después de publicarlos: los enlaces de la web van a la copia archivada
+# (programa.url_archivada en partidos.json), con el mismo #page. Se rellena en main().
+ARCHIVADAS = {}
+
+
 def write(name, obj):
     OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / name).write_text(json.dumps(obj, ensure_ascii=False, separators=(",", ":")))
+    s = json.dumps(obj, ensure_ascii=False, separators=(",", ":"))
+    for url, copia in ARCHIVADAS.items():
+        s = s.replace(f'"{url}"', f'"{copia}"').replace(f'"{url}#', f'"{copia}#')
+    (OUT / name).write_text(s)
 
 
 def main():
     # Las papeletas de cada partido (paso 3) deben estar al día con el BOE y el mapeo.
     subprocess.run([sys.executable, "-I", str(ROOT / "pipeline" / "papeletas.py"), "--check"], check=True)
     cat = load("partidos/partidos.json")
+    ARCHIVADAS.update({p["programa"]["url"]: p["programa"]["url_archivada"] for p in cat["partidos"]
+                       if (p.get("programa") or {}).get("url_archivada")})
     prom = load("promesas/promesas.json")["partidos"]
     prom = {ALIAS_PROMESAS.get(k, k): v for k, v in prom.items()}
     comprobado = cat["meta"].get("checked_at") or cat["meta"].get("comprobado")
@@ -110,6 +120,7 @@ def main():
                 "paginas": pr.get("paginas"),
                 "sha256": pr.get("sha256"),
                 "comprobado": pr.get("comprobado") or pr.get("checked_at") or comprobado,
+                "aviso": pr.get("aviso"),
             },
             "promesas": [
                 {"texto": x["texto"], "tipo": x["tipo"], "area": x["area"], "fecha": x.get("fecha"), "quien": x.get("quien"),

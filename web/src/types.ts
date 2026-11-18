@@ -29,6 +29,8 @@ export interface Partido {
     paginas?: number | null;
     sha256?: string | null;
     comprobado?: string | null;
+    /** Aviso sobre el documento (p. ej., el partido lo retiró de su web y se enlaza una copia archivada). */
+    aviso?: string | null;
   };
   /** Compromisos concretos del candidato en precampaña/campaña, con fuentes (no evaluados). */
   promesas?: { texto: string; tipo: 'cita_literal' | 'parafrasis'; area: string; fecha?: string; quien?: string; fuentes: { url: string; medio?: string; fecha?: string }[] }[];

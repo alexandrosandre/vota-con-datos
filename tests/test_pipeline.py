@@ -190,6 +190,18 @@ class TestPartidosYPapeletas(unittest.TestCase):
         f1 = json.loads((ROOT / "web/public/data/fase1.json").read_text())["posiciones"]
         self.assertEqual(f1["psc"]["q06"]["valor"], f1["psoe"]["q06"]["valor"])
 
+    def test_programas_retirados_enlazan_la_copia_archivada(self):
+        # Compromís retiró su PDF el 18-nov: ningún enlace de la web debe llevar a la URL original (404).
+        import re
+        cat = json.loads((ROOT / "data/partidos/partidos.json").read_text())["partidos"]
+        retirados = [p["programa"] for p in cat if (p.get("programa") or {}).get("url_archivada")]
+        self.assertTrue(retirados)
+        for nombre in ("partidos.json", "fase1.json", "fase3.json"):
+            s = (ROOT / "web/public/data" / nombre).read_text()
+            for pr in retirados:
+                self.assertFalse(re.search(r'"' + re.escape(pr["url"]), s), (nombre, pr["url"]))
+        self.assertIn("web.archive.org", (ROOT / "web/public/data/fase3.json").read_text())
+
 
 class TestDespliegueSinCortes(unittest.TestCase):
     def test_datos_con_nombre_por_contenido(self):

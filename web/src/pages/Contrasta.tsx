@@ -391,6 +391,7 @@ export function Contrasta() {
                       Programa oficial{p.programa.programa_de ? ` del ${partido(p.programa.programa_de)?.siglas ?? p.programa.programa_de}` : ''}
                     </a>
                   )}
+                  {datos.base !== 'compromisos' && p.programa.aviso ? ' (copia archivada: el partido lo retiró de su web el 18-nov)' : ''}
                 </p>
                 <Leyenda />
                 <details class="desplegable que-mide">
@@ -436,6 +437,7 @@ export function Contrasta() {
                     ? ', y, al final, compromisos públicos de sus líderes que no están en el programa'
                     : ''}
                   . <a href="#/metodologia">Cómo se hace</a>.
+                  {p.programa.aviso ? ` ${p.programa.aviso}` : ''}
                 </p>
               )}
                 </details>
