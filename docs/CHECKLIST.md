@@ -1,6 +1,6 @@
 # Checklist · vota con datos (29-N)
 
-Actualizado: 17-nov-2026. Solo lo pendiente; lo terminado está en el historial de git. La web ya está
+Actualizado: 18-nov-2026. Solo lo pendiente; lo terminado está en el historial de git. La web ya está
 en línea; aquí «bloquea» significa **no difundirla ni anunciarla** (o, si ya circula, que deja de ser
 correcta o legal) hasta que esté hecho.
 
@@ -143,10 +143,17 @@ Paso 1: UPN q03 de sin posición a +1 (nota de UPN-PP sobre el IVA de la primera
 27 nuevos con revisión independiente (258 → 285). Podemos presentó su programa «Paz, casa y trabajo» a la prensa, pero no está
 en ningún canal oficial (podemos.info ni la web de campaña pazcasaytrabajo.es, guardada como documento programático); sus
 medidas solo citadas por Europa Press no entran. UPN, UPC y Junts sin programa. BOE sin cambios; dominio y HTTPS correctos.
-Pendiente: ERC republicó su programa el 17-nov a las 17:30 (nuevo sha256 f0b6d8e0…; cambia la numeración desde la medida 198):
-catalogar la versión nueva y revisar las referencias del paso 1 y del paso 2; el PDF de Adelante Andalucía se republicó el
-16-nov solo con otra línea de versión. Compromisos: el 30 % de Colau y el 40 % de Podemos concretan promesas ya registradas (se
-mantiene el criterio del 15-nov) y el IVA del 4 % de la primera vivienda de UPN-PP queda para el barrido del 18-nov.
+El PDF de Adelante Andalucía se republicó el 16-nov solo con otra línea de versión. Compromisos: el 30 % de Colau y el 40 % de Podemos concretan promesas ya registradas (se mantiene el criterio del 15-nov).
+
+**Revisión del 18-nov, 09:43:** 40dB día 6 (El País/SER, 18-nov) entra en la media; Sigma Dos día 6, GAD3 y CIS sin novedades
+a las 09:45. ERC republicó su programa el 17-nov (sha256 f0b6d8e0…): numeración correlativa del 1 al 227, «LGBTI+» y una
+frase de la medida 32; catalogado y actualizados los números de medida citados en los pasos 1 y 2 (ninguna posición ni
+valoración cambia). UPN, Podemos, UPC y Junts sin programa. Paso 1 sin posiciones nuevas. BOE sin cambios; dominio y HTTPS
+correctos. **Para el barrido del 18-nov, 10:47:** además de la paridad (medidas de los programas del PP, Vox, Compromís, PSOE
+y Frente Amplio) y el IVA del 4 % de la primera vivienda de UPN-PP, revisar las 5 candidatas de la mañana (PSOE: redes
+sociales a partir de 16 años, medida 399; ERC: nuevo modelo de financiación, medida 23; PP: frecuencias Logroño–Madrid con
+parada en Calahorra; BNG: IVA del 5 % para la energía y terrenos de la Sareb en As Raíñas) y la hora diaria de catalán de
+Ara Més (nota del 17-nov, sin registrar ni descartar).
 
 **Hecho el 16-nov** (estudio Neutral frente a Saltar; decisiones del editor): «Saltar» pasa a «No lo sé», a
 todo lo ancho bajo la escala; «Neutral» sigue contando. «Coincidís» solo si estáis del mismo lado (un Neutral es
