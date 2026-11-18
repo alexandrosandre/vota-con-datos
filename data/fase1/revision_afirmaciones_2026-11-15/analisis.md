@@ -172,7 +172,7 @@ dudosa y no sube a ningún partido con poca cobertura.
 | Candidata | Partidos con posición documentada | Por qué no |
 |---|---|---|
 | Votar a los 16 años | PSOE (programa), Compromís y por el documento conjunto Podemos, FA y ERC (también en su propio programa), UPC (manifiesto: «incluido el voto a los 16 años») y AA: 7, todos a favor | Ninguna oposición documentada. |
-| Gestión autonómica de puertos y aeropuertos (hoy Aena) | CC (medida 8), PNV («modelo aeroportuario vasco [...] con mayor capacidad de decisión»), ERC (medida 209), BNG, Compromís, AA, y Ara Més (Vidal: «La cogestió aeroportuària [...] és una prioritat»): 7–10, todos a favor | Ninguna oposición documentada (ni PP, ni Vox, ni PSOE). Sube a CC y PNV, pero sería un solo bloque. |
+| Gestión autonómica de puertos y aeropuertos (hoy Aena) | CC (medida 8), PNV («modelo aeroportuario vasco [...] con mayor capacidad de decisión»), ERC (medida 179), BNG, Compromís, AA, y Ara Més (Vidal: «La cogestió aeroportuària [...] és una prioritat»): 7–10, todos a favor | Ninguna oposición documentada (ni PP, ni Vox, ni PSOE). Sube a CC y PNV, pero sería un solo bloque. |
 | Oficialidad del catalán, el euskera y el gallego en la UE; competencias de inmigración; jubilación con 40 años cotizados | Igual que el 13-nov (4 partidos cada una) | El programa del PSOE no añade nada relevante a ninguna. |
 
 ## 4. Recomendación
