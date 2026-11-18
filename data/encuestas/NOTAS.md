@@ -117,6 +117,12 @@ Desgloses territoriales, de encuestas anteriores de Sigma Dos:
 - Frente Amplio se guarda como bloque (6,7 %), igual que el 16-11. El texto da la marca nacional (4,9 %, 7–8) y Compromís/Front Valencià (1,4 %, 3–5), pero no el porcentaje de UPC (0,4 por diferencia; "ya no tiene asegurado su escaño"). Los tres van en `componentes` y no se usan en la proyección.
 - Podemos (1,2 %) sale del texto y de la serie Datawrapper QBCLv v13; no figura en la infografía. No hay discrepancias entre texto, infografía y serie.
 
+### 40dB, tracking diario (`40db-2026-11-18`, publicado 18-11)
+- Sexta entrega: sustituye a `40db-2026-11-17` en la media. PP 32,2 (131; 126–137), PSOE 30,7 (122; 118–127), Vox 17,0 (55; 51–60), Frente Amplio 3,5 (5; 4–6), Podemos 1,2 (1; 0–1). El escenario propio de 40dB sigue usando `40db-2026-11`.
+- Campo del 13 al 17 de noviembre, 2.000 entrevistas online (±2,2 %), según la ficha (ahora en la pág. 25: el informe añade una página de evolución de escaños) y la SER. Esta vez el gráfico de evolución también rotula "13-17 nov".
+- Las coaliciones territoriales de izquierda bajan a 4 escaños (3–5): UPC pasa a 0 (0–1). Los otros 32 (30–33) son ERC 10, Bildu 7, JxC 4, PNV 3, AA 3, BNG 2, UPN-PP 2 y CC 1.
+- El PDF (`informe_tracking_dia06.pdf`, en minúscula) estaba en el servidor desde el 17-11 a las 18:23 GMT; cuenta como publicado el 18-11, con los artículos de El País y la SER.
+
 ### SW Demoscopia (barómetro n.º 9, no añadido)
 - El agregador cita el barómetro n.º 9 (datos al 12-11, 7.500 entrevistas) como un PDF en el CDN de LinkedIn. Está guardado en `sources/encuestas/swdemoscopia/`, pero no se ha añadido: ni la empresa ni La Séptima lo publican y no consta quién lo subió. `swdemoscopia-2026-11-11` sigue fuera de la media.
 
