@@ -1,0 +1,194 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-18",
+ "alcance": "12 prioridades × 8 criterios y campos «titulo», «resumen» y «beneficiarios» de data/programas/podemos/evaluacion.json, las justificaciones de las 12 prioridades de extraccion.json y el catálogo del programa en data/partidos/partidos.json, contra el programa «Así de básico: paz, casa y trabajo» (141 págs., SHA-256 086211fb…3f097fb, recalculado sobre el PDF local; la URL de pazcasaytrabajo.es sirve el mismo fichero, 1.830.035 bytes, Last-Modified 18-11-2026 08:56:50 GMT, comprobado a las 12:28 GMT) y las fuentes citadas (prompt 4). Cada página se extrajo por separado con pdftotext -layout -f N -l N. Las 12 citas son literales y cada tramo separado por «[...]» está en la página indicada; los fragmentos del programa entrecomillados en los textos y en las justificaciones están en las páginas que se indican, y los de la web de campaña y de la prensa, en sus copias locales (web_2026-11-18/pazcasaytrabajo_portada.html; eldiario_2026-11-06, infobae_ep_20261115, europapress_20261117 y planetacanario/diariodeavisos del 14-nov en data/sources/compromisos/podemos/). verify_quotes podemos: 447 citas, 0 no encontradas. Se abrieron las 40 URL que no estaban en ninguna evaluación revisada (BOE del Convenio de 1988 y sus protocolos de 2012, 2015 y 2023, RD 214/1986 y resultados de la JEC, Ley 25/2014, OTAN sobre Francia, UPI, CSIF, ZEW, RWI, SIPRI, Ara, informe 2 de Consumo e IFS-CSIC, Banco Nacional de Hungría, FMI CR 25/250 (meetings.imf.org da 403 a curl y abre en un navegador; contenido comprobado también en elibrary.imf.org), FES Rumanía, RDL 38/2026, Ley 10/2021, Bloom y otros (Nature y NBER), STC 140/1986, El Derecho/Europa Press, IZA World of Labor, Hamermesh y Trejo, Fafo, Lovdata, Clayton Utz, INE (API de las tablas 65211 y 79315), RDL 8/2019, Euronews (403 en directo; copia de la Wayback Machine del 11-10-2026), Casa Real, Guillén 2018, Legal Today, Ministerio del Interior italiano, Comisión Electoral Australiana, INE EG2026, Gobierno neerlandés) y se comprobó cada cifra, fecha, artículo y sentencia que sostienen; de las reutilizadas se releyeron las que sostienen afirmaciones nuevas o cambiadas (STC 26/2025, RDL 29/2026, Ley 7/1996 art. 13.2, Ley 12/2013 arts. 12 ter y 20, LGP art. 50, LO 2/2012 arts. 30-31, STC 126/2016, OTAN def-exp-2025, Spain in NATO Report, comparecencia del 8-7-2026, Hacienda, La Moncloa, Kiel, Clements y otros, Leeds 2003). Se rehicieron los cálculos propios: 3,3 millones de hogares; 6-10 veces; 11.400, 10.430 y 12.726 M€; 52,5 %; calendario del Convenio (fin como pronto el 21-5-2028 y retirada hasta mayo de 2029 si se notifica después del 21-11-2026: correcto según el art. 69.2 y 69.5 y la vigencia de ocho años desde el 21-5-2013 del Segundo Protocolo); 16.856 M€ y 592 M€ de Repsol; 18.004/14 = 1.286 €, +5,3 %, +40 % y +20 %, 103 % y 88 % de la mediana, 18.373 €; 14,3 %, 33,3 % y 27 % de la jornada; medias de 2026 de la EPA (2,605 y 3,803 millones de horas; 65.120 y 95.068 empleos a 40 h; 556.800 = 493.200 solo pagadas + 63.600 ambas); 680 M€; 234 diputados. Todos correctos. Parte de la comprobación de fuentes de podemos-06, -07, -10 y -12 la hicieron dos subagentes de verificación sin acceso al análisis; cada discrepancia que señalaron se volvió a comprobar en la fuente antes de corregirla. Las notas de los evaluadores se leyeron al final.",
+ "catalogo": "Correcto. SHA-256, 141 páginas A4, metadatos (InDesign 21.6; CreationDate y ModDate 17-11-2026 13:49 CET) y tamaño comprobados sobre el PDF local, que coincide con el que sirve hoy la URL (mismo ETag y Last-Modified). Título: el de la portada del PDF («Así de básico: Paz, casa y trabajo.») y de la página del programa. Fecha 18-nov: la del primer canal oficial que lo publica (web de campaña, titular Podemos), con la evidencia que se cita: Last-Modified 18-11 08:56 GMT, la comprobación negativa de las 09:46 y el sitemap; la portada del 18-nov enlaza «Lee el programa», que no estaba en la copia del 17-nov, y la página del programa ofrece el visor de 141 páginas (282 imágenes en dos tamaños con ?v=2026-11-17) y el botón «Descargar PDF (1,8 MB)». Mismo criterio de fecha que el Frente Amplio (publicación en el canal oficial, no presentación a la prensa). Se conserva documento_programatico como historial, igual que en el Frente Amplio.",
+ "seleccion": "Las 12 prioridades coinciden con extraccion.json y se justifican con lo que el propio partido destaca: el programa no numera ni llama «estrella» a ninguna medida; su estructura son seis capítulos cuyos cinco primeros títulos son las cinco medidas de la portada de la web de campaña, que enlaza el programa. Cada capítulo tiene al menos una prioridad (1: 3; 2: 2; 3: 2; 4: 3; 5: 1; 6: 1). Siete son la primera medida de su capítulo o bloque o desarrollan literalmente una frase de la web (SMI de 1.800 €, 30 horas, «Ni un euro más a armas», «Nadie que quiera especular...», OTAN, «Vidas libres de violencias machistas»); las demás se apoyan en la introducción del capítulo (dato de 626.000 propiedades, 2,5 millones de horas extra no pagadas, «garantizar precios asequibles para la alimentación»), en la introducción del programa (beneficios de Repsol) y en lo que la candidata repitió o eligió como titular (expropiación del uso: 5 ocasiones; horas extra: titular de la presentación del 17-nov, «una de las propuestas estrella» según Europa Press). Las ocasiones citadas en las justificaciones (8 para el SMI, 7 para las 30 horas, 5 para la expropiación, 4 para la compra especulativa, 2 para los 1.000 M€) se comprobaron en las copias locales de Las Palmas (14-nov) y Sevilla (15-nov), que se suman a las revisadas el 12-nov. No falta ninguna medida claramente más central con evidencia del propio partido; los candidatos más cercanos quedan en dudas (sanidad y clima en el capítulo 5, jubilación a los 63 años y banca pública).",
+ "igual_estandar": "Se compararon las 96 valoraciones con las equivalentes aprobadas (data/programas/*/evaluacion.json y compromisos/evaluacion.json): alquileres (adelante_andalucia-01, ara_mes_fa-07, eh_bildu-01, bng-02: mismas valoraciones salvo concreción, que el texto justifica), compra solo para residir (ara_mes_fa-06: idénticas; legal «desfavorable» como cc-06 y no «mixta» como eh_bildu-03 y compromis-01, que se limitan a categorías de compradores), expropiación (frente_amplio-02: idénticas), tope de márgenes (ara_mes_fa-03: idénticas; legal «favorable» frente a «mixta» en eh_bildu-08 por diferencia de hecho que el texto dice: art. 13.2.a de la Ley 7/1996), Repsol/empresa pública de energía (mixta en financiación por coste estimable, frente a «no_verificable» en adelante_andalucia-08 y compromis-14, donde no se sabía qué activos se comprarían; aquí la empresa es cotizada y el 51 % tiene precio de mercado), OTAN y bases (bng-12: idénticas), rearme (el compromiso podemos-07 revisado: idénticas), SMI (frente_amplio-08: idénticas; concreción «mixta» como erc-08 por no aclarar 12 o 14 pagas), jornada (eh_bildu-04 y adelante_andalucia-03: idénticas; frente_amplio-09 y bng-04 son «mixta» en concreción por no dar plazo), horas extra (sin equivalente; evidencia «mixta» como las reducciones de jornada, con el mismo tipo de resultado: no crea empleo), violencias machistas (el compromiso revisado: idénticas) y referéndum sobre la monarquía (legal «mixta» como upc-03 por proponer el procedimiento del art. 168, frente a «desfavorable» en erc-04 y eh_bildu-11, que proponían referendos fuera de ese cauce). Se decidieron así las dudas del analista: podemos-01 legal sigue «mixta» (sin pronunciamiento directo; el texto dice que la rebaja se aleja de los rasgos de la STC 26/2025), podemos-01 internacional sigue «mixta» como bng-02 y adelante_andalucia-01, podemos-07 concreción sigue «mixta» (la medida no cifra el recorte; el diagnóstico de la p. 26 lo sitúa pero no lo vincula a la medida), podemos-08 concreción sigue «mixta» como erc-08. Cambia una valoración: podemos-12, financiación, «favorable» → «mixta» (ver cambios). Los textos no contienen adjetivos de valor.",
+ "recuento_inicial": {
+  "favorable": 13,
+  "mixta": 73,
+  "desfavorable": 2,
+  "no_verificable": 8
+ },
+ "recuento_final": {
+  "favorable": 12,
+  "mixta": 74,
+  "desfavorable": 2,
+  "no_verificable": 8
+ },
+ "recuento_nota": "Recuento de las 12 propuestas × 8 criterios. Una valoración cambia (podemos-12, financiación, «favorable» → «mixta»); las demás correcciones son de texto, atribución, cifras y fuentes (20 entradas de «cambios»: 15 de texto, 3 fuentes añadidas, el cambio de valoración y la nota del fichero), ninguna de las cuales cambia otra valoración.",
+ "cambios": [
+  {
+   "propuesta": "podemos-06",
+   "criterio": "evidencia",
+   "antes": "Con datos de 1816-2000, Leeds (2003) y Johnson y Leeds (2011) hallan que los pactos de defensa reducen la probabilidad de que se inicie una disputa militarizada contra sus miembros, y no encuentran que lleven a los aliados a iniciar o escalar más disputas, que es el riesgo de arrastre que alega el programa.",
+   "despues": "Leeds (2003) halla que los compromisos de defensa reducen la probabilidad de que se inicie una disputa militarizada contra sus miembros, y Johnson y Leeds (2011), con datos de 1816-2000, lo confirman y no encuentran que lleven a los aliados a iniciar o escalar más disputas, que es el riesgo de arrastre que alega el programa.",
+   "motivo": "Atribución: Leeds (2003, AJPS) estudia si un posible agresor inicia una disputa (los pactos defensivos la reducen; los ofensivos y de neutralidad la aumentan) y no contrasta si los aliados inician o escalan más disputas; eso, y el periodo 1816-2000, son de Johnson y Leeds (2011). El mismo texto está en bng-12 (aprobado), que no se toca aquí.",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "podemos-06",
+   "criterio": "legal",
+   "antes": "exige autorización previa de las Cortes por mayoría simple (art. 96.2 CE y art. 37.3 de la Ley 25/2014, de Tratados).",
+   "despues": "exige autorización previa de las Cortes (art. 96.2 CE y art. 37.3 de la Ley 25/2014, de Tratados), que se adopta por mayoría de cada Cámara y, si no coinciden, la decide el Congreso por mayoría absoluta (art. 74.2 CE).",
+   "motivo": "Sin respaldo: ni el art. 96.2 CE ni el art. 37.3 de la Ley 25/2014 hablan de «mayoría simple»; la mayoría para las decisiones del art. 94.1 la fija el art. 74.2 CE (mayoría de cada Cámara; en caso de desacuerdo tras la Comisión Mixta, decide el Congreso por mayoría absoluta). Fuente ya citada (CE).",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "podemos-06",
+   "criterio": "antecedentes",
+   "antes": "en el referéndum consultivo del 12-3-1986 9.054.509 votantes (el 52,5 %, cálculo propio) frente a 6.872.421 apoyaron permanecer",
+   "despues": "en el referéndum consultivo del 12-3-1986 9.054.509 votos (el 52,5 % de los votantes, incluidos los votos en blanco y nulos; cálculo propio), frente a 6.872.421 en contra, apoyaron permanecer",
+   "motivo": "Precisión: el 52,5 % es 9.054.509 sobre los 17.246.756 votantes (con blancos y nulos); sobre votos válidos sería el 53,1 % y sobre sí + no, el 56,9 %. Se dice la base y se cambia «votantes» por «votos» (JEC, BOE 2-4-1986, p. 11631).",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "podemos-06",
+   "criterio": "antecedentes",
+   "antes": "y en Morón (una fuerza de respuesta de crisis, con 2.200 militares permanentes autorizados, desde 2015).",
+   "despues": "y en Morón (una fuerza de respuesta de crisis desde 2015, con un nivel de 2.200 militares permanentes autorizados en la base).",
+   "motivo": "Precisión: 2.200 es el nivel total de personal militar permanente autorizado en la base de Morón (Tercer Protocolo, art. 3), no el de la fuerza de respuesta de crisis, que puede sumar temporalmente más efectivos (art. 4).",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "podemos-06",
+   "criterio": "beneficiarios",
+   "antes": "(CSIF, 16-10-2025).",
+   "despues": "(CSIF, 16-10-2025). En la redacción vigente del Convenio, el nivel autorizado es de 4.250 militares estadounidenses permanentes en Rota (Protocolo de enmienda de 2002) y de 2.200 en Morón (Tercer Protocolo, 2015).",
+   "motivo": "Sin respaldo en las fuentes citadas: el campo «beneficiarios» daba 4.250 militares en Rota y 2.200 en Morón, pero el BOE de 1989 citado da 5.250 en Rota (anejo 2 original); 4.250 procede del Protocolo de enmienda de 10-4-2002 (BOE 21-2-2003) y 2.200 del Tercer Protocolo (BOE 12-9-2015, art. 3). Se dice en el criterio con sus dos fuentes.",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "podemos-06",
+   "criterio": "beneficiarios",
+   "antes": "(sin esta fuente)",
+   "despues": "fuente añadida: Protocolo de enmienda del Convenio de Cooperación para la Defensa, de 10-4-2002 (BOE 21-2-2003): nivel de 4.250 militares permanentes en Rota — https://boe.es/boe/dias/2003/02/21/pdfs/A07215-07227.pdf",
+   "motivo": "Fuente del nivel de fuerzas de Rota (anejo 2 en la redacción de 2002).",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "podemos-06",
+   "criterio": "beneficiarios",
+   "antes": "(sin esta fuente)",
+   "despues": "fuente añadida: Tercer Protocolo de enmienda del Convenio de Cooperación para la Defensa, de 17-6-2015 (BOE 12-9-2015), art. 3: 2.200 militares permanentes en Morón — https://www.boe.es/boe/dias/2015/09/12/pdfs/BOE-A-2015-9802.pdf",
+   "motivo": "Fuente del nivel de fuerzas de Morón.",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "podemos-07",
+   "criterio": "legal",
+   "antes": "(con carácter general, el 3 % o el 6 % de lo no ejecutado en los suministros, art. 307 de la Ley 9/2017), y el Tribunal Constitucional declaró inconstitucional el uso sistemático del decreto-ley para dotar créditos a programas de armamento (STC 126/2016).",
+   "despues": "(en los suministros, con carácter general, el 3 % del precio de adjudicación o el 6 % del precio de los suministros dejados de realizar, según la causa, art. 307 de la Ley 9/2017), y el Tribunal Constitucional anuló en 2016 el decreto-ley de 2014 que dotaba créditos para programas especiales de armamento por falta de urgencia, porque pagarlos por decreto-ley se había convertido en «una práctica habitual» (STC 126/2016).",
+   "motivo": "Sin respaldo: el fallo de la STC 126/2016 solo declara inconstitucional y nulo el art. 2.1 del RDL 10/2014; la «práctica habitual» (RDL 26/2012, 10/2013 y 7/2015) es el argumento para negar la urgencia, no una declaración de inconstitucionalidad de la práctica. Precisión del art. 307 LCSP: el 3 % es del precio de adjudicación (art. 307.2) y el 6 %, del precio de los suministros dejados de realizar (art. 307.3).",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "podemos-07",
+   "criterio": "antecedentes",
+   "antes": "entre 2012 y 2015 los programas de armamento se pagaron con créditos aprobados por decreto-ley, práctica que el Tribunal Constitucional declaró inconstitucional en 2016.",
+   "despues": "entre 2012 y 2015 los programas de armamento se pagaron con créditos aprobados por decreto-ley, y en 2016 el Tribunal Constitucional anuló el de 2014 por falta de urgencia, al considerar que esa vía se había convertido en «una práctica habitual».",
+   "motivo": "Mismo motivo que en «legal»: la STC 126/2016 anula solo el art. 2.1 del RDL 10/2014.",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "podemos-07",
+   "criterio": "antecedentes",
+   "antes": "el plan de abril de 2025 (10.471 M€) se financió, según el Gobierno,",
+   "despues": "el plan de abril de 2025 (10.471 M€) se financiaría, según el Gobierno al presentarlo,",
+   "motivo": "Fidelidad a la fuente: la referencia de La Moncloa del 22-4-2025 anuncia de dónde «procederá» la financiación; no informa de cómo se financió después.",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "podemos-07",
+   "criterio": "largo_plazo",
+   "antes": "dejaría el gasto por debajo del 2,1 % que, según el Gobierno, necesitan las capacidades acordadas con la Alianza, que España cumplió en 2026 según el propio Gobierno,",
+   "despues": "dejaría el gasto por debajo del 2,1 % que, según el Gobierno, cuestan las capacidades acordadas con la Alianza (el Gobierno afirma haber cumplido en 2026 sus objetivos de capacidades con un gasto del 2 % del PIB),",
+   "motivo": "Sin respaldo: la comparecencia del 8-7-2026 y el Spain in NATO Report dan un gasto del 2 % del PIB en 2026, no del 2,1 %; el 2,1 % es el coste estimado de las capacidades acordadas.",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "podemos-07",
+   "criterio": "internacional",
+   "antes": "Tras 1985 muchos países redujeron su gasto militar (casi 3 puntos del PIB en una década, según datos del FMI).",
+   "despues": "En la década posterior a 1985 el gasto militar mundial bajó casi 3 puntos del PIB, sobre todo por los recortes de las economías en transición (menos de 1 punto en los países industrializados), según datos del FMI.",
+   "motivo": "Fidelidad a la fuente: Clements, Gupta y Schiff (1997, p. 17) dan «nearly 3 percentage points of GDP» para el gasto militar mundial, con recortes de unos 5 puntos en las economías en transición y de menos de 1 punto en los países industrializados, África y Asia; el texto se leía como una caída por país.",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "podemos-07",
+   "criterio": "evidencia",
+   "antes": "el informe del Kiel Institute (2025) sitúa el mínimo en 0,6 y recoge estudios con multiplicadores similares para sanidad, infraestructuras y gasto público local,",
+   "despues": "el informe del Kiel Institute (2025) recoge un mínimo de 0,6 (Ramey, 2019) y estudios con multiplicadores locales parecidos a los del gasto militar para sanidad, infraestructuras y gasto público local,",
+   "motivo": "Precisión: el informe atribuye el mínimo de 0,6 a Ramey (2019) y los multiplicadores «similares» de sanidad, infraestructuras y gasto local se comparan con los multiplicadores locales del gasto militar (1,5, Nakamura y Steinsson), no con 0,6 (Kiel Report n.º 2, pp. 10-11).",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "podemos-10",
+   "criterio": "internacional",
+   "antes": "Noruega tipificó el robo de salario en 2022,",
+   "despues": "En Noruega el delito de robo de salario está en vigor desde 2022 (ley de 2021),",
+   "motivo": "Precisión: Lovdata, §§ 395-396: «Tilføyd ved lov 11 juni 2021 nr. 59 (ikr. 1 jan 2022)»; se tipificó en 2021 y entró en vigor el 1-1-2022.",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "podemos-12",
+   "criterio": "evidencia",
+   "antes": "El estudio de panel más amplio localizado (Guillén, 2018, con 137 países entre 1900 y 2010) asocia las monarquías con una mayor protección de los derechos de propiedad y un mayor nivel de vida que el conjunto de las repúblicas, incluidas las presidenciales y las no democráticas, por lo que no permite evaluar el cambio que propone el programa dentro de una democracia parlamentaria.",
+   "despues": "El estudio de panel más amplio localizado (Guillén, 2018, con 137 países entre 1900 y 2010) halla que las monarquías amortiguan los efectos negativos de los conflictos y de la discrecionalidad del poder ejecutivo sobre los derechos de propiedad y el nivel de vida al menos tan bien como las repúblicas parlamentarias o las democráticas; compara países, no evalúa el paso de una monarquía a una república, y no mide la calidad democrática.",
+   "motivo": "Sin respaldo: el estudio sí compara las monarquías con las repúblicas parlamentarias (modelo C) y con las democráticas (modelo D), y concluye que son «at least as good» que ellas; lo que no hace es evaluar un cambio de forma de Estado ni medir calidad democrática (Social Forces 97(2), resultados de la tabla 3).",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "podemos-12",
+   "criterio": "largo_plazo",
+   "antes": "El estudio citado en «Evidencia» no aísla ese cambio dentro de una democracia parlamentaria.",
+   "despues": "El estudio citado en «Evidencia» compara países y no evalúa el paso de una forma de Estado a otra.",
+   "motivo": "Mismo motivo que en «evidencia».",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "podemos-12",
+   "criterio": "antecedentes",
+   "antes": "fue ratificada en bloque en el referéndum del 6-12-1978, sin pregunta separada sobre la forma de Estado.",
+   "despues": "fue ratificada en bloque en el referéndum del 6-12-1978, con una sola pregunta («¿Aprueba el proyecto de Constitución?») y sin pregunta separada sobre la forma de Estado.",
+   "motivo": "Sin respaldo en la fuente citada: el texto consolidado de la Constitución no da la fecha del referéndum ni su pregunta; se añade el Real Decreto 2560/1978 (BOE 6-11-1978), arts. 2 y 3.",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "podemos-12",
+   "criterio": "antecedentes",
+   "antes": "(sin esta fuente)",
+   "despues": "fuente añadida: Real Decreto 2560/1978, de 3 de noviembre, por el que se somete a referéndum de la Nación el proyecto de Constitución (BOE 6-11-1978), arts. 2 y 3 — https://www.boe.es/buscar/doc.php?id=BOE-A-1978-27525",
+   "motivo": "Fuente de la fecha (6-12-1978) y de la pregunta única del referéndum constitucional.",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "podemos-12",
+   "criterio": "financiacion",
+   "antes": "favorable: Una reforma constitucional no tiene coste presupuestario directo relevante, pero la del art. 168 obliga a disolver las Cortes, celebrar elecciones y un referéndum: como referencia, la organización de las elecciones generales de 2023 costó unos 220,8 M€, según el Ministerio del Interior. La asignación de la Casa del Rey en los presupuestos prorrogados es de 8.431.150 € anuales; el coste de una jefatura del Estado republicana dependería de un diseño que el programa no define, y no hemos localizado estimaciones.",
+   "despues": "mixta: El coste directo es estimable en su orden de magnitud, pero el programa no lo cuantifica ni dice cómo se pagaría: la reforma por el art. 168 obliga a disolver las Cortes, celebrar elecciones y un referéndum de ratificación, y como referencia la organización de las elecciones generales de 2023 costó unos 220,8 M€, según el Ministerio del Interior. La asignación de la Casa del Rey en los presupuestos prorrogados es de 8.431.150 € anuales; el coste de una jefatura del Estado republicana dependería de un diseño que el programa no define, y no hemos localizado estimaciones.",
+   "motivo": "Rúbrica: «favorable» por falta de coste se reserva a medidas «sin coste presupuestario directo relevante», y el propio texto documenta que el procedimiento del art. 168 que propone el programa obliga a disolver las Cortes, adelantar elecciones (unos 220,8 M€ en 2023) y celebrar un referéndum: coste estimable que el programa no cuantifica ni financia, «mixta». Diferencia de hecho con adelante_andalucia-11, psoe-10 y upn-01 («favorable»): son reformas por el art. 167, sin disolución ni referéndum obligatorio. erc-04 y eh_bildu-11 («no_verificable») no citaban una referencia de coste; la incoherencia queda señalada en dudas para la auditoría de coherencia.",
+   "fecha": "2026-11-18"
+  },
+  {
+   "propuesta": "(nota)",
+   "criterio": "nota",
+   "antes": "y financiación «favorable», como las reformas constitucionales de adelante_andalucia-11, psoe-10 y upn-01 (erc-04 y eh_bildu-11 valoran «no_verificable» el coste de un referéndum).",
+   "despues": "y financiación «mixta» (revisión independiente del 18-nov: el art. 168 obliga a disolver las Cortes, adelantar elecciones y celebrar un referéndum, coste estimable que el programa no cuantifica; las reformas por el art. 167 de adelante_andalucia-11, psoe-10 y upn-01 son «favorable», y erc-04 y eh_bildu-11 valoran «no_verificable» el coste de un referéndum).",
+   "motivo": "Coherencia con el cambio de valoración de podemos-12, financiación.",
+   "fecha": "2026-11-18"
+  }
+ ],
+ "dudas": [
+  "Selección (decisión editorial, no error): el capítulo 5 ocupa 76 de las 141 páginas, con tres bloques en el índice, y solo tiene una prioridad (el fondo de 1.000 M€, podemos-11, bloque 5.1). La introducción del programa (p. 4) dedica un párrafo a las listas de espera sanitarias y la medida 05 de la web pide «Sanidad y educación pública con recursos suficientes» y empieza por «Lucha contra el cambio climático», pero ni el programa ni la web ni la candidata destacan una medida concreta de los bloques 5.2 y 5.3 (la contratación de 40.000 sanitarios y 40.000 maestros, que la candidata sí destacó, no está en el programa y figura en el complemento). Si el editor prefiere un bloque por apartado del índice, las alternativas con más respaldo serían la financiación sanitaria de 2.900 € por habitante (medida 302, p. 89) o la reducción de las listas de espera (304, p. 90) en lugar de la expropiación del uso (podemos-03, tercera de vivienda) o de las horas extra (podemos-10, tercera del capítulo 4).",
+  "Selección: la jubilación ordinaria a los 63 años (medida 116, p. 41) y la banca pública (33, p. 17) figuran en el subtítulo de la crónica de Europa Press de la presentación del 17-nov, junto a la rebaja de alquileres y Repsol, pero la candidata solo las mencionó en estilo indirecto (la jubilación, el 6-nov) y el programa no las destaca más que a las elegidas; se mantiene la selección.",
+  "Coherencia entre partidos (para la próxima auditoría): bng-12 (aprobado) contiene la misma frase sobre Leeds (2003) con el periodo 1816-2000 y el hallazgo sobre el riesgo de arrastre, que es de Johnson y Leeds (2011); y el coste de un referéndum se valora «no_verificable» en erc-04 y eh_bildu-11, «favorable» en las reformas por el art. 167 (adelante_andalucia-11, psoe-10, upn-01) y ahora «mixta» en podemos-12 (art. 168, con disolución y referéndum obligatorios y una referencia de coste citada). Aquí solo se corrige Podemos.",
+  "Coherencia entre partidos: el texto sobre la STC 126/2016 («declaró inconstitucional el uso sistemático del decreto-ley») procede del compromiso podemos-07 revisado el 12-nov; conviene buscar si otras evaluaciones lo repiten.",
+  "podemos-10: la medida 119, leída literalmente, prohibiría también pagar las horas extra en dinero; el texto lo presenta como lectura literal y ambigua, que es lo que dice el programa (el título habla de «prohibir las horas extras»). Australia se apoya en un despacho de abogados (Clayton Utz), no en la ley o en el regulador; la fuente es fiable para ese dato, pero conviene sustituirla por una oficial si se localiza.",
+  "podemos-05: la cotización de Repsol es la del 12-11-2026 (29,90 €) de la evaluación revisada; no se ha actualizado al 18-nov, como en la revisión de los compromisos.",
+  "podemos-06: el calendario del Convenio (fin como pronto el 21-5-2028) supone que ni el Tercer Protocolo ni el acuerdo de 2023 fijaron una nueva vigencia (sus textos no lo hacen; El Debate, 22-5-2026, confirma la prórroga anual de mayo de 2026) y no contempla una terminación anticipada por acuerdo de las partes. Que la no prórroga requiera la autorización de las Cortes como una denuncia es interpretación razonable, no doctrina citada.",
+  "La complementaria podemos-c09 (40.000 sanitarios y 40.000 maestros) sigue con las cifras de gasto militar de la revisión del 14-nov; no cambia su valoración."
+ ]
+}

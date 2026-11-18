@@ -1,475 +1,11 @@
 {
  "partido": "podemos",
- "base": "compromisos",
+ "base": "complemento",
  "modelo": "Claude (Anthropic)",
- "fecha": "2026-11-12",
- "nota": "Podemos no ha publicado programa para el 29-N (comprobado a 12-nov). Se seleccionan 12 prioridades entre 13 compromisos concretos verificables; podemos-c10 se evalúa junto con podemos-c09. [Auditoría de coherencia, 14-11-2026] podemos-c01 («bajar el precio de los alquileres») pasa a «descartados»: solo nombra el resultado, sin instrumento (prompt 1b, mismo corte que la revisión de UPN del 14-11). Quedan 12 compromisos concretos y 11 prioridades (podemos-c10 se evalúa con podemos-c09).",
+ "fecha": "2026-11-18",
+ "prompt": "docs/prompts/1b_seleccion_compromisos.md (sección «Partidos con programa: complemento»)",
+ "nota": "Compromisos de dirigentes de Podemos que no figuran en el programa «Así de básico: paz, casa y trabajo» publicado el 18-nov en la web de campaña pazcasaytrabajo.es (data/sources/programas/podemos/programa-electoral-paz-casa-y-trabajo.txt, páginas del PDF de 141 págs.) y que el partido presenta como importantes; complementan las 12 prioridades del programa (data/programas/podemos/evaluacion.json). Hasta el 18-nov esta carpeta tenía base «compromisos» (11 prioridades evaluadas y revisadas el 12 y el 14-nov; el barrido del 18-nov por la mañana añadió una duodécima, las horas extra, podemos-c14, sin evaluación revisada). Al publicarse el programa, once de esas doce están en él, a veces con otras palabras o concretadas, y pasan a «descartados» (entre ellas el supermercado público, c12, y el permiso parental, c13, que figuran en el programa aunque no son prioridades de este). Solo la contratación de 40.000 profesionales sanitarios y 40.000 maestros (podemos-c09, con podemos-c10) falta en el programa y forma el complemento, con su evaluación revisada (antes podemos-09). Cada compromiso se buscó en las 431 medidas de data/programas/podemos/extraccion.json y en el texto completo del programa, por sus términos y por sinónimos, con el criterio de las revisiones de Vox, Compromís, PSOE, Frente Amplio y EH Bildu: si falta el rasgo que define el compromiso, va al complemento; si falta un elemento accesorio (instrumento, plazo, nombre de la norma, coste estimado por el partido) o el programa lo concreta, se descarta. Los compromisos y sus «veces» son los del barrido del 18-nov por la mañana (búsqueda hasta el 18-nov, ~12:00). Nota anterior (base «compromisos»): Podemos no ha publicado programa para el 29-N (comprobado a 12-nov). Se seleccionan 12 prioridades entre 13 compromisos concretos verificables; podemos-c10 se evalúa junto con podemos-c09. [Auditoría de coherencia, 14-11-2026] podemos-c01 («bajar el precio de los alquileres») pasa a «descartados»: solo nombra el resultado, sin instrumento (prompt 1b, mismo corte que la revisión de UPN del 14-11). Quedan 12 compromisos concretos y 11 prioridades (podemos-c10 se evalúa con podemos-c09). [Actualización 18-11-2026] Nueva búsqueda hasta el 18-11 (~12:00). Un compromiso nuevo, convertir en delito las horas extra no pagadas ni compensadas (podemos-c14, Montero, 17-nov), que entra como prioridad podemos-13: quedan 13 compromisos y 12 prioridades. Suman ocasiones podemos-c02, c04 y c11 (mitin de Sevilla, 15-nov) y podemos-c05 y c06 (mitin de UPC en Las Palmas, 14-nov, y Sevilla, 15-nov). La rebaja de los alquileres «un 40 por ciento» (Sevilla, 15-nov) da cifra a podemos-c01, pero sigue sin instrumento en lo que dijo la candidata y no se recupera (mismo criterio que la auditoría del 14-11). AVISO: Podemos publicó su programa en PDF en la web de campaña (pazcasaytrabajo.es/programa; fichero con fecha de creación 17-11 13:49 y servido desde el 18-11, sha256 086211fb272f0eeceddfa630796e58e5f4910e81efb0385a43b563a2e3f097fb). Según el prompt 1b, al publicarse el programa las 12 propuestas pasan a salir de él (prompt 1) y estos compromisos quedan como complemento solo si no figuran en él; ese cambio de base queda fuera de este barrido.",
  "compromisos": [
-  {
-   "id": "podemos-c02",
-   "area": "vivienda",
-   "resumen": "Prohibir la compra de vivienda con fines especulativos, de modo que solo se pueda comprar para vivir en ella.",
-   "cita": "Nadie que quiera especular debería poder comprar una vivienda en España.",
-   "quien": "Podemos (web oficial de la candidatura de Irene Montero)",
-   "formato": "documento oficial (web de campaña, cinco medidas «Así de básico»)",
-   "fecha": "2026-10-20",
-   "url": "https://pazcasaytrabajo.es/",
-   "medio": "Web oficial de campaña (pazcasaytrabajo.es)",
-   "fuente_local": "data/sources/compromisos/podemos/pazcasaytrabajo_web.txt",
-   "sha256": "c2bea0ce6b68051e1a207e2a782dba74de122f90b327d49be0fc3d527c75380a",
-   "cuantificado": false,
-   "veces": {
-    "n": 3,
-    "ocasiones": [
-     {
-      "fecha": "2026-10-20",
-      "quien": "Podemos (web oficial de la candidatura de Irene Montero)",
-      "formato": "documento oficial (web de campaña, cinco medidas «Así de básico»)",
-      "url": "https://pazcasaytrabajo.es/",
-      "medio": "Web oficial de campaña (pazcasaytrabajo.es)",
-      "fuente_local": "data/sources/compromisos/podemos/pazcasaytrabajo_web.txt",
-      "texto": "Medida 01 (titulada Las casas son para vivir).",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-11-06",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "desayuno informativo de Europa Press (Madrid)",
-      "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
-      "texto": "«prohibir la especulación para que solamente se pueda comprar pisos para vivir y no para hacer negocio» (condición de negociación)",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-10-27",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "entrevista televisiva (La Revuelta, TVE, con Gabriel Rufián)",
-      "url": "https://www.infobae.com/espana/agencias/2026/10/27/montero-propone-prohibir-la-especulacion-y-expropiar-a-fondos-buitre-para-hacer-frente-al-problema-de-vivienda/",
-      "medio": "Infobae (Europa Press)",
-      "fuente_local": "data/sources/compromisos/podemos/infobae_ep_2026-10-27_la_revuelta.txt",
-      "texto": "«Una casa no se puede comprar si es para hacer negocio»",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-09-30",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "entrevista (elDiario.es)",
-      "url": "https://www.eldiario.es/politica/irene-montero-voto-decretos-sera-sindicato-inquilinas-gente-calle_1_13551027.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-10-01_entrevista_montero.txt",
-      "texto": "«la prohibición de la compra para especular»",
-      "nota": "Anterior a la convocatoria; contexto.",
-      "cuenta": false
-     }
-    ],
-    "nota": "Tres ocasiones: web de campaña (20-oct), La Revuelta (27-oct) y desayuno de Europa Press (6-nov). La entrevista del 30-sep es anterior a la convocatoria: solo contexto."
-   },
-   "nota": "Fecha de la web: lanzada hacia el 20-oct según Diario Red (21-oct); texto descargado el 12-nov. No define qué es «especular» ni quién quedaría excluido de comprar (personas jurídicas, segundas viviendas, inversores)."
-  },
-  {
-   "id": "podemos-c03",
-   "area": "otros",
-   "resumen": "Topar (fijar un precio máximo a) los precios de los alimentos, tercera condición para negociar la investidura o entrar en un Gobierno.",
-   "cita": "sus prioridades en una negociación con el PSOE serían “bajar el precio de los alquileres, prohibir la especulación para que solamente se pueda comprar pisos para vivir y no para hacer negocio y topar los precios de los alimentos”",
-   "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-   "formato": "desayuno informativo de Europa Press (Madrid)",
-   "fecha": "2026-11-06",
-   "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
-   "medio": "elDiario.es",
-   "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
-   "sha256": "a606ac38aac86fe3fd9e309898f17eb3fe976b268643fc828cfbd5f5497ae6d1",
-   "cuantificado": false,
-   "veces": {
-    "n": 2,
-    "ocasiones": [
-     {
-      "fecha": "2026-11-06",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "desayuno informativo de Europa Press (Madrid)",
-      "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
-      "texto": "«topar los precios de los alimentos»",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-11-06",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "desayuno informativo de Europa Press (Madrid)",
-      "url": "https://www.publico.es/politica/podemos-exigira-bajar-alquileres-prohibir-especulacion-topar-precio-alimentos-formar-parte-futuro-gobierno.html",
-      "medio": "Público",
-      "fuente_local": "data/sources/compromisos/podemos/publico_2026-11-06_desayuno_ep.txt",
-      "texto": "Mismo acto (Público): «topar el precio de los alimentos» entre sus tres imprescindibles (crónica).",
-      "cuenta": false
-     },
-     {
-      "fecha": "2026-10-20",
-      "quien": "Podemos (web oficial de la candidatura de Irene Montero)",
-      "formato": "documento oficial (web de campaña, cinco medidas «Así de básico»)",
-      "url": "https://pazcasaytrabajo.es/",
-      "medio": "Web oficial de campaña (pazcasaytrabajo.es)",
-      "fuente_local": "data/sources/compromisos/podemos/pazcasaytrabajo_web.txt",
-      "texto": "Medida 02 (titulada Los precios tienen que bajar): «Hay que bajar el coste de la vida» (sin mencionar alimentos ni topes).",
-      "cuenta": false
-     },
-     {
-      "fecha": "2026-09-12",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "acto de presentación de su candidatura a las generales (Madrid)",
-      "url": "https://es.ara.cat/politica/irene-montero-presenta-candidatura-generales-gente-buena_1_5848007.html",
-      "medio": "Ara",
-      "fuente_local": "data/sources/compromisos/podemos/ara_2026-09-12_presentacion_candidatura.txt",
-      "texto": "«Hay que limitar los precios de todo lo que necesitamos para vivir»",
-      "nota": "Anterior a la convocatoria, pero en la presentación de su candidatura a «las próximas elecciones generales».",
-      "cuenta": true
-     }
-    ],
-    "nota": "Dos ocasiones: presentación de la candidatura (12-sep, «limitar los precios de todo lo que necesitamos para vivir») y desayuno de Europa Press (6-nov; elDiario.es y Público cubren el mismo acto). La medida 02 de la web no menciona alimentos ni topes: contexto."
-   },
-   "nota": "No dice qué alimentos, con qué instrumento (precio máximo, margen máximo) ni durante cuánto tiempo."
-  },
-  {
-   "id": "podemos-c04",
-   "area": "vivienda",
-   "resumen": "Expropiar el uso de las viviendas que acumulan los fondos de inversión («fondos buitre») para destinarlas a alquiler social, financiándolo con el aumento del gasto militar.",
-   "cita": "“Podemos expropiar el uso de las viviendas que, por miles, acumulan los fondos buitre”",
-   "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-   "formato": "desayuno informativo de Europa Press (Madrid)",
-   "fecha": "2026-11-06",
-   "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
-   "medio": "elDiario.es",
-   "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
-   "sha256": "a606ac38aac86fe3fd9e309898f17eb3fe976b268643fc828cfbd5f5497ae6d1",
-   "cuantificado": false,
-   "veces": {
-    "n": 4,
-    "ocasiones": [
-     {
-      "fecha": "2026-11-06",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "desayuno informativo de Europa Press (Madrid)",
-      "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
-      "texto": "«Podemos expropiar el uso de las viviendas que, por miles, acumulan los fondos buitre»",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-11-05",
-      "quien": "Ione Belarra, secretaria general de Podemos",
-      "formato": "declaraciones a los medios (Málaga)",
-      "url": "https://www.infobae.com/espana/agencias/2026/11/05/belarra-pide-elegir-entre-involucion-dejar-las-cosas-como-estan-o-el-cambio-con-podemos/",
-      "medio": "Infobae (EFE)",
-      "fuente_local": "data/sources/compromisos/podemos/infobae_efe_2026-11-05_belarra_malaga.txt",
-      "texto": "«Hay que expropiar las de los fondos buitre y de los grandes propietarios para que estén al servicio del parque público en alquiler»",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-10-24",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "mitin (Barcelona, Nou Barris, con Gabriel Rufián)",
-      "url": "https://www.diaridetarragona.com/espana/273915/rufian-montero-llaman-someter-psoe-izquierda-frente.html",
-      "medio": "Diari de Tarragona (EFE)",
-      "fuente_local": "data/sources/compromisos/podemos/diaridetarragona_efe_2026-10-24_mitin_barcelona.txt",
-      "texto": "expropiar pisos a los fondos buitre «por miles, porque las casas son para vivir y no para hacer negocio»",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-10-06",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "entrevista (Hora 25, Cadena SER, recogida por The Objective)",
-      "url": "https://theobjective.com/gente/2026-10-06/irene-montero-sobre-la-casa-de-mas-de-medio-millon-de-euros-y-250-metros-en-la-que-vive-sin-tener-alquiler-no-me-arrepiento-de-haber-comprado-el-chalet-era-bueno-para-mi-familia/",
-      "medio": "The Objective",
-      "fuente_local": "data/sources/compromisos/podemos/theobjective_2026-10-06_hora25.txt",
-      "texto": "«Lo que sería un error es no defender [...] que se expropie a los fondos buitres que acumulan miles de viviendas»",
-      "nota": "La fecha exacta de la entrevista no consta; la pieza es del 6-oct.",
-      "cuenta": true
-     }
-    ],
-    "nota": "Cuatro ocasiones: Hora 25 (pieza del 6-oct), mitin de Barcelona (24-oct), Belarra en Málaga (5-nov) y desayuno de Europa Press (6-nov)."
-   },
-   "nota": "Montero habla de expropiar «el uso»; Belarra, de expropiar las viviendas de fondos «y de los grandes propietarios». No se define umbral de viviendas, justiprecio ni número de viviendas."
-  },
-  {
-   "id": "podemos-c05",
-   "area": "empleo",
-   "resumen": "Fijar por ley un salario mínimo interprofesional de 1.800 euros.",
-   "cita": "1.800€ de salario mínimo por Ley.",
-   "quien": "Podemos (web oficial de la candidatura de Irene Montero)",
-   "formato": "documento oficial (web de campaña, cinco medidas «Así de básico»)",
-   "fecha": "2026-10-20",
-   "url": "https://pazcasaytrabajo.es/",
-   "medio": "Web oficial de campaña (pazcasaytrabajo.es)",
-   "fuente_local": "data/sources/compromisos/podemos/pazcasaytrabajo_web.txt",
-   "sha256": "c2bea0ce6b68051e1a207e2a782dba74de122f90b327d49be0fc3d527c75380a",
-   "cuantificado": true,
-   "veces": {
-    "n": 6,
-    "ocasiones": [
-     {
-      "fecha": "2026-10-20",
-      "quien": "Podemos (web oficial de la candidatura de Irene Montero)",
-      "formato": "documento oficial (web de campaña, cinco medidas «Así de básico»)",
-      "url": "https://pazcasaytrabajo.es/",
-      "medio": "Web oficial de campaña (pazcasaytrabajo.es)",
-      "fuente_local": "data/sources/compromisos/podemos/pazcasaytrabajo_web.txt",
-      "texto": "Medida 04 (titulada Trabajar menos para vivir mejor).",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-09-12",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "acto de presentación de su candidatura a las generales (Madrid)",
-      "url": "https://es.ara.cat/politica/irene-montero-presenta-candidatura-generales-gente-buena_1_5848007.html",
-      "medio": "Ara",
-      "fuente_local": "data/sources/compromisos/podemos/ara_2026-09-12_presentacion_candidatura.txt",
-      "texto": "Entre las propuestas, «los 1.800 euros mensuales de salario mínimo» (crónica).",
-      "nota": "Anterior a la convocatoria; presentación de la candidatura a las próximas generales.",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-10-24",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "mitin (Barcelona, Nou Barris, con Gabriel Rufián)",
-      "url": "https://www.diaridetarragona.com/espana/273915/rufian-montero-llaman-someter-psoe-izquierda-frente.html",
-      "medio": "Diari de Tarragona (EFE)",
-      "fuente_local": "data/sources/compromisos/podemos/diaridetarragona_efe_2026-10-24_mitin_barcelona.txt",
-      "texto": "Subir el SMI a 1.800 euros (crónica de EFE).",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-10-27",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "entrevista televisiva (La Revuelta, TVE)",
-      "url": "https://www.infobae.com/espana/agencias/2026/10/27/montero-propone-prohibir-la-especulacion-y-expropiar-a-fondos-buitre-para-hacer-frente-al-problema-de-vivienda/",
-      "medio": "Infobae (Europa Press)",
-      "fuente_local": "data/sources/compromisos/podemos/infobae_ep_2026-10-27_la_revuelta.txt",
-      "texto": "Subida del SMI a 1.800 euros (crónica de Europa Press).",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-11-06",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "desayuno informativo de Europa Press (Madrid)",
-      "url": "https://www.infobae.com/espana/agencias/2026/11/06/irene-montero-plantea-bajar-la-edad-de-jubilacion-a-63-anos-y-subir-las-pensiones-minimas-y-las-no-contributivas/",
-      "medio": "Infobae (Europa Press)",
-      "fuente_local": "data/sources/compromisos/podemos/infobae_ep_2026-11-06_jubilacion.txt",
-      "texto": "SMI de 1.800 euros mensuales (crónica de Europa Press).",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-09-30",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "entrevista (elDiario.es)",
-      "url": "https://www.eldiario.es/politica/irene-montero-voto-decretos-sera-sindicato-inquilinas-gente-calle_1_13551027.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-10-01_entrevista_montero.txt",
-      "texto": "«Queremos trabajar menos horas, 30 a la semana por 1.800 euros de salario mínimo»",
-      "nota": "Anterior a la convocatoria; la frase describe la propuesta de su candidatura «para las siguientes elecciones».",
-      "cuenta": true
-     }
-    ],
-    "nota": "Seis ocasiones distintas: presentación de la candidatura (12-sep), entrevista en elDiario.es (30-sep, referida a la propuesta de su candidatura), web (20-oct), mitin de Barcelona (24-oct), La Revuelta (27-oct) y desayuno de Europa Press (6-nov)."
-   },
-   "nota": "No da plazo ni dice si la cifra es mensual en 12 o 14 pagas (la crónica del 6-nov dice «mensuales»)."
-  },
-  {
-   "id": "podemos-c06",
-   "area": "empleo",
-   "resumen": "Reducir por ley la jornada laboral máxima a 30 horas semanales.",
-   "cita": "Jornada laboral de 30 horas semanales. Es lo mínimo.",
-   "quien": "Podemos (web oficial de la candidatura de Irene Montero)",
-   "formato": "documento oficial (web de campaña, cinco medidas «Así de básico»)",
-   "fecha": "2026-10-20",
-   "url": "https://pazcasaytrabajo.es/",
-   "medio": "Web oficial de campaña (pazcasaytrabajo.es)",
-   "fuente_local": "data/sources/compromisos/podemos/pazcasaytrabajo_web.txt",
-   "sha256": "c2bea0ce6b68051e1a207e2a782dba74de122f90b327d49be0fc3d527c75380a",
-   "cuantificado": true,
-   "veces": {
-    "n": 5,
-    "ocasiones": [
-     {
-      "fecha": "2026-10-20",
-      "quien": "Podemos (web oficial de la candidatura de Irene Montero)",
-      "formato": "documento oficial (web de campaña, cinco medidas «Así de básico»)",
-      "url": "https://pazcasaytrabajo.es/",
-      "medio": "Web oficial de campaña (pazcasaytrabajo.es)",
-      "fuente_local": "data/sources/compromisos/podemos/pazcasaytrabajo_web.txt",
-      "texto": "Medida 04 (titulada Trabajar menos para vivir mejor).",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-09-12",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "acto de presentación de su candidatura a las generales (Madrid)",
-      "url": "https://es.ara.cat/politica/irene-montero-presenta-candidatura-generales-gente-buena_1_5848007.html",
-      "medio": "Ara",
-      "fuente_local": "data/sources/compromisos/podemos/ara_2026-09-12_presentacion_candidatura.txt",
-      "texto": "«las treinta horas de trabajo a la semana –ni 40 ni 37,5–» (crónica).",
-      "nota": "Anterior a la convocatoria.",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-10-24",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "mitin (Barcelona, Nou Barris, con Gabriel Rufián)",
-      "url": "https://www.diaridetarragona.com/espana/273915/rufian-montero-llaman-someter-psoe-izquierda-frente.html",
-      "medio": "Diari de Tarragona (EFE)",
-      "fuente_local": "data/sources/compromisos/podemos/diaridetarragona_efe_2026-10-24_mitin_barcelona.txt",
-      "texto": "Jornada de 30 horas para «poder disfrutar de la vida, porque vida solo hay una» (crónica de EFE con cita).",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-11-06",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "desayuno informativo de Europa Press (Madrid)",
-      "url": "https://www.infobae.com/espana/agencias/2026/11/06/irene-montero-plantea-bajar-la-edad-de-jubilacion-a-63-anos-y-subir-las-pensiones-minimas-y-las-no-contributivas/",
-      "medio": "Infobae (Europa Press)",
-      "fuente_local": "data/sources/compromisos/podemos/infobae_ep_2026-11-06_jubilacion.txt",
-      "texto": "Reducir la jornada a 30 horas semanales (crónica de Europa Press).",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-09-30",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "entrevista (elDiario.es)",
-      "url": "https://www.eldiario.es/politica/irene-montero-voto-decretos-sera-sindicato-inquilinas-gente-calle_1_13551027.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-10-01_entrevista_montero.txt",
-      "texto": "«Queremos trabajar menos horas, 30 a la semana por 1.800 euros de salario mínimo»",
-      "nota": "Anterior a la convocatoria.",
-      "cuenta": true
-     }
-    ],
-    "nota": "Cinco ocasiones distintas: 12-sep, 30-sep, web (20-oct), 24-oct y 6-nov."
-   },
-   "nota": "No dice si se mantiene el salario, ni plazo ni transición. Es la jornada máxima legal semanal (hoy 40 horas de promedio anual, art. 34 ET)."
-  },
-  {
-   "id": "podemos-c07",
-   "area": "exterior y defensa",
-   "resumen": "No aumentar más el gasto militar («ni un euro más a armas») y destinar a servicios públicos y medidas sociales los unos 24.000 millones en que, según Montero, ha crecido desde 2023.",
-   "cita": "Ni un euro más a armas. El dinero público para cuidar a la gente. En servicios públicos.",
-   "quien": "Podemos (web oficial de la candidatura de Irene Montero)",
-   "formato": "documento oficial (web de campaña, cinco medidas «Así de básico»)",
-   "fecha": "2026-10-20",
-   "url": "https://pazcasaytrabajo.es/",
-   "medio": "Web oficial de campaña (pazcasaytrabajo.es)",
-   "fuente_local": "data/sources/compromisos/podemos/pazcasaytrabajo_web.txt",
-   "sha256": "c2bea0ce6b68051e1a207e2a782dba74de122f90b327d49be0fc3d527c75380a",
-   "cuantificado": true,
-   "veces": {
-    "n": 3,
-    "ocasiones": [
-     {
-      "fecha": "2026-10-20",
-      "quien": "Podemos (web oficial de la candidatura de Irene Montero)",
-      "formato": "documento oficial (web de campaña, cinco medidas «Así de básico»)",
-      "url": "https://pazcasaytrabajo.es/",
-      "medio": "Web oficial de campaña (pazcasaytrabajo.es)",
-      "fuente_local": "data/sources/compromisos/podemos/pazcasaytrabajo_web.txt",
-      "texto": "Medida 03 (titulada Paz. Parar las guerras); la medida 05 añade: «¿De dónde sale el dinero? El que se están gastando en armas.»",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-11-06",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "desayuno informativo de Europa Press (Madrid)",
-      "url": "https://www.infobae.com/espana/agencias/2026/11/06/irene-montero-plantea-dedicar-gasto-militar-a-nacionalizar-repsol-contratar-sanitarios-y-crear-un-super-publico/",
-      "medio": "Infobae (Europa Press)",
-      "fuente_local": "data/sources/compromisos/podemos/infobae_ep_2026-11-06_gasto_militar.txt",
-      "texto": "«Se puede hacer simplemente si decidimos que el dinero que este Gobierno de PSOE y Sumar, ahora Frente Amplio, está gastando en armas se gaste en cuidar la vida de la gente»",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-11-06",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "desayuno informativo de Europa Press (Madrid)",
-      "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
-      "texto": "El presupuesto de 2023 «tenía un gasto militar de 12.000 millones de euros, y ahora el gasto ha subido a 36.000 millones»",
-      "cuenta": false
-     },
-     {
-      "fecha": "2026-09-30",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "entrevista (elDiario.es)",
-      "url": "https://www.eldiario.es/politica/irene-montero-voto-decretos-sera-sindicato-inquilinas-gente-calle_1_13551027.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-10-01_entrevista_montero.txt",
-      "texto": "«no gastar ni un euro más en armas y gastarlo en escuelas y hospitales»",
-      "nota": "Anterior a la convocatoria.",
-      "cuenta": true
-     }
-    ],
-    "nota": "Tres ocasiones: entrevista en elDiario.es (30-sep), web (20-oct) y desayuno de Europa Press (6-nov; Infobae/Europa Press y elDiario.es cubren el mismo acto)."
-   },
-   "nota": "Cuantificado: Montero cifra en 24.000 M€ el aumento (12.000 M€ en 2023 frente a 36.000 M€ ahora, según elDiario.es; «el entorno de los 35.000 millones», según Público). No dice si se congelaría el gasto actual o se recortaría hasta el nivel de 2023."
-  },
-  {
-   "id": "podemos-c08",
-   "area": "energía y clima",
-   "resumen": "Nacionalizar Repsol adquiriendo una participación de control (el 51 %, según Público), con un coste que Montero cifra en 9.100 millones de euros.",
-   "cita": "“recuperar para lo público una energética como Repsol”, una nacionalización cuyo coste Montero cifró en 9.100 millones de euros",
-   "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-   "formato": "desayuno informativo de Europa Press (Madrid)",
-   "fecha": "2026-11-06",
-   "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
-   "medio": "elDiario.es",
-   "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
-   "sha256": "a606ac38aac86fe3fd9e309898f17eb3fe976b268643fc828cfbd5f5497ae6d1",
-   "cuantificado": true,
-   "veces": {
-    "n": 1,
-    "ocasiones": [
-     {
-      "fecha": "2026-11-06",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "desayuno informativo de Europa Press (Madrid)",
-      "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
-      "texto": "«recuperar para lo público una energética como Repsol», con coste de 9.100 M€ (cifra en estilo indirecto)",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-11-06",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "desayuno informativo de Europa Press (Madrid)",
-      "url": "https://www.publico.es/politica/podemos-exigira-bajar-alquileres-prohibir-especulacion-topar-precio-alimentos-formar-parte-futuro-gobierno.html",
-      "medio": "Público",
-      "fuente_local": "data/sources/compromisos/podemos/publico_2026-11-06_desayuno_ep.txt",
-      "texto": "Nacionalizar Repsol «adquiriendo el 51% de la compañía», 9.100 M€ según sus estimaciones (crónica).",
-      "cuenta": false
-     },
-     {
-      "fecha": "2026-11-06",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "desayuno informativo de Europa Press (Madrid)",
-      "url": "https://www.infobae.com/espana/agencias/2026/11/06/irene-montero-plantea-dedicar-gasto-militar-a-nacionalizar-repsol-contratar-sanitarios-y-crear-un-super-publico/",
-      "medio": "Infobae (Europa Press)",
-      "fuente_local": "data/sources/compromisos/podemos/infobae_ep_2026-11-06_gasto_militar.txt",
-      "texto": "Nacionalización de Repsol, «cuyo coste ha cifrado en 9.100 millones» (crónica).",
-      "cuenta": false
-     },
-     {
-      "fecha": "2026-10-27",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "entrevista televisiva (La Revuelta, TVE)",
-      "url": "https://www.infobae.com/espana/agencias/2026/10/27/montero-propone-prohibir-la-especulacion-y-expropiar-a-fondos-buitre-para-hacer-frente-al-problema-de-vivienda/",
-      "medio": "Infobae (Europa Press)",
-      "fuente_local": "data/sources/compromisos/podemos/infobae_ep_2026-10-27_la_revuelta.txt",
-      "texto": "«Si algo sabe todo el mundo que nos está viendo es que el PSOE jamás se va a atrever a expropiar o a nacionalizar» (sin nombrar Repsol)",
-      "cuenta": false
-     }
-    ],
-    "nota": "Una ocasión: desayuno de Europa Press (6-nov), cubierto por elDiario.es, Público y Europa Press. En La Revuelta (27-oct) habló de nacionalizar sin nombrar Repsol: contexto."
-   },
-   "nota": "La parte literal de Montero es «recuperar para lo público una energética como Repsol». El coste (9.100 M€) lo recogen en estilo indirecto tres medios del mismo acto (elDiario.es, Público y Europa Press); el 51 % solo figura, en estilo indirecto, en la crónica de Público."
-  },
   {
    "id": "podemos-c09",
    "area": "sanidad",
@@ -551,202 +87,130 @@
     "nota": "Dos ocasiones: web (20-oct, sin cifra) y desayuno de Europa Press (6-nov, con la cifra de 40.000)."
    },
    "nota": "Se evalúa junto con podemos-c09 (mismo anuncio, misma financiación)."
-  },
-  {
-   "id": "podemos-c11",
-   "area": "igualdad",
-   "resumen": "Elevar a 1.000 millones de euros el presupuesto de lucha contra las violencias machistas.",
-   "cita": "“todavía queda dinero para llevar a 1.000 millones el presupuesto de lucha contra las violencias machistas”",
-   "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-   "formato": "desayuno informativo de Europa Press (Madrid)",
-   "fecha": "2026-11-06",
-   "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
-   "medio": "elDiario.es",
-   "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
-   "sha256": "a606ac38aac86fe3fd9e309898f17eb3fe976b268643fc828cfbd5f5497ae6d1",
-   "cuantificado": true,
-   "veces": {
-    "n": 1,
-    "ocasiones": [
-     {
-      "fecha": "2026-11-06",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "desayuno informativo de Europa Press (Madrid)",
-      "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
-      "texto": "«llevar a 1.000 millones el presupuesto de lucha contra las violencias machistas»",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-10-20",
-      "quien": "Podemos (web oficial de la candidatura de Irene Montero)",
-      "formato": "documento oficial (web de campaña, cinco medidas «Así de básico»)",
-      "url": "https://pazcasaytrabajo.es/",
-      "medio": "Web oficial de campaña (pazcasaytrabajo.es)",
-      "fuente_local": "data/sources/compromisos/podemos/pazcasaytrabajo_web.txt",
-      "texto": "Medida 05: «Vidas libres de violencias machistas.»",
-      "cuenta": false
-     }
-    ],
-    "nota": "Una ocasión: desayuno de Europa Press (6-nov). La web (20-oct) solo dice «Vidas libres de violencias machistas», sin medida presupuestaria: contexto."
-   },
-   "nota": "No dice qué partidas incluye el «presupuesto de lucha contra las violencias machistas» ni si es anual."
-  },
-  {
-   "id": "podemos-c12",
-   "area": "otros",
-   "resumen": "Poner en marcha un supermercado público.",
-   "cita": "“poner en marcha un supermercado público y remunerar el permiso de ocho semanas para cuidado de hijos”",
-   "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-   "formato": "desayuno informativo de Europa Press (Madrid)",
-   "fecha": "2026-11-06",
-   "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
-   "medio": "elDiario.es",
-   "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
-   "sha256": "a606ac38aac86fe3fd9e309898f17eb3fe976b268643fc828cfbd5f5497ae6d1",
-   "cuantificado": false,
-   "veces": {
-    "n": 1,
-    "ocasiones": [
-     {
-      "fecha": "2026-11-06",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "desayuno informativo de Europa Press (Madrid)",
-      "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
-      "texto": "«poner en marcha un supermercado público»",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-11-12",
-      "quien": "Podemos (según Europa Press)",
-      "formato": "crónica de campaña",
-      "url": "https://www.infobae.com/espana/agencias/2026/11/12/podemos-encara-una-campana-vital-con-el-tiron-de-irene-montero-y-el-tandem-con-rufian-como-principal-apuesta/",
-      "medio": "Infobae (Europa Press)",
-      "fuente_local": "data/sources/compromisos/podemos/infobae_ep_2026-11-12_campana.txt",
-      "texto": "Entre sus medidas, «crear un supermercado público» (estilo indirecto, sin atribución individual).",
-      "cuenta": false
-     }
-    ],
-    "nota": "Una ocasión: desayuno de Europa Press (6-nov). La crónica de Europa Press del 12-nov resume las medidas sin atribuir la frase a ningún líder ni a un acto: contexto."
-   },
-   "nota": "No dice si sería una empresa estatal, una red o un establecimiento, ni su tamaño o coste."
-  },
-  {
-   "id": "podemos-c13",
-   "area": "empleo",
-   "resumen": "Remunerar el permiso parental de ocho semanas para el cuidado de hijos.",
-   "cita": "“poner en marcha un supermercado público y remunerar el permiso de ocho semanas para cuidado de hijos”",
-   "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-   "formato": "desayuno informativo de Europa Press (Madrid)",
-   "fecha": "2026-11-06",
-   "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
-   "medio": "elDiario.es",
-   "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
-   "sha256": "a606ac38aac86fe3fd9e309898f17eb3fe976b268643fc828cfbd5f5497ae6d1",
-   "cuantificado": false,
-   "veces": {
-    "n": 1,
-    "ocasiones": [
-     {
-      "fecha": "2026-11-06",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "desayuno informativo de Europa Press (Madrid)",
-      "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
-      "medio": "elDiario.es",
-      "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
-      "texto": "«remunerar el permiso de ocho semanas para cuidado de hijos»",
-      "cuenta": true
-     },
-     {
-      "fecha": "2026-11-06",
-      "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
-      "formato": "desayuno informativo de Europa Press (Madrid)",
-      "url": "https://www.infobae.com/espana/agencias/2026/11/06/irene-montero-plantea-dedicar-gasto-militar-a-nacionalizar-repsol-contratar-sanitarios-y-crear-un-super-publico/",
-      "medio": "Infobae (Europa Press)",
-      "fuente_local": "data/sources/compromisos/podemos/infobae_ep_2026-11-06_gasto_militar.txt",
-      "texto": "Remunerar el permiso de ocho semanas para el cuidado de hijos e hijas (crónica).",
-      "cuenta": false
-     }
-    ],
-    "nota": "Una ocasión: desayuno de Europa Press (6-nov), cubierto por elDiario.es y Europa Press."
-   },
-   "nota": "No dice el porcentaje del salario que se pagaría ni quién lo pagaría (Seguridad Social o empresa)."
   }
  ],
  "prioridades": [
   {
-   "id": "podemos-02",
-   "compromiso": "podemos-c02",
-   "compromisos_relacionados": [],
-   "justificacion": "Segunda condición de negociación del 6-nov y núcleo de la medida 01 de la web oficial («Nadie que quiera especular debería poder comprar una vivienda en España»). Repetida en La Revuelta (27-oct)."
-  },
-  {
-   "id": "podemos-03",
-   "compromiso": "podemos-c03",
-   "compromisos_relacionados": [],
-   "justificacion": "Tercera condición de negociación del 6-nov (titulares de elDiario.es y Público); la web oficial dedica la medida 02 a que «los precios tienen que bajar»."
-  },
-  {
-   "id": "podemos-04",
-   "compromiso": "podemos-c04",
-   "compromisos_relacionados": [],
-   "justificacion": "La anuncia la candidata en el desayuno del 6-nov, la repite en el mitin de Barcelona (24-oct) y la defiende la secretaria general, Ione Belarra (Málaga, 5-nov). Europa Press la cita entre los ejes de campaña del partido (12-nov)."
-  },
-  {
-   "id": "podemos-05",
-   "compromiso": "podemos-c05",
-   "compromisos_relacionados": [],
-   "justificacion": "Medida 04 de la web oficial, con cifra («1.800€ de salario mínimo por Ley»); presente desde la presentación de la candidatura (12-sep) y repetida en el mitin de Barcelona, La Revuelta y el desayuno del 6-nov."
-  },
-  {
-   "id": "podemos-06",
-   "compromiso": "podemos-c06",
-   "compromisos_relacionados": [],
-   "justificacion": "Medida 04 de la web oficial («Jornada laboral de 30 horas semanales»); repetida en la presentación de la candidatura, el mitin de Barcelona y el desayuno del 6-nov."
-  },
-  {
-   "id": "podemos-07",
-   "compromiso": "podemos-c07",
-   "compromisos_relacionados": [],
-   "justificacion": "Medida 03 de la web oficial («Ni un euro más a armas») y la «paz» del lema «Paz, casa y trabajo»; en el desayuno del 6-nov Montero la presenta como la fuente de financiación de sus demás medidas. La web la repite como respuesta a «¿De dónde sale el dinero?»."
-  },
-  {
-   "id": "podemos-08",
-   "compromiso": "podemos-c08",
-   "compromisos_relacionados": [],
-   "justificacion": "Primera medida que Montero enumeró como destino del aumento del gasto militar el 6-nov, con coste cifrado; da título a la crónica de Europa Press («nacionalizar Repsol») y Europa Press la cita entre los ejes de campaña (12-nov)."
-  },
-  {
-   "id": "podemos-09",
-   "compromiso": "podemos-c09",
+   "id": "podemos-c09",
    "compromisos_relacionados": [
     "podemos-c10"
    ],
-   "justificacion": "Anunciada por la candidata el 6-nov con cifra (40.000 sanitarios y 40.000 maestros); la web oficial (medida 05) pide «Más profesionales y mejor pagados» en sanidad y educación. Se evalúa con podemos-c10 (mismo anuncio y financiación)."
-  },
-  {
-   "id": "podemos-10",
-   "compromiso": "podemos-c11",
-   "compromisos_relacionados": [],
-   "justificacion": "Anunciada el 6-nov con cifra (1.000 M€); la web oficial incluye «Vidas libres de violencias machistas» en la medida 05."
-  },
-  {
-   "id": "podemos-11",
-   "compromiso": "podemos-c12",
-   "compromisos_relacionados": [],
-   "justificacion": "Anunciada el 6-nov y recogida en el titular de Europa Press («crear un 'súper' público»); Europa Press la cita entre los ejes de campaña (12-nov)."
-  },
-  {
-   "id": "podemos-12",
-   "compromiso": "podemos-c13",
-   "compromisos_relacionados": [],
-   "justificacion": "Anunciada por la candidata el 6-nov junto con las demás medidas financiadas con el gasto militar. Como la nacionalización de Repsol, el presupuesto contra las violencias machistas y el supermercado público, solo consta en ese acto."
+   "justificacion": "Era la prioridad podemos-09 de la base «compromisos» (evaluada y revisada el 12 y el 14-nov): la candidata la anunció el 6-nov con cifra («contratar 40.000 profesionales sanitarios y 40.000 maestros», elDiario.es) y la web oficial (medida 05) pide en sanidad y educación «Más profesionales y mejor pagados». El programa no la recoge en esos términos: no fija ninguna cifra de contrataciones. Propone ratios mínimas de profesionales en una nueva ley de sanidad («las ratios mínimas de profesionales en Atención Primaria, salud mental, atención hospitalaria, urgencias y especialidades», medida 303, p. 89) y en salud mental (medida 306, p. 91), «procesos de estabilización y creación de empleo público estable» sanitario (medida 308, p. 92) y que «aumentaremos las plantillas» docentes para compensar la reducción de la jornada lectiva (medida 283, p. 81). Falta el rasgo que define el compromiso (una contratación cuantificada de 40.000 sanitarios y 40.000 maestros), mismo criterio que compromis-c02 (el programa de Compromís regula los alquileres pero no dice que deban bajar). Se evalúa con podemos-c10 (mismo anuncio y misma financiación)."
   }
  ],
+ "no_priorizados": [],
+ "nota_prioridades": "Una prioridad: de las doce prioridades de la base «compromisos», solo la contratación de 40.000 sanitarios y 40.000 maestros (c09, que se evalúa con c10) no está en el programa; las otras once (c02 a c08 y c11 a c14) figuran en él, a veces concretadas, y pasan a «descartados». Caso dudoso: c03 («topar los precios de los alimentos»), que el programa concreta como tope de márgenes de los productos de primera necesidad; si se considerara que la candidata pedía un precio máximo, volvería al complemento con su evaluación revisada (antes podemos-03).",
  "descartados": [
+  {
+   "id": "podemos-c02",
+   "tema": "Prohibir la compra de vivienda con fines especulativos, de modo que solo se pueda comprar para vivir en ella.",
+   "quien": "Podemos (web oficial de la candidatura de Irene Montero)",
+   "fecha": "2026-10-20",
+   "url": "https://pazcasaytrabajo.es/",
+   "fuente_local": "data/sources/compromisos/podemos/pazcasaytrabajo_web.txt",
+   "sha256": "c2bea0ce6b68051e1a207e2a782dba74de122f90b327d49be0fc3d527c75380a",
+   "motivo": "Ya está en el programa: «Prohibiremos la adquisición y acumulación de viviendas que no estén destinadas a residencia habitual» (po-p003, medida 3, p. 8), que concreta el uso permitido (residencia habitual propia o de un familiar hasta el segundo grado, o segunda residencia de uso propio) y un plazo de cuatro años. Se evalúa en la prioridad podemos-02 del programa."
+  },
+  {
+   "id": "podemos-c03",
+   "tema": "Topar (fijar un precio máximo a) los precios de los alimentos, tercera condición para negociar la investidura o entrar en un Gobierno.",
+   "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
+   "fecha": "2026-11-06",
+   "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
+   "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
+   "sha256": "a606ac38aac86fe3fd9e309898f17eb3fe976b268643fc828cfbd5f5497ae6d1",
+   "motivo": "Está en el programa, concretado: «Estableceremos límites a los márgenes comerciales de las grandes cadenas de distribución en los productos de primera necesidad» (po-p035, medida 35, p. 18). La cita de la candidata («topar los precios de los alimentos») no decía con qué instrumento (la nota del compromiso ya señalaba que no aclaraba si sería un precio máximo o un margen máximo); el programa elige el tope de márgenes de los productos de primera necesidad, que concreta el compromiso sin quitarle el rasgo que lo define (limitar lo que suben los alimentos), como eh_bildu-c06 en EH Bildu y fa-c06 en el Frente Amplio. Se evalúa en la prioridad podemos-04 del programa."
+  },
+  {
+   "id": "podemos-c04",
+   "tema": "Expropiar el uso de las viviendas que acumulan los fondos de inversión («fondos buitre») para destinarlas a alquiler social, financiándolo con el aumento del gasto militar.",
+   "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
+   "fecha": "2026-11-06",
+   "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
+   "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
+   "sha256": "a606ac38aac86fe3fd9e309898f17eb3fe976b268643fc828cfbd5f5497ae6d1",
+   "motivo": "Ya está en el programa: «Impulsaremos la expropiación de uso por interés social de las viviendas que superen las diez en manos de grandes tenedores, fondos de inversión, entidades financieras y bancos» (po-p004, medida 4, p. 8), con destino al alquiler social; la financiación con el gasto militar que dijo la candidata tiene su correlato en la medida 72 (p. 28), que destina lo recortado en defensa, entre otras cosas, al «derecho a la vivienda». Se evalúa en la prioridad podemos-03 del programa."
+  },
+  {
+   "id": "podemos-c05",
+   "tema": "Fijar por ley un salario mínimo interprofesional de 1.800 euros.",
+   "quien": "Podemos (web oficial de la candidatura de Irene Montero)",
+   "fecha": "2026-10-20",
+   "url": "https://pazcasaytrabajo.es/",
+   "fuente_local": "data/sources/compromisos/podemos/pazcasaytrabajo_web.txt",
+   "sha256": "c2bea0ce6b68051e1a207e2a782dba74de122f90b327d49be0fc3d527c75380a",
+   "motivo": "Ya está en el programa: «Aumentaremos el SMI hasta los 1.800 euros al mes en una legislatura» (po-p111, medida 111, p. 41), con plazo y un suelo del 75 % del salario mediano. Se evalúa en la prioridad podemos-08 del programa."
+  },
+  {
+   "id": "podemos-c06",
+   "tema": "Reducir por ley la jornada laboral máxima a 30 horas semanales.",
+   "quien": "Podemos (web oficial de la candidatura de Irene Montero)",
+   "fecha": "2026-10-20",
+   "url": "https://pazcasaytrabajo.es/",
+   "fuente_local": "data/sources/compromisos/podemos/pazcasaytrabajo_web.txt",
+   "sha256": "c2bea0ce6b68051e1a207e2a782dba74de122f90b327d49be0fc3d527c75380a",
+   "motivo": "Ya está en el programa: «Reduciremos la jornada laboral a 30 horas semanales durante la legislatura» (po-p113, medida 113, p. 41), empezando por 35 horas y sin reducir los salarios. Se evalúa en la prioridad podemos-09 del programa."
+  },
+  {
+   "id": "podemos-c07",
+   "tema": "No aumentar más el gasto militar («ni un euro más a armas») y destinar a servicios públicos y medidas sociales los unos 24.000 millones en que, según Montero, ha crecido desde 2023.",
+   "quien": "Podemos (web oficial de la candidatura de Irene Montero)",
+   "fecha": "2026-10-20",
+   "url": "https://pazcasaytrabajo.es/",
+   "fuente_local": "data/sources/compromisos/podemos/pazcasaytrabajo_web.txt",
+   "sha256": "c2bea0ce6b68051e1a207e2a782dba74de122f90b327d49be0fc3d527c75380a",
+   "motivo": "Ya está en el programa: «Revertiremos en los Presupuestos Generales del Estado el mayor aumento del gasto militar de la historia de la democracia, destinando esos recursos a financiar los servicios públicos, el derecho a la vivienda y la paz», y después «congelaremos el gasto militar durante toda la legislatura» (po-p072, medida 72, p. 28). La cifra de 24.000 millones era de la candidata, no de la medida (elemento accesorio, como el coste de fa-c07). Se evalúa en la prioridad podemos-07 del programa."
+  },
+  {
+   "id": "podemos-c08",
+   "tema": "Nacionalizar Repsol adquiriendo una participación de control (el 51 %, según Público), con un coste que Montero cifra en 9.100 millones de euros.",
+   "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
+   "fecha": "2026-11-06",
+   "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
+   "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
+   "sha256": "a606ac38aac86fe3fd9e309898f17eb3fe976b268643fc828cfbd5f5497ae6d1",
+   "motivo": "Ya está en el programa: «El Estado adquirirá, a través de la Empresa Pública de Energía, la mayoría absoluta del accionariado de Repsol» (po-p037, medida 37, p. 18). El coste de 9.100 millones era una estimación de la candidata, no parte de la medida (mismo criterio que fa-c07), y el 51 % solo constaba en estilo indirecto. Se evalúa en la prioridad podemos-05 del programa."
+  },
+  {
+   "id": "podemos-c11",
+   "tema": "Elevar a 1.000 millones de euros el presupuesto de lucha contra las violencias machistas.",
+   "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
+   "fecha": "2026-11-06",
+   "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
+   "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
+   "sha256": "a606ac38aac86fe3fd9e309898f17eb3fe976b268643fc828cfbd5f5497ae6d1",
+   "motivo": "Ya está en el programa, concretado: «Creación de un fondo de contingencia de mil millones de euros para las políticas contra todas las formas de violencia machista» (po-p145, medida 145, p. 51), mediante la reforma de la Ley General Presupuestaria. Se evalúa en la prioridad podemos-11 del programa."
+  },
+  {
+   "id": "podemos-c12",
+   "tema": "Poner en marcha un supermercado público.",
+   "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
+   "fecha": "2026-11-06",
+   "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
+   "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
+   "sha256": "a606ac38aac86fe3fd9e309898f17eb3fe976b268643fc828cfbd5f5497ae6d1",
+   "motivo": "Ya está en el programa: «Establecimiento de una red pública de supermercados» (po-p034, medida 34, p. 17), un operador público en la gran distribución de alimentos. Era la prioridad podemos-11 de la base «compromisos»; no es prioridad del programa (ver extraccion.json), pero el criterio del complemento es que el compromiso no figure en él."
+  },
+  {
+   "id": "podemos-c13",
+   "tema": "Remunerar el permiso parental de ocho semanas para el cuidado de hijos.",
+   "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
+   "fecha": "2026-11-06",
+   "url": "https://www.eldiario.es/politica/pone-condiciones-investir-sanchez-bajar-alquileres-alimentos-prohibir-especulacion-vivienda_1_13643371.html",
+   "fuente_local": "data/sources/compromisos/podemos/eldiario_2026-11-06_desayuno_ep.txt",
+   "sha256": "a606ac38aac86fe3fd9e309898f17eb3fe976b268643fc828cfbd5f5497ae6d1",
+   "motivo": "Está en el programa, concretado y ampliado: «Ampliaremos el permiso parental a 10 semanas por progenitor, ampliable a 20 semanas en las familias monomarentales, remunerado al 100 %» (po-p180, medida 180, p. 60). Diez semanas remuneradas cumplen las ocho del compromiso (mismo criterio que fa-c06: el programa lo concreta y lo supera). Era la prioridad podemos-12 de la base «compromisos»; no es prioridad del programa."
+  },
+  {
+   "id": "podemos-c14",
+   "tema": "Tipificar como delito que la empresa no pague ni compense con descanso las horas extraordinarias.",
+   "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
+   "fecha": "2026-11-17",
+   "url": "https://www.europapress.es/economia/laboral-00346/noticia-irene-montero-propone-prision-empresarios-no-paguen-compensen-horas-extra-20261117124611.html",
+   "fuente_local": "data/sources/compromisos/podemos/europapress_20261117_horas_extra.txt",
+   "sha256": "2f693a028078963f9dd6b9bd1ab791dea7af712c6570ba97652d7a9526a9ec94",
+   "motivo": "Ya está en el programa: la medida 119 prohíbe las horas extraordinarias sin compensación en descanso y dice que «estableceremos sanciones penales para los empresarios que incumplan esta prohibición y obliguen a realizar horas extraordinarias sin abonarlas ni compensarlas» (po-p119, p. 42). Se evalúa en la prioridad podemos-10 del programa."
+  },
   {
    "tema": "Rebajar la edad de jubilación a 63 años y subir las pensiones mínimas y no contributivas",
    "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
@@ -940,17 +404,42 @@
     },
     "nota": "En las declaraciones de campaña no precisa instrumento (ley estatal, índice, tope), cuantía ni plazo. La rebaja «del 40 %» (La Revuelta, 27-oct) solo consta en estilo indirecto de Europa Press y no se usa. «Por ley» aparece en estilo indirecto en elDiario.es (6-nov) y literal solo en la entrevista de 30-sep, anterior a la convocatoria."
    }
+  },
+  {
+   "resumen": "Bajar los alquileres «un 40 por ciento».",
+   "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
+   "fecha": "2026-11-15",
+   "url": "https://www.infobae.com/espana/agencias/2026/11/15/montero-critica-a-los-agresores-machistas-que-lleva-abascal-en-sus-listas-y-los-tacha-de-fanatismo-religioso/",
+   "fuente_local": "data/sources/compromisos/podemos/infobae_ep_20261115_montero_sevilla.txt",
+   "motivo": "[18-11-2026] Da cifra al objetivo de podemos-c01 (descartado el 14-11), pero en lo dicho por la candidata sigue sin instrumento; el decreto ley que cita Europa Press el 17-nov procede del programa, en estilo indirecto."
+  },
+  {
+   "resumen": "Salir de la OTAN, Estatuto de neutralidad, ley de nacionalidad para los saharauis, gratuidad universitaria, renta universal y otras medidas del programa citadas por Europa Press (17-nov).",
+   "quien": "Europa Press, a partir del programa de Podemos",
+   "fecha": "2026-11-17",
+   "url": "https://pazcasaytrabajo.es/programa",
+   "fuente_local": null,
+   "motivo": "[18-11-2026] Contenido del programa, que ningún dirigente dijo en primera persona en las fuentes leídas; con el programa ya publicado, se analizan con el prompt 1, no aquí."
+  },
+  {
+   "resumen": "Prohibir la vivienda vacacional en Canarias y los pisos turísticos (14 y 15-nov).",
+   "quien": "Irene Montero, candidata de Podemos a la Presidencia del Gobierno y cabeza de lista por Madrid",
+   "fecha": "2026-11-14",
+   "url": "https://planetacanario.com/irene-montero-en-gran-canaria-con-upc-dinero-para-atender-a-los-migrantes-si-hay-pero-se-gasta-en-armas-o-en-rescatar-a-la-banca/",
+   "fuente_local": "data/sources/compromisos/podemos/planetacanario_2026-11-14_mitin_las_palmas.txt",
+   "motivo": "[18-11-2026] Competencia autonómica y municipal, sin vía estatal identificada (mismo criterio que la revisión de promesas del 15 y el 17-nov)."
   }
  ],
  "busqueda": {
-  "hasta": "2026-11-12",
+  "hasta": "2026-11-18 (~12:00)",
   "fuentes_revisadas": [
    "Web oficial de campaña https://pazcasaytrabajo.es/ (descargada el 12-nov; cinco medidas).",
    "podemos.info: bloquea las peticiones automáticas (desafío de Cloudflare, HTTP 403); no se ha sorteado. Sin notas de prensa oficiales leídas por esa vía.",
    "data/promesas/promesas.json (entrada de Podemos) y codificaciones de campaña de la fase 1 (codificacion_g2.json, lideres_2026-11-12/podemos.json): todas sus fuentes releídas.",
    "Agencias: despachos de Europa Press y EFE publicados por Infobae (6-nov, 5-nov, 27-oct, 24-oct, 12-nov) y Demócrata (6-nov, 7-nov).",
    "Prensa: elDiario.es (6-nov y entrevista de 30-sep), Público (6-nov), Ara (12-sep, 7-nov), Diari de Tarragona/EFE (24-oct), Diario de Pontevedra (27-oct), The Objective (6-oct), Diario Red (21-oct), Estrella Digital (20-oct).",
-   "Búsquedas web de declaraciones de Irene Montero, Ione Belarra y Pablo Fernández desde la convocatoria (6-oct): mítines de Barcelona (24-oct) y Madrid (7-nov), La Revuelta (27-oct), desayuno de Europa Press (6-nov), visitas a Málaga (5-nov), Arousa (3-nov) y Alcalá de Henares (12-nov)."
+   "Búsquedas web de declaraciones de Irene Montero, Ione Belarra y Pablo Fernández desde la convocatoria (6-oct): mítines de Barcelona (24-oct) y Madrid (7-nov), La Revuelta (27-oct), desayuno de Europa Press (6-nov), visitas a Málaga (5-nov), Arousa (3-nov) y Alcalá de Henares (12-nov).",
+   "[Actualización 18-11-2026] Crónicas de los mítines de Las Palmas (14-nov: Planeta Canario, Diario de Avisos y Demócrata, de Europa Press) y Sevilla (15-nov: Infobae y Demócrata, de Europa Press, y CLMPress), presentación del programa (17-nov: diez piezas de Europa Press sobre horas extra, OTAN, Sáhara e Israel, universidades, memoria democrática, Audiencia Nacional, cultura, IMV, banca y medios), Belarra en el Congreso (18-nov) y EFE (18-nov). Web de campaña pazcasaytrabajo.es releída el 18-nov: ya enlaza el programa en PDF."
   ],
   "nota": "La campaña oficial empieza el 13-nov. El único acto en que la candidata detalló medidas con cifras es el desayuno de Europa Press del 6-nov; la mayoría de las doce prioridades descansan en él y en la web oficial. No se han encontrado declaraciones de líderes autonómicos o cabezas de lista distintos de Montero con medidas concretas, y no se han localizado los vídeos originales de los actos (las citas proceden de crónicas de agencia y prensa)."
  }

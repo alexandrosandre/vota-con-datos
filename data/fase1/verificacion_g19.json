@@ -1,0 +1,255 @@
+{
+ "grupo": "g19",
+ "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13-nov («A qué partido cuenta cada fuente», precedencia)",
+ "fecha": "2026-11-18",
+ "aprobado": true,
+ "revisadas": 15,
+ "resultado": {
+  "ok": 15,
+  "corregido": 0,
+  "rechazado": 0,
+  "celdas_no_tocadas_confirmadas": "ver «celdas_no_tocadas»"
+ },
+ "alcance": "Las 15 posiciones de Podemos de codificacion_g19.json, sacadas de su programa oficial para el 29-N («Así de básico: Paz, casa y trabajo», 141 pp.), las 10 celdas en las que el codificador conserva la posición vigente, las 5 que deja en null y una búsqueda propia de posiciones que no hubiera recogido.\n\n(1) Fuente. El PDF del scratchpad (dl/programa.pdf) y la copia ya guardada en el repositorio (data/sources/programas/podemos/programa-electoral-paz-casa-y-trabajo.pdf, sin trackear) tienen el mismo sha256 (086211fb…097fb) y la misma cabecera ETag W/\"1bec93-1a1eddf8050\" y Last-Modified 18-nov 08:56 UTC; el .txt (dfdce638…dd3f) coincide con «fuentes» y con un pdftotext -layout nuevo. PDF de InDesign, 141 pp., CreationDate 17-nov 13:49 CET. Es programa del 29-N: la portada dice «Programa electoral», la contraportada «29N» y la p. 5 «presentamos este programa de cara a las elecciones generales del 29N»; la copia del 18-nov de pazcasaytrabajo.es (data/sources/programas/podemos/web_2026-11-18/, web de campaña con titular Podemos según su aviso legal) enlaza «/programa-electoral/programa-electoral-paz-casa-y-trabajo.pdf». La numeración impresa coincide con la del PDF en todas las páginas comprobadas. partidos.json todavía tiene «podemos» como «no_publicado» y sin programa.texto: hay que catalogarlo antes de aplicar g19 (build_fase1.py comprueba las citas contra ese texto).\n\n(2) Lectura. Se extrajo cada página con pdftotext (con y sin -layout, -f N -l N). Se leyeron enteras las páginas de cada cita y sus vecinas (8-9, 12, 17-18, 21-22, 28, 35-37, 41, 51, 66-67, 69-70, 72, 79-81, 87-90, 103-104, 127-128, 133) y la introducción y portadillas (3-6, 15-16). En el resto se buscaron palabras clave por página: concierto/convenio económico, financiación autonómica, autonomía fiscal, deuda, condonación, referéndum, autodeterminación, derecho a decidir, plurinacional, castellano, cooficial, inmersión, vehicular, eólica, marina, Ministerio de Igualdad, ocupación, okupa, desalojo, indulto, Ceuta, Melilla, Fuerzas Armadas, Ejército, militarización, salario mínimo, SMI, prisión permanente, Código Penal, IVA, Transmisiones, primera vivienda, jóvenes, regularización, nacionalidad, Almaraz, nuclear, Mercosur, concertada, conciertos, aborto, OTAN, Sáhara, mordaza, Patrimonio, IRPF, jornada, menores migrantes, topes, precios máximos, alimentos.\n\n(3) Citas. Cada fragmento (separado por [...]) se comprobó con norm() de verify_quotes.py contra el .txt completo y contra el texto de la página declarada extraído de nuevo del PDF: las 15 citas son literales y están en su página (además, en mayúsculas y minúsculas exactas contra la extracción sin -layout). Tienen 60 palabras o menos (37 a 59, contando los [...]).\n\n(4) Valor. Se juzgó contra el texto exacto de cada afirmación y su contexto (preguntas.json), y se comparó con el valor y la nota de los demás partidos en fase1.json para la misma afirmación (en especial Adelante Andalucía en q08, q09 y q11; el Frente Amplio en q05, q09, q11, q33 y q36; EH Bildu, PSOE y PSC en q36; Coalición Canaria en q33; el BNG en q01, q09, q11 y q29; el PSOE y EH Bildu en q24; Compromís en q30, precedente de g10).\n\n(5) Precedencia. El programa va primero cuando trata la medida al menos tan directamente como la fuente vigente, también si rebaja el valor (q08, q36); si no la trata o lo hace de forma menos directa sin contradecirla, se conserva la vigente. Las 13 «sustituye» con valor coinciden campo a campo con la celda vigente de fase1.json y con el grupo indicado; las 2 null (q05, q11) proceden de codificacion_g2.json, pero llevan «nota»: null en vez de la nota de g2 (corrección de campos, cosmética).\n\nMecanismo. Comprobado en una copia (scratchpad rev18b/v19/check, solo data/*.json, data/*.txt y pipeline/): sin g19, python3 -I pipeline/build_fase1.py reproduce fase1.json byte a byte; con g19, esta verificación como puerta y podemos.programa.texto apuntando al .txt (solo en la copia), termina sin errores (exit 0) y cambia exactamente las 15 celdas de Podemos (23 → 25 posiciones); ningún otro partido cambia. En el repositorio no se ha tocado nada.",
+ "cambios": [],
+ "correcciones_de_campos": [
+  {
+   "partido": "podemos",
+   "pregunta": "q05, q11",
+   "campo": "sustituye.nota",
+   "motivo": "PENDIENTE (cosmético, no cambia ningún valor ni el build): en las dos celdas que pasan de null a valor, «sustituye» lleva «nota»: null; la convención de g14, g15 y g16 es copiar la nota de la celda null de codificacion_g2.json («Sin programa del 29N (podemos.info sin documento; WP API: últimas entradas 15-16 oct). Revisados promesas.json, …»), porque fase1.json no guarda notas de las null. El verificador no edita el fichero del codificador."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "—",
+   "campo": "data/partidos/partidos.json (entrada «podemos»)",
+   "motivo": "PENDIENTE, requisito del build: catalogar el programa (estado, url, fecha, sha256 086211fb…097fb, fichero y texto = data/sources/programas/podemos/programa-electoral-paz-casa-y-trabajo.{pdf,txt}, ya presentes en el repositorio con los mismos hashes). Sin programa.texto, build_fase1.py rechaza las 15 celdas («fuente programa pero el partido no tiene programa catalogado»)."
+  }
+ ],
+ "posiciones": [
+  {
+   "partido": "podemos",
+   "pregunta": "q01",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 8, medida 1; los dos fragmentos están en la misma medida). Una ley estatal fija la renta de todos los contratos (vigentes, renovaciones, prórrogas y nuevos): un 40 % menos que la anterior, con suelo en el 60 % del precio medio de la zona, y el 60 % de ese precio medio como renta inicial de las viviendas nunca alquiladas. Es un límite legal de precio en toda España sin zonas tensionadas ni declaración autonómica, y es la primera medida del programa: +2, como el BNG («Topar por lei»), el Frente Amplio, Ara Més y Adelante Andalucía. El PSOE (+1) solo congela temporalmente y Compromís (+1) delega en los ayuntamientos. Sustituye al +1 de Montero (6-nov), menos concreto."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q31",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 8, medida 2). Contratos de vivienda habitual indefinidos por defecto: va más allá de la renovación automática por cinco años e implica apoyarla, el criterio del Frente Amplio, Ara Més, Compromís, Adelante Andalucía y el BNG (+2). Mismo valor que Belarra (Pleno, 10-dic-2025); solo cambia la fuente."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q04",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 17, medida 30). Nombra el impuesto de la afirmación (Impuesto Temporal de Solidaridad de las Grandes Fortunas) y propone «configurarlo como un impuesto estatal permanente», además de extenderlo a todos los obligados del Impuesto sobre el Patrimonio: permanencia expresa, +2, como ERC («Fer permanent») y el BNG. Mismo valor que el programa conjunto Compromís: Front Valencià; el programa propio va primero."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q05",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Citas literales (p. 21, medida 48; tres fragmentos de la misma medida). Más tramos y tipos estatales más altos desde 60.000 € (hasta el 28,5 % desde 500.000 €), tipo mínimo del 9 % y que no tributen las rentas por debajo del SMI. Coincide en dejar exentas las rentas bajas, pero va en contra de la escala de dos tipos con máximo del 25 %: −1, mismo criterio que el Frente Amplio y Adelante Andalucía (bajada abajo, subida arriba). No −2: no menciona ni rechaza la propuesta de dos tipos. Celda nueva (antes null)."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q06",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 41, medida 113). Bajar por ley a 35 horas y luego a 30 durante la legislatura, sin rebaja salarial: va más allá de las 37,5 h sin mencionarlas, +1, el criterio de q06 para cifras más bajas (BNG 35 h; EH Bildu, Compromís y Ara Més 32 h); el +2 se reserva a quien fija las 37,5 h (PSOE, PSC, ERC, Frente Amplio). Mismo valor que la web de campaña; solo cambia la fuente."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q08",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 41, medida 116). Edad ordinaria de jubilación a los 63 años para todos: misma dirección con otra cifra, +1, el criterio aplicado a Adelante Andalucía (64 años, +1) y a q06 (cifras más ambiciosas que la de la afirmación). Baja el +2 del programa conjunto Compromís: Front Valencià («Retornarem l'edat de jubilació als 65 anys»), porque el programa propio va primero cuando trata la medida, también si rebaja el valor (precedentes g14 q30 y g16 q36). Ver duda 2."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q09",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 88, medida 300). Deroga la Ley 15/1997 y los artículos 66, 67 y 90 de la Ley General de Sanidad (el 90 es el que permite los conciertos con centros privados que describe el contexto de la afirmación), hace de la gestión pública directa el «modelo obligatorio», prohíbe nuevas externalizaciones y la prórroga de los contratos, y el nuevo mutualismo va «sin conciertos con entidades privadas»; los conciertos solo «subsisten» en un «periodo transitorio» (medida 303, p. 89). Suprimir la base legal de los conciertos es prohibirlos: +2, como Adelante Andalucía («fin de los conciertos») y el BNG (provisión exclusivamente pública). El Frente Amplio y EH Bildu (+1) dejan la gestión indirecta como excepción o solo derogan la Ley 15/1997. Ver duda 4."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q11",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 79, medida 279; dos fragmentos de la misma medida). Una única red educativa pública de gestión directa, fin progresivo de la financiación pública de centros privados, moratoria indefinida de nuevos conciertos en todas las etapas y reabsorción de los concertados en la red pública; la medida 281 (p. 80) excluye a la concertada del nuevo fondo estatal. Es retirar de forma gradual la financiación de la concertada hasta suprimirla: +2, mismo criterio que el Frente Amplio (hoja de ruta con periodo de coexistencia), Ara Més (integración en la red pública), Adelante Andalucía y el BNG. Como ellos, no fija el orden por etapas. Celda nueva (antes null). Ver duda 3."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q33",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal (p. 69, medida 219). Una medida con título propio, «Sistema obligatorio y solidario de distribución de menores migrantes no acompañados», con «corresponsabilidad obligatoria de todas las comunidades autónomas»: propuesta expresa y prioritaria de lo contrario de la afirmación, −2, como Coalición Canaria («Solidaridad obligatoria y automática»). El Frente Amplio quedó en −1 en g14 porque solo era un «acuerdo marco vinculante» en una subordinada; aquí es el objeto de la medida. Sustituye al −1 del manifiesto de UPC (documento conjunto, menos directo)."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Citas literales (p. 103, medida 339). Defiende «el cumplimiento del calendario de cierre [...] comenzando por Almaraz», pero «de acuerdo con la planificación energética vigente y las condiciones de seguridad del sistema eléctrico», y solo rechaza las «prórrogas nucleares indefinidas»; no dice nada de la prórroga de Almaraz hasta 2030 ni da fechas. En contra con matices: −1, el listón del PSOE, el PSC y EH Bildu («mantener el calendario», g12 y g16 verificados). El −2 se ha dado a quien rechaza las prórrogas de forma expresa (Compromís, «no acceptarem cap nova pròrroga»; Frente Amplio, Almaraz en 2027-2028; ERC). El programa va primero y rebaja el −2 de Santana (13-nov-2025), como el programa de EH Bildu rebajó el −2 de Otero en g16. Ver duda 1."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q21",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 51, medida 146; el [...] salta el punto sobre el Código Penal). Propone incorporar expresamente el aborto a la Constitución como derecho fundamental (art. 15): reforma constitucional expresa, +2, como el PSOE, el Frente Amplio, Ara Més y Adelante Andalucía. Concreta el «pero no así, como propone el PSOE» de Belarra (+1, Pleno): el programa va primero y es más directo."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q24",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 133, medida 427). El título de la medida es «Derogar la Ley Mordaza» y la introducción del capítulo (p. 127) dice «defendemos la derogación de la Ley Mordaza»; el cuerpo la llama, con imprecisión, «Ley de Reforma de la Ley Orgánica de protección de la seguridad ciudadana» y añade una «nueva regulación garantista». Derogación expresa con título propio: +2, como ERC («Derogar la Llei mordassa»), Compromís, Ara Més, el BNG y el Frente Amplio. No es el caso del PSOE (+1: una ley nueva que sustituye a la de 2015, sin hablar de derogar) ni de EH Bildu (+1: reforma de artículos). Matiz anotado en dudas: la p. 66 (medida 207) dice «Modificaremos la Ley Orgánica 2/1986 y la Ley 4/2015» para registrar las identificaciones policiales. Mismo valor que el programa conjunto Compromís: Front Valencià; solo cambia la fuente."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q26",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Citas literales (p. 28, medidas 72 y 73). Revertir el aumento del gasto militar, congelarlo toda la legislatura y rechazar el compromiso del 5 % del PIB en 2035 (que incluye el 3,5 % de defensa de la afirmación), con medida de título propio; la 70 propone salir de la OTAN. Rechazo expreso: −2, como el Frente Amplio, Ara Més, Adelante Andalucía, EH Bildu y el BNG. Mismo valor que Montero; solo cambia la fuente."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q34",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Citas literales (p. 35, medida 100; el título y una frase del cuerpo). Referéndum de autodeterminación y «ruptura con la defensa del plan de autonomía promovido por Marruecos»: es exactamente la afirmación, +2, como el Frente Amplio, Ara Més, EH Bildu y el BNG; la 102 (p. 36) propone reconocer la RASD. Mismo valor que el programa conjunto Compromís: Front Valencià; solo cambia la fuente."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q29",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 37, medida 106). «Seguiremos rechazando el actual acuerdo comercial entre la Unión Europea y Mercosur», en una medida con título propio; la 376 (p. 115) lo repite para la agricultura. Rechazo expreso del acuerdo: +2, mismo criterio que el BNG («Rexeitamento [...] en particular o UE-Mercosur», +2), que tampoco dice el cauce; ERC, Vox y SALF, +2. Sube el +1 de Velarde (una frase en el Pleno)."
+  }
+ ],
+ "resolucion_dudas_codificador": [
+  {
+   "duda": 1,
+   "tema": "q36: −1 o −2 por «comenzando por Almaraz»",
+   "resolucion": "−1, como propone el codificador. «Comenzando por Almaraz» fija el orden de cierre, pero no la fecha: no dice si Almaraz debe cerrar en 2027-2028 (calendario de 2019) o en 2030 (prórroga de agosto de 2026), y lo supedita a «la planificación energética vigente y las condiciones de seguridad del sistema eléctrico», el argumento con el que se aprobó la prórroga. Además, «Ni prórrogas nucleares indefinidas» rechaza solo las indefinidas, lo que deja fuera de su rechazo una prórroga con fecha. El −2 se ha reservado a quien rechaza expresamente nuevas prórrogas (Compromís, ERC) o fija el cierre de Almaraz en 2027-2028 (Frente Amplio). Entre −1 y −2, ante la duda el más prudente (criterio de g11, g12 y g14). El programa va primero y rebaja el −2 de Santana (13-nov-2025) y el del programa conjunto Compromís: Front Valencià, igual que en g16 (EH Bildu)."
+  },
+  {
+   "duda": 2,
+   "tema": "q08: +1 o +2 por los 63 años",
+   "resolucion": "+1. Es la regla aplicada a Adelante Andalucía (64 años, +1) y, en q06, a quien propone menos horas que las 37,5 (BNG, EH Bildu, Compromís, Ara Més, +1): una cifra distinta de la de la afirmación, aunque vaya más lejos, es «a favor con matices». Darle +2 rompería el criterio parejo con Adelante Andalucía. El programa propio prevalece sobre el «Retornarem l'edat de jubilació als 65 anys» del programa conjunto Compromís: Front Valencià (+2), aunque baje el valor."
+  },
+  {
+   "duda": 3,
+   "tema": "q11: +2 o +1 por la reabsorción «voluntaria»",
+   "resolucion": "+2. Lo «voluntario» es la vía de integración de los centros en la red pública, no el fin de la financiación: el programa pone «fin progresivamente [...] a la utilización de fondos públicos para financiar negocios privados», con una «única red educativa de gestión pública directa» como objetivo, moratoria indefinida de conciertos en todas las etapas y un fondo estatal vetado a la concertada (medida 281). El Frente Amplio (+2) también prevé un «periodo de coexistencia» y Ara Més (+2) la «integració» de los centros; Adelante Andalucía (+2) dice «eliminar progresivamente». Ninguno fija el orden por etapas."
+  },
+  {
+   "duda": 4,
+   "tema": "q09: +2 o +1 porque los conciertos «subsisten» de forma transitoria",
+   "resolucion": "+2. El programa deroga el artículo 90 de la Ley General de Sanidad (la base legal de los conciertos que describe el contexto de la afirmación) y hace obligatoria la gestión pública directa; los conciertos que «subsistan» lo hacen solo en un «periodo transitorio» (medida 303) y sin prórroga. Una supresión con transición es una prohibición, no una excepción permanente: está por encima de Adelante Andalucía («fin de los conciertos», +2) y lejos del Frente Amplio y EH Bildu (+1), que mantienen la gestión indirecta como excepción o solo derogan la Ley 15/1997."
+  },
+  {
+   "duda": 5,
+   "tema": "q30: conservar el +2 de Montero o +1 por el tope a los márgenes",
+   "resolucion": "Se conserva +2 (Montero, 6-nov). El programa no propone un precio máximo para los alimentos: limita los márgenes de las grandes distribuidoras en los productos de primera necesidad (medida 35, p. 18) y crea una red pública de supermercados (34). Es una medida relacionada pero distinta, y el proyecto ya lo resolvió así en g10 con Compromís: «control de márgenes de la distribución, no un precio máximo», se mantuvo la declaración de Micó (+2). Tampoco contradice a Montero («topar los precios de los alimentos»). El +1 del Frente Amplio, Ara Més y Adelante Andalucía es por topes de precio que sus programas sí proponen, pero condicionados; aquí el programa no habla de topes de precio de alimentos. Ver «dudas» para el editor."
+  },
+  {
+   "duda": 6,
+   "tema": "q17 y q03: se conservan los +1 del programa conjunto Compromís: Front Valencià",
+   "resolucion": "Se conservan. Comprobado por búsqueda: el programa no habla del concierto económico, de la financiación autonómica ni de recaudar impuestos propios (la única mención, «condicionaremos la autonomía fiscal a la garantía de estos estándares mínimos», p. 90, trata de estándares sanitarios), ni de IVA o ITP en la compra de la primera vivienda (solo IVA del 21 % a los pisos turísticos, p. 22, y estudiar una bonificación del ITP a jóvenes agricultores, p. 114). La regla de documentos conjuntos (13-nov) los atribuye a Podemos como firmante, y el programa propio no los contradice."
+  },
+  {
+   "duda": 7,
+   "tema": "q13: conservar Sánchez Serna o pasar al programa (mismo −1)",
+   "resolucion": "Se conserva Sánchez Serna (−1). Su intervención responde a la moción de VOX «para garantizar que los españoles siempre vayan primero para [...] recibir una vivienda social», que es la medida de la afirmación. Las medidas 21 (p. 12, discriminación en el acceso al alquiler) y 229 (p. 72, discriminación inmobiliaria por origen o nacionalidad y acceso a vivienda pública «con criterios transparentes») van en la misma dirección pero no tratan la prioridad nacional en el reparto de vivienda social: menos directas, sin contradecirla. Mismo criterio que g14 (Frente Amplio: se conservó Delgado frente a la ley antirracista). En g16 el programa de EH Bildu entró porque sustituía a una celda null, no a una respuesta a la propia moción. Si el editor prefiere aplicar el programa también aquí (la medida 229 nombra la nacionalidad y el acceso a la vivienda pública, como la de EH Bildu), el valor sería −1 igualmente y solo cambiaría la fuente."
+  },
+  {
+   "duda": 8,
+   "tema": "q15: null o +1 por el «procedimiento permanente de regularización»",
+   "resolucion": "null. Un procedimiento permanente de regularización por arraigo (medida 210, p. 67) y ampliar las pruebas de residencia «siguiendo el método» de la regularización de 2026 (medida 211) son medidas distintas de aprobar otra regularización extraordinaria. Mismo criterio que el Frente Amplio, EH Bildu, Compromís, el BNG y ERC (null). Adelante Andalucía (+2) cita expresamente la ILP «¡Regularización Ya!». Ante la duda, null."
+  }
+ ],
+ "celdas_no_tocadas": [
+  "Se conservan (el programa no trata la medida o lo hace de forma menos directa sin contradecirla), comprobado página a página y con búsqueda de palabras clave: q03 (+1, programa conjunto Compromís: Front Valencià; duda 6), q13 (−1, Sánchez Serna; duda 7), q16 (+1, Montero: el programa propone un proceso constituyente, un referéndum sobre monarquía o república y «reconozca la plurinacionalidad», medida 406, p. 128, y una reforma federal del Senado, medida 412, p. 129; la palabra «autodeterminación» solo aparece para Palestina, el Sáhara y en política exterior, pp. 29, 34-35: nada sobre un referéndum de independencia), q17 (+1, programa conjunto; duda 6), q18 (+1, Santana: no habla de la deuda autonómica; derogar la reforma del artículo 135, medida 62, p. 23, es otra medida), q22 (−1, Montero: solo «el Ministerio con competencias en Igualdad», p. 53, sin decir si debe ser propio), q23 (−1, Belarra: prohibición de desahucios sin alternativa, de desalojos extrajudiciales e ilegalización de «Desokupa», medidas 5 y 6, p. 9: otras medidas; nada sobre la ocupación ni plazos de desalojo), q27 (−1, Montero: la medida 104, p. 36, sobre Ceuta es humanitaria y de investigación de abusos de las Fuerzas y Cuerpos de Seguridad; la 90, p. 33, rechaza la «militarización de las fronteras» en los acuerdos con terceros países; nada sobre desplegar a las Fuerzas Armadas), q30 (+2, Montero; duda 5) y q35 (−1, Velarde: no menciona la prisión permanente revisable; las únicas reformas del Código Penal son el aborto, p. 51, la protesta, p. 133, y los crímenes del franquismo, p. 135).",
+  "Siguen en null, confirmado: q12 (solo «Garantizaremos la promoción y enseñanza de las lenguas cooficiales», medida 292, p. 85; nada sobre la lengua de las clases ni porcentajes), q15 (duda 8), q19 (solo «el despliegue equilibrado de la energía solar y eólica», p. 98; la palabra «marina» no aparece), q25 (la palabra «indulto» no aparece; la medida 428, p. 133, veta contratar con empresas corruptas) y q32 (SMI estatal de 1.800 € y nunca por debajo del 75 % del salario mediano, medida 111, p. 41; nada de salarios mínimos autonómicos).",
+  "Otros partidos: ninguna celda cambia. El programa cuenta solo para podemos; Compromís: Front Valencià y Unidad del Pueblo Canario son otras candidaturas y la regla de documentos conjuntos va en el otro sentido (documento de la coalición → firmantes, no al revés)."
+ ],
+ "posiciones_no_recogidas": "No se encontró ninguna afirmación en la que el programa tome una posición clara que el codificador no haya recogido. Las más cercanas: q13 (medidas 21 y 229, duda 7), q15 (medidas 210-211, duda 8), q30 (tope a márgenes, duda 5), q17 (autonomía fiscal condicionada a estándares sanitarios, p. 90), q19 (eólica sin especificar), q27 (desmilitarizar los acuerdos migratorios) y q32 (SMI estatal); todas medidas distintas o menos directas que la fuente conservada.",
+ "recuento": {
+  "antes": {
+   "podemos": 23
+  },
+  "despues": {
+   "podemos": 25
+  },
+  "cambios_de_valor": [
+   "podemos q01 +1→+2",
+   "podemos q09 +1→+2",
+   "podemos q21 +1→+2",
+   "podemos q29 +1→+2",
+   "podemos q33 −1→−2",
+   "podemos q08 +2→+1",
+   "podemos q36 −2→−1"
+  ],
+  "celdas_nuevas": [
+   "podemos q05 −1, q11 +2"
+  ],
+  "solo_fuente": [
+   "podemos q04 q06 q24 q26 q31 q34"
+  ],
+  "nota": "Coincide con el resumen del codificador: 7 cambios de valor, 2 nuevas y 6 solo de fuente. Ninguna corrección de valor.",
+  "despues_detalle": {
+   "con_valor": 25,
+   "a_favor": 16,
+   "en_contra": 9,
+   "null": 5,
+   "null_preguntas": "q12 q15 q19 q25 q32",
+   "fuentes": "15 de programa y 10 de campaña (8 declaraciones de líderes y 2 del programa conjunto Compromís: Front Valencià, q03 y q17)"
+  },
+  "build": "Comprobado en una copia del repositorio (scratchpad rev18b/v19/check): sin g19, python3 -I pipeline/build_fase1.py reproduce fase1.json idéntico; con codificacion_g19.json, esta verificación y podemos.programa.texto catalogado solo en la copia, termina sin errores (exit 0), aplica g19 y cambia exactamente las 15 celdas de Podemos; ningún otro partido ni afirmación cambia. En el repositorio no se ha regenerado fase1.json."
+ },
+ "dudas": [
+  "podemos/q36 (−1): alternativa −2 si el editor lee «comenzando por Almaraz» y «de acuerdo con la planificación energética vigente» como remisión al calendario original del PNIEC y, por tanto, como rechazo de la prórroga de Almaraz; con −2 se trataría como el Frente Amplio. El verificador no lo recomienda: no da fechas, lo condiciona a la seguridad del sistema y solo rechaza las prórrogas «indefinidas».",
+  "podemos/q08 (+1): alternativa +2 si el editor decide que una cifra más ambiciosa en la misma dirección (63 años) implica la afirmación a fortiori; habría que revisar entonces Adelante Andalucía (64, +1) y los +1 de q06 por menos de 37,5 horas.",
+  "podemos/q30 (+2, Montero): alternativa +1 si el editor decide que, publicado el programa, la posición de Podemos sobre los precios de los alimentos es el tope a los márgenes (medida 35) y no un precio máximo; habría que revisar con el mismo criterio Compromís (+2, Micó; programa con control de márgenes, g10).",
+  "podemos/q24 (+2): la medida 207 (p. 66) dice «Modificaremos la Ley Orgánica 2/1986 y la Ley 4/2015» para registrar las identificaciones policiales, y la 427 nombra la ley que deroga como «Ley de Reforma de la Ley Orgánica de protección de la seguridad ciudadana». El título de la medida y la introducción del capítulo hablan de «derogar la Ley Mordaza», que es lo que pesa; alternativa +1 solo si el editor da más peso a esa imprecisión.",
+  "podemos/q09 y q11 (+2): las dos son supresiones progresivas (conciertos sanitarios en un «periodo transitorio»; concertada por moratoria, fin progresivo de fondos y reabsorción voluntaria). Alternativa +1 si se exige supresión inmediata o retirada forzosa; con ese criterio habría que revisar Adelante Andalucía, el Frente Amplio y Ara Més en q11.",
+  "podemos/q03 y q17 (+1, programa conjunto Compromís: Front Valencià): se mantiene la observación de g14 de que el +1 por el concierto valenciano a partidos estatales es llamativo; es la regla del editor del 13-nov y el programa de Podemos no lo trata."
+ ]
+}
