@@ -2,10 +2,51 @@
  "partido": "erc",
  "base": "complemento",
  "modelo": "Claude (Anthropic)",
- "fecha": "2026-11-12",
- "nota": "ERC tiene programa analizado (data/programas/erc/evaluacion.json; programa de 48 páginas publicado el 5-nov). Siguiendo el prompt 1b (sección «Partidos con programa: complemento»), se buscaron compromisos concretos, en primera persona y para esta legislatura, de Gabriel Rufián (cabeza de lista por Barcelona), Oriol Junqueras (presidente), Elisenda Alamany (secretaria general) y los cabezas de lista (Norma Pujol por Tarragona, Teresa Jordà por Girona e Inés Granollers por Lleida; Francesc-Marc Álvaro al Senado por Barcelona) que el partido presente como importantes y que no figuren en el programa. No se encontró ninguno: lo que ERC destaca en precampaña y en el arranque de campaña (la ley «Una família, una casa» sobre el ITP, la fiscalidad de grandes fortunas y banca, Rodalies y el mantenimiento ferroviario, la financiación) ya está en el programa, y el resto son diagnósticos, críticas a rivales o aspiraciones sin medida. Por eso «prioridades» está vacío y no hay evaluación.",
- "compromisos": [],
- "prioridades": [],
+ "fecha": "2026-11-18",
+ "nota": "ERC tiene programa analizado (data/programas/erc/evaluacion.json; programa de 48 páginas publicado el 5-nov). Siguiendo el prompt 1b (sección «Partidos con programa: complemento»), se buscaron compromisos concretos, en primera persona y para esta legislatura, de Gabriel Rufián (cabeza de lista por Barcelona), Oriol Junqueras (presidente), Elisenda Alamany (secretaria general) y los cabezas de lista (Norma Pujol por Tarragona, Teresa Jordà por Girona e Inés Granollers por Lleida; Francesc-Marc Álvaro al Senado por Barcelona) que el partido presente como importantes y que no figuren en el programa. No se encontró ninguno: lo que ERC destaca en precampaña y en el arranque de campaña (la ley «Una família, una casa» sobre el ITP, la fiscalidad de grandes fortunas y banca, Rodalies y el mantenimiento ferroviario, la financiación) ya está en el programa, y el resto son diagnósticos, críticas a rivales o aspiraciones sin medida. Por eso «prioridades» está vacío y no hay evaluación. [Actualización 18-11-2026] Nueva búsqueda hasta el 18-nov (≈12:00): se añade erc-c01 (al menos el 30 % del presupuesto anual de inversiones ferroviarias a mantenimiento y seguridad, por ley; Junqueras, nota oficial del 13-nov), que no figura en el programa: el programa pide mantenimiento preventivo a Adif y el traspaso del mantenimiento de Rodalies (medidas 193 y 194), sin porcentaje ni ley. Es la primera y única prioridad del complemento. Lo demás de la ventana está en el programa (financiación, 17-nov; traspaso de migración y asilo, 17-nov) o no es una medida.",
+ "compromisos": [
+  {
+   "id": "erc-c01",
+   "area": "otros",
+   "resumen": "Garantizar por ley que al menos el 30 % del presupuesto anual de inversiones ferroviarias se destine a mantenimiento y seguridad.",
+   "cita": "els republicans proposaran garantir per llei el manteniment i la renovació de la xarxa ferroviària [...] Concretament, reservar un mínim d’un 30% del pressupost anual d’inversions ferroviàries a manteniment i seguretat.",
+   "cita_traduccion": "los republicanos propondrán garantizar por ley el mantenimiento y la renovación de la red ferroviaria [...] En concreto, reservar un mínimo del 30 % del presupuesto anual de inversiones ferroviarias a mantenimiento y seguridad.",
+   "quien": "Esquerra Republicana (nota oficial del partido sobre la rueda de prensa de su presidente, Oriol Junqueras)",
+   "formato": "documento oficial (nota de prensa de esquerra.cat sobre la rueda de prensa de Junqueras)",
+   "fecha": "2026-11-13",
+   "url": "https://www.esquerra.cat/esquerra-proposara-destinar-per-llei-un-minim-dun-30-de-les-inversions-ferroviaries-a-manteniment-i-seguretat/",
+   "medio": "Esquerra Republicana (nota de prensa, esquerra.cat)",
+   "fuente_local": "data/sources/compromisos/erc/erc_20261113_inversions_ferroviaries.txt",
+   "sha256": "f3e9093c4c164ca8b83c7662a23b883b0b3dfd257f89e72544013deb9c26def2",
+   "cuantificado": true,
+   "nota": "La nota, titulada «Esquerra proposarà destinar per llei un mínim d’un 30% de les inversions ferroviàries a manteniment i seguretat», recoge la propuesta en estilo indirecto del propio partido y una frase literal de Junqueras sobre el diagnóstico («les xifres actuals destinades al manteniment ferroviari, que en molts casos no arriben al 15%, son clarament insuficients»). Compara con Francia, Alemania e Italia (entre el 34 % y el 39 %). No dice si el porcentaje se alcanzaría con más gasto o reasignando el existente ni en qué plazo. La otra parte de la nota (que la Generalitat asuma el mantenimiento por encomienda de gestión) está en el programa (medida 194, p. 40). Texto copiado por el registro de promesas del 14-nov desde la API pública de WordPress de esquerra.cat (las páginas devuelven 403 a peticiones automáticas).",
+   "no_en_programa": {
+    "busqueda": "Términos buscados en el programa (data/sources/programas/erc/e2026-programa.txt, versión republicada el 17-nov, sha256 5f2a8f99…): «manteniment», «30 %», «30%», «per llei», «inversió ferroviària», «inversions ferroviàries», «pressupost», «seguretat», «Adif»; y las medidas ferroviarias de extraccion.json (erc-m223, erc-m224).",
+    "resultado": "El programa pide a Adif «un manteniment preventiu adequat» de la alta velocidad con «les inversions necessàries» (medida 193, p. 40) y traspasar a Cataluña el mantenimiento de la infraestructura de Rodalies (medida 194, p. 40), pero no fija ningún porcentaje mínimo del presupuesto de inversión ferroviaria para mantenimiento ni propone una ley que lo garantice. Falta el rasgo que define el compromiso (el suelo legal del 30 %): va al complemento, con el criterio de las revisiones de Vox, Compromís, PSOE, Frente Amplio y EH Bildu."
+   },
+   "veces": {
+    "n": 1,
+    "nota": "Una ocasión localizada: la rueda de prensa del 13-nov que recoge la nota oficial. No se ha encontrado en las crónicas leídas del 14 al 18-nov (Junqueras en Lloret de Mar, 17-nov, Europa Press; Rufián en Mollet, 16-nov, y en el acto del 15-nov, solo por el extracto del RSS) ni en una búsqueda web.",
+    "ocasiones": [
+     {
+      "fecha": "2026-11-13",
+      "ocasion": "rueda de prensa de Oriol Junqueras, con Ester Capella y Mercedes Vidal (nota oficial)",
+      "url": "https://www.esquerra.cat/esquerra-proposara-destinar-per-llei-un-minim-dun-30-de-les-inversions-ferroviaries-a-manteniment-i-seguretat/",
+      "medio": "Esquerra Republicana (nota de prensa)",
+      "fuente_local": "data/sources/compromisos/erc/erc_20261113_inversions_ferroviaries.txt",
+      "sha256": "f3e9093c4c164ca8b83c7662a23b883b0b3dfd257f89e72544013deb9c26def2",
+      "cuenta": true
+     }
+    ]
+   }
+  }
+ ],
+ "prioridades": [
+  {
+   "id": "erc-c01",
+   "justificacion": "La anuncia el presidente de ERC, Oriol Junqueras, en una rueda de prensa de campaña (13-nov), y la nota oficial del partido la titula como propuesta de Esquerra («Esquerra proposarà destinar per llei un mínim d’un 30% de les inversions ferroviàries a manteniment i seguretat»). Es cuantificada y no está en el programa (ver «no_en_programa»). Una sola ocasión localizada. Es la misma medida que Junts presentó el 3-nov (junts-c03, «com a mínim el 30% de la despesa en vies al manteniment»), sin la auditoría; se evalúa con los mismos hechos y fuentes."
+  }
+ ],
  "no_priorizados": [],
  "descartados": [
   {
@@ -170,17 +211,57 @@
     "texto": "171. Obligar les grans plataformes a establir mesures de prevenció, detecció i denúncia de pràctiques manipuladores o addictives."
    },
    "motivo": "Solo constan en estilo indirecto del periodista. La regulación de las plataformas y la transparencia de los algoritmos ya están en el programa, p. 34-35 (medidas 168 a 174); las demás (decir la verdad, grandes acuerdos de país, moderación) son aspiraciones sin medida."
+  },
+  {
+   "medida": "Exigir de nuevo el nuevo modelo de financiación pactado con el PSOE («Esta és una de les nostres condicions»)",
+   "quien": "Oriol Junqueras (Lloret de Mar)",
+   "fecha": "2026-11-17",
+   "url": "https://www.europapress.es/catalunya/noticia-junqueras-promete-volver-exigir-financiacion-condiciones-20261117205926.html",
+   "motivo": "[Actualización 18-11-2026] Está en el programa (medida 23, «Finançament i sobirania fiscal»); además la crónica lo da en estilo indirecto."
+  },
+  {
+   "medida": "Traspaso integral de las competencias de migración y asilo",
+   "quien": "ERC (programa, medida 35), traído a campaña por el diario Ara",
+   "fecha": "2026-11-17",
+   "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+   "motivo": "[Actualización 18-11-2026] Es una medida del programa."
+  },
+  {
+   "medida": "Que la Generalitat asuma el mantenimiento y la renovación de la red ferroviaria estatal en Cataluña por encomienda de gestión",
+   "quien": "Oriol Junqueras (nota oficial del 13-nov)",
+   "fecha": "2026-11-13",
+   "url": "https://www.esquerra.cat/esquerra-proposara-destinar-per-llei-un-minim-dun-30-de-les-inversions-ferroviaries-a-manteniment-i-seguretat/",
+   "fuente_local": "data/sources/compromisos/erc/erc_20261113_inversions_ferroviaries.txt",
+   "sha256": "f3e9093c4c164ca8b83c7662a23b883b0b3dfd257f89e72544013deb9c26def2",
+   "motivo": "[Actualización 18-11-2026] Está en el programa (medida 194, p. 40: traspasar progresivamente a Cataluña la conservación y el mantenimiento de la infraestructura de Rodalies)."
+  },
+  {
+   "medida": "«Pla de retorn de les deslocalitzacions industrials a Catalunya»",
+   "quien": "Oriol Junqueras (nota oficial de esquerra.cat, 17-nov, 12:58)",
+   "fecha": "2026-11-17",
+   "url": "https://www.esquerra.cat/junqueras-planteja-un-pla-de-retorn-de-les-deslocalitzacions-industrials-a-catalunya/",
+   "motivo": "[Actualización 18-11-2026] No se ha podido leer: la página devuelve 403 a una petición normal y a WebFetch, y el RSS solo trae el extracto (Junqueras critica que el Gobierno y el ministro Hereu «no han fet la feina» y dice que la industria es «fonamental»), sin medida. No se ha localizado cobertura de agencia. Sin texto no puede entrar; queda pendiente si el editor dispone de una copia."
+  },
+  {
+   "medida": "Actos de Rufián (Mollet, 16-nov; acto del 15-nov) y Junqueras (14-nov)",
+   "quien": "Gabriel Rufián, Oriol Junqueras",
+   "fecha": "2026-11-16",
+   "url": "https://www.esquerra.cat/rufian-des-de-mollet-aixo-va-de-psc-o-erc/",
+   "motivo": "[Actualización 18-11-2026] Por el extracto del RSS (las páginas devuelven 403): llamadas al voto, críticas al PSC y a Junts y un cara a cara con Hereu sobre vivienda; sin medida nueva."
   }
  ],
  "busqueda": {
-  "hasta": "2026-11-12",
+  "hasta": "2026-11-18, hacia las 12:00 (CET)",
   "fuentes": [
    "esquerra.cat y esquerrarepublicana.cat: la web de noticias del partido devuelve HTTP 403 a una petición normal (protección anti-bots); no se intentó sortearla.",
    "Prensa catalana con cobertura diaria de ERC: NacióDigital (sección política, etiqueta ERC y especial 29-N), ElNacional.cat (etiquetas Gabriel Rufián, Oriol Junqueras y Esquerra Republicana, del 6-oct al 12-nov), Ara (sección eleccions generals), Demócrata (Europa Press), beteve.",
    "Actos revisados: Nou Barris con Irene Montero (24-oct), Madrid con Montero (7-nov), Badalona (8-nov, primer acto propio de precampaña), rueda de prensa de Junqueras (9-nov), anuncio de la ley «Una família, una casa» (10-nov), conferencia de Francesc-Marc Álvaro (11-nov), Diputación Permanente del 3-nov y del 12-nov, debate de RTVE Catalunya (8-nov) y acto de inicio de campaña en Tarragona (12-nov, noche).",
    "Búsquedas abiertas sobre Norma Pujol, Teresa Jordà e Inés Granollers: no se localizaron compromisos suyos para el 29-N distintos de los del programa (de Pujol solo una advertencia, según Canal 21 Ebre, de que PP y Vox quieren suprimir el impuesto del Fondo de Transición Nuclear, asunto que el programa recoge en la p. 31, medida 147).",
    "Pistas previas: data/promesas/promesas.json (todas las medidas de ERC proceden de su programa) y data/fase1/codificacion_g*.json (ERC no tiene codificaciones de fuente «campaña»).",
-   "Cada medida candidata se buscó en el texto del programa (data/sources/programas/erc/e2026-programa.txt) con sus términos y sinónimos (ITP, especulació, acumul-, grans tenidors, banca, Adif, manteniment, reincidència, plataformes, algoritmes, rehabilitació, migració)."
+   "Cada medida candidata se buscó en el texto del programa (data/sources/programas/erc/e2026-programa.txt) con sus términos y sinónimos (ITP, especulació, acumul-, grans tenidors, banca, Adif, manteniment, reincidència, plataformes, algoritmes, rehabilitació, migració).",
+   "[Actualización 18-11-2026] RSS de esquerra.cat (esquerra.cat/feed/, HTTP 200; notas del 6 al 17-nov); las páginas de las notas siguen devolviendo 403. Nota del 13-nov leída en la copia de la API de WordPress hecha el 14-nov para el registro de promesas (data/sources/compromisos/erc/erc_20261113_inversions_ferroviaries.txt).",
+   "[Actualización 18-11-2026] data/promesas/promesas.json (entradas de ERC del 13 y 17-nov), candidatas y descartes de la revisión de la mañana del 18-nov (Junqueras en Lloret de Mar, Europa Press), y búsquedas web sobre el 30 % y el plan de deslocalizaciones (sin resultados nuevos)."
   ]
- }
+ },
+ "nota_prioridades": "Una prioridad (actualización del 18-nov): erc-c01, la única medida concreta anunciada por sus líderes desde la convocatoria que no figura en el programa. Hasta el 12-nov no había ninguna."
 }

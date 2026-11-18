@@ -1,0 +1,1897 @@
+<!doctype html>
+<html lang="ca">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{"analytics_storage":"denied","ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"});
+</script>
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<script id="cc-blocked-scripts" type="application/json">
+{"until_consent":{"functional":{"files":["https:\/\/junts.cat\/wp-content\/plugins\/smashballoon-wpchat-livechat-customer-support\/public\/js\/wp-chat-settingsStore-YpiJPLAf.js"],"inline":[]}}}
+</script>
+<script>
+(function() {
+	const dataTag = document.getElementById('cc-blocked-scripts');
+
+	if (!dataTag) {
+		return;
+	}
+
+	const blockedScripts = JSON.parse(dataTag.textContent);
+	const cookieName = 'cookiez-user-consent';
+
+	const readConsent = () => {
+		const match = document.cookie.match(new RegExp('(?:^|;\\s*)' + cookieName + '=([^;]*)'));
+
+		if (!match) {
+			return {};
+		}
+
+		try {
+			const parsed = JSON.parse(decodeURIComponent(match[1]));
+
+			return (parsed.data && parsed.data.consent) || {};
+		} catch (e) {
+			return {};
+		}
+	};
+
+	const consent = readConsent();
+	const ALWAYS_MODE = 'always';
+	const IGNORED_PATTERNS = ["plugins\/cookiez\/assets\/build\/banner.js","plugins\/cookiez\/assets\/build\/gutenberg-blocks\/preferences-link\/frontend.js"];
+	const GOOGLE_BYPASS_PATTERNS = [];
+	const FILE_TYPE = 'file';
+	const INLINE_TYPE = 'inline';
+	const usedPatterns = new Set();
+
+	const matchesPatterns = (src, outerHtml, patterns) =>
+		patterns.some((pattern) => (src && src.indexOf(pattern) !== -1) || outerHtml.indexOf(pattern) !== -1);
+
+	const findUnusedPattern = (type, haystack, patterns) => {
+		for (let i = 0; i < patterns.length; i++) {
+			const pattern = patterns[i];
+
+			if (usedPatterns.has(type + ':' + pattern)) {
+				continue;
+			}
+
+			if (haystack.indexOf(pattern) !== -1) {
+				return pattern;
+			}
+		}
+
+		return null;
+	};
+
+	const blockScript = (script) => {
+		if (script.type === 'application/json' || script.type === 'text/plain') {
+			return;
+		}
+
+		const src = script.getAttribute('src');
+
+		if (src && IGNORED_PATTERNS.some((pattern) => src.indexOf(pattern) !== -1)) {
+			return;
+		}
+
+		const outerHtml = script.outerHTML || '';
+		const isGoogleScript = matchesPatterns(src, outerHtml, GOOGLE_BYPASS_PATTERNS);
+
+		for (const mode in blockedScripts) {
+			const isBypassed = mode !== ALWAYS_MODE && isGoogleScript;
+			const categories = blockedScripts[mode];
+
+			for (const category in categories) {
+				if (mode !== ALWAYS_MODE && consent[category] === true) {
+					continue;
+				}
+
+				const { files = [], inline = [] } = categories[category];
+				const matchedFile = src ? findUnusedPattern(FILE_TYPE, src, files) : null;
+
+				if (matchedFile !== null) {
+					if (isBypassed) {
+						return;
+					}
+
+					usedPatterns.add(FILE_TYPE + ':' + matchedFile);
+					script.setAttribute('data-cc-src', src);
+					script.removeAttribute('src');
+					script.type = 'text/plain';
+					script.setAttribute('data-cc-category', category);
+					script.setAttribute('data-cc-mode', mode);
+
+					return;
+				}
+
+				const matchedInline = findUnusedPattern(INLINE_TYPE, outerHtml, inline);
+
+				if (matchedInline !== null) {
+					if (isBypassed) {
+						return;
+					}
+
+					usedPatterns.add(INLINE_TYPE + ':' + matchedInline);
+					script.type = 'text/plain';
+					script.setAttribute('data-cc-category', category);
+					script.setAttribute('data-cc-mode', mode);
+
+					return;
+				}
+			}
+		}
+	};
+
+	new MutationObserver((mutations) => {
+		mutations.forEach((mutation) => {
+			mutation.addedNodes.forEach((node) => {
+				if (node.nodeName === 'SCRIPT') {
+					blockScript(node);
+				}
+			});
+		});
+	}).observe(document.documentElement, { childList: true, subtree: true });
+})();
+</script>
+
+	<!-- This site is optimized with the Yoast SEO plugin v28.8 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Nogueras: “La garantia per a les empreses, els treballadors, els autònoms i l’economia és Junts” - Junts</title>
+	<link rel="canonical" href="https://junts.cat/actualitat/nogueras-la-garantia-per-a-les-empreses-els-treballadors-els-autonoms-i-leconomia-es-junts/" />
+	<meta property="og:locale" content="ca_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Nogueras: “La garantia per a les empreses, els treballadors, els autònoms i l’economia és Junts” - Junts" />
+	<meta property="og:description" content="Mas crida a votar Junts el 29-N per tenir diputats que “escoltin, actuïn i no enganyin” i posin Catalunya com a única prioritat La candidata de Junts per Catalunya al Congrés, Miriam Nogueras, ha defensat avui, en un acte de Tribuna Barcelona amb el president Artur Mas, la necessitat de recuperar el lideratge econòmic de [&hellip;]" />
+	<meta property="og:url" content="https://junts.cat/actualitat/nogueras-la-garantia-per-a-les-empreses-els-treballadors-els-autonoms-i-leconomia-es-junts/" />
+	<meta property="og:site_name" content="Junts" />
+	<meta property="article:publisher" content="https://www.facebook.com/JxCatalunya/" />
+	<meta property="article:published_time" content="2026-11-16T09:50:53+00:00" />
+	<meta property="article:modified_time" content="2026-11-18T10:41:37+00:00" />
+	<meta property="og:image" content="https://junts.cat/wp-content/uploads/2026/11/photo_6039768120890692163_y.webp" />
+	<meta property="og:image:width" content="1280" />
+	<meta property="og:image:height" content="853" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Daniel Gomez" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@juntsxcat" />
+	<meta name="twitter:site" content="@juntsxcat" />
+	<meta name="twitter:label1" content="Escrit per" />
+	<meta name="twitter:data1" content="Daniel Gomez" />
+	<meta name="twitter:label2" content="Temps estimat de lectura" />
+	<meta name="twitter:data2" content="5 minuts" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"https:\/\/junts.cat\/actualitat\/nogueras-la-garantia-per-a-les-empreses-els-treballadors-els-autonoms-i-leconomia-es-junts\/#article","isPartOf":{"@id":"https:\/\/junts.cat\/actualitat\/nogueras-la-garantia-per-a-les-empreses-els-treballadors-els-autonoms-i-leconomia-es-junts\/"},"author":{"name":"Daniel Gomez","@id":"https:\/\/junts.cat\/#\/schema\/person\/529d3c4d814a4e54c79fef894fe00bad"},"headline":"Nogueras: “La garantia per a les empreses, els treballadors, els autònoms i l’economia és Junts”","datePublished":"2026-11-16T09:50:53+00:00","dateModified":"2026-11-18T10:41:37+00:00","mainEntityOfPage":{"@id":"https:\/\/junts.cat\/actualitat\/nogueras-la-garantia-per-a-les-empreses-els-treballadors-els-autonoms-i-leconomia-es-junts\/"},"wordCount":892,"publisher":{"@id":"https:\/\/junts.cat\/#organization"},"image":{"@id":"https:\/\/junts.cat\/actualitat\/nogueras-la-garantia-per-a-les-empreses-els-treballadors-els-autonoms-i-leconomia-es-junts\/#primaryimage"},"thumbnailUrl":"https:\/\/junts.cat\/wp-content\/uploads\/2026\/11\/photo_6039768120890692163_y.webp","articleSection":["Notícies","Partit"],"inLanguage":"ca"},{"@type":"WebPage","@id":"https:\/\/junts.cat\/actualitat\/nogueras-la-garantia-per-a-les-empreses-els-treballadors-els-autonoms-i-leconomia-es-junts\/","url":"https:\/\/junts.cat\/actualitat\/nogueras-la-garantia-per-a-les-empreses-els-treballadors-els-autonoms-i-leconomia-es-junts\/","name":"Nogueras: “La garantia per a les empreses, els treballadors, els autònoms i l’economia és Junts” - Junts","isPartOf":{"@id":"https:\/\/junts.cat\/#website"},"primaryImageOfPage":{"@id":"https:\/\/junts.cat\/actualitat\/nogueras-la-garantia-per-a-les-empreses-els-treballadors-els-autonoms-i-leconomia-es-junts\/#primaryimage"},"image":{"@id":"https:\/\/junts.cat\/actualitat\/nogueras-la-garantia-per-a-les-empreses-els-treballadors-els-autonoms-i-leconomia-es-junts\/#primaryimage"},"thumbnailUrl":"https:\/\/junts.cat\/wp-content\/uploads\/2026\/11\/photo_6039768120890692163_y.webp","datePublished":"2026-11-16T09:50:53+00:00","dateModified":"2026-11-18T10:41:37+00:00","breadcrumb":{"@id":"https:\/\/junts.cat\/actualitat\/nogueras-la-garantia-per-a-les-empreses-els-treballadors-els-autonoms-i-leconomia-es-junts\/#breadcrumb"},"inLanguage":"ca","potentialAction":[{"@type":"ReadAction","target":["https:\/\/junts.cat\/actualitat\/nogueras-la-garantia-per-a-les-empreses-els-treballadors-els-autonoms-i-leconomia-es-junts\/"]}]},{"@type":"ImageObject","inLanguage":"ca","@id":"https:\/\/junts.cat\/actualitat\/nogueras-la-garantia-per-a-les-empreses-els-treballadors-els-autonoms-i-leconomia-es-junts\/#primaryimage","url":"https:\/\/junts.cat\/wp-content\/uploads\/2026\/11\/photo_6039768120890692163_y.webp","contentUrl":"https:\/\/junts.cat\/wp-content\/uploads\/2026\/11\/photo_6039768120890692163_y.webp","width":1280,"height":853},{"@type":"BreadcrumbList","@id":"https:\/\/junts.cat\/actualitat\/nogueras-la-garantia-per-a-les-empreses-els-treballadors-els-autonoms-i-leconomia-es-junts\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/junts.cat\/"},{"@type":"ListItem","position":2,"name":"Nogueras: “La garantia per a les empreses, els treballadors, els autònoms i l’economia és Junts”"}]},{"@type":"WebSite","@id":"https:\/\/junts.cat\/#website","url":"https:\/\/junts.cat\/","name":"Junts per Catalunya","description":"Som una formació política basada en la unitat i la força que la gent va demostrar l’1 d’octubre. Junts, guanyarem.","publisher":{"@id":"https:\/\/junts.cat\/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/junts.cat\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"ca"},{"@type":"Organization","@id":"https:\/\/junts.cat\/#organization","name":"Junts per Catalunya","url":"https:\/\/junts.cat\/","logo":{"@type":"ImageObject","inLanguage":"ca","@id":"https:\/\/junts.cat\/#\/schema\/logo\/image\/","url":"https:\/\/junts.cat\/wp-content\/uploads\/2026\/03\/logo-junts.svg","contentUrl":"https:\/\/junts.cat\/wp-content\/uploads\/2026\/03\/logo-junts.svg","width":162,"height":130,"caption":"Junts per Catalunya"},"image":{"@id":"https:\/\/junts.cat\/#\/schema\/logo\/image\/"},"sameAs":["https:\/\/www.facebook.com\/JxCatalunya\/","https:\/\/x.com\/juntsxcat","https:\/\/www.instagram.com\/juntspercat\/","https:\/\/www.tiktok.com\/@juntspercat","https:\/\/www.youtube.com\/@JuntsperCatalunya","https:\/\/t.me\/juntsxcat"]},{"@type":"Person","@id":"https:\/\/junts.cat\/#\/schema\/person\/529d3c4d814a4e54c79fef894fe00bad","name":"Daniel Gomez","image":{"@type":"ImageObject","inLanguage":"ca","@id":"https:\/\/secure.gravatar.com\/avatar\/b262d4c6bc568d8dd89a97ad0dbb21655d1628fb9b2ac71496aab772bbdd5f00?s=96&d=mm&r=g","url":"https:\/\/secure.gravatar.com\/avatar\/b262d4c6bc568d8dd89a97ad0dbb21655d1628fb9b2ac71496aab772bbdd5f00?s=96&d=mm&r=g","contentUrl":"https:\/\/secure.gravatar.com\/avatar\/b262d4c6bc568d8dd89a97ad0dbb21655d1628fb9b2ac71496aab772bbdd5f00?s=96&d=mm&r=g","caption":"Daniel Gomez"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//junts.cat' />
+<link rel='dns-prefetch' href='//cdn.elementor.com' />
+<link rel="alternate" type="application/rss+xml" title="Junts &raquo; Canal d&#039;informació" href="https://junts.cat/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Junts &raquo; Canal dels comentaris" href="https://junts.cat/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://junts.cat/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjunts.cat%2Factualitat%2Fnogueras-la-garantia-per-a-les-empreses-els-treballadors-els-autonoms-i-leconomia-es-junts%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://junts.cat/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjunts.cat%2Factualitat%2Fnogueras-la-garantia-per-a-les-empreses-els-treballadors-els-autonoms-i-leconomia-es-junts%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='sb-elementor-shared-style-css' href='https://junts.cat/wp-content/plugins/custom-twitter-feeds/vendor/smashballoon/framework/Packages/Blocks/css/sb-elementor.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='ctf_styles-css' href='https://junts.cat/wp-content/plugins/custom-twitter-feeds/css/ctf-styles.min.css?ver=2.11.1' media='all' />
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://junts.cat/wp-includes/css/dist/block-library/style.min.css?ver=7.1.4' media='all' />
+<style id="safe-svg-svg-icon-style-inline-css">
+.wp-block-safe-svg-svg-icon a{align-self:center}.safe-svg-cover{text-align:center}.safe-svg-cover .safe-svg-inside{display:inline-block;max-width:100%}.safe-svg-cover svg{fill:currentColor;height:100%;max-height:100%;max-width:100%;width:100%}
+
+/*# sourceURL=https://junts.cat/wp-content/plugins/safe-svg/dist/safe-svg-block-frontend.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-icon svg){width: 24px;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://junts.cat/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.2.4.1' media='all' />
+<link rel='stylesheet' id='wpgp-youtube-gallery-css' href='https://junts.cat/wp-content/plugins/video-gallery-playlist/public/css/wpgp-youtube-gallery-public.css?ver=2.4.2' media='all' />
+<link rel='stylesheet' id='wpgp-youtube-gallery-features-css' href='https://junts.cat/wp-content/plugins/video-gallery-playlist/public/css/wpgpyt-features.css?ver=1786875506' media='all' />
+<link rel='stylesheet' id='ea11y-widget-fonts-css' href='https://junts.cat/wp-content/plugins/pojo-accessibility/assets/build/fonts.css?ver=4.1.4' media='all' />
+<link rel='stylesheet' id='ea11y-skip-link-css' href='https://junts.cat/wp-content/plugins/pojo-accessibility/assets/build/skip-link.css?ver=4.1.4' media='all' />
+<link rel='stylesheet' id='hello-elementor-css' href='https://junts.cat/wp-content/themes/hello-elementor/assets/css/reset.css?ver=3.5.2' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://junts.cat/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.5.2' media='all' />
+<link rel='stylesheet' id='dflip-style-css' href='https://junts.cat/wp-content/plugins/3d-flipbook-dflip-lite/assets/css/dflip.min.css?ver=2.4.37' media='all' />
+<link rel='stylesheet' id='wpdreams-asl-basic-css' href='https://junts.cat/wp-content/plugins/ajax-search-lite/css/style.basic.css?ver=4.14.7' media='all' />
+<style id="wpdreams-asl-basic-inline-css">
+
+					div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label {
+						font-size: 0px !important;
+						color: rgba(0, 0, 0, 0);
+					}
+					div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label:after {
+						font-size: 11px !important;
+						position: absolute;
+						top: 0;
+						left: 0;
+						z-index: 1;
+					}
+					.asl_w_container {
+						width: 100%;
+						margin: 0px 0px 0px 0px;
+						min-width: 200px;
+					}
+					div[id*='ajaxsearchlite'].asl_m {
+						width: 100%;
+					}
+					div[id*='ajaxsearchliteres'].wpdreams_asl_results div.resdrg span.highlighted {
+						font-weight: bold;
+						color: #d9312b;
+						background-color: #eee;
+					}
+					div[id*='ajaxsearchliteres'].wpdreams_asl_results .results img.asl_image {
+						width: 70px;
+						height: 70px;
+						object-fit: cover;
+					}
+					div[id*='ajaxsearchlite'].asl_r .results {
+						max-height: none;
+					}
+					div[id*='ajaxsearchlite'].asl_r {
+						position: absolute;
+					}
+				
+						div.asl_r.asl_w.vertical .results .item::after {
+							display: block;
+							position: absolute;
+							bottom: 0;
+							content: '';
+							height: 1px;
+							width: 100%;
+							background: #D8D8D8;
+						}
+						div.asl_r.asl_w.vertical .results .item.asl_last_item::after {
+							display: none;
+						}
+					
+/*# sourceURL=wpdreams-asl-basic-inline-css */
+</style>
+<link rel='stylesheet' id='wpdreams-asl-instance-css' href='https://junts.cat/wp-content/plugins/ajax-search-lite/css/style-simple-red.css?ver=4.14.7' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://junts.cat/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.3.6' media='all' />
+<style id="elementor-frontend-inline-css">
+.e-heading-base a, .e-paragraph-base a { all: unset; cursor: pointer; }form[data-element_type="e-form"].form-state-success [data-element_type="e-form-success-message"],form[data-element_type="e-form"].form-state-error [data-element_type="e-form-error-message"]{ display: block; }.elementor-edit-mode [data-element_type="e-form-success-message"]:is(.elementor-element-editable, :has(.elementor-element-editable), :has(> .elementor-empty-view)),.elementor-edit-mode [data-element_type="e-form-error-message"]:is(.elementor-element-editable, :has(.elementor-element-editable), :has(> .elementor-empty-view)){ display: block; }.e-background-video { position: relative; overflow: hidden; }.e-background-video__media { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; z-index: 0; }.e-background-video__content { position: relative; z-index: 1; flex: 1 1 auto; }.elementor-edit-mode .e-background-video__content.e-atomic-element:has(> .elementor-empty-view) { display: flex; flex-direction: column; flex: 1 1 auto; min-height: 0; }.elementor-edit-mode .e-background-video__content.e-atomic-element:has(> .elementor-empty-view) > .elementor-empty-view.elementor-empty-view { position: relative; flex: 1 1 auto; min-height: 120px; height: auto; width: 100%; }.elementor-edit-mode .e-background-video__content.e-atomic-element:has(> .elementor-empty-view) > .elementor-empty-view > .elementor-first-add { position: absolute; inset: 0; width: 100%; height: 100%; }.e-background-video__controls { z-index: 2; }.e-background-video__play, .e-background-video__pause { appearance: none; -webkit-appearance: none; }.e-background-video.e-background-video--playing .e-background-video__play { display: none; }.e-background-video.e-background-video--paused .e-background-video__pause { display: none; }.e-background-video:not(.e-background-video--playing):not(.e-background-video--paused) .e-background-video__controls,.e-background-video:not(.e-background-video--playing):not(.e-background-video--paused) .e-background-video__play,.e-background-video:not(.e-background-video--playing):not(.e-background-video--paused) .e-background-video__pause { display: none; }.e-accordion-item-header-base { list-style: none; }.e-accordion-item-header-base::-webkit-details-marker { display: none; }.e-accordion-item-base { interpolate-size: allow-keywords; }.e-accordion-item-base::details-content {block-size: 0; overflow: hidden;transition: block-size .3s ease, content-visibility .3s ease allow-discrete;}.e-accordion-item-base[open]::details-content { block-size: auto; }.e-accordion-item-icon-base.e-accordion-item-icon-base .e-svg-base { width: auto; height: 100%; max-width: 100%; }.e-accordion-item-icon-base.e-accordion-item-icon-base .e-svg-base svg { width: auto !important; }.e-accordion-item-icon-base svg { transition: transform .3s ease; }.e-accordion-item-base[open] > summary .e-accordion-item-icon-base svg { transform: rotate(180deg); }
+.e-form-textarea-base:not([data-resizable]) { resize: none; } .e-form-submit-button-base { cursor: pointer; box-sizing: border-box; }
+/*# sourceURL=elementor-frontend-inline-css */
+</style>
+<link rel='stylesheet' id='elementor-post-6393-css' href='https://junts.cat/wp-content/uploads/elementor/css/post-6393.css?ver=1794223136' media='all' />
+<link rel='stylesheet' id='widget-nav-menu-css' href='https://junts.cat/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=4.3.3' media='all' />
+<link rel='stylesheet' id='widget-icon-list-css' href='https://junts.cat/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=4.3.6' media='all' />
+<link rel='stylesheet' id='e-sticky-css' href='https://junts.cat/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css?ver=4.3.3' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://junts.cat/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.3.6' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://junts.cat/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.3.6' media='all' />
+<link rel='stylesheet' id='widget-social-icons-css' href='https://junts.cat/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=4.3.6' media='all' />
+<link rel='stylesheet' id='e-apple-webkit-css' href='https://junts.cat/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=4.3.6' media='all' />
+<link rel='stylesheet' id='widget-search-css' href='https://junts.cat/wp-content/plugins/elementor-pro/assets/css/widget-search.min.css?ver=4.3.3' media='all' />
+<link rel='stylesheet' id='e-popup-css' href='https://junts.cat/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=4.3.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href='https://junts.cat/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.54.0' media='all' />
+<link rel='stylesheet' id='elementor-post-7-css' href='https://junts.cat/wp-content/uploads/elementor/css/post-7.css?ver=1794223136' media='all' />
+<link rel='stylesheet' id='base-desktop-css' href='https://junts.cat/wp-content/uploads/elementor/css/base-desktop.css?ver=6af1ac2172896' media='all' />
+<link rel='stylesheet' id='local-3441-frontend-desktop-css' href='https://junts.cat/wp-content/uploads/elementor/css/local-3441-frontend-desktop.css?ver=6af21af4a2ce9' media='all' />
+<link rel='stylesheet' id='base-mobile-css' href='https://junts.cat/wp-content/uploads/elementor/css/base-mobile.css?ver=6af1ac2172896' media='(max-width:767px)' />
+<link rel='stylesheet' id='elementor-post-3199-css' href='https://junts.cat/wp-content/uploads/elementor/css/post-3199.css?ver=1794439291' media='all' />
+<link rel='stylesheet' id='elementor-post-3441-css' href='https://junts.cat/wp-content/uploads/elementor/css/post-3441.css?ver=1794251509' media='all' />
+<link rel='stylesheet' id='elementor-post-1423-css' href='https://junts.cat/wp-content/uploads/elementor/css/post-1423.css?ver=1794223161' media='all' />
+<link rel='stylesheet' id='elementor-post-5004-css' href='https://junts.cat/wp-content/uploads/elementor/css/post-5004.css?ver=1794223129' media='all' />
+<link rel='stylesheet' id='eael-general-css' href='https://junts.cat/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=6.8.8' media='all' />
+<link rel='stylesheet' id='elementor-gf-inter-css' href='https://fonts.googleapis.com/css?family=Inter:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://junts.cat/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://junts.cat/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-regular-css' href='https://junts.cat/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://junts.cat/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3' media='all' />
+<!--n2css--><!--n2js--><script id="jquery-core-js" src="https://junts.cat/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://junts.cat/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="wpgp-youtube-gallery-js" src="https://junts.cat/wp-content/plugins/video-gallery-playlist/public/js/wpgp-youtube-gallery-public.js?ver=2.4.2"></script>
+<link rel="https://api.w.org/" href="https://junts.cat/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://junts.cat/wp-json/wp/v2/posts/24020" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://junts.cat/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.4" />
+<link rel='shortlink' href='https://junts.cat/?p=24020' />
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+				<link rel="preload" as="style" href="//fonts.googleapis.com/css?family=Open+Sans&display=swap" />
+								<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans&display=swap" media="all" />
+				<meta name="generator" content="Elementor 4.3.6; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<style id="jx-lb-css">
+.jx-lb{position:fixed;inset:0;z-index:999999;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.88);padding:24px}
+.jx-lb.open{display:flex}
+.jx-lb-box{position:relative;background:#000;border-radius:12px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.6);width:min(92vw,calc(86vh*16/9));aspect-ratio:16/9}
+.jx-lb-box.reel{width:min(92vw,calc(86vh*9/16));aspect-ratio:9/16}
+.jx-lb-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.jx-lb-close{position:absolute;top:14px;right:18px;width:42px;height:42px;border:0;border-radius:50%;background:rgba(255,255,255,.15);color:#fff;font-size:26px;line-height:1;cursor:pointer;z-index:2}
+.jx-lb-close:hover{background:rgba(255,255,255,.3)}
+.wpgp--youtube-gallery .swiper-slide{cursor:pointer}
+.wpgp--youtube-gallery .wpgpyt-single-slide-wrap{border-radius:16px;overflow:hidden}
+.wpgp--youtube-gallery .wpgpyt-slider-thumb{border-radius:0}
+.jx-date{display:flex;align-items:center;gap:6px;margin:0 0 14px;font:400 12px/20px Inter,sans-serif;color:#1d1d1b}
+.jx-date svg{width:14px;height:14px;flex:none}
+.ft-section .elementor-widget-heading .elementor-heading-title{text-align:center}
+.jx-more{display:flex;justify-content:center;align-self:center;margin-top:12px}
+.jx-more a{display:inline-flex;align-items:center;gap:15px;padding:20px 28px;border-radius:10px;background:#00c3b2;border:1px solid #00c3b2;color:#fff;font:400 18px/1.5 Inter,sans-serif;text-decoration:none;box-shadow:4px 5px 14px rgba(0,0,0,.2);transition:all .3s}
+.jx-more a:hover{background:#fff;color:#00c3b2;border-color:#fff}
+.ft-filter button{background:#eee!important;color:#000!important}
+.ft-filter button:hover{background:#e0e0e0!important}
+.ft-filter button.is-active{background:#00c3b2!important;color:#fff!important}
+.ft-section .elementor-widget-heading{border-top:0!important}
+.ft-section{background-color:#fff!important}
+.ft-section .elementor-widget-heading{padding-bottom:20px}
+.wpgp--youtube-gallery .swiper-button-next,.wpgp--youtube-gallery .swiper-button-prev{top:-16px!important}
+@media(max-width:1024px){.ft-section{padding-left:40px!important;padding-right:40px!important}.elementor-widget-html:has(>.ft-filter){padding-left:40px!important;padding-right:40px!important}}
+@media(max-width:767px){.ft-section{padding:30px 16px 20px!important}.elementor-widget-html:has(>.ft-filter){padding-left:16px!important;padding-right:16px!important}.ft-section .elementor-widget-heading .elementor-heading-title{font-size:26px!important}.jx-more a{padding:16px 22px;font-size:16px;gap:10px}}
+div.ft-filter button:hover,div.ft-filter button:focus{background:#eee!important;color:#000!important;transform:none!important;box-shadow:none!important}
+div.ft-filter button.is-active,div.ft-filter button.is-active:hover,div.ft-filter button.is-active:focus{background:#00c3b2!important;color:#fff!important}
+@media(max-width:767px){div.ft-filter{flex-wrap:wrap!important;overflow:visible!important;justify-content:center!important;gap:8px!important}div.ft-filter button{flex:none;white-space:nowrap;padding:8px 14px!important;font-size:13px!important}.wpgp--youtube-gallery .wpgpyt-slider-thumb{height:auto!important;aspect-ratio:16/9!important}.wpgp--youtube-gallery .wpgpyt-slider-thumb img{width:100%!important;height:100%!important;object-fit:cover}}
+.wpgp--youtube-gallery .swiper-slide .wpgpyg-vid-title,.wpgp--youtube-gallery .swiper-slide:hover .wpgpyg-vid-title,.wpgp--youtube-gallery .swiper-slide .wpgpyg-vid-title:hover{color:#111!important}
+@media(max-width:767px){.elementor-element-34edda1{background-size:cover!important;background-position:center center!important}}
+/* jx-full: tarjeta con imagen completa */.wpgp--youtube-gallery .wpgpyt-single-slide-wrap{position:relative!important;display:block!important;height:auto!important;aspect-ratio:3/4;background:#000!important;border-radius:16px;overflow:hidden}.wpgp--youtube-gallery .wpgpyt-slider-thumb,.wpgp--youtube-gallery .wpgpyt-slider-thumb a{position:absolute!important;inset:0;width:100%!important;height:100%!important;aspect-ratio:auto!important;padding:0!important;margin:0!important}.wpgp--youtube-gallery .wpgpyt-slider-thumb img{width:100%!important;height:100%!important;object-fit:cover!important}.wpgp--youtube-gallery .wpgpyt-slider-inner-content{position:absolute!important;left:0;right:0;bottom:0;z-index:2;background:linear-gradient(to top,rgba(0,0,0,.85) 0%,rgba(0,0,0,.55) 55%,rgba(0,0,0,0) 100%)!important;padding:48px 16px 16px!important;height:auto!important;pointer-events:none}.wpgp--youtube-gallery .jx-date,.wpgp--youtube-gallery .swiper-slide .wpgpyg-vid-title,.wpgp--youtube-gallery .swiper-slide .wpgpyg-vid-title:hover,.wpgp--youtube-gallery .swiper-slide .wpgpyg-vid-title a{color:#fff!important}.wpgp--youtube-gallery .jx-date svg,.wpgp--youtube-gallery .jx-date i{color:#fff;fill:#fff}.wpgp--youtube-gallery .wpgpyt-slider-inner-content *{color:#fff}.wpgp--youtube-gallery .swiper-slide.wpgp-player-active .wpgpyt-single-slide-wrap,.wpgp--youtube-gallery .swiper-slide.swiper-slide-active .wpgpyt-single-slide-wrap{background:#000!important}.wpgp--youtube-gallery .swiper-slide .wpgpyt-single-slide-wrap .wpgpyt-slider-inner-content{background:linear-gradient(to top,rgba(0,0,0,.85) 0%,rgba(0,0,0,.55) 55%,rgba(0,0,0,0) 100%)!important}.wpgp--youtube-gallery .jx-date svg path{stroke:#fff!important}.wpgp--youtube-gallery .jx-date svg rect{stroke:#fff!important}/* jx-round */.wpgp--youtube-gallery .swiper-slide .wpgpyt-single-slide-wrap{border-radius:16px!important;overflow:hidden!important;background:transparent!important;isolation:isolate}.wpgp--youtube-gallery .swiper-slide .wpgpyt-slider-thumb,.wpgp--youtube-gallery .swiper-slide .wpgpyt-slider-inner-content{border-radius:0!important}/* jx-white */.wpgp--youtube-gallery .swiper-slide .wpgpyt-single-slide-wrap .wpgpyt-slider-inner-content .wpgpyg-vid-title,.wpgp--youtube-gallery .swiper-slide.wpgp-player-active .wpgpyt-single-slide-wrap .wpgpyt-slider-inner-content .wpgpyg-vid-title,.wpgp--youtube-gallery .swiper-slide .wpgpyt-single-slide-wrap .wpgpyt-slider-inner-content .wpgpyg-vid-title:hover,.wpgp--youtube-gallery .swiper-slide .wpgpyt-single-slide-wrap .wpgpyt-slider-inner-content .wpgpyg-vid-title *{color:#fff!important}</style>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+if(window.__jxLb)return;window.__jxLb=1;
+/* IDs de YouTube que se abren en formato vertical (reel) */
+var REELS=['ADYRZw9DlBY','blA2qoiWOFE','-fWL2DGmFOA','iqgCj5rfSbQ','LiyEIdYjm8U','faL7TV6Q2Qw','iCWsReHqBwk'];
+var o=document.createElement('div');o.className='jx-lb';o.setAttribute('role','dialog');o.setAttribute('aria-modal','true');
+o.innerHTML='<button class="jx-lb-close" aria-label="Tancar">&times;</button><div class="jx-lb-box"></div>';
+document.body.appendChild(o);var box=o.querySelector('.jx-lb-box');
+function close(){o.classList.remove('open');box.innerHTML='';document.documentElement.style.overflow=''}
+function open(id){var reel=REELS.indexOf(id)>-1;box.className='jx-lb-box'+(reel?' reel':'');
+box.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0&playsinline=1" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen title="Vídeo"></iframe>';
+o.classList.add('open');document.documentElement.style.overflow='hidden'}
+o.addEventListener('click',function(e){if(e.target===o||e.target.classList.contains('jx-lb-close'))close()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+document.addEventListener('click',function(e){var s=e.target.closest&&e.target.closest('.wpgp--youtube-gallery .swiper-slide');if(!s)return;var id=s.getAttribute('data-video-id');if(!id){var w=s.querySelector('[data-id]');id=w&&w.getAttribute('data-id')}if(!id)return;e.preventDefault();e.stopPropagation();e.stopImmediatePropagation();open(id)},true);
+/* Fechas de publicación en YouTube (id:AAMMDD). Los vídeos nuevos sin fecha aquí no muestran fecha. */
+var D='blA2qoiWOFE:261005|sM3e1Rp0A8c:261006|-fWL2DGmFOA:261007|z6amZ61MKyQ:261001|iqgCj5rfSbQ:261007|lzhCGVkaVyw:261002|ADYRZw9DlBY:261007|rGsvrg6x1so:261006|YDhLn2Tehkc:260930|iCWsReHqBwk:260916|4T2SY0krSig:260928|8m-RF34IcZg:260921|Vj_0txZB0Wo:260920|faL7TV6Q2Qw:260915|VB85lKcsygA:260922|LiyEIdYjm8U:260929|tRYV7Z5vQ7s:200210|NKckcyncq_o:190715|tGP2Pid7Ju0:260914|p9xQQlVbVjE:200703|crRMpFl97M8:200703|oycI4M36kSo:260907|plf3rwsClG4:200210|idAgKagDv-Y:200604|WeQYbtxiFFw:200129|OUgcYbrTCZg:200521|8PIEwOVeJSE:200521|wp7ParOGte8:200212|plPGSjph97E:200107|wG-QodCTWa8:240322|YoNa7X_lnbk:200603|T_P7QSlR6j4:240328|0K_4zhRkkOg:200703|wyF_dXd30tQ:240406|-R3GN2uIQx4:240322|ea8_lx-4-Ck:240408|VtV0-4KHE4E:240406|Ru08jbCwEG8:240406|hH_6ZjRluWM:240410|NEr0sK-Mof8:240416|lHKF_EK75Ew:240425|wvHcMNPgBWE:240417|tq7K5qasCMs:240420|ajRFbJl1hY4:240425|MQg1w6QRajQ:240326|LDZQiw5lanY:240419|eSF4DklFFEk:240426|v4umwlRcZVU:240426|pWZKcuTxHuk:260530|j37H6Fp9UxQ:260608|Z6kL7VMhbak:260409|YDKFcJKEC-4:240426|5DOwdIzflZI:260409|s9m9gIHYKAQ:260320|wnA6sI9pQkQ:260320|3Kc4C5FU1wI:260409|TycwDtCO11E:251112|8USWFr_6ocs:251112|ynlpFs1I5TQ:260320|PjxW6_lSp1w:251112|4MwTKXwuxnE:231017|wq8pvwnu6tw:230529|wc4CeUtBtHU:230526|wG5cBlcEXks:230526|YwCK3kJHy3s:230524|-U8K8fTqklE:230523|Dd9oniBgJXs:230523|TaKUz3k59Nw:251024|Z7FIoMo0sKM:230523|dzSuTN9tDLE:230523|c_QStINAWV4:251003|9996OdFwlM8:251121|oB87NXxOGOI:250606|BmDETHK1r90:250523|E2qBANTnRPc:250512|uPRICcU3VJo:250117|zWsdPBEjfjs:250509|-BWmXm2-VoU:250109|eLxew7LH72w:250411|FXODafzBUDw:241209|y010WO-tJ1c:240207|3i93VKcQaEE:240724|onHHt9XlEs8:241002|097VgKQW4z0:240212|sNLiNojd3ZQ:241003|B-Ax2Vxt8cg:240205|SeNUdaVrugo:251112|N0LuedM_KkM:240307|ZniXZe5-Xfk:240130|WMAp4jVWcHk:240130|aLi4f-Y2owo:240319|Cz8en_mTRmI:240111|_wIcwjxhA4c:240530|-ZlCrssUAeE:240130|BFtxf2t-8Zs:240110|JNGwSGMCBS0:231220|SIgtOPpqTrI:231115|INnvCUPVvg0:230921|MSdTfz1z21Y:230926|Rtxy0z1fdhM:231013|q34y812IASA:230929|rhKDUM4Llb0:230919|VRTEwXCSvT4:230723|pzSf1NFpbQU:230721|qZCwQdO5_oY:230721|e2V3K1GVLqA:231121|HRWaLUx-NZk:231114|A5vvTju2uTA:231017|9bshBL1YWGY:230720|x5pVRe1q9XI:231020|RKE179N1jAM:220921|-FiJGEyNjmE:231003|zWfTrKLiKs8:220627|PVUMq-kOPD0:200421|0Dp3w9ymKvM:200421|IZSK7uLxU9E:240610|na1-wv74WMk:240610|S6CdTLmxW78:240609|RxOR4rLY1ks:240606|k2eGcEave4U:240608|fHC7OSrqrlY:240608|zG7iFQ8NDI0:240606|P9feZqs5ueA:240605|_zmYmuvv1Ps:240605|hCamjKIDIbI:240604|rNOjFd7QRKg:240605|70ZCxoiWl2U:240604|lLCT2OcgedM:240602|N_W7hyJqPPo:240602|tgTz4P0x11w:240601|bpyO1ckncJE:240603|yrngcW4RKiU:240601|6Fw5j-cKkf0:240531|9bf6K-L7SZA:240601|lxParumSLW0:240526|UciXXyv5cdc:251209|TxkfvnOzVVw:251125|gkhmCPfCtlU:251110|ckDQg-dWFsU:251124|u04yy4_ZstU:251013|gURs16DnYFU:251028|rGB8H_Pr304:251013|X2fay5NxIYY:250724|0n9Byw-vyMc:250721|D34q5_Ris3w:250723|L-sdfxOxfe0:250710|0o7NTGs-Etg:250709|BHAkgt_NpxM:250707|gcPGK44aXpU:250707|lPd1L5EOxpI:250610|mEVuYxcTvk4:250513|qbZv15lM2gE:250528|54h_Q1l_B8I:250526|gnJQEwIF2yI:240507|CMnnDvtc95w:240507|-osbn8zkhqs:240506|7rUaUpPSyCM:240507|w3tOizWti6s:240502|7mV6K_qf0Ug:240505|SImiyYcK1mc:240503|chl-aWaoU7M:211023|qnkOiIGTAxU:211031|WzB2hdpc87U:211113|D5zEnEoTO7o:250625|u-NVk9eJSiA:211127|ky5SE2Aleus:211128|erEkRml57Us:211107|g81IcZkmdNU:211219|jHkl7MXjzLA:211212|Tw98pCvXIt4:211114|uyvnYU7urug:220129|d2G3eyRG3tc:211211|D8vPvowgEAg:260806|3MBHG-6c4TA:230322|A51SSb6Ifj4:230322|OrvcEHMo-ts:230317|5MWKmnJCYl8:230322|3M9mh0bXXSI:230317|DdlhIer5hK4:230322|_UNxsGPwTzI:230322|aBi93vRWFBM:230322|KnNWA-sn6dU:260610|ozcfIZc6DZs:260824|gwbEJYZAUKM:260716|T7lysd6c5J0:260421|6vD_ylDhpyI:260414|zhhYMwM24G8:260324|gKZNPOISCTs:260205|9DHUUVMU-I8:260122|dOuYNbDXW1M:260124|MOeSPTP2rmQ:260911|slOsas4lVt0:260110|MwFhU0cyUcY:251223|O0Rk7dMfoag:251001|UNwfJHJ1bnM:250728|cndlMVHO4HA:250727|rERmzxm-4DI:250519|DAQPeMrKRJs:250924|6OtpuFsRvUI:250627|hKzhxSPVUxo:260908|2M0XZeK1eYY:260909|tdY8I0hZqrM:260903|AVzocAeWFvQ:260723|PXJjJ3tTkbM:260903|pCbiQFC3m1Q:260903|65P1a0LCHXI:260723|4EQ_IwZ-4Nk:260805|zh77Wdy9IwA:260810|9_6A09qTwQY:260714|vOx-IJ-8NZA:260723|n9C4IxTUR94:260904|T_k2m96rZao:260714|1s1MP_uo9To:260708|VH8_R4a2zF4:260715';
+var M={};D.split('|').forEach(function(p){var a=p.lastIndexOf(':');M[p.slice(0,a)]=p.slice(a+1)});
+var MON=['gen.','febr.','març','abr.','maig','juny','jul.','ag.','set.','oct.','nov.','des.'];
+var ICON='<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M6 1.5V4.5M12 1.5V4.5M2.25 7.5H15.75" stroke="#4A5565" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.25 3H3.75C2.92157 3 2.25 3.67157 2.25 4.5V15C2.25 15.8284 2.92157 16.5 3.75 16.5H14.25C15.0784 16.5 15.75 15.8284 15.75 15V4.5C15.75 3.67157 15.0784 3 14.25 3Z" stroke="#4A5565" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+document.querySelectorAll('.wpgp--youtube-gallery .swiper-slide').forEach(function(s){
+var id=s.getAttribute('data-video-id');if(!id){var w=s.querySelector('[data-id]');id=w&&w.getAttribute('data-id')}
+var d=id&&M[id];var c=s.querySelector('.wpgpyt-slider-inner-content');if(!d||!c||c.querySelector('.jx-date'))return;
+var el=document.createElement('div');el.className='jx-date';
+el.innerHTML=ICON+'<time datetime="20'+d.slice(0,2)+'-'+d.slice(2,4)+'-'+d.slice(4,6)+'">'+d.slice(4,6)+' '+MON[+d.slice(2,4)-1]+' 20'+d.slice(0,2)+'</time>';
+c.insertBefore(el,c.firstChild)});
+/* Botón bajo cada lista que lleva a su lista de reproducción de YouTube */
+var P={22676:'PLbj29YrY909A',22677:'PL-Bf-dTZs8rvrDXTCqAb4tQfUxLZ5Zj7O',22678:'PL-Bf-dTZs8rte71CIhtqF-EcndqKdntc3',22679:'PLYB8zDmjP5c8',22680:'PL-Bf-dTZs8rsvR20VupJGrGXAZRL1TPI9',22682:'UUti5P8HYAKkln4drO0jfQgA',22683:'UUAjAD4z8A2Hf9opU34_xezg',22708:'PLQrrS3tKvGgg',22709:'PLMjNJt7pc1wE',22710:'PLTd_Zsx-BLrI',22711:'PL-Bf-dTZs8rvxpGeLGtQhDaIwHqLlN6fu',22712:'PL-Bf-dTZs8rsWsSDIKtsl56_32f8HOeoG'};
+document.querySelectorAll('.wpgp--youtube-gallery').forEach(function(g){
+var m=(g.id||'').match(/(\d+)$/);var href,label='Veure la llista a YouTube';
+if(m&&P[m[1]])href='https://www.youtube.com/playlist?list='+P[m[1]];
+if(!href)return;var w=g.closest('.elementor-widget');if(!w||w.parentNode.querySelector('.jx-more'))return;
+var d=document.createElement('div');d.className='jx-more';
+d.innerHTML='<a href="'+href+'" target="_blank" rel="noopener">'+label+'<i class="fas fa-arrow-right" aria-hidden="true"></i></a>';
+w.parentNode.insertBefore(d,w.nextSibling)});
+/* Miniaturas que YouTube no tiene en alta resolución (devuelve un placeholder gris de 120x90): usar sddefault */
+function jxFix(i){if(i.dataset.jxFix)return;if(i.naturalWidth&&i.naturalWidth<=120){var m=(i.currentSrc||i.src).match(/\/vi\/([^\/]+)\//);if(m){i.dataset.jxFix=1;i.removeAttribute('srcset');i.src='https://i.ytimg.com/vi/'+m[1]+'/sddefault.jpg'}}}
+document.addEventListener('load',function(e){var t=e.target;if(t&&t.tagName==='IMG'&&t.closest&&t.closest('.wpgp--youtube-gallery'))jxFix(t)},true);
+[0,500,1500,3000,6000].forEach(function(ms){setTimeout(function(){document.querySelectorAll('.wpgp--youtube-gallery .swiper-slide img').forEach(jxFix)},ms)});
+});
+</script><style class="wpcode-css-snippet">.contact-info .elementor-icon-list-item:has(.fa-facebook):not(:has(a)),
+.contact-info .elementor-icon-list-item:has(.fa-instagram):not(:has(a)),
+.contact-info .elementor-icon-list-item:has(.fa-x-twitter):not(:has(a)),
+.contact-info .elementor-icon-list-item:has(.fa-tiktok):not(:has(a)),
+.contact-info .elementor-icon-list-item:has(.fa-linkedin):not(:has(a)) {
+	display: none;
+}
+
+.contact-info .elementor-icon-list-item:has(.elementor-icon-list-text:empty) {
+	display: none;
+}
+
+/* Home municipi (bloc "Informa't. Opina. Comparteix.") - la graella de 6
+ *    columnes fixes (id d463fb3) reserva espai encara que una icona no tingui
+ *    enllac; convertim la graella en flex centrat i amaguem la cella sencera
+ *    (no nomes la icona) quan no hi ha enllac real, perque les icones que
+ *    queden es recolloquin sense buit visual. */
+.elementor-element-d463fb3 {
+	display: flex !important;
+	justify-content: center !important;
+}
+.elementor-element-d463fb3 > .e-con:not(:has(a[href]:not([href=""]))) {
+	display: none !important;
+}
+.elementor-element-d463fb3>.e-con{width:auto!important;flex:0 0 auto!important;}
+
+/* Fix bug icona SVG solida (adreca/email): icon_color del widget forca fill a tots els <svg>, trencant les icones SVG personalitzades dissenyades amb stroke. Es restaura fill:none nomes per aquests SVG (no afecta FontAwesome, que usa color). Aplicat globalment 14/08/2026 per al rollout F1.8. */
+.contact-info svg path {
+	fill: none !important;
+}
+
+
+/* Home municipi - pagina Propostes (container 159baa4f, graella 73fb5c69) - mateixa logica que el bloc d463fb3 de la home: graella flex centrat + amaga cella sencera sense enllac real. */
+.elementor-element-73fb5c69{display:flex!important;justify-content:center!important;}
+.elementor-element-73fb5c69 > .e-con:not(:has(a[href]:not([href=""]))){display:none!important;}
+.elementor-element-73fb5c69>.e-con{width:auto!important;flex:0 0 auto!important;}
+
+/* Xarxes socials municipi - regla generica per classe comuna. Qualsevol
+ *    graella de la seccio "Informa't. Opina. Comparteix." que tingui la classe
+ *    "xarxes-socials-municipi" (afegida des de l'editor d'Elementor al
+ *    contenidor de la graella) queda arreglada automaticament, sense dependre
+ *    de l'ID autogenerat de cada copia. Els blocs anteriors scopeded per ID
+ *    (d463fb3 = home, 73fb5c69 = Propostes) es deixen tal qual per compatibilitat
+ *    pero ja son redundants un cop la classe esta aplicada. */
+.xarxes-socials-municipi{display:flex!important;justify-content:center!important;}
+.xarxes-socials-municipi > .e-con:not(:has(a[href]:not([href=""]))){display:none!important;}
+.xarxes-socials-municipi>.e-con{width:auto!important;flex:0 0 auto!important;}</style><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1K0F14DGRE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1K0F14DGRE');
+</script><style class="wpcode-css-snippet">.elementor-element-bf7e966{display:flex!important;flex-direction:column!important;background-color:#ffffff!important;border-radius:16px!important;overflow:hidden!important;box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1)!important;}
+.elementor-element-bf7e966>.elementor-element-ee94e58{flex:0 0 260px!important;width:100%!important;overflow:hidden!important;}
+.elementor-element-bf7e966>.elementor-element-5c723ed{width:100%!important;flex:1 1 auto!important;padding:18px 22px 20px!important;box-sizing:border-box!important;display:flex!important;flex-direction:column!important;}
+.elementor-element-6311371 .elementor-heading-title{color:#333333!important;font-size:20px!important;font-weight:700!important;margin:0 0 4px 0!important;}
+.elementor-element-bb06eff{color:#00c3b2!important;font-size:14px!important;font-weight:500!important;}
+.elementor-element-bb06eff p{color:#00c3b2!important;font-size:14px!important;font-weight:500!important;margin:0!important;}</style><style class="wpcode-css-snippet">.elementor-element-116655a6 .e-n-tabs-heading{max-width:1440px;margin-left:auto;margin-right:auto;}</style><script>document.addEventListener('click', function(e) {
+  const btn = e.target.closest('[data-spotify-url]');
+  if (!btn) return;
+  
+  e.preventDefault();
+  
+  const spotifyUrl = btn.getAttribute('data-spotify-url');
+  const spotifyId = spotifyUrl.split('/').pop().split('?')[0];
+  const iframe = document.getElementById('spotify-player');
+  
+  if (iframe) {
+    iframe.src = 'https://open.spotify.com/embed/episode/' + spotifyId;
+  }
+  
+  elementorProFrontend.modules.popup.showPopup({ id: 5004 });
+});</script><link rel="icon" href="https://junts.cat/wp-content/uploads/2026/07/cropped-Logotip_RGB_Junts-scaled-1-32x32.webp" sizes="32x32" />
+<link rel="icon" href="https://junts.cat/wp-content/uploads/2026/07/cropped-Logotip_RGB_Junts-scaled-1-192x192.webp" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://junts.cat/wp-content/uploads/2026/07/cropped-Logotip_RGB_Junts-scaled-1-180x180.webp" />
+<meta name="msapplication-TileImage" content="https://junts.cat/wp-content/uploads/2026/07/cropped-Logotip_RGB_Junts-scaled-1-270x270.webp" />
+<style id="wp-custom-css">
+a {
+    text-decoration: none !important;
+}
+.contact-form-bt button {
+	    box-shadow: 4px 5px 14px 0px rgba(0, 0, 0, 0.2);
+}
+.card-shadow, 
+.documents-accordion summary {
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
+}
+
+.equip-tabs .e-n-tabs-heading {
+  border-bottom: none !important; 
+  position: relative; 
+}
+
+.equip-tabs .e-n-tabs-heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;  
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;   
+  height: 2px; 
+  background-color: #00C4B3;  
+  z-index: 0; 
+}
+
+body {overflow-x: hidden;}
+
+.elementor-field-group-field_bb9c44a div label {color: #4A5565!Important;}
+
+.elementor-field-group-field_bb9c44a input {
+     width: 19px;
+    height: 19px;
+    margin-right: 7px;
+ }
+
+.elementor-field-group-field_bb9c44a .elementor-field-option {
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-info a span.elementor-icon-list-text {text-decoration: underline;}
+
+.documents-accordion summary {
+	background-color: #FFFFFF;
+}
+
+.elementor-field-type-submit .elementor-button {
+    box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+}
+
+.elementor-field-type-submit .elementor-button:hover {
+    box-shadow: 0px 8px 12px -4px rgba(0, 0, 0, 0.2), 0px 16px 24px -3px rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-2px) !important;
+}
+
+.elementor-widget-text-editor .elementor-widget-container {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+}
+
+.elementor-post__excerpt p {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+}
+
+/* ===== Contenedor principal: la tarjeta completa ===== */
+.elementor-12118 .elementor-element.elementor-element-2e56d3c {
+  width: 100%;
+  max-width: 1168px;
+  height: 158px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border-left: 4px solid #00C3B2;
+  padding-top: 8px;
+  padding-right: 24px;
+  padding-left: 28px;
+  box-shadow: 0px 2px 4px -2px #0000001A, 0px 4px 6px -1px #0000001A;
+  box-sizing: border-box;
+}
+
+/* ===== Quita el fondo/bordes duplicados de las columnas internas ===== */
+.elementor-12118 .elementor-element.elementor-element-a51a335,
+.elementor-12118 .elementor-element.elementor-element-1dacdcf {
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Contenedor padre: evita que el flex-item se desborde sin límite */
+.elementor-12118 .elementor-element-5511632 .elementor-element-0eeb5c8 {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* El título en sí: una sola línea con puntos suspensivos */
+.elementor-12118 .elementor-element-0eeb5c8 .elementor-heading-title {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Contenedor instagram: borra el logo y demás info en la cabecera de cada post */
+.inavii-view__grid-cards-top {
+  display: none !important;
+}
+
+/* Contenedor instagram: borra el más y deja los ... */
+.inavii-view__caption-more-label {
+  display: none !important;
+}
+
+.inavii-view__grid-cards-card {box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.10), 0px 4px 6px -1px rgba(0, 0, 0, 0.10);
+}
+
+.ctf-item {
+  box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.10), 0px 4px 6px -1px rgba(0, 0, 0, 0.10) !important;
+}
+
+.inavii-view__content{
+	padding-top: 30px;
+}
+
+css.inavii-view__header-row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+selector .eael-elements-flip-box-rear-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+
+/* Equipo hacer scroll */
+.eael-elements-flip-box-rear-container,
+.eael-elements-slider-display-table,
+.eael-elements-flip-box-vertical-align,
+.eael-elements-flip-box-padding {
+  height: 100%;
+	
+}
+
+.eael-elements-flip-box-content {
+  max-height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.5) transparent;
+  padding-top: 16px;
+  padding-bottom: 16px;
+	padding-right: 12px; /* separa el texto de la barra de scroll */
+}
+
+.eael-elements-flip-box-content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.eael-elements-flip-box-content::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 4px;
+}
+
+.eael-elements-flip-box-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.eael-elements-flip-box-content p {
+  font-size: 15px;
+  line-height: 1.3;
+  margin: 0 0 8px 0;
+}
+
+.upk-img {
+  object-position: center top;
+}
+
+/* Cover de la imagen en Entradas generales */
+.elementor-post__thumbnail__link {
+    display: block !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.elementor-post__thumbnail {
+    height: 100% !important;
+}
+
+.elementor-post__thumbnail img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+
+
+
+
+</style>
+</head>
+<body class="wp-singular post-template-default single single-post postid-24020 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-hello-elementor eio-default ecc-default manage-default ally-default esm-default hello-elementor-default elementor-default elementor-kit-7 elementor-page-1423">
+
+		<script>
+			const onSkipLinkClick = () => {
+				const htmlElement = document.querySelector('html');
+
+				htmlElement.style['scroll-behavior'] = 'smooth';
+
+				setTimeout( () => htmlElement.style['scroll-behavior'] = null, 1000 );
+			}
+			document.addEventListener("DOMContentLoaded", () => {
+				if (!document.querySelector('#content')) {
+					document.querySelector('.ea11y-skip-to-content-link').remove();
+				}
+			});
+		</script>
+		<nav aria-label="Skip to content navigation">
+			<a class="ea11y-skip-to-content-link"
+				href="#content"
+				tabindex="-1"
+				onclick="onSkipLinkClick()"
+			>
+				Ves al contingut
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" role="presentation">
+					<path d="M18 6V12C18 12.7956 17.6839 13.5587 17.1213 14.1213C16.5587 14.6839 15.7956 15 15 15H5M5 15L9 11M5 15L9 19"
+								stroke="black"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+					/>
+				</svg>
+			</a>
+			<div class="ea11y-skip-to-content-backdrop"></div>
+		</nav>
+
+		
+
+		<header data-elementor-type="header" data-elementor-id="3199" class="elementor elementor-3199 elementor-location-header" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-16b13aa e-grid elementor-hidden-tablet elementor-hidden-mobile e-con-boxed e-con e-parent" data-id="16b13aa" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-17992e4 elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="17992e4" data-element_type="widget" data-e-type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+								<nav aria-label="Menú" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+				<ul id="menu-1-17992e4" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4224"><a href="https://junts.cat/qui-som/manifest/" class="elementor-item">Qui Som</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6256"><a href="https://junts.cat/contacte/" class="elementor-item">Contacte</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7533"><a target="_blank" href="https://electes.junts.cat/" class="elementor-item">Portal de l’electe</a></li>
+<li class="decidim-nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-7534"><a target="_blank" href="https://decidim.junts.cat/" class="elementor-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">   <g clip-path="url(#clip0_3159_2994)">     <path d="M7.99992 14.6673C11.6818 14.6673 14.6666 11.6825 14.6666 8.00065C14.6666 4.31875 11.6818 1.33398 7.99992 1.33398C4.31802 1.33398 1.33325 4.31875 1.33325 8.00065C1.33325 11.6825 4.31802 14.6673 7.99992 14.6673Z" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>     <path d="M8 8.66602C9.10457 8.66602 10 7.77059 10 6.66602C10 5.56145 9.10457 4.66602 8 4.66602C6.89543 4.66602 6 5.56145 6 6.66602C6 7.77059 6.89543 8.66602 8 8.66602Z" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>     <path d="M4.66675 13.7753V12.6673C4.66675 12.3137 4.80722 11.9746 5.05727 11.7245C5.30732 11.4745 5.64646 11.334 6.00008 11.334H10.0001C10.3537 11.334 10.6928 11.4745 10.9429 11.7245C11.1929 11.9746 11.3334 12.3137 11.3334 12.6673V13.7753" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>   </g>   <defs>     <clipPath id="clip0_3159_2994">       <rect width="16" height="16" fill="white"/>     </clipPath>   </defs> </svg> Espai Decidim</a></li>
+<li class="edp-nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-23945"><a target="_blank" href="https://junts.cat/wp-content/uploads/2026/09/MANIFESTO-EN_WEB.pdf" class="elementor-item"><img src="https://junts.cat/wp-content/uploads/2026/09/EN-W.png" alt="Democrats - European Democratic Party" style="height:18px;width:auto;display:block;"></a></li>
+<li class="decidim-nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-23944"><a href="https://espai.junts.cat/" class="elementor-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">   <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>   <circle cx="9" cy="7" r="4"/>   <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>   <path d="M16 3.13a4 4 0 0 1 0 7.75"/> </svg> Espai Junts</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-17992e4" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4224"><a href="https://junts.cat/qui-som/manifest/" class="elementor-item" tabindex="-1">Qui Som</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6256"><a href="https://junts.cat/contacte/" class="elementor-item" tabindex="-1">Contacte</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7533"><a target="_blank" href="https://electes.junts.cat/" class="elementor-item" tabindex="-1">Portal de l’electe</a></li>
+<li class="decidim-nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-7534"><a target="_blank" href="https://decidim.junts.cat/" class="elementor-item" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">   <g clip-path="url(#clip0_3159_2994)">     <path d="M7.99992 14.6673C11.6818 14.6673 14.6666 11.6825 14.6666 8.00065C14.6666 4.31875 11.6818 1.33398 7.99992 1.33398C4.31802 1.33398 1.33325 4.31875 1.33325 8.00065C1.33325 11.6825 4.31802 14.6673 7.99992 14.6673Z" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>     <path d="M8 8.66602C9.10457 8.66602 10 7.77059 10 6.66602C10 5.56145 9.10457 4.66602 8 4.66602C6.89543 4.66602 6 5.56145 6 6.66602C6 7.77059 6.89543 8.66602 8 8.66602Z" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>     <path d="M4.66675 13.7753V12.6673C4.66675 12.3137 4.80722 11.9746 5.05727 11.7245C5.30732 11.4745 5.64646 11.334 6.00008 11.334H10.0001C10.3537 11.334 10.6928 11.4745 10.9429 11.7245C11.1929 11.9746 11.3334 12.3137 11.3334 12.6673V13.7753" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>   </g>   <defs>     <clipPath id="clip0_3159_2994">       <rect width="16" height="16" fill="white"/>     </clipPath>   </defs> </svg> Espai Decidim</a></li>
+<li class="edp-nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-23945"><a target="_blank" href="https://junts.cat/wp-content/uploads/2026/09/MANIFESTO-EN_WEB.pdf" class="elementor-item" tabindex="-1"><img src="https://junts.cat/wp-content/uploads/2026/09/EN-W.png" alt="Democrats - European Democratic Party" style="height:18px;width:auto;display:block;"></a></li>
+<li class="decidim-nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-23944"><a href="https://espai.junts.cat/" class="elementor-item" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">   <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>   <circle cx="9" cy="7" r="4"/>   <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>   <path d="M16 3.13a4 4 0 0 1 0 7.75"/> </svg> Espai Junts</a></li>
+</ul>			</nav>
+						</div>
+				<div class="elementor-element elementor-element-3da5df5 elementor-icon-list--layout-inline elementor-align-end elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="3da5df5" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="#" data-accessibility="contrast">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-adjust"></i>						</span>
+										<span class="elementor-icon-list-text">Contrast</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="#" data-accessibility="reader">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-volume-up"></i>						</span>
+										<span class="elementor-icon-list-text">Lector</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="#" data-accessibility="fontsize">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="far fa-eye"></i>						</span>
+										<span class="elementor-icon-list-text">Mida text</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-b8ee0ac e-grid elementor-hidden-desktop e-con-boxed e-con e-parent" data-id="b8ee0ac" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-3fbffc9 elementor-icon-list--layout-inline elementor-align-end elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="3fbffc9" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="#" data-accessibility="contrast">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-adjust"></i>						</span>
+										<span class="elementor-icon-list-text"></span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="#" data-accessibility="reader">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-volume-up"></i>						</span>
+										<span class="elementor-icon-list-text"></span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="#" data-accessibility="fontsize">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="far fa-eye"></i>						</span>
+										<span class="elementor-icon-list-text"></span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				<div class="elementor-element elementor-element-65e133c elementor-widget elementor-widget-image" data-id="65e133c" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+																<a href="https://junts.cat/wp-content/uploads/2026/09/MANIFESTO-EN_WEB.pdf" target="_blank">
+							<img width="1000" height="178" src="https://junts.cat/wp-content/uploads/2026/09/EN-W.webp" class="attachment-full size-full wp-image-20987" alt="" srcset="https://junts.cat/wp-content/uploads/2026/09/EN-W.webp 1000w, https://junts.cat/wp-content/uploads/2026/09/EN-W-300x53.webp 300w, https://junts.cat/wp-content/uploads/2026/09/EN-W-768x137.webp 768w" sizes="(max-width: 1000px) 100vw, 1000px" />								</a>
+															</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4def37f e-con-full elementor-hidden-tablet elementor-hidden-mobile e-flex e-con e-parent" data-id="4def37f" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				</div>
+		<div class="elementor-element elementor-element-6579860 e-grid e-con-boxed e-con e-parent" data-id="6579860" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-7084384 elementor-widget__width-inherit elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="7084384" data-element_type="widget" data-e-type="widget" data-widget_type="theme-site-logo.default">
+											<a href="https://junts.cat">
+			<img width="162" height="130" src="https://junts.cat/wp-content/uploads/2026/03/logo-junts.svg" class="attachment-full size-full wp-image-3202" alt="" />				</a>
+											</div>
+				<div class="elementor-element elementor-element-cc87f42 junts-main-nav elementor-nav-menu__align-center elementor-nav-menu--dropdown-none elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-nav-menu" data-id="cc87f42" data-element_type="widget" data-e-type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+								<nav aria-label="Menú" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+				<ul id="menu-1-cc87f42" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21324"><a href="https://junts.cat/actualitat/noticies/" class="elementor-item">Actualitat</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6415"><a href="https://junts.cat/propostes/" class="elementor-item">Propostes</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4691"><a href="https://junts.cat/municipalisme/" class="elementor-item">Municipalisme</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6666"><a href="https://junts.cat/junts-tv/" class="elementor-item">Junts TV</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-cc87f42" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21324"><a href="https://junts.cat/actualitat/noticies/" class="elementor-item" tabindex="-1">Actualitat</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6415"><a href="https://junts.cat/propostes/" class="elementor-item" tabindex="-1">Propostes</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4691"><a href="https://junts.cat/municipalisme/" class="elementor-item" tabindex="-1">Municipalisme</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6666"><a href="https://junts.cat/junts-tv/" class="elementor-item" tabindex="-1">Junts TV</a></li>
+</ul>			</nav>
+						</div>
+		<div class="elementor-element elementor-element-de9665a e-grid e-con-full e-con e-child" data-id="de9665a" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-a8a0924 elementor-view-default elementor-widget elementor-widget-icon" data-id="a8a0924" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+							<div class="elementor-icon-wrapper">
+			<a class="elementor-icon" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjYzOTMiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D">
+			<i aria-hidden="true" class="fas fa-search"></i>			</a>
+		</div>
+						</div>
+				<div class="elementor-element elementor-element-4edcba0 elementor-nav-menu--stretch elementor-hidden-desktop elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="4edcba0" data-element_type="widget" data-e-type="widget" data-settings="{&quot;layout&quot;:&quot;dropdown&quot;,&quot;full_width&quot;:&quot;stretch&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+							<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Commuta el menú" aria-expanded="false">
+			<i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-4edcba0" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4574"><a href="https://junts.cat/actualitat/" class="elementor-item" tabindex="-1">Actualitat</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7537"><a href="https://junts.cat/propostes/" class="elementor-item" tabindex="-1">Propostes</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4579"><a href="https://junts.cat/municipalisme/" class="elementor-item" tabindex="-1">Municipalisme</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13419"><a href="https://junts.cat/contacte/" class="elementor-item" tabindex="-1">Contacte</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7538"><a href="https://junts.cat/junts-tv/" class="elementor-item" tabindex="-1">Junts TV</a></li>
+<li class="secondary-item menu-item menu-item-type-post_type menu-item-object-page menu-item-16093"><a href="https://junts.cat/qui-som/" class="elementor-item" tabindex="-1">Qui Som</a></li>
+<li class="secondary-item menu-item menu-item-type-custom menu-item-object-custom menu-item-7535"><a target="_blank" href="https://electes.junts.cat/" class="elementor-item" tabindex="-1">Portal de l’electe</a></li>
+<li class="secondary-item menu-item menu-item-type-custom menu-item-object-custom menu-item-7536"><a target="_blank" href="https://decidim.junts.cat/" class="elementor-item" tabindex="-1">Espai Decidim</a></li>
+<li class="secondary-item menu-item menu-item-type-custom menu-item-object-custom menu-item-23943"><a href="https://espai.junts.cat/" class="elementor-item" tabindex="-1">Espai Junts</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+					</div>
+				</div>
+				</header>
+				<div data-elementor-type="single-post" data-elementor-id="1423" class="elementor elementor-1423 elementor-location-single post-24020 post type-post status-publish format-standard has-post-thumbnail hentry category-noticies category-partit" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-43ed277 e-flex e-con-boxed e-con e-parent" data-id="43ed277" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-f44361e e-con-full e-grid e-con e-child" data-id="f44361e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-e6a70bd elementor-widget elementor-widget-html" data-id="e6a70bd" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<a class="back-link" href="https://junts.cat/actualitat/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Tornar a Actualitat</a>
+
+<style>
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #00C3B2;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.312px;
+  text-decoration: none;
+}
+.back-link:hover {
+  color: #00C3B2;
+  text-decoration: underline;
+}
+</style>				</div>
+		<div class="elementor-element elementor-element-2b7a330 e-con-full e-flex e-con e-child" data-id="2b7a330" data-element_type="container" data-e-type="container">
+				</div>
+				<div class="elementor-element elementor-element-259dd72 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="259dd72" data-element_type="widget" data-e-type="widget" data-widget_type="theme-post-title.default">
+					<h1 class="elementor-heading-title elementor-size-default">Nogueras: “La garantia per a les empreses, els treballadors, els autònoms i l’economia és Junts”</h1>				</div>
+				<div class="elementor-element elementor-element-cc23fd0 elementor-widget elementor-widget-theme-post-featured-image elementor-widget-image" data-id="cc23fd0" data-element_type="widget" data-e-type="widget" data-widget_type="theme-post-featured-image.default">
+															<img width="1280" height="853" src="https://junts.cat/wp-content/uploads/2026/11/photo_6039768120890692163_y.webp" class="attachment-full size-full wp-image-24021" alt="" srcset="https://junts.cat/wp-content/uploads/2026/11/photo_6039768120890692163_y.webp 1280w, https://junts.cat/wp-content/uploads/2026/11/photo_6039768120890692163_y-300x200.webp 300w, https://junts.cat/wp-content/uploads/2026/11/photo_6039768120890692163_y-1024x682.webp 1024w, https://junts.cat/wp-content/uploads/2026/11/photo_6039768120890692163_y-768x512.webp 768w" sizes="(max-width: 1280px) 100vw, 1280px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-87e99df e-con-full e-grid e-con e-child" data-id="87e99df" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-c93eedb e-grid e-con-full e-con e-child" data-id="c93eedb" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-e9a29ac elementor-widget elementor-widget-html" data-id="e9a29ac" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<style>
+.share-wrapper {
+  display: flex !important;
+  justify-content: flex-start !important;
+  width: 100%;
+  position: relative;
+}
+
+/* "Comparteix aquest article" */
+.share-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: flex-start !important;
+  gap: 8px;
+  background: none !important;
+  border: none;
+  padding: 20px;
+  margin: 0px !important;
+  border-radius: 6px;
+  color: #00C3B2 !important;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.share-btn svg {
+  stroke: currentColor;
+}
+
+.share-btn:hover,
+.share-btn:focus-visible {
+  color: #ffffff !important;
+  background-color: #00C3B2 !important;
+}
+
+/* Panel desplegable con las redes sociales: oculto por defecto */
+.share-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: auto;
+  z-index: 10;
+  display: none;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 8px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Solo se muestra cuando el JS añade esta clase, al hacer click en el botón */
+.share-dropdown.is-open {
+  display: flex;
+}
+
+/* Cada icono de red social: fondo blanco, icono en el color de marca */
+.share-network {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #ffffff !important;
+  color: #00C3B2 !important;
+  border: 1px solid #00C3B2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.share-network svg {
+  display: block;
+}
+
+.share-network:hover,
+.share-network:focus-visible {
+  background-color: #00A697 !important;
+  border-color: #00A697 !important;
+  color: #ffffff !important;
+}
+
+.share-copy .icon-copied {
+  display: none;
+}
+
+.share-copy.copied .icon-link {
+  display: none;
+}
+
+.share-copy.copied .icon-copied {
+  display: block;
+}
+</style>
+
+<div class="share-wrapper">
+  <button class="share-btn" id="shareToggle" type="button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle>
+      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+      <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+    </svg>
+    Comparteix aquest article
+  </button>
+
+  <div class="share-dropdown" id="shareDropdown">
+    <a class="share-network" href="#" data-network="twitter" aria-label="X / Twitter" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+      </svg>
+    </a>
+    <a class="share-network" href="#" data-network="whatsapp" aria-label="WhatsApp" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path>
+        <path d="M12.004 2c-5.523 0-10 4.477-10 10 0 1.75.454 3.463 1.318 4.967L2 22l5.176-1.29A9.96 9.96 0 0 0 12.004 22c5.523 0 10-4.477 10-10s-4.477-10-10-10zm0 18.19c-1.585 0-3.144-.427-4.5-1.234l-.322-.19-3.077.767.795-3.037-.207-.31A8.174 8.174 0 0 1 3.83 12c0-4.512 3.662-8.174 8.174-8.174 4.512 0 8.174 3.662 8.174 8.174 0 4.512-3.662 8.19-8.174 8.19z"></path>
+      </svg>
+    </a>
+    <a class="share-network" href="#" data-network="telegram" aria-label="Telegram" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"></path>
+      </svg>
+    </a>
+    <a class="share-network" href="#" data-network="facebook" aria-label="Facebook" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+      </svg>
+    </a>
+    <a class="share-network" href="#" data-network="linkedin" aria-label="LinkedIn" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 11-.001-4.124 2.062 2.062 0 010 4.124zM7.119 20.452H3.554V9h3.565v11.452z"></path>
+      </svg>
+    </a>
+    <button type="button" class="share-network share-copy" id="shareCopyLink" aria-label="Copiar enllaç" title="Copiar enllaç">
+      <svg class="icon-link" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+      </svg>
+      <svg class="icon-copied" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<script>
+(function () {
+  var wrapper = document.currentScript.closest('.share-wrapper');
+  if (!wrapper) return;
+  var toggleBtn = wrapper.querySelector('#shareToggle');
+  var dropdown = wrapper.querySelector('#shareDropdown');
+  var copyBtn = wrapper.querySelector('#shareCopyLink');
+
+  function closeDropdown() {
+    dropdown.classList.remove('is-open');
+  }
+
+  toggleBtn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    dropdown.classList.toggle('is-open');
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!wrapper.contains(e.target)) {
+      closeDropdown();
+    }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeDropdown();
+  });
+
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      var url = window.location.href;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url);
+      }
+      copyBtn.classList.add('copied');
+      setTimeout(function () {
+        copyBtn.classList.remove('copied');
+      }, 2000);
+    });
+  }
+})();
+</script>
+
+				</div>
+				<div class="elementor-element elementor-element-e2a39e6 elementor-widget elementor-widget-html" data-id="e2a39e6" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<button class="listen-btn" id="listenBtn">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+       fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+  </svg>
+  <span id="listenLabel">Escolta aquest article</span>
+</button>
+
+<style>
+.listen-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #00C4B3;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.312px;
+  padding: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.listen-btn:hover {
+   color: #ffffff;
+  background-color: #00C4B3;
+}
+
+.listen-btn:focus,
+.listen-btn:active,
+.listen-btn:focus-visible {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background: none;
+  color: #0A0A0A;
+}
+</style>
+
+<script>
+(function () {
+  const btn = document.getElementById('listenBtn');
+  const label = document.getElementById('listenLabel');
+  let utterance = null;
+  let speaking = false;
+
+  btn.addEventListener('click', function () {
+    if (!window.speechSynthesis) {
+      alert('El teu navegador no suporta la lectura de text.');
+      return;
+    }
+
+    if (speaking) {
+      window.speechSynthesis.cancel();
+      speaking = false;
+      label.textContent = 'Escolta aquest article';
+      return;
+    }
+
+    // Recoge el texto del artículo
+    const articleContent =
+      document.querySelector('.elementor-widget-theme-post-content') ||
+      document.querySelector('article') ||
+      document.querySelector('.post-content') ||
+      document.querySelector('main');
+
+    if (!articleContent) {
+      alert('No s\'ha trobat el contingut de l\'article.');
+      return;
+    }
+
+    utterance = new SpeechSynthesisUtterance(articleContent.innerText);
+    utterance.lang = 'ca-ES'; // Català
+    utterance.rate = 1;
+    utterance.pitch = 1;
+
+    utterance.onend = function () {
+      speaking = false;
+      label.textContent = 'Escolta aquest article';
+    };
+
+    window.speechSynthesis.speak(utterance);
+    speaking = true;
+    label.textContent = 'Atura la lectura';
+  });
+})();
+</script>				</div>
+				<div class="elementor-element elementor-element-9412fb0 elementor-shape-circle e-grid-align-left elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="9412fb0" data-element_type="widget" data-e-type="widget" data-widget_type="social-icons.default">
+							<div class="elementor-social-icons-wrapper elementor-grid" role="list">
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-x-twitter elementor-repeater-item-fbf65b8" href="https://x.com/juntsxcat" target="_blank">
+						<span class="elementor-screen-only">X-twitter</span>
+						<i aria-hidden="true" class="fab fa-x-twitter"></i>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-0dea8f4" href="https://www.instagram.com/juntspercat/" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<i aria-hidden="true" class="fab fa-instagram"></i>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-repeater-item-bf06d69" href="https://www.facebook.com/JxCatalunya/" target="_blank">
+						<span class="elementor-screen-only">Facebook-f</span>
+						<i aria-hidden="true" class="fab fa-facebook-f"></i>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-f578de6" href="https://www.youtube.com/channel/UCG6dZxszooC9hpNRr1-LlJw" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<i aria-hidden="true" class="fab fa-youtube"></i>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-fc8cf02 elementor-widget elementor-widget-theme-post-content" data-id="fc8cf02" data-element_type="widget" data-e-type="widget" data-widget_type="theme-post-content.default">
+					
+<p class="has-medium-font-size wp-block-paragraph">Mas crida a votar Junts el 29-N per tenir diputats que “escoltin, actuïn i no enganyin” i posin Catalunya com a única prioritat<br></p>
+
+
+
+<p class="wp-block-paragraph">La candidata de Junts per Catalunya al Congrés, <strong>Miriam Nogueras</strong>, ha defensat avui, en un acte de <strong>Tribuna Barcelona</strong> amb el president <strong>Artur Mas</strong>, la necessitat de <strong>recuperar el lideratge econòmic de Catalunya, reforçar el teixit productiu i situar la classe mitjana i treballadora al centre de les decisions polítiques</strong>. <strong>“Si s’ofega la classe mitjana, s’ofega Catalunya”</strong>, ha afirmat <strong>Nogueras</strong>, que ha reivindicat una política econòmica que permeti <strong>prosperar a les famílies, les empreses i els autònoms</strong>.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Nogueras</strong> ha assegurat que <strong>“la única garantia per la classe mitjana i treballadora, som Junts”</strong> i ha defensat que Catalunya necessita recuperar la seva capacitat de generar riquesa i oportunitats. <strong>“Volem una Catalunya que recuperi lideratge econòmic. Una nació que lideri, que exporti i que marqui el pas”,</strong> ha afirmat<strong>.</strong> En aquest sentit, ha remarcat que <strong>“nosaltres tenim molt clar que cal enfortir la nostra indústria i no pas enfonsar-la”</strong>.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">La candidata al Congrés afirma que les condicions de Junts passen per situar l&#8217;<strong>agenda catalana</strong> al centre mitjançant un <strong>finançament propi</strong> que recapti i gestioni els impostos, el <strong>traspàs integral de Rodalies</strong>, la gestió de les <strong>competències en immigració</strong>, una <strong>fiscalitat favorable</strong> per alleugerir el cost de la vida de les classes mitjanes i autònoms, i la <strong>defensa ferma de la llengua i les institucions catalanes</strong>.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Nogueras</strong> ha defensat una fiscalitat que afavoreixi l&#8217;activitat econòmica i ha reivindicat el paper de les persones que treballen, emprenen i assumeixen riscos. <strong>“Treballar ha de tornar a servir per viure millor”,</strong> &nbsp;ha afirmat, alhora que ha advertit de les conseqüències de penalitzar fiscalment les classes mitjanes, els autònoms i el teixit empresarial.</p>
+
+
+
+<p class="wp-block-paragraph">Durant la seva intervenció, <strong>Nogueras</strong> també ha fet balanç de la feina dels set diputats de Junts al Congrés durant els darrers tres anys. Ha destacat les <strong>mesures fiscals per a petites i mitjanes empreses</strong>, els <strong>incentius a la reinversió de beneficis</strong>, la <strong>defensa de la indústria</strong> i les iniciatives per <strong>frenar l&#8217;increment de les quotes dels autònoms</strong>.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Nogueras</strong> ha situat la capacitat de negociació de Junts com un dels elements centrals de la seva acció política i ha insistit que, de cara a la pròxima legislatura, les prioritats catalanes han de condicionar les negociacions a Madrid.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">El finançament ha estat un altre dels eixos centrals de la intervenció. <strong>“No ens cansarem de dir que els diners dels catalans, on han d’estar, és a Catalunya”</strong>, ha afirmat. La candidata ha insistit que el canvi de model passa perquè Catalunya assumeixi la recaptació i la gestió dels seus recursos i ha advertit que <strong>“la solidaritat quan és imposada no és solidaritat, és espoli”.</strong></p>
+
+
+
+<p class="wp-block-paragraph"><strong>Nogueras</strong> també ha denunciat les mancances en infraestructures i ha assenyalat que “<strong>Catalunya continua sense una conexió ferroviària competitiva amb Europa</strong>” i ha situat el traspàs integral de Rodalies i la millora de les connexions ferroviàries entre les prioritats de la pròxima legislatura.</p>
+
+
+
+<p class="wp-block-paragraph">Finalment, ha reiterat el <strong>compromís de Junts amb el teixit productiu</strong> i amb la defensa dels interessos de Catalunya a Madrid. “<strong>Som i serem amb el teixit productiu del país i amb les persones</strong>”, ha afirmat.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>President Artur Mas: “Jo vull algú que em parli de Catalunya”</strong></p>
+
+
+
+<p class="wp-block-paragraph">Per la seva banda, el president Artur Mas ha expressat públicament el seu suport a Miriam Nogueras i a la candidatura de Junts per Catalunya a les eleccions del 29 de novembre. <strong>“Davant la pregunta de què hem de fer, la resposta és què faré jo? Jo el que faré és votar Junts, la Miriam Nogueras”</strong>, ha afirmat.</p>
+
+
+
+<p class="wp-block-paragraph">Mas ha defensat la necessitat que Catalunya disposi de representants a Madrid que actuïn amb independència dels partits estatals. <strong>“Votaré Junts perquè hi hagi diputats que quan actuïn a Madrid pensin en una prioritat que és Catalunya”</strong>, ha assegurat. I ha afegit: “Jo vull algú que em parli de Catalunya».</p>
+
+
+
+<p class="wp-block-paragraph">El president ha reivindicat la importància de disposar de representants que escoltin, prenguin decisions i assumeixin responsabilitats. <strong>“Necessitem tenir a Madrid polítics que escoltin, que actuïn, que donin la cara i que no enganyin. I la gent de Junts aquestes qualitats les té”</strong>, ha afirmat.</p>
+
+
+
+<p class="wp-block-paragraph">En matèria econòmica, <strong>Mas</strong> ha defensat la necessitat de reforçar la competitivitat del país com a garantia per preservar l&#8217;estat del benestar. <strong>“Ens cal una economia competitiva. I tot allò que no vagi en aquesta línia ens fa debilitar el nostre estat del benestar”</strong>, ha advertit.</p>
+
+
+
+<p class="wp-block-paragraph">Pel que fa a l&#8217;habitatge, ha reivindicat la col·laboració entre les administracions i el sector privat per incrementar l&#8217;oferta.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">Finalment, Mas també ha criticat la manca d&#8217;un nou sistema de finançament autonòmic i ha recordat que els successius governs espanyols no han resolt aquesta qüestió. “<strong>Des de l’any 2014 no hi ha un nou sistema de finançament. Han governat uns i altres. I el sistema de finançament no hi és”</strong>, ha denunciat.</p>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				<footer data-elementor-type="footer" data-elementor-id="3441" class="elementor elementor-3441 elementor-location-footer" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-57efe6e e-flex e-con-boxed e-con e-parent" data-id="57efe6e" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-6967dc7 e-grid e-con-full e-con e-child" data-id="6967dc7" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-94da1d3 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="94da1d3" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img src="https://junts.cat/wp-content/uploads/elementor/thumbs/logo-junts-blanco-rr9uqsu2alxs7hxv1rovlky141zqb3o60z1aladsya.webp" title="logo-junts-blanco" alt="logo-junts-blanco" loading="lazy" />															</div>
+				<div class="elementor-element elementor-element-6eacb98 elementor-widget elementor-widget-text-editor" data-id="6eacb98" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<p>Treballant pel futur de Catalunya amb transparència i compromís democràtic.</p>								</div>
+				</div>
+		<div class="elementor-element elementor-element-f89be23 e-grid e-con-full e-con e-child" data-id="f89be23" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-2db6d66 elementor-widget elementor-widget-heading" data-id="2db6d66" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Enllaços</h2>				</div>
+				<div class="elementor-element elementor-element-02132ea elementor-nav-menu__align-start elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="02132ea" data-element_type="widget" data-e-type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+								<nav aria-label="Menú" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-02132ea" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22387"><a href="https://junts.cat/transparencia-i-compliance/" class="elementor-item">Transparència i Compliance</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7543"><a target="_blank" href="https://junts.ethic-channel.com/" class="elementor-item">Canal d&#8217;informació</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6240"><a target="_blank" href="https://electes.junts.cat/" class="elementor-item">Portal de l’electe</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6242"><a target="_blank" href="https://decidim.junts.cat/" class="elementor-item">Espai Decidim</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23942"><a href="https://espai.junts.cat/" class="elementor-item">Espai Junts</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6241"><a href="https://junts.cat/milita/" class="elementor-item">Milita per Catalunya</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6243"><a href="https://junts.cat/contacte/" class="elementor-item">Contacte</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6244"><a href="https://junts.cat/mapa-web/" class="elementor-item">Mapa web</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-02132ea" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22387"><a href="https://junts.cat/transparencia-i-compliance/" class="elementor-item" tabindex="-1">Transparència i Compliance</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7543"><a target="_blank" href="https://junts.ethic-channel.com/" class="elementor-item" tabindex="-1">Canal d&#8217;informació</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6240"><a target="_blank" href="https://electes.junts.cat/" class="elementor-item" tabindex="-1">Portal de l’electe</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6242"><a target="_blank" href="https://decidim.junts.cat/" class="elementor-item" tabindex="-1">Espai Decidim</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23942"><a href="https://espai.junts.cat/" class="elementor-item" tabindex="-1">Espai Junts</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6241"><a href="https://junts.cat/milita/" class="elementor-item" tabindex="-1">Milita per Catalunya</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6243"><a href="https://junts.cat/contacte/" class="elementor-item" tabindex="-1">Contacte</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6244"><a href="https://junts.cat/mapa-web/" class="elementor-item" tabindex="-1">Mapa web</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-5c5e869 e-grid e-con-full e-con e-child" data-id="5c5e869" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-2622b50 elementor-widget elementor-widget-heading" data-id="2622b50" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Seu Nacional</h2>				</div>
+				<div class="elementor-element elementor-element-245ba1e elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="245ba1e" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://maps.app.goo.gl/WymxZA1uSCu64xEG9" target="_blank" rel="nofollow">
+
+												<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.6666 8.33366C16.6666 12.4945 12.0508 16.8278 10.5008 18.1662C10.3564 18.2747 10.1806 18.3335 9.99998 18.3335C9.81931 18.3335 9.64354 18.2747 9.49915 18.1662C7.94915 16.8278 3.33331 12.4945 3.33331 8.33366C3.33331 6.56555 4.03569 4.86986 5.28593 3.61961C6.53618 2.36937 8.23187 1.66699 9.99998 1.66699C11.7681 1.66699 13.4638 2.36937 14.714 3.61961C15.9643 4.86986 16.6666 6.56555 16.6666 8.33366Z" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 10.833C11.3807 10.833 12.5 9.71372 12.5 8.33301C12.5 6.9523 11.3807 5.83301 10 5.83301C8.61929 5.83301 7.5 6.9523 7.5 8.33301C7.5 9.71372 8.61929 10.833 10 10.833Z" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Passatge de Bofill, 9-11<br>08013 Barcelona</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="tel:+34936558268" target="_blank" rel="nofollow">
+
+												<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M18.3333 14.1004V16.6004C18.3343 16.8325 18.2867 17.0622 18.1937 17.2749C18.1008 17.4875 17.9644 17.6784 17.7934 17.8353C17.6224 17.9922 17.4205 18.1116 17.2006 18.186C16.9808 18.2603 16.7478 18.288 16.5167 18.2671C13.9523 17.9884 11.4892 17.1122 9.32498 15.7087C7.31151 14.4293 5.60443 12.7222 4.32499 10.7087C2.91663 8.53474 2.04019 6.05957 1.76665 3.48374C1.74583 3.2533 1.77321 3.02104 1.84707 2.80176C1.92092 2.58248 2.03963 2.38098 2.19562 2.21009C2.35162 2.0392 2.54149 1.90266 2.75314 1.80917C2.9648 1.71569 3.1936 1.66729 3.42499 1.66707H5.92499C6.32941 1.66309 6.72148 1.80631 7.02812 2.07002C7.33476 2.33373 7.53505 2.69995 7.59165 3.10041C7.69717 3.90046 7.89286 4.68601 8.17499 5.44207C8.2871 5.74034 8.31137 6.0645 8.24491 6.37614C8.17844 6.68778 8.02404 6.97383 7.79998 7.20041L6.74165 8.25874C7.92795 10.345 9.65536 12.0724 11.7417 13.2587L12.8 12.2004C13.0266 11.9764 13.3126 11.8219 13.6243 11.7555C13.9359 11.689 14.26 11.7133 14.5583 11.8254C15.3144 12.1075 16.0999 12.3032 16.9 12.4087C17.3048 12.4658 17.6745 12.6697 17.9388 12.9817C18.203 13.2936 18.3435 13.6917 18.3333 14.1004Z" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path></svg>						</span>
+										<span class="elementor-icon-list-text">93 655 82 68</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="mailto:hola@junts.cat" target="_blank" rel="nofollow">
+
+												<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.6667 3.33301H3.33335C2.41288 3.33301 1.66669 4.0792 1.66669 4.99967V14.9997C1.66669 15.9201 2.41288 16.6663 3.33335 16.6663H16.6667C17.5872 16.6663 18.3334 15.9201 18.3334 14.9997V4.99967C18.3334 4.0792 17.5872 3.33301 16.6667 3.33301Z" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path><path d="M18.3334 5.83301L10.8584 10.583C10.6011 10.7442 10.3036 10.8297 10 10.8297C9.69642 10.8297 9.39896 10.7442 9.14169 10.583L1.66669 5.83301" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path></svg>						</span>
+										<span class="elementor-icon-list-text">hola@junts.cat</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-5317e2e e-grid e-con-full e-con e-child" data-id="5317e2e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-2dd71a1 elementor-widget elementor-widget-heading" data-id="2dd71a1" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Segueix-nos</h2>				</div>
+				<div class="elementor-element elementor-element-8a2b502 elementor-shape-circle e-grid-align-left elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="8a2b502" data-element_type="widget" data-e-type="widget" data-widget_type="social-icons.default">
+							<div class="elementor-social-icons-wrapper elementor-grid" role="list">
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-fbf65b8" href="https://www.instagram.com/juntspercat/" target="_blank">
+						<span class="elementor-screen-only"></span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M14.167 1.66699H5.83366C3.53247 1.66699 1.66699 3.53247 1.66699 5.83366V14.167C1.66699 16.4682 3.53247 18.3337 5.83366 18.3337H14.167C16.4682 18.3337 18.3337 16.4682 18.3337 14.167V5.83366C18.3337 3.53247 16.4682 1.66699 14.167 1.66699Z" stroke="#00C3B2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path><path d="M13.3337 9.47525C13.4366 10.1688 13.3181 10.8771 12.9952 11.4994C12.6723 12.1218 12.1614 12.6264 11.5351 12.9416C10.9088 13.2569 10.1991 13.3666 9.5069 13.2552C8.81468 13.1438 8.17521 12.817 7.67944 12.3212C7.18367 11.8255 6.85685 11.186 6.74546 10.4938C6.63408 9.80154 6.74379 9.09183 7.05901 8.46556C7.37423 7.8393 7.8789 7.32837 8.50123 7.00545C9.12356 6.68254 9.83187 6.56407 10.5254 6.66692C11.2328 6.77182 11.8878 7.10147 12.3935 7.60717C12.8992 8.11288 13.2288 8.76782 13.3337 9.47525Z" stroke="#00C3B2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.583 5.41699H14.5913" stroke="#00C3B2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-f578de6" href="https://www.youtube.com/channel/UCG6dZxszooC9hpNRr1-LlJw" target="_blank">
+						<span class="elementor-screen-only"></span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2.08309 14.1667C1.50095 11.4194 1.50095 8.58061 2.08309 5.83333C2.15959 5.55434 2.30738 5.30006 2.51193 5.0955C2.71649 4.89095 2.97077 4.74316 3.24976 4.66667C7.7193 3.92622 12.2802 3.92622 16.7498 4.66667C17.0288 4.74316 17.283 4.89095 17.4876 5.0955C17.6921 5.30006 17.8399 5.55434 17.9164 5.83333C18.4986 8.58061 18.4986 11.4194 17.9164 14.1667C17.8399 14.4457 17.6921 14.6999 17.4876 14.9045C17.283 15.1091 17.0288 15.2568 16.7498 15.3333C12.2802 16.0739 7.71929 16.0739 3.24976 15.3333C2.97077 15.2568 2.71649 15.1091 2.51193 14.9045C2.30738 14.6999 2.15959 14.4457 2.08309 14.1667Z" stroke="#00C3B2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.33301 12.5L12.4997 10L8.33301 7.5V12.5Z" stroke="#00C3B2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-bf06d69" href="https://www.facebook.com/JxCatalunya/" target="_blank">
+						<span class="elementor-screen-only"></span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M14.9997 1.66699H12.4997C11.3946 1.66699 10.3348 2.10598 9.5534 2.88738C8.77199 3.66878 8.33301 4.72859 8.33301 5.83366V8.33366H5.83301V11.667H8.33301V18.3337H11.6663V11.667H14.1663L14.9997 8.33366H11.6663V5.83366C11.6663 5.61265 11.7541 5.40068 11.9104 5.2444C12.0667 5.08812 12.2787 5.00033 12.4997 5.00033H14.9997V1.66699Z" stroke="#00C3B2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-87b463e" href="https://x.com/juntsxcat" target="_blank">
+						<span class="elementor-screen-only"></span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none"><g clip-path="url(#clip0_2954_1281)"><path d="M1.98722 0.979592C2.22172 1.29499 2.45621 1.61039 2.6907 1.92208C2.86191 2.14842 3.03313 2.37477 3.20435 2.60482C3.47234 2.96104 3.7366 3.31725 4.00459 3.67347C4.22048 3.95918 4.43636 4.24119 4.64852 4.5269C4.97606 4.96475 5.3036 5.40631 5.63487 5.84416C6.00708 6.34137 6.37928 6.83488 6.75149 7.32839C7.14603 7.85529 7.54058 8.38961 7.93512 8.91651C8.26638 9.35807 8.60509 9.79592 8.93636 10.2375C9.30857 10.7347 9.67705 11.2319 10.0493 11.7254C10.3545 12.1299 10.656 12.538 10.9612 12.9425C10.9909 12.9833 11.017 13.0315 11.0914 13.0278C11.7279 13.0241 12.3607 13.0278 12.9972 13.0278C13.0158 13.0278 13.0381 13.0278 13.0679 13.0204C13.012 12.9462 12.9637 12.8794 12.9153 12.8163C12.7292 12.5714 12.5431 12.3302 12.3607 12.0853C12.1485 11.8033 11.9401 11.5213 11.7316 11.2393C11.5344 10.9722 11.3334 10.705 11.1324 10.4416C10.9239 10.1633 10.7155 9.88497 10.5071 9.61039C10.321 9.36549 10.1349 9.12059 9.95249 8.8757C9.74033 8.59369 9.52817 8.30798 9.31601 8.02597C9.11874 7.76252 8.92147 7.50278 8.7242 7.23933C8.48598 6.92022 8.25149 6.60111 8.01328 6.28572C7.77134 5.96289 7.52196 5.64007 7.28003 5.31725C6.98598 4.92393 6.69194 4.5269 6.3979 4.12987C5.96986 3.55473 5.53437 2.9833 5.10633 2.41187C4.75273 1.94434 4.40286 1.4731 4.05298 1.00186C4.03809 0.983302 4.00832 0.96475 3.98226 0.96475C3.32345 0.96475 2.66092 0.96475 2.00211 0.96475C1.99839 0.96475 1.99467 0.96475 1.99095 0.96475C1.99095 0.96846 1.99467 0.975881 1.99467 0.979592M12.9972 0C13.3731 0 13.7453 0 14.1212 0C14.1808 0 14.2403 0 14.2962 0C14.1808 0.12616 14.0654 0.252319 13.95 0.378479C13.5778 0.779221 13.2093 1.17996 12.8371 1.58071C12.5058 1.93692 12.1746 2.28943 11.8433 2.64564C11.5976 2.90909 11.352 3.17254 11.1101 3.43599C10.7713 3.80334 10.4326 4.17069 10.0939 4.53432C9.93015 4.71243 9.76266 4.88683 9.59889 5.06122C9.41278 5.25789 9.2304 5.45826 9.04802 5.65492C8.99219 5.71429 8.93636 5.77737 8.88425 5.84045C9.01452 6.01113 9.14479 6.18553 9.27879 6.35993C9.48723 6.63822 9.69566 6.92022 9.9041 7.19852C10.1349 7.50278 10.3656 7.80705 10.5927 8.10761C10.7639 8.33395 10.9314 8.5603 11.0989 8.78664C11.3185 9.08349 11.5418 9.37662 11.7614 9.66976C11.9996 9.98887 12.2378 10.308 12.4761 10.6271C12.7962 11.0538 13.1163 11.4842 13.4401 11.9109C13.8011 12.3896 14.1584 12.8646 14.5195 13.3432C14.6795 13.5584 14.8396 13.7737 14.9996 13.9889C14.713 13.9889 14.4227 13.9889 14.1361 13.9889C12.9823 13.9889 11.8321 13.9889 10.6783 13.9926C10.5592 13.9926 10.4959 13.9518 10.4326 13.8627C10.1795 13.5139 9.91899 13.1725 9.66216 12.8275C9.37928 12.449 9.10013 12.0705 8.81725 11.6957C8.60509 11.4137 8.39293 11.1354 8.18077 10.8534C7.95373 10.5529 7.7304 10.2486 7.50335 9.94434C7.30236 9.67718 7.09765 9.41002 6.89293 9.14286C6.73288 8.93135 6.57283 8.71614 6.40906 8.50093C6.31973 8.59369 6.2304 8.68646 6.14107 8.78293C5.98474 8.94991 5.82842 9.12059 5.67209 9.29128C5.3036 9.68831 4.93139 10.0891 4.56291 10.4861C4.23164 10.8423 3.90038 11.1948 3.56911 11.551C3.32718 11.8108 3.08152 12.0742 2.83958 12.3377C2.52693 12.6753 2.21055 13.013 1.89789 13.3506C1.70807 13.5584 1.51824 13.7662 1.32842 13.9703C1.31353 13.9852 1.2912 13.9926 1.26886 13.9926C0.848267 13.9926 0.427671 13.9926 -0.0078125 13.9926C0.0107979 13.9629 0.0219642 13.9406 0.0368525 13.9221C0.163403 13.7848 0.286232 13.6512 0.412783 13.5139C0.576555 13.3395 0.747771 13.1651 0.911542 12.9907C1.03809 12.8571 1.16464 12.7199 1.28747 12.5863C1.4438 12.4156 1.60013 12.2412 1.76018 12.0705C1.90534 11.9147 2.05422 11.7588 2.20311 11.603C2.32966 11.4694 2.45249 11.3358 2.57531 11.2022C2.72792 11.039 2.87308 10.8683 3.02569 10.705C3.18201 10.538 3.34206 10.3748 3.49839 10.2078C3.62122 10.0779 3.74405 9.94434 3.86688 9.81076C3.98971 9.67718 4.11626 9.5436 4.23909 9.41002C4.36192 9.28015 4.48474 9.14657 4.60757 9.01299C4.7304 8.87941 4.85695 8.74583 4.97978 8.61225C5.10261 8.48238 5.22544 8.34879 5.34827 8.21521C5.4711 8.08534 5.59392 7.95176 5.71303 7.81818C5.73909 7.7885 5.76514 7.75881 5.78375 7.72542C5.7912 7.71429 5.78747 7.6846 5.78003 7.67347C5.41526 7.18367 5.04678 6.69388 4.67829 6.20408C4.38053 5.80705 4.08276 5.40631 3.78871 5.00928C3.45373 4.5603 3.11502 4.11132 2.78003 3.66234C2.44504 3.21336 2.10633 2.76438 1.77134 2.31169C1.46241 1.89981 1.15348 1.49165 0.844545 1.07978C0.583999 0.742115 0.319731 0.38961 0.0554629 0.0371058C0.0480188 0.0296846 0.0442967 0.0148423 0.0405746 0.00371058C0.904098 0.00371058 1.76762 0.00371058 2.63487 0.00371058C3.25646 0.00371058 3.88177 0.00371058 4.50335 0.00371058C4.87928 0.504638 5.25522 1.00557 5.63487 1.50649C6.05174 2.06308 6.46861 2.61967 6.88549 3.17625C7.25397 3.66605 7.61874 4.15584 7.98722 4.64193C8.08028 4.76438 8.17705 4.88312 8.26266 5.00928C8.29616 5.05751 8.31477 5.03525 8.3371 5.00928C8.41899 4.91651 8.50087 4.82375 8.58648 4.73469C8.69442 4.61596 8.80981 4.50464 8.91775 4.38961C9.24529 4.0334 9.57283 3.67718 9.9041 3.32468C10.1907 3.0167 10.481 2.71243 10.7639 2.40445C11.0914 2.04824 11.419 1.69202 11.7503 1.33952C12.0964 0.96475 12.4463 0.593692 12.7962 0.222635C12.8632 0.148423 12.9339 0.0779221 13.0046 0.00371058" fill="#00C3B2"></path></g><defs><clipPath id="clip0_2954_1281"><rect width="15" height="14" fill="white"></rect></clipPath></defs></svg>					</a>
+				</span>
+					</div>
+						</div>
+				<div class="elementor-element elementor-element-04ecb05 elementor-widget elementor-widget-text-editor" data-id="04ecb05" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<p><strong>Accessibilitat:</strong> Aquest lloc web compleix amb els estàndards WCAG 2.1 nivell AA</p>								</div>
+				<div class="elementor-element elementor-element-ec87195 elementor-nav-menu__align-start elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="ec87195" data-element_type="widget" data-e-type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+								<nav aria-label="Menú" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-ec87195" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-8731"><a rel="privacy-policy" href="https://junts.cat/politicaprivacitat/" class="elementor-item">Política de privacitat</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8730"><a href="https://junts.cat/avislegal/" class="elementor-item">Avís legal</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23897"><a href="https://junts.cat/politicacookies/" class="elementor-item">Política de cookies</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-ec87195" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-8731"><a rel="privacy-policy" href="https://junts.cat/politicaprivacitat/" class="elementor-item" tabindex="-1">Política de privacitat</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8730"><a href="https://junts.cat/avislegal/" class="elementor-item" tabindex="-1">Avís legal</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23897"><a href="https://junts.cat/politicacookies/" class="elementor-item" tabindex="-1">Política de cookies</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-881f496 e-con e-atomic-element e-flexbox-base e-default-div e-9d74f7d " data-id="881f496" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="881f496" data-e-type="e-flexbox" data-id="881f496">
+    		<div class="elementor-element elementor-element-6ceb1af elementor-widget elementor-widget-text-editor" data-id="6ceb1af" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<p>© 2026 Junts per Catalunya. Tots els drets reservats.</p>								</div>
+		
+</div>
+		</footer>
+		
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/hello-elementor/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script>
+(function(){
+  var parts = window.location.pathname.split('/').filter(Boolean);
+  var idx = parts.indexOf('municipalisme');
+  var seg = idx !== -1 ? parts[idx + 1] : parts[0];
+  if(!seg) return;
+  var header = document.querySelector('.elementor-location-header');
+  if(!header) return;
+  var links = header.querySelectorAll('a[href*="/_municipi/"]');
+  links.forEach(function(a){
+    var href = a.getAttribute('href');
+    href = href.split('/_municipi/').join('/' + seg + '/');
+    href = href.split('contacte-_municipi').join('contacte-' + seg);
+    a.setAttribute('href', href);
+  });
+})();
+</script>			<script>
+				const registerAllyAction = () => {
+					if ( ! window?.ElementorProFrontendConfig || ! window?.elementorFrontend?.utils?.urlActions ) {
+						return;
+					}
+
+					elementorFrontend.utils.urlActions.addAction( 'allyWidget:open', () => {
+						if (window?.ea11yWidget?.widget?.open) {
+							return window.ea11yWidget.widget.isOpen()
+								? window.ea11yWidget.widget.close()
+								: window.ea11yWidget.widget.open();
+						}
+					} );
+				};
+
+				const waitingLimit = 30;
+				let retryCounter = 0;
+
+				const waitForElementorPro = () => {
+					return new Promise( ( resolve ) => {
+						const intervalId = setInterval( () => {
+							if ( retryCounter === waitingLimit ) {
+								resolve( null );
+							}
+
+							retryCounter++;
+
+							if ( window.elementorFrontend && window?.elementorFrontend?.utils?.urlActions ) {
+								clearInterval( intervalId );
+								resolve( window.elementorFrontend );
+							}
+								}, 100 ); // Check every 100 milliseconds for availability of elementorFrontend
+					});
+				};
+
+				waitForElementorPro().then( () => { registerAllyAction(); });
+			</script>
+					<div data-elementor-type="popup" data-elementor-id="6393" class="elementor elementor-6393 elementor-location-popup" data-elementor-settings="{&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;triggers&quot;:[],&quot;timing&quot;:[]}" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-34d503c e-flex e-con-boxed e-con e-parent" data-id="34d503c" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-ab94a52 elementor-widget elementor-widget-search" data-id="ab94a52" data-element_type="widget" data-e-type="widget" data-settings="{&quot;submit_trigger&quot;:&quot;click_submit&quot;,&quot;pagination_type_options&quot;:&quot;none&quot;}" data-widget_type="search.default">
+							<search class="e-search hidden" role="search">
+			<form class="e-search-form" action="https://junts.cat" method="get">
+
+				
+				<label class="e-search-label" for="search-ab94a52">
+					<span class="elementor-screen-only">
+						Search					</span>
+									</label>
+
+				<div class="e-search-input-wrapper">
+					<input id="search-ab94a52" placeholder="Escriu per començar a cercar..." class="e-search-input" type="search" name="s" value="" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results-ab94a52" aria-haspopup="listbox">
+					<i aria-hidden="true" class="fas fa-times"></i>										<output id="results-ab94a52" class="e-search-results-container hide-loader" aria-live="polite" aria-atomic="true" aria-label="Results for search" tabindex="0">
+						<div class="e-search-results"></div>
+											</output>
+									</div>
+				
+				
+				<button class="e-search-submit  " type="submit">
+					
+										<span class="">
+						Cercar					</span>
+									</button>
+				<input type="hidden" name="e_search_props" value="ab94a52-6393">
+			</form>
+		</search>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div data-elementor-type="popup" data-elementor-id="5004" class="elementor elementor-5004 elementor-location-popup" data-elementor-settings="{&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;triggers&quot;:[],&quot;timing&quot;:[]}" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-bbefd5a e-grid e-con-boxed e-con e-parent" data-id="bbefd5a" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-3e49e53 elementor-widget elementor-widget-html" data-id="3e49e53" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<iframe id="spotify-player" 
+  src="" 
+  width="100%" 
+  height="232" 
+  frameborder="0" 
+  allow="encrypted-media">
+</iframe>				</div>
+					</div>
+				</div>
+				</div>
+					<script>
+				( () => {
+					const lazyloadRunObserver = () => {
+						const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+						const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+							entries.forEach( ( entry ) => {
+								if ( entry.isIntersecting ) {
+									let lazyloadBackground = entry.target;
+									if( lazyloadBackground ) {
+										lazyloadBackground.classList.add( 'e-lazyloaded' );
+									}
+									lazyloadBackgroundObserver.unobserve( entry.target );
+								}
+							});
+						}, { rootMargin: '200px 0px 200px 0px' } );
+						lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+							lazyloadBackgroundObserver.observe( lazyloadBackground );
+						} );
+					};
+					const events = [
+						'DOMContentLoaded',
+						'elementor/lazyload/observe',
+					];
+					events.forEach( ( event ) => {
+						document.addEventListener( event, lazyloadRunObserver );
+					} );
+				} )();
+			</script>
+			<style>
+/* JxC — Comparteix aquest article: xarxes + copiar enllac (component compartit, 22/08/2026) */
+.share-wrapper { position: relative; display: inline-block; }
+
+.share-btn { display: flex; align-items: center; gap: 8px; background: none; border: none; cursor: pointer; color: #0a0a0a; font-family: Inter, sans-serif; font-size: 16px; font-style: normal; font-weight: 500; line-height: 24px; letter-spacing: -0.312px; padding: 0; }
+
+.share-btn:hover,
+.share-btn:focus { color: #00c4b3; background-color: #fff; }
+
+.share-dropdown { display: none; position: absolute; top: calc(100% + 10px); left: 0; background: #fff; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,.12); padding: 10px 14px; flex-direction: row; align-items: center; gap: 12px; z-index: 999; white-space: nowrap; }
+
+.share-dropdown.open { display: flex; }
+
+.share-network { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background-color: #f0f0f0; color: #555; text-decoration: none; border: none; cursor: pointer; padding: 0; transition: background-color .2s, color .2s; }
+
+.share-network:hover,
+.share-network:focus { background-color: #00c4b3; color: #fff; }
+
+.share-copy .icon-copied { display: none; }
+.share-copy.copied .icon-link { display: none; }
+.share-copy.copied .icon-copied { display: flex; }
+.share-copy.copied { background-color: #1fae7a; color: #fff; }
+</style>
+<script>
+(function () {
+  var toggle = document.getElementById('shareToggle');
+  var dropdown = document.getElementById('shareDropdown');
+  if (!toggle || !dropdown) return;
+
+  var pageUrl = window.location.href;
+  var encodedUrl = encodeURIComponent(pageUrl);
+  var encodedTitle = encodeURIComponent(document.title);
+
+  var urls = {
+    twitter: 'https://twitter.com/intent/tweet?url=' + encodedUrl,
+    whatsapp: 'https://api.whatsapp.com/send?text=' + encodedTitle + '%20' + encodedUrl,
+    telegram: 'https://t.me/share/url?url=' + encodedUrl + '&text=' + encodedTitle,
+    facebook: 'https://www.facebook.com/sharer/sharer.php?u=' + encodedUrl,
+    linkedin: 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodedUrl
+  };
+
+  document.querySelectorAll('.share-network[data-network]').forEach(function (a) {
+    var network = a.getAttribute('data-network');
+    if (urls[network]) {
+      a.href = urls[network];
+      a.target = '_blank';
+      a.rel = 'noopener';
+    }
+  });
+
+  var copyBtn = document.getElementById('shareCopyLink');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      e.preventDefault();
+      var resetLabel = function () { copyBtn.classList.remove('copied'); };
+      var markCopied = function () {
+        copyBtn.classList.add('copied');
+        clearTimeout(copyBtn._resetTimer);
+        copyBtn._resetTimer = setTimeout(resetLabel, 2000);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(pageUrl).then(markCopied);
+      } else {
+        var tmp = document.createElement('input');
+        tmp.value = pageUrl;
+        document.body.appendChild(tmp);
+        tmp.select();
+        document.execCommand('copy');
+        document.body.removeChild(tmp);
+        markCopied();
+      }
+    });
+  }
+
+  toggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    dropdown.classList.toggle('open');
+  });
+
+  document.addEventListener('click', function () {
+    dropdown.classList.remove('open');
+  });
+})();
+</script><script>/* [23/08/2026] Dos correccions sobre la versio anterior:
+   1) No s'esborra el hash de les pestanyes (#noticies, #newsletter,
+      #sala-de-premsa, #agenda). El snippet 8777 les fa servir per obrir la
+      pestanya corresponent, i esborrar l'adreca feia que un enllac compartit
+      deixes de funcionar en recarregar la pagina.
+   2) Es conserva la query string. Abans es reescrivia nomes amb pathname, cosa
+      que eliminava els parametres de campanya (utm_source i companyia) de
+      qualsevol adreca que tambe portes hash. */
+document.addEventListener('DOMContentLoaded', function() {
+    var hash = window.location.hash;
+    if (!hash) return;
+
+    var pestanyes = ['#noticies', '#newsletter', '#sala-de-premsa', '#agenda'];
+    if (pestanyes.indexOf(hash) !== -1) return;
+
+    setTimeout(function() {
+        history.replaceState(null, null, window.location.pathname + window.location.search);
+    }, 100);
+});
+</script><script>document.addEventListener('DOMContentLoaded', function() {
+    var hash = window.location.hash;
+    var tabMap = {
+        '#noticies': 'Notícies',
+        '#newsletter': 'Newsletter',
+        '#sala-de-premsa': 'Sala de Premsa',
+        '#agenda': 'Agenda'
+    };
+
+    if(tabMap[hash]) {
+        setTimeout(function() {
+            var tabs = document.querySelectorAll('.e-n-tab-title');
+            tabs.forEach(function(tab) {
+                if (tab.textContent.trim() === tabMap[hash]) {
+                    tab.click();
+                    tab.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            });
+        }, 500);
+    }
+});</script><script id="ctf_scripts-js-extra">
+var ctf = {"ajax_url":"https://junts.cat/wp-admin/admin-ajax.php","i18n":{"newTweetsLoaded":"%s new tweets loaded","noMoreTweets":"That's all! No more Tweets to load"}};
+var ctfElementorData = {"feeds":[{"id":"1","feed_name":"@Juntsmunicipis"}],"feed_url":"https://junts.cat/wp-admin/admin.php?page=ctf-feed-builder","is_pro_active":""};
+var ctf = {"ajax_url":"https://junts.cat/wp-admin/admin-ajax.php","i18n":{"newTweetsLoaded":"%s new tweets loaded","noMoreTweets":"That's all! No more Tweets to load"}};
+//# sourceURL=ctf_scripts-js-extra
+</script>
+<script id="ctf_scripts-js" src="https://junts.cat/wp-content/plugins/custom-twitter-feeds/js/ctf-scripts.min.js?ver=2.11.1&#038;ver=2.11.1"></script>
+<script id="wp-hooks-js" src="https://junts.cat/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
+<script id="wp-i18n-js" src="https://junts.cat/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="swv-js" src="https://junts.cat/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.2.4.1"></script>
+<script id="contact-form-7-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "contact-form-7", {"translation-revision-date":"2026-10-09 10:23:41+0000","generator":"GlotPress\/4.1.0","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"ca"},"This contact form is placed in the wrong place.":["Aquest formulari de contacte est\u00e0 col\u00b7locat en el lloc equivocat."],"Error:":["Error:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+//# sourceURL=contact-form-7-js-translations
+</script>
+<script id="contact-form-7-js-before">
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/junts.cat\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    }
+};
+//# sourceURL=contact-form-7-js-before
+</script>
+<script id="contact-form-7-js" src="https://junts.cat/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.2.4.1"></script>
+<script id="wpgp-youtube-gallery-features-js" src="https://junts.cat/wp-content/plugins/video-gallery-playlist/public/js/wpgpyt-features.js?ver=1786875506"></script>
+<script id="underscore-js" src="https://junts.cat/wp-includes/js/underscore.min.js?ver=1.13.8"></script>
+<script id="wp-util-js-extra">
+var _wpUtilSettings = {"ajax":{"url":"/wp-admin/admin-ajax.php"}};
+//# sourceURL=wp-util-js-extra
+</script>
+<script id="wp-util-js" src="https://junts.cat/wp-includes/js/wp-util.min.js?ver=7.1.4"></script>
+<script id="banner-js-extra">
+var cookiezBannerSettings = {"isDevelopment":"","isRTL":"","language":"en","publicApiKey":"ecookiez-5dfb8547-c094-41c9-9ee3-1d4aa9acee7b","url":"https://junts.cat/actualitat/nogueras-la-garantia-per-a-les-empreses-els-treballadors-els-autonoms-i-leconomia-es-junts","serviceUrl":"https://my.elementor.com/apps/api/v1/cookiez-consent","settings":{"templateType":"opt-in","onboardingCurrentStep":"step_three","bannerType":"banner","supportGcm":true,"isOnboardingCompleted":true,"designBannerInfotipDismissed":true},"content":{"languages":["en"],"disabledLanguages":[],"content":{"en":{"name":"English","opt-in":{"title":"Aquest lloc web utilitza cookies","cookie-message":"Utilitzem cookies per personalitzar el contingut, oferir funcions de xarxes socials i analitzar el nostre tr\u00e0nsit. Tamb\u00e9 compartim informaci\u00f3 sobre l'\u00fas que feu del nostre lloc amb els nostres socis d'anal\u00edtica. Podeu canviar les vostres prefer\u00e8ncies en qualsevol moment. Per obtenir m\u00e9s informaci\u00f3, consulteu la nostra Pol\u00edtica de privadesa i la Pol\u00edtica de cookies.","buttons":{"accept-all":"Accepta-ho tot","deny":"Rebutja","customize":"Personalitza"},"banner-options":{"cookie-policy-link":true,"privacy-policy-link":true,"do-not-sell":false,"cookie-policy-link-text":"Pol\u00edtica de cookies","privacy-policy-link-text":"Pol\u00edtica de privacitat","do-not-sell-link-text":"Do not sell or share my personal information","cookie-policy-url":"https://junts.cat/politicacookies/","privacy-policy-url":"https://junts.cat/politicaprivacitat/"},"preferences":{"header":"Personalitza les prefer\u00e8ncies de consentiment","privacy-overview":"Utilitzem cookies per millorar la vostra experi\u00e8ncia en aquest lloc web. Podeu triar quins tipus de cookies voleu permetre i canviar les vostres prefer\u00e8ncies en qualsevol moment. Desactivar les cookies pot afectar la vostra experi\u00e8ncia en aquest lloc web. Podeu obtenir m\u00e9s informaci\u00f3 consultant la nostra Pol\u00edtica de cookies.","accept-button":"Accepta-ho tot","deny-button":"Rebutja","save-preferences":"Desa les prefer\u00e8ncies"},"cookie-categories":{"necessary":{"title":"Necess\u00e0ries","description":"Aquestes cookies s\u00f3n essencials perqu\u00e8 pugueu navegar pel lloc web i utilitzar-ne les funcions, com ara accedir a \u00e0rees segures del lloc o oferir els serveis b\u00e0sics."},"functional":{"title":"Funcionals","description":"Aquestes cookies permeten que un lloc web recordi les opcions que heu fet anteriorment, com ara l'idioma preferit, la regi\u00f3 per a la qual voleu informaci\u00f3 meteorol\u00f2gica o el vostre nom d'usuari i contrasenya perqu\u00e8 pugueu iniciar sessi\u00f3 autom\u00e0ticament."},"analytics":{"title":"Anal\u00edtiques","description":"Aquestes cookies recullen informaci\u00f3 sobre com utilitzeu un lloc web, com ara quines p\u00e0gines heu visitat i en quins enlla\u00e7os heu fet clic. Cap d'aquesta informaci\u00f3 es pot utilitzar per identificar-vos. Tota \u00e9s agregada i, per tant, anonimitzada. La seva \u00fanica finalitat \u00e9s millorar les funcions del lloc web."},"advertising":{"title":"Publicitat","description":"Aquestes cookies fan un seguiment de la vostra activitat en l\u00ednia per ajudar els anunciants a oferir publicitat m\u00e9s rellevant o per limitar quantes vegades veieu un anunci. Aquestes cookies poden compartir aquesta informaci\u00f3 amb altres organitzacions o anunciants."},"unclassified":{"title":"Sense categoritzar","description":"Aquestes s\u00f3n cookies que actualment estan en proc\u00e9s de classificaci\u00f3 juntament amb altres cookies."}}},"opt-out":{"title":"This website uses cookies","cookie-message":"We use cookies to personalize content, provide social media features, and analyze our traffic. We also share information about your use of our site with our analytics partners. You can change your preferences at any time. For more information, please see our Privacy Policy and Cookie Policy.","buttons":{"accept-all":"Accept All","deny":"Deny","customize":"Do Not Sell"},"banner-options":{"cookie-policy-link":false,"privacy-policy-link":false,"do-not-sell":true,"cookie-policy-link-text":"Cookie Policy","privacy-policy-link-text":"Privacy Policy","do-not-sell-link-text":"Do not sell or share my personal information","cookie-policy-url":"","privacy-policy-url":""},"opt-out-dialog":{"header":"Opt-out dialog","privacy-overview":"We use cookies to improve your experience on this website. You may choose which types of cookies to allow and change your preferences at any time. Disabling cookies may impact your experience on this website. You can learn more by viewing our Cookie Policy.","consent-label":"Do not sell or share my personal information","deny-button":"Cancel","save-preferences":"Save preferences"}}}}},"cookies":[{"id":"13","scan_id":null,"name":"_ga","domain":".junts.cat","duration":"63072000","category":"analytics","description":"Google Analytics: distingeix usuaris de manera an\u00f2nima per elaborar estad\u00edstiques d\u2019\u00fas del web.","type":"manual","created_at":"2026-11-12 16:48:35","updated_at":"2026-11-12 16:48:35"},{"id":"14","scan_id":null,"name":"_ga_1K0F14DGRE","domain":".junts.cat","duration":"63072000","category":"analytics","description":"Google Analytics: mant\u00e9 l\u2019estat de la sessi\u00f3 per a les estad\u00edstiques d\u2019\u00fas del web.","type":"manual","created_at":"2026-11-12 16:48:52","updated_at":"2026-11-12 16:48:52"},{"id":"15","scan_id":null,"name":"cookiez-user-consent","domain":"junts.cat","duration":"15552000","category":"necessary","description":"Desa les prefer\u00e8ncies de cookies que has triat en aquest b\u00e0ner.","type":"manual","created_at":"2026-11-12 16:48:53","updated_at":"2026-11-12 16:48:53"},{"id":"17","scan_id":null,"name":"NID","domain":"google.com","duration":"15552000","category":"advertising","description":"Google Maps, en els mapes incrustats: desa prefer\u00e8ncies i informaci\u00f3 per als mapes de Google.","type":"manual","created_at":"2026-11-12 16:48:55","updated_at":"2026-11-12 16:48:55"},{"id":"12","scan_id":"11","name":"PHPSESSID","domain":"www.thepericas.com","duration":null,"category":"functional","description":"Cookie generated by applications based on the PHP language. This is a general purpose identifier used to maintain user session variables. It is normally a random generated number, how it is used can be specific to the site, but a good example is maintaining a logged-in status for a user between pages.","type":"scan","created_at":"2026-06-26 13:08:10","updated_at":"2026-06-26 13:08:10"},{"id":"23","scan_id":null,"name":"sp_landing","domain":"spotify.com","duration":"86400","category":"advertising","description":"Spotify, en els reproductors incrustats: registra la p\u00e0gina d\u2019entrada al reproductor.","type":"manual","created_at":"2026-11-12 16:49:25","updated_at":"2026-11-12 16:49:25"},{"id":"22","scan_id":null,"name":"sp_t","domain":"spotify.com","duration":"31536000","category":"advertising","description":"Spotify, en els reproductors incrustats: identifica el reproductor i el seu \u00fas.","type":"manual","created_at":"2026-11-12 16:49:25","updated_at":"2026-11-12 16:49:25"},{"id":"20","scan_id":null,"name":"VISITOR_INFO1_LIVE","domain":"youtube.com","duration":"15552000","category":"advertising","description":"YouTube (Google), en els v\u00eddeos incrustats: estima l\u2019amplada de banda per a la reproducci\u00f3.","type":"manual","created_at":"2026-11-12 16:49:24","updated_at":"2026-11-12 16:49:24"},{"id":"21","scan_id":null,"name":"VISITOR_PRIVACY_METADATA","domain":"youtube.com","duration":"15552000","category":"advertising","description":"YouTube (Google), en els v\u00eddeos incrustats: desa l\u2019estat de consentiment del reproductor.","type":"manual","created_at":"2026-11-12 16:49:24","updated_at":"2026-11-12 16:49:24"},{"id":"18","scan_id":null,"name":"wordpress_*","domain":"junts.cat","duration":"31536000","category":"necessary","description":"Nom\u00e9s per a usuaris amb acc\u00e9s a l\u2019\u00e0rea privada: mantenen la sessi\u00f3 i les prefer\u00e8ncies de l\u2019administraci\u00f3.","type":"manual","created_at":"2026-11-12 16:49:07","updated_at":"2026-11-12 16:49:07"},{"id":"19","scan_id":null,"name":"wp-settings-*","domain":"junts.cat","duration":"31536000","category":"necessary","description":"Nom\u00e9s per a usuaris amb acc\u00e9s a l\u2019\u00e0rea privada: mantenen la sessi\u00f3 i les prefer\u00e8ncies de l\u2019administraci\u00f3.","type":"manual","created_at":"2026-11-12 16:49:23","updated_at":"2026-11-12 16:49:23"},{"id":"11","scan_id":"11","name":"wpchat_session_id","domain":"junts.cat","duration":"86396","category":"functional","description":"Mant\u00e9 la sessi\u00f3 del xat d\u2019atenci\u00f3 del web.","type":"scan","created_at":"2026-06-26 13:08:10","updated_at":"2026-06-26 13:08:10"},{"id":"16","scan_id":null,"name":"YSC","domain":"youtube.com","duration":null,"category":"advertising","description":"YouTube (Google), en els v\u00eddeos incrustats: registra un identificador \u00fanic per mantenir estad\u00edstiques dels v\u00eddeos vistos.","type":"manual","created_at":"2026-11-12 16:48:54","updated_at":"2026-11-12 16:48:54"}],"translations":{"cookiez":"Cookie Consent","cookies":"Cookies","close":"Close","cookie":"Cookie:","duration":"Duration:","description":"Description:","noCookiesInCategory":"No cookies currently in this category.","enableCategoryCookies":"Enable %s cookies","alwaysActive":"Always active"},"integrations":{"wpConsentApiActive":false,"siteKitConsentMode":false,"delegateGcmToSiteKit":false},"cookiesHash":"d7fdc67d9cffd148da65b99e55e4cb0e","geoEndpoint":"https://junts.cat/wp-json/cookiez/v1/banner/geo","wpRestNonce":"597d140a9d"};
+//# sourceURL=banner-js-extra
+</script>
+<script id="banner-js" src="https://junts.cat/wp-content/plugins/cookiez/assets/build/banner.js?ver=6b562b9aa0a8cbe0378b"></script>
+<script id="banner-js-after">
+			(function() {
+				const registerCookiezPreferencesAction = () => {
+					if ( ! window?.ElementorProFrontendConfig || ! window?.elementorFrontend?.utils?.urlActions ) {
+						return;
+					}
+
+					elementorFrontend.utils.urlActions.addAction( 'cookiezBanner:openPreferences', () => {
+						window?.cookiezBanner?.screenManager?.openPreferences?.();
+					} );
+				};
+
+				const waitingLimit = 30;
+				let retryCounter = 0;
+
+				const waitForElementorPro = () => {
+					return new Promise( ( resolve ) => {
+						const intervalId = setInterval( () => {
+							if ( retryCounter === waitingLimit ) {
+								resolve( null );
+							}
+
+							retryCounter++;
+
+							if ( window.elementorFrontend && window?.elementorFrontend?.utils?.urlActions ) {
+								clearInterval( intervalId );
+								resolve( window.elementorFrontend );
+							}
+						}, 100 );
+					});
+				};
+
+				waitForElementorPro().then( () => { registerCookiezPreferencesAction(); } );
+			}());
+		
+//# sourceURL=banner-js-after
+</script>
+<script id="ea11y-widget-js-extra">
+var ea11yWidget = {"iconSettings":{"style":{"icon":"custom","size":"medium","color":"#2563eb","cornerRadius":{"radius":32,"unit":"px"},"custom":{"id":1943,"url":"https://junts.cat/wp-content/uploads/2026/04/Icon-1-1.svg","mime":"image/svg+xml","svg":"\u003Csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\"\u003E\u003Cg clip-path=\"url(#clip0_100_494)\"\u003E\u003Cpath d=\"M8.00001 14.6673C11.6819 14.6673 14.6667 11.6825 14.6667 8.00065C14.6667 4.31875 11.6819 1.33398 8.00001 1.33398C4.31811 1.33398 1.33334 4.31875 1.33334 8.00065C1.33334 11.6825 4.31811 14.6673 8.00001 14.6673Z\" stroke=\"white\" stroke-width=\"1.33333\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003E\u003C/path\u003E\u003Cpath d=\"M8 12C9.06087 12 10.0783 11.5786 10.8284 10.8284C11.5786 10.0783 12 9.06087 12 8C12 6.93913 11.5786 5.92172 10.8284 5.17157C10.0783 4.42143 9.06087 4 8 4V12Z\" stroke=\"white\" stroke-width=\"1.33333\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003E\u003C/path\u003E\u003C/g\u003E\u003Cdefs\u003E\u003CclipPath id=\"clip0_100_494\"\u003E\u003Crect width=\"16\" height=\"16\" fill=\"white\"\u003E\u003C/rect\u003E\u003C/clipPath\u003E\u003C/defs\u003E\u003C/svg\u003E"}},"position":{"desktop":{"hidden":false,"enableExactPosition":false,"exactPosition":{"horizontal":{"direction":"right","value":10,"unit":"px"},"vertical":{"direction":"bottom","value":10,"unit":"px"}},"position":"top-right"},"mobile":{"hidden":false,"enableExactPosition":false,"exactPosition":{"horizontal":{"direction":"right","value":10,"unit":"px"},"vertical":{"direction":"bottom","value":10,"unit":"px"}},"position":"bottom-right"}}},"toolsSettings":{"bigger-text":{"enabled":true},"bigger-line-height":{"enabled":true},"text-align":{"enabled":true},"readable-font":{"enabled":true},"grayscale":{"enabled":true},"contrast":{"enabled":true},"page-structure":{"enabled":true},"sitemap":{"enabled":false,"url":"https://junts.cat/wp-sitemap.xml"},"reading-mask":{"enabled":true},"hide-images":{"enabled":true},"pause-animations":{"enabled":true},"highlight-links":{"enabled":true},"focus-outline":{"enabled":true},"screen-reader":{"enabled":false},"remove-elementor-label":{"enabled":false}},"accessibilityStatementURL":"","analytics":{"enabled":false,"url":null}};
+//# sourceURL=ea11y-widget-js-extra
+</script>
+<script id="ea11y-widget-js" src="https://cdn.elementor.com/a11y/widget.js?api_key=ea11y-9ed59088-ef4e-4382-a32d-f78effd9b9f3&#038;ver=4.1.4"referrerPolicy="origin"></script>
+<script id="ea11y-remediation-module-chunk-lib-postcss-js" src="https://junts.cat/wp-content/plugins/pojo-accessibility/assets/build/lib-postcss.js?ver=dd3d6ae95e727956a431"></script>
+<script id="remediation-module-js" src="https://junts.cat/wp-content/plugins/pojo-accessibility/assets/build/remediation-module.js?ver=dd3d6ae95e727956a431"></script>
+<script id="dflip-script-js" src="https://junts.cat/wp-content/plugins/3d-flipbook-dflip-lite/assets/js/dflip.min.js?ver=2.4.37"></script>
+<script id="wd-asl-ajaxsearchlite-js-before">
+window.ASL = typeof window.ASL !== 'undefined' ? window.ASL : {}; window.ASL.wp_rocket_exception = "DOMContentLoaded"; window.ASL.ajaxurl = "https:\/\/junts.cat\/wp-admin\/admin-ajax.php"; window.ASL.backend_ajaxurl = "https:\/\/junts.cat\/wp-admin\/admin-ajax.php"; window.ASL.homeurl = "https:\/\/junts.cat\/"; window.ASL.asl_url = "https:\/\/junts.cat\/wp-content\/plugins\/ajax-search-lite\/"; window.ASL.rest_url = "https:\/\/junts.cat\/wp-json\/"; window.ASL.detect_ajax = true; window.ASL.media_query = 4789; window.ASL.version = 4789; window.ASL.pageHTML = ""; window.ASL.additional_scripts = []; window.ASL.script_async_load = false; window.ASL.init_only_in_viewport = true; window.ASL.font_url = "https:\/\/junts.cat\/wp-content\/plugins\/ajax-search-lite\/css\/fonts\/icons2.woff2"; window.ASL.highlight = {"enabled":false,"data":[]}; window.ASL.analytics = {"method":false,"tracking_id":"","event":{"focus":{"items":[]},"search_start":{"items":[]},"search_end":{"items":[]},"magnifier":{"items":[]},"return":{"items":[]},"facet_change":{"items":[]},"result_click":{"items":[]}}}; window.ASL.statistics = {"enabled":false,"uid":0,"nonce":""}; window.ASL.cache = {"enabled":false,"scope":"","nonce":"","type":"super_file","blog":1,"list":[],"url":"https:\/\/junts.cat\/wp-content\/cache\/asp\/results\/","option_keys":["asl_gen","customset","categoryset","post_parent","qtranslate_lang","wpml_lang","polylang_lang","current_page_id","filters_changed","filters_initial","woo_currency"]};
+//# sourceURL=wd-asl-ajaxsearchlite-js-before
+</script>
+<script id="wd-asl-ajaxsearchlite-js" src="https://junts.cat/wp-content/plugins/ajax-search-lite/js/min/plugin/merged/asl.min.js?ver=4789"></script>
+<script id="smartmenus-js" src="https://junts.cat/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1"></script>
+<script id="elementor-webpack-runtime-js" src="https://junts.cat/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.3.6"></script>
+<script id="elementor-frontend-modules-js" src="https://junts.cat/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.3.6"></script>
+<script id="jquery-ui-core-js-before">
+jQuery.uiBackCompat = true;
+//# sourceURL=jquery-ui-core-js-before
+</script>
+<script id="jquery-ui-core-js" src="https://junts.cat/wp-includes/js/jquery/ui/core.min.js?ver=1.14.2"></script>
+<script id="elementor-frontend-js-extra">
+var EAELImageMaskingConfig = {"svg_dir_url":"https://junts.cat/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/img/image-masking/svg-shapes/"};
+//# sourceURL=elementor-frontend-js-extra
+</script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Comparteix al Facebook","shareOnX":"Comparteix a X","pinIt":"Fixa-ho","download":"Baixa","downloadImage":"Baixa la imatge","fullscreen":"Pantalla completa","zoom":"Escalada","share":"Comparteix","playVideo":"Reprodueix v\u00eddeo","previous":"Anterior","next":"Seg\u00fcent","close":"Tanca","a11yCarouselPrevSlideMessage":"Diapositiva anterior","a11yCarouselNextSlideMessage":"Seg\u00fcent diapositiva","a11yCarouselFirstSlideMessage":"Aquesta \u00e9s la primera diapositiva","a11yCarouselLastSlideMessage":"Aquesta \u00e9s l'\u00faltima diapositiva","a11yCarouselPaginationBulletMessage":"Ves a la diapositiva"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"M\u00f2bil vertical","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"M\u00f2bil horitzontal","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tauleta vertical","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tauleta horitzontal","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Port\u00e0til","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Pantalla ampla","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},
+"hasCustomBreakpoints":false},"version":"4.3.6","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"nested-elements":true,"e_atomic_elements":true,"e_opt_in_v4":true,"import-export-customization":true,"e_pro_atomic_form":true,"e_pro_collection_loop":true,"mega-menu":true},"urls":{"assets":"https:\/\/junts.cat\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/junts.cat\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/junts.cat\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"eb033276c2","atomicFormsSendForm":"0572cf5c44"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":24020,"title":"Nogueras%3A%20%E2%80%9CLa%20garantia%20per%20a%20les%20empreses%2C%20els%20treballadors%2C%20els%20aut%C3%B2noms%20i%20l%E2%80%99economia%20%C3%A9s%20Junts%E2%80%9D%20-%20Junts","excerpt":"","featuredImage":"https:\/\/junts.cat\/wp-content\/uploads\/2026\/11\/photo_6039768120890692163_y-1024x682.webp"}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script id="elementor-frontend-js" src="https://junts.cat/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.3.6"></script>
+<script id="e-sticky-js" src="https://junts.cat/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=4.3.3"></script>
+<script id="eael-general-js-extra">
+var localize = {"ajaxurl":"https://junts.cat/wp-admin/admin-ajax.php","nonce":"5a2c079a59","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"https://junts.cat/actualitat/nogueras-la-garantia-per-a-les-empreses-els-treballadors-els-autonoms-i-leconomia-es-junts/","cart_redirectition":"","cart_page_url":"","el_breakpoints":{"mobile":{"label":"M\u00f2bil vertical","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"M\u00f2bil horitzontal","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tauleta vertical","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tauleta horitzontal","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Port\u00e0til","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Pantalla ampla","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}};
+//# sourceURL=eael-general-js-extra
+</script>
+<script id="eael-general-js" src="https://junts.cat/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=6.8.8"></script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/junts.cat\/wp-admin\/admin-ajax.php","nonce":"3e944b176f","urls":{"assets":"https:\/\/junts.cat\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/junts.cat\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},
+"facebook_sdk":{"lang":"ca","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/junts.cat\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+//# sourceURL=elementor-pro-frontend-js-before
+</script>
+<script id="elementor-pro-frontend-js" src="https://junts.cat/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=4.3.3"></script>
+<script id="pro-elements-handlers-js" src="https://junts.cat/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=4.3.3"></script>
+        <script data-cfasync="false">
+            window.dFlipLocation = 'https://junts.cat/wp-content/plugins/3d-flipbook-dflip-lite/assets/';
+            window.dFlipWPGlobal = {"text":{"toggleSound":"Turn on\/off Sound","toggleThumbnails":"Toggle Thumbnails","toggleOutline":"Toggle Outline\/Bookmark","previousPage":"Previous Page","nextPage":"Next Page","toggleFullscreen":"Toggle Fullscreen","zoomIn":"Zoom In","zoomOut":"Zoom Out","toggleHelp":"Toggle Help","singlePageMode":"Single Page Mode","doublePageMode":"Double Page Mode","downloadPDFFile":"Download PDF File","gotoFirstPage":"Goto First Page","gotoLastPage":"Goto Last Page","share":"Share","mailSubject":"I wanted you to see this FlipBook","mailBody":"Check out this site {{url}}","loading":"DearFlip: Loading "},"viewerType":"flipbook","moreControls":"download,pageMode,startPage,endPage,sound","hideControls":"","scrollWheel":"false","backgroundColor":"#777","backgroundImage":"","height":"auto","paddingLeft":"20","paddingRight":"20","controlsPosition":"bottom","duration":800,"soundEnable":"true","enableDownload":"true","showSearchControl":"false","showPrintControl":"false","enableAnnotation":false,"enableAnalytics":"false","webgl":"true","hard":"none","maxTextureSize":"1600","rangeChunkSize":"524288","zoomRatio":1.5,"stiffness":3,"pageMode":"0","singlePageMode":"0","pageSize":"0","autoPlay":"false","autoPlayDuration":5000,"autoPlayStart":"false","linkTarget":"2","sharePrefix":"flipbook-"};
+        </script>
+              <span class="pp-hide-empty-menu-config" data-hide-parent-div="0" hidden></span>
+        <script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://junts.cat/wp-includes/js/wp-emoji-release.min.js?ver=7.1.4"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://junts.cat/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<script>
+(function () {
+  'use strict';
+
+  // ── CONTRASTE ──────────────────────────────────────────────
+  function toggleContrast() {
+    var active = document.documentElement.classList.toggle('acc-high-contrast');
+    localStorage.setItem('acc_contrast', active ? '1' : '0');
+    setActive('[data-accessibility="contrast"]', active);
+  }
+
+  // ── TAMAÑO DE TEXTO ─────────────────────────────────────────
+  var fontLevels = ['', 'acc-font-md', 'acc-font-lg'];
+  var fontIndex = 0;
+
+  function cycleFontSize() {
+    document.body.classList.remove('acc-font-md', 'acc-font-lg');
+    fontIndex = (fontIndex + 1) % fontLevels.length;
+    if (fontLevels[fontIndex]) document.body.classList.add(fontLevels[fontIndex]);
+    localStorage.setItem('acc_font', fontIndex);
+    setActive('[data-accessibility="fontsize"]', fontIndex > 0);
+  }
+
+  // ── LECTOR ──────────────────────────────────────────────────
+  var readerOn = false;
+
+  function toggleReader() {
+    readerOn = !readerOn;
+    document.body.classList.toggle('acc-reader-active', readerOn);
+    localStorage.setItem('acc_reader', readerOn ? '1' : '0');
+    setActive('[data-accessibility="reader"]', readerOn);
+    if (!readerOn) window.speechSynthesis.cancel();
+  }
+
+  document.addEventListener('click', function (e) {
+    if (!readerOn) return;
+    var el = e.target.closest('p,h1,h2,h3,h4,h5,h6,li,a,button,label,span,td,th');
+    if (!el || el.closest('[data-accessibility]')) return;
+    e.preventDefault();
+    speak(el);
+  });
+
+  function speak(el) {
+    if (!window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    document.querySelectorAll('.acc-speaking').forEach(function (n) { n.classList.remove('acc-speaking'); });
+    el.classList.add('acc-speaking');
+    var utt = new SpeechSynthesisUtterance(el.innerText.trim());
+    utt.lang = document.documentElement.lang || 'es-ES';
+    utt.onend = function () { el.classList.remove('acc-speaking'); };
+    window.speechSynthesis.speak(utt);
+  }
+
+  // ── UTILIDAD ────────────────────────────────────────────────
+  function setActive(selector, state) {
+    document.querySelectorAll(selector).forEach(function (btn) {
+      btn.classList.toggle('acc-active', state);
+      btn.setAttribute('aria-pressed', state);
+    });
+  }
+
+  // ── INICIALIZAR ─────────────────────────────────────────────
+  function init() {
+    if (localStorage.getItem('acc_contrast') === '1') {
+      document.documentElement.classList.add('acc-high-contrast');
+      setActive('[data-accessibility="contrast"]', true);
+    }
+    var savedFont = parseInt(localStorage.getItem('acc_font'));
+    if (savedFont > 0 && savedFont < fontLevels.length) {
+      fontIndex = savedFont;
+      document.body.classList.add(fontLevels[fontIndex]);
+      setActive('[data-accessibility="fontsize"]', true);
+    }
+    if (localStorage.getItem('acc_reader') === '1') {
+      readerOn = true;
+      document.body.classList.add('acc-reader-active');
+      setActive('[data-accessibility="reader"]', true);
+    }
+
+    document.querySelectorAll('[data-accessibility="contrast"]').forEach(function (btn) {
+      btn.addEventListener('click', toggleContrast);
+    });
+    document.querySelectorAll('[data-accessibility="fontsize"]').forEach(function (btn) {
+      btn.addEventListener('click', cycleFontSize);
+    });
+    document.querySelectorAll('[data-accessibility="reader"]').forEach(function (btn) {
+      btn.addEventListener('click', toggleReader);
+    });
+  }
+
+  document.readyState === 'loading'
+    ? document.addEventListener('DOMContentLoaded', init)
+    : init();
+})();
+</script>
+
+</body>
+</html>
+<!--
+Performance optimized by Redis Object Cache. Learn more: https://wprediscache.com
+
+Retrieved 9818 objects (4 MB) from Redis using PhpRedis (v6.3.0).
+-->

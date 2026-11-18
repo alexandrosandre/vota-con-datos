@@ -1,86 +1,88 @@
 {
  "aprobado": true,
  "revisor": "Claude (Anthropic), pasada independiente",
- "fecha": "2026-11-12",
+ "fecha": "2026-11-18",
  "base": "complemento",
- "alcance": "2 prioridades (pp-c01 y pp-c02) × 8 criterios. Se abrieron las 39 URL distintas de seleccion.json y evaluacion.json con una petición normal: 38 respondieron 200; revista.seg-social.es devolvió 403 (las cifras del IMV de octubre, 911.274 hogares, 2,8 millones de personas y 748,2 M€, constan también en Libre Mercado, fuente citada). Las citas son literales en las copias locales (Vozpópuli y Demócrata/Europa Press para pp-c01; Libre Mercado, con Tododisca y Fuentes Informadas, para pp-c02), en primera persona de Feijóo, en público y para esta legislatura. Se buscó cada medida en el programa de 82 págs. (texto completo, también con sinónimos). verify_quotes: 0 citas no encontradas.",
- "seleccion": "pp-c01 y pp-c02 no están en el programa: la Renta de Activación no aparece (ni IMV, renta, subsidio ni búsqueda de empleo; la medida 173 es un hueco «Permanezca atento a la campaña», p. 59), y la supresión de obligaciones nacionales al campo que superen el estándar europeo tampoco (medidas 7, 187, 196 y 232 son de simplificación general o climática). Pero la «moratoria regulatoria en Europa» de la cita de pp-c01 sí está en la medida 7 (p. 14) y se saca del compromiso. Ambas las presenta el partido como importantes: la nota oficial del PP del 7-nov las titula como compromiso y la del 10-nov sitúa la Renta de Activación como primera medida del resumen del acto.",
- "igual_estandar": "pp-c02 financiación pasa de «mixta» a «no_verificable», como las reformas de prestaciones sin cuantía ya aprobadas (ara_mes_fa-05, vox-07) y la regla del 8-11 («no_verificable» sin cuantía). Legal «favorable» (ley ordinaria estatal; las condiciones de activación ya existen en el art. 47 LISOS) y concreción «mixta» se mantienen. pp-c01 financiación «favorable» es la regla de medidas regulatorias sin gasto (topes de alquiler, compromis-01, podemos-02).",
+ "seleccion_sha256": "3242c95d782f0c1f44b711b6902e0cb4d71d271fb7099501ddd232b3ca1b8890",
+ "alcance": "Barrido del 18-nov: prioridad nueva pp-c03 (8 criterios), una ocasión más en pp-c01 y 6 descartes nuevos. Se abrieron con una petición normal las 15 URL nuevas: todas responden 200. Citas: verify_quotes, 0 no encontradas; SHA-256 de las copias coincidentes. Se descargó de nuevo el PDF del programa de pp.es (18-nov): sha256 cea8f2a0…, el mismo, y la medida 132 sigue en blanco en la p. 48 («Permanezca atento a la campaña»). Comprobado: LOREG (BOE consolidado: art. 2.2 y 2.3, art. 32.2; no recoge el voto de quienes se fueron por ETA), Estatuto de Gernika art. 7 y LORAFNA art. 5, resumen del artículo de Pascua Mateo (RAP 189: «constitucionalmente posible»; ni el TC ni el TEDH han resuelto casos análogos), El Independiente 24-5-2023 (Retorno 2011: 60.000-200.000; CEU 2023: unas 180.000 salidas de 1976 a 2022; ambas solo del País Vasco), nota de pp.es de Bilbao (Durango), copias de Logroño (pp.es, Europa Press, EFE) y nota de upn-pp.es.",
+ "seleccion": "pp-c03 es literal de Feijóo, candidato a la Presidencia, en primera persona («Vamos a reformar la legislación electoral…»), en el mitin de Pamplona, y es el titular de la nota oficial del PP: cumple el criterio único. No está en el programa publicado: el PP dice que es su medida 132, que sigue en blanco en el PDF (comprobado); ni las medidas 56-58, 130-131 ni la 143 la recogen. La ocasión nueva de pp-c01 (Demócrata, Lleida) es distinta y válida para «veces» con el criterio de estilo indirecto de agencia ya aplicado. Descartes: correctos. Criterio único para priorizar en el complemento (y para decidir los casos del PSC, EH Bildu, Adelante Andalucía y el hueco del PP): el ámbito local no excluye ni rebaja el listón; decide la prueba de que el partido presenta la medida como importante (prompt 1b: «los anuncia el candidato, los repite, son titulares de campaña»). Una medida concreta y firme, ausente del programa, se prioriza si (a) consta en al menos dos ocasiones públicas distintas, o (b) en una sola ocasión, el propio partido o la crónica del acto la destaca: titular, entradilla o ladillo de una nota oficial, documento oficial de campaña (manifiesto, decálogo, lista de compromisos) o titular de la crónica de agencia. Una mención en el cuerpo de una nota o crónica, entre otras medidas, no basta. Además, para compromisos territoriales (una obra, un servicio o un equipamiento en un lugar concreto) anunciados por un candidato nacional en un acto o vídeo autonómico, la vía (b) solo vale si el titular es esa medida concreta, no un enunciado genérico. Aplicación: psc-c04 (Parador de Tarragona) entra por (a): Hereu y Montalvo, dos entrevistas, ambas con la medida en el subtítulo. El tren a Foronda de EH Bildu (Mikel Otero, 13-nov) queda fuera, pero no por ser local: es una sola mención en el cuerpo de una nota de EH Bildu Araba en estilo indirecto («apuesta por dar conexión ferroviaria al aeropuerto de Foronda»), cuyo titular trata de optimizar los servicios ferroviarios (comprobado en ehbildu.eus el 18-nov); conviene corregir el motivo «ámbito local» del EH Bildu en su próxima revisión. adelante_andalucia-c01 queda fuera: una sola ocasión, mención en el cuerpo de la crónica de Europa Press, sin nota oficial ni titular. En el PP, el hueco 4 sigue vacío: Durango (una mención en el cuerpo de la nota de Bilbao, cuyo titular es otro; sin titular de agencia localizado), Almudévar y Reinosa (vídeos autonómicos, sin titular propio) no cumplen; Logroño-Calahorra tiene titular de EFE, pero el propio Feijóo lo condiciona («si hay demanda», Europa Press), por lo que no es un compromiso firme.",
+ "igual_estandar": "pp-c03: concreción «mixta», legal «mixta», financiación «favorable» (regulatoria sin gasto, nota de la rúbrica), internacional «no_verificable» y beneficiarios/largo plazo «mixta», como otras reformas institucionales. «Antes en España» estaba en «no_verificable» con el texto «no hemos encontrado ninguna iniciativa legislativa», pero sí hubo intentos documentados (proposición no de ley de UPN, BOCG D-31 de 7-2-2012; reforma de la LOREG anunciada por el Ministerio del Interior en julio de 2012, nunca aprobada): con el criterio aplicado a los intentos no culminados (vox-c11, psoe-06), «mixta».",
  "recuento_inicial": {
-  "favorable": 2,
-  "mixta": 14,
+  "favorable": 3,
+  "mixta": 17,
   "desfavorable": 0,
-  "no_verificable": 0
+  "no_verificable": 4
  },
  "recuento_final": {
-  "favorable": 2,
-  "mixta": 13,
+  "favorable": 3,
+  "mixta": 18,
   "desfavorable": 0,
-  "no_verificable": 1
+  "no_verificable": 3
  },
- "recuento_final_nota": "seleccion_sha256 recalculado tras cambiar el resumen y la nota de pp-c01.",
  "cambios": [
   {
-   "propuesta": "pp-c01",
-   "criterio": "resumen y nota (seleccion.json y evaluacion.json)",
-   "antes": "Suprimir toda obligación legal española al sector agrario que vaya más allá de lo que exige la normativa europea y pedir en la UE una moratoria regulatoria.",
-   "despues": "Suprimir toda obligación legal española al sector agrario que vaya más allá de lo que exige la normativa europea. Se añade a la nota: La petición de una «moratoria regulatoria en Europa» con la que empieza la cita ya está en el programa (medida 7, p. 14: sumarse a la petición de varios países europeos de una pausa de un año para que la Unión no genere nuevas normas) y no forma parte de este compromiso.",
-   "motivo": "La moratoria regulatoria europea de la cita es la medida 7 del programa (p. 14), que la búsqueda de sinónimos no detectó; el complemento solo puede recoger lo que no está en el programa."
+   "propuesta": "pp-c03",
+   "criterio": "antecedentes",
+   "antes": "no_verificable",
+   "despues": "mixta",
+   "motivo": "Hubo intentos en España (2012) que no culminaron; criterio de vox-c11 y psoe-06."
   },
   {
-   "propuesta": "pp-c01",
-   "criterio": "concrecion",
-   "antes": "suprimir toda obligación legal española al campo que supere el estándar europeo y pedir en la UE una moratoria regulatoria.",
-   "despues": "suprimir toda obligación legal española al campo que supere el estándar europeo (la moratoria regulatoria que pide en la UE ya figura en el programa, medida 7, p. 14).",
-   "motivo": "misma corrección: la moratoria está en el programa"
+   "propuesta": "pp-c03",
+   "criterio": "antecedentes",
+   "antes": "No se ha aplicado en España. Lo más parecido es el voto de los residentes en el extranjero, a quienes los Estatutos vasco y navarro reconocen los mismos derechos políticos que a los residentes si su última vecindad fue allí (art. 7.2 y art. 5.2). En 2012 la Revista de Administración Pública publicó una propuesta en este sentido; no hemos encontrado ninguna iniciativa legislativa que se tramitara.",
+   "despues": "No se ha aplicado en España, pero se intentó. En febrero de 2012 UPN llevó al Congreso una proposición no de ley sobre el derecho de voto de los «exiliados» vascos y navarros en sus territorios de origen (BOCG, Serie D, n.º 31). En julio de 2012 el Ministerio del Interior anunció, tras un seminario de juristas, una reforma de la LOREG para que quienes se fueron por ETA pudieran votar en Euskadi o Navarra acreditando al menos cinco años de residencia allí entre 1977 y 2011 y firmando una declaración; la reforma no se aprobó y la LOREG vigente no recoge ese voto. Lo más parecido en vigor es el voto de los residentes en el extranjero, a quienes los Estatutos vasco y navarro reconocen los mismos derechos políticos que a los residentes si su última vecindad fue allí (art. 7.2 y art. 5.2).",
+   "motivo": "El texto omitía la proposición no de ley de UPN (BOCG, Congreso, X Leg., Serie D, n.º 31, 7-2-2012) y la reforma anunciada por Interior el 25-7-2012 (Orain, 26-7-2012: cinco años de residencia entre 1977 y 2011 y declaración firmada), que no se aprobó (la LOREG vigente no la recoge)."
   },
   {
-   "propuesta": "pp-c01",
-   "criterio": "legal",
-   "antes": "La moratoria europea dependería del Consejo y del Parlamento Europeo.",
-   "despues": "(eliminada)",
-   "motivo": "la moratoria no forma parte del compromiso evaluado (está en el programa, medida 7)"
+   "propuesta": "pp-c03",
+   "criterio": "antecedentes (fuentes)",
+   "antes": [
+    "https://www.boe.es/buscar/act.php?id=BOE-A-1979-30177",
+    "https://www.boe.es/buscar/act.php?id=BOE-A-1982-20824",
+    "https://www.cepc.gob.es/publicaciones/revistas/revista-de-administracion-publica/numero-189-septiembrediciembre-2012/una-reforma-electoral-posible-el-voto-de-la-diaspora-vasca-2"
+   ],
+   "despues": [
+    "https://www.congreso.es/public_oficiales/L10/CONG/BOCG/D/D_031.PDF",
+    "https://orain.eus/es/politica/2012/07/26/voto-exiliados-eta--los-requisitos-voto-exiliados-eta/",
+    "https://www.boe.es/buscar/act.php?id=BOE-A-1985-11672",
+    "https://www.boe.es/buscar/act.php?id=BOE-A-1979-30177",
+    "https://www.boe.es/buscar/act.php?id=BOE-A-1982-20824"
+   ],
+   "motivo": "Se añaden las fuentes de los intentos de 2012 y la LOREG; se mantienen los Estatutos."
   },
   {
-   "propuesta": "pp-c01",
+   "propuesta": "pp-c03",
+   "criterio": "(propuesta) (beneficiarios)",
+   "antes": "Las personas que se fueron del País Vasco y de Navarra por la violencia de ETA y quieran volver a votar allí. No hay cifra oficial: el informe «Retorno» (2011) estimó entre 60.000 y 200.000 personas y un estudio de la Universidad CEU San Pablo (2023), unas 180.000 salidas entre 1976 y 2022 por razones políticas, económicas o de otro tipo. El coste, administrativo, recaería en el Estado.",
+   "despues": "Las personas que se fueron del País Vasco y de Navarra por la violencia de ETA y quieran volver a votar allí. No hay cifra oficial y las estimaciones solo cubren el País Vasco: el informe «Retorno» (2011) estimó entre 60.000 y 200.000 personas que se fueron por la violencia terrorista y un estudio de la Universidad CEU San Pablo (2023), unas 180.000 salidas entre 1976 y 2022 por razones políticas, económicas o de otro tipo; no hay estimación para Navarra. El coste, administrativo, recaería en el Estado.",
+   "motivo": "Las dos estimaciones (Retorno 2011 y CEU 2023) se refieren solo al País Vasco (El Independiente, 24-5-2023: Navarra es una de las comunidades de comparación); la de Retorno es por la violencia terrorista y la del CEU incluye otras causas."
+  },
+  {
+   "propuesta": "pp-c03",
    "criterio": "evidencia",
-   "antes": "autoridades y asesores atribuyen el 60 % o más de la carga administrativa de la PAC a decisiones de los Estados miembros. El estudio concluye que una parte sustancial de sus requisitos es excesiva o innecesaria («gold-plating»).",
-   "despues": "autoridades y asesores atribuyen el 60 % o más de la carga administrativa de la PAC a decisiones de las que los Estados miembros son responsables en exclusiva, principalmente o a partes iguales con la UE. El estudio concluye que una parte sustancial de los requisitos nacionales puede ser excesiva o innecesaria («gold-plating»), aunque advierte de que el margen real de reducción es probablemente más limitado.",
-   "motivo": "el estudio de la Red PAC (p. resumen ejecutivo) incluye en el 60 % la responsabilidad compartida con la UE y matiza que el gold-plating real y el margen de reducción «are likely to be more limited»; el texto omitía ambas cosas"
+   "antes": "No hemos localizado estudios empíricos sobre medidas que devuelvan el voto en su lugar de origen a personas desplazadas por violencia política. Tampoco hay cifra oficial de cuántas personas se fueron por ETA: el informe «Retorno» del Instituto Vasco de Criminología (2011) dio una horquilla de 60.000 a 200.000, y el estudio de la Universidad CEU San Pablo (2023) estimó unas 180.000 salidas entre 1976 y 2022 comparando la demografía vasca con la de regiones vecinas, sin separar las causas.",
+   "despues": "No hemos localizado estudios empíricos sobre medidas que devuelvan el voto en su lugar de origen a personas desplazadas por violencia política. Tampoco hay cifra oficial de cuántas personas se fueron por ETA: el informe «Retorno» del Instituto Vasco de Criminología (2011) dio una horquilla de 60.000 a 200.000 para el País Vasco, y el estudio de la Universidad CEU San Pablo (2023) estimó unas 180.000 salidas del País Vasco entre 1976 y 2022 comparando su demografía con la de comunidades vecinas, sin separar las causas; ninguna de las dos estima las salidas de Navarra.",
+   "motivo": "Mismo motivo: ámbito de las estimaciones (solo País Vasco) y comparación con comunidades limítrofes (La Rioja, Navarra, Cantabria)."
   },
   {
-   "propuesta": "pp-c01",
-   "criterio": "internacional",
-   "antes": "Dinamarca aprobó en 2016 un paquete agroalimentario que permitía a los agricultores usar más fertilizante.",
-   "despues": "Dinamarca aprobó un paquete agroalimentario con una ley que permitía a los agricultores usar más fertilizante.",
-   "motivo": "la fuente (AP, 27-2-2016) no da el año de aprobación; se elimina la fecha no respaldada"
+   "propuesta": "pp-c03",
+   "criterio": "beneficiarios",
+   "antes": "El grupo está identificado (quienes se fueron de Euskadi y Navarra por ETA y quieran volver a votar allí), pero no cuantificado con fuente oficial: las estimaciones van de 60.000 a 200.000 personas (2011) o unas 180.000 (CEU, 2023), que incluyen salidas por otras causas. No se sabe cuántos lo pedirían. El coste, administrativo, lo asumiría el Estado.",
+   "despues": "El grupo está identificado (quienes se fueron de Euskadi y Navarra por ETA y quieran volver a votar allí), pero no cuantificado con fuente oficial: las estimaciones, solo para el País Vasco, van de 60.000 a 200.000 personas (2011) o unas 180.000 (CEU, 2023, que incluye salidas por otras causas); no hay estimación para Navarra. No se sabe cuántos lo pedirían. El coste, administrativo, lo asumiría el Estado.",
+   "motivo": "Mismo motivo; además «que incluyen salidas por otras causas» solo es cierto de la estimación del CEU."
   },
   {
-   "propuesta": "pp-c02",
-   "criterio": "financiacion",
-   "antes": "mixta: El coste de partida es conocido. La nómina del IMV fue de 748,2 millones de euros en octubre de 2026, unos 9.000 millones en términos anuales (Libre Mercado, con datos de la Seguridad Social). El gasto total en prestaciones por desempleo fue de 2.141,6 millones en marzo de 2026, con 848.912 perceptores del subsidio. Feijóo no dice si la nueva renta costaría más o menos que las prestaciones que sustituye ni cómo se pagaría. El saldo depende de cuantías y reglas de compatibilidad que no ha detallado.",
-   "despues": "no_verificable: No hay base para estimar el coste de la medida: Feijóo no da cuantías, umbrales ni reglas de compatibilidad, de modo que no se sabe si la nueva renta costaría más o menos que las prestaciones que sustituye, ni dice cómo se pagaría. Como referencia, la nómina del IMV fue de 748,2 millones de euros en octubre de 2026 (Libre Mercado, con datos de la Seguridad Social) y el gasto total en prestaciones por desempleo, de 2.141,6 millones en marzo de 2026, con 848.912 perceptores del subsidio.",
-   "motivo": "Mismo estándar que las reformas de prestaciones aprobadas: ara_mes_fa-05 (complemento a las pensiones sin cuantía) y vox-07 (acceso a ayudas sin definir) son «no_verificable» aunque el gasto actual sea conocido, y la regla del 8-11 da «no_verificable» a las medidas sin cuantía. Conocer el gasto de las prestaciones que se sustituyen no permite estimar el coste de la nueva renta, cuyo saldo depende de cuantías no definidas; el propio texto lo decía."
-  },
-  {
-   "propuesta": "pp-c02",
-   "criterio": "largo_plazo",
-   "antes": "Según la AIReF, el 46 % de los hogares sigue en el IMV 60 meses después de entrar, y el efecto negativo sobre el empleo persiste meses después de dejar la ayuda.",
-   "despues": "Según la AIReF, el 46 % de los hogares sigue en el IMV 60 meses después de entrar.",
-   "motivo": "ninguna de las fuentes citadas (El Español 23-7-2026, Forbes/Europa Press 9-7-2025, Arni y otros 2013) dice que el efecto negativo persista tras dejar la ayuda"
-  },
-  {
-   "propuesta": "pp-c01",
-   "criterio": "legal, largo_plazo (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:12012E/TXT | Tratado de Funcionamiento de la Unión Europea, art. 193 (EUR-Lex)",
-   "despues": "https://www.boe.es/doue/2016/202/Z00001-00388.pdf | Tratado de Funcionamiento de la Unión Europea, art. 193 (versión consolidada, DOUE C 202 de 7-6-2016, copia del BOE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
+   "propuesta": "(evaluacion.json)",
+   "criterio": "nota",
+   "antes": "(sin mención)",
+   "despues": "Se añade al final la nota de la revisión independiente sobre pp-c03.",
+   "motivo": "Trazabilidad."
   }
  ],
  "dudas": [
-  "pp-c01 y pp-c02 tienen una sola ocasión pública cada una; la prioridad descansa en que el candidato las anunció y la nota oficial las destaca. Si el PP rellena los huecos 173 y 200 del programa con estas medidas, pasarían a evaluarse por el programa (prompt 1) y saldrían del complemento.",
-  "pp-c02: las excepciones (incapacidad, dependencia, ayuda a la infancia) solo constan en paráfrasis de Moncloa.com; la frase literal de Tododisca («quien lamentablemente no puede trabajar, ha de tener la mayor protección») no las concreta. La evaluación no las usa."
- ],
- "complementos_vacios_comprobados": "Partidos con programa y complemento vacío (comprobado por esta misma revisión): ERC, SALF y Adelante Andalucía descartan bien; se cotejaron contra el texto del programa al menos tres «ya está en el programa, p. N» por partido y todos coinciden (ERC: ITP p. 19 medida 59, fiscalidad de banca y grandes patrimonios p. 22 medidas 74-76, 180 plazas judiciales por reincidencia p. 43; SALF: macrocárcel p. 8, «La corrupción no prescribe» p. 25, 35.000 € libres de IRPF p. 12, cero impuestos primera vivienda p. 5, cláusula de penalización p. 4; Adelante Andalucía: Sareb p. 49, red de supermercados públicos p. 68 medida 313, peaje de la AP-7 p. 131 medida 695, fin del turno partido)."
+  "Europa Press cita un texto de la medida 132 («Promoveremos la reforma de la ley electoral…») que no está en el PDF publicado. Si el PP publica una versión del programa que la incluya, pp-c03 debe salir del complemento (lo dice la selección).",
+  "El descarte del 10 % del IVA de los carburantes dice que solo consta en boca de un dirigente de UPN; como nota conjunta de la coalición cuenta también para el PP (regla del 13-nov), pero no cumple el criterio único (una ocasión, fuera del titular de la nota). El resultado no cambia.",
+  "La fuente de la reforma de Interior de 2012 es prensa (Orain/EITB); la nota del Ministerio y su boletín Infoelectoral devolvieron 403 y no se pudieron leer."
+ ]
 }

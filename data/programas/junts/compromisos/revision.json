@@ -1,9 +1,18 @@
 {
  "aprobado": true,
  "revisor": "Claude (Anthropic), pasada independiente",
- "fecha": "2026-11-12",
- "alcance": "Selección (12 compromisos y 8 prioridades al recibirla; 8 y 7 tras la revisión) y evaluación (8 propuestas × 8 criterios; 7 tras la revisión). Se abrieron las 97 URL citadas en seleccion.json y evaluacion.json de Junts y EH Bildu: 96 respondieron con petición normal; la evaluación del Provincial Nominee Program (canada.ca) cerró la conexión con curl y se leyó con una segunda petición normal. Todas las citas aparecen literalmente en la página en línea y en la copia local (SHA-256 coincidentes). Se comprobaron las traducciones del catalán (fieles), quién habla, fecha y, una a una, las cifras, normas y sentencias de los textos (Idescat, Fedea, STC 158/2019, Ley 38/2015, Moncloa, AIReF, Agenda Pública, BOCG 195-1/-2 y 173-1/-3, STC 31/2010, StatCan, Consejo de la UE, Catalunya Press, EUR-Lex, Funcas, idealista, COPE, NBER, RePEc, CGPJ, LO 1/2025). verify_quotes: 0 citas no encontradas.",
- "igual_estandar": "Concierto económico (junts-01): encaje legal «desfavorable» e internacional «mixta», igual que bng-01 con los mismos hechos (STC 158/2019, arts. 149.1.14, 157.3 y 138.2 CE; Länder alemanes solo para la recaudación). Ocupación en 48 horas (junts-08): concreción, encaje legal, evidencia («no_verificable»), internacional y beneficiarios coinciden con pp-03 y salf-02, con las mismas cifras del CGPJ. Financiación queda «favorable» y no «no_verificable» porque los hechos difieren: la proposición de Junts solo cambia normas procesales y deja el realojo como potestativo, sin partidas, mientras pp-03 exime de IBI y suministros y salf-02 atribuye al Estado la atención a los vulnerables, ambos sin cuantificar. Deducción por vivienda (junts-06): financiación «mixta» como pp-10 (coste estimable, sin financiación).",
+ "fecha": "2026-11-18",
+ "base": "compromisos",
+ "seleccion_sha256": "78f9b3df7e0a6713e36bb5a22edd2ccdb44cc706efa2b432b0c08afbe18710d1",
+ "alcance": "Barrido del 18-nov: sin compromisos ni prioridades nuevas; «veces» de junts-c01 (8→9), c02 (4→7) y c04 (2→6), 3 descartes nuevos y el texto de «concreción» de junts-01, 02 y 04. Se abrieron con una petición normal las 5 URL nuevas (4 de junts.cat y Europa Press del 17-nov): todas responden 200. Las 9 citas de las ocasiones nuevas aparecen en su copia local (verify_quotes: 0 no encontradas) y los SHA-256 coinciden; se leyeron los pasajes en contexto (Manresa 14-nov, Roses 15-nov, Tribuna Barcelona y Arenys de Mar 16-nov, Europa Press 17-nov).",
+ "seleccion": "Las ocasiones nuevas son distintas (cuatro actos y una rueda de prensa) y de Nogueras, cabeza de lista; cuentan notas oficiales y una crónica de agencia en estilo indirecto, con el mismo criterio que ya usaba esta selección (6-nov en junts-c04) y que se usa en bng-c01. Los tres descartes son correctos: el compromiso de hablar catalán es una petición a otros candidatos, la condonación del FLA se pide al Gobierno en funciones y la nota de Turull no tiene medidas. Las 7 prioridades no cambian.",
+ "igual_estandar": "Ninguna valoración cambia y las ocasiones nuevas no aportan cifras, plazos ni instrumentos, igual que en upn-03 o bng-c01.",
+ "recuento_inicial": {
+  "favorable": 3,
+  "mixta": 49,
+  "desfavorable": 1,
+  "no_verificable": 3
+ },
  "recuento_final": {
   "favorable": 3,
   "mixta": 49,
@@ -12,270 +21,15 @@
  },
  "cambios": [
   {
-   "propuesta": "junts-c07",
-   "criterio": "selección (seleccion.json)",
-   "antes": "compromiso y prioridad",
-   "despues": "descartado",
-   "motivo": "el documento del 27-oct es un balance de la legislatura anterior («Principals iniciatives de la legislatura», «balanç de la feina parlamentària»), no un documento de compromisos para el 29-N; la medida no la ha repetido ningún líder en campaña, por lo que no cumple «para esta elección o esta legislatura» (prompts 1b y 2)"
-  },
-  {
-   "propuesta": "junts-c09",
-   "criterio": "selección (seleccion.json)",
-   "antes": "compromiso no priorizado",
-   "despues": "descartado",
-   "motivo": "el documento del 27-oct es un balance de la legislatura anterior («Principals iniciatives de la legislatura», «balanç de la feina parlamentària»), no un documento de compromisos para el 29-N; la medida no la ha repetido ningún líder en campaña, por lo que no cumple «para esta elección o esta legislatura» (prompts 1b y 2)"
-  },
-  {
-   "propuesta": "junts-c11",
-   "criterio": "selección (seleccion.json)",
-   "antes": "compromiso no priorizado",
-   "despues": "descartado",
-   "motivo": "el documento del 27-oct es un balance de la legislatura anterior («Principals iniciatives de la legislatura», «balanç de la feina parlamentària»), no un documento de compromisos para el 29-N; la medida no la ha repetido ningún líder en campaña, por lo que no cumple «para esta elección o esta legislatura» (prompts 1b y 2)"
-  },
-  {
-   "propuesta": "junts-c12",
-   "criterio": "selección (seleccion.json)",
-   "antes": "compromiso no priorizado",
-   "despues": "descartado",
-   "motivo": "el documento del 27-oct es un balance de la legislatura anterior («Principals iniciatives de la legislatura», «balanç de la feina parlamentària»), no un documento de compromisos para el 29-N; la medida no la ha repetido ningún líder en campaña, por lo que no cumple «para esta elección o esta legislatura» (prompts 1b y 2)"
-  },
-  {
-   "propuesta": "junts-c04, junts-c05, junts-c06",
-   "criterio": "nota (seleccion.json)",
-   "antes": "sin nota",
-   "despues": "nota que explica por qué valen como compromisos del 29-N",
-   "motivo": "su cita literal procede del balance de la legislatura anterior; se mantienen porque un líder los reafirma en campaña como condición o propuesta para la nueva legislatura (6-nov y 9-nov), y la cita literal existe en un documento oficial del partido (prompt 1b)"
-  },
-  {
-   "propuesta": "junts-c06",
-   "criterio": "justificación de la prioridad",
-   "antes": "Figura en el documento oficial del 27-oct y es la receta de vivienda que Nogueras defiende en el debate de Pimec (9-nov: «Cal desgravar hipoteques»).",
-   "despues": "Nogueras la presenta como su receta de vivienda en el debate de Pimec (9-nov: «Cal desgravar hipoteques»; Crónica Global: «desgravar lloguers i hipoteques»); el documento del 27-oct recoge el porcentaje.",
-   "motivo": "la prioridad se apoyaba en el balance de la legislatura anterior; se apoya en la reafirmación en campaña"
-  },
-  {
-   "propuesta": "junts-c08",
-   "criterio": "justificación de la prioridad",
-   "antes": "Nogueras la reivindica en campaña frente al PP (18-oct, X y acto en el Mercat de Sant Antoni); figura en el documento oficial (27-oct) y la reclama el cabeza de lista por Tarragona (4-nov).",
-   "despues": "Nogueras la reivindica en campaña frente a la propuesta del PP para después del 29-N (18-oct, en X); el cabeza de lista por Tarragona reclama «una lluita efectiva contra les ocupacions delinqüencials» (4-nov). Es la prioridad con menos apoyo: una sola ocasión que cita la ley.",
-   "motivo": "el balance del 27-oct no es documento de campaña, y ElNacional.cat no atribuye a Nogueras en Sant Antoni una mención a la ley, solo al «bloqueig dels blocs espanyols»"
-  },
-  {
-   "propuesta": "junts-c04",
-   "criterio": "justificación de la prioridad",
-   "antes": "Figura en el documento oficial del 27-oct, Nogueras la cita entre sus tres condiciones para negociar (SER Catalunya, 6-nov) y la reclama el cabeza de lista por Tarragona (4-nov).",
-   "despues": "Nogueras la cita entre sus tres condiciones para negociar tras el 29-N (SER Catalunya, 6-nov) y la reclama el cabeza de lista por Tarragona (4-nov).",
-   "motivo": "se retira el apoyo en el balance de la legislatura anterior"
-  },
-  {
-   "propuesta": "junts-c05",
-   "criterio": "justificación de la prioridad",
-   "antes": "Figura en el documento oficial del 27-oct y Nogueras la cita entre sus tres condiciones para negociar en SER Catalunya (6-nov); al presentar la campaña el partido dice que exigirá que continúe (El Món, ElNacional.cat, 9-nov).",
-   "despues": "Nogueras la cita entre sus tres condiciones para negociar tras el 29-N (SER Catalunya, 6-nov); al presentar la campaña, fuentes del partido dicen que exigirán que continúe (El Món, ElNacional.cat, 9-nov).",
-   "motivo": "se retira el apoyo en el balance de la legislatura anterior y se atribuye a «fuentes del partido» lo que El Món y ElNacional.cat atribuyen así"
-  },
-  {
-   "propuesta": "junts-c02",
-   "criterio": "justificación de la prioridad",
-   "antes": "Nogueras abre con ella el debate de RTVE (8-nov), la repite en rueda de prensa (2-nov), ante el ministro (3-nov) y en el debate de Pimec (9-nov); la dirección la incluye entre las tres exigencias para una investidura al presentar el lema de campaña (Público, 9-nov).",
-   "despues": "Nogueras abre con ella el debate de RTVE (8-nov), la repite en rueda de prensa (2-nov), ante el ministro (3-nov) y en el debate de Pimec (9-nov); según voces de la dirección citadas por Público (9-nov), es una de las tres exigencias para una investidura.",
-   "motivo": "Público lo atribuye a voces de la dirección, no a una declaración pública identificada"
-  },
-  {
-   "propuesta": "junts-c01",
-   "criterio": "veces (seleccion.json)",
-   "antes": "lista de 6 fuentes, sin recuento",
-   "despues": "n = 5 ocasiones públicas distintas; lista de URL conservada con «cuenta» por entrada",
-   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas en que lo repite un líder; la lista contaba fuentes, incluidas varias del mismo acto, documentos anteriores a la convocatoria, fuentes del partido o menciones sin la medida. Ocasiones públicas distintas, incluida la de la cita principal (Sant Cugat, 7-nov): 27-oct, 6-nov, 7-nov, 8-nov y 9-nov."
-  },
-  {
-   "propuesta": "junts-c02",
-   "criterio": "veces (seleccion.json)",
-   "antes": "lista de 4 fuentes, sin recuento",
-   "despues": "n = 4 ocasiones públicas distintas; lista de URL conservada con «cuenta» por entrada",
-   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas en que lo repite un líder; la lista contaba fuentes, incluidas varias del mismo acto, documentos anteriores a la convocatoria, fuentes del partido o menciones sin la medida. Incluida la cita principal (2-nov): 2-nov, 3-nov, 8-nov y 9-nov (Pimec)."
-  },
-  {
-   "propuesta": "junts-c03",
-   "criterio": "veces (seleccion.json)",
-   "antes": "lista de 2 fuentes, sin recuento",
-   "despues": "n = 1 ocasiones públicas distintas; lista de URL conservada con «cuenta» por entrada",
-   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas en que lo repite un líder; la lista contaba fuentes, incluidas varias del mismo acto, documentos anteriores a la convocatoria, fuentes del partido o menciones sin la medida. Solo la nota oficial del 3-nov enuncia la medida con su cifra; las otras ocasiones tratan el mantenimiento en general."
-  },
-  {
-   "propuesta": "junts-c04",
-   "criterio": "veces (seleccion.json)",
-   "antes": "lista de 3 fuentes, sin recuento",
-   "despues": "n = 2 ocasiones públicas distintas; lista de URL conservada con «cuenta» por entrada",
-   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas en que lo repite un líder; la lista contaba fuentes, incluidas varias del mismo acto, documentos anteriores a la convocatoria, fuentes del partido o menciones sin la medida. Ocasiones de campaña: 4-nov y 6-nov. El balance del 27-oct (cita principal) aporta la redacción, no cuenta como ocasión de campaña."
-  },
-  {
-   "propuesta": "junts-c05",
-   "criterio": "veces (seleccion.json)",
-   "antes": "lista de 2 fuentes, sin recuento",
-   "despues": "n = 1 ocasiones públicas distintas; lista de URL conservada con «cuenta» por entrada",
-   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas en que lo repite un líder; la lista contaba fuentes, incluidas varias del mismo acto, documentos anteriores a la convocatoria, fuentes del partido o menciones sin la medida. Ocasión de campaña: 6-nov. El balance del 27-oct (cita principal) aporta la redacción."
-  },
-  {
-   "propuesta": "junts-c06",
-   "criterio": "veces (seleccion.json)",
-   "antes": "lista de 2 fuentes, sin recuento",
-   "despues": "n = 1 ocasiones públicas distintas; lista de URL conservada con «cuenta» por entrada",
-   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas en que lo repite un líder; la lista contaba fuentes, incluidas varias del mismo acto, documentos anteriores a la convocatoria, fuentes del partido o menciones sin la medida. Ocasión de campaña: debate de Pimec (9-nov). El balance del 27-oct (cita principal) aporta la cifra."
-  },
-  {
-   "propuesta": "junts-c08",
-   "criterio": "veces (seleccion.json)",
-   "antes": "lista de 2 fuentes, sin recuento",
-   "despues": "n = 1 ocasiones públicas distintas; lista de URL conservada con «cuenta» por entrada",
-   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas en que lo repite un líder; la lista contaba fuentes, incluidas varias del mismo acto, documentos anteriores a la convocatoria, fuentes del partido o menciones sin la medida. Una ocasión: la publicación de Nogueras del 18-oct (cita principal)."
-  },
-  {
-   "propuesta": "junts-c10",
-   "criterio": "veces (seleccion.json)",
-   "antes": "lista de 0 fuentes, sin recuento",
-   "despues": "n = 1 ocasiones públicas distintas; lista de URL conservada con «cuenta» por entrada",
-   "motivo": "el prompt 1b define «veces» como ocasiones públicas distintas en que lo repite un líder; la lista contaba fuentes, incluidas varias del mismo acto, documentos anteriores a la convocatoria, fuentes del partido o menciones sin la medida. Una ocasión: nota oficial del 3-nov (cita principal)."
-  },
-  {
-   "propuesta": "junts",
-   "criterio": "nota (seleccion.json)",
-   "antes": "Junts no había publicado programa para el 29-N a 12-nov-2026 (data/partidos/partidos.json, comprobado el 12-nov). Se recogen los compromisos concretos de sus líderes (Míriam Nogueras, cabeza de lista por Barcelona y portavoz en el Congreso; Josep Maria Cruset, cabeza de lista por Tarragona) y de los documentos oficiales del partido desde la convocatoria (6-oct-2026). El documento oficial más completo es el balance de legislatura que Junts publicó el 27-oct con sus candidatos («Principals iniciatives de la legislatura»): mezcla logros pasados con reclamaciones pendientes; solo se recogen como compromisos las reclamaciones y propuestas pendientes («Reclamació», «Proposta», «Exigència»), no los logros. Varias medidas que la prensa atribuye a Nogueras (deflactar el IRPF, que las pymes no ingresen el IVA hasta cobrar las facturas) solo constan en estilo indirecto del periodista y se descartan conforme al prompt 1b. Hay 8 prioridades porque no se encontraron más compromisos concretos y verificables que el partido destaque.",
-   "despues": "Junts no había publicado programa para el 29-N a 12-nov-2026 (data/partidos/partidos.json, comprobado el 12-nov). Se recogen los compromisos concretos de sus líderes (Míriam Nogueras, cabeza de lista por Barcelona y portavoz en el Congreso; Josep Maria Cruset, cabeza de lista por Tarragona) y de los documentos oficiales del partido desde la convocatoria (6-oct-2026). El documento oficial más completo es el balance de legislatura que Junts publicó el 27-oct con sus candidatos («Principals iniciatives de la legislatura»). El partido lo presenta como balance de la legislatura anterior, no como compromisos para el 29-N: sus líneas solo se recogen cuando un líder las reafirma en campaña (inmigración, catalán en la UE, deducción por vivienda), y las demás se descartan (revisión del 12-nov). Varias medidas que la prensa atribuye a Nogueras (deflactar el IRPF, que las pymes no ingresen el IVA hasta cobrar las facturas) solo constan en estilo indirecto del periodista y se descartan conforme al prompt 1b. Hay 7 prioridades porque no se encontraron más compromisos concretos y verificables que el partido destaque.",
-   "motivo": "refleja el criterio aplicado al balance del 27-oct y el nuevo número de prioridades"
-  },
-  {
-   "propuesta": "junts-07",
-   "criterio": "todas",
-   "antes": "propuesta evaluada (8 criterios: 1 F / 7 M / 0 D / 0 N)",
-   "despues": "eliminada",
-   "motivo": "su compromiso (junts-c07) se descarta: solo consta en el balance de la legislatura anterior y ningún líder lo ha repetido en campaña"
-  },
-  {
-   "propuesta": "junts-03",
-   "criterio": "financiacion",
-   "antes": "«alrededor de un 21 % del total»",
-   "despues": "«alrededor del 21 % de la suma de ambas cifras, cálculo propio que supone que son partidas distintas»",
-   "motivo": "475/1.781 es un 26,7 %; el 21 % solo resulta si el mantenimiento se suma a la inversión (475/2.256). La fuente no aclara si están separadas: se explicita el supuesto"
-  },
-  {
-   "propuesta": "junts-06",
+   "propuesta": "junts-02",
    "criterio": "concrecion",
-   "antes": "«En campaña Junts fija el porcentaje (15 %)»",
-   "despues": "«El balance del 27-oct fija el porcentaje (15 %) [...] y en campaña Nogueras lo resume»",
-   "motivo": "el 15 % solo consta en el balance de la legislatura anterior; en campaña Nogueras no da la cifra"
-  },
-  {
-   "propuesta": "junts",
-   "criterio": "seleccion_sha256 (evaluacion.json)",
-   "antes": "65c630fcfbbd63c269f3a31268d89dd23b1ac527bbe2de243c3233fd830e121a",
-   "despues": "f3e83fbd56805665c4deb487d96ae0d70a336469790bc312c12d79b21e9597ab",
-   "motivo": "recalculado tras los cambios en seleccion.json"
-  },
-  {
-   "propuesta": "junts-04",
-   "criterio": "concrecion",
-   "antes": "«En campaña Junts reclama «competències, control i recursos en immigració»»",
-   "despues": "«El balance del 27-oct recoge la reclamación [...], en campaña Nogueras pone la delegación entre sus condiciones para negociar (6-nov)»",
-   "motivo": "la cita es del balance de la legislatura anterior; lo que se dice en campaña es la condición del 6-nov (Europa Press)"
-  },
-  {
-   "propuesta": "junts-08",
-   "criterio": "legal",
-   "antes": "Desde abril de 2025 la usurpación y el allanamiento ya se juzgan por juicio rápido (LO 1/2025).",
-   "despues": "Desde abril de 2025 la usurpación y el allanamiento ya se juzgan por juicio rápido (LO 1/2025). La proposición suprime para estos casos el trámite de vulnerabilidad de los arts. 441.5 a 441.7 LEC, al que hoy remite la entrega inmediata del art. 441.1 bis, y la suspensión de lanzamientos del Real Decreto-ley 11/2020 entonces vigente; además, el Real Decreto-ley 29/2026, posterior a la proposición, suspende hasta 2030 los desahucios de personas vulnerables sin alternativa habitacional (art. 2). Suprimir esas suspensiones requiere ley ordinaria.",
-   "motivo": "auditoría de coherencia (13-nov, tras el análisis del programa de Vox): omisión de la normativa vigente, con el mismo tratamiento que salf-02 y vox-08 (encaje legal). La proposición (BOCG-15-B-173-1, exposición de motivos, artículo dos y artículo cuatro, apartados cuatro y cinco) suprime para la ocupación el trámite de los arts. 441.5-7 LEC y la referencia al art. 250.1.4.º del art. 1 bis del RDL 11/2020; la suspensión hasta el 31-12-2030 del art. 2 del RDL 29/2026, convalidado, es posterior y la proposición no la contempla. La valoración («mixta») no cambia.",
-   "fecha": "2026-11-13"
-  },
-  {
-   "propuesta": "junts-08",
-   "criterio": "legal (fuentes)",
-   "antes": "—",
-   "despues": "https://www.boe.es/buscar/act.php?id=BOE-A-2000-323 | Ley 1/2000, de Enjuiciamiento Civil (texto consolidado, BOE), art. 441",
-   "motivo": "auditoría de coherencia (13-nov, tras el análisis del programa de Vox): fuente del añadido (art. 441.1 bis y 5 a 7).",
-   "fecha": "2026-11-13"
-  },
-  {
-   "propuesta": "junts-08",
-   "criterio": "legal (fuentes)",
-   "antes": "—",
-   "despues": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823 | Real Decreto-ley 29/2026, de 6 de octubre, de protección de la función social de la vivienda (texto consolidado, BOE)",
-   "motivo": "auditoría de coherencia (13-nov, tras el análisis del programa de Vox): fuente del añadido (art. 2).",
-   "fecha": "2026-11-13"
-  },
-  {
-   "propuesta": "seleccion junts-c01",
-   "criterio": "veces y justificación",
-   "antes": "n = 5 (27-oct a 9-nov)",
-   "despues": "n = 8 (añade 12-nov, 13-nov Barcelona y 13-nov Reus)",
-   "motivo": "Ocasiones propuestas por el analista. Las tres notas de junts.cat responden 200 y contienen las citas; las crónicas de los mismos actos van con cuenta = false. Es la misma medida que junts-c01, no un compromiso nuevo.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "seleccion",
-   "criterio": "descartados, busqueda y nota",
-   "antes": "búsqueda hasta el 12-nov",
-   "despues": "búsqueda hasta el 14-nov (09:45); tres descartes nuevos (cuartel del Bruc, páginas «Propostes», propuesta de vivienda del 2-oct) y tres descartes revisados (deflactar el IRPF, IVA de caja, sociedades) que se mantienen",
-   "motivo": "Integración de la búsqueda del 14-nov. Bruc: la formula un dirigente local (Jordi Martí Galbis, Junts per Barcelona) en estilo indirecto; no cumple la regla de atribución. «Propostes»: páginas permanentes anteriores a la convocatoria. Vivienda del 2-oct: anterior a la convocatoria y sin cita literal en campaña.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "junts-01",
-   "criterio": "concrecion (texto; valoración sin cambio, mixta)",
-   "antes": "Nogueras define el objetivo (que Cataluña «recaude, gestione y decida» sobre todos sus impuestos) y el modelo de referencia, el concierto vasco, y lo repite en cinco ocasiones entre el 27-oct y el 9-nov. En ninguna precisa cómo se calcularía el cupo por los servicios que el Estado siga prestando, cuánto aportaría Cataluña a la solidaridad interterritorial, qué tributos y cotizaciones incluiría ni en qué plazo.",
-   "despues": "Nogueras define el objetivo (que Cataluña «recaude, gestione y decida» sobre todos sus impuestos) y el modelo de referencia, el concierto vasco, y lo repite en ocho ocasiones entre el 27-oct y el 13-nov. El 13-nov el partido precisa los tributos (todos, incluidos el IRPF, el IVA y sociedades) y el instrumento: una disposición adicional que excluya a Cataluña del régimen común de la LOFCA y una ley propia que permita a la Agencia Tributaria de Cataluña recaudar, liquidar e inspeccionar todos los impuestos, con capacidad normativa sobre los tipos. No cuantifica el pago al Estado por los servicios que siga prestando ni la aportación de solidaridad, que «decidiría la Generalitat», no menciona las cotizaciones sociales ni fija plazo.",
-   "motivo": "La nota oficial del 13-nov precisa tributos e instrumento (cita comprobada en la página y en la copia local); el texto anterior decía que Junts no precisaba qué tributos incluiría. Recuento de ocasiones actualizado.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "junts-01",
-   "criterio": "legal (texto; valoración sin cambio, desfavorable)",
-   "antes": "La Constitución «ampara y respeta los derechos históricos de los territorios forales» (disposición adicional primera), base del Concierto vasco (Ley 12/2002) y del Convenio navarro. El Tribunal Constitucional ha declarado que esos derechos «no son por tanto extensibles a otras comunidades autónomas» y que extender la disposición adicional primera a otros territorios «es constitucionalmente inviable» sea cual sea el instrumento, estatuto o ley (STC 158/2019, FJ 4). Además, la Hacienda general es competencia exclusiva del Estado (art. 149.1.14), la financiación autonómica se regula por ley orgánica (art. 157.3) y el art. 138.2 prohíbe privilegios económicos entre Estatutos. Un concierto para Cataluña exigiría reformar la Constitución (tres quintos de cada Cámara, art. 167), además de la LOFCA y el Estatuto; solo la recaudación delegada cabe hoy (art. 156.2).",
-   "despues": "La Constitución «ampara y respeta los derechos históricos de los territorios forales» (disposición adicional primera), base del Concierto vasco (Ley 12/2002) y del Convenio navarro. El Tribunal Constitucional ha declarado que esos derechos «no son por tanto extensibles a otras comunidades autónomas» y que extender la disposición adicional primera a otros territorios «es constitucionalmente inviable» sea cual sea el instrumento, estatuto o ley (STC 158/2019, FJ 4). Además, la Hacienda general es competencia exclusiva del Estado (art. 149.1.14), la financiación autonómica se regula por ley orgánica (art. 157.3) y el art. 138.2 prohíbe privilegios económicos entre Estatutos. Un concierto para Cataluña exigiría reformar la Constitución (tres quintos de cada Cámara, art. 167), además de la LOFCA y el Estatuto; solo la recaudación delegada cabe hoy (art. 156.2). Junts propone hacerlo con una disposición adicional en la LOFCA, que es una ley orgánica y no salva esa doctrina.",
-   "motivo": "El instrumento propuesto el 13-nov no cambia la valoración: la STC 158/2019 (FJ 4), ya citada, excluye extender los derechos históricos «sea cual sea el instrumento, estatuto o ley». Mismo criterio que bng-01.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "evaluacion",
-   "criterio": "seleccion_sha256",
-   "antes": "f3e83fbd56805665c4deb487d96ae0d70a336469790bc312c12d79b21e9597ab",
-   "despues": "39e7efc0744026468f4ba8e1ea3a43c12552b7e8bfc9e7fdbd6b04b25299fea0",
-   "motivo": "Se recalcula tras los cambios en seleccion.json.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "junts-05",
-   "criterio": "internacional (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32015R2264 | Reglamento (UE, Euratom) 2015/2264 (fin de la excepción del irlandés el 1-1-2022), EUR-Lex",
-   "despues": "http://publications.europa.eu/resource/celex/32015R2264 | Reglamento (UE, Euratom) 2015/2264 (fin de la excepción del irlandés el 1-1-2022) (Oficina de Publicaciones de la UE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "junts-03",
-   "criterio": "beneficiarios (campo)",
-   "antes": "(547 millones de viajeros en 2025, según la CNMC citada por Agenda Pública)",
-   "despues": "(547 millones de viajeros en 2025, según la CNMC citada por Agenda Pública, una cifra que suma viajes y no personas distintas)",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): unidad, igual que en psoe-01: la CNMC cuenta «viajeros», que suman viajes y no personas distintas; el texto hablaba de «personas usuarias». La valoración no cambia.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "junts-03",
-   "criterio": "beneficiarios",
-   "antes": "(547 millones de viajeros en 2025, según la CNMC citada por Agenda Pública)",
-   "despues": "(547 millones de viajeros en 2025, según la CNMC citada por Agenda Pública, una cifra que suma viajes y no personas distintas)",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): unidad, igual que en psoe-01: la CNMC cuenta «viajeros», que suman viajes y no personas distintas; el texto hablaba de «personas usuarias». La valoración no cambia.",
-   "fecha": "2026-11-15"
+   "antes": "Junts define el alcance (vías, trenes, estaciones y dinero) y el gestor (Ferrocarrils de la Generalitat), pero en ninguna de sus intervenciones de campaña fija plazos, coste, cómo se financiaría el mantenimiento de la infraestructura después del traspaso ni cómo se desharía el proceso ya en marcha: el 17-nov Nogueras pidió el traspaso integral «en vez de una empresa mixta» (Europa Press, estilo indirecto), la sociedad Rodalies de Catalunya ya constituida.",
+   "despues": "Junts define el alcance (vías, trenes, estaciones y dinero) y el gestor (Ferrocarrils de la Generalitat), pero en ninguna de sus intervenciones de campaña fija plazos, coste, cómo se financiaría el mantenimiento de la infraestructura después del traspaso ni cómo se desharía el proceso ya en marcha: el 17-nov Nogueras pidió el traspaso integral «en vez de una empresa mixta» (Europa Press, estilo indirecto), cuando la sociedad mixta Rodalies de Catalunya ya está constituida (enero de 2026).",
+   "motivo": "Redacción: la aposición final quedaba suelta; se dice que la sociedad mixta ya está constituida (enero de 2026, La Moncloa 12-1-2026 y nota de Arenys de Mar)."
   }
  ],
  "dudas": [
-  "Balance del 27-oct. El partido lo presenta como «balanç de la feina parlamentària» con el título «Principals iniciatives de la legislatura», es decir, como registro de la legislatura anterior y no como compromisos para el 29-N. Por eso se descartan las cuatro líneas que nadie ha repetido en campaña (IVA franquiciado de 85.000 euros, que era prioridad; jubilación sin penalización con 40 años cotizados; distrito universitario; desclasificación del 17-A). Se mantienen inmigración, catalán en la UE y deducción del 15 %, que Nogueras reafirma en campaña, aunque su cita literal siga siendo la del balance. Si el programa de Junts, aún no publicado, recoge alguna línea descartada, habrá que recuperarla.",
-  "junts-c08 (ocupación). La cita reivindica una proposición ya registrada, en respuesta a la oferta del PP para después del 29-N; no dice expresamente que Junts la volverá a presentar. El plazo de 48 horas está en la proposición (BOCG 173-1), no en la cita. Se mantiene como prioridad porque es la medida concreta que la cabeza de lista ofrece en campaña sobre ocupación, pero solo hay una ocasión.",
-  "junts-c04 y junts-c05. La reafirmación en campaña (SER Catalunya, 6-nov) solo consta en estilo indirecto de Europa Press y Catalunya Press; no se encontró la grabación. La cita literal es del balance oficial del 27-oct.",
-  "junts-03 (mantenimiento). Agenda Pública no aclara si los 475 M€ de mantenimiento de la alta velocidad están dentro de los 1.781 M€ de inversión; el «21 %» y la reasignación de «unos 200 M€» suponen que son partidas distintas (si no, el mantenimiento ya sería el 26,7 %).",
-  "junts-02 (Rodalies). No hay cifra oficial de viajeros de Rodalies en las fuentes citadas; los 547 millones son de toda España (CNMC vía Agenda Pública).",
-  "El mitin de apertura de Junts (12-nov, noche) y el resto de la campaña son posteriores a esta revisión.",
-  "[14-11-2026] Antoni Castellà: el detalle del instrumento se atribuye a la nota oficial del partido (quien = Junts), no a él.",
-  "[14-11-2026] ElNacional.cat (13-nov) dice que Junts preveía una enmienda a la totalidad en forma de concierto al proyecto de financiación PSOE-ERC; no comprobado en el Congreso y no se usa."
+  "El campo «fecha» de seleccion.json lleva hora («2026-11-18 ~12:30 (hora peninsular)»), a diferencia del resto de partidos; la web no lo usa.",
+  "No se revisaron vídeos ni redes sociales."
  ]
 }

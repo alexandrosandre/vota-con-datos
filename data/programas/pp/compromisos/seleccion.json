@@ -1,10 +1,10 @@
 {
  "partido": "pp",
  "base": "complemento",
- "fecha": "2026-11-12",
+ "fecha": "2026-11-18",
  "modelo": "Claude (Anthropic)",
  "prompt": "docs/prompts/1b_seleccion_compromisos.md (sección «Partidos con programa: complemento»)",
- "nota": "Compromisos de Alberto Núñez Feijóo que no figuran en el programa «La Reconstrucción Nacional» (10-nov; data/sources/programas/pp/LA-RECONSTRUCCION-NACIONAL.txt, páginas del PDF de 82 págs.) y que el partido presenta como importantes. Complementan las 12 prioridades del programa. El programa deja ocho medidas en blanco («Permanezca atento a la campaña para conocer esta nueva medida»: 83, 109, 132, 164, 167, 173, 200 y 210); hasta el 12-nov solo se han localizado anuncios que encajan en dos de esos huecos.",
+ "nota": "Compromisos de Alberto Núñez Feijóo que no figuran en el programa «La Reconstrucción Nacional» (10-nov; data/sources/programas/pp/LA-RECONSTRUCCION-NACIONAL.txt, páginas del PDF de 82 págs.) y que el partido presenta como importantes. Complementan las 12 prioridades del programa. El programa deja ocho medidas en blanco («Permanezca atento a la campaña para conocer esta nueva medida»: 83, 109, 132, 164, 167, 173, 200 y 210); hasta el 12-nov solo se han localizado anuncios que encajan en dos de esos huecos. [Actualización 18-11-2026] Barrido de los compromisos de campaña del 12 al 18-nov (10:00). Entra pp-c03: reformar la legislación electoral para que quienes tuvieron que abandonar el País Vasco y Navarra por ETA puedan votar en el municipio en el que estaban empadronados (Feijóo, Pamplona, 16-nov). El PP la presenta como la medida 132 de su programa, pero el programa publicado (PDF del 10-nov, el mismo sha256 que se descargó de nuevo el 18-nov) sigue teniendo ese número en blanco («Permanezca atento a la campaña», p. 48): con el criterio de pp-c01 y pp-c02 (huecos 200 y 173), cuenta como complemento mientras el PP no publique una versión del programa que la incluya. pp-c01 suma una ocasión (Lleida, 16-nov). Las demás medidas anunciadas en campaña están en el programa o no constan como prioridades del partido (véase «descartados»).",
  "compromisos": [
   {
    "id": "pp-c01",
@@ -20,7 +20,7 @@
    "sha256": "7d1ec7f9c645de09ff65cfa538cccc3a402fa87a63db589c2153814f2e3190ec",
    "cuantificado": false,
    "veces": {
-    "n": 1,
+    "n": 2,
     "ocasiones": [
      {
       "fecha": "2026-11-07",
@@ -44,6 +44,14 @@
       "formato": "mitin (Valladolid), misma ocasión",
       "fuente_local": "data/sources/compromisos/pp/2026-11-07_pp_nota_valladolid.txt",
       "nota": "La nota oficial lo titula como compromiso: «Se compromete a pedir una moratoria regulatoria en Europa» y cita «Toda obligación añadida será suprimida»."
+     },
+     {
+      "fecha": "2026-11-16",
+      "medio": "Demócrata (crónica de agencia)",
+      "url": "https://www.democrata.es/politica/feijoo-plantea-un-gran-pacto-por-el-mundo-rural-con-ventajas-fiscales-menos-trabas-y-refuerzo-de-fronteras/",
+      "formato": "acto de campaña en una explotación ganadera de Lleida (presentación del Libro Blanco por el futuro rural)",
+      "fuente_local": "data/sources/compromisos/pp/2026-11-16_democrata_lleida_mundo_rural.txt",
+      "nota": "Ocasión distinta. La crónica dice que Feijóo «ha avanzado que en el primer Consejo Europeo al que acuda respaldará la moratoria regulatoria» y que «toda exigencia adicional que el Gobierno de España haya incorporado a la normativa europea “será derogada”»: solo «será derogada» es literal; el resto lo resume la agencia, que define la misma medida."
      }
     ]
    },
@@ -99,6 +107,42 @@
     ]
    },
    "nota": "No figura en el programa difundido el mismo día: ni el texto de 82 páginas ni la reedición de 64 mencionan el Ingreso Mínimo Vital ni una renta de activación; la sección 4.3 (pp. 58-60) deja en blanco la medida 173 («Permanezca atento a la campaña», p. 59). Fuentes Informadas (10-nov) señala que la medida «no está en el programa». El plan contra el absentismo fraudulento anunciado en el mismo acto sí está (medida 175, p. 60) y no se incluye aquí."
+  },
+  {
+   "id": "pp-c03",
+   "area": "justicia e instituciones",
+   "resumen": "Reformar la legislación electoral para que quienes tuvieron que abandonar el País Vasco y Navarra por el terrorismo de ETA puedan, si lo desean, volver a votar en el municipio en el que estaban empadronados.",
+   "cita": "Vamos a reformar la legislación electoral para que quienes tuvieron que abandonar el País Vasco y Navarra recuperen, si así lo quieren, el derecho a votar en los municipios en los que estaban empadronados",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+   "formato": "mitin de campaña (Pamplona, con UPN)",
+   "fecha": "2026-11-16",
+   "url": "https://www.europapress.es/nacional/noticia-feijoo-propone-ley-nietos-vasca-expulsados-terrorismo-eta-puedan-votar-euskadi-20261116110857.html",
+   "medio": "Europa Press",
+   "fuente_local": "data/sources/compromisos/pp/2026-11-16_europapress_voto_exiliados_eta.txt",
+   "sha256": "f2b1ab79ff31eddb9e70ccaf89c9659fd604a129942791a6ba294638c613f999",
+   "cuantificado": false,
+   "veces": {
+    "n": 1,
+    "ocasiones": [
+     {
+      "fecha": "2026-11-16",
+      "medio": "Europa Press",
+      "url": "https://www.europapress.es/nacional/noticia-feijoo-propone-ley-nietos-vasca-expulsados-terrorismo-eta-puedan-votar-euskadi-20261116110857.html",
+      "formato": "mitin (Pamplona)",
+      "fuente_local": "data/sources/compromisos/pp/2026-11-16_europapress_voto_exiliados_eta.txt",
+      "nota": "Añade la frase «Si quieren volver a votar en un municipio en Navarra del que le echaron, podrán volver a votar» y que el PP la llama «ley de nietos vasca». Europa Press cita como texto de la medida 132 del programa una frase que no figura en el PDF publicado."
+     },
+     {
+      "fecha": "2026-11-16",
+      "medio": "Partido Popular (nota de prensa)",
+      "url": "https://www.pp.es/actualidad/articulos/feijoo-propone-reformar-la-legislacion-electoral-para-permitir-que-los-exiliados-por-la-violencia-de-eta-puedan-votar-en-navarra-y-euskadi/",
+      "formato": "mitin (Pamplona), misma ocasión",
+      "fuente_local": "data/sources/compromisos/pp/2026-11-16_pp_nota_voto_exiliados_eta.txt",
+      "nota": "Titular de la nota oficial: «Feijóo propone reformar la legislación electoral para permitir que los “exiliados” por la violencia de ETA puedan votar en Navarra y Euskadi»."
+     }
+    ]
+   },
+   "nota": "No figura en el programa publicado el 10-nov: la medida 132 está en blanco («Permanezca atento a la campaña para conocer esta nueva medida», p. 48), y ni el bloque de víctimas del terrorismo (medidas 130 y 131, p. 47) ni las medidas electorales (56 a 58, pp. 28-29: voto por correo y Junta Electoral) tratan del voto de quienes se fueron por ETA; «exiliados» solo aparece en la medida 143 (p. 50), sobre la nacionalidad de los descendientes de exiliados españoles. El PP dice que rellena el hueco 132: si publica una versión del programa que la incluya, pasará a evaluarse por el programa y saldrá del complemento."
   }
  ],
  "prioridades": [
@@ -109,9 +153,13 @@
   {
    "id": "pp-c02",
    "justificacion": "Feijóo la anunció en su discurso de presentación del programa (10-nov) y la nota oficial del PP la destaca como primera medida del resumen del acto («Entre las medidas propuestas, incluye crear una sola renta de activación…»); fue titular en varios medios (Libre Mercado, Moncloa.com, Tododisca, Fuentes Informadas). Una sola ocasión localizada."
+  },
+  {
+   "id": "pp-c03",
+   "justificacion": "La anunció el candidato nacional en su mitin de Pamplona (16-nov) como uno de los dos compromisos con los que quiere «saldar una deuda» con quienes se fueron por ETA, y la nota oficial del PP la lleva en el titular; Europa Press la tituló como propuesta de Feijóo («ley de nietos vasca»). El PP la presenta como la medida que rellena el hueco 132 de su programa. Una sola ocasión localizada."
   }
  ],
- "nota_prioridades": "Dos prioridades: son los únicos compromisos concretos, con cita literal en primera persona, ausentes del programa y presentados por el propio partido como compromisos de gobierno. El resto de compromisos de campaña localizados ya están en el programa o no son medidas concretas (ver «descartados»).",
+ "nota_prioridades": "Tres prioridades: son los únicos compromisos concretos, con cita literal en primera persona del candidato, ausentes del programa publicado y presentados por el propio partido como compromisos de gobierno (las tres rellenan huecos que el programa reserva «para la campaña»: medidas 200, 173 y 132). El resto de compromisos de campaña localizados ya están en el programa, no son medidas concretas o no consta que el partido los presente como prioritarios (ver «descartados»).",
  "descartados": [
   {
    "tema": "«Mi contrato con España» (19-oct): doce compromisos firmados por Feijóo",
@@ -209,10 +257,52 @@
    "fecha": "2026-07-06",
    "url": "https://www.elespanol.com/espana/politica/20260706/feijoo-promete-ley-concebido-no-nacido-nivel-nacional-aprobada-ayuso-madrid/1003744301447_0.html",
    "motivo": "Anterior a la convocatoria y ya en el programa, p. 56 (medida 159: «El concebido no nacido computará para determinar las ayudas y beneficios que correspondan a la familia»)."
+  },
+  {
+   "tema": "La vivienda, dentro de una Vicepresidencia del Gobierno (Santiago de Compostela, 14-nov)",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-11-14",
+   "url": "https://www.infobae.com/espana/agencias/2026/11/14/feijoo-ratifica-que-situara-vivienda-en-una-vicepresidencia-si-gobierna-y-promete-hacer-un-millon-de-hogares/",
+   "motivo": "Es la forma de organizar el Gobierno que acompaña a la reducción de ministerios del programa (medida 3, p. 13: «Habrá menos ministerios»), tras afirmar que no habrá un Ministerio de Vivienda específico; el propio Feijóo añade que «lo importante no es que esté dentro de una Vicepresidencia, lo importante es que vamos a hacer un millón de viviendas» (medida 144, p. 53). Mismo criterio que la integración del Ministerio de Igualdad (descartada arriba)."
+  },
+  {
+   "tema": "Cuatro años de rebaja del IRPF para los jóvenes y exención de impuestos a los jóvenes que compren su vivienda habitual en municipios despoblados (Santander, 15-nov)",
+   "quien": "Partido Popular (nota oficial del mitin de Feijóo en Santander)",
+   "fecha": "2026-11-15",
+   "url": "https://www.pp.es/actualidad/articulos/feijoo-abre-las-puertas-del-pp-a-todos-como-la-casa-comun-del-cambio-y-reclama-a-sanchez-que-diga-a-sus-socios-que-no-violenten-la-campana/",
+   "motivo": "Ya están en el programa: medida 179 (p. 60, IRPF de los jóvenes el primer año y los tres siguientes) y medida 196 (p. 64, «Los jóvenes no pagarán impuestos por adquirir su vivienda habitual en municipios despoblados»)."
+  },
+  {
+   "tema": "La despoblación como criterio de la financiación autonómica (vídeos de Huesca y Teruel, 17-nov; Libro Blanco rural, Lleida, 16-nov)",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-11-17",
+   "url": "https://www.europapress.es/aragon/noticia-feijoo-afirma-gobierno-espana-da-espalda-alto-aragon-tiene-deuda-teruel-20261117103009.html",
+   "motivo": "Ya está en el programa con otras palabras: medida 195 (p. 64, «El coste de ruralidad se contemplará en la financiación autonómica»)."
+  },
+  {
+   "tema": "Mantener al lobo fuera del Listado de Especies Silvestres en Régimen de Protección Especial (vídeo para Cantabria, 15-nov)",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-11-15",
+   "url": "https://www.infobae.com/espana/agencias/2026/11/15/feijoo-se-compromete-a-mantener-al-lobo-fuera-del-lespre-y-a-mejorar-las-infraestructuras-de-cantabria/",
+   "motivo": "Concreta una medida del programa: medida 198 (p. 65, «Garantizaremos la protección de los ganaderos frente al lobo asegurando, al mismo tiempo, su conservación y equilibrio con criterios técnicos»). Además, procede de un vídeo de ámbito autonómico."
+  },
+  {
+   "tema": "IVA del 0 % para los alimentos básicos, del 10 % para los carburantes y menos carga fiscal en el recibo de la luz (nota de la coalición UPN-PP, Pamplona, 17-nov)",
+   "quien": "Coalición UPN-PP (nota de upn-pp.es sobre el acto de Javier Esparza, de UPN)",
+   "fecha": "2026-11-17",
+   "url": "https://upn-pp.es/upn-pp-defiende-iva-cero-para-los-alimentos-basicos-y-rebajar-del-10-al-4-el-de-la-primera-vivienda/",
+   "motivo": "El IVA cero de los alimentos y la rebaja fiscal del recibo de la luz ya están en el programa (medidas 180, p. 61, y 229, p. 71). El IVA del 10 % para los carburantes no figura en él («carburante», «combustible», «gasolina» y «gasóleo» no aparecen), pero solo consta en un documento de la coalición navarra, en boca de un dirigente de UPN; ningún dirigente del PP la ha formulado ni el partido la presenta como compromiso nacional."
+  },
+  {
+   "tema": "Compromisos territoriales anunciados en una sola ocasión: Parador Nacional en Durango (Bilbao, 17-nov), nuevas frecuencias ferroviarias Logroño-Madrid por La Rioja Baja con parada en Calahorra (Logroño, 17-nov), culminar el embalse de Almudévar y la regulación del Gállego (vídeo de Huesca, 17-nov), y el AVE a Reinosa y el tren a Bilbao (vídeo de Cantabria, 15-nov)",
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+   "fecha": "2026-11-17",
+   "url": "https://www.pp.es/actualidad/articulos/feijoo-reclama-a-los-votantes-del-pnv-y-psoe-que-no-se-resignen-y-les-pide-el-voto-para-limpiar-las-instituciones-y-tener-un-gobierno-de-gestion/",
+   "motivo": "No figuran en el programa (que no nombra Durango, Logroño, Calahorra, Almudévar ni Reinosa; solo prevé invertir en la red ferroviaria, medida 118, p. 45, y modernizar embalses y regadíos, medida 199, p. 65). Cada uno consta en una sola ocasión, en un acto o vídeo autonómico; las frecuencias de Logroño, además, las condiciona a que haya demanda («si hay demanda», Europa Press), y de Almudévar dice que está «recogido» en su plan de infraestructuras, no en el programa. Quedan por debajo de las tres prioridades, que el candidato anunció como compromisos de gobierno de ámbito estatal y que rellenan huecos del programa. Si el editor considera que basta con el listón de psc-c04 (compromiso local del cabeza de lista, destacado por el medio), el primero en entrar sería el de Logroño (nota oficial de pp.es, Europa Press y titular de EFE) o el de Durango (nota oficial, que lo cuenta entre sus «cuatro compromisos específicos con el País Vasco»)."
   }
  ],
  "busqueda": {
-  "hasta": "2026-11-12",
+  "hasta": "2026-11-18 (10:00)",
   "web_oficial": "pp.es: notas de prensa de los actos de Valladolid (7-nov) y de la presentación del programa (10-nov). El «Contrato con España» no está en pp.es; se usó la copia en PDF que publicó El Debate (19-oct).",
   "fuentes": [
    "Entradas del PP en data/promesas/promesas.json y codificaciones «campaña» del PP en data/fase1/codificacion_g1.json (q22 Ministerio de Igualdad; q28 obligaciones al campo)",
@@ -222,6 +312,7 @@
    "Búsqueda de anuncios que rellenen los huecos del programa (medidas 83, 109, 132, 164, 167, 173, 200 y 210)"
   ],
   "comprobacion_programa": "Cada candidato se buscó en el texto del programa por sus términos y por sinónimos (p. ej. «Ingreso Mínimo Vital», «IMV», «renta», «subsidio», «búsqueda de empleo»; «Europa», «europea», «obligaciones», «moratoria», «agricultor»), y se leyó la sección correspondiente.",
-  "limitaciones": "pp.es solo publica notas de algunos actos; la campaña oficial empieza el 13-nov y es probable que se anuncien más medidas para los huecos del programa después de esta fecha."
+  "limitaciones": "pp.es solo publica notas de algunos actos; la campaña oficial empieza el 13-nov y es probable que se anuncien más medidas para los huecos del programa después de esta fecha.",
+  "actualizacion_2026-11-18": "Entradas del PP posteriores al 12-nov en data/promesas/promesas.json (n.º 11 a 28) y candidatas del barrido del 18-nov por la mañana (frecuencias Logroño-Madrid); notas de pp.es de Pamplona (16-nov), Bilbao (17-nov) y Logroño (17-nov); Europa Press (Pamplona, Bilbao, Huesca/Teruel, Logroño), EFE vía Infobae (Santiago, 14-nov; Santander, 15-nov) y Demócrata (Lleida, 16-nov). El PDF del programa se descargó de nuevo el 18-nov: mismo sha256 (cea8f2a0…) y la versión de 64 págs. también sin cambios (ae0c35d7…); los ocho huecos siguen en blanco. Cada candidato se buscó en el texto del programa por sus términos y sinónimos («vicepresidencia», «ministerios»; «despoblación», «ruralidad», «financiación autonómica»; «lobo»; «embalses», «regadíos»; «IVA», «carburante», «combustible»; «voto», «electoral», «empadronamiento», «exiliados»; «Parador»; «ferroviaria»)."
  }
 }

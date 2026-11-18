@@ -1,116 +1,42 @@
 {
  "aprobado": true,
  "revisor": "Claude (Anthropic), pasada independiente",
- "fecha": "2026-11-15",
+ "fecha": "2026-11-18",
  "base": "complemento",
- "seleccion_sha256": "e4d98e221eb82782f377bfef5e950a52035d640fca2f5f349b66c2bc513fdeb2",
- "alcance": "Complemento del programa: los cinco compromisos de la base anterior (psc-c04 y psc-c05 en «compromisos»; psc-c01 a c03 en «descartados») y los otros 19 descartados de seleccion.json, contra el programa del PSOE del 15-nov que asume el PSC (data/sources/programas/psoe/PROGRAMAPSOE29N26.pdf, SHA-256 e9c83413…9bf5, igual en la copia catalogada y en psoe.es) y sus 492 medidas (data/programas/psoe/extraccion.json); y las dos prioridades que llegaron a la revisión (psc-c04 y psc-c05) × 8 criterios. Cada compromiso se buscó por sus términos y sinónimos en el texto de cada página (pdftotext -layout -f N -l N, página = página del PDF) y en las 492 medidas: Parador, Paradores, Turespaña, Tarragona, Banco de España, turismo, turístico, patrimonio, edificio; El Prat, aeropuerto, aeroportuario, Aena, DORA, pista, intercontinental, vuelos, aviación, aéreo, conectividad, Barcelona, Cataluña, Catalunya, Llobregat, Natura 2000; condonación, deuda autonómica, financiación autonómica, CPFF, SMI, salario mínimo, aborto, interrupción voluntaria del embarazo, artículo 43. Los seis fragmentos del programa entrecomillados (en «programa» de c05 y en los motivos de c01 a c03) son literales y de la página indicada, y los números de medida citados son correctos (n.º 31, p. 21; 73, p. 32; 87, p. 37; 229, p. 60; 231, p. 61; 294, p. 73; 327, p. 81; 368, p. 89; 455, p. 103); las prioridades del programa a las que remiten los descartados (psoe-04 con el n.º 87; psoe-08 con los n.º 229, 231 y 129; psoe-10 con los n.º 327 y 368) coinciden con «prioridades» de extraccion.json. La conversión de evaluacion.json se comparó campo a campo con la versión del repositorio (HEAD): solo cambiaban id, id_anterior, base, la frase sobre el programa en «concreción» y su fuente (el PDF del programa, pp. 73 y 21), y se quitaba «compromisos_relacionados» (vacío). Se abrieron con una petición normal las 23 URL de evaluacion.json: todas responden 200. Se comprobaron en la página las citas de c04 y c05 y las cifras del Parador (estudio de Paradores de 9-4-2026: 59 habitaciones, 20,1 M€, apertura a finales de 2030; Paradores 2024: 97 establecimientos, 39,7 M€ de beneficio neto, 73,55 % de ocupación) y de El Prat (500 m, de 2.660 a 3.160 m, unos 3.200 M€, plan director en 2028, obras de 2030 a 2033; DORA III: 1.765 M€ para El Prat —1.760 en Crónica Global—, 191,25 M€ de actuaciones preparatorias, la pista a partir de 2032, tres céntimos de subida de la tarifa media). verify_quotes: 0 citas no encontradas. seleccion_sha256 recalculado tras las correcciones.",
- "seleccion": "En el programa o no, compromiso a compromiso. c01 (condonación y modelo de financiación): está, con el mismo alcance: n.º 229 (p. 60), el modelo del CPFF con 21.000 millones adicionales, y n.º 231 (p. 61), la asunción parcial de 83.000 millones de deuda autonómica; los 17.000 y «cerca de 5.000» millones de Hereu son la parte de Cataluña de esos mismos totales (17.104 de 83.252 M€; 4.686 M€ en la propuesta de enero), no otra cifra. c02 (SMI todos los años): está, concretado: n.º 87 (p. 37), por encima del 60 % del salario medio y actualizado periódicamente; es la misma frase de Sánchez en el mismo acto de Tarragona que psoe-c03, descartado con este criterio. c03 (aborto en la Constitución): está, n.º 327 (p. 81), reforma del art. 43, y n.º 368 (p. 89); mismo compromiso que psoe-c04. c04 (Parador en el Banco de España de Tarragona): no está; el programa no menciona los Paradores, Tarragona ni el edificio, y sus medidas de turismo (n.º 73, p. 32; n.º 294, p. 73) y de patrimonio cultural (n.º 455, p. 103, cuyos grandes proyectos no incluyen ninguno en Tarragona) no lo cubren. c05 (ampliación de El Prat): no está; el programa no menciona El Prat, Barcelona (salvo el Barcelona Supercomputing Center, n.º 10), pistas ni vuelos intercontinentales, y el n.º 31 (p. 21) solo despliega el DORA III, que deja la pista para después de 2031: la misma medida con otro alcance no es la misma medida. Prioridades: el complemento exige que el partido presente el compromiso como importante (prompt 1b: «los anuncia el candidato, los repite, son titulares de campaña») y no tiene la regla de la base «compromisos» de seleccionar todos cuando hay menos de 12, que es la que, según las revisiones del 12 y el 14-nov, hizo entrar a c04 («no lo destaca el partido, y entra por esa razón») y a c05 («se admite, como psc-04»). c04 cumple el listón: el cabeza de lista por Barcelona lo formula como promesa («Si gobernamos, habrá Parador, seguro», 9-11), la cabeza de lista por Tarragona lo repite (14-11) y el Diari de Tarragona lo destaca en el subtítulo de las dos entrevistas. c05 no lo cumple: una sola ocasión, en respuesta a una pregunta, sin eco en otros dirigentes ni en las notas del PSC, y en la misma entrevista Hereu enumera como sus tres prioridades para Cataluña la vivienda, la financiación y la reindustrialización; pasa a «no_priorizados», como vox-c17, compromis-c15 y psoe-c07. Los 19 descartados restantes no remiten al programa y sus motivos no cambian; las notas y la búsqueda dicen que no se hizo una búsqueda nueva tras el 14-nov, 09:40, y el registro de promesas del 15-nov no añade compromisos concretos del PSC (Morón: la C-13, carretera de la Generalitat; Hereu en NacióDigital, sin medida concreta).",
- "igual_estandar": "Sin cambios de valoración en psc-c04. Qué está «en el programa»: el criterio de las revisiones de Vox (13-nov), Compromís (14-nov) y el PSOE (15-nov): si falta el rasgo que define el compromiso, va al complemento; si falta un elemento accesorio o el programa lo concreta más, se descarta. c01 a c03 se tratan como psoe-c06, psoe-c03 y psoe-c04 (las mismas medidas del programa); c05, como vox-c11 y compromis-c02 (el programa recoge algo del mismo ámbito, pero no el rasgo que define el compromiso). Qué es prioridad: el listón de vox-c12 (el candidato nacional lo anuncia en un mitin y la agencia lo destaca: prioridad) frente a vox-c17, compromis-c15 y psoe-c07 (una sola ocasión, sin que el partido lo destaque: no prioridad). c04 entra por dos dirigentes, dos ocasiones y los subtítulos; c05 queda fuera como vox-c17, el caso más parecido (el candidato, una vez, en una entrevista). La corrección de atribución en «legal» de c04 no cambia la valoración («mixta»: la cesión municipal no está aprobada).",
+ "seleccion_sha256": "d5ddf5b31ca263d170f617092264feec118b57c3188bfb42d6c4b11e60c4a672",
+ "alcance": "Barrido del 18-nov: psc-c05 pasa a prioridad (manifiesto del 17-nov), prioridad nueva psc-c06 (8 criterios) y descartes nuevos. Se abrieron las 22 URL nuevas: todas responden 200. Citas: verify_quotes, 0 no encontradas; SHA-256 de las copias coincidentes; se leyó el manifiesto (copia .txt) completo en sus apartados de financiación, «Defensar Catalunya» e infraestructuras. psc-c05 se comparó campo a campo con psc-05 del commit 9d8ad02: solo cambian id, id_anterior y el texto y fuentes de «concreción» (manifiesto y programa del PSOE). psc-c06 se comparó con junts-02 aprobado: mismos hechos y fuentes en lo común. Se comprobó en la nota de La Moncloa de 12-1-2026 el 49,9 %, los nueve consejeros, el Maresme como primera línea y el traspaso «incluida la infraestructura». Programa del PSOE (texto completo): no menciona Rodalies, traspaso, empresa mixta, El Prat ni ordinalidad (solo Cercanías en n.º 27 y 282).",
+ "seleccion": "psc-c05 y psc-c06 cumplen el criterio único: psc-c05, dos ocasiones (Hereu en Público y el manifiesto); psc-c06, documento oficial de campaña que Europa Press lleva al titular. psc-c04 se mantiene (dos ocasiones de dos cabezas de lista, ambas con la medida en el subtítulo). El descarte del manifiesto atribuía al programa del PSOE la financiación «singular» con ordinalidad: el PSOE no menciona la ordinalidad; se precisa que es un principio sin instrumento, cuantía ni plazo, y que los 4.686 M€ son lo que supondría para Cataluña el modelo de la n.º 229 (unos 21.000 M€ en total; NacióDigital y Ara, enero de 2026). Criterio único para priorizar en el complemento (y para decidir los casos del PSC, EH Bildu, Adelante Andalucía y el hueco del PP): el ámbito local no excluye ni rebaja el listón; decide la prueba de que el partido presenta la medida como importante (prompt 1b: «los anuncia el candidato, los repite, son titulares de campaña»). Una medida concreta y firme, ausente del programa, se prioriza si (a) consta en al menos dos ocasiones públicas distintas, o (b) en una sola ocasión, el propio partido o la crónica del acto la destaca: titular, entradilla o ladillo de una nota oficial, documento oficial de campaña (manifiesto, decálogo, lista de compromisos) o titular de la crónica de agencia. Una mención en el cuerpo de una nota o crónica, entre otras medidas, no basta. Además, para compromisos territoriales (una obra, un servicio o un equipamiento en un lugar concreto) anunciados por un candidato nacional en un acto o vídeo autonómico, la vía (b) solo vale si el titular es esa medida concreta, no un enunciado genérico. Aplicación: psc-c04 (Parador de Tarragona) entra por (a): Hereu y Montalvo, dos entrevistas, ambas con la medida en el subtítulo. El tren a Foronda de EH Bildu (Mikel Otero, 13-nov) queda fuera, pero no por ser local: es una sola mención en el cuerpo de una nota de EH Bildu Araba en estilo indirecto («apuesta por dar conexión ferroviaria al aeropuerto de Foronda»), cuyo titular trata de optimizar los servicios ferroviarios (comprobado en ehbildu.eus el 18-nov); conviene corregir el motivo «ámbito local» del EH Bildu en su próxima revisión. adelante_andalucia-c01 queda fuera: una sola ocasión, mención en el cuerpo de la crónica de Europa Press, sin nota oficial ni titular. En el PP, el hueco 4 sigue vacío: Durango (una mención en el cuerpo de la nota de Bilbao, cuyo titular es otro; sin titular de agencia localizado), Almudévar y Reinosa (vídeos autonómicos, sin titular propio) no cumplen; Logroño-Calahorra tiene titular de EFE, pero el propio Feijóo lo condiciona («si hay demanda», Europa Press), por lo que no es un compromiso firme.",
+ "igual_estandar": "psc-c06 tiene las mismas valoraciones que junts-02 en los hechos comunes (todo «mixta»), y la de El Prat es la aprobada el 15-nov. Sin cambios de valoración.",
  "recuento_inicial": {
   "favorable": 0,
-  "mixta": 13,
+  "mixta": 21,
   "desfavorable": 0,
   "no_verificable": 3
  },
  "recuento_final": {
   "favorable": 0,
-  "mixta": 6,
+  "mixta": 21,
   "desfavorable": 0,
-  "no_verificable": 2
- },
- "recuento_nota": "recuento_inicial: las dos prioridades que llegaron a la revisión (psc-c04 y psc-c05, 8 criterios cada una). recuento_final: solo psc-c04, sin cambios de valoración; la evaluación de psc-c05 (antes psc-05: 7 «mixta» y 1 «no_verificable») se retira del complemento al no ser prioridad y sigue en el historial del repositorio.",
- "revision_anterior": {
-  "fecha": "2026-11-12",
-  "aprobado": true,
-  "base": "compromisos",
-  "cambios": 33,
-  "dudas": 3,
-  "nota": "La revisión del 12-11-2026 se refería a la base «compromisos» (4 prioridades, psc-01 a psc-04, × 8 criterios; recuento 5/24/0/3) y fue aprobada con 7 cambios y 3 dudas (el criterio sobre Pedro Sánchez en actos del PSC, confirmado por el editor el 13-11; la experiencia internacional de psc-04; la campaña oficial por revisar). El 14-11 se actualizó (revisión independiente aprobada): entró psc-c05 / psc-05 (El Prat), con ocasiones nuevas en psc-c01 y psc-c04, 5 cambios y 2 dudas (la entrevista de Público, posiblemente traducida; la búsqueda cerrada el 14-11 a las 09:40); recuento de las 5 propuestas, 5/31/0/4. Las auditorías de coherencia del 14 y el 15-nov añadieron 4 y 17 cambios en psc-01 a psc-03, sin cambiar valoraciones (33 cambios en total). De esas evaluaciones solo se reaprovecha la de psc-04 (hoy psc-c04); psc-01 a psc-03 están en el programa y psc-05 no es prioridad del complemento. Uno de los cambios del 12-nov (atribuir a Hereu que el alcalde retiró el punto del orden del día) se revierte en esta revisión."
+  "no_verificable": 3
  },
  "cambios": [
   {
-   "propuesta": "psc-c05",
-   "criterio": "selección (prioridades → no_priorizados) y evaluación",
-   "antes": "Prioridad del complemento («Medida estatal concreta que el cabeza de lista por Barcelona presenta como posición propia y del partido…»), evaluada en evaluacion.json (8 criterios: 7 «mixta» y 1 «no_verificable»).",
-   "despues": "Sigue en «compromisos», sin priorizar («no_priorizados», con su motivo); su evaluación se retira de evaluacion.json (sigue en el historial como psc-05).",
-   "motivo": "Mismo estándar: el complemento solo incluye compromisos que el partido presenta como importantes (prompt 1b). Hereu lo dijo una vez, en respuesta a una pregunta de Público (12-11), y en la misma entrevista, preguntado por las «tres prioridades» de un gobierno socialista para Cataluña, cita la vivienda, la financiación y la reindustrialización; ningún otro dirigente ni nota del PSC lo plantea como compromiso. Es el caso de vox-c17 (Abascal, una vez, en una entrevista), no priorizado, y del listón de compromis-c15 y psoe-c07. Con base «compromisos» entró solo por la regla de seleccionar todos si hay menos de 12 (revisión del 14-nov), que el complemento no tiene."
-  },
-  {
-   "propuesta": "psc-c05",
-   "criterio": "programa (seleccion.json)",
-   "antes": "el DORA III 2027-2031 (Consejo de Ministros, 15-9-2026) solo reserva para El Prat 191,25 M€ de actuaciones preparatorias y compensaciones ambientales y deja la pista",
-   "despues": "el DORA III 2027-2031 (Consejo de Ministros, 15-9-2026) asigna a El Prat 1.765 M€, de los que solo 191,25 M€ son actuaciones preparatorias de la ampliación y compensaciones ambientales, y deja la pista",
-   "motivo": "Cifra inexacta: según La Ciutat (19-9-2026) y Crónica Global (15-9-2026), ya citadas en la evaluación, el DORA III destina a El Prat 1.765 M€ (1.760 M€ en Crónica Global) y, de ellos, 191,25 M€ a trabajos previos de la ampliación; los 191,25 M€ no son todo lo que reserva para el aeropuerto."
-  },
-  {
-   "propuesta": "psc-c05",
-   "criterio": "nota (seleccion.json)",
-   "antes": "«… Es la única ocasión localizada en la que un dirigente del PSC lo formula en campaña.» (sin decir si es prioridad)",
-   "despues": "… No es prioridad del complemento (véase «no_priorizados»): una sola ocasión, en respuesta a una pregunta del entrevistador, y en la misma entrevista, preguntado por las «tres prioridades» de un gobierno socialista para Cataluña, Hereu cita la vivienda, la financiación y la reindustrialización.",
-   "motivo": "Consecuencia del primer cambio, como en la nota de psoe-c07."
-  },
-  {
-   "propuesta": "psc-c04",
-   "criterio": "justificación (seleccion.json)",
-   "antes": "Compromiso territorial concreto del cabeza de lista del PSC por Barcelona, formulado como promesa condicionada a gobernar («Si gobernamos, habrá Parador, seguro») en la entrevista de campaña con el principal diario de la demarcación (Diari de Tarragona, 9-11). Ione Montalvo, cabeza de lista por Tarragona, lo respalda en otra entrevista del mismo diario (14-11: «Es una oportunidad que no podemos dejar escapar»), sin plazo ni cuantía. El programa del PSOE no lo recoge: no menciona los Paradores, Tarragona ni el edificio del Banco de España, y en turismo solo propone un modelo sostenible y resiliente (n.º 294, p. 73).",
-   "despues": "Compromiso territorial concreto del cabeza de lista del PSC por Barcelona, formulado como promesa condicionada a gobernar («Si gobernamos, habrá Parador, seguro») en una entrevista de campaña con el Diari de Tarragona (9-11), que lo destaca en el subtítulo («habla por primera vez del Parador del Banco de España»). Ione Montalvo, cabeza de lista por Tarragona, lo respalda en otra entrevista del mismo diario (14-11: «Es una oportunidad que no podemos dejar escapar»), también destacado en el subtítulo («Defiende el Parador»), sin plazo ni cuantía. El programa del PSOE no lo recoge: no menciona los Paradores, Tarragona ni el edificio del Banco de España, y en turismo propone un modelo sostenible y resiliente (n.º 294, p. 73) y que los municipios puedan aplicar recargos sobre las estancias turísticas (n.º 73, p. 32).",
-   "motivo": "Tres correcciones. Sin respaldo: ninguna fuente citada dice que el Diari de Tarragona sea «el principal diario de la demarcación». Evidencia de que el partido lo destaca, que la justificación debe dar (prompt 1b): los subtítulos de las dos entrevistas, comprobados en la página y en las copias locales. Inexacto: el programa no «solo» propone en turismo un modelo sostenible; también el recargo municipal sobre las estancias turísticas (n.º 73, p. 32)."
-  },
-  {
-   "propuesta": "psc-c04",
-   "criterio": "programa (seleccion.json)",
-   "antes": "En turismo propone un modelo sostenible y resiliente (n.º 294, p. 73) y, en cultura,",
-   "despues": "En turismo propone un modelo sostenible y resiliente (n.º 294, p. 73) y que los municipios puedan aplicar recargos sobre las estancias turísticas (n.º 73, p. 32), y, en cultura,",
-   "motivo": "Incompleto: el n.º 73 (p. 32) es la otra medida de turismo del programa («Aprobaremos un marco estatal que habilite a los ayuntamientos para aplicar recargos sobre las estancias turísticas»); tampoco trata de los Paradores."
-  },
-  {
-   "propuesta": "psc-c04",
-   "criterio": "concrecion",
-   "antes": "no menciona los Paradores, Tarragona ni el edificio del Banco de España, y en turismo solo propone un modelo sostenible y resiliente (n.º 294, p. 73).",
-   "despues": "no menciona los Paradores, Tarragona ni el edificio del Banco de España; en turismo propone un modelo sostenible y resiliente (n.º 294, p. 73) y que los municipios puedan aplicar recargos sobre las estancias turísticas (n.º 73, p. 32).",
-   "motivo": "Inexacto, como en la justificación: el programa también propone en turismo el recargo municipal sobre las estancias turísticas (n.º 73, p. 32)."
-  },
-  {
-   "propuesta": "psc-c04",
-   "criterio": "concrecion (fuentes)",
-   "antes": "Diari de Tarragona (9-11-2026); Diari de Tarragona (2026, estudio de Paradores); programa del PSOE, p. 73",
-   "despues": "Se añade «PSOE, «La fuerza de seguir avanzando», programa electoral 29-N-2026 (PDF), p. 32» (https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=32)",
-   "motivo": "Fuente del añadido (n.º 73)."
-  },
-  {
-   "propuesta": "psc-c04",
-   "criterio": "legal",
-   "antes": "y, según Hereu en la entrevista con el Diari, el alcalde tuvo que retirar el punto del orden del día.",
-   "despues": "y, según el Diari de Tarragona en su entrevista con Hereu (9-11), el alcalde tuvo que retirar el punto del orden del día.",
-   "motivo": "Atribución errónea, introducida en la revisión del 12-nov: «El pleno de Tarragona tiene dudas. Viñuales tuvo que retirar el punto del orden del día» es una intervención del entrevistador (en negrita en la página, como las demás preguntas), no una respuesta de Hereu, que contesta «Pido política de altura…». Se vuelve a atribuir al Diari. La valoración no cambia."
-  },
-  {
-   "propuesta": "(seleccion.json)",
-   "criterio": "nota y nota_prioridades",
-   "antes": "nota: «y las dos restantes, el Parador de Tarragona (c04) y la ampliación de El Prat (c05), forman el complemento»; nota_prioridades: «Dos prioridades: […] Ambos los anuncia el cabeza de lista del PSC por Barcelona (c04 lo repite la cabeza de lista por Tarragona), a diferencia de psoe-c07 (AP-9) […]»",
-   "despues": "nota: «de las dos restantes, el Parador de Tarragona (c04) forma el complemento y la ampliación de El Prat (c05) queda sin priorizar»; nota_prioridades: «Una prioridad: […]», con la evidencia de c04 y el motivo de no priorizar c05",
-   "motivo": "Consecuencia del primer cambio."
-  },
-  {
-   "propuesta": "(evaluacion.json)",
-   "criterio": "nota",
-   "antes": "Evaluación de las prioridades de data/programas/psc/compromisos/seleccion.json: compromisos de dirigentes del PSC que no figuran en el programa del PSOE del 15-nov, que el PSC asume (decisión del editor, 15-nov). Mismos criterios y rúbricas (data/fase3/criterios.json) que las 12 propuestas del programa; se muestran tras ellas, en una sección aparte. Se reaprovechan, sin cambiar sus valoraciones, las evaluaciones revisadas el 12 y el 14-nov y auditadas el 15-nov con base «compromisos» (antes psc-04 y psc-05; ver id_anterior); solo cambian el identificador y la mención al programa en «concreción».",
-   "despues": "Evaluación de la prioridad de data/programas/psc/compromisos/seleccion.json: un compromiso de dirigentes del PSC que no figura en el programa del PSOE del 15-nov, que el PSC asume (decisión del editor, 15-nov). Mismos criterios y rúbricas (data/fase3/criterios.json) que las 12 propuestas del programa; se muestra tras ellas, en una sección aparte. Se reaprovecha, sin cambiar sus valoraciones, la evaluación revisada el 12 y el 14-nov con base «compromisos» (antes psc-04; ver id_anterior); cambian el identificador, la mención al programa en «concreción» y, por la revisión independiente del 15-nov, la atribución de un dato en «legal». La ampliación de El Prat (antes psc-05) no es prioridad del complemento y su evaluación se retira; sigue en el historial del repositorio.",
-   "motivo": "Consecuencia de los cambios en psc-c05 y en «legal» de psc-c04."
+   "propuesta": "(seleccion.json) descartados[22]",
+   "criterio": "motivo",
+   "antes": "Están en el programa del PSOE que asume el PSC (financiación y deuda: n.º 229 y 231, como psc-c01; jornada de 37,5 horas: n.º 108; lenguas en la UE: n.º 485; vivienda, SMI y pensiones: véanse psc-c02 y los descartes de vivienda), o no concretan la medida (que las inversiones comprometidas «tinguin un seguiment públic»).",
+   "despues": "Están en el programa del PSOE que asume el PSC (financiación y deuda: n.º 229 y 231, como psc-c01; jornada de 37,5 horas: n.º 108; lenguas en la UE: n.º 485; vivienda, SMI y pensiones: véanse psc-c02 y los descartes de vivienda), o no concretan la medida (que las inversiones comprometidas «tinguin un seguiment públic»; el «finançament singular que respecti el principi d’ordinalitat», que el programa del PSOE no menciona, se enuncia como principio, sin instrumento, cuantía ni plazo propios: los 4.686 M€ son lo que supondría para Cataluña el nuevo modelo de la n.º 229).",
+   "motivo": "El programa del PSOE no menciona la ordinalidad: el motivo debía decir por qué ese punto del manifiesto no es un compromiso del complemento (principio sin medida)."
   },
   {
    "propuesta": "(evaluacion.json)",
    "criterio": "seleccion_sha256",
-   "antes": "ffe4cefdb2c01eec527f251d132bec39d8d561da7365f1ca30f4af87ce477310",
-   "despues": "e4d98e221eb82782f377bfef5e950a52035d640fca2f5f349b66c2bc513fdeb2",
-   "motivo": "Se recalcula tras los cambios en seleccion.json (pipeline/build_web.py lo comprueba)."
+   "antes": "7b9f845c59040c6869e6316b23b066caf784dd2191101d8d4df9d23d6b10bb77",
+   "despues": "d5ddf5b31ca263d170f617092264feec118b57c3188bfb42d6c4b11e60c4a672",
+   "motivo": "Nuevo seleccion.json corregido."
   }
  ],
  "dudas": [
-  "psc-c05 (decisión de mismo estándar, reversible): si se considera que basta con que el cabeza de lista del PSC lo presente como posición «del partido» («yo lo defiendo y el partido también») en una entrevista de campaña, c05 vuelve a «prioridades» y su evaluación (psc-05 en el historial, con id psc-c05, id_anterior psc-05 y la frase del programa en «concreción»: el n.º 31, p. 21, solo despliega el DORA III) vuelve a evaluacion.json. Entonces habría que priorizar con el mismo criterio vox-c17.",
-  "psc-c04 es un caso frontera: las dos ocasiones son respuestas a preguntas en entrevistas del mismo diario local, sin nota del PSC, mitin ni medio de ámbito estatal. Se mantiene porque cumple dos de las señales del prompt 1b (lo anuncia el candidato como promesa y lo repite otro cabeza de lista) y el diario lo destaca en ambos subtítulos. Si se exigiera que lo destaque el propio partido, como en psoe-c07, c04 también quedaría sin priorizar y el complemento del PSC quedaría vacío, como el del PSOE.",
-  "psc-c02 (SMI): la misma duda que psoe-c03 en la revisión del PSOE: el programa no dice «todos los años», sino «actualizarlo periódicamente» con un suelo del 60 % del salario medio (n.º 87, p. 37). Si se considera que la periodicidad anual define el compromiso, c02 volvería al complemento con su evaluación del 12-nov (psc-02).",
-  "Sin búsqueda nueva tras el 14-11 a las 09:40: el complemento reaprovecha los compromisos seleccionados hasta entonces. Quedan fuera el acto de Terrassa (14-11) y la campaña posterior, incluido el acto central con Pedro Sánchez en Barcelona anunciado para la semana de las elecciones; el registro de promesas del 15-nov no añade compromisos concretos del PSC."
+  "Duda del analista, para el editor: si el manifiesto del PSC (8 págs.) se considera su programa, psc-c05 y psc-c06 estarían «en el programa» y habría que replantear la base del PSC. El prompt 1b lista el manifiesto entre los documentos oficiales que sirven de fuente de compromisos y el editor decidió el 15-nov que el PSC asume el programa del PSOE; con esa decisión, la selección es correcta.",
+  "psc-c06 se apoya en una sola ocasión (el manifiesto); entra por la vía (b) del criterio único (documento oficial de campaña y titular de Europa Press)."
  ]
 }

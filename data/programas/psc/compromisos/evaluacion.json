@@ -2,9 +2,9 @@
  "partido": "psc",
  "base": "complemento",
  "modelo": "Claude (Anthropic)",
- "fecha": "2026-11-15",
- "seleccion_sha256": "e4d98e221eb82782f377bfef5e950a52035d640fca2f5f349b66c2bc513fdeb2",
- "nota": "Evaluación de la prioridad de data/programas/psc/compromisos/seleccion.json: un compromiso de dirigentes del PSC que no figura en el programa del PSOE del 15-nov, que el PSC asume (decisión del editor, 15-nov). Mismos criterios y rúbricas (data/fase3/criterios.json) que las 12 propuestas del programa; se muestra tras ellas, en una sección aparte. Se reaprovecha, sin cambiar sus valoraciones, la evaluación revisada el 12 y el 14-nov con base «compromisos» (antes psc-04; ver id_anterior); cambian el identificador, la mención al programa en «concreción» y, por la revisión independiente del 15-nov, la atribución de un dato en «legal». La ampliación de El Prat (antes psc-05) no es prioridad del complemento y su evaluación se retira; sigue en el historial del repositorio.",
+ "fecha": "2026-11-18",
+ "seleccion_sha256": "d5ddf5b31ca263d170f617092264feec118b57c3188bfb42d6c4b11e60c4a672",
+ "nota": "Evaluación de la prioridad de data/programas/psc/compromisos/seleccion.json: un compromiso de dirigentes del PSC que no figura en el programa del PSOE del 15-nov, que el PSC asume (decisión del editor, 15-nov). Mismos criterios y rúbricas (data/fase3/criterios.json) que las 12 propuestas del programa; se muestra tras ellas, en una sección aparte. Se reaprovecha, sin cambiar sus valoraciones, la evaluación revisada el 12 y el 14-nov con base «compromisos» (antes psc-04; ver id_anterior); cambian el identificador, la mención al programa en «concreción» y, por la revisión independiente del 15-nov, la atribución de un dato en «legal». La ampliación de El Prat (antes psc-05) no es prioridad del complemento y su evaluación se retira; sigue en el historial del repositorio. [Actualización 18-11-2026] Con el manifiesto oficial del PSC del 17-nov, la ampliación de El Prat (psc-c05) pasa a prioridad y vuelve su evaluación (la revisada el 12 y el 14-nov y auditada el 15-nov como psc-05; id_anterior), sin cambiar ninguna valoración: solo se añade el manifiesto en «concreción». Se añade psc-c06 (culminar el traspaso de Rodalies), evaluada con los mismos hechos y fuentes que junts-02 (traspaso integral de Rodalies) donde el hecho es el mismo; difiere en lo que el manifiesto concreta (empresa mixta y contrato programa, sin decir qué líneas o activos se traspasarían).",
  "propuestas": [
   {
    "id": "psc-c04",
@@ -159,6 +159,310 @@
     }
    },
    "id_anterior": "psc-04"
+  },
+  {
+   "id": "psc-c05",
+   "compromiso": "psc-c05",
+   "titulo": "Ampliar el aeropuerto de El Prat con el aval de la Comisión Europea",
+   "area": "infraestructuras",
+   "resumen": "Mantener e impulsar la ampliación del aeropuerto de Barcelona-El Prat (una pista más larga para vuelos intercontinentales), condicionada al aval de la Comisión Europea.",
+   "cita": "Es evidente que yo lo defiendo y que el partido también. Las cosas se tienen que hacer y se tienen que poder hacer bien. Todo lo que hagamos será con el aval de la Comisión Europea, pero no podemos renunciar a esta conectividad.",
+   "cita_traduccion": null,
+   "quien": "Jordi Hereu, cabeza de lista del PSC al Congreso por Barcelona y ministro de Industria y Turismo",
+   "formato": "entrevista (realizada en la sede del PSC antes del 11-11-2026 y publicada el 12-11-2026)",
+   "fecha": "2026-11-12",
+   "url": "https://www.publico.es/politica/nuestra-soberania-puede-decidir-washington-tel-aviv-moscu.html",
+   "medio": "Público (entrevista)",
+   "fuente_local": "data/sources/compromisos/psc/publico_20261112_hereu_entrevista.txt",
+   "beneficiarios": "Los pasajeros y las empresas del área de Barcelona, por las conexiones intercontinentales que el proyecto pretende atraer: El Prat tuvo unos 55 millones de pasajeros al año y el plan prevé 70 millones (40,17 millones de enero a agosto de 2026). El coste (unos 3.200 M€) lo asumiría Aena, que recupera sus inversiones con las tarifas aeroportuarias reguladas en el DORA, pagadas por aerolíneas y pasajeros; el impacto ambiental recae en los espacios Natura 2000 del delta del Llobregat (la Ricarda y el Remolar) y en los municipios vecinos.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "Hereu identifica la medida (ampliar el aeropuerto con «una pista más larga» para vuelos intercontinentales) y la condición («el aval de la Comisión Europea»), pero no da cuantía ni plazo; el manifiesto del PSC (17-nov) la formula como «fer realitat l’ampliació de l’aeroport del Prat, pactada entre la Generalitat, l’Estat i Aena», compatible con la protección de los espacios naturales, también sin cuantía ni plazo. El proyecto pactado en 2025 por la Generalitat, el Ministerio de Transportes y Aena prevé alargar 500 m la pista de mar, unos 3.200 M€ y obras entre 2030 y 2033, y el DORA III aprobado en septiembre de 2026 deja la pista para después de 2031. El programa del PSOE, que asume el PSC, no recoge la ampliación: solo se compromete a desplegar el DORA III en los aeropuertos (n.º 31, p. 21) y no menciona El Prat.",
+     "fuentes": [
+      {
+       "url": "https://www.publico.es/politica/nuestra-soberania-puede-decidir-washington-tel-aviv-moscu.html",
+       "titulo": "Público (12-11-2026): entrevista a Jordi Hereu"
+      },
+      {
+       "url": "https://www.socialistes.cat/wp-content/uploads/2026/11/Manifest-Generals-2026_DEF.pdf",
+       "titulo": "PSC, «Manifest» para las elecciones generales del 29-N-2026 (PDF, 8 págs.)"
+      },
+      {
+       "url": "https://naciodigital.cat/politica/ampliacio-del-prat-allargar-la-pista-de-mar-3200-milions-deuros-i-nova-terminal-satellit.html",
+       "titulo": "NacióDigital (10-6-2025): ampliación del Prat, alargar la pista de mar, 3.200 M€ y nueva terminal satélite"
+      },
+      {
+       "url": "https://cronicaglobal.elespanol.com/politica/20260915/gobierno-luz-verde-primeras-inversiones-ampliacion-prat/1003742794502_0.html",
+       "titulo": "Crónica Global (15-9-2026): el Gobierno aprueba el DORA III con las inversiones previas a la ampliación de El Prat"
+      },
+      {
+       "url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=21",
+       "titulo": "PSOE, «La fuerza de seguir avanzando», programa electoral 29-N-2026 (PDF), p. 21"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "Los aeropuertos de interés general son competencia exclusiva del Estado (art. 149.1.20.ª CE) y las inversiones de Aena se fijan en el DORA que aprueba el Consejo de Ministros (Ley 18/2014). Pero la ampliación afecta a espacios de la red Natura 2000 del delta del Llobregat: la directiva de hábitats solo permite un proyecto con evaluación negativa por razones imperiosas de interés público y con medidas compensatorias, y la Comisión Europea recordó en 2025 que España tiene abierto desde 2021 un procedimiento de infracción por las compensaciones incumplidas de la ampliación de 2002 y que no dará luz verde antes de cumplir la normativa ambiental. Los Comunes estudian recurrir a los tribunales.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española, art. 149.1.20.ª (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-10517",
+       "titulo": "Ley 18/2014: régimen del DORA y de los ingresos aeroportuarios (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-1992-81200",
+       "titulo": "Directiva 92/43/CEE de hábitats, art. 6.4 (BOE, texto del DOUE)"
+      },
+      {
+       "url": "https://www.3cat.cat/324/la-ue-no-aprovara-lampliacio-del-prat-si-no-es-fan-les-compensacions-ambientals-de-la-del-2002/noticia/3356522/",
+       "titulo": "3Cat (12-6-2025): la UE no aprobará la ampliación si no se hacen las compensaciones ambientales de 2002"
+      },
+      {
+       "url": "https://es.ara.cat/economia/aerolineas/advertencia-bruselas-prat-pide-no-deteriorar-delta-llobregat_1_5408264.html",
+       "titulo": "Ara (11-6-2025): advertencia de Bruselas sobre El Prat y el delta del Llobregat"
+      },
+      {
+       "url": "https://laciutat.cat/es/laciutatdebarcelona/comunes-estudian-llevar-tribunales-ampliacion-aeropuerto-prat_900988_102.html",
+       "titulo": "La Ciutat (20-9-2026): los Comunes estudian llevar a los tribunales la ampliación"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El coste está estimado en unos 3.200 M€ de inversión de Aena según el acuerdo de 2025, y el DORA III 2027-2031 asigna 1.765 M€ a El Prat, de los que 191,25 M€ son actuaciones preparatorias y compensaciones ambientales. Hereu no explica cómo se pagaría; el marco legal prevé que Aena recupere sus inversiones con tarifas aeroportuarias reguladas, y el DORA III prácticamente congela la tarifa media (tres céntimos más por pasajero y año).",
+     "fuentes": [
+      {
+       "url": "https://naciodigital.cat/politica/ampliacio-del-prat-allargar-la-pista-de-mar-3200-milions-deuros-i-nova-terminal-satellit.html",
+       "titulo": "NacióDigital (10-6-2025): ampliación del Prat, alargar la pista de mar, 3.200 M€ y nueva terminal satélite"
+      },
+      {
+       "url": "https://cronicaglobal.elespanol.com/politica/20260915/gobierno-luz-verde-primeras-inversiones-ampliacion-prat/1003742794502_0.html",
+       "titulo": "Crónica Global (15-9-2026): el Gobierno aprueba el DORA III con las inversiones previas a la ampliación de El Prat"
+      },
+      {
+       "url": "https://laciutat.cat/es/laciutatdebarcelona/ampliacion-aeropuerto-prat-se-aplaza-mas-alla-2031-tercera-pista-terminal-satelite-quedan-fuera-dora-iii_900952_102.html",
+       "titulo": "La Ciutat (19-9-2026): la tercera pista y la terminal satélite quedan fuera del DORA III"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-10517",
+       "titulo": "Ley 18/2014: régimen del DORA y de los ingresos aeroportuarios (BOE)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Un estudio sobre casi 300 áreas metropolitanas de Estados Unidos tras la desregulación aérea de 1978 halla que más servicio aéreo aumenta significativamente el crecimiento de la población, la renta y el empleo locales, con efectos que varían según el tamaño y la especialización de cada ciudad. Que una pista más larga atraiga rutas intercontinentales depende de que haya demanda y aerolíneas dispuestas a operarlas, según las fuentes citadas por NacióDigital: la ruta a Tokio lleva más de una década en estudio.",
+     "fuentes": [
+      {
+       "url": "https://www.nber.org/papers/w18278",
+       "titulo": "Blonigen y Cristea, «Airports and Urban Growth: Evidence from a Quasi-Natural Policy Experiment», NBER WP 18278 (2012)"
+      },
+      {
+       "url": "https://naciodigital.cat/politica/ampliacio-del-prat-allargar-la-pista-de-mar-3200-milions-deuros-i-nova-terminal-satellit.html",
+       "titulo": "NacióDigital (10-6-2025): ampliación del Prat, alargar la pista de mar, 3.200 M€ y nueva terminal satélite"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "no_verificable",
+     "texto": "No hemos localizado evaluaciones posteriores de ampliaciones de pista en aeropuertos europeos comparables que muestren si lograron atraer vuelos intercontinentales. El estudio estadounidense citado en «Evidencia» mide el efecto del tráfico aéreo en general, no el de alargar una pista.",
+     "fuentes": []
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "La ampliación de 2002 sigue con compensaciones ambientales pendientes y un procedimiento de infracción europeo abierto desde 2021. En 2021 el Gobierno y la Generalitat pactaron alargar la tercera pista y una terminal satélite, pero el Ministerio paralizó la inversión un mes después por desacuerdo con el Govern; en 2025 se pactó el proyecto actual y el DORA III (2026) aplaza las obras de la pista a partir de 2032.",
+     "fuentes": [
+      {
+       "url": "https://www.3cat.cat/324/la-ue-no-aprovara-lampliacio-del-prat-si-no-es-fan-les-compensacions-ambientals-de-la-del-2002/noticia/3356522/",
+       "titulo": "3Cat (12-6-2025): la UE no aprobará la ampliación si no se hacen las compensaciones ambientales de 2002"
+      },
+      {
+       "url": "https://beteve.cat/politica/quatre-anys-acord-fallit-ampliar-aeroport-barcelona/",
+       "titulo": "betevé (10-6-2025): cuatro años del acuerdo fallido para ampliar el aeropuerto (2021)"
+      },
+      {
+       "url": "https://naciodigital.cat/politica/ampliacio-del-prat-allargar-la-pista-de-mar-3200-milions-deuros-i-nova-terminal-satellit.html",
+       "titulo": "NacióDigital (10-6-2025): ampliación del Prat, alargar la pista de mar, 3.200 M€ y nueva terminal satélite"
+      },
+      {
+       "url": "https://laciutat.cat/es/laciutatdebarcelona/ampliacion-aeropuerto-prat-se-aplaza-mas-alla-2031-tercera-pista-terminal-satelite-quedan-fuera-dora-iii_900952_102.html",
+       "titulo": "La Ciutat (19-9-2026): la tercera pista y la terminal satélite quedan fuera del DORA III"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "El aeropuerto movió unos 55 millones de pasajeros al año y el proyecto prevé llegar a 70 millones; la Cambra de Comerç de Barcelona pide adelantar las obras al DORA III. Paga Aena con tarifas reguladas y el coste ambiental recae en la Ricarda y el Remolar y en municipios como El Prat, cuyo ayuntamiento se opone. No hay estimación pública de cuántos empleos o empresas se beneficiarían.",
+     "fuentes": [
+      {
+       "url": "https://naciodigital.cat/politica/ampliacio-del-prat-allargar-la-pista-de-mar-3200-milions-deuros-i-nova-terminal-satellit.html",
+       "titulo": "NacióDigital (10-6-2025): ampliación del Prat, alargar la pista de mar, 3.200 M€ y nueva terminal satélite"
+      },
+      {
+       "url": "https://laciutat.cat/es/laciutatdebarcelona/ampliacion-aeropuerto-prat-se-aplaza-mas-alla-2031-tercera-pista-terminal-satelite-quedan-fuera-dora-iii_900952_102.html",
+       "titulo": "La Ciutat (19-9-2026): la tercera pista y la terminal satélite quedan fuera del DORA III"
+      },
+      {
+       "url": "https://laciutat.cat/es/laciutatdebarcelona/comunes-estudian-llevar-tribunales-ampliacion-aeropuerto-prat_900988_102.html",
+       "titulo": "La Ciutat (20-9-2026): los Comunes estudian llevar a los tribunales la ampliación"
+      },
+      {
+       "url": "https://www.3cat.cat/324/la-ue-no-aprovara-lampliacio-del-prat-si-no-es-fan-les-compensacions-ambientals-de-la-del-2002/noticia/3356522/",
+       "titulo": "3Cat (12-6-2025): la UE no aprobará la ampliación si no se hacen las compensaciones ambientales de 2002 (lagunas de la Ricarda y el Remolar)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Pasar de 55 a 70 millones de pasajeros implica más vuelos en un sector cuyas emisiones directas fueron entre el 3,8 % y el 4 % de los gases de efecto invernadero de la UE en 2022 y cuyos efectos distintos del CO2 supusieron el 66 % de su impacto climático neto en 2018, según la Comisión Europea; el Govern sostiene que las emisiones bajarán a largo plazo. El proyecto prevé renaturalizar unas 270 hectáreas y un fondo ambiental de unos 320 M€, y los Comunes alertan de más presión turística sobre la vivienda.",
+     "fuentes": [
+      {
+       "url": "https://naciodigital.cat/politica/ampliacio-del-prat-allargar-la-pista-de-mar-3200-milions-deuros-i-nova-terminal-satellit.html",
+       "titulo": "NacióDigital (10-6-2025): ampliación del Prat, alargar la pista de mar, 3.200 M€ y nueva terminal satélite"
+      },
+      {
+       "url": "https://climate.ec.europa.eu/eu-action/transport-decarbonisation/reducing-emissions-aviation_en",
+       "titulo": "Comisión Europea: Reducing emissions from aviation"
+      },
+      {
+       "url": "https://laciutat.cat/es/laciutatdebarcelona/comunes-estudian-llevar-tribunales-ampliacion-aeropuerto-prat_900988_102.html",
+       "titulo": "La Ciutat (20-9-2026): los Comunes estudian llevar a los tribunales la ampliación"
+      }
+     ]
+    }
+   },
+   "id_anterior": "psc-05"
+  },
+  {
+   "id": "psc-c06",
+   "compromiso": "psc-c06",
+   "titulo": "Culminar el traspaso de Rodalies con la empresa mixta",
+   "area": "modelo territorial",
+   "resumen": "Culminar el traspaso de Rodalies a la Generalitat con un nuevo modelo (más capacidad de decisión de la Generalitat, un nuevo contrato programa y una empresa mixta) que se traduzca en más inversión, trenes renovados y mejor mantenimiento.",
+   "cita": "Volem culminar el traspàs de Rodalies perquè el servei sigui fiable, segur i de qualitat per a tothom qui hi viatja. El nou model, amb més capacitat de decisió de la Generalitat, un nou contracte programa i una empresa mixta, s’ha de traduir en més inversió, trens renovats, millor manteniment i una gestió més propera.",
+   "cita_traduccion": "Queremos culminar el traspaso de Rodalies para que el servicio sea fiable, seguro y de calidad para todos los que viajan en él. El nuevo modelo, con más capacidad de decisión de la Generalitat, un nuevo contrato programa y una empresa mixta, se tiene que traducir en más inversión, trenes renovados, mejor mantenimiento y una gestión más cercana.",
+   "quien": "Partit dels Socialistes de Catalunya (manifiesto oficial para el 29-N)",
+   "formato": "documento oficial (manifiesto electoral, 8 págs.)",
+   "fecha": "2026-11-17",
+   "url": "https://www.socialistes.cat/wp-content/uploads/2026/11/Manifest-Generals-2026_DEF.pdf",
+   "medio": "Partit dels Socialistes de Catalunya (socialistes.cat, PDF)",
+   "fuente_local": "data/sources/compromisos/psc/2026-11-17_psc_manifest_generals.txt",
+   "beneficiarios": "Las personas usuarias de Rodalies en Cataluña, cuyo número no hemos podido verificar con fuente oficial (en España, más de ocho de cada diez viajeros de tren de 2025 usaron Cercanías, según la CNMC citada por Agenda Pública). El servicio lo financia hoy el Estado (1.407,6 M€ en el contrato Generalitat-Renfe 2026-2028); el manifiesto no dice quién pagaría la inversión adicional.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El manifiesto dice qué se hará (culminar el traspaso) y con qué instrumentos (más capacidad de decisión de la Generalitat, un nuevo contrato programa y una empresa mixta), y a qué debe llevar (más inversión, trenes renovados, mejor mantenimiento), pero no fija plazos, cuantías ni qué líneas o activos se traspasarían. El programa del PSOE, que asume el PSC, no trata del traspaso: solo de modernizar Cercanías (n.º 27, p. 20, y n.º 282, p. 71).",
+     "fuentes": [
+      {
+       "url": "https://www.socialistes.cat/wp-content/uploads/2026/11/Manifest-Generals-2026_DEF.pdf",
+       "titulo": "PSC, «Manifest» para las elecciones generales del 29-N-2026 (PDF, 8 págs.)"
+      },
+      {
+       "url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=20",
+       "titulo": "PSOE, «La fuerza de seguir avanzando», programa electoral 29-N-2026 (PDF), p. 20"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "El Estado tiene competencia exclusiva sobre los ferrocarriles que transcurren por más de una comunidad (art. 149.1.21 CE); los servicios que discurren solo por Cataluña pueden traspasarse por acuerdo, como se hizo en 2010 con la gestión y en enero de 2026 con la empresa Rodalies de Catalunya (49,9 % de la Generalitat, cinco de nueve consejeros). Pero el plan en marcha incorpora líneas al sistema ferroviario de la Generalitat (la del Maresme, la primera) y prevé traspasar también la infraestructura: las vías y estaciones son de la Red Ferroviaria de Interés General, y sacarlas exige que el Ministerio las excluya, lo que la Ley 38/2015 solo permite «siempre que hayan desaparecido los motivos de interés general que justificaron su inclusión», y que el Consejo de Ministros acuerde el traspaso (art. 4.3). El manifiesto no precisa qué líneas o activos se traspasarían.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transportes-movilidad-sostenible/Paginas/2026/120126-puente-rodalies-catalunya.aspx",
+       "titulo": "La Moncloa, 12-1-2026: constitución de la empresa Rodalies de Catalunya"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10440",
+       "titulo": "Ley 38/2015, del Sector Ferroviario, arts. 4 y 5 (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "Hay cifras públicas parciales: el contrato Generalitat-Renfe de Rodalies y Regionales 2026-2028 es de 1.407,6 M€ financiados por el Estado, y la AIReF cifra en 3.600 M€ la inversión en Cercanías de toda España entre 1990 y 2018. El manifiesto pide «més inversió» y trenes renovados, pero no cuantifica cuánto más ni explica cómo se pagaría.",
+     "fuentes": [
+      {
+       "url": "https://www.diaridetarragona.com/catalunya/274138/generalitat-renfe-firman-contrato-rodalies-1-407-millones-2028_amp.html",
+       "titulo": "Diari de Tarragona, 27-10-2026: contrato Generalitat-Renfe de Rodalies 2026-2028"
+      },
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2020/07/INFRAESTRUCTURAS/ESTUDIO_INFRAESTRUCTURAS_SPENDINGREVIEW.pdf",
+       "titulo": "AIReF, Spending Review (fase II): Estudio Infraestructuras de transporte (julio de 2020)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "La AIReF constató que entre 1990 y 2018 se invirtieron unos 3.600 M€ en Cercanías frente a 55.888 M€ en alta velocidad, y recomendó integrar la gestión y planificación de Cercanías y sus infraestructuras en las autoridades de transporte de cada área metropolitana. No hemos encontrado evidencia de que un cambio de titularidad o de gestor mejore por sí solo la puntualidad o la fiabilidad; depende de la inversión y del mantenimiento, que el manifiesto no cuantifica.",
+     "fuentes": [
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2020/07/INFRAESTRUCTURAS/ESTUDIO_INFRAESTRUCTURAS_SPENDINGREVIEW.pdf",
+       "titulo": "AIReF, Spending Review (fase II): Estudio Infraestructuras de transporte (julio de 2020)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "En Alemania, la regionalización de 1996 pasó a los Länder la responsabilidad de planificar y contratar el tren regional, con financiación federal finalista (de 4.500 M€ anuales al principio a unos 6.700 M€ desde 2002), mientras la infraestructura siguió en DB Netz; el manifiesto no aclara si en Cataluña se traspasaría también la infraestructura. La fuente describe el diseño y la evolución de los viajeros, no aísla el efecto de la descentralización.",
+     "fuentes": [
+      {
+       "url": "https://www.regul.be/wp-content/uploads/2019/01/librail2008-06.pdf",
+       "titulo": "Brenck (IGES) y Mitusch (TU Berlin), Passenger transport liberalisation: the German experience (2008)"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "En 2010 se traspasó parcialmente la gestión de Rodalies a la Generalitat, pero el contrato con Renfe no se formalizó por escrito hasta octubre de 2026. La empresa Rodalies de Catalunya se constituyó en enero de 2026; el Gobierno prevé traspasar primero la línea del Maresme (con encomienda de gestión a Adif) y después las de Puigcerdà, el Garraf y Manresa. El proceso está en marcha y aún no hay resultados que evaluar.",
+     "fuentes": [
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transportes-movilidad-sostenible/Paginas/2026/120126-puente-rodalies-catalunya.aspx",
+       "titulo": "La Moncloa, 12-1-2026: constitución de la empresa Rodalies de Catalunya"
+      },
+      {
+       "url": "https://www.diaridetarragona.com/catalunya/274138/generalitat-renfe-firman-contrato-rodalies-1-407-millones-2028_amp.html",
+       "titulo": "Diari de Tarragona, 27-10-2026: contrato Generalitat-Renfe de Rodalies 2026-2028"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a las personas usuarias de Rodalies, cuyo número no hemos podido verificar con fuente oficial; en el conjunto de España, Cercanías concentró en 2025 más de ocho de cada diez viajeros de tren (CNMC, citada por Agenda Pública). El coste lo asume hoy el Estado; el manifiesto no dice quién pagaría la inversión adicional.",
+     "fuentes": [
+      {
+       "url": "https://agendapublica.es/noticia/21671/necesita-tren-espana",
+       "titulo": "Agenda Pública (A. Castrillón, IE University), 2026: inversión y mantenimiento ferroviario en España, con datos de la Comisión Europea, Adif, CNMC y AIReF"
+      },
+      {
+       "url": "https://www.diaridetarragona.com/catalunya/274138/generalitat-renfe-firman-contrato-rodalies-1-407-millones-2028_amp.html",
+       "titulo": "Diari de Tarragona, 27-10-2026: contrato Generalitat-Renfe de Rodalies 2026-2028"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Acerca la gestión a la administración que planifica la movilidad metropolitana, en línea con la recomendación de la AIReF. Los riesgos son una transición larga con responsabilidades repartidas entre Adif, Renfe, la nueva empresa y la Generalitat, y la dependencia de transferencias estatales para mantener una infraestructura que, según la AIReF, acumula décadas de baja inversión.",
+     "fuentes": [
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2020/07/INFRAESTRUCTURAS/ESTUDIO_INFRAESTRUCTURAS_SPENDINGREVIEW.pdf",
+       "titulo": "AIReF, Spending Review (fase II): Estudio Infraestructuras de transporte (julio de 2020)"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transportes-movilidad-sostenible/Paginas/2026/120126-puente-rodalies-catalunya.aspx",
+       "titulo": "La Moncloa, 12-1-2026: constitución de la empresa Rodalies de Catalunya"
+      }
+     ]
+    }
+   }
   }
  ]
 }

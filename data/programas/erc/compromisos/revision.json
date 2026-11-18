@@ -1,0 +1,27 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-18",
+ "base": "complemento",
+ "seleccion_sha256": "fa13b1b6449a79d415f2c5d86b61f1a272c095ae5b4c386ecce0cbad20d93fc6",
+ "alcance": "Barrido del 18-nov: prioridad nueva erc-c01 (8 criterios) y descartes nuevos. URL nuevas: 9; responden 200 salvo las tres de esquerra.cat, que devuelven 403 a una petición normal (también su API de WordPress): la nota del 13-nov se revisó en la copia local del registro de promesas (SHA-256 f3e9093c… coincidente) y la cita aparece en ella (verify_quotes: 0 no encontradas). Programa de ERC (versión del 17-nov, sha256 5f2a8f99…, coincide): leídas las medidas 192 a 198 (p. 40): ninguna fija un porcentaje ni una ley para el mantenimiento. Agenda Pública: comprobados los 5.000 M€ de inversión ferroviaria en 2025, 1.120 M€ de conservación, 1.781 y 475 M€ de Adif AV y 547 millones de viajeros. Evaluación comparada con junts-03 aprobado: mismos hechos y valoraciones, con las diferencias propias (ley, sin auditoría; base de toda la inversión).",
+ "seleccion": "erc-c01 es un documento oficial del partido (nota con quien = ERC) sobre la rueda de prensa de su presidente, que la lleva al titular: cumple el criterio único por la vía (b). No está en el programa: falta el rasgo que la define (suelo legal del 30 %), con el criterio aplicado a Vox, Compromís, PSOE, FA y EH Bildu. Los descartes son correctos, salvo que el «Pla de retorn de les deslocalitzacions industrials» (17-nov) no se ha podido leer (403) y queda pendiente, como dice la selección. Criterio único para priorizar en el complemento (y para decidir los casos del PSC, EH Bildu, Adelante Andalucía y el hueco del PP): el ámbito local no excluye ni rebaja el listón; decide la prueba de que el partido presenta la medida como importante (prompt 1b: «los anuncia el candidato, los repite, son titulares de campaña»). Una medida concreta y firme, ausente del programa, se prioriza si (a) consta en al menos dos ocasiones públicas distintas, o (b) en una sola ocasión, el propio partido o la crónica del acto la destaca: titular, entradilla o ladillo de una nota oficial, documento oficial de campaña (manifiesto, decálogo, lista de compromisos) o titular de la crónica de agencia. Una mención en el cuerpo de una nota o crónica, entre otras medidas, no basta. Además, para compromisos territoriales (una obra, un servicio o un equipamiento en un lugar concreto) anunciados por un candidato nacional en un acto o vídeo autonómico, la vía (b) solo vale si el titular es esa medida concreta, no un enunciado genérico. Aplicación: psc-c04 (Parador de Tarragona) entra por (a): Hereu y Montalvo, dos entrevistas, ambas con la medida en el subtítulo. El tren a Foronda de EH Bildu (Mikel Otero, 13-nov) queda fuera, pero no por ser local: es una sola mención en el cuerpo de una nota de EH Bildu Araba en estilo indirecto («apuesta por dar conexión ferroviaria al aeropuerto de Foronda»), cuyo titular trata de optimizar los servicios ferroviarios (comprobado en ehbildu.eus el 18-nov); conviene corregir el motivo «ámbito local» del EH Bildu en su próxima revisión. adelante_andalucia-c01 queda fuera: una sola ocasión, mención en el cuerpo de la crónica de Europa Press, sin nota oficial ni titular. En el PP, el hueco 4 sigue vacío: Durango (una mención en el cuerpo de la nota de Bilbao, cuyo titular es otro; sin titular de agencia localizado), Almudévar y Reinosa (vídeos autonómicos, sin titular propio) no cumplen; Logroño-Calahorra tiene titular de EFE, pero el propio Feijóo lo condiciona («si hay demanda», Europa Press), por lo que no es un compromiso firme.",
+ "igual_estandar": "Mismas valoraciones que junts-03 (misma medida): legal «favorable» y el resto «mixta».",
+ "recuento_inicial": {
+  "favorable": 1,
+  "mixta": 7,
+  "desfavorable": 0,
+  "no_verificable": 0
+ },
+ "recuento_final": {
+  "favorable": 1,
+  "mixta": 7,
+  "desfavorable": 0,
+  "no_verificable": 0
+ },
+ "cambios": [],
+ "dudas": [
+  "«Pla de retorn de les deslocalitzacions industrials» (Junqueras, 17-nov): esquerra.cat y su API devuelven 403 y la búsqueda web no encontró cobertura de agencia. Si contiene una medida concreta ausente del programa, habrá que evaluarla en el próximo barrido.",
+  "Al publicar, hay que copiar al repositorio evaluacion.json de p2/erc (sin cambios) y este revision.json; sin revision.json build_web.py no muestra el complemento."
+ ]
+}

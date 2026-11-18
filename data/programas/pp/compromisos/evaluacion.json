@@ -2,9 +2,9 @@
  "partido": "pp",
  "base": "complemento",
  "modelo": "Claude (Anthropic)",
- "fecha": "2026-11-12",
- "seleccion_sha256": "60fec9255d6928b943b1c1b164c415a8ffbe7550a749b74245b12d2702f237f2",
- "nota": "Evaluación de las prioridades de data/programas/pp/compromisos/seleccion.json: compromisos de Feijóo que no figuran en el programa del 10-nov. Mismos criterios y rúbricas (data/fase3/criterios.json) que las 12 propuestas del programa; se muestran tras ellas, en una sección aparte.",
+ "fecha": "2026-11-18",
+ "seleccion_sha256": "3242c95d782f0c1f44b711b6902e0cb4d71d271fb7099501ddd232b3ca1b8890",
+ "nota": "Evaluación de las prioridades de data/programas/pp/compromisos/seleccion.json: compromisos de Feijóo que no figuran en el programa del 10-nov. Mismos criterios y rúbricas (data/fase3/criterios.json) que las 12 propuestas del programa; se muestran tras ellas, en una sección aparte. [Actualización 18-11-2026] Se añade pp-c03 (voto en su municipio de origen de quienes se fueron por ETA), nueva prioridad de la selección del 18-nov; pp-c01 y pp-c02 no cambian (pp-c01 suma una ocasión en la selección, sin efecto en su valoración). [Revisión independiente 18-11-2026] pp-c03: «antecedentes» pasa de «no_verificable» a «mixta» (proposición no de ley de UPN y reforma anunciada por Interior en 2012, no aprobada) y las estimaciones de salidas se acotan al País Vasco.",
  "propuestas": [
   {
    "id": "pp-c01",
@@ -297,6 +297,147 @@
       {
        "url": "https://research.tilburguniversity.edu/en/publications/how-effective-are-unemployment-benefit-sanctions-looking-beyond-u-2/",
        "titulo": "Arni, Lalive y Van Ours (2013), «How Effective Are Unemployment Benefit Sanctions? Looking Beyond Unemployment Exit», Journal of Applied Econometrics 28(7)"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "pp-c03",
+   "compromiso": "pp-c03",
+   "titulo": "Que quienes huyeron de ETA puedan votar en su municipio de origen",
+   "area": "justicia e instituciones",
+   "resumen": "Reformar la legislación electoral para que quienes tuvieron que abandonar el País Vasco y Navarra por el terrorismo de ETA puedan, si lo desean, volver a votar en el municipio en el que estaban empadronados.",
+   "cita": "Vamos a reformar la legislación electoral para que quienes tuvieron que abandonar el País Vasco y Navarra recuperen, si así lo quieren, el derecho a votar en los municipios en los que estaban empadronados",
+   "cita_traduccion": null,
+   "quien": "Alberto Núñez Feijóo, presidente del PP y candidato a la Presidencia del Gobierno",
+   "formato": "mitin de campaña (Pamplona, con UPN)",
+   "fecha": "2026-11-16",
+   "url": "https://www.europapress.es/nacional/noticia-feijoo-propone-ley-nietos-vasca-expulsados-terrorismo-eta-puedan-votar-euskadi-20261116110857.html",
+   "medio": "Europa Press",
+   "fuente_local": "data/sources/compromisos/pp/2026-11-16_europapress_voto_exiliados_eta.txt",
+   "beneficiarios": "Las personas que se fueron del País Vasco y de Navarra por la violencia de ETA y quieran volver a votar allí. No hay cifra oficial y las estimaciones solo cubren el País Vasco: el informe «Retorno» (2011) estimó entre 60.000 y 200.000 personas que se fueron por la violencia terrorista y un estudio de la Universidad CEU San Pablo (2023), unas 180.000 salidas entre 1976 y 2022 por razones políticas, económicas o de otro tipo; no hay estimación para Navarra. El coste, administrativo, recaería en el Estado.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "Feijóo dice qué se hará (reformar la legislación electoral), para quién (quienes tuvieron que abandonar el País Vasco y Navarra por ETA) y con qué efecto (votar, si lo desean, en el municipio en el que estaban empadronados), pero no dice cómo se acreditaría que alguien se fue por ETA, en qué elecciones se aplicaría ni en qué plazo. El PP la presenta como la medida 132 de su programa, que en el documento publicado sigue en blanco.",
+     "fuentes": [
+      {
+       "url": "https://www.europapress.es/nacional/noticia-feijoo-propone-ley-nietos-vasca-expulsados-terrorismo-eta-puedan-votar-euskadi-20261116110857.html",
+       "titulo": "Europa Press (16-11-2026): Feijóo promete «saldar una deuda» con los exiliados por ETA para que puedan votar en Euskadi y Navarra"
+      },
+      {
+       "url": "https://www.pp.es/actualidad/articulos/feijoo-propone-reformar-la-legislacion-electoral-para-permitir-que-los-exiliados-por-la-violencia-de-eta-puedan-votar-en-navarra-y-euskadi/",
+       "titulo": "Partido Popular (16-11-2026): nota del mitin de Pamplona"
+      },
+      {
+       "url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=48",
+       "titulo": "PP, «La Reconstrucción Nacional», programa electoral 2026 (PDF), p. 48: medida 132 en blanco"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "Para votar hay que estar inscrito en el censo electoral (art. 2 LOREG), y los ayuntamientos inscriben de oficio a quienes residen en su término (art. 32); en las municipales hace falta figurar en el censo de residentes en España (art. 2.3). Para las generales y municipales bastaría reformar la LOREG, ley orgánica que exige mayoría absoluta del Congreso (art. 81 CE). Para las elecciones autonómicas, los Estatutos vasco (art. 7) y navarro (art. 5 de la LORAFNA) ligan la condición política a la vecindad administrativa y solo extienden esos derechos a los residentes en el extranjero; el PP no dice si los reformaría. Un estudio publicado por el CEPC en 2012 sostiene que extender este voto a todas las elecciones es «constitucionalmente posible», aunque ni el Tribunal Constitucional ni el TEDH han resuelto casos análogos.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-11672",
+       "titulo": "Ley Orgánica 5/1985, del Régimen Electoral General, arts. 2 y 32 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española, art. 81 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1979-30177",
+       "titulo": "Ley Orgánica 3/1979, Estatuto de Autonomía del País Vasco, art. 7 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1982-20824",
+       "titulo": "Ley Orgánica 13/1982, de Reintegración y Amejoramiento del Régimen Foral de Navarra, art. 5 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.cepc.gob.es/publicaciones/revistas/revista-de-administracion-publica/numero-189-septiembrediciembre-2012/una-reforma-electoral-posible-el-voto-de-la-diaspora-vasca-2",
+       "titulo": "Pascua Mateo, F., «Una reforma electoral posible: el voto de la diáspora vasca», Revista de Administración Pública, n.º 189 (CEPC, 2012), resumen"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "favorable",
+     "texto": "Es una reforma de la normativa electoral sin partidas de gasto: el coste sería administrativo (inscribir a los electores en el censo de su antiguo municipio y gestionar su voto, tareas de la Oficina del Censo Electoral y de la Administración electoral según la LOREG). No tiene coste presupuestario directo relevante.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-11672",
+       "titulo": "Ley Orgánica 5/1985, del Régimen Electoral General, arts. 2 y 32 (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "no_verificable",
+     "texto": "No hemos localizado estudios empíricos sobre medidas que devuelvan el voto en su lugar de origen a personas desplazadas por violencia política. Tampoco hay cifra oficial de cuántas personas se fueron por ETA: el informe «Retorno» del Instituto Vasco de Criminología (2011) dio una horquilla de 60.000 a 200.000 para el País Vasco, y el estudio de la Universidad CEU San Pablo (2023) estimó unas 180.000 salidas del País Vasco entre 1976 y 2022 comparando su demografía con la de comunidades vecinas, sin separar las causas; ninguna de las dos estima las salidas de Navarra.",
+     "fuentes": [
+      {
+       "url": "https://www.elindependiente.com/espana/2023/05/24/un-estudio-concluye-que-la-violencia-de-eta-altero-de-modo-definitivo-el-censo-electoral-vasco/amp/",
+       "titulo": "El Independiente (24-5-2023): estudio de la Universidad CEU San Pablo sobre las salidas del País Vasco (1976-2022) y el informe «Retorno» (2011)"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "No se ha aplicado en España, pero se intentó. En febrero de 2012 UPN llevó al Congreso una proposición no de ley sobre el derecho de voto de los «exiliados» vascos y navarros en sus territorios de origen (BOCG, Serie D, n.º 31). En julio de 2012 el Ministerio del Interior anunció, tras un seminario de juristas, una reforma de la LOREG para que quienes se fueron por ETA pudieran votar en Euskadi o Navarra acreditando al menos cinco años de residencia allí entre 1977 y 2011 y firmando una declaración; la reforma no se aprobó y la LOREG vigente no recoge ese voto. Lo más parecido en vigor es el voto de los residentes en el extranjero, a quienes los Estatutos vasco y navarro reconocen los mismos derechos políticos que a los residentes si su última vecindad fue allí (art. 7.2 y art. 5.2).",
+     "fuentes": [
+      {
+       "url": "https://www.congreso.es/public_oficiales/L10/CONG/BOCG/D/D_031.PDF",
+       "titulo": "BOCG, Congreso, X Legislatura, Serie D, n.º 31 (7-2-2012): proposición no de ley 161/000110 de UPN (Grupo Mixto) relativa al derecho de voto de los «exiliados» vascos y navarros en sus territorios de origen"
+      },
+      {
+       "url": "https://orain.eus/es/politica/2012/07/26/voto-exiliados-eta--los-requisitos-voto-exiliados-eta/",
+       "titulo": "Orain (EITB), 26-7-2012: los requisitos de la reforma de la ley electoral anunciada por el Ministerio del Interior para el voto de los «exiliados» por ETA"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-11672",
+       "titulo": "Ley Orgánica 5/1985, del Régimen Electoral General (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1979-30177",
+       "titulo": "Ley Orgánica 3/1979, Estatuto de Autonomía del País Vasco, art. 7 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1982-20824",
+       "titulo": "Ley Orgánica 13/1982, de Reintegración y Amejoramiento del Régimen Foral de Navarra, art. 5 (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "no_verificable",
+     "texto": "No conocemos un país comparable que haya permitido votar en su municipio de origen a personas desplazadas dentro del propio país por violencia terrorista, con resultados evaluados.",
+     "fuentes": []
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "El grupo está identificado (quienes se fueron de Euskadi y Navarra por ETA y quieran volver a votar allí), pero no cuantificado con fuente oficial: las estimaciones, solo para el País Vasco, van de 60.000 a 200.000 personas (2011) o unas 180.000 (CEU, 2023, que incluye salidas por otras causas); no hay estimación para Navarra. No se sabe cuántos lo pedirían. El coste, administrativo, lo asumiría el Estado.",
+     "fuentes": [
+      {
+       "url": "https://www.elindependiente.com/espana/2023/05/24/un-estudio-concluye-que-la-violencia-de-eta-altero-de-modo-definitivo-el-censo-electoral-vasco/amp/",
+       "titulo": "El Independiente (24-5-2023): estudio de la Universidad CEU San Pablo sobre las salidas del País Vasco (1976-2022) y el informe «Retorno» (2011)"
+      },
+      {
+       "url": "https://www.europapress.es/nacional/noticia-feijoo-propone-ley-nietos-vasca-expulsados-terrorismo-eta-puedan-votar-euskadi-20261116110857.html",
+       "titulo": "Europa Press (16-11-2026): Feijóo promete «saldar una deuda» con los exiliados por ETA para que puedan votar en Euskadi y Navarra"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Su efecto depende del diseño: haría falta acreditar quién se fue por ETA, sin un registro oficial, y evitar que alguien figure en dos censos, algo que el estudio de 2012 propone resolver con un procedimiento temporal que no altere la actualización ordinaria del censo. Estos electores votarían en un lugar en el que ya no residen, como ocurre hoy con los residentes en el extranjero en las elecciones autonómicas vascas y navarras. No tiene efectos presupuestarios ni climáticos relevantes.",
+     "fuentes": [
+      {
+       "url": "https://www.cepc.gob.es/publicaciones/revistas/revista-de-administracion-publica/numero-189-septiembrediciembre-2012/una-reforma-electoral-posible-el-voto-de-la-diaspora-vasca-2",
+       "titulo": "Pascua Mateo, F., «Una reforma electoral posible: el voto de la diáspora vasca», Revista de Administración Pública, n.º 189 (CEPC, 2012), resumen"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1979-30177",
+       "titulo": "Ley Orgánica 3/1979, Estatuto de Autonomía del País Vasco, art. 7 (texto consolidado, BOE)"
       }
      ]
     }

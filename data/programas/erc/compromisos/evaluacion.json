@@ -1,0 +1,120 @@
+{
+ "partido": "erc",
+ "base": "complemento",
+ "modelo": "Claude (Anthropic)",
+ "fecha": "2026-11-18",
+ "seleccion_sha256": "fa13b1b6449a79d415f2c5d86b61f1a272c095ae5b4c386ecce0cbad20d93fc6",
+ "nota": "Evaluación de la única prioridad de data/programas/erc/compromisos/seleccion.json: un compromiso de ERC que no figura en su programa para el 29-N. Mismos criterios y rúbricas (data/fase3/criterios.json) que las 12 propuestas del programa; se muestra tras ellas, en una sección aparte. Es la misma medida que junts-c03 (al menos el 30 % del gasto ferroviario a mantenimiento), evaluada y revisada el 12 y el 14-nov: se reutilizan sus hechos y fuentes (mismos hechos, misma valoración) y se adaptan el texto de «concreción» (ERC añade el instrumento, una ley, y no propone auditoría), «legal» (la ley) y «financiación» (la base es toda la inversión ferroviaria, no solo las vías). Pendiente de revisión independiente (prompt 4).",
+ "propuestas": [
+  {
+   "id": "erc-c01",
+   "compromiso": "erc-c01",
+   "titulo": "Por ley, al menos el 30 % de la inversión ferroviaria a mantenimiento y seguridad",
+   "area": "otros",
+   "resumen": "Garantizar por ley que al menos el 30 % del presupuesto anual de inversiones ferroviarias se destine a mantenimiento y seguridad.",
+   "cita": "els republicans proposaran garantir per llei el manteniment i la renovació de la xarxa ferroviària [...] Concretament, reservar un mínim d’un 30% del pressupost anual d’inversions ferroviàries a manteniment i seguretat.",
+   "cita_traduccion": "los republicanos propondrán garantizar por ley el mantenimiento y la renovación de la red ferroviaria [...] En concreto, reservar un mínimo del 30 % del presupuesto anual de inversiones ferroviarias a mantenimiento y seguridad.",
+   "quien": "Esquerra Republicana (nota oficial del partido sobre la rueda de prensa de su presidente, Oriol Junqueras)",
+   "formato": "documento oficial (nota de prensa de esquerra.cat sobre la rueda de prensa de Junqueras)",
+   "fecha": "2026-11-13",
+   "url": "https://www.esquerra.cat/esquerra-proposara-destinar-per-llei-un-minim-dun-30-de-les-inversions-ferroviaries-a-manteniment-i-seguretat/",
+   "medio": "Esquerra Republicana (nota de prensa, esquerra.cat)",
+   "fuente_local": "data/sources/compromisos/erc/erc_20261113_inversions_ferroviaries.txt",
+   "beneficiarios": "Las personas usuarias del tren en España (547 millones de viajeros en 2025, según la CNMC citada por Agenda Pública, una cifra que suma viajes y no personas distintas). El coste recae en los Presupuestos del Estado y Adif; si se reasigna gasto, en las nuevas líneas que dejarían de construirse.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "La nota oficial fija un porcentaje (al menos el 30 % del presupuesto anual de inversiones ferroviarias para mantenimiento y seguridad) y el instrumento (una ley). No precisa si el porcentaje se alcanzaría con más gasto o reasignando el existente, qué partidas cuentan como mantenimiento y seguridad, ni en qué plazo se aplicaría.",
+     "fuentes": [
+      {
+       "url": "https://www.esquerra.cat/esquerra-proposara-destinar-per-llei-un-minim-dun-30-de-les-inversions-ferroviaries-a-manteniment-i-seguretat/",
+       "titulo": "Esquerra Republicana, 13-11-2026: «Esquerra proposarà destinar per llei un mínim d’un 30% de les inversions ferroviàries a manteniment i seguretat» (nota de prensa)"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "Es una decisión de planificación y presupuesto dentro de la competencia estatal sobre la red ferroviaria de interés general (art. 149.1.21 CE). La Ley 38/2015 ya obliga al Ministerio a publicar una estrategia indicativa «del desarrollo, mantenimiento y renovación» de la red con un marco financiero de al menos cinco años; fijar un porcentaje vinculante, como propone ERC, requeriría una ley ordinaria (mayoría simple) o los Presupuestos de cada año.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10440",
+       "titulo": "Ley 38/2015, del Sector Ferroviario, arts. 4 y 5 (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El coste es estimable de forma aproximada: según los datos que recoge Agenda Pública, la inversión ferroviaria rondó los 5.000 M€ en 2025, de modo que el 30 % serían unos 1.500 M€ al año (cálculo propio); Adif gastó 1.120 M€ en conservación de toda la red en 2025, sin que conste qué parte se computa como inversión. En alta velocidad, Adif AV invirtió 1.781 M€ en 2024 y el Ministerio cifra en 475 M€ el mantenimiento de esa red (alrededor del 21 % de la suma, cálculo propio que supone que son partidas distintas). ERC no dice si sería gasto adicional ni cómo se financiaría.",
+     "fuentes": [
+      {
+       "url": "https://agendapublica.es/noticia/21671/necesita-tren-espana",
+       "titulo": "Agenda Pública (A. Castrillón, IE University), 2026: inversión y mantenimiento ferroviario en España, con datos de la Comisión Europea, Adif, CNMC y AIReF"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "La AIReF advirtió en 2020 de que desde 2012 la inversión bruta en infraestructuras de transporte no cubre su depreciación. Según los datos de la Comisión Europea que recoge Agenda Pública, entre 2018 y 2022 solo 16 de cada 100 euros gastados en alta velocidad en España fueron a mantener y renovar líneas (34 en Francia, 36,5 en Alemania y 40 en Italia), y en 2022 España gastaba en mantener, renovar y mejorar la red unos 95.900 euros por kilómetro, la mitad de la media de la UE. No hemos localizado evaluaciones de una regla de porcentaje fijo.",
+     "fuentes": [
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2020/07/INFRAESTRUCTURAS/ESTUDIO_INFRAESTRUCTURAS_SPENDINGREVIEW.pdf",
+       "titulo": "AIReF, Spending Review (fase II): Estudio Infraestructuras de transporte (julio de 2020)"
+      },
+      {
+       "url": "https://agendapublica.es/noticia/21671/necesita-tren-espana",
+       "titulo": "Agenda Pública (A. Castrillón, IE University), 2026: inversión y mantenimiento ferroviario en España, con datos de la Comisión Europea, Adif, CNMC y AIReF"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Suiza y Austria financian el mantenimiento con compromisos plurianuales (Suiza los vincula al estado de la red) y tienen puntualidades del 94,1 % en 2025, mientras Alemania, tras años de inversión escasa, multiplicó por cuatro la inversión por habitante en una década y su puntualidad de larga distancia fue del 60,1 %, según los datos que recoge Agenda Pública. Son comparaciones descriptivas, no evaluaciones del efecto de una regla de porcentaje como la propuesta.",
+     "fuentes": [
+      {
+       "url": "https://agendapublica.es/noticia/21671/necesita-tren-espana",
+       "titulo": "Agenda Pública (A. Castrillón, IE University), 2026: inversión y mantenimiento ferroviario en España, con datos de la Comisión Europea, Adif, CNMC y AIReF"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "No hemos localizado una regla legal de porcentaje mínimo en España. La inversión ferroviaria pasó de 8.772 M€ en 2009 a 1.652 M€ en 2016 y a unos 5.000 M€ en 2025, y el gasto de Adif en conservación de toda la red subió de 720 M€ en 2017 a 1.120 M€ en 2025, según los datos del Ministerio y Adif que recoge Agenda Pública.",
+     "fuentes": [
+      {
+       "url": "https://agendapublica.es/noticia/21671/necesita-tren-espana",
+       "titulo": "Agenda Pública (A. Castrillón, IE University), 2026: inversión y mantenimiento ferroviario en España, con datos de la Comisión Europea, Adif, CNMC y AIReF"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a las personas usuarias del tren (547 millones de viajeros en 2025, según la CNMC citada por Agenda Pública, una cifra que suma viajes y no personas distintas) mediante una red mejor conservada. El coste o la reasignación no están cuantificados por ERC; recaerían en los Presupuestos del Estado o en las nuevas líneas que se retrasen.",
+     "fuentes": [
+      {
+       "url": "https://agendapublica.es/noticia/21671/necesita-tren-espana",
+       "titulo": "Agenda Pública (A. Castrillón, IE University), 2026: inversión y mantenimiento ferroviario en España, con datos de la Comisión Europea, Adif, CNMC y AIReF"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Ventaja: frenar la pérdida de valor de la red que la AIReF documenta desde 2012. Riesgos: un porcentaje fijo no depende del estado real de la red, a diferencia del modelo suizo que vincula la financiación a ese estado, y reasignar gasto puede retrasar inversiones en nuevas líneas o en Cercanías.",
+     "fuentes": [
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2020/07/INFRAESTRUCTURAS/ESTUDIO_INFRAESTRUCTURAS_SPENDINGREVIEW.pdf",
+       "titulo": "AIReF, Spending Review (fase II): Estudio Infraestructuras de transporte (julio de 2020)"
+      },
+      {
+       "url": "https://agendapublica.es/noticia/21671/necesita-tren-espana",
+       "titulo": "Agenda Pública (A. Castrillón, IE University), 2026: inversión y mantenimiento ferroviario en España, con datos de la Comisión Europea, Adif, CNMC y AIReF"
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

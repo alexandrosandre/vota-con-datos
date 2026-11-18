@@ -1,0 +1,67 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-18",
+ "base": "complemento",
+ "seleccion_sha256": "e532dac714340f901537499f261543c5b6dcf214c4b45f6b0af250e067ed3053",
+ "alcance": "Barrido del 18-nov: compromiso nuevo adelante_andalucia-c01 (SMI de al menos 1.600 € en 14 pagas, José Ignacio García, 16-nov) propuesto como prioridad con evaluación de 8 criterios. Se abrieron las 17 URL nuevas: todas responden 200. La cita está en la copia local de Europa Press (verify_quotes: 0 no encontradas; SHA-256 coincidente) y se leyó la crónica completa. Programa (texto catalogado): indexación del SMI al IPC (l. 308) y SMI de 2026 como referencia de las pensiones mínimas; ninguna cuantía de 1.600 €. Búsqueda web de otras ocasiones (García, 1.600 euros, 14 pagas): ninguna.",
+ "seleccion": "El compromiso es válido (cita literal de García, líder y portavoz, recogida por Europa Press; la cuantía no está en el programa), pero no se prioriza: no cumple el criterio único. Hay una sola ocasión; el titular de la crónica es otro («Adelante Andalucía pide aprovechar el 29N…»), la medida aparece en el cuerpo entre las «preocupaciones reales» que enumera, introducida con «desde Adelante entienden que», y no hay nota ni documento oficial del partido que la recoja ni otra ocasión localizada. La justificación propuesta lo reconocía («no es titular»; «la prioridad con menos apoyo»). Pasa a «no_priorizados»; prioridades vacío y, conforme al prompt 1b, sin evaluación (se retira p2/adelante_andalucia/evaluacion.json). Criterio único para priorizar en el complemento (y para decidir los casos del PSC, EH Bildu, Adelante Andalucía y el hueco del PP): el ámbito local no excluye ni rebaja el listón; decide la prueba de que el partido presenta la medida como importante (prompt 1b: «los anuncia el candidato, los repite, son titulares de campaña»). Una medida concreta y firme, ausente del programa, se prioriza si (a) consta en al menos dos ocasiones públicas distintas, o (b) en una sola ocasión, el propio partido o la crónica del acto la destaca: titular, entradilla o ladillo de una nota oficial, documento oficial de campaña (manifiesto, decálogo, lista de compromisos) o titular de la crónica de agencia. Una mención en el cuerpo de una nota o crónica, entre otras medidas, no basta. Además, para compromisos territoriales (una obra, un servicio o un equipamiento en un lugar concreto) anunciados por un candidato nacional en un acto o vídeo autonómico, la vía (b) solo vale si el titular es esa medida concreta, no un enunciado genérico. Aplicación: psc-c04 (Parador de Tarragona) entra por (a): Hereu y Montalvo, dos entrevistas, ambas con la medida en el subtítulo. El tren a Foronda de EH Bildu (Mikel Otero, 13-nov) queda fuera, pero no por ser local: es una sola mención en el cuerpo de una nota de EH Bildu Araba en estilo indirecto («apuesta por dar conexión ferroviaria al aeropuerto de Foronda»), cuyo titular trata de optimizar los servicios ferroviarios (comprobado en ehbildu.eus el 18-nov); conviene corregir el motivo «ámbito local» del EH Bildu en su próxima revisión. adelante_andalucia-c01 queda fuera: una sola ocasión, mención en el cuerpo de la crónica de Europa Press, sin nota oficial ni titular. En el PP, el hueco 4 sigue vacío: Durango (una mención en el cuerpo de la nota de Bilbao, cuyo titular es otro; sin titular de agencia localizado), Almudévar y Reinosa (vídeos autonómicos, sin titular propio) no cumplen; Logroño-Calahorra tiene titular de EFE, pero el propio Feijóo lo condiciona («si hay demanda», Europa Press), por lo que no es un compromiso firme.",
+ "igual_estandar": "Mismo criterio que en el resto de complementos de este barrido. La evaluación retirada (legal «favorable», resto «mixta», reutilizando podemos-05) no se ha revisado criterio a criterio porque no se publica.",
+ "recuento_inicial": {
+  "favorable": 1,
+  "mixta": 7,
+  "desfavorable": 0,
+  "no_verificable": 0
+ },
+ "recuento_final": null,
+ "cambios": [
+  {
+   "propuesta": "adelante_andalucia-c01",
+   "criterio": "prioridades",
+   "antes": [
+    {
+     "id": "adelante_andalucia-c01",
+     "justificacion": "La anuncia en primera persona el portavoz y líder del partido, José Ignacio García, en su atención a los medios del 16-nov en Sevilla, al enumerar las «preocupaciones reales» que quiere poner en el centro de la campaña (precios, vivienda, salarios, jornada); Europa Press la recoge con cita literal en su crónica. Es cuantificada y la cuantía no está en el programa (ver «no_en_programa»). Una sola ocasión localizada y no es titular de la crónica: es la prioridad con menos apoyo, con el mismo listón que pnv-c01 o vox-c12 (una ocasión del líder)."
+    }
+   ],
+   "despues": [],
+   "motivo": "No cumple el criterio único: una sola ocasión, sin titular, entradilla ni nota oficial."
+  },
+  {
+   "propuesta": "adelante_andalucia-c01",
+   "criterio": "no_priorizados",
+   "antes": null,
+   "despues": [
+    {
+     "id": "adelante_andalucia-c01",
+     "motivo": "[Revisión independiente 18-11-2026] Compromiso verificado (cita literal de José Ignacio García en Europa Press, 16-nov; la cuantía no está en el programa), pero sin prueba de que el partido lo presente como importante: una sola ocasión, en una atención a medios, como una de las «preocupaciones reales» que enumera; no es titular ni entradilla de la crónica, no lo recoge ninguna nota ni documento oficial de Adelante Andalucía y no se ha localizado ninguna repetición. Criterio único del complemento (revisión del 18-nov): una sola ocasión solo basta si el propio partido o la crónica la destacan (titular, entradilla o ladillo de una nota oficial, documento de campaña o titular de la crónica del acto); si no, hacen falta al menos dos ocasiones. En este barrido lo cumplen pp-c03 y erc-c01 (titular de la nota oficial), psc-c06 (manifiesto oficial y titular de Europa Press), psc-c04, psc-c05 y pp-c01 (dos ocasiones) y bng-c01 (ladillo de nota oficial y cinco ocasiones); no, este compromiso. Justificación propuesta y retirada: La anuncia en primera persona el portavoz y líder del partido, José Ignacio García, en su atención a los medios del 16-nov en Sevilla, al enumerar las «preocupaciones reales» que quiere poner en el centro de la campaña (precios, vivienda, salarios, jornada); Europa Press la recoge con cita literal en su crónica. Es cuantificada y la cuantía no está en el programa (ver «no_en_programa»). Una sola ocasión localizada y no es titular de la crónica: es la prioridad con menos apoyo, con el mismo listón que pnv-c01 o vox-c12 (una ocasión del líder)."
+    }
+   ],
+   "motivo": "Se conserva el compromiso verificado con el motivo de no priorizarlo."
+  },
+  {
+   "propuesta": "(seleccion.json)",
+   "criterio": "nota_prioridades",
+   "antes": "Una prioridad (actualización del 18-nov): adelante_andalucia-c01, la cuantía de al menos 1.600 euros en 14 pagas para el SMI, que el programa no fija. Hasta el 12-nov no había ninguna.",
+   "despues": "Ninguna prioridad. El único compromiso nuevo del barrido del 18-nov (adelante_andalucia-c01, SMI de al menos 1.600 euros en 14 pagas) no está en el programa, pero no consta que el partido lo presente como importante (una sola ocasión, sin titular ni nota oficial): queda en «no_priorizados» (revisión independiente del 18-nov). Hasta el 12-nov no había ninguno.",
+   "motivo": "Coherencia con la corrección."
+  },
+  {
+   "propuesta": "(seleccion.json)",
+   "criterio": "nota",
+   "antes": "Es la única prioridad del complemento.",
+   "despues": "La revisión independiente del 18-nov no la prioriza (véase «no_priorizados»): el complemento sigue sin prioridades y sin evaluación.",
+   "motivo": "Coherencia con la corrección."
+  },
+  {
+   "propuesta": "(evaluacion.json)",
+   "criterio": "fichero",
+   "antes": "p2/adelante_andalucia/evaluacion.json (1 propuesta, 8 criterios)",
+   "despues": "(no se escribe)",
+   "motivo": "Prompt 1b: si no hay prioridades, no se escribe evaluación."
+  }
+ ],
+ "dudas": [
+  "Si en los próximos días García u otro dirigente repite la cifra o una nota oficial la destaca, entraría por la vía (a) o (b) y podría reutilizarse la evaluación retirada (revisándola)."
+ ]
+}
