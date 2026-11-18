@@ -191,16 +191,33 @@ class TestPartidosYPapeletas(unittest.TestCase):
         self.assertEqual(f1["psc"]["q06"]["valor"], f1["psoe"]["q06"]["valor"])
 
     def test_programas_retirados_enlazan_la_copia_archivada(self):
-        # Compromís retiró su PDF el 18-nov: ningún enlace de la web debe llevar a la URL original (404).
+        # Si un partido retira su PDF (Compromís, 18-nov, hasta que lo republicó esa tarde), ningún enlace
+        # de la web debe llevar a la URL original (404): build_web la sustituye por la copia archivada.
         import re
+        import build_web
         cat = json.loads((ROOT / "data/partidos/partidos.json").read_text())["partidos"]
         retirados = [p["programa"] for p in cat if (p.get("programa") or {}).get("url_archivada")]
-        self.assertTrue(retirados)
         for nombre in ("partidos.json", "fase1.json", "fase3.json"):
             s = (ROOT / "web/public/data" / nombre).read_text()
             for pr in retirados:
                 self.assertFalse(re.search(r'"' + re.escape(pr["url"]), s), (nombre, pr["url"]))
-        self.assertIn("web.archive.org", (ROOT / "web/public/data/fase3.json").read_text())
+        # El mecanismo, aunque hoy no haya ningún programa retirado.
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            viejo_out, viejo_arch = build_web.OUT, dict(build_web.ARCHIVADAS)
+            try:
+                build_web.OUT = Path(d)
+                build_web.ARCHIVADAS.clear()
+                build_web.ARCHIVADAS["https://x.org/p.pdf"] = "https://web.archive.org/web/1id_/https://x.org/p.pdf"
+                build_web.write("t.json", {"a": "https://x.org/p.pdf", "b": "https://x.org/p.pdf#page=3", "c": "https://x.org/p.pdf.bak"})
+                s = (Path(d) / "t.json").read_text()
+            finally:
+                build_web.OUT = viejo_out
+                build_web.ARCHIVADAS.clear()
+                build_web.ARCHIVADAS.update(viejo_arch)
+        self.assertEqual(json.loads(s), {"a": "https://web.archive.org/web/1id_/https://x.org/p.pdf",
+                                         "b": "https://web.archive.org/web/1id_/https://x.org/p.pdf#page=3",
+                                         "c": "https://x.org/p.pdf.bak"})
 
 
 class TestDespliegueSinCortes(unittest.TestCase):

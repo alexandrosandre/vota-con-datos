@@ -1771,6 +1771,147 @@
       "verificado_en_fuente_primaria": true
     },
     {
+      "id": "sigmados-2026-11-18",
+      "rol": "principal",
+      "sustituye": [
+        "sigmados-2026-11-17"
+      ],
+      "rol_nota": "Escenario propio de Sigma Dos (ESCENARIOS_ENCUESTA en pipeline/build_fase2.py), en lugar de sigmados-2026-11-17, con el mismo criterio: la infografía publica el porcentaje de todos los partidos con escaño. Entra también en la media como la última de Sigma Dos (sustituye a sigmados-2026-11-17).",
+      "encuestadora": "Sigma Dos",
+      "cliente_medio": "El Mundo",
+      "estudio": "Tracking electoral diario de Sigma Dos para EL MUNDO. Sexta entrega (infografía 'Intención de voto. Panel El Mundo-Sigma Dos. Tracking 18 de noviembre')",
+      "fecha_publicacion": "2026-11-18",
+      "fecha_publicacion_nota": "Artículo de El Mundo 'PP y Vox mantienen su mayoría, Podemos baja del 1% y los bloques se estancan a la espera del voto de un 14,3% de indecisos' (Miguel Riaño; datePublished y dateModified 2026-11-18T19:00:09Z, 20:00 hora peninsular del 18-11), con el gráfico rotulado 'Tracking 18 de noviembre' (tracking18646.jpg). sigmados.com no lo había publicado a 18-11 a las 20:45 (noticias.php idéntica a la del 15-11, sha256 45e42830…).",
+      "trabajo_campo": {
+        "inicio": "2026-11-11",
+        "fin": "2026-11-17"
+      },
+      "trabajo_campo_nota": "Ficha técnica: 'Fecha del Trabajo de Campo: 11 al 17 de noviembre de 2026' y '750 entrevistas diarias (días 11, 12, 13, 14, 16 y 17)'; el texto: '4.511 entrevistas entre el 11 y el 17 de noviembre'. El 15-11 sigue sin figurar entre los días de entrevista.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 4511,
+      "muestra_nota": "Ficha técnica: '750 entrevistas diarias (días 11, 12, 13, 14, 16 y 17). Tamaño muestral estimación 16/11/26: 4511' (6 × 750 ≈ 4.511). La ficha vuelve a rotular la estimación con fecha 16/11/26, como en la entrega del 17-11, aunque el campo llega al 17-11. Como en las del 16 y 17-11, solo cuenta las entrevistas diarias, sin la encuesta base del 3 al 10-11.",
+      "metodo": "Mixto: telefónico (CATI, selección aleatoria de hogar y cuotas de sexo y edad) y online (CAWI, Panel Sigma Dos by Trust Survey, asignación proporcional por sexo y grupo de edad); distribución proporcional por CCAA (ficha técnica publicada en El Mundo). Participación estimada: 77,3%. Indecisos: 14,3% (ambas cifras del texto).",
+      "margen_error": "±2,0% (95,5%, P=Q)",
+      "base_porcentajes": "% de 'intención de voto' / estimación (Sigma Dos no indica la base; se asume voto válido)",
+      "suma_pct_publicada": 94.4,
+      "suma_pct_nota": "Suma de los porcentajes registrados (Frente Amplio 6,9 como bloque y Podemos 0,8 incluidos). El Mundo no publica otros ni blanco.",
+      "proyeccion_escanos": "horquillas (ver estimacion_voto)",
+      "proyeccion_escanos_nota": "Horquillas de la infografía tracking18646.jpg. El texto da las mismas horquillas para PP 123-129, PSOE 108-114, Vox 62-67, Frente Amplio 10-14, ERC 8-9, Junts 4-5, Bildu 6-8, PNV 4-5 ('repunta'), Adelante Andalucía 3-5 y BNG 2-3; de Coalición Canaria y Soria ¡Ya! dice 'siguen con opciones, pero sin escaño asegurado' (0-1 en la infografía). PP+Vox: 'entre 185 y 196 escaños' (123 + 62 y 129 + 67). Podemos: ni el texto ni la infografía dan escaños (ver su fila).",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 30.7,
+          "escanos_min": 123,
+          "escanos_max": 129
+        },
+        {
+          "partido": "PSOE",
+          "pct": 26.7,
+          "escanos_min": 108,
+          "escanos_max": 114
+        },
+        {
+          "partido": "Vox",
+          "pct": 19.7,
+          "escanos_min": 62,
+          "escanos_max": 67
+        },
+        {
+          "partido": "Frente Amplio",
+          "nombre_publicado": "FA",
+          "pct": 6.9,
+          "escanos_min": 10,
+          "escanos_max": 14,
+          "nota": "Bloque completo, como en las entregas del 13, 16 y 17-11: la infografía da 'FA 6,9% (10-14)' y el texto 'el Frente Amplio se estabiliza y crece dos décimas (gracias a UPC en Canarias y al Front Valencià en la Comunidad Valenciana), lograría sólo entre 10 y 14 diputados'. Esta entrega no publica el desglose por componentes (marca nacional, Front Valencià, UPC), así que no hay 'componentes'; build_fase2.py lo trata como bloque completo, Compromís incluido."
+        },
+        {
+          "partido": "Podemos",
+          "pct": 0.8,
+          "nota": "Solo en el texto ('Podemos se hunde hasta un 0,8% de estimación de voto a nivel nacional') y en la serie Datawrapper QBCLv v16 (fila 18/11/2026); no aparece en la infografía. Escaños no publicados en esta entrega (el titular solo dice 'Podemos baja del 1%'), por eso no se registran escanos_min/escanos_max; el 17-11 el texto decía expresamente que 'no tendría representación'."
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.3,
+          "escanos_min": 8,
+          "escanos_max": 9
+        },
+        {
+          "partido": "Bildu",
+          "pct": 1.6,
+          "escanos_min": 6,
+          "escanos_max": 8
+        },
+        {
+          "partido": "AA",
+          "pct": 1.7,
+          "escanos_min": 3,
+          "escanos_max": 5,
+          "nota": "Rotulada 'AA' (Adelante Andalucía) en la infografía."
+        },
+        {
+          "partido": "PNV",
+          "pct": 1.0,
+          "escanos_min": 4,
+          "escanos_max": 5
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.1,
+          "escanos_min": 2,
+          "escanos_max": 3
+        },
+        {
+          "partido": "SY",
+          "pct": 0.1,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "nota": "Soria ¡Ya! (siglas SY en el BOE). Se ignora en la proyección (IGNORADAS en pipeline/build_fase2.py), como en sigmados-2026-11-15, -16 y -17."
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.4,
+          "escanos_min": 4,
+          "escanos_max": 5
+        },
+        {
+          "partido": "CCa",
+          "pct": 0.4,
+          "escanos_min": 0,
+          "escanos_max": 1
+        }
+      ],
+      "discrepancias_fuente": "Ninguna en las cifras de esta entrega: los porcentajes de PP, PSOE, Vox y Frente Amplio coinciden en texto, infografía y serie Datawrapper QBCLv v16 (fila 18/11/2026: PP 30,7, PSOE 26,7, Vox 19,7, Frente Amplio 6,9, Podemos 0,8), Podemos coincide en texto y serie, y las horquillas del texto coinciden con las de la infografía. Los deltas que da el texto ('una décima por debajo de ayer' para Vox, 'tres décimas' para el PSOE, 'dos décimas' para el Frente Amplio) cuadran con sigmados-2026-11-17. El artículo incrusta QBCLv/16; la v17 (publicada 17:21 UTC) tiene el mismo dataset. La ficha rotula el tamaño muestral como 'estimación 16/11/26' en la entrega del 18-11. Aparte: otra pieza de El Mundo del mismo día, anterior al tracking ('El empuje de Adelante puede barrer al Frente Amplio en Andalucía…', 6afd906d…, datePublished 12:22 UTC), atribuye a 'el sondeo de Sigma Dos' un Frente Amplio con 'un 6,7% de los votos y entre 12 y 15 representantes' (8-9 de la marca nacional + 1 de UPC + 3-5 de Compromís), que no coincide con el 10-14 publicado el 17 ni el 18-11; no afecta a esta entrada.",
+      "contexto": "Según El Mundo, la campaña entra en una fase de estancamiento con los bloques estables: PP y Vox mantienen sus horquillas y la derecha suma entre 185 y 196 escaños; el PSOE es el único que sigue al alza (26,7 %) a costa de la izquierda; el Frente Amplio se estabiliza (6,9 %) y Podemos cae al 0,8 %. El 14,3 % de los electores no ha decidido su voto (13,2 % de los votantes del PSOE de 2023, 10,8 % de los de Sumar, 5,9 % de los del PP y 2,2 % de los de Vox). El PNV repunta a 4-5 escaños. Cada entrega diaria sustituye a la anterior.",
+      "desglose_regional": null,
+      "desglose_regional_nota": "Esta entrega no publica desglose territorial (solo menciones por comunidad: Cataluña, País Vasco y Navarra, Andalucía, Canarias y Comunidad Valenciana).",
+      "urls": {
+        "primarias": [
+          "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/18/6afdd75c21efa083408b45b2.html",
+          "https://e01-elmundo.uecdn.es/elmundo/2026/graficos/nov/tracking18646.jpg",
+          "https://datawrapper.dwcdn.net/QBCLv/16/"
+        ],
+        "secundarias": [],
+        "descubrimiento_nota": "Localizado en la portada de elmundo.es a las 20:45 del 18-11 (la sección de elecciones generales aún enlazaba 'Encuesta elecciones' a la entrega del 17-11). Ninguna cifra sale de agregadores."
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/sigmados/elmundo_20261118.html",
+        "data/sources/encuestas/sigmados/elmundo_20261118.txt",
+        "data/sources/encuestas/sigmados/img_elmundo_tracking18646_20261118.jpg",
+        "data/sources/encuestas/sigmados/img_elmundo_tracking18646_20261118.txt",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v16.html",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v16_dataset.csv"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/sigmados/elmundo_20261118.html": "4a876fc50a21b4eae4808b2b71741d340ba156e9f2bac1853157a43e13604b9d",
+        "data/sources/encuestas/sigmados/elmundo_20261118.txt": "83534d953aace4fc4c78b4b90396a1910f2cb4e14884f7a5d5d1ef37cb1ba691",
+        "data/sources/encuestas/sigmados/img_elmundo_tracking18646_20261118.jpg": "701cba13752e5dc9f9ccf7b7fa4d0b883fdb2c808124685a7d5184b80c9a5e19",
+        "data/sources/encuestas/sigmados/img_elmundo_tracking18646_20261118.txt": "c734904143d55859a4bd16b8ceac91c88ada264132db4f40a185c2029183a94c",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v16.html": "bca66d604735b65de6645d3ed3735a1b14084079e87e600f1704520b5e67aeaf",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v16_dataset.csv": "c48e312b192b4b190411499a658eef7560f925362788720b72be34a1c70b09f6"
+      },
+      "verificado_en_fuente_primaria": true
+    },
+    {
       "id": "sigmados-2026-11-17",
       "rol": "principal",
       "sustituye": [
