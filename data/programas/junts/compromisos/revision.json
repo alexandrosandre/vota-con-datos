@@ -1,35 +1,33 @@
 {
  "aprobado": true,
  "revisor": "Claude (Anthropic), pasada independiente",
- "fecha": "2026-11-18",
- "base": "compromisos",
- "seleccion_sha256": "78f9b3df7e0a6713e36bb5a22edd2ccdb44cc706efa2b432b0c08afbe18710d1",
- "alcance": "Barrido del 18-nov: sin compromisos ni prioridades nuevas; «veces» de junts-c01 (8→9), c02 (4→7) y c04 (2→6), 3 descartes nuevos y el texto de «concreción» de junts-01, 02 y 04. Se abrieron con una petición normal las 5 URL nuevas (4 de junts.cat y Europa Press del 17-nov): todas responden 200. Las 9 citas de las ocasiones nuevas aparecen en su copia local (verify_quotes: 0 no encontradas) y los SHA-256 coinciden; se leyeron los pasajes en contexto (Manresa 14-nov, Roses 15-nov, Tribuna Barcelona y Arenys de Mar 16-nov, Europa Press 17-nov).",
- "seleccion": "Las ocasiones nuevas son distintas (cuatro actos y una rueda de prensa) y de Nogueras, cabeza de lista; cuentan notas oficiales y una crónica de agencia en estilo indirecto, con el mismo criterio que ya usaba esta selección (6-nov en junts-c04) y que se usa en bng-c01. Los tres descartes son correctos: el compromiso de hablar catalán es una petición a otros candidatos, la condonación del FLA se pide al Gobierno en funciones y la nota de Turull no tiene medidas. Las 7 prioridades no cambian.",
- "igual_estandar": "Ninguna valoración cambia y las ocasiones nuevas no aportan cifras, plazos ni instrumentos, igual que en upn-03 o bng-c01.",
- "recuento_inicial": {
-  "favorable": 3,
-  "mixta": 49,
-  "desfavorable": 1,
-  "no_verificable": 3
- },
- "recuento_final": {
-  "favorable": 3,
-  "mixta": 49,
-  "desfavorable": 1,
-  "no_verificable": 3
+ "fecha": "2026-11-19",
+ "base": "complemento",
+ "seleccion_sha256": "499f764feea02688aee64151f12f917bda69f26e28fdedbbaae0447e92396cf4",
+ "alcance": "Complemento del programa: el compromiso junts-c03 (en «compromisos» y «no_priorizados»), los siete compromisos de la base anterior que pasan a «descartados» (junts-c01, c02, c04, c05, c06, c08 y c10) y los otros 17 descartados de data/programas/junts/compromisos/seleccion.json, su «nota», «nota_prioridades» y «comprobacion_programa», contra el programa «Catalunya al centre» (copia de Ara, SHA-256 cde2c5f3…374b6, comprobado) y sus 611 medidas (data/programas/junts/extraccion.json). Sin prioridades ni evaluación, no hay valoraciones que revisar. Cada compromiso se buscó por sus términos y sinónimos en el texto de cada página (normalizado con norm() de pipeline/verify_quotes.py) y en las 611 medidas. Los nueve fragmentos del programa entrecomillados en los motivos de los descartados son literales y de la página indicada (pp. 15, 17, 20, 48, 68 y 72), y el de la «nota» (s20 1.2, p. 72) también. Para junts-c03 se leyeron la copia local de la nota del 3-nov (junts_puente_20261103.txt, SHA-256 5a7ccfea…, igual al registrado) y todas las copias locales de data/sources/compromisos/junts/ en busca de otra mención del 30 %: solo la tiene esa nota (la otra coincidencia, Infobae 15-nov, es el 30 % de población extranjera de Roses). Las citas de los compromisos y sus copias no cambian desde la revisión del 18-nov (verify_quotes junts: 0 no encontradas). seleccion_sha256 calculado sobre el fichero actual; no se ha modificado seleccion.json.",
+ "seleccion": "Ninguno de los siete compromisos que pasan a «descartados» falta en el programa. c01 (concierto): s19 1.1 y competencia 1 (p. 68), con disposición adicional en la LOFCA y ley del Concert Econòmic Català; la comparación con el País Vasco está en la introducción de la sección (p. 67); prioridad junts-09. c02 (Rodalies): s20 1.1 (p. 72) y competencia 1 (p. 71, «amb la titularitat, la infraestructura, les vies, els trens i els recursos de Renfe i Adif»); el gestor FGC no se nombra (el programa pide «un model de gestió pròpia i descentralitzada»), elemento accesorio; prioridad junts-11. c04 (inmigración): s13 1.1 a 1.5 (p. 48); prioridad junts-05. c05 (catalán en la UE): s03 4.1 (p. 20) y s06 2.1 (p. 27); prioridad junts-04. c06 (deducción del 15 %): s02 3.1 y 3.2 (p. 17); prioridad junts-02. c08 (ley antiocupación de 48 horas): s02 1.1 (p. 17) y s01 6.2 (p. 15); prioridad junts-01. c10 (Corredor Mediterráneo separado de Rodalies): s20 2.2 (p. 72), una vía independiente y «en cap cas un tercer fil» sobre la línea de pasajeros. junts-c03 (al menos el 30 % del gasto en vías a mantenimiento) no está en el programa: no hay ninguna cifra del 30 % en sus 90 páginas, «manteniment» solo aparece para las pensiones (p. 57) y las carreteras (p. 71), y lo más próximo es el «pla de xoc contra els retards i les avaries, amb auditories externes» (s20 1.2, p. 72), sin porcentaje: falta el rasgo que define el compromiso. El criterio único del complemento (dos ocasiones, o una destacada en el titular o la entradilla de una nota oficial o un teletipo; el ámbito local no excluye) está bien aplicado: la cifra solo aparece una vez, en el cuerpo de la nota del 3-nov y en impersonal («cal recordar les mesures que Junts ja ha plantejat»), mientras que el titular («El problema no és de qui són els trens, sinó qui els gestiona. I els gestionen vostès») y las entradillas tratan de la gestión ferroviaria y de la dimisión del ministro; las ocasiones del 2-nov y del 9-nov hablan de mantenimiento sin la cifra y están marcadas «cuenta: false». Mismo trato que el tren a Foronda de EH Bildu (auditoría del 18-nov, punto 8). «prioridades» vacío está justificado y no hay evaluación (prompt 1b), como en PSOE, ERC, SALF y Adelante Andalucía.",
+ "igual_estandar": "Sin valoraciones que revisar. El criterio para decidir qué está «en el programa» es el de las revisiones de Vox, Compromís, PSOE, Frente Amplio, EH Bildu y Podemos: si falta el rasgo que define el compromiso (aquí, la cifra del 30 % de c03), va al complemento si cumple el criterio único; si falta un elemento accesorio (el gestor FGC en c02) o el programa lo concreta, se descarta. Los motivos describen lo que dicen el programa y las fuentes, sin adjetivos de valor.",
+ "recuento_nota": "Sin recuento_inicial ni recuento_final: el complemento queda vacío y no hay evaluacion.json. La evaluación anterior (base «compromisos», 7 propuestas × 8 criterios; recuento final de su revisión del 18-nov 3/49/1/3) se retiró al analizarse el programa y sigue en el historial del repositorio.",
+ "revision_anterior": {
+  "fecha": "2026-11-18",
+  "aprobado": true,
+  "base": "compromisos",
+  "cambios": 1,
+  "dudas": 2,
+  "nota": "La revisión del 18-11-2026 se refería a la base «compromisos» (7 prioridades, junts-01 a junts-06 y junts-08 de aquella base, que no coinciden en contenido con los identificadores del programa). Sus evaluaciones se reaprovechan, con las mismas fuentes y cifras, en las prioridades del programa junts-01, 02, 04, 05, 09 y 11 (véase la nota de data/programas/junts/evaluacion.json y su revisión); sus cambios y dudas siguen en el historial del repositorio. Su duda sobre la hora en el campo «fecha» ya no aplica (seleccion.json tiene ahora «2026-11-19»)."
  },
  "cambios": [
   {
-   "propuesta": "junts-02",
-   "criterio": "concrecion",
-   "antes": "Junts define el alcance (vías, trenes, estaciones y dinero) y el gestor (Ferrocarrils de la Generalitat), pero en ninguna de sus intervenciones de campaña fija plazos, coste, cómo se financiaría el mantenimiento de la infraestructura después del traspaso ni cómo se desharía el proceso ya en marcha: el 17-nov Nogueras pidió el traspaso integral «en vez de una empresa mixta» (Europa Press, estilo indirecto), la sociedad Rodalies de Catalunya ya constituida.",
-   "despues": "Junts define el alcance (vías, trenes, estaciones y dinero) y el gestor (Ferrocarrils de la Generalitat), pero en ninguna de sus intervenciones de campaña fija plazos, coste, cómo se financiaría el mantenimiento de la infraestructura después del traspaso ni cómo se desharía el proceso ya en marcha: el 17-nov Nogueras pidió el traspaso integral «en vez de una empresa mixta» (Europa Press, estilo indirecto), cuando la sociedad mixta Rodalies de Catalunya ya está constituida (enero de 2026).",
-   "motivo": "Redacción: la aposición final quedaba suelta; se dice que la sociedad mixta ya está constituida (enero de 2026, La Moncloa 12-1-2026 y nota de Arenys de Mar)."
+   "propuesta": "descartados (antes junts-c07, c09, c11, c12 y los descartes de deflactar el IRPF, IVA al cobro, sociedades y mutuas)",
+   "criterio": "motivo",
+   "antes": "Motivos sin referencia al programa del 29-N",
+   "despues": "Se añade a cada motivo dónde está ahora en el programa (o que solo figura en el anexo, o que solo hay una medida próxima)",
+   "motivo": "Aplicado por el coordinador tras la duda de esta revisión (mismo tratamiento que la revisión del 15-nov del complemento del PSOE); el complemento no cambia. seleccion_sha256 actualizado."
   }
  ],
  "dudas": [
-  "El campo «fecha» de seleccion.json lleva hora («2026-11-18 ~12:30 (hora peninsular)»), a diferencia del resto de partidos; la web no lo usa.",
-  "No se revisaron vídeos ni redes sociales."
+  "Motivos incompletos de descartados anteriores (no cambian el complemento; no he podido corregirlos porque esta revisión no modifica seleccion.json). Seis descartados por ser balance de la legislatura o estilo indirecto no dicen que ahora están en el programa: exención o «IVA franquiciat» para autónomos hasta 85.000 € (antes c07: s19 2.8, p. 69); jubilación sin penalización con 40 años (antes c09: s16 5.3, p. 58, y s19 5.4, p. 70; prioridad junts-08); distrito universitario catalán (antes c11: pp. 54 y 60); deflactar el IRPF (s19 2.1, p. 68; prioridad junts-10); que las pymes ingresen el IVA al cobrar las facturas (p. 69, para facturación inferior a dos millones de euros); rebaja de sociedades a pymes (s19 2.6, p. 69); y, próxima pero no igual a reforzar las mutuas y agilizar las revisiones de las bajas, la colaboración de las mutuas con la sanidad pública para agilizar pruebas diagnósticas (p. 70). La desclasificación del 17-A solo figura en el anexo de iniciativas de la legislatura (p. 89), del que no se extraen propuestas. Recomiendo completar esos motivos con la referencia al programa, como hizo la revisión del 15-nov del complemento del PSOE.",
+  "Sin búsqueda nueva tras el 18-nov (~12:00): como en el PSOE, Vox y Compromís, el complemento reaprovecha los compromisos seleccionados hasta entonces; no se han buscado actos posteriores a esa hora (incluida la presentación del programa del 18-nov).",
+  "No se han revisado vídeos ni redes sociales."
  ]
 }

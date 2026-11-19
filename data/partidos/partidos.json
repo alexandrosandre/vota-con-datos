@@ -1940,19 +1940,26 @@
       "escanos_2023_nota": null,
       "proyeccion_motivo": "Escaños en el Congreso de la XV legislatura.",
       "programa": {
-        "estado": "no_publicado",
-        "url": null,
-        "fecha": null,
-        "titulo": null,
-        "paginas": null,
-        "sha256": null,
-        "fichero": null,
-        "texto": null,
+        "estado": "publicado",
+        "url": "PENDIENTE_URL_OFICIAL",
+        "fecha": "2026-11-18",
+        "titulo": "Catalunya al centre. Programa electoral 29N",
+        "paginas": 90,
+        "sha256": "cde2c5f3f30b66c72dd4f4bae3d22e9f6bc3e0ee4362da72f9e32e85129374b6",
+        "fichero": "data/sources/programas/junts/programa-electoral-junts-29n.pdf",
+        "texto": "data/sources/programas/junts/programa-electoral-junts-29n.txt",
         "checked_at": "2026-11-18T21:07:00+01:00",
         "anunciado": null,
-        "verificacion": "18-nov, 21:02-21:07: Nació Digital (18:10) y Ara informan de que Junts ha presentado un programa de 90 páginas para el 29-N, y Ara aloja en su propio servidor una copia (static1.ara.cat, «Programa electoral.indd», creada el 18-nov a las 16:44, sha256 cde2c5f3…). No está en ninguna web oficial de Junts: junts.cat/programa-electoral/ sigue redirigiendo al programa de las europeas de 2024 (56 pp.); la mediateca (WP REST) no tiene PDF posterior al 6-nov; ni entradas, páginas, sitemaps, RSS, subdominios ni el canal público de Telegram lo enlazan. Se mantiene no_publicado hasta que Junts lo publique (mismo criterio que Podemos el 16-nov). 17-nov, 20:30: junts.cat (entradas hasta el 17-nov a las 17:17, biblioteca de medios hasta el 17-nov sin PDF nuevo, último PDF del 6-nov) sin programa del 29N; «Propostes» se modificó el 17-nov pero sigue siendo la sección permanente de medidas por temas, y en transparencia el último programa sigue siendo el de las autonómicas 12M 2024. 18-nov, 09:47: sin programa. junts.cat añade una entrada del 18-nov (08:20, visita de Turull a la Ràpita) e imágenes, pero ningún PDF nuevo (último del 6-nov); páginas modificadas por última vez el 17-nov y la búsqueda de «programa electoral» solo devuelve los de 2021-2024."
+        "verificacion": "PENDIENTE DE PUBLICACIÓN OFICIAL (rama local prep-junts-29n; no publicar hasta completar este campo y la url). El programa analizado («Catalunya al centre», 90 pp., en catalán) es la copia que aloja el diario Ara, enlazada desde su portada de política («Programa electoral de Junts», 18-11-2026): https://static1.ara.cat/ara/public/content/file/original/2026/1118/17/programa-electoral-junts-29n.pdf (HTTP 200, application/pdf, 1.355.756 bytes; cabeceras en data/sources/programas/junts/programa-electoral-junts-29n.headers.txt). Metadatos del PDF: «Programa electoral.indd», Adobe InDesign 14.0, CreationDate 18-nov-2026 16:44:10 CET, ModDate 16:44:35 CET, PDF/X-4. El análisis solo se publicará si Junts sube el PDF a un canal oficial con el mismo sha256; si cambia, hay que rehacerlo. Al publicarse: sustituir url y fecha por las oficiales, poner aquí la comprobación (dónde, a qué hora, cabeceras) y mover este texto a «nota». Comprobaciones anteriores: 18-nov, 21:02-21:07: Nació Digital (18:10) y Ara informan de que Junts ha presentado un programa de 90 páginas para el 29-N, y Ara aloja en su propio servidor una copia (static1.ara.cat, «Programa electoral.indd», creada el 18-nov a las 16:44, sha256 cde2c5f3…). No está en ninguna web oficial de Junts: junts.cat/programa-electoral/ sigue redirigiendo al programa de las europeas de 2024 (56 pp.); la mediateca (WP REST) no tiene PDF posterior al 6-nov; ni entradas, páginas, sitemaps, RSS, subdominios ni el canal público de Telegram lo enlazan. Se mantiene no_publicado hasta que Junts lo publique (mismo criterio que Podemos el 16-nov). 17-nov, 20:30: junts.cat (entradas hasta el 17-nov a las 17:17, biblioteca de medios hasta el 17-nov sin PDF nuevo, último PDF del 6-nov) sin programa del 29N; «Propostes» se modificó el 17-nov pero sigue siendo la sección permanente de medidas por temas, y en transparencia el último programa sigue siendo el de las autonómicas 12M 2024. 18-nov, 09:47: sin programa. junts.cat añade una entrada del 18-nov (08:20, visita de Turull a la Ràpita) e imágenes, pero ningún PDF nuevo (último del 6-nov); páginas modificadas por última vez el 17-nov y la búsqueda de «programa electoral» solo devuelve los de 2021-2024.",
+        "fecha_fuente": "Copia del diario Ara del 18-nov-2026 (Last-Modified en su CDN: 18-nov 18:44:42 GMT, 19:44 CET); el documento se creó el 18-nov a las 16:44 CET (metadatos del PDF). Fecha de publicación oficial: pendiente.",
+        "idioma": "ca",
+        "copia_prensa": {
+          "medio": "Ara",
+          "url": "https://static1.ara.cat/ara/public/content/file/original/2026/1118/17/programa-electoral-junts-29n.pdf",
+          "fecha": "2026-11-18"
+        }
       },
-      "programa_aplicable": "Programa único para Cataluña (pendiente).",
+      "programa_aplicable": "Programa de Junts para el 29-N («Catalunya al centre», 90 pp., en catalán), para sus circunscripciones de Cataluña (pendiente de publicación oficial; ver programa.verificacion).",
       "notas": "El último programa en la sección de transparencia es el de las autonómicas 12M 2024.",
       "fuentes": [
         "https://junts.cat/actualitat/nogueras-cruset-madrenas-i-gavin-encapcalaran-les-llistes-a-les-eleccions-generals-del-29n/",

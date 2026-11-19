@@ -1,0 +1,1832 @@
+{
+ "partido": "junts",
+ "programa_sha256": "cde2c5f3f30b66c72dd4f4bae3d22e9f6bc3e0ee4362da72f9e32e85129374b6",
+ "modelo": "Claude (Anthropic)",
+ "fecha": "2026-11-19",
+ "nota": "Evaluación de las 12 prioridades de extraccion.json (programa de Junts «Catalunya al centre», 90 páginas en catalán, repartido a la prensa el 18-nov-2026; se analiza la copia que aloja el diario Ara, sha256 cde2c5f3…, pendiente de que Junts lo publique en un canal oficial: ver data/partidos/partidos.json). La concreción se juzga siempre sobre el programa, con su cita y página (fuente «PENDIENTE_URL_OFICIAL#page=N» hasta que haya URL oficial). Cuando el hecho es el mismo se reaprovechan, con sus fuentes y cifras, textos de evaluaciones ya revisadas: las de los compromisos de campaña de Junts (base «compromisos», revisadas; se retiran al publicarse el programa porque todas sus prioridades están en él, y se conservan en el historial del repositorio) para junts-01 (antes junts-08), junts-02 (antes 06), junts-04 (antes 05), junts-05 (antes 04), junts-09 (antes 01) y junts-11 (antes 02); erc-07 para junts-03 (Sareb y Casa 47: mismas valoraciones); pnv-08 para junts-08 (jubilación sin coeficientes reductores con 40 años cotizados: mismas valoraciones); pp-10 para junts-10 (deflactar el IRPF con rebaja de tramos y mínimos sin cuantificar: mismas valoraciones). junts-06, junts-07 y junts-12 no tienen equivalente evaluado. Valoraciones que difieren de evaluaciones equivalentes, por una diferencia de hecho que el texto dice: financiación de junts-01 «no_verificable» (el compromiso junts-08 era «favorable» porque solo modificaba normas procesales; el programa, p. 17, añade «garantir l’atenció pública a les persones en situació de vulnerabilitat», gasto sin cuantificar, el mismo hecho que salf-02 y pp-03 según la auditoría de coherencia del 12-nov); financiación de junts-07 «mixta» (plantilla de 26.800 agentes, coste estimable con la referencia oficial de 70.600 € por agente) frente a «no_verificable» en junts-05 (delegación de muchas funciones sin valorar). Reforma constitucional: junts-09 no la propone (disposición adicional en la LOFCA y ley del Concierto); su financiación sigue «mixta» porque no exige ninguna votación y su coste es el trasvase estimado por Fedea, y su encaje legal «desfavorable» como junts-01 de compromisos y bng-01 (STC 158/2019). Los cálculos propios se señalan como tales. Los identificadores junts-01 a junts-12 de este fichero son los del programa; los de la evaluación retirada (base «compromisos») eran otra base y no coinciden en contenido.",
+ "propuestas": [
+  {
+   "id": "junts-01",
+   "titulo": "Desalojo de las ocupaciones ilegales en 48 horas mediante juicio inmediato",
+   "area": "vivienda",
+   "resumen": "Desalojar las ocupaciones ilegales en un máximo de 48 horas mediante un juicio inmediato, garantizando la atención pública a las personas vulnerables, y aprobar una ley orgánica que permita a la policía desalojar de inmediato cuando la ocupación se detecte en el momento de producirse. El programa pide también aprobar la proposición de ley contra la ocupación que Junts presentó en la legislatura anterior (p. 15) y tramitar «ya» las reformas pendientes (p. 23).",
+   "cita": "Desnonar les ocupacions il·legals en un màxim de 48 hores, mitjançant un judici immediat, i garantir l’atenció pública a les persones en situació de vulnerabilitat. [...] Aprovar una llei orgànica que permeti a la policia desnonar immediatament un habitatge quan l’ocupació es detecti en el mateix moment de produir-se, amb ple respecte a la inviolabilitat del domicili.",
+   "cita_traduccion": "Desahuciar las ocupaciones ilegales en un máximo de 48 horas, mediante un juicio inmediato, y garantizar la atención pública a las personas en situación de vulnerabilidad. [...] Aprobar una ley orgánica que permita a la policía desahuciar inmediatamente una vivienda cuando la ocupación se detecte en el mismo momento de producirse, con pleno respeto a la inviolabilidad del domicilio.",
+   "pagina": 17,
+   "beneficiarios": "Propietarios y comunidades afectados por ocupaciones ilegales; no hay cifra oficial de viviendas ocupadas (en 2025 hubo 1.845 juicios verbales posesorios por ocupación ilegal de viviendas en España, 377 en Cataluña, según el CGPJ). La medida es sobre todo procesal; la atención pública que el programa garantiza a las personas vulnerables desalojadas recaería en las administraciones, sin cuantificar.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 17) fija el plazo (48 horas) y el procedimiento (juicio inmediato), añade una ley orgánica para el desalojo policial inmediato cuando la ocupación se detecte en el momento de producirse y, en la p. 15, remite a la proposición que Junts registró en 2025, que detalla el instrumento: medida cautelar penal de desalojo, 48 horas para que el ocupante acredite un título, aviso simultáneo a los servicios sociales y juicio inmediato por delito leve. No dice en qué consistiría la «atenció pública» que garantiza a las personas vulnerables ni cuánto costaría, ni en qué plazo se aprobarían las leyes.",
+     "fuentes": [
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=17",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 17"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=15",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 15"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-173-1.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 173-1 (31-1-2025): Proposición de Ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "La vía civil rápida de la Ley 5/2018 fue avalada por la STC 32/2019, que exige comunicar el caso a los servicios sociales, algo que la proposición de Junts recoge; el plazo de 48 horas y la medida acordada «inaudita parte» cuando el ocupante no atiende el llamamiento judicial tendrían que respetar el derecho a ser oído (art. 24 CE), sobre lo que no hemos localizado doctrina, y desde abril de 2025 la usurpación y el allanamiento ya se juzgan por juicio rápido (LO 1/2025). Sin orden judicial, la policía solo puede entrar en un domicilio en flagrante delito (art. 18.2 CE), que el Tribunal Constitucional define por la «evidencia del delito y urgencia de la intervención policial» y no admite basado en «conjeturas o en sospechas» (STC 341/1993, FJ 8): el programa lo limita a la ocupación detectada en el momento de producirse, mientras la proposición de 2025 consideraba flagrante el acceso que la policía «entienda razonablemente» producido en las 48 horas anteriores. La proposición suprime además para estos casos el trámite de vulnerabilidad de los arts. 441.5 a 441.7 LEC y la suspensión de lanzamientos del Real Decreto-ley 11/2020, y el Real Decreto-ley 29/2026, posterior, suspende hasta 2030 los desahucios de personas vulnerables sin alternativa habitacional (art. 2); suprimir esas suspensiones requiere ley ordinaria.",
+     "fuentes": [
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-173-1.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 173-1 (31-1-2025): Proposición de Ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2019-4447",
+       "titulo": "STC 32/2019, de 28 de febrero (Ley 5/2018), BOE"
+      },
+      {
+       "url": "https://hj.tribunalconstitucional.es/es/Resolucion/Show/2470",
+       "titulo": "STC 341/1993, de 18 de noviembre (Ley Orgánica 1/1992, de Protección de la Seguridad Ciudadana), FJ 8"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-76",
+       "titulo": "Ley Orgánica 1/2025, de medidas en materia de eficiencia del Servicio Público de Justicia (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2000-323",
+       "titulo": "Ley 1/2000, de Enjuiciamiento Civil (texto consolidado, BOE), art. 441"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+       "titulo": "Real Decreto-ley 29/2026, de 6 de octubre, de protección de la función social de la vivienda (texto consolidado, BOE)"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=17",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 17"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "no_verificable",
+     "texto": "La parte procesal no tiene coste presupuestario directo relevante: la proposición de 2025 solo modifica la Ley de Enjuiciamiento Criminal y la suspensión de desahucios del Real Decreto-ley 11/2020, y en ella el realojamiento por los servicios sociales es potestativo. Pero el programa (p. 17) añade «garantir l’atenció pública» a las personas vulnerables desalojadas sin decir en qué consistiría ni cuantificarla, y no hay una cifra oficial de viviendas ocupadas que permita estimar su coste; tampoco está cuantificada la carga adicional de los juzgados.",
+     "fuentes": [
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-173-1.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 173-1 (31-1-2025): Proposición de Ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=17",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 17"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "no_verificable",
+     "texto": "No hemos localizado evaluaciones del efecto de los procedimientos rápidos de desalojo de ocupantes, ni de la Ley 5/2018 ni del juicio rápido introducido por la LO 1/2025, sobre el número de ocupaciones o su duración. Sin ellas no se puede valorar si la medida alcanzaría su objetivo.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/eli/es/l/2018/06/11/5",
+       "titulo": "Ley 5/2018, de modificación de la LEC en relación con la ocupación ilegal de viviendas (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-76",
+       "titulo": "Ley Orgánica 1/2025, de medidas en materia de eficiencia del Servicio Público de Justicia (BOE)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Francia (Ley 2023-668) extendió a cualquier vivienda, y no solo al domicilio del demandante, el procedimiento en el que el prefecto decide en 48 horas el requerimiento de desalojo, con un plazo de ejecución de al menos 24 horas; Inglaterra y Gales castigan desde 2012 la ocupación de edificios residenciales. En los Países Bajos, una evaluación del WODC de 2026 citada por prensa especializada concluye que los desalojos penales pasaron de 79 a 37 días de media, con efecto limitado en la práctica.",
+     "fuentes": [
+      {
+       "url": "https://www.anil.org/aj-occupation-illicite-logement/",
+       "titulo": "ANIL (Francia): occupation illicite d'un logement, procedimiento administrativo de desalojo (Ley 2023-668)"
+      },
+      {
+       "url": "https://www.legislation.gov.uk/ukpga/2012/10/section/144",
+       "titulo": "Legal Aid, Sentencing and Punishment of Offenders Act 2012, sección 144 (Inglaterra y Gales)"
+      },
+      {
+       "url": "https://omgevingsweb.nl/beleid/evaluatie-kraakverbod-handhaving-sneller-maar-effect-op-leefomgevingspraktijk-beperkt/",
+       "titulo": "Omgevingsweb (2026): evaluación del WODC de la prohibición de la ocupación en los Países Bajos"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "La Ley 5/2018 creó el desahucio exprés civil para personas físicas, entidades sin ánimo de lucro y titulares públicos de vivienda social, y desde abril de 2025 la usurpación y el allanamiento se juzgan por juicio rápido (LO 1/2025). La proposición de Junts fue tomada en consideración en marzo de 2025 y enviada a la Comisión de Justicia, donde no se aprobó antes de la disolución de las Cortes. El último dato de duración publicado por el CGPJ (2023, anterior a la LO 1/2025) es de 12 meses en primera instancia para los juicios posesorios por ocupación; no hemos localizado una evaluación de los plazos reales con ninguna de las dos reformas.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/eli/es/l/2018/06/11/5",
+       "titulo": "Ley 5/2018, de modificación de la LEC en relación con la ocupación ilegal de viviendas (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-76",
+       "titulo": "Ley Orgánica 1/2025, de medidas en materia de eficiencia del Servicio Público de Justicia (BOE)"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-173-3.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 173-3 (1-4-2025): tomada en consideración, a la Comisión de Justicia"
+      },
+      {
+       "url": "https://www.poderjudicial.es/cgpj/es/Temas/Transparencia/ch.Estimacion-de-los-tiempos-medios-de-duracion-de-los-procedimientos-judiciales.formato1/?idOrg=20&anio=2023&territorio=Espa%C3%B1a&proc=Asuntos%20civiles",
+       "titulo": "CGPJ: estimación de los tiempos medios de duración de los procedimientos judiciales, asuntos civiles, 2023"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a propietarios y comunidades afectados por ocupaciones. No hay cifra oficial de viviendas ocupadas; como referencia, en 2025 hubo 1.845 juicios verbales posesorios por ocupación ilegal de viviendas en España, 377 de ellos en Cataluña (CGPJ), e Interior contabilizó 14.875 hechos conocidos de allanamiento o usurpación de inmuebles, no todos viviendas, según la OCU. El coste lo asumirían los ocupantes desalojados y, por la atención que el programa garantiza a los vulnerables, las administraciones, sin cuantificar.",
+     "fuentes": [
+      {
+       "url": "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/En-Portada/Las-ejecuciones-hipotecarias-y-los-concursos-registrados-en-los-organos-judiciales-crecieron-en-2025-un-30---respecto-al-ano-anterior",
+       "titulo": "CGPJ (20-3-2026): datos judiciales de 2025, verbales posesorios por ocupación ilegal de viviendas"
+      },
+      {
+       "url": "https://www.ocu.org/fincas-y-casas/gestion/alquiler/analisis/2026/09/desahucios-cifras-consejos",
+       "titulo": "OCU (septiembre de 2026): desahucios y ocupaciones, cifras"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=17",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 17"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Acortar la recuperación de la vivienda puede reducir el riesgo percibido por los propietarios. Como riesgo, suprimir la suspensión por vulnerabilidad en estos casos traslada la atención de las personas vulnerables a unos servicios sociales con 48 horas para actuar, y la STC 32/2019 describe esa comunicación como un deber condicionado al consentimiento de los afectados, no como una intervención obligatoria. No hemos localizado estudios sobre estos efectos.",
+     "fuentes": [
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-173-1.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 173-1 (31-1-2025): Proposición de Ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2019-4447",
+       "titulo": "STC 32/2019, de 28 de febrero (Ley 5/2018), BOE"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "junts-02",
+   "titulo": "Deducciones del 15 % en el IRPF por el alquiler, la hipoteca y la cuenta vivienda",
+   "area": "fiscalidad",
+   "resumen": "Recuperar tres deducciones del 15 % en el IRPF: por el alquiler de la vivienda habitual (para todos y de forma permanente, según la sección de jóvenes), por las cuotas de la hipoteca de la vivienda habitual (también para quien compró a partir de 2013) y por el ahorro en una cuenta vivienda para comprar la primera. El Estado debería compensar íntegramente a la Generalitat por lo que deje de ingresar.",
+   "cita": "Recuperar la deducció del 15% a l’IRPF pel lloguer de l’habitatge habitual. [...] Recuperar la deducció del 15% a l’IRPF de les quotes de la hipoteca de l’habitatge habitual. [...] Recuperar el compte habitatge, amb una deducció del 15% a l’IRPF de l’estalvi destinat a comprar el primer habitatge.",
+   "cita_traduccion": "Recuperar la deducción del 15 % en el IRPF por el alquiler de la vivienda habitual. [...] Recuperar la deducción del 15 % en el IRPF de las cuotas de la hipoteca de la vivienda habitual. [...] Recuperar la cuenta vivienda, con una deducción del 15 % en el IRPF del ahorro destinado a comprar la primera vivienda.",
+   "pagina": 17,
+   "beneficiarios": "Inquilinos, hipotecados y ahorradores para la primera vivienda que tributen en el IRPF; el programa no cuantifica cuántos. Como referencia, el 16,7 % de los hogares vive de alquiler a precio de mercado (INE, 2025) y la antigua deducción por compra llegó a más de siete millones de contribuyentes en 2010. El coste lo asumiría la Hacienda estatal, también por la parte autonómica que el programa pide compensar a la Generalitat (Junts estimó en mayo de 2026 unos 2.500 M€ para hipoteca y ahorro y 200-300 M€ para alquiler, con tope, según fuentes del partido).",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 17) fija el porcentaje (15 %) y las tres bases: el alquiler y las cuotas de la hipoteca de la vivienda habitual y el ahorro destinado a comprar la primera; la sección de jóvenes (p. 60) precisa que la de alquiler sería «per a tothom» y permanente y la de hipoteca aplicable a quien compró desde 2013, y el punto 3.7 pide que el Estado compense a la Generalitat. No fija el tope deducible, los límites de renta, el coste ni desde cuándo se aplicaría; su propuesta de abril de 2026 fijaba un tope de 11.630 euros anuales y la de octubre limitaba la de alquiler a 2026 y 2027 con límites de renta. La deducción estatal por alquiler que se suprimió en 2015 era del 10,05 %, no del 15 %.",
+     "fuentes": [
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=17",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 17"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=60",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 60"
+      },
+      {
+       "url": "https://www.idealista.com/news/inmobiliario/vivienda/2026/04/16/893277-junts-mantiene-su-firme-rechazo-al-decreto-de-alquileres-de-sumar-y-propone-rebajas",
+       "titulo": "idealista/news, 16-4-2026: la propuesta de Junts de deducción del 15 % con tope de 11.630 euros"
+      },
+      {
+       "url": "https://www.cope.es/actualidad/espana/noticias/junts-traslada-gobierno-propuesta-reformar-decretos-vivienda-propone-prorrogar-dos-anos-alquileres-rebajar-impuestos-limitar-compras-vivienda-fondos-20261002_3448588.html",
+       "titulo": "COPE, 2-10-2026: documento de Junts sobre los decretos de vivienda"
+      },
+      {
+       "url": "https://www.funcas.es/wp-content/uploads/2024/09/Estudios104_Villota_3.pdf",
+       "titulo": "Villota (2024), «Fiscalidad de la vivienda», Funcas, Estudios 104, cap. 7"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "El IRPF es un impuesto estatal regulado por ley ordinaria (Ley 35/2006), que tuvo deducciones estatales por compra de vivienda, que incluían la cuenta vivienda (hasta 2012), y por alquiler (hasta 2014), y aún las mantiene en régimen transitorio para quienes compraron o alquilaron antes. Las comunidades conservan sus propias deducciones en el tramo autonómico; la compensación a la Generalitat que pide el programa tiene cauce en la LOFCA (art. 2.1.g), que prevé valorar cada cinco años el impacto de las medidas tributarias del Estado en las comunidades y, en su caso, compensarlo modificando el sistema de financiación del quinquenio siguiente, no de forma inmediata.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+       "titulo": "Ley 35/2006, del IRPF (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.funcas.es/wp-content/uploads/2024/09/Estudios104_Villota_3.pdf",
+       "titulo": "Villota (2024), «Fiscalidad de la vivienda», Funcas, Estudios 104, cap. 7"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1980-21166",
+       "titulo": "Ley Orgánica 8/1980, de Financiación de las Comunidades Autónomas (LOFCA), art. 2.1.g (BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El coste es estimable: la antigua deducción por vivienda habitual, que incluía la cuenta vivienda, costó 4.415,36 M€ en 2010 (Funcas), y en 2023 su régimen transitorio aún costaba 753,51 M€ y el de la deducción por alquiler, 29,74 M€ (Memoria de beneficios fiscales). Junts estimó en mayo de 2026 unos 2.500 M€ para las deducciones por hipoteca y ahorro y 200-300 M€ para la de alquiler, con un tope de 11.630 euros anuales que el programa no recoge, según fuentes del partido citadas por la prensa. El programa pide que el Estado compense a la Generalitat, pero no explica cómo se cubriría la pérdida de recaudación.",
+     "fuentes": [
+      {
+       "url": "https://www.funcas.es/wp-content/uploads/2024/09/Estudios104_Villota_3.pdf",
+       "titulo": "Villota (2024), «Fiscalidad de la vivienda», Funcas, Estudios 104, cap. 7"
+      },
+      {
+       "url": "https://www.sepg.pap.hacienda.gob.es/Presup/PGE2023Proyecto/MaestroDocumentos/PGE-ROM/doc/3/2/2/N_23_A_A_1B_C2_1.PDF",
+       "titulo": "Ministerio de Hacienda, Memoria de beneficios fiscales, Proyecto de PGE 2023 (deducciones por vivienda habitual y alquiler en régimen transitorio)"
+      },
+      {
+       "url": "https://www.catalunyapress.es/articulo/politica-nacional/2026-05-13/5880242-junts-abre-apoyar-decreto-gobierno-deducciones-hipoteca-alquiler",
+       "titulo": "Catalunya Press, 13-5-2026: coste estimado por Junts de sus deducciones de vivienda"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=17",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 17"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Con datos de Dinamarca, Gruber, Jensen y Kleven (2017) hallan un efecto nulo de la deducción por intereses hipotecarios sobre el acceso a la propiedad y un efecto sobre el tamaño y precio de la vivienda comprada y sobre el endeudamiento. En España, la supresión temporal de la deducción en 2011 para hogares de renta alta redujo un 6 % el importe de las nuevas hipotecas, sin cambios significativos en el valor de tasación ni en los tipos de interés a corto plazo (Banco de España, 2026). Para las ayudas al alquiler, Fack (2006) estima en Francia que cada euro adicional subió el alquiler en 78 céntimos por la baja elasticidad de la oferta, y según Funcas España suprimió en 2013 la deducción por compra también por su posible contribución a la burbuja.",
+     "fuentes": [
+      {
+       "url": "https://www.nber.org/papers/w23600",
+       "titulo": "Gruber, Jensen y Kleven (2017), Do People Respond to the Mortgage Interest Deduction? Quasi-Experimental Evidence from Denmark, NBER WP 23600"
+      },
+      {
+       "url": "https://www.bde.es/f/webbe/GAP/Secciones/Publicaciones/InformesBoletinesRevistas/RevistaEstabilidadFinanciera/26/3_REF50_EFECTO.pdf",
+       "titulo": "Jiménez y Pérez Asenjo (2026), «Efectos sobre el crédito hipotecario de una menor capacidad de endeudamiento de los hogares en España», Banco de España, Revista de Estabilidad Financiera 50"
+      },
+      {
+       "url": "https://ideas.repec.org/a/eee/labeco/v13y2006i6p747-771.html",
+       "titulo": "Fack (2006), Are housing benefit an effective way to redistribute income? Evidence from a natural experiment in France, Labour Economics 13(6)"
+      },
+      {
+       "url": "https://www.funcas.es/wp-content/uploads/2024/09/Estudios104_Villota_3.pdf",
+       "titulo": "Villota (2024), «Fiscalidad de la vivienda», Funcas, Estudios 104, cap. 7"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Dinamarca mantiene una deducción por intereses hipotecarios cuya evaluación (Gruber, Jensen y Kleven, 2017) no halla efecto sobre la tasa de propietarios y sí sobre el endeudamiento; en Francia, la ayuda al alquiler se trasladó en su mayor parte al precio (Fack, 2006). Los diseños difieren del propuesto (deducción por intereses frente a porcentaje del pago; subsidio directo frente a deducción fiscal).",
+     "fuentes": [
+      {
+       "url": "https://www.nber.org/papers/w23600",
+       "titulo": "Gruber, Jensen y Kleven (2017), Do People Respond to the Mortgage Interest Deduction? Quasi-Experimental Evidence from Denmark, NBER WP 23600"
+      },
+      {
+       "url": "https://ideas.repec.org/a/eee/labeco/v13y2006i6p747-771.html",
+       "titulo": "Fack (2006), Are housing benefit an effective way to redistribute income? Evidence from a natural experiment in France, Labour Economics 13(6)"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "España tuvo una deducción estatal por inversión en vivienda habitual desde 1979, que podía aplicarse antes de la compra mediante la cuenta vivienda; con la Ley 40/1998 llegó a porcentajes del 15 % al 25 % sobre un máximo de 9.015,18 euros, se suprimió para compras desde 2013 y la de alquiler (10,05 %, para bases imponibles inferiores a 24.107,20 euros) para contratos desde 2015, ambas con régimen transitorio. Su supresión temporal en 2011 para rentas altas, revertida después con efecto retroactivo, redujo el importe de las nuevas hipotecas sin cambios significativos en el valor de tasación a corto plazo (Banco de España, 2026); no hemos localizado una evaluación pública española de su efecto sobre los precios a largo plazo.",
+     "fuentes": [
+      {
+       "url": "https://www.funcas.es/wp-content/uploads/2024/09/Estudios104_Villota_3.pdf",
+       "titulo": "Villota (2024), «Fiscalidad de la vivienda», Funcas, Estudios 104, cap. 7"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+       "titulo": "Ley 35/2006, del IRPF (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.bde.es/f/webbe/GAP/Secciones/Publicaciones/InformesBoletinesRevistas/RevistaEstabilidadFinanciera/26/3_REF50_EFECTO.pdf",
+       "titulo": "Jiménez y Pérez Asenjo (2026), «Efectos sobre el crédito hipotecario de una menor capacidad de endeudamiento de los hogares en España», Banco de España, Revista de Estabilidad Financiera 50"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a inquilinos, hipotecados y ahorradores que declaran IRPF con cuota suficiente para aplicar la deducción; no hay cifra de beneficiarios de la propuesta. Como referencia, el 16,7 % de los hogares vive de alquiler a precio de mercado (INE, 2025), la deducción antigua por compra llegó a más de siete millones de contribuyentes en 2010 y en 2023 la conservaban 2.663.223 en régimen transitorio. El coste, estimado por el propio partido en unos 2.700-2.800 M€ para una versión con tope, lo asumiría la Hacienda estatal, también por la parte de la Generalitat según el programa, y la evidencia indica que parte del beneficio iría a vendedores y arrendadores a través de los precios.",
+     "fuentes": [
+      {
+       "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/9997?nult=1",
+       "titulo": "INE, Encuesta de Condiciones de Vida 2025: hogares por régimen de tenencia de la vivienda"
+      },
+      {
+       "url": "https://www.funcas.es/wp-content/uploads/2024/09/Estudios104_Villota_3.pdf",
+       "titulo": "Villota (2024), «Fiscalidad de la vivienda», Funcas, Estudios 104, cap. 7"
+      },
+      {
+       "url": "https://www.sepg.pap.hacienda.gob.es/Presup/PGE2023Proyecto/MaestroDocumentos/PGE-ROM/doc/3/2/2/N_23_A_A_1B_C2_1.PDF",
+       "titulo": "Ministerio de Hacienda, Memoria de beneficios fiscales, Proyecto de PGE 2023 (deducciones por vivienda habitual y alquiler en régimen transitorio)"
+      },
+      {
+       "url": "https://www.catalunyapress.es/articulo/politica-nacional/2026-05-13/5880242-junts-abre-apoyar-decreto-gobierno-deducciones-hipoteca-alquiler",
+       "titulo": "Catalunya Press, 13-5-2026: coste estimado por Junts de sus deducciones de vivienda"
+      },
+      {
+       "url": "https://ideas.repec.org/a/eee/labeco/v13y2006i6p747-771.html",
+       "titulo": "Fack (2006), Are housing benefit an effective way to redistribute income? Evidence from a natural experiment in France, Labour Economics 13(6)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Ventaja: alivio del esfuerzo fiscal de los hogares con vivienda y del ahorro para la entrada. Riesgos: pérdida recurrente de recaudación, que el programa quiere permanente en el caso del alquiler; más endeudamiento hipotecario, como muestran la experiencia española de 2011 (Banco de España, 2026) y la danesa; y traslado a precios y alquileres si no aumenta la oferta, efecto documentado en Francia y aducido al suprimir la deducción en 2013.",
+     "fuentes": [
+      {
+       "url": "https://www.bde.es/f/webbe/GAP/Secciones/Publicaciones/InformesBoletinesRevistas/RevistaEstabilidadFinanciera/26/3_REF50_EFECTO.pdf",
+       "titulo": "Jiménez y Pérez Asenjo (2026), «Efectos sobre el crédito hipotecario de una menor capacidad de endeudamiento de los hogares en España», Banco de España, Revista de Estabilidad Financiera 50"
+      },
+      {
+       "url": "https://www.nber.org/papers/w23600",
+       "titulo": "Gruber, Jensen y Kleven (2017), Do People Respond to the Mortgage Interest Deduction? Quasi-Experimental Evidence from Denmark, NBER WP 23600"
+      },
+      {
+       "url": "https://ideas.repec.org/a/eee/labeco/v13y2006i6p747-771.html",
+       "titulo": "Fack (2006), Are housing benefit an effective way to redistribute income? Evidence from a natural experiment in France, Labour Economics 13(6)"
+      },
+      {
+       "url": "https://www.funcas.es/wp-content/uploads/2024/09/Estudios104_Villota_3.pdf",
+       "titulo": "Villota (2024), «Fiscalidad de la vivienda», Funcas, Estudios 104, cap. 7"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "junts-03",
+   "titulo": "Cesión gratuita a la Generalitat y los ayuntamientos de las viviendas y el suelo de la Sareb y Casa 47 en Cataluña",
+   "area": "vivienda",
+   "resumen": "Exigir que el Estado ceda sin coste y en propiedad, no solo en gestión, a la Generalitat y a los ayuntamientos todas las viviendas y el suelo que la Sareb y Casa 47 tienen en Cataluña, con un fondo específico para acondicionarlos; ceder también el suelo estatal apto para alquiler asequible y dar a cada ayuntamiento un inventario de lo disponible en su municipio. La sección de jóvenes (p. 60) pide el traspaso «immediat» y reservar una parte a los jóvenes.",
+   "cita": "Exigir la cessió sense cost a la Generalitat i als ajuntaments de la totalitat dels habitatges i el sòl que la SAREB i Casa 47 tenen a Catalunya, en propietat i no només en gestió, amb un fons específic per condicionarlos i fer-los habitables.",
+   "cita_traduccion": "Exigir la cesión sin coste a la Generalitat y a los ayuntamientos de la totalidad de las viviendas y el suelo que la SAREB y Casa 47 tienen en Cataluña, en propiedad y no solo en gestión, con un fondo específico para acondicionarlos y hacerlos habitables.",
+   "pagina": 18,
+   "beneficiarios": "Hogares que accedan a alquiler asequible en Cataluña; el acuerdo anunciado en 2025 cubre unas 13.000 viviendas y 300 solares de la Sareb en Cataluña. El coste lo asume el Estado, que renuncia al valor de los activos y pagaría el fondo de acondicionamiento: la Sareb debía 27.790 M€ a finales de 2025 y el Estado tenía provisionados 20.585 M€ para cubrir sus pérdidas.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 18) precisa qué pide (todas las viviendas y el suelo de la Sareb y de Casa 47 en Cataluña, en propiedad y gratis, más el suelo estatal apto para alquiler asequible), a quién (la Generalitat y los ayuntamientos) y con qué (un fondo específico para acondicionarlos y un inventario por municipio). No da el número de viviendas, su estado, la cuantía del fondo ni cómo se repartirían entre la Generalitat y los ayuntamientos, y el plazo se limita al «traspàs immediat» de la sección de jóvenes (p. 60); según el acuerdo anunciado en 2025 serían unas 13.000 viviendas de la Sareb en Cataluña, algunas ocupadas y de estado desconocido.",
+     "fuentes": [
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=18",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 18"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=60",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 60"
+      },
+      {
+       "url": "https://es.ara.cat/economia/inmobiliario/cataluna-sumara-13-000-viviendas-sareb-parque-publico_1_5522143.html",
+       "titulo": "Ara, 8-10-2025: Cataluña sumará 13.000 viviendas de la Sareb al parque público"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "La Generalitat tiene competencia en vivienda, pero los inmuebles pertenecen a entidades estatales. La Ley 33/2003 permite ceder gratis la propiedad de bienes patrimoniales del Estado cuya afectación o explotación no se juzgue previsible, y de sus organismos públicos que puedan enajenarlos, a comunidades autónomas y entidades locales para fines de utilidad pública o interés social de su competencia (arts. 145 a 147), pero exige una decisión estatal; el acuerdo de 2025 solo transmite a Sepes (hoy Casa 47) los inmuebles de la Sareb que cumplen criterios de aptitud para vivienda asequible, y la transmisión supone que la Sareb amortice menos deuda de la prevista, con el consiguiente impacto en el aval del Estado que la garantiza. En octubre de 2025 se anunció que la Generalitat gestionará los de Cataluña en usufructo durante cuatro años, mientras la propiedad sigue siendo de la entidad estatal.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-20254",
+       "titulo": "Ley 33/2003, del Patrimonio de las Administraciones Públicas (texto consolidado, BOE), arts. 145 a 147"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-15292",
+       "titulo": "Orden PJC/784/2025, de 21 de julio: Acuerdo del Consejo de Ministros de 1-7-2025 sobre la transmisión a SEPES de los inmuebles de la Sareb aptos para vivienda asequible (BOE)"
+      },
+      {
+       "url": "https://es.ara.cat/economia/inmobiliario/cataluna-sumara-13-000-viviendas-sareb-parque-publico_1_5522143.html",
+       "titulo": "Ara, 8-10-2025: Cataluña sumará 13.000 viviendas de la Sareb al parque público"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "La cesión gratuita supone que el Estado renuncia al valor de los activos: el acuerdo de 2025 estima en unos 5.000 M€ el valor de mercado de los inmuebles de la Sareb que se transmiten a Sepes en toda España, de cuyas viviendas casi una de cada tres está en Cataluña, y la Sareb tenía 27.790 M€ de deuda avalada frente a una cartera valorada en 15.303 M€ a finales de 2025. El programa no cuantifica el valor de lo que pide ni el fondo de acondicionamiento, ni dice cómo se pagaría.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-15292",
+       "titulo": "Orden PJC/784/2025, de 21 de julio: Acuerdo del Consejo de Ministros de 1-7-2025 sobre la transmisión a SEPES de los inmuebles de la Sareb aptos para vivienda asequible (BOE)"
+      },
+      {
+       "url": "https://es.ara.cat/economia/inmobiliario/cataluna-sumara-13-000-viviendas-sareb-parque-publico_1_5522143.html",
+       "titulo": "Ara, 8-10-2025: Cataluña sumará 13.000 viviendas de la Sareb al parque público"
+      },
+      {
+       "url": "https://brainsre.news/traspaso-viviendas-casa-47-deuda-sareb/",
+       "titulo": "Brainsre.news: traspaso de viviendas a Casa 47 y deuda de la Sareb"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=18",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 18"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "El parque de vivienda social en España es inferior al 2 % del total, frente a una media del 7 % en la OCDE, por lo que la medida aumenta un parque reducido. No se ha encontrado evidencia de que la titularidad autonómica o municipal, frente al usufructo, mejore la gestión de estos inmuebles.",
+     "fuentes": [
+      {
+       "url": "https://www.oecd.org/content/dam/oecd/en/data/datasets/affordable-housing-database/ph4-2-social-rental-housing-stock.pdf",
+       "titulo": "OCDE, Affordable Housing Database, PH4.2 Social rental housing stock (2024)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "En Irlanda, el banco de activos NAMA identificó 7.653 viviendas como potencialmente aptas para vivienda social y entregó 2.957 a ayuntamientos y entidades de vivienda; muchas no fueron requeridas o se juzgaron inadecuadas y algunas necesitaron obras. Las entregas se hicieron por venta o arrendamiento a 20 años, y su vehículo NARPS compra a valor de mercado, no por cesión gratuita. La experiencia muestra que un banco de activos puede ampliar el parque social, pero solo con una parte de su cartera y con coste para el comprador público.",
+     "fuentes": [
+      {
+       "url": "https://www.nama.ie/our-work/social-initiatives/social-housing",
+       "titulo": "NAMA (Irlanda): Social Housing, balance de entregas"
+      },
+      {
+       "url": "https://www.nama.ie/news/press-statement-nama-publishes-2023-year-end-review",
+       "titulo": "NAMA, 4-1-2024: balance de 2023 (2.985 viviendas entregadas para vivienda social)"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "En 1985 el Estado transfirió a la Generalitat la titularidad de las viviendas, locales y suelo del Instituto para la Promoción Pública de la Vivienda en Cataluña, dentro del traspaso de servicios en esa materia (Real Decreto 1009/1985). El Consejo de Ministros acordó el 1-7-2025 que la Sareb entregue gratis al Estado, para integrarlos en el patrimonio de Sepes (hoy Casa 47), los inmuebles aptos para vivienda asequible: más de 40.000 viviendas y cerca de 2.400 suelos identificados de forma preliminar (Orden PJC/784/2025). En octubre de 2025 se anunció que la Generalitat gestionará en usufructo durante cuatro años unas 13.000 viviendas y 300 solares de la Sareb en Cataluña como vivienda protegida de alquiler asequible, con un protocolo de inventario pendiente y la propiedad en manos estatales.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/eli/es/rd/1985/06/05/1009",
+       "titulo": "Real Decreto 1009/1985, de 5 de junio: traspaso a la Generalitat de Cataluña en materia de promoción pública de la vivienda (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-15292",
+       "titulo": "Orden PJC/784/2025, de 21 de julio: Acuerdo del Consejo de Ministros de 1-7-2025 sobre la transmisión a SEPES de los inmuebles de la Sareb aptos para vivienda asequible (BOE)"
+      },
+      {
+       "url": "https://es.ara.cat/economia/inmobiliario/cataluna-sumara-13-000-viviendas-sareb-parque-publico_1_5522143.html",
+       "titulo": "Ara, 8-10-2025: Cataluña sumará 13.000 viviendas de la Sareb al parque público"
+      },
+      {
+       "url": "https://brainsre.news/traspaso-viviendas-casa-47-deuda-sareb/",
+       "titulo": "Brainsre.news: traspaso de viviendas a Casa 47 y deuda de la Sareb"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficia a los hogares que accedan a esas viviendas de alquiler asequible, cuyo número no está cuantificado, y a la Generalitat y los ayuntamientos, que ganarían patrimonio. El coste recae en el Estado (y, en última instancia, en los contribuyentes), que asume las pérdidas de la Sareb, cede activos sin contraprestación y pagaría el fondo de acondicionamiento.",
+     "fuentes": [
+      {
+       "url": "https://brainsre.news/traspaso-viviendas-casa-47-deuda-sareb/",
+       "titulo": "Brainsre.news: traspaso de viviendas a Casa 47 y deuda de la Sareb"
+      },
+      {
+       "url": "https://es.ara.cat/economia/inmobiliario/cataluna-sumara-13-000-viviendas-sareb-parque-publico_1_5522143.html",
+       "titulo": "Ara, 8-10-2025: Cataluña sumará 13.000 viviendas de la Sareb al parque público"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Incrementaría de forma permanente el parque público catalán. Los riesgos son el coste de rehabilitar y gestionar viviendas cuyo estado y ocupación se desconocen y la pérdida de valor recuperable para el Estado antes de que la Sareb termine su actividad en noviembre de 2027, al cumplir su plazo máximo de 15 años, tras lo que se abrirá un periodo de liquidación.",
+     "fuentes": [
+      {
+       "url": "https://es.ara.cat/economia/inmobiliario/cataluna-sumara-13-000-viviendas-sareb-parque-publico_1_5522143.html",
+       "titulo": "Ara, 8-10-2025: Cataluña sumará 13.000 viviendas de la Sareb al parque público"
+      },
+      {
+       "url": "https://brainsre.news/traspaso-viviendas-casa-47-deuda-sareb/",
+       "titulo": "Brainsre.news: traspaso de viviendas a Casa 47 y deuda de la Sareb"
+      },
+      {
+       "url": "https://www.idealista.com/news/node/896145",
+       "titulo": "idealista: la Sareb terminará su actividad en noviembre de 2027 (plazo de 15 años)"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "junts-04",
+   "titulo": "Oficialidad del catalán en la Unión Europea",
+   "area": "otros",
+   "resumen": "Seguir presionando diplomáticamente hasta que el catalán sea lengua oficial de la UE, con una oficialidad «plena y efectiva» y los recursos y acuerdos necesarios para su uso institucional (p. 27). El programa defiende también el reconocimiento y la protección del occitano aranés.",
+   "cita": "Continuar pressionant diplomàticament fins a aconseguir efectivament l’oficialitat del català a la UE, que és indispensable, entre altres raons, per exigir a l’Estat espanyol el reconeixement i la protecció que ell mateix no li dona.",
+   "cita_traduccion": "Continuar presionando diplomáticamente hasta conseguir efectivamente la oficialidad del catalán en la UE, que es indispensable, entre otras razones, para exigir al Estado español el reconocimiento y la protección que él mismo no le da.",
+   "pagina": 20,
+   "beneficiarios": "Los hablantes de catalán, que podrían dirigirse a las instituciones de la UE y recibir su legislación en catalán: en Cataluña el 80,4 % de la población de 15 años o más declara saber hablarlo (Enquesta d'usos lingüístics 2023, según el IEC) y la prensa cifra en cerca de diez millones sus hablantes. El coste, unos 132 M€ anuales para catalán, euskera y gallego según la estimación de la Comisión citada en prensa, lo asumiría España, según su compromiso.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "La medida es identificable (que el catalán sea lengua oficial de la UE, lo que exige modificar el Reglamento n.º 1 de 1958, como ya pidió España en 2023) y el programa precisa el alcance: oficialidad «plena i efectiva», con los recursos y acuerdos necesarios para su uso institucional (p. 27). El instrumento que propone es «continuar pressionant diplomàticament» (p. 20), sin decir con qué medios, en qué plazo ni quién pagaría el coste.",
+     "fuentes": [
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=20",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 20"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=27",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 27"
+      },
+      {
+       "url": "https://data.consilium.europa.eu/doc/document/ST-12662-2023-INIT/es/pdf",
+       "titulo": "Consejo de la UE, nota 12662/23 (8-9-2023): propuesta española de modificar el Reglamento n.º 1 (art. 342 TFUE)"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "El régimen lingüístico de las instituciones lo fija el Consejo por unanimidad mediante reglamento (art. 342 TFUE), por lo que la medida no depende de España sola. Según la prensa, los servicios jurídicos del Consejo apuntan a la necesidad de reformar los Tratados, y en julio de 2025 Alemania se apoyó en un dictamen oral en ese sentido; no se ha publicado ningún dictamen escrito ni hay sentencia sobre la cuestión.",
+     "fuentes": [
+      {
+       "url": "https://data.consilium.europa.eu/doc/document/ST-12662-2023-INIT/es/pdf",
+       "titulo": "Consejo de la UE, nota 12662/23 (8-9-2023): propuesta española de modificar el Reglamento n.º 1 (art. 342 TFUE)"
+      },
+      {
+       "url": "https://barcelona.spain.representation.ec.europa.eu/qui-som/el-catala-la-ue_es",
+       "titulo": "Comisión Europea (Representación en Barcelona): el catalán en la UE"
+      },
+      {
+       "url": "https://es.ara.cat/politica/son-principales-obstaculos-catalan-sea-oficial-europa_1_5855937.html",
+       "titulo": "Ara, 21-9-2026: ¿Cuáles son los principales obstáculos para que el catalán sea oficial en Europa?"
+      },
+      {
+       "url": "https://www.catalunyapress.es/articulo/politica-nacional/2026-09-02/6001307-espana-vuelve-intentarlo-pide-llevar-oficialidad-catalan-ue-ano-bloqueada",
+       "titulo": "Catalunya Press (con Europa Press), 2-9-2026: España pide volver a llevar la oficialidad al Consejo"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El coste es estimable: la Comisión Europea lo cifró en unos 132 M€ anuales para catalán, euskera y gallego, tomando como referencia el irlandés, y el Gobierno se ha comprometido a pagarlo (estimación recogida en prensa; no hemos localizado el documento de la Comisión). El programa pide «els recursos [...] necessaris» para el uso institucional, pero no los cuantifica ni dice quién los pagaría.",
+     "fuentes": [
+      {
+       "url": "https://www.catalunyapress.es/articulo/politica-nacional/2026-09-02/6001307-espana-vuelve-intentarlo-pide-llevar-oficialidad-catalan-ue-ano-bloqueada",
+       "titulo": "Catalunya Press (con Europa Press), 2-9-2026: España pide volver a llevar la oficialidad al Consejo"
+      },
+      {
+       "url": "https://www.catalunyapress.es/articulo/politica/2026-06-13/5918132-bruselas-mantiene-bloqueada-peticion-espanola-oficialidad-catalan-ue-ano",
+       "titulo": "Catalunya Press, 13-6-2026: la petición sigue bloqueada en el Consejo"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=27",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 27"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "no_verificable",
+     "texto": "No hemos localizado estudios que midan el efecto de la oficialidad en la UE sobre el uso o la vitalidad de una lengua.",
+     "fuentes": []
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "El irlandés es lengua oficial de la UE desde 2007 (Reglamento 920/2005) con una excepción transitoria que se fue reduciendo hasta desaparecer el 1-1-2022 (Reglamento 2015/2264). Está documentada la aplicación, no una evaluación de sus resultados.",
+     "fuentes": [
+      {
+       "url": "http://publications.europa.eu/resource/celex/32015R2264",
+       "titulo": "Reglamento (UE, Euratom) 2015/2264 (fin de la excepción del irlandés el 1-1-2022) (Oficina de Publicaciones de la UE)"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "Desde 2005 el catalán puede usarse en comunicaciones escritas con varias instituciones mediante acuerdos administrativos con España, sin ser lengua oficial. España pidió la oficialidad el 17-8-2023, ha propuesto aplicarla de forma parcial desde 2027 y el 22-9-2026 la llevó por octava vez al Consejo de Asuntos Generales, como punto informativo sin votación y vinculándola a la ampliación de la UE; Alemania, Suecia y Lituania rechazaron esa vinculación y no hay fecha para una decisión.",
+     "fuentes": [
+      {
+       "url": "https://barcelona.spain.representation.ec.europa.eu/qui-som/el-catala-la-ue_es",
+       "titulo": "Comisión Europea (Representación en Barcelona): el catalán en la UE"
+      },
+      {
+       "url": "https://data.consilium.europa.eu/doc/document/ST-12662-2023-INIT/es/pdf",
+       "titulo": "Consejo de la UE, nota 12662/23 (8-9-2023): propuesta española de modificar el Reglamento n.º 1 (art. 342 TFUE)"
+      },
+      {
+       "url": "https://www.catalunyapress.es/articulo/politica-nacional/2026-09-02/6001307-espana-vuelve-intentarlo-pide-llevar-oficialidad-catalan-ue-ano-bloqueada",
+       "titulo": "Catalunya Press (con Europa Press), 2-9-2026: España pide volver a llevar la oficialidad al Consejo"
+      },
+      {
+       "url": "https://es.ara.cat/politica/son-principales-obstaculos-catalan-sea-oficial-europa_1_5855937.html",
+       "titulo": "Ara, 21-9-2026: ¿Cuáles son los principales obstáculos para que el catalán sea oficial en Europa?"
+      },
+      {
+       "url": "https://es.euronews.com/2026/09/22/alemania-suecia-lituania-rechazan-vincular-catalan-ampliacion-ue",
+       "titulo": "Euronews, 22-9-2026: Alemania, Suecia y Lituania rechazan vincular el catalán a la ampliación de la UE"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a los hablantes de catalán en su relación con la UE: en Cataluña el 80,4 % de la población de 15 años o más declara saber hablarlo (Enquesta d'usos lingüístics 2023, según el IEC) y la prensa cifra en cerca de diez millones sus hablantes, sin que conste cuántos lo usarían ante las instituciones. El coste (unos 132 M€ anuales para las tres lenguas, según la estimación citada en prensa) lo asumiría el presupuesto español según el compromiso del Gobierno.",
+     "fuentes": [
+      {
+       "url": "https://www.iec.cat/wp-content/uploads/Valoracio_IEC_EULP2023.pdf",
+       "titulo": "Institut d'Estudis Catalans, «Informe EULP23 a Catalunya» (valoración de la Enquesta d'usos lingüístics de la població 2023)"
+      },
+      {
+       "url": "https://es.ara.cat/politica/son-principales-obstaculos-catalan-sea-oficial-europa_1_5855937.html",
+       "titulo": "Ara, 21-9-2026: ¿Cuáles son los principales obstáculos para que el catalán sea oficial en Europa?"
+      },
+      {
+       "url": "https://www.catalunyapress.es/articulo/politica-nacional/2026-09-02/6001307-espana-vuelve-intentarlo-pide-llevar-oficialidad-catalan-ue-ano-bloqueada",
+       "titulo": "Catalunya Press (con Europa Press), 2-9-2026: España pide volver a llevar la oficialidad al Consejo"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Daría a la lengua el mismo estatus jurídico que las demás oficiales en la UE. Los riesgos señalados por varios Estados son el precedente para otras lenguas regionales o minoritarias (según la prensa, los países bálticos lo relacionan con sus minorías rusohablantes) y la posible necesidad de reformar los Tratados; también un gasto recurrente en traducción e interpretación.",
+     "fuentes": [
+      {
+       "url": "https://es.ara.cat/politica/son-principales-obstaculos-catalan-sea-oficial-europa_1_5855937.html",
+       "titulo": "Ara, 21-9-2026: ¿Cuáles son los principales obstáculos para que el catalán sea oficial en Europa?"
+      },
+      {
+       "url": "https://www.catalunyapress.es/articulo/politica-nacional/2026-09-02/6001307-espana-vuelve-intentarlo-pide-llevar-oficialidad-catalan-ue-ano-bloqueada",
+       "titulo": "Catalunya Press (con Europa Press), 2-9-2026: España pide volver a llevar la oficialidad al Consejo"
+      },
+      {
+       "url": "https://www.catalunyapress.es/articulo/politica/2026-06-13/5918132-bruselas-mantiene-bloqueada-peticion-espanola-oficialidad-catalan-ue-ano",
+       "titulo": "Catalunya Press, 13-6-2026: la petición sigue bloqueada en el Consejo"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "junts-05",
+   "titulo": "Ley orgánica de delegación en la Generalitat de las competencias de inmigración",
+   "area": "modelo territorial",
+   "resumen": "Aprobar la proposición de ley orgánica, registrada de nuevo por Junts en 2026, que delega en la Generalitat competencias estatales de inmigración (permisos de estancia y residencia, contratación en origen, sanciones y expulsiones, centros de internamiento, documentación de extranjeros y, a través de los Mossos, la seguridad y el control de acceso a Schengen en puertos y aeropuertos), con financiación suficiente; el programa lo repite en las secciones de seguridad (p. 22) y de mundo local (p. 84).",
+   "cita": "Aprovar la llei de delegació de competències en immigració a la Generalitat, que hem tornat a registrar al Congrés (publicada al BOCG l’11 de setembre de 2026), després que PP, Vox i Podemos la tombessin el 23 de setembre de 2025 per 173 vots a favor i 177 en contra.",
+   "cita_traduccion": "Aprobar la ley de delegación de competencias en inmigración a la Generalitat, que hemos vuelto a registrar en el Congreso (publicada en el BOCG el 11 de septiembre de 2026), después de que PP, Vox y Podemos la tumbaran el 23 de septiembre de 2025 por 173 votos a favor y 177 en contra.",
+   "pagina": 48,
+   "beneficiarios": "Las 1.522.819 personas de nacionalidad extranjera residentes en Cataluña a 1-1-2025 (Idescat), cuyos permisos tramitaría la Generalitat, y las empresas que contratan en origen. El coste se cubriría con los medios que el Estado traspasara, que fijaría la Comisión Mixta de Transferencias y no están valorados públicamente.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 48) pide aprobar la proposición de ley que Junts volvió a registrar (BOCG de 11-9-2026) y enumera lo que quiere traspasado: los permisos de residencia y trabajo y sus renovaciones, los expedientes sancionadores y de expulsión, los CIE, la expedición del NIE, la TIE, el DNI y el pasaporte (estos dos últimos no figuran en la proposición) y el acceso a los sistemas de información, con «finançament suficient» (puntos 1.2 a 1.5). La proposición concreta las funciones y fija seis meses para el traspaso de medios y para el calendario de los Mossos en puertos y aeropuertos. Ni el programa ni la proposición cuantifican el coste ni los medios que se traspasarían.",
+     "fuentes": [
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=48",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 48"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-355-1.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 355-1 (11-9-2026): proposición de ley orgánica de delegación en Cataluña de competencias en inmigración (Grupo Junts per Catalunya)"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "Inmigración y extranjería son competencia exclusiva del Estado (art. 149.1.2.ª CE), y el TC solo admitió en la STC 31/2010 (FJ 83) competencias autonómicas de carácter asistencial y la ejecución de las autorizaciones de trabajo, coordinada con la competencia estatal de entrada y residencia. Ir más allá exige una ley orgánica de delegación (art. 150.2 CE), que necesita la mayoría absoluta del Congreso en una votación final sobre el conjunto (art. 81 CE) y solo cabe para facultades que por su naturaleza sean susceptibles de delegación; el control de fronteras exteriores de Schengen y las funciones policiales de extranjería son las de encaje más discutido. No hay sentencia sobre esa delegación.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2010-11409",
+       "titulo": "STC 31/2010, de 28 de junio (Estatuto de Cataluña), FJ 83 (BOE)"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-355-1.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 355-1 (11-9-2026): proposición de ley orgánica de delegación en Cataluña de competencias en inmigración (Grupo Junts per Catalunya)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "no_verificable",
+     "texto": "No hay una valoración pública del coste. La proposición de 2026, como la de 2025, remite la valoración de los medios a la Comisión Mixta de Transferencias y prevé ampliar progresivamente la plantilla de los Mossos d'Esquadra (26.800 efectivos hasta 2032), sin coste estimado, y el programa pide «finançament suficient» (p. 48) sin cuantificarlo. Solo esa ampliación de plantilla tiene una referencia pública (el Estado aporta 70.600 € anuales por cada mosso adicional sobre la plantilla de 2021, según el convenio de 2024); no la hay para el resto de funciones (permisos, sanciones, CIE, documentación).",
+     "fuentes": [
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-355-1.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 355-1 (11-9-2026): proposición de ley orgánica de delegación en Cataluña de competencias en inmigración (Grupo Junts per Catalunya)"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=48",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 48"
+      },
+      {
+       "url": "https://www.hacienda.gob.es/GabineteMinistro/Notas%20Prensa/2024/S.E.HACIENDA/30-07-24-NP-ACUERDO-MOSSOS.pdf",
+       "titulo": "Ministerio de Hacienda (30-7-2024): convenio de financiación de la ampliación de los Mossos d'Esquadra (70.600 € por efectivo adicional sobre los 18.544 de 2021)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "La evaluación del Gobierno canadiense de su programa de nominación provincial concluye que la mayoría de los inmigrantes seleccionados por las provincias se establecen económicamente pronto, con peores resultados en las provincias atlánticas; Picot, Crossman y Hou (2023) hallan que la permanencia a cinco años en la provincia varía entre el 39 % y el 94 %. Estas evaluaciones miden la selección de inmigrantes económicos; no hemos localizado evaluaciones del efecto de traspasar permisos de residencia, centros de internamiento o funciones policiales de extranjería.",
+     "fuentes": [
+      {
+       "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/reports-statistics/evaluations/provincial-nominee-program/summary.html",
+       "titulo": "IRCC (Canadá), Evaluación del Provincial Nominee Program, resumen"
+      },
+      {
+       "url": "https://www150.statcan.gc.ca/n1/pub/36-28-0001/2023011/article/00002-eng.htm",
+       "titulo": "Picot, Crossman y Hou (2023), The Provincial Nominee Program: Retention in province of landing, Statistics Canada"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "Desde 2009 la Generalitat tramita las autorizaciones iniciales de trabajo de los extranjeros que trabajan en Cataluña (Real Decreto 1463/2009). El 23-9-2025 el Pleno del Congreso rechazó, por 173 votos a favor y 177 en contra, tomar en consideración la proposición de ley orgánica de delegación del PSOE y Junts. Junts registró en solitario un texto con el mismo articulado (BOCG de 11-9-2026), que caducó con la disolución de las Cortes para las elecciones del 29-N (art. 207 del Reglamento del Congreso), sin llegar a debatirse.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/eli/es/rd/2010/02/26/206",
+       "titulo": "Real Decreto 206/2010 (recoge el traspaso a Cataluña de las autorizaciones iniciales de trabajo por el RD 1463/2009)"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-195-1.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 195-1 (14-3-2025): PLO de delegación en Cataluña de competencias en inmigración"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-195-2.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 195-2 (29-9-2025): rechazada la PLO de delegación en Cataluña"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-138.PDF",
+       "titulo": "Diario de Sesiones del Congreso, Pleno, núm. 138 (23-9-2025): votación de la toma en consideración (173 a favor, 177 en contra)"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-355-1.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 355-1 (11-9-2026): proposición de ley orgánica de delegación en Cataluña de competencias en inmigración (Grupo Junts per Catalunya)"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/D/BOCG-15-D-610.PDF#page=79",
+       "titulo": "BOCG, Congreso, serie D, núm. 610 (4-11-2026): relación de iniciativas caducadas, expediente 122/000299"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1982-5196",
+       "titulo": "Reglamento del Congreso de los Diputados (texto consolidado, BOE), art. 207"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "En Canadá las provincias y territorios nominan inmigrantes económicos mediante acuerdos con el Gobierno federal, que conserva la decisión final, con buenos resultados de establecimiento laboral y retención desigual entre provincias. El elemento clave difiere: allí las provincias seleccionan, mientras que la propuesta incluye residencia, internamiento y control de fronteras.",
+     "fuentes": [
+      {
+       "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/reports-statistics/evaluations/provincial-nominee-program/summary.html",
+       "titulo": "IRCC (Canadá), Evaluación del Provincial Nominee Program, resumen"
+      },
+      {
+       "url": "https://www150.statcan.gc.ca/n1/pub/36-28-0001/2023011/article/00002-eng.htm",
+       "titulo": "Picot, Crossman y Hou (2023), The Provincial Nominee Program: Retention in province of landing, Statistics Canada"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Afectaría a las 1.522.819 personas de nacionalidad extranjera residentes en Cataluña a 1-1-2025 y a las empresas que contratan en origen. Ni quién asume el coste ni su cuantía están determinados: dependerían de la valoración de medios en la Comisión Mixta.",
+     "fuentes": [
+      {
+       "url": "https://idescat.cat/poblacioestrangera/?b=1",
+       "titulo": "Idescat, población extranjera en Cataluña a 1-1-2025"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-195-1.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 195-1 (14-3-2025): PLO de delegación en Cataluña de competencias en inmigración"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Ventajas declaradas: decisiones ajustadas a la capacidad y necesidades de Cataluña y procedimientos más cercanos. Riesgos: coordinación con el Estado, que conserva la legislación y, según la STC 31/2010, la entrada y residencia; fragmentación de criterios dentro del espacio Schengen; y retención desigual de los inmigrantes seleccionados, como documenta Canadá.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2010-11409",
+       "titulo": "STC 31/2010, de 28 de junio (Estatuto de Cataluña), FJ 83 (BOE)"
+      },
+      {
+       "url": "https://www150.statcan.gc.ca/n1/pub/36-28-0001/2023011/article/00002-eng.htm",
+       "titulo": "Picot, Crossman y Hou (2023), The Provincial Nominee Program: Retention in province of landing, Statistics Canada"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "junts-06",
+   "titulo": "Exigir el conocimiento del catalán para el arraigo y la renovación de los permisos de residencia",
+   "area": "inmigración",
+   "resumen": "Exigir el conocimiento del catalán en los procesos de arraigo y de renovación de los permisos de residencia en Cataluña, y que ninguna regularización se haga sin vínculo con el catalán; el programa pide también «criterios de arraigo exigentes» que incluyan el catalán (punto 2.3).",
+   "cita": "Fer que els permisos i les renovacions funcionin, amb tràmits àgils i previsibles, i establir criteris d’arrelament exigents que incloguin el coneixement del català. [...] Exigir el coneixement del català en els processos d’arrelament i de renovació dels permisos, i que cap regularització no es faci d’esquena a la llengua del país.",
+   "cita_traduccion": "Hacer que los permisos y las renovaciones funcionen, con trámites ágiles y previsibles, y establecer criterios de arraigo exigentes que incluyan el conocimiento del catalán. [...] Exigir el conocimiento del catalán en los procesos de arraigo y de renovación de los permisos, y que ninguna regularización se haga de espaldas a la lengua del país.",
+   "pagina": 48,
+   "beneficiarios": "Afectaría a los extranjeros que pidan el arraigo o renueven su permiso en Cataluña (solo la regularización de 2026 recibió 257.602 solicitudes allí, según el Gobierno; el 49,5 % de los nacidos en el extranjero declaraba en 2023 no saber hablar catalán). El coste de aprender y acreditar el nivel recaería en los solicitantes y en la oferta pública de cursos, sin estimación pública.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 48) dice qué haría (exigir el catalán para el arraigo y la renovación de los permisos, y en cualquier regularización) y a quién afecta, pero no qué nivel se exigiría, con qué prueba, desde cuándo, si alcanzaría a quienes ya tienen permiso ni con qué norma: la ley de delegación que propone en el mismo capítulo no incluye ningún requisito lingüístico. Tampoco cuantifica el coste de los cursos y las pruebas.",
+     "fuentes": [
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=48",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 48"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-355-1.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 355-1 (11-9-2026): proposición de ley orgánica de delegación en Cataluña de competencias en inmigración (Grupo Junts per Catalunya)"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "Las condiciones del arraigo y de la renovación las fija el Estado (art. 149.1.2.ª CE) en la Ley Orgánica 4/2000 (art. 31, de carácter orgánico) y su Reglamento, que hoy solo «valora» para renovar un informe autonómico de esfuerzo de integración que certifica, «en su caso, el aprendizaje de las lenguas oficiales del lugar de residencia» (arts. 64, 71, 80 y 86 del RD 1155/2024); el informe del arraigo social (art. 127) no menciona la lengua. Convertirlo en requisito obliga a cambiar esas normas, por ley orgánica si se toca el art. 31. Su encaje constitucional no está resuelto: la STC 31/2010 (FJ 14) declaró que el deber de conocer el catalán no es exigible «con carácter generalizado» y lo situó en la enseñanza y en la relación de la Generalitat con sus funcionarios, y no hay sentencia sobre exigirlo a extranjeros para obtener un permiso estatal.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2000-544",
+       "titulo": "Ley Orgánica 4/2000, de 11 de enero, de extranjería (texto consolidado, BOE), arts. 2 ter, 31 y disposición final cuarta"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/rd/2024/11/19/1155",
+       "titulo": "Real Decreto 1155/2024, Reglamento de extranjería (texto consolidado, BOE), arts. 64, 71, 80, 86 y 127"
+      },
+      {
+       "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2010-11409",
+       "titulo": "STC 31/2010, de 28 de junio (Estatuto de Cataluña), FJ 14 b) (BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "no_verificable",
+     "texto": "La exigencia es regulatoria, pero aplicarla supone ofrecer cursos y acreditar el nivel de decenas de miles de personas al año: solo la regularización de 2026 recibió 257.602 solicitudes en Cataluña, con permisos de un año que deberán renovarse. No hemos localizado una estimación pública de ese coste y el programa no lo cuantifica ni dice quién lo asumiría.",
+     "fuentes": [
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2026/020726-balance-regularizacion-extraordinaria.aspx",
+       "titulo": "La Moncloa (2-7-2026): balance de la regularización extraordinaria (257.602 solicitudes en Cataluña)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-8284",
+       "titulo": "Real Decreto 316/2026, de 14 de abril (regularización extraordinaria), BOE"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=48",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 48"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Rendon (2007), con datos censales de 1991 y 1996, estima que saber leer y hablar catalán eleva entre 3 y 5 puntos la probabilidad de estar ocupado en Cataluña, pero no estudia el efecto de exigirlo a inmigrantes. La evaluación del contrato de integración francés (Emeriau, Hainmueller, Hangartner y Laitin, 2025), que condicionaba la renovación del permiso a asistir a cursos de lengua y civismo, halla un aumento del empleo a corto plazo que no se tradujo en mejoras duraderas de la integración, y recoge estudios comparados previos con conclusiones opuestas. No hemos localizado evaluaciones de exigir una lengua cooficial regional.",
+     "fuentes": [
+      {
+       "url": "https://ideas.repec.org/a/spr/jopoec/v20y2007i3p669-686.html",
+       "titulo": "Rendon (2007), The Catalan premium: language and employment in Catalonia, Journal of Population Economics 20(3)"
+      },
+      {
+       "url": "https://j-hai.github.io/assets/pdf/integrationcontracts.pdf",
+       "titulo": "Emeriau, Hainmueller, Hangartner y Laitin (2025), «Welcome to France.» Can mandatory integration contracts foster immigrant integration?, American Journal of Political Science (doi 10.1111/ajps.12955)"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "La Generalitat ya pide, para su informe de esfuerzo de integración, que emite tanto para el arraigo como para la renovación de la residencia temporal, acreditar el aprendizaje del catalán y del castellano (si ya se obtuvo antes un informe favorable, nivel A2 o 90 horas de formación en catalán o castellano), según sus criterios de instrucción (una instrucción de 2017 y, desde el 20-5-2025, un documento de criterios adaptado al Real Decreto 1155/2024); pero quien resuelve es la Oficina de Extranjería del Estado, el Reglamento no menciona la lengua en el informe del arraigo social (art. 127) y en la renovación solo lo «valora», y según técnicos citados por Ara (7-3-2025) el requisito del catalán no suele tenerse en cuenta. En marzo de 2025, al registrar con el PSOE la ley de delegación, fuentes de Junts dijeron que la usarían para exigir el catalán, que el texto no incluía; la ley fue rechazada en septiembre de 2025.",
+     "fuentes": [
+      {
+       "url": "https://tramits.gencat.cat/ca/tramits/tramits-temes/Informe-dintegracio-social-per-renovar-modificar-la-residencia-temporal",
+       "titulo": "Generalitat de Catalunya, Tràmits: Informe d'esforç d'integració (requisitos lingüísticos; actualizado el 25-9-2025)"
+      },
+      {
+       "url": "https://es.ara.cat/politica/nivel-catalan-exige-ahora-inmigrantes_1_5307677.html",
+       "titulo": "Ara (7-3-2025): qué nivel de catalán se exige ahora a los inmigrantes"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/rd/2024/11/19/1155",
+       "titulo": "Real Decreto 1155/2024, Reglamento de extranjería (texto consolidado, BOE), arts. 64, 71, 80, 86 y 127"
+      },
+      {
+       "url": "https://theobjective.com/espana/politica/2025-03-04/junts-catalan-permisos-inmigrantes/",
+       "titulo": "The Objective (4-3-2025): Junts quiere exigir el catalán para los permisos de residencia"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-195-2.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 195-2 (29-9-2025): rechazada la PLO de delegación en Cataluña"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "En Suiza, el permiso de establecimiento exige conocer la lengua nacional del lugar de residencia; en el cantón de Zúrich, alemán de nivel A2 oral y A1 escrito, acreditado ante su oficina de migración. No hemos localizado una evaluación publicada de sus efectos. Francia condicionó la renovación del permiso a seguir cursos de francés y civismo, con un efecto en el empleo a corto plazo que no perduró (Emeriau y otros, 2025).",
+     "fuentes": [
+      {
+       "url": "https://www.zh.ch/content/dam/zhweb/bilder-dokumente/organisation/sicherheitsdirektion/migrationsamt/Brosch%C3%BCre%20Sprachanforderungen.pdf",
+       "titulo": "Cantón de Zúrich, Oficina de Migración: requisitos lingüísticos de los permisos (Sprachanforderungen)"
+      },
+      {
+       "url": "https://j-hai.github.io/assets/pdf/integrationcontracts.pdf",
+       "titulo": "Emeriau, Hainmueller, Hangartner y Laitin (2025), «Welcome to France.» Can mandatory integration contracts foster immigrant integration?, American Journal of Political Science (doi 10.1111/ajps.12955)"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Afectaría a los extranjeros que pidan el arraigo o renueven su permiso en Cataluña: la regularización de 2026 recibió 257.602 solicitudes en Cataluña, y en la encuesta del Gobierno a los solicitantes el 40 % de los residentes en comunidades con lengua cooficial decía conocerla; en 2023, el 49,5 % de los residentes en Cataluña nacidos en el extranjero declaraba no saber hablar catalán. El programa presenta como beneficiarios la integración y la lengua, sin cuantificarlo, y el coste de aprender y acreditar el nivel recaería en los solicitantes y en la oferta pública de cursos, sin estimación.",
+     "fuentes": [
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2026/020726-balance-regularizacion-extraordinaria.aspx",
+       "titulo": "La Moncloa (2-7-2026): balance de la regularización extraordinaria (257.602 solicitudes en Cataluña)"
+      },
+      {
+       "url": "https://www.iec.cat/wp-content/uploads/Valoracio_IEC_EULP2023.pdf",
+       "titulo": "Institut d'Estudis Catalans: valoración de la Encuesta de usos lingüísticos de la población 2023 (Idescat y Generalitat)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Puede aumentar el aprendizaje del catalán, cuyo conocimiento se asocia a más empleo en Cataluña (Rendon, 2007), y la evaluación francesa no halla que los requisitos ligados a cursos reduzcan el esfuerzo de integración. El riesgo es que quien no acredite el nivel no pueda renovar y vuelva a la irregularidad, o se traslade a otra comunidad: los permisos de la regularización de 2026 duran un año y permiten trabajar en cualquier parte de España. El efecto dependerá del nivel exigido y de la oferta de cursos, que el programa no concreta.",
+     "fuentes": [
+      {
+       "url": "https://ideas.repec.org/a/spr/jopoec/v20y2007i3p669-686.html",
+       "titulo": "Rendon (2007), The Catalan premium: language and employment in Catalonia, Journal of Population Economics 20(3)"
+      },
+      {
+       "url": "https://j-hai.github.io/assets/pdf/integrationcontracts.pdf",
+       "titulo": "Emeriau, Hainmueller, Hangartner y Laitin (2025), «Welcome to France.» Can mandatory integration contracts foster immigrant integration?, American Journal of Political Science (doi 10.1111/ajps.12955)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-8284",
+       "titulo": "Real Decreto 316/2026, de 14 de abril (regularización extraordinaria), BOE"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "junts-07",
+   "titulo": "Mossos d'Esquadra en la seguridad y el control de acceso a Schengen de puertos y aeropuertos, y 26.800 agentes en 2032",
+   "area": "modelo territorial",
+   "resumen": "Delegar en los Mossos d'Esquadra la seguridad de los puertos y aeropuertos de Cataluña y el control de acceso al espacio Schengen, que hoy ejercen la Guardia Civil y la Policía Nacional, y ampliar su plantilla hasta 26.800 agentes en 2032; la sección de seguridad (pp. 21-23) añade la policía judicial, la investigación criminal y el control fronterizo en puertos, aeropuertos y espacios marítimos.",
+   "cita": "Delegar als Mossos d’Esquadra la seguretat i el control d’accés a l’espai Schengen als ports i aeroports de Catalunya, i arribar fins a 26.800 agents el 2032.",
+   "cita_traduccion": "Delegar en los Mossos d’Esquadra la seguridad y el control de acceso al espacio Schengen en los puertos y aeropuertos de Cataluña, y llegar hasta 26.800 agentes en 2032.",
+   "pagina": 49,
+   "beneficiarios": "Los usuarios de los puertos y aeropuertos catalanes (57,5 millones de pasajeros en El Prat en 2025, según Aena) y la población de Cataluña. El coste de los nuevos agentes lo asumirían la Generalitat y el Estado, que aporta 70.600 € al año por cada mosso adicional sobre la plantilla de 2021 hasta 2030; el de las funciones traspasadas no está valorado.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 49) dice qué haría (delegar en los Mossos la seguridad y el control de acceso a Schengen en puertos y aeropuertos) y fija una plantilla y un plazo (26.800 agentes en 2032), pero no el coste ni cómo se financiaría, ni el calendario del traspaso, que la ley de delegación que propone deja a la Junta de Seguridad en un plazo de seis meses. Tampoco precisa si el control fronterizo sería exclusivo o compartido: esa ley prevé que los Mossos actúen en los puestos fronterizos «en colaboración con el resto de Fuerzas y Cuerpos de Seguridad».",
+     "fuentes": [
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=49",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 49"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-355-1.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 355-1 (11-9-2026): proposición de ley orgánica de delegación en Cataluña de competencias en inmigración (Grupo Junts per Catalunya)"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "La custodia de puertos y aeropuertos corresponde hoy a la Guardia Civil y el control de entrada y salida del territorio a la Policía Nacional (art. 12 de la Ley Orgánica 2/1986), mientras que el Estatuto atribuye a los Mossos la seguridad ciudadana y el orden público en toda Cataluña (art. 164.5); la Ertzaintza asumió en 2025 la seguridad de los puertos vascos por un acuerdo de la Junta de Seguridad. El control fronterizo requiere una ley orgánica (delegación del art. 150.2 CE o reforma de la Ley Orgánica 2/1986) y es la parte de encaje más discutido, porque la extranjería es competencia exclusiva del Estado (art. 149.1.2.ª CE). El Derecho de la UE no lo impide: el Código de fronteras Schengen deja a cada Estado designar por su Derecho interno los servicios que hacen el control (arts. 2.14 y 16).",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1986-6859",
+       "titulo": "Ley Orgánica 2/1986, de Fuerzas y Cuerpos de Seguridad (texto consolidado, BOE), art. 12"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087",
+       "titulo": "Estatuto de Autonomía de Cataluña (texto consolidado, BOE), art. 164"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.euskadi.eus/gobierno-vasco/-/noticia/2025/la-ertzaintza-asume-hoy-todas-funciones-que-le-confiere-estatuto-gernika-puertos-euskadi/",
+       "titulo": "Gobierno Vasco (3-2-2025): la Ertzaintza asume las funciones que le confiere el Estatuto en los puertos de Euskadi"
+      },
+      {
+       "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:32016R0399",
+       "titulo": "Reglamento (UE) 2016/399, Código de fronteras Schengen (EUR-Lex), arts. 2.14 y 16"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El coste de la plantilla es estimable: el convenio de 2024 fija en 70.600 € anuales la aportación del Estado por cada mosso adicional sobre los 18.544 de 2021, y el Estado y la Generalitat ya acordaron financiar la llegada a 25.000 agentes en 2030. Con esa referencia, los 1.800 agentes que el objetivo añade a los 25.000 supondrían unos 127 M€ al año, y los 8.256 sobre la plantilla de 2021, unos 583 M€ (cálculos propios). El programa exige que cada traspaso llegue con «el personal, els mitjans i els diners corresponents» (p. 21), pero no cuantifica el coste ni el de las funciones de puertos y aeropuertos.",
+     "fuentes": [
+      {
+       "url": "https://www.hacienda.gob.es/GabineteMinistro/Notas%20Prensa/2024/S.E.HACIENDA/30-07-24-NP-ACUERDO-MOSSOS.pdf",
+       "titulo": "Ministerio de Hacienda (30-7-2024): convenio de financiación de la ampliación de los Mossos d'Esquadra (70.600 € por efectivo adicional sobre los 18.544 de 2021)"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/politica-territorial-memoria-democratica/paginas/2026/200526-torres-comision-bilateral-catalunya.aspx",
+       "titulo": "La Moncloa (20-5-2026): la Comisión Mixta de Asuntos Económicos y Fiscales garantiza la financiación para llegar a 25.000 Mossos en 2030"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=21",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 21"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Sobre el tamaño de las plantillas, Chalfin y McCrary (2018), con datos de ciudades de Estados Unidos entre 1960 y 2010, hallan que más policías reducen la delincuencia, con estimaciones más precisas para los delitos más costosos, y concluyen que esas ciudades tienen menos policías de los que compensaría. No hemos localizado evaluaciones del efecto de traspasar la seguridad o el control fronterizo de puertos y aeropuertos de una policía estatal a una regional.",
+     "fuentes": [
+      {
+       "url": "https://ideas.repec.org/a/tpr/restat/v100y2018i1p167-186.html",
+       "titulo": "Chalfin y McCrary (2018), Are U.S. Cities Underpoliced? Theory and Evidence, Review of Economics and Statistics 100(1)"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "La Ertzaintza asumió el 3-2-2025 las funciones de seguridad ciudadana y policía judicial en los puertos vascos tras un acuerdo de la Junta de Seguridad de julio de 2024. En Cataluña, la Junta de Seguretat que debía firmar el traspaso de puertos y aeropuertos se suspendió en marzo de 2024, el Govern lo anunció después para septiembre de 2025 y en abril de 2026 seguía sin convocarse, con los Mossos presentes en los aeropuertos solo hasta la facturación, según NacióDigital. La ley de delegación que incluía el control de acceso a Schengen fue rechazada en 2025 y su nueva versión caducó en 2026; la plantilla tiene un objetivo acordado y financiado de 25.000 agentes en 2030.",
+     "fuentes": [
+      {
+       "url": "https://www.euskadi.eus/gobierno-vasco/-/noticia/2025/la-ertzaintza-asume-hoy-todas-funciones-que-le-confiere-estatuto-gernika-puertos-euskadi/",
+       "titulo": "Gobierno Vasco (3-2-2025): la Ertzaintza asume las funciones que le confiere el Estatuto en los puertos de Euskadi"
+      },
+      {
+       "url": "https://naciodigital.cat/politica/el-desplegament-dels-mossos-a-ports-i-aeroports-el-mes-calent-es-a-laigera.html",
+       "titulo": "NacióDigital (5-4-2026): el despliegue de los Mossos en puertos y aeropuertos, pendiente"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-195-2.PDF",
+       "titulo": "BOCG Congreso, serie B, núm. 195-2 (29-9-2025): rechazada la PLO de delegación en Cataluña"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/D/BOCG-15-D-610.PDF#page=79",
+       "titulo": "BOCG, Congreso, serie D, núm. 610 (4-11-2026): relación de iniciativas caducadas, expediente 122/000299"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/politica-territorial-memoria-democratica/paginas/2026/200526-torres-comision-bilateral-catalunya.aspx",
+       "titulo": "La Moncloa (20-5-2026): la Comisión Mixta de Asuntos Económicos y Fiscales garantiza la financiación para llegar a 25.000 Mossos en 2030"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "En Alemania la ley permite que un estado federado asuma el control fronterizo con sus propios agentes de acuerdo con el Gobierno federal (§ 2 de la ley de la Policía Federal): según una crónica de 2011, Baviera lo mantenía en sus aeropuertos salvo Múnich y Bremen lo devolvió en 2012 a la Policía Federal para concentrarse en sus tareas principales. En Suiza, la policía cantonal de Zúrich hace el control de fronteras de su aeropuerto. No hemos localizado evaluaciones publicadas de sus resultados.",
+     "fuentes": [
+      {
+       "url": "https://www.gesetze-im-internet.de/bpolg/__2.html",
+       "titulo": "Alemania, Ley de la Policía Federal (BPolG), § 2 Grenzschutz"
+      },
+      {
+       "url": "https://www.migrationsrecht.net/nachrichten-auslaenderrecht-politik-gesetzgebung/bundesland-bremen-grenzkontrollen-im-hafen-durch-die-bundespolizei-ab-2012.html",
+       "titulo": "migrationsrecht.net (27-12-2011): Bremen traspasa a la Policía Federal el control fronterizo de sus puertos (Baviera conserva sus aeropuertos salvo Múnich)"
+      },
+      {
+       "url": "https://www.zh.ch/de/sicherheitsdirektion/kantonspolizei-zuerich/struktur/flughafenpolizei.html",
+       "titulo": "Kantonspolizei Zürich: Flughafenpolizei (control de fronteras del aeropuerto de Zúrich)"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Afectaría a los usuarios de los puertos y aeropuertos catalanes (57,5 millones de pasajeros en El Prat en 2025, 43,3 millones en vuelos internacionales, según Aena) y a la población de Cataluña. El coste de los nuevos agentes lo asumirían la Generalitat y el Estado, que aporta 70.600 € al año por cada mosso adicional sobre la plantilla de 2021 hasta 2030; el de las funciones que se traspasarían no está valorado.",
+     "fuentes": [
+      {
+       "url": "https://www.aena.es/es/prensa/el-aeropuerto-josep-tarradellas-barcelona-el-prat-cierra-2025-con-cifras-de---trafico-record.html",
+       "titulo": "Aena: el aeropuerto Josep Tarradellas Barcelona-El Prat cierra 2025 con cifras de tráfico récord"
+      },
+      {
+       "url": "https://www.hacienda.gob.es/GabineteMinistro/Notas%20Prensa/2024/S.E.HACIENDA/30-07-24-NP-ACUERDO-MOSSOS.pdf",
+       "titulo": "Ministerio de Hacienda (30-7-2024): convenio de financiación de la ampliación de los Mossos d'Esquadra (70.600 € por efectivo adicional sobre los 18.544 de 2021)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Un solo cuerpo para la seguridad ciudadana en todo el territorio, incluidos puertos y aeropuertos, puede simplificar la cadena de mando en Cataluña. Los riesgos son la coordinación entre tres cuerpos en puestos de la frontera exterior de Schengen, un coste recurrente de plantilla (unos 127 M€ anuales por los 1.800 agentes que superan el objetivo de 2030 con la referencia de 70.600 €, cálculo propio) y la capacidad de reclutamiento: el Govern ha ido aplazando el traspaso desde finales de 2024 y en abril de 2026 su argumento oficial seguía siendo que faltaban agentes, y Bremen devolvió el control portuario a la Policía Federal para concentrarse en sus tareas principales.",
+     "fuentes": [
+      {
+       "url": "https://naciodigital.cat/politica/el-desplegament-dels-mossos-a-ports-i-aeroports-el-mes-calent-es-a-laigera.html",
+       "titulo": "NacióDigital (5-4-2026): el despliegue de los Mossos en puertos y aeropuertos, pendiente"
+      },
+      {
+       "url": "https://www.hacienda.gob.es/GabineteMinistro/Notas%20Prensa/2024/S.E.HACIENDA/30-07-24-NP-ACUERDO-MOSSOS.pdf",
+       "titulo": "Ministerio de Hacienda (30-7-2024): convenio de financiación de la ampliación de los Mossos d'Esquadra (70.600 € por efectivo adicional sobre los 18.544 de 2021)"
+      },
+      {
+       "url": "https://www.migrationsrecht.net/nachrichten-auslaenderrecht-politik-gesetzgebung/bundesland-bremen-grenzkontrollen-im-hafen-durch-die-bundespolizei-ab-2012.html",
+       "titulo": "migrationsrecht.net (27-12-2011): Bremen traspasa a la Policía Federal el control fronterizo de sus puertos (Baviera conserva sus aeropuertos salvo Múnich)"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "junts-08",
+   "titulo": "Pensión íntegra, sin coeficientes reductores, para quien se jubile anticipadamente con 40 o más años cotizados, con carácter retroactivo",
+   "area": "pensiones",
+   "resumen": "Establecer por ley que quienes se jubilen anticipadamente con 40 o más años cotizados cobren la pensión íntegra, sin los coeficientes reductores, también los ya jubilados (carácter retroactivo); el programa lo repite en la sección de economía (p. 70) y en su relación de iniciativas (p. 88).",
+   "cita": "Garantir una política de pensions que tingui especialment en compte les persones amb carreres laborals llargues i cotitzacions suficients. Establir per llei que les persones jubilades amb 40 anys o més cotitzats puguin percebre íntegrament la pensió que els correspongui sense penalitzacions per jubilació anticipada, amb caràcter retroactiu.",
+   "cita_traduccion": "Garantizar una política de pensiones que tenga especialmente en cuenta a las personas con carreras laborales largas y cotizaciones suficientes. Establecer por ley que las personas jubiladas con 40 años o más cotizados puedan percibir íntegramente la pensión que les corresponda sin penalizaciones por jubilación anticipada, con carácter retroactivo.",
+   "pagina": 58,
+   "beneficiarios": "Jubilados anticipados y futuros jubilados con 40 o más años cotizados, sin cifra oficial de cuántos son; el coste, sin estimación oficial publicada, lo asumiría la Seguridad Social, financiada con cotizaciones e impuestos.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 58) fija el umbral (40 años o más cotizados), el instrumento (una ley) y el alcance (pensión íntegra, con carácter retroactivo, de modo que alcanzaría también a los ya jubilados), y lo repite en las pp. 70 y 88. No indica si afectaría a la jubilación anticipada voluntaria e involuntaria, desde qué edad, si la retroactividad supondría abonar lo dejado de cobrar o solo recalcular las pensiones futuras, con qué calendario ni con qué coste o financiación.",
+     "fuentes": [
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=58",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 58"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "Los coeficientes reductores están en los arts. 207 (involuntaria, hasta 4 años antes y reducción de hasta el 30 %) y 208 (voluntaria, hasta 2 años antes y hasta el 21 %) de la Ley General de la Seguridad Social, en la redacción de la Ley 21/2021, con tramos según la carrera (el más favorable, desde 44 años y 6 meses). Su supresión requiere una ley ordinaria estatal (art. 149.1.17.ª CE). La Constitución solo prohíbe la retroactividad de las disposiciones sancionadoras no favorables o restrictivas de derechos individuales (art. 9.3), de modo que aplicarla a los ya jubilados no tiene ese obstáculo.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+       "titulo": "Ley General de la Seguridad Social, arts. 207 y 208 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "no_verificable",
+     "texto": "No se ha localizado una estimación oficial publicada del coste de suprimir los coeficientes reductores con 40 o más años cotizados, ni para los ya jubilados ni para las jubilaciones futuras. El programa no cuantifica el coste ni explica cómo se pagaría.",
+     "fuentes": [
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=58",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 58"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Dolls y Krolage (2023) hallan que la reforma alemana de 2014, que permitió a quienes tenían carreras largas jubilarse hasta dos años antes sin reducción, adelantó la edad media de jubilación de 0,3 a 0,4 años por cada año de rebaja, sin que los beneficiarios tuvieran peor salud que el grupo de control, y con un coste fiscal en la parte alta de las estimaciones previas. La AIReF observa en España que las jubilaciones anticipadas responden a los incentivos económicos (pico en diciembre de 2022, cuando la revalorización del 8,5 % compensaba la reducción).",
+     "fuentes": [
+      {
+       "url": "https://econpapers.repec.org/RePEc:iza:izadps:dp16116",
+       "titulo": "Dolls y Krolage (2023), 'Earned, not given'? The effect of lowering the full retirement age on retirement decisions, Journal of Public Economics 223"
+      },
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2025/03/Opini%C3%B3n_sobre_la_sostenibilidad_de_las_AAPP_largo_plazo/Opinion.pdf",
+       "titulo": "AIReF (2025), Opinión sobre la sostenibilidad de las AA. PP. a largo plazo"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "La Ley 21/2021 recalculó los coeficientes y creó un complemento para jubilados anticipados entre 2002 y 2021 con 44 años y 6 meses cotizados (o 40 con pensión inferior a 900 €): en mayo de 2022 lo cobraban menos de 100.000 personas, casi el 90 % menos de 50 € al mes. Una proposición de ley de Podemos para suprimir los coeficientes con 40 años se admitió a trámite en mayo de 2024; en noviembre de 2025 el Congreso aprobó una moción no vinculante en ese sentido y en junio de 2026 rechazó la enmienda que lo llevaba a ley, con los votos en contra de PP y PSOE. Junts votó a favor de esa enmienda, según la prensa.",
+     "fuentes": [
+      {
+       "url": "https://www.uv.es/777Fhc5ID4jPQ8V/docs/pensiones-jubilacion/Jub40sinpen.pdf",
+       "titulo": "Devesa et al. (2024), Comentarios sobre la Proposición de Ley de jubilación sin penalización con 40 o más años cotizados, Universitat de València"
+      },
+      {
+       "url": "https://www.que.es/2026/06/12/pp-psoe-tumban-reforma-jubilacion-anticipada/",
+       "titulo": "Qué! (12-6-2026): el Congreso rechaza eliminar los coeficientes reductores con más de 40 años cotizados"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Alemania permite jubilarse sin reducción con 45 años cotizados desde una edad mínima (64 años y 2 meses en 2024, 65 en 2028), Portugal con 48 años y Lituania con unos 41 años; el caso alemán está evaluado y logró adelantar la jubilación de ese grupo. El umbral de la propuesta (40 años y sin edad mínima explícita) es inferior a esos diseños.",
+     "fuentes": [
+      {
+       "url": "https://www.uv.es/777Fhc5ID4jPQ8V/docs/pensiones-jubilacion/Jub40sinpen.pdf",
+       "titulo": "Devesa et al. (2024), Comentarios sobre la Proposición de Ley de jubilación sin penalización con 40 o más años cotizados, Universitat de València"
+      },
+      {
+       "url": "https://econpapers.repec.org/RePEc:iza:izadps:dp16116",
+       "titulo": "Dolls y Krolage (2023), 'Earned, not given'? The effect of lowering the full retirement age on retirement decisions, Journal of Public Economics 223"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a quienes se jubilen anticipadamente con 40 o más años cotizados y, si se aplica a los ya jubilados, a quienes lo hicieron con coeficientes reductores; el coste lo asumiría la Seguridad Social y, por tanto, cotizantes y contribuyentes. No se ha localizado una cifra oficial de beneficiarios ni del coste.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+       "titulo": "Ley General de la Seguridad Social, arts. 207 y 208 (coeficientes reductores de la jubilación anticipada), BOE"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=58",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 58"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "desfavorable",
+     "texto": "La AIReF proyecta que el gasto en pensiones pase del 12,9-13,0 % del PIB en 2023 al 16,1 % en 2050 con la normativa vigente y atribuye parte de la subida de la edad efectiva de jubilación (de 64,7 a 65,2 años) al descenso de las jubilaciones anticipadas. Suprimir la reducción añadiría un gasto recurrente, del que no se ha localizado una estimación oficial publicada, e incentivaría jubilarse antes, como ocurrió en Alemania, en sentido contrario a esas necesidades; a cambio, corregiría el trato de las carreras largas, que Devesa et al. (2024) consideran justificado aunque proponen otra vía (premiar los meses cotizados de más y mantener una reducción cercana al 0,5 % mensual).",
+     "fuentes": [
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2025/03/Opini%C3%B3n_sobre_la_sostenibilidad_de_las_AAPP_largo_plazo/Opinion.pdf",
+       "titulo": "AIReF (2025), Opinión sobre la sostenibilidad de las AA. PP. a largo plazo"
+      },
+      {
+       "url": "https://econpapers.repec.org/RePEc:iza:izadps:dp16116",
+       "titulo": "Dolls y Krolage (2023), 'Earned, not given'? The effect of lowering the full retirement age on retirement decisions, Journal of Public Economics 223"
+      },
+      {
+       "url": "https://www.uv.es/777Fhc5ID4jPQ8V/docs/pensiones-jubilacion/Jub40sinpen.pdf",
+       "titulo": "Devesa et al. (2024), Comentarios sobre la Proposición de Ley de jubilación sin penalización con 40 o más años cotizados, Universitat de València"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "junts-09",
+   "titulo": "Concierto económico catalán fuera del régimen común, con la Agencia Tributaria de Cataluña recaudando todos los impuestos",
+   "area": "modelo territorial",
+   "resumen": "Aprobar un concierto económico para Cataluña con una disposición adicional específica en la LOFCA y una ley del Concierto Económico Catalán que la saque del régimen común, y atribuir a la Agencia Tributaria de Cataluña la exacción, gestión, recaudación, liquidación e inspección de los tributos generados o soportados en Cataluña, con plena capacidad normativa en el marco estatal y europeo. El programa lo presenta también como vía para financiar políticas para las personas mayores (p. 56).",
+   "cita": "Concert econòmic català: modificar la LOFCA amb una disposició addicional específica per a Catalunya i aprovar una llei del Concert Econòmic Català que ens situï fora del règim comú. [...] Desplegar el concert econòmic amb una llei específica fora del règim comú i dotar l’ATC dels recursos per assumir totes les funcions tributàries.",
+   "cita_traduccion": "Concierto económico catalán: modificar la LOFCA con una disposición adicional específica para Cataluña y aprobar una ley del Concierto Económico Catalán que nos sitúe fuera del régimen común. [...] Desplegar el concierto económico con una ley específica fuera del régimen común y dotar a la ATC de los recursos para asumir todas las funciones tributarias.",
+   "pagina": 68,
+   "beneficiarios": "Los 8,24 millones de residentes en Cataluña (Idescat, 1-7-2026), a través de una Generalitat con más recursos; la cuantía depende del pago al Estado, que el programa no define. Como referencia, Fedea estima para el acuerdo PSC-ERC de 2024, de diseño parecido, un trasvase de 6.600 a 13.200 M€ anuales desde la caja común del Estado, que según el autor tendría que cubrirse con menos gasto estatal (por ejemplo, pensiones o defensa) o más impuestos para el resto.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 68) define el instrumento, una disposición adicional específica para Cataluña en la LOFCA y una «llei del Concert Econòmic Català» que la sitúe fuera del régimen común, y el alcance: la Agencia Tributaria de Cataluña asumiría «l’exacció, gestió, recaptació, liquidació i inspecció» de los tributos generados o soportados en Cataluña, con plena capacidad normativa «en el marc estatal i europeu». No cuantifica ni dice cómo se calcularía el pago al Estado por los servicios que siga prestando ni la aportación a la solidaridad con otras comunidades, y no fija plazo; la gestión de la Seguridad Social la reclama por separado (p. 68).",
+     "fuentes": [
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=68",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 68"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=67",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 67"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=56",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 56"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "desfavorable",
+     "texto": "La Constitución «ampara y respeta los derechos históricos de los territorios forales» (disposición adicional primera), base del Concierto vasco (Ley 12/2002) y del Convenio navarro, y el Tribunal Constitucional ha declarado que esos derechos «no son por tanto extensibles a otras comunidades autónomas» y que extender esa disposición a otros territorios «es constitucionalmente inviable» sea cual sea el instrumento, estatuto o ley (STC 158/2019, FJ 4). El programa no propone reformar la Constitución: solo una disposición adicional en la LOFCA, que es ley orgánica (mayoría absoluta del Congreso, arts. 81 y 157.3), y una ley del Concierto, que no salvan esa doctrina. Con ella, y con la Hacienda general como competencia exclusiva del Estado (art. 149.1.14.ª) y la prohibición de privilegios económicos entre Estatutos (art. 138.2), un concierto para Cataluña exigiría reformar la Constitución (tres quintos de cada Cámara, art. 167); hoy solo cabe la parte de recaudación, con la Generalitat como delegada o colaboradora del Estado (art. 156.2).",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2020-404",
+       "titulo": "STC 158/2019, de 12 de diciembre, FJ 4 (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/l/2002/05/23/12",
+       "titulo": "Ley 12/2002, Concierto Económico con el País Vasco (BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El efecto puede estimarse de forma orientativa: para el acuerdo PSC-ERC de 2024, que considera «muy similar al foral», De la Fuente (Fedea) calcula un trasvase de 6.600 a 13.200 M€ anuales desde la caja común a la Generalitat, entre un 25 % y un 50 % más de financiación, y la Generalitat cifra su déficit fiscal en unos 22.000 M€ (casi el 10 % del PIB) con el método de flujo monetario, que el mismo autor considera sesgado al alza. El programa no cuantifica el pago al Estado ni explica cómo cubriría el Estado la menor aportación catalana. Como lo plantea por ley orgánica y no por reforma constitucional, no exige ninguna votación con coste propio.",
+     "fuentes": [
+      {
+       "url": "https://documentos.fedea.net/pubs/ap/2024/ap2024-21.pdf",
+       "titulo": "De la Fuente, «Las implicaciones financieras de un concierto catalán», Fedea Apuntes 2024/21 (agosto de 2024)"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=68",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 68"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "La evidencia localizada procede sobre todo de Ángel de la Fuente (Fedea). Con datos de 2022, Cataluña tenía una financiación por habitante ajustado de 101 (media del régimen común = 100), y un concierto la situaría claramente por encima de cualquier otra comunidad no foral. El autor sostiene que fragmentar la gestión tributaria perdería economías de escala, aumentaría los costes de gestión y de cumplimiento y reduciría la eficacia contra el fraude, y que en el sistema foral algunas variables del cálculo del cupo están mal definidas o medidas, con un sesgo generalmente a la baja. La medida conseguiría más recursos para Cataluña; la discusión es su efecto sobre el resto.",
+     "fuentes": [
+      {
+       "url": "https://documentos.fedea.net/pubs/ap/2024/ap2024-21.pdf",
+       "titulo": "De la Fuente, «Las implicaciones financieras de un concierto catalán», Fedea Apuntes 2024/21 (agosto de 2024)"
+      },
+      {
+       "url": "https://documentos.fedea.net/pubs/ap/2024/ap2024-23.pdf",
+       "titulo": "De la Fuente, «Algunas reflexiones al hilo del debate sobre el concierto catalán», Fedea Apuntes 2024/23 (septiembre de 2024)"
+      },
+      {
+       "url": "https://ideas.repec.org/a/hpe/journl/y2022v242i3p53-90.html",
+       "titulo": "De la Fuente (2022), Sobre el Sistema de Financiación Foral vasco y navarro, Hacienda Pública Española 242(3)"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "El régimen existe en el País Vasco (Ley 12/2002) y Navarra, amparado por los derechos históricos. En septiembre de 2012 el Gobierno rechazó el «pacto fiscal» que pidió el president Mas por no ser «compatible amb la Constitució». En 2024 el acuerdo PSC-ERC previó un sistema singular en el que la Generalitat recaudaría todos los impuestos estatales y pagaría un cupo y una cuota de solidaridad; no se ha aplicado. Según NacióDigital, en la legislatura anterior Junts llevó un modelo basado en el concierto vasco a la mesa de diálogo con el PSOE, sin resultado.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/eli/es/l/2002/05/23/12",
+       "titulo": "Ley 12/2002, Concierto Económico con el País Vasco (BOE)"
+      },
+      {
+       "url": "https://www.3cat.cat/3catinfo/rajoy-nega-el-pacte-fiscal-a-mas-perque-no-es-compatible-amb-la-constitucio/noticia-amp/1896872/",
+       "titulo": "3Cat, 20-9-2012: Rajoy rechaza el pacto fiscal de Mas por no ser compatible con la Constitución"
+      },
+      {
+       "url": "https://documentos.fedea.net/pubs/ap/2024/ap2024-21.pdf",
+       "titulo": "De la Fuente, «Las implicaciones financieras de un concierto catalán», Fedea Apuntes 2024/21 (agosto de 2024)"
+      },
+      {
+       "url": "https://naciodigital.cat/politica/i-si-junts-te-la-clau-a-madrid-despres-del-29-n.html",
+       "titulo": "NacióDigital, 28-10-2026: qué pediría Junts si vuelve a ser decisiva (la convocatoria hizo decaer los proyectos en marcha)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "En Alemania los Länder recaudan el grueso de los impuestos que comparten con la Federación, pero lo hacen generalmente como agentes del Gobierno central, con una legislación federal uniforme y un reparto de ingresos que no se justifica por el coste de los servicios que presta una parte a la otra, según De la Fuente, que señala que los propios hacendistas alemanes consideran ineficiente el sistema. Es una aplicación comparable solo de la parte de recaudación; no hemos localizado un caso fuera de España en el que una región pague al Estado una cuota negociada bilateralmente, que es el elemento que define la propuesta.",
+     "fuentes": [
+      {
+       "url": "https://documentos.fedea.net/pubs/ap/2024/ap2024-23.pdf",
+       "titulo": "De la Fuente, «Algunas reflexiones al hilo del debate sobre el concierto catalán», Fedea Apuntes 2024/23 (septiembre de 2024)"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a los 8,24 millones de residentes en Cataluña a través de una Generalitat con más recursos. El coste lo asumirían el Estado y, a través de él, el resto de contribuyentes y comunidades; la única cuantía disponible (6.600 a 13.200 M€ anuales) es una estimación orientativa de Fedea para otro acuerdo de diseño parecido, porque el programa no define el pago al Estado.",
+     "fuentes": [
+      {
+       "url": "https://www.idescat.cat/indicadors/?id=basics&n=10328&lang=es",
+       "titulo": "Idescat, población de Cataluña a 1-7-2026 (provisional)"
+      },
+      {
+       "url": "https://documentos.fedea.net/pubs/ap/2024/ap2024-21.pdf",
+       "titulo": "De la Fuente, «Las implicaciones financieras de un concierto catalán», Fedea Apuntes 2024/21 (agosto de 2024)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Ventaja: más autonomía y corresponsabilidad fiscal de la Generalitat, que De la Fuente considera parte esencial del autogobierno cuando se refiere a la capacidad de subir o bajar impuestos. Riesgos señalados por el mismo autor: más costes de gestión y menos eficacia contra el fraude al trocear la Agencia Tributaria, más dificultad para calcular la nivelación entre comunidades, menos transparencia y una aportación a la solidaridad que podría reducirse en sucesivas negociaciones.",
+     "fuentes": [
+      {
+       "url": "https://documentos.fedea.net/pubs/ap/2024/ap2024-21.pdf",
+       "titulo": "De la Fuente, «Las implicaciones financieras de un concierto catalán», Fedea Apuntes 2024/21 (agosto de 2024)"
+      },
+      {
+       "url": "https://documentos.fedea.net/pubs/ap/2024/ap2024-23.pdf",
+       "titulo": "De la Fuente, «Algunas reflexiones al hilo del debate sobre el concierto catalán», Fedea Apuntes 2024/23 (septiembre de 2024)"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "junts-10",
+   "titulo": "Deflactar el IRPF cada año, rebajar los primeros tramos y subir los mínimos personales y familiares",
+   "area": "fiscalidad",
+   "resumen": "Deflactar el IRPF, rebajar los primeros tramos de la escala y aumentar los mínimos personales y familiares, y actualizar cada año la tarifa y los mínimos según la inflación con un mecanismo automático fijado por ley (pp. 57 y 68).",
+   "cita": "Deflactar l’IRPF, rebaixar els primers trams, augmentar els mínims personals i familiars i actualitzarlos anualment segons la inflació.",
+   "cita_traduccion": "Deflactar el IRPF, rebajar los primeros tramos, aumentar los mínimos personales y familiares y actualizarlos anualmente según la inflación.",
+   "pagina": 68,
+   "beneficiarios": "Los contribuyentes del IRPF de régimen común (23,99 millones de declaraciones en 2023), con más peso de la deflactación en las rentas medias y medias-altas, sobre las que recae sobre todo la progresividad en frío según el Banco de España; no los residentes en el País Vasco y Navarra, que tributan por el IRPF foral. El coste lo asumirían el Estado y las comunidades, que comparten el impuesto: no deflactar la tarifa y los mínimos aportó en 2025 2.294 M€ (0,14 % del PIB; 1.137 M€ al Estado y 1.157 M€ a las comunidades), según el Gobierno; la rebaja de los primeros tramos y la subida de los mínimos no están cuantificadas.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 68) concreta cuatro elementos: deflactar el IRPF, rebajar «els primers trams», aumentar los mínimos personales y familiares y actualizarlos cada año según la inflación; en la p. 57 añade que la actualización alcanzaría a «les tarifes i els mínims» y se fijaría por ley como mecanismo automático. No dice cuánto ni qué tramos bajarían, cuánto subirían los mínimos, qué índice de inflación se usaría ni desde cuándo se aplicaría.",
+     "fuentes": [
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=68",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 68"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=57",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 57"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "El IRPF se regula por ley estatal ordinaria, así que la tarifa estatal y los mínimos pueden modificarse, y su actualización automática fijarse, por mayoría simple. El impuesto está cedido al 50 % a las comunidades de régimen común, que fijan su propia tarifa autonómica y no estarían obligadas a deflactarla. En Navarra el IRPF de sus residentes lo regula y exige la Comunidad Foral (Convenio Económico, arts. 1 y 9), como en el País Vasco el de los suyos (Concierto Económico, art. 6), por lo que la medida no les afectaría.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-20375",
+       "titulo": "Ley 22/2009, sistema de financiación de las comunidades autónomas de régimen común (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117",
+       "titulo": "Ley 28/1990, por la que se aprueba el Convenio Económico entre el Estado y la Comunidad Foral de Navarra (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969",
+       "titulo": "Ley 12/2002, por la que se aprueba el Concierto Económico con la Comunidad Autónoma del País Vasco (texto consolidado, BOE), art. 6"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El coste de la deflactación es estimable: según el Informe de Progreso Anual 2026 remitido a la Comisión Europea, no deflactar la tarifa y los mínimos aportó en 2025 2.294 M€ de recaudación (0,14 % del PIB), que España computa para cumplir el compromiso de reforma fiscal de su plan aprobado por el Consejo de la UE (que admite hasta un 0,1 % del PIB por esa vía); deflactar exigiría sustituir ese ingreso con otras medidas. La rebaja de los primeros tramos y la subida de los mínimos no están cuantificadas, y el programa no explica cómo se compensaría la pérdida de recaudación.",
+     "fuentes": [
+      {
+       "url": "https://www.hacienda.gob.es/cdi/estabilidad%20presupuestaria/planfiscalestructural/informe-progreso-2026.pdf",
+       "titulo": "Gobierno de España, Informe de Progreso Anual 2026 del Plan Fiscal y Estructural de Medio Plazo (abril de 2026), cuadro 9"
+      },
+      {
+       "url": "https://data.consilium.europa.eu/doc/document/ST-5014-2025-INIT/en/pdf",
+       "titulo": "Consejo de la UE, Recomendación que aprueba el plan fiscal-estructural de medio plazo de España 2025-2028 (doc. 5014/25)"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=68",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 68"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Immervoll (2005) muestra que la progresividad en frío eleva la recaudación y reduce la progresividad incluso con inflación baja, y que la indexación evitó esos cambios en Países Bajos y Reino Unido. El Banco de España atribuye a ese efecto cerca de la mitad del aumento del IRPF sobre el PIB en 2019-2023 y señala que recae sobre todo en las rentas medias y medias-altas, que serían las más beneficiadas al deflactar. No hemos localizado evaluaciones del efecto de rebajar los primeros tramos o subir los mínimos en las cuantías que el programa no fija.",
+     "fuentes": [
+      {
+       "url": "https://ideas.repec.org/a/bla/revinw/v51y2005i1p37-62.html",
+       "titulo": "Immervoll (2005), Falling up the stairs: the effects of bracket creep on household incomes, Review of Income and Wealth 51(1)"
+      },
+      {
+       "url": "https://ideas.repec.org/p/bde/opaper/2422.html",
+       "titulo": "Balladares y García-Miralles (2024), Progresividad en frío en el IRPF, Banco de España, Documentos Ocasionales 2422"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "Según la prensa, la tarifa estatal solo se deflactó en 2008 y 2015 en los últimos veinte años; en 2023 se amplió la reducción por rendimientos del trabajo hasta 21.000 euros (1.881 M€ para la mitad de los asalariados), que el Gobierno no presentó como deflactación, y Madrid, Andalucía, Aragón y la Comunitat Valenciana deflactaron parcialmente su tarifa autonómica en 2022-2025. En marzo de 2026 el Pleno del Congreso aprobó, con modificaciones, una proposición no de ley de Junts que instaba al Gobierno a deflactar «los 3 primeros tramos estatales del IRPF» y aumentar su mínimo exento, y una moción de Junts que pedía deflactar todos los tramos para los autónomos; ninguna de las dos es vinculante.",
+     "fuentes": [
+      {
+       "url": "https://en.ara.cat/economy/treasury-has-only-adjusted-income-tax-to-inflation-in-two-of-the-last-20-years_1_5698297.html",
+       "titulo": "Ara (4-4-2026): Hacienda solo ha deflactado el IRPF en dos de los últimos veinte años"
+      },
+      {
+       "url": "https://www.hacienda.gob.es/GabineteMinistro/Notas%20Prensa/2022/S.E.HACIENDA/29-09-22-NP-Medidas-fiscales-2023.pdf",
+       "titulo": "Ministerio de Hacienda (29-9-2022): medidas fiscales de los Presupuestos de 2023"
+      },
+      {
+       "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/D/BOCG-15-D-507.PDF",
+       "titulo": "BOCG Congreso, serie D, núm. 507 (6-4-2026): aprobación con modificaciones de la proposición no de ley 162/000727 de Junts y de su moción 173/000156"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Once de los 27 países europeos de la OCDE indexan automáticamente cada año los tramos del impuesto sobre la renta (entre ellos Bélgica, Dinamarca, Francia, Países Bajos y Suecia), y Alemania los ajusta cada dos años con un informe de progresividad. Immervoll (2005) documenta que la indexación en Países Bajos y Reino Unido evitó aumentos de la carga por la inflación, que es el objetivo de esa parte de la medida. No hay experiencia comparable evaluada para la rebaja de los primeros tramos y la subida de los mínimos, que el programa no cuantifica.",
+     "fuentes": [
+      {
+       "url": "https://taxfoundation.org/income-tax-inflation-adjustments-europe",
+       "titulo": "Tax Foundation (2024), Income tax inflation adjustments in Europe"
+      },
+      {
+       "url": "https://ideas.repec.org/a/bla/revinw/v51y2005i1p37-62.html",
+       "titulo": "Immervoll (2005), Falling up the stairs: the effects of bracket creep on household incomes, Review of Income and Wealth 51(1)"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a los contribuyentes del IRPF de régimen común (23,99 millones de declaraciones en 2023), con más peso de la deflactación en las rentas medias y medias-altas; los residentes en Navarra y el País Vasco tributan por el IRPF foral y no se verían afectados. El coste de la deflactación (2.294 M€ en 2025, el 0,14 % del PIB, según el Gobierno) recaería en el Estado y las comunidades; el de la rebaja de los primeros tramos y la subida de los mínimos no está cuantificado.",
+     "fuentes": [
+      {
+       "url": "https://www.ief.es/docs/destacados/publicaciones/documentos_trabajo/2026_02.pdf",
+       "titulo": "Instituto de Estudios Fiscales, Documento de Trabajo 2/2026"
+      },
+      {
+       "url": "https://ideas.repec.org/p/bde/opaper/2422.html",
+       "titulo": "Balladares y García-Miralles (2024), Progresividad en frío en el IRPF, Banco de España, Documentos Ocasionales 2422"
+      },
+      {
+       "url": "https://www.hacienda.gob.es/cdi/estabilidad%20presupuestaria/planfiscalestructural/informe-progreso-2026.pdf",
+       "titulo": "Gobierno de España, Informe de Progreso Anual 2026 del Plan Fiscal y Estructural de Medio Plazo (abril de 2026), cuadro 9"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "La indexación evita que la inflación cambie la carga y la progresividad del impuesto sin decisión parlamentaria. A cambio, reduce de forma permanente los ingresos frente a la situación actual: el marco fiscal europeo trata la recaudación por progresividad en frío como margen fiscal, por lo que deflactar reduce ese margen y exige compensarlo con otros ingresos o menos gasto (SUERF, 2026); la rebaja de tramos y la subida de mínimos añadirían una pérdida que el programa no cifra.",
+     "fuentes": [
+      {
+       "url": "https://ideas.repec.org/a/bla/revinw/v51y2005i1p37-62.html",
+       "titulo": "Immervoll (2005), Falling up the stairs: the effects of bracket creep on household incomes, Review of Income and Wealth 51(1)"
+      },
+      {
+       "url": "https://www.suerf.org/publications/suerf-policy-notes-and-briefs/fiscal-drag-in-europe-how-inflation-is-quietly-affecting-public-revenue/",
+       "titulo": "García-Miralles, Freier y Riscado (2026), Fiscal drag in Europe, SUERF Policy Brief 1380"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "junts-11",
+   "titulo": "Traspaso inmediato e incondicional del 100 % de Rodalies y Media Distancia, con vías, estaciones y presupuestos",
+   "area": "modelo territorial",
+   "resumen": "Traspasar de inmediato y sin condiciones a la Generalitat el 100 % de Rodalies y de Media Distancia, con la titularidad de la infraestructura (vías, catenarias, estaciones), los trenes y los recursos de Renfe y Adif, y los presupuestos de modernización pendientes de ejecutar, con un modelo de gestión propio y descentralizado (pp. 71-72).",
+   "cita": "Reclamar el traspàs immediat i incondicional del 100% de Rodalies i Mitjana Distància, amb les vies, les catenàries, les estacions i els pressupostos pendents d’executar per modernitzar-la.",
+   "cita_traduccion": "Reclamar el traspaso inmediato e incondicional del 100% de Rodalies y Media Distancia, con las vías, las catenarias, las estaciones y los presupuestos pendientes de ejecutar para modernizarla.",
+   "pagina": 72,
+   "beneficiarios": "Las personas usuarias de Rodalies y de los regionales en Cataluña; no hemos localizado una cifra oficial de viajeros de Rodalies (en España, más de ocho de cada diez de los 547 millones de viajeros de tren de 2025 usaron Cercanías, según la CNMC citada por Agenda Pública). El servicio lo financia hoy el Estado (1.407,6 M€ en el contrato de Rodalies y Regionales 2026-2028); el programa no dice quién financiaría la infraestructura tras el traspaso.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (pp. 71-72) define el alcance: el 100 % de Rodalies y de Media Distancia, con la titularidad, las vías, las catenarias, las estaciones, los trenes y los recursos de Renfe y Adif, y «els pressupostos pendents d’executar»; lo quiere «immediat i incondicional» y con un «model de gestió pròpia i descentralitzada». No cifra esos presupuestos ni el coste de mantener la infraestructura, no fija fecha ni dice quién operaría el servicio ni qué pasaría con la empresa Rodalies de Catalunya, constituida en enero de 2026.",
+     "fuentes": [
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=72",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 72"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=71",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 71"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "El Estado tiene competencia exclusiva sobre los ferrocarriles que transcurren por más de una comunidad (art. 149.1.21.ª CE). Los servicios regionales que discurren íntegramente por Cataluña se traspasaron por el Real Decreto 1598/2010, con efectos desde el 1-1-2011, y en enero de 2026 se constituyó la empresa Rodalies de Catalunya (49,9 % Generalitat, cinco de nueve consejeros); si el «100 %» de Media Distancia incluye servicios que salen de Cataluña, estos seguirían siendo competencia del Estado. Las vías y estaciones son de la Red Ferroviaria de Interés General: su traspaso exige que el Ministerio las excluya de esa red, lo que la Ley 38/2015 solo permite «siempre que hayan desaparecido los motivos de interés general que justificaron su inclusión», y que el Consejo de Ministros acuerde el traspaso (art. 4.3).",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2010-19649",
+       "titulo": "Real Decreto 1598/2010, traspaso a la Generalitat de los servicios ferroviarios regionales de viajeros íntegramente desarrollados en Cataluña (BOE 22-12-2010)"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transportes-movilidad-sostenible/Paginas/2026/120126-puente-rodalies-catalunya.aspx",
+       "titulo": "La Moncloa, 12-1-2026: constitución de la empresa Rodalies de Catalunya"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10440",
+       "titulo": "Ley 38/2015, del Sector Ferroviario, arts. 4 y 5 (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "Hay cifras públicas parciales: el contrato Generalitat-Renfe de Rodalies y Regionales 2026-2028 es de 1.407,6 M€ financiados por el Estado, el Plan de Rodalies 2020-2030 prevé más de 6.300 M€ y la AIReF cifra en 3.600 M€ la inversión en Cercanías de toda España entre 1990 y 2018. El programa pide traspasar los presupuestos pendientes de ejecutar y «els recursos financers necessaris», pero no los cuantifica ni estima el coste de mantener la infraestructura ni quién lo financiaría a largo plazo.",
+     "fuentes": [
+      {
+       "url": "https://www.diaridetarragona.com/catalunya/274138/generalitat-renfe-firman-contrato-rodalies-1-407-millones-2028_amp.html",
+       "titulo": "Diari de Tarragona, 27-10-2026: contrato Generalitat-Renfe de Rodalies 2026-2028"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transportes-movilidad-sostenible/Paginas/2026/120126-puente-rodalies-catalunya.aspx",
+       "titulo": "La Moncloa, 12-1-2026: constitución de la empresa Rodalies de Catalunya"
+      },
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2020/07/INFRAESTRUCTURAS/ESTUDIO_INFRAESTRUCTURAS_SPENDINGREVIEW.pdf",
+       "titulo": "AIReF, Spending Review (fase II): Estudio Infraestructuras de transporte (julio de 2020)"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=71",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 71"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "La AIReF constató que entre 1990 y 2018 se invirtieron unos 3.600 M€ en Cercanías frente a 55.888 M€ en alta velocidad, y recomendó integrar la gestión y planificación de Cercanías y sus infraestructuras en las autoridades de transporte de cada área metropolitana. No hemos encontrado evidencia de que el cambio de titularidad por sí solo mejore la puntualidad o la fiabilidad; depende de la inversión y del mantenimiento, que el programa no cuantifica.",
+     "fuentes": [
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2020/07/INFRAESTRUCTURAS/ESTUDIO_INFRAESTRUCTURAS_SPENDINGREVIEW.pdf",
+       "titulo": "AIReF, Spending Review (fase II): Estudio Infraestructuras de transporte (julio de 2020)"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "En 2010 se traspasó parcialmente la gestión de Rodalies a la Generalitat, y con efectos desde el 1-1-2011 la de los servicios regionales íntegramente desarrollados en Cataluña (Real Decreto 1598/2010, de diciembre de 2010), pero el contrato con Renfe no se formalizó por escrito hasta octubre de 2026. La empresa Rodalies de Catalunya se constituyó en enero de 2026; el Gobierno prevé traspasar primero la línea del Maresme (con encomienda de gestión a Adif) y después las de Puigcerdà, el Garraf y Manresa, y el contrato prevé que FGC opere las líneas RL3 y RL4. La comisión bilateral del 12-11-2026 no cerró el traspaso de la R1, que Generalitat y Ministerio situaban antes de final de año, y encargó continuar los trabajos al grupo de traspaso de las infraestructuras, según Ara.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2010-19649",
+       "titulo": "Real Decreto 1598/2010, traspaso a la Generalitat de los servicios ferroviarios regionales de viajeros íntegramente desarrollados en Cataluña (BOE 22-12-2010)"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transportes-movilidad-sostenible/Paginas/2026/120126-puente-rodalies-catalunya.aspx",
+       "titulo": "La Moncloa, 12-1-2026: constitución de la empresa Rodalies de Catalunya"
+      },
+      {
+       "url": "https://www.diaridetarragona.com/catalunya/274138/generalitat-renfe-firman-contrato-rodalies-1-407-millones-2028_amp.html",
+       "titulo": "Diari de Tarragona, 27-10-2026: contrato Generalitat-Renfe de Rodalies 2026-2028"
+      },
+      {
+       "url": "https://es.ara.cat/sociedad/movilidad/generalitat-acuerdan-cataluna-tenga-voz-gestion-aeropuertos_1_5908363.html",
+       "titulo": "Ara (12-11-2026): Estado y Generalitat acuerdan que Cataluña tenga más voz en la gestión de los aeropuertos (comisión bilateral; traspaso de la R1)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "En Alemania, la regionalización de 1996 pasó a los Länder la responsabilidad de planificar y contratar el tren regional, con financiación federal finalista (de 4.500 M€ anuales al principio a unos 6.700 M€ desde 2002), mientras la infraestructura siguió en DB Netz, y la reforma incluyó la licitación competitiva de servicios a partir de 1996. La fuente describe el diseño y la evolución de los viajeros, no aísla el efecto de la descentralización. La propuesta difiere en dos elementos: traspasa también vías y estaciones y no prevé licitar el servicio.",
+     "fuentes": [
+      {
+       "url": "https://www.regul.be/wp-content/uploads/2019/01/librail2008-06.pdf",
+       "titulo": "Brenck (IGES) y Mitusch (TU Berlin), Passenger transport liberalisation: the German experience (2008)"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a las personas usuarias de Rodalies y de los regionales, cuyo número no hemos podido verificar con fuente oficial; en el conjunto de España, Cercanías concentró en 2025 más de ocho de cada diez viajeros de tren (CNMC, citada por Agenda Pública). El coste lo asume hoy el Estado; después del traspaso dependería de la financiación pactada, que el programa no concreta.",
+     "fuentes": [
+      {
+       "url": "https://agendapublica.es/noticia/21671/necesita-tren-espana",
+       "titulo": "Agenda Pública (A. Castrillón, IE University), 2026: inversión y mantenimiento ferroviario en España, con datos de la Comisión Europea, Adif, CNMC y AIReF"
+      },
+      {
+       "url": "https://www.diaridetarragona.com/catalunya/274138/generalitat-renfe-firman-contrato-rodalies-1-407-millones-2028_amp.html",
+       "titulo": "Diari de Tarragona, 27-10-2026: contrato Generalitat-Renfe de Rodalies 2026-2028"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Acerca la gestión a la administración que planifica la movilidad metropolitana, en línea con la recomendación de la AIReF. Los riesgos son una transición larga con responsabilidades repartidas entre Adif, Renfe, la nueva empresa y la Generalitat, y la dependencia de transferencias estatales para mantener una infraestructura que, según la AIReF, acumula décadas de baja inversión.",
+     "fuentes": [
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2020/07/INFRAESTRUCTURAS/ESTUDIO_INFRAESTRUCTURAS_SPENDINGREVIEW.pdf",
+       "titulo": "AIReF, Spending Review (fase II): Estudio Infraestructuras de transporte (julio de 2020)"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transportes-movilidad-sostenible/Paginas/2026/120126-puente-rodalies-catalunya.aspx",
+       "titulo": "La Moncloa, 12-1-2026: constitución de la empresa Rodalies de Catalunya"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "junts-12",
+   "titulo": "Traspasar a la Generalitat la titularidad y la gestión de El Prat y del resto de aeropuertos catalanes de Aena",
+   "area": "modelo territorial",
+   "resumen": "Traspasar a la Generalitat las competencias y la titularidad del aeropuerto de Barcelona-El Prat y del resto de aeropuertos catalanes, desvinculándolos del modelo centralizado de Aena, con una gobernanza catalana con participación de los agentes económicos e institucionales que convierta El Prat en un hub intercontinental (pp. 71-72).",
+   "cita": "Traspassar a la Generalitat les competències i la titularitat de l’Aeroport del Prat i de la resta d’aeroports catalans, fora del model centralitzat d’AENA, amb una governança catalana que permeti al Prat operar com a hub intercontinental de primer ordre.",
+   "cita_traduccion": "Traspasar a la Generalitat las competencias y la titularidad del Aeropuerto de El Prat y del resto de aeropuertos catalanes, fuera del modelo centralizado de AENA, con una gobernanza catalana que permita a El Prat operar como hub intercontinental de primer orden.",
+   "pagina": 72,
+   "beneficiarios": "Los usuarios y la economía del entorno de los aeropuertos: en 2025 pasaron por El Prat 57,5 millones de pasajeros, por Girona 2,2 millones y por Reus 1,3 millones, y Sabadell registró 62.340 operaciones y 4.899 pasajeros (Aena). El coste no está cuantificado: la Generalitat asumiría la gestión y las inversiones (1.449,4 M€ previstos en los cuatro aeropuertos en el DORA 2027-2031), y los aeropuertos son hoy propiedad de Aena, cuyo accionista mayoritario es el Estado y cuyo 49 % es de accionistas privados.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (pp. 71-72) dice qué quiere: traspasar a la Generalitat las competencias y la titularidad de El Prat y del resto de aeropuertos catalanes, desvincularlos del «model centralitzat d’AENA» y darles una gobernanza catalana, con participación de los agentes económicos e institucionales, que haga de El Prat un hub intercontinental. No dice con qué instrumento legal se haría, cómo se compensaría a Aena y a sus accionistas, cuánto costaría ni en qué plazo.",
+     "fuentes": [
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=72",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 72"
+      },
+      {
+       "url": "PENDIENTE_URL_OFICIAL#page=71",
+       "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 71"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "Los aeropuertos de interés general son competencia exclusiva del Estado (art. 149.1.20.ª CE); el Estatuto da a la Generalitat la de los que no tienen esa calificación y prevé que pueda participar en la gestión de los de interés general «o asumirla, de acuerdo con lo previsto en las leyes» (art. 140.3), de modo que el traspaso de la gestión requiere una ley estatal. La titularidad es otro obstáculo: los aeropuertos son propiedad de Aena, sociedad con un 49 % de capital privado, y la Ley 18/2014 configura su red como servicio de interés económico general y prohíbe enajenar sus instalaciones sin autorización del Consejo de Ministros, con informe de la CNMC, que solo puede concederse si no afecta a la sostenibilidad económica de la red (arts. 21 y 22). Haría falta esa autorización o un cambio de la ley, e indemnizar a los propietarios (art. 33.3 CE); Aena sostiene que transferir la regulación o la supervisión, competencias exclusivas del Estado, no es «jurídicamente factible».",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087",
+       "titulo": "Ley Orgánica 6/2006, de reforma del Estatuto de Autonomía de Cataluña, art. 140 (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-10517",
+       "titulo": "Ley 18/2014, de 15 de octubre (texto consolidado, BOE): arts. 18, 21 y 22 (Aena y red de aeropuertos de interés general)"
+      },
+      {
+       "url": "https://www.aena.es/doc/detalleprensa/260416-aena-junta-general-accionistas-2026.pdf",
+       "titulo": "Aena, nota de prensa del 16-4-2026: discurso del presidente en la Junta General de Accionistas"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "no_verificable",
+     "texto": "No hay base pública para estimar el coste principal: el valor de El Prat y de los demás aeropuertos catalanes dentro de Aena, que habría que compensar a la sociedad y a sus accionistas, no se publica por separado. Como referencias, el grupo Aena ganó 2.136,7 M€ en 2025; El Prat movió 57,5 de los 321,6 millones de pasajeros de su red en España (un 17,9 %, cálculo propio), y el DORA 2027-2031 prevé 1.294,8 M€ de inversión en El Prat y 1.449,4 M€ en los cuatro aeropuertos catalanes, que pasaría a asumir el nuevo titular. El programa no cuantifica el coste ni explica cómo se pagaría.",
+     "fuentes": [
+      {
+       "url": "https://www.aena.es/doc/detalleprensa/260225-aena-resultados-2025.pdf",
+       "titulo": "Aena, nota de prensa del 25-2-2026: resultados anuales de 2025"
+      },
+      {
+       "url": "https://www.aena.es/doc/detalleprensa/260416-aena-junta-general-accionistas-2026.pdf",
+       "titulo": "Aena, nota de prensa del 16-4-2026: discurso del presidente en la Junta General de Accionistas"
+      },
+      {
+       "url": "https://www.aena.es/doc/detalleprensa/260113-bcn-estadisticas-2025.pdf",
+       "titulo": "Aena, nota de prensa del 13-1-2026: el aeropuerto de Barcelona-El Prat cierra 2025 con 57,5 millones de pasajeros"
+      },
+      {
+       "url": "https://www.boe.es/boe/dias/2026/09/19/pdfs/BOE-A-2026-19507.pdf",
+       "titulo": "Resolución de 16-9-2026 de la DGAC: Acuerdo del Consejo de Ministros que aprueba el Documento de Regulación Aeroportuaria 2027-2031 (BOE 19-9-2026), anexo 6"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "La CNMC (2014) concluyó que la gestión centralizada de Aena ha dado una red de calidad y con capacidad suficiente, pero con ineficiencias, y recomendó una gestión «más flexible y descentralizada, idealmente a nivel individual»; Bel y Fageda (2011) sostienen que individualizar la gestión introduciría competencia entre aeropuertos y tarifas acordes con las necesidades de inversión de cada uno. Sobre el objetivo de hub, la misma CNMC señala que la competencia de Barcelona con Madrid por el tráfico de conexión está limitada por la necesidad de contar con una aerolínea con base en el aeropuerto. Ninguna de estas fuentes evalúa un traspaso a una comunidad autónoma.",
+     "fuentes": [
+      {
+       "url": "https://cnmc.es/file/107014/download",
+       "titulo": "CNMC, E/CNMC/0002/14, El sector aeroportuario en España: situación actual y recomendaciones de liberalización (julio de 2014), resumen ejecutivo"
+      },
+      {
+       "url": "https://ideas.repec.org/a/hpe/journl/y2011v196i1p109-130.html",
+       "titulo": "Bel y Fageda (2011), La reforma del modelo de gestión de aeropuertos en España: ¿gestión conjunta o individual?, Hacienda Pública Española 196(1)"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "La Generalitat ya es titular de un aeropuerto que no es de interés general, Lleida-Alguaire, inaugurado en 2010. En 2011 se creó Aena Aeropuertos, que podía tener hasta un 49 % de capital privado, y se prepararon concesiones individuales de Madrid y Barcelona, que el nuevo Gobierno paralizó tras las elecciones de 2011. En 2026 el Govern impulsó una Autoritat Aeroportuària de Catalunya y el 12-11-2026 la comisión bilateral acordó un órgano paritario con voz en los planes directores y el DORA de El Prat, Girona, Reus y Sabadell, sin traspaso de competencias ni cogestión; en abril el presidente de Aena había calificado de «clarament incompatibles» con el marco constitucional las propuestas de participación o traspaso de la gestión aeroportuaria a las comunidades autónomas, aunque defendía un órgano «estrictament consultiu» como el del País Vasco, según NacióDigital.",
+     "fuentes": [
+      {
+       "url": "https://www.enciclopedia.cat/gran-enciclopedia-catalana/aeroport-de-lleida-alguaire",
+       "titulo": "Gran Enciclopèdia Catalana: aeroport de Lleida-Alguaire"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-10517",
+       "titulo": "Ley 18/2014, de 15 de octubre (texto consolidado, BOE): arts. 18, 21 y 22 (Aena y red de aeropuertos de interés general)"
+      },
+      {
+       "url": "https://fedea.net/apuntes-fedea/apuntes/competitividad/apunte_competitividad03_modelo_aeroportuario.pdf",
+       "titulo": "Betancor y Viecens, «Hacia un nuevo modelo aeroportuario español», Fedea, Apuntes de competitividad 03 (noviembre de 2011)"
+      },
+      {
+       "url": "https://naciodigital.cat/politica/el-govern-impulsa-lautoritat-aeroportuaria-de-catalunya-per-influir-en-la-governanca-del-prat.html",
+       "titulo": "NacióDigital (7-1-2026): el Govern impulsa l'Autoritat Aeroportuària de Catalunya"
+      },
+      {
+       "url": "https://es.ara.cat/sociedad/movilidad/generalitat-acuerdan-cataluna-tenga-voz-gestion-aeropuertos_1_5908363.html",
+       "titulo": "Ara (12-11-2026): Estado y Generalitat acuerdan que Cataluña tenga más voz en la gestión de los aeropuertos (comisión bilateral; traspaso de la R1)"
+      },
+      {
+       "url": "https://naciodigital.cat/politica/aena-veu-incompatible-que-catalunya-participi-en-la-governanca-del-prat.html",
+       "titulo": "NacióDigital (16-4-2026): Aena ve «incompatible» que Cataluña participe en la gobernanza de El Prat"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "En Alemania la mayoría de los grandes aeropuertos pertenecen a los Länder y a los municipios, a veces con el Estado federal o socios privados: Múnich es de Baviera (51 %), del Estado federal (26 %) y de la ciudad (23 %), y los principales accionistas de Fraport (Fráncfort) son el Land de Hesse (31,31 %) y una sociedad municipal de Fráncfort (20,92 %), según la asociación de aeropuertos alemanes. La CNMC (2014) constata que España es el único país con un gestor centralizado de un número elevado de aeropuertos y pasajeros. No hemos localizado evaluaciones que comparen los resultados, en conectividad intercontinental u otros, según la titularidad sea regional o estatal.",
+     "fuentes": [
+      {
+       "url": "https://www.adv.aero/wp-content/uploads/2015/11/Gesellschafter-und-Beteiligungsverhältnisse-IVF-Mai-2024.pdf",
+       "titulo": "ADV (asociación de aeropuertos alemanes), Gesellschafter und Beteiligungsverhältnisse – Internationale Verkehrsflughäfen (mayo de 2024)"
+      },
+      {
+       "url": "https://cnmc.es/file/107014/download",
+       "titulo": "CNMC, E/CNMC/0002/14, El sector aeroportuario en España: situación actual y recomendaciones de liberalización (julio de 2014), resumen ejecutivo"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Los beneficiarios declarados son los usuarios y la economía catalana, por las conexiones intercontinentales que se buscan: El Prat tuvo 57,5 millones de pasajeros en 2025, Girona 2,2 millones y Reus 1,3 millones. No hay estimación pública de cuánto ganarían ni del coste, que recaería en la Generalitat (inversiones y compensación a Aena, cuyo 49 % es privado) y podría afectar a la financiación del resto de la red de Aena, cuya gestión conjunta justifica la Ley 18/2014 por permitir sostener los aeropuertos deficitarios.",
+     "fuentes": [
+      {
+       "url": "https://www.aena.es/doc/detalleprensa/260113-bcn-estadisticas-2025.pdf",
+       "titulo": "Aena, nota de prensa del 13-1-2026: el aeropuerto de Barcelona-El Prat cierra 2025 con 57,5 millones de pasajeros"
+      },
+      {
+       "url": "https://www.aena.es/doc/detalleprensa/260113-gro-estadisticas-2025.pdf",
+       "titulo": "Aena, nota de prensa del 13-1-2026: tráfico de 2025 en Girona, con datos de Barcelona, Reus y Sabadell"
+      },
+      {
+       "url": "https://www.aena.es/doc/detalleprensa/260416-aena-junta-general-accionistas-2026.pdf",
+       "titulo": "Aena, nota de prensa del 16-4-2026: discurso del presidente en la Junta General de Accionistas"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-10517",
+       "titulo": "Ley 18/2014, de 15 de octubre (texto consolidado, BOE): arts. 18, 21 y 22 (Aena y red de aeropuertos de interés general)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Ventaja: decisiones sobre inversiones, tarifas y captación de rutas más cercanas al territorio, en la línea de la gestión individual que recomendó la CNMC. Riesgos: la Ley 18/2014 justifica la gestión en red porque permite sostener los aeropuertos deficitarios, de modo que segregar El Prat (el 17,9 % de los pasajeros de Aena en España en 2025, cálculo propio) afectaría a la financiación del resto, y la Generalitat asumiría inversiones de 1.449,4 M€ solo en 2027-2031. Si se logra el objetivo de hub, más vuelos de largo radio aumentarían las emisiones de un sector cuyas emisiones directas fueron entre el 3,8 % y el 4 % de las de la UE en 2022, según la Comisión Europea.",
+     "fuentes": [
+      {
+       "url": "https://cnmc.es/file/107014/download",
+       "titulo": "CNMC, E/CNMC/0002/14, El sector aeroportuario en España: situación actual y recomendaciones de liberalización (julio de 2014), resumen ejecutivo"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-10517",
+       "titulo": "Ley 18/2014, de 15 de octubre (texto consolidado, BOE): arts. 18, 21 y 22 (Aena y red de aeropuertos de interés general)"
+      },
+      {
+       "url": "https://www.aena.es/doc/detalleprensa/260416-aena-junta-general-accionistas-2026.pdf",
+       "titulo": "Aena, nota de prensa del 16-4-2026: discurso del presidente en la Junta General de Accionistas"
+      },
+      {
+       "url": "https://www.boe.es/boe/dias/2026/09/19/pdfs/BOE-A-2026-19507.pdf",
+       "titulo": "Resolución de 16-9-2026 de la DGAC: Acuerdo del Consejo de Ministros que aprueba el Documento de Regulación Aeroportuaria 2027-2031 (BOE 19-9-2026), anexo 6"
+      },
+      {
+       "url": "https://climate.ec.europa.eu/eu-action/transport-decarbonisation/reducing-emissions-aviation_en",
+       "titulo": "Comisión Europea: Reducing emissions from aviation"
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

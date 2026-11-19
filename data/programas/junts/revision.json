@@ -1,0 +1,96 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-19",
+ "alcance": "12 prioridades × 8 criterios y campos «titulo», «resumen», «cita», «cita_traduccion», «pagina» y «beneficiarios» de data/programas/junts/evaluacion.json, su «nota», las justificaciones de las 12 prioridades de extraccion.json y la entrada de Junts en data/partidos/partidos.json, contra el programa «Catalunya al centre» (90 pp., en catalán; copia que aloja el diario Ara, SHA-256 cde2c5f3…374b6, recalculado sobre el PDF local) y las fuentes citadas (prompt 4). El texto por página (pdftotext sin -layout, por ir a dos columnas) se normalizó con norm() de pipeline/verify_quotes.py: los 17 tramos de las 12 citas, separados por «[...]», son literales y están en la página indicada, y los fragmentos del programa entrecomillados en resúmenes y textos están en las páginas que se dicen; las traducciones son fieles. verify_quotes junts: 625 citas, 0 no encontradas (antes y después de las correcciones). Se compararon los textos reaprovechados con su origen (evaluación retirada de la base «compromisos» en HEAD, erc-07, pnv-08 y pp-10) y se comprobó en la fuente cada afirmación nueva o cambiada, aunque su URL ya estuviera en una evaluación aprobada (Funcas y Memoria de beneficios fiscales de 2023: 9.015,18 €, 15-25 %, 4.415,36 M€, 24.107,20 €, 753,51 M€ y 2.663.223 contribuyentes, 29,74 M€; LOFCA art. 2.1.g; Catalunya Press 13-5-2026; Orden PJC/784/2025; Ley 33/2003 arts. 145-147; RD 1155/2024 arts. 64, 71, 80, 86 y 127; LO 4/2000 disp. final cuarta; STC 31/2010 FJ 14; RD 316/2026; La Moncloa 2-7-2026; Qué! 12-6-2026; Convenio navarro arts. 1 y 9 y Concierto vasco art. 6; DORA 2027-2031, BOE-A-2026-19507: 1.294,840 y 1.449,429 M€; Ley 18/2014 arts. 21 y 22; Estatut art. 140.3). Se abrieron las 39 URL que no estaban en ninguna evaluación aprobada: 16 (junts-01 a junts-06: STC 341/1993, Ley 33/2003, RD 1009/1985, Ara 21-9-2026, Euronews 22-9-2026, IEC, BOCG 355-1, Hacienda 30-7-2024, DSCD 138, BOCG D-610, Rendon, Emeriau y otros, Tràmits gencat, Ara 7-3-2025, The Objective, Cantón de Zúrich) las abrí yo; las 9 de junts-07 y las 14 de junts-10 a junts-12 las comprobaron dos subagentes de verificación sin acceso al análisis, y cada discrepancia que señalaron se volvió a comprobar en la fuente antes de corregirla. Euronews responde 406 a curl; se leyó con la herramienta de lectura web y confirma que Alemania, Suecia y Lituania rechazaron vincular el catalán a la ampliación, que fue un punto informativo sin votación y que no hay fecha de decisión (la «octava vez» y el martes 22-9 los da Ara, 21-9-2026). Se rehicieron los cálculos propios: 1.800 × 70.600 € = 127,1 M€; 8.256 × 70.600 € = 582,9 M€; 57,48/321,6 = 17,9 %; casi una de cada tres viviendas de la Sareb (13.000 de más de 40.000). Todos correctos. Las notas de los evaluadores no se leyeron.",
+ "catalogo": "Correcto, con la url «PENDIENTE_URL_OFICIAL» como marcador deliberado (no es un error). SHA-256, 90 páginas, tamaño (1.355.756 bytes) y metadatos («Programa electoral.indd», InDesign 14.0, CreationDate 18-11-2026 16:44:10 CET, ModDate 16:44:35, PDF/X-4) comprobados sobre el PDF local; la copia de Ara responde hoy (19-11, 06:50 CET) con el mismo ETag y Last-Modified (18-11 18:44:42 GMT) que las cabeceras guardadas. A esa hora junts.cat/programa-electoral/ redirige a wp-content/uploads/2026/10/Programa-Electoral.pdf, que es el programa de las europeas de 2024 (56 pp., «Folleto_5.indd», creado el 24-5-2024; SHA-256 eb7fdecc…), no el del 29-N: sigue sin haber copia oficial. El análisis no debe publicarse hasta que la haya con el mismo SHA-256 (programa.verificacion). La «nota» de evaluacion.json dice que el programa se «repartió a la prensa» el 18-nov; lo que consta es que Ara y NacióDigital informaron de su presentación y Ara aloja la copia.",
+ "seleccion": "Las 12 prioridades coinciden con extraccion.json y se justifican con lo que el propio documento destaca. La introducción (p. 5) enumera como espacios de soberanía el concierto económico y el control de los impuestos (junts-09), el control de la inmigración y de las fronteras (junts-05 y junts-07), el traspaso de las infraestructuras ferroviarias y aeroportuarias (junts-11 y junts-12) y la protección de la lengua (junts-04), y «Catalunya al centre» (pp. 8-10) nombra literalmente la oficialidad del catalán en Europa (p. 8), las viviendas y solares de la Sareb y Casa 47 y la ocupación en 48 horas (p. 9), «Saber català ha de comptar per arrelar-se i per renovar els permisos» (junts-06, p. 9), el IRPF ajustado cada año a la inflación (junts-10), el concierto (p. 10) y el traspaso de Rodalies y la gestión de El Prat (p. 10). Las dos restantes no salen de esas páginas, pero se repiten en tres lugares del documento: las deducciones por vivienda (junts-02: pp. 16-17, 60, 69 y el anexo, p. 88) y la jubilación sin coeficientes con 40 años cotizados (junts-08: pp. 56, 58, 70 y anexo, p. 88). Cada prioridad es el primer punto de su objetivo salvo junts-03 (punto 5.2, aunque es la primera competencia a reclamar de la sección de vivienda) y junts-08 (punto 5.3). Las corroboraciones de campaña citadas (9, 7 y 6 ocasiones para el concierto, Rodalies e inmigración) coinciden con «veces» de compromisos/seleccion.json. Lo que «Catalunya al centre» destaca y no está entre las 12 no tiene punto de programa con medida (el 6 % del PIB en educación solo aparece en una introducción, p. 53; el «blindatge de l'educació i la sanitat», p. 5, no se concreta) o es menos destacado (el parque público de alquiler, p. 9, que en el programa es exigir al Estado recursos «equiparables a la mitjana europea», punto 5.1, p. 17): véase dudas.",
+ "igual_estandar": "Se compararon las 96 valoraciones con las equivalentes aprobadas. Reaprovechadas con las mismas valoraciones: junts-03 = erc-07 (8/8), junts-08 = pnv-08 (8/8; bng-07 igual en financiación y largo plazo), junts-10 = pp-10 (8/8), y las seis de la base «compromisos» retirada, que no cambian salvo junts-01 financiación «favorable» → «no_verificable», justificado en el texto y en la nota (el programa añade «garantir l'atenció pública» a los vulnerables sin cuantificar: mismo hecho y misma valoración que pp-03, salf-02, upn-07 y vox-08, todas «no_verificable»). junts-05 coincide con pnv-07 (MMNMMMMM); junts-11 con erc-03 y psc-c06 (todas «mixta»); junts-09 legal «desfavorable» como bng-01 (concierto fuera del régimen común, STC 158/2019) y no «mixta» como erc-10, que se limita a la recaudación (cabe por delegación, art. 156.2), diferencia que el texto explica; junts-06 legal «mixta» frente a «desfavorable» en cc-06 y salf-06, que chocan con el Derecho de la UE (libre circulación de capitales, art. 63 TFUE; visados, Reglamento 2018/1806), mientras que exigir una lengua cooficial para un permiso estatal exige cambiar la ley orgánica y el reglamento y no tiene sentencia (el texto cita la STC 31/2010, FJ 14). junts-07 financiación «mixta» (plantilla con coste estimable a 70.600 € por agente) frente a «no_verificable» en junts-05, explicado en la nota. Criterio único del coste de las votaciones: ninguna de las 12 propone reforma constitucional ni referéndum; junts-09 lo dice expresamente (disposición adicional en la LOFCA) y su financiación es «mixta» por el trasvase estimado por Fedea, no por una votación. Ninguna valoración cambia. Los textos no contienen adjetivos de valor. Queda en dudas la financiación de junts-08 y pnv-08 (cifra del Gobierno citada en prensa), que afecta a otros partidos.",
+ "recuento_inicial": {
+  "favorable": 3,
+  "mixta": 84,
+  "desfavorable": 2,
+  "no_verificable": 7
+ },
+ "recuento_final": {
+  "favorable": 3,
+  "mixta": 84,
+  "desfavorable": 2,
+  "no_verificable": 7
+ },
+ "recuento_nota": "Recuento de las 12 propuestas × 8 criterios. Ninguna valoración cambia; las 8 entradas de «cambios» son correcciones de texto (fechas, atribuciones y condiciones legales) en junts-03, junts-06, junts-07, junts-11 y junts-12, sin fuentes nuevas.",
+ "cambios": [
+  {
+   "propuesta": "junts-03",
+   "criterio": "legal",
+   "antes": "La Ley 33/2003 permite ceder gratis la propiedad de bienes patrimoniales del Estado y de sus organismos públicos a comunidades autónomas y entidades locales para fines de utilidad pública de su competencia (arts. 145 a 147), pero exige una decisión estatal",
+   "despues": "La Ley 33/2003 permite ceder gratis la propiedad de bienes patrimoniales del Estado cuya afectación o explotación no se juzgue previsible, y de sus organismos públicos que puedan enajenarlos, a comunidades autónomas y entidades locales para fines de utilidad pública o interés social de su competencia (arts. 145 a 147), pero exige una decisión estatal",
+   "motivo": "Precisión: el art. 145.1 de la Ley 33/2003 solo permite ceder bienes del Estado «cuya afectación o explotación no se juzgue previsible», y el art. 147, los de organismos públicos con facultades para enajenarlos y que no se hayan incorporado al patrimonio estatal; el texto omitía esas condiciones y la finalidad «o interés social» (BOE, texto consolidado, comprobado).",
+   "fecha": "2026-11-19"
+  },
+  {
+   "propuesta": "junts-03",
+   "criterio": "legal",
+   "antes": "y la transmisión reduce la deuda que la Sareb devuelve con aval del Estado.",
+   "despues": "y la transmisión supone que la Sareb amortice menos deuda de la prevista, con el consiguiente impacto en el aval del Estado que la garantiza.",
+   "motivo": "Inexacto: la Orden PJC/784/2025 dice que la transmisión «supondrá una menor amortización de la deuda de SAREB de la prevista», con impacto en el aval del Estado; «reduce la deuda que la Sareb devuelve» podía leerse como una reducción de la deuda (BOE-A-2025-15292, comprobado).",
+   "fecha": "2026-11-19"
+  },
+  {
+   "propuesta": "junts-06",
+   "criterio": "antecedentes",
+   "antes": "La Generalitat ya pide, para su informe de esfuerzo de integración, acreditar el aprendizaje del catalán y del castellano (en las renovaciones posteriores, nivel A2 o 90 horas de formación en catalán o castellano), en aplicación de una instrucción de 2017; pero el informe solo se valora en la renovación, que resuelve la Oficina de Extranjería del Estado, y según técnicos citados por Ara (7-3-2025) el requisito del catalán no suele tenerse en cuenta.",
+   "despues": "La Generalitat ya pide, para su informe de esfuerzo de integración, que emite tanto para el arraigo como para la renovación de la residencia temporal, acreditar el aprendizaje del catalán y del castellano (si ya se obtuvo antes un informe favorable, nivel A2 o 90 horas de formación en catalán o castellano), según sus criterios de instrucción (una instrucción de 2017 y, desde el 20-5-2025, un documento de criterios adaptado al Real Decreto 1155/2024); pero quien resuelve es la Oficina de Extranjería del Estado, el Reglamento no menciona la lengua en el informe del arraigo social (art. 127) y en la renovación solo lo «valora», y según técnicos citados por Ara (7-3-2025) el requisito del catalán no suele tenerse en cuenta.",
+   "motivo": "Inexacto: según la ficha de Tràmits de la Generalitat (actualizada el 25-9-2025), el informe de esfuerzo de integración se emite para obtener la residencia por arraigo social, socioformativo o de jóvenes extutelados y para renovarla, no solo en la renovación, y desde el 20-5-2025 se rige por el RD 1155/2024 y un documento de criterios, no por la instrucción de 2017; el art. 127 del RD 1155/2024 exige un informe de integración para el arraigo social sin mencionar la lengua (BOE, comprobado). El nivel A2 o las 90 horas se exigen a quien ya obtuvo antes un informe favorable.",
+   "fecha": "2026-11-19"
+  },
+  {
+   "propuesta": "junts-07",
+   "criterio": "largo_plazo",
+   "antes": "en 2026 el Govern aplazó el traspaso alegando que necesitaba más agentes,",
+   "despues": "el Govern ha ido aplazando el traspaso desde finales de 2024 y en abril de 2026 su argumento oficial seguía siendo que faltaban agentes,",
+   "motivo": "Sin respaldo: NacióDigital (5-4-2026) no describe un aplazamiento decidido en 2026; sitúa la falta de efectivos como argumento del Govern en diciembre de 2024, recoge después otros motivos de Parlon (preparar la estructura, un proyecto de ley) y en abril de 2026 dice que «l'argument oficial» sigue siendo que faltan agentes (comprobado en la fuente y por un subagente de verificación).",
+   "fecha": "2026-11-19"
+  },
+  {
+   "propuesta": "junts-11",
+   "criterio": "legal",
+   "antes": "Los servicios regionales que discurren íntegramente por Cataluña se traspasaron en 2010 (Real Decreto 1598/2010)",
+   "despues": "Los servicios regionales que discurren íntegramente por Cataluña se traspasaron por el Real Decreto 1598/2010, con efectos desde el 1-1-2011,",
+   "motivo": "Precisión de fecha: el Real Decreto 1598/2010 (BOE 22-12-2010) traspasa los servicios «a partir del día 1 de enero de 2011» (apartado G del acuerdo).",
+   "fecha": "2026-11-19"
+  },
+  {
+   "propuesta": "junts-11",
+   "criterio": "antecedentes",
+   "antes": "y a finales de ese año la de los servicios regionales íntegramente desarrollados en Cataluña (Real Decreto 1598/2010)",
+   "despues": "y con efectos desde el 1-1-2011 la de los servicios regionales íntegramente desarrollados en Cataluña (Real Decreto 1598/2010, de diciembre de 2010)",
+   "motivo": "Misma precisión de fecha en antecedentes: el decreto es de diciembre de 2010 y el traspaso surte efecto el 1-1-2011.",
+   "fecha": "2026-11-19"
+  },
+  {
+   "propuesta": "junts-12",
+   "criterio": "antecedentes",
+   "antes": "En 2010 se creó Aena Aeropuertos, con hasta un 49 % de capital privado,",
+   "despues": "En 2011 se creó Aena Aeropuertos, que podía tener hasta un 49 % de capital privado,",
+   "motivo": "Error de fecha: la fuente citada (Betancor y Viecens, Fedea, p. 2) dice que «En febrero de 2011 el Consejo de Ministros autoriza la creación» de Aena Aeropuertos; el Real Decreto-ley 13/2010 (art. 7, BOE-A-2010-18651, comprobado) ordenaba constituirla «antes del 28 de febrero de 2011».",
+   "fecha": "2026-11-19"
+  },
+  {
+   "propuesta": "junts-12",
+   "criterio": "antecedentes",
+   "antes": "en abril Aena había calificado de «clarament incompatibles» con el marco constitucional esas propuestas, según NacióDigital.",
+   "despues": "en abril el presidente de Aena había calificado de «clarament incompatibles» con el marco constitucional las propuestas de participación o traspaso de la gestión aeroportuaria a las comunidades autónomas, aunque defendía un órgano «estrictament consultiu» como el del País Vasco, según NacióDigital.",
+   "motivo": "Inexacto: según NacióDigital (16-4-2026), el presidente de Aena calificó de «clarament incompatibles» las propuestas de participación o traspaso de la gestión a las comunidades autónomas, y en la misma intervención defendió un órgano «estrictament consultiu» como el del País Vasco; «esas propuestas», tras describir el órgano paritario del 12-nov (que Ara compara con el vasco), atribuía a Aena el rechazo de un órgano que la fuente dice que defendía.",
+   "fecha": "2026-11-19"
+  }
+ ],
+ "dudas": [
+  "junts-08 (financiación, «no_verificable», igual que pnv-08 y bng-07): la crónica de Qué! (12-6-2026) que el propio texto cita en antecedentes dice que el Gobierno alegó que suprimir los coeficientes reductores «costaría más de 3.300 millones de euros» y que afecta a «casi 900.000 pensionistas». El texto («No se ha localizado una estimación oficial publicada») es literalmente cierto, porque no se ha publicado el cálculo, pero junts-04 valora «mixta» con una estimación de la Comisión que solo consta en prensa (132 M€). Recomiendo que la próxima auditoría de coherencia decida a la vez junts-08, pnv-08 y bng-07: si una cifra oficial citada en prensa basta para «coste estimable», pasarían a «mixta» con la referencia de 3.300 M€ (alcance: la enmienda de junio de 2026, sin la retroactividad que añade Junts). No se ha cambiado aquí para no separar a Junts de las demás.",
+  "Selección (decisión editorial, no error): junts-02 y junts-08 no aparecen en la introducción ni en «Catalunya al centre» y se apoyan en su repetición en tres secciones y en el anexo. La alternativa con más respaldo en esas páginas sería el parque público de alquiler («Volem ampliar amb força el parc públic de lloguer assequible», p. 9), cuyo punto de programa es exigir al Estado recursos «equiparables a la mitjana europea» para vivienda (5.1, p. 17), sin cifra. Recomiendo mantener la selección: junts-03 ya cubre la medida de parque público que el capítulo nombra.",
+  "La «nota» de evaluacion.json dice «repartido a la prensa el 18-nov-2026»; lo comprobado es que Ara aloja una copia y que Ara y NacióDigital informaron de su presentación. Es una cuestión de redacción que conviene resolver al sustituir el marcador PENDIENTE_URL_OFICIAL por la URL oficial.",
+  "junts-12, legal: el art. 22 de la Ley 18/2014 condiciona la autorización a que la enajenación «permita el mantenimiento de una red de aeropuertos de interés general suficiente» para sus objetivos (entre ellos la sostenibilidad económica, art. 21); el texto lo resume como «si no afecta a la sostenibilidad económica de la red». No lo he considerado error, pero una redacción más literal sería preferible.",
+  "Las URL de la base «compromisos» que el programa ya no necesita (notas de junts.cat, El Nacional, Infobae, Europa Press) se retiraron de las fuentes al pasar a la base programa; siguen en compromisos/seleccion.json.",
+  "No se han revisado vídeos ni redes sociales."
+ ]
+}
