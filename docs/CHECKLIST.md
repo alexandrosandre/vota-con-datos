@@ -1,6 +1,6 @@
 # Checklist · vota con datos (29-N)
 
-Actualizado: 18-nov-2026. Solo lo pendiente; lo terminado está en el historial de git. La web ya está
+Actualizado: 19-nov-2026. Solo lo pendiente; lo terminado está en el historial de git. La web ya está
 en línea; aquí «bloquea» significa **no difundirla ni anunciarla** (o, si ya circula, que deja de ser
 correcta o legal) hasta que esté hecho.
 
@@ -67,8 +67,10 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
   - [ ] Junts, NC-BC (UPC), UPN — sin programa en sus webs oficiales el 18-nov a las 21:07. **Junts** repartió a la prensa
     su programa del 29-N el 18-nov (90 pp., «Catalunya al centre»; copia en el servidor de Ara, sha256 cde2c5f3…), pero
     junts.cat no lo publica: no cuenta hasta que esté en su web (mismo criterio que Podemos el 16-nov). Análisis preparado
-    sobre esa copia en una rama local sin publicar (`prep-junts-29n`); comprobación temprana programada el 19-nov a las 7:17:
-    si el PDF oficial es idéntico, se publica tras revisión independiente y verificación del paso 1.
+    sobre esa copia en una rama local sin publicar (`prep-junts-29n`), con revisión independiente del paso 2 y verificación
+    del paso 1 aprobadas (Junts 16 → 18 posiciones; q06 queda en null). **19-nov, 07:17:** junts.cat sigue sin publicarlo
+    (/programa-electoral/ redirige al de las europeas de 2024; ningún PDF nuevo desde el 6-nov; ninguna entrada del 19-nov).
+    Si el PDF oficial es idéntico (sha256 cde2c5f3…), se completan url y fecha y se publica.
   - PSC: sigue asumiendo el programa del PSOE; su manifiesto del 29-N (8 pp., socialistes.cat/generals) queda catalogado
     como `documento_programatico`, como el de UPC.
   - Compromís **retiró su PDF** el 18-nov a mediodía y por la tarde volvió a servir en la misma URL una **versión revisada**
