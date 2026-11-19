@@ -2,7 +2,7 @@
  "grupo": "g20",
  "codificador": "Claude (Anthropic) — recodificación con el programa de Junts per Catalunya para el 29-N (copia del diario Ara del 18-nov-2026, pendiente de publicación oficial), protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13-nov («A qué partido cuenta cada fuente»)",
  "fecha": "2026-11-19",
- "nota": "PENDIENTE DE PUBLICACIÓN OFICIAL: no aplicar ni publicar hasta que Junts publique el programa en un canal oficial con el mismo sha256 (cde2c5f3…); entonces hay que sustituir en cada posición la url «PENDIENTE_URL_OFICIAL» (y la fecha, si cambia) por las oficiales. Solo posiciones de Junts que cambian (de valor o de fuente) o se añaden con su programa para el 29-N («Catalunya al centre. Programa electoral 29N», 90 pp., en catalán). Hoy (19-nov) no está en ninguna web oficial de Junts: se ha analizado la copia que aloja el diario Ara (https://static1.ara.cat/ara/public/content/file/original/2026/1118/17/programa-electoral-junts-29n.pdf; PDF creado el 18-nov a las 16:44 CET), catalogada en partidos.json (entrada «junts», programa.url = PENDIENTE_URL_OFICIAL). Fuente «programa»; cuenta solo para Junts. Cada posición lleva en «sustituye» la posición vigente hasta ahora (con el grupo del que procede) y en «motivo_cambio» por qué cambia. Citas literales en catalán; la nota de cada posición empieza con su traducción al castellano, como en Compromís (g10) y Ara Més (g15). Páginas del PDF, que coinciden con la numeración impresa (p. 1 cubierta, p. 3 índice, portadillas de una página en las pp. 2, 4, 6, 11, 43, 66 y 87; pp. 87-89, anexo de iniciativas de la legislatura; p. 90, contraportada). El programa se leyó entero (pp. 5-89) para las 30 afirmaciones vigentes. Prevalece sobre las declaraciones de campaña y los discursos en el Congreso donde trata la medida al menos tan directamente. Se conservan las posiciones vigentes en q09, q29, q31 y q34 (el programa no trata esas medidas o lo hace de forma menos directa sin contradecirlas) y siguen en null q04, q05, q08, q13, q19, q21, q22, q25, q26, q27 y q30. Razonamiento, descartes y dudas en notas_g20.md. build_fase1.py comprueba las citas contra programa.texto de la entrada «junts» de partidos.json (ya catalogado).",
+ "nota": "PENDIENTE DE PUBLICACIÓN OFICIAL: no aplicar ni publicar hasta que Junts publique el programa en un canal oficial con el mismo sha256 (cde2c5f3…); entonces hay que sustituir en cada posición la url «PENDIENTE_URL_OFICIAL» (y la fecha, si cambia) por las oficiales. Solo posiciones de Junts que cambian (de valor o de fuente) o se añaden con su programa para el 29-N («Catalunya al centre. Programa electoral 29N», 90 pp., en catalán). Hoy (19-nov) no está en ninguna web oficial de Junts: se ha analizado la copia que aloja el diario Ara (https://static1.ara.cat/ara/public/content/file/original/2026/1118/17/programa-electoral-junts-29n.pdf; PDF creado el 18-nov a las 16:44 CET), catalogada en partidos.json (entrada «junts», programa.url = PENDIENTE_URL_OFICIAL). Fuente «programa»; cuenta solo para Junts. Cada posición lleva en «sustituye» la posición vigente hasta ahora (con el grupo del que procede) y en «motivo_cambio» por qué cambia. Citas literales en catalán; la nota de cada posición empieza con su traducción al castellano, como en Compromís (g10) y Ara Més (g15). Páginas del PDF, que coinciden con la numeración impresa (p. 1 cubierta, p. 3 índice, portadillas de una página en las pp. 2, 4, 6, 11, 43, 66 y 87; pp. 87-89, anexo de iniciativas de la legislatura; p. 90, contraportada). El programa se leyó entero (pp. 5-89) para las 30 afirmaciones vigentes. Prevalece sobre las declaraciones de campaña y los discursos en el Congreso donde trata la medida al menos tan directamente. Se conservan las posiciones vigentes en q09, q29, q31 y q34 (el programa no trata esas medidas o lo hace de forma menos directa sin contradecirlas) y siguen en null q04, q05, q08, q13, q19, q21, q22, q25, q26, q27 y q30. Razonamiento, descartes y dudas en notas_g20.md. build_fase1.py comprueba las citas contra programa.texto de la entrada «junts» de partidos.json (ya catalogado). Corrección de la verificación independiente (19-nov), aplicada por el coordinador: se retira q06 (la única mención es el anexo «Principals iniciatives de la legislatura», p. 88, balance de la legislatura anterior; mismo criterio que nuevas_2026-11-12b.json, que dejó esta celda en null). Quedan 14 celdas; Junts 16 → 18 posiciones.",
  "fuentes": [
   {
    "ruta": "data/sources/programas/junts/programa-electoral-junts-29n.pdf",
@@ -12,7 +12,6 @@
    "usos": [
     "junts/q01",
     "junts/q03",
-    "junts/q06",
     "junts/q32",
     "junts/q11",
     "junts/q12",
@@ -35,7 +34,6 @@
    "usos": [
     "junts/q01",
     "junts/q03",
-    "junts/q06",
     "junts/q32",
     "junts/q11",
     "junts/q12",
@@ -93,34 +91,6 @@
     "formato": null,
     "marco": null,
     "nota": "Traducción: «Objetivo 2: Vivienda: más seguridad jurídica y más oferta para que los jóvenes puedan emanciparse, menos presión fiscal para acceder a la primera vivienda y deducciones en el IRPF por el alquiler y por la hipoteca. [...] Rebajar la fiscalidad en el acceso a la vivienda: [...] Reducir del 10 % al 5 % el IVA de la vivienda habitual de obra nueva y de autopromoción». Programa oficial del 29-N, sección «Els joves al centre», objetivo 2 y punto 2.4 (p. 60); la misma rebaja figura, para todas las edades y con límites de superficie, precio y renta, en el punto 3.4 de la sección de vivienda (p. 17) y en el 2.16 de la de economía (p. 69). Rebaja a la mitad (no un 60 %) el IVA de la vivienda habitual nueva, dentro de los objetivos para que los jóvenes accedan a la primera vivienda, pero sin límite de edad en la propia medida y sin tocar el impuesto de transmisiones (el programa lo defiende como competencia de la Generalitat, p. 67). Misma dirección con otras cifras y otro alcance: +1, como ERC, Compromís, Ara Més y Vox.",
-    "sustituye": {
-     "valor": null,
-     "fuente": null,
-     "cita": null,
-     "pagina": null,
-     "url": null,
-     "medio": null,
-     "fecha": null,
-     "nota": null,
-     "quien": null,
-     "formato": null,
-     "marco": null,
-     "grupo": "codificacion_g3.json"
-    },
-    "motivo_cambio": "Celda nueva: antes null (sin posición en las fuentes válidas)."
-   },
-   "q06": {
-    "valor": -1,
-    "fuente": "programa",
-    "cita": "Oposició a la imposició de la jornada laboral de 37,5 hores.",
-    "pagina": 88,
-    "url": "PENDIENTE_URL_OFICIAL",
-    "medio": "Programa oficial («Catalunya al centre», 90 pp.)",
-    "fecha": "2026-11-18",
-    "quien": null,
-    "formato": null,
-    "marco": null,
-    "nota": "Traducción: «Oposición a la imposición de la jornada laboral de 37,5 horas». Programa oficial del 29-N, anexo «Principals iniciatives de la legislatura», bloque «Fiscalitat, autònoms i activitat econòmica» (p. 88): el programa presenta ese balance como su punto de partida («Aquest programa que us presentem parteix de la feina feta aquests últims anys», p. 7). Rechaza expresamente la reducción por ley de la jornada a 37,5 horas. En la parte de propuestas no hay ninguna sobre la jornada máxima, y la más cercana va en sentido contrario: «Ampliar el límit d’hores extraordinàries perquè qui ho vulgui pugui treballar més i cobrar més» (punto 5.5 de la sección de economía, p. 70). −1 y no −2: es una línea del anexo de iniciativas de la legislatura que acaba, no una propuesta para la próxima, y lo que rechaza es la «imposició».",
     "sustituye": {
      "valor": null,
      "fuente": null,

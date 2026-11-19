@@ -78,8 +78,8 @@ Solo a `junts`. Junts concurre sola; no se toca ninguna celda de otro partido.
 
 Grupos de origen: g3 (q03, q06, q12, q17, q23, q32), g4 (q01, q11, q15, q16, q18, q35), g7 (q24, q33), g12 (q36).
 
-Resumen: 15 celdas en g20. 3 nuevas (q03, q06, q24), 3 cambios de valor (suben q12 y q23; se endurece q01) y 9 solo de
-fuente (q11, q15, q16, q17, q18, q32, q33, q35, q36). Cobertura de Junts: 16 → 19 posiciones (15 de programa y 4 de
+Resumen: 14 celdas en g20 (la verificación independiente retiró q06; ver abajo). 2 nuevas (q03, q24), 3 cambios de valor (suben q12 y q23; se endurece q01) y 9 solo de
+fuente (q11, q15, q16, q17, q18, q32, q33, q35, q36). Cobertura de Junts: 16 → 18 posiciones (14 de programa y 4 de
 campaña). Valores finales: +2 ×5, +1 ×6, −1 ×6, −2 ×2; null en q04, q05, q08, q13, q19, q21, q22, q25, q26, q27 y q30.
 
 ## Valores: razonamiento
@@ -186,9 +186,17 @@ pipeline/build_fase1.py` no da errores:
 - con g20 y sin verificación, lo omite («omitido, sin verificación aprobada») y `fase1.json` sale idéntico al del
   repositorio;
 - con un `verificacion_g20.json` provisional (`"aprobado": true`, solo en la copia) aplica g20 después de g19: Junts pasa de
-  16 a 19 posiciones, cambian exactamente las 15 celdas de la tabla y ningún otro partido cambia.
+  16 a 18 posiciones (tras retirar q06), cambian exactamente las 14 celdas de la tabla y ningún otro partido cambia.
 
 Además, `python3 -I -c` en el worktree replica las comprobaciones de `build_fase1.py` sobre g20 (cita literal con `norm`
 contra `programa.texto` de `junts`, valores en −2..2, fuente programa, url y fecha pendientes): sin errores. En el
 repositorio solo se han creado `codificacion_g20.json` y este fichero; falta la verificación independiente
 (`verificacion_g20.json`) y la publicación oficial del programa.
+
+
+## Verificación independiente (19-nov)
+
+14 celdas aprobadas y q06 rechazada: la jornada de 37,5 h solo aparece en el anexo «Principals iniciatives de la legislatura»
+(p. 88), que el propio programa presenta como rendición de cuentas de la legislatura pasada; el prompt 2 excluye las
+votaciones y posiciones de otras legislaturas, y nuevas_2026-11-12b.json ya dejó esta celda en null por el mismo motivo.
+Corrección aplicada: Junts 16 → 18 posiciones (14 de programa, 4 de campaña).
