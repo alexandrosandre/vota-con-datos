@@ -1,0 +1,273 @@
+{
+ "grupo": "g20",
+ "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13-nov («A qué partido cuenta cada fuente», precedencia)",
+ "fecha": "2026-11-19",
+ "aprobado": false,
+ "revisadas": 15,
+ "resultado": {
+  "ok": 14,
+  "corregido": 0,
+  "rechazado": 1,
+  "celdas_no_tocadas_confirmadas": "ver «celdas_no_tocadas»"
+ },
+ "alcance": "Las 15 posiciones de Junts de codificacion_g20.json, sacadas de su programa para el 29-N («Catalunya al centre. Programa electoral 29N», 90 pp., en catalán; copia del diario Ara, pendiente de publicación oficial), las 4 celdas en las que el codificador conserva la posición vigente, las 11 que deja en null y una búsqueda propia de posiciones no recogidas.\n\n(1) Fuente. El sha256 del PDF del repositorio (cde2c5f3…374b6) coincide con partidos.json (entrada «junts», url PENDIENTE_URL_OFICIAL, estado publicado solo en esta rama) y con «fuentes»; el del texto (0c48b543…14c6) coincide con «fuentes» y con un pdftotext nuevo sin -layout del PDF. Es programa del 29-N: el encabezado de cada página dice «PROGRAMA ELECTORAL 29-N» y la p. 5 «En aquestes eleccions del 29N». La procedencia (copia de Ara, no publicada aún por Junts) no se ha vuelto a comprobar en la red: está documentada en partidos.json y no cambia la verificación de contenido.\n\n(2) Lectura. Se extrajo cada página con pdftotext con y sin -layout (-f N -l N; el -layout separa las dos columnas). Se leyeron enteras las páginas de cada cita y su contexto (5, 7-10, 12-19, 23, 26-28, 47-51, 53-54, 57-58, 60, 67-70, 73-78, 81-84, 87-89). En el resto se buscó por palabras clave en catalán: topall, contenció, zones tensionades, IVA, transmissions, pròrroga, durada, patrimoni, grans fortunes, IRPF, jornada, hores, salari mínim, jubilació, concerts, privada, publicosocial, concertada, vehicular, immersió, castellà, regularització, menors, referèndum, autodeterminació, concert econòmic, deute, FLA, eòlic, marina, nuclear, avortament, Igualtat, ocupació, 48 hores, mordassa, seguretat ciutadana, presó permanent, indult, OTAN, 3,5, Ceuta, exèrcit, Sàhara, Marroc, Mercosur, preus, aliments.\n\n(3) Citas. Cada fragmento (separado por [...], con la misma partición que build_fase1.py) se comprobó con norm() de verify_quotes.py contra el .txt completo y contra el texto de la página declarada extraído de nuevo del PDF: las 15 citas son literales y están en su página, y en ninguna otra página aparecen completas. Tienen 60 palabras o menos (11 a 58, contando los [...]). En las páginas a dos columnas se comprobó con -layout el número de punto: q35 es el 6.5 del objetivo 6 (p. 15) y q23 son los puntos 1.1 y 1.2 seguidos (p. 17).\n\n(4) Valor. Se juzgó contra el texto exacto de cada afirmación y su contexto (preguntas.json), y se comparó con el valor y la nota de los demás partidos en fase1.json para la misma afirmación (en especial el PP y Vox en q01, q23 y q11; ERC en q03, q12, q16, q18 y q32; el PNV en q08, q15 y q32; el PSOE en q01, q18, q23 y q24; Podemos y el Frente Amplio en q24 y q33; Ara Més en q32), y con los precedentes de nuevas_2026-11-12b.json (q06) y g14 (q08).\n\n(5) Precedencia. El programa va primero cuando trata la medida al menos tan directamente como la fuente vigente, también si coincide el valor; si no la trata o lo hace de forma menos directa sin contradecirla, se conserva la vigente (q09, q29, q31, q34). Las 12 «sustituye» con valor coinciden campo a campo con la celda vigente de fase1.json y con el grupo indicado; las 3 null (q03, q06, q24) llevan «nota»: null en vez de la nota de su grupo (cosmético, ver correcciones_de_campos).\n\nResultado. 14 celdas aprobadas tal cual y 1 rechazada (q06 queda en null: es balance de la legislatura anterior, no propuesta). Como build_fase1.py aplica las celdas del grupo tal como están en la codificación y el verificador no la edita, «aprobado» queda en false hasta que se quite q06 de codificacion_g20.json (correcciones_de_campos); hecho eso, se pone true y g20 aplica las 14 celdas (Junts 16 → 18). Mecanismo comprobado en una copia (ver recuento.build).",
+ "cambios": [
+  {
+   "partido": "junts",
+   "pregunta": "q06",
+   "antes": -1,
+   "despues": null,
+   "motivo": "Rechazada la celda nueva: la única mención está en el anexo de iniciativas de la legislatura anterior (votación pasada), no en las propuestas para el 29-N; se queda en null, como en nuevas_2026-11-12b.json. Ver posiciones y duda 1."
+  }
+ ],
+ "correcciones_de_campos": [
+  {
+   "partido": "junts",
+   "pregunta": "q06",
+   "campo": "codificacion_g20.json (celda junts/q06)",
+   "motivo": "REQUISITO para aprobar el grupo: quitar la celda q06 de «posiciones.junts» (o dejarla en valor null con la nota null vigente de codificacion_g3.json) y quitar «junts/q06» de los dos «usos» de «fuentes». build_fase1.py aplica las celdas del grupo tal como están en la codificación: si se pone aquí «aprobado»: true sin ese cambio, publicaría el −1 rechazado. Con el cambio, poner «aprobado»: true en esta verificación; las otras 14 celdas quedan aprobadas sin cambios."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "—",
+   "campo": "codificacion_g20.json («nota») y notas_g20.md",
+   "motivo": "PENDIENTE, al aplicar lo anterior: los recuentos pasan de 15 a 14 celdas de programa, de 3 a 2 nuevas y la cobertura de Junts de 16 → 19 a 16 → 18 (14 de programa y 4 de campaña); en notas_g20.md, la fila q06 de la tabla vuelve a null y las «nueve» posiciones del resumen de valores pasan a +2 ×5, +1 ×6, −1 ×5, −2 ×2; la nota de publicación oficial dice «las 15 posiciones», que pasan a 14."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q03, q24 (y q06)",
+   "campo": "sustituye.nota",
+   "motivo": "PENDIENTE (cosmético, no cambia ningún valor ni el build): en las celdas que pasan de null a valor, «sustituye» lleva «nota»: null; la convención de g14, g15 y g16 (ya señalada en g19) es copiar la nota de la celda null de su grupo de origen (codificacion_g3.json en q03; codificacion_g7.json en q24, la del rechazo de Madrenas del 14-nov), porque fase1.json no guarda notas de las null. El verificador no edita el fichero del codificador."
+  }
+ ],
+ "posiciones": [
+  {
+   "partido": "junts",
+   "pregunta": "q01",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal (p. 60, punto 2.2 de «Els joves al centre»). Propone derogar los artículos de la Ley 12/2023 «començant pels de contenció de preus i zones tensionades», que es el único mecanismo vigente de limitación de rentas, con dos motivos: invaden la competencia exclusiva de Cataluña y reducen la oferta. La introducción de vivienda (p. 16) rechaza los topes en sí («anys de topalls de preus [...] no n'han construït ni un. Un topall pot semblar una solució ràpida, però no fa aparèixer pisos nous»). Un tope fijado por ley estatal choca con los dos motivos a la vez. Propuesta expresa de suprimir la limitación de rentas donde ya existe: −2, el criterio del PP (medida 145, eliminar zonas tensionadas e índice). Vox (−1) solo deroga la Ley de Vivienda en bloque, sin hablar de precios. El punto 8.1 de vivienda (p. 18, «Revisar la legislació estatal d'habitatge») es más vago, pero no lo contradice. Sustituye al −1 de Madrenas (11-nov-2025), que criticaba la contención de rentas sin proponer nada. Duda 4: se mantiene −2."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q03",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 60; los tres fragmentos son el enunciado del objetivo 2 y el punto 2.4 de la misma página). Rebaja del IVA de la vivienda habitual nueva del 10 % al 5 % (un 50 %, no un 60 %), sin límite de edad en la propia medida (la repiten el punto 3.4, p. 17, para todas las edades con límites de superficie, precio y renta, y el 2.16, p. 69) y sin tocar el ITP, que el programa defiende como tributo cedido a la Generalitat (p. 67). Misma dirección con otra cifra y otro alcance: +1, el criterio de ERC (rebaja de IVA e ITP para todas las edades, sin cuantificar), Compromís, Ara Més, Vox y SALF. Celda nueva (antes null)."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q06",
+   "veredicto": "rechazado",
+   "aprobado": false,
+   "valor_codificador": -1,
+   "valor_final": null,
+   "motivo": "Rechazada: se queda en null (el codificador proponía −1). La cita es literal y está en la p. 88, pero en el anexo «Principals iniciatives de la legislatura» (pp. 87-89), que el propio programa presenta como «el retiment de comptes del que han fet els nostres grups parlamentaris a les Corts Generals durant la legislatura passada» (p. 5), separado del «relat general del model de societat que proposem». «Oposició a la imposició de la jornada laboral de 37,5 hores» describe lo que Junts hizo en la legislatura anterior (la enmienda a la totalidad con la que el Congreso devolvió el proyecto en septiembre de 2025), no un compromiso para la próxima: es una votación pasada contada en el programa, y el prompt 2 excluye las votaciones parlamentarias y las posiciones de otras legislaturas. Precedente directo: en nuevas_2026-11-12b.json esta misma posición quedó en null («junts q06: la oposición a las 37,5 horas solo consta como balance de la legislatura anterior (votaciones pasadas)»), igual que «decir no al 5 %» del PSOE en q26 («reivindicación de una decisión pasada, no compromiso») y el paquete laboral de EH Bildu para la legislatura anterior en q06; el BNG q18 (verificacion_g4) usó un logro del programa solo como coherencia, no como fuente. Además, otras líneas del mismo bloque del anexo sí pasan a las propuestas (la jubilación sin penalización con 40 años cotizados, puntos 5.3, p. 58, y 5.4, p. 70) y esta no: la parte de propuestas no dice nada de la jornada máxima, y lo más cercano, ampliar el límite de horas extraordinarias (punto 5.5, p. 70), es otra medida. «Imposició» deja además abierto si el rechazo es a la reducción o a imponerla sin acuerdo. Ante la duda entre un valor y null, null. Duda 1."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q32",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 68, «Competències a reclamar o millorar», punto 4). Reclama que Cataluña pueda fijar «un salari mínim propi, adaptat al cost de la vida», y el punto 5.1 (p. 70) lo orienta «cap al 60% del salari mitjà català»; la referencia de 1.400 € en 14 pagas (punto 5.1, p. 57) es la de las pensiones mínimas. Implica, por el mayor coste de la vida, un salario mínimo superior, pero no lo dice como principio ni fija que deba estar por encima del estatal: +1, el criterio de la nota oficial de Junts que sustituye (verificada en g3), de Ara Més («compensar» el coste de vida) y de UPN. ERC, PNV, BNG y EH Bildu (+2) dicen expresamente que debe superar al estatal o es la afirmación literal. Mismo valor; cambia la fuente. Duda 2: se mantiene +1."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q11",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (p. 53, introducción de «L'escola i la universitat catalanes al centre»). La pública y la concertada forman el Servicio de Educación de Cataluña y «Totes dues xarxes necessiten els mateixos recursos»; el punto 1.2 (p. 54) actualiza los módulos de la concertada a los costes reales y la p. 9 defiende el modelo «format per centres públics i centres concertats». Es incompatible con retirar la financiación, pero no rechaza expresamente la medida: −1, como UPN, Vox y el PNV; el PP (−2) rechaza expresamente suprimir conciertos. Dice lo mismo que Cervera (23-sep-2026), casi con sus palabras: solo cambia la fuente."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q12",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 19, introducción de «La llengua catalana al centre»). «L'escola catalana, amb el català com a llengua vehicular, és una línia vermella: cap llei ni cap tribunal no ha de decidir com s'ensenya a les aules de Catalunya»: rechaza de forma expresa que una ley o un tribunal fijen la lengua de las clases, que es la afirmación (cada comunidad decide, sin mínimo legal ni judicial), y lo marca como prioritario («línia vermella», repetido en la p. 8; «La Generalitat com a administració educativa única», p. 19; «defensar la immersió lingüística», p. 53). +2, como ERC (medida 17, impedir que se impongan porcentajes). El Frente Amplio (+1) solo garantiza la inmersión, sin rechazar el mínimo fijado por ley o tribunales. Sube del +1 reactivo de Nogueras (19-oct)."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q15",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Citas literales (p. 48: objetivo 2 y punto 2.2). Pide «menys regularitzacions extraordinàries» (no ninguna) y oponerse a las «regularitzacions massives aprovades per decret, sense planificació laboral ni integració lingüística»; el punto 2.4 pide que las decisiones estatales sobre regularizaciones tengan en cuenta la capacidad de Cataluña y el 4.1 (p. 48) que «cap regularització no es faci d'esquena a la llengua del país», que presupone regularizaciones con condiciones. En contra de otra regularización como la de 2026, con matices: −1, como el PNV. No −2: no la rechaza sin condiciones ni propone prohibirlas (PP, Vox y SALF, −2). Duda 5: se mantiene −1. Mismo valor que Nogueras (22-abr-2026); el programa es más directo."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q33",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (p. 84, punto 5.6 de «El món local al centre»). Pide que el reparto de menores entre comunidades «continuï reconeixent l'esforç d'acollida» de Cataluña y que no se le asignen traslados mientras su red esté tensionada; el punto 5.4 (p. 49) quiere que «en qualsevol repartiment» cuente ese esfuerzo, «amb compensació econòmica per a les comunitats que tenen més places que la mitjana», y la p. 47 presenta como logro que el reparto tuviera en cuenta ese esfuerzo. Da por hecho que el reparto sigue y pide condiciones y una exención para Cataluña: no propone suprimirlo y propone compensar a las comunidades que acogen más, lo que se opone a suprimirlo, de forma indirecta: −1, como el Frente Amplio, Adelante Andalucía y el PSOE. Duda 7: el programa trata el reparto al menos tan directamente como Cervera (31-ago-2026), sin contradecirlo, y el valor es el mismo; se acepta el cambio de fuente. Null no procede: dos puntos del programa se pronuncian sobre el reparto."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q16",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 12, introducción de la primera sección del programa). «Tot possible referèndum acordat amb l'Estat espanyol sobre el futur del nostre país ha d'oferir la mateixa tria»: contempla un referéndum de independencia pactado con el Estado y fija su pregunta; el punto 1.1 (p. 13) es «Garantir el dret de Catalunya a la seva autodeterminació emprant tots els mitjans democràtics necessaris». Pero el pacto aparece como hipótesis, junto a la «confrontació democràtica» y el mandato del 1-O, sin proponer negociarlo con el Gobierno: +1. ERC (+2) propone negociar su convocatoria en su primera medida. Duda 6: se mantiene +1. Más directo que Madrenas (26-may-2026), que ponía Escocia como ejemplo: cambia la fuente."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q17",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 68, «Competències a reclamar o millorar», punto 1). Ley del Concierto Económico Catalán «que ens situï fora del règim comú», con la Agencia Tributaria de Cataluña recaudando todos los tributos y «plena capacitat normativa»; la p. 67 añade «Si el País Basc té concert econòmic, Catalunya també l'ha de poder tenir» y la p. 5 lo pone el primero de los «espais de sobirania». Propuesta expresa y prioritaria del modelo de la afirmación, para Cataluña: +2, como el BNG para Galicia. Mismo valor que Nogueras (8-nov); cambia la fuente."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q18",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 68; el [...] une el título del objetivo 1 con su punto 1.3). «Exigir la condonació del 100% del deute de la Generalitat amb el [...] FLA»: que el Estado asuma toda la deuda de la Generalitat con el FLA, más que la medida de la afirmación (de media un 19 %), sin mencionar el proyecto de ley de 83.252 millones. Misma dirección yendo más allá, sin pronunciarse sobre la medida concreta: +1, como el Frente Amplio, Compromís, Ara Més y Adelante Andalucía; ERC y el PSOE (+2) defienden la medida. Mismo valor que Cruset (23-jul-2026), que facilitaba el proyecto con la misma condición del 100 %: cambia la fuente."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q36",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 78, punto 5.1 de «La sobirania energètica de Catalunya al centre»). Revisar el calendario de cierre de las centrales catalanas «si es dona el cas que les energies renovables no puguin assegurar el volum demandat»; la introducción (p. 76) advierte contra «Prescindir prematurament» de la generación en operación. A favor de alargarlas, condicionado y limitado a Ascó y Vandellòs: +1. El PP y Vox (+2) proponen eliminar el calendario. Mismo valor y la misma condición que Calvo (9-sep-2026): cambia la fuente."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q23",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Citas literales (p. 17, puntos 1.1 y 1.2 de vivienda, los dos primeros de la sección; el layout confirma que están seguidos en la columna izquierda). «Desnonar les ocupacions il·legals en un màxim de 48 hores, mitjançant un judici immediat» es la afirmación con su plazo, y el 1.2 añade una ley orgánica para el desalojo policial inmediato en flagrancia; lo repiten la p. 9 («s'ha de resoldre en 48 hores, i no en dos anys») y el punto 6.2 de justicia (p. 15). Propuesta expresa y prioritaria: +2, como el PP, Vox, SALF y UPN. El PSOE (+1) lo pone como objetivo sin compromiso propio. Sube del +1 de Nogueras (18-oct), que reivindicaba la ley de Junts sin el plazo."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q24",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 14, punto 1.10 de derechos y libertades). «Derogar la Llei de seguretat ciutadana («llei mordassa»)», repetido en el punto 2.3 de seguridad (p. 23: «Derogar la Llei orgànica de protecció de la seguretat ciutadana»). Propuesta expresa de derogarla entera: +2, como ERC, Compromís, Ara Més, Podemos y el Frente Amplio. Lo que sigue en la cita («en el seu cas, prohibir o limitar les bales de goma...») son medidas añadidas, no una reforma en lugar de la derogación; el PSOE y EH Bildu (+1) proponen sustituirla o reformarla. Celda nueva (antes null: el +1 de Madrenas se rechazó en verificacion_g7)."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q35",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal (p. 15). Es el punto 6.5 del objetivo 6 «Reforma del Codi Penal, seguretat i garanties processals»: en la maquetación a dos columnas (pdftotext -layout), el objetivo 6 empieza al pie de la columna izquierda (6.1, 6.2) y sigue arriba de la derecha (6.3 a 6.7). «Derogar la presó permanent revisable»: quien la suprime rechaza con más razón ampliarla: −2, como el PNV, el BNG y Adelante Andalucía. Mismo valor que Pagès (17-mar-2026); cambia la fuente."
+  }
+ ],
+ "resolucion_dudas_codificador": [
+  {
+   "duda": 1,
+   "tema": "q06: ¿cuenta el anexo de iniciativas de la legislatura?",
+   "resolucion": "No cuenta como posición para el 29-N: null (se rechaza el −1). El programa separa dos partes (p. 5): «el retiment de comptes del que han fet els nostres grups parlamentaris [...] durant la legislatura passada» y «un relat general del model de societat que proposem», y el anexo (pp. 87-89, «Principals iniciatives de la legislatura») es la primera. «Oposició a la imposició de la jornada laboral de 37,5 hores» es el resumen de una votación de 2025; el prompt 2 excluye las votaciones y las posiciones de otras legislaturas, y el precedente es exactamente esta celda (nuevas_2026-11-12b.json: «solo consta como balance de la legislatura anterior (votaciones pasadas); null»), junto con PSOE q26 y EH Bildu q06 en el mismo fichero. No hay precedente de un anexo de balance usado como fuente: el «logro» del programa del BNG en q18 (verificacion_g4) solo se citó como coherencia de una declaración. La frase de la p. 7, «Aquest programa [...] parteix de la feina feta», es general y no convierte cada línea del balance en compromiso: cuando Junts quiere mantener una iniciativa la repite en las propuestas (jubilación sin penalización con 40 años, pp. 58 y 70) y la jornada no la repite. Si el editor decidiera que el anexo sí cuenta, el valor sería −1 (como propone el codificador), no −2, por ser balance y por la ambigüedad de «imposició»."
+  },
+  {
+   "duda": 2,
+   "tema": "q32: +1 o +2",
+   "resolucion": "+1. El +2 se ha dado cuando el programa dice que el salario autonómico debe superar al estatal (PNV «siempre por encima», ERC «superior a l'estatal», BNG «superior») o reproduce la afirmación (EH Bildu). Junts dice «adaptat al cost de la vida» y «cap al 60% del salari mitjà català», que en la práctica queda por encima, pero no lo establece; es el caso de Ara Més (+1). La cifra de 1.400 € es la meta de las pensiones mínimas (p. 57), no la definición del salario mínimo. Se mantiene el criterio de la nota oficial verificada en g3."
+  },
+  {
+   "duda": 3,
+   "tema": "q09: conservar a Calvo",
+   "resolucion": "Se conserva Calvo (−1). El programa («el model sanitari català, amb una xarxa de proveïdors diversa», p. 50; no apoyar medidas estatales que no respeten «el model sanitari català de col·laboració publicosocial», punto 3.3, p. 51) va en la misma dirección pero no habla de pagar a centros privados ni de los conciertos; Calvo responde a la ley de gestión directa y defiende la colaboración público-privada como «estructural». Menos directo sin contradecirlo: se conserva la vigente (criterio de g19 y de g10 con Compromís q09)."
+  },
+  {
+   "duda": 4,
+   "tema": "q01: −2 o −1",
+   "resolucion": "−2. El motivo competencial no rebaja el rechazo: la afirmación es precisamente un tope fijado por ley estatal sin depender de las comunidades, que es lo que Junts rechaza por invadir la competencia y, además, por reducir la oferta (p. 60) y por no funcionar (p. 16). Es una propuesta expresa de eliminar la limitación de rentas vigente, el caso del PP (−2); Vox (−1) solo deroga la ley en bloque, sin mencionar precios."
+  },
+  {
+   "duda": 5,
+   "tema": "q15: −1 o −2",
+   "resolucion": "−1. El −2 se ha reservado a quien prohíbe las regularizaciones o las rechaza sin condiciones (PP, Vox, SALF). Junts pide «menys», no ninguna, objeta la forma (masivas, por decreto, sin planificación laboral ni catalán) y presupone regularizaciones con condiciones («que cap regularització no es faci d'esquena a la llengua del país», punto 4.1). Como el PNV (−1)."
+  },
+  {
+   "duda": 6,
+   "tema": "q16: +1 o +2",
+   "resolucion": "+1. El referéndum pactado aparece como hipótesis («Tot possible referèndum acordat»), junto a la vía del 1-O y la «confrontació democràtica»; no se propone negociarlo con el Gobierno. ERC (+2) lo propone negociado en su primera medida. La prioridad de la autodeterminación (punto 1.1) no basta para el +2: no dice que la vía sea un referéndum pactado."
+  },
+  {
+   "duda": 7,
+   "tema": "q33: −1 de programa, conservar a Cervera o null",
+   "resolucion": "−1 de programa. Los puntos 5.4 y 5.6 (pp. 49 y 84) se pronuncian sobre el reparto entre comunidades: lo dan por vigente, piden que reconozca el esfuerzo de Cataluña y que se compense a las comunidades con más plazas que la media, lo que se opone a suprimirlo. Es al menos tan directo como Cervera, que reivindicaba el mecanismo del RDL 2/2025, y con el mismo valor: cambio solo de fuente. Null no procede, porque el programa sí trata la medida."
+  },
+  {
+   "duda": 8,
+   "tema": "q29: conservar a Gavín",
+   "resolucion": "Se conserva Gavín (+1). Las cláusulas espejo «especialment UE-Mercosur» (p. 73, también p. 75) y la «reciprocitat» en los acuerdos comerciales (p. 28) piden condiciones al acuerdo, no frenarlo ni suspender su aplicación provisional: es menos directo que Gavín, que pedía que no se aplicara provisionalmente, y no lo contradice. Mismo criterio que con el PNV (q29 null por pedir condiciones equivalentes a las importaciones)."
+  },
+  {
+   "duda": 9,
+   "tema": "q08: null o +1",
+   "resolucion": "null. Eliminar las penalizaciones a quien tenga 40 años cotizados o más (puntos 5.3, p. 58, y 5.4, p. 70) es una vía para carreras largas, no volver a los 65 años para todos: mismo criterio que el PNV (null, «sin penalización solo con más de 40 años cotizados») y que la resolución de g14 («la pensión sin penalización con 40 años cotizados es una vía para carreras largas, no la edad ordinaria para todos»). Compromís y el Frente Amplio tienen +2 porque además devuelven la edad ordinaria a los 65."
+  }
+ ],
+ "celdas_no_tocadas": [
+  "Se conservan (el programa no trata la medida o lo hace de forma menos directa sin contradecirla), comprobado página a página y por palabras clave: q09 (−1, Calvo; duda 3), q29 (+1, Gavín; duda 8), q31 (−1, Cruset: el programa solo dice que Junts votó contra «els decrets del Govern espanyol» de vivienda, p. 16, y defiende a «llogaters i petits propietaris davant dels decrets d'habitatge» en el anexo, p. 88; nada sobre la renovación de los contratos, y «pròrroga» solo aparece para el CGPJ, p. 14, y «durada» para permisos de residencia y cuidados de larga duración) y q34 (+2, Pagès: «Sàhara» y «Marroc» no aparecen; la política internacional, pp. 26-28, trata la UE, la OTAN, Ucrania y Palestina).",
+  "Siguen en null, confirmado: q04 (solo la capacidad normativa de la Generalitat sobre el impuesto sobre el patrimonio, p. 67, y suprimir sucesiones, punto 2.2, p. 68; nada del impuesto de solidaridad), q05 («Deflactar l'IRPF, rebaixar els primers trams, augmentar els mínims», punto 2.1, p. 68: rebaja genérica, no la escala de dos tipos ni el mínimo de 22.000 €), q06 (duda 1), q08 (duda 9), q13 (nada sobre prioridad nacional en vivienda social; el padrón y el arraigo, pp. 48 y 84, son otras medidas), q19 («projectes solars i eòlics amb criteris de cohesió territorial», punto 1.1, p. 81; «marina» no aparece), q21 («avortament» no aparece), q22 (ningún ministerio de Igualdad), q25 («indult» no aparece), q26 (una Cataluña independiente en la OTAN, p. 26, y una defensa europea «complementària de l'OTAN», p. 28; nada del 3,5 %), q27 (ni Ceuta ni las Fuerzas Armadas) y q30 (precios justos en origen con la Ley de la cadena alimentaria, pp. 74-75: otra medida).",
+  "Otros partidos: ninguna celda cambia. El programa cuenta solo para Junts, que concurre sola."
+ ],
+ "posiciones_no_recogidas": "No se encontró ninguna afirmación en la que el programa tome una posición clara que el codificador no haya recogido. Las más cercanas: q08 (40 años cotizados, duda 9), q29 (cláusulas espejo, duda 8), q09 (modelo de colaboración publicosocial, duda 3), q26 (OTAN sin cifra), q19 (eólica sin especificar) y q30 (precios en origen); todas medidas distintas o menos directas que la fuente conservada.",
+ "recuento": {
+  "antes": {
+   "junts": 16
+  },
+  "despues": {
+   "junts": 18
+  },
+  "cambios_de_valor": [
+   "junts q01 −1→−2",
+   "junts q12 +1→+2",
+   "junts q23 +1→+2"
+  ],
+  "celdas_nuevas": [
+   "junts q03 +1, q24 +2"
+  ],
+  "solo_fuente": [
+   "junts q11 q15 q16 q17 q18 q32 q33 q35 q36"
+  ],
+  "rechazadas": [
+   "junts q06 (−1 propuesto → null)"
+  ],
+  "nota": "El codificador proponía 15 celdas y 16 → 19 posiciones; con el rechazo de q06 quedan 14 celdas (3 cambios de valor, 2 nuevas y 9 solo de fuente) y 16 → 18 posiciones.",
+  "despues_detalle": {
+   "con_valor": 18,
+   "a_favor": 11,
+   "en_contra": 7,
+   "null": 12,
+   "null_preguntas": "q04 q05 q06 q08 q13 q19 q21 q22 q25 q26 q27 q30",
+   "valores": "+2 ×5 (q12 q17 q23 q24 q34), +1 ×6 (q03 q16 q18 q29 q32 q36), −1 ×5 (q09 q11 q15 q31 q33), −2 ×2 (q01 q35)",
+   "fuentes": "14 de programa y 4 de campaña (q09 Calvo, q29 Gavín, q31 Cruset, q34 Pagès)"
+  },
+  "build": "Comprobado en una copia (scratchpad v20/copia, solo data/fase1, data/partidos, los textos de programa y pipeline/): con codificacion_g20.json sin la celda q06 y una verificación provisional aprobada, python3 -I pipeline/build_fase1.py termina sin errores (exit 0) y cambia exactamente 14 celdas de Junts (16 → 18 posiciones); ningún otro partido cambia. En el repositorio, con esta verificación («aprobado»: false), build_fase1.py omite g20 y fase1.json no cambia."
+ },
+ "dudas": [
+  "junts/q06 (null): si el editor decide que el anexo de iniciativas de la legislatura cuenta como posición del programa, el valor sería −1 (balance, no propuesta, y «imposició» ambigua). El verificador no lo recomienda: el precedente de esta misma celda (nuevas_2026-11-12b.json) y el prompt 2 excluyen las votaciones pasadas.",
+  "junts/q32 (+1): alternativa +2 si el editor entiende que «adaptat al cost de la vida» y «cap al 60% del salari mitjà català» equivalen a «por encima del estatal»; habría que revisar con el mismo criterio Ara Més (+1, salario mínimo isleño para compensar el coste de vida).",
+  "junts/q12 (+2): lo plantea para Cataluña, no para cada comunidad con lengua cooficial, igual que ERC (+2) y el BNG (+1, campaña). Alternativa +1 solo si el editor exige que se formule en general; con ese criterio habría que revisar ERC.",
+  "junts/q01 (−2): parte del rechazo es competencial (que el Estado no legisle sobre vivienda en Cataluña). Alternativa −1 si el editor da más peso a ese motivo que al rechazo de los topes en sí (p. 16); el verificador no lo recomienda, porque la afirmación es un tope por ley estatal, que el programa rechaza por los dos motivos.",
+  "Publicación: como dice notas_g20.md, g20 solo debe aplicarse si Junts publica en un canal oficial un PDF con el mismo sha256 (cde2c5f3…); entonces hay que sustituir PENDIENTE_URL_OFICIAL (y la fecha, si cambia) en las 14 celdas y en «fuentes»."
+ ]
+}
