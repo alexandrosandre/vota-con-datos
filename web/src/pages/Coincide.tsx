@@ -383,11 +383,14 @@ function Resultados() {
   const ids = d.preguntas.map((q) => q.id);
   const hayVotos = Object.keys(d.votaciones ?? {}).length > 0;
   // Por defecto, lo que proponen (programa y campaña); a petición, contando lo que votaron en el Congreso (engine/congreso.ts).
-  const [conVoto, setConVoto] = useState(false);
-  const posCalculo = useMemo(() => (conVoto ? posicionesConVoto(posiciones, d.votaciones) : posiciones), [conVoto, posiciones, d]);
+  // Dos porcentajes por partido (decisión del editor, 20-nov): el de lo que proponen (ordena la lista y lo usan los pasos 2 y 3) y,
+  // al lado, el que cuenta lo que votaron en el Congreso (engine/congreso.ts).
+  const posConVoto = useMemo(() => posicionesConVoto(posiciones, d.votaciones), [posiciones, d]);
   // Partidos de los que no conocemos ninguna posición: van en un aviso aparte, no en la lista.
   const sinPosiciones = (partidos.value ?? []).filter((p) => !Object.values(d.posiciones[p.id] ?? {}).some((x) => x.valor !== null));
-  const res = afinidad(conPesoPorTema(e.respuestas, d.preguntas, e.temasImportantes), posCalculo, ids).filter((r) => !sinPosiciones.some((p) => p.id === r.partido));
+  const resp = conPesoPorTema(e.respuestas, d.preguntas, e.temasImportantes);
+  const res = afinidad(resp, posiciones, ids).filter((r) => !sinPosiciones.some((p) => p.id === r.partido));
+  const conVotos = Object.fromEntries(afinidad(resp, posConVoto, ids).map((r) => [r.partido, r.afinidad]));
   /** Temas en que coincides con lo que propone el partido pero votó lo contrario en el Congreso. */
   const votoContrario = (pid: string) =>
     d.preguntas.filter((q) => {
@@ -501,19 +504,10 @@ function Resultados() {
           <p style={{ margin: '8px 0 0' }}>La mayoría de tus respuestas son Neutral, así que el resultado apenas distingue entre partidos.</p>
         )}
         {hayVotos && (
-          <div class="row conmutador" role="group" aria-label="Qué cuenta en tu afinidad" style={{ marginTop: 10 }}>
-            <button class={`chip-btn${!conVoto ? ' on' : ''}`} aria-pressed={!conVoto} onClick={() => setConVoto(false)}>
-              Lo que proponen
-            </button>
-            <button class={`chip-btn${conVoto ? ' on' : ''}`} aria-pressed={conVoto} onClick={() => setConVoto(true)}>
-              Contando lo que votaron en el Congreso
-            </button>
-          </div>
-        )}
-        {conVoto && (
           <p style={{ margin: '8px 0 0', fontSize: '0.9rem' }}>
-            Donde un partido votó en el Congreso (2023-2026) la misma medida en sentido contrario a lo que propone, o sin haberse pronunciado, cuenta su voto: a favor, en contra o
-            abstención. Los partidos que no tenían diputados no cambian.
+            Cada partido tiene dos porcentajes. El grande sale de lo que propone para el 29-N. El segundo cuenta también lo que votaron sus
+            diputados en el Congreso (2023-2026): donde votaron la misma medida en sentido contrario a lo que proponen, o sin haberse
+            pronunciado, cuenta su voto. Los partidos que no tenían diputados solo tienen el primero.
           </p>
         )}
         <details class="desplegable" style={{ marginTop: 8 }}>
@@ -563,7 +557,7 @@ function Resultados() {
                         )}
                         {p?.ambito === 'autonómico' && <span class="pill">solo en {p.comunidades?.join(', ')}</span>}
                       </div>
-                      {!conVoto && votoContrario(r.partido).length > 0 && (
+                      {votoContrario(r.partido).length > 0 && (
                         <p class="voto-aviso">
                           En {votoContrario(r.partido).length === 1 ? '1 tema' : `${votoContrario(r.partido).length} temas`} en que coincidís con lo que propone,{' '}
                           {p?.articulo ? `${p.articulo} ` : ''}
@@ -574,6 +568,17 @@ function Resultados() {
                         <div class="bar" style={{ marginTop: 8, opacity: r.comparable ? 1 : 0.55 }}>
                           <i style={{ width: `${r.afinidad * 100}%` }} />
                         </div>
+                      )}
+                      {hayVotos && r.afinidad !== null && (
+                        <p class="pct-voto">
+                          {p?.en_congreso_xv && conVotos[r.partido] != null ? (
+                            <>
+                              Contando lo que votaron en el Congreso: <strong>{fmt.pct(conVotos[r.partido]!)}</strong>
+                            </>
+                          ) : (
+                            <span class="muted">Sin votos que contar: no tenía diputados en 2023-2026.</span>
+                          )}
+                        </p>
                       )}
                       {r.comunes > 0 && (
                         <button

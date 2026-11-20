@@ -143,9 +143,9 @@ export function Metodologia() {
               <strong>Lo que votaron.</strong> Un programa es una declaración de intenciones. Junto a la posición de cada partido mostramos lo
               que votaron sus diputados en el Pleno del Congreso entre 2023 y 2026 sobre esa misma medida, con enlace a la votación oficial, y
               avisamos cuando votaron lo contrario de lo que proponen. Solo cuentan las votaciones de la propia medida: si iba dentro de un
-              paquete con otras cosas (un decreto con muchas medidas), la enseñamos como «medida parecida», pero no la comparamos. Puedes
-              calcular tu afinidad <em>contando lo que votaron</em>: donde el voto contradice lo que proponen, cuenta el voto. Los partidos que
-              no tenían diputados no cambian.
+              paquete con otras cosas (un decreto con muchas medidas), la enseñamos como «medida parecida», pero no la comparamos. Cada
+              partido tiene dos porcentajes: el de lo que propone, que ordena la lista, y al lado el que cuenta también lo que votaron (donde el
+              voto contradice lo que proponen, cuenta el voto). Los partidos que no tenían diputados solo tienen el primero.
               <Tecnico>
                 El voto de cada partido se calcula con el voto nominal de sus diputados de los datos abiertos del Congreso: el sentido que vota
                 más de las tres cuartas partes; si no, «dividido». Cada diputado cuenta para el partido de la web por el que se presentó, con

@@ -120,9 +120,10 @@ que se publica un programa.
   copias oficiales en `data/sources/congreso/`). Votaciones del Pleno de la XV Legislatura sobre la misma medida (relación
   «misma»; los paquetes y medidas cercanas, «parecida», se enseñan pero no cuentan), seleccionadas por la medida y no por el
   resultado, con la fuente primaria del texto votado. Voto de un partido = sentido de más del 75 % de sus diputados que votan;
-  si no, «dividido». Se avisa cuando contradice la posición declarada; el modo «contando lo que votaron» sustituye la
-  posición por el voto (a favor +2, en contra −2, abstención 0) cuando van en sentido contrario o no hay posición. No cambia
-  el orden que usan los pasos 2 y 3.
+  si no, «dividido». Se avisa cuando contradice la posición declarada; junto al porcentaje de lo que proponen (que ordena la lista
+  y usan los pasos 2 y 3) se muestra un segundo porcentaje «contando lo que votaron»: la posición se sustituye por el voto
+  (a favor +2, en contra −2, abstención 0) cuando van en sentido contrario o no hay posición (decisión del editor, 20-nov:
+  los dos a la vista, sin conmutador).
 * **Coherencia de las respuestas** (`pares_coherencia` en `preguntas.json`, `web/src/engine/congreso.ts`). Pares que miden lo
   mismo desde dos lados; si las respuestas se separan 3 puntos o más en sentido opuesto, se pide revisarlas. No se corrige nada.
 
