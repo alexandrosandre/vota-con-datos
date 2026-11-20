@@ -81,6 +81,11 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
     añade el empadronamiento obligatorio y menos carga burocrática a los pequeños autónomos. La fuente pasa a ser esa versión
     (precedente de ERC y Frente Amplio) y la web deja de enlazar la copia archivada. Re-paginados los pasos 1 y 2 y el
     registro; revisión independiente; ninguna posición, valoración ni promesa cambia.
+  - PNV y Adelante Andalucía sirven otra versión en su URL oficial (comprobado el 20-nov): el PNV la cambió el 10-nov
+    (medida 05 de acogida: ahora rechaza grandes centros como el previsto en Arana; se mueven las pp. 25-28) y Adelante
+    Andalucía el 16-nov (solo el colofón). Catalogadas como fuente, re-paginados pasos 1 y 2 y registro, revisión
+    independiente; ninguna posición, valoración ni promesa cambia (el descarte del compromiso de Urtaran sobre Arana pasa
+    a «ya está en el programa»).
   - Republicados el 17-nov: ERC (numeración del 1 al 227, «LGBTI+», medida 32) y Frente Amplio (tarifa plana de 88 €, cláusulas
     IPC, cultura al 2 % del gasto, IVA franquiciado opcional); catalogados el 18-nov, ninguna posición ni valoración cambia.
   - Hecho el 16-nov: auditoría de coherencia tras el programa del Frente Amplio (`data/fase3/coherencia_2026-11-16.md`: 49 correcciones de
