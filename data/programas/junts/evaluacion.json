@@ -3,7 +3,7 @@
  "programa_sha256": "cde2c5f3f30b66c72dd4f4bae3d22e9f6bc3e0ee4362da72f9e32e85129374b6",
  "modelo": "Claude (Anthropic)",
  "fecha": "2026-11-19",
- "nota": "Evaluación de las 12 prioridades de extraccion.json (programa de Junts «Catalunya al centre», 90 páginas en catalán, repartido a la prensa el 18-nov-2026; se analiza la copia que aloja el diario Ara, sha256 cde2c5f3…, pendiente de que Junts lo publique en un canal oficial: ver data/partidos/partidos.json). La concreción se juzga siempre sobre el programa, con su cita y página (fuente «PENDIENTE_URL_OFICIAL#page=N» hasta que haya URL oficial). Cuando el hecho es el mismo se reaprovechan, con sus fuentes y cifras, textos de evaluaciones ya revisadas: las de los compromisos de campaña de Junts (base «compromisos», revisadas; se retiran al publicarse el programa porque todas sus prioridades están en él, y se conservan en el historial del repositorio) para junts-01 (antes junts-08), junts-02 (antes 06), junts-04 (antes 05), junts-05 (antes 04), junts-09 (antes 01) y junts-11 (antes 02); erc-07 para junts-03 (Sareb y Casa 47: mismas valoraciones); pnv-08 para junts-08 (jubilación sin coeficientes reductores con 40 años cotizados: mismas valoraciones); pp-10 para junts-10 (deflactar el IRPF con rebaja de tramos y mínimos sin cuantificar: mismas valoraciones). junts-06, junts-07 y junts-12 no tienen equivalente evaluado. Valoraciones que difieren de evaluaciones equivalentes, por una diferencia de hecho que el texto dice: financiación de junts-01 «no_verificable» (el compromiso junts-08 era «favorable» porque solo modificaba normas procesales; el programa, p. 17, añade «garantir l’atenció pública a les persones en situació de vulnerabilitat», gasto sin cuantificar, el mismo hecho que salf-02 y pp-03 según la auditoría de coherencia del 12-nov); financiación de junts-07 «mixta» (plantilla de 26.800 agentes, coste estimable con la referencia oficial de 70.600 € por agente) frente a «no_verificable» en junts-05 (delegación de muchas funciones sin valorar). Reforma constitucional: junts-09 no la propone (disposición adicional en la LOFCA y ley del Concierto); su financiación sigue «mixta» porque no exige ninguna votación y su coste es el trasvase estimado por Fedea, y su encaje legal «desfavorable» como junts-01 de compromisos y bng-01 (STC 158/2019). Los cálculos propios se señalan como tales. Los identificadores junts-01 a junts-12 de este fichero son los del programa; los de la evaluación retirada (base «compromisos») eran otra base y no coinciden en contenido.",
+ "nota": "Evaluación de las 12 prioridades de extraccion.json (programa de Junts «Catalunya al centre», 90 páginas en catalán, presentado el 18-nov-2026 y publicado en tualcentre.cat, la web de campaña de Junts; se analizó la copia idéntica, con el mismo sha256 cde2c5f3…, que alojaba el diario Ara: ver data/partidos/partidos.json). La concreción se juzga siempre sobre el programa, con su cita y página (fuente: la URL oficial con #page=N). Cuando el hecho es el mismo se reaprovechan, con sus fuentes y cifras, textos de evaluaciones ya revisadas: las de los compromisos de campaña de Junts (base «compromisos», revisadas; se retiran al publicarse el programa porque todas sus prioridades están en él, y se conservan en el historial del repositorio) para junts-01 (antes junts-08), junts-02 (antes 06), junts-04 (antes 05), junts-05 (antes 04), junts-09 (antes 01) y junts-11 (antes 02); erc-07 para junts-03 (Sareb y Casa 47: mismas valoraciones); pnv-08 para junts-08 (jubilación sin coeficientes reductores con 40 años cotizados: mismas valoraciones); pp-10 para junts-10 (deflactar el IRPF con rebaja de tramos y mínimos sin cuantificar: mismas valoraciones). junts-06, junts-07 y junts-12 no tienen equivalente evaluado. Valoraciones que difieren de evaluaciones equivalentes, por una diferencia de hecho que el texto dice: financiación de junts-01 «no_verificable» (el compromiso junts-08 era «favorable» porque solo modificaba normas procesales; el programa, p. 17, añade «garantir l’atenció pública a les persones en situació de vulnerabilitat», gasto sin cuantificar, el mismo hecho que salf-02 y pp-03 según la auditoría de coherencia del 12-nov); financiación de junts-07 «mixta» (plantilla de 26.800 agentes, coste estimable con la referencia oficial de 70.600 € por agente) frente a «no_verificable» en junts-05 (delegación de muchas funciones sin valorar). Reforma constitucional: junts-09 no la propone (disposición adicional en la LOFCA y ley del Concierto); su financiación sigue «mixta» porque no exige ninguna votación y su coste es el trasvase estimado por Fedea, y su encaje legal «desfavorable» como junts-01 de compromisos y bng-01 (STC 158/2019). Los cálculos propios se señalan como tales. Los identificadores junts-01 a junts-12 de este fichero son los del programa; los de la evaluación retirada (base «compromisos») eran otra base y no coinciden en contenido.",
  "propuestas": [
   {
    "id": "junts-01",
@@ -20,11 +20,11 @@
      "texto": "El programa (p. 17) fija el plazo (48 horas) y el procedimiento (juicio inmediato), añade una ley orgánica para el desalojo policial inmediato cuando la ocupación se detecte en el momento de producirse y, en la p. 15, remite a la proposición que Junts registró en 2025, que detalla el instrumento: medida cautelar penal de desalojo, 48 horas para que el ocupante acredite un título, aviso simultáneo a los servicios sociales y juicio inmediato por delito leve. No dice en qué consistiría la «atenció pública» que garantiza a las personas vulnerables ni cuánto costaría, ni en qué plazo se aprobarían las leyes.",
      "fuentes": [
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=17",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=17",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 17"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=15",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=15",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 15"
       },
       {
@@ -66,7 +66,7 @@
        "titulo": "Real Decreto-ley 29/2026, de 6 de octubre, de protección de la función social de la vivienda (texto consolidado, BOE)"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=17",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=17",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 17"
       }
      ]
@@ -80,7 +80,7 @@
        "titulo": "BOCG Congreso, serie B, núm. 173-1 (31-1-2025): Proposición de Ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=17",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=17",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 17"
       }
      ]
@@ -152,7 +152,7 @@
        "titulo": "OCU (septiembre de 2026): desahucios y ocupaciones, cifras"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=17",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=17",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 17"
       }
      ]
@@ -188,11 +188,11 @@
      "texto": "El programa (p. 17) fija el porcentaje (15 %) y las tres bases: el alquiler y las cuotas de la hipoteca de la vivienda habitual y el ahorro destinado a comprar la primera; la sección de jóvenes (p. 60) precisa que la de alquiler sería «per a tothom» y permanente y la de hipoteca aplicable a quien compró desde 2013, y el punto 3.7 pide que el Estado compense a la Generalitat. No fija el tope deducible, los límites de renta, el coste ni desde cuándo se aplicaría; su propuesta de abril de 2026 fijaba un tope de 11.630 euros anuales y la de octubre limitaba la de alquiler a 2026 y 2027 con límites de renta. La deducción estatal por alquiler que se suprimió en 2015 era del 10,05 %, no del 15 %.",
      "fuentes": [
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=17",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=17",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 17"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=60",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=60",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 60"
       },
       {
@@ -244,7 +244,7 @@
        "titulo": "Catalunya Press, 13-5-2026: coste estimado por Junts de sus deducciones de vivienda"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=17",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=17",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 17"
       }
      ]
@@ -368,11 +368,11 @@
      "texto": "El programa (p. 18) precisa qué pide (todas las viviendas y el suelo de la Sareb y de Casa 47 en Cataluña, en propiedad y gratis, más el suelo estatal apto para alquiler asequible), a quién (la Generalitat y los ayuntamientos) y con qué (un fondo específico para acondicionarlos y un inventario por municipio). No da el número de viviendas, su estado, la cuantía del fondo ni cómo se repartirían entre la Generalitat y los ayuntamientos, y el plazo se limita al «traspàs immediat» de la sección de jóvenes (p. 60); según el acuerdo anunciado en 2025 serían unas 13.000 viviendas de la Sareb en Cataluña, algunas ocupadas y de estado desconocido.",
      "fuentes": [
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=18",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=18",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 18"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=60",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=60",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 60"
       },
       {
@@ -416,7 +416,7 @@
        "titulo": "Brainsre.news: traspaso de viviendas a Casa 47 y deuda de la Sareb"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=18",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=18",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 18"
       }
      ]
@@ -516,11 +516,11 @@
      "texto": "La medida es identificable (que el catalán sea lengua oficial de la UE, lo que exige modificar el Reglamento n.º 1 de 1958, como ya pidió España en 2023) y el programa precisa el alcance: oficialidad «plena i efectiva», con los recursos y acuerdos necesarios para su uso institucional (p. 27). El instrumento que propone es «continuar pressionant diplomàticament» (p. 20), sin decir con qué medios, en qué plazo ni quién pagaría el coste.",
      "fuentes": [
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=20",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=20",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 20"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=27",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=27",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 27"
       },
       {
@@ -564,7 +564,7 @@
        "titulo": "Catalunya Press, 13-6-2026: la petición sigue bloqueada en el Consejo"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=27",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=27",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 27"
       }
      ]
@@ -663,7 +663,7 @@
      "texto": "El programa (p. 48) pide aprobar la proposición de ley que Junts volvió a registrar (BOCG de 11-9-2026) y enumera lo que quiere traspasado: los permisos de residencia y trabajo y sus renovaciones, los expedientes sancionadores y de expulsión, los CIE, la expedición del NIE, la TIE, el DNI y el pasaporte (estos dos últimos no figuran en la proposición) y el acceso a los sistemas de información, con «finançament suficient» (puntos 1.2 a 1.5). La proposición concreta las funciones y fija seis meses para el traspaso de medios y para el calendario de los Mossos en puertos y aeropuertos. Ni el programa ni la proposición cuantifican el coste ni los medios que se traspasarían.",
      "fuentes": [
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=48",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=48",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 48"
       },
       {
@@ -699,7 +699,7 @@
        "titulo": "BOCG Congreso, serie B, núm. 355-1 (11-9-2026): proposición de ley orgánica de delegación en Cataluña de competencias en inmigración (Grupo Junts per Catalunya)"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=48",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=48",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 48"
       },
       {
@@ -815,7 +815,7 @@
      "texto": "El programa (p. 48) dice qué haría (exigir el catalán para el arraigo y la renovación de los permisos, y en cualquier regularización) y a quién afecta, pero no qué nivel se exigiría, con qué prueba, desde cuándo, si alcanzaría a quienes ya tienen permiso ni con qué norma: la ley de delegación que propone en el mismo capítulo no incluye ningún requisito lingüístico. Tampoco cuantifica el coste de los cursos y las pruebas.",
      "fuentes": [
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=48",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=48",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 48"
       },
       {
@@ -859,7 +859,7 @@
        "titulo": "Real Decreto 316/2026, de 14 de abril (regularización extraordinaria), BOE"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=48",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=48",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 48"
       }
      ]
@@ -967,7 +967,7 @@
      "texto": "El programa (p. 49) dice qué haría (delegar en los Mossos la seguridad y el control de acceso a Schengen en puertos y aeropuertos) y fija una plantilla y un plazo (26.800 agentes en 2032), pero no el coste ni cómo se financiaría, ni el calendario del traspaso, que la ley de delegación que propone deja a la Junta de Seguridad en un plazo de seis meses. Tampoco precisa si el control fronterizo sería exclusivo o compartido: esa ley prevé que los Mossos actúen en los puestos fronterizos «en colaboración con el resto de Fuerzas y Cuerpos de Seguridad».",
      "fuentes": [
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=49",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=49",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 49"
       },
       {
@@ -1015,7 +1015,7 @@
        "titulo": "La Moncloa (20-5-2026): la Comisión Mixta de Asuntos Económicos y Fiscales garantiza la financiación para llegar a 25.000 Mossos en 2030"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=21",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=21",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 21"
       }
      ]
@@ -1116,14 +1116,14 @@
    "cita": "Garantir una política de pensions que tingui especialment en compte les persones amb carreres laborals llargues i cotitzacions suficients. Establir per llei que les persones jubilades amb 40 anys o més cotitzats puguin percebre íntegrament la pensió que els correspongui sense penalitzacions per jubilació anticipada, amb caràcter retroactiu.",
    "cita_traduccion": "Garantizar una política de pensiones que tenga especialmente en cuenta a las personas con carreras laborales largas y cotizaciones suficientes. Establecer por ley que las personas jubiladas con 40 años o más cotizados puedan percibir íntegramente la pensión que les corresponda sin penalizaciones por jubilación anticipada, con carácter retroactivo.",
    "pagina": 58,
-   "beneficiarios": "Jubilados anticipados y futuros jubilados con 40 o más años cotizados, sin cifra oficial de cuántos son; el coste, sin estimación oficial publicada, lo asumiría la Seguridad Social, financiada con cotizaciones e impuestos.",
+   "beneficiarios": "Jubilados anticipados y futuros jubilados con 40 o más años cotizados, sin cifra oficial de cuántos son; el coste (3.358 M€ anuales solo para los ya jubilados anticipadamente, según el Gobierno) lo asumiría la Seguridad Social, financiada con cotizaciones e impuestos.",
    "evaluacion": {
     "concrecion": {
      "valoracion": "mixta",
      "texto": "El programa (p. 58) fija el umbral (40 años o más cotizados), el instrumento (una ley) y el alcance (pensión íntegra, con carácter retroactivo, de modo que alcanzaría también a los ya jubilados), y lo repite en las pp. 70 y 88. No indica si afectaría a la jubilación anticipada voluntaria e involuntaria, desde qué edad, si la retroactividad supondría abonar lo dejado de cobrar o solo recalcular las pensiones futuras, con qué calendario ni con qué coste o financiación.",
      "fuentes": [
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=58",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=58",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 58"
       }
      ]
@@ -1143,12 +1143,16 @@
      ]
     },
     "financiacion": {
-     "valoracion": "no_verificable",
-     "texto": "No se ha localizado una estimación oficial publicada del coste de suprimir los coeficientes reductores con 40 o más años cotizados, ni para los ya jubilados ni para las jubilaciones futuras. El programa no cuantifica el coste ni explica cómo se pagaría.",
+     "valoracion": "mixta",
+     "texto": "El coste es estimable en su parte principal: según el Gobierno (respuesta parlamentaria de 7-5-2026), eliminar los coeficientes reductores de las pensiones de los jubilados anticipados actuales con 40 o más años cotizados costaría 3.358 M€ anuales, 1.345 M€ por la jubilación anticipada voluntaria y 2.013 M€ por la involuntaria. La cifra no incluye las jubilaciones futuras, que también cobrarían más y se adelantarían ni el pago de lo dejado de cobrar, si la retroactividad que propone el programa lo incluyera. El programa no cuantifica el coste ni explica cómo se pagaría.",
      "fuentes": [
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=58",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=58",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 58"
+      },
+      {
+       "url": "https://www.congreso.es/entradap/l15p/e11/e_0113616_n_000.pdf",
+       "titulo": "Respuesta del Gobierno (7-5-2026) a las preguntas escritas 184/37144 a 184/37146 del Congreso: coste de eliminar los coeficientes reductores de los jubilados anticipados con 40 o más años cotizados"
       }
      ]
     },
@@ -1196,21 +1200,25 @@
     },
     "beneficiarios": {
      "valoracion": "mixta",
-     "texto": "Beneficiaría a quienes se jubilen anticipadamente con 40 o más años cotizados y, si se aplica a los ya jubilados, a quienes lo hicieron con coeficientes reductores; el coste lo asumiría la Seguridad Social y, por tanto, cotizantes y contribuyentes. No se ha localizado una cifra oficial de beneficiarios ni del coste.",
+     "texto": "Beneficiaría a quienes se jubilen anticipadamente con 40 o más años cotizados y, si se aplica a los ya jubilados, a quienes lo hicieron con coeficientes reductores; el coste lo asumiría la Seguridad Social y, por tanto, cotizantes y contribuyentes. No se ha localizado una cifra oficial de beneficiarios; el Gobierno cifra el coste para los jubilados anticipados actuales con 40 o más años cotizados en 3.358 M€ anuales.",
      "fuentes": [
       {
        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
        "titulo": "Ley General de la Seguridad Social, arts. 207 y 208 (coeficientes reductores de la jubilación anticipada), BOE"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=58",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=58",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 58"
+      },
+      {
+       "url": "https://www.congreso.es/entradap/l15p/e11/e_0113616_n_000.pdf",
+       "titulo": "Respuesta del Gobierno (7-5-2026) a las preguntas escritas 184/37144 a 184/37146 del Congreso: coste de eliminar los coeficientes reductores de los jubilados anticipados con 40 o más años cotizados"
       }
      ]
     },
     "largo_plazo": {
      "valoracion": "desfavorable",
-     "texto": "La AIReF proyecta que el gasto en pensiones pase del 12,9-13,0 % del PIB en 2023 al 16,1 % en 2050 con la normativa vigente y atribuye parte de la subida de la edad efectiva de jubilación (de 64,7 a 65,2 años) al descenso de las jubilaciones anticipadas. Suprimir la reducción añadiría un gasto recurrente, del que no se ha localizado una estimación oficial publicada, e incentivaría jubilarse antes, como ocurrió en Alemania, en sentido contrario a esas necesidades; a cambio, corregiría el trato de las carreras largas, que Devesa et al. (2024) consideran justificado aunque proponen otra vía (premiar los meses cotizados de más y mantener una reducción cercana al 0,5 % mensual).",
+     "texto": "La AIReF proyecta que el gasto en pensiones pase del 12,9-13,0 % del PIB en 2023 al 16,1 % en 2050 con la normativa vigente y atribuye parte de la subida de la edad efectiva de jubilación (de 64,7 a 65,2 años) al descenso de las jubilaciones anticipadas. Suprimir la reducción añadiría un gasto recurrente (3.358 M€ anuales solo por los jubilados anticipados actuales con 40 o más años cotizados, según el Gobierno) e incentivaría jubilarse antes, como ocurrió en Alemania, en sentido contrario a esas necesidades; a cambio, corregiría el trato de las carreras largas, que Devesa et al. (2024) consideran justificado aunque proponen otra vía (premiar los meses cotizados de más y mantener una reducción cercana al 0,5 % mensual).",
      "fuentes": [
       {
        "url": "https://www.airef.es/wp-content/uploads/2025/03/Opini%C3%B3n_sobre_la_sostenibilidad_de_las_AAPP_largo_plazo/Opinion.pdf",
@@ -1223,6 +1231,10 @@
       {
        "url": "https://www.uv.es/777Fhc5ID4jPQ8V/docs/pensiones-jubilacion/Jub40sinpen.pdf",
        "titulo": "Devesa et al. (2024), Comentarios sobre la Proposición de Ley de jubilación sin penalización con 40 o más años cotizados, Universitat de València"
+      },
+      {
+       "url": "https://www.congreso.es/entradap/l15p/e11/e_0113616_n_000.pdf",
+       "titulo": "Respuesta del Gobierno (7-5-2026) a las preguntas escritas 184/37144 a 184/37146 del Congreso: coste de eliminar los coeficientes reductores de los jubilados anticipados con 40 o más años cotizados"
       }
      ]
     }
@@ -1243,15 +1255,15 @@
      "texto": "El programa (p. 68) define el instrumento, una disposición adicional específica para Cataluña en la LOFCA y una «llei del Concert Econòmic Català» que la sitúe fuera del régimen común, y el alcance: la Agencia Tributaria de Cataluña asumiría «l’exacció, gestió, recaptació, liquidació i inspecció» de los tributos generados o soportados en Cataluña, con plena capacidad normativa «en el marc estatal i europeu». No cuantifica ni dice cómo se calcularía el pago al Estado por los servicios que siga prestando ni la aportación a la solidaridad con otras comunidades, y no fija plazo; la gestión de la Seguridad Social la reclama por separado (p. 68).",
      "fuentes": [
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=68",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=68",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 68"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=67",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=67",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 67"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=56",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=56",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 56"
       }
      ]
@@ -1283,7 +1295,7 @@
        "titulo": "De la Fuente, «Las implicaciones financieras de un concierto catalán», Fedea Apuntes 2024/21 (agosto de 2024)"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=68",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=68",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 68"
       }
      ]
@@ -1383,11 +1395,11 @@
      "texto": "El programa (p. 68) concreta cuatro elementos: deflactar el IRPF, rebajar «els primers trams», aumentar los mínimos personales y familiares y actualizarlos cada año según la inflación; en la p. 57 añade que la actualización alcanzaría a «les tarifes i els mínims» y se fijaría por ley como mecanismo automático. No dice cuánto ni qué tramos bajarían, cuánto subirían los mínimos, qué índice de inflación se usaría ni desde cuándo se aplicaría.",
      "fuentes": [
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=68",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=68",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 68"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=57",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=57",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 57"
       }
      ]
@@ -1427,7 +1439,7 @@
        "titulo": "Consejo de la UE, Recomendación que aprueba el plan fiscal-estructural de medio plazo de España 2025-2028 (doc. 5014/25)"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=68",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=68",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 68"
       }
      ]
@@ -1527,11 +1539,11 @@
      "texto": "El programa (pp. 71-72) define el alcance: el 100 % de Rodalies y de Media Distancia, con la titularidad, las vías, las catenarias, las estaciones, los trenes y los recursos de Renfe y Adif, y «els pressupostos pendents d’executar»; lo quiere «immediat i incondicional» y con un «model de gestió pròpia i descentralitzada». No cifra esos presupuestos ni el coste de mantener la infraestructura, no fija fecha ni dice quién operaría el servicio ni qué pasaría con la empresa Rodalies de Catalunya, constituida en enero de 2026.",
      "fuentes": [
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=72",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=72",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 72"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=71",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=71",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 71"
       }
      ]
@@ -1575,7 +1587,7 @@
        "titulo": "AIReF, Spending Review (fase II): Estudio Infraestructuras de transporte (julio de 2020)"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=71",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=71",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 71"
       }
      ]
@@ -1667,11 +1679,11 @@
      "texto": "El programa (pp. 71-72) dice qué quiere: traspasar a la Generalitat las competencias y la titularidad de El Prat y del resto de aeropuertos catalanes, desvincularlos del «model centralitzat d’AENA» y darles una gobernanza catalana, con participación de los agentes económicos e institucionales, que haga de El Prat un hub intercontinental. No dice con qué instrumento legal se haría, cómo se compensaría a Aena y a sus accionistas, cuánto costaría ni en qué plazo.",
      "fuentes": [
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=72",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=72",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 72"
       },
       {
-       "url": "PENDIENTE_URL_OFICIAL#page=71",
+       "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=71",
        "titulo": "Junts per Catalunya, «Catalunya al centre», programa electoral 29-N-2026 (PDF), p. 71"
       }
      ]

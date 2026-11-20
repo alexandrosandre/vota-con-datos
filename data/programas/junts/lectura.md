@@ -1,13 +1,15 @@
 # Junts — Registro de lectura del programa (Fase 3, paso A)
 
-- **Pendiente de publicación oficial.** Programa «Catalunya al centre. Programa electoral 29N» de Junts per Catalunya (90 pp.,
-  en catalán), repartido a la prensa el 18-nov-2026. A 19-nov no está en ninguna web oficial de Junts; se analiza la copia que
-  aloja el diario Ara (static1.ara.cat, enlazada desde su portada de política el 18-nov). Este análisis solo se publica si Junts
-  sube el PDF a un canal oficial con el mismo SHA-256; si cambia, hay que rehacerlo. Detalle en `data/partidos/partidos.json`
-  (entrada `junts`, `programa.verificacion`).
-- Fichero: `data/sources/programas/junts/programa-electoral-junts-29n.pdf` (SHA-256
+- Programa «Catalunya al centre. Programa electoral 29N» de Junts per Catalunya (90 pp., en catalán), presentado el
+  18-nov-2026 y publicado en su web de campaña, tualcentre.cat (https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf, enlazado desde
+  la opción «Programa electoral» del menú; subido el 18-nov, detectado el 20-nov). La lectura (18 y 19-nov) se hizo sobre la copia
+  que alojaba el diario Ara (static1.ara.cat, enlazada desde su portada de política el 18-nov), cuando aún no la habíamos
+  encontrado en ningún canal oficial; el PDF oficial tiene el mismo SHA-256, así que la lectura vale tal cual. Detalle en
+  `data/partidos/partidos.json` (entrada `junts`, `programa.verificacion`).
+- Fichero: `data/sources/programas/junts/PROGRAMA-ELECTORAL_JUNTS_29N.pdf` (SHA-256
   `cde2c5f3f30b66c72dd4f4bae3d22e9f6bc3e0ee4362da72f9e32e85129374b6`, 1.355.756 bytes; «Programa electoral.indd», InDesign 14.0,
-  creado el 18-nov a las 16:44 CET), 90 páginas, en catalán; cabeceras de la descarga en `programa-electoral-junts-29n.headers.txt`.
+  creado el 18-nov a las 16:44 CET), 90 páginas, en catalán; cabeceras de la descarga oficial en
+  `PROGRAMA-ELECTORAL_JUNTS_29N.headers.txt` y de la copia de Ara en `programa-electoral-junts-29n-copia-ara.headers.txt`.
 - Texto: `programa-electoral-junts-29n.txt`, extraído con `pdftotext` **sin `-layout`**, como el de Adelante Andalucía: el programa
   va a dos columnas y con `-layout` las columnas se intercalan línea a línea y romperían casi todas las citas. Aun así, en algunas
   páginas (15, 17, 18, 25, 27, 29, 33, 36, 38, 41, 42, 45, 51, 57, 59, 68-70, 74, 75, 77, 83, 85, 86 y 88) pdftotext desordena

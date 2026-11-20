@@ -3,7 +3,7 @@
  "revisor": "Claude (Anthropic), pasada independiente",
  "fecha": "2026-11-18",
  "base": "complemento",
- "seleccion_sha256": "d5ddf5b31ca263d170f617092264feec118b57c3188bfb42d6c4b11e60c4a672",
+ "seleccion_sha256": "eb4b1a92fbfe6ddfd335a4c490493db22c5d83d6ad9bb9146e7a92d85e94a3aa",
  "alcance": "Barrido del 18-nov: psc-c05 pasa a prioridad (manifiesto del 17-nov), prioridad nueva psc-c06 (8 criterios) y descartes nuevos. Se abrieron las 22 URL nuevas: todas responden 200. Citas: verify_quotes, 0 no encontradas; SHA-256 de las copias coincidentes; se leyó el manifiesto (copia .txt) completo en sus apartados de financiación, «Defensar Catalunya» e infraestructuras. psc-c05 se comparó campo a campo con psc-05 del commit 9d8ad02: solo cambian id, id_anterior y el texto y fuentes de «concreción» (manifiesto y programa del PSOE). psc-c06 se comparó con junts-02 aprobado: mismos hechos y fuentes en lo común. Se comprobó en la nota de La Moncloa de 12-1-2026 el 49,9 %, los nueve consejeros, el Maresme como primera línea y el traspaso «incluida la infraestructura». Programa del PSOE (texto completo): no menciona Rodalies, traspaso, empresa mixta, El Prat ni ordinalidad (solo Cercanías en n.º 27 y 282).",
  "seleccion": "psc-c05 y psc-c06 cumplen el criterio único: psc-c05, dos ocasiones (Hereu en Público y el manifiesto); psc-c06, documento oficial de campaña que Europa Press lleva al titular. psc-c04 se mantiene (dos ocasiones de dos cabezas de lista, ambas con la medida en el subtítulo). El descarte del manifiesto atribuía al programa del PSOE la financiación «singular» con ordinalidad: el PSOE no menciona la ordinalidad; se precisa que es un principio sin instrumento, cuantía ni plazo, y que los 4.686 M€ son lo que supondría para Cataluña el modelo de la n.º 229 (unos 21.000 M€ en total; NacióDigital y Ara, enero de 2026). Criterio único para priorizar en el complemento (y para decidir los casos del PSC, EH Bildu, Adelante Andalucía y el hueco del PP): el ámbito local no excluye ni rebaja el listón; decide la prueba de que el partido presenta la medida como importante (prompt 1b: «los anuncia el candidato, los repite, son titulares de campaña»). Una medida concreta y firme, ausente del programa, se prioriza si (a) consta en al menos dos ocasiones públicas distintas, o (b) en una sola ocasión, el propio partido o la crónica del acto la destaca: titular, entradilla o ladillo de una nota oficial, documento oficial de campaña (manifiesto, decálogo, lista de compromisos) o titular de la crónica de agencia. Una mención en el cuerpo de una nota o crónica, entre otras medidas, no basta. Además, para compromisos territoriales (una obra, un servicio o un equipamiento en un lugar concreto) anunciados por un candidato nacional en un acto o vídeo autonómico, la vía (b) solo vale si el titular es esa medida concreta, no un enunciado genérico. Aplicación: psc-c04 (Parador de Tarragona) entra por (a): Hereu y Montalvo, dos entrevistas, ambas con la medida en el subtítulo. El tren a Foronda de EH Bildu (Mikel Otero, 13-nov) queda fuera, pero no por ser local: es una sola mención en el cuerpo de una nota de EH Bildu Araba en estilo indirecto («apuesta por dar conexión ferroviaria al aeropuerto de Foronda»), cuyo titular trata de optimizar los servicios ferroviarios (comprobado en ehbildu.eus el 18-nov); conviene corregir el motivo «ámbito local» del EH Bildu en su próxima revisión. adelante_andalucia-c01 queda fuera: una sola ocasión, mención en el cuerpo de la crónica de Europa Press, sin nota oficial ni titular. En el PP, el hueco 4 sigue vacío: Durango (una mención en el cuerpo de la nota de Bilbao, cuyo titular es otro; sin titular de agencia localizado), Almudévar y Reinosa (vídeos autonómicos, sin titular propio) no cumplen; Logroño-Calahorra tiene titular de EFE, pero el propio Feijóo lo condiciona («si hay demanda», Europa Press), por lo que no es un compromiso firme.",
  "igual_estandar": "psc-c06 tiene las mismas valoraciones que junts-02 en los hechos comunes (todo «mixta»), y la de El Prat es la aprobada el 15-nov. Sin cambios de valoración.",
@@ -33,6 +33,38 @@
    "antes": "7b9f845c59040c6869e6316b23b066caf784dd2191101d8d4df9d23d6b10bb77",
    "despues": "d5ddf5b31ca263d170f617092264feec118b57c3188bfb42d6c4b11e60c4a672",
    "motivo": "Nuevo seleccion.json corregido."
+  },
+  {
+   "propuesta": "psc-c05",
+   "criterio": "financiacion",
+   "antes": "y el DORA III 2027-2031 asigna 1.765 M€ a El Prat, de los que 191,25 M€ son actuaciones preparatorias y compensaciones ambientales.",
+   "despues": "y el DORA III 2027-2031 (BOE de 19-9-2026, anexo 6) prevé 1.294,8 M€ de inversión en El Prat, de los que 191,9 M€ son de la inversión estratégica «ampliación de pista y nuevo T1S» (actuaciones previas, según la prensa), cuyo final prevé para junio de 2038 (tabla 5.5).",
+   "motivo": "auditoría de coherencia (20-nov, tras la publicación oficial del programa de Junts): el BOE (BOE-A-2026-19507, comprobado el 20-11) da para El Prat 1.294,840 M€ en 2027-2031 (anexo 6), no 1.765 M€, y 191,925 M€ para la línea «Ampliación de pista y nuevo T1S», con umbral de 134,4 M€ antes de fin de 2031 y finalización en 06/2038 (tabla 5.5); la descripción como actuaciones preparatorias es de la prensa. Misma fuente y cifra que junts-12. La valoración no cambia.",
+   "fecha": "2026-11-20"
+  },
+  {
+   "propuesta": "psc-c05",
+   "criterio": "financiacion (fuentes)",
+   "antes": "(sin esta fuente)",
+   "despues": "Resolución de 16-9-2026 de la DGAC: Acuerdo del Consejo de Ministros que aprueba el Documento de Regulación Aeroportuaria 2027-2031 (BOE 19-9-2026), tabla 5.5 y anexo 6 — https://www.boe.es/boe/dias/2026/09/19/pdfs/BOE-A-2026-19507.pdf",
+   "motivo": "auditoría de coherencia (20-nov, tras la publicación oficial del programa de Junts): fuente primaria de las cifras del DORA, como en junts-12.",
+   "fecha": "2026-11-20"
+  },
+  {
+   "propuesta": "(seleccion.json)",
+   "criterio": "texto",
+   "antes": "y reserva 191,25 M€ a actuaciones preparatorias y compensaciones ambientales / asigna a El Prat 1.765 M€, de los que solo 191,25 M€ son actuaciones preparatorias de la ampliación y compensaciones ambientales",
+   "despues": "y reserva 191,9 M€ a la inversión «ampliación de pista y nuevo T1S» (actuaciones previas, según la prensa; final previsto en junio de 2038, BOE de 19-9-2026) / asigna a El Prat 1.294,8 M€ (BOE de 19-9-2026, anexo 6), de los que solo 191,9 M€ son para la «ampliación de pista y nuevo T1S» (actuaciones previas de la ampliación, según la prensa)",
+   "motivo": "auditoría de coherencia (20-nov, tras la publicación oficial del programa de Junts): mismas cifras del DORA según el BOE que en psc-c05 (financiación).",
+   "fecha": "2026-11-20"
+  },
+  {
+   "propuesta": "(evaluacion.json)",
+   "criterio": "seleccion_sha256",
+   "antes": "d5ddf5b31ca263d170f617092264feec118b57c3188bfb42d6c4b11e60c4a672",
+   "despues": "eb4b1a92fbfe6ddfd335a4c490493db22c5d83d6ad9bb9146e7a92d85e94a3aa",
+   "motivo": "auditoría de coherencia (20-nov, tras la publicación oficial del programa de Junts): seleccion.json corregido (cifras del DORA).",
+   "fecha": "2026-11-20"
   }
  ],
  "dudas": [

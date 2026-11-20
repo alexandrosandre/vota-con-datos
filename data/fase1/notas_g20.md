@@ -1,18 +1,21 @@
 # g20: programa de Junts para el 29-N (19-11-2026)
 
-**Pendiente de publicación oficial.** Junts presentó el 18-nov su programa para el 29-N («Catalunya al centre. Programa
-electoral 29N», 90 pp., en catalán), pero hoy no está en ninguna web oficial del partido. Se ha analizado la copia que
-aloja el diario Ara:
+**Programa oficial.** Junts presentó el 18-nov su programa para el 29-N («Catalunya al centre. Programa electoral 29N», 90
+pp., en catalán). El 19-nov no estaba en ninguna web oficial del partido que hubiéramos comprobado y se analizó la copia que
+alojaba el diario Ara:
 https://static1.ara.cat/ara/public/content/file/original/2026/1118/17/programa-electoral-junts-29n.pdf
+El 20-nov se comprobó que Junts lo publica en su web de campaña, tualcentre.cat (subido el 18-nov), con el mismo sha256:
+https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf
 
-- **Catálogo.** Ya está en `partidos.json` (entrada `junts`, `programa.url = "PENDIENTE_URL_OFICIAL"`, fecha 2026-11-18;
-  procedencia y comprobaciones en `programa.verificacion`). PDF `data/sources/programas/junts/programa-electoral-junts-29n.pdf`,
+- **Catálogo.** Ya está en `partidos.json` (entrada `junts`, `programa.url` la oficial de tualcentre.cat, fecha 2026-11-18;
+  procedencia y comprobaciones en `programa.verificacion`). PDF `data/sources/programas/junts/PROGRAMA-ELECTORAL_JUNTS_29N.pdf`,
   sha256 `cde2c5f3f30b66c72dd4f4bae3d22e9f6bc3e0ee4362da72f9e32e85129374b6` (comprobado); texto
   `programa-electoral-junts-29n.txt` (pdftotext sin `-layout`, porque va a dos columnas), sha256
   `0c48b543b61ce41e97ccffe0d9e0fe18fdf33bc425c2c4f43f9541ccf64314c6`.
-- **Cuándo aplicar g20.** Solo si Junts publica en un canal oficial un PDF con el mismo sha256. Entonces hay que sustituir en
-  las 15 posiciones y en `fuentes` la url `PENDIENTE_URL_OFICIAL` (y la fecha, si la publicación oficial es de otro día) por
-  las oficiales. Si el PDF oficial cambia, hay que rehacer g20.
+- **Cuándo aplicar g20.** Solo si Junts publicaba en un canal oficial un PDF con el mismo sha256; entonces había que sustituir
+  la url provisional de las posiciones y de `fuentes` (y la fecha, si la publicación oficial era de otro día) por las
+  oficiales. Hecho el 20-nov: mismo sha256 y misma fecha (18-nov); las 14 posiciones y `fuentes` llevan la url de
+  tualcentre.cat.
 - **Páginas.** Las del PDF; coinciden con la numeración impresa. P. 1 cubierta, 3 índice; portadillas de una página en las
   pp. 2, 4, 6, 11, 43, 66 y 87; pp. 87-89, anexo «Principals iniciatives de la legislatura»; p. 90, contraportada. Se leyó
   entero el texto de las pp. 5-89.
@@ -190,8 +193,8 @@ pipeline/build_fase1.py` no da errores:
 
 Además, `python3 -I -c` en el worktree replica las comprobaciones de `build_fase1.py` sobre g20 (cita literal con `norm`
 contra `programa.texto` de `junts`, valores en −2..2, fuente programa, url y fecha pendientes): sin errores. En el
-repositorio solo se han creado `codificacion_g20.json` y este fichero; falta la verificación independiente
-(`verificacion_g20.json`) y la publicación oficial del programa.
+repositorio solo se crearon entonces `codificacion_g20.json` y este fichero; la verificación independiente
+(`verificacion_g20.json`) llegó después y la publicación oficial del programa se comprobó el 20-nov.
 
 
 ## Verificación independiente (19-nov)
@@ -200,3 +203,12 @@ repositorio solo se han creado `codificacion_g20.json` y este fichero; falta la 
 (p. 88), que el propio programa presenta como rendición de cuentas de la legislatura pasada; el prompt 2 excluye las
 votaciones y posiciones de otras legislaturas, y nuevas_2026-11-12b.json ya dejó esta celda en null por el mismo motivo.
 Corrección aplicada: Junts 16 → 18 posiciones (14 de programa, 4 de campaña).
+
+## Publicación oficial (20-nov)
+
+Junts sirve el programa desde la opción «Programa electoral» del menú de tualcentre.cat, su web de campaña «Catalunya al
+centre» (aviso legal: Junts per Catalunya, NIF G01731801), enlazada desde la portada de junts.cat. El PDF tiene el mismo
+sha256 (`cde2c5f3…`) que la copia de Ara analizada, Last-Modified del 18-nov 18:06 CET y fecha de subida en WordPress del
+18-nov. Se sustituye la url provisional por la oficial en las 14 posiciones y en `fuentes`, se quita la referencia a la copia
+de prensa de `fuentes` (queda en la nota y en `partidos.json`) y `sustituye.nota` de q03 y q24 copia la nota de la celda null
+de su grupo de origen (g3 y g7), como pidió la verificación. Ningún valor cambia.
