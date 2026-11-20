@@ -1,388 +1,415 @@
 {
  "aprobado": true,
  "revisor": "Claude (Anthropic), pasada independiente",
- "fecha": "2026-11-12",
- "alcance": "12 propuestas × 8 criterios. Se cotejaron las 12 citas y sus páginas con el PDF (pdftotext por página y con -layout para la numeración de las propuestas) y se abrieron las 131 URL externas citadas: todas existen y corresponden al título. Seis devolvieron 403 a peticiones automáticas (dos del FMI, dos del DIW y dos de Légifrance) y se leyeron con otro cliente; el Anuario Estadístico 2024 del Ministerio del Interior está detrás de un control anti-bots que no se sorteó (véase dudas). Selección de prioridades conforme con extraccion.json y con «Las 29 del 29N» (pp. 2-32) y las introducciones de área (pp. 35, 57, 71, 77, 81, 89 y 97). verify_quotes: 727 citas comprobadas, 0 no encontradas.",
- "igual_estandar": "Antes de la revisión el reparto era 7F/83M/0D/6N. Se comprobó cada valoración contra las rúbricas y contra las propuestas equivalentes ya revisadas. Financiación: adelante_andalucia-01 (tope de alquiler) y -09 (regla de reparto sin ordinalidad) siguen en «favorable» como medidas regulatorias sin coste presupuestario directo, igual que pp-09, erc-06 y pnv-01; -12 es «mixta» y no «favorable» como erc-05 y bng-11 porque añade la anulación y devolución de multas, con un coste estimable que el programa no explica cómo pagar; -02, -06, -07, -08 y -10 son «no_verificable» porque no hay base para estimar el coste, como bng-10 y bng-07. Encaje legal: -11 (reforma constitucional) es «mixta» y no «desfavorable» como erc-04, bng-01 o salf-11, porque la propuesta es la propia reforma y no choca con la Constitución vigente; el procedimiento (art. 167 o 168) depende de un diseño no definido. Internacional: -06, -10, -11 y -12 son «mixta» por aplicación parcial o sin evaluación, la regla de bng-01, pp-10 y salf-11. Único cambio de valoración: -03 concreción pasa a «favorable», porque el programa da los cuatro elementos de la rúbrica (qué, a quién, 32 horas y plazos de dos y cuatro años), como salf-04 y cc-09; bng-04 es «mixta» porque no tiene calendario. -01, -02, -04 a -12 mantienen «mixta» en concreción porque les falta plazo o cuantía. No se encontraron adjetivos de valor ni comparaciones entre partidos en los textos.",
- "recuento_final": {
-  "favorable": 8,
-  "mixta": 82,
+ "fecha": "2026-11-20",
+ "programa_sha256": "9edf2c74216c3d68319355de782e979307f2bad8b545ea3cffb53c2113065494",
+ "alcance": "Paso a la versión del programa que sirve hoy la URL oficial: la regenerada el 16-nov-2026 («Versión del 2026-11-16», 134 págs., SHA-256 9edf2c74…065494; la catalogada y evaluada el 12-nov era fde1fe02…d7b43, «Versión del 2026-11-10»). Fuente: el 20-nov a las 10:19 CET se descargó https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf (HTTP 200, application/pdf, 1.917.458 bytes, Last-Modified Mon, 16 Nov 2026 13:25:57 GMT): su SHA-256 coincide con el del repositorio y con partidos.json, y pdftotext sin -layout (el modo del .txt catalogado) lo reproduce byte a byte. Wayback Machine (CDX, digest SHA-1 comparado con copias locales): la versión catalogada (SZDWBJIY…, fde1fe02) en las capturas del 14-nov 20:35 al 15-nov 21:23 UTC; la intermedia del 15-nov (MJ6TV6E3…, 8dbe28d0) en la del 16-nov 11:26 UTC; la actual (B2KEADAI…) en la del 18-nov 13:41 UTC. Comparadas página a página, la única diferencia está en la p. 134 (colofón «Versión del 2026-11-10» → «Versión del 2026-11-16»). Comprobado contra el texto nuevo: las 715 citas de extraccion.json y las 12 de evaluacion.json son literales y están en su página; las 18 citas de data/fase1/programa_adelante_andalucia_2026-11-12.json y las de codificacion_g2.json, preguntas.json y fase1.json, también; las tres promesas con el PDF como fuente (propuesta 650 en la p. 125; medidas 10 y 11 de «Las 29 del 29N» en las pp. 13-14) siguen en su página. evaluacion.json solo cambia en programa_sha256. verify_quotes: 5.133 citas, 0 no encontradas.",
+ "seleccion": "Sin cambios: el texto, las 719 propuestas, «Las 29 del 29N» y las páginas son idénticos; las 12 prioridades y sus justificaciones siguen siendo ciertas.",
+ "igual_estandar": "Ninguna valoración cambia (las 96 de las 12 propuestas, idénticas al commit anterior). El colofón no lo cita ninguna propuesta, posición ni promesa.",
+ "recuento_inicial": {
+  "favorable": 7,
+  "mixta": 83,
   "desfavorable": 0,
   "no_verificable": 6
  },
- "cambios": [
-  {
-   "propuesta": "adelante_andalucia-02",
-   "criterio": "largo_plazo",
-   "antes": "Los riesgos que documenta la AIReF son una demanda baja fuera de las grandes áreas metropolitanas, que no compense los costes fijos de construcción y explotación, y el incumplimiento de la planificación:",
-   "despues": "Los riesgos que documenta la AIReF son la pérdida de viajeros entre 2013 y 2018 en la mayoría de los núcleos de Cercanías fuera de Madrid y Barcelona, beneficios que en los corredores de alta velocidad no compensan los costes fijos de construcción, y el incumplimiento de la planificación:",
-   "motivo": "la AIReF no dice que la demanda de Cercanías fuera de las grandes áreas no compense los costes fijos de construcción y explotación: esa frase se refiere a los corredores de alta velocidad y no menciona la explotación; para Cercanías solo documenta la pérdida de viajeros fuera de Madrid y Barcelona entre 2013 y 2018. Se ajusta a lo que dice la fuente"
-  },
-  {
-   "propuesta": "adelante_andalucia-03",
-   "criterio": "concrecion",
-   "antes": "valoracion: mixta",
-   "despues": "valoracion: favorable",
-   "motivo": "igual estándar (rúbrica de concreción): el programa dice qué se hará (32 horas semanales sin rebaja de sueldo y prohibición del turno partido sin rebaja salarial), a quién afecta, con qué cuantía (32 horas) y en qué plazo (dos años en grandes empresas y cuatro en pymes), que son los cuatro elementos de «favorable». El «apoyo público» sin cuantificar es un elemento accesorio, como la supervisión de tarifas en cc-09 o la reducción entre 35.000 y 50.000 € en salf-04, ambas «favorable»; bng-04 es «mixta» porque no fija calendario, que aquí sí consta. Los vacíos siguen explicados en el texto"
-  },
-  {
-   "propuesta": "adelante_andalucia-03",
-   "criterio": "concrecion",
-   "antes": "El programa (p. 63) dice qué hará (32 horas semanales sin rebaja de sueldo y prohibición del turno partido sin rebaja salarial), a quién afecta y en qué plazo (dos años en las grandes empresas y cuatro en las pymes). No cuantifica",
-   "despues": "El programa (p. 63) dice qué hará (32 horas semanales sin rebaja de sueldo y prohibición del turno partido sin rebaja salarial), a quién afecta, con qué cuantía (32 horas) y en qué plazo (dos años en las grandes empresas y cuatro en las pymes). Como aspectos accesorios, no cuantifica",
-   "motivo": "texto ajustado al cambio de valoración a «favorable» (rúbrica de concreción)"
-  },
-  {
-   "propuesta": "adelante_andalucia-03",
-   "criterio": "internacional",
-   "antes": "Varios países europeos redujeron la jornada legal entre 1995 y 2007, entre ellos Portugal: los trabajadores mantuvieron el salario mensual y el empleo no aumentó, aunque tampoco se redujo.",
-   "despues": "Varios países europeos (Francia, Italia, Bélgica, Portugal y Eslovenia) redujeron la jornada legal entre 1995 y 2007: en el conjunto de esas reformas el empleo no aumentó (Batut y otros, 2022), y en Portugal los trabajadores afectados mantuvieron el salario mensual sin más pérdidas de empleo (Raposo y van Ours).",
-   "motivo": "Raposo y van Ours (IZA DP 3723) solo concluyen para Portugal que no hubo más pérdidas de empleo y que el salario mensual se mantuvo; que «el empleo no aumentó» es el resultado agregado de las cinco reformas de Batut y otros (2022), no un resultado de Portugal"
-  },
-  {
-   "propuesta": "adelante_andalucia-03",
-   "criterio": "largo_plazo",
-   "antes": "Riesgos: un aumento del coste laboral por hora del orden del 19-25 %, más intenso, según la memoria de 2025, en los sectores con mayor jornada media y menor tamaño de empresa, como la hostelería o el comercio minorista;",
-   "despues": "Riesgos: un aumento del coste laboral por hora del orden del 19-25 % (cálculo propio), que afectaría más a los sectores con mayor jornada media y empresas más pequeñas, como la hostelería o el comercio minorista, donde la memoria de 2025 preveía el mayor impacto de la reducción de jornada;",
-   "motivo": "la memoria de 2025 dice que el impacto de la medida será más intenso en esos sectores, pero lo presenta en relación con el consumo, no como un riesgo de coste; se reformula sin atribuirle esa valoración"
-  },
-  {
-   "propuesta": "adelante_andalucia-04",
-   "criterio": "beneficiarios",
-   "antes": "19,12 millones de ocupados en el sector privado y 3,74 millones en el público (INE, tercer trimestre de 2026)",
-   "despues": "el sector privado sumaba 19,12 millones de ocupados, incluidos los no asalariados, y el público 3,74 millones (INE, tercer trimestre de 2026)",
-   "motivo": "la cifra del INE (19.115.800) es el total de ocupados del sector privado, incluidos los trabajadores por cuenta propia, no solo las personas asalariadas"
-  },
-  {
-   "propuesta": "adelante_andalucia-04",
-   "criterio": "beneficiarios (campo de la propuesta)",
-   "antes": "el empleo privado sumaba 19,12 millones de ocupados y el público 3,74 millones",
-   "despues": "el empleo privado sumaba 19,12 millones de ocupados (incluidos los no asalariados) y el público 3,74 millones",
-   "motivo": "la cifra del INE es el total de ocupados del sector privado, incluidos los trabajadores por cuenta propia"
-  },
-  {
-   "propuesta": "adelante_andalucia-05",
-   "criterio": "antecedentes",
-   "antes": "se restableció en 2011 (Real Decreto-ley 13/2011) y tiene vigencia indefinida desde 2014;",
-   "despues": "se restableció en 2011 (Real Decreto-ley 13/2011), se prorrogó año a año y tiene vigencia indefinida desde 2021 (Ley 11/2020);",
-   "motivo": "error de dato: el impuesto se prorrogó cada año desde 2011 y pasó a tener vigencia indefinida con efectos de 1-1-2021, por la disposición derogatoria primera de la Ley 11/2020 de Presupuestos para 2021, según el texto consolidado de la Ley 19/1991 (BOE)"
-  },
-  {
-   "propuesta": "adelante_andalucia-05",
-   "criterio": "antecedentes",
-   "antes": "fuente: (ninguna para ese dato)",
-   "despues": "fuente añadida: https://www.boe.es/buscar/act.php?id=BOE-A-1991-14392",
-   "motivo": "la fecha de vigencia indefinida no tenía fuente citada"
-  },
-  {
-   "propuesta": "adelante_andalucia-05",
-   "criterio": "evidencia",
-   "antes": "sobre todo por evasión y cambios de residencia y poco por más ahorro (Brülhart y otros, 2022)",
-   "despues": "en buena parte por evasión y, en menor medida, por cambios de residencia y la evolución del precio de la vivienda, y poco por más ahorro (Brülhart y otros, 2022)",
-   "motivo": "el estudio atribuye un 24 % del efecto a la movilidad y un 21 % a los precios de la vivienda, una parte pequeña al ahorro y el resto a una evasión considerable; «sobre todo por cambios de residencia» sobrevaloraba la movilidad"
-  },
-  {
-   "propuesta": "adelante_andalucia-05",
-   "criterio": "evidencia",
-   "antes": "En España, tras la cesión del impuesto, los grandes patrimonios residentes en Madrid, donde en la práctica no se pagaba, crecieron un 10 % en cinco años frente al resto,",
-   "despues": "En España, tras su restablecimiento en 2011, el número de grandes patrimonios residentes en Madrid, la única comunidad que no lo exigía en la práctica, creció un 10 % en cinco años frente al resto,",
-   "motivo": "el estudio analiza el restablecimiento de 2011, tras el que todas las comunidades salvo Madrid aplicaron tipos positivos, no la cesión; y mide el número de contribuyentes ricos residentes («the stock of wealthy individuals»), no el importe de su patrimonio"
-  },
-  {
-   "propuesta": "adelante_andalucia-05",
-   "criterio": "beneficiarios",
-   "antes": "en 2024 declararon el Impuesto sobre el Patrimonio 227.424 personas",
-   "despues": "por el ejercicio 2024 declararon el Impuesto sobre el Patrimonio 227.424 personas",
-   "motivo": "la estadística de la AEAT se refiere a las declaraciones del ejercicio 2024 (presentadas en 2025)"
-  },
-  {
-   "propuesta": "adelante_andalucia-05",
-   "criterio": "beneficiarios (campo de la propuesta)",
-   "antes": "227.424 personas declararon el Impuesto sobre el Patrimonio en 2024",
-   "despues": "227.424 personas declararon el Impuesto sobre el Patrimonio por el ejercicio 2024",
-   "motivo": "la estadística de la AEAT se refiere a las declaraciones del ejercicio 2024 (presentadas en 2025)"
-  },
-  {
-   "propuesta": "adelante_andalucia-05",
-   "criterio": "fuentes (legal y antecedentes)",
-   "antes": "https://hj.tribunalconstitucional.es/es/Resolucion/GetDocumentResolucion/769",
-   "despues": "https://hj.tribunalconstitucional.es/es/Resolucion/Show/769",
-   "motivo": "el enlace anterior descarga un .docx; se sustituye por la página HTML de la misma sentencia"
-  },
-  {
-   "propuesta": "adelante_andalucia-06",
-   "criterio": "financiacion",
-   "antes": " Como referencia parcial, las reversiones valencianas conllevaron pagos complementarios a la concesionaria de 25,11 M€ (Alzira), 45,9 M€ (Torrevieja) y 47,6 M€ (Dénia), según la prensa.",
-   "despues": "",
-   "motivo": "error de atribución: según elDiario.es, esos 25,11, 45,9 y 47,6 M€ fueron pagos complementarios de la Generalitat a la concesionaria durante las concesiones, por obligaciones no previstas en los contratos (expedientes de enriquecimiento injusto), no el coste de revertirlas; no sirven como referencia del coste de la medida"
-  },
-  {
-   "propuesta": "adelante_andalucia-07",
-   "criterio": "largo_plazo",
-   "antes": "Los riesgos documentados son la asignación del crédito por criterios no financieros y la gobernanza, que en España contribuyeron a las pérdidas de las cajas de ahorros (Cuñat y Garicano, 2010),",
-   "despues": "Los riesgos documentados son la asignación del crédito por criterios no financieros y el perfil de los gestores: en las cajas de ahorros españolas, las presididas por antiguos cargos políticos o por personas sin experiencia bancaria tuvieron peores resultados en sus préstamos (Cuñat y Garicano, 2010),",
-   "motivo": "Cuñat y Garicano no hallan que la gobernanza formal o el papel de los partidos se correlacione con los resultados de los préstamos; lo que hallan es el efecto del perfil de los presidentes (cargos políticos, sin experiencia bancaria)"
-  },
-  {
-   "propuesta": "adelante_andalucia-08",
-   "criterio": "legal",
-   "antes": "El derecho de la UE admite la propiedad pública, pero exige que el control de la red de transporte y el de la generación o el suministro estén en organismos públicos distintos (Directiva 2019/944, art. 43)",
-   "despues": "El derecho de la UE admite la propiedad pública, pero exige separar la propiedad de la red de transporte de la generación y el suministro; si ambas son públicas, la separación se cumple cuando dependen de organismos públicos distintos (Directiva 2019/944, art. 43)",
-   "motivo": "precisión: el art. 43 exige la separación patrimonial y su apartado 5 admite como forma de cumplirla que dos organismos públicos distintos controlen la red y la generación o el suministro; no lo impone como única vía"
-  },
-  {
-   "propuesta": "adelante_andalucia-08",
-   "criterio": "largo_plazo",
-   "antes": "la menor eficiencia en generación que la literatura asocia a la propiedad pública (Kwoka, 2005; Megginson y Netter, 2001)",
-   "despues": "la menor eficiencia en generación que se ha observado en empresas públicas de Estados Unidos (Kwoka, 2005) y la mayor eficiencia que la literatura general sobre privatizaciones atribuye a la gestión privada (Megginson y Netter, 2001)",
-   "motivo": "Megginson y Netter (2001) es una revisión general de privatizaciones, no específica de la generación eléctrica; solo Kwoka (2005) respalda el dato sobre generación"
-  },
-  {
-   "propuesta": "adelante_andalucia-10",
-   "criterio": "internacional",
-   "antes": "y algunas personas sin empleo que atienden un hogar reciben una cantidad fija por hora",
-   "despues": "y quienes no trabajan o trabajan menos de 20 horas semanales y llevan un hogar de varias personas reciben una cantidad fija por hora",
-   "motivo": "el § 45 de la ley municipal de Renania del Norte-Westfalia incluye también a quienes trabajan menos de 20 horas semanales y exige un hogar de al menos tres personas (o dos con una que necesite cuidados)"
-  },
-  {
-   "propuesta": "adelante_andalucia-11",
-   "criterio": "largo_plazo",
-   "antes": "Los estudios comparados indican que incluir un derecho individual en la Constitución no garantiza por sí solo su protección efectiva (Chilton y Versteeg, 2016).",
-   "despues": "Un estudio comparado sobre seis derechos políticos indica que recoger derechos individuales en la Constitución no garantiza por sí solo su protección efectiva (Chilton y Versteeg, 2016); no analiza el aborto.",
-   "motivo": "el estudio solo analiza seis derechos políticos; se acota la generalización, como ya hacía el texto de evidencia"
-  },
-  {
-   "propuesta": "adelante_andalucia-12",
-   "criterio": "financiacion",
-   "antes": "En 2023 las sanciones por los apartados que mencionan expresamente reuniones o manifestaciones (arts. 36.2, 36.7, 36.8, 37.1 y 37.3)",
-   "despues": "En 2023 las sanciones por los apartados referidos específicamente a reuniones o manifestaciones del derecho de reunión (arts. 36.2, 36.7, 36.8, 37.1 y 37.3)",
-   "motivo": "el art. 36.1 también menciona «reuniones» (las «otras reuniones a las que asistan numerosas personas»), aunque no se refiere al derecho de reunión; «mencionan expresamente» era inexacto"
-  },
-  {
-   "propuesta": "adelante_andalucia-12",
-   "criterio": "evidencia",
-   "antes": "220 de las 284.512 sanciones correspondieron a apartados que mencionan expresamente reuniones o manifestaciones.",
-   "despues": "220 de las 284.512 sanciones correspondieron a apartados referidos específicamente a reuniones o manifestaciones del derecho de reunión.",
-   "motivo": "mismo motivo: el art. 36.1 también menciona reuniones"
-  },
-  {
-   "propuesta": "adelante_andalucia-12",
-   "criterio": "beneficiarios",
-   "antes": "220 sanciones por apartados que mencionan expresamente reuniones o manifestaciones",
-   "despues": "220 sanciones por apartados referidos específicamente a reuniones o manifestaciones del derecho de reunión",
-   "motivo": "mismo motivo: el art. 36.1 también menciona reuniones"
-  },
-  {
-   "propuesta": "adelante_andalucia-12",
-   "criterio": "beneficiarios (campo de la propuesta)",
-   "antes": "220 sanciones por los apartados que mencionan expresamente reuniones o manifestaciones",
-   "despues": "220 sanciones por los apartados referidos específicamente a reuniones o manifestaciones del derecho de reunión",
-   "motivo": "mismo motivo: el art. 36.1 también menciona reuniones"
-  },
-  {
-   "propuesta": "adelante_andalucia-12",
-   "criterio": "antecedentes",
-   "antes": "con el voto en contra de PP, Vox, Ciudadanos, ERC, Junts, UPN y EH Bildu, estos dos últimos por considerarla insuficiente;",
-   "despues": "con el voto en contra de PP, Vox, Ciudadanos, UPN, Junts, ERC y EH Bildu, estos dos últimos por considerarla insuficiente;",
-   "motivo": "error: por el orden de la lista, «estos dos últimos» señalaba a UPN y EH Bildu; según Orain (14-3-2023), los que la consideraron insuficiente fueron ERC y EH Bildu"
-  },
-  {
-   "propuesta": "adelante_andalucia-03",
-   "criterio": "evidencia",
-   "antes": "hallaron que la reducción de la jornada legal redujo las horas trabajadas y elevó el salario por hora, sin aumento del empleo y con un efecto positivo pero no significativo sobre la productividad por hora.",
-   "despues": "hallaron que la reducción de la jornada legal redujo las horas trabajadas sin aumento del empleo, con efectos positivos pero no significativos sobre el salario por hora y la productividad por hora.",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): exagera el resultado, corregido igual que en compromis-05: el resumen dice «hourly wages rose», pero el artículo estima «positive but insignificant effects on hourly wages and value-added per hour worked» (IZA DP 15566, p. 2). La valoración («mixta») no cambia.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "adelante_andalucia-04",
-   "criterio": "legal (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:32022L2041 | Directiva (UE) 2022/2041 sobre unos salarios mínimos adecuados en la Unión Europea",
-   "despues": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2022-81556 | Directiva (UE) 2022/2041 sobre unos salarios mínimos adecuados en la Unión Europea (DOUE, copia del BOE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "adelante_andalucia-04",
-   "criterio": "legal (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:62023CJ0019 | TJUE (Gran Sala), sentencia de 11-11-2025, asunto C-19/23, Dinamarca/Parlamento y Consejo",
-   "despues": "http://publications.europa.eu/resource/celex/62023CJ0019 | TJUE (Gran Sala), sentencia de 11-11-2025, asunto C-19/23, Dinamarca/Parlamento y Consejo (Oficina de Publicaciones de la UE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "adelante_andalucia-07",
-   "criterio": "legal (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32013R1024 | Reglamento (UE) 1024/2013 del Consejo, que encomienda al BCE la supervisión prudencial de las entidades de crédito",
-   "despues": "http://publications.europa.eu/resource/celex/32013R1024 | Reglamento (UE) 1024/2013 del Consejo, que encomienda al BCE la supervisión prudencial de las entidades de crédito (Oficina de Publicaciones de la UE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "adelante_andalucia-05",
-   "criterio": "financiacion",
-   "antes": "y el impuesto de solidaridad de las grandes fortunas, 623 M€ en 2023.",
-   "despues": "y el impuesto de solidaridad de las grandes fortunas, 623 M€ en 2023, 37 M€ en 2024 y casi 19 M€ en 2025 (Agencia Tributaria).",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): misma cifra oficial en todas las evaluaciones que usan la recaudación del impuesto de grandes fortunas: la Agencia Tributaria (Informe anual de recaudación 2025, cap. 6) da 37 M€ en 2024 y casi 19 M€ en 2025, frente a 623 M€ en 2023; citar solo 2023 como recaudación del impuesto omitía su caída. Como en psoe-07. La valoración no cambia: la recaudación sigue siendo conocida.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "adelante_andalucia-05",
-   "criterio": "financiacion (fuentes)",
-   "antes": "(sin esta fuente)",
-   "despues": "Agencia Tributaria, Informe anual de recaudación tributaria 2025, capítulo 6: otros impuestos — https://sede.agenciatributaria.gob.es/Sede/estadisticas/recaudacion-tributaria/informe-anual/ejercicio-2025/6-otros-impuestos.html",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial de la recaudación de 2024 y 2025.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "adelante_andalucia-06",
-   "criterio": "antecedentes",
-   "antes": "pero decayó con la convocatoria de elecciones en octubre de 2026.",
-   "despues": "pero caducó con la disolución de las Cortes para las elecciones de 2026 (art. 207 del Reglamento del Congreso).",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): base oficial y misma formulación que psoe-06 para el mismo proyecto: el art. 207 del Reglamento del Congreso dispone que, disuelto el Congreso, «quedarán caducados todos los asuntos pendientes». La valoración no cambia.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "adelante_andalucia-06",
-   "criterio": "antecedentes (fuentes)",
-   "antes": "(sin esta fuente)",
-   "despues": "Reglamento del Congreso de los Diputados (texto consolidado, BOE), art. 207 — https://www.boe.es/buscar/act.php?id=BOE-A-1982-5196",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): base oficial de la caducidad, como en psoe-06.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "adelante_andalucia-11",
-   "criterio": "beneficiarios (campo)",
-   "antes": "106.172 en 2024 en España (12,36 por cada 1.000 mujeres de 15 a 44 años), el 78,74 % en centros privados",
-   "despues": "106.172 interrupciones en 2024 en España (12,36 por cada 1.000 mujeres de 15 a 44 años), el 78,75 % en centros privados",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): cifra y unidad, igual que en psoe-10: la tabla EV.4 del informe IVE 2024 del Ministerio de Sanidad (comprobada el 15-11) da 7,85 + 70,9 = 78,75 % en centros privados (el 78,74 % de La Moncloa es un truncamiento: 78,74 + 21,25 = 99,99), y la unidad son interrupciones, no mujeres. La valoración no cambia.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "adelante_andalucia-11",
-   "criterio": "beneficiarios",
-   "antes": "106.172 en 2024 (12,36",
-   "despues": "106.172 interrupciones en 2024 (12,36",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): unidad, igual que en psoe-10: 106.172 son interrupciones (incluidas 1.787 de no residentes), no mujeres. La valoración no cambia.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "adelante_andalucia-11",
-   "criterio": "antecedentes",
-   "antes": "y decayó con la disolución de las Cortes para las elecciones del 29-N.",
-   "despues": "y caducó con la disolución de las Cortes para las elecciones del 29-N (art. 207 del Reglamento del Congreso), según la relación de iniciativas caducadas publicada en el Boletín Oficial de las Cortes Generales el 4-11-2026.",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial y misma formulación que psoe-10: la ficha de la iniciativa 102/000001 del Congreso («Concluido - (Caducado) desde 06/10/2026») y el BOCG, Congreso, serie D, núm. 610 (4-11-2026), p. 30. La valoración no cambia.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "adelante_andalucia-11",
-   "criterio": "antecedentes (fuentes)",
-   "antes": "(sin esta fuente)",
-   "despues": "Congreso de los Diputados, iniciativa 102/000001 (reforma del art. 43): «Concluido - (Caducado) desde 06/10/2026» — https://www.congreso.es/es/busqueda-de-iniciativas?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=102%2F000001",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial de la caducidad, como en psoe-10.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "adelante_andalucia-11",
-   "criterio": "antecedentes (fuentes)",
-   "antes": "(sin esta fuente)",
-   "despues": "BOCG, Congreso, serie D, núm. 610 (4-11-2026): relación de iniciativas caducadas, expediente 102/000001 — https://www.congreso.es/public_oficiales/L15/CONG/BOCG/D/BOCG-15-D-610.PDF#page=30",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial de la caducidad, como en psoe-10.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "adelante_andalucia-03",
-   "criterio": "financiacion",
-   "antes": "y desde la jornada pactada media de 38,1 horas (marzo de 2026), un 19 % (cálculo propio)",
-   "despues": "y desde la jornada media pactada en los convenios registrados hasta marzo de 2026 (1.739 horas al año, unas 38,1 semanales), un 19 % (cálculos propios)",
-   "motivo": "auditoría de coherencia (16-nov, tras el análisis del programa del Frente Amplio): fuente primaria en lugar de prensa (Onda Vasca): Estadística de Convenios Colectivos del Ministerio de Trabajo, avance de marzo de 2026 (CCT_03_2026.xls, comprobado el 16-11): jornada media pactada de 1.739,31 horas al año en los convenios con efectos en 2026 registrados hasta marzo (1.739,31 / 1.826,27 × 40 = 38,1 horas semanales); misma cifra, misma fuente y misma redacción que frente_amplio-09. La valoración no cambia.",
-   "fecha": "2026-11-16"
-  },
-  {
-   "propuesta": "adelante_andalucia-03",
-   "criterio": "financiacion (fuentes)",
-   "antes": "Onda Vasca (2-5-2026): la jornada pactada en convenio, con datos de la Estadística de Convenios del Ministerio de Trabajo (prensa) — https://www.ondavasca.com/la-jornada-laboral-se-reduce-un-ano-despues-del-intento-de-las-375-horas/",
-   "despues": "Ministerio de Trabajo, Estadística de Convenios Colectivos, avance de marzo de 2026, tabla CCT-2.2: jornada media pactada (1.739,31 horas al año) — https://www.mites.gob.es/estadisticas/cct/cct26marav/CCT_03_2026.xls",
-   "motivo": "auditoría de coherencia (16-nov, tras el análisis del programa del Frente Amplio): fuente primaria en lugar de prensa (Onda Vasca): Estadística de Convenios Colectivos del Ministerio de Trabajo, avance de marzo de 2026 (CCT_03_2026.xls, comprobado el 16-11): jornada media pactada de 1.739,31 horas al año en los convenios con efectos en 2026 registrados hasta marzo (1.739,31 / 1.826,27 × 40 = 38,1 horas semanales); misma cifra, misma fuente y misma redacción que frente_amplio-09.",
-   "fecha": "2026-11-16"
-  },
-  {
-   "propuesta": "adelante_andalucia-03",
-   "criterio": "antecedentes (fuentes)",
-   "antes": "(sin esta fuente)",
-   "despues": "Congreso de los Diputados, Diario de Sesiones del Pleno n.º 135 (10-9-2025): enmiendas a la totalidad del proyecto de ley de reducción de jornada — https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-135.PDF",
-   "motivo": "auditoría de coherencia (16-nov, tras el análisis del programa del Frente Amplio): fuente primaria de la votación (Diario de Sesiones del Pleno n.º 135, 10-9-2025: las enmiendas a la totalidad «se aprueban por 178 votos a favor y 170 en contra», comprobado el 16-11) junto a El Salto (prensa), como en frente_amplio-09.",
-   "fecha": "2026-11-16"
-  },
-  {
-   "propuesta": "adelante_andalucia-03",
-   "criterio": "financiacion",
-   "antes": "desde la jornada media pactada en los convenios registrados hasta marzo de 2026 (1.739 horas al año, unas 38,1 semanales)",
-   "despues": "desde la jornada media pactada en los convenios con efectos económicos en 2026 registrados hasta marzo (1.739 horas al año, unas 38,1 semanales con la equivalencia de 1.826 horas anuales para 40 semanales)",
-   "motivo": "auditoría de coherencia (17-nov, tras el análisis de los programas de Ara Més-Front Ampli y EH Bildu): fidelidad a la fuente y mismo texto que eh_bildu-04 (corrección de su revisión del 17-11): la tabla CCT-2.2 de la Estadística de Convenios Colectivos (CCT_03_2026.xls, comprobado el 17-11) clasifica los convenios «por año de efectos económicos y período de registro», así que la jornada media de 1.739,31 horas es la de los convenios con efectos económicos en 2026 registrados hasta marzo, no la de todos los convenios registrados; y la conversión a horas semanales no decía qué semanas al año suponía (1.739,31 / 45,65 = 38,1; 40 × 45,65 = 1.826). La valoración no cambia.",
-   "fecha": "2026-11-17"
-  },
-  {
-   "propuesta": "adelante_andalucia-03",
-   "criterio": "beneficiarios",
-   "antes": "y 3,74 millones de ocupados en el sector público; solo con",
-   "despues": "y 3,74 millones de ocupados en el sector público (cifras de fuentes distintas, que pueden solaparse y no se suman); solo con",
-   "motivo": "auditoría de coherencia (17-nov, tras el análisis de los programas de Ara Més-Front Ampli y EH Bildu): mismo dato y misma advertencia que eh_bildu-04 (corrección de su revisión del 17-11): Cifras PYME de junio de 2026 (comprobado el 17-11) cuenta en las empresas de 250 o más asalariados 849.668 empleos de educación y 1.481.067 de actividades sanitarias y de servicios sociales, que pueden incluir empleo público también contado en la EPA (3,74 millones); las cifras proceden de fuentes distintas y no se suman. La valoración no cambia.",
-   "fecha": "2026-11-17"
-  },
-  {
-   "propuesta": "adelante_andalucia-03",
-   "criterio": "beneficiarios (campo de la propuesta)",
-   "antes": "en el tercer trimestre de 2026 (INE). Solo con",
-   "despues": "en el tercer trimestre de 2026 (INE), cifras de fuentes distintas que pueden solaparse. Solo con",
-   "motivo": "auditoría de coherencia (17-nov, tras el análisis de los programas de Ara Més-Front Ampli y EH Bildu): mismo dato y misma advertencia que eh_bildu-04 (corrección de su revisión del 17-11): Cifras PYME de junio de 2026 (comprobado el 17-11) cuenta en las empresas de 250 o más asalariados 849.668 empleos de educación y 1.481.067 de actividades sanitarias y de servicios sociales, que pueden incluir empleo público también contado en la EPA (3,74 millones); las cifras proceden de fuentes distintas y no se suman. La valoración no cambia.",
-   "fecha": "2026-11-17"
-  },
-  {
-   "propuesta": "adelante_andalucia-11",
-   "criterio": "financiacion",
-   "antes": "Habría que organizar un referéndum si se tramitara por el art. 168, o por el art. 167 si lo pidiera una décima parte de una Cámara, cuyo coste no hemos estimado.",
-   "despues": "Por el art. 167, como el proyecto de 2026, solo habría referéndum si lo pidiera una décima parte de los miembros de una Cámara; si el derecho se incluyera entre los derechos fundamentales, el art. 168 obligaría a disolver las Cortes, celebrar elecciones y un referéndum, con un coste del orden del de unas elecciones generales (la organización de las de 2023 costó unos 220,8 M€, según el Ministerio del Interior).",
-   "motivo": "auditoría de coherencia (18-nov, tras el análisis del programa de Podemos y los complementos de UPN, PP, PSC y ERC): criterio único para el coste de los referendos y las reformas constitucionales (punto señalado por la revisión de Podemos del 18-11): «cuyo coste no hemos estimado» queda superado por la referencia que usa podemos-12 (Euronews, 8-10-2026, comprobado el 18-11), y el texto no decía que el art. 168 obliga también a disolver las Cortes y celebrar elecciones. La valoración «favorable» no cambia: la medida no exige necesariamente ninguna votación (cabe por el art. 167, como el proyecto de 2026).",
-   "fecha": "2026-11-18"
-  },
-  {
-   "propuesta": "adelante_andalucia-11",
-   "criterio": "financiacion (fuentes)",
-   "antes": "(sin esta fuente)",
-   "despues": "Euronews (8-10-2026): España gastará más de 270 millones en las elecciones del 29N entre logística y subvenciones — https://es.euronews.com/2026/10/08/elecciones-espana-presupuesto-superara-270-millones",
-   "motivo": "auditoría de coherencia (18-nov, tras el análisis del programa de Podemos y los complementos de UPN, PP, PSC y ERC): referencia del coste de organizar una votación estatal (Ministerio del Interior), como en podemos-12.",
-   "fecha": "2026-11-18"
-  }
- ],
+ "recuento_final": {
+  "favorable": 7,
+  "mixta": 83,
+  "desfavorable": 0,
+  "no_verificable": 6
+ },
+ "recuento_nota": "Recuento de las 12 propuestas × 8 criterios antes y después de esta revisión; igual al de evaluacion.json tras la revisión del 12-nov y la auditoría de coherencia del 12-nov (adelante_andalucia-09, financiación, favorable → mixta).",
+ "cambios": [],
  "dudas": [
-  "adelante_andalucia-12 (financiación, evidencia, beneficiarios, concreción y largo plazo): las cifras de 2023 y 2024 por apartado de la LO 4/2015 (220 sanciones por 73.467 €, 588 por 385.109 €, 47.646 por 20,8 M€ y el 81 % de armas y drogas) proceden del Anuario Estadístico del Ministerio del Interior, cuyo PDF está protegido por un control anti-bots que no se sorteó. El total de 284.512 sanciones y 174,8 M€ de 2023 coincide con la prensa (El Derecho) y con lo citado en erc-05 y bng-11, ya revisadas. Las cifras por apartado conviene comprobarlas a mano en un navegador (pp. 195-199 del anuario).",
-  "Selección de prioridades: la introducción del área 1 (p. 35) menciona «plantillas suficientes», que también figura en la medida principal 14 (propuesta 78). Con el criterio de lectura.md, la medida 14 podría haber entrado como candidata, y entonces habría más de 12 y haría falta un desempate. No se cambia porque la mención es genérica y se refiere a todos los servicios públicos, no a una medida concreta de la 14.",
-  "adelante_andalucia-01 beneficiarios: la tabla del INE se cita con un enlace (DATOS_TABLA/9997?nult=1) que siempre devuelve el último año, de modo que el 16,7 % y el 11,9 % cambiarán cuando se publique la ECV 2026. Conviene fijar el año en el enlace.",
-  "adelante_andalucia-04 beneficiarios: el enlace de La Moncloa sobre el SMI (…/2023/140223-salario-minimo-interprofesional.aspx) muestra hoy la nota de 20-2-2026 con los 2,5 millones de beneficiarios. La ruta de 2023 se ha reutilizado, así que el contenido podría volver a cambiar.",
-  "adelante_andalucia-09 financiación «favorable»: la regla de no garantizar la ordinalidad no tiene coste propio, pero la concreción se apoya en propuestas acompañantes (55 % del IRPF, 70 % del IVA, fondo transitorio) que sí tienen coste sin cifrar. Se mantiene porque la prioridad evaluada es la regla, como en erc-06, pero es un caso frontera."
+  "La Wayback Machine guarda además una captura del 10-nov a las 17:26 UTC con otro digest (A5B2J2OH…): una versión anterior a la regeneración de esa noche que se catalogó, coherente con lo que dice fecha_fuente («una regeneración de esa misma noche»). No se ha descargado ni cotejado; no afecta a nada de lo publicado.",
+  "data/fase1/programa_adelante_andalucia_2026-11-12.json conserva el SHA-256 de la copia codificada el 12-nov (fde1fe02…): es un registro fechado y su texto es el mismo."
  ],
- "coherencia_2026-11-12b": [
-  {
-   "id": "adelante_andalucia-09",
-   "criterio": "financiacion",
-   "antes": "valoracion: favorable",
-   "despues": "valoracion: mixta",
-   "motivo": "igual estándar en «financiación» con pp-06 y cc-03 (rúbrica, «mixta»: coste conocido o estimable y el programa no explica cómo se paga). La concreción de adelante_andalucia-09 ya contaba como parte de la medida la cesión del 55 % del IRPF y el 70 % del IVA y los impuestos especiales y el fondo transitorio de nivelación (p. 72); esos elementos tienen coste estimable con las mismas referencias públicas que pp-06 (fondo de Fedea, 3.000 M€) y cc-03 (modelo del CPFF, 20.975 M€), y el programa no lo cifra ni dice cómo se pagaría. «Favorable» solo correspondía a la regla de reparto aislada."
+ "revision_anterior": {
+  "aprobado": true,
+  "revisor": "Claude (Anthropic), pasada independiente",
+  "fecha": "2026-11-12",
+  "alcance": "12 propuestas × 8 criterios. Se cotejaron las 12 citas y sus páginas con el PDF (pdftotext por página y con -layout para la numeración de las propuestas) y se abrieron las 131 URL externas citadas: todas existen y corresponden al título. Seis devolvieron 403 a peticiones automáticas (dos del FMI, dos del DIW y dos de Légifrance) y se leyeron con otro cliente; el Anuario Estadístico 2024 del Ministerio del Interior está detrás de un control anti-bots que no se sorteó (véase dudas). Selección de prioridades conforme con extraccion.json y con «Las 29 del 29N» (pp. 2-32) y las introducciones de área (pp. 35, 57, 71, 77, 81, 89 y 97). verify_quotes: 727 citas comprobadas, 0 no encontradas.",
+  "igual_estandar": "Antes de la revisión el reparto era 7F/83M/0D/6N. Se comprobó cada valoración contra las rúbricas y contra las propuestas equivalentes ya revisadas. Financiación: adelante_andalucia-01 (tope de alquiler) y -09 (regla de reparto sin ordinalidad) siguen en «favorable» como medidas regulatorias sin coste presupuestario directo, igual que pp-09, erc-06 y pnv-01; -12 es «mixta» y no «favorable» como erc-05 y bng-11 porque añade la anulación y devolución de multas, con un coste estimable que el programa no explica cómo pagar; -02, -06, -07, -08 y -10 son «no_verificable» porque no hay base para estimar el coste, como bng-10 y bng-07. Encaje legal: -11 (reforma constitucional) es «mixta» y no «desfavorable» como erc-04, bng-01 o salf-11, porque la propuesta es la propia reforma y no choca con la Constitución vigente; el procedimiento (art. 167 o 168) depende de un diseño no definido. Internacional: -06, -10, -11 y -12 son «mixta» por aplicación parcial o sin evaluación, la regla de bng-01, pp-10 y salf-11. Único cambio de valoración: -03 concreción pasa a «favorable», porque el programa da los cuatro elementos de la rúbrica (qué, a quién, 32 horas y plazos de dos y cuatro años), como salf-04 y cc-09; bng-04 es «mixta» porque no tiene calendario. -01, -02, -04 a -12 mantienen «mixta» en concreción porque les falta plazo o cuantía. No se encontraron adjetivos de valor ni comparaciones entre partidos en los textos.",
+  "recuento_final": {
+   "favorable": 8,
+   "mixta": 82,
+   "desfavorable": 0,
+   "no_verificable": 6
   },
-  {
-   "id": "adelante_andalucia-09",
-   "criterio": "financiacion",
-   "antes": "Es una regla de reparto entre comunidades sin coste presupuestario directo propio: en 2024 el sistema trasladó 24.647 M€ a las comunidades cuyos ingresos tributarios no cubrían su financiación, de ellos 13.238 M€ aportados por el Estado y 11.409 M€ por las comunidades aportantes netas (Fedea). Las propuestas que la acompañan, como ceder más IRPF, IVA e impuestos especiales o crear un fondo transitorio, sí tienen coste, que el programa no cifra.",
-   "despues": "Renunciar a la ordinalidad es una regla de reparto sin coste presupuestario propio, pero el programa la acompaña, en la misma página, de una mayor cesión de impuestos (al menos el 55 % del IRPF y el 70 % del IVA y de los impuestos especiales) y de un fondo transitorio de nivelación, que sí tienen coste. Es estimable con referencias públicas: el modelo aprobado por el CPFF el 4-9-2026 añade 20.975 M€ a las comunidades (la propuesta de Hacienda de enero de 2026 elevaba la cesión al 55 % del IRPF y al 56,5 % del IVA), y Fedea estimó en 3.000 M€ un fondo transitorio de nivelación; ceder el 70 % del IVA y de los impuestos especiales elevaría esa cifra. El programa no cifra el reparto ni explica cómo compensaría la Administración central esos recursos. Como referencia, en 2024 el sistema trasladó 24.647 M€ a las comunidades cuyos ingresos tributarios no cubrían su financiación, 13.238 M€ aportados por el Estado y 11.409 M€ por las comunidades aportantes netas (Fedea).",
-   "motivo": "texto ajustado a la nueva valoración: coste estimable de la cesión de impuestos y del fondo transitorio, con las fuentes de pp-06 y erc-01"
-  },
-  {
-   "id": "adelante_andalucia-09",
-   "criterio": "financiacion",
-   "antes": "fuentes: https://documentos.fedea.net/pubs/eee/2026/eee2026-24.pdf, https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=72",
-   "despues": "fuentes: https://documentos.fedea.net/pubs/eee/2026/eee2026-24.pdf, https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=72, https://www.hacienda.gob.es/es-es/prensa/noticias/paginas/2026/20260904-np-cpff-directo.aspx, https://www.elsaltodiario.com/economia/nuevo-modelo-financiacion-autonomica-propone-gobierno-se-congelo-puede-pasar-ahora, https://policy.fedea.net/wp-content/uploads/2024/01/presentacion_FFT_ene2024.pdf",
-   "motivo": "se añaden la nota del CPFF (Hacienda), El Salto (porcentajes de cesión de la propuesta de enero de 2026) y la presentación de Fedea sobre el fondo transitorio"
-  }
- ]
+  "cambios": [
+   {
+    "propuesta": "adelante_andalucia-02",
+    "criterio": "largo_plazo",
+    "antes": "Los riesgos que documenta la AIReF son una demanda baja fuera de las grandes áreas metropolitanas, que no compense los costes fijos de construcción y explotación, y el incumplimiento de la planificación:",
+    "despues": "Los riesgos que documenta la AIReF son la pérdida de viajeros entre 2013 y 2018 en la mayoría de los núcleos de Cercanías fuera de Madrid y Barcelona, beneficios que en los corredores de alta velocidad no compensan los costes fijos de construcción, y el incumplimiento de la planificación:",
+    "motivo": "la AIReF no dice que la demanda de Cercanías fuera de las grandes áreas no compense los costes fijos de construcción y explotación: esa frase se refiere a los corredores de alta velocidad y no menciona la explotación; para Cercanías solo documenta la pérdida de viajeros fuera de Madrid y Barcelona entre 2013 y 2018. Se ajusta a lo que dice la fuente"
+   },
+   {
+    "propuesta": "adelante_andalucia-03",
+    "criterio": "concrecion",
+    "antes": "valoracion: mixta",
+    "despues": "valoracion: favorable",
+    "motivo": "igual estándar (rúbrica de concreción): el programa dice qué se hará (32 horas semanales sin rebaja de sueldo y prohibición del turno partido sin rebaja salarial), a quién afecta, con qué cuantía (32 horas) y en qué plazo (dos años en grandes empresas y cuatro en pymes), que son los cuatro elementos de «favorable». El «apoyo público» sin cuantificar es un elemento accesorio, como la supervisión de tarifas en cc-09 o la reducción entre 35.000 y 50.000 € en salf-04, ambas «favorable»; bng-04 es «mixta» porque no fija calendario, que aquí sí consta. Los vacíos siguen explicados en el texto"
+   },
+   {
+    "propuesta": "adelante_andalucia-03",
+    "criterio": "concrecion",
+    "antes": "El programa (p. 63) dice qué hará (32 horas semanales sin rebaja de sueldo y prohibición del turno partido sin rebaja salarial), a quién afecta y en qué plazo (dos años en las grandes empresas y cuatro en las pymes). No cuantifica",
+    "despues": "El programa (p. 63) dice qué hará (32 horas semanales sin rebaja de sueldo y prohibición del turno partido sin rebaja salarial), a quién afecta, con qué cuantía (32 horas) y en qué plazo (dos años en las grandes empresas y cuatro en las pymes). Como aspectos accesorios, no cuantifica",
+    "motivo": "texto ajustado al cambio de valoración a «favorable» (rúbrica de concreción)"
+   },
+   {
+    "propuesta": "adelante_andalucia-03",
+    "criterio": "internacional",
+    "antes": "Varios países europeos redujeron la jornada legal entre 1995 y 2007, entre ellos Portugal: los trabajadores mantuvieron el salario mensual y el empleo no aumentó, aunque tampoco se redujo.",
+    "despues": "Varios países europeos (Francia, Italia, Bélgica, Portugal y Eslovenia) redujeron la jornada legal entre 1995 y 2007: en el conjunto de esas reformas el empleo no aumentó (Batut y otros, 2022), y en Portugal los trabajadores afectados mantuvieron el salario mensual sin más pérdidas de empleo (Raposo y van Ours).",
+    "motivo": "Raposo y van Ours (IZA DP 3723) solo concluyen para Portugal que no hubo más pérdidas de empleo y que el salario mensual se mantuvo; que «el empleo no aumentó» es el resultado agregado de las cinco reformas de Batut y otros (2022), no un resultado de Portugal"
+   },
+   {
+    "propuesta": "adelante_andalucia-03",
+    "criterio": "largo_plazo",
+    "antes": "Riesgos: un aumento del coste laboral por hora del orden del 19-25 %, más intenso, según la memoria de 2025, en los sectores con mayor jornada media y menor tamaño de empresa, como la hostelería o el comercio minorista;",
+    "despues": "Riesgos: un aumento del coste laboral por hora del orden del 19-25 % (cálculo propio), que afectaría más a los sectores con mayor jornada media y empresas más pequeñas, como la hostelería o el comercio minorista, donde la memoria de 2025 preveía el mayor impacto de la reducción de jornada;",
+    "motivo": "la memoria de 2025 dice que el impacto de la medida será más intenso en esos sectores, pero lo presenta en relación con el consumo, no como un riesgo de coste; se reformula sin atribuirle esa valoración"
+   },
+   {
+    "propuesta": "adelante_andalucia-04",
+    "criterio": "beneficiarios",
+    "antes": "19,12 millones de ocupados en el sector privado y 3,74 millones en el público (INE, tercer trimestre de 2026)",
+    "despues": "el sector privado sumaba 19,12 millones de ocupados, incluidos los no asalariados, y el público 3,74 millones (INE, tercer trimestre de 2026)",
+    "motivo": "la cifra del INE (19.115.800) es el total de ocupados del sector privado, incluidos los trabajadores por cuenta propia, no solo las personas asalariadas"
+   },
+   {
+    "propuesta": "adelante_andalucia-04",
+    "criterio": "beneficiarios (campo de la propuesta)",
+    "antes": "el empleo privado sumaba 19,12 millones de ocupados y el público 3,74 millones",
+    "despues": "el empleo privado sumaba 19,12 millones de ocupados (incluidos los no asalariados) y el público 3,74 millones",
+    "motivo": "la cifra del INE es el total de ocupados del sector privado, incluidos los trabajadores por cuenta propia"
+   },
+   {
+    "propuesta": "adelante_andalucia-05",
+    "criterio": "antecedentes",
+    "antes": "se restableció en 2011 (Real Decreto-ley 13/2011) y tiene vigencia indefinida desde 2014;",
+    "despues": "se restableció en 2011 (Real Decreto-ley 13/2011), se prorrogó año a año y tiene vigencia indefinida desde 2021 (Ley 11/2020);",
+    "motivo": "error de dato: el impuesto se prorrogó cada año desde 2011 y pasó a tener vigencia indefinida con efectos de 1-1-2021, por la disposición derogatoria primera de la Ley 11/2020 de Presupuestos para 2021, según el texto consolidado de la Ley 19/1991 (BOE)"
+   },
+   {
+    "propuesta": "adelante_andalucia-05",
+    "criterio": "antecedentes",
+    "antes": "fuente: (ninguna para ese dato)",
+    "despues": "fuente añadida: https://www.boe.es/buscar/act.php?id=BOE-A-1991-14392",
+    "motivo": "la fecha de vigencia indefinida no tenía fuente citada"
+   },
+   {
+    "propuesta": "adelante_andalucia-05",
+    "criterio": "evidencia",
+    "antes": "sobre todo por evasión y cambios de residencia y poco por más ahorro (Brülhart y otros, 2022)",
+    "despues": "en buena parte por evasión y, en menor medida, por cambios de residencia y la evolución del precio de la vivienda, y poco por más ahorro (Brülhart y otros, 2022)",
+    "motivo": "el estudio atribuye un 24 % del efecto a la movilidad y un 21 % a los precios de la vivienda, una parte pequeña al ahorro y el resto a una evasión considerable; «sobre todo por cambios de residencia» sobrevaloraba la movilidad"
+   },
+   {
+    "propuesta": "adelante_andalucia-05",
+    "criterio": "evidencia",
+    "antes": "En España, tras la cesión del impuesto, los grandes patrimonios residentes en Madrid, donde en la práctica no se pagaba, crecieron un 10 % en cinco años frente al resto,",
+    "despues": "En España, tras su restablecimiento en 2011, el número de grandes patrimonios residentes en Madrid, la única comunidad que no lo exigía en la práctica, creció un 10 % en cinco años frente al resto,",
+    "motivo": "el estudio analiza el restablecimiento de 2011, tras el que todas las comunidades salvo Madrid aplicaron tipos positivos, no la cesión; y mide el número de contribuyentes ricos residentes («the stock of wealthy individuals»), no el importe de su patrimonio"
+   },
+   {
+    "propuesta": "adelante_andalucia-05",
+    "criterio": "beneficiarios",
+    "antes": "en 2024 declararon el Impuesto sobre el Patrimonio 227.424 personas",
+    "despues": "por el ejercicio 2024 declararon el Impuesto sobre el Patrimonio 227.424 personas",
+    "motivo": "la estadística de la AEAT se refiere a las declaraciones del ejercicio 2024 (presentadas en 2025)"
+   },
+   {
+    "propuesta": "adelante_andalucia-05",
+    "criterio": "beneficiarios (campo de la propuesta)",
+    "antes": "227.424 personas declararon el Impuesto sobre el Patrimonio en 2024",
+    "despues": "227.424 personas declararon el Impuesto sobre el Patrimonio por el ejercicio 2024",
+    "motivo": "la estadística de la AEAT se refiere a las declaraciones del ejercicio 2024 (presentadas en 2025)"
+   },
+   {
+    "propuesta": "adelante_andalucia-05",
+    "criterio": "fuentes (legal y antecedentes)",
+    "antes": "https://hj.tribunalconstitucional.es/es/Resolucion/GetDocumentResolucion/769",
+    "despues": "https://hj.tribunalconstitucional.es/es/Resolucion/Show/769",
+    "motivo": "el enlace anterior descarga un .docx; se sustituye por la página HTML de la misma sentencia"
+   },
+   {
+    "propuesta": "adelante_andalucia-06",
+    "criterio": "financiacion",
+    "antes": " Como referencia parcial, las reversiones valencianas conllevaron pagos complementarios a la concesionaria de 25,11 M€ (Alzira), 45,9 M€ (Torrevieja) y 47,6 M€ (Dénia), según la prensa.",
+    "despues": "",
+    "motivo": "error de atribución: según elDiario.es, esos 25,11, 45,9 y 47,6 M€ fueron pagos complementarios de la Generalitat a la concesionaria durante las concesiones, por obligaciones no previstas en los contratos (expedientes de enriquecimiento injusto), no el coste de revertirlas; no sirven como referencia del coste de la medida"
+   },
+   {
+    "propuesta": "adelante_andalucia-07",
+    "criterio": "largo_plazo",
+    "antes": "Los riesgos documentados son la asignación del crédito por criterios no financieros y la gobernanza, que en España contribuyeron a las pérdidas de las cajas de ahorros (Cuñat y Garicano, 2010),",
+    "despues": "Los riesgos documentados son la asignación del crédito por criterios no financieros y el perfil de los gestores: en las cajas de ahorros españolas, las presididas por antiguos cargos políticos o por personas sin experiencia bancaria tuvieron peores resultados en sus préstamos (Cuñat y Garicano, 2010),",
+    "motivo": "Cuñat y Garicano no hallan que la gobernanza formal o el papel de los partidos se correlacione con los resultados de los préstamos; lo que hallan es el efecto del perfil de los presidentes (cargos políticos, sin experiencia bancaria)"
+   },
+   {
+    "propuesta": "adelante_andalucia-08",
+    "criterio": "legal",
+    "antes": "El derecho de la UE admite la propiedad pública, pero exige que el control de la red de transporte y el de la generación o el suministro estén en organismos públicos distintos (Directiva 2019/944, art. 43)",
+    "despues": "El derecho de la UE admite la propiedad pública, pero exige separar la propiedad de la red de transporte de la generación y el suministro; si ambas son públicas, la separación se cumple cuando dependen de organismos públicos distintos (Directiva 2019/944, art. 43)",
+    "motivo": "precisión: el art. 43 exige la separación patrimonial y su apartado 5 admite como forma de cumplirla que dos organismos públicos distintos controlen la red y la generación o el suministro; no lo impone como única vía"
+   },
+   {
+    "propuesta": "adelante_andalucia-08",
+    "criterio": "largo_plazo",
+    "antes": "la menor eficiencia en generación que la literatura asocia a la propiedad pública (Kwoka, 2005; Megginson y Netter, 2001)",
+    "despues": "la menor eficiencia en generación que se ha observado en empresas públicas de Estados Unidos (Kwoka, 2005) y la mayor eficiencia que la literatura general sobre privatizaciones atribuye a la gestión privada (Megginson y Netter, 2001)",
+    "motivo": "Megginson y Netter (2001) es una revisión general de privatizaciones, no específica de la generación eléctrica; solo Kwoka (2005) respalda el dato sobre generación"
+   },
+   {
+    "propuesta": "adelante_andalucia-10",
+    "criterio": "internacional",
+    "antes": "y algunas personas sin empleo que atienden un hogar reciben una cantidad fija por hora",
+    "despues": "y quienes no trabajan o trabajan menos de 20 horas semanales y llevan un hogar de varias personas reciben una cantidad fija por hora",
+    "motivo": "el § 45 de la ley municipal de Renania del Norte-Westfalia incluye también a quienes trabajan menos de 20 horas semanales y exige un hogar de al menos tres personas (o dos con una que necesite cuidados)"
+   },
+   {
+    "propuesta": "adelante_andalucia-11",
+    "criterio": "largo_plazo",
+    "antes": "Los estudios comparados indican que incluir un derecho individual en la Constitución no garantiza por sí solo su protección efectiva (Chilton y Versteeg, 2016).",
+    "despues": "Un estudio comparado sobre seis derechos políticos indica que recoger derechos individuales en la Constitución no garantiza por sí solo su protección efectiva (Chilton y Versteeg, 2016); no analiza el aborto.",
+    "motivo": "el estudio solo analiza seis derechos políticos; se acota la generalización, como ya hacía el texto de evidencia"
+   },
+   {
+    "propuesta": "adelante_andalucia-12",
+    "criterio": "financiacion",
+    "antes": "En 2023 las sanciones por los apartados que mencionan expresamente reuniones o manifestaciones (arts. 36.2, 36.7, 36.8, 37.1 y 37.3)",
+    "despues": "En 2023 las sanciones por los apartados referidos específicamente a reuniones o manifestaciones del derecho de reunión (arts. 36.2, 36.7, 36.8, 37.1 y 37.3)",
+    "motivo": "el art. 36.1 también menciona «reuniones» (las «otras reuniones a las que asistan numerosas personas»), aunque no se refiere al derecho de reunión; «mencionan expresamente» era inexacto"
+   },
+   {
+    "propuesta": "adelante_andalucia-12",
+    "criterio": "evidencia",
+    "antes": "220 de las 284.512 sanciones correspondieron a apartados que mencionan expresamente reuniones o manifestaciones.",
+    "despues": "220 de las 284.512 sanciones correspondieron a apartados referidos específicamente a reuniones o manifestaciones del derecho de reunión.",
+    "motivo": "mismo motivo: el art. 36.1 también menciona reuniones"
+   },
+   {
+    "propuesta": "adelante_andalucia-12",
+    "criterio": "beneficiarios",
+    "antes": "220 sanciones por apartados que mencionan expresamente reuniones o manifestaciones",
+    "despues": "220 sanciones por apartados referidos específicamente a reuniones o manifestaciones del derecho de reunión",
+    "motivo": "mismo motivo: el art. 36.1 también menciona reuniones"
+   },
+   {
+    "propuesta": "adelante_andalucia-12",
+    "criterio": "beneficiarios (campo de la propuesta)",
+    "antes": "220 sanciones por los apartados que mencionan expresamente reuniones o manifestaciones",
+    "despues": "220 sanciones por los apartados referidos específicamente a reuniones o manifestaciones del derecho de reunión",
+    "motivo": "mismo motivo: el art. 36.1 también menciona reuniones"
+   },
+   {
+    "propuesta": "adelante_andalucia-12",
+    "criterio": "antecedentes",
+    "antes": "con el voto en contra de PP, Vox, Ciudadanos, ERC, Junts, UPN y EH Bildu, estos dos últimos por considerarla insuficiente;",
+    "despues": "con el voto en contra de PP, Vox, Ciudadanos, UPN, Junts, ERC y EH Bildu, estos dos últimos por considerarla insuficiente;",
+    "motivo": "error: por el orden de la lista, «estos dos últimos» señalaba a UPN y EH Bildu; según Orain (14-3-2023), los que la consideraron insuficiente fueron ERC y EH Bildu"
+   },
+   {
+    "propuesta": "adelante_andalucia-03",
+    "criterio": "evidencia",
+    "antes": "hallaron que la reducción de la jornada legal redujo las horas trabajadas y elevó el salario por hora, sin aumento del empleo y con un efecto positivo pero no significativo sobre la productividad por hora.",
+    "despues": "hallaron que la reducción de la jornada legal redujo las horas trabajadas sin aumento del empleo, con efectos positivos pero no significativos sobre el salario por hora y la productividad por hora.",
+    "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): exagera el resultado, corregido igual que en compromis-05: el resumen dice «hourly wages rose», pero el artículo estima «positive but insignificant effects on hourly wages and value-added per hour worked» (IZA DP 15566, p. 2). La valoración («mixta») no cambia.",
+    "fecha": "2026-11-14"
+   },
+   {
+    "propuesta": "adelante_andalucia-04",
+    "criterio": "legal (fuentes)",
+    "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:32022L2041 | Directiva (UE) 2022/2041 sobre unos salarios mínimos adecuados en la Unión Europea",
+    "despues": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2022-81556 | Directiva (UE) 2022/2041 sobre unos salarios mínimos adecuados en la Unión Europea (DOUE, copia del BOE)",
+    "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
+    "fecha": "2026-11-14"
+   },
+   {
+    "propuesta": "adelante_andalucia-04",
+    "criterio": "legal (fuentes)",
+    "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:62023CJ0019 | TJUE (Gran Sala), sentencia de 11-11-2025, asunto C-19/23, Dinamarca/Parlamento y Consejo",
+    "despues": "http://publications.europa.eu/resource/celex/62023CJ0019 | TJUE (Gran Sala), sentencia de 11-11-2025, asunto C-19/23, Dinamarca/Parlamento y Consejo (Oficina de Publicaciones de la UE)",
+    "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
+    "fecha": "2026-11-14"
+   },
+   {
+    "propuesta": "adelante_andalucia-07",
+    "criterio": "legal (fuentes)",
+    "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32013R1024 | Reglamento (UE) 1024/2013 del Consejo, que encomienda al BCE la supervisión prudencial de las entidades de crédito",
+    "despues": "http://publications.europa.eu/resource/celex/32013R1024 | Reglamento (UE) 1024/2013 del Consejo, que encomienda al BCE la supervisión prudencial de las entidades de crédito (Oficina de Publicaciones de la UE)",
+    "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
+    "fecha": "2026-11-14"
+   },
+   {
+    "propuesta": "adelante_andalucia-05",
+    "criterio": "financiacion",
+    "antes": "y el impuesto de solidaridad de las grandes fortunas, 623 M€ en 2023.",
+    "despues": "y el impuesto de solidaridad de las grandes fortunas, 623 M€ en 2023, 37 M€ en 2024 y casi 19 M€ en 2025 (Agencia Tributaria).",
+    "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): misma cifra oficial en todas las evaluaciones que usan la recaudación del impuesto de grandes fortunas: la Agencia Tributaria (Informe anual de recaudación 2025, cap. 6) da 37 M€ en 2024 y casi 19 M€ en 2025, frente a 623 M€ en 2023; citar solo 2023 como recaudación del impuesto omitía su caída. Como en psoe-07. La valoración no cambia: la recaudación sigue siendo conocida.",
+    "fecha": "2026-11-15"
+   },
+   {
+    "propuesta": "adelante_andalucia-05",
+    "criterio": "financiacion (fuentes)",
+    "antes": "(sin esta fuente)",
+    "despues": "Agencia Tributaria, Informe anual de recaudación tributaria 2025, capítulo 6: otros impuestos — https://sede.agenciatributaria.gob.es/Sede/estadisticas/recaudacion-tributaria/informe-anual/ejercicio-2025/6-otros-impuestos.html",
+    "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial de la recaudación de 2024 y 2025.",
+    "fecha": "2026-11-15"
+   },
+   {
+    "propuesta": "adelante_andalucia-06",
+    "criterio": "antecedentes",
+    "antes": "pero decayó con la convocatoria de elecciones en octubre de 2026.",
+    "despues": "pero caducó con la disolución de las Cortes para las elecciones de 2026 (art. 207 del Reglamento del Congreso).",
+    "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): base oficial y misma formulación que psoe-06 para el mismo proyecto: el art. 207 del Reglamento del Congreso dispone que, disuelto el Congreso, «quedarán caducados todos los asuntos pendientes». La valoración no cambia.",
+    "fecha": "2026-11-15"
+   },
+   {
+    "propuesta": "adelante_andalucia-06",
+    "criterio": "antecedentes (fuentes)",
+    "antes": "(sin esta fuente)",
+    "despues": "Reglamento del Congreso de los Diputados (texto consolidado, BOE), art. 207 — https://www.boe.es/buscar/act.php?id=BOE-A-1982-5196",
+    "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): base oficial de la caducidad, como en psoe-06.",
+    "fecha": "2026-11-15"
+   },
+   {
+    "propuesta": "adelante_andalucia-11",
+    "criterio": "beneficiarios (campo)",
+    "antes": "106.172 en 2024 en España (12,36 por cada 1.000 mujeres de 15 a 44 años), el 78,74 % en centros privados",
+    "despues": "106.172 interrupciones en 2024 en España (12,36 por cada 1.000 mujeres de 15 a 44 años), el 78,75 % en centros privados",
+    "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): cifra y unidad, igual que en psoe-10: la tabla EV.4 del informe IVE 2024 del Ministerio de Sanidad (comprobada el 15-11) da 7,85 + 70,9 = 78,75 % en centros privados (el 78,74 % de La Moncloa es un truncamiento: 78,74 + 21,25 = 99,99), y la unidad son interrupciones, no mujeres. La valoración no cambia.",
+    "fecha": "2026-11-15"
+   },
+   {
+    "propuesta": "adelante_andalucia-11",
+    "criterio": "beneficiarios",
+    "antes": "106.172 en 2024 (12,36",
+    "despues": "106.172 interrupciones en 2024 (12,36",
+    "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): unidad, igual que en psoe-10: 106.172 son interrupciones (incluidas 1.787 de no residentes), no mujeres. La valoración no cambia.",
+    "fecha": "2026-11-15"
+   },
+   {
+    "propuesta": "adelante_andalucia-11",
+    "criterio": "antecedentes",
+    "antes": "y decayó con la disolución de las Cortes para las elecciones del 29-N.",
+    "despues": "y caducó con la disolución de las Cortes para las elecciones del 29-N (art. 207 del Reglamento del Congreso), según la relación de iniciativas caducadas publicada en el Boletín Oficial de las Cortes Generales el 4-11-2026.",
+    "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial y misma formulación que psoe-10: la ficha de la iniciativa 102/000001 del Congreso («Concluido - (Caducado) desde 06/10/2026») y el BOCG, Congreso, serie D, núm. 610 (4-11-2026), p. 30. La valoración no cambia.",
+    "fecha": "2026-11-15"
+   },
+   {
+    "propuesta": "adelante_andalucia-11",
+    "criterio": "antecedentes (fuentes)",
+    "antes": "(sin esta fuente)",
+    "despues": "Congreso de los Diputados, iniciativa 102/000001 (reforma del art. 43): «Concluido - (Caducado) desde 06/10/2026» — https://www.congreso.es/es/busqueda-de-iniciativas?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=102%2F000001",
+    "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial de la caducidad, como en psoe-10.",
+    "fecha": "2026-11-15"
+   },
+   {
+    "propuesta": "adelante_andalucia-11",
+    "criterio": "antecedentes (fuentes)",
+    "antes": "(sin esta fuente)",
+    "despues": "BOCG, Congreso, serie D, núm. 610 (4-11-2026): relación de iniciativas caducadas, expediente 102/000001 — https://www.congreso.es/public_oficiales/L15/CONG/BOCG/D/BOCG-15-D-610.PDF#page=30",
+    "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial de la caducidad, como en psoe-10.",
+    "fecha": "2026-11-15"
+   },
+   {
+    "propuesta": "adelante_andalucia-03",
+    "criterio": "financiacion",
+    "antes": "y desde la jornada pactada media de 38,1 horas (marzo de 2026), un 19 % (cálculo propio)",
+    "despues": "y desde la jornada media pactada en los convenios registrados hasta marzo de 2026 (1.739 horas al año, unas 38,1 semanales), un 19 % (cálculos propios)",
+    "motivo": "auditoría de coherencia (16-nov, tras el análisis del programa del Frente Amplio): fuente primaria en lugar de prensa (Onda Vasca): Estadística de Convenios Colectivos del Ministerio de Trabajo, avance de marzo de 2026 (CCT_03_2026.xls, comprobado el 16-11): jornada media pactada de 1.739,31 horas al año en los convenios con efectos en 2026 registrados hasta marzo (1.739,31 / 1.826,27 × 40 = 38,1 horas semanales); misma cifra, misma fuente y misma redacción que frente_amplio-09. La valoración no cambia.",
+    "fecha": "2026-11-16"
+   },
+   {
+    "propuesta": "adelante_andalucia-03",
+    "criterio": "financiacion (fuentes)",
+    "antes": "Onda Vasca (2-5-2026): la jornada pactada en convenio, con datos de la Estadística de Convenios del Ministerio de Trabajo (prensa) — https://www.ondavasca.com/la-jornada-laboral-se-reduce-un-ano-despues-del-intento-de-las-375-horas/",
+    "despues": "Ministerio de Trabajo, Estadística de Convenios Colectivos, avance de marzo de 2026, tabla CCT-2.2: jornada media pactada (1.739,31 horas al año) — https://www.mites.gob.es/estadisticas/cct/cct26marav/CCT_03_2026.xls",
+    "motivo": "auditoría de coherencia (16-nov, tras el análisis del programa del Frente Amplio): fuente primaria en lugar de prensa (Onda Vasca): Estadística de Convenios Colectivos del Ministerio de Trabajo, avance de marzo de 2026 (CCT_03_2026.xls, comprobado el 16-11): jornada media pactada de 1.739,31 horas al año en los convenios con efectos en 2026 registrados hasta marzo (1.739,31 / 1.826,27 × 40 = 38,1 horas semanales); misma cifra, misma fuente y misma redacción que frente_amplio-09.",
+    "fecha": "2026-11-16"
+   },
+   {
+    "propuesta": "adelante_andalucia-03",
+    "criterio": "antecedentes (fuentes)",
+    "antes": "(sin esta fuente)",
+    "despues": "Congreso de los Diputados, Diario de Sesiones del Pleno n.º 135 (10-9-2025): enmiendas a la totalidad del proyecto de ley de reducción de jornada — https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-135.PDF",
+    "motivo": "auditoría de coherencia (16-nov, tras el análisis del programa del Frente Amplio): fuente primaria de la votación (Diario de Sesiones del Pleno n.º 135, 10-9-2025: las enmiendas a la totalidad «se aprueban por 178 votos a favor y 170 en contra», comprobado el 16-11) junto a El Salto (prensa), como en frente_amplio-09.",
+    "fecha": "2026-11-16"
+   },
+   {
+    "propuesta": "adelante_andalucia-03",
+    "criterio": "financiacion",
+    "antes": "desde la jornada media pactada en los convenios registrados hasta marzo de 2026 (1.739 horas al año, unas 38,1 semanales)",
+    "despues": "desde la jornada media pactada en los convenios con efectos económicos en 2026 registrados hasta marzo (1.739 horas al año, unas 38,1 semanales con la equivalencia de 1.826 horas anuales para 40 semanales)",
+    "motivo": "auditoría de coherencia (17-nov, tras el análisis de los programas de Ara Més-Front Ampli y EH Bildu): fidelidad a la fuente y mismo texto que eh_bildu-04 (corrección de su revisión del 17-11): la tabla CCT-2.2 de la Estadística de Convenios Colectivos (CCT_03_2026.xls, comprobado el 17-11) clasifica los convenios «por año de efectos económicos y período de registro», así que la jornada media de 1.739,31 horas es la de los convenios con efectos económicos en 2026 registrados hasta marzo, no la de todos los convenios registrados; y la conversión a horas semanales no decía qué semanas al año suponía (1.739,31 / 45,65 = 38,1; 40 × 45,65 = 1.826). La valoración no cambia.",
+    "fecha": "2026-11-17"
+   },
+   {
+    "propuesta": "adelante_andalucia-03",
+    "criterio": "beneficiarios",
+    "antes": "y 3,74 millones de ocupados en el sector público; solo con",
+    "despues": "y 3,74 millones de ocupados en el sector público (cifras de fuentes distintas, que pueden solaparse y no se suman); solo con",
+    "motivo": "auditoría de coherencia (17-nov, tras el análisis de los programas de Ara Més-Front Ampli y EH Bildu): mismo dato y misma advertencia que eh_bildu-04 (corrección de su revisión del 17-11): Cifras PYME de junio de 2026 (comprobado el 17-11) cuenta en las empresas de 250 o más asalariados 849.668 empleos de educación y 1.481.067 de actividades sanitarias y de servicios sociales, que pueden incluir empleo público también contado en la EPA (3,74 millones); las cifras proceden de fuentes distintas y no se suman. La valoración no cambia.",
+    "fecha": "2026-11-17"
+   },
+   {
+    "propuesta": "adelante_andalucia-03",
+    "criterio": "beneficiarios (campo de la propuesta)",
+    "antes": "en el tercer trimestre de 2026 (INE). Solo con",
+    "despues": "en el tercer trimestre de 2026 (INE), cifras de fuentes distintas que pueden solaparse. Solo con",
+    "motivo": "auditoría de coherencia (17-nov, tras el análisis de los programas de Ara Més-Front Ampli y EH Bildu): mismo dato y misma advertencia que eh_bildu-04 (corrección de su revisión del 17-11): Cifras PYME de junio de 2026 (comprobado el 17-11) cuenta en las empresas de 250 o más asalariados 849.668 empleos de educación y 1.481.067 de actividades sanitarias y de servicios sociales, que pueden incluir empleo público también contado en la EPA (3,74 millones); las cifras proceden de fuentes distintas y no se suman. La valoración no cambia.",
+    "fecha": "2026-11-17"
+   },
+   {
+    "propuesta": "adelante_andalucia-11",
+    "criterio": "financiacion",
+    "antes": "Habría que organizar un referéndum si se tramitara por el art. 168, o por el art. 167 si lo pidiera una décima parte de una Cámara, cuyo coste no hemos estimado.",
+    "despues": "Por el art. 167, como el proyecto de 2026, solo habría referéndum si lo pidiera una décima parte de los miembros de una Cámara; si el derecho se incluyera entre los derechos fundamentales, el art. 168 obligaría a disolver las Cortes, celebrar elecciones y un referéndum, con un coste del orden del de unas elecciones generales (la organización de las de 2023 costó unos 220,8 M€, según el Ministerio del Interior).",
+    "motivo": "auditoría de coherencia (18-nov, tras el análisis del programa de Podemos y los complementos de UPN, PP, PSC y ERC): criterio único para el coste de los referendos y las reformas constitucionales (punto señalado por la revisión de Podemos del 18-11): «cuyo coste no hemos estimado» queda superado por la referencia que usa podemos-12 (Euronews, 8-10-2026, comprobado el 18-11), y el texto no decía que el art. 168 obliga también a disolver las Cortes y celebrar elecciones. La valoración «favorable» no cambia: la medida no exige necesariamente ninguna votación (cabe por el art. 167, como el proyecto de 2026).",
+    "fecha": "2026-11-18"
+   },
+   {
+    "propuesta": "adelante_andalucia-11",
+    "criterio": "financiacion (fuentes)",
+    "antes": "(sin esta fuente)",
+    "despues": "Euronews (8-10-2026): España gastará más de 270 millones en las elecciones del 29N entre logística y subvenciones — https://es.euronews.com/2026/10/08/elecciones-espana-presupuesto-superara-270-millones",
+    "motivo": "auditoría de coherencia (18-nov, tras el análisis del programa de Podemos y los complementos de UPN, PP, PSC y ERC): referencia del coste de organizar una votación estatal (Ministerio del Interior), como en podemos-12.",
+    "fecha": "2026-11-18"
+   }
+  ],
+  "dudas": [
+   "adelante_andalucia-12 (financiación, evidencia, beneficiarios, concreción y largo plazo): las cifras de 2023 y 2024 por apartado de la LO 4/2015 (220 sanciones por 73.467 €, 588 por 385.109 €, 47.646 por 20,8 M€ y el 81 % de armas y drogas) proceden del Anuario Estadístico del Ministerio del Interior, cuyo PDF está protegido por un control anti-bots que no se sorteó. El total de 284.512 sanciones y 174,8 M€ de 2023 coincide con la prensa (El Derecho) y con lo citado en erc-05 y bng-11, ya revisadas. Las cifras por apartado conviene comprobarlas a mano en un navegador (pp. 195-199 del anuario).",
+   "Selección de prioridades: la introducción del área 1 (p. 35) menciona «plantillas suficientes», que también figura en la medida principal 14 (propuesta 78). Con el criterio de lectura.md, la medida 14 podría haber entrado como candidata, y entonces habría más de 12 y haría falta un desempate. No se cambia porque la mención es genérica y se refiere a todos los servicios públicos, no a una medida concreta de la 14.",
+   "adelante_andalucia-01 beneficiarios: la tabla del INE se cita con un enlace (DATOS_TABLA/9997?nult=1) que siempre devuelve el último año, de modo que el 16,7 % y el 11,9 % cambiarán cuando se publique la ECV 2026. Conviene fijar el año en el enlace.",
+   "adelante_andalucia-04 beneficiarios: el enlace de La Moncloa sobre el SMI (…/2023/140223-salario-minimo-interprofesional.aspx) muestra hoy la nota de 20-2-2026 con los 2,5 millones de beneficiarios. La ruta de 2023 se ha reutilizado, así que el contenido podría volver a cambiar.",
+   "adelante_andalucia-09 financiación «favorable»: la regla de no garantizar la ordinalidad no tiene coste propio, pero la concreción se apoya en propuestas acompañantes (55 % del IRPF, 70 % del IVA, fondo transitorio) que sí tienen coste sin cifrar. Se mantiene porque la prioridad evaluada es la regla, como en erc-06, pero es un caso frontera."
+  ],
+  "coherencia_2026-11-12b": [
+   {
+    "id": "adelante_andalucia-09",
+    "criterio": "financiacion",
+    "antes": "valoracion: favorable",
+    "despues": "valoracion: mixta",
+    "motivo": "igual estándar en «financiación» con pp-06 y cc-03 (rúbrica, «mixta»: coste conocido o estimable y el programa no explica cómo se paga). La concreción de adelante_andalucia-09 ya contaba como parte de la medida la cesión del 55 % del IRPF y el 70 % del IVA y los impuestos especiales y el fondo transitorio de nivelación (p. 72); esos elementos tienen coste estimable con las mismas referencias públicas que pp-06 (fondo de Fedea, 3.000 M€) y cc-03 (modelo del CPFF, 20.975 M€), y el programa no lo cifra ni dice cómo se pagaría. «Favorable» solo correspondía a la regla de reparto aislada."
+   },
+   {
+    "id": "adelante_andalucia-09",
+    "criterio": "financiacion",
+    "antes": "Es una regla de reparto entre comunidades sin coste presupuestario directo propio: en 2024 el sistema trasladó 24.647 M€ a las comunidades cuyos ingresos tributarios no cubrían su financiación, de ellos 13.238 M€ aportados por el Estado y 11.409 M€ por las comunidades aportantes netas (Fedea). Las propuestas que la acompañan, como ceder más IRPF, IVA e impuestos especiales o crear un fondo transitorio, sí tienen coste, que el programa no cifra.",
+    "despues": "Renunciar a la ordinalidad es una regla de reparto sin coste presupuestario propio, pero el programa la acompaña, en la misma página, de una mayor cesión de impuestos (al menos el 55 % del IRPF y el 70 % del IVA y de los impuestos especiales) y de un fondo transitorio de nivelación, que sí tienen coste. Es estimable con referencias públicas: el modelo aprobado por el CPFF el 4-9-2026 añade 20.975 M€ a las comunidades (la propuesta de Hacienda de enero de 2026 elevaba la cesión al 55 % del IRPF y al 56,5 % del IVA), y Fedea estimó en 3.000 M€ un fondo transitorio de nivelación; ceder el 70 % del IVA y de los impuestos especiales elevaría esa cifra. El programa no cifra el reparto ni explica cómo compensaría la Administración central esos recursos. Como referencia, en 2024 el sistema trasladó 24.647 M€ a las comunidades cuyos ingresos tributarios no cubrían su financiación, 13.238 M€ aportados por el Estado y 11.409 M€ por las comunidades aportantes netas (Fedea).",
+    "motivo": "texto ajustado a la nueva valoración: coste estimable de la cesión de impuestos y del fondo transitorio, con las fuentes de pp-06 y erc-01"
+   },
+   {
+    "id": "adelante_andalucia-09",
+    "criterio": "financiacion",
+    "antes": "fuentes: https://documentos.fedea.net/pubs/eee/2026/eee2026-24.pdf, https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=72",
+    "despues": "fuentes: https://documentos.fedea.net/pubs/eee/2026/eee2026-24.pdf, https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=72, https://www.hacienda.gob.es/es-es/prensa/noticias/paginas/2026/20260904-np-cpff-directo.aspx, https://www.elsaltodiario.com/economia/nuevo-modelo-financiacion-autonomica-propone-gobierno-se-congelo-puede-pasar-ahora, https://policy.fedea.net/wp-content/uploads/2024/01/presentacion_FFT_ene2024.pdf",
+    "motivo": "se añaden la nota del CPFF (Hacienda), El Salto (porcentajes de cesión de la propuesta de enero de 2026) y la presentación de Fedea sobre el fondo transitorio"
+   }
+  ]
+ }
 }

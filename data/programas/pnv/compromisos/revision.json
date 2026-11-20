@@ -1,11 +1,12 @@
 {
  "aprobado": true,
  "revisor": "Claude (Anthropic), pasada independiente",
- "fecha": "2026-11-12",
+ "fecha": "2026-11-20",
  "base": "complemento",
- "alcance": "1 prioridad (pnv-c01) × 8 criterios. Se abrieron las 26 URL distintas de seleccion.json y evaluacion.json: 23 respondieron 200; los tres documentos del Congreso (BOCG B-3-1, B-3-3 y DSCD-15-PL-168) devolvieron 403 a curl; B-3-1 y el Diario de Sesiones se leyeron con otra petición normal (WebFetch): la proposición 122/000004 del Grupo Vasco reforma la LO 2/1979 y deroga la LO 12/2015, y el 24-2-2026 se tomó en consideración por 175 a favor y 171 en contra, con el PSOE defendiendo en el debate la utilidad del recurso previo. Comprobados en BOE/TC: art. 79 LOTC (suspensión automática, seis meses), STC 66/1985 (desestima), LO 4/1985, LO 12/2015 (cita del Consejo de Estado de 2006); Moncloa.com 2021 (toma en consideración a finales de 2016). verify_quotes: 0 no encontradas.",
- "seleccion": "Decisión sobre la fuente: cuenta. La única fuente es la nota oficial de EAJ-PNV del 25-oct, y el compromiso no está entrecomillado: «La intención de los jeltzales es volver a presentar esta iniciativa en la próxima legislatura». El prompt 1b admite expresamente «un documento oficial del partido (nota de prensa [...]) con quien = el partido», y esa frase no es estilo indirecto de un periodista sino una declaración del propio partido en su nota, posterior a la convocatoria y referida a la próxima legislatura. El proyecto ya acepta notas oficiales en estilo indirecto con quien = el partido (upc-c01, upc-c03, ara_mes_fa-c05/c06, fa-c03, junts-c03, psc-c03). Es una medida concreta (reintroducir una proposición de ley orgánica definida) y no está en el programa (sin «Tribunal Constitucional», «recurso» ni «previo»; la medida 05 de la p. 39 habla de mecanismos de resolución de conflictos en general). Se mantiene la prioridad, con apoyo limitado: una ocasión, en el cuerpo de la nota de la comparecencia de los tres cabezas de lista, ligada a su entradilla («que el Congreso no sea un muro» para el nuevo Estatuto).",
- "igual_estandar": "Legal «favorable» (ley orgánica, STC 66/1985 avala la supresión); financiación «favorable» (reforma procesal sin gasto); evidencia e internacional «no_verificable» por falta de estudios y de casos comparables evaluados, dicho en el texto.",
+ "seleccion_sha256": "c1c197a8ae3b3a76e776d9d33e8d66fde4cfb74e254fc554ac312514c6c3db2b",
+ "alcance": "Paso del complemento a la versión del programa republicada el 10-nov-2026 en la misma URL (SHA-256 5af7a5b6…0c1314; comprobación de la fuente en data/programas/pnv/revision.json). Se cotejaron contra el texto nuevo las 13 páginas distintas que citan los 14 descartados de seleccion.json (pp. 3, 7, 8, 9, 14, 18, 19, 20, 25, 31, 38, 39 y 40): solo la p. 25 cambia de contenido, y solo el descarte del centro de Arana se apoyaba en ella. La prioridad pnv-c01 sigue sin estar en el programa (el texto nuevo sigue sin «Tribunal Constitucional» ni «previo», y las pp. que cambian no tratan del tema) y su evaluación no cambia. Se abrió la nota oficial de EAJ-PNV del 17-nov (https://www.eaj-pnv.eus/es/noticias/58739/eaj-pnv-se-compromete-con-una-migracion-gestionada/, HTTP 200). Comparados con HEAD, seleccion.json solo cambia en el motivo de ese descarte, y evaluacion.json en seleccion_sha256.",
+ "seleccion": "Descarte del centro de Arana: se mantiene, con otro motivo. El que tenía se escribió contra el texto del 9-nov, que pedía gestionar los centros «incluido el centro de Arana» y por eso contradecía a Urtaran («Si depende del PNV, el centro de Arana no se va a abrir. El modelo vasco no es el de macrocentros, sino centros muchos más pequeños», Gasteiz Hoy, 4-nov). El programa vigente desde el 10-nov (antes de esta selección, del 12-nov) dice lo mismo que Urtaran: un «modelo de acogida descentralizado» y rechazo a «la implantación de grandes centros como el previsto en Arana». Se aplica el criterio de los demás descartes «ya está en el programa» del mismo fichero (soterramiento y Y vasca, p. 19; Foronda, Jundiz, Aiaraldea, Rioja Alavesa, Treviño y 3 de marzo; pensiones y cuidadoras, p. 31): el compromiso del líder coincide en sustancia con una medida del programa, así que no es un compromiso «que no figura en el programa» y no entra en el complemento. Se quitan también los dos argumentos accesorios: «prevalece el programa» ya no aplica porque no difieren, y «el partido no lo ha repetido» dejó de ser cierto el 17-nov, cuando la nota oficial de EAJ-PNV recoge a Urtaran («si depende del PNV, el macrocentro de Arana no se abrirá») y lo enlaza con el acuerdo entre el Estado y las instituciones vascas del programa. El resultado publicado no cambia: el complemento sigue siendo solo pnv-c01 (los descartes no se publican).",
+ "igual_estandar": "Sin cambios de valoración ni de criterio: para decidir qué está «en el programa» se aplica el mismo listón que en los demás descartes del PNV y en los «ya está en el programa» de los demás partidos.",
  "recuento_inicial": {
   "favorable": 2,
   "mixta": 4,
@@ -18,12 +19,54 @@
   "desfavorable": 0,
   "no_verificable": 2
  },
- "recuento_final_nota": "Sin cambios; pnv-c01 se mantiene y evaluacion.json no se borra.",
- "cambios": [],
- "dudas": [
-  "pnv-c01, importancia: una sola ocasión y no la destaca la entradilla ni el titular de la nota, sino el cuerpo; la justificación se apoya también en el balance del 10-oct (anterior a la campaña) y en que el autogobierno abre la campaña. Es el caso más débil de los complementos.",
-  "pnv-c01, concreción «mixta»: el compromiso remite a un texto definido (la proposición 122/000004) y fija el momento («la próxima legislatura»), como eh_bildu-01, que es «favorable». Se mantiene «mixta» porque la nota no aclara si se reintroduciría la proposición entera, incluida la derogación de las facultades de ejecución del Tribunal, y ningún líder lo ha detallado; caso frontera.",
-  "BOCG B-3-3 (toma en consideración y envío a la Comisión Constitucional, 13-3-2026) no se pudo leer (403); el hecho está respaldado por el Diario de Sesiones del 24-2-2026 y la nota del 25-oct."
+ "recuento_nota": "La prioridad pnv-c01 × 8 criterios, antes y después de esta revisión (igual que en la revisión del 12-nov).",
+ "cambios": [
+  {
+   "propuesta": "(seleccion.json, descartados: centro de Arana)",
+   "criterio": "motivo",
+   "antes": "El programa trata el mismo centro con otra medida, p. 25 (medida 05: un acuerdo entre el Estado y las instituciones vascas para gestionar los centros de acogida «incluido el centro de Arana»). Si un líder y el programa difieren, prevalece el programa (prompt 2). Además, solo consta en una entrevista local y el partido no lo ha repetido.",
+   "despues": "Ya está en el programa, p. 25 (medida 05 de 3.2: «priorizando un modelo de acogida descentralizado y rechazando la implantación de grandes centros como el previsto en Arana, Vitoria-Gasteiz»).",
+   "motivo": "El texto del programa en que se apoyaba ya no está en la versión que sirve la URL oficial (republicada el 10-nov): la medida 05 de 3.2 rechaza ahora los grandes centros como el previsto en Arana, igual que Urtaran. Mismo criterio que los demás «ya está en el programa» (Y vasca, Foronda, Treviño). Los argumentos accesorios se quitan porque ya no son ciertos (ver «seleccion»).",
+   "fecha": "2026-11-20"
+  },
+  {
+   "propuesta": "(revision.json y evaluacion.json)",
+   "criterio": "seleccion_sha256",
+   "antes": "e297e87bb66a02be73c39855f5fbf774d874d335fd763e5357dfda0c3a79b369",
+   "despues": "c1c197a8ae3b3a76e776d9d33e8d66fde4cfb74e254fc554ac312514c6c3db2b",
+   "motivo": "seleccion.json cambia solo en ese motivo; evaluacion.json lleva el seleccion_sha256 nuevo, que coincide con el fichero.",
+   "fecha": "2026-11-20"
+  }
  ],
- "complementos_vacios_comprobados": "Partidos con programa y complemento vacío (comprobado por esta misma revisión): ERC, SALF y Adelante Andalucía descartan bien; se cotejaron contra el texto del programa al menos tres «ya está en el programa, p. N» por partido y todos coinciden (ERC: ITP p. 19 medida 59, fiscalidad de banca y grandes patrimonios p. 22 medidas 74-76, 180 plazas judiciales por reincidencia p. 43; SALF: macrocárcel p. 8, «La corrupción no prescribe» p. 25, 35.000 € libres de IRPF p. 12, cero impuestos primera vivienda p. 5, cláusula de penalización p. 4; Adelante Andalucía: Sareb p. 49, red de supermercados públicos p. 68 medida 313, peaje de la AP-7 p. 131 medida 695, fin del turno partido)."
+ "dudas": [],
+ "nota_paginas": "Las páginas del programa citadas en seleccion.json son las de la versión del 10-nov; ninguna cambió salvo el contenido de la p. 25. Las de revision_anterior no cambian.",
+ "revision_anterior": {
+  "aprobado": true,
+  "revisor": "Claude (Anthropic), pasada independiente",
+  "fecha": "2026-11-12",
+  "base": "complemento",
+  "alcance": "1 prioridad (pnv-c01) × 8 criterios. Se abrieron las 26 URL distintas de seleccion.json y evaluacion.json: 23 respondieron 200; los tres documentos del Congreso (BOCG B-3-1, B-3-3 y DSCD-15-PL-168) devolvieron 403 a curl; B-3-1 y el Diario de Sesiones se leyeron con otra petición normal (WebFetch): la proposición 122/000004 del Grupo Vasco reforma la LO 2/1979 y deroga la LO 12/2015, y el 24-2-2026 se tomó en consideración por 175 a favor y 171 en contra, con el PSOE defendiendo en el debate la utilidad del recurso previo. Comprobados en BOE/TC: art. 79 LOTC (suspensión automática, seis meses), STC 66/1985 (desestima), LO 4/1985, LO 12/2015 (cita del Consejo de Estado de 2006); Moncloa.com 2021 (toma en consideración a finales de 2016). verify_quotes: 0 no encontradas.",
+  "seleccion": "Decisión sobre la fuente: cuenta. La única fuente es la nota oficial de EAJ-PNV del 25-oct, y el compromiso no está entrecomillado: «La intención de los jeltzales es volver a presentar esta iniciativa en la próxima legislatura». El prompt 1b admite expresamente «un documento oficial del partido (nota de prensa [...]) con quien = el partido», y esa frase no es estilo indirecto de un periodista sino una declaración del propio partido en su nota, posterior a la convocatoria y referida a la próxima legislatura. El proyecto ya acepta notas oficiales en estilo indirecto con quien = el partido (upc-c01, upc-c03, ara_mes_fa-c05/c06, fa-c03, junts-c03, psc-c03). Es una medida concreta (reintroducir una proposición de ley orgánica definida) y no está en el programa (sin «Tribunal Constitucional», «recurso» ni «previo»; la medida 05 de la p. 39 habla de mecanismos de resolución de conflictos en general). Se mantiene la prioridad, con apoyo limitado: una ocasión, en el cuerpo de la nota de la comparecencia de los tres cabezas de lista, ligada a su entradilla («que el Congreso no sea un muro» para el nuevo Estatuto).",
+  "igual_estandar": "Legal «favorable» (ley orgánica, STC 66/1985 avala la supresión); financiación «favorable» (reforma procesal sin gasto); evidencia e internacional «no_verificable» por falta de estudios y de casos comparables evaluados, dicho en el texto.",
+  "recuento_inicial": {
+   "favorable": 2,
+   "mixta": 4,
+   "desfavorable": 0,
+   "no_verificable": 2
+  },
+  "recuento_final": {
+   "favorable": 2,
+   "mixta": 4,
+   "desfavorable": 0,
+   "no_verificable": 2
+  },
+  "recuento_final_nota": "Sin cambios; pnv-c01 se mantiene y evaluacion.json no se borra.",
+  "cambios": [],
+  "dudas": [
+   "pnv-c01, importancia: una sola ocasión y no la destaca la entradilla ni el titular de la nota, sino el cuerpo; la justificación se apoya también en el balance del 10-oct (anterior a la campaña) y en que el autogobierno abre la campaña. Es el caso más débil de los complementos.",
+   "pnv-c01, concreción «mixta»: el compromiso remite a un texto definido (la proposición 122/000004) y fija el momento («la próxima legislatura»), como eh_bildu-01, que es «favorable». Se mantiene «mixta» porque la nota no aclara si se reintroduciría la proposición entera, incluida la derogación de las facultades de ejecución del Tribunal, y ningún líder lo ha detallado; caso frontera.",
+   "BOCG B-3-3 (toma en consideración y envío a la Comisión Constitucional, 13-3-2026) no se pudo leer (403); el hecho está respaldado por el Diario de Sesiones del 24-2-2026 y la nota del 25-oct."
+  ],
+  "complementos_vacios_comprobados": "Partidos con programa y complemento vacío (comprobado por esta misma revisión): ERC, SALF y Adelante Andalucía descartan bien; se cotejaron contra el texto del programa al menos tres «ya está en el programa, p. N» por partido y todos coinciden (ERC: ITP p. 19 medida 59, fiscalidad de banca y grandes patrimonios p. 22 medidas 74-76, 180 plazas judiciales por reincidencia p. 43; SALF: macrocárcel p. 8, «La corrupción no prescribe» p. 25, 35.000 € libres de IRPF p. 12, cero impuestos primera vivienda p. 5, cláusula de penalización p. 4; Adelante Andalucía: Sareb p. 49, red de supermercados públicos p. 68 medida 313, peaje de la AP-7 p. 131 medida 695, fin del turno partido)."
+ }
 }
