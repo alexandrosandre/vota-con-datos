@@ -56,7 +56,7 @@ Bloque Canarista, Podemos, Movimiento Sumar e Izquierda Unida Canaria.
 | q31 Renovación del alquiler | null | **+2** programa | 3 | nueva |
 | q04 Patrimonio permanente | +1 manifiesto UPC (3-nov) | **+2** programa | 12 | valor |
 | q05 IRPF de dos tipos | null | **−1** programa | 11 | nueva |
-| q06 Jornada de 37,5 h | null | **+2** programa | 7 | nueva |
+| q06 Jornada de 37,5 h | null | **+1** programa (verificación: +2 → +1) | 7 | nueva |
 | q32 SMI autonómico | null | null | — | — |
 | q08 Jubilación a los 65 | null | null | — | — |
 | q09 Prohibir pagar a la privada | +1 manifiesto UPC (3-nov) | +1 programa | 6 | fuente |
@@ -84,7 +84,7 @@ Bloque Canarista, Podemos, Movimiento Sumar e Izquierda Unida Canaria.
 
 Resumen: 10 celdas en g21. 5 nuevas (q05, q06, q16, q21, q31), 1 cambio de valor (q04 sube) y 4 solo de fuente (q01, q09,
 q33, q34). Cobertura de `upc`: 7 → 12 posiciones (10 de programa y 2 de campaña), comprobado aplicando g21 con una verificación
-provisional en una copia (ningún otro partido cambia). Valores finales: +2 ×3, +1 ×6, −1 ×3; null en las 18 restantes.
+provisional en una copia (ningún otro partido cambia). Valores finales: +2 ×2, +1 ×7, −1 ×3; null en las 18 restantes.
 
 ## Valores: razonamiento
 
@@ -97,7 +97,7 @@ provisional en una copia (ningún otro partido cambia). Valores finales: +2 ×3,
   progresividad. Permanencia expresa: +2, como ERC, el BNG, Podemos y el Frente Amplio.
 - **q05 (null → −1).** Eje 9 (p. 11): más tramos del IRPF estatal desde 120.000 € con tipos marginales crecientes. Lo
   contrario de dos tipos, sin rechazarlo de forma expresa: −1, como Podemos, el Frente Amplio y Adelante Andalucía.
-- **q06 (null → +2).** Eje 3 (p. 7): «regular la jornada de 37,5 horas semanales» y avanzar hacia las 34. Es la cifra de la
+- **q06 (null → +1 tras la verificación; el análisis proponía +2).** Eje 3 (p. 7): «regular la jornada de 37,5 horas semanales» y avanzar hacia las 34. Es la cifra de la
   afirmación, propuesta de forma expresa y destacada en el resumen oficial del eje: +2, como el PSOE, ERC y el Frente Amplio.
   Ver duda 1.
 - **q09 (+1, cambia la fuente).** Eje 2 (p. 6): derogar la Ley 15/1997 «para evitar la privatización de los servicios
@@ -160,3 +160,10 @@ En una copia de `data/` y `pipeline/` del worktree (`scratchpad/chk_g21/`):
   posiciones y ningún otro partido cambia; las 10 citas de programa pasan la comprobación literal.
 
 Falta la verificación independiente (`verificacion_g21.json`), que no se ha escrito.
+
+
+## Verificación independiente (20-nov)
+
+9 celdas aprobadas y q06 corregida de +2 a +1: el programa no dice que la jornada de 37,5 horas sea sin reducción
+salarial, que forma parte de la afirmación; los +2 (PSOE, ERC, Frente Amplio) lo dicen expresamente y, cuando falta una
+parte de la afirmación, el criterio ha sido +1. Corrección aplicada: UPC 7 → 12 posiciones (10 de programa, 2 de campaña).

@@ -1,0 +1,212 @@
+{
+ "grupo": "g21",
+ "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13-nov («A qué partido cuenta cada fuente», precedencia)",
+ "fecha": "2026-11-20",
+ "aprobado": true,
+ "revisadas": 10,
+ "resultado": {
+  "ok": 9,
+  "corregido": 1,
+  "rechazado": 0,
+  "celdas_no_tocadas_confirmadas": "ver «celdas_no_tocadas»",
+  "nota_aprobacion": "Pendiente: «aprobado» queda en false hasta que el coordinador aplique en codificacion_g21.json la corrección de q06 (+2 → +1; ver correcciones_de_campos). Hecho eso, se pone true y g21 aplica las 10 celdas (upc 7 → 12)."
+ },
+ "alcance": "Las 10 posiciones de upc (NC-BC) de codificacion_g21.json, sacadas de las «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)» (19 pp., 19-nov-2026), las 2 celdas en las que el codificador conserva la posición vigente (q03, q22), las 18 que deja en null, la atribución del documento conjunto a Podemos y Frente Amplio y una búsqueda propia de posiciones no recogidas.\n\n(1) Fuente. El sha256 del PDF del repositorio (ce35fb3c…7e8) coincide con partidos.json (entrada upc, programa.estado «publicado», url https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf) y con las cabeceras guardadas (HTTP 200, 594.069 bytes, Last-Modified 19-nov 19:34:30 GMT). Un pdftotext -layout nuevo del PDF es idéntico byte a byte al .txt del repositorio (sha256 b576040c…fc7). La portada lo denomina programa electoral y la página /manifiesto de la web (copia del 20-nov) enlaza este PDF y resume sus ejes; cuenta como programa de upc por decisión del coordinador del 20-nov (partidos.json). No se ha vuelto a descargar de la red.\n\n(2) Lectura. Se leyó el texto entero (778 líneas, 19 páginas; la p. 1 es la portada, sin texto) y se buscó por palabras clave: alquiler, precio, tensionad, renovación, IVA, transmisiones, patrimonio, fortunas, IRPF, tramos, jornada, 37,5, salario mínimo, jubilación, 65 años, Ley 15/1997, privada, concertada, lengua, castellano, extranjeros, regularización, menores, acogida, autodeterminación, derecho a decidir, referéndum, concierto, deuda, condonación, eólica, nuclear, aborto, Constitución, Igualdad, ministerio, okupa/desokupación, desalojo, precario, 48, mordaza, Seguridad Ciudadana, prisión, indulto, corrupción, defensa, OTAN, PIB, Ceuta, militares, Sáhara, Mercosur, alimentos.\n\n(3) Citas. Cada fragmento (separado por [...], con la partición de build_fase1.py) se comprobó con norm() de verify_quotes.py contra el .txt completo y contra el texto de cada página extraído de nuevo del PDF con pdftotext -layout -f N -l N: las 10 citas son literales y cada fragmento está en la página declarada y en ninguna otra. Tienen 60 palabras o menos (12 a 45). Sin -layout, pdftotext pierde el guion de «Palestino -» en la p. 19 (q34), pero con -layout, que es el texto que usa el build, la cita es literal. Las páginas coinciden con la numeración impresa.\n\n(4) Valor. Se juzgó contra el texto exacto de cada afirmación y su contexto (preguntas.json) y se comparó con el valor y la nota de PSOE, Podemos, Frente Amplio, EH Bildu, Ara Més, Compromís, BNG, ERC, Adelante Andalucía, PNV y CC en fase1.json para la misma afirmación, y con los motivos de sus verificaciones (g10, g11, g14, g15, g16, g19, g4, g5).\n\n(5) Precedencia. El programa va primero cuando trata la medida al menos tan directamente como la fuente vigente, también si coincide el valor: sustituye al manifiesto de UPC del 3-nov en q01, q04, q09, q33 y q34 (la URL del manifiesto sirve ahora el programa). Se conservan q03 (nota de NC-BC, 20-nov-2025) y q22 (Campos, 31-oct), que el programa no trata. Las 5 «sustituye» con valor coinciden campo a campo con la celda vigente de fase1.json y con su grupo (codificacion_g2.json); las 5 null llevan solo «valor» y «grupo» (cosmético, ver correcciones_de_campos).\n\nResultado. 9 celdas aprobadas tal cual y 1 corregida: q06 baja de +2 a +1 (propone las 37,5 horas pero no dice nada del salario, que es parte de la afirmación y que dicen expresamente todos los +2). Como build_fase1.py aplica las celdas tal como están en la codificación y el verificador no la edita, «aprobado» queda en false hasta que se cambie q06 en codificacion_g21.json. Mecanismo comprobado en una copia (ver recuento.build).",
+ "cambios": [
+  {
+   "partido": "upc",
+   "pregunta": "q06",
+   "antes": 2,
+   "despues": 1,
+   "motivo": "Corregida la celda nueva: +2 → +1. «Regular la jornada de 37,5 horas semanales» propone la cifra y la ley, pero no dice nada del salario, que la afirmación incluye («sin rebajar el salario»). Todos los +2 de q06 lo dicen expresamente (PSOE «sin perder salario», ERC «sense reducció salarial», Frente Amplio «sin reducción salarial»), y la verificación del PSOE (g11) dio +2 porque estaban «la cifra, la jornada máxima y el salario». Ver posiciones y duda 1."
+  }
+ ],
+ "correcciones_de_campos": [
+  {
+   "partido": "upc",
+   "pregunta": "q06",
+   "campo": "codificacion_g21.json (celda upc/q06: valor, nota, motivo_cambio)",
+   "motivo": "REQUISITO para aprobar el grupo: «valor»: 1; en «nota», sustituir «Propone de forma expresa la cifra de la afirmación [...]: +2, como el PSOE, ERC y el Frente Amplio. No menciona el salario» por un texto con el mismo sentido que este: «Propone de forma expresa la cifra y la regulación por ley, pero no dice que sea sin rebaja salarial, parte de la afirmación que sí dicen los +2 (PSOE, ERC, Frente Amplio): +1»; y «motivo_cambio»: «Nueva: null → +1. El programa propone la jornada de 37,5 horas, sin hablar del salario». build_fase1.py aplica las celdas del grupo tal como están: si se pone aquí «aprobado»: true sin ese cambio, publicaría el +2. Con el cambio, poner «aprobado»: true en esta verificación; las otras 9 celdas quedan aprobadas sin cambios."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "—",
+   "campo": "notas_g21.md",
+   "motivo": "PENDIENTE, al aplicar lo anterior: en la tabla, la fila q06 pasa a «+1 programa»; en el resumen, «Valores finales: +2 ×3, +1 ×6, −1 ×3» pasa a «+2 ×2, +1 ×7, −1 ×3» (la cobertura sigue 7 → 12, 10 de programa y 2 de campaña); en «Valores: razonamiento», el punto q06 pasa a +1 con el motivo; la duda 1 queda resuelta (+1)."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q05, q06, q16, q21, q31",
+   "campo": "sustituye",
+   "motivo": "PENDIENTE (cosmético, no cambia ningún valor ni el build): en las celdas que pasan de null a valor, «sustituye» solo lleva «valor» y «grupo». La convención de g14, g15 y g16 (ya señalada en g19 y g20) es copiar la celda null completa de su grupo de origen, con su «nota» (codificacion_g2.json en q05, q06, q16 y q21: «Sin programa; revisado el Manifiesto electoral de UPC…»; codificacion_g5.json en q31: el rechazo de la verificación del 13-nov), porque fase1.json no guarda notas de las null. El verificador no edita el fichero del codificador."
+  }
+ ],
+ "posiciones": [
+  {
+   "partido": "upc",
+   "pregunta": "q01",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Citas literales (p. 3; los dos fragmentos son el final del punto «La intervención del Estado en el mercado de la vivienda» y el comienzo del siguiente, seguidos). «El control de precios de venta y alquiler» y «la intervención del mercado del alquiler para impedir las subidas abusivas mediante el control de precios»: apoya limitar el alquiler y ya no lo ciñe a las zonas tensionadas, pero no habla de un precio máximo fijado por ley estatal, ni de su alcance en toda España, ni de quitar la llave a las comunidades; el acento está en impedir las subidas. +1, el listón del PSOE (congelación temporal de las rentas), EH Bildu (límite a la actualización anual) y Compromís (zonas declaradas por los ayuntamientos); los +2 son topes legales expresos (BNG «Topar por lei», Podemos, Frente Amplio, Ara Més y Adelante Andalucía con declaración automática). Mismo valor que el manifiesto (3-nov, «regular los precios del alquiler en zonas tensionadas»); el programa va primero y es al menos tan directo: cambia la fuente."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q04",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 12, eje 9). «Mantenimiento de un impuesto a las grandes fortunas de forma permanente, reforzando además su progresividad», para que las comunidades no puedan dejar sin efecto el de patrimonio: nombra el impuesto estatal complementario de 2022 por su función y pide expresamente su permanencia. +2, como ERC («Fer permanent»), el BNG («Blindar a permanencia»), Podemos («configurarlo como un impuesto estatal permanente») y Compromís y el Frente Amplio (mantenerlo y ampliarlo). La diferencia con EH Bildu (+1, g16) es justo esa: allí la permanencia no era expresa. Sube desde el +1 del manifiesto («reforzar la tributación de las grandes fortunas», sin nombrar el impuesto ni su permanencia), frase que el programa repite en la p. 12 pero que ahora acompaña a la permanencia expresa. Duda 6: +2 confirmado."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q05",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (p. 11, eje 9). Más tramos en el IRPF estatal «a partir de 120.000 euros» con «tipos marginales crecientes», dentro de una reforma «para mejorar su progresividad»: lo contrario de una tarifa de dos tipos con máximo del 25 %, sin mencionar ni rechazar esa propuesta. −1, el mismo criterio que el Frente Amplio (frase casi idéntica: «Ampliaremos el número de tramos del IRPF a partir de 120.000 euros»), Podemos y Adelante Andalucía (g14, g19). La deflactación hasta 65.000 € y la deducción por inflación (p. 12) alivian rentas bajas y medias sin acercarse a la escala de dos tipos ni a la exención hasta 22.000 €. No −2: no la rechaza de forma expresa. Celda nueva. Duda 5: −1 confirmado."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q06",
+   "veredicto": "corregido",
+   "aprobado": false,
+   "valor_codificador": 2,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 7, eje 3; el resumen de la web, /manifiesto, la repite: «Regular la jornada de 37,5 horas semanales y avanzar hacia las 34 horas»). Propone de forma expresa la cifra de la afirmación y su regulación, pero en ningún punto del programa dice que la reducción sea sin rebaja salarial (la palabra «salario» solo aparece para el SMI, la negociación colectiva y la brecha de género). La afirmación tiene ese elemento («sin rebajar el salario») y todos los +2 de q06 lo dicen expresamente: PSOE («sin perder salario»; la verificación de g11 dio +2 porque estaban «la cifra, la jornada máxima y el salario»), ERC («sense reducció salarial») y Frente Amplio («sin reducción salarial»). Falta un componente de la afirmación sin contradecirla: +1, el mismo listón que bajó a +1 al PSOE en q23 (el plazo sin la ley) y a EH Bildu en q04 (el impuesto sin la permanencia). Simétrico de Podemos, BNG, EH Bildu, Ara Més y Compromís (+1): ellos dicen el salario y no la cifra; UPC dice la cifra y no el salario. Que el resumen oficial lo destaque prueba la prioridad, no el contenido que falta. Celda nueva (null → +1). Duda 1."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q09",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 6, eje 2). Derogar la Ley 15/1997 «para evitar la privatización de los servicios sanitarios», con la gestión «prioritariamente directa, avanzando en la reversión de privatizaciones y externalizaciones» del encabezado del eje (p. 5). No prohíbe que la sanidad pública pague a centros privados («prioritariamente» deja margen): +1, como el Frente Amplio y EH Bildu, que también se limitan a derogar la Ley 15/1997 (g14, g16), y Compromís (+1). Los +2 añaden el fin de los conciertos o blindan la gestión pública (Adelante Andalucía, Podemos, BNG). Mismo valor que el manifiesto; el programa va primero y es más directo (nombra la ley): cambia la fuente."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q16",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 16, cierre del eje 11 «Autogobierno, soberanía popular y derecho a decidir», que empieza en la p. 15 pidiendo reconocer a Canarias «como sujeto político»; la p. 16 defiende además «la identidad nacional canaria»). «El derecho a decidir democráticamente y [...] el derecho universal de los pueblos a la autodeterminación», en un bloque de autogobierno: supone que un pueblo pueda decidir sobre su independencia, pero no habla de referéndum, ni de pacto con el Gobierno, ni de un territorio concreto. A favor, indirecto: +1, exactamente el listón de Ara Més («el dret a l'autodeterminació dels pobles», g15), EH Bildu («derecho a decidir del pueblo vasco», g16) y el Frente Amplio (g14). Compromís quedó en null porque solo hablaba de Estado plurinacional, sin autodeterminación. Que la coalición incluya partidos federales no lo cambia: el texto lo afirma como posición común («La coalición comparte»). Celda nueva. Duda 3: +1 confirmado."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q21",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 18, eje 14; el [...] salta «afectivo-sexual, la atención sanitaria y los derechos sexuales y reproductivos.», del mismo punto). «Estudiar la posibilidad de blindar el derecho al aborto en la Constitución, como ha hecho Francia», dentro de un punto que pide garantizar los derechos sexuales y reproductivos. La dirección es inequívoca (la reforma francesa como modelo, en un programa que defiende el derecho), así que no es la duda entre un valor y null del prompt 2, sino un compromiso débil: «±1 con matices o condiciones». +1, como el PSOE en q31 («un debate necesario», g1), el Frente Amplio en q16 («Promoveremos el debate», g14) y el PNV en q21 (a favor con reservas). Los +2 (PSOE, Frente Amplio, Podemos, Ara Més, Adelante Andalucía, Compromís) lo proponen expresamente. Celda nueva. Duda 2: +1 confirmado."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q31",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 3, eje 1). «La renovación automática de los contratos de alquiler de vivienda habitual tras finalizar su periodo inicial (por periodos de 5 o 7 años según el propietario sea persona física o jurídica)»: es la medida de la afirmación (la del decreto-ley derogado el 12-nov), propuesta de forma expresa y en el primer eje. +2, como el BNG («renovación automática»), Podemos, el Frente Amplio, Ara Més, Compromís y Adelante Andalucía. Que sean 7 años con propietario empresa amplía la afirmación sin contradecirla. Celda nueva (antes null, tras el rechazo de la nota de NC-BC en g5)."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q33",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (p. 16, eje 13), la misma frase del manifiesto. «Una distribución solidaria de las responsabilidades de acogida» de la infancia migrante no acompañada, y (p. 10) fondos europeos regionalizados para su acogida en Canarias: a favor de repartir, sin decir que el reparto deba ser obligatorio. −1, como el Frente Amplio («reparto solidario y equitativo»), Adelante Andalucía y Compromís; los −2 piden expresamente que sea obligatorio (Podemos, CC). Mismo valor; el programa va primero: cambia la fuente."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q34",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 19, eje 16). Solidaridad con el pueblo saharaui «en sus luchas por la autodeterminación e independencia», y apoyo a «las causas de los pueblos que defienden el derecho a la autodeterminación» (misma página). Apoya la autodeterminación, pero no habla de referéndum, ni del plan de autonomía, ni de la posición del Gobierno: +1, como CC («derecho del pueblo saharaui a decidir su futuro») y el PNV; los +2 piden el referéndum o revertir el cambio de 2022 (Podemos, Frente Amplio, EH Bildu, Ara Més, Compromís, BNG, ERC, Adelante Andalucía). Mismo valor que el manifiesto (la frase se repite ampliada); el programa va primero: cambia la fuente."
+  }
+ ],
+ "resolucion_dudas_codificador": [
+  {
+   "duda": 1,
+   "tema": "q06: +2 o +1 sin «sin rebaja salarial»",
+   "resolucion": "+1 (corrección). La afirmación tiene tres elementos (37,5 horas, por ley, sin rebajar el salario) y el programa dice los dos primeros. Los tres +2 de q06 dicen expresamente el salario, y la verificación del PSOE (g11) lo enumeró como parte de «la afirmación». Cuando falta un componente de la afirmación sin que se contradiga, el criterio ha sido +1 (PSOE q23: el plazo sin la ley; EH Bildu q04: el impuesto sin la permanencia; PSOE q04: sin nombrar el impuesto). Destacarlo en el resumen del eje acredita prioridad, no el componente que falta. Si el editor entiende que una reducción de jornada se presume sin rebaja de sueldo, el valor sería +2; el verificador no lo recomienda, porque el prompt 2 reserva ±2 para lo que se propone de forma expresa."
+  },
+  {
+   "duda": 2,
+   "tema": "q21: «Estudiar la posibilidad», ¿+1 o null?",
+   "resolucion": "+1 (confirmado). La regla «ante la duda entre un valor y null, null» se aplica cuando no consta la posición o su sentido; aquí el sentido es inequívoco (Francia como modelo, dentro de un punto que garantiza los derechos sexuales y reproductivos) y lo débil es el compromiso, que el prompt 2 resuelve con ±1 («con matices o condiciones»). Precedentes de compromisos débiles pero orientados con +1: PSOE q31 («un debate necesario», g1), Frente Amplio q16 («Promoveremos el debate», g14) y PNV q21 (a favor con reservas, g4). No hay precedente de un «estudiar» con sentido claro dejado en null por serlo: los null con «estudiar» (PNV q30, g3) lo son por tratar otra medida (IVA de los alimentos, no precio máximo)."
+  },
+  {
+   "duda": 3,
+   "tema": "q16: derecho a decidir y autodeterminación en general",
+   "resolucion": "+1 (confirmado). Es el mismo listón que Ara Més (autodeterminación «dels pobles», en general, g15) y EH Bildu («derecho a decidir», g16); en UPC está además en un eje de autogobierno que pide reconocer a Canarias como sujeto político y habla de «identidad nacional canaria», así que se refiere a los pueblos del Estado. Compromís quedó en null porque no hablaba de autodeterminación. Que haya socios federales en la coalición no cambia lo que el documento afirma como posición común."
+  },
+  {
+   "duda": 4,
+   "tema": "q23: realojo previo para ocupantes vulnerables, ¿−1?",
+   "resolucion": "null (confirmado). La p. 4 impide desalojar a personas vulnerables «sin que la Administración competente garantice un realojo en condiciones dignas», también por «ocupación en precario motivada por la falta de vivienda asequible», y la p. 3 prohíbe la «desokupación extrajudicial». Es una condición de realojo para un grupo de ocupantes, compatible en principio con un plazo de desalojo (no habla de plazos ni de una ley de desalojo rápido), y es la misma medida que se ha tratado como distinta en todos los programas afines: Podemos (medidas 5 y 6, g19: «desahucios y lanzamientos» sin alternativa e ilegalización de Desokupa), Frente Amplio (g14), Ara Més (g15) y EH Bildu (g16). La mención expresa de la ocupación en precario la acerca, pero no la convierte en una posición sobre la afirmación; ante la duda, null. Los −1 vigentes de esos partidos son declaraciones contra las leyes de desalojo en 24 horas, no sus programas."
+  },
+  {
+   "duda": 5,
+   "tema": "Atribución a Podemos y Frente Amplio",
+   "resolucion": "Se aplica igual que en g10 (Compromís: Front Valencià) y g15 (Ara Més-Front Ampli): el pacto de coalición de UPC (JEC C7, código 77000, data/boe/coaliciones.json) lo firman NC-BC, Podemos, Movimiento Sumar e Izquierda Unida Canaria, así que el documento cuenta para Podemos y para el Frente Amplio como documento conjunto (fuente «campaña», detrás de su programa propio). Comprobado en fase1.json: las celdas de Podemos que su programa no trata o deja en null son q03, q13, q16, q17, q18, q22, q23, q27, q30, q35 y q12, q15, q19, q25, q32, y las del Frente Amplio q13, q17, q22, q23, q32, q35 y q15, q19, q25, q27, q29, como dice notas_g21.md. El programa de UPC solo toma posición en una de ellas, Podemos q16 (+1), donde Podemos ya tiene +1 de Montero (27-oct): mismo valor, se mantiene la fuente propia (regla del 13-nov). Ninguna celda de Podemos ni del Frente Amplio procede ya del manifiesto de UPC (comprobado: solo upc tiene celdas con URL de unidadpueblocanario.org). Ningún cambio fuera de upc; el resultado sería el mismo sin atribuirlo."
+  },
+  {
+   "duda": 6,
+   "tema": "q04 (+1 → +2) y q05 (−1)",
+   "resolucion": "Confirmados. q04: permanencia expresa del impuesto, el criterio de ERC, BNG, Podemos, Compromís y Frente Amplio; EH Bildu y PSOE quedaron en +1 justamente por no decirla. q05: misma frase que el Frente Amplio (−1) y mismo criterio que Podemos y Adelante Andalucía."
+  }
+ ],
+ "celdas_no_tocadas": [
+  "Se conservan (el programa no trata la medida o la trata de forma menos directa sin contradecirla), comprobado en su página: q03 (+1, nota de NC-BC del 20-nov-2025: el programa solo propone ayudas a la compra de la primera vivienda con «hipoteca al 0 % hasta 100.000 euros, sin límite de edad», p. 4, y más deducción del IRPF por alquiler o hipoteca, p. 12; «IVA» y «transmisiones» no aparecen) y q22 (−1, Campos: «exige al Estado el mantenimiento e incremento de las políticas de igualdad», p. 17, sin hablar del ministerio).",
+  "Siguen en null, confirmado: q08 (jubilación antes de los 65 sin penalización solo en sectores «especialmente duros y precarios», p. 6: otra medida), q11 (educación pública de 0 a 3 años y control de las universidades privadas, p. 5; «concertad» no aparece), q12 (nada de lengua vehicular; el «habla» canaria, p. 16, es patrimonio), q13 («limitación de compra de viviendas por extranjeros no residentes», p. 4, y acceso prioritario de la juventud al parque público, p. 3: otras medidas), q15 («vías legales y seguras», p. 16; «regulariz» no aparece), q17 y q18 (REF fuera del sistema de financiación y financiación «suficiente y justa», p. 8; competencias del Estatuto, p. 15; ni concierto ni deuda), q19 (renovables con mínima ocupación del territorio y techos fotovoltaicos, pp. 14-15; «eólic» no aparece), q23 (duda 4), q24, q25 (la lucha contra la corrupción del eje 15, p. 18, no habla de indultos), q26 (Canarias «territorio de paz», p. 19, sin cifra de gasto en defensa), q27 (los «recursos policiales y militares» de la p. 17 son para emergencias en Canarias; Ceuta no aparece), q29, q30 (la tasa y los precios del eje 9 no tocan los alimentos), q32 (rechazo a que el Gobierno pierda su papel en el SMI y SMI de 1.800 €, p. 7: nada de salarios mínimos autonómicos), q35 y q36.",
+  "Otros partidos: ninguna celda cambia (duda 5)."
+ ],
+ "posiciones_no_recogidas": "No se encontró ninguna afirmación en la que el programa tome una posición clara que el codificador no haya recogido. Las más cercanas: q23 (realojo previo para ocupantes vulnerables, duda 4), q32 (papel del Gobierno en el SMI, p. 7), q13 (compra de vivienda por extranjeros no residentes, p. 4), q08 (jubilación anticipada en sectores penosos, p. 6) y q19 (renovables en general); todas medidas distintas.",
+ "recuento": {
+  "antes": {
+   "upc": 7
+  },
+  "despues": {
+   "upc": 12
+  },
+  "cambios_de_valor": [
+   "upc q04 +1→+2"
+  ],
+  "celdas_nuevas": [
+   "upc q05 −1, q06 +1 (el codificador proponía +2), q16 +1, q21 +1, q31 +2"
+  ],
+  "solo_fuente": [
+   "upc q01 q09 q33 q34"
+  ],
+  "corregidas": [
+   "upc q06 (+2 propuesto → +1)"
+  ],
+  "nota": "Coincide con el resumen del codificador en número (10 celdas: 1 cambio de valor, 5 nuevas y 4 solo de fuente; upc 7 → 12) y difiere en un valor: q06 +1 en vez de +2.",
+  "despues_detalle": {
+   "con_valor": 12,
+   "a_favor": 9,
+   "en_contra": 3,
+   "null": 18,
+   "null_preguntas": "q08 q11 q12 q13 q15 q17 q18 q19 q23 q24 q25 q26 q27 q29 q30 q32 q35 q36",
+   "valores": "+2 ×2 (q04 q31), +1 ×7 (q01 q03 q06 q09 q16 q21 q34), −1 ×3 (q05 q22 q33)",
+   "fuentes": "10 de programa y 2 de campaña (q03 nota de NC-BC del 20-nov-2025, q22 Campos)"
+  },
+  "build": "Comprobado en una copia (scratchpad ver_g21_chk: pipeline/, data/fase1, data/partidos y los .txt de los programas): sin verificación de g21, python3 -I pipeline/build_fase1.py omite g21 y fase1.json sale idéntico al del repositorio; con q06 en +1 en la copia de codificacion_g21.json y una verificación provisional aprobada, termina sin errores (exit 0), las 10 citas pasan la comprobación literal y cambian exactamente las 10 celdas de upc (7 → 12 posiciones); ningún otro partido cambia. En el repositorio, con esta verificación («aprobado»: false), build_fase1.py omite g21 y fase1.json no cambia."
+ },
+ "dudas": [
+  "upc/q06 (+1): alternativa +2 si el editor entiende que regular por ley la jornada de 37,5 horas se presume sin rebaja salarial (era el contenido del proyecto devuelto en 2025). El verificador no lo recomienda: todos los +2 de q06 lo dicen expresamente y el prompt 2 reserva ±2 para lo expreso.",
+  "upc/q21 (+1): alternativa null si el editor considera que «estudiar la posibilidad» no es una posición. El verificador no lo recomienda: el sentido es inequívoco y hay precedentes de +1 para compromisos débiles pero orientados (PSOE q31, Frente Amplio q16).",
+  "upc/q23 (null): alternativa −1 si el editor da peso a que el realojo previo cubre expresamente la «ocupación en precario». Con ese criterio habría que revisar Podemos, Frente Amplio, Ara Més y EH Bildu, cuyos programas tienen la misma medida y quedaron como medida distinta.",
+  "upc/q01 (+1): alternativa +2 si el editor lee «el control de precios de venta y alquiler» con «intervención del Estado» como un tope legal general, como el BNG («Topar por lei»). El verificador no lo recomienda: el programa no habla de precio máximo ni de ley, y el acento está en «impedir las subidas abusivas»."
+ ],
+ "nota_aprobacion": "20-nov: el coordinador aplicó en codificacion_g21.json la corrección pedida (q06 +2 → +1, con su nota y motivo, y el resumen de notas_g21.md); con ella el grupo queda aprobado."
+}
