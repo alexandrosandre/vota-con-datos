@@ -1,7 +1,8 @@
 # Adelante Andalucía — Registro de lectura del programa (Fase 3, paso A)
 
-- Programa: «Un programa para frenar a las derechas. Programa electoral Generales 29N», Adelante Andalucía, presentado el 10-nov-2026 (la contraportada dice «Versión del 2026-11-10»). Enlazado desde el menú «Programa» de adelanteandalucia.org (programa.adelanteandalucia.org, «Programa completo (PDF)»).
-- Fichero: `data/sources/programas/adelante_andalucia/programa-29n-adelante-andalucia.txt` (extracción del PDF, SHA-256 `fde1fe024f94a698e2110c0e25cc569b4d9f3f7272342bdb13dc0c1e7a2d7b43`), 134 páginas, en castellano.
+- Programa: «Un programa para frenar a las derechas. Programa electoral Generales 29N», Adelante Andalucía, presentado el 10-nov-2026 (la contraportada de la versión leída decía «Versión del 2026-11-10»). Enlazado desde el menú «Programa» de adelanteandalucia.org (programa.adelanteandalucia.org, «Programa completo (PDF)»).
+- Fichero: `data/sources/programas/adelante_andalucia/programa-29n-adelante-andalucia.txt` (extracción del PDF), 134 páginas, en castellano. La lectura del 12-nov se hizo sobre la versión del 2026-11-10 (SHA-256 `fde1fe024f94a698e2110c0e25cc569b4d9f3f7272342bdb13dc0c1e7a2d7b43`).
+- Versión regenerada el 16-nov-2026 en la misma URL (SHA-256 `9edf2c74216c3d68319355de782e979307f2bad8b545ea3cffb53c2113065494`, HTTP Last-Modified 16-nov 13:25 GMT; hubo otra intermedia el 15-nov), que sustituye a la anterior en el repositorio (se detectó el 20-nov). El texto extraído es idéntico salvo una línea del colofón de la contraportada: «Versión del 2026-11-10» pasa a «Versión del 2026-11-16». Propuestas, citas y páginas no cambian.
 - Método: el texto se dividió por saltos de página (`\f`); página N = N-ésimo bloque, que coincide con el número impreso en el pie. El bloque 135 está vacío (salto final). Se leyó **íntegramente, página a página**, en bloques consecutivos: pp. 1-38, 39-59, 60-83, 84-108, 108-134. No se omitió ninguna página (las pp. 34, 70, 102, 112 y 122 están en blanco).
 - Extracción: `pdftotext` sin `-layout`. Con `-layout` la maquetación a dos columnas intercala las columnas línea a línea y rompería casi todas las citas; en modo de lectura (el PDF está etiquetado, generado con Typst) los párrafos quedan enteros, aunque el orden de los bloques dentro de cada página no siempre sigue la numeración. En unas 60 propuestas el texto cambia de columna a mitad de frase y la cita usa «[...]» para saltar el fragmento intercalado.
 - Numeración: el programa numera 719 propuestas en 12 áreas. Número, título y texto de cada propuesta se cotejaron con la versión web (programa.adelanteandalucia.org, páginas de cada área) y cada texto se localizó literalmente en el PDF.
@@ -26,7 +27,7 @@
 | 113-118 | Área 10. Cultura, hablas andaluzas, derechos digitales y deporte (27) | Estatuto del artista, hablas andaluzas, software libre y nube pública, selecciones deportivas andaluzas, flamenco. |
 | 119-121 | Área 11. Derechos de los animales (16) | Ley de bienestar animal sin excepciones, transición hasta la abolición de la tauromaquia, caza. |
 | 123-133 | Área 12. Reclamaciones territoriales por provincia (82) | Obras y medidas estatales por provincia (Almería, Cádiz, Campo de Gibraltar, Córdoba, Granada, Huelva, Jaén, Málaga, Sevilla), sobre todo ferrocarril y carreteras. |
-| 134 | Contraportada | Web del programa y «Versión del 2026-11-10». |
+| 134 | Contraportada | Web del programa y «Versión del 2026-11-16» (en la versión leída el 12-nov, «Versión del 2026-11-10»). |
 
 ## Observaciones de lectura (hechos del propio documento)
 
