@@ -2,12 +2,12 @@
  "verificador": "Verificador independiente (Claude, subagente), 20-11-2026",
  "fecha": "2026-11-20",
  "aprobado": true,
- "revisadas": 36,
+ "revisadas": 46,
  "resultado": {
   "ok": 30,
   "corregido": 5,
   "retirado": 1,
-  "anadido": 5
+  "anadido": 10
  },
  "por_votacion": [
   {
@@ -226,8 +226,43 @@
    "relacion": "parecida",
    "si_significa": "a_favor",
    "motivo": "q38 no tenía votación ni entrada en «sin_votacion». No hay ninguna votación sobre ampliar en general las competencias autonómicas; la delegación en Cataluña de competencias estatales de inmigración (BOCG B-195-1) es la más cercana (una sola comunidad)."
+  },
+  {
+   "id": "v-20250219-16",
+   "pregunta": "q23",
+   "relacion": "misma",
+   "si_significa": "a_favor",
+   "motivo": "Decisión del editor (20-11). Punto 6 de la moción del PP (BOCG D-291), votado por separado y aprobado 180-162: expulsar a quienes ocupen ilegalmente una vivienda en 24-48 horas."
+  },
+  {
+   "id": "v-20240530-6",
+   "pregunta": "q24",
+   "relacion": "parecida",
+   "si_significa": "a_favor",
+   "motivo": "Decisión del editor (20-11). Punto 6 de la PNL de ERC (BOCG D-142; aprobado, texto en el D-155), 177-171-1: impulsar la derogación de las restricciones de derechos de la «Ley Mordaza», no de toda la ley."
+  },
+  {
+   "id": "v-20260915-1",
+   "pregunta": "q27",
+   "relacion": "parecida",
+   "si_significa": "a_favor",
+   "motivo": "Decisión del editor (20-11). Toma en consideración de la PL de Vox (BOCG B-24-1), 168-178: Fuerzas Armadas en apoyo de las fuerzas de seguridad contra la inmigración ilegal en general, sin mencionar Ceuta."
+  },
+  {
+   "id": "v-20260916-1",
+   "pregunta": "q33",
+   "relacion": "parecida",
+   "si_significa": "a_favor",
+   "motivo": "Decisión del editor (20-11). PNL de Vox (BOCG D-578, rechazo en el D-590) votada entera, 170-177: retorno de menores con el acuerdo de 2007 y paralizar el reparto."
+  },
+  {
+   "id": "v-20251211-6",
+   "pregunta": "q17",
+   "relacion": "parecida",
+   "si_significa": "a_favor",
+   "motivo": "Decisión del editor (20-11). Punto 2 de la moción del BNG (BOCG D-453), rechazado 20-289-38: modelo bilateral para que Galicia recaude todos sus impuestos y tenga hacienda propia."
   }
  ],
- "pendiente": "Decisiones de criterio que no son errores (para el editor): (1) q35: la proposición del PP amplía la prisión permanente revisable a más supuestos de asesinato, no a delitos sexuales; se dejó «misma». (2) q48: aprobar la amnistía figura como «parecida» mientras que convalidar el RDL 2/2025 (q33) figura como «misma»; conviene un criterio único para votos de la medida opuesta. (3) Posibles «parecidas» no añadidas: q24, punto 6 de la PNL de ERC del 30-5-2024 («impulsar la derogación de la llamada Ley Mordaza, es decir, toda la restricción de derechos…», aprobado 177-171); q27, toma en consideración de la PL de Vox de la Defensa Nacional (15-9-2026, apoyo de las Fuerzas Armadas contra la inmigración ilegal, 168-178), que por rango precede a la moción de Vox votada entera; q33, PNL de Vox del 16-9-2026 que rechaza el reparto, votada entera; q17, punto 2 de la moción del BNG del 11-12-2025 (concierto para Galicia, 20-289). (4) q23: el punto 6 de la moción del PP del 19-2-2025 (desalojo en 24-48 horas, aprobado 180-162) es también «misma»; no se añadió porque ya hay dos tomas en consideración. (5) q31: el RDL 28/2026 se votó en la Diputación Permanente, fuera de los datos abiertos del Pleno. (6) La copia data/sources/congreso/votaciones/20250219/Votacion005/VOT_20250219135536.json ya no la usa ninguna entrada. (7) web/public/data/fase1.json todavía publica v-20250219-5: hay que regenerarlo; hasta entonces falla tests/test_pipeline.py::test_votaciones_publicadas_coinciden_con_la_copia_oficial (las otras dos fallas de esa suite ya existían). Mapa de diputados comprobado en 18 diputados de 15 partidos (Abascal, Ortega Smith, Valido, Ábalos, Catalán, Micó, Pueyo, Rego, Nogueras, Belarra, Aizpurua, Vaquero, Rufián, Díaz, Sánchez, Feijóo, Pisarello, Vidal) en dos votaciones (2024 y 2026): sin errores.",
+ "pendiente": "Sigue abierto: (1) web/public/data/fase1.json aún publica la votación retirada v-20250219-5 y no las nuevas; hay que regenerarlo. Hasta entonces falla tests/test_pipeline.py::test_votaciones_publicadas_coinciden_con_la_copia_oficial (las otras dos fallas de esa suite ya existían). (2) La copia data/sources/congreso/votaciones/20250219/Votacion005/VOT_20250219135536.json ya no la usa ninguna entrada. (3) q31: el RDL 28/2026 se votó en la Diputación Permanente y no está en los datos abiertos del Pleno. Criterios ya decididos por el editor y aplicados: q48 y q33 «misma» (votar la medida opuesta = misma medida, «Sí» = en contra); q35 se mantiene «misma»; sin tope de 3 votaciones por afirmación. Mapa de diputados comprobado en 18 diputados de 15 partidos en dos votaciones (2024 y 2026): sin errores.",
  "nota_coordinador": "20-nov: q48 (v-20240314-1) pasa de «parecida» a «misma» para aplicar la misma regla que q33 (votación de la medida inversa = misma medida, Sí = en contra), como pedía el verificador en «pendiente»."
 }

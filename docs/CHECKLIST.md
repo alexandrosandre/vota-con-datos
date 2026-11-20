@@ -215,6 +215,15 @@ Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. 
 de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
 BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
+**Revisión del 20-nov, 20:13 (hecha a las 20:45):** encuestas — 40dB día 9 (20-nov; el día 8 no tuvo artículo propio y no
+entra) y Sigma Dos del 20-nov como escenario de Sigma Dos (PP 31,2 %, PSOE 27,6 %, Vox 18,9 %); CIS y GAD3 sin novedades.
+Paso 1: q37 recodificada (g24) con la decisión 11 del editor —subir impuestos de forma progresiva cuenta +1—: Podemos,
+Compromís, ERC y BNG pasan de sin posición a +1 (10 a favor, 5 en contra, 3 sin posición), con verificación independiente;
+Vox y SALF siguen en −2 porque dicen cómo recortarán gasto para compensar su rebaja (decisión del coordinador, revisable).
+Cinco votaciones más del Congreso en «Lo que votaron» (decisión 13). Registro 370 → 379 (SALF 4, PP 4, BNG 1; revisión
+independiente, ninguna rechazada). UPN sigue sin programa; BOE y JEC sin cambios en las candidaturas; dominio y HTTPS
+correctos.
+
 **Réplica de la revisión programada (20-nov, 9:07):** la tarea recurrente (9:13 y 20:13) se renueva con el mismo texto y
 se borra la anterior, que caducaba el 21-nov. La nueva caduca el 27-nov; un recordatorio del 26-nov a las 9:07 la vuelve a
 renovar para cubrir hasta el 29-nov.

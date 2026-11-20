@@ -1,0 +1,326 @@
+{
+ "grupo": "g24",
+ "codificador": "Claude (Anthropic) — recodificación de q37 con la decisión 11 del editor (20-nov-2026), protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13 y 15-nov",
+ "fecha": "2026-11-20",
+ "nota": "Solo q37, para las 18 entradas de partidos.json. Decisión 11 del editor (20-nov): cuenta como +1 que un partido proponga subir impuestos de forma progresiva (rentas altas, patrimonio o grandes fortunas, grandes empresas, sector financiero…) aunque no ligue la recaudación a los servicios; simétricamente, proponer bajadas generales de impuestos cuenta −1 aunque no diga qué recortaría; ±2 solo si el programa asume expresamente la disyuntiva (Vox y SALF); las medidas fiscales puntuales o sectoriales (una deducción, un impuesto concreto a un sector, reclamar capacidad fiscal propia) no bastan. Se revisaron con la regla las 18 celdas de g22: cambian 4 null → +1 (Podemos, Compromís, ERC, BNG), con «sustituye» = q37 de g22 y «motivo_cambio»; Ara Més, PNV y CC siguen en null (solo medidas sectoriales o puntuales y capacidad fiscal propia; ni subida progresiva ni bajada general) y, como las 11 con valor, se copian tal cual de g22 (PP, UPN y Junts ya eran −1 por bajadas generales sin recortes declarados; PSOE, PSC, Frente Amplio, UPC, EH Bildu y Adelante Andalucía, +1; Vox y SALF, −2, asumen expresamente la disyuntiva). Las citas de programa se comprobaron con norm() de verify_quotes.py contra la página declarada. Sin verificación independiente: build_fase1.py omite este grupo hasta que haya un verificacion_g24.json aprobado; entonces sus celdas q37 pisan las de g22 (orden numérico de grupos).",
+ "fuentes": [
+  "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf",
+  "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+  "https://frontvalencia.org/programa-compromis-front-valencia.pdf",
+  "https://navarra.okdiario.com/articulo/politica/upn-pp-desvelan-lema-pedir-cambio-elecciones-29-n-navarra-espana-navarra-fin/20261110135626667178.html",
+  "https://pazcasaytrabajo.es/programa-electoral/programa-electoral-paz-casa-y-trabajo.pdf",
+  "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf",
+  "https://votasentidocomun.es/general/files/programa-elecct-vox.pdf",
+  "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+  "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+  "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+  "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+  "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf",
+  "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf",
+  "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf"
+ ],
+ "posiciones": {
+  "pp": {
+   "q37": {
+    "valor": -1,
+    "fuente": "programa",
+    "cita": "LOS ESPAÑOLES PAGARÁN MENOS IMPUESTOS [...] Elevaremos los mínimos personales y familiares del IRPF y bajaremos el IRPF de las rentas medias y bajas y de las familias.",
+    "pagina": 60,
+    "url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+    "medio": "Programa oficial (La Reconstrucción Nacional, 82 pp.)",
+    "fecha": "2026-11-10",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, apartado 4.4 «Los españoles pagarán menos impuestos» (medidas 177-184: IRPF, IVA de alimentos, Sociedades, deflactación). Su opción es pagar menos impuestos; no dice que vaya a reducir servicios ni prestaciones (quiere financiar parte de la rebaja con la lucha contra el fraude, medida 183), pero la contrapartida es un hecho de la afirmación, no cambia la preferencia. Sin un rechazo expreso de la disyuntiva del CIS ni recortes declarados: −1, no −2 (Vox y SALF, −2, compensan expresamente la rebaja con recortes de gasto)."
+   }
+  },
+  "upn": {
+   "q37": {
+    "valor": -1,
+    "fuente": "campaña",
+    "cita": "Se pueden bajar los impuestos, pagar menos impuestos y tener mejores servicios públicos",
+    "pagina": null,
+    "url": "https://navarra.okdiario.com/articulo/politica/upn-pp-desvelan-lema-pedir-cambio-elecciones-29-n-navarra-espana-navarra-fin/20261110135626667178.html",
+    "medio": "OKDiario Navarra",
+    "fecha": "2026-11-10",
+    "quien": "Leticia San Martín, cabeza de lista de UPN (coalición UPN-PP) al Congreso por Navarra",
+    "formato": "acto de presentación del lema de campaña de UPN-PP (Pamplona)",
+    "marco": null,
+    "nota": "Cita literal entre comillas en la crónica. Niega la disyuntiva: se puede pagar menos impuestos sin perder servicios; su opción es pagar menos (la coalición propone además IVA cero para alimentos básicos y bajar el de carburantes, Esparza, 17-nov). No acepta reducir servicios: −1, como el PP (rebaja fiscal sin recortes declarados), no −2 (Vox y SALF compensan la rebaja con recortes de gasto). Cuenta para UPN porque lo dice su propia cabeza de lista, no un dirigente del PP.",
+    "valor_codificador": null,
+    "motivo_verificacion": "Verificación g22 (20-nov): null → −1. Declaración en primera persona de la cabeza de lista de UPN, en campaña y sobre la disyuntiva misma; ya constaba en data/fase1/lideres_2026-11-12/upn.json (descartada entonces para q05 por genérica, pero es justo lo que mide q37)."
+   }
+  },
+  "psoe": {
+   "q37": {
+    "valor": 1,
+    "fuente": "programa",
+    "cita": "Todo ello es posible gracias a una fiscalidad progresiva que garantiza los recursos necesarios para fortalecer y mejorar los servicios públicos.",
+    "pagina": 47,
+    "url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+    "medio": "Programa oficial (La fuerza de seguir avanzando, 114 pp.)",
+    "fecha": "2026-11-15",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, introducción del bloque del Estado de bienestar (p. 47): «Frente a quienes pretenden romper la cohesión social recortando lo común», más servicios financiados con fiscalidad progresiva; compromiso 127 «Ingresos nuevos para derechos nuevos» (más tributación de grandes patrimonios y rentas del capital para la prestación por crianza). Prefiere mejorar los servicios con más ingresos fiscales, pero cargándolos sobre patrimonios y rentas altas, no sobre todos: +1."
+   }
+  },
+  "psc": {
+   "q37": {
+    "valor": 1,
+    "fuente": "programa",
+    "cita": "Todo ello es posible gracias a una fiscalidad progresiva que garantiza los recursos necesarios para fortalecer y mejorar los servicios públicos.",
+    "pagina": 47,
+    "url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+    "medio": "Programa oficial del PSOE para el 29-N (La fuerza de seguir avanzando, 114 pp.), que el PSC asume (decisión del editor, 15-nov-2026)",
+    "fecha": "2026-11-15",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa del PSOE asumido por el PSC (decisión del editor, 15-nov-2026); misma cita y valor que el PSOE. El manifiesto propio del PSC no trata la disyuntiva impuestos-servicios: +1."
+   }
+  },
+  "vox": {
+   "q37": {
+    "valor": -2,
+    "fuente": "programa",
+    "cita": "Rebaja masiva de impuestos para proteger a los españoles del infierno fiscal y burocrático que impide la prosperidad de los españoles. [...] Para compensar la bajada masiva de impuestos, se recortarán todos los gastos superfluos de la Administración hasta el mínimo imprescindible.",
+    "pagina": "7 y 25",
+    "url": "https://votasentidocomun.es/general/files/programa-elecct-vox.pdf",
+    "medio": "Programa oficial (Es sentido común, 55 pp.)",
+    "fecha": "2026-11-12",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, medidas 2 (p. 7, la segunda del programa) y 43 (p. 25). Propone de forma expresa y prioritaria pagar menos impuestos y compensarlo recortando gasto público «hasta el mínimo imprescindible»; dice que protegerá los «servicios públicos esenciales» (medida 3), pero la preferencia por pagar menos aunque se reduzca el gasto es expresa: −2."
+   }
+  },
+  "frente_amplio": {
+   "q37": {
+    "valor": 1,
+    "fuente": "programa",
+    "cita": "Una reforma fiscal que pague el 1 % para que se beneficie el 99 %. Los derechos se sostienen con justicia tributaria. Nuestra reforma fiscal hará que el nuevo esfuerzo tributario recaiga sobre las grandes corporaciones, el sector financiero y las grandes fortunas",
+    "pagina": 8,
+    "url": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "medio": "Programa oficial (Un programa como una casa, 151 pp.)",
+    "fecha": "2026-11-16",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, introducción, punto 4 (p. 8). Más impuestos para sostener derechos y servicios, pero solo para grandes empresas, banca y grandes fortunas, mientras baja el IRPF de los salarios más bajos y el IVA de bienes básicos: a favor con esa condición, +1."
+   }
+  },
+  "podemos": {
+   "q37": {
+    "valor": 1,
+    "fuente": "programa",
+    "cita": "Reforma del impuesto de sociedades para que las grandes empresas y los oligopolios paguen lo que les corresponde. Reformaremos el impuesto de sociedades para aumentar su capacidad recaudatoria [...] Reforma del IRPF para que las rentas más altas contribuyan más.",
+    "pagina": 21,
+    "url": "https://pazcasaytrabajo.es/programa-electoral/programa-electoral-paz-casa-y-trabajo.pdf",
+    "medio": "Programa oficial («Así de básico: Paz, casa y trabajo», 141 pp.)",
+    "fecha": "2026-11-18",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, medidas 47 (Sociedades: tipo efectivo mínimo del 15 % al 19 % y del 29 % para oligopolios) y 48 (IRPF: tipos más altos desde 60.000 euros) en la p. 21; además, impuesto permanente a las grandes fortunas y a la banca y las eléctricas (medidas 30-31, p. 17). Propone subir impuestos de forma progresiva para «aumentar su capacidad recaudatoria»; rebaja el tipo mínimo del IRPF (del 9,5 % al 9 %), una rebaja acotada a las rentas bajas, no general. No asume expresamente la disyuntiva: +1 (decisión 11 del editor, 20-nov).",
+    "sustituye": {
+     "pregunta": "q37",
+     "valor": null,
+     "grupo": "g22"
+    },
+    "motivo_cambio": "Cambia el valor: null → +1. Decisión 11 del editor (20-nov-2026): en q37 cuenta como +1 que un partido proponga subir impuestos de forma progresiva (rentas altas, patrimonio o grandes fortunas, grandes empresas, sector financiero) aunque no ligue expresamente la recaudación a los servicios, porque aceptar más impuestos para el Estado es el lado «servicios aunque haya que pagar más impuestos» de la disyuntiva. En g22 era null porque el programa «no liga la recaudación» con los servicios; con la nueva regla pasa a +1, no a +2, porque el programa no asume expresamente la disyuntiva."
+   }
+  },
+  "compromis": {
+   "q37": {
+    "valor": 1,
+    "fuente": "programa",
+    "cita": "Mantindrem i ampliarem l’Impost a les Grans Fortunes per a aproximar-la a propostes internacionals de tributació progressiva al patrimoni com la taxa Zucman. [...] Crearem un impost sobre el benefici de les empreses oligopolístiques.",
+    "pagina": 17,
+    "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf",
+    "medio": "Programa oficial (Programa electoral 29N. Compromís-Front Valencià, 57 pp.)",
+    "fecha": "2026-11-14",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Traducción: «Mantendremos y ampliaremos el Impuesto a las Grandes Fortunas para aproximarlo a propuestas internacionales de tributación progresiva del patrimonio como la tasa Zucman. [...] Crearemos un impuesto sobre el beneficio de las empresas oligopolísticas». Programa oficial del 29-N, apartado «Fiscalitat» (p. 17): además, rentas financieras «idènticament progressives» que las del trabajo y menos deducciones a las rentas inmobiliarias para recaudar más; solo deflacta el IRPF de las rentas de menos de 30.000 euros. Sube impuestos de forma progresiva sin asumir expresamente la disyuntiva: +1 (decisión 11 del editor, 20-nov).",
+    "sustituye": {
+     "pregunta": "q37",
+     "valor": null,
+     "grupo": "g22"
+    },
+    "motivo_cambio": "Cambia el valor: null → +1. Decisión 11 del editor (20-nov-2026): en q37 cuenta como +1 que un partido proponga subir impuestos de forma progresiva (rentas altas, patrimonio o grandes fortunas, grandes empresas, sector financiero) aunque no ligue expresamente la recaudación a los servicios, porque aceptar más impuestos para el Estado es el lado «servicios aunque haya que pagar más impuestos» de la disyuntiva. En g22 era null porque el programa «no liga la recaudación» con los servicios; con la nueva regla pasa a +1, no a +2, porque el programa no asume expresamente la disyuntiva."
+   }
+  },
+  "upc": {
+   "q37": {
+    "valor": 1,
+    "fuente": "programa",
+    "cita": "Impulso de una profunda reforma del sistema fiscal español, para mejorar su progresividad y cerrar la brecha de ingresos sobre el PIB respecto a la media europea.",
+    "pagina": 11,
+    "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf",
+    "medio": "Programa oficial («Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», 19 pp.)",
+    "fecha": "2026-11-19",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, apartado 9 «Propuestas de reforma fiscal a nivel estatal» (pp. 11-12). Propone subir impuestos de forma progresiva: que contribuyan más «grandes empresas, patrimonios y rentas del capital», más tramos del IRPF a partir de 120.000 euros, impuesto permanente a las grandes fortunas e impuestos a la banca y a las energéticas; y fija además un objetivo de más recaudación total («cerrar la brecha de ingresos sobre el PIB respecto a la media europea»). Sus rebajas son acotadas a rentas medias y bajas (deflactar el IRPF hasta 65.000 euros, deducciones por vivienda e inflación). No liga expresamente la recaudación a los servicios ni asume expresamente la disyuntiva: +1 (decisión 11 del editor, 20-nov).",
+    "motivo_verificacion": "Verificación g22 (20-nov): valor confirmado; nota reescrita, porque la del codificador («no lo liga expresamente a los servicios: +1») contradecía el criterio de entonces. Verificación g24 (20-nov): valor confirmado; nota reescrita otra vez, porque terminaba con el paréntesis de g22 («Los programas que solo hacen más progresivos los impuestos [...] quedan en null»), que la decisión 11 deja sin efecto: ahora la subida progresiva basta para el +1, y el objetivo de recaudación total ya no es lo que separa a UPC de Podemos, Compromís, ERC o el BNG."
+   }
+  },
+  "ara_mes_fa": {
+   "q37": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa revisado entero (pp. 2-17). Solo medidas fiscales sectoriales o puntuales, y en los dos sentidos. Al alza: vivienda (pisos turísticos al 21 %, IBI progresivo y con recargos, impuesto a quien tenga 3 o más viviendas sin alquiler estable y asequible, más tramos en la imputación de rentas inmobiliarias del IRPF, p. 4), turismo (IVA general para los establecimientos turísticos, matriculación de yates, p. 5) y supresión de la ley Beckham (p. 16). A la baja: un «IVA propi reduït» para las Islas Baleares como el de los otros territorios extrapeninsulares (p. 2), exención del ITP de la primera vivienda (p. 4), deducción por alquiler para menores de 35 años (p. 12) e IVA veterinario (p. 17). Además, financiación singular con plena capacidad fiscal (medida 67, p. 7). Ni subida progresiva general (rentas altas, patrimonio, grandes empresas, banca) ni bajada general de impuestos: null.",
+    "motivo_verificacion": "Verificación g24 (20-nov): null confirmado; nota completada. La del codificador no citaba el «IVA propi reduït» (p. 2) ni la supresión de la ley Beckham (p. 16). El IVA reducido es un régimen propio por insularidad, del tipo «capacidad fiscal propia» que la decisión 11 excluye, no una bajada general de impuestos; las subidas son instrumentos de la política de vivienda y de turismo (sectoriales), no una subida sobre las rentas altas o el patrimonio en general. Ante la duda, null."
+   }
+  },
+  "erc": {
+   "q37": {
+    "valor": 1,
+    "fuente": "programa",
+    "cita": "Fiscalitat dels multimilionaris. Fer permanent l’impost temporal de solidaritat de les grans fortunes, augmentant el tipus per a fortunes de més de 10 milions d’euros [...] Convertir l’impost extraordinari a la banca en un tribut permanent. Cal assegurar que, de forma estructural, els qui més guanyen, més paguin.",
+    "pagina": 22,
+    "url": "https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-05",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Traducción: «Fiscalidad de los multimillonarios. Hacer permanente el impuesto temporal de solidaridad de las grandes fortunas, aumentando el tipo para fortunas de más de 10 millones de euros [...] Convertir el impuesto extraordinario a la banca en un tributo permanente. Hay que asegurar que, de forma estructural, quienes más ganan más paguen». Programa oficial del 29-N, apartado C «Un model econòmic i una fiscalitat més justes», medidas 74-76 (p. 22; también recupera el impuesto a las grandes energéticas) y 69 (p. 21: sube del 30 % al 35 % el tipo máximo sobre las ganancias de capital y baja el de las rentas del trabajo de menos de 35.000 euros). Sube impuestos de forma progresiva sin asumir expresamente la disyuntiva: +1 (decisión 11 del editor, 20-nov).",
+    "sustituye": {
+     "pregunta": "q37",
+     "valor": null,
+     "grupo": "g22"
+    },
+    "motivo_cambio": "Cambia el valor: null → +1. Decisión 11 del editor (20-nov-2026): en q37 cuenta como +1 que un partido proponga subir impuestos de forma progresiva (rentas altas, patrimonio o grandes fortunas, grandes empresas, sector financiero) aunque no ligue expresamente la recaudación a los servicios, porque aceptar más impuestos para el Estado es el lado «servicios aunque haya que pagar más impuestos» de la disyuntiva. En g22 era null porque el programa «no liga la recaudación» con los servicios; con la nueva regla pasa a +1, no a +2, porque el programa no asume expresamente la disyuntiva."
+   }
+  },
+  "junts": {
+   "q37": {
+    "valor": -1,
+    "fuente": "programa",
+    "cita": "Cal abaixar la càrrega fiscal sobre la classe mitjana i treballadora, els autònoms i les pimes [...] Objectiu 2: Reduir la pressió fiscal.",
+    "pagina": "67-68",
+    "url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf",
+    "medio": "Programa oficial («Catalunya al centre», 90 pp.)",
+    "fecha": "2026-11-18",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Traducción: «Hay que bajar la carga fiscal sobre la clase media y trabajadora, los autónomos y las pymes [...] Objetivo 2: Reducir la presión fiscal». Programa oficial del 29-N, ámbito económico (pp. 67-68): habla de una «pressió fiscal excessiva» y propone deflactar y rebajar el IRPF y suprimir Sucesiones. Prefiere pagar menos impuestos, aunque sin hablar de reducir servicios (y reclama más recursos para Cataluña vía concierto): −1."
+   }
+  },
+  "eh_bildu": {
+   "q37": {
+    "valor": 1,
+    "fuente": "programa",
+    "cita": "Por eso resulta necesario que el sector privado, especialmente las grandes empresas, aporten lo que deben en un momento de acumulación de capital por parte de estas con grandes márgenes de beneficio que, sin embargo, no revierten como deberían en la ciudadanía y los servicios públicos.",
+    "pagina": 14,
+    "url": "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf",
+    "medio": "Programa oficial (Posible Egin. Garantía y derechos, 30 pp.)",
+    "fecha": "2026-11-16",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, apartado 1.8 «Política fiscal» (p. 14): impuestos a energéticas, banca, grandes fortunas y distribuidoras para que revierta en los servicios públicos. Más impuestos para los servicios, pero solo para grandes empresas y fortunas: +1."
+   }
+  },
+  "pnv": {
+   "q37": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa revisado entero. Apartado 2.7 «Una fiscalidad que favorezca la actividad económica y permita invertir» (pp. 20-21): reforma del IVA de los bienes y servicios esenciales («estudiando» tipos cero o superreducidos para alimentos básicos y la revisión de la tributación de los suministros), IVA cultural y más capacidad normativa foral en el IVA y los Impuestos Especiales; además, Impuesto Especial sobre la Electricidad al 0,5 % (p. 16), exención en el IRPF de las indemnizaciones del amianto (p. 34) y más capacidades financiero-fiscales vía Concierto (p. 39). Son rebajas acotadas a bienes esenciales o a un sector (como las del BNG o el Frente Amplio), no una bajada general, y no propone ninguna subida progresiva: null.",
+    "motivo_verificacion": "Verificación g24 (20-nov): null confirmado; nota completada con la rebaja del IVA de bienes y servicios esenciales (p. 21), que la del codificador no citaba: es una rebaja acotada, no general, el mismo listón que las del BNG y el Frente Amplio."
+   }
+  },
+  "bng": {
+   "q37": {
+    "valor": 1,
+    "fuente": "programa",
+    "cita": "defendemos promover reformas na lexislación estatal para lograr un incremento da progresividade na tributación dos rendementos do capital e das rendas máis altas [...] Blindar a permanencia dos impostos específicos aos beneficios da banca, das grandes enerxéticas e ás grandes fortunas, reducir os límites de exención, aumentar a súa progresividade",
+    "pagina": "43-44",
+    "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+    "medio": "Programa oficial",
+    "fecha": "2026-11-03",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Traducción: «defendemos promover reformas en la legislación estatal para lograr un incremento de la progresividad en la tributación de los rendimientos del capital y de las rentas más altas [...] Blindar la permanencia de los impuestos específicos a los beneficios de la banca, de las grandes energéticas y a las grandes fortunas, reducir los límites de exención, aumentar su progresividad». Programa oficial del 29-N, apartado 4.1 «Por unha nova fiscalidade» (pp. 43-44). Sube impuestos de forma progresiva (capital, rentas altas, banca, energéticas, fortunas); a la vez rebaja el IVA de bienes y suministros básicos y la tributación del trabajo, rebajas acotadas, no generales (la misma mezcla que el Frente Amplio, +1). No asume expresamente la disyuntiva: +1 (decisión 11 del editor, 20-nov).",
+    "sustituye": {
+     "pregunta": "q37",
+     "valor": null,
+     "grupo": "g22"
+    },
+    "motivo_cambio": "Cambia el valor: null → +1. Decisión 11 del editor (20-nov-2026): en q37 cuenta como +1 que un partido proponga subir impuestos de forma progresiva (rentas altas, patrimonio o grandes fortunas, grandes empresas, sector financiero) aunque no ligue expresamente la recaudación a los servicios, porque aceptar más impuestos para el Estado es el lado «servicios aunque haya que pagar más impuestos» de la disyuntiva. En g22 era null porque el programa «no liga la recaudación» con los servicios; con la nueva regla pasa a +1, no a +2, porque el programa no asume expresamente la disyuntiva."
+   }
+  },
+  "cc": {
+   "q37": {
+    "valor": null,
+    "fuente": null,
+    "cita": null,
+    "pagina": null,
+    "url": null,
+    "medio": null,
+    "fecha": null,
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa revisado entero. Lo fiscal son incentivos, deducciones y bonificaciones puntuales (deducción del 60 % en el IRPF de La Palma extendida a La Gomera y El Hierro, p. 13; incentivos fiscales a la vivienda, p. 11; incentivos y bonificaciones de cotizaciones ligados a mejoras salariales, p. 12) y la defensa del REF (p. 8). La entrada del bloque 4 dice que «La riqueza también debe contribuir de forma justa al sostenimiento de los servicios públicos» (p. 12), pero es una declaración de principio sin ninguna medida que suba impuestos. Ni subida progresiva ni bajada general: null.",
+    "motivo_verificacion": "Verificación g24 (20-nov): null confirmado; nota corregida. La del codificador decía «nada sobre la disyuntiva», pero la p. 12 dice que la riqueza debe contribuir «de forma justa» al sostenimiento de los servicios públicos. No propone ninguna subida concreta ni dice que haya que pagar más, y la decisión 11 exige proponer una subida progresiva: ante la duda, null."
+   }
+  },
+  "adelante_andalucia": {
+   "q37": {
+    "valor": 1,
+    "fuente": "programa",
+    "cita": "Igual al umbral de la pobreza, compatible con otros ingresos y financiada con la reforma fiscal.",
+    "pagina": 66,
+    "url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-10",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, apartado 2.6 «Protección social», propuesta 298 «Renta básica universal e incondicional» (p. 66): una prestación nueva igual al umbral de la pobreza «financiada con la reforma fiscal», que es la del apartado 2.1 «Fiscalidad justa» (p. 58: IRPF con tipos «mucho más altos» desde 100.000 euros, impuesto sobre la riqueza y la tierra, impuestos permanentes a banca y eléctricas; «Porque quien más gana debe aportar más»). Liga expresamente más impuestos a una prestación social, como el compromiso 127 del PSOE: +1, cargando el esfuerzo sobre rentas altas y patrimonios, no sobre todos.",
+    "valor_codificador": null,
+    "motivo_verificacion": "Verificación g22 (20-nov): null → +1. El codificador no recogió la propuesta 298, que financia una prestación nueva con la reforma fiscal: es el vínculo «más impuestos → más prestaciones» que el propio criterio del grupo exige para el +1 (PSOE, Frente Amplio, EH Bildu)."
+   }
+  },
+  "salf": {
+   "q37": {
+    "valor": -2,
+    "fuente": "programa",
+    "cita": "Rebaja fiscal y nuevo gasto comprometido en 2030: unos 81.700 millones de euros al año [...] Regla de oro. Un euro de rebaja, un euro de ahorro certificado.",
+    "pagina": 16,
+    "url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf",
+    "medio": "Programa electoral del 29N",
+    "fecha": "2026-11-10",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, capítulo III «Impuestos», cuadro «Cómo se paga» (p. 16): una rebaja fiscal de 80.000 millones al año financiada con recortes de gasto («un euro de rebaja, un euro de ahorro certificado»); también elimina el IBI, que los ayuntamientos «absorben con ahorro» (I.10). Preferencia expresa y prioritaria por pagar menos impuestos reduciendo gasto público: −2."
+   }
+  }
+ }
+}

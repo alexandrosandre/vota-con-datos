@@ -2,7 +2,7 @@
  "meta": {
   "descripcion": "Votaciones del Pleno del Congreso (XV Legislatura, 2023-2026) sobre la medida de cada afirmación del paso 1. Seleccionadas por la medida, no por el resultado; texto votado comprobado en el BOCG o el Diario de Sesiones (ficha). El voto de cada partido lo calcula pipeline/votaciones_fase1.py con el voto nominal oficial. Limitación: las votaciones por llamamiento y las de la Diputación Permanente no están en los datos abiertos por votación.",
   "actualizado": "2026-11-20",
-  "regla_medida_inversa": "Una votación que crea o mantiene la medida contraria a la afirmación (aprobar la ley que la afirmación propone derogar, convalidar el decreto que propone suprimir) es de la misma medida, con «Sí» = en contra (decisión del coordinador del 20-nov, para tratar igual q33 y q48)."
+  "regla_medida_inversa": "Una votación que crea o mantiene la medida contraria a la afirmación (aprobar la ley que la afirmación propone derogar, convalidar el decreto que propone suprimir) es de la misma medida, con «Sí» = en contra (decisión del editor del 20-nov, para tratar igual q33 y q48)."
  },
  "votaciones": [
   {
@@ -214,6 +214,19 @@
    "nota": "Proponía el mismo mecanismo que aprobó después el Real Decreto-ley 2/2025: declarar la «contingencia migratoria extraordinaria» y trasladar de forma obligatoria a menores a otras comunidades. «Sí» era tramitar el reparto obligatorio, es decir, votar en contra de suprimirlo. No se tomó en consideración. El expediente de la votación incluye también al Grupo Mixto como proponente."
   },
   {
+   "id": "v-20260916-1",
+   "pregunta": "q33",
+   "fecha": "2026-09-16",
+   "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion198/20260916/Votacion001/VOT_20260916195336.json",
+   "fichero": "data/sources/congreso/votaciones/20260916/Votacion001/VOT_20260916195336.json",
+   "ficha": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/D/BOCG-15-D-578.PDF",
+   "objeto": "Proposición no de ley de Vox para aplicar el acuerdo de retorno de menores con Marruecos y paralizar su reparto entre comunidades",
+   "expediente_contiene": "y al rechazo a su reparto por el territorio nacional",
+   "relacion": "parecida",
+   "si_significa": "a_favor",
+   "nota": "Se votó entera y se rechazó (texto en el BOCG D-578; rechazo en el D-590). Punto 1: aplicar el acuerdo de 2007 con Marruecos para facilitar el retorno de todos los menores no acompañados a su país. Punto 2: paralizar de inmediato cualquier reparto de menores y no trasladar a ninguno de los que están en Ceuta hasta concluir la determinación de su edad y los expedientes de devolución. Pide paralizarlo, no suprimirlo por ley."
+  },
+  {
    "id": "v-20240423-24",
    "pregunta": "q17",
    "fecha": "2024-04-23",
@@ -225,6 +238,19 @@
    "relacion": "parecida",
    "si_significa": "a_favor",
    "nota": "Solo para Cataluña, no para cualquier comunidad que lo pida; la transferencia al Estado se fija «por los servicios prestados y en concepto de reequilibrio territorial». Se votó en sus términos (texto en el BOCG D-134)."
+  },
+  {
+   "id": "v-20251211-6",
+   "pregunta": "q17",
+   "fecha": "2025-12-11",
+   "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion154/20251211/Votacion006/VOT_20251211175048.json",
+   "fichero": "data/sources/congreso/votaciones/20251211/Votacion006/VOT_20251211175048.json",
+   "ficha": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/D/BOCG-15-D-453.PDF",
+   "objeto": "Moción del BNG, punto 2: negociar con la Xunta un modelo en que Galicia recaude todos sus impuestos y tenga hacienda propia",
+   "expediente_contiene": "relativa a la mejora de la financiación en Galicia",
+   "relacion": "parecida",
+   "si_significa": "a_favor",
+   "nota": "Se votó por puntos y este punto se rechazó (texto en el BOCG D-453). Solo para Galicia y negociado de forma bilateral; el punto no fija qué pagaría Galicia al Estado, aunque la exposición de motivos defiende un concierto económico como el vasco."
   },
   {
    "id": "v-20260723-19",
@@ -305,6 +331,19 @@
    "nota": "Reforma de la Ley de Enjuiciamiento Criminal con un plazo máximo e improrrogable de 48 horas para el desalojo."
   },
   {
+   "id": "v-20250219-16",
+   "pregunta": "q23",
+   "fecha": "2025-02-19",
+   "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion093/20250219/Votacion016/VOT_20250219135557.json",
+   "fichero": "data/sources/congreso/votaciones/20250219/Votacion016/VOT_20250219135557.json",
+   "ficha": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/D/BOCG-15-D-291.PDF",
+   "objeto": "Moción del PP, punto 6: que quienes ocupen ilegalmente una vivienda puedan ser expulsados en un plazo de 24 a 48 horas",
+   "expediente_contiene": "sobre el fracaso de la política del Gobierno en materia de vivienda",
+   "relacion": "misma",
+   "si_significa": "a_favor",
+   "nota": "Se votó por puntos y este punto se aprobó (texto aprobado en el BOCG D-291, donde figura como punto 5 porque se rechazó el del IVA). Es una moción que insta al Gobierno, no una ley; incluye también la «inquiocupación»."
+  },
+  {
    "id": "v-20241029-1",
    "pregunta": "q24",
    "fecha": "2024-10-29",
@@ -318,6 +357,19 @@
    "nota": "Es una reforma parcial (artículo único que modifica la Ley Orgánica 4/2015), no su derogación completa."
   },
   {
+   "id": "v-20240530-6",
+   "pregunta": "q24",
+   "fecha": "2024-05-30",
+   "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion043/20240530/Votacion006/VOT_20240530120000.json",
+   "fichero": "data/sources/congreso/votaciones/20240530/Votacion006/VOT_20240530120000.json",
+   "ficha": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/D/BOCG-15-D-155.PDF",
+   "objeto": "Proposición no de ley de ERC, punto 6: impulsar la derogación de las restricciones de derechos de la «Ley Mordaza» de 2015",
+   "expediente_contiene": "sobre la lucha contra la corrupción, las cloacas del Estado",
+   "relacion": "parecida",
+   "si_significa": "a_favor",
+   "nota": "Se votó por puntos y este punto se aprobó (texto aprobado en el BOCG D-155, donde figura como punto 1; original en el D-142). Pide «impulsar la derogación de la llamada Ley Mordaza, es decir, toda la restricción de derechos contemplada en la última reforma de la ley de Seguridad Ciudadana»: no la derogación completa de la ley."
+  },
+  {
    "id": "v-20260317-2",
    "pregunta": "q35",
    "fecha": "2026-03-17",
@@ -328,7 +380,7 @@
    "expediente_contiene": "para la ampliación de los supuestos en los que se prevé la imposición",
    "relacion": "misma",
    "si_significa": "a_favor",
-   "nota": "Amplía la pena a asesinatos en los que se oculta el cadáver y a la reincidencia en asesinato; no incluye delitos sexuales."
+   "nota": "Amplía la pena a asesinatos en los que se oculta el cadáver y a la reincidencia en asesinato; no incluye delitos sexuales. Cuenta como misma medida porque el núcleo de la afirmación es «más delitos» y los delitos sexuales son un ejemplo (decisión del editor, 20-nov)."
   },
   {
    "id": "v-20231212-2",
@@ -420,6 +472,19 @@
    "relacion": "parecida",
    "si_significa": "a_favor",
    "nota": "Un solo voto para toda la moción: además pide devoluciones inmediatas a Marruecos, suspender el Tratado de Amistad con Marruecos y otras medidas."
+  },
+  {
+   "id": "v-20260915-1",
+   "pregunta": "q27",
+   "fecha": "2026-09-15",
+   "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion197/20260915/Votacion001/VOT_20260915204520.json",
+   "fichero": "data/sources/congreso/votaciones/20260915/Votacion001/VOT_20260915204520.json",
+   "ficha": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-24-1.PDF",
+   "objeto": "Toma en consideración de la proposición de ley de Vox para que las Fuerzas Armadas apoyen a las fuerzas de seguridad contra la inmigración ilegal",
+   "expediente_contiene": "VOX, Orgánica de modificación de la Ley Orgánica 5/2005",
+   "relacion": "parecida",
+   "si_significa": "a_favor",
+   "nota": "Modifica la Ley de la Defensa Nacional para incluir entre las operaciones de las Fuerzas Armadas el apoyo a las Fuerzas y Cuerpos de Seguridad del Estado «en la lucha contra el terrorismo y la inmigración ilegal», en general; el articulado no menciona Ceuta. Presentada en 2023 (BOCG B-24-1); no se tomó en consideración."
   },
   {
    "id": "v-20240620-2",

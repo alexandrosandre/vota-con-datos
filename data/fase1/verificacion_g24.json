@@ -1,0 +1,283 @@
+{
+  "grupo": "g24",
+  "verificador": "Claude (Anthropic) — verificación independiente de la recodificación de q37 con la decisión 11 del editor (20-nov-2026), protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13 y 15-nov",
+  "fecha": "2026-11-20",
+  "aprobado": true,
+  "revisadas": 18,
+  "resultado": {
+    "ok": 18,
+    "corregido": 0,
+    "rechazado": 0,
+    "detalle": "18 celdas (18 partidos × q37): 14 con valor del codificador y 4 null. 13 valores confirmados tal cual (entre ellos los 4 cambios null → +1 de Podemos, Compromís, ERC y BNG), 1 confirmado con la nota corregida (upc) y 3 null confirmados con la nota corregida o completada (ara_mes_fa, pnv, cc). Ningún valor corregido ni rechazado. Las correcciones de nota ya están aplicadas en codificacion_g24.json (con «motivo_verificacion»), así que el grupo queda aprobado."
+  },
+  "alcance": "Solo q37 («Es preferible mejorar los servicios públicos y las prestaciones sociales aunque haya que pagar más impuestos, que pagar menos impuestos aunque haya que reducirlos.»), para las 18 entradas de partidos.json, con la decisión 11 del editor (20-nov): +1 si el partido propone subir impuestos de forma progresiva (rentas altas, patrimonio o grandes fortunas, grandes empresas, sector financiero) aunque no ligue la recaudación a los servicios; −1 si propone bajadas generales aunque no diga qué recortaría; ±2 solo si el programa asume expresamente la disyuntiva; las medidas puntuales o sectoriales (una deducción, un impuesto a un sector, reclamar capacidad fiscal propia) no bastan.\n\n(1) Método. Antes de mirar el valor del codificador se leyeron las partes fiscales de los 16 programas propios y el del PSOE (asumido por el PSC), páginas = páginas del PDF separadas por \\f: búsqueda de impuesto/impost/imposto, fiscal, tribut, IRPF, IVA/IVE/IGIC, sociedades, patrimonio, fortunas, recaudación, progresiv, rebaja/bajar, y lectura completa de los apartados fiscales. En Ara Més, PNV y CC se leyó cada aparición en todo el programa, buscando subidas progresivas o bajadas generales que se le hubieran escapado al codificador. También se revisaron lideres_2026-11-12/*.json: ninguna declaración fiscal de líderes de Ara Més, PNV o CC.\n\n(2) Citas. Las 13 citas de programa se comprobaron con norm() de verify_quotes.py, fragmento a fragmento con la partición de build_fase1.py, contra el texto de la página declarada: todas literales, en esa página y con 60 palabras o menos (máx. 50, BNG). URL y fecha coinciden con programa.url y programa.fecha de partidos.json (PSC: los del PSOE). La de UPN (campaña) tiene autor, cargo, fecha, URL y medio.\n\n(3) Rebajas acotadas frente a generales, con el mismo listón para todos: las rebajas limitadas a rentas bajas, a bienes esenciales o a un sector (Podemos, Compromís, Frente Amplio, ERC, BNG, UPC, Adelante Andalucía, PNV) no son bajadas generales; las de PP («Los españoles pagarán menos impuestos»), Junts («Reduir la pressió fiscal») y la declaración de UPN sí. Ningún partido con −1 o −2 propone subidas progresivas.",
+  "cambios": [],
+  "correcciones_de_campos": [
+    {
+      "partido": "upc",
+      "pregunta": "q37",
+      "campo": "nota, motivo_verificacion",
+      "motivo": "APLICADA. La nota, copiada de g22, terminaba con «(Los programas que solo hacen más progresivos los impuestos, sin objetivo de recaudación total ni vínculo con servicios o prestaciones, quedan en null.)», que la decisión 11 deja sin efecto. Reescrita: +1 por la subida progresiva (y además el objetivo de recaudación total), sin asumir expresamente la disyuntiva. El valor no cambia."
+    },
+    {
+      "partido": "ara_mes_fa",
+      "pregunta": "q37",
+      "campo": "nota, motivo_verificacion",
+      "motivo": "APLICADA. La nota no citaba el «IVA propi reduït» para Baleares (p. 2) ni la supresión de la ley Beckham (p. 16). Completada con todas las medidas fiscales y la razón del null (régimen propio por insularidad y medidas sectoriales). El valor no cambia."
+    },
+    {
+      "partido": "pnv",
+      "pregunta": "q37",
+      "campo": "nota, motivo_verificacion",
+      "motivo": "APLICADA. La nota no citaba la rebaja del IVA de bienes y servicios esenciales (p. 21). Completada: rebaja acotada, no general, como las del BNG y el Frente Amplio. El valor no cambia."
+    },
+    {
+      "partido": "cc",
+      "pregunta": "q37",
+      "campo": "nota, motivo_verificacion",
+      "motivo": "APLICADA. La nota decía «nada sobre la disyuntiva», pero la p. 12 dice «La riqueza también debe contribuir de forma justa al sostenimiento de los servicios públicos». Corregida: es un principio sin ninguna medida que suba impuestos; ante la duda, null. El valor no cambia."
+    }
+  ],
+  "posiciones": [
+    {
+      "partido": "pp",
+      "pregunta": "q37",
+      "veredicto": "ok",
+      "aprobado": true,
+      "valor_codificador": -1,
+      "valor_final": -1,
+      "motivo": "Cita literal (p. 60; el rótulo se repite en el índice de la p. 7). «Los españoles pagarán menos impuestos»: rebaja general (mínimos del IRPF, IRPF de rentas medias y bajas, IVA de alimentos, Sociedades, deflactación) sin recortes declarados (medida 183: lucha contra el fraude). Bajada general sin asumir la disyuntiva: −1, decisión 11. No propone ninguna subida progresiva."
+    },
+    {
+      "partido": "upn",
+      "pregunta": "q37",
+      "veredicto": "ok",
+      "aprobado": true,
+      "valor_codificador": -1,
+      "valor_final": -1,
+      "motivo": "Campaña (OKDiario Navarra, 10-nov-2026): Leticia San Martín, cabeza de lista de UPN, «Se pueden bajar los impuestos, pagar menos impuestos y tener mejores servicios públicos». Autor, cargo, fecha (posterior a la convocatoria), URL y medio correctos; UPN no tiene programa propio (partidos.json: no_publicado). Bajada de impuestos negando la disyuntiva: −1, como el PP."
+    },
+    {
+      "partido": "psoe",
+      "pregunta": "q37",
+      "veredicto": "ok",
+      "aprobado": true,
+      "valor_codificador": 1,
+      "valor_final": 1,
+      "motivo": "Cita literal (p. 47). Fiscalidad progresiva para «fortalecer y mejorar los servicios públicos»; compromiso 127 (más tributación de grandes patrimonios y rentas del capital). Subida progresiva: +1 con la decisión 11; el esfuerzo recae en patrimonios y rentas altas, no en todos, así que no asume expresamente la disyuntiva (no +2)."
+    },
+    {
+      "partido": "psc",
+      "pregunta": "q37",
+      "veredicto": "ok",
+      "aprobado": true,
+      "valor_codificador": 1,
+      "valor_final": 1,
+      "motivo": "Programa del PSOE asumido (decisión del 15-nov; partidos.json: estado «asumido», programa_de «psoe»): misma cita, página, URL y fecha que el PSOE. +1."
+    },
+    {
+      "partido": "vox",
+      "pregunta": "q37",
+      "veredicto": "ok",
+      "aprobado": true,
+      "valor_codificador": -2,
+      "valor_final": -2,
+      "motivo": "Citas literales (pp. 7 y 25, medidas 2 y 43). Rebaja «masiva» y general de impuestos como segunda medida del programa, compensada expresamente con recortes de gasto («Para compensar la bajada masiva de impuestos, se recortarán...»): −2 según el criterio de g22, ratificado. Valor sin cambios respecto a g22; ver dudas (simetría de los ±2)."
+    },
+    {
+      "partido": "frente_amplio",
+      "pregunta": "q37",
+      "veredicto": "ok",
+      "aprobado": true,
+      "valor_codificador": 1,
+      "valor_final": 1,
+      "motivo": "Cita literal (p. 8). Nuevo esfuerzo tributario sobre grandes corporaciones, sector financiero y grandes fortunas; rebajas solo acotadas (IRPF de salarios bajos, IVA de bienes básicos). Subida progresiva sin asumir la disyuntiva para todos: +1."
+    },
+    {
+      "partido": "podemos",
+      "pregunta": "q37",
+      "veredicto": "ok",
+      "aprobado": true,
+      "valor_codificador": 1,
+      "valor_final": 1,
+      "motivo": "Cambio null → +1 del codificador confirmado. Citas literales (p. 21, medidas 47 y 48); las medidas 30-31 (p. 17: grandes fortunas, banca, eléctricas) están en la página indicada. Sociedades «para aumentar su capacidad recaudatoria», IRPF más alto desde 60.000 euros; la única rebaja (tipo mínimo del 9,5 % al 9 %, rentas por debajo del SMI) es acotada. Subida progresiva: +1 (decisión 11); no asume expresamente la disyuntiva. «sustituye» (q37, null, g22) y «motivo_cambio» correctos."
+    },
+    {
+      "partido": "compromis",
+      "pregunta": "q37",
+      "veredicto": "ok",
+      "aprobado": true,
+      "valor_codificador": 1,
+      "valor_final": 1,
+      "motivo": "Cambio null → +1 del codificador confirmado. Citas literales (p. 17 del PDF, apartado «Fiscalitat»), traducción fiel. Impuesto a las Grandes Fortunas ampliado, impuesto a oligopolios, rentas financieras «idènticament progressives», menos deducciones a rentas inmobiliarias; solo deflacta el IRPF por debajo de 30.000 euros. +1 (decisión 11). «sustituye» y «motivo_cambio» correctos."
+    },
+    {
+      "partido": "upc",
+      "pregunta": "q37",
+      "veredicto": "ok_con_correccion_de_campo",
+      "aprobado": true,
+      "valor_codificador": 1,
+      "valor_final": 1,
+      "motivo": "Cita literal (p. 11, apartado 9). Subida progresiva (grandes empresas, patrimonios, rentas del capital; IRPF desde 120.000 euros; grandes fortunas, banca y energéticas, pp. 11-12) y objetivo de más recaudación total; rebajas acotadas (deflactar hasta 65.000 euros). +1 confirmado. Nota corregida: terminaba con el paréntesis de g22 que dejaba en null los programas que solo suben la progresividad, contrario a la decisión 11."
+    },
+    {
+      "partido": "ara_mes_fa",
+      "pregunta": "q37",
+      "veredicto": "null_confirmado_con_correccion_de_campo",
+      "aprobado": true,
+      "valor_codificador": null,
+      "valor_final": null,
+      "motivo": "null confirmado tras leer el programa entero. Subidas solo sectoriales (vivienda: pisos turísticos, IBI progresivo, impuesto a quien tenga 3 o más viviendas, imputación de rentas inmobiliarias; turismo: IVA general a establecimientos turísticos, yates; ley Beckham) y rebajas de régimen territorial o puntuales («IVA propi reduït» por insularidad, ITP de la primera vivienda, deducción por alquiler para jóvenes, IVA veterinario). Ni subida progresiva general ni bajada general. Nota completada: no citaba el IVA reducido ni la ley Beckham."
+    },
+    {
+      "partido": "erc",
+      "pregunta": "q37",
+      "veredicto": "ok",
+      "aprobado": true,
+      "valor_codificador": 1,
+      "valor_final": 1,
+      "motivo": "Cambio null → +1 del codificador confirmado. Citas literales (p. 22, medidas 74 y 76), traducción fiel; medida 69 (p. 21: ganancias de capital del 30 % al 35 %, rebaja del IRPF del trabajo por debajo de 35.000 euros) y 75 (energéticas) bien descritas. Las rebajas (IRPF bajo, IVA de alimentos básicos) son acotadas. +1 (decisión 11). «sustituye» y «motivo_cambio» correctos."
+    },
+    {
+      "partido": "junts",
+      "pregunta": "q37",
+      "veredicto": "ok",
+      "aprobado": true,
+      "valor_codificador": -1,
+      "valor_final": -1,
+      "motivo": "Citas literales (pp. 67 y 68), traducción fiel. «Reduir la pressió fiscal» como objetivo, sobre «famílies, autònoms i pimes», con deflactación y rebaja del IRPF y supresión de Sucesiones: bajada general sin recortes declarados: −1. No propone ninguna subida progresiva."
+    },
+    {
+      "partido": "eh_bildu",
+      "pregunta": "q37",
+      "veredicto": "ok",
+      "aprobado": true,
+      "valor_codificador": 1,
+      "valor_final": 1,
+      "motivo": "Cita literal (p. 14, apartado 1.8). Impuestos a energéticas, banca, grandes fortunas y distribuidoras que reviertan en los servicios públicos, solo sobre grandes empresas y fortunas: +1."
+    },
+    {
+      "partido": "pnv",
+      "pregunta": "q37",
+      "veredicto": "null_confirmado_con_correccion_de_campo",
+      "aprobado": true,
+      "valor_codificador": null,
+      "valor_final": null,
+      "motivo": "null confirmado tras leer el programa entero. Apartado 2.7 (pp. 20-21): rebaja del IVA de bienes y servicios esenciales («estudiando» tipos cero o superreducidos), IVA cultural, capacidad normativa foral; Impuesto Especial sobre la Electricidad al 0,5 % (p. 16), exención IRPF de indemnizaciones del amianto (p. 34). Rebajas acotadas, no generales (mismo listón que BNG y Frente Amplio); ninguna subida progresiva. Nota completada con la rebaja del IVA de esenciales."
+    },
+    {
+      "partido": "bng",
+      "pregunta": "q37",
+      "veredicto": "ok",
+      "aprobado": true,
+      "valor_codificador": 1,
+      "valor_final": 1,
+      "motivo": "Cambio null → +1 del codificador confirmado. Citas literales (pp. 43 y 44, apartado 4.1), traducción fiel. Más progresividad sobre capital y rentas altas, permanencia y más progresividad de los impuestos a banca, energéticas y grandes fortunas; las rebajas (IVA de bienes y suministros esenciales, trabajo, electricidad) son acotadas, como las del Frente Amplio. +1 (decisión 11); resuelve la duda de g22 sin necesidad del argumento de las pensiones. «sustituye» y «motivo_cambio» correctos."
+    },
+    {
+      "partido": "cc",
+      "pregunta": "q37",
+      "veredicto": "null_confirmado_con_correccion_de_campo",
+      "aprobado": true,
+      "valor_codificador": null,
+      "valor_final": null,
+      "motivo": "null confirmado tras leer el programa entero. Solo incentivos y deducciones puntuales (IRPF de islas verdes, p. 13; vivienda, p. 11; cotizaciones ligadas a salarios, p. 12) y defensa del REF. «La riqueza también debe contribuir de forma justa al sostenimiento de los servicios públicos» (p. 12) es un principio sin ninguna medida que suba impuestos: no es la subida progresiva que pide la decisión 11; ante la duda, null. Nota corregida: decía «nada sobre la disyuntiva»."
+    },
+    {
+      "partido": "adelante_andalucia",
+      "pregunta": "q37",
+      "veredicto": "ok",
+      "aprobado": true,
+      "valor_codificador": 1,
+      "valor_final": 1,
+      "motivo": "Cita literal (p. 66, propuesta 298); reforma fiscal de la p. 58 (IRPF con tipos «mucho más altos» desde 100.000 euros, impuesto sobre la riqueza y la tierra, banca y eléctricas) bien descrita; rebajas acotadas (IVA superreducido de lo básico). +1."
+    },
+    {
+      "partido": "salf",
+      "pregunta": "q37",
+      "veredicto": "ok",
+      "aprobado": true,
+      "valor_codificador": -2,
+      "valor_final": -2,
+      "motivo": "Cita literal (p. 16, cuadro «Cómo se paga»). Rebaja fiscal de 80.000 millones al año con «un euro de rebaja, un euro de ahorro certificado»: −2 según el criterio de g22, ratificado. Valor sin cambios respecto a g22; ver dudas (simetría de los ±2)."
+    }
+  ],
+  "resolucion_dudas_codificador": [],
+  "celdas_no_tocadas": [
+    "Los 14 valores no null y las 4 null confirmados; 4 notas corregidas (upc, ara_mes_fa, pnv, cc), cada una con su «motivo_verificacion»."
+  ],
+  "posiciones_no_recogidas": "Ninguna. Las más cercanas, todas descartadas por la propia decisión 11: en Ara Més, subidas de vivienda y turismo (sectoriales) y el IVA reducido para Baleares (régimen propio por insularidad); en PNV, la rebaja del IVA de bienes esenciales (acotada); en CC, la frase de principio de la p. 12 sin medida concreta.",
+  "recuento": {
+    "antes_g22": {
+      "con_valor": 11,
+      "null": 7
+    },
+    "despues": {
+      "con_valor": 15,
+      "null": 3
+    },
+    "valores_finales": {
+      "+2": 0,
+      "+1": 10,
+      "0": 0,
+      "−1": 3,
+      "−2": 2,
+      "null": 3
+    },
+    "a_favor": [
+      "psoe",
+      "psc",
+      "frente_amplio",
+      "podemos",
+      "compromis",
+      "upc",
+      "erc",
+      "eh_bildu",
+      "bng",
+      "adelante_andalucia"
+    ],
+    "en_contra": [
+      "pp",
+      "upn",
+      "vox",
+      "junts",
+      "salf"
+    ],
+    "null": [
+      "ara_mes_fa",
+      "pnv",
+      "cc"
+    ],
+    "tabla_final": {
+      "pp": "−1",
+      "upn": "−1",
+      "psoe": "+1",
+      "psc": "+1",
+      "vox": "−2",
+      "frente_amplio": "+1",
+      "podemos": "+1",
+      "compromis": "+1",
+      "upc": "+1",
+      "ara_mes_fa": "null",
+      "erc": "+1",
+      "junts": "−1",
+      "eh_bildu": "+1",
+      "pnv": "null",
+      "bng": "+1",
+      "cc": "null",
+      "adelante_andalucia": "+1",
+      "salf": "−2"
+    },
+    "build": "python3 -I pipeline/build_fase1.py con este verificacion_g24.json («aprobado»: true): exit 0; codificacion_g24.json entra en «grupos» después de g22 y g23, y en data/fase1/fase1.json las 18 celdas de q37 coinciden con codificacion_g24.json (valor y nota). web/public/data/fase1.json no lo genera build_fase1.py sino pipeline/build_web.py, que no se ha ejecutado: allí q37 sigue con los valores de g22 hasta el próximo build_web."
+  },
+  "dudas": [
+    "vox y salf (−2): la decisión 11 reserva ±2 para cuando el programa «asume expresamente la disyuntiva». Vox compensa la rebaja con recortes de gasto, pero en la medida 3 (pp. 7-8) dice que la compatibilizará «con la financiación de los servicios públicos esenciales» y que solo eliminará el gasto «superfluo e ideológico»; SALF financia la rebaja con ahorro en administración, diputaciones, ministerios y ayuda al desarrollo, y blinda las pensiones (p. 20). Ninguno acepta reducir servicios o prestaciones, igual que la izquierda no acepta que paguen más todos (solo las rentas altas, patrimonios y grandes empresas). El −2 sigue el criterio de g22 que el editor ratificó («rebaja compensada expresamente con recortes de gasto») y el valor no lo introduce g24, así que el verificador no lo cambia. Mismo listón en las dos direcciones exigiría una de dos: Vox y SALF a −1 (nadie asume la contrapartida para todos), o +2 para los que destinan expresamente la nueva recaudación a servicios o prestaciones (PSOE y PSC, Frente Amplio, EH Bildu, Adelante Andalucía). Decide el editor."
+  ],
+  "nota_aprobacion": "20-nov: las 4 correcciones de nota están aplicadas en codificacion_g24.json y ningún valor cambia; todas las celdas son correctas con la decisión 11 y con el criterio de ±2 ratificado en g22, así que el grupo queda aprobado. Queda para el editor la duda sobre la simetría de los ±2 (vox y salf), que no introduce g24. Reparto final de q37: 10 a favor (+1), 5 en contra (3 × −1, 2 × −2), 3 null (ara_mes_fa, pnv, cc).",
+  "resolucion_dudas_editor": [
+    {
+      "duda": "vox y salf (−2)",
+      "resolucion": "Se mantienen en −2 (decisión del coordinador, 20-nov, revisable por el editor). Criterio único para los dos lados: ±2 cuando el programa asume el coste de su propio lado de la disyuntiva. Vox («para compensar la bajada masiva de impuestos, se recortarán todos los gastos superfluos») y SALF («un euro de rebaja, un euro de ahorro certificado») dicen cómo bajarán el gasto público para compensar la rebaja. Los +1 (PSOE, PSC, Frente Amplio, Podemos, Compromís, UPC, ERC, EH Bildu, BNG, Adelante Andalucía) hacen recaer la subida en rentas altas, patrimonios o grandes empresas, no en un «pagar más impuestos» general."
+    }
+  ]
+}
