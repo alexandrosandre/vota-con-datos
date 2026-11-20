@@ -64,13 +64,16 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
     valor: Podemos 23→25 posiciones; q05 y q11 nuevas, y q01, q09, q21, q29 y q33 se refuerzan con el programa); 12 propuestas del
     programa (revisión independiente, 20 correcciones; cambia una valoración: financiación del referéndum monarquía/república,
     favorable → mixta, por la vía del art. 168); complemento: contratar 40.000 sanitarios y 40.000 maestros (no está en el programa).
-  - [ ] Junts, NC-BC (UPC), UPN — sin programa en sus webs oficiales el 18-nov a las 21:07. **Junts** repartió a la prensa
-    su programa del 29-N el 18-nov (90 pp., «Catalunya al centre»; copia en el servidor de Ara, sha256 cde2c5f3…), pero
-    junts.cat no lo publica: no cuenta hasta que esté en su web (mismo criterio que Podemos el 16-nov). Análisis preparado
-    sobre esa copia en una rama local sin publicar (`prep-junts-29n`), con revisión independiente del paso 2 y verificación
-    del paso 1 aprobadas (Junts 16 → 18 posiciones; q06 queda en null). **19-nov, 07:17:** junts.cat sigue sin publicarlo
-    (/programa-electoral/ redirige al de las europeas de 2024; ningún PDF nuevo desde el 6-nov; ninguna entrada del 19-nov).
-    Si el PDF oficial es idéntico (sha256 cde2c5f3…), se completan url y fecha y se publica.
+  - [x] Junts — **publicado el 18-nov** en tualcentre.cat, su web de campaña «Catalunya al centre» (titular: Junts
+    per Catalunya; enlazada desde junts.cat), detectado el 20-nov; 90 pp., mismo sha256 que la copia que alojaba Ara
+    (cde2c5f3…), sobre la que se había preparado el análisis. Paso 1: g20 verificado (Junts 16 → 18 posiciones; q06
+    queda en null porque solo consta en el anexo de balance de la legislatura anterior). Paso 2: 12 propuestas del
+    programa con revisión independiente; complemento vacío. Auditoría de coherencia (`data/fase3/coherencia_2026-11-20.md`):
+    financiación de junts-08 y pnv-08 (jubilación sin coeficientes reductores con 40 años cotizados) pasa de
+    no_verificable a mixta con la estimación del Gobierno en respuesta parlamentaria (3.358 M€ anuales para los ya
+    jubilados); psc-c05 corrige la inversión del DORA en El Prat (1.294,840 M€, BOE-A-2026-19507).
+  - [ ] NC-BC (UPC), UPN — sin programa el 18-nov a las 20:48 (UPC subió el 19-nov unas «Líneas básicas del programa
+    electoral»: en análisis).
   - PSC: sigue asumiendo el programa del PSOE; su manifiesto del 29-N (8 pp., socialistes.cat/generals) queda catalogado
     como `documento_programatico`, como el de UPC.
   - Compromís **retiró su PDF** el 18-nov a mediodía y por la tarde volvió a servir en la misma URL una **versión revisada**
@@ -93,9 +96,14 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
   centrales nucleares), codificada en `codificacion_g12.json` y verificada (`verificacion_g12.json`: 10 de 11
   aprobadas; la del PSC, «no hay nada grabado a fuego», se rechaza por ambigua). q36 pasa de 3 a 10 partidos con
   posición (3 a favor, 7 en contra); las respuestas guardadas a q20 dejan de contar. Hecho: ya no se repite.
-- [ ] **4. [Externo → Yo] Listas del BOE tras los recursos** ante el TS (art. 44.4 LOREG, 13–19-nov):
-  volver a descargar y validar el BOE después. Pendiente de confirmar oficialmente el recurso de Drago
-  Canarias contra UPC (solo hay prensa).
+- [x] **4. [Externo → Yo] Listas del BOE tras los recursos** ante el TS (art. 44.4 LOREG, 13–19-nov). **Hecho el
+  20-nov:** sumarios del BOE del 13 al 20-nov sin correcciones de la proclamación ni resoluciones (BOE-A-2026-23103
+  solo enlaza su corrección BOE-A-2026-23383, que no tiene posteriores); los PDF de candidaturas proclamadas y de
+  su corrección en la web de la JEC son idénticos a los del repo; no hay sentencias del TS ni del TC que cambien
+  candidaturas al Congreso, así que no hace falta volver a descargar el BOE. Según la prensa (no hay fuente
+  oficial), el recurso de Drago Canarias contra las siglas de UPC fue a los juzgados de lo contencioso de Canarias
+  y el TC inadmitió sus amparos el 12-nov; UPC sigue proclamada. PACMA quedó fuera en Barcelona (ya coincide con el
+  BOE). No pude comprobar la lista de acuerdos de la JEC del 13 al 20-nov.
 - [ ] **5. [Externo → Yo] Encuestas nuevas** publicadas antes del 24-nov, desde su publicación original.
   La veda (24-nov 00:00 → 29-nov 20:00) ya está automatizada en GitHub Actions.
 - [ ] **6. [Yo] Compromisos de campaña desde el 13-nov** (empieza la campaña), sobre todo para los partidos
