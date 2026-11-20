@@ -67,11 +67,44 @@ export interface PosicionPartido {
   nota?: string | null;
 }
 
+/** Sentido del voto de un partido respecto de lo que dice la afirmación (calculado del voto nominal de sus diputados). */
+export type SentidoVoto = 'a_favor' | 'en_contra' | 'abstencion' | 'dividido';
+
+/** Una votación del Pleno del Congreso (XV Legislatura) sobre la medida de una afirmación (pipeline/votaciones_fase1.py). */
+export interface VotacionCongreso {
+  id: string;
+  fecha: string;
+  /** Qué se votó, en lenguaje llano. */
+  objeto: string;
+  /** «misma»: se votó la propia medida; «parecida»: una medida cercana o un paquete que la incluía (ver nota). */
+  relacion: 'misma' | 'parecida';
+  nota?: string | null;
+  /** JSON oficial de la votación en los datos abiertos del Congreso. */
+  url: string;
+  /** Ficha o texto de la iniciativa en congreso.es. */
+  ficha?: string | null;
+  expediente?: string | null;
+  totales?: { afavor: number; enContra: number; abstenciones: number; presentes?: number } | null;
+  partidos: Record<string, { sentido: SentidoVoto; voto: string; detalle: Record<string, number> }>;
+}
+
+/** Dos afirmaciones que miden lo mismo (o lo contrario): si las respuestas tiran en direcciones opuestas, se avisa. */
+export interface ParCoherencia {
+  a: string;
+  b: string;
+  relacion: 'mismo_sentido' | 'sentido_contrario';
+  /** Por qué van juntas, en una frase. */
+  explicacion: string;
+}
+
 export interface DatosFase1 {
   meta: { actualizado: string; nota?: string };
   preguntas: Pregunta[];
   /** partido -> pregunta -> posición */
   posiciones: Record<string, Record<string, PosicionPartido>>;
+  /** pregunta -> votaciones del Congreso sobre esa medida (de la más reciente a la más antigua). */
+  votaciones?: Record<string, VotacionCongreso[]>;
+  pares_coherencia?: ParCoherencia[];
 }
 
 /* ---------- Fase 2 ---------- */

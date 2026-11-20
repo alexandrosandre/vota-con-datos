@@ -1,0 +1,485 @@
+{
+ "fecha": "2026-11-20",
+ "criterios": "Revisión de las 30 afirmaciones de «preguntas» a raíz de la crítica de un experto: (A) contrapartida oculta, (B) mezcla de la política con quién decide, (V) cercanía a una cuestión de consenso. Reglas aplicadas por igual en todas las direcciones ideológicas (rebajas de impuestos, aumentos de gasto y medidas de izquierda con coste): 1) La contrapartida se enuncia como un hecho, nunca como una predicción discutida: una cifra oficial abierta durante esta revisión (AEAT, OTAN, Hacienda, Ministerio de Sanidad, Ministerio de Educación, BOE) o una identidad aritmética o contable (menos tipo con la misma base implica menos recaudación; mismo salario por menos horas implica más coste por hora; la deuda asumida por el Estado la pagan todos los contribuyentes; más años de pensión). 2) Las identidades se refieren al efecto directo (sin suponer cambios de comportamiento), el criterio habitual de las memorias de impacto. Las contrapartidas sin fuente propia figuran con url null y verificado true solo cuando son identidades. 3) Las rebajas de impuestos llevan la misma coletilla («aunque se recaude menos para servicios públicos»); los aumentos de gasto llevan la magnitud en euros o en años de pensión. 4) No se añade contrapartida cuando el coste ya es evidente (topes de precios: cobra menos quien vende o alquila; impuestos con el afectado nombrado) ni cuando el único «coste» es una predicción discutida (efecto de los topes de alquiler en la oferta, efecto fiscal de regularizar, coste comparado de sanidad o enseñanza pública). Esas contrapartidas, si son un dato, van al contexto (q09). 5) (B): el enunciado mide una sola dimensión; el «quién decide» se separa en un ítem de principio (n02). 6) Textos nuevos de 30 palabras como máximo, una idea, sin jerga y sin negación explícita. Solo se citan como verificadas las cifras abiertas en esta revisión; las votaciones se toman de fase1.json (Diario de Sesiones) o de prensa y se marcan cuando no se han verificado. No se ha editado preguntas.json.",
+ "items": [
+  {
+   "id": "q01",
+   "texto_actual": "Fijar por ley estatal un precio máximo del alquiler de vivienda en toda España, sin depender de que lo pida cada comunidad autónoma.",
+   "diagnostico": {
+    "contrapartida": "El coste recae en los arrendadores, que cobrarían menos: es evidente en la propia medida (un precio máximo). El efecto sobre la oferta de alquiler es una predicción discutida, así que no se añade contrapartida.",
+    "doble_dimension": "Sí (B). Mezcla la política (tope de alquiler) con quién decide («ley estatal», «sin depender de que lo pida cada comunidad»). Hoy se responde desde la situación partidista: las comunidades gobernadas por el PP no aplican la Ley de Vivienda, y decir «sí» implicaría también que un Estado de otro color pudiera impedir a una comunidad topar alquileres. La nueva redacción mide solo el alcance del control de rentas; el «quién decide» pasa al ítem territorial nuevo (n02).",
+    "valence": "No. Divide con claridad (PP −2, Podemos y BNG +2)."
+   },
+   "cambia": true,
+   "texto_nuevo": "Fijar por ley un precio máximo para todos los alquileres de vivienda, no solo en las zonas con precios más altos.",
+   "contrapartida_fuente": null,
+   "recodificar": "Sí. Riesgo alto en PSOE y PSC (hoy +1: defienden las zonas tensionadas, no un tope general), Compromís (+1, habla de zonas tensionadas), Junts (−2), PNV (sin posición), EH Bildu y UPC (+1). Bajo riesgo en PP, Vox, Podemos, BNG, Frente Amplio, Ara Més y Adelante Andalucía.",
+   "votacion_probable": "Posible, sin iniciativa identificada que coincida exactamente con un tope general (la Ley 12/2023 se votó en la XIV Legislatura). Buscar proposiciones de ley o PNL de Sumar o Podemos sobre rebaja o tope general de alquileres en la XV Legislatura."
+  },
+  {
+   "id": "q03",
+   "texto_actual": "Rebajar un 60 % el IVA y el impuesto de transmisiones a los menores de 40 años que compren su primera vivienda.",
+   "diagnostico": {
+    "contrapartida": "Sí (A). Coste oculto: el Estado (IVA) y las comunidades (impuesto de transmisiones) recaudarían menos; lo soportan todos los contribuyentes o los servicios que se dejen de pagar. Quien responde solo ve la rebaja. Es una identidad contable (menos tipo, misma base, menos recaudación); el posible efecto sobre los precios de la vivienda es discutido y no se añade.",
+    "doble_dimension": "No.",
+    "valence": "Parcial: una rebaja fiscal a jóvenes compradores suscita acuerdo casi general si no se ve el coste; hoy está codificada a favor (+1 o +2) por 12 partidos de todo el espectro y por ninguno en contra, lo que indica que apenas discrimina."
+   },
+   "cambia": true,
+   "texto_nuevo": "Rebajar un 60 % el IVA y el impuesto de transmisiones a menores de 40 años que compren su primera vivienda, aunque se recaude menos para servicios públicos.",
+   "contrapartida_fuente": {
+    "dato": "Identidad contable: una rebaja de tipo sin otros cambios reduce lo recaudado por el Estado (IVA) y por las comunidades (ITP). No se cita cifra: no hay estimación oficial del coste de la rebaja para menores de 40 años.",
+    "url": null,
+    "verificado": true
+   },
+   "recodificar": "Sí. Riesgo en los partidos de izquierda hoy en +1 (Frente Amplio, Podemos, Compromís, Ara Més, UPC, ERC) y en CC (+1); PP (+2), Vox y SALF probablemente se mantienen.",
+   "votacion_probable": "Poco probable una votación sobre esta medida exacta; posible alguna PNL o moción del PP sobre fiscalidad de la primera vivienda (sin identificar)."
+  },
+  {
+   "id": "q31",
+   "texto_actual": "Que los contratos de alquiler de vivienda habitual se renueven automáticamente por periodos de cinco años si el inquilino quiere seguir.",
+   "diagnostico": {
+    "contrapartida": "El coste recae en los propietarios (menos libertad para recuperar la vivienda o renegociar); es visible en el texto. El efecto sobre la oferta es una predicción discutida: no se añade contrapartida.",
+    "doble_dimension": "No.",
+    "valence": "No (PP, Junts, PNV y CC −1; izquierda +2)."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Sí, decisiva: convalidación del Real Decreto-ley 27/2026 de estabilidad de los contratos de alquiler (Pleno, Diario de Sesiones n.º 210, 2-10-2026, según fase1.json) y derogación del Real Decreto-ley 28/2026 por la Diputación Permanente el 12-11-2026 (prensa; votos por grupo sin verificar)."
+  },
+  {
+   "id": "q04",
+   "texto_actual": "Hacer permanente el impuesto estatal sobre los patrimonios de más de 3 millones de euros, creado en 2022 como temporal.",
+   "diagnostico": {
+    "contrapartida": "El coste lo soportan los patrimonios de más de 3 millones, y el texto lo dice: no hay coste oculto que añadir.",
+    "doble_dimension": "Débil. El impuesto se creó para neutralizar las bonificaciones del Impuesto sobre el Patrimonio de algunas comunidades, pero el enunciado mide una sola cosa (gravar los grandes patrimonios) y no depende de quién gobierne.",
+    "valence": "No (SALF −2; izquierda +2)."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Posible, pero poco limpia: la prórroga indefinida se aprobó en el Real Decreto-ley 8/2023, convalidado en enero de 2024 (XV Legislatura), un decreto ómnibus con muchas otras medidas (sin verificar el detalle de la votación)."
+  },
+  {
+   "id": "q05",
+   "texto_actual": "Bajar el IRPF: que no lo pague quien ingrese menos de 22.000 € al año y aplicar solo dos tipos, un 15 % hasta 70.000 € y un 25 % por encima.",
+   "diagnostico": {
+    "contrapartida": "Sí (A), el caso del experto. Bajar el IRPF a casi todos los tramos se percibe como ganancia propia y oculta que el Estado y las comunidades recaudarían menos para pagar servicios públicos. Es una identidad contable (efecto directo, sin suponer cambios de comportamiento). El propio programa de Vox propone compensar la rebaja con recortes de gasto, así que la contrapartida coincide con su memoria. No se usa la cifra de 85.000 millones del ministro de Hacienda porque es una estimación de un rival en campaña y no la he contrastado con la AIReF.",
+    "doble_dimension": "No.",
+    "valence": "Sin contrapartida, casi de valence: la mayoría de los votantes está en esos tramos y ganaría."
+   },
+   "cambia": true,
+   "texto_nuevo": "Bajar el IRPF (sin pagar por debajo de 22.000 € al año; 15 % hasta 70.000 € y 25 % por encima), aunque se recaude menos para servicios públicos.",
+   "contrapartida_fuente": {
+    "dato": "El IRPF recaudó 142.466 millones de euros en 2025; cualquier rebaja general de tipos, con la misma renta, reduce esa cifra (identidad contable).",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/estadisticas/recaudacion-tributaria/informe-anual/ejercicio-2025/2-impuesto-sobre-renta-personas-fisicas.html",
+    "verificado": true
+   },
+   "recodificar": "Sí, con riesgo bajo o medio. Vox (+2) se mantiene: su programa ya acepta recortar gasto. Riesgo en SALF (+1, que propone su propio mínimo exento de 35.000 €) y oportunidad de codificar al PP y a Junts (hoy sin posición; ambos prometen bajar el IRPF). PSOE y la izquierda (−1) se mantienen o bajan a −2.",
+   "votacion_probable": "Poco probable sobre el esquema exacto de Vox; posibles enmiendas o PNL de Vox o del PP sobre deflactación o rebaja del IRPF (sin identificar)."
+  },
+  {
+   "id": "q06",
+   "texto_actual": "Reducir por ley la jornada laboral máxima de 40 a 37,5 horas semanales, sin rebajar el salario.",
+   "diagnostico": {
+    "contrapartida": "Parcial (A). «Sin rebajar el salario» ya deja ver que se cobra lo mismo, pero no dice quién lo paga: las empresas pagarían el mismo salario por menos horas, es decir, cada hora les costaría un 6,7 % más para quien hoy trabaja 40 horas (40 / 37,5 = 1,067, cálculo aritmético; coincide con el 6,67 % que la evaluación del programa atribuye a la memoria del proyecto de ley de 2025). Los posibles efectos sobre empleo o productividad son discutidos y no se añaden.",
+    "doble_dimension": "No.",
+    "valence": "No (PSOE +2, izquierda a favor; Junts votó la devolución del proyecto en 2025)."
+   },
+   "cambia": true,
+   "texto_nuevo": "Reducir por ley la jornada máxima de 40 a 37,5 horas semanales sin rebajar el salario, de modo que las empresas paguen lo mismo por menos horas.",
+   "contrapartida_fuente": {
+    "dato": "Identidad aritmética: mismo salario por 37,5 horas en vez de 40 supone un coste por hora un 6,67 % mayor para quien hoy trabaja 40 horas. La memoria del proyecto de ley 121/000058 da esa misma cifra según data/programas/*/evaluacion.json, pero no la he abierto.",
+    "url": "https://www.congreso.es/webpublica/documentacion/docs_trabajo/leg15/121_000058/121_000058_doc_acompana.pdf",
+    "verificado": false
+   },
+   "recodificar": "Bajo riesgo para los partidos a favor (PSOE, PSC, ERC, Frente Amplio +2; resto +1). PP, Vox y Junts no tienen posición codificada: aquí la votación es decisiva.",
+   "votacion_probable": "Sí, decisiva: enmiendas a la totalidad (PP, Vox y Junts) que devolvieron al Gobierno el proyecto de ley de reducción de la jornada (121/000058) en septiembre de 2025, según el contexto de la afirmación, verificado en el BOCG."
+  },
+  {
+   "id": "q32",
+   "texto_actual": "Que cada comunidad autónoma pueda fijar su propio salario mínimo, por encima del estatal.",
+   "diagnostico": {
+    "contrapartida": "El coste recae en los empleadores de esas comunidades y es razonablemente visible («por encima del estatal»). No se añade contrapartida.",
+    "doble_dimension": "Débil. Es un ítem territorial por naturaleza (quién fija el salario mínimo), pero solo permite subirlo, así que no depende de quién gobierne hoy cada comunidad. Mezcla descentralización y un suelo salarial más alto: Junts (+1) y Vox (−1) lo leen como competencia; parte de la izquierda estatal no tiene posición.",
+    "valence": "No."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Posible: Vox intervino sobre la cuestión en el Pleno (Diario de Sesiones n.º 173, 24-3-2026, según fase1.json); iniciativa concreta sin identificar."
+  },
+  {
+   "id": "q08",
+   "texto_actual": "Volver a la jubilación a los 65 años para todos los trabajadores, sin recorte de la pensión por la edad.",
+   "diagnostico": {
+    "contrapartida": "Sí (A). Coste oculto: volver a los 65 años sin recorte significa pagar la pensión durante más tiempo y cotizar menos años. Desde 2027 la edad sin recorte es de 67 años para quien no tenga 38 años y 6 meses cotizados (LGSS, disposición transitoria séptima), así que serían hasta dos años más de pensión por jubilado, a cargo de las cotizaciones y los impuestos que financian la Seguridad Social. Identidad aritmética, no predicción.",
+    "doble_dimension": "No.",
+    "valence": "Parcial: jubilarse antes sin recorte es atractivo para casi todos; hoy ningún partido está codificado en contra (solo seis a favor y el resto sin posición)."
+   },
+   "cambia": true,
+   "texto_nuevo": "Volver a la jubilación a los 65 años sin recorte para todos, aunque eso suponga pagar hasta dos años más de pensión a cada jubilado.",
+   "contrapartida_fuente": {
+    "dato": "A partir de 2027 la edad de jubilación es de 67 años con menos de 38 años y 6 meses cotizados, y de 65 con ese periodo o más (LGSS, disposición transitoria séptima): la diferencia es de hasta dos años de pensión.",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+    "verificado": true
+   },
+   "recodificar": "Bajo riesgo para los partidos a favor (BNG, Frente Amplio, Compromís, ERC +2; Podemos y Adelante Andalucía +1). Conviene codificar a PP, PSOE, Vox y Junts, hoy sin posición: sin ellos el ítem no discrimina.",
+   "votacion_probable": "Poco probable una votación sobre volver a los 65 en la XV Legislatura (la última reforma de pensiones, el Real Decreto-ley 2/2023, es de la XIV)."
+  },
+  {
+   "id": "q09",
+   "texto_actual": "Prohibir que la sanidad pública pague a clínicas y hospitales privados para atender a sus pacientes.",
+   "diagnostico": {
+    "contrapartida": "El coste discutido (si atender esos casos en la red pública cuesta más o menos y qué pasa con las listas de espera) es una predicción, no un hecho: no se añade contrapartida al enunciado. Sí conviene añadir al contexto la magnitud, que es un dato: las compras al sector privado mediante conciertos sumaron 10.143 millones en 2024, el 10,0 % del gasto sanitario público (Ministerio de Sanidad).",
+    "doble_dimension": "No.",
+    "valence": "No (izquierda a favor; Vox, SALF y Junts −1)."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": {
+    "dato": "Conciertos con el sector privado: 10.143 millones de euros en 2024, el 10,0 % del gasto sanitario público (Estadística de Gasto Sanitario Público 2024). Para el contexto, no para el enunciado.",
+    "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/tablasEstEGSP/Principales_resultados.pdf",
+    "verificado": true
+   },
+   "recodificar": "No.",
+   "votacion_probable": "Poco probable una votación sobre la prohibición; hubo preguntas en el Pleno (Diario de Sesiones n.º 167, 18-2-2026, según fase1.json)."
+  },
+  {
+   "id": "q11",
+   "texto_actual": "Retirar poco a poco la financiación pública a los colegios concertados hasta suprimirla, empezando por las etapas no obligatorias.",
+   "diagnostico": {
+    "contrapartida": "Sí (A). Coste oculto y quién lo soporta: sin fondos públicos, los colegios concertados dejarían de ser gratuitos, así que sus alumnos tendrían que pagar o pasar a un centro público. Es una identidad, no una predicción. Afecta a uno de cada cuatro alumnos de régimen general (24,4 % en el curso 2025-2026, Ministerio de Educación). No se añade el coste para el presupuesto público de absorber a esos alumnos, porque las comparaciones de coste por alumno son discutidas.",
+    "doble_dimension": "No.",
+    "valence": "No (PP −2 y SALF −2; BNG, Podemos y Frente Amplio +2)."
+   },
+   "cambia": true,
+   "texto_nuevo": "Suprimir poco a poco la financiación pública de los colegios concertados, a los que va uno de cada cuatro alumnos, que tendrían que pagar o ir a la pública.",
+   "contrapartida_fuente": {
+    "dato": "En el curso 2025-2026, el 24,4 % del alumnado de enseñanzas de régimen general está en enseñanza concertada (estimación a partir del curso 2023-2024).",
+    "url": "https://www.libreria.educacion.gob.es/ebook/186407/free_download",
+    "verificado": true
+   },
+   "recodificar": "Bajo riesgo: la medida no cambia, solo se hace visible quién la soporta. Se pierde el matiz «empezando por las etapas no obligatorias» (BNG); si se quiere conservar, mantenerlo en el contexto. Vigilar a Frente Amplio, Podemos, Ara Més y Adelante Andalucía (+2), por si su posición se refiere solo a reducir conciertos.",
+   "votacion_probable": "Posible: debates del Pleno en 2026 (Vox, Diario de Sesiones n.º 185, 19-5-2026); iniciativa concreta sobre los conciertos sin identificar."
+  },
+  {
+   "id": "q12",
+   "texto_actual": "Que cada comunidad con lengua cooficial decida qué parte de las clases se da en castellano, sin un mínimo fijado por ley o por tribunales.",
+   "diagnostico": {
+    "contrapartida": "No hay coste presupuestario. Quién lo soporta (las familias que prefieren más castellano) está implícito en el tema.",
+    "doble_dimension": "Sí (B). Une la cuestión de fondo (si debe haber un mínimo de castellano) con quién decide («que cada comunidad decida»). Con gobiernos del PP en la Comunitat Valenciana y las Illes Balears y del PSC en Cataluña, la respuesta depende de quién gobierna cada comunidad. La nueva redacción mide solo el fondo y evita la negación explícita.",
+    "valence": "No."
+   },
+   "cambia": true,
+   "texto_nuevo": "Suprimir cualquier porcentaje mínimo de clases en castellano en los colegios de las comunidades con lengua cooficial.",
+   "contrapartida_fuente": null,
+   "recodificar": "Sí. ERC y Junts (+2) se mantienen. Riesgo en PP y Vox (−1, pueden pasar a −2), PSOE y PSC (sin posición; el PSC defiende la inmersión), y oportunidad de codificar a PNV, EH Bildu y Compromís. BNG, Frente Amplio y Ara Més (+1) se mantienen.",
+   "votacion_probable": "Posible: moción consecuencia de interpelación de Vox sobre los resultados del sistema educativo (Diario de Sesiones n.º 206, 22-9-2026, según fase1.json); comprobar si incluía el castellano como lengua vehicular."
+  },
+  {
+   "id": "q13",
+   "texto_actual": "Que los españoles tengan prioridad sobre los extranjeros residentes en el reparto de viviendas sociales.",
+   "diagnostico": {
+    "contrapartida": "Quien pierde (los extranjeros residentes) está en el propio enunciado: no hay coste oculto.",
+    "doble_dimension": "No en el texto. La vivienda es competencia autonómica, pero el enunciado mide el principio (prioridad por nacionalidad), no quién decide.",
+    "valence": "No (Vox +2; izquierda y PSOE −1)."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Posible: interpelación urgente de Vox sobre vivienda (Diario de Sesiones n.º 190, 10-6-2026) y su moción consecuencia, si incluía la «prioridad nacional» (sin verificar)."
+  },
+  {
+   "id": "q15",
+   "texto_actual": "Aprobar otra regularización extraordinaria, como la de 2026, para los inmigrantes que sigan viviendo en España sin permiso de residencia.",
+   "diagnostico": {
+    "contrapartida": "Los efectos fiscales y laborales de una regularización son predicciones discutidas (la literatura citada en las evaluaciones apunta a más recaudación): no se añade contrapartida.",
+    "doble_dimension": "No.",
+    "valence": "No (PP, Vox y SALF −2; Adelante Andalucía +2)."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Sí, decisiva para (C): toma en consideración de la ILP de regularización extraordinaria (9-4-2024), apoyada por todos los grupos salvo Vox, incluido el PP, hoy codificado −2 (prensa; votos por grupo sin verificar en el Diario de Sesiones). También la moción consecuencia de interpelación sobre la regularización (Diario de Sesiones n.º 171, 17-3-2026)."
+  },
+  {
+   "id": "q33",
+   "texto_actual": "Suprimir el reparto obligatorio entre comunidades autónomas de los menores migrantes que llegan solos a España.",
+   "diagnostico": {
+    "contrapartida": "No hay coste oculto relevante para el votante; el coste de acogida lo soportan las comunidades y el Estado, y su reparto es el objeto del enunciado.",
+    "doble_dimension": "Parcial (B). El reparto obligatorio es por naturaleza una decisión del Estado sobre las comunidades, así que no es separable; pero la respuesta puede depender de si la comunidad del votante envía o recibe menores (el PP de Canarias, que gobierna con CC, defiende el reparto). Se mantiene: sin obligación no hay política que medir.",
+    "valence": "No (PP +1, Vox +2; CC −2, izquierda −1)."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Probable: convalidación del Real Decreto-ley 2/2025 que introdujo el reparto obligatorio (2025, sin verificar) y debates del Pleno de septiembre de 2026 (Diario de Sesiones n.º 204 y 205, según fase1.json)."
+  },
+  {
+   "id": "q16",
+   "texto_actual": "Permitir que el Gobierno pacte con una comunidad autónoma un referéndum sobre su independencia.",
+   "diagnostico": {
+    "contrapartida": "No hay coste presupuestario.",
+    "doble_dimension": "No. Mide una sola dimensión (aceptar un referéndum de independencia pactado). Que lo pacte «el Gobierno» no depende de qué Gobierno sea.",
+    "valence": "No (PP y Vox en contra; ERC y BNG +2)."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Posible: debates del Pleno (Vox, Diario de Sesiones n.º 168, 24-2-2026, según fase1.json); iniciativa concreta sin identificar."
+  },
+  {
+   "id": "q17",
+   "texto_actual": "Que las comunidades que lo pidan regulen y recauden sus impuestos y paguen al Estado una cantidad anual, como hacen el País Vasco y Navarra.",
+   "diagnostico": {
+    "contrapartida": "El coste para las demás comunidades depende de cómo se calcule la cantidad que se paga al Estado (el cupo), y las estimaciones disponibles (Fedea) son discutidas y no oficiales: no se añade contrapartida. El mecanismo ya está en el texto («paguen al Estado una cantidad anual»).",
+    "doble_dimension": "Débil. «Las comunidades que lo pidan» puede leerse pensando en Cataluña, pero mide una sola dimensión (extender el modelo foral).",
+    "valence": "No (PP −2; Junts y BNG +2)."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Posible: intervención de Vox en el Pleno (Diario de Sesiones n.º 158, 10-12-2025, según fase1.json); sin votación conocida sobre un concierto para otras comunidades."
+  },
+  {
+   "id": "q18",
+   "texto_actual": "Que el Estado asuma unos 83.000 millones de euros de la deuda de las comunidades autónomas, cerca de una quinta parte de lo que deben.",
+   "diagnostico": {
+    "contrapartida": "Sí (A). La deuda no desaparece: pasaría al Estado y la pagarían todos los contribuyentes, también los de las comunidades menos endeudadas. Es una identidad contable. Además, la nota de Hacienda que abrí dice que el 19 % es la condonación media de la «primera fase», así que «cerca de una quinta parte de lo que deben» no es exacto para el total y conviene quitarlo.",
+    "doble_dimension": "Parcial. Se responde en clave partidista (las comunidades del PP rechazaron la condonación aunque las beneficiaba), pero el enunciado mide una sola medida.",
+    "valence": "No (PSOE +2; PP −1, Vox −2)."
+   },
+   "cambia": true,
+   "texto_nuevo": "Que el Estado asuma unos 83.000 millones de euros de la deuda de las comunidades autónomas, que pasarían a pagar todos los contribuyentes.",
+   "contrapartida_fuente": {
+    "dato": "El proyecto de ley preveía que el Estado asumiera 83.252 millones de euros de deuda autonómica; el 19 % es la condonación media de la primera fase.",
+    "url": "https://www.hacienda.gob.es/es-ES/Prensa/Noticias/Paginas/2025/20251209-NP-CM-CONDONACION-DEUDA-CCAA.aspx",
+    "verificado": true
+   },
+   "recodificar": "Bajo riesgo. Vigilar a ERC, Junts y Compromís (piden condonar solo la deuda de su comunidad) y al PP (−1 por su «reestructuración»).",
+   "votacion_probable": "Sí, decisiva: debate de totalidad del proyecto de ley orgánica de asunción de deuda autonómica (121/000079), con enmienda de totalidad de Vox (Diario de Sesiones n.º 199, 23-7-2026, según fase1.json)."
+  },
+  {
+   "id": "q19",
+   "texto_actual": "Instalar parques eólicos en el mar frente a las costas españolas.",
+   "diagnostico": {
+    "contrapartida": "El coste (paisaje y pesca) es discutido y local; no se añade contrapartida.",
+    "doble_dimension": "No.",
+    "valence": "Riesgo de poca discriminación: solo tres partidos tienen posición (Vox y BNG −1, CC +1)."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Poco probable una votación sobre la medida; Vox intervino en el Pleno (Diario de Sesiones n.º 176, 26-3-2026, según fase1.json)."
+  },
+  {
+   "id": "q36",
+   "texto_actual": "Alargar el funcionamiento de las centrales nucleares más allá del calendario de cierre acordado en 2019 (de 2027 a 2035).",
+   "diagnostico": {
+    "contrapartida": "Sin coste presupuestario directo relevante: según la orden de prórroga de Almaraz citada en las evaluaciones, los residuos y el desmantelamiento los pagan los propietarios. Los efectos sobre el precio de la luz son discutidos: no se añade contrapartida.",
+    "doble_dimension": "No.",
+    "valence": "No (PP y Vox +2; izquierda −2)."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Sí, decisiva: PNL del PP para prorrogar la vida útil de las centrales nucleares, aprobada en febrero de 2025 (PSOE y Sumar en contra; ERC y Junts se abstuvieron), y enmienda del PP a la Ley de Movilidad Sostenible rechazada por 171 a 172 en noviembre de 2025 (prensa, sin verificar en el Diario de Sesiones)."
+  },
+  {
+   "id": "q21",
+   "texto_actual": "Reformar la Constitución para reconocer expresamente el derecho al aborto.",
+   "diagnostico": {
+    "contrapartida": "No hay coste.",
+    "doble_dimension": "Parcial. Une la postura sobre el aborto con la vía constitucional: ERC (−1) apoya el aborto pero no esta reforma. Es inevitable y ya está señalado en la auditoría anterior; vigilar en el piloto.",
+    "valence": "No (PP y Vox −2; PSOE +2)."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Sí, decisiva: debate de totalidad del proyecto de reforma del artículo 43 de la Constitución, con enmienda de totalidad de devolución del PP (Diario de Sesiones n.º 183, 30-4-2026, según fase1.json)."
+  },
+  {
+   "id": "q22",
+   "texto_actual": "Suprimir el Ministerio de Igualdad y pasar sus funciones a otro ministerio.",
+   "diagnostico": {
+    "contrapartida": "No hay coste oculto (es una reorganización administrativa).",
+    "doble_dimension": "No.",
+    "valence": "No (PP +2; izquierda −1)."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Poco probable."
+  },
+  {
+   "id": "q23",
+   "texto_actual": "Aprobar una ley que permita desalojar en un máximo de 48 horas a quienes ocupen sin permiso una vivienda ajena.",
+   "diagnostico": {
+    "contrapartida": "Quien lo soporta (los ocupantes) está en el enunciado. Las garantías judiciales son un debate jurídico, no un coste cuantificable: no se añade contrapartida.",
+    "doble_dimension": "No.",
+    "valence": "No (PP, Vox, Junts +2; Adelante Andalucía −2)."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Sí, decisiva: toma en consideración de la proposición de ley orgánica del PP contra la ocupación (Diario de Sesiones n.º 185, 19-5-2026, según fase1.json)."
+  },
+  {
+   "id": "q24",
+   "texto_actual": "Derogar por completo la Ley de Seguridad Ciudadana de 2015 (la llamada «ley mordaza»), que regula multas por conductas en la calle, en protestas y ante la policía.",
+   "diagnostico": {
+    "contrapartida": "No hay coste presupuestario.",
+    "doble_dimension": "No.",
+    "valence": "No (Vox −1; izquierda +2)."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Probable: proposición de ley orgánica de reforma de la LO 4/2015 (iniciativa del PNV, tramitada en la XV Legislatura; sin verificar el resultado). Mide reformar, no derogar por completo, así que solo es indicativa."
+  },
+  {
+   "id": "q35",
+   "texto_actual": "Ampliar la prisión permanente revisable a más delitos, como algunos delitos sexuales graves.",
+   "diagnostico": {
+    "contrapartida": "El coste penitenciario es menor y no es lo que se debate: no se añade contrapartida.",
+    "doble_dimension": "No.",
+    "valence": "No (PP, Vox, UPN y SALF +2; izquierda y PNV −2)."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Sí, decisiva: toma en consideración de la proposición de ley del PP y UPN para ampliar la prisión permanente revisable (Diario de Sesiones n.º 171, 17-3-2026, según fase1.json)."
+  },
+  {
+   "id": "q25",
+   "texto_actual": "Que el Gobierno renuncie a indultar a los políticos condenados por corrupción.",
+   "diagnostico": {
+    "contrapartida": "No hay coste.",
+    "doble_dimension": "No.",
+    "valence": "Sí (V). Casi nadie se declara a favor de indultar a políticos corruptos: hay cuatro partidos codificados a favor (+2) y ninguno en contra, así que no discrimina. Reformularlo como prohibición legal no lo arregla. Propuesta: sustituirlo por un ítem de instituciones que sí divida, la amnistía, que además el PP lleva en su programa (derogar la Ley de Amnistía). Alternativa: la reserva r01 (votar desde los 16 años)."
+   },
+   "cambia": true,
+   "texto_nuevo": "Derogar la ley de amnistía de 2024 para los delitos relacionados con el proceso independentista de Cataluña.",
+   "contrapartida_fuente": null,
+   "recodificar": "Sí, nueva codificación completa de los 18 partidos (es otro tema). Previsible: PP, Vox, SALF y UPN a favor; PSOE, Sumar, ERC, Junts, EH Bildu, PNV y BNG en contra.",
+   "votacion_probable": "Sí, decisiva: votaciones de la Ley Orgánica 1/2024 de amnistía (2024) en el Congreso (sin verificar el desglose por grupo)."
+  },
+  {
+   "id": "q26",
+   "texto_actual": "Aumentar el gasto en defensa hasta el 3,5 % del PIB en 2035.",
+   "diagnostico": {
+    "contrapartida": "Sí (A). Coste oculto: pasar del 2,0 % al 3,5 % del PIB son 1,5 puntos más. Con el PIB y el gasto que estima la OTAN para 2025 (33.123 millones = 2,00 % del PIB), el 3,5 % equivale a unos 58.000 millones, es decir, unos 25.000 millones de euros más al año (cálculo aritmético). Se da como magnitud, no como recorte en otras partidas, que sería una predicción.",
+    "doble_dimension": "No.",
+    "valence": "No (PSOE −1; izquierda −2). El PP no tiene posición codificada."
+   },
+   "cambia": true,
+   "texto_nuevo": "Aumentar el gasto en defensa del 2 % al 3,5 % del PIB en 2035: con la economía de 2025, unos 25.000 millones de euros más al año.",
+   "contrapartida_fuente": {
+    "dato": "Gasto de España en defensa estimado para 2025: 33.123 millones de euros, el 2,00 % del PIB (OTAN, tablas 1 y 3). 3,5 / 2,0 × 33.123 = 57.965 millones; diferencia: 24.842 millones (cálculo propio).",
+    "url": "https://nato.int/content/dam/nato/webready/documents/finance/def-exp-2025-en.pdf",
+    "verificado": true
+   },
+   "recodificar": "Bajo riesgo para los partidos en contra. Conviene codificar a PP, Vox y Junts, hoy sin posición: la cifra puede afectar a partidos que apoyan «cumplir con la OTAN» sin aceptar el 3,5 %.",
+   "votacion_probable": "Sí: moción del Grupo Mixto sobre la reversión del incremento del gasto militar (Diario de Sesiones n.º 190, 10-6-2026, según fase1.json)."
+  },
+  {
+   "id": "q27",
+   "texto_actual": "Desplegar a las Fuerzas Armadas para reforzar la vigilancia de la frontera de Ceuta con Marruecos.",
+   "diagnostico": {
+    "contrapartida": "El coste presupuestario no está cuantificado en ninguna fuente oficial y no es lo que se debate: no se añade contrapartida.",
+    "doble_dimension": "No.",
+    "valence": "No (Vox +2; izquierda −1)."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Sí: toma en consideración de la proposición de ley orgánica de Vox de modificación de la Ley de la Defensa Nacional (Diario de Sesiones n.º 204, 15-9-2026) y moción del PP sobre la crisis de Ceuta (Diario de Sesiones n.º 209, 30-9-2026), según fase1.json."
+  },
+  {
+   "id": "q34",
+   "texto_actual": "Que España apoye un referéndum de autodeterminación en el Sáhara Occidental, en lugar del plan de autonomía dentro de Marruecos.",
+   "diagnostico": {
+    "contrapartida": "No hay coste presupuestario. El efecto en la relación con Marruecos es una predicción discutida: no se añade.",
+    "doble_dimension": "No.",
+    "valence": "No (PSOE −1; Vox +1; izquierda +2)."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Parcial: proposición de ley de concesión de la nacionalidad española a los saharauis (Diario de Sesiones n.º 203, 10-9-2026), que no es la misma medida; buscar PNL sobre el giro de 2022."
+  },
+  {
+   "id": "q29",
+   "texto_actual": "Que España pida en la Unión Europea frenar el acuerdo comercial con Mercosur (Argentina, Brasil, Paraguay y Uruguay).",
+   "diagnostico": {
+    "contrapartida": "Quién gana y quién pierde (agricultores frente a exportadores y consumidores) depende de predicciones discutidas: no se añade contrapartida.",
+    "doble_dimension": "No.",
+    "valence": "No (Vox, SALF, Podemos, ERC y BNG +2; PSOE −1)."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Sí: PNL de Sumar «relativa al rechazo del Acuerdo de Asociación entre la Unión Europea y Mercosur, a la no aplicación provisional del mismo…» (161/002913), Comisión de Agricultura, 25-2-2026, según fase1.json."
+  },
+  {
+   "id": "q30",
+   "texto_actual": "Fijar por ley un precio máximo para los alimentos básicos, como el pan, la leche, los huevos, la fruta y la verdura.",
+   "diagnostico": {
+    "contrapartida": "El coste recae en quien vende (cobraría menos), como en el tope de alquiler: es evidente en la medida. Los posibles desabastecimientos son una predicción discutida: no se añade contrapartida. Mismo criterio que en q01.",
+    "doble_dimension": "No.",
+    "valence": "No (Vox −1; Podemos y Compromís +2), aunque con pocas posiciones en contra codificadas."
+   },
+   "cambia": false,
+   "texto_nuevo": null,
+   "contrapartida_fuente": null,
+   "recodificar": "No.",
+   "votacion_probable": "Poco probable una votación sobre un tope de precios de los alimentos; hubo preguntas e intervenciones en el Pleno (Diario de Sesiones n.º 170 y 172, febrero y marzo de 2026, según fase1.json)."
+  }
+ ],
+ "nuevos": [
+  {
+   "id": "n01",
+   "tema": "Fiscalidad",
+   "texto": "Es preferible mejorar los servicios públicos y las prestaciones sociales aunque haya que pagar más impuestos, que pagar menos impuestos aunque haya que reducirlos.",
+   "modelo": "Pregunta del CIS (escala 0-10): «Algunas personas piensan que deberían mejorarse los servicios públicos y las prestaciones sociales, aunque haya que pagar más impuestos, (en una escala de 0 a 10 se situarían en el punto 0). Otras piensan que es más importantes pagar menos impuestos, aunque eso signifique reducir los servicios públicos y prestaciones sociales, (se situarían en el punto 10 de la escala).» CIS, Opinión Pública y Política Fiscal, julio de 2012, estudio 2.953, tabla FIS22.",
+   "modelo_url": "https://www.cis.es/documents/d/cis/fis22",
+   "modelo_verificado": true,
+   "polaridad": "progresista",
+   "variante_conservadora": "Es preferible pagar menos impuestos aunque haya que reducir los servicios públicos y las prestaciones sociales, que mejorarlos pagando más impuestos.",
+   "por_que": "Mide el eje fiscal con las dos contrapartidas a la vista y sin cifras discutibles. Con un solo enunciado de acuerdo o desacuerdo se mantienen los dos polos del CIS, para que «en desacuerdo» signifique preferir menos impuestos y no «dejarlo como está». Todos los partidos son codificables por su programa.",
+   "recodificar": "Nueva codificación de los 18 partidos.",
+   "votacion_probable": "No aplica (es un principio); los votos de presupuestos y reformas fiscales servirían solo como indicio."
+  },
+  {
+   "id": "n02",
+   "tema": "Modelo territorial",
+   "texto": "Que las comunidades autónomas tengan más competencias que hoy, aunque las normas sobre vivienda, impuestos o educación cambien más de una comunidad a otra.",
+   "modelo": "El CIS pregunta por la organización territorial preferida con cinco opciones, de un Estado sin autonomías a uno que permita la independencia (no he abierto el cuestionario: sin verificar).",
+   "modelo_url": null,
+   "modelo_verificado": false,
+   "polaridad": "territorial",
+   "por_que": "Útil y neutral si se usa en lugar del «quién decide» que ahora contamina q01 y q12: recoge en un solo ítem el eje centralización-descentralización como principio, sin atarlo a una medida que hoy aplica o bloquea un partido concreto. La contrapartida («las normas cambien de una comunidad a otra») es la definición de descentralizar, no una predicción. Riesgo: se suma a cinco ítems territoriales (q12, q16, q17, q18, q32) y daría más peso a ese eje. Recomendación: que sustituya a uno de ellos (q32, el más próximo), no que se añada.",
+   "recodificar": "Nueva codificación de los 18 partidos.",
+   "votacion_probable": "No aplica."
+  }
+ ]
+}

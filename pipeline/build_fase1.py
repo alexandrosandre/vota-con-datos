@@ -22,6 +22,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "pipeline"))
 from verify_quotes import norm  # noqa: E402
+from votaciones_fase1 import construir as votaciones_congreso  # noqa: E402
 
 D = ROOT / "data"
 CONVOCATORIA = "2026-10-06"
@@ -96,15 +97,26 @@ def main():
                 if f == "programa" and not out[qid]["url"]:
                     out[qid]["url"] = partidos[pid]["programa"].get("url")
 
+    # Lo que votó cada partido en el Congreso (XV Legislatura) sobre cada afirmación: data/fase1/votaciones.json.
+    votaciones = votaciones_congreso(errores)
+    for q in votaciones:
+        if q not in qids:
+            errores.append(f"votaciones.json: afirmación desconocida {q}")
+    # Pares de afirmaciones para la comprobación de coherencia de las respuestas (preguntas.json, «pares_coherencia»).
+    pares = json.loads((D / "fase1" / "preguntas.json").read_text()).get("pares_coherencia", [])
+    for par in pares:
+        if par.get("a") not in qids or par.get("b") not in qids or par.get("relacion") not in ("mismo_sentido", "sentido_contrario"):
+            errores.append(f"pares_coherencia: par inválido {par}")
+
     if errores:
         print("\n".join(errores))
         sys.exit(1)
 
     pub = [{k: q.get(k) for k in ("id", "tema", "texto", "contexto", "contexto_fuente", "contexto_mas", "origen")} for q in preguntas]
-    fase1 = {"preguntas": pub, "posiciones": posiciones, "grupos": usados}
+    fase1 = {"preguntas": pub, "posiciones": posiciones, "grupos": usados, "votaciones": votaciones, "pares_coherencia": pares}
     (D / "fase1" / "fase1.json").write_text(json.dumps(fase1, ensure_ascii=False, indent=1))
     cob = {p: sum(1 for x in qs.values() if x["valor"] is not None) for p, qs in posiciones.items()}
-    print(f"fase1: {len(pub)} afirmaciones; posiciones conocidas por partido: {cob}")
+    print(f"fase1: {len(pub)} afirmaciones; posiciones conocidas por partido: {cob}; afirmaciones con votación en el Congreso: {len(votaciones)}")
 
 
 if __name__ == "__main__":

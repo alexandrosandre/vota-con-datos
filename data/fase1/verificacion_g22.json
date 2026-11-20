@@ -1,0 +1,1077 @@
+{
+ "grupo": "g22",
+ "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13-nov («A qué partido cuenta cada fuente», precedencia) y del 15-nov (programa del PSOE asumido por el PSC)",
+ "fecha": "2026-11-20",
+ "aprobado": true,
+ "revisadas": 90,
+ "resultado": {
+  "ok": 87,
+  "corregido": 3,
+  "rechazado": 0,
+  "detalle": "90 celdas (18 partidos × q37, q38, q39, q45, q48): 59 con valor del codificador y 31 null. 54 valores confirmados tal cual, 4 confirmados con corrección de cita o nota (psoe/q48, vox/q48, upc/q37, erc/q48), 29 null confirmados y 3 corregidos (upn/q37 null → −1, adelante_andalucia/q37 null → +1, upc/q38 +1 → +2). Las correcciones ya están aplicadas en codificacion_g22.json (con «valor_codificador» y «motivo_verificacion»), así que el grupo queda aprobado."
+ },
+ "alcance": "Las 90 celdas de codificacion_g22.json, las afirmaciones reformuladas tras la revisión experta del 20-nov (preguntas.json: q37 nueva, disyuntiva servicios-impuestos del CIS; q38 nueva, más competencias autonómicas aunque las normas diverjan; q39 sustituye a q01 sin el «quién decide»; q45 sustituye a q12 sin el «quién decide»; q48 sustituye a q25, derogar la amnistía de 2024).\n\n(1) Método. Para cada afirmación se buscó primero en los 16 programas (texto de partidos.json → programa.texto, páginas = páginas del PDF separadas por \\f, como el resto de grupos) y en el manifiesto propio del PSC, con términos propios de cada afirmación (impuestos/servicios/recaudación/presión fiscal/media europea/financiar…; competencias/autogobierno/traspaso/recentralizar/federal…; alquiler/tope/tensionadas/precio…; vehicular/inmersión/castellano/porcentaje…; amnistía/derogar), se decidió el valor y solo después se comparó con el del codificador. Se revisaron también promesas.json, lideres_2026-11-12/*.json y los Diarios de Sesiones guardados en data/sources/fase1.\n\n(2) Citas de programa. Las 48 celdas finales con fuente «programa» (47 del codificador y la nueva de Adelante Andalucía) se comprobaron con norm() de verify_quotes.py, fragmento a fragmento con la partición de build_fase1.py, contra el texto de cada página: todas literales, en la página declarada y con 60 palabras o menos.\n\n(3) Declaraciones. Se abrieron todas las URL de campaña (Telecinco, Diari de Tarragona ×2, Infobae ×3, Press Digital ×2, Ara, OKDiario Navarra) y las copias locales con sha256 (nota de UPN de 27-may-2026, nota de MÉS de 19-nov-2025, DS nº 206). Autor, cargo, fecha, formato y literalidad comprobados; todas son de líderes del propio partido, en primera persona y desde el 1-nov-2025.\n\n(4) Criterios aplicados de forma uniforme. q37: +1 cuando el programa liga más impuestos (generales, no un tributo finalista) con mejores servicios o prestaciones, o fija un objetivo de más recaudación total; null cuando solo hace más progresivos los impuestos; −1 rebaja fiscal sin aceptar recortes; −2 rebaja compensada expresamente con recortes de gasto. q39: el tope ceñido a zonas tensionadas es +1 (falta un componente de la afirmación sin contradecirlo, criterio de g21). q48: defender o celebrar la ley sin hablar de derogarla es −1; ±2 solo con propuesta o rechazo expreso de la derogación.\n\nResultado: 3 valores corregidos y 3 citas o notas corregidas, aplicados en codificacion_g22.json; el resto, confirmado. python3 -I pipeline/build_fase1.py pasa con g22 incluido.",
+ "cambios": [
+  {
+   "partido": "upn",
+   "pregunta": "q37",
+   "antes": null,
+   "despues": -1,
+   "motivo": "Leticia San Martín, cabeza de lista de UPN al Congreso (10-nov-2026, OKDiario Navarra, cita entrecomillada): «Se pueden bajar los impuestos, pagar menos impuestos y tener mejores servicios públicos». Niega la disyuntiva y opta por pagar menos sin aceptar recortes: −1, como el PP."
+  },
+  {
+   "partido": "adelante_andalucia",
+   "pregunta": "q37",
+   "antes": null,
+   "despues": 1,
+   "motivo": "Propuesta 298 (p. 66): renta básica universal «financiada con la reforma fiscal» del apartado 2.1 (más IRPF a rentas altas, impuesto a la riqueza, impuestos a banca y eléctricas). Es el vínculo más impuestos → más prestaciones que da el +1 al PSOE (compromiso 127) y al Frente Amplio."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q38",
+   "antes": 1,
+   "despues": 2,
+   "motivo": "El autogobierno es uno de los cinco bloques del programa (p. 15): fortalecer el autogobierno, desarrollar «al máximo» las competencias del Estatuto y cogestionar los aeropuertos. Completar las competencias pendientes es más que hoy; el PNV tiene +2 por lo mismo."
+  }
+ ],
+ "correcciones_de_campos": [
+  {
+   "partido": "psoe",
+   "pregunta": "q48",
+   "campo": "cita, nota",
+   "motivo": "APLICADA. La cita del codificador incluía «normalización, recuperación y reconstrucción»; el literal de la transcripción de Telecinco es «normalización y reconstrucción». Corregida; el valor no cambia."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q48",
+   "campo": "cita, nota",
+   "motivo": "APLICADA. «[derogarán] a través de una ley orgánica, la ley de amnistía» pasa a la frase literal de la crónica, «a pesar de insistir en que derogarán \"a través de una ley orgánica, la ley de amnistía\"», para que se vea qué palabras son de Garriga y cuáles del periodista. El valor no cambia."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q37",
+   "campo": "nota",
+   "motivo": "APLICADA. La nota del codificador decía «no lo liga expresamente a los servicios: +1», contra su propio criterio; ahora explica que el +1 se debe al objetivo expreso de más recaudación total («cerrar la brecha de ingresos sobre el PIB respecto a la media europea»)."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q48",
+   "campo": "nota",
+   "motivo": "APLICADA. Se añaden la otra frase de Junqueras y la comprobación de que ninguna crónica le atribuye la palabra «amnistía» entre comillas. El valor no cambia."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q38",
+   "campo": "cita",
+   "motivo": "APLICADA con el cambio de valor: se añade el segundo fragmento literal de la p. 15 («Consideramos que Canarias debe desarrollar al máximo las competencias contempladas en su Estatuto»)."
+  },
+  {
+   "partido": "—",
+   "pregunta": "—",
+   "campo": "fuentes",
+   "motivo": "APLICADA. Se añade la URL de OKDiario Navarra (upn/q37)."
+  }
+ ],
+ "posiciones": [
+  {
+   "partido": "pp",
+   "pregunta": "q37",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (p. 60, apartado 4.4, con el rótulo de la p. 60; el rótulo se repite en el índice de la p. 7). «Los españoles pagarán menos impuestos»: opción expresa por pagar menos, pero sin aceptar recortes de servicios (la rebaja se financia en parte con la lucha contra el fraude, medida 183). −1: la afirmación contrapone pagar menos «aunque haya que reducirlos», y el PP no acepta esa contrapartida; −2 queda para quien compensa la rebaja con recortes de gasto (Vox, SALF)."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q38",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (p. 16, medida 16). Defiende el reparto actual, el Estado ejercerá «por sí mismo» sus competencias y «estándares comunes» en lo transferido; la medida 59 (p. 29) descarta cesiones en Hacienda general, Seguridad Social o Defensa y evaluará «cualquier transferencia» por sus efectos sobre la igualdad. Contra más competencias y más divergencia, sin proponer recentralizar: −1."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q39",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal (p. 53, medida 145). Elimina las zonas tensionadas y el índice de precios porque traen «más intervención [...] y menos oferta»: rechazo expreso de cualquier tope de renta: −2."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q45",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Citas literales (p. 39, medida 96). Enseñanza en castellano en todas las etapas «en cumplimiento de las sentencias judiciales» (las del 25 %), con respeto a las cooficiales y sin cifras: en contra de suprimir el mínimo: −1."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q48",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 29, medida 60). «Derogaremos la Ley de Amnistía»: +2."
+  },
+  {
+   "partido": "upn",
+   "pregunta": "q37",
+   "veredicto": "corregido",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": -1,
+   "motivo": "CORREGIDA null → −1. Leticia San Martín, cabeza de lista de UPN al Congreso, 10-nov-2026 (OKDiario Navarra, cita entrecomillada): «Se pueden bajar los impuestos, pagar menos impuestos y tener mejores servicios públicos». Niega la disyuntiva y opta por pagar menos sin aceptar recortes: −1, mismo listón que el PP. Es su propia dirigente, no el PP. La fuente ya estaba en lideres_2026-11-12/upn.json, descartada entonces solo para q05."
+  },
+  {
+   "partido": "upn",
+   "pregunta": "q38",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. El acuerdo UPN-PP (13-oct) defiende el Régimen Foral y el Convenio y apoya el Amejoramiento: mantener lo que hay, no más competencias. Sin programa."
+  },
+  {
+   "partido": "upn",
+   "pregunta": "q39",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Nota oficial de UPN (27-may-2026, copia local con sha256 comprobado): atribuye a «la limitación de precios» de las zonas tensionadas la caída del alquiler. Fuente aceptada para q01 en g5 (nota oficial dentro del plazo desde el 1-nov-2025). Si rechaza el tope donde ya existe, rechaza extenderlo a todos: −1, indirecta."
+  },
+  {
+   "partido": "upn",
+   "pregunta": "q45",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. Sin programa ni declaración encontrada."
+  },
+  {
+   "partido": "upn",
+   "pregunta": "q48",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. Sin programa; ni el acuerdo UPN-PP ni declaraciones encontradas de San Martín, Esparza o Ibarrola hablan de la ley de 2024 (búsqueda propia)."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q37",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 47). «una fiscalidad progresiva que garantiza los recursos necesarios para fortalecer y mejorar los servicios públicos», frente a «quienes pretenden romper la cohesión social recortando lo común»; compromiso 127 «Ingresos nuevos para derechos nuevos». Liga expresamente más ingresos fiscales con mejores servicios y prestaciones, cargados sobre patrimonios y rentas altas: +1."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q38",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 0,
+   "valor_final": 0,
+   "motivo": "Cita literal (p. 91). «el reto no es recentralizar ni fragmentar, sino hacer que el Estado autonómico funcione mejor»: posición intermedia explícita; los compromisos 382-387 son de cooperación (Senado territorial, Conferencia de Presidentes, ley de cooperación) sin nuevas transferencias. 0 = neutral explícito."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q39",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "+1 confirmado (duda del codificador). Compromisos 62-63 (pp. 30-31): congelar temporalmente las rentas por encima de los índices «en los mercados tensionados» y que el Ministerio publique el mapa de zonas. Apoya el precio máximo legal pero solo en zonas tensionadas: falta un componente de la afirmación («no solo en las zonas…») sin contradecirlo, y ese caso es +1 en todo el grupo (Compromís, Frente Amplio, Ara Més, EH Bildu) y en el criterio de g21. Null sería incoherente con ellos; −1 exigiría que rechazara el tope general, y no lo hace."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q45",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. Solo lenguas cooficiales en las instituciones (385) y su promoción exterior (484-485); «vehicular» no aparece."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q48",
+   "veredicto": "ok_con_correccion_de_campo",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Valor confirmado; cita corregida. Telecinco (16-nov, bloque de las 21:22): el literal es «Hice de la necesidad virtud. Necesidad en el sentido de que necesitábamos sacar adelante un gobierno que continuara con la labor de normalización y reconstrucción de la convivencia en Cataluña, cosa que hemos culminado» (el codificador añadía «recuperación,»). Defiende la ley: −1, indirecta."
+  },
+  {
+   "partido": "psc",
+   "pregunta": "q37",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Programa del PSOE asumido (decisión del 15-nov): misma cita, página y valor. El manifiesto del PSC («Per tenir bons serveis públics calen recursos suficients i estables», «fiscalitat justa») va en el mismo sentido y no lo contradice: +1."
+  },
+  {
+   "partido": "psc",
+   "pregunta": "q38",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 0,
+   "valor_final": 0,
+   "motivo": "0 confirmado (duda del codificador). El programa del PSOE asumido trata la cuestión con un 0 explícito y, por la regla de precedencia, va primero. El manifiesto del PSC (pp. 4-5) no lo contradice: «més autogovern» es el título de un apartado que enumera lo ya hecho (catalán en el Congreso, Rodalies «ha començat», financiación), y define el federalismo con «cooperar serveix per garantir drets comuns» y autogobierno con «responsabilitat»; la única medida es culminar el traspaso de Rodalies, ya acordado. No es una petición inequívoca de más competencias aunque las normas diverjan."
+  },
+  {
+   "partido": "psc",
+   "pregunta": "q39",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Programa del PSOE asumido: +1 como el PSOE. El manifiesto del PSC (p. 3: prorrogar contratos, «frenant els increments abusius», «defensarem la regulació de les zones tensionades») coincide."
+  },
+  {
+   "partido": "psc",
+   "pregunta": "q45",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. Ni el programa asumido ni el manifiesto (que solo habla del catalán en las instituciones y en Europa) tratan la lengua de las clases."
+  },
+  {
+   "partido": "psc",
+   "pregunta": "q48",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Diari de Tarragona (1-nov): mensaje de Illa en X entre comillas, «Primero contra el catalán, ahora contra la amnistía: curiosa manera de entender Catalunya», en respuesta a la promesa de Feijóo de derogarla. Primer secretario del PSC: −1 (rechaza la derogación sin decir qué haría)."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q37",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Citas literales (pp. 7 y 25, medidas 2 y 43). Rebaja «masiva» de impuestos como segunda medida del programa y compensada expresamente con recortes de gasto de la Administración «hasta el mínimo imprescindible»: preferencia expresa y prioritaria por pagar menos reduciendo gasto. −2."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q38",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (p. 24, medida 42). «Lo que es legal en una región de España, lo es en toda España», y la medida 66 unifica currículo e inspección; la 25 garantiza servicios iguales «con independencia del lugar de España» en Educación, Sanidad, Seguridad y Justicia. Contra la divergencia de normas; el programa no propone expresamente quitar competencias: −1, como el PP y SALF."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q39",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (p. 19, medida 30). Derogar la Ley de Vivienda suprime la única limitación de rentas vigente; no habla expresamente de topes: −1."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q45",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Citas literales (p. 35, medida 66). «Se garantizará la educación en español en todo el territorio nacional», sin porcentaje ni mecanismo: −1."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q48",
+   "veredicto": "ok_con_correccion_de_campo",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Valor confirmado; cita reescrita (duda del codificador). Ara (1-ago-2026): «a pesar de insistir en que derogarán \"a través de una ley orgánica, la ley de amnistía\"». El fragmento entre comillas es de Garriga y el verbo del periodista, que resume lo que Garriga insiste en prometer en conversación con el diario: crónica que recoge sus palabras con atribución, no un resumen anónimo. Garriga es portavoz de Vox en el Parlament y su líder en Cataluña (líder regional). Dentro del plazo (desde el 1-nov-2025), con «marco». No hay en el programa ni en Abascal una frase literal mejor (Moncloa.com, 19-jul: solo «fuentes del partido»). +2."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q37",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 8, punto 4 de la introducción). «Los derechos se sostienen con justicia tributaria»: más esfuerzo tributario ligado expresamente a sostener derechos y servicios (p. 45: el impuesto a grandes patrimonios financia la Prestación Universal por Crianza), pero solo sobre grandes empresas y fortunas: +1."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q38",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Citas literales (pp. 140 y 39). «máximo desarrollo de los Estatutos» en clave federal y acomodar la voluntad de más autogobierno (p. 103), pero el Estado debe «evitar disparidades territoriales» con leyes básicas de mínimos: a favor con un matiz expreso sobre la segunda parte de la afirmación: +1."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q39",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Citas literales (pp. 7 y 13). Tope legal (25 % de la renta o SERPAVI) «en todas las zonas tensionadas», con declaración automática, y fuera de ellas solo límite a las subidas (p. 93): +1 (de +2 en q01, motivo_cambio correcto)."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q45",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 32). «garantizando la inmersión lingüística en catalán como lengua vehicular en Cataluña»: incompatible con un mínimo de castellano, solo para Cataluña y sin cifras: +1."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q48",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Infobae/EFE (19-nov): Colau, candidata a la Presidencia, «Aquellos que hoy quieran polemizar con la amnistía, ellos sabrán cuáles son sus intereses políticos», y que gracias a ella «hoy estamos mucho mejor»: −1, indirecta."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q37",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. Medidas 30-61: más impuestos a grandes empresas, rentas altas y fortunas, y rebaja del tipo mínimo del IRPF, sin ligar la recaudación general a servicios o prestaciones. Los únicos destinos expresos son de tributos finalistas (fiscalidad verde → movilidad y hogares vulnerables, pp. 19-20), una medida distinta. Mismo criterio que Compromís (aviación → ferrocarril)."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q38",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. Capítulo plurinacional (pp. 125-131): proceso constituyente, república plurinacional, Senado federal (medida 412); nada sobre traspasar competencias. En sanidad (p. 90) condiciona la autonomía fiscal a estándares mínimos, una medida sectorial."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q39",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 8, medida 1). Rebaja por ley del 40 % de todos los alquileres, vigentes y nuevos, en toda España: precio máximo general, primera medida: +2."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q45",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. Promoción de las lenguas cooficiales sin lengua vehicular ni porcentajes."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q48",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Press Digital (20-oct): Montero en X, «Por fin el Tribunal Supremo aplica la amnistía» y critica a los jueces que la incumplían: −1, indirecta."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q37",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. «Fiscalitat» (p. 17): deflactar el IRPF de rentas bajas, ampliar el Impuesto a las Grandes Fortunas, impuesto a oligopolios; el único destino expreso es finalista (privilegios fiscales de la aviación → ferrocarril). Las «regles fiscals» de la p. 52 son reglas de déficit, no impuestos."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q38",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 52, «Model d'Estat»). Avanzar en el autogobierno y en el traspaso de competencias (costas, puertos, aeropuertos, Rodalies, IMV, Inspección de Trabajo), con concierto económico (p. 50): expresa y en apartado propio: +2."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q39",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 5). Control de precios en zonas tensionadas declaradas por los ayuntamientos: +1. Micó (25-oct) dice lo mismo («regular los alquileres en las zonas tensionadas»)."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q45",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. «Drets lingüístics» (p. 38): Administración y justicia; ninguna mención a la escuela. La firma de la ley de plurilingüismo (nov-2025) es una iniciativa parlamentaria sin nota ni declaración propia."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q48",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. El programa solo deroga la amnistía de 1977 (p. 38), otra ley; sin declaración encontrada de Micó o Ibáñez sobre la de 2024."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q37",
+   "veredicto": "ok_con_correccion_de_campo",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 11, apartado 9). Valor confirmado con otro motivo: el programa fija como objetivo expreso «cerrar la brecha de ingresos sobre el PIB respecto a la media europea», es decir, más recaudación total, que es la magnitud de la pregunta del CIS; es el único programa con ese objetivo agregado. +1 (el esfuerzo recae sobre grandes empresas y patrimonios; deflacta el IRPF de rentas medias y bajas). Nota reescrita: la del codificador decía que no lo liga a servicios y aun así daba +1, contra su propio criterio."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q38",
+   "veredicto": "corregido",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 2,
+   "motivo": "CORREGIDA +1 → +2. Bloque 3 (p. 15), uno de los cinco bloques del programa: «el fortalecimiento de su autogobierno y el pleno desarrollo de las competencias reconocidas en nuestro Estatuto», «desarrollar al máximo las competencias» y cogestión de los aeropuertos; la p. 2 rechaza «con firmeza» el centralismo. Completar las competencias del Estatuto es más que hoy, y el PNV tiene +2 por lo mismo («Exigiremos todas las competencias pendientes»). Cita ampliada; ambos fragmentos literales en la p. 15."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q39",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Citas literales (p. 3). «el control de precios de venta y alquiler» e intervención del mercado «para impedir las subidas abusivas», sin ceñirlo a zonas pero sin hablar de precio máximo legal: +1 (g21 dio +1 a q01 con la misma cita)."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q45",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado (sin lengua cooficial; programa sin referencias)."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q48",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. Programa sin referencias."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q37",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. Medidas fiscales sectoriales (vivienda, turismo, embarcaciones de lujo, pp. 4-5) y financiación singular con plena capacidad fiscal (medida 67, para «el manteniment i la millora de l'estat de benestar», pero es reparto entre administraciones, no más impuestos)."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q38",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 13, medida 119). Transferencia de justicia, prisiones e inmigración «amb vocació d'assumir el màxim sostre competencial»: expresa: +2."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q39",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 4, medida 25). Tope legal del 25 % de la renta, pero «a zones tensionades»: +1 (de +2 en q01, motivo_cambio correcto)."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q45",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Nota oficial de MÉS per Mallorca (19-nov-2025, dentro del plazo; copia local con sha256 comprobado): la ley que registra establece que la lengua propia «serà normalment vehicular». El programa no trata la escuela. Fuente ya aceptada para q12 en g5. +1, indirecta."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q48",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Press Digital (17-jul-2026, dentro del plazo): Gomila, «La justicia española ya no tiene ningún argumento para seguir bloqueando la amnistía» y «Ahora toca aplicar la ley sin mayores excusas». Dirigente de MÉS per Mallorca y cabeza de lista de Ara Més: −1, indirecta."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q37",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. «Catalunya necessita els recursos que genera per poder oferir els serveis públics» (p. 11) trata de la financiación autonómica, no del nivel de impuestos; las medidas 70-84 (IVA social, fiscalidad ambiental hacia la media europea, grandes corporaciones) no ligan la recaudación general a servicios."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q38",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 14, apartado F «Més sobirania i competències»). «assumir plenament totes les competències», con traspasos concretos: expresa y prioritaria: +2."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q39",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. Pla de xoc (pp. 18-20): LAU catalana por el art. 150.1, parque público, fiscalidad y «millorar la regulació dels arrendaments» (medida 62), sin topes de precio."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q45",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Citas literales (pp. 10-11, medidas 16-17). Modificar la ley estatal para impedir «la imposició de percentatges lingüístics als centres»: rechazo expreso y prioritario de cualquier mínimo: +2."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q48",
+   "veredicto": "ok_con_correccion_de_campo",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Valor confirmado (duda del codificador). Diari de Tarragona/ACN (20-oct): Junqueras, presidente de ERC, el día en que el Supremo le aplica la amnistía: «Hoy es un día de victoria, es un día de celebración, después de nueve años de represión absolutamente injusta». La palabra «amnistía» no está entre comillas en ninguna crónica (comprobado también en Mundiario, 21-oct, y Demócrata, 23-oct), pero son sus palabras y el objeto de la celebración es inequívoco por la ocasión y el lugar. Celebrar la aplicación de la ley es contrario a derogarla: −1, indirecta; no hay fuente mejor de ERC en el plazo (el programa no menciona la amnistía)."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q37",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Citas literales (pp. 67 y 68). «Cal abaixar la càrrega fiscal» y «Objectiu 2: Reduir la pressió fiscal» (deflactar y rebajar el IRPF, suprimir Sucesiones), con «pressió fiscal excessiva» como diagnóstico. Prefiere pagar menos sin hablar de reducir servicios (reclama más recursos vía concierto): −1."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q38",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 5, principio 3 de la presentación). «noves competències, més autogovern», con concierto, inmigración e infraestructuras: expresa y prioritaria: +2."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q39",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (p. 60, medida 2.2). Derogar los artículos de contención de precios y zonas tensionadas porque «redueixen l'oferta de lloguer»: objeción de fondo clara pero enmarcada en la invasión competencial: −1 (de −2 en q01, motivo_cambio correcto)."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q45",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 19). La escuela en catalán es «una línia vermella: cap llei ni cap tribunal no ha de decidir com s'ensenya»: rechazo expreso de un mínimo fijado por ley o tribunal: +2."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q48",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "−1 confirmado (duda del codificador). Cita literal (p. 7): exige que la ley «també s'ha de fer complir»; la presenta como logro propio (pp. 10, 12, 88). No habla de la derogación, y −2 exige rechazarla de forma expresa: es el mismo criterio que PSOE, PSC, Podemos, ERC o PNV, también defensores de la ley. Que sea su logro estrella da prioridad a la ley, no a un rechazo expreso de la derogación."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q37",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 14, apartado 1.8). Las grandes empresas deben aportar lo que deben porque sus beneficios «no revierten como deberían en la ciudadanía y los servicios públicos»: más impuestos (energéticas, banca, fortunas, distribuidoras) ligados expresamente a los servicios, solo para grandes empresas y fortunas: +1."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q38",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Citas literales (p. 24, apartado 2.2). Competencias pendientes del Estatuto y del Amejoramiento y «nuevas competencias plenas»: +2."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q39",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Citas literales (p. 5). Financiar a los ayuntamientos que declaren zonas tensionadas y tope estructural del 2 % a la actualización anual de todos los contratos; no un precio máximo general: +1."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q45",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. Apartado 2.4 (p. 25) y p. 21: derechos lingüísticos ante el Estado y tecnologías lingüísticas; nada sobre las clases."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q48",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Infobae/EFE (6-oct): Elejabarrieta, secretario de Relaciones y portavoz en el Senado, en vídeo del partido: «ha llegado el momento de poner fin a la era de la represión…» y que el aval del TC «traerá la aplicación total de la amnistía»: −1, indirecta."
+  },
+  {
+   "partido": "pnv",
+   "pregunta": "q37",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. Solo medidas puntuales (Impuesto Especial sobre la Electricidad al 0,5 %, IVA cultural, p. 16 y 21) y capacidad normativa foral (p. 39); nada sobre la disyuntiva."
+  },
+  {
+   "partido": "pnv",
+   "pregunta": "q38",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 38, compromiso 5.1). «Exigiremos todas las competencias pendientes», compromiso principal del bloque de autogobierno: +2."
+  },
+  {
+   "partido": "pnv",
+   "pregunta": "q39",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. «Regular el alquiler y evitar abusos» (p. 8): contratos de temporada, pisos turísticos, especulación; sin topes de precio."
+  },
+  {
+   "partido": "pnv",
+   "pregunta": "q45",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. «educación inclusiva, plurilingüe» y preservar competencias (p. 10); sin porcentajes."
+  },
+  {
+   "partido": "pnv",
+   "pregunta": "q48",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Infobae/EFE (19-nov): Esteban, presidente del EBB, «¿Alguien cree que si no hubiera habido una ley de amnistía se hubiera normalizado la política en Cataluña…? Por supuesto que no»: −1, indirecta."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q37",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado, con duda (ver dudas). 4.1 «Por unha nova fiscalidade» (p. 43): más progresividad sin objetivo de recaudación ni destino. En pensiones (p. 19) pide sostener el sistema «con cargo aos orzamentos e aos impostos que gravan a riqueza» y sin tope de cotización: es la fuente de financiación de las pensiones existentes, no más impuestos para mejorar prestaciones; ante la duda, null."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q38",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Citas literales (pp. 4 y 15). Ampliar el autogobierno es uno de los cinco objetivos de la presentación; todas las competencias pendientes de empleo, educación (p. 34) y telecomunicaciones: +2."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q39",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 12). «Topar por lei os prezos dos alugueiros», sin limitarlo a zonas, y primera medida de vivienda del decálogo: +2."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q45",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Diario de Sesiones nº 206 (22-sep-2026, p. 84 del PDF; copia local comprobada). Rego: «evidentemente en nacións como Galiza a lingua vehicular debe ser a lingua propia de Galiza», tras lamentar («Digo infelizmente») que la LOMLOE no eliminara el español como lengua vehicular. Dentro del plazo, primera persona, portavoz y cabeza de lista. El programa (p. 34, «Un ensino público, galego») no lo contradice: +1."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q48",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. El programa deroga la amnistía de 1977 (p. 31), otra ley; sin frase literal sobre la de 2024 encontrada."
+  },
+  {
+   "partido": "cc",
+   "pregunta": "q37",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. Deducciones e incentivos fiscales puntuales (IRPF de La Palma, La Gomera y El Hierro, REF); ni rebaja general ni subida."
+  },
+  {
+   "partido": "cc",
+   "pregunta": "q38",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Citas literales (pp. 3 y 5). «Aspiramos al máximo autogobierno» y «más capacidad para decidir desde Canarias», con calendario de traspasos (medida 1): +2."
+  },
+  {
+   "partido": "cc",
+   "pregunta": "q39",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. Medidas 24-25 (p. 11): incentivos y «una regulación estatal estable que proteja a inquilinos y propietarios»; sin topes."
+  },
+  {
+   "partido": "cc",
+   "pregunta": "q45",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado (sin lengua cooficial)."
+  },
+  {
+   "partido": "cc",
+   "pregunta": "q48",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. Clavijo (25-oct) critica el cambio de posición de Sánchez, sin decir si derogaría la ley."
+  },
+  {
+   "partido": "adelante_andalucia",
+   "pregunta": "q37",
+   "veredicto": "corregido",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": 1,
+   "motivo": "CORREGIDA null → +1. Propuesta 298 (p. 66): renta básica universal «financiada con la reforma fiscal», que es la del apartado 2.1 (p. 58: IRPF con tipos «mucho más altos» desde 100.000 euros, impuesto sobre la riqueza, impuestos permanentes a banca y eléctricas). Liga más impuestos con una prestación nueva, como el compromiso 127 del PSOE y la Prestación por Crianza del Frente Amplio: +1 según el propio criterio del grupo. Cita literal comprobada."
+  },
+  {
+   "partido": "adelante_andalucia",
+   "pregunta": "q38",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 73, propuesta 345). «El máximo nivel de autonomía, competencias y financiación»; también entre sus 29 propuestas principales: +2."
+  },
+  {
+   "partido": "adelante_andalucia",
+   "pregunta": "q39",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 49, propuesta 167). «que ningún alquiler supere el 20 % de la renta media de la zona»: tope general, entre sus 29 propuestas: +2."
+  },
+  {
+   "partido": "adelante_andalucia",
+   "pregunta": "q45",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado (sin lengua cooficial)."
+  },
+  {
+   "partido": "adelante_andalucia",
+   "pregunta": "q48",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. Solo la Ley de Amnistía de 1977 (propuesta 567, p. 108)."
+  },
+  {
+   "partido": "salf",
+   "pregunta": "q37",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal (p. 16, cuadro «Cómo se paga»). Rebaja fiscal de unos 80.000 millones al año financiada con «un euro de ahorro certificado» por cada euro de rebaja, y supresión del IBI que los ayuntamientos «absorben con ahorro»: preferencia expresa y prioritaria por pagar menos reduciendo gasto: −2."
+  },
+  {
+   "partido": "salf",
+   "pregunta": "q38",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (p. 31). «Unidad de mercado real: lo que vale en una comunidad vale en todas», central de compras única y tarjeta sanitaria única (pp. 22-23), «sobrecoste autonómico» (p. 16): contra la divergencia sin proponer retirar competencias: −1."
+  },
+  {
+   "partido": "salf",
+   "pregunta": "q39",
+   "veredicto": "null_confirmado",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": null,
+   "motivo": "null confirmado. Capítulo I (pp. 5-7): suelo, licencias, IBI, fondos; nada sobre precios del alquiler."
+  },
+  {
+   "partido": "salf",
+   "pregunta": "q45",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Citas literales (p. 33, medida IX.2). «Castellano garantizado» figura entre los diez compromisos de la portada (p. 4) y es exigible por la familia con Alta Inspección que sanciona: rechazo expreso y prioritario: −2."
+  },
+  {
+   "partido": "salf",
+   "pregunta": "q48",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Citas literales (p. 26, medida VII.3; el salto intermedio es una columna lateral). Prohibir constitucionalmente las amnistías y tipificar su aprobación: rechazo de plano de las amnistías, pero no habla de derogar la de 2024 (medida distinta, a futuro): +1, indirecta."
+  }
+ ],
+ "resolucion_dudas_codificador": [
+  {
+   "duda": 1,
+   "tema": "psoe y psc q39: +1 o null",
+   "resolucion": "+1 (confirmado). Apoyan un precio máximo legal (congelar las rentas por encima del índice) solo en los mercados tensionados. La afirmación añade «no solo en las zonas con precios más altos»; cuando falta un componente sin que se contradiga, el criterio es +1 (g21), y así se han codificado en este mismo grupo Compromís, Frente Amplio, Ara Més y EH Bildu. Dejar al PSOE en null rompería esa coherencia; −1 exigiría que rechazara el tope general, y el programa no lo hace."
+  },
+  {
+   "duda": 2,
+   "tema": "psc q38: 0 del programa del PSOE o +1 por el «més autogovern» del manifiesto",
+   "resolucion": "0 (confirmado). Por la regla de precedencia, el programa asumido va primero, y trata la cuestión con un 0 explícito («ni recentralizar ni fragmentar»). Además, el manifiesto no lo contradice: «més autogovern i més benestar» es el título de un apartado que enumera lo ya conseguido, define el federalismo por la cooperación para «garantir drets comuns» y solo propone culminar el traspaso de Rodalies, ya acordado. No pide más competencias aunque las normas diverjan."
+  },
+  {
+   "duda": 3,
+   "tema": "vox q48: un portavoz regional citado en Ara, con el verbo del periodista",
+   "resolucion": "+2 (confirmado, con la cita reescrita). Garriga es portavoz de Vox en el Parlament y su líder en Cataluña: líder regional según el protocolo. La crónica de Ara recoge una conversación con él, atribuye expresamente la promesa («a pesar de insistir en que derogarán») y entrecomilla sus palabras («a través de una ley orgánica, la ley de amnistía»); es una «crónica que recoge sus palabras», no un resumen sin atribución. Es del 1-ago-2026 (dentro del plazo) y lleva «marco». Se buscó una fuente mejor: el programa no menciona la amnistía y la nota de Moncloa.com (19-jul) solo cita «fuentes del partido»."
+  },
+  {
+   "duda": 4,
+   "tema": "erc q48: la cita de Junqueras no contiene «amnistía»",
+   "resolucion": "−1 (confirmado). Ninguna crónica entrecomilla la palabra (Diari de Tarragona/ACN 20-oct, Mundiario 21-oct, Demócrata 23-oct), pero son sus palabras, dichas en la sede de ERC el día en que el Supremo le aplica la amnistía, y celebran precisamente eso. El objeto es inequívoco por la ocasión. El programa no menciona la amnistía y no se encontró otra fuente de ERC en el plazo."
+  },
+  {
+   "duda": 5,
+   "tema": "junts q48: −1 o −2",
+   "resolucion": "−1 (confirmado). El programa exige que la ley «també s'ha de fer complir» y la presenta como su logro, pero no habla de la derogación. ±2 exige proponer o rechazar de forma expresa la medida de la afirmación (derogar); todos los partidos que defienden la ley sin hablar de derogarla tienen −1, incluido el PSC, cuyo líder responde directamente a la promesa de Feijóo."
+  },
+  {
+   "duda": 6,
+   "tema": "q37: +1 solo si el programa liga más impuestos a los servicios; null si solo propone impuestos progresivos",
+   "resolucion": "Criterio confirmado, con dos ajustes de coherencia. (a) Adelante Andalucía cumplía el criterio (renta básica «financiada con la reforma fiscal») y estaba en null: pasa a +1. (b) UPC tenía +1 con una nota que decía que no lo ligaba a los servicios: el +1 se mantiene porque es el único programa con un objetivo expreso de más recaudación total, que es la magnitud de la pregunta del CIS. Los destinos finalistas de un tributo concreto (Podemos: fiscalidad verde → movilidad; Compromís: aviación → ferrocarril) son medidas distintas y no cuentan. El BNG queda en null con duda (ver dudas)."
+  }
+ ],
+ "celdas_no_tocadas": [
+  "Las 58 celdas con valor confirmado (4 con la cita o la nota corregidas) y las 29 null confirmadas, cada una con su motivo en «posiciones»."
+ ],
+ "posiciones_no_recogidas": "Se encontraron dos posiciones que el codificador no recogió: upn/q37 (San Martín, 10-nov) y adelante_andalucia/q37 (propuesta 298). Ninguna otra: las más cercanas son la financiación de pensiones del BNG con impuestos sobre la riqueza (q37, duda 1), la autonomía fiscal condicionada de Podemos (q38, sanidad), el acuerdo UPN-PP sobre el Régimen Foral (q38, mantener lo que hay), la ley de plurilingüismo que firmaron Compromís, EH Bildu, PNV y BNG en nov-2025 (q45; iniciativa parlamentaria, sin nota propia) y las derogaciones de la amnistía de 1977 (Compromís, BNG, Adelante, Podemos; otra ley).",
+ "recuento": {
+  "antes": {
+   "con_valor": 59,
+   "null": 31
+  },
+  "despues": {
+   "con_valor": 61,
+   "null": 29
+  },
+  "valores_finales": {
+   "+2": 17,
+   "+1": 18,
+   "0": 2,
+   "−1": 20,
+   "−2": 4,
+   "null": 29
+  },
+  "tabla_final": {
+   "pp": {
+    "q37": "−1",
+    "q38": "−1",
+    "q39": "−2",
+    "q45": "−1",
+    "q48": "+2"
+   },
+   "upn": {
+    "q37": "−1",
+    "q38": "null",
+    "q39": "−1",
+    "q45": "null",
+    "q48": "null"
+   },
+   "psoe": {
+    "q37": "+1",
+    "q38": "0",
+    "q39": "+1",
+    "q45": "null",
+    "q48": "−1"
+   },
+   "psc": {
+    "q37": "+1",
+    "q38": "0",
+    "q39": "+1",
+    "q45": "null",
+    "q48": "−1"
+   },
+   "vox": {
+    "q37": "−2",
+    "q38": "−1",
+    "q39": "−1",
+    "q45": "−1",
+    "q48": "+2"
+   },
+   "frente_amplio": {
+    "q37": "+1",
+    "q38": "+1",
+    "q39": "+1",
+    "q45": "+1",
+    "q48": "−1"
+   },
+   "podemos": {
+    "q37": "null",
+    "q38": "null",
+    "q39": "+2",
+    "q45": "null",
+    "q48": "−1"
+   },
+   "compromis": {
+    "q37": "null",
+    "q38": "+2",
+    "q39": "+1",
+    "q45": "null",
+    "q48": "null"
+   },
+   "upc": {
+    "q37": "+1",
+    "q38": "+2",
+    "q39": "+1",
+    "q45": "null",
+    "q48": "null"
+   },
+   "ara_mes_fa": {
+    "q37": "null",
+    "q38": "+2",
+    "q39": "+1",
+    "q45": "+1",
+    "q48": "−1"
+   },
+   "erc": {
+    "q37": "null",
+    "q38": "+2",
+    "q39": "null",
+    "q45": "+2",
+    "q48": "−1"
+   },
+   "junts": {
+    "q37": "−1",
+    "q38": "+2",
+    "q39": "−1",
+    "q45": "+2",
+    "q48": "−1"
+   },
+   "eh_bildu": {
+    "q37": "+1",
+    "q38": "+2",
+    "q39": "+1",
+    "q45": "null",
+    "q48": "−1"
+   },
+   "pnv": {
+    "q37": "null",
+    "q38": "+2",
+    "q39": "null",
+    "q45": "null",
+    "q48": "−1"
+   },
+   "bng": {
+    "q37": "null",
+    "q38": "+2",
+    "q39": "+2",
+    "q45": "+1",
+    "q48": "null"
+   },
+   "cc": {
+    "q37": "null",
+    "q38": "+2",
+    "q39": "null",
+    "q45": "null",
+    "q48": "null"
+   },
+   "adelante_andalucia": {
+    "q37": "+1",
+    "q38": "+2",
+    "q39": "+2",
+    "q45": "null",
+    "q48": "null"
+   },
+   "salf": {
+    "q37": "−2",
+    "q38": "−1",
+    "q39": "null",
+    "q45": "−2",
+    "q48": "+1"
+   }
+  },
+  "build": "python3 -I pipeline/build_fase1.py con este verificacion_g22.json («aprobado»: true): exit 0, las 48 citas de programa pasan la comprobación literal y las 13 declaraciones de campaña tienen URL, fecha y autor; en fase1.json las 90 celdas de q37, q38, q39, q45 y q48 son las de codificacion_g22.json."
+ },
+ "dudas": [
+  "bng/q37 (null): alternativa +1 si el editor considera que sostener las pensiones «con cargo aos orzamentos e aos impostos que gravan a riqueza» y sin tope de cotización (p. 19) liga más impuestos con prestaciones, como la renta básica de Adelante Andalucía. El verificador no lo recomienda: se refiere a la fuente de financiación de las pensiones existentes, no a más impuestos para mejorarlas.",
+  "upc/q37 (+1): alternativa null si el editor exige para q37 un vínculo expreso con servicios o prestaciones y no basta el objetivo de más recaudación total. El verificador no lo recomienda: subir los ingresos sobre el PIB es pagar más impuestos en conjunto, la magnitud misma de la pregunta del CIS.",
+  "vox/q48 (+2): alternativa null si el editor exige que el verbo de la promesa esté entre comillas. El verificador no lo recomienda: la crónica atribuye expresamente la promesa a Garriga y entrecomilla sus palabras.",
+  "Afirmaciones en las que solo algunos partidos tienen fuente de campaña indirecta (q48): las −1 se basan en defender o celebrar la ley; si el editor prefiere exigir una mención a la derogación, PSOE, Frente Amplio, Podemos, Ara Més, ERC, EH Bildu y PNV pasarían a null y el PSC (Illa responde a la promesa de derogarla) quedaría como única −1 de campaña."
+ ],
+ "nota_aprobacion": "20-nov: las 3 correcciones de valor y las 4 de campo están aplicadas en codificacion_g22.json; todas las celdas que quedan son correctas, así que el grupo queda aprobado. python3 -I pipeline/build_fase1.py termina sin errores (exit 0) con g22 incluido y las 90 celdas de fase1.json coinciden con la codificación (g9 y g23 siguen omitidos, sin verificación aprobada)."
+}

@@ -405,3 +405,12 @@ h1[tabindex='-1']:focus, h2[tabindex='-1']:focus, main[tabindex='-1']:focus { ou
 .no-lo-se { width: 100%; margin-top: 8px; padding: 11px 6px; border: 1px dashed var(--line); border-radius: var(--r-s); background: transparent; color: var(--ink-2); font-size: 0.92rem; font-weight: 600; }
 .no-lo-se.on { border-style: solid; border-color: var(--ink-3); color: var(--ink); }
 @media (hover: hover) { .no-lo-se:hover { border-color: var(--ink-3); } }
+
+/* Paso 1: lo que votaron en el Congreso, conmutador de cálculo y coherencia de respuestas (20-nov) */
+.voto-congreso { margin-top: 8px; padding: 8px 10px; border-left: 3px solid var(--line); background: var(--paper-2); border-radius: 0 var(--r-s) var(--r-s) 0; font-size: 0.9rem; }
+.pill.aviso { background: var(--mid-soft); color: var(--mid); white-space: normal; }
+.voto-aviso { margin: 6px 0 0; font-size: 0.85rem; color: var(--mid); }
+.conmutador { gap: 6px; flex-wrap: wrap; }
+.escala-mini { gap: 4px; flex-wrap: wrap; }
+.coherencia { border-left: 4px solid var(--mid); }
+.par-coherencia + .par-coherencia { border-top: 1px solid var(--line); padding-top: 10px; margin-top: 6px; }

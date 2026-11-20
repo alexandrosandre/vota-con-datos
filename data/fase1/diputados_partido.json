@@ -1,0 +1,63 @@
+{
+ "nota": "A qué partido de la web cuenta el voto de cada diputado de la XV Legislatura. Regla general: formación electoral (lista oficial de diputados del Congreso, data/sources/congreso/diputados/) y grupo en el momento de la votación («formación|grupo»). Excepciones nominales en por_diputado, con fuente; partido null = no cuenta para ningún partido de la web. Un diputado que deja el grupo de su formación sin asignación nominal no cuenta (p. ej., José Luis Ábalos, PSOE, en el Mixto desde febrero de 2024, o Francisco Javier Ortega Smith, Vox, en el Mixto desde el 17-7-2026). La asignación nominal no admite fechas: Ortega Smith, expulsado de Vox en febrero-marzo de 2026, siguió en el Grupo Vox hasta el 17-7-2026, y la regla cuenta para Vox sus votos de ese periodo. Frente Amplio: diputados de la lista de SUMAR en el Grupo Plurinacional SUMAR, que pertenecen a formaciones firmantes del Frente Amplio (Movimiento Sumar, IU y EUPV, Catalunya en Comú, Más Madrid, Chunta Aragonesista) o son independientes de esa lista (Francisco Sierra), salvo los asignados nominalmente a Podemos, Compromís o Ara Més (MÉS per Mallorca); revisados uno a uno los 36 diputados que ocuparon escaño por la lista de SUMAR, ninguno es de BNG ni de otro partido ajeno a esa lista ni dejó su partido sin dejar el grupo. Las demás entradas nominales corrigen nombres o grupos que la lista oficial no casa con el voto.",
+ "por_formacion_y_grupo": {
+  "PP|GP": "pp",
+  "UPN|GMx": "upn",
+  "PSOE|GS": "psoe",
+  "PSIB-PSOE|GS": "psoe",
+  "PSE-EE (PSOE)|GS": "psoe",
+  "PSN-PSOE|GS": "psoe",
+  "PsdeG-PSOE|GS": "psoe",
+  "PSC-PSOE|GS": "psc",
+  "VOX|GVOX": "vox",
+  "SUMAR|GSUMAR": "frente_amplio",
+  "ERC|GR": "erc",
+  "JxCAT-JUNTS|GJxCAT": "junts",
+  "EH Bildu|GEH Bildu": "eh_bildu",
+  "EAJ-PNV|GV (EAJ-PNV)": "pnv",
+  "BNG|GMx": "bng",
+  "CCa|GMx": "cc"
+ },
+ "por_diputado": {
+  "Belarra Urteaga, Ione": {
+   "partido": "podemos",
+   "fuente": "Secretaria general de Podemos; pasó con los demás diputados de Podemos del Grupo Plurinacional SUMAR al Mixto el 5-12-2023. Biografía oficial del Congreso («Consejo Ciudadano Estatal Podemos», https://www.congreso.es/es/opendata/diputados); https://es.ara.cat/politica/son-cinco-diputados_1_4878172.html"
+  },
+  "Sánchez Serna, Javier": {
+   "partido": "podemos",
+   "fuente": "Biografía oficial del Congreso: «Miembro del Consejo Ciudadano Estatal de Podemos» (https://www.congreso.es/es/opendata/diputados); en el Mixto con Podemos desde diciembre de 2023: https://es.ara.cat/politica/son-cinco-diputados_1_4878172.html ; portavoz de Podemos en 2025: https://theobjective.com/espana/politica/2025-04-01/podemos-proyecto-propio-sumar/"
+  },
+  "Santana Perera, Noemí": {
+   "partido": "podemos",
+   "fuente": "Diputada de Podemos (dirige Podemos Canarias), en el Mixto con Podemos desde diciembre de 2023: https://es.ara.cat/politica/son-cinco-diputados_1_4878172.html ; https://rtvc.es/podemos-nueva-canarias-iu-sumar-juntos-29n-bajo-nombre-unidad-pueblo-canario-15-octubre-2026/"
+  },
+  "Velarde Gómez, Martina": {
+   "partido": "podemos",
+   "fuente": "Diputada de Podemos (excoordinadora de Podemos Andalucía), en el Mixto con Podemos desde diciembre de 2023: https://es.ara.cat/politica/son-cinco-diputados_1_4878172.html ; https://www.eldiario.es/1_cfab9a"
+  },
+  "Verstrynge Revuelta, Lilith": {
+   "partido": "podemos",
+   "fuente": "Secretaria de Organización de Podemos (biografía oficial del Congreso, https://www.congreso.es/es/opendata/diputados); renunció al escaño y a sus cargos en Podemos el 26-1-2024: https://www.ultimahora.es/noticias/nacional/2024/01/26/2093929/podemos-lilith-verstrynge-deja-cargos-renuncia-escano-congreso.html"
+  },
+  "Micó Micó, Àgueda": {
+   "partido": "compromis",
+   "fuente": "Diputada de Més-Compromís (biografía oficial del Congreso: «Portavoz de Compromís desde el 2016», https://www.congreso.es/es/opendata/diputados); pasó del Grupo Plurinacional SUMAR al Mixto en julio de 2025 (BOCG D-372): https://www.vilaweb.cat/noticies/mes-compromis-trenca-sumar-agueda-mico-grup-mixt/ ; https://www.ultimahora.es/noticias/nacional/2025/06/24/2415685/diputado-compromis-pasa-grupo-mixto-otro-sigue-sumar.html"
+  },
+  "Ibáñez Mezquita, Alberto": {
+   "partido": "compromis",
+   "fuente": "Diputado de Compromís (Iniciativa) que siguió en el Grupo Plurinacional SUMAR (biografía oficial del Congreso: «Portavoz de Compromís e Iniciativa», https://www.congreso.es/es/opendata/diputados): https://www.ultimahora.es/noticias/nacional/2025/06/24/2415685/diputado-compromis-pasa-grupo-mixto-otro-sigue-sumar.html"
+  },
+  "Vidal Matas, Vicenç": {
+   "partido": "ara_mes_fa",
+   "fuente": "Diputado de MÉS per Mallorca (Ara Més) en el Grupo Plurinacional SUMAR; MÉS per Mallorca votó en noviembre de 2025 seguir en ese grupo: https://www.eldebate.com/espana/baleares/20251117/mes-socio-obediente-sanchez-aferra-sumar-pese-cerco-corrupcion-psoe_355641.html ; https://www.menorca.info/menorca/local/2025/07/05/2423595/mes-per-menorca-avala-votos-diputado-vicenc-vidal-abandone-sumar.html"
+  },
+  "Cuesta Rodríguez, María del Socorro": {
+   "partido": "pp",
+   "fuente": "Diputada del PP por Segovia en el Grupo Popular; la lista oficial la llama «Cuesta Rodríguez, María» (https://www.congreso.es/es/opendata/diputados) y el voto nominal «Cuesta Rodríguez, María del Socorro» (votaciones de septiembre de 2023 a diciembre de 2025), por lo que la regla general no la encontraba."
+  },
+  "Conesa Coma, Ignasi": {
+   "partido": "psc",
+   "fuente": "Diputado del PSC por Barcelona en el Grupo Socialista toda la legislatura (https://www.congreso.es/es/opendata/diputados); en las dos votaciones del 19-9-2023 el voto nominal no trae grupo."
+  }
+ }
+}

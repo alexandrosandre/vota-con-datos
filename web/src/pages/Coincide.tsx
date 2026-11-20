@@ -4,7 +4,8 @@ import { actualizar, estado, ir, ruta } from '../store';
 import { fase1, fmt, partido, partidos } from '../data';
 import { afinidad, AVISO_COBERTURA, UMBRAL_EMPATE, vigentes, type Valor } from '../engine/match';
 import { CabeceraPaso, Siguiente } from '../brand';
-import type { Pregunta } from '../types';
+import type { Pregunta, VotacionCongreso } from '../types';
+import { contradice, incoherencias, posicionesConVoto, votoDe } from '../engine/congreso';
 import { Compartir, enlace } from '../compartir';
 import { paso1 } from '../paso1';
 import { conPesoPorTema, GRUPOS, grupoDe } from '../temasImportantes';
@@ -212,6 +213,35 @@ function Tarjeta({ q, i, n, onNext, onPrev }: { q: Pregunta; i: number; n: numbe
   );
 }
 
+/** El voto tal como se emitió sobre lo que se votaba (que puede ir en contra de la afirmación, p. ej., una enmienda de devolución). */
+const VOTO: Record<string, string> = { Sí: 'Votó sí', No: 'Votó no', Abstención: 'Se abstuvo', dividido: 'Votó dividido' };
+
+/** Lo que votó el partido en el Congreso sobre esta medida (XV Legislatura), con enlace a la votación oficial. */
+function VotoCongreso({ vs, partidoId, posicion }: { vs: VotacionCongreso[] | undefined; partidoId: string; posicion: Valor | null | undefined }) {
+  const suyas = (vs ?? []).filter((v) => v.partidos[partidoId]);
+  if (!suyas.length) return null;
+  return (
+    <div class="voto-congreso">
+      <span class="fuente-tag">En el Congreso (2023-2026)</span>
+      {suyas.map((v) => {
+        const { sentido: s, voto } = v.partidos[partidoId];
+        const choca = v.relacion === 'misma' && contradice(posicion, s);
+        return (
+          <p key={v.id} style={{ margin: '4px 0' }}>
+            {choca && <span class="pill aviso">Votó lo contrario de lo que propone</span>} <strong>{VOTO[voto] ?? voto}</strong> · {v.objeto} ({fmt.fecha(v.fecha)}
+            {v.totales ? `; salió ${v.totales.afavor} a favor, ${v.totales.enContra} en contra y ${v.totales.abstenciones} ${v.totales.abstenciones === 1 ? 'abstención' : 'abstenciones'}` : ''}).{' '}
+            <a href={v.ficha ?? v.url} target="_blank" rel="noopener">
+              Ver la votación
+            </a>
+            {v.relacion === 'parecida' && <span class="muted"> · Medida parecida, no la misma: no cuenta en la comparación.</span>}
+            {v.nota && <span class="muted"> · {v.nota}</span>}
+          </p>
+        );
+      })}
+    </div>
+  );
+}
+
 function Detalle({ partidoId }: { partidoId: string }) {
   const d = fase1.value!;
   const e = estado.value;
@@ -280,6 +310,7 @@ function Detalle({ partidoId }: { partidoId: string }) {
             </>
           )}
           {p.nota && <p class="muted">{p.nota}</p>}
+          <VotoCongreso vs={d.votaciones?.[q.id]} partidoId={partidoId} posicion={p.valor} />
         </div>
       ))}
     </div>
@@ -350,9 +381,23 @@ function Resultados() {
     return out;
   }, [d]);
   const ids = d.preguntas.map((q) => q.id);
+  const hayVotos = Object.keys(d.votaciones ?? {}).length > 0;
+  // Por defecto, lo que proponen (programa y campaña); a petición, contando lo que votaron en el Congreso (engine/congreso.ts).
+  const [conVoto, setConVoto] = useState(false);
+  const posCalculo = useMemo(() => (conVoto ? posicionesConVoto(posiciones, d.votaciones) : posiciones), [conVoto, posiciones, d]);
   // Partidos de los que no conocemos ninguna posición: van en un aviso aparte, no en la lista.
   const sinPosiciones = (partidos.value ?? []).filter((p) => !Object.values(d.posiciones[p.id] ?? {}).some((x) => x.valor !== null));
-  const res = afinidad(conPesoPorTema(e.respuestas, d.preguntas, e.temasImportantes), posiciones, ids).filter((r) => !sinPosiciones.some((p) => p.id === r.partido));
+  const res = afinidad(conPesoPorTema(e.respuestas, d.preguntas, e.temasImportantes), posCalculo, ids).filter((r) => !sinPosiciones.some((p) => p.id === r.partido));
+  /** Temas en que coincides con lo que propone el partido pero votó lo contrario en el Congreso. */
+  const votoContrario = (pid: string) =>
+    d.preguntas.filter((q) => {
+      const u = e.respuestas[q.id]?.valor;
+      const pv = posiciones[pid]?.[q.id];
+      const r = votoDe(pid, d.votaciones?.[q.id]);
+      return u !== null && u !== undefined && u !== 0 && pv !== null && pv !== undefined && u * pv > 0 && !!r && contradice(pv, r.sentido);
+    });
+  const avisos = incoherencias(vigentes(e.respuestas, ids), d.pares_coherencia);
+  const textoDe = (id: string) => d.preguntas.find((q) => q.id === id)?.texto ?? id;
   const respondidas = Object.values(vigentes(e.respuestas, ids)).filter((r) => r.valor !== null).length;
   const neutrales = Object.values(vigentes(e.respuestas, ids)).filter((r) => r.valor === 0).length;
   const [abierto, setAbierto] = useState<string | null>(null);
@@ -377,6 +422,38 @@ function Resultados() {
 
   return (
     <div class="stack">
+      {avisos.length > 0 && (
+        <section class="card coherencia" aria-labelledby="coherencia-t">
+          <h2 class="h3" id="coherencia-t" style={{ margin: '0 0 4px' }}>
+            Revisa {avisos.length === 1 ? 'estas dos respuestas' : 'estas respuestas'}
+          </h2>
+          <p class="muted" style={{ margin: '0 0 10px', fontSize: '0.9rem' }}>
+            Miden casi lo mismo y has respondido en sentidos opuestos. Puede ser lo que piensas; si no, cámbialo aquí y el resultado se recalcula.
+          </p>
+          {avisos.map((par) => (
+            <div key={par.a + par.b} class="par-coherencia">
+              <p class="muted" style={{ margin: '0 0 6px', fontSize: '0.88rem' }}>{par.explicacion}</p>
+              {[par.a, par.b].map((qid) => (
+                <div key={qid} style={{ marginBottom: 8 }}>
+                  <p style={{ margin: '0 0 4px' }}>{textoDe(qid)}</p>
+                  <div class="row escala-mini" role="group" aria-label={`Tu respuesta a: ${textoDe(qid)}`}>
+                    {ESCALA.map((o) => (
+                      <button
+                        key={o.v}
+                        class={`chip-btn${e.respuestas[qid]?.valor === o.v ? ' on' : ''}`}
+                        aria-pressed={e.respuestas[qid]?.valor === o.v}
+                        onClick={() => actualizar({ respuestas: { ...e.respuestas, [qid]: { ...e.respuestas[qid], valor: o.v } } })}
+                      >
+                        {o.t}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ))}
+        </section>
+      )}
       {primeros.length > 0 && (
         <section class="card siguientes-paso1">
           <h2 class="h3" style={{ margin: 0 }}>
@@ -422,6 +499,22 @@ function Resultados() {
         cita y fuente.
         {neutrales * 2 > respondidas && (
           <p style={{ margin: '8px 0 0' }}>La mayoría de tus respuestas son Neutral, así que el resultado apenas distingue entre partidos.</p>
+        )}
+        {hayVotos && (
+          <div class="row conmutador" role="group" aria-label="Qué cuenta en tu afinidad" style={{ marginTop: 10 }}>
+            <button class={`chip-btn${!conVoto ? ' on' : ''}`} aria-pressed={!conVoto} onClick={() => setConVoto(false)}>
+              Lo que proponen
+            </button>
+            <button class={`chip-btn${conVoto ? ' on' : ''}`} aria-pressed={conVoto} onClick={() => setConVoto(true)}>
+              Contando lo que votaron en el Congreso
+            </button>
+          </div>
+        )}
+        {conVoto && (
+          <p style={{ margin: '8px 0 0', fontSize: '0.9rem' }}>
+            Donde un partido votó en el Congreso (2023-2026) la misma medida en sentido contrario a lo que propone, o sin haberse pronunciado, cuenta su voto: a favor, en contra o
+            abstención. Los partidos que no tenían diputados no cambian.
+          </p>
         )}
         <details class="desplegable" style={{ marginTop: 8 }}>
           <summary>Cómo se calcula</summary>
@@ -470,6 +563,13 @@ function Resultados() {
                         )}
                         {p?.ambito === 'autonómico' && <span class="pill">solo en {p.comunidades?.join(', ')}</span>}
                       </div>
+                      {!conVoto && votoContrario(r.partido).length > 0 && (
+                        <p class="voto-aviso">
+                          En {votoContrario(r.partido).length === 1 ? '1 tema' : `${votoContrario(r.partido).length} temas`} en que coincidís con lo que propone,{' '}
+                          {p?.articulo ? `${p.articulo} ` : ''}
+                          {p?.siglas ?? r.partido} votó lo contrario en el Congreso: {votoContrario(r.partido).map((q) => `«${q.texto.length > 60 ? q.texto.slice(0, 57) + '…' : q.texto}»`).join('; ')}.
+                        </p>
+                      )}
                       {r.afinidad !== null && (
                         <div class="bar" style={{ marginTop: 8, opacity: r.comparable ? 1 : 0.55 }}>
                           <i style={{ width: `${r.afinidad * 100}%` }} />

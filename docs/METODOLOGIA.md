@@ -106,6 +106,26 @@ programa no literales, declaraciones sin autor, URL o fecha, y las de precampañ
 normalizada; partidos comparables si cobertura ≥ 50 %; con 5+ temas comunes pero menos cobertura, grupo aparte "con pocos datos"; empate técnico < 5 puntos. Se recodifica cada vez
 que se publica un programa.
 
+**Revisión experta del 20-nov-2026** (`data/fase1/propuesta_reformulacion_2026-11-20.md`,
+`docs/research/contrapartidas_y_verificacion.md`). Cuatro reglas nuevas:
+
+* **Contrapartida.** Si una afirmación tiene un coste que el lector no ve, lo dice: cifra oficial con fuente o identidad
+  contable o aritmética («aunque se recaude menos para servicios públicos», «las empresas paguen lo mismo por menos horas»),
+  nunca una predicción discutida (p. ej., «los topes reducen la oferta»). Misma regla para todas las direcciones ideológicas.
+  Sin contrapartida, q03 (IVA e ITP para menores de 40) tenía a los 11 partidos con posición a favor.
+* **Una sola dimensión.** Nada de medida + quién decide (Estado o comunidades): se responde según quién gobierna hoy. El
+  principio territorial va en su propia afirmación (q38). Las de consenso (q25: todos los partidos con posición a favor) se
+  sustituyen.
+* **Lo que votaron** (`pipeline/votaciones_fase1.py`, `data/fase1/votaciones.json`, `data/fase1/diputados_partido.json`,
+  copias oficiales en `data/sources/congreso/`). Votaciones del Pleno de la XV Legislatura sobre la misma medida (relación
+  «misma»; los paquetes y medidas cercanas, «parecida», se enseñan pero no cuentan), seleccionadas por la medida y no por el
+  resultado, con la fuente primaria del texto votado. Voto de un partido = sentido de más del 75 % de sus diputados que votan;
+  si no, «dividido». Se avisa cuando contradice la posición declarada; el modo «contando lo que votaron» sustituye la
+  posición por el voto (a favor +2, en contra −2, abstención 0) cuando van en sentido contrario o no hay posición. No cambia
+  el orden que usan los pasos 2 y 3.
+* **Coherencia de las respuestas** (`pares_coherencia` en `preguntas.json`, `web/src/engine/congreso.ts`). Pares que miden lo
+  mismo desde dos lados; si las respuestas se separan 3 puntos o más en sentido opuesto, se pide revisarlas. No se corrige nada.
+
 ## Paso 2 · Contrasta (análisis de programas)
 
 Prompts: `docs/prompts/1_lectura_programa.md` y `docs/prompts/3_evaluacion_propuestas.md`; criterios

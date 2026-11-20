@@ -130,6 +130,34 @@ export function Metodologia() {
               contar.
             </li>
             <li>
+              <strong>Con su contrapartida.</strong> Una medida suelta (bajar un impuesto, jubilarse antes) recibe casi siempre un sí; lo que
+              separa a unas ideologías de otras es si se acepta lo que cuesta. Por eso, cuando una afirmación tiene un coste que no se ve, lo dice:
+              con una cifra oficial («unos 25.000 millones de euros más al año») o con lo que resulta de las cuentas («aunque se recaude menos para
+              servicios públicos», «las empresas pagan lo mismo por menos horas»). Nunca con una predicción discutida. Es la misma regla en todas
+              las direcciones: para bajar impuestos y para gastar más. Y cada afirmación mide una sola cosa: la medida, sin mezclarla con quién la
+              decide (el Estado o las comunidades). Eso se pregunta aparte, como principio, para que no se responda según quién gobierna hoy en
+              cada sitio (cambios del 20 de noviembre, tras la revisión de una experta en política española;{' '}
+              <a href={gh('docs/research/contrapartidas_y_verificacion.md')}>estudios en que nos basamos</a>).
+            </li>
+            <li>
+              <strong>Lo que votaron.</strong> Un programa es una declaración de intenciones. Junto a la posición de cada partido mostramos lo
+              que votaron sus diputados en el Pleno del Congreso entre 2023 y 2026 sobre esa misma medida, con enlace a la votación oficial, y
+              avisamos cuando votaron lo contrario de lo que proponen. Solo cuentan las votaciones de la propia medida: si iba dentro de un
+              paquete con otras cosas (un decreto con muchas medidas), la enseñamos como «medida parecida», pero no la comparamos. Puedes
+              calcular tu afinidad <em>contando lo que votaron</em>: donde el voto contradice lo que proponen, cuenta el voto. Los partidos que
+              no tenían diputados no cambian.
+              <Tecnico>
+                El voto de cada partido se calcula con el voto nominal de sus diputados de los datos abiertos del Congreso: el sentido que vota
+                más de las tres cuartas partes; si no, «dividido». Cada diputado cuenta para el partido de la web por el que se presentó, con
+                las excepciones nominales documentadas (data/fase1/diputados_partido.json).
+              </Tecnico>
+            </li>
+            <li>
+              <strong>Coherencia de tus respuestas.</strong> Algunas afirmaciones miden casi lo mismo desde dos lados (por ejemplo, más
+              servicios con más impuestos frente a bajar el IRPF aunque se recaude menos). Si las respondes con fuerza en sentidos opuestos, te
+              lo enseñamos al principio de tus resultados para que lo revises. No cambiamos nada por ti.
+            </li>
+            <li>
               <strong>Respondes en 5 niveles</strong>, de «Muy en contra» a «Muy a favor». «Neutral» es estar ni a favor ni en contra y cuenta
               como cualquier otra respuesta. También puedes pulsar <em>No lo sé</em>: ese tema no cuenta. Al terminar, puedes marcar los temas que más te importan (vivienda, economía y trabajo, inmigración y seguridad…): sus afirmaciones cuentan
               el doble.
@@ -139,7 +167,7 @@ export function Metodologia() {
               anteriores). Si no lo ha publicado, o no trata un tema, sale de lo que sus líderes nacionales o regionales han propuesto en público y en primera
               persona: en un mitin, una entrevista, un debate, un acto de campaña o un discurso en el Congreso. Vale desde noviembre de 2025;
               si es anterior a la convocatoria (6 de octubre de 2026), lo indicamos, y lo que el partido diga después prevalece. Indicamos
-              quién lo dijo, dónde y cuándo. No valen las votaciones sin palabras del propio líder. No valen rumores, «fuentes del partido» ni resúmenes de terceros. Un
+              quién lo dijo, dónde y cuándo. Las votaciones no fijan la posición (van aparte, en «Lo que votaron»). No valen rumores, «fuentes del partido» ni resúmenes de terceros. Un
               primer análisis asigna cada posición con su cita. Un segundo análisis, independiente, la comprueba con la fuente y corrige o
               descarta lo que no se sostenga. Si no hay posición documentada, el partido queda «sin posición conocida» en ese tema.
             </li>

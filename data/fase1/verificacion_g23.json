@@ -1,0 +1,1006 @@
+{
+ "grupo": "g23",
+ "verificador": "Claude (Anthropic) — verificación independiente, protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13 y el 15-nov («A qué partido cuenta cada fuente», precedencia, programa del PSOE asumido por el PSC) y la revisión experta del 20-nov (preguntas.json, «nota_revision»)",
+ "fecha": "2026-11-20",
+ "aprobado": true,
+ "revisadas": 126,
+ "resultado": {
+  "ok": 71,
+  "corregido": 2,
+  "rechazado": 7,
+  "celdas_no_tocadas_confirmadas": "46 null confirmadas (ver «celdas_no_tocadas»)",
+  "nota_aprobacion": "Las correcciones se han aplicado directamente en codificacion_g23.json (cada celda cambiada guarda «valor_codificador» y un «motivo_cambio» de la verificación). Con ellas, todas las celdas que quedan son correctas: «aprobado»: true."
+ },
+ "alcance": "Las 126 celdas de codificacion_g23.json (18 partidos × q40, q41, q42, q43, q44, q46 y q47): las 78 con valor del codificador y las 48 null. La afirmación se juzgó con su texto nuevo del 20-nov y con su contrapartida («aunque se recaude menos para servicios públicos», «de modo que las empresas paguen lo mismo por menos horas», «hasta dos años más de pensión», «uno de cada cuatro alumnos», «pagarse con los impuestos de toda España», «unos 25.000 millones más al año»). La regla que se aplicó igual a todas las direcciones: la contrapartida es un hecho y no cambia la medida, pero una fuente que propone la medida compensándola dentro de la misma propuesta (con otro impuesto que deja la recaudación igual) no se pronuncia sobre aceptar la contrapartida y es una medida distinta. Compensarla con menos gasto sí es aceptarla.\n\n(1) Fuentes. Cada valor se decidió antes de mirar el del codificador y después se comparó. Programas: las 59 citas de programa se comprobaron con norm() de verify_quotes.py contra el .txt catalogado en partidos.json y, página a página, contra pdftotext -layout del PDF guardado. Todas son literales y están en la página declarada. En Junts y Adelante Andalucía, donde el PDF tiene columnas, la página se comprobó sin -layout. Ninguna pasa de 60 palabras. Diario de Sesiones: se descargaron de congreso.es todos los Plenos de la XV Legislatura del núm. 149 (11-nov-2025) al 213 (12-nov-2026; el 163 y el 212 no existen) y se extrajeron con pdftotext -layout. Las 10 citas del Diario de las celdas y la nueva de EH Bildu en q40 son literales y están en la página declarada; cada orador se identificó en el propio Diario y su puesto en las listas en data/boe/listas_congreso.json. Web: se abrieron upn-pp.es (17-nov), Forbes/Europa Press (13-oct), elDiario.es (7-oct), Valencia Plaza/Europa Press (13-nov), El Debate (27-dic-2025), Estrella Digital (20-nov) y Canarias7 (2-ago), y se leyeron las copias locales con sha256 (NC-BC 20-nov-2025, UPN 15-abr-2026). Todas las citas son literales. Las dos celdas que toman el programa conjunto de Compromís: Front Valencià (Podemos q40 y ERC q43) se comprobaron contra su texto catalogado.\n\n(2) Búsqueda propia para las null y los partidos sin la posición, con el mismo rigor para los 18: los 16 programas catalogados (los del PSOE y el PSC son el mismo) por palabras clave (IVA, transmisiones, primera vivienda, IGIC; IRPF, tramos, progresividad, mínimo exento; jornada, 37,5, horas semanales; jubilación, 65 años, edad ordinaria; concertada, conciertos, cheque escolar; condonación, deuda autonómica, FLA, quita; gasto militar o en defensa, OTAN, PIB, rearme) y el Diario de Sesiones completo, buscando por los mismos términos y por orador.\n\n(3) Atribución. Se aplicaron las reglas del 13-nov: los documentos conjuntos cuentan para cada firmante (Compromís: Front Valencià cuenta para Podemos y para ERC a través de ERPV; data/boe/coaliciones.json), Feijóo no cuenta para UPN y el programa propio va antes. Las declaraciones anteriores a la convocatoria son todas posteriores al 1-nov-2025 y en primera persona.\n\nResultado. 71 celdas aprobadas tal cual (en dos con una corrección de campo), 7 rechazadas (de valor a null: seis en q40 y UPC en q46) y 2 nuevas (EH Bildu en q40 y el BNG en q41). Correcciones aplicadas en codificacion_g23.json.",
+ "cambios": [
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q40",
+   "antes": 1,
+   "despues": null,
+   "motivo": "Cita literal (pp. 18-19), pero no sostiene la afirmación. La exención del ITP para la primera vivienda (con topes de ingresos y de precio, a cualquier edad, sin IVA) está dentro de la medida «Impuesto penalizador a la compra no residencial e incremento progresivo del ITP» y va unida en la misma frase («al tiempo que») a recargos del 200 % y del 1.000 % a la segunda y la tercera vivienda. Es un traslado de la carga dentro de la compraventa de vivienda, no una rebaja que recaude menos, que es justo lo que la afirmación añade ahora: medida relacionada pero distinta, null. Ver duda 1."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q40",
+   "antes": 1,
+   "despues": null,
+   "motivo": "Documento conjunto Compromís: Front Valencià (p. 6; firma Podemos; cita literal). El mismo punto exime del ITP la primera vivienda de menos de 350.000 € y sube un 200 % a partir de la tercera propiedad: traslado de impuestos, no una rebaja que recaude menos. El programa propio de Podemos no trata estos impuestos, y Sánchez Serna (DS 149, p. 20) solo describe una propuesta autonómica de la misma forma (ITP al 2 % para la primera vivienda y al 20 % para especular). Null, como Compromís. Ver duda 1."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q40",
+   "antes": 1,
+   "despues": null,
+   "motivo": "Cita literal (p. 6), pero el mismo punto añade «A partir de la tercera propietat s’augmentarà un 200%»: la exención del ITP (a cualquier edad, sin IVA) es parte de un traslado de impuestos que no recauda menos. Medida relacionada pero distinta: null. Ver duda 1."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q40",
+   "antes": 1,
+   "despues": null,
+   "motivo": "Nota de NC-BC del 20-nov-2025 (copia local, sha256 comprobado; cita literal). La rebaja del ITP y del IGIC a menores de 40 (con límites de renta y precio) va en el mismo paquete, y en el subtítulo de la nota, que «un nuevo tipo impositivo incrementado del 20 por ciento» en el ITP para grandes tenedores y vivienda vacacional: es el mismo traslado de impuestos que en el Frente Amplio o Compromís, y queda en null por el mismo criterio. Además, es una nota del partido en tercera persona sobre una moción del Parlamento de Canarias, anterior a la convocatoria, ni un documento para estas elecciones ni una declaración literal de un líder, y el programa de UPC (19-nov) no recoge la rebaja (solo hipoteca al 0 % y deducciones). Ver duda 1."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q40",
+   "antes": 1,
+   "despues": null,
+   "motivo": "Cita literal (medida 30, p. 4), pero la frase une la exención del ITP del primer habitatge (a cualquier edad, sin IVA) a recargos del 200 % y del 1.000 % a la segunda y siguientes («tota vegada que»): traslado de impuestos, no recaudar menos. Null. Ver duda 1."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q40",
+   "antes": 1,
+   "despues": null,
+   "motivo": "Cita literal (medida 59, p. 19). La medida se titula «Incrementar els tipus de l’IVA i l’ITP sobre la compra d’habitatge quan aquest es destini a usos diferents a l’habitatge habitual» y «alhora» pide rebajarlos cuando el uso sea la primera residencia «del propietari o de l’arrendatari», sin edad ni cuantía, dentro de una reforma fiscal para que las viviendas se destinen a primera residencia. Es la misma lógica que su proposición de ley debatida el 11-nov-2025 (DS 149: IVA reducido a menores de 35 con un impuesto complementario por número de viviendas): un traslado de impuestos, no recaudar menos. Null. Ver duda 1."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q40",
+   "antes": null,
+   "despues": -1,
+   "motivo": "Celda nueva (null → −1). En el debate de la proposición no de ley de Junts (DS 173, 24-mar-2026, p. 38; cabeza de lista por Bizkaia, primera persona, posterior al 1-nov-2025), Matute rechaza su «IVA del 0 % para la compra de vivienda para los menores de 35 años»: «No hay nada más indiscriminado e injusto que esto». Y en la misma intervención critica una «rebaja generalizada de impuestos a la par que exige [...] mantener el nivel de gasto social». Es una medida casi igual a la de la afirmación (IVA de la compra para jóvenes sin límite de renta): −1, no −2 (reactiva y sobre una medida parecida). El codificador revisó esa misma intervención para q41 y no la recogió aquí. Ver duda 2."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q41",
+   "antes": null,
+   "despues": -1,
+   "motivo": "Celda nueva (null → −1). Programa, p. 43 (cita literal): «Incrementar a súa progresividade: que pague máis quen máis renda obtén», junto a menos tributación del trabajo y más del capital. Es el mismo caso que el Frente Amplio, Podemos, UPC y Adelante Andalucía, que rebajan a las rentas bajas y suben a las altas y tienen −1. El argumento de la celda heredada («coincide con una parte y choca con la otra») sirve igual para ellos y solo dejaba al BNG en null. Ver duda 3."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q46",
+   "antes": 1,
+   "despues": null,
+   "motivo": "Canarias7, 2-ago-2026 (abierto; la cita es literal). Duda 2 del codificador, resuelta: null. (1) El protocolo enumera las «columnas de opinión» entre lo que no vale, sin distinguir si las firma un tercero o el propio dirigente. El proyecto ya descartó por ese motivo una tribuna del mismo Román Rodríguez (Diario de Avisos, 8-nov, citada en las notas de UPC de q43, q44 y q47), así que aceptar esta rompería el precedente. (2) Firma como secretario nacional de Formación, Programas y Estrategias de NC-BC, que no es uno de los cargos de líder del protocolo, y no figura en las listas del 29-N (data/boe/listas_congreso.json). No se halló otra declaración de un líder de NC-BC sobre el proyecto (Diario de Sesiones del 11-nov-2025 al 12-nov-2026 incluido), y el programa de UPC no trata la deuda. Ver duda 4."
+  }
+ ],
+ "correcciones_de_campos": [
+  {
+   "partido": "compromis",
+   "pregunta": "q41",
+   "campo": "cita, pagina, nota",
+   "motivo": "APLICADO. Micó habló en valenciano y la cita era la versión castellana que el Diario publica a continuación (p. 61). Se sustituye por el original (p. 60), igual que las demás citas del Diario en lenguas cooficiales (BNG q46, ERC q47), con la traducción en la nota. No cambia el valor."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q41",
+   "campo": "nota",
+   "motivo": "APLICADO. Se quita «Feijóo lo repite en campaña («hay que bajar los impuestos», cara a cara del 19-nov)»: la frase no está en la crónica guardada del cara a cara (Estrella Digital, 20-nov) ni en otra fuente del expediente. El valor no depende de ella."
+  },
+  {
+   "partido": "—",
+   "pregunta": "—",
+   "campo": "nota (cabecera de codificacion_g23.json)",
+   "motivo": "APLICADO. Se añade el resumen de la verificación (qué celdas cambian y por qué)."
+  }
+ ],
+ "posiciones": [
+  {
+   "partido": "pp",
+   "pregunta": "q40",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (medida 153; primer fragmento en la p. 54 y segundo en la p. 55 del PDF). Bajar el IVA de la compra de primera vivienda del 10 % al 4 % para menores de 40 años es la rebaja del 60 % de la afirmación, y el ITP «reducido» para la primera vivienda usada de los jóvenes se acordará con las comunidades, sin cifra. Es la medida de origen de la afirmación, propuesta expresa y sin compensación con otro impuesto: +2."
+  },
+  {
+   "partido": "upn",
+   "pregunta": "q40",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Nota oficial de la web de la coalición UPN-PP (upn-pp.es, 17-nov-2026, abierta: la frase es literal). Recoge la propuesta de Javier Esparza (UPN, primero de la candidatura al Senado por Navarra) de bajar del 10 % al 4 % el IVA de la primera vivienda nueva, junto a «queremos bajar impuestos», sin compensación. Es la rebaja del 60 % del IVA, para cualquier edad y sin ITP (foral en Navarra): +1. Cuenta para UPN como documento conjunto de la coalición que firma y porque la propuesta es de un dirigente de UPN."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q40",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (medida 34, p. 20). IVA al 0 % y bonificación del 100 % del ITP en la compra de la primera vivienda habitual, sin límite de edad y sin compensación con otro impuesto: va más allá de la afirmación en la misma dirección y aceptando la pérdida de recaudación: +1 (más amplia, no la misma). Chamorro (Vox) repite el IVA del 0 % en el Congreso (DS 185, p. 81)."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q40",
+   "veredicto": "rechazado",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": null,
+   "motivo": "Cita literal (pp. 18-19), pero no sostiene la afirmación. La exención del ITP para la primera vivienda (con topes de ingresos y de precio, a cualquier edad, sin IVA) está dentro de la medida «Impuesto penalizador a la compra no residencial e incremento progresivo del ITP» y va unida en la misma frase («al tiempo que») a recargos del 200 % y del 1.000 % a la segunda y la tercera vivienda. Es un traslado de la carga dentro de la compraventa de vivienda, no una rebaja que recaude menos, que es justo lo que la afirmación añade ahora: medida relacionada pero distinta, null. Ver duda 1."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q40",
+   "veredicto": "rechazado",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": null,
+   "motivo": "Documento conjunto Compromís: Front Valencià (p. 6; firma Podemos; cita literal). El mismo punto exime del ITP la primera vivienda de menos de 350.000 € y sube un 200 % a partir de la tercera propiedad: traslado de impuestos, no una rebaja que recaude menos. El programa propio de Podemos no trata estos impuestos, y Sánchez Serna (DS 149, p. 20) solo describe una propuesta autonómica de la misma forma (ITP al 2 % para la primera vivienda y al 20 % para especular). Null, como Compromís. Ver duda 1."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q40",
+   "veredicto": "rechazado",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": null,
+   "motivo": "Cita literal (p. 6), pero el mismo punto añade «A partir de la tercera propietat s’augmentarà un 200%»: la exención del ITP (a cualquier edad, sin IVA) es parte de un traslado de impuestos que no recauda menos. Medida relacionada pero distinta: null. Ver duda 1."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q40",
+   "veredicto": "rechazado",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": null,
+   "motivo": "Nota de NC-BC del 20-nov-2025 (copia local, sha256 comprobado; cita literal). La rebaja del ITP y del IGIC a menores de 40 (con límites de renta y precio) va en el mismo paquete, y en el subtítulo de la nota, que «un nuevo tipo impositivo incrementado del 20 por ciento» en el ITP para grandes tenedores y vivienda vacacional: es el mismo traslado de impuestos que en el Frente Amplio o Compromís, y queda en null por el mismo criterio. Además, es una nota del partido en tercera persona sobre una moción del Parlamento de Canarias, anterior a la convocatoria, ni un documento para estas elecciones ni una declaración literal de un líder, y el programa de UPC (19-nov) no recoge la rebaja (solo hipoteca al 0 % y deducciones). Ver duda 1."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q40",
+   "veredicto": "rechazado",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": null,
+   "motivo": "Cita literal (medida 30, p. 4), pero la frase une la exención del ITP del primer habitatge (a cualquier edad, sin IVA) a recargos del 200 % y del 1.000 % a la segunda y siguientes («tota vegada que»): traslado de impuestos, no recaudar menos. Null. Ver duda 1."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q40",
+   "veredicto": "rechazado",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": null,
+   "motivo": "Cita literal (medida 59, p. 19). La medida se titula «Incrementar els tipus de l’IVA i l’ITP sobre la compra d’habitatge quan aquest es destini a usos diferents a l’habitatge habitual» y «alhora» pide rebajarlos cuando el uso sea la primera residencia «del propietari o de l’arrendatari», sin edad ni cuantía, dentro de una reforma fiscal para que las viviendas se destinen a primera residencia. Es la misma lógica que su proposición de ley debatida el 11-nov-2025 (DS 149: IVA reducido a menores de 35 con un impuesto complementario por número de viviendas): un traslado de impuestos, no recaudar menos. Null. Ver duda 1."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q40",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Citas literales (p. 60; la rebaja figura también en la p. 17). IVA de la vivienda habitual nueva del 10 % al 5 % dentro del objetivo «menys pressió fiscal per accedir al primer habitatge» de los jóvenes, sin compensación con otro impuesto (lo que pide es que el Estado compense a la Generalitat, que sigue siendo recaudar menos). Rebaja de la mitad y sin límite de edad en la propia medida: +1. Nogueras (DS 174, 25-mar-2026) pide además «eliminar el impuesto de transmisiones patrimoniales, especialmente para los jóvenes»: coherente."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q40",
+   "veredicto": "corregido",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": -1,
+   "motivo": "Celda nueva (null → −1). En el debate de la proposición no de ley de Junts (DS 173, 24-mar-2026, p. 38; cabeza de lista por Bizkaia, primera persona, posterior al 1-nov-2025), Matute rechaza su «IVA del 0 % para la compra de vivienda para los menores de 35 años»: «No hay nada más indiscriminado e injusto que esto». Y en la misma intervención critica una «rebaja generalizada de impuestos a la par que exige [...] mantener el nivel de gasto social». Es una medida casi igual a la de la afirmación (IVA de la compra para jóvenes sin límite de renta): −1, no −2 (reactiva y sobre una medida parecida). El codificador revisó esa misma intervención para q41 y no la recogió aquí. Ver duda 2."
+  },
+  {
+   "partido": "salf",
+   "pregunta": "q40",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (medida I.1, p. 5). ITP y AJD al 0 % e IVA del 4 % devuelto en la renta para toda primera vivienda, sin límite de edad: más amplia que la afirmación, en la misma dirección. La compensa con menos gasto («Coste: ≈ 5.000 M€/año. Lo paga el sobrecoste autonómico», p. 5), no con otro impuesto: recauda menos, como dice la afirmación. +1."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q41",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (medida 177, p. 60). Propone bajar el IRPF de las rentas medias y bajas y elevar los mínimos, sin compensarlo con otro impuesto, pero no la escala de la afirmación ni nada sobre las rentas altas. Misma dirección con otra medida: +1, el mismo listón que SALF (+1, mínimo exento de 35.000 €), y el reverso de los −1 de quien rebaja a las rentas bajas pero sube a las altas. Se quita de la nota una frase de Feijóo (cara a cara del 19-nov) que no se pudo comprobar en la crónica guardada; el valor no depende de ella."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q41",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Forbes/Europa Press, 13-oct-2026 (abierto; las dos frases son literales y entrecomilladas). Arcadi España, ministro de Hacienda y número 2 del PSPV-PSOE por Valencia (BOE), rechaza la propuesta de IRPF de Vox con los mismos umbrales por su coste (85.000 millones) y por a quién beneficia. Es justo la contrapartida que la afirmación añade ahora: −1 (crítica, no rechazo propio con medida alternativa). El programa del PSOE no cambia la escala general y no lo contradice."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q41",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "elDiario.es, 7-oct-2026 (abierto; la cita del mínimo exento de 22.000 €, 15 % y 25 % es literal). Figaredo, portavoz de Economía y cabeza de lista de Vox (BOE), propone exactamente la escala de la afirmación: +2. Que el programa diga que la rebaja será compatible con la financiación de los servicios no cambia la medida ni dice que vaya a recaudar lo mismo."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q41",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (p. 46). Bajar el IRPF hasta 27.000 € pero más tramos desde 120.000 € y tipos de hasta el 52 %: lo contrario de una escala de dos tipos con máximo del 25 %, sin rechazarla de forma expresa: −1."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q41",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (medida 48, p. 21). Más tramos y tipos más altos desde 60.000 € con un tipo mínimo del 9 % y exención bajo el SMI: −1, como el Frente Amplio."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q41",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "DS 173, 24-mar-2026 (abierto). Micó (cabeza de lista de Compromís: Front Valencià por Valencia, BOE), en primera persona y posterior al 1-nov-2025, rechaza bajar impuestos porque «són el que fan possible una sanitat pública, una educació pública, la dependència i les pensions» y añade que el cansancio de la clase trabajadora no se resuelve «reduint la capacitat de l’Estat». Era su respuesta a una moción de Junts de rebajas fiscales para la clase media que incluía el IRPF: se pronuncia sobre la dirección y sobre la contrapartida, sin hablar de la escala: −1. Corrección de campo: habló en valenciano y el codificador citaba la versión castellana que el Diario publica en la p. 61; se sustituye por el original de la p. 60, con la traducción en la nota."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q41",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (eje 9, p. 11). Más tramos desde 120.000 € con tipos marginales crecientes: −1, como el Frente Amplio (verificado en g21)."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q41",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (objetivo 2, punto 2.1, p. 68; la paginación se comprobó sin -layout porque el PDF tiene columnas). Deflactar, rebajar los primeros tramos y subir los mínimos, sin subir otros tramos ni compensar: misma dirección con otra medida, +1, el criterio del PP. Nogueras (DS 201, 3-sep-2026) lo resume: «nosaltres volem abaixar impostos»."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q41",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "DS 173, 24-mar-2026, p. 39 (abierto; literal). Matute (cabeza de lista por Bizkaia, BOE), en primera persona y posterior al 1-nov-2025, rechaza una «bajada general de impuestos» que resta recursos al gasto social y solo admitiría entrar en el debate si se compensara con impuestos a la banca o a las grandes fortunas. La afirmación es una bajada general del IRPF sin compensación: −1 (no habla de la escala)."
+  },
+  {
+   "partido": "pnv",
+   "pregunta": "q41",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "DS 180, 22-abr-2026, pp. 65-66 (abierto; los dos fragmentos son literales). Sagastizabal (cabeza de lista por Bizkaia, BOE), en la moción del PP «sobre el infierno fiscal», acepta deflactar el IRPF pero rechaza «bajar impuestos de forma indiscriminada» y advierte de que «dejar de recaudar de forma significativa» pone en riesgo el Estado de bienestar. En la misma intervención (p. 66) reprocha que no se puede «defender una bajada generalizada de impuestos y al mismo tiempo exigir al Estado que incremente los recursos». La escala de la afirmación es una rebaja general que recauda menos: −1."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q41",
+   "veredicto": "corregido",
+   "aprobado": true,
+   "valor_codificador": null,
+   "valor_final": -1,
+   "motivo": "Celda nueva (null → −1). Programa, p. 43 (cita literal): «Incrementar a súa progresividade: que pague máis quen máis renda obtén», junto a menos tributación del trabajo y más del capital. Es el mismo caso que el Frente Amplio, Podemos, UPC y Adelante Andalucía, que rebajan a las rentas bajas y suben a las altas y tienen −1. El argumento de la celda heredada («coincide con una parte y choca con la otra») sirve igual para ellos y solo dejaba al BNG en null. Ver duda 3."
+  },
+  {
+   "partido": "adelante_andalucia",
+   "pregunta": "q41",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (propuesta 232, p. 58; el segundo fragmento se comprobó sin -layout). Rebaja para las rentas bajas y tipos «mucho más altos» desde 100.000 €: −1."
+  },
+  {
+   "partido": "salf",
+   "pregunta": "q41",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (medida III.1, p. 12). Mínimo exento de 35.000 € (22.000 en 2028), sin la tarifa de dos tipos ni lo contrario. Condiciona las bajadas a un ahorro certificado por la AIReF, es decir, recaudar menos y gastar menos: +1."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q42",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (compromiso 108, p. 41). Completar la reducción a 37,5 horas «sin perder salario»; los periodos transitorios para pymes son un calendario, no una compensación de la contrapartida: +2."
+  },
+  {
+   "partido": "psc",
+   "pregunta": "q42",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Programa del PSOE asumido por el PSC (decisión del editor del 15-nov); misma cita y valor que el PSOE: +2."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q42",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (pp. 55-56). «Implantación inmediata a 37,5 horas» bajo el epígrafe de jornada máxima «sin reducción salarial»: +2."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q42",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (medida 113, p. 41). 35 y luego 30 horas sin rebaja salarial: misma dirección con otra cifra, +1."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q42",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 7). 32 horas sin rebaja del sueldo: +1."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q42",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 7). «Regular la jornada de 37,5 horas» sin decir que sea sin rebaja salarial, que es justo lo que crea la contrapartida: +1 (corrección de g21 mantenida)."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q42",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (medida 10, p. 2). Jornada máxima de 32 horas sin reducción salarial: +1."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q42",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (medida 105, p. 26). La medida exacta, por ley y sin reducción salarial: +2."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q42",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (p. 88; comprobada en el PDF). Ver duda 1 del codificador, resuelta: el anexo «Principals iniciatives de la legislatura» forma parte del programa oficial del 29-N, y que el partido presente ahí como mérito propio la «Oposició a la imposició de la jornada laboral de 37,5 hores» es su posición ante estas elecciones, no el sentido de un voto. Lo confirma una declaración válida en primera persona de Nogueras, cabeza de lista por Barcelona (DS 174, 25-mar-2026, p. 26): «¿Quién ha evitado que en un contexto de crisis SUMAR imponga una reducción de la jornada laboral? Junts». Isidre Gavín (Junts, DS 193, p. 36) critica también generalizar las 37,5 horas a las pymes. −1, no −2: el rechazo es a imponerla por ley «en un context de crisi» y está en un anexo, no entre las propuestas."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q42",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 6). 32 horas sin reducción salarial, con un primer paso a 35 en las pymes: +1."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q42",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 15). 35 horas sin reducción salarial: +1."
+  },
+  {
+   "partido": "adelante_andalucia",
+   "pregunta": "q42",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (propuesta 268, p. 63). 32 horas sin rebaja de sueldo, con apoyo público a las empresas para reorganizarse: +1."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q43",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 58). «Devolveremos la edad de jubilación a los 65 años» para todos, sin compensación: +2."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q43",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (medida 116, p. 41). Edad ordinaria a los 63, financiada con los Presupuestos: misma dirección con otra cifra, +1. Su programa propio va antes que el documento conjunto de Compromís (65 años); los dos van en la misma dirección."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q43",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 8). «Retornarem l’edat de jubilació als 65 anys», primera medida de pensiones: +2."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q43",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Documento conjunto Compromís: Front Valencià (firma Esquerra Republicana del País Valencià, data/boe/coaliciones.json; cita literal en el texto del programa). El programa propio de ERC no trata la edad ordinaria: +2."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q43",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 19). «Recuperación da xubilación ordinaria aos 65 anos»: +2."
+  },
+  {
+   "partido": "adelante_andalucia",
+   "pregunta": "q43",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (propuesta 220, p. 55). Edad ordinaria a los 64: +1."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q44",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal (medida 212, p. 67). Rechazo expreso en el titular a eliminar conciertos con demanda, y conciertos de seis años en todas las etapas: −2."
+  },
+  {
+   "partido": "upn",
+   "pregunta": "q44",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Nota oficial de UPN del 15-abr-2026 (copia local, sha256 comprobado; cita literal). Llama «atentado a la libertad» a reducir conciertos y anuncia una ley para «blindar» la concertada: −1 (indirecta). Verificada en g5."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q44",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "DS 185, 19-may-2026, p. 76 (abierto; literal). Defensa de la concertada como complemento de la pública en el 0-3, frente a quien la «ataca»: −1. El programa del 29-N no trata los conciertos (solo FP del sector primario con «programas públicos y concertados»), así que no hay fuente que vaya antes."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q44",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 31). Hoja de ruta hacia el «100 % de los fondos públicos» para la pública: +2."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q44",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (medida 279, p. 79). Moratoria de conciertos y reabsorción en la red pública: +2."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q44",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (medida 81, p. 9). «Procés progressiu d’eliminació del sistema de concerts educatius»: +2."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q44",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (p. 53). La concertada forma parte del servicio público y necesita los mismos recursos (módulos a coste real, p. 54): −1."
+  },
+  {
+   "partido": "pnv",
+   "pregunta": "q44",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "DS 167, 18-feb-2026, p. 15 (abierto; literal). Agirretxea defiende la FP concertada y avisa de que no apoyará cambiar ese modelo: −1. El programa del 29-N no menciona la concertada."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q44",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 35). Camino a suprimir los conciertos, empezando por eliminarlos en la enseñanza no obligatoria: es la afirmación, +2."
+  },
+  {
+   "partido": "adelante_andalucia",
+   "pregunta": "q44",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (propuesta 72, p. 42; comprobada sin -layout). «Eliminar progresivamente la privada-concertada»: +2."
+  },
+  {
+   "partido": "salf",
+   "pregunta": "q44",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal (p. 34). Cheque escolar válido en la concertada: −2."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q46",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (medida 102, p. 41). «Cada Comunidad responderá de [...] su deuda», con una reestructuración multilateral sin detallar: −1."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q46",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (compromiso 231, p. 61). Asumir 83.000 millones de deuda autonómica: +2."
+  },
+  {
+   "partido": "psc",
+   "pregunta": "q46",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Programa del PSOE asumido por el PSC: +2."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q46",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "DS 199, 23-jul-2026, p. 119 (abierto; los dos fragmentos son literales). Enmienda a la totalidad contra el proyecto, «los errores de unos deben ser pagados por todos», que es justo la contrapartida: −2."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q46",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 104). Condonación condicionada a que no haya dumping fiscal, sin cifra: +1."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q46",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "DS 199, p. 127 (abierto; literal). Santana defiende la condonación frente a las enmiendas de totalidad, con una condición: +1. El programa de Podemos no trata la deuda autonómica."
+  },
+  {
+   "partido": "compromis",
+   "pregunta": "q46",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 50). Condonación de la deuda valenciana atribuida a la infrafinanciación: +1."
+  },
+  {
+   "partido": "upc",
+   "pregunta": "q46",
+   "veredicto": "rechazado",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": null,
+   "motivo": "Canarias7, 2-ago-2026 (abierto; la cita es literal). Duda 2 del codificador, resuelta: null. (1) El protocolo enumera las «columnas de opinión» entre lo que no vale, sin distinguir si las firma un tercero o el propio dirigente. El proyecto ya descartó por ese motivo una tribuna del mismo Román Rodríguez (Diario de Avisos, 8-nov, citada en las notas de UPC de q43, q44 y q47), así que aceptar esta rompería el precedente. (2) Firma como secretario nacional de Formación, Programas y Estrategias de NC-BC, que no es uno de los cargos de líder del protocolo, y no figura en las listas del 29-N (data/boe/listas_congreso.json). No se halló otra declaración de un líder de NC-BC sobre el proyecto (Diario de Sesiones del 11-nov-2025 al 12-nov-2026 incluido), y el programa de UPC no trata la deuda. Ver duda 4."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q46",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (medida 67, p. 8). Condonación de la deuda balear atribuida a la infrafinanciación: +1."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q46",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 2,
+   "valor_final": 2,
+   "motivo": "Cita literal (p. 12). Tramitar el proyecto de ley de asunción de deuda: +2."
+  },
+  {
+   "partido": "junts",
+   "pregunta": "q46",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (p. 68). Condonar el 100 % de la deuda de la Generalitat con el FLA: va más allá, +1. Cruset (DS 199, p. 128) critica que el proyecto condone solo una parte («s’ha de condonar tot el deute»): es la misma posición, no lo contrario."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q46",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "DS 158, 10-dic-2025, p. 114 (abierto; literal en gallego). Rego, portavoz y cabeza de lista, celebra el proyecto de condonación: +1."
+  },
+  {
+   "partido": "adelante_andalucia",
+   "pregunta": "q46",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (propuesta 341, p. 72). Condonar la deuda debida a la infrafinanciación: +1."
+  },
+  {
+   "partido": "salf",
+   "pregunta": "q46",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal (medida III.11, p. 14). «Nos opondremos a las condonaciones de deuda [...] salvo en caso de catástrofe»: −2."
+  },
+  {
+   "partido": "pp",
+   "pregunta": "q47",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Valencia Plaza/Europa Press, 13-nov-2026 (abierto; los tres fragmentos son literales); también abiertos El Debate (27-dic-2025) y Estrella Digital (20-nov-2026). Duda 3 del codificador, resuelta: +1. El 27-dic-2025 Feijóo se comprometió expresamente («Me comprometo a subir el gasto en defensa hasta el 3,5 %», con revisión en 2029), lo que habría sido +2. Ya convocadas las elecciones, prevalece lo posterior: sigue subiendo el gasto (2,3-2,4 % en la legislatura, frente al 2,0 %) y sigue sin «enfrentarse con los aliados», pero supedita la cifra a una auditoría y ya no se compromete con el 3,5 %; en el cara a cara dice que no pondrá «en solfa los servicios públicos». Misma dirección con condiciones y sin el compromiso con la cifra de la afirmación: +1. Tellado (secretario general, DS 190, p. 96) critica pedir a Sánchez «que sea aún más desleal con la OTAN»: coherente. Ver duda 5."
+  },
+  {
+   "partido": "psoe",
+   "pregunta": "q47",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "DS 188, 27-may-2026, p. 50 (abierto; literal). Arcadi España da por «suficiente» el 2,1 %: −1. El programa (pp. 88 y 105) rechaza el 5 % por el Estado del bienestar: coherente."
+  },
+  {
+   "partido": "psc",
+   "pregunta": "q47",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (p. 105) del programa del PSOE asumido por el PSC. Rechaza el 5 % (del que el 3,5 % es defensa) porque «pondría en riesgo nuestro Estado del bienestar»: −1, indirecta."
+  },
+  {
+   "partido": "vox",
+   "pregunta": "q47",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": 1,
+   "valor_final": 1,
+   "motivo": "Cita literal (medida 89, p. 41). «Aumento de la inversión en Defensa», sin cifra: misma dirección, +1. No se halló en el Diario de Sesiones ni en prensa ninguna declaración de sus líderes sobre el 3,5 %."
+  },
+  {
+   "partido": "frente_amplio",
+   "pregunta": "q47",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal (p. 130). Rechazo explícito del objetivo de la OTAN y reducción del gasto militar: −2."
+  },
+  {
+   "partido": "podemos",
+   "pregunta": "q47",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal (medidas 72-73, p. 28). Revertir el rearme, congelar el gasto y rechazar el objetivo de 2035: −2."
+  },
+  {
+   "partido": "ara_mes_fa",
+   "pregunta": "q47",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal (medida 148, p. 16). Reducir el gasto militar y rechazar el objetivo del 5 %: −2."
+  },
+  {
+   "partido": "erc",
+   "pregunta": "q47",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "DS 190, 10-jun-2026, pp. 89-90 (abierto; literal en catalán). Jordà apoya la moción para revertir el aumento del gasto militar: −1. Verificada en g4. El programa no lo contradice."
+  },
+  {
+   "partido": "eh_bildu",
+   "pregunta": "q47",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal (p. 28). «Rechazaremos el aumento del gasto en defensa que la OTAN está exigiendo»: −2."
+  },
+  {
+   "partido": "bng",
+   "pregunta": "q47",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal (p. 90). Rechazo del incremento del gasto militar y de las directrices de la OTAN: −2."
+  },
+  {
+   "partido": "adelante_andalucia",
+   "pregunta": "q47",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -2,
+   "valor_final": -2,
+   "motivo": "Cita literal (propuesta 578, p. 109; comprobada sin -layout). Rechazo al rearme y al objetivo del 5 %, reducción del gasto militar: −2."
+  },
+  {
+   "partido": "salf",
+   "pregunta": "q47",
+   "veredicto": "ok",
+   "aprobado": true,
+   "valor_codificador": -1,
+   "valor_final": -1,
+   "motivo": "Cita literal (medida X.12, p. 38). «Defensa: el 2 % se gasta en España y en sus militares» (con la cifra de 33.123 millones de 2025) y todas las medidas militares se pagan «dentro del 2 % del PIB» (también la X.7, p. 37). El programa fija el gasto en el 2 % y no prevé subirlo, sin rechazar expresamente el objetivo de la OTAN: −1, indirecta. Ver duda 6."
+  }
+ ],
+ "resolucion_dudas_codificador": [
+  {
+   "duda": 1,
+   "tema": "Junts q42: ¿cuenta como posición un anexo de balance de la legislatura dentro del programa?",
+   "resolucion": "Sí, −1 (confirmado). El anexo «Principals iniciatives de la legislatura» (pp. 87-89) forma parte del programa oficial del 29-N publicado el 18-nov. Lo que el partido presenta ahí como mérito propio es su posición ante estas elecciones, no el sentido de un voto ni una posición de otra legislatura. Además lo respalda una declaración válida en primera persona de la cabeza de lista, Nogueras (DS 174, 25-mar-2026, p. 26). −1 y no −2 porque se opone a imponerla por ley «en un context de crisi» y no está entre las propuestas."
+  },
+  {
+   "duda": 2,
+   "tema": "UPC q46: tribuna firmada por el propio dirigente",
+   "resolucion": "Null (corrección). El protocolo pone las «columnas de opinión» en la lista de lo que no vale, sin distinguir autor. El proyecto ya descartó una tribuna del mismo Román Rodríguez (Diario de Avisos, 8-nov) por ser columna de opinión. Y firma como secretario nacional de Formación, Programas y Estrategias de NC-BC, que no es un cargo de líder según el protocolo, y no va en las listas. Ante la duda, null. Si el editor decide que la tribuna firmada por un líder es primera persona, habría que reabrir también la del 8-nov y decidir si ese cargo es de líder (duda 4)."
+  },
+  {
+   "duda": 3,
+   "tema": "PP q47: compromiso con el 3,5 % (27-dic-2025) frente a la entrevista del 13-nov-2026",
+   "resolucion": "+1 (confirmado). Prevalece lo posterior: el 13-nov Feijóo ya no se compromete con el 3,5 %, supedita la cifra a una auditoría y habla de un 2,3-2,4 % en la legislatura, sin «enfrentarse con los aliados». Mantiene la subida (desde el 2,0 %) con condiciones, lo que es un +1 según el protocolo («±1 con matices o condiciones»). El +2 de diciembre ya no vale porque lo sustituye una declaración posterior. Tampoco es 0 o null: la dirección de subir el gasto es inequívoca y no rechaza el objetivo."
+  },
+  {
+   "duda": "encargo",
+   "tema": "q40: ¿apoyan la medida concreta las fuentes de los +1 que el codificador mantuvo?",
+   "resolucion": "Solo en Vox, UPN, Junts y SALF (y el +2 del PP). Todos rebajan el IVA o el ITP de la compra de la primera vivienda sin compensarlo con otro impuesto: recaudan menos, que es lo que la afirmación dice ahora. Frente Amplio, Ara Més, Compromís, Podemos (documento conjunto de Compromís), ERC y UPC (NC-BC) unen la rebaja, en la misma medida o frase, a recargos o subidas en otras compras de vivienda. Es un traslado de la carga fiscal que no recauda menos, una medida relacionada pero distinta, y pasan a null. El criterio no es ideológico: SALF compensa con menos gasto y mantiene su +1, porque eso sí es recaudar menos para servicios públicos. Además, EH Bildu pasa a −1 por una declaración de Matute contra el IVA del 0 % para jóvenes (DS 173). Resultado: 5 a favor, 1 en contra y 12 null, frente a 11 a favor sin nadie en contra en q03."
+  },
+  {
+   "duda": "encargo",
+   "tema": "q41: PP +1 y Junts +1; PNV, Compromís y EH Bildu −1 por discursos del Diario de Sesiones",
+   "resolucion": "Confirmados los cinco. PP y Junts proponen bajar el IRPF (rentas medias y bajas; deflactar, primeros tramos y mínimos) sin subir a las altas ni compensar: misma dirección con otra escala, +1. Es el listón de SALF y el reverso de los −1 de quien rebaja abajo y sube arriba. Los tres discursos se abrieron en el Diario y son literales: Micó (24-mar-2026), Matute (24-mar-2026) y Sagastizabal (22-abr-2026). Son posteriores al 1-nov-2025, en primera persona y de cabezas de lista por Valencia y Bizkaia (BOE), y tratan la dirección y la contrapartida (bajar impuestos resta recursos a los servicios). Corrección de campo en Compromís (cita en el original). Además, el BNG pasa a −1 para igualarlo con el Frente Amplio, Podemos, UPC y Adelante Andalucía."
+  }
+ ],
+ "celdas_no_tocadas": [
+  "q40, siguen en null: PSOE y PSC (programa: préstamos TU CASA y ayudas directas, pp. 24-32, y medida 67; la ministra de Vivienda habla del IVA del 4 % de la vivienda protegida, DS 209, otra medida), PNV (Sagastizabal, DS 149: un IVA reducido para menores de 35 «puede ser positiva, pero insuficiente por sí sola», valoración ambivalente de la propuesta de ERC), BNG (el programa no trata estos impuestos; Rego apoya la ley de ERC por su parte antiespeculativa), CC («incentivos fiscales estatales a la primera vivienda», p. 11, sin concretar), Adelante Andalucía (deducción en el IRPF, propuesta 247, otra medida).",
+  "q41, siguen en null: UPN (Esparza, 17-nov, quiere «aliviar el IRPF» deflactándolo en Navarra, el IRPF foral, otro impuesto; Catalán, DS 176, otra medida), PSC (el programa del PSOE solo sube la tributación de las rentas del capital, compromiso 130, y habla de «fiscalidad progresiva» en general; la crítica de Arcadi España cuenta solo para el PSOE), Ara Més (solo deducciones), ERC (en la escala general solo propone bajar los tramos de menos de 35.000 €, medida 69, p. 21; lo que sube es la base del ahorro, del 30 % al 35 %, que la escala de la afirmación no toca: mixta), CC (deducción de La Palma, medida 38).",
+  "q42, siguen en null: PP (bancos de horas y horarios flexibles, medida 162), UPN, Vox, PNV, CC y SALF (sus programas no tratan la jornada máxima; en el Diario no hay declaraciones de sus líderes sobre las 37,5 horas).",
+  "q43, siguen en null: PP (jubilación activa), UPN, PSOE y PSC (coeficientes y anticipadas, medida 103), Vox, UPC (jubilación antes de los 65 solo en sectores penosos, p. 6), Ara Més (camareras de piso), Junts (sin penalización con 40 años cotizados), EH Bildu (rechaza subir la edad, p. 7; Matute, DS 206, sobre la anticipada con 40 años), PNV (anticipada con más de 40 años), CC y SALF (jubilación a los 60 en colectivos concretos y jubilación activa).",
+  "q44, siguen en null: PSOE y PSC, ERC, EH Bildu, CC y UPC (sus programas no mencionan los conciertos), Compromís (hacer la concertada «realment subsidiària», p. 10, otra medida, criterio de g10; Micó, DS 185, critica dinero autonómico para la concertada, no su supresión).",
+  "q46, siguen en null: UPN, EH Bildu, PNV (Sagastizabal, DS 180, reprocha al PP su rechazo a «medidas como la condonación», implícito), CC (Valido, DS 199, p. 126: no está de acuerdo con «esta ley» ni con su fórmula, pero no con «aliviar la deuda»; luego no apoya las enmiendas de devolución; condicionado y posteriormente matizado sin cita: null, ver duda 7).",
+  "q47, siguen en null: UPN, Compromís (programa ambivalente: reducir «despeses militars» en una defensa europea e impedir que los aumentos se hagan a costa de los servicios, pp. 54-55; criterio de g10), UPC, Junts (defensa europea «complementària de l’OTAN, amb capacitats, finançament», p. 28, sin nivel de gasto), PNV y CC."
+ ],
+ "posiciones_no_recogidas": "Dos, aplicadas: EH Bildu q40 (−1, Matute, DS 173, p. 38) y BNG q41 (−1, programa, p. 43). Las más cercanas que no dan posición: CC q46 (rechazo condicionado de la fórmula, duda 7), PNV q40 (valoración ambivalente) y UPN q41 (IRPF foral de Navarra).",
+ "recuento": {
+  "antes": {
+   "q40": {
+    "+2": 1,
+    "+1": 10,
+    "0": 0,
+    "−1": 0,
+    "−2": 0,
+    "null": 7
+   },
+   "q41": {
+    "+2": 1,
+    "+1": 3,
+    "0": 0,
+    "−1": 8,
+    "−2": 0,
+    "null": 6
+   },
+   "q42": {
+    "+2": 4,
+    "+1": 7,
+    "0": 0,
+    "−1": 1,
+    "−2": 0,
+    "null": 6
+   },
+   "q43": {
+    "+2": 4,
+    "+1": 2,
+    "0": 0,
+    "−1": 0,
+    "−2": 0,
+    "null": 12
+   },
+   "q44": {
+    "+2": 5,
+    "+1": 0,
+    "0": 0,
+    "−1": 4,
+    "−2": 2,
+    "null": 7
+   },
+   "q46": {
+    "+2": 3,
+    "+1": 8,
+    "0": 0,
+    "−1": 1,
+    "−2": 2,
+    "null": 4
+   },
+   "q47": {
+    "+2": 0,
+    "+1": 2,
+    "0": 0,
+    "−1": 4,
+    "−2": 6,
+    "null": 6
+   }
+  },
+  "despues": {
+   "q40": {
+    "+2": 1,
+    "+1": 4,
+    "0": 0,
+    "−1": 1,
+    "−2": 0,
+    "null": 12
+   },
+   "q41": {
+    "+2": 1,
+    "+1": 3,
+    "0": 0,
+    "−1": 9,
+    "−2": 0,
+    "null": 5
+   },
+   "q42": {
+    "+2": 4,
+    "+1": 7,
+    "0": 0,
+    "−1": 1,
+    "−2": 0,
+    "null": 6
+   },
+   "q43": {
+    "+2": 4,
+    "+1": 2,
+    "0": 0,
+    "−1": 0,
+    "−2": 0,
+    "null": 12
+   },
+   "q44": {
+    "+2": 5,
+    "+1": 0,
+    "0": 0,
+    "−1": 4,
+    "−2": 2,
+    "null": 7
+   },
+   "q46": {
+    "+2": 3,
+    "+1": 7,
+    "0": 0,
+    "−1": 1,
+    "−2": 2,
+    "null": 5
+   },
+   "q47": {
+    "+2": 0,
+    "+1": 2,
+    "0": 0,
+    "−1": 4,
+    "−2": 6,
+    "null": 6
+   }
+  },
+  "cambios_de_valor": [
+   "frente_amplio q40 +1→null",
+   "ara_mes_fa q40 +1→null",
+   "compromis q40 +1→null",
+   "podemos q40 +1→null",
+   "erc q40 +1→null",
+   "upc q40 +1→null",
+   "upc q46 +1→null"
+  ],
+  "celdas_nuevas": [
+   "eh_bildu q40 −1",
+   "bng q41 −1"
+  ],
+  "con_valor": {
+   "antes": 78,
+   "despues": 73
+  },
+  "nota": "q40 pasa de 11 a favor y 0 en contra a 5 a favor (PP +2; UPN, Vox, Junts y SALF +1), 1 en contra (EH Bildu) y 12 null.",
+  "build": "python3 -I pipeline/build_fase1.py con esta verificación aprobada: termina sin errores (exit 0); usa codificacion_g23.json y las 56 citas de programa que quedan con valor pasan la comprobación literal. fase1.json: 31 afirmaciones, 25 con votación en el Congreso; las 126 celdas de g23 coinciden con codificacion_g23.json. Solo se omite codificacion_g9.json, que ya no tenía verificación aprobada antes de esta revisión."
+ },
+ "dudas": [
+  "1. q40, Frente Amplio, Ara Més, Compromís, Podemos, ERC y UPC (null). La alternativa es +1, si el editor entiende que rebajar el ITP de la primera vivienda va en la dirección de la afirmación aunque la misma medida lo compense con recargos a otras compras. El verificador no lo recomienda: la afirmación nueva dice «aunque se recaude menos para servicios públicos», y estas medidas no recaudan menos; además ninguna toca el IVA ni la edad, y la revisión experta señalaba justo estas celdas como las que harían que q40 no separara. Con +1 volverían a estar todos a favor salvo EH Bildu.",
+  "2. q40, EH Bildu (−1). La alternativa es null, si el editor entiende que Matute critica que la rebaja no tenga límite de renta y no la rebaja en sí. El verificador no lo recomienda: la afirmación tampoco tiene límite de renta, y en la misma intervención rechaza la «rebaja generalizada de impuestos» que mantiene el gasto social.",
+  "3. q41, BNG (−1). La alternativa es null, como se codificó en g3 («mixto»). Pero entonces el mismo argumento obliga a revisar el −1 del Frente Amplio, Podemos, UPC y Adelante Andalucía, que también rebajan a las rentas bajas y suben a las altas.",
+  "4. q46, UPC (null). La alternativa es +1, si el editor decide que una tribuna firmada por el propio dirigente es una declaración en primera persona y que el secretario nacional de Formación de NC-BC cuenta como líder. Habría que reabrir también la tribuna del 8-nov (Diario de Avisos), descartada con el criterio contrario.",
+  "5. q47, PP (+1). La alternativa +2 recuperaría el compromiso del 27-dic-2025, pero lo sustituye la entrevista del 13-nov-2026, que es posterior. La alternativa 0 o null no se recomienda: la subida del gasto es inequívoca aunque no tenga cifra a 2035.",
+  "6. q47, SALF (−1). La alternativa es null, si el editor entiende que presupuestar todo «dentro del 2 % del PIB» no es pronunciarse contra subir al 3,5 %. El verificador mantiene −1 por el mismo listón que el PSOE (2,1 % «suficiente»): el programa fija el gasto en defensa en el 2 % (33.123 millones) y lo repite en cada medida.",
+  "7. q46, CC (null). La alternativa es −1, si se da peso a que Valido rechaza en el Congreso «esta ley» y su fórmula y anuncia que no la apoyará si no se corrige. El verificador mantiene null: no rechaza asumir la deuda («Podemos hablar de aliviar la deuda, pero no de esta manera»), no apoyó las enmiendas de devolución, y el cambio posterior que cuentan NC-BC y la prensa no tiene cita en primera persona."
+ ],
+ "nota_aprobacion": "20-nov: correcciones aplicadas en codificacion_g23.json por el verificador, a petición del coordinador (7 celdas a null, 2 nuevas, 2 correcciones de campo). Con ellas, todas las celdas son correctas y el grupo queda aprobado."
+}

@@ -188,7 +188,7 @@ class TestPartidosYPapeletas(unittest.TestCase):
         self.assertEqual((f3["psc"]["base"], f3["psc"].get("programa_de")), ("programa", "psoe"))
         self.assertEqual([x["id"] for x in f3["psc"]["propuestas"]], [x["id"] for x in f3["psoe"]["propuestas"]])
         f1 = json.loads((ROOT / "web/public/data/fase1.json").read_text())["posiciones"]
-        self.assertEqual(f1["psc"]["q06"]["valor"], f1["psoe"]["q06"]["valor"])
+        self.assertEqual(f1["psc"]["q42"]["valor"], f1["psoe"]["q42"]["valor"])
 
     def test_programas_retirados_enlazan_la_copia_archivada(self):
         # Si un partido retira su PDF (Compromís, 18-nov, hasta que lo republicó esa tarde), ningún enlace
@@ -278,6 +278,34 @@ class TestCitas(unittest.TestCase):
     def test_normalizacion_solo_de_extraccion(self):
         self.assertEqual(norm("vivien-\nda  «pública»"), norm('vivienda "pública"'))
         self.assertNotEqual(norm("vivienda pública"), norm("vivienda privada"))
+
+    def test_voto_de_cada_partido_en_el_congreso(self):
+        # Revisión experta del 20-nov: el voto de un partido sale del voto nominal de sus diputados (más del 75 % en un
+        # sentido; si no, «dividido»); quien dejó el grupo de su formación sin asignación nominal no cuenta.
+        import votaciones_fase1 as vf
+        mapas = ({"PP|GP": "pp", "PSOE|GS": "psoe", "SUMAR|GSUMAR": "frente_amplio"}, {"Belarra, I": {"partido": "podemos"}})
+        formacion = {"a": "PP", "b": "PP", "c": "PP", "d": "PP", "e": "PSOE", "f": "PSOE", "g": "PSOE", "h": "PSOE", "x": "PSOE", "Belarra, I": "SUMAR"}
+        raw = {"votaciones": [
+            {"diputado": "a", "grupo": "GP", "voto": "Sí"}, {"diputado": "b", "grupo": "GP", "voto": "Sí"},
+            {"diputado": "c", "grupo": "GP", "voto": "Sí"}, {"diputado": "d", "grupo": "GP", "voto": "Sí"},
+            {"diputado": "e", "grupo": "GS", "voto": "No"}, {"diputado": "f", "grupo": "GS", "voto": "No"},
+            {"diputado": "g", "grupo": "GS", "voto": "Sí"}, {"diputado": "h", "grupo": "GS", "voto": "No vota"},
+            {"diputado": "x", "grupo": "GMx", "voto": "Sí"}, {"diputado": "Belarra, I", "grupo": "GMx", "voto": "Abstención"}]}
+        r = vf.voto_partidos(raw, formacion, mapas)
+        self.assertEqual(r["pp"]["voto"], "Sí")
+        self.assertEqual(r["psoe"]["voto"], "dividido")  # 2 de 3 (67 %) no llega al 75 %; «No vota» no cuenta
+        self.assertEqual(r["psoe"]["detalle"], {"No": 2, "Sí": 1})  # el del Mixto no cuenta para el PSOE
+        self.assertEqual(r["podemos"]["voto"], "Abstención")
+
+    def test_votaciones_publicadas_coinciden_con_la_copia_oficial(self):
+        # Cada votación publicada en el paso 1 tiene su JSON oficial en el repositorio y sus totales coinciden.
+        f1 = json.loads((ROOT / "web/public/data/fase1.json").read_text())
+        sel = {v["id"]: v for v in json.loads((ROOT / "data/fase1/votaciones.json").read_text())["votaciones"]}
+        for q, vs in (f1.get("votaciones") or {}).items():
+            for v in vs:
+                raw = json.loads((ROOT / sel[v["id"]]["fichero"]).read_text())
+                self.assertEqual(v["totales"], raw["totales"], v["id"])
+                self.assertEqual(sel[v["id"]]["pregunta"], q)
 
 
 if __name__ == "__main__":
