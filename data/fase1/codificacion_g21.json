@@ -1,0 +1,244 @@
+{
+ "grupo": "g21",
+ "codificador": "Claude (Anthropic) — recodificación con el programa de Unidad del Pueblo Canario para el 29-N (19-nov-2026), protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13-nov («A qué partido cuenta cada fuente»)",
+ "fecha": "2026-11-20",
+ "nota": "Solo posiciones de la entrada upc (NC-BC) que cambian (de valor o de fuente) o se añaden con el programa de la coalición Unidad del Pueblo Canario para el 29-N («Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», 19 pp.), publicado el 19-nov en unidadpueblocanario.org (Last-Modified 19-nov, 19:34 UTC; sha256 ce35fb3c…7e8), que cuenta como programa de UPC por decisión del coordinador del 20-nov (partidos.json). Fuente «programa» para upc. Como documento conjunto contaría también para Podemos y Frente Amplio, firmantes del pacto, detrás de sus propios programas (precedentes: Compromís: Front Valencià en g10 y Ara Més-Front Ampli en g15), pero no cambia ninguna de sus celdas: el programa de UPC no trata ninguna de las afirmaciones que sus programas no tratan (ver notas_g21.md). Cada posición lleva en «sustituye» la posición vigente hasta ahora (con el grupo del que procede) y en «motivo_cambio» por qué cambia. Páginas del PDF; coinciden con la numeración impresa (la p. 1 es la portada, una imagen). El programa se leyó entero para las 30 afirmaciones vigentes. Prevalece sobre el manifiesto del 3-nov (q01, q04, q09, q33, q34). Se conservan las posiciones vigentes en q03 (nota de NC-BC del 20-nov-2025) y q22 (Campos, 31-oct). Razonamiento, descartes y dudas en notas_g21.md. Sin verificación independiente: build_fase1.py omite este grupo hasta que haya un verificacion_g21.json aprobado.",
+ "fuentes": [
+  "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf",
+  "https://www.unidadpueblocanario.org/manifiesto"
+ ],
+ "posiciones": {
+  "upc": {
+   "q01": {
+    "valor": 1,
+    "fuente": "programa",
+    "cita": "Entre ellas, la expropiación de viviendas a los fondos buitres, el control de precios de venta y alquiler, y la protección a las personas inquilinas con medidas como: [...] La intervención del mercado del alquiler para impedir las subidas abusivas mediante el control de precios",
+    "pagina": 3,
+    "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf",
+    "medio": "Programa oficial («Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», 19 pp.)",
+    "fecha": "2026-11-19",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, eje 1 «La vivienda es un derecho y no un negocio» (p. 3): «la intervención del Estado en el mercado de la vivienda» con «el control de precios de venta y alquiler» para «impedir las subidas abusivas». Va en la dirección de la afirmación y ya no la limita a las zonas tensionadas, pero no habla de un precio máximo fijado por ley ni de que se aplique en toda España sin las comunidades: +1, como Compromís y el PSOE (+2 solo para los topes legales generales: BNG, Frente Amplio, Ara Més, Adelante Andalucía, Podemos).",
+    "sustituye": {
+     "valor": 1,
+     "fuente": "campaña",
+     "cita": "Exigimos ampliar el parque público de vivienda con protección permanente, regular los precios del alquiler en zonas tensionadas, la intervención del mercado, limitar los efectos de la vivienda vacacional",
+     "pagina": 3,
+     "url": "https://www.unidadpueblocanario.org/documentos/manifiesto-upc.pdf",
+     "medio": "Unidad del Pueblo Canario (Manifiesto electoral)",
+     "fecha": "2026-11-03",
+     "quien": "Unidad del Pueblo Canario (Manifiesto electoral del 29N)",
+     "formato": "documento oficial",
+     "marco": null,
+     "nota": "El manifiesto conjunto de la coalición Unidad del Pueblo Canario, que firma NC-BC, pide «regular los precios del alquiler en zonas tensionadas» (p. 3), sin concretar un precio máximo ni extenderlo a toda España: +1 y no +2, igual que Compromís.",
+     "grupo": "codificacion_g2.json"
+    },
+    "motivo_cambio": "Cambia la fuente; el valor (+1) se mantiene. El programa va primero y trata la medida al menos tan directamente como el manifiesto del 3-nov («regular los precios del alquiler en zonas tensionadas»)."
+   },
+   "q04": {
+    "valor": 2,
+    "fuente": "programa",
+    "cita": "Mantenimiento de un impuesto a las grandes fortunas de forma permanente, reforzando además su progresividad, que evite que las CCAA gobernadas por PP, VOX, CC y otras fuerzas de derechas eliminen el impuesto de patrimonio de competencia autonómica",
+    "pagina": 12,
+    "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf",
+    "medio": "Programa oficial («Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», 19 pp.)",
+    "fecha": "2026-11-19",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, eje 9 (p. 12): mantener «de forma permanente» el impuesto a las grandes fortunas y reforzar su progresividad, para que las comunidades no puedan dejar sin efecto el de patrimonio. Permanencia expresa del impuesto estatal creado como temporal: +2, como ERC, el BNG, Podemos y el Frente Amplio.",
+    "sustituye": {
+     "valor": 1,
+     "fuente": "campaña",
+     "cita": "Defendemos una reforma fiscal progresiva para que contribuyan más las grandes empresas, los grandes patrimonios y las rentas del capital. Proponemos reforzar la tributación de las grandes fortunas",
+     "pagina": 4,
+     "url": "https://www.unidadpueblocanario.org/documentos/manifiesto-upc.pdf",
+     "medio": "Unidad del Pueblo Canario (Manifiesto electoral)",
+     "fecha": "2026-11-03",
+     "quien": "Unidad del Pueblo Canario (Manifiesto electoral del 29N)",
+     "formato": "documento oficial",
+     "marco": null,
+     "nota": "El Manifiesto electoral (eje 9, p. 4) propone «reforzar la tributación de las grandes fortunas», lo que implica mantener (y endurecer) la imposición estatal sobre ellas, pero no cita el impuesto vigente ni su permanencia: por eso +1 y no +2. La posición se toma del manifiesto conjunto de la coalición Unidad del Pueblo Canario, que firma NC-BC.",
+     "grupo": "codificacion_g2.json"
+    },
+    "motivo_cambio": "Cambia el valor: +1 → +2. El programa va primero y es más directo que el manifiesto del 3-nov, que solo pedía «reforzar la tributación de las grandes fortunas» sin citar el impuesto ni su permanencia (por eso +1)."
+   },
+   "q05": {
+    "valor": -1,
+    "fuente": "programa",
+    "cita": "Aumento de la progresividad en el tramo estatal del impuesto sobre la renta de las personas físicas (IRPF), ampliando el número de tramos a partir de 120.000 euros y aplicando tipos marginales crecientes.",
+    "pagina": 11,
+    "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf",
+    "medio": "Programa oficial («Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», 19 pp.)",
+    "fecha": "2026-11-19",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, eje 9 (p. 11): más tramos en el IRPF estatal a partir de 120.000 € con tipos marginales crecientes, dentro de una reforma «para mejorar su progresividad». Lo contrario de reducir la tarifa a dos tipos con un máximo del 25 %, sin rechazarlo de forma expresa: −1, como Podemos, el Frente Amplio y Adelante Andalucía. La deflactación hasta 65.000 € y la deducción por inflación (p. 12) son rebajas para rentas bajas y medias, no un cambio de la escala.",
+    "sustituye": {
+     "valor": null,
+     "grupo": "codificacion_g2.json"
+    },
+    "motivo_cambio": "Nueva: null → −1. El programa propone más tramos y tipos crecientes, lo contrario de la afirmación."
+   },
+   "q06": {
+    "valor": 2,
+    "fuente": "programa",
+    "cita": "Reducción de la jornada laboral: regular la jornada de 37,5 horas semanales y avanzar de forma decidida hacia la jornada laboral de 34 horas semanales",
+    "pagina": 7,
+    "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf",
+    "medio": "Programa oficial («Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», 19 pp.)",
+    "fecha": "2026-11-19",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, eje 3 (p. 7): «regular la jornada de 37,5 horas semanales» y avanzar hacia las 34. Propone de forma expresa la cifra de la afirmación y la página oficial del documento lo destaca en el resumen del eje («Regular la jornada de 37,5 horas semanales»): +2, como el PSOE, ERC y el Frente Amplio. No menciona el salario (ver notas_g21.md, duda 1).",
+    "sustituye": {
+     "valor": null,
+     "grupo": "codificacion_g2.json"
+    },
+    "motivo_cambio": "Nueva: null → +2. El programa propone de forma expresa la jornada de 37,5 horas."
+   },
+   "q09": {
+    "valor": 1,
+    "fuente": "programa",
+    "cita": "Derogar la Ley 15/1997 para evitar la privatización de los servicios sanitarios.",
+    "pagina": 6,
+    "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf",
+    "medio": "Programa oficial («Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», 19 pp.)",
+    "fecha": "2026-11-19",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, eje 2 (p. 6): derogar la Ley 15/1997, que permite la gestión de los servicios sanitarios por entidades privadas, «para evitar la privatización», y (p. 5) una gestión «prioritariamente directa, avanzando en la reversión de privatizaciones y externalizaciones». No prohíbe los conciertos con clínicas privadas: +1, como el Frente Amplio y EH Bildu, que solo derogan la Ley 15/1997.",
+    "sustituye": {
+     "valor": 1,
+     "fuente": "campaña",
+     "cita": "Defendemos una sanidad, educación y unos servicios sociales públicos, universales y de calidad, con financiación suficiente y gestión prioritariamente directa, avanzando en la reversión de privatizaciones y externalizaciones.",
+     "pagina": 3,
+     "url": "https://www.unidadpueblocanario.org/documentos/manifiesto-upc.pdf",
+     "medio": "Unidad del Pueblo Canario (Manifiesto electoral)",
+     "fecha": "2026-11-03",
+     "quien": "Unidad del Pueblo Canario (Manifiesto electoral del 29N)",
+     "formato": "documento oficial",
+     "marco": null,
+     "nota": "El manifiesto conjunto de la coalición Unidad del Pueblo Canario, que firma NC-BC, defiende una «gestión prioritariamente directa, avanzando en la reversión de privatizaciones y externalizaciones» (p. 3), como los conciertos con clínicas privadas. Va en la misma dirección que la afirmación, pero «prioritariamente» deja margen y descarta una prohibición total: +1 y no +2.",
+     "grupo": "codificacion_g2.json"
+    },
+    "motivo_cambio": "Cambia la fuente; el valor (+1) se mantiene. El programa va primero y es más directo que el manifiesto del 3-nov (solo la gestión «prioritariamente directa», que el programa conserva en la p. 5)."
+   },
+   "q16": {
+    "valor": 1,
+    "fuente": "programa",
+    "cita": "La coalición comparte la defensa de la soberanía popular, del derecho a decidir democráticamente y del derecho universal de los pueblos a la autodeterminación.",
+    "pagina": 16,
+    "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf",
+    "medio": "Programa oficial («Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», 19 pp.)",
+    "fecha": "2026-11-19",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, eje 11 «Autogobierno, soberanía popular y derecho a decidir» (p. 16), que también pide reconocer a Canarias «como sujeto político» (p. 15). Defiende el derecho a decidir y la autodeterminación de los pueblos sin hablar de un referéndum pactado ni de un territorio concreto: +1, como Ara Més («el dret a l'autodeterminació dels pobles») y EH Bildu («derecho a decidir»).",
+    "sustituye": {
+     "valor": null,
+     "grupo": "codificacion_g2.json"
+    },
+    "motivo_cambio": "Nueva: null → +1. El programa defiende el derecho a decidir y la autodeterminación, como Ara Més y EH Bildu."
+   },
+   "q21": {
+    "valor": 1,
+    "fuente": "programa",
+    "cita": "Derechos sexuales y reproductivos: garantizar el acceso a la educación [...] Estudiar la posibilidad de blindar el derecho al aborto en la Constitución, como ha hecho Francia.",
+    "pagina": 18,
+    "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf",
+    "medio": "Programa oficial («Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», 19 pp.)",
+    "fecha": "2026-11-19",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, eje 14 (p. 18): «Estudiar la posibilidad de blindar el derecho al aborto en la Constitución, como ha hecho Francia». A favor, pero solo como algo a estudiar y no como propuesta: +1 y no +2 (los +2 —PSOE, Frente Amplio, Podemos, Ara Més, Adelante Andalucía— lo proponen de forma expresa). Ver duda 2.",
+    "sustituye": {
+     "valor": null,
+     "grupo": "codificacion_g2.json"
+    },
+    "motivo_cambio": "Nueva: null → +1. El programa se compromete a estudiarlo, con Francia como modelo."
+   },
+   "q31": {
+    "valor": 2,
+    "fuente": "programa",
+    "cita": "garantizando un alquiler estable y seguro para personas inquilinas y pequeñas propietarias mediante la renovación automática de los contratos de alquiler de vivienda habitual tras finalizar su periodo inicial (por periodos de 5 o 7 años según el propietario sea persona física o jurídica).",
+    "pagina": 3,
+    "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf",
+    "medio": "Programa oficial («Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», 19 pp.)",
+    "fecha": "2026-11-19",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, eje 1 (p. 3): renovación automática de los contratos de vivienda habitual al terminar el periodo inicial, por periodos de cinco años (propietario persona física) o siete (persona jurídica). Es la medida de la afirmación, propuesta de forma expresa: +2, como Podemos, el Frente Amplio y Ara Més.",
+    "sustituye": {
+     "valor": null,
+     "grupo": "codificacion_g5.json"
+    },
+    "motivo_cambio": "Nueva: null → +2. El programa la propone de forma expresa."
+   },
+   "q33": {
+    "valor": -1,
+    "fuente": "programa",
+    "cita": "Exigimos una protección específica de la infancia y adolescencia migrante no acompañada, garantizando sus derechos y una distribución solidaria de las responsabilidades de acogida.",
+    "pagina": 16,
+    "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf",
+    "medio": "Programa oficial («Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», 19 pp.)",
+    "fecha": "2026-11-19",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, eje 13 «Canarias, frontera Sur» (p. 16): «una distribución solidaria de las responsabilidades de acogida» de la infancia migrante no acompañada; el eje 7 (p. 10) pide además fondos europeos para su acogida en Canarias. No dice que el reparto deba ser obligatorio: −1, como el Frente Amplio (Podemos, −2, propone un sistema «obligatorio»).",
+    "sustituye": {
+     "valor": -1,
+     "fuente": "campaña",
+     "cita": "Exigimos una protección específica de la infancia y adolescencia migrante no acompañada, garantizando sus derechos y una distribución solidaria de las responsabilidades de acogida.",
+     "pagina": 4,
+     "url": "https://www.unidadpueblocanario.org/documentos/manifiesto-upc.pdf",
+     "medio": "Unidad del Pueblo Canario (Manifiesto electoral)",
+     "fecha": "2026-11-03",
+     "quien": "Unidad del Pueblo Canario (Manifiesto electoral del 29N)",
+     "formato": "documento oficial",
+     "marco": null,
+     "nota": "El manifiesto electoral (pp. 4-5) de la coalición Unidad del Pueblo Canario, que firma NC-BC, pide «una distribución solidaria de las responsabilidades de acogida» de la infancia migrante no acompañada. No dice que el reparto deba ser obligatorio: −1.",
+     "grupo": "codificacion_g2.json"
+    },
+    "motivo_cambio": "Cambia la fuente; el valor (−1) se mantiene. El programa repite la frase del manifiesto del 3-nov y va primero."
+   },
+   "q34": {
+    "valor": 1,
+    "fuente": "programa",
+    "cita": "Y mostramos nuestra máxima solidaridad con las causas del Pueblo Palestino - denunciando el genocidio israelí y la complicidad internacional en este- y el Pueblo Saharaui en sus luchas por la autodeterminación e independencia.",
+    "pagina": 19,
+    "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf",
+    "medio": "Programa oficial («Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», 19 pp.)",
+    "fecha": "2026-11-19",
+    "quien": null,
+    "formato": null,
+    "marco": null,
+    "nota": "Programa oficial del 29-N, eje 16 (p. 19): solidaridad con el pueblo saharaui «en sus luchas por la autodeterminación e independencia», y apoyo a «las causas de los pueblos que defienden el derecho a la autodeterminación». Apoya la autodeterminación sin pronunciarse sobre la política del Gobierno ni sobre el plan de autonomía: +1, como en el manifiesto.",
+    "sustituye": {
+     "valor": 1,
+     "fuente": "campaña",
+     "cita": "Expresamos nuestra solidaridad con los pueblos palestino y saharaui en su lucha por la autodeterminación y la independencia",
+     "pagina": 5,
+     "url": "https://www.unidadpueblocanario.org/documentos/manifiesto-upc.pdf",
+     "medio": "Unidad del Pueblo Canario (Manifiesto electoral)",
+     "fecha": "2026-11-03",
+     "quien": "Unidad del Pueblo Canario (Manifiesto electoral del 29N)",
+     "formato": "documento oficial",
+     "marco": null,
+     "nota": "El manifiesto electoral (p. 5) de la coalición Unidad del Pueblo Canario, que firma NC-BC, expresa solidaridad con el pueblo saharaui «en su lucha por la autodeterminación y la independencia». Apoya la autodeterminación, pero sin pronunciarse sobre la política del Gobierno: +1.",
+     "grupo": "codificacion_g2.json"
+    },
+    "motivo_cambio": "Cambia la fuente; el valor (+1) se mantiene. El programa repite y amplía la frase del manifiesto del 3-nov y va primero."
+   }
+  }
+ }
+}

@@ -1675,41 +1675,47 @@
       "escanos_2023_nota": "NC-BC concurrió en solitario en 2023 (siglas NC-bc): 42.430 votos en Las Palmas y 3.165 en Santa Cruz de Tenerife, sin escaño (data/resultados/generales_2023.json).",
       "proyeccion_motivo": "Entra por su candidatura, Unidad del Pueblo Canario (UPC): un integrante (Podemos Canarias) tiene escaño en la XV legislatura y Sigma Dos/El Mundo (1-nov) da «un escaño en Canarias para CC o UPC». NC-BC no tiene escaño propio en la XV legislatura.",
       "programa": {
-        "estado": "no_publicado",
-        "url": null,
-        "fecha": null,
-        "titulo": null,
-        "paginas": null,
-        "sha256": null,
-        "fichero": null,
-        "texto": null,
-        "checked_at": "2026-11-18T20:48:00+01:00",
+        "estado": "publicado",
+        "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf",
+        "fecha": "2026-11-19",
+        "titulo": "Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)",
+        "paginas": 19,
+        "sha256": "ce35fb3cb8745524bee662d067d22773d73fbf3ef64fcf68c077a2bb7b1087e8",
+        "fichero": "data/sources/programas/upc/lineas-basicas-programa-upc.pdf",
+        "texto": "data/sources/programas/upc/lineas-basicas-programa-upc.txt",
+        "checked_at": "2026-11-20T10:00:00+01:00",
         "anunciado": null,
-        "documento_programatico": {
-          "tipo": "Manifiesto electoral (16 ejes); no se denomina programa",
-          "url": "https://www.unidadpueblocanario.org/documentos/manifiesto-upc.pdf",
-          "fecha": "2026-11-03",
-          "fecha_fuente": "Cabecera HTTP Last-Modified (Tue, 03 Nov 2026 13:33:36 GMT); PDF ModDate 2026-10-30",
-          "titulo": "Manifiesto electoral de la Unidad del Pueblo Canario (UPC) – Una sola papeleta. Todo un pueblo",
-          "paginas": 6,
-          "sha256": "502ce157ba499fb959e5ed735f593f903c2e5f17c79ee28bf2daad8ca18c941b",
-          "fichero": "data/sources/programas/upc/manifiesto-upc.pdf",
-          "texto": "data/sources/programas/upc/manifiesto-upc.txt",
-          "pagina_html": "data/sources/programas/upc/manifiesto-page.html"
-        },
-        "verificacion": "18-nov, 20:48: unidadpueblocanario.org sigue ofreciendo solo el manifiesto (/programa = «Manifiesto»; mismo PDF y Last-Modified del 15-nov); el sitemap no añade páginas y la última noticia sigue siendo del 9-nov; nuevacanariasbc.org: última entrada del 16-oct y su página /programa solo tiene los de 2023 y 2024. 17-nov, 20:30: unidadpueblocanario.org sigue ofreciendo solo el manifiesto electoral (/programa = «Manifiesto»; PDF con el mismo sha256 y Last-Modified del 15-nov); el sitemap no añade páginas (solo cambia lastmod de las fijas) y la última noticia sigue siendo del 9-nov. nuevacanarias.org sin entradas ni medios desde 2025; canarias.podemos.info sigue bloqueando también el navegador (verificación anti-bots de Cloudflare). 18-nov, 09:48: unidadpueblocanario.org sigue ofreciendo solo el manifiesto (/programa = «Manifiesto»; PDF con el mismo sha256 y Last-Modified del 15-nov); el sitemap no añade páginas (solo cambia lastmod de las fijas) y la última noticia sigue siendo del 9-nov. nuevacanariasbc.org (enlazada desde la web de UPC) sin entradas desde el 16-oct ni PDF nuevos; canarias.podemos.info sigue tras la verificación anti-bots de Cloudflare."
+        "verificacion": "20-nov, 10:00: descargado de nuevo de la URL oficial (HTTP 200, application/pdf, 594.069 bytes, Last-Modified Thu, 19 Nov 2026 19:34:30 GMT) con el mismo sha256 ce35fb3c…7e8 que la copia catalogada; la ruta antigua del manifiesto (unidadpueblocanario.org/documentos/manifiesto-upc.pdf) sirve ahora el mismo fichero (mismo sha256 y cabeceras). Cabeceras en data/sources/programas/upc/lineas-basicas-programa-upc.headers.txt. La página /manifiesto de unidadpueblocanario.org (copia del 20-nov en data/sources/programas/upc/manifiesto-page-2026-11-20.html) enlaza este PDF con el botón «Descargar manifiesto PDF» («Documento original · PDF · 19 páginas») y resume sus 5 bloques y 16 ejes con enlaces a cada página. Decisión del coordinador (20-nov): cuenta como el programa de UPC para el 29-N porque el propio documento se denomina programa electoral (portada: «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)») y concreta medidas (98 en el análisis del paso 2, data/programas/upc/extraccion.json; con cifras como el SMI de 1.800 €, el 9 % de vivienda pública, la deducción de 300, 225 y 175 € o el 0,7 % para cooperación). El manifiesto anterior (6 pp., 3-nov) y el manifiesto del PSC no se denominan programa y no lo concretan: siguen como documentos programáticos. Que la web lo siga llamando «manifiesto» no cambia la decisión: se atiende a cómo se denomina el documento. Metadatos del PDF: Microsoft Word para Microsoft 365, CreationDate y ModDate 16-nov-2026 21:23:53 CET. Comprobaciones anteriores (cuando el único documento era el manifiesto): 18-nov, 20:48: unidadpueblocanario.org sigue ofreciendo solo el manifiesto (/programa = «Manifiesto»; mismo PDF y Last-Modified del 15-nov); el sitemap no añade páginas y la última noticia sigue siendo del 9-nov; nuevacanariasbc.org: última entrada del 16-oct y su página /programa solo tiene los de 2023 y 2024. 17-nov, 20:30: unidadpueblocanario.org sigue ofreciendo solo el manifiesto electoral (/programa = «Manifiesto»; PDF con el mismo sha256 y Last-Modified del 15-nov); el sitemap no añade páginas (solo cambia lastmod de las fijas) y la última noticia sigue siendo del 9-nov. nuevacanarias.org sin entradas ni medios desde 2025; canarias.podemos.info sigue bloqueando también el navegador (verificación anti-bots de Cloudflare). 18-nov, 09:48: unidadpueblocanario.org sigue ofreciendo solo el manifiesto (/programa = «Manifiesto»; PDF con el mismo sha256 y Last-Modified del 15-nov); el sitemap no añade páginas (solo cambia lastmod de las fijas) y la última noticia sigue siendo del 9-nov. nuevacanariasbc.org (enlazada desde la web de UPC) sin entradas desde el 16-oct ni PDF nuevos; canarias.podemos.info sigue tras la verificación anti-bots de Cloudflare.",
+        "fecha_fuente": "Publicado en la web oficial de la coalición el 19-nov-2026: cabecera HTTP Last-Modified Thu, 19 Nov 2026 19:34:30 GMT (20:34 CET) del PDF, servido en la ruta nueva /manifiesto-20261119/ y en la antigua del manifiesto; la comprobación del 18-nov a las 20:48 solo encontró el manifiesto de 6 páginas. El documento se creó el 16-nov (metadatos del PDF). El título es el de la portada.",
+        "idioma": "es",
+        "pagina_campana": "https://www.unidadpueblocanario.org/manifiesto",
+        "otros_documentos": [
+          {
+            "tipo": "Manifiesto electoral (16 ejes, 6 pp.); no se denomina programa. Fue el documento programático de UPC hasta el 19-nov; desde entonces su URL sirve el programa (mismo sha256 ce35fb3c…), así que el manifiesto solo queda en la copia local",
+            "url": "https://www.unidadpueblocanario.org/documentos/manifiesto-upc.pdf",
+            "fecha": "2026-11-03",
+            "fecha_fuente": "Cabecera HTTP Last-Modified (Tue, 03 Nov 2026 13:33:36 GMT); PDF ModDate 2026-10-30",
+            "titulo": "Manifiesto electoral de la Unidad del Pueblo Canario (UPC) – Una sola papeleta. Todo un pueblo",
+            "paginas": 6,
+            "sha256": "502ce157ba499fb959e5ed735f593f903c2e5f17c79ee28bf2daad8ca18c941b",
+            "fichero": "data/sources/programas/upc/manifiesto-upc.pdf",
+            "texto": "data/sources/programas/upc/manifiesto-upc.txt",
+            "pagina_html": "data/sources/programas/upc/manifiesto-page.html"
+          }
+        ]
       },
-      "programa_aplicable": "NC-BC no ha publicado programa propio para el 29-N. Concurre dentro de Unidad del Pueblo Canario (NC-BC, Podemos, IU y Sumar), cuyo único documento es un «Manifiesto electoral» conjunto que NC-BC firma.",
-      "notas": "Se marca no_publicado porque el único documento es un «Manifiesto electoral» breve (~1.340 palabras) y la web lo presenta como «Manifiesto», no como programa. Decisión editorial revisable. Los dominios unidaddelpueblocanario.es (en venta) no son oficiales. La web de la coalición es https://www.unidadpueblocanario.org/; la del partido NC-BC no se ha verificado, por eso «web» queda vacía. [13-nov-2026] Desde esta fecha la entrada describe el partido, no la coalición electoral: en los pasos 1 y 2 se muestran partidos y en el paso 3 papeletas (ver «papeletas»).",
+      "programa_aplicable": "Programa de Unidad del Pueblo Canario (NC-BC, Podemos, IU y Sumar) para el 29-N («Líneas básicas del programa electoral», 19 pp., 19-nov), que firma NC-BC, para Las Palmas y Santa Cruz de Tenerife. Como documento conjunto cuenta también para Podemos y Frente Amplio (firmantes del pacto), detrás de sus propios programas.",
+      "notas": "Hasta el 19-nov se marcaba no_publicado porque el único documento era un «Manifiesto electoral» breve (~1.340 palabras) que no se denomina programa. El 19-nov UPC publicó las «Líneas básicas del programa electoral» (19 pp.), que se toman como su programa (ver programa.verificacion). Los dominios unidaddelpueblocanario.es (en venta) no son oficiales. La web de la coalición es https://www.unidadpueblocanario.org/; la del partido NC-BC no se ha verificado, por eso «web» queda vacía. [13-nov-2026] Desde esta fecha la entrada describe el partido, no la coalición electoral: en los pasos 1 y 2 se muestran partidos y en el paso 3 papeletas (ver «papeletas»).",
       "fuentes": [
         "https://www.unidadpueblocanario.org/manifiesto",
         "https://www.unidadpueblocanario.org/coalicion",
         "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77000",
         "https://www.elmundo.es/espana/encuestas/2026/11/01/6ae77446e4d4d8f3698b458a.html",
         "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2026",
-        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf"
+        "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf",
+        "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf"
       ],
-      "nota_coalicion": "En Canarias, NC-BC se presenta dentro de la coalición Unidad del Pueblo Canario (UPC), con Podemos, Izquierda Unida y Sumar. Aquí cuentan lo que dicen los líderes de NC-BC y los documentos que firma la coalición, como su manifiesto; no lo que dicen por su cuenta los líderes de los otros partidos.",
+      "nota_coalicion": "En Canarias, NC-BC se presenta dentro de la coalición Unidad del Pueblo Canario (UPC), con Podemos, Izquierda Unida y Sumar. Aquí cuentan lo que dicen los líderes de NC-BC y los documentos que firma la coalición, como su programa (19-nov) y su manifiesto; no lo que dicen por su cuenta los líderes de los otros partidos.",
       "papeletas": [
         {
           "siglas": "NC-BC, PODEMOS, IU, SUMAR",

@@ -1,0 +1,56 @@
+{
+ "aprobado": true,
+ "revisor": "Claude (Anthropic), pasada independiente",
+ "fecha": "2026-11-20",
+ "programa_sha256": "ce35fb3cb8745524bee662d067d22773d73fbf3ef64fcf68c077a2bb7b1087e8",
+ "alcance": "12 prioridades × 8 criterios y campos «titulo», «resumen», «cita», «pagina» y «beneficiarios» de data/programas/upc/evaluacion.json y su «nota»; las 12 prioridades de extraccion.json con sus justificaciones y, por muestreo, 14 de las 98 medidas (resumen, área, página y cita); lectura.md, y la entrada upc de data/partidos/partidos.json, contra el programa «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)» (19 pp.) y las fuentes citadas (prompt 4). El texto del programa se leyó completo. El PDF se descargó de nuevo el 20-nov de la URL oficial con una petición normal: HTTP 200, application/pdf, 594.069 bytes, Last-Modified 19-11-2026 19:34:30 GMT y el mismo SHA-256 (ce35fb3c…7e8). Citas: verify_quotes, 115 citas, 0 no encontradas; además se comprobó que el primer tramo de cada una de las 98 citas de extraccion.json y cada tramo de las 12 citas de evaluacion.json está en la página indicada (página del PDF, deducida del número al pie): 0 discrepancias. La página oficial /manifiesto (copia del 20-nov) recoge literalmente los resúmenes por eje que citan las justificaciones. Fuentes: salvo el propio programa, todas las URL de evaluacion.json figuraban ya en evaluaciones aprobadas (comprobado por comparación de URL), y sus textos se reaprovechan de upc/compromisos (versión de HEAD), eh_bildu-01, frente_amplio-01, podemos-03, psoe-05, podemos-08, cc-02, cc-03 y cc-09, comparados frase a frase. Se abrieron de nuevo los datos nuevos o cambiados: Estatuto de Canarias en el BOE (art. 143, competencia exclusiva en vivienda; art. 166.3, adicionalidad del REF), Ley 21/2021 (preámbulo: «se opta por la derogación del factor de sostenibilidad introducido por la Ley 23/2013»; disposición derogatoria única, apartado 2: deroga el art. 211 de la LGSS), Ley 19/1994 (art. 6: 75 % aéreo con el resto de España e interinsular y marítimo con el resto de España, 50 % marítimo interinsular; art. 3.4), fallo de la STC 79/2024 (anula el art. 16, parte del 19.3, el tercer párrafo del 27.1, el 27.3 y la disposición transitoria primera de la Ley 12/2023), y las copias locales de la entrevista de EFE del 12-nov y de la crónica de Canarias7 del 4-nov. Cálculos propios comprobados: 1.800 × 12 = 21.600 €; 21.600 / 18.004 = +20,0 %; 21.600 / 24.497 = 88 %; 17.094 = 1.221 × 14; 18.004 / 14 = 1.286 € (+5,3 %); 80 m² × 2.230 €/m² = 178.400 €; × 1,5 millones = 267.600 M€, el 15,8 % del PIB de 2025 (1.690.012 M€), «16 %». Búsqueda web del 20-nov sobre la zona tensionada de Las Palmas de Gran Canaria (antecedentes de upc-c01): sin resolución publicada después de la información pública.",
+ "catalogo": "Correcto. URL oficial, título de la portada, 19 páginas, fecha 19-nov (Last-Modified), SHA-256 y rutas del PDF y del texto coinciden con lo comprobado hoy; la ruta antigua del manifiesto sirve el mismo fichero, según la verificación catalogada. El documento se denomina programa electoral en la portada, que es el criterio de la decisión del coordinador.",
+ "seleccion": "Las 12 prioridades coinciden con extraccion.json y se justifican con lo que el propio documento destaca: cubren 9 de los 16 ejes y los cinco bloques salvo el 4; cinco son la primera medida de su eje o la única concreta de su bloque (upc-01, upc-05, upc-06, upc-11 y upc-12), dos se repiten en dos ejes (upc-07, ejes 6 y 8; upc-08, ejes 8 y 10) y todas figuran en el resumen por ejes de la página oficial que publica el programa (comprobado sobre la copia del 20-nov). El manifiesto anterior y lo que los líderes destacaron en campaña se usan solo como corroboración, y las referencias a la nota del 27-oct, a EFE (12-nov) y a Canarias7 (4-nov) están en las copias locales. Las medidas que no entraron y por qué (jornada de 37,5 y 34 horas, Ley 15/1997, deducción por inflación, IGIC y tarifa plana de autónomos, empresa pública de energía, POSEI, voto a los 16) constan en la nota de extraccion.json. Muestreo de medidas: resúmenes neutros y fieles a la cita, páginas correctas; el área de upc-p053 (fondos FEDER y FSE+, «exterior y defensa») es discutible pero no afecta a la evaluación.",
+ "igual_estandar": "Se compararon las 96 valoraciones con las equivalentes aprobadas. Reaprovechadas con las mismas valoraciones de la base «compromisos» revisada (versión de HEAD, con las correcciones de las auditorías del 14, 15, 16 y 18-nov ya incorporadas): upc-01 (antes 03), upc-08 (antes 04), upc-09 (antes 05), upc-10 (antes 06), upc-11 (antes 09) y upc-12 (antes 10), con «concreción» rehecha sobre el programa y sin cambio de nota. upc-02 = eh_bildu-01 en los ocho criterios (concreción M en ambas, por elementos distintos que cada texto dice: aquí falta el diseño del «control de precios»; allí, la duración de la prórroga). upc-03: legal y antecedentes como podemos-03 (art. 33.3, SSTC 93/2015 y 16/2018); financiación M como frente_amplio-01 (coste estimable con las mismas cifras: 318.000 viviendas, 9 %, 1,5 millones, 2.230 €/m², 7.000 M€); internacional igual que frente_amplio-01. upc-04 = psoe-05 y compromis-07 en concreción, legal y financiación (M), con el criterio único del 18-nov sobre las votaciones (art. 167, sin votación obligatoria; el gasto en pensiones es lo que hace la financiación M); beneficiarios F y antecedentes M como en su versión anterior. upc-05 = podemos-08 en los ocho criterios (mismas cifras: 735,90 €, 1.221 €, 17.094 €, 18.004 €, 24.497 €, 173,6 M€, 2,5 millones; aquí solo la variante de doce pagas). upc-06 combina cc-02 (legal F, adicionalidad del REF) y cc-03 (evidencia, internacional, financiación M); antecedentes M y beneficiarios M frente a la F de cc-02 y cc-03 respectivamente, justificado en el texto (la pobreza como variable es nueva y no hay cuantificación de los recursos del REF afectados, como en cc-02). upc-07 = cc-09 en los ocho criterios, con la extensión al marítimo interinsular explicada en legal y financiación. upc-10 = bng-09 y erc-12; upc-12 = psoe-12 y frente_amplio-12. La financiación «no_verificable» de upc-08 y upc-09 sigue la regla de la auditoría aplicada el 12-nov (cc-06, erc-09). Los textos no comparan partidos ni contienen adjetivos de valor.",
+ "recuento_inicial": {
+  "favorable": 11,
+  "mixta": 82,
+  "desfavorable": 0,
+  "no_verificable": 3
+ },
+ "recuento_final": {
+  "favorable": 11,
+  "mixta": 82,
+  "desfavorable": 0,
+  "no_verificable": 3
+ },
+ "recuento_nota": "Recuento de las 12 propuestas × 8 criterios. Ninguna valoración cambia; las 3 entradas de «cambios» son correcciones de texto (upc-08 concreción, upc-03 financiación) y una fuente añadida (upc-12, evidencia y largo plazo).",
+ "cambios": [
+  {
+   "propuesta": "upc-08",
+   "criterio": "concrecion",
+   "antes": "(p. 13), y defenderlo «en los foros estatales y europeos».",
+   "despues": "(p. 13), en un eje que abre con el compromiso de defender «en los foros estatales y europeos» una planificación del crecimiento acorde con la capacidad de las islas.",
+   "motivo": "Fidelidad a la cita: en el programa (p. 13) lo que se defenderá «en los foros estatales y europeos» es «una planificación del crecimiento acorde con la capacidad real de las Islas», no la moratoria; la frase atribuía la cita a la moratoria.",
+   "fecha": "2026-11-20"
+  },
+  {
+   "propuesta": "upc-03",
+   "criterio": "financiacion",
+   "antes": "exigiría unas 1,5 millones de nuevas viviendas de alquiler social.",
+   "despues": "exigiría unas 1,5 millones de nuevas viviendas de alquiler social; el programa mide su 9 % sobre todo el parque residencial, que incluye también las viviendas secundarias y vacías, de modo que su meta exigiría más.",
+   "motivo": "Precisión: la referencia del Banco de España y del Plan Estatal (1,7 % de los hogares; converger con la media de la UE) se mide sobre hogares, y el programa fija el 9 % «del parque residencial» (p. 3); sin la aclaración, el cálculo de 1,5 millones y 267.000 M€ parecía el coste de la meta del programa, que sería mayor. La valoración no cambia (coste estimable, sin financiación).",
+   "fecha": "2026-11-20"
+  },
+  {
+   "propuesta": "upc-12",
+   "criterio": "evidencia, largo_plazo (fuentes)",
+   "antes": "(sin fuente para la mención de Campos)",
+   "despues": "La Voz de Lanzarote (EFE, 12-11-2026): entrevista a Luis Campos — https://www.lavozdelanzarote.com/actualidad/politica/campos-upc-alerta-29n-no-va-alternancia-sino-perder-todo-conquistado-en-70-anos_247303_102.html",
+   "motivo": "Los dos textos dicen que Campos relacionó la propuesta con la migración en campaña (EFE, 12-11-2026); la fuente, que estaba en «concreción» en la versión anterior, se quitó al rehacer ese criterio sobre el programa. Comprobado en la copia local: «reclama vías legales de asilo en origen, subir al 0,7% el presupuesto estatal para cooperación…», dentro de la política migratoria.",
+   "fecha": "2026-11-20"
+  }
+ ],
+ "dudas": [
+  "upc-03, alcance de la meta: el programa obliga a «las CCAA y las administraciones locales» y da el 2 % de Canarias como punto de partida, sin decir si el 9 % es una meta de cada comunidad o del conjunto de España. La financiación usa la referencia estatal (1,5 millones de viviendas, Banco de España); no se ha localizado el parque residencial de Canarias para dar la cifra regional.",
+  "upc-02: el paréntesis «(por periodos de 5 o 7 años según el propietario sea persona física o jurídica)» podría leerse como la duración del periodo inicial (la de la Ley de Arrendamientos Urbanos desde 2019) y no de cada renovación; la evaluación lo lee como periodos de renovación («por periodos», en plural, tras «renovación automática»), el esquema del Real Decreto-ley 28/2026. Si el editor prefiere la otra lectura, cambian concreción y antecedentes, no las valoraciones.",
+  "upc-07, concreción «favorable» como cc-09: el programa da el porcentaje, el ámbito y el instrumento, pero ni el coste ni plazo; se mantiene por ser el mismo hecho que cc-09 (bonificación ya vigente y anual), pero es el caso frontera de la rúbrica.",
+  "Selección (decisión editorial, no error): la jornada de 37,5 horas y luego 34 (upc-p033) es la segunda línea del eje 3 en la página oficial y tiene cifras; quedó fuera frente a upc-09 (tasa turística) y upc-12 (0,7 %) porque no estaba en el manifiesto ni en la campaña. La justificación es documental y coherente con las demás selecciones.",
+  "Fuera del alcance de esta revisión (no se ha tocado): la «verificacion» de partidos.json dice que el programa «concreta unas 60 medidas», y extraccion.json recoge 98 medidas concretas; no es incoherente si «unas 60» se refiere a las que tienen cifra o instrumento, pero conviene alinear la redacción."
+ ]
+}

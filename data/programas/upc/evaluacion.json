@@ -1,0 +1,1737 @@
+{
+ "partido": "upc",
+ "programa_sha256": "ce35fb3cb8745524bee662d067d22773d73fbf3ef64fcf68c077a2bb7b1087e8",
+ "modelo": "Claude (Anthropic)",
+ "fecha": "2026-11-20",
+ "nota": "Evaluación de las 12 prioridades de extraccion.json (programa de Unidad del Pueblo Canario «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», publicado el 19-nov-2026 en unidadpueblocanario.org, 19 páginas en castellano; cuenta como programa de NC-BC, que firma la coalición, por decisión del coordinador del 20-nov, ver partidos.json). Cuando el hecho es el mismo se reaprovechan, con sus fuentes y cifras, textos de evaluaciones ya revisadas: las de los compromisos de campaña de UPC (base «compromisos», revisadas el 12-nov y ajustadas por las auditorías de coherencia; se retiran al publicarse el programa, salvo la de los ayuntamientos y las zonas tensionadas, que no está en él y pasa al complemento, y se conservan en el historial del repositorio) para upc-01 (antes 03), -04 (antes 07), -05 (antes 08), -08 (antes 04), -09 (antes 05), -10 (antes 06), -11 (antes 09) y -12 (antes 10), y para parte de -02 y -03 (antes 02); eh_bildu-01 para upc-02 (prórroga automática; el programa propone el esquema de cinco o siete años del Real Decreto-ley 28/2026); frente_amplio-01 y podemos-03 para upc-03 (parque público y expropiación del uso); psoe-05 para la parte constitucional de upc-04; podemos-08 para upc-05 (SMI de 1.800 €, aquí en doce pagas); cc-02 y cc-03 para upc-06 (REF fuera de la financiación autonómica, insularidad); cc-09 para upc-07 (descuento del 75 %). La concreción se juzga siempre sobre el programa y es nueva en las 12; los cálculos propios se señalan como tales. Valoraciones que difieren de las de la base «compromisos» por una diferencia de hecho que el texto dice: financiación «mixta» en upc-05 (el programa da la cifra de 1.800 € en doce pagas; el compromiso no tenía cuantía y era «no_verificable», como podemos-08 es «mixta» con cifra) y encaje legal «mixta» en upc-04 (el programa añade llevar la garantía a la Constitución sin decir qué artículo, como psoe-05 y compromis-07; el compromiso solo pedía mantener la regla legal y era «favorable»). Con el criterio único de la auditoría de coherencia del 18-nov sobre el coste de las votaciones, upc-01 (art. 168) sigue «no_verificable» porque su coste principal, un derecho exigible a la vivienda, no puede estimarse, y upc-04 es «mixta» por el gasto en pensiones, con la referencia del art. 168 en el texto. Varias medidas (moratoria y tasa turísticas, vivienda) son de competencia autonómica canaria o afectan a ella, y así se indica en «Encaje legal». Los identificadores upc-01 a upc-12 de este fichero son los del programa; los de la evaluación retirada (base «compromisos», upc-01 a upc-10) eran otra base y no coinciden en contenido. La URL del manifiesto anterior (/documentos/manifiesto-upc.pdf) sirve desde el 19-nov el programa, así que las fuentes reaprovechadas que la citaban apuntan ahora a la página del programa.",
+ "propuestas": [
+  {
+   "id": "upc-01",
+   "titulo": "Reforma constitucional para que la vivienda sea un derecho fundamental exigible",
+   "area": "vivienda",
+   "resumen": "Reconocer en la Constitución la vivienda como derecho fundamental y garantizar un derecho subjetivo a una vivienda digna, adecuada, accesible y asequible, que los poderes públicos estarían obligados a hacer efectivo.",
+   "cita": "Declaración de la vivienda como derecho fundamental, blindando este derecho en la Constitución y garantizando el derecho subjetivo a una vivienda digna, adecuada, accesible y asequible para todas las personas.",
+   "cita_traduccion": null,
+   "pagina": 2,
+   "beneficiarios": "Las personas con dificultades para acceder a una vivienda, en especial los inquilinos con sobreesfuerzo (el 26,8 % de los hogares que alquilan a precio de mercado en España, según Eurostat citado por el Banco de España). Quién asumiría el coste y cuánto depende de las obligaciones que una ley orgánica posterior impusiera a los poderes públicos, que el programa no concreta.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 2) abre con esta medida: declarar la vivienda «derecho fundamental», blindarla «en la Constitución» y garantizar «el derecho subjetivo» a una vivienda digna, de modo que el acceso pase a ser «una obligación efectiva de los poderes públicos». Identifica el objetivo y el instrumento (una reforma constitucional), pero no dice qué artículos cambiaría, si trasladaría el derecho del art. 47 a la sección de derechos fundamentales, qué prestaciones serían exigibles ni en qué plazo.",
+     "fuentes": [
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=2",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 2"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "Hoy el derecho a la vivienda es un principio rector (art. 47, capítulo III), que solo puede alegarse ante los jueces según lo que dispongan las leyes que lo desarrollen (art. 53.3). Convertirlo en derecho fundamental de la sección 1.ª exige el procedimiento del art. 168: dos tercios de cada Cámara, disolución de las Cortes, ratificación y aprobación por dos tercios de las nuevas Cámaras y referéndum obligatorio. Después tendría protección preferente y amparo ante el Tribunal Constitucional (art. 53.2) y debería desarrollarse por ley orgánica (art. 81).",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "no_verificable",
+     "texto": "El procedimiento del art. 168 que exige la reforma obliga a disolver las Cortes, celebrar elecciones y un referéndum de ratificación, con un coste estimable por referencia (la organización de las elecciones generales de 2023 costó unos 220,8 M€, según el Ministerio del Interior). Pero el coste principal sería otro: un derecho fundamental exigible ante los tribunales podría obligar a las administraciones a proveer vivienda, y ese coste dependería del contenido que fijara la ley orgánica de desarrollo, que el programa no define; no hay estimaciones públicas.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://es.euronews.com/2026/10/08/elecciones-espana-presupuesto-superara-270-millones",
+       "titulo": "Euronews (8-10-2026): España gastará más de 270 millones en las elecciones del 29N entre logística y subvenciones"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Chilton y Versteeg (2016), con datos de 186 países, hallan que los derechos de organización recogidos en las constituciones se asocian a más protección efectiva, pero los derechos individuales no. Con datos de 196 países, los mismos autores (2017) no encuentran que constitucionalizar los derechos a la educación y a la sanidad aumente el gasto en esas partidas. No hemos localizado estudios específicos sobre el derecho a la vivienda.",
+     "fuentes": [
+      {
+       "url": "https://econpapers.repec.org/RePEc:wly:amposc:v:60:y:2016:i:3:p:575-589",
+       "titulo": "Chilton y Versteeg (2016), Do constitutional rights make a difference?, American Journal of Political Science"
+      },
+      {
+       "url": "https://econpapers.repec.org/RePEc:ucp:jlawec:doi:10.1086/696826",
+       "titulo": "Chilton y Versteeg (2017), Rights without Resources: The Impact of Constitutional Social Rights on Social Spending, Journal of Law and Economics"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Portugal (art. 65) y Sudáfrica (art. 26) reconocen en su Constitución el derecho a la vivienda. Portugal tiene, según el Banco de España, un parque de vivienda pública del 1,1 % de las viviendas principales, inferior al español (1,5 %). No hemos localizado evaluaciones publicadas del efecto de esa constitucionalización sobre el acceso a la vivienda.",
+     "fuentes": [
+      {
+       "url": "https://www.constituteproject.org/constitution/Portugal_2005",
+       "titulo": "Constitución de Portugal, art. 65 (traducción de Constitute Project)"
+      },
+      {
+       "url": "https://www.constituteproject.org/constitution/South_Africa_2012",
+       "titulo": "Constitución de Sudáfrica, art. 26 (traducción de Constitute Project)"
+      },
+      {
+       "url": "https://www.bde.es/f/webbe/SES/Secciones/Publicaciones/PublicacionesAnuales/InformesAnuales/25/InfAnual_2025.pdf",
+       "titulo": "Banco de España, Informe Anual 2025, capítulo 2 (vivienda)"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "El art. 47 recoge el derecho a la vivienda como principio rector desde 1978, y la Ley 12/2023 lo desarrolló por ley ordinaria. La Constitución se ha reformado cuatro veces (1992, 2011, 2024 y 2026, en los arts. 13.2, 135, 49 y 69.3), ninguna en las partes que exigen el procedimiento del art. 168, que no se ha utilizado nunca.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203",
+       "titulo": "Ley 12/2023, de 24 de mayo, por el derecho a la vivienda (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a quienes tienen dificultades para acceder a una vivienda; en España, el 26,8 % de los hogares que alquilan a precio de mercado dedica más del 30 % de su renta bruta al alquiler (Eurostat, según el Banco de España). Quién asumiría el coste y en qué cuantía depende de las obligaciones que fijara la ley de desarrollo, que el programa no concreta.",
+     "fuentes": [
+      {
+       "url": "https://www.bde.es/f/webbe/SES/Secciones/Publicaciones/PublicacionesAnuales/InformesAnuales/25/InfAnual_2025.pdf",
+       "titulo": "Banco de España, Informe Anual 2025, capítulo 2 (vivienda)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Daría a los afectados un procedimiento preferente ante los tribunales y el recurso de amparo (art. 53.2), lo que trasladaría a los jueces parte de las decisiones sobre vivienda. Una vez en la sección 1.ª, cualquier cambio posterior volvería a exigir el procedimiento del art. 168. La evidencia comparada no muestra que constitucionalizar derechos sociales aumente por sí solo el gasto en ellos (Chilton y Versteeg, 2017).",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://econpapers.repec.org/RePEc:ucp:jlawec:doi:10.1086/696826",
+       "titulo": "Chilton y Versteeg (2017), Rights without Resources: The Impact of Constitutional Social Rights on Social Spending, Journal of Law and Economics"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "upc-02",
+   "titulo": "Control de los precios del alquiler y renovación automática de los contratos por cinco o siete años",
+   "area": "vivienda",
+   "resumen": "Controlar los precios del alquiler para impedir subidas abusivas y renovar automáticamente los contratos de vivienda habitual al terminar su periodo inicial, por periodos de cinco años si el propietario es persona física y de siete si es persona jurídica.",
+   "cita": "La intervención del mercado del alquiler para impedir las subidas abusivas mediante el control de precios, y garantizando un alquiler estable y seguro [...] mediante la renovación automática de los contratos de alquiler de vivienda habitual tras finalizar su periodo inicial (por periodos de 5 o 7 años según el propietario sea persona física o jurídica).",
+   "cita_traduccion": null,
+   "pagina": 3,
+   "beneficiarios": "Los hogares que viven de alquiler a precio de mercado, el 16,7 % de los de España (unos 3,3 millones aplicado a los 19,95 millones de hogares que estima el INE para 2026, cálculo propio) y el 16,9 % en Canarias (INE, 2025), sobre todo los que llegan al final del plazo mínimo del contrato. El coste no es presupuestario: lo asumen los arrendadores, con menos subida de renta y menos posibilidades de recuperar la vivienda o fijar una nueva renta, sin cuantificar.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 3) propone dos cosas. La renovación automática de los contratos de vivienda habitual al terminar su periodo inicial está definida: por periodos de cinco años si el propietario es persona física y de siete si es jurídica, el esquema del Real Decreto-ley 28/2026. El «control de precios» para «impedir las subidas abusivas» no dice qué instrumento usaría (índices de referencia, topes a la actualización o a la renta inicial), si se aplicaría en todo el territorio o en zonas tensionadas, ni cuánto. No fija plazo ni dice en qué casos podría el arrendador no renovar.",
+     "fuentes": [
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=3",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 3"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20822",
+       "titulo": "Real Decreto-ley 28/2026, de 6 de octubre, medidas urgentes para reforzar la estabilidad de los contratos de arrendamiento de vivienda habitual (BOE)"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "La duración, las prórrogas y la renta del alquiler son legislación civil, competencia del Estado (art. 149.1.8.ª CE): el Real Decreto-ley 28/2026 cita la STC 79/2024 para recordar que forman parte de los aspectos esenciales del régimen obligacional del contrato, y bastaría una ley ordinaria. La Ley de Arrendamientos Urbanos, en la redacción del Real Decreto-ley 29/2026, ya limita la actualización anual a la variación del Índice de Referencia para la Actualización Anual de los Contratos de Arrendamiento de Vivienda (IRAV), y hasta el 31-12-2027 al 2 % salvo nuevo pacto; la STC 26/2025 avaló el límite de la renta de los nuevos contratos en las zonas de mercado residencial tensionado por tratarse de una figura de ámbito «excepcional y limitado, tanto territorial como temporalmente», de modo que un control general y permanente no tiene ese aval. El preámbulo del Real Decreto-ley 28/2026 recuerda que el Tribunal Constitucional consideró conforme a la Constitución la prórroga forzosa de la legislación anterior (STC 89/1994).",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20822",
+       "titulo": "Real Decreto-ley 28/2026, de 6 de octubre, medidas urgentes para reforzar la estabilidad de los contratos de arrendamiento de vivienda habitual (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+       "titulo": "Real Decreto-ley 29/2026, de 6 de octubre, de medidas urgentes para la protección de la función social de la vivienda (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-12808",
+       "titulo": "STC 79/2024, de 21 de mayo, sobre la Ley 12/2023 (BOE)"
+      },
+      {
+       "url": "https://boe.es/boe/dias/2025/02/28/pdfs/BOE-A-2025-4079.pdf",
+       "titulo": "STC 26/2025, de 29 de enero, sobre la Ley 12/2023 (BOE 28-2-2025)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "favorable",
+     "texto": "Es una regulación del contrato civil sin coste presupuestario directo: el Real Decreto-ley 28/2026, que regulaba una prórroga obligatoria por plazos sucesivos de cinco o siete años, como la que propone el programa, modificaba la Ley de Arrendamientos Urbanos sin medidas de gasto, y los límites a la renta del Real Decreto-ley 29/2026 tampoco tienen coste presupuestario asociado. El coste recae en los arrendadores, no en los presupuestos.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20822",
+       "titulo": "Real Decreto-ley 28/2026, de 6 de octubre, medidas urgentes para reforzar la estabilidad de los contratos de arrendamiento de vivienda habitual (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+       "titulo": "Real Decreto-ley 29/2026, de 6 de octubre, de medidas urgentes para la protección de la función social de la vivienda (BOE)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "No hemos localizado evaluaciones de la ampliación del plazo mínimo del alquiler a cinco o siete años de 2019 ni de los topes a la actualización aplicados desde 2022, que son los antecedentes más cercanos de la medida. Una revisión de la literatura (Kholodilin, 2024) concluye que los controles de alquiler frenan las rentas de las viviendas controladas, pero tienen efectos adversos amplios. Con datos de San Francisco, Diamond, McQuade y Qian (2019) hallan que extender el control de alquileres redujo un 20 % la movilidad de los inquilinos protegidos, pero los propietarios afectados redujeron un 15 % la oferta en alquiler, lo que según los autores probablemente subió los alquileres de mercado a largo plazo; en Cataluña, el control de 2020 redujo las rentas entre un 4 % y un 6 % sin reducción observable de la oferta (Jofre-Monseny y otros, 2023).",
+     "fuentes": [
+      {
+       "url": "https://www.diw.de/de/diw_01.c.893635.de/publikationen/externe_referierte_aufsaetze/2024_0000/rent_control_effects_through_the_lens_of_empirical_research__an_almost_complete_review_of_the_literature.html",
+       "titulo": "Kholodilin (2024), Rent control effects through the lens of empirical research, Journal of Housing Economics (ficha DIW)"
+      },
+      {
+       "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20181289",
+       "titulo": "Diamond, McQuade y Qian (2019), The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco, American Economic Review 109(9)"
+      },
+      {
+       "url": "https://diposit.ub.edu/items/3351bd7e-9352-4975-9705-6a3a9dc705c6/full",
+       "titulo": "Jofre-Monseny, Martínez-Mazza y Segú (2023), Effectiveness and supply effects of high-coverage rent control policies, Regional Science and Urban Economics 101"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Según el preámbulo del Real Decreto-ley 28/2026, en Alemania el contrato es por regla general indefinido y el arrendador solo puede ponerle fin con un interés legítimo, y en Francia se renueva tácitamente cada tres o seis años y la no renovación exige causa tasada. Los Países Bajos hicieron del contrato indefinido la norma el 1-7-2024, a la vez que regulaban las rentas medias; según su Gobierno (10-4-2025), en 2024 se vendieron más de 30.000 viviendas de alquiler y el parque privado de alquiler se redujo en 413 viviendas netas, y anunció que volvería a permitir contratos temporales a todos los estudiantes. No se ha localizado una evaluación publicada de los resultados de estos regímenes.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20822",
+       "titulo": "Real Decreto-ley 28/2026, de 6 de octubre, medidas urgentes para reforzar la estabilidad de los contratos de arrendamiento de vivienda habitual (BOE)"
+      },
+      {
+       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2025/04/10/maatregelen-voor-behoud-middenhuurwoningen",
+       "titulo": "Gobierno de los Países Bajos (10-4-2025): medidas para conservar la vivienda de alquiler medio, tras el seguimiento de la Wet vaste huurcontracten y la Wet betaalbare huur"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "La Ley de Arrendamientos Urbanos de 1994 fijó un plazo mínimo de prórroga obligatoria que el Real Decreto-ley 7/2019 amplió a cinco años, o siete si el arrendador es persona jurídica, seguidos de hasta tres años de prórroga tácita. El Real Decreto-ley 28/2026, que establecía la prórroga obligatoria por plazos sucesivos de cinco o siete años con indemnización al inquilino si el arrendador no prorrogaba (el esquema que propone el programa), fue derogado por la Diputación Permanente el 12-11-2026 con los votos de PP, Vox, Junts y PNV (Naiz), mientras se convalidaba el Real Decreto-ley 29/2026. Este, en vigor desde el 8-10-2026, limita la actualización anual al IRAV y, hasta el 31-12-2027, al 2 % salvo nuevo pacto, y su disposición final quinta permite al inquilino al corriente de pago pedir una prórroga extraordinaria, por anualidades y hasta dos años, de los contratos cuya prórroga obligatoria venza antes del 31-12-2028; su preámbulo recuerda que tras la inflación de 2022 y 2023 el Gobierno ya estableció una limitación extraordinaria de la actualización de las rentas.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-26003",
+       "titulo": "Ley 29/1994, de 24 de noviembre, de Arrendamientos Urbanos (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20822",
+       "titulo": "Real Decreto-ley 28/2026, de 6 de octubre, medidas urgentes para reforzar la estabilidad de los contratos de arrendamiento de vivienda habitual (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23754",
+       "titulo": "Resolución de 12-11-2026 de la Diputación Permanente del Congreso: derogación del Real Decreto-ley 28/2026 (BOE)"
+      },
+      {
+       "url": "https://www.naiz.eus/es/info/noticia/20261112/decretos-de-vivienda-el-congreso-aprueba-uno-y-rechaza-el-otro-por-el-voto-del-pnv",
+       "titulo": "Naiz (12-11-2026): la Diputación Permanente convalida el RDL 29/2026 y rechaza el RDL 28/2026"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+       "titulo": "Real Decreto-ley 29/2026, de 6 de octubre, de medidas urgentes para la protección de la función social de la vivienda (BOE)"
+      },
+      {
+       "url": "https://www.congreso.es/es/busqueda-de-iniciativas?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=130%2F000060",
+       "titulo": "Congreso de los Diputados, iniciativa 130/000060 (RDL 29/2026): «Concluido - (Convalidado)» el 12-11-2026"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a los hogares que viven de alquiler a precio de mercado, el 16,7 % de los de España según la ECV 2025 (unos 3,3 millones aplicado a los 19,95 millones de hogares que estima el INE para 2026, cálculo propio), y en particular a los que llegan al final del plazo mínimo del contrato; no hemos localizado una cifra oficial de cuántos son. El coste lo asumen los arrendadores, con menos subida de renta y menos posibilidades de recuperar la vivienda o fijar una nueva renta al cambiar de inquilino, sin cuantificar.",
+     "fuentes": [
+      {
+       "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/9997?nult=1",
+       "titulo": "INE, Encuesta de Condiciones de Vida 2025: hogares por régimen de tenencia de la vivienda y comunidad autónoma (tabla 9997)"
+      },
+      {
+       "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/60131?nult=1",
+       "titulo": "INE, Encuesta Continua de Hogares 2026: hogares en viviendas familiares (tabla 60131)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20822",
+       "titulo": "Real Decreto-ley 28/2026, de 6 de octubre, medidas urgentes para reforzar la estabilidad de los contratos de arrendamiento de vivienda habitual (BOE)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Ventaja: más estabilidad para los hogares inquilinos y menos subidas de renta asociadas al fin del contrato, objetivo declarado de los Reales Decretos-leyes 28/2026 y 29/2026. Riesgo documentado en otros contextos: que parte de los propietarios retire viviendas del alquiler, como ocurrió en San Francisco y en los Países Bajos en 2024, lo que el PNV adujo para votar en contra de la prórroga. El efecto del «control de precios» dependería de un diseño que el programa no concreta.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20822",
+       "titulo": "Real Decreto-ley 28/2026, de 6 de octubre, medidas urgentes para reforzar la estabilidad de los contratos de arrendamiento de vivienda habitual (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+       "titulo": "Real Decreto-ley 29/2026, de 6 de octubre, de medidas urgentes para la protección de la función social de la vivienda (BOE)"
+      },
+      {
+       "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20181289",
+       "titulo": "Diamond, McQuade y Qian (2019), The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco, American Economic Review 109(9)"
+      },
+      {
+       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2025/04/10/maatregelen-voor-behoud-middenhuurwoningen",
+       "titulo": "Gobierno de los Países Bajos (10-4-2025): medidas para conservar la vivienda de alquiler medio, tras el seguimiento de la Wet vaste huurcontracten y la Wet betaalbare huur"
+      },
+      {
+       "url": "https://www.naiz.eus/es/info/noticia/20261112/decretos-de-vivienda-el-congreso-aprueba-uno-y-rechaza-el-otro-por-el-voto-del-pnv",
+       "titulo": "Naiz (12-11-2026): la Diputación Permanente convalida el RDL 29/2026 y rechaza el RDL 28/2026"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "upc-03",
+   "titulo": "Un parque de vivienda pública de al menos el 9 %, con cesión obligatoria de las viviendas vacías de los grandes tenedores",
+   "area": "vivienda",
+   "resumen": "Obligar a las comunidades autónomas y a los ayuntamientos a tener una política de vivienda pública (promoción, movilización de viviendas vacías y cesión de suelo) para que el parque público llegue al menos al 9 % del parque residencial, con un parque de alquiler asequible formado mediante la cesión obligatoria de las viviendas vacías de los grandes tenedores.",
+   "cita": "Crear un gran parque de alquiler público a precios asequibles mediante la cesión obligatoria de las viviendas vacías de los grandes tenedores de vivienda [...] Obligatoriedad de las CCAA y de las administraciones locales a tener una política de Vivienda pública orientada a la promoción, movilización de la vivienda vacía y la cesión de suelo público para dotarnos así de un parque de vivienda pública que alcance al menos el 9% del parque residencial",
+   "cita_traduccion": null,
+   "pagina": 3,
+   "beneficiarios": "Los hogares que accedieran a vivienda pública asequible (el programa menciona a jóvenes, mayores y colectivos vulnerables), sin cifra ni requisitos de acceso; el 26,8 % de los hogares que alquilan a precio de mercado en España dedica más del 30 % de su renta al alquiler (Eurostat, según el Banco de España). El coste recaería en los presupuestos públicos y en los grandes tenedores de viviendas vacías, sin cuantificar.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 3) fija una meta, que el parque de vivienda pública alcance «al menos el 9 % del parque residencial» (hoy «apenas» el 2 % en Canarias, según el propio programa), y dos instrumentos: obligar a las comunidades autónomas y a los ayuntamientos a tener una política de vivienda pública (promoción, movilización de vacías y cesión de suelo) y crear un parque de alquiler con «la cesión obligatoria de las viviendas vacías de los grandes tenedores». Promete además aumentar la inversión pública en vivienda «hasta equipararla a la media europea». No dice cuántas viviendas, con qué presupuesto, a quién considera gran tenedor, si la cesión sería indemnizada ni en qué plazo.",
+     "fuentes": [
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=3",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 3"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "La vivienda es competencia de las comunidades autónomas (art. 148.1.3.ª CE; en Canarias, exclusiva, art. 143 del Estatuto), y el Tribunal Constitucional anuló en la STC 79/2024 el art. 16 de la Ley 12/2023, que imponía la protección permanente de la vivienda protegida, por invadir esa competencia: el Estado puede financiar vivienda con planes estatales pactados con las comunidades, pero no fijar cuánto deben gastar ellas y los ayuntamientos ni obligarles a alcanzar un porcentaje. La cesión obligatoria de viviendas vacías es una expropiación del uso: la Constitución la permite por causa de interés social, con indemnización y conforme a ley (art. 33.3), y el Tribunal Constitucional anuló las expropiaciones temporales de uso de Andalucía y Navarra porque menoscababan la política económica estatal (SSTC 93/2015 y 16/2018), un obstáculo que no tendría una ley estatal.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-12808",
+       "titulo": "STC 79/2024, de 21 de mayo, sobre la Ley 12/2023 (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-15138",
+       "titulo": "Ley Orgánica 1/2018, de reforma del Estatuto de Autonomía de Canarias (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/boe/dias/2015/06/19/pdfs/BOE-A-2015-6831.pdf",
+       "titulo": "STC 93/2015, de 14 de mayo (Decreto-ley andaluz 6/2013 de función social de la vivienda), BOE 19-6-2015"
+      },
+      {
+       "url": "https://www.boe.es/boe/dias/2018/03/23/pdfs/BOE-A-2018-4148.pdf",
+       "titulo": "STC 16/2018, de 22 de febrero (Ley Foral de Navarra 24/2013 de medidas urgentes de vivienda), BOE 23-3-2018"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El coste es estimable por referencia, pero el programa no lo cuantifica ni dice cómo se pagaría. Según el Plan Estatal 2026-2030, el parque público español ronda las 318.000 viviendas, alrededor del 1,7 % de los hogares, y la media de la UE es el 9 %; el Banco de España estimó que converger con la media de la UE-27 exigiría unas 1,5 millones de nuevas viviendas de alquiler social; el programa mide su 9 % sobre todo el parque residencial, que incluye también las viviendas secundarias y vacías, de modo que su meta exigiría más. Como referencia, comprar 80 m² al precio medio de cierre de 2025 (2.230 €/m², según el Plan Estatal) costaría unos 178.000 euros, de modo que 1,5 millones de viviendas supondrían unos 267.000 millones, el 16 % del PIB de 2025 (cálculos propios), menos la parte que se obtuviera por cesión obligatoria, cuya indemnización tampoco se cuantifica. El Plan Estatal 2026-2030 prevé 7.000 millones en cinco años.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/eli/es/rd/2026/04/22/326",
+       "titulo": "Real Decreto 326/2026, Plan Estatal de Vivienda 2026-2030 (BOE), preámbulo"
+      },
+      {
+       "url": "https://www.bde.es/f/webbe/SES/Secciones/Publicaciones/PublicacionesAnuales/InformesAnuales/23/Fich/InfAnual_2023_Cap4.pdf",
+       "titulo": "Banco de España, Informe Anual 2023, capítulo 4: «El mercado de la vivienda en España: evolución reciente, riesgos y problemas de accesibilidad»"
+      },
+      {
+       "url": "https://www.ine.es/dyngs/Prensa/CNA2025.htm",
+       "titulo": "INE, Contabilidad Nacional Anual de España 2025 (PIB a precios corrientes)"
+      },
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=3",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 3"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Ampliar la vivienda subvencionada aumenta el número total de viviendas ocupadas, aunque no una a una: en EE. UU., cada tres viviendas subvencionadas desplazan unas dos de oferta privada, con menos desplazamiento en mercados grandes (Sinai y Waldfogel). La cesión obligatoria de viviendas vacías, uno de los instrumentos del programa, cambia el uso de viviendas ya existentes sin añadirlas al parque total. No hemos localizado una evaluación causal para España.",
+     "fuentes": [
+      {
+       "url": "https://www.nber.org/papers/w8709",
+       "titulo": "Sinai y Waldfogel, Do Low-Income Housing Subsidies Increase Housing Consumption?, NBER WP 8709 (2002); publicado como «…Increase the Occupied Housing Stock?» en Journal of Public Economics 89 (2005)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "El alquiler social supera el 20 % del parque en Austria, Dinamarca y Países Bajos, frente a menos del 2 % en España y una media del 7 % en la OCDE (8 % en la UE); el Plan Estatal 2026-2030 sitúa la media de la UE en el 9 %, la referencia del programa. Esos países muestran que un parque amplio es posible, pero la OCDE no atribuye en esa tabla resultados de asequibilidad a su tamaño, y el Banco de España atribuye el reducido parque español a que la vivienda protegida construida entre 1991 y 2015, más de 1,3 millones, tenía una protección limitada en el tiempo y en su mayoría se vendió.",
+     "fuentes": [
+      {
+       "url": "https://www.oecd.org/content/dam/oecd/en/data/datasets/affordable-housing-database/ph4-2-social-rental-housing-stock.pdf",
+       "titulo": "OCDE, Affordable Housing Database, PH4.2 Social rental housing stock"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/rd/2026/04/22/326",
+       "titulo": "Real Decreto 326/2026, Plan Estatal de Vivienda 2026-2030 (BOE), preámbulo"
+      },
+      {
+       "url": "https://www.bde.es/f/webbe/SES/Secciones/Publicaciones/PublicacionesAnuales/InformesAnuales/25/InfAnual_2025.pdf",
+       "titulo": "Banco de España, Informe Anual 2025, capítulo 2 (vivienda)"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "Según el preámbulo del Plan Estatal 2026-2030, en 2024 se concedieron 14.371 calificaciones definitivas de viviendas protegidas, el mejor dato en 13 años, y el Plan prevé 7.000 millones en cinco años; CASA 47, la entidad estatal de vivienda creada en diciembre de 2025, prevé invertir 13.000 millones en 10 años con el objetivo de que el parque público llegue al menos al 8 % del parque residencial. En Canarias, según la Ley canaria 6/2025, no se construyó vivienda protegida en 2018, 2020 ni 2021, y solo 60 en 2019 y 208 en 2022. Andalucía y Navarra aprobaron en 2013 expropiaciones temporales del uso de viviendas, anuladas por el Tribunal Constitucional por invadir la competencia estatal (SSTC 93/2015 y 16/2018), no por su finalidad.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/eli/es/rd/2026/04/22/326",
+       "titulo": "Real Decreto 326/2026, Plan Estatal de Vivienda 2026-2030 (BOE), preámbulo"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/vivienda-agenda-urbana/Paginas/2026/solicitud-casa-47.aspx",
+       "titulo": "La Moncloa (12-2-2026): «CASA47: objetivos y claves de la nueva empresa estatal de vivienda»"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-26358",
+       "titulo": "Ley canaria 6/2025, de 10 de diciembre, de Ordenación Sostenible del Uso Turístico de Viviendas (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/boe/dias/2015/06/19/pdfs/BOE-A-2015-6831.pdf",
+       "titulo": "STC 93/2015, de 14 de mayo (Decreto-ley andaluz 6/2013 de función social de la vivienda), BOE 19-6-2015"
+      },
+      {
+       "url": "https://www.boe.es/boe/dias/2018/03/23/pdfs/BOE-A-2018-4148.pdf",
+       "titulo": "STC 16/2018, de 22 de febrero (Ley Foral de Navarra 24/2013 de medidas urgentes de vivienda), BOE 23-3-2018"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a los hogares que accedieran a vivienda pública asequible, con atención especial a jóvenes, mayores y colectivos vulnerables según el programa; en España, el 26,8 % de los hogares que alquilan a precio de mercado dedica más del 30 % de su renta al alquiler (Eurostat, según el Banco de España). El coste recaería en los presupuestos públicos y, con la cesión obligatoria, en los grandes tenedores de viviendas vacías; el programa no cuantifica ni lo uno ni lo otro ni fija requisitos de acceso.",
+     "fuentes": [
+      {
+       "url": "https://www.bde.es/f/webbe/SES/Secciones/Publicaciones/PublicacionesAnuales/InformesAnuales/25/InfAnual_2025.pdf",
+       "titulo": "Banco de España, Informe Anual 2025, capítulo 2 (vivienda)"
+      },
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=3",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 3"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Un parque público amplio y protegido de forma permanente evita que las viviendas vuelvan al mercado libre, como ocurrió con la vivienda protegida temporal (Banco de España). Según el Banco de España, un plan de 1,5 millones de viviendas sociales en 10 años supondría aumentar más de un 150 % la producción anual media de viviendas de los últimos años, en un mercado con un déficit estructural de más de 400.000 viviendas, y exige un gasto recurrente de mantenimiento y gestión; el efecto sobre los precios depende de cuánto desplace a la oferta privada (Sinai y Waldfogel).",
+     "fuentes": [
+      {
+       "url": "https://www.bde.es/f/webbe/SES/Secciones/Publicaciones/PublicacionesAnuales/InformesAnuales/23/Fich/InfAnual_2023_Cap4.pdf",
+       "titulo": "Banco de España, Informe Anual 2023, capítulo 4: «El mercado de la vivienda en España: evolución reciente, riesgos y problemas de accesibilidad»"
+      },
+      {
+       "url": "https://www.bde.es/f/webbe/SES/Secciones/Publicaciones/PublicacionesAnuales/InformesAnuales/25/InfAnual_2025.pdf",
+       "titulo": "Banco de España, Informe Anual 2025, capítulo 2 (vivienda)"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/rd/2026/04/22/326",
+       "titulo": "Real Decreto 326/2026, Plan Estatal de Vivienda 2026-2030 (BOE), preámbulo"
+      },
+      {
+       "url": "https://www.nber.org/papers/w8709",
+       "titulo": "Sinai y Waldfogel, Do Low-Income Housing Subsidies Increase Housing Consumption?, NBER WP 8709 (2002); publicado como «…Increase the Occupied Housing Stock?» en Journal of Public Economics 89 (2005)"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "upc-04",
+   "titulo": "Pensiones revalorizadas con el IPC por ley y garantía en la Constitución",
+   "area": "pensiones",
+   "resumen": "Actualizar por ley las pensiones con el IPC de forma inmediata, derogar el factor de sostenibilidad y llevar esa garantía de forma expresa a la Constitución.",
+   "cita": "Estableceremos la actualización por ley de las pensiones al IPC de manera inmediata, derogando el factor de sostenibilidad, y buscaremos blindar esta garantía constitucionalizándola de forma expresa.",
+   "cita_traduccion": null,
+   "pagina": 6,
+   "beneficiarios": "Los cerca de 9,6 millones de pensionistas de la Seguridad Social (10,57 millones de pensiones contributivas en octubre de 2026) y los 708.267 pensionistas de Clases Pasivas (728.062 pensiones en agosto de 2026). El coste lo asumen cotizantes y contribuyentes: la AIReF calcula que las transferencias implícitas al sistema de pensiones desde el resto de la Seguridad Social o la Administración Central deberán subir 2,3 puntos, hasta el 3,0 % del PIB, para financiar el gasto previsto.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 6) propone actualizar «por ley» las pensiones con el IPC «de manera inmediata», derogar el factor de sostenibilidad y «blindar esta garantía constitucionalizándola de forma expresa». La revalorización con el IPC ya está en la ley y el factor de sostenibilidad ya se derogó en 2021, de modo que la parte nueva es la constitucional, de la que no dice qué artículo reformaría ni en qué plazo; tampoco explica cómo se financiaría.",
+     "fuentes": [
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=6",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 6"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-21652",
+       "titulo": "Ley 21/2021, de garantía del poder adquisitivo de las pensiones (BOE)"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "El art. 50 de la Constitución ya obliga a garantizar «pensiones adecuadas y periódicamente actualizadas», y la revalorización anual con el IPC figura en la ley (art. 58 de la Ley General de la Seguridad Social, según la Ley 21/2021, con un apartado 2 modificado por el Real Decreto-ley 2/2023); la misma Ley 21/2021 derogó el factor de sostenibilidad de la Ley 23/2013 y lo sustituyó por un mecanismo de equidad intergeneracional, de modo que esas dos partes no requieren cambios legales. El programa no dice qué artículo de la Constitución reformaría, y de eso depende el procedimiento: fuera de la sección de derechos fundamentales, como el art. 50, bastan tres quintos de cada Cámara (210 diputados) y referéndum si lo pide una décima parte de los miembros de una de ellas (art. 167); dentro de esa sección hacen falta dos tercios, disolución de las Cortes, ratificación por las nuevas Cámaras y referéndum obligatorio (art. 168).",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+       "titulo": "Ley General de la Seguridad Social, texto consolidado (BOE), art. 58"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-21652",
+       "titulo": "Ley 21/2021, de garantía del poder adquisitivo de las pensiones (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-13617",
+       "titulo": "Ley 23/2013, reguladora del Factor de Sostenibilidad y del Índice de Revalorización (BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El coste es conocido: la nómina de pensiones contributivas fue de 14.540 M€ en octubre de 2026, la subida general de 2026 fue del 2,7 % y la AIReF sitúa el gasto bruto en pensiones en el 14,6 % del PIB de media entre 2022 y 2050. Llevar la garantía a la Constitución por el art. 167 no exige necesariamente una votación (habría referéndum solo si lo pide una décima parte de una Cámara); si afectara a la sección de derechos fundamentales (art. 168), obligaría a disolver las Cortes, celebrar elecciones y un referéndum, con un coste estimable por referencia (la organización de las generales de 2023 costó unos 220,8 M€, según el Ministerio del Interior). El programa no explica cómo se pagaría el aumento del gasto, que según la AIReF exigirá elevar las transferencias implícitas al sistema de pensiones hasta el 3,0 % del PIB, algo que sin medidas «parece difícil de compatibilizar» con los marcos fiscales europeo y nacional.",
+     "fuentes": [
+      {
+       "url": "https://revista.seg-social.es/-/la-pension-media-del-sistema-de-la-seguridad-social-alcanza-los-1.376-1-euros-en-octubre-un-4-6-mas-alta-que-hace-un-ano",
+       "titulo": "Seguridad Social: nómina de pensiones de octubre de 2026"
+      },
+      {
+       "url": "https://www.airef.es/es/noticias/la-airef-ratifica-el-resultado-de-2025-la-regla-de-gasto-de-pensiones-se-cumple-formalmente-pero-no-garantiza-la-sostenibilidad/",
+       "titulo": "AIReF (mayo de 2026): estudio sobre la regla de gasto de pensiones"
+      },
+      {
+       "url": "https://es.euronews.com/2026/10/08/elecciones-espana-presupuesto-superara-270-millones",
+       "titulo": "Euronews (8-10-2026): España gastará más de 270 millones en las elecciones del 29N entre logística y subvenciones"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2026/260226-convalidacion-revalorizacion-pensiones.aspx",
+       "titulo": "La Moncloa (26-2-2026): el Congreso convalida la revalorización de las pensiones de 2026"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Revalorizar con el IPC mantiene por construcción el poder adquisitivo de la pensión. La Comisión Europea señala que la indexación a precios, cuando los salarios crecen por encima de la inflación, hace que los pensionistas pierdan posición en la distribución de la renta respecto a una indexación a salarios. La AIReF advierte de que la regla de gasto de pensiones vigente se cumple formalmente pero no garantiza la sostenibilidad de las finanzas públicas.",
+     "fuentes": [
+      {
+       "url": "https://economy-finance.ec.europa.eu/document/download/971dd209-41c2-425d-94f8-e3c3c3459af9_en?filename=ip279_en.pdf",
+       "titulo": "Comisión Europea, 2024 Ageing Report (Institutional Paper 279), capítulo de pensiones"
+      },
+      {
+       "url": "https://www.airef.es/es/noticias/la-airef-ratifica-el-resultado-de-2025-la-regla-de-gasto-de-pensiones-se-cumple-formalmente-pero-no-garantiza-la-sostenibilidad/",
+       "titulo": "AIReF (mayo de 2026): estudio sobre la regla de gasto de pensiones"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Según el Ageing Report 2024 de la Comisión Europea, 23 Estados miembros revalorizan las pensiones por debajo del crecimiento de los salarios nominales, y seis, entre ellos España, Francia, Italia y Austria, con indexación pura a precios. No hemos localizado evaluaciones comparadas de sus resultados más allá de las proyecciones de gasto. La Constitución de Brasil (art. 201) asegura el reajuste de las prestaciones para mantener permanentemente su valor real, según los criterios que fije la ley; tampoco se ha localizado una evaluación publicada de esa garantía.",
+     "fuentes": [
+      {
+       "url": "https://economy-finance.ec.europa.eu/document/download/971dd209-41c2-425d-94f8-e3c3c3459af9_en?filename=ip279_en.pdf",
+       "titulo": "Comisión Europea, 2024 Ageing Report (Institutional Paper 279), capítulo de pensiones"
+      },
+      {
+       "url": "https://www.constituteproject.org/constitution/Brazil_2017",
+       "titulo": "Constitución de Brasil (traducción de Constitute Project), art. 201"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "La Ley 23/2013 creó el factor de sostenibilidad y sustituyó desde 2014 la revalorización ligada a los precios por un índice orientado a la sostenibilidad financiera del sistema; la Ley 21/2021 derogó el factor y volvió a ligar la revalorización al IPC. En enero de 2025 el Congreso no convalidó el decreto ómnibus que incluía la subida de las pensiones; en 2026 la subida del 2,7 % se convalidó el 26-2-2026. La Constitución se ha reformado por el art. 167 en 1992, 2011, 2024 y 2026, nunca en materia de pensiones.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-13617",
+       "titulo": "Ley 23/2013, reguladora del Factor de Sostenibilidad y del Índice de Revalorización (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-21652",
+       "titulo": "Ley 21/2021, de garantía del poder adquisitivo de las pensiones (BOE)"
+      },
+      {
+       "url": "https://www.infobae.com/espana/agencias/2025/01/22/congreso-rechaza-el-gravamen-energetico-el-alza-de-pensiones-y-las-ayudas-al-transporte/",
+       "titulo": "EFE/Infobae (22-1-2025): el Congreso no convalida el gravamen energético ni el decreto ómnibus"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2026/260226-convalidacion-revalorizacion-pensiones.aspx",
+       "titulo": "La Moncloa (26-2-2026): el Congreso convalida la revalorización de las pensiones de 2026"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "favorable",
+     "texto": "Beneficia a los cerca de 9,6 millones de pensionistas de la Seguridad Social (10,57 millones de pensiones contributivas, con una pensión media de 1.376,1 € en octubre de 2026) y a los 708.267 pensionistas de Clases Pasivas (728.062 pensiones en agosto de 2026). El coste recae en cotizantes y contribuyentes: la AIReF estima que las transferencias implícitas del resto de fondos de la Seguridad Social o de la Administración Central deberán subir 2,3 puntos, hasta el 3,0 % del PIB.",
+     "fuentes": [
+      {
+       "url": "https://revista.seg-social.es/-/la-pension-media-del-sistema-de-la-seguridad-social-alcanza-los-1.376-1-euros-en-octubre-un-4-6-mas-alta-que-hace-un-ano",
+       "titulo": "Seguridad Social: nómina de pensiones de octubre de 2026"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2026/260226-convalidacion-revalorizacion-pensiones.aspx",
+       "titulo": "La Moncloa (26-2-2026): el Congreso convalida la revalorización de las pensiones de 2026"
+      },
+      {
+       "url": "https://www.airef.es/es/noticias/la-airef-ratifica-el-resultado-de-2025-la-regla-de-gasto-de-pensiones-se-cumple-formalmente-pero-no-garantiza-la-sostenibilidad/",
+       "titulo": "AIReF (mayo de 2026): estudio sobre la regla de gasto de pensiones"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Da previsibilidad a los pensionistas. La AIReF advierte de que, con la normativa actual, la deuda pública llegaría al 123 % del PIB en 2050 y de que el aumento de las transferencias necesarias reducirá los recursos para otras políticas o exigirá más endeudamiento; el programa no vincula la medida a una fuente de financiación, y una garantía constitucional haría más difícil ajustar la regla después.",
+     "fuentes": [
+      {
+       "url": "https://www.airef.es/es/noticias/la-airef-ratifica-el-resultado-de-2025-la-regla-de-gasto-de-pensiones-se-cumple-formalmente-pero-no-garantiza-la-sostenibilidad/",
+       "titulo": "AIReF (mayo de 2026): estudio sobre la regla de gasto de pensiones"
+      },
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=6",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 6"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "upc-05",
+   "titulo": "Salario mínimo de 1.800 euros en doce pagas",
+   "area": "empleo",
+   "resumen": "Subir de forma progresiva el salario mínimo interprofesional hasta 1.800 euros al mes en doce pagas, manteniendo que lo fije el Gobierno, y actualizar los salarios mediante la negociación colectiva.",
+   "cita": "Mejora de los salarios: incremento progresivo del salario mínimo interprofesional hasta los 1.800 €, por doce mensualidades, y actualización de los salarios mediante la negociación colectiva.",
+   "cita_traduccion": null,
+   "pagina": 7,
+   "beneficiarios": "Los asalariados con salarios bajos: el Gobierno cifra en unos 2,5 millones las personas afectadas por el SMI de 2026, y con 1.800 € en doce pagas el grupo sería mayor, porque en 2024 la mitad de los asalariados ganó menos de 24.497 € brutos al año (INE). El coste lo asumen los empleadores, incluidas las administraciones públicas, sin estimación pública de su importe.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 7) dice qué hará (un «incremento progresivo» del salario mínimo hasta 1.800 €), a quién afecta (quienes cobran el mínimo) y la cuantía, y precisa que son «doce mensualidades», es decir, 21.600 € al año (cálculo propio). Mantiene además el papel del Gobierno en su fijación. No da plazo ni calendario de las subidas intermedias.",
+     "fuentes": [
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=7",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 7"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "Hoy el SMI lo fija el Gobierno cada año por real decreto, previa consulta con sindicatos y patronal (art. 27.1 del Estatuto de los Trabajadores), de modo que las subidas pueden aprobarse así y mantener ese papel del Gobierno, como pide el programa, no requiere cambios legales. La legislación laboral es competencia exclusiva del Estado (art. 149.1.7.ª CE). La Directiva (UE) 2022/2041 cita como valores de referencia indicativos el 60 % del salario mediano bruto y el 50 % del medio bruto y no impide cuantías superiores; el TJUE (asunto C-19/23, 11-11-2025) anuló los criterios de fijación del art. 5.2 y dos incisos de los apartados 1 y 3 del art. 5, y mantuvo el resto.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430",
+       "titulo": "Estatuto de los Trabajadores, texto consolidado (BOE, actualizado a 21-10-2026)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española, texto consolidado (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2022-81556",
+       "titulo": "Directiva (UE) 2022/2041 sobre unos salarios mínimos adecuados en la Unión Europea (DOUE, copia del BOE)"
+      },
+      {
+       "url": "https://www.boe.es/doue/2026/132/Z00001-00001.pdf",
+       "titulo": "TJUE (Gran Sala), sentencia de 11-11-2025, asunto C-19/23, Dinamarca / Parlamento y Consejo (DO C/2026/132) (copia del BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El coste recae sobre todo en los empleadores; para las cuentas públicas, el Ministerio de Trabajo calcula que cada punto de subida del SMI en 2026 supone unos 173,6 M€ más de ingresos y 73,1 M€ más de gasto para la Seguridad Social, el SEPE y el Fogasa. En doce pagas, 1.800 € son 21.600 € al año, un 20 % más que el SMI de 2027 (18.004 €, Real Decreto 1013/2026; cálculo propio). El programa no estima el coste para las administraciones como empleadoras ni explica cómo se cubriría.",
+     "fuentes": [
+      {
+       "url": "https://expinterweb.mites.gob.es/participa/listado/download/160ee8bb-39c5-4a0b-a4fe-c19c3a3250f4",
+       "titulo": "Ministerio de Trabajo (30-1-2026): memoria del análisis de impacto normativo del real decreto del SMI para 2026 (IV informe de la Comisión Asesora e impacto presupuestario)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24120",
+       "titulo": "Real Decreto-ley 38/2026, de 17 de noviembre (BOE de 18-11-2026), exposición de motivos: el Real Decreto 1013/2026 fija el SMI de 2027 en 18.004 euros anuales"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3815",
+       "titulo": "Real Decreto 126/2026, de 18 de febrero, SMI para 2026 (BOE)"
+      },
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=7",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 7"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Los estudios de subidas moderadas en EE. UU. no encuentran pérdidas de empleo apreciables (Card y Krueger, 1994; Cengiz, Dube, Lindner y Zipperer, 2019); la revisión de Dube (2019) para el Gobierno británico sitúa esa evidencia hasta en torno al 59 % del salario mediano, y hasta el 81 % en condados de salarios bajos. En España, el Banco de España observó tras la subida del 22,3 % de 2019 un menor crecimiento del empleo de los trabajadores con salarios más bajos, aunque pide cautela, y la AIReF (2025) estima entre 40.000 y 65.000 afiliados menos por la subida de 2019 y entre 55.000 y 85.000 por la de 2023. Con el salario mediano de 2024 (24.497 €, INE, incluidas jornadas parciales), 1.800 € en doce pagas equivaldrían al 88 % de la mediana (cálculo propio), por encima de los niveles estudiados.",
+     "fuentes": [
+      {
+       "url": "https://ideas.repec.org/a/aea/aecrev/v84y1994i4p772-93.html",
+       "titulo": "Card y Krueger (1994), «Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania», American Economic Review 84(4)"
+      },
+      {
+       "url": "https://ideas.repec.org/a/oup/qjecon/v134y2019i3p1405-1454..html",
+       "titulo": "Cengiz, Dube, Lindner y Zipperer (2019), «The Effect of Minimum Wages on Low-Wage Jobs», Quarterly Journal of Economics 134(3)"
+      },
+      {
+       "url": "https://assets.publishing.service.gov.uk/media/6960e4e656321405090869aa/impacts_of_minimum_wages_review_of_the_international_evidence_Arindrajit_Dube_web.pdf",
+       "titulo": "Dube (2019), «Impacts of minimum wages: review of the international evidence», informe para el Gobierno del Reino Unido (HM Treasury)"
+      },
+      {
+       "url": "https://ideas.repec.org/p/bde/opaper/2113.html",
+       "titulo": "Barceló, Izquierdo, Lacuesta, Puente, Regil y Villanueva (2021), «Los efectos del salario mínimo interprofesional en el empleo: nueva evidencia para España», Banco de España, Documento Ocasional 2113"
+      },
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2025/09/Documentos-tecnicos-macro-opinion-sostenibilidad/250922_DT_SMI.pdf",
+       "titulo": "AIReF, Documento técnico 9/25 (22-9-2025): análisis microeconómico del impacto del SMI en el empleo"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2018-17773",
+       "titulo": "Real Decreto 1462/2018, de 21 de diciembre, SMI para 2019 (BOE)"
+      },
+      {
+       "url": "https://ine.es/dyngs/Prensa/EAES2024.htm",
+       "titulo": "INE, Encuesta Anual de Estructura Salarial 2024, datos definitivos (28-may-2026)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "La Directiva europea cita como valores de referencia indicativos, que los Estados pueden utilizar, el 60 % del salario mediano bruto y el 50 % del medio bruto. Reino Unido se fijó como objetivo dos tercios de la mediana en 2024, y su Low Pay Commission ve pocas señales de más despidos en los datos oficiales, aunque en una encuesta empresarial creció la proporción de empleadores que dicen haber despedido o contratado menos. No hemos localizado evaluaciones de un país comparable con un salario mínimo cercano a la mediana, como resultaría de 1.800 € en doce pagas.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2022-81556",
+       "titulo": "Directiva (UE) 2022/2041 sobre unos salarios mínimos adecuados en la Unión Europea (DOUE, copia del BOE)"
+      },
+      {
+       "url": "https://www.gov.uk/government/publications/minimum-wage-rates-for-2025/low-pay-commission-summary-of-evidence-2024",
+       "titulo": "Low Pay Commission (Reino Unido), Summary of evidence 2024"
+      },
+      {
+       "url": "https://assets.publishing.service.gov.uk/media/6960e4e656321405090869aa/impacts_of_minimum_wages_review_of_the_international_evidence_Arindrajit_Dube_web.pdf",
+       "titulo": "Dube (2019), «Impacts of minimum wages: review of the international evidence», informe para el Gobierno del Reino Unido (HM Treasury)"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "El SMI lo aprueba el Gobierno cada año por real decreto. Pasó de 735,90 € al mes en 2018 a 1.221 € en 2026 (17.094 € al año, un 66 % más), con el mayor salto en 2019 (22,3 %, hasta 900 €), tras el cual el Banco de España observó un menor crecimiento del empleo de los trabajadores de menor salario; el 17-nov-2026 el Gobierno lo fijó para 2027 en 18.004 € al año (1.286 € al mes en 14 pagas, un 5,3 % más; cálculos propios). Llegar a 1.800 € en doce pagas supondría subir el SMI de 2027 un 20 %.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3815",
+       "titulo": "Real Decreto 126/2026, de 18 de febrero, SMI para 2026 (BOE)"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/trabajo14/Paginas/2023/140223-salario-minimo-interprofesional.aspx",
+       "titulo": "La Moncloa, «SMI 2026: ¿cuánto sube el Salario Mínimo Interprofesional y a quién beneficia?» (20-feb-2026)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2018-17773",
+       "titulo": "Real Decreto 1462/2018, de 21 de diciembre, SMI para 2019 (BOE)"
+      },
+      {
+       "url": "https://ideas.repec.org/p/bde/opaper/2113.html",
+       "titulo": "Barceló, Izquierdo, Lacuesta, Puente, Regil y Villanueva (2021), «Los efectos del salario mínimo interprofesional en el empleo: nueva evidencia para España», Banco de España, Documento Ocasional 2113"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24120",
+       "titulo": "Real Decreto-ley 38/2026, de 17 de noviembre (BOE de 18-11-2026), exposición de motivos: el Real Decreto 1013/2026 fija el SMI de 2027 en 18.004 euros anuales"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a los asalariados con salarios bajos. El Gobierno cifra en unos 2,5 millones las personas afectadas por el SMI de 2026; con 1.800 € en doce pagas (21.600 € al año) el grupo sería mayor, porque en 2024 la mitad de los asalariados ganó menos de 24.497 € brutos al año (incluidas jornadas parciales), pero no hay una cifra pública de cuántos quedarían por debajo. El coste lo asumen los empleadores, sin estimación pública de su importe.",
+     "fuentes": [
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/trabajo14/Paginas/2023/140223-salario-minimo-interprofesional.aspx",
+       "titulo": "La Moncloa, «SMI 2026: ¿cuánto sube el Salario Mínimo Interprofesional y a quién beneficia?» (20-feb-2026)"
+      },
+      {
+       "url": "https://ine.es/dyngs/Prensa/EAES2024.htm",
+       "titulo": "INE, Encuesta Anual de Estructura Salarial 2024, datos definitivos (28-may-2026)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Elevaría las rentas salariales bajas y reduciría la desigualdad salarial. El riesgo documentado en España es una menor creación de empleo y de horas en los colectivos de menor salario, como observaron el Banco de España tras 2019 y la AIReF tras 2019 y 2023, y la evidencia disponible no cubre subidas hasta el 88 % de la mediana; el efecto depende del ritmo de las subidas, que el programa no fija.",
+     "fuentes": [
+      {
+       "url": "https://ideas.repec.org/p/bde/opaper/2113.html",
+       "titulo": "Barceló, Izquierdo, Lacuesta, Puente, Regil y Villanueva (2021), «Los efectos del salario mínimo interprofesional en el empleo: nueva evidencia para España», Banco de España, Documento Ocasional 2113"
+      },
+      {
+       "url": "https://www.airef.es/wp-content/uploads/2025/09/Documentos-tecnicos-macro-opinion-sostenibilidad/250922_DT_SMI.pdf",
+       "titulo": "AIReF, Documento técnico 9/25 (22-9-2025): análisis microeconómico del impacto del SMI en el empleo"
+      },
+      {
+       "url": "https://assets.publishing.service.gov.uk/media/6960e4e656321405090869aa/impacts_of_minimum_wages_review_of_the_international_evidence_Arindrajit_Dube_web.pdf",
+       "titulo": "Dube (2019), «Impacts of minimum wages: review of the international evidence», informe para el Gobierno del Reino Unido (HM Treasury)"
+      },
+      {
+       "url": "https://ine.es/dyngs/Prensa/EAES2024.htm",
+       "titulo": "INE, Encuesta Anual de Estructura Salarial 2024, datos definitivos (28-may-2026)"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "upc-06",
+   "titulo": "Financiación autonómica con los recursos del REF fuera del sistema, la insularidad y la pobreza como criterios",
+   "area": "modelo territorial",
+   "resumen": "En la reforma de la financiación autonómica, que los recursos tributarios del REF sigan siendo adicionales y no computen en el sistema, que se mantenga al menos el grado de nivelación actual con recursos adicionales suficientes, que Canarias no pierda peso por insularidad en la población ajustada y que se añadan la pobreza o la renta como variables de reparto.",
+   "cita": "Que no se cuestione la adicionalidad de los recursos tributarios del REF, respetando lo establecido en el artículo 166 del Estatuto de Autonomía, considerando que estos recursos no se integrarán ni computaran en el Sistema de Financiación Autonómico. [...] Que el sistema incluya como nuevas variables al definir la población ajustada el nivel de pobreza o de renta",
+   "cita_traduccion": null,
+   "pagina": 8,
+   "beneficiarios": "La población de Canarias (2.258.866 residentes, INE, 1-1-2025) a través de los servicios públicos; según el Gobierno canario, el modelo acordado en el CPFF supone 1.337 millones más al año para Canarias. El coste recae en el Estado y, de forma indirecta, en las demás comunidades, sin cuantificación de los recursos del REF afectados.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "Ante la reforma del sistema de financiación, el programa (p. 8) pide cuatro cosas precisas: que los recursos del REF sigan siendo adicionales y no computen en el sistema (art. 166 del Estatuto), que se mantenga al menos el grado de nivelación actual con recursos adicionales suficientes, que Canarias no pierda peso por insularidad en la población ajustada y que se añadan la pobreza o la renta como variables. No propone ponderaciones, cuantías ni calendario, ni dice en qué norma se recogería cada punto.",
+     "fuentes": [
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=8",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 8"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "El principio ya está en el ordenamiento: el art. 166.3 del Estatuto y el art. 3.4 de la Ley 19/1994 (redacción de la Ley 8/2018) establecen que los recursos del REF no se integrarán ni computarán en el sistema de financiación autonómica, «en los términos que determine» la LOFCA. Si se modifica la LOFCA, que es ley orgánica, hace falta mayoría absoluta del Congreso. La financiación autonómica es competencia del Estado y se regula en la LOFCA y en una ley del sistema; el CPFF aprobó el 4-9-2026 un acuerdo de nuevo modelo, que Hacienda debe llevar a las Cortes, y las variables de reparto se fijarían en ese procedimiento.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-15138",
+       "titulo": "Ley Orgánica 1/2018, de reforma del Estatuto de Autonomía de Canarias (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-15794",
+       "titulo": "Ley 19/1994, de modificación del Régimen Económico y Fiscal de Canarias (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.hacienda.gob.es/es-es/prensa/noticias/paginas/2026/20260904-np-cpff-directo.aspx",
+       "titulo": "Ministerio de Hacienda, 4-9-2026: el CPFF aprueba la reforma del sistema de financiación autonómica"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El coste del modelo acordado se conoce: 20.975 millones adicionales para las comunidades, según Hacienda, de los que 1.337 millones corresponden a Canarias, según el Gobierno canario, que afirma que el acuerdo recoge expresamente que el REF queda fuera. El programa no cuantifica los ingresos del REF afectados ni el coste de añadir la pobreza o la renta como variables, ni dice cómo se pagaría.",
+     "fuentes": [
+      {
+       "url": "https://www.hacienda.gob.es/es-es/prensa/noticias/paginas/2026/20260904-np-cpff-directo.aspx",
+       "titulo": "Ministerio de Hacienda, 4-9-2026: el CPFF aprueba la reforma del sistema de financiación autonómica"
+      },
+      {
+       "url": "https://www3.gobiernodecanarias.org/noticias/canarias-respalda-el-nuevo-sistema-de-financiacion-que-mejora-en-1-337-millones-los-recursos-para-las-islas-y-blind/",
+       "titulo": "Gobierno de Canarias: Canarias respalda el nuevo sistema de financiación que mejora en 1.337 millones los recursos (CPFF, septiembre de 2026)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "El nuevo modelo usa la población ajustada, que pondera la dispersión, la superficie y la insularidad. Fedea (Á. de la Fuente, enero de 2026) concluye que la propuesta mejora la estructura del sistema, «pero sólo ligeramente»: lo simplifica y reparte los recursos de forma más equitativa, pero buena parte de esa mejora se pierde con el Fondo Climático y el mecanismo IVA pymes, y la inyección «muy considerable» de fondos estatales «tenderá sin duda a agravar la ausencia de incentivos para la disciplina fiscal».",
+     "fuentes": [
+      {
+       "url": "https://www.hacienda.gob.es/es-es/prensa/noticias/paginas/2026/20260904-np-cpff-directo.aspx",
+       "titulo": "Ministerio de Hacienda, 4-9-2026: el CPFF aprueba la reforma del sistema de financiación autonómica"
+      },
+      {
+       "url": "https://documentos.fedea.net/pubs/fpp/2026/01/FPP2026-01.pdf",
+       "titulo": "De la Fuente (Fedea Policy Paper 2026/01, enero de 2026): Sobre la propuesta de reforma de la financiación autonómica: un primer análisis"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Portugal reparte las transferencias del Estado a Azores y Madeira con un factor geográfico (12,5 %) que incluye un índice de ultraperiferia basado en la distancia al continente (70 %) y el número de islas habitadas (30 %), junto a la población (82,5 %) y el esfuerzo fiscal (5 %); el Consejo de Finanzas Públicas portugués analiza el reparto resultante, no sus efectos sobre los servicios. En Australia, la Comisión de Productividad (2018) concluyó que la nivelación horizontal compensa a los estados por sus desventajas estructurales, pero tiene debilidades importantes de eficiencia, y recomendó igualar a la media de los estados. Los resultados documentados son dispares o no evalúan el efecto del criterio de insularidad.",
+     "fuentes": [
+      {
+       "url": "https://www.cfp.pt/en/explainer/public-finance/transfers-distribution-under-the-autonomous-regions-finance-law",
+       "titulo": "Conselho das Finanças Públicas (Portugal): Transfers distribution under the Autonomous Regions Finance Law"
+      },
+      {
+       "url": "https://www.pc.gov.au/inquiries/completed/horizontal-fiscal-equalisation/report",
+       "titulo": "Productivity Commission (Australia), Horizontal Fiscal Equalisation, informe de 2018"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "La adicionalidad del REF se incorporó a la Ley 19/1994 mediante la Ley 8/2018 y al Estatuto de 2018, y el Gobierno de Canarias afirma que el acuerdo del CPFF de 2026 la recoge «por primera vez» por escrito. El sistema vigente (2009) lleva 12 años caducado, según Hacienda; la Agenda Canaria de 2023 fijaba un nuevo modelo en dos años con peso de la insularidad y la pobreza, y el acuerdo llegó al CPFF en septiembre de 2026 con el voto favorable de Canarias. Queda pendiente la ley que lo desarrolle.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-15794",
+       "titulo": "Ley 19/1994, de modificación del Régimen Económico y Fiscal de Canarias (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.hacienda.gob.es/es-es/prensa/noticias/paginas/2026/20260904-np-cpff-directo.aspx",
+       "titulo": "Ministerio de Hacienda, 4-9-2026: el CPFF aprueba la reforma del sistema de financiación autonómica"
+      },
+      {
+       "url": "https://www.elindependiente.com/wp-content/uploads/2023/11/Acuerdo-PSOE-CC.pdf",
+       "titulo": "Acuerdo de legislatura PSOE–Coalición Canaria y Agenda Canaria (noviembre de 2023)"
+      },
+      {
+       "url": "https://www3.gobiernodecanarias.org/noticias/canarias-respalda-el-nuevo-sistema-de-financiacion-que-mejora-en-1-337-millones-los-recursos-para-las-islas-y-blind/",
+       "titulo": "Gobierno de Canarias: Canarias respalda el nuevo sistema de financiación que mejora en 1.337 millones los recursos (CPFF, septiembre de 2026)"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficia a la población de Canarias en su conjunto, unos 2,26 millones de residentes, a través de la financiación de sanidad, educación y servicios sociales; según el Gobierno canario, el modelo acordado supone 1.337 millones más al año. El coste recae en los Presupuestos Generales del Estado y, de forma indirecta, en las demás comunidades, pero ni el programa ni las fuentes localizadas cuantifican los recursos del REF afectados ni el efecto de añadir la pobreza o la renta como variables.",
+     "fuentes": [
+      {
+       "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/56940?nult=1",
+       "titulo": "INE, Estadística Continua de Población, tabla 56940: población de Canarias a 1-1-2025"
+      },
+      {
+       "url": "https://www3.gobiernodecanarias.org/noticias/canarias-respalda-el-nuevo-sistema-de-financiacion-que-mejora-en-1-337-millones-los-recursos-para-las-islas-y-blind/",
+       "titulo": "Gobierno de Canarias: Canarias respalda el nuevo sistema de financiación que mejora en 1.337 millones los recursos (CPFF, septiembre de 2026)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Da estabilidad al espacio fiscal propio de Canarias y recursos estables, y el Fondo de Dinamismo tiene carácter indefinido según el Gobierno canario. Su efecto depende de cómo lo concrete la ley de financiación, todavía pendiente; Fedea señala el riesgo de menor disciplina fiscal, y el envejecimiento aumentará el peso de las variables de gasto sanitario.",
+     "fuentes": [
+      {
+       "url": "https://www3.gobiernodecanarias.org/noticias/canarias-respalda-el-nuevo-sistema-de-financiacion-que-mejora-en-1-337-millones-los-recursos-para-las-islas-y-blind/",
+       "titulo": "Gobierno de Canarias: Canarias respalda el nuevo sistema de financiación que mejora en 1.337 millones los recursos (CPFF, septiembre de 2026)"
+      },
+      {
+       "url": "https://documentos.fedea.net/pubs/fpp/2026/01/FPP2026-01.pdf",
+       "titulo": "De la Fuente (Fedea Policy Paper 2026/01, enero de 2026): Sobre la propuesta de reforma de la financiación autonómica: un primer análisis"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "upc-07",
+   "titulo": "Descuento del 75 % en los billetes de los residentes canarios con una partida de crédito ampliable en los Presupuestos",
+   "area": "otros",
+   "resumen": "Que los Presupuestos Generales del Estado incluyan una partida de crédito ampliable para el descuento del 75 % en los billetes aéreos y marítimos de los residentes canarios, entre islas y con el resto del Estado, junto a la bonificación del 100 % del transporte de mercancías y la compensación del sobrecoste eléctrico.",
+   "cita": "Partida de crédito ampliable para financiar la reducción del 75% en los precios de los billetes aéreos y marítimos interinsulares y con el resto del Estado para los residentes canarios.",
+   "cita_traduccion": null,
+   "pagina": 9,
+   "beneficiarios": "Los residentes que viajan: según la AIReF, la mitad de la población o más no vuela, y el 10 % de los canarios recibió el 63 % de la subvención; el 20 % de renta más alta concentra el 50 % de la subvención en los trayectos con la península. El coste lo asumen los Presupuestos Generales del Estado: 765 millones en 2019, según la CNMC.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "favorable",
+     "texto": "El programa (pp. 9 y 10) define el porcentaje (75 %), el ámbito (billetes aéreos y marítimos de los residentes canarios, entre islas y con el resto del Estado) y el instrumento: una «partida de crédito ampliable» en los Presupuestos del Estado, que se renueva cada año. Lo acompaña de la bonificación del 100 % al transporte de mercancías y de la compensación del sobrecoste eléctrico, también como partidas presupuestarias, sin cuantía.",
+     "fuentes": [
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=9",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 9"
+      },
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=10",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 10"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "El art. 6 de la Ley 19/1994 fija, con vigencia indefinida, una bonificación del 75 % en los vuelos regulares entre Canarias y el resto de España y en los interinsulares, y también en el transporte marítimo con el resto de España. Para los trayectos marítimos interinsulares la ley estatal fija un porcentaje inferior, y el Gobierno de Canarias pidió en 2026 un 75 % marítimo con vigencia indefinida. Mantener la bonificación aérea no exige cambios normativos; extender el 75 % al marítimo interinsular, como pide el programa, requiere modificar la ley o los Presupuestos, que pueden hacerlo por mayoría simple.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-15794",
+       "titulo": "Ley 19/1994, de modificación del Régimen Económico y Fiscal de Canarias (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.parcan.es/files/pub/bop/11l/2026/091/bo091.pdf",
+       "titulo": "Boletín Oficial del Parlamento de Canarias núm. 91, 13-3-2026: resolución sobre el documento de Real Decreto-ley de medidas urgentes para Canarias (Decreto Canarias)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El coste se conoce: 765 millones en 2019, el doble que antes de la subida al 75 %, según la CNMC citada por elDiario.es; la AIReF cifra en un 125 % el aumento del gasto público. El programa pide una partida de crédito ampliable, es decir, que el gasto crezca con el tráfico sin tope, pero no dice cómo se financiaría ese crecimiento ni cuánto costaría extender el 75 % al marítimo interinsular.",
+     "fuentes": [
+      {
+       "url": "https://www.eldiario.es/canariasahora/economia/airef-presenta-observatorio-propuestas-recuerda-descuento-75-aumenta-precios_1_10024093.html",
+       "titulo": "elDiario.es Canarias Ahora: la AIReF recuerda que el descuento del 75 % aumenta los precios"
+      },
+      {
+       "url": "https://www.funcas.es/wp-content/uploads/2021/02/NDP-Subvenciones-al-transporte-aéreo-.pdf",
+       "titulo": "AIReF, nota de prensa de 30-7-2020 sobre la subvención a residentes extrapeninsulares (copia en Funcas)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Según la AIReF, la subida del 50 % al 75 % abarató el billete un 47 % de media para los residentes. Al mismo tiempo, elevó un 12 % los precios entre la península y Canarias y un 14 % el coste para los no residentes. Los precios interinsulares canarios no bajaron en diez años, mientras que en otras rutas cayeron entre un 30 % y un 35 %.",
+     "fuentes": [
+      {
+       "url": "https://www.funcas.es/wp-content/uploads/2021/02/NDP-Subvenciones-al-transporte-aéreo-.pdf",
+       "titulo": "AIReF, nota de prensa de 30-7-2020 sobre la subvención a residentes extrapeninsulares (copia en Funcas)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Portugal subvenciona a los residentes de Madeira y Azores con otro diseño: el residente paga una tarifa fija y el Estado reembolsa el resto. Desde 2026 se ha suprimido el techo de coste elegible. No se ha encontrado una evaluación de sus efectos sobre los precios.",
+     "fuentes": [
+      {
+       "url": "https://www.dnoticias.pt/2026/6/1/493978-subsidio-de-mobilidade-publicado-sem-tecto-maximo-de-reembolso/",
+       "titulo": "DNoticias (Madeira), 1-6-2026: subsidio social de movilidad publicado sin techo de reembolso"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "La bonificación pasó del 50 % al 75 %. La AIReF la evaluó en 2020 y propuso sustituirla por una cuantía fija por ruta y analizar la competencia en el mercado interinsular. La Agenda Canaria de 2023 incluyó su consolidación.",
+     "fuentes": [
+      {
+       "url": "https://www.funcas.es/wp-content/uploads/2021/02/NDP-Subvenciones-al-transporte-aéreo-.pdf",
+       "titulo": "AIReF, nota de prensa de 30-7-2020 sobre la subvención a residentes extrapeninsulares (copia en Funcas)"
+      },
+      {
+       "url": "https://www.elindependiente.com/wp-content/uploads/2023/11/Acuerdo-PSOE-CC.pdf",
+       "titulo": "Acuerdo de legislatura PSOE–Coalición Canaria y Agenda Canaria (noviembre de 2023)"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "favorable",
+     "texto": "La beneficiaria es la población residente que viaja: según la AIReF, la mitad de la población o más no vuela y el 10 % de los canarios recibió el 63 % de la subvención; en los trayectos con la península, el 20 % de mayor renta concentra el 50 %. El coste lo asumen los Presupuestos Generales del Estado, es decir, todos los contribuyentes: 765 millones en 2019, según la CNMC.",
+     "fuentes": [
+      {
+       "url": "https://www.funcas.es/wp-content/uploads/2021/02/NDP-Subvenciones-al-transporte-aéreo-.pdf",
+       "titulo": "AIReF, nota de prensa de 30-7-2020 sobre la subvención a residentes extrapeninsulares (copia en Funcas)"
+      },
+      {
+       "url": "https://www.eldiario.es/canariasahora/economia/airef-presenta-observatorio-propuestas-recuerda-descuento-75-aumenta-precios_1_10024093.html",
+       "titulo": "elDiario.es: la AIReF recuerda que el descuento del 75 % aumenta los precios (cifra de la CNMC)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Garantiza la movilidad de los residentes a un coste menor. El gasto crece con el número de viajes, y parte de la ayuda puede trasladarse a los precios, lo que encarece los billetes para los no residentes en territorios con alta dependencia del turismo.",
+     "fuentes": [
+      {
+       "url": "https://www.funcas.es/wp-content/uploads/2021/02/NDP-Subvenciones-al-transporte-aéreo-.pdf",
+       "titulo": "AIReF, nota de prensa de 30-7-2020 sobre la subvención a residentes extrapeninsulares (copia en Funcas)"
+      },
+      {
+       "url": "https://www.eldiario.es/canariasahora/economia/airef-presenta-observatorio-propuestas-recuerda-descuento-75-aumenta-precios_1_10024093.html",
+       "titulo": "elDiario.es Canarias Ahora: la AIReF recuerda que el descuento del 75 % aumenta los precios"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "upc-08",
+   "titulo": "Moratoria de nuevas instalaciones y plazas turísticas",
+   "area": "otros",
+   "resumen": "Aplicar en Canarias una moratoria a las nuevas instalaciones y plazas (camas) turísticas para limitar el crecimiento turístico.",
+   "cita": "Planificando y modulando el modelo turístico, con una moratoria de nuevas instalaciones y camas.",
+   "cita_traduccion": null,
+   "pagina": 10,
+   "beneficiarios": "Los residentes de Canarias, por la protección del territorio, la vivienda y los recursos que invoca el programa, sin cuantificar. El coste recaería en los promotores y propietarios con derechos para construir plazas y, potencialmente, en la actividad turística, que supone el 37,7 % del PIB y 413.064 empleos en Canarias según el estudio de Exceltur y el Gobierno canario.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa propone «una moratoria de nuevas instalaciones y camas» (p. 10) y lo repite en el eje 10, que pide «poner límites, mediante una moratoria, al crecimiento de nuevas camas e instalaciones turísticas» (p. 13), en un eje que abre con el compromiso de defender «en los foros estatales y europeos» una planificación del crecimiento acorde con la capacidad de las islas. No precisa si abarcaría hoteles, apartamentos y vivienda vacacional, si tendría excepciones (renovación de establecimientos, islas occidentales), cuánto duraría ni qué ley la establecería.",
+     "fuentes": [
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=10",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 10"
+      },
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=13",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 13"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "El Estatuto de Canarias atribuye a la comunidad en exclusiva «la fijación de los criterios y condiciones de crecimiento y desarrollo de la oferta turística» (art. 129), por lo que la moratoria correspondería al Parlamento de Canarias, no a las Cortes. El Tribunal Constitucional admitió que Canarias someta a autorización las nuevas plazas para proteger el medio ambiente y el territorio, pero anuló en 2015 que solo se autorizaran establecimientos de cinco estrellas por ser un criterio económico prohibido por la Ley 17/2009, que traspone la Directiva de servicios (STC 209/2015).",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-15138",
+       "titulo": "Ley Orgánica 1/2018, de reforma del Estatuto de Autonomía de Canarias (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2015-12294",
+       "titulo": "STC 209/2015, de 8 de octubre, sobre la Ley canaria 2/2013 (BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "no_verificable",
+     "texto": "La moratoria no tiene coste presupuestario directo, pero la de 2001 tuvo efectos fiscales documentados: según Simancas (2011), los municipios turísticos subieron la presión tributaria, sobre todo el IBI, ante la pérdida de ingresos por licencias, y la Ley 6/2009 abrió un mecanismo para compensar a quienes, con derechos urbanísticos consolidados, vieron limitado su derecho a edificar. No hay estimación pública de ese efecto fiscal y el programa no lo cuantifica, por lo que no hay base para estimar el coste.",
+     "fuentes": [
+      {
+       "url": "https://revistas.um.es/turismo/article/download/140271/126481/531821",
+       "titulo": "Simancas Cruz (2011), El fracaso de la renovación de áreas turísticas consolidadas de litoral: la experiencia de las Islas Canarias, Cuadernos de Turismo 27"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "Simancas (2011) describe la moratoria canaria iniciada en 2001 como una sucesión de «bandazos legislativos», con excepciones como hasta 3.600 plazas anuales declaradas de interés general y, desde 2009, la posibilidad de clasificar nuevo suelo turístico. Según el estudio Impactur, entre 2019 y 2025 las plazas de hoteles y apartamentos bajaron un 0,3 % mientras las de vivienda turística crecieron un 18,8 %, hasta 197.000, de modo que la contención de la oferta reglada convivió con un crecimiento en viviendas residenciales.",
+     "fuentes": [
+      {
+       "url": "https://revistas.um.es/turismo/article/download/140271/126481/531821",
+       "titulo": "Simancas Cruz (2011), El fracaso de la renovación de áreas turísticas consolidadas de litoral: la experiencia de las Islas Canarias, Cuadernos de Turismo 27"
+      },
+      {
+       "url": "https://www.exceltur.org/wp-content/uploads/2026/05/Estudio-IMPACTUR-Canarias-2024-y-Avance-2025_.pdf",
+       "titulo": "Exceltur y Gobierno de Canarias, Estudio IMPACTUR Canarias 2024 y avance 2025 (mayo de 2026)"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Ámsterdam prohibió en 2017 nuevos hoteles en el centro y después extendió a toda la ciudad un tope de camas hoteleras. Según la prensa, entre 2015 y 2019 se construyeron más de 7.700 habitaciones por licencias anteriores y se preveían unas 14.000 en municipios cercanos. No hemos localizado evaluaciones publicadas de sus efectos.",
+     "fuentes": [
+      {
+       "url": "https://www.dutchnews.nl/2020/01/explosive-growth-in-amsterdam-hotels-despite-stricter-limits",
+       "titulo": "DutchNews (enero de 2020): crecimiento de las habitaciones de hotel en Ámsterdam pese a la prohibición en el centro"
+      },
+      {
+       "url": "https://cms.law/en/nld/legal-updates/amsterdam-tightens-the-screw-on-tourism-a-further-update",
+       "titulo": "CMS (2025): Ámsterdam extiende el tope de camas hoteleras a toda la ciudad"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "Canarias aplicó una moratoria desde 2001 (Decreto 4/2001 y Ley 6/2001), sustituida por las Directrices de 2003 (Ley 19/2003), con límites y ritmos de crecimiento que fijaba el Parlamento cada tres años, y por la Ley 2/2013, que solo autoriza nuevas plazas en determinados supuestos y con carácter indefinido. Según la prensa, en abril de 2024 el Parlamento canario rechazó una moción de NC-BC que incluía una moratoria de camas hoteleras.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/eli/es-cn/l/2001/07/23/6",
+       "titulo": "Ley canaria 6/2001, de medidas urgentes en materia de ordenación del territorio y del turismo (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/eli/es-cn/l/2003/04/14/19",
+       "titulo": "Ley canaria 19/2003, Directrices de Ordenación General y del Turismo de Canarias (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/eli/es-cn/l/2013/05/29/2/con",
+       "titulo": "Ley canaria 2/2013, de renovación y modernización turística (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.thelocal.es/20240424/canary-govt-rules-out-tourist-tax-and-property-ban-for-non-residents",
+       "titulo": "The Local (24-4-2024): el Parlamento canario rechaza la ecotasa y la moratoria de camas"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Los beneficiarios declarados son los residentes, por la protección del territorio, la vivienda y los recursos, sin cuantificar. El coste recaería en promotores y propietarios con derechos para construir plazas y, potencialmente, en una actividad que supone el 37,7 % del PIB canario y 413.064 empleos (Impactur); no hay estimación de cuánto se vería afectada.",
+     "fuentes": [
+      {
+       "url": "https://www.exceltur.org/wp-content/uploads/2026/05/Estudio-IMPACTUR-Canarias-2024-y-Avance-2025_.pdf",
+       "titulo": "Exceltur y Gobierno de Canarias, Estudio IMPACTUR Canarias 2024 y avance 2025 (mayo de 2026)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Puede limitar la presión sobre el territorio y los recursos, objetivo declarado de las leyes de 2001 y 2003. Los riesgos documentados son el desplazamiento de la oferta hacia la vivienda vacacional, donde se concentra el crecimiento reciente (Impactur), y la aparición de excepciones sucesivas, además de las dificultades para renovar la planta alojativa obsoleta que describe Simancas (2011).",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/eli/es-cn/l/2001/07/23/6",
+       "titulo": "Ley canaria 6/2001, de medidas urgentes en materia de ordenación del territorio y del turismo (BOE)"
+      },
+      {
+       "url": "https://www.exceltur.org/wp-content/uploads/2026/05/Estudio-IMPACTUR-Canarias-2024-y-Avance-2025_.pdf",
+       "titulo": "Exceltur y Gobierno de Canarias, Estudio IMPACTUR Canarias 2024 y avance 2025 (mayo de 2026)"
+      },
+      {
+       "url": "https://revistas.um.es/turismo/article/download/140271/126481/531821",
+       "titulo": "Simancas Cruz (2011), El fracaso de la renovación de áreas turísticas consolidadas de litoral: la experiencia de las Islas Canarias, Cuadernos de Turismo 27"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "upc-09",
+   "titulo": "Tasa turística para los visitantes no residentes",
+   "area": "fiscalidad",
+   "resumen": "Implantar en Canarias una tasa turística que paguen los visitantes no residentes.",
+   "cita": "Implantando una tasa turística para los no residentes.",
+   "cita_traduccion": null,
+   "pagina": 10,
+   "beneficiarios": "Las administraciones canarias, que recibirían la recaudación, sin destino fijado por el programa. Pagarían los visitantes no residentes: Canarias recibió 15,7 millones de turistas internacionales en 2025 (INE), además de los procedentes del resto de España; sin tipo no puede estimarse la cuantía.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 10) propone, dentro del modelo turístico, «una tasa turística para los no residentes», sin tipo, base (por noche, por estancia o por acceso), administración que la cobraría, destino de la recaudación ni plazo. Tampoco aclara si los residentes en el resto de España contarían como no residentes.",
+     "fuentes": [
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=10",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 10"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "Canarias puede crear tributos propios (art. 171 del Estatuto), como hizo Baleares con su impuesto sobre estancias turísticas (Ley 2/2016), que grava a todos los alojados, residentes o no, con exenciones por edad, salud, fuerza mayor o programas sociales. Gravar solo a los no residentes plantea un problema con el derecho de la UE: el Tribunal de Justicia declaró contrarias a la no discriminación y a la libre prestación de servicios las ventajas tarifarias reservadas a nacionales o residentes que excluían a turistas de otros Estados miembros (C-388/01). El programa no dice si la crearía el Estado o Canarias.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-15138",
+       "titulo": "Ley Orgánica 1/2018, de reforma del Estatuto de Autonomía de Canarias (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/eli/es-ib/l/2016/03/30/2/con",
+       "titulo": "Ley balear 2/2016, del impuesto sobre estancias turísticas (texto consolidado, BOE)"
+      },
+      {
+       "url": "http://publications.europa.eu/resource/celex/62001CJ0388",
+       "titulo": "TJUE, sentencia de 16-1-2003, Comisión/Italia, C-388/01 (tarifas reservadas a residentes) (Oficina de Publicaciones de la UE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "no_verificable",
+     "texto": "Es una medida de ingreso sin coste presupuestario relevante, salvo su gestión. La base potencial es conocida (15,7 millones de turistas internacionales en 2025), pero el programa no da tipo, exenciones ni administración que la cobraría, de modo que no hay base para estimar la recaudación; tampoco dice a qué se destinaría.",
+     "fuentes": [
+      {
+       "url": "https://www.ine.es/dyngs/Prensa/FRONTUR1225.htm",
+       "titulo": "INE, Frontur diciembre de 2025 y año 2025"
+      },
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=10",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 10"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "La evidencia sobre su efecto en la demanda es limitada: con el método de control sintético, Biagi, Brandano y Pulina no hallan un efecto específico sobre pernoctaciones, llegadas ni estancia media en Roma, Florencia y Padua (2008-2014), y en municipios de Cerdeña (2006-2011) observan efectos distintos sobre el turismo nacional y el internacional. No hemos localizado evaluaciones de tasas que eximan a los residentes.",
+     "fuentes": [
+      {
+       "url": "https://econpapers.repec.org/RePEc:spr:adspcp:978-3-030-61274-0_23",
+       "titulo": "Biagi, Brandano y Pulina (2021), Tourism Taxation: Good or Bad for Cities?, Springer"
+      },
+      {
+       "url": "https://ideas.repec.org/p/cns/cnscwp/201609.html",
+       "titulo": "Biagi, Brandano y Pulina (2016), Tourism taxation: a synthetic control method for policy evaluation, CRENoS Working Paper 2016/09"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Las tasas sobre las pernoctaciones están extendidas en Europa: se aplican en municipios italianos y Ámsterdam cobra un 12,5 % del precio de la habitación. Las evaluaciones localizadas, sobre Italia, no muestran efectos claros sobre la demanda; no conocemos evaluaciones de los resultados del gasto que financian.",
+     "fuentes": [
+      {
+       "url": "https://econpapers.repec.org/RePEc:spr:adspcp:978-3-030-61274-0_23",
+       "titulo": "Biagi, Brandano y Pulina (2021), Tourism Taxation: Good or Bad for Cities?, Springer"
+      },
+      {
+       "url": "https://cms.law/en/nld/legal-updates/amsterdam-tightens-the-screw-on-tourism-a-further-update",
+       "titulo": "CMS (2025): Ámsterdam extiende el tope de camas hoteleras a toda la ciudad"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "Baleares grava las estancias turísticas desde 2016 (Ley 2/2016), con tarifas de 1 a 4 euros por día según el alojamiento y la recaudación afectada a un fondo de turismo sostenible; su preámbulo cita antecedentes en Baleares y Cataluña. En Canarias, el Parlamento rechazó una moción de NC-BC con una ecotasa en abril de 2024 y, en abril de 2025, otra del PSOE para gravar las estancias de no residentes, con los votos en contra de CC, PP, ASG, AHI y Vox, según la prensa.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/eli/es-ib/l/2016/03/30/2/con",
+       "titulo": "Ley balear 2/2016, del impuesto sobre estancias turísticas (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.thelocal.es/20240424/canary-govt-rules-out-tourist-tax-and-property-ban-for-non-residents",
+       "titulo": "The Local (24-4-2024): el Parlamento canario rechaza la ecotasa y la moratoria de camas"
+      },
+      {
+       "url": "https://rtvc.es/pleno-del-parlamento-de-canarias-9-de-abril-2025/",
+       "titulo": "RTVC (9-4-2025): el Parlamento de Canarias rechaza una tasa turística para no residentes"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Pagarían los visitantes no residentes (15,7 millones de turistas internacionales en 2025, más los nacionales de fuera de Canarias si se incluyeran) y se beneficiarían los presupuestos canarios. Sin tipo ni destino de la recaudación no puede cuantificarse cuánto pagarían ni quién recibiría el gasto.",
+     "fuentes": [
+      {
+       "url": "https://www.ine.es/dyngs/Prensa/FRONTUR1225.htm",
+       "titulo": "INE, Frontur diciembre de 2025 y año 2025"
+      },
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=10",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 10"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Aporta ingresos ligados al número de visitantes, que pueden financiar actuaciones en las zonas turísticas, como hace el fondo balear. Los riesgos son un efecto sobre la demanda, que la evidencia italiana no muestra con claridad, y, si exime a los residentes, su posible incompatibilidad con el derecho de la UE.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/eli/es-ib/l/2016/03/30/2/con",
+       "titulo": "Ley balear 2/2016, del impuesto sobre estancias turísticas (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://econpapers.repec.org/RePEc:spr:adspcp:978-3-030-61274-0_23",
+       "titulo": "Biagi, Brandano y Pulina (2021), Tourism Taxation: Good or Bad for Cities?, Springer"
+      },
+      {
+       "url": "http://publications.europa.eu/resource/celex/62001CJ0388",
+       "titulo": "TJUE, sentencia de 16-1-2003, Comisión/Italia, C-388/01 (tarifas reservadas a residentes) (Oficina de Publicaciones de la UE)"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "upc-10",
+   "titulo": "Impuesto permanente a las grandes fortunas, gravamen a la banca y recuperación del de las energéticas",
+   "area": "fiscalidad",
+   "resumen": "Hacer permanente y más progresivo el impuesto estatal a las grandes fortunas, mantener el impuesto extraordinario sobre la banca y recuperar el de las empresas energéticas.",
+   "cita": "Mantenimiento de los impuestos extraordinarios sobre la banca y reintroducir el impuesto extraordinario a las empresas energéticas. [...] Mantenimiento de un impuesto a las grandes fortunas de forma permanente, reforzando además su progresividad",
+   "cita_traduccion": null,
+   "pagina": 12,
+   "beneficiarios": "Los presupuestos públicos (en 2024 los gravámenes a banca y energéticas recaudaron 2.859 M€; el impuesto a las grandes fortunas, 623 M€ en 2023, 37 M€ en 2024 y casi 19 M€ en 2025). Pagarían unos 12.010 contribuyentes con patrimonio neto superior a 3 M€, las entidades financieras con margen de intereses y comisiones superior a 100 M€ y las grandes energéticas.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (pp. 11-12) concreta el instrumento: mantener «de forma permanente» y con más progresividad el impuesto a las grandes fortunas, para que las comunidades no puedan dejar sin efecto el de patrimonio; mantener el impuesto extraordinario sobre la banca, y «reintroducir» el de las empresas energéticas. No da tipos, umbrales, recaudación esperada ni plazo.",
+     "fuentes": [
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=11",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 11"
+      },
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=12",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 12"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "El Tribunal Constitucional desestimó íntegramente el recurso contra el impuesto temporal de solidaridad de las grandes fortunas (STC 170/2023), que sigue prorrogado hasta que se revise la tributación patrimonial. El impuesto sobre el margen de intereses y comisiones de la banca rige desde 2024 (Ley 7/2024). Endurecer estos impuestos o crear otros tributos estatales requiere ley ordinaria.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-25991",
+       "titulo": "STC 170/2023, de 22 de noviembre, sobre el art. 3 de la Ley 38/2022 (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22684",
+       "titulo": "Ley 38/2022, gravámenes temporales e impuesto temporal de solidaridad de las grandes fortunas (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/l/2024/12/20/7",
+       "titulo": "Ley 7/2024, disposición final novena: impuesto sobre el margen de intereses y comisiones (BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "Es una medida de ingreso con recaudación conocida para las figuras existentes: 1.695 M€ del gravamen bancario y 1.164 M€ del energético en 2024, y 623 M€ del impuesto de grandes fortunas en 2023, que bajó a 37 M€ en 2024 y a casi 19 M€ en 2025 según la Agencia Tributaria. El programa no cuantifica cuánto más recaudaría ni a qué lo destinaría.",
+     "fuentes": [
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/hacienda/paginas/2024/270424-gravamenes-banca.aspx",
+       "titulo": "La Moncloa/Hacienda (27-9-2024): los gravámenes de la banca y las energéticas alcanzan los 2.859 millones de euros en 2024"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/hacienda/paginas/2023/200923-impuesto-solidaridad-grandes-fortunas.aspx",
+       "titulo": "La Moncloa/Hacienda: recaudación del impuesto de grandes fortunas en 2023"
+      },
+      {
+       "url": "https://sede.agenciatributaria.gob.es/Sede/estadisticas/recaudacion-tributaria/informe-anual/ejercicio-2025/6-otros-impuestos.html",
+       "titulo": "Agencia Tributaria, Informe anual de recaudación tributaria 2025, capítulo 6: otros impuestos"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "El Banco de España señala que gravar el margen de intereses y comisiones, y no el beneficio, hace el impuesto poco sensible a las caídas de beneficios y puede desincentivar modelos de negocio con más riesgo de crédito; el BCE pidió analizar sus efectos sobre la estabilidad financiera y el crédito. En el impuesto de grandes fortunas, los contribuyentes descuentan lo pagado en el impuesto sobre el patrimonio autonómico, de modo que su recaudación depende de lo que bonifique cada comunidad.",
+     "fuentes": [
+      {
+       "url": "https://www.bde.es/f/webbe/Secciones/Publicaciones/InformesBoletinesRevistas/InformesEstabilidadFinancera/25/FSR_2025_1_Box3_1.pdf",
+       "titulo": "Banco de España, Informe de Estabilidad Financiera primavera 2025, recuadro 3.1"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/hacienda/paginas/2023/200923-impuesto-solidaridad-grandes-fortunas.aspx",
+       "titulo": "La Moncloa/Hacienda: recaudación del impuesto de grandes fortunas en 2023"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "La UE aprobó en 2022 una contribución solidaria temporal de al menos el 33 % sobre los beneficios extraordinarios del sector fósil. No hemos localizado evaluaciones publicadas de sus resultados ni de gravámenes bancarios comparables.",
+     "fuentes": [
+      {
+       "url": "http://publications.europa.eu/resource/celex/32022R1854",
+       "titulo": "Reglamento (UE) 2022/1854, contribución solidaria temporal (Oficina de Publicaciones de la UE)"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "España aplicó gravámenes temporales a banca y energéticas en 2023 y 2024 (Ley 38/2022). El bancario se sustituyó por un impuesto sobre el margen de intereses y comisiones con tipos del 1 % al 7 % (Ley 7/2024); el energético no se aplicó en 2025: al no convalidarlo el Congreso, el 22-1-2025 quedó derogado el Real Decreto-ley 10/2024, que lo establecía para ese año. El impuesto de grandes fortunas, creado para 2023 y 2024, sigue prorrogado.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22684",
+       "titulo": "Ley 38/2022, gravámenes temporales e impuesto temporal de solidaridad de las grandes fortunas (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/l/2024/12/20/7",
+       "titulo": "Ley 7/2024, disposición final novena: impuesto sobre el margen de intereses y comisiones (BOE)"
+      },
+      {
+       "url": "https://www.infobae.com/espana/agencias/2025/01/22/congreso-rechaza-el-gravamen-energetico-el-alza-de-pensiones-y-las-ayudas-al-transporte/",
+       "titulo": "EFE/Infobae (22-1-2025): el Congreso no convalida el gravamen energético ni el decreto ómnibus"
+      },
+      {
+       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-1137",
+       "titulo": "Resolución de 22 de enero de 2025, del Congreso de los Diputados, por la que se ordena la publicación del Acuerdo de derogación del Real Decreto-ley 10/2024 (BOE)"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "favorable",
+     "texto": "Los ingresos financian gasto público general: 2.859 M€ de los gravámenes a banca y energéticas en 2024 y 623 M€ del impuesto de grandes fortunas en 2023, que bajó a 37 M€ en 2024 y a casi 19 M€ en 2025. El coste recae en un grupo reducido: unos 12.010 contribuyentes con patrimonio neto superior a 3 M€ (el 0,1 % del total), las entidades financieras con margen de intereses y comisiones superior a 100 M€ y las grandes energéticas.",
+     "fuentes": [
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/hacienda/paginas/2024/270424-gravamenes-banca.aspx",
+       "titulo": "La Moncloa/Hacienda (27-9-2024): los gravámenes de la banca y las energéticas alcanzan los 2.859 millones de euros en 2024"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/hacienda/paginas/2023/200923-impuesto-solidaridad-grandes-fortunas.aspx",
+       "titulo": "La Moncloa/Hacienda: recaudación del impuesto de grandes fortunas en 2023"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/l/2024/12/20/7",
+       "titulo": "Ley 7/2024, disposición final novena: impuesto sobre el margen de intereses y comisiones (BOE)"
+      },
+      {
+       "url": "https://sede.agenciatributaria.gob.es/Sede/estadisticas/recaudacion-tributaria/informe-anual/ejercicio-2025/6-otros-impuestos.html",
+       "titulo": "Agencia Tributaria, Informe anual de recaudación tributaria 2025, capítulo 6: otros impuestos"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Aportaría ingresos estables mientras se mantengan márgenes elevados en la banca. El Banco de España y el BCE advierten de posibles efectos sobre la solvencia y el crédito, y la recaudación del gravamen energético dependía de precios extraordinarios que no son permanentes.",
+     "fuentes": [
+      {
+       "url": "https://www.bde.es/f/webbe/Secciones/Publicaciones/InformesBoletinesRevistas/InformesEstabilidadFinancera/25/FSR_2025_1_Box3_1.pdf",
+       "titulo": "Banco de España, Informe de Estabilidad Financiera primavera 2025, recuadro 3.1"
+      },
+      {
+       "url": "http://publications.europa.eu/resource/celex/32022R1854",
+       "titulo": "Reglamento (UE) 2022/1854, contribución solidaria temporal (Oficina de Publicaciones de la UE)"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "upc-11",
+   "titulo": "Delimitar la mediana con Marruecos y reconocer las aguas, los fondos marinos y el espacio aéreo de Canarias",
+   "area": "modelo territorial",
+   "resumen": "Delimitar la frontera marítima con Marruecos por la línea media, reconocer las aguas, los fondos marinos y el espacio aéreo de Canarias y que Canarias participe en las negociaciones con terceros Estados que le afecten.",
+   "cita": "Igualmente, defendemos el establecimiento de la mediana con Marruecos, el reconocimiento de nuestras aguas, así como de los fondos marinos del archipiélago, y su espacio aéreo. Y la participación de Canarias en las negociaciones con terceros estados en temas que nos afecten.",
+   "cita_traduccion": null,
+   "pagina": 15,
+   "beneficiarios": "Los residentes y los sectores de Canarias que dependen del mar (pesca y, a futuro, recursos minerales y energéticos del fondo marino), por una mayor seguridad jurídica; no hay cuantificación. No tiene coste presupuestario directo; el coste sería diplomático y depende de lo que se negocie con Marruecos.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 15) defiende «el establecimiento de la mediana con Marruecos», el reconocimiento de las aguas, los fondos marinos y el espacio aéreo del archipiélago y que Canarias participe en las negociaciones con terceros Estados que le afecten. No dice si propone un tratado, un arbitraje o un cambio legal, qué haría con las aguas frente al Sáhara Occidental, qué entiende por reconocer el espacio aéreo ni en qué plazo.",
+     "fuentes": [
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=15",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 15"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "mixta",
+     "texto": "Las relaciones internacionales son competencia exclusiva del Estado (art. 149.1.3 CE) y un tratado que afecte a la integridad territorial requiere autorización de las Cortes (art. 94.1). La Ley 15/1978 ya fija la línea media como límite de la zona económica salvo tratado, pero la Convención del Mar exige delimitar por acuerdo para lograr una «solución equitativa» (arts. 74 y 83), sin imponer la mediana. España no es un «Estado archipelágico» en el sentido de la Convención (art. 46), y la Ley 44/2010 y el Estatuto canario establecen que el contorno de las aguas canarias no altera los espacios marítimos fijados conforme al Derecho internacional.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/l/1978/02/20/15/con",
+       "titulo": "Ley 15/1978, sobre zona económica (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.un.org/depts/los/convention_agreements/texts/unclos/unclos_e.pdf",
+       "titulo": "Convención de las Naciones Unidas sobre el Derecho del Mar (texto oficial, ONU)"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/l/2010/12/30/44",
+       "titulo": "Ley 44/2010, de 30 de diciembre, de aguas canarias (BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-15138",
+       "titulo": "Ley Orgánica 1/2018, de reforma del Estatuto de Autonomía de Canarias (texto consolidado, BOE)"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "favorable",
+     "texto": "La delimitación se negocia por vía diplomática y no tiene coste presupuestario directo relevante. La Ley 44/2010, que trazó el contorno de las aguas canarias, no incluyó gasto alguno.",
+     "fuentes": [
+      {
+       "url": "https://www.un.org/depts/los/convention_agreements/texts/unclos/unclos_e.pdf",
+       "titulo": "Convención de las Naciones Unidas sobre el Derecho del Mar (texto oficial, ONU)"
+      },
+      {
+       "url": "https://www.boe.es/eli/es/l/2010/12/30/44",
+       "titulo": "Ley 44/2010, de 30 de diciembre, de aguas canarias (BOE)"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "La Corte Internacional de Justicia traza primero una línea equidistante provisional y después la ajusta por circunstancias relevantes, como la desproporción entre las longitudes de costa (Rumanía c. Ucrania, 2009). Según un análisis publicado por la Armada, España defiende la equidistancia y Marruecos la equidad basada en la longitud de su costa. Además, parte de la costa enfrentada es la del Sáhara Occidental, un territorio no autónomo cuyo pueblo debe consentir los acuerdos que se le apliquen, según el Tribunal de Justicia de la UE (2024).",
+     "fuentes": [
+      {
+       "url": "https://www.icj-cij.org/case/132",
+       "titulo": "Corte Internacional de Justicia, Delimitación marítima en el mar Negro (Rumanía c. Ucrania), sentencia de 3-2-2009"
+      },
+      {
+       "url": "https://armada.defensa.gob.es/archivo/mardigitalrevistas/boletinpensamiento/2025/CPN41/Parte6.pdf",
+       "titulo": "Morales Morales (2025), La geopolítica marítima de las Islas Canarias, Cuaderno de Pensamiento Naval 41 (Armada)"
+      },
+      {
+       "url": "https://curia.europa.eu/jcms/upload/docs/application/pdf/2024-10/cp240170es.pdf",
+       "titulo": "TJUE, comunicado de prensa 170/24 (4-10-2024): acuerdos UE-Marruecos y Sáhara Occidental"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "España e Italia delimitaron en 1974 su plataforma continental «según el criterio de equidistancia», y la Corte Internacional de Justicia fijó en 2009 la frontera marítima entre Rumanía y Ucrania a partir de una línea equidistante. No hemos localizado un caso comparable en que la costa enfrentada sea un territorio no autónomo con el estatuto en disputa.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/boe/dias/1978/12/05/pdfs/A27493-27494.pdf",
+       "titulo": "Convenio entre España e Italia sobre delimitación de la plataforma continental (1974), BOE de 5-12-1978"
+      },
+      {
+       "url": "https://www.icj-cij.org/case/132",
+       "titulo": "Corte Internacional de Justicia, Delimitación marítima en el mar Negro (Rumanía c. Ucrania), sentencia de 3-2-2009"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "La Ley 44/2010 trazó el contorno de las aguas canarias tras al menos 40 iniciativas parlamentarias en treinta años. Marruecos aprobó en 2020 dos leyes sobre su mar territorial y su zona económica que incluyen las aguas del Sáhara y se solapan con las canarias; el Gobierno respondió que no concluyen la delimitación, que sigue pendiente. La declaración hispano-marroquí de abril de 2022 reactivó el grupo de trabajo sobre la fachada atlántica e inició conversaciones sobre los espacios aéreos, cuyo grupo se había reunido dos veces hasta abril de 2024; la declaración de la Reunión de Alto Nivel de diciembre de 2025 no menciona la delimitación.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/eli/es/l/2010/12/30/44",
+       "titulo": "Ley 44/2010, de 30 de diciembre, de aguas canarias (BOE)"
+      },
+      {
+       "url": "https://armada.defensa.gob.es/archivo/mardigitalrevistas/boletinpensamiento/2025/CPN41/Parte6.pdf",
+       "titulo": "Morales Morales (2025), La geopolítica marítima de las Islas Canarias, Cuaderno de Pensamiento Naval 41 (Armada)"
+      },
+      {
+       "url": "https://www.eldiario.es/canariasahora/politica/marruecos-no-concluido-delimitacion-aguas-territoriales-gobierno_1_7227758.html",
+       "titulo": "Canarias Ahora (17-2-2021): el Gobierno responde que la delimitación con Marruecos sigue pendiente"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/presidente/actividades/Documents/2022/070422-declaracion-conjunta-Espana-Marruecos.pdf",
+       "titulo": "La Moncloa: declaración conjunta España-Marruecos de 7-4-2022"
+      },
+      {
+       "url": "https://www.congreso.es/entradap/l15p/e1/e_0019912_n_000.pdf",
+       "titulo": "Respuesta del Gobierno a la pregunta escrita 184/4884 (5-4-2024): grupo de trabajo sobre espacios aéreos"
+      },
+      {
+       "url": "https://www.lamoncloa.gob.es/presidente/actividades/Documents/2025/04122025-declaracion-conjunta-espana-marruecos.pdf",
+       "titulo": "La Moncloa: declaración conjunta de la XIII Reunión de Alto Nivel España-Marruecos (4-12-2025)"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a los residentes y a sectores como la pesca y la posible explotación de recursos del fondo marino, como el telurio y el cobalto del Monte Tropic, que según el análisis de la Armada depende de delimitar la plataforma continental. No hay cuantificación de los beneficiarios ni de los recursos, y no hay coste presupuestario directo.",
+     "fuentes": [
+      {
+       "url": "https://armada.defensa.gob.es/archivo/mardigitalrevistas/boletinpensamiento/2025/CPN41/Parte6.pdf",
+       "titulo": "Morales Morales (2025), La geopolítica marítima de las Islas Canarias, Cuaderno de Pensamiento Naval 41 (Armada)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Un acuerdo daría seguridad jurídica a la economía azul (energías renovables marinas, acuicultura, biotecnología), en la que la incertidumbre sobre los derechos de explotación frena hoy las inversiones según el análisis de la Armada. El riesgo que señala un exembajador para el Derecho del Mar citado por la prensa es que fijar la frontera entre Canarias y el Sáhara Occidental implicaría reconocer la soberanía marroquí, «algo incompatible con el derecho vigente».",
+     "fuentes": [
+      {
+       "url": "https://armada.defensa.gob.es/archivo/mardigitalrevistas/boletinpensamiento/2025/CPN41/Parte6.pdf",
+       "titulo": "Morales Morales (2025), La geopolítica marítima de las Islas Canarias, Cuaderno de Pensamiento Naval 41 (Armada)"
+      },
+      {
+       "url": "https://www.elindependiente.com/internacional/2025/11/29/el-expansionismo-por-mar-de-marruecos-que-amenaza-las-aguas-de-canarias/amp/",
+       "titulo": "El Independiente (29-11-2025): la frontera marítima entre Canarias y Marruecos sigue sin delimitar"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "upc-12",
+   "titulo": "Al menos el 0,7 % de los Presupuestos del Estado para cooperación internacional",
+   "area": "exterior y defensa",
+   "resumen": "Destinar como mínimo el 0,7 % de los Presupuestos Generales del Estado a proyectos de cooperación y solidaridad internacional.",
+   "cita": "Igualmente, impulsaremos una consignación, como mínimo del 0,7%, de los Presupuestos Generales del Estado, destinada a proyectos de cooperación y solidaridad internacional.",
+   "cita_traduccion": null,
+   "pagina": 19,
+   "beneficiarios": "La población de los países socios de la cooperación española, sin cuantificar. El coste lo asumen los presupuestos del Estado: el 0,7 % del gasto consolidado de 2023 equivale a unos 4.085 M€, y la Administración General del Estado gestionó 4.116 M€ de ayuda oficial al desarrollo en 2025, una cifra que incluye la parte de la aportación al presupuesto de la UE que computa como ayuda.",
+   "evaluacion": {
+    "concrecion": {
+     "valoracion": "mixta",
+     "texto": "El programa (p. 19) fija una cuantía mínima, «como mínimo del 0,7 %» de los Presupuestos Generales del Estado, y un destino, «proyectos de cooperación y solidaridad internacional». No da plazo, no dice si el 0,7 % se calcula sobre el gasto total o el no financiero, ni si se mide con la ayuda oficial al desarrollo, que la ley calcula sobre la renta nacional bruta y no sobre el presupuesto.",
+     "fuentes": [
+      {
+       "url": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf#page=19",
+       "titulo": "Unidad del Pueblo Canario, «Líneas básicas del programa electoral de la Unidad del Pueblo Canario (UPC)», programa electoral 29-N-2026 (PDF), p. 19"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-4512",
+       "titulo": "Ley 1/2023, de 20 de febrero, de Cooperación para el Desarrollo Sostenible y la Solidaridad Global (texto consolidado, BOE), art. 1.6"
+      }
+     ]
+    },
+    "legal": {
+     "valoracion": "favorable",
+     "texto": "Las relaciones internacionales son competencia exclusiva del Estado (art. 149.1.3 CE) y el gasto se fija cada año en la ley de Presupuestos (art. 134 CE). La Ley 1/2023 ya establece que España destinará «al menos» el 0,7 % de la renta nacional bruta a la ayuda oficial al desarrollo en el horizonte de 2030, con asignaciones en los Presupuestos (art. 1.6), de modo que la medida no requiere más que la ley de Presupuestos.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+       "titulo": "Constitución Española (texto consolidado, BOE)"
+      },
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-4512",
+       "titulo": "Ley 1/2023, de 20 de febrero, de Cooperación para el Desarrollo Sostenible y la Solidaridad Global (texto consolidado, BOE), art. 1.6"
+      }
+     ]
+    },
+    "financiacion": {
+     "valoracion": "mixta",
+     "texto": "El coste es estimable. Con el presupuesto consolidado de 2023 (583.543 M€ de gasto total y 450.722 M€ de operaciones no financieras), el 0,7 % equivale a unos 4.085 M€ o 3.155 M€. En 2025 la Administración General del Estado gestionó 4.116 M€ de ayuda oficial al desarrollo, pero esa cifra incluye la parte de la aportación española al presupuesto de la UE que canaliza Hacienda, de modo que el gasto adicional depende de qué cuente como «proyectos de cooperación», que el programa no define. El programa no explica cómo se pagaría.",
+     "fuentes": [
+      {
+       "url": "https://www.congreso.es/docu/pge2023/pge_2023-web/PGE-ROM/doc/HTM/N_23_A_A_3_6.HTM",
+       "titulo": "Presupuestos Generales del Estado 2023: total de gastos consolidados por capítulos (Congreso)"
+      },
+      {
+       "url": "https://www.exteriores.gob.es/es/Comunicacion/NotasPrensa/Paginas/2026_NOTAS_P/La-Ayuda-Oficial-al-Desarrollo-espa%c3%b1ola-alcanza-su-mayor-cifra-de-los-ultimos-15-a%c3%b1os.aspx",
+       "titulo": "Ministerio de Asuntos Exteriores (10-4-2026): la AOD española de 2025 según los datos de avance del CAD"
+      }
+     ]
+    },
+    "evidencia": {
+     "valoracion": "mixta",
+     "texto": "La evidencia sobre el efecto de la ayuda es dispar. Un metaanálisis de 97 estudios concluye que, en conjunto, la ayuda no ha sido eficaz para el crecimiento (Doucouliagos y Paldam, 2009). Al separar la ayuda que puede influir a corto plazo (infraestructuras, sectores productivos y apoyo presupuestario), Clemens y otros (2004) hallan un efecto positivo sobre el crecimiento en cuatro años. Sobre la migración, con la que Luis Campos, cabeza de lista por Las Palmas, relacionó la propuesta en campaña (EFE, 12-11-2026), Lanati y Thiele (2018) encuentran una relación negativa entre la ayuda recibida y la emigración, al contrario que estudios anteriores.",
+     "fuentes": [
+      {
+       "url": "https://ideas.repec.org/a/bla/jecsur/v23y2009i3p433-461.html",
+       "titulo": "Doucouliagos y Paldam (2009), The aid effectiveness literature: the sad results of 40 years of research, Journal of Economic Surveys"
+      },
+      {
+       "url": "https://ideas.repec.org/p/cgd/wpaper/44.html",
+       "titulo": "Clemens, Radelet y Bhavnani (2004), Counting Chickens When They Hatch: The Short-term Effect of Aid on Growth, Center for Global Development, Working Paper 44"
+      },
+      {
+       "url": "https://ideas.repec.org/a/eee/wdevel/v111y2018icp59-74.html",
+       "titulo": "Lanati y Thiele (2018), The impact of foreign aid on migration revisited, World Development"
+      },
+      {
+       "url": "https://www.lavozdelanzarote.com/actualidad/politica/campos-upc-alerta-29n-no-va-alternancia-sino-perder-todo-conquistado-en-70-anos_247303_102.html",
+       "titulo": "La Voz de Lanzarote (EFE, 12-11-2026): entrevista a Luis Campos"
+      }
+     ]
+    },
+    "internacional": {
+     "valoracion": "mixta",
+     "texto": "Según los datos de avance de la OCDE para 2025, solo cuatro países superaron el objetivo del 0,7 % de la renta nacional bruta: Noruega, Luxemburgo, Suecia y Dinamarca; el conjunto de los países del Comité de Ayuda al Desarrollo destinó el 0,26 % de su renta nacional bruta. No hemos localizado evaluaciones que comparen los resultados de alcanzar ese nivel de ayuda con los de los demás donantes.",
+     "fuentes": [
+      {
+       "url": "https://v1.focus2030.org/Historic-drop-in-Official-Development-Assistance-in-2025",
+       "titulo": "Focus 2030 (abril de 2026): resumen de los datos de avance de la OCDE sobre la AOD de 2025"
+      }
+     ]
+    },
+    "antecedentes": {
+     "valoracion": "mixta",
+     "texto": "La Ley 1/2023 fijó el objetivo del 0,7 % de la renta nacional bruta para 2030, con metas intermedias en los Planes Directores. La ayuda oficial al desarrollo española creció un 12 % en 2024, hasta más de 4.000 M€, y un 13 % en 2025, hasta más de 4.550 M€, la mayor cifra de los últimos quince años según el Ministerio de Asuntos Exteriores.",
+     "fuentes": [
+      {
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-4512",
+       "titulo": "Ley 1/2023, de 20 de febrero, de Cooperación para el Desarrollo Sostenible y la Solidaridad Global (texto consolidado, BOE), art. 1.6"
+      },
+      {
+       "url": "https://www.exteriores.gob.es/es/Comunicacion/NotasPrensa/Paginas/2025_NOTAS_P/Exteriores-celebra-que-la-Ayuda-Oficial-al-Desarrollo-espanola-haya-crecido-un-12-en-2024-superando-los-4-000-millones-de-.aspx",
+       "titulo": "Ministerio de Asuntos Exteriores (18-4-2025): la AOD española de 2024 según los datos de avance del CAD"
+      },
+      {
+       "url": "https://www.exteriores.gob.es/es/Comunicacion/NotasPrensa/Paginas/2026_NOTAS_P/La-Ayuda-Oficial-al-Desarrollo-espa%c3%b1ola-alcanza-su-mayor-cifra-de-los-ultimos-15-a%c3%b1os.aspx",
+       "titulo": "Ministerio de Asuntos Exteriores (10-4-2026): la AOD española de 2025 según los datos de avance del CAD"
+      }
+     ]
+    },
+    "beneficiarios": {
+     "valoracion": "mixta",
+     "texto": "Beneficiaría a la población de los países socios de la cooperación española, sin que el programa diga cuáles ni cuánta; la AECID, principal agencia, gestionó más de 610 M€ de ayuda en 2025. El coste lo asumen los presupuestos del Estado y es estimable (unos 4.085 M€ con el gasto consolidado de 2023), pero el aumento sobre lo que ya se gasta no puede cuantificarse sin saber qué partidas contarían.",
+     "fuentes": [
+      {
+       "url": "https://www.exteriores.gob.es/es/Comunicacion/NotasPrensa/Paginas/2026_NOTAS_P/La-Ayuda-Oficial-al-Desarrollo-espa%c3%b1ola-alcanza-su-mayor-cifra-de-los-ultimos-15-a%c3%b1os.aspx",
+       "titulo": "Ministerio de Asuntos Exteriores (10-4-2026): la AOD española de 2025 según los datos de avance del CAD"
+      },
+      {
+       "url": "https://www.congreso.es/docu/pge2023/pge_2023-web/PGE-ROM/doc/HTM/N_23_A_A_3_6.HTM",
+       "titulo": "Presupuestos Generales del Estado 2023: total de gastos consolidados por capítulos (Congreso)"
+      }
+     ]
+    },
+    "largo_plazo": {
+     "valoracion": "mixta",
+     "texto": "Un suelo fijado en porcentaje del presupuesto da estabilidad a la financiación de la cooperación, pero su importe varía con el tamaño del presupuesto y compite con otras partidas. La evidencia sobre sus efectos a largo plazo en el crecimiento de los países receptores es dispar (Doucouliagos y Paldam, 2009; Clemens y otros, 2004), y la relación con la migración que mencionó Campos en campaña no está establecida de forma concluyente (Lanati y Thiele, 2018, frente a estudios anteriores).",
+     "fuentes": [
+      {
+       "url": "https://ideas.repec.org/a/bla/jecsur/v23y2009i3p433-461.html",
+       "titulo": "Doucouliagos y Paldam (2009), The aid effectiveness literature: the sad results of 40 years of research, Journal of Economic Surveys"
+      },
+      {
+       "url": "https://ideas.repec.org/p/cgd/wpaper/44.html",
+       "titulo": "Clemens, Radelet y Bhavnani (2004), Counting Chickens When They Hatch: The Short-term Effect of Aid on Growth, Center for Global Development, Working Paper 44"
+      },
+      {
+       "url": "https://ideas.repec.org/a/eee/wdevel/v111y2018icp59-74.html",
+       "titulo": "Lanati y Thiele (2018), The impact of foreign aid on migration revisited, World Development"
+      },
+      {
+       "url": "https://www.lavozdelanzarote.com/actualidad/politica/campos-upc-alerta-29n-no-va-alternancia-sino-perder-todo-conquistado-en-70-anos_247303_102.html",
+       "titulo": "La Voz de Lanzarote (EFE, 12-11-2026): entrevista a Luis Campos"
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

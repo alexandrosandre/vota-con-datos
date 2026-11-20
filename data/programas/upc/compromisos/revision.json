@@ -1,258 +1,47 @@
 {
  "aprobado": true,
  "revisor": "Claude (Anthropic), pasada independiente",
- "fecha": "2026-11-12",
- "base": "compromisos",
- "alcance": "15 compromisos y 10 prioridades (9 de la evaluación más upc-10, añadida en la revisión) × 8 criterios. Se abrieron las 75 URL citadas en seleccion.json y evaluacion.json con una petición normal: las 75 respondieron 200. La respuesta del Gobierno del Congreso (184/4884) es un PDF de una página y está completa. Para upc-10 se leyeron además la Ley 1/2023 (BOE), el total de gastos consolidados de los PGE 2023 (Congreso), las notas de Exteriores sobre la AOD de 2024 y 2025, tres resúmenes de RePEc (Doucouliagos y Paldam; Clemens, Radelet y Bhavnani; Lanati y Thiele) y el resumen de Focus 2030 de los datos de avance de la OCDE. La nota de prensa de la OCDE, la del Gobierno noruego y la de CGD devolvieron 403, y Euronews 406. No se usaron ni se sortearon. Citas: las 37 coinciden con su copia local y con la página en vivo (verify_quotes: 0 no encontradas). El texto del Manifiesto en vivo es idéntico a la copia local. Su fecha (3-nov) procede de la cabecera Last-Modified registrada en partidos.json. El PDF tiene ModDate 30-10-2026, y hoy el servidor da Last-Modified 9-11-2026 con el mismo contenido. El Manifiesto está enlazado desde la sección «Manifiesto» de la web oficial y se presenta como manifiesto electoral para las Cortes Generales. Las citas de upc-c01 y upc-c03 son el texto literal de la nota oficial de UPC (quien = la coalición), redactada en estilo indirecto por el propio partido. Es el mismo criterio aprobado para psc-c03 (nota oficial del PSC) y para las notas oficiales de Junts y del Frente Amplio. Las citas de upc-c09 y upc-c15 son de Luis Campos, cabeza de lista por Las Palmas, en primera persona (Canarias7, 4-nov). Todas las fuentes son posteriores a la convocatoria y se refieren al 29-N. upc-10 (0,7 % para cooperación) se evaluó durante esta revisión al corregir la selección; una segunda lectura independiente comprobó todas sus fuentes y cifras: PGE 2023 consolidados (583.543 y 450.722 M€; 0,7 % = 4.085 y 3.155 M€), Exteriores (AGE 4.116 M€ en 2025, AOD total de más de 4.550 M€, +13 %; +12 % en 2024; AECID más de 610 M€; Hacienda canaliza la aportación a la UE), Ley 1/2023 (art. 1.6), Focus 2030 sobre los datos de avance de la OCDE (0,26 %; Noruega, Luxemburgo, Suecia y Dinamarca), Doucouliagos y Paldam (97 estudios), Clemens y otros y Lanati y Thiele. Sin cambios.",
- "seleccion": "Las prioridades se apoyan en el Manifiesto, que es el resumen oficial de campaña, y en lo que destacan las notas oficiales: vivienda, pensiones, singularidad insular y territorio (26-oct). También en los focos del programa que Campos citó a EFE (12-nov): mercado inmobiliario, modelo turístico y política migratoria. upc-c11 (0,7 % para cooperación) se pasa de «no priorizado» a prioridad. Figura en el eje 15 del Manifiesto, Campos la repitió el 12-nov dentro de la política migratoria, que es uno de los tres focos que citó, y tiene más evidencia de énfasis que upc-c05 y upc-c06, que solo constan en el Manifiesto. Por eso el motivo de exclusión («no figura entre las prioridades que la coalición destaca») no se sostenía. «veces» se reestructura con el formato aprobado ({n, nota, ocasiones} con «cuenta»), y n cuenta ocasiones públicas distintas, incluida la de la cita principal. La entradilla de la misma nota (c01) y el título de otro eje del mismo Manifiesto (c04) no cuentan como ocasiones. La nota del registro del 26-oct (c08) tampoco cuenta, porque cita las pensiones como prioridad sin la medida. Las repeticiones en estilo indirecto de EFE o Canarias Ahora cuentan y se marcan, como en psoe y vox. Los descartes se mantienen: la cifra de 1.800 € del SMI la da la número dos, Iratxe Serrano, que no es líder; la restricción de compras a no residentes solo consta en estilo indirecto, y las tribunas de opinión no son fuente.",
- "igual_estandar": "Se comparó con las valoraciones aprobadas y con la auditoría de coherencia del 12-11. (1) Impuestos a banca, energéticas y grandes fortunas: upc-06 coincide en los 8 criterios con bng-09 (legal y beneficiarios «favorable»; financiación «mixta», con recaudación conocida de las figuras existentes). (2) SMI: upc-08 coincide con psoe-03 y psc-02, «Subir el salario mínimo todos los años» (financiación «no_verificable» sin cuantía; antecedentes «favorable»). (3) Pensiones: upc-07 tiene financiación «mixta» y beneficiarios «favorable», como psoe-02 y frente_amplio-05. Su encaje legal es «favorable» porque la regla del IPC ya está en el art. 58 LGSS, mientras que psoe-02 requiere una reforma constitucional. (4) Alquiler: la financiación de upc-01 es «favorable», como medida regulatoria, igual que pp-09, erc-06 y adelante_andalucia-01. upc-02 es «no_verificable» porque incluye ampliar el parque público sin cuantía. (5) Medidas regulatorias con un efecto fiscal sin estimar: upc-04 (moratoria) pasa de «mixta» a «no_verificable», con la regla de la auditoría (cc-06, bng-02, pp-02, pp-03, salf-02 y salf-06). El texto documentaba efectos fiscales sin estimación de coste, y «mixta» exige un coste conocido o estimable. (6) Ingresos sin base para estimar la recaudación: upc-05 (tasa turística sin tipo ni exenciones) pasa de «mixta» a «no_verificable», como erc-09, porque su propio texto decía que la recaudación «no puede estimarse». (7) Reforma constitucional definida por el propio partido: el encaje legal de upc-03 es «mixta», como psoe-02. La regla «desfavorable» de erc-04, bng-01 y salf-11 se aplica cuando el diseño la exige sin proponerla. (8) Encaje legal de la tasa para no residentes (upc-05, «mixta») frente a la compra por extranjeros de cc-06 («desfavorable»): cc-06 restringe en su núcleo la libre circulación de capitales. La tasa podría diseñarse por estancia, como la balear, que grava a todos los alojados, y UPC no define el diseño.",
+ "fecha": "2026-11-20",
+ "base": "complemento",
+ "seleccion_sha256": "f23f1913f083757318656cfc95d8eea628b7f01b74ca2b5a46231f5b236426e7",
+ "alcance": "Complemento del programa: la prioridad upc-c01 y su evaluación (data/programas/upc/compromisos/evaluacion.json, reaprovechada de la revisada el 12-nov como upc-01), el no priorizado upc-c15 y los descartados de seleccion.json (upc-c02 a c14 y los cinco descartes anteriores), su «nota», «nota_prioridades» y «comprobacion_programa», contra el programa del 19-nov (data/sources/programas/upc/lineas-basicas-programa-upc.pdf, SHA-256 ce35fb3c…7e8, comprobado de nuevo sobre la URL oficial) y sus 98 medidas (extraccion.json). Cada compromiso se buscó por sus términos y sinónimos en el texto completo (tensionado, zona, ayuntamiento, municipio, administraciones locales, fresco, alimentación, comedor, kilómetro cero, entre otros): «tensionado» no aparece, y «zona» solo en «zonas residenciales» (vivienda vacacional, p. 4) y «Zona Especial canaria» (p. 16). Las citas y ocasiones de upc-c01 y upc-c15 se leyeron en las copias locales (nota oficial del 27-oct, entrevista de EFE del 12-nov y crónica de Canarias7 del 4-nov); SHA-256 de seleccion.json recalculado y coincidente con el de evaluacion.json. La evaluación de upc-c01 se comparó frase a frase con la versión de HEAD: solo cambian el identificador, los campos «compromiso» e «id_anterior» y una frase final en «concreción» con su fuente (programa, p. 3). Búsqueda web del 20-nov: no consta resolución sobre la zona tensionada de Las Palmas de Gran Canaria después de la información pública que cita «antecedentes». verify_quotes upc: 0 no encontradas.",
+ "seleccion": "Correcta, con el criterio de las revisiones de Vox, Compromís, PSOE, Frente Amplio, EH Bildu, Podemos y Junts (si falta el rasgo que define el compromiso, va al complemento si cumple el criterio único; si falta un elemento accesorio o el programa lo concreta, se descarta). upc-c01 falta en el programa: pide «el control de precios de venta y alquiler» (p. 3) y obliga a comunidades y administraciones locales a tener una política de vivienda pública, pero no dice quién declara las zonas tensionadas ni da ese papel a los ayuntamientos. Cumple el criterio único del 18-nov por las dos vías: dos ocasiones (nota oficial del 27-oct y EFE del 12-nov, «autorizar a los ayuntamientos a topar precios y declarar zonas tensionadas») y una destacada en la entradilla de la nota oficial («Campos también defendió que los ayuntamientos puedan declarar directamente las zonas de mercado residencial tensionado»). upc-c15 (producto fresco en comedores de centros educativos, hospitales y residencias) tampoco está en el programa, pero tiene una sola ocasión, en el cuerpo de una crónica de Canarias7 (no es nota oficial ni teletipo) cuyo titular trata del salario mínimo y cuya entradilla habla en general de medidas contra la inflación: no priorizado, bien decidido. Los nueve antiguos prioritarios y c07, c12, c13 y c14 están en el programa en las medidas y páginas que indican sus motivos (comprobado), casi todos concretados (c02 añade el control de precios y el 9 %; c08, la garantía constitucional; c09, los 1.800 € en doce pagas; c13, las partidas de crédito ampliable); en c02 la «protección permanente» del parque público es un elemento accesorio. Los cinco descartes anteriores se mantienen y su nota del 20-nov es correcta: la limitación de compras por no residentes (p. 4), el SMI de 1.800 € (p. 7), la expropiación a fondos buitre (p. 3) y la RIC (p. 10) están ahora en el programa; las viviendas dotacionales temporales no lo están y tienen una sola ocasión en el cuerpo de la nota del 27-oct, cuyo titular y entradilla tratan de otra cosa.",
+ "igual_estandar": "Sin cambios de valoración: upc-c01 mantiene las ocho valoraciones de su evaluación revisada el 12-nov (antes upc-01: concreción, legal, evidencia, internacional, antecedentes, beneficiarios y largo plazo «mixta»; financiación «favorable», como medida regulatoria, igual que pp-09, erc-06 y adelante_andalucia-01), y la frase añadida en «concreción» describe el programa sin cambiar la nota, como en los complementos de Compromís, Podemos y otros. El criterio de qué está «en el programa» y el criterio único se aplican igual a los quince compromisos; el ámbito local no excluye (upc-c01 es municipal y entra por ocasiones y entradilla). Los textos no contienen adjetivos de valor.",
  "recuento_inicial": {
-  "favorable": 8,
-  "mixta": 61,
+  "favorable": 1,
+  "mixta": 7,
   "desfavorable": 0,
-  "no_verificable": 3
+  "no_verificable": 0
  },
  "recuento_final": {
-  "favorable": 9,
-  "mixta": 66,
+  "favorable": 1,
+  "mixta": 7,
   "desfavorable": 0,
-  "no_verificable": 5
+  "no_verificable": 0
  },
- "recuento_final_nota": "El recuento final incluye las 8 valoraciones de upc-10 (1 «favorable» y 7 «mixta»). Sobre las 9 propuestas iniciales, el recuento queda en 8/59/0/5.",
- "cambios": [
-  {
-   "propuesta": "upc-c01 a upc-c15 (seleccion.json)",
-   "criterio": "veces",
-   "antes": "lista de fuentes sin recuento, sin la ocasión principal",
-   "despues": "{n, nota, ocasiones} con «cuenta»: c01 2, c02 3, c03 2, c04 1, c05 1, c06 1, c07 1, c08 2, c09 2, c10 2, c11 2, c12 1, c13 1, c14 1, c15 1",
-   "motivo": "El prompt 1b define «veces» como ocasiones públicas distintas. La entradilla de la misma nota (c01) y el título del eje 7 del mismo Manifiesto (c04) no son otra ocasión. La nota del 26-oct (c08) menciona las pensiones sin la medida. Es el mismo formato y criterio aprobados en junts, eh_bildu y frente_amplio."
+ "recuento_nota": "Recuento de la única prioridad del complemento (upc-c01, 8 criterios), igual al de su evaluación revisada del 12-nov (antes upc-01). La evaluación anterior de la base «compromisos» (10 prioridades; recuento final de su revisión 9/66/0/5) se retiró al publicarse el programa y sigue en el historial del repositorio; sus textos se reaprovechan en data/programas/upc/evaluacion.json cuando el hecho es el mismo.",
+ "revision_anterior": {
+  "fecha": "2026-11-12",
+  "ampliaciones": [
+   "2026-11-14 (auditoría de coherencia tras el programa de Compromís: upc-05, upc-06 y upc-08)",
+   "2026-11-15 (auditoría de coherencia tras el programa del PSOE: upc-06 y upc-07)",
+   "2026-11-16 (auditoría de coherencia tras el programa del Frente Amplio: upc-06)",
+   "2026-11-18 (auditoría de coherencia tras el programa de Podemos: upc-03, coste de las votaciones del art. 168)"
+  ],
+  "aprobado": true,
+  "base": "compromisos",
+  "cambios": 30,
+  "dudas": 5,
+  "recuento_final": {
+   "favorable": 9,
+   "mixta": 66,
+   "desfavorable": 0,
+   "no_verificable": 5
   },
-  {
-   "propuesta": "upc-c02 (seleccion.json)",
-   "criterio": "veces",
-   "antes": "(sin la entrevista de EFE)",
-   "despues": "se añade la cita literal de Campos del 12-nov: «En Canarias hoy no cabe ni una vivienda vacacional más en suelo residencial urbano o barrios populares»",
-   "motivo": "Ocasión pública distinta en la que el cabeza de lista repite, con sus palabras, la parte de vivienda vacacional (comprobada en la copia local y en vivo)."
-  },
-  {
-   "propuesta": "upc-c04 (seleccion.json)",
-   "criterio": "veces y justificacion",
-   "antes": "el eje 7 se titula «límites al crecimiento turístico»",
-   "despues": "título completo del eje 7, y se añade que, según EFE (12-nov), Campos citó el cambio de modelo turístico como foco del programa; la frase de EFE («poner freno al crecimiento de ese sector») figura con cuenta = false",
-   "motivo": "Título literal del eje. La frase de EFE no menciona la moratoria."
-  },
-  {
-   "propuesta": "upc-c01 (seleccion.json)",
-   "criterio": "justificacion",
-   "antes": "…presenta la vivienda como «el centro de la agenda» […]; la nota la repite dos veces.",
-   "despues": "La nota oficial del 27-oct, titulada «Luis Campos sitúa la vivienda en el centro de la agenda de UPC en el Congreso», presenta esta medida como la que detalla su cabeza de lista; Campos la repitió en la entrevista de EFE del 12-nov (estilo indirecto).",
-   "motivo": "Repetirla en la misma nota no es una ocasión distinta. La repetición real es la de EFE."
-  },
-  {
-   "propuesta": "upc-c11 (seleccion.json)",
-   "criterio": "prioridades / no_priorizados",
-   "antes": "no priorizado: «no figura entre las prioridades que la coalición destaca en sus notas»",
-   "despues": "prioridad n.º 10 (eje 15 del Manifiesto; repetida por Campos el 12-nov dentro de la política migratoria, uno de los tres focos del programa según EFE)",
-   "motivo": "El motivo de exclusión no se sostiene frente a la entrevista de EFE. Además, upc-c05 y upc-c06 se priorizaron solo con el Manifiesto, lo que es menos evidencia de énfasis que la de upc-c11. Hay sitio, porque había 9 de 12."
-  },
-  {
-   "propuesta": "descartados (seleccion.json)",
-   "criterio": "fuente_local / sha256",
-   "antes": "SMI de 1.800 €: url de Canarias7 con fuente_local de la tribuna de Diario de Avisos; tribunas de Diario de Avisos sin copia local",
-   "despues": "SMI de 1.800 €: canarias7_20261104_smi.txt (c78fd125…); tribuna: diariodeavisos_202610_tribuna.txt (dedf61f6…)",
-   "motivo": "La copia local no correspondía a la URL."
-  },
-  {
-   "propuesta": "upc (seleccion.json)",
-   "criterio": "nota",
-   "antes": "Hay 9 prioridades.",
-   "despues": "Hay 10 prioridades (la revisión del 12-nov añadió upc-c11). Según EFE (12-nov), Campos dijo que el programa electoral está «cerrado al 90%»; cuando se publique, su análisis sustituirá a este.",
-   "motivo": "Refleja la nueva prioridad y que el programa está anunciado (cita literal de la fuente local)."
-  },
-  {
-   "propuesta": "upc-10",
-   "criterio": "todos",
-   "antes": "(no evaluada)",
-   "despues": "concreción M, legal F, financiación M, evidencia M, internacional M, antecedentes M, beneficiarios M, largo plazo M",
-   "motivo": "Nueva prioridad. Las fuentes se leyeron: Ley 1/2023, art. 1.6 (0,7 % de la RNB en 2030); PGE 2023, con 583.543 M€ de gasto consolidado y 450.722 M€ de gasto no financiero, de los que el 0,7 % son unos 4.085 y 3.155 M€; Exteriores, con 4.116 M€ de AOD de la AGE en 2025, más de 4.550 M€ en total y la AECID por encima de 610 M€; Focus 2030 sobre la OCDE (cuatro países por encima del 0,7 %; el CAD en conjunto, 0,26 %); y los resúmenes de Doucouliagos y Paldam, Clemens y otros, y Lanati y Thiele. Mismas rúbricas que el resto: el coste es estimable y no se explica la financiación, de ahí «mixta»; no hay plazo, de ahí concreción «mixta»."
-  },
-  {
-   "propuesta": "upc-04",
-   "criterio": "financiacion",
-   "antes": "valoracion: mixta («UPC no estima estos costes»)",
-   "despues": "valoracion: no_verificable («No hay estimación pública de ese efecto fiscal y UPC no lo cuantifica, por lo que no hay base para estimar el coste»)",
-   "motivo": "Regla de la auditoría del 12-11: las medidas regulatorias con un efecto fiscal sin estimar son «no_verificable» (cc-06, bng-02, pp-02, pp-03, salf-02 y salf-06). «mixta» exige un coste conocido o estimable."
-  },
-  {
-   "propuesta": "upc-05",
-   "criterio": "financiacion",
-   "antes": "valoracion: mixta («sin tipo ni exenciones la recaudación no puede estimarse»)",
-   "despues": "valoracion: no_verificable (mismo hecho, con la conclusión de que no hay base para estimar la recaudación)",
-   "motivo": "El propio texto decía que no puede estimarse, lo que contradice «mixta» (coste conocido o estimable). Es el mismo criterio que erc-09."
-  },
-  {
-   "propuesta": "upc-07",
-   "criterio": "beneficiarios (campo y criterio)",
-   "antes": "los perceptores de 736.800 pensiones de Clases Pasivas",
-   "despues": "los 708.267 pensionistas de Clases Pasivas (728.062 pensiones en agosto de 2026)",
-   "motivo": "La fuente citada (Seguridad Social, nómina de octubre) da 728.062 pensiones y 708.267 pensionistas de Clases Pasivas en agosto. La cifra de 736.800 no figura en ella."
-  },
-  {
-   "propuesta": "upc-01",
-   "criterio": "antecedentes",
-   "antes": "si no resuelve en seis meses desde la información pública",
-   "despues": "si no resuelve en seis meses desde que termina la información pública",
-   "motivo": "El art. 37.6 del Decreto-ley canario 1/2024 computa el plazo «a partir de la finalización del trámite de información pública»."
-  },
-  {
-   "propuesta": "upc (evaluacion.json)",
-   "criterio": "nota y seleccion_sha256",
-   "antes": "Evaluación de las 9 prioridades …; sha256 de la selección anterior",
-   "despues": "Evaluación de las 10 prioridades …; sha256 recalculado (9dc8ec70…)",
-   "motivo": "Cambió seleccion.json."
-  },
-  {
-   "propuesta": "upc-08",
-   "criterio": "internacional",
-   "antes": "donde el salario mínimo alcanza dos tercios de la mediana,",
-   "despues": "cuyo objetivo es que el salario mínimo no baje de dos tercios de la mediana (en 2024 se quedó algo por debajo),",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): dato sin respaldo, el mismo corregido en compromis-06 y bng-05: según la fuente citada (Low Pay Commission, resumen de evidencia 2024), el salario mínimo de 2024 «was not high enough to meet the two-thirds of median earnings target» y el mandato es que no baje de ese nivel. La valoración («mixta») no cambia.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "upc-05",
-   "criterio": "legal, largo_plazo (fuentes)",
-   "antes": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:62001CJ0388 | TJUE, sentencia de 16-1-2003, Comisión/Italia, C-388/01 (tarifas reservadas a residentes)",
-   "despues": "http://publications.europa.eu/resource/celex/62001CJ0388 | TJUE, sentencia de 16-1-2003, Comisión/Italia, C-388/01 (tarifas reservadas a residentes) (Oficina de Publicaciones de la UE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "upc-06",
-   "criterio": "internacional, largo_plazo (fuentes)",
-   "antes": "https://eur-lex.europa.eu/eli/reg/2022/1854/oj | Reglamento (UE) 2022/1854, contribución solidaria temporal",
-   "despues": "http://publications.europa.eu/resource/celex/32022R1854 | Reglamento (UE) 2022/1854, contribución solidaria temporal (Oficina de Publicaciones de la UE)",
-   "motivo": "auditoría de coherencia (14-nov, tras el análisis del programa de Compromís): enlace roto: EUR-Lex redirige hoy a la portada del Diario Oficial sin mostrar el documento (14-11-2026); se usa la copia oficial del DOUE en el BOE o el texto de la Oficina de Publicaciones de la UE (comprobado: devuelve el documento en español), como en Compromís.",
-   "fecha": "2026-11-14"
-  },
-  {
-   "propuesta": "upc-07",
-   "criterio": "beneficiarios (campo)",
-   "antes": "la AIReF calcula que las transferencias a la Seguridad Social deberán subir 2,3 puntos",
-   "despues": "la AIReF calcula que las transferencias implícitas al sistema de pensiones desde el resto de la Seguridad Social o la Administración Central deberán subir 2,3 puntos",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fidelidad a la AIReF (nota de 29-5-2026, comprobada el 15-11): «las transferencias implícitas del resto de los Fondos de la Seguridad Social o de la Administración Central deberán aumentar 2,3 puntos hasta alcanzar el 3,0% del PIB»; no son «transferencias a la Seguridad Social». Corregido igual que en psoe-05. La valoración no cambia.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "upc-07",
-   "criterio": "financiacion",
-   "antes": "exigirá elevar las transferencias a la Seguridad Social hasta el 3,0 % del PIB",
-   "despues": "exigirá elevar las transferencias implícitas al sistema de pensiones hasta el 3,0 % del PIB",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fidelidad a la AIReF (nota de 29-5-2026, comprobada el 15-11): «las transferencias implícitas del resto de los Fondos de la Seguridad Social o de la Administración Central deberán aumentar 2,3 puntos hasta alcanzar el 3,0% del PIB»; no son «transferencias a la Seguridad Social». Corregido igual que en psoe-05. La valoración no cambia.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "upc-07",
-   "criterio": "beneficiarios",
-   "antes": "la AIReF estima que las transferencias a la Seguridad Social deberán subir 2,3 puntos",
-   "despues": "la AIReF estima que las transferencias implícitas del resto de fondos de la Seguridad Social o de la Administración Central deberán subir 2,3 puntos",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fidelidad a la AIReF (nota de 29-5-2026, comprobada el 15-11): «las transferencias implícitas del resto de los Fondos de la Seguridad Social o de la Administración Central deberán aumentar 2,3 puntos hasta alcanzar el 3,0% del PIB»; no son «transferencias a la Seguridad Social». Corregido igual que en psoe-05. La valoración no cambia.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "upc-07",
-   "criterio": "legal",
-   "antes": "(art. 58 de la Ley General de la Seguridad Social, en la redacción de la Ley 21/2021)",
-   "despues": "(art. 58 de la Ley General de la Seguridad Social, según la Ley 21/2021, con un apartado 2 modificado por el Real Decreto-ley 2/2023)",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): precisión, igual que en psoe-05: según el texto consolidado del BOE (comprobado el 15-11), el apartado 2 del art. 58 LGSS, que fija la revalorización con el IPC, lo modificó el Real Decreto-ley 2/2023 con efectos de 1-1-2024; la fórmula procede de la Ley 21/2021. La valoración no cambia.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "upc-06",
-   "criterio": "beneficiarios (campo)",
-   "antes": "el impuesto a las grandes fortunas, 623 M€ en 2023)",
-   "despues": "el impuesto a las grandes fortunas, 623 M€ en 2023, 37 M€ en 2024 y casi 19 M€ en 2025)",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): misma cifra oficial en todas las evaluaciones que usan la recaudación del impuesto de grandes fortunas: la Agencia Tributaria (Informe anual de recaudación 2025, cap. 6) da 37 M€ en 2024 y casi 19 M€ en 2025, frente a 623 M€ en 2023; citar solo 2023 como recaudación del impuesto omitía su caída. Como en psoe-07. La valoración no cambia: la recaudación sigue siendo conocida.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "upc-06",
-   "criterio": "financiacion",
-   "antes": "y 623 M€ del impuesto de grandes fortunas en 2023.",
-   "despues": "y 623 M€ del impuesto de grandes fortunas en 2023, que bajó a 37 M€ en 2024 y a casi 19 M€ en 2025 según la Agencia Tributaria.",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): misma cifra oficial en todas las evaluaciones que usan la recaudación del impuesto de grandes fortunas: la Agencia Tributaria (Informe anual de recaudación 2025, cap. 6) da 37 M€ en 2024 y casi 19 M€ en 2025, frente a 623 M€ en 2023; citar solo 2023 como recaudación del impuesto omitía su caída. Como en psoe-07. La valoración no cambia: la recaudación sigue siendo conocida.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "upc-06",
-   "criterio": "financiacion (fuentes)",
-   "antes": "(sin esta fuente)",
-   "despues": "Agencia Tributaria, Informe anual de recaudación tributaria 2025, capítulo 6: otros impuestos — https://sede.agenciatributaria.gob.es/Sede/estadisticas/recaudacion-tributaria/informe-anual/ejercicio-2025/6-otros-impuestos.html",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial de la recaudación de 2024 y 2025.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "upc-06",
-   "criterio": "beneficiarios",
-   "antes": "y 623 M€ del impuesto de grandes fortunas en 2023.",
-   "despues": "y 623 M€ del impuesto de grandes fortunas en 2023, que bajó a 37 M€ en 2024 y a casi 19 M€ en 2025.",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): misma cifra oficial en todas las evaluaciones que usan la recaudación del impuesto de grandes fortunas: la Agencia Tributaria (Informe anual de recaudación 2025, cap. 6) da 37 M€ en 2024 y casi 19 M€ en 2025, frente a 623 M€ en 2023; citar solo 2023 como recaudación del impuesto omitía su caída. Como en psoe-07. La valoración no cambia: la recaudación sigue siendo conocida.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "upc-06",
-   "criterio": "beneficiarios (fuentes)",
-   "antes": "(sin esta fuente)",
-   "despues": "Agencia Tributaria, Informe anual de recaudación tributaria 2025, capítulo 6: otros impuestos — https://sede.agenciatributaria.gob.es/Sede/estadisticas/recaudacion-tributaria/informe-anual/ejercicio-2025/6-otros-impuestos.html",
-   "motivo": "auditoría de coherencia (15-nov, tras el análisis del programa del PSOE): fuente oficial de la recaudación de 2024 y 2025.",
-   "fecha": "2026-11-15"
-  },
-  {
-   "propuesta": "upc-06",
-   "criterio": "antecedentes",
-   "antes": "el energético decayó al no convalidar el Congreso, el 22-1-2025, el decreto que lo prorrogaba.",
-   "despues": "el energético no se aplicó en 2025: al no convalidarlo el Congreso, el 22-1-2025 quedó derogado el Real Decreto-ley 10/2024, que lo establecía para ese año.",
-   "motivo": "auditoría de coherencia (16-nov, tras el análisis del programa del Frente Amplio): precisión con fuente primaria, como en frente_amplio-11: la Ley 38/2022 limitaba el gravamen energético a 2023 y 2024, y el Congreso derogó el 22-1-2025 el Real Decreto-ley 10/2024, «para el establecimiento de un gravamen temporal energético durante el año 2025» (BOE-A-2025-1137, comprobado el 16-11). La valoración no cambia.",
-   "fecha": "2026-11-16"
-  },
-  {
-   "propuesta": "upc-06",
-   "criterio": "antecedentes (fuentes)",
-   "antes": "(sin esta fuente)",
-   "despues": "Resolución de 22 de enero de 2025, del Congreso de los Diputados, por la que se ordena la publicación del Acuerdo de derogación del Real Decreto-ley 10/2024 (BOE) — https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-1137",
-   "motivo": "auditoría de coherencia (16-nov, tras el análisis del programa del Frente Amplio): fuente primaria de la derogación.",
-   "fecha": "2026-11-16"
-  },
-  {
-   "propuesta": "upc-06",
-   "criterio": "título de fuente (financiacion, beneficiarios)",
-   "antes": "La Moncloa/Hacienda: recaudación de los gravámenes a banca y energéticas en 2024",
-   "despues": "La Moncloa/Hacienda (27-9-2024): los gravámenes de la banca y las energéticas alcanzan los 2.859 millones de euros en 2024",
-   "motivo": "auditoría de coherencia (16-nov, tras el análisis del programa del Frente Amplio): título y fecha de la página oficial («Los gravámenes de la banca y las energéticas alcanzan los 2.859 millones de euros en 2024», Hacienda, 27.9.2024, comprobado el 16-11), como en frente_amplio-11.",
-   "fecha": "2026-11-16"
-  },
-  {
-   "propuesta": "upc-03",
-   "criterio": "financiacion",
-   "antes": "La reforma en sí no tiene coste presupuestario directo, pero un derecho fundamental exigible ante los tribunales podría obligar a las administraciones a proveer vivienda. Su coste dependería del contenido que fijara la ley orgánica de desarrollo, que UPC no define, y no hay estimaciones públicas.",
-   "despues": "El procedimiento del art. 168 que exige la reforma obliga a disolver las Cortes, celebrar elecciones y un referéndum de ratificación, con un coste estimable por referencia (la organización de las elecciones generales de 2023 costó unos 220,8 M€, según el Ministerio del Interior). Pero el coste principal sería otro: un derecho fundamental exigible ante los tribunales podría obligar a las administraciones a proveer vivienda, y ese coste dependería del contenido que fijara la ley orgánica de desarrollo, que UPC no define; no hay estimaciones públicas.",
-   "motivo": "auditoría de coherencia (18-nov, tras el análisis del programa de Podemos y los complementos de UPN, PP, PSC y ERC): criterio único para el coste de los referendos y las reformas constitucionales (punto señalado por la revisión de Podemos del 18-11): «La reforma en sí no tiene coste presupuestario directo» contradecía el propio criterio «legal», que exige el art. 168 (disolución, elecciones y referéndum obligatorio), cuyo coste es estimable por referencia como en podemos-12 (Euronews, 8-10-2026, comprobado el 18-11: la organización de las generales de 2023 «costaron unos 220,8 millones de euros», según Interior). La valoración «no_verificable» no cambia porque el coste principal de la medida, el de un derecho fundamental exigible a la vivienda, no puede estimarse.",
-   "fecha": "2026-11-18"
-  },
-  {
-   "propuesta": "upc-03",
-   "criterio": "financiacion (fuentes)",
-   "antes": "(sin esta fuente)",
-   "despues": "Euronews (8-10-2026): España gastará más de 270 millones en las elecciones del 29N entre logística y subvenciones — https://es.euronews.com/2026/10/08/elecciones-espana-presupuesto-superara-270-millones",
-   "motivo": "auditoría de coherencia (18-nov, tras el análisis del programa de Podemos y los complementos de UPN, PP, PSC y ERC): referencia del coste de organizar una votación estatal (Ministerio del Interior), como en podemos-12.",
-   "fecha": "2026-11-18"
-  }
- ],
+  "nota": "La revisión del 12-11-2026, ampliada por las auditorías de coherencia del 14, 15, 16 y 18-nov (17 de sus 30 cambios), se refería a la base «compromisos» (upc-01 a upc-10, identificadores que no coinciden con los del programa): reestructuró «veces», añadió upc-c11 como décima prioridad, evaluó upc-10 y pasó a «no_verificable» la financiación de la moratoria y de la tasa turística. Solo upc-01 (ahora upc-c01) sigue evaluada aquí; sus cambios y dudas, y los del resto, siguen en el historial del repositorio (git show HEAD:data/programas/upc/compromisos/revision.json). Su primera duda (el programa anunciado como «cerrado al 90%») queda resuelta con el análisis del programa del 19-nov."
+ },
+ "cambios": [],
  "dudas": [
-  "Programa anunciado. Según EFE (12-nov), Campos dijo que el programa electoral está «cerrado al 90%». Cuando se publique, su análisis por el prompt 1 sustituirá a este.",
-  "upc-c06 (grandes fortunas, banca y energéticas) solo consta en el Manifiesto, igual que upc-c07 y upc-c12, que no se priorizan. Se mantiene porque es la única medida tributaria del eje 9, «Propuestas de reforma fiscal a nivel estatal», que es lo que decide el Congreso. Es un caso frontera de la selección.",
-  "Fecha del Manifiesto. «3-nov» procede de la cabecera Last-Modified registrada en partidos.json. El PDF tiene ModDate 30-10-2026, y hoy el servidor da Last-Modified 9-11-2026 con un texto idéntico. El documento no lleva fecha. En todo caso es posterior a la convocatoria.",
-  "upc-10: el 0,7 % del Manifiesto se refiere a los Presupuestos, no a la RNB como la Ley 1/2023. Se usa el presupuesto consolidado de 2023 (Ley 31/2022) como referencia, porque no consta en las fuentes leídas otro presupuesto aprobado posterior. Con esa base, el objetivo sería del orden de la AOD que ya gestiona la AGE (4.116 M€ en 2025), que incluye la aportación a la UE. El aumento real depende de qué partidas cuenten. No se localizó el porcentaje de la RNB de España en 2025: la nota de la OCDE devolvió 403.",
-  "Las repeticiones en estilo indirecto (EFE, 12-nov; Canarias Ahora, 7-nov) se cuentan en «veces» y se marcan, con el mismo criterio que psoe y vox. Las notas oficiales de UPC en estilo indirecto se aceptan como documento del partido (quien = la coalición), como psc-c03."
+  "upc-c01, segunda ocasión: la entrevista de EFE (12-nov) está en estilo indirecto y añade que los ayuntamientos puedan «topar precios», que la nota del 27-oct no menciona; se cuenta con el mismo criterio que en psoe y vox, y la evaluación lo dice en «concreción». Aunque no se contara, la medida cumpliría el criterio único por la entradilla de la nota oficial."
  ]
 }
