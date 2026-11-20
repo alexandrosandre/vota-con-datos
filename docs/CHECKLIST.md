@@ -72,8 +72,14 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
     financiación de junts-08 y pnv-08 (jubilación sin coeficientes reductores con 40 años cotizados) pasa de
     no_verificable a mixta con la estimación del Gobierno en respuesta parlamentaria (3.358 M€ anuales para los ya
     jubilados); psc-c05 corrige la inversión del DORA en El Prat (1.294,840 M€, BOE-A-2026-19507).
-  - [ ] NC-BC (UPC), UPN — sin programa el 18-nov a las 20:48 (UPC subió el 19-nov unas «Líneas básicas del programa
-    electoral»: en análisis).
+  - [x] UPC (NC-BC, Podemos, IU y Sumar) — **publicado el 19-nov**: «Líneas básicas del programa electoral» (19 pp.,
+    unidadpueblocanario.org), que sustituyen al manifiesto del 3-nov. Se trata como programa porque el propio documento
+    se denomina programa electoral y concreta medidas (decisión del coordinador, revisable; el manifiesto anterior y el
+    del PSC no se denominan programa). Paso 1: g21 verificado (UPC 7 → 12 posiciones; q06, jornada de 37,5 h, queda en
+    +1 porque no dice «sin reducción salarial»). Paso 2: 12 propuestas con revisión independiente, complemento upc-c01
+    (zonas tensionadas declaradas por los ayuntamientos). Auditoría de coherencia (`data/fase3/coherencia_2026-11-20b.md`:
+    28 correcciones en UPC y CC; ninguna valoración cambia). Registro: 6 propuestas centrales (UPC 6 → 12).
+  - [ ] UPN — sin programa el 20-nov a las 09:50 (upn.org y upn-pp.es).
   - PSC: sigue asumiendo el programa del PSOE; su manifiesto del 29-N (8 pp., socialistes.cat/generals) queda catalogado
     como `documento_programatico`, como el de UPC.
   - Compromís **retiró su PDF** el 18-nov a mediodía y por la tarde volvió a servir en la misma URL una **versión revisada**
@@ -200,6 +206,14 @@ su programa (tiene 23): valorar en el próximo barrido si se iguala. Auditoría 
 constitucionales y referendos —solo cuenta la votación que la propuesta exige; si el programa no la cuantifica, «mixta»—, que
 cambia dos valoraciones de financiación: erc-04 y salf-12, no_verificable → mixta; el SMI de 2027 ya está fijado en 18.004 €,
 RD 1013/2026 según el RDL 38/2026, BOE del 18-nov).
+
+**Revisión del 20-nov, 09:43** (las dos del 19-nov no se ejecutaron): encuestas del 19-nov de 40dB (día 7) y Sigma
+Dos (nuevo escenario de Sigma Dos); el día 8 de 40dB está en el servidor de El País pero aún sin publicar. Junts publicó
+su programa el 18-nov en tualcentre.cat (idéntico a la copia de Ara); UPC, sus líneas básicas del programa el 19-nov;
+el PNV y Adelante Andalucía sirven versiones nuevas (catalogadas). Paso 1: sin posiciones nuevas de campaña (debate
+Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. Registro 348 → 370 (9 de campaña, 7 de Junts y 6
+de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
+BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
 **Réplica de la revisión programada (20-nov, 9:07):** la tarea recurrente (9:13 y 20:13) se renueva con el mismo texto y
 se borra la anterior, que caducaba el 21-nov. La nueva caduca el 27-nov; un recordatorio del 26-nov a las 9:07 la vuelve a
