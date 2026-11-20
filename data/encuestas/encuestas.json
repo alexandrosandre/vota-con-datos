@@ -1771,6 +1771,163 @@
       "verificado_en_fuente_primaria": true
     },
     {
+      "id": "sigmados-2026-11-19",
+      "rol": "principal",
+      "sustituye": [
+        "sigmados-2026-11-18"
+      ],
+      "rol_nota": "Escenario propio de Sigma Dos (ESCENARIOS_ENCUESTA en pipeline/build_fase2.py), en lugar de sigmados-2026-11-18, con el mismo criterio: la infografía publica el porcentaje de todos los partidos con escaño. Entra también en la media como la última de Sigma Dos (sustituye a sigmados-2026-11-18).",
+      "encuestadora": "Sigma Dos",
+      "cliente_medio": "El Mundo",
+      "estudio": "Tracking electoral diario de Sigma Dos para EL MUNDO. Séptima entrega (infografía 'Intención de voto. Panel El Mundo-Sigma Dos. Tracking 19 de noviembre')",
+      "fecha_publicacion": "2026-11-19",
+      "fecha_publicacion_nota": "Artículo de El Mundo 'El PP coge fuerza a costa de Vox y Sánchez llega al cara a cara a cuatro puntos de Feijóo' (Miguel Riaño; datePublished y dateModified 2026-11-19T19:00:09Z, 20:00 hora peninsular del 19-11), con el gráfico rotulado 'Tracking 19 de noviembre' (tracking19b646.jpg). sigmados.com no lo había publicado a 20-11 a las 09:50 (página de noticias idéntica a la del 15-11, sha256 45e42830…).",
+      "trabajo_campo": {
+        "inicio": "2026-11-12",
+        "fin": "2026-11-18"
+      },
+      "trabajo_campo_nota": "Ficha técnica: 'Fecha del Trabajo de Campo: 12 al 18 de noviembre de 2026' y '750 entrevistas diarias (días 12, 13, 14, 16, 17 y 18)'; el texto: '4.491 entrevistas realizadas entre el 12 y el 18 de noviembre'. El 15-11 sigue sin figurar entre los días de entrevista. Campo previo al debate cara a cara del 19-11.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 4491,
+      "muestra_nota": "Ficha técnica: '750 entrevistas diarias (días 12, 13, 14, 16, 17 y 18). Tamaño muestral estimación 19/11/26: 4491' (6 × 750 = 4.500). Esta vez la ficha rotula la estimación con la fecha de la entrega (19/11/26). Como en las del 16 al 18-11, solo cuenta las entrevistas diarias, sin la encuesta base del 3 al 10-11.",
+      "metodo": "Mixto: telefónico (CATI, selección aleatoria de hogar y cuotas de sexo y edad) y online (CAWI, Panel Sigma Dos by Trust Survey, asignación proporcional por sexo y grupo de edad); distribución proporcional por CCAA (ficha técnica publicada en El Mundo). Indecisos: 14,6% (texto). Esta entrega no da participación estimada.",
+      "margen_error": "±2,0% (95,5%, P=Q)",
+      "base_porcentajes": "% de 'intención de voto' / estimación (Sigma Dos no indica la base; se asume voto válido)",
+      "suma_pct_publicada": 94.9,
+      "suma_pct_nota": "Suma de los porcentajes registrados (Frente Amplio 7,1 como bloque y Podemos 0,8 incluidos). Soria ¡Ya! ya no figura en la infografía. El Mundo no publica otros ni blanco.",
+      "proyeccion_escanos": "horquillas (ver estimacion_voto)",
+      "proyeccion_escanos_nota": "Horquillas de la infografía incrustada tracking19b646.jpg. El texto da las mismas horquillas para PP 125-131 ('dos más que ayer'), PSOE 110-116 ('también dos más'), Vox 59-64 ('Tres menos que ayer'), Frente Amplio 11-14, Adelante Andalucía 3-4, ERC 8-9, Junts 4-5, Bildu 6-8 y PNV 4-5; de Coalición Canaria dice que 'sigue peleando un escaño' (0-1 en la infografía) y que este 'se aleja para Soria Ya!' (sin fila en la infografía). PP+Vox: 'entre 184 y 195 diputados' (125 + 59 y 131 + 64) y 50,4% del voto. BNG 2-3 solo en la infografía. Podemos: el texto dice que 'no tendría escaño propio' (ver su fila).",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.0,
+          "escanos_min": 125,
+          "escanos_max": 131,
+          "nota": "Publicado como '31%' en la infografía y '31' en la serie Datawrapper; el texto: 'el PP recuperando el umbral del 31% de los votos'."
+        },
+        {
+          "partido": "PSOE",
+          "pct": 27.1,
+          "escanos_min": 110,
+          "escanos_max": 116
+        },
+        {
+          "partido": "Vox",
+          "pct": 19.4,
+          "escanos_min": 59,
+          "escanos_max": 64
+        },
+        {
+          "partido": "Frente Amplio",
+          "nombre_publicado": "FA",
+          "pct": 7.1,
+          "escanos_min": 11,
+          "escanos_max": 14,
+          "nota": "Bloque completo, como en las entregas del 13 al 18-11: la infografía da 'FA 7,1% (11-14)' y el texto 'el Frente Amplio de Ada Colau parece haber encontrado suelo en el 7,1% contando la coalición nacional, la canaria y la valenciana. En total, lograría entre 11 y 14 escaños, 7-8 por el Frente Amplio, 4-5 por el Front Valencià que lidera Compromís y 0-1 por Unidad del Pueblo Canario'. No se publica el porcentaje de cada componente, así que se guarda el bloque; build_fase2.py lo trata como bloque completo, Compromís incluido. No sumar los componentes además de esta fila.",
+          "componentes": [
+            {
+              "partido": "Frente Amplio (marca nacional)",
+              "escanos_min": 7,
+              "escanos_max": 8,
+              "nota": "Texto: '7-8 por el Frente Amplio'. Porcentaje no publicado."
+            },
+            {
+              "partido": "Front Valencià (FV)",
+              "escanos_min": 4,
+              "escanos_max": 5,
+              "nota": "Texto: '4-5 por el Front Valencià que lidera Compromís'. Porcentaje no publicado."
+            },
+            {
+              "partido": "UPC",
+              "escanos_min": 0,
+              "escanos_max": 1,
+              "nota": "Texto: '0-1 por Unidad del Pueblo Canario'. Porcentaje no publicado."
+            }
+          ]
+        },
+        {
+          "partido": "Podemos",
+          "pct": 0.8,
+          "nota": "Solo en el texto ('Podemos sigue hundido en el 0,8% y no tendría escaño propio para Irene Montero en Madrid, más allá de a lo que pueda aspirar en sus puestos por Barcelona (con ERC) o Alicante (con el FV)') y en la serie Datawrapper QBCLv v21 (fila 19/11/2026); no aparece en la infografía. Sin horquilla publicada: 'no tendría escaño propio' se refiere a sus listas propias, así que no se registran escanos_min/escanos_max."
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.3,
+          "escanos_min": 8,
+          "escanos_max": 9
+        },
+        {
+          "partido": "Bildu",
+          "pct": 1.6,
+          "escanos_min": 6,
+          "escanos_max": 8
+        },
+        {
+          "partido": "AA",
+          "pct": 1.7,
+          "escanos_min": 3,
+          "escanos_max": 4,
+          "nota": "Rotulada 'AA' (Adelante Andalucía) en la infografía. Texto: 'opta a 3-4 representantes, cuando las anteriores entregas del tracking elevaban al partido regionalista hasta cinco diputados'."
+        },
+        {
+          "partido": "PNV",
+          "pct": 1.0,
+          "escanos_min": 4,
+          "escanos_max": 5
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.1,
+          "escanos_min": 2,
+          "escanos_max": 3
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.4,
+          "escanos_min": 4,
+          "escanos_max": 5
+        },
+        {
+          "partido": "CCa",
+          "pct": 0.4,
+          "escanos_min": 0,
+          "escanos_max": 1
+        }
+      ],
+      "discrepancias_fuente": "La infografía incrustada en el artículo es tracking19b646.jpg ('FA 7,1% (11-14)'), que coincide con el texto ('entre 11 y 14 escaños'). En el mismo servidor existe tracking19646.jpg (sin 'b', no incrustada; guardada como img_elmundo_tracking19646_20261119.jpg), idéntica salvo 'FA 7,1% (11-13)': se toma la incrustada. Los porcentajes de PP, PSOE, Vox, Frente Amplio y Podemos coinciden en texto, infografía y serie Datawrapper QBCLv v21 (fila 19/11/2026: PP 31, PSOE 27,1, Vox 19,4, Frente Amplio 7,1, Podemos 0,8; publicada 2026-11-19T17:37:07Z). Los deltas del texto (PP y PSOE +2 escaños, Vox −3) cuadran con sigmados-2026-11-18; la ventaja de 3,9 puntos y el 50,4% de la derecha cuadran con los porcentajes. Soria ¡Ya! (0,1%, 0-1 el 18-11) desaparece de la infografía; el texto dice que el escaño 'se aleja para Soria Ya!'.",
+      "contexto": "Según El Mundo, PP y PSOE llegan con impulso al cara a cara del 19-11: el PP recupera el 31 % (125-131 escaños) y el PSOE sube al 27,1 % (110-116), con la menor ventaja (3,9 puntos) desde el inicio del tracking; Vox cae de forma apreciable por primera vez (19,4 %, 59-64) y la derecha suma el 50,4 % del voto y entre 184 y 195 diputados. El Frente Amplio toca suelo en el 7,1 % (11-14) y Podemos sigue en el 0,8 %. Adelante Andalucía baja a 3-4 escaños. El 14,6 % de los electores sigue indeciso (13,4 % de los votantes del PSOE de 2023, 10,3 % de los de Sumar, 6,9 % de los del PP y 2,1 % de los de Vox). Cada entrega diaria sustituye a la anterior.",
+      "desglose_regional": null,
+      "desglose_regional_nota": "Esta entrega no publica desglose territorial (solo menciones por comunidad: Andalucía, Cataluña, País Vasco y Navarra, Canarias y Soria).",
+      "urls": {
+        "primarias": [
+          "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/19/6aff2a9afc6c83886c8b459b.html",
+          "https://e01-elmundo.uecdn.es/elmundo/2026/graficos/nov/tracking19b646.jpg",
+          "https://datawrapper.dwcdn.net/QBCLv/21/"
+        ],
+        "secundarias": [],
+        "descubrimiento_nota": "Localizado en la portada de elmundo.es y en la sección de elecciones generales el 20-11 a las 09:45 (titular de portada: 'El PP coge fuerza a costa de Vox; Sánchez, a cuatro puntos de Feijóo'). Ninguna cifra sale de agregadores."
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/sigmados/elmundo_20261119.html",
+        "data/sources/encuestas/sigmados/elmundo_20261119.txt",
+        "data/sources/encuestas/sigmados/img_elmundo_tracking19b646_20261119.jpg",
+        "data/sources/encuestas/sigmados/img_elmundo_tracking19b646_20261119.txt",
+        "data/sources/encuestas/sigmados/img_elmundo_tracking19646_20261119.jpg",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v21.html",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v21_dataset.csv"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/sigmados/elmundo_20261119.html": "ef1392566cecae0ae323cc50554701619b638bb10754803e40cb32385886b101",
+        "data/sources/encuestas/sigmados/elmundo_20261119.txt": "d8c0cc7733f794f665ecfa1698aa45a8d2fcce27247702784dcb329fb9018558",
+        "data/sources/encuestas/sigmados/img_elmundo_tracking19b646_20261119.jpg": "d2e1e59f2cf8fc56802bf3aa83d63fea95fc6231a7a9445bd2496a99cefde8a1",
+        "data/sources/encuestas/sigmados/img_elmundo_tracking19b646_20261119.txt": "64b3311625e16808f059f96a88718fed6002bb55a4201349a031f6ec3ef04c22",
+        "data/sources/encuestas/sigmados/img_elmundo_tracking19646_20261119.jpg": "16196aafbdfefb5c0b3eff386c16cc069be5fba4a0acc4a34b01bc4c57ea7a47",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v21.html": "eef21bfb1c2c2816f85ecf95f748aa833bc0660cae5793ed6f2efe83711a673e",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v21_dataset.csv": "25d90aa36b6563fcff546b6643c0dafaf65306696ddd0262a796609754a6bad4"
+      },
+      "verificado_en_fuente_primaria": true
+    },
+    {
       "id": "sigmados-2026-11-18",
       "rol": "principal",
       "sustituye": [
@@ -4629,6 +4786,172 @@
         "data/sources/encuestas/gad3/dw_9xmFD_dataset.csv",
         "data/sources/encuestas/gad3/dw_9xmFD.html"
       ],
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "40db-2026-11-19",
+      "rol": "media",
+      "sustituye": [
+        "40db-2026-11-18"
+      ],
+      "rol_nota": "Entra en la media de encuestas como la última de 40dB y sustituye ahí a 40db-2026-11-18. El escenario propio de 40dB (ESCENARIOS_ENCUESTA en pipeline/build_fase2.py) sigue usando 40db-2026-11, con el mismo criterio que en los días 1 a 6: el tracking solo publica el porcentaje de PP, PSOE, Vox, Frente Amplio, SALF, Podemos y las coaliciones territoriales de izquierda; ERC, EH Bildu, Junts, PNV, AA, BNG y CC solo tienen escaños (en Otros).",
+      "encuestadora": "40dB.",
+      "cliente_medio": "El País y Cadena SER (Prisa)",
+      "estudio": "Tracking 29-N (Día 7). 19 de noviembre de 2026",
+      "fecha_publicacion": "2026-11-19",
+      "fecha_publicacion_nota": "Séptima entrega del sondeo diario de 40dB. para El País y la SER. Artículo de El País '90 minutos cara a cara: Sánchez busca remontar los dos puntos que le separan del PP y Feijóo repetir el éxito de 2023' (Natalia Junquera; pubDate 19-11 04:30 GMT en el RSS de la sección España; entradilla: 'El último sondeo de 40 dB. otorga 192 diputados a PP y Vox y un 32,4% del voto a los populares frente al 30,4% del PSOE'; elpais.com devuelve 403 al artículo) y artículo de la SER 'Vox frena su caída y la derecha amplía su mayoría absoluta a 10 días de las elecciones' (Miguel Á. Muñoz Encinas; datePublished 2026-11-19T07:09:06+01:00). Las cifras salen del informe PDF de 40dB servido en elpais.com/infografias (HTTP Last-Modified Wed, 18 Nov 2026 16:41:35 GMT; CreationDate del PDF 2026-11-18 16:48 CET), que coinciden con el texto de la SER. El PDF ya estaba en el servidor el 18-11, pero no se cuenta como publicado hasta los artículos del 19-11. El fichero va en minúscula ('informe_tracking_dia07.pdf'); la variante con mayúscula da 404.",
+      "trabajo_campo": {
+        "inicio": "2026-11-14",
+        "fin": "2026-11-18"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 2000,
+      "muestra_nota": "Ficha técnica (pág. 25): '2.000 entrevistas', fecha de realización '14/11/2026 a 18/11/2026'. La SER: '2.000 entrevistas online en toda España (excepto Ceuta y Melilla) desde el 14 al 18 de noviembre, con un margen de error del ±2,2%'. Ventana móvil de cinco días, como en los días 5 y 6.",
+      "metodo": "Entrevista online (CAWI). Universo: población general residente en España (excepto Ceuta y Melilla) a partir de 18 años y con derecho a voto. Cuotas por sexo y edad (cruzadas), comunidad autónoma, tamaño de hábitat y clase social (ficha técnica, pág. 25).",
+      "margen_error": "±2,2% (95% de confianza)",
+      "base_porcentajes": "% sobre el total de votos válidos",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 32.4,
+          "escanos_min": 126,
+          "escanos_max": 138,
+          "escanos_central": 133,
+          "nota": "Los 2 escaños de 'UPN-PP' van en Otros, no en esta fila (la SER: 'El PP está más fuerte, logra 133 escaños (dos más que ayer), Vox obtiene 57 (también recupera dos) y la coalición de los populares con Unión del Pueblo Navarro conserva los dos diputados'; la suma de la derecha es 192)."
+        },
+        {
+          "partido": "PSOE",
+          "pct": 30.4,
+          "escanos_min": 116,
+          "escanos_max": 125,
+          "escanos_central": 121
+        },
+        {
+          "partido": "Vox",
+          "pct": 17.2,
+          "escanos_min": 53,
+          "escanos_max": 61,
+          "escanos_central": 57
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 3.7,
+          "escanos_min": 5,
+          "escanos_max": 6,
+          "escanos_central": 5,
+          "nota": "Sin Podemos ni las 'otras coaliciones territoriales de izquierda' (filas siguientes). Escaños: 'Más Madrid 2 – Comuns 2 –CHA 1'. En el hemiciclo, '5 (5-6)' es el tramo rojo anaranjado de Frente Amplio y '4 (3-5)' el naranja claro de las coaliciones territoriales (comprobado visualmente, igual que en los días 1 a 6)."
+        },
+        {
+          "partido": "Compromís: Front Valencià",
+          "nombre_publicado": "Compromís: Front Valencià (Compromís-EUPV-Podem-ERPV)",
+          "pct": 1.2,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_central": 3,
+          "nota": "Componente de 'Otras coaliciones territoriales de izquierda*' (1,7% en total; 4 escaños, 3-5). Escaños: 'Podemos 1 – Compromís 2'."
+        },
+        {
+          "partido": "UPC",
+          "nombre_publicado": "Unidad del Pueblo Canario UPC (NC-BC, Podemos, IU, Sumar)",
+          "pct": 0.3,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "escanos_central": 0,
+          "nota": "Componente de 'Otras coaliciones territoriales de izquierda*'. Escaños: 'UPC: 0 (0-1)', 'Nueva Canarias 0 (0-1)'."
+        },
+        {
+          "partido": "Ara Més-Front Ampli",
+          "nombre_publicado": "AraMés – Front Ampli (AraMés – EU-MS)",
+          "pct": 0.2,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "escanos_central": 1,
+          "nota": "Componente de 'Otras coaliciones territoriales de izquierda*'. Escaño: 'Ara Més 1'."
+        },
+        {
+          "partido": "SALF",
+          "nombre_publicado": "Se Acabó La Fiesta (SALF)",
+          "pct": 1.7
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.2,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "escanos_central": 0,
+          "nota": "'Podemos: 0 (0-1)' (el día 6 tenía 1). Aparte del escaño de Podemos dentro de Compromís: Front Valencià."
+        },
+        {
+          "partido": "Otro + Blanco",
+          "pct": 11.7,
+          "tipo": "otros_y_blanco"
+        }
+      ],
+      "escanos_otros": {
+        "total_central": 30,
+        "min": 30,
+        "max": 32,
+        "desglose_central": [
+          {
+            "partido": "ERC",
+            "escanos": 9
+          },
+          {
+            "partido": "Bildu",
+            "escanos": 7
+          },
+          {
+            "partido": "JxC",
+            "escanos": 3
+          },
+          {
+            "partido": "PNV",
+            "escanos": 3
+          },
+          {
+            "partido": "AA",
+            "escanos": 3
+          },
+          {
+            "partido": "BNG",
+            "escanos": 2
+          },
+          {
+            "partido": "UPN-PP",
+            "escanos": 2
+          },
+          {
+            "partido": "Coalición Canaria",
+            "escanos": 1
+          }
+        ]
+      },
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "PP 32,4 + PSOE 30,4 + Vox 17,2 + Frente Amplio 3,7 + SALF 1,7 + Podemos 1,2 + Otras coaliciones territoriales de izquierda 1,7 (1,2 + 0,2 + 0,3) + Otro + Blanco 11,7 = 100,0. No sumar además la fila agregada de coaliciones territoriales (no se guarda como fila).",
+      "proyeccion_escanos": "central + horquilla",
+      "proyeccion_escanos_nota": "Página 'Estimación de escaños' del informe (pág. 8), leída del texto del PDF y comprobada visualmente. Centrales: PP 133 + PSOE 121 + Vox 57 + Frente Amplio 5 + otras coaliciones territoriales de izquierdas 4 (3-5) + Podemos 0 + Otros 30 = 350. Otros: '* ERC 9, Bildu 7, JxC 3, PNV 3, AA 3, BNG 2, UPN-PP 2, Coalición Canaria 1'. La SER confirma PP 133, PSOE 121, Vox 57, UPN-PP 2 (derecha 192), 9 escaños para Frente Amplio + coaliciones territoriales + Podemos ('baja a 9 escaños, uno menos') y el desglose de Otros (ERC 9, Bildu 7, Junts 3, PNV 3, Adelante Andalucía 3, BNG 2, Coalición Canaria 1). El País (entradilla) confirma 192 diputados para PP y Vox y 32,4 frente a 30,4.",
+      "contexto": "Según la SER, Vox frena cinco días seguidos de caídas y recupera dos décimas (17,2 %) y dos escaños (57); el PP sube a 133 escaños y se separa dos puntos del PSOE (32,4 % frente a 30,4 %), dentro del margen de error; el PSOE cede ligeramente por primera vez en la campaña (121 escaños, uno menos). PP (con UPN) y Vox suman 192, 16 por encima de la mayoría absoluta. Sánchez sigue siendo el preferido como presidente (9 puntos sobre Feijóo), pero la opción de gobierno preferida es una coalición PP-Vox. Campo previo al debate cara a cara del 19-11. El sondeo diario sustituye cada día al anterior.",
+      "discrepancias_fuente": "Ninguna en las cifras: PDF, SER y entradilla de El País coinciden. El gráfico de evolución (pág. 7 y 9) rotula la entrega como '14-18 nov', igual que la ficha técnica y la SER. El PDF se creó el 18-11 a las 16:48 (CET), así que el 18-11 solo puede ser un día de campo parcial. El cuerpo del artículo de El País no se ha podido leer (403); solo la entradilla del RSS.",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://elpais.com/infografias/encuestas40db/2026/11-tracking-electoral/informe_tracking_dia07.pdf",
+          "https://cadenaser.com/nacional/2026/11/19/vox-frena-su-caida-y-la-derecha-amplia-su-mayoria-absoluta-a-10-dias-de-las-elecciones-cadena-ser/",
+          "https://elpais.com/espana/elecciones-generales/2026-11-19/90-minutos-cara-a-cara-sanchez-busca-remontar-los-dos-puntos-que-le-separan-del-pp-y-feijoo-repetir-el-exito-de-2023.html"
+        ],
+        "secundarias": [],
+        "descubrimiento_nota": "La URL del PDF sigue el nombre de los días anteriores en la misma carpeta de elpais.com/infografias (solo responde en minúscula). El artículo de El País se localizó en el RSS de la sección España descargado el 20-11 (el RSS de portada del 19-11 ya no lo incluía) y el de la SER en la página de la etiqueta 'encuestas_electorales' de cadenaser.com. Ninguna cifra sale de agregadores."
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/40db/2026_11_tracking_dia07_informe.pdf",
+        "data/sources/encuestas/40db/cadenaser_20261119.html",
+        "data/sources/encuestas/40db/elpais_rss_espana_20261120.xml"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/40db/2026_11_tracking_dia07_informe.pdf": "4791eb5e6ea6253be701e11d7d1fe671841fa67644a1b8071a2434ca380077d7",
+        "data/sources/encuestas/40db/cadenaser_20261119.html": "64145077289abbc053bde1addd19008f5c24ec328c0b44d5aaa6b94391d2656f",
+        "data/sources/encuestas/40db/elpais_rss_espana_20261120.xml": "ae12e9217d062c450c4ddb9aeb5b553f923fba041d9fc6a8286323abc6af8231"
+      },
       "verificado_en_fuente_primaria": true
     },
     {
