@@ -1,6 +1,6 @@
 # Checklist · vota con datos (29-N)
 
-Actualizado: 19-nov-2026. Solo lo pendiente; lo terminado está en el historial de git. La web ya está
+Actualizado: 20-nov-2026. Solo lo pendiente; lo terminado está en el historial de git. La web ya está
 en línea; aquí «bloquea» significa **no difundirla ni anunciarla** (o, si ya circula, que deja de ser
 correcta o legal) hasta que esté hecho.
 
@@ -187,6 +187,10 @@ su programa (tiene 23): valorar en el próximo barrido si se iguala. Auditoría 
 constitucionales y referendos —solo cuenta la votación que la propuesta exige; si el programa no la cuantifica, «mixta»—, que
 cambia dos valoraciones de financiación: erc-04 y salf-12, no_verificable → mixta; el SMI de 2027 ya está fijado en 18.004 €,
 RD 1013/2026 según el RDL 38/2026, BOE del 18-nov).
+
+**Réplica de la revisión programada (20-nov, 9:07):** la tarea recurrente (9:13 y 20:13) se renueva con el mismo texto y
+se borra la anterior, que caducaba el 21-nov. La nueva caduca el 27-nov; un recordatorio del 26-nov a las 9:07 la vuelve a
+renovar para cubrir hasta el 29-nov.
 
 **Revisión del 18-nov, 20:43:** Sigma Dos del 18-nov como escenario de Sigma Dos (PP 30,7 %, PSOE 26,7 %, Vox 19,7 %);
 40dB día 7 ya está en el servidor de El País pero cuenta cuando salga publicado (19-nov). GAD3 y CIS sin novedades. Paso 1
