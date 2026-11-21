@@ -5,6 +5,7 @@ Inputs (downloaded by pipeline/boe_fetch.py into data/sources/boe/, never edited
   BOE-A-2026-20742.xml  Real Decreto 806/2026 (annex: Diputados per circunscripción)
   BOE-A-2026-23103.xml  Candidaturas proclamadas (BOE 3-XI-2026)
   BOE-A-2026-23383.xml  Corrección de errores de las candidaturas proclamadas (BOE 7-XI-2026)
+  BOE-A-2026-24503.xml  Corrección de errores: firma de la Junta Electoral de Burgos (BOE 21-XI-2026)
   BOE-A-2026-22607.xml  Candidaturas presentadas (BOE 28-X-2026); only used to disambiguate
                         where siglas start in a proclaimed heading (see disambiguate_split)
   ine_cod_provincia.htm INE list of province codes (only used to attach INE codes)
@@ -35,7 +36,7 @@ OUT = ROOT / "data" / "boe"
 
 RD_ID = "BOE-A-2026-20742"
 PROC_ID = "BOE-A-2026-23103"
-CORR_IDS = ["BOE-A-2026-23383"]
+CORR_IDS = ["BOE-A-2026-23383", "BOE-A-2026-24503"]
 PRES_ID = "BOE-A-2026-22607"
 
 BOE_HTML = "https://www.boe.es/diario_boe/txt.php?id={}"
@@ -265,6 +266,8 @@ def parse_corrections(boe_id, ine_lookup):
         if text.startswith("En la candidatura"):
             cand, mode = None, "cand"
             continue
+        if mode is None and text.startswith("En la página"):
+            continue  # page reference of the original publication
         if text == "Donde dice:":
             cur = {"ine": ine, "camara": camara, "candidatura": cand,
                    "donde_dice": [], "debe_decir": []}
@@ -316,6 +319,18 @@ def apply_corrections(juntas, recs, corr_id):
             "donde_dice": [t for _, t in r["donde_dice"]],
             "debe_decir": [t for _, t in r["debe_decir"]],
         }
+        if r["camara"] is None:
+            # before any chamber heading: the junta's preamble (e.g. the signature)
+            pre = juntas[r["ine"]]["preambulo"]
+            old = entry["donde_dice"]
+            hits = [i for i in range(len(pre) - len(old) + 1) if pre[i:i + len(old)] == old]
+            if len(hits) != 1:
+                raise SystemExit(f"preamble correction not found once: {old}")
+            pre[hits[0]:hits[0] + len(old)] = entry["debe_decir"]
+            entry["camara"] = "preambulo"
+            entry["aplicada"] = "si"
+            log.append(entry)
+            continue
         if r["camara"] != "congreso":
             entry["aplicada"] = "no (Senado, fuera de alcance)"
             log.append(entry)

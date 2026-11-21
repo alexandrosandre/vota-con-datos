@@ -215,6 +215,12 @@ Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. 
 de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
 BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
+**Revisión del 21-nov, 09:43:** BOE-A-2026-24503 (BOE del 21-nov) corrige solo el apellido del presidente de la Junta
+Electoral de Burgos en la firma de la proclamación (Martín → Marín Ibáñez); aplicada en boe_parse.py, sin cambios en
+candidaturas ni listas. JEC sin acuerdos nuevos. Encuestas sin novedades (la media pasa de 12 a 10 encuestas porque CIS y
+Target Point superan los 21 días de campo). UPN sigue sin programa. Registro sin cambios (379; 4 candidatas rechazadas por
+la revisión independiente). Paso 1 sin posiciones nuevas. Dominio y HTTPS correctos.
+
 **Revisión del 20-nov, 20:13 (hecha a las 20:45):** encuestas — 40dB día 9 (20-nov; el día 8 no tuvo artículo propio y no
 entra) y Sigma Dos del 20-nov como escenario de Sigma Dos (PP 31,2 %, PSOE 27,6 %, Vox 18,9 %); CIS y GAD3 sin novedades.
 Paso 1: q37 recodificada (g24) con la decisión 11 del editor —subir impuestos de forma progresiva cuenta +1—: Podemos,

@@ -4,6 +4,7 @@
 Inputs (raw BOE files in data/sources/boe/, never edited):
   BOE-A-2026-23103.xml  Candidaturas proclamadas (BOE 3-XI-2026)
   BOE-A-2026-23383.xml  Corrección de errores (BOE 7-XI-2026), applied as literal substitution
+  BOE-A-2026-24503.xml  Corrección de errores (BOE 21-XI-2026): signature of the Burgos junta only
   BOE-A-2026-23103.pdf  same publication as PDF; only used for the spot-check (--spot-check)
   data/boe/candidaturas_congreso.json  output of pipeline/boe_parse.py (siglas/denominación
                         split, cabeza_lista and n_titulares used for cross-validation)
@@ -172,8 +173,8 @@ def build():
                  "sha256_xml": bp.sha256(bp.SRC / f"{bp.PROC_ID}.xml")}
     meta = {
         "descripcion": ("Listas completas (titulares y suplentes) de las candidaturas proclamadas al "
-                        "Congreso, elecciones generales 29-XI-2026, tal como las publica el BOE, con la "
-                        "corrección de errores del 7-XI-2026 aplicada."),
+                        "Congreso, elecciones generales 29-XI-2026, tal como las publica el BOE, con las "
+                        "correcciones de errores del 7-XI-2026 y del 21-XI-2026 aplicadas."),
         "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
         "generated_by": "pipeline/boe_listas.py",
         "fuentes": {"proclamacion": proc_meta, "correcciones": corr_meta},
