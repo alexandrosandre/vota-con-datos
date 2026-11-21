@@ -215,6 +215,12 @@ Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. 
 de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
 BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
+**Revisión del 21-nov, 20:43:** registro 379 → 381 (Junts: reforma del padrón, punto 3.1 de su programa, anunciada por
+Nogueras; Adelante Andalucía: regularizar las viviendas de El Palo y Pedregalejo afectadas por Costas), con revisión
+independiente; la de UPN sobre la transitoria cuarta se rechaza por estar ya registrada. Encuestas: 40dB día 10 salió en El
+País sin cifras comprobables ni informe en PDF (reintentar el 22-nov; debe publicarse antes del 24-nov); Sigma Dos no
+publicó el sábado. UPN sigue sin programa; BOE y JEC sin novedades; paso 1 sin posiciones nuevas; dominio y HTTPS correctos.
+
 **Revisión del 21-nov, 09:43:** BOE-A-2026-24503 (BOE del 21-nov) corrige solo el apellido del presidente de la Junta
 Electoral de Burgos en la firma de la proclamación (Martín → Marín Ibáñez); aplicada en boe_parse.py, sin cambios en
 candidaturas ni listas. JEC sin acuerdos nuevos. Encuestas sin novedades (la media pasa de 12 a 10 encuestas porque CIS y
