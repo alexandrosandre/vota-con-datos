@@ -215,6 +215,14 @@ Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. 
 de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
 BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
+**Revisión del 22-nov, 20:43:** registro 381 → 385 con revisión independiente: Adelante Andalucía (Cercanías o media
+distancia en los municipios de más de 20.000 habitantes, propuesta 374 de su programa), Coalición Canaria (ferry gratis
+Órzola–Caleta del Sebo para residentes de La Graciosa, con el texto de la nota oficial de la candidatura y no la cita de
+Teodoro Sosa) y PP 2 (nueva Ley de Costas, Prohens; conducciones de la presa de Rules, Saavedra). Encuestas: sin nuevas
+publicables; el gráfico de Sigma Dos ya trae la fila del 23-nov, pero El Mundo aún no la ha publicado en un artículo
+(reintentar el 23-nov, último día). 40dB día 11, GAD3 y CIS sin novedades. UPN sigue sin programa; BOE y JEC sin
+novedades; paso 1 sin posiciones nuevas; dominio y HTTPS correctos.
+
 **Revisión del 22-nov, 09:43:** tres encuestas nuevas, publicadas antes del 24-nov y comprobadas por un verificador
 independiente contra las copias guardadas (sha256 incluidos). 40dB día 10 (22-nov; informe en ep00.epimg.net, campo
 17-21 nov) sustituye al día 9 en la media. Sigma Dos del 21-nov (campo 14-20 nov) pasa a ser el escenario de Sigma Dos.
