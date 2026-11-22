@@ -215,6 +215,16 @@ Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. 
 de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
 BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
+**Revisión del 22-nov, 09:43:** tres encuestas nuevas, publicadas antes del 24-nov y comprobadas por un verificador
+independiente contra las copias guardadas (sha256 incluidos). 40dB día 10 (22-nov; informe en ep00.epimg.net, campo
+17-21 nov) sustituye al día 9 en la media. Sigma Dos del 21-nov (campo 14-20 nov) pasa a ser el escenario de Sigma Dos.
+GAD3 del 22-nov (campo 16-19 nov) entra solo en la media: el texto de GAD3 no da el porcentaje de Podemos, al que asigna 0
+escaños, y sin él el escenario le devolvería los escaños de 2023; el gráfico de la misma página repite cifras del 9-nov en
+otras filas, así que el escenario de GAD3 sigue siendo el del 9-nov. Media con 10 encuestas. Notas de 40dB: la SER da 13
+escaños de margen a la derecha y 162 al bloque de investidura; según el PDF son 11 y 160. Registro sin entradas nuevas
+(381; 6 candidatas rechazadas, 5 por duplicadas); paso 1 sin posiciones nuevas; UPN sigue sin programa; no hay BOE el
+domingo y la JEC no tiene acuerdos nuevos; dominio y HTTPS correctos. Último día con encuestas: 23-nov.
+
 **Revisión del 21-nov, 20:43:** registro 379 → 381 (Junts: reforma del padrón, punto 3.1 de su programa, anunciada por
 Nogueras; Adelante Andalucía: regularizar las viviendas de El Palo y Pedregalejo afectadas por Costas), con revisión
 independiente; la de UPN sobre la transitoria cuarta se rechaza por estar ya registrada. Encuestas: 40dB día 10 salió en El

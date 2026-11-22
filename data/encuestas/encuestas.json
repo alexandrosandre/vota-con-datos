@@ -1771,6 +1771,167 @@
       "verificado_en_fuente_primaria": true
     },
     {
+      "id": "sigmados-2026-11-21",
+      "rol": "principal",
+      "sustituye": [
+        "sigmados-2026-11-20"
+      ],
+      "rol_nota": "Escenario propio de Sigma Dos (ESCENARIOS_ENCUESTA en pipeline/build_fase2.py), en lugar de sigmados-2026-11-20, con el mismo criterio: la infografía publica el porcentaje de todos los partidos con escaño. Entra también en la media como la última de Sigma Dos (sustituye a sigmados-2026-11-20).",
+      "encuestadora": "Sigma Dos",
+      "cliente_medio": "El Mundo",
+      "estudio": "Panel El Mundo-Sigma Dos, encuesta del domingo (infografía 'Intención de voto. Panel El Mundo-Sigma Dos. Encuesta 22 de Noviembre de 2026'); misma serie que el tracking diario (Datawrapper QBCLv)",
+      "fecha_publicacion": "2026-11-21",
+      "fecha_publicacion_nota": "Artículo de El Mundo 'PP y PSOE ganan apoyos y la derecha ancla su ventaja a una semana de votar' (Marisa Cruz; sección España/Encuestas; datePublished 2026-11-21T21:35:15Z, 22:35 hora peninsular del 21-11; dateModified 21:55:11Z). La infografía la rotula 'Encuesta 22 de Noviembre de 2026' (edición impresa del domingo) y la serie Datawrapper QBCLv la fecha el 22/11/2026, pero la publicación web es del 21-11, como en sigmados-2026-11-08. A las 20:45 del 21-11 no había nada publicado. El artículo incrusta QBCLv sin número de versión (embed.js); la vigente al descargar era la v25 (lastModifiedAt 2026-11-21T19:56:28Z).",
+      "trabajo_campo": {
+        "inicio": "2026-11-14",
+        "fin": "2026-11-20"
+      },
+      "trabajo_campo_nota": "Ficha técnica: 'Fecha del Trabajo de Campo: 14 al 20 de noviembre de 2026' y '750 entrevistas diarias (días 14, 16, 17, 18, 19 y 20)'; el domingo 15-11 sigue sin figurar. Las entrevistas del 20-11 (y parte de las del 19-11) son posteriores al debate cara a cara del 19-11 por la noche; la ficha no lo cuantifica.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 4511,
+      "muestra_nota": "Ficha técnica: 'Tamaño muestral estimación 21/11/26: 4511' (6 × 750 = 4.500). Solo cuenta las entrevistas diarias, como desde la entrega del 16-11.",
+      "metodo": "Mixto: telefónico (CATI, selección aleatoria de hogar y cuotas de sexo y edad) y online (CAWI, Panel Sigma Dos by Trust Survey, asignación proporcional por sexo y grupo de edad); distribución proporcional por CCAA (ficha técnica publicada en El Mundo). Esta entrega no da el porcentaje total de indecisos (solo el 13,1% de los votantes del PSOE de 2023) ni participación estimada.",
+      "margen_error": "±2,1% (95,5%, P=Q)",
+      "base_porcentajes": "% de 'intención de voto' / estimación (Sigma Dos no indica la base; se asume voto válido)",
+      "suma_pct_publicada": 95.4,
+      "suma_pct_nota": "Suma de los porcentajes registrados (Frente Amplio 7,1 como bloque, Podemos 0,7 y SY 0,1 incluidos; sin sumar los componentes del Frente Amplio). Con el 7,2 de la infografía sería 95,5. El Mundo no publica otros ni blanco.",
+      "proyeccion_escanos": "horquillas (ver estimacion_voto)",
+      "proyeccion_escanos_nota": "Horquillas de la infografía intencion646.jpg. El texto da las mismas para PP 126-132, PSOE 112-118, Vox 57-62, Frente Amplio 9-12 (Compromís-Front Valencià 3-4 y UPC 'como máximo un escaño' dentro), ERC 10-11, Bildu 7-8, Junts 4-5, PNV 4-5 y Adelante Andalucía 2-3. PP+Vox: 'entre los 183 y los 194 diputados' (126 + 57 y 132 + 62); PSOE+FA: 35,1% y 'entre 121 y 130 diputados' (112 + 9 y 118 + 12). BNG 2, CCa 0-1 y SY 0 solo en la infografía.",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.5,
+          "escanos_min": 126,
+          "escanos_max": 132,
+          "nota": "Texto: 'el PP [...] juega con un pronóstico del 31,5% de los sufragios, medio punto más que lo que se le vaticinaba el pasado jueves' (31,0 el 19-11)."
+        },
+        {
+          "partido": "PSOE",
+          "pct": 28.0,
+          "escanos_min": 112,
+          "escanos_max": 118,
+          "nota": "Infografía '28,0%'; texto 'otorgándole un vaticinio del 28% del voto' ('casi un punto' más que el jueves: 27,1 el 19-11)."
+        },
+        {
+          "partido": "Vox",
+          "pct": 18.3,
+          "escanos_min": 57,
+          "escanos_max": 62
+        },
+        {
+          "partido": "Frente Amplio",
+          "nombre_publicado": "FA",
+          "pct": 7.1,
+          "escanos_min": 9,
+          "escanos_max": 12,
+          "nota": "Bloque completo, como en las entregas del 13 al 20-11. Texto: 'En la marca Frente Amplio se incluyen también los votos y escaños que puedan obtener Compromís-Front Valencià (FV) -1,5% de los sufragios y tres o cuatro diputados- y Unión del Pueblo Canario (UPC) -0,5% de las papeletas y como máximo un escaño-. En conjunto, la marca general que lidera Ada Colau obtendría un 7,1% de los votos y se movería entre los nueve y los 12 diputados'. Se toma el 7,1 del texto y de la serie Datawrapper; la infografía dice 7,2 (ver discrepancias_fuente). build_fase2.py lo trata como bloque completo, Compromís incluido. No sumar los componentes además de esta fila.",
+          "componentes": [
+            {
+              "partido": "Front Valencià (FV)",
+              "pct": 1.5,
+              "escanos_min": 3,
+              "escanos_max": 4,
+              "nota": "Texto: 'Compromís-Front Valencià (FV) -1,5% de los sufragios y tres o cuatro diputados-'."
+            },
+            {
+              "partido": "UPC",
+              "pct": 0.5,
+              "escanos_min": 0,
+              "escanos_max": 1,
+              "nota": "Texto: 'Unión del Pueblo Canario (UPC) -0,5% de las papeletas y como máximo un escaño-' (sic: Unidad del Pueblo Canario)."
+            }
+          ]
+        },
+        {
+          "partido": "Podemos",
+          "pct": 0.7,
+          "nota": "Solo en la serie Datawrapper QBCLv v25 (fila 22/11/2026: 0,7); no aparece en la infografía ni en el texto. Sin horquilla publicada."
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.7,
+          "escanos_min": 10,
+          "escanos_max": 11
+        },
+        {
+          "partido": "Bildu",
+          "pct": 1.6,
+          "escanos_min": 7,
+          "escanos_max": 8
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.5,
+          "escanos_min": 4,
+          "escanos_max": 5
+        },
+        {
+          "partido": "PNV",
+          "pct": 0.9,
+          "escanos_min": 4,
+          "escanos_max": 5
+        },
+        {
+          "partido": "AA",
+          "pct": 1.6,
+          "escanos_min": 2,
+          "escanos_max": 3,
+          "nota": "Rotulada 'AA' (Adelante Andalucía) en la infografía. Texto: 'Adelante Andalucía puede estrenarse en la Cámara con dos o tres representantes' (sin porcentaje)."
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.0,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "nota": "Infografía '1,0 (2)': valor puntual."
+        },
+        {
+          "partido": "CCa",
+          "pct": 0.4,
+          "escanos_min": 0,
+          "escanos_max": 1
+        },
+        {
+          "partido": "SY",
+          "pct": 0.1,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "nota": "Rotulada 'SY' (Soria ¡Ya!) en la infografía, '0,1 (0)'. Se ignora en la proyección (IGNORADAS en pipeline/build_fase2.py), como el 15-11."
+        }
+      ],
+      "discrepancias_fuente": "1) Frente Amplio: la infografía dice 'FA 7,2% (9-12)'; el texto ('obtendría un 7,1% de los votos'; PSOE + FA 'el 35,1%' = 28,0 + 7,1) y la serie Datawrapper QBCLv v25 (fila 22/11/2026: 7,1) dicen 7,1. Se toma 7,1 (dos fuentes contra una). 2) El texto compara con el 'pasado jueves' (19-11: PP 31,0, PSOE 27,1), no con la entrega del viernes 20-11 (31,2 y 27,6): PP +0,5 y PSOE 'casi un punto' cuadran con el jueves. 3) Los nacionalistas 'oscilarían entre los 144 y los 160 diputados' junto a PSOE y FA, sin Junts: el mínimo cuadra sin Adelante Andalucía y el máximo con ella (112+9+10+7+4+2+0 = 144; 118+12+11+8+5+2+1+3 = 160); no se usa. 4) Junts sube de 1,3 a 1,5 y PNV baja de 1,0 a 0,9 respecto a la infografía del 20-11; SY reaparece (0,1, 0 escaños).",
+      "contexto": "Según El Mundo, PP (31,5 %, 126-132) y PSOE (28 %, 112-118) suben tras el debate del 19-11 y mantienen 3,5 puntos de distancia; Vox baja al 18,3 % (57-62) y pierde la cota del 19 %. PP y Vox sumarían 183-194 diputados; PSOE y Frente Amplio, el 35,1 % y 121-130. El Frente Amplio (7,1 % con Compromís-Front Valencià y UPC) obtendría 9-12 escaños. ERC sube a 10-11; Junts y PNV, 4-5 cada uno; Bildu 7-8. El 13,1 % de los votantes del PSOE de 2023 está indeciso. El Mundo lo presenta como el 'penúltimo día de publicación de encuestas'.",
+      "desglose_regional": null,
+      "desglose_regional_nota": "Esta entrega no publica desglose territorial.",
+      "urls": {
+        "primarias": [
+          "https://www.elmundo.es/espana/encuestas/2026/11/21/6b01d96dfc6c83e5298b4592.html",
+          "https://e01-elmundo.uecdn.es/elmundo/2026/graficos/nov/intencion646.jpg",
+          "https://datawrapper.dwcdn.net/QBCLv/25/"
+        ],
+        "secundarias": [],
+        "descubrimiento_nota": "Localizado en la portada de elmundo.es y en la página de la sección Encuestas (elmundo.es/espana/encuestas.html) el 22-11 a las 08:45 UTC; no figuraba en la sección de elecciones generales. Ninguna cifra sale de agregadores."
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/sigmados/elmundo_20261121.html",
+        "data/sources/encuestas/sigmados/elmundo_20261121.txt",
+        "data/sources/encuestas/sigmados/img_elmundo_intencion646_20261121.jpg",
+        "data/sources/encuestas/sigmados/img_elmundo_intencion646_20261121.txt",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v25.html",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v25_dataset.csv"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/sigmados/elmundo_20261121.html": "45786ed2cf8218a99ca0203ce9e97ac803531dda9aa4134c8eaa9ac2cacd2e92",
+        "data/sources/encuestas/sigmados/elmundo_20261121.txt": "68e85b41e3afbee389c9722717d411677c42cf9b164ff32abf0ee799cd13ace3",
+        "data/sources/encuestas/sigmados/img_elmundo_intencion646_20261121.jpg": "811287aa14d2b4cb40a165f3d97aa6c1db0b79a64999ccf1f04ca61b56f3a38a",
+        "data/sources/encuestas/sigmados/img_elmundo_intencion646_20261121.txt": "9f40ef3628813a12ac065c8d5a93610d03483eb48dff6bae4ccd8185189327dd",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v25.html": "2b2d5cbd291cf5cab47da76110a9ea13a327dd02e34ef4a6f027c601da97b084",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v25_dataset.csv": "78ec64285487d089d79cacc19eba92e673b9046d1545b8008263a7a665ddf72b"
+      },
+      "archivos_fuente_nota": "El artículo incrusta además la infografía de cabecera intencionapertura646.jpg (el mismo hemiciclo sin rótulos ni cifras) y el Datawrapper EzghC (transferencias de voto), no guardados porque no añaden estimación.",
+      "verificado_en_fuente_primaria": true
+    },
+    {
       "id": "sigmados-2026-11-20",
       "rol": "principal",
       "sustituye": [
@@ -3274,6 +3435,153 @@
         "data/sources/encuestas/sigmados/elmundo_20261101.html"
       ],
       "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "gad3-2026-11-22",
+      "rol": "media",
+      "sustituye": "gad3-2026-11",
+      "encuestadora": "GAD3 (Gabinete de Análisis Demoscópico, S.L.)",
+      "cliente_medio": "ABC (Vocento)",
+      "estudio": "Barómetro de GAD3 para ABC, noviembre 2026 (II) (gad3.com: 'Barómetro ABC I Estimación de voto nacional. Noviembre 2026 (II)'; ABC: 'Encuesta ABC | GAD3')",
+      "fecha_publicacion": "2026-11-22",
+      "fecha_publicacion_nota": "Artículo de ABC 'La derecha mantiene una holgada mayoría de 194 escaños a una semana del 29N' (Juan Casillas Bayo; datePublished 2026-11-22T02:32:25+01:00, modificado 02:37:45; el artículo dice que es el 'último que se publica antes de las elecciones generales'). gad3.com lo publicó el 22-11 a las 01:55:29 UTC (02:55 hora peninsular). Las cifras de esta entrada salen del texto de gad3.com, comprobadas con el artículo de ABC (ver discrepancias_fuente sobre el gráfico).",
+      "trabajo_campo": {
+        "inicio": "2026-11-16",
+        "fin": "2026-11-19"
+      },
+      "trabajo_campo_nota": "Ficha técnica (gad3.com y ABC): 'Fechas del trabajo de campo: Del 16 al 19 de noviembre'. ABC: 'El trabajo de campo de la encuesta se hizo entre el lunes y el jueves, por lo que no recoge el efecto del cara a cara'.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 1501,
+      "muestra_nota": "Ficha técnica: '1.501 entrevistas' (1.180 a móviles y 321 a fijos). gad3.com da el error muestral con 'n=1.502' (la cifra del barómetro del 9-11); ABC, con 'n=1.501'.",
+      "metodo": "Encuesta telefónica asistida por ordenador (CATI): 1.180 entrevistas a móviles y 321 a fijos; cuotas por sexo, edad y ámbito geográfico (censo electoral INE); duración 4-5 minutos; cuestionario propuesto por Vocento y ABC.",
+      "margen_error": "±2,6% (n=1.501; 95,5%, P=Q=0,5)",
+      "base_porcentajes": "% de voto estimado (gad3.com no indica la base; en el barómetro del 9-11 era voto válido)",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.1,
+          "escanos_min": 131,
+          "escanos_max": 131,
+          "nota": "gad3.com: 'el Partido Popular obtendría 131 escaños y el 31,1% de los votos'; 'UPN-PP: En coalición con PP para 2026' (el escaño de UPN-PP en Navarra va dentro). ABC: 'Pierde ocho décimas que le hacen caer de 136 a 131 diputados' (31,9 → 31,1)."
+        },
+        {
+          "partido": "PSOE",
+          "pct": 28.4,
+          "escanos_min": 110,
+          "escanos_max": 110,
+          "nota": "ABC: 'sube dos puntos y medio y siete escaños, hasta los 110' (25,9 → 28,4)."
+        },
+        {
+          "partido": "Vox",
+          "pct": 18.1,
+          "escanos_min": 63,
+          "escanos_max": 63
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 5.8,
+          "escanos_min": 7,
+          "escanos_max": 7,
+          "nota": "Solo la marca general: gad3.com da aparte Compromís, CHA y Ara Més (filas siguientes) y no publica el porcentaje de UPC. ABC: 'Frente Amplio ahora obtiene catorce escaños. Siete \"propios\", uno más que a principios de mes, cinco de Compromís-Front Valencià, uno de Ara Més-Front Ampli y uno —este nuevo— de CHA-Frente Amplio Aragón'."
+        },
+        {
+          "partido": "Compromís",
+          "pct": 1.5,
+          "escanos_min": 5,
+          "escanos_max": 5,
+          "nota": "gad3.com: 'Compromís con un 1,5% y 5 escaños'. ABC: Podemos 'se llevaría un escaño por Alicante por la coalición con Compromís-Front Valencià'."
+        },
+        {
+          "partido": "Adelante Andalucía",
+          "pct": 1.9,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "nota": "ABC: 'Adelante Andalucía mejora tres décimas, pero continúa en tres actas' (1,6 → 1,9)."
+        },
+        {
+          "partido": "CHA",
+          "pct": 0.3,
+          "escanos_min": 1,
+          "escanos_max": 1,
+          "nota": "CHA-Frente Amplio Aragón. Se ignora en la proyección (IGNORADAS en pipeline/build_fase2.py)."
+        },
+        {
+          "partido": "Ara Més-Front Ampli",
+          "nombre_publicado": "Ara Més",
+          "pct": 0.2,
+          "escanos_min": 1,
+          "escanos_max": 1
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.6,
+          "escanos_min": 11,
+          "escanos_max": 11,
+          "nota": "ABC: 'ERC cae de doce a once'; Podemos 'uno por Barcelona por conseguir meter una de sus candidatas en las listas de ERC'."
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.1,
+          "escanos_min": 4,
+          "escanos_max": 4
+        },
+        {
+          "partido": "PNV",
+          "pct": 1.0,
+          "escanos_min": 4,
+          "escanos_max": 4
+        },
+        {
+          "partido": "Bildu",
+          "pct": 1.6,
+          "escanos_min": 7,
+          "escanos_max": 7,
+          "nota": "ABC: 'Bildu pasa de siete a seis, pero retiene otra acta por Navarra'."
+        },
+        {
+          "partido": "BNG",
+          "pct": 0.9,
+          "escanos_min": 2,
+          "escanos_max": 2
+        },
+        {
+          "partido": "CC",
+          "pct": 0.3,
+          "escanos_min": 1,
+          "escanos_max": 1
+        }
+      ],
+      "suma_pct_publicada": 94.8,
+      "suma_pct_nota": "Suma de los porcentajes del texto de gad3.com. No publica Podemos, SALF, UPC, PACMA, otros ni blanco (el gráfico Datawrapper sí, pero no es fiable: ver discrepancias_fuente).",
+      "proyeccion_escanos": "puntual (sin horquillas)",
+      "proyeccion_escanos_nota": "Escaños del texto de gad3.com: PP 131, PSOE 110, Vox 63, ERC 11, Frente Amplio 7, Bildu 7, Compromís 5, Junts 4, PNV 4, Adelante Andalucía 3, BNG 2, CHA 1, Ara Més 1, CC 1 (suma 350). ABC confirma todos (PP+Vox 194; Frente Amplio 14 con sus confluencias; ERC 11; Bildu 6 + 1 por Navarra; Junts 4; PNV 4; AA 3; BNG 2; CC 1) y que Podemos se queda sin escaño propio en Madrid.",
+      "discrepancias_fuente": "El gráfico Datawrapper pEPz1 v1 incrustado en gad3.com (columna '% Est. 20-nov-26' / 'Dip. Est. 20-nov-26'; lastModifiedAt 2026-11-21T22:43:04Z) coincide con el texto en PP, PSOE y Vox, pero no en el resto: da Frente Amplio 5,0 y 5 escaños (texto 5,8 y 7), Ara Més 0,3 (texto 0,2), A. Andalucía 1,6 (texto 1,9), ERC 2,7 y 12 (texto 2,6 y 11), Junts 1,4 y 5 (texto 1,1 y 4), PNV 0,9 (texto 1,0), Bildu 1,5 y 8 (texto 1,6 y 7), CC 0,4 (texto 0,3) y ningún escaño a CHA, y sus porcentajes suman 100,6. Salvo Frente Amplio, esas filas son idénticas a las del barómetro del 9-11 (también UPC, CHA y PACMA), así que el gráfico está a medio actualizar; sí cambian Podemos (1,4 → 1,1), SALF (1,3 → 1,5), otro (1,9 → 2,0) y blanco (1,5 → 1,0). El texto de gad3.com cuadra con todas las variaciones que da ABC. Por eso no se toman del gráfico Podemos, SALF, UPC, PACMA, otro ni blanco. El artículo de ABC lleva isAccessibleForFree=false (como el del 9-11 guardado en abc_20261109.html); su texto solo se usa para comprobar.",
+      "desglose_regional": null,
+      "desglose_regional_nota": "ABC publica el 22-11 piezas provinciales de este barómetro (Sevilla, Málaga, Córdoba, Andalucía); gad3.com no ha publicado un desglose por provincias a 22-11 a las 08:45 UTC.",
+      "urls": {
+        "primarias": [
+          "https://www.gad3.com/barometro-abc-i-estimacion-de-voto-nacional-noviembre-2026-ii/",
+          "https://www.abc.es/espana/derecha-mantiene-holgada-mayoria-194-escanos-semana-20261122023225-nt.html"
+        ],
+        "secundarias": [],
+        "descubrimiento_nota": "Localizado en el feed de gad3.com (22-11, 08:43 UTC); el artículo de ABC, enlazado desde la pieza de valoración de líderes del mismo barómetro ('Abascal supera a Sánchez en valoración...', 22-11 02:32). La portada de abc.es no lo enlazaba. Ninguna cifra sale de agregadores."
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/gad3/gad3_20261122.html",
+        "data/sources/encuestas/gad3/feed_20261122.xml",
+        "data/sources/encuestas/gad3/abc_20261122.html",
+        "data/sources/encuestas/gad3/dw_pEPz1_v1.html",
+        "data/sources/encuestas/gad3/dw_pEPz1_v1_dataset.csv"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/gad3/gad3_20261122.html": "88b3fbe6725a77f642b0f7038bb33c79293d06a47357082026a02cd4cbb6c5a1",
+        "data/sources/encuestas/gad3/feed_20261122.xml": "c014d83e33d95675c7b384fb0f0ed4ee1d411190f189ffce4889a45f2bf13aa7",
+        "data/sources/encuestas/gad3/abc_20261122.html": "8ddf962c58dfe9512bb1fc30c3ed44d9b2e4a5879fb6d36c0ee06444dc5bdd4f",
+        "data/sources/encuestas/gad3/dw_pEPz1_v1.html": "422245c7440f56bc9fbdb92a576ce6472f7df5ec47d0452b3248df55b080802c",
+        "data/sources/encuestas/gad3/dw_pEPz1_v1_dataset.csv": "ece64109e283cbc4c52323096b6f69ed4bb18a136e92e070ee6384856ae772ce"
+      },
+      "verificado_en_fuente_primaria": true,
+      "rol_nota": "Entra en la media de encuestas como la última de GAD3 (la media toma la última de cada empresa). El escenario propio de GAD3 (ESCENARIOS_ENCUESTA en pipeline/build_fase2.py) sigue usando gad3-2026-11: el texto de GAD3 no da el porcentaje de Podemos (al que asigna 0 escaños) ni de SALF, y sin ese porcentaje el escenario le daría a Podemos sus escaños de 2023, lo que contradiría lo publicado; el gráfico de la misma página, que sí lo da, repite en otras filas cifras del barómetro del 9-nov, así que no se usa."
     },
     {
       "id": "gad3-2026-11",
@@ -4929,6 +5237,175 @@
         "data/sources/encuestas/gad3/dw_9xmFD_dataset.csv",
         "data/sources/encuestas/gad3/dw_9xmFD.html"
       ],
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "40db-2026-11-22",
+      "rol": "media",
+      "sustituye": [
+        "40db-2026-11-20"
+      ],
+      "rol_nota": "Entra en la media de encuestas como la última de 40dB y sustituye ahí a 40db-2026-11-20. El escenario propio de 40dB (ESCENARIOS_ENCUESTA en pipeline/build_fase2.py) sigue usando 40db-2026-11, con el mismo criterio que en los días 1 a 9: el tracking solo publica el porcentaje de PP, PSOE, Vox, Frente Amplio, SALF, Podemos y las coaliciones territoriales de izquierda; ERC, EH Bildu, Junts, PNV, AA, BNG y CC solo tienen escaños (en Otros).",
+      "encuestadora": "40dB.",
+      "cliente_medio": "El País y Cadena SER (Prisa)",
+      "estudio": "Tracking 29-N (Día 10). 22 de noviembre de 2026",
+      "fecha_publicacion": "2026-11-22",
+      "fecha_publicacion_nota": "Décima entrega del sondeo diario de 40dB. para El País y la SER. Artículo de El País 'El PSOE acaricia el empate con el PP, según el ‘tracking’ de 40dB.' (Xosé Hermida; pubDate 22-11 04:57 GMT en el RSS de portada; entradilla: 'Vox ahonda su tendencia a la baja desde que comenzó la campaña'; primer párrafo: 'el tracking de este sábado [...], el penúltimo antes de que el lunes concluya el plazo legal para la publicación de encuestas [...] se quedaría a solo tres décimas del PP'; el cuerpo no se ha leído) y artículo de la SER 'El PSOE empata con el PP a una semana de las elecciones' (Miguel Ángel Muñoz Encinas; datePublished 2026-11-22T08:48:50+01:00). El mismo primer párrafo apareció antes, el 21-11 a las 18:27 GMT, en el RSS de la sección España con el enlace (<link>) del artículo del día 9, aunque su <guid> ya era la URL del artículo del 21-11 ('…/2026-11-21/el-psoe-acaricia-el-empate-con-el-pp-segun-el-tracking-de-40db.html') (copia elpais_rss_espana_20261121b.xml), sin cifras salvo las 'tres décimas'; se toma como fecha la del artículo propio y la SER (22-11). Las cifras salen del informe PDF de 40dB, que esta vez no está en elpais.com/infografias (404 en elpais.com para 'informe_tracking_dia10.pdf' el 21-11 a las 19:43 UTC y el 22-11 a las 08:43 UTC) sino en el mismo directorio de ep00.epimg.net, el servidor de estáticos de El País (HTTP Last-Modified Sat, 21 Nov 2026 15:41:16 GMT; CreationDate del PDF 2026-11-21 14:20 CET; portada 'Tracking 29-N (Día 10). 22 de noviembre de 2026'). Coinciden con el texto de la SER.",
+      "trabajo_campo": {
+        "inicio": "2026-11-17",
+        "fin": "2026-11-21"
+      },
+      "trabajo_campo_nota": "Ficha técnica (pág. 25): fecha de realización '17/11/2026 a 21/11/2026'. El PDF se creó el 21-11 a las 14:20 (CET), así que el 21-11 solo puede ser un día de campo parcial. Todo el campo del 20 y el 21-11 es posterior al debate cara a cara del 19-11 por la noche; la ficha no lo cuantifica (la del día 9 decía que 500 entrevistas eran posteriores).",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 2000,
+      "muestra_nota": "Ficha técnica (pág. 25): '2.000 entrevistas'. Ventana móvil de cinco días, como en los días 5 a 9. La SER no da ficha técnica esta vez.",
+      "metodo": "Entrevista online (CAWI). Universo: población general residente en España (excepto Ceuta y Melilla) a partir de 18 años y con derecho a voto. Cuotas por sexo y edad (cruzadas), comunidad autónoma, tamaño de hábitat y clase social (ficha técnica, pág. 25).",
+      "margen_error": "±2,2% (95% de confianza)",
+      "base_porcentajes": "% sobre el total de votos válidos",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.9,
+          "escanos_min": 125,
+          "escanos_max": 136,
+          "escanos_central": 131,
+          "nota": "Los 2 escaños de 'UPN-PP' van en Otros, no en esta fila (la SER: 'El PP logra 131 diputados (los mismos que ayer), Vox 54 (dos menos) y la coalición de los populares con UPN en Navarra mantiene invariables sus dos escaños')."
+        },
+        {
+          "partido": "PSOE",
+          "pct": 31.6,
+          "escanos_min": 119,
+          "escanos_max": 130,
+          "escanos_central": 125
+        },
+        {
+          "partido": "Vox",
+          "pct": 16.9,
+          "escanos_min": 49,
+          "escanos_max": 59,
+          "escanos_central": 54
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 3.6,
+          "escanos_min": 5,
+          "escanos_max": 6,
+          "escanos_central": 5,
+          "nota": "Sin Podemos ni las 'otras coaliciones territoriales de izquierda' (filas siguientes). Escaños: 'Más Madrid 2 – Comuns 2 –CHA 1'. En el hemiciclo, '5 (5-6)' es el tramo rojo anaranjado de Frente Amplio y '3 (3-5)' el naranja claro de las coaliciones territoriales (comprobado visualmente, igual que en los días 1 a 9)."
+        },
+        {
+          "partido": "Compromís: Front Valencià",
+          "nombre_publicado": "Compromís: Front Valencià (Compromís-EUPV-Podem-ERPV)",
+          "pct": 1.2,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_central": 3,
+          "nota": "Componente de 'Otras coaliciones territoriales de izquierda*' (1,7% en total; 3 escaños, 3-5). Escaños: 'Podemos 1 – Compromís 2'."
+        },
+        {
+          "partido": "UPC",
+          "nombre_publicado": "Unidad del Pueblo Canario UPC (NC-BC, Podemos, IU, Sumar)",
+          "pct": 0.3,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "escanos_central": 0,
+          "nota": "Componente de 'Otras coaliciones territoriales de izquierda*'. Escaños: 'UPC: 0 (0-1)', 'Nueva Canarias 0 (0-1)'."
+        },
+        {
+          "partido": "Ara Més-Front Ampli",
+          "nombre_publicado": "AraMés – Front Ampli (AraMés – EU-MS)",
+          "pct": 0.2,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "escanos_central": 0,
+          "nota": "Componente de 'Otras coaliciones territoriales de izquierda*'. Escaño: 'Ara Més: 0 (0-1)'."
+        },
+        {
+          "partido": "SALF",
+          "nombre_publicado": "Se Acabó La Fiesta (SALF)",
+          "pct": 1.4
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.0,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "escanos_central": 0,
+          "nota": "'Podemos: 0 (0-1)'. Aparte del escaño de Podemos dentro de Compromís: Front Valencià."
+        },
+        {
+          "partido": "Otro + Blanco",
+          "pct": 11.9,
+          "tipo": "otros_y_blanco"
+        }
+      ],
+      "escanos_otros": {
+        "total_central": 32,
+        "min": 31,
+        "max": 36,
+        "desglose_central": [
+          {
+            "partido": "ERC",
+            "escanos": 11
+          },
+          {
+            "partido": "Bildu",
+            "escanos": 7
+          },
+          {
+            "partido": "JxC",
+            "escanos": 3
+          },
+          {
+            "partido": "PNV",
+            "escanos": 3
+          },
+          {
+            "partido": "AA",
+            "escanos": 3
+          },
+          {
+            "partido": "BNG",
+            "escanos": 2
+          },
+          {
+            "partido": "UPN-PP",
+            "escanos": 2
+          },
+          {
+            "partido": "Coalición Canaria",
+            "escanos": 1
+          }
+        ]
+      },
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "PP 31,9 + PSOE 31,6 + Vox 16,9 + Frente Amplio 3,6 + SALF 1,4 + Podemos 1,0 + Otras coaliciones territoriales de izquierda 1,7 (1,2 + 0,2 + 0,3) + Otro + Blanco 11,9 = 100,0. Esta vez el gráfico y su nota cuadran (1,7). No sumar además la fila agregada de coaliciones territoriales (no se guarda como fila).",
+      "proyeccion_escanos": "central + horquilla",
+      "proyeccion_escanos_nota": "Página 'Estimación de escaños' del informe (pág. 8), leída del texto del PDF y comprobada visualmente. Centrales: PP 131 + PSOE 125 + Vox 54 + Frente Amplio 5 + otras coaliciones territoriales de izquierdas 3 (3-5) + Podemos 0 + Otros 32 = 350. Otros: '* ERC 11, Bildu 7, JxC 3, PNV 3, AA 3, BNG 2, UPN-PP 2, Coalición Canaria 1'. La SER confirma PP 131, PSOE 125, Vox 54, UPN-PP 2, 8 escaños para Frente Amplio + coaliciones territoriales + Podemos y el desglose de Otros (ERC 11, Bildu 7, Junts 3, PNV 3, Adelante Andalucía 3, BNG 2, Coalición Canaria 1).",
+      "contexto": "Según la SER, el PSOE empata con el PP: 31,6 % frente a 31,9 %, una décima por debajo de su resultado de 2023, pese a la derrota de Sánchez en el debate. En escaños, PP 131 (los mismos que el día anterior), PSOE 125 (uno más) y Vox 54 (dos menos), que con un 16,9 % baja por primera vez del 17 % en el sondeo de 40dB desde 2023. Frente Amplio, coaliciones territoriales y Podemos siguen en 8 escaños; ERC sube a 11. El sondeo diario sustituye cada día al anterior; El País lo presenta como el penúltimo antes del fin del plazo legal (lunes 23-11).",
+      "discrepancias_fuente": "1) La SER dice que la derecha 'se mantiene 13 escaños por encima de la mayoría absoluta', pero PP 131 + Vox 54 + UPN-PP 2 = 187, 11 por encima (13 era la cifra del día 9, 189); la SER también dice que 'la suma del pacto de investidura de 2023 se queda ahora en 162, a 14 de la mayoría absoluta', pero con el PDF son 160 (PSOE 125 + Frente Amplio 5 + coaliciones territoriales 3 + Podemos 0 + ERC 11 + Bildu 7 + JxC 3 + PNV 3 + BNG 2 + CC 1); el resto de las cifras de la SER coinciden con el PDF. 2) El informe no está en elpais.com/infografias, donde estaban los de los días 1 a 9, sino en ep00.epimg.net (mismo directorio); el del día 9 también responde allí. 3) El cuerpo del artículo de El País no se ha leído (el de los días anteriores devolvía 403); solo la entradilla y el primer párrafo del RSS, que cuadran ('tres décimas').",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://ep00.epimg.net/infografias/encuestas40db/2026/11-tracking-electoral/informe_tracking_dia10.pdf",
+          "https://cadenaser.com/nacional/2026/11/22/el-psoe-empata-con-el-pp-a-una-semana-de-las-elecciones-cadena-ser/",
+          "https://elpais.com/espana/elecciones-generales/2026-11-22/el-psoe-acaricia-el-empate-con-el-pp-segun-el-tracking-de-40db.html"
+        ],
+        "secundarias": [],
+        "descubrimiento_nota": "El artículo de El País se localizó en el RSS de portada descargado el 22-11 a las 08:43 UTC y el de la SER en la etiqueta 'encuestas_electorales' de cadenaser.com y en su RSS. La URL del PDF sigue el nombre de los días anteriores, en el servidor de estáticos de El País (el 404 en elpais.com se repitió el 21-11 por la noche y el 22-11 por la mañana). Ninguna cifra sale de agregadores."
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/40db/2026_11_tracking_dia10_informe.pdf",
+        "data/sources/encuestas/40db/cadenaser_20261122.html",
+        "data/sources/encuestas/40db/elpais_rss_portada_20261122.xml",
+        "data/sources/encuestas/40db/elpais_rss_espana_20261121b.xml"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/40db/2026_11_tracking_dia10_informe.pdf": "f763a875cb36e20097903b70d82d97091b5096b2305a86b68a3e6ab4c2d74e4d",
+        "data/sources/encuestas/40db/cadenaser_20261122.html": "a3bcb508a23003234c24303430df3fa96eb7efd45f1be1e24836cb151587b141",
+        "data/sources/encuestas/40db/elpais_rss_portada_20261122.xml": "2c477b047427f81d59183792056eacd6572d6e9b4ac9e13134d4c8efa48ceeef",
+        "data/sources/encuestas/40db/elpais_rss_espana_20261121b.xml": "fa090eb3dae61a78dee8707e07aa6e679f1178a05d797ef7fdb7554161574e5a"
+      },
       "verificado_en_fuente_primaria": true
     },
     {
