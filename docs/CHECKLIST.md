@@ -215,6 +215,18 @@ Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. 
 de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
 BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
+**Revisión del 23-nov, 09:43:** encuestas, último día de publicación, con verificación independiente contra las copias.
+Sigma Dos del 22-nov (publicada a las 22:34; campo 16-21 nov) sustituye a la del 21-nov en la media, con su desglose
+provincial. No pasa a ser escenario porque solo publica el porcentaje de PP, PSOE, Vox, Frente Amplio y Podemos; como
+escenario daría ERC 7, Junts 7, PNV 6 y AA 0, frente a los 11, 3, 3 y 5 publicados, así que el escenario sigue siendo el
+del 21-nov. Con una u otra, la media da los mismos escaños. El informe final de 40dB (23-nov, 7.500 entrevistas del 10 al
+21-nov, solo PP, PSOE y Vox) se registra fuera de la media: termina el mismo día que el día 10 del tracking, que publica
+todas las cifras. GAD3 y CIS sin novedades. Registro 385 → 387 (UPC: OSP en las rutas aéreas con la Península; deflactar
+el IRPF y deducción por la subida de precios) → 385. Se rechaza upc-c y se retiran dos promesas de Coalición Canaria
+(POSEI al 100 % y 100 % del coste real del transporte de mercancías) porque ya las obliga la Ley 19/1994 (arts. 7.1, 7.3
+y 24.2), según una revisión independiente del texto consolidado; es el mismo criterio que con las pensiones del PSC
+(21-nov) y la Ley 4/2023 (18-nov). UPN sigue sin programa; BOE del 23-nov y JEC sin novedades; dominio y HTTPS correctos.
+
 **Revisión del 22-nov, 20:43:** registro 381 → 385 con revisión independiente: Adelante Andalucía (Cercanías o media
 distancia en los municipios de más de 20.000 habitantes, propuesta 374 de su programa), Coalición Canaria (ferry gratis
 Órzola–Caleta del Sebo para residentes de La Graciosa, con el texto de la nota oficial de la candidatura y no la cita de
