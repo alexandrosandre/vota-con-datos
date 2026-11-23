@@ -1,0 +1,85 @@
+{
+  "grupo": "g25",
+  "verificador": "Claude (Anthropic) — verificación independiente de la recodificación de la celda q33 de UPC con declaraciones de campaña de Luis Campos (23-nov-2026), protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13 y 15-nov",
+  "fecha": "2026-11-23",
+  "aprobado": true,
+  "revisadas": 1,
+  "resultado": {
+    "ok": 1,
+    "corregido": 0,
+    "rechazado": 0,
+    "detalle": "1 celda (upc × q33). Valor −2 del codificador confirmado, con la nota completada (ver «correcciones_de_campos»). Cita, URL, medio, fecha, quien, formato, marco y «sustituye» correctos. La corrección de nota ya está aplicada en codificacion_g25.json (con «motivo_verificacion»), así que el grupo queda aprobado."
+  },
+  "alcance": "Solo q33 («Suprimir el reparto obligatorio entre comunidades autónomas de los menores migrantes que llegan solos a España.»), entrada upc (NC-BC).\n\n(1) Fuentes. Las dos piezas de La Provincia del 23-nov se descargaron de nuevo con una petición HTTP normal (HTTP 200 las dos) y se abrieron en el navegador integrado sin aceptar ni rechazar el diálogo de consentimiento («Aceptar» o «Rechazar y suscribirse»), sin iniciar sesión y sin tocar nada de la página. El JSON-LD marca las dos como «isAccessibleForFree»: false, pero el texto completo se sirve en el HTML y se ve en la página sin registro: el «Suscríbete para seguir leyendo» solo está dentro de un <script>, oculto, y no corta el texto. Entrevista: NewsArticle, autora Flora Marimón, datePublished 2026-11-23T08:00:44Z, «Entrevista | Luis Campos Candidato de Unidad del Pueblo Canario», preguntas y respuestas. Crónica: NewsArticle, autor Adolfo Rodríguez, datePublished 2026-11-23T08:00:45Z, con entrecomillados de Campos («explica», «afirma», «sostiene»). Las dos piezas enlazan el mismo vídeo («Luis Campos y las propuestas de Unidad del Pueblo Canario de cara a las elecciones generales», Adolfo Rodríguez).\n\n(2) Citas. La cita de la celda es literal, completa y en la respuesta a «¿Qué propone UPC para afrontar la migración?» (38 palabras), en el HTML descargado y en el texto de la página en el navegador. Las citas de la nota también: el entrecomillado de la crónica («un elemento absolutamente esencial [...] al resto del territorio español», precedido de «Pero» en el original) y la pregunta de la entrevista. La nota usa solo palabras de Campos entre comillas, no los resúmenes del periodista («Una de sus principales propuestas consiste en [...] tanto adultas como menores de edad»), que el protocolo no admite.\n\n(3) Quién habla. Luis Alberto Campos Jiménez es el n.º 1 de «UNIDAD DEL PUEBLO CANARIO UPC (NC-BC, PODEMOS, IU, SUMAR)» por Las Palmas (data/boe/listas_congreso.json, BOE-A-2026-23103) y secretario general de NC-BC desde el VI Congreso Nacional (27-jul-2025): lo dice él mismo en Canarias Ahora el 31-oct («yo hoy soy el secretario general de Nueva Canarias») y lo recogen data/boe/afiliaciones_g3.json y es.wikipedia. Cabeza de lista y secretario general: líder del partido en el sentido del protocolo, y habla de su propio partido (NC-BC, entrada upc), no por Podemos, IU o Sumar. Primera persona en un medio de referencia, posterior a la convocatoria: marco null.\n\n(4) Valor, juzgado antes de mirar el del codificador y con el mismo listón que los demás partidos en q33 (fase1.json y codificacion_g1, g3, g4, g5, g7, g14, g19, g20, g21; verificacion_g2, g4, g5, g6, g7, g14, g19, g20, g21). Campos propone una «derivación obligatoria de migrantes al resto del Estado» (entrevista), dice que derivar a «los adultos y los menores extranjeros» es «un elemento absolutamente esencial» (crónica) y ya el 31-oct (Canarias Ahora, cita comprobada en línea y en la copia local con el sha256 de g8, c5daebea…3d4) reivindicaba haber propuesto que la derivación de los menores «fuera obligatoria» cuando los recursos de Canarias estuvieran tensionados. Propuesta expresa y prioritaria de lo contrario de la afirmación: −2, como Podemos (sistema obligatorio en medida propia) y CC («Solidaridad obligatoria y automática», también con umbral de saturación). No es el caso del Frente Amplio (−1 en g14: «acuerdo marco vinculante», otro instrumento, en una subordinada y sin prioridad), ni de EH Bildu (−1: traslado sin nombrar la obligatoriedad), ni de PSOE, Compromís y Junts (−1: defensa reactiva o condicionada del mecanismo vigente).\n\n(5) Dos piezas del mismo medio, día y candidato. Es válido. El protocolo admite la crónica que recoge las palabras del líder entre comillas en un medio de referencia; las dos piezas son palabras de Campos, no resúmenes del periodista. La cita de la celda lleva la palabra que separa −1 de −2 («obligatoria»); la de la nota fija el alcance (menores incluidos) y la prioridad («absolutamente esencial») de la misma propuesta. Combinar pasajes de una misma fuente o del mismo líder para fijar el alcance es el criterio aplicado antes en q33: CC (p. 19 «Solidaridad obligatoria y automática» y p. 5 para los menores, g3), Junts (dos turnos de Cervera, g7), PP (programa y Sémper en la nota, g1). Lo que no valdría, apoyar el valor en la entradilla o los resúmenes del periodista, no se hace. Además, la frase del 31-oct une en una sola oración a los menores y la obligatoriedad, así que el −2 no depende solo de la combinación; se añade a la nota.\n\n(6) Programa y precedencia. Leído entero el programa de UPC (19-nov; texto catalogado, PDF con sha256 ce35fb3c…7e8 = partidos.json) con búsqueda de obligator, deriv, menor, reparto, distribu, acogida, migra, solidari, corresponsab, traslad y contingencia. Solo tratan la medida el eje 13 (p. 16: «la corresponsabilidad entre territorios»; «una distribución solidaria de las responsabilidades de acogida» de la infancia migrante no acompañada) y el eje 7 (p. 10: fondos europeos regionalizados para la acogida de esos menores en Canarias). Ninguno dice que la distribución sea voluntaria ni la limita: «solidaria» no se opone a «obligatoria» (CC: «Solidaridad obligatoria»), y la corresponsabilidad entre territorios va en la misma dirección. No contradice ni matiza la declaración, que trata la medida de forma más directa (nombra la obligatoriedad) y es posterior. Con el criterio de verificacion_g6.json (el programa no desplaza a una declaración más directa que no contradice ni matiza: PNV q11, q15 y q21; PP q22; Vox q33; prevalece si matiza: PP q33, CC q29), prevalece la declaración. El caso del PP en q33 es el contrario: su programa limita el cambio («como respuesta principal»). La regla «si el programa y un líder se contradicen, prevalece el programa» no se aplica porque no hay contradicción.\n\n(7) Mecanismo. build_fase1.py lee codificacion_g25.json después de g24 con esta verificación como puerta; su celda upc/q33 pisa la de g21. Se ejecutó en una copia del repositorio en el scratchpad (no en el repositorio: el encargo prohíbe tocar otros ficheros): exit 0, codificacion_g25.json entra en «grupos» y upc/q33 queda en −2, campaña, con la cita y la nota de codificacion_g25.json. data/fase1/fase1.json y web/public/data/fase1.json del repositorio no se han regenerado.",
+  "cambios": [
+    {
+      "partido": "upc",
+      "pregunta": "q33",
+      "antes": -1,
+      "despues": -2,
+      "motivo": "Cambio del codificador confirmado. Campaña (La Provincia, 23-nov): Luis Campos, cabeza de lista por Las Palmas y secretario general de NC-BC, propone la «derivación obligatoria de migrantes al resto del Estado» y llama a derivar a «los adultos y los menores extranjeros» «un elemento absolutamente esencial»; el 31-oct ya pedía que la derivación de los menores «fuera obligatoria». Propuesta expresa y prioritaria: −2, como Podemos y CC. Sustituye al −1 del programa (g21), que no dice si la distribución ha de ser obligatoria y no contradice ni matiza la declaración."
+    }
+  ],
+  "correcciones_de_campos": [
+    {
+      "partido": "upc",
+      "pregunta": "q33",
+      "campo": "nota, motivo_verificacion",
+      "motivo": "APLICADA. Nota completada con dos cosas que faltaban: (a) la entrevista de Campos en Canarias Ahora del 31-oct, la única de sus declaraciones que une en una frase a los menores y la obligatoriedad de su derivación («para que los menores extranjeros que llegaban a Canarias pudieran ser derivados no a través de esa solidaridad que nunca existió, sino que fuera obligatoria esa derivación cuando aquí tuviéramos nuestros recursos tensionados»), con su condición de saturación, del mismo tipo que la de CC (−2); (b) en la precedencia, la «corresponsabilidad entre territorios» del eje 13 (p. 16) y los fondos europeos para la acogida de los menores en Canarias del eje 7 (p. 10), que tampoco contradicen ni matizan la declaración. El resto de la nota (citas, comparación con Podemos, CC, Frente Amplio y PP, criterio de g6) era correcto y se conserva. Valor, cita, URL, medio, fecha, quien y formato sin cambios."
+    }
+  ],
+  "posiciones": [
+    {
+      "partido": "upc",
+      "pregunta": "q33",
+      "veredicto": "ok_con_correccion_de_campo",
+      "aprobado": true,
+      "valor_codificador": -2,
+      "valor_final": -2,
+      "motivo": "Cita literal (La Provincia, 23-nov, entrevista de Flora Marimón; 38 palabras). Quien: n.º 1 de UPC por Las Palmas (BOE-A-2026-23103) y secretario general de NC-BC (VI Congreso, 27-jul-2025): líder del partido, en primera persona, después de la convocatoria. Fecha = datePublished de la pieza; medio, formato y URL exactos; pagina y marco null, correctos para campaña. Valor: la derivación «obligatoria» de los migrantes (entrevista) incluye a los menores y es «un elemento absolutamente esencial» (crónica del mismo día, entrecomillado de Campos); el 31-oct ya pedía que la derivación de los menores «fuera obligatoria». Propuesta expresa y prioritaria de lo contrario de la afirmación: −2, mismo listón que Podemos y CC; el Frente Amplio (−1) propone otro instrumento en una subordinada y sin prioridad. El programa (19-nov) no dice si la distribución ha de ser obligatoria y no contradice ni matiza: prevalece la declaración, más directa y posterior (criterio de g6). «sustituye» (q33, −1, g21) coincide con la celda vigente en fase1.json. Nota completada (31-oct; corresponsabilidad y fondos del programa)."
+    }
+  ],
+  "resolucion_dudas_codificador": [],
+  "celdas_no_tocadas": [
+    "Las otras 17 celdas de q33 no están en g25 y no se tocan: PP +1 (programa, g1), UPN null, PSOE −1 (campaña, g1), PSC null, Vox +2 (campaña, g4), SALF null, Frente Amplio −1 (programa, g14), Podemos −2 (programa, g19), Compromís −1 (campaña, g5), Ara Més null, Adelante Andalucía −1 (programa, g2), ERC null, Junts −1 (programa, g20), EH Bildu −1 (campaña, g4), PNV null, BNG null, CC −2 (programa, g3). Ninguna cambia por g25: las declaraciones de Campos cuentan solo para NC-BC (entrada upc), no para Podemos ni Frente Amplio, aunque concurran en la coalición."
+  ],
+  "posiciones_no_recogidas": "Ninguna nueva. Se revisaron las copias locales de UPC: la entrevista de Canarias Ahora del 31-oct (añadida a la nota) y la de EFE en La Voz de Lanzarote del 12-nov, donde lo que se refiere a los menores es resumen del periodista (rechaza «suspender traslados o devolver a menores») y el reparto «solidario y vinculante» que pide es «en el seno de la UE», otra medida.",
+  "recuento": {
+    "antes": {
+      "upc": "−1 (programa, g21)"
+    },
+    "despues": {
+      "upc": "−2 (campaña, g25)"
+    },
+    "valores_finales_q33": {
+      "+2": 1,
+      "+1": 1,
+      "0": 0,
+      "−1": 6,
+      "−2": 3,
+      "null": 7
+    },
+    "tabla_final": {
+      "pp": "+1",
+      "upn": "null",
+      "psoe": "−1",
+      "psc": "null",
+      "vox": "+2",
+      "frente_amplio": "−1",
+      "podemos": "−2",
+      "compromis": "−1",
+      "upc": "−2",
+      "ara_mes_fa": "null",
+      "erc": "null",
+      "junts": "−1",
+      "eh_bildu": "−1",
+      "pnv": "null",
+      "bng": "null",
+      "cc": "−2",
+      "adelante_andalucia": "−1",
+      "salf": "null"
+    }
+  },
+  "dudas": [],
+  "nota_aprobacion": "23-nov: la celda es correcta con el protocolo y con el trato dado a los demás partidos en q33; la corrección de nota está aplicada en codificacion_g25.json, así que el grupo queda aprobado. Reparto final de q33: 2 a favor de suprimir el reparto (Vox +2, PP +1), 9 en contra (Podemos, UPC y CC −2; PSOE, Frente Amplio, Compromís, Adelante Andalucía, Junts y EH Bildu −1), 7 null."
+}

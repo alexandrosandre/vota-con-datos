@@ -225,7 +225,10 @@ todas las cifras. GAD3 y CIS sin novedades. Registro 385 → 387 (UPC: OSP en la
 el IRPF y deducción por la subida de precios) → 385. Se rechaza upc-c y se retiran dos promesas de Coalición Canaria
 (POSEI al 100 % y 100 % del coste real del transporte de mercancías) porque ya las obliga la Ley 19/1994 (arts. 7.1, 7.3
 y 24.2), según una revisión independiente del texto consolidado; es el mismo criterio que con las pensiones del PSC
-(21-nov) y la Ley 4/2023 (18-nov). UPN sigue sin programa; BOE del 23-nov y JEC sin novedades; dominio y HTTPS correctos.
+(21-nov) y la Ley 4/2023 (18-nov). Paso 1 (g25, con verificación independiente aprobada): UPC en q33 pasa de −1 a −2 por Luis Campos (secretario general
+de NC-BC y cabeza de lista por Las Palmas) en La Provincia el 23-nov: «derivación obligatoria de migrantes al resto del
+Estado», «los adultos y los menores extranjeros», «un elemento absolutamente esencial»; es el mismo nivel que Podemos y CC,
+y el programa de UPC («distribución solidaria») no lo matiza. UPN sigue sin programa; BOE del 23-nov y JEC sin novedades; dominio y HTTPS correctos.
 
 **Revisión del 22-nov, 20:43:** registro 381 → 385 con revisión independiente: Adelante Andalucía (Cercanías o media
 distancia en los municipios de más de 20.000 habitantes, propuesta 374 de su programa), Coalición Canaria (ferry gratis

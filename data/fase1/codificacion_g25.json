@@ -1,0 +1,34 @@
+{
+ "grupo": "g25",
+ "codificador": "Claude (Anthropic) — recodificación de la celda q33 de UPC con declaraciones de campaña de Luis Campos (23-nov-2026), protocolo v2 (docs/prompts/2_codificacion_posiciones.md) con las decisiones del editor del 13 y 15-nov",
+ "fecha": "2026-11-23",
+ "nota": "Solo q33 («Suprimir el reparto obligatorio entre comunidades autónomas de los menores migrantes que llegan solos a España.») de la entrada upc (NC-BC). Dos piezas de La Provincia del 23-nov con palabras de Luis Campos, cabeza de lista de UPC por Las Palmas y secretario general de NC-BC: la entrevista de Flora Marimón y la crónica de Adolfo Rodríguez sobre sus propuestas. Ambas se leyeron completas en la web del medio (texto servido sin registro; solo un aviso de cookies, que no se aceptó) y las citas se comprobaron literales contra el texto de la página. Cambia −1 → −2 (ver «motivo_cambio»). Las demás celdas de q33 no se tocan. Sin verificación independiente: build_fase1.py omite este grupo hasta que haya un verificacion_g25.json aprobado; entonces su celda q33 de UPC pisa la de g21 (orden numérico de grupos).",
+ "fuentes": [
+  "https://www.laprovincia.es/canarias/2026/11/23/luis-campos-candidato-unidad-pueblo-136727358.html",
+  "https://www.laprovincia.es/canarias/2026/11/23/luis-campos-upc-propone-repartir-136558073.html"
+ ],
+ "posiciones": {
+  "upc": {
+   "q33": {
+    "valor": -2,
+    "fuente": "campaña",
+    "cita": "Proponemos poner los derechos humanos en el centro, reforzar la cooperación con los países de origen, abrir rutas legales y seguras mediante visados y garantizar una acogida humanitaria con la derivación obligatoria de migrantes al resto del Estado.",
+    "pagina": null,
+    "url": "https://www.laprovincia.es/canarias/2026/11/23/luis-campos-candidato-unidad-pueblo-136727358.html",
+    "medio": "La Provincia",
+    "fecha": "2026-11-23",
+    "quien": "Luis Campos, cabeza de lista de Unidad del Pueblo Canario al Congreso por Las Palmas (BOE-A-2026-23103) y secretario general de Nueva Canarias-Bloque Canarista (NC-BC)",
+    "formato": "entrevista (La Provincia, Flora Marimón)",
+    "marco": null,
+    "nota": "Entrevista con La Provincia (23-nov), respuesta a «¿Qué propone UPC para afrontar la migración?»: propone la «derivación obligatoria de migrantes al resto del Estado». El mismo día, en otra pieza del mismo medio con citas suyas (Adolfo Rodríguez, https://www.laprovincia.es/canarias/2026/11/23/luis-campos-upc-propone-repartir-136558073.html), dice que la derivación incluye a los menores y que es prioritaria: «un elemento absolutamente esencial es ser capaces de derivar las personas que llegan aquí, los adultos y los menores extranjeros, al resto del territorio español». Ya lo había dicho de los menores en una sola frase el 31-oct (entrevista en Canarias Ahora, https://www.eldiario.es/canariasahora/politica/luis-campos-candidato-unidad-pueblo-canario-no-le-hemos-fallado-gente-hemos-sido-capaces-entender-momento-historico_1_13625226.html): «Fuimos nosotros los que planteamos introducir en ese pacto [el Pacto Canario por las Migraciones] la modificación del artículo 35 de la Ley de Extranjería, para que los menores extranjeros que llegaban a Canarias pudieran ser derivados no a través de esa solidaridad que nunca existió, sino que fuera obligatoria esa derivación cuando aquí tuviéramos nuestros recursos tensionados». La condición de saturación es del mismo tipo que la del programa de Coalición Canaria (−2: «Cuando un territorio de primera acogida supere los umbrales previstos»). Propone expresamente que el traslado de los migrantes, menores incluidos, al resto del Estado sea obligatorio, y lo presenta como esencial: lo contrario de suprimir el reparto obligatorio de los menores, −2, como Podemos («Sistema obligatorio y solidario de distribución de menores migrantes no acompañados», medida propia) y Coalición Canaria («Solidaridad obligatoria y automática», que aplica a los menores). No es el caso del Frente Amplio (−1): un «acuerdo marco vinculante» entre comunidades, otro instrumento, en una subordinada y sin prioridad. Que la propuesta abarque también a los adultos amplía el reparto, no lo matiza. Precedencia: el programa de UPC (19-nov) defiende en el eje 13 (p. 16) «la corresponsabilidad entre territorios» y pide «una distribución solidaria de las responsabilidades de acogida» de la infancia migrante no acompañada sin decir si ha de ser obligatoria, y en el eje 7 (p. 10) pide fondos europeos para acoger a esos menores en Canarias; nada de ello contradice ni matiza la declaración, que trata la medida de forma más directa y es posterior, así que prevalece la declaración (criterio de verificacion_g6.json: PNV q11, q15 y q21; PP q22). Distinto del PP en q33, cuyo programa matiza expresamente («como respuesta principal») y prevalece sobre la declaración de Sémper.",
+    "sustituye": {
+     "pregunta": "q33",
+     "valor": -1,
+     "grupo": "g21"
+    },
+    "motivo_cambio": "Cambia el valor: −1 → −2, y la fuente: programa → campaña. En g21 era −1 porque el programa de UPC (19-nov, p. 16) pide «una distribución solidaria» del acogimiento de los menores sin decir que deba ser obligatoria, que es lo que separaba a UPC de Podemos y CC (−2). Campos, cabeza de lista y secretario general de NC-BC, propone el 23-nov la «derivación obligatoria» de los migrantes al resto del Estado, incluye expresamente a los menores y la llama «un elemento absolutamente esencial»: propuesta expresa y prioritaria, −2. El programa no lo contradice ni lo matiza, así que prevalece la declaración, que es más directa y posterior.",
+    "motivo_verificacion": "Verificación g25 (23-nov): valor −2 confirmado; nota completada. No citaba la entrevista de Campos en Canarias Ahora del 31-oct, la única de sus declaraciones que une en una frase a los menores y la obligatoriedad de su derivación (sin ella, el −2 descansaba solo en combinar las dos piezas del 23-nov), ni, en la precedencia, la «corresponsabilidad entre territorios» del eje 13 (p. 16) y los fondos europeos para la acogida de los menores en Canarias del eje 7 (p. 10), que tampoco contradicen ni matizan la declaración. Cita, URL, fecha, quien y formato sin cambios."
+   }
+  }
+ }
+}
