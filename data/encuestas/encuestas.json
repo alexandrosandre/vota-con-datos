@@ -44,6 +44,223 @@
   },
   "encuestas": [
     {
+      "id": "cis-2026-11-23",
+      "rol": "principal",
+      "sustituye": "cis-2026-11",
+      "rol_nota": "Escenario propio del CIS (ESCENARIOS_ENCUESTA en pipeline/build_fase2.py) en lugar de cis-2026-11 (macroencuesta 3584), por la regla de sustituir cada encuesta por la última publicada de la misma casa, como cis-2026-11 sustituyó a cis-2026-10. A diferencia del 3584, no publica escaños ni desglose por provincias. Entra también en la media: su campo termina el 17-11, dentro de la ventana de 21 días (el 3584, con campo hasta el 30-10, ya había salido de ella).",
+      "encuestadora": "Centro de Investigaciones Sociológicas (CIS)",
+      "cliente_medio": "CIS (estudio propio, organismo público)",
+      "estudio": "Estudio nº 3587 – Barómetro de noviembre 2026",
+      "fecha_publicacion": "2026-11-23",
+      "fecha_publicacion_nota": "Avance de resultados en cis.es el 23-11-2026 ('Avance de resultados del estudio 3587 ‘Barómetro de noviembre 2026’', fechado el 23 nov 2026 en la portada; nota 'Más del 75% de los españoles manifiesta su intención de ir a votar', 23 NOV 2026). No figuraba en la portada a las 08:47 UTC del 23-11; los PDF tienen HTTP Last-Modified Mon, 23 Nov 2026 10:54:14 GMT, y El País lo recoge a las 14:05 GMT. Publicado antes de la prohibición del 24-11.",
+      "trabajo_campo": {
+        "inicio": "2026-11-10",
+        "fin": "2026-11-17"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 8034,
+      "muestra_nota": "Ficha técnica (al principio de es3587mar.pdf): diseñada 8.000, realizada 8.034. La tabla de estimación dice (N) = 8.034.",
+      "metodo": "Entrevista telefónica asistida por ordenador (CATI); teléfonos fijos 13,2% y móviles 86,8%; cuotas de sexo y edad; afijación no proporcional por CCAA (mín. 200 entrevistas por comunidad, 20 en Ceuta y en Melilla); estratos CCAA × tamaño de hábitat (7 categorías); 1.688 municipios y 50 provincias. Ponderaciones PESO y PESOCCAA.",
+      "margen_error": "±1,1% (95,5%, P=Q, muestreo aleatorio simple) para el conjunto de la muestra",
+      "metodo_estimacion": "Método de escenarios, 'modelo bidimensional inercia-incertidumbre Alaminos-Tezanos'",
+      "base_porcentajes": "% sobre voto válido (estimación, con su intervalo); voto directo en % sobre censo (con su margen teórico de error, IC 95%)",
+      "estimacion_voto": [
+        {
+          "partido": "PSOE",
+          "pct": 34.4,
+          "voto_directo_pct_censo": 28.4,
+          "margen_error_voto_directo": "±1,0",
+          "intervalo_estimacion": "33,7 – 35,1"
+        },
+        {
+          "partido": "PP",
+          "pct": 24.7,
+          "voto_directo_pct_censo": 18.2,
+          "margen_error_voto_directo": "±0,8",
+          "intervalo_estimacion": "24,1 – 24,9"
+        },
+        {
+          "partido": "VOX",
+          "pct": 15.6,
+          "voto_directo_pct_censo": 11.6,
+          "margen_error_voto_directo": "±0,7",
+          "intervalo_estimacion": "15,2 – 16,0"
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 5.7,
+          "voto_directo_pct_censo": 4.1,
+          "margen_error_voto_directo": "±0,4",
+          "intervalo_estimacion": "5,6 – 5,9",
+          "nota": "Nota F de los marginales: incluye las menciones a Frente Amplio, Movimiento Sumar, IU, Más País, Catalunya en Comú, CHA, Izquierda Asturiana, Recortes Cero, Batzarre, Más Madrid, Iniciativa del Pueblo Andaluz y Verdes-Equo; en la C. Valenciana, Canarias y Baleares esas menciones van a Compromís: Front Valencià, UPC y Ara Més-Front Ampli."
+        },
+        {
+          "partido": "ERC-Podemos",
+          "pct": 2.7,
+          "voto_directo_pct_censo": 2.1,
+          "margen_error_voto_directo": "±0,3",
+          "intervalo_estimacion": "2,6 – 2,8",
+          "nota": "Nota ** del CIS: 'Aunque ERC y Podemos no concurren formalmente en coalición electoral, ambas formaciones realizan una campaña conjunta en Cataluña' En Cataluña la opción ERC incluye las menciones a Podemos (nota F)."
+        },
+        {
+          "partido": "EH-Bildu",
+          "pct": 1.8,
+          "voto_directo_pct_censo": 1.5,
+          "margen_error_voto_directo": "±0,3",
+          "intervalo_estimacion": "1,8 – 1,9"
+        },
+        {
+          "partido": "Compromís: Front Valencià",
+          "pct": 1.8,
+          "voto_directo_pct_censo": 1.5,
+          "margen_error_voto_directo": "±0,3",
+          "intervalo_estimacion": "1,7 – 1,8"
+        },
+        {
+          "partido": "Se Acabó la Fiesta",
+          "pct": 1.8,
+          "voto_directo_pct_censo": 1.3,
+          "margen_error_voto_directo": "±0,2",
+          "intervalo_estimacion": "1,7 – 1,8"
+        },
+        {
+          "partido": "Adelante Andalucía",
+          "pct": 1.7,
+          "voto_directo_pct_censo": 1.4,
+          "margen_error_voto_directo": "±0,3",
+          "intervalo_estimacion": "1,7 – 1,8"
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.1,
+          "voto_directo_pct_censo": 1.0,
+          "margen_error_voto_directo": "±0,2",
+          "intervalo_estimacion": "1,1 – 1,2"
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.0,
+          "voto_directo_pct_censo": 0.8,
+          "margen_error_voto_directo": "±0,2",
+          "intervalo_estimacion": "1,0 – 1,0"
+        },
+        {
+          "partido": "Podemos",
+          "pct": 0.8,
+          "voto_directo_pct_censo": 0.5,
+          "margen_error_voto_directo": "±0,2",
+          "intervalo_estimacion": "0,8 – 0,8",
+          "nota": "Podemos donde concurre en solitario; en Cataluña, C. Valenciana, Canarias y Baleares sus menciones van a ERC, Compromís, UPC y Ara Més (nota F)."
+        },
+        {
+          "partido": "EAJ-PNV",
+          "pct": 0.7,
+          "voto_directo_pct_censo": 0.5,
+          "margen_error_voto_directo": "±0,2",
+          "intervalo_estimacion": "0,7 – 0,7"
+        },
+        {
+          "partido": "UPC",
+          "pct": 0.4,
+          "voto_directo_pct_censo": 0.2,
+          "margen_error_voto_directo": "±0,1",
+          "intervalo_estimacion": "0,3 – 0,4",
+          "nombre_publicado": "UPC (Unidad del Pueblo Canario)"
+        },
+        {
+          "partido": "Ara Més-Front Ampli",
+          "pct": 0.3,
+          "voto_directo_pct_censo": 0.3,
+          "margen_error_voto_directo": "±0,1",
+          "intervalo_estimacion": "0,3 – 0,3",
+          "nombre_publicado": "Aramés-Front Ampli"
+        },
+        {
+          "partido": "CC-Municipalistas Primero Canarias",
+          "pct": 0.3,
+          "voto_directo_pct_censo": 0.2,
+          "margen_error_voto_directo": "±0,1",
+          "intervalo_estimacion": "0,3 – 0,3",
+          "nota": "Incluye las menciones a CCa (nota F)."
+        },
+        {
+          "partido": "Democracia 21",
+          "pct": 0.1,
+          "voto_directo_pct_censo": 0.1,
+          "margen_error_voto_directo": "±0,1",
+          "intervalo_estimacion": "0,1 – 0,1",
+          "nota": "Primera aparición en una estimación del CIS en esta serie. Se ignora en la proyección (IGNORADAS en pipeline/build_fase2.py). Según la nota F de los marginales (es3587mar.pdf), en las provincias de Barcelona y Madrid la opción 'Democracia 21' incluye las menciones a Ciudadanos."
+        },
+        {
+          "partido": "Otros partidos",
+          "pct": 4.4,
+          "voto_directo_pct_censo": 2.3,
+          "margen_error_voto_directo": "±0,3",
+          "intervalo_estimacion": "3,9 – 4,7",
+          "tipo": "otros"
+        },
+        {
+          "partido": "En blanco",
+          "pct": 0.7,
+          "voto_directo_pct_censo": 2.2,
+          "margen_error_voto_directo": "±0,3",
+          "tipo": "blanco",
+          "nota": "Sin intervalo publicado ('-')."
+        }
+      ],
+      "voto_directo_sin_estimacion": [
+        {
+          "respuesta": "Voto nulo",
+          "voto_directo_pct_censo": 0.9,
+          "margen_error_voto_directo": "±0,2"
+        },
+        {
+          "respuesta": "Abstención (“No votaría”)",
+          "voto_directo_pct_censo": 3.8,
+          "margen_error_voto_directo": "±0,4"
+        },
+        {
+          "respuesta": "No sabe",
+          "voto_directo_pct_censo": 13.8,
+          "margen_error_voto_directo": "±0,8"
+        },
+        {
+          "respuesta": "No contesta",
+          "voto_directo_pct_censo": 3.0,
+          "margen_error_voto_directo": "±0,4"
+        }
+      ],
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "Suma de la columna de estimación (19 filas, blanco incluido). El CIS advierte que por redondeo puede no ser exactamente 100.",
+      "proyeccion_escanos": null,
+      "proyeccion_escanos_nota": "El CIS no publica proyección de escaños en el barómetro (sí lo hizo en la macroencuesta 3584).",
+      "discrepancias_fuente": "Ninguna en las cifras: la nota del CIS en su portada da PSOE 34,4, PP 24,7, VOX 15,6 y Frente Amplio 5,7, igual que la tabla de estimación. El intervalo del PP (24,1 – 24,9) no está centrado en su estimación (24,7), como publica el CIS.",
+      "desglose_regional": null,
+      "desglose_regional_nota": "El avance no publica estimación por CCAA ni por provincia (los microdatos incluyen la ponderación PESOCCAA).",
+      "urls": {
+        "primarias": [
+          "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3587-bar%C3%B3metro-de-noviembre-2026-",
+          "https://www.cis.es/documents/d/guest/3587_estimacion-pdf",
+          "https://www.cis.es/documents/d/guest/es3587mar_a-pdf"
+        ],
+        "secundarias": [],
+        "descubrimiento_nota": "Localizado en el bloque 'Últimos datos' de la portada de cis.es el 23-11 a las 19:44 UTC. Ninguna cifra sale de agregadores."
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/cis/3587_Estimacion.pdf",
+        "data/sources/encuestas/cis/es3587mar.pdf",
+        "data/sources/encuestas/cis/avance_3587_20261123.html",
+        "data/sources/encuestas/cis/home_20261123.html"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/cis/3587_Estimacion.pdf": "1f3e9bb2545994c9e88c1f2101177ec5f4faa46994e5ce7102f8fd211190d42f",
+        "data/sources/encuestas/cis/es3587mar.pdf": "6e36865f3ab9e490e785103aa6f75e03739990d1ccebb1d0835457a7c7330126",
+        "data/sources/encuestas/cis/avance_3587_20261123.html": "d0f7d389ec7d6540437b24fa6a26bf4274a00bf8d76168b1f853daf6506170f3",
+        "data/sources/encuestas/cis/home_20261123.html": "c8262192e2ba699371d00eb72de42b483cbe2d77ad09b2da57b15a0b68b15dfd"
+      },
+      "verificado_en_fuente_primaria": true
+    },
+    {
       "id": "cis-2026-11",
       "rol": "principal",
       "sustituye": "cis-2026-10",
@@ -1768,6 +1985,167 @@
         "data/sources/encuestas/cis/es3582mar.pdf",
         "data/sources/encuestas/cis/barometro_octubre_2026.html"
       ],
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "sigmados-2026-11-23",
+      "rol": "principal",
+      "sustituye": [
+        "sigmados-2026-11-22",
+        "sigmados-2026-11-21"
+      ],
+      "rol_nota": "Escenario propio de Sigma Dos (ESCENARIOS_ENCUESTA en pipeline/build_fase2.py) en lugar de sigmados-2026-11-21: como esa y las entregas del tracking, la infografía publica el porcentaje y la horquilla de todos los partidos con escaño. Entra también en la media como la última de Sigma Dos (sustituye ahí a sigmados-2026-11-22, que solo daba el porcentaje de PP, PSOE, Vox, Frente Amplio y Podemos).",
+      "encuestadora": "Sigma Dos",
+      "cliente_medio": "El Mundo",
+      "estudio": "Tracking electoral diario de Sigma Dos para EL MUNDO. Entrega final, antes de la prohibición de publicar encuestas (infografía 'Intención de voto. Panel El Mundo-Sigma Dos. Tracking 23 de noviembre')",
+      "fecha_publicacion": "2026-11-23",
+      "fecha_publicacion_nota": "Artículo de El Mundo 'El ‘tracking’ final del 29-N: PP y Vox entran en los últimos días de campaña con una mayoría asentada entre 182 y 193 diputados' (Miguel Riaño; datePublished y dateModified 2026-11-23T18:59:13Z, 19:59 hora peninsular del 23-11, antes de la prohibición que empieza a las 00:00 del 24-11), con el gráfico rotulado 'Tracking 23 de noviembre' (tracking/23n646.jpg). El artículo incrusta la serie Datawrapper QBCLv v29, que redirige a la v30 (publishedAt 2026-11-23T18:27:47Z); los datos de ambas son idénticos.",
+      "trabajo_campo": {
+        "inicio": "2026-11-16",
+        "fin": "2026-11-23"
+      },
+      "trabajo_campo_nota": "Ficha técnica: 'Fecha del Trabajo de Campo: 16 al 23 de noviembre de 2026' y '750 entrevistas diarias (días 16, 17, 18, 19, 20, 21 y 23)'; el domingo 22-11 no figura. El texto: '5.252 entrevistas entre el 16 y el 23 de noviembre'. Las del 20, 21 y 23-11 (y parte de las del 19-11) son posteriores al debate cara a cara del 19-11.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 5252,
+      "muestra_nota": "Ficha técnica: 'Tamaño muestral estimación 23/11/26: 5252' (7 × 750 = 5.250).",
+      "metodo": "Mixto: telefónico (CATI, selección aleatoria de hogar y cuotas de sexo y edad) y online (CAWI, Panel Sigma Dos by Trust Survey, asignación proporcional por sexo y grupo de edad); distribución proporcional por CCAA (ficha técnica publicada en El Mundo). Indecisos 'en torno al 13,1%'; participación estimada 76,9% (texto).",
+      "margen_error": "±2,1% (95,5%, P=Q)",
+      "base_porcentajes": "% de 'intención de voto' / estimación (Sigma Dos no indica la base; se asume voto válido)",
+      "suma_pct_publicada": 95.9,
+      "suma_pct_nota": "Suma de los porcentajes registrados (Frente Amplio 7,1 como bloque y Podemos 0,6 incluidos; sin sumar los componentes del Frente Amplio). El Mundo no publica otros ni blanco.",
+      "proyeccion_escanos": "horquillas (ver estimacion_voto)",
+      "proyeccion_escanos_nota": "Horquillas de la infografía tracking/23n646.jpg. El texto da las mismas para PP 124-130, Vox 58-63, PSOE 114-120, Frente Amplio 11-14 (7-9 de la marca nacional, 1 de la coalición canaria y 3-4 del Front Valencià), ERC 10-12, Junts 3-4, Bildu 6-7, PNV 3-4, BNG 2-3 y Adelante Andalucía 4-5. PP+Vox: 'entre 182 y 193 representantes' (124 + 58 y 130 + 63) y '49,7% del voto' (31,9 + 17,8). CCa 0-1 solo en la infografía.",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.9,
+          "escanos_min": 124,
+          "escanos_max": 130,
+          "nota": "Texto: 'El Partido Popular de Alberto Núñez Feijóo recabaría hoy un 31,9% de los votos y lograría entre 124 y 130 escaños'."
+        },
+        {
+          "partido": "PSOE",
+          "pct": 28.6,
+          "escanos_min": 114,
+          "escanos_max": 120
+        },
+        {
+          "partido": "Vox",
+          "pct": 17.8,
+          "escanos_min": 58,
+          "escanos_max": 63
+        },
+        {
+          "partido": "Frente Amplio",
+          "nombre_publicado": "FA",
+          "pct": 7.1,
+          "escanos_min": 11,
+          "escanos_max": 14,
+          "nota": "Bloque completo, como en las entregas del 13 al 21-11. Infografía 'FA 7,1% (11-14)'. Texto: 'El Frente Amplio de Ada Colau no levanta cabeza y se enquista en el 5%, con entre 7 y 9 representantes. Sumaría otro de la coalición canaria y 3-4 del Front Valencià que lidera Compromís. En total, un 7,1% y una expectativa de entre 11 y 14 diputados'. build_fase2.py lo trata como bloque completo, Compromís incluido. No sumar los componentes además de esta fila.",
+          "componentes": [
+            {
+              "partido": "Frente Amplio (marca nacional)",
+              "pct": 5.0,
+              "escanos_min": 7,
+              "escanos_max": 9,
+              "nota": "Texto: 'se enquista en el 5%, con entre 7 y 9 representantes'."
+            },
+            {
+              "partido": "UPC",
+              "escanos_min": 1,
+              "escanos_max": 1,
+              "nota": "Texto: 'Sumaría otro de la coalición canaria'. Porcentaje no publicado."
+            },
+            {
+              "partido": "Front Valencià (FV)",
+              "escanos_min": 3,
+              "escanos_max": 4,
+              "nota": "Texto: '3-4 del Front Valencià que lidera Compromís'. Porcentaje no publicado."
+            }
+          ]
+        },
+        {
+          "partido": "Podemos",
+          "pct": 0.6,
+          "nota": "Texto ('Podemos, absolutamente fuera de juego con un 0,6%, tampoco aportaría ningún escaño a la izquierda más allá de los que pudiera conseguir en su coalición con ERC por Barcelona o en la candidatura unitaria de Alicante') y serie Datawrapper QBCLv v29/v30 (fila 23/11/2026: 0,6); no aparece en la infografía. Sin horquilla propia publicada."
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.7,
+          "escanos_min": 10,
+          "escanos_max": 12
+        },
+        {
+          "partido": "Bildu",
+          "pct": 1.6,
+          "escanos_min": 6,
+          "escanos_max": 7
+        },
+        {
+          "partido": "AA",
+          "pct": 1.8,
+          "escanos_min": 4,
+          "escanos_max": 5,
+          "nota": "Rotulada 'AA' (Adelante Andalucía) en la infografía. Texto: 'Adelante Andalucía entraría con mucha fuerza: un 1,8% a nivel nacional y 4 o 5 diputados'."
+        },
+        {
+          "partido": "PNV",
+          "pct": 0.9,
+          "escanos_min": 3,
+          "escanos_max": 4
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.1,
+          "escanos_min": 2,
+          "escanos_max": 3
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.4,
+          "escanos_min": 3,
+          "escanos_max": 4
+        },
+        {
+          "partido": "CCa",
+          "pct": 0.4,
+          "escanos_min": 0,
+          "escanos_max": 1
+        }
+      ],
+      "discrepancias_fuente": "Ninguna en las cifras: los porcentajes de PP, PSOE, Vox, Frente Amplio y Podemos coinciden en texto, infografía y serie Datawrapper QBCLv v29/v30 (fila 23/11/2026: 31,9, 28,6, 17,8, 7,1, 0,6), y las horquillas del texto coinciden con la infografía. Desde la v28 la serie fecha cada entrega por su día de publicación web: la del 21-11 (sigmados-2026-11-21, antes fila 22/11) pasa a 21/11 y la del 22-11 (sigmados-2026-11-22, antes fila 23/11: 31,7, 28,3, 17,9, 7,2, 0,7) pasa a 22/11; la fila 23/11 es esta entrega. 'Vox [...] ha caído un 1,8% desde el arranque de la serie' (19,6 el 12-11 → 17,8). La ficha incluye el 23-11 como día de campo, el mismo día de la publicación.",
+      "contexto": "Tracking final de Sigma Dos para El Mundo antes de la prohibición de publicar encuestas: el PP (31,9 %, 124-130) mantiene la primera plaza y PP y Vox (17,8 %, 58-63) suman el 49,7 % y entre 182 y 193 diputados. El PSOE sube al 28,6 % (114-120). El Frente Amplio se queda en el 7,1 % con sus confluencias (11-14) y Podemos en el 0,6 %. ERC 10-12, Junts 3-4, Bildu 6-7, PNV 3-4, BNG 2-3 y Adelante Andalucía 4-5. Participación estimada del 76,9 % e indecisos en torno al 13,1 %.",
+      "desglose_regional": null,
+      "desglose_regional_nota": "Esta entrega no publica desglose territorial.",
+      "urls": {
+        "primarias": [
+          "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/23/6b048219e9cf4a411a8b4580.html",
+          "https://e01-elmundo.uecdn.es/elmundo/2026/graficos/nov/tracking/23n646.jpg",
+          "https://datawrapper.dwcdn.net/QBCLv/29/"
+        ],
+        "secundarias": [],
+        "descubrimiento_nota": "Localizado en la portada de elmundo.es y en las secciones de elecciones generales y de Encuestas el 23-11 a las 19:44 UTC (enlace 'Sondeo elecciones'). Ninguna cifra sale de agregadores."
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/sigmados/elmundo_20261123.html",
+        "data/sources/encuestas/sigmados/elmundo_20261123.txt",
+        "data/sources/encuestas/sigmados/img_elmundo_tracking23n646_20261123.jpg",
+        "data/sources/encuestas/sigmados/img_elmundo_tracking23n646_20261123.txt",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v29.html",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v29_dataset.csv",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v30.html",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v30_dataset.csv"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/sigmados/elmundo_20261123.html": "857c21e5b608575ce6fd7368d646ee61b354f8d432e40a19a625665b9612e761",
+        "data/sources/encuestas/sigmados/elmundo_20261123.txt": "43ca19b377189218fea544770954bb3982f06d9266164522104f6d5b87f37202",
+        "data/sources/encuestas/sigmados/img_elmundo_tracking23n646_20261123.jpg": "079db277f557724806a2aa383d61a8c1737d6d06e86537e07856f9ce939516de",
+        "data/sources/encuestas/sigmados/img_elmundo_tracking23n646_20261123.txt": "f89e829d4b378e6d904ccaf4ccadac8755ce7b6dc70bd978831e041d0c107f64",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v29.html": "5fc0f6442d4feb451daf887584a24d9ef65750634516cdaf676b6356ef350ec3",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v29_dataset.csv": "e8fb590530b71efc5ecdfaf8dd8181fe18f51ce196e1b41b59e36595de75fe68",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v30.html": "734445960631fe214886ec17d4801c92bd71400af18bd6b46726afdc089d8388",
+        "data/sources/encuestas/sigmados/dw_QBCLv_v30_dataset.csv": "e8fb590530b71efc5ecdfaf8dd8181fe18f51ce196e1b41b59e36595de75fe68"
+      },
       "verificado_en_fuente_primaria": true
     },
     {

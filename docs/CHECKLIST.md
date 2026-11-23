@@ -215,6 +215,19 @@ Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. 
 de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
 BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
+**Revisión del 23-nov, 20:43 (últimas encuestas antes de la prohibición del 24-nov):** dos encuestas publicadas el 23-nov,
+con verificación independiente contra las copias (sha256, cifras y mapeo de etiquetas). Sigma Dos, tracking final (campo
+16-23 nov, n=5.252), publica porcentaje y horquilla de todos los partidos con escaño, así que pasa a ser el escenario de
+Sigma Dos y la última de Sigma Dos en la media. CIS, barómetro de noviembre (estudio 3587; campo 10-17 nov, n=8.034;
+PSOE 34,4, PP 24,7, Vox 15,6): da el porcentaje de todos los partidos, así que con el mismo criterio que las demás
+empresas sustituye a la macroencuesta 3584 como escenario del CIS. Entra además en la media, de la que el 3584 ya había
+salido por antigüedad. «Democracia 21» se ignora en la proyección. Media con 11 empresas: PP 127, PSOE 95, Vox 64 (antes
+130, 92 y 65). Registro 385 → 392 con revisión independiente: UPN-PP en Navarra (deducción estatal del IRPF para celíacos,
+Ley Nacional de Cuidados Paliativos, Fondo Estatal de Enfermedades Raras; nota conjunta, cuenta para UPN y para el PP) y
+BNG (Centro de Alto Rendimiento de Xeve). Se rechaza la nota de Ibarrola sobre la valoración de la discapacidad
+(competencia foral). UPN sigue sin programa. BOE sin novedades. La JEC celebró sesión el 23-nov (acuerdos 425-451) sin
+nada sobre candidaturas. Paso 1 sin posiciones nuevas. Dominio y HTTPS correctos.
+
 **Revisión del 23-nov, 09:43:** encuestas, último día de publicación, con verificación independiente contra las copias.
 Sigma Dos del 22-nov (publicada a las 22:34; campo 16-21 nov) sustituye a la del 21-nov en la media, con su desglose
 provincial. No pasa a ser escenario porque solo publica el porcentaje de PP, PSOE, Vox, Frente Amplio y Podemos; como
