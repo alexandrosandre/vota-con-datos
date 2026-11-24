@@ -215,6 +215,12 @@ Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. 
 de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
 BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
+**Revisión del 24-nov, 09:47:** encuestas no (prohibición en vigor desde las 00:00). UPN sigue sin programa (upn.org,
+upn-pp.es y sus canales públicos sin novedades). Registro sin entradas nuevas (392): las candidatas ya estaban
+registradas, ya son ley (Ley 19/1994) o no concretan la medida (cambios_2026-11-24.md). Paso 1 sin posiciones nuevas.
+BOE del 23 y 24-nov sin correcciones ni resoluciones sobre candidaturas; la JEC no ha celebrado sesión después de la del
+23-nov. Dominio y HTTPS correctos.
+
 **24-nov, 09:40 (prohibición de encuestas):** la reconstrucción programada del 23-nov a las 22:05 salió con 8 h de retraso
 (06:15) y falló, así que el fichero de datos publicado aún llevaba las encuestas (el paso 3 ya solo mostraba 2023 en
 el navegador). Dos fallos corregidos, con test: un test exigía algún escenario de encuesta, y conservar_versiones.py
