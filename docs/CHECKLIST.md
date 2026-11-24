@@ -215,6 +215,13 @@ Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. 
 de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
 BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
+**24-nov, 09:40 (prohibición de encuestas):** la reconstrucción programada del 23-nov a las 22:05 salió con 8 h de retraso
+(06:15) y falló, así que el fichero de datos publicado aún llevaba las encuestas (el paso 3 ya solo mostraba 2023 en
+el navegador). Dos fallos corregidos, con test: un test exigía algún escenario de encuesta, y conservar_versiones.py
+habría vuelto a publicar las 7 versiones anteriores, con encuestas; durante la prohibición ya no las conserva.
+**29-nov, 20:13:** la reconstrucción programada de las 20:10 puede retrasarse igual; la revisión la lanza a mano
+(`gh workflow run pages.yml`) y comprueba que vuelven las encuestas.
+
 **Revisión del 23-nov, 20:43 (últimas encuestas antes de la prohibición del 24-nov):** dos encuestas publicadas el 23-nov,
 con verificación independiente contra las copias (sha256, cifras y mapeo de etiquetas). Sigma Dos, tracking final (campo
 16-23 nov, n=5.252), publica porcentaje y horquilla de todos los partidos con escaño, así que pasa a ser el escenario de

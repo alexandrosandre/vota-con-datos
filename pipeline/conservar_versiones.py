@@ -64,11 +64,35 @@ def main(dist: Path, base: str) -> None:
             assets = sorted(set(re.findall(r'/(assets/[A-Za-z0-9._-]+)', html.decode("utf-8", "replace"))))
             historial = [{"fecha": None, "datos": {}, "assets": assets}]
 
+    # Veda de encuestas (LOREG art. 69.7): no se vuelve a publicar ninguna versión anterior cuyos datos lleven
+    # escenarios que el nuevo despliegue ya no publica (las encuestas). Quien la tenga en caché ve el aviso de carga.
+    escenarios_actuales = None
+    ruta_f2 = actual["datos"].get("fase2.json")
+    if ruta_f2 and (dist / "data" / ruta_f2).exists():
+        f2 = json.loads((dist / "data" / ruta_f2).read_text())
+        if (f2.get("meta", {}).get("veda_encuestas") or {}).get("activa"):
+            escenarios_actuales = {e["id"] for e in f2.get("escenarios", [])}
+
+    def con_encuestas(version: dict) -> bool:
+        ruta = (version.get("datos") or {}).get("fase2.json")
+        if escenarios_actuales is None or not ruta or not RUTA_VALIDA.match(f"data/{ruta}"):
+            return False
+        contenido = descargar(f"{base}/data/{ruta}")
+        try:
+            ids = {e["id"] for e in json.loads(contenido).get("escenarios", [])} if contenido else set()
+        except (ValueError, KeyError, TypeError, AttributeError):
+            return True  # ilegible: ante la duda, no se conserva
+        return not ids <= escenarios_actuales
+
     vistos = {json.dumps(rutas(actual))}
     conservadas = []
     for v in historial:
         clave = json.dumps(rutas(v))
         if clave in vistos or not rutas(v):
+            continue
+        if con_encuestas(v):
+            print(f"  veda: no se conserva la versión del {v.get('fecha')} (datos con encuestas)")
+            vistos.add(clave)
             continue
         vistos.add(clave)
         conservadas.append(v)

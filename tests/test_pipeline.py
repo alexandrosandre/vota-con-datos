@@ -101,7 +101,8 @@ class TestEscenarios(unittest.TestCase):
                 con += 1
             else:
                 self.assertTrue(all(aa[i] in esc["sin_base"][i] for i in aa), esc["id"])
-        self.assertGreater(con, 0)
+        if not F2["meta"]["veda_encuestas"]["activa"]:  # en veda solo queda el escenario de 2023
+            self.assertGreater(con, 0)
 
     def test_solo_candidaturas_del_boe(self):
         boe = json.loads((ROOT / "data/boe/candidaturas_congreso.json").read_text())["circunscripciones"]
@@ -262,6 +263,46 @@ class TestDespliegueSinCortes(unittest.TestCase):
             m = json.loads((dist / "data" / "manifest.json").read_text())
             self.assertEqual(m["actual"]["assets"], ["assets/index-NUEVO.js"])
             self.assertEqual(m["historial"][0]["assets"], ["assets/index-VIEJO.js"])
+
+    def test_conservar_versiones_veda(self):
+        # LOREG 69.7: durante la veda no se vuelve a publicar ninguna versión anterior de los datos con encuestas
+        # (incidente del 24-nov: el despliegue habría copiado los fase2 de las versiones anteriores).
+        import tempfile
+        import conservar_versiones as cv
+        veda = {"activa": True, "inicio": "2026-11-24T00:00:00+01:00", "fin": "2026-11-29T20:00:00+01:00"}
+        with tempfile.TemporaryDirectory() as d:
+            dist = Path(d)
+            (dist / "assets").mkdir()
+            (dist / "assets" / "index-NUEVO.js").write_text("x")
+            (dist / "data" / "v").mkdir(parents=True)
+            (dist / "data" / "v" / "fase2-nuevo.json").write_text(json.dumps(
+                {"meta": {"veda_encuestas": veda}, "escenarios": [{"id": "g2023"}]}))
+            (dist / "data" / "manifest.json").write_text(json.dumps({"actual": {"datos": {"fase2.json": "v/fase2-nuevo.json"}}}))
+            con_encuestas = {"meta": {}, "escenarios": [{"id": "media"}, {"id": "g2023"}, {"id": "cis-2026-11-23"}]}
+            sin_encuestas = {"meta": {}, "escenarios": [{"id": "g2023"}]}
+            publicado = {
+                "actual": {"datos": {"fase2.json": "v/fase2-conenc.json", "fase1.json": "v/fase1-a.json"}, "assets": ["assets/index-A.js"]},
+                "historial": [{"datos": {"fase2.json": "v/fase2-sinenc.json", "fase1.json": "v/fase1-b.json"}, "assets": ["assets/index-B.js"]}],
+            }
+            ficheros = {"fase2-conenc.json": con_encuestas, "fase2-sinenc.json": sin_encuestas}
+
+            def falso(url, timeout=30):
+                if url.endswith("/data/manifest.json"):
+                    return json.dumps(publicado).encode()
+                nombre = url.rsplit("/", 1)[1]
+                return json.dumps(ficheros[nombre]).encode() if nombre in ficheros else b"contenido"
+
+            original = cv.descargar
+            cv.descargar = falso
+            try:
+                cv.main(dist, "https://ejemplo.org")
+            finally:
+                cv.descargar = original
+            self.assertFalse((dist / "data" / "v" / "fase2-conenc.json").exists())
+            self.assertFalse((dist / "assets" / "index-A.js").exists())
+            self.assertTrue((dist / "data" / "v" / "fase2-sinenc.json").exists())
+            m = json.loads((dist / "data" / "manifest.json").read_text())
+            self.assertEqual([v["assets"] for v in m["historial"]], [["assets/index-B.js"]])
 
 
 class TestVeda(unittest.TestCase):
