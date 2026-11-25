@@ -216,6 +216,14 @@ Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. 
 de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
 BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
+**Revisión del 25-nov, 20:43:** registro 392 → 396 con revisión independiente: Coalición Canaria 1 (equiparar las
+pensiones no contributivas a las mínimas, del «contrato» de CC-1ºCAN del 24-nov) y Ara Més-Front Ampli 2 (5 % del
+presupuesto no financiero a igualdad, que cuenta también para el Frente Amplio, y jornada de 32 horas, solo Ara Més
+porque el Frente Amplio ya la tiene por Compromís). Rechazadas: la reforma contra las «guerras ilegales» de Sánchez (ya
+la cubre la LO 5/2005) y una variante del BNG. Paso 1 sin posiciones nuevas. UPN sigue sin programa; BOE del 24 y 25-nov
+sin novedades en candidaturas; la JEC no ha celebrado sesión desde el 23-nov. Encuestas: no hay más publicadas antes del
+24-nov. Dominio y HTTPS correctos.
+
 **25-nov, encuestas de las otras 12 empresas (14–23 nov):** la revisión programada solo seguía a CIS, Sigma Dos, GAD3 y
 40dB. Barrido de las publicadas antes del 24-nov y verificación independiente en tres grupos: entran 29 (NC Report 2,
 IMOP 2, DYM, Target Point 2, Hamalgama, Ateneo del Dato, Data10 6, Winston, Celeste-Tel, More in Common, SW Demoscopia
