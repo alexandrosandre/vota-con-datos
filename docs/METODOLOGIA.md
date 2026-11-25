@@ -28,7 +28,7 @@ Casos especiales, todos explícitos en el fichero de mapeo:
 con trabajo de campo terminado en los últimos 21 días (`VENTANA_MEDIA`), cada una proyectada a las
 provincias como se explica abajo; la media simple (sin ponderar) de esas proyecciones, por
 candidatura y provincia, renormalizada. Una candidatura sin estimación en una encuesta se promedia
-con las que sí la estiman. Hace falta un mínimo de dos empresas; en veda no se publica.
+con las que sí la estiman. Hace falta un mínimo de dos empresas.
 
 **Escenarios de encuesta**: *swing* proporcional. `cuota_prov = cuota_base_prov × encuesta_nac /
 base_nac`. La etiqueta genérica "Sumar" de las encuestas se aplica como bloque a Frente Amplio,

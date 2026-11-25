@@ -261,9 +261,6 @@ export function Metodologia() {
               los dos (Podemos en Teruel y Ceuta), se lo queda entero. Una coalición nueva parte de lo que sacaron en 2023 los partidos que la
               forman: UPN-PP, de UPN y el PP; las coaliciones de Compromís y de Ara Més, de Sumar; la de NC-BC en Canarias, de Sumar y Nueva
               Canarias. Las candidaturas sin antecedente en 2023 aparecen «sin datos para estimarla».
-              <br />
-              Del 24 de noviembre hasta el cierre de los colegios el 29, la ley prohíbe publicar encuestas. En esos días solo se puede calcular
-              con los resultados de 2023.
               <Tecnico>este traslado proporcional se conoce como «swing proporcional».</Tecnico>
             </li>
             <li>
@@ -318,8 +315,7 @@ export function Metodologia() {
             <li>Los compromisos de campaña son más breves que un programa. Por eso indicamos siempre de dónde sale cada posición.</li>
             <li>
               La probabilidad de escaño depende de los datos con que calcules (media de encuestas, una encuesta concreta o resultados de 2023):
-              ni el pasado ni las encuestas garantizan el resultado. Del 24 de noviembre al cierre de los colegios, la ley prohíbe publicar o
-              reproducir encuestas: en ese periodo la web solo calcula con los resultados de 2023.
+              ni el pasado ni las encuestas garantizan el resultado.
             </li>
             <li>
               Los modelos de IA pueden equivocarse. Por eso todo se puede revisar y cualquier persona puede{' '}

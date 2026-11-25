@@ -242,12 +242,8 @@ export function Cuenta() {
   const pref = partidoPreferido.value;
   const circs = useMemo(() => [...d.circunscripciones].sort((a, b) => a.nombre.localeCompare(b.nombre, 'es')), [d]);
   const circ = circs.find((c) => c.ine === e.circ) ?? null;
-  // Veda de encuestas (LOREG art. 69.7): también en el navegador, por si los datos en caché son anteriores.
-  const v = d.meta.veda_encuestas;
-  const ahora = Date.now();
-  const enVeda = !!v && ahora >= Date.parse(v.inicio) && ahora < Date.parse(v.fin);
-  const escenarios = enVeda ? d.escenarios.filter((x) => x.id === 'g2023') : d.escenarios;
-  // Por defecto, el primero: la media de encuestas (o 2023 durante la veda).
+  const escenarios = d.escenarios;
+  // Por defecto, el primero: la media de encuestas.
   const esc = escenarios.find((x) => x.id === e.escenario) ?? escenarios[0];
   const filas = useMemo(() => (circ ? calcular(circ, esc) : []), [circ, esc]);
 
@@ -396,12 +392,6 @@ export function Cuenta() {
 
       <div class="card selector-p3">{formulario}</div>
 
-      {enVeda && (
-        <div class="note" style={{ marginTop: 14 }}>
-          Del 24 de noviembre hasta el cierre de los colegios electorales, la ley electoral prohíbe publicar o reproducir encuestas (artículo
-          69.7 de la Ley Orgánica del Régimen Electoral General). Por eso ahora solo puedes calcular con los resultados de 2023.
-        </div>
-      )}
       {circ && (
         <div class="stack" style={{ marginTop: 18 }}>
           {noSePresenta && (

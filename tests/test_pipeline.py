@@ -5,9 +5,7 @@ import json
 import sys
 import unittest
 from collections import defaultdict
-from datetime import datetime
 from pathlib import Path
-from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "pipeline"))
@@ -20,7 +18,6 @@ F2 = json.loads((ROOT / "web/public/data/fase2.json").read_text())
 G23 = json.loads((ROOT / "data/resultados/generales_2023.json").read_text())["circunscripciones"]
 E24 = json.loads((ROOT / "data/resultados/europeas_2024.json").read_text())["circunscripciones"]
 BASE = next(e for e in F2["escenarios"] if e["id"] == "g2023")
-MAD = ZoneInfo("Europe/Madrid")
 
 
 def votos_base(ine, partido):
@@ -101,8 +98,7 @@ class TestEscenarios(unittest.TestCase):
                 con += 1
             else:
                 self.assertTrue(all(aa[i] in esc["sin_base"][i] for i in aa), esc["id"])
-        if not F2["meta"]["veda_encuestas"]["activa"]:  # en veda solo queda el escenario de 2023
-            self.assertGreater(con, 0)
+        self.assertGreater(con, 0)
 
     def test_solo_candidaturas_del_boe(self):
         boe = json.loads((ROOT / "data/boe/candidaturas_congreso.json").read_text())["circunscripciones"]
@@ -264,55 +260,6 @@ class TestDespliegueSinCortes(unittest.TestCase):
             self.assertEqual(m["actual"]["assets"], ["assets/index-NUEVO.js"])
             self.assertEqual(m["historial"][0]["assets"], ["assets/index-VIEJO.js"])
 
-    def test_conservar_versiones_veda(self):
-        # LOREG 69.7: durante la veda no se vuelve a publicar ninguna versión anterior de los datos con encuestas
-        # (incidente del 24-nov: el despliegue habría copiado los fase2 de las versiones anteriores).
-        import tempfile
-        import conservar_versiones as cv
-        veda = {"activa": True, "inicio": "2026-11-24T00:00:00+01:00", "fin": "2026-11-29T20:00:00+01:00"}
-        with tempfile.TemporaryDirectory() as d:
-            dist = Path(d)
-            (dist / "assets").mkdir()
-            (dist / "assets" / "index-NUEVO.js").write_text("x")
-            (dist / "data" / "v").mkdir(parents=True)
-            (dist / "data" / "v" / "fase2-nuevo.json").write_text(json.dumps(
-                {"meta": {"veda_encuestas": veda}, "escenarios": [{"id": "g2023"}]}))
-            (dist / "data" / "manifest.json").write_text(json.dumps({"actual": {"datos": {"fase2.json": "v/fase2-nuevo.json"}}}))
-            con_encuestas = {"meta": {}, "escenarios": [{"id": "media"}, {"id": "g2023"}, {"id": "cis-2026-11-23"}]}
-            sin_encuestas = {"meta": {}, "escenarios": [{"id": "g2023"}]}
-            publicado = {
-                "actual": {"datos": {"fase2.json": "v/fase2-conenc.json", "fase1.json": "v/fase1-a.json"}, "assets": ["assets/index-A.js"]},
-                "historial": [{"datos": {"fase2.json": "v/fase2-sinenc.json", "fase1.json": "v/fase1-b.json"}, "assets": ["assets/index-B.js"]}],
-            }
-            ficheros = {"fase2-conenc.json": con_encuestas, "fase2-sinenc.json": sin_encuestas}
-
-            def falso(url, timeout=30):
-                if url.endswith("/data/manifest.json"):
-                    return json.dumps(publicado).encode()
-                nombre = url.rsplit("/", 1)[1]
-                return json.dumps(ficheros[nombre]).encode() if nombre in ficheros else b"contenido"
-
-            original = cv.descargar
-            cv.descargar = falso
-            try:
-                cv.main(dist, "https://ejemplo.org")
-            finally:
-                cv.descargar = original
-            self.assertFalse((dist / "data" / "v" / "fase2-conenc.json").exists())
-            self.assertFalse((dist / "assets" / "index-A.js").exists())
-            self.assertTrue((dist / "data" / "v" / "fase2-sinenc.json").exists())
-            m = json.loads((dist / "data" / "manifest.json").read_text())
-            self.assertEqual([v["assets"] for v in m["historial"]], [["assets/index-B.js"]])
-
-
-class TestVeda(unittest.TestCase):
-    def test_limites(self):
-        f = build_fase2.en_veda
-        self.assertFalse(f(datetime(2026, 11, 23, 21, 59, tzinfo=MAD)))
-        self.assertTrue(f(datetime(2026, 11, 23, 22, 0, tzinfo=MAD)))  # margen de 2 h
-        self.assertTrue(f(datetime(2026, 11, 24, 0, 0, tzinfo=MAD)))
-        self.assertTrue(f(datetime(2026, 11, 29, 19, 59, tzinfo=MAD)))
-        self.assertFalse(f(datetime(2026, 11, 29, 20, 0, tzinfo=MAD)))
 
 
 class TestCitas(unittest.TestCase):

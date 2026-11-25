@@ -19,7 +19,7 @@ export interface Estado {
   partido: string | null;
   /** Temas que te importan más (ids de GRUPOS, temasImportantes.ts): sus afirmaciones cuentan el doble. */
   temasImportantes?: string[];
-  /** '' = el escenario por defecto (la media de encuestas, o 2023 durante la veda). */
+  /** '' = el escenario por defecto (la media de encuestas). */
   escenario: string;
   v?: number;
 }

@@ -96,7 +96,6 @@ def main():
             "notas": [
                 "escanos_max = máximo, entre escenarios, de los escaños del reparto central (sin banda de incertidumbre).",
                 "puestos_listados = escanos_max + 1, sin superar el número de titulares de la lista.",
-                "La lista de escenarios depende de fase2.json; durante la veda (LOREG art. 69.7) puede contener solo el de 2023.",
             ],
             "n_candidaturas": len(resumen),
             "n_personas": len(personas),

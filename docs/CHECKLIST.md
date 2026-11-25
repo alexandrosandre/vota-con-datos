@@ -116,7 +116,8 @@ desplegable, selector de papeletas del paso 3, icono) quedaron resueltas en los 
   y el TC inadmitió sus amparos el 12-nov; UPC sigue proclamada. PACMA quedó fuera en Barcelona (ya coincide con el
   BOE). No pude comprobar la lista de acuerdos de la JEC del 13 al 20-nov.
 - [ ] **5. [Externo → Yo] Encuestas nuevas** publicadas antes del 24-nov, desde su publicación original.
-  La veda (24-nov 00:00 → 29-nov 20:00) ya está automatizada en GitHub Actions.
+  Desde el 24-nov no se añade ninguna encuesta nueva (LOREG 69.7); las publicadas antes siguen en el paso 3
+  (decisión del editor, 25-nov).
 - [ ] **6. [Yo] Compromisos de campaña desde el 13-nov** (empieza la campaña), sobre todo para los partidos
   con menos posiciones en el paso 1: UPN (0/30), Ara Més (2), PSC (3), CC (4), NC-BC (5), PNV (7). La
   revisión programada recoge las promesas nuevas a diario. **Primer barrido hecho el 13-nov** (grupo g5,
@@ -215,6 +216,11 @@ Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. 
 de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
 BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
+**25-nov (decisión del editor):** la prohibición del art. 69.7 se aplica a publicar encuestas nuevas, no a las ya
+publicadas. El paso 3 vuelve a ofrecer la media y los escenarios de CIS, Sigma Dos, GAD3 y 40dB; se quita la retirada
+automática (pipeline, navegador, despliegue programado y conservar_versiones). La media sigue con su ventana de 21 días:
+9 empresas hoy y 5 el 29-nov.
+
 **Revisión del 24-nov, 09:47:** encuestas no (prohibición en vigor desde las 00:00). UPN sigue sin programa (upn.org,
 upn-pp.es y sus canales públicos sin novedades). Registro sin entradas nuevas (392): las candidatas ya estaban
 registradas, ya son ley (Ley 19/1994) o no concretan la medida (cambios_2026-11-24.md). Paso 1 sin posiciones nuevas.
@@ -225,8 +231,6 @@ BOE del 23 y 24-nov sin correcciones ni resoluciones sobre candidaturas; la JEC 
 (06:15) y falló, así que el fichero de datos publicado aún llevaba las encuestas (el paso 3 ya solo mostraba 2023 en
 el navegador). Dos fallos corregidos, con test: un test exigía algún escenario de encuesta, y conservar_versiones.py
 habría vuelto a publicar las 7 versiones anteriores, con encuestas; durante la prohibición ya no las conserva.
-**29-nov, 20:13:** la reconstrucción programada de las 20:10 puede retrasarse igual; la revisión la lanza a mano
-(`gh workflow run pages.yml`) y comprueba que vuelven las encuestas.
 
 **Revisión del 23-nov, 20:43 (últimas encuestas antes de la prohibición del 24-nov):** dos encuestas publicadas el 23-nov,
 con verificación independiente contra las copias (sha256, cifras y mapeo de etiquetas). Sigma Dos, tracking final (campo

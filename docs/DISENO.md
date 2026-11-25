@@ -68,4 +68,4 @@ queda donde se toma: al final.
 * Listas BOE: 3-nov (y correcciones posteriores).
 * Programas: según publiquen los partidos (campaña 13–27 nov). La fase 1 y la fase 3 se
   completan partido a partido; hasta entonces se indica "pendiente".
-* Encuestas: prohibida su publicación desde el 24-nov (LOREG art. 69.7).
+* Encuestas: no se añaden las publicadas desde el 24-nov (LOREG art. 69.7); las anteriores siguen en la web.
