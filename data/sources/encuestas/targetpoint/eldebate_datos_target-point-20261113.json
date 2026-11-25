@@ -1,0 +1,828 @@
+{
+	"date": "12 de noviembre",
+	"name": "Sondeo Target Point",
+	"electoral": {
+		"podemos": {
+			"percent": 1.6,
+			"seats": 1,
+			"seats_fork": "0-1",
+			"percent_2023": 0,
+			"seats_2023": 0
+		},
+		"sumar": {
+			"percent": 0,
+			"seats": 0,
+			"seats_fork": "0",
+			"percent_2023": 12.3,
+			"seats_2023": 31
+		},
+		"frente_amplio": {
+			"percent": 7.3,
+			"seats": 11,
+			"seats_fork": "11",
+			"percent_2023": 0,
+			"seats_2023": 0
+		},
+		"psoe": {
+			"percent": 27,
+			"seats": 112,
+			"seats_fork": "110-114",
+			"percent_2023": 31.7,
+			"seats_2023": 121
+		},
+		"otros": {
+			"percent": 12.7,
+			"seats": 33,
+			"seats_fork": "31-37",
+			"percent_2023": 10.6,
+			"seats_2023": 28
+		},
+		"pp": {
+			"percent": 30.6,
+			"seats": 127,
+			"seats_fork": "125-129",
+			"percent_2023": 33.1,
+			"seats_2023": 137
+		},
+		"vox": {
+			"percent": 18.7,
+			"seats": 66,
+			"seats_fork": "64-68",
+			"percent_2023": 12.4,
+			"seats_2023": 33
+		},
+		"salf": {
+			"percent": 2.1,
+			"seats": 0,
+			"seats_fork": "0",
+			"percent_2023": 0,
+			"seats_2023": 0
+		}
+	},
+	"vote_transfer": {
+		"nota_metodologica": "Trasvases de votantes con IDV + Simpatía por recuerdo de voto en 2023, por método IPF. Mide la retención y el destino de los votos de 2023. Votantes · márgenes fijos por estimación de voto y censo por recuerdo",
+		"origen": {
+			"descripcion": "Recuerdo de voto en 2023",
+			"nodos": [
+				{
+					"key": "pp"
+				},
+				{
+					"key": "psoe"
+				},
+				{
+					"key": "vox"
+				},
+				{
+					"key": "sumar"
+				},
+				{
+					"key": "erc"
+				},
+				{
+					"key": "junts"
+				},
+				{
+					"key": "pnv"
+				},
+				{
+					"key": "eh_bildu"
+				},
+				{
+					"key": "bng"
+				},
+				{
+					"key": "otros_blanco_nulo",
+					"name": "Otros, blanco y nulo",
+					"color": "#98a2b3"
+				},
+				{
+					"key": "abstuvo_2023",
+					"name": "Se abstuvo",
+					"color": "#667085"
+				},
+				{
+					"key": "nuevos_18",
+					"name": "Nuevos 18+ años",
+					"color": "#475467"
+				},
+				{
+					"key": "nuevos_derecho",
+					"name": "Nuevos x derecho",
+					"color": "#344054"
+				}
+			]
+		},
+		"destino": {
+			"descripcion": "Voto estimado ahora",
+			"nodos": [
+				{
+					"key": "pp"
+				},
+				{
+					"key": "psoe"
+				},
+				{
+					"key": "vox"
+				},
+				{
+					"key": "frente_amplio"
+				},
+				{
+					"key": "podemos"
+				},
+				{
+					"key": "salf"
+				},
+				{
+					"key": "erc"
+				},
+				{
+					"key": "junts"
+				},
+				{
+					"key": "pnv"
+				},
+				{
+					"key": "eh_bildu"
+				},
+				{
+					"key": "bng"
+				},
+				{
+					"key": "adelante_andalucia"
+				},
+				{
+					"key": "otros",
+					"name": "Otros",
+					"color": "#98a2b3"
+				},
+				{
+					"key": "blanco",
+					"name": "Voto en blanco",
+					"color": "#d0d5dd"
+				},
+				{
+					"key": "nulo",
+					"name": "Voto nulo",
+					"color": "#b0b7c3"
+				},
+				{
+					"key": "abstencion_indecisos",
+					"name": "Abstención / indecisos",
+					"color": "#667085"
+				}
+			]
+		},
+		"flujos": {
+			"pp": {
+				"pp": 5527305,
+				"psoe": 144674,
+				"vox": 1091326,
+				"frente_amplio": 13146,
+				"salf": 85321,
+				"otros": 168225,
+				"blanco": 34656,
+				"abstencion_indecisos": 228022
+			},
+			"psoe": {
+				"pp": 628968,
+				"psoe": 4879460,
+				"vox": 95481,
+				"frente_amplio": 291767,
+				"podemos": 59467,
+				"salf": 16628,
+				"erc": 123366,
+				"eh_bildu": 62875,
+				"adelante_andalucia": 244138,
+				"otros": 128595,
+				"blanco": 22037,
+				"nulo": 101215,
+				"abstencion_indecisos": 335701
+			},
+			"vox": {
+				"pp": 89153,
+				"psoe": 22741,
+				"vox": 2117702,
+				"salf": 109825,
+				"otros": 32782,
+				"abstencion_indecisos": 359570
+			},
+			"sumar": {
+				"pp": 40293,
+				"psoe": 659116,
+				"frente_amplio": 1456123,
+				"podemos": 131230,
+				"salf": 3131,
+				"adelante_andalucia": 176300,
+				"otros": 70011,
+				"nulo": 13797,
+				"abstencion_indecisos": 171019
+			},
+			"erc": {
+				"psoe": 45125,
+				"erc": 293479,
+				"junts": 21269,
+				"otros": 31306,
+				"abstencion_indecisos": 25315
+			},
+			"junts": {
+				"pp": 11001,
+				"psoe": 11073,
+				"erc": 61413,
+				"junts": 228921,
+				"otros": 11305,
+				"abstencion_indecisos": 29589
+			},
+			"pnv": {
+				"pp": 52160,
+				"psoe": 119034,
+				"pnv": 76597
+			},
+			"eh_bildu": {
+				"podemos": 12831,
+				"eh_bildu": 232944,
+				"otros": 29724,
+				"abstencion_indecisos": 24036
+			},
+			"bng": {
+				"psoe": 10282,
+				"bng": 127344
+			},
+			"otros_blanco_nulo": {
+				"pp": 201765,
+				"psoe": 130903,
+				"vox": 119179,
+				"frente_amplio": 96815,
+				"podemos": 10812,
+				"salf": 76530,
+				"erc": 20598,
+				"eh_bildu": 15829,
+				"adelante_andalucia": 40806,
+				"otros": 160024,
+				"blanco": 32749,
+				"nulo": 64779,
+				"abstencion_indecisos": 137322
+			},
+			"abstuvo_2023": {
+				"pp": 1180285,
+				"psoe": 682020,
+				"vox": 1145475,
+				"podemos": 157030,
+				"salf": 260864,
+				"erc": 269304,
+				"junts": 44619,
+				"pnv": 131528,
+				"eh_bildu": 65355,
+				"bng": 132812,
+				"abstencion_indecisos": 7116090
+			},
+			"nuevos_18": {
+				"pp": 74606,
+				"psoe": 250562,
+				"vox": 157654,
+				"frente_amplio": 36490,
+				"podemos": 40267,
+				"adelante_andalucia": 32882,
+				"otros": 47228,
+				"blanco": 129089,
+				"nulo": 107878,
+				"abstencion_indecisos": 404655
+			},
+			"nuevos_derecho": {
+				"pp": 156032,
+				"psoe": 71410,
+				"vox": 142373,
+				"abstencion_indecisos": 824178
+			}
+		},
+		"bajas_censo": {
+			"pp": 284541,
+			"psoe": 272653,
+			"vox": 106605,
+			"sumar": 106213,
+			"erc": 16200,
+			"junts": 13848,
+			"pnv": 9668,
+			"eh_bildu": 11627,
+			"bng": 5356,
+			"otros_blanco_nulo": 43243,
+			"abstuvo_2023": 436479
+		}
+	},
+	"candidates": {
+		"pp": 4.37,
+		"psoe": 3.8,
+		"vox": 3.68,
+		"frente_amplio": 2.96,
+		"podemos": 2.83,
+		"salf": 2.33
+	},
+	"main_worries": {
+		"title": "Principales problemas de España",
+		"values": {
+			"El coste de la vida": 69.8,
+			"La adquisición de vivienda": 63.2,
+			"La corrupción política": 62.9,
+			"La inmigración irregular masiva": 52.2,
+			"Los políticos y partidos": 47.4,
+			"La atención en la sanidad pública": 46.7,
+			"Las ocupaciones e inquiocupaciones' de viviendas": 40.6,
+			"El desempleo y la precariedad laboral": 37.4,
+			"Los impuestos y tasas": 35.5,
+			"La calidad de la educación pública": 34.8,
+			"La delincuencia e inseguridad": 32.0,
+			"La Justicia y sus procedimientos": 30.8,
+			"Las infraestructuras de transporte": 25.7,
+			"Las desigualdades sociales": 24.5,
+			"El cambio climático acelerado por la humanidad": 23.8,
+			"La burocracia administrativa": 22.8,
+			"El sistema público de pensiones": 21.7,
+			"La unidad de España y los separatismos territoriales": 21.0,
+			"El racismo, xenofobia y discriminaciones": 20.9,
+			"El volumen de funcionarios públicos": 20.7,
+			"Los medios de comunicación ideologizados": 19.4,
+			"La baja natalidad": 17.1,
+			"Los privilegios legales de algunos colectivos": 17.0,
+			"La contaminación y deforestación": 16.4,
+			"La despoblación y el abandono rural": 15.3,
+			"El envejecimiento demográfico": 14.5,
+			"Las adicciones a drogas y alcohol": 11.0,
+			"La dependencia de dispositivos digitales": 8.8
+		}
+	},
+	"questions": {
+		"colors": {
+			"red": "#c00000",
+			"dark_orange": "#ef6c00",
+			"orange": "#f9a825",
+			"yellow": "#ffd966",
+			"green": "#8bc34a",
+			"dark_green": "#2e7d32",
+			"grey": "#bfbfbf",
+			"dark_grey": "#808080"
+		},
+		"question1": {
+			"text": "El miércoles 11 de noviembre CCOO, UGT, CGT y los sindicatos de inquilinos celebraron una huelga general por la vivienda, los salarios y los precios. Fue a 18 días de las elecciones y dos semanas después del accidente de Urda. ¿Qué le ha parecido la huelga?",
+			"answers": {
+				"Justificada: la vivienda y los salarios lo merecen": {
+					"color": "dark_green",
+					"Total": 30.1,
+					"pp": 6.9,
+					"psoe": 66.4,
+					"vox": 3.6,
+					"frente_amplio": 56.6,
+					"podemos": 63.4
+				},
+				"Justa en el fondo, pero inoportuna en plena campaña": {
+					"color": "green",
+					"Total": 7.6,
+					"pp": 4.3,
+					"psoe": 13.4,
+					"vox": 4.1,
+					"frente_amplio": 8.9,
+					"podemos": 9.5
+				},
+				"Una huelga política para ayudar al PSOE": {
+					"color": "red",
+					"Total": 17,
+					"pp": 35.8,
+					"psoe": 3.6,
+					"vox": 34.3,
+					"frente_amplio": 0,
+					"podemos": 0
+				},
+				"Una falta de respeto tras la tragedia de Urda": {
+					"color": "red",
+					"Total": 3.1,
+					"pp": 4.2,
+					"psoe": 0.4,
+					"vox": 0.2,
+					"frente_amplio": 0,
+					"podemos": 15.3
+				},
+				"Poco creíble: los sindicatos han callado ante este Gobierno": {
+					"color": "dark_orange",
+					"Total": 15.1,
+					"pp": 23.4,
+					"psoe": 4.7,
+					"vox": 27.2,
+					"frente_amplio": 6.4,
+					"podemos": 0
+				},
+				"Inútil: no arreglará el problema de la vivienda": {
+					"color": "orange",
+					"Total": 12.6,
+					"pp": 14.6,
+					"psoe": 7.8,
+					"vox": 9.9,
+					"frente_amplio": 16.9,
+					"podemos": 3.4
+				},
+				"Un perjuicio para trabajadores, autónomos y empresas": {
+					"color": "yellow",
+					"Total": 7.2,
+					"pp": 10.6,
+					"psoe": 2.3,
+					"vox": 18.9,
+					"frente_amplio": 0,
+					"podemos": 1
+				},
+				"No lo sé": {
+					"color": "grey",
+					"Total": 7.2,
+					"pp": 0.2,
+					"psoe": 1.4,
+					"vox": 1.8,
+					"frente_amplio": 11.2,
+					"podemos": 7.5
+				}
+			}
+		},
+		"question2": {
+			"text": "¿Cree que la huelga general del miércoles 11 de noviembre ha sido un éxito o un fracaso?",
+			"answers": {
+				"Un éxito: ha tenido un seguimiento masivo": {
+					"color": "dark_green",
+					"Total": 11,
+					"pp": 4.4,
+					"psoe": 24.8,
+					"vox": 1.6,
+					"frente_amplio": 21.9,
+					"podemos": 31.1
+				},
+				"Un éxito: ha puesto la vivienda en el centro de la campaña": {
+					"color": "green",
+					"Total": 9.7,
+					"pp": 3.6,
+					"psoe": 23.8,
+					"vox": 1,
+					"frente_amplio": 22,
+					"podemos": 25.8
+				},
+				"Un éxito en la calle, pero no en los centros de trabajo": {
+					"color": "green",
+					"Total": 12.4,
+					"pp": 4.8,
+					"psoe": 19.3,
+					"vox": 2.1,
+					"frente_amplio": 17,
+					"podemos": 14.9
+				},
+				"Ni éxito ni fracaso": {
+					"color": "yellow",
+					"Total": 15.1,
+					"pp": 8.7,
+					"psoe": 14.7,
+					"vox": 11.4,
+					"frente_amplio": 20.6,
+					"podemos": 7.9
+				},
+				"Un fracaso: apenas se ha notado, ni siquiera en el sector público": {
+					"color": "orange",
+					"Total": 7.5,
+					"pp": 11.8,
+					"psoe": 2.1,
+					"vox": 9.4,
+					"frente_amplio": 3,
+					"podemos": 12.8
+				},
+				"Un fracaso: lo poco que se ha notado ha sido por los piquetes": {
+					"color": "dark_orange",
+					"Total": 15.7,
+					"pp": 34.9,
+					"psoe": 3.2,
+					"vox": 26.5,
+					"frente_amplio": 3,
+					"podemos": 0
+				},
+				"Un fracaso: se ha visto como una huelga electoral": {
+					"color": "red",
+					"Total": 18.9,
+					"pp": 30.7,
+					"psoe": 4.2,
+					"vox": 44.7,
+					"frente_amplio": 2.6,
+					"podemos": 0
+				},
+				"No lo sé / No la he seguido": {
+					"color": "grey",
+					"Total": 9.8,
+					"pp": 1,
+					"psoe": 7.8,
+					"vox": 3.3,
+					"frente_amplio": 10,
+					"podemos": 7.5
+				}
+			}
+		},
+		"question3": {
+			"text": "¿Estaba de acuerdo con la huelga general del 11 de noviembre? ¿Participó de alguna manera?",
+			"answers": {
+				"De acuerdo, e hice huelga": {
+					"color": "dark_green",
+					"Total": 9.7,
+					"pp": 3.5,
+					"psoe": 17.9,
+					"vox": 1.4,
+					"frente_amplio": 22.2,
+					"podemos": 21.3
+				},
+				"De acuerdo, y fui a alguna manifestación": {
+					"color": "green",
+					"Total": 5.1,
+					"pp": 4.7,
+					"psoe": 12.4,
+					"vox": 0,
+					"frente_amplio": 11.4,
+					"podemos": 2.3
+				},
+				"De acuerdo, pero no participé": {
+					"color": "green",
+					"Total": 27.6,
+					"pp": 8,
+					"psoe": 51.6,
+					"vox": 8.8,
+					"frente_amplio": 45.9,
+					"podemos": 53.5
+				},
+				"En desacuerdo, y no participé": {
+					"color": "dark_orange",
+					"Total": 34.2,
+					"pp": 68,
+					"psoe": 8.4,
+					"vox": 62.2,
+					"frente_amplio": 4.6,
+					"podemos": 15.3
+				},
+				"En desacuerdo, pero no pude trabajar (piquetes, transporte, presiones)": {
+					"color": "red",
+					"Total": 3.3,
+					"pp": 8,
+					"psoe": 0.2,
+					"vox": 6,
+					"frente_amplio": 0.6,
+					"podemos": 0
+				},
+				"Me fue indiferente": {
+					"color": "grey",
+					"Total": 11.3,
+					"pp": 5.1,
+					"psoe": 4.3,
+					"vox": 15,
+					"frente_amplio": 15,
+					"podemos": 0
+				},
+				"No lo sé / Prefiero no decirlo": {
+					"color": "grey",
+					"Total": 8.8,
+					"pp": 2.8,
+					"psoe": 5,
+					"vox": 6.7,
+					"frente_amplio": 0.5,
+					"podemos": 7.5
+				}
+			}
+		},
+		"question4": {
+			"text": "Tras los accidentes de Adamuz (enero, 46 muertos) y Urda (octubre, 69 muertos) y las críticas al estado del ferrocarril, Óscar Puente dimitió el 3 de noviembre como ministro de Transportes y no irá en las listas del PSOE. ¿Cree que todo ello perjudicará a Sánchez y al PSOE el 29 de noviembre?",
+			"answers": {
+				"Sí: el deterioro del tren es responsabilidad del Gobierno": {
+					"color": "red",
+					"Total": 23.7,
+					"pp": 32,
+					"psoe": 9.5,
+					"vox": 35,
+					"frente_amplio": 17.4,
+					"podemos": 6.9
+				},
+				"Sí: Puente se va, pero el responsable es Sánchez": {
+					"color": "red",
+					"Total": 8.1,
+					"pp": 17.8,
+					"psoe": 2.8,
+					"vox": 14.4,
+					"frente_amplio": 2.1,
+					"podemos": 4.1
+				},
+				"Sí: Puente dimitió tarde y solo por las elecciones": {
+					"color": "dark_orange",
+					"Total": 18,
+					"pp": 25.6,
+					"psoe": 6.8,
+					"vox": 20.7,
+					"frente_amplio": 13.4,
+					"podemos": 10.4
+				},
+				"Sí, pero poco: sus votantes no cambiarán de voto": {
+					"color": "orange",
+					"Total": 17,
+					"pp": 9,
+					"psoe": 25.9,
+					"vox": 10.6,
+					"frente_amplio": 28,
+					"podemos": 6.5
+				},
+				"No: con la dimisión de Puente el asunto queda cerrado": {
+					"color": "dark_green",
+					"Total": 3.4,
+					"pp": 1.2,
+					"psoe": 8.1,
+					"vox": 4.1,
+					"frente_amplio": 5.1,
+					"podemos": 11.3
+				},
+				"No: la gente no culpará al Gobierno de un accidente": {
+					"color": "green",
+					"Total": 3.1,
+					"pp": 3.4,
+					"psoe": 2.9,
+					"vox": 5.6,
+					"frente_amplio": 5.6,
+					"podemos": 11.6
+				},
+				"No: el voto se decidirá por otros temas": {
+					"color": "green",
+					"Total": 8.8,
+					"pp": 6.1,
+					"psoe": 16.1,
+					"vox": 2.8,
+					"frente_amplio": 18,
+					"podemos": 5.7
+				},
+				"Le beneficiará: el PSOE ha asumido responsabilidades": {
+					"color": "yellow",
+					"Total": 3.6,
+					"pp": 0.5,
+					"psoe": 11.7,
+					"vox": 0,
+					"frente_amplio": 6.1,
+					"podemos": 27.9
+				},
+				"No lo sé": {
+					"color": "grey",
+					"Total": 14.2,
+					"pp": 4.4,
+					"psoe": 16.1,
+					"vox": 6.8,
+					"frente_amplio": 4.3,
+					"podemos": 15.6
+				}
+			}
+		},
+		"question5": {
+			"text": "El lunes 16 de noviembre Pedro Sánchez y Alberto Núñez Feijóo se enfrentarán en el único cara a cara de la campaña. ¿Quién cree que lo ganará?",
+			"answers": {
+				"Feijóo, con claridad": {
+					"color": "#17589d",
+					"Total": 23.4,
+					"pp": 54.6,
+					"psoe": 1.7,
+					"vox": 55,
+					"frente_amplio": 0.5,
+					"podemos": 0
+				},
+				"Feijóo, por poco": {
+					"color": "#7fa8d6",
+					"Total": 4.5,
+					"pp": 7.6,
+					"psoe": 0.6,
+					"vox": 7.1,
+					"frente_amplio": 6.7,
+					"podemos": 0
+				},
+				"Ninguno: quedarán empatados": {
+					"color": "dark_grey",
+					"Total": 8.4,
+					"pp": 6.7,
+					"psoe": 5,
+					"vox": 7.2,
+					"frente_amplio": 12.7,
+					"podemos": 16.3
+				},
+				"Sánchez, por poco": {
+					"color": "#f4a0a0",
+					"Total": 7.3,
+					"pp": 0.9,
+					"psoe": 17.7,
+					"vox": 4.5,
+					"frente_amplio": 7.4,
+					"podemos": 4.1
+				},
+				"Sánchez, con claridad": {
+					"color": "#ff0000",
+					"Total": 18.6,
+					"pp": 1,
+					"psoe": 53.6,
+					"vox": 4.5,
+					"frente_amplio": 36,
+					"podemos": 57.5
+				},
+				"No lo veré / No me interesa": {
+					"color": "grey",
+					"Total": 16.4,
+					"pp": 5,
+					"psoe": 11.2,
+					"vox": 11.4,
+					"frente_amplio": 21.8,
+					"podemos": 0
+				},
+				"No lo sé": {
+					"color": "grey",
+					"Total": 21.4,
+					"pp": 24.2,
+					"psoe": 10.3,
+					"vox": 10.2,
+					"frente_amplio": 15,
+					"podemos": 22.1
+				}
+			}
+		},
+		"question6": {
+			"text": "Tras las elecciones generales del 29 de noviembre, ¿qué tipo de gobierno preferiría?",
+			"answers": {
+				"PP en solitario": {
+					"color": "#17589d",
+					"Total": 12.4,
+					"pp": 53,
+					"psoe": 1.1,
+					"vox": 0.1,
+					"frente_amplio": 0,
+					"podemos": 0
+				},
+				"PP en solitario, con apoyo de Vox desde fuera": {
+					"color": "#5ac032",
+					"Total": 8.2,
+					"pp": 25.1,
+					"psoe": 0.2,
+					"vox": 12.6,
+					"frente_amplio": 0.7,
+					"podemos": 0
+				},
+				"Coalición de PP y Vox": {
+					"color": "#5ac032",
+					"Total": 17.5,
+					"pp": 14.8,
+					"psoe": 0.4,
+					"vox": 75.3,
+					"frente_amplio": 0.3,
+					"podemos": 9.5
+				},
+				"Gran coalición de PP y PSOE": {
+					"color": "dark_grey",
+					"Total": 5.3,
+					"pp": 3,
+					"psoe": 7.4,
+					"vox": 1.8,
+					"frente_amplio": 2.6,
+					"podemos": 0
+				},
+				"PSOE en solitario": {
+					"color": "#e1001a",
+					"Total": 7.3,
+					"pp": 0.1,
+					"psoe": 31.9,
+					"vox": 1.1,
+					"frente_amplio": 1,
+					"podemos": 3.4
+				},
+				"Coalición de PSOE y Frente Amplio": {
+					"color": "#e1001a",
+					"Total": 12.8,
+					"pp": 0.1,
+					"psoe": 24.2,
+					"vox": 0,
+					"frente_amplio": 73.3,
+					"podemos": 24.6
+				},
+				"PSOE con izquierdas y nacionalistas, como ahora": {
+					"color": "#e1001a",
+					"Total": 10.3,
+					"pp": 0,
+					"psoe": 26.4,
+					"vox": 0,
+					"frente_amplio": 9.4,
+					"podemos": 46.9
+				},
+				"Otra fórmula": {
+					"color": "grey",
+					"Total": 8.2,
+					"pp": 0.4,
+					"psoe": 0.3,
+					"vox": 6.5,
+					"frente_amplio": 8.9,
+					"podemos": 15.7
+				},
+				"No lo sé": {
+					"color": "grey",
+					"Total": 17.9,
+					"pp": 3.4,
+					"psoe": 8.2,
+					"vox": 2.6,
+					"frente_amplio": 3.9,
+					"podemos": 0
+				}
+			}
+		}
+	}
+}

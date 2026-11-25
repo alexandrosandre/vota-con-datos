@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La evolución de la intención de voto desde la convocatoria electoral</title>
+<link rel="stylesheet" href="styles.css?v=261122-1534">
+<script type="module">
+  // Alto dinámico en el CMS: emit.js avisa a la página padre (EC:msg:datos) cada vez que cambia el alto del body
+  import { configureEmit } from './emit.js';
+  configureEmit();
+</script>
+</head>
+<body>
+<div class="graf" id="graf">
+  <div class="g-cab">
+    <h2 class="g-tit">La evolución de la intención de voto desde la convocatoria electoral</h2>
+    <p class="g-desc">Evolución de escaños y porcentaje de voto de los partidos de ámbito estatal y, en conjunto, del resto, en las cinco encuestas de IMOP para ElConfidencial.</p>
+    <div class="botones" id="botones" role="group" aria-label="Indicador del gráfico">
+      <button type="button" data-m="esc" aria-pressed="true">Escaños</button>
+      <button type="button" data-m="pct" aria-pressed="false">Porcentaje de voto</button>
+    </div>
+  </div>
+
+  <div class="g-grafico">
+    <div class="leyenda" id="leyenda" aria-label="Partidos"></div>
+    <div class="lienzo" id="lienzo">
+      <svg role="img" aria-label="Evolución de los escaños y del porcentaje de voto de los partidos estatales entre las elecciones de 2023 y las encuestas de IMOP"></svg>
+    </div>
+    <div class="sr"><table id="tabla"></table></div>
+  </div>
+
+  <div class="g-pieblock">
+    <p class="g-nota">* Frente Amplio incluye a Front Valencià. Podemos (dentro de Sumar en 2023) figura como tal solo donde concurre en solitario. UPN se añade al PP. Resto: ERC, Junts, EH Bildu, PNV, BNG, CC y Adelante Andalucía.</p>
+    <p class="g-pie">Fuente: IMOP | <strong>ElConfidencial</strong></p>
+  </div>
+  <div class="tip" id="tip" hidden></div>
+</div>
+<script src="d3.min.js?v=261122-1534"></script>
+<script src="datos.js?v=261122-1534"></script>
+<script src="script.js?v=261122-1534"></script>
+<script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=8&cb=2023731447" async></script></body>
+</html>

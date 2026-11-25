@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estimación de voto · Sondeo elecciones generales 29-N</title>
+<style>
+:root{
+  --ink:#1c1f24;
+  --muted:#667085;
+  --line:#e4e7ec;
+  --soft:#f2f4f7;
+  --bg:#ffffff;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{
+  background:var(--bg);color:var(--ink);
+  font:14px/1.35 var(--font);
+  -webkit-text-size-adjust:100%;
+  overflow:hidden;
+}
+.app{height:100%;display:flex;flex-direction:column;padding:10px 6px 8px}
+
+/* Leyenda */
+.legend{flex:none;display:flex;justify-content:center;gap:18px;font-size:13px;color:var(--muted)}
+.lg{display:inline-flex;align-items:center;gap:7px}
+.lg i{width:13px;height:13px;border-radius:3px;background:#667085;display:block}
+.lg i.old{opacity:.55}
+
+/* Gráfico */
+.chart{flex:1 1 auto;min-height:0;display:flex;align-items:center;justify-content:center}
+.stage{position:relative}
+.stage svg{display:block;overflow:visible}
+.grid{stroke:var(--line);stroke-width:1}
+.base{stroke:#98a2b3;stroke-width:1.2}
+.ylab{fill:var(--muted);font-size:11px;font-variant-numeric:tabular-nums}
+.bar{transition:opacity .15s ease;animation:grow .6s cubic-bezier(.2,.7,.2,1) backwards;
+  transform-box:fill-box;transform-origin:50% 100%}
+.bar.old{fill-opacity:.55}
+.hit{fill:transparent;cursor:pointer;outline:none}
+.hit:focus-visible{stroke:var(--ink);stroke-width:2;rx:4}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+
+/* Etiquetas HTML sobre el SVG */
+.labels{position:absolute;inset:0;pointer-events:none}
+.lab{
+  position:absolute;transform:translate(-50%,-50%);
+  pointer-events:auto;cursor:pointer;
+  transition:opacity .15s ease;
+  animation:fade .5s ease .25s backwards;
+}
+.val{
+  font-weight:700;font-variant-numeric:tabular-nums;line-height:1;white-space:nowrap;
+  color:var(--ink);transform:translate(-50%,-100%);
+}
+.val.old{color:#667085}
+.is-dim,.bar.is-dim{opacity:.22}
+
+.logo{display:flex;align-items:center;justify-content:center;flex:none}
+.logo img{width:100%;height:100%;object-fit:contain;display:block}
+.logo.fb{border-radius:50%;color:#fff;font-weight:700;letter-spacing:-.02em;overflow:hidden}
+.logo.pill{background:#eef0f3;color:var(--ink);border:1px solid #d0d5dd;border-radius:999px;padding:0 13px;font-weight:700;white-space:nowrap}
+
+/* Tooltip */
+.tip{
+  position:fixed;z-index:20;left:0;top:0;pointer-events:none;
+  width:max-content;min-width:176px;max-width:260px;
+  background:#fff;border:1px solid var(--line);border-top:3px solid var(--c,#999);
+  border-radius:10px;padding:10px 13px 11px;
+  box-shadow:0 8px 24px rgba(16,24,40,.16);
+  opacity:0;visibility:hidden;transition:opacity .12s ease;
+}
+.tip.show{opacity:1;visibility:visible}
+.tip-h{display:flex;align-items:center;gap:9px}
+.tip-name{font-weight:700;font-size:15px;line-height:1.15}
+.tip-big{margin-top:8px;display:flex;align-items:baseline;gap:6px}
+.tip-big b{font-size:30px;line-height:1;font-weight:800;font-variant-numeric:tabular-nums}
+.tip-big span{font-size:13px;color:var(--muted)}
+.tip-meta{display:flex;justify-content:space-between;gap:14px;font-size:12px;color:var(--muted);margin-top:5px}
+.tip-meta b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tip-meta+.tip-meta{margin-top:3px}
+.tip-note{font-size:12px;color:var(--muted);margin-top:6px}
+.up{color:#1f8a5b}.down{color:#c0392b}
+
+.msg{margin:auto;color:var(--muted);text-align:center;padding:20px;font-size:13px}
+[hidden]{display:none!important}
+
+@media (prefers-reduced-motion:reduce){
+  .bar,.lab,.tip{animation:none;transition:none}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="legend" aria-hidden="true">
+    <span class="lg"><i class="old"></i>Elecciones 2023</span>
+    <span class="lg"><i></i>Sondeo</span>
+  </div>
+  <div class="chart" id="chart">
+    <div class="msg" id="msg">Cargando datos…</div>
+    <div class="stage" id="stage" hidden>
+      <svg id="svg" role="img"></svg>
+      <div class="labels" id="labels"></div>
+    </div>
+  </div>
+</div>
+<div class="tip" id="tip" role="tooltip"></div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- Configuración ---------- */
+  var CONFIG = {
+    base: 'https://info.eldebate.com/especial/elecciones/datos/2026/generales-29n/sondeos/',
+    partidos: 'partidos.json',
+    encuesta: 'target-point-20261120.json'
+  };
+  // Cada grupo: barra de 2023 (y23) frente a barra del sondeo (now). Si el valor es 0, esa barra no se dibuja.
+  var GROUPS = [
+    { id: 'pp',    y23: 'pp',    now: 'pp' },
+    { id: 'psoe',  y23: 'psoe',  now: 'psoe' },
+    { id: 'vox',   y23: 'vox',   now: 'vox' },
+    { id: 'fa',    y23: 'sumar', now: 'frente_amplio' },   // Sumar 2023 → Frente Amplio ahora
+    { id: 'pod',   y23: 'podemos', now: 'podemos' },
+    { id: 'salf',  y23: 'salf',  now: 'salf' },
+    { id: 'otros', y23: 'otros', now: 'otros' }
+  ];
+  var OTROS = { name: 'Otros', color: '#98a2b3', logo: '' };
+
+  /* ---------- Estado y utilidades ---------- */
+  var $ = function (s) { return document.querySelector(s); };
+  var els = { chart: $('#chart'), stage: $('#stage'), svg: $('#svg'), labels: $('#labels'), tip: $('#tip'), msg: $('#msg') };
+  var NS = 'http://www.w3.org/2000/svg';
+  var meta = {}, electoral = {}, groups = [], geo = null, lastSize = '', pinned = null, shown = null;
+
+  function svgEl(name, attrs) {
+    var e = document.createElementNS(NS, name);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    return e;
+  }
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function fmt(n) { return (Math.round(n * 10) / 10).toFixed(1).replace('.', ','); }
+  function fmtSigned(n) {
+    var r = Math.round(n * 10) / 10;
+    return (r > 0 ? '+' : r < 0 ? '−' : '') + Math.abs(r).toFixed(1).replace('.', ',');
+  }
+  function initials(name) {
+    var w = name.trim().split(/\s+/);
+    if (w.length === 1) return name.length <= 4 ? name : name.slice(0, 3);
+    return w.map(function (x) { return x[0]; }).join('').slice(0, 3).toUpperCase();
+  }
+  function textOn(hex) {
+    var m = /^#?([0-9a-f]{6})$/i.exec(hex || ''); if (!m) return '#fff';
+    var n = parseInt(m[1], 16), r = n >> 16, g = (n >> 8) & 255, b = n & 255;
+    return (0.299 * r + 0.587 * g + 0.114 * b) > 170 ? '#1c1f24' : '#fff';
+  }
+  function fetchJSON(file) {
+    return fetch(CONFIG.base + file).then(function (r) {
+      if (!r.ok) throw new Error(file + ' → ' + r.status);
+      return r.json();
+    });
+  }
+  function partyOf(k) {
+    var m = k === 'otros' ? OTROS : (meta[k] || {});
+    return { key: k, name: m.name || k, color: m.color || '#98a2b3', logo: m.logo || '' };
+  }
+  // Logo con respaldo: siglas sobre el color del partido; "Otros" sin logo, como texto
+  function logoEl(p, size, fontPx) {
+    var d = document.createElement('span');
+    d.className = 'logo';
+    d.style.width = d.style.height = size + 'px';
+    if (p.key === 'otros') {
+      d.className = 'logo pill';
+      d.style.width = 'auto';
+      d.style.height = Math.round(size * 0.66) + 'px';
+      d.style.fontSize = Math.min(fontPx || 14, size > 34 ? 15 : 13) + 'px';
+      d.textContent = 'Otros';
+      return d;
+    }
+    var fallback = function () {
+      d.classList.add('fb');
+      d.style.background = p.color;
+      d.style.color = textOn(p.color);
+      var ini = initials(p.name);
+      d.style.fontSize = (fontPx && ini.length < 4 ? fontPx : Math.round(size * (ini.length > 3 ? 0.29 : 0.38))) + 'px';
+      d.textContent = ini;
+    };
+    if (!p.logo) { fallback(); return d; }
+    var img = new Image();
+    img.alt = '';
+    img.decoding = 'async';
+    img.onerror = function () { d.innerHTML = ''; fallback(); };
+    img.src = p.logo;
+    d.appendChild(img);
+    return d;
+  }
+
+  /* ---------- Carga ---------- */
+  Promise.all([fetchJSON(CONFIG.partidos), fetchJSON(CONFIG.encuesta)])
+    .then(function (res) { init(res[0], res[1]); })
+    .catch(function (err) {
+      console.error(err);
+      els.msg.textContent = 'No se han podido cargar los datos del gráfico.';
+    });
+
+  function init(pj, ej) {
+    (pj.partidos || []).forEach(function (x) { meta[x.key] = x; });
+    electoral = ej.electoral || {};
+    groups = GROUPS.map(function (g) {
+      var vNow = electoral[g.now] ? +electoral[g.now].percent : 0;
+      var v23 = electoral[g.y23] ? +electoral[g.y23].percent_2023 : 0;
+      var bars = [];
+      if (v23 > 0) bars.push({ when: 'old', party: partyOf(g.y23), value: v23 });
+      if (vNow > 0) bars.push({ when: 'now', party: partyOf(g.now), value: vNow });
+      return { id: g.id, bars: bars };
+    }).filter(function (g) { return g.bars.length; });
+    els.msg.hidden = true;
+    els.stage.hidden = false;
+    layout();
+    new ResizeObserver(function () { requestAnimationFrame(layout); }).observe(els.chart);
+    document.addEventListener('pointerdown', function (e) { if (e.pointerType !== 'mouse') hideTip(); });
+    window.addEventListener('scroll', hideTip, { passive: true });
+  }
+
+  /* ---------- Dibujo ---------- */
+  function layout() {
+    var W = Math.floor(els.chart.clientWidth), H = Math.floor(els.chart.clientHeight);
+    if (W < 60 || H < 60) return;
+    var key = W + 'x' + H;
+    if (key === lastSize) return;
+    lastSize = key;
+
+    var compact = W < 500;
+    var S = compact ? 30 : 38;                    // logo
+    var F = compact ? 11 : 13.5;                  // valores sobre las barras
+    var padL = compact ? 30 : 38, padR = 6;
+    var padT = F + 12;
+    var logosH = S + 12;
+    var x0 = padL, x1 = W - padR, y0 = padT, y1 = Math.max(H - logosH, padT + 80);
+    var plotH = y1 - y0;
+    var all = [];
+    groups.forEach(function (g) { g.bars.forEach(function (b) { all.push(b.value); }); });
+    var max = Math.max(10, Math.ceil(Math.max.apply(null, all) / 10) * 10);
+    var gW = (x1 - x0) / groups.length;
+    var barW = Math.min(compact ? 22 : 36, gW * 0.4), gapB = compact ? 3 : 4;
+    var svgH = y1 + logosH;
+
+    geo = { W: W, H: svgH };
+    els.stage.style.width = W + 'px';
+    els.stage.style.height = svgH + 'px';
+    els.svg.setAttribute('width', W);
+    els.svg.setAttribute('height', svgH);
+    els.svg.setAttribute('viewBox', '0 0 ' + W + ' ' + svgH);
+    els.svg.innerHTML = '';
+    els.labels.innerHTML = '';
+
+    // Cuadrícula
+    for (var v = 0; v <= max; v += 10) {
+      var y = y1 - v / max * plotH;
+      els.svg.appendChild(svgEl('line', { 'class': v === 0 ? 'base' : 'grid', x1: x0, x2: x1, y1: y, y2: y }));
+      var t = svgEl('text', { 'class': 'ylab', x: x0 - 6, y: y + 4, 'text-anchor': 'end' });
+      t.textContent = v + (compact ? '' : ' %');
+      els.svg.appendChild(t);
+    }
+    if (compact) {
+      var u = svgEl('text', { 'class': 'ylab', x: x0 - 6, y: y0 - 14, 'text-anchor': 'end' });
+      u.textContent = '%';
+      els.svg.appendChild(u);
+    }
+
+    groups.forEach(function (g, gi) {
+      var cx = x0 + gW * (gi + 0.5);
+      var two = g.bars.length === 2;
+      var sameParty = two && g.bars[0].party.key === g.bars[1].party.key;
+      g.bars.forEach(function (b, bi) {
+        var bx = two ? cx + (bi === 0 ? -(barW + gapB) / 2 : (barW + gapB) / 2) : cx;
+        var h = b.value / max * plotH, top = y1 - h, r = Math.min(3, h / 2);
+        var left = bx - barW / 2, right = bx + barW / 2;
+        var bar = svgEl('path', {
+          'class': 'bar' + (b.when === 'old' ? ' old' : ''),
+          d: 'M' + left + ',' + y1 + 'V' + (top + r) + 'Q' + left + ',' + top + ' ' + (left + r) + ',' + top +
+             'H' + (right - r) + 'Q' + right + ',' + top + ' ' + right + ',' + (top + r) + 'V' + y1 + 'Z',
+          fill: b.party.color
+        });
+        bar.style.animationDelay = (gi * 45) + 'ms';
+        bar.dataset.g = g.id;
+        els.svg.appendChild(bar);
+
+        // Valor sobre la barra
+        var val = document.createElement('div');
+        val.className = 'lab val' + (b.when === 'old' ? ' old' : '');
+        val.dataset.g = g.id;
+        val.style.left = bx.toFixed(1) + 'px';
+        val.style.top = (top - 4).toFixed(1) + 'px';
+        val.style.fontSize = F + 'px';
+        val.textContent = fmt(b.value);
+        els.labels.appendChild(val);
+        bind(val, g, b);
+
+        // Zona sensible: toda la altura, para poder tocar también las barras bajas
+        var hit = svgEl('rect', { 'class': 'hit', x: bx - (barW + gapB) / 2, y: y0, width: barW + gapB, height: plotH,
+                                   tabindex: '0', role: 'button',
+                                   'aria-label': b.party.name + (b.when === 'old' ? ', elecciones 2023: ' : ', sondeo: ') + fmt(b.value) + ' %' });
+        bind(hit, g, b);
+        els.svg.appendChild(hit);
+
+        // Logo bajo la barra (si ambas barras son del mismo partido, uno solo centrado)
+        if (!sameParty || bi === 0) {
+          var lx = sameParty ? cx : bx;
+          var LS = (two && !sameParty) ? Math.min(S, barW + gapB - 3) : S;   // dos logos juntos: algo más pequeños
+          var lg = logoEl(b.party, LS);
+          lg.classList.add('lab');
+          lg.dataset.g = g.id;
+          lg.style.left = lx.toFixed(1) + 'px';
+          lg.style.top = (y1 + 8 + S / 2).toFixed(1) + 'px';   // misma línea central para todos
+          els.labels.appendChild(lg);
+          bind(lg, g, b);
+        }
+      });
+    });
+    els.svg.setAttribute('aria-label', 'Estimación de voto, elecciones 2023 y sondeo: ' + groups.map(function (g) {
+      return g.bars.map(function (b) { return b.party.name + (b.when === 'old' ? ' 2023 ' : ' ') + fmt(b.value) + ' %'; }).join(', ');
+    }).join('; '));
+  }
+
+  /* ---------- Interacción y tooltip ---------- */
+  function bind(el, g, b) {
+    el.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') showTip(g, b, e); });
+    el.addEventListener('pointermove', function (e) { if (e.pointerType === 'mouse') placeTip(e); });
+    el.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') hideTip(); });
+    el.addEventListener('pointerdown', function (e) {
+      if (e.pointerType === 'mouse') return;
+      e.stopPropagation();
+      var id = g.id + b.when;
+      if (pinned === id) hideTip(); else showTip(g, b, e);
+    });
+    el.addEventListener('focus', function () {
+      var r = el.getBoundingClientRect();
+      showTip(g, b, { clientX: r.left + r.width / 2, clientY: r.top + r.height / 2, pointerType: 'key' });
+    });
+    el.addEventListener('blur', hideTip);
+  }
+
+  function highlight(gid) {
+    var on = gid != null;
+    document.querySelectorAll('.bar,.lab').forEach(function (n) {
+      n.classList.toggle('is-dim', on && n.dataset.g !== gid);
+    });
+  }
+
+  function showTip(g, b, e) {
+    shown = g.id;
+    pinned = (e.pointerType === 'mouse' || e.pointerType === 'key') ? null : g.id + b.when;
+    highlight(g.id);
+
+    var tip = els.tip;
+    tip.innerHTML = '';
+    tip.style.setProperty('--c', b.party.color);
+    var head = document.createElement('div');
+    head.className = 'tip-h';
+    head.appendChild(logoEl(b.party, 36, 12));
+    if (b.party.key !== 'otros') {
+      var nm = document.createElement('div');
+      nm.className = 'tip-name';
+      nm.textContent = b.party.name;
+      head.appendChild(nm);
+    }
+    tip.appendChild(head);
+
+    var html = '<div class="tip-big"><b>' + fmt(b.value) + ' %</b><span>' + (b.when === 'old' ? 'en 2023' : 'sondeo') + '</span></div>';
+    if (b.when === 'now') {
+      var prev = g.bars.filter(function (x) { return x.when === 'old'; })[0];
+      if (prev) {
+        var d = Math.round((b.value - prev.value) * 10) / 10;
+        var same = prev.party.key === b.party.key;
+        var tri = d > 0 ? '<span class="up">▲</span> ' : d < 0 ? '<span class="down">▼</span> ' : '';
+        html += '<div class="tip-meta"><span>' + (same ? 'Elecciones 2023' : esc(prev.party.name) + ' 2023') + '</span><b>' + fmt(prev.value) + ' %</b></div>';
+        html += '<div class="tip-meta"><span>Variación</span><b>' + tri + (d === 0 ? 'sin cambios' : fmtSigned(d) + ' pp') + '</b></div>';
+      }
+    } else {
+      html += '<div class="tip-note">Elecciones del 23 de julio de 2023</div>';
+    }
+    tip.insertAdjacentHTML('beforeend', html);
+    tip.classList.add('show');
+    placeTip(e);
+  }
+
+  function placeTip(e) {
+    var tip = els.tip, w = tip.offsetWidth, h = tip.offsetHeight;
+    var vw = document.documentElement.clientWidth, vh = document.documentElement.clientHeight;
+    var touch = e.pointerType && e.pointerType !== 'mouse';
+    var x, y;
+    if (touch) {
+      x = e.clientX - w / 2;
+      y = e.clientY - h - 22;
+      if (y < 4) y = e.clientY + 22;
+    } else {
+      x = e.clientX + 16; y = e.clientY + 16;
+      if (x + w > vw - 4) x = e.clientX - w - 16;
+      if (y + h > vh - 4) y = e.clientY - h - 16;
+    }
+    x = Math.max(4, Math.min(x, vw - w - 4));
+    y = Math.max(4, Math.min(y, vh - h - 4));
+    tip.style.transform = 'translate(' + Math.round(x) + 'px,' + Math.round(y) + 'px)';
+  }
+
+  function hideTip() {
+    if (shown == null && pinned == null) return;
+    shown = pinned = null;
+    els.tip.classList.remove('show');
+    highlight(null);
+  }
+})();
+</script>
+</body>
+</html>

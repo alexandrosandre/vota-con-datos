@@ -63,7 +63,7 @@ ETIQUETAS = {
     "A.Adelante": "adelante_andalucia", "AA": "adelante_andalucia", "Adelante And.": "adelante_andalucia",
     "Adelante AND": "adelante_andalucia",  # Winston/Artículo14
 }
-IGNORADAS = {"UPN", "Democracia 21", "Otros partidos", "En blanco", "Otro", "Otro + Blanco", "Cup",
+IGNORADAS = {"UPN", "IE", "Democracia 21", "Otros partidos", "En blanco", "Otro", "Otro + Blanco", "Cup",
              "PP–UPN (Navarra)", "Otros", "Otros*", "Otras candidaturas",
              "Otros+Blanco", "Regionales**", "CHA", "Més per Mallorca", "Teruel Existe", "Otros y blanco",
              "SY"}  # SY: Soria ¡Ya! (Sigma Dos 15-nov, 0,1 %), como Teruel Existe: conserva su voto de 2023

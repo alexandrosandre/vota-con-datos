@@ -216,6 +216,13 @@ Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. 
 de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
 BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
+**25-nov, encuestas de las otras 12 empresas (14–23 nov):** la revisión programada solo seguía a CIS, Sigma Dos, GAD3 y
+40dB. Barrido de las publicadas antes del 24-nov y verificación independiente en tres grupos: entran 29 (NC Report 2,
+IMOP 2, DYM, Target Point 2, Hamalgama, Ateneo del Dato, Data10 6, Winston, Celeste-Tel, More in Common, SW Demoscopia
+10 y SocioMétrica, esta fuera de la media por acumulada). Se rechaza la pieza de Data10 de la noche del 23-nov
+(infografía subida el 24-nov, 00:15). No se usa contenido marcado para suscriptores. El n.º 7 de SW Demoscopia deja de
+estar excluido: La Séptima lo publica en su web desde el 18-nov. Media con 15 empresas: PP 125, PSOE 99, Vox 64.
+
 **25-nov (decisión del editor):** la prohibición del art. 69.7 se aplica a publicar encuestas nuevas, no a las ya
 publicadas. El paso 3 vuelve a ofrecer la media y los escenarios de CIS, Sigma Dos, GAD3 y 40dB; se quita la retirada
 automática (pipeline, navegador, despliegue programado y conservar_versiones). La media sigue con su ventana de 21 días:

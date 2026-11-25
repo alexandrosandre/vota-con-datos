@@ -10970,13 +10970,2433 @@
       "verificado_en_fuente_primaria": true
     },
     {
+      "id": "swdemoscopia-2026-11-23",
+      "rol": "media",
+      "rol_nota": "Entra en la media como la última de SW Demoscopia (última entrega del tracking).",
+      "encuestadora": "SW Demoscopia",
+      "cliente_medio": "La Séptima",
+      "estudio": "Barómetro electoral n.º 19 (tracking electoral continuo de SW Demoscopia para La Séptima)",
+      "fecha_publicacion": "2026-11-23",
+      "fecha_publicacion_nota": "Primera publicación verificable: subida del PDF a laseptima.com (web de La Séptima, el medio que encarga el estudio), 2026-11-23; la entrada de la web está retrofechada a la fecha de los datos. El PDF dice entregado el 2026-11-23 (entrega al cliente, no publicación). Fecha de entrega que imprime el PDF ('Entregado el 23 de noviembre de 2026'), convención de la propia SW ('publicados en cada barómetro', eje 'día de entrega') y la usada en swdemoscopia-2026-11-11. Publicación original verificable: entrada 'Barómetro electoral n.º 19' de laseptima.com (web oficial de La Séptima TV) con el PDF descargable, subido el 2026-11-23 a las 19:10:23 UTC (wp-json); la entrada lleva fecha retroactiva (la de los datos).",
+      "trabajo_campo": {
+        "inicio": "2026-10-26",
+        "fin": "2026-11-23"
+      },
+      "trabajo_campo_nota": "Tracking continuo: 350 entrevistas por jornada del 26-oct al 4-nov y 500 desde el 5-nov; esta entrega acumula las jornadas del 26 de octubre al 23 de noviembre.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 13000,
+      "metodo": "Entrevista telefónica asistida por ordenador (CATI, fijos y móviles); ponderación por sexo, edad, CCAA (censo) y probabilidad de votar; estimación con el 'Modelo SW'; escaños por D'Hondt provincial (barrera del 3%), con 40.000 simulaciones para mediana y horquillas.",
+      "margen_error": "±0,9 puntos para el conjunto (95%, p=q=50)",
+      "base_porcentajes": "% sobre candidaturas y voto en blanco ('intención directa de voto normalizada sobre candidaturas y voto en blanco'); sin fila de blanco",
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "Tabla 'Voto y escaños por candidatura' (16 filas, 'Total 100,0' y 350 escaños).",
+      "proyeccion_escanos": "central + mediana + P25–P75 (escanos_min/max) + P10–P90",
+      "proyeccion_escanos_nota": "Columnas de la tabla: reparto central (D'Hondt sobre la estimación puntual), mediana y horquillas P25–P75 y P10–P90 de 40.000 simulaciones.",
+      "estimacion_voto": [
+        {
+          "partido": "PSOE",
+          "pct": 32.9,
+          "escanos_central": 136,
+          "escanos_mediana": 135,
+          "escanos_min": 132,
+          "escanos_max": 138,
+          "escanos_p10_p90": [
+            130,
+            140
+          ]
+        },
+        {
+          "partido": "PP",
+          "pct": 30.1,
+          "escanos_central": 125,
+          "escanos_mediana": 124,
+          "escanos_min": 121,
+          "escanos_max": 127,
+          "escanos_p10_p90": [
+            118,
+            130
+          ],
+          "nota": "Sin Navarra: PP y UPN concurren en lista única, que SW presenta como candidatura propia 'PP–UPN (Navarra)'."
+        },
+        {
+          "partido": "Vox",
+          "pct": 15.3,
+          "escanos_central": 47,
+          "escanos_mediana": 48,
+          "escanos_min": 45,
+          "escanos_max": 52,
+          "escanos_p10_p90": [
+            42,
+            55
+          ]
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 6.8,
+          "escanos_central": 9,
+          "escanos_mediana": 10,
+          "escanos_min": 9,
+          "escanos_max": 11,
+          "escanos_p10_p90": [
+            8,
+            12
+          ],
+          "nota": "Incluye a Compromís: Front Valencià y a Unidad del Pueblo Canario (UPC) (ficha técnica)."
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.6,
+          "escanos_central": 11,
+          "escanos_mediana": 11,
+          "escanos_min": 10,
+          "escanos_max": 12,
+          "escanos_p10_p90": [
+            10,
+            13
+          ]
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.3,
+          "escanos_central": 7,
+          "escanos_mediana": 7,
+          "escanos_min": 7,
+          "escanos_max": 7,
+          "escanos_p10_p90": [
+            6,
+            7
+          ]
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.2,
+          "escanos_central": 4,
+          "escanos_mediana": 4,
+          "escanos_min": 3,
+          "escanos_max": 4,
+          "escanos_p10_p90": [
+            3,
+            4
+          ]
+        },
+        {
+          "partido": "EAJ-PNV",
+          "pct": 0.7,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            2,
+            3
+          ]
+        },
+        {
+          "partido": "Adelante Andalucía",
+          "pct": 1.7,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            4
+          ]
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.0,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            2
+          ]
+        },
+        {
+          "partido": "Coalición Canaria",
+          "pct": 0.4,
+          "escanos_central": 1,
+          "escanos_mediana": 1,
+          "escanos_min": 1,
+          "escanos_max": 1,
+          "escanos_p10_p90": [
+            1,
+            1
+          ]
+        },
+        {
+          "partido": "PP–UPN (Navarra)",
+          "pct": 0.2,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            2
+          ]
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.5,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "escanos_p10_p90": [
+            0,
+            1
+          ]
+        },
+        {
+          "partido": "SALF",
+          "pct": 2.1,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Teruel Existe",
+          "pct": 0.0,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Otras candidaturas",
+          "pct": 2.2,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ],
+          "tipo": "otros"
+        }
+      ],
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://laseptima.com/wp-content/uploads/2026/11/barometro-n19-23nov2026.pdf"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n19_20261123.pdf",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n19_20261123.html",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n19_20261123.pdf": "9360086291b7695f95fcbd88491c58616bbc92fc319661ef1501444ab3bc1a3a",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n19_20261123.html": "5643d324d5071e39013bbdd826340b727da4fec33d649f786e48b95e13673741",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json": "6b8bbf5e0dd4373970b0aba3715fc018571c90f5b80e23f11a10171640d1d152",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json": "385857744ac1ced559a8b8e9682b9a5d4c24f3535f6829de3960f661652d0d23"
+      },
+      "discrepancias_fuente": "Ninguna en las cifras; coinciden con el gráfico 'Evolución del tracking' del n.º 19.",
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "swdemoscopia-2026-11-22",
+      "rol": "media",
+      "rol_nota": "Entrega del tracking diario; superada en la media por las siguientes (la última es swdemoscopia-2026-11-23, n.º 19).",
+      "encuestadora": "SW Demoscopia",
+      "cliente_medio": "La Séptima",
+      "estudio": "Barómetro electoral n.º 18 (tracking electoral continuo de SW Demoscopia para La Séptima)",
+      "fecha_publicacion": "2026-11-23",
+      "fecha_publicacion_nota": "Primera publicación verificable: subida del PDF a laseptima.com (web de La Séptima, el medio que encarga el estudio), 2026-11-23; la entrada de la web está retrofechada a la fecha de los datos. El PDF dice entregado el 2026-11-22 (entrega al cliente, no publicación). Fecha de entrega que imprime el PDF ('Entregado el 22 de noviembre de 2026'), convención de la propia SW ('publicados en cada barómetro', eje 'día de entrega') y la usada en swdemoscopia-2026-11-11. Publicación original verificable: entrada 'Barómetro electoral n.º 18' de laseptima.com (web oficial de La Séptima TV) con el PDF descargable, subido el 2026-11-23 a las 10:10:10 UTC (wp-json); la entrada lleva fecha retroactiva (la de los datos).",
+      "trabajo_campo": {
+        "inicio": "2026-10-26",
+        "fin": "2026-11-21"
+      },
+      "trabajo_campo_nota": "Tracking continuo: 350 entrevistas por jornada del 26-oct al 4-nov y 500 desde el 5-nov; esta entrega acumula las jornadas del 26 de octubre al 21 de noviembre.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 12000,
+      "metodo": "Entrevista telefónica asistida por ordenador (CATI, fijos y móviles); ponderación por sexo, edad, CCAA (censo) y probabilidad de votar; estimación con el 'Modelo SW'; escaños por D'Hondt provincial (barrera del 3%), con 40.000 simulaciones para mediana y horquillas.",
+      "margen_error": "±0,9 puntos para el conjunto (95%, p=q=50)",
+      "base_porcentajes": "% sobre candidaturas y voto en blanco ('intención directa de voto normalizada sobre candidaturas y voto en blanco'); sin fila de blanco",
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "Tabla 'Voto y escaños por candidatura' (16 filas, 'Total 100,0' y 350 escaños).",
+      "proyeccion_escanos": "central + mediana + P25–P75 (escanos_min/max) + P10–P90",
+      "proyeccion_escanos_nota": "Columnas de la tabla: reparto central (D'Hondt sobre la estimación puntual), mediana y horquillas P25–P75 y P10–P90 de 40.000 simulaciones.",
+      "estimacion_voto": [
+        {
+          "partido": "PSOE",
+          "pct": 32.5,
+          "escanos_central": 134,
+          "escanos_mediana": 134,
+          "escanos_min": 131,
+          "escanos_max": 137,
+          "escanos_p10_p90": [
+            128,
+            139
+          ]
+        },
+        {
+          "partido": "PP",
+          "pct": 29.7,
+          "escanos_central": 123,
+          "escanos_mediana": 122,
+          "escanos_min": 119,
+          "escanos_max": 125,
+          "escanos_p10_p90": [
+            116,
+            128
+          ],
+          "nota": "Sin Navarra: PP y UPN concurren en lista única, que SW presenta como candidatura propia 'PP–UPN (Navarra)'."
+        },
+        {
+          "partido": "Vox",
+          "pct": 15.8,
+          "escanos_central": 50,
+          "escanos_mediana": 51,
+          "escanos_min": 47,
+          "escanos_max": 54,
+          "escanos_p10_p90": [
+            44,
+            58
+          ]
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 6.8,
+          "escanos_central": 10,
+          "escanos_mediana": 10,
+          "escanos_min": 9,
+          "escanos_max": 11,
+          "escanos_p10_p90": [
+            7,
+            12
+          ],
+          "nota": "Incluye a Compromís: Front Valencià y a Unidad del Pueblo Canario (UPC) (ficha técnica)."
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.7,
+          "escanos_central": 11,
+          "escanos_mediana": 11,
+          "escanos_min": 10,
+          "escanos_max": 12,
+          "escanos_p10_p90": [
+            10,
+            13
+          ]
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.3,
+          "escanos_central": 7,
+          "escanos_mediana": 7,
+          "escanos_min": 6,
+          "escanos_max": 7,
+          "escanos_p10_p90": [
+            6,
+            7
+          ]
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.3,
+          "escanos_central": 4,
+          "escanos_mediana": 4,
+          "escanos_min": 3,
+          "escanos_max": 4,
+          "escanos_p10_p90": [
+            3,
+            4
+          ]
+        },
+        {
+          "partido": "EAJ-PNV",
+          "pct": 0.8,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            3
+          ]
+        },
+        {
+          "partido": "Adelante Andalucía",
+          "pct": 1.6,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            4
+          ]
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.0,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            2
+          ]
+        },
+        {
+          "partido": "Coalición Canaria",
+          "pct": 0.4,
+          "escanos_central": 1,
+          "escanos_mediana": 1,
+          "escanos_min": 1,
+          "escanos_max": 1,
+          "escanos_p10_p90": [
+            1,
+            1
+          ]
+        },
+        {
+          "partido": "PP–UPN (Navarra)",
+          "pct": 0.2,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            2
+          ]
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.6,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "escanos_p10_p90": [
+            0,
+            1
+          ]
+        },
+        {
+          "partido": "SALF",
+          "pct": 2.1,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Teruel Existe",
+          "pct": 0.0,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Otras candidaturas",
+          "pct": 2.2,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ],
+          "tipo": "otros"
+        }
+      ],
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://laseptima.com/wp-content/uploads/2026/11/barometro-n18-21nov2026.pdf"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n18_20261122.pdf",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n18_20261122.html",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n18_20261122.pdf": "1b43890217784f2715cc64985a0c44b31d60c6011d8b3b19e3326a5c77430d1b",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n18_20261122.html": "ef2f9fa0943e5a1afa5abd81d970297821a6b146df3fc5d63892fafb6fd38a46",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json": "6b8bbf5e0dd4373970b0aba3715fc018571c90f5b80e23f11a10171640d1d152",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json": "385857744ac1ced559a8b8e9682b9a5d4c24f3535f6829de3960f661652d0d23"
+      },
+      "discrepancias_fuente": "Ninguna en las cifras; coinciden con el gráfico 'Evolución del tracking' del n.º 19.",
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "swdemoscopia-2026-11-21",
+      "rol": "media",
+      "rol_nota": "Entrega del tracking diario; superada en la media por las siguientes (la última es swdemoscopia-2026-11-23, n.º 19).",
+      "encuestadora": "SW Demoscopia",
+      "cliente_medio": "La Séptima",
+      "estudio": "Barómetro electoral n.º 17 (tracking electoral continuo de SW Demoscopia para La Séptima)",
+      "fecha_publicacion": "2026-11-23",
+      "fecha_publicacion_nota": "Primera publicación verificable: subida del PDF a laseptima.com (web de La Séptima, el medio que encarga el estudio), 2026-11-23; la entrada de la web está retrofechada a la fecha de los datos. El PDF dice entregado el 2026-11-21 (entrega al cliente, no publicación). Fecha de entrega que imprime el PDF ('Entregado el 21 de noviembre de 2026'), convención de la propia SW ('publicados en cada barómetro', eje 'día de entrega') y la usada en swdemoscopia-2026-11-11. Publicación original verificable: entrada 'Barómetro electoral n.º 17' de laseptima.com (web oficial de La Séptima TV) con el PDF descargable, subido el 2026-11-23 a las 10:09:21 UTC (wp-json); la entrada lleva fecha retroactiva (la de los datos).",
+      "trabajo_campo": {
+        "inicio": "2026-10-26",
+        "fin": "2026-11-20"
+      },
+      "trabajo_campo_nota": "Tracking continuo: 350 entrevistas por jornada del 26-oct al 4-nov y 500 desde el 5-nov; esta entrega acumula las jornadas del 26 de octubre al 20 de noviembre.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 11500,
+      "metodo": "Entrevista telefónica asistida por ordenador (CATI, fijos y móviles); ponderación por sexo, edad, CCAA (censo) y probabilidad de votar; estimación con el 'Modelo SW'; escaños por D'Hondt provincial (barrera del 3%), con 40.000 simulaciones para mediana y horquillas.",
+      "margen_error": "±0,9 puntos para el conjunto (95%, p=q=50)",
+      "base_porcentajes": "% sobre candidaturas y voto en blanco ('intención directa de voto normalizada sobre candidaturas y voto en blanco'); sin fila de blanco",
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "Tabla 'Voto y escaños por candidatura' (16 filas, 'Total 100,0' y 350 escaños).",
+      "proyeccion_escanos": "central + mediana + P25–P75 (escanos_min/max) + P10–P90",
+      "proyeccion_escanos_nota": "Columnas de la tabla: reparto central (D'Hondt sobre la estimación puntual), mediana y horquillas P25–P75 y P10–P90 de 40.000 simulaciones.",
+      "estimacion_voto": [
+        {
+          "partido": "PSOE",
+          "pct": 32.5,
+          "escanos_central": 134,
+          "escanos_mediana": 133,
+          "escanos_min": 131,
+          "escanos_max": 136,
+          "escanos_p10_p90": [
+            128,
+            139
+          ]
+        },
+        {
+          "partido": "PP",
+          "pct": 29.7,
+          "escanos_central": 121,
+          "escanos_mediana": 122,
+          "escanos_min": 119,
+          "escanos_max": 125,
+          "escanos_p10_p90": [
+            116,
+            128
+          ],
+          "nota": "Sin Navarra: PP y UPN concurren en lista única, que SW presenta como candidatura propia 'PP–UPN (Navarra)'."
+        },
+        {
+          "partido": "Vox",
+          "pct": 15.9,
+          "escanos_central": 52,
+          "escanos_mediana": 51,
+          "escanos_min": 47,
+          "escanos_max": 55,
+          "escanos_p10_p90": [
+            44,
+            58
+          ]
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 6.8,
+          "escanos_central": 10,
+          "escanos_mediana": 10,
+          "escanos_min": 9,
+          "escanos_max": 11,
+          "escanos_p10_p90": [
+            8,
+            12
+          ],
+          "nota": "Incluye a Compromís: Front Valencià y a Unidad del Pueblo Canario (UPC) (ficha técnica)."
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.7,
+          "escanos_central": 11,
+          "escanos_mediana": 11,
+          "escanos_min": 10,
+          "escanos_max": 12,
+          "escanos_p10_p90": [
+            10,
+            13
+          ]
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.3,
+          "escanos_central": 7,
+          "escanos_mediana": 7,
+          "escanos_min": 7,
+          "escanos_max": 7,
+          "escanos_p10_p90": [
+            6,
+            7
+          ]
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.3,
+          "escanos_central": 4,
+          "escanos_mediana": 4,
+          "escanos_min": 3,
+          "escanos_max": 4,
+          "escanos_p10_p90": [
+            3,
+            5
+          ]
+        },
+        {
+          "partido": "EAJ-PNV",
+          "pct": 0.8,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            3
+          ]
+        },
+        {
+          "partido": "Adelante Andalucía",
+          "pct": 1.6,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            3
+          ]
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.0,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            2
+          ]
+        },
+        {
+          "partido": "Coalición Canaria",
+          "pct": 0.4,
+          "escanos_central": 1,
+          "escanos_mediana": 1,
+          "escanos_min": 1,
+          "escanos_max": 1,
+          "escanos_p10_p90": [
+            1,
+            1
+          ]
+        },
+        {
+          "partido": "PP–UPN (Navarra)",
+          "pct": 0.2,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            2
+          ]
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.6,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "escanos_p10_p90": [
+            0,
+            1
+          ]
+        },
+        {
+          "partido": "SALF",
+          "pct": 2.0,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Teruel Existe",
+          "pct": 0.0,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Otras candidaturas",
+          "pct": 2.2,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ],
+          "tipo": "otros"
+        }
+      ],
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://laseptima.com/wp-content/uploads/2026/11/barometro-n17-20nov2026.pdf"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n17_20261121.pdf",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n17_20261121.html",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n17_20261121.pdf": "889a9f99883e00340d8091ba8c15c34ff9bf6d2e4d248905280ef59fb0fbf866",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n17_20261121.html": "847528291b3acf72ecb397513b20e6ddc3a9dc9371cba34c167ff2310d64fc37",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json": "6b8bbf5e0dd4373970b0aba3715fc018571c90f5b80e23f11a10171640d1d152",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json": "385857744ac1ced559a8b8e9682b9a5d4c24f3535f6829de3960f661652d0d23"
+      },
+      "discrepancias_fuente": "Ninguna en las cifras; coinciden con el gráfico 'Evolución del tracking' del n.º 19.",
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "swdemoscopia-2026-11-20",
+      "rol": "media",
+      "rol_nota": "Entrega del tracking diario; superada en la media por las siguientes (la última es swdemoscopia-2026-11-23, n.º 19).",
+      "encuestadora": "SW Demoscopia",
+      "cliente_medio": "La Séptima",
+      "estudio": "Barómetro electoral n.º 16 (tracking electoral continuo de SW Demoscopia para La Séptima)",
+      "fecha_publicacion": "2026-11-23",
+      "fecha_publicacion_nota": "Primera publicación verificable: subida del PDF a laseptima.com (web de La Séptima, el medio que encarga el estudio), 2026-11-23; la entrada de la web está retrofechada a la fecha de los datos. El PDF dice entregado el 2026-11-20 (entrega al cliente, no publicación). Fecha de entrega que imprime el PDF ('Entregado el 20 de noviembre de 2026'), convención de la propia SW ('publicados en cada barómetro', eje 'día de entrega') y la usada en swdemoscopia-2026-11-11. Publicación original verificable: entrada 'Barómetro electoral n.º 16' de laseptima.com (web oficial de La Séptima TV) con el PDF descargable, subido el 2026-11-23 a las 10:08:17 UTC (wp-json); la entrada lleva fecha retroactiva (la de los datos).",
+      "trabajo_campo": {
+        "inicio": "2026-10-26",
+        "fin": "2026-11-19"
+      },
+      "trabajo_campo_nota": "Tracking continuo: 350 entrevistas por jornada del 26-oct al 4-nov y 500 desde el 5-nov; esta entrega acumula las jornadas del 26 de octubre al 19 de noviembre.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 11000,
+      "metodo": "Entrevista telefónica asistida por ordenador (CATI, fijos y móviles); ponderación por sexo, edad, CCAA (censo) y probabilidad de votar; estimación con el 'Modelo SW'; escaños por D'Hondt provincial (barrera del 3%), con 40.000 simulaciones para mediana y horquillas.",
+      "margen_error": "±0,9 puntos para el conjunto (95%, p=q=50)",
+      "base_porcentajes": "% sobre candidaturas y voto en blanco ('intención directa de voto normalizada sobre candidaturas y voto en blanco'); sin fila de blanco",
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "Tabla 'Voto y escaños por candidatura' (16 filas, 'Total 100,0' y 350 escaños).",
+      "proyeccion_escanos": "central + mediana + P25–P75 (escanos_min/max) + P10–P90",
+      "proyeccion_escanos_nota": "Columnas de la tabla: reparto central (D'Hondt sobre la estimación puntual), mediana y horquillas P25–P75 y P10–P90 de 40.000 simulaciones.",
+      "estimacion_voto": [
+        {
+          "partido": "PSOE",
+          "pct": 32.1,
+          "escanos_central": 134,
+          "escanos_mediana": 132,
+          "escanos_min": 129,
+          "escanos_max": 135,
+          "escanos_p10_p90": [
+            126,
+            137
+          ]
+        },
+        {
+          "partido": "PP",
+          "pct": 29.4,
+          "escanos_central": 120,
+          "escanos_mediana": 120,
+          "escanos_min": 117,
+          "escanos_max": 124,
+          "escanos_p10_p90": [
+            114,
+            126
+          ],
+          "nota": "Sin Navarra: PP y UPN concurren en lista única, que SW presenta como candidatura propia 'PP–UPN (Navarra)'."
+        },
+        {
+          "partido": "Vox",
+          "pct": 16.3,
+          "escanos_central": 53,
+          "escanos_mediana": 54,
+          "escanos_min": 50,
+          "escanos_max": 58,
+          "escanos_p10_p90": [
+            47,
+            61
+          ]
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 6.9,
+          "escanos_central": 10,
+          "escanos_mediana": 10,
+          "escanos_min": 9,
+          "escanos_max": 12,
+          "escanos_p10_p90": [
+            8,
+            13
+          ],
+          "nota": "Incluye a Compromís: Front Valencià y a Unidad del Pueblo Canario (UPC) (ficha técnica)."
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.7,
+          "escanos_central": 11,
+          "escanos_mediana": 11,
+          "escanos_min": 11,
+          "escanos_max": 12,
+          "escanos_p10_p90": [
+            10,
+            13
+          ]
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.3,
+          "escanos_central": 7,
+          "escanos_mediana": 7,
+          "escanos_min": 7,
+          "escanos_max": 7,
+          "escanos_p10_p90": [
+            6,
+            7
+          ]
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.3,
+          "escanos_central": 4,
+          "escanos_mediana": 4,
+          "escanos_min": 4,
+          "escanos_max": 4,
+          "escanos_p10_p90": [
+            3,
+            5
+          ]
+        },
+        {
+          "partido": "EAJ-PNV",
+          "pct": 0.8,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            3
+          ]
+        },
+        {
+          "partido": "Adelante Andalucía",
+          "pct": 1.6,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            3
+          ]
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.1,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            3
+          ]
+        },
+        {
+          "partido": "Coalición Canaria",
+          "pct": 0.4,
+          "escanos_central": 1,
+          "escanos_mediana": 1,
+          "escanos_min": 1,
+          "escanos_max": 1,
+          "escanos_p10_p90": [
+            1,
+            1
+          ]
+        },
+        {
+          "partido": "PP–UPN (Navarra)",
+          "pct": 0.2,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            2
+          ]
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.6,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "escanos_p10_p90": [
+            0,
+            1
+          ]
+        },
+        {
+          "partido": "SALF",
+          "pct": 2.0,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Teruel Existe",
+          "pct": 0.0,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Otras candidaturas",
+          "pct": 2.3,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ],
+          "tipo": "otros"
+        }
+      ],
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://laseptima.com/wp-content/uploads/2026/11/barometro-n16-19nov2026.pdf"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n16_20261120.pdf",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n16_20261120.html",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n16_20261120.pdf": "8bcc2d136f8e5ef44667e4e54675aea79cd844250a92d1d6c63889dad685644e",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n16_20261120.html": "2b551c90bbb437512e583389a1bcb1edaaab63cb495dc9299944f26dab2af227",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json": "6b8bbf5e0dd4373970b0aba3715fc018571c90f5b80e23f11a10171640d1d152",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json": "385857744ac1ced559a8b8e9682b9a5d4c24f3535f6829de3960f661652d0d23"
+      },
+      "discrepancias_fuente": "Ninguna en las cifras; coinciden con el gráfico 'Evolución del tracking' del n.º 19.",
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "swdemoscopia-2026-11-19",
+      "rol": "media",
+      "rol_nota": "Entrega del tracking diario; superada en la media por las siguientes (la última es swdemoscopia-2026-11-23, n.º 19).",
+      "encuestadora": "SW Demoscopia",
+      "cliente_medio": "La Séptima",
+      "estudio": "Barómetro electoral n.º 15 (tracking electoral continuo de SW Demoscopia para La Séptima)",
+      "fecha_publicacion": "2026-11-20",
+      "fecha_publicacion_nota": "Primera publicación verificable: subida del PDF a laseptima.com (web de La Séptima, el medio que encarga el estudio), 2026-11-20; la entrada de la web está retrofechada a la fecha de los datos. El PDF dice entregado el 2026-11-19 (entrega al cliente, no publicación). Fecha de entrega que imprime el PDF ('Entregado el 19 de noviembre de 2026'), convención de la propia SW ('publicados en cada barómetro', eje 'día de entrega') y la usada en swdemoscopia-2026-11-11. Publicación original verificable: entrada 'Barómetro electoral n.º 15' de laseptima.com (web oficial de La Séptima TV) con el PDF descargable, subido el 2026-11-20 a las 11:49:21 UTC (wp-json); la entrada lleva fecha retroactiva (la de los datos).",
+      "trabajo_campo": {
+        "inicio": "2026-10-26",
+        "fin": "2026-11-18"
+      },
+      "trabajo_campo_nota": "Tracking continuo: 350 entrevistas por jornada del 26-oct al 4-nov y 500 desde el 5-nov; esta entrega acumula las jornadas del 26 de octubre al 18 de noviembre.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 10500,
+      "metodo": "Entrevista telefónica asistida por ordenador (CATI, fijos y móviles); ponderación por sexo, edad, CCAA (censo) y probabilidad de votar; estimación con el 'Modelo SW'; escaños por D'Hondt provincial (barrera del 3%), con 40.000 simulaciones para mediana y horquillas.",
+      "margen_error": "±1,0 puntos para el conjunto (95%, p=q=50)",
+      "base_porcentajes": "% sobre candidaturas y voto en blanco ('intención directa de voto normalizada sobre candidaturas y voto en blanco'); sin fila de blanco",
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "Tabla 'Voto y escaños por candidatura' (16 filas, 'Total 100,0' y 350 escaños).",
+      "proyeccion_escanos": "central + mediana + P25–P75 (escanos_min/max) + P10–P90",
+      "proyeccion_escanos_nota": "Columnas de la tabla: reparto central (D'Hondt sobre la estimación puntual), mediana y horquillas P25–P75 y P10–P90 de 40.000 simulaciones.",
+      "estimacion_voto": [
+        {
+          "partido": "PSOE",
+          "pct": 31.8,
+          "escanos_central": 133,
+          "escanos_mediana": 131,
+          "escanos_min": 128,
+          "escanos_max": 133,
+          "escanos_p10_p90": [
+            125,
+            136
+          ]
+        },
+        {
+          "partido": "PP",
+          "pct": 29.2,
+          "escanos_central": 120,
+          "escanos_mediana": 120,
+          "escanos_min": 117,
+          "escanos_max": 123,
+          "escanos_p10_p90": [
+            114,
+            126
+          ],
+          "nota": "Sin Navarra: PP y UPN concurren en lista única, que SW presenta como candidatura propia 'PP–UPN (Navarra)'."
+        },
+        {
+          "partido": "Vox",
+          "pct": 16.4,
+          "escanos_central": 53,
+          "escanos_mediana": 54,
+          "escanos_min": 50,
+          "escanos_max": 58,
+          "escanos_p10_p90": [
+            47,
+            61
+          ]
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 7.3,
+          "escanos_central": 11,
+          "escanos_mediana": 12,
+          "escanos_min": 10,
+          "escanos_max": 13,
+          "escanos_p10_p90": [
+            9,
+            14
+          ],
+          "nota": "Incluye a Compromís: Front Valencià y a Unidad del Pueblo Canario (UPC) (ficha técnica)."
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.8,
+          "escanos_central": 11,
+          "escanos_mediana": 12,
+          "escanos_min": 11,
+          "escanos_max": 13,
+          "escanos_p10_p90": [
+            10,
+            13
+          ]
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.3,
+          "escanos_central": 7,
+          "escanos_mediana": 7,
+          "escanos_min": 7,
+          "escanos_max": 7,
+          "escanos_p10_p90": [
+            6,
+            7
+          ]
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.3,
+          "escanos_central": 4,
+          "escanos_mediana": 4,
+          "escanos_min": 3,
+          "escanos_max": 4,
+          "escanos_p10_p90": [
+            3,
+            5
+          ]
+        },
+        {
+          "partido": "EAJ-PNV",
+          "pct": 0.8,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            3
+          ]
+        },
+        {
+          "partido": "Adelante Andalucía",
+          "pct": 1.6,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            3
+          ]
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.0,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            2
+          ]
+        },
+        {
+          "partido": "Coalición Canaria",
+          "pct": 0.4,
+          "escanos_central": 1,
+          "escanos_mediana": 1,
+          "escanos_min": 1,
+          "escanos_max": 1,
+          "escanos_p10_p90": [
+            1,
+            1
+          ]
+        },
+        {
+          "partido": "PP–UPN (Navarra)",
+          "pct": 0.2,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            2
+          ]
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.6,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "escanos_p10_p90": [
+            0,
+            1
+          ]
+        },
+        {
+          "partido": "SALF",
+          "pct": 2.0,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Teruel Existe",
+          "pct": 0.0,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Otras candidaturas",
+          "pct": 2.3,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ],
+          "tipo": "otros"
+        }
+      ],
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://laseptima.com/wp-content/uploads/2026/11/barometro-n15-18nov2026.pdf"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n15_20261119.pdf",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n15_20261119.html",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n15_20261119.pdf": "e6c9409314610eac0efa5df44a9cb36cd8acdde8efeeb5b583c05e0f7033b240",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n15_20261119.html": "7689601192bec0d9e3d61c6424c53b8544f5dce2d33d7a7b20d8db89c877ee01",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json": "6b8bbf5e0dd4373970b0aba3715fc018571c90f5b80e23f11a10171640d1d152",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json": "385857744ac1ced559a8b8e9682b9a5d4c24f3535f6829de3960f661652d0d23"
+      },
+      "discrepancias_fuente": "Ninguna en las cifras; coinciden con el gráfico 'Evolución del tracking' del n.º 19.",
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "swdemoscopia-2026-11-18",
+      "rol": "media",
+      "rol_nota": "Entrega del tracking diario; superada en la media por las siguientes (la última es swdemoscopia-2026-11-23, n.º 19).",
+      "encuestadora": "SW Demoscopia",
+      "cliente_medio": "La Séptima",
+      "estudio": "Barómetro electoral n.º 14 (tracking electoral continuo de SW Demoscopia para La Séptima)",
+      "fecha_publicacion": "2026-11-18",
+      "fecha_publicacion_nota": "Primera publicación verificable: subida del PDF a laseptima.com (web de La Séptima, el medio que encarga el estudio), 2026-11-18; la entrada de la web está retrofechada a la fecha de los datos. El PDF dice entregado el 2026-11-18 (entrega al cliente, no publicación). Fecha de entrega que imprime el PDF ('Entregado el 18 de noviembre de 2026'), convención de la propia SW ('publicados en cada barómetro', eje 'día de entrega') y la usada en swdemoscopia-2026-11-11. Publicación original verificable: entrada 'Barómetro electoral n.º 14' de laseptima.com (web oficial de La Séptima TV) con el PDF descargable, subido el 2026-11-18 a las 16:45:04 UTC (wp-json); la entrada lleva fecha retroactiva (la de los datos).",
+      "trabajo_campo": {
+        "inicio": "2026-10-26",
+        "fin": "2026-11-17"
+      },
+      "trabajo_campo_nota": "Tracking continuo: 350 entrevistas por jornada del 26-oct al 4-nov y 500 desde el 5-nov; esta entrega acumula las jornadas del 26 de octubre al 17 de noviembre.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 10000,
+      "metodo": "Entrevista telefónica asistida por ordenador (CATI, fijos y móviles); ponderación por sexo, edad, CCAA (censo) y probabilidad de votar; estimación con el 'Modelo SW'; escaños por D'Hondt provincial (barrera del 3%), con 40.000 simulaciones para mediana y horquillas.",
+      "margen_error": "±1,0 puntos para el conjunto (95%, p=q=50)",
+      "base_porcentajes": "% sobre candidaturas y voto en blanco ('intención directa de voto normalizada sobre candidaturas y voto en blanco'); sin fila de blanco",
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "Tabla 'Voto y escaños por candidatura' (16 filas, 'Total 100,0' y 350 escaños).",
+      "proyeccion_escanos": "central + mediana + P25–P75 (escanos_min/max) + P10–P90",
+      "proyeccion_escanos_nota": "Columnas de la tabla: reparto central (D'Hondt sobre la estimación puntual), mediana y horquillas P25–P75 y P10–P90 de 40.000 simulaciones.",
+      "estimacion_voto": [
+        {
+          "partido": "PSOE",
+          "pct": 31.9,
+          "escanos_central": 134,
+          "escanos_mediana": 131,
+          "escanos_min": 129,
+          "escanos_max": 134,
+          "escanos_p10_p90": [
+            126,
+            137
+          ]
+        },
+        {
+          "partido": "PP",
+          "pct": 29.1,
+          "escanos_central": 118,
+          "escanos_mediana": 118,
+          "escanos_min": 115,
+          "escanos_max": 122,
+          "escanos_p10_p90": [
+            112,
+            125
+          ],
+          "nota": "Sin Navarra: PP y UPN concurren en lista única, que SW presenta como candidatura propia 'PP–UPN (Navarra)'."
+        },
+        {
+          "partido": "Vox",
+          "pct": 16.4,
+          "escanos_central": 53,
+          "escanos_mediana": 54,
+          "escanos_min": 51,
+          "escanos_max": 58,
+          "escanos_p10_p90": [
+            47,
+            61
+          ]
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 7.3,
+          "escanos_central": 12,
+          "escanos_mediana": 12,
+          "escanos_min": 10,
+          "escanos_max": 13,
+          "escanos_p10_p90": [
+            9,
+            14
+          ],
+          "nota": "Incluye a Compromís: Front Valencià y a Unidad del Pueblo Canario (UPC) (ficha técnica)."
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.8,
+          "escanos_central": 11,
+          "escanos_mediana": 12,
+          "escanos_min": 11,
+          "escanos_max": 13,
+          "escanos_p10_p90": [
+            11,
+            14
+          ]
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.3,
+          "escanos_central": 7,
+          "escanos_mediana": 7,
+          "escanos_min": 7,
+          "escanos_max": 7,
+          "escanos_p10_p90": [
+            6,
+            7
+          ]
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.3,
+          "escanos_central": 4,
+          "escanos_mediana": 4,
+          "escanos_min": 3,
+          "escanos_max": 4,
+          "escanos_p10_p90": [
+            3,
+            5
+          ]
+        },
+        {
+          "partido": "EAJ-PNV",
+          "pct": 0.7,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            3
+          ]
+        },
+        {
+          "partido": "Adelante Andalucía",
+          "pct": 1.6,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            3
+          ]
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.0,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            2
+          ]
+        },
+        {
+          "partido": "Coalición Canaria",
+          "pct": 0.4,
+          "escanos_central": 1,
+          "escanos_mediana": 1,
+          "escanos_min": 1,
+          "escanos_max": 1,
+          "escanos_p10_p90": [
+            1,
+            1
+          ]
+        },
+        {
+          "partido": "PP–UPN (Navarra)",
+          "pct": 0.2,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            2
+          ]
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.6,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "escanos_p10_p90": [
+            0,
+            1
+          ]
+        },
+        {
+          "partido": "SALF",
+          "pct": 2.0,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Teruel Existe",
+          "pct": 0.0,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Otras candidaturas",
+          "pct": 2.4,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ],
+          "tipo": "otros"
+        }
+      ],
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://laseptima.com/wp-content/uploads/2026/11/barometro-n14-17nov2026-1.pdf"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n14_20261118.pdf",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n14_20261118.html",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n14_20261118.pdf": "5ab574c286fe2c020822c423e65e0b43ab0e3690a4a5912b98d661e1a6226957",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n14_20261118.html": "20949680219d50cc1688a5cd14e0134e70f1cf554c34368644776f66c452bae1",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json": "6b8bbf5e0dd4373970b0aba3715fc018571c90f5b80e23f11a10171640d1d152",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json": "385857744ac1ced559a8b8e9682b9a5d4c24f3535f6829de3960f661652d0d23"
+      },
+      "discrepancias_fuente": "Ninguna en las cifras; coinciden con el gráfico 'Evolución del tracking' del n.º 19.",
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "swdemoscopia-2026-11-17",
+      "rol": "media",
+      "rol_nota": "Entrega del tracking diario; superada en la media por las siguientes (la última es swdemoscopia-2026-11-23, n.º 19).",
+      "encuestadora": "SW Demoscopia",
+      "cliente_medio": "La Séptima",
+      "estudio": "Barómetro electoral n.º 13 (tracking electoral continuo de SW Demoscopia para La Séptima)",
+      "fecha_publicacion": "2026-11-18",
+      "fecha_publicacion_nota": "Primera publicación verificable: subida del PDF a laseptima.com (web de La Séptima, el medio que encarga el estudio), 2026-11-18; la entrada de la web está retrofechada a la fecha de los datos. El PDF dice entregado el 2026-11-17 (entrega al cliente, no publicación). Fecha de entrega que imprime el PDF ('Entregado el 17 de noviembre de 2026'), convención de la propia SW ('publicados en cada barómetro', eje 'día de entrega') y la usada en swdemoscopia-2026-11-11. Publicación original verificable: entrada 'Barómetro electoral n.º 13' de laseptima.com (web oficial de La Séptima TV) con el PDF descargable, subido el 2026-11-18 a las 11:26:40 UTC (wp-json); la entrada lleva fecha retroactiva (la de los datos).",
+      "trabajo_campo": {
+        "inicio": "2026-10-26",
+        "fin": "2026-11-16"
+      },
+      "trabajo_campo_nota": "Tracking continuo: 350 entrevistas por jornada del 26-oct al 4-nov y 500 desde el 5-nov; esta entrega acumula las jornadas del 26 de octubre al 16 de noviembre.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 9500,
+      "metodo": "Entrevista telefónica asistida por ordenador (CATI, fijos y móviles); ponderación por sexo, edad, CCAA (censo) y probabilidad de votar; estimación con el 'Modelo SW'; escaños por D'Hondt provincial (barrera del 3%), con 40.000 simulaciones para mediana y horquillas.",
+      "margen_error": "±1,0 puntos para el conjunto (95%, p=q=50)",
+      "base_porcentajes": "% sobre candidaturas y voto en blanco ('intención directa de voto normalizada sobre candidaturas y voto en blanco'); sin fila de blanco",
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "Tabla 'Voto y escaños por candidatura' (16 filas, 'Total 100,0' y 350 escaños).",
+      "proyeccion_escanos": "central + mediana + P25–P75 (escanos_min/max) + P10–P90",
+      "proyeccion_escanos_nota": "Columnas de la tabla: reparto central (D'Hondt sobre la estimación puntual), mediana y horquillas P25–P75 y P10–P90 de 40.000 simulaciones.",
+      "estimacion_voto": [
+        {
+          "partido": "PSOE",
+          "pct": 31.9,
+          "escanos_central": 134,
+          "escanos_mediana": 131,
+          "escanos_min": 129,
+          "escanos_max": 134,
+          "escanos_p10_p90": [
+            126,
+            137
+          ]
+        },
+        {
+          "partido": "PP",
+          "pct": 28.9,
+          "escanos_central": 118,
+          "escanos_mediana": 117,
+          "escanos_min": 114,
+          "escanos_max": 121,
+          "escanos_p10_p90": [
+            111,
+            124
+          ],
+          "nota": "Sin Navarra: PP y UPN concurren en lista única, que SW presenta como candidatura propia 'PP–UPN (Navarra)'."
+        },
+        {
+          "partido": "Vox",
+          "pct": 16.5,
+          "escanos_central": 54,
+          "escanos_mediana": 55,
+          "escanos_min": 51,
+          "escanos_max": 59,
+          "escanos_p10_p90": [
+            48,
+            62
+          ]
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 7.3,
+          "escanos_central": 11,
+          "escanos_mediana": 12,
+          "escanos_min": 10,
+          "escanos_max": 13,
+          "escanos_p10_p90": [
+            9,
+            14
+          ],
+          "nota": "Incluye a Compromís: Front Valencià y a Unidad del Pueblo Canario (UPC) (ficha técnica)."
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.8,
+          "escanos_central": 11,
+          "escanos_mediana": 12,
+          "escanos_min": 11,
+          "escanos_max": 13,
+          "escanos_p10_p90": [
+            11,
+            14
+          ]
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.3,
+          "escanos_central": 7,
+          "escanos_mediana": 7,
+          "escanos_min": 7,
+          "escanos_max": 7,
+          "escanos_p10_p90": [
+            6,
+            7
+          ]
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.3,
+          "escanos_central": 4,
+          "escanos_mediana": 4,
+          "escanos_min": 3,
+          "escanos_max": 4,
+          "escanos_p10_p90": [
+            3,
+            5
+          ]
+        },
+        {
+          "partido": "EAJ-PNV",
+          "pct": 0.8,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            3
+          ]
+        },
+        {
+          "partido": "Adelante Andalucía",
+          "pct": 1.6,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            3
+          ]
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.0,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            3
+          ]
+        },
+        {
+          "partido": "Coalición Canaria",
+          "pct": 0.4,
+          "escanos_central": 1,
+          "escanos_mediana": 1,
+          "escanos_min": 1,
+          "escanos_max": 1,
+          "escanos_p10_p90": [
+            1,
+            1
+          ]
+        },
+        {
+          "partido": "PP–UPN (Navarra)",
+          "pct": 0.2,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            2
+          ]
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.7,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "escanos_p10_p90": [
+            0,
+            1
+          ]
+        },
+        {
+          "partido": "SALF",
+          "pct": 2.0,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Teruel Existe",
+          "pct": 0.0,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Otras candidaturas",
+          "pct": 2.3,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ],
+          "tipo": "otros"
+        }
+      ],
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://laseptima.com/wp-content/uploads/2026/11/barometro-n13-16nov2026.pdf"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n13_20261117.pdf",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n13_20261117.html",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n13_20261117.pdf": "0373462d7e9399add0fe673eda4936c7b8be30e8dc7a2fe19a29530dae6506fa",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n13_20261117.html": "0ec9aa2fbf43ecf7c318219d031980349a541d5b6da06a7b1db1492b1129c2dd",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json": "6b8bbf5e0dd4373970b0aba3715fc018571c90f5b80e23f11a10171640d1d152",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json": "385857744ac1ced559a8b8e9682b9a5d4c24f3535f6829de3960f661652d0d23"
+      },
+      "discrepancias_fuente": "Ninguna en las cifras; coinciden con el gráfico 'Evolución del tracking' del n.º 19.",
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "swdemoscopia-2026-11-16",
+      "rol": "media",
+      "rol_nota": "Entrega del tracking diario; superada en la media por las siguientes (la última es swdemoscopia-2026-11-23, n.º 19).",
+      "encuestadora": "SW Demoscopia",
+      "cliente_medio": "La Séptima",
+      "estudio": "Barómetro electoral n.º 12 (tracking electoral continuo de SW Demoscopia para La Séptima)",
+      "fecha_publicacion": "2026-11-18",
+      "fecha_publicacion_nota": "Primera publicación verificable: subida del PDF a laseptima.com (web de La Séptima, el medio que encarga el estudio), 2026-11-18; la entrada de la web está retrofechada a la fecha de los datos. El PDF dice entregado el 2026-11-16 (entrega al cliente, no publicación). Fecha de entrega que imprime el PDF ('Entregado el 16 de noviembre de 2026'), convención de la propia SW ('publicados en cada barómetro', eje 'día de entrega') y la usada en swdemoscopia-2026-11-11. Publicación original verificable: entrada 'Barómetro electoral n.º 12' de laseptima.com (web oficial de La Séptima TV) con el PDF descargable, subido el 2026-11-18 a las 10:49:45 UTC (wp-json); la entrada lleva fecha retroactiva (la de los datos).",
+      "trabajo_campo": {
+        "inicio": "2026-10-26",
+        "fin": "2026-11-15"
+      },
+      "trabajo_campo_nota": "Tracking continuo: 350 entrevistas por jornada del 26-oct al 4-nov y 500 desde el 5-nov; esta entrega acumula las jornadas del 26 de octubre al 15 de noviembre.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 9000,
+      "metodo": "Entrevista telefónica asistida por ordenador (CATI, fijos y móviles); ponderación por sexo, edad, CCAA (censo) y probabilidad de votar; estimación con el 'Modelo SW'; escaños por D'Hondt provincial (barrera del 3%), con 40.000 simulaciones para mediana y horquillas.",
+      "margen_error": "±1,0 puntos para el conjunto (95%, p=q=50)",
+      "base_porcentajes": "% sobre candidaturas y voto en blanco ('intención directa de voto normalizada sobre candidaturas y voto en blanco'); sin fila de blanco",
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "Tabla 'Voto y escaños por candidatura' (16 filas, 'Total 100,0' y 350 escaños).",
+      "proyeccion_escanos": "central + mediana + P25–P75 (escanos_min/max) + P10–P90",
+      "proyeccion_escanos_nota": "Columnas de la tabla: reparto central (D'Hondt sobre la estimación puntual), mediana y horquillas P25–P75 y P10–P90 de 40.000 simulaciones.",
+      "estimacion_voto": [
+        {
+          "partido": "PSOE",
+          "pct": 31.8,
+          "escanos_central": 134,
+          "escanos_mediana": 131,
+          "escanos_min": 128,
+          "escanos_max": 134,
+          "escanos_p10_p90": [
+            126,
+            136
+          ]
+        },
+        {
+          "partido": "PP",
+          "pct": 28.6,
+          "escanos_central": 115,
+          "escanos_mediana": 116,
+          "escanos_min": 112,
+          "escanos_max": 119,
+          "escanos_p10_p90": [
+            110,
+            122
+          ],
+          "nota": "Sin Navarra: PP y UPN concurren en lista única, que SW presenta como candidatura propia 'PP–UPN (Navarra)'."
+        },
+        {
+          "partido": "Vox",
+          "pct": 16.8,
+          "escanos_central": 57,
+          "escanos_mediana": 57,
+          "escanos_min": 53,
+          "escanos_max": 61,
+          "escanos_p10_p90": [
+            50,
+            64
+          ]
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 7.4,
+          "escanos_central": 11,
+          "escanos_mediana": 12,
+          "escanos_min": 10,
+          "escanos_max": 13,
+          "escanos_p10_p90": [
+            9,
+            14
+          ],
+          "nota": "Incluye a Compromís: Front Valencià y a Unidad del Pueblo Canario (UPC) (ficha técnica)."
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.8,
+          "escanos_central": 11,
+          "escanos_mediana": 12,
+          "escanos_min": 11,
+          "escanos_max": 13,
+          "escanos_p10_p90": [
+            11,
+            14
+          ]
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.3,
+          "escanos_central": 7,
+          "escanos_mediana": 7,
+          "escanos_min": 7,
+          "escanos_max": 7,
+          "escanos_p10_p90": [
+            6,
+            7
+          ]
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.3,
+          "escanos_central": 4,
+          "escanos_mediana": 4,
+          "escanos_min": 3,
+          "escanos_max": 4,
+          "escanos_p10_p90": [
+            3,
+            5
+          ]
+        },
+        {
+          "partido": "EAJ-PNV",
+          "pct": 0.8,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            3
+          ]
+        },
+        {
+          "partido": "Adelante Andalucía",
+          "pct": 1.5,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            3
+          ]
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.0,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            3
+          ]
+        },
+        {
+          "partido": "Coalición Canaria",
+          "pct": 0.4,
+          "escanos_central": 1,
+          "escanos_mediana": 1,
+          "escanos_min": 1,
+          "escanos_max": 1,
+          "escanos_p10_p90": [
+            1,
+            1
+          ]
+        },
+        {
+          "partido": "PP–UPN (Navarra)",
+          "pct": 0.2,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            2
+          ]
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.7,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "escanos_p10_p90": [
+            0,
+            1
+          ]
+        },
+        {
+          "partido": "SALF",
+          "pct": 2.0,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Teruel Existe",
+          "pct": 0.0,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Otras candidaturas",
+          "pct": 2.4,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ],
+          "tipo": "otros"
+        }
+      ],
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://laseptima.com/wp-content/uploads/2026/11/barometro-n12-15nov2026.pdf"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n12_20261116.pdf",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n12_20261116.html",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n12_20261116.pdf": "057ae3264458c396855fccc46f0e99da8e7fe41a0596ee9bf8d5907369617202",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n12_20261116.html": "567b2a58309d3732192b4da7c235a18c78e92685020f7f3d658731a9f7e8a464",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json": "6b8bbf5e0dd4373970b0aba3715fc018571c90f5b80e23f11a10171640d1d152",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json": "385857744ac1ced559a8b8e9682b9a5d4c24f3535f6829de3960f661652d0d23"
+      },
+      "discrepancias_fuente": "La ficha dice 20 jornadas (son 21).",
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "swdemoscopia-2026-11-15",
+      "rol": "media",
+      "rol_nota": "Entrega del tracking diario; superada en la media por las siguientes (la última es swdemoscopia-2026-11-23, n.º 19).",
+      "encuestadora": "SW Demoscopia",
+      "cliente_medio": "La Séptima",
+      "estudio": "Barómetro electoral n.º 11 (tracking electoral continuo de SW Demoscopia para La Séptima)",
+      "fecha_publicacion": "2026-11-18",
+      "fecha_publicacion_nota": "Primera publicación verificable: subida del PDF a laseptima.com (web de La Séptima, el medio que encarga el estudio), 2026-11-18; la entrada de la web está retrofechada a la fecha de los datos. El PDF dice entregado el 2026-11-15 (entrega al cliente, no publicación). Fecha de entrega que imprime el PDF ('Entregado el 15 de noviembre de 2026'), convención de la propia SW ('publicados en cada barómetro', eje 'día de entrega') y la usada en swdemoscopia-2026-11-11. Publicación original verificable: entrada 'Barómetro electoral n.º 11' de laseptima.com (web oficial de La Séptima TV) con el PDF descargable, subido el 2026-11-18 a las 10:48:37 UTC (wp-json); la entrada lleva fecha retroactiva (la de los datos).",
+      "trabajo_campo": {
+        "inicio": "2026-10-26",
+        "fin": "2026-11-14"
+      },
+      "trabajo_campo_nota": "Tracking continuo: 350 entrevistas por jornada del 26-oct al 4-nov y 500 desde el 5-nov; esta entrega acumula las jornadas del 26 de octubre al 14 de noviembre.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 8500,
+      "metodo": "Entrevista telefónica asistida por ordenador (CATI, fijos y móviles); ponderación por sexo, edad, CCAA (censo) y probabilidad de votar; estimación con el 'Modelo SW'; escaños por D'Hondt provincial (barrera del 3%), con 40.000 simulaciones para mediana y horquillas.",
+      "margen_error": "±1,1 puntos para el conjunto (95%, p=q=50)",
+      "base_porcentajes": "% sobre candidaturas y voto en blanco ('intención directa de voto normalizada sobre candidaturas y voto en blanco'); sin fila de blanco",
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "Tabla 'Voto y escaños por candidatura' (16 filas, 'Total 100,0' y 350 escaños).",
+      "proyeccion_escanos": "central + mediana + P25–P75 (escanos_min/max) + P10–P90",
+      "proyeccion_escanos_nota": "Columnas de la tabla: reparto central (D'Hondt sobre la estimación puntual), mediana y horquillas P25–P75 y P10–P90 de 40.000 simulaciones.",
+      "estimacion_voto": [
+        {
+          "partido": "PSOE",
+          "pct": 31.7,
+          "escanos_central": 133,
+          "escanos_mediana": 131,
+          "escanos_min": 129,
+          "escanos_max": 134,
+          "escanos_p10_p90": [
+            126,
+            137
+          ]
+        },
+        {
+          "partido": "PP",
+          "pct": 28.4,
+          "escanos_central": 114,
+          "escanos_mediana": 115,
+          "escanos_min": 112,
+          "escanos_max": 118,
+          "escanos_p10_p90": [
+            109,
+            121
+          ],
+          "nota": "Sin Navarra: PP y UPN concurren en lista única, que SW presenta como candidatura propia 'PP–UPN (Navarra)'."
+        },
+        {
+          "partido": "Vox",
+          "pct": 16.9,
+          "escanos_central": 59,
+          "escanos_mediana": 58,
+          "escanos_min": 54,
+          "escanos_max": 61,
+          "escanos_p10_p90": [
+            50,
+            64
+          ]
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 7.3,
+          "escanos_central": 11,
+          "escanos_mediana": 11,
+          "escanos_min": 10,
+          "escanos_max": 13,
+          "escanos_p10_p90": [
+            9,
+            14
+          ],
+          "nota": "Incluye a Compromís: Front Valencià y a Unidad del Pueblo Canario (UPC) (ficha técnica)."
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.8,
+          "escanos_central": 11,
+          "escanos_mediana": 12,
+          "escanos_min": 11,
+          "escanos_max": 13,
+          "escanos_p10_p90": [
+            11,
+            13
+          ]
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.4,
+          "escanos_central": 7,
+          "escanos_mediana": 7,
+          "escanos_min": 7,
+          "escanos_max": 7,
+          "escanos_p10_p90": [
+            7,
+            7
+          ]
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.3,
+          "escanos_central": 4,
+          "escanos_mediana": 4,
+          "escanos_min": 4,
+          "escanos_max": 4,
+          "escanos_p10_p90": [
+            3,
+            5
+          ]
+        },
+        {
+          "partido": "EAJ-PNV",
+          "pct": 0.8,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            3
+          ]
+        },
+        {
+          "partido": "Adelante Andalucía",
+          "pct": 1.5,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            3
+          ]
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.1,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            3
+          ]
+        },
+        {
+          "partido": "Coalición Canaria",
+          "pct": 0.4,
+          "escanos_central": 1,
+          "escanos_mediana": 1,
+          "escanos_min": 1,
+          "escanos_max": 1,
+          "escanos_p10_p90": [
+            1,
+            1
+          ]
+        },
+        {
+          "partido": "PP–UPN (Navarra)",
+          "pct": 0.2,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            2
+          ]
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.7,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            1
+          ]
+        },
+        {
+          "partido": "SALF",
+          "pct": 2.0,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Teruel Existe",
+          "pct": 0.0,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Otras candidaturas",
+          "pct": 2.5,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ],
+          "tipo": "otros"
+        }
+      ],
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://laseptima.com/wp-content/uploads/2026/11/barometro-n11-14nov2026.pdf"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n11_20261115.pdf",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n11_20261115.html",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n11_20261115.pdf": "c0174f44834c13faa6df813005e41279b9278b6936905b23c1fcc194ad40162c",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n11_20261115.html": "e3766c4bfb781d4a773c08df75641342e34383a0180ca7c6d52bcd0a083be789",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json": "6b8bbf5e0dd4373970b0aba3715fc018571c90f5b80e23f11a10171640d1d152",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json": "385857744ac1ced559a8b8e9682b9a5d4c24f3535f6829de3960f661652d0d23"
+      },
+      "discrepancias_fuente": "La ficha dice 19 jornadas (son 20).",
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "swdemoscopia-2026-11-14",
+      "rol": "media",
+      "rol_nota": "Entrega del tracking diario; superada en la media por las siguientes (la última es swdemoscopia-2026-11-23, n.º 19).",
+      "encuestadora": "SW Demoscopia",
+      "cliente_medio": "La Séptima",
+      "estudio": "Barómetro electoral n.º 10 (tracking electoral continuo de SW Demoscopia para La Séptima)",
+      "fecha_publicacion": "2026-11-18",
+      "fecha_publicacion_nota": "Primera publicación verificable: subida del PDF a laseptima.com (web de La Séptima, el medio que encarga el estudio), 2026-11-18; la entrada de la web está retrofechada a la fecha de los datos. El PDF dice entregado el 2026-11-14 (entrega al cliente, no publicación). Fecha de entrega que imprime el PDF ('Entregado el 14 de noviembre de 2026'), convención de la propia SW ('publicados en cada barómetro', eje 'día de entrega') y la usada en swdemoscopia-2026-11-11. Publicación original verificable: entrada 'Barómetro electoral n.º 10' de laseptima.com (web oficial de La Séptima TV) con el PDF descargable, subido el 2026-11-18 a las 10:47:48 UTC (wp-json); la entrada lleva fecha retroactiva (la de los datos).",
+      "trabajo_campo": {
+        "inicio": "2026-10-26",
+        "fin": "2026-11-13"
+      },
+      "trabajo_campo_nota": "Tracking continuo: 350 entrevistas por jornada del 26-oct al 4-nov y 500 desde el 5-nov; esta entrega acumula las jornadas del 26 de octubre al 13 de noviembre.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 8000,
+      "metodo": "Entrevista telefónica asistida por ordenador (CATI, fijos y móviles); ponderación por sexo, edad, CCAA (censo) y probabilidad de votar; estimación con el 'Modelo SW'; escaños por D'Hondt provincial (barrera del 3%), con 40.000 simulaciones para mediana y horquillas.",
+      "margen_error": "±1,1 puntos para el conjunto (95%, p=q=50)",
+      "base_porcentajes": "% sobre candidaturas y voto en blanco ('intención directa de voto normalizada sobre candidaturas y voto en blanco'); sin fila de blanco",
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "Tabla 'Voto y escaños por candidatura' (16 filas, 'Total 100,0' y 350 escaños).",
+      "proyeccion_escanos": "central + mediana + P25–P75 (escanos_min/max) + P10–P90",
+      "proyeccion_escanos_nota": "Columnas de la tabla: reparto central (D'Hondt sobre la estimación puntual), mediana y horquillas P25–P75 y P10–P90 de 40.000 simulaciones.",
+      "estimacion_voto": [
+        {
+          "partido": "PSOE",
+          "pct": 31.7,
+          "escanos_central": 133,
+          "escanos_mediana": 131,
+          "escanos_min": 129,
+          "escanos_max": 134,
+          "escanos_p10_p90": [
+            126,
+            137
+          ]
+        },
+        {
+          "partido": "PP",
+          "pct": 28.3,
+          "escanos_central": 113,
+          "escanos_mediana": 114,
+          "escanos_min": 111,
+          "escanos_max": 118,
+          "escanos_p10_p90": [
+            108,
+            121
+          ],
+          "nota": "Sin Navarra: PP y UPN concurren en lista única, que SW presenta como candidatura propia 'PP–UPN (Navarra)'."
+        },
+        {
+          "partido": "Vox",
+          "pct": 17.1,
+          "escanos_central": 60,
+          "escanos_mediana": 59,
+          "escanos_min": 55,
+          "escanos_max": 62,
+          "escanos_p10_p90": [
+            51,
+            64
+          ]
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 7.3,
+          "escanos_central": 10,
+          "escanos_mediana": 11,
+          "escanos_min": 10,
+          "escanos_max": 13,
+          "escanos_p10_p90": [
+            9,
+            14
+          ],
+          "nota": "Incluye a Compromís: Front Valencià y a Unidad del Pueblo Canario (UPC) (ficha técnica)."
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.8,
+          "escanos_central": 12,
+          "escanos_mediana": 12,
+          "escanos_min": 11,
+          "escanos_max": 13,
+          "escanos_p10_p90": [
+            11,
+            14
+          ]
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.4,
+          "escanos_central": 7,
+          "escanos_mediana": 7,
+          "escanos_min": 7,
+          "escanos_max": 7,
+          "escanos_p10_p90": [
+            7,
+            7
+          ]
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.3,
+          "escanos_central": 4,
+          "escanos_mediana": 4,
+          "escanos_min": 4,
+          "escanos_max": 5,
+          "escanos_p10_p90": [
+            3,
+            5
+          ]
+        },
+        {
+          "partido": "EAJ-PNV",
+          "pct": 0.8,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            3
+          ]
+        },
+        {
+          "partido": "Adelante Andalucía",
+          "pct": 1.5,
+          "escanos_central": 3,
+          "escanos_mediana": 3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "escanos_p10_p90": [
+            3,
+            3
+          ]
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.0,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            2
+          ]
+        },
+        {
+          "partido": "Coalición Canaria",
+          "pct": 0.4,
+          "escanos_central": 1,
+          "escanos_mediana": 1,
+          "escanos_min": 1,
+          "escanos_max": 1,
+          "escanos_p10_p90": [
+            1,
+            1
+          ]
+        },
+        {
+          "partido": "PP–UPN (Navarra)",
+          "pct": 0.2,
+          "escanos_central": 2,
+          "escanos_mediana": 2,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "escanos_p10_p90": [
+            2,
+            2
+          ]
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.7,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            1
+          ]
+        },
+        {
+          "partido": "SALF",
+          "pct": 2.0,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Teruel Existe",
+          "pct": 0.0,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ]
+        },
+        {
+          "partido": "Otras candidaturas",
+          "pct": 2.5,
+          "escanos_central": 0,
+          "escanos_mediana": 0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "escanos_p10_p90": [
+            0,
+            0
+          ],
+          "tipo": "otros"
+        }
+      ],
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://laseptima.com/wp-content/uploads/2026/11/barometro-n10-13nov2026.pdf"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n10_20261114.pdf",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n10_20261114.html",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/swdemoscopia/laseptima_barometro_n10_20261114.pdf": "54e2d00bb5141934ec72a56b098f804674739d95c476f69433340fa6edb64594",
+        "data/sources/encuestas/swdemoscopia/laseptima_entrada_n10_20261114.html": "49d1a466d09d24bb68a2f13461bd16422fc467051ae66d3ca07d4712bb1e66d8",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-media-pdf_20261125.json": "6b8bbf5e0dd4373970b0aba3715fc018571c90f5b80e23f11a10171640d1d152",
+        "data/sources/encuestas/swdemoscopia/laseptima_wp-posts_20261125.json": "385857744ac1ced559a8b8e9682b9a5d4c24f3535f6829de3960f661652d0d23"
+      },
+      "discrepancias_fuente": "La ficha dice 18 jornadas (son 19: 3.500 + 9 × 500 = 8.000) y que las preguntas de opinión se hicieron sobre 7.500 entrevistas.",
+      "verificado_en_fuente_primaria": true
+    },
+    {
       "id": "swdemoscopia-2026-11-11",
       "rol": "media",
       "encuestadora": "SW Demoscopia",
       "cliente_medio": "La Séptima",
       "estudio": "Barómetro Electoral Nº 7. Datos al 10 de noviembre de 2026 (tracking electoral de SW Demoscopia para La Séptima)",
-      "fecha_publicacion": "2026-11-11",
-      "fecha_publicacion_nota": "Portada del informe: 'Entregado el 11 de noviembre de 2026'; metadatos del PDF: CreationDate 2026-11-11 17:37 CET. Es un tracking diario acumulado: SW publica un barómetro nuevo cada día (n.º 3 a 6 con datos al 6, 7, 8 y 9 de noviembre); este es el último localizado a 12-11-2026.",
+      "fecha_publicacion": "2026-11-18",
+      "fecha_publicacion_nota": "Primera publicación verificable: subida a laseptima.com el 18-nov (Last-Modified 10:43 GMT; la entrada está retrofechada al 10-nov). Portada del informe: 'Entregado el 11 de noviembre de 2026'; metadatos del PDF: CreationDate 2026-11-11 17:37 CET. Es un tracking diario acumulado: SW publica un barómetro nuevo cada día (n.º 3 a 6 con datos al 6, 7, 8 y 9 de noviembre); este es el último localizado a 12-11-2026.",
       "trabajo_campo": {
         "inicio": "2026-10-26",
         "fin": "2026-11-10"
@@ -11177,10 +13597,10 @@
       "desglose_regional_nota": "El cuadro provincial completo va en un libro Excel que acompaña al informe y no está publicado. El PDF solo da lecturas por CCAA en el texto de la pág. 8 (p. ej. Andalucía: PSOE 22, PP 20, Vox 14, AA 3, FA 1; Madrid: PP 15, PSOE 13, Vox 6, FA 4).",
       "urls": {
         "primarias": [
-          "https://media.licdn.com/dms/document/media/v2/D4E1FAQFlPypzs0AgXw/feedshare-document-pdf-analyzed/B4EaHLqglWGoAY-/0/1794418283034?e=1795046400&v=beta&t=VcoO0q0v8lw_qfKeUYdu__2T9M5_frzmagCyYg-27q0"
+          "https://laseptima.com/wp-content/uploads/2026/11/barometro-n07-10nov2026.pdf"
         ],
         "secundarias": [],
-        "descubrimiento_nota": "SW Demoscopia (swdemoscopia.com) no publica los barómetros en su web y laseptima.es es una agencia digital sin relación aparente. El informe PDF (13 págs., 'Barómetro electoral La Séptima · Elecciones Generales 29-N · Informe de 11 de noviembre de 2026') solo se ha localizado como documento subido a LinkedIn (CDN media.licdn.com; URL firmada que caduca hacia el 18-11-2026; no consta quién lo subió). La URL se localizó a través del agregador Wikipedia; ninguna cifra sale de él (Wikipedia da PP 28,3 frente al 28,1 del PDF)."
+        "descubrimiento_nota": "Localizado primero como PDF subido a LinkedIn (no consta quién lo subió). Desde el 18-nov La Séptima lo publica en su web, idéntico byte a byte a la copia guardada (sha256 f52f9de5…); por eso ya no lleva excluir_media (revisión independiente del 25-nov)."
       },
       "archivos_fuente": [
         "data/sources/encuestas/swdemoscopia/barometro_n7_datos_20261110.pdf"
@@ -11189,8 +13609,113 @@
         "data/sources/encuestas/swdemoscopia/barometro_n7_datos_20261110.pdf": "f52f9de5b27978b7177fdc68d588e5aedc3df8009aaabf25df217f951b1552b0"
       },
       "discrepancias_fuente": "La ficha técnica describe la técnica como CATI para todo el tracking y da el margen de error para '6.500 entrevistas telefónicas', pero también dice que las preguntas de opinión se hicieron en 'jornadas con entrevista telefónica (26 de octubre – 10 de noviembre, 4.800 entrevistas)', lo que sugiere que 1.700 entrevistas no fueron telefónicas. No se explica. Es la única encuestadora privada que pone al PSOE por delante del PP; Vozpópuli publicó que su apoderado tiene vínculos con el PSOE de Cádiz (no verificado aquí).",
+      "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "sociometrica-2026-11-21",
+      "rol": "media",
+      "rol_nota": "Fuera de la media (ver excluir_media), como sociometrica-2026-11-08.",
+      "encuestadora": "SocioMétrica (Insight Analytics)",
+      "cliente_medio": "El Español",
+      "estudio": "Tracking electoral de SocioMétrica para EL ESPAÑOL, entrega del 21-nov (cifras de la pieza en abierto del 22-nov)",
+      "fecha_publicacion": "2026-11-21",
+      "fecha_publicacion_nota": "Publicada el 21-11 a las 18:59 en 'Tracking a una semana…', pieza marcada solo para suscriptores: no se usa su contenido. Las cifras salen del artículo en abierto 'El éxito de Feijóo en el debate acelera el trasvase de votantes del PSOE al PP hasta un 9,1% y detiene la fuga del PP hacia Vox' (M.A. Ruiz Coll; datePublished 2026-11-22T05:00:00+01:00; isAccessibleForFree: true). Las entregas del 15, 22 y 23-nov también están marcadas solo para suscriptores y no se registran.",
+      "trabajo_campo": {
+        "inicio": "2026-09-01",
+        "fin": null,
+        "fin_nota": "No publicado ('acumulado … desde el 1 de septiembre')."
+      },
+      "campo_posterior_a_convocatoria": null,
+      "muestra_n": 6842,
+      "muestra_nota": "Ficha técnica del artículo gratuito: 'Tracking electoral para EL ESPAÑOL: acumulado de 6.842 entrevistas CAWI (panel online) desde el 1 de septiembre'.",
+      "metodo": "CAWI (panel online); 'Postponderación por fecha creciente'; 'no procede error muestral por tratarse de un muestreo no probabilístico, si bien puede estimarse el error de equilibraje en ±3 %'.",
+      "margen_error": "No procede (muestreo no probabilístico); error de equilibraje ±3%",
+      "base_porcentajes": "% de intención de voto (la fuente no indica la base)",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.8,
+          "escanos_min": 132,
+          "escanos_max": 132,
+          "nota": "Texto: 'ganaría hoy las elecciones con 132 diputados (31,8%). Son 134, si se incluyen los 2 de la lista conjunta UPN-PP de Navarra'."
+        },
+        {
+          "partido": "PSOE",
+          "pct": 28.5,
+          "escanos_min": 113,
+          "escanos_max": 113
+        },
+        {
+          "partido": "Vox",
+          "pct": 18.8,
+          "escanos_min": 65,
+          "escanos_max": 65
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 4.2,
+          "escanos_min": 4,
+          "escanos_max": 4,
+          "nota": "Texto: 'El Frente Amplio de Ada Colau queda reducido a 4 escaños (4,2%)'."
+        }
+      ],
+      "escanos_sin_porcentaje": {
+        "nota": "Escaños que da el texto gratuito sin porcentaje.",
+        "desglose_central": [
+          {
+            "partido": "ERC-Podemos",
+            "escanos": 8,
+            "nota": "'la candidatura conjunta con ERC en Cataluña, que crece hasta los 8 escaños'; el Flourish 30993070 da 9 (ver discrepancias_fuente)."
+          },
+          {
+            "partido": "Junts",
+            "escanos": 5
+          },
+          {
+            "partido": "Bildu",
+            "escanos": 8,
+            "nota": "'uno de ellos por Navarra'."
+          },
+          {
+            "partido": "PNV",
+            "escanos": 3
+          }
+        ]
+      },
+      "proyeccion_escanos": "puntual",
+      "proyeccion_escanos_nota": "PP+Vox+UPN 199 escaños y 51,1% (texto). Flourish 30993070 (horserace), columna del 21-nov: PSOE 113, PP 134 (con UPN), VOX 65, ERC-PODEMOS 9, FRENTE AMPLIO 4.",
+      "discrepancias_fuente": "ERC-Podemos: 8 escaños en el texto gratuito y 9 en el Flourish. Ventaja del PP: el texto cuenta 19 escaños (132−113, sin UPN); los titulares del 22 y 23-nov hablan de 20.",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://www.elespanol.com/espana/politica/20261122/exito-feijoo-debate-acelera-trasvase-votantes-psoe-pp-detiene-fuga-vox/1003744467694_0.html",
+          "https://flo.uri.sh/visualisation/30993070/embed",
+          "https://www.elespanol.com/espana/politica/20261121/tracking-semana-feijoo-sanchez-ganan-escanos-costa-aliados-oposicion-mantiene-debate/1003744467538_0.html"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/sociometrica/elespanol_20261122_trasvase.html",
+        "data/sources/encuestas/sociometrica/flourish_30993070.html",
+        "data/sources/encuestas/sociometrica/elespanol_20261121_paywall.html",
+        "data/sources/encuestas/sociometrica/elespanol_20261115_paywall.html",
+        "data/sources/encuestas/sociometrica/elespanol_20261122_paywall.html",
+        "data/sources/encuestas/sociometrica/elespanol_20261123_paywall.html",
+        "data/sources/encuestas/sociometrica/elespanol_20261123_horquillas_paywall.html"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/sociometrica/elespanol_20261122_trasvase.html": "6926efd523f38b7c987e651c2509b0edfa3548ad255d83de2ae91b6135544bd3",
+        "data/sources/encuestas/sociometrica/flourish_30993070.html": "3cf7ffadce5e320c95e2114440fb99cd0838d8f37558667686ee1b8c2a683199",
+        "data/sources/encuestas/sociometrica/elespanol_20261121_paywall.html": "2466d7117d3fc6790a3c5f40bdb63baed99b48ea5fda68c2787d999de7a775ab",
+        "data/sources/encuestas/sociometrica/elespanol_20261115_paywall.html": "bd38956787dd72d521dae50b5caf63b2c707326a11cf63320cf9c11f64dfcec3",
+        "data/sources/encuestas/sociometrica/elespanol_20261122_paywall.html": "30cbf4a7e9261caa6c04a46e3491b335912602bde818e2c44f1995e212adae6d",
+        "data/sources/encuestas/sociometrica/elespanol_20261123_paywall.html": "ff448562a7c8bbdcd863408989154dc8614c7be4a62edc5c8419990a1218935c",
+        "data/sources/encuestas/sociometrica/elespanol_20261123_horquillas_paywall.html": "283f03e353bc84a0343d994767137bf38ed808be8161c346ecd9c81ca8d41c6c"
+      },
       "verificado_en_fuente_primaria": true,
-      "excluir_media": "Fuera de la media: no hay publicación original verificable (ni la empresa ni el medio lo publican; solo un PDF subido a LinkedIn por alguien que no consta)."
+      "excluir_media": "Fuera de la media, como sociometrica-2026-11-08: es un acumulado desde el 1 de septiembre y no publica la fecha de fin del trabajo de campo.",
+      "suma_pct_publicada": 83.3,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
     },
     {
       "id": "sociometrica-2026-11-08",
@@ -11359,6 +13884,112 @@
       "excluir_media": "Fuera de la media: es un seguimiento acumulado desde el 1-sep y el medio no publica cuándo terminó el trabajo de campo, así que no se puede comprobar que esté dentro de la ventana de 21 días."
     },
     {
+      "id": "dym-2026-11-23",
+      "rol": "media",
+      "rol_nota": "Entra en la media como la última de DYM (sustituye ahí a dym-2026-11-10).",
+      "encuestadora": "Instituto DYM",
+      "cliente_medio": "Henneo: Diario de León, 20minutos y Heraldo",
+      "estudio": "Polibarómetro preelectoral II, noviembre 2026 (2ª ola), publicado el mismo día por tres medios de Henneo",
+      "fecha_publicacion": "2026-11-23",
+      "fecha_publicacion_nota": "Diario de León 'Última semana de campaña: PP y Vox mantienen su ventaja' (Ismael G. Manjón; datePublished 2026-11-23T06:00:00+01:00, dateModified 11:16:18); 20minutos 'El PSOE sube al 28%, pero sigue lejos del PP, que suma mayoría absoluta con Vox' (Isabel Fuentes; 2026-11-23T05:00:00+01:00); Heraldo (05:00, tras muro de pago: solo se ha usado el subtítulo como prueba de publicación).",
+      "trabajo_campo": {
+        "inicio": "2026-11-17",
+        "fin": "2026-11-19"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 1010,
+      "muestra_nota": "Ficha técnica (infografía de Diario de León y texto de 20minutos): '1.010 entrevistas'; 'Trabajo de campo: realizado entre el 17 y 19 de noviembre'.",
+      "metodo": "Entrevistas online (CAWI) con cuotas por sexo, edad, hábitat, región y ocupación (Diario de León; 20minutos cita 'sexo, edad y ocupación').",
+      "margen_error": "±3,1% (95,5%, p=q=50)",
+      "base_porcentajes": "% de voto válido (Diario de León; 20minutos rotula '% voto a candidaturas')",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 33.0,
+          "escanos_min": 132,
+          "escanos_max": 139,
+          "nota": "Rotulado con el logo del PP; no se indica si incluye a UPN."
+        },
+        {
+          "partido": "PSOE",
+          "pct": 28.0,
+          "escanos_min": 107,
+          "escanos_max": 114
+        },
+        {
+          "partido": "VOX",
+          "pct": 18.0,
+          "escanos_min": 58,
+          "escanos_max": 64,
+          "nota": "Rotulado con el logo de Vox."
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 6.9,
+          "escanos_min": 8,
+          "escanos_max": 13,
+          "nota": "'(1) Incluye coaliciones Compromis:FV y UPC' (Diario de León); 20minutos: '*Incluyendo las coaliciones Compromís-FV y UPC'."
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.3,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "nota": "Texto de 20minutos: 'baja del 1,9% … al 1,3%. Con este resultado se quedaría fuera del Congreso'."
+        },
+        {
+          "partido": "SALF",
+          "pct": 1.0,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "nombre_publicado": "(logo de la ardilla de Se Acabó La Fiesta, sin rótulo)",
+          "nota": "Solo en la infografía de Diario de León; el porcentaje se confirma en su gráfico de evolución ('NOV (Ola 2)': 1,0)."
+        },
+        {
+          "partido": "Otros partidos",
+          "pct": 11.8,
+          "escanos_min": 31,
+          "escanos_max": 34,
+          "tipo": "otros",
+          "nombre_publicado": "OTROS PARTIDOS",
+          "nota": "Sin desglose. 20minutos publica 'OTROS' 14,1% (= 11,8 + Podemos 1,3 + SALF 1,0) sin escaños."
+        }
+      ],
+      "proyeccion_escanos": "horquillas (ver estimacion_voto)",
+      "proyeccion_escanos_nota": "Infografía de Diario de León 'Estimación de voto Escaños y % de voto válido' (hemiciclo 'Nov. 26 (ola 2)'), con las mismas horquillas que la de 20minutos para PP, PSOE, Vox y Frente Amplio. PP+Vox 190-203 (20minutos).",
+      "discrepancias_fuente": "El texto de Diario de León dice que el PSOE 'se estancaría en torno a los 120 diputados' y Frente Amplio 'cerca de los 13', frente a 107-114 y 8-13 de la infografía: se toma la infografía. 20minutos agrega Podemos y SALF en 'OTROS' (14,1%). Las cuotas de la ficha difieren entre medios (ver metodo).",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://www.diariodeleon.es/nacional/261123/2103963/ultima-semana-campana-pp-vox-mantienen-ventaja.html",
+          "https://imagenes.diariodeleon.es/uploads/2026/11/23/6b0402b198045.jpeg",
+          "https://www.20minutos.es/nacional/psoe-sube-28-pero-sigue-lejos-pp-que-suma-mayoria-absoluta-con-vox_7063769_0.html",
+          "https://imagenes.20minutos.es/uploads/imagenes/2026/11/20/6b00a7fd1c5a32-55191329.jpeg"
+        ],
+        "secundarias": [],
+        "nota": "Heraldo (https://www.heraldo.es/noticias/nacional/2026/11/23/encuesta-elecciones-generales-pp-mantendria-mayoria-absoluta-con-vox-pese-una-ligera-subida-izquierda-2070945.html) está tras muro de pago y no se ha usado para cifras."
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/dym/diariodeleon_20261123.html",
+        "data/sources/encuestas/dym/diariodeleon_20261123_infografia.jpeg",
+        "data/sources/encuestas/dym/diariodeleon_20261123_infografia_portada.jpeg",
+        "data/sources/encuestas/dym/20minutos_20261123.html",
+        "data/sources/encuestas/dym/20minutos_20261123_infografia.jpeg",
+        "data/sources/encuestas/dym/heraldo_20261123.html"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/dym/diariodeleon_20261123.html": "e71357678a1460419eab20e1408c69e903e0dfe2ca4b8ce8d3f4df26323ce58a",
+        "data/sources/encuestas/dym/diariodeleon_20261123_infografia.jpeg": "888ee8fa2ac9dfef3fb8c8adcd345bc072d5ea7556c4dd4ad1a208361c8393f9",
+        "data/sources/encuestas/dym/diariodeleon_20261123_infografia_portada.jpeg": "7c12cd3c6d812076915056d3cfd7366529a127f0629a918fdda5d8c0cd5c8075",
+        "data/sources/encuestas/dym/20minutos_20261123.html": "a98d265ecd8123709db6af150619dffaf49469286307a689c0f1a5924d228d70",
+        "data/sources/encuestas/dym/20minutos_20261123_infografia.jpeg": "626301ecdfd1dcde28de2f68d85bc92d7f742095661c885e87446bdba52b644c",
+        "data/sources/encuestas/dym/heraldo_20261123.html": "299d8590409e103ecda30756c989f9837da2d19635ea29d68febf9fe0e1bb9cb"
+      },
+      "verificado_en_fuente_primaria": true,
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
+    },
+    {
       "id": "dym-2026-11-10",
       "rol": "media",
       "encuestadora": "Instituto DYM",
@@ -11450,6 +14081,280 @@
       },
       "discrepancias_fuente": "El texto del artículo da 'Sumar/Frente Amplio/Podemos: 8-10 diputados', pero la infografía separa Frente Amplio (5,6%, 8-10) y Podemos (1,9%, 1-2). Se registran las cifras de la infografía. Los porcentajes de voto solo están en la infografía (el texto da solo escaños), leída visualmente; laSexta (10-11) cita 'el 27,3% de las papeletas' para el PSOE, coherente con ella.",
       "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "imop-2026-11-23",
+      "rol": "media",
+      "rol_nota": "Entra en la media como la última de IMOP (sustituye ahí a imop-2026-11-08).",
+      "encuestadora": "IMOP Insights",
+      "cliente_medio": "El Confidencial",
+      "estudio": "Encuesta IMOP Insights para El Confidencial, ola 5",
+      "fecha_publicacion": "2026-11-23",
+      "fecha_publicacion_nota": "Artículo de El Confidencial 'PP y Vox afrontan la recta final con un margen de 19 escaños (195) y el bloque de investidura de 2023 se desploma a 152' (Juan Fernández-Miranda, Miguel Ángel Gavilanes y Javier García Fernández; datePublished 2026-11-23T05:00:00+01:00, dateModified 16:30:00).",
+      "trabajo_campo": {
+        "inicio": "2026-11-17",
+        "fin": "2026-11-19"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 1200,
+      "metodo": "Metodología híbrida: entrevista telefónica (70%; el 73% a móviles) y online (30%; mitad hecha por IMOP y mitad supervisada, con panelistas de Netquest).",
+      "margen_error": "±2,9 puntos",
+      "base_porcentajes": "% de voto estimado (la fuente no indica la base)",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.7,
+          "escanos_min": 131,
+          "escanos_max": 131,
+          "nota": "Incluye UPN ('UPN va sumado al PP', comentario de datos.js)."
+        },
+        {
+          "partido": "PSOE",
+          "pct": 27.4,
+          "escanos_min": 110,
+          "escanos_max": 110
+        },
+        {
+          "partido": "Vox",
+          "pct": 18.3,
+          "escanos_min": 64,
+          "escanos_max": 64
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 7.4,
+          "escanos_min": 11,
+          "escanos_max": 11,
+          "nombre_publicado": "Frente Amplio (Sumar)",
+          "nota": "Bloque completo: comentario de datos.js 'Frente Amplio suma Compromís-Front Valencià: ola 5 = 9 + 2 escaños, 6,0 + 1,4 %'; el texto: Frente Amplio '6% … nueve diputados' más 'dos diputados … Compromís-Front Valencià'. La nota del hemiciclo dice 'Frente Amplio incluye a Front Valencià, UPC y Ara Més'."
+        },
+        {
+          "partido": "Podemos",
+          "pct": 0.7,
+          "escanos_min": 0,
+          "escanos_max": 0
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.6,
+          "escanos_min": 12,
+          "escanos_max": 12
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.6,
+          "escanos_min": 7,
+          "escanos_max": 7
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.2,
+          "escanos_min": 3,
+          "escanos_max": 3
+        },
+        {
+          "partido": "Adelante Andalucía",
+          "pct": 2.0,
+          "escanos_min": 3,
+          "escanos_max": 3
+        },
+        {
+          "partido": "Coalición Canaria",
+          "pct": 0.5,
+          "escanos_min": 1,
+          "escanos_max": 1
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.1,
+          "escanos_min": 4,
+          "escanos_max": 4
+        },
+        {
+          "partido": "PNV",
+          "pct": 1.0,
+          "escanos_min": 4,
+          "escanos_max": 4
+        },
+        {
+          "partido": "Se Acabó la Fiesta",
+          "pct": 1.9,
+          "nota": "Solo en el texto ('si se incluyen también Podemos (0,7%) a la izquierda y Se Acabó la Fiesta (1,9%) a la derecha'); no figura en el gráfico."
+        }
+      ],
+      "proyeccion_escanos": "puntual (sin horquillas)",
+      "proyeccion_escanos_nota": "Escaños del gráfico (datos.js) y del hemiciclo (CSV), que coinciden; suman 350. SALF sin escaños publicados.",
+      "discrepancias_fuente": "Ninguna en las cifras: texto, datos.js y CSV del hemiciclo coinciden. La composición de Frente Amplio se describe de tres maneras (Front Valencià; Front Valencià, UPC y Ara Més; Compromís-Front Valencià).",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://www.elconfidencial.com/espana/2026-11-23/pp-vox-recta-final-margen-19-escanos-investidura-2023_4470100/",
+          "https://datos.elconfidencial.com/encuestas_imop-231126/",
+          "https://datos.elconfidencial.com/encuestas_imop-231126/datos.js?v=261122-1806",
+          "https://datos.elconfidencial.com/hemiciclo-generales-2026/?res_name=2026_hemiciclo_generales_imop_23nov"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/imop/elconfidencial_20261123.html",
+        "data/sources/encuestas/imop/ec_encuestas_imop-231126.html",
+        "data/sources/encuestas/imop/ec_encuestas_imop-231126_datos.js",
+        "data/sources/encuestas/imop/ec_hemiciclo_imop_23nov.html",
+        "data/sources/encuestas/imop/ec_hemiciclo_imop_23nov.csv",
+        "data/sources/encuestas/imop/ec_encuestas_imop-evolucion-231126.html",
+        "data/sources/encuestas/imop/ec_encuestas_imop-evolucion-231126_datos.js",
+        "data/sources/encuestas/imop/ec_encuestas_imop-bloques-231126.html",
+        "data/sources/encuestas/imop/ec_encuestas_imop-bloques-231126_datos.js"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/imop/elconfidencial_20261123.html": "22084ae79adf8f2eb91fb76669593c519390eca241dac419ec1e5dce03a73645",
+        "data/sources/encuestas/imop/ec_encuestas_imop-231126.html": "fdaa22819011a07869394e7bc1350d1858541660f394d625522ce0a16f413fe3",
+        "data/sources/encuestas/imop/ec_encuestas_imop-231126_datos.js": "8708d68c3eb39d070607ad4744c507ffdebc47be1ac53b0868ffc61ef301a8ac",
+        "data/sources/encuestas/imop/ec_hemiciclo_imop_23nov.html": "50070402f413df96f826279386ccd75f990060fb53adea0663ca31a2f60735d0",
+        "data/sources/encuestas/imop/ec_hemiciclo_imop_23nov.csv": "b7253c5cad8dfb4ebaabba69d6a7f7229d99afcf61a6b673512e72e18e36b122",
+        "data/sources/encuestas/imop/ec_encuestas_imop-evolucion-231126.html": "15b5a0fbfe159dc5f6b660631cb880871fe431b68b8e078abebe9c57b488984a",
+        "data/sources/encuestas/imop/ec_encuestas_imop-evolucion-231126_datos.js": "5490b1e2f850abe669b8d1568eaa002f35ff7a7559eb6ed1db239ec0d79f47b3",
+        "data/sources/encuestas/imop/ec_encuestas_imop-bloques-231126.html": "4103f0586a0aa7ea3a58946d8a2320da8ded7ef0b0e8c119bb25663eb50f73ba",
+        "data/sources/encuestas/imop/ec_encuestas_imop-bloques-231126_datos.js": "8fa356fe7f75c6e1d21021d30499f36133da36331f810be458b3cca74204a689"
+      },
+      "verificado_en_fuente_primaria": true,
+      "suma_pct_publicada": 97.4,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
+    },
+    {
+      "id": "imop-2026-11-16",
+      "rol": "media",
+      "rol_nota": "Entra en la media como la última de IMOP solo hasta que se registre imop-2026-11-23 (campo posterior).",
+      "encuestadora": "IMOP Insights",
+      "cliente_medio": "El Confidencial",
+      "estudio": "Encuesta IMOP Insights para El Confidencial, ola 4",
+      "fecha_publicacion": "2026-11-16",
+      "fecha_publicacion_nota": "Artículo de El Confidencial 'La derecha consolida su ventaja y las izquierdas territoriales se comen a Frente Amplio y Podemos' (Juan Fernández-Miranda, Unidad de Datos y Laura Martín; datePublished y dateModified 2026-11-16T05:00:00+01:00).",
+      "trabajo_campo": {
+        "inicio": "2026-11-10",
+        "fin": "2026-11-13"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 1000,
+      "metodo": "Metodología híbrida: entrevista telefónica (55%; el 70% a móviles) y online (45%; mitad hecha por IMOP y mitad supervisada, con panelistas de Netquest).",
+      "margen_error": "±3,1 puntos",
+      "base_porcentajes": "% de voto estimado (la fuente no indica la base)",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.5,
+          "escanos_min": 128,
+          "escanos_max": 128,
+          "nota": "Incluye UPN ('UPN va sumado al PP', comentario de datos.js)."
+        },
+        {
+          "partido": "PSOE",
+          "pct": 26.9,
+          "escanos_min": 109,
+          "escanos_max": 109
+        },
+        {
+          "partido": "Vox",
+          "pct": 19.0,
+          "escanos_min": 66,
+          "escanos_max": 66
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 6.9,
+          "escanos_min": 11,
+          "escanos_max": 11,
+          "nombre_publicado": "Frente Amplio (Sumar)",
+          "nota": "Bloque completo: '* Frente Amplio incluye a Compromís-Front Valencià' (nota del gráfico); el texto: '7 de Frente Amplio y 4 de Compromís-Front Valencià'."
+        },
+        {
+          "partido": "Podemos",
+          "pct": 0.9,
+          "escanos_min": 0,
+          "escanos_max": 0
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.9,
+          "escanos_min": 12,
+          "escanos_max": 12
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.7,
+          "escanos_min": 8,
+          "escanos_max": 8
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.3,
+          "escanos_min": 3,
+          "escanos_max": 3
+        },
+        {
+          "partido": "Adelante Andalucía",
+          "pct": 2.2,
+          "escanos_min": 4,
+          "escanos_max": 4
+        },
+        {
+          "partido": "Coalición Canaria",
+          "pct": 0.5,
+          "escanos_min": 1,
+          "escanos_max": 1
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.1,
+          "escanos_min": 4,
+          "escanos_max": 4
+        },
+        {
+          "partido": "PNV",
+          "pct": 0.9,
+          "escanos_min": 4,
+          "escanos_max": 4
+        },
+        {
+          "partido": "SALF",
+          "pct": 1.6,
+          "nota": "Solo en el texto ('la suma de PP (31,5%), Vox (19%) y SALF (1,6%) sitúa a las derechas en un 52,1%'); no figura en el gráfico."
+        }
+      ],
+      "proyeccion_escanos": "puntual (sin horquillas)",
+      "proyeccion_escanos_nota": "Escaños del gráfico (datos.js) y del hemiciclo (CSV), que coinciden; suman 350. SALF sin escaños publicados.",
+      "discrepancias_fuente": "Ninguna en las cifras: texto, datos.js y CSV del hemiciclo coinciden.",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://www.elconfidencial.com/espana/2026-11-16/encuesta-imop-cuarta-oleada-derecha-ventaja-izquierdas-territoriales-frente-amplio-podemos-cbtr_4464610/",
+          "https://datos.elconfidencial.com/encuestas_imop-161126/",
+          "https://datos.elconfidencial.com/encuestas_imop-161126/datos.js?v=261114-2117",
+          "https://datos.elconfidencial.com/hemiciclo-general/?res_name=20261116-encuestaimop-generales"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/imop/elconfidencial_20261116.html",
+        "data/sources/encuestas/imop/ec_encuestas_imop-161126.html",
+        "data/sources/encuestas/imop/ec_encuestas_imop-161126_datos.js",
+        "data/sources/encuestas/imop/ec_hemiciclo_imop_16nov.html",
+        "data/sources/encuestas/imop/ec_hemiciclo_imop_16nov.csv",
+        "data/sources/encuestas/imop/ec_encuestas_imop-evolucion-161126.html",
+        "data/sources/encuestas/imop/ec_encuestas_imop-evolucion-161126_datos.js"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/imop/elconfidencial_20261116.html": "0a8b762b192d2adc683fbf5e046b8a421d4e5828e18fb940f196175778cb865e",
+        "data/sources/encuestas/imop/ec_encuestas_imop-161126.html": "ed0e669d374ed36dced0e25d05998869e0efb090ec6c9f7da717fd1bcddd1637",
+        "data/sources/encuestas/imop/ec_encuestas_imop-161126_datos.js": "364da6a3fe39e1e44d69377113a68de441dd793abcc895f5b54b73235626bcae",
+        "data/sources/encuestas/imop/ec_hemiciclo_imop_16nov.html": "65040d763d5d8cc89d203bf3f52faa017e3e5296e923f8eeb6d3c822b82218a5",
+        "data/sources/encuestas/imop/ec_hemiciclo_imop_16nov.csv": "7b5b5af76748e6bfb1dfed08d88c7749d0fcf867f68325771f959dfc18e04f68",
+        "data/sources/encuestas/imop/ec_encuestas_imop-evolucion-161126.html": "fabe4db9ce9aeb2e35264b9f3b826decd7fb448be8efbd86039bdc02c56fb5df",
+        "data/sources/encuestas/imop/ec_encuestas_imop-evolucion-161126_datos.js": "4d3559205370fe0d0fe308b9ce2e873ce8c2d320c456e44f76842edfea26dd81"
+      },
+      "verificado_en_fuente_primaria": true,
+      "suma_pct_publicada": 97.4,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
     },
     {
       "id": "imop-2026-11-08",
@@ -11584,6 +14489,102 @@
       "verificado_en_fuente_primaria": true
     },
     {
+      "id": "ateneodeldato-2026-11-23",
+      "rol": "media",
+      "rol_nota": "Entra en la media como la última de Ateneo del Dato (sustituye ahí a ateneodeldato-2026-11-08).",
+      "encuestadora": "Ateneo del Dato, S. L.",
+      "cliente_medio": "elDiario.es",
+      "fecha_publicacion": "2026-11-23",
+      "fecha_publicacion_nota": "Artículo de elDiario.es 'El PP gana por la mínima al PSOE y la derecha supera a la izquierda en la última encuesta antes del 29N' (Iñigo Aduriz y Ainhoa Díez; datePublished 2026-11-23T21:31:12+01:00; dateModified 2026-11-25T13:15:58+01:00, posterior al 24-nov). Datawrapper wmDAE y 0mygn v3 (publishedAt 2026-11-23T21:17:21Z y 21:06:11Z).",
+      "trabajo_campo": {
+        "inicio": "2026-11-18",
+        "fin": "2026-11-20"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 2000,
+      "metodo": "Entrevista online autoadministrada (CAWI) mediante panel; cuotas de sexo por edad, CCAA, hábitat y clase social; ponderación por esas variables (INE; clase social AIMC, EGM 2025).",
+      "margen_error": "±2,2% (95,5%, p=q=50%)",
+      "base_porcentajes": "% sobre el voto válido (gráfico 0mygn)",
+      "estimacion_voto": [
+        {
+          "partido": "PSOE",
+          "pct": 30.8,
+          "escanos_min": 112,
+          "escanos_max": 129
+        },
+        {
+          "partido": "PP",
+          "pct": 32.1,
+          "escanos_min": 126,
+          "escanos_max": 139,
+          "nota": "La fuente no aclara si incluye a UPN."
+        },
+        {
+          "partido": "Vox",
+          "pct": 17.6,
+          "escanos_min": 50,
+          "escanos_max": 63
+        },
+        {
+          "partido": "F. Amplio",
+          "pct": 6.0,
+          "escanos_min": 8,
+          "escanos_max": 12
+        },
+        {
+          "partido": "Podemos",
+          "pct": 0.7,
+          "escanos_min": 0,
+          "escanos_max": 0
+        },
+        {
+          "partido": "Otros",
+          "pct": 12.8,
+          "escanos_min": 30,
+          "escanos_max": 35,
+          "tipo": "otros",
+          "nota": "Agregado sin desglose; esta vez SALF va dentro (no tiene fila)."
+        }
+      ],
+      "proyeccion_escanos": "horquillas (ver estimacion_voto)",
+      "proyeccion_escanos_nota": "Dataset Datawrapper wmDAE v3 (columnas pvotes_enc, escanios_min y escanios_max); solo horquillas, sin valor central.",
+      "discrepancias_fuente": "Ninguna en las cifras (texto y datasets coinciden). El texto y el gráfico 0mygn fechan la entrega anterior el 6-nov; el proyecto la tiene como 8-nov (ateneodeldato-2026-11-08).",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://www.eldiario.es/politica/pp-gana-minima-psoe-derecha-supera-izquierda-ultima-encuesta-29n_1_13684963.html",
+          "https://datawrapper.dwcdn.net/wmDAE/3/",
+          "https://datawrapper.dwcdn.net/0mygn/3/"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/ateneodeldato/eldiario_20261123.html",
+        "data/sources/encuestas/ateneodeldato/dw_wmDAE_v3.html",
+        "data/sources/encuestas/ateneodeldato/dw_wmDAE_v3_dataset.csv",
+        "data/sources/encuestas/ateneodeldato/dw_wmDAE_v1.html",
+        "data/sources/encuestas/ateneodeldato/dw_wmDAE_v1_dataset.csv",
+        "data/sources/encuestas/ateneodeldato/dw_0mygn_v3.html",
+        "data/sources/encuestas/ateneodeldato/dw_0mygn_v3_dataset.csv",
+        "data/sources/encuestas/ateneodeldato/dw_0mygn_v1.html",
+        "data/sources/encuestas/ateneodeldato/dw_0mygn_v1_dataset.csv"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/ateneodeldato/eldiario_20261123.html": "17746ef36b62a0c3f326163c9ffb6daa03d5d28ab18c264f11c7de06caaf15b2",
+        "data/sources/encuestas/ateneodeldato/dw_wmDAE_v3.html": "823f2a6c80ada617826b02686f72b91da2734f88662ce75f4d47ac01fb81f4d3",
+        "data/sources/encuestas/ateneodeldato/dw_wmDAE_v3_dataset.csv": "95735027aeb447ffe8c964b56c7714b92e1f09891bf229de94cc3f0570f1077c",
+        "data/sources/encuestas/ateneodeldato/dw_wmDAE_v1.html": "6dcd4f97bf5f9e563454b0e5b1da68c7d3fc242645bfbcb6c72dbacc6dc5ba41",
+        "data/sources/encuestas/ateneodeldato/dw_wmDAE_v1_dataset.csv": "4e0f80164a21f0ced1ffe4356ed1622f32fe19ebd2dc798abaf298397323c620",
+        "data/sources/encuestas/ateneodeldato/dw_0mygn_v3.html": "aa2a38ef86044f9e2120ed93f41d931b012904a4fa4b4445292336a173dd1362",
+        "data/sources/encuestas/ateneodeldato/dw_0mygn_v3_dataset.csv": "4e0f80164a21f0ced1ffe4356ed1622f32fe19ebd2dc798abaf298397323c620",
+        "data/sources/encuestas/ateneodeldato/dw_0mygn_v1.html": "f8e4042341223526d26b2142a1130f6cb59aab253868f71f74f5ccea3d62b3b4",
+        "data/sources/encuestas/ateneodeldato/dw_0mygn_v1_dataset.csv": "4e0f80164a21f0ced1ffe4356ed1622f32fe19ebd2dc798abaf298397323c620"
+      },
+      "verificado_en_fuente_primaria": true,
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
+    },
+    {
       "id": "ateneodeldato-2026-11-08",
       "rol": "media",
       "encuestadora": "Ateneo del Dato, S. L.",
@@ -11684,6 +14685,287 @@
         "data/sources/encuestas/ateneodeldato/dw_ahbSS_v3_dataset.csv": "fa82ceb577a67ed80e8a6d909c7c61c816b0b8e1e6b8586920d4fb1e83c6cc8f"
       },
       "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "ncreport-2026-11-23",
+      "rol": "media",
+      "rol_nota": "Entra en la media como la última de NC Report (sustituye ahí a ncreport-2026-11-09).",
+      "encuestadora": "NC Report",
+      "cliente_medio": "La Razón",
+      "estudio": "Encuesta NC Report para LA RAZÓN (infografía '21 de noviembre 2026. Estimación de escaños y % de voto')",
+      "fecha_publicacion": "2026-11-23",
+      "fecha_publicacion_nota": "Artículo de La Razón 'Sánchez remonta sin alterar la mayoría PP-Vox' (Carmen Morodo; datePublished y dateModified 2026-11-23T03:39:43+01:00). La infografía va rotulada '21 de noviembre 2026'.",
+      "trabajo_campo": {
+        "inicio": "2026-11-16",
+        "fin": "2026-11-20"
+      },
+      "trabajo_campo_nota": "Ficha técnica de la infografía: 'Fechas trabajo de campo: 16 al 20 de noviembre de 2026'; el texto: 'elaborado entre el 16 y el 20 de noviembre' y 'la muestra no recoge el impacto pleno del debate'.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 1000,
+      "metodo": "50% telefónica a fijos y móviles (CATI) y 50% Internet (CAWI); selección aleatoria proporcional de municipios y entrevistados, ponderación por edad, sexo y hábitat (ficha técnica de la infografía).",
+      "margen_error": "±3,17% (95,5%, p/q=50/50)",
+      "base_porcentajes": "% de voto (la fuente no indica la base)",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.9,
+          "escanos_min": 130,
+          "escanos_max": 133,
+          "nota": "UPN figura aparte (2 escaños, 0,4%)."
+        },
+        {
+          "partido": "PSOE",
+          "pct": 27.2,
+          "escanos_min": 108,
+          "escanos_max": 111
+        },
+        {
+          "partido": "Vox",
+          "pct": 19.0,
+          "escanos_min": 64,
+          "escanos_max": 66
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.4,
+          "escanos_min": 9,
+          "escanos_max": 10
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 5.6,
+          "escanos_min": 8,
+          "escanos_max": 9,
+          "nombre_publicado": "FA",
+          "nota": "Rotulado 'FA'. Por primera vez NC Report da aparte Compromís-FV y UPC (filas siguientes), así que esta fila no los incluye (el texto: Frente Amplio 'perdería entre 22 y 23 de sus 31 diputados')."
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.5,
+          "escanos_min": 7,
+          "escanos_max": 8
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.4,
+          "escanos_min": 6,
+          "escanos_max": 7
+        },
+        {
+          "partido": "AA",
+          "pct": 1.7,
+          "escanos_min": 3,
+          "escanos_max": 4,
+          "nota": "Adelante Andalucía (rotulada 'AA')."
+        },
+        {
+          "partido": "PNV",
+          "pct": 0.8,
+          "escanos_min": 3,
+          "escanos_max": 4
+        },
+        {
+          "partido": "Compromís",
+          "pct": 1.3,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "nombre_publicado": "Compr.-FV",
+          "nota": "Rotulada 'Compr.-FV' en la infografía larga y 'Com.-FV' en la de cabecera: Compromís-Front Valencià."
+        },
+        {
+          "partido": "BNG",
+          "pct": 0.9,
+          "escanos_min": 2,
+          "escanos_max": 2
+        },
+        {
+          "partido": "UPN",
+          "pct": 0.4,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "nota": "Concurre en coalición con el PP en Navarra; NC Report la da aparte."
+        },
+        {
+          "partido": "UPC",
+          "pct": 0.4,
+          "escanos_min": 1,
+          "escanos_max": 1
+        },
+        {
+          "partido": "CC",
+          "pct": 0.4,
+          "escanos_min": 1,
+          "escanos_max": 1
+        },
+        {
+          "partido": "IE",
+          "pct": 0.4,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "nota": "Rotulada 'IE' (0/1, 0,4%) sin desarrollar en la infografía ni en el texto; candidatura no identificada. Se propone ignorarla en la proyección (IGNORADAS)."
+        },
+        {
+          "partido": "Podemos",
+          "pct": 0.8,
+          "nota": "Solo en el texto ('Podemos, con el 0,8% de los sufragios, no conseguiría representación'); no figura en la infografía, que solo representa partidos con escaño."
+        }
+      ],
+      "proyeccion_escanos": "horquillas (ver estimacion_voto)",
+      "proyeccion_escanos_nota": "Infografía: '*Solo se representan los partidos que obtienen escaños'. PP+Vox 194-199 (texto). Participación estimada 69,50% (texto) / 69,5% (infografía).",
+      "discrepancias_fuente": "Ninguna en las cifras: el texto confirma PP 31,9% (130-133), PSOE 27,2% (108-111), Vox 19% (64-66), Frente Amplio 5,6% (8-9), ERC 9-10, EH Bildu 7-8, PNV 3-4 y BNG 2. Compromís-FV se rotula 'Com.-FV' en la cabecera y 'Compr.-FV' en la infografía larga. 'IE' no se explica. La infografía se rotula '21 de noviembre 2026' (campo del 16 al 20, publicación el 23).",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://www.larazon.es/espana/sanchez-remonta-alterar-mayoria-ppvox_202611236b032823c0d5c85b96c4a76e.html",
+          "https://fotografias-2.larazon.es/clipping/cmsimages01/2026/11/22/631E7024-E73A-484F-8960-83A921555D89/report-noviembre-2026_123.jpg",
+          "https://fotografias-2.larazon.es/clipping/cmsimages01/2026/11/22/89C078C5-D8A4-4CAB-BEE1-0CE7406DFCB4/encuesta-report-21-nov_98.jpg"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/ncreport/larazon_20261123.html",
+        "data/sources/encuestas/ncreport/larazon_20261123_infografia.jpg",
+        "data/sources/encuestas/ncreport/larazon_20261123_escanos.jpg"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/ncreport/larazon_20261123.html": "4d37108dba6dbd707b4c567f27ff81265d3a3062c493531c359bcc4bd5adf5e2",
+        "data/sources/encuestas/ncreport/larazon_20261123_infografia.jpg": "afbb4dbe9ffb3854fd83bcde7abfa009e6bdd525e34e1a6b55665bea7374ae51",
+        "data/sources/encuestas/ncreport/larazon_20261123_escanos.jpg": "60fd904bdc1d3fb51fd94c3b3c8e9bdd124bd22431d62dd189dab1b92d565d3f"
+      },
+      "verificado_en_fuente_primaria": true,
+      "suma_pct_publicada": 96.1,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
+    },
+    {
+      "id": "ncreport-2026-11-16",
+      "rol": "media",
+      "rol_nota": "Entra en la media como la última de NC Report solo hasta que se registre ncreport-2026-11-23 (campo posterior).",
+      "encuestadora": "NC Report",
+      "cliente_medio": "La Razón",
+      "estudio": "Encuesta NC Report para LA RAZÓN (infografía '13 de noviembre 2026. Estimación de escaños y % de voto')",
+      "fecha_publicacion": "2026-11-16",
+      "fecha_publicacion_nota": "Artículo de La Razón 'La mayoría de PP y Vox resiste en el arranque de campaña con hasta 205 diputados' (Carmen Morodo; datePublished 2026-11-16T03:20:57+01:00, dateModified 06:39:23). La infografía va rotulada '13 de noviembre 2026'.",
+      "trabajo_campo": {
+        "inicio": "2026-11-06",
+        "fin": "2026-11-12"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 1000,
+      "muestra_nota": "Ficha técnica al pie de la infografía larga: 'Muestra estratificada: 1.000 entrevistas'; 'Fechas trabajo de campo: 6 al 12 de noviembre de 2026'. El texto: 'elaborado entre el 6 y el 12 de noviembre'. A diferencia del 9-nov, esta vez se publica ficha.",
+      "metodo": "50% telefónica a fijos y móviles (CATI) y 50% Internet (CAWI); selección aleatoria proporcional de municipios y entrevistados, ponderación por edad, sexo y hábitat (ficha técnica de la infografía).",
+      "margen_error": "±3,17% (95,5%, p/q=50/50)",
+      "base_porcentajes": "% de voto (la fuente no indica la base)",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 32.1,
+          "escanos_min": 135,
+          "escanos_max": 137,
+          "nota": "UPN figura aparte (2 escaños, 0,4%)."
+        },
+        {
+          "partido": "PSOE",
+          "pct": 26.1,
+          "escanos_min": 102,
+          "escanos_max": 104
+        },
+        {
+          "partido": "Vox",
+          "pct": 19.0,
+          "escanos_min": 66,
+          "escanos_max": 68
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 7.6,
+          "escanos_min": 11,
+          "escanos_max": 12,
+          "nombre_publicado": "FA",
+          "nota": "Rotulado 'FA'. NC Report no publica Compromís-Front Valencià ni otras confluencias por separado en esta entrega y no aclara si esta cifra las incluye."
+        },
+        {
+          "partido": "ERC",
+          "pct": 1.9,
+          "escanos_min": 7,
+          "escanos_max": 9
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.6,
+          "escanos_min": 7,
+          "escanos_max": 9
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.4,
+          "escanos_min": 7,
+          "escanos_max": 8
+        },
+        {
+          "partido": "PNV",
+          "pct": 0.8,
+          "escanos_min": 4,
+          "escanos_max": 4
+        },
+        {
+          "partido": "AA",
+          "pct": 1.8,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "nota": "Adelante Andalucía (rotulada 'AA')."
+        },
+        {
+          "partido": "BNG",
+          "pct": 1.0,
+          "escanos_min": 2,
+          "escanos_max": 2
+        },
+        {
+          "partido": "UPN",
+          "pct": 0.4,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "nota": "Concurre en coalición con el PP en Navarra; NC Report la da aparte."
+        },
+        {
+          "partido": "Pod.",
+          "pct": 1.5,
+          "escanos_min": 0,
+          "escanos_max": 1,
+          "nota": "Podemos (texto: 'Podemos retrocede nueve décimas, hasta el 1,5%, y obtendría entre cero y un representante')."
+        },
+        {
+          "partido": "CC",
+          "pct": 0.4,
+          "escanos_min": 1,
+          "escanos_max": 1
+        }
+      ],
+      "proyeccion_escanos": "horquillas (ver estimacion_voto)",
+      "proyeccion_escanos_nota": "Infografía: '*Solo se representan los partidos que obtienen escaños'. PP+Vox 201-205 (titular: 'hasta 205 diputados'). Participación estimada 64,19% (texto).",
+      "discrepancias_fuente": "Ninguna en las cifras: el texto confirma PP 32,1% (135-137), PSOE 26,1% (102-104), Vox 19% (66-68), Frente Amplio 7,6% (11-12) y Podemos 1,5% (0-1); la infografía de cabecera y la larga coinciden. La infografía se rotula '13 de noviembre 2026' aunque el campo acaba el 12-nov y se publica el 16-nov.",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://www.larazon.es/espana/mayoria-vox-resiste-arranque-campana-205-diputados_202611166afa6889ea8d89799786d4d1.html",
+          "https://fotografias-2.larazon.es/clipping/cmsimages01/2026/11/15/DF044A54-F471-4C50-BC1E-3BCD51C7916F/encuesta-electoral_123.jpg",
+          "https://fotografias-2.larazon.es/clipping/cmsimages01/2026/11/15/F579DB31-A871-4C3A-9336-4C4944D83395/encuesta-electoral_98.jpg"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/ncreport/larazon_20261116.html",
+        "data/sources/encuestas/ncreport/larazon_20261116_infografia.jpg",
+        "data/sources/encuestas/ncreport/larazon_20261116_escanos.jpg"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/ncreport/larazon_20261116.html": "65e2cc517b0bca1eda0aa82ed6fc987bf7cc57c6a383cb804a89f03559880646",
+        "data/sources/encuestas/ncreport/larazon_20261116_infografia.jpg": "78f0a40abfc9c0834dfeb9329d160048b8de942ee1466bf87e11db50bf710d89",
+        "data/sources/encuestas/ncreport/larazon_20261116_escanos.jpg": "259da11af8b9a9875cd10f6f76912e13cc0abc28f858ec2afdcb7869a2e31c5a"
+      },
+      "verificado_en_fuente_primaria": true,
+      "suma_pct_publicada": 95.6,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
     },
     {
       "id": "ncreport-2026-11-09",
@@ -11812,6 +15094,159 @@
         "data/sources/encuestas/ncreport/larazon_20261109_escanos.jpg": "83ac4562da63ff885991e4c0b6f075d4fb1f88a38706f50606efb2ac48438c3e"
       },
       "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "celestetel-2026-11-23",
+      "rol": "media",
+      "rol_nota": "Entra en la media como la última de Celeste-Tel (sustituye ahí a celestetel-2026-11-06).",
+      "encuestadora": "Celeste-Tel",
+      "cliente_medio": "Onda Cero",
+      "estudio": "Estudio electoral de expectativa de voto al Congreso de los Diputados, 23 de noviembre de 2026",
+      "fecha_publicacion": "2026-11-23",
+      "fecha_publicacion_nota": "PDF publicado en celeste-tel.es (enlazado en la portada, bloque 'BARÓMETRO ELECTORAL MES'): subida a WordPress el 2026-11-23 a las 17:54:41 (hora local; date_gmt 16:54:41); CreationDate del PDF 23-11-2026 08:35 CET. Onda Cero no le dedica artículo: solo lo incluye en su gráfico 'Las encuestas del 29N' (actualizado el 23-11), con PP+UPN y FA+Compromís sumados.",
+      "trabajo_campo": {
+        "inicio": "2026-11-16",
+        "fin": "2026-11-20"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 1100,
+      "metodo": "Telefónica asistida por ordenador (CATI), 50% fijos y 50% móviles; cuotas de edad y género (ficha técnica, pág. 4).",
+      "margen_error": "±3,02% (95,45%, P=Q)",
+      "base_porcentajes": "% de voto a candidaturas ('Voto a candidatura 100,0%')",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.8,
+          "escanos_min": 130,
+          "escanos_max": 130,
+          "nota": "UPN va en fila aparte (2 escaños)."
+        },
+        {
+          "partido": "PSOE",
+          "pct": 28.1,
+          "escanos_min": 112,
+          "escanos_max": 112
+        },
+        {
+          "partido": "VOX",
+          "pct": 18.9,
+          "escanos_min": 61,
+          "escanos_max": 61
+        },
+        {
+          "partido": "Frente Amplio(Sumar 2023)",
+          "pct": 5.7,
+          "escanos_min": 10,
+          "escanos_max": 10,
+          "nota": "Compromís-Front V. y Podemos figuran en filas aparte, así que esta fila no incluye a Compromís."
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.4,
+          "escanos_min": 9,
+          "escanos_max": 9,
+          "nombre_publicado": "ERC*",
+          "nota": "El PDF no explica el asterisco."
+        },
+        {
+          "partido": "JxCat",
+          "pct": 1.3,
+          "escanos_min": 6,
+          "escanos_max": 6
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.6,
+          "escanos_min": 7,
+          "escanos_max": 7
+        },
+        {
+          "partido": "PNV-EAJ",
+          "pct": 0.8,
+          "escanos_min": 4,
+          "escanos_max": 4
+        },
+        {
+          "partido": "BNG",
+          "pct": 0.9,
+          "escanos_min": 2,
+          "escanos_max": 2
+        },
+        {
+          "partido": "CC",
+          "pct": 0.4,
+          "escanos_min": 1,
+          "escanos_max": 1
+        },
+        {
+          "partido": "UPN",
+          "pct": 0.4,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "nombre_publicado": "UPN**",
+          "nota": "El PDF no explica el doble asterisco."
+        },
+        {
+          "partido": "PACMA",
+          "pct": 0.9,
+          "escanos_min": 0,
+          "escanos_max": 0
+        },
+        {
+          "partido": "Podemos",
+          "pct": 0.8,
+          "escanos_min": 0,
+          "escanos_max": 0
+        },
+        {
+          "partido": "Compromís-Front V.",
+          "pct": 1.3,
+          "escanos_min": 3,
+          "escanos_max": 3
+        },
+        {
+          "partido": "SALF",
+          "pct": 1.8,
+          "escanos_min": 0,
+          "escanos_max": 0
+        },
+        {
+          "partido": "Adelante Andalucía",
+          "pct": 1.7,
+          "escanos_min": 3,
+          "escanos_max": 3
+        },
+        {
+          "partido": "Otros",
+          "pct": 1.2,
+          "tipo": "otros"
+        }
+      ],
+      "proyeccion_escanos": "puntual (sin horquillas)",
+      "proyeccion_escanos_nota": "Tabla 'Comparativa de resultados de las anteriores elecciones con la encuesta actual' (pág. 7), columna 'Encuesta 23 noviembre 2026': escaños suman 350. Bloques (pág. 8): derechas (PP, VOX, UPN, SALF) 52,9% y 193.",
+      "discrepancias_fuente": "Votos idénticos en cuatro pares de partidos (PACMA = BNG = 240.670; CC = UPN = 106.964; JxCat = Compromís = 347.634; PNV = Podemos = 213.929); no afecta a los porcentajes publicados. El gráfico de Onda Cero suma PP+UPN (32,2) y FA+Compromís (7,0).",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://www.celeste-tel.es/wp-content/uploads/2026/11/Barómetro-Electoral-Elecciones-29-N-23-Noviembre-2026.pdf"
+        ],
+        "secundarias": [
+          "https://www.ondacero.es/elecciones/generales/encuestas/"
+        ]
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/celestetel/Barometro-Electoral-Elecciones-29-N-23-Noviembre-2026.pdf",
+        "data/sources/encuestas/celestetel/celeste-tel_wp-media_20261123.json",
+        "data/sources/encuestas/celestetel/ondacero_encuestas-tracker_20261123.html"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/celestetel/Barometro-Electoral-Elecciones-29-N-23-Noviembre-2026.pdf": "4cfbbae9ce48664c1b85b7e190cad557343dd4e2330864a964950cd9e2f4f52c",
+        "data/sources/encuestas/celestetel/celeste-tel_wp-media_20261123.json": "317e5e12508590bc34b0d8e4310684efddc1e4c5e5d8c5a38634294246aab9b3",
+        "data/sources/encuestas/celestetel/ondacero_encuestas-tracker_20261123.html": "8816004470c35ffbe192999d483acc2afb8203918575ca3dc64a680eb4e7ec69"
+      },
+      "verificado_en_fuente_primaria": true,
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
     },
     {
       "id": "celestetel-2026-11-06",
@@ -11965,6 +15400,488 @@
       "verificado_en_fuente_primaria": true
     },
     {
+      "id": "data10-2026-11-23",
+      "rol": "media",
+      "rol_nota": "Tracking diario de Data10. Es la última de Data10 en la media (campo del 19 al 22-nov): se rechaza la pieza de la noche del 23-nov porque su infografía se subió el 24-nov a las 00:15. Solo publica PP, PSOE, Vox y Frente Amplio.",
+      "encuestadora": "Data10",
+      "cliente_medio": "OKDIARIO",
+      "estudio": "Tracking diario de DATA10 para OKDIARIO",
+      "fecha_publicacion": "2026-11-23",
+      "fecha_publicacion_nota": "Artículo de OKDIARIO 'La derecha aguanta el empuje de Sánchez: PP y Vox sumarían 194 escaños y una mayoría absoluta holgada a seis días del 29-N' (Esther Jaén; datePublished 2026-11-23T05:45:44+01:00 (dateModified 12:22:18)).",
+      "trabajo_campo": {
+        "inicio": "2026-11-19",
+        "fin": "2026-11-22"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 3000,
+      "muestra_nota": "Ficha técnica del texto: 'Tracking realizado por DATA10 para OKDIARIO entre el 19 y el 22 de noviembre de 2026 … Muestra: 3.000 entrevistas'.",
+      "metodo": "Metodología mixta de panel tabulado y llamada telefónica asistida por ordenador (DATA10); selección aleatoria con proporcionalidad por sexo, edad y tamaño poblacional.",
+      "margen_error": "±1,8% (95%, p=q=0,5)",
+      "base_porcentajes": "% de intención de voto (la fuente no indica la base)",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.7,
+          "escanos_min": 130,
+          "escanos_max": 130
+        },
+        {
+          "partido": "PSOE",
+          "pct": 27.3,
+          "escanos_min": 113,
+          "escanos_max": 113
+        },
+        {
+          "partido": "VOX",
+          "pct": 19.1,
+          "escanos_min": 64,
+          "escanos_max": 64
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 6.5,
+          "escanos_min": 9,
+          "escanos_max": 9,
+          "nota": "El tracking no publica Compromís ni otras confluencias por separado."
+        }
+      ],
+      "proyeccion_escanos": "puntual (sin horquillas)",
+      "proyeccion_escanos_nota": "El tracking solo publica PP, PSOE, Vox y Frente Amplio (gráfico 'Tracking diario hasta las 23:59 h del 23N' y texto, que coinciden).",
+      "discrepancias_fuente": "Ninguna en las cifras (texto y gráfico coinciden; el gráfico del 23-nov reproduce toda la serie).",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://okdiario.com/espana/derecha-aguanta-empuje-sanchez-pp-vox-sumarian-194-escanos-mayoria-absoluta-holgada-seis-dias-del-29-n-21244630",
+          "https://okdiario.com/img/2026/11/22/grafico-tracking-diario-22—nov-elecciones.png"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/data10/okdiario_20261123.html",
+        "data/sources/encuestas/data10/okdiario_20261123_grafico-tracking-diario-22-nov-elecciones.png"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/data10/okdiario_20261123.html": "0ce8ad78b4de01568e7c1ce7b54735a8f1466cc0dc9c2c9c7dcca0452752b965",
+        "data/sources/encuestas/data10/okdiario_20261123_grafico-tracking-diario-22-nov-elecciones.png": "732fa07b8b4c1f9eab6df4d821d03f3722bc8045b91392cd6d097b05bea506f8"
+      },
+      "verificado_en_fuente_primaria": true,
+      "suma_pct_publicada": 84.6,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
+    },
+    {
+      "id": "data10-2026-11-22",
+      "rol": "media",
+      "rol_nota": "Tracking diario de Data10; en la media lo supera data10-2026-11-23 (campo 19-22 nov), la última de Data10.",
+      "encuestadora": "Data10",
+      "cliente_medio": "OKDIARIO",
+      "estudio": "Tracking diario de DATA10 para OKDIARIO",
+      "fecha_publicacion": "2026-11-22",
+      "fecha_publicacion_nota": "Artículo de OKDIARIO 'El PSOE recorta distancias, pero el PP sigue cinco puntos por delante de los socialistas y la suma con Vox roza los 200 escaños' (Esther Jaén; datePublished 2026-11-22T05:45:41+01:00 (dateModified 21:22:09)).",
+      "trabajo_campo": {
+        "inicio": "2026-11-18",
+        "fin": "2026-11-21"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 3000,
+      "muestra_nota": "Ficha técnica del texto: 'Tracking realizado por DATA10 para OKDIARIO entre el 18 y el 21 de noviembre de 2026 … Muestra: 3.000 entrevistas'.",
+      "metodo": "Metodología mixta de panel tabulado y llamada telefónica asistida por ordenador (DATA10); selección aleatoria con proporcionalidad por sexo, edad y tamaño poblacional.",
+      "margen_error": "±1,8% (95%, p=q=0,5)",
+      "base_porcentajes": "% de intención de voto (la fuente no indica la base)",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 32.1,
+          "escanos_min": 133,
+          "escanos_max": 133
+        },
+        {
+          "partido": "PSOE",
+          "pct": 27.0,
+          "escanos_min": 111,
+          "escanos_max": 111
+        },
+        {
+          "partido": "VOX",
+          "pct": 19.0,
+          "escanos_min": 63,
+          "escanos_max": 63
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 6.6,
+          "escanos_min": 10,
+          "escanos_max": 10,
+          "nota": "El tracking no publica Compromís ni otras confluencias por separado."
+        }
+      ],
+      "proyeccion_escanos": "puntual (sin horquillas)",
+      "proyeccion_escanos_nota": "El tracking solo publica PP, PSOE, Vox y Frente Amplio (gráfico 'Tracking diario hasta las 23:59 h del 23N' y texto, que coinciden).",
+      "discrepancias_fuente": "Ninguna en las cifras (texto y gráfico coinciden; el gráfico del 23-nov reproduce toda la serie). El texto llama al tracking anterior 'publicado ayer, 20 de noviembre', pero se publicó el 21-nov.",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://okdiario.com/espana/psoe-recorta-distancias-pero-pp-sigue-cinco-puntos-delante-socialistas-suma-vox-roza-200-escanos-21240493",
+          "https://okdiario.com/img/2026/11/21/grafico-tracking-diario-21—nov-elecciones.png"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/data10/okdiario_20261122.html",
+        "data/sources/encuestas/data10/okdiario_20261122_grafico-tracking-diario-21-nov-elecciones.png"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/data10/okdiario_20261122.html": "1c39a6e2e82555fcb5859467d236fe9d578314cc6352cc8864a210c239c38b6a",
+        "data/sources/encuestas/data10/okdiario_20261122_grafico-tracking-diario-21-nov-elecciones.png": "fbbb060c0194be22e8404016cadd0d4a97e3ae736fc6c6c6d1da80445382f527"
+      },
+      "verificado_en_fuente_primaria": true,
+      "suma_pct_publicada": 84.7,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
+    },
+    {
+      "id": "data10-2026-11-21",
+      "rol": "media",
+      "rol_nota": "Tracking diario de Data10; en la media lo supera data10-2026-11-23 (campo 19-22 nov), la última de Data10.",
+      "encuestadora": "Data10",
+      "cliente_medio": "OKDIARIO",
+      "estudio": "Tracking diario de DATA10 para OKDIARIO",
+      "fecha_publicacion": "2026-11-21",
+      "fecha_publicacion_nota": "Artículo de OKDIARIO 'El debate impulsa al PP hasta los 135 escaños a costa de Vox y el PSOE, que retrocede 4 diputados' (Rafael Molina; datePublished 2026-11-21T05:45:31+01:00).",
+      "trabajo_campo": {
+        "inicio": "2026-11-17",
+        "fin": "2026-11-20"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 3000,
+      "muestra_nota": "Ficha técnica del texto: 'Tracking realizado por DATA10 para OKDIARIO entre el 17 y el 20 de noviembre de 2026 … Muestra: 3.000 entrevistas'.",
+      "metodo": "Metodología mixta de panel tabulado y llamada telefónica asistida por ordenador (DATA10); selección aleatoria con proporcionalidad por sexo, edad y tamaño poblacional.",
+      "margen_error": "±1,8% (95%, p=q=0,5)",
+      "base_porcentajes": "% de intención de voto (la fuente no indica la base)",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 32.3,
+          "escanos_min": 135,
+          "escanos_max": 135
+        },
+        {
+          "partido": "PSOE",
+          "pct": 26.6,
+          "escanos_min": 108,
+          "escanos_max": 108
+        },
+        {
+          "partido": "VOX",
+          "pct": 19.0,
+          "escanos_min": 63,
+          "escanos_max": 63
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 6.7,
+          "escanos_min": 11,
+          "escanos_max": 11,
+          "nota": "El tracking no publica Compromís ni otras confluencias por separado."
+        }
+      ],
+      "proyeccion_escanos": "puntual (sin horquillas)",
+      "proyeccion_escanos_nota": "El tracking solo publica PP, PSOE, Vox y Frente Amplio (gráfico 'Tracking diario hasta las 23:59 h del 23N' y texto, que coinciden).",
+      "discrepancias_fuente": "Ninguna en las cifras (texto y gráfico coinciden; el gráfico del 23-nov reproduce toda la serie).",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://okdiario.com/espana/debate-impulsa-pp-hasta-135-escanos-costa-vox-psoe-que-retrocede-4-diputados-21236645",
+          "https://okdiario.com/img/2026/11/20/grafico-tracking-diario-20—nov-elecciones.png"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/data10/okdiario_20261121.html",
+        "data/sources/encuestas/data10/okdiario_20261121_grafico-tracking-diario-20-nov-elecciones.png"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/data10/okdiario_20261121.html": "1eb47533e8ae6579651931125b836b4385ed7e4adb925b3f61aebe5f8c95f397",
+        "data/sources/encuestas/data10/okdiario_20261121_grafico-tracking-diario-20-nov-elecciones.png": "3419d1fa370fed600a86ab46021e69648d780f5bc9e6f31b66a53b6a22e0a12a"
+      },
+      "verificado_en_fuente_primaria": true,
+      "suma_pct_publicada": 84.6,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
+    },
+    {
+      "id": "data10-2026-11-19b",
+      "rol": "media",
+      "rol_nota": "Tracking diario de Data10; en la media lo supera data10-2026-11-23 (campo 19-22 nov), la última de Data10.",
+      "encuestadora": "Data10",
+      "cliente_medio": "OKDIARIO",
+      "estudio": "Tracking diario de DATA10 para OKDIARIO",
+      "fecha_publicacion": "2026-11-19",
+      "fecha_publicacion_nota": "Artículo de OKDIARIO 'Feijóo consolida su ventaja con 4,6 puntos de ventaja sobre Sánchez y una histórica mayoría absoluta con Vox' (Luz Sela; datePublished 2026-11-19T20:05:34+01:00 (dateModified 23:54:39)).",
+      "trabajo_campo": {
+        "inicio": "2026-11-16",
+        "fin": "2026-11-19"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 2600,
+      "muestra_nota": "Ficha técnica del texto: 'Tracking realizado por DATA10 para OKDIARIO entre el 16 y el 19 de noviembre de 2026 … Muestra: 2.600 entrevistas'.",
+      "metodo": "Metodología mixta de panel tabulado y llamada telefónica asistida por ordenador (DATA10); selección aleatoria con proporcionalidad por sexo, edad y tamaño poblacional.",
+      "margen_error": "±1,9% (95%, p=q=0,5)",
+      "base_porcentajes": "% de intención de voto (la fuente no indica la base)",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.5,
+          "escanos_min": 129,
+          "escanos_max": 129
+        },
+        {
+          "partido": "PSOE",
+          "pct": 26.9,
+          "escanos_min": 112,
+          "escanos_max": 112
+        },
+        {
+          "partido": "VOX",
+          "pct": 19.4,
+          "escanos_min": 66,
+          "escanos_max": 66
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 6.5,
+          "escanos_min": 9,
+          "escanos_max": 9,
+          "nota": "El tracking no publica Compromís ni otras confluencias por separado."
+        }
+      ],
+      "proyeccion_escanos": "puntual (sin horquillas)",
+      "proyeccion_escanos_nota": "El tracking solo publica PP, PSOE, Vox y Frente Amplio (gráfico 'Tracking diario hasta las 23:59 h del 23N' y texto, que coinciden).",
+      "discrepancias_fuente": "Ninguna en las cifras (texto y gráfico coinciden; el gráfico del 23-nov reproduce toda la serie).",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://okdiario.com/espana/feijoo-llega-debate-46-puntos-ventaja-sobre-sanchez-historica-mayoria-absoluta-vox-21189868",
+          "https://okdiario.com/img/2026/11/19/grafico-tracking-diario-19—nov-elecciones.png"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/data10/okdiario_20261119b.html",
+        "data/sources/encuestas/data10/okdiario_20261119b_grafico-tracking-diario-19-nov-elecciones.png"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/data10/okdiario_20261119b.html": "c365529974db69ea7ee2b47c731dac221a344356d97bc3c8f37152463fa5fa53",
+        "data/sources/encuestas/data10/okdiario_20261119b_grafico-tracking-diario-19-nov-elecciones.png": "ec0cd223b6d2d2b42d372b0c7058b4e998a708dfba61b884671784649a419069"
+      },
+      "verificado_en_fuente_primaria": true,
+      "suma_pct_publicada": 84.3,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
+    },
+    {
+      "id": "data10-2026-11-19",
+      "rol": "media",
+      "rol_nota": "Tracking diario de Data10; en la media lo supera data10-2026-11-23 (campo 19-22 nov), la última de Data10.",
+      "encuestadora": "Data10",
+      "cliente_medio": "OKDIARIO",
+      "estudio": "Tracking diario de DATA10 para OKDIARIO",
+      "fecha_publicacion": "2026-11-19",
+      "fecha_publicacion_nota": "Artículo de OKDIARIO 'El PP saca 5 puntos al PSOE en el ecuador de la primera semana de campaña y tendría con Vox una mayoría de 196 escaños' (Luz Sela; datePublished 2026-11-19T05:48:59+01:00).",
+      "trabajo_campo": {
+        "inicio": "2026-11-13",
+        "fin": "2026-11-18"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 2300,
+      "muestra_nota": "Ficha técnica del texto: 'Tracking realizado por DATA10 para OKDIARIO entre el 13 y el 18 de noviembre de 2026 … Muestra: 2.300 entrevistas'.",
+      "metodo": "Metodología mixta de panel tabulado y llamada telefónica asistida por ordenador (DATA10); selección aleatoria con proporcionalidad por sexo, edad y tamaño poblacional.",
+      "margen_error": "±2,1% (95%, p=q=0,5)",
+      "base_porcentajes": "% de intención de voto (la fuente no indica la base)",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.6,
+          "escanos_min": 130,
+          "escanos_max": 130
+        },
+        {
+          "partido": "PSOE",
+          "pct": 26.5,
+          "escanos_min": 109,
+          "escanos_max": 109
+        },
+        {
+          "partido": "VOX",
+          "pct": 19.4,
+          "escanos_min": 66,
+          "escanos_max": 66
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 6.7,
+          "escanos_min": 10,
+          "escanos_max": 10,
+          "nota": "El tracking no publica Compromís ni otras confluencias por separado."
+        }
+      ],
+      "proyeccion_escanos": "puntual (sin horquillas)",
+      "proyeccion_escanos_nota": "El tracking solo publica PP, PSOE, Vox y Frente Amplio (gráfico 'Tracking diario hasta las 23:59 h del 23N' y texto, que coinciden).",
+      "discrepancias_fuente": "Ninguna en las cifras (texto y gráfico coinciden; el gráfico del 23-nov reproduce toda la serie).",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://okdiario.com/espana/pp-saca-5-puntos-psoe-ecuador-primera-semana-campana-tendria-vox-mayoria-196-escanos-21117119",
+          "https://okdiario.com/img/2026/11/19/2-grafico-tracking-diario-elecciones-2.png"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/data10/okdiario_20261119.html",
+        "data/sources/encuestas/data10/okdiario_20261119_2-grafico-tracking-diario-elecciones-2.png"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/data10/okdiario_20261119.html": "b15fd2f7c4ebc0ae47fa029e154dcb05753c746b10a843760b7eed72b932039b",
+        "data/sources/encuestas/data10/okdiario_20261119_2-grafico-tracking-diario-elecciones-2.png": "3b850b108af4ddbbb7a3bd68f230e361c8f7c9f7152cf12afd7f8260afd85c32"
+      },
+      "verificado_en_fuente_primaria": true,
+      "suma_pct_publicada": 84.2,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
+    },
+    {
+      "id": "data10-2026-11-16",
+      "rol": "media",
+      "rol_nota": "Superada en la media por las entregas posteriores de Data10 (la media toma la de campo más reciente).",
+      "encuestadora": "Data10",
+      "cliente_medio": "OKDIARIO",
+      "estudio": "OKENCUESTA 29-N (estimación de voto)",
+      "fecha_publicacion": "2026-11-16",
+      "fecha_publicacion_nota": "Artículo de OKDIARIO 'La campaña de Sánchez contra OKDIARIO no da frutos: el PSOE se queda en 104 escaños frente a la holgada mayoría de PP y Vox' (Rafael Gallego; datePublished y dateModified 2026-11-16T05:51:39+01:00).",
+      "trabajo_campo": {
+        "inicio": "2026-11-11",
+        "fin": "2026-11-12"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 1500,
+      "muestra_nota": "Ficha técnica (imagen): '1.500 entrevistas'; 'Realización: Entre el 11 y el 12 de noviembre de 2026'.",
+      "metodo": "Mixta de panel tabulado y llamada telefónica asistida por ordenador (DATA 10); selección aleatoria con proporcionalidad por sexo, edad y tamaño poblacional; escaños según la distribución histórica del voto en cada provincia.",
+      "margen_error": "±2,8% (95%, p=q=0,5)",
+      "base_porcentajes": "% de voto (la fuente no indica la base)",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.7,
+          "escanos_min": 131,
+          "escanos_max": 131,
+          "nota": "Sin UPN, que va por separado (0,3%, 2 escaños)."
+        },
+        {
+          "partido": "PSOE",
+          "pct": 25.5,
+          "escanos_min": 104,
+          "escanos_max": 104
+        },
+        {
+          "partido": "VOX",
+          "pct": 20.4,
+          "escanos_min": 71,
+          "escanos_max": 71
+        },
+        {
+          "partido": "SUMAR",
+          "pct": 6.7,
+          "escanos_min": 9,
+          "escanos_max": 9,
+          "nombre_publicado": "SUM",
+          "nombre_publicado_escanos": "SUMAR",
+          "nota": "La infografía rotula 'SUM'/'SUMAR'; el texto dice 'Frente Amplio'."
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.4,
+          "escanos_min": 10,
+          "escanos_max": 10
+        },
+        {
+          "partido": "JUNTS",
+          "pct": 1.4,
+          "escanos_min": 6,
+          "escanos_max": 6
+        },
+        {
+          "partido": "EH-BILDU",
+          "pct": 1.3,
+          "escanos_min": 7,
+          "escanos_max": 7
+        },
+        {
+          "partido": "PNV",
+          "pct": 0.7,
+          "escanos_min": 3,
+          "escanos_max": 3
+        },
+        {
+          "partido": "C. Canaria",
+          "pct": 0.4,
+          "escanos_min": 1,
+          "escanos_max": 1
+        },
+        {
+          "partido": "BNG",
+          "pct": 0.9,
+          "escanos_min": 2,
+          "escanos_max": 2
+        },
+        {
+          "partido": "UPN",
+          "pct": 0.3,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "nota": "UPN concurre en coalición con el PP en Navarra; Data10 la cuenta aparte."
+        },
+        {
+          "partido": "Podemos",
+          "pct": 2.1,
+          "escanos_min": 0,
+          "escanos_max": 0
+        },
+        {
+          "partido": "Adelante And.",
+          "pct": 1.7,
+          "escanos_min": 4,
+          "escanos_max": 4
+        },
+        {
+          "partido": "Otros",
+          "pct": 4.5,
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "tipo": "otros"
+        }
+      ],
+      "proyeccion_escanos": "puntual (sin horquillas)",
+      "proyeccion_escanos_nota": "Infografía 'OKENCUESTA 29-N · ESTIMACIÓN DE VOTO' (FUENTE: DATA10): partidos principales y tabla 'Resto' (EH-Bildu, PNV, C. Canaria, BNG, UPN, Podemos, Adelante And., Otros; suma 11,9% y 19 escaños). Escaños suman 350.",
+      "discrepancias_fuente": "El texto dice que ERC y Bildu 'mejorarían un escaño cada uno': cuadra con Bildu (6 → 7), pero la imagen da a ERC 10, no 8. El nombre del fichero de la imagen contiene 'a-12-nov'.",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://okdiario.com/espana/campana-sanchez-contra-okdiario-no-da-frutos-psoe-queda-104-escanos-frente-holgada-mayoria-pp-vox-20904749",
+          "https://okdiario.com/img/2026/11/16/encuesta-estimacion-de-voto-y-escanos-elecciones-generales-–-interior-a-12-nov-–-1.png",
+          "https://okdiario.com/img/2026/11/16/ficha-tecnica-29-n-16.png"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/data10/okdiario_20261116.html",
+        "data/sources/encuestas/data10/okdiario_20261116_encuesta-estimacion-de-voto-y-escanos-elecciones-generales-interior-a-12-nov-1.png",
+        "data/sources/encuestas/data10/okdiario_20261116_ficha-tecnica-29-n-16.png"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/data10/okdiario_20261116.html": "057fc756e3653a87c2b58e4dbce649bdf9cd278bcdaf308b7a7353344b60efe6",
+        "data/sources/encuestas/data10/okdiario_20261116_encuesta-estimacion-de-voto-y-escanos-elecciones-generales-interior-a-12-nov-1.png": "82f0394faa5f8f6644325927372edf62d23be006a9d6eb76481ff178fe8516a7",
+        "data/sources/encuestas/data10/okdiario_20261116_ficha-tecnica-29-n-16.png": "59b19f943340f0c65a77c171c583e0a3d17e1a9a826f9fb653cf414b550091c3"
+      },
+      "verificado_en_fuente_primaria": true,
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
+    },
+    {
       "id": "data10-2026-11-09",
       "rol": "media",
       "encuestadora": "Data10",
@@ -12107,6 +16024,196 @@
       "verificado_en_fuente_primaria": true
     },
     {
+      "id": "targetpoint-2026-11-23",
+      "rol": "media",
+      "rol_nota": "Entra en la media como la última de Target Point (sustituye ahí a targetpoint-2026-11-02).",
+      "encuestadora": "Target Point, SL",
+      "cliente_medio": "El Debate",
+      "fecha_publicacion": "2026-11-23",
+      "fecha_publicacion_nota": "Artículo de El Debate 'Feijóo y Sánchez crecen y pelean por el primer puesto, pero la mayoría absoluta de la derecha sigue sólida' (Ana Martín; datePublished 2026-11-23T04:30:00+01:00, dateModified 09:37:41). Cifras del JSON público de sus gráficos (info.eldebate.com); 'En el sondeo se muestra la horquilla, nunca el valor de seats' (código del gráfico).",
+      "trabajo_campo": {
+        "inicio": "2026-11-20",
+        "fin": "2026-11-21"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 1206,
+      "metodo": "Encuesta a panelistas online (CAWI), estratificada por sexo, edad y CCAA; ponderación rake con recuerdo de voto de 2023.",
+      "margen_error": "±2,9% (95,5%)",
+      "base_porcentajes": "% de voto (la fuente no indica la base esta vez)",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.5,
+          "escanos_min": 127,
+          "escanos_max": 131
+        },
+        {
+          "partido": "PSOE",
+          "pct": 28.8,
+          "escanos_min": 114,
+          "escanos_max": 118
+        },
+        {
+          "partido": "Vox",
+          "pct": 17.4,
+          "escanos_min": 59,
+          "escanos_max": 63
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 7.3,
+          "escanos_min": 11,
+          "escanos_max": 12,
+          "nota": "Target Point no publica Compromís ni otras confluencias por separado y no aclara si esta cifra las incluye."
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.0,
+          "escanos_min": 0,
+          "escanos_max": 0
+        },
+        {
+          "partido": "SALF",
+          "pct": 1.8,
+          "escanos_min": 0,
+          "escanos_max": 0
+        },
+        {
+          "partido": "Otros",
+          "pct": 12.3,
+          "escanos_min": 30,
+          "escanos_max": 36,
+          "tipo": "otros",
+          "nota": "Agregado sin desglose (ERC, Junts, PNV, Bildu, BNG, AA, CC, etc.)."
+        }
+      ],
+      "proyeccion_escanos": "horquillas (ver estimacion_voto)",
+      "proyeccion_escanos_nota": "Campo 'seats_fork' del JSON de El Debate, el que publican sus gráficos.",
+      "discrepancias_fuente": "En el JSON, Frente Amplio tiene 'seats': 10 (valor de dibujo) y 'seats_fork': '11-12'; se toma la horquilla publicada, que cuadra con el texto (izquierda 125-130). Los porcentajes suman 100,1. Partidos solo en el texto, sin %: ERC 'entre 10 y 12', Junts pierde 'dos o tres' de 7, PNV pierde 'entre uno y dos', Bildu 'podría sumar uno más a sus seis'.",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://www.eldebate.com/espana/20261123/feijoo-sanchez-crecen-pelean-primer-puesto-mayoria-absoluta-derecha-sigue-solida_483831.html",
+          "https://info.eldebate.com/especial/elecciones/datos/2026/generales-29n/sondeos/target-point-20261120.json",
+          "https://imagenes.eldebate.com/files/new_main_image/uploads/2026/11/22/6b0368b262cc7.jpeg"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/targetpoint/eldebate_20261123.html",
+        "data/sources/encuestas/targetpoint/eldebate_20261123_estimacion.jpeg",
+        "data/sources/encuestas/targetpoint/eldebate_datos_target-point-20261120.json",
+        "data/sources/encuestas/targetpoint/eldebate_grafico_target-point-20261120_escanos.html",
+        "data/sources/encuestas/targetpoint/eldebate_grafico_target-point-20261120_porcentaje.html"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/targetpoint/eldebate_20261123.html": "9885d3c4f6960b33cf07e52d2c225a7ccc514d1d5db5330fbfe4ffe93e42a690",
+        "data/sources/encuestas/targetpoint/eldebate_20261123_estimacion.jpeg": "5da1e50a6663a89c13622d9038651d41141b2b6c2d122aee0dab2e1386755e14",
+        "data/sources/encuestas/targetpoint/eldebate_datos_target-point-20261120.json": "11d34a5f44dc2b019909b4ecc3a607818bd79a40628a15be0549318794d9b768",
+        "data/sources/encuestas/targetpoint/eldebate_grafico_target-point-20261120_escanos.html": "24c7f0b22070a40c02dc740bfc02f16fe24015aafba0d98366dff74aaca658ac",
+        "data/sources/encuestas/targetpoint/eldebate_grafico_target-point-20261120_porcentaje.html": "08c59cc2b0ba4b02b5fbe64d9fd817beafcf80f607416fa1d4bb8d31bc93636e"
+      },
+      "verificado_en_fuente_primaria": true,
+      "suma_pct_publicada": 100.1,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
+    },
+    {
+      "id": "targetpoint-2026-11-16",
+      "rol": "media",
+      "rol_nota": "Entra en la media como la última de Target Point solo hasta que se registre targetpoint-2026-11-23 (campo posterior).",
+      "encuestadora": "Target Point, SL",
+      "cliente_medio": "El Debate",
+      "fecha_publicacion": "2026-11-16",
+      "fecha_publicacion_nota": "Artículo de El Debate 'El PSOE activa a medio millón de votantes y recorta pero no pone en riesgo la mayoría absoluta del PP y Vox' (Ana Martín; datePublished 2026-11-16T04:30:00+01:00, dateModified 16:27:32). Cifras del JSON público de sus gráficos (info.eldebate.com); 'En el sondeo se muestra la horquilla, nunca el valor de seats' (código del gráfico).",
+      "trabajo_campo": {
+        "inicio": "2026-11-12",
+        "fin": "2026-11-12"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 1013,
+      "metodo": "Encuesta a panelistas online (CAWI), estratificada por sexo, edad y CCAA; ponderación rake con recuerdo de voto de 2023.",
+      "margen_error": "±3,1% (95,5%)",
+      "base_porcentajes": "% de voto válido (texto del 16-nov: 'el 49,3 % del voto válido')",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 30.6,
+          "escanos_min": 125,
+          "escanos_max": 129
+        },
+        {
+          "partido": "PSOE",
+          "pct": 27.0,
+          "escanos_min": 110,
+          "escanos_max": 114
+        },
+        {
+          "partido": "Vox",
+          "pct": 18.7,
+          "escanos_min": 64,
+          "escanos_max": 68
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 7.3,
+          "escanos_min": 11,
+          "escanos_max": 11,
+          "nota": "Target Point no publica Compromís ni otras confluencias por separado y no aclara si esta cifra las incluye."
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.6,
+          "escanos_min": 0,
+          "escanos_max": 1
+        },
+        {
+          "partido": "SALF",
+          "pct": 2.1,
+          "escanos_min": 0,
+          "escanos_max": 0
+        },
+        {
+          "partido": "Otros",
+          "pct": 12.7,
+          "escanos_min": 31,
+          "escanos_max": 37,
+          "tipo": "otros",
+          "nota": "Agregado sin desglose (ERC, Junts, PNV, Bildu, BNG, AA, CC, etc.)."
+        }
+      ],
+      "proyeccion_escanos": "horquillas (ver estimacion_voto)",
+      "proyeccion_escanos_nota": "Campo 'seats_fork' del JSON de El Debate, el que publican sus gráficos.",
+      "discrepancias_fuente": "El texto da para Vox 'hasta quedarse con 66' (valor 'seats' del JSON), dentro de la horquilla publicada 64-68. Partidos solo en el texto, sin %: ERC 'entre 13 y 14', Junts 'entre tres y cuatro', PNV 3, BNG 'uno o dos' más, Adelante Andalucía 'tres o cuatro'.",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://www.eldebate.com/espana/20261116/psoe-activa-medio-millon-votantes-recorta-no-pone-riesgo-mayoria-absoluta-pp-vox_480764.html",
+          "https://info.eldebate.com/especial/elecciones/datos/2026/generales-29n/sondeos/target-point-20261113.json",
+          "https://imagenes.eldebate.com/files/new_main_image/uploads/2026/11/13/6af74c0dc69ec.jpeg"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/targetpoint/eldebate_20261116.html",
+        "data/sources/encuestas/targetpoint/eldebate_20261116_escanos.jpeg",
+        "data/sources/encuestas/targetpoint/eldebate_datos_target-point-20261113.json",
+        "data/sources/encuestas/targetpoint/eldebate_datos_partidos.json",
+        "data/sources/encuestas/targetpoint/eldebate_grafico_target-point-20261112_escanos.html",
+        "data/sources/encuestas/targetpoint/eldebate_grafico_target-point-20261112_porcentaje.html"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/targetpoint/eldebate_20261116.html": "8159193d69a86c167661c585b49ef6535f7849565cf6f3a1f6dc4c771dc8dfb1",
+        "data/sources/encuestas/targetpoint/eldebate_20261116_escanos.jpeg": "5aba96df389c81e2c368e2d044d6f9c8e031a509b770eb8e96753ffe66009436",
+        "data/sources/encuestas/targetpoint/eldebate_datos_target-point-20261113.json": "37d734d8d134e4588cfb16bf690ae134268b14cc9fcb89b576f073da4e31b00d",
+        "data/sources/encuestas/targetpoint/eldebate_datos_partidos.json": "46c118dc3ec7b546e2090a550547d6c6fc3fc6f83c2424fb3e8d27e2d14a2c35",
+        "data/sources/encuestas/targetpoint/eldebate_grafico_target-point-20261112_escanos.html": "e6a7cd337521fccb143270089e3eaaa2e94fd1dd82b6dcb1f71c5dddf624a9fd",
+        "data/sources/encuestas/targetpoint/eldebate_grafico_target-point-20261112_porcentaje.html": "56dc191622171daead0a85778e6b87c87732476bb799aa4ccb279078069607fb"
+      },
+      "verificado_en_fuente_primaria": true,
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
+    },
+    {
       "id": "targetpoint-2026-11-02",
       "rol": "media",
       "encuestadora": "Target Point, SL",
@@ -12195,6 +16302,135 @@
         "data/sources/encuestas/targetpoint/eldebate_20261102_escanos.jpeg": "24f87aa1e0b6742af25c217bb4f23f85057cac81a605e4786641c885a0dc65db"
       },
       "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "hamalgama-2026-11-22",
+      "rol": "media",
+      "rol_nota": "Entra en la media como la última de Hamalgama (sustituye ahí a hamalgama-2026-11-02).",
+      "encuestadora": "Hamalgama Métrica",
+      "cliente_medio": "Vozpópuli",
+      "fecha_publicacion": "2026-11-22",
+      "fecha_publicacion_nota": "Artículo de Vozpópuli 'PP y Vox se disparan a 210 escaños y frenan en seco el \"espíritu de remontada\" del PSOE' (Iván Libreros; datePublished y dateModified 2026-11-22T04:44:00+01:00).",
+      "trabajo_campo": {
+        "inicio": "2026-11-10",
+        "fin": "2026-11-20"
+      },
+      "trabajo_campo_nota": "La ficha técnica (artículo principal y pieza de trasvase) dice 'Trabajo de campo: 10 al 20 de noviembre de 2026'; el texto y la pieza del País Vasco dicen 'entre el 10 y el 18 de noviembre', y el último punto del gráfico de evolución es '18/11 2026'. Se toma la ficha.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 1000,
+      "metodo": "CATI a móviles y fijos de particulares; muestreo polietápico estratificado por conglomerados (provincia × hábitat en 4 categorías). La ficha dice 'Universo: Españoles de 18 y más años residentes en la autonomía' (sic).",
+      "margen_error": "±3,16% (95,5%)",
+      "base_porcentajes": "% de voto (esta entrega no indica la base; la del 2-nov decía 'sobre voto válido')",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.8,
+          "escanos_min": 130,
+          "escanos_max": 130,
+          "nota": "UPN figura aparte (2 escaños, 0,4%)."
+        },
+        {
+          "partido": "PSOE",
+          "pct": 25.4,
+          "escanos_min": 98,
+          "escanos_max": 98
+        },
+        {
+          "partido": "Vox",
+          "pct": 20.6,
+          "escanos_min": 80,
+          "escanos_max": 80
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 6.5,
+          "escanos_min": 9,
+          "escanos_max": 9,
+          "nota": "Hamalgama no publica Compromís ni otras confluencias por separado y no aclara si esta cifra las incluye."
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.2,
+          "escanos_min": 9,
+          "escanos_max": 9
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.5,
+          "escanos_min": 6,
+          "escanos_max": 6
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.4,
+          "escanos_min": 7,
+          "escanos_max": 7
+        },
+        {
+          "partido": "PNV",
+          "pct": 0.9,
+          "escanos_min": 4,
+          "escanos_max": 4
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.2,
+          "escanos_min": 0,
+          "escanos_max": 0
+        },
+        {
+          "partido": "BNG",
+          "pct": 0.8,
+          "escanos_min": 2,
+          "escanos_max": 2
+        },
+        {
+          "partido": "UPN",
+          "pct": 0.4,
+          "escanos_min": 2,
+          "escanos_max": 2,
+          "nota": "Recuadro 'OTROS' de la infografía."
+        },
+        {
+          "partido": "Adelante Andalucía",
+          "pct": 1.5,
+          "escanos_min": 3,
+          "escanos_max": 3,
+          "nombre_publicado": "Adel. And.",
+          "nota": "Recuadro 'OTROS' de la infografía ('Adel. And. · 3 · 1,5%')."
+        }
+      ],
+      "proyeccion_escanos": "puntual (sin horquillas)",
+      "proyeccion_escanos_nota": "Infografía 'Encuesta Vozpópuli/Hamalgama: escaños y porcentaje · noviembre de 2026'; los escaños suman 350 (CC no figura). PP+Vox 210 y 52,4% (texto). SALF solo aparece en el texto, sin porcentaje: 'Se Acabó La Fiesta tampoco obtendría representación a pesar de sus 453.708 votos' (no se guarda como fila porque build_fase2.py necesita el porcentaje).",
+      "discrepancias_fuente": "Solo el fin de campo (ver trabajo_campo_nota). Las cifras de texto, infografía, gráfico de bloques y gráfico de evolución coinciden.",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://www.vozpopuli.com/espana/politica/pp-y-vox-se-disparan-a-210-escanos-y-frenan-en-seco-el-espiritu-de-remontada-del-psoe.html",
+          "https://cdn.vozpopuli.com/cdn/posts/4242902/pp-vox-se-disparan-210-escanos-segun-ultima-encuesta-hamalgama-metrica-2904585-1200-700.jpg",
+          "https://www.vozpopuli.com/espana/politica/uno-de-cada-diez-votantes-del-psoe-en-2023-optara-por-apoyar-a-alberto-nunez-feijoo.html"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/hamalgama/vozpopuli_20261122.html",
+        "data/sources/encuestas/hamalgama/vozpopuli_20261122_escanos.jpg",
+        "data/sources/encuestas/hamalgama/vozpopuli_20261122_bloques.jpg",
+        "data/sources/encuestas/hamalgama/vozpopuli_20261122_evolucion.jpg",
+        "data/sources/encuestas/hamalgama/vozpopuli_20261122_paisvasco.html",
+        "data/sources/encuestas/hamalgama/vozpopuli_20261122_trasvase.html"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/hamalgama/vozpopuli_20261122.html": "85d5aa30ae54c92567b6837919169605d54920179498afcf25375cf9c0b4db2f",
+        "data/sources/encuestas/hamalgama/vozpopuli_20261122_escanos.jpg": "be7adfaaa61d61a10aba646acf8f4b9f567182536a1703406ebd0793acf0f2bb",
+        "data/sources/encuestas/hamalgama/vozpopuli_20261122_bloques.jpg": "3e3b28a6f7a5acf41509aa8e25656ce7ec2b8975f73e2cb9b16a4b39e48f56a6",
+        "data/sources/encuestas/hamalgama/vozpopuli_20261122_evolucion.jpg": "2d3bea3423bf41e7aa2152d5f2d5aebb8535b1dd379d1643868f20b5e06b2ed4",
+        "data/sources/encuestas/hamalgama/vozpopuli_20261122_paisvasco.html": "f3ad0fa5d1752a8a19895be6f690c8688b6114c55a9698c64b8bc3cad3cf3c6a",
+        "data/sources/encuestas/hamalgama/vozpopuli_20261122_trasvase.html": "8e13fbe23f76536ec8103c193f38388eb344c0e3f7c0e680c8a31b79e0663457"
+      },
+      "verificado_en_fuente_primaria": true,
+      "suma_pct_publicada": 94.2,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
     },
     {
       "id": "hamalgama-2026-11-02",
@@ -12325,6 +16561,93 @@
       "verificado_en_fuente_primaria": true
     },
     {
+      "id": "moreincommon-2026-11-20",
+      "rol": "media",
+      "rol_nota": "Entra en la media como la última de More in Common (sustituye ahí a moreincommon-2026-11-03).",
+      "encuestadora": "More in Common España",
+      "cliente_medio": "More in Common España (estudio propio, publicado en su web y Substack)",
+      "estudio": "Pulso electoral: rumbo al 29N — 20 de noviembre de 2026 (último Pulso Electoral)",
+      "fecha_publicacion": "2026-11-20",
+      "fecha_publicacion_nota": "Substack 'Diez días para el 29N: nuestro último Pulso Electoral' (datePublished 2026-11-20T16:11:31+00:00) y PDF en moreincommon.es (CreationDate 20-11-2026 17:46 CET; Last-Modified 20-nov 16:47:45 GMT).",
+      "trabajo_campo": {
+        "inicio": "2026-11-16",
+        "fin": "2026-11-19"
+      },
+      "trabajo_campo_nota": "'Trabajo de Campo: 16 a 19 de noviembre de 2026. Previo al debate electoral entre Pedro Sánchez y Alberto Núñez Feijóo'.",
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 2315,
+      "metodo": "Entrevista online (CAWI), muestreo no probabilístico por cuotas desde panel; pesos por las variables de cuota, educación, municipio × edad y recuerdo de voto (novedad respecto a octubre).",
+      "margen_error": "±2,5 puntos en los datos ponderados también por recuerdo de voto (±2,2 con ponderación solo demográfica)",
+      "base_porcentajes": "% sobre voto válido",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 28.9,
+          "nota": "'UPN en coalición con el PP se cuenta dentro del PP.'"
+        },
+        {
+          "partido": "PSOE",
+          "pct": 28.0
+        },
+        {
+          "partido": "Vox",
+          "pct": 19.8,
+          "nota": "Texto: 'su horquilla, entre el 17,5% y el 22%'."
+        },
+        {
+          "partido": "Frente Amplio*",
+          "pct": 7.1,
+          "nota": "Bloque completo: '* Frente Amplio incluye las listas autonómicas de ese espacio, entre ellas Unidad del Pueblo Canario (Canarias) y Compromís–Front Valencià (Comunitat Valenciana), que son la única opción de Frente Amplio en esas comunidades.'"
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.7
+        },
+        {
+          "partido": "SALF",
+          "pct": 2.3,
+          "nota": "Solo en los gráficos."
+        },
+        {
+          "partido": "Regionales**",
+          "pct": 8.9,
+          "tipo": "agregado",
+          "nota": "'** Regionales incluye ERC, Junts, PNV, EH Bildu, CC, BNG, Adelante Andalucía y Drago Canarias.' Sin desglose. Solo en los gráficos."
+        },
+        {
+          "partido": "Otros+Blanco",
+          "pct": 3.4,
+          "tipo": "otros_y_blanco",
+          "nota": "Solo en los gráficos."
+        }
+      ],
+      "proyeccion_escanos": null,
+      "proyeccion_escanos_nota": "No publica escaños. Participación estimada 74,2% [71,3-77,2%].",
+      "discrepancias_fuente": "Ninguna en las cifras (gráfico de la pág. 7, gráfico de evolución de la pág. 8, texto del PDF y Substack coinciden). La suma es 100,1. En octubre el bloque de derechas incluía SALF; ahora el texto lo da sin SALF (PP+Vox 48,7%).",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://moreincommon.es/pdfs/pulso-electoral/pulso-electoral-noviembre-2026.pdf",
+          "https://moreincommones.substack.com/p/diez-dias-para-el-29n-nuestro-ultimo",
+          "https://moreincommon.es/pulso-electoral.html"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/moreincommon/pulso-electoral-noviembre-2026.pdf",
+        "data/sources/encuestas/moreincommon/substack_20261120.html",
+        "data/sources/encuestas/moreincommon/pulso-electoral_20261120.html"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/moreincommon/pulso-electoral-noviembre-2026.pdf": "527e9aa83c71ef758137b0eea6a27dc88fec8f38c7accb8ed723e3fceab7da4b",
+        "data/sources/encuestas/moreincommon/substack_20261120.html": "8c62389c971ac8a9d702f807bbaea97ba81e816dae5c6a2d5c90363441dfed67",
+        "data/sources/encuestas/moreincommon/pulso-electoral_20261120.html": "9e6dfaa6cf88ef05e54951261555c52b8d1fb81f2b0a5ba992fdb0e6ae75b426"
+      },
+      "verificado_en_fuente_primaria": true,
+      "suma_pct_publicada": 100.1,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
+    },
+    {
       "id": "moreincommon-2026-11-03",
       "rol": "media",
       "encuestadora": "More in Common España",
@@ -12429,6 +16752,146 @@
         "data/sources/encuestas/moreincommon/pulso-electoral.html": "e42ba768af5997165d021e3ee0ddbd254268bbbd4f68e56303d683af8924ba5b"
       },
       "verificado_en_fuente_primaria": true
+    },
+    {
+      "id": "winston-2026-11-23",
+      "rol": "media",
+      "rol_nota": "Entra en la media como la última de Winston (sustituye ahí a winston-2026-11-13).",
+      "encuestadora": "Winston",
+      "cliente_medio": "Artículo14",
+      "estudio": "Sondeo 3 de campaña de Artículo 14, elaborado por Winston",
+      "fecha_publicacion": "2026-11-23",
+      "fecha_publicacion_nota": "Artículo de Artículo14 'Encuesta Artículo14 | Sánchez recorta distancias a Feijóo, pero la mayoría de PP y Vox supera los 190 escaños' (Marcos Pardeiro; datePublished y dateModified 2026-11-23T05:50:24+01:00). Gráfico d2k.es 'sondeo3-hemiciclo'.",
+      "trabajo_campo": {
+        "inicio": "2026-11-17",
+        "fin": "2026-11-19"
+      },
+      "campo_posterior_a_convocatoria": true,
+      "muestra_n": 1482,
+      "muestra_nota": "Texto: '1.482 entrevistas online entre los días 17 y 19 de noviembre de 2026, es decir, justo antes del cara a cara' (también la pieza complementaria del mismo día); el pie del gráfico redondea a '1.500 entrevistas online'.",
+      "metodo": "Entrevista online; no se publican más detalles ni margen de error.",
+      "margen_error": null,
+      "base_porcentajes": "% de voto (la fuente no indica la base)",
+      "estimacion_voto": [
+        {
+          "partido": "PP",
+          "pct": 31.1,
+          "escanos_min": 130,
+          "escanos_max": 130,
+          "nota": "UPN tiene fila aparte (sin %, 0 escaños)."
+        },
+        {
+          "partido": "PSOE",
+          "pct": 28.2,
+          "escanos_min": 116,
+          "escanos_max": 116
+        },
+        {
+          "partido": "Vox",
+          "pct": 17.7,
+          "escanos_min": 61,
+          "escanos_max": 61
+        },
+        {
+          "partido": "Frente Amplio",
+          "pct": 6.4,
+          "escanos_min": 9,
+          "escanos_max": 9,
+          "nota": "Nota del gráfico: 'hoy Frente Amplio incluye a Compromís'. Podemos va aparte."
+        },
+        {
+          "partido": "Podemos",
+          "pct": 1.6,
+          "escanos_min": 0,
+          "escanos_max": 0
+        },
+        {
+          "partido": "SALF",
+          "pct": 2.6,
+          "escanos_min": 0,
+          "escanos_max": 0
+        },
+        {
+          "partido": "ERC",
+          "pct": 2.7,
+          "escanos_min": 11,
+          "escanos_max": 11
+        },
+        {
+          "partido": "EH Bildu",
+          "pct": 1.3,
+          "escanos_min": 6,
+          "escanos_max": 6
+        },
+        {
+          "partido": "Adelante AND",
+          "pct": 2.4,
+          "escanos_min": 6,
+          "escanos_max": 6,
+          "nota": "Adelante Andalucía."
+        },
+        {
+          "partido": "PNV",
+          "pct": 0.9,
+          "escanos_min": 3,
+          "escanos_max": 3
+        },
+        {
+          "partido": "Junts",
+          "pct": 1.4,
+          "escanos_min": 5,
+          "escanos_max": 5
+        },
+        {
+          "partido": "BNG",
+          "pct": 0.9,
+          "escanos_min": 2,
+          "escanos_max": 2
+        },
+        {
+          "partido": "CC",
+          "pct": 0.3,
+          "escanos_min": 1,
+          "escanos_max": 1
+        },
+        {
+          "partido": "UPN",
+          "escanos_min": 0,
+          "escanos_max": 0,
+          "nota": "Sin porcentaje publicado ('—'); 0 escaños."
+        },
+        {
+          "partido": "Otros y blanco",
+          "pct": 2.5,
+          "tipo": "otros"
+        }
+      ],
+      "proyeccion_escanos": "puntual (sin horquillas)",
+      "proyeccion_escanos_nota": "'Tabla completa' del gráfico d2k.es (columnas 'Estimación de voto' y 'Proyección de escaños'): suma 100% y 350 escaños. PP, Vox y SALF suman 176 o más en el 89% de las simulaciones (texto).",
+      "discrepancias_fuente": "Muestra: 1.482 en el texto frente a 1.500 en el pie del gráfico. La fila resumen 'Otras' del hemiciclo (9,9%, 34) solo cuadra si incluye a CC, aunque la nota no la cita; no se guarda para no contar dos veces.",
+      "desglose_regional": null,
+      "urls": {
+        "primarias": [
+          "https://www.articulo14.es/politica/sanchez-recorta-distancias-a-feijoo-pero-la-mayoria-de-pp-y-vox-supera-los-190-escanos-20261123.html",
+          "https://d2k.es/articulo14/graficos/sondeo3-hemiciclo/"
+        ],
+        "secundarias": []
+      },
+      "archivos_fuente": [
+        "data/sources/encuestas/winston/articulo14_20261123.html",
+        "data/sources/encuestas/winston/d2k_sondeo3-hemiciclo_20261123.html",
+        "data/sources/encuestas/winston/articulo14_20261123b.html",
+        "data/sources/encuestas/winston/d2k_campana-2026-s3_intencion_animada_20261123.html"
+      ],
+      "archivos_fuente_sha256": {
+        "data/sources/encuestas/winston/articulo14_20261123.html": "8c27d034ceb3882b7e08e77fbb719761c73e745f1207ff3f6e7f0c080edac817",
+        "data/sources/encuestas/winston/d2k_sondeo3-hemiciclo_20261123.html": "20fba17309397debe5fc4835fecea59b6ead2638c4a235ddace116255558535d",
+        "data/sources/encuestas/winston/articulo14_20261123b.html": "ab29f5b54e7f017b01e42d72f3f6dfa098b9f46d5423cd46cca155feebdb8f32",
+        "data/sources/encuestas/winston/d2k_campana-2026-s3_intencion_animada_20261123.html": "5187dafa57794a5ba1c0701eab1ab26d1d4f1d590c3477d97b80fef9b37982c4"
+      },
+      "verificado_en_fuente_primaria": true,
+      "suma_pct_publicada": 100.0,
+      "suma_pct_nota": "Suma de los porcentajes registrados."
     },
     {
       "id": "winston-2026-11-13",

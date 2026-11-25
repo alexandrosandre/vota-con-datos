@@ -1,0 +1,672 @@
+{
+	"date": "20 de noviembre",
+	"name": "Sondeo Target Point",
+	"electoral": {
+		"podemos": {
+			"percent": 1,
+			"seats": 0,
+			"seats_fork": "0",
+			"percent_2023": 0,
+			"seats_2023": 0
+		},
+		"sumar": {
+			"percent": 0,
+			"seats": 0,
+			"seats_fork": "0",
+			"percent_2023": 12.3,
+			"seats_2023": 31
+		},
+		"frente_amplio": {
+			"percent": 7.3,
+			"seats": 10,
+			"seats_fork": "11-12",
+			"percent_2023": 0,
+			"seats_2023": 0
+		},
+		"psoe": {
+			"percent": 28.8,
+			"seats": 116,
+			"seats_fork": "114-118",
+			"percent_2023": 31.7,
+			"seats_2023": 121
+		},
+		"otros": {
+			"percent": 12.3,
+			"seats": 34,
+			"seats_fork": "30-36",
+			"percent_2023": 10.6,
+			"seats_2023": 28
+		},
+		"pp": {
+			"percent": 31.5,
+			"seats": 129,
+			"seats_fork": "127-131",
+			"percent_2023": 33.1,
+			"seats_2023": 137
+		},
+		"vox": {
+			"percent": 17.4,
+			"seats": 61,
+			"seats_fork": "59-63",
+			"percent_2023": 12.4,
+			"seats_2023": 33
+		},
+		"salf": {
+			"percent": 1.8,
+			"seats": 0,
+			"seats_fork": "0",
+			"percent_2023": 0,
+			"seats_2023": 0
+		}
+	},
+	"vote_transfer": {
+		"nota_metodologica": "Trasvases de votantes con IDV + Simpatía por recuerdo de voto en 2023, por método IPF. Mide la retención y el destino de los votos de 2023. Votantes · márgenes fijos por estimación de voto y censo por recuerdo",
+		"origen": {
+			"descripcion": "Recuerdo de voto en 2023",
+			"nodos": [
+				{
+					"key": "pp"
+				},
+				{
+					"key": "psoe"
+				},
+				{
+					"key": "vox"
+				},
+				{
+					"key": "sumar"
+				},
+				{
+					"key": "erc"
+				},
+				{
+					"key": "junts"
+				},
+				{
+					"key": "pnv"
+				},
+				{
+					"key": "eh_bildu"
+				},
+				{
+					"key": "bng"
+				},
+				{
+					"key": "otros_blanco_nulo",
+					"name": "Otros, blanco y nulo",
+					"color": "#98a2b3"
+				},
+				{
+					"key": "abstuvo_2023",
+					"name": "Se abstuvo",
+					"color": "#667085"
+				},
+				{
+					"key": "nuevos_18",
+					"name": "Nuevos 18+ años",
+					"color": "#475467"
+				},
+				{
+					"key": "nuevos_derecho",
+					"name": "Nuevos x derecho",
+					"color": "#344054"
+				}
+			]
+		},
+		"destino": {
+			"descripcion": "Voto estimado ahora",
+			"nodos": [
+				{
+					"key": "pp"
+				},
+				{
+					"key": "psoe"
+				},
+				{
+					"key": "vox"
+				},
+				{
+					"key": "frente_amplio"
+				},
+				{
+					"key": "podemos"
+				},
+				{
+					"key": "salf"
+				},
+				{
+					"key": "erc"
+				},
+				{
+					"key": "junts"
+				},
+				{
+					"key": "pnv"
+				},
+				{
+					"key": "eh_bildu"
+				},
+				{
+					"key": "bng"
+				},
+				{
+					"key": "adelante_andalucia"
+				},
+				{
+					"key": "otros",
+					"name": "Otros",
+					"color": "#98a2b3"
+				},
+				{
+					"key": "blanco",
+					"name": "Voto en blanco",
+					"color": "#d0d5dd"
+				},
+				{
+					"key": "nulo",
+					"name": "Voto nulo",
+					"color": "#b0b7c3"
+				},
+				{
+					"key": "abstencion_indecisos",
+					"name": "Abstención / indecisos",
+					"color": "#667085"
+				}
+			]
+		},
+		"flujos": {
+			"pp": {
+				"pp": 5609856,
+				"psoe": 78235,
+				"vox": 1307877,
+				"podemos": 31045,
+				"salf": 58152,
+				"otros": 29860,
+				"blanco": 22346,
+				"abstencion_indecisos": 487665
+			},
+			"psoe": {
+				"pp": 711248,
+				"psoe": 5029515,
+				"vox": 136488,
+				"frente_amplio": 141982,
+				"podemos": 9488,
+				"salf": 29607,
+				"erc": 170365,
+				"junts": 75076,
+				"bng": 73221,
+				"adelante_andalucia": 47768,
+				"otros": 5767,
+				"blanco": 28631,
+				"nulo": 13175,
+				"abstencion_indecisos": 864382
+			},
+			"vox": {
+				"pp": 271672,
+				"psoe": 75747,
+				"vox": 2228136,
+				"frente_amplio": 66937,
+				"salf": 115933,
+				"otros": 63450,
+				"abstencion_indecisos": 114982
+			},
+			"sumar": {
+				"psoe": 913863,
+				"vox": 14790,
+				"frente_amplio": 1284266,
+				"podemos": 73969,
+				"erc": 161826,
+				"eh_bildu": 99948,
+				"adelante_andalucia": 120645,
+				"otros": 77457,
+				"nulo": 17542,
+				"abstencion_indecisos": 136855
+			},
+			"erc": {
+				"psoe": 39506,
+				"erc": 243393,
+				"junts": 45486,
+				"blanco": 64331,
+				"nulo": 11948,
+				"abstencion_indecisos": 32603
+			},
+			"junts": {
+				"junts": 242095,
+				"blanco": 49656,
+				"abstencion_indecisos": 74236
+			},
+			"pnv": {
+				"pnv": 160977,
+				"eh_bildu": 13712,
+				"abstencion_indecisos": 82267
+			},
+			"eh_bildu": {
+				"pp": 19123,
+				"podemos": 15239,
+				"eh_bildu": 277784,
+				"abstencion_indecisos": 2875
+			},
+			"bng": {
+				"psoe": 41239,
+				"bng": 72438,
+				"abstencion_indecisos": 30032
+			},
+			"otros_blanco_nulo": {
+				"pp": 159473,
+				"psoe": 36433,
+				"vox": 58593,
+				"frente_amplio": 82689,
+				"podemos": 77179,
+				"salf": 21340,
+				"erc": 24641,
+				"pnv": 30472,
+				"bng": 60236,
+				"adelante_andalucia": 84802,
+				"otros": 150715,
+				"blanco": 41900,
+				"nulo": 102267,
+				"abstencion_indecisos": 245642
+			},
+			"abstuvo_2023": {
+				"pp": 1312143,
+				"psoe": 774184,
+				"vox": 757418,
+				"podemos": 10493,
+				"salf": 201383,
+				"erc": 55898,
+				"junts": 35,
+				"pnv": 32285,
+				"eh_bildu": 3890,
+				"bng": 15175,
+				"adelante_andalucia": 129307,
+				"otros": 211316,
+				"blanco": 56098,
+				"nulo": 99271,
+				"abstencion_indecisos": 6212138
+			},
+			"nuevos_18": {
+				"pp": 145244,
+				"psoe": 429188,
+				"vox": 75104,
+				"frente_amplio": 140416,
+				"podemos": 43173,
+				"salf": 47377,
+				"erc": 24222,
+				"eh_bildu": 12653,
+				"bng": 42149,
+				"adelante_andalucia": 38626,
+				"otros": 73637,
+				"nulo": 43466,
+				"abstencion_indecisos": 499872
+			},
+			"nuevos_derecho": {
+				"pp": 52072,
+				"psoe": 149992,
+				"vox": 9080,
+				"frente_amplio": 194790,
+				"junts": 5812,
+				"abstencion_indecisos": 565716
+			}
+		},
+		"bajas_censo": {
+			"pp": 468778,
+			"psoe": 424479,
+			"vox": 96619,
+			"sumar": 112728,
+			"erc": 25467,
+			"junts": 25745,
+			"pnv": 19704,
+			"eh_bildu": 17952,
+			"bng": 8087,
+			"otros_blanco_nulo": 50324,
+			"abstuvo_2023": 525116
+		}
+	},
+	"candidates": {
+		"pp": 4.43,
+		"psoe": 3.81,
+		"vox": 3.48,
+		"frente_amplio": 3.14,
+		"podemos": 2.69,
+		"salf": 2.32
+	},
+	"main_worries": {
+		"title": "Principales problemas de España",
+		"values": {
+			"El coste de la vida": 66.5,
+			"La corrupción política": 62.4,
+			"La adquisición de vivienda": 62.2,
+			"La inmigración irregular masiva": 51.3,
+			"La atención en la sanidad pública": 47.1,
+			"Los políticos y partidos": 46.0,
+			"Los impuestos y tasas": 38.0,
+			"La delincuencia e inseguridad": 35.3,
+			"Las ocupaciones e \"inquiocupaciones\" de viviendas": 35.3,
+			"El desempleo y la precariedad laboral": 33.5,
+			"La calidad de la educación pública": 31.6,
+			"Las desigualdades sociales": 26.1,
+			"La Justicia y sus procedimientos": 26.0,
+			"Las infraestructuras de transporte": 24.8,
+			"El cambio climático acelerado por la humanidad": 24.2,
+			"Los medios de comunicación ideologizados": 24.1,
+			"El racismo, xenofobia y discriminaciones": 22.0,
+			"La burocracia administrativa": 21.7,
+			"El sistema público de pensiones": 20.3,
+			"La unidad de España y los separatismos territoriales": 19.4,
+			"Los privilegios legales de algunos colectivos": 18.3,
+			"La despoblación y el abandono rural": 16.7,
+			"El volumen de funcionarios públicos": 16.1,
+			"La contaminación y deforestación": 15.9,
+			"La baja natalidad": 15.2,
+			"El envejecimiento demográfico": 14.2,
+			"La dependencia de dispositivos digitales": 9.8,
+			"Las adicciones a drogas y alcohol": 7.5
+		}
+	},
+	"questions": {
+		"colors": {
+			"red": "#c00000",
+			"dark_orange": "#ef6c00",
+			"orange": "#f9a825",
+			"yellow": "#ffd966",
+			"green": "#8bc34a",
+			"dark_green": "#2e7d32",
+			"grey": "#bfbfbf",
+			"dark_grey": "#808080"
+		},
+		"question1": {
+			"text": "La vivienda es uno de los grandes temas de la campaña. ¿Cuál de estas medidas cree que sería más eficaz para facilitar el acceso a una vivienda?",
+			"answers": {
+				"Construir mucha más vivienda y liberar suelo": {
+					"color": "dark_green",
+					"Total": 34.5,
+					"pp": 47.1,
+					"psoe": 34.1,
+					"vox": 30.9,
+					"frente_amplio": 33.2
+				},
+				"Desalojar a los okupas en 48 horas y proteger al propietario": {
+					"color": "dark_green",
+					"Total": 23.6,
+					"pp": 29.3,
+					"psoe": 13.3,
+					"vox": 49.7,
+					"frente_amplio": 0.6
+				},
+				"Limitar por ley el precio de los alquileres": {
+					"color": "red",
+					"Total": 25.4,
+					"pp": 6.0,
+					"psoe": 43.2,
+					"vox": 4.3,
+					"frente_amplio": 59.8
+				},
+				"Dar prioridad a los españoles en la vivienda pública": {
+					"color": "green",
+					"Total": 9.4,
+					"pp": 14.0,
+					"psoe": 3.4,
+					"vox": 13.7,
+					"frente_amplio": 0.5
+				},
+				"No lo sé": {
+					"color": "grey",
+					"Total": 7.1,
+					"pp": 3.6,
+					"psoe": 6.0,
+					"vox": 1.4,
+					"frente_amplio": 6.0
+				}
+			}
+		},
+		"question2": {
+			"text": "La campaña está dejando episodios de violencia y amenazas. ¿Quién cree que es el principal responsable de este clima?",
+			"answers": {
+				"Sánchez y el PSOE, por su estrategia de confrontación": {
+					"color": "red",
+					"Total": 26.4,
+					"pp": 57.0,
+					"psoe": 6.2,
+					"vox": 62.6,
+					"frente_amplio": 1.0
+				},
+				"Bildu y la izquierda radical, socios del Gobierno": {
+					"color": "dark_orange",
+					"Total": 6.8,
+					"pp": 12.8,
+					"psoe": 1.5,
+					"vox": 16.4,
+					"frente_amplio": 4.1
+				},
+				"PP y Vox, por su discurso contra Sánchez": {
+					"color": "orange",
+					"Total": 24.7,
+					"pp": 5.0,
+					"psoe": 60.7,
+					"vox": 8.0,
+					"frente_amplio": 56.6
+				},
+				"Todos los partidos por igual": {
+					"color": "yellow",
+					"Total": 27.2,
+					"pp": 20.2,
+					"psoe": 21.8,
+					"vox": 10.0,
+					"frente_amplio": 30.3
+				},
+				"No lo sé": {
+					"color": "grey",
+					"Total": 14.8,
+					"pp": 5.0,
+					"psoe": 9.8,
+					"vox": 3.0,
+					"frente_amplio": 8.0
+				}
+			}
+		},
+		"question3": {
+			"text": "El jueves 19 de noviembre Sánchez y Feijóo se enfrentaron en el único cara a cara de la campaña. ¿Quién cree que lo ganó?",
+			"answers": {
+				"Pedro Sánchez": {
+					"color": "#ff0000",
+					"Total": 13.8,
+					"pp": 2.5,
+					"psoe": 41.2,
+					"vox": 0.0,
+					"frente_amplio": 22.8
+				},
+				"Alberto Núñez Feijóo": {
+					"color": "#17589d",
+					"Total": 39.2,
+					"pp": 83.6,
+					"psoe": 11.1,
+					"vox": 79.6,
+					"frente_amplio": 8.8
+				},
+				"Ninguno de los dos: quedaron igualados": {
+					"color": "dark_grey",
+					"Total": 9.2,
+					"pp": 1.1,
+					"psoe": 15.7,
+					"vox": 5.3,
+					"frente_amplio": 18.0
+				},
+				"No lo vi ni he seguido lo que se ha dicho de él": {
+					"color": "grey",
+					"Total": 27.0,
+					"pp": 10.0,
+					"psoe": 26.1,
+					"vox": 12.3,
+					"frente_amplio": 40.7
+				},
+				"No lo sé": {
+					"color": "grey",
+					"Total": 10.8,
+					"pp": 2.8,
+					"psoe": 5.9,
+					"vox": 2.7,
+					"frente_amplio": 9.8
+				}
+			}
+		},
+		"question4": {
+			"text": "¿Qué pesará más en su decisión de voto el 29 de noviembre?",
+			"answers": {
+				"Sacar a Sánchez del Gobierno": {
+					"color": "dark_green",
+					"Total": 33.3,
+					"pp": 76.4,
+					"psoe": 3.7,
+					"vox": 77.8,
+					"frente_amplio": 0.3
+				},
+				"Evitar un Gobierno de PP y Vox": {
+					"color": "red",
+					"Total": 29.0,
+					"pp": 3.0,
+					"psoe": 72.4,
+					"vox": 0.0,
+					"frente_amplio": 59.4
+				},
+				"La economía, la vivienda y el coste de la vida": {
+					"color": "orange",
+					"Total": 14.3,
+					"pp": 7.5,
+					"psoe": 16.8,
+					"vox": 8.1,
+					"frente_amplio": 27.7
+				},
+				"La corrupción y la regeneración política": {
+					"color": "orange",
+					"Total": 9.5,
+					"pp": 9.4,
+					"psoe": 3.8,
+					"vox": 12.1,
+					"frente_amplio": 1.4
+				},
+				"No lo sé": {
+					"color": "grey",
+					"Total": 13.9,
+					"pp": 3.8,
+					"psoe": 3.2,
+					"vox": 2.0,
+					"frente_amplio": 11.2
+				}
+			}
+		},
+		"question5": {
+			"text": "Entre Alberto Núñez Feijóo y Pedro Sánchez, ¿a quién prefiere como presidente del Gobierno tras las elecciones del 29 de noviembre?",
+			"answers": {
+				"Alberto Núñez Feijóo": {
+					"color": "#17589d",
+					"Total": 34.1,
+					"pp": 89.4,
+					"psoe": 2.9,
+					"vox": 65.8,
+					"frente_amplio": 0.0
+				},
+				"Pedro Sánchez": {
+					"color": "#ff0000",
+					"Total": 31.6,
+					"pp": 0.8,
+					"psoe": 90.1,
+					"vox": 4.1,
+					"frente_amplio": 66.0
+				},
+				"A ninguno de los dos": {
+					"color": "dark_grey",
+					"Total": 20.4,
+					"pp": 3.8,
+					"psoe": 4.9,
+					"vox": 30.1,
+					"frente_amplio": 23.6
+				},
+				"No lo sé": {
+					"color": "grey",
+					"Total": 13.9,
+					"pp": 6.0,
+					"psoe": 2.1,
+					"vox": 0.0,
+					"frente_amplio": 10.3
+				}
+			}
+		},
+		"question6": {
+			"text": "Tras las elecciones generales del 29 de noviembre, ¿qué tipo de gobierno preferiría?",
+			"answers": {
+				"PP en solitario": {
+					"color": "#17589d",
+					"Total": 13.9,
+					"pp": 51.2,
+					"psoe": 0.4,
+					"vox": 0.0,
+					"frente_amplio": 0.0
+				},
+				"PP en solitario, con apoyo de Vox desde fuera": {
+					"color": "#5ac032",
+					"Total": 5.6,
+					"pp": 17.5,
+					"psoe": 0.0,
+					"vox": 8.8,
+					"frente_amplio": 0.0
+				},
+				"Coalición de PP y Vox": {
+					"color": "#5ac032",
+					"Total": 18.2,
+					"pp": 20.5,
+					"psoe": 0.3,
+					"vox": 81.1,
+					"frente_amplio": 0.0
+				},
+				"Gran coalición de PP y PSOE": {
+					"color": "dark_grey",
+					"Total": 4.6,
+					"pp": 3.0,
+					"psoe": 6.9,
+					"vox": 0.0,
+					"frente_amplio": 4.7
+				},
+				"PSOE en solitario": {
+					"color": "#e1001a",
+					"Total": 6.7,
+					"pp": 0.0,
+					"psoe": 28.4,
+					"vox": 0.0,
+					"frente_amplio": 2.9
+				},
+				"Coalición de PSOE y Frente Amplio": {
+					"color": "#e1001a",
+					"Total": 14.0,
+					"pp": 0.0,
+					"psoe": 32.4,
+					"vox": 0.0,
+					"frente_amplio": 70.1
+				},
+				"PSOE con izquierdas y nacionalistas, como ahora": {
+					"color": "#e1001a",
+					"Total": 10.9,
+					"pp": 0.0,
+					"psoe": 23.1,
+					"vox": 0.5,
+					"frente_amplio": 8.3
+				},
+				"Otra fórmula": {
+					"color": "grey",
+					"Total": 9.3,
+					"pp": 0.5,
+					"psoe": 0.5,
+					"vox": 9.1,
+					"frente_amplio": 6.0
+				},
+				"No lo sé": {
+					"color": "grey",
+					"Total": 16.9,
+					"pp": 7.4,
+					"psoe": 8.1,
+					"vox": 0.5,
+					"frente_amplio": 8.0
+				}
+			}
+		}
+	}
+}

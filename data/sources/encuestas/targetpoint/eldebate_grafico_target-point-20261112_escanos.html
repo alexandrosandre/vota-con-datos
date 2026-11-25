@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hemiciclo · Sondeo elecciones generales 29-N</title>
+<style>
+:root{
+  --ink:#1c1f24;
+  --muted:#667085;
+  --line:#e4e7ec;
+  --soft:#f2f4f7;
+  --bg:#ffffff;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{
+  background:var(--bg);color:var(--ink);
+  font:14px/1.35 var(--font);
+  -webkit-text-size-adjust:100%;
+  overflow:hidden;
+}
+button{font-family:inherit}
+
+.app{height:100%;display:flex;flex-direction:column;padding:10px 6px 8px}
+
+/* Selector 2023 / sondeos */
+.bar{display:flex;justify-content:center;flex:none}
+.seg{display:inline-flex;background:var(--soft);border-radius:999px;padding:3px}
+.seg button{
+  border:0;background:transparent;color:var(--muted);
+  font-weight:600;font-size:13px;line-height:1;
+  padding:8px 15px;border-radius:999px;cursor:pointer;
+  transition:background .2s,color .2s;
+}
+.seg button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.seg button:focus-visible,.chip:focus-visible{outline:2px solid #2563eb;outline-offset:2px}
+
+/* Zona del hemiciclo */
+.chart{flex:1 1 auto;min-height:0;display:flex;align-items:center;justify-content:center}
+.stage{position:relative}
+.stage svg{display:block;overflow:visible}
+.sector{stroke:none;outline:none;cursor:pointer;transition:opacity .15s ease}
+.sector:focus-visible{stroke:var(--ink);stroke-width:2.5}
+.has-focus .sector:not(.on){opacity:.22}
+.leader{stroke:#98a2b3;stroke-width:.8;fill:none}
+.c-num{fill:var(--ink);font-weight:700;font-variant-numeric:tabular-nums}
+.c-lab{fill:var(--muted);font-weight:500}
+
+/* Etiquetas HTML sobre el SVG */
+.labels{position:absolute;inset:0;pointer-events:none}
+.lab{
+  position:absolute;transform:translate(-50%,-50%);
+  pointer-events:auto;cursor:pointer;
+  transition:opacity .15s ease;
+  animation:fade .3s ease backwards;
+}
+.lab-n{
+  font-weight:700;font-variant-numeric:tabular-nums;line-height:1;
+  color:var(--ink);white-space:nowrap;
+}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.is-dim{opacity:.25}
+
+.logo{
+  display:flex;align-items:center;justify-content:center;flex:none;
+}
+.logo img{width:100%;height:100%;object-fit:contain;display:block}
+.logo.pill{background:#eef0f3;color:var(--ink);border:1px solid #d0d5dd;border-radius:999px;padding:0 13px;font-weight:700;white-space:nowrap}
+.logo.fb{
+  border-radius:50%;color:#fff;font-weight:700;letter-spacing:-.02em;
+  overflow:hidden;
+}
+
+/* Partidos pequeños */
+.chips[hidden]{display:none}
+.chips{
+  flex:none;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;
+  gap:6px 8px;padding:8px 6px 2px;min-height:52px;
+  border-top:1px solid var(--line);margin-top:2px;
+}
+.chips-t{color:var(--muted);font-size:12px;margin-right:2px}
+.chip{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--soft);border:0;border-radius:999px;
+  padding:4px 13px 4px 5px;cursor:pointer;color:var(--ink);
+  font-weight:700;font-size:15px;font-variant-numeric:tabular-nums;
+  transition:opacity .15s ease;
+  animation:fade .3s ease backwards;
+}
+.chip .logo{width:32px;height:32px}
+.chip .logo.fb{font-size:11px}
+
+.foot{flex:none;text-align:center;color:var(--muted);font-size:12px;padding-top:6px}
+
+/* Tooltip */
+.tip{
+  position:fixed;z-index:20;left:0;top:0;pointer-events:none;
+  width:max-content;min-width:176px;max-width:250px;
+  background:#fff;border:1px solid var(--line);border-top:3px solid var(--c,#999);
+  border-radius:10px;padding:10px 13px 11px;
+  box-shadow:0 8px 24px rgba(16,24,40,.16);
+  opacity:0;visibility:hidden;transition:opacity .12s ease;
+}
+.tip.show{opacity:1;visibility:visible}
+.tip-h{display:flex;align-items:center;gap:9px}
+.tip-h .logo{width:42px;height:42px}
+.tip-h .logo.fb{font-size:14px}
+.tip-name{font-weight:700;font-size:15px;line-height:1.15}
+.tip-seats{margin-top:8px;display:flex;align-items:baseline;gap:6px}
+.tip-seats b{font-size:30px;line-height:1;font-weight:800;font-variant-numeric:tabular-nums}
+.tip-seats span{font-size:13px;color:var(--muted)}
+.tip-meta{
+  display:flex;justify-content:space-between;gap:14px;
+  font-size:12px;color:var(--muted);margin-top:5px;
+}
+.tip-meta b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tip-meta+.tip-meta{margin-top:3px}
+.up{color:#1f8a5b}.down{color:#c0392b}
+.tip-note{font-size:12px;color:var(--muted);margin-top:6px}
+
+.msg{margin:auto;color:var(--muted);text-align:center;padding:20px;font-size:13px}
+
+@media (max-width:499px){
+  .chips{gap:5px 6px;padding-top:6px;min-height:42px}
+  .chips-t{display:none}
+  .chip{padding:3px 11px 3px 4px;font-size:14px;gap:5px}
+}
+@media (prefers-reduced-motion:reduce){
+  .sector,.lab,.chip,.tip,.seg button{transition:none;animation:none}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="bar">
+    <div class="seg" id="seg" role="group" aria-label="Escenario">
+      <button type="button" data-mode="g23" aria-pressed="false">Elecciones 2023</button>
+      <button type="button" data-mode="sondeos" aria-pressed="true">Sondeo</button>
+    </div>
+  </div>
+  <div class="chart" id="chart">
+    <div class="msg" id="msg">Cargando datos…</div>
+    <div class="stage" id="stage" hidden>
+      <svg id="svg" role="img">
+        <g id="sectors"></g>
+        <g id="leaders"></g>
+        <g id="center"></g>
+      </svg>
+      <div class="labels" id="labels"></div>
+    </div>
+  </div>
+  <div class="chips" id="chips" hidden></div>
+</div>
+<div class="tip" id="tip" role="tooltip"></div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- Configuración ---------- */
+  var CONFIG = {
+    base: 'https://info.eldebate.com/especial/elecciones/datos/2026/generales-29n/sondeos/',
+    partidos: 'partidos.json',
+    encuesta: 'target-point-20261113.json',
+    smallMax: 5,            // partidos con este nº de escaños o menos van a los "chips"
+    defaultMode: 'sondeos'  // 'sondeos' | 'g23'
+  };
+  // Orden de izquierda a derecha en el hemiciclo
+  var ORDER = ['podemos','sumar','frente_amplio','psoe','otros','pp','vox','salf'];
+  // "Otros" no está en partidos.json
+  var OTROS = { name: 'Otros', color: '#98a2b3', logo: '' };
+  // Base de comparación con 2023: Frente Amplio se compara con Sumar; Podemos no tiene base
+  var BASE23 = { frente_amplio: 'sumar', podemos: null };
+
+  var $ = function (s) { return document.querySelector(s); };
+  var els = {
+    chart: $('#chart'), stage: $('#stage'), svg: $('#svg'), msg: $('#msg'),
+    sectors: $('#sectors'), leaders: $('#leaders'), center: $('#center'),
+    labels: $('#labels'), chips: $('#chips'), tip: $('#tip'), seg: $('#seg')
+  };
+  var NS = 'http://www.w3.org/2000/svg';
+  var parties = [], mode = CONFIG.defaultMode, geo = null, secEls = {}, cur = {}, tw = null, ranges = [];
+  var shownKey = null, pinnedKey = null, lastSize = '';
+
+  /* ---------- Utilidades ---------- */
+  function svgEl(name, attrs) {
+    var e = document.createElementNS(NS, name);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    return e;
+  }
+  function seatsOf(p) { return mode === 'g23' ? p.g23 : p.poll; }
+  // En el sondeo se muestra la horquilla, nunca el valor de "seats"
+  function fmtFork(p) { return p.lo === p.hi ? String(p.lo) : p.lo + '–' + p.hi; }
+  function txtOf(p) { return mode === 'g23' ? String(p.g23) : fmtFork(p); }
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function initials(name) {
+    var w = name.trim().split(/\s+/);
+    if (w.length === 1) return name.length <= 4 ? name : name.slice(0, 3);
+    return w.map(function (x) { return x[0]; }).join('').slice(0, 3).toUpperCase();
+  }
+  function textOn(hex) {
+    var m = /^#?([0-9a-f]{6})$/i.exec(hex || ''); if (!m) return '#fff';
+    var n = parseInt(m[1], 16), r = n >> 16, g = (n >> 8) & 255, b = n & 255;
+    return (0.299 * r + 0.587 * g + 0.114 * b) > 170 ? '#1c1f24' : '#fff';
+  }
+  function fetchJSON(file) {
+    return fetch(CONFIG.base + file).then(function (r) {
+      if (!r.ok) throw new Error(file + ' → ' + r.status);
+      return r.json();
+    });
+  }
+  // Logo con respaldo: si la imagen no carga, muestra las siglas sobre el color del partido
+  function logoEl(p, size, fontPx) {
+    var d = document.createElement('span');
+    d.className = 'logo';
+    d.style.width = d.style.height = size + 'px';
+    if (p.key === 'otros') {          // sin logo: pastilla con el texto
+      d.className = 'logo pill';
+      d.style.width = 'auto';
+      d.style.height = Math.round(size * 0.66) + 'px';
+      d.style.fontSize = Math.min(fontPx || 14, size > 36 ? 15 : 13) + 'px';
+      d.textContent = 'Otros';
+      return d;
+    }
+    var fallback = function () {
+      d.classList.add('fb');
+      d.style.background = p.color;
+      d.style.color = textOn(p.color);
+      var ini = initials(p.name);
+      d.style.fontSize = (fontPx && ini.length < 4 ? fontPx : Math.round(size * (ini.length > 3 ? 0.29 : 0.38))) + 'px';
+      d.textContent = ini;
+    };
+    if (!p.logo) { fallback(); return d; }
+    var img = new Image();
+    img.alt = '';
+    img.decoding = 'async';
+    img.onerror = function () { d.innerHTML = ''; fallback(); };
+    img.src = p.logo;
+    d.appendChild(img);
+    return d;
+  }
+
+  /* ---------- Carga ---------- */
+  Promise.all([fetchJSON(CONFIG.partidos), fetchJSON(CONFIG.encuesta)])
+    .then(function (res) { init(res[0], res[1]); })
+    .catch(function (err) {
+      console.error(err);
+      els.msg.textContent = 'No se han podido cargar los datos del gráfico.';
+    });
+
+  function init(pj, ej) {
+    var meta = {};
+    (pj.partidos || []).forEach(function (x) { meta[x.key] = x; });
+    var el = ej.electoral || {};
+    parties = Object.keys(el).map(function (k) {
+      var r = el[k], m = k === 'otros' ? OTROS : (meta[k] || {});
+      var fm = /^(\d+)(?:\s*-\s*(\d+))?$/.exec(String(r.seats_fork == null ? '' : r.seats_fork).trim());
+      var lo = fm ? +fm[1] : (r.seats | 0), hi = fm ? +(fm[2] || fm[1]) : lo;
+      return {
+        key: k, name: m.name || k, color: m.color || '#98a2b3', logo: m.logo || '',
+        poll: r.seats | 0,              // se usa solo para dibujar
+        g23: r.seats_2023 | 0, lo: lo, hi: hi
+      };
+    }).filter(function (p) { return p.poll + p.g23 > 0; });
+    parties.sort(function (a, b) {
+      var ia = ORDER.indexOf(a.key), ib = ORDER.indexOf(b.key);
+      return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+    });
+
+    els.msg.hidden = true;
+    els.stage.hidden = false;
+    syncToggle();
+    layout();
+    new ResizeObserver(function () { requestAnimationFrame(layout); }).observe(els.chart);
+
+    els.seg.addEventListener('click', function (e) {
+      var b = e.target.closest('button[data-mode]');
+      if (!b || b.dataset.mode === mode) return;
+      mode = b.dataset.mode;
+      hideTip();
+      syncToggle();
+      paint(true);
+    });
+    document.addEventListener('pointerdown', function (e) {
+      if (e.pointerType !== 'mouse') hideTip();
+    });
+    window.addEventListener('scroll', hideTip, { passive: true });
+  }
+
+  function syncToggle() {
+    els.seg.querySelectorAll('button').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.mode === mode));
+    });
+  }
+
+  /* ---------- Geometría ---------- */
+  function layout() {
+    var W = Math.floor(els.chart.clientWidth), H = Math.floor(els.chart.clientHeight);
+    if (W < 40 || H < 40) return;
+    var sizeKey = W + 'x' + H;
+    if (sizeKey === lastSize) return;
+    lastSize = sizeKey;
+
+    var compact = W < 500;
+    var S = compact ? 32 : 42;          // lado del logo
+    var F = compact ? 13.5 : 17;        // tamaño del número (fuera de la porción)
+    var gap = compact ? 4 : 5, off = compact ? 8 : 10;
+    var nh = F * 1.15;
+    var hBlock = S + gap + nh;                          // logo encima, número debajo
+    var padSide = off + Math.max(S, F * 0.6 * 5 + 4) + 4;
+    var padTop = off + hBlock + 4;
+    var padBottom = hBlock / 2 + 4;
+    var R = Math.max(70, Math.min((W - 2 * padSide) / 2, H - padTop - padBottom, 330));
+    var Rin = R * (compact ? 0.52 : 0.5);
+    var svgH = Math.ceil(padTop + R + padBottom);
+    var cx = W / 2, cy = padTop + R;
+
+    var total = Math.max(
+      parties.reduce(function (a, p) { return a + p.poll; }, 0),
+      parties.reduce(function (a, p) { return a + p.g23; }, 0)
+    );
+
+    geo = { W: W, H: svgH, cx: cx, cy: cy, R: R, Rin: Rin, S: S, F: F, gap: gap, off: off,
+            nh: nh, compact: compact, total: total };
+
+    els.stage.style.width = W + 'px';
+    els.stage.style.height = svgH + 'px';
+    els.svg.setAttribute('width', W);
+    els.svg.setAttribute('height', svgH);
+    els.svg.setAttribute('viewBox', '0 0 ' + W + ' ' + svgH);
+
+    // Una porción sólida por partido, creada una vez por tamaño
+    els.sectors.innerHTML = '';
+    secEls = {}; cur = {};
+    parties.forEach(function (p) {
+      var path = svgEl('path', { 'class': 'sector', tabindex: '0', role: 'button' });
+      path.style.fill = p.color;
+      bind(path, p.key);
+      els.sectors.appendChild(path);
+      secEls[p.key] = path;
+    });
+    paint(false);
+  }
+
+  /* ---------- Pintado según el escenario ---------- */
+  function sectorPath(a0, a1, r0, r1) {
+    var P = function (a, r) { return (geo.cx + r * Math.cos(a)).toFixed(2) + ',' + (geo.cy - r * Math.sin(a)).toFixed(2); };
+    var large = (a0 - a1) > Math.PI ? 1 : 0;
+    return 'M' + P(a0, r1) + 'A' + r1 + ',' + r1 + ' 0 ' + large + ' 1 ' + P(a1, r1) +
+           'L' + P(a1, r0) + 'A' + r0 + ',' + r0 + ' 0 ' + large + ' 0 ' + P(a0, r0) + 'Z';
+  }
+
+  function setSector(k, a0, a1) {
+    var el = secEls[k];
+    if (!el) return;
+    if (a0 - a1 < 1e-4) { el.style.display = 'none'; }
+    else { el.style.display = ''; el.setAttribute('d', sectorPath(a0, a1, geo.Rin, geo.R)); }
+    cur[k] = { a0: a0, a1: a1 };
+  }
+
+  // Mueve las porciones de forma suave hasta los nuevos ángulos
+  function tween(target, animate) {
+    if (tw) { cancelAnimationFrame(tw); tw = null; }
+    var keys = Object.keys(target), from = {};
+    keys.forEach(function (k) { from[k] = cur[k] || { a0: target[k].a0, a1: target[k].a0 }; });
+    var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!animate || reduce) {
+      keys.forEach(function (k) { setSector(k, target[k].a0, target[k].a1); });
+      return;
+    }
+    var t0 = performance.now(), D = 480;
+    (function step(now) {
+      var t = Math.min(1, (now - t0) / D);
+      var e = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      keys.forEach(function (k) {
+        setSector(k,
+          from[k].a0 + (target[k].a0 - from[k].a0) * e,
+          from[k].a1 + (target[k].a1 - from[k].a1) * e);
+      });
+      tw = t < 1 ? requestAnimationFrame(step) : null;
+    })(t0);
+  }
+
+  function paint(animate) {
+    if (!geo) return;
+    var target = {}, cum = 0;
+    ranges = [];
+    parties.forEach(function (p) {
+      var n = seatsOf(p);
+      var a0 = Math.PI - cum / geo.total * Math.PI;
+      var a1 = Math.PI - (cum + n) / geo.total * Math.PI;
+      cum += n;
+      target[p.key] = { a0: a0, a1: n > 0 ? a1 : a0 };
+      if (n > 0) ranges.push({ p: p, n: n, a0: a0, a1: a1, mid: (a0 + a1) / 2, txt: txtOf(p) });
+      var el = secEls[p.key];
+      if (el) el.setAttribute('aria-label', p.name + ': ' + txtOf(p) + ' escaños');
+    });
+    tween(target, animate);
+
+    // Texto central
+    var total = ranges.reduce(function (a, r) { return a + r.n; }, 0);
+    var maj = Math.floor(total / 2) + 1;
+    var big = Math.max(20, Math.min(42, geo.R * (geo.compact ? 0.19 : 0.17)));
+    els.center.innerHTML = '';
+    var t1 = svgEl('text', { x: geo.cx, y: geo.cy - big * 0.45 - 4, 'text-anchor': 'middle',
+                             'class': 'c-num', 'font-size': big.toFixed(1) });
+    t1.textContent = maj;
+    var t2 = svgEl('text', { x: geo.cx, y: geo.cy - 2, 'text-anchor': 'middle', 'class': 'c-lab',
+                             'font-size': geo.compact ? 10.5 : 12.5 });
+    t2.textContent = 'Mayoría absoluta';
+    els.center.appendChild(t1); els.center.appendChild(t2);
+
+    buildLabels();
+    buildChips();
+
+    els.svg.setAttribute('aria-label', 'Hemiciclo de ' + total + ' escaños. ' +
+      ranges.slice().sort(function (a, b) { return b.n - a.n; })
+            .map(function (r) { return r.p.name + ' ' + r.txt; }).join(', '));
+  }
+
+  // Color de texto con mejor contraste sobre el color del partido
+  function contrastText(hex) {
+    var m = /^#?([0-9a-f]{6})$/i.exec(hex || ''); if (!m) return '#fff';
+    var n = parseInt(m[1], 16), ch = [n >> 16, (n >> 8) & 255, n & 255].map(function (v) {
+      v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+    });
+    var L = 0.2126 * ch[0] + 0.7152 * ch[1] + 0.0722 * ch[2];
+    return (1.05 / (L + 0.05)) >= ((L + 0.05) / 0.064) ? '#fff' : '#1c1f24';
+  }
+
+  // ¿Cabe el número dentro de la porción? Prueba las 4 esquinas del texto en tres radios
+  function numberFit(r, fs, txt) {
+    var g = geo, pad = 4, w = fs * 0.6 * txt.length + 4, h = fs * 1.15;
+    var band = g.R - g.Rin, rm = (g.R + g.Rin) / 2;
+    var radii = [rm, rm + band * 0.16, rm - band * 0.16];
+    for (var i = 0; i < radii.length; i++) {
+      var px = g.cx + radii[i] * Math.cos(r.mid), py = g.cy - radii[i] * Math.sin(r.mid), ok = true;
+      for (var c = 0; c < 4 && ok; c++) {
+        var x = px + (c % 2 ? w : -w) / 2, y = py + (c < 2 ? -h : h) / 2;
+        var dx = x - g.cx, dy = g.cy - y, dist = Math.sqrt(dx * dx + dy * dy), ang = Math.atan2(dy, dx), m = pad / dist;
+        if (dist < g.Rin + pad || dist > g.R - pad || ang > r.a0 - m || ang < r.a1 + m) ok = false;
+      }
+      if (ok) return { x: px, y: py, fs: fs };
+    }
+    return null;
+  }
+
+  function buildLabels() {
+    els.labels.innerHTML = '';
+    els.leaders.innerHTML = '';
+    var g = geo;
+    var hBlock = g.S + g.gap + g.nh;                      // logo + número debajo
+    var items = ranges.filter(function (r) { return r.n > CONFIG.smallMax; })
+                      .map(function (r) { return { r: r, a: r.mid }; });
+
+    // Tamaño común para los números que caben dentro: el mayor posible (hasta 1,5×) para todos a la vez
+    var base = items.filter(function (o) { return numberFit(o.r, g.F, o.r.txt); });
+    var common = g.F, s;
+    for (s = Math.min(g.F * 1.5, 30); s > g.F; s -= g.F * 0.05) {
+      if (base.every(function (o) { return numberFit(o.r, s, o.r.txt); })) { common = s; break; }
+    }
+    items.forEach(function (o) {
+      var txt = o.r.txt, sizes = [common, g.F * 0.9, g.F * 0.8], i;
+      o.fit = null;
+      for (i = 0; i < sizes.length && !o.fit; i++) {
+        if (i > 0 && sizes[i] < 11) break;
+        o.fit = numberFit(o.r, sizes[i], txt);
+      }
+      var nw = g.F * 0.6 * txt.length + 4;
+      o.hB = o.fit ? g.S : hBlock;                         // si el número va dentro, fuera solo el logo
+      o.w = Math.max(o.r.p.key === 'otros' ? 62 : g.S, o.fit ? 0 : nw);
+
+      if (o.fit) {                                         // número dentro de la porción
+        var inner = document.createElement('div');
+        inner.className = 'lab lab-n';
+        inner.dataset.k = o.r.p.key;
+        inner.style.left = o.fit.x.toFixed(1) + 'px';
+        inner.style.top = o.fit.y.toFixed(1) + 'px';
+        inner.style.fontSize = o.fit.fs.toFixed(1) + 'px';
+        inner.style.color = contrastText(o.r.p.color);
+        inner.textContent = txt;
+        els.labels.appendChild(inner);
+        bind(inner, o.r.p.key);
+      }
+    });
+
+    // Separación mínima entre bloques, medida a lo largo del arco
+    var Rl = g.R + g.off + hBlock / 2;
+    var lo = 0.05, hi = Math.PI - 0.05, it, k;
+    var ext = function (o) { return Math.abs(Math.sin(o.a)) * o.w + Math.abs(Math.cos(o.a)) * o.hB; };
+    for (it = 0; it < 200; it++) {
+      for (k = 0; k < items.length - 1; k++) {
+        var dTh = ((ext(items[k]) + ext(items[k + 1])) / 2 + 8) / Rl;
+        var gp = items[k].a - items[k + 1].a;
+        if (gp < dTh) { var push = (dTh - gp) / 2; items[k].a += push; items[k + 1].a -= push; }
+      }
+      items.forEach(function (o) { o.a = Math.max(lo, Math.min(hi, o.a)); });
+    }
+
+    items.forEach(function (o) {
+      var a = o.a, ux = Math.cos(a), uy = -Math.sin(a), hB = o.hB;
+      var d = g.R + g.off + Math.abs(ux) * o.w / 2 + Math.abs(uy) * hB / 2;
+      var bx = g.cx + ux * d, by = g.cy + uy * d;         // centro del bloque
+
+      if (!o.fit) {
+        var n = document.createElement('div');
+        n.className = 'lab lab-n';
+        n.dataset.k = o.r.p.key;
+        n.style.left = bx.toFixed(1) + 'px';
+        n.style.top = (by + hB / 2 - g.nh / 2).toFixed(1) + 'px';
+        n.style.fontSize = g.F + 'px';
+        n.textContent = o.r.txt;
+        els.labels.appendChild(n);
+        bind(n, o.r.p.key);
+      }
+
+      var l = logoEl(o.r.p, g.S);
+      l.classList.add('lab');
+      l.dataset.k = o.r.p.key;
+      l.style.left = bx.toFixed(1) + 'px';
+      l.style.top = (by - hB / 2 + g.S / 2).toFixed(1) + 'px';
+      els.labels.appendChild(l);
+      bind(l, o.r.p.key);
+
+      if (Math.abs(a - o.r.mid) > 0.035) {   // línea guía si se ha desplazado
+        var m = o.r.mid, e1 = g.R + 3, e2 = g.R + g.off * 0.7;
+        els.leaders.appendChild(svgEl('path', {
+          'class': 'leader',
+          d: 'M' + (g.cx + e1 * Math.cos(m)).toFixed(1) + ',' + (g.cy - e1 * Math.sin(m)).toFixed(1) +
+             'L' + (g.cx + e2 * Math.cos(a)).toFixed(1) + ',' + (g.cy - e2 * Math.sin(a)).toFixed(1)
+        }));
+      }
+    });
+  }
+
+  function buildChips() {
+    var small = ranges.filter(function (r) { return r.n <= CONFIG.smallMax; });
+    els.chips.innerHTML = '';
+    els.chips.hidden = small.length === 0;
+    if (!small.length) return;
+    var t = document.createElement('span');
+    t.className = 'chips-t';
+    t.textContent = 'Con menos escaños';
+    els.chips.appendChild(t);
+    small.slice().sort(function (a, b) { return b.n - a.n; }).forEach(function (r) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'chip';
+      b.dataset.k = r.p.key;
+      b.setAttribute('aria-label', r.p.name + ': ' + r.txt + ' escaños');
+      b.appendChild(logoEl(r.p, geo.compact ? 26 : 32));
+      var n = document.createElement('span');
+      n.textContent = r.txt;
+      b.appendChild(n);
+      bind(b, r.p.key);
+      els.chips.appendChild(b);
+    });
+  }
+
+  /* ---------- Interacción y tooltip ---------- */
+  function bind(el, key) {
+    el.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') showTip(key, e); });
+    el.addEventListener('pointermove', function (e) { if (e.pointerType === 'mouse') placeTip(e); });
+    el.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') hideTip(); });
+    el.addEventListener('pointerdown', function (e) {
+      if (e.pointerType === 'mouse') return;
+      e.stopPropagation();
+      if (pinnedKey === key) hideTip(); else showTip(key, e);
+    });
+    el.addEventListener('focus', function () {
+      var r = el.getBoundingClientRect();
+      showTip(key, { clientX: r.left + r.width / 2, clientY: r.top + r.height / 2, pointerType: 'key' });
+    });
+    el.addEventListener('blur', hideTip);
+  }
+
+  function highlight(key) {
+    var on = key != null;
+    els.svg.classList.toggle('has-focus', on);
+    Object.keys(secEls).forEach(function (k) { secEls[k].classList.toggle('on', on && k === key); });
+    document.querySelectorAll('.lab,.chip').forEach(function (n) {
+      n.classList.toggle('is-dim', on && n.dataset.k !== key);
+    });
+  }
+
+  function sgn(v) { return v > 0 ? '+' + v : v < 0 ? '−' + Math.abs(v) : '0'; }
+  function fmtVarRange(lo, hi) {
+    if (lo === 0 && hi === 0) return 'sin cambios';
+    var tri = '';
+    if (lo >= 0 && hi >= 0) tri = '<span class="up">▲</span> ';
+    else if (lo <= 0 && hi <= 0) tri = '<span class="down">▼</span> ';
+    return tri + (lo === hi ? sgn(lo) : sgn(lo) + ' a ' + sgn(hi));
+  }
+
+  function showTip(key, e) {
+    var p = parties.filter(function (x) { return x.key === key; })[0];
+    if (!p) return;
+    shownKey = key;
+    pinnedKey = e.pointerType === 'mouse' || e.pointerType === 'key' ? null : key;
+    highlight(key);
+
+    var big = txtOf(p);
+    var unit = (mode === 'g23' ? p.g23 : p.hi) === 1 ? 'escaño' : 'escaños';
+    var html = '';
+    var head = document.createElement('div');
+    head.className = 'tip-h';
+    head.appendChild(logoEl(p, 42, 14));
+    if (p.key !== 'otros') {
+      var nm = document.createElement('div');
+      nm.className = 'tip-name';
+      nm.textContent = p.name;
+      head.appendChild(nm);
+    }
+
+    html += '<div class="tip-seats"><b>' + esc(big) + '</b><span>' + unit + '</span></div>';
+    if (mode === 'sondeos') {
+      var baseKey = (p.key in BASE23) ? BASE23[p.key] : p.key;
+      var base = baseKey ? parties.filter(function (x) { return x.key === baseKey; })[0] : null;
+      if (base) {
+        var label = baseKey === p.key ? 'Variación respecto a 2023' : 'Variación respecto a ' + base.name + ' 2023';
+        html += '<div class="tip-meta"><span>' + esc(label) + '</span><b>' + fmtVarRange(p.lo - base.g23, p.hi - base.g23) + '</b></div>';
+      }
+    } else {
+      html += '<div class="tip-note">Elecciones del 23 de julio de 2023</div>';
+    }
+    els.tip.innerHTML = '';
+    els.tip.style.setProperty('--c', p.color);
+    els.tip.appendChild(head);
+    els.tip.insertAdjacentHTML('beforeend', html);
+    els.tip.classList.add('show');
+    placeTip(e);
+  }
+
+  function placeTip(e) {
+    var tip = els.tip, w = tip.offsetWidth, h = tip.offsetHeight;
+    var vw = document.documentElement.clientWidth, vh = document.documentElement.clientHeight;
+    var touch = e.pointerType && e.pointerType !== 'mouse';
+    var x, y;
+    if (touch) {
+      x = e.clientX - w / 2;
+      y = e.clientY - h - 22;
+      if (y < 4) y = e.clientY + 22;
+    } else {
+      x = e.clientX + 16;
+      y = e.clientY + 16;
+      if (x + w > vw - 4) x = e.clientX - w - 16;
+      if (y + h > vh - 4) y = e.clientY - h - 16;
+    }
+    x = Math.max(4, Math.min(x, vw - w - 4));
+    y = Math.max(4, Math.min(y, vh - h - 4));
+    tip.style.transform = 'translate(' + Math.round(x) + 'px,' + Math.round(y) + 'px)';
+  }
+
+  function hideTip() {
+    if (shownKey == null && pinnedKey == null) return;
+    shownKey = pinnedKey = null;
+    els.tip.classList.remove('show');
+    highlight(null);
+  }
+})();
+</script>
+</body>
+</html>
