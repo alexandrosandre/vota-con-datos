@@ -216,6 +216,9 @@ Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. 
 de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
 BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
+**Réplica de la revisión programada (26-nov, 9:07):** la tarea recurrente (9:13 y 20:13) se renueva con el mismo texto y
+se borra la anterior, que caducaba el 27-nov. La nueva cubre hasta el 29-nov; después de esa fecha se borra (punto 8).
+
 **Revisión del 25-nov, 20:43:** registro 392 → 396 con revisión independiente: Coalición Canaria 1 (equiparar las
 pensiones no contributivas a las mínimas, del «contrato» de CC-1ºCAN del 24-nov) y Ara Més-Front Ampli 2 (5 % del
 presupuesto no financiero a igualdad, que cuenta también para el Frente Amplio, y jornada de 32 horas, solo Ara Més
