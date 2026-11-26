@@ -216,6 +216,12 @@ Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. 
 de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
 BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
+**Revisión del 26-nov, 20:43:** registro 396 → 397 con revisión independiente: Adelante Andalucía 1 (suelo del 2 % del
+PIB para la universidad pública y del 3 % para I+D+i, de Ana Jiménez en Teatinos; propuesta 133 de su programa). Cinco
+candidatas descartadas (ver data/promesas/cambios_2026-11-26.md). Paso 1 sin posiciones nuevas; el debate a cuatro de
+las 22:00 queda para la revisión del 27-nov. UPN sigue sin programa; BOE sin novedades en candidaturas; la JEC no ha
+celebrado sesión desde el 23-nov. Encuestas: ninguna nueva (prohibición). Dominio y HTTPS correctos.
+
 **Revisión del 26-nov, 09:43:** sin cambios en los datos. Registro de compromisos en 396: una candidata (el PP, terminar
 la autovía A-15) rechazada en la revisión independiente porque ya figura en la promesa del PP sobre inversiones del
 Estado en Navarra (ver data/promesas/cambios_2026-11-26.md). Paso 1 sin posiciones nuevas. UPN sigue sin programa; BOE
