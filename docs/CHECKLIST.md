@@ -216,6 +216,12 @@ Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. 
 de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
 BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
+**Revisión del 26-nov, 09:43:** sin cambios en los datos. Registro de compromisos en 396: una candidata (el PP, terminar
+la autovía A-15) rechazada en la revisión independiente porque ya figura en la promesa del PP sobre inversiones del
+Estado en Navarra (ver data/promesas/cambios_2026-11-26.md). Paso 1 sin posiciones nuevas. UPN sigue sin programa; BOE
+del 24 al 26-nov sin novedades en candidaturas; la JEC no ha celebrado sesión desde el 23-nov. Encuestas: ninguna
+nueva (prohibición desde el 24-nov). Dominio y HTTPS correctos.
+
 **Réplica de la revisión programada (26-nov, 9:07):** la tarea recurrente (9:13 y 20:13) se renueva con el mismo texto y
 se borra la anterior, que caducaba el 27-nov. La nueva cubre hasta el 29-nov; después de esa fecha se borra (punto 8).
 
