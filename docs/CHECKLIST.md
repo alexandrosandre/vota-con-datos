@@ -216,6 +216,14 @@ Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. 
 de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
 BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
+**Revisión del 27-nov, 09:43:** debate a cuatro del 26-nov (Academia de Televisión, RTVE): registro 397 → 399 con
+revisión independiente: PP 1 (Feijóo: ayudas a las familias numerosas que se mantengan cuando los hijos dejan el hogar) y
+Vox 1 (Abascal: el Ingreso Mínimo Vital solo para los españoles, medida 22 de su programa); citas de Europa Press
+confirmadas en el vídeo de RTVE Play. Se añade a la meta de promesas.json la nota del 26-nov que faltaba. Paso 1 sin
+posiciones nuevas (Vox en q31 sigue en null: «prórrogas forzosas» no identifica la medida). UPN sigue sin programa; BOE
+del 26 y 27-nov sin novedades en candidaturas; la sesión de la JEC del 26-nov (34 acuerdos) no toca candidaturas.
+Encuestas: ninguna nueva (prohibición). Dominio y HTTPS correctos.
+
 **Revisión del 26-nov, 20:43:** registro 396 → 397 con revisión independiente: Adelante Andalucía 1 (suelo del 2 % del
 PIB para la universidad pública y del 3 % para I+D+i, de Ana Jiménez en Teatinos; propuesta 133 de su programa). Cinco
 candidatas descartadas (ver data/promesas/cambios_2026-11-26.md). Paso 1 sin posiciones nuevas; el debate a cuatro de
