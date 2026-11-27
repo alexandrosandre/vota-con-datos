@@ -216,6 +216,15 @@ Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. 
 de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
 BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
+**Revisión del 27-nov, 20:43 (cierre de campaña):** registro 399 → 407 con revisión independiente (9 candidatas, 1
+rechazada): PP 1 (primarias financiadas solo con las cuentas del partido y fiscalizadas por el Tribunal de Cuentas, medida
+reservada de su programa, Europa Press) y las líneas rojas de Ara Més-Front Ampli que presentó Carme Gomila: IVA propio
+reducido para Baleares, Ley de cogestión aeroportuaria y complemento de residencia del personal del Estado (Ara Més y
+Frente Amplio) y limitar la compra de vivienda por no residentes (solo Ara Més; el Frente Amplio ya tiene la prohibición
+de compras especulativas). Los mítines de cierre no traen más medidas concretas. Paso 1 sin posiciones nuevas. UPN cierra
+la campaña sin programa; BOE del 27-nov y JEC sin novedades en candidaturas. Encuestas: ninguna nueva (prohibición).
+Dominio y HTTPS correctos.
+
 **Revisión del 27-nov, 09:43:** debate a cuatro del 26-nov (Academia de Televisión, RTVE): registro 397 → 399 con
 revisión independiente: PP 1 (Feijóo: ayudas a las familias numerosas que se mantengan cuando los hijos dejan el hogar) y
 Vox 1 (Abascal: el Ingreso Mínimo Vital solo para los españoles, medida 22 de su programa); citas de Europa Press
