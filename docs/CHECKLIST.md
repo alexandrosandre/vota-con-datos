@@ -216,6 +216,13 @@ Sánchez–Feijóo incluido); Junts 16 → 18 y UPC 7 → 12 por sus programas. 
 de UPC). Auditorías de coherencia: financiación de junts-08 y pnv-08 a mixta con la estimación oficial del Gobierno.
 BOE y JEC sin cambios en las candidaturas (punto 4 hecho). Dominio y HTTPS correctos.
 
+**Revisión del 28-nov, 09:43 (jornada de reflexión):** registro 407 → 408 con revisión independiente (2 candidatas, 1
+rechazada): Teruel Existe 1 (complemento de territorialidad para empleados públicos en zonas menos pobladas, p. 13 de su
+programa, que Tomás Guitarte defendió el 26-nov para la Guardia Civil rural; se había pasado por alto el 26-nov). Se
+rechazan los tres cuarteles abiertos 24 horas (en condicional y fuera del programa). Paso 1 sin posiciones nuevas. UPN
+sigue sin programa; BOE del 27 y 28-nov y JEC (última sesión, 26-nov) sin novedades en candidaturas. Encuestas: ninguna
+nueva (prohibición). Dominio y HTTPS correctos.
+
 **Revisión del 27-nov, 20:43 (cierre de campaña):** registro 399 → 407 con revisión independiente (9 candidatas, 1
 rechazada): PP 1 (primarias financiadas solo con las cuentas del partido y fiscalizadas por el Tribunal de Cuentas, medida
 reservada de su programa, Europa Press) y las líneas rojas de Ara Més-Front Ampli que presentó Carme Gomila: IVA propio
